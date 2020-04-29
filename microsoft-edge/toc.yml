@@ -236,6 +236,8 @@
               href: devtools-guide-chromium/customize/dark-theme.md
             - name: Modifier le placement
               href: devtools-guide-chromium/customize/placement.md
+            - name: Respecter la langue du navigateur
+              href: devtools-guide-chromium/customize/localization.md
     - name: DevTools (EdgeHTML)
       href: devtools-guide.md
       items:
