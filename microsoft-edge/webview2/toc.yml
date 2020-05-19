@@ -10,14 +10,20 @@
       href: gettingstarted/winforms.md
 - name: Concepts
   items:
+    - name: Distribution de mon application
+      href: concepts/distribution.md
     - name: Gestion des versions
       href: concepts/versioning.md
 - name: Notes de publication
   href: releasenotes.md
-- name: Outils
+- name: Feuille de route
+  href: roadmap.md
+- name: Procédures
   items:
-    - name: WebDriver
-      href: tooling/webdriver.md
+    - name: Débogage WebView2
+      href: howto/Debug.md
+    - name: Automatiser avec le pilote Edge
+      href: howto/webdriver.md
 - name: Référence
   href: webview2-api-reference.md
   items:

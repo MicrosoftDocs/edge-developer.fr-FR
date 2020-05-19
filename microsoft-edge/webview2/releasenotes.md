@@ -3,17 +3,17 @@ description: Héberger le contenu Web de votre application Win32 avec le contrô
 title: Notes de publication de Microsoft Edge WebView2 pour Win32, WPF et WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/14/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: 14030d3dde8c4e68c0790073dc38e5c856e2a091
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 255f8d56ae1a4b77a87697b9cd3814380dd06994
+ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653654"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "10659663"
 ---
 # Notes de publication pour WebView2 SDK  
 
@@ -39,8 +39,8 @@ Notes de publication du [SDK WebView2][WebView2NuGetGallery].
 
 **Recompilez votre application après avoir mis à jour le package NuGet.**
 
-* **Annonce:** À partir de la version 83 de Microsoft Edge, le NetView persistant ne ciblera plus le canal de navigateur stable. Au lieu de cela, il cible un autre jeu de fichiers binaires ( [Microsoft Edge WebView2 Runtime](./index.md#microsoft-edge-webview2-runtime)) qui peut être installé en chaîne par le biais d’un programme d’installation que nous développons actuellement. Informations supplémentaires dans [distribution](./index.md#app-distribution)de l’application.
-* **Annonce:** À l’avenir, nous allons procéder à la publication de deux packages: un package préliminaire doté d’API expérimentales (à des fins d’évaluation) et d’un package de publication stable avec des API stables (vous pouvez dépendre). Pour en savoir plus sur les différences, consultez le [Kit de développement logiciel (SDK) Microsoft Edge WebView2](./index.md#microsoft-edge-webview2-sdk) .
+* **Annonce:** À partir de la version 83 de Microsoft Edge, le NetView persistant ne ciblera plus le canal de navigateur stable. Au lieu de cela, il cible un autre jeu de fichiers binaires ( [Microsoft Edge WebView2 Runtime](./concepts/distribution.md#microsoft-edge-webview2-runtime)) qui peut être installé en chaîne par le biais d’un programme d’installation que nous développons actuellement. Informations supplémentaires dans [distribution](./concepts/distribution.md)de l’application.
+* **Annonce:** À l’avenir, nous allons procéder à la publication de deux packages: un package préliminaire doté d’API expérimentales (à des fins d’évaluation) et d’un package de publication stable avec des API stables (vous pouvez dépendre). Pour en savoir plus sur les différences, consultez le [Kit de développement logiciel (SDK) Microsoft Edge WebView2](./concepts/versioning.md) .
 * **Modification en rupture:** Pour vous assurer que notre API s’aligne sur les conventions d’affectation des API Windows, nous avons mis à jour les noms des interfaces suivantes:
   * Le préfixe CORE_WEBVIEW2_ * est désormais COREWEBVIEW2_ *.
   * [GetCoreWebView2BrowserVersionInfo](reference/win32/0-9-430/webview2-idl.md#getcorewebview2browserversioninfo) est maintenant [GetAvailableCoreWebView2BrowserVersionString](reference/win32/0-9-488/webview2-idl.md#getavailablecorewebview2browserversionstring)
