@@ -3,17 +3,17 @@ description: Héberger le contenu Web de votre application Win32 avec le contrô
 title: Contrôle Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/19/2020
+ms.date: 05/21/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge, Windows Forms, WinForms, WPF, .NET
-ms.openlocfilehash: 184a64fde28345cd52dd6d772284f0393114ec02
-ms.sourcegitcommit: 5bdffe91a6594f77eeffa4e864fda90a02784771
+ms.openlocfilehash: 4f28ef64bb2936bc6c9a089ea2574070738fc79d
+ms.sourcegitcommit: 8f5c9255dadc2a9bb22c3201d15b57d84851fe64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "10659635"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "10671637"
 ---
 # Introduction à Microsoft Edge WebView2 (Preview)  
 
@@ -104,7 +104,7 @@ Un aperçu du développeur est disponible sur les environnements de programmatio
 *   .NET Core 3,0 ou version ultérieure  
 *   [WinUI 3,0](/uwp/toolkits/winui3/)  
 
-Vous Mun exécuter Windows 10, Windows 8,1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2 ou Windows Server 2008 R2.   
+Vous devez exécuter Windows 10, Windows 8,1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2 ou Windows Server 2008 R2.   
 
 ## Étapes suivantes  
 
