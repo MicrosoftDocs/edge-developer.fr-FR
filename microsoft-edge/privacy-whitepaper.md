@@ -3,18 +3,18 @@ description: Livre blanc sur la confidentialité MicrosoftEdge
 title: Livre blanc sur la confidentialité MicrosoftEdge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/14/2020
+ms.date: 05/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, confidentialité, livre blanc, approbation
 localization_priority: Priority
-ms.openlocfilehash: 0849d51c14be78a9e261ea0fad426e126a1eea93
-ms.sourcegitcommit: c5f98907ccff78e0c615f6d664febce74cda8b68
+ms.openlocfilehash: 02b2dc0e65211224e8bf75568b7c81d5becd1006
+ms.sourcegitcommit: f79387aa9b4c382b3d6637dfa8fc96bcc34fdbf3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "10658816"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "10673778"
 ---
 # Livre blanc sur la confidentialité MicrosoftEdge  
 
@@ -70,9 +70,7 @@ Toutes les 24 heures, Microsoft Edge télécharge une liste de sites pris en cha
 
 Les modèles stockés sur l’appareil sont supprimés en effaçant les données du cache sous le paramètre **effacer les données de navigation** dans `edge://settings/privacy` .
 
-<!--  
-If you turn on **Show suggestions from Pinterest in Collections**, Collections perform a Microsoft Bing search using the title of your collection to find relevant Pinterest Topic pages.  Microsoft Edge does not send data about your collections to Pinterest.  You may remove the suggestions and stop searches for Pinterest Topic pages by going to `edge://settings/privacy` and turning off **Show suggestions from Pinterest in Collections**.  
--->  
+Si vous activez l' **affichage des suggestions de Pinterest dans les collections**, les collections effectuent une recherche Microsoft Bing en utilisant le titre de votre collection pour trouver des pages de rubriques Pinterest pertinentes.  Microsoft Edge n’envoie pas de données sur vos collections à Pinterest.  Vous pouvez supprimer les suggestions et arrêter de rechercher des pages de rubriques Pinterest en accédant à `edge://settings/privacy` **afficher les suggestions de Pinterest dans les collections**.  
 
 Les collections ne sont pas disponibles lorsque vous utilisez la navigation InPrivate ou le mode invité.  
 
@@ -189,7 +187,7 @@ Sur le côté droit de la barre d’adresses, Microsoft Edge indique lorsque vot
 
 ![Services de localisation](./media/whitepaper-media/geolocation2.png)  
 
-Si vous autorisez le partage de votre emplacement avec un site, Microsoft Edge envoie des informations réseau locales telles que votre adresse IP et des points d’accès Wi-Fi proches au service de localisation Microsoft.  Le service Microsoft utilise les informations pour évaluer vos coordonnées géographiques.  Cette estimation géographique est alors partagée avec le site avec lequel vous avez accepté de partager votre emplacement.  Sur Windows 10, Microsoft Edge utilise uniquement le service de localisation Microsoft si vous avez activé votre [paramètre d’emplacement Windows](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy).  
+Si vous autorisez le partage de votre emplacement avec un site, Microsoft Edge envoie des informations réseau locales telles que votre adresse IP et des points d’accès Wi-Fi proches au service de localisation Microsoft.  Le service Microsoft utilise les informations pour évaluer vos coordonnées géographiques.  L’estimation de géolocalisation est partagée avec le site avec lequel vous avez accepté de partager votre emplacement.  Sur Windows 10, si vous activez **autoriser l’accès à l’emplacement sur cet appareil** et **autoriser les applications à accéder à votre emplacement** dans les paramètres d' **emplacement** dans les paramètres **Windows** , Microsoft Edge fournit aux sites un emplacement plus précis.  Si vous désactivez **l’option autoriser l’accès à l’emplacement sur cet appareil** et **permettre aux applications d’accéder à votre emplacement**, un emplacement approximatif est fourni aux sites.  Les informations sont partagées uniquement avec les sites que vous avez précédemment autorisés à voir votre emplacement.  [Paramètre d’emplacement Windows](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy).  
 
 Un nouvel ID généré de manière aléatoire est utilisé lors de l’exécution de requêtes au service de localisation Microsoft.  Le service d’emplacement Microsoft Edge n’enregistre pas vos coordonnées géographiques pour une période donnée.  
 
