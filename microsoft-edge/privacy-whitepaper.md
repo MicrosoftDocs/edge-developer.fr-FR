@@ -3,18 +3,18 @@ description: Livre blanc sur la confidentialité MicrosoftEdge
 title: Livre blanc sur la confidentialité MicrosoftEdge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/21/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, confidentialité, livre blanc, approbation
 localization_priority: Priority
-ms.openlocfilehash: 02b2dc0e65211224e8bf75568b7c81d5becd1006
-ms.sourcegitcommit: f79387aa9b4c382b3d6637dfa8fc96bcc34fdbf3
+ms.openlocfilehash: 6aba8f6c1ae7212d5af702bcf13ff9dde6b8659b
+ms.sourcegitcommit: 3f625231067df343d5afbb3f47c1063982067bcb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "10673778"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "10678224"
 ---
 # Livre blanc sur la confidentialité MicrosoftEdge  
 
@@ -86,7 +86,7 @@ Les vidages sur incident sont envoyés à Microsoft et stockés sur des serveurs
 
 Il est possible d’effacer les données de diagnostic de blocage stockées localement sur l’appareil à partir du système de fichiers `edge://crashes` .  
 
-Pour désactiver la collecte des données de diagnostic sur incident sur Windows 10, accédez à **Diagnostics \ & commentaires** dans les diagnostics windows \ & paramètres de commentaires.  Pour les versions de Microsoft Edge sur toutes les autres plateformes `edge://settings/privacy` , voir et désactiver l’option **améliorer les produits Microsoft en envoyant des rapports d’incident et des données sur l’utilisation du paramètre de navigateur** .  Cette collecte des données de diagnostic est également susceptible d’être désactivée pour les entreprises via des [stratégies de groupe gérées par votre organisation](/deployedge/microsoft-edge-privacy-policy).  
+Pour désactiver la collecte des données de diagnostic sur incident sur Windows 10, accédez à **Diagnostics \ & commentaires** dans les diagnostics windows \ & paramètres de commentaires.  Pour les versions de Microsoft Edge sur toutes les autres plateformes `edge://settings/privacy` , voir et désactiver l’option **améliorer les produits Microsoft en envoyant des rapports d’incident et des données sur l’utilisation du paramètre de navigateur** .  Cette collecte des données de diagnostic est également susceptible d’être désactivée pour les entreprises via des [stratégies de groupe gérées par votre organisation](/deployedge/microsoft-edge-enterprise-privacy-settings).  
 
 ## Données de diagnostic relatives à l’utilisation du navigateur  
 
