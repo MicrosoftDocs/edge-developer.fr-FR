@@ -10,12 +10,12 @@ metadata:
   ms.author: msedgedevrel
   ms.date: 04/23/2020
   localization_priority: Priority
-  ms.openlocfilehash: c3839c0302f183420a24199b242e46ab05955920
-  ms.sourcegitcommit: 715d24bde15d756428e865919369e80e5540a857
+  ms.openlocfilehash: 52f768582f25f35f8b0b188cfc1a38edc7aac6c8
+  ms.sourcegitcommit: 3f625231067df343d5afbb3f47c1063982067bcb
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/14/2020
-  ms.locfileid: "10655587"
+  ms.lasthandoff: 05/26/2020
+  ms.locfileid: "10678217"
 highlightedContent:
   items:
   - title: Télécharger Microsoft Edge (canal stable
@@ -58,7 +58,7 @@ productDirectory:
     links:
     - url: /deployedge/security-overview
       text: Sécurité
-    - url: /deployedge/microsoft-edge-privacy-policy
+    - url: /deployedge/microsoft-edge-enterprise-privacy-settings
       text: Confidentialité
   - title: Référence sur les stratégies
     imageSrc: /media/common/i_policy.svg
