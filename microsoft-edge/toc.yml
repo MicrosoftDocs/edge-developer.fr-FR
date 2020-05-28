@@ -68,6 +68,8 @@
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
             - name: Microsoft Edge 83
               href: devtools-guide-chromium/whats-new/2020/03/devtools.md
+            - name: Microsoft Edge 84
+              href: devtools-guide-chromium/whats-new/2020/05/devtools.md
         - name: Mode IE
           href: devtools-guide-chromium/ie-mode.md
         - name: Vue 3D
@@ -94,7 +96,7 @@
                   href: devtools-guide-chromium/css/print-preview.md
         - name: Console
           items:
-            - name: Vue d'ensemble
+            - name: Vue d’ensemble
               href: devtools-guide-chromium/console/index.md
             - name: Messages de journal
               href: devtools-guide-chromium/console/log.md
@@ -132,11 +134,13 @@
               href: devtools-guide-chromium/storage/websql.md
             - name: Cache
               href: devtools-guide-chromium/storage/cache.md
+        - name: Problèmes
+          href: devtools-guide-chromium/issues/index.md
         - name: Menu de commandes
           href: devtools-guide-chromium/command-menu/index.md
         - name: Simulation mobile
           items:
-            - name: Vue d'ensemble
+            - name: Vue d’ensemble
               href: devtools-guide-chromium/device-mode/index.md
             - name: Émuler et tester d’autres navigateurs
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
@@ -182,7 +186,7 @@
               href: devtools-guide-chromium/evaluate-performance/index.md
             - name: Optimiser la vitesse du site Web
               href: devtools-guide-chromium/speed/get-started.md
-            - name: Vue d'ensemble
+            - name: Vue d’ensemble
               href: devtools-guide-chromium/rendering-tools/index.md
             - name: Référence d’analyse des performances
               href: devtools-guide-chromium/evaluate-performance/reference.md
@@ -212,7 +216,7 @@
               href: devtools-guide-chromium/remote-debugging/windows.md
         - name: Mémoire
           items:
-            - name: Vue d'ensemble
+            - name: Vue d’ensemble
               href: devtools-guide-chromium/memory-problems/index.md
             - name: Comprendre la terminologie de la mémoire
               href: devtools-guide-chromium/memory-problems/memory-101.md
@@ -232,7 +236,7 @@
           href: devtools-guide-chromium/resources/index.md
         - name: Personnaliser
           items:
-            - name: Vue d'ensemble
+            - name: Vue d’ensemble
               href: devtools-guide-chromium/customize/index.md
             - name: Thème foncé
               href: devtools-guide-chromium/customize/dark-theme.md
