@@ -99,7 +99,7 @@ Raison du déplacement du focus.
 --------------------------------|---------------------------------------------
 UnknownPermission            | Autorisation inconnue.
 Micro            | Autorisation de capture audio.
-Caméra            | Autorisation de capture vidéo.
+Appareil photo            | Autorisation de capture vidéo.
 Géolocalisation            | Autorisation d’accès à la géolocalisation.
 Notifications            | Autorisation d’envoyer des notifications Web.
 OtherSensors            | Autorisation d’accès au capteur générique.
