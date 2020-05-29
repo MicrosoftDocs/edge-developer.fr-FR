@@ -136,7 +136,7 @@ conceptualContent:
     links:
     - url: /microsoft-edge/devtools-guide-chromium/customize/index
       itemType: reference
-      text: Vue d'ensemble
+      text: Présentation
     - url: /microsoft-edge/devtools-guide-chromium/customize/dark-theme
       itemType: reference
       text: Thème foncé
@@ -233,7 +233,7 @@ conceptualContent:
     links:
     - url: /microsoft-edge/webview2/index
       itemType: reference
-      text: Vue d'ensemble
+      text: Présentation
     - url: /microsoft-edge/webview2/gettingstarted/win32
       itemType: reference
       text: Commencer à utiliser WebView2

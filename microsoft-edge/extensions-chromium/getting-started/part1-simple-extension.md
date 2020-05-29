@@ -18,7 +18,7 @@ ms.locfileid: "10683622"
 
 [Source du package d’extension terminée pour cette partie][ArchiveExtensionGettingStartedPart1]  
 
-## Vue d'ensemble  
+## Présentation  
 
 Dans la première partie, l’objectif est de générer une extension de chrome de contour très simple à partir d’un répertoire vide.  L’objectif de cette extension consiste à effectuer les tâches suivantes.  
 

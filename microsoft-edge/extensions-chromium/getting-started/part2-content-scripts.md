@@ -18,7 +18,7 @@ ms.locfileid: "10683643"
   
 [Source du package d’extension terminée pour cette partie][ArchiveExtensionGettingStartedPart2]  
 
-## Vue d'ensemble  
+## Présentation  
 
 Dans la partie 2, vous apprendrez à mettre à jour votre menu contextuel de manière à ne pas afficher l’image de l’extension statique que vous aviez auparavant, mais pour remplacer cette image par un titre et un bouton HTML standard.  Lorsque cette option est sélectionnée, ce bouton transmet à la page de contenu l’image d’étoiles, qui est incorporée dans l’extension.  Cette image est insérée dans l’onglet du navigateur actif.  
 
