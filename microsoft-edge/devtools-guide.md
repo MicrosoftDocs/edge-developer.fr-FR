@@ -54,11 +54,11 @@ Continuez à envoyer vos [commentaires et demandes de fonctionnalité](#feedback
 
 ## Application du MicrosoftStore  
 
-Le **Microsoft Edge \ (EdgeHTML \) devtools** est [désormais disponible][DevtoolsGuideEdgehtmlWhatsnew] sous la forme d’une [application Windows 10 autonome à partir du Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview], en plus de l’outil`F12`de navigation intégré dans le navigateur.  La version du Windows Store est une fenêtre de **sélection** qui permet de joindre des cibles de page locales et distantes ouvertes et une disposition avec onglets pour faciliter le basculement entre les instances devtools.  
+Le **Microsoft Edge \ (EdgeHTML \) devtools** est [désormais disponible][DevtoolsGuideEdgehtmlWhatsnew] sous la forme d’une [application Windows 10 autonome à partir du Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview], en plus de l’outil de navigation intégré dans le navigateur `F12` .  La version du Windows Store est une fenêtre de **sélection** qui permet de joindre des cibles de page locales et distantes ouvertes et une disposition avec onglets pour faciliter le basculement entre les instances devtools.  
 
 ### Débogage local  
 
-Pour déboguer une page en local, lancez simplement l’application Microsoft Edge DevTools.  Le **panneau local** du sélecteur affiche tous les processus du contenu EdgeHTML actif, y compris les onglets du navigateur d’ouverture, en cours`WWAHost.exe` d’exécution [PWAS][PwasEdgehtmlIndex] \ (processus \) et les contrôles [WebView][HostingWebview] .  Sélectionnez la cible de votre choix pour joindre et ouvrir une nouvelle instance de l’onglet du DevTools.  
+Pour déboguer une page en local, lancez simplement l’application Microsoft Edge DevTools.  Le panneau **local** du sélecteur affiche tous les processus du contenu EdgeHTML actif, y compris les onglets du navigateur d’ouverture, en cours d’exécution [PWAS][PwasEdgehtmlIndex] \ ( `WWAHost.exe` processus \) et les contrôles [WebView][HostingWebview] .  Sélectionnez la cible de votre choix pour joindre et ouvrir une nouvelle instance de l’onglet du DevTools.  
 
 :::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="Panneau local de l’application DevTools":::
    Panneau local de l’application DevTools
@@ -119,7 +119,7 @@ Ces raccourcis contrôlent la fenêtre principale de DevTools et doivent fonctio
 
 ## Commentaires  
 
-Envoyez-nous vos commentaires pour vous aider à améliorer Microsoft Edge \ (EdgeHTML \) DevTools pour vous!  Ouvrez simplement les outils \ (`F12`\) et sélectionnez le bouton [Envoyer des commentaires](#microsoft-edge-edgehtml-developer-tools) .  
+Envoyez-nous vos commentaires pour vous aider à améliorer Microsoft Edge \ (EdgeHTML \) DevTools pour vous!  Ouvrez simplement les outils \ ( `F12` \) et sélectionnez le bouton [Envoyer des commentaires](#microsoft-edge-edgehtml-developer-tools) .  
 
 Participez au programme [Windows Insider][WindowsInsiderProgram] pour prévisualiser les [fonctionnalités les plus récentes disponibles dans le devtools][DevtoolsGuideEdgehtmlWhatsnew].  Utilisez l’application Hub de commentaires Windows pour publier, faire un vote, suivre et obtenir de l’aide sur les suggestions et problèmes généraux dans Windows.  
 
