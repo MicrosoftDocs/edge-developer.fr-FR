@@ -3,17 +3,17 @@ description: Héberger le contenu Web dans votre application Win32 avec le contr
 title: Applications Microsoft Edge WebView2 pour Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/13/2020
+ms.date: 05/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: f2c3bcb5334abc907a838971ebc1773b6485194f
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: a0030e1a2a77d65963bd8333f2071485ab2fe308
+ms.sourcegitcommit: 83efa259be89cc773a82751242495a0a919d54cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653333"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10687796"
 ---
 # Classe Microsoft. Web. WebView2. WPF. WebView2 
 
@@ -50,16 +50,6 @@ Contrôle pour incorporer du contenu Web dans une application WPF.
 [Recharger](#reload) | Recharge la page active.
 [Stop](#stop) | Arrête toutes les navigations et les extractions de ressources en attente.
 [WebView2](#webview2) | Crée une nouvelle instance d’un contrôle WebView2.
-[BuildWindowCore](#buildwindowcore) | Il est alors substitué de HwndHost et est appelé pour nous indiquer de créer notre HWND.
-[DestroyWindowCore](#destroywindowcore) | Il est alors substitué de HwndHost et est appelé pour nous demander de détruire le HWND.
-[Suppression](#dispose) | C’est appelé par notre classe de base en fonction de l’implémentation type du modèle IDispose.
-[HasFocusWithinCore](#hasfocuswithincore) | Il est substitué de HwndHost et est appelé lorsque WPF a besoin de savoir si le focus se trouve dans notre contrôle/fenêtre.
-[OnKeyDown](#onkeydown) | Il est substitué de UIElement et appelé pour nous permettre de traiter les entrées de la pression de touche.
-[OnKeyUp](#onkeyup) | Voir OnKeyDown.
-[OnPreviewKeyDown](#onpreviewkeydown) | Il s’agit de la version d’évaluation («Preview») (c.-à-d.
-[OnPreviewKeyUp](#onpreviewkeyup) | Voir OnPreviewKeyDown.
-[OnWindowPositionChanged](#onwindowpositionchanged) | Il est substitué de HwndHost et appelé lorsque l’emplacement de votre contrôle a changé.
-[TabIntoCore](#tabintocore) | Il est alors substitué de HwndHost et est appelé pour nous informer que la touche de tabulation a entraîné le déplacement vers notre contrôle/fenêtre.
 
 Ce contrôle est en réalité un wrapper qui entoure l’API COM WebView2, qui vous trouverez de la documentation pour cet emplacement: [https://aka.ms/webview2](https://aka.ms/webview2) vous pouvez accéder directement à l’interface ICoreWebView2 sous-jacente et à toutes ses fonctionnalités en accédant à la propriété CoreWebView2. Certaines des fonctionnalités COM les plus courantes sont également accessibles directement via les méthodes d’encapsulation/propriétés/événements du contrôle.
 
@@ -288,97 +278,4 @@ Crée une nouvelle instance d’un contrôle WebView2.
 > public [WebView2](#webview2)()
 
 Notez que le CoreWebView2 du contrôle est null jusqu’à son initialisation. Pour obtenir une vue d’ensemble de l’initialisation, consultez la documentation de la classe WebView2.
-
-#### BuildWindowCore 
-
-Il est alors substitué de HwndHost et est appelé pour nous indiquer de créer notre HWND.
-
-> remplacement sécurisé de HandleRef [BuildWindowCore](#buildwindowcore)(HandleRef hwndParent)
-
-##### Parameters
-* `hwndParent` HWND que nous devons utiliser en tant que parent de celle que nous créons.
-
-##### Renvoie
-Le HWND que nous avons créé.
-
-#### DestroyWindowCore 
-
-Il est alors substitué de HwndHost et est appelé pour nous demander de détruire le HWND.
-
-> remplacement protégé void [DestroyWindowCore](#destroywindowcore)(HandleRef HWND)
-
-##### Parameters
-* `hwnd` Notre HWND que nous devons détruire.
-
-#### Suppression 
-
-C’est appelé par notre classe de base en fonction de l’implémentation type du modèle IDispose.
-
-> remplacement protégé void [dispose](#dispose)(bool disposer)
-
-Nous nous mettons en œuvre en publiant toutes nos ressources COM sous-jacentes, dont notre CoreWebView2.
-
-##### Parameters
-* `disposing` True si un appelant appelle explicitement dispose et false s’il est finalisé.
-
-#### HasFocusWithinCore 
-
-Il est substitué de HwndHost et est appelé lorsque WPF a besoin de savoir si le focus se trouve dans notre contrôle/fenêtre.
-
-> remplacement protégé bool [HasFocusWithinCore](#hasfocuswithincore)()
-
-Dans la mesure où il s’agit de l’hébergement d’une fenêtre non-WPF, WPF ne peut pas le connaître en appelant cette fonction. Pour répondre, nous effectuons simplement le suivi de l’État en fonction des événements CoreWebView2 qui sont déclenchés quand il gagne ou perd du focus.
-
-##### Renvoie
-True si le focus se trouve dans notre contrôle/fenêtre, false dans le cas contraire.
-
-#### OnKeyDown 
-
-Il est substitué de UIElement et appelé pour nous permettre de traiter les entrées de la pression de touche.
-
-> remplacement protégé void [OnKeyDown](#onkeydown)(KeyEventArgs e)
-
-WPF ne doit jamais réellement appeler cet élément en réponse à des événements de clavier, car nous hébergeons une fenêtre qui n’est pas WPF. Lorsque notre fenêtre comporte des fenêtres de focalisation, celles-ci s’envoient directement au lieu de la fenêtre de niveau supérieur et du système d’entrée de WPF. Cette substitution ne doit être appelée que lorsque nous transférons explicitement l’entrée de touche d’accès rapide du CoreWebView2 vers WPF (dans CoreWebView2Controller_AcceleratorKeyPressed). Même alors, ce KeyDownEvent est déclenché, car notre implémentation de PreviewKeyDownEvent l’a explicitement déclenché, en correspondant au système habituel de WPF. Le processus est le suivant: CoreWebView2Controller_AcceleratorKeyPressed-> lever PreviewKeyDownEvent-> OnPreviewKeyDown-> lever KeyDownEvent-> OnKeyDown
-
-#### OnKeyUp 
-
-Voir OnKeyDown.
-
-> l' [annulation de](#onkeyup)la substitution protégée
-
-#### OnPreviewKeyDown 
-
-Il s’agit de la version d’évaluation («Preview») (c.-à-d.
-
-> remplacement protégé void [OnPreviewKeyDown](#onpreviewkeydown)(KeyEventArgs e)
-
-Tunneling) de OnKeyDown, ce qui fait qu’il se produit en premier. Comme OnKeyDown, il n’est jamais possible d’appeler uniquement si nous transférons explicitement les touches d’appui du CoreWebView2. Pour imiter la gestion des entrées standard de WPF, lorsque nous avons reçu ce message, nous nous réactivons et nous déclenchons le KeyDownEvent de propagation standard. Ainsi, les autres utilisateurs de l’arborescence WPF peuvent voir la même paire standard d’événements d’entrée que si le WPF lui-même aurait déclenché le déclenchement d’une pression sur la touche.
-
-#### OnPreviewKeyUp 
-
-Voir OnPreviewKeyDown.
-
-> remplacement protégé void [OnPreviewKeyUp](#onpreviewkeyup)(KeyEventArgs e)
-
-#### OnWindowPositionChanged 
-
-Il est substitué de HwndHost et appelé lorsque l’emplacement de votre contrôle a changé.
-
-> remplacement protégé void [OnWindowPositionChanged](#onwindowpositionchanged)(Rect rcBoundingBox)
-
-Le HwndHost prend en charge la mise à jour de HWND que nous avons créé. Ce que nous devons faire est de déplacer notre CoreWebView2 pour correspondre au nouvel emplacement.
-
-#### TabIntoCore 
-
-Il est alors substitué de HwndHost et est appelé pour nous informer que la touche de tabulation a entraîné le déplacement vers notre contrôle/fenêtre.
-
-> substitution protégée [TabIntoCore](#tabintocore)(demande TraversalRequest)
-
-Dans la mesure où WPF ne peut pas gérer le changement de focus sur un HWND non WPF, il est délégué ici. C’est pourquoi notre travail consiste simplement à placer le focus sur notre HWND externe.
-
-##### Parameters
-* `request` Informations sur le déplacement du focus.
-
-##### Renvoie
-True pour indiquer que nous avons géré la navigation ou false pour indiquer que ce n’est pas le cas.
 

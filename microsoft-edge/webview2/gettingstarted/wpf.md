@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, applications WPF, WPF, Edge, CoreWebView2, contrôle de navigateur, html Edge, mise en route, mise en route, .NET
-ms.openlocfilehash: 6e66d90c3b821ee3656466ccaf3c9a079dda5030
-ms.sourcegitcommit: e00e783926877090116e650da25242498173a7fc
+ms.openlocfilehash: ebff559a940c54dcea18dec58170bdee1e030e9b
+ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "10673952"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10685693"
 ---
 # Commencer à utiliser WebView2 dans WPF (Preview)  
 
@@ -24,7 +24,7 @@ Dans cet article, vous allez commencer à créer votre première application Web
 Vérifiez que vous avez installé la liste des conditions préalables suivantes avant de continuer:  
 
 * [Canal Canaries Microsoft Edge (chrome)](https://www.microsoftedgeinsider.com/download/) installé sur Windows 10, Windows 8,1 ou Windows 7. 
-* [Visual Studio](https://visualstudio.microsoft.com/) 2015 ou version ultérieure.  
+* [Visual Studio](https://visualstudio.microsoft.com/) 2017 ou version ultérieure.  
 
 ## Étape 1: créer une application de fenêtre unique
 
@@ -327,11 +327,9 @@ Félicitations, vous avez créé votre première application WebView2.
 
 ## Étapes suivantes  
 
-Il existe de nombreuses fonctionnalités WebView2 non traitées dans cette procédure pas à pas.  
-
-Pour en savoir plus:  
-
-* Pour plus d’informations sur chaque API, consultez les informations de référence sur les [API](../reference/dotnet/0-9-515-reference-webview2.md) .  
+* Extraire le [référentiel Samples WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) pour obtenir un exemple complet de fonctionnalités WebView2's
+* Référence sur l' [API](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2) d’extraction pour plus d’informations sur nos API
+* Extraire une liste de [ressources WebView2](../index.md#next-steps) pour en savoir plus sur WebView2
 
 ## Contacter l’équipe WebView de Microsoft Edge  
 

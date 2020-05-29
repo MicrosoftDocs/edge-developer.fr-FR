@@ -3,17 +3,17 @@ description: Héberger le contenu Web dans votre application Win32 avec le contr
 title: Applications Microsoft Edge WebView2 pour Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 05/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: 25ea8367aa9d64d0a1066cf8c1564f4d9c9f05ed
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 532c898845125564ad5af6460dc8d1ff6464abfb
+ms.sourcegitcommit: 83efa259be89cc773a82751242495a0a919d54cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653260"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10687803"
 ---
 # Classe Microsoft. Web. WebView2. WinForms. WebView2 
 
@@ -50,9 +50,6 @@ Ctrl pour incorporer WebView2 dans WinForms.
 [Recharger](#reload) | Rechargez le document de niveau supérieur du WebView2.
 [Stop](#stop) | Arrêtez la navigation en cours dans le WebView2.
 [WebView2](#webview2) | Créer un contrôle WinForms WebView2.
-[OnEnter](#onenter) | Gestionnaire de focus protégé.
-[OnSizeChanged](#onsizechanged) | Gestionnaire de SizeChanged protégé.
-[OnVisibleChanged](#onvisiblechanged) | Gestionnaire de VisibilityChanged protégé.
 
 ## Ses
 
@@ -216,22 +213,4 @@ Créer un contrôle WinForms WebView2.
 > public [WebView2](#webview2)()
 
 Après construction, la propriété CoreWebView2 a la valeur null. Appelez [EnsureCoreWebView2Async](#ensurecorewebview2async) pour initialiser la CoreWebView2 sous-jacente.
-
-#### OnEnter 
-
-Gestionnaire de focus protégé.
-
-> remplacement [protégé annulé entrée](#onenter)(EventArgs e)
-
-#### OnSizeChanged 
-
-Gestionnaire de SizeChanged protégé.
-
-> [OnSizeChanged](#onsizechanged)de remplacement protégé void
-
-#### OnVisibleChanged 
-
-Gestionnaire de VisibilityChanged protégé.
-
-> [OnVisibleChanged](#onvisiblechanged)de remplacement protégé void
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinForms applications, WinForms, Edge, CoreWebView2, contrôle de navigateur, html Edge, mise en route, mise en route, .NET, Windows Forms
-ms.openlocfilehash: e17139d9d2b556d8048fb0043b88b56430c93091
-ms.sourcegitcommit: e00e783926877090116e650da25242498173a7fc
+ms.openlocfilehash: 6c53b66dd9f849384f24c2ae879f28231a25f481
+ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "10673944"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "10685686"
 ---
 # Commencer à utiliser WebView2 dans les applications Windows Forms (Preview)  
 
@@ -24,7 +24,7 @@ Dans cet article, vous allez commencer à créer votre première application Web
 Vérifiez que vous avez installé la liste des conditions préalables suivantes avant de continuer:  
 
 * [Canal Canaries Microsoft Edge (chrome)](https://www.microsoftedgeinsider.com/download/) installé sur Windows 10, Windows 8,1 ou Windows 7. 
-* [Visual Studio](https://visualstudio.microsoft.com/) 2015 ou version ultérieure.
+* [Visual Studio](https://visualstudio.microsoft.com/) 2017 ou version ultérieure.
 
 > [!NOTE]
 > Si vous développez avec **Windows Forms .net Core 3,0 ou .net 5**, téléchargez [Visual Studio (Preview)](https://visualstudio.microsoft.com/vs/preview/) .
@@ -290,9 +290,12 @@ Sélectionnez `F5` pour générer et exécuter l’application.  Vérifiez que l
 
 Félicitations, vous avez créé votre première application WebView2.  
 
-## Étapes suivantes  
+## Étapes suivantes 
 
-Pour plus d’informations sur les fonctionnalités d’WebView2 non traitées dans cette procédure pas à pas, voir la référence de l' [API](../reference/dotnet/0-9-515-reference-webview2.md).
+* Extraire le [référentiel Samples WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) pour obtenir un exemple complet de fonctionnalités WebView2's
+* Référence sur l' [API](../reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md) d’extraction pour plus d’informations sur nos API
+* Extraire une liste de [ressources WebView2](../index.md#next-steps) pour en savoir plus sur WebView2
+
 
 ## Contacter l’équipe WebView de Microsoft Edge  
 
