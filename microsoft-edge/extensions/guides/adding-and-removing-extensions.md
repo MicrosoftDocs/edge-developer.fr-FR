@@ -54,7 +54,7 @@ Vous trouverez également des informations sur la façon de modifier l’emplace
 ![extension dans le volet extension](./../media/sideload-extension-installed.png)
 
 > [!NOTE]
-> Les extensions non signées sont automatiquement désactivées lors du lancement ultérieur de Microsoft Edge. Lorsque le navigateur passe à un état inactif (au bout de 10 secondes d’inactivité), vous verrez la notification suivante en bas de la fenêtre. ![notification](./../media/riskynotification.png) risquée pour activer les extensions non signées, cliquez sur «Activer quand même».
+> Les extensions non signées sont automatiquement désactivées lors du lancement ultérieur de Microsoft Edge. Lorsque le navigateur passe à un état inactif (au bout de 10 secondes d’inactivité), vous verrez la notification suivante en bas de la fenêtre. ![notification risquée ](./../media/riskynotification.png) pour activer les extensions non signées, cliquez sur «Activer quand même».
 
 
 
