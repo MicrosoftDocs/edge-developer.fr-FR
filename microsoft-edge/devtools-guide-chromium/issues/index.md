@@ -6,12 +6,12 @@ ms.date: 05/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: cd6123f235af4ccb87338e1d4db12c03a93a9eaa
-ms.sourcegitcommit: a5392ab44133d742c0e1fa500ad9a872989b7c3f
+ms.openlocfilehash: 394ea0e831e3b60a60a149d1281c5cca382a887d
+ms.sourcegitcommit: ba9f0ed77e84174b03262b17e62c6a7e26cfeb3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10684792"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "10688128"
 ---
 <!-- Copyright Sam Dutton 
 
