@@ -1,24 +1,24 @@
-- name: WebView2 (chrome) (aperçu)
+- name: WebView2 (Chromium) (version d’évaluation)
   href: index.md
-- name: Mise en route
+- name: Prise en main
   items:
     - name: Win32
       href: gettingstarted/win32.md
-    - name: Foundation
+    - name: WPF
       href: gettingstarted/wpf.md
-    - name: Windows Forms
+    - name: WindowsForms
       href: gettingstarted/winforms.md
 - name: Concepts
   items:
-    - name: Distribution de mon application
+    - name: Distribuer Mon application
       href: concepts/distribution.md
-    - name: Gestion des versions
+    - name: Contrôle de version
       href: concepts/versioning.md
 - name: Notes de publication
   href: releasenotes.md
 - name: Feuille de route
   href: roadmap.md
-- name: Procédures
+- name: Procédure
   items:
     - name: Débogage WebView2
       href: howto/Debug.md
@@ -27,7 +27,7 @@
 - name: Référence
   href: webview2-api-reference.md
   items:
-    - name: C++ Win32
+    - name: Win32 C++
       href: reference/win32/0-9-488-reference-webview2.md
       items:
         - name: ICoreWebView2
@@ -54,9 +54,9 @@
           href: reference/win32/0-9-488/icorewebview2webresourcerequest.md
         - name: ICoreWebView2WebResourceResponse
           href: reference/win32/0-9-488/icorewebview2webresourceresponse.md
-        - name: Globales
+        - name: Globals
           href: reference/win32/0-9-488/webview2-idl.md
-        - name: Arguments d’événement
+        - name: Arguments de l’événement
           items:
             - name: ICoreWebView2AcceleratorKeyPressedEventArgs
               href: reference/win32/0-9-488/icorewebview2acceleratorkeypressedeventargs.md
@@ -138,7 +138,7 @@
               href: reference/win32/0-9-488/icorewebview2windowcloserequestedeventhandler.md
             - name: ICoreWebView2ZoomFactorChangedEventHandler
               href: reference/win32/0-9-488/icorewebview2zoomfactorchangedeventhandler.md
-        - name: Pratiques
+        - name: Expérimentales
           items:
             - name: ICoreWebView2ExperimentalCompositionController
               href: reference/win32/0-9-488/icorewebview2experimentalcompositioncontroller.md
@@ -150,9 +150,9 @@
               href: reference/win32/0-9-488/icorewebview2experimentalenvironment.md
             - name: ICoreWebView2ExperimentalPointerInfo
               href: reference/win32/0-9-488/icorewebview2experimentalpointerinfo.md
-        - name: Archivées
+        - name: Archivés
           items:
-            - name: référence 0.9.430 (WebView2)
+            - name: '0.9.430 : référence (WebView2)'
               href: reference/win32/0-9-430-reference-webview2.md
               items:
                 - name: ICoreWebView2
@@ -177,9 +177,9 @@
                   href: reference/win32/0-9-430/icorewebview2webresourcerequest.md
                 - name: ICoreWebView2WebResourceResponse
                   href: reference/win32/0-9-430/icorewebview2webresourceresponse.md
-                - name: Globales
+                - name: Globals
                   href: reference/win32/0-9-430/webview2-idl.md
-                - name: Arguments d’événement
+                - name: Arguments de l’événement
                   items:
                     - name: ICoreWebView2AcceleratorKeyPressedEventArgs
                       href: reference/win32/0-9-430/icorewebview2acceleratorkeypressedeventargs.md
@@ -263,7 +263,7 @@
                       href: reference/win32/0-9-430/icorewebview2windowcloserequestedeventhandler.md
                     - name: ICoreWebView2ZoomFactorChangedEventHandler
                       href: reference/win32/0-9-430/icorewebview2zoomfactorchangedeventhandler.md
-            - name: référence 0.8.190 (WebView2)
+            - name: '0.8.190 : référence (WebView2)'
               href: reference/win32/0-8-190-reference-webview2.md
               items:
                 - name: IWebView2Deferral
@@ -300,9 +300,9 @@
                   href: reference/win32/0-8-190/iwebview2webview4.md
                 - name: IWebView2WebView5
                   href: reference/win32/0-8-190/iwebview2webview5.md
-                - name: Globales
+                - name: Globals
                   href: reference/win32/0-8-190/webview2-idl.md
-                - name: Arguments d’événement
+                - name: Arguments de l’événement
                   items:
                     - name: IWebView2AcceleratorKeyPressedEventArgs
                       href: reference/win32/0-8-190/iwebview2acceleratorkeypressedeventargs.md
@@ -380,10 +380,10 @@
                       href: reference/win32/0-8-190/iwebview2zoomfactorchangedeventhandler.md
     - name: .NET
       items:
-        - name: Noyau
+        - name: Core
           href: reference/dotnet/0-9-515-reference-webview2.md
           items:
-            - name: Espace de noms Microsoft. Web. WebView2. Core
+            - name: Microsoft.Web.WebView2.Core namespace
               href: reference/dotnet/0-9-515/namespace-microsoft-web-webview2-core.md
             - name: CoreWebView2
               href: reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2.md
@@ -403,7 +403,7 @@
               href: reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2settings.md
             - name: EdgeNotFoundException
               href: reference/dotnet/0-9-515/microsoft-web-webview2-core-edgenotfoundexception.md
-            - name: Arguments d’événement
+            - name: Arguments de l’événement
               items:
                 - name: CoreWebView2AcceleratorKeyPressedEventArgs
                   href: reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2acceleratorkeypressedeventargs.md
@@ -431,14 +431,14 @@
                   href: reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md
                 - name: CoreWebView2WebResourceRequestedEventArgs
                   href: reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md
-        - name: Foundation
+        - name: WPF
           href: reference/wpf/0-9-515-reference-webview2.md
           items:
-            - name: Classe CoreWebView2CreationProperties
+            - name: CoreWebView2CreationProperties class
               href: reference/wpf/0-9-515/microsoft-web-webview2-wpf-corewebview2creationproperties.md
             - name: Classe WebView2
               href: reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md
-        - name: Windows Forms
+        - name: WindowsForms
           href: reference/winforms/0-9-515-reference-webview2.md
           items:
             - name: Classe WebView2
