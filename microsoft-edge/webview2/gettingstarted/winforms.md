@@ -3,17 +3,17 @@ description: Héberger du contenu Web dans votre application Windows Forms avec 
 title: Applications WebView 2 de Microsoft Edge 2 pour Windows Forms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 06/04/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinForms applications, WinForms, Edge, CoreWebView2, contrôle de navigateur, html Edge, mise en route, mise en route, .NET, Windows Forms
-ms.openlocfilehash: 6c53b66dd9f849384f24c2ae879f28231a25f481
-ms.sourcegitcommit: 799fe63d961a37ada455bb36ef3ef0d8076e70bb
+ms.openlocfilehash: 1e23c96cee1e577560c2d26b96a53454533867dd
+ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "10685686"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "10695893"
 ---
 # Commencer à utiliser WebView2 dans les applications Windows Forms (Preview)  
 
@@ -27,7 +27,7 @@ Vérifiez que vous avez installé la liste des conditions préalables suivantes 
 * [Visual Studio](https://visualstudio.microsoft.com/) 2017 ou version ultérieure.
 
 > [!NOTE]
-> Si vous développez avec **Windows Forms .net Core 3,0 ou .net 5**, téléchargez [Visual Studio (Preview)](https://visualstudio.microsoft.com/vs/preview/) .
+> WebView2 ne prend actuellement pas en charge le concepteur de .NET Core 3.0 [(Preview)](https://visualstudio.microsoft.com/vs/preview/).
 
 ## Étape 1: créer une application de fenêtre unique
 
@@ -35,11 +35,11 @@ Utiliser un projet de bureau de base contenant une seule fenêtre principale.
 
 1. Ouvrez **Visual Studio.**
 
-2. Choisissez **application .NET Framework pour Windows Forms** ou **application .net pour Windows Forms**, puis cliquez sur **suivant**.
+2. Choisissez **application .NET Framework pour Windows Forms** , puis sélectionnez **suivant**.
 
     ![NewProject](./media/winforms-newproject.png)
 
-3. Entrez des valeurs pour le nom et l' **emplacement**du **projet** .  Sélectionnez **.NET Framework 4.6.2** ou version ultérieure, ou **.net Core 3,0** ou version ultérieure.  
+3. Entrez des valeurs pour le nom et l' **emplacement**du **projet** .  Sélectionnez **.NET Framework 4.6.2** ou version ultérieure.  
 
     ![startproject](./media/winforms-startproj.png)
 
