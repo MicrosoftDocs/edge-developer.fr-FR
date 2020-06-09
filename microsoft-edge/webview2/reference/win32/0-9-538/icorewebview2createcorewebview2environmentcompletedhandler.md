@@ -3,29 +3,26 @@ description: Héberger le contenu Web dans votre application Win32 avec le contr
 title: Applications Microsoft Edge WebView2 pour Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 06/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: 2f9647cd25c88808456854c7c8b29abc8cbfed05
+ms.openlocfilehash: dbc1a3e05f9cdc5b5ced2e0b7d489b06392e6100
 ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698210"
+ms.locfileid: "10698650"
 ---
-# interface ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler 
-
-> [!NOTE]
-> Cette référence peut être modifiée ou indisponible pour les versions ultérieures au SDK version 0.9.515. Reportez-vous à la rubrique [référence d’API WebView2](../../../webview2-api-reference.md) pour obtenir les dernières références d’API.
+# interface ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler 
 
 ```
-interface ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler
+interface ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler
   : public IUnknown
 ```
 
-L’appelant implémente cette interface pour recevoir le résultat de la méthode AddScriptToExecuteOnDocumentCreated.
+L’appelant implémente cette interface pour recevoir les WebView2Environment créées via CreateCoreWebView2Environment.
 
 ## Résumé
 
@@ -39,5 +36,5 @@ L’appelant implémente cette interface pour recevoir le résultat de la métho
 
 Appelée pour fournir à l’implémenteur l’état d’achèvement et le résultat de l’appel de méthode asynchrone correspondant.
 
-> [appel](#invoke)HRESULT public (HRESULT codeerreur, ID LPCWSTR)
+> [appel](#invoke)HRESULT public (résultat HRESULT, [ICoreWebView2Environment](icorewebview2environment.md) * created_environment)
 
