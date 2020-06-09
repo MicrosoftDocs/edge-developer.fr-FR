@@ -8,33 +8,36 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: 73af2e217ca645536623eca18ceafad3270529cd
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 99a6df2d0959b1bebe728b089a05d86efc4df2f5
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653549"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10698119"
 ---
-# <span data-ttu-id="70ac8-104">interface ICoreWebView2WebMessageReceivedEventHandler</span><span class="sxs-lookup"><span data-stu-id="70ac8-104">interface ICoreWebView2WebMessageReceivedEventHandler</span></span> 
+# <span data-ttu-id="219bf-104">interface ICoreWebView2WebMessageReceivedEventHandler</span><span class="sxs-lookup"><span data-stu-id="219bf-104">interface ICoreWebView2WebMessageReceivedEventHandler</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="219bf-105">Cette référence peut être modifiée ou indisponible pour les versions ultérieures au SDK version 0.9.515.</span><span class="sxs-lookup"><span data-stu-id="219bf-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="219bf-106">Reportez-vous à la rubrique [référence d’API WebView2](../../../webview2-api-reference.md) pour obtenir les dernières références d’API.</span><span class="sxs-lookup"><span data-stu-id="219bf-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
 
 ```
 interface ICoreWebView2WebMessageReceivedEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="70ac8-105">L’appelant implémente cette interface pour recevoir l’événement WebMessageReceived.</span><span class="sxs-lookup"><span data-stu-id="70ac8-105">The caller implements this interface to receive the WebMessageReceived event.</span></span>
+<span data-ttu-id="219bf-107">L’appelant implémente cette interface pour recevoir l’événement WebMessageReceived.</span><span class="sxs-lookup"><span data-stu-id="219bf-107">The caller implements this interface to receive the WebMessageReceived event.</span></span>
 
-## <span data-ttu-id="70ac8-106">Résumé</span><span class="sxs-lookup"><span data-stu-id="70ac8-106">Summary</span></span>
+## <span data-ttu-id="219bf-108">Résumé</span><span class="sxs-lookup"><span data-stu-id="219bf-108">Summary</span></span>
 
- <span data-ttu-id="70ac8-107">Ses</span><span class="sxs-lookup"><span data-stu-id="70ac8-107">Members</span></span>                        | <span data-ttu-id="70ac8-108">Descriptions</span><span class="sxs-lookup"><span data-stu-id="70ac8-108">Descriptions</span></span>
+ <span data-ttu-id="219bf-109">Ses</span><span class="sxs-lookup"><span data-stu-id="219bf-109">Members</span></span>                        | <span data-ttu-id="219bf-110">Descriptions</span><span class="sxs-lookup"><span data-stu-id="219bf-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="70ac8-109">Invoke</span><span class="sxs-lookup"><span data-stu-id="70ac8-109">Invoke</span></span>](#invoke) | <span data-ttu-id="70ac8-110">Appelée pour fournir à l’implémenteur des arguments d’événement pour l’événement correspondant.</span><span class="sxs-lookup"><span data-stu-id="70ac8-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
+[<span data-ttu-id="219bf-111">Invoke</span><span class="sxs-lookup"><span data-stu-id="219bf-111">Invoke</span></span>](#invoke) | <span data-ttu-id="219bf-112">Appelée pour fournir à l’implémenteur des arguments d’événement pour l’événement correspondant.</span><span class="sxs-lookup"><span data-stu-id="219bf-112">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-## <span data-ttu-id="70ac8-111">Ses</span><span class="sxs-lookup"><span data-stu-id="70ac8-111">Members</span></span>
+## <span data-ttu-id="219bf-113">Ses</span><span class="sxs-lookup"><span data-stu-id="219bf-113">Members</span></span>
 
-#### <span data-ttu-id="70ac8-112">Invoke</span><span class="sxs-lookup"><span data-stu-id="70ac8-112">Invoke</span></span> 
+#### <span data-ttu-id="219bf-114">Invoke</span><span class="sxs-lookup"><span data-stu-id="219bf-114">Invoke</span></span> 
 
-<span data-ttu-id="70ac8-113">Appelée pour fournir à l’implémenteur des arguments d’événement pour l’événement correspondant.</span><span class="sxs-lookup"><span data-stu-id="70ac8-113">Called to provide the implementer with the event args for the corresponding event.</span></span>
+<span data-ttu-id="219bf-115">Appelée pour fournir à l’implémenteur des arguments d’événement pour l’événement correspondant.</span><span class="sxs-lookup"><span data-stu-id="219bf-115">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-> <span data-ttu-id="70ac8-114">[appel](#invoke)HRESULT public ([ICoreWebView2](icorewebview2.md) \* sender, [ICoreWebView2WebMessageReceivedEventArgs](icorewebview2webmessagereceivedeventargs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="70ac8-114">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* sender, [ICoreWebView2WebMessageReceivedEventArgs](icorewebview2webmessagereceivedeventargs.md) \* args)</span></span>
+> <span data-ttu-id="219bf-116">[appel](#invoke)HRESULT public ([ICoreWebView2](icorewebview2.md) \* sender, [ICoreWebView2WebMessageReceivedEventArgs](icorewebview2webmessagereceivedeventargs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="219bf-116">public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) \* sender, [ICoreWebView2WebMessageReceivedEventArgs](icorewebview2webmessagereceivedeventargs.md) \* args)</span></span>
 
