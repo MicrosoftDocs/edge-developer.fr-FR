@@ -8,14 +8,17 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: 9210a4b70d0e2edf30cbaad906f57b360688dfe8
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 072ce10e7ac1f34238278366c3e8799a3268cb0b
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653341"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697531"
 ---
 # Classe Microsoft. Web. WebView2. Core. CoreWebView2WebResourceRequestedEventArgs 
+
+> [!NOTE]
+> Cette référence peut être modifiée ou indisponible pour les versions ultérieures au SDK version 0.9.515. Reportez-vous à la rubrique [référence d’API WebView2](../../../webview2-api-reference.md) pour obtenir les dernières références d’API.
 
 Espace de noms: Microsoft. Web. WebView2. Core \
 Assembly: Microsoft. Web. WebView2. Core. dll

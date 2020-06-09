@@ -3,19 +3,22 @@ description: Héberger le contenu Web dans votre application Win32 avec le contr
 title: Applications Microsoft Edge WebView2 pour Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 06/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: be8f475d4c1a886a92b46144f2bffde2d49dc9d4
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 986b1dc2870375243a0ee664262216105edd95a8
+ms.sourcegitcommit: 3f8c8a5643e416b0851254833f9771192883ec45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653571"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10699499"
 ---
 # Classe Microsoft. Web. WebView2. Core. CoreWebView2Environment 
+
+> [!NOTE]
+> Cette référence peut être modifiée ou indisponible pour les versions ultérieures au SDK version 0.9.515. Reportez-vous à la rubrique [référence d’API WebView2](../../../webview2-api-reference.md) pour obtenir les dernières références d’API.
 
 Espace de noms: Microsoft. Web. WebView2. Core \
 Assembly: Microsoft. Web. WebView2. Core. dll
@@ -58,7 +61,7 @@ Dans la mesure où un dossier de données utilisateur ne peut être utilisé que
 
 Crée un environnement WebView2 persistant à l’aide de la version latérale installée.
 
-> tâche asynchrone publique< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md)  >  [CreateAsync](#createasync)(String browserExecutableFolder, String userDataFolder, CoreWebView2EnvironmentOptions options)
+> tâches asynchrones publiques< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md)  >  [CreateAsync](#createasync)(String browserExecutableFolder, String userDataFolder, CoreWebView2EnvironmentOptions options)
 
 ##### Parameters
 * `browserExecutableFolder` Le chemin d’accès relatif au dossier qui contient le bord incorporé. 

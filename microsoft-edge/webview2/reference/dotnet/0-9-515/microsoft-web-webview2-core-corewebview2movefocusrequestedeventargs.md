@@ -8,14 +8,17 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: 3c88108f0e1df89c62c8713ff37f35d0c759cf6c
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 69835f6fe22246f43e3df9c45a7fde7a674ac0e5
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653632"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697643"
 ---
 # Classe Microsoft. Web. WebView2. Core. CoreWebView2MoveFocusRequestedEventArgs 
+
+> [!NOTE]
+> Cette référence peut être modifiée ou indisponible pour les versions ultérieures au SDK version 0.9.515. Reportez-vous à la rubrique [référence d’API WebView2](../../../webview2-api-reference.md) pour obtenir les dernières références d’API.
 
 Espace de noms: Microsoft. Web. WebView2. Core \
 Assembly: Microsoft. Web. WebView2. Core. dll

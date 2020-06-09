@@ -8,20 +8,23 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: d7e38f25a3e58d21744c8631319f553f2b0962fb
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 8c0511dc0e7327ebc2f6ee3bac34f62716dff472
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653610"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10697881"
 ---
-# Référence (WebView2)  
+# 0.9.515-Référence (WebView2)  
+
+> [!NOTE]
+> Cette référence peut être modifiée ou indisponible pour les versions ultérieures au SDK version 0.9.515. Reportez-vous à la rubrique [référence d’API WebView2](../../webview2-api-reference.md) pour obtenir les dernières références d’API.
 
 Le contrôle Microsoft Edge WebView2 vous permet d’héberger le contenu Web de votre application à l’aide de [Microsoft Edge \ (chrome \)](https://www.microsoftedgeinsider.com) en tant que moteur de rendu.  Pour plus d’informations, voir [vue d’ensemble de Microsoft Edge WebView2](../../index.md)) et [mise en route d’WebView2](../../gettingstarted/win32.md).  [ICoreWebView2](0-9-488/ICoreWebView2.md) est l’endroit idéal pour commencer à apprendre les détails de l’API.  
 
-## Globales  
+## Globals  
 
-*   [Globales](0-9-430/webview2-idl.md)  
+*   [Globals](0-9-488/webview2-idl.md)  
 
 ## Implément  
 *   [ICoreWebView2](0-9-488/icorewebview2.md)
@@ -37,7 +40,7 @@ Le contrôle Microsoft Edge WebView2 vous permet d’héberger le contenu Web de
 *   [ICoreWebView2WebResourceRequest](0-9-488/icorewebview2webresourcerequest.md)
 *   [ICoreWebView2WebResourceResponse](0-9-488/icorewebview2webresourceresponse.md)
 
-### Arguments d’événement
+### Arguments de l’événement
 
 *   [ICoreWebView2AcceleratorKeyPressedEventArgs](0-9-488/icorewebview2acceleratorkeypressedeventargs.md)
 *   [ICoreWebView2ContentLoadingEventArgs](0-9-488/icorewebview2contentloadingeventargs.md)
@@ -82,7 +85,7 @@ Le contrôle Microsoft Edge WebView2 vous permet d’héberger le contenu Web de
 *   [ICoreWebView2WindowCloseRequestedEventHandler](0-9-488/icorewebview2windowcloserequestedeventhandler.md)
 *   [ICoreWebView2ZoomFactorChangedEventHandler](0-9-488/icorewebview2zoomfactorchangedeventhandler.md)
 
-### Pratiqué
+### Expérimentales
 
 *   [ICoreWebView2ExperimentalCompositionController](0-9-488/icorewebview2experimentalcompositioncontroller.md)
 *   [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](0-9-488/icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md)

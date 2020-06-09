@@ -1,0 +1,75 @@
+---
+description: Héberger le contenu Web dans votre application Win32 avec le contrôle Microsoft Edge WebView2
+title: Applications Microsoft Edge WebView2 pour Win32
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 06/05/2020
+ms.topic: reference
+ms.prod: microsoft-edge
+ms.technology: webview
+keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
+ms.openlocfilehash: b7d738628d6627232780e003f126b45c0421d6f0
+ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "10698590"
+---
+# Classe Microsoft. Web. WebView2. Core. EdgeNotFoundException 
+
+Espace de noms: Microsoft. Web. WebView2. Core \
+Assembly: Microsoft. Web. WebView2. Core. dll
+
+```
+class Microsoft.Web.WebView2.Core.EdgeNotFoundException
+  : public Exception
+```
+
+Exception levée lorsqu’une installation Edge est manquante.
+
+## Résumé
+
+ Ses                        | Descriptions
+--------------------------------|---------------------------------------------
+[EdgeNotFoundException](#edgenotfoundexception) | Initialise une nouvelle instance de la classe EdgeNotFoundException.
+[EdgeNotFoundException](#edgenotfoundexception) | Initialise une nouvelle instance de la classe EdgeNotFoundException avec une référence à l’exception interne qui est la cause de l’exception.
+[EdgeNotFoundException](#edgenotfoundexception) | Initialise une nouvelle instance de la classe EdgeNotFoundException avec un message d’erreur spécifié.
+[EdgeNotFoundException](#edgenotfoundexception) | Initialise une nouvelle instance de la classe EdgeNotFoundException avec un message d’erreur spécifié et une référence à l’exception interne qui est la cause de l’exception.
+
+## Ses
+
+#### EdgeNotFoundException 
+
+Initialise une nouvelle instance de la classe EdgeNotFoundException.
+
+> public [EdgeNotFoundException](#edgenotfoundexception)()
+
+#### EdgeNotFoundException 
+
+Initialise une nouvelle instance de la classe EdgeNotFoundException avec une référence à l’exception interne qui est la cause de l’exception.
+
+> public [EdgeNotFoundException](#edgenotfoundexception)(exception interne)
+
+##### Parameters
+* `inner` Exception qui est la cause de l’exception actuelle.
+
+#### EdgeNotFoundException 
+
+Initialise une nouvelle instance de la classe EdgeNotFoundException avec un message d’erreur spécifié.
+
+> [EdgeNotFoundException](#edgenotfoundexception)public (message chaîne)
+
+##### Parameters
+* `message` Message d’erreur qui explique la raison de l’exception.
+
+#### EdgeNotFoundException 
+
+Initialise une nouvelle instance de la classe EdgeNotFoundException avec un message d’erreur spécifié et une référence à l’exception interne qui est la cause de l’exception.
+
+> [EdgeNotFoundException](#edgenotfoundexception)public (message de chaîne, exception interne)
+
+##### Parameters
+* `message` Message d’erreur qui explique la raison de l’exception. 
+
+* `inner` Exception qui est la cause de l’exception actuelle.
+
