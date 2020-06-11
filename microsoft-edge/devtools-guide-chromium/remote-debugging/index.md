@@ -2,16 +2,16 @@
 title: Découvrir les appareils Android de débogage à distance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 06/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: fc7450ba2b088eee8f4005216374980096cbb067
-ms.sourcegitcommit: ba9f0ed77e84174b03262b17e62c6a7e26cfeb3d
+ms.openlocfilehash: c77633c4844f0e576b7dff6574000a78c8c083da
+ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "10688150"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "10708535"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,7 +29,7 @@ ms.locfileid: "10688150"
 
 # Découvrir les appareils Android de débogage à distance  
 
-Déboguez à distance le contenu en direct sur un appareil Android à partir de votre ordinateur Windows ou macOS.  Cette page de didacticiel vous explique comment effectuer les actions suivantes.  
+Déboguez à distance le contenu en direct sur un appareil Android à partir de votre ordinateur Windows ou macOS.  La page du didacticiel suivante vous explique comment effectuer les opérations suivantes.  
 
 *   Configurez votre appareil Android pour le débogage à distance et découvrez-le à partir de votre ordinateur de développement.  
 *   Inspectez et déboguez le contenu en direct sur votre appareil Android à partir de votre ordinateur de développement.  
@@ -41,11 +41,15 @@ Déboguez à distance le contenu en direct sur un appareil Android à partir de 
 :::image-end:::  
 -->  
 
+> [!NOTE]
+> Le débogage à distance de l’application Microsoft Edge sur les appareils iOS n’est pas pris en charge pour le moment.  Le guide suivant est particulièrement axé sur le débogage à distance de Microsoft Edge sur les appareils Android.
+> Si vous avez un appareil macOS, suivez le [Guide de débogage de Brightcove][BrightcoveSupportDebuggingMobileDevices] pour déboguer à distance Microsoft Edge sur un appareil iOS à l’aide de Safari.  Pour plus d’informations sur l’outil inspecteur Web dans Safari, voir [outils de développement Web Safari][AppleDeveloperSafariTools].  
+
 ## Étape 1: découvrir votre appareil Android  
 
-Le flux de travail suivant fonctionne pour la plupart des utilisateurs.  Pour plus d’informations, reportez-vous à [la rubrique résolution des problèmes: devtools ne détecte pas l’appareil Android](#troubleshooting-devtools-is-not-detecting-the-android-device) .  
+Le flux de travail suivant fonctionne pour la plupart des utilisateurs.  Pour obtenir de l’aide, consultez la rubrique [résolution des problèmes: devtools ne détecte pas la section appareil Android](#troubleshooting-devtools-is-not-detecting-the-android-device) .  
 
-1.  Ouvrez l’écran **options de développement** sur votre téléphone Android.  Pour plus d’informations, reportez-vous à [configurer les options pour les développeurs dans l’appareil](https://developer.android.com/studio/debug/dev-options.html).  
+1.  Ouvrez l’écran **options de développement** sur votre téléphone Android.  Pour plus d’informations, reportez-vous à [configurer les options pour les développeurs dans l’appareil][AndroidDeveloperStudioDevOptions].  
 1.  Sélectionnez **activer le débogage USB**.  
 1.  Sur votre ordinateur de développement, ouvrez Microsoft Edge.  
 1.  Accédez à la `edge://inspect` page dans Microsoft Edge.  
@@ -60,7 +64,7 @@ Le flux de travail suivant fonctionne pour la plupart des utilisateurs.  Pour pl
        Figure2.  Invite **autoriser le débogage USB** sur un appareil Android  
     :::image-end:::  
     
-1.  Si vous voyez le nom de modèle de votre appareil Android, Microsoft Edge a correctement établi la connexion à votre appareil.  Passez à l' [étape 2](#step-2-debug-content-on-your-android-device-from-your-development-machine).  
+1.  Si vous voyez le nom de modèle de votre appareil Android, Microsoft Edge a correctement établi la connexion à votre appareil.  Passez à la section [étape 2](#step-2-debug-content-on-your-android-device-from-your-development-machine) .  
     
     <!--  
     :::image type="complex" source="../media/remote-debugging--unknown-device.msft.png" alt-text="The Remote Devices tab has successfully detected an unknown device that is pending authorization" lightbox="../media/remote-debugging--unknown-device.msft.png":::
@@ -78,8 +82,8 @@ Les conseils suivants vous aideront à résoudre les problèmes liés à la conf
 
 Pour vérifier que votre logiciel est correctement configuré, suivez les conseils ci-dessous.  
 
-*   Si votre ordinateur de développement exécute Windows, essayez d’installer manuellement les pilotes USB pour votre appareil Android.  Pour plus d’informations, voir [installer les pilotes USB du fabricant][AndroidUSBDrivers].  
-*   Quelques combinaisons de périphériques Windows et Android (en particulier Samsung \) requièrent des paramètres supplémentaires.  Pour plus d’informations, reportez-vous à la section [DevTools appareils ne détecte pas le périphérique connecté] [StackOverflowDevicesNotDetected].  
+*   Si votre ordinateur de développement exécute Windows, essayez d’installer manuellement les pilotes USB pour votre appareil Android.  Pour plus d’informations, voir [installer les pilotes USB du fabricant][AndroidDeveloperToolsOemUsb].  
+*   Quelques combinaisons de périphériques Windows et Android (en particulier Samsung \) requièrent des paramètres supplémentaires.  Pour plus d’informations, consultez la section [devtools appareils ne détecte pas le périphérique en cas de branchement][Stackoverflow21925992].  
 
 Pour résoudre les problèmes liés à l’invite de **débogage USB** sur votre appareil Android, suivez les conseils ci-dessous.  
 
@@ -89,10 +93,10 @@ Pour résoudre les problèmes liés à l’invite de **débogage USB** sur votre
     > L’invite risque de ne pas s’afficher si l’écran de votre appareil Android ou de développement est verrouillé.  
 
 *   Mise à jour des paramètres d’affichage de votre appareil et de votre appareil Android de sorte qu’ils ne soient jamais en veille.  
-*   Définir le mode USB pour Android sur la norme PTP.  Pour plus d’informations, reportez-vous à [la section Galaxy S4 ne pas afficher la boîte de dialogue autoriser le débogage USB][StackExchangeGalaxyS4DoesNotShowDialogBox].  
+*   Définir le mode USB pour Android sur la norme PTP.  Pour plus d’informations, reportez-vous à [la section Galaxy S4 ne pas afficher la boîte de dialogue autoriser le débogage USB][StackexchangeAndroid101933].  
 *   Sélectionnez **révoquer les autorisations de débogage USB** à partir de l’écran Options pour les **développeurs** sur votre appareil Android pour rétablir l’état de votre choix.  
 
-Si vous trouvez une solution qui n’est pas mentionnée sur cette page ou dans [DevTools appareils ne détecte aucun appareil lorsque branché] [StackOverflowDevicesNotDetected] en cas de dépassement de pile, ajoutez votre solution à la question de dépassement de pile.<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
+Si vous trouvez une solution qui n’est pas mentionnée sur cette page ou dans devtools appareils, la détection de l' [appareil n’est pas détectée lors][Stackoverflow21925992] du dépassement de capacité de la pile.<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
 
 ## Étape 2: déboguer du contenu sur votre appareil Android à partir de votre ordinateur de développement  
 
@@ -149,21 +153,20 @@ Vous pouvez interagir avec la capture vidéo de l’une des manières suivantes.
 [ImageSelectElementIcon]: /microsoft-edge/devtools-guide-chromium/media/select-element-icon.msft.png  
 [ImageToggleScreencastIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-screencast-icon.msft.png  
 
-<!--[ImageRemoteDebugging]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--remote-debugging.msft.png "old Figure 1:  Remote Debugging lets you inspect a page running on an Android device from your development machine"  -->  
-<!--[ImageEdgeInspect]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-no-targets.msft.png "Figure 1: The edge://inspect page in Microsoft Edge"  -->  
-<!--[ImageAndroidPermissionPrompt]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-android-permissions-prompt.msft.png "Figure 2: The Allow USB Debugging permission prompt on an Android device"  -->  
-<!--[ImageConnectedRemoteDevice]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-with-targets.msft.png "Figure 3: A connected remote device"  -->  
-<!-- [ImageReload]:  /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-with-targets-buttons.msft.png "Figure 4: The buttons for focusing, reloading, or closing a tab"  -->  
-<!--[ImageUnknownDevice]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--unknown-device.msft.png "old Figure 4:  The Remote Devices tab has successfully detected an unknown device that is pending authorization"  -->  
-
 <!-- links -->  
 
-[AndroidUSBDrivers]: https://developer.android.com/tools/extras/oem-usb.html "Installer les pilotes USB OEM | Développeurs Android"  
+[AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "Configurer les options pour les développeurs sur un appareil Développeur pour Android"  
+[AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "Installer les pilotes USB OEM | Développeurs Android"  
+
+[AppleDeveloperSafariTools]: https://developer.apple.com/safari/tools "Outils de développement Web Safari | Développeur Apple"  
+
+[BrightcoveSupportDebuggingMobileDevices]: https://support.brightcove.com/debugging-mobile-devices "Débogage sur les appareils mobiles | Support Brightcove"  
 
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->  
-[StackOverflowDevicesNotDetected]: https://stackoverflow.com/questions/21925992 «les appareils devtools ne détectent pas l’appareil en cas de dépassement de la pile connectée»  
 
-[StackExchangeGalaxyS4DoesNotShowDialogBox]: https://android.stackexchange.com/questions/101933 "ADB: échange d’une pile enthousiaste pour Android"  
+[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "ADB: échange d’une pile enthousiaste pour Android"  
+
+[Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "DevToolsx XXXXXXX XXXXXXX XXXXXXX XXXXXXX XXXXXXX"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  

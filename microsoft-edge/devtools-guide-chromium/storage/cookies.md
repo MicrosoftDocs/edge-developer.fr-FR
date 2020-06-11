@@ -2,16 +2,16 @@
 title: Afficher, modifier et supprimer des cookies avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 084c4116cd4c9c5e70b2fe341257fa68ba2c8ae7
-ms.sourcegitcommit: ad68bfbb355f6cfdaaf6612b77ea3985d4d6a58b
+ms.openlocfilehash: 4bfd99a36a6a3f8fdf8dbd7787bd54cde87d79da
+ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "10612067"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "10708930"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,34 +27,28 @@ ms.locfileid: "10612067"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# Afficher, modifier et supprimer des cookies avec Microsoft Edge DevTools  
 
+[Les cookies http][MDNHTTPCookies] sont principalement utilisés pour gérer les sessions utilisateur, stocker les préférences utilisateur de personnalisation et suivre le comportement des utilisateurs.  Les cookies sont également à l’origine de tous les types de consentement «cette page utilise des cookies» que vous voyez sur le Web.  Le guide suivant vous explique comment afficher, modifier et supprimer les cookies HTTP pour une page avec [Microsoft Edge devtools][MicrosoftEdgeDevTools].  
 
-
-
-# Afficher, modifier et supprimer des cookies avec Microsoft Edge DevTools   
-
-  
-
-[Les cookies http][MDNHTTPCookies] sont principalement utilisés pour gérer les sessions utilisateur, stocker les préférences utilisateur de personnalisation et suivre le comportement des utilisateurs.  C’est aussi la cause de tous ces types de consentement «cette page utilise des cookies» que vous voyez sur le Web.  Ce guide vous explique comment afficher, modifier et supprimer les cookies HTTP pour une page avec [Microsoft Edge devtools][MicrosoftEdgeDevTools].  
-
-## Ouvrir le volet cookies   
+## Ouvrir le volet cookies  
 
 1.  [Ouvrez devtools][DevToolsOpen].  
 1.  Sélectionnez l’onglet **application** pour ouvrir le volet de l' **application** .  Le volet **manifeste** doit être ouvert.  
     
-    > ##### Figure1  
-    > Volet manifeste  
-    > ![Volet manifeste][ImageManifest]  
+    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-manifest-empty.msft.png":::
+       Figure 1: volet manifeste  
+    :::image-end:::  
 
 1.  Sous **stockage** , développez **cookies**, puis sélectionnez une origine.  
     
-    > ##### Figure 2  
-    > Volet cookies  
-    > ![Volet cookies][ImageCookies]  
+    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="Volet cookies" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
+       Figure 2: volet cookies  
+    :::image-end:::  
 
-## Champs   
+## Champs  
 
-La table **cookies** contient les champs suivants:  
+La table **cookies** contient les champs suivants.  
 
 *   **Nom**.  Nom du cookie.  
 *   **Valeur**.  Valeur du cookie.  
@@ -65,58 +59,50 @@ La table **cookies** contient les champs suivants:
 *   **Http**.  Si la valeur est true, ce champ indique que le cookie doit uniquement être utilisé sur une modification HTTP et JavaScript n’est pas autorisée.  Voir [cookies HttpOnly][MDNHTTPCookiesSecure].  
 *   **Sécurisé**.  Si la valeur est true, ce champ indique que le cookie doit être envoyé au serveur uniquement via une connexion sécurisée HTTPs.  Voir [cookies sécurisés][MDNHTTPCookiesSecure].  
 *   **SameSite**.  Contient `strict` ou `lax` si le cookie utilise l’attribut [Samesite][MDNHTTPCookiesSamesite] expérimental.  
+*   **Priority**.  Contains `low` , `medium` \ (par défaut \) ou `high` si le cookie utilise l’attribut de [priorité de cookie][ChromiumIssue232693] amorti.
 
-## Filtrer les cookies   
+## Filtrer les cookies  
 
 Utilisez la zone de texte **filtre** pour filtrer les cookies par **nom** ou par **valeur**.  Le filtrage par d’autres champs n’est pas pris en charge.  
 
-> ##### Figure3  
-> Filtrage de tout cookie qui ne contient pas le texte `ID`  
-> ![Filtrage de tout cookie qui ne contient pas l’ID de texte][ImageCookiesFilter]  
+:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="Filtrage de tout cookie qui ne contient pas l’ID de texte" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
+   Figure 3: filtrage de tout cookie qui ne contient pas le texte `ID`  
+:::image-end:::  
 
-## Modifier un cookie   
+## Modifier un cookie  
 
 Les champs **nom**, **valeur**, **domaine**, **chemin d’accès**et **durée d’expiration/maximum** doivent être modifiables.  
 Double-cliquez sur un champ pour le modifier.  
 
-> ##### Figure 4  
-> Définir le nom d’un cookie sur `DEVTOOLS!`  
-> ![Définir le nom d’un cookie sur DEVTOOLS!][ImageEditCookie]  
+:::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="Définir le nom d’un cookie sur DEVTOOLS!" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
+   Figure 4: définition du nom d’un cookie sur `DEVTOOLS!`  
+:::image-end:::  
 
-## Supprimer les cookies   
+## Supprimer les cookies  
 
-Sélectionnez un cookie, puis cliquez sur **supprimer** ![ l’option supprimer sélectionnée ][ImageDeleteIcon] pour supprimer ce cookie.  
+Sélectionnez un cookie et sélectionnez **supprimer** ![ la suppression sélectionnée ][ImageDeleteIcon] pour supprimer le cookie spécifique.  
 
-> ##### Figure 5  
-> Suppression d’un cookie spécifique  
-> ![Suppression d’un cookie spécifique][ImageDeleteCookie]  
+:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Suppression d’un cookie spécifique" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
+   Figure 5: suppression d’un cookie spécifique  
+:::image-end:::  
 
 Pour supprimer tous les cookies, sélectionnez **Effacer tout** ![ Effacer tout ][ImageClearIcon] .  
 
-> ##### Figure 6  
-> Effacement de tous les cookies  
-> ![Effacement de tous les cookies][ImageClearAllCookies]  
-
-<!--    -->  
-
-  
+:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Effacement de tous les cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
+   Figure 6: suppression de tous les cookies  
+:::image-end:::  
 
 <!-- image links -->  
 
-[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-icon.msft.png  
-[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
-
-[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest-empty.msft.png "Figure 1: volet manifeste"  
-[ImageCookies]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-cookies-selected.msft.png "Figure 2: volet cookies"  
-[ImageCookiesFilter]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-cookies-filter-id.msft.png "Figure 3: filtrage de tout cookie qui ne contient pas l’ID de texte"  
-[ImageEditCookie]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-cookies-rename.msft.png "Figure 4: définition du nom d’un cookie sur DEVTOOLS!"  
-[ImageDeleteCookie]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-cookies-delete-selected.msft.png "Figure 5: suppression d’un cookie spécifique"  
-[ImageClearAllCookies]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-cookies-clear-all.msft.png "Figure 6: suppression de tous les cookies"  
+[ImageClearIcon]: ../media/clear-icon.msft.png  
+[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Outils de développement Microsoft Edge (chrome)"  
 [DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Ouvrir Microsoft Edge DevTools"  
+
+[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Problème de chrome 232693: application de champ de priorité pour les cookies | Bugs du chrome"  
 
 [MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "Cookies HTTP | MDN"  
 [MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "Cookies HTTP-cookies permanents | MDN"  
