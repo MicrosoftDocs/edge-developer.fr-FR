@@ -2,16 +2,16 @@
 title: Prise en main de l’affichage et de la modification de réplication Commerce Server
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 1780e80259d3ed28f6735e11099ad5796c381a95
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: 346145a7deb9e8ac951ed0578a5060da72817463
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708571"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710384"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -38,7 +38,7 @@ Suivez ces didacticiels interactifs pour découvrir les notions de base de l’a
     [Exemples CSS][GlitchDevToolsCssExamples]  
     
     > [!NOTE]
-    > Si vous voulez [ancrer votre fenêtre devtools][DevToolsCustomizePlacement] à droite de votre fenêtre d’affichage \ (affichée dans la figure ci-après), sélectionnez **personnaliser et contrôler devtools** `...` .  Dans le menu déroulant **personnaliser et contrôler devtools** , dans la section **ancrer** , sélectionnez **ancrer à droite**.  
+    > Si vous voulez [ancrer votre fenêtre devtools][DevToolsCustomizePlacement] à droite de votre fenêtre d’affichage \ (affichée dans la figure ci-dessous), sélectionnez **personnaliser et contrôler devtools** `...` .  Dans le menu déroulant **personnaliser et contrôler devtools** , dans la section **ancrer** , sélectionnez **ancrer à droite**.  
     
 ## Affichage de la feuille de style en cascade pour un élément  
 

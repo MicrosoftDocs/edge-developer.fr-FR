@@ -2,16 +2,16 @@
 title: Afficher, modifier et supprimer des cookies avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 4bfd99a36a6a3f8fdf8dbd7787bd54cde87d79da
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: ecd8df7058bca4535d1f7da15ce1d500ef85aefe
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708930"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710370"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +59,7 @@ La table **cookies** contient les champs suivants.
 *   **Http**.  Si la valeur est true, ce champ indique que le cookie doit uniquement être utilisé sur une modification HTTP et JavaScript n’est pas autorisée.  Voir [cookies HttpOnly][MDNHTTPCookiesSecure].  
 *   **Sécurisé**.  Si la valeur est true, ce champ indique que le cookie doit être envoyé au serveur uniquement via une connexion sécurisée HTTPs.  Voir [cookies sécurisés][MDNHTTPCookiesSecure].  
 *   **SameSite**.  Contient `strict` ou `lax` si le cookie utilise l’attribut [Samesite][MDNHTTPCookiesSamesite] expérimental.  
-*   **Priority**.  Contains `low` , `medium` \ (par défaut \) ou `high` si le cookie utilise l’attribut de [priorité de cookie][ChromiumIssue232693] amorti.
+*   **Priority**.  Contains `low` , `medium` \ (par défaut \) ou `high` si le cookie utilise l’attribut de [priorité de cookie][ChromiumIssue232693] déconseillé.
 
 ## Filtrer les cookies  
 

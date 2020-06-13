@@ -2,16 +2,16 @@
 title: Nouveautés de DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 7651430c581346d1f140f0a5974b8aa9bb809204
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: ab3df52708febd4928c7e4ac41a77713370b9fa1
+ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10709005"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "10710377"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -157,7 +157,7 @@ Envoyez-nous vos commentaires en le [tweetant][PostTweetEdgeDevTools] ou en cliq
 *   [`Accept-Language`][MDNAcceptLanguage]En-tête de requête http  
 
 > [!NOTE]
-> Les mises à jour de `navigator.language` et ne `navigator.languages` sont pas visibles immédiatement, mais uniquement après la prochaine navigation ou le rechargement de la page.  Les modifications apportées à l' `Accept-Language` en-tête http sont uniquement répercutées pour les demandes suivantes.  
+> Les mises à jour de `navigator.language` et ne `navigator.languages` sont pas visibles immédiatement, mais uniquement après la prochaine navigation ou actualisation de page.  Les modifications apportées à l' `Accept-Language` en-tête http sont uniquement répercutées pour les demandes suivantes.  
 
 :::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="Émulation d’un paramètre régional" lightbox="../../media/2020/03/locale.msft.png":::
    Figure 10: émulation d’un paramètre régional  
