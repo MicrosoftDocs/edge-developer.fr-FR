@@ -1,267 +1,153 @@
 ---
 description: Les API Runtime JavaScript (JsRT) vous permettent d’ajouter des fonctionnalités d’écriture de script aux applications de bureau et aux applications côté serveur qui s’exécutent sur Windows.
-title: Référence (Runtime JavaScript) | Documents Microsoft
-ms.custom: ''
-ms.date: 01/15/2020
+title: Référence (Runtime JavaScript)
+ms.date: 06/08/2020
 ms.prod: microsoft-edge
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: reference
+ms.topic: article
 ms.assetid: 0bfe50da-fd79-4e00-9458-bc667769b415
 caps.latest.revision: 9
 author: MSEdgeTeam
 ms.author: msedgedevrel
-manager: ''
-ms.openlocfilehash: d1215d84daa31f2338b8c7e237625d0129026bea
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 7166e6cd5d64060c2939d8404e1415dc34fce17b
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565122"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752212"
 ---
-# Référence (Runtime JavaScript)
+# Référence (Runtime JavaScript)  
+
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
+
 Les API Runtime JavaScript (JsRT) vous permettent d’ajouter des fonctionnalités d’écriture de script aux applications de bureau et aux applications côté serveur qui s’exécutent sur Windows.  
-  
- Si vous envisagez d’incorporer [ChakraCore](https://github.com/Microsoft/ChakraCore) dans votre application, reportez-vous à la rubrique références de [CHAKRACORE wiki](https://aka.ms/corejsrtref) pour JSRT à la place.  
-  
+
+Si vous envisagez d’incorporer [ChakraCore](https://github.com/Microsoft/ChakraCore) dans votre application, reportez-vous à la rubrique références de [CHAKRACORE wiki](https://aka.ms/corejsrtref) pour JSRT à la place.  
+
 ## Dans cette section  
- Les typedefs, constantes et énumérations qui prennent en charge l’hébergement JsRT sont décrits ici:  
-  
--   [Typedefs d’exécution JavaScript, constantes et énumérations](../chakra-hosting/javascript-runtime-typedefs-constants-and-enumerations.md)  
-  
- Les fonctions suivantes permettent l’hébergement d’JsRT:  
-  
--   [Fonction JsAddRef](../chakra-hosting/jsaddref-function.md)  
-  
--   [Fonction JsBooleanToBool](../chakra-hosting/jsbooleantobool-function.md)  
-  
--   [Fonction JsBoolToBoolean](../chakra-hosting/jsbooltoboolean-function.md)  
-  
--   [Fonction JsCallFunction](../chakra-hosting/jscallfunction-function.md)  
-  
--   [Fonction JsCollectGarbage](../chakra-hosting/jscollectgarbage-function.md)  
-  
--   [Fonction JsConstructObject](../chakra-hosting/jsconstructobject-function.md)  
-  
--   [Fonction JsConvertValueToBoolean](../chakra-hosting/jsconvertvaluetoboolean-function.md)  
-  
--   [Fonction JsConvertValueToNumber](../chakra-hosting/jsconvertvaluetonumber-function.md)  
-  
--   [Fonction JsConvertValueToObject](../chakra-hosting/jsconvertvaluetoobject-function.md)  
-  
--   [Fonction JsConvertValueToString](../chakra-hosting/jsconvertvaluetostring-function.md)  
-  
--   [Fonction JsCreateArray](../chakra-hosting/jscreatearray-function.md)  
-  
--   [Fonction JsCreateArrayBuffer](../chakra-hosting/jscreatearraybuffer-function.md)  
-  
--   [Fonction JsCreateContext](../chakra-hosting/jscreatecontext-function.md)  
-  
--   [Fonction JsCreateDataView](../chakra-hosting/jscreatedataview-function.md)  
-  
--   [Fonction JsCreateError](../chakra-hosting/jscreateerror-function.md)  
-  
--   [Fonction JsCreateExternalArrayBuffer](../chakra-hosting/jscreateexternalarraybuffer-function.md)  
-  
--   [Fonction JsCreateExternalObject](../chakra-hosting/jscreateexternalobject-function.md)  
-  
--   [Fonction JsCreateFunction](../chakra-hosting/jscreatefunction-function.md)  
-  
--   [Fonction JsCreateNamedFunction](../chakra-hosting/jscreatenamedfunction-function.md)  
-  
--   [Fonction JsCreateObject](../chakra-hosting/jscreateobject-function.md)  
-  
--   [Fonction JsCreateRangeError](../chakra-hosting/jscreaterangeerror-function.md)  
-  
--   [Fonction JsCreateReferenceError](../chakra-hosting/jscreatereferenceerror-function.md)  
-  
--   [Fonction JsCreateRuntime](../chakra-hosting/jscreateruntime-function.md)  
-  
--   [Fonction JsCreateSymbol](../chakra-hosting/jscreatesymbol-function.md)  
-  
--   [Fonction JsCreateSyntaxError](../chakra-hosting/jscreatesyntaxerror-function.md)  
-  
--   [Fonction JsCreateTypeError](../chakra-hosting/jscreatetypeerror-function.md)  
-  
--   [Fonction JsCreateTypedArray](../chakra-hosting/jscreatetypedarray-function.md)  
-  
--   [Fonction JsCreateURIError](../chakra-hosting/jscreateurierror-function.md)  
-  
--   [Fonction JsDefineProperty](../chakra-hosting/jsdefineproperty-function.md)  
-  
--   [Fonction JsDeleteIndexedProperty](../chakra-hosting/jsdeleteindexedproperty-function.md)  
-  
--   [Fonction JsDeleteProperty](../chakra-hosting/jsdeleteproperty-function.md)  
-  
--   [Fonction JsDisableRuntimeExecution](../chakra-hosting/jsdisableruntimeexecution-function.md)  
-  
--   [Fonction JsDisposeRuntime](../chakra-hosting/jsdisposeruntime-function.md)  
-  
--   [Fonction JsDoubleToNumber](../chakra-hosting/jsdoubletonumber-function.md)  
-  
--   [Fonction JsEnableRuntimeExecution](../chakra-hosting/jsenableruntimeexecution-function.md)  
-  
--   [Fonction JsEnumerateHeap](../chakra-hosting/jsenumerateheap-function.md)  
-  
--   [Fonction JsEquals](../chakra-hosting/jsequals-function.md)  
-  
--   [Fonction JsGetAndClearException](../chakra-hosting/jsgetandclearexception-function.md)  
-  
--   [Fonction JsGetArrayBufferStorage](../chakra-hosting/jsgetarraybufferstorage-function.md)  
-  
--   [Fonction JsGetContextData](../chakra-hosting/jsgetcontextdata-function.md)  
-  
--   [Fonction JsGetContextOfObject](../chakra-hosting/jsgetcontextofobject-function.md)  
-  
--   [Fonction JsGetCurrentContext](../chakra-hosting/jsgetcurrentcontext-function.md)  
-  
--   [Fonction JsGetDataViewStorage](../chakra-hosting/jsgetdataviewstorage-function.md)  
-  
--   [Fonction JsGetExtensionAllowed](../chakra-hosting/jsgetextensionallowed-function.md)  
-  
--   [Fonction JsGetExternalData](../chakra-hosting/jsgetexternaldata-function.md)  
-  
--   [Fonction JsGetFalseValue](../chakra-hosting/jsgetfalsevalue-function.md)  
-  
--   [Fonction JsGetGlobalObject](../chakra-hosting/jsgetglobalobject-function.md)  
-  
--   [Fonction JsGetIndexedPropertiesExternalData](../chakra-hosting/jsgetindexedpropertiesexternaldata-function.md)  
-  
--   [Fonction JsGetIndexedProperty](../chakra-hosting/jsgetindexedproperty-function.md)  
-  
--   [Fonction JsGetNullValue](../chakra-hosting/jsgetnullvalue-function.md)  
-  
--   [Fonction JsGetOwnPropertyDescriptor](../chakra-hosting/jsgetownpropertydescriptor-function.md)  
-  
--   [Fonction JsGetOwnPropertyNames](../chakra-hosting/jsgetownpropertynames-function.md)  
-  
--   [Fonction JsGetOwnPropertySymbols](../chakra-hosting/jsgetownpropertysymbols-function.md)  
-  
--   [Fonction JsGetProperty](../chakra-hosting/jsgetproperty-function.md)  
-  
--   [Fonction JsGetPropertyIdFromName](../chakra-hosting/jsgetpropertyidfromname-function.md)  
-  
--   [Fonction JsGetPropertyIdFromSymbol](../chakra-hosting/jsgetpropertyidfromsymbol-function.md)  
-  
--   [Fonction JsGetPropertyIdType](../chakra-hosting/jsgetpropertyidtype-function.md)  
-  
--   [Fonction JsGetPropertyNameFromId](../chakra-hosting/jsgetpropertynamefromid-function.md)  
-  
--   [Fonction JsGetPrototype](../chakra-hosting/jsgetprototype-function.md)  
-  
--   [Fonction JsGetRuntime](../chakra-hosting/jsgetruntime-function.md)  
-  
--   [Fonction JsGetRuntimeMemoryLimit](../chakra-hosting/jsgetruntimememorylimit-function.md)  
-  
--   [Fonction JsGetRuntimeMemoryUsage](../chakra-hosting/jsgetruntimememoryusage-function.md)  
-  
--   [Fonction JsGetStringLength](../chakra-hosting/jsgetstringlength-function.md)  
-  
--   [Fonction JsGetSymbolFromPropertyId](../chakra-hosting/jsgetsymbolfrompropertyid-function.md)  
-  
--   [Fonction JsGetTrueValue](../chakra-hosting/jsgettruevalue-function.md)  
-  
--   [Fonction JsGetTypedArrayInfo](../chakra-hosting/jsgettypedarrayinfo-function.md)  
-  
--   [Fonction JsGetTypedArrayStorage](../chakra-hosting/jsgettypedarraystorage-function.md)  
-  
--   [Fonction JsGetUndefinedValue](../chakra-hosting/jsgetundefinedvalue-function.md)  
-  
--   [Fonction JsGetValueType](../chakra-hosting/jsgetvaluetype-function.md)  
-  
--   [Fonction JsHasException](../chakra-hosting/jshasexception-function.md)  
-  
--   [Fonction JsHasExternalData](../chakra-hosting/jshasexternaldata-function.md)  
-  
--   [Fonction JsHasIndexedPropertiesExternalData](../chakra-hosting/jshasindexedpropertiesexternaldata-function.md)  
-  
--   [Fonction JsHasIndexedProperty](../chakra-hosting/jshasindexedproperty-function.md)  
-  
--   [Fonction JsHasProperty](../chakra-hosting/jshasproperty-function.md)  
-  
--   [Fonction JsIdle](../chakra-hosting/jsidle-function.md)  
-  
--   [Fonction JsInspectableToObject](../chakra-hosting/jsinspectabletoobject-function.md)  
-  
--   [Fonction JsInstanceOf](../chakra-hosting/jsinstanceof-function.md)  
-  
--   [Fonction JsIntToNumber](../chakra-hosting/jsinttonumber-function.md)  
-  
--   [Fonction JsIsEnumeratingHeap](../chakra-hosting/jsisenumeratingheap-function.md)  
-  
--   [Fonction JsIsRuntimeExecutionDisabled](../chakra-hosting/jsisruntimeexecutiondisabled-function.md)  
-  
--   [Fonction JsNumberToDouble](../chakra-hosting/jsnumbertodouble-function.md)  
-  
--   [Fonction JsNumberToInt](../chakra-hosting/jsnumbertoint-function.md)  
-  
--   [Fonction JsObjectToInspectable](../chakra-hosting/jsobjecttoinspectable-function.md)  
-  
--   [Fonction JsParseScript](../chakra-hosting/jsparsescript-function.md)  
-  
--   [Fonction JsParseSerializedScript](../chakra-hosting/jsparseserializedscript-function.md)  
-  
--   [Fonction JsParseSerializedScriptWithCallback](../chakra-hosting/jsparseserializedscriptwithcallback-function.md)  
-  
--   [Fonction JsPointerToString](../chakra-hosting/jspointertostring-function.md)  
-  
--   [Fonction JsPreventExtension](../chakra-hosting/jspreventextension-function.md)  
-  
--   [Fonction JsProjectWinRTNamespace](../chakra-hosting/jsprojectwinrtnamespace-function.md)  
-  
--   [Fonction JsRelease](../chakra-hosting/jsrelease-function.md)  
-  
--   [Fonction JsRunScript](../chakra-hosting/jsrunscript-function.md)  
-  
--   [Fonction JsRunSerializedScript](../chakra-hosting/jsrunserializedscript-function.md)  
-  
--   [Fonction JsRunSerializedScriptWithCallback](../chakra-hosting/jsrunserializedscriptwithcallback-function.md)  
-  
--   [Fonction JsSerializeScript](../chakra-hosting/jsserializescript-function.md)  
-  
--   [Fonction JsSetContextData](../chakra-hosting/jssetcontextdata-function.md)  
-  
--   [Fonction JsSetCurrentContext](../chakra-hosting/jssetcurrentcontext-function.md)  
-  
--   [Fonction JsSetException](../chakra-hosting/jssetexception-function.md)  
-  
--   [Fonction JsSetExternalData](../chakra-hosting/jssetexternaldata-function.md)  
-  
--   [Fonction JsSetIndexedPropertiesToExternalData](../chakra-hosting/jssetindexedpropertiestoexternaldata-function.md)  
-  
--   [Fonction JsSetIndexedProperty](../chakra-hosting/jssetindexedproperty-function.md)  
-  
--   [Fonction JsSetObjectBeforeCollectCallback](../chakra-hosting/jssetobjectbeforecollectcallback-function.md)  
-  
--   [Fonction JsSetProjectionEnqueueCallback](../chakra-hosting/jssetprojectionenqueuecallback-function.md)  
-  
--   [Fonction JsSetPromiseContinuationCallback](../chakra-hosting/jssetpromisecontinuationcallback-function.md)  
-  
--   [Fonction JsSetProperty](../chakra-hosting/jssetproperty-function.md)  
-  
--   [Fonction JsSetPrototype](../chakra-hosting/jssetprototype-function.md)  
-  
--   [Fonction JsSetRuntimeBeforeCollectCallback](../chakra-hosting/jssetruntimebeforecollectcallback-function.md)  
-  
--   [Fonction JsSetRuntimeMemoryAllocationCallback](../chakra-hosting/jssetruntimememoryallocationcallback-function.md)  
-  
--   [Fonction JsSetRuntimeMemoryLimit](../chakra-hosting/jssetruntimememorylimit-function.md)  
-  
--   [Fonction JsStartDebugging](../chakra-hosting/jsstartdebugging-function.md)  
-  
--   [Fonction JsStartProfiling](../chakra-hosting/jsstartprofiling-function.md)  
-  
--   [Fonction JsStopProfiling](../chakra-hosting/jsstopprofiling-function.md)  
-  
--   [Fonction JsStrictEquals](../chakra-hosting/jsstrictequals-function.md)  
-  
--   [Fonction JsStringToPointer](../chakra-hosting/jsstringtopointer-function.md)  
-  
--   [Fonction JsValueToVariant](../chakra-hosting/jsvaluetovariant-function.md)  
-  
--   [Fonction JsVariantToValue](../chakra-hosting/jsvarianttovalue-function.md)  
-  
-## Voir aussi  
- [Hébergement du runtime JavaScript](../chakra-hosting/hosting-the-javascript-runtime.md)   
- [Hébergement Runtime JavaScript](../javascript-runtime-hosting.md)
+
+Les typedefs, constantes et énumérations qui prennent en charge l’hébergement JsRT sont décrits ici:  
+  
+*   [Typedefs de runtime JavaScript, constantes et énumérations](./javascript-runtime-typedefs-constants-and-enumerations.md)  
+
+Les fonctions suivantes permettent l’hébergement d’JsRT:  
+
+*   [JsAddRef Function](./jsaddref-function.md)  
+*   [JsBooleanToBool Function](./jsbooleantobool-function.md)  
+*   [JsBoolToBoolean Function](./jsbooltoboolean-function.md)  
+*   [JsCallFunction Function](./jscallfunction-function.md)  
+*   [JsCollectGarbage Function](./jscollectgarbage-function.md)  
+*   [JsConstructObject Function](./jsconstructobject-function.md)  
+*   [JsConvertValueToBoolean Function](./jsconvertvaluetoboolean-function.md)  
+*   [JsConvertValueToNumber Function](./jsconvertvaluetonumber-function.md)  
+*   [JsConvertValueToObject Function](./jsconvertvaluetoobject-function.md)  
+*   [JsConvertValueToString Function](./jsconvertvaluetostring-function.md)  
+*   [JsCreateArray Function](./jscreatearray-function.md)  
+*   [JsCreateArrayBuffer Function](./jscreatearraybuffer-function.md)  
+*   [JsCreateContext Function](./jscreatecontext-function.md)  
+*   [JsCreateDataView Function](./jscreatedataview-function.md)  
+*   [JsCreateError Function](./jscreateerror-function.md)  
+*   [JsCreateExternalArrayBuffer Function](./jscreateexternalarraybuffer-function.md)  
+*   [JsCreateExternalObject Function](./jscreateexternalobject-function.md)  
+*   [JsCreateFunction Function](./jscreatefunction-function.md)  
+*   [JsCreateNamedFunction Function](./jscreatenamedfunction-function.md)  
+*   [JsCreateObject Function](./jscreateobject-function.md)  
+*   [JsCreateRangeError Function](./jscreaterangeerror-function.md)  
+*   [JsCreateReferenceError Function](./jscreatereferenceerror-function.md)  
+*   [JsCreateRuntime Function](./jscreateruntime-function.md)  
+*   [JsCreateSymbol Function](./jscreatesymbol-function.md)  
+*   [JsCreateSyntaxError Function](./jscreatesyntaxerror-function.md)  
+*   [JsCreateTypeError Function](./jscreatetypeerror-function.md)  
+*   [JsCreateTypedArray Function](./jscreatetypedarray-function.md)  
+*   [JsCreateURIError Function](./jscreateurierror-function.md)  
+*   [JsDefineProperty Function](./jsdefineproperty-function.md)  
+*   [JsDeleteIndexedProperty Function](./jsdeleteindexedproperty-function.md)  
+*   [JsDeleteProperty Function](./jsdeleteproperty-function.md)  
+*   [JsDisableRuntimeExecution Function](./jsdisableruntimeexecution-function.md)  
+*   [JsDisposeRuntime Function](./jsdisposeruntime-function.md)  
+*   [JsDoubleToNumber Function](./jsdoubletonumber-function.md)  
+*   [JsEnableRuntimeExecution Function](./jsenableruntimeexecution-function.md)  
+*   [JsEnumerateHeap Function](./jsenumerateheap-function.md)  
+*   [JsEquals Function](./jsequals-function.md)  
+*   [JsGetAndClearException Function](./jsgetandclearexception-function.md)  
+*   [JsGetArrayBufferStorage Function](./jsgetarraybufferstorage-function.md)  
+*   [JsGetContextData Function](./jsgetcontextdata-function.md)  
+*   [JsGetContextOfObject Function](./jsgetcontextofobject-function.md)  
+*   [JsGetCurrentContext Function](./jsgetcurrentcontext-function.md)  
+*   [JsGetDataViewStorage Function](./jsgetdataviewstorage-function.md)  
+*   [JsGetExtensionAllowed Function](./jsgetextensionallowed-function.md)  
+*   [JsGetExternalData Function](./jsgetexternaldata-function.md)  
+*   [JsGetFalseValue Function](./jsgetfalsevalue-function.md)  
+*   [JsGetGlobalObject Function](./jsgetglobalobject-function.md)  
+*   [JsGetIndexedPropertiesExternalData Function](./jsgetindexedpropertiesexternaldata-function.md)  
+*   [JsGetIndexedProperty Function](./jsgetindexedproperty-function.md)  
+*   [JsGetNullValue Function](./jsgetnullvalue-function.md)  
+*   [JsGetOwnPropertyDescriptor Function](./jsgetownpropertydescriptor-function.md)  
+*   [JsGetOwnPropertyNames Function](./jsgetownpropertynames-function.md)  
+*   [JsGetOwnPropertySymbols Function](./jsgetownpropertysymbols-function.md)  
+*   [JsGetProperty Function](./jsgetproperty-function.md)  
+*   [JsGetPropertyIdFromName Function](./jsgetpropertyidfromname-function.md)  
+*   [JsGetPropertyIdFromSymbol Function](./jsgetpropertyidfromsymbol-function.md)  
+*   [JsGetPropertyIdType Function](./jsgetpropertyidtype-function.md)  
+*   [JsGetPropertyNameFromId Function](./jsgetpropertynamefromid-function.md)  
+*   [JsGetPrototype Function](./jsgetprototype-function.md)  
+*   [JsGetRuntime Function](./jsgetruntime-function.md)  
+*   [JsGetRuntimeMemoryLimit Function](./jsgetruntimememorylimit-function.md)  
+*   [JsGetRuntimeMemoryUsage Function](./jsgetruntimememoryusage-function.md)  
+*   [JsGetStringLength Function](./jsgetstringlength-function.md)  
+*   [JsGetSymbolFromPropertyId Function](./jsgetsymbolfrompropertyid-function.md)  
+*   [JsGetTrueValue Function](./jsgettruevalue-function.md)  
+*   [JsGetTypedArrayInfo Function](./jsgettypedarrayinfo-function.md)  
+*   [JsGetTypedArrayStorage Function](./jsgettypedarraystorage-function.md)  
+*   [JsGetUndefinedValue Function](./jsgetundefinedvalue-function.md)  
+*   [JsGetValueType Function](./jsgetvaluetype-function.md)  
+*   [JsHasException Function](./jshasexception-function.md)  
+*   [JsHasExternalData Function](./jshasexternaldata-function.md)  
+*   [JsHasIndexedPropertiesExternalData Function](./jshasindexedpropertiesexternaldata-function.md)  
+*   [JsHasIndexedProperty Function](./jshasindexedproperty-function.md)  
+*   [JsHasProperty Function](./jshasproperty-function.md)  
+*   [JsIdle Function](./jsidle-function.md)  
+*   [JsInspectableToObject Function](./jsinspectabletoobject-function.md)  
+*   [JsInstanceOf Function](./jsinstanceof-function.md)  
+*   [JsIntToNumber Function](./jsinttonumber-function.md)  
+*   [JsIsEnumeratingHeap Function](./jsisenumeratingheap-function.md)  
+*   [JsIsRuntimeExecutionDisabled Function](./jsisruntimeexecutiondisabled-function.md)  
+*   [JsNumberToDouble Function](./jsnumbertodouble-function.md)  
+*   [JsNumberToInt Function](./jsnumbertoint-function.md)  
+*   [JsObjectToInspectable Function](./jsobjecttoinspectable-function.md)  
+*   [JsParseScript Function](./jsparsescript-function.md)  
+*   [JsParseSerializedScript Function](./jsparseserializedscript-function.md)  
+*   [JsParseSerializedScriptWithCallback Function](./jsparseserializedscriptwithcallback-function.md)  
+*   [JsPointerToString Function](./jspointertostring-function.md)  
+*   [JsPreventExtension Function](./jspreventextension-function.md)  
+*   [JsProjectWinRTNamespace Function](./jsprojectwinrtnamespace-function.md)  
+*   [JsRelease Function](./jsrelease-function.md)  
+*   [JsRunScript Function](./jsrunscript-function.md)  
+*   [JsRunSerializedScript Function](./jsrunserializedscript-function.md)  
+*   [JsRunSerializedScriptWithCallback Function](./jsrunserializedscriptwithcallback-function.md)  
+*   [JsSerializeScript Function](./jsserializescript-function.md)  
+*   [JsSetContextData Function](./jssetcontextdata-function.md)  
+*   [JsSetCurrentContext Function](./jssetcurrentcontext-function.md)  
+*   [JsSetException Function](./jssetexception-function.md)  
+*   [JsSetExternalData Function](./jssetexternaldata-function.md)  
+*   [JsSetIndexedPropertiesToExternalData Function](./jssetindexedpropertiestoexternaldata-function.md)  
+*   [JsSetIndexedProperty Function](./jssetindexedproperty-function.md)  
+*   [JsSetObjectBeforeCollectCallback Function](./jssetobjectbeforecollectcallback-function.md)  
+*   [JsSetProjectionEnqueueCallback Function](./jssetprojectionenqueuecallback-function.md)  
+*   [JsSetPromiseContinuationCallback Function](./jssetpromisecontinuationcallback-function.md)  
+*   [JsSetProperty Function](./jssetproperty-function.md)  
+*   [JsSetPrototype Function](./jssetprototype-function.md)  
+*   [JsSetRuntimeBeforeCollectCallback Function](./jssetruntimebeforecollectcallback-function.md)  
+*   [JsSetRuntimeMemoryAllocationCallback Function](./jssetruntimememoryallocationcallback-function.md)  
+*   [JsSetRuntimeMemoryLimit Function](./jssetruntimememorylimit-function.md)  
+*   [JsStartDebugging Function](./jsstartdebugging-function.md)  
+*   [JsStartProfiling Function](./jsstartprofiling-function.md)  
+*   [JsStopProfiling Function](./jsstopprofiling-function.md)  
+*   [JsStrictEquals Function](./jsstrictequals-function.md)  
+*   [JsStringToPointer Function](./jsstringtopointer-function.md)  
+*   [JsValueToVariant Function](./jsvaluetovariant-function.md)  
+*   [JsVariantToValue Function](./jsvarianttovalue-function.md)  
+
+## Voir également  
+
+*   [Héberger le runtime JavaScript](./hosting-the-javascript-runtime.md)  
+*   [Hébergement du runtime JavaScript](../javascript-runtime-hosting.md)  

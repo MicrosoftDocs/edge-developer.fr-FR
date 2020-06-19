@@ -3,170 +3,177 @@ description: Indique si l’opération est réussie ou a échoué.
 title: Objet MSWebViewAsyncOperation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, applications Windows 10, UWP, Edge
-ms.openlocfilehash: ebb89c0fc645ebcd97357af10af2be650d8218b9
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: d6e03af2a0205938f19120076aa0ad622539d7e5
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565103"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752122"
 ---
-# Objet MSWebViewAsyncOperation
+# Objet MSWebViewAsyncOperation  
 
-Indique si l’opération est réussie ou a échoué. 
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Événements
+Indique si l’opération est réussie ou a échoué.  
 
-### achever
+## Événements  
 
-Indique que l’opération est terminée. 
+### achever  
 
-```js
+Indique que l’opération est terminée.  
+
+```javascript
 function handler(eventInfo) { /* Your code */ }
  
 // addEventListener syntax
 MSWebViewAsyncOperation.addEventListener("complete", handler);
 MSWebViewAsyncOperation.removeEventListener("complete", handler);
-```
+```  
 
-#### Informations sur l’événement
+#### Informations sur l’événement  
 
-|            |      |
-|------------|------|
-|**Interface** | **Événement**
-|**Synchrone** |Oui |    
-|**BD**     |Non |   
-|**Annulable**  |Non |        
+|  |  |  
+|:--- |:--- |  
+| **Interface** | **Événement** |  
+| **Synchrone** |Oui |  
+| **BD** |Non |   
+| **Annulable** |Non |  
 
+### erreur  
 
-### erreur
+Indique qu’il y a eu une erreur de fonctionnement.  
 
-Indique qu’il y a eu une erreur de fonctionnement.
-
-```js
+```javascript
 function handler(eventInfo) { /* Your code */ }
  
 // addEventListener syntax
 MSWebViewAsyncOperation.addEventListener("error", handler);
 MSWebViewAsyncOperation.removeEventListener("error", handler);
-```
+```  
 
-#### Informations sur l’événement
+#### Informations sur l’événement  
 
-|            |      |
-|------------|------|
-|**Interface** | **Événement**
-|**Synchrone** |Oui |    
-|**BD**     |Non |   
-|**Annulable**  |Non |            
+|  |  |  
+|:--- |:--- |  
+| **Interface** | **Événement** |  
+| **Synchrone** | Oui |  
+| **BD** | Non |  
+| **Annulable** | Non |  
 
+## Méthodes  
 
-## Méthodes
+### start  
 
-### start
+Appelée pour lancer la tâche asynchrone.  
 
-Appelée pour lancer la tâche asynchrone. 
-
-```js
+```javascript
 MSWebViewAsyncOperation.start();
-```
+```  
 
-### Parameters
+### Parameters  
 
-Cette méthode n’a pas de paramètres.
+Cette méthode n’a pas de paramètres.  
 
-### Valeur renvoyée
+### Valeur renvoyée  
 
-Cette méthode ne renvoie pas de valeur.
+Cette méthode ne renvoie pas de valeur.  
 
-## Propriétés
+## Propriétés  
 
-### erreur
+### erreur  
 
-Erreur qui s’est produite.
+Erreur qui s’est produite.  
 
-Cette propriété est en lecture seule.
+Cette propriété est en lecture seule.  
 
-```js
+```javascript
 var error = MSWebViewAsyncOperation.error;
-```
+```  
 
-#### Valeur de propriété
-Type: **DOMError**
+#### Valeur de propriété  
 
-### OnComplete
+Type: **DOMError**  
 
-Le gestionnaire d’événements **complet** . 
+### OnComplete  
 
-```js
+Le gestionnaire d’événements **complet** .  
+
+```javascript
 var oncomplete = MSWebViewAsyncOperation.oncomplete;
-```
+```  
 
-#### Valeur de propriété
-Type: **EventHandler**
+#### Valeur de propriété  
 
-### erreur
+Type: **EventHandler**  
 
-Le gestionnaire d’événements d' **erreur** . 
+### erreur  
 
-```js
+Le gestionnaire d’événements d' **erreur** .  
+
+```javascript
 var onerror = MSWebViewAsyncOperation.onerror;
-```
+```  
 
-#### Valeur de propriété
-Type: **EventHandler**
+#### Valeur de propriété  
 
-### readyState
+Type: **EventHandler**  
 
-Décrit l’état prêt de l’objet.
+### readyState  
 
-Cette propriété est en lecture seule.
+Décrit l’état prêt de l’objet.  
 
-```js
+Cette propriété est en lecture seule.  
+
+```javascript
 var readyState = MSWebViewAsyncOperation.readyState;
-```
+```  
 
-#### Valeur de propriété
-Type: **courte non signée**
+#### Valeur de propriété  
 
-### provoqué
+Type: **courte non signée**  
 
-Résultat de l’opération.
+### provoqué  
 
-Cette propriété est en lecture seule.
+Résultat de l’opération.  
 
-```js
+Cette propriété est en lecture seule.  
+
+```javascript
 var result = MSWebViewAsyncOperation.result;
-```
+```  
 
-#### Valeur de propriété
-Tapez: tout
+#### Valeur de propriété  
 
-### target
+Tapez: tout  
 
-La cible de l’opération. 
+### target  
 
-Cette propriété est en lecture seule.
+La cible de l’opération.  
 
-```js
+Cette propriété est en lecture seule.  
+
+```javascript
 var target = MSWebViewAsyncOperation.target;
-```
+```  
 
-#### Valeur de propriété
-Type: [ **MSHTMLWebViewElement**](../webview.md)
+#### Valeur de propriété  
 
-### type
+Type: [ **MSHTMLWebViewElement**](../webview.md)  
 
-Type de l’opération.
+### type  
 
-Cette propriété est en lecture seule.
+Type de l’opération.  
 
-```js
+Cette propriété est en lecture seule.  
+
+```javascript
 var type = MSWebViewAsyncOperation.type;
-```
+```  
 
-#### Valeur de propriété
-Type: **courte non signée**
+#### Valeur de propriété  
+
+Type: **courte non signée**  

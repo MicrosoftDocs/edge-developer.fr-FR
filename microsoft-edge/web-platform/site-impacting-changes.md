@@ -1,20 +1,20 @@
 ---
 description: Cette page fournit un récapitulatif des changements à forte impact qui peuvent avoir un impact sur la compatibilité de site
-title: Compatibilité de site-modification affectant les modifications apportées à Microsoft Edge
+title: Modifications apportées à Microsoft Edge ayant un impact sur la compatibilité des sites
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, compatibilité, plateforme Web
-ms.openlocfilehash: c35f38bd43255ab9a8c965c8fa9f3b1c8a95bff6
-ms.sourcegitcommit: 1760ea15e83045168aec6bf507bc4fe7dfb5568f
+ms.openlocfilehash: 6a57ffb4a2c36420d1abe4ec151342e5b77d4c7c
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10652299"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752191"
 ---
-# Compatibilité de site-modification affectant les modifications apportées à Microsoft Edge  
+# Modifications apportées à Microsoft Edge ayant un impact sur la compatibilité des sites  
 
 Le Web évolue en permanence pour améliorer l’interface utilisateur, la sécurité et la confidentialité.  Dans certains cas, les modifications apportées risquent d’avoir une incidence sur les fonctionnalités des pages existantes.  Le tableau ci-dessous récapitule les changements particulièrement importants que l’équipe Microsoft Edge effectue actuellement.  Vérifiez régulièrement. l’équipe Microsoft Edge est chargée de mettre à jour cette page en apportant des réflexions, des chronologies et de nouvelles modifications.  
 
@@ -26,7 +26,7 @@ Le Web évolue en permanence pour améliorer l’interface utilisateur, la sécu
 | Afficher une invite discrète pour les demandes d’autorisation de notification |  | V83 Canaries, dev V83 | Les utilisateurs peuvent désormais accepter des demandes de notification quiet en `edge://settings/content/notifications` .  Lorsque ce paramètre est activé, Microsoft Edge affiche une icône de requête subtile dans la barre d’adresse pour les sites qui demandent d’envoyer à l’utilisateur des notifications à l’aide de l' `Notifications` `Push` API ou.  Cette icône discrète remplace l’invite d’autorisation flyout.  Dans le cas d’une expérience de la Canaries et du dev, ce comportement est activé par défaut pour certains utilisateurs, sur tous les sites qui demandent des autorisations de notifications.  Les utilisateurs peuvent choisir de désactiver `edge://settings/content/notifications` .  À l’avenir, l’équipe Microsoft Edge risque d’explorer l’affichage de l’invite de menu volant dans des situations spécifiques en fonction des comportements d’utilisateur et d’autres entrées.  |  
 | Désactiver TLS/1.0 et TLS/1.1 par défaut | Bordure V84 |  | Pour vous aider à découvrir les sites concernés, vous pouvez définir le `edge://flags/#display-legacy-tls-warnings` drapeau de sorte que Microsoft Edge affiche une notification de non-blocage «non sécurisée» lors du chargement de pages qui nécessitent des protocoles TLS hérités.  La stratégie de groupe [SSLMinVersion][DeployedEdgePoliciesSSLMinVersion] autorise la réactivation de TLS/1.0 et TLS/1.1; la stratégie reste disponible jusqu’au 88 Edge.  |  
 | Bloquer les téléchargements de contenu mixte | [Chrome + 1](#release-comments) \ (Edge V85 \)  |  | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, y compris sur la chronologie prévue par Google pour cette modification, consultez l' [entrée de blog Google Security][GoogleBlogSecurity20200206].  Le planning de déploiement Microsoft des types de fichiers à avertir ou bloquer est planifié pour une version après chrome.  |  
-
+| Suppression d’Adobe Flash | Bordure V88  |  | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, consultez la feuille de [route de chrome Adobe Flash](https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021-).  | 
 ##### Commentaires de publication  
 
 :::row:::

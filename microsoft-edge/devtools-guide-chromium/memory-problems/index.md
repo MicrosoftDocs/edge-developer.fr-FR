@@ -6,12 +6,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 87fee5484bbd535ee5692acfce273ed6edff5da2
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+ms.openlocfilehash: b9e6e2af333257f0cbe0a4a354dcd1d7b862af9c
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708668"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751988"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -163,7 +163,7 @@ Développez le carats pour examiner une arborescence dissociée.
 
 <!--Nodes highlighted yellow have direct references to them from the JavaScript code.  Nodes highlighted red do not have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node is not alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.  -->
 
-Sélectionnez un nœud pour le rechercher davantage.  Dans le volet **objets** , vous pouvez afficher davantage d’informations sur le code qui fait référence à celle-ci.  Par exemple, dans l’illustration suivante, vous pouvez voir que la `detachedNodes` variable fait référence au nœud.  Pour corriger cette fuite de mémoire particulière, vous devez examiner le code qui utilise la `detachedUNode` variable et garantir que la référence au nœud est supprimée lorsque vous n’en avez plus besoin.  
+Sélectionnez un nœud pour le rechercher davantage.  Dans le volet **objets** , vous pouvez afficher davantage d’informations sur le code qui fait référence à celle-ci.  Par exemple, dans l’illustration suivante, vous pouvez voir que la `detachedNodes` variable fait référence au nœud.  Pour corriger cette fuite de mémoire particulière, vous devez examiner le code qui utilise la `detachedNodes` variable et garantir que la référence au nœud est supprimée lorsque vous n’en avez plus besoin.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="Examen d’un nœud" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
    Figure 7: examen d’un nœud  

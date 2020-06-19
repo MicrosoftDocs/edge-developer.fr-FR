@@ -7,20 +7,20 @@ ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 0608d778-f65b-4dc5-a745-364aac57ef59
 caps.latest.revision: 4
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: 31669615d5e00cb2dbe3730ed20e24d904161f8b
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 84a74d3c1aa68469dfe2fe42fdee685faa4c358c
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10566264"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752219"
 ---
-# Fonction JsRunSerializedScriptWithCallback
+# JsRunSerializedScriptWithCallback Function
 Exécute un script sérialisé. Offre la possibilité de charger les sources de scripts uniquement si vous en avez besoin.  
   
 ## Syntaxe  

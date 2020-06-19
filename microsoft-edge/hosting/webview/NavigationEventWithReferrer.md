@@ -3,46 +3,49 @@ description: Contient des informations de renvoi sur la navigation
 title: Objet NavigationEventWithReferrer
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/22/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, applications Windows 10, UWP, Edge
-ms.openlocfilehash: b11f60724387d996d0a730965602b5ead6a84145
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 72c8a213f632e9e74145de9c34b949adf074cd22
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565093"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752125"
 ---
-# Objet NavigationEventWithReferrer
+# Objet NavigationEventWithReferrer  
 
-Objet qui représente un événement déclenché lorsque la navigation est lancée et que la navigation contient un referer.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Propriétés
+Objet qui représente un événement déclenché lorsque la navigation est lancée et que la navigation contient un referer.  
+
+## Propriétés  
 
 ### Referer
 
-URI (Uniform Resource Identifier) de la page du [WebView](../webview.md) demandant la navigation.
+URI (Uniform Resource Identifier) de la page du [WebView](../webview.md) demandant la navigation.  
 
-Cette propriété est en lecture seule.
+Cette propriété est en lecture seule.  
 
-#### Valeur de propriété
-Type: **DOMString**
+#### Valeur de propriété  
 
+Type: **DOMString**  
 
-```js
+```javascript
 var referer = NavigationEventWithReferrer.referer;
-```
+```  
 
-### uri
+### uri  
 
-URI (Uniform Resource Identifier) de la destination de la navigation.
+URI (Uniform Resource Identifier) de la destination de la navigation.  
 
-Cette propriété est en lecture seule.
+Cette propriété est en lecture seule.  
 
-```js
+```javascript
 var uri = NavigationEventWithReferrer.uri;
-```
+```  
 
-#### Valeur de propriété
-Type: **DOMString**
+#### Valeur de propriété  
+
+Type: **DOMString**  

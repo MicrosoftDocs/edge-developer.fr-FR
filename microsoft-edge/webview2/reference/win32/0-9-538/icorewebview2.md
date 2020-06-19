@@ -3,17 +3,17 @@ description: Héberger le contenu Web dans votre application Win32 avec le contr
 title: Applications Microsoft Edge WebView2 pour Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: 1824c0f626f77e1fb566a361eac6f0358e6a754c
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: c69e9cb725bc96115d323770e3803599eee1de91
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698692"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751946"
 ---
 # interface ICoreWebView2 
 
@@ -101,7 +101,7 @@ WebView2 vous permet d’héberger le contenu Web à l’aide de la technologie 
 
 L’ordre normal des événements de navigation est NavigationStarting, SourceChanged, ContentLoading, puis NavigationCompleted. Les événements suivants décrivent l’état de WebView lors de chaque navigation: NavigationStarting: WebView commence à naviguer et la navigation génère une requête réseau. L’hôte peut actuellement refuser la demande. SourceChanged: la source du WebView est remplacée par une nouvelle URL. Il est possible que cela soit dû à une navigation qui n’entraîne pas de requête réseau telle qu’une navigation de type fragment. HistoryChanged: l’historique de votre WebView a été mis à jour en conséquence de la navigation. ContentLoading: WebView a commencé à charger du nouveau contenu. NavigationCompleted: WebView a terminé de charger le contenu sur la nouvelle page. Les développeurs peuvent suivre les navigations vers chaque nouveau document à l’aide de l’ID de navigation. L’ID de navigation WebView change chaque fois qu’une navigation est réussie vers un nouveau document.
 
-![dot-Inline-dotgraph-1. png](media/dot-inline-dotgraph-1.png)
+![dot-inline-dotgraph-1.png](media/dot-inline-dotgraph-1.png)
 
 Notez qu’il s’agit d’événements de navigation avec le même argument d’événement NavigationId. Les événements de navigation avec différents arguments d’événement NavigationId risquent de se chevaucher. Par exemple, si vous démarrez une navigation pour l’événement NavigationStarting, puis démarrez une autre navigation, vous verrez le NavigationStarting de la première navigation suivi par le NavigationStarting du deuxième navigation, suivi de l’NavigationCompleted de la première navigation, puis de tout le reste des événements de navigation appropriés pour la deuxième navigation. Dans les cas d’erreur, il est possible ou non qu’un événement ContentLoading se poursuive sur une page d’erreur. Dans le cas d’une redirection HTTP, il existe plusieurs événements NavigationStarting dans une ligne, avec les indicateurs IsRedirect définis dans la première ligne, mais l’ID de navigation reste le même. Les mêmes navigations de document n’aboutissent pas à un événement NavigationStarting et n’incrémentent pas l’ID de navigation.
 
@@ -111,11 +111,11 @@ Pour surveiller ou annuler les navigations dans les sous-cadres du WebView, util
 
 WebView2 utilise le même modèle de processus que le navigateur Web Edge. Il existe un processus de navigateur Edge par répertoire de données utilisateur spécifié dans une session utilisateur qui traitera tout processus appelant WebView2 spécifiant ce répertoire de données utilisateur. Cela signifie qu’un processus de navigateur Edge est susceptible de traiter plusieurs processus d’appel et qu’un processus d’appel est susceptible d’utiliser plusieurs processus de navigation latérale.
 
-![dot-Inline-dotgraph-2. png](media/dot-inline-dotgraph-2.png)
+![dot-inline-dotgraph-2.png](media/dot-inline-dotgraph-2.png)
 
 Il y a un certain nombre de processus de convertisseur. Celles-ci sont créées autant de fois que nécessaire pour traiter plusieurs trames dans différents affichages. Le nombre de processus de rendu varie en fonction de la fonctionnalité du navigateur d’isolement de site et du nombre d’origines distantes distinctes affichées dans les webvues associées.
 
-![dot-Inline-dotgraph-3. png](media/dot-inline-dotgraph-3.png)
+![dot-inline-dotgraph-3.png](media/dot-inline-dotgraph-3.png)
 
 Vous pouvez réagir aux blocages et se bloquer dans ces processus de navigateur et de convertisseur à l’aide de l’événement ProcessFailure.
 
@@ -974,7 +974,7 @@ Ajoutez le code JavaScript fourni à une liste de scripts qui doivent être exé
 
 > public HRESULT [AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated)(LPCWSTR JavaScript, gestionnaire [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler.md) *)
 
-Le script injecté s’applique à tous les futurs documents de niveau supérieur et navigation de Frame enfant jusqu’à sa suppression avec RemoveScriptToExecuteOnDocumentCreated. Cette opération est appliquée de manière asynchrone et vous devez attendre que le gestionnaire d’achèvement s’exécute avant de vérifier que le script est prêt à être exécuté sur de futurs navigations.
+Cette méthode injecte un script qui s’exécute sur tous les navigateurs de documents de niveau supérieur et de page Frame enfant. Cette méthode s’exécute de manière asynchrone, et vous devez attendre que le gestionnaire d’achèvement se termine avant l’exécution du script injecté. Lorsque cette méthode se termine, la méthode du gestionnaire `Invoke` est appelée avec le `id` script injecté. `id` est une chaîne. Pour supprimer le script injecté, utilisez `RemoveScriptToExecuteOnDocumentCreated` .
 
 Notez que si un document HTML comporte un sandbox d’un type quelconque via les propriétés [sandbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox) ou l' [en-tête HTTP Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) , ce dernier affectera l’exécution du script. Par exemple, si le mot clé «allow-modaux» n’est pas défini, les appels à la `alert` fonction seront ignorés.
 
@@ -1514,7 +1514,7 @@ Même si de nouvelles tentatives d’accès seront refusées, si l’objet est d
 
 #### RemoveScriptToExecuteOnDocumentCreated 
 
-Supprimez le JavaScript correspondant ajouté par le biais de AddScriptToExecuteOnDocumentCreated.
+Supprimez le JavaScript correspondant ajouté à l’aide `AddScriptToExecuteOnDocumentCreated` de l’ID de script spécifié.
 
 > public HRESULT [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)(ID LPCWSTR)
 
@@ -1682,4 +1682,3 @@ COREWEBVIEW2_WEB_RESOURCE_CONTEXT_SIGNED_EXCHANGE            | Échange HTTP sig
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_PING            | Demandes ping.
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_CSP_VIOLATION_REPORT            | Rapports de violation des CSP.
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_OTHER            | Autres ressources.
-

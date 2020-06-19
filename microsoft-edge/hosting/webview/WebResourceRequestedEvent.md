@@ -3,34 +3,36 @@ description: Événement déclenché lors de la tentative de requête HTTP.
 title: Objet WebResourceRequestedEvent
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, applications Windows 10, UWP, Edge
-ms.openlocfilehash: 79cff0d8fd68e3b5747008f343b5b46fb8093013
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 3d2bb54cc5d60aec5391f0e3fdd427c8ba8a3dab
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10564622"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751981"
 ---
-# Objet WebResourceRequestedEvent
+# Objet WebResourceRequestedEvent  
 
-Événement déclenché lors de la tentative de requête HTTP.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Propriétés
+Événement déclenché lors de la tentative de requête HTTP.  
 
-### args
+## Propriétés  
 
-Informations sur la demande de ressource. Il s’agit d’un [Windows. Web. UI. WebViewControlWebResourceRequestedEventArgs](/uwp/api/windows.web.ui.webviewcontrolwebresourcerequestedeventargs).
+### args  
 
-Cette propriété est en lecture seule.
+Informations sur la demande de ressource.  Il s’agit d’un [Windows. Web. UI. WebViewControlWebResourceRequestedEventArgs](/uwp/api/windows.web.ui.webviewcontrolwebresourcerequestedeventargs).  
 
-```js
+Cette propriété est en lecture seule.  
+
+```javascript
 var args = webResourceRequestedEventArgs.args;
 var request = args.request;
-```
+```  
 
-#### Valeur de propriété
-Tapez: **tout**
+#### Valeur de propriété  
 
+Tapez: **tout**  

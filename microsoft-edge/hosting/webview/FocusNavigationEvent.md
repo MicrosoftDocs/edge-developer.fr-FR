@@ -3,99 +3,105 @@ description: Objet dispatché d’un événement de focus contenant la raison et
 title: Objet FocusNavigationEvent
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, applications Windows 10, UWP, Edge
-ms.openlocfilehash: b988bcd7ff252b9972bef9a31339a34b4b58d9ee
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 88f0a4ef8834c6e851f81ee10bf4202a0429f969
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565110"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752163"
 ---
-# Objet FocusNavigationEvent
+# Objet FocusNavigationEvent  
 
-Objet distribué de [**NavigateFocus**](../webview.md#navigatefocus) / [**DepartingFocus**](../webview.md#departingfocus) contenant l' [**NavigationReason**](#navigationreason) et l’emplacement. 
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Méthodes
+Objet distribué de [**NavigateFocus**](../webview.md#navigatefocus) / [**DepartingFocus**](../webview.md#departingfocus) contenant l' [**NavigationReason**](#navigationreason) et l’emplacement.  
 
-### requestFocus
+## Méthodes  
 
-Appelée pour déplacer le focus entre l’application et le WebView.
+### requestFocus  
 
-### Parameters
+Appelée pour déplacer le focus entre l’application et le WebView.  
 
-Cette méthode n’a pas de paramètres.
+### Parameters  
 
-### Valeur renvoyée
+Cette méthode n’a pas de paramètres.  
 
-Cette méthode ne renvoie pas de valeur.
+### Valeur renvoyée  
 
-## Propriétés
-    
-### navigationReason
+Cette méthode ne renvoie pas de valeur.  
 
-Type **NavigationReason**: «gauche», «haut», «droite» ou «bas». 
+## Propriétés  
 
-Cette propriété est en lecture seule.
+### navigationReason  
 
-```js
+Type **NavigationReason**: «gauche», «haut», «droite» ou «bas».  
+
+Cette propriété est en lecture seule.  
+
+```javascript
 var navigationReason = FocusNavigationEvent.navigationReason;
-```
+```  
 
-#### Valeur de propriété
-Type: **NavigationReason**
+#### Valeur de propriété  
 
-### originHeight
+Type: **NavigationReason**  
 
-Emplacement de la hauteur d’origine de l’élément à donner au focus.
+### originHeight  
 
-Cette propriété est en lecture seule.
+Emplacement de la hauteur d’origine de l’élément à donner au focus.  
 
-```js
+Cette propriété est en lecture seule.  
+
+```javascript
 var originWoriginHeightidth = FocusNavigationEvent.originHeight;
-```
+```  
 
-#### Valeur de propriété
-Type: **float**
+#### Valeur de propriété  
 
-### originLeft
+Type: **float**  
 
-Emplacement de gauche de l’élément à donner au focus.
+### originLeft  
 
-Cette propriété est en lecture seule.
+Emplacement de gauche de l’élément à donner au focus.  
 
-```js
+Cette propriété est en lecture seule.  
+
+```javascript
 var originLeft = FocusNavigationEvent.originLeft;
-```
+```  
 
-#### Valeur de propriété
-Type: **float**
+#### Valeur de propriété  
 
-### originTop
+Type: **float**  
 
-Emplacement supérieur d’origine de l’élément à donner le focus.
+### originTop  
 
-Cette propriété est en lecture seule.
+Emplacement supérieur d’origine de l’élément à donner le focus.  
 
-```js
+Cette propriété est en lecture seule.  
+
+```javascript
 var originTop = FocusNavigationEvent.originTop;
-```
+```  
 
-#### Valeur de propriété
-Type: **float**
+#### Valeur de propriété  
 
-### originWidth
+Type: **float**  
 
-La largeur d’origine de l’élément à donner au focus.
+### originWidth  
 
-Cette propriété est en lecture seule.
+La largeur d’origine de l’élément à donner au focus.  
 
-```js
+Cette propriété est en lecture seule.  
+
+```javascript
 var originWidth = FocusNavigationEvent.originWidth;
-```
+```  
 
-#### Valeur de propriété
-Type: **float**
+#### Valeur de propriété  
 
+Type: **float**  

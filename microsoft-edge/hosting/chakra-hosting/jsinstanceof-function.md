@@ -7,20 +7,20 @@ ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 94399a62-b996-4fd2-82ce-1c26e7a4da08
 caps.latest.revision: 6
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: 3a7e2397abe5dcb25346e583a0fdab301b8b45f4
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 4d9bf2e4c3da9f83fdf7c0ef4e2c31df04670420
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565164"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751974"
 ---
-# Fonction JsInstanceOf
+# JsInstanceOf Function
 Effectue un `instanceof` test d’opérateur JavaScript.  
   
 ## Syntaxe  

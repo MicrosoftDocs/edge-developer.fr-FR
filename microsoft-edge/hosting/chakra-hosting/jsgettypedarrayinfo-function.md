@@ -7,20 +7,20 @@ ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: 992bc4e9-3d06-4ad2-8b6b-88a437360f81
 caps.latest.revision: 3
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: b33b0c515733864c1849a08aa2f8dc6e884c22ad
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 24046acc7118cd8f540ba8ceb9976368e93d51ff
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565167"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752268"
 ---
-# Fonction JsGetTypedArrayInfo
+# JsGetTypedArrayInfo Function
 Obtient les propriétés fréquemment utilisées d’un tableau typé.  
   
 ## Syntaxe  

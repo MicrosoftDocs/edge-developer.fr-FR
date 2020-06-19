@@ -3,17 +3,17 @@ description: Héberger le contenu Web dans votre application Win32 avec le contr
 title: Applications Microsoft Edge WebView2 pour Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: af8df8ff67a0fbe7fd4ec9308b1562b9ef987933
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 03c943c87f07344ab4e3d1a7c707a993a795cdba
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698750"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10751848"
 ---
 # interface ICoreWebView2NewWindowRequestedEventArgs 
 
@@ -52,6 +52,8 @@ IsUserInitiated a la valeur true lorsque la nouvelle demande de fenêtre a été
 
 > valeur publique HRESULT [get_IsUserInitiated](#get_isuserinitiated)(bool * IsUserInitiated)
 
+Les contrôles WebView2 risquent d’afficher des fenêtres contextuelles, car le bloqueur de fenêtres contextuelles est désactivé. Pour bloquer l’affichage des fenêtres contextuelles non-utilisateur, utilisez `get_IsUserInitiated` .
+
 #### get_NewWindow 
 
 Obtient la nouvelle fenêtre.
@@ -87,4 +89,3 @@ Définit un WebView comme résultat du NewWindowRequest.
 > [put_NewWindow](#put_newwindow)par le biais du public HRESULT ([ICoreWebView2](icorewebview2.md) * NewWindow)
 
 Le WebView cible ne doit pas être parcouru. Si l’NewWindow est définie, sa fenêtre de niveau supérieur sera renvoyée en tant que WindowProxy ouverte.
-

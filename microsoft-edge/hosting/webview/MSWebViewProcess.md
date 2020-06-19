@@ -3,83 +3,87 @@ description: Représente un processus WebView.
 title: Objet MSWebViewProcess
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, applications Windows 10, UWP, Edge
-ms.openlocfilehash: 7581f6da3a23295180c50f6d41cc282ce998b64e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: bb70b0e8eb12c7a7c23d71f01ea24e9084caa156
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565102"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752155"
 ---
-# Objet MSWebViewProcess
+# Objet MSWebViewProcess  
 
-Représente un processus [WebView](../webview.md) .
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-```js
+Représente un processus [WebView](../webview.md) .  
+
+```javascript
 var wvprocess = new MSWebViewProcess();
-```
+```  
 
-## Propriétés
+## Propriétés  
 
-### enterpriseId
+### enterpriseId  
 
-ID entreprise du processus.
+ID entreprise du processus.  
 
 ```js
 var enterpriseId = wvprocess.enterpriseId;
-```
+```  
 
-Cette propriété est en lecture seule.
+Cette propriété est en lecture seule.  
 
-#### Valeur de propriété
-Type: **DOMString**
+#### Valeur de propriété  
 
-### isPrivateNetworkClientServerCapabilityEnabled
+Type: **DOMString**  
 
-Obtient une valeur indiquant si le processus [WebView](../webview.md) possède la [déclaration des fonctionnalités](/windows/uwp/packaging/app-capability-declarations) des *réseaux privés (client & serveur)* qui est activée dans le manifeste de l’application.
+### isPrivateNetworkClientServerCapabilityEnabled  
 
-```js
+Obtient une valeur indiquant si le processus [WebView](../webview.md) possède la [déclaration des fonctionnalités](/windows/uwp/packaging/app-capability-declarations) des *réseaux privés (client & serveur)* qui est activée dans le manifeste de l’application.  
+
+```javascript
 var privateNetwork = wvprocess.isPrivateNetworkClientServerCapabilityEnabled;
-```
+```  
 
-Cette propriété est en lecture seule.
+Cette propriété est en lecture seule.  
 
-#### Valeur de propriété
-Type: **booléen**
+#### Valeur de propriété  
 
-## Méthodes
+Type: **booléen**  
 
-### CreateWebViewAsync
+## Méthodes  
 
-Crée un [WebView](../webview.md) dans un processus spécifique.
+### CreateWebViewAsync  
 
-```js
+Crée un [WebView](../webview.md) dans un processus spécifique.  
+
+```javascript
 wvprocess.createWebviewAsync();
-```
+```  
 
-#### Valeur renvoyée
+#### Valeur renvoyée  
 
-Nouveau**`Promise<MSHTMLWebViewElement>`**
+Nouveau**`Promise<MSHTMLWebViewElement>`**  
 
-### GetWebViews
+### GetWebViews  
 
-Retourne une séquence d’objets **MSWebViewProcess** hébergés dans le processus.
+Retourne une séquence d’objets **MSWebViewProcess** hébergés dans le processus.  
 
-#### Valeur renvoyée
+#### Valeur renvoyée  
 
-Nouveau**`sequence<MSHTMLWebViewElement>`**
+Nouveau**`sequence<MSHTMLWebViewElement>`**  
 
-### Contrat
+### Contrat  
 
-Arrête le processus.
+Arrête le processus.  
 
-```js
+```javascript
 wvprocess.terminate();
-```
+```  
 
-#### Valeur renvoyée
+#### Valeur renvoyée  
 
-Cette méthode ne renvoie pas de valeur.
+Cette méthode ne renvoie pas de valeur.  

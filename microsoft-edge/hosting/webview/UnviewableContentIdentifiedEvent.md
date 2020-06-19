@@ -3,59 +3,63 @@ description: Indique que le WebView tente de télécharger un fichier non pris e
 title: Objet UnviewableContentIdentifiedEvent
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/25/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, applications Windows 10, UWP, Edge
-ms.openlocfilehash: cec85ca2d5458a05cfd88210907523f25fb4af95
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 0179522f3eaf0813531084eb996ee9d392e8249d
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10564625"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752012"
 ---
-# Objet UnviewableContentIdentifiedEvent
+# Objet UnviewableContentIdentifiedEvent  
 
-Indique que [WebView](../webview.md) tente d’accéder à un fichier d’un type de contenu non pris en charge. 
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Propriétés
+Indique que [WebView](../webview.md) tente d’accéder à un fichier d’un type de contenu non pris en charge.  
 
-### Média
+## Propriétés  
 
-Obtient le type de contenu du contenu non affiché.
+### Média  
 
-Cette propriété est en lecture seule
+Obtient le type de contenu du contenu non affiché.  
 
-```js
+Cette propriété est en lecture seule  
+
+```javascript
 var mediaType = UnviewableContentIdentifiedEvent.mediaType;
-```
+```  
 
-#### Valeur de propriété
-Type: **DOMString**
+#### Valeur de propriété  
 
-### Referer
+Type: **DOMString**  
 
-URI (Uniform Resource Identifier) de la page du [WebView](../webview.md) demandant la navigation.
+### Referer  
 
-Cette propriété est en lecture seule.
+URI (Uniform Resource Identifier) de la page du [WebView](../webview.md) demandant la navigation.  
 
+Cette propriété est en lecture seule.  
 
-```js
+```javascript
 var referer = NavigationEventWithReferrer.referer;
-```
+```  
 
-#### Valeur de propriété
-Type: **DOMString**
+#### Valeur de propriété  
 
-### uri
+Type: **DOMString**  
 
-URI (Uniform Resource Identifier) de la destination de la navigation.
+### uri  
 
-Cette propriété est en lecture seule.
+URI (Uniform Resource Identifier) de la destination de la navigation.  
 
-```js
+Cette propriété est en lecture seule.  
+
+```javascript
 var uri = NavigationEventWithReferrer.uri;
-```
+```  
 
-#### Valeur de propriété
-Type: **DOMString**
+#### Valeur de propriété  
+
+Type: **DOMString**  

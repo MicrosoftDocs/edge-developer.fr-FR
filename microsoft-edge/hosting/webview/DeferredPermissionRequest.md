@@ -3,22 +3,24 @@ description: Représente une demande différée d’autorisation utilisateur pou
 title: Objet DeferredPermissionRequest
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/15/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: WebView, applications Windows 10, UWP, Edge
-ms.openlocfilehash: 6013f20195fc0f5d4f33b871a9c1b01392bf023e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: dc1f0753f879f511fdc380c806eb88b6be358016
+ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565112"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "10752139"
 ---
-# Objet DeferredPermissionRequest
+# Objet DeferredPermissionRequest  
 
-Représente une requête différée par le contenu du [WebView](../webview.md) pour l’autorisation de l’utilisateur final pour accéder à des fonctionnalités d’appareil spécialisées (par exemple, géolocalisation ou verrouillage de pointeur).
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-```js
+Représente une requête différée par le contenu du [WebView](../webview.md) pour l’autorisation de l’utilisateur final pour accéder à des fonctionnalités d’appareil spécialisées (par exemple, géolocalisation ou verrouillage de pointeur).  
+
+```javascript
 // In this sample, when we receive a permission request we construct some basic UI to ask the
 // user if they want to give permission.
 webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEventArgs => {
@@ -58,98 +60,98 @@ webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEven
 
     permissionRequest.defer();
 });
-```
+```  
 
-## Méthodes
+## Méthodes  
 
-### verte
+### verte  
 
-Autorise la demande d’autorisation.
+Autorise la demande d’autorisation.  
 
-```js
+```javascript
 deferredPermissionRequest.allow();
-```
+```  
 
-#### Parameters
+#### Parameters  
 
-Cette méthode n’a aucun paramètre.
+Cette méthode n’a aucun paramètre.  
 
-#### Valeur renvoyée
+#### Valeur renvoyée  
 
-Cette méthode ne renvoie pas de valeur.
+Cette méthode ne renvoie pas de valeur.  
 
-### deny
+### deny  
 
-Refuse la demande d’autorisation.
+Refuse la demande d’autorisation.  
 
-```js
+```javascript
 deferredPermissionRequest.deny();
-```
+```  
 
-#### Parameters
+#### Parameters  
 
-Cette méthode n’a aucun paramètre.
+Cette méthode n’a aucun paramètre.  
 
-#### Valeur renvoyée
+#### Valeur renvoyée  
 
-Cette méthode ne renvoie pas de valeur.
+Cette méthode ne renvoie pas de valeur.  
 
-## Propriétés
+## Propriétés  
 
-### id
+### id  
 
-ID unique qui peut être utilisé pour mettre en corrélation le DeferredPermissionRequest actuel avec un objet PermissionRequest à partir d’un événement MSWebViewPermissionRequested précédent. Voir la méthode **PermissionRequested. Defer** .
+ID unique qui peut être utilisé pour mettre en corrélation le DeferredPermissionRequest actuel avec un objet PermissionRequest à partir d’un événement MSWebViewPermissionRequested précédent. Voir la méthode **PermissionRequested. Defer** .  
 
-Cette propriété est en lecture seule.
+Cette propriété est en lecture seule.  
 
-```js
+```javascript
 var id = deferredPermissionRequest.id;
-```
+```  
 
-##### Valeur de propriété
+##### Valeur de propriété  
 
-Type: **longue non signée**
+Type: **longue non signée**  
 
-### type
+### type  
 
-Type d’autorisation demandée. Il s’agit de l’une des valeurs de chaîne suivantes:
+Type d’autorisation demandée. Il s’agit de l’une des valeurs de chaîne suivantes:  
 
-- **géolocalisation**: accès aux données d’emplacement par le biais de Navigator. géolocalisation.
-- **unlimitedIndexedDBQuota**: autoriser les API IndexedDB à ignorer la limite de taille des données stockées habituellement.
-- **média**: accès au microphone et à la caméra par le biais de Navigator. getUserMedia.
-- **pointerlock**: possibilité de verrouiller et de contrôler le pointeur de la souris via l’élément. requestPointerLock.
-- **webnotifications**: possibilité d’afficher les notifications sur le bureau via une fenêtre. Message.
-- **écran**: possibilité de prendre des captures d’écran à l’aide de l’API de capture multimédia.
-- **immersiveview**: possibilité de contrôler un affichage VR.
+*   **géolocalisation**: accès aux données d’emplacement par le biais de Navigator. géolocalisation.  
+*   **unlimitedIndexedDBQuota**: autoriser les API IndexedDB à ignorer la limite de taille des données stockées habituellement.  
+*   **média**: accès au microphone et à la caméra par le biais de Navigator. getUserMedia.  
+*   **pointerlock**: possibilité de verrouiller et de contrôler le pointeur de la souris via l’élément. requestPointerLock.  
+*   **webnotifications**: possibilité d’afficher les notifications sur le bureau via une fenêtre. Message.  
+*   **écran**: possibilité de prendre des captures d’écran à l’aide de l’API de capture multimédia.  
+*   **immersiveview**: possibilité de contrôler un affichage VR.  
 
-Cette propriété est en lecture seule.
+Cette propriété est en lecture seule.  
 
-```js
+```javascript
 var type = deferredPermissionRequest.type;
-```
+```  
 
-#### Valeur de propriété
+#### Valeur de propriété  
 
-Type: **chaîne**
+Type: **chaîne**  
 
-### uri
+### uri  
 
-URI (Uniform Resource Identifier) du document demandant l’autorisation.
+URI (Uniform Resource Identifier) du document demandant l’autorisation.  
 
-Cette propriété est en lecture seule.
+Cette propriété est en lecture seule.  
 
-```js
+```javascript
 var uri = deferredPermissionRequest.uri;
-```
+```  
 
-##### Valeur de propriété
+##### Valeur de propriété  
 
-Type: **chaîne**
+Type: **chaîne**  
 
-## Configuration requise
+## Configuration requise  
 
-|                                           |                                      |
-|-------------------------------------------|--------------------------------------|
-| <strong>Client minimal pris en charge</strong> | Windows 10 (applications du Windows Store uniquement) |
-| <strong>Serveur minimal pris en charge</strong> |            Non pris en charge             |
-| <strong>Téléphone minimum pris en charge</strong>  |            Non pris en charge             |
+|  |  |  
+|:--- |:--- |  
+| **Client minimal pris en charge** | Windows 10 (applications du Windows Store uniquement) |  
+| **Serveur minimal pris en charge** | Non pris en charge |  
+| **Téléphone minimum pris en charge** | Non pris en charge |  
