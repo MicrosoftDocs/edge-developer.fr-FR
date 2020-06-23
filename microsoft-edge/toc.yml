@@ -204,6 +204,12 @@
               items:
                 - name: Effectuer le suivi de l’élément actif
                   href: devtools-guide-chromium/accessibility/focus.md
+                - name: Simulation du modèle de couleurs noir/clair
+                  href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
+                - name: Simuler un mouvement réduit
+                  href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
+                - name: Émuler les faiblesses de la vision
+                  href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
         - name: Débogage à distance
           items:
             - name: Périphériques Android
