@@ -8,19 +8,22 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: 4a1eb48270e062838fee9223d0a6e0e59505278e
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 68a32b8e7175f2e52960e7c3a7fe16b66e5a043d
+ms.sourcegitcommit: de171a8e7ccd9f23846f3cd06519e4a0104f1c52
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697321"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "10757612"
 ---
 # Notes de publication pour WebView2 SDK  
 
 L’équipe WebView2 fournira des mises à jour au [Kit de développement logiciel (SDK) WebView2][WebView2NuGetGallery] sur une cadence de 6 jours. Cette page vous permet de mettre à jour les éléments suivants: annonces de produit, ajouts et modifications apportées à la surface d’API et changements de rupture.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Recompilez votre application après avoir mis à jour le package NuGet.
+
+> [!IMPORTANT]
+> Tandis que WebView2 est dans Preview, les API .NET figureront dans la **version préliminaire du package**.
 
 ## 0.9.538
 
@@ -39,7 +42,7 @@ L’équipe WebView2 fournira des mises à jour au [Kit de développement logici
   * [AreRemoteObjectsAllowed](reference/win32/0-9-488/icorewebview2settings.md#get_areremoteobjectsallowed) est maintenant [AreHostObjectsAllowed](reference/win32/0-9-538/icorewebview2settings.md#get_arehostobjectsallowed)
 * Mise à jour de [AddHostObjectToScript](reference/win32/0-9-538/icorewebview2.md#addhostobjecttoscript) pour garantir que les marqueurs de sérialiseurs d’objet d’origine sont définis sur les objets proxy et sérialisés en tant qu’objet hôte lorsqu’il est transmis en tant que paramètre dans le rappel JavaScript. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
 
-#### .NET
+#### .NET (version préliminaire 0.9.538)
 
 * Des exemples de mise en logiciel de WebView2API et d’affichage de contenus sont des guides complets du SDK. Consultez la rubrique [exemples d’WebView2 référentiel Samples](https://github.com/MicrosoftEdge/WebView2Samples).
 * Ajout de la prise en charge des [API](./concepts/versioning.md#experimental-apis) d’hébergement visuel et des fonctionnalités de fenêtre
