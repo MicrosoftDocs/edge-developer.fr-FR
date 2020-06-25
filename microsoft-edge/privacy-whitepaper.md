@@ -3,18 +3,18 @@ description: Livre blanc sur la confidentialité MicrosoftEdge
 title: Livre blanc sur la confidentialité MicrosoftEdge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, confidentialité, livre blanc, approbation
 localization_priority: Priority
-ms.openlocfilehash: 2fee66a81309ee61d41959ae6992e2fe991ca649
-ms.sourcegitcommit: ffc0eb7bedf6e79326103a78c003f1cb2a2f70b2
+ms.openlocfilehash: 26267f471bbbfdf078beb5d9a51b8e0dfa09a416
+ms.sourcegitcommit: a886f0b1aa558435353649515588756fe82e252a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "10696735"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "10758871"
 ---
 # Livre blanc sur la confidentialité MicrosoftEdge  
 
@@ -62,7 +62,9 @@ Lorsque vous utilisez le mode invité, la recopie incrémentée n’est pas disp
 
 ## Cast  
 
-Le cast de Microsoft Edge vous permet d’afficher vos éléments multimédias sur un autre écran avec Google cast.  Vous pouvez accéder à la fonctionnalité à partir de **paramètres, etc. (...)**  >  **Plus d’outils**  >  **Diffuser du contenu multimédia sur un appareil**.  La conversion n’utilise pas Microsoft ou Google services. 
+Le cast de Microsoft Edge vous permet d’afficher vos éléments multimédias sur un autre écran avec Google cast.  Vous pouvez accéder à la fonctionnalité à partir de **paramètres, etc. (...)**  >  **Plus d’outils**  >  **Diffuser du contenu multimédia sur un appareil**.  Le cast repose sur l’extension du routeur multimédia qui n’est pas incluse par défaut dans Microsoft Edge.  Lorsque vous utilisez la conversion pour la première fois, Microsoft Edge vous invite à installer l’extension du routeur multimédia.  
+
+Sélectionnez **redémarrer** pour installer les extensions de média multimédia à partir du Web Store chrome.  Pour maintenir l’extension du routeur multimédia à jour, au démarrage de Microsoft Edge et à intervalles réguliers, Microsoft Edge envoie des demandes de mise à jour au magasin Web chrome qui inclut des données de base sur votre version de Microsoft Edge.  Google risque de recueillir des données associées à l’extension Media Router.  Pour désinstaller l’extension du routeur de média, accédez à `edge://flags` la et désactivez le **Edge-On-Demand-Media-Router**.  Cela arrête également les mises à jour du magasin Web chrome.  L’extension est masquée et n’apparaît pas dans la liste **extensions installées** .  Pour la liste **extensions installées** , accédez à `edge://extensions` .  
 
 ## Collections  
 
@@ -191,8 +193,8 @@ Microsoft Edge prend en charge l' [API de géolocalisation][W3cGeolocationApiMai
 
 Sur le côté droit de la barre d’adresses, Microsoft Edge indique lorsque votre emplacement est ou n’est pas partagé.  
 
-:::image type="complex" source="./media/whitepaper-media/geolocation2.png" alt-text="Services de localisation" lightbox="./media/whitepaper-media/geolocation2.png":::
-   Services de localisation  
+:::image type="complex" source="./media/whitepaper-media/geolocation2.png" alt-text="Location" lightbox="./media/whitepaper-media/geolocation2.png":::
+   Location  
 :::image-end:::  
 
 Si vous autorisez le partage de votre emplacement avec un site, Microsoft Edge envoie des informations réseau locales telles que votre adresse IP et des points d’accès Wi-Fi proches au service de localisation Microsoft.  Le service Microsoft utilise les informations pour évaluer vos coordonnées géographiques.  L’estimation de géolocalisation est partagée avec le site avec lequel vous avez accepté de partager votre emplacement.  Pour indiquer que Microsoft Edge fournit au site de demande un emplacement plus précis sur Windows 10, accédez à **paramètres**  >  **confidentialité**  >  **Location** et activez la zone **autoriser l’accès à l’emplacement sur cet appareil** et **autorisez les applications à accéder à vos paramètres d’emplacement** .  Si vous désactivez l’option **autoriser l’accès à l’emplacement sur cet appareil** et **permettre aux applications d’accéder à vos paramètres d’emplacement** , Microsoft Edge fournit un emplacement approximatif au site demandeur.  Les informations sont partagées uniquement avec un site demandant si vous avez déjà été autorisé à voir votre emplacement.  Pour plus d’informations sur les paramètres d’emplacement Windows, voir [service d’emplacement Windows 10 et confidentialité][MicrosoftSupport4468240].  
