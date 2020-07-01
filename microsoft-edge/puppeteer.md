@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, développement Web, développeur, outils, Automation, test
-ms.openlocfilehash: a78bdc0eb96db018818ef122c772bc9023adac46
-ms.sourcegitcommit: 4187d4c3fbf4ef99a3b8a63db8a182355c84c1f9
+ms.openlocfilehash: ccca46426a006651a417a22e54c8b528834b5f81
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601936"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10844011"
 ---
 # Puppeteer  
 
@@ -36,7 +36,7 @@ yarn add puppeteer-core
 ## Lancer Microsoft Edge avec Puppeteer-Core  
 
 > [!NOTE]
-> `puppeteer-core` repose sur le nœud v 8.9.0 ou une version ultérieure.  L’exemple ci-dessous utilise `async` / `await` qui est uniquement pris en charge dans le nœud v 7.6.0 ou version ultérieure.  Exécuté `node -v` à partir de la ligne de commande pour vérifier que vous disposez d’une version compatible de node. js.  
+> `puppeteer-core` repose sur le nœud v 8.9.0 ou une version ultérieure.  L’exemple ci-dessous utilise `async` / `await` qui est uniquement pris en charge dans le nœud v 7.6.0 ou version ultérieure.  Exécutez `node -v` la commande à partir de la ligne de commande pour vérifier que vous disposez d’une version compatible d' Node.js.  
 
 `puppeteer-core` Familiarisez-vous aux utilisateurs d’autres infrastructures de test de navigateur comme le contrôleurs de [disque][WebDriverEdgehtmlMain]Web.  Vous pouvez créer une instance du navigateur, ouvrir une page, puis la manipuler avec l’API Puppeteer.  Dans l’exemple de code suivant, `puppeteer-core` lance Microsoft Edge \ (chrome \), accède à `https://www.microsoftedgeinsider.com` et enregistre une capture d’écran sous `example.png` .  
 
@@ -57,7 +57,25 @@ const puppeteer = require('puppeteer-core');
 })();
 ```  
 
-Changez `executablePath` de point pour qu’il pointe vers votre installation de Microsoft Edge \ (chrome \).  Par exemple, sur macOS, le `executablePath` Canaries pour Microsoft Edge doit être défini sur `/Applications/Microsoft\ Edge\ Canary.app/` .  Pour rechercher le `executablePath` , accédez à `edge://version` .  Cliquez sur Enregistrer pour enregistrer vos modifications.  
+Changez `executablePath` de point pour qu’il pointe vers votre installation de Microsoft Edge \ (chrome \).  Par exemple, sur macOS, le `executablePath` Canaries pour Microsoft Edge doit être défini sur `/Applications/Microsoft\ Edge\ Canary.app/` .  Pour trouver le `executablePath` fichier, recherchez `edge://version` et copiez le **chemin d’exécution** sur cette page, ou installez le package [Edge-Path][npmEdgePaths] avec l’une des commandes suivantes.  
+
+```shell
+npm i edge-paths
+```  
+
+```shell
+yarn add edge-paths
+```  
+ 
+L’exemple de code ci-dessous utilise le package d' [itinéraires latéraux][npmEdgePaths] pour trouver par programmation le chemin d’accès à votre installation de Microsoft Edge \ (chrome \) sur votre système d’exploitation.
+
+```javascript
+const edgePaths = require("edge-paths");
+
+const EDGE_PATH = edgePaths.getEdgePath();
+```
+
+Enfin, définissez `executablePath: EDGE_PATH` `example.js` .  Cliquez sur Enregistrer pour enregistrer vos modifications.  
 
 > [!NOTE]
 > Microsoft Edge \ (EdgeHTML \) ne fonctionne pas `puppeteer-core` .  Pour continuer à suivre cet exemple, vous devez installer les [canaux Insider de Microsoft Edge][MicrosoftedgeinsiderDownload] .  
@@ -70,7 +88,7 @@ node example.js
 
 `puppeteer-core` lance Microsoft Edge, accède à `https://www.microsoftedgeinsider.com` et enregistre une capture d’écran 800px x 600px de la page.  Vous pouvez personnaliser la taille de la page avec [page. setViewport ()][PuppeteerApipagesetviewport].  
 
-:::image type="complex" source="./media/puppeteer-example.png" alt-text="Exemple de fichier. png produit par example. js":::
+:::image type="complex" source="./media/puppeteer-example.png" alt-text="Fichier example.png produit par example.js":::
    Figure 1: `example.png` fichier obtenu par `example.js`  
 :::image-end:::  
 
@@ -126,7 +144,9 @@ L’équipe de développement Edge est impatient d’entendre vos commentaires c
 
 [ChromiumHome]: https://www.chromium.org/Home "Chrome | Projets de chrome"  
 
-[NodejsMain]: https://nodejs.org "Node. js"  
+[NodejsMain]: https://nodejs.org "Node.js"  
+
+[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "NPM | Tracés latéraux"
 
 [PuppeteerMain]: https://pptr.dev "Puppeteer"  
 [PuppeteerApivscore]: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core "Puppeteer et Puppeteer-Core | Puppeteer"  

@@ -6,12 +6,12 @@ ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: c9d205fb2cc478e9c3f20458f461f004035e85e8
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+ms.openlocfilehash: ec8969fbf7b54512f00120ac4a253b952c55768f
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710398"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10844018"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -470,8 +470,7 @@ Plus d’informations sur chacune des phases que vous pouvez voir dans l’ongle
 *   **Demande envoyée**.  La requête est en cours d’envoi.  
 *   **Préparation ServiceWorker**.  Le navigateur démarre le travailleur du service.  
 *   **Demander à ServiceWorker**.  La demande est envoyée au travailleur de service.  
-*   En **attente \ (TTFB \)**.  Le navigateur attend le premier octet d’une réponse.  
-  TTFB représente le temps à l’octet initial.  Ce minutage inclut un aller-retour d’une latence et la durée du serveur pour préparer la réponse.  
+*   En **attente \ (TTFB \)**.  Le navigateur attend le premier octet d’une réponse.  TTFB représente le temps à l’octet initial.  Ce minutage inclut un aller-retour d’une latence et la durée du serveur pour préparer la réponse.  
 *   **Téléchargement du contenu**.  Le navigateur reçoit la réponse.  
 *   **Réception**d’une émission.  Le navigateur reçoit des données pour cette réponse via le protocole HTTP/2 Server Poussée.  
 *   **Lecture en lecture**.  Le navigateur lit les données locales précédemment reçues.  
