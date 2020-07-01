@@ -1,47 +1,47 @@
 ---
-title: Forcez Microsoft Edge DevTools en mode d’aperçu du jeu de couleurs (CSS préfère le modèle de couleurs)
+title: Simulez un mouvement réduit grâce aux outils de développement (CSS est le mouvement réduit)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 94c5369f0eb35059933be7f6202a4f64450629cd
-ms.sourcegitcommit: d7fdb67df0fe73fa5ae96e5a69a847d07941d0a7
+ms.openlocfilehash: f1bf90de4ac1832fff07e9ac963c26f92adeea2c
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "10758077"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10843983"
 ---
-# <span data-ttu-id="ab3a3-103">Simulation de mouvement réduite</span><span class="sxs-lookup"><span data-stu-id="ab3a3-103">Reduced Motion Simulation</span></span>  
+# <span data-ttu-id="8842d-103">Simulation de mouvement réduite</span><span class="sxs-lookup"><span data-stu-id="8842d-103">Reduced Motion Simulation</span></span>  
 
-<span data-ttu-id="ab3a3-104">Une animation dans des produits Web est susceptible de résoudre un problème d’accessibilité.</span><span class="sxs-lookup"><span data-stu-id="ab3a3-104">Animation in web products may be an accessibility problem.</span></span>  <span data-ttu-id="ab3a3-105">Les systèmes d’exploitation traitent le problème en incluant une option de désactivation des animations pour éviter toute confusion et risque de problèmes liés à la santé tels que les crises de déclenchement.</span><span class="sxs-lookup"><span data-stu-id="ab3a3-105">Operating Systems deal with the problem by including an option to turn off animations to avoid user confusion and potential health related problems such as triggering seizures.</span></span>  <span data-ttu-id="ab3a3-106">Sur le Web, vous pouvez utiliser la requête de média CSS [-Reduced-Motion][MDNPrefersReducedMotion] pour détecter si les utilisateurs préfèrent ne voir aucune animation.</span><span class="sxs-lookup"><span data-stu-id="ab3a3-106">On the web, you may use the [prefers-reduced-motion][MDNPrefersReducedMotion] CSS Media Query to detect if users prefer to not see any animations.</span></span>  <span data-ttu-id="ab3a3-107">Dans votre produit, vous pouvez encapsuler votre code d’animation dans un test pour éviter d’avoir des animations destinées aux utilisateurs concernés.</span><span class="sxs-lookup"><span data-stu-id="ab3a3-107">In your product, you may wrap your animation code in a test to avoid animations showing up for the affected users.</span></span>  
+<span data-ttu-id="8842d-104">Une animation dans des produits Web est susceptible de résoudre un problème d’accessibilité.</span><span class="sxs-lookup"><span data-stu-id="8842d-104">Animation in web products may be an accessibility problem.</span></span>  <span data-ttu-id="8842d-105">Les systèmes d’exploitation traitent le problème en incluant une option de désactivation des animations pour éviter toute confusion et risque de problèmes liés à la santé tels que les crises de déclenchement.</span><span class="sxs-lookup"><span data-stu-id="8842d-105">Operating Systems deal with the problem by including an option to turn off animations to avoid user confusion and potential health related problems such as triggering seizures.</span></span>  <span data-ttu-id="8842d-106">Sur le Web, vous pouvez utiliser la requête de média CSS [-Reduced-Motion][MDNPrefersReducedMotion] pour détecter si les utilisateurs préfèrent ne voir aucune animation.</span><span class="sxs-lookup"><span data-stu-id="8842d-106">On the web, you may use the [prefers-reduced-motion][MDNPrefersReducedMotion] CSS Media Query to detect if users prefer to not see any animations.</span></span>  <span data-ttu-id="8842d-107">Dans votre produit, vous pouvez encapsuler votre code d’animation dans un test pour éviter d’avoir des animations destinées aux utilisateurs concernés.</span><span class="sxs-lookup"><span data-stu-id="8842d-107">In your product, you may wrap your animation code in a test to avoid animations showing up for the affected users.</span></span>  
 
 ```css
 @media (prefers-reduced-motion: reduce) {
   /* in case the .header element has an animation, turn it off */
   .header {
-  animation: none;
+    animation: none;
   }
 }
 ```  
 
-<span data-ttu-id="ab3a3-108">À l’aide de [Microsoft Edge devtools][DevtoolsGuideChromiumMain], vous pouvez simuler ce paramètre de mouvement réduit sans avoir à modifier votre système d’exploitation.</span><span class="sxs-lookup"><span data-stu-id="ab3a3-108">Using the [Microsoft Edge DevTools][DevtoolsGuideChromiumMain], you may simulate this reduced motion setting without having to change your operating system.</span></span>  
+<span data-ttu-id="8842d-108">À l’aide de [Microsoft Edge devtools][DevtoolsGuideChromiumMain], vous pouvez simuler ce paramètre de mouvement réduit sans avoir à modifier votre système d’exploitation.</span><span class="sxs-lookup"><span data-stu-id="8842d-108">Using the [Microsoft Edge DevTools][DevtoolsGuideChromiumMain], you may simulate this reduced motion setting without having to change your operating system.</span></span>  
 
-1.  <span data-ttu-id="ab3a3-109">Ouvrir le **menu de commandes**.</span><span class="sxs-lookup"><span data-stu-id="ab3a3-109">Open the **Command Menu**.</span></span>  
-    1.  <span data-ttu-id="ab3a3-110">Appuyez `Control` + `Shift` + `P` sur Windows ou `Command` + `Shift` + `P` sur MacOS.</span><span class="sxs-lookup"><span data-stu-id="ab3a3-110">Press `Control`+`Shift`+`P`  on Windows or `Command`+`Shift`+`P` on macOS.</span></span>  
+1.  <span data-ttu-id="8842d-109">Ouvrir le **menu de commandes**.</span><span class="sxs-lookup"><span data-stu-id="8842d-109">Open the **Command Menu**.</span></span>  
+    1.  <span data-ttu-id="8842d-110">Appuyez `Control` + `Shift` + `P` sur Windows ou `Command` + `Shift` + `P` sur MacOS.</span><span class="sxs-lookup"><span data-stu-id="8842d-110">Press `Control`+`Shift`+`P`  on Windows or `Command`+`Shift`+`P` on macOS.</span></span>  
         
         :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Menu de commandes" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-           <span data-ttu-id="ab3a3-112">**Menu de commandes**</span><span class="sxs-lookup"><span data-stu-id="ab3a3-112">The **Command Menu**</span></span>  
+           <span data-ttu-id="8842d-112">**Menu de commandes**</span><span class="sxs-lookup"><span data-stu-id="8842d-112">The **Command Menu**</span></span>  
         :::image-end:::   
         
-1.  <span data-ttu-id="ab3a3-113">Tapez `reduced` pour activer ou désactiver la simulation.</span><span class="sxs-lookup"><span data-stu-id="ab3a3-113">Type `reduced`, to turn the simulation on and off.</span></span>  <span data-ttu-id="ab3a3-114">Sélectionnez l’option et appuyez sur `Enter` .</span><span class="sxs-lookup"><span data-stu-id="ab3a3-114">Select the option and press `Enter`.</span></span>  
+1.  <span data-ttu-id="8842d-113">Tapez `reduced` pour activer ou désactiver la simulation.</span><span class="sxs-lookup"><span data-stu-id="8842d-113">Type `reduced`, to turn the simulation on and off.</span></span>  <span data-ttu-id="8842d-114">Sélectionnez l’option et appuyez sur `Enter` .</span><span class="sxs-lookup"><span data-stu-id="8842d-114">Select the option and press `Enter`.</span></span>  
     
     :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="Activer ou désactiver le paramètre de réduction du mouvement de votre choix dans le menu de commandes" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
-       <span data-ttu-id="ab3a3-116">Activer ou désactiver le paramètre de **réduction du mouvement** de votre choix dans le menu de **commandes**</span><span class="sxs-lookup"><span data-stu-id="ab3a3-116">Turn on or off the **prefers reduced motion** setting from **Command Menu**</span></span>  
+       <span data-ttu-id="8842d-116">Activer ou désactiver le paramètre de **réduction du mouvement** de votre choix dans le menu de **commandes**</span><span class="sxs-lookup"><span data-stu-id="8842d-116">Turn on or off the **prefers reduced motion** setting from **Command Menu**</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="ab3a3-117">Actualisez la page active pour tester si vos animations sont désactivées ou visibles.</span><span class="sxs-lookup"><span data-stu-id="ab3a3-117">Refresh the current page to test whether your animations are turned off or visible.</span></span>  
+1.  <span data-ttu-id="8842d-117">Actualisez la page active pour tester si vos animations sont désactivées ou visibles.</span><span class="sxs-lookup"><span data-stu-id="8842d-117">Refresh the current page to test whether your animations are turned off or visible.</span></span>  
     
 <!-- image links -->  
 
