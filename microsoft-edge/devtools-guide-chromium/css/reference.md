@@ -6,12 +6,12 @@ ms.date: 04/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 005d2650a1633d49a8c6c2550c4b2c0c2e3f3be6
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+ms.openlocfilehash: 4f0370b83d8c939476a1ed378dbdf750101c9527
+ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601845"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "10843966"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -155,7 +155,6 @@ Pour un didacticiel interactif, voir [Ajouter un PseudoState à une classe][DevT
 ### Afficher une page en mode d’impression   
 
 Pour afficher une page en mode impression:  
-
 1.  [Ouvrir le menu de commandes][DevToolsCommandMenu].  
 1.  Commencez à taper `Rendering` et sélectionnez `Show Rendering` .  
 1.  Dans la liste déroulante **émuler le média CSS** , sélectionnez **Imprimer**.  
