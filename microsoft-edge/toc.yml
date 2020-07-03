@@ -456,6 +456,8 @@
           href: extensions/troubleshooting.md
     - name: Hébergement
       href: hosting/toc.md
+    - name: Versions d’évaluation d’origine
+      href: origin-trials/index.md
     - name: Analyse des performances
       href: performance-analysis.md
     - name: Livre blanc sur la confidentialité
