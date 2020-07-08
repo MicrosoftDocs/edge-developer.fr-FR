@@ -3,16 +3,15 @@ description: Dernières fonctionnalités expérimentales de Microsoft Edge DevTo
 title: Fonctionnalités expérimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/26/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, expérience
-ms.openlocfilehash: 731a289f555870eeff9cdc160965b59925b70c4d
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
-ms.translationtype: MT
+ms.openlocfilehash: 19fd59c5dd9f18a681c69250fdcddb22e2796565
+ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843952"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10858051"
 ---
 # Fonctionnalités expérimentales  
 
@@ -26,7 +25,7 @@ Procédez comme suit pour activer ou désactiver les fonctionnalités expérimen
 
 1.  [Ouvrez devtools][DevtoolsOpen].  
      *   Appuyez sur `Control` + `Shift` + `I` \ (Windows \) ou `Command` + `Option` + `I` \ (MacOS \).  Pour plus d’informations, reportez-vous à la rubrique [raccourcis clavier de Microsoft Edge devtools][DevToolsShortcuts].  
-1.  Ouvrez le volet **paramètres** .  
+1.  Ouvrez le volet [paramètres][DevToolsCustomizeSettings] .  
     *   Appuyez sur `Shift` + `?` .  Pour plus d’informations, reportez-vous à la rubrique [raccourcis clavier de Microsoft Edge devtools][DevToolsShortcuts].  
 1.  Sur le côté gauche du volet **paramètres** , sélectionnez la section **expériences** .  
     
@@ -46,9 +45,22 @@ Les sections suivantes décrivent les nouvelles fonctionnalités expérimentales
 
 | Fonctionnalités expérimentales | Version de Microsoft Edge |  
 |:--- |:--- |  
+| [Activer l’onglet Paramètres de raccourcis clavier personnalisés](#enable-custom-keyboard-shortcuts-settings-tab) | 84 ou version ultérieure |
 | [Activer les nouvelles fonctionnalités de débogage de grille CSS](#enable-new-css-grid-debugging-features) | 85 ou version ultérieure |  
 | [Activer la prise en charge du déplacement des onglets entre les panneaux](#enable-support-to-move-tabs-between-panels) | 85 ou version ultérieure |  
 | [Activer webhint](#enable-webhint) | 85 ou version ultérieure |  
+
+### Activer l’onglet Paramètres de raccourcis clavier personnalisés
+
+Fournit une nouvelle page de **raccourcis** dans les [paramètres de devtools][DevToolsCustomizeSettings] qui permet d’associer des [raccourcis clavier][DevToolsShortcuts] dans le devtools au [code vs][VisualstudioCode].  
+
+Une fois que vous avez activé cette expérience, ouvrez de nouveau [devtools paramètres][DevToolsCustomizeSettings] en appuyant sur `Shift` + `?` .  Accédez à la page nouveau **raccourcis** .  Sélectionnez **devtools (par défaut)** dans le menu déroulant **correspondant aux raccourcis de** la liste déroulante, puis sélectionnez **Visual Studio code**.  Les raccourcis clavier dans le DevTools correspondent désormais aux raccourcis pour les actions équivalentes dans le code VS.  
+
+:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code VS" lightbox="./media/experiments-keyboard-shortcut.png":::
+   Faire correspondre les raccourcis clavier du DevTools au code VS
+:::image-end:::  
+
+Par exemple, dans Windows, le raccourci clavier pour suspendre ou continuer à exécuter un script en [code vs][VisualstudioCodeShortcutsKeyboardWindows] est `F5` .  Avec la valeur prédéfinie **devtools (par défaut)** , ce raccourci est le même dans devtools qu' `F8` avec le **code prédéfini Visual Studio** , ce raccourci est désormais également disponible `F5` .  
 
 ### Activer les nouvelles fonctionnalités de débogage de grille CSS  
 
@@ -82,11 +94,11 @@ En règle générale, il est possible d’ouvrir des outils tels que des **élé
 
 ## Fonctionnalités expérimentales antérieures  
 
-*   la [vue 3D][Devtools3DView] est désormais disponible et activée par défaut dans Microsoft Edge version 83 ou ultérieure.  
+*   la [vue 3D][Devtools3dViewIndex] est désormais disponible et activée par défaut dans Microsoft Edge version 83 ou ultérieure.  
 
 ## Fourniture de commentaires sur les fonctionnalités expérimentales  
 
-Pour transmettre des commentaires sur les expériences DevTools Microsoft Edge, ou tout autre élément associé à DevTools:  
+Pour transmettre des commentaires sur les expériences DevTools Microsoft Edge, ou tout autre élément associé à DevTools.  
 
 *   Envoyez vos commentaires à l’aide de l’icône de commentaires dans le DevTools  
 *   Tweeter sur [@EdgeDevTools][TwitterEdgedevtools]  
@@ -97,11 +109,15 @@ Pour transmettre des commentaires sur les expériences DevTools Microsoft Edge, 
 
 <!-- links -->  
 
-[Devtools3DView]: ./3D-view.md "Affichage 3D | Documents Microsoft"  
+[Devtools3dViewIndex]: ./3d-view/index.md "Affichage 3D | Documents Microsoft"  
 [DevtoolsIssues]: ./issues/index.md "Recherchez et corrigez les problèmes liés à l’outil problèmes dans Microsoft Edge DevTools Documents Microsoft"  
-[DevToolsShortcuts]: ./shortcuts.md "Raccourcis clavier de Microsoft Edge DevTools-Microsoft documents"  
+[DevToolsCustomizeSettings]: ./customize/index.md#settings "Paramètres-personnaliser Microsoft Edge DevTools | Documents Microsoft"  
+[DevToolsShortcuts]: ./shortcuts.md "Raccourcis clavier dans Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsOpen]: ./open.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
+
+[VisualstudioCode]: https://code.visualstudio.com "Code Visual Studio"  
+[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Raccourcis clavier dans Visual Studio pour Windows | Code Visual Studio"  
 
 [WebhintMain]: https://webhint.io "Astuce" 
