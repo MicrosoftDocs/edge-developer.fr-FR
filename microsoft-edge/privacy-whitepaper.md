@@ -3,18 +3,21 @@ description: Livre blanc sur la confidentialité MicrosoftEdge
 title: Livre blanc sur la confidentialité MicrosoftEdge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/22/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: Microsoft Edge, confidentialité, livre blanc, approbation
 localization_priority: Priority
-ms.openlocfilehash: 26267f471bbbfdf078beb5d9a51b8e0dfa09a416
-ms.sourcegitcommit: a886f0b1aa558435353649515588756fe82e252a
+no-loc:
+- Cast
+- Google Cast
+ms.openlocfilehash: 4dc6b21a885438e8ddc0b2164386ec8d819b14af
+ms.sourcegitcommit: ec1d73e3addc47ed28ac5f9d61e4e1ee26b9e40d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "10758871"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860429"
 ---
 # Livre blanc sur la confidentialité MicrosoftEdge  
 
@@ -62,7 +65,7 @@ Lorsque vous utilisez le mode invité, la recopie incrémentée n’est pas disp
 
 ## Cast  
 
-Le cast de Microsoft Edge vous permet d’afficher vos éléments multimédias sur un autre écran avec Google cast.  Vous pouvez accéder à la fonctionnalité à partir de **paramètres, etc. (...)**  >  **Plus d’outils**  >  **Diffuser du contenu multimédia sur un appareil**.  Le cast repose sur l’extension du routeur multimédia qui n’est pas incluse par défaut dans Microsoft Edge.  Lorsque vous utilisez la conversion pour la première fois, Microsoft Edge vous invite à installer l’extension du routeur multimédia.  
+Cast Microsoft Edge vous permet d’afficher vos éléments multimédias à l’aide d’un autre écran Google Cast .  Vous pouvez accéder à la fonctionnalité à partir de **paramètres, etc. (...)**  >  **Plus d’outils**  >  ** Cast multimédia sur le périphérique**.  Cast repose sur l’extension de Mac Media qui n’est pas incluse par défaut dans Microsoft Edge.  Lors de la première utilisation Cast , Microsoft Edge vous invite à installer l’extension Media Router.  
 
 Sélectionnez **redémarrer** pour installer les extensions de média multimédia à partir du Web Store chrome.  Pour maintenir l’extension du routeur multimédia à jour, au démarrage de Microsoft Edge et à intervalles réguliers, Microsoft Edge envoie des demandes de mise à jour au magasin Web chrome qui inclut des données de base sur votre version de Microsoft Edge.  Google risque de recueillir des données associées à l’extension Media Router.  Pour désinstaller l’extension du routeur de média, accédez à `edge://flags` la et désactivez le **Edge-On-Demand-Media-Router**.  Cela arrête également les mises à jour du magasin Web chrome.  L’extension est masquée et n’apparaît pas dans la liste **extensions installées** .  Pour la liste **extensions installées** , accédez à `edge://extensions` .  
 
