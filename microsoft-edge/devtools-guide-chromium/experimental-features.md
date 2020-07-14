@@ -7,11 +7,12 @@ ms.date: 07/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, expérience
-ms.openlocfilehash: 19fd59c5dd9f18a681c69250fdcddb22e2796565
-ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
+ms.openlocfilehash: 6824b09ffc3c1f00c4a2f3000d84bf2c1be743d0
+ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858051"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "10866042"
 ---
 # Fonctionnalités expérimentales  
 
@@ -48,7 +49,7 @@ Les sections suivantes décrivent les nouvelles fonctionnalités expérimentales
 | [Activer l’onglet Paramètres de raccourcis clavier personnalisés](#enable-custom-keyboard-shortcuts-settings-tab) | 84 ou version ultérieure |
 | [Activer les nouvelles fonctionnalités de débogage de grille CSS](#enable-new-css-grid-debugging-features) | 85 ou version ultérieure |  
 | [Activer la prise en charge du déplacement des onglets entre les panneaux](#enable-support-to-move-tabs-between-panels) | 85 ou version ultérieure |  
-| [Activer webhint](#enable-webhint) | 85 ou version ultérieure |  
+| [Activer webhint](#enable-webhint) | 85 ou version ultérieure | 
 
 ### Activer l’onglet Paramètres de raccourcis clavier personnalisés
 

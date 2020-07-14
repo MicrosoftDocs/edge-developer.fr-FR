@@ -7,12 +7,12 @@ ms.date: 06/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, compatibilité, plateforme Web
-ms.openlocfilehash: f6c19258c1e82e1ce90a21f6efc04496100c3401
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+ms.openlocfilehash: 7a443b36c554439c70017aeee52c92f591c566b8
+ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843976"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "10866049"
 ---
 # Modifications apportées à Microsoft Edge ayant un impact sur la compatibilité des sites  
 
@@ -25,7 +25,7 @@ Le Web évolue en permanence pour améliorer l’interface utilisateur, la sécu
 | Ne pas autoriser les XmlHttpRequest synchrones dans la page de masquage | [Chrome + 1](#release-comments) \ (Edge V83 \) |  | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Dans le chrome, Microsoft Edge propose une stratégie de groupe pour désactiver cette modification jusqu’au 88 Edge.  Pour plus d’informations, y compris sur la chronologie prévue par Google pour cette modification, consultez l’entrée d’état de la [plateforme chrome][ChromePlatformStatus4664843055398912].  |  
 | Afficher une invite discrète pour les demandes d’autorisation de notification |  | V83 Canaries, dev V83 | Les utilisateurs peuvent désormais accepter des demandes de notification quiet en `edge://settings/content/notifications` .  Lorsque ce paramètre est activé, Microsoft Edge affiche une icône de requête subtile dans la barre d’adresse pour les sites qui demandent d’envoyer à l’utilisateur des notifications à l’aide de l' `Notifications` `Push` API ou.  Cette icône discrète remplace l’invite d’autorisation flyout.  Dans le cas d’une expérience de la Canaries et du dev, ce comportement est activé par défaut pour certains utilisateurs, sur tous les sites qui demandent des autorisations de notifications.  Les utilisateurs peuvent choisir de désactiver `edge://settings/content/notifications` .  À l’avenir, l’équipe Microsoft Edge risque d’explorer l’affichage de l’invite de menu volant dans des situations spécifiques en fonction des comportements d’utilisateur et d’autres entrées.  |  
 | Désactiver TLS/1.0 et TLS/1.1 par défaut | Bordure V84 |  | Pour vous aider à découvrir les sites concernés, vous pouvez définir le `edge://flags/#display-legacy-tls-warnings` drapeau de sorte que Microsoft Edge affiche une notification de non-blocage «non sécurisée» lors du chargement de pages qui nécessitent des protocoles TLS hérités.  La stratégie de groupe [SSLMinVersion][DeployedEdgePoliciesSSLMinVersion] autorise la réactivation de TLS/1.0 et TLS/1.1; la stratégie reste disponible jusqu’au 88 Edge.  |  
-| Bloquer les téléchargements de contenu mixte | [Chrome + 1](#release-comments) \ (Edge V85 \)  |  | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, y compris sur la chronologie prévue par Google pour cette modification, consultez l' [entrée de blog Google Security][GoogleBlogSecurity20200206].  Le planning de déploiement Microsoft des types de fichiers à avertir ou bloquer est planifié pour une version après chrome.  |  
+| Bloquer les téléchargements de contenu mixte | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, y compris sur la chronologie prévue par Google pour cette modification, consultez l' [entrée de blog Google Security][GoogleBlogSecurity20200206].  Le planning de déploiement Microsoft des types de fichiers à avertir ou bloquer est planifié pour une version après chrome.  |  
 | Déconseillé AppCache | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, consultez la [documentation de WebDev][WebDevAppCacheRemoval].  Le planning de déploiement Microsoft pour le retrait est prévu pour une version ultérieure après chrome.  La demande d’un [jeton AppCache OriginTrial][AppCacheOriginTrial] permet aux sites de continuer à utiliser l’API déconseillée jusqu’à l’aide de l’option V90. |  
 | Suppression d’Adobe Flash | Bordure V88  |  | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, consultez la feuille de [route de chrome Adobe Flash][ChromiumFlashRoadmapSupportRemoved].  | 
 ##### Commentaires de publication  
