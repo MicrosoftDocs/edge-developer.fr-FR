@@ -7,11 +7,12 @@ ms.date: 07/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, expérience
-ms.openlocfilehash: 19fd59c5dd9f18a681c69250fdcddb22e2796565
-ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
+ms.openlocfilehash: 6824b09ffc3c1f00c4a2f3000d84bf2c1be743d0
+ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858051"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "10866042"
 ---
 # <span data-ttu-id="8841a-104">Fonctionnalités expérimentales</span><span class="sxs-lookup"><span data-stu-id="8841a-104">Experimental features</span></span>  
 
@@ -48,7 +49,7 @@ ms.locfileid: "10858051"
 | [<span data-ttu-id="8841a-126">Activer l’onglet Paramètres de raccourcis clavier personnalisés</span><span class="sxs-lookup"><span data-stu-id="8841a-126">Enable custom keyboard shortcuts settings tab</span></span>](#enable-custom-keyboard-shortcuts-settings-tab) | <span data-ttu-id="8841a-127">84 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="8841a-127">84 or later</span></span> |
 | [<span data-ttu-id="8841a-128">Activer les nouvelles fonctionnalités de débogage de grille CSS</span><span class="sxs-lookup"><span data-stu-id="8841a-128">Enable new CSS grid debugging features</span></span>](#enable-new-css-grid-debugging-features) | <span data-ttu-id="8841a-129">85 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="8841a-129">85 or later</span></span> |  
 | [<span data-ttu-id="8841a-130">Activer la prise en charge du déplacement des onglets entre les panneaux</span><span class="sxs-lookup"><span data-stu-id="8841a-130">Enable support to move tabs between panels</span></span>](#enable-support-to-move-tabs-between-panels) | <span data-ttu-id="8841a-131">85 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="8841a-131">85 or later</span></span> |  
-| [<span data-ttu-id="8841a-132">Activer webhint</span><span class="sxs-lookup"><span data-stu-id="8841a-132">Enable webhint</span></span>](#enable-webhint) | <span data-ttu-id="8841a-133">85 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="8841a-133">85 or later</span></span> |  
+| [<span data-ttu-id="8841a-132">Activer webhint</span><span class="sxs-lookup"><span data-stu-id="8841a-132">Enable webhint</span></span>](#enable-webhint) | <span data-ttu-id="8841a-133">85 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="8841a-133">85 or later</span></span> | 
 
 ### <span data-ttu-id="8841a-134">Activer l’onglet Paramètres de raccourcis clavier personnalisés</span><span class="sxs-lookup"><span data-stu-id="8841a-134">Enable custom keyboard shortcuts settings tab</span></span>
 

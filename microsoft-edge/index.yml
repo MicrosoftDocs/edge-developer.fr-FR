@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 04/23/2020
-  localization_priority: Priority
-  ms.openlocfilehash: 52f768582f25f35f8b0b188cfc1a38edc7aac6c8
-  ms.sourcegitcommit: 3f625231067df343d5afbb3f47c1063982067bcb
+  ms.date: 07/10/2020
+  ms.localizationpriority: high
+  ms.openlocfilehash: 979a1a67291e7d0859b8978f32bdbe1e17bf27f6
+  ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/26/2020
-  ms.locfileid: "10678217"
+  ms.lasthandoff: 07/13/2020
+  ms.locfileid: "10866056"
 highlightedContent:
   items:
   - title: Télécharger Microsoft Edge (canal stable
@@ -113,19 +113,19 @@ conceptualContent:
       text: Console
     - url: /microsoft-edge/devtools-guide-chromium/network/index
       itemType: reference
-      text: Réseau
+      text: Network
     - url: /microsoft-edge/devtools-guide-chromium/storage/cookies
       itemType: reference
       text: Stockage
     - url: /microsoft-edge/devtools-guide-chromium/command-menu/index
       itemType: reference
-      text: Menu de commandes
+      text: Menu de commande
     - url: /microsoft-edge/devtools-guide-chromium/javascript/index
       itemType: reference
       text: JavaScript
     - url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/index
       itemType: reference
-      text: Analyse des performances
+      text: Niveau de performance
     - url: /microsoft-edge/devtools-guide-chromium/remote-debugging/index
       itemType: reference
       text: Débogage à distance
@@ -136,13 +136,13 @@ conceptualContent:
     links:
     - url: /microsoft-edge/devtools-guide-chromium/customize/index
       itemType: reference
-      text: Présentation
+      text: Vue d'ensemble
     - url: /microsoft-edge/devtools-guide-chromium/customize/dark-theme
       itemType: reference
       text: Thème foncé
     - url: /microsoft-edge/devtools-guide-chromium/workspaces/index
       itemType: reference
-      text: Espaces
+      text: Espaces travail
     - url: /microsoft-edge/devtools-guide-chromium/shortcuts
       itemType: reference
       text: Raccourcis clavier
@@ -151,10 +151,10 @@ conceptualContent:
     - text: Accessibilité
       itemType: reference
       url: /microsoft-edge/accessibility
-    - text: Protocole DevTools (chrome)
+    - text: Protocole DevTools (Chromium)
       itemType: reference
       url: /microsoft-edge/devtools-protocol-chromium
-    - text: Web Driver (chrome)
+    - text: WebDriver (Chromium)
       itemType: reference
       url: /microsoft-edge/webdriver-chromium
     - text: Puppeteer
@@ -163,7 +163,7 @@ conceptualContent:
     - text: Interopérabilité (compatibilité des sites)
       itemType: reference
       url: /microsoft-edge/web-platform/site-impacting-changes
-    - text: Astuce
+    - text: webhint
       itemType: reference
       url: https://webhint.io/docs/user-guide
     - text: Analyse des performances
@@ -195,7 +195,7 @@ conceptualContent:
       text: Autres méthodes de distribution d’extensions
     - url: /microsoft-edge/extensions-chromium/developer-guide/native-messaging
       itemType: reference
-      text: Messagerie Native
+      text: Messagerie native
   - title: 'Extensions: publication sur le Microsoft Store'
     links:
     - url: /microsoft-edge/extensions-chromium/publish/publish-extension
@@ -209,7 +209,7 @@ conceptualContent:
       text: Télécharger une vidéo YouTube
     - url: /microsoft-edge/extensions-chromium/publish/update
       itemType: reference
-      text: Mise à jour de l’extension
+      text: Mise à jour de la liste des extensions
     - url: /microsoft-edge/extensions-chromium/publish/manage-settings
       itemType: reference
       text: Gérer les paramètres de compte
@@ -220,7 +220,7 @@ conceptualContent:
       text: Stratégie de sécurité du contenu
     - url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
       itemType: reference
-      text: Stratégies développeurs de catalogue Microsoft Edge addons
+      text: Stratégies pour les développeurs de catalogue Microsoft Edge addons
   - title: Applications web progressives
     links:
     - url: /microsoft-edge/progressive-web-apps-chromium/index
@@ -233,7 +233,7 @@ conceptualContent:
     links:
     - url: /microsoft-edge/webview2/index
       itemType: reference
-      text: Présentation
+      text: Vue d'ensemble
     - url: /microsoft-edge/webview2/gettingstarted/win32
       itemType: reference
       text: Commencer à utiliser WebView2
@@ -265,7 +265,7 @@ additionalContent:
         url: /microsoft-edge/extensions/index
       - text: Mise en route de PWAs (EdgeHTML)
         url: /microsoft-edge/progressive-web-apps-edgehtml/get-started
-      - text: Hébergement Runtime JavaScript
+      - text: Hébergement du runtime JavaScript
         url: /microsoft-edge/hosting/javascript-runtime-hosting
       - text: Guide du développeur WebVR
         url: /microsoft-edge/webvr/index
