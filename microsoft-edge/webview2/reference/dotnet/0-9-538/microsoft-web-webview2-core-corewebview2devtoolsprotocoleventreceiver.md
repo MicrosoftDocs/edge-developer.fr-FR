@@ -1,24 +1,24 @@
 ---
-description: Héberger le contenu Web dans votre application Win32 avec le contrôle Microsoft Edge WebView2
-title: Applications Microsoft Edge WebView2 pour Win32
+description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos applications natives avec le contrôle Microsoft Edge WebView2
+title: Microsoft. Web. WebView2. Core. CoreWebView2DevToolsProtocolEventReceiver
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: d99349ec763796bd6b1ea242abbe5c2219c221c2
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, application, Edge, CoreWebView2, CoreWebView2Controller, contrôle de navigateur, Edge html, Microsoft. Web. WebView2. Core. CoreWebView2DevToolsProtocolEventReceiver
+ms.openlocfilehash: 155b0ae414d03d7a062b1e3426331307457687ae
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698607"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10878910"
 ---
 # Classe Microsoft. Web. WebView2. Core. CoreWebView2DevToolsProtocolEventReceiver 
 
 Espace de noms: Microsoft. Web. WebView2. Core \
-Assembly: Microsoft. Web. WebView2. Core. dll
+Assemblage: Microsoft.Web.WebView2.Core.dll
 
 Un destinataire est créé pour un événement de protocole DevTools particulier et vous permet de vous abonner à cet événement et de vous désabonner.
 

@@ -1,21 +1,21 @@
 ---
 description: Héberger le contenu Web dans votre application Win32 avec le contrôle Microsoft Edge WebView2
-title: Applications Microsoft Edge WebView2 pour Win32
+title: 0.8.355-WebView2 C++ Win32 IWebView2HttpResponseHeaders
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2019
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge
-ms.openlocfilehash: 0f3564fa96bc1c13527cbf3b26ce92114d44eae4
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 48a04ea60dff4cf9b6b52377927ee9085fb8bea2
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653460"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10878434"
 ---
-# interface IWebView2HttpResponseHeaders 
+# 0.8.355-interface IWebView2HttpResponseHeaders 
 
 > [!NOTE]
 > Cette interface peut être modifiée ou indisponible pour les versions ultérieures SDK version 0.8.355. Reportez-vous à [référence](../../../webview2-api-reference.md) pour la dernière référence d’API.

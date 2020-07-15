@@ -1,21 +1,21 @@
 ---
-description: Héberger le contenu Web de votre application Win32 avec le contrôle WebView 2 de Microsoft Edge
-title: Applications WebView 2 de Microsoft Edge 2 pour les applications Win32
+description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos applications natives avec le contrôle Microsoft Edge WebView2
+title: Référence C++ Win32 WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/08/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: f2f379b5c30d1e0cfbdeccdcbf495728febc6902
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 59302f8a1c6f38f2e5688b05faa79d97d51b5409
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698745"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879150"
 ---
-# Référence (WebView2)  
+# Référence (C++ Win32 WebView2)  
 
 Le contrôle Microsoft Edge WebView2 vous permet d’héberger le contenu Web de votre application à l’aide de [Microsoft Edge \ (chrome \)](https://www.microsoftedgeinsider.com) en tant que moteur de rendu.  Pour plus d’informations, voir [vue d’ensemble de Microsoft Edge WebView2](../../index.md)) et [mise en route d’WebView2](../../gettingstarted/win32.md).  [ICoreWebView2](0-9-538/ICoreWebView2.md) est l’endroit idéal pour commencer à apprendre les détails de l’API.  
 

@@ -1,24 +1,24 @@
 ---
-description: Héberger le contenu Web dans votre application Win32 avec le contrôle Microsoft Edge WebView2
-title: Applications Microsoft Edge WebView2 pour Win32
+description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos applications natives avec le contrôle Microsoft Edge WebView2
+title: Microsoft. Web. WebView2. Core. CoreWebView2PhysicalKeyStatus
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: e0fb3f9ff7114b0c4f2a42893adabfd72e9616de
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, application, Edge, CoreWebView2, CoreWebView2Controller, contrôle de navigateur, Edge html, Microsoft. Web. WebView2. Core. CoreWebView2PhysicalKeyStatus
+ms.openlocfilehash: 280fe2d970d78bf1ea7a79b21f5081510ee27053
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698596"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10878770"
 ---
 # Struct Microsoft. Web. WebView2. Core. CoreWebView2PhysicalKeyStatus 
 
 Espace de noms: Microsoft. Web. WebView2. Core \
-Assembly: Microsoft. Web. WebView2. Core. dll
+Assemblage: Microsoft.Web.WebView2.Core.dll
 
 Structure représentant les informations contenues dans le LPARAM fourni à un événement de touche Win32.
 

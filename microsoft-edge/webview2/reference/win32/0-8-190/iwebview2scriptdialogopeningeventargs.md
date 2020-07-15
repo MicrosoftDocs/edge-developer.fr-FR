@@ -1,21 +1,21 @@
 ---
 description: Héberger le contenu Web dans votre application Win32 avec le contrôle Microsoft Edge WebView2
-title: Applications Microsoft Edge WebView2 pour Win32
+title: 0.8.355-WebView2 C++ Win32 IWebView2ScriptDialogOpeningEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2019
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge
-ms.openlocfilehash: 867a8f3656b04a566708fc6fc1a24e80b967c1e2
-ms.sourcegitcommit: 07cda56425e5fdf90eeb3972e17041261bf720cd
+ms.openlocfilehash: 052f380caadf08814cc9364f3ccfbb5251fa7c7e
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "10653276"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10878196"
 ---
-# interface IWebView2ScriptDialogOpeningEventArgs 
+# 0.8.355-interface IWebView2ScriptDialogOpeningEventArgs 
 
 > [!NOTE]
 > Cette interface peut être modifiée ou indisponible pour les versions ultérieures SDK version 0.8.355. Reportez-vous à [référence](../../../webview2-api-reference.md) pour la dernière référence d’API.
