@@ -1,21 +1,21 @@
 ---
 description: Héberger le contenu Web dans votre application Win32 avec le contrôle Microsoft Edge WebView2
-title: Applications Microsoft Edge WebView2 pour Win32
+title: 0.9.515-WebView2 Win32 C++ global
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: 8a684d2a00aa1ae580a3b4391c9f6037dc8f9085
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: 38ebe9bb98ecb58fb9ec52d11e6885ac0b06cdd2
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697069"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10879729"
 ---
-# Globals 
+# 0.9.515-global 
 
 > [!NOTE]
 > Cette référence peut être modifiée ou indisponible pour les versions ultérieures au SDK version 0.9.515. Reportez-vous à la rubrique [référence d’API WebView2](../../../webview2-api-reference.md) pour obtenir les dernières références d’API.
@@ -62,7 +62,7 @@ Utilisez CreateCoreWebView2EnvironmentWithOptions.
 
 Exportation de fichier DLL pour créer un environnement WebView2 avec une version personnalisée d’Edge, un répertoire de données utilisateur et/ou des options supplémentaires.
 
-browserExecutableFolder est le chemin d’accès relatif au dossier qui contient le bord incorporé. Le bord intégré peut être obtenu en copiant la version nommée dossier d’une bordure installée, telle que 73.0.52.0 sous-dossier d’un bord 73.0.52.0 installé. Le dossier doit comporter msedge. exe, msedge. dll, et ainsi de suite. Utilisez la valeur null ou une chaîne vide pour browserExecutableFolder pour créer un WebView à l’aide de Edge installé sur l’ordinateur, auquel cas l’API tente de rechercher une version compatible de Edge installée sur l’ordinateur en fonction de la préférence de canal qui tente de rechercher la première installation par utilisateur, puis par installation par machine.
+browserExecutableFolder est le chemin d’accès relatif au dossier qui contient le bord incorporé. Le bord intégré peut être obtenu en copiant la version nommée dossier d’une bordure installée, telle que 73.0.52.0 sous-dossier d’un bord 73.0.52.0 installé. Le dossier doit contenir msedge.exe, msedge.dll, etc. Utilisez la valeur null ou une chaîne vide pour browserExecutableFolder pour créer un WebView à l’aide de Edge installé sur l’ordinateur, auquel cas l’API tente de rechercher une version compatible de Edge installée sur l’ordinateur en fonction de la préférence de canal qui tente de rechercher la première installation par utilisateur, puis par installation par machine.
 
 L’ordre de recherche de canal par défaut est stable, bêta, dev et Canaries. S’il existe une substitution WEBVIEW2_RELEASE_CHANNEL_PREFERENCE variable d’environnement ou une valeur de Registre releaseChannelPreference applicable ayant la valeur 1, l’ordre de recherche de canal est inversé.
 
@@ -99,7 +99,7 @@ WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER
 
 Dans le cas d’une valeur non vide, cela signifie que l’application WebView est lancée sous un débogueur de script qui prend également en charge les applications hébergées sur plusieurs vues Web. La valeur est utilisée comme identificateur pour un canal nommé qui sera ouvert et écrit lors de la création d’un nouveau WebView par l’application hôte. La charge utile correspond à celle de la cible JSON du débogage à distance et peut être utilisée par le débogueur externe pour être attachée à une instance WebView spécifique. Le format du canal créé par le débogueur doit être `\\.\pipe\WebView2\Debugger\{app_name}\{pipe_name}` le suivant:
 
-* `{app_name}` est le nom de fichier exe de l’application hôte (par exemple, WebView2Example. exe)
+* `{app_name}` est le nom de fichier exe de l’application hôte, par exemple WebView2Example.exe
 
 * `{pipe_name}` est la valeur définie pour WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER.
 

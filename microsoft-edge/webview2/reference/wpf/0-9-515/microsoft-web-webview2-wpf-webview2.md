@@ -1,24 +1,24 @@
 ---
-description: Héberger le contenu Web dans votre application Win32 avec le contrôle Microsoft Edge WebView2
-title: Applications Microsoft Edge WebView2 pour Win32
+description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos applications natives avec le contrôle Microsoft Edge WebView2
+title: Microsoft. Web. WebView2. WPF. WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/27/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: a0030e1a2a77d65963bd8333f2071485ab2fe308
-ms.sourcegitcommit: 83efa259be89cc773a82751242495a0a919d54cd
+keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, application, Edge, CoreWebView2, CoreWebView2Controller, contrôle de navigateur, Edge html, Microsoft. Web. WebView2. WPF. WebView2
+ms.openlocfilehash: 2dd7bf1035cf5254f4668070d56d2bd2405f1276
+ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "10687796"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10880261"
 ---
 # Classe Microsoft. Web. WebView2. WPF. WebView2 
 
 Espace de noms: Microsoft. Web. WebView2. WPF \
-Assembly: Microsoft. Web. WebView2. WPF. dll
+Assemblage: Microsoft.Web.WebView2.Wpf.dll
 
 ```
 class Microsoft.Web.WebView2.Wpf.WebView2
@@ -194,7 +194,7 @@ Exécute le code JavaScript du paramètre javaScript du document de niveau supé
 
 > Tâche asynchrone publique< chaîne > [ExecuteScriptAsync](#executescriptasync)(chaîne JavaScript)
 
-Équivalent à l’appel de CoreWebView2. ExecuteScriptAsync sur CoreWebView2
+Équivalent pour appeler CoreWebView2.ExecuteScriptAsync sur CoreWebView2
 
 ##### Exceptions
 * `InvalidOperationException` Levée si CoreWebView2 n’a pas encore été initialisé.
