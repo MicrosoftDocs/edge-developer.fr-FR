@@ -1,30 +1,30 @@
 ---
 description: Héberger le contenu Web de votre application Win32 avec le contrôle WebView 2 de Microsoft Edge
-title: Applications WebView 2 de Microsoft Edge 2 pour les applications Win32
+title: Référence sur l’API Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/08/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: 408680cb96fc334660ea5dafd9eee7bd20c90550
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur
+ms.openlocfilehash: 261bf55bf868c77ecd3db3c1e6302271c211f1ce
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10698182"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882757"
 ---
-# Référence
+# Référence sur l’API Microsoft Edge WebView2  
 
-Le contrôle Microsoft Edge WebView2 vous permet d’héberger le contenu Web de votre application à l’aide de [Microsoft Edge \ (chrome \)](https://www.microsoftedgeinsider.com) en tant que moteur de rendu.  Pour plus d’informations, voir [vue d’ensemble de Microsoft Edge WebView2](./index.md) et [mise en route d’WebView2](gettingstarted/win32.md).
+Le contrôle Microsoft Edge WebView2 vous permet d’héberger le contenu Web de votre application à l’aide de [Microsoft Edge (chrome)](https://www.microsoftedgeinsider.com) comme moteur de rendu.  Pour plus d’informations, voir [vue d’ensemble de Microsoft Edge WebView2](./index.md) et [mise en route d’WebView2](gettingstarted/win32.md).  
 
-Sélectionnez la langue et l’infrastructure de WebView2 que vous souhaitez utiliser ci-dessous:
+Sélectionnez la langue et l’infrastructure de WebView2 que vous voulez utiliser dans la liste suivante.  
 
-## Langages et infrastructures
+## Langages et infrastructures  
 
-* [Win32 C++](reference/win32/0-9-538-reference-webview2.md)
-* .NET
-  * [Core](reference/dotnet/0-9-538-reference-webview2.md)
-  * [WindowsForms](reference/winforms/0-9-515-reference-webview2.md)
-  * [WPF](reference/wpf/0-9-515-reference-webview2.md)
+*   [Win32 C++](reference/win32/0-9-538-reference-webview2.md)  
+*   .NET  
+    *   [Core](reference/dotnet/0-9-538-reference-webview2.md)  
+    *   [WindowsForms](reference/winforms/0-9-515-reference-webview2.md)  
+    *   [WPF](reference/wpf/0-9-515-reference-webview2.md)  

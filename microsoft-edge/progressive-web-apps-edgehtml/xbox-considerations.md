@@ -1,20 +1,20 @@
 ---
 description: Assurez-vous que votre PWA offre une excellente interface pour Xbox
-title: Personnaliser votre PWA pour Windows
+title: Applications Web progressives pour Xbox One
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: applications Web progressives, PWA, Edge, Windows, UWP, Xbox, Xbox One, TVJS
-ms.openlocfilehash: 8c2660c8821826660d2030f832ae449ff4a061ad
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: dfa2b2d252bb788c0010017de57ab147d407c5f7
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10566630"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882852"
 ---
-# Applications Web progressives pour Xbox One
+# Applications Web progressives pour Xbox One  
 
 Vous pouvez prolonger une application Web afin de la rendre disponible en tant qu’application Xbox One via le Microsoft Store tout en continuant à utiliser vos infrastructures existantes, votre réseau de distribution de contenu et votre serveur principal.  Comme toutes les applications de plateforme Windows universelle (UWP), les applications Web progressives (PWAs) qui s’exécutent sur Xbox One peuvent également appeler des API Windows 10 natives.  Un certain nombre de PWAs sont déjà disponibles pour Xbox One, en particulier dans la catégorie des [applications de lecture de contenu multimédia](#media-pwas-on-xbox).  
 
@@ -28,10 +28,10 @@ Vous êtes maintenant prêt à déployer votre application à des fins de test �
 
 ### Option 1: concepteur PWA
 
-Le [Concepteur PWA](https://www.pwabuilder.com/) est une application nœud. js que vous pouvez installer à partir de node Package Manager (NPM). Il utilise les métadonnées de votre site Web pour générer des applications hébergées natives sur Android, iOS et Windows. Si votre site comporte déjà un [manifeste de l’application Web](https://developer.mozilla.org/docs/Web/Manifest), le concepteur PWA l’utilise pour générer des packages d’installation spécifiques à la plateforme. Dans le cas contraire, le concepteur PWA génère un fichier *Manifest. JSON* de base en fonction des caractéristiques de votre site.
+Le [Concepteur PWA](https://www.pwabuilder.com/) est une application Node.js que vous pouvez installer à partir de node Package Manager (NPM). Il utilise les métadonnées de votre site Web pour générer des applications hébergées natives sur Android, iOS et Windows. Si votre site comporte déjà un [manifeste de l’application Web](https://developer.mozilla.org/docs/Web/Manifest), le concepteur PWA l’utilise pour générer des packages d’installation spécifiques à la plateforme. Dans le cas contraire, le concepteur Project générera une *manifest.jsde base sur* un fichier en fonction des caractéristiques de votre site.
 
 #### Configuration requise
- - [Node. js](https://nodejs.org/en/), qui inclut NPM.
+ - [Node.js](https://nodejs.org/en/), qui inclut NPM.
 
 #### Configuration
 
@@ -153,8 +153,8 @@ Au moment de l’écriture, la [ `cbcs` prise en charge du codage est limitée](
 
 
 
-## Voir également
-[Vidéo d’arête du Sud](https://github.com/Microsoft/uwp-experiences/tree/master/apps/video): exemple d’application de vidéo pour Xbox créée avec réagi. js et hébergée sur un serveur Web.
+## Articles associés
+[Vidéo d’arête du Sud](https://github.com/Microsoft/uwp-experiences/tree/master/apps/video): exemple d’application vidéo pour Xbox créée avec des React.js et hébergée sur un serveur Web.
 
 [Conception pour Xbox et TV](/windows/uwp/design/devices/designing-for-tv): concevez votre application de plateforme Windows universelle (UWP) de façon à ce qu’elle s’affiche correctement et qu’elle fonctionne bien sur les écrans Xbox One et de télévision.
 

@@ -1,17 +1,17 @@
 ---
-title: DevTools pour les débutants
+title: 'DevTools pour les débutants: prendre en main CSS'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 0064f0427b6bd5689e888cccfe2c650492898bb2
-ms.sourcegitcommit: 8bfa239274e7a4856b961b9cf163b08d96463c10
+ms.openlocfilehash: fba049a20a7b5f981130b4d9e60c37b07dc7e092
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "10581593"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882736"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -390,7 +390,7 @@ Que faire si vous souhaitez changer de style `index.html` ?  Que se passe-t-il s
     
     > ##### Figure 26  
     > `contact.html`  
-    > ![contact. html][ImageCssExternal02]  
+    > ![contact.html][ImageCssExternal02]  
     
 1.  Supprimez tous `<style>` les éléments entre et `</style>` , y compris `<style>` et `</style>` .  
     
@@ -458,7 +458,7 @@ Que faire si vous souhaitez changer de style `index.html` ?  Que se passe-t-il s
     
     > ##### Figure 33  
     > Liaison vers `style.css` dans `contact.html`  
-    > ![Liaison vers style. CSS dans le fichier contact. html][ImageCssExternal09]  
+    > ![Liaison vers style. CSS en contact.html][ImageCssExternal09]  
 
 1.  Accédez à l' **onglet Live**.  La page d’accueil possède désormais la même police que la dernière section et une section de navigation bleue.  
     
@@ -486,13 +486,13 @@ Les **infrastructures CSS** sont des collections de styles intégrées par d’a
     
     > ##### Figure 36  
     > Liaison vers l’infrastructure dans `contact.html`  
-    > ![Liaison vers l’infrastructure dans le fichier contact. html][ImageCssFramework1]  
+    > ![Liaison vers l’infrastructure dans contact.html][ImageCssFramework1]  
     
 1.  Collez également le code `index.html` .  
     
     > ##### Figure 37  
     > Liaison vers l’infrastructure dans `index.html`  
-    > ![Liaison vers l’infrastructure dans index. html][ImageCssFramework2]  
+    > ![Liaison vers l’infrastructure dans index.html][ImageCssFramework2]  
     
 1.  Revenez à l’onglet Live pour afficher vos modifications.  Même si la couleur d’arrière-plan de la `<nav>` police et la police des `li a` éléments sont identiques, la police des autres éléments a changé.  
     
@@ -514,13 +514,13 @@ Dans la dernière section, vous avez ajouté des données d’amorçage dans vos
     
     > ##### Figure 39  
     > Ajouter des classes dans `index.html`  
-    > ![Ajout de classes dans index. html][ImageCssJumbotron1]  
+    > ![Ajouter des classes dans index.html][ImageCssJumbotron1]  
     
 1.  Ajoutez le code à votre `<header>` balise `contact.html` .  
     
     > ##### Figure 40  
     > Ajouter des classes dans `contact.html`  
-    > ![Ajout de classes dans contacts. html][ImageCssJumbotron2]  
+    > ![Ajouter des classes dans contact.html][ImageCssJumbotron2]  
     
 1.  Affichez vos modifications sous l’onglet Live.  Il y a une grande zone grise dans votre en-tête.  
     
@@ -611,7 +611,7 @@ Félicitations!  C’est terminé!
 [ImageCssSetup2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-setup2.msft.png "Figure 4: menu options de Project"  
 [ImageCssSetup3]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-setup3.msft.png "Figure 5: onglet Live"  
 [ImageCssStyled]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-red_paragraph.msft.png "Figure 6: styles avec CSS"  
-[ImageCssInline1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-inline1.msft.png "Figure 7: index. html"  
+[ImageCssInline1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-inline1.msft.png "Figure 7: index.html"  
 [ImageCssInline2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-inline2.msft.png "Figure 8: la couleur d’arrière-plan derrière les liens accueil et contact est désormais bleue"  
 [ImageCssInternal1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-internal1.msft.png "Figure 9: page de contact"  
 [ImageCssInternal2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-internal2.msft.png "Figure 10: la police des liens accueil et contact a changé"  
@@ -630,21 +630,21 @@ Félicitations!  C’est terminé!
 [ImageCssRule4]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-rule4.msft.png "Figure 23: saisie en vert"  
 [ImageCssRule5]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-rule5.msft.png "Figure 24: survol du lien Accueil pour afficher son arrière-plan vert"  
 [ImageCssExternal01]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external1.msft.png "Figure 25: après le rechargement de la page, les modifications apportées à DevTools ont disparu"  
-[ImageCssExternal02]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external2.msft.png "Figure 26: contact. html"  
+[ImageCssExternal02]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external2.msft.png "Figure 26: contact.html"  
 [ImageCssExternal03]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external3.msft.png "Figure 27: la balise de style a été supprimée"  
 [ImageCssExternal04]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external4.msft.png "Figure 28: le style intraligne a été supprimé de l’élément navigation"  
 [ImageCssExternal05]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external5.msft.png "Figure 29: boîte de dialogue nouveau fichier"  
 [ImageCssExternal06]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external6.msft.png "Figure 30: saisie de style. CSS"  
 [ImageCssExternal07]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external7.msft.png "Figure 31: ajout de code au style. CSS"  
 [ImageCssExternal08]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external8.msft.png "Figure 32: création d’un lien vers style. CSS"  
-[ImageCssExternal09]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external9.msft.png "Figure 33: création d’un lien vers style. CSS dans le fichier contact. html"  
+[ImageCssExternal09]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external9.msft.png "Figure 33: création d’un lien vers style. CSS en contact.html"  
 [ImageCssExternal10]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external10.msft.png "Figure 34: page d’accueil"  
 [ImageCssExternal11]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-external11.msft.png "Figure 35: page de contact"  
-[ImageCssFramework1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework1.msft.png "Figure 36: création d’un lien vers l’infrastructure dans le fichier contact. html"  
-[ImageCssFramework2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework2.msft.png "Figure 37: liaisons vers l’infrastructure dans index. html"  
+[ImageCssFramework1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework1.msft.png "Figure 36: création d’un lien vers l’infrastructure dans contact.html"  
+[ImageCssFramework2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework2.msft.png "Figure 37: création d’un lien vers l’infrastructure dans index.html"  
 [ImageCssFramework3]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-framework3.msft.png "Figure 38: une partie de la police de la page d’accueil a changé en raison de l’infrastructure"  
-[ImageCssJumbotron1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron1.msft.png "Figure 39: ajout de classes dans index. html"  
-[ImageCssJumbotron2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron2.msft.png "Figure 40: ajout de classes dans contact. html"  
+[ImageCssJumbotron1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron1.msft.png "Figure 39: ajout de classes dans index.html"  
+[ImageCssJumbotron2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron2.msft.png "Figure 40: ajout de classes dans contact.html"  
 [ImageCssJumbotron3]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-jumbotron3.msft.png "Figure 41: l’en-tête est désormais entouré d’un cadre gris"  
 [ImageCssAlign1]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-align1.msft.png "Figure 42: ajout de la classe Container-fluidiques"  
 [ImageCssAlign2]: /microsoft-edge/devtools-guide-chromium/media/beginners-css-align2.msft.png "Figure 43: ajout d’une ligne"  
@@ -658,7 +658,7 @@ Félicitations!  C’est terminé!
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"  
 
-[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index. html-cuit-Amphibian | Problème"  
+[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index.html-cuisin-Amphibian | Problème"  
 
 [MDNCssFirstSteps]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS "Premiers pas dans la feuille de style CSS | MDN"  
 

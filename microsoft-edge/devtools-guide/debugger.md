@@ -1,21 +1,21 @@
 ---
 description: Utilisez le débogueur pour parcourir votre code et résoudre les problèmes.
-title: DevTools-Debugger
+title: Débogueur-DevTools (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, débogueur, débogage, points d’arrêt, espions, travailleurs de service, API du cache, stockage Web, cookies
 ms.custom: seodec18
-ms.openlocfilehash: f82fbb057a3ad1027309d89db1a15dbcbea31292
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 722277618cd8d6d5d6dba4f2a8bd3a28b6466f77
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10566374"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882918"
 ---
-# Débogueur
+# Débogueur-DevTools (EdgeHTML)
 
 Servez-vous du **débogueur** pour parcourir le code, définir des espions et des points d’arrêt, modifier votre code et examiner vos caches. Testez et résolvez votre code en procédant comme suit:
 
@@ -97,7 +97,7 @@ Pour effectuer le suivi des bibliothèques au sein des sessions de débogage, vo
 
 Le bouton **Afficher/masquer les cartes sources** est activé pour le code écrit dans un langage qui est compilé en JavaScript ou CSS et *fournit un mappage de fichier* intermédiaire (mappage de fichier intermédiaire à la source d’origine). Cette option indique au débogueur de présenter la source d’origine à utiliser pour le débogage (plutôt que le fichier compilé qui s’exécute *réellement* dans le navigateur).
 
-Le DevTools vérifie si le compilateur qui a généré le fichier JavaScript a ajouté un commentaire avec le nom du fichier de carte. Par exemple, si un compilateur a compressé *MyFile. js* dans *MyFile. min. js*, il peut également générer un fichier de carte, *MyFile. min. js. map* et inclure un commentaire dans le fichier compressé comme suit:
+Le DevTools vérifie si le compilateur qui a généré le fichier JavaScript a ajouté un commentaire avec le nom du fichier de carte. Par exemple, si un compilateur a comprimé *myfile.js* à *myfile.min.js*, il peut également générer un fichier de carte, *myfile.min.js. map* et inclure un commentaire dans le fichier compressé comme suit:
 
 ```JavaScript
 //# sourceMappingURL=myfile.min.js.map

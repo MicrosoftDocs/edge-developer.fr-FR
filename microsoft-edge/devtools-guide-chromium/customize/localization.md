@@ -1,19 +1,19 @@
 ---
-title: Personnaliser Microsoft Edge DevTools
+title: Modifier les paramètres de langue de DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, localisation, loc, langue
-ms.openlocfilehash: cd95e965e14d5214842a74e798d9d3a8ae90c193
-ms.sourcegitcommit: 738a012a2e0edfc63315c2df77b170e26ad9169b
+ms.openlocfilehash: 83b536c1699b4052857d206456895ac568cf4faa
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "10604156"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882722"
 ---
-# Faire correspondre à la langue du navigateur  
+# Modifier les paramètres de langue de DevTools  
 
 Les outils de développement correspondent à la langue de votre navigateur par défaut, s’il s’agit de l’une des dix langues actuellement prises en charge \ (en plus de l’anglais).  
 
@@ -58,16 +58,12 @@ Les outils de développement correspondent à la langue de votre navigateur par 
    :::column-end:::
 :::row-end:::  
 
-> #### Figure1  
-> DevTools en japonais  
-> ![DevTools en japonais][ImageJpDevTools]  
+:::image type="complex" source="./media/localization-jp.png" alt-text="DevTools en japonais" lightbox="./media/localization-jp.png":::
+   DevTools en japonais  
+:::image-end:::  
 
 Si vous voulez rétablir devtools en anglais, accédez à [paramètres devtools][DevtoolschromiumCustomizeIndexSettings] ou appuyez sur `F1`  >  **Préférences** , puis désactivez la case à cocher **faire correspondre** à la langue du navigateur.  
 
-<!-- image links -->
-
-[ImageJpDevTools]: ./media/localization-jp.png "Figure 1: DevTools en japonais"  
-
 <!-- links -->  
 
-[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "Paramètres-personnaliser Microsoft Edge DevTools"  
+[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "Paramètres-personnaliser Microsoft Edge DevTools | Documents Microsoft"  

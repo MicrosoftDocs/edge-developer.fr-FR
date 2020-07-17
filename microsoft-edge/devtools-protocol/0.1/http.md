@@ -1,20 +1,20 @@
 ---
 description: La version 0,1 du protocole Microsoft Edge DevTools prend en charge les points de terminaison HTTP suivants.
-title: Points de terminaison HTTP de la version 0,1 du protocole DevTools
+title: Protocoles de points de terminaison HTTPs DevTools, version 0,1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 5b1cf0d347fec5bfe20b2574afcd635ee569c92d
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: a9d40772b8175790c034ee67236c4887d0831785
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565483"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882869"
 ---
-# Points de terminaison HTTPs du protocole DevTools
+# Protocoles de points de terminaison HTTPs DevTools, version 0,1 (EdgeHTML)  
 
 > [!NOTE]
 > Le protocole Microsoft Edge DevTools fonctionne uniquement sur les [mises à jour de Windows 10 d’avril 2018](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) et les versions ultérieures de [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) .

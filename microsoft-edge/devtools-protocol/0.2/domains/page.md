@@ -1,19 +1,20 @@
 ---
 description: Référence pour le domaine de la page. Les actions et événements liés à la page inspectée appartiennent au domaine de la page.
-title: Page Domain-DevTools Protocol version 0,2
-author: pelavall
-ms.author: pelavall
-ms.date: 8/17/2018
+title: Page Domain-DevTools Protocol version 0,2 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.openlocfilehash: 688cc1fcfce0b81c5eed0c858a4a60b4754c49a4
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 864515eefbcb809e280f2ab1d81015018272c398
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565467"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882841"
 ---
-# Page
+# Page Domain-DevTools Protocol version 0,2 (EdgeHTML)  
+
 Les actions et événements liés à la page inspectée appartiennent au domaine de la page.
 
 | | |

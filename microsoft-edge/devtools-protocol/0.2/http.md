@@ -1,19 +1,19 @@
 ---
 description: La version 0,2 du protocole Microsoft Edge DevTools prend en charge les points de terminaison HTTP suivants.
-title: Points de terminaison HTTP de la version 0,2 du protocole Microsoft Edge DevTools
+title: Points de terminaison HTTPs de la version 0,2 du protocole Microsoft Edge DevTools (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.openlocfilehash: cc3d0156d92ab479168e0b588ae2b7c9faa7e58f
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: eb5b29e4d8149f511d8a7cbca3da72391a13e449
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565456"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882857"
 ---
-# Points de terminaison HTTPs du protocole DevTools
+# Points de terminaison HTTPs de la version 0,2 du protocole Microsoft Edge DevTools (EdgeHTML)  
 
 > [!NOTE]
 > La version 0,2 du protocole Microsoft Edge DevTools fonctionne uniquement avec la [mise à jour de Windows 10 d’octobre 2018]() et les versions ultérieures de [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) .

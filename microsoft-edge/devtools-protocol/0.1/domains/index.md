@@ -1,21 +1,23 @@
 ---
 description: Liste de références pour les domaines pris en charge dans la version 0,1 du protocole Microsoft Edge DevTools.
-title: Domains-protocole DevTools version 0,1
-author: pelavall
-ms.author: pelavall
-ms.date: 12/15/2017
+title: DevTools protocole Domains-DevTools Protocol version 0,1 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: b3cf3411a8402b7407012eb789f8bf267b4997a8
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: de816e2b07838ba1b6151967ff7b8751789c60ea
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565487"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882946"
 ---
-# Domaines de protocole DevTools
-## [Débogueur](debugger.md)
+# DevTools protocole Domains-DevTools Protocol version 0,1 (EdgeHTML)  
+
+## [Débogueur](debugger.md)  
+
 Le domaine du débogueur expose les fonctionnalités de débogage JavaScript. Elle permet de définir et de supprimer des points d’arrêt, de parcourir l’exécution, d’explorer les traces de pile, etc.
 ## [Page](page.md)
 Les actions et événements liés à la page inspectée appartiennent au domaine de la page.

@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: applications Web progressives, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: 482f498e246ee265424f7b80ff3cd67f78501ee2
-ms.sourcegitcommit: 9169d784485e3cb0b1987a8f395c4bb688bd9b2e
+ms.openlocfilehash: 90740bac07ebfd74f89e2524e6955621e1b09b05
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "10583034"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882806"
 ---
 # Applications Web progressives sur Windows  
 
@@ -86,33 +86,31 @@ Lorsque vous générez une API standard Web pour cibler une application Web, vot
 > [!IMPORTANT]
 > Pour personnaliser PWAs en particulier pour Windows 10 qui effectue des demandes d’API WinRT en utilisant JavaScript, voir la [documentation spécifique aux fonctionnalités de EdgeHTML de Project Web App][PwaEdgehtmlIndex].  En savoir plus sur le test de votre PWA sur Windows 10 et son distribution dans le Microsoft Store.  
 
+> [!NOTE]
+> Pour obtenir une vue d’ensemble des avantages de Project Web App, des fonctionnalités à venir et des courtes démonstrations, consultez la [session de création 2020][BuildVideo] . 
+
 ## Configuration requise  
 
 Pour être exécuté en tant que PWA, votre application Web hébergée sur un serveur doit inclure la configuration minimale requise.  
 
-|  | Condition requise | Détails | 
-|:--- |:--- |:--- |  
-| X | [HTTPS][WikiHttps] | Protégez vos utilisateurs en fournissant une connexion sécurisée pour la communication avec le serveur ou l’application.  Les travailleurs de service et autres technologies PWA fonctionnent uniquement avec les ressources Web fournies par le biais d’une connexion sécurisée (ou à partir `localhost` de à des fins de débogage \).  |  
-| X | [Travailleurs de service][MDNServiceWorkerApi] | Les threads de travail de service permettent de faire office de proxy réseau entre votre serveur et votre application cliente afin de fournir une prise en charge hors connexion, une mise en cache de ressources, des notifications de transmission, une synchronisation en arrière-plan  |  
-| X | [Manifeste de l’application Web][MDNWebAppManifest] | Fournissez un fichier de métadonnées JSON décrivant les informations clés relatives à votre application Web (par exemple, les icônes, le langage et le point d’entrée d’URL \), de sorte que Windows 10 et d’autres plateformes hôtes puissent fournir à vos utilisateurs de Project Web App une interface d’utilisateur d’application native et installable.  |  
+| Condition requise | Détails | 
+|:--- |:--- |  
+| [HTTPS][WikiHttps] | Protégez vos utilisateurs en fournissant une connexion sécurisée pour la communication avec le serveur ou l’application.  Les travailleurs de service et autres technologies PWA fonctionnent uniquement avec les ressources Web fournies par le biais d’une connexion sécurisée (ou à partir `localhost` de à des fins de débogage \).  |  
+| [Worker du service][MDNServiceWorkerApi] | Les threads de travail de service permettent de faire office de proxy réseau entre votre serveur et votre application cliente afin de fournir une prise en charge hors connexion, une mise en cache de ressources, des notifications de transmission, une synchronisation en arrière-plan  |  
+| [Manifeste de l’application Web][MDNWebAppManifest] | Fournissez un fichier de métadonnées JSON décrivant les informations clés relatives à votre application Web (par exemple, les icônes, le langage et le point d’entrée d’URL \), de sorte que Windows 10 et d’autres plateformes hôtes puissent fournir à vos utilisateurs de Project Web App une interface d’utilisateur d’application native et installable.  |  
 
 Pour être une bonne solution de Project Web App, votre application doit également présenter la configuration requise suivante.  
 
-|  | Condition requise | Détails | 
-|:--- |:--- |:--- |  
-| X | [Compatibilité entre les navigateurs][MDNCrossBrowserTesting] | Assurez-vous que le contrôle PWA fonctionne en effectuant des [tests][MicrosoftDeveloperEdgeToolsRemote] dans différents navigateurs et environnements.  |  
-| X | [Conception réactive][WikiResponsiveWebDesign] | Utilisez des dispositions fluides et des images flexibles grâce à une [grille][MDNCssGridLayout]CSS, des [Flexbox][MDNCssFlexibleBoxLayout], [des feuilles CSS et des][MDNCssGridLayout] [Flexbox][MDNCssFlexibleBoxLayout] , des [requêtes multimédias][MDNMediaQueries]et des [images réactives][MDNResponsiveImages] pour adapter votre expérience utilisateur à l’appareil de l’utilisateur.  Utilisez les [Outils d’émulation d’appareil][DevToolsGuide|::ref1::|] de votre navigateur pour effectuer des tests en local, ou configurez une session de [débogage à distance][DevToolsProtocolClientsEdgeDevToolsPreview] pour tester directement sur un appareil cible.  |  
-| X | [Liaison Poussée][WikiDeepLinking] | Acheminez chaque page de votre site vers une URL unique de sorte que les utilisateurs existants puissent vous aider à renforcer un public encore plus large grâce au partage de réseaux sociaux.  |  
-| X | [Bonnes pratiques][Webhint] | Utilisez les outils de qualité de code comme le [webhint][Webhint] de type Lint pour optimiser l’efficacité, la robustesse, la sécurité et l’accessibilité de votre application.  |  
-| X | [Liste de vérification de Project Web App][WebDevGoodPwaChecklist] | Vérifiez votre PWA par rapport à la liste de vérification de base sur Google Baseline.  |  
+| Condition requise | Détails | 
+|:--- |:--- |  
+| [Compatibilité entre les navigateurs][MDNCrossBrowserTesting] | Assurez-vous que le contrôle PWA fonctionne en effectuant des [tests][MicrosoftDeveloperEdgeToolsRemote] dans différents navigateurs et environnements.  |  
+| [Conception réactive][WikiResponsiveWebDesign] | Utilisez des dispositions fluides et des images flexibles grâce à une [grille][MDNCssGridLayout]CSS, des [Flexbox][MDNCssFlexibleBoxLayout], [des feuilles CSS et des][MDNCssGridLayout] [Flexbox][MDNCssFlexibleBoxLayout] , des [requêtes multimédias][MDNMediaQueries]et des [images réactives][MDNResponsiveImages] pour adapter votre expérience utilisateur à l’appareil de l’utilisateur.  Utilisez les [Outils d’émulation d’appareil][DevToolsGuide|::ref1::|] de votre navigateur pour effectuer des tests en local, ou configurez une session de [débogage à distance][DevToolsProtocolClientsEdgeDevToolsPreview] pour tester directement sur un appareil cible.  |  
+| [Liaison Poussée][WikiDeepLinking] | Acheminez chaque page de votre site vers une URL unique de sorte que les utilisateurs existants puissent vous aider à renforcer un public encore plus large grâce au partage de réseaux sociaux.  |  
+| [Bonnes pratiques][Webhint] | Utilisez les outils de qualité de code comme le [webhint][Webhint] de type Lint pour optimiser l’efficacité, la robustesse, la sécurité et l’accessibilité de votre application.  |  
+| [Liste de vérification de Project Web App][WebDevGoodPwaChecklist] | Vérifiez votre PWA par rapport à la liste de vérification de base sur Google Baseline.  |  
 
 Si vous voulez transformer votre document PWA en application [Microsoft Store][MicrosoftDeveloperStore] , accédez à la documentation sur les [applications Web progressives (EdgeHTML)][PwaEdgehtmlMicrosoftStore] .  
-
-## Disponibilité actuelle  
-
-La prise en charge du moteur de navigateur pour les demandes d’applications Web progressives pour un certain nombre de composants architecturaux, l’infrastructure réseau la plus importante sous-jacente de l' [API FETCH][MDNFetchApi].  
-
-Dans le cadre de l’utilisation de Microsoft Edge \ (chrome), la plateforme de navigateur prend en charge les fonctionnalités suivantes sur les appareils dans lesquels Microsoft Edge \ (chrome \) est pris en charge.  
+  
 
 <!-- image links -->  
 
@@ -130,7 +128,7 @@ Dans le cadre de l’utilisation de Microsoft Edge \ (chrome), la plateforme de 
 
 <!-- links -->  
 
-[DevToolsProtocolClientsEdgeDevToolsPreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Clients du protocole Microsoft Edge DevTools Preview-DevTools"  
+[DevToolsProtocolClientsEdgeDevToolsPreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Aperçu DevTools Microsoft Edge - Clients de protocole DevTools "  
 [DevToolsGuideEmulation]: ../devtools-guide/emulation.md "Émulation"  
 [DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps.md "Déboguer des applications Web progressives"  
 [DevGuideWhatsNewEdgeHtml17]: ../dev-guide/whats-new/edgehtml-17.md "Nouveautés de EdgeHTML 17"  
@@ -181,6 +179,8 @@ Dans le cadre de l’utilisation de Microsoft Edge \ (chrome), la plateforme de 
 [MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "API du travailleur de service | MDN"  
 [MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager | MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Manifeste de l’application Web | MDN"  
+
+[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "Vidéo sur Project Web App"
 
 [PWABuilder]: https://www.pwabuilder.com "PWABuilder"  
 

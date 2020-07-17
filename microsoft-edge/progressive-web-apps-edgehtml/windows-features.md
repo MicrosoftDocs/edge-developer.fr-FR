@@ -1,18 +1,18 @@
 ---
 description: Améliorer progressivement votre PWA pour Windows avec les fonctionnalités d’application natives
-title: Personnaliser votre PWA pour Windows
+title: Personnaliser votre PWA (EdgeHTML) pour Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: applications Web progressives, PWA, Edge, Windows, WinRT, UWP, EdgeHTML
-ms.openlocfilehash: 5bad708db5b13517fd1887214a5e1d5457796ee2
-ms.sourcegitcommit: e07de36ee9fbe20422ffc2c62b98839851e1b02b
+ms.openlocfilehash: 8ba682b03182194a773568254b66c3616bf4c3e2
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "10604010"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882785"
 ---
 # Personnaliser votre PWA (EdgeHTML) pour Windows  
 
@@ -47,7 +47,7 @@ Configurez votre environnement de développement d’applications Windows dans V
     ![Boîte de dialogue de sélection Visual Studio pour les builds cibles de projet UWP](media/vs-target-min-version.png)  
 
     Votre nouveau projet se charge avec le concepteur package. appxmanifest ouvert.  C’est ici que vous configurez les détails de votre application, notamment l’identité du package, les dépendances du package, les fonctionnalités requises, les éléments visuels et les points d’extensibilité.  Il s’agit d’une version temporaire facilement configurable du manifeste du package d’application utilisée lors du développement de l’application.  
-    Lorsque vous générez votre projet d’application, [Visual Studio génère un fichier AppxManifest. xml][UwpSchemasAppxpackageUapmanifestschemaGeneratePackageManifest] à partir de ces métadonnées, qui est utilisé pour installer et exécuter votre application.  Chaque fois que vous mettez à jour votre `package.appxmanifest` fichier, veillez à régénérer le projet afin que les deux apparaissent dans votre `AppxManifest.xml` Runtime.  
+    Lorsque vous générez votre projet d’application, [Visual Studio génère un fichier AppxManifest.xml][UwpSchemasAppxpackageUapmanifestschemaGeneratePackageManifest] à partir de ces métadonnées, qui est utilisé pour installer et exécuter votre application.  Chaque fois que vous mettez à jour votre `package.appxmanifest` fichier, veillez à régénérer le projet afin que les deux apparaissent dans votre `AppxManifest.xml` Runtime.  
 
 1.  Dans le volet de l' **application** Project Designer, entrez l’URL de votre fichier `Start page` .
 
@@ -69,7 +69,7 @@ Configurez votre environnement de développement d’applications Windows dans V
     Vous pouvez exécuter et déboguer votre PWA en tant qu’application Windows 10.  Si vous utilisez un site localhost pour suivre ce guide, assurez-vous qu’il est en cours d’exécution.  Puis  
 1.  Créez \ ( `Ctrl` + `Shift` + `F5` \) et exécutez \ ( `F5` \) votre projet Project Web App.  Votre site Web doit maintenant être lancé dans une fenêtre d’application autonome.  Non seulement il s’agit d’une application Web hébergée; Il s’exécute en tant qu’application Web progressive installée sur Windows 10.  
 
-    ![PWA s’exécute dans une fenêtre WWAHost. exe](media/wwahost.png)  
+    ![PWA exécuté dans une fenêtre de WWAHost.exe](media/wwahost.png)  
 
 ## Déboguer votre PWA \ (EdgeHTML \) en tant qu’application Windows  
 
@@ -307,7 +307,7 @@ Lorsque vous êtes prêt, voici comment \ (et pourquoi! \) pour [transmettre vot
 [DevToolsGuide]: ../devtools-guide.md "Outils de développement Microsoft Edge (EdgeHTML)"  
 [DevToolsGuideMicrosoftStoreApp]: ../devtools-guide.md#microsoft-store-app "Application Microsoft Store App-Microsoft Edge (EdgeHTML)-outils de développement"  
 [DevToolsGuideServiceWorkers]: ../devtools-guide/service-workers.md "Travailleurs de service"  
-[DevToolsProtocol01ClientsEdgePreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Clients du protocole Microsoft Edge DevTools Preview-DevTools"  
+[DevToolsProtocol01ClientsEdgePreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Aperçu DevTools Microsoft Edge - Clients de protocole DevTools "  
 [DevGuideWhatsNew]: ../dev-guide/whats-new.md "Nouveautés de EdgeHTML"  
 [WindowsRuntime]: ../windows-runtime/index.md "Windows Runtime (WinRT) pour JavaScript"  
 [WindowRuntimeUsingJavascript]: ../windows-runtime/using-the-windows-runtime-in-javascript.md "Utilisation de Windows Runtime en JavaScript"  

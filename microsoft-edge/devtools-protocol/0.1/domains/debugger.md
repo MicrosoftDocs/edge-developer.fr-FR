@@ -1,20 +1,21 @@
 ---
 description: Référence pour le domaine de débogueur. Le domaine du débogueur expose les fonctionnalités de débogage JavaScript. Elle permet de définir et de supprimer des points d’arrêt, de parcourir l’exécution, d’explorer les traces de pile, etc.
-title: Domain Debugger-DevTools Protocol version 0,1
-author: pelavall
-ms.author: pelavall
-ms.date: 12/15/2017
+title: Debugger Domain-DevTools Protocol version 0,1 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 6c5d668f943a731e5ba86ed5aa2294007a432ce6
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 1e76d17e5dfbe39ba61c7cb45a4e88b9fd223068
+ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565494"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882953"
 ---
-# Débogueur
+# Debugger Domain-DevTools Protocol version 0,1 (EdgeHTML)  
+  
 Le domaine du débogueur expose les fonctionnalités de débogage JavaScript. Elle permet de définir et de supprimer des points d’arrêt, de parcourir l’exécution, d’explorer les traces de pile, etc.
 
 | | |
@@ -629,7 +630,7 @@ Identificateur d’image d’appel.
 
 ---
 
-### <a name="location"></a> Services de localisation `object`
+### <a name="location"></a> Location `object`
 
 Emplacement dans le code source.
 
