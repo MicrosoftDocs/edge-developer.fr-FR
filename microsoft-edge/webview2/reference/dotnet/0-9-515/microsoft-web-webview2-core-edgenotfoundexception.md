@@ -3,76 +3,75 @@ description: Héberger le contenu Web dans votre application Win32 avec le contr
 title: 0.9.515-Microsoft. Web. WebView2. Core. EdgeNotFoundException
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: db4a903ca430541fa9edec9d953bf28531f7c0a4
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: fc65d857f11a77a1d3629d40266f0453acadaa7b
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879603"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10886310"
 ---
-# <span data-ttu-id="3ebe4-104">0.9.515-Microsoft. Web. WebView2. Core. EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="3ebe4-104">0.9.515 - Microsoft.Web.WebView2.Core.EdgeNotFoundException class</span></span> 
+# <span data-ttu-id="aa704-104">0.9.515-Microsoft. Web. WebView2. Core. EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="aa704-104">0.9.515 - Microsoft.Web.WebView2.Core.EdgeNotFoundException class</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="3ebe4-105">Cette référence peut être modifiée ou indisponible pour les versions ultérieures au SDK version 0.9.515.</span><span class="sxs-lookup"><span data-stu-id="3ebe4-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="3ebe4-106">Reportez-vous à la rubrique [référence d’API WebView2](../../../webview2-api-reference.md) pour obtenir les dernières références d’API.</span><span class="sxs-lookup"><span data-stu-id="3ebe4-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
-<span data-ttu-id="3ebe4-107">Espace de noms: Microsoft. Web. WebView2. Core </span><span class="sxs-lookup"><span data-stu-id="3ebe4-107">Namespace: Microsoft.Web.WebView2.Core</span></span>\
-<span data-ttu-id="3ebe4-108">Assemblage: Microsoft.Web.WebView2.Core.dll</span><span class="sxs-lookup"><span data-stu-id="3ebe4-108">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
+<span data-ttu-id="aa704-105">Espace de noms: Microsoft. Web. WebView2. Core </span><span class="sxs-lookup"><span data-stu-id="aa704-105">Namespace: Microsoft.Web.WebView2.Core</span></span>\
+<span data-ttu-id="aa704-106">Assemblage: Microsoft.Web.WebView2.Core.dll</span><span class="sxs-lookup"><span data-stu-id="aa704-106">Assembly: Microsoft.Web.WebView2.Core.dll</span></span>
 
 ```
 class Microsoft.Web.WebView2.Core.EdgeNotFoundException
   : public Exception
 ```
 
-<span data-ttu-id="3ebe4-109">Exception levée lorsqu’une installation Edge est manquante.</span><span class="sxs-lookup"><span data-stu-id="3ebe4-109">The exception that is thrown when an Edge installation is missing.</span></span>
+<span data-ttu-id="aa704-107">Exception levée lorsqu’une installation Edge est manquante.</span><span class="sxs-lookup"><span data-stu-id="aa704-107">The exception that is thrown when an Edge installation is missing.</span></span>
 
-## <span data-ttu-id="3ebe4-110">Résumé</span><span class="sxs-lookup"><span data-stu-id="3ebe4-110">Summary</span></span>
+## <span data-ttu-id="aa704-108">Résumé</span><span class="sxs-lookup"><span data-stu-id="aa704-108">Summary</span></span>
 
- <span data-ttu-id="3ebe4-111">Ses</span><span class="sxs-lookup"><span data-stu-id="3ebe4-111">Members</span></span>                        | <span data-ttu-id="3ebe4-112">Descriptions</span><span class="sxs-lookup"><span data-stu-id="3ebe4-112">Descriptions</span></span>
+ <span data-ttu-id="aa704-109">Ses</span><span class="sxs-lookup"><span data-stu-id="aa704-109">Members</span></span>                        | <span data-ttu-id="aa704-110">Descriptions</span><span class="sxs-lookup"><span data-stu-id="aa704-110">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="3ebe4-113">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="3ebe4-113">EdgeNotFoundException</span></span>](#edgenotfoundexception) | <span data-ttu-id="3ebe4-114">Initialise une nouvelle instance de la classe EdgeNotFoundException.</span><span class="sxs-lookup"><span data-stu-id="3ebe4-114">Initializes a new instance of the EdgeNotFoundException class.</span></span>
-[<span data-ttu-id="3ebe4-115">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="3ebe4-115">EdgeNotFoundException</span></span>](#edgenotfoundexception) | <span data-ttu-id="3ebe4-116">Initialise une nouvelle instance de la classe EdgeNotFoundException avec une référence à l’exception interne qui est la cause de l’exception.</span><span class="sxs-lookup"><span data-stu-id="3ebe4-116">Initializes a new instance of the EdgeNotFoundException class with a reference to the inner exception that is the cause of this exception.</span></span>
-[<span data-ttu-id="3ebe4-117">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="3ebe4-117">EdgeNotFoundException</span></span>](#edgenotfoundexception) | <span data-ttu-id="3ebe4-118">Initialise une nouvelle instance de la classe EdgeNotFoundException avec un message d’erreur spécifié.</span><span class="sxs-lookup"><span data-stu-id="3ebe4-118">Initializes a new instance of the EdgeNotFoundException class with a specified error message.</span></span>
-[<span data-ttu-id="3ebe4-119">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="3ebe4-119">EdgeNotFoundException</span></span>](#edgenotfoundexception) | <span data-ttu-id="3ebe4-120">Initialise une nouvelle instance de la classe EdgeNotFoundException avec un message d’erreur spécifié et une référence à l’exception interne qui est la cause de l’exception.</span><span class="sxs-lookup"><span data-stu-id="3ebe4-120">Initializes a new instance of the EdgeNotFoundException class with a specified error message and a reference to the inner exception that is the cause of this exception.</span></span>
+[<span data-ttu-id="aa704-111">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="aa704-111">EdgeNotFoundException</span></span>](#edgenotfoundexception) | <span data-ttu-id="aa704-112">Initialise une nouvelle instance de la classe EdgeNotFoundException.</span><span class="sxs-lookup"><span data-stu-id="aa704-112">Initializes a new instance of the EdgeNotFoundException class.</span></span>
+[<span data-ttu-id="aa704-113">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="aa704-113">EdgeNotFoundException</span></span>](#edgenotfoundexception) | <span data-ttu-id="aa704-114">Initialise une nouvelle instance de la classe EdgeNotFoundException avec une référence à l’exception interne qui est la cause de l’exception.</span><span class="sxs-lookup"><span data-stu-id="aa704-114">Initializes a new instance of the EdgeNotFoundException class with a reference to the inner exception that is the cause of this exception.</span></span>
+[<span data-ttu-id="aa704-115">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="aa704-115">EdgeNotFoundException</span></span>](#edgenotfoundexception) | <span data-ttu-id="aa704-116">Initialise une nouvelle instance de la classe EdgeNotFoundException avec un message d’erreur spécifié.</span><span class="sxs-lookup"><span data-stu-id="aa704-116">Initializes a new instance of the EdgeNotFoundException class with a specified error message.</span></span>
+[<span data-ttu-id="aa704-117">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="aa704-117">EdgeNotFoundException</span></span>](#edgenotfoundexception) | <span data-ttu-id="aa704-118">Initialise une nouvelle instance de la classe EdgeNotFoundException avec un message d’erreur spécifié et une référence à l’exception interne qui est la cause de l’exception.</span><span class="sxs-lookup"><span data-stu-id="aa704-118">Initializes a new instance of the EdgeNotFoundException class with a specified error message and a reference to the inner exception that is the cause of this exception.</span></span>
 
-## <span data-ttu-id="3ebe4-121">Ses</span><span class="sxs-lookup"><span data-stu-id="3ebe4-121">Members</span></span>
+## <span data-ttu-id="aa704-119">Ses</span><span class="sxs-lookup"><span data-stu-id="aa704-119">Members</span></span>
 
-#### <span data-ttu-id="3ebe4-122">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="3ebe4-122">EdgeNotFoundException</span></span> 
+#### <span data-ttu-id="aa704-120">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="aa704-120">EdgeNotFoundException</span></span> 
 
-<span data-ttu-id="3ebe4-123">Initialise une nouvelle instance de la classe EdgeNotFoundException.</span><span class="sxs-lookup"><span data-stu-id="3ebe4-123">Initializes a new instance of the EdgeNotFoundException class.</span></span>
+<span data-ttu-id="aa704-121">Initialise une nouvelle instance de la classe EdgeNotFoundException.</span><span class="sxs-lookup"><span data-stu-id="aa704-121">Initializes a new instance of the EdgeNotFoundException class.</span></span>
 
-> <span data-ttu-id="3ebe4-124">public [EdgeNotFoundException](#edgenotfoundexception)()</span><span class="sxs-lookup"><span data-stu-id="3ebe4-124">public [EdgeNotFoundException](#edgenotfoundexception)()</span></span>
+> <span data-ttu-id="aa704-122">public [EdgeNotFoundException](#edgenotfoundexception)()</span><span class="sxs-lookup"><span data-stu-id="aa704-122">public [EdgeNotFoundException](#edgenotfoundexception)()</span></span>
 
-#### <span data-ttu-id="3ebe4-125">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="3ebe4-125">EdgeNotFoundException</span></span> 
+#### <span data-ttu-id="aa704-123">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="aa704-123">EdgeNotFoundException</span></span> 
 
-<span data-ttu-id="3ebe4-126">Initialise une nouvelle instance de la classe EdgeNotFoundException avec une référence à l’exception interne qui est la cause de l’exception.</span><span class="sxs-lookup"><span data-stu-id="3ebe4-126">Initializes a new instance of the EdgeNotFoundException class with a reference to the inner exception that is the cause of this exception.</span></span>
+<span data-ttu-id="aa704-124">Initialise une nouvelle instance de la classe EdgeNotFoundException avec une référence à l’exception interne qui est la cause de l’exception.</span><span class="sxs-lookup"><span data-stu-id="aa704-124">Initializes a new instance of the EdgeNotFoundException class with a reference to the inner exception that is the cause of this exception.</span></span>
 
-> <span data-ttu-id="3ebe4-127">public [EdgeNotFoundException](#edgenotfoundexception)(exception interne)</span><span class="sxs-lookup"><span data-stu-id="3ebe4-127">public [EdgeNotFoundException](#edgenotfoundexception)(Exception inner)</span></span>
+> <span data-ttu-id="aa704-125">public [EdgeNotFoundException](#edgenotfoundexception)(exception interne)</span><span class="sxs-lookup"><span data-stu-id="aa704-125">public [EdgeNotFoundException](#edgenotfoundexception)(Exception inner)</span></span>
 
-##### <span data-ttu-id="3ebe4-128">Parameters</span><span class="sxs-lookup"><span data-stu-id="3ebe4-128">Parameters</span></span>
-* `inner` <span data-ttu-id="3ebe4-129">Exception qui est la cause de l’exception actuelle.</span><span class="sxs-lookup"><span data-stu-id="3ebe4-129">The exception that is the cause of the current exception.</span></span>
+##### <span data-ttu-id="aa704-126">Parameters</span><span class="sxs-lookup"><span data-stu-id="aa704-126">Parameters</span></span>
+* `inner` <span data-ttu-id="aa704-127">Exception qui est la cause de l’exception actuelle.</span><span class="sxs-lookup"><span data-stu-id="aa704-127">The exception that is the cause of the current exception.</span></span>
 
-#### <span data-ttu-id="3ebe4-130">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="3ebe4-130">EdgeNotFoundException</span></span> 
+#### <span data-ttu-id="aa704-128">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="aa704-128">EdgeNotFoundException</span></span> 
 
-<span data-ttu-id="3ebe4-131">Initialise une nouvelle instance de la classe EdgeNotFoundException avec un message d’erreur spécifié.</span><span class="sxs-lookup"><span data-stu-id="3ebe4-131">Initializes a new instance of the EdgeNotFoundException class with a specified error message.</span></span>
+<span data-ttu-id="aa704-129">Initialise une nouvelle instance de la classe EdgeNotFoundException avec un message d’erreur spécifié.</span><span class="sxs-lookup"><span data-stu-id="aa704-129">Initializes a new instance of the EdgeNotFoundException class with a specified error message.</span></span>
 
-> <span data-ttu-id="3ebe4-132">[EdgeNotFoundException](#edgenotfoundexception)public (message chaîne)</span><span class="sxs-lookup"><span data-stu-id="3ebe4-132">public [EdgeNotFoundException](#edgenotfoundexception)(string message)</span></span>
+> <span data-ttu-id="aa704-130">[EdgeNotFoundException](#edgenotfoundexception)public (message chaîne)</span><span class="sxs-lookup"><span data-stu-id="aa704-130">public [EdgeNotFoundException](#edgenotfoundexception)(string message)</span></span>
 
-##### <span data-ttu-id="3ebe4-133">Parameters</span><span class="sxs-lookup"><span data-stu-id="3ebe4-133">Parameters</span></span>
-* `message` <span data-ttu-id="3ebe4-134">Message d’erreur qui explique la raison de l’exception.</span><span class="sxs-lookup"><span data-stu-id="3ebe4-134">The error message that explains the reason for the exception.</span></span>
+##### <span data-ttu-id="aa704-131">Parameters</span><span class="sxs-lookup"><span data-stu-id="aa704-131">Parameters</span></span>
+* `message` <span data-ttu-id="aa704-132">Message d’erreur qui explique la raison de l’exception.</span><span class="sxs-lookup"><span data-stu-id="aa704-132">The error message that explains the reason for the exception.</span></span>
 
-#### <span data-ttu-id="3ebe4-135">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="3ebe4-135">EdgeNotFoundException</span></span> 
+#### <span data-ttu-id="aa704-133">EdgeNotFoundException</span><span class="sxs-lookup"><span data-stu-id="aa704-133">EdgeNotFoundException</span></span> 
 
-<span data-ttu-id="3ebe4-136">Initialise une nouvelle instance de la classe EdgeNotFoundException avec un message d’erreur spécifié et une référence à l’exception interne qui est la cause de l’exception.</span><span class="sxs-lookup"><span data-stu-id="3ebe4-136">Initializes a new instance of the EdgeNotFoundException class with a specified error message and a reference to the inner exception that is the cause of this exception.</span></span>
+<span data-ttu-id="aa704-134">Initialise une nouvelle instance de la classe EdgeNotFoundException avec un message d’erreur spécifié et une référence à l’exception interne qui est la cause de l’exception.</span><span class="sxs-lookup"><span data-stu-id="aa704-134">Initializes a new instance of the EdgeNotFoundException class with a specified error message and a reference to the inner exception that is the cause of this exception.</span></span>
 
-> <span data-ttu-id="3ebe4-137">[EdgeNotFoundException](#edgenotfoundexception)public (message de chaîne, exception interne)</span><span class="sxs-lookup"><span data-stu-id="3ebe4-137">public [EdgeNotFoundException](#edgenotfoundexception)(string message, Exception inner)</span></span>
+> <span data-ttu-id="aa704-135">[EdgeNotFoundException](#edgenotfoundexception)public (message de chaîne, exception interne)</span><span class="sxs-lookup"><span data-stu-id="aa704-135">public [EdgeNotFoundException](#edgenotfoundexception)(string message, Exception inner)</span></span>
 
-##### <span data-ttu-id="3ebe4-138">Parameters</span><span class="sxs-lookup"><span data-stu-id="3ebe4-138">Parameters</span></span>
-* `message` <span data-ttu-id="3ebe4-139">Message d’erreur qui explique la raison de l’exception.</span><span class="sxs-lookup"><span data-stu-id="3ebe4-139">The error message that explains the reason for the exception.</span></span> 
+##### <span data-ttu-id="aa704-136">Parameters</span><span class="sxs-lookup"><span data-stu-id="aa704-136">Parameters</span></span>
+* `message` <span data-ttu-id="aa704-137">Message d’erreur qui explique la raison de l’exception.</span><span class="sxs-lookup"><span data-stu-id="aa704-137">The error message that explains the reason for the exception.</span></span> 
 
-* `inner` <span data-ttu-id="3ebe4-140">Exception qui est la cause de l’exception actuelle.</span><span class="sxs-lookup"><span data-stu-id="3ebe4-140">The exception that is the cause of the current exception.</span></span>
+* `inner` <span data-ttu-id="aa704-138">Exception qui est la cause de l’exception actuelle.</span><span class="sxs-lookup"><span data-stu-id="aa704-138">The exception that is the cause of the current exception.</span></span>
 
