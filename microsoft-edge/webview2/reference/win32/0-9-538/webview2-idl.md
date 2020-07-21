@@ -3,17 +3,17 @@ description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos 
 title: Globals
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: d291a4973656d106f803382ee985f0006bf5d68d
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 12a730a07945d5f099cd2a0f45a9f2ec5ed02f8c
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10877622"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885547"
 ---
 # Globals 
 
@@ -50,7 +50,7 @@ Cela équivaut à appeler CreateCoreWebView2EnvironmentWithOptions avec nullptr 
 
 Exportation de fichier DLL pour créer un environnement WebView2 avec une version personnalisée d’Edge, un répertoire de données utilisateur et/ou des options supplémentaires.
 
-Permet `browserExecutableFolder` de spécifier si les contrôles de WebView2 utilisent une version incorporée de Edge ou la version installée d’Edge qui existe sur un ordinateur client. Pour utiliser une version incorporée de Edge, transmettez le chemin d’accès relatif du dossier qui contient la version incorporée de Edge à `browserExecutableFolder` . Pour obtenir la version incorporée de Edge, copiez le nom du dossier version à partir de la version installée de Edge sur un ordinateur client. Par exemple, copiez le `73.0.52.0` dossier à partir du dossier dans lequel la version Edge 73.0.52.0 a été installée. Assurez-vous que le dossier comporte les fichiers **msedgewebview2.exe** et **msedge.dll** . Pour créer des contrôles WebView2 qui utilisent la version installée de Edge qui existe sur les ordinateurs clients, transmettez une chaîne null ou vide à `browserExecutableFolder` . Dans ce scénario, l’API tente de rechercher une version compatible d’Edge qui est installée sur l’ordinateur client (tout d’abord au niveau de l’ordinateur, puis par utilisateur) en utilisant les préférences de canal sélectionnées. 
+Permet `browserExecutableFolder` de spécifier si les contrôles de WebView2 utilisent une version incorporée de Edge ou la version installée d’Edge qui existe sur un ordinateur client. Pour utiliser une version incorporée de Edge, transmettez le chemin d’accès relatif du dossier qui contient la version incorporée de Edge à `browserExecutableFolder` . Pour obtenir la version incorporée de Edge, copiez le nom du dossier version à partir de la version installée de Edge sur un ordinateur client. Par exemple, copiez le `73.0.52.0` dossier à partir du dossier dans lequel la version Edge 73.0.52.0 a été installée. Assurez-vous que le dossier comporte les fichiers **msedgewebview2.exe** et **msedge.dll** . Pour créer des contrôles WebView2 qui utilisent la version installée de Edge qui existe sur les ordinateurs clients, transmettez une chaîne null ou vide à `browserExecutableFolder` . Dans ce scénario, l’API tente de rechercher une version compatible d’Edge qui est installée sur l’ordinateur client (tout d’abord au niveau de l’ordinateur, puis par utilisateur) en utilisant les préférences de canal sélectionnées.
 
 L’ordre de recherche de canal par défaut est stable, bêta, dev et Canaries. S’il existe une substitution WEBVIEW2_RELEASE_CHANNEL_PREFERENCE variable d’environnement ou une valeur de Registre releaseChannelPreference applicable ayant la valeur 1, l’ordre de recherche de canal est inversé.
 
@@ -138,3 +138,4 @@ Tout d’abord, nous allons vérifier avec root, puis HKCU. AppId est d’abord 
 Obtenez les informations de la version du navigateur, y compris le nom du canal, s’il ne s’agit pas du canal stable ou du bord intégré.
 
 Les noms de canaux sont Beta, dev et Canaries. S’il existe un remplacement pour le browserExecutableFolder ou l’option de canal, la substitution est utilisée. S’il n’y a pas de remplacement, le paramètre transmis à GetAvailableCoreWebView2BrowserVersionString est utilisé.
+

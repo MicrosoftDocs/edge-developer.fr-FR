@@ -3,17 +3,17 @@ description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos 
 title: Microsoft. Web. WebView2. Core. CoreWebView2EnvironmentOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, application, Edge, CoreWebView2, CoreWebView2Controller, contrôle de navigateur, Edge html, Microsoft. Web. WebView2. Core. CoreWebView2EnvironmentOptions
-ms.openlocfilehash: e1ff99d7993aec875a5bf79b863f0824ca50d337
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 705e030caba03227749002bad8c9777197839a28
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878903"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885561"
 ---
 # Classe Microsoft. Web. WebView2. Core. CoreWebView2EnvironmentOptions 
 
@@ -27,6 +27,7 @@ Options permettant de créer un environnement WebView2.
  Ses                        | Descriptions
 --------------------------------|---------------------------------------------
 [AdditionalBrowserArguments](#additionalbrowserarguments) | AdditionalBrowserArguments peut être spécifié pour modifier le comportement du WebView.
+[IsSingleSignOnUsingOSPrimaryAccountEnabled](#issinglesignonusingosprimaryaccountenabled) | La propriété IsSingleSignOnUsingOSPrimaryAccountEnabled est utilisée pour activer l’authentification unique à l’aide d’Azure Active Directory (AAD) via le contrôle WebView en utilisant le compte Windows connecté et l’authentification unique avec les sites Web utilisant le compte Microsoft associé au compte de connexion dans le compte Windows.
 [Langue](#language) | La langue par défaut avec laquelle le WebView sera exécuté.
 [TargetCompatibleBrowserVersion](#targetcompatiblebrowserversion) | La version des fichiers binaires Edge WebView2 Runtime doit être compatible avec l’application à l’origine de l’appel.
 [CoreWebView2EnvironmentOptions](#corewebview2environmentoptions) | Initialise une nouvelle instance de la classe CoreWebView2EnvironmentOptions.
@@ -42,6 +43,16 @@ AdditionalBrowserArguments peut être spécifié pour modifier le comportement d
 > [AdditionalBrowserArguments](#additionalbrowserarguments) de chaîne publique
 
 Celles-ci sont transmises au processus de navigateur dans le cadre de la ligne de commande. Pour plus d’informations sur les commutateurs de ligne de commande pour les navigateurs, voir [exécuter du chrome avec des indicateurs](https://aka.ms/RunChromiumWithFlags) . Si l’application est lancée à l’aide d’un commutateur de ligne `--edge-webview-switches=xxx` de commande, la valeur de ce commutateur (xxx dans l’exemple ci-dessus) est également ajoutée à la ligne de commande du processus du navigateur. Certains commutateurs comme `--user-data-dir` les éléments internes et importants sont importants pour le WebView. Ces commutateurs seront ignorés même en cas de spécification. Si les mêmes commutateurs sont spécifiés plusieurs fois, le dernier gagne. Il n’est pas possible de fusionner les différentes valeurs du même commutateur, à l’exception des fonctionnalités désactivé et activé. Les fonctionnalités spécifiées par `--enable-features` and `--disable-features` seront fusionnées avec la logique simple: les fonctionnalités seront l’Union des fonctionnalités définies et des fonctionnalités intégrées, et si une fonctionnalité est désactivée, elle sera supprimée de la liste des fonctionnalités activées. La valeur de la ligne de commande du processus d’application est `--edge-webview-switches` traitée après le traitement du paramètre additionalBrowserArguments. Certaines fonctionnalités sont désactivées en interne et ne peuvent pas être activées. Si l’analyse a échoué pour les commutateurs spécifiés, elle est ignorée. Par défaut, le processus de navigateur s’exécute sans indicateurs supplémentaires.
+
+#### IsSingleSignOnUsingOSPrimaryAccountEnabled 
+
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
+
+La propriété IsSingleSignOnUsingOSPrimaryAccountEnabled est utilisée pour activer l’authentification unique à l’aide d’Azure Active Directory (AAD) via le contrôle WebView en utilisant le compte Windows connecté et l’authentification unique avec les sites Web utilisant le compte Microsoft associé au compte de connexion dans le compte Windows.
+
+> public bool [IsSingleSignOnUsingOSPrimaryAccountEnabled](#issinglesignonusingosprimaryaccountenabled)
+
+La valeur par défaut est Disabled. Les applications de plateforme Windows universelle doivent également déclarer la [fonctionnalité restreinte](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations#restricted-capabilities) enterpriseCloudSSO pour que l’authentification unique fonctionne.
 
 #### Langue 
 
