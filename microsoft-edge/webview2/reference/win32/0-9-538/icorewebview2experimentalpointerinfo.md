@@ -3,22 +3,21 @@ description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos 
 title: WebView2 C++ Win32 ICoreWebView2ExperimentalPointerInfo
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge, ICoreWebView2ExperimentalPointerInfo
-ms.openlocfilehash: b84c822e8b9e01d3b5a0e59baaeed5fc587d9a15
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 6a5727fbcae24f7fd65c6c4a7a49b1a0b4746eb3
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879946"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10883708"
 ---
 # interface ICoreWebView2ExperimentalPointerInfo 
 
-> [!NOTE]
-> Cette API expérimentale qui est fournie avec notre version bêta du SDK version 0.9.538.
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 ```
 interface ICoreWebView2ExperimentalPointerInfo

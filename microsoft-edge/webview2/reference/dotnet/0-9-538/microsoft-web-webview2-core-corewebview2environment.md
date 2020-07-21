@@ -3,17 +3,17 @@ description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos 
 title: Microsoft. Web. WebView2. Core. CoreWebView2Environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, application, Edge, CoreWebView2, CoreWebView2Controller, contrôle de navigateur, Edge html, Microsoft. Web. WebView2. Core. CoreWebView2Environment
-ms.openlocfilehash: 79bc9908d0fd12d4606311b959cbc6bc0c384c2d
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 6b03997c8bd76137b20bb71edfd0d57b3686914a
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878917"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885288"
 ---
 # Classe Microsoft. Web. WebView2. Core. CoreWebView2Environment 
 
@@ -32,7 +32,7 @@ Il s’agit de l’environnement WebView2.
 [CreateAsync](#createasync) | Crée un environnement WebView2 persistant à l’aide de la version latérale installée.
 [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | Créer de manière asynchrone un nouveau WebView à utiliser avec l’hébergement visuel.
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | Créer de manière asynchrone un nouveau WebView.
-[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Créer un CoreWebView2ExperimentalPointerInfo vide.
+[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Créer un CoreWebView2PointerInfo vide.
 [CreateWebResourceResponse](#createwebresourceresponse) | Créer un objet de réponse aux ressources Web.
 [GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Obtenez les informations de la version du navigateur, y compris le nom du canal, s’il ne s’agit pas du canal stable ou du bord intégré.
 [GetProviderForHwnd](#getproviderforhwnd) | Retourne le fournisseur UI Automation pour le CoreWebView2CompositionController correspondant au HWND donné.
@@ -87,8 +87,7 @@ Crée un environnement WebView2 persistant à l’aide de la version latérale i
 
 #### CreateCoreWebView2CompositionControllerAsync 
 
-> [!NOTE]
-> Il s’agit d’une [API expérimentale](../../../concepts/versioning.md#experimental-apis) fournie avec notre version SDK version [0.9.538-préliminaire](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Créer de manière asynchrone un nouveau WebView à utiliser avec l’hébergement visuel.
 
@@ -112,14 +111,13 @@ Il est recommandé que l’application définisse l’ID du modèle utilisateur 
 
 #### CreateCoreWebView2PointerInfo 
 
-> [!NOTE]
-> Il s’agit d’une [API expérimentale](../../../concepts/versioning.md#experimental-apis) fournie avec notre version SDK version [0.9.538-préliminaire](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
-Créer un CoreWebView2ExperimentalPointerInfo vide.
+Créer un CoreWebView2PointerInfo vide.
 
 > public [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)()
 
-La CoreWebView2ExperimentalPointerInfo renvoyée doit être remplie avec toutes les informations pertinentes avant d’appeler SendPointerInput.
+La CoreWebView2PointerInfo renvoyée doit être remplie avec toutes les informations pertinentes avant d’appeler SendPointerInput.
 
 #### CreateWebResourceResponse 
 
@@ -140,8 +138,7 @@ Obtenez les informations de la version du navigateur, y compris le nom du canal,
 
 #### GetProviderForHwnd 
 
-> [!NOTE]
-> Il s’agit d’une [API expérimentale](../../../concepts/versioning.md#experimental-apis) fournie avec notre version SDK version [0.9.538-préliminaire](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Retourne le fournisseur UI Automation pour le CoreWebView2CompositionController correspondant au HWND donné.
 

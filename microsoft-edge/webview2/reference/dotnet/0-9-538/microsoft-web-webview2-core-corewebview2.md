@@ -3,17 +3,17 @@ description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos 
 title: Microsoft. Web. WebView2. Core. CoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, application, Edge, CoreWebView2, CoreWebView2Controller, contrôle de navigateur, Edge html, Microsoft. Web. WebView2. Core. CoreWebView2
-ms.openlocfilehash: f8e0ebae683e1e68d12ce541fbec922ec9c05ef4
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 95ef347c8954dc67438a4d09825c11a64ad8872a
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879008"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10885274"
 ---
 # Classe Microsoft. Web. WebView2. Core. CoreWebView2 
 
@@ -48,6 +48,7 @@ WebView2 vous permet d’héberger le contenu Web à l’aide de la technologie 
 [SourceChanged](#sourcechanged) | SourceChanged se déclenche lorsque la propriété source change.
 [WebMessageReceived](#webmessagereceived) | Cet événement se déclenche lorsque le paramètre IsWebMessageEnabled est défini et au document de niveau supérieur des appels WebView `window.chrome.webview.postMessage` .
 [WebResourceRequested](#webresourcerequested) | Se déclenche lorsque WebView effectue une requête HTTP à un filtre d’URL et de contexte de ressources correspondant qui a été ajouté à l’aide de AddWebResourceRequestedFilter.
+[WebResourceResponseReceived](#webresourceresponsereceived) | L’événement WebResourceResponseReceived se déclenche après que le WebView a reçu et traité la réponse à une demande de ressource Resource.
 [WindowCloseRequested](#windowcloserequested) | Se déclenche lorsque le contenu à l’intérieur du WebView est requis pour fermer la fenêtre, par exemple, après l’appel de Window. Close.
 [AddHostObjectToScript](#addhostobjecttoscript) | Ajoutez l’objet hôte fourni au script qui s’exécute sur le WebView avec le nom spécifié.
 [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync) | Ajoutez le code JavaScript fourni à une liste de scripts qui doivent être exécutés après la création de l’objet global, mais avant l’analyse du document HTML et avant l’exécution de tout autre script fourni par le document HTML.
@@ -231,6 +232,16 @@ Se déclenche lorsque WebView effectue une requête HTTP à un filtre d’URL et
 
 Au moins un filtre doit être ajouté pour que l’événement se déclenche.
 
+#### WebResourceResponseReceived 
+
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
+
+L’événement WebResourceResponseReceived se déclenche après que le WebView a reçu et traité la réponse à une demande de ressource Resource.
+
+> événement public EventHandler< [CoreWebView2WebResourceResponseReceivedEventArgs](microsoft-web-webview2-core-corewebview2webresourceresponsereceivedeventargs.md)  >  [WebResourceResponseReceived](#webresourceresponsereceived)
+
+Les arguments d’événement incluent le WebResourceRequest envoyé par le filaire et WebResourceResponse reçu, y compris les en-têtes supplémentaires ajoutés par la pile réseau qui n’ont pas été inclus dans le cadre de l’événement WebResourceRequested associé, tels que les en-têtes d’authentification.
+
 #### WindowCloseRequested 
 
 Se déclenche lorsque le contenu à l’intérieur du WebView est requis pour fermer la fenêtre, par exemple, après l’appel de Window. Close.
@@ -307,7 +318,7 @@ Appelez une méthode DevToolsProtocol asynchrone.
 > Tâche asynchrone publique< chaîne > [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync)(chaîne MethodName, chaîne parametersAsJson)
 
 ##### Renvoie
-Chaîne JSON qui représente l’objet de retour de la méthode.
+Chaîne JSON qui représente l’objet de retour de la méthode. 
 
 Voir la [visionneuse de protocoles devtools](https://aka.ms/DevToolsProtocolDocs) pour obtenir une liste et une description des méthodes disponibles. Le paramètre methodName est le nom complet de la méthode au format `{domain}.{method}` . Le paramètre parametersAsJson est une chaîne au format JSON contenant les paramètres de la méthode correspondante. La méthode Invoke du gestionnaire est appelée lorsque la méthode est terminée de manière asynchrone. Invoke sera appelé avec l’objet de retour de la méthode sous la forme d’une chaîne JSON.
 
@@ -328,7 +339,7 @@ Exécutez le code JavaScript du paramètre JavaScript du document de niveau sup�
 ##### Renvoie
 Renvoie une chaîne codée JSON qui représente le résultat de l’exécution du JavaScript fourni. 
 
-Cette méthode exécute le JavaScript fourni de manière asynchrone et retourne le résultat du JavaScript fourni. Si le résultat du JavaScript fourni est `undefined` , contient un cycle de référence, ou ne peut pas être encodé dans JSON, la chaîne «NULL» est renvoyée. Si une fonction appelée dans le code JavaScript fourni ne possède aucune valeur de retour explicite, `undefined` est renvoyée. Si le JavaScript fourni lève une exception non gérée, «NULL» est retourné. Si cette méthode est appelée après un `NavigationStarting` événement, le JavaScript fourni est exécuté sur le nouveau document lors du chargement, en même temps que le `ContentLoading` déclenchement. `ExecuteScript` fonctionne alors même si `IsScriptEnabled` est défini sur `FALSE` .
+Cette méthode exécute le JavaScript fourni de manière asynchrone et retourne le résultat du JavaScript fourni. Si le résultat du JavaScript fourni est `undefined` , contient un cycle de référence, ou ne peut pas être encodé dans JSON, la chaîne «NULL» est renvoyée. Si une fonction appelée dans le code JavaScript fourni ne possède aucune valeur de retour explicite, `undefined` est renvoyée. Si le JavaScript fourni lève une exception non gérée, «NULL» est retourné. Si cette méthode est appelée après un événement NavigationStarting, le JavaScript fourni est exécuté sur le nouveau document lors du chargement, en même temps que ContentLoading est déclenché. ExecuteScriptAsync fonctionne même si IsScriptEnabled est défini sur `FALSE` .
 
 #### GetDevToolsProtocolEventReceiver 
 
@@ -434,3 +445,4 @@ Arrêtez toutes les navigations et les extractions de ressources en attente.
 > public void [Stop](#stop)()
 
 Ne permet pas d’arrêter les scripts.
+
