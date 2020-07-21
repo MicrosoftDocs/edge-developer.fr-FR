@@ -3,41 +3,40 @@ description: Héberger le contenu Web dans votre application Win32 avec le contr
 title: 0.9.515-WebView2 C++ Win32 ICoreWebView2CreateCoreWebView2ControllerCompletedHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: 9baf172a112f7fa84dae3a38cdbc0b0e0324473f
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: f85444231cb04857326d1662b2b4fb957e5305fe
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880800"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884497"
 ---
-# <span data-ttu-id="a6505-104">0.9.515-interface ICoreWebView2CreateCoreWebView2ControllerCompletedHandler</span><span class="sxs-lookup"><span data-stu-id="a6505-104">0.9.515 - interface ICoreWebView2CreateCoreWebView2ControllerCompletedHandler</span></span> 
+# <span data-ttu-id="ca76f-104">0.9.515-interface ICoreWebView2CreateCoreWebView2ControllerCompletedHandler</span><span class="sxs-lookup"><span data-stu-id="ca76f-104">0.9.515 - interface ICoreWebView2CreateCoreWebView2ControllerCompletedHandler</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="a6505-105">Cette référence peut être modifiée ou indisponible pour les versions ultérieures au SDK version 0.9.515.</span><span class="sxs-lookup"><span data-stu-id="a6505-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="a6505-106">Reportez-vous à la rubrique [référence d’API WebView2](../../../webview2-api-reference.md) pour obtenir les dernières références d’API.</span><span class="sxs-lookup"><span data-stu-id="a6505-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2CreateCoreWebView2ControllerCompletedHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="a6505-107">L’appelant implémente cette interface pour recevoir les CoreWebView2Controller créées via CreateCoreWebView2Controller.</span><span class="sxs-lookup"><span data-stu-id="a6505-107">The caller implements this interface to receive the CoreWebView2Controller created via CreateCoreWebView2Controller.</span></span>
+<span data-ttu-id="ca76f-105">L’appelant implémente cette interface pour recevoir les CoreWebView2Controller créées via CreateCoreWebView2Controller.</span><span class="sxs-lookup"><span data-stu-id="ca76f-105">The caller implements this interface to receive the CoreWebView2Controller created via CreateCoreWebView2Controller.</span></span>
 
-## <span data-ttu-id="a6505-108">Résumé</span><span class="sxs-lookup"><span data-stu-id="a6505-108">Summary</span></span>
+## <span data-ttu-id="ca76f-106">Résumé</span><span class="sxs-lookup"><span data-stu-id="ca76f-106">Summary</span></span>
 
- <span data-ttu-id="a6505-109">Ses</span><span class="sxs-lookup"><span data-stu-id="a6505-109">Members</span></span>                        | <span data-ttu-id="a6505-110">Descriptions</span><span class="sxs-lookup"><span data-stu-id="a6505-110">Descriptions</span></span>
+ <span data-ttu-id="ca76f-107">Ses</span><span class="sxs-lookup"><span data-stu-id="ca76f-107">Members</span></span>                        | <span data-ttu-id="ca76f-108">Descriptions</span><span class="sxs-lookup"><span data-stu-id="ca76f-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="a6505-111">Invoke</span><span class="sxs-lookup"><span data-stu-id="a6505-111">Invoke</span></span>](#invoke) | <span data-ttu-id="a6505-112">Appelée pour fournir à l’implémenteur l’état d’achèvement et le résultat de l’appel de méthode asynchrone correspondant.</span><span class="sxs-lookup"><span data-stu-id="a6505-112">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
+[<span data-ttu-id="ca76f-109">Invoke</span><span class="sxs-lookup"><span data-stu-id="ca76f-109">Invoke</span></span>](#invoke) | <span data-ttu-id="ca76f-110">Appelée pour fournir à l’implémenteur l’état d’achèvement et le résultat de l’appel de méthode asynchrone correspondant.</span><span class="sxs-lookup"><span data-stu-id="ca76f-110">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
 
-## <span data-ttu-id="a6505-113">Ses</span><span class="sxs-lookup"><span data-stu-id="a6505-113">Members</span></span>
+## <span data-ttu-id="ca76f-111">Ses</span><span class="sxs-lookup"><span data-stu-id="ca76f-111">Members</span></span>
 
-#### <span data-ttu-id="a6505-114">Invoke</span><span class="sxs-lookup"><span data-stu-id="a6505-114">Invoke</span></span> 
+#### <span data-ttu-id="ca76f-112">Invoke</span><span class="sxs-lookup"><span data-stu-id="ca76f-112">Invoke</span></span> 
 
-<span data-ttu-id="a6505-115">Appelée pour fournir à l’implémenteur l’état d’achèvement et le résultat de l’appel de méthode asynchrone correspondant.</span><span class="sxs-lookup"><span data-stu-id="a6505-115">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
+<span data-ttu-id="ca76f-113">Appelée pour fournir à l’implémenteur l’état d’achèvement et le résultat de l’appel de méthode asynchrone correspondant.</span><span class="sxs-lookup"><span data-stu-id="ca76f-113">Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.</span></span>
 
-> <span data-ttu-id="a6505-116">[appel](#invoke)HRESULT public (résultat HRESULT, [ICoreWebView2Controller](icorewebview2controller.md) \* createdController)</span><span class="sxs-lookup"><span data-stu-id="a6505-116">public HRESULT [Invoke](#invoke)(HRESULT result, [ICoreWebView2Controller](icorewebview2controller.md) \* createdController)</span></span>
+> <span data-ttu-id="ca76f-114">[appel](#invoke)HRESULT public (résultat HRESULT, [ICoreWebView2Controller](icorewebview2controller.md) \* createdController)</span><span class="sxs-lookup"><span data-stu-id="ca76f-114">public HRESULT [Invoke](#invoke)(HRESULT result, [ICoreWebView2Controller](icorewebview2controller.md) \* createdController)</span></span>
 

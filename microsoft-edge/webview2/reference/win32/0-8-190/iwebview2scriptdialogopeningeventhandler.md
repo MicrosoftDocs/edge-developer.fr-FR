@@ -3,41 +3,40 @@ description: Héberger le contenu Web dans votre application Win32 avec le contr
 title: 0.8.355-WebView2 C++ Win32 IWebView2ScriptDialogOpeningEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge
-ms.openlocfilehash: 70f1708d7cc908a761e96d14f25e0f1751d1923d
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 58e76c377d8d5709c006cb3a4da2e0edf73ec8fb
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878217"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884910"
 ---
-# <span data-ttu-id="53bea-104">0.8.355-interface IWebView2ScriptDialogOpeningEventHandler</span><span class="sxs-lookup"><span data-stu-id="53bea-104">0.8.355 - interface IWebView2ScriptDialogOpeningEventHandler</span></span> 
+# <span data-ttu-id="d3bc2-104">0.8.355-interface IWebView2ScriptDialogOpeningEventHandler</span><span class="sxs-lookup"><span data-stu-id="d3bc2-104">0.8.355 - interface IWebView2ScriptDialogOpeningEventHandler</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="53bea-105">Cette interface peut être modifiée ou indisponible pour les versions ultérieures SDK version 0.8.355.</span><span class="sxs-lookup"><span data-stu-id="53bea-105">This interface may be altered or unavailable for releases after SDK version 0.8.355.</span></span> <span data-ttu-id="53bea-106">Reportez-vous à [référence](../../../webview2-api-reference.md) pour la dernière référence d’API.</span><span class="sxs-lookup"><span data-stu-id="53bea-106">Please refer to [Reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface IWebView2ScriptDialogOpeningEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="53bea-107">L’appelant implémente cette interface pour recevoir l’événement ScriptDialogOpening.</span><span class="sxs-lookup"><span data-stu-id="53bea-107">The caller implements this interface to receive the ScriptDialogOpening event.</span></span>
+<span data-ttu-id="d3bc2-105">L’appelant implémente cette interface pour recevoir l’événement ScriptDialogOpening.</span><span class="sxs-lookup"><span data-stu-id="d3bc2-105">The caller implements this interface to receive the ScriptDialogOpening event.</span></span>
 
-## <span data-ttu-id="53bea-108">Résumé</span><span class="sxs-lookup"><span data-stu-id="53bea-108">Summary</span></span>
+## <span data-ttu-id="d3bc2-106">Résumé</span><span class="sxs-lookup"><span data-stu-id="d3bc2-106">Summary</span></span>
 
- <span data-ttu-id="53bea-109">Ses</span><span class="sxs-lookup"><span data-stu-id="53bea-109">Members</span></span>                        | <span data-ttu-id="53bea-110">Descriptions</span><span class="sxs-lookup"><span data-stu-id="53bea-110">Descriptions</span></span>
+ <span data-ttu-id="d3bc2-107">Ses</span><span class="sxs-lookup"><span data-stu-id="d3bc2-107">Members</span></span>                        | <span data-ttu-id="d3bc2-108">Descriptions</span><span class="sxs-lookup"><span data-stu-id="d3bc2-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="53bea-111">Invoke</span><span class="sxs-lookup"><span data-stu-id="53bea-111">Invoke</span></span>](#invoke) | <span data-ttu-id="53bea-112">Appelée pour fournir à l’implémenteur des arguments d’événement pour l’événement correspondant.</span><span class="sxs-lookup"><span data-stu-id="53bea-112">Called to provide the implementer with the event args for the corresponding event.</span></span>
+[<span data-ttu-id="d3bc2-109">Invoke</span><span class="sxs-lookup"><span data-stu-id="d3bc2-109">Invoke</span></span>](#invoke) | <span data-ttu-id="d3bc2-110">Appelée pour fournir à l’implémenteur des arguments d’événement pour l’événement correspondant.</span><span class="sxs-lookup"><span data-stu-id="d3bc2-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-## <span data-ttu-id="53bea-113">Ses</span><span class="sxs-lookup"><span data-stu-id="53bea-113">Members</span></span>
+## <span data-ttu-id="d3bc2-111">Ses</span><span class="sxs-lookup"><span data-stu-id="d3bc2-111">Members</span></span>
 
-#### <span data-ttu-id="53bea-114">Invoke</span><span class="sxs-lookup"><span data-stu-id="53bea-114">Invoke</span></span> 
+#### <span data-ttu-id="d3bc2-112">Invoke</span><span class="sxs-lookup"><span data-stu-id="d3bc2-112">Invoke</span></span> 
 
-<span data-ttu-id="53bea-115">Appelée pour fournir à l’implémenteur des arguments d’événement pour l’événement correspondant.</span><span class="sxs-lookup"><span data-stu-id="53bea-115">Called to provide the implementer with the event args for the corresponding event.</span></span>
+<span data-ttu-id="d3bc2-113">Appelée pour fournir à l’implémenteur des arguments d’événement pour l’événement correspondant.</span><span class="sxs-lookup"><span data-stu-id="d3bc2-113">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-> <span data-ttu-id="53bea-116">[appel](#invoke)HRESULT public ([IWebView2WebView](IWebView2WebView.md) \* WebView,[IWebView2ScriptDialogOpeningEventArgs](IWebView2ScriptDialogOpeningEventArgs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="53bea-116">public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md) \* webview,[IWebView2ScriptDialogOpeningEventArgs](IWebView2ScriptDialogOpeningEventArgs.md) \* args)</span></span>
+> <span data-ttu-id="d3bc2-114">[appel](#invoke)HRESULT public ([IWebView2WebView](IWebView2WebView.md) \* WebView,[IWebView2ScriptDialogOpeningEventArgs](IWebView2ScriptDialogOpeningEventArgs.md) \* args)</span><span class="sxs-lookup"><span data-stu-id="d3bc2-114">public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md) \* webview,[IWebView2ScriptDialogOpeningEventArgs](IWebView2ScriptDialogOpeningEventArgs.md) \* args)</span></span>
 

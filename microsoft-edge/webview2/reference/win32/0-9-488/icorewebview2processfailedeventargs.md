@@ -3,41 +3,40 @@ description: Héberger le contenu Web dans votre application Win32 avec le contr
 title: 0.9.515-WebView2 C++ Win32 ICoreWebView2ProcessFailedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: ac3b1fc5ceb31cbf2d67649b91f3bfbf2c8ecbe3
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 2dc5c437acadb06b5f8b12ae0dc54aec12412355
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10880366"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10883790"
 ---
-# <span data-ttu-id="12c0d-104">0.9.515-interface ICoreWebView2ProcessFailedEventArgs</span><span class="sxs-lookup"><span data-stu-id="12c0d-104">0.9.515 - interface ICoreWebView2ProcessFailedEventArgs</span></span> 
+# <span data-ttu-id="b5c89-104">0.9.515-interface ICoreWebView2ProcessFailedEventArgs</span><span class="sxs-lookup"><span data-stu-id="b5c89-104">0.9.515 - interface ICoreWebView2ProcessFailedEventArgs</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="12c0d-105">Cette référence peut être modifiée ou indisponible pour les versions ultérieures au SDK version 0.9.515.</span><span class="sxs-lookup"><span data-stu-id="12c0d-105">This reference may be altered or unavailable for releases after SDK version 0.9.515.</span></span> <span data-ttu-id="12c0d-106">Reportez-vous à la rubrique [référence d’API WebView2](../../../webview2-api-reference.md) pour obtenir les dernières références d’API.</span><span class="sxs-lookup"><span data-stu-id="12c0d-106">Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2ProcessFailedEventArgs
   : public IUnknown
 ```
 
-<span data-ttu-id="12c0d-107">Arguments d’événement pour l’événement ProcessFailed.</span><span class="sxs-lookup"><span data-stu-id="12c0d-107">Event args for the ProcessFailed event.</span></span>
+<span data-ttu-id="b5c89-105">Arguments d’événement pour l’événement ProcessFailed.</span><span class="sxs-lookup"><span data-stu-id="b5c89-105">Event args for the ProcessFailed event.</span></span>
 
-## <span data-ttu-id="12c0d-108">Résumé</span><span class="sxs-lookup"><span data-stu-id="12c0d-108">Summary</span></span>
+## <span data-ttu-id="b5c89-106">Résumé</span><span class="sxs-lookup"><span data-stu-id="b5c89-106">Summary</span></span>
 
- <span data-ttu-id="12c0d-109">Ses</span><span class="sxs-lookup"><span data-stu-id="12c0d-109">Members</span></span>                        | <span data-ttu-id="12c0d-110">Descriptions</span><span class="sxs-lookup"><span data-stu-id="12c0d-110">Descriptions</span></span>
+ <span data-ttu-id="b5c89-107">Ses</span><span class="sxs-lookup"><span data-stu-id="b5c89-107">Members</span></span>                        | <span data-ttu-id="b5c89-108">Descriptions</span><span class="sxs-lookup"><span data-stu-id="b5c89-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="12c0d-111">get_ProcessFailedKind</span><span class="sxs-lookup"><span data-stu-id="12c0d-111">get_ProcessFailedKind</span></span>](#get_processfailedkind) | <span data-ttu-id="12c0d-112">Type d’échec du processus qui s’est produit.</span><span class="sxs-lookup"><span data-stu-id="12c0d-112">The kind of process failure that has occurred.</span></span>
+[<span data-ttu-id="b5c89-109">get_ProcessFailedKind</span><span class="sxs-lookup"><span data-stu-id="b5c89-109">get_ProcessFailedKind</span></span>](#get_processfailedkind) | <span data-ttu-id="b5c89-110">Type d’échec du processus qui s’est produit.</span><span class="sxs-lookup"><span data-stu-id="b5c89-110">The kind of process failure that has occurred.</span></span>
 
-## <span data-ttu-id="12c0d-113">Ses</span><span class="sxs-lookup"><span data-stu-id="12c0d-113">Members</span></span>
+## <span data-ttu-id="b5c89-111">Ses</span><span class="sxs-lookup"><span data-stu-id="b5c89-111">Members</span></span>
 
-#### <span data-ttu-id="12c0d-114">get_ProcessFailedKind</span><span class="sxs-lookup"><span data-stu-id="12c0d-114">get_ProcessFailedKind</span></span> 
+#### <span data-ttu-id="b5c89-112">get_ProcessFailedKind</span><span class="sxs-lookup"><span data-stu-id="b5c89-112">get_ProcessFailedKind</span></span> 
 
-<span data-ttu-id="12c0d-115">Type d’échec du processus qui s’est produit.</span><span class="sxs-lookup"><span data-stu-id="12c0d-115">The kind of process failure that has occurred.</span></span>
+<span data-ttu-id="b5c89-113">Type d’échec du processus qui s’est produit.</span><span class="sxs-lookup"><span data-stu-id="b5c89-113">The kind of process failure that has occurred.</span></span>
 
-> <span data-ttu-id="12c0d-116">[get_ProcessFailedKind](#get_processfailedkind)par le biais du public HRESULT (COREWEBVIEW2_PROCESS_FAILED_KIND \* ProcessFailedKind)</span><span class="sxs-lookup"><span data-stu-id="12c0d-116">public HRESULT [get_ProcessFailedKind](#get_processfailedkind)(COREWEBVIEW2_PROCESS_FAILED_KIND \* processFailedKind)</span></span>
+> <span data-ttu-id="b5c89-114">[get_ProcessFailedKind](#get_processfailedkind)par le biais du public HRESULT (COREWEBVIEW2_PROCESS_FAILED_KIND \* ProcessFailedKind)</span><span class="sxs-lookup"><span data-stu-id="b5c89-114">public HRESULT [get_ProcessFailedKind](#get_processfailedkind)(COREWEBVIEW2_PROCESS_FAILED_KIND \* processFailedKind)</span></span>
 

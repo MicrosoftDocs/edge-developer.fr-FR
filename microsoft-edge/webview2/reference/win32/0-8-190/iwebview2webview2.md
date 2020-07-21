@@ -3,43 +3,42 @@ description: Héberger le contenu Web dans votre application Win32 avec le contr
 title: 0.8.355-WebView2 C++ Win32 IWebView2WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge
-ms.openlocfilehash: 52218ddcbecdaf3bdb736af877493c85d4460c10
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 64dac6c56576b618cbdc84da2c8fcbcd0e41028f
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878042"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884735"
 ---
-# <span data-ttu-id="9f6a9-104">0.8.355-interface IWebView2WebView2</span><span class="sxs-lookup"><span data-stu-id="9f6a9-104">0.8.355 - interface IWebView2WebView2</span></span> 
+# <span data-ttu-id="b2393-104">0.8.355-interface IWebView2WebView2</span><span class="sxs-lookup"><span data-stu-id="b2393-104">0.8.355 - interface IWebView2WebView2</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="9f6a9-105">Cette interface peut être modifiée ou indisponible pour les versions ultérieures SDK version 0.8.355.</span><span class="sxs-lookup"><span data-stu-id="9f6a9-105">This interface may be altered or unavailable for releases after SDK version 0.8.355.</span></span> <span data-ttu-id="9f6a9-106">Reportez-vous à [référence](../../../webview2-api-reference.md) pour la dernière référence d’API.</span><span class="sxs-lookup"><span data-stu-id="9f6a9-106">Please refer to [Reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface IWebView2WebView2
   : public IUnknown
 ```
 
-<span data-ttu-id="9f6a9-107">Fonctionnalités supplémentaires implémentées par l’objet WebView principal.</span><span class="sxs-lookup"><span data-stu-id="9f6a9-107">Additional functionality implemented by the primary WebView object.</span></span>
+<span data-ttu-id="b2393-105">Fonctionnalités supplémentaires implémentées par l’objet WebView principal.</span><span class="sxs-lookup"><span data-stu-id="b2393-105">Additional functionality implemented by the primary WebView object.</span></span>
 
-## <span data-ttu-id="9f6a9-108">Résumé</span><span class="sxs-lookup"><span data-stu-id="9f6a9-108">Summary</span></span>
+## <span data-ttu-id="b2393-106">Résumé</span><span class="sxs-lookup"><span data-stu-id="b2393-106">Summary</span></span>
 
- <span data-ttu-id="9f6a9-109">Ses</span><span class="sxs-lookup"><span data-stu-id="9f6a9-109">Members</span></span>                        | <span data-ttu-id="9f6a9-110">Descriptions</span><span class="sxs-lookup"><span data-stu-id="9f6a9-110">Descriptions</span></span>
+ <span data-ttu-id="b2393-107">Ses</span><span class="sxs-lookup"><span data-stu-id="b2393-107">Members</span></span>                        | <span data-ttu-id="b2393-108">Descriptions</span><span class="sxs-lookup"><span data-stu-id="b2393-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="9f6a9-111">Stop</span><span class="sxs-lookup"><span data-stu-id="9f6a9-111">Stop</span></span>](#stop) | <span data-ttu-id="9f6a9-112">Arrêtez toutes les navigations et les extractions de ressources en attente.</span><span class="sxs-lookup"><span data-stu-id="9f6a9-112">Stop all navigations and pending resource fetches.</span></span>
+[<span data-ttu-id="b2393-109">Stop</span><span class="sxs-lookup"><span data-stu-id="b2393-109">Stop</span></span>](#stop) | <span data-ttu-id="b2393-110">Arrêtez toutes les navigations et les extractions de ressources en attente.</span><span class="sxs-lookup"><span data-stu-id="b2393-110">Stop all navigations and pending resource fetches.</span></span>
 
-<span data-ttu-id="9f6a9-113">Vous pouvez QueryInterface pour cette interface à partir de l’objet qui implémente [IWebView2WebView](IWebView2WebView.md).</span><span class="sxs-lookup"><span data-stu-id="9f6a9-113">You can QueryInterface for this interface from the object that implements [IWebView2WebView](IWebView2WebView.md).</span></span> <span data-ttu-id="9f6a9-114">Pour plus d’informations, consultez l’interface [IWebView2WebView](IWebView2WebView.md) .</span><span class="sxs-lookup"><span data-stu-id="9f6a9-114">See the [IWebView2WebView](IWebView2WebView.md) interface for more details.</span></span>
+<span data-ttu-id="b2393-111">Vous pouvez QueryInterface pour cette interface à partir de l’objet qui implémente [IWebView2WebView](IWebView2WebView.md).</span><span class="sxs-lookup"><span data-stu-id="b2393-111">You can QueryInterface for this interface from the object that implements [IWebView2WebView](IWebView2WebView.md).</span></span> <span data-ttu-id="b2393-112">Pour plus d’informations, consultez l’interface [IWebView2WebView](IWebView2WebView.md) .</span><span class="sxs-lookup"><span data-stu-id="b2393-112">See the [IWebView2WebView](IWebView2WebView.md) interface for more details.</span></span>
 
-## <span data-ttu-id="9f6a9-115">Ses</span><span class="sxs-lookup"><span data-stu-id="9f6a9-115">Members</span></span>
+## <span data-ttu-id="b2393-113">Ses</span><span class="sxs-lookup"><span data-stu-id="b2393-113">Members</span></span>
 
-#### <span data-ttu-id="9f6a9-116">Stop</span><span class="sxs-lookup"><span data-stu-id="9f6a9-116">Stop</span></span> 
+#### <span data-ttu-id="b2393-114">Stop</span><span class="sxs-lookup"><span data-stu-id="b2393-114">Stop</span></span> 
 
-<span data-ttu-id="9f6a9-117">Arrêtez toutes les navigations et les extractions de ressources en attente.</span><span class="sxs-lookup"><span data-stu-id="9f6a9-117">Stop all navigations and pending resource fetches.</span></span>
+<span data-ttu-id="b2393-115">Arrêtez toutes les navigations et les extractions de ressources en attente.</span><span class="sxs-lookup"><span data-stu-id="b2393-115">Stop all navigations and pending resource fetches.</span></span>
 
-> <span data-ttu-id="9f6a9-118">point d' [arrêt](#stop)public HRESULT ()</span><span class="sxs-lookup"><span data-stu-id="9f6a9-118">public HRESULT [Stop](#stop)()</span></span>
+> <span data-ttu-id="b2393-116">point d' [arrêt](#stop)public HRESULT ()</span><span class="sxs-lookup"><span data-stu-id="b2393-116">public HRESULT [Stop](#stop)()</span></span>
 

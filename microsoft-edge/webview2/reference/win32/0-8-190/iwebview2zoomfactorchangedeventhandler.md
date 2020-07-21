@@ -3,45 +3,44 @@ description: Héberger le contenu Web dans votre application Win32 avec le contr
 title: 0.8.355-WebView2 C++ Win32 IWebView2ZoomFactorChangedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge
-ms.openlocfilehash: e4969ecbb5068f634eeb9a10f4de07277051ef45
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 237179df5ef704fb88516780696f3a9c10c9a198
+ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878000"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "10884665"
 ---
-# <span data-ttu-id="16e28-104">0.8.355-interface IWebView2ZoomFactorChangedEventHandler</span><span class="sxs-lookup"><span data-stu-id="16e28-104">0.8.355 - interface IWebView2ZoomFactorChangedEventHandler</span></span> 
+# <span data-ttu-id="1c651-104">0.8.355-interface IWebView2ZoomFactorChangedEventHandler</span><span class="sxs-lookup"><span data-stu-id="1c651-104">0.8.355 - interface IWebView2ZoomFactorChangedEventHandler</span></span> 
 
-> [!NOTE]
-> <span data-ttu-id="16e28-105">Cette interface peut être modifiée ou indisponible pour les versions ultérieures SDK version 0.8.355.</span><span class="sxs-lookup"><span data-stu-id="16e28-105">This interface may be altered or unavailable for releases after SDK version 0.8.355.</span></span> <span data-ttu-id="16e28-106">Reportez-vous à [référence](../../../webview2-api-reference.md) pour la dernière référence d’API.</span><span class="sxs-lookup"><span data-stu-id="16e28-106">Please refer to [Reference](../../../webview2-api-reference.md) for the latest API reference.</span></span>
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface IWebView2ZoomFactorChangedEventHandler
   : public IUnknown
 ```
 
-<span data-ttu-id="16e28-107">L’appelant implémente cette interface pour recevoir des événements ZoomFactorChanged.</span><span class="sxs-lookup"><span data-stu-id="16e28-107">The caller implements this interface to receive ZoomFactorChanged events.</span></span>
+<span data-ttu-id="1c651-105">L’appelant implémente cette interface pour recevoir des événements ZoomFactorChanged.</span><span class="sxs-lookup"><span data-stu-id="1c651-105">The caller implements this interface to receive ZoomFactorChanged events.</span></span>
 
-## <span data-ttu-id="16e28-108">Résumé</span><span class="sxs-lookup"><span data-stu-id="16e28-108">Summary</span></span>
+## <span data-ttu-id="1c651-106">Résumé</span><span class="sxs-lookup"><span data-stu-id="1c651-106">Summary</span></span>
 
- <span data-ttu-id="16e28-109">Ses</span><span class="sxs-lookup"><span data-stu-id="16e28-109">Members</span></span>                        | <span data-ttu-id="16e28-110">Descriptions</span><span class="sxs-lookup"><span data-stu-id="16e28-110">Descriptions</span></span>
+ <span data-ttu-id="1c651-107">Ses</span><span class="sxs-lookup"><span data-stu-id="1c651-107">Members</span></span>                        | <span data-ttu-id="1c651-108">Descriptions</span><span class="sxs-lookup"><span data-stu-id="1c651-108">Descriptions</span></span>
 --------------------------------|---------------------------------------------
-[<span data-ttu-id="16e28-111">Invoke</span><span class="sxs-lookup"><span data-stu-id="16e28-111">Invoke</span></span>](#invoke) | <span data-ttu-id="16e28-112">Appelée pour fournir à l’implémenteur des arguments d’événement pour l’événement correspondant.</span><span class="sxs-lookup"><span data-stu-id="16e28-112">Called to provide the implementer with the event args for the corresponding event.</span></span>
+[<span data-ttu-id="1c651-109">Invoke</span><span class="sxs-lookup"><span data-stu-id="1c651-109">Invoke</span></span>](#invoke) | <span data-ttu-id="1c651-110">Appelée pour fournir à l’implémenteur des arguments d’événement pour l’événement correspondant.</span><span class="sxs-lookup"><span data-stu-id="1c651-110">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-<span data-ttu-id="16e28-113">Utilisez la propriété IWebView2WebView. ZoomFactor pour obtenir le facteur de zoom modifié.</span><span class="sxs-lookup"><span data-stu-id="16e28-113">Use the IWebView2WebView.ZoomFactor property to get the modified zoom factor.</span></span>
+<span data-ttu-id="1c651-111">Utilisez la propriété IWebView2WebView. ZoomFactor pour obtenir le facteur de zoom modifié.</span><span class="sxs-lookup"><span data-stu-id="1c651-111">Use the IWebView2WebView.ZoomFactor property to get the modified zoom factor.</span></span>
 
-## <span data-ttu-id="16e28-114">Ses</span><span class="sxs-lookup"><span data-stu-id="16e28-114">Members</span></span>
+## <span data-ttu-id="1c651-112">Ses</span><span class="sxs-lookup"><span data-stu-id="1c651-112">Members</span></span>
 
-#### <span data-ttu-id="16e28-115">Invoke</span><span class="sxs-lookup"><span data-stu-id="16e28-115">Invoke</span></span> 
+#### <span data-ttu-id="1c651-113">Invoke</span><span class="sxs-lookup"><span data-stu-id="1c651-113">Invoke</span></span> 
 
-<span data-ttu-id="16e28-116">Appelée pour fournir à l’implémenteur des arguments d’événement pour l’événement correspondant.</span><span class="sxs-lookup"><span data-stu-id="16e28-116">Called to provide the implementer with the event args for the corresponding event.</span></span>
+<span data-ttu-id="1c651-114">Appelée pour fournir à l’implémenteur des arguments d’événement pour l’événement correspondant.</span><span class="sxs-lookup"><span data-stu-id="1c651-114">Called to provide the implementer with the event args for the corresponding event.</span></span>
 
-> <span data-ttu-id="16e28-117">[appel](#invoke)vers un HRESULT public ([IWebView2WebView](IWebView2WebView.md) \* WebView, IUnknown \* args)</span><span class="sxs-lookup"><span data-stu-id="16e28-117">public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md) \* webview,IUnknown \* args)</span></span>
+> <span data-ttu-id="1c651-115">[appel](#invoke)vers un HRESULT public ([IWebView2WebView](IWebView2WebView.md) \* WebView, IUnknown \* args)</span><span class="sxs-lookup"><span data-stu-id="1c651-115">public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md) \* webview,IUnknown \* args)</span></span>
 
-<span data-ttu-id="16e28-118">Il n’y a pas d’arguments d’événement et le paramètre args a la valeur null.</span><span class="sxs-lookup"><span data-stu-id="16e28-118">There are no event args and the args parameter will be null.</span></span>
+<span data-ttu-id="1c651-116">Il n’y a pas d’arguments d’événement et le paramètre args a la valeur null.</span><span class="sxs-lookup"><span data-stu-id="1c651-116">There are no event args and the args parameter will be null.</span></span>
 
