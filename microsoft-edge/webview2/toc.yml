@@ -8,6 +8,8 @@
       href: gettingstarted/wpf.md
     - name: WindowsForms
       href: gettingstarted/winforms.md
+    - name: WinUI 3.0
+      href: gettingstarted/winui.md
 - name: Concepts
   items:
     - name: Distribuer mon application
