@@ -3,34 +3,34 @@ description: Héberger le contenu Web de votre application Win32 avec le contrô
 title: Contrôle Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/21/2020
+ms.date: 07/20/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge, Windows Forms, WinForms, WPF, .NET
-ms.openlocfilehash: 9356da17f2db9456a9a309bc9ef06c74fbb50779
-ms.sourcegitcommit: e49b86082da884299fdd485d3311d63a7688c0d0
+ms.openlocfilehash: ea3d25d16aa9e8c182d564c68615b9643c9993b4
+ms.sourcegitcommit: a82aa5fc1ada35cd8274490fbff3c0a850785835
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "10754544"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "10888597"
 ---
 # Introduction à Microsoft Edge WebView2 (Preview)  
 
-Le contrôle Microsoft Edge WebView2 vous permet d’incorporer des technologies Web (HTML, CSS et JavaScript) dans vos applications natives.  Le contrôle WebView2 utilise [Microsoft Edge (chrome)](https://www.microsoftedgeinsider.com) comme moteur de rendu pour afficher le contenu Web dans les applications natives.  Avec WebView2, vous pouvez incorporer du code Web dans différentes parties de votre application native, ou générer l’application native entière au sein d’un seul WebView.  Pour plus d’informations sur la création d’une application WebView2, voir [commencer.](./index.md#getting-started)  
+Le contrôle Microsoft Edge WebView2 vous permet d’incorporer des technologies Web (HTML, CSS et JavaScript) dans vos applications natives.  Le contrôle WebView2 utilise [Microsoft Edge (chrome)][MicrosoftedgeinsiderMain] comme moteur de rendu pour afficher le contenu Web dans les applications natives.  Avec WebView2, vous pouvez incorporer du code Web dans différentes parties de votre application native, ou générer l’application native entière au sein d’un seul WebView.  Pour plus d’informations sur la création d’une application WebView2, voir [commencer.](#getting-started)  
 
-:::image type="complex" source="./media/WebView2/whatwebview.png" alt-text="Présentation de WebView":::
+:::image type="complex" source="./media/WebView2/whatwebview.png" alt-text="Présentation de WebView" lightbox="./media/WebView2/whatwebview.png":::
    Présentation de WebView  
 :::image-end:::  
 
 > [!NOTE]
-> La version préliminaire de WebView2 est conçue pour le prototype initial et rassembler des commentaires pour vous aider à établir la forme de l’API.  L’équipe WebView de Microsoft Edge ne recommande pas d’utiliser l’aperçu dans vos applications de production en raison de [modifications éventuelles](./releasenotes.md).  
+> La version préliminaire de WebView2 est conçue pour le prototype initial et rassembler des commentaires pour vous aider à définir la forme de l’API.  Vous ne devez pas utiliser l’aperçu dans vos applications de production en raison de modifications éventuelles.  Pour plus d’informations, consultez [Webview2Releasenotes].  
 
 ## Approche hybride des applications  
 
-Les développeurs doivent souvent choisir entre créer une application Web ou une application native.  La décision repose sur le compromis entre la portée et la puissance.  Les applications Web permettent d’offrir une large portée.  En tant que développeur Web, vous pouvez réutiliser la majeure partie de votre code, si ce n’est l’intégralité de votre code, sur toutes les différentes plateformes.  Toutefois, les applications natives utilisent les fonctionnalités de la plateforme Native entière.  
+Les développeurs doivent souvent choisir entre le bâtiment d’une application Web ou une application native.  La décision repose sur le compromis entre la portée et la puissance.  Les applications Web permettent d’offrir une large portée.  En tant que développeur Web, vous pouvez réutiliser la majeure partie de votre code, si ce n’est l’intégralité de votre code, sur toutes les différentes plateformes.  Toutefois, les applications natives utilisent les fonctionnalités de la plateforme Native entière.  
 
-:::image type="complex" source="./media/WebView2/webnative.png" alt-text="Web natif":::
+:::image type="complex" source="./media/WebView2/webnative.png" alt-text="Web natif" lightbox="./media/WebView2/webnative.png":::
    Web natif  
 :::image-end:::  
 
@@ -38,7 +38,7 @@ Les applications hybrides permettent aux développeurs de profiter au mieux de c
 
 ## Avantages de WebView2   
 
-:::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="Raisons de WebView":::
+:::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="Raisons de WebView" lightbox="./media/WebView2/webviewreasons.png":::
    Raisons de WebView  
 :::image-end:::  
 
@@ -87,13 +87,14 @@ Les applications hybrides permettent aux développeurs de profiter au mieux de c
 
 ## Prise en main  
 
-Pour générer et tester votre application à l’aide du contrôle WebView2, vous devez disposer de [Microsoft Edge (chrome)](https://www.microsoftedgeinsider.com/download) et du [SDK WebView2](https://aka.ms/webviewnuget) .  Pour commencer, sélectionnez l’une des options suivantes.  
+Pour générer et tester votre application à l’aide du contrôle WebView2, vous devez disposer de [Microsoft Edge (chrome)][MicrosoftedgeinsiderDownload] et du [SDK WebView2][NugetPackagesMicrosoftWebWebView2] .  Pour commencer, sélectionnez l’une des options suivantes.  
 
-*   [Commencer à utiliser Win32 C/C++](./gettingstarted/win32.md)  
-*   [Mise en route de WPF](./gettingstarted/wpf.md)  
-*   [Mise en route de WinForms](./gettingstarted/winforms.md)  
+*   [Commencer à utiliser Win32 C/C++][Webview2GettingstartedWin32]  
+*   [Mise en route de WPF][Webview2GettingstartedWpf]  
+*   [Mise en route de WinForms][Webview2GettingstartedWinforms]  
+*   [Commencer à utiliser WinUI3][Webview2GettingstartedWinui]  
 
-Le référentiel d' [exemples WebView2](https://github.com/MicrosoftEdge/WebView2Samples) contient des exemples qui illustrent l’ensemble des fonctionnalités du SDK WebView2 et des modèles d’utilisation de l’API. À mesure que d’autres fonctionnalités sont ajoutées au SDK WebView2, les exemples d’applications seront mis à jour.   
+Le référentiel d' [exemples WebView2][GithubMicrosoftedgeWebview2samples] contient des exemples qui illustrent l’ensemble des fonctionnalités du SDK WebView2 et des modèles d’utilisation de l’API.  À mesure que d’autres fonctionnalités sont ajoutées au SDK WebView2, les exemples d’applications seront mis à jour.  
 
 ## Plateformes prises en charge  
 
@@ -102,7 +103,7 @@ Un aperçu du développeur est disponible sur les environnements de programmatio
 *   Win32 C/C++  
 *   .NET Framework 4.6.2 ou version ultérieure  
 *   .NET Core 3,0 ou version ultérieure  
-*   [WinUI 3,0](/uwp/toolkits/winui3/)  
+*   [WinUI 3,0][UwpToolkitsWinui3]  
 
 Vous pouvez exécuter des applications WebView2 sur les versions suivantes de Windows.  
 
@@ -117,23 +118,47 @@ Vous pouvez exécuter des applications WebView2 sur les versions suivantes de Wi
 
 ## Étapes suivantes  
 
-Pour obtenir des informations plus détaillées sur la création et le déploiement d’applications WebView2, consultez la documentation conceptuelle et les guides de procédures.  
+Pour plus d’informations sur la création et le déploiement d’applications WebView2, voir la documentation conceptuelle et les guides de procédures.  
 
 #### Concepts  
 
-*   [Kit de développement logiciel (SDK) WebView2 et contrôle de version Microsoft Edge](./concepts/versioning.md)
-*   [Distribuer des applications WebView2](./concepts/distribution.md)  
-*   [Meilleures pratiques en matière de sécurité pour les applications WebView2](./concepts/security.md)
-*   [Gérer le dossier des données utilisateur dans les applications WebView2](./concepts/userdatafolder.md)
+*   [Comprendre les versions de kit de développement logiciel WebView2][Webview2ConceptsVersioning]
+*   [Distribution d’applications à l’aide de WebView2][Webview2ConceptsDistribution]  
+*   [Recommandations en matière de développement d’applications WebView2 sécurisées][Webview2ConceptsSecurity]
+*   [Gérer le dossier des données utilisateur dans les applications WebView2][Webview2ConceptsUserdatafolder]
  
 #### Guides de procédure  
 
-*   [Débogage de WebView2 avec DevTools et le débogage de script Visual Studio](./howto/debug.md)  
-*   [Automatisation et débogage de WebView2 avec Microsoft EdgeDriver](./howto/webdriver.md)  
+*   [Comment déboguer avec WebView2][Webview2HowtoDebug]  
+*   [Automatisation et test de WebView2 avec le pilote Microsoft Edge][Webview2HowtoWebdriver]  
 
 ## Contacter l’équipe WebView2  
 
-Aidez-vous à créer une expérience WebView2 plus riche en partageant vos commentaires.  Rendez-vous sur le site Web de [Commentaires référentiel Samples](https://aka.ms/webviewfeedback) pour envoyer des demandes de fonctionnalité ou des rapports de bogues.  C’est également le bon endroit où rechercher des problèmes connus.  
+Aidez-vous à créer une expérience WebView2 plus riche en partageant vos commentaires.  Pour envoyer des demandes de fonctionnalité ou des rapports de bogues, voir [WebView commentaires référentiel Samples][GithubMicrosoftedgeWebviewfeddback] .  C’est également le bon endroit pour rechercher des problèmes connus.  
 
 > [!NOTE]
-> Dans le cadre de l’aperçu du développeur, l’équipe WebView Microsoft Edge recueille également des données pour vous aider à créer un meilleur affichage du WebView.  Les utilisateurs peuvent désactiver la collecte des données de WebView en naviguant `edge://settings/privacy` dans le navigateur Microsoft Edge et en désactivant la collecte des données du navigateur.  
+> Dans le cadre de l’aperçu, nous recueillons des données pour vous aider à créer un meilleur produit.  Pour désactiver la collecte de données WebView2, accédez à la collection de données du navigateur et désactivez-la `edge://settings/privacy` .  
+
+<!-- links -->  
+
+[Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribution d’applications à l’aide de WebView2 | Documents Microsoft"  
+[Webview2ConceptsSecurity]: ./concepts/security.md "Recommandations en matière de développement d’applications WebView2 sécurisées | Documents Microsoft"  
+[Webview2ConceptsUserdatafolder]: ./concepts/userdatafolder.md "Gestion du dossier de données utilisateur | Documents Microsoft"  
+[Webview2ConceptsVersioning]: ./concepts/versioning.md "Comprendre les versions du SDK WebView2 | Documents Microsoft"  
+[Webview2GettingstartedWin32]: ./gettingstarted/win32.md "Mise en route de WebView2 (developer preview) | Documents Microsoft"   
+[Webview2GettingstartedWinforms]: ./gettingstarted/winforms.md "Commencer à utiliser WebView2 dans les applications Windows Forms (Preview) | Documents Microsoft"  
+[Webview2GettingstartedWinui]: ./gettingstarted/winui.md "Commencer à utiliser WebView2 dans WinUI3 (Preview) | Documents Microsoft"  
+[Webview2GettingstartedWpf]: ./gettingstarted/wpf.md "Commencer à utiliser WebView2 dans WPF (Preview) | Documents Microsoft"  
+[Webview2HowtoDebug]: ./howto/debug.md "Comment déboguer avec WebView2 | Documents Microsoft"  
+[Webview2HowtoWebdriver]: ./howto/webdriver.md "Automatisation et test de WebView2 avec le pilote Microsoft Edge | Documents Microsoft"  
+[Webview2Releasenotes]: ./releasenotes.md "Notes de publication sur le Webview2Releasenotes du SDK WebView2 Documents Microsoft"  
+
+[UwpToolkitsWinui3]: ./gettingstarted/winui.md "Windows UI Library 3 Preview 2 (2020 de juillet) | Documents Microsoft"  
+
+[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "Exemples de WebView2-MicrosoftEdge/WebView2Samples | GitHub"  
+[GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "Commentaires sur le WebView-MicrosoftEdge/WebViewFeedback | GitHub" 
+
+[MicrosoftedgeinsiderMain]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"  
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Télécharger Microsoft Edge Insider"  
+
+[NugetPackagesMicrosoftWebWebView2]: https://www.nuget.org/packages/Microsoft.Web.WebView2 "Microsoft. Web. WebView2 | Galerie NuGet"  
