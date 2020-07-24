@@ -16,10 +16,18 @@
       href: concepts/distribution.md
     - name: Gestion des dossiers de données utilisateur
       href: concepts/userdatafolder.md
+    - name: Événements de navigation
+      href: concepts/navigation-events.md
+    - name: Modèle de processus
+      href: concepts/process-model.md
     - name: Meilleures pratiques pour la sécurité
       href: concepts/security.md
     - name: Contrôle de version
       href: concepts/versioning.md
+    - name: Modèle de thread
+      href: concepts/threading-model.md
+    - name: Conventions de l’API Win32
+      href: concepts/win32-api-conventions.md
 - name: Notes de publication
   href: releasenotes.md
 - name: Feuille de route
