@@ -3,16 +3,16 @@ description: Ce guide vous donne une vue d’ensemble des notions de base et des
 title: Commencer à utiliser les applications Web progressives (chrome)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/15/2020
+ms.date: 07/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: applications Web progressives, PWA, Edge, Windows, PWABuilder, le manifeste Web, le travailleur de service, l’émission
-ms.openlocfilehash: 6c5fa5d6af8494f33e11a545d5dde1264604c787
-ms.sourcegitcommit: 136642396bb8094a535e203067ee429e60d31d25
+ms.openlocfilehash: a9a0cad2d771e52b783053e36f0f23dec5d8e70c
+ms.sourcegitcommit: 515522959f517e194f93a27f5d360690600edd9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "10659208"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "10894709"
 ---
 # Commencer à utiliser les applications Web progressives (chrome)  
 
@@ -26,7 +26,7 @@ Le guide suivant vous donne une vue d’ensemble des concepts de base de la cré
 ## Conditions préalables  
 
 *   Utilisez le [code vs][VisualstudioCodeMain] pour modifier votre code source PWA.  
-*   Utilisez [node. js][NodejsMain] comme serveur Web local.  
+*   Utilisez [Node.js][NodejsMain] comme serveur Web local.  
 
 ## Configurer une application Web de base  
 
@@ -125,7 +125,7 @@ Pour créer un Worker Worker dans votre projet, utilisez la recette du travaille
 1.  Dans le code VS, ouvrez `/public/index.html` et ajoutez l’extrait de code suivant à l’intérieur de la `<head>` balise.  
     
     ```html
-    <script src="/pwabuilder-sw-register.js"></script>
+    <script type="module" src="/pwabuilder-sw-register.js"></script>
     ```  
     
 Votre application Web possède désormais un service Worker qui fait appel à la stratégie de mise en cache prioritaire, qui extrait d’abord les ressources telles que les images, JS, CSS et HTML du cache, et repasse au réseau selon les besoins.  
@@ -319,7 +319,7 @@ Vous trouverez ci-dessous une liste de tâches supplémentaires à découvrir lo
 
 <!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps-edgehtml/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
-[VisualStudioNodejsTutorialPublishAzureAppService]: /visualstudio/nodejs/tutorial-nodejs#optional-publish-to-azure-app-service "Publier sur le service d’application Azure-créez un nœud. js et une application rapide dans Visual Studio | Documents Microsoft"  
+[VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Déploiement d’une application Node.js sur Azure avec code VS | Documents Microsoft"  
 
 [AzureCreateFreeAccount]: https://azure.microsoft.com/free "Créer un compte gratuit Azure | Microsoft Azure"  
 [AzureWebApps]: https://azure.microsoft.com/services/app-service/web "Applications Web | Microsoft Azure"  
@@ -345,7 +345,7 @@ Vous trouverez ci-dessous une liste de tâches supplémentaires à découvrir lo
 
 [MozillaServicesSendingVapidWebPushNotificationsPush]: https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service "Envoyer des notifications webtransmission identifiées par VAPID via le service pousser de Mozilla Services Mozilla"  
 
-[NodejsMain]: https://nodejs.org "Node. js"  
+[NodejsMain]: https://nodejs.org "Node.js"  
 
 [NPMWebPush]: https://www.npmjs.com/package/web-push "Web-Poussée | NPM"  
 [NPMWebPushEncrypt]: https://www.npmjs.com/package/web-push#encryptuserpublickey-userauth-payload-contentencoding "Encrypt (userPublicKey, userAuth, Payload, contentEncoding)-Web-Poussée | NPM"  

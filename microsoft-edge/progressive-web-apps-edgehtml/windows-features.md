@@ -7,12 +7,12 @@ ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: applications Web progressives, PWA, Edge, Windows, WinRT, UWP, EdgeHTML
-ms.openlocfilehash: 8ba682b03182194a773568254b66c3616bf4c3e2
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: 296ae0a65481edd312e06b83c1554813ec2bffae
+ms.sourcegitcommit: 515522959f517e194f93a27f5d360690600edd9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882785"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "10894716"
 ---
 # Personnaliser votre PWA (EdgeHTML) pour Windows  
 
@@ -23,9 +23,13 @@ PWAs installé sur Windows 10 Profitez de [tous les avantages de l'][PwaIndexWin
 *   Lancement/déplacement de votre application par le biais des commandes vocales Cortana  
 *   Intégration du système d’exploitation Windows \ (via le centre de notifications Windows, de la barre des tâches du bureau et des menus contextuels)  
 
-... et ce n’est que quelques-unes des possibilités ajoutées pour votre PWA \ (EdgeHTML \) sur Windows.  
+Il ne s’agit que de quelques-unes des possibilités ajoutées pour votre PWA \ (EdgeHTML \) sur Windows.  
 
-Ce guide décrit l’installation, l’exécution et l’amélioration de votre application PWA \ (EdgeHTML \) en tant qu’application Windows 10, tout en garantissant la compatibilité entre navigateur et multiplateforme.  
+Cet article vous explique comment installer et exécuter une application Windows 10 (EdgeHTML \) et l’améliorer, tout en garantissant la compatibilité entre navigateur et multiplateforme.  
+
+> [!IMPORTANT]
+> Les exemples et étapes de cet article nécessitent Visual Studio 2017. Visual Studio 2019 n’inclut pas le modèle utilisé dans cet article. Pour télécharger Visual Studio 2017, voir [téléchargements Visual Studio-2017, 2015 & les versions précédentes][PreviousVSDownloads] .  
+
 
 ## Conditions préalables  
 
@@ -342,3 +346,4 @@ Lorsque vous êtes prêt, voici comment \ (et pourquoi! \) pour [transmettre vot
 [MicrosoftSupportWindowsAppPermissions]: https://support.microsoft.com/help/10557/windows-10-app-permissions "Autorisations des applications"  
 [MicrosoftVisualStudioDownloads]: https://visualstudio.microsoft.com/downloads "Téléchargements"  
 [MicrosoftVisualStudioPreview]: https://visualstudio.microsoft.com/vs/preview "Visual Studio preview"  
+[PreviousVSDownloads]: https://visualstudio.microsoft.com/vs/older-downloads/ "Téléchargements Visual Studio"

@@ -3,17 +3,17 @@ description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos 
 title: WebView2 C++ Win32 ICoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 07/23/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge, ICoreWebView2
-ms.openlocfilehash: 81bc222324db9649439afa2a7c3c84f715fa2ae3
-ms.sourcegitcommit: b3555043e9d5aefa5a9e36ba4d73934d41559f49
+ms.openlocfilehash: a1da6789027234130c58078871d7da23b4e285ba
+ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894325"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "10895496"
 ---
 # interface ICoreWebView2 
 
@@ -96,50 +96,6 @@ WebView2 vous permet d’héberger le contenu Web à l’aide de la technologie 
 [COREWEBVIEW2_SCRIPT_DIALOG_KIND](#corewebview2_script_dialog_kind) | Type de boîte de dialogue JavaScript utilisée dans l’interface ICoreWebView2ScriptDialogOpeningEventHandler.
 [COREWEBVIEW2_WEB_ERROR_STATUS](#corewebview2_web_error_status) | Valeurs d’état d’erreur pour les navigations Web.
 [COREWEBVIEW2_WEB_RESOURCE_CONTEXT](#corewebview2_web_resource_context) | Énum pour les contextes de demande de ressources Web.
-
-## Événements de navigation
-
-L’ordre normal des événements de navigation est NavigationStarting, SourceChanged, ContentLoading, puis NavigationCompleted. Les événements suivants décrivent l’état de WebView lors de chaque navigation: NavigationStarting: WebView commence à naviguer et la navigation génère une requête réseau. L’hôte peut actuellement refuser la demande. SourceChanged: la source du WebView est remplacée par une nouvelle URL. Il est possible que cela soit dû à une navigation qui n’entraîne pas de requête réseau telle qu’une navigation de type fragment. HistoryChanged: l’historique de votre WebView a été mis à jour en conséquence de la navigation. ContentLoading: WebView a commencé à charger du nouveau contenu. NavigationCompleted: WebView a terminé de charger le contenu sur la nouvelle page. Les développeurs peuvent suivre les navigations vers chaque nouveau document à l’aide de l’ID de navigation. L’ID de navigation WebView change chaque fois qu’une navigation est réussie vers un nouveau document.
-
-![dot-inline-dotgraph-1.png](media/dot-inline-dotgraph-1.png)
-
-Notez qu’il s’agit d’événements de navigation avec le même argument d’événement NavigationId. Les événements de navigation avec différents arguments d’événement NavigationId risquent de se chevaucher. Par exemple, si vous démarrez une navigation pour l’événement NavigationStarting, puis démarrez une autre navigation, vous verrez le NavigationStarting de la première navigation suivi par le NavigationStarting du deuxième navigation, suivi de l’NavigationCompleted de la première navigation, puis de tout le reste des événements de navigation appropriés pour la deuxième navigation. Dans les cas d’erreur, il est possible ou non qu’un événement ContentLoading se poursuive sur une page d’erreur. Dans le cas d’une redirection HTTP, il existe plusieurs événements NavigationStarting dans une ligne, avec les indicateurs IsRedirect définis dans la première ligne, mais l’ID de navigation reste le même. Les mêmes navigations de document n’aboutissent pas à un événement NavigationStarting et n’incrémentent pas l’ID de navigation.
-
-Pour surveiller ou annuler les navigations dans les sous-cadres du WebView, utilisez FrameNavigationStarting.
-
-## Modèle de processus
-
-WebView2 utilise le même modèle de processus que le navigateur Web Edge. Il existe un processus de navigateur Edge par répertoire de données utilisateur spécifié dans une session utilisateur qui traitera tout processus appelant WebView2 spécifiant ce répertoire de données utilisateur. Cela signifie qu’un processus de navigateur Edge est susceptible de traiter plusieurs processus d’appel et qu’un processus d’appel est susceptible d’utiliser plusieurs processus de navigation latérale.
-
-![dot-inline-dotgraph-2.png](media/dot-inline-dotgraph-2.png)
-
-Il y a un certain nombre de processus de convertisseur. Celles-ci sont créées autant de fois que nécessaire pour traiter plusieurs trames dans différents affichages. Le nombre de processus de rendu varie en fonction de la fonctionnalité du navigateur d’isolement de site et du nombre d’origines distantes distinctes affichées dans les webvues associées.
-
-![dot-inline-dotgraph-3.png](media/dot-inline-dotgraph-3.png)
-
-Vous pouvez réagir aux blocages et se bloquer dans ces processus de navigateur et de convertisseur à l’aide de l’événement ProcessFailure.
-
-Vous pouvez arrêter en toute sécurité les processus de navigateur et de convertisseur associés à l’aide de la méthode Close.
-
-## Modèle de threads
-
-WebView2 doit être créé sur un thread d’interface utilisateur. Particulièrement un thread avec une pompe de messages. Tous les rappels se produiront sur ce thread et les appels dans le WebView doivent être effectués sur ce thread. Il n’est pas sûr d’utiliser le WebView à partir d’un autre thread.
-
-Les rappels incluant des gestionnaires d’événements et des gestionnaires d’achèvement s’exécutent en série. Autrement dit, si vous disposez d’un gestionnaire d’événements et commencez une boucle de message, il n’y a pas de gestionnaires d’événements ou de rappels d’achèvement.
-
-## Types de chaîne
-
-Les paramètres de type chaîne sont des chaînes de type LPWSTR nul terminées. Le l’appelant alloue la chaîne à l’aide de CoTaskMemAlloc. La propriété est transférée à l’appelant et il revient à l’appelant de libérer de la mémoire à l’aide de CoTaskMemFree.
-
-La chaîne figurant dans les paramètres est LPCWSTRe des chaînes arrêtées null. L’appelant vérifie que la chaîne est valide pour la durée de l’appel de fonction synchrone. Si les appelants doivent conserver cette valeur à un certain point après la fin de l’appel de fonction, l’appelant doit allouer sa propre copie de la valeur de chaîne.
-
-## D’analyse des URI et de JSON
-
-Diverses méthodes fournissent ou acceptent des URI et JSON en tant que chaînes. Utilisez votre propre bibliothèque préférée pour analyser et générer ces chaînes.
-
-Si WinRT est disponible pour votre application, vous pouvez l’utiliser `RuntimeClass_Windows_Data_Json_JsonObject` et `IJsonObjectStatics` analyser ou générer des chaînes JSON ou `RuntimeClass_Windows_Foundation_Uri` `IUriRuntimeClassFactory` analyser et générer des URI. Ces deux fonctions fonctionnent dans les applications Win32.
-
-Si vous utilisez IUri et CreateUri pour analyser les URI, il est possible que vous souhaitiez utiliser les indicateurs de création d’URI suivants pour que le comportement CreateUri correspond plus étroitement à l’analyse d’URI dans le WebView: `Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO`
 
 ## Ses
 
