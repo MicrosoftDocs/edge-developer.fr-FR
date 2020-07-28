@@ -7,13 +7,13 @@ ms.date: 05/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 0034e23885020aae5047c69219bd51235a5882b0
-ms.sourcegitcommit: a5392ab44133d742c0e1fa500ad9a872989b7c3f
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: b565f441ea6e6b3f2ae01ab251d7b9cae1aa815b
+ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10684684"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10898220"
 ---
 # Outils de développement Microsoft Edge (chrome)  
 
@@ -54,12 +54,12 @@ Si vous voulez afficher les journaux de votre code JavaScript frontal ou exécut
 :::image-end:::
 
 Le Microsoft Edge \ (chrome \) DevTools inclut les panneaux suivants.  
-*   Panneau d' **éléments** permettant de modifier les propriétés d’accessibilité, d’afficher les détecteurs d’événements et de définir des points d’arrêt de mutation DOM  
-*   Une **console** pour afficher et filtrer des messages de journaux, inspecter des objets JavaScript et des nœuds DOM et exécuter JavaScript dans le contexte de la fenêtre ou du cadre sélectionné.  
+*   Un panneau **Éléments** permettant de modifier les codes HTML et CSS, d’inspecter les propriétés d’accessibilité, d’afficher les écouteurs d’événement et de créer des points d’arrêt de mutation DOM  
+*   Une **Console** pour afficher et filtrer les messages journaux, examiner les objets JavaScript et les nœuds DOM et exécuter JavaScript dans le contexte de la fenêtre ou du cadre sélectionné.  
 *   Panneau **sources** permettant d’ouvrir et de modifier votre code, de définir des points d’arrêt, de parcourir le code et de consulter l’état de votre site Web en JavaScript à la fois  
-*   Panneau **réseau** permettant de surveiller et d’inspecter les demandes et les réponses du réseau et du cache du navigateur   
-*   Panneau **performance** pour le profil du temps et des ressources système requis par votre site  
-*   Panneau **mémoire** permettant de mesurer votre utilisation des ressources mémoire et de comparer les instantanés de tas à différents États du runtime du code  
+*   Un panneau **Réseau** permettant de contrôler et d’inspecter les demandes et les réponses à partir du réseau et du cache du navigateur.   
+*   Un panneau **Performance** pour profiler l’heure et les ressources système requises par votre site  
+*   Un panneau **Mémoire** pour mesurer l’utilisation des ressources de mémoire et comparer les instantanés de tas aux différents états du runtime de code  
 *   Panneau d' **application** pour inspecter, modifier et déboguer des manifestes de l’application Web, des travailleurs de services et des mises en cache du travailleur du service.  Vous pouvez également examiner et gérer le stockage, les bases de données et les caches à partir du volet de l' **application** .  
 *   Un volet de **sécurité** pour déboguer les problèmes de sécurité et vérifier que vous avez correctement implémenté https sur votre site Web.  HTTPs assure la sécurité et l’intégrité des données critiques de votre site et de vos utilisateurs qui fournissent des informations personnelles sur votre site.  
 *   Panneau **d’audit** **\ (** désormais, le changement de nom) pour exécuter un audit de votre site Web.  Les résultats de l’audit vous permettent d’améliorer la qualité de votre site de l’une des manières suivantes.  
@@ -98,7 +98,7 @@ Ces raccourcis contrôlent la fenêtre principale de DevTools, travaillent sur t
 
 | Action | Windows | macOS |  
 |:--- |:--- | :--- |  
-| Afficher/masquer DevTools \ (s’ouvre au dernier panneau affiché \) | `F12` ou`Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
+| Afficher/masquer DevTools \ (s’ouvre sur le panneau dernier affichage\) | `F12` ou`Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Afficher le panneau de la console | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
 | Afficher le DevTools dans le **mode inspecter l’élément** , qui vous permet de sélectionner un élément sur le site et de voir les balises HTML et CSS dans le panneau **éléments** | `Ctrl`+`Shift`+`C` | `Command`+`Option`+`C` |  
 | Afficher les paramètres | `?` ou`Fn`+`F1` | `?` ou`Fn`+`F1` |  
@@ -118,7 +118,7 @@ Ces raccourcis contrôlent la fenêtre principale de DevTools, travaillent sur t
 | Zoom arrière | `Ctrl`+`-` | `Command`+`-` |  
 | Restaurer le niveau de zoom par défaut | `Ctrl`+`0` | `Command`+`0` |  
 | Exécution d’un extrait | `Ctrl`+`O`ou `Ctrl` + `P` tapez `!` suivi du nom du script, puis appuyez sur `Enter` | Appuyez `Command` + `O` ou `Command` + `P` tapez `!` suivi du nom du script, puis appuyez sur `Enter` |  
-| Afficher le code source HTML non modifiable dans un nouvel onglet | `Ctrl`+`U` | N/A |  
+| Afficher le code source HTML non modifiable dans un nouvel onglet | `Ctrl`+`U` | Non applicable |  
 
 > [!NOTE]
 > S’il s’agit d’un débogage et interrompu à un point d’arrêt, le raccourci d' **actualisation**reprend d’abord le Runtime.  
@@ -143,7 +143,7 @@ Pour afficher un aperçu des fonctionnalités les plus récentes qui s’affiche
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools pour les débutants: prenez en main HTML et le DOM | Documents Microsoft"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/05/devtools "Nouveautés de Microsoft Edge (chrome) DevTools | Documents Microsoft"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools "Nouveautés de Microsoft Edge (chrome) DevTools | Documents Microsoft"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Protocole DevTools Microsoft Edge (chrome) | Documents Microsoft"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Modules complémentaires Microsoft Edge"  
