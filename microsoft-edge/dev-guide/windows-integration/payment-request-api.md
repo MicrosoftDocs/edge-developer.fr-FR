@@ -3,19 +3,22 @@ description: Découvrez comment thePayment demande à APIenables Microsoft Edge 
 title: Guide de développement-API de demande de paiement
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 keywords: Edge, développement Web, html, CSS, JavaScript, développeur
-ms.openlocfilehash: 75c596570a222336a4ba0c371acb8770f97804ee
-ms.sourcegitcommit: e690bb4d1cb9e73c93b468c9f55d91ea6fb6c654
+ms.openlocfilehash: b082e311dcbe5cff3101f084e7ff2c145e6e83df
+ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "10566678"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902863"
 ---
-# API de demande de paiement
+# API de demande de paiement (EdgeHTML)
+
+> [!NOTE]
+> Cet article décrit le flux de travail pris en charge dans la [version héritée de Microsoft Edge][MicrosoftSupport44533505].  Microsoft Edge \ (chrome \) prend en charge l’API de demande de paiement avec une autre implémentation basée sur le projet de chrome.  
 
 Les ventes de commerce électronique continuent de croître à un rythme rapide. D’après [eMarketer](https://www.emarketer.com/), les ventes numériques 2018 sont prévues pour une augmentation de 23% par rapport aux niveaux mesurés en 2013.  Si les particuliers et les entreprises jouissent de la commodité des ventes de commerce électronique, les problèmes persistent.  Dès à présent, chaque propriétaire de site Web d’e-commerce doit investir du temps pour développer des flux d’extraction de paiement et des règles de validation de grande qualité.  Les consommateurs doivent parcourir les différents flux d’extraction de paiement et entrer de nouveau les mêmes informations de paiement et d’expédition sur chaque site.  Cela peut prendre du temps et frustrant pour les particuliers, ce qui a pour principal taux d’abandon de panier d’achat et de diminution des ventes pour les commerçants. L' [estimation](http://baymard.com/lists/cart-abandonment-rate) des commerçants entre 60% et 70% des paniers d’achat est abandonnée.      
 
@@ -209,3 +212,9 @@ var options = {
 
 ## Spécifier
 [API de demande de paiement](https://w3.org/TR/payment-request/)
+
+<!-- links -->  
+
+[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
+
+[MicrosoftSupport44533505]: https://support.microsoft.com/help/4533505 "Qu’est-ce que Microsoft Edge hérité?"  

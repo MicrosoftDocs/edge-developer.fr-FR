@@ -3,16 +3,16 @@ description: Dernières fonctionnalités expérimentales de Microsoft Edge DevTo
 title: Fonctionnalités expérimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/07/2020
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, expérience
-ms.openlocfilehash: 6824b09ffc3c1f00c4a2f3000d84bf2c1be743d0
-ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.openlocfilehash: 6b3e1c06d6b8ed79054c28df483fcca93e5751d6
+ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "10866042"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902851"
 ---
 # Fonctionnalités expérimentales  
 
@@ -25,9 +25,9 @@ Si les fonctionnalités expérimentales sont disponibles dans tous les canaux de
 Procédez comme suit pour activer ou désactiver les fonctionnalités expérimentales dans Microsoft Edge.  
 
 1.  [Ouvrez devtools][DevtoolsOpen].  
-     *   Appuyez sur `Control` + `Shift` + `I` \ (Windows \) ou `Command` + `Option` + `I` \ (MacOS \).  Pour plus d’informations, reportez-vous à la rubrique [raccourcis clavier de Microsoft Edge devtools][DevToolsShortcuts].  
+     *   Sélectionnez `Control` + `Shift` + `I` \ (Windows \) ou `Command` + `Option` + `I` \ (MacOS \).  Pour plus d’informations, reportez-vous à la rubrique [raccourcis clavier de Microsoft Edge devtools][DevToolsShortcuts].  
 1.  Ouvrez le volet [paramètres][DevToolsCustomizeSettings] .  
-    *   Appuyez sur `Shift` + `?` .  Pour plus d’informations, reportez-vous à la rubrique [raccourcis clavier de Microsoft Edge devtools][DevToolsShortcuts].  
+    *   Sélectionnez `Shift` + `?` .  Pour plus d’informations, reportez-vous à la rubrique [raccourcis clavier de Microsoft Edge devtools][DevToolsShortcuts].  
 1.  Sur le côté gauche du volet **paramètres** , sélectionnez la section **expériences** .  
     
     :::image type="complex" source="./media/experiments-devtools.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-devtools.png":::
@@ -50,18 +50,19 @@ Les sections suivantes décrivent les nouvelles fonctionnalités expérimentales
 | [Activer les nouvelles fonctionnalités de débogage de grille CSS](#enable-new-css-grid-debugging-features) | 85 ou version ultérieure |  
 | [Activer la prise en charge du déplacement des onglets entre les panneaux](#enable-support-to-move-tabs-between-panels) | 85 ou version ultérieure |  
 | [Activer webhint](#enable-webhint) | 85 ou version ultérieure | 
+| [Activer la console réseau](#enable-network-console) | 85 ou version ultérieure |
 
 ### Activer l’onglet Paramètres de raccourcis clavier personnalisés
 
 Fournit une nouvelle page de **raccourcis** dans les [paramètres de devtools][DevToolsCustomizeSettings] qui permet d’associer des [raccourcis clavier][DevToolsShortcuts] dans le devtools au [code vs][VisualstudioCode].  
 
-Une fois que vous avez activé cette expérience, ouvrez de nouveau [devtools paramètres][DevToolsCustomizeSettings] en appuyant sur `Shift` + `?` .  Accédez à la page nouveau **raccourcis** .  Sélectionnez **devtools (par défaut)** dans le menu déroulant **correspondant aux raccourcis de** la liste déroulante, puis sélectionnez **Visual Studio code**.  Les raccourcis clavier dans le DevTools correspondent désormais aux raccourcis pour les actions équivalentes dans le code VS.  
+Une fois que vous avez activé l’expérience, rouvrez les [paramètres de devtools][DevToolsCustomizeSettings] à l’aide de la sélection `Shift` + `?` .  Accédez à la page nouveau **raccourcis** .  Sélectionnez **devtools (par défaut)** dans le menu déroulant **correspondant aux raccourcis de** la liste déroulante, puis sélectionnez **Visual Studio code**.  Les raccourcis clavier dans le DevTools correspondent désormais aux raccourcis pour les actions équivalentes dans le code VS.  
 
 :::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code VS" lightbox="./media/experiments-keyboard-shortcut.png":::
    Faire correspondre les raccourcis clavier du DevTools au code VS
 :::image-end:::  
 
-Par exemple, dans Windows, le raccourci clavier pour suspendre ou continuer à exécuter un script en [code vs][VisualstudioCodeShortcutsKeyboardWindows] est `F5` .  Avec la valeur prédéfinie **devtools (par défaut)** , ce raccourci est le même dans devtools qu' `F8` avec le **code prédéfini Visual Studio** , ce raccourci est désormais également disponible `F5` .  
+Par exemple, dans Windows, le raccourci clavier pour suspendre ou continuer à exécuter un script en [code vs][VisualstudioCodeShortcutsKeyboardWindows] est `F5` .  Avec la valeur prédéfinie **devtools (par défaut)** , le même raccourci dans devtools est `F8` .  Le raccourci est également associé au **code Visual Studio** prédéfini `F5` .  
 
 ### Activer les nouvelles fonctionnalités de débogage de grille CSS  
 
@@ -75,7 +76,7 @@ Permet d’améliorer les visualisations sur la page lorsque vous déboguez des 
 
 ### Activer la prise en charge du déplacement des onglets entre les panneaux  
 
-En règle générale, il est possible d’ouvrir des outils tels que des **éléments** et un **réseau** uniquement dans le panneau principal \ (Top \) de devtools.  De même, il est possible d’ouvrir des outils tels que la vue et les **problèmes** en **3D** uniquement dans le panneau tiroir \ (en bas) de devtools.  Lorsque cette expérience est sélectionnée, vous pouvez déplacer des outils entre les volets supérieur et inférieur en pointant sur l’onglet, en ouvrant le menu contextuel \ (clic droit sur \) et en sélectionnant **déplacer vers le haut** ou **déplacer vers le bas**.   Cette expérience vous permet de personnaliser la disposition de votre DevTools.  Pour afficher ou masquer le panneau inférieur, appuyez sur `Escape` .  
+En règle générale, il est possible d’ouvrir des outils tels que des **éléments** et un **réseau** uniquement dans le panneau principal \ (Top \) de devtools.  De même, il est possible d’ouvrir des outils tels que la vue et les **problèmes** en **3D** uniquement dans le panneau tiroir \ (en bas) de devtools.  Lorsque vous sélectionnez l’expérience, vous pouvez déplacer des outils entre les volets supérieur et inférieur en pointant sur l’onglet, en ouvrant le menu contextuel \ (clic droit sur \), puis en **haut** ou **en bas**.   Cette expérience vous permet de personnaliser la disposition de votre DevTools.  Pour afficher ou masquer le panneau inférieur, sélectionnez `Escape` .  
 
 :::image type="complex" source="./media/experiments-move-panels.png" alt-text="Déplacement d’un onglet entre les panneaux" lightbox="./media/experiments-move-panels.png":::
    Déplacement d’un onglet entre les panneaux  
@@ -85,13 +86,30 @@ En règle générale, il est possible d’ouvrir des outils tels que des **élé
 
 ### Activer webhint  
 
-[webhint][WebhintMain] est un outil open source qui fournit des commentaires en temps réel sur l’accessibilité, la compatibilité entre les navigateurs, la sécurité, les performances, PWAS, ainsi que d’autres problèmes courants liés au développement Web sur les sites Web.  Cette expérience apporte le commentaire de webhint à DevTools dans le volet des [problèmes][DevtoolsIssues] .  Vous pouvez sélectionner le problème pour voir la documentation relative à la résolution du problème ainsi qu’une liste des ressources affectées sur votre site Web.  Sélectionnez un lien vers une ressource pour ouvrir le volet **réseau**, **sources**ou **éléments** approprié dans devtools.  
+[webhint][WebhintMain] est un outil open source qui fournit des commentaires en temps réel sur l’accessibilité, la compatibilité entre les navigateurs, la sécurité, les performances, PWAS, ainsi que d’autres problèmes courants liés au développement Web sur les sites Web.  L’expérience [webhint][WebhintMain] a pour résultat le devtools de commentaires webhint dans le volet [problèmes][DevtoolsIssues] .  Vous pouvez sélectionner le problème pour voir la documentation relative à la résolution du problème ainsi qu’une liste des ressources affectées sur votre site Web.  Sélectionnez un lien vers une ressource pour ouvrir le volet **réseau**, **sources**ou **éléments** approprié dans devtools.  
 
 :::image type="complex" source="./media/experiments-webhint.png" alt-text="Commentaires de webhint dans le volet problèmes" lightbox="./media/experiments-webhint.png":::
    Commentaires de webhint dans le volet problèmes  
 :::image-end:::      
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
+
+### Activer la console réseau
+
+**Network console** est le titre d’une expérience visant à faire des requêtes réseau synthétiques sur http.  Vous pouvez utiliser l’expérience de la **console réseau** pour envoyer des demandes d’API Web.  
+
+Après avoir activé l’expérience, assurez-vous de redémarrer l’DevTools. Pour utiliser la console réseau:
+1.  Ouvrez le volet **réseau** .
+1.  Recherchez la demande réseau que vous souhaitez modifier et renvoyer.
+1.  Ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez **modifier, puis relire**. 
+1.  Lorsque la **console réseau** s’ouvre, modifiez les informations de requête réseau.
+1.  Sélectionnez **Envoyer**.  
+
+:::image type="complex" source="./media/network-network-console.png" alt-text="Console réseau dans le tiroir de la console" lightbox="./media/network-network-console.png":::
+Console réseau dans le tiroir de la console
+:::image-end::: 
+
+<!--Available in Microsoft Edge version 85 and later.  --> 
 
 ## Fonctionnalités expérimentales antérieures  
 

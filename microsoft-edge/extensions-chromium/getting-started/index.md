@@ -3,22 +3,22 @@ description: Découvrez ce qu’est une extension de chrome et développez progr
 title: Premiers pas avec les extensions Microsoft Edge (chrome)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: Edge-chrome, développement Web, html, CSS, JavaScript, développeur, extensions
-ms.openlocfilehash: a271514f39ed8bbe379116c33e23c973d3eb6adb
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: c2b24dc3d5535beeef6a4255b6fe2439fb67b77d
+ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565442"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902835"
 ---
 # Mise en route des extensions Microsoft Edge \ (chrome \)  
 
 Si vous souhaitez accéder directement à la création de votre première extension, accédez à la première partie de la création d’une image de NASA de l’extension du jour.  
 
-Si vous n’avez pas l’habitude des concepts et de l’architecture de l’extension, poursuivez votre lecture et découvrez les extensions.  Ces informations vous permettent de créer des extensions plus facilement dans la mesure où vous comprenez leurs motivations et leur architecture.  
+Si vous n’avez pas l’habitude des concepts et de l’architecture de l’extension, poursuivez votre lecture et découvrez les extensions.  Ces informations vous aideront à créer des extensions bien plus facilement, dans la mesure où vous comprenez les motivations et l’architecture des coulisses.  
 
 ## Créer une image de la NASA de l’extension jour  
 
@@ -51,7 +51,7 @@ Chaque onglet utilise essentiellement l’URL \ (également connue sous le nom d
 
 ### Toutes les communications de chaque onglet sont vers des serveurs distants  
 
-La compréhension du fonctionnement de chaque onglet dans un environnement isolé implique que ces onglets sont isolés les uns des autres, mais pas la plus grande Internet.  En règle générale, ces onglets, qui exécutent JavaScript comme langage de programmation, communiquent au serveur par le biais du serveur d’origine pour cette première demande GET entrée dans la barre d’URL située en haut de l’onglet de navigateur.  
+La compréhension du fonctionnement de chaque onglet dans un environnement isolé implique que ces onglets sont isolés les uns des autres, mais pas la plus grande Internet.  En règle générale, ces onglets, qui exécutent JavaScript comme langage de programmation défini, communiquent avec le serveur par le biais du serveur d’origine pour cette première demande GET entrée dans la barre d’URL située en haut de l’onglet de navigateur.  
 
 ## Le modèle d’extension réactive tout ce qui se trouve à l’envers  
 
@@ -71,7 +71,7 @@ Ce fichier zip inclut HTML, CSS, JavaScript, images et tous les éléments néce
 
 ### Lancement du serveur d’extension  
 
-Lorsque vous effectuez un déploiement sur un serveur Web, ce serveur Web, qu’il s’agisse d’Apache, d’IIS, de NGINX ou d’une autre application, contient votre offre Web.  Lorsque le navigateur navigue vers une URL sur un serveur, le `index.html` fichier sur le serveur Web est téléchargé.  Navigateur navigué à l’aide de certificats, de fichiers de configuration, etc.  Le `index.html` fichier est stocké dans un emplacement spécial sur le serveur Web.   Comment votre extension effectue-t-elle la même chose?  En particulier, comment les pages d’onglets de votre navigateur sont-elles en mesure d’accéder à ce fichier zip \ (votre extension)?  C’est ce que le runtime de l’extension effectue pour vous.  
+Lorsque vous effectuez un déploiement sur un serveur Web, ce serveur Web, qu’il s’agisse d’Apache, d’IIS, de NGINX ou d’une autre application, contient votre offre Web.  Lorsque le navigateur navigue vers une URL sur un serveur, le `index.html` fichier sur le serveur Web est téléchargé.  Navigateur navigué à l’aide de certificats, de fichiers de configuration, etc.  Le `index.html` fichier est stocké à un emplacement spécial sur le serveur Web.   Comment votre extension effectue-t-elle la même chose?  En particulier, en quoi l’onglet de votre navigateur peut-il accéder à ce fichier zip \ (votre extension)?  C’est ce que le runtime de l’extension effectue pour vous.  
 
 L’extension dessert les fichiers de l’URL (Uniform Resource Locator) au nom `extension://{some-long-unique-identifier}/index.html` .  Le nom que vous mettez entre crochets `{some-long-unique-identifier}` est un identificateur unique attribué à l’extension que vous avez installée.  Cela signifie que si 10 extensions uniques sont installées sur votre navigateur, chacune d’elles possède un identificateur unique qui pointe vers le fichier zip \ (ou l’ensemble d’extensions \) installé dans votre navigateur.  
 
@@ -81,7 +81,7 @@ L’extension dessert les fichiers de l’URL (Uniform Resource Locator) au nom 
 
 ### Extensions gérer et communiquer avec les onglets et la barre d’outils du navigateur  
 
-Les extensions interagissent avec la barre d’outils pour les navigateurs, chacune d’elles peut gérer toutes les pages d’onglets actives de façon sécurisée et manipuler le DOM de toutes les pages d’onglets.  Le navigateur intégré au chrome est une API de message permettant de communiquer entre les extensions et les pages d’onglets pour que cela se produise harmonieusement.  Cette API, également connue sous le nom de l’API extensions, offre de nombreuses fonctionnalités, notamment la gestion des notifications, la gestion du stockage, etc.  
+Les extensions interagissent avec la barre d’outils du navigateur, chacune d’elles peut gérer toutes les pages d’onglets actives de façon sécurisée et manipuler le DOM de toutes les pages d’onglets.  Le navigateur intégré au chrome est une API de message permettant de communiquer entre les extensions et les pages d’onglets pour que cela se produise harmonieusement.  Cette API, également connue sous le nom de l’API extensions, offre de nombreuses fonctionnalités, notamment la gestion des notifications, la gestion du stockage, etc.  
 
 Tout comme les serveurs Web, les extensions peuvent exécuter en continu le fonctionnement de \ (ou du mode veille en attente de notifications \) tout le temps que le navigateur exécute.  Vous pouvez considérer une extension comme un Orchestrator pour le navigateur.  Là encore, l’extension s’exécute totalement indépendamment des pages d’onglets, mais par le biais de l’API d’extensions, et des autorisations d’activation accordées à l’extension, chaque extension peut contrôler quasiment tout ou partie des pages d’onglets qui s’exécutent dans le navigateur.  
 
