@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, compatibilité, plateforme Web
-ms.openlocfilehash: 0785544d0245827f58f3f7c71edd5a18a3d12404
-ms.sourcegitcommit: d982699ee25e8704fcaad7a15b4d8d015aef2f12
+ms.openlocfilehash: 32b8d7ef4c34365a005fbcceec0097adbf08ea37
+ms.sourcegitcommit: aba52b35b832ba7a7dd6eb042807cd7c8e56e79f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "10868764"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10920241"
 ---
 # Modifications apportées à Microsoft Edge ayant un impact sur la compatibilité des sites  
 
@@ -20,8 +20,8 @@ Le Web évolue en permanence pour améliorer l’interface utilisateur, la sécu
 
 | Changement | Canal Stable | Expérimentation | Informations complémentaires |  
 |:--- |:--- |:--- |:--- |
-| Cookies par défaut `SameSite=Lax` | [Chrome ou chrome + 1](#release-comments)  | V82 Canaries, dev V82 | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, y compris sur la chronologie prévue par Google pour cette modification, consultez l’entrée d’état de la [plateforme chrome][ChromePlatformStatus5088147346030592].  |  
-| Stratégie de renvoi: par défaut `strict-origin-when-cross-origin` | [Chrome ou chrome + 1](#release-comments)  | V79 Canaries, dev V79 | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, y compris sur la chronologie prévue par Google pour cette modification, consultez l’entrée d’état de la [plateforme chrome][ChromePlatformStatus6251880185331712].  |  
+| Cookies par défaut `SameSite=Lax` `SameSite=None-requires-Secure` | [Chrome + 1](#release-comments) \ (Edge V86 \)  | V82 Canaries, dev V82 | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, y compris sur la chronologie prévue par Google pour cette modification, consultez l’entrée d’état de la [plateforme chrome][ChromePlatformStatus5088147346030592].  |  
+| Stratégie de renvoi: par défaut `strict-origin-when-cross-origin` | [Chrome + 1](#release-comments) \ (Edge V86 \)  | V79 Canaries, dev V79 | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, y compris sur la chronologie prévue par Google pour cette modification, consultez l’entrée d’état de la [plateforme chrome][ChromePlatformStatus6251880185331712].  |  
 | Ne pas autoriser les XmlHttpRequest synchrones dans la page de masquage | [Chrome + 1](#release-comments) \ (Edge V83 \) |  | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Le chrome correspondant au chrome, Microsoft Edge propose une stratégie de groupe pour désactiver cette modification jusqu’au V88 Edge.  Pour plus d’informations, y compris sur la chronologie prévue par Google pour cette modification, consultez l’entrée d’état de la [plateforme chrome][ChromePlatformStatus4664843055398912].  |  
 | Afficher une invite discrète pour les demandes d’autorisation de notification | Bordure V84 |  | Les demandes de notification silencieuse affichent une icône de requête subtile dans la barre d’adresse pour les autorisations de notification de site demandées à l’aide de l' `Notifications` `Push` API ou, en remplaçant l’interface utilisateur d’invite de menu volant d’autorisation complète ou standard.  Cette fonctionnalité est actuellement activée pour tous les utilisateurs.  Pour désactiver les demandes de notification silencieuse, accédez à `edge://settings/content/notifications` .  À l’avenir, l’équipe Microsoft Edge risque de réactiver l’invite de notifications flyout complète dans certains cas.  |  
 | Désactiver TLS/1.0 et TLS/1.1 par défaut | Bordure V84 |  | Pour vous aider à découvrir les sites concernés, vous pouvez définir le `edge://flags/#display-legacy-tls-warnings` drapeau de sorte que Microsoft Edge affiche une notification de non-blocage «non sécurisée» lors du chargement de pages qui nécessitent des protocoles TLS hérités.  La stratégie de groupe [SSLMinVersion][DeployedEdgePoliciesSSLMinVersion] autorise la réactivation de TLS/1.0 et TLS/1.1; la stratégie reste disponible jusqu’au 88 Edge.  |  
