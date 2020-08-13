@@ -3,23 +3,23 @@ description: Hébergement de contenu Web dans votre application WinUI avec le co
 title: Applications Microsoft Edge WebView2 pour WinUI
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinUI applications, WinUI, Edge, CoreWebView2, contrôle de navigateur, html Edge, mise en route, mise en route, .NET
-ms.openlocfilehash: 9960a4411e69f0232ae2d202a61a9beb01c0a631
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 5b9bbb4578fc580ddc77680a57b481501e48cda7
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895510"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926490"
 ---
 # Commencer à utiliser WebView2 dans WinUI3 (Preview)  
 
 Dans cet article, vous pouvez commencer à créer votre première application WebView2 à l’aide de WinUI3 et en savoir plus sur les principales fonctionnalités de [Présentation de Microsoft Edge WebView2 (Preview)][Webview2Index].  Pour plus d’informations sur les API individuelles, voir informations de référence sur les [API][GithubMicrosoftUiXamlSpecsWebview2].  
 
-## Conditions préalables  
+## Prérequis  
 
 Vérifiez que vous disposez de la liste des conditions préalables suivantes avant de poursuivre l’article suivant.  
 
@@ -268,7 +268,7 @@ Pour plus d’informations sur les fonctionnalités d’WebView2, voir [concepts
 
 ## Contacter l’équipe WebView de Microsoft Edge  
 
-Aidez-vous à créer une expérience WebView2 plus riche en partageant vos commentaires.  Visitez le site Web Microsoft Edge [référentiel Samples][GithubMicrosoftedgeWebviewfeedback] pour envoyer des demandes de fonctionnalité ou des rapports de bogues, ou pour rechercher des problèmes connus.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
@@ -296,6 +296,6 @@ Aidez-vous à créer une expérience WebView2 plus riche en partageant vos comme
 
 [WindowsDotnetcliBlobCoreSdk50100Preview4202681X86]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exe "Télécharger dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exe"  
 
-[WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe "dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
+[WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe " dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
 
 [VisualstudioMarketplaceWinUiprojecttemplates]: https://marketplace.visualstudio.com/items?itemName=Microsoft-WinUI.WinUIProjectTemplates "Modèles de projet WinUI 3"  

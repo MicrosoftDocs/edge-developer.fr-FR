@@ -3,17 +3,17 @@ description: Automatiser et tester le contrôle WebView2 à l’aide du pilote M
 title: Automatisation et test de WebView2 avec le pilote Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, Edge, ICoreWebView2, ICoreWebView2Controller, sélénium, pilote Microsoft Edge
-ms.openlocfilehash: 15e9a0957047569a0832fbb6ea6e8bf280905b8d
-ms.sourcegitcommit: 8dca1c1367853e45a0a975bc89b1818adb117bd4
+ms.openlocfilehash: a91c01d1ad765dae45061e382daedc2295d70bb8
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "10697258"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926444"
 ---
 # Automatisation et test de WebView2 avec le pilote Microsoft Edge
 
@@ -139,6 +139,6 @@ Pour en savoir plus:
 - En savoir plus sur le contrôle [WebView2](https://docs.microsoft.com/microsoft-edge/hosting/webview2) et son utilisation lors de l’incorporation de contenu Web dans votre application native
 - Pour en savoir plus sur l’automatisation de Microsoft Edge (chrome), consultez [la documentation relative au pilote Microsoft Edge](https://docs.microsoft.com/microsoft-edge/webdriver-chromium) .
 
-## Contacter l’équipe WebView2  
+## Contacter l’équipe WebView de Microsoft Edge  
 
-Aidez-nous à créer une expérience WebView2 plus riche en partageant vos commentaires! Consultez notre page de [Commentaires référentiel Samples](https://github.com/MicrosoftEdge/WebViewFeedback) pour envoyer des demandes de fonctionnalité ou des rapports de bogues, ou pour rechercher des problèmes connus.
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  

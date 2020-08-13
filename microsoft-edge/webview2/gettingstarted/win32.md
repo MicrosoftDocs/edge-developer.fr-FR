@@ -3,23 +3,23 @@ description: Héberger le contenu Web de votre application Win32 avec le contrô
 title: Mise en route de WebView2 pour les applications Win32
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/30/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: 03c6f20b59dd6de2aa95e402f82ac3e2a3940839
-ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
+ms.openlocfilehash: ec5144f911d5bf00f141d1e8e53718154f1cbb24
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10902842"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926483"
 ---
 # Mise en route de WebView2 (developer preview)  
 
 Le contenu suivant vous présente les fonctionnalités fréquemment utilisées de [WebView2 (developer preview)][Webview2Index] et fournit un point de départ pour la création de votre première application WebView2.  Pour plus d’informations sur les API WebView2 individuelles, voir informations de référence sur les [API][Webview2ReferenceWin3209538].  
 
-## Conditions préalables  
+## Prérequis  
 
 *   [Microsoft Edge (chrome)][MicrosoftedgeinsiderDownload] installé sur le système d’exploitation pris en charge \ (actuellement Windows 10, Windows 8,1 et Windows 7 \).  
     
@@ -282,9 +282,9 @@ La plupart des fonctionnalités WebView2 qui ne sont pas abordées sur cette pag
 *   Pour obtenir un exemple d’application généré à l’aide de WebView2, voir [WebView2Browser][GithubMicrosoftedgeWebview2browser].  
 *   Pour plus d’informations sur l’API WebView2, voir informations de référence sur les [API][Webview2ReferenceWin3209538].  
 
-## Contacter l’équipe WebView2  
+## Contacter l’équipe WebView de Microsoft Edge  
 
-Aidez-vous à créer une expérience WebView2 plus riche en partageant vos commentaires!  Visitez le site de [Commentaires référentiel Samples][GithubMicrosoftedgeWebviewfeedback] sur GitHub pour envoyer des demandes de fonctionnalité ou des rapports de bogues, ou pour rechercher des problèmes connus.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 

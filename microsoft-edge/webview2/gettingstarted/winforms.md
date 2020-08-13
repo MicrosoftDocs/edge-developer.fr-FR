@@ -3,23 +3,23 @@ description: Héberger du contenu Web dans votre application Windows Forms avec 
 title: Applications WebView 2 de Microsoft Edge 2 pour Windows Forms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinForms applications, WinForms, Edge, CoreWebView2, contrôle de navigateur, html Edge, mise en route, mise en route, .NET, Windows Forms
-ms.openlocfilehash: 634fbd74a94ea990bc3eb9c150760522a5c13ce1
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 7d7ddf445adee7b3d20d268ab1d53c0999fd54ce
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895524"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926455"
 ---
 # Commencer à utiliser WebView2 dans les applications Windows Forms (Preview)  
 
 Dans cet article, vous allez commencer à créer votre première application WebView2 et à découvrir les principales fonctionnalités de [WebView2 (Preview)](/microsoft-edge/hosting/webview2/index).  Pour plus d’informations sur les API individuelles, voir informations de référence sur les [API](../reference/dotnet/0-9-515-reference-webview2.md).  
 
-## Conditions préalables  
+## Prérequis  
 
 Vérifiez que vous avez installé la liste des conditions préalables suivantes avant de continuer:  
 
@@ -302,4 +302,4 @@ Félicitations, vous avez créé votre première application WebView2.
 
 ## Contacter l’équipe WebView de Microsoft Edge  
 
-Aidez-vous à créer une expérience WebView2 plus riche en partageant vos commentaires!  Visitez le site Web Microsoft Edge [référentiel Samples](https://aka.ms/webviewfeedback) pour envoyer des demandes de fonctionnalité ou des rapports de bogues, ou pour rechercher des problèmes connus.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  

@@ -3,17 +3,17 @@ description: Héberger le contenu Web de votre application Win32 avec le contrô
 title: Contrôle Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge, Windows Forms, WinForms, WPF, .NET
-ms.openlocfilehash: ea3d25d16aa9e8c182d564c68615b9643c9993b4
-ms.sourcegitcommit: a82aa5fc1ada35cd8274490fbff3c0a850785835
+ms.openlocfilehash: bb2287ca854372d9592a3b90c7df6f9a8abf620e
+ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "10888597"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926469"
 ---
 # Introduction à Microsoft Edge WebView2 (Preview)  
 
@@ -103,7 +103,7 @@ Un aperçu du développeur est disponible sur les environnements de programmatio
 *   Win32 C/C++  
 *   .NET Framework 4.6.2 ou version ultérieure  
 *   .NET Core 3,0 ou version ultérieure  
-*   [WinUI 3,0][UwpToolkitsWinui3]  
+*   [WinUI 3.0][UwpToolkitsWinui3]  
 
 Vous pouvez exécuter des applications WebView2 sur les versions suivantes de Windows.  
 
@@ -132,12 +132,12 @@ Pour plus d’informations sur la création et le déploiement d’applications 
 *   [Comment déboguer avec WebView2][Webview2HowtoDebug]  
 *   [Automatisation et test de WebView2 avec le pilote Microsoft Edge][Webview2HowtoWebdriver]  
 
-## Contacter l’équipe WebView2  
+## Contacter l’équipe WebView de Microsoft Edge  
 
-Aidez-vous à créer une expérience WebView2 plus riche en partageant vos commentaires.  Pour envoyer des demandes de fonctionnalité ou des rapports de bogues, voir [WebView commentaires référentiel Samples][GithubMicrosoftedgeWebviewfeddback] .  C’est également le bon endroit pour rechercher des problèmes connus.  
+[!INCLUDE [contact WebView team note](./includes/contact-webview-team-note.md)]  
 
 > [!NOTE]
-> Dans le cadre de l’aperçu, nous recueillons des données pour vous aider à créer un meilleur produit.  Pour désactiver la collecte de données WebView2, accédez à la collection de données du navigateur et désactivez-la `edge://settings/privacy` .  
+> Au cours de l’aperçu, les données collectées permettent de créer un produit de meilleure qualité.  Pour désactiver la collecte de données WebView2, accédez à la collection de données du navigateur et désactivez-la `edge://settings/privacy` .  
 
 <!-- links -->  
 
