@@ -2,16 +2,16 @@
 title: Afficher les données du cache d’application avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 6ce3087e9c719efbcf4d9ebceb860edd0ed0c3b6
-ms.sourcegitcommit: ad68bfbb355f6cfdaaf6612b77ea3985d4d6a58b
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: fc1800fc54e5fb0d7998c62ce163ece7a461dd82
+ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "10612094"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "10931208"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,32 +27,26 @@ ms.locfileid: "10612094"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Afficher les données du cache d’application avec Microsoft Edge DevTools   
-
-
+# Afficher les données du cache d’application avec Microsoft Edge DevTools  
 
 > [!WARNING]
 > L’API du cache d’application est [supprimée de la plateforme Web][HTMLStandardOfflineWebApplications].  
 
 Ce guide vous montre comment utiliser [Microsoft Edge devtools][MicrosoftEdgeDevTools] pour inspecter les ressources [du cache d’applications][MDNWebAPIsWindowApplicationCache] .  
 
-## Afficher les données du cache d’application   
+## Afficher les données du cache d’application  
 
 1.  Sélectionnez l’onglet **sources** pour ouvrir le panneau **sources** .  Le volet **manifeste** s’ouvre généralement par défaut.  
     
-    > ##### Figure1  
-    > Volet manifeste  
-    > ![Volet manifeste][ImageManifestPane]  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-manifest.msft.png":::
+       Volet **manifeste**  
+    :::image-end:::  
 
-1.  Développez la section cache de l' **application** , puis cliquez sur un cache pour afficher les ressources.  
+1.  Développez la section cache de l' **application** , puis choisissez une mise en cache pour afficher les ressources.  
     
-    > ##### Figure 2  
-    > Volet cache de l’application  
-    > ![Volet cache de l’application][ImageApplicationCachePane]  
+    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text="Volet cache de l’application" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
+       Volet **cache** de l’application  
+    :::image-end:::  
 
 Chaque ligne de la table représente une ressource mise en cache.  
 
@@ -62,10 +56,12 @@ La colonne **type** représente la [catégorie de la ressource][MDNHTMLResources
 |:--- |:--- |  
 | `Explicit` | Cette ressource a été explicitement répertoriée dans le manifeste. |  
 | `Fallback` | L’URL est une alternative pour une autre ressource.  L’URL de l’autre ressource n’est pas répertoriée dans DevTools. |  
-| `Master` | L' `manifest` attribut de la ressource indique que ce cache est le parent de la ressource. |  
-| `Network` | Le manifeste indiqué que cette ressource doit provenir du réseau. |  
+| `Master` | L' `manifest` attribut de la ressource indique que le cache est le parent de la ressource. |  
+| `Network` | Le manifeste spécifié que la ressource doit provenir du réseau. |  
 
-En bas du tableau figure il existe des icônes de statut indiquant votre connexion réseau et l’état du cache de l’application.  Le cache de l’application doit présenter les États suivants.  
+<!--todo:  replace "Master" phrasing if possible.  -->  
+
+En bas du tableau figure il existe des icônes de statut indiquant votre connexion réseau et l’état du **cache**de l’application.  Le **cache** de l’application doit présenter les États suivants.  
 
 | État | Détails |  
 |:--- |:--- |  
@@ -75,18 +71,9 @@ En bas du tableau figure il existe des icônes de statut indiquant votre connexi
 | `OBSOLETE` | Le cache est en cours de suppression. |  
 | `UPDATEREADY` |  Une nouvelle version du cache est disponible. |  
 
-<!--   -->  
-
-
-
-<!-- image links -->  
-
-[ImageManifestPane]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Figure 1: volet manifeste"  
-[ImageApplicationCachePane]: /microsoft-edge/devtools-guide-chromium/media/storage-cache-pane-cache-storage-resources.msft.png "Figure 2: volet de cache de l’application"  
-
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Outils de développement Microsoft Edge (chrome)"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
 
 [HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "Applications Web hors connexion-norme HTML"  
 
