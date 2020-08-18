@@ -3,17 +3,17 @@ description: Hébergement de contenu Web dans votre application WinUI avec le co
 title: Applications Microsoft Edge WebView2 pour WinUI
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/17/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinUI applications, WinUI, Edge, CoreWebView2, contrôle de navigateur, html Edge, mise en route, mise en route, .NET
-ms.openlocfilehash: 5b9bbb4578fc580ddc77680a57b481501e48cda7
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.openlocfilehash: 805655fd27c0b654e1ccb41c615aa21797d6ddf7
+ms.sourcegitcommit: ef6d6adae1f4d18a219fa3e17f91b95b40367a40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926490"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934897"
 ---
 # Commencer à utiliser WebView2 dans WinUI3 (Preview)  
 
@@ -26,7 +26,7 @@ Vérifiez que vous disposez de la liste des conditions préalables suivantes ava
 *   Windows 10 version 1803 \ (Build 17134 \) ou version ultérieure.  Pour plus d’informations, voir [Windows Update: FAQ][MicrosoftSupport12373].  
 *   [Canal Canaries Microsoft Edge (chrome)][MicrosoftedgeinsiderDownload] sur Windows 10, Windows 8,1 ou Windows 7.  
 *   Visual Studio 2019, version 16,7 Preview 1.  Pour plus d’informations, reportez-vous à la rubrique [Windows UI Library 3 Preview 2 (2020 de juillet)][WindowsAppsWinui3ConfigureYourDevEnvironment].  
-*   Les versions [x64][WindowsDotnetcliBlobCoreSdk50100Preview4202681X86] et [x86][WindowsDotnetcliBlobCoreSdk50100Preview4202681X64] de .net 5 Preview 4.  
+*   Les versions [x64][WindowsDotnetcliBlobCoreSdk50100Preview4202681X64] et [x86][WindowsDotnetcliBlobCoreSdk50100Preview4202681X86] de .net 5 Preview 4.  
 *   Extension de [modèle de projet WinUI 3][VisualstudioMarketplaceWinUiprojecttemplates] pour Visual Studio 2019.  
 Assurez-vous d' [activer le mode développeur][WindowsUwpGetStartedEnableYourDeviceForDevelopment] pour vous assurer que vous avez accès à toutes les fonctionnalités de Visual Studio.  
 
@@ -190,8 +190,10 @@ Les applications qui hébergent des contrôles WebView2 écoutent les événemen
 *   `ContentLoading`  
 *   `HistoryChanged`  
 *   `NavigationCompleted`  
+
 > [!NOTE]
 > La redirection HTTP déclenche plusieurs `NavigationStarting` événements.  
+
 Pour plus d’informations, voir [événements de navigation][Webviews2ConceptsNavigationEvents].  
 
 Lorsque des erreurs se produisent, les événements suivants sont déclenchés et peuvent accéder à une page d’erreur.  
@@ -199,10 +201,8 @@ Lorsque des erreurs se produisent, les événements suivants sont déclenchés e
 *   `SourceChanged`  
 *   `ContentLoading`  
 *   `HistoryChanged`  
-    
-
+     
 Pour obtenir un exemple d’utilisation des événements, inscrivez un gestionnaire pour `NavigationStarting` Annuler toutes les demandes qui n’utilisent pas HTTPS. Dans `MainWindow.xaml.cs` l’exemple, modifiez le constructeur pour s’inscrire `EnsureHttps` , puis ajoutez la fonction pour qu' `EnsureHttps` il corresponde à l’extrait de code suivant.  
-
 
 ```csharp
 public MainWindow()
