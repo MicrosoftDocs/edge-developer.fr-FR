@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 07/10/2020
+  ms.date: 08/20/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 979a1a67291e7d0859b8978f32bdbe1e17bf27f6
-  ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+  ms.openlocfilehash: 90d7547ebe6bde883a10826ea132d5d2050e3066
+  ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/13/2020
-  ms.locfileid: "10866056"
+  ms.lasthandoff: 08/20/2020
+  ms.locfileid: "10942200"
 highlightedContent:
   items:
   - title: Télécharger Microsoft Edge (canal stable
@@ -273,9 +273,9 @@ additionalContent:
         url: /microsoft-edge/windows-runtime
   - title: Aide & le support technique
     items:
-    - title: Support communautaire
-      summary: Obtenez des conseils et des réponses d’une communauté d’experts par le biais de StackOverflow.
-      url: https://stackoverflow.com/questions/tagged/microsoft-edge+Microsoft-edge-extension
+    - title: Support de la communauté sur Microsoft Q&A
+      summary: Obtenez des conseils et des réponses d’experts de la communauté sur Microsoft Q&
+      url: /answers/topics/ms-edge.html
     - title: Obtenez de l’aide sans frais par le biais de l’application
       summary: Microsoft s’engage à garantir le fonctionnement de vos applications sur Microsoft Edge.  Si vous rencontrez des problèmes avec vos applications ou sites Web professionnels sur la dernière version de Microsoft Edge, Microsoft vous aidera à les résoudre sans frais supplémentaires. Pour en savoir plus sur les conditions d’éligibilité, voir l’achat.
       url: https://aka.ms/AppAssureEdge
