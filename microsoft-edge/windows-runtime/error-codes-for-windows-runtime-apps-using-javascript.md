@@ -1,7 +1,7 @@
 ---
 title: Codes d’erreur pour les applications Windows Runtime en JavaScript
 ms.custom: ''
-ms.date: 04/01/2020
+ms.date: 07/29/2020
 ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
@@ -36,14 +36,16 @@ caps.latest.revision: 1
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: 7aad8577d79bc5612f526e4e2bf1ceb0f2c2929a
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 7779da61da9f011e55eeb496c7332e5b7cd5a023
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10566657"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942149"
 ---
 # Codes d’erreur pour les applications Windows Runtime en JavaScript  
+
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
 Voici les codes d’erreur qui s’affichent dans la console Microsoft Visual Studio lorsque vous développez des applications Windows Runtime en JavaScript.  
 
@@ -62,7 +64,7 @@ Voici les codes d’erreur qui s’affichent dans la console Microsoft Visual St
 |:--- |:--- |  
 | APPHOST9610: «l’application a détecté une erreur lors de la préparation de la navigation vers une page d’erreur personnalisée: *codeerreur*». |  |  
 | APPHOST9611: «l’application n’a pas pu accéder à une page d’erreur personnalisée en raison de l’erreur suivante: *codeerreur*.» |  |  
-| APPHOST9613: «l’application n’a pas pu accéder à l' *URI* en raison de l’erreur suivante: *codeerreur*.» |  |  
+| APPHOST9613: «l’application n’a pas pu accéder à l' *URI*  en raison de l’erreur suivante: *codeerreur*.» |  |  
 | APPHOST9614: «un document dans un IFRAME a demandé le mode de document *requestedDocMode* , mais le système applique le mode de document *currentDocMode* .  L’iframe utilise le mode de document *currentDocMode* . | Pour plus d’informations sur l’affichage de contenu Web distant, voir [comment créer un lien vers des pages Web externes][PreviousVersionsWindowsAppsHh780594].  |  
 | APPHOST9615: «l’application ne peut pas télécharger le fichier sur *URI* , car il a été appelé par programme en dehors du contexte local.» | Se produit lorsque le contenu du contexte Web essaie de télécharger un fichier par programme.  |  
 | APPHOST9616: "cet URI ne peut pas utiliser les API de géolocalisation.  Les API de géolocalisation peuvent être appelées uniquement à partir d’un URI qui fait partie du package ou qui est inclus dans l’élément ApplicationContentUris du manifeste.» | Pour plus d’informations sur ce qui est autorisé dans le contexte Web, voir [fonctionnalités et restrictions par contexte][PreviousVersionsWindowsAppsHh465373].  |  
@@ -77,25 +79,23 @@ Voici les codes d’erreur qui s’affichent dans la console Microsoft Visual St
 | APPHOST9624: «l’application ne peut pas utiliser le script pour charger l’URL d' *URL* , car l’URL lance une autre application.  Seule l’action directe de l’utilisateur peut lancer une autre application.» | Les applications ne peuvent pas lancer d’autres applications directement.  Les autres applications peuvent être lancées par l’utilisateur lorsque l’application implémente certains contrats.  Pour plus d’informations, voir [Contrats et extensions d’application][PreviousVersionsWindowsAppsHh464906].  |  
 | APPHOST9626: «une référence directe à un fichier de ressources `ms-appx://1d33240b-0b00-40e4-a416-a4750c48787f/ja-jp\images\logo.scale-140.png` a été détectée.  Cette référence entraîne des échecs lorsqu’elle est utilisée en dehors de l’environnement de débogage. | En raison du chemin d’accès du fichier `logo.scale-140.png` , ce fichier PNG est considéré comme une ressource localisée, ce qui provoque l’erreur dans ces ressources localisées qui ne peuvent pas être référencées directement.  Voir [globalisation de votre application (html)][PreviousVersionsWindowsAppsHh465006] si vous envisagez d’utiliser ce fichier en tant que ressource de langue.  Dans le cas contraire, essayez de renommer le répertoire posant problème.  |  
 
-## Voir aussi  
+## Voir également  
 
 [Utilisation de Windows Runtime en JavaScript][WindowsRuntimeJavascript]  
 
-<!-- image links -->  
-
 <!-- links -->  
 
-[WindowsRuntimeJavascript]: /microsoft-edge/windows-runtime/using-the-windows-runtime-in-javascript "Utilisation de Windows Runtime en JavaScript"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Utilisation de Windows Runtime en JavaScript | Documents Microsoft"  
 
-[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Classe de géolocalisation"  
+[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Classe de géolocalisation | Documents Microsoft"  
 
-[PreviousVersionsHh771917]: /previous-versions/hh771917(v=vs.85) "méthode addPublicLocalApplicationUri"  
+[PreviousVersionsHh771917]: /previous-versions/hh771917(v=vs.85) "méthode addPublicLocalApplicationUri | Documents Microsoft"  
 
-[PreviousVersionsWindowsAppsHh452771]: /previous-versions/windows/apps/hh452771(v=win.10) "Comment exiger une connexion HTTPs (HTML)"  
-[PreviousVersionsWindowsAppsHh464906]: /previous-versions/windows/apps/hh464906(v=win.10) "Contrats et extensions d’application (applications Windows Runtime)"  
-[PreviousVersionsWindowsAppsHh465006]: /previous-versions/windows/apps/hh465006(v=win.10) "Globalisation de votre application (HTML)"  
-[PreviousVersionsWindowsAppsHh465373]: /previous-versions/windows/apps/hh465373(v=win.10) "Fonctionnalités et restrictions par contexte (HTML)"  
-[PreviousVersionsWindowsAppsHh465380]: /previous-versions/windows/apps/hh465380(v=win.10) "Fonctionnalités HTML, CSS et JavaScript et différences (HTML)"  
-[PreviousVersionsWindowsAppsHh780594]: /previous-versions/windows/apps/hh780594(v=win.10) "Créer un lien vers des pages Web externes (HTML)"  
+[PreviousVersionsWindowsAppsHh452771]: /previous-versions/windows/apps/hh452771(v=win.10) "Comment exiger une connexion HTTPs (HTML) | Documents Microsoft"  
+[PreviousVersionsWindowsAppsHh464906]: /previous-versions/windows/apps/hh464906(v=win.10) "Contrats et extensions d’application (applications Windows Runtime) | Documents Microsoft"  
+[PreviousVersionsWindowsAppsHh465006]: /previous-versions/windows/apps/hh465006(v=win.10) "Globalisation de votre application (HTML) | Documents Microsoft"  
+[PreviousVersionsWindowsAppsHh465373]: /previous-versions/windows/apps/hh465373(v=win.10) "Fonctionnalités et restrictions par contexte (HTML) | Documents Microsoft"  
+[PreviousVersionsWindowsAppsHh465380]: /previous-versions/windows/apps/hh465380(v=win.10) "Fonctionnalités HTML, CSS et JavaScript et différences (HTML) | Documents Microsoft"  
+[PreviousVersionsWindowsAppsHh780594]: /previous-versions/windows/apps/hh780594(v=win.10) "Créer un lien vers des pages Web externes (HTML) | Documents Microsoft"  
 
 [MDNIframe]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>: élément de cadre inséré | MDN"  

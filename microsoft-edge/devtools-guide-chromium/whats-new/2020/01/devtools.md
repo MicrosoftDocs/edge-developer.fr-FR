@@ -2,16 +2,16 @@
 title: Nouveautés de DevTools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 6de8f7b11edb476f2656dd6f16e02413b1873ed8
-ms.sourcegitcommit: a5392ab44133d742c0e1fa500ad9a872989b7c3f
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: 8e9e6885d04c7ad15a688b51cee4c16440d3ca1e
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10684712"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942094"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,7 @@ ms.locfileid: "10684712"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
-# Nouveautés de DevTools (Microsoft Edge 81)   
-
-
+# Nouveautés de DevTools (Microsoft Edge 81)  
 
 ## Annonces de l’équipe Microsoft Edge DevTools  
 
@@ -51,7 +43,7 @@ L’équipe DevTools a 170 contribué aux modifications apportées à Chrome pou
 
 Vous voulez savoir comment rendre votre page Web accessible à tous vos utilisateurs?  Téléchargez les informations [d’accessibilité][AccessibilityInsights] et les extensions [Webhint][WebhintBrowserExtension] pour Microsoft Edge pour commencer.  
 
-Si vous utilisez un lecteur d’écran ou le clavier pour naviguer dans DevTools, envoyez-nous vos commentaires en nous appuyant sur un [Tweet][PostTweetEdgeDevTools] ou en cliquant sur l’icône de [Commentaires](#feedback) .  
+Si vous utilisez un lecteur d’écran ou le clavier pour naviguer dans DevTools, envoyez-nous vos commentaires en nous appuyant sur un [Tweet][PostTweetEdgeDevTools] ou en cliquant sur l’icône d' [envoi de commentaires](#getting-in-touch-with-microsoft-edge-devtools-team) .  
 
 [#963183][crbug963183] problème de chrome  
 
@@ -120,7 +112,7 @@ Si vous voulez que Microsoft Edge soit dans une langue et que votre DevTools res
 
 Les messages de **console** ne sont pas localisés.  Seules les chaînes utilisées dans l’interface utilisateur DevTools sont affichées dans la langue que vous utilisez pour Microsoft Edge.  
 
-Si vous souhaitez utiliser le DevTools dans une autre langue que celle proposée, vous pouvez utiliser le [Tweet][PostTweetEdgeDevTools] ou cliquer sur l’icône de [Commentaires](#feedback) .  
+Si vous souhaitez utiliser le DevTools dans une autre langue que celle proposée, vous pouvez utiliser le [Tweet][PostTweetEdgeDevTools] ou cliquez sur l’icône d' [envoi de commentaires](#getting-in-touch-with-microsoft-edge-devtools-team) .  
 
 [#941561][crbug941561] problème de chrome  
 
@@ -144,7 +136,7 @@ Utilisez la **vue 3D** pour déboguer votre application Web en naviguant dans le
 
 Pour accéder à l’affichage 3D, appuyez sur la touche `Ctrl`  +  `Shift`  +  `P` **affichage** 3D et sélectionnez **afficher la vue 3D**.  
 
-Nous travaillons sur l’interface utilisateur et nous ajoutons d’autres fonctionnalités à l’affichage 3D; nous vous envoyons donc votre [avis](#feedback).  
+Nous travaillons sur l’interface utilisateur et nous ajoutons d’autres fonctionnalités à l’affichage 3D; nous vous envoyons donc votre [avis](#getting-in-touch-with-microsoft-edge-devtools-team).  
 
 [#987787][crbug987787] problème de chrome  
 
@@ -171,7 +163,7 @@ Avec le [débogueur pour l’extension de code Microsoft Edge][VisualStudioMarke
 
 Pour plus d’informations, voir [Comment déboguer Microsoft Edge du code vs][VisualStudioCodeDebuggerEdgeExtension].  
 
-#### Astuce  
+#### webhint  
 
 L’extension de code [webhint][VisualStudioMarketplaceWebhintExtension] et `webhint` de code vous permet d’améliorer votre page Web lorsque vous rédigez un message. Cette extension exécute et signale les diagnostics de vos fichiers d’espace de travail en fonction de l' `webhint` analyse.  
 
@@ -199,15 +191,13 @@ La prévention de suivi est une fonctionnalité unique de Microsoft Edge qui vou
 > Messages dans la console lors du suivi de la prévention bloquer l’accès au stockage pour un suivi  
 > ![Messages dans la console lors du suivi de la prévention bloquer l’accès au stockage pour un suivi][ImageTrackingPrevention]  
 
-[En savoir plus sur la prévention de suivi et le compromis entre la confidentialité et la compatibilité Web][TrackingPrevention].
-
-
+[En savoir plus sur la prévention de suivi et le compromis entre la confidentialité et la compatibilité Web][TrackingPrevention].  
 
 ## Annonces du projet de chrome  
 
 Les sections suivantes annoncent des fonctionnalités supplémentaires disponibles dans Microsoft Edge 81 qui ont été fournies au projet de chrome Open source.  
 
-### Prise en charge de moto G4 en mode appareil 
+### Prise en charge de moto G4 en mode appareil  
 
 Après l' [activation de la barre d’outils de l’appareil][DeviceToolbar], simulez les dimensions d’une fenêtre d’affichage moto G4 de la liste des **appareils** .  
 
@@ -228,9 +218,9 @@ Fonctionnalités connexes:
 
 [#924693][crbug924693] problème de chrome  
 
-### Mises à jour associées au cookie;   
+### Mises à jour associées au cookie;  
 
-#### Cookies bloqués dans le volet cookies   
+#### Cookies bloqués dans le volet cookies  
 
 Le volet cookies du panneau application affiche désormais les cookies bloqués avec un arrière-plan jaune.  
 
@@ -240,7 +230,7 @@ Le volet cookies du panneau application affiche désormais les cookies bloqués 
 
 [#1030258][crbug|::ref1::|] problème de chrome  
 
-#### Priorité de cookie dans le volet cookie   
+#### Priorité de cookie dans le volet cookie  
 
 Les tables cookies dans les panneaux réseau et application incluent désormais une colonne de **priorité** .  
 
@@ -249,7 +239,7 @@ Les tables cookies dans les panneaux réseau et application incluent désormais 
 
 [#1026879][crbug1026879] problème de chrome  
 
-#### Modifier toutes les valeurs de cookie   
+#### Modifier toutes les valeurs de cookie  
 
 Toutes les cellules des tables cookie sont modifiables, à l’exception des cellules de la colonne **taille** , car cette colonne représente la taille du réseau du cookie, en octets.  Pour obtenir une description de chaque colonne, voir [champs][CookiesFields] .  
 
@@ -257,27 +247,27 @@ Toutes les cellules des tables cookie sont modifiables, à l’exception des cel
 > Modification d’une valeur de cookie  
 > ![Modification d’une valeur de cookie][ImageEditCookie]  
 
-#### Copy As node. js FETCH pour inclure des données de cookie   
+#### Copy As Node.js FETCH pour inclure des données de cookie  
 
-Cliquez avec le bouton droit sur une demande réseau et sélectionnez **copier**la  >  **copie en tant que nœud. js FETCH** pour obtenir une `fetch` expression incluant des données de cookie.  
+Cliquez avec le bouton droit sur une demande réseau et sélectionnez **copier**la  >  **copie sous Node.js récupérer** pour obtenir une `fetch` expression incluant des données de cookie.  
 
 > ##### Figure14  
-> Copy As node. js Fetch  
-> ![Copy As node. js Fetch][ImageCopyFetch]  
+> Copy As Node.js Fetch  
+> ![Copy As Node.js Fetch][ImageCopyFetch]  
 
 [#1029826][crbug1029826] problème de chrome  
 
-### Icônes de manifeste d’application Web plus précises   
+### Icônes de manifeste d’application Web plus précises  
 
 Auparavant, le volet manifeste du panneau d’application a envoyé ses propres demandes pour afficher les icônes du manifeste de l’application Web.  DevTools affiche maintenant la même icône de manifeste que celle utilisée par Microsoft Edge.  
 
 > ##### Figure15  
 > Icônes du volet manifeste  
-> ![Icônes du volet manifeste][ImageManifestIcon]   
+> ![Icônes du volet manifeste][ImageManifestIcon]  
 
 [#985402][crbug985402] problème de chrome  
 
-### Survol des propriétés de contenu CSS pour afficher les valeurs sans échappement   
+### Survol des propriétés de contenu CSS pour afficher les valeurs sans échappement  
 
 Placez le pointeur de la souris sur la valeur d’une `content` propriété pour afficher la version sans échappement de la valeur.  
 
@@ -285,15 +275,15 @@ Par exemple, dans cette [démonstration][CSSContentDemo] , lorsque vous examinez
 
 > ##### Figure16  
 > Chaîne d’échappement  
-> ![Chaîne d’échappement][ImageEscapedString]   
+> ![Chaîne d’échappement][ImageEscapedString]  
 
 Lorsque vous pointez sur la `content` valeur, vous voyez la valeur sans séquence d’échappement:  
 
 > ##### Figure17  
 > Valeur sans échappement  
-> ![Valeur sans échappement][ImageUnescapedString]   
+> ![Valeur sans échappement][ImageUnescapedString]  
 
-### Erreurs de carte source plus détaillées dans la console   
+### Erreurs de carte source plus détaillées dans la console  
 
 La console donne désormais plus de détails sur la raison pour laquelle une table source n’a pas pu être chargée ou analysée.  Auparavant, il vous suffit de fournir une erreur sans expliquer ce qui s’est passé.  
 
@@ -301,7 +291,7 @@ La console donne désormais plus de détails sur la raison pour laquelle une tab
 > Erreur de chargement du mappage source dans la console  
 > ![Erreur de chargement du mappage source dans la console][ImageSourcemapError]  
 
-### Paramètre permettant de désactiver le défilement au-delà de la fin d’un fichier   
+### Paramètre permettant de désactiver le défilement au-delà de la fin d’un fichier  
 
 Ouvrez [paramètres][Settings] , puis désactivez l’option les sources de **Préférences**  >  **Sources**  >  **autorisent le défilement au-delà de la fin du fichier** pour désactiver le comportement de l’interface utilisateur par défaut qui vous permet de faire défiler le fichier dans le volet **sources** .  
 
@@ -313,33 +303,19 @@ Ouvrez [paramètres][Settings] , puis désactivez l’option les sources de **Pr
 > Le défilement au-delà de la fin d’un fichier est désormais désactivé dans le panneau sources  
 > ![Le défilement au-delà de la fin d’un fichier est désormais désactivé dans le panneau sources][ImageScroll]  
 
-## Commentaires   
-
-
-
-Découvrir les nouvelles fonctionnalités et les modifications de cette publication ou tout autre sujet lié à DevTools:  
-
-*   Envoyez vos commentaires à l’aide de l’icône de **Commentaires** dans le devtools  
-
-> ##### Figure 21  
-> Icône de **Commentaires** dans le Microsoft Edge devtools  
-> ![L’icône * * Feedback * * dans Microsoft Edge DevTools][ImageFeedbackIcon]  
-
-*   Tweeter sur [@EdgeDevTools][PostTweetEdgeDevTools]  
-*   Envoyez une suggestion au [site Web de votre choix][TheWebWeWant]  
-*   Classer des bogues sur ce document dans le référentiel [Edge-développeurs][GitHubMicrosoftDocsEdgeDeveloperNewIssue]  
-
-## Télécharger les canaux Microsoft Edge preview   
+## Télécharger les canaux Microsoft Edge preview  
 
 Si vous utilisez Windows ou macOS, envisagez d’utiliser les [canaux Microsoft Edge Preview][MicrosoftEdgePreviewChannels] comme navigateur par défaut.  Les canaux d’aperçu vous permettent d’accéder aux dernières fonctionnalités de DevTools.  
 
-<!-- <<../../_shared/devtools-feedback.md>>
+## Contacter l’équipe Microsoft Edge DevTools  
 
-<<../../_shared/canary.md>>
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
-<<../../_shared/discover.md>> -->
+<!-- <<../../_shared/devtools-feedback.md>>  
 
+<<../../_shared/canary.md>>  
 
+<<../../_shared/discover.md>> -->  
 
 <!-- image links -->  
 
@@ -356,15 +332,13 @@ Si vous utilisez Windows ou macOS, envisagez d’utiliser les [canaux Microsoft 
 [ImageMotoG4Frame]: ../../images/2020/01/motog4frame.msft.png "Figure 11: affichage du matériel moto G4" 
 [ImageBlockedCookies]: ../../images/2020/01/blockedcookies.msft.png "Figure 12: cookies bloqués dans le volet cookies du panneau application"
 [ImageEditCookie]: ../../images/2020/01/editcookie.msft.png "Figure 13: modification d’une valeur de cookie"
-[ImageCopyFetch]: ../../images/2020/01/fetchcookies.msft.png "Figure 14: Copy As node. js Fetch"
+[ImageCopyFetch]: ../../images/2020/01/fetchcookies.msft.png "Figure 14: copier en tant que Node.js récupérer"
 [ImageManifestIcon]: ../../images/2020/01/manifesticons.msft.png "Figure 15: icônes dans le volet manifeste"
 [ImageEscapedString]: ../../images/2020/01/escapedstring.msft.png "Figure 16: chaîne d’échappement"
 [ImageUnescapedString]: ../../images/2020/01/unescapedstring.msft.png "Figure 17: valeur sans échappement"
 [ImageSourcemapError]: ../../images/2020/01/sourcemap.msft.png "Figure 18: erreur de chargement d’une carte source dans la console"
 [ImageSettings]: ../../images/2020/01/settings.msft.png "Figure 19: désactivation de l’option autoriser le défilement au-delà de la fin du fichier dans les paramètres"
 [ImageScroll]: ../../images/2020/01/scrollingsources.msft.png "Figure 20: le défilement au-delà de la fin d’un fichier est désormais désactivé dans le panneau sources"
-[ImageFeedbackIcon]: ../../images/2020/01/feedback-icon.msft.png "Figure 21: icône * * Feedback * * dans Microsoft Edge DevTools"
-
 
 <!-- links -->  
 

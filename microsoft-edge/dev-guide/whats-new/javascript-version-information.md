@@ -1,30 +1,32 @@
 ---
 title: Informations de version JavaScript
 description: Comparez la prise en charge du langage JavaScript à l’ensemble des applications Microsoft Edge, Microsoft Store et Internet Explorer
-ms.date: 03/05/2020
+ms.date: 07/28/2020
 ms.prod: microsoft-edge
 ms.topic: language-reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
 keywords: Edge, IE, chakra, JScript, WWA, applications du Windows Store
 ms.custom: seodec18
-ms.openlocfilehash: 0edc5769cf80ae9a7ac741c0f478f9ca639d935f
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 6041cd538c55303e68cadf3f740716b3c3637898
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565070"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941884"
 ---
 # Informations de version JavaScript  
 
-La prise en charge de JavaScript varie en fonction des applications Microsoft Edge, Microsoft Store et de différents modes de document d’Internet Explorer. Pour plus d’informations sur le contrôle de version du code de document IE, voir définition de la [*compatibilité du document*](https://go.microsoft.com/fwlink/p/?LinkId=208537).  
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
+
+La prise en charge de JavaScript varie entre les applications Microsoft Edge, Microsoft Store et différents modes de document d’Internet Explorer \ (IE \). Pour plus d’informations sur le contrôle de version du code de document IE, voir définition de la [compatibilité du document](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).  
 
 Le tableau suivant résume la prise en charge JavaScript entre les applications Internet Explorer, Microsoft Edge et Microsoft Store.  
   
 > [!IMPORTANT]
-> Fonctionnalités expérimentales \ (activé à *propos de: indicateurs*\) est indiqué par «exp». Dans certains cas, la prise en charge des applications du Windows *Store* varie en fonction des applications Windows 8 \ (V8 \) et Windows 10 \ (version 10 \) et de la version de bureau de Windows, comme indiqué.  
+> Les fonctionnalités expérimentales \ (activées à partir de `about:flags` \) sont indiquées par `Exp.` dans certains cas, la prise en charge des applications du Windows Store varie en fonction des applications Windows 8 \ (V8 \) et Windows 10 \ (version 10 \), et de la version de bureau de Windows.  
   
- | Élément Language | Excentriques, normes d’Internet Explorer 6, standards d’Internet Explorer 7 | Internet Explorer 8 standards | Internet Explorer 9 standard | Internet Explorer 10 standard | Internet Explorer 11 standards | MicrosoftEdge | Applications du Windows Store |  
+ | Élément Language | Excentriques, normes d’Internet Explorer 6, normes d’Internet Explorer 7 | Normes d’Internet Explorer 8 | Normes d’Internet Explorer 9 | Normes d’Internet Explorer 10 | Normes d’Internet Explorer 11 | MicrosoftEdge | Applications du Windows Store |  
  |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |  
 | [__proto \ _ \ _ Property (objet)](/scripting/javascript/reference/proto-property-object-javascript) | N | N | N | N | Y | Y | V8 (Win): N <br /> v 8.1 (Win): Y <br /> v 8.1 (téléphone): Y |  
 | [$1... $9 Propriétés (RegExp)](/scripting/javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript) | Y | Y | Y | Y | Y | Y | Y |  

@@ -2,16 +2,16 @@
 title: Nouveautés de DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/24/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 7b0193d25fb1d081e5746ec1271ca7b9f4e60c23
-ms.sourcegitcommit: ad5eb43172280974b8c063867c2097f7c5c0e77d
+ms.openlocfilehash: f569414a95336278c93b1bbafd57153ca902df12
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10898263"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942197"
 ---
 # Nouveautés de DevTools (Microsoft Edge 85)  
 
@@ -184,7 +184,7 @@ DevTools possède désormais une meilleure prise en charge de certaines des fonc
       Saisie semi-automatique de syntaxe de [chaînage facultative][V8DevOptionalChaining]  
    :::column-end:::
    :::column span="2":::
-      La saisie semi-automatique de propriété dans la **console** prend désormais en charge la syntaxe de chaînage facultative, par exemple, `name?.` fonctionne désormais en plus de `name.` et `name[` .  
+      La saisie semi-automatique de propriété dans la **console** prend désormais en charge la syntaxe de chaînage facultative, par exemple,  `name?.` fonctionne désormais en plus de `name.` et `name[` .  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -316,16 +316,7 @@ Si vous utilisez Windows ou macOS, envisagez d’utiliser les [canaux Microsoft 
 
 ## Contacter l’équipe Microsoft Edge DevTools  
 
-Utilisez les options suivantes pour discuter des nouvelles fonctionnalités et modifications du billet, ou tout autre sujet lié à DevTools.  
-
-* Envoyez vos commentaires à l’aide de l’icône de **Commentaires** dans le devtools  
-* Tweeter sur [@EdgeDevTools][PostTweetEdgeDevTools]  
-* Envoyez une suggestion au [site Web de votre choix][TheWebWeWant]  
-* Classer les bogues sur cette page dans le référentiel [Edge-développeurs][GitHubMicrosoftDocsEdgeDeveloperNewIssue]  
-
-:::image type="complex" source="../../media/2020/05/feedback-icon.msft.png" alt-text="Icône de commentaires dans le Microsoft Edge DevTools" lightbox="../../media/2020/05/feedback-icon.msft.png":::
-  Icône de **Commentaires** dans le Microsoft Edge devtools  
-:::image-end:::  
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 

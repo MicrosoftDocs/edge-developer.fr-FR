@@ -3,19 +3,21 @@ description: Utilisez Windows Runtime (WinRT) pour appeler des API Windows nativ
 title: Windows Runtime (WinRT) pour JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 keywords: Windows Runtime, WinRT, PWA, JavaScript
-ms.openlocfilehash: 4ca92323a85a1e90896b4de26778f7cf7dfc9a11
-ms.sourcegitcommit: e07de36ee9fbe20422ffc2c62b98839851e1b02b
+ms.openlocfilehash: e4b6eab4ecfbd26ccda8ef1c6e51a7a30dfaecfc
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "10604019"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942211"
 ---
 # Windows Runtime (WinRT) pour JavaScript  
+
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
 [Windows Runtime](/windows/uwp/get-started/universal-application-platform-guide#how-the-universal-windows-platform-relates-to-windows-runtime-apis) \ (ou simplement WinRT \) est l’ensemble d’API natives qui alimentent les applications de [plateforme Windows universelle](/windows/uwp/get-started/universal-application-platform-guide) (UWP) qui s’exécutent sur toutes les [familles d’appareils Windows 10](/uwp/extension-sdks/device-families-overview).  Les API WinRT sont projetées dans plusieurs langues, notamment C#, C++, Visual Basic et JavaScript.  
 
@@ -34,13 +36,13 @@ Voici les zones d’espaces de noms WinRT de niveau supérieur disponibles pour 
 | [Globalisation](/uwp/api/windows.globalization) | Offre une prise en charge de la globalisation des profils de langue, des régions géographiques et des calendriers internationaux.  |  
 | [Graphiques](/uwp/api/windows.graphics) | Fournit des types de données de base contenant des informations sur la façon de dessiner des graphiques.  Ces structures de données sont couramment utilisées pour définir le mode de dessin des surfaces de grande taille lors de l’utilisation de la classe CompositionVirtualDrawingSurface.  |  
 | [Gestion](/uwp/api/windows.management) | Fournit des fonctionnalités permettant d’imposer une synchronisation à partir d’un appareil de gestion des périphériques mobiles (GPM) sur le serveur.  Ce protocole de synchronisation GPM est basé sur Open Mobile Alliance-Device Management standard.  |  
-| [Support](/uwp/api/windows.media) |Fournit des classes permettant de créer et d’utiliser des éléments multimédias, tels que des photos, des enregistrements audio et vidéo.  |  
-| [Réseaux](/uwp/api/windows.networking) |Donne accès aux noms d’hôtes et aux points de terminaison utilisés par les applications réseau.  |  
-| [Reçue](/uwp/api/windows.perception) |Contient des classes permettant de percevoir l’environnement de l’utilisateur, ce qui permet aux applications de rechercher et de raison de l’appareil par rapport aux surfaces et aux hologrammes de l’utilisateur.  |  
+| [Support](/uwp/api/windows.media) | Fournit des classes permettant de créer et d’utiliser des éléments multimédias, tels que des photos, des enregistrements audio et vidéo.  |  
+| [Réseaux](/uwp/api/windows.networking) | Donne accès aux noms d’hôtes et aux points de terminaison utilisés par les applications réseau.  |  
+| [Reçue](/uwp/api/windows.perception) | Contient des classes permettant de percevoir l’environnement de l’utilisateur, ce qui permet aux applications de rechercher et de raison de l’appareil par rapport aux surfaces et aux hologrammes de l’utilisateur.  |  
 | [Sécurité](/uwp/api/windows.security.authentication.identity) | Fournit des classes pour l’authentification des utilisateurs, la gestion des informations d’identification, les opérations de chiffrement et les fonctionnalités de protection des données d’entreprise.  |  
-| [Services](/uwp/api/windows.services.cortana) |Donne accès à des services Microsoft pour Cortana, cartes, Microsoft Store et le contenu ciblé \ (abonnement \).  |  
-| [Stockage](/uwp/api/windows.storage) |Fournit des classes pour la gestion des fichiers, des dossiers et des paramètres d’application.  |  
-| [Système](/uwp/api/windows.system) |Active les fonctionnalités système telles que le lancement d’applications, l’obtention d’informations sur un utilisateur et le profilage de la mémoire.  |  
+| [Services](/uwp/api/windows.services.cortana) | Donne accès à des services Microsoft pour Cortana, cartes, Microsoft Store et le contenu ciblé \ (abonnement \).  |  
+| [Stockage](/uwp/api/windows.storage) | Fournit des classes pour la gestion des fichiers, des dossiers et des paramètres d’application.  |  
+| [Système](/uwp/api/windows.system) | Active les fonctionnalités système telles que le lancement d’applications, l’obtention d’informations sur un utilisateur et le profilage de la mémoire.  |  
 | [Interface utilisateur](/uwp/api/windows.ui) | Fournit une application ayant accès à la fonctionnalité système principale et aux informations d’exécution relatives à l’interface utilisateur.  **Remarque**: les API dans l' `Windows.UI.Xaml` espace de noms ne sont pas disponibles pour les applications JavaScript (qui peuvent utiliser les technologies basées sur des normes Web équivalentes).  |  
 | [Web](/uwp/api/windows.web) | Fournit des informations sur les erreurs provenant des opérations de service Web.  |  
 

@@ -1,7 +1,7 @@
 ---
-title: Utilisation de méthodes asynchrones Windows Runtime
+title: Utilisation des méthodes asynchrones Windows Runtime
 ms.custom: ''
-ms.date: 04/01/2020
+ms.date: 07/29/2020
 ms.prod: microsoft-edge
 ms.reviewer: ''
 ms.suite: ''
@@ -15,16 +15,18 @@ caps.latest.revision: 15
 author: MSEdgeTeam
 ms.author: msedgedevrel
 manager: ''
-ms.openlocfilehash: 6d0f174d22d0d13571d78bc215356ad90a0ae7fa
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: d9d59fb8b97e34feb002de1477dbe38709bde713
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10566642"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942077"
 ---
 # Utilisation de méthodes asynchrones Windows Runtime  
 
-De nombreuses méthodes Windows Runtime, notamment les méthodes qui peuvent nécessiter un certain temps, sont asynchrones.  Ces méthodes renvoient généralement une action ou une opération asynchrone (par exemple,,, `Windows.Foundation.IAsyncAction` `Windows.Foundation.IAsyncOperation` `Windows.Foundation.IAsyncActionWithProgress` ou `Windows.Foundation.IAsyncOperationWithProgress` ).  Ces méthodes sont représentées dans JavaScript par le [modèle CommonJS/promet/A][CommonjsWikiPromises].  En d’autres cas, elle renvoie un objet promise qui dispose d’une [fonction Then][PreviousVersionsWindowsAppsBr229728]pour laquelle vous devez fournir une `completed` fonction qui gère le résultat si l’opération aboutit.  Si vous ne souhaitez pas fournir de gestionnaire d’erreur, vous devez utiliser la [fonction réalisé][PreviousVersionsWindowsAppsHr701079] au lieu de la `then` fonction.  
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+
+De nombreuses méthodes Windows Runtime, notamment les méthodes qui peuvent nécessiter un certain temps, sont asynchrones.  Ces méthodes renvoient généralement une action ou une opération asynchrone (par exemple,,, `Windows.Foundation.IAsyncAction` `Windows.Foundation.IAsyncOperation` `Windows.Foundation.IAsyncActionWithProgress` ou `Windows.Foundation.IAsyncOperationWithProgress` \).  Ces méthodes sont représentées dans JavaScript par le [modèle CommonJS/promet/A][CommonjsWikiPromises].  En d’autres cas, elle renvoie un objet promise qui dispose d’une [fonction Then][PreviousVersionsWindowsAppsBr229728]pour laquelle vous devez fournir une `completed` fonction qui gère le résultat si l’opération aboutit.  Si vous ne souhaitez pas fournir de gestionnaire d’erreur, vous devez utiliser la [fonction réalisé][PreviousVersionsWindowsAppsHr701079] au lieu de la `then` fonction.  
 
 > [!IMPORTANT]
 > Les fonctionnalités Windows Runtime ne sont pas disponibles pour les applications qui s’exécutent dans Internet Explorer.  
@@ -84,18 +86,16 @@ client.createResourceAsync(uri, description, item)
 
 Pour plus d’informations sur la programmation asynchrone, voir [programmation asynchrone en JavaScript][PreviousVersionsWindowsAppsHh700330].  
 
-## Voir aussi  
+## Voir également  
 
 [Utilisation de Windows Runtime en JavaScript][WindowsRuntimeJavascript]  
 
-<!-- image links -->  
-
 <!-- links -->  
 
-[WindowsRuntimeJavascript]: /microsoft-edge/windows-runtime/using-the-windows-runtime-in-javascript "Utilisation de Windows Runtime en JavaScript"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Utilisation de Windows Runtime en JavaScript | Documents Microsoft"  
 
-[PreviousVersionsWindowsAppsBr229728]: /previous-versions/windows/apps/br229728(v=win.10) "Promesse. Then"  
-[PreviousVersionsWindowsAppsHh700330]: /previous-versions/windows/apps/hh700330(v=win.10) "Programmation asynchrone en JavaScript (HTML)"
-[PreviousVersionsWindowsAppsHr701079]: /previous-versions/windows/apps/hh701079(v=win.10) "Méthode promise. réalisé"  
+[PreviousVersionsWindowsAppsBr229728]: /previous-versions/windows/apps/br229728(v=win.10) "Promise, méthode | Documents Microsoft"  
+[PreviousVersionsWindowsAppsHh700330]: /previous-versions/windows/apps/hh700330(v=win.10) "Programmation asynchrone en JavaScript (HTML) | Documents Microsoft"
+[PreviousVersionsWindowsAppsHr701079]: /previous-versions/windows/apps/hh701079(v=win.10) "Méthode promise. Documents Microsoft"  
 
 [CommonjsWikiPromises]: http://wiki.commonjs.org/wiki/Promises "Promet | Wiki spec CommonJS"  

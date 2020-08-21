@@ -2,16 +2,16 @@
 title: Modifier des fichiers avec des espaces de travail
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 6971dd96a0d2f32700a8d791f7debfc816887387
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: 8a31dd9fbfe492cf8eaacc654f7d501925f730f2
+ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931230"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10942183"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -58,7 +58,7 @@ Les espaces de travail sont généralement en mesure de mapper le code optimisé
 Les espaces de travail sont connus pour ne pas fonctionner avec l’infrastructure suivante.  
 
 *   Créer une application réactive  
-    
+
     <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
     
 ## Fonctionnalité connexe: substitutions locales  
@@ -88,7 +88,7 @@ Pour bénéficier d’une expérience pratique avec les espaces de travail, effe
 
     -->  
     <!--1.  Close the tab.  -->  
-    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped  directory is referred to as `~/Desktop/app`.  -->  
+    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped directory is referred to as `~/Desktop/app`.  -->  
     
 1.  Créer un `app` répertoire sur votre ordinateur de bureau.  Enregistrez des copies des fichiers du `workspaces-demo` répertoire dans l' `app` Annuaire.  Pour le reste du didacticiel, le répertoire est appelé `~/Desktop/app` .  
 1.  Démarrez un serveur Web local dans `~/Desktop/app` .  Vous trouverez ci-dessous un exemple de code permettant de démarrer `SimpleHTTPServer` , mais vous pouvez utiliser le serveur de votre choix.  
@@ -99,7 +99,7 @@ Pour bénéficier d’une expérience pratique avec les espaces de travail, effe
           cd ~/Desktop/app
           python -m SimpleHTTPServer # Python 2
           ```  
-       :::column-end:::
+       :::column-end:::  
        :::column span="":::
           ```bash
           cd ~/Desktop/app
@@ -130,7 +130,7 @@ Pour bénéficier d’une expérience pratique avec les espaces de travail, effe
     :::image-end:::  
     
 1.  Choisissez **Ajouter un dossier à l’espace de travail**.  
-1.  Entrée `~/Desktop/app` .  
+1.  Entrez `~/Desktop/app`.  
 1.  Sélectionnez **autoriser** pour accorder à devtools l’autorisation de lecture et d’écriture dans l’annuaire.  
     L’onglet **FileSystem** comporte désormais un point vert en regard de `index.html` , `script.js` et `styles.css` .  Ces points verts indiquent que DevTools a établi une correspondance entre les ressources réseau de la page et les fichiers de `~/Desktop/app` .  
     
@@ -158,7 +158,7 @@ Pour bénéficier d’une expérience pratique avec les espaces de travail, effe
     :::image-end:::  
     
 1.  Ouvrez `styles.css` de nouveau dans un éditeur de texte.  La `color` propriété est désormais définie pour votre couleur préférée.  
-1.  Actualisez la page.  La couleur de l' `<h1>` élément est toujours définie pour votre couleur préférée.  Le changement opéré sur une actualisation, car lorsque vous avez effectué le changement DevTools enregistré la modification sur le disque.  Ensuite, lorsque vous avez actualisé la page, votre serveur local a desservi la copie modifiée du fichier à partir du disque.  
+1.  Actualisez la page.  La couleur de l' `<h1>` élément est toujours définie pour votre couleur préférée.  Le changement reste au sein d’une actualisation, car lorsque vous avez modifié DevTools enregistré la modification sur le disque.  Ensuite, lorsque vous avez actualisé la page, votre serveur local a desservi la copie modifiée du fichier à partir du disque.  
     
 ## Étape 3: enregistrer un changement HTML sur le disque  
 
@@ -210,7 +210,7 @@ Si vous voulez enregistrer une modification apportée au code HTML de la page, u
 1.  Actualisez la page.  Le `<h1>` nouveau texte est encore affiché dans l’élément.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Changer le code HTML dans le panneau sources" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       La ligne 12 est définie sur `I ❤️  Cake`  
+       Changer le code HTML dans le panneau **sources**  
     :::image-end:::  
     
 1.  Ouvrir `~/Desktop/app/index.html` .  L' `<h1>` élément contient le nouveau texte.  
