@@ -3,16 +3,16 @@ description: Dernières fonctionnalités expérimentales de Microsoft Edge DevTo
 title: Fonctionnalités expérimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/21/2020
+ms.date: 08/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, expérience
-ms.openlocfilehash: 6b3e1c06d6b8ed79054c28df483fcca93e5751d6
-ms.sourcegitcommit: 19ef1422733ef1fd051d2b4f0263ce191e8d67bc
+ms.openlocfilehash: 4c2541615700f2c637f293ee6a3fbacd9ccbc43a
+ms.sourcegitcommit: 5ed791ed5423a3a4b03e8a1c7927f026307a6673
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10902851"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "10960717"
 ---
 # Fonctionnalités expérimentales  
 
@@ -49,20 +49,21 @@ Les sections suivantes décrivent les nouvelles fonctionnalités expérimentales
 | [Activer l’onglet Paramètres de raccourcis clavier personnalisés](#enable-custom-keyboard-shortcuts-settings-tab) | 84 ou version ultérieure |
 | [Activer les nouvelles fonctionnalités de débogage de grille CSS](#enable-new-css-grid-debugging-features) | 85 ou version ultérieure |  
 | [Activer la prise en charge du déplacement des onglets entre les panneaux](#enable-support-to-move-tabs-between-panels) | 85 ou version ultérieure |  
-| [Activer webhint](#enable-webhint) | 85 ou version ultérieure | 
-| [Activer la console réseau](#enable-network-console) | 85 ou version ultérieure |
+| [Activer webhint](#enable-webhint) | 85 ou version ultérieure |  
+| [Activer la console réseau](#enable-network-console) | 85 ou version ultérieure |  
+| [Activer la visionneuse de commandes sources](#enable-source-order-viewer) | 86 ou version ultérieure |  
 
-### Activer l’onglet Paramètres de raccourcis clavier personnalisés
+### Activer l’onglet Paramètres de raccourcis clavier personnalisés  
 
-Fournit une nouvelle page de **raccourcis** dans les [paramètres de devtools][DevToolsCustomizeSettings] qui permet d’associer des [raccourcis clavier][DevToolsShortcuts] dans le devtools au [code vs][VisualstudioCode].  
+Propose une nouvelle page de **raccourcis** dans les [paramètres de devtools][DevToolsCustomizeSettings] qui permet d’associer des [raccourcis clavier][DevToolsShortcuts] dans devtools au [code Microsoft Visual Studio][VisualstudioCode].  
 
-Une fois que vous avez activé l’expérience, rouvrez les [paramètres de devtools][DevToolsCustomizeSettings] à l’aide de la sélection `Shift` + `?` .  Accédez à la page nouveau **raccourcis** .  Sélectionnez **devtools (par défaut)** dans le menu déroulant **correspondant aux raccourcis de** la liste déroulante, puis sélectionnez **Visual Studio code**.  Les raccourcis clavier dans le DevTools correspondent désormais aux raccourcis pour les actions équivalentes dans le code VS.  
+Une fois que vous avez activé l’expérience, rouvrez les [paramètres de devtools][DevToolsCustomizeSettings] à l’aide de la sélection `Shift` + `?` .  Accédez à la page nouveau **raccourcis** .  Sélectionnez **devtools (par défaut)** dans le menu déroulant **correspondant aux raccourcis de** la liste déroulante, puis sélectionnez **Visual Studio code**.  Les raccourcis clavier dans le DevTools correspondent désormais aux raccourcis pour les actions équivalentes dans le code Visual Studio.  
 
-:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code VS" lightbox="./media/experiments-keyboard-shortcut.png":::
-   Faire correspondre les raccourcis clavier du DevTools au code VS
+:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="./media/experiments-keyboard-shortcut.png":::
+   Faire correspondre les raccourcis clavier du DevTools au code Visual Studio  
 :::image-end:::  
 
-Par exemple, dans Windows, le raccourci clavier pour suspendre ou continuer à exécuter un script en [code vs][VisualstudioCodeShortcutsKeyboardWindows] est `F5` .  Avec la valeur prédéfinie **devtools (par défaut)** , le même raccourci dans devtools est `F8` .  Le raccourci est également associé au **code Visual Studio** prédéfini `F5` .  
+Par exemple, dans Windows, le raccourci clavier pour suspendre ou continuer à exécuter un script dans le [code Visual Studio][VisualstudioCodeShortcutsKeyboardWindows] est `F5` .  Avec la valeur prédéfinie **devtools (par défaut)** , le même raccourci dans devtools est `F8` .  Le raccourci est également associé au **code Visual Studio** prédéfini `F5` .  
 
 ### Activer les nouvelles fonctionnalités de débogage de grille CSS  
 
@@ -89,27 +90,45 @@ En règle générale, il est possible d’ouvrir des outils tels que des **élé
 [webhint][WebhintMain] est un outil open source qui fournit des commentaires en temps réel sur l’accessibilité, la compatibilité entre les navigateurs, la sécurité, les performances, PWAS, ainsi que d’autres problèmes courants liés au développement Web sur les sites Web.  L’expérience [webhint][WebhintMain] a pour résultat le devtools de commentaires webhint dans le volet [problèmes][DevtoolsIssues] .  Vous pouvez sélectionner le problème pour voir la documentation relative à la résolution du problème ainsi qu’une liste des ressources affectées sur votre site Web.  Sélectionnez un lien vers une ressource pour ouvrir le volet **réseau**, **sources**ou **éléments** approprié dans devtools.  
 
 :::image type="complex" source="./media/experiments-webhint.png" alt-text="Commentaires de webhint dans le volet problèmes" lightbox="./media/experiments-webhint.png":::
-   Commentaires de webhint dans le volet problèmes  
-:::image-end:::      
+   Commentaires de webhint dans le volet **problèmes**  
+:::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### Activer la console réseau
+### Activer la console réseau  
 
 **Network console** est le titre d’une expérience visant à faire des requêtes réseau synthétiques sur http.  Vous pouvez utiliser l’expérience de la **console réseau** pour envoyer des demandes d’API Web.  
 
-Après avoir activé l’expérience, assurez-vous de redémarrer l’DevTools. Pour utiliser la console réseau:
-1.  Ouvrez le volet **réseau** .
-1.  Recherchez la demande réseau que vous souhaitez modifier et renvoyer.
-1.  Ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez **modifier, puis relire**. 
-1.  Lorsque la **console réseau** s’ouvre, modifiez les informations de requête réseau.
+Après avoir activé l’expérience, assurez-vous de redémarrer l’DevTools.  Pour utiliser la console réseau:  
+
+1.  Ouvrez le volet **réseau** .  
+1.  Recherchez la demande réseau que vous souhaitez modifier et renvoyer.  
+1.  Ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez **modifier, puis relire**.  
+1.  Lorsque la **console réseau** s’ouvre, modifiez les informations de requête réseau.  
 1.  Sélectionnez **Envoyer**.  
 
 :::image type="complex" source="./media/network-network-console.png" alt-text="Console réseau dans le tiroir de la console" lightbox="./media/network-network-console.png":::
-Console réseau dans le tiroir de la console
-:::image-end::: 
+   **Console réseau** dans le tiroir de la **console**  
+:::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  --> 
+
+### Activer la visionneuse de commandes sources  
+
+La **visionneuse de commandes source** est le titre d’une expérience permettant d’afficher l’ordre des éléments dans la source de la page.  Vous pouvez utiliser l’expérience de la **visionneuse de commandes sources** pour détecter des problèmes d’accessibilité dans vos pages, car l’ordre de l’affichage à l’écran risque de différer de l’ordre de la source, ce qui déconcerte les utilisateurs de lecteurs d’écran.  
+
+Après avoir activé l’expérience, assurez-vous de redémarrer l’DevTools.  Pour utiliser la visionneuse de commandes source:  
+
+1.  Ouvrir le volet des **éléments** .  
+1.  Ouvrez le volet **accessibilité** dans le panneau du tiroir.  
+1.  Dans la section **visionneuse de commandes sources** , activez la case à cocher **afficher l’ordre source** .  
+1.  Mettez en surbrillance un élément HTML pour afficher une superposition de l’ordre dans la source de la page.  
+
+:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Visionneuse de commandes source dans le volet accessibilité" lightbox="./media/experiments-source-order-viewer.msft.png":::
+   **Visionneuse de commandes source** dans le volet **accessibilité**  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 86 and later.  -->  
 
 ## Fonctionnalités expérimentales antérieures  
 
@@ -119,11 +138,11 @@ Console réseau dans le tiroir de la console
 
 Pour transmettre des commentaires sur les expériences DevTools Microsoft Edge, ou tout autre élément associé à DevTools.  
 
-*   Envoyez vos commentaires à l’aide de l’icône de commentaires dans le DevTools  
+*   Envoyez vos commentaires à l’aide de l’icône **Envoyer des commentaires** dans le devtools  
 *   Tweeter sur [@EdgeDevTools][TwitterEdgedevtools]  
 
-:::image type="complex" source="./media/devtools-feedback.png" alt-text="Icône de commentaires dans le Microsoft Edge DevTools" lightbox="./media/devtools-feedback.png":::
-   Icône de commentaires dans le Microsoft Edge DevTools  
+:::image type="complex" source="./media/devtools-feedback.png" alt-text="Icône Envoyer des commentaires dans le Microsoft Edge DevTools" lightbox="./media/devtools-feedback.png":::
+   Icône **Envoyer des commentaires** dans le Microsoft Edge devtools  
 :::image-end:::  
 
 <!-- links -->  
@@ -136,7 +155,7 @@ Pour transmettre des commentaires sur les expériences DevTools Microsoft Edge, 
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
 
-[VisualstudioCode]: https://code.visualstudio.com "Code Visual Studio"  
-[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Raccourcis clavier dans Visual Studio pour Windows | Code Visual Studio"  
+[VisualstudioCode]: https://code.visualstudio.com "Code Microsoft Visual Studio"  
+[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Raccourcis clavier dans Visual Studio pour Windows | Code Microsoft Visual Studio"  
 
 [WebhintMain]: https://webhint.io "Astuce" 
