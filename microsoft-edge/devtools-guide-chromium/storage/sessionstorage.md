@@ -2,16 +2,16 @@
 title: Afficher et modifier le stockage de session avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: d90d4bd7ec9b8927b713a744fb067cc5e96a1fe6
-ms.sourcegitcommit: ad68bfbb355f6cfdaaf6612b77ea3985d4d6a58b
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: d0631f69a082a2a73c51e4359c21cf94636d665e
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "10612080"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10983561"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,96 +41,87 @@ Ce guide vous montre comment utiliser [Microsoft Edge devtools][MicrosoftEdgeDev
 
 1.  Sélectionnez l’onglet **application** pour ouvrir le volet de l' **application** .  Le volet **manifeste** est affiché par défaut.  
     
-    > ##### Figure1  
-    > Volet manifeste  
-    > ![Volet manifeste][ImageManifest]  
-
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-manifest.msft.png":::
+       Volet **manifeste**  
+    :::image-end:::  
+    
 1.  Développez le menu stockage de la **session** .  
     
-    > ##### Figure 2  
-    > Menu de **stockage de session**  
-    > ![Menu de stockage de session][ImageSessionStorageMenu]  
-
+    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Menu de stockage de session" lightbox="../media/storage-application-storage-session-storage.msft.png":::
+       Menu de **stockage de session**  
+    :::image-end:::  
+    
 1.  Sélectionnez un domaine pour afficher les paires clé-valeur.  
     
-    > ##### Figure3  
-    > Paires clé-valeur sessionStorage  
-    > ![Paires clé-valeur «sessionStorage»][ImageSessionStorage]  
-
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="Paires clé-valeur «sessionStorage»" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
+       `sessionStorage`Paires clé-valeur  
+    :::image-end:::  
+    
 1.  Sélectionnez une ligne du tableau pour afficher la valeur dans la visionneuse sous le tableau.  
     
-    > ##### Figure 4  
-    > Affichage de la valeur de la `x-sid` clé  
-    > ![Affichage de la valeur de la clé x-sid][ImageSessionStorageViewer]  
-
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="Afficher la valeur de la clé x-sid" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
+       Afficher la valeur de la `x-sid` clé  
+    :::image-end:::  
+    
 ## Créer une paire clé-valeur sessionStorage   
 
 1.  [Afficher les `sessionStorage` paires clé-valeur d’un domaine](#view-sessionstorage-keys-and-values).  
 1.  Double-cliquez sur la partie vide de la table.  DevTools crée une nouvelle ligne et concentre votre curseur dans la colonne **clé** .  
     
-    > ##### Figure 5  
-    > Partie vide de la table dans laquelle vous pouvez double-cliquer pour créer une paire clé-valeur  
-    > ![Partie vide de la table dans laquelle vous pouvez double-cliquer pour créer une paire clé-valeur][ImageSessionStorageCreate]  
-
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="Partie vide de la table dans laquelle vous pouvez double-cliquer pour créer une paire clé-valeur" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
+       Partie vide de la table dans laquelle vous pouvez double-cliquer pour créer une paire clé-valeur  
+    :::image-end:::  
+    
 ## Modifier les clés ou valeurs de sessionStorage   
 
 1.  [Afficher les `sessionStorage` paires clé-valeur d’un domaine](#view-sessionstorage-keys-and-values).  
 1.  Double-cliquez sur une cellule dans la colonne **clé** ou **valeur** pour modifier cette clé ou valeur.  
     
-    > ##### Figure 6  
-    > Modification d’une `sessionStorage` touche  
-    > ![Modification d’une clé sessionStorage][ImageSessionStorageEdit]  
-
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="Modifier une clé de sessionStorage" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
+       Modifier une `sessionStorage` clé  
+    :::image-end:::  
+    
 ## Supprimer des paires clé-valeur sessionStorage   
 
 1.  [Afficher les `sessionStorage` paires clé-valeur d’un domaine](#view-sessionstorage-keys-and-values).  
 1.  Sélectionnez la paire clé-valeur que vous voulez supprimer.  DevTools met en surbrillance bleu pour indiquer qu’il est sélectionné.  
-
-1.  Appuyez sur la `Delete` touche ou cliquez sur supprimer la suppression **sélectionnée** ![ ][ImageDeleteIcon] .  
-
+1.  Appuyez sur la `Delete` touche ou cliquez sur **Supprimer la sélection** ![ ][ImageDeleteIcon] .  
+    
 ## Suppression de toutes les paires clé-valeur sessionStorage pour un domaine   
 
 1.  [Afficher les `sessionStorage` paires clé-valeur d’un domaine](#view-sessionstorage-keys-and-values).  
-
-1.  Sélectionnez **Effacer tout** ![ Effacer tout ][ImageClearIcon] .  
-
+1.  Sélectionnez **Effacer tout** \ ( ![ Effacer tout ][ImageClearIcon] ).  
+    
 ## Interagir avec sessionStorage à partir de la console   
 
 Dans la mesure où vous pouvez exécuter JavaScript dans la **console**, et puisque la **console** a accès aux contextes JavaScript de la page, il est possible d’interagir avec `sessionStorage` à partir de la **console**.  
 
 1.  Utilisez le menu **contextes JavaScript** pour modifier le contexte JavaScript de la **console** si vous souhaitez accéder aux `sessionStorage` paires clé-valeur d’un domaine autre que celui de la page sur laquelle vous vous trouvez.  
     
-    > ##### Figure 7  
-    > Modification du contexte JavaScript de la **console**  
-    > ![Modification du contexte JavaScript de la console][ImageJSContext]  
-
+    :::image type="complex" source="../media/storage-console-domain-selection.msft.png" alt-text="Changer le contexte JavaScript de la console" lightbox="../media/storage-console-domain-selection.msft.png":::
+       Changer le contexte JavaScript de la console  
+    :::image-end:::  
+    
 1.  Exécutez vos `sessionStorage` expressions dans la console, de la même manière que dans JavaScript.  
     
-    > ##### Figure8  
-    > Interaction `sessionStorage` à partir de la **console**  
-    > ![Interaction avec sessionStorage à partir de la console][ImageSessionStorageConsole]  
-
+    :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="Interagir avec sessionStorage à partir de la console" lightbox="../media/storage-console-session-storage-keys.msft.png":::
+       Interagir avec `sessionStorage` à partir de la **console**  
+    :::image-end:::  
+    
+<!--  
    
 
   
+-->  
 
 <!-- image links -->  
 
-[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-icon.msft.png  
-[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
-
-[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Figure 1: volet manifeste"  
-[ImageSessionStorageMenu]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-session-storage.msft.png "Figure 2: menu de stockage de session"  
-[ImageSessionStorage]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-session-storage-domain.msft.png "Figure 3: paires clé-valeur sessionStorage"  
-[ImageSessionStorageViewer]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-session-storage-domain-key-value-selected.msft.png "Figure 4: affichage de la valeur de la clé x-sid"  
-[ImageSessionStorageCreate]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-session-storage-domain-key-value-new.msft.png "Figure 5: partie vide de la table dans laquelle vous pouvez double-cliquer pour créer une paire clé-valeur"  
-[ImageSessionStorageEdit]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-session-storage-domain-key-value-edit.msft.png "Figure 6: modification d’une clé de sessionStorage"  
-[ImageJSContext]: /microsoft-edge/devtools-guide-chromium/media/storage-console-domain-selection.msft.png "Figure 7: modification du contexte JavaScript de la console"  
-[ImageSessionStorageConsole]: /microsoft-edge/devtools-guide-chromium/media/storage-console-session-storage-keys.msft.png "Figure 8: interaction avec sessionStorage à partir de la console"  
+[ImageClearIcon]: ../media/clear-icon.msft.png  
+[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Outils de développement Microsoft Edge (chrome)"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
 
 [MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window. sessionStorage | MDN"  
 

@@ -2,16 +2,16 @@
 title: Force Microsoft Edge DevTools en mode d’aperçu avant impression (CSS Print Media Type)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 659120414597273b15657377c33c800e0c83b7cb
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: 6bf9605fc8dc4e43db88668ac1f0af35bf9aba66
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601837"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982304"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,32 +39,29 @@ La [requête imprimer][MDNUsingMediaQueries] sur le média détermine l’appare
 
 1.  Appuyez sur `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
     
-    > ##### Figure1  
-    > **Menu de commandes**  
-    > ![Menu de commandes][ImageCommandMenu]  
+    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Menu de commandes" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+       **Menu de commandes**  
+    :::image-end:::  
     
 1.  Tapez `rendering` , sélectionnez **afficher le rendu**, puis appuyez sur `Enter` .  
 1.  Sous **émuler le média CSS** , sélectionnez **Imprimer**.  
     
-    > ##### Figure 2  
-    > Mode aperçu avant impression  
-    > ![Mode aperçu avant impression][ImagePrintMode]  
+    :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="Mode aperçu avant impression" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
+       Mode aperçu avant impression  
+    :::image-end:::  
     
 À partir de cet emplacement, vous pouvez afficher et modifier votre CSS, comme n’importe quelle autre page Web.  Voir [commencer à afficher et modifier des feuilles CSS][DevToolsCSSGetStarted].  
 
+<!--  
  
 
 
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-console-command-menu-rendering.msft.png "Figure 1: menu de commandes"  
-[ImagePrintMode]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png "Figure 2: mode aperçu avant impression"  
+-->  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Outils de développement Microsoft Edge (chrome)"  
-[DevToolsCSSGetStarted]: /microsoft-edge/devtools-guide-chromium/css/index "Découvrir comment afficher et modifier des feuilles CSS"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
+[DevToolsCSSGetStarted]: ./index.md "Découvrir comment afficher et modifier des feuilles CSS | Documents Microsoft"  
 
 [MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Utilisation de requêtes multimédias | MDN"  
 

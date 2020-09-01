@@ -2,16 +2,16 @@
 title: Commencer à utiliser JavaScript sur la console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 724d0e3c7c8439551538383e68a5fc4465eade94
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: 7e91d9844b2926bc8302331c6b9d971922d27ea3
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601725"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982254"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,13 +37,13 @@ ms.locfileid: "10601725"
 
 
 
-Ce didacticiel interactif vous montre comment exécuter JavaScript dans la console Microsoft Edge DevTools.  Pour plus d’informations sur la façon de consigner les messages dans la console, voir [utiliser la journalisation][DevToolsConsoleLoggingMessages] .  Pour plus d’informations sur la façon de suspendre le code JavaScript et de parcourir le code JavaScript à la fois, voir [prendre en main le débogage][DevToolsJavascriptIndex] .  
+Ce didacticiel interactif vous montre comment exécuter JavaScript dans la **console**Microsoft Edge devtools.  Pour plus d’informations sur la façon de consigner les messages dans la **console**, voir [utiliser la journalisation des messages][DevToolsConsoleLoggingMessages].  Pour plus d’informations sur la façon de suspendre le code JavaScript et de parcourir ce code une ligne à la fois, voir [commencer à déboguer JavaScript][DevToolsJavascriptIndex].  
 
-> ##### Figure1  
-> La **console**  
-> ![La console][ImageConsole]  
+:::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="La console" lightbox="../media/console-javascript-example-console-playground.msft.png":::
+   La **console**  
+:::image-end:::  
 
-## Présentation   
+## Vue d'ensemble   
 
 La **console** est une valeur [REPL][WikiReadEvalPrintLoop]qui correspond à la lecture, à l’évaluation, à l’impression et au bouclage.  Elle lit le code JavaScript que vous entrez, évalue votre code, imprime le résultat de l' [expression][2alityExpressionsVersusStatements], puis revient à la première étape.  
 
@@ -54,12 +54,12 @@ Ce didacticiel est conçu pour vous permettre d’ouvrir la démonstration et d�
 1.  Appuyez sur `Control` + `Shift` + `J` \ (Windows \) ou `Command` + `Option` + `J` \ (MacOS \) pour ouvrir la **console**.  
 1.  Maintenez `Control` la touche \ (Windows \) ou `Command` \ (MacOS \), puis cliquez sur l' **exemple de console JavaScript** pour l’ouvrir dans une nouvelle fenêtre.  
     
-    [Exemple de console JavaScript][GlitchConsoleJavascriptExample]  
+    *   [Exemple de console JavaScript][GlitchConsoleJavascriptExample]  
     
-    > ##### Figure 2  
-    > Page d’exemple de langage JavaScript de la console à gauche et DevTools sur la droite  
-    > ![Page d’exemple de langage JavaScript de la console à gauche et DevTools sur la droite][ImageTutorialDevToolsJs]  
-
+    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="Page d’exemple de langage JavaScript de la console à gauche et DevTools sur la droite" lightbox="../media/console-javascript-example-console-empty.msft.png":::
+       Page d’exemple de langage JavaScript de la console à gauche et DevTools sur la droite  
+    :::image-end:::  
+    
 ## Afficher et modifier le code JavaScript ou DOM de la page   
 
 Lorsque vous créez ou déboguez une page, il est souvent utile d’exécuter des instructions dans la **console** afin de modifier l’apparence ou l’exécution de la page.  
@@ -67,9 +67,9 @@ Lorsque vous créez ou déboguez une page, il est souvent utile d’exécuter de
 1.  Notez le texte du bouton.  
 1.  Entrez `document.getElementById('hello').textContent = 'Hello, Console!'` dans la **console** , puis appuyez `Enter` sur pour évaluer l’expression.  Notez la façon dont le texte à l’intérieur du bouton change.  
     
-    > ##### Figure3  
-    > Aspect de la console après l’évaluation de l’expression  
-    > ![Aspect de la console après l’évaluation de l’expression][ImageConsoleAfterEvaluating]  
+    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="Aspect de la console après l’évaluation de l’expression" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
+       Aspect de la **console** après l’évaluation de l’expression  
+    :::image-end:::  
     
     Le code que vous avez évalué est affiché sous `"Hello, Console!"` .  Rappelez-vous des 4 étapes de REPL: lecture, évaluation, impression, boucle.  Après avoir évalué votre code, une valeur REPL imprime le résultat de l’expression.  `"Hello, Console!"`Le résultat doit donc être évalué `document.getElementById('hello').textContent = 'Hello, Console!'` .  
     
@@ -77,27 +77,30 @@ Lorsque vous créez ou déboguez une page, il est souvent utile d’exécuter de
 
 Il arrive parfois que vous souhaitiez créer un code de laboratoire dans lequel vous pouvez tester du code ou essayer de nouvelles fonctionnalités JavaScript que vous ne connaissez pas.  La console est l’endroit idéal pour ces types d’expériences.  
 
-1.  Entrez `5 + 15` dans la console et appuyez sur `Enter` pour évaluer l’expression. La console imprime le résultat de l’expression sous votre code.  La **figure 4** ci-dessous montre à quoi votre console doit ressortir après avoir évalué cette expression.  
+1.  Entrez `5 + 15` dans la console et appuyez sur `Enter` pour évaluer l’expression. La console imprime le résultat de l’expression sous votre code.  Dans l’illustration suivante, votre **console** doit afficher le résultat après l’évaluation de l’expression.  
 
 1.  Tapez le code suivant dans la **console**.  Essayez de taper le texte, caractère par caractère, plutôt que de copier-coller.  
     
     ```javascript
-    function add(a, b=20) {
-        return a + b;
-    }
+    function add(a, b=20) { return a + b; }
     ```  
     
-    Pour plus d’inconnaissances de la syntaxe, voir [définir les valeurs par défaut des arguments de fonction][Esma6DefaultParameterValues] `b=20` .  
+    Si vous n’êtes pas familiarisé avec la `b=20` syntaxe, voir [définir les valeurs par défaut des arguments de fonction][Esma6DefaultParameterValues].  
     
-1.  À présent, appelez la fonction que vous venez de définir.  
+1.  À présent, exécutez la fonction que vous venez de définir.  
     
-    ```javascript
-    add(25);
-    ```  
-    
-    > ##### Figure 4  
-    > Aspect de la console après avoir évalué les expressions ci-dessus  
-    > ![Aspect de la console après avoir évalué les expressions ci-dessus][ImagePlayground]  
+    :::row:::
+       :::column span="":::
+          ```javascript
+          add(25);
+          ```  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="La console s’affiche après l’évaluation des expressions dans l’extrait de code" lightbox="../media/console-javascript-example-console-playground.msft.png":::
+             La **console** s’affiche après l’évaluation des expressions dans l’extrait de code  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::
     
     `add(25)` prend la valeur, `45` car lorsque la `add` fonction est appelée sans deuxième argument, la `b` valeur par défaut est `20` .  
 
@@ -107,9 +110,9 @@ Il arrive parfois que vous souhaitiez créer un code de laboratoire dans lequel 
 
 <!--todo: add console reference (run javascript) section when available  -->  
 
-DevTools vous permet de suspendre un script au milieu de l’exécution.  Lorsque vous êtes en pause, vous pouvez utiliser la **console** pour afficher et modifier le `window` ou la `DOM` page à ce moment précis.  Cela permet de disposer d’un flux de travail puissant de débogage.  Voir [commencer à déboguer JavaScript][DevToolsJavascriptIndex] pour un didacticiel interactif.  
+DevTools vous permet de suspendre un script au milieu de l’exécution.  Lorsque vous êtes en pause, vous pouvez utiliser la **console** pour afficher et modifier le `window` ou la `DOM` page à ce moment précis.  Le flux de travail effectue un flux de travail puissant de débogage.  Pour un didacticiel interactif, voir [prendre en main le débogage JavaScript][DevToolsJavascriptIndex].  
 
-La **console** dispose également d’un ensemble de fonctions pratiques qui facilitent l’interaction avec une page.  Exemple:  
+La **console** dispose également d’un ensemble de fonctions pratiques qui facilitent l’interaction avec une page.  Par exemple:  
 
 *   Au lieu de taper `document.querySelector()` pour sélectionner un élément, tapez `$()` .  Cette syntaxe est inspirée par jQuery, mais elle n’est pas réellement jQuery.  Il s’agit simplement d’un alias pour `document.querySelector()` .  
 *   `debug(function)` définit efficacement un point d’arrêt sur la première ligne de cette fonction.  
@@ -123,20 +126,12 @@ La **console** dispose également d’un ensemble de fonctions pratiques qui fac
 
 
 
-<!-- image links -->  
-
-[ImageConsole]: /microsoft-edge/devtools-guide-chromium/media/console-javascript-example-console-playground.msft.png "Figure 1: console"  
-[ImageTutorialDevToolsJs]: /microsoft-edge/devtools-guide-chromium/media/console-javascript-example-console-empty.msft.png "Figure 2: page d’exemple de code JavaScript de la console à gauche et DevTools sur la droite"  
-[ImageConsoleAfterEvaluating]: /microsoft-edge/devtools-guide-chromium/media/console-javascript-example-console-change-button-text.msft.png "Figure 3: apparence de la console après l’évaluation de l’expression"  
-[ImagePlayground]: /microsoft-edge/devtools-guide-chromium/media/console-javascript-example-console-playground.msft.png "Figure 4: apparence de la console après avoir évalué les expressions ci-dessus"  
-
 <!-- links -->  
 
-[DevToolsConsoleLoggingMessages]: /microsoft-edge/devtools-guide-chromium/console/log "Commencer à utiliser la journalisation des messages dans la console"  
-[DevToolsConsoleReference]: /microsoft-edge/devtools-guide-chromium/console/reference#run-javascript "Référence de la console"  
-[DevToolsConsoleUtilities]: /microsoft-edge/devtools-guide-chromium//console/utilities "XXXXXX xxxxxxx xxx xxxxxxxxx"  
-
-[DevToolsJavascriptIndex]: /microsoft-edge/devtools-guide-chromium/javascript/index "Commencer à utiliser le débogage JavaScript dans Microsoft Edge DevTools"  
+[DevToolsConsoleLoggingMessages]: ./log.md "Commencer à utiliser la journalisation des messages dans la console | Documents Microsoft"  
+[DevToolsConsoleReference]: ./reference.md#run-javascript "Référence de la console | Documents Microsoft"  
+[DevToolsConsoleUtilities]: ./utilities.md "Référence sur l’API des utilitaires de console | Documents Microsoft"  
+[DevToolsJavascriptIndex]: ../javascript/index.md "Commencer à utiliser le débogage JavaScript dans Microsoft Edge DevTools"  
 
 [2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "Expressions et instructions dans JavaScript"  
 

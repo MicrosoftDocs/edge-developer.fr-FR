@@ -2,16 +2,16 @@
 title: Changer la position de Microsoft Edge DevTools (détacher, ancrer en bas, ancrer à gauche)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: f0be6243d4780e4ed49428ebaf2b6b37d9da323e
-ms.sourcegitcommit: 67ce64f810afdb304844bae0f3918d4e9108dcec
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: aaa6ef03f6abea27c84fb46db3d2a2f0f894339c
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "10601345"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981915"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,59 +37,63 @@ ms.locfileid: "10601345"
 
 Par défaut, DevTools est ancré à droite de votre fenêtre d’affichage.  Vous pouvez également ancrer en bas, ancrer à gauche, ou détacher la DevTools dans une autre fenêtre.  
 
-> ##### Figure1  
-> Ancrer à gauche  
-> ![Ancrer à gauche][ImageDockLeft]  
-
-> ##### Figure 2  
-> Ancrer en bas  
-> ![Ancrer en bas][ImageDockBottom]  
-
-> ##### Figure3  
-> Navigateur dans une fenêtre séparée  
-> ![Navigateur dans une fenêtre séparée][ImageUndockBrowser]  
-
-> ##### Figure 4  
-> DevTools non attaché dans une fenêtre séparée  
-> ![DevTools non attaché dans une fenêtre séparée][ImageUndockDevTools]  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Sélectionner ancrer à gauche" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+         Sélectionner `Dock To Left`  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Sélectionner ancrer en bas" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+         Sélectionner `Dock To Bottom`  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Navigateur dans une fenêtre séparée" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
+         Navigateur dans une fenêtre séparée  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="DevTools non attaché dans une fenêtre séparée" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
+         DevTools non attaché dans une fenêtre séparée  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ## Changer la position dans le menu principal   
 
-1.  Cliquez sur **personnaliser et contrôler devtools** `...` et sélectionnez **détacher dans une fenêtre indépendante** ![ ][ImageUndockIcon] , **ancrer** en bas ![ à ][ImageBottomIcon] gauche ou **Dock To Left** ![ ][ImageLeftIcon] ancrer à gauche.  
+1.  Cliquez sur **personnaliser et contrôler devtools** \ ( `...` \), puis sélectionnez **détacher dans une fenêtre séparée** \ ( ![ détacher ][ImageUndockIcon] \), **ancrer en bas** \ ( ![ ancrer en bas ][ImageBottomIcon] \), ou **ancrer à gauche** , ![ ][ImageLeftIcon]  
     
-    > ##### Figure 5  
-    > Sélection du **retrait dans une fenêtre séparée**  
-    > ![Sélection du retrait dans une fenêtre séparée][ImageUndockSettings]  
+    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Sélectionner détacher dans une fenêtre séparée" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+       Sélectionner **détacher dans une fenêtre séparée**  
+    :::image-end:::  
     
 ## Changer le positionnement dans le menu de commandes   
 
 1.  [Ouvrir le menu de commandes][DevtoolsCommandMenu].  
 1.  Exécutez l’une des commandes `Dock To Bottom` suivantes: `Undock Into Separate Window`  Il n’existe actuellement aucune commande pour l’ancrage à gauche, mais vous pouvez y accéder à partir du [menu principal](#change-placement-from-the-main-menu).  
     
-    > ##### Figure 6  
-    > Commande détacher  
-    > ![Commande détacher][ImageUndockCommand]  
-
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Commande détacher" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       Commande détacher  
+    :::image-end:::  
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageUndockIcon]: /microsoft-edge/devtools-guide-chromium/media/undock-icon.msft.png  
-[ImageBottomIcon]: /microsoft-edge/devtools-guide-chromium/media/bottom-icon.msft.png  
-[ImageLeftIcon]: /microsoft-edge/devtools-guide-chromium/media/left-icon.msft.png  
-
-[ImageDockLeft]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-right-docked.msft.png "Figure 1: ancrer sur la gauche"  
-[ImageDockBottom]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-bottom-docked.msft.png "Figure 2: ancrer en bas"  
-[ImageUndockBrowser]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight-browser.msft.png "Figure 3: navigateur dans une fenêtre séparée"  
-[ImageUndockDevTools]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png "Figure 4: DevTools non attaché dans une fenêtre séparée"  
-[ImageUndockSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight.msft.png "Figure 5: sélectionner détacher dans une fenêtre séparée"  
-[ImageUndockCommand]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-command-menu-undo.msft.png "Figure 6: commande détacher"  
+[ImageUndockIcon]: ../media/undock-icon.msft.png  
+[ImageBottomIcon]: ../media/bottom-icon.msft.png  
+[ImageLeftIcon]: ../media/left-icon.msft.png  
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Exécuter des commandes à l’aide du menu de commande de Microsoft Edge DevTools"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Exécuter des commandes à l’aide du menu de commandes de Microsoft Edge DevTools | Documents Microsoft"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  

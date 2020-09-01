@@ -1,17 +1,17 @@
 ---
-title: Suivre l’élément sélectionné
+title: Effectuer le suivi de l’élément actif
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: a1bcb7e97357d1348b363ecd4842d1b6a78feb45
-ms.sourcegitcommit: 8bfa239274e7a4856b961b9cf163b08d96463c10
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: 04091ddf7986b8554e4f615a92e0303446048eaa
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "10581530"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981747"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,38 +31,36 @@ ms.locfileid: "10581530"
 
 
 
-# Suivre l’élément sélectionné   
+# Effectuer le suivi de l’élément actif   
 
 
 
 Imaginons que vous testiez l’accessibilité de la navigation au clavier d’une page.  Lorsque vous naviguez dans la page à l’aide de la `Tab` touche, l’appel de focus disparaît parfois, car l’élément qui a le focus est masqué.  Pour effectuer le suivi de l’élément prioritaire dans DevTools:  
 
 1.  Ouvrez la **console**.  
-1.  Cliquez sur **créer** une expression dynamique ![ ][ImageCreateIcon] .  
-
-    > ##### Figure1  
-    > Création d’une **expression dynamique**  
-    > ![Création d’une expression dynamique][ImageLiveExpression]  
+1.  Cliquez sur **créer une expression dynamique** \ ( ![ créer une expression dynamique ][ImageCreateIcon] \).  
+    
+    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Créer une expression dynamique" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
+       Créer une expression dynamique  
+    :::image-end:::  
     
 1.  Entrez `document.activeElement`.
 1.  Cliquez en dehors de l’interface utilisateur de l' **expression dynamique** pour l’enregistrer.
-
+    
 La valeur que vous voyez ci-dessous `document.activeElement` est le résultat de l’expression.  
 Dans la mesure où cette expression représente toujours l’élément prioritaire, vous disposez maintenant d’un moyen de toujours garder une trace de l’élément qui a le focus.  
 
 *   Pointez sur le résultat pour mettre en surbrillance l’élément prioritaire dans la fenêtre d’affichage.  
 *   Cliquez avec le bouton droit sur le résultat et sélectionnez **Reveal dans le panneau éléments** pour afficher l’élément dans l’arborescence DOM sur le panneau **éléments** .  
 *   Cliquez avec le bouton droit sur le résultat et sélectionnez **stocker comme variable globale** pour créer une référence variable au nœud que vous pouvez utiliser dans la **console**.  
-
+    
 <!--## Feedback   -->  
 
 
 
 <!-- image links -->  
 
-[ImageCreateIcon]: /microsoft-edge/devtools-guide-chromium/media/create-live-expression-icon.msft.png  
-
-[ImageLiveExpression]: /microsoft-edge/devtools-guide-chromium/media/accessibility-console-create-live-expression-empty.msft.png "Figure 1: création d’une expression dynamique"  
+[ImageCreateIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 

@@ -2,16 +2,16 @@
 title: Regardez des valeurs d’expression JavaScript en temps réel avec des expressions dynamiques
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: c388e44ca5507dd88ad9ad7b7ee985e658dfc569
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: 39a7967a7dd1d0b34eb802d2879e04a64afd0dd0
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601739"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982234"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -40,11 +40,11 @@ Si vous vous intentez de taper la même expression JavaScript dans la console à
 ## Créer une expression dynamique   
 
 1.  [Ouvrez la console][DevToolsConsoleReferenceOpenConsole].  
-1.  Cliquez sur **créer** une expression dynamique ![ ][ImageCreateLiveExpressionIcon] .  La zone de texte **expression dynamique** s’affiche.  
+1.  Cliquez sur **créer une expression dynamique** \ ( ![ créer une expression dynamique ][ImageCreateLiveExpressionIcon] \).  La zone de texte **expression dynamique** s’affiche.  
     
-    > ##### Figure1  
-    > Saisie `document.activeElement` de texte dans la zone de texte **expression dynamique**  
-    > ![Taper document. activeElement dans la zone de texte expression dynamique][ImageLiveExpressionTextbox]  
+    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Taper document. activeElement dans la zone de texte expression dynamique" lightbox="../media/console-create-live-expression.msft.png":::
+       Saisie `document.activeElement` de texte dans la zone de texte **expression dynamique**  
+    :::image-end:::  
     
 1.  Tapez `Control` + `Enter` \ (Windows \) ou `Command` + `Enter` \ (MacOS \) pour enregistrer l’expression ou cliquez en dehors de la zone de texte **expression dynamique** .  
 
@@ -56,13 +56,11 @@ Si vous vous intentez de taper la même expression JavaScript dans la console à
 
 <!-- image links -->  
 
-[ImageCreateLiveExpressionIcon]: /microsoft-edge/devtools-guide-chromium/media/create-live-expression-icon.msft.png  
-
-[ImageLiveExpressionTextbox]: /microsoft-edge/devtools-guide-chromium/media/console-create-live-expression.msft.png "Figure 1: taper document. activeElement dans la zone de texte expression dynamique"  
+[ImageCreateLiveExpressionIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: /microsoft-edge/devtools-guide-chromium/console/reference#open-the-console "Ouvrez la console-référence de la console."  
+[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Ouvrez la console-référence de la console | Documents Microsoft"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  

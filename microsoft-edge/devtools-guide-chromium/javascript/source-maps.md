@@ -2,16 +2,16 @@
 title: Mapper le code prétraité au code source
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: b48c67584b3f3253ada99e32c5dabfdccb2fa4de
-ms.sourcegitcommit: ecdc4287fa25a18cb4ddcaf43fcce3b396c3314c
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: c791a4af4446a1209d6db77ca4787fee80d45e5c
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "10581795"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981768"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -41,9 +41,9 @@ Gardez votre code côté client lisible et déboguable même après l’avoir co
 ### Résumé  
 
 *   Utilisez les mappages sources pour mapper le code minified au code source. Vous pouvez ensuite lire et déboguer du code compilé dans la source d’origine.  
-*   Utilisez uniquement le préprocesseur capable de générer des cartes sources.  
+*   Utilisez uniquement les pré-processeurs capables de produire des cartes sources.  
 *   Vérifiez que votre serveur Web peut servir de cartes sources.  
-
+    
 <!--todo: add link to preprocessors capable of producing Source Maps when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
 
@@ -66,7 +66,7 @@ Les types de préprocesseurs suivants sont couramment utilisés en association a
 *   Transpileurs \ ([Babel][BabelJS], [traceur][GitHubWikiGoogleTraceurCompiler]\)  
 *   Compileurs \ ([compilateur de fermeture][GitHubGoogleClosureCompiler], [dactylographié][|::ref1::|Main], [CoffeeScript][|::ref2::|Main], [DART][DartMain]\)  
 *   Minifiers \ ([UglifyJS][GitHubMishooUglifyJS]\)  
-
+    
 ## Cartes sources dans le panneau sources de DevTools  
 
 Les cartes sources des préprocesseurs entraînent le chargement de vos fichiers d’origine en plus de vos fichiers minified par DevTools.  Vous utilisez ensuite les originaux pour définir des points d’arrêt et parcourir le code.  Entre-temps, Microsoft Edge exécute actuellement votre code minified. Cela vous donne l’illusion d’exécuter un site de développement en production.  
@@ -75,11 +75,11 @@ Lorsque vous exécutez des mappages source dans DevTools, vous remarquerez que l
 
 ### Activer les cartes sources dans les paramètres  
 
-Les cartes sources sont activées par défaut <!--\(as of Microsoft Edge 39\)-->, mais si vous voulez vérifier ou activer un contrôle; Commencez par ouvrir DevTools, cliquez sur le bouton **personnaliser et contrôler devtools** `...` , puis sélectionnez **paramètres**.  Dans le volet **Préférences** , sous **sources**, activez la case à cocher **activer les mappages de sources JavaScript**.  Vous pouvez également activer la case à cocher **activer les mappages de sources CSS**.  
+Les cartes sources sont activées par défaut <!--\(as of Microsoft Edge 39\)-->, mais si vous voulez vérifier ou activer un contrôle; Commencez par ouvrir DevTools, cliquez sur le bouton **personnaliser et contrôler devtools** \ ( `...` \), puis sélectionnez **paramètres**.  Dans le volet **Préférences** , sous **sources**, activez la case à cocher **activer les mappages de sources JavaScript**.  Vous pouvez également activer la case à cocher **activer les mappages de sources CSS**.  
 
-> ##### Figure1  
-> Activer les mappages sources  
-> ![Activer les mappages sources][ImageSourceMaps]  
+:::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Activer les mappages sources" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
+   Activer les mappages sources  
+:::image-end:::  
 
 ### Débogage avec des mappages sources  
 
@@ -87,7 +87,7 @@ Lors du débogage de votre code et des mappages de sources activés, les cartes 
 
 1.  Dans la console \ (le lien vers la source doit être le fichier d’origine, et non le fichier généré \)  
 1.  Lorsque vous parcourez le code \ (les liens dans la pile d’appels doivent ouvrir le fichier source d’origine \)  
-
+    
 <!--todo: add link to debugging your code when section is available -->  
 <!--[DebugBreakpointsStepCode]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/debug/breakpoints/step-code ""  -->  
 
@@ -104,28 +104,25 @@ En incluant le commentaire spécial suivant dans votre code, qui est considéré
 Accédez à la page suivante.  
 
 *   [démonstration][CssNinjaDemoSourceMapping]
-
+    
 Procédez comme suit.  
 
 1.  Ouvrez le DevTools et accédez au panneau **sources** .  
-1.  Entrez un nom de fichier dans le champ **_nom de votre code:_** champ de saisie.  
+1.  Entrez un nom de fichier dans le champ **nom de votre code:** champ de saisie.  
 1.  Cliquez sur le bouton **compiler** .  
 1.  Une alerte apparaît avec la somme évaluée à partir de la source de CoffeeScript.  
+    
+Si vous développez le sous-panneau **sources** , vous voyez maintenant un nouveau fichier avec le nom de fichier personnalisé que vous avez entré précédemment.  Si vous double-cliquez sur le fichier pour l’afficher, il contient le code JavaScript compilé pour la source d’origine.  En revanche, la dernière ligne est un `// @sourceURL` Commentaire indiquant le fichier source d’origine.  Cela risque de vous aider à procéder au débogage lorsque vous travaillez avec des résumés de langue.  
 
-Si vous développez le sous-panneau **_sources_** , vous voyez maintenant un nouveau fichier avec le nom de fichier personnalisé que vous avez entré précédemment.  Si vous double-cliquez sur le fichier pour l’afficher, il contient le code JavaScript compilé pour la source d’origine.  En revanche, la dernière ligne est un `// @sourceURL` Commentaire indiquant le fichier source d’origine.  Cela risque de vous aider à procéder au débogage lorsque vous travaillez avec des résumés de langue.  
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Utilisation de sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+   Utilisation de sourceURL  
+:::image-end:::  
 
-> ##### Figure 2
-> Utilisation de sourceURL  
-> ![Utilisation de sourceURL][ImageCoffeeScript]  
-
-<!--## Feedback   -->  
-
+<!--  
+## Feedback   
 
 
-<!-- image links -->  
-
-[ImageSourceMaps]: /microsoft-edge/devtools-guide-chromium/media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png "Figure 1: activer les mappages sources"  
-[ImageCoffeeScript]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-coffeeeeeeee.msft.png "Figure 2: utilisation de sourceURL"  
+-->  
 
 <!-- links -->  
 
@@ -137,7 +134,7 @@ Si vous développez le sous-panneau **_sources_** , vous voyez maintenant un nou
 [GitHubMishooUglifyJS]: https://github.com/mishoo/UglifyJS "mishoo/UglifyJS | GitHub"  
 [GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "Cartes sources: langues, outils et autres informations | Wiki GitHub"  
 [GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Mise en route-Google/traceur-compilateur | Wiki GitHub"  
-[TypeScriptMain]: https://www.typescriptlang.org "Dactylographié"  
+[TypeScriptMain]: https://www.typescriptlang.org "TypeScript"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  

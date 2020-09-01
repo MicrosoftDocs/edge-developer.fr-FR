@@ -2,16 +2,16 @@
 title: Personnaliser Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: f34f2e3c02b0c66ee02f4810827f3adb51a60abc
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: e726b7f3f6245cb6f6798669c73fb14718542baa
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882743"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982364"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -45,57 +45,57 @@ Pour ouvrir les paramètres, effectuez l’une des opérations suivantes:
 
 *   `F1`Devtools est activé.  
 *   Ouvrez le **menu principal** , puis sélectionnez **paramètres**.  
-
-> ##### Figure1  
-> Paramètres  
-> ![Paramètres][ImageSettings]  
-
+    
+    :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Paramètres" lightbox="../media/customize-settings-preferences.msft.png":::
+       **Paramètres**  
+    :::image-end:::  
+    
 ## Bac   
 
 Le **tiroir** comporte de nombreuses fonctionnalités masquées.  
 
-Appuyez `Escape` pour ouvrir ou fermer le tiroir.  
+Appuyez `Escape` pour ouvrir ou fermer le **tiroir**.  
 
-> ##### Figure 2  
-> Le tiroir  
-> ![Le tiroir][ImageDrawerExample]  
+:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Le tiroir" lightbox="../media/customize-drawer-open.msft.png":::
+   Le **tiroir**  
+:::image-end:::  
 
-Cliquez **sur autres** ![ ][ImageMoreIcon] pour ouvrir d’autres onglets de tiroir-caisse.  
+Cliquez **sur autres** ![ ][ImageMoreIcon] pour afficher d’autres onglets de **tiroir-caisse** .  
 
-> ##### Figure3  
-> Bouton permettant d’ouvrir les onglets du tiroir  
-> ![Bouton permettant d’ouvrir les onglets du tiroir][ImageMoreDrawerTabs]  
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Bouton permettant d’ouvrir les onglets du tiroir-tiroir" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+   Bouton permettant d’ouvrir les onglets du **tiroir-tiroir**  
+:::image-end:::  
 
 ## Réorganiser les panneaux   
 
 Cliquez et faites glisser un onglet de panneau pour en modifier l’ordre.  L’ordre de tabulation personnalisé persiste dans toutes les sessions DevTools.  
 
 > [!NOTE]
-> Par défaut, l’onglet du panneau réseau est généralement le quatrième à partir de la gauche.  Dans la [figure 4](#figure-4), il s’agit de la première à partir de la gauche.  
+> Par défaut, l’onglet du panneau **réseau** est généralement le quatrième à partir de la gauche.  Dans l’illustration suivante, le panneau **réseau** est le premier à partir de la gauche.  
 
-> ##### Figure 4  
-> Fenêtre DevTools avec un ordre de tabulation personnalisé    
-> ![Fenêtre DevTools avec un ordre de tabulation de panneau personnalisé][ImageCustomTabOrdering]  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Fenêtre DevTools avec un ordre de tabulation de panneau personnalisé" lightbox="../media/customize-network-first-position.msft.png":::
+   Fenêtre DevTools avec un ordre de tabulation de panneau personnalisé  
+:::image-end:::  
 
 ## Changer la position de DevTools   
 
 Voir [placement de Microsoft Edge devtools][DevToolsPlacement].  
 
-> ##### Figure 5  
-> DevTools non attaché  
-> ![DevTools non attaché][ImageUndock]  
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="DevTools non attaché" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+   DevTools non attaché  
+:::image-end:::  
 
 ## Thème foncé   
 
 Voir [activer un thème foncé][DarkTheme].  
 
-> ##### Figure 6  
-> Thème foncé  
-> ![Thème foncé][ImageDarkTheme]  
+:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Thème foncé" lightbox="../media/customize-settings-appearance-theme.msft.png":::
+   Thème foncé  
+:::image-end:::  
 
 ## Expériences   
 
-Pour activer les expériences DevTools:  
+Pour activer les expériences DevTools, effectuez les actions suivantes.  
 
 1.  Accédez à `edge://flags/#enable-devtools-experiments` .  
 1.  Cliquez sur **Activer**.  
@@ -103,25 +103,20 @@ Pour activer les expériences DevTools:
 
 La prochaine fois que vous ouvrez DevTools, une nouvelle page s’affiche appelée **expériences** dans les [paramètres](#settings).  
 
+<!--  
    
 
   
+-->  
 
 <!-- image links -->  
 
-[ImageMoreIcon]: /microsoft-edge/devtools-guide-chromium/media/more-icon.msft.png  
-
-[ImageSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-preferences.msft.png "Figure 1: paramètres"  
-[ImageDrawerExample]: /microsoft-edge/devtools-guide-chromium/media/customize-drawer-open.msft.png "Figure 2: tiroir"  
-[ImageMoreDrawerTabs]: /microsoft-edge/devtools-guide-chromium/media/customize-drawer-open-more-tools.msft.png "Figure 3: bouton permettant d’ouvrir les onglets du tiroir"  
-[ImageCustomTabOrdering]: /microsoft-edge/devtools-guide-chromium/media/customize-network-first-position.msft.png "Figure 4: fenêtre d’un DevTools avec un ordre de tabulation de panneau personnalisé"  
-[ImageUndock]: /microsoft-edge/devtools-guide-chromium/media/customize-dev-tools-dock-side.msft.png "Figure 5: DevTools non attaché"  
-[ImageDarkTheme]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-appearance-theme.msft.png "Figure 6: thème foncé"  
+[ImageMoreIcon]: ../media/more-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsPlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Changer la position de Microsoft Edge DevTools (détacher, ancrer en bas, ancrer à gauche)"  
-[DarkTheme]: /microsoft-edge/devtools-guide-chromium/customize/dark-theme "Activer un thème foncé dans Microsoft Edge DevTools"  
+[DevToolsPlacement]: ./placement.md "Changer la position de Microsoft Edge DevTools Documents Microsoft"  
+[DarkTheme]: ./dark-theme.md "Activer un thème foncé dans Microsoft Edge DevTools | Documents Microsoft"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  

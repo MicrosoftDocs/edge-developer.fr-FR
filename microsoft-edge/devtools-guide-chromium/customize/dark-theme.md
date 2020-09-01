@@ -2,16 +2,16 @@
 title: Activer un thème foncé dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 46a6d1aab30689a0d4b1f3fb20bf3521abd2017a
-ms.sourcegitcommit: 67ce64f810afdb304844bae0f3918d4e9108dcec
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: cb5404ea088fa74890a6cb5027745cf59f4b2eac
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "10601338"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10981795"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,47 +37,42 @@ ms.locfileid: "10601338"
 
 Vous pouvez activer le thème sombre dans les [paramètres](#set-up-dark-theme-from-settings) ou le [menu de commandes](#set-up-dark-theme-from-the-command-menu).  
 
-> ##### Figure1  
-> Thème foncé  
-> ![Thème foncé][ImageDarkTheme]  
+:::image type="complex" source="../media/customize-elements-styles-console-dark-theme.msft.png" alt-text="Thème foncé" lightbox="../media/customize-elements-styles-console-dark-theme.msft.png":::
+   Thème foncé  
+:::image-end:::  
 
 ## Configurer un thème foncé à partir des paramètres   
 
 1.  Cliquez sur **personnaliser et contrôler devtools** `...` , puis sélectionnez **paramètres**.  Vous pouvez également ouvrir les **paramètres** en appuyant sur `F1` .  
-
-> ##### Figure 2  
-> Paramètres d’ouverture  
-> ![Paramètres d’ouverture][ImageOpenSettings]  
+    
+    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Ouvrez le menu Paramètres" lightbox="../media/customize-options-settings.msft.png":::
+       Ouvrir les **paramètres**  
+    :::image-end:::  
 
 1.  Dans le volet **Préférences** , sous **apparence**, cliquez sur la liste déroulante **thème** , puis sélectionnez **foncé**.  
-
-> ##### Figure3  
-> Préférences  
-> ![Préférences][ImagePreferences]  
+    
+    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="Préférences" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
+       **Préférences**  
+    :::image-end:::  
 
 ## Configurer un thème foncé dans le menu de commandes   
 
-1.  [Ouvrir le menu de commandes][CommandMenu].  
+1.  [Ouvrir le menu de commandes][DevtoolsCommandMenu].  
 1.  Commencez à taper `dark` , sélectionnez la commande **basculer vers le thème foncé** , puis appuyez sur la touche `Enter` pour exécuter la commande.  
-
-> ##### Figure 4  
-> Commande thème foncé  
-> ![Commande thème foncé][ImageDarkThemeCommand]  
-
+    
+    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Commande thème foncé" lightbox="../media/customize-command-menu-dark.msft.png":::
+       Commande thème foncé  
+    :::image-end:::  
+    
+<!--  
    
 
 
-
-<!-- image links -->  
-
-[ImageDarkTheme]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-console-dark-theme.msft.png "Figure 1: thème foncé"  
-[ImageOpenSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-options-settings.msft.png "Figure 2: paramètres d’ouverture"  
-[ImagePreferences]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-preferences-appearance-theme-dark.msft.png "Figure 3: préférences"  
-[ImageDarkThemeCommand]: /microsoft-edge/devtools-guide-chromium/media/customize-command-menu-dark.msft.png "Figure 4: commande thème foncé"  
+-->  
 
 <!-- links -->  
 
-[CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Menu de commandes"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Menu de commandes | Documents Microsoft"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  

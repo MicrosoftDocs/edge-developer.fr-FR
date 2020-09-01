@@ -2,16 +2,16 @@
 title: Désactiver JavaScript avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: f3838b4e8eccf83aaa71be35ff477ec56cbe7455
-ms.sourcegitcommit: ecdc4287fa25a18cb4ddcaf43fcce3b396c3314c
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: 587f4780432b1b2b964462d2d7f5779f447f1313
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "10581809"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982912"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,49 +35,45 @@ ms.locfileid: "10581809"
 
 
 
-Pour afficher un aperçu d’une page Web lorsque JavaScript est désactivé:  
+Pour afficher un aperçu d’une page Web lorsque JavaScript est désactivé.  
 
 1.  [Ouvrez Microsoft Edge devtools][DevToolsOpen].  
 1.  Appuyez sur `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
     
-    > ##### Figure1  
-    > Menu de commandes  
-    > ![Menu de commandes][ImageCommandMenu]  
+    :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="Menu de commandes" lightbox="../media/javascript-console-command.msft.png":::
+       **Menu de commandes**  
+    :::image-end:::  
     
 1.  Commencez `javascript` à taper, sélectionnez **Désactiver JavaScript**, puis appuyez sur `Enter` la touche pour exécuter la commande.  JavaScript est désormais désactivé.  
     
-    > ##### Figure 2  
-    > Sélection de l’option **Désactiver JavaScript** dans le menu de commandes  
-    > ![Sélection de l’option désactiver JavaScript dans le menu de commandes][ImageDisableJS]  
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Sélectionnez Désactiver JavaScript dans le menu de commandes." lightbox="../media/javascript-console-command-javascript.msft.png":::
+       Sélectionnez **Désactiver JavaScript** dans le **menu de commandes** .  
+    :::image-end:::  
     
     L’icône d’avertissement jaune en regard de **sources** vous rappelle que JavaScript est désactivé.  
     
-    > ##### Figure3  
-    > Icône d’avertissement en regard de **sources**  
-    > ![Icône d’avertissement en regard de sources][ImageDisableJSWarning]  
-
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="Icône d’avertissement en regard de sources" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+       Icône d’avertissement en regard de **sources**  
+    :::image-end:::  
+    
 JavaScript reste désactivé dans cet onglet tant que vous avez DevTools ouvert.  
 
 Vous pouvez vouloir recharger la page pour voir si et comment la page dépend de JavaScript lors du chargement.  
 
-Pour réactiver JavaScript:  
+Pour réactiver JavaScript, effectuez les actions suivantes.  
 
 *   Ouvrez à nouveau le **menu de commandes** et exécutez la `Enable JavaScript` commande.  
 *   Fermez DevTools.  
 
-## Commentaires   
+<!--  
+## Feedback   
 
 
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/javascript-console-command.msft.png "Figure 1: menu de commandes"  
-[ImageDisableJS]: /microsoft-edge/devtools-guide-chromium/media/javascript-console-command-javascript.msft.png "Figure 2: sélectionnez Désactiver JavaScript dans le menu de commandes"  
-[ImageDisableJSWarning]: /microsoft-edge/devtools-guide-chromium/media/javascript-console-javascript-disabled-warning.msft.png "Figure 3: icône d’avertissement en regard de sources"  
+-->  
 
 <!-- links -->  
 
-[DevToolsOpen]: ../open.md "Ouvrir Microsoft Edge DevTools"  
+[DevToolsOpen]: ../open.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
