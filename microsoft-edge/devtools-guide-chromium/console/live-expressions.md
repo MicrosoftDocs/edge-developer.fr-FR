@@ -2,16 +2,16 @@
 title: Regardez des valeurs d’expression JavaScript en temps réel avec des expressions dynamiques
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: c388e44ca5507dd88ad9ad7b7ee985e658dfc569
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: 39a7967a7dd1d0b34eb802d2879e04a64afd0dd0
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601739"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10982234"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,22 +31,22 @@ ms.locfileid: "10601739"
 
 
 
-# <span data-ttu-id="af7f0-103">Regardez des valeurs d’expression JavaScript en temps réel avec des expressions dynamiques</span><span class="sxs-lookup"><span data-stu-id="af7f0-103">Watch JavaScript Expression Values In Real-Time With Live Expressions</span></span>   
+# <span data-ttu-id="de57f-103">Regardez des valeurs d’expression JavaScript en temps réel avec des expressions dynamiques</span><span class="sxs-lookup"><span data-stu-id="de57f-103">Watch JavaScript Expression Values In Real-Time With Live Expressions</span></span>   
 
   
 
-<span data-ttu-id="af7f0-104">Si vous vous intentez de taper la même expression JavaScript dans la console à plusieurs reprises, il peut être plus facile de créer une **expression dynamique**.</span><span class="sxs-lookup"><span data-stu-id="af7f0-104">If you find yourself typing the same JavaScript expression in the Console repeatedly, you might find it easier to create a **Live Expression**.</span></span>  <span data-ttu-id="af7f0-105">Dans les **expressions dynamiques** , vous tapez une expression une seule fois, puis épinglez celle-ci en haut de votre console.</span><span class="sxs-lookup"><span data-stu-id="af7f0-105">With **Live Expressions** you type an expression once and then pin it to the top of your Console.</span></span>  <span data-ttu-id="af7f0-106">La valeur de l’expression est mise à jour en temps réel.</span><span class="sxs-lookup"><span data-stu-id="af7f0-106">The value of the expression updates in near real-time.</span></span>  
+<span data-ttu-id="de57f-104">Si vous vous intentez de taper la même expression JavaScript dans la console à plusieurs reprises, il peut être plus facile de créer une **expression dynamique**.</span><span class="sxs-lookup"><span data-stu-id="de57f-104">If you find yourself typing the same JavaScript expression in the Console repeatedly, you might find it easier to create a **Live Expression**.</span></span>  <span data-ttu-id="de57f-105">Dans les **expressions dynamiques** , vous tapez une expression une seule fois, puis épinglez celle-ci en haut de votre console.</span><span class="sxs-lookup"><span data-stu-id="de57f-105">With **Live Expressions** you type an expression once and then pin it to the top of your Console.</span></span>  <span data-ttu-id="de57f-106">La valeur de l’expression est mise à jour en temps réel.</span><span class="sxs-lookup"><span data-stu-id="de57f-106">The value of the expression updates in near real-time.</span></span>  
 
-## <span data-ttu-id="af7f0-107">Créer une expression dynamique</span><span class="sxs-lookup"><span data-stu-id="af7f0-107">Create a Live Expression</span></span>   
+## <span data-ttu-id="de57f-107">Créer une expression dynamique</span><span class="sxs-lookup"><span data-stu-id="de57f-107">Create a Live Expression</span></span>   
 
-1.  <span data-ttu-id="af7f0-108">[Ouvrez la console][DevToolsConsoleReferenceOpenConsole].</span><span class="sxs-lookup"><span data-stu-id="af7f0-108">[Open the Console][DevToolsConsoleReferenceOpenConsole].</span></span>  
-1.  <span data-ttu-id="af7f0-109">Cliquez sur **créer** une expression dynamique ![ ][ImageCreateLiveExpressionIcon] .</span><span class="sxs-lookup"><span data-stu-id="af7f0-109">Click **Create Live Expression** ![Create Live Expression][ImageCreateLiveExpressionIcon].</span></span>  <span data-ttu-id="af7f0-110">La zone de texte **expression dynamique** s’affiche.</span><span class="sxs-lookup"><span data-stu-id="af7f0-110">The **Live Expression** text box appears.</span></span>  
+1.  <span data-ttu-id="de57f-108">[Ouvrez la console][DevToolsConsoleReferenceOpenConsole].</span><span class="sxs-lookup"><span data-stu-id="de57f-108">[Open the Console][DevToolsConsoleReferenceOpenConsole].</span></span>  
+1.  <span data-ttu-id="de57f-109">Cliquez sur **créer une expression dynamique** \ ( ![ créer une expression dynamique ][ImageCreateLiveExpressionIcon] \).</span><span class="sxs-lookup"><span data-stu-id="de57f-109">Click **Create Live Expression** \(![Create Live Expression][ImageCreateLiveExpressionIcon]\).</span></span>  <span data-ttu-id="de57f-110">La zone de texte **expression dynamique** s’affiche.</span><span class="sxs-lookup"><span data-stu-id="de57f-110">The **Live Expression** text box appears.</span></span>  
     
-    > ##### <span data-ttu-id="af7f0-111">Figure1</span><span class="sxs-lookup"><span data-stu-id="af7f0-111">Figure 1</span></span>  
-    > <span data-ttu-id="af7f0-112">Saisie `document.activeElement` de texte dans la zone de texte **expression dynamique**</span><span class="sxs-lookup"><span data-stu-id="af7f0-112">Typing `document.activeElement` into the **Live Expression** text box</span></span>  
-    > ![Taper document. activeElement dans la zone de texte expression dynamique][ImageLiveExpressionTextbox]  
+    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Taper document. activeElement dans la zone de texte expression dynamique" lightbox="../media/console-create-live-expression.msft.png":::
+       <span data-ttu-id="de57f-112">Saisie `document.activeElement` de texte dans la zone de texte **expression dynamique**</span><span class="sxs-lookup"><span data-stu-id="de57f-112">Typing `document.activeElement` into the **Live Expression** text box</span></span>  
+    :::image-end:::  
     
-1.  <span data-ttu-id="af7f0-114">Tapez `Control` + `Enter` \ (Windows \) ou `Command` + `Enter` \ (MacOS \) pour enregistrer l’expression ou cliquez en dehors de la zone de texte **expression dynamique** .</span><span class="sxs-lookup"><span data-stu-id="af7f0-114">Type `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to save the expression, or click outside of the **Live Expression** text box.</span></span>  
+1.  <span data-ttu-id="de57f-113">Tapez `Control` + `Enter` \ (Windows \) ou `Command` + `Enter` \ (MacOS \) pour enregistrer l’expression ou cliquez en dehors de la zone de texte **expression dynamique** .</span><span class="sxs-lookup"><span data-stu-id="de57f-113">Type `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to save the expression, or click outside of the **Live Expression** text box.</span></span>  
 
 <!--todo: add reference open console (open the console) section when available  -->  
 
@@ -56,20 +56,18 @@ ms.locfileid: "10601739"
 
 <!-- image links -->  
 
-[ImageCreateLiveExpressionIcon]: /microsoft-edge/devtools-guide-chromium/media/create-live-expression-icon.msft.png  
-
-[ImageLiveExpressionTextbox]: /microsoft-edge/devtools-guide-chromium/media/console-create-live-expression.msft.png "Figure 1: taper document. activeElement dans la zone de texte expression dynamique"  
+[ImageCreateLiveExpressionIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: /microsoft-edge/devtools-guide-chromium/console/reference#open-the-console "Ouvrez la console-référence de la console."  
+[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Ouvrez la console-référence de la console | Documents Microsoft"  
 
 > [!NOTE]
-> <span data-ttu-id="af7f0-117">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="af7f0-117">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="af7f0-118">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).</span><span class="sxs-lookup"><span data-stu-id="af7f0-118">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="de57f-115">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="de57f-115">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="de57f-116">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).</span><span class="sxs-lookup"><span data-stu-id="de57f-116">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
-<span data-ttu-id="af7f0-120">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="af7f0-120">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="de57f-118">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="de57f-118">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
