@@ -1,17 +1,17 @@
 ---
-title: Guide de problèmes réseau
+title: Guide des problèmes réseau
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 018a6ef89242d55cefaa974641be456f4501c557
-ms.sourcegitcommit: 33663cd7838dddee86228dde469a5e9551bddb02
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: a9a3234f3516bef16328102858363ffcb06251ec
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611804"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10985379"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -38,97 +38,95 @@ ms.locfileid: "10611804"
 
 Ce guide vous montre comment détecter les problèmes de réseau ou les opportunités d’optimisation dans le volet réseau de Microsoft Edge DevTools.  
 
-Pour [plus d’informations][NetworkPerformance] sur les concepts de base du réseau, voir découvrir le panneau de configuration.  
+Pour [plus d’informations][NetworkPerformance] sur les concepts de base du **réseau** , voir découvrir le panneau de configuration.  
 
 ## Demandes mises en file d’attente ou bloquées   
 
-### Symptômes  
+**Symptômes**  
 
 Six demandes sont en train de télécharger simultanément.  Après cela, une série de demandes est mise en file d’attente ou bloquée.  Après l’exécution de l’une des six premières demandes, une des requêtes de la file d’attente démarre.  
 
-Dans la [figure 1](#figure-1) **, les six** premières demandes de l' `edge-iconx1024.msft.png` actif commencent simultanément.  Les demandes ultérieures sont bloquées jusqu’à ce que l’une des six nouvelles préfinissements.  
+Dans la **figure** ci-dessous, les six premières demandes de l' `edge-iconx1024.msft.png` actif commencent simultanément.  Les demandes ultérieures sont bloquées jusqu’à ce que l’une des six nouvelles préfinissements.  
 
-> ##### Figure1  
-> Exemple d’une série mise en file d’attente ou bloquée dans le panneau réseau  
-> ![Exemple d’une série mise en file d’attente ou bloquée dans le panneau réseau][ImageStalled]  
+:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="Exemple d’une série mise en file d’attente ou bloquée dans le panneau réseau" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
+   Exemple d’une série mise en file d’attente ou bloquée dans le panneau **réseau**  
+:::image-end:::  
 
-### Causes  
+**Causes**  
 
 Il y a trop de demandes sur un domaine unique.  Sur les connexions HTTP/1.0 ou HTTP/1.1, Microsoft Edge autorise un maximum de six connexions TCP simultanées par hôte.  
 
-### Correctifs  
+**Correctifs**  
 
 *   Implémentez Domain sharding si vous devez utiliser HTTP/1.0 ou HTTP/1.1.  
 *   Utiliser HTTP/2.  N’utilisez pas le domaine sharding avec HTTP/2.  
 *   Supprimez ou différez les demandes inutiles de manière à ce que les demandes critiques soient téléchargées plus tôt.  
-
+    
 ## Temps lent vers le premier octet (TTFB)   
 
-### Symptômes  
+**Symptômes**  
 
 Une requête passe un certain temps en attente de réception du premier octet du serveur.  
 
-Dans la [figure 2](#figure-2), la barre verte longue de la **cascade** indique que la demande est en attente pendant un certain temps.  Il a été simulé à l’aide d’un profil afin de limiter la vitesse du réseau et d’ajouter un délai.  
+Dans l’illustration ci-dessous, la barre verte longue de la **cascade** indique que la requête attendait un certain temps.  Il a été simulé à l’aide d’un profil afin de limiter la vitesse du réseau et d’ajouter un délai.  
 
-> ##### Figure 2  
-> Exemple d’une requête avec un délai de première octet lent  
-> ![Exemple d’une requête avec un délai de première octet lent][ImageSlowTimeToFirstByte]  
+:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Exemple d’une requête avec un délai de première octet lent" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
+   Exemple d’une requête avec un délai de première octet lent  
+:::image-end:::  
 
-### Causes  
+**Causes**  
 
 *   La connexion entre le client et le serveur est lente.  
 *   La réponse du serveur est lente.  Hébergez le serveur localement pour déterminer s’il s’agit d’une connexion ou d’un serveur lent.  Si vous obtenez encore un temps lente pour le premier octet \ (TTFB \) lors de l’accès à un serveur local, le serveur est lent.  
-
-### Correctifs  
+    
+**Correctifs**  
 
 *   Si la connexion est lente, envisagez d’héberger votre contenu sur un réseau de distribution de contenu ou de modifier des fournisseurs d’hébergement.  
 *   Si le serveur est lent, envisagez d’optimiser les requêtes de base de données, de mettre en cache ou de modifier votre configuration serveur.  
-
+    
 ## Téléchargement de contenu lent   
 
-### Symptômes  
+**Symptômes**  
 
 Le téléchargement d’une requête prend beaucoup de temps.  
 
-Dans la [figure 3](#figure-3), une barre bleue longue **en regard du** fichier PNG signifie que le téléchargement a duré longtemps.  
+Dans l’illustration ci-dessous, la barre bleue longue en **regard du** fichier PNG signifie que le téléchargement a duré longtemps.  
 
-> ##### Figure3  
-> Exemple d’une requête prenant du temps à télécharger  
-> ![Exemple d’une requête prenant du temps à télécharger][ImageSlowContentDownload]  
+:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="Exemple d’une requête prenant du temps à télécharger" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
+   Exemple d’une requête prenant du temps à télécharger  
+:::image-end:::  
 
-### Causes  
+**Causes**  
 
 *   La connexion entre le client et le serveur est lente.  
 *   Un grand nombre de contenus est en cours de téléchargement.  
-
-### Correctifs  
+    
+**Correctifs**  
 
 *   Envisagez d’héberger votre contenu sur un réseau de distribution de contenu ou de modifier des fournisseurs d’hébergement.  
 *   Envoyez moins d’octets en optimisant vos demandes.  
-
+    
 ## Compétences de collaboration  
 
 Vous rencontrez un problème réseau qui doit être ajouté à ce guide?  
 
 *   Envoyez un tweet à [@EdgeDevTools][MicrosoftEdgeTweet].  
-*   **Send Feedback** ![ ][ImageSendFeedbackIcon] Pour envoyer des commentaires ou des demandes de fonctionnalité, sélectionnez Envoyer des commentaires dans le devtools ou appuyez sur `Alt` + `Shift` + `I` \ (Windows \) ou `Option` + `Shift` + `I` \ (MacOS \).  
+*   Pour **Envoyer** ![ des ][ImageSendFeedbackIcon] `Alt` + `Shift` + `I` `Option` + `Shift` + `I` commentaires ou des demandes de fonctionnalité, sélectionnez Envoyer des commentaires \ (envoyer des commentaires \) dans le devtools ou appuyez sur \  
 *   [Ouvrez un problème][WebFundamentalsIssue] dans le référentiel Samples docs.  
+    
+<!--  
+  
 
-<!--   -->  
 
-
+-->  
 
 <!-- image links -->  
 
-[ImageSendFeedbackIcon]: /microsoft-edge/devtools-guide-chromium/media/smile-icon.msft.png  
-
-[ImageStalled]: /microsoft-edge/devtools-guide-chromium/media/network-network-disabled-cache-resources-queue.msft.png "Figure 1: exemple d’une série mise en file d’attente ou bloquée dans le panneau réseau"  
-[ImageSlowTimeToFirstByte]: /microsoft-edge/devtools-guide-chromium/media/network-network-resources-using-dial-up-profile.msft.png "Figure 2: exemple de requête avec un délai de première octet lent"  
-[ImageSlowContentDownload]: /microsoft-edge/devtools-guide-chromium/media/network-network-resources-edge-devtools.msft.png "Figure 3: exemple de requête dont le téléchargement prend du temps"  
+[ImageSendFeedbackIcon]: ../media/smile-icon.msft.png  
 
 <!-- links -->  
 
-[NetworkPerformance]: /microsoft-edge/devtools-guide-chromium/network/index "Examiner l’activité réseau dans Microsoft Edge DevTools"  
+[NetworkPerformance]: ./index.md "Examiner l’activité réseau dans Microsoft Edge DevTools | Documents Microsoft"  
 
 [MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]  
 

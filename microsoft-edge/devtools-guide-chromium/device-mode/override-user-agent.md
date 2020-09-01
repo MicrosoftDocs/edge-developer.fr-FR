@@ -2,16 +2,16 @@
 title: Remplacement de la chaîne de l’agent utilisateur à partir de Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 376e1550d0dc31f3b47b6badd6970076a8c13f91
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: 0ffea8f515a2d4ba0fa16b447a7d204c335dc7bb
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607306"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984992"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,27 +39,24 @@ Pour remplacer la chaîne de l' [agent utilisateur][MDNUserAgent] à partir de M
 
 1.  Appuyez sur `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
     
-    > ##### Figure1  
-    > Menu de commandes  
-    > ![Menu de commandes][ImageCommandMenu]  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Menu de commandes" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       **Menu de commandes**  
+    :::image-end:::  
     
 1.  Tapez `network conditions` , sélectionnez **afficher les conditions du réseau**, puis appuyez `Enter` sur l’onglet **conditions réseau** pour l’ouvrir.  
 1.  Dans la section **agent utilisateur** , désactivez la case à cocher **sélectionner automatiquement** .  
     
-    > ##### Figure 2  
-    > Désactiver l' **option sélectionner automatiquement**  
-    > ![Désactiver l’option sélectionner automatiquement][ImageUserAgentDisableSelectAutomatically]  
+    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="Désactiver l’option sélectionner automatiquement" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
+       Désactiver l' **option sélectionner automatiquement**  
+    :::image-end:::  
     
 1.  Sélectionnez une chaîne d’agent utilisateur dans la liste ou entrez votre propre chaîne personnalisée.  
+    
+<!--  
+## Feedback   
 
-<!--## Feedback   -->  
 
-
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-command-menu.msft.png "Figure 1: menu de commandes"  
-[ImageUserAgentDisableSelectAutomatically]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png "Figure 2: désactiver l’option sélectionner automatiquement"  
+-->  
 
 <!-- links -->  
 

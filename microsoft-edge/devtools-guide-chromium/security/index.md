@@ -2,16 +2,16 @@
 title: Présentation des problèmes de sécurité avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 05112d5270f41ce83daa935b8137c4a773ad25a0
-ms.sourcegitcommit: 4c24edbd1c591914cb4109511534851570a614cb
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: 850dde157a673a84a3e603f22a5e54abd90bde5d
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611909"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984300"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -44,12 +44,11 @@ ms.locfileid: "10611909"
 Le volet **sécurité** est l’endroit principal de devtools pour vérifier la sécurité d’une page.  
 
 1.  [Ouvrez devtools][DevToolsOpen].  
-
 1.  Cliquez sur l’onglet **sécurité** pour ouvrir le volet **sécurité** .  
     
-    > ##### Figure1  
-    > Volet sécurité  
-    > ![Volet sécurité][ImageSecurityPanel]  
+    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="Volet sécurité" lightbox="../media/security-security-overview-secure.msft.png":::
+       Volet **sécurité**  
+    :::image-end:::  
     
 ## Problèmes courants   
 
@@ -57,9 +56,9 @@ Le volet **sécurité** est l’endroit principal de devtools pour vérifier la 
 
 Lorsque l’origine principale d’une page n’est pas sécurisée, la **vue d’ensemble** de la sécurité indique que **cette page n’est pas sécurisée**.  
 
-> ##### Figure 2  
-> Page non sécurisée  
-> ![Page non sécurisée][ImageNonSecurePage]  
+:::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="Page non sécurisée" lightbox="../media/security-security-overview-non-secure.msft.png":::
+   Page non sécurisée  
+:::image-end:::  
 
 Ce problème survient lorsque l’URL visitée a été demandée sur HTTP.  Pour garantir la sécurité de votre application, vous devez la demander sur HTTPs.  Par exemple, si vous observez l’URL dans la barre d’adresses, il est probable que le résultat ressemble à ceci `http://example.com` .  Pour sécuriser l’URL, l’URL devrait être `https://example.com` .  
 
@@ -74,15 +73,15 @@ Si vous n’avez pas configuré HTTPs sur votre serveur, [cryptez][LetsEncrypt] 
 
 Le **contenu mixte** signifie que l’origine principale d’une page est sécurisée, mais que la page a demandé des ressources d’origines non sécurisées.  Les pages de contenu mixte ne sont que partiellement protégées, car le contenu HTTP est accessible aux renifleurs et est vulnérable aux attaques par le biais du milieu.  
 
-> ##### Figure3  
-> Contenu mixte  
-> ![Contenu mixte][ImageMixedContent]  
+:::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Contenu mixte" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
+   Contenu mixte  
+:::image-end:::  
 
-Dans la [figure 3](#figure-3), cliquez sur **Afficher 1 requête dans le panneau réseau** pour ouvrir le panneau **réseau** , puis appliquez le `mixed-content:displayed` filtre de sorte que le **Journal réseau** n’affiche que les ressources non sécurisées.  
+Dans la figure précédente, cliquez sur **afficher une requête dans le panneau réseau** pour ouvrir le panneau **réseau** et appliquez le `mixed-content:displayed` filtre de sorte que le **Journal réseau** n’affiche que les ressources non sécurisées.  
 
-> ##### Figure 4  
-> Ressources mixtes du journal réseau  
-> ![Ressources mixtes du journal réseau][ImageMixedResourcesNetworkLog]  
+:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Ressources mixtes du journal réseau" lightbox="../media/security-network-filter.msft.png":::
+   Ressources mixtes du **Journal réseau**  
+:::image-end:::  
 
 ## Afficher les détails   
 
@@ -90,35 +89,28 @@ Dans la [figure 3](#figure-3), cliquez sur **Afficher 1 requête dans le panneau
 
 Dans la **vue d’ensemble**de la sécurité, cliquez sur **afficher le certificat** pour inspecter rapidement le certificat de l’origine principale.  
 
-> ##### Figure 5  
-> Un certificat d’origine principal;  
-> ![Un certificat d’origine principal;][ImageCertificate]  
+:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="Un certificat d’origine principal;" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
+   Un certificat d’origine principal;  
+:::image-end:::  
 
 ### Afficher les détails de l’origine   
 
 Cliquez sur l’une des entrées dans le volet de navigation de gauche pour afficher les détails de l’origine.  Dans la page détails, vous pouvez consulter les informations de connexion et de certificat.  Les informations de transparence du certificat apparaissent également lorsqu’elles sont disponibles.  
 
-> ##### Figure 6  
-> Détails de l’origine principale  
-> ![Détails de l’origine principale][ImageOriginDetails]  
+:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Détails de l’origine principale" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
+   Détails de l’origine principale  
+:::image-end:::  
 
+<!--  
  
 
 
-
-<!-- image links -->  
-
-[ImageSecurityPanel]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-secure.msft.png "Figure 1: volet sécurité"  
-[ImageNonSecurePage]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-non-secure.msft.png "Figure 2: page non sécurisée"  
-[ImageMixedContent]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-mixed-secure.msft.png "Figure 3: contenu mixte"  
-[ImageMixedResourcesNetworkLog]: /microsoft-edge/devtools-guide-chromium/media/security-network-filter.msft.png "Figure 4: ressources mixtes du journal réseau"  
-[ImageCertificate]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-secure-view-certificate.msft.png "Figure 5: certificat principal d’origine"  
-[ImageOriginDetails]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-mixed-secure-main-origin.msft.png "Figure 6: détails de l’origine principale"  
+-->  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Outils de développement Microsoft Edge (chrome)"  
-[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Ouvrir Microsoft Edge DevTools"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
+[DevToolsOpen]: ../open.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
 
 
 [LetsEncrypt]: https://letsencrypt.org "Utiliser des certificats SSL/TLS sans cryptage"  

@@ -2,16 +2,16 @@
 title: Simuler l’orientation de l’appareil avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 9e8115819fa6c3209a6c82940e033113783ece0c
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: c9a2aecfff1101de532eb59f73da21a32d62c791
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607323"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10985009"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,35 +41,36 @@ Pour simuler différentes orientations d’appareil à partir de Microsoft Edge 
 
 1.  Appuyez sur `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
     
-    > ##### Figure1  
-    > Menu de commandes  
-    > ![Menu de commandes][ImageCommandMenu]  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Menu de commandes" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       **Menu de commandes**  
+    :::image-end:::  
     
 1.  Tapez `sensors` , sélectionnez **afficher les capteurs**, puis appuyez sur `Enter` .  L’onglet **capteurs** s’ouvre en bas de la fenêtre devtools.  
 1.  Dans la liste **orientation** , sélectionnez l’une des orientations prédéfinies, par exemple `Portrait upside down` , ou sélectionnez **orientation personnalisée** pour fournir votre propre orientation exacte.  
     
-    > ##### Figure 2  
-    > Sélection `Portrait upside down` dans la liste **orientation**  
-    > ![Sélection de l’orientation portrait dans la liste orientation][ImageOrientationPortraitUpsideDown]  
+    :::row:::
+       :::column span="":::
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Sélectionnez Portrait à l’envers dans la liste orientation" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
+             Sélectionner `Portrait upside down` dans la liste d' **orientation**  
+          :::image-end:::  
+       :::column-end:::
+       :::column span="":::
+          Après avoir sélectionné **orientation personnalisée**, les `alpha` `beta` champs, et `gamma` sont activés.  
+          <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how these axes work.  -->  
+          <!--todo: update links to alpha, beta, and gamma section when available -->  
+          Vous pouvez également définir une orientation personnalisée en faisant glisser le modèle d' **orientation**.  Mettre `Shift` en attente avant de faire pivoter pour faire pivoter le long de l' `alpha` axe.  
+          
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="Le modèle d’orientation" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
+             Le **modèle d’orientation**  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::
     
-    Après avoir sélectionné **orientation personnalisée**, `alpha` les `beta` champs, et `gamma` sont activés.  
-    <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how these axes work.  -->  
-    <!--todo: update links to alpha, beta, and gamma section when available -->  
-    Vous pouvez également définir une orientation personnalisée en faisant glisser le modèle d' **orientation**.  Mettre `Shift` en attente avant de faire pivoter pour faire pivoter le long de l' `alpha` axe.  
-    
-    > ##### Figure3  
-    > Le **modèle d’orientation**  
-    > ![Le modèle d’orientation][ImageOrientationModel]  
-
-<!--## Feedback   -->  
+<!--  
+## Feedback 
 
 
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-command-menu.msft.png "Figure 1: menu de commandes"  
-[ImageOrientationPortraitUpsideDown]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png "Figure 2: sélection de l’option portrait à l’envers dans la liste orientation"  
-[ImageOrientationModel]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-sensors-orientation-custom.msft.png "Figure 3: modèle d’orientation"  
+-->  
 
 <!-- links -->  
 

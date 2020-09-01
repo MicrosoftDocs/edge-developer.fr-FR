@@ -2,16 +2,16 @@
 title: Émuler et tester d’autres navigateurs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 65ad10ff89d3e4c27abc97cea0eb18b15853dd2e
-ms.sourcegitcommit: 531ec8aa1f89b28bc4d271e8e995f846f2392bc3
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: d5eb33ea4cd1224930e91898d2c711310202cfc0
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "10607316"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984978"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -64,11 +64,11 @@ Les simulateurs de périphériques et émulateurs simulent pas uniquement l’en
 
 ### Émulateur Android  
 
-<!--
-> ##### Figure old 1  
-> Stock Browser in Android Emulator  
-> ![Stock Browser in Android Emulator][ImageAndroidEmulatorStockBrowser]  
--->
+<!--  
+:::image type="complex" source="../media/device-mode-android-emulator-stock-browser.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-android-emulator-stock-browser.msft.png":::
+   Stock Browser in Android Emulator  
+:::image-end:::  
+-->  
 
 Pour le moment, il n’existe aucun moyen d’installer Microsoft Edge sur un émulateur Android.  Toutefois, vous pouvez utiliser le navigateur Android, l’interpréteur de contenus de chrome et Firefox pour Android, que nous allons examiner plus loin dans ce guide.  Le interpréteur de contenus de chrome exécute le même moteur de rendu de chrome que Microsoft Edge, mais sans fonctionnalités spécifiques du navigateur.  
 
@@ -77,13 +77,13 @@ Une fois votre émulateur démarré, cliquez sur l’icône du navigateur et tes
 
 #### Interpréteur de contenus de chrome sur Android  
 
-<!--
-> ##### Figure old 2  
-> Android Emulator Content Shell  
-> ![Android Emulator Content Shell][ImageAndroidEmulatorContentShell]  
--->
+<!--  
+:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
+   Android Emulator Content Shell  
+:::image-end:::  
+-->  
 
-Pour installer l’interpréteur de contenus de chrome pour Android, laissez votre émulateur en cours d’exécution et exécutez les commandes suivantes à l’invite de commandes:  
+Pour installer l’interpréteur de contenus de chrome pour Android, laissez votre émulateur en cours d’exécution et exécutez la commande suivante.  
 
 ```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
@@ -95,23 +95,23 @@ Vous pouvez à présent tester votre site à l’aide de l’interpréteur de co
 
 #### Firefox sur Android  
 
-<!--
-> ##### Figure old 3  
-> Firefox Icon on Android Emulator  
-> ![Firefox Icon on Android Emulator][ImageAndroidEmulatorFirefoxBrowser]  
--->
+<!--  
+:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
+   Firefox Icon on Android Emulator  
+:::image-end:::  
+-->  
 
 Comme pour l’interpréteur de contenus de chrome, vous pouvez obtenir un APK pour installer Firefox sur l’émulateur.  
 
 [Téléchargez le fichier. apk approprié][MozillaFirefoxDownload].  
 
-À partir de cet emplacement, vous pouvez installer le fichier sur un émulateur ouvert ou un appareil Android connecté à l’aide de la commande suivante:  
+Pour installer le fichier sur un émulateur ouvert ou un appareil Android connecté, exécutez la commande suivante.  
 
 ```shell
 adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 ```  
 
-### Simulateur iOS  
+### simulateur iOS  
 
 Le simulateur iOS pour Mac OS X est fourni avec Xcode, que vous [Installez à partir de l’App Store][MacAppStoreXcode].  
 
@@ -122,9 +122,9 @@ Lorsque vous avez travaillé, Apprenez à utiliser le simulateur dans la [docume
 
 ###  Microsoft Edge (EdgeHTML)  
 
-> ##### Figure1  
-> VM d’Internet Explorer modernes  
-> ! [VM d’Internet Explorer moderne] [ImageVMModernIe]  
+:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="VM d’Internet Explorer modernes" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
+   VM d’Internet Explorer modernes  
+:::image-end:::  
 
 Les machines virtuelles Microsoft Edge \ (EdgeHTML \) \ (VM \) vous permettent d’accéder aux différentes versions d’EdgeHTML et d’Internet Explorer sur votre ordinateur via VirtualBox \ (ou VMWare \).  [Dans la page de téléchargement][MicrosoftDeveloperEdgeVms], sélectionnez une machine virtuelle.  
 
@@ -136,22 +136,17 @@ Si vous n’êtes pas en mesure d’utiliser les émulateurs et que vous n’ave
 *   [SauceLabs (commercial)][SauceLabs] vous permet d’exécuter des tests unitaires au sein d’un émulateur, qui peuvent être très utiles pour l’écriture de scripts d’un flux sur votre site, ainsi que pour visionner l’enregistrement vidéo de cela sur différents appareils.  Vous pouvez également effectuer un test manuel sur votre site.  
 *   [Device Anywhere (commercial)][AppExperience] n’utilise pas d’émulateurs mais de véritables périphériques que vous pouvez contrôler à distance.  Cela est très utile dans les cas où vous avez besoin de reproduire un problème sur un appareil spécifique et que vous ne pouvez pas voir le bogue à l’aide de l’une des options dans les guides précédents.  
 
+<!--  
  
 
 
-
-<!-- image links -->  
-
-<!--[ImageAndroidEmulatorStockBrowser]: /microsoft-edge/devtools-guide-chromium/media/device-mode-android-emulator-stock-browser.msft.png "Figure old 1: Stock Browser in Android Emulator"  -->  
-<!--[ImageAndroidEmulatorContentShell]: /microsoft-edge/devtools-guide-chromium/media/device-mode-android-avd-contentshell.msft.png "Figure old 2: Android Emulator Content Shell"  -->  
-<!--[ImageAndroidEmulatorFirefoxBrowser]: /microsoft-edge/devtools-guide-chromium/media/device-mode-ff-on-android-emulator.msft.png "Figure old 3: Firefox Icon on Android Emulator"  -->  
-[ImageVMModernIe]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Device-mode-Modern-IE-VM.msft.png "figure 1: VM de l’Internet Explorer moderne"  
+-->  
 
 <!-- links -->  
 
-[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML)-émulation"  
+[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML)-émulation | Documents Microsoft"  
 
-[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Émuler les navigateurs, les tailles d’écran et les emplacements GPS"  
+[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Émuler les navigateurs, les tailles d’écran et les emplacements GPS | Documents Microsoft"  
 
 [MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Télécharger des machines virtuelles"  
 

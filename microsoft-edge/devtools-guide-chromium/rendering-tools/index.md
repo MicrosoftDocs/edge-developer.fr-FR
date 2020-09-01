@@ -2,16 +2,16 @@
 title: Analyser les performances du Runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 7705428dba2ca368eb8f61b13bb96901756b081f
-ms.sourcegitcommit: 0342d99bf8d3212068890bab0e1e960afa507c02
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: 5f1a4125cfea1c582a76469ae7c9cd1ca75f0b00
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611863"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10984925"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -44,7 +44,7 @@ Les utilisateurs s’attendent à disposer d’une page interactive et lisse.  C
 *   Ne surchargez pas votre CSS.  Utilisez moins de feuilles de style CSS et conservez les sélecteurs CSS en toute simplicité.  
 *   Evitez autant que possible une disposition.  Sélectionnez CSS qui ne déclenche aucun déclenchement de disposition.  
 *   Le dessin a pu prendre plus de temps que d’autres activités de rendu.  Méfiez-vous des goulets d’étranglement.  
-
+    
 ## JavaScript  
 
 Les calculs JavaScript, en particulier ceux qui déclenchent de nombreuses modifications visuelles, risquent de bloquer les performances de l’application.  Ne laissez pas du temps trop chronométré ou un code JavaScript en cours d’exécution pour les interactions utilisateur.  
@@ -90,15 +90,15 @@ Prenez un enregistrement dans le panneau **performance** .  Vérifiez si l’enr
 
 Cliquez sur un `Recalculate Style` événement pour afficher des informations supplémentaires le concernant dans le volet **Détails** .  Si les modifications apportées au style prennent du temps, il s’agit d’un impact sur les performances.  Si les calculs de style affectent un grand nombre d’éléments, il s’agit d’une autre zone permettant d’améliorer l’espace.  
 
-> ##### Figure1  
-> Nouveau style de recalcul  
-> ![Nouveau style de recalcul][ImageLongRecalculateStyle]
+:::image type="complex" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="Nouveau style de recalcul" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
+   Nouveau style de recalcul  
+:::image-end:::  
 
 Pour réduire l’impact des `Recalculate Style` événements:  
 
 *   Utilisez les [déclencheurs CSS][CssTriggers] pour découvrir les propriétés CSS déclenchant la mise en page, Paint et composite.  Ces propriétés présentent le moins d’impact sur les performances de rendu.  
 *   Basculez vers les propriétés qui ont moins d’impact.  <!--See [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties] for more guidance.  -->  
-
+    
 <!--todo: add Stick to compositor-only properties and manage layer count section when available -->  
 
 ### Style: problèmes  
@@ -137,11 +137,11 @@ En règle générale, si vous demandez une valeur géométrique à partir du DOM
 
 Le volet **performances** détermine quand une page génère des dispositions asynchrones forcées.  Ces `Layout` événements sont signalés par des barres rouges.  
 
-> ##### Figure 2  
-> Disposition asynchrone forcée  
-> ![Disposition asynchrone forcée][ImageForcedSynchronousLayout]  
+:::image type="complex" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="Disposition asynchrone forcée" lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
+   Disposition asynchrone forcée  
+:::image-end:::  
 
-«La surcharge de disposition» est une répétition de conditions de disposition asynchrones forcées.  Cela se produit lorsque JavaScript écrit et lit à plusieurs reprises du DOM, ce qui force le navigateur à recalculer la mise en page.  Pour identifier la surcharge de la disposition, recherchez un modèle de multiples avertissements relatifs à la disposition asynchrone forcés.  Voir [figure 2](#figure-2).  
+«La surcharge de disposition» est une répétition de conditions de disposition asynchrones forcées.  Cela se produit lorsque JavaScript écrit et lit à plusieurs reprises du DOM, ce qui force le navigateur à recalculer la mise en page.  Pour identifier la surcharge de la disposition, recherchez un modèle de multiples avertissements relatifs à la disposition asynchrone forcés.  Voir la figure précédente.  
 
 ### Mise en page: problèmes  
 
@@ -167,9 +167,9 @@ La composition consiste à placer les parties peintes de la page pour l’affich
 Vous voulez connaître le nombre de fois que le dessin a lieu ou la fréquence à laquelle le dessin se produit?  Activez le paramètre [activer l’instrumentation avancée de peinture][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] dans le panneau de **performance** , puis prenez un enregistrement.  Si la plupart du temps de rendu est dépensé, vous rencontrez des problèmes de peinture.  
 
 <!--
-> ##### Old Figure 3  
-> Long paint times in timeline recording  
-> ![Long paint times in timeline recording][ImageLongPaintTimes]  
+:::image type="complex" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording" lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
+   Long paint times in timeline recording  
+:::image-end:::  
 -->  
 
 <!--
@@ -189,29 +189,25 @@ Le tableau suivant décrit certains problèmes courants liés aux peintures et c
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-<!--## Feedback   -->  
+<!--  
+## Feedback   
 
 
-
-<!-- image links -->  
-
-[ImageLongRecalculateStyle]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-performance-recalculate-style-summary.msft.png "Figure 1: long style de recalcul"  
-[ImageForcedSynchronousLayout]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-jank-performance-recalculate-style-summary.msft.png "Figure 2: disposition asynchrone forcée"  
-<!--[ImageLongPaintTimes]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png "Old Figure 3: Long paint times in timeline recording"  -->  
+-->  
 
 <!-- links -->  
 
-[DevtoolsRenderingToolsJavascriptRuntime]: /microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime "Accélérer le runtime JavaScript"  
+[DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Accélérer le runtime JavaScript | Documents Microsoft"  
 
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#enable-advanced-paint-instrumentation "Activer l’instrumentation avancée de peinture-référence d’analyse des performances"
+[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#enable-advanced-paint-instrumentation "Activer l’instrumentation avancée de peinture-référence d’analyse des performances | Documents Microsoft"
 
-<!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: /microsoft-edge/devtools-guide-chromium/rendering-tools/forced-synchronous-layouts "Diagnose Forced Synchronous Layouts"  -->  
+<!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->  
 
 <!-- The Timeline Tool page is deprecated  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolProfileJavascript]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#profile-javascript "Profile JavaScript - How to Use the Timeline Tool"  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolProfilePainting]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#profile-painting "Profile painting - How to Use the Timeline Tool"  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolRecording]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#make-a-recording "Make a recording - How to Use the Timeline Tool"  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolRenderingSettings]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#rendering-settings "Rendering settings - How to Use the Timeline Tool"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolProfileJavascript]: ../evaluate-performance/timeline-tool.md#profile-javascript "Profile JavaScript - How to Use the Timeline Tool | Microsoft Docs"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolProfilePainting]: ../evaluate-performance/timeline-tool.md#profile-painting "Profile painting - How to Use the Timeline Tool | Microsoft Docs"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolRecording]: ../evaluate-performance/timeline-tool.md#make-a-recording "Make a recording - How to Use the Timeline Tool | Microsoft Docs"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolRenderingSettings]: ../evaluate-performance/timeline-tool.md#rendering-settings "Rendering settings - How to Use the Timeline Tool | Microsoft Docs"  -->  
 
 <!--[WebFundamentalsPerformanceRenderingAvoidLargeComplexLayouts]: /web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing "Avoid Large, Complex Layouts, and Layout Thrashing"  -->  
 <!--[WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime]: /web/fundamentals/performance/rendering/optimize-javascript-execution "Optimize JavaScript Runtime"  -->  

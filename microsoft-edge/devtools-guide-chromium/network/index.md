@@ -2,16 +2,16 @@
 title: Examiner l’activité réseau dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 267b0113e07085dd565a3ff3437a3fcac2dff9d7
-ms.sourcegitcommit: 33663cd7838dddee86228dde469a5e9551bddb02
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: cca9a45dae5ee845a219ef3f29c54a99e1ee904a
+ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611811"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "10985580"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -53,44 +53,45 @@ En règle générale, utilisez le panneau réseau pour vous assurer que les ress
 
 *   Vérifiez que les ressources sont en train d’être chargées ou téléchargées du tout.  
 *   Inspecter les propriétés d’une ressource individuelle, par exemple, les en-têtes HTTP, le contenu, la taille, etc.  
-
+    
 Si vous cherchez à améliorer les performances de chargement de page, **ne démarrez pas** le panneau réseau.  Il existe de nombreux types de problèmes de performances de chargement qui ne sont pas liés à l’activité réseau.  Commencez avec le panneau audits, car il vous donne des suggestions ciblées sur l’amélioration de votre page.  Voir [optimiser la vitesse du site Web][DevtoolsSpeedGetStarted].  
 
 ## Ouvrir le panneau réseau   
 
 Pour tirer le meilleur parti de ce didacticiel, ouvrez la démonstration et testez les fonctionnalités de la page de démonstration.  
 
-1.  Ouvrir la [démonstration commencer][GlitchNetworkGetStarted] .  
+1.  Ouvrir la [démonstration commencer][GlitchNetworkGetStarted].  
     
-    > ##### Figure1  
-    > La démonstration  
-    > ![La démonstration][ImagesTutorialDemo]  
+    :::image type="complex" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="La démonstration" lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
+       La démonstration  
+    :::image-end:::  
     
     <!--You may prefer to move the demo to a separate window.  -->  
     
     <!--
-    > ##### old Figure 2  
-    > The demo in one window and this tutorial in a different window  
-    > ![The demo in one window and this tutorial in a different window][ImagesTutorialWindows]  -->
-
+    :::image type="complex" source="../media/network-tutorial/windows.msft.png" alt-text="The demo in one window and this tutorial in a different window" lightbox="../media/network-tutorial/windows.msft.png":::
+       The demo in one window and this tutorial in a different window  
+    :::image-end:::  
+    -->
+    
 1.  [Ouvrez devtools][DevToolsOpen] en appuyant sur `Control` + `Shift` + `J` \ (Windows \) ou `Command` + `Option` + `J` \ (MacOS \).  Le panneau **console** s’ouvre.  
     
-    > ##### Figure 2  
-    > La console  
-    > ! [La console] [ImagesTutorialConsole]  
+    :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="La console" lightbox="../media/network-glitch-console.msft.png":::
+       La **console**  
+    :::image-end:::  
     
     Vous pouvez [ancrer devtools en bas de la fenêtre][DevToolsCustomizePlacement].  
     
-    > ##### Figure3  
-    > DevTools ancré en bas de la fenêtre  
-    > ! [DevTools ancré en bas de la fenêtre] [ImagesTutorialDocked]  
-
+    :::image type="complex" source="../media/network-glitch-console-bottom.msft.png" alt-text="DevTools ancré en bas de la fenêtre" lightbox="../media/network-glitch-console-bottom.msft.png":::
+       DevTools ancré en bas de la fenêtre  
+    :::image-end:::  
+    
 1.  Sélectionnez l’onglet **Network (réseau** ).  Le volet réseau s’ouvre.  
     
-    > ##### Figure 4  
-    > DevTools ancré en bas de la fenêtre  
-    > ! [DevTools ancré en bas de la fenêtre] [ImagesTutorialNetwork]  
-
+    :::image type="complex" source="../media/network-glitch-network-bottom.msft.png" alt-text="DevTools ancré en bas de la fenêtre" lightbox="../media/network-glitch-network-bottom.msft.png":::
+       DevTools ancré en bas de la fenêtre  
+    :::image-end:::  
+    
 Pour le moment, le volet réseau est vide.  DevTools uniquement les journaux d’activité réseau après l’ouverture et aucune activité réseau ne s’est produite depuis que vous avez ouvert DevTools.  
 
 ## Journalisation de l’activité du réseau   
@@ -99,33 +100,32 @@ Pour afficher l’activité réseau provoquée par une page:
 
 1.  Rechargez la page.  Le panneau réseau enregistre toutes les activités du réseau dans le **Journal du réseau**.  
     
-    > ##### Figure 5  
-    > Journal du réseau  
-    > ! [Journal du réseau] [ImagesTutorialLog]  
+    :::image type="complex" source="../media/network-glitch-network.msft.png" alt-text="Journal du réseau" lightbox="../media/network-glitch-network.msft.png":::
+       **Journal du réseau**  
+    :::image-end:::  
     
     Chaque ligne du **Journal réseau** représente une ressource.  Par défaut, les ressources sont répertoriées dans l’ordre chronologique.  La principale ressource correspond généralement au document HTML principal.  Le dernier élément de la ressource est le dernier demandé.  
     
-    Chaque colonne représente des informations sur une ressource.  La [**figure 6**](#figure-6) montre les colonnes par défaut:  
+    Chaque colonne représente des informations sur une ressource.  Dans la figure précédente, les colonnes par défaut sont affichées.  
 
     *   **Status**.  Code d’état HTTP de la réponse.  
     *   **Type**.  Type de ressource.  
     *   **Initiator**.  La cause de la demande de ressource.  La sélection d’un lien dans la colonne initiateur vous permet d’accéder au code source à l’origine de la demande.  
     *   **Temps**.  Durée de la requête.  
-    *   En **cascade**.  Représentation graphique des différentes étapes de la requête.  
-        Placez le pointeur de la souris sur une cascade pour afficher une répartition.  
+    *   En **cascade**.  Représentation graphique des différentes étapes de la requête.  Placez le pointeur de la souris sur une cascade pour afficher une répartition.  
     
     > [!NOTE]
     > Le graphique au-dessus du journal réseau est appelé vue d’ensemble.  Dans ce didacticiel, vous n’utiliserez pas le graphique de vue d’ensemble et vous pouvez le masquer.  Voir [masquer le volet vue d’ensemble][DevtoolsReferenceHideOverview].
-        
+    
 1.  Après l’ouverture de DevTools, elle enregistre l’activité réseau dans le journal du réseau.  
     Pour en expliquer le résultat, observez d’abord la partie inférieure du **Journal du réseau** et prenez note de la dernière activité.  
 1.  À présent, sélectionnez le bouton **obtenir des données** dans la démonstration.  
 1.  Regardez de nouveau le journal du **réseau** .  Une nouvelle ressource doit apparaître `getstarted.json` .  Le fait de sélectionner le bouton **Get Data** a entraîné la demande de ce fichier.  
     
-    > ##### Figure 6  
-    > Nouvelle ressource dans le journal réseau  
-    > ! [Une nouvelle ressource dans le journal du réseau] [ImagesTutorialRuntime]  
-
+    :::image type="complex" source="../media/network-glitch-network-new-resource.msft.png" alt-text="Nouvelle ressource dans le journal réseau" lightbox="../media/network-glitch-network-new-resource.msft.png":::
+       Nouvelle ressource dans le **Journal réseau**  
+    :::image-end:::  
+    
 ## Afficher plus d’informations   
 
 Les colonnes du journal du réseau peuvent être configurées.  Vous pouvez masquer les colonnes que vous n’utilisez pas.  
@@ -133,100 +133,100 @@ Il existe également plusieurs colonnes qui sont masquées par défaut, qui peuv
 
 1.  Cliquez avec le bouton droit sur l’en-tête de la table Journal du réseau et sélectionnez **Domain (domaine**).  Le domaine de chaque ressource est désormais affiché.  
     
-    > ##### Figure 7  
-    > Activation de la colonne Domain  
-    > ! [Activation de la colonne Domain] [ImagesTutorialDomain]  
+    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Activez la colonne Domain (domaine)" lightbox="../media/network-glitch-network-edit-column.msft.png":::
+       Activez la colonne Domain (domaine)  
+    :::image-end:::  
     
     > [!TIP]
     > Pour afficher l’URL complète d’une ressource, placez le pointeur de la souris sur la cellule de la colonne **nom** .  
-
+    
 ## Simuler une connexion réseau plus lente   
 
 La connexion réseau de l’ordinateur que vous utilisez pour créer des sites est probablement plus rapide que les connexions réseau des appareils mobiles de vos utilisateurs.  La limitation de la page vous permet d’obtenir une meilleure idée du temps nécessaire au chargement d’une page sur un appareil mobile.  
 
 1.  Sélectionner la liste déroulante de **limitation** , définie sur **en ligne** par défaut.  
     
-    > ##### Figure8  
-    > Activation de la limitation  
-    > ! [Activation de la limitation] [ImagesTutorialThrottling]  
+    :::image type="complex" source="../media/network-glitch-network-throttling.msft.png" alt-text="Activer la limitation" lightbox="../media/network-glitch-network-throttling.msft.png":::
+       Activer la limitation  
+    :::image-end:::  
     
 1.  Sélectionnez **3G lente**.  
     
-    > ##### Figure9  
-    > Sélection du réseau 3G lent  
-    > ! [Sélection du réseau 3G lente] [ImagesTutorialSlow3G]  
+    :::image type="complex" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="Sélectionnez 3G lente" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
+       Sélectionnez 3G lente  
+    :::image-end:::  
     
-1.  Appuyez de façon prolongée **sur recharger** ![ ][ImageRefreshIcon] et sélectionnez Vider le **cache**.  
+1.  Appuyez longuement sur **recharger** \ ( ![ recharger ][ImageRefreshIcon] \), puis sélectionnez Vider le **cache et rechargement**.  
     
-    > ##### Figure10  
-    > Vider le cache et procéder au recharge  
-    > ! [Vider le cache et télécharger le matériel] [ImagesTutorialHardReload]  
+    :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="Vider le cache et procéder au recharge" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
+       **Vider le cache et procéder au recharge**  
+    :::image-end:::  
     
-    Lorsque vous révisez les visites, le navigateur fournit généralement certains fichiers du [cache][MDNHTTPCache] , ce qui accélère le chargement de la page.  Le **vidage du cache et du rechargement forcé** force le navigateur à accéder au réseau pour toutes les ressources.  Cette méthode est utile lorsque vous souhaitez voir la façon dont un visiteur commence à se charger de la page.  
+    Lorsque vous révisez les visites, le navigateur fournit généralement certains fichiers du [cache][MDNHTTPCache], ce qui accélère le chargement de la page.  Le **vidage du cache et du rechargement forcé** force le navigateur à accéder au réseau pour toutes les ressources.  Cette méthode est utile lorsque vous souhaitez voir la façon dont un visiteur commence à se charger de la page.  
     
     > [!NOTE]
     > Le flux **de travail vider le cache et le chargement papier** est uniquement disponible lorsque devtools est ouvert.  
-
+    
 ## Capture de captures d’écran   
 
 Les captures d’écran vous permettent de voir l’aspect d’une page au fil du temps pendant son chargement.  
 
-1.  Sélectionnez ![ paramètres ][ImageSettingsIcon] du réseau, puis activez la case à cocher capturer les captures d' **écran** .
+1.  Sélectionnez \ ( ![ paramètres réseau ][ImageSettingsIcon] \) et cochez la case capturer les captures d' **écran** .
 1.  Rechargez de nouveau la page par le biais du flux **de travail vider le cache et le chargement papier** .  Pour savoir comment procéder, voir [simuler une connexion plus lente](#simulate-a-slower-network-connection) si vous avez besoin d’un rappel.  
     Le volet capture d’écran fournit des miniatures illustrant la manière dont la page a été recherchée à différents points au cours du processus de chargement.  
     
-    > ##### Figure11  
-    > Captures d’écran du chargement de la page  
-    > ! [Captures d’écran du chargement de la page] [ImagesTutorialAllScreenshots]  
-
+    :::image type="complex" source="../media/network-glitch-network-screenshots.msft.png" alt-text="Captures d’écran du chargement de la page" lightbox="../media/network-glitch-network-screenshots.msft.png":::
+       Captures d’écran du chargement de la page  
+    :::image-end:::  
+    
 1.  Sélectionnez la première miniature.  DevTools indique l’activité réseau qui se produit à ce moment précis.  
     
-    > ##### Figure12  
-    > Activité réseau qui se produit pendant la première capture d’écran  
-    > ! [Activité réseau qui se produisait pendant la première capture d’écran] [ImagesTutorialFirstScreenshot]  
-
-1.  Cliquez de ![ ][ImageSettingsIcon] nouveau sur paramètres du réseau et désélectionnez la case à cocher capturer les captures d' **écran** pour fermer le volet captures d’écran.
+    :::image type="complex" source="../media/network-glitch-network-screenshots-first.msft.png" alt-text="Activité réseau qui se produit pendant la première capture d’écran" lightbox="../media/network-glitch-network-screenshots-first.msft.png":::
+       Activité réseau qui se produit pendant la première capture d’écran  
+    :::image-end:::  
+    
+1.  Sélectionnez de nouveau \ ( ![ paramètres réseau ][ImageSettingsIcon] \) et désélectionnez la case à cocher **capture** des captures d’écran pour fermer le volet captures d’écran.
 1.  Rechargez la page.  
-
+    
 ## Inspecter les détails de la ressource   
 
 Pour plus d’informations à ce sujet, sélectionnez une ressource.  Essayez-le maintenant:  
 
 1.  Sélectionnez `getstarted.html` .  L’onglet **en-têtes** est affiché.  Utilisez cet onglet pour inspecter les en-têtes HTTP.  
     
-    > ##### Figure13  
-    > Onglet en-têtes  
-    > ! [Onglet en-têtes] [ImagesTutorialHeaders]  
+    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="Onglet en-têtes" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
+       Onglet **en-têtes**  
+    :::image-end:::  
     
 1.  Sélectionnez l’onglet **Aperçu** .  Un rendu de base du code HTML est affiché.  
     
-    > ##### Figure14  
-    > Onglet Aperçu  
-    > ! [Onglet Aperçu] [ImagesTutorialPreview]  
-
-     Cet onglet est utile lorsqu’une API renvoie un code d’erreur en HTML.  Il est possible que vous puissiez lire le code HTML affiché plus facilement que le code source HTML ou lorsque vous examinez des images.  
+    :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="Onglet Aperçu" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
+       Onglet **Aperçu**  
+    :::image-end:::  
+    
+    Cet onglet est utile lorsqu’une API renvoie un code d’erreur en HTML.  Il est possible que vous puissiez lire le code HTML affiché plus facilement que le code source HTML ou lorsque vous examinez des images.  
 
 1.  Sélectionnez l’onglet **réponse** .  Le code source HTML est affiché.  
     
-    > ##### Figure15  
-    > Onglet réponse  
-    > ! [Onglet réponse] [ImagesTutorialResponse]  
+    :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="Onglet réponse" lightbox="../media/network-glitch-network-resources-response.msft.png":::
+       Onglet **réponse**  
+    :::image-end:::  
     
     > [!TIP]
-    > Lorsqu’un fichier est minified, le fait de sélectionner le bouton format de **mise** ![ en forme ][ImageFormatIcon] en bas de l’onglet **réponse** reformate le contenu du fichier pour faciliter la lecture.  
-
+    > Lorsqu’un fichier est minified, le fait de sélectionner le bouton **mettre** en forme \ ( ![ format ][ImageFormatIcon] \) en bas de l’onglet **réponse** a reformaté le contenu du fichier pour faciliter la lecture.  
+    
 1.  Sélectionnez l’onglet **minutage** .  Le détail de l’activité réseau de cette ressource est affiché.  
     
-    > ##### Figure16  
-    > Onglet Minutage  
-    > ! [Onglet Minutage] [ImagesTutorialTiming]  
-
-1.  **Close** ![ ][ImageCloseIcon] Pour afficher de nouveau le journal du réseau, sélectionnez Fermer.  
+    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="Onglet Minutage" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
+       Onglet **minutage**  
+    :::image-end:::  
     
-    > ##### Figure17  
-    > Bouton Fermer  
-    > ! [Bouton Fermer] [ImagesTutorialCloseTiming]  
-
+1.  Sélectionnez **Close** ( ![ fermer ][ImageCloseIcon] ) pour afficher de nouveau le journal du réseau.  
+    
+    :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="Bouton Fermer" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
+       Bouton **Fermer**  
+    :::image-end:::  
+    
 ## Effectuer une recherche dans les en-têtes et réponses du réseau   
 
 Le volet de **recherche** vous permet d’effectuer une recherche dans les en-têtes et réponses HTTP de toutes les ressources pour une chaîne ou une expression régulière spécifique.  
@@ -235,93 +235,92 @@ Par exemple, supposons que vous vouliez vérifier que vos ressources utilisent d
 
 <!--TODO: add cache policies section when available  -->
 
-1.  Sélectionnez **Rechercher dans Search** ![ ][ImageSearchIcon] .  Le volet de recherche s’ouvre à gauche du journal du réseau.  
+1.  Sélectionnez **Rechercher** \ ( ![ Rechercher ][ImageSearchIcon] \).  Le volet de recherche s’ouvre à gauche du journal du réseau.  
     
-    > ##### Figure 18  
-    > Le volet de recherche  
-    > ! [Volet de recherche] [ImagesTutorialSearch]  
-
+    :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="Le volet de recherche" lightbox="../media/network-glitch-network-search-empty.msft.png":::
+       Le volet de **recherche**  
+    :::image-end:::  
+    
 1.  Tapez `Cache-Control` et appuyez sur `Enter` .  Le volet de recherche répertorie toutes les instances `Cache-Control` qu’il recherche dans les en-têtes de ressources ou le contenu.  
     
-    > ##### Figure 19  
-    > Résultats de la recherche pour  `Cache-Control`  
-    > ! [Résultats de recherche pour Cache-Control] [ImagesTutorialResults]  
-
+    :::image type="complex" source="../media/network-glitch-network-search-cache-control.msft.png" alt-text="Résultats de la recherche pour le contrôle du cache" lightbox="../media/network-glitch-network-search-cache-control.msft.png":::
+       Résultats de la recherche pour  `Cache-Control`  
+    :::image-end:::  
+    
 1.  Sélectionnez un résultat pour afficher la ressource dans laquelle le résultat a été trouvé.  Si vous examinez les détails de la ressource, sélectionnez un résultat pour y accéder directement.  Par exemple, si la requête se trouve dans un en-tête, l’onglet en-têtes s’ouvre.   Si la requête se trouve dans le contenu, l’onglet **réponse** s’ouvre.  
     
-    > ##### Figure 20  
-    > Résultat de la recherche en surbrillance dans l’onglet en-têtes  
-    > ! [Un résultat de recherche en surbrillance dans l’onglet en-têtes] [ImagesTutorialCache]  
+    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="Résultat de la recherche en surbrillance dans l’onglet en-têtes" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
+       Résultat de la recherche en surbrillance dans l’onglet **en-têtes**  
+    :::image-end:::  
     
 1.  Fermez le volet de recherche et l’onglet en-têtes.  
     
-    > ##### Figure 21  
-    > Boutons Fermer  
-    > ! [Boutons Fermer] [ImagesTutorialCloseButtons]  
+    :::image type="complex" source="../media/network-glitch-network-search-close.msft.png" alt-text="Boutons Fermer" lightbox="../media/network-glitch-network-search-close.msft.png":::
+       Boutons **Fermer**  
+    :::image-end:::  
     
 ## Filtrer les ressources   
 
 DevTools fournit de nombreux flux de travail pour filtrer les ressources qui ne sont pas pertinentes pour la tâche en cours.  
 
-> ##### Figure 22  
-> Barre d’outils filtres  
-> ! [Barre d’outils filtres] [ImagesTutorialFilters]  
+:::image type="complex" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="Barre d’outils filtres" lightbox="../media/network-glitch-network-filter-empty.msft.png":::
+   Barre d’outils **filtres**  
+:::image-end:::  
 
 Par défaut, la barre d’outils **filtres** doit être activée.  Si ce n’est pas le cas:  
 
-1.  Sélectionnez **Filter** ![ filtre ][ImageFilterIcon] de filtre pour l’afficher.  
-
+1.  Sélectionnez **Filtrer** \ ( ![ filtre ][ImageFilterIcon] \) pour l’afficher.  
+    
 ### Filtrer par chaîne, expression régulière ou propriété   
 
 La zone de texte **filtre** prend en charge différents types de filtrage.  
 
 1.  Entrez `png` dans la zone de texte du **filtre** .  Seuls les fichiers qui contiennent le texte `png` sont affichés.  Dans ce cas, les seuls fichiers correspondant au filtre sont les images PNG.  
     
-    > ##### Figure 23  
-    > Filtre de chaîne  
-    > ! [Filtre de chaîne] [ImagesTutorialPNG]  
-
+    :::image type="complex" source="../media/network-glitch-network-filter-png.msft.png" alt-text="Filtre de chaîne" lightbox="../media/network-glitch-network-filter-png.msft.png":::
+       Filtre de chaîne  
+    :::image-end:::  
+    
 1.  Entrez `/.*\.[cj]s+$/`.  DevTools filtre les ressources dont le nom ne se termine pas par un `j` ou après `c` suivi de 1 ou plusieurs `s` caractères.  
     
-    > ##### Figure 24  
-    > Un filtre d’expression régulier  
-    > ! [Filtre d’expression régulière] [ImagesTutorialRegEx]  
+    :::image type="complex" source="../media/network-glitch-network-filter-regex.msft.png" alt-text="Un filtre d’expression régulier" lightbox="../media/network-glitch-network-filter-regex.msft.png":::
+       Un filtre d’expression régulier  
+    :::image-end:::  
     
 1.  Entrez `-main.css`.  DevTools filtre `main.css` .  Si un autre fichier correspond au modèle, il sera également filtré.  
     
-    > ##### Figure 25  
-    > Un filtre négatif  
-    > ! [Un filtre négatif] [ImagesTutorialNegative]  
+    :::image type="complex" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="Un filtre négatif" lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
+       Un filtre négatif  
+    :::image-end:::  
     
 1.  Entrez `domain:cdn.glitch.com` dans la zone de texte du **filtre** .  DevTools filtre les ressources disposant d’une URL qui ne correspond pas à ce domaine.  
     
-    > ##### Figure 26  
-    > Filtre de propriétés  
-    > ! [Filtre de propriétés] [ImagesTutorialProperty]  
-
+    :::image type="complex" source="../media/network-glitch-network-filter-property-value.msft.png" alt-text="Filtre de propriétés" lightbox="../media/network-glitch-network-filter-property-value.msft.png":::
+       Filtre de propriétés  
+    :::image-end:::  
+    
     Pour obtenir la liste complète des propriétés filtrées [, voir filtrer les demandes par propriétés][DevtoolsReferenceProperty] .  
     
-    
 1.  Effacez la zone de texte du **filtre** d’un texte.  
-
+    
 ### Filtrer par type de ressource   
 
 Pour vous concentrer sur un certain type de fichier, tel que les feuilles de style:  
 
 1.  Sélectionnez **CSS**.  Tous les autres types de fichiers sont filtrés.  
     
-    > ##### Figure 27  
-    > Affichage des fichiers CSS uniquement  
-    > ! [Affichage des fichiers CSS uniquement] [ImagesTutorialCSS]  
+    :::image type="complex" source="../media/network-glitch-network-filter-file-type-css.msft.png" alt-text="Afficher les fichiers CSS uniquement" lightbox="../media/network-glitch-network-filter-file-type-css.msft.png":::
+       Afficher les fichiers CSS uniquement  
+    :::image-end:::  
     
 1.  Pour afficher les scripts, vous pouvez également appuyer sur `Control` \ (Windows \) ou `Command` \ (MacOS \), puis sélectionner **js**.  
     
-    > ##### Figure 28  
-    > Affichage des fichiers CSS et JS uniquement  
-    > ! [Affichage des fichiers CSS et JS uniquement] [ImagesTutorialCSSJS]  
+    :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Afficher les fichiers CSS et JS uniquement" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
+       Afficher les fichiers CSS et JS uniquement  
+    :::image-end:::  
     
 1.  **Tout** sélectionner pour supprimer les filtres et afficher de nouveau toutes les ressources.  
-
+    
 Pour plus d’autres flux de travail de filtrage, voir [Filtrer les demandes][DevtoolsNetworkReferenceFilter] .  
 
 ## Bloquer les demandes   
@@ -330,22 +329,22 @@ Quel est l’aspect et le comportement d’une page lorsque certaines ressources
 
 1.  Appuyez sur `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
     
-    > ##### Figure 29  
-    > Menu de commandes  
-    > ! [Le menu de commandes] [ImagesTutorialCommandMenu]  
+    :::image type="complex" source="../media/network-glitch-network-cli-empty.msft.png" alt-text="Menu de commandes" lightbox="../media/network-glitch-network-cli-empty.msft.png":::
+       **Menu de commandes**  
+    :::image-end:::  
     
 1.  Tapez `block` , sélectionnez **afficher le blocage de requête**, puis appuyez sur `Enter` .  
     
-    > ##### Figure 30  
-    > Afficher le blocage de requête  
-    > ! [Afficher une demande de blocage] [ImagesTutorialBlock]  
-
-1.  Sélectionnez **Ajouter** un modèle ajouter un modèle ![ ][ImageAddIcon] .  
+    :::image type="complex" source="../media/network-glitch-network-cli-block.msft.png" alt-text="Afficher le blocage de requête" lightbox="../media/network-glitch-network-cli-block.msft.png":::
+       **Afficher le blocage de requête**  
+    :::image-end:::  
+    
+1.  Sélectionnez **Ajouter un modèle** \ ( ![ Ajouter le modèle ][ImageAddIcon] \).  
 1.  Entrez `main.css`.  
     
-    > ##### Figure 31  
-    > Bloquer `main.css`  
-    > ! [Blocage de main. CSS] [ImagesTutorialAddBlock]  
+    :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Blocage de main. CSS" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
+       Bloquer `main.css`  
+    :::image-end:::  
     
 1.  Cliquez sur **Ajouter**.  
 1.  Rechargez la page.  Comme prévu, le style de la page est légèrement gâché, car la feuille de style principale a été bloquée.  
@@ -353,86 +352,55 @@ Quel est l’aspect et le comportement d’une page lorsque certaines ressources
     > [!NOTE]
     > `main.css`Ligne du journal du réseau.  Le texte rouge signifie que la ressource a été bloquée.
     
-    > ##### Figure 32  
-    > `main.css` a été bloqué  
-    > ! [main. CSS a été bloqué] [ImagesTutorialBlockedStyles]  
-
+    :::image type="complex" source="../media/network-glitch-network-cli-block-main-css.msft.png" alt-text="main. CSS a été bloqué" lightbox="../media/network-glitch-network-cli-block-main-css.msft.png":::
+       `main.css` a été bloqué  
+    :::image-end:::  
+    
 1.  Désélectionnez la case à cocher **activer le blocage de requête** .  
 
 ## Conclusion  
 
-Félicitations, vous avez terminé le didacticiel.  Vous savez maintenant comment utiliser le panneau réseau dans Microsoft Edge DevTools!
+Félicitations, vous avez terminé le didacticiel.  Vous savez maintenant comment utiliser le panneau **réseau** dans Microsoft Edge devtools!
+
+<!--
 
 
 
 
-
+-->  
 
 Consultez la [référence réseau][DevtoolsNetworkReference] pour découvrir d’autres fonctionnalités devtools liées à l’examen de l’activité du réseau.  
 
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageAddIcon]: /microsoft-edge/devtools-guide-chromium/media/add-icon.msft.png  
-[ImageCloseIcon]: /microsoft-edge/devtools-guide-chromium/media/close-icon.msft.png  
-[ImageFilterIcon]: /microsoft-edge/devtools-guide-chromium/media/filter-icon.msft.png  
-[ImageFormatIcon]: /microsoft-edge/devtools-guide-chromium/media/format-icon.msft.png  
-[ImageRefreshIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-icon.msft.png  
-[ImageScreenshotsIcon]: /microsoft-edge/devtools-guide-chromium/media/screenshots-icon.msft.png  
-[ImageSearchIcon]: /microsoft-edge/devtools-guide-chromium/media/search-icon.msft.png  
-[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png
-
-[ImagesTutorialDemo]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-inspect-network-activity-demo.msft.png "Figure 1: démonstration"  
-<!--[ImagesTutorialWindows]: /microsoft-edge/devtools-guide-chromium/media/network-tutorial/windows.msft.png " old Figure 2: The demo in one window and this tutorial in a different window"  -->  
-[ImagesTutorialConsole]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-console.msft.png "figure 2: console"  
-[ImagesTutorialDocked]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-console-Bottom.msft.png "figure 3: DevTools ancré en bas de la fenêtre"  
-[ImagesTutorialNetwork]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Bottom.msft.png "figure 4: DevTools ancré en bas de la fenêtre"  
-[ImagesTutorialLog]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network.msft.png "figure 5: journal réseau"  
-[ImagesTutorialRuntime]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-New-Resource.msft.png "figure 6: une nouvelle ressource du journal du réseau"  
-[ImagesTutorialDomain]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Edit-Column.msft.png "figure 7: activation de la colonne Domain"  
-[ImagesTutorialThrottling]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-throttling.msft.png "figure 8: activation de la limitation"  
-[ImagesTutorialSlow3G]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-throttling-Slow-3G.msft.png "figure 9: sélectionner la fonction 3G lente"  
-[ImagesTutorialHardReload]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Empty-cache-and-hard-reset.msft.png "figure 10: vider le cache et le recharger"  
-[ImagesTutorialAllScreenshots]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-screenshots.msft.png "figure 11: captures d’écran du chargement de la page"  
-[ImagesTutorialFirstScreenshot]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-screenshots-First.msft.png "figure 12: activité réseau qui se produit pendant la première capture d’écran"  
-[ImagesTutorialHeaders]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Resources-headers.msft.png "figure 13: onglet en-têtes"  
-[ImagesTutorialPreview]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Resources-preview.msft.png "figure 14: onglet Aperçu"  
-[ImagesTutorialResponse]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Resources-Response.msft.png "figure 15: onglet réponse"  
-[ImagesTutorialTiming]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Resources-timing.msft.png "figure 16: onglet Minutage"  
-[ImagesTutorialCloseTiming]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Resources-Close-Tabs.msft.png "figure 17: bouton Fermer"  
-[ImagesTutorialSearch]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Search-Empty.msft.png "figure 18: volet de recherche"  
-[ImagesTutorialResults]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Search-Cache-Control.msft.png "figure 19: résultats de recherche pour Cache-Control"  
-[ImagesTutorialCache]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Search-Cache-Control-headers-Response-headers.msft.png "figure 20: un résultat de recherche mis en surbrillance dans l’onglet en-têtes"  
-[ImagesTutorialCloseButtons]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Search-Close.msft.png "figure 21: boutons Fermer"  
-[ImagesTutorialFilters]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Filter-Empty.msft.png "figure 22: barre d’outils filtres"  
-[ImagesTutorialPNG]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Filter-png.msft.png "figure 23: filtre de chaîne"  
-[ImagesTutorialRegEx]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Filter-Regex.msft.png "figure 24: filtre d’expression régulière"  
-[ImagesTutorialNegative]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Filter-Negative-Statement.msft.png "figure 25: filtre négatif"  
-[ImagesTutorialProperty]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Filter-Property-value.msft.png "figure 26: filtre de propriété"  
-[ImagesTutorialCSS]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Filter-file-type-CSS.msft.png "figure 27: affichage des fichiers CSS uniquement"  
-[ImagesTutorialCSSJS]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-Filter-file-type-CSS-js.msft.png "figure 28: affichage des fichiers CSS et JS uniquement"  
-[ImagesTutorialCommandMenu]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-CLI-Empty.msft.png "figure 29: menu commande"  
-[ImagesTutorialBlock]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-CLI-Block.msft.png "figure 30: afficher le blocage de requête"  
-[ImagesTutorialAddBlock]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-CLI-Block-Add-Pattern.msft.png "figure 31: blocage de main. css"  
-[ImagesTutorialBlockedStyles]:/Microsoft-Edge/devtools-Guide-Chromium/Media/Network-glitch-Network-CLI-Block-main-CSS.msft.png "figure 32: main. CSS a été bloqué"  
+[ImageAddIcon]: ../media/add-icon.msft.png  
+[ImageCloseIcon]: ../media/close-icon.msft.png  
+[ImageFilterIcon]: ../media/filter-icon.msft.png  
+[ImageFormatIcon]: ../media/format-icon.msft.png  
+[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
+[ImageScreenshotsIcon]: ../media/screenshots-icon.msft.png  
+[ImageSearchIcon]: ../media/search-icon.msft.png  
+[ImageSettingsIcon]: ../media/settings-icon.msft.png
 
 <!-- links -->  
 
-
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->  
 
-[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Changer la position de Microsoft Edge DevTools (détacher, ancrer en bas, ancrer à gauche)"  
-[DevtoolsNetworkReference]: /microsoft-edge/devtools-guide-chromium/network/reference "Référence d’analyse du réseau"
-[DevtoolsNetworkReferenceFilter]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests "Demandes de filtre-référence d’analyse du réseau"  
-[DevtoolsReferenceHideOverview]: /microsoft-edge/devtools-guide-chromium/network/reference#hide-the-overview-pane "Masquer le volet vue d’ensemble-référence d’analyse du réseau"
-[DevtoolsReferenceProperty]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties "Demandes de filtre par propriétés-référence d’analyse du réseau"
-[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Ouvrir Microsoft Edge DevTools"  
-[DevtoolsSpeedGetStarted]: /microsoft-edge/devtools-guide-chromium/speed/get-started "Optimiser la vitesse de votre site Web avec Microsoft Edge DevTools"  
+[DevToolsCustomizePlacement]: ../customize/placement.md "Changer la position de Microsoft Edge DevTools Documents Microsoft"  
+[DevtoolsNetworkReference]: ./reference.md "Référence d’analyse du réseau | Documents Microsoft"
+[DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Demandes de filtre-référence d’analyse du réseau | Documents Microsoft"  
+[DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Masquer le volet vue d’ensemble-référence d’analyse du réseau | Documents Microsoft"
+[DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Demandes de filtre par propriétés-référence d’analyse du réseau | Documents Microsoft"
+[DevToolsOpen]: ../open.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimiser la vitesse de votre site Web avec Microsoft Edge DevTools | Documents Microsoft"  
 
-[GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Consulter la démonstration d’activité réseau"  
+[GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Examen de la démonstration d’activité réseau | Problème"  
 
 [MDNHTTPCache]: https://developer.mozilla.org/docs/Web/HTTP/Caching "Mise en cache HTTP MDN"  
 
