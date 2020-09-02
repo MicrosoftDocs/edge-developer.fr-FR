@@ -3,7 +3,7 @@ description: Découvrir les outils de développement Microsoft Edge (EdgeHTML)
 title: Outils de développement Microsoft Edge (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -11,12 +11,12 @@ keywords: Microsoft Edge, développement web, outils F12, devtools
 experimental: true
 experiment_id: 51fe4b97-3e55-41
 ms.localizationpriority: high
-ms.openlocfilehash: cba59764805c0be0e9d2c57c1a3d87ca4d14943e
-ms.sourcegitcommit: 1e33cd41e5afb2e6dbdc19353011ff6c2b019f9c
+ms.openlocfilehash: 0c01b761d1aa1fb645b15b0be5d5d6e4265e646e
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "10866070"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10985967"
 ---
 # Outils de développement Microsoft Edge (EdgeHTML)  
 
@@ -46,7 +46,7 @@ La DevTools Microsoft Edge (EdgeHTML) inclut:
 *   Un panneau [Travailleurs de services][DevtoolsGuideEdgehtmlServiceworkers]pour gérer et déboguer vos travailleurs de services  
 *   Un panneau [Émulation][DevtoolsGuideEdgehtml|::ref9::|] pour tester votre site avec différents profils de navigateur, des résolutions d’écran et des coordonnées d’emplacement GPS  
 
-N’hésitez pas à nous envoyer vos [commentaires et demandes de fonctionnalité](#feedback).  
+N’hésitez pas à nous envoyer vos [commentaires et demandes de fonctionnalité](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
 
 > [!TIP]
 > [Test sur Microsoft Edge \(EdgeHTML\) gratuit à partir de n'importe quel navigateur][BrowserstackEdgehtml].  
@@ -117,7 +117,7 @@ Ces raccourcis contrôlent la fenêtre principale DevTools et doivent fonctionne
 > [!NOTE]
 > Si vous déboguez un point d’arrêt et que vous l’avez suspendu, l’action **Actualiser la page** reprend l’exécution.  
 
-## Commentaires  
+## Contacter l’équipe DevTools MicrosoftEdge  
 
 Envoyez-nous vos commentaires pour améliorer la DevTools de Microsoft Edge \ (EdgeHTML \) pour vous.  Il vous suffit d’ouvrir les outils \ (`F12`\) et de sélectionner le bouton [Envoyer des commentaires](#microsoft-edge-edgehtml-developer-tools).  
 

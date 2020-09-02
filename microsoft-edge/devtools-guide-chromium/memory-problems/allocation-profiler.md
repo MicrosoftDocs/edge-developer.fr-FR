@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: d0a7a66a9f061d1a5d98e57269ffbcc0a0afefa4
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 4dd4d5eefd91e07ccd578547210b53c37386178f
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985743"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986163"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10985743"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
 # Utilisation de l’instrumentation d’allocation sur une barre de planning  
-
-
 
 Utilisez l' **instrumentation d’allocation sur la barre de Planning** pour rechercher les objets qui ne sont pas correctement nettoyés de la mémoire et conservez la mémoire.  
 
@@ -44,7 +38,7 @@ L' **instrumentation d’allocation sur la chronologie** combine les information
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-L' **instrumentation d’allocation sur la chronologie** utilise périodiquement des instantanés de tas tout au long de l’enregistrement \ (aussi souvent chaque 50 ms! \) et un instantané final à la fin de l’enregistrement.  
+L' **instrumentation d’allocation sur la chronologie** utilise périodiquement des instantanés de tas tout au long de l’enregistrement \ (aussi souvent que chaque 50 ms \) et un instantané final à la fin de l’enregistrement.  
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Instrumentation d’allocation sur une barre de planning" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
    **Instrumentation d’allocation sur une barre de planning**  
@@ -86,15 +80,13 @@ Vous pouvez utiliser les curseurs de la chronologie ci-dessus pour effectuer un 
 
 Cliquez sur un objet spécifique du tas pour afficher l’arborescence de conservation située dans la partie inférieure de l’instantané de tas.  Si vous examinez le chemin de conservation de l’objet, vous devez disposer d’informations suffisantes pour comprendre la raison pour laquelle l’objet n’a pas été collecté et vous devez apporter les modifications de code nécessaires pour supprimer la référence inutile.  
 
-## Afficher l’allocation de mémoire par fonction   
+## Afficher l’allocation de mémoire par fonction  
 
-Vous pouvez afficher l’allocation de mémoire par fonction JavaScript.  Pour plus d’informations, voir [analyser l’allocation de mémoire par fonction][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction] .  
+Vous pouvez afficher l’allocation de mémoire par fonction JavaScript.  Pour plus d’informations, voir [analyser l’allocation de mémoire par fonction][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
-<!--
-## Feedback   
+## Contacter l’équipe Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

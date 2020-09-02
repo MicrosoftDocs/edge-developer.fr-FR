@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 587f4780432b1b2b964462d2d7f5779f447f1313
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 829902ddd76800bb8d36268cb07a61361aa1a159
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982912"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986114"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,9 @@ ms.locfileid: "10982912"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# Désactiver JavaScript avec Microsoft Edge DevTools  
 
-
-
-
-# Désactiver JavaScript avec Microsoft Edge DevTools   
-
-
-
-Pour afficher un aperçu d’une page Web lorsque JavaScript est désactivé.  
+Suivez les étapes ci-dessous pour voir l’apparence et le comportement d’une page Web lorsque JavaScript est désactivé.  
 
 1.  [Ouvrez Microsoft Edge devtools][DevToolsOpen].  
 1.  Appuyez sur `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
@@ -56,7 +50,7 @@ Pour afficher un aperçu d’une page Web lorsque JavaScript est désactivé.
        Icône d’avertissement en regard de **sources**  
     :::image-end:::  
     
-JavaScript reste désactivé dans cet onglet tant que vous avez DevTools ouvert.  
+JavaScript reste désactivé dans l’onglet tant que vous avez DevTools ouvert.  
 
 Vous pouvez vouloir recharger la page pour voir si et comment la page dépend de JavaScript lors du chargement.  
 
@@ -65,11 +59,9 @@ Pour réactiver JavaScript, effectuez les actions suivantes.
 *   Ouvrez à nouveau le **menu de commandes** et exécutez la `Enable JavaScript` commande.  
 *   Fermez DevTools.  
 
-<!--  
-## Feedback   
+## Contacter l’équipe Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

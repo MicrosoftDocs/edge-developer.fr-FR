@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 0ffea8f515a2d4ba0fa16b447a7d204c335dc7bb
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 0dedfcd8d00035ed1c4c02ef8a2ec0f1643d0687
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10984992"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991164"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10984992"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Remplacement de la chaîne de l’agent utilisateur à partir de Microsoft Edge DevTools   
-
-
+# Remplacement de la chaîne de l’agent utilisateur à partir de Microsoft Edge DevTools  
 
 Pour remplacer la chaîne de l' [agent utilisateur][MDNUserAgent] à partir de Microsoft Edge devtools:  
 
@@ -51,12 +45,10 @@ Pour remplacer la chaîne de l' [agent utilisateur][MDNUserAgent] à partir de M
     :::image-end:::  
     
 1.  Sélectionnez une chaîne d’agent utilisateur dans la liste ou entrez votre propre chaîne personnalisée.  
-    
-<!--  
-## Feedback   
 
+## Contacter l’équipe Microsoft Edge DevTools  
 
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

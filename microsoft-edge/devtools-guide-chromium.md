@@ -3,17 +3,17 @@ description: Découvrir les outils de développement Microsoft Edge (chrome)
 title: Outils de développement Microsoft Edge (chrome)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: cb51e16083e4798478817910e54c571721d094f8
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: c1168e25c99302a9d195c756c6049881b5dfe91f
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931223"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991180"
 ---
 # Outils de développement Microsoft Edge (chrome)  
 
@@ -133,15 +133,9 @@ Ces raccourcis contrôlent la fenêtre principale de DevTools, travaillent sur t
 
 ## Contacter l’équipe Microsoft Edge DevTools  
 
-Envoyez-nous vos commentaires pour permettre à l’équipe Microsoft Edge d’améliorer le Microsoft Edge DevTools pour vous.  Il suffit de sélectionner l’icône de **Commentaire** dans le devtools ou `Alt` + `Shift` + `I` d’appuyer sur Windows \ ( `Option` + `Shift` + `I` sous MacOS \) et d’entrer les commentaires ou les demandes de fonctionnalité dont vous disposez pour le devtools.  
-
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="Envoyer des commentaires sur Microsoft Edge":::
-   Envoyer des commentaires sur Microsoft Edge  
-:::image-end:::  
+[!INCLUDE [contact DevTools team note](./devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
 
 Pour afficher un aperçu des fonctionnalités les plus récentes qui s’affichent [sur le devtools][DevtoolsGuideChromiumWhatsNewIndex], téléchargez le [Canaries Microsoft Edge][MicrosoftedgeinsiderDownload], qui se développe de façon nocturne.  
-
-<!-- image links -->  
 
 <!-- links -->  
 

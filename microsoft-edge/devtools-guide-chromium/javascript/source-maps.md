@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: c791a4af4446a1209d6db77ca4787fee80d45e5c
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 35aa864c20def5f5cd11979d6239e8316c1acbca
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981768"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986142"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -27,14 +27,7 @@ ms.locfileid: "10981768"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Mapper le code prétraité au code source   
-
-
-
+# Mapper le code prétraité au code source  
 
 Gardez votre code côté client lisible et déboguable même après l’avoir combiné, minify défini ou compilé.  Utilisez les mappages sources pour mapper votre code source à votre code compilé.  
 
@@ -78,7 +71,7 @@ Lorsque vous exécutez des mappages source dans DevTools, vous remarquerez que l
 Les cartes sources sont activées par défaut <!--\(as of Microsoft Edge 39\)-->, mais si vous voulez vérifier ou activer un contrôle; Commencez par ouvrir DevTools, cliquez sur le bouton **personnaliser et contrôler devtools** \ ( `...` \), puis sélectionnez **paramètres**.  Dans le volet **Préférences** , sous **sources**, activez la case à cocher **activer les mappages de sources JavaScript**.  Vous pouvez également activer la case à cocher **activer les mappages de sources CSS**.  
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Activer les mappages sources" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
-   Activer les mappages sources  
+   **Activer les mappages de sources JavaScript**  
 :::image-end:::  
 
 ### Débogage avec des mappages sources  
@@ -89,7 +82,7 @@ Lors du débogage de votre code et des mappages de sources activés, les cartes 
 1.  Lorsque vous parcourez le code \ (les liens dans la pile d’appels doivent ouvrir le fichier source d’origine \)  
     
 <!--todo: add link to debugging your code when section is available -->  
-<!--[DebugBreakpointsStepCode]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/debug/breakpoints/step-code ""  -->  
+<!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->  
 
 ## @sourceURL et displayName  
 
@@ -104,8 +97,8 @@ En incluant le commentaire spécial suivant dans votre code, qui est considéré
 Accédez à la page suivante.  
 
 *   [démonstration][CssNinjaDemoSourceMapping]
-    
-Procédez comme suit.  
+
+Effectuez les opérations suivantes.  
 
 1.  Ouvrez le DevTools et accédez au panneau **sources** .  
 1.  Entrez un nom de fichier dans le champ **nom de votre code:** champ de saisie.  
@@ -114,26 +107,32 @@ Procédez comme suit.
     
 Si vous développez le sous-panneau **sources** , vous voyez maintenant un nouveau fichier avec le nom de fichier personnalisé que vous avez entré précédemment.  Si vous double-cliquez sur le fichier pour l’afficher, il contient le code JavaScript compilé pour la source d’origine.  En revanche, la dernière ligne est un `// @sourceURL` Commentaire indiquant le fichier source d’origine.  Cela risque de vous aider à procéder au débogage lorsque vous travaillez avec des résumés de langue.  
 
-:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Utilisation de sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
-   Utilisation de sourceURL  
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Utiliser sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+   Utiliser `sourceURL`  
 :::image-end:::  
 
-<!--  
-## Feedback   
+## Contacter l’équipe Microsoft Edge DevTools
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [BabelJS]: https://babeljs.io "Babel est un compilateur JavaScript"  
+
 [CoffeeScriptMain]: https://coffeescript.org "CoffeeScript"  
+
 [CssNinjaDemoSourceMapping]: https://www.thecssninja.com/demo/source_mapping/compile.html "Voici un exemple simple d’utilisation de l’appellation eval"  
+
 [DartMain]: https://www.dartlang.org "Langage de programmation DART"  
+
 [GitHubGoogleClosureCompiler]: https://github.com/google/closure-compiler "Google/Closure-compilateur | GitHub"  
+
 [GitHubMishooUglifyJS]: https://github.com/mishoo/UglifyJS "mishoo/UglifyJS | GitHub"  
+
 [GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "Cartes sources: langues, outils et autres informations | Wiki GitHub"  
+
 [GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Mise en route-Google/traceur-compilateur | Wiki GitHub"  
+
 [TypeScriptMain]: https://www.typescriptlang.org "TypeScript"  
 
 > [!NOTE]

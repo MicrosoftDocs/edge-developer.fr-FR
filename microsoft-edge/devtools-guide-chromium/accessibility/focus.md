@@ -2,16 +2,16 @@
 title: Effectuer le suivi de l’élément actif
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 04091ddf7986b8554e4f615a92e0303446048eaa
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 5261824b725384240453f216071255494e88e98d
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981747"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991174"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,15 +27,11 @@ ms.locfileid: "10981747"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
+# Effectuer le suivi de l’élément actif  
 
+Imaginons que vous testiez l’accessibilité de la navigation au clavier d’une page.  Lorsque vous naviguez dans la page à l’aide de la `Tab` touche, l’appel de focus disparaît parfois, car l’élément qui a le focus est masqué.  
 
-
-
-# Effectuer le suivi de l’élément actif   
-
-
-
-Imaginons que vous testiez l’accessibilité de la navigation au clavier d’une page.  Lorsque vous naviguez dans la page à l’aide de la `Tab` touche, l’appel de focus disparaît parfois, car l’élément qui a le focus est masqué.  Pour effectuer le suivi de l’élément prioritaire dans DevTools:  
+Procédez comme suit pour effectuer le suivi de l’élément prioritaire dans DevTools.  
 
 1.  Ouvrez la **console**.  
 1.  Cliquez sur **créer une expression dynamique** \ ( ![ créer une expression dynamique ][ImageCreateIcon] \).  
@@ -44,19 +40,20 @@ Imaginons que vous testiez l’accessibilité de la navigation au clavier d’un
        Créer une expression dynamique  
     :::image-end:::  
     
-1.  Entrez `document.activeElement`.
-1.  Cliquez en dehors de l’interface utilisateur de l' **expression dynamique** pour l’enregistrer.
+1.  Entrez `document.activeElement`.  
+1.  Cliquez en dehors de l’interface utilisateur de l' **expression dynamique** pour l’enregistrer.  
     
 La valeur que vous voyez ci-dessous `document.activeElement` est le résultat de l’expression.  
+
 Dans la mesure où cette expression représente toujours l’élément prioritaire, vous disposez maintenant d’un moyen de toujours garder une trace de l’élément qui a le focus.  
 
 *   Pointez sur le résultat pour mettre en surbrillance l’élément prioritaire dans la fenêtre d’affichage.  
 *   Cliquez avec le bouton droit sur le résultat et sélectionnez **Reveal dans le panneau éléments** pour afficher l’élément dans l’arborescence DOM sur le panneau **éléments** .  
 *   Cliquez avec le bouton droit sur le résultat et sélectionnez **stocker comme variable globale** pour créer une référence variable au nœud que vous pouvez utiliser dans la **console**.  
-    
-<!--## Feedback   -->  
 
+## Contacter l’équipe Microsoft Edge DevTools  
 
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
@@ -66,7 +63,7 @@ Dans la mesure où cette expression représente toujours l’élément prioritai
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools & phare \).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
 
 [![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  

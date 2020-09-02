@@ -2,16 +2,16 @@
 title: Terminologie de mémoire
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: e3373cf1475ec0eeaabcebf1a7f49505c7a3c1bb
-ms.sourcegitcommit: 50991a04c18283a8890ae33fcc3491c0476c7684
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: cb258135b7b3c931116d84b1e9b7a548a2b58a6d
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "10611726"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986244"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10611726"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-# Terminologie de mémoire   
-
-
+# Terminologie de mémoire  
 
 Cette section décrit les termes courants utilisés en analyse de la mémoire et est applicable à un large éventail d’outils de profilage de mémoire pour différentes langues.  
 
@@ -43,20 +37,20 @@ Les termes et notions décrits ici font référence au [panneau mémoire][Devtoo
 
 Considérez la mémoire comme un graphique avec les types primitifs \ (comme les nombres et les chaînes \) et les objets \ (matrices associatives \).  Elle peut être représentée visuellement sous forme de graphique à l’aide d’un certain nombre de points interconnectés comme suit:  
 
-> ##### Figure1  
-> Représentation visuelle de la mémoire  
->![Représentation visuelle de la mémoire][ImageThinkGraph]  
+:::image type="complex" source="../media/memory-problems-thinkgraph.msft.png" alt-text="Représentation visuelle de la mémoire" lightbox="../media/memory-problems-thinkgraph.msft.png":::
+   Représentation visuelle de la mémoire  
+:::image-end:::  
 
 Un objet risque de contenir de la mémoire de deux manières:  
 
 *   Directement par l’objet.  
 *   Par le biais d’un nettoyage de la mémoire, le nettoyage de la mémoire et la suppression**automatique de ces** objets sont implicites.  
 
-Lorsque vous travaillez avec le [panneau mémoire][DevtoolsMemoryProblemsHeapSnapshots] dans devtools \ (outil permettant d’identifier les problèmes de mémoire détectés dans «mémoire» \), vous pouvez vous présenter quelques colonnes d’information différentes.  Deux éléments qui ressortent sont les suivants: **taille superficielle** et **taille préservée**, mais qu’est-ce que cela représente?  
+Lorsque vous travaillez avec le panneau [mémoire][DevtoolsMemoryProblemsHeapSnapshots] dans devtools \ (outil permettant d’identifier les problèmes de mémoire détectés dans la **mémoire**), vous pouvez vous présenter quelques colonnes d’information différentes.  Deux éléments qui ressortent sont les suivants: **taille superficielle** et **taille préservée**, mais qu’est-ce que cela représente?  
 
-> ##### Figure 2  
-> Taille superficielle et conservée  
->![Taille superficielle et conservée][ImageShallowRetained]  
+:::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="Taille superficielle et conservée" lightbox="../media/memory-problems-shallow-retained.msft.png":::
+   Taille superficielle et conservée  
+:::image-end:::  
 
 ### Taille superficielle  
 
@@ -81,11 +75,11 @@ Il existe de nombreuses racines de GC internes, qui ne sont pas pertinentes pour
 >[!TIP]
 > Effacez le panneau de la **console** en exécutant `clear()` et désactivez les points d’arrêt dans le panneau **sources** avant de prendre une capture de tas dans le [panneau mémoire][DevtoolsMemoryProblemsHeapSnapshots].
 
-Le graphique mémoire commence par une racine, qui est éventuellement l' `window` objet du navigateur ou l' `Global` objet d’un module node. js.  Vous ne contrôlez pas la façon dont cet objet racine est récupéré par le garbage collector (pgcd).  
+Le graphique de mémoire commence par une racine, qui est éventuellement l' `window` objet du navigateur ou l' `Global` objet d’un module de Node.js.  Vous ne contrôlez pas la façon dont cet objet racine est récupéré par le garbage collector (pgcd).  
 
-> ##### Figure3  
-> Vous ne pouvez pas contrôler la façon dont l’objet racine est récupéré par le garbage collector \ (pgcd \).  
->![Vous ne pouvez pas contrôler la façon dont l’objet racine est récupéré par le garbage collector (pgcd).][ImageDontControl]  
+:::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="Vous ne pouvez pas contrôler la façon dont l’objet racine est récupéré par le garbage collector." lightbox="../media/memory-problems-dontcontrol.msft.png":::
+   Vous ne pouvez pas contrôler la façon dont l’objet racine est récupéré par le garbage collector.  
+:::image-end:::  
 
 Tout ce qui n’est pas accessible à partir de la racine récupère le nettoyage de la mémoire \ (pgcd \).  
 
@@ -99,17 +93,17 @@ Le tas est un réseau d’objets interconnectés.  Dans le monde mathématique, 
 *   Les **nœuds** \ (ou **objets**\) sont étiquetés à l’aide du nom de la fonction **constructeur** utilisée pour les générer.  
 *   Les **bords** sont étiquetés à l’aide du nom des **Propriétés**.  
 
-Découvrez [Comment enregistrer un profil à l’aide du profileur de tas][DevtoolsMemoryProblemsHeapSnapshots].  Voici quelques-uns des éléments que vous pouvez voir dans l’enregistrement instantané de tas dans le [panneau mémoire][DevtoolsMemoryProblemsHeapSnapshots] de la [figure 4](#figure-4) : distance par rapport à la racine de nettoyage de la mémoire (CG \).  Si la plupart des objets du même type se trouvent à la même distance et qu’ils sont à une distance plus importante, cela peut s’avérer utile.  
+Découvrez [Comment enregistrer un profil à l’aide du profileur de tas][DevtoolsMemoryProblemsHeapSnapshots].  Dans l’illustration ci-dessous, certains des éléments percutants que vous pouvez voir dans l’enregistrement instantané de tas dans le [panneau mémoire][DevtoolsMemoryProblemsHeapSnapshots] incluent la distance: la distance du récupérateur de mémoire (CG \).  Si la plupart des objets du même type se trouvent à la même distance et qu’ils sont à une distance plus importante, cela peut s’avérer utile.  
 
-> ##### Figure 4  
-> Distance par rapport à la racine  
->![Distance par rapport à la racine][ImageRoot]  
+:::image type="complex" source="../media/memory-problems-root.msft.png" alt-text="Distance par rapport à la racine" lightbox="../media/memory-problems-root.msft.png":::
+   Distance par rapport à la racine  
+:::image-end:::  
 
 ## Dominators  
 
 Les objets Dominator sont composés d’une structure arborescente, car chaque objet a exactement un Dominator.  Un Dominator d’un objet est susceptible de ne pas faire référence directe à un objet qu’il prédomine; c’est-à-dire que l’arborescence de Dominator n’est pas une arborescence fractionnée du graphique.  
 
-Dans la [figure 5](#figure-5):  
+Dans l’illustration suivante, l’instruction suivante a la valeur true.  
 
 *   Le nœud 1 prédomine le nœud 2  
 *   Le nœud 2 prédomine les nœuds 3, 4 et 6  
@@ -117,15 +111,15 @@ Dans la [figure 5](#figure-5):
 *   Le nœud 5 prédomine du nœud 8  
 *   Le nœud 6 prédomine le nœud 7  
 
-> ##### Figure 5  
-> Structure de l’arborescence Dominator  
->![Structure de l’arborescence Dominator][ImageDominatorsSpanning]  
+:::image type="complex" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="Structure de l’arborescence Dominator" lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
+   Structure de l’arborescence Dominator  
+:::image-end:::  
 
-Dans la [figure 6](#figure-6), `#3` le nœud est le Dominator `#10` , mais `#7` il existe également dans chaque chemin d’accès simple de l’opération de nettoyage de la mémoire `#10` .  Par conséquent, un objet B est un Dominator d’un objet A, si B existe dans chaque chemin simple de la racine à l’objet A.  
+Dans l’illustration suivante, `#3` le nœud est le Dominator `#10` , mais `#7` il existe également dans chaque chemin d’accès simple de l’opération de nettoyage de la mémoire `#10` .  Par conséquent, un objet B est un Dominator d’un objet A, si B existe dans chaque chemin simple de la racine à l’objet A.  
 
-> ##### Figure 6  
-> Illustration Dominator animée  
->![Illustration Dominator animée][ImageDominators]  
+:::image type="complex" source="../media/memory-problems-dominators.msft.gif" alt-text="Illustration Dominator animée" lightbox="../media/memory-problems-dominators.msft.gif":::
+   Illustration Dominator animée  
+:::image-end:::  
 
 ## V8 spécificités  
 
@@ -170,29 +164,22 @@ Dans le cas d’un petit nombre de propriétés, les propriétés sont stockées
 
 **Map** est un objet qui décrit à la fois le type d’objet et la disposition. Par exemple, les cartes permettent de décrire des hiérarchies d’objets implicites pour un [accès rapide aux propriétés][V8FastProperties].  
 
-
 ### Groupes d’objets  
 
-Chaque groupe d' **objets natifs** est constitué d’objets qui contiennent des références réciproques.  Considérons, par exemple, une sous-arborescence DOM dans laquelle chaque nœud comporte un lien vers le parent relatif et des liens vers l’enfant suivant et le frère suivant, formant ainsi un graphique connecté.  Notez que les objets natifs ne sont pas représentés dans le tas JavaScript, c’est pourquoi les objets natifs ont une taille égale à zéro. Au lieu de cela, les objets wrapper sont créés.  
+Chaque groupe d' **objets natifs** est constitué d’objets qui contiennent des références réciproques.  Prenez en considération, par exemple, une sous-arborescence DOM dans laquelle chaque nœud comporte un lien vers le parent relatif, ainsi que des liens vers l’enfant suivant et le frère suivant, formant ainsi un graphique connecté.  
+
+> [!NOTE]
+> Les objets natifs ne sont pas représentés dans le tas JavaScript.  L’absence de représentation est la raison pour laquelle les objets natifs ont une taille égale à zéro. Au lieu de cela, les objets wrapper sont créés.  
 
 Chaque objet wrapper dispose d’une référence à l’objet natif correspondant pour rediriger les commandes vers ce dernier.  En retour, un groupe d’objets contient des objets wrapper.  Toutefois, cela ne crée pas de cycle introuvable, car le nettoyage de la mémoire (GC \) est suffisamment intelligent pour libérer les groupes d’objets dont les wrappers ne sont plus référencés. Néanmoins, si vous oubliez de libérer un wrapper unique, il contient le groupe entier et les wrappers associés.  
 
-<!--## Feedback   -->  
+## Contacter l’équipe Microsoft Edge DevTools  
 
-
-
-<!-- image links -->  
-
-[ImageThinkGraph]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-thinkgraph.msft.png "Figure 1: représentation visuelle de la mémoire"  
-[ImageShallowRetained]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-shallow-retained.msft.png "Figure 2: taille superficielle et conservée"  
-[ImageDontControl]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dontcontrol.msft.png "Figure 3: vous ne pouvez pas contrôler la façon dont l’objet racine est récupéré par le garbage collector (pgcd)."  
-[ImageRoot]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-root.msft.png "Figure 4: distance par rapport à la racine"  
-[ImageDominatorsSpanning]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dominatorsspanning.msft.png "Figure 5: structure de l’arborescence Dominator"  
-[ImageDominators]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dominators.msft.gif "Figure 6: illustration de Dominator animée"  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsMemoryProblemsHeapSnapshots]: /microsoft-edge/devtools-guide-chromium/media/memory-problems/heap-snapshots "/microsoft-edge/devtools-guide-chromium/media/memory-problems"  
+[DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "Comment enregistrer des instantanés de tas | Documents Microsoft"  
 
 [V8FastProperties]: https://v8.dev/blog/fast-properties "Propriétés rapides dans V8 | V8"  
 

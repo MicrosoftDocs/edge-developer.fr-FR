@@ -2,16 +2,16 @@
 title: Navigation dans Microsoft Edge DevTools avec la technologie d’assistance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 4bd910fabaab02a632bdc51ade29c5ad6502432a
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: 544d6a6ecb8dabe262e7c28aa7fc072610604be0
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931195"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986056"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -33,7 +33,7 @@ L’article suivant a pour but de permettre aux utilisateurs qui s’appuient es
 
 L’accessibilité de DevTools est une opération en cours.  Certains panneaux et onglets fonctionnent mieux avec les technologies d’assistance.  Ce guide vous guide à travers les écrans qui sont les plus accessibles et met en surbrillance des problèmes spécifiques que vous pouvez rencontrer.  
 
-## Vue d'ensemble  
+## Présentation  
 
 Avant de commencer, il est utile d’avoir un modèle mental illustrant la structure de l’interface utilisateur d’DevTools.  DevTools est divisé en une série de panneaux organisés en [TabList Aria][W3CWaiAriaTablist].  
 
@@ -235,11 +235,14 @@ Le rapport d’audit est organisé en sections correspondant à chacune des cat�
 
 Pour effectuer un nouvel audit, utilisez `Shift` + `Tab` pour quitter le rapport et recherchez le bouton **effectuer un audit** .  
 
+## Contacter l’équipe Microsoft Edge DevTools
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 <!-- links -->  
 
 [DevtoolsAccessibilityReference]: ./reference.md "Référence d’accessibilité | Documents Microsoft"  
-<!--[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference | Microsoft Docs"  -->  
-
+[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "Volet accessibilité-référence de l’accessibilité | Documents Microsoft"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes à l’aide du menu de commandes de Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsConsoleIndex]: ../console/index.md "Présentation de la console | Documents Microsoft"  

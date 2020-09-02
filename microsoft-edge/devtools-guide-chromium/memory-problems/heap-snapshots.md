@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: bd46489d8a8a3fddbff60618b4997784294cccff
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 183482660ed5fc50862dfd2cce7209384fee93e3
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985429"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986170"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10985429"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Enregistrement des instantanés des tas   
-
-
+# Enregistrement des instantanés des tas  
 
 Découvrez comment enregistrer des instantanés de tas avec le profileur de segments de DevTools Microsoft Edge et Rechercher des fuites de mémoire.  
 
@@ -97,7 +91,7 @@ Pour basculer entre les affichages, utilisez le sélecteur en haut de la vue.
 À l’origine, une capture d’écran s’ouvre dans l’affichage de synthèse et affiche les totaux d’objets, qui risquent d’être développés pour afficher les instances:  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Affichage de synthèse" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
-   Affichage de synthèse  
+   Affichage de **synthèse**  
 :::image-end:::  
 
 Les entrées de niveau supérieur correspondent à des lignes «total».  
@@ -118,7 +112,7 @@ N’oubliez pas que les objets jaunes possèdent des références JavaScript et 
 **À quoi correspondent les différentes entrées de Constructor (Group \) dans le générateur de mémoire de segment?**  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Groupes de constructeurs" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
-   Groupes de constructeurs  
+   Groupes de **constructeurs**  
 :::image-end:::  
 
 | Entrée Constructor (groupe \) | Description |  
@@ -256,11 +250,9 @@ Pour en savoir plus sur les fuites DOM et l’analyse en mémoire notions fondam
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-<!--  
-## Feedback   
+## Contacter l’équipe Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

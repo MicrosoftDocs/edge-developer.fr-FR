@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 190890b43cff97ae0f379426b68a688534ebda95
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: a338e78957d664a4552e5882f1ae7882f0eee89a
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10983635"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986086"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10983635"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Référence sur l’accessibilité   
-
-
+# Référence sur l’accessibilité  
 
 Cette page est une référence complète des fonctionnalités d’accessibilité dans Microsoft Edge DevTools.  Ce service est destiné aux développeurs Web qui:  
 
@@ -44,7 +38,7 @@ Cette référence a pour but de vous aider à découvrir les outils disponibles 
 
 Pour plus d’informations sur la navigation dans DevTools à l’aide d’une technologie d’assistance telle qu’un lecteur d’écran, reportez-vous à la rubrique [navigation dans Microsoft Edge devtools avec la technologie d’assistance][DevtoolsAccessibilityNavigation] .  
 
-## Vue d’ensemble des fonctionnalités d’accessibilité dans Microsoft Edge DevTools   
+## Vue d’ensemble des fonctionnalités d’accessibilité dans Microsoft Edge DevTools  
 
 Cette section décrit la façon dont DevTools s’inscrit dans votre kit de fonctions d’accessibilité global.  
 
@@ -57,7 +51,7 @@ En général, DevTools devrait vous aider à résoudre les erreurs liées aux qu
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
-## Auditer l’accessibilité d’une page   
+## Auditer l’accessibilité d’une page  
 
 > [!NOTE]
 > Le volet **audits** fournit des liens vers du contenu hébergé sur des sites Web tiers.  Microsoft n’est pas responsable et n’a aucun contrôle sur le contenu de ces sites et sur les données qui pourraient être collectées.  
@@ -65,8 +59,8 @@ En général, DevTools devrait vous aider à résoudre les erreurs liées aux qu
 En règle générale, utilisez le volet audits pour déterminer si:  
 
 *   Une page est correctement marquée pour les lecteurs d’écran.  
-*   Les éléments de texte sur une page présentent des coefficients de contraste suffisants. Voir également [afficher le coefficient de contraste d’un élément de texte dans le sélecteur de couleurs](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
-    
+*   Les éléments de texte sur une page présentent des coefficients de contraste suffisants.  Voir [afficher le coefficient de contraste d’un élément de texte dans le sélecteur de couleurs](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
+
 Pour auditer une page:  
 
 1.  Accédez à l’URL que vous voulez auditer.  
@@ -95,13 +89,13 @@ Pour auditer une page:
        Plus d’informations sur un audit  
     :::image-end:::  
     
-1.  Cliquez sur **en savoir plus** pour afficher la documentation de ce contrôle.
+1.  Cliquez sur **en savoir plus** pour afficher la documentation de ce contrôle.  
     
     :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="Afficher la documentation d’un audit" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
        Afficher la documentation d’un audit  
     :::image-end:::  
     
-### Voir aussi: extension de la hache   
+### Voir aussi: extension de la hache  
 
 Il est possible que vous préfériez utiliser l’extension de la [hache][ChromeWebStoreAxe] plutôt que le panneau **audits** .  
 L’extension de la hache fournit généralement les mêmes informations, car il s’agit du moteur sous-jacent qui alimente le panneau audits.  L’extension de aXe a une interface utilisateur différente et décrit les audits légèrement différemment.  
@@ -111,7 +105,7 @@ Un des avantages que l’extension de aXe a sur le panneau **d’audit** est qu�
    Extension de la hache  
 :::image-end:::  
 
-## Volet accessibilité   
+## Volet accessibilité  
 
 Le volet **accessibilité** vous permet d’afficher l’arborescence d’accessibilité, les attributs Aria et les propriétés d’accessibilité calculée des nœuds DOM.  
 
@@ -119,13 +113,13 @@ Pour ouvrir le volet **accessibilité** :
 
 1.  Cliquez sur l’onglet **éléments** .  
 1.  Dans l' **arborescence DOM**, sélectionnez l’élément que vous voulez inspecter.  
-1.  Cliquez sur l’onglet **accessibilité** .  Cet onglet est parfois masqué derrière le bouton **plus** d’onglets ![ ][ImageMoreTabsIcon] .  
+1.  Cliquez sur l’onglet **accessibilité** .  Il est possible qu’il soit masqué derrière le bouton **plus d’onglets** \ ( ![ plus d’onglets ][ImageMoreTabsIcon] \).  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspecter l’élément H1 de la page d’accueil de DevTools dans le volet accessibilité" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Inspecter l' `h1` élément de la page d’accueil devtools dans le volet **accessibilité**  
 :::image-end:::  
 
-### Afficher la position d’un élément dans l’arborescence d’accessibilité   
+### Afficher la position d’un élément dans l’arborescence d’accessibilité  
 
 L' [arborescence d’accessibilité][MDNAccessibilityTree] est un sous-ensemble de l’arborescence DOM.  Il contient uniquement des éléments de l’arborescence DOM qui sont pertinents et utiles pour afficher le contenu d’une page dans un lecteur d’écran.  
 
@@ -135,7 +129,7 @@ Inspectez la position d’un élément dans l’arborescence d’accessibilité 
    Section **arborescence d’accessibilité**  
 :::image-end:::  
 
-### Afficher les attributs ARIA d’un élément   
+### Afficher les attributs ARIA d’un élément  
 
 Les attributs ARIA garantissent que les lecteurs d’écran disposent de toutes les informations dont ils ont besoin pour représenter correctement le contenu d’une page.  
 
@@ -145,7 +139,7 @@ Affichez les attributs ARIA d’un élément dans le [volet accessibilité](#the
    Section **attributs Aria**  
 :::image-end:::  
 
-### Afficher les propriétés d’accessibilité calculées d’un élément   
+### Afficher les propriétés d’accessibilité calculées d’un élément  
 
 > [!NOTE]
 > Si vous recherchez des propriétés CSS calculées, voir l' [onglet calculé][DevtoolsCssReferenceViewActuallyAppliedElements].  
@@ -158,9 +152,10 @@ Afficher les propriétés d’accessibilité calculées d’un élément dans le
    Section **propriétés calculées** du volet **accessibilité**  
 :::image-end:::  
 
-## Afficher le coefficient de contraste d’un élément de texte dans le sélecteur de couleurs   
+## Afficher le coefficient de contraste d’un élément de texte dans le sélecteur de couleurs  
 
 Certaines personnes souffrant de troubles de la vue ne voient pas les zones comme très brillantes ou très sombres.  Tout a tendance à apparaître à la même luminosité, ce qui permet de distinguer les plans et les bords.  
+
 Coefficient de contraste mesure la différence de luminosité entre le premier plan et l’arrière-plan du texte.  Si votre texte a un coefficient de contraste faible, il est possible que les utilisateurs malvoyants puissent littéralement voir votre site comme un écran vierge.  
 
 Le sélecteur de couleurs permet de vérifier que votre texte répond aux niveaux de contraste recommandés:  
@@ -168,8 +163,8 @@ Le sélecteur de couleurs permet de vérifier que votre texte répond aux niveau
 1.  Cliquez sur l’onglet **éléments** .  
 1.  Dans l' **arborescence DOM**, sélectionnez l’élément de texte que vous voulez inspecter.  
     
-    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Examen d’un paragraphe dans l’arborescence DOM" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
-       Examen d’un paragraphe dans l’arborescence DOM  
+    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Inspecter un paragraphe dans l’arborescence DOM" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
+       Inspecter un paragraphe dans l' **arborescence DOM**  
     :::image-end:::  
     
 1.  Dans le volet **styles** , cliquez sur le carré de couleur en regard de la `color` valeur de l’élément.  
@@ -178,7 +173,7 @@ Le sélecteur de couleurs permet de vérifier que votre texte répond aux niveau
        La `color` propriété de l’élément  
     :::image-end:::  
     
-1.  Vérifiez la section **coefficient de contraste** du sélecteur de couleurs.  Une coche signifie que l’élément est conforme à la [recommandation minimum][W3CContrastMinimum].  Deux coches signifient qu’il est conforme à la [recommandation améliorée][W3CContrastEnhanced].
+1.  Vérifiez la section **coefficient de contraste** du sélecteur de couleurs.  Une coche signifie que l’élément est conforme à la [recommandation minimum][W3CContrastMinimum].  Deux coches signifient qu’il est conforme à la [recommandation améliorée][W3CContrastEnhanced].  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="La section coefficient de contraste du sélecteur de couleurs affiche 2 coches et une valeur de 13,97" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
        La section **coefficient de contraste** du sélecteur de couleurs affiche 2 coches et une valeur de `13.97`  
@@ -187,12 +182,12 @@ Le sélecteur de couleurs permet de vérifier que votre texte répond aux niveau
 1.  Cliquez sur la section **coefficient de contraste** pour afficher des informations supplémentaires.  Une ligne s’affiche dans le sélecteur de visuels en haut du sélecteur de couleurs.  Si la couleur actuelle répond aux recommandations, tout ce qui se trouve sur le même côté de la ligne répond également aux recommandations.  Si la couleur en cours ne répond pas aux recommandations, tout ce qui se trouve dans le même côté ne répond pas aux recommandations.  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="Ligne de coefficient de contraste dans le sélecteur visuel" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
-       Ligne de coefficient de contraste dans le sélecteur visuel  
+       Ligne de **coefficient de contraste** dans le sélecteur visuel  
     :::image-end:::  
     
 <!--## Feedback   -->  
 
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
@@ -200,7 +195,7 @@ Le sélecteur de couleurs permet de vérifier que votre texte répond aux niveau
 
 <!-- links -->  
 
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigation dans Microsoft Edge DevTools avec la technologie d’assistance | Documents sur le"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigation dans Microsoft Edge DevTools avec la technologie d’assistance | Documents Microsoft"  
 [DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "Afficher uniquement les feuilles CSS appliquées actuellement à une référence d’élément CSS | Documents Microsoft"  
 
 [ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe-tests d’accessibilité sur le Web-chrome Web Store"  

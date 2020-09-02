@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 2f05ef2911c855df39d60fa732ff5f784ab49473
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 801de4beeec29010ef63b2bcda950b57d4e544f7
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10984855"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986184"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -27,19 +27,12 @@ ms.locfileid: "10984855"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-# Accélérer le runtime JavaScript   
-
-
-
+# Accélérer le runtime JavaScript  
 
 Identifiez les fonctions onéreuses à l’aide du panneau **mémoire** .  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Échantillonnage des profils" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
-   Échantillonnage des profils  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Exemples de profils" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+   Exemples de profils  
 :::image-end:::  
 
 ### Résumé  
@@ -66,7 +59,7 @@ Lorsque vous avez terminé l’enregistrement, DevTools renseigne automatiquemen
 
 Le mode par défaut est « **gros» (bas)**.  Cet affichage vous permet de voir quelles fonctions ont le plus d’impact sur les performances et examine les chemins d’appel vers ces fonctions.  
 
-### Changer l’ordre de tri   
+### Changer l’ordre de tri  
 
 Pour modifier l’ordre de tri, sélectionnez le menu déroulant en regard de la **fonction sélectionner le focus** , ![ ][ImageFocusIcon] puis sélectionnez l’une des options suivantes.
 
@@ -88,13 +81,13 @@ Pour modifier l’ordre de tri, sélectionnez le menu déroulant en regard de la
    Arborescence  
 :::image-end:::  
 
-### Exclure des fonctions   
+### Exclure des fonctions  
 
-Pour exclure une fonction de votre profil d’échantillonnage, sélectionnez celle-ci pour la sélectionner, puis cliquez sur l’icône **exclure la fonction sélectionnée** ![ ][ImageExcludeIcon] .  La fonction de requête \ (parent \) de la fonction exclue \ (enfant \) est imputée à la mémoire allouée à la fonction exclue \ (enfant \).  
+Pour exclure une fonction de votre profil d’échantillonnage, sélectionnez-la, puis **exclude selected function** sélectionnez le ![ bouton exclure la fonction sélectionnée ][ImageExcludeIcon]  La fonction de requête \ (parent \) de la fonction exclue \ (enfant \) est imputée à la mémoire allouée à la fonction exclue \ (enfant \).  
 
-Sélectionnez l’icône **restaurer toutes les fonctions** \ ( ![ restaurer toutes les fonctions ][ImageRestoreIcon] \) pour restaurer toutes les fonctions exclues dans l’enregistrement.  
+Sélectionnez le bouton **restaurer toutes les fonctions** \ ( ![ restaurer toutes les fonctions ][ImageRestoreIcon] \) pour restaurer toutes les fonctions exclues dans l’enregistrement.  
 
-## Afficher le profil d’échantillonnage sous forme de graphique   
+## Afficher le profil d’échantillonnage sous forme de graphique  
 
 Le mode graphique fournit une représentation visuelle du profil d’échantillonnage au fil du temps.  
 
@@ -106,9 +99,9 @@ Après avoir [enregistré un profil d’échantillonnage](#record-a-sampling-pro
 
 Le graphique à flamme est divisé en deux parties.  
 
-| | Quatrième | Description |  
+| index | Quatrième | Description |  
 | --- |:--- |:--- |  
-| 1 | Vue d'ensemble | Un affichage attractif des oiseaux de l’ensemble de l’enregistrement.  La hauteur des barres correspond à la profondeur de la pile d’appels.  C’est pourquoi, plus la barre est grande, plus la pile d’appels est profonde.  |  
+| 1 | Présentation | Un affichage attractif des oiseaux de l’ensemble de l’enregistrement.  La hauteur des barres correspond à la profondeur de la pile d’appels.  C’est pourquoi, plus la barre est grande, plus la pile d’appels est profonde.  |  
 | deuxième | Piles d’appels | Il s’agit d’une vue détaillée des fonctions qui ont été appelées lors de l’enregistrement.  L’axe horizontal est le temps et l’axe vertical est la pile d’appels.  Les piles sont organisées de haut en bas.  Par conséquent, la fonction en haut appelle celle qui s’en trouve au-dessous, et ainsi de suite.  |  
 
 Les fonctions apparaissent de façon aléatoire.  Il n’existe aucune corrélation avec les couleurs utilisées dans les autres panneaux.  Toutefois, les fonctions sont toujours les mêmes coloriées entre les appels, afin que vous puissiez voir les modèles dans chaque Runtime.  
@@ -119,7 +112,7 @@ Les fonctions apparaissent de façon aléatoire.  Il n’existe aucune corrélat
 
 Une pile d’appels de haut niveau n’est pas nécessairement importante, cela signifie simplement que de nombreuses fonctions étaient appelées.  Mais une barre larges signifie qu’une fonction a duré un certain temps.  Ces suggestions peuvent être optimisées.  
 
-### Effectuer un zoom avant sur des parties spécifiques de l’enregistrement   
+### Effectuer un zoom avant sur des parties spécifiques de l’enregistrement  
 
 Maintenez la touche CTRL enfoncée, puis faites glisser la souris vers la gauche et la droite pour effectuer un zoom avant sur certaines parties de la pile d’appels.  Après le zoom, la pile d’appels affiche automatiquement la partie de l’enregistrement que vous avez sélectionnée.  
 
@@ -127,7 +120,7 @@ Maintenez la touche CTRL enfoncée, puis faites glisser la souris vers la gauche
    Zoom de graphique  
 :::image-end:::  
 
-### Afficher les détails de la fonction   
+### Afficher les détails de la fonction  
 
 Sélectionnez sur une fonction pour afficher la définition dans le panneau **sources** .  
 
@@ -143,15 +136,13 @@ Pointez sur une fonction pour afficher les données de nom et de minutage.  Les 
 <!--*   **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->  
 <!--*   **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="Affichage des détails de fonctions dans le graphique" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
-   Affichage des détails de fonctions dans le graphique  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="Afficher les détails des fonctions dans le graphique" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
+   Afficher les détails des fonctions dans le graphique  
 :::image-end:::  
 
-<!--  
-## Feedback   
+## Contacter l’équipe Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

@@ -6,12 +6,12 @@ ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 1bd6da8d0e4c170fa94fed995a26e77b119992f1
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 6cc690e7f2f93448c2facb01f0ca2f9b679a473a
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981824"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986100"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,7 @@ ms.locfileid: "10981824"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Remplacer le géolocalisation avec Microsoft Edge DevTools   
-
-
+# Remplacer le géolocalisation avec Microsoft Edge DevTools  
 
 De nombreux sites Web tirent parti de l’emplacement de l’utilisateur, afin de fournir une utilisation plus pertinente aux utilisateurs.  Par exemple, un site Web météo peut afficher la prévision locale dans la zone d’un utilisateur, une fois que l’utilisateur a accordé l’autorisation de site Web pour accéder à l’emplacement actuel de l’utilisateur.  
 
@@ -54,11 +48,9 @@ Si vous créez une interface utilisateur qui change en fonction de l’emplaceme
        Sélectionner `Tokyo` dans la liste de **géolocalisation**  
     :::image-end:::  
     
-<!--  
-## Feedback   
+## Contacter l’équipe Microsoft Edge DevTools
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

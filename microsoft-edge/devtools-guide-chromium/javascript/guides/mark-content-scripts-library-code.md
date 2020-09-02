@@ -2,16 +2,16 @@
 title: Marquer des scripts de contenu comme du code de bibliothèque
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 410a74b906e3b1ff7ff98b6d1791e057e4fa89c4
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: a5101cb8561a49ce6c271398f4c1a828984da9e3
+ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982801"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10991156"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,17 +27,11 @@ ms.locfileid: "10982801"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Marquer des scripts de contenu comme du code de bibliothèque   
-
-
+# Marquer des scripts de contenu comme du code de bibliothèque  
 
 Lorsque vous utilisez le panneau **sources** de Microsoft Edge devtools pour parcourir le [code][DevToolsJavascriptStepThroughCode], vous pouvez parfois mettre en pause le code que vous ne connaissez pas.  Vous avez probablement suspendu le code de l’une des extensions Microsoft Edge que vous avez installées.  Suivez les étapes ci-dessous pour ne pas mettre en pause le code de l’extension.  
 
-1.  Ouvrez DevTools, sélectionnez **personnaliser et contrôler devtools** \ ( `...` \), puis cliquez sur **paramètres**.  Vous pouvez également ouvrir les **paramètres** en appuyant sur `F1` .  
+1.  Ouvrez DevTools, sélectionnez **personnaliser et contrôler devtools** \ ( `...` \), puis sélectionnez **paramètres**.  Vous pouvez également ouvrir les **paramètres** en sélectionnant `F1` .  
 
 1.  Sélectionnez l’onglet Code de la **bibliothèque** qui ouvre la section Code de la **bibliothèque d’infrastructure** des **paramètres**.  
 1.  Activez la case à cocher **marquer les scripts de contenu comme code de bibliothèque** .  
@@ -46,11 +40,9 @@ Lorsque vous utilisez le panneau **sources** de Microsoft Edge devtools pour par
        Activer la case à cocher **marquer les scripts de contenu comme code de bibliothèque**  
     :::image-end:::  
     
-<!--  
-## Feedback   
+## Contacter l’équipe Microsoft Edge DevTools  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
@@ -58,7 +50,7 @@ Lorsque vous utilisez le panneau **sources** de Microsoft Edge devtools pour par
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools & phare \).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
 
 [![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  

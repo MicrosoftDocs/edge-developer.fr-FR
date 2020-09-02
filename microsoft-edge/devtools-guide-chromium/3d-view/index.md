@@ -3,15 +3,16 @@ description: En savoir plus sur l’affichage 3D et son utilisation.
 title: Vue 3D
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/07/2019
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: ce9f8a26ef991f141f1ee888e79bfbf3a93f2eca
-ms.sourcegitcommit: f92bf0b50812b43228990b794611daa2144e431c
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: ba1125654c46be6ef4da99efc9ba027ba5e40672
+ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858064"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10986079"
 ---
 # Vue 3D  
 
@@ -107,9 +108,9 @@ Curseur sur le volet de contrôles intitulé niveau d' **imbrication de la page*
 
 ### Type de couleur DOM  
 
-Outre le **carte thermique engagements-Purple en blanc**, **carte thermique engagements-bleu à jaune**, **carte thermique engagements-arc-** en-ciel et utiliser les cases d’option **couleur d’arrière-plan** , vous pouvez **utiliser la texture d’écran**.  La texture d’écran ajoute du contexte à votre environnement de débogage en affichant le contenu de la page Web directement sur les éléments.  Dans le volet **DOM 3D** , le paramètre de **type de couleur** reste en cours de travail, car certains sites Web présentent un temps plus difficile pour le rendu de la texture d’écran en 3D.  
+Outre le **carte thermique engagements-Purple en blanc**, **carte thermique engagements-bleu à jaune**, **carte thermique engagements-arc-** en-ciel et utiliser les cases d’option **couleur d’arrière-plan** , vous pouvez **utiliser la texture d’écran**.  La texture d’écran ajoute du contexte à votre environnement de débogage en affichant le contenu de la page Web directement sur les éléments.  Dans le volet **DOM 3D** , le paramètre de  **type de couleur** reste en cours de travail, car certains sites Web présentent un temps plus difficile pour le rendu de la texture d’écran en 3D.  
 
-## Contacter l’équipe Microsoft Edge devtools  
+## Contacter l’équipe Microsoft Edge DevTools
 
 L’équipe Microsoft Edge devtools travaille sur l’interface utilisateur et ajoute plus de fonctionnalités à l’affichage 3D en fonction de la demande de la part des utilisateurs comme vous.  Envoyez-nous vos commentaires pour vous aider à améliorer Microsoft Edge DevTools.  Il suffit de sélectionner l’icône de commentaires dans le devtools ou d’appuyer sur `Alt` + `Shift` + `I` \ (Windows \) ou d’appuyer sur `Option` + `Shift` + `I` \ (MacOS \) et d’entrer des commentaires ou des demandes de fonctionnalités pour le devtools.  
 
