@@ -1,17 +1,18 @@
 ---
+description: Les extraits sont des petits scripts que vous pouvez créer et exécuter dans le panneau sources de Microsoft Edge DevTools.  Vous pouvez y accéder et l’exécuter à partir de n’importe quelle page.  Lorsque vous exécutez un snippet, il s’exécute à partir du contexte de la page actuellement ouverte.
 title: Exécuter des extraits de code JavaScript sur n’importe quelle page avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 3a5ae986e3080a0b6a8b1bf34b0e0efc44c90303
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 5f6284179aacb471116a2d732507b010c37ef235
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981994"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993386"
 ---
 <!-- Copyright Kayce Basques 
 

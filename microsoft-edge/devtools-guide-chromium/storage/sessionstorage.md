@@ -1,17 +1,18 @@
 ---
+description: Découvrez comment afficher et modifier sessionStorage à l’aide du volet de stockage de session et de la console.
 title: Afficher et modifier le stockage de session avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: d0631f69a082a2a73c51e4359c21cf94636d665e
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 24fca3fd3a068f3b2ffbe4ec1c23e6b80b968953
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10983561"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993547"
 ---
 <!-- Copyright Kayce Basques 
 

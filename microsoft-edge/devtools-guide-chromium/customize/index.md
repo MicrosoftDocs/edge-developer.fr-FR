@@ -1,17 +1,18 @@
 ---
+description: Liste des méthodes de personnalisation de Microsoft Edge DevTools
 title: Personnaliser Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: e726b7f3f6245cb6f6798669c73fb14718542baa
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 238ee27a75aa94bf986d41f00a98e5eacc806d7f
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982364"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992994"
 ---
 <!-- Copyright Kayce Basques 
 

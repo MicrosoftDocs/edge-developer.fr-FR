@@ -1,17 +1,18 @@
 ---
+description: Découvrez comment utiliser Microsoft Edge et DevTools pour rechercher des problèmes de mémoire qui affectent les performances de la page, notamment les fuites de mémoire, l’augmentation de la mémoire et les nettoyages de mémoire fréquents.
 title: Résoudre les problèmes de mémoire
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: b9e6e2af333257f0cbe0a4a354dcd1d7b862af9c
-ms.sourcegitcommit: 037a2d62333691104c9accb4862968f80a3465a2
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: ef820353f81eb3fd791433e9c53434dff3b10a60
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "10751988"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992777"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -38,7 +39,7 @@ Découvrez comment utiliser Microsoft Edge et DevTools pour rechercher des probl
 *   Identifiez les arborescences DOM détachées \ (une cause courante de fuites de mémoire \) avec **instantané de tas**.  
 *   Déterminez quand une nouvelle mémoire est allouée dans votre segment JavaScript \ (JS Heap \) avec l' **instrumentation d’allocation sur la chronologie**.  
 
-## Vue d'ensemble  
+## Présentation  
 
 Dans l’esprit du modèle de performance des **rails** , le focus de vos efforts de performance doit être vos utilisateurs.  
 
@@ -113,7 +114,7 @@ Chaque fois que le bouton référencé dans le code est enfoncé, les `div` nœu
 
 Tout d’abord, explication de l’interface utilisateur.  Le graphique **tas** dans le volet **vue d’ensemble** \ (sous **net**\) représente le tas js.  Le volet de **vue d’ensemble** est le volet de **compteur** .  Ici, vous pouvez voir l’utilisation de la mémoire divisée par le tas JS \ (similaire au graphique de **tas** dans le volet **vue d’ensemble** ), aux documents, aux nœuds DOM, aux écouteurs et à la mémoire GPU.  La désactivation d’une case à cocher masque celle-ci du graphique.  
 
-À présent, analyse du code par rapport à la figure précédente.  Si vous examinez le compteur de nœuds \ (le graphique vert), vous pouvez voir qu’il correspond au code.  Le nombre de nœuds augmente par étapes discrètes.  Vous pouvez supposer que chaque augmentation du nombre de nœuds est un appel à `grow()` .  Le graphique de tas JS \ (graphique bleu \) n’est pas aussi simple.  Conformément aux meilleures pratiques, le premier DIP est en fait un nettoyage de la mémoire forcé (atteint en appuyant sur le bouton **collecter** le nettoyage de la mémoire ![ ][ImageForceGarbageCollectionIcon] ).  En cours d’enregistrement, vous pouvez voir que la taille du tas JS pointe.  Il s’agit d’une opération naturelle et normale: le code JavaScript crée les nœuds DOM sur chaque pression de bouton et effectue un grand nombre de travail lors de la création de la chaîne de 1 million caractères.  Dans le cas présent, il s’agit du fait que le tas JS se termine plus haut que le début du nettoyage de la mémoire.  Dans le monde réel, si vous avez remarqué ce modèle d’augmentation de la taille du tas et de la taille de nœud JS, il peut éventuellement définir une fuite de mémoire.  
+À présent, analyse du code par rapport à la figure précédente.  Si vous examinez le compteur de nœuds \ (le graphique vert), vous pouvez voir qu’il correspond au code.  Le nombre de nœuds augmente par étapes discrètes.  Vous pouvez supposer que chaque augmentation du nombre de nœuds est un appel à `grow()` .  Le graphique de tas JS \ (graphique bleu \) n’est pas aussi simple.  Conformément aux meilleures pratiques, le premier DIP est en fait un nettoyage de la mémoire forcé (atteint en appuyant sur le bouton  **collecter** le nettoyage de la mémoire ![ ][ImageForceGarbageCollectionIcon] ).  En cours d’enregistrement, vous pouvez voir que la taille du tas JS pointe.  Il s’agit d’une opération naturelle et normale: le code JavaScript crée les nœuds DOM sur chaque pression de bouton et effectue un grand nombre de travail lors de la création de la chaîne de 1 million caractères.  Dans le cas présent, il s’agit du fait que le tas JS se termine plus haut que le début du nettoyage de la mémoire.  Dans le monde réel, si vous avez remarqué ce modèle d’augmentation de la taille du tas et de la taille de nœud JS, il peut éventuellement définir une fuite de mémoire.  
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->  
 
@@ -163,7 +164,7 @@ Développez le carats pour examiner une arborescence dissociée.
 
 <!--Nodes highlighted yellow have direct references to them from the JavaScript code.  Nodes highlighted red do not have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node is not alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.  -->
 
-Sélectionnez un nœud pour le rechercher davantage.  Dans le volet **objets** , vous pouvez afficher davantage d’informations sur le code qui fait référence à celle-ci.  Par exemple, dans l’illustration suivante, vous pouvez voir que la `detachedNodes` variable fait référence au nœud.  Pour corriger cette fuite de mémoire particulière, vous devez examiner le code qui utilise la `detachedNodes` variable et garantir que la référence au nœud est supprimée lorsque vous n’en avez plus besoin.  
+Sélectionnez un nœud pour le rechercher davantage.  Dans le volet **objets** , vous pouvez afficher davantage d’informations sur le code qui fait référence à celle-ci.  Par exemple, dans l’illustration suivante, vous pouvez voir que la `detachedNodes` variable fait référence au nœud.  Pour corriger cette fuite de mémoire particulière, vous devez examiner le code qui utilise la `detachedUNode` variable et garantir que la référence au nœud est supprimée lorsque vous n’en avez plus besoin.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="Examen d’un nœud" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
    Figure 7: examen d’un nœud  
@@ -175,7 +176,7 @@ Sélectionnez un nœud pour le rechercher davantage.  Dans le volet **objets** ,
 
 L' **instrumentation d’allocation sur la chronologie** est un autre outil qui peut vous aider à effectuer le suivi des fuites de mémoire dans votre tas js.  
 
-Montrez l' **instrumentation d’allocation sur la chronologie** en utilisant le code suivant.  
+Montrez l' **instrumentation d’allocation sur la chronologie**  en utilisant le code suivant.  
 
 ```javascript
 var x = [];

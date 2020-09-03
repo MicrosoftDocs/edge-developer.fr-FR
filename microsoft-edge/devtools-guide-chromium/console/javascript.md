@@ -1,17 +1,18 @@
 ---
+description: Apprenez à exécuter JavaScript dans la console.
 title: Commencer à utiliser JavaScript sur la console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 7e91d9844b2926bc8302331c6b9d971922d27ea3
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: d31bcfbdf728e656c9a6fff882f939f8c24cd897
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982254"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993120"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -43,7 +44,7 @@ Ce didacticiel interactif vous montre comment exécuter JavaScript dans la **con
    La **console**  
 :::image-end:::  
 
-## Vue d'ensemble   
+## Présentation   
 
 La **console** est une valeur [REPL][WikiReadEvalPrintLoop]qui correspond à la lecture, à l’évaluation, à l’impression et au bouclage.  Elle lit le code JavaScript que vous entrez, évalue votre code, imprime le résultat de l' [expression][2alityExpressionsVersusStatements], puis revient à la première étape.  
 

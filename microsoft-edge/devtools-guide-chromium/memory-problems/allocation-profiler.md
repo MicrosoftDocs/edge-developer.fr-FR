@@ -1,17 +1,18 @@
 ---
+description: Utilisez l’instrumentation d’allocation sur la barre de planning pour rechercher les objets qui ne sont pas correctement nettoyés de la mémoire et conservez la mémoire.
 title: Utilisation de l’instrumentation d’allocation sur une barre de planning
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 4dd4d5eefd91e07ccd578547210b53c37386178f
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: 58a951c4241ae0fe7dce70f523a701694b8254f9
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986163"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993505"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -84,7 +85,7 @@ Cliquez sur un objet spécifique du tas pour afficher l’arborescence de conser
 
 Vous pouvez afficher l’allocation de mémoire par fonction JavaScript.  Pour plus d’informations, voir [analyser l’allocation de mémoire par fonction][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
-## Contacter l’équipe Microsoft Edge DevTools  
+## Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

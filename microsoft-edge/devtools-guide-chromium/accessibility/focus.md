@@ -1,4 +1,5 @@
 ---
+description: Ouvrez la console, créez une expression dynamique et attribuez à l’expression la valeur document. activeElement.
 title: Effectuer le suivi de l’élément actif
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -6,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 5261824b725384240453f216071255494e88e98d
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: 9000b8ca1fa52daf5257f201c65dcabd78298ec7
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991174"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993204"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -51,7 +52,7 @@ Dans la mesure où cette expression représente toujours l’élément prioritai
 *   Cliquez avec le bouton droit sur le résultat et sélectionnez **Reveal dans le panneau éléments** pour afficher l’élément dans l’arborescence DOM sur le panneau **éléments** .  
 *   Cliquez avec le bouton droit sur le résultat et sélectionnez **stocker comme variable globale** pour créer une référence variable au nœud que vous pouvez utiliser dans la **console**.  
 
-## Contacter l’équipe Microsoft Edge DevTools  
+## Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

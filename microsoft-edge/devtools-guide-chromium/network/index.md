@@ -1,17 +1,18 @@
 ---
+description: Didacticiel sur les fonctionnalités les plus populaires relatives au réseau dans Microsoft Edge DevTools.
 title: Examiner l’activité réseau dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: cca9a45dae5ee845a219ef3f29c54a99e1ee904a
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 3629c2d3711716d6d4a837b29bffef4786eb6d3f
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985580"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993449"
 ---
 <!-- Copyright Kayce Basques 
 

@@ -1,17 +1,18 @@
 ---
+description: Ouvrez l’onglet conditions du réseau, désactivez l’option sélectionner automatiquement, puis choisissez dans la liste ou entrez une chaîne personnalisée.
 title: Remplacement de la chaîne de l’agent utilisateur à partir de Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 0dedfcd8d00035ed1c4c02ef8a2ec0f1643d0687
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: ecaa1247824e5c3acb07a2c631feab30d25aba8d
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991164"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992924"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -46,7 +47,7 @@ Pour remplacer la chaîne de l' [agent utilisateur][MDNUserAgent] à partir de M
     
 1.  Sélectionnez une chaîne d’agent utilisateur dans la liste ou entrez votre propre chaîne personnalisée.  
 
-## Contacter l’équipe Microsoft Edge DevTools  
+## Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

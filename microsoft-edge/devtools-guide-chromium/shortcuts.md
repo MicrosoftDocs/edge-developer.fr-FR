@@ -1,17 +1,18 @@
 ---
+description: Documentation canonique sur les raccourcis clavier dans Microsoft Edge DevTools
 title: Raccourcis clavier dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 031457d33bf3cf102380c01d9084619313612124
-ms.sourcegitcommit: 5cdc1626d5581b79c0f2ac4ea62e7f1974ebfa57
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: 8900b58cfaaa6cdab18e0979867348434a213cd0
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "10601893"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993568"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -47,9 +48,9 @@ Pour ouvrir DevTools, appuyez sur les raccourcis clavier suivants lorsque le cur
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
-| Ouvrir le panneau de configuration que vous avez utilisé en dernier | `F12` ou`Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
+| Ouvrir le panneau de configuration que vous avez utilisé en dernier | `F12` ou `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Ouvrir l’écran de la **console** | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
-| Ouvrir le panneau **éléments** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C`ou`Command`+`Option`+`C` |  
+| Ouvrir le panneau **éléments** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` ou `Command`+`Option`+`C` |  
 
 ## Raccourcis clavier globaux   
 
@@ -57,7 +58,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart des panneaux de
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
-| Afficher les **paramètres** | `?` ou `F1` | `?` ou`Function`+`F1` |  
+| Afficher les **paramètres** | `?` ou `F1` | `?` ou `Function`+`F1` |  
 | Mettre le focus sur le panneau suivant | `Control`+`]` | `Command`+`]` |  
 | Focus le panneau précédent | `Control`+`[` | `Command`+`[` |  
 | Revenez à la [position d’ancrage][DevtoolsCustomizeIndexPlacement] que vous avez utilisée pour la dernière fois.  Si DevTools a été dans sa position par défaut pour l’ensemble de la session, ce raccourci détache DevTools dans une fenêtre séparée | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
@@ -65,11 +66,11 @@ Les raccourcis clavier suivants sont disponibles dans la plupart des panneaux de
 | Activer/désactiver le **mode d’élément Inspect** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Ouvrir le [menu de commandes][DevtoolsCommandMenuIndex] | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |  
 | Faire basculer le [tiroir][DevtoolsCustomizeIndexDrawer] | `Escape` | `Escape` |  
-| Rechargement normal | `F5` ou`Control`+`R` | `Command`+`R` |  
-| Chargement papier | `Control`+`F5`ou`Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
+| Rechargement normal | `F5` ou `Control`+`R` | `Command`+`R` |  
+| Chargement papier | `Control`+`F5` ou `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Rechercher du texte dans le panneau actuel.  Non pris en charge dans les panneaux **d’audit, d'** **application**et de **sécurité** | `Control`+`F` | `Command`+`F` |  
 | Ouvrir l’onglet **recherche** du [tiroir][DevtoolsCustomizeIndexDrawer]pour vous permettre de rechercher du texte sur toutes les ressources chargées | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Ouvrir un fichier dans le volet **sources** | `Control`+`O`ou`Control`+`P` | `Command`+`O`ou`Command`+`P` |  
+| Ouvrir un fichier dans le volet **sources** | `Control`+`O` ou `Control`+`P` | `Command`+`O` ou `Command`+`P` |  
 | Effectuer un zoom avant | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Zoom arrière | `Control`+`-` | `Command`+`-` |  
 | Restaurer le niveau de zoom par défaut | `Control`+`0` | `Command`+`0` |  
@@ -99,20 +100,20 @@ Les raccourcis clavier suivants sont disponibles dans la plupart des panneaux de
 |:--- |:--- |:--- |  
 | Accéder à la ligne où une valeur de propriété est déclarée | Mettre `Control` en attente, puis cliquez sur la valeur de la propriété | Mettre `Command` en attente, puis cliquez sur la valeur de la propriété |  
 | Parcourir les représentations RBGA, HSLA et Hex d’une valeur de couleur | Mettre `Shift` en attente, puis cliquez sur la zone **Aperçu couleur** en regard de la valeur | Mettre `Shift` en attente, puis cliquez sur la zone **Aperçu couleur** en regard de la valeur |  
-| Sélectionner la propriété ou la valeur suivante/précédente | Cliquez sur un nom ou une valeur de propriété, puis appuyez sur`Tab` / `Shift`+`Tab` | Cliquez sur un nom ou une valeur de propriété, puis appuyez sur`Tab` / `Shift`+`Tab` |  
-| Incrémenter/décrémenter une valeur de propriété de 0,1 | Cliquez sur une valeur, puis appuyez sur Alt + flèche vers le haut/`Alt`+`Down Arrow` | Cliquez sur une valeur, puis appuyez sur `Option` + `Up Arrow` /option + flèche vers le bas |  
-| Incrémenter/décrémenter une valeur de propriété de 1 | Cliquez sur une valeur, puis appuyez sur`Up Arrow` / `Down Arrow` | Cliquez sur une valeur, puis appuyez sur`Up Arrow` / `Down Arrow` |  
-| Incrémenter/décrémenter une valeur de propriété de 10 | Cliquez sur une valeur, puis appuyez sur`Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Cliquez sur une valeur, puis appuyez sur`Shift`+`Up Arrow` / `Shift`+`Down Arrow` |  
-| Incrémenter/décrémenter une valeur de propriété de 100 | Cliquez sur une valeur, puis appuyez sur`Control`+`Up Arrow` / `Control`+`Down Arrow` | Cliquez sur une valeur, puis appuyez sur`Command`+`Up Arrow` / `Command`+`Down Arrow` |  
+| Sélectionner la propriété ou la valeur suivante/précédente | Cliquez sur un nom ou une valeur de propriété, puis appuyez sur `Tab` / `Shift`+`Tab` | Cliquez sur un nom ou une valeur de propriété, puis appuyez sur `Tab` / `Shift`+`Tab` |  
+| Incrémenter/décrémenter une valeur de propriété de 0,1 | Cliquez sur une valeur, puis appuyez sur Alt + flèche vers le haut/ `Alt`+`Down Arrow` | Cliquez sur une valeur, puis appuyez sur `Option` + `Up Arrow` /option + flèche vers le bas |  
+| Incrémenter/décrémenter une valeur de propriété de 1 | Cliquez sur une valeur, puis appuyez sur `Up Arrow` / `Down Arrow` | Cliquez sur une valeur, puis appuyez sur `Up Arrow` / `Down Arrow` |  
+| Incrémenter/décrémenter une valeur de propriété de 10 | Cliquez sur une valeur, puis appuyez sur `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Cliquez sur une valeur, puis appuyez sur `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |  
+| Incrémenter/décrémenter une valeur de propriété de 100 | Cliquez sur une valeur, puis appuyez sur `Control`+`Up Arrow` / `Control`+`Down Arrow` | Cliquez sur une valeur, puis appuyez sur `Command`+`Up Arrow` / `Command`+`Down Arrow` |  
 
 ## Raccourcis clavier du panneau sources   
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
-| Suspendre le script Runtime \ (s’il est en cours d’exécution \) ou reprendre \ (si vous êtes en pause) | `F8` ou`Control`+`\` | `F8` ou`Command`+`\` |  
-| Étape au fil de l’appel de fonction suivante | `F10` ou`Control`+`'` | `F10` ou`Command`+`'` |  
-| Passer à l’appel de fonction suivante | `F11` ou`Control`+`;` | `F11` ou`Command`+`;` |  
-| Sortir de la fonction actuelle | `Shift`+`F11`ou`Control`+`Shift`+`;` | `Shift`+`F11`ou`Command`+`Shift`+`;` |  
+| Suspendre le script Runtime \ (s’il est en cours d’exécution \) ou reprendre \ (si vous êtes en pause) | `F8` ou `Control`+`\` | `F8` ou `Command`+`\` |  
+| Étape au fil de l’appel de fonction suivante | `F10` ou `Control`+`'` | `F10` ou `Command`+`'` |  
+| Passer à l’appel de fonction suivante | `F11` ou `Control`+`;` | `F11` ou `Command`+`;` |  
+| Sortir de la fonction actuelle | `Shift`+`F11` ou `Control`+`Shift`+`;` | `Shift`+`F11` ou `Command`+`Shift`+`;` |  
 | Accéder à une [ligne de code spécifique en pause][DevtoolsJavascriptBreakpointsLOC] | `Control`En attente, puis cliquez sur la ligne de code | `Command`En attente, puis cliquez sur la ligne de code |  
 | Sélectionner l’image d’appel ci-dessous ou au-dessus de l’image actuellement sélectionnée | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |  
 | Enregistrer les modifications apportées aux modifications locales | `Control`+`S` | `Command`+`S` |  
@@ -128,7 +129,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart des panneaux de
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
 | Supprimer tous les caractères du dernier mot, jusqu’au curseur | `Control`+`Delete` | `Option`+`Delete` |  
-| Ajouter ou supprimer un [point d’arrêt de ligne de code][DevtoolsJavascriptBreakpointsLOC] | Focalisez le curseur sur la ligne, puis appuyez sur`Control`+`B` | Focalisez le curseur sur la ligne, puis appuyez sur`Command`+`B` |  
+| Ajouter ou supprimer un [point d’arrêt de ligne de code][DevtoolsJavascriptBreakpointsLOC] | Focalisez le curseur sur la ligne, puis appuyez sur `Control`+`B` | Focalisez le curseur sur la ligne, puis appuyez sur `Command`+`B` |  
 | Atteindre le crochet correspondant | `Control`+`M` | `Control`+`M` |  
 | Basculer entre les commentaires d’une ligne. Si plusieurs lignes sont sélectionnées, DevTools ajoute un commentaire au début de chaque ligne. | `Control`+`/` | `Command`+`/` |  
 | Sélectionner/désélectionner l’occurrence suivante du mot sur lequel se trouve le curseur. Chaque occurrence est mise en surbrillance en même temps | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
@@ -156,7 +157,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart des panneaux de
 | Instruction Get Previous | `Up Arrow` | `Up Arrow` |  
 | Instruction Get suivante | `Down Arrow` | `Down Arrow` |  
 | Mettre le focus sur la **console** | `Control`+ `` ` `` | `Control`+`` ` `` |  
-| Effacement de la **console** | `Control`+`L` | `Command`+`K`ou`Option`+`L` |  
+| Effacement de la **console** | `Control`+`L` | `Command`+`K` ou `Option`+`L` |  
 | Forcer une entrée multiligne Notez que DevTools doit détecter par défaut les scénarios multilignes, ce qui signifie que ce raccourci est désormais généralement inutile | `Shift`+`Enter` | `Command`+`Return` |  
 | Exécution | `Enter` | `Return` |  
 | Développer toutes les sous-propriétés d’un objet connecté à la console | Maintenez la touche enfoncée `Alt` , puis cliquez sur **développer** ![ .][ImageExpandIcon] | Maintenez la touche enfoncée `Alt` , puis cliquez sur **développer** ![ .][ImageExpandIcon] |  

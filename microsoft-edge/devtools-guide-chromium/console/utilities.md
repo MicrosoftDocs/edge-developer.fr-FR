@@ -1,17 +1,18 @@
 ---
+description: Référence aux commandes de commodité disponibles dans la console Microsoft Edge DevTools.
 title: XXXXXX xxxxxxx xxx xxxxxxxxx
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: efa03e02813d718514f73445bc0dceb3a1a83f39
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: 2882d980e6da45072cab4b028ceb1838a9078064
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708803"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993106"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -47,13 +48,13 @@ Renvoie la valeur de l’expression évaluée le plus récemment.
 Dans l’illustration suivante, une expression simple \ ( `2 + 2` \) est évaluée.  La `$_` propriété est alors évaluée, qui contient la même valeur.  
 
 :::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-arithmatic.msft.png":::
-   Figure 1: `$_` l’expression la plus récente est évaluée  
+   Figure 1:  `$_` l’expression la plus récente est évaluée  
 :::image-end:::  
 
 Dans l’illustration suivante, l’expression évaluée contient initialement un tableau de noms.  Si vous évaluez la `$_.length` longueur de l’argument matrice, la valeur stockée dans `$_` les modifications devient la dernière expression évaluée `4` .  
 
 :::image type="complex" source="../media/console-array-length.msft.png" alt-text="$ _ change lorsque de nouvelles commandes sont évaluées" lightbox="../media/console-array-length.msft.png":::
-   Figure 2: `$_` modifications lors de l’évaluation de nouvelles commandes  
+   Figure 2:  `$_` modifications lors de l’évaluation de nouvelles commandes  
 :::image-end:::  
 
 ## Élément récemment sélectionné ou objet JavaScript  

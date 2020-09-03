@@ -1,17 +1,18 @@
 ---
+description: Découvrez comment afficher, modifier et supprimer les cookies HTTP pour une page à l’aide de Microsoft Edge DevTools.
 title: Afficher, modifier et supprimer des cookies avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: ecd8df7058bca4535d1f7da15ce1d500ef85aefe
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: eaaf4663504fc674fd70dc1ca9e0357febb529e0
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710370"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993239"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -80,13 +81,13 @@ Double-cliquez sur un champ pour le modifier.
 
 ## Supprimer les cookies  
 
-Sélectionnez un cookie et sélectionnez **supprimer** ![ la suppression sélectionnée ][ImageDeleteIcon] pour supprimer le cookie spécifique.  
+Sélectionnez un cookie et sélectionnez **supprimer** ![ la suppression sélectionnée ][ImageDeleteIcon]  pour supprimer le cookie spécifique.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Suppression d’un cookie spécifique" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    Figure 5: suppression d’un cookie spécifique  
 :::image-end:::  
 
-Pour supprimer tous les cookies, sélectionnez **Effacer tout** ![ Effacer tout ][ImageClearIcon] .  
+Pour supprimer tous les cookies, sélectionnez **Effacer tout** ![ Effacer tout ][ImageClearIcon]  .  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Effacement de tous les cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    Figure 6: suppression de tous les cookies  

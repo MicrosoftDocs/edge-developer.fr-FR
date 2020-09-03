@@ -1,17 +1,18 @@
 ---
+description: Découvrez comment afficher les données du cache à partir du panneau application de Microsoft Edge DevTools.
 title: Afficher les données du cache avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 7e7b4326204ce10732972c89b70c966e4bb665fb
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: c920a171ec89925cc79ab741eed01e11d749bf1b
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10983840"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993295"
 ---
 <!-- Copyright Kayce Basques 
 

@@ -1,4 +1,5 @@
 ---
+description: Affichage 3D, intégration de Visual Studio à Microsoft Edge, et bien plus encore.
 title: Nouveautés de DevTools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -6,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 10696a49a833475d59a6be1189362fdb0c26a96d
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: 9dd47a38f345601f2d459d39e3ee7b1728df8971
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991155"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993414"
 ---
 <!-- Copyright Kayce Basques 
 

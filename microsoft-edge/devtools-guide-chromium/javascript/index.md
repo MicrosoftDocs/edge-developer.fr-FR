@@ -1,17 +1,18 @@
 ---
+description: Découvrez comment utiliser Microsoft Edge DevTools pour rechercher et corriger les bogues JavaScript.
 title: Commencer à utiliser le débogage JavaScript dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 204d3033b65f82c6160a0d2c41a15d8eb62b4530
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: f8846388f92ba330940b4b6842964d96d9bbce4d
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982849"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993393"
 ---
 <!-- Copyright Kayce Basques 
 

@@ -1,17 +1,18 @@
 ---
+description: Référence complète des fonctionnalités du panneau réseau de Microsoft Edge DevTools.
 title: Référence d’analyse du réseau
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: ec8969fbf7b54512f00120ac4a253b952c55768f
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: 38570e6d196314aa6315a34f0b8b1b0b0d740c91
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10844018"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993617"
 ---
 <!-- Copyright Kayce Basques 
 

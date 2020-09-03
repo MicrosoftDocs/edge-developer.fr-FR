@@ -3,13 +3,13 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 08/17/2020
-ms.openlocfilehash: 8b3eb4db6ae55a063bf355b7342d57a41d739286
-ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
+ms.date: 09/01/2020
+ms.openlocfilehash: 5be994b091d0e4720fb091800f4fbdf2051c7a00
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "10942096"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992884"
 ---
 Utilisez les options suivantes pour discuter des nouvelles fonctionnalités et modifications du billet, ou tout autre sujet lié à DevTools.  
 

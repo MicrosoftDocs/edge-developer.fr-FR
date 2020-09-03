@@ -1,4 +1,5 @@
 ---
+description: Amélioration de l’accessibilité, utilisation du DevTools dans d’autres langues, etc.
 title: Nouveautés de DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -6,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 4f155a99d28d208bc288e3175b49c221684619a0
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: dcc6c97cfb355d654c596f4be29de6507174bebd
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991195"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993400"
 ---
 <!-- Copyright Kayce Basques 
 

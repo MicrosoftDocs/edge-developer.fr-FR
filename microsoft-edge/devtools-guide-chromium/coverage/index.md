@@ -1,17 +1,18 @@
 ---
+description: Recherche et analyse du code JavaScript et CSS inutilisé dans Microsoft Edge DevTools.
 title: Rechercher du code JavaScript et CSS inutilisé avec l’onglet couverture dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 1c03140199b26bca39e69cdfbe33cd1c524257fe
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 19bc15578e00e5a9f3389529f589e9790280a0e4
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981857"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993092"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -44,7 +45,7 @@ L’onglet couverture dans Microsoft Edge DevTools vous permet de rechercher du 
 > [!WARNING]
 > La recherche de code inutilisé est relativement simple.  Toutefois, la refactorisation d’un code base de telle sorte que chaque page expédie uniquement les scripts JavaScript et CSS dont il a besoin risque d’être difficile.  Ce guide ne traite pas de la refactorisation d’un code base pour éviter le code inutilisé, car ces derniers dépendent fortement de votre pile de technologie.  
 
-## Vue d'ensemble   
+## Présentation   
 
 L’expédition de code JavaScript ou CSS inutilisé est un problème courant du développement Web.  Par exemple, supposons que vous vouliez utiliser le [composant de bouton amorce][BootstrapButtons] sur votre page.  Pour utiliser le composant Button, vous devez ajouter un lien vers la feuille de style bootstrap dans votre code HTML, comme suit:  
 

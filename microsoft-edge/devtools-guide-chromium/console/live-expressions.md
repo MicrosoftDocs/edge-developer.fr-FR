@@ -1,17 +1,18 @@
 ---
+description: Si vous êtes en train de taper les mêmes expressions JavaScript dans la console à plusieurs reprises, essayez plutôt d’utiliser des expressions dynamiques.
 title: Regardez des valeurs d’expression JavaScript en temps réel avec des expressions dynamiques
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 39a7967a7dd1d0b34eb802d2879e04a64afd0dd0
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 6b66c44b77cd50bc0c1575e5eceb7c8d1a01b709
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10982234"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993113"
 ---
 <!-- Copyright Kayce Basques 
 

@@ -1,17 +1,18 @@
 ---
+description: Gardez votre code côté client lisible et déboguable même après l’avoir combiné, minify défini ou compilé.
 title: Mapper le code prétraité au code source
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 35aa864c20def5f5cd11979d6239e8316c1acbca
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: bd04c7bae6f57d4fe3f9b293d70775aa99db3dd1
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986142"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993232"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -111,7 +112,7 @@ Si vous développez le sous-panneau **sources** , vous voyez maintenant un nouve
    Utiliser `sourceURL`  
 :::image-end:::  
 
-## Contacter l’équipe Microsoft Edge DevTools
+## Contacter l’équipe DevTools MicrosoftEdge
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

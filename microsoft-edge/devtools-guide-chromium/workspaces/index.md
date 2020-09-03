@@ -1,17 +1,18 @@
 ---
+description: Découvrez comment enregistrer les modifications apportées dans DevTools sur disque.
 title: Modifier des fichiers avec des espaces de travail
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/20/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 8a31dd9fbfe492cf8eaacc654f7d501925f730f2
-ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
+ms.openlocfilehash: fd72021e75c536fa38c27ae17e4b1678eb4ca85f
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "10942183"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992721"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -39,7 +40,7 @@ ms.locfileid: "10942183"
 > *   [Utiliser DevTools pour apporter des modifications de base à CSS][DevToolsCssIndex]  
 > *   [Exécuter un serveur Web HTTP local][MDNSimpleLocalHTTPServer]  
 
-## Vue d'ensemble  
+## Présentation  
 
 Les espaces de travail vous permettent d’enregistrer les modifications que vous apportez dans devtools à une copie locale du même fichier sur votre ordinateur.  Pour ce didacticiel, vous devez disposer des paramètres suivants sur votre ordinateur.  
 

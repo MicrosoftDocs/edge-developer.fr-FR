@@ -1,17 +1,18 @@
 ---
+description: Référence complète des fonctionnalités d’accessibilité dans Microsoft Edge DevTools.
 title: Référence sur l’accessibilité
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: a338e78957d664a4552e5882f1ae7882f0eee89a
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: 39b0b8c36cea017b9976ea4e80e92ea93896a671
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986086"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993267"
 ---
 <!-- Copyright Kayce Basques 
 

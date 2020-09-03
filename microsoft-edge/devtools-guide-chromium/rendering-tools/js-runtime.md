@@ -1,17 +1,18 @@
 ---
+description: Identifiez les fonctions onéreuses à l’aide du volet Microsoft Edge DevTools Memory.
 title: Accélérer le runtime JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 801de4beeec29010ef63b2bcda950b57d4e544f7
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: 27afe999083470cde0cc0fabf76d0d1ab54e6562
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986184"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993582"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -140,7 +141,7 @@ Pointez sur une fonction pour afficher les données de nom et de minutage.  Les 
    Afficher les détails des fonctions dans le graphique  
 :::image-end:::  
 
-## Contacter l’équipe Microsoft Edge DevTools  
+## Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

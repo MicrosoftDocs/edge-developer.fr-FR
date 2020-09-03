@@ -1,17 +1,18 @@
 ---
+description: Découvrez comment utiliser Microsoft Edge DevTools pour afficher et modifier la feuille de style en cascade d’une page.
 title: Prise en main de l’affichage et de la modification de réplication Commerce Server
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 346145a7deb9e8ac951ed0578a5060da72817463
-ms.sourcegitcommit: a34858dd3260967ba9699842fa839c7a94775fe4
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: f055606ff6140652341627097e7fe7b270dc929c
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "10710384"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993064"
 ---
 <!-- Copyright Kayce Basques 
 

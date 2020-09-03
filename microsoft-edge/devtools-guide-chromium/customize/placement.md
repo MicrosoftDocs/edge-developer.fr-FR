@@ -1,17 +1,18 @@
 ---
+description: Pour déplacer Microsoft Edge DevTools en bas ou à gauche de votre fenêtre d’affichage, ou dans une fenêtre séparée.
 title: Changer la position de Microsoft Edge DevTools (détacher, ancrer en bas, ancrer à gauche)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: aaa6ef03f6abea27c84fb46db3d2a2f0f894339c
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: da7bd4ed23c54faac6d9fef9afbc78128f8cfd3c
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981915"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993008"
 ---
 <!-- Copyright Kayce Basques 
 

@@ -1,17 +1,18 @@
 ---
+description: Comment activer le thème sombre dans Microsoft Edge DevTools.
 title: Activer un thème foncé dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: cb5404ea088fa74890a6cb5027745cf59f4b2eac
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 4369d06fff8372677910e2807daa3b23c2c0e333
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10981795"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993022"
 ---
 <!-- Copyright Kayce Basques 
 

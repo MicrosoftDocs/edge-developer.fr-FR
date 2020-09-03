@@ -1,17 +1,18 @@
 ---
+description: Organisez les ressources par cadre, domaine, type ou d’autres critères.
 title: Afficher les ressources de page avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 4265841501bdd74d2976ecab1c2a07f1fb215535
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: 4f90927cc4044c722d9a62ab4b0427aa2753e4c5
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10984419"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993589"
 ---
 <!-- Copyright Kayce Basques 
 

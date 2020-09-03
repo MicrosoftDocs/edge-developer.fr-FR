@@ -2,16 +2,16 @@
 title: Recherchez et corrigez les problèmes liés à l’outil problèmes dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: d837723ed68c6d088e7b345ae86c7a0312b46496
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: bad9e9d99f0d2f3179784920fc334823289b9f99
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986128"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992819"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -109,7 +109,7 @@ L’outil de **problèmes** du tiroir devtools présente des avertissements de m
        `None` la valeur de la colonne **SameSite** pour le `ck02` cookie dans le volet **réseau** devtools  
     :::image-end:::  
 
-## Contacter l’équipe Microsoft Edge DevTools  
+## Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

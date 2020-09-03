@@ -1,17 +1,18 @@
 ---
+description: Déboguez à distance le contenu en direct sur un appareil Android à partir d’un ordinateur Windows ou macOS.
 title: Découvrir les appareils Android de débogage à distance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: c77633c4844f0e576b7dff6574000a78c8c083da
-ms.sourcegitcommit: f010f43604bd4363af6827f79dbc071b9afcb667
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: f1ed7c698f588bb4e438d1b85a0cd0d1aba42647
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "10708535"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993498"
 ---
 <!-- Copyright Kayce Basques 
 

@@ -1,17 +1,18 @@
 ---
+description: Les fonctionnalités de débogage de grille CSS, d’édition et de relecture avec la console réseau, etc.
 title: Nouveautés de DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/17/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: f569414a95336278c93b1bbafd57153ca902df12
-ms.sourcegitcommit: 29cbe0f464ba0092e025f502833eb9cc3e02ee89
+ms.openlocfilehash: 96ad9a4f21c36135013033fa4de31281fe6c4e83
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "10942197"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993610"
 ---
 # Nouveautés de DevTools (Microsoft Edge 85)  
 

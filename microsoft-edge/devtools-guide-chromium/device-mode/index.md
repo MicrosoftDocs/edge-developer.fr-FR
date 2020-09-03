@@ -1,17 +1,18 @@
 ---
+description: Utilisez des périphériques virtuels en mode appareil pour que Microsoft Edge crée de nouveaux sites pour le mobile.
 title: Simuler des appareils mobiles avec le mode appareil dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 6973f28a0cb530e8928976adb1354fa7471ee343
-ms.sourcegitcommit: 1251c555c6b4db8ef8187ed94d8832fdb89d03b8
+ms.openlocfilehash: eababe8112b5d888671a8955e16f0fe1c89564fb
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "10985260"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993015"
 ---
 <!-- Copyright Kayce Basques 
 

@@ -1,17 +1,18 @@
 ---
+description: Découvrez de nouveaux flux de travail pour l’affichage et la modification de feuilles CSS dans Microsoft Edge DevTools.
 title: Référence CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 908e32140d9deb89489089442055e188cd2d9378
-ms.sourcegitcommit: 054ad92f0b8f9a15da1e3aed32e8f4379b10860f
+ms.openlocfilehash: de0fb33e1e080045383f3c0fb50919297cbff5bc
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "10931348"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993071"
 ---
 <!-- Copyright Kayce Basques 
 

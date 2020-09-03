@@ -1,4 +1,5 @@
 ---
+description: Activez l’option marquer les scripts de contenu comme code de bibliothèque à partir des paramètres > code de la bibliothèque d’infrastructure.
 title: Marquer des scripts de contenu comme du code de bibliothèque
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -6,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: a5101cb8561a49ce6c271398f4c1a828984da9e3
-ms.sourcegitcommit: 2fa65cca74c5214601900579c0ce9f946ad8a27e
+ms.openlocfilehash: 517e0a4e944f32d41451a0a5d9d7baa91ff97212
+ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10991156"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10992791"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -40,7 +41,7 @@ Lorsque vous utilisez le panneau **sources** de Microsoft Edge devtools pour par
        Activer la case à cocher **marquer les scripts de contenu comme code de bibliothèque**  
     :::image-end:::  
     
-## Contacter l’équipe Microsoft Edge DevTools  
+## Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-devtools-team-note.md)]  
 
