@@ -7,12 +7,12 @@ ms.date: 08/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, expérience
-ms.openlocfilehash: 4915c909921bb4c5eaa8d727ab7a08493b941445
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: a5793b6f4b67add313958ad4b8cee01cb7b09dbf
+ms.sourcegitcommit: 7e3644e6b1d568ab795168e421c013814efa0073
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986121"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996158"
 ---
 # Fonctionnalités expérimentales  
 
@@ -46,24 +46,11 @@ Les sections suivantes décrivent les nouvelles fonctionnalités expérimentales
 
 | Fonctionnalités expérimentales | Version de Microsoft Edge |  
 |:--- |:--- |  
-| [Activer l’onglet Paramètres de raccourcis clavier personnalisés](#enable-custom-keyboard-shortcuts-settings-tab) | 84 ou version ultérieure |
 | [Activer les nouvelles fonctionnalités de débogage de grille CSS](#enable-new-css-grid-debugging-features) | 85 ou version ultérieure |  
 | [Activer la prise en charge du déplacement des onglets entre les panneaux](#enable-support-to-move-tabs-between-panels) | 85 ou version ultérieure |  
 | [Activer webhint](#enable-webhint) | 85 ou version ultérieure |  
 | [Activer la console réseau](#enable-network-console) | 85 ou version ultérieure |  
 | [Activer la visionneuse de commandes sources](#enable-source-order-viewer) | 86 ou version ultérieure |  
-
-### Activer l’onglet Paramètres de raccourcis clavier personnalisés  
-
-Propose une nouvelle page de **raccourcis** dans les [paramètres de devtools][DevToolsCustomizeSettings] qui permet d’associer des [raccourcis clavier][DevToolsShortcuts] dans devtools au [code Microsoft Visual Studio][VisualstudioCode].  
-
-Une fois que vous avez activé l’expérience, rouvrez les [paramètres de devtools][DevToolsCustomizeSettings] à l’aide de la sélection `Shift` + `?` .  Accédez à la page nouveau **raccourcis** .  Sélectionnez **devtools (par défaut)** dans le menu déroulant **correspondant aux raccourcis de** la liste déroulante, puis sélectionnez **Visual Studio code**.  Les raccourcis clavier dans le DevTools correspondent désormais aux raccourcis pour les actions équivalentes dans le code Visual Studio.  
-
-:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="./media/experiments-keyboard-shortcut.png":::
-   Faire correspondre les raccourcis clavier du DevTools au code Visual Studio  
-:::image-end:::  
-
-Par exemple, dans Windows, le raccourci clavier pour suspendre ou continuer à exécuter un script dans le [code Visual Studio][VisualstudioCodeShortcutsKeyboardWindows] est `F5` .  Avec la valeur prédéfinie **devtools (par défaut)** , le même raccourci dans devtools est `F8` .  Le raccourci est également associé au **code Visual Studio** prédéfini `F5` .  
 
 ### Activer les nouvelles fonctionnalités de débogage de grille CSS  
 
@@ -133,7 +120,7 @@ Après avoir activé l’expérience, assurez-vous de redémarrer l’DevTools. 
 ## Fonctionnalités expérimentales antérieures  
 
 *   la [vue 3D][Devtools3dViewIndex] est désormais disponible et activée par défaut dans Microsoft Edge version 83 ou ultérieure.  
-
+*   La [Personnalisation des raccourcis clavier][DevtoolsCustomKeyboardShortcuts] est désormais disponible et activée par défaut dans Microsoft Edge version 86 ou ultérieure.
 ## Fourniture de commentaires sur les fonctionnalités expérimentales  
 
 Pour transmettre des commentaires sur les expériences DevTools Microsoft Edge, ou tout autre élément associé à DevTools.  
@@ -152,10 +139,8 @@ Pour transmettre des commentaires sur les expériences DevTools Microsoft Edge, 
 [DevToolsCustomizeSettings]: ./customize/index.md#settings "Paramètres-personnaliser Microsoft Edge DevTools | Documents Microsoft"  
 [DevToolsShortcuts]: ./shortcuts.md "Raccourcis clavier dans Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsOpen]: ./open.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Personnaliser les raccourcis clavier dans Microsoft Edge DevTools | Documents Microsoft"
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
-
-[VisualstudioCode]: https://code.visualstudio.com "Code Microsoft Visual Studio"  
-[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Raccourcis clavier dans Visual Studio pour Windows | Code Microsoft Visual Studio"  
 
 [WebhintMain]: https://webhint.io "Astuce" 
