@@ -1,5 +1,5 @@
 ---
-description: Déboguez à distance Microsoft Edge sur les appareils Windows 10, de nouvelles méthodes d’accès aux paramètres, etc.
+description: Vous pouvez émuler les déficiences de la vision couleur, ancrer à gauche dans le menu de commande, etc.
 title: Nouveautés de DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 94b8d067738a1749f136edf2a562652bece183a9
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 8ce8979a7128217b72aee42c05a0048b511f9cae
+ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993428"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "11004327"
 ---
 <!-- Copyright Kayce Basques 
 
