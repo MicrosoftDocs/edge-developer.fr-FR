@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 08/20/2020
+  ms.date: 09/08/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 7b2bc99d1338737e2c1008225fd81915192db54e
-  ms.sourcegitcommit: 5ed791ed5423a3a4b03e8a1c7927f026307a6673
+  ms.openlocfilehash: 3d33b5a1e0e43269cd77b095f1516f5885fcf807
+  ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "10960706"
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "11004320"
 highlightedContent:
   items:
   - title: Microsoft Edge (canal stable officiel)
@@ -107,7 +107,7 @@ additionalContent:
       - text: Présentation de DevTools
         url: /microsoft-edge/devtools-guide-chromium
       - text: Nouveautés
-        url: /microsoft-edge/devtools-guide-chromium/whats-new/2019/12/devtools
+        url: /microsoft-edge/devtools-guide-chromium/whats-new/2020/08/devtools
       - text: Ouvrir DevTools
         url: /microsoft-edge/devtools-guide-chromium/open
       - text: DevTools pour les débutants
