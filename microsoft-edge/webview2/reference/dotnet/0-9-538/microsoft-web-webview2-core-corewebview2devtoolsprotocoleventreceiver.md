@@ -1,21 +1,23 @@
 ---
 description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos applications natives avec le contrôle Microsoft Edge WebView2
-title: Microsoft. Web. WebView2. Core. CoreWebView2DevToolsProtocolEventReceiver
+title: 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2DevToolsProtocolEventReceiver
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, application, Edge, CoreWebView2, CoreWebView2Controller, contrôle de navigateur, Edge html, Microsoft. Web. WebView2. Core. CoreWebView2DevToolsProtocolEventReceiver
-ms.openlocfilehash: 155b0ae414d03d7a062b1e3426331307457687ae
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: a3ba4a66ab48a7fb5d2184fa404365e77cb574a3
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878910"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011012"
 ---
-# Classe Microsoft. Web. WebView2. Core. CoreWebView2DevToolsProtocolEventReceiver 
+# 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2DevToolsProtocolEventReceiver 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 Espace de noms: Microsoft. Web. WebView2. Core \
 Assemblage: Microsoft.Web.WebView2.Core.dll

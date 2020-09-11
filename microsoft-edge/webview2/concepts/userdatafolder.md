@@ -3,17 +3,17 @@ description: Apprenez à gérer les dossiers de données utilisateur dans les ap
 title: Gestion du dossier des données utilisateur dans les applications WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge, dossier de données utilisateur
-ms.openlocfilehash: 4e10f589bc7866cd06e007d70c0dff941afc35cb
-ms.sourcegitcommit: 553957c101f83681b363103cb6af56bf20173f23
+ms.openlocfilehash: 5f341458a85bfab93bd2618b4d274ad6a1edefa2
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "10895503"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010739"
 ---
 # Gestion du dossier de données utilisateur  
 
@@ -28,7 +28,7 @@ Les dossiers de données utilisateurs sont créés automatiquement par WebView2.
 
 ## Créer des dossiers de données utilisateur  
 
-Pour spécifier l’emplacement du dossier de données de l’utilisateur, incluez le `userDataFolder` paramètre lors de l’appel à [ICoreWebView2Environment](../reference/win32/0-9-538/icorewebview2environment.md) \ (Win32 \) ou [CoreWebView2Environment](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md) \ (.net \).  Après la création, les données de navigateur de votre contrôle WebView2 sont stockées dans un sous-dossier de `userDataFolder` .  Lorsque `userDataFolder` n’est pas spécifié, WebView2 crée des dossiers de données utilisateur aux emplacements par défaut comme suit:  
+Pour spécifier l’emplacement du dossier de données de l’utilisateur, incluez le `userDataFolder` paramètre lors de l’appel à [ICoreWebView2Environment](../reference/win32/0-9-622/icorewebview2environment.md) \ (Win32 \) ou [CoreWebView2Environment](../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environment.md) \ (.net \).  Après la création, les données de navigateur de votre contrôle WebView2 sont stockées dans un sous-dossier de `userDataFolder` .  Lorsque `userDataFolder` n’est pas spécifié, WebView2 crée des dossiers de données utilisateur aux emplacements par défaut comme suit:  
 
 *   Pour les applications du Windows Store empaquetées, le dossier utilisateur par défaut est le sous `ApplicationData\LocalFolder` -dossier du dossier du package.  
 *   Pour les applications de bureau existantes, le dossier de données utilisateur par défaut est le chemin d’accès exe de votre application + `.WebView2` .  Au lieu d’utiliser la valeur par défaut, il est recommandé de spécifier un dossier de données utilisateur et de le créer dans le même dossier que celui où sont stockées toutes les autres données d’application.  
@@ -54,9 +54,9 @@ Les contrôles WebView2 risquent de partager les mêmes dossiers de données uti
 
 Prenez en considération les points suivants lors du partage de dossiers de données utilisateur:  
 
-1.  Lors de la recréation de contrôles WebView2 pour mettre à jour des versions de navigateur à l’aide d' [add_NewBrowserVersionAvailable](../reference/win32/0-9-538/icorewebview2environment.md#add_newbrowserversionavailable) \ (Win32 \) ou de [NewBrowserVersionAvailable](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md#newbrowserversionavailable) \ (.net \), assurez-vous que les processus de navigateur ferment et ferment WebView2 contrôles qui partagent le même dossier de données utilisateur.  Pour récupérer l’ID de processus du processus du navigateur, utilisez la `BrowserProcessId` propriété du contrôle WebView2.  
+1.  Lors de la recréation de contrôles WebView2 pour mettre à jour des versions de navigateur à l’aide d' [add_NewBrowserVersionAvailable](../reference/win32/0-9-622/icorewebview2environment.md#add_newbrowserversionavailable) \ (Win32 \) ou de [NewBrowserVersionAvailable](../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environment.md#newbrowserversionavailable) \ (.net \), assurez-vous que les processus de navigateur ferment et ferment WebView2 contrôles qui partagent le même dossier de données utilisateur.  Pour récupérer l’ID de processus du processus du navigateur, utilisez la `BrowserProcessId` propriété du contrôle WebView2.  
 
-2.  Les contrôles WebView2 qui partagent le même dossier de données utilisateur doivent utiliser les mêmes options pour [ICoreWebView2Environment](../reference/win32/0-9-538/icorewebview2environment.md) \ (Win32 \) ou [CoreWebView2Environment](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md) \ (.net \).  Si ce n’est pas le cas, la création de WebView2 échoue avec `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` .  
+2.  Les contrôles WebView2 qui partagent le même dossier de données utilisateur doivent utiliser les mêmes options pour [ICoreWebView2Environment](../reference/win32/0-9-622/icorewebview2environment.md) \ (Win32 \) ou [CoreWebView2Environment](../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environment.md) \ (.net \).  Si ce n’est pas le cas, la création de WebView2 échoue avec `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` .  
 
 Pour isoler différentes parties de votre application ou lorsque vous n’avez pas besoin de partager des données entre des contrôles WebView2, vous pouvez choisir d’utiliser différents dossiers de données utilisateur.  Par exemple, une application est composée de deux contrôles WebView2, l’un pour afficher une publicité et l’autre pour l’affichage du contenu de l’application.  Dans ce scénario, les développeurs peuvent choisir d’utiliser différents dossiers de données utilisateur pour chaque contrôle WebView2.  
 

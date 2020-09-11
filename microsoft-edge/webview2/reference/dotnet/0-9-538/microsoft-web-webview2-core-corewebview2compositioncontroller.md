@@ -1,21 +1,23 @@
 ---
 description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos applications natives avec le contrôle Microsoft Edge WebView2
-title: Microsoft. Web. WebView2. Core. CoreWebView2CompositionController
+title: 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2CompositionController
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, application, Edge, CoreWebView2, CoreWebView2Controller, contrôle de navigateur, Edge html, Microsoft. Web. WebView2. Core. CoreWebView2CompositionController
-ms.openlocfilehash: 1eb2498e05e2ec9fafa317f6108d022f7354c249
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 8dccf532bed55d91a1b9f4d1edb2831fc07d0f82
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10885281"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011096"
 ---
-# Classe Microsoft. Web. WebView2. Core. CoreWebView2CompositionController 
+# 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2CompositionController 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 

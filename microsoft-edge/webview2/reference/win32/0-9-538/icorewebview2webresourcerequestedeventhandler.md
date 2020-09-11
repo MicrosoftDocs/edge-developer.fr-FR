@@ -1,21 +1,23 @@
 ---
 description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos applications natives avec le contrôle Microsoft Edge WebView2
-title: WebView2 C++ Win32 ICoreWebView2WebResourceRequestedEventHandler
+title: 0.9.579-WebView2 C++ Win32 ICoreWebView2WebResourceRequestedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge, ICoreWebView2WebResourceRequestedEventHandler
-ms.openlocfilehash: 3cdafae6480a3bf6e3a5bf96f7e7fba1ae8cc77c
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: a1bf9e05e403df10fc8e45ff5b5bc19f28558e3c
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10884518"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010371"
 ---
-# interface ICoreWebView2WebResourceRequestedEventHandler 
+# 0.9.579-interface ICoreWebView2WebResourceRequestedEventHandler 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ```
 interface ICoreWebView2WebResourceRequestedEventHandler

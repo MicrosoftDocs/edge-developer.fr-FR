@@ -1,21 +1,23 @@
 ---
 description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos applications natives avec le contrôle Microsoft Edge WebView2
-title: Microsoft. Web. WebView2. Core. CoreWebView2AcceleratorKeyPressedEventArgs
+title: 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2AcceleratorKeyPressedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, application, Edge, CoreWebView2, CoreWebView2Controller, contrôle de navigateur, Edge html, Microsoft. Web. WebView2. Core. CoreWebView2AcceleratorKeyPressedEventArgs
-ms.openlocfilehash: ef1ca9707bba15fdaf8f37a306b56fdfc2c34588
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 0e0735dad942177326127432c151697869dc357e
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878980"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011089"
 ---
-# Classe Microsoft. Web. WebView2. Core. CoreWebView2AcceleratorKeyPressedEventArgs 
+# 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2AcceleratorKeyPressedEventArgs 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 Espace de noms: Microsoft. Web. WebView2. Core \
 Assemblage: Microsoft.Web.WebView2.Core.dll

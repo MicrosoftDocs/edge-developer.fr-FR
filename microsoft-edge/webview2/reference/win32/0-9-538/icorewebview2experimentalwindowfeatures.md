@@ -1,21 +1,23 @@
 ---
 description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos applications natives avec le contrôle Microsoft Edge WebView2
-title: WebView2 C++ Win32 ICoreWebView2ExperimentalWindowFeatures
+title: 0.9.579-WebView2 C++ Win32 ICoreWebView2ExperimentalWindowFeatures
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge, ICoreWebView2ExperimentalWindowFeatures
-ms.openlocfilehash: 2672f2aac842fd475f6148c439dbecdacd7793ee
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: ee740f7d227ae98d451ba1c5e8f1017fe92514a8
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10885402"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011369"
 ---
-# interface ICoreWebView2ExperimentalWindowFeatures 
+# 0.9.579-interface ICoreWebView2ExperimentalWindowFeatures 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
@@ -41,7 +43,7 @@ Fonctionnalités de fenêtre pour une fenêtre contextuelle WebView.
 [HasPosition](#hasposition) | A spécifié les valeurs Left et Top.
 [HasSize](#hassize) | A spécifié des valeurs de hauteur et de largeur.
 
-Ces champs correspondent à la valeur «windowFeatures» transmise à Window. ouvrir comme spécifié dans[https://developer.mozilla.org/en-US/docs/Web/API/Window/open#Window_features](https://developer.mozilla.org/en-US/docs/Web/API/Window/open#Window_features)
+Ces champs correspondent à la valeur «windowFeatures» transmise à Window. ouvrir comme spécifié dans [https://developer.mozilla.org/en-US/docs/Web/API/Window/open#Window_features](https://developer.mozilla.org/en-US/docs/Web/API/Window/open#Window_features)
 
 ## Ses
 

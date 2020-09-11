@@ -1,21 +1,23 @@
 ---
 description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos applications natives avec le contrôle Microsoft Edge WebView2
-title: Référence Microsoft. Web. WebView2. Core
+title: 0.9.579-Microsoft. Web. WebView2. Core
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/15/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, application, Edge, CoreWebView2, CoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: ab0a476f444b671b7042b5007aea59359d5377fc
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: 9d30c66453097effc4c42f5204df3d550157ff88
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10885253"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010818"
 ---
-# Référence (WebView2 Core)  
+# 0.9.579-référence (WebView2 principal)  
+
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]
 
 Le contrôle Microsoft Edge WebView2 vous permet d’héberger le contenu Web de votre application à l’aide de [Microsoft Edge \ (chrome \)](https://www.microsoftedgeinsider.com) en tant que moteur de rendu.  Pour plus d’informations, voir [vue d’ensemble de Microsoft Edge WebView2](../../index.md)) et [mise en route d’WebView2](../../gettingstarted/win32.md).  [Microsoft. Web. WebView2. Core. CoreWebView2](0-9-538/microsoft-web-webview2-core-corewebview2.md) est l’endroit idéal pour commencer à apprendre les détails de l’API.  
 

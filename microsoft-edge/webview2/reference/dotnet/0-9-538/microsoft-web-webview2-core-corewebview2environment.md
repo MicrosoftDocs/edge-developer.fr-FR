@@ -1,21 +1,23 @@
 ---
 description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos applications natives avec le contrôle Microsoft Edge WebView2
-title: Microsoft. Web. WebView2. Core. CoreWebView2Environment
+title: 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2Environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, application, Edge, CoreWebView2, CoreWebView2Controller, contrôle de navigateur, Edge html, Microsoft. Web. WebView2. Core. CoreWebView2Environment
-ms.openlocfilehash: 6b03997c8bd76137b20bb71edfd0d57b3686914a
-ms.sourcegitcommit: e0cb9e6f59f222fade6afa4829c59524a9a9b9ff
+ms.openlocfilehash: d1e30c17239eb1b609eb3f2c63e48a3a59616131
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "10885288"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11011026"
 ---
-# Classe Microsoft. Web. WebView2. Core. CoreWebView2Environment 
+# 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2Environment 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 Espace de noms: Microsoft. Web. WebView2. Core \
 Assemblage: Microsoft.Web.WebView2.Core.dll

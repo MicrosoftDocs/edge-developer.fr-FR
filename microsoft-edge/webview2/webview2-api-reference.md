@@ -3,17 +3,17 @@ description: Héberger le contenu Web de votre application Win32 avec le contrô
 title: Référence sur l’API Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur
-ms.openlocfilehash: 261bf55bf868c77ecd3db3c1e6302271c211f1ce
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: f6417b543191c923c89af2e17a59f4505cc82a7d
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882757"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010137"
 ---
 # Référence sur l’API Microsoft Edge WebView2  
 
@@ -23,8 +23,8 @@ Sélectionnez la langue et l’infrastructure de WebView2 que vous voulez utilis
 
 ## Langages et infrastructures  
 
-*   [Win32 C++](reference/win32/0-9-538-reference-webview2.md)  
+*   [Win32 C++](reference/win32/0-9-622-reference-webview2.md)  
 *   .NET  
-    *   [Core](reference/dotnet/0-9-538-reference-webview2.md)  
+    *   [Core](reference/dotnet/0-9-628-reference-webview2.md)  
     *   [WindowsForms](reference/winforms/0-9-515-reference-webview2.md)  
     *   [WPF](reference/wpf/0-9-515-reference-webview2.md)  

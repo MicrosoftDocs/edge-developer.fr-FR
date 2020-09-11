@@ -1,21 +1,23 @@
 ---
 description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos applications natives avec le contrôle Microsoft Edge WebView2
-title: Microsoft. Web. WebView2. Core. CoreWebView2ProcessFailedEventArgs
+title: 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2ProcessFailedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, application, Edge, CoreWebView2, CoreWebView2Controller, contrôle de navigateur, Edge html, Microsoft. Web. WebView2. Core. CoreWebView2ProcessFailedEventArgs
-ms.openlocfilehash: 155ec08d8a7e87741690eb32fe8054fa89fa38c3
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: d8c460a515486e4242ba4eacd45ce30d0ca61896
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10878728"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010929"
 ---
-# Classe Microsoft. Web. WebView2. Core. CoreWebView2ProcessFailedEventArgs 
+# 0.9.579-Microsoft. Web. WebView2. Core. CoreWebView2ProcessFailedEventArgs 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 Espace de noms: Microsoft. Web. WebView2. Core \
 Assemblage: Microsoft.Web.WebView2.Core.dll

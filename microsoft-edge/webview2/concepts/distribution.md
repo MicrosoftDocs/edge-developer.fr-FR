@@ -3,21 +3,21 @@ description: Options de distribution lors de la publication d’une application 
 title: Distribution de l’application Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge
-ms.openlocfilehash: 1b7ebf9dde594b7cdac3b41915fa9d9187d09da1
-ms.sourcegitcommit: f6764f57aed9ab7229e4eb6cc8851d0cea667403
+ms.openlocfilehash: 3536b749c8a3389b5e247e42f53abf74a9e3281e
+ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10879176"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11010767"
 ---
 # Distribution d’applications à l’aide de WebView2  
 
-Le contrôle WebView2 utilise la plate-forme Microsoft Edge (chrome).  Lors du packaging et de la distribution de votre application, assurez-vous qu’une copie de la plateforme ou du runtime WebView2 est présente avant le démarrage de l’application.  La page suivante décrit comment vous \ (le développeur \) est en mesure de s’assurer que le runtime WebView2 est installé et qu’il utilise les deux modes de distribution de votre application WebView2: [persistant](#evergreen-distribution-mode) et [version corrigée](#fixed-version-distribution-mode).  
+Le contrôle WebView2 utilise la plate-forme Microsoft Edge (chrome).  Lors du packaging et de la distribution de votre application, assurez-vous qu’une copie de la plateforme ou du runtime WebView2 est présente avant le démarrage de l’application.  La page suivante décrit comment vous \ (le développeur \) est en mesure de s’assurer que le runtime WebView2 est installé et qu’il utilise les deux modes de distribution de votre application WebView2:  [persistant](#evergreen-distribution-mode) et [version corrigée](#fixed-version-distribution-mode).  
 
 ## Mode de distribution persistant  
 
@@ -39,7 +39,7 @@ Il existe plusieurs canaux WebView2 que les applications peuvent utiliser en tan
 > [!IMPORTANT]
 > Le canal stable Microsoft Edge n’est pas une cible valide pour WebView2 et les raisons sont décrites ultérieurement.  
 
-Pour plus d’informations sur le contrôle de version, voir contrôle de [version][ConceptsVersioning] et [Global][ReferenceWin3209538WebviewIdl].  
+Pour plus d’informations sur le contrôle de version, voir contrôle de [version][ConceptsVersioning] et [Global][ReferenceWin3209622WebviewIdl].  
 
 ### Comprendre le runtime et le programme d’installation WebView2 (Preview)  
 
@@ -54,7 +54,7 @@ Les développeurs sont recommandés pour s’assurer que le runtime WebView2 per
 
 1.  Téléchargez la dernière version du [programme d’installation WebView2 Runtime][Webview2Installer].  
 1.  Incluez le programme d’installation dans le programme d’installation ou de mise à jour de votre application.  
-1.  Lors de l’installation ou de la mise à jour de votre application, vérifiez si le runtime WebView2 persistant est déjà installé sur l’ordinateur de l’utilisateur, en utilisant l’API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-538/webview2-idl.md#getavailablecorewebview2browserversionstring) et en vérifiant si versionInfo a la valeur null. Si ce n’est pas le cas, le programme d’installation/mise à jour de l’application peut appeler en silence le programme d’installation d’exécution à partir d’un processus élevé ou d’une invite de commandes avec `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
+1.  Lors de l’installation ou de la mise à jour de votre application, vérifiez si le runtime WebView2 persistant est déjà installé sur l’ordinateur de l’utilisateur, en utilisant l’API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) et en vérifiant si versionInfo a la valeur null. Si ce n’est pas le cas, le programme d’installation/mise à jour de l’application peut appeler en silence le programme d’installation d’exécution à partir d’un processus élevé ou d’une invite de commandes avec `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install` . 
 
 Selon votre situation, il est possible que vous deviez modifier le flux de travail ci-dessus.  Par exemple, le programme d’installation de votre application risque de télécharger le programme d’installation persistant WebView2 Runtime au lieu de l’inclure dans votre package d’application.  
 
@@ -79,6 +79,6 @@ Dans le cas d’environnements restreints, il est prévu de prendre en charge un
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "Présentation des versions de navigateur et de WebView2 | Documents Microsoft"  
-[ReferenceWin3209538WebviewIdl]: ../reference/win32/0-9-538/webview2-idl.md  "Globales | Documents Microsoft"  
+[ReferenceWin3209622WebviewIdl]: ../reference/win32/0-9-622/webview2-idl.md  "Globales | Documents Microsoft"  
 
 [Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "Programme d’installation de WebView2"  
