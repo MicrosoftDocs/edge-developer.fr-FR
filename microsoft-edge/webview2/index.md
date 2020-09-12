@@ -1,5 +1,5 @@
 ---
-description: Héberger le contenu Web de votre application Win32 avec le contrôle WebView 2 de Microsoft Edge
+description: Héberger du contenu Web dans vos applications Win32, .NET et UWP avec le contrôle Microsoft Edge WebView2
 title: Contrôle Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,13 +7,13 @@ ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge, Windows Forms, WinForms, WPF, .NET
-ms.openlocfilehash: bb2287ca854372d9592a3b90c7df6f9a8abf620e
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, contrôle de navigateur, HTML de bord, Windows Forms, WinForms, WPF, .NET, WinUI, Project REUNION
+ms.openlocfilehash: d3294ce72237a323113ed9f7c8f31e37af43f5e6
+ms.sourcegitcommit: efdc6369c48942bfa39e45c713300ed70f0e3655
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926469"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "11013743"
 ---
 # Introduction à Microsoft Edge WebView2 (Preview)  
 
@@ -107,10 +107,11 @@ Un aperçu du développeur est disponible sur les environnements de programmatio
 
 Vous pouvez exécuter des applications WebView2 sur les versions suivantes de Windows.  
 
-*   Windows 10  
+*   Windows10  
 *   Windows 8.1  
 *   Windows8  
 *   Windows7  
+*   Windows Server2019  
 *   Windows Server2016  
 *   Windows Server2012  
 *   Windows Server 2012R2  
