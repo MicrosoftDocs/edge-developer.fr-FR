@@ -3,21 +3,20 @@ description: Livre blanc sur la confidentialité MicrosoftEdge
 title: Livre blanc sur la confidentialité MicrosoftEdge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/03/2020
+ms.date: 09/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
-ms.technology: browser
 keywords: Microsoft Edge, confidentialité, livre blanc, confiance
 ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: ff4d2b9a10e225478aaacbe0b70604a730172187
-ms.sourcegitcommit: 01940d5708339b03debc14001596f560cc9ab75a
+ms.openlocfilehash: 35227178a909ae6b378c4a17f578bac364f551c7
+ms.sourcegitcommit: ad02b0a3159eb9f111a580d1c229cb4297467210
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "10903872"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009244"
 ---
 # Livre blanc sur la confidentialité MicrosoftEdge  
 
@@ -76,6 +75,8 @@ Vous pouvez collecter des sites, du texte et des images sur le Web et organiser 
 Toutes les 24 heures, Microsoft Edge télécharge la liste des sites pris en charge pour lesquels des modèles d’extraction d’entité spéciaux existent.  Les modèles sont spécifiques à chaque site Web.  Lorsque vous créez un élément dans votre collection, Microsoft Edge vérifie que le site à partir duquel vous créez le nouvel élément de collection figure dans la liste des sites pris en charge.  Si le site figure dans la liste, Microsoft Edge teste le service d’extraction d’entité pour le modèle du site spécifique.  Aucun identificateur d’utilisateur n’est associé à la demande au service.  Le modèle tente d’identifier le nom, le prix, les évaluations, l’image principale et d’autres données sur l’élément collecté.  Si le site à partir duquel vous créez un nouvel élément de collection ne figure pas sur le site de liste pris en charge, Microsoft Edge ne télécharge pas de modèle.  Les modèles activent la création de tous les éléments de collection localement sur l’appareil.  Aucune donnée sur les éléments de collection n’est envoyée au service pour créer la collection.  
 
 Pour supprimer les modèles stockés sur l’appareil et effacer les données du cache, accédez à `edge://settings/privacy`, puis sous **Effacer les données de la navigation** en regard de **Effacer les données de navigation maintenant** sélectionnez le bouton **Choisir ce qui doit être effacé**, sélectionnez la plage horaire et le type de données souhaités, puis sélectionnez le bouton **Effacer maintenant**.  Une autre méthode pour supprimer des données mises en cache, accédez à `edge://settings/clearBrowserData` sélectionnez la plage horaire souhaitée et le type de données, puis sélectionnez le bouton **Effacer maintenant**.  
+
+Pour vous aider à obtenir les meilleures conditions lors de vos achats et de l'utilisation des collections, si vous ajoutez des produits à vos collections, Microsoft Edge vous offrira la possibilité de comparer le prix du produit à celui d'autres détaillants.  Si vous sélectionnez comparer les prix aux autres détaillants, Microsoft Edge enverra le nom du produit, le domaine d’achat, le prix et d’autres informations sur le produit à Bing pour comparer les prix aux autres détaillants.  Les informations sur les produits dans les collections seront envoyées via HTTPs. Ces appels HTTPs ne contiennent aucun identifiant d'utilisateur.  
 
 Si vous activez le paramètre**Afficher les suggestions de Pinterest dans les collections**, si vous voulez que les collections effectuent une recherche Microsoft Bing à l’aide du titre de votre collection pour rechercher des pages de rubriques Pinterest pertinentes.  Microsoft Edge n’envoie pas de données sur vos collections à Pinterest.  Pour supprimer les suggestions et arrêter les recherches de pages de rubriques Pinterest, accédez à `edge://settings/privacy` et désactivez le paramètre **Afficher les suggestions de Pinterest dans les collections**.  
 
@@ -257,7 +258,9 @@ Microsoft Edge utilise un service de temps réseau Microsoft pour effectuer le s
 
 ## Page Nouvel onglet  
 
-Microsoft Edge fournit une expérience de nouvelle page d’onglet attrayante et centrée sur l’utilisateur avec une zone de recherche optimisée par [Bing][|::ref2::|Main], des vignettes de liens rapides pour les sites que vous visitez le plus fréquemment, ainsi que du contenu pertinent provenant de Microsoft News ou Office 365.  Personnalisez l’apparence de la page Nouvel onglet en sélectionnant le bouton Personnaliser.  Vos préférences de page d’onglets sont définies pour chaque profil et stockées localement sur votre appareil, et les préférences ne sont pas synchronisées sur plusieurs appareils.  
+Microsoft Edge fournit une expérience de nouvelle page d’onglet attrayante et centrée sur l’utilisateur avec une zone de recherche optimisée par [Bing][|::ref2::|Main], des vignettes de liens rapides pour les sites que vous visitez le plus fréquemment, ainsi que du contenu pertinent provenant de Microsoft News ou Office 365.  Personnalisez l’apparence de la page Nouvel onglet en sélectionnant le bouton Personnaliser.  Vos préférences de page d’onglets sont définies pour chaque profil et stockées localement sur votre appareil, et les préférences ne sont pas synchronisées sur plusieurs appareils.
+
+Pour améliorer les temps de chargement de la nouvelle page à onglet, la nouvelle page à onglet de Microsoft peut être chargée en arrière-plan pour la rendre plus rapide. Le contenu chargé peut inclure des cookies, si vous autorisez les cookies. Pour désactiver le chargement de la page de l’onglet nouveau de Microsoft en arrière-plan, accédez à `edge://settings/newTabPage` et désactivez le paramètre **Préchargez la page de l’onglet nouveau afin d’obtenir une expérience plus rapide.** 
 
 :::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text="Page Nouvel onglet" lightbox="./media/whitepaper-media/n-t-p1.png":::
    Page Nouvel onglet  
@@ -417,8 +420,8 @@ Pour résoudre les fautes de frappe d’URL dans la barre d’adresses qui gén�
 
 La connexion à Microsoft Edge avec un compte Microsoft vous permet de synchroniser vos données de navigation entre toutes vos versions de Microsoft Edge.  Vous pouvez synchroniser vos favoris, paramètres, données de remplissage de formulaire \ (adresses et autres \), mots de passe, extensions et Collections.  Vous devez autoriser l’activation de la synchronisation dans Microsoft Edge. Chaque type de données synchronisé peut être activé ou désactivé individuellement.  Les favoris incluent les onglets que vous avez précédemment définis dans la version héritée de Microsoft Edge, qui sont synchronisés avec le reste de vos favoris.  Les favoris ou autres données supprimés ou modifiés d’une version de Microsoft Edge synchronisée avec toutes les autres versions connectées de Microsoft Edge où la synchronisation est activée.  Pour gérer les configurations de synchronisation, accédez à `edge://settings/profiles/sync`.  Vos paramètres de synchronisation peuvent être gérés par votre organisation.
 
-:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Sync" lightbox="./media/whitepaper-media/sync.png":::
-   Sync  
+:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Image du paramètre de synchronisation défini sur activé" lightbox="./media/whitepaper-media/sync.png":::
+   Le paramètre de synchronisation est activé
 :::image-end:::  
 
 Pour que la synchronisation fonctionne, des données supplémentaires sur la connectivité et la configuration des appareils sont nécessaires pour assurer l’expérience de synchronisation (par exemple, le nom de votre appareil, la création et le modèle).  Les données peuvent être supprimées à partir du [Tableau de bord d’appareil Microsoft][MicrosoftAccountDevices].  Pour gérer vos favoris synchronisés, accédez à `edge://favorites`.  Pour gérer tous les autres types de données, accédez à `edge://settings/profiles`.  
@@ -426,6 +429,12 @@ Pour que la synchronisation fonctionne, des données supplémentaires sur la con
 Toutes les données synchronisées sont cryptées en transit sur HTTPs lors du transfert entre le navigateur et les serveurs Microsoft.  Les données synchronisées sont également stockées dans un état chiffré sur les serveurs Microsoft.  Les types de données sensibles, tels que les adresses et les mots de passe, sont chiffrés sur l’appareil avant d’être synchronisés.  Si vous utilisez un compte professionnel ou scolaire, tous les types de données sont chiffrés avant d’être synchronisés à l’aide de Microsoft information protection.  Tous les autres types de données synchronisées sont stockés jusqu’à ce que vous supprimiez les données, ou le compte est supprimé ou le compte devient inactif.  Un ID de compte est joint à toutes les données synchronisées, car l’ID est nécessaire pour effectuer une synchronisation sur plusieurs appareils. 
 
 Les données de navigation en mode InPrivate et invité ne sont pas synchronisées avec votre compte Microsoft.  Toutefois, les favoris créés pendant les sessions InPrivate sont synchronisés avec vos versions de Microsoft Edge connectées où la synchronisation est activée.  
+
+## Conseils et recommandations
+
+Microsoft Edge souhaite vous fournir des conseils et recommandations pertinents pour optimiser l’expérience d’utilisation du navigateur.  Microsoft Edge utilise les données de connectivité et de configuration des appareils disponibles pour fournir des conseils et recommandations pertinents.  Ces données comportent votre système d’exploitation, vos paramètres régionaux, vos paramètres de navigateur et d’autres données de connectivité et de configuration d’appareils.  Les données sont envoyées avec un identificateur réinitialisable propre à votre navigateur.  Pour les appareils Windows 10 pendant la configuration de Microsoft Edge, nous respectons les expériences personnalisées de Windows.  [En savoir plus sur les expériences personnalisées dans Windows] [https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy].  
+
+Ces données ne sont pas envoyées pendant la navigation InPrivate ou le mode invité.  
 
 ## Protection contre le suivi  
 
