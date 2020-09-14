@@ -256,6 +256,8 @@
               href: devtools-guide-chromium/customize/placement.md
             - name: Correspondance de la langue du navigateur
               href: devtools-guide-chromium/customize/localization.md
+            - name: Raccourcis
+              href: devtools-guide-chromium/customize/shortcuts.md
     - name: DevTools (EdgeHTML)
       href: devtools-guide.md
       items:
