@@ -3,16 +3,16 @@ description: Étapes de création d’un compte de développeur Microsoft Edge a
 title: Présentation et état de la soumission d’extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-chrome, développement d’extensions, extensions de navigateur, compléments, Centre des partenaires, développeur
-ms.openlocfilehash: 3bb648ee9db062bcb12f7592df752ab25d8322b5
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: 028112f958656a705c7b52fa3a7bbfa49a1a0f79
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882645"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015730"
 ---
 # Présentation et état de la soumission d’extension  
 
@@ -26,7 +26,7 @@ La page de la vue d’ensemble du Centre des partenaires affiche l’état de vo
 | n°4|  Dans le Windows Store |  Une fois l’examen terminé et votre extension publiée sur le Microsoft Store, l’état passe à cet État.  <br />  Votre extension est disponible sur la boutique Microsoft dans les marchés que vous avez spécifiés.  |  
 | n°5 |  Dans le Windows Store.  Mise à jour à l’avis |  Votre extension est publiée sur le Microsoft Store et vous avez soumis une mise à jour examinée par Microsoft.  |  
 | 6 |  Échec de la révision |  Si votre extension ne fait pas l’un des avis, l’état passe à cet État.  <br />  Un examen en échec risque de se produire lors de la révision initiale ou lors d’une mise à jour.  <br />  Vous devez effectuer une action corrective et renvoyer votre extension pour la publication sur le Microsoft Store.  |  
-| 6 |  Non disponible dans le Windows Store |  Il existe trois scénarios possibles lorsque votre extension affiche cet État: non **publié du Store** , **supprimé du Store**et **bloqué**.  La description de chacun de ces trois est indiquée ci-dessous.  |  
+| 6 |  Non disponible dans le Windows Store |  Il existe trois scénarios possibles lorsque votre extension affiche cet État: non  **publié du Store** , **supprimé du Store**et **bloqué**.  La description de chacun de ces trois est indiquée ci-dessous.  |  
 | version8 |  Non publié du Store |  Vous avez annulé votre extension du Microsoft Store dans le Centre des partenaires.  <br />  Dans le centre de partenaires, sur votre page de soumission d’extensions, vous avez cliqué sur le bouton Annuler la publication.  <br />  Après la dépublication, votre extension n’est plus disponible sur le Microsoft Store pour permettre aux nouveaux utilisateurs de procéder au téléchargement, mais les utilisateurs existants peuvent continuer à utiliser leurs copies de votre extension.  |  
 | 09 |  A supprimé du Store |  Si votre extension est trouvée pour violer les conditions générales de la boutique Microsoft, Microsoft peut la supprimer de la boutique Microsoft et l’état passe à cet État.  <br />  Après la suppression de votre poste par Microsoft, votre extension n’est plus disponible sur le Microsoft Store pour permettre aux nouveaux utilisateurs d’être téléchargés, mais les utilisateurs existants peuvent continuer à utiliser leurs copies de votre extension.  |  
 | 0,10 |  Élément bloqué |  Si votre poste est considéré comme malveillant et compromettant la sécurité et la confidentialité des utilisateurs, Microsoft a le droit de bloquer votre extension du Microsoft Store et l’état passe à cet État.  <br />  Si votre extension est bloquée, votre extension est supprimée de la boutique Microsoft, votre extension est également supprimée des appareils des utilisateurs.  |  

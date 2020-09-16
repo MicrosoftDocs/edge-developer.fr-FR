@@ -3,16 +3,16 @@ description: Extensions de la stratégie de sécurité du contenu pour les exten
 title: Stratégie de sécurité du contenu (CSP)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-chrome, développement d’extensions, extensions de navigateur, compléments, Centre des partenaires, développeur
-ms.openlocfilehash: 52d6d0afb38401250183788726013d521a269f06
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: f3769639465d048c42ad0705f74598fbd1db8a20
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565406"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015715"
 ---
 # Stratégie de sécurité du contenu \ (CSP \)  
 
@@ -194,7 +194,7 @@ Téléchargez le fichier, incluez-le dans votre package, puis écrivez:
 
 As of Chrome 46, -->  
 
-Les scripts inline peuvent être autorisés en spécifiant le hachage encodé en base64 du code source de la stratégie.  Ce hachage doit être préfixé à l’aide de l’algorithme de hachage utilisé \ (SHA256, SHA384 ou SHA512 \).  Pour obtenir un exemple, voir [utilisation de hachage pour \ <script \ > éléments][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] .  
+Les scripts inline peuvent être autorisés en spécifiant le hachage encodé en base64 du code source de la stratégie.  Ce hachage doit être préfixé à l’aide de l’algorithme de hachage utilisé \ (SHA256, SHA384 ou SHA512 \).  Pour obtenir un exemple, voir [utilisation de hachage pour les \<script\> éléments][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] .  
 
 **Script distant**  
 

@@ -3,16 +3,16 @@ description: Extensions de la documentation sur les stratégies d’entreprise p
 title: Correspondance des modèles
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-chrome, développement d’extensions, extensions de navigateur, compléments, Centre des partenaires, développeur
-ms.openlocfilehash: 16f54fcdc127822e89e050c367a681d886b0c8d0
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 59427769a010ca774833a809d3025e7594634202
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565445"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015659"
 ---
 # Correspondance des modèles
 

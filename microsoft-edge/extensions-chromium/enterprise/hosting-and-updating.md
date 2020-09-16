@@ -3,22 +3,22 @@ description: Extensions d’Enterprise documentation pour les extensions de chro
 title: Hébergement et mise à jour
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-chrome, développement d’extensions, extensions de navigateur, compléments, Centre des partenaires, développeur
-ms.openlocfilehash: eb1f9921d503d25557fc9efb1517537e7a90f4aa
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: d918aec12e56daf66d13488d360a454d736031e8
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565448"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015701"
 ---
 # Hébergement et mise à jour du Web Store  
 
 La plupart des extensions sont hébergées dans le [catalogue Microsoft Edge Insider (Microsoft Edge Insider)][MicrosoftStoreExtensions] pour protéger au mieux les utilisateurs d’extensions malveillantes.  
 
-## Diffuser  
+## Hébergement  
 
 Toutes les extensions sont distribuées aux utilisateurs sous forme de fichier ZIP spécial avec le suffixe. CRX.  Les extensions hébergées dans les modules complémentaires Microsoft Edge sont téléchargées en tant que fichiers. zip. Le processus de publication convertit automatiquement le fichier zip en fichier. CRX.  
 

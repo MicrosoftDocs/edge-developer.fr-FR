@@ -3,20 +3,22 @@ description: Extensions démarrées 1ère partie
 title: Créez une extension simple qui s’affiche avec la NASA image du jour.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-chrome, développement Web, html, CSS, JavaScript, développeur, extensions
-ms.openlocfilehash: dd5c1dab0cb9b54b79be7d2728cb9bfde0945185
-ms.sourcegitcommit: 0bc1312a1e6a0ac37cf385201db4361fc05184fc
+ms.openlocfilehash: 826401869b98d339e9b156a3727d94bd1182063d
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10683622"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015764"
 ---
-# Créez une extension simple qui s’affiche avec la NASA image du jour.  
-
-[Source du package d’extension terminée pour cette partie][ArchiveExtensionGettingStartedPart1]  
+# Créez une extension simple qui s’affiche avec la NASA image du jour. 
+ 
+<!--  
+[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart1]  
+-->  
 
 ## Présentation  
 
@@ -161,10 +163,12 @@ La structure d’annuaire de l’exemple d’extension est affichée dans le sch
         └── popup.html
 ```  
 
+<!--  
 > [!NOTE]
-> Le `images/stars.jpeg` fichier listé dans l’image précédente est disponible dans le [Téléchargement zip][ArchiveExtensionGettingStartedPart1].  
+> The `images/stars.jpeg` file listed in the previous image is available in the [zip download][ArchiveExtensionGettingStartedPart1].  
+-->  
 
-C’est tout ce dont vous avez besoin pour créer une extension de travail.  C’est tout ce qu’il reste à tester.  
+C’est tout ce dont vous avez besoin pour créer une extension de travail.  Il ne reste plus qu’à le tester.  
 
 La section suivante explique comment charger l’extension \ (parfois appelée chargement sur le côté \) dans le navigateur Microsoft Edge \ (chrome \) pour la tester.  
 

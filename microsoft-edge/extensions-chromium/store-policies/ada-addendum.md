@@ -3,16 +3,16 @@ description: Addenda du développement Microsoft Edge
 title: Addenda ADA
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/11/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-chrome, développement d’extensions, extensions de navigateur, compléments, Centre des partenaires, développeur
-ms.openlocfilehash: 323ae9976d9f5d73d20a492cefc4be594315cf22
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 40147cd32f2dcd2c0069d34b5751305819834a22
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565407"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015666"
 ---
 # Addendum du contrat du développeur d’applications pour les utilisateurs du programme Microsoft Edge  
 

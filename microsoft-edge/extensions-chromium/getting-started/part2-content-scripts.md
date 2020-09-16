@@ -1,22 +1,24 @@
 ---
-description: Extensions démarrées 1ère partie
+description: Extensions mise en route partie 2
 title: Insérer dynamiquement une image de la NASA sous la balise du corps de la page à l’aide de scripts de contenu
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-chrome, développement Web, html, CSS, JavaScript, développeur, extensions
-ms.openlocfilehash: b37184f0188b72ec868ab3de3f2341c0694ee42c
-ms.sourcegitcommit: 0bc1312a1e6a0ac37cf385201db4361fc05184fc
+ms.openlocfilehash: 586f0427241e5f01b63a22ce204484dc5e8cf154
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "10683643"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015757"
 ---
 # Insérer dynamiquement une image de la NASA sous la balise du corps de la page à l’aide de scripts de contenu  
-  
-[Source du package d’extension terminée pour cette partie][ArchiveExtensionGettingStartedPart2]  
+
+<!--  
+[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]  
+-->  
 
 ## Présentation  
 
@@ -61,8 +63,8 @@ Tout d’abord, vous devez mettre à jour votre `popup.html` fichier à l’aide
 
 Après avoir effectué la mise à jour de votre extension et sélectionné l’icône de lancement de l’extension, vous disposez des fenêtres contextuelles suivantes avec un bouton d’affichage.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="affichage contextuelle. html après avoir appuyé sur l’icône d’extension":::
-   affichage contextuelle. html après avoir appuyé sur l’icône d’extension
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="Affichage popup.html après l’utilisation de l’icône d’extension":::
+   Affichage popup.html après l’utilisation de l’icône d’extension
 :::image-end:::
 
 <!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
@@ -139,7 +141,7 @@ Pour ce faire, vous devez ajouter une autre entrée dans le `manifest.json` fich
 
 Vous avez à présent rédigé le code dans votre `popup.js` fichier pour envoyer un message à la page de contenu qui est incorporée sur la page d’onglet actif actuelle, mais vous n’avez pas créé et injecté cette page de contenu.  Faites-le maintenant.  
 
-## Mise à jour de votre manifeste. JSON pour le contenu et l’accès Web  
+## Mise à jour de votre manifest.jspour l’accès au contenu et au Web  
 
 Les mises à jour `manifest.json` incluant les `content-scripts` et `web_accessible_resources` sont les suivantes.  
 
@@ -219,8 +221,8 @@ Quand un événement est traité par l’écouteur, la fonction qui est le premi
 
 À présent, lorsque vous naviguez vers n’importe quelle page et sélectionnez l’icône de votre **extension** , le menu contextuel s’affiche comme suit.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="affichage contextuelle. html après avoir appuyé sur l’icône d’extension":::
-   affichage contextuelle. html après avoir appuyé sur l’icône d’extension
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="Affichage popup.html après l’utilisation de l’icône d’extension":::
+   Affichage popup.html après l’utilisation de l’icône d’extension
 :::image-end:::
 
 <!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  

@@ -3,17 +3,17 @@ description: Incorporer des technologies Web (HTML, CSS et JavaScript) dans vos 
 title: Microsoft. Web. WebView2. Core. CoreWebView2Environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 09/11/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: Microsoft. Web. WebView2, Core, WebView2, WebView, dotnet, WPF, WinForms, application, Edge, CoreWebView2, CoreWebView2Controller, contrôle de navigateur, Edge html, Microsoft. Web. WebView2. Core. CoreWebView2Environment
-ms.openlocfilehash: c6b1f1c62da5aa5ef64693575abb9cb46ac13851
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 05b8a10c723ae57b2c95551f4d5043f3336eba3b
+ms.sourcegitcommit: 65db518273b3cd69f1b3c528809600719b9b70aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11011898"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016325"
 ---
 # Classe Microsoft. Web. WebView2. Core. CoreWebView2Environment 
 
@@ -28,15 +28,16 @@ Il s’agit de l’environnement WebView2.
 --------------------------------|---------------------------------------------
 [BrowserVersionString](#browserversionstring) | Les informations de la version du navigateur du CoreWebView2Environment actuel, y compris le nom du canal s’il ne s’agit pas du canal stable.
 [NewBrowserVersionAvailable](#newbrowserversionavailable) | NewBrowserVersionAvailable se déclenche quand une nouvelle version du navigateur Edge est installée et disponible pour une utilisation via WebView2.
+[CompareBrowserVersions](#comparebrowserversions) | Comparez les versions de navigateur pour déterminer si elles sont identiques ou différentes.
+[CreateAsync](#createasync) | Crée un environnement WebView2 persistant à l’aide de la version installée de Microsoft Edge.
 [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | Créer de manière asynchrone un nouveau WebView à utiliser avec l’hébergement visuel.
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | Créer de manière asynchrone un nouveau WebView.
 [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Créer un CoreWebView2PointerInfo vide.
 [CreateWebResourceResponse](#createwebresourceresponse) | Créer un objet de réponse aux ressources Web.
+[GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Obtenez les informations de la version du navigateur.
 [GetProviderForHwnd](#getproviderforhwnd) | Retourne le fournisseur UI Automation pour le CoreWebView2CompositionController correspondant au HWND donné.
 
 Les webvues créées à partir d’un environnement s’exécutent sur le processus de navigateur spécifié avec des paramètres d’environnement et des objets créés à partir d’un environnement doivent être utilisés dans le même environnement. Il n’est pas garanti que l’utilisation de ce dernier dans d’autres environnements est compatible et risque d’échouer. 
-
-Les webvues créées à partir d’un environnement s’exécutent sur le processus de navigateur spécifié avec des paramètres d’environnement et des objets créés à partir d’un environnement doivent être utilisés dans le même environnement. Il n’est pas garanti que l’utilisation de ce dernier dans d’autres environnements est compatible et risque d’échouer.
 
 ## Ses
 
@@ -57,6 +58,34 @@ NewBrowserVersionAvailable se déclenche quand une nouvelle version du navigateu
 Pour utiliser la nouvelle version du navigateur, vous devez créer un environnement et un WebView. Cet événement est déclenché uniquement pour la nouvelle version à partir du canal Edge à partir duquel le code est exécuté. S’il n’est pas exécuté avec des bords installés, aucun événement n’est déclenché.
 
 Dans la mesure où un dossier de données utilisateur ne peut être utilisé que par un seul processus de navigateur à la fois, si vous souhaitez utiliser le même dossier de données utilisateur dans les webaffichages à l’aide de la nouvelle version du navigateur, vous devez d’abord fermer l’environnement et les webvues qui utilisent la version antérieure du navigateur. Vous pouvez également demander à l’utilisateur de redémarrer l’application.
+
+#### CompareBrowserVersions 
+
+Comparez les versions de navigateur pour déterminer si elles sont identiques ou différentes.
+
+> public static int [CompareBrowserVersions](#comparebrowserversions)(chaîne version1, chaîne version2)
+
+Renvoie-1, 0 ou 1 selon que la première version est inférieure ou égale ou supérieure à la deuxième version comparée.
+
+Les données d’entrée peuvent utiliser directement le versionInfo obtenu à partir de GetAvailableCoreWebView2BrowserVersionString, les informations de canal seront ignorées.
+
+##### Parameters
+* `version1` Première version à comparer. 
+
+* `version2` Seconde version à comparer.
+
+#### CreateAsync 
+
+Crée un environnement WebView2 persistant à l’aide de la version installée de Microsoft Edge.
+
+> tâches asynchrones publiques< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md)  >  [CreateAsync](#createasync)(String browserExecutableFolder, String userDataFolder, CoreWebView2EnvironmentOptions options)
+
+##### Parameters
+* `browserExecutableFolder` Le chemin d’accès relatif au dossier qui contient la version fixe de WebView2 Runtime. 
+
+* `userDataFolder` userDataFolder peut être spécifié pour changer l’emplacement du dossier des données utilisateur par défaut pour WebView2. 
+
+* `options` Options permettant de créer un environnement WebView2.
 
 #### CreateCoreWebView2CompositionControllerAsync 
 
@@ -100,6 +129,17 @@ Créer un objet de réponse aux ressources Web.
 
 Les en-têtes sont les chaînes d’en-tête de réponse brutes délimitées par NewLine. Il est également possible de créer cet objet avec une chaîne d’en-têtes vide, puis d’utiliser le CoreWebView2HttpResponseHeaders pour créer des en-têtes à l’aide de la fonction ligne. Pour plus d’informations sur les autres paramètres, voir CoreWebView2WebResourceResponse.
 
+#### GetAvailableBrowserVersionString 
+
+Obtenez les informations de la version du navigateur.
+
+> [GetAvailableBrowserVersionString](#getavailablebrowserversionstring)de chaîne statique publique (chaîne browserExecutableFolder)
+
+Vous obtenez également le nom du canal si le canal n’est pas un canal stable. Si vous utilisez le runtime WebView2, aucun nom de canal n’est retourné.
+
+##### Parameters
+* `browserExecutableFolder` Le chemin d’accès relatif au dossier qui contient la version fixe de WebView2 Runtime.
+
 #### GetProviderForHwnd 
 
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
@@ -107,4 +147,3 @@ Les en-têtes sont les chaînes d’en-tête de réponse brutes délimitées par
 Retourne le fournisseur UI Automation pour le CoreWebView2CompositionController correspondant au HWND donné.
 
 > [GetProviderForHwnd](#getproviderforhwnd)d’objet public (IntPtr hwnd)
-

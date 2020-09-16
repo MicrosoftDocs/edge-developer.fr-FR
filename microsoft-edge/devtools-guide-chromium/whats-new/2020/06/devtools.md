@@ -3,22 +3,22 @@ description: Les fonctionnalités de débogage de grille CSS, d’édition et de
 title: Nouveautés de DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 96ad9a4f21c36135013033fa4de31281fe6c4e83
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 01651bdf0f36f7c175f843655c275695a680b6c1
+ms.sourcegitcommit: b337717957529239434b4e8e1e167aebf0543518
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993610"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015460"
 ---
 # Nouveautés de DevTools (Microsoft Edge 85)  
 
 ## Annonces de l’équipe Microsoft Edge DevTools  
 
-Les sections suivantes répertorient les annonces que vous pouvez avoir manquées dans l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités dans les extensions de code DevTools, VS, etc.  Pour rester à jour sur les fonctionnalités les plus récentes de vos outils de développement, téléchargez les [canaux Microsoft Edge Preview][MicrosoftEdgePreviewChannels] et [suivez l’équipe Microsoft Edge devtools sur Twitter][EdgeDevToolsTwitterAccount].  
+Les sections suivantes répertorient les annonces que vous pouvez avoir manquées dans l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités dans le DevTools, les extensions de code Visual Studio, et bien plus encore.  Pour rester à jour sur les fonctionnalités les plus récentes de vos outils de développement, téléchargez les [canaux Microsoft Edge Preview][MicrosoftEdgePreviewChannels] et [suivez l’équipe Microsoft Edge devtools sur Twitter][EdgeDevToolsTwitterAccount].  
 
 ### Fonctionnalités de débogage de grille CSS  
 
@@ -245,8 +245,8 @@ Les numéros de ligne permettent de clarifier le fait que vous examinez les donn
 
 Lorsque vous effectuez une opération de copie ou de coupe sans sélection dans l' [éditeur du panneau sources][DevtoolsSourcesEditCssJavascript], devtools copie ou coupe la ligne de contenu actuelle.  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Lorsque le curseur se trouve à la fin de la ligne 5, en copiant l’ensemble de la ligne à partir de pen.js dans le DevTools et en la collant dans le code VS" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   Le curseur étant placé à la fin de la ligne 5, copiez l’ensemble de la ligne à partir de **pen.js** dans le devtools et collez-la dans le [code vs][VSCode].
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Le curseur étant placé à la fin de la ligne 5, en copiant la ligne entière à partir de pen.js dans le DevTools et en la collant dans le code Visual Studio" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+   Le curseur étant placé à la fin de la ligne 5, vous copiez l’intégralité de la ligne à partir de **pen.js** dans le devtools et en la collant dans le [code Visual Studio][VSCode].
 :::image-end:::  
 
 [#800028][CR800028] problème de chrome
@@ -260,7 +260,7 @@ Le bouton bascule **similaire** dans les paramètres de la console s’applique 
 Par exemple, auparavant, DevTools n’a pas dissocier les `hello` messages même si le **groupe similaire** n’est pas activé.  Les `hello` messages sont désormais dissociés.  
 
 :::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Lorsque le groupe similaire n’est pas activé, les messages Hello ne sont pas regroupés" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
-   Lorsque le **groupe similaire** est désactivé, les `hello` messages ne sont pas regroupés.
+   Lorsque le **groupe similaire** est désactivé, les `hello` messages ne sont pas regroupés
 :::image-end:::  
 
 [Pour ce faire, utilisez un exemple qui envoie des messages en double à la console][CodepenZoherghadyaliZyrjgdJ].  
@@ -303,7 +303,7 @@ Les heures pour `DOMContentLoaded` , première peinture, première image de dess
 
 ### Nouvelles icônes pour les points d’arrêt, les points d’arrêt conditionnel et la logpoints  
 
-Le panneau **sources** comporte de nouvelles conceptions pour les points d’arrêt, les points d’arrêt conditionnel et la logpoints.  Les points d’arrêt sont représentés par un cercle rouge, comme le [code vs][VSCode] et [Visual Studio][VS].  Des icônes sont ajoutées pour différencier les points d’arrêt conditionnels et logpoints.  
+Le panneau **sources** comporte de nouvelles conceptions pour les points d’arrêt, les points d’arrêt conditionnel et la logpoints.  Les points d’arrêt sont représentés par un cercle rouge, comme le [code Visual Studio][VSCode] et [Visual Studio][VS].  Des icônes sont ajoutées pour différencier les points d’arrêt conditionnels et logpoints.  
 
 :::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Points d’arrêt" lightbox="../../media/2020/06/breakpoints.msft.png":::
    Points d’arrêt  

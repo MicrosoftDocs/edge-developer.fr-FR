@@ -3,16 +3,16 @@ description: Examinez et modifiez des animations avec l’inspecteur d’animati
 title: Inspecter des animations
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: a74a401edf5331f2dd3c1bf574110241f616d9f6
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: e867cc373286666f73bee3b8fb886f60fa1b94f6
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992826"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015771"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10992826"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Inspecter des animations   
-
-
+# Inspecter des animations  
 
 Examinez et modifiez des animations avec l’inspecteur d’animation Microsoft Edge DevTools.  
 
@@ -48,7 +42,7 @@ Examinez et modifiez des animations avec l’inspecteur d’animation Microsoft 
 *   Examinez les animations en ralentissant chacune d’elles, en reproduisant chacune d’elles ou en consultant le code source.  
 *   Modifiez des animations en modifiant le minutage, le délai, la durée ou les décalages d’images clés.  
 
-## Présentation   
+## Présentation  
 
 L’inspecteur d’animation Microsoft Edge DevTools possède deux objectifs principaux.  
 
@@ -85,8 +79,8 @@ L’inspecteur d’animation s’ouvre en tant qu’onglet en regard du tiroir d
 
 L’inspecteur d’animation est groupé en quatre sections principales \ (ou volets \).  Ce guide fait référence à chaque volet comme suit:  
 
-| | Volet | Description |  
-| --- |:--- |:--- |  
+| Index | Volet | Description |  
+|:--- |:--- |:--- |  
 | 1 | **Contrôles** | Vous pouvez alors effacer tous les groupes d’animations actuellement capturées ou changer la vitesse du groupe d’animation actuellement sélectionné. |  
 | deuxième | **Présentation** | Sélectionnez un groupe d’animations pour l’inspecter et le modifier dans le volet **Détails** . |  
 | 3D | **Chronologie** | Interrompez et démarrez une animation à partir de cet emplacement, ou accédez à un point spécifique de l’animation. |  
@@ -104,7 +98,7 @@ Pour capturer une animation, il vous suffit d’effectuer l’interaction décle
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->  
 
-## Inspecter des animations   
+## Inspecter des animations  
 
 Après avoir capturé une animation, plusieurs méthodes s’offrent à vous pour les relire:  
 
@@ -138,7 +132,7 @@ Si deux éléments ont la même animation appliquée, l’inspecteur d’animati
    Animations à code couleur  
 :::image-end:::  
 
-## Modifier des animations   
+## Modifier des animations  
 
 Il existe trois façons de modifier une animation à l’aide de l’inspecteur d’animation.  
 
@@ -170,11 +164,9 @@ Pour ajouter un délai à une animation, cliquez dessus et faites-la glisser n�
    Retard modifié  
 :::image-end:::  
 
-<!--  
-  
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

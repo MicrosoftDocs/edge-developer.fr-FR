@@ -3,16 +3,16 @@ description: Processus de distribution de l’extension par un mécanisme autre 
 title: Autre méthode de distribution de l’extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/02/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: Edge-chrome, développement d’extensions, extensions de navigateur, compléments, Centre des partenaires, développeur
-ms.openlocfilehash: a1a3ffe7a54f96df7e665ab5dc6f5b99bacb8b8e
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: e28a84fd75ad1ac0be2000a22c26371ca73d0293
+ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565451"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "11015694"
 ---
 # Autre méthode de distribution de l’extension  
 
