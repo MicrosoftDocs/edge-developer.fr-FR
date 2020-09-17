@@ -10,12 +10,12 @@ metadata:
   ms.author: msedgedevrel
   ms.date: 09/08/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 3d33b5a1e0e43269cd77b095f1516f5885fcf807
-  ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+  ms.openlocfilehash: 053bd46133e1e476bd30539ad09c74d17814a0d4
+  ms.sourcegitcommit: 744e2ecf42bcc427ae33e5dadbf6cd48ee0ab6a5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/09/2020
-  ms.locfileid: "11004320"
+  ms.lasthandoff: 09/17/2020
+  ms.locfileid: "11016735"
 highlightedContent:
   items:
   - title: Microsoft Edge (canal stable officiel)
@@ -184,8 +184,6 @@ additionalContent:
         url: /microsoft-edge/extensions-chromium/publish/publish-extension
       - text: Ouvrir un compte de développeur
         url: /microsoft-edge/extensions-chromium/publish/create-dev-account
-      - text: Télécharger une vidéo YouTube
-        url: /microsoft-edge/extensions-chromium/publish/upload-video
       - text: Mise à jour de la liste des extensions
         url: /microsoft-edge/extensions-chromium/publish/update
       - text: Gérer les paramètres de compte
@@ -212,7 +210,7 @@ additionalContent:
         url: /microsoft-edge/progressive-web-apps-chromium/webappmanifests
     - title: WebView2
       links:
-      - text: Vue d'ensemble
+      - text: Présentation
         url: /microsoft-edge/webview2/index
       - text: Commencer à utiliser WebView2
         url: /microsoft-edge/webview2/gettingstarted/win32
