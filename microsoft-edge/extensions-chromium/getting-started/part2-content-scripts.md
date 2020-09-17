@@ -7,12 +7,12 @@ ms.date: 09/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge-chrome, développement Web, html, CSS, JavaScript, développeur, extensions
-ms.openlocfilehash: 586f0427241e5f01b63a22ce204484dc5e8cf154
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+ms.openlocfilehash: fd2276c069116a7f69f06ae50f201e284b60f3ea
+ms.sourcegitcommit: 744e2ecf42bcc427ae33e5dadbf6cd48ee0ab6a5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015757"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016728"
 ---
 # Insérer dynamiquement une image de la NASA sous la balise du corps de la page à l’aide de scripts de contenu  
 
@@ -32,7 +32,7 @@ Dans la partie 2, vous apprendrez à mettre à jour votre menu contextuel de man
 
 ## Supprimer l’image de la fenêtre contextuelle et la remplacer par un bouton  
 
-Tout d’abord, vous devez mettre à jour votre `popup.html` fichier à l’aide d’un balisage direct qui affiche un titre et un bouton.  Vous programmez ce bouton sous peu, mais pour l’instant, incluez simplement une référence à un fichier JavaScript vide `popup.js` .  Voici le code HTML de mise à jour.  
+Tout d’abord, vous devez mettre à jour votre `popup.html` fichier à l’aide d’un balisage direct qui affiche un titre et un bouton.  Vous programmerez ce bouton sous peu, mais pour l’instant, incluez simplement une référence à un fichier JavaScript vide `popup.js` .  Voici le code HTML de mise à jour.  
 
 ```html
 <html>

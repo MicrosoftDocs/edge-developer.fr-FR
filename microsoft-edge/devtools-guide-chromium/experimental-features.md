@@ -7,12 +7,12 @@ ms.date: 09/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, expérience
-ms.openlocfilehash: c78e9aa5e0b4d808dd67d607a954b185ddcf54e7
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: ce8388e8065055e6002bd8541101bef658c7a403
+ms.sourcegitcommit: 744e2ecf42bcc427ae33e5dadbf6cd48ee0ab6a5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11004007"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016744"
 ---
 # Fonctionnalités expérimentales  
 
@@ -46,25 +46,12 @@ Les sections suivantes décrivent les nouvelles fonctionnalités expérimentales
 
 | Fonctionnalités expérimentales | Version de Microsoft Edge |  
 |:--- |:--- |  
-| [Activer l’onglet Paramètres de raccourcis clavier personnalisés](#enable-custom-keyboard-shortcuts-settings-tab) | 84 ou version ultérieure |
 | [Émulation: prise en charge du mode double écran](#emulation-support-dual-screen-mode) | 84 ou version ultérieure |  
 | [Activer les nouvelles fonctionnalités de débogage de grille CSS](#enable-new-css-grid-debugging-features) | 85 ou version ultérieure |  
 | [Activer la prise en charge du déplacement des onglets entre les panneaux](#enable-support-to-move-tabs-between-panels) | 85 ou version ultérieure |  
 | [Activer webhint](#enable-webhint) | 85 ou version ultérieure |  
 | [Activer la console réseau](#enable-network-console) | 85 ou version ultérieure |  
 | [Activer la visionneuse de commandes sources](#enable-source-order-viewer) | 86 ou version ultérieure |  
-
-### Activer l’onglet Paramètres de raccourcis clavier personnalisés  
-
-Fournit une nouvelle page de **raccourcis** dans les [paramètres de devtools][DevToolsCustomizeSettings] pour faire correspondre les [raccourcis clavier][DevToolsShortcuts] du devtools au [code Microsoft Visual Studio][VisualstudioCode].  
-
-Après avoir activé l’expérience, rouvrez les [paramètres de devtools][DevToolsCustomizeSettings] à l’aide de la sélection `Shift` + `?` .  Accédez à la page nouveau **raccourcis** .  Sélectionnez **devtools (par défaut)** dans le menu déroulant **correspondant aux raccourcis de** la liste déroulante, puis sélectionnez **Visual Studio code**.  Les raccourcis clavier dans le DevTools correspondent désormais aux raccourcis pour les actions équivalentes dans le code Visual Studio.  
-
-:::image type="complex" source="./media/experiments-keyboard-shortcut.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="./media/experiments-keyboard-shortcut.msft.png":::
-   Faire correspondre les raccourcis clavier du DevTools au code Visual Studio  
-:::image-end:::  
-
-Par exemple, dans Windows, le raccourci clavier pour suspendre ou continuer à exécuter un script dans le [code Visual Studio][VisualstudioCodeShortcutsKeyboardWindows] est `F5` .  Avec la valeur prédéfinie **devtools (par défaut)** , le même raccourci dans devtools est `F8` .  Le raccourci est également associé au **code Visual Studio** prédéfini `F5` .  
 
 ### Émulation: prise en charge du mode double écran  
 
@@ -77,50 +64,35 @@ Fournit des fonctionnalités supplémentaires pour l’émulation de deux nouvea
 
 *   un écran ou une position pliée  
 *   position à deux écrans ou dépliées  
+ 
+[Activez les API de plateforme Web expérimentales](#enable-experimental-apis) et utilisez la [fonctionnalité de répartition d’écran de média CSS][DualScreenDocsCssMedia] et l' [API getWindowSegments JavaScript][DualScreenDocsJSAPI] pour améliorer votre site Web \ (ou l’application \) pour les appareils à double écran et pliant.
 
-Utilisez les [API d’expérimentation](#enable-experimental-apis) pour améliorer votre site Web \ (ou App \) pour un appareil.  Vous pouvez également utiliser les [requêtes de média CSS et l’API d’énumération de segment Windows JavaScript][GitHubMicrosoftedgeMsedgeexplainerFoldables].  
-
-<!-- This image was taken in Chromium Canary since we don't yet have an Edge Canary that has Stan's changes -->  
-
-:::image type="complex" source="./media/experiments-dual-screen-emulation.msft.png" alt-text="Émuler surface duo dans Microsoft Edge" lightbox="./media/experiments-dual-screen-emulation.msft.png":::  
+:::image type="complex" source="./media/experiments-surface-duo-emulation.msft.png" alt-text="Émuler surface duo dans Microsoft Edge" lightbox="./media/experiments-surface-duo-emulation.msft.png":::  
    Émuler surface duo dans Microsoft Edge  
 :::image-end:::  
 
 #### Activer les API expérimentales  
 
-Pour [activer cette expérience](#turn-on-experimental-features) dans Microsoft Edge devtools, suivez les étapes ci-dessous.  
+Pour utiliser la [fonctionnalité de répartition d’écran de média CSS][DualScreenDocsCssMedia] et l' [API getWindowSegments JavaScript][DualScreenDocsJSAPI], activez l' `Experimental Web Platform features` indicateur dans Microsoft Edge.  Procédez comme suit.
 
 1.  Accédez à `edge://flags` .  
 1.  Dans la zone de texte **indicateurs de recherche** , entrez `Experimental Web Platform features` , sélectionnez l’indicateur **fonctionnalités de plateforme Web expérimentales** , puis **désactivez** l' **option**désactivé.  
 1.  Redémarrez MicrosoftEdge.  
-
-Pour améliorer votre site Web ou votre application sur des appareils à écran double et pliant, accédez aux [requêtes de média CSS et à l’API d’énumération de segment Windows JavaScript][GitHubMicrosoftedgeMsedgeexplainerFoldables].
-
-[Activez cette expérience](#turn-on-experimental-features) dans Microsoft Edge devtools.  
-
-1.  Ouvrez un nouvel onglet dans Microsoft Edge et naviguez jusqu’à `edge://flags` .  
-1.  Dans la zone de texte **indicateurs de recherche** , entrez `Experimental Web Platform features` , sélectionnez **fonctionnalités expérimentales de plateforme Web**, puis sélectionnez **désactivé** pour **activer**.  
-1.  Redémarrez MicrosoftEdge.  
-
-Pour plus d’informations sur l’amélioration de votre site Web (ou de l’application \) pour les appareils à écran double et pliant, accédez aux [requêtes de média CSS et à l’API d’énumération de segment Windows JavaScript][GitHubMicrosoftedgeMsedgeexplainerFoldables].  
 
 :::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Activer l’indicateur de fonctionnalités de plateforme Web expérimentale" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
    Activer l’indicateur de fonctionnalités de plateforme Web expérimentale  
 :::image-end:::  
 
 > [!NOTE]
-> Si vous utilisez des [requêtes multimédias CSS ou l’API d’énumération de segment Windows JavaScript][GitHubMicrosoftedgeMsedgeexplainerFoldables] pour améliorer votre site Web ou votre application pour le [duo de surface][SurfaceDevicesDuo], vous devez également activer l' [Android Microsoft Edge app][GooglePlayMicrosoftEdge] indicateur de **fonctionnalités de plateforme Web** [Surface Duo][SurfaceDevicesDuo]
+> Si vous utilisez des [requêtes multimédias CSS][DualScreenDocsCssMedia] ou l’API d' [énumération de segment Windows JavaScript][DualScreenDocsJSAPI] pour améliorer votre site Web ou votre application pour le duo de [surface][SurfaceDevicesDuo], vous devez également activer l' [Android Microsoft Edge app][GooglePlayMicrosoftEdge] indicateur de **fonctionnalités de plateforme Web** [Surface Duo][SurfaceDevicesDuo]
 > 
 > Si l’indicateur fonctionnalités de la **plateforme Web expérimentée** est activé dans la version de [Bureau de Microsoft Edge][MicrosoftEdge] et désactivée dans l' [application Microsoft Edge pour Android][GooglePlayMicrosoftEdge], le comportement de votre site Web ou de votre application dans l’émulateur de surface duo dans l’application de bureau Microsoft Edge ne correspond pas à l' [application Microsoft Edge pour Android][GooglePlayMicrosoftEdge] sur [surface Duo][SurfaceDevicesDuo].  Assurez-vous que les indicateurs sont mis en correspondance entre Android et Microsoft Edge pour pouvoir utiliser l’émulateur de surface duo dans [Microsoft Edge][MicrosoftEdge].  
 
 #### Tests sur des appareils à écran double et pliant  
 
-Lorsque vous émulez le [duo de surface][SurfaceDevicesDuo] dans une position sur deux écrans dans Microsoft Edge, la **couture** est tracée sur votre site Web ou application.  
+Lorsque vous émulez le [duo de surface][SurfaceDevicesDuo] dans une position sur deux écrans dans Microsoft Edge, la couture (espace entre les deux écrans \) est tracée sur votre site Web ou votre application.  
 
-> [!NOTE]
-> La **couture** est l’espace entre les deux écrans.  
-
-L’affichage émulé de votre site Web (ou de l’application) est une représentation correcte.  Il correspond à l’affichage dans l' [application Microsoft Edge Android][GooglePlayMicrosoftEdge] sur [surface Duo][SurfaceDevicesDuo].  Mettez à jour le contenu pour l’afficher mieux le long de la **couture**.  Pour plus d’informations sur l’adaptation de votre site Web (ou de l’application \) à la **couture**, accédez à l' [utilisation de la couture][DualScreenIntroductionHowWorkSeam] dans la documentation surface Duo.  
+L’affichage émulé correspond au mode d’affichage de votre site Web (ou de l’application) dans l' [application Microsoft Edge Android][GooglePlayMicrosoftEdge] sur [surface Duo][SurfaceDevicesDuo].  Il est possible que vous deviez mettre à jour votre site Web \ (ou l’application \) pour l’afficher mieux le long de la couture.  Pour plus d’informations sur l’adaptation de votre site Web (ou de l’application \) à la couture, accédez à l' [utilisation de la couture][DualScreenIntroductionHowWorkSeam] dans la documentation surface Duo.  
 
 La [barre d’outils][DevtoolsDeviceModeIndexSimulateMobileViewport] de l’appareil inclut des fonctionnalités supplémentaires pour vous aider à tester votre site Web ou votre application en plusieurs positions et orientations.  Sélectionnez **faire pivoter** \ ( ![ faire pivoter ][ImageRotateIcon] ) pour faire pivoter la fenêtre d’affichage en orientation paysage. Combinez la fonctionnalité avec la **plage** \ ( ![ span ][ImageSpanIcon] \) pour basculer entre les positions à un seul écran ou pliées en deux ou non pliées.  Ensemble, les fonctionnalités permettent le test de votre site Web ou de votre application dans les quatre positions et orientations possibles.  
 
@@ -128,11 +100,18 @@ La [barre d’outils][DevtoolsDeviceModeIndexSimulateMobileViewport] de l’appa
    Matrice de positions et d’orientations pour les appareils à écran double et pliant  
 :::image-end:::  
 
-Les **fonctionnalités de la plateforme Web expérimentales** \ ( ![ ExperimentalApis ][ImageExperimentalApisIcon] \) affichent l’état de l’indicateur de **fonctionnalités de plateforme Web expérimentale** .  Si l’indicateur est activé, l’icône est mise en évidence.  Si l’indicateur est désactivé, l’icône n’est pas mise en surbrillance.  Pour activer \ (ou désactivé) l’indicateur, sélectionnez l’icône ou accédez à `edge://flags` l’indicateur et activez-le.  
+Les **fonctionnalités de la plateforme Web expérimentales** \ ( ![ ExperimentalApis ][ImageExperimentalApisIcon] \) affichent l’état de l’indicateur de **fonctionnalités de plateforme Web expérimentale** .  Si l’indicateur est activé, l’icône est mise en évidence.  Si l’indicateur est désactivé, l’icône n’est pas mise en surbrillance.  Pour activer \ (ou désactivé) l’indicateur, accédez à l’indicateur `edge://flags` et activez-le.  
 
-#### Ressources supplémentaires  
-*   Pour plus d’informations sur le développement, accédez à [expériences sur le Web à deux écrans][DualScreenWebIndex].  
-*   Installez l’émulateur surface Duo].  Elle est différente de l’émulateur dans Microsoft Edge.  Il émule le duo de surface exécutant Android et intégré à [Android Studio][AndroidDeveloperStudio].  Pour plus d’informations, accédez au [Kit de développement logiciel (SDK) surface Duo][DualScreenAndroidGetDuoSdk].  
+<!-- Commenting out until the icon issue is fixed in Edge Canary
+The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->
+
+Voici d’autres ressources qui peuvent vous aider à améliorer votre site Web \ (ou l’application \) pour les périphériques à deux écrans:
+*   Pour plus d’informations sur le développement Web sur les appareils à deux écrans, voir [expériences sur le Web à deux écrans][DualScreenWebIndex].  
+*   Installez l' [émulateur de surface Duo][DualScreenAndroidUseEmulator].  Il est différent de l’émulateur dans Microsoft Edge, émule le duo de surface sur lequel s’exécute Android et intégré à [Android Studio][AndroidDeveloperStudio].  Pour plus d’informations, accédez au [Kit de développement logiciel (SDK) surface Duo][DualScreenAndroidGetDuoSdk].  
+
+> [!NOTE]
+> Vous trouverez ci-dessous la liste des problèmes connus actuellement:
+> *   Lorsque vous utilisez un [client de bureau à distance Microsoft][RemoteDesktopClientDocs] pour vous connecter à un PC distant et émuler le pli de [surface Duo][SurfaceDevicesDuo] ou [Samsung Galaxy][SamsungMobileGalaxyFold], le pointeur risque de secouer ou d’interruption.  Si vous rencontrez ce problème, [envoyez des commentaires](#providing-feedback-on-experimental-features).  
 
 ### Activer les nouvelles fonctionnalités de débogage de grille CSS  
 
@@ -215,6 +194,7 @@ Après avoir activé l’expérience, assurez-vous de redémarrer l’DevTools. 
 ## Fonctionnalités expérimentales antérieures  
 
 *   la [vue 3D][Devtools3dViewIndex] est désormais disponible et activée par défaut dans Microsoft Edge version 83 ou ultérieure.  
+*   La [Personnalisation des raccourcis clavier][DevtoolsCustomKeyboardShortcuts] est désormais disponible et activée par défaut dans Microsoft Edge version 86 ou ultérieure.  
 
 ## Fourniture de commentaires sur les fonctionnalités expérimentales  
 
@@ -247,19 +227,20 @@ Pour transmettre des commentaires sur les expériences DevTools Microsoft Edge, 
 [DevtoolsIssues]: ./issues/index.md "Recherchez et corrigez les problèmes liés à l’outil problèmes dans Microsoft Edge DevTools Documents Microsoft"  
 [DevToolsShortcuts]: ./shortcuts.md "Raccourcis clavier dans Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsOpen]: ./open.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Personnaliser les raccourcis clavier dans Microsoft Edge DevTools | Documents Microsoft"
 
 [DualScreenWebIndex]: /dual-screen/web/index "Expérience Web sur deux écrans | Documents Microsoft"  
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Obtenez l’émulateur Duo surface | Documents Microsoft"  
 [DualScreenIntroductionHowWorkSeam]: /dual-screen/introduction#how-to-work-with-the-seam "Comment utiliser la couture-Introduction aux périphériques à écran double Documents Microsoft"  
+[DualScreenAndroidUseEmulator]: /dual-screen/android/use-emulator "Utiliser l’émulateur de surface Duo | Documents Microsoft"  
+[DualScreenDocsCssMedia]: /dual-screen/web/css-media-spanning "Fonctionnalité de répartition d’écran de média CSS pour la détection sur deux écrans | Documents Microsoft"  
+[DualScreenDocsJSAPI]: /dual-screen/web/javascript-getwindowsegments "API JavaScript getWindowSegments pour les appareils à deux écrans | Documents Microsoft"  
+
+[RemoteDesktopClientDocs]: /windows-server/remote/remote-desktop-services/clients/remote-desktop-clients "Clients Bureau à distance | Documents Microsoft"
 
 [MicrosoftEdge]: https://www.microsoft.com/edge "Microsoft Edge"  
 
 [SurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "Surface Duo | Microsoft surface"  
-
-[VisualstudioCode]: https://code.visualstudio.com "Code Microsoft Visual Studio"  
-[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Raccourcis clavier dans Visual Studio pour Windows | Code Microsoft Visual Studio"  
-
-[GitHubMicrosoftedgeMsedgeexplainerFoldables]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/Foldables/explainer.md "Primitives de plateforme Web pour expériences sur les appareils pliants | GitHub"  
 
 [AndroidDeveloperStudio]: https://developer.android.com/studio/ "Android Studio"  
 
