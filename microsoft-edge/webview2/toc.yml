@@ -16,6 +16,8 @@
       href: concepts/distribution.md
     - name: Gestion des dossiers de données utilisateur
       href: concepts/userdatafolder.md
+    - name: Gestion des applications WebView2
+      href: concepts/enterprise.md
     - name: Événements de navigation
       href: concepts/navigation-events.md
     - name: Modèle de processus
