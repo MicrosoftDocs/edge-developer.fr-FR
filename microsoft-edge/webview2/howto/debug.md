@@ -3,17 +3,17 @@ description: Découvrez comment déboguer des contrôles WebView2.
 title: Commencer le débogage des applications WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/13/2020
+ms.date: 08/21/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge
-ms.openlocfilehash: 15171147b847b1d41cd603efed1b8ee42185dc29
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 78c0fb982de8ccce71a8df2b59447b55f64fdc2f
+ms.sourcegitcommit: 24151cc65bad92d751a8e7a868c102e1121456e3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010697"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052142"
 ---
 # Commencer le débogage des applications WebView2  
 
@@ -35,7 +35,7 @@ Pour plus d’informations, voir [vue d’ensemble de devtools][DevtoolsGuideChr
 
 ## [Visual Studio](#tab/visualstudio)  
 
-Visual Studio fournit différents outils de débogage pour le Web et le code natif dans les applications WebView2.  Dans la section Visual Studio, le focus est essentiellement au débogage de contrôles WebView, mais les autres méthodes de débogage dans Visual Studio sont disponibles comme d’habitude.  Le processus suivant permet de déboguer du code Web et du code natif dans des applications Win32 ou des compléments Office uniquement.  
+Visual Studio fournit différents outils de débogage pour le Web et le code natif dans les applications WebView2.  Dans la section Visual Studio, le focus principal est le débogage de contrôles WebView, mais les autres méthodes de débogage dans Visual Studio sont disponibles comme d’habitude.  Le processus suivant permet de déboguer du code Web et du code natif dans des applications Win32 ou des compléments Office uniquement.  
 
 > [!IMPORTANT]
 > Quand vous déboguez votre application dans Visual Studio avec le débogueur natif en pièce jointe, la sélection `F12` de l’application risque de déclencher le débogueur natif au lieu des outils de développement.  Sélectionnez `Ctrl` + `Shift` + `I` ou utilisez le menu contextuel (cliquez avec le bouton droit sur \) pour éviter la situation.  
@@ -96,6 +96,151 @@ Effectuez les opérations suivantes pour déboguer votre application WebView2.
        Console de **débogage** de Visual Studio  
     :::image-end:::  
     
+## [VisualStudioCode](#tab/visualstudiocode)  
+
+Utilisez le code Microsoft Visual Studio pour déboguer les scripts qui s’exécutent dans les contrôles WebView2.  <!--Ensure that you're using Visual Studio Code version [insert build here] or later.  -->  
+
+Dans le code Visual Studio, effectuez les actions suivantes pour déboguer votre code. 
+
+1.  Un fichier est requis pour votre projet `launch.json` .  Si votre projet ne comporte pas de `launch.json` fichier, copiez l’extrait de code suivant et créez un `launch.json` fichier.  
+        
+    ```json
+        "name": "Hello debug world",
+        "type": "pwa-msedge",
+        "port": 9222, // The port value is optional, and the default value is 9222.
+        "request": "launch",
+        "runtimeExecutable": "C:/path/to/your/webview2/application.exe",
+        "env": {
+            // Customize for your application location if needed
+            "Path": "%path%;e:/path/to/your/application/location; "
+        },
+        "useWebView": true,
+    ```  
+        
+1.  Pour définir un point d’arrêt dans votre code source, pointez sur la ligne, puis sélectionnez `F9`
+    
+    :::image type="complex" source="./media/breakpointvs.png" alt-text="Le point d’arrêt est défini dans le code Visual Studio" lightbox="./media/breakpointvs.png":::
+       Le point d’arrêt est défini dans le code Visual Studio  
+    :::image-end:::
+    
+    > [!NOTE]
+    > Dans la mesure où le code Visual Studio n’effectue pas le mappage source, assurez-vous de définir des points d’arrêt dans le même fichier que WebView2.  Dans le cas contraire, le code Visual Studio n’interrompt pas le code en cours d’exécution au point d’arrêt.  
+    
+1.  Exécutez le code.  
+    1.  Dans l’onglet **exécuter** , choisissez la configuration de lancement dans le menu déroulant.  
+    1.  Pour démarrer le débogage de votre application, sélectionnez Démarrer le débogage, qui est le triangle vert en regard de la liste déroulante de configuration de lancement.  
+        
+        :::image type="complex" source="./media/runvs.png" alt-text=" Onglet exécuter de code Visual Studio" lightbox="./media/runvs.png":::
+           Onglet exécuter de code Visual Studio  
+        :::image-end:::  
+        
+1.  Ouvrez la **console de débogage** pour afficher les erreurs et la sortie de débogage.  
+    
+    :::image type="complex" source="./media/resultsvs.png" alt-text=" Console de débogage de code Visual Studio" lightbox="./media/resultsvs.png":::
+       Console de débogage de code Visual Studio  
+    :::image-end:::  
+    
+**Paramètres avancés**:  
+
+*   Débogage WebView ciblé. 
+
+    Dans certaines applications WebView2, vous pouvez utiliser plusieurs contrôles WebView2. Pour sélectionner le contrôle WebView2 à déboguer dans cette situation, vous pouvez utiliser le débogage de WebView2 ciblé 
+    
+    Ouvrez `launch.json` et effectuez les actions suivantes pour utiliser le débogage d’affichage WebView ciblé.  
+    
+    1.  Vérifiez que le `useWebview` paramètre est défini sur `true` .  
+    1.  Ajoutez le `urlFilter` paramètre.  Lorsque le contrôle WebView2 navigue vers une URL, la `urlFilter` valeur de paramètre est utilisée pour comparer les chaînes qui s’affichent dans l’URL.  
+    
+    ```json
+    "useWebview": "true",
+    "urlFilter": "*index.ts",
+    
+    // Other urlFilter options.
+    
+    urlFilter="*index.ts"    // Match any url that ends with index.ts, and ignore all leading characters. 
+    urlFilter="*index*"      // Match any url that contains the string index anywhere in the URL.  
+    urlFilter="file://C:/path/to/my/index.ts," // To match explicit file called index.ts.  
+    ```  
+    
+    Lors du débogage de votre application, il est possible que vous deviez parcourir le code du début du processus de rendu. Si vous voulez afficher des pages Web sur des sites et que vous n’avez pas accès au code source, vous pouvez utiliser l' `?=value`  option, car les pages Web ignorent les paramètres non reconnus.   
+    
+    > [!IMPORTANT]
+    > Une fois la première correspondance trouvée dans l’URL, le débogueur s’arrête.  Vous ne pouvez pas déboguer deux contrôles WebView2 en même temps, car le port CDP est partagé par tous les contrôles WebView2 et utilise un numéro de port unique.  
+    
+*   Déboguer des processus en cours d’exécution  
+    
+    Il est possible que vous deviez joindre le débogueur pour exécuter les processus WebView2. Pour ce faire, dans `launch.json` , mettez à jour le `request` paramètre en `attach` .
+        
+    ```json
+        "name": "Hello debugging world",
+        "type": "pwa-msedge",
+        "port": 9222, 
+        "request": "attach",
+        "runtimeExecutable": "C:/path/to/your/webview2/application.exe",  
+        "env": {
+            "Path": "%path%;e:/path/to/your/build/location; "  
+        },
+        "useWebView": true
+    ```  
+        
+    Votre contrôle WebView2 doit ouvrir le port CDP pour permettre le débogage du contrôle WebView2.  Votre code doit être créé pour s’assurer qu’un seul contrôle WebView2 est ouvert par un port CDP (chrome Developer Protocol) avant de démarrer le débogueur.  
+    
+*   Options de suivi de débogage  
+    
+    Ajoutez le `trace` paramètre à launch.jsactivé pour activer le suivi de débogage.  
+    
+    1.  Ajouter un `trace` paramètre.  
+        
+ 
+        
+        :::row:::
+           :::column span="":::
+              ```json
+                "name": "Hello debugging world",
+                "type": "pwa-msedge",
+                "port": 9222, 
+                "request": "attach",
+                "runtimeExecutable": "C:/path/to/your/webview2/application.exe",  
+                "env": {
+                "Path": "%path%;e:/path/to/your/build/location; "  
+                },
+                "useWebView": true
+                ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
+              ```  
+              
+              :::image type="complex" source="./media/tracelog.png" alt-text=" Enregistrez la sortie de débogage dans un fichier journal." lightbox="./media/tracelog.png":::
+                 Enregistrer la sortie de débogage dans un fichier journal  
+              :::image-end:::  
+           :::column-end:::
+           :::column span="":::
+              ```json
+              ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
+              ```  
+              
+              :::image type="complex" source="./media/verbose.png" alt-text=" Sortie détaillée" lightbox="./media/verbose.png":::
+                 Sortie du débogage de code Visual Studio avec l’affichage suivi détaillé activé  
+              :::image-end:::  
+           :::column-end:::
+        :::row-end:::  
+        
+*   Déboguer des compléments Office.
+    
+    Si vous déboguez des compléments Office, ouvrez le code source du complément dans une instance distincte du code Visual Studio.  Ouvrez launch.jsdans votre application WebView2, puis ajoutez l’extrait de code suivant pour joindre le débogueur au complément Office.
+    
+    ```json
+    ,"debugServer": 4711
+    ```  
+    
+*   Résoudre les problèmes du débogueur  
+    
+    Vous pouvez rencontrer les situations suivantes lors de l’utilisation du débogueur.  
+
+    *   Le débogueur ne s’arrête pas au point d’arrêt et vous avez une sortie de débogage.  Pour résoudre ce problème, vérifiez que le fichier contenant le point d’arrêt est le même que celui utilisé par le contrôle WebView2.  Le débogueur n’effectue pas le mappage de chemin d’accès source.  
+    *   Vous ne pouvez pas attacher de processus en cours d’exécution et vous obtenez une erreur de temporisation.  Pour résoudre ce problème, vérifiez que le contrôle WebView2 a ouvert le port CDP.  Vérifiez que votre  `additionalBrowserArguments`  valeur dans le Registre est correcte ou que les options sont correctes.  Pour plus d’informations, reportez-vous à [additionalBrowserArguments pour dotnet] [Webview2ReferenceDotnet09515MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] et [additionalBrowserArguments pour Win32] [Webview2ReferenceWin3209538Webview2IdlParameters].  
+    
+* * *  
+
+
 * * *  
 
 ## Voir également  
