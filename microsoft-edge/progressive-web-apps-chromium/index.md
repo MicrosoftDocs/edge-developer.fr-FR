@@ -1,131 +1,205 @@
 ---
-description: Les applications Web progressives s’exécutent en mode natif sur Windows 10.  Voici ce que vous devez savoir en tant que développeur Web.
+description: Les applications Web progressives (chrome) s’exécutent en mode natif sur Windows 10.  Voici ce que vous devez savoir en tant que développeur Web.
 title: Applications Web progressives sur Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/17/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: applications Web progressives, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: 90740bac07ebfd74f89e2524e6955621e1b09b05
-ms.sourcegitcommit: a06c86ef7c69e1e400a0be5938449f3c4ba6ec72
+ms.openlocfilehash: a9fa08a9c84ee5da8eab3c9c3edeea34439b6557
+ms.sourcegitcommit: be76feed0d616a96c77ea2748a9f0d6c0c06284b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882806"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11103935"
 ---
 # Applications Web progressives sur Windows  
 
-Grâce aux [applications Web progressives][MDNApps] \ (ou simplement à PWAS \), il n’est pas nécessaire de décider de l’utilisation d’une interface Web ouverte pour l’interopérabilité entre les plateformes et de fournir aux utilisateurs une interface utilisateur de type application adaptée à leurs appareils.  Les PWAs sont des sites Web qui sont [progressivement améliorés][AListApartUnderstandingProgressiveEnhancement] pour fonctionner comme des applications natives sur les plateformes prises en charge.  Les qualités d’une PWA combinent le meilleur des applications web et natives.  
+Les [applications Web progressives][MDNApps] \ (PWAS \) offrent un accès aux technologies Web ouvertes pour une interopérabilité multiplateforme et fournissent aux utilisateurs une interface native et de type application adaptée à leurs appareils.  Les PWAs sont des sites Web qui sont [progressivement améliorés][AListApartUnderstandingProgressiveEnhancement] pour fonctionner comme des applications natives sur les plateformes prises en charge.  Les qualités d’une PWA combinent le meilleur des applications web et natives.  
 
 :::row:::
     :::column:::
-        ![Icône détectable][ImageISearch]
+        :::image type="icon" source="./media/i_search.png":::
         ### [Détectable][MDNPwaAdvantagesDiscoverable]
         Dans les résultats de recherche Web et les magasins d’applications de support
     :::column-end:::
     :::column:::
-        ![Icône installer][ImageIPackage]
+        :::image type="icon" source="./media/i_package.png":::
         ### [Installation correcte][MDNPwaAdvantagesInstallable]
         Épingler et lancer à partir de l’écran d’accueil, du menu Démarrer, de la barre des tâches, etc.
     :::column-end:::
     :::column:::
-        ![Icône de réinstallation][ImageIPushNotification]
+        :::image type="icon" source="./media/i_push-notification.png":::
         ### [Nouvelle installation][MDNPwaAdvantagesReEngageable]
         Envoyer des notifications de transmission, même lorsque l’application n’est pas active
     :::column-end:::
+:::row-end:::  
+:::row:::
     :::column:::
-        ![Icône indépendante du réseau][ImageIOffline]
+        :::image type="icon" source="./media/i_offline.png":::
         ### [Indépendant du réseau][MDNPwaAdvantagesNetworkIndependent]
         Fonctionne hors ligne et dans des conditions de faible réseau
     :::column-end:::
-:::row-end:::
-:::row:::
     :::column:::
-        ![Icône progressif][ImageIProgressive]
+        :::image type="icon" source="./media/i_progressive.png":::
         ### [Avantage][MDNPwaAdvantagesProgressive]
         L’accès évolue vers le haut (ou vers le bas) avec les fonctionnalités de l’appareil
     :::column-end:::
     :::column:::
-        ![Icône sûr][ImageISecurity]
+        :::image type="icon" source="./media/i_security.png":::
         ### [Approuvés][MDNPwaAdvantagesSafe]
         Fournit un point de terminaison sécurisé HTTPs et d’autres protections de l’utilisateur
     :::column-end:::
+:::row-end:::  
+:::row:::
     :::column:::
-        ![Icône réactive][ImageIResponsive]
+        :::image type="icon" source="./media/i_responsive.png":::
         ### [Réactivité][MDNPwaAdvantagesResponsive]
         S’adapte à la taille de l’écran ou à l’orientation de l’utilisateur et à la méthode d’entrée
     :::column-end:::
     :::column:::
-        ![Icône de liaison][ImageILink]
+        :::image type="icon" source="./media/i_link.png":::
         ### [Liens hypertexte][MDNPwaAdvantagesLinkable]
         Partager et lancer à partir d’un lien hypertexte standard
     :::column-end:::
-:::row-end:::
+    :::column:::
+        &nbsp;  
+    :::column-end:::
+:::row-end:::  
 
-En construisant ou en convertissant votre site existant vers une application Project Web App, vous vous engagez à améliorer la qualité de votre public grâce à des notifications de transmission, une intégration de type application et une prise en charge hors connexion.  En même temps, vous devez continuer à créer votre public sur le Web ouvert, car les utilisateurs découvrent votre PWA par le biais de la recherche et du partage de liens.  Mieux, vous pouvez mettre à jour votre application en mettant simplement à jour votre code serveur Web.  
+
+Créez \ (ou convertissez) votre site Web existant vers un site PWA pour améliorer vos engagements.  Les améliorations incluent les notifications de transmission, l’intégration de type application et la prise en charge hors connexion.  Continuez à développer votre public sur le Web ouvert pour que les utilisateurs puissent découvrir votre PWA par le biais de la recherche et du partage de liens.  Mieux, votre application est mise à jour à l’aide de votre code serveur Web.  
 
 ## PWAs sur Microsoft Edge (chrome)  
 
-Lorsque vous générez une API standard Web pour cibler une application Web, votre application peut être déployée sur différentes plateformes et appareils et tirer parti des fonctionnalités spécifiques à l’appareil disponibles.  PWAs dans Microsoft Edge \ (chrome \) sont entièrement conformes aux normes du point de vue de la plateforme Web et permettent aux utilisateurs d’installer l’application directement à partir du navigateur sans nécessiter de déploiement ou d’inscription sur le Windows Store.  Les PWAs de bureau sont prises en charge sur n’importe quelle plate-forme Microsoft Edge \ (chrome \) est disponible, y compris Windows 7, Windows 10 et macOS.  Voici d’autres avantages:  
+Lorsque vous générez une API standard Web pour cibler une application Web, votre application peut être déployée sur différentes plateformes et appareils et tirer parti des fonctionnalités spécifiques à l’appareil.  PWAs dans Microsoft Edge \ (chrome \) ajoutez les avantages suivants à votre site Web.  
+
+*   Votre application est basée sur une plateforme Web standard.  
+*   Permet aux utilisateurs d’installer votre application directement à partir du navigateur.  
+*   Permet à vos utilisateurs d’installer votre application sans déploiement ou inscription sur le Windows Store.  
+    
+Les PWAs de bureau sont prises en charge sur n’importe quelle plateforme Microsoft Edge \ (chrome \) est disponible. Microsoft Edge \ (chrome \) est disponible sur Windows 7, Windows 10 et macOS.  Les avantages suivants sont inclus.  
 
 *   Les applications sont installées directement à partir du navigateur à l’aide de l’icône d' **installation** dans la barre de navigation.  
     
-    ![Installer le menu volant et l’icône d’application][ImageInstallPwa]  
+    :::image type="complex" source="./media/install_pwa_icon.png" alt-text="Installer le menu volant et l’icône d’application" lightbox="./media/install_pwa_icon.png":::
+       Installer le menu volant et l’icône d’application  
+    :::image-end:::  
     
-*   Les applications pourront également être installées, exécutées et gérées à partir du menu **paramètres**des  >  **applications**  
+*   Les applications risquent également d’être installées, exécutées et **Settings**gérées dans le menu des  >  **applications** paramètres  
     
-    ![Éléments de menu de l’application sous paramètres][ImageAppMenus]  
-
-*   Les notifications Web sont intégrées dans le système de notification Windows
-*   Magasin de cookies partagés avec le profil de navigateur qui a installé l’application
-*   Accès à d’autres fonctionnalités de navigateur via le `...` menu, notamment la validation de certificats, les autorisations de site, la protection contre le suivi et les extensions de navigateur
+    :::image type="complex" source="./media/app_menus.png" alt-text="Installer le menu volant et l’icône d’application" lightbox="./media/app_menus.png":::
+       Éléments de menu de l’application sous paramètres  
+    :::image-end:::  
+    
+*   Les notifications Web sont intégrées dans le système de notification Windows  
+*   Magasin de cookies partagés avec le profil de navigateur qui a installé l’application  
+*   Accès à d’autres fonctionnalités de navigateur à l’aide du menu **paramètre et plus** \ ( `...` \), avec la validation de certificats, les autorisations de site, la protection contre le suivi et les extensions de navigateur  
 *   Un accès complet à [Microsoft Edge devtools][DevtoolsProgressiveWebApps] pour le débogage de votre application  
-
+    
 > [!IMPORTANT]
-> Pour personnaliser PWAs en particulier pour Windows 10 qui effectue des demandes d’API WinRT en utilisant JavaScript, voir la [documentation spécifique aux fonctionnalités de EdgeHTML de Project Web App][PwaEdgehtmlIndex].  En savoir plus sur le test de votre PWA sur Windows 10 et son distribution dans le Microsoft Store.  
+> Pour personnaliser PWAs en particulier pour les Windows 10 qui effectuent des demandes d’API WinRT en utilisant JavaScript, accédez à [la documentation spécifique aux fonctionnalités de EdgeHTML de Project Web App][PwaEdgehtmlIndex].  En savoir plus sur le test de votre PWA sur Windows 10 et son distribution dans le Microsoft Store.  
 
 > [!NOTE]
-> Pour obtenir une vue d’ensemble des avantages de Project Web App, des fonctionnalités à venir et des courtes démonstrations, consultez la [session de création 2020][BuildVideo] . 
+> Pour plus d’informations sur les avantages, les fonctionnalités à venir et les courtes démonstrations de Project Web App, accédez à la [version 2020 de la session PWA][BuildVideo]. 
 
-## Configuration requise  
+## Conditions requises  
 
 Pour être exécuté en tant que PWA, votre application Web hébergée sur un serveur doit inclure la configuration minimale requise.  
 
-| Condition requise | Détails | 
-|:--- |:--- |  
-| [HTTPS][WikiHttps] | Protégez vos utilisateurs en fournissant une connexion sécurisée pour la communication avec le serveur ou l’application.  Les travailleurs de service et autres technologies PWA fonctionnent uniquement avec les ressources Web fournies par le biais d’une connexion sécurisée (ou à partir `localhost` de à des fins de débogage \).  |  
-| [Worker du service][MDNServiceWorkerApi] | Les threads de travail de service permettent de faire office de proxy réseau entre votre serveur et votre application cliente afin de fournir une prise en charge hors connexion, une mise en cache de ressources, des notifications de transmission, une synchronisation en arrière-plan  |  
-| [Manifeste de l’application Web][MDNWebAppManifest] | Fournissez un fichier de métadonnées JSON décrivant les informations clés relatives à votre application Web (par exemple, les icônes, le langage et le point d’entrée d’URL \), de sorte que Windows 10 et d’autres plateformes hôtes puissent fournir à vos utilisateurs de Project Web App une interface d’utilisateur d’application native et installable.  |  
+:::row:::
+   :::column span="1":::
+      [HTTPS][WikiHttps]  
+   :::column-end:::
+   :::column span="2":::
+      Protège vos utilisateurs en fournissant une connexion sécurisée pour la communication avec le serveur ou l’application.  Les travailleurs de service et autres technologies PWA fonctionnent uniquement avec les ressources Web fournies par le biais d’une connexion sécurisée (ou à partir `localhost` de à des fins de débogage \).  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Worker du service][MDNServiceWorkerApi]  
+   :::column-end:::
+   :::column span="2":::
+      Utilise des threads de travail de service pour agir en tant que proxy réseau entre votre serveur et votre application cliente.  Les threads de travail en mode hors connexion, de mise en cache des ressources, de notifications de transmission, de synchronisation des données en arrière-plan et d’optimisation des performances de la page.    
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Manifeste de l’application Web][MDNWebAppManifest]  
+   :::column-end:::
+   :::column span="2":::
+      Fournit un fichier de métadonnées JSON qui décrit les informations clés relatives à votre application Web, de sorte que les plateformes Windows 10 et d’autres plateformes puissent offrir aux utilisateurs de Project Web App une environnement d’exécution de l’application, qui permet d’installer une application native.  Les informations clés incluent les icônes, la langue et le point d’entrée d’URL. 
+   :::column-end:::
+:::row-end:::  
 
 Pour être une bonne solution de Project Web App, votre application doit également présenter la configuration requise suivante.  
 
-| Condition requise | Détails | 
-|:--- |:--- |  
-| [Compatibilité entre les navigateurs][MDNCrossBrowserTesting] | Assurez-vous que le contrôle PWA fonctionne en effectuant des [tests][MicrosoftDeveloperEdgeToolsRemote] dans différents navigateurs et environnements.  |  
-| [Conception réactive][WikiResponsiveWebDesign] | Utilisez des dispositions fluides et des images flexibles grâce à une [grille][MDNCssGridLayout]CSS, des [Flexbox][MDNCssFlexibleBoxLayout], [des feuilles CSS et des][MDNCssGridLayout] [Flexbox][MDNCssFlexibleBoxLayout] , des [requêtes multimédias][MDNMediaQueries]et des [images réactives][MDNResponsiveImages] pour adapter votre expérience utilisateur à l’appareil de l’utilisateur.  Utilisez les [Outils d’émulation d’appareil][DevToolsGuide|::ref1::|] de votre navigateur pour effectuer des tests en local, ou configurez une session de [débogage à distance][DevToolsProtocolClientsEdgeDevToolsPreview] pour tester directement sur un appareil cible.  |  
-| [Liaison Poussée][WikiDeepLinking] | Acheminez chaque page de votre site vers une URL unique de sorte que les utilisateurs existants puissent vous aider à renforcer un public encore plus large grâce au partage de réseaux sociaux.  |  
-| [Bonnes pratiques][Webhint] | Utilisez les outils de qualité de code comme le [webhint][Webhint] de type Lint pour optimiser l’efficacité, la robustesse, la sécurité et l’accessibilité de votre application.  |  
-| [Liste de vérification de Project Web App][WebDevGoodPwaChecklist] | Vérifiez votre PWA par rapport à la liste de vérification de base sur Google Baseline.  |  
+:::row:::
+   :::column span="1":::
+      [Compatibilité entre les navigateurs][MDNCrossBrowserTesting]  
+   :::column-end:::
+   :::column span="2":::
+      Assurez-vous que le contrôle PWA fonctionne en effectuant des [tests][MicrosoftDeveloperEdgeToolsRemote] dans différents navigateurs et environnements.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Conception réactive][WikiResponsiveWebDesign]  
+   :::column-end:::
+   :::column span="2":::
+      Utilise des dispositions fluides et des images flexibles.  La conception réactive inclut les éléments suivants qui adaptent votre expérience utilisateur à l’appareil de l’utilisateur.  
+      
+      *   [Grille][MDNCssGridLayout] CSS  
+      *   [flexbox][MDNCssFlexibleBoxLayout]  
+      *   [Grille][MDNCssGridLayout] CSS et [Flexbox][MDNCssFlexibleBoxLayout]  
+      *   [requêtes multimédias][MDNMediaQueries]  
+      *   [images réactives][MDNResponsiveImages]  
+      
+      Utilise des [Outils d’émulation d’appareil][DevToolsGuide|::ref1::|] de votre navigateur pour le test en local, ou créez une session de [débogage à distance][DevToolsProtocolClientsEdgeDevToolsPreview] pour tester directement sur un appareil cible.
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Liaison Poussée][WikiDeepLinking]  
+   :::column-end:::
+   :::column span="2":::
+      Route chaque page de votre site vers une URL unique de sorte que les utilisateurs existants puissent vous aider à impliquer un public encore plus large via le partage de réseaux sociaux.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Pratiques en matière de validation et de test][Webhint]  
+   :::column-end:::
+   :::column span="2":::
+      Utilise des outils de qualité de code comme l’élément [webhint][Webhint] de type Lint pour optimiser l’efficacité, la robustesse, la sécurité et l’accessibilité de votre application.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Liste de vérification de Project Web App][WebDevGoodPwaChecklist]  
+   :::column-end:::
+   :::column span="2":::
+      Vérifie votre PWA par rapport à la liste de vérification de base sur Google Baseline.  
+   :::column-end:::
+:::row-end:::  
 
-Si vous voulez transformer votre document PWA en application [Microsoft Store][MicrosoftDeveloperStore] , accédez à la documentation sur les [applications Web progressives (EdgeHTML)][PwaEdgehtmlMicrosoftStore] .  
+> [!NOTE]
+> Pour transformer votre PWA en application [Microsoft Store][MicrosoftDeveloperStore] , accédez à [applications Web progressives (EdgeHTML) sur le Microsoft Store][PwaEdgehtmlMicrosoftStore].  
   
+## Voir également  
 
-<!-- image links -->  
-
-[ImageISearch]: media/i_search.png  
-[ImageIPackage]: media/i_package.png  
-[ImageIPushNotification]: media/i_push-notification.png  
-[ImageIOffline]: media/i_offline.png  
-[ImageIProgressive]: media/i_progressive.png  
-[ImageISecurity]: media/i_security.png  
-[ImageIResponsive]: media/i_responsive.png  
-[ImageILink]: media/i_link.png  
-
-[ImageInstallPwa]: ./media/Install_PWA.png  
-[ImageAppMenus]: ./media/App_menus.png  
-
+*   [PWAs de combustion de mythe][Davrous20191018MythBustingPwasNewEdgeEdition]  
+*   [Plan progressif de votre application Web progressive][CloudfourThinksProgressiveRoadmapYourWebApp]  
+*   [Billets hors ligne avec des applications Web progressives][MediumWebEdgeOfflinePostsProgressiveWebApps]  
+*   [PWA Q&A][AaronGustafsonNotebookPwaQa]  
+*   [Paris sur le Web][JoretegBlogBettingWeb]  
+*   [Attribution d’un nom aux applications Web progressives][Fberriman20170626NamingProgressiveWebApps]  
+*   [Conception et création d’une application Web progressive sans infrastructure (partie 1)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]  
+*   [Conception et création d’une application Web progressive sans infrastructure (partie 2)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]  
+*   [Conception et création d’une application Web progressive sans infrastructure (partie 3)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]  
+    
 <!-- links -->  
 
 [DevToolsProtocolClientsEdgeDevToolsPreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Aperçu DevTools Microsoft Edge - Clients de protocole DevTools "  
@@ -156,6 +230,8 @@ Si vous voulez transformer votre document PWA en application [Microsoft Store][M
 [MicrosoftSupportWindowsFocusAssist]: https://support.microsoft.com/help/4026996/windows-10-turn-focus-assist-on-or-off "Activation ou désactivation de l’assistance au focus dans Windows 10"  
 [MicrosoftSupportWindowsNotificationSettings]: https://support.microsoft.com/help/4028678/windows-10-change-notification-settings "Modifier les paramètres de notification dans Windows 10"  
 
+[AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "PWA Q&A"  
+
 [AListApartUnderstandingProgressiveEnhancement]: https://alistapart.com/article/understandingprogressiveenhancement "Présentation de l’amélioration progressive-liste séparée"  
 
 [MDNApps]: https://developer.mozilla.org/Apps/Progressive "applications | MDN"  
@@ -180,9 +256,25 @@ Si vous voulez transformer votre document PWA en application [Microsoft Store][M
 [MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager | MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Manifeste de l’application Web | MDN"  
 
-[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "Vidéo sur Project Web App"
+[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "Vidéo sur Project Web App"  
+
+[CloudfourThinksProgressiveRoadmapYourWebApp]: https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app "Plan progressif de votre application Web progressive"  
+
+[Davrous20191018MythBustingPwasNewEdgeEdition]: https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition "PWAs: la nouvelle version de Microsoft Edge"  
+
+[Fberriman20170626NamingProgressiveWebApps]: https://fberriman.com/2017/06/26/naming-progressive-web-apps "Attribution d’un nom aux applications Web progressives"  
+
+[JoretegBlogBettingWeb]: https://joreteg.com/blog/betting-on-the-web "Paris sur le Web"  
+
+[MediumWebEdgeOfflinePostsProgressiveWebApps]: https://medium.com/web-on-the-edge/offline-posts-with-progressive-web-apps-fc2dc4ad895 "Billets hors ligne avec des applications Web progressives"  
 
 [PWABuilder]: https://www.pwabuilder.com "PWABuilder"  
+
+[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-1 "Conception et création d’une application Web progressive sans infrastructure (partie 1)"  
+
+[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2 "Conception et création d’une application Web progressive sans infrastructure (partie 2)"  
+
+[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3 "Conception et création d’une application Web progressive sans infrastructure (partie 3)"  
 
 [WebDevGoodPwaChecklist]: https://web.dev/pwa-checklist "Qu’est-ce qu’une application Web progressive? | Web. dev"  
 
