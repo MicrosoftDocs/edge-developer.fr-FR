@@ -36,7 +36,7 @@ ms.locfileid: "11004132"
 
 ### <span data-ttu-id="4ee22-114">Emulation surface Duo et Samsung Galaxy Fold</span><span class="sxs-lookup"><span data-stu-id="4ee22-114">Emulate Surface Duo and Samsung Galaxy Fold</span></span>  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Fonctionnalités expérimentales":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio":::
    <span data-ttu-id="4ee22-116">Fonctionnalités expérimentales</span><span class="sxs-lookup"><span data-stu-id="4ee22-116">Experimental feature</span></span>  
 :::image-end:::  
 
@@ -48,7 +48,7 @@ ms.locfileid: "11004132"
 *   <span data-ttu-id="4ee22-120">[Rendu de la couture][DualScreenIntroductionHowWorkSeam], qui est l’espace entre les deux écrans.</span><span class="sxs-lookup"><span data-stu-id="4ee22-120">[Rendering the seam][DualScreenIntroductionHowWorkSeam], which is the space between the two screens.</span></span>
 *   <span data-ttu-id="4ee22-121">[Activation d’API de plateforme Web expérimentale][DevtoolsExperimentalFeaturesEnableExperimentalApis] pour accéder à la nouvelle [fonctionnalité d’affichage de contenu multimédia CSS][DualScreenWebCssMediaSpanning] et à l' [API getWindowSegments JavaScript][DualScreenWebJavascriptGetwindowsegments].</span><span class="sxs-lookup"><span data-stu-id="4ee22-121">[Enabling experimental Web Platform APIs][DevtoolsExperimentalFeaturesEnableExperimentalApis] to access the new [CSS media screen-spanning feature][DualScreenWebCssMediaSpanning] and [JavaScript getWindowSegments API][DualScreenWebJavascriptGetwindowsegments].</span></span>  
 
-:::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Émulation d’appareil pour le duo de surface" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
+:::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
    <span data-ttu-id="4ee22-123">Émulation d’appareil pour le duo de surface</span><span class="sxs-lookup"><span data-stu-id="4ee22-123">Device emulation for Surface Duo</span></span>  
 :::image-end:::  
 
@@ -62,7 +62,7 @@ ms.locfileid: "11004132"
 
 <span data-ttu-id="4ee22-128">Nous vous remercions des commentaires positifs relatifs aux superpositions de grille CSS améliorées.</span><span class="sxs-lookup"><span data-stu-id="4ee22-128">Thank you for the positive feedback about the improved CSS grid overlays.</span></span>  <span data-ttu-id="4ee22-129">Les superpositions de grille CSS sont désormais activées par défaut et ne nécessitent pas d’activation d’une expérience.</span><span class="sxs-lookup"><span data-stu-id="4ee22-129">The CSS grid overlays are now enabled by default and do not require you to turn on an experiment.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="Superposition de grille CSS pour l’élément article" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
+:::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
    <span data-ttu-id="4ee22-131">Superposition de grille CSS pour un `article` élément</span><span class="sxs-lookup"><span data-stu-id="4ee22-131">CSS grid overlay for `article` element</span></span>  
 :::image-end:::  
 
@@ -83,12 +83,12 @@ ms.locfileid: "11004132"
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="sortie de l’API de table table dans Microsoft Edge 85 ou version antérieure" lightbox="../../media/2020/08/console-table-beta.msft.png":::
+      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/console-table-beta.msft.png":::
          `table` <span data-ttu-id="4ee22-142">Sortie de l’API de console dans Microsoft Edge 85 ou version antérieure</span><span class="sxs-lookup"><span data-stu-id="4ee22-142">Console API output in Microsoft Edge 85 or earlier</span></span>  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="sortie de l’API de la console de tableau de Microsoft Edge 85 ou antérieure collée dans le code Visual Studio" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
+      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
          `table` <span data-ttu-id="4ee22-144">Sortie de l’API de console de Microsoft Edge 85 ou antérieure collée dans le code Visual Studio</span><span class="sxs-lookup"><span data-stu-id="4ee22-144">Console API output from Microsoft Edge 85 or earlier pasted into Visual Studio Code</span></span>  
       :::image-end:::  
    :::column-end:::
@@ -98,12 +98,12 @@ ms.locfileid: "11004132"
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="sortie de l’API de table table dans Microsoft Edge 86 ou version ultérieure" lightbox="../../media/2020/08/console-table-canary.msft.png":::
+      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/console-table-canary.msft.png":::
          `table` <span data-ttu-id="4ee22-147">Sortie de l’API de console dans Microsoft Edge 86 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="4ee22-147">Console API output in Microsoft Edge 86 or later</span></span>  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="sortie de l’API de table table de Microsoft Edge 86 ou version ultérieure collée dans le code Visual Studio" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
+      :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
          `table` <span data-ttu-id="4ee22-149">Sortie de l’API de console de Microsoft Edge 86 ou version ultérieure collée dans le code Visual Studio</span><span class="sxs-lookup"><span data-stu-id="4ee22-149">Console API output from Microsoft Edge 86 or later pasted into Visual Studio Code</span></span>  
       :::image-end:::  
    :::column-end:::
@@ -113,13 +113,13 @@ ms.locfileid: "11004132"
 
 ### <span data-ttu-id="4ee22-151">Visionneuse de commandes sources pour faciliter les tests d’accessibilité</span><span class="sxs-lookup"><span data-stu-id="4ee22-151">Source Order Viewer for easier accessibility testing</span></span>  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Fonctionnalités expérimentales":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio":::
    <span data-ttu-id="4ee22-153">Fonctionnalités expérimentales</span><span class="sxs-lookup"><span data-stu-id="4ee22-153">Experimental feature</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="4ee22-154">Le nouveau programme d’assistance d’accessibilité affiche l’ordre des éléments dans la source.</span><span class="sxs-lookup"><span data-stu-id="4ee22-154">The new accessibility helper displays the order of elements in the source.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/source-order-viewer.msft.png" alt-text="Activer l’ordre d’affichage des sources" lightbox="../../media/2020/08/source-order-viewer.msft.png":::
+:::image type="complex" source="../../media/2020/08/source-order-viewer.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/source-order-viewer.msft.png":::
    <span data-ttu-id="4ee22-156">Activer l' **ordre d’affichage des sources**</span><span class="sxs-lookup"><span data-stu-id="4ee22-156">Activate **Show source order**</span></span>  
 :::image-end:::  
 
@@ -138,12 +138,12 @@ Your feedback and internal discoveries uncovered which text strings used in the 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Microsoft Edge DevTools in Traditional Chinese" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
+      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
          Microsoft Edge DevTools 85 and earlier in Traditional Chinese  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Microsoft Edge DevTools in Japanese" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
+      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
          Microsoft Edge DevTools 86  or later in Traditional Chinese  
       :::image-end:::  
    :::column-end:::
@@ -160,7 +160,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="4ee22-166">Nous vous remercions d’avoir envoyé vos commentaires et de nous aider à améliorer le chrome.</span><span class="sxs-lookup"><span data-stu-id="4ee22-166">Thank you for sending your feedback and helping improve Chromium.</span></span>  <span data-ttu-id="4ee22-167">Votre commentaire n’a pas été détecté [#1103316][CR1103316] dans le projet de chrome Open-source.</span><span class="sxs-lookup"><span data-stu-id="4ee22-167">Your feedback uncovered Issue [#1103316][CR1103316] in the open-source Chromium project.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Premiers résultats de recherche du panneau éléments dans Microsoft Edge 84 ou version ultérieure" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
+:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
    <span data-ttu-id="4ee22-169">Premiers résultats de recherche du panneau **éléments** dans Microsoft Edge 84 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="4ee22-169">Highlighted first search result on **Elements** panel in Microsoft Edge 84 or later</span></span>  
 :::image-end:::  
 
@@ -180,7 +180,7 @@ The current effort to improve translation quality enables easier support for mor
 
 1.  <span data-ttu-id="4ee22-176">Sélectionnez **personnaliser et contrôler devtools** \ ( `...` \) > **plus d’outils**  >  **multimédia**.</span><span class="sxs-lookup"><span data-stu-id="4ee22-176">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Media**.</span></span>  
     
-    :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="Nouvelle fenêtre multimédia" lightbox="../../media/2020/08/media-panel.msft.png":::
+    :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/media-panel.msft.png":::
        <span data-ttu-id="4ee22-178">Nouvelle fenêtre **multimédia**</span><span class="sxs-lookup"><span data-stu-id="4ee22-178">New **Media** panel</span></span>  
     :::image-end:::  
 
@@ -197,7 +197,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="4ee22-186">Par exemple, pour prendre une capture d’écran de la table des matières, pointez sur l’élément, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez **capturer le nœud de capture**.</span><span class="sxs-lookup"><span data-stu-id="4ee22-186">For example, to take a screenshot of the table of contents, hover on the element, open the contextual menu \(right-click\), and select **Capture node screenshot**.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="Capture d’écran de nœuds" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
+:::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
    <span data-ttu-id="4ee22-188">Capture d’écran de nœuds</span><span class="sxs-lookup"><span data-stu-id="4ee22-188">Capture node screenshots</span></span>  
 :::image-end:::  
 
@@ -209,13 +209,13 @@ The current effort to improve translation quality enables easier support for mor
 
 <!--todo: this figure need to be updated  -->  
 
-:::image type="complex" source="../../media/2020/08/issue-console-msg.msft.png" alt-text="Problèmes dans le message de la console" lightbox="../../media/2020/08/issue-console-msg.msft.png":::
+:::image type="complex" source="../../media/2020/08/issue-console-msg.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/issue-console-msg.msft.png":::
    <span data-ttu-id="4ee22-193">Problèmes dans le message de la console</span><span class="sxs-lookup"><span data-stu-id="4ee22-193">Issues in console message</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="4ee22-194">Les problèmes de cookie tiers sont désormais cachés par défaut dans l’outil **problèmes** .</span><span class="sxs-lookup"><span data-stu-id="4ee22-194">Third-party cookie issues are now hidden by default in the **Issues** tool.</span></span>  <span data-ttu-id="4ee22-195">Activez la nouvelle case à cocher **inclure les problèmes de cookie tiers** pour afficher les problèmes.</span><span class="sxs-lookup"><span data-stu-id="4ee22-195">Enable the new **Include third-party cookie issues** checkbox to view the issues.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/third-party-cookies.msft.png" alt-text="case à cocher problèmes de cookie tiers" lightbox="../../media/2020/08/third-party-cookies.msft.png":::
+:::image type="complex" source="../../media/2020/08/third-party-cookies.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/third-party-cookies.msft.png":::
    <span data-ttu-id="4ee22-197">case à cocher problèmes de cookie tiers</span><span class="sxs-lookup"><span data-stu-id="4ee22-197">third-party cookie issues checkbox</span></span>  
 :::image-end:::  
 
@@ -229,7 +229,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="4ee22-202">Lorsque l’option **Désactiver les polices locales** est activée, devtools ignore les `local()` polices et récupère chacune du réseau.</span><span class="sxs-lookup"><span data-stu-id="4ee22-202">When **Disable local fonts** is enabled, DevTools ignores the `local()` fonts and fetches each from the network.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/disable-font.msft.png" alt-text="Émuler des polices locales manquantes" lightbox="../../media/2020/08/disable-font.msft.png":::
+:::image type="complex" source="../../media/2020/08/disable-font.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/disable-font.msft.png":::
    <span data-ttu-id="4ee22-204">Émuler des polices locales manquantes</span><span class="sxs-lookup"><span data-stu-id="4ee22-204">Emulate missing local fonts</span></span>  
 :::image-end:::  
 
@@ -250,7 +250,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="4ee22-214">L' [API de détection de veille][WebDevIdleDetection] permet aux développeurs de détecter les utilisateurs inactifs et de réagir aux changements d’État inactifs.</span><span class="sxs-lookup"><span data-stu-id="4ee22-214">The [Idle Detection API][WebDevIdleDetection] allows developers to detect inactive users and react on idle state changes.</span></span>  <span data-ttu-id="4ee22-215">Vous pouvez maintenant utiliser DevTools pour émuler les changements d’état inactif dans l’outil **capteurs** pour l’état de l’utilisateur et l’état de l’écran, au lieu d’attendre que l’état d’inactivité réelle change.</span><span class="sxs-lookup"><span data-stu-id="4ee22-215">You are now able to use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.</span></span>  <span data-ttu-id="4ee22-216">Vous pouvez ouvrir l’outil **capteurs** à partir du [tiroir][DevtoolsCustomizeIndexDrawer].</span><span class="sxs-lookup"><span data-stu-id="4ee22-216">You may open the **Sensors** tool from the [Drawer][DevtoolsCustomizeIndexDrawer].</span></span>  
 
-:::image type="complex" source="../../media/2020/08/emulate-idle.msft.png" alt-text="Émuler des utilisateurs inactifs" lightbox="../../media/2020/08/emulate-idle.msft.png":::
+:::image type="complex" source="../../media/2020/08/emulate-idle.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/emulate-idle.msft.png":::
    <span data-ttu-id="4ee22-218">Émuler des utilisateurs inactifs</span><span class="sxs-lookup"><span data-stu-id="4ee22-218">Emulate inactive users</span></span>  
 :::image-end:::  
 
@@ -265,7 +265,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="4ee22-225">Vous pouvez maintenant utiliser DevTools pour émuler la `prefers-reduced-data` requête multimédia.</span><span class="sxs-lookup"><span data-stu-id="4ee22-225">You may now use DevTools to emulate the `prefers-reduced-data` media query.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/emulate-prefers-reduced-data.msft.png" alt-text="Imitez les préférences-Reduced-Data" lightbox="../../media/2020/08/emulate-prefers-reduced-data.msft.png":::
+:::image type="complex" source="../../media/2020/08/emulate-prefers-reduced-data.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/emulate-prefers-reduced-data.msft.png":::
    <span data-ttu-id="4ee22-227">Imitez les préférences-Reduced-Data</span><span class="sxs-lookup"><span data-stu-id="4ee22-227">Emulate prefers-reduced-data</span></span>  
 :::image-end:::  
 
@@ -294,7 +294,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="4ee22-245">Auparavant DevTools afficher une liste imbriquée dans le volet de l' **Application** > volet **travailleurs du service** .</span><span class="sxs-lookup"><span data-stu-id="4ee22-245">Previously DevTools displayed a list nested under the **Application** panel > **Service workers** pane.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="Créer un lien vers d’autres origines" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
+:::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
    <span data-ttu-id="4ee22-247">Créer un lien vers d’autres origines</span><span class="sxs-lookup"><span data-stu-id="4ee22-247">Link to other origins</span></span>  
 :::image-end:::  
 
@@ -308,12 +308,12 @@ The current effort to improve translation quality enables easier support for mor
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare.msft.png" alt-text="Résumé de couverture" lightbox="../../media/2020/08/coverage-compare.msft.png":::
+      :::image type="complex" source="../../media/2020/08/coverage-compare.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/coverage-compare.msft.png":::
          <span data-ttu-id="4ee22-255">Résumé de couverture</span><span class="sxs-lookup"><span data-stu-id="4ee22-255">Coverage summary</span></span>  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="Résumé de couverture des éléments filtrés" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
+      :::image type="complex" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
          <span data-ttu-id="4ee22-257">Résumé de couverture des éléments filtrés</span><span class="sxs-lookup"><span data-stu-id="4ee22-257">Coverage summary for filtered items</span></span>  
       :::image-end:::  
    :::column-end:::
@@ -325,7 +325,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="4ee22-260">DevTools affiche désormais une vue détaillée pour chaque image.</span><span class="sxs-lookup"><span data-stu-id="4ee22-260">DevTools now show a detailed view for each frame.</span></span>  <span data-ttu-id="4ee22-261">Pour y accéder, sélectionnez un cadre sous le menu **cadres** dans le volet de l' **application** .</span><span class="sxs-lookup"><span data-stu-id="4ee22-261">To access it, choose a frame under the **Frames** menu in the **Application** panel.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="Nouvelle vue détaillée d’une image dans le panneau application" lightbox="../../media/2020/08/frame-details.msft.png":::
+:::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/frame-details.msft.png":::
    <span data-ttu-id="4ee22-263">Nouvelle vue détaillée d’une image dans le panneau **application**</span><span class="sxs-lookup"><span data-stu-id="4ee22-263">New detailed view for a frame in **Application** panel</span></span>  
 :::image-end:::  
 
@@ -335,7 +335,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="4ee22-266">Les fenêtres et fenêtres contextuelles ouvertes s’affichent désormais sous l’arborescence de trames.</span><span class="sxs-lookup"><span data-stu-id="4ee22-266">Open windows and pop-up windows now display under the frame tree as well.</span></span>  <span data-ttu-id="4ee22-267">Le mode d’affichage détaillé des fenêtres ouvertes inclut des informations supplémentaires sur la sécurité.</span><span class="sxs-lookup"><span data-stu-id="4ee22-267">The detailed view of the opened windows includes additional security information.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="Nouvelle vue détaillée du cadre pour les fenêtres ouvertes" lightbox="../../media/2020/08/window-opener.msft.png":::
+:::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/window-opener.msft.png":::
    <span data-ttu-id="4ee22-269">Nouvelle vue détaillée du cadre pour les fenêtres ouvertes</span><span class="sxs-lookup"><span data-stu-id="4ee22-269">New frame detailed view for opened windows</span></span>  
 :::image-end:::  
 
@@ -345,7 +345,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="4ee22-272">Context sécurisée, [Cross-Origin-Integration-Policy (COEP)][WebDevCoopCoep]et [Cross-Origin-Open-Policy (Coop)][WebDevCoopCoep] s’affichent désormais dans les détails de trame.</span><span class="sxs-lookup"><span data-stu-id="4ee22-272">Secure context, [Cross-Origin-Embedder-Policy (COEP)][WebDevCoopCoep], and [Cross-Origin-Opener-Policy (COOP)][WebDevCoopCoep] are now displayed in the frame details.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/coep-coop.msft.png" alt-text="Informations de sécurité et d’isolement" lightbox="../../media/2020/08/coep-coop.msft.png":::
+:::image type="complex" source="../../media/2020/08/coep-coop.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/coep-coop.msft.png":::
    <span data-ttu-id="4ee22-274">Informations de sécurité et d’isolement</span><span class="sxs-lookup"><span data-stu-id="4ee22-274">Security and isolation information</span></span>  
 :::image-end:::  
 
@@ -361,7 +361,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="4ee22-280">Dans l’exemple ci-dessous, vous `h1` avez du texte à contraste élevé.</span><span class="sxs-lookup"><span data-stu-id="4ee22-280">In the example below, `h1` has low contrast text.</span></span>  <span data-ttu-id="4ee22-281">Pour résoudre ce problème, ouvrez le sélecteur de couleurs de la `color` propriété dans le volet **styles** .</span><span class="sxs-lookup"><span data-stu-id="4ee22-281">To fix it, open the color picker of the `color` property in the **Styles** pane.</span></span>  <span data-ttu-id="4ee22-282">Une fois que vous avez développé la section **coefficient de contraste** , devtools fournit des suggestions couleur AA et AAA.</span><span class="sxs-lookup"><span data-stu-id="4ee22-282">After you expand the **Contrast ratio** section, DevTools provides AA and AAA color suggestions.</span></span>  <span data-ttu-id="4ee22-283">Pour appliquer la couleur, sélectionnez la couleur suggérée.</span><span class="sxs-lookup"><span data-stu-id="4ee22-283">Select the suggested color to apply the color.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="Le sélecteur de couleurs suggère des suggestions couleur AA et AAA" lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
+:::image type="complex" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
    <span data-ttu-id="4ee22-285">Le sélecteur de couleurs suggère des suggestions couleur AA et AAA</span><span class="sxs-lookup"><span data-stu-id="4ee22-285">Color picker suggests AA and AAA color suggestions</span></span>  
 :::image-end:::  
 
@@ -371,7 +371,7 @@ The current effort to improve translation quality enables easier support for mor
 
 <span data-ttu-id="4ee22-288">Le volet **Propriétés** est en retour.</span><span class="sxs-lookup"><span data-stu-id="4ee22-288">The **Properties** pane is back.</span></span>  <span data-ttu-id="4ee22-289">Elle a été [déconseillée dans Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].</span><span class="sxs-lookup"><span data-stu-id="4ee22-289">It was [deprecated in Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].</span></span>  <span data-ttu-id="4ee22-290">L’équipe Microsoft Edge DevTools et l’équipe DevTools chrome présentent des améliorations en matière d’examen des propriétés des éléments.</span><span class="sxs-lookup"><span data-stu-id="4ee22-290">The Microsoft Edge DevTools team and the Chrome DevTools team are planning improvements for inspecting properties of elements.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="Volet Propriétés dans le panneau éléments" lightbox="../../media/2020/08/properties-pane.msft.png":::
+:::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/properties-pane.msft.png":::
    <span data-ttu-id="4ee22-292">Volet **Propriétés** dans le panneau **éléments**</span><span class="sxs-lookup"><span data-stu-id="4ee22-292">**Properties** pane in the **Elements** panel</span></span>  
 :::image-end:::  
 
@@ -384,7 +384,7 @@ When inspecting a network resource in the Network panel, DevTools now formats an
 
 The `X-Client-Data` HTTP header contains a list of experiment IDs and Microsoft Edge flags that are enabled in your browser.  The raw header values look like opaque strings since the values are `base-64-encoded`, serialized [protocol buffers][GoogleDevelopersProtocolBuffers].  To make the contents more transparent to developers, DevTools now shows the decoded values.  
 
-:::image type="complex" source="../../media/2020/08/x-client-data.msft.png" alt-text="Human-readable `X-Client-Data` header values" lightbox="../../media/2020/08/x-client-data.msft.png":::
+:::image type="complex" source="../../media/2020/08/x-client-data.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/x-client-data.msft.png":::
    Human-readable `X-Client-Data` header values  
 :::image-end:::  
 
@@ -397,7 +397,7 @@ Chromium issue: [#1103854][CR1103854]
 
 <span data-ttu-id="4ee22-297">Par exemple, si `monospace` vous disposez d’une police personnalisée installée sur l’ordinateur local, celle-ci apparaît dans la liste de saisie semi-automatique CSS.</span><span class="sxs-lookup"><span data-stu-id="4ee22-297">For example, if `monospace` is a custom font installed on the local machine, it's displayed in the CSS completion list.</span></span> <span data-ttu-id="4ee22-298">Dans les versions précédentes de Microsoft Edge, la police n’est pas affichée.</span><span class="sxs-lookup"><span data-stu-id="4ee22-298">In previous versions of Microsoft Edge, the font wasn't displayed.</span></span>
 
-:::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="Saisie semi-automatique de polices personnalisées" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
+:::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
    <span data-ttu-id="4ee22-300">Saisie semi-automatique de polices personnalisées</span><span class="sxs-lookup"><span data-stu-id="4ee22-300">Autocomplete custom fonts</span></span>  
 :::image-end:::  
 
@@ -409,7 +409,7 @@ Chromium issue: [#1103854][CR1103854]
 
 <span data-ttu-id="4ee22-304">Auparavant DevTools modifié ce type sur `Other` parfois.</span><span class="sxs-lookup"><span data-stu-id="4ee22-304">Previously DevTools changed the type to `Other` sometimes.</span></span>  
 
-:::image type="complex" source="../../media/2020/08/network-redirect.msft.png" alt-text="Afficher le type de ressource rediriger" lightbox="../../media/2020/08/network-redirect.msft.png":::
+:::image type="complex" source="../../media/2020/08/network-redirect.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/network-redirect.msft.png":::
    <span data-ttu-id="4ee22-306">Afficher le type de ressource rediriger</span><span class="sxs-lookup"><span data-stu-id="4ee22-306">Display redirect resource type</span></span>  
 :::image-end:::  
 
@@ -426,12 +426,12 @@ Chromium issue: [#1103854][CR1103854]
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="Boutons effacer dans les panneaux d’éléments" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
+      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
          <span data-ttu-id="4ee22-314">Boutons effacer dans les panneaux d' **éléments**</span><span class="sxs-lookup"><span data-stu-id="4ee22-314">Clear buttons in the **Elements** panels</span></span>  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="Boutons effacer dans les panneaux réseau" lightbox="../../media/2020/08/clear-button-network.msft.png":::
+      :::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../../media/2020/08/clear-button-network.msft.png":::
          <span data-ttu-id="4ee22-316">Boutons effacer dans les panneaux **réseau**</span><span class="sxs-lookup"><span data-stu-id="4ee22-316">Clear buttons in the  **Network** panels</span></span>  
       :::image-end:::  
    :::column-end:::

@@ -36,8 +36,10 @@
   href: roadmap.md
 - name: Procédures
   items:
+    - name: Chargeur de liens statiques
+      href: howto/static.md
     - name: Débogage WebView2
-      href: howto/Debug.md
+      href: howto/debug.md
     - name: Automatiser avec le pilote Edge
       href: howto/webdriver.md
 - name: Référence
