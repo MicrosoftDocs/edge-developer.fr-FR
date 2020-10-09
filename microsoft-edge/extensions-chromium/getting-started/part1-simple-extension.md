@@ -1,63 +1,61 @@
 ---
-description: Extensions démarrées 1ère partie
-title: Créez une extension simple qui s’affiche avec la NASA image du jour.
+description: Créez une extension qui s’affiche avec la NASA image du jour.
+title: Didacticiel créer une extension-partie 1
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
-ms.topic: article
+ms.date: 09/23/2020
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: Edge-chrome, développement Web, html, CSS, JavaScript, développeur, extensions
-ms.openlocfilehash: 826401869b98d339e9b156a3727d94bd1182063d
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+ms.openlocfilehash: 3809bfac714621cf97184127132487ed93958a2f
+ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015764"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104706"
 ---
-# Créez une extension simple qui s’affiche avec la NASA image du jour. 
- 
-<!--  
-[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart1]  
--->  
+# Didacticiel créer une extension-partie 1  
 
-## Présentation  
+## Vue d'ensemble  
 
-Dans la première partie, l’objectif est de générer une extension de chrome de contour très simple à partir d’un répertoire vide.  L’objectif de cette extension consiste à effectuer les tâches suivantes.  
+L’objectif de ce didacticiel consiste à créer une extension Microsoft Edge (chrome) à partir d’un répertoire vide. Nous allons générer une extension qui s’affiche avec la NASA image du jour. Dans ce didacticiel, vous allez découvrir comment créer une extension en procédant comme suit:
 
-*   Créer des icônes pour l’extension pouvant être utilisées à plusieurs emplacements et de tailles différentes  
-*   Créer un `manifest.json` fichier simple  
-*   Afficher une icône de lancement qui, lorsqu’elle est sélectionnée, affiche une fenêtre contextuelle contenant l’image de NASA du jour.  
+*   Création d’un `manifest.json` fichier.  
+*   Ajouter des icônes.  
+*   Ouverture d’une boîte de dialogue contextuelle par défaut.  
 
-## Notions de base des fichiers manifeste  
+## Avant de commencer
 
-Chaque package d’extension doit avoir un `manifest.json` fichier à la racine.  Vous devez considérer ceci comme le plan de l’extension.  Il indique au moteur du navigateur quelle version de l’API d’extension est attendue, le nom et la description de l’extension ainsi que de nombreuses autres informations, dont la plupart sont décrites dans le Guide de mise en route de l’extension multipoint.  
+Si vous souhaitez tester l’extension complète que vous allez générer dans ce didacticiel, téléchargez le [code source][ArchiveExtensionGettingStartedPart1].  
 
-Voici un simple  `manifest.json`  
+## Étape 1: créer un `manifest.json` fichier
+
+Chaque package d’extension doit avoir un `manifest.json` fichier à la racine.  Le manifeste fournit des détails sur votre extension, la version du package d’extension, le nom de l’extension et la description, etc.  
+
+L’extrait de code suivant présente les informations de base nécessaires dans votre `manifest.json` fichier.  
 
 ```json
 {
-    "name": "NASA Picture of the day viewer",
+    "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 2,
-    "description": "A Chromium Extension to show the NASA Picture of the Day."
+    "description": "A Chromium extension to display the NASA picture of the day."
 }
 ```  
 
-## Configuration des icônes d’extension  
+## Étape 2: ajouter des icônes  
 
-Ensuite, ajoutez des icônes au `manifest.json` fichier \ (et créez un nouveau `/icons` répertoire avec les icônes fichiers \).  Les icônes sont utilisées pour l’image d’arrière-plan du bouton que l’utilisateur sélectionne pour lancer l’extension \ (le cas échéant) et d’autres emplacements appropriés.  
+Commencez par créer le `icons` répertoire dans votre projet pour stocker les fichiers image d’icône.  Les icônes sont utilisées pour l’image d’arrière-plan du bouton que les utilisateurs sélectionnent pour lancer l’extension.  
 
-`PNG` est le format recommandé, mais vous pouvez également utiliser `BMP` , `GIF` `ICO` et `JPEG` .  Il est recommandé de toujours disposer d’au moins une icône de taille de 128x128 pixels et le navigateur le redimensionne automatiquement le cas échéant.  
-
-Votre structure d’annuaire doit ressembler à ce qui suit.  
-
-<!--  
-:::image type="complex" source="./media/part1-heirarchy.png" alt-text="Directory Structure":::
-   Directory Structure
+:::image type="complex" source="./media/part1-badge1.png" alt-text="Dans la barre d’outils pour ouvrir votre extension&quot;:::
+   Dans la barre d’outils pour ouvrir votre extension
 :::image-end:::
--->  
 
-<!--![Directory Structure][ImagePart1Heirarchy]  -->  
+Pour les icônes, nous vous recommandons d’utiliser: 
+*   `PNG` mettre en forme des icônes, mais vous pouvez également utiliser des `BMP` `GIF` `ICO` formats, ou `JPEG` .  
+*   Images de 128 x 128 PX, redimensionnées par le navigateur si nécessaire.  
+
+Les répertoires de votre projet doivent être similaires à la structure suivante.   
 
 ```shell
 └── part1
@@ -69,85 +67,44 @@ Votre structure d’annuaire doit ressembler à ce qui suit.
         └── nasapod128x128.png
 ```  
 
-Le fichier mis à jour `manifest.json` doit apparaître comme suit.  
+Ajoutez ensuite les icônes au `manifest.json` fichier. Mettez à jour votre `manifest.json` fichier à l’aide des informations d’icônes de sorte qu’il corresponde à l’extrait de code suivant. Les `png` fichiers répertoriés dans le code suivant sont disponibles dans le fichier de téléchargement mentionné précédemment dans cet article.  
 
 ```json
 {
-    "name": "NASA Picture of the day viewer",
-    "version": "0.0.0.1",
-    "manifest_version": 2,
-    "description": "A chromium extension to show the NASA Picture of the Day.",
-    "icons": {
-        "16": "icons/nasapod16x16.png",
-        "32": "icons/nasapod32x32.png",
-        "48": "icons/nasapod48x48.png",
-        "128": "icons/nasapod128x128.png"
+    &quot;name&quot;: &quot;NASA picture of the day viewer&quot;,
+    &quot;version&quot;: &quot;0.0.0.1&quot;,
+    &quot;manifest_version&quot;: 2,
+    &quot;description&quot;: &quot;A chromium extension to show the NASA picture of the day.&quot;,
+    &quot;icons&quot;: {
+        &quot;16&quot;: &quot;icons/nasapod16x16.png&quot;,
+        &quot;32&quot;: &quot;icons/nasapod32x32.png&quot;,
+        &quot;48&quot;: &quot;icons/nasapod48x48.png&quot;,
+        &quot;128&quot;: &quot;icons/nasapod128x128.png"
     }
 }
 ```  
 
-> [!NOTE]
-> Le fichier d’icônes `png` indiqué dans le code précédent est disponible dans le téléchargement zip mentionné en haut de cette page.  
+## Étape 3: ouvrir une boîte de dialogue contextuelle par défaut  
 
-## Ajout d’une boîte de dialogue contextuelle par défaut  
+À présent, créez un `HTML` fichier qui s’exécute lorsque l’utilisateur lance votre extension.  Créez le fichier HTML appelé `popup.html` dans un répertoire appelé `popup` .  Lorsque les utilisateurs sélectionnent l’icône pour lancer l’extension, `popup/popup.html` s’affichent sous forme de boîte de dialogue modale.  
 
-À présent, créez un `HTML` fichier qui s’exécute automatiquement lorsque l’utilisateur clique sur l’icône extension.  
-
-:::image type="complex" source="./media/part1-badge1.png" alt-text="Icône de badge de barre d’outils":::
-   Icône de badge de barre d’outils
-:::image-end:::
-
-<!--![Toolbar Badge Icon][ImagePart1Badge1]  -->  
-
-Le fichier HTML est nommé `popup/popup.html` .  La sélection de l’icône de l’extension `popup/popup.html` s’exécute comme une boîte de dialogue modale qui s’affiche jusqu’à ce que vous ayez sélectionné hors de la boîte  
-
-Pour cela, enregistrez le fichier comme fenêtre contextuelle par défaut dans le `manifest.json` `browser_action` code suivant.  
-
-```json
-{
-    "name": "NASA Picture of the day viewer",
-    "version": "0.0.0.1",
-    "manifest_version": 2,
-    "description": "A chromium Extension to show the NASA Picture of the Day.",
-    "icons": {
-        "16": "icons/nasapod16x16.png",
-        "32": "icons/nasapod32x32.png",
-        "48": "icons/nasapod48x48.png",
-        "128": "icons/nasapod128x128.png"
-    },
-    "browser_action": {
-        "default_popup": "popup/popup.html"
-    }
-}
-```  
-
-Dans l' `popup` annuaire, ajoutez le fichier `popup.html` et demandez-lui de générer le rendu de l’image étoiles.  Voici le `popup.html` fichier.  
+Ajoutez le code de l’extrait de code suivant pour `popup.html` afficher l’image de l’étoile.  
 
 ```html
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>NASA Picture of the Day</title>
+        <title>NASA picture of the day</title>
     </head>
     <body>
         <div>
-            <img src="/images/stars.jpeg" alt="stars" />
+            <img src="/images/stars.jpeg" alt="Display the stars image" />
         </div>
     </body>
 </html>
 ```  
 
- Ajoutez également un fichier image `images/stars.jpeg` référencé dans le `popup.html` fichier.  
-
-La structure d’annuaire de l’exemple d’extension est affichée dans le schéma suivant.  
-
-<!--  
-:::image type="complex" source="./media/part1-heirarchy1.png" alt-text="Directory Structure for Extension":::
-   Directory Structure for Extension
-:::image-end:::
--->  
-
-<!--![Directory Structure for Extension][ImagePart1Heirarchy1]  -->  
+Assurez-vous d’ajouter le fichier image `images/stars.jpeg` au dossier images.  Les répertoires de votre projet doivent être similaires à la structure suivante.   
 
 ```shell
 └── part1
@@ -163,52 +120,29 @@ La structure d’annuaire de l’exemple d’extension est affichée dans le sch
         └── popup.html
 ```  
 
-<!--  
-> [!NOTE]
-> The `images/stars.jpeg` file listed in the previous image is available in the [zip download][ArchiveExtensionGettingStartedPart1].  
--->  
+Enfin, vérifiez que vous inscrivez la fenêtre contextuelle `manifest.json` sous `browser_action` , comme illustré dans l’extrait de code suivant.  
 
-C’est tout ce dont vous avez besoin pour créer une extension de travail.  Il ne reste plus qu’à le tester.  
+```json
+{
+    "name": "NASA picture of the day viewer",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "A chromium extension to display the NASA picture of the day.",
+    "icons": {
+        "16": "icons/nasapod16x16.png",
+        "32": "icons/nasapod32x32.png",
+        "48": "icons/nasapod48x48.png",
+        "128": "icons/nasapod128x128.png"
+    },
+    "browser_action": {
+        "default_popup": "popup/popup.html"
+    }
+}
+```  
 
-La section suivante explique comment charger l’extension \ (parfois appelée chargement sur le côté \) dans le navigateur Microsoft Edge \ (chrome \) pour la tester.  
+## Étapes suivantes
+C’est tout ce dont vous avez besoin pour développer une extension de travail. À présent, passez à charger et testez votre extension. Pour plus d’informations, voir [charger une extension][TestExtensionSideload].  
 
-## Exécutez votre extension localement dans votre navigateur lors de la création de celle-ci.  
-
-Le navigateur Microsoft Edge \ (chrome \) vous permet d’exécuter facilement et de déboguer vos extensions lors du développement.  
-
-Le processus est relativement simple.  Vous devez d’abord sélectionner les points de suspension en haut de votre navigateur.  Sélectionnez ensuite `Extensions` dans le menu contextuel, comme illustré dans l’image suivante.  
-
-:::image type="complex" source="./media/part1-threedots.png" alt-text="Choisir les extensions":::
-   Choisir les extensions
-:::image-end:::
-
-<!--![Choose Extensions][ImagePart1Threedots]  -->  
-
-Lorsque vous vous trouvez sur la page **Extensions** comme illustré dans l’image suivante, activez le **mode développeur** en activant le bouton bascule en bas à gauche de la page, comme illustré dans l’image suivante.  
-
-:::image type="complex" source="./media/part1-developermode-toggle.png" alt-text="Activer le mode développeur":::
-   Activer le mode développeur
-:::image-end:::
-
-<!--![Enable Developer Mode][ImagePart1DevelopermodeToggle]  -->  
-
-## Installation et mise à jour des extensions installées hors Windows Store  
-
-Lorsque vous voulez installer votre extension pour la première fois, vous devez choisir l' `Load Unpacked` option comme illustré dans l’image suivante.  Vous êtes invité à indiquer un répertoire dans lequel vous pouvez classer les ressources d’extension par fichier.  Cette opération installe l’extension comme si vous l’avez déjà téléchargée depuis le Windows Store.  
-
-:::image type="complex" source="./media/part1-installed-extension.png" alt-text="Extensions installées":::
-   Extensions installées
-:::image-end:::
-
-<!--![Installed Extensions][ImagePart1InstalledExtension]  -->  
-
-Après avoir installé votre extension, vous pouvez la mettre à jour en sélectionnant le `Reload` bouton sous votre liste de extensions.  
-
-Pour supprimer l’extension de votre navigateur, cliquez sur le `Remove` bouton situé en bas de la liste des extensions.  
-
-## Extensions de débogage  
-
-Le débogage d’extensions est relativement simple et prend en charge toutes les fonctionnalités dans DevTools de chrome.  Ces informations ne sont pas abordées dans ce guide de mise en route; il est toutefois essentiel de générer correctement les extensions.  
 
 <!-- image links -->  
 
@@ -221,4 +155,6 @@ Le débogage d’extensions est relativement simple et prend en charge toutes le
 
 <!-- links -->  
 
-[ArchiveExtensionGettingStartedPart1]: ./extension-source/extension-getting-started-part1.zip "Source du package d’extension terminée pour cette partie | Documents Microsoft"  
+[ArchiveExtensionGettingStartedPart1]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1 "Source du package d’extension terminée | Documents Microsoft"
+
+[TestExtensionSideload]: ./extension-sideloading.md "Testez votre extension (chargement indépendant) | Documents Microsoft"

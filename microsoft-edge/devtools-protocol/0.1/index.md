@@ -7,12 +7,12 @@ ms.date: 03/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.openlocfilehash: 29dc8f1b0ba67cb2b3155cb2135d488609e9bff9
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 3c0648467c20572a525fe257788068966efd193c
+ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10565482"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104734"
 ---
 # Notes de publication de la version 0,1 du protocole DevTools
 
