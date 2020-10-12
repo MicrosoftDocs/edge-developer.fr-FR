@@ -144,7 +144,7 @@
           href: devtools-guide-chromium/issues/index.md
         - name: Menu de commande
           href: devtools-guide-chromium/command-menu/index.md
-        - name: Simulation mobile
+        - name: Émulation
           items:
             - name: Vue d'ensemble
               href: devtools-guide-chromium/device-mode/index.md
@@ -236,6 +236,8 @@
               href: devtools-guide-chromium/memory-problems/heap-snapshots.md
             - name: Utiliser l’instrumentation d’allocation sur la chronologie
               href: devtools-guide-chromium/memory-problems/allocation-profiler.md
+        - name: Media
+          href: devtools-guide-chromium/media-panel/index.md
         - name: Espaces travail
           href: devtools-guide-chromium/workspaces/index.md
         - name: Applications web progressives
