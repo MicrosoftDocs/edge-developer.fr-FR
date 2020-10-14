@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 09/08/2020
+  ms.date: 10/14/2020
   ms.localizationpriority: high
-  ms.openlocfilehash: 053bd46133e1e476bd30539ad09c74d17814a0d4
-  ms.sourcegitcommit: 744e2ecf42bcc427ae33e5dadbf6cd48ee0ab6a5
+  ms.openlocfilehash: 9400bf4be62a4050b7d6511386ee5e66777b18fd
+  ms.sourcegitcommit: 1ad087b00df16fd7718a5d95226de57e29b335e1
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/17/2020
-  ms.locfileid: "11016735"
+  ms.lasthandoff: 10/14/2020
+  ms.locfileid: "11117811"
 highlightedContent:
   items:
   - title: Microsoft Edge (canal stable officiel)
@@ -102,50 +102,20 @@ additionalContent:
   sections:
   - title: Microsoft Edge pour les développeurs
     items:
-    - title: Commencer à utiliser DevTools
+    - title: DevTools
       links:
       - text: Présentation de DevTools
         url: /microsoft-edge/devtools-guide-chromium
-      - text: Nouveautés
-        url: /microsoft-edge/devtools-guide-chromium/whats-new/2020/08/devtools
-      - text: Ouvrir DevTools
-        url: /microsoft-edge/devtools-guide-chromium/open
       - text: DevTools pour les débutants
         url: /microsoft-edge/devtools-guide-chromium/beginners/html
-      - text: CSS
-        url: /microsoft-edge/devtools-guide-chromium/css/index
-      - text: Guides
-        url: /microsoft-edge/devtools-guide-chromium/css/print-preview
-      - text: Ressources
-        url: /microsoft-edge/devtools-guide-chromium/resources/index
-    - title: Guides d’outils individuels
-      links:
-      - text: Console
-        url: /microsoft-edge/devtools-guide-chromium/console/index
-      - text: Network
-        url: /microsoft-edge/devtools-guide-chromium/network/index
-      - text: Stockage
-        url: /microsoft-edge/devtools-guide-chromium/storage/cookies
-      - text: Menu de commande
-        url: /microsoft-edge/devtools-guide-chromium/command-menu/index
-      - text: JavaScript
-        url: /microsoft-edge/devtools-guide-chromium/javascript/index
-      - text: Niveau de performance
-        url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/index
-      - text: Débogage à distance
-        url: /microsoft-edge/devtools-guide-chromium/remote-debugging/index
-      - text: Sécurité
-        url: /microsoft-edge/devtools-guide-chromium/security/index
-    - title: Personnaliser DevTools
-      links:
-      - text: Vue d'ensemble
-        url: /microsoft-edge/devtools-guide-chromium/customize/index
-      - text: Thème foncé
-        url: /microsoft-edge/devtools-guide-chromium/customize/dark-theme
-      - text: Espaces travail
-        url: /microsoft-edge/devtools-guide-chromium/workspaces/index
       - text: Raccourcis clavier
         url: /microsoft-edge/devtools-guide-chromium/shortcuts
+      - text: Menu de commandes
+        url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+      - text: Ouvrir DevTools
+        url: /microsoft-edge/devtools-guide-chromium/open
+      - text: CSS
+        url: /microsoft-edge/devtools-guide-chromium/css/index
     - title: Tester & Automation
       links:
       - text: Accessibilité
@@ -210,7 +180,7 @@ additionalContent:
         url: /microsoft-edge/progressive-web-apps-chromium/webappmanifests
     - title: WebView2
       links:
-      - text: Présentation
+      - text: Vue d'ensemble
         url: /microsoft-edge/webview2/index
       - text: Commencer à utiliser WebView2
         url: /microsoft-edge/webview2/gettingstarted/win32
