@@ -8,12 +8,12 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge, ICoreWebView2Environment
-ms.openlocfilehash: 3552de59b8b349c62d61ca165141d9adddd2a5a9
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: edf573bc7c4c83c7882005937db29a068ab7b015
+ms.sourcegitcommit: 2d57b515d6ccbbe24cb3a8c8f44f9c3a26fc17a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11011823"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "11115784"
 ---
 # interface ICoreWebView2Environment 
 
@@ -224,7 +224,7 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 ```
  Lorsque l’application tente de CreateCoreWebView2Controller en cas d’échec, il est recommandé de redémarrer l’application à partir de la création d’un nouvel environnement WebView2. En cas de mise à jour latérale, la version associée à un environnement WebView2 peut avoir été supprimée et provoquer le fonctionnement de l’objet. La création d’un nouvel environnement WebView2 fonctionnera comme la version la plus récente.
 
-La création du WebView échoue si une instance est déjà en cours d’exécution en utilisant le même dossier de données utilisateur, et les objets d’environnement ont des EnvironmentOptions différents. Par exemple, si un WebView est déjà créé avec une langue, il est possible de créer un WebView avec une autre langue à l’aide du même dossier de données utilisateur.
+La création du WebView échoue si une instance est déjà en cours d’exécution en utilisant le même dossier de données utilisateur, et si les objets d’environnement ont une sensibilité différente de EnvironmentOptions ou de HWND parentWindows. Par exemple, si un WebView est déjà créé avec une langue, il est possible de créer un WebView avec une autre langue à l’aide du même dossier de données utilisateur.
 
 #### CreateWebResourceResponse 
 
