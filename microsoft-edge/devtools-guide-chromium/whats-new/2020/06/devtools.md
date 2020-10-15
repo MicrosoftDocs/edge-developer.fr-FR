@@ -28,7 +28,7 @@ ms.locfileid: "11015460"
 
 <span data-ttu-id="76e99-112">L’équipe Microsoft Edge DevTools collabore avec les membres de l’équipe chrome DevTools et de la communauté de chrome pour ajouter de nouvelles fonctionnalités de débogage de grille CSS à DevTools.</span><span class="sxs-lookup"><span data-stu-id="76e99-112">The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.</span></span>  <span data-ttu-id="76e99-113">Vous pouvez désormais afficher les numéros des lignes de la grille, les espaces de la grille et les quadrillages étendus en tant que superposition sur la page.</span><span class="sxs-lookup"><span data-stu-id="76e99-113">You are now able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.</span></span>  <span data-ttu-id="76e99-114">De plus, d’autres améliorations apportées aux outils de grille seront bientôt possibles.</span><span class="sxs-lookup"><span data-stu-id="76e99-114">Plus, more improvements to the grid tools are coming soon.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="Fonctionnalités de débogage de grille CSS" lightbox="../../media/2020/06/experiments-grid.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/experiments-grid.msft.png":::
    <span data-ttu-id="76e99-116">Fonctionnalités de débogage de grille CSS</span><span class="sxs-lookup"><span data-stu-id="76e99-116">CSS grid debugging features</span></span>
 :::image-end:::  
 
@@ -47,7 +47,7 @@ ms.locfileid: "11015460"
 
 <span data-ttu-id="76e99-123">Vous pouvez désormais utiliser les requêtes **modification et lecture** dans le [Journal du réseau][DevtoolsNetworkIndexLogActivity] à l’aide de la **console réseau**.</span><span class="sxs-lookup"><span data-stu-id="76e99-123">You are now able to use **Edit and Replay** on requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Modification et lecture d’une demande dans le NetworkLog avec la console réseau" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
    <span data-ttu-id="76e99-125">Modification et lecture d’une demande dans le [NetworkLog][DevtoolsNetworkIndexLogActivity] avec la **console réseau**</span><span class="sxs-lookup"><span data-stu-id="76e99-125">Edit and Replay a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**</span></span>  
 :::image-end:::  
 
@@ -55,7 +55,7 @@ ms.locfileid: "11015460"
 
 <span data-ttu-id="76e99-128">Vous pouvez également utiliser la **console réseau** pour créer et envoyer des demandes http directement à partir du devtools.</span><span class="sxs-lookup"><span data-stu-id="76e99-128">You may also use the **Network Console** to create and send HTTP requests directly from the DevTools.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Panneau de la console réseau" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
    <span data-ttu-id="76e99-130">Panneau de la **console réseau**</span><span class="sxs-lookup"><span data-stu-id="76e99-130">The **Network Console** panel</span></span>  
 :::image-end:::  
 
@@ -73,13 +73,13 @@ ms.locfileid: "11015460"
 
 <span data-ttu-id="76e99-136">L’onglet **minutage** du panneau **réseau** comporte désormais des `respondWith` événements de travailleur de service.</span><span class="sxs-lookup"><span data-stu-id="76e99-136">The **Timing** tab of the **Network** panel now includes `respondWith` service worker events.</span></span>  <span data-ttu-id="76e99-137">L' `respondWith` événement de travailleur de service affiche la durée du temps immédiatement avant que le `fetch` Gestionnaire d’événements du travailleur de service démarre, au moment où la `respondWith` promesse du `fetch` gestionnaire est finalisée.</span><span class="sxs-lookup"><span data-stu-id="76e99-137">The `respondWith` service worker event shows the duration from the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Événement du travailleur de service respondWith dans l’onglet Minutage du panneau réseau" lightbox="../../media/2020/06/timing-tab.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/timing-tab.msft.png":::
    <span data-ttu-id="76e99-139">`respondWith`Événement du travailleur de service sous l’onglet **minutage** du panneau **réseau**</span><span class="sxs-lookup"><span data-stu-id="76e99-139">The `respondWith` service worker event in the **Timing** tab of the **Network** panel</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="76e99-140">Développez **Response received** pour afficher d’autres informations de la `fetch` réponse comme `CacheStorageCacheName` , `serviceWorkerResponseSource` et `ResponseTime` .</span><span class="sxs-lookup"><span data-stu-id="76e99-140">Expand **Response received** to see additional information from the `fetch` response like `CacheStorageCacheName`, `serviceWorkerResponseSource`, and `ResponseTime`.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Développer la réponse reçue pour afficher des informations supplémentaires dans la réponse de récupération" lightbox="../../media/2020/06/timing-tab2.msft.png":::
+:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/timing-tab2.msft.png":::
    <span data-ttu-id="76e99-142">Développer la **réponse reçue** pour afficher des informations supplémentaires dans la `fetch` réponse</span><span class="sxs-lookup"><span data-stu-id="76e99-142">Expand **Response received** to see additional information from the `fetch` response</span></span>  
 :::image-end:::  
 
@@ -93,7 +93,7 @@ ms.locfileid: "11015460"
 
 <span data-ttu-id="76e99-147">[webhint][WebhintMain] est un outil open source qui fournit des commentaires en temps réel sur l’accessibilité, la compatibilité entre les navigateurs, la sécurité, les performances, PWAS, ainsi que d’autres problèmes courants liés au développement Web sur les sites Web.</span><span class="sxs-lookup"><span data-stu-id="76e99-147">[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.</span></span>  <span data-ttu-id="76e99-148">Vous pouvez à présent afficher des commentaires sur le webhint dans le volet [problèmes][DevtoolsIssues] .</span><span class="sxs-lookup"><span data-stu-id="76e99-148">You are now able to see webhint feedback in the [Issues][DevtoolsIssues] panel.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="Commentaires de webhint dans le volet problèmes" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    <span data-ttu-id="76e99-150">Commentaires de webhint dans le volet problèmes</span><span class="sxs-lookup"><span data-stu-id="76e99-150">webhint feedback in the Issues panel</span></span>  
 :::image-end:::  
 
@@ -112,7 +112,7 @@ ms.locfileid: "11015460"
 
 <span data-ttu-id="76e99-157">En règle générale, il est possible d’ouvrir des outils tels que des **éléments** et un **réseau** uniquement dans le panneau principal \ (Top \) de devtools.</span><span class="sxs-lookup"><span data-stu-id="76e99-157">Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.</span></span>  <span data-ttu-id="76e99-158">De même, il est possible d’ouvrir des outils tels que la vue et les **problèmes** en **3D** uniquement dans le panneau tiroir \ (en bas) de devtools.</span><span class="sxs-lookup"><span data-stu-id="76e99-158">Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.</span></span>  <span data-ttu-id="76e99-159">Vous pouvez désormais personnaliser votre disposition DevTools en déplaçant des outils entre les volets supérieur et inférieur.</span><span class="sxs-lookup"><span data-stu-id="76e99-159">You are now able to customize your DevTools layout by moving tools between the top and bottom panels.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Déplacement d’un onglet entre les panneaux" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
+:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    <span data-ttu-id="76e99-161">Déplacement d’un onglet entre les panneaux</span><span class="sxs-lookup"><span data-stu-id="76e99-161">Moving tabs between panels</span></span>  
 :::image-end:::  
 
@@ -125,13 +125,13 @@ ms.locfileid: "11015460"
 
 <span data-ttu-id="76e99-165">Dans Microsoft Edge 83 et 84, les info-bulles de la colonne Initiator, qui indique la cause de la demande de ressource, dans le [Journal de réseau][DevtoolsNetworkIndexLogActivity] affiché avec une barre de défilement horizontale.</span><span class="sxs-lookup"><span data-stu-id="76e99-165">In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevtoolsNetworkIndexLogActivity] displayed with a horizontal scrollbar.</span></span>  <span data-ttu-id="76e99-166">Vous pouvez uniquement afficher la pile d’appels à l’origine de la demande en effectuant un défilement horizontal dans l’info-bulle.</span><span class="sxs-lookup"><span data-stu-id="76e99-166">You were only able to see the call stack that initiated the request by scrolling horizontally in the tooltip.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Info-bulle de l’initiateur dans Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    <span data-ttu-id="76e99-168">Info-bulle de l’initiateur dans Microsoft Edge 84</span><span class="sxs-lookup"><span data-stu-id="76e99-168">The Initiator tooltip in Microsoft Edge 84</span></span>  
 :::image-end:::  
 
 <span data-ttu-id="76e99-169">À partir de Microsoft Edge 85, vous pouvez maintenant voir la pile d’appels d’initiateur dans l’info-bulle sans faire défiler l’affichage horizontalement.</span><span class="sxs-lookup"><span data-stu-id="76e99-169">Starting with Microsoft Edge 85, you are now able to see the Initiator call stack in the tooltip without scrolling horizontally.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Info-bulle de l’initiateur dans Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
    <span data-ttu-id="76e99-171">Info-bulle de l’initiateur dans Microsoft Edge 85</span><span class="sxs-lookup"><span data-stu-id="76e99-171">The Initiator tooltip in Microsoft Edge 85</span></span>
 :::image-end:::  
 
@@ -149,7 +149,7 @@ ms.locfileid: "11015460"
 
 <span data-ttu-id="76e99-180">Par exemple, les `h1` styles ajoutés avec `CSSStyleSheet` \ (API CSSOM \) ne sont pas modifiables auparavant.</span><span class="sxs-lookup"><span data-stu-id="76e99-180">For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) were not editable previously.</span></span>  <span data-ttu-id="76e99-181">Les styles sont désormais modifiables dans le volet **styles** .</span><span class="sxs-lookup"><span data-stu-id="76e99-181">The styles are editable now in the **Styles** pane.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Modification de la propriété Background des styles H1 ajoutés avec CSSStyleSheet de rose à LightBlue égale" lightbox="../../media/2020/06/css-in-js.msft.png":::
+:::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/css-in-js.msft.png":::
    <span data-ttu-id="76e99-183">Modification `background` de la propriété des `h1` styles ajoutés à `CSSStyleSheet` partir de `pink` à `lightblue` .</span><span class="sxs-lookup"><span data-stu-id="76e99-183">Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.</span></span>
 :::image-end:::  
 
@@ -218,7 +218,7 @@ ms.locfileid: "11015460"
 * <span data-ttu-id="76e99-209">Les icônes de raccourci de l’application sont inférieures à 96 x 96 pixels</span><span class="sxs-lookup"><span data-stu-id="76e99-209">The app shortcut icons are smaller than 96x96 pixels</span></span>  
 * <span data-ttu-id="76e99-210">Les icônes de raccourci de l’application et les icônes du manifeste ne sont pas carrées \ (dans la mesure où les icônes sont ignorées \)</span><span class="sxs-lookup"><span data-stu-id="76e99-210">The app shortcut icons and manifest icons are not square \(since the icons are ignored\)</span></span>  
 
-:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Avertissements relatifs aux raccourcis d’application" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
+:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
    <span data-ttu-id="76e99-212">Avertissements relatifs aux raccourcis d’application</span><span class="sxs-lookup"><span data-stu-id="76e99-212">App shortcut warnings</span></span>  
 :::image-end:::  
 
@@ -228,7 +228,7 @@ ms.locfileid: "11015460"
 
 <span data-ttu-id="76e99-215">Le volet **calculé** dans le panneau des **éléments** s’affiche désormais comme un volet dans toutes les tailles de fenêtre d’affichage.</span><span class="sxs-lookup"><span data-stu-id="76e99-215">The **Computed** pane in the **Elements** panel now displays consistently as a pane across all viewport sizes.</span></span>  <span data-ttu-id="76e99-216">Auparavant, le volet **calculé** fusionné à l’intérieur du volet **styles** lorsque la largeur de la fenêtre d’affichage de devtools était étroite.</span><span class="sxs-lookup"><span data-stu-id="76e99-216">Previously the **Computed** pane merged inside the **Styles** pane when the width of the DevTools viewport was narrow.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="Le volet calculé s’affiche de façon cohérente sous forme de volet distinct même lorsque le DevTools est étroit." lightbox="../../media/2020/06/computed-pane.msft.png":::
+:::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/computed-pane.msft.png":::
    <span data-ttu-id="76e99-218">Le volet **calculé** s’affiche de façon cohérente sous forme de volet distinct même lorsque le devtools est étroit.</span><span class="sxs-lookup"><span data-stu-id="76e99-218">The **Computed** pane consistently displays as a separate pane even when the DevTools are narrow.</span></span>
 :::image-end:::  
 
@@ -245,7 +245,7 @@ ms.locfileid: "11015460"
 
 <span data-ttu-id="76e99-225">Lorsque vous effectuez une opération de copie ou de coupe sans sélection dans l' [éditeur du panneau sources][DevtoolsSourcesEditCssJavascript], devtools copie ou coupe la ligne de contenu actuelle.</span><span class="sxs-lookup"><span data-stu-id="76e99-225">When performing copy or cut with no selection in the [Sources panel editor][DevtoolsSourcesEditCssJavascript], DevTools copies or cuts the current line of content.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Le curseur étant placé à la fin de la ligne 5, en copiant la ligne entière à partir de pen.js dans le DevTools et en la collant dans le code Visual Studio" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
    <span data-ttu-id="76e99-227">Le curseur étant placé à la fin de la ligne 5, vous copiez l’intégralité de la ligne à partir de **pen.js** dans le devtools et en la collant dans le [code Visual Studio][VSCode].</span><span class="sxs-lookup"><span data-stu-id="76e99-227">With the cursor at the end of Line 5, copying the whole line from **pen.js** in the DevTools and pasting in [Visual Studio Code][VSCode].</span></span>
 :::image-end:::  
 
@@ -259,7 +259,7 @@ ms.locfileid: "11015460"
 
 <span data-ttu-id="76e99-233">Par exemple, auparavant, DevTools n’a pas dissocier les `hello` messages même si le **groupe similaire** n’est pas activé.</span><span class="sxs-lookup"><span data-stu-id="76e99-233">For example, previously, DevTools did not ungroup the `hello` messages even though **Group similar** is unchecked.</span></span>  <span data-ttu-id="76e99-234">Les `hello` messages sont désormais dissociés.</span><span class="sxs-lookup"><span data-stu-id="76e99-234">Now, the `hello` messages are ungrouped.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Lorsque le groupe similaire n’est pas activé, les messages Hello ne sont pas regroupés" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
    <span data-ttu-id="76e99-236">Lorsque le **groupe similaire** est désactivé, les `hello` messages ne sont pas regroupés</span><span class="sxs-lookup"><span data-stu-id="76e99-236">When **Group similar** is unchecked, the `hello` messages are ungrouped</span></span>
 :::image-end:::  
 
@@ -271,7 +271,7 @@ ms.locfileid: "11015460"
 
 <span data-ttu-id="76e99-240">Les paramètres de **contexte sélectionnés uniquement** dans les paramètres de la console sont désormais conservés.</span><span class="sxs-lookup"><span data-stu-id="76e99-240">The **Selected context only** settings in Console Settings is now persisted.</span></span>  <span data-ttu-id="76e99-241">Auparavant, les paramètres étaient réinitialisés chaque fois que vous avez fermé et rouvert DevTools.</span><span class="sxs-lookup"><span data-stu-id="76e99-241">Previously the settings were reset every time you closed and reopened DevTools.</span></span>  <span data-ttu-id="76e99-242">La modification fait en sorte que le comportement de la configuration soit cohérent avec d’autres options de paramètres de la console.</span><span class="sxs-lookup"><span data-stu-id="76e99-242">The change makes the setting behavior consistent with other Console Settings options.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Paramètre de contexte sélectionné uniquement" lightbox="../../media/2020/06/selected-context.msft.png":::
+:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/selected-context.msft.png":::
    <span data-ttu-id="76e99-244">Paramètre de **contexte sélectionné uniquement**</span><span class="sxs-lookup"><span data-stu-id="76e99-244">**Selected context only** setting</span></span>  
 :::image-end:::  
 
@@ -283,7 +283,7 @@ ms.locfileid: "11015460"
 
 <span data-ttu-id="76e99-248">Les [informations du cache de compilation JavaScript][V8DevCodeCaching] sont désormais toujours affichées sous l’onglet Résumé du panneau performance.</span><span class="sxs-lookup"><span data-stu-id="76e99-248">[JavaScript compilation cache information][V8DevCodeCaching] is now always displayed in the Summary tab of the Performance panel.</span></span>  <span data-ttu-id="76e99-249">Auparavant, DevTools n’affichait aucune information liée à la mise en cache du code si la mise en cache du code ne s’est pas produit.</span><span class="sxs-lookup"><span data-stu-id="76e99-249">Previously, DevTools did not show anything related to code caching if code caching did not happen.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="Informations du cache de compilation JavaScript" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
+:::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
    <span data-ttu-id="76e99-251">Informations du cache de compilation JavaScript</span><span class="sxs-lookup"><span data-stu-id="76e99-251">JavaScript compilation cache information</span></span>  
 :::image-end:::  
 
@@ -293,7 +293,7 @@ ms.locfileid: "11015460"
 
 <span data-ttu-id="76e99-254">Panneau **performance** permettant de montrer les heures dans les règles en fonction de la date de début de l’enregistrement.</span><span class="sxs-lookup"><span data-stu-id="76e99-254">The **Performance** panel used to show times in the rulers based on when the recording started.</span></span>  <span data-ttu-id="76e99-255">Le minutage est désormais modifié pour les enregistrements dans lesquels l’utilisateur navigue, où DevTools affiche désormais les heures de règle relatives à la navigation à la place.</span><span class="sxs-lookup"><span data-stu-id="76e99-255">The timing has now changed for recordings where the user navigates, where DevTools now shows ruler times relative to the navigation instead.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Aligner le minutage de la navigation dans le panneau performances" lightbox="../../media/2020/06/nav-timing.msft.png":::
+:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/nav-timing.msft.png":::
    <span data-ttu-id="76e99-257">Aligner le minutage de la navigation dans le panneau **performances**</span><span class="sxs-lookup"><span data-stu-id="76e99-257">Align navigation timing in **Performance** panel</span></span>  
 :::image-end:::  
 
@@ -305,7 +305,7 @@ ms.locfileid: "11015460"
 
 <span data-ttu-id="76e99-261">Le panneau **sources** comporte de nouvelles conceptions pour les points d’arrêt, les points d’arrêt conditionnel et la logpoints.</span><span class="sxs-lookup"><span data-stu-id="76e99-261">The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.</span></span>  <span data-ttu-id="76e99-262">Les points d’arrêt sont représentés par un cercle rouge, comme le [code Visual Studio][VSCode] et [Visual Studio][VS].</span><span class="sxs-lookup"><span data-stu-id="76e99-262">Breakpoints are represented by a red circle, just like [Visual Studio Code][VSCode] and [Visual Studio][VS].</span></span>  <span data-ttu-id="76e99-263">Des icônes sont ajoutées pour différencier les points d’arrêt conditionnels et logpoints.</span><span class="sxs-lookup"><span data-stu-id="76e99-263">Icons are added to differentiate conditional breakpoints and logpoints.</span></span>  
 
-:::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Points d’arrêt" lightbox="../../media/2020/06/breakpoints.msft.png":::
+:::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Fonctionnalités expérimentales" lightbox="../../media/2020/06/breakpoints.msft.png":::
    <span data-ttu-id="76e99-265">Points d’arrêt</span><span class="sxs-lookup"><span data-stu-id="76e99-265">Breakpoints</span></span>  
 :::image-end:::  
 
