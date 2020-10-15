@@ -88,7 +88,7 @@
               href: devtools-guide-chromium/beginners/css.md
         - name: CSS
           items:
-            - name: Prise en main de l’affichage et de la modification de réplication Commerce Server
+            - name: Prise en main de l’affichage et de la modification de CSS
               href: devtools-guide-chromium/css/index.md
             - name: Référence CSS
               href: devtools-guide-chromium/css/reference.md
@@ -96,10 +96,8 @@
               href: devtools-guide-chromium/coverage/index.md
             - name: Inspecter des animations
               href: devtools-guide-chromium/inspect-styles/animations.md
-            - name: Guides
-              items:
-                - name: Forcer DevTools en mode aperçu avant impression
-                  href: devtools-guide-chromium/css/print-preview.md
+            - name: Forcer DevTools en mode aperçu avant impression
+              href: devtools-guide-chromium/css/print-preview.md
         - name: Console
           items:
             - name: Vue d'ensemble
@@ -120,7 +118,7 @@
           items:
             - name: Prise en main
               href: devtools-guide-chromium/network/index.md
-            - name: Guide des problèmes réseau
+            - name: Guide des problèmes de réseau
               href: devtools-guide-chromium/network/issues.md
             - name: Référence
               href: devtools-guide-chromium/network/reference.md
@@ -176,7 +174,7 @@
               href: devtools-guide-chromium/javascript/reference.md
             - name: Extraits de code
               href: devtools-guide-chromium/javascript/snippets.md
-            - name: Vue d’ensemble du volet sources
+            - name: Vue d’ensemble du volet Sources
               href: devtools-guide-chromium/sources.md
             - name: Services d’arrière-plan de débogage
               href: devtools-guide-chromium/javascript/background-services.md
@@ -210,7 +208,7 @@
               items:
                 - name: Effectuer le suivi de l’élément actif
                   href: devtools-guide-chromium/accessibility/focus.md
-                - name: Simulation du modèle de couleurs noir/clair
+                - name: Simulation du modèle de couleurs sombre/clair
                   href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
                 - name: Simuler un mouvement réduit
                   href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
@@ -232,7 +230,7 @@
               href: devtools-guide-chromium/memory-problems/index.md
             - name: Comprendre la terminologie de la mémoire
               href: devtools-guide-chromium/memory-problems/memory-101.md
-            - name: Enregistrer des instantanés
+            - name: Enregistrer des instantanés de segment de mémoire
               href: devtools-guide-chromium/memory-problems/heap-snapshots.md
             - name: Utiliser l’instrumentation d’allocation sur la chronologie
               href: devtools-guide-chromium/memory-problems/allocation-profiler.md
@@ -256,7 +254,7 @@
               href: devtools-guide-chromium/customize/dark-theme.md
             - name: Modifier l’emplacement
               href: devtools-guide-chromium/customize/placement.md
-            - name: Correspondance de la langue du navigateur
+            - name: Faire correspondre la langue du navigateur
               href: devtools-guide-chromium/customize/localization.md
             - name: Raccourcis
               href: devtools-guide-chromium/customize/shortcuts.md
@@ -306,7 +304,7 @@
           href: devtools-guide/memory.md
         - name: Stockage
           href: devtools-guide/storage.md
-        - name: Worker du service
+        - name: Workers du service
           href: devtools-guide/service-workers.md
         - name: Émulation
           href: devtools-guide/emulation.md
@@ -366,9 +364,9 @@
           items:
             - name: Architecture d'extension
               href: extensions-chromium/getting-started/index.md
-            - name: 'Didacticiel de création d’extension: partie1'
+            - name: Didacticiel de création d’extension (partie1)
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: 'Didacticiel de création d’extension: partie2'
+            - name: Didacticiel de création d’extension (partie2)
               href: extensions-chromium/getting-started/part2-content-scripts.md
             - name: Charger une version test d’une extension
               href: extensions-chromium/getting-started/extension-sideloading.md
@@ -376,6 +374,8 @@
           items:
             - name: Extension de Port Chromium à Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
+            - name: Migrer votre extension du manifeste v2 au manifeste v3
+              href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
             - name: Autres méthodes de distribution d’extensions
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
             - name: Messagerie native
@@ -386,23 +386,23 @@
               href: extensions-chromium/publish/publish-extension.md
             - name: Inscription des développeurs
               href: extensions-chromium/publish/create-dev-account.md
-            - name: Mise à jour de la liste des extensions
+            - name: Mettre à jour la liste des extensions
               href: extensions-chromium/publish/update.md
             - name: États de soumission
               href: extensions-chromium/publish/submission-states.md
             - name: Gérer les paramètres du compte
               href: extensions-chromium/publish/manage-settings.md
-        - name: Stratégies Microsoft Edge addons
+        - name: Stratégies des extensions Microsoft Edge
           items:
             - name: Stratégie de sécurité du contenu
               href: extensions-chromium/store-policies/csp.md
-            - name: Addendum ADA pour les développeurs
+            - name: Addendum ADA pour les développeurs Microsoft Edge
               href: extensions-chromium/store-policies/ada-addendum.md
-            - name: Stratégies pour les développeurs de catalogue Microsoft Edge addons
+            - name: Stratégies pour les développeurs de catalogue des extensions Microsoft Edge
               href: extensions-chromium/store-policies/developer-policies.md
         - name: Extensions pour les entreprises
           items:
-            - name: Correspondance des modèles
+            - name: Faire correspondre les modèles
               href: extensions-chromium/enterprise/match-patterns.md
             - name: Hébergement et mise à jour
               href: extensions-chromium/enterprise/hosting-and-updating.md
