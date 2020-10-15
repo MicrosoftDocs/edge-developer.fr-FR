@@ -3,17 +3,17 @@ description: Apprenez à utiliser JavaScript dans des scénarios complexes dans 
 title: Utiliser JavaScript dans les applications WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/12/2020
+ms.date: 10/14/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge
-ms.openlocfilehash: 5312cf6209e81a1bbcfa33f324e9b8e7ef099cec
-ms.sourcegitcommit: aec8d3482465dfb9a4f5f61c5eded1ff6f66d71d
+ms.openlocfilehash: f6e59acb0c4bf8ad5357aba87e0359d3b103ed63
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "11117698"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119065"
 ---
 # Utiliser JavaScript dans WebView pour des scénarios étendus  
 

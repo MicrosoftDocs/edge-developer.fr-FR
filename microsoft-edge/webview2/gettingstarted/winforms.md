@@ -1,25 +1,25 @@
 ---
-description: Héberger du contenu Web dans votre application Windows Forms avec le contrôle WebView 2 de Microsoft Edge
-title: Applications WebView 2 de Microsoft Edge 2 pour Windows Forms
+description: Guide de mise en route de WebView2 pour les applications WinForms
+title: Mise en route de WebView2 pour les applications WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinForms applications, WinForms, Edge, CoreWebView2, contrôle de navigateur, html Edge, mise en route, mise en route, .NET, Windows Forms
-ms.openlocfilehash: 885524581112a208e1e5134ecd7a6f7446e331ce
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: e9451d4bfafacf78f723be75379e57400d0ba914
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010732"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119079"
 ---
-# Commencer à utiliser WebView2 dans les applications Windows Forms (Preview)  
+# Mise en route de WebView2 dans Windows Forms (Preview)  
 
-Dans cet article, vous allez commencer à créer votre première application WebView2 et à découvrir les principales fonctionnalités de [WebView2 (Preview)](/microsoft-edge/hosting/webview2/index).  Pour plus d’informations sur les API individuelles, voir informations de référence sur les [API](../reference/dotnet/0-9-628-reference-webview2.md).  
+Dans cet article, vous allez commencer à créer votre première application WebView2 et à découvrir les principales fonctionnalités de [WebView2 (Preview)](/microsoft-edge/webview2/index).  Pour plus d’informations sur les API individuelles, voir informations de référence sur les [API](/dotnet/api/microsoft.web.webview2.winforms).  
 
-## Éléments prérequis  
+## Conditions préalables  
 
 Vérifiez que vous avez installé la liste des conditions préalables suivantes avant de continuer:  
 
@@ -51,8 +51,8 @@ Ajoutez ensuite le kit de développement logiciel (SDK) WebView2 au projet.  Pou
 
 1. Ouvrez le menu contextuel du projet \ (cliquez avec le bouton droit sur \) et sélectionnez **gérer les packages NuGet...**.  
 
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="NuGet":::
-       NuGet :::image-end:::
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Gérer les packages NuGet":::
+       Gérer les packages NuGet :::image-end:::
 
 1. Entrez `Microsoft.Web.WebView2` dans la barre de recherche.  Pour cela, sélectionnez **Microsoft. Web. WebView2** dans les résultats de recherche.  
 
@@ -70,17 +70,20 @@ Vous êtes prêt à commencer à développer des applications à l’aide de l�
 Ensuite, ajoutez un WebView à votre application.  
 
 1. Ouvrez le **Concepteur Windows Forms**.  
-1. Recherchez **WebView2** dans la **boîte à outils**. Faites glisser et déposez le contrôle **WebView2** dans l’application Windows Forms
-
-    ![boîtes](./media/winforms-toolbox.png)
+1. Recherchez **WebView2** dans la **boîte à outils**. Faites glisser et déposez le contrôle **WebView2** dans l’application Windows Forms.
+    
+    :::image type="complex" source="./media/winforms-toolbox.png" alt-text="Gérer les packages NuGet":::
+       Boîte à outils affichant WebView2 :::image-end:::  
 
 1. Remplacez la `Name` propriété par `webView` .
-
-    ![boîtes](./media/winforms-properties.png)
+    
+    :::image type="complex" source="./media/winforms-properties.png" alt-text="Gérer les packages NuGet":::
+       Propriétés du contrôle WebView2 :::image-end:::
 
 1. La `Source` propriété définit l’URI initial affiché dans le contrôle WebView2. Définissez la propriété source sur <https://www.microsoft.com>
-
-    ![boîtes](./media/winforms-source.png)
+    
+    :::image type="complex" source="./media/winforms-source.png" alt-text="Gérer les packages NuGet":::
+       Propriété source du contrôle WebView2 :::image-end:::
 
 Sélectionnez `F5` pour générer et exécuter votre projet.  Vérifiez que votre contrôle WebView2 s’affiche [https://www.microsoft.com](https://www.microsoft.com) .
 
@@ -163,7 +166,7 @@ L’application qui héberge les contrôles WebView2 écoute les événements su
 
 Pour plus d’informations, voir [événements de navigation](../concepts/navigation-events.md).  
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="Événements de navigation":::
+:::image type="complex" source="../media/navigation-events.png" alt-text="Gérer les packages NuGet":::
    Événements de navigation
 :::image-end:::
 
@@ -296,7 +299,7 @@ Félicitations, vous avez créé votre première application WebView2.
 ## Étapes suivantes 
 
 * Extraire le [référentiel Samples WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) pour obtenir un exemple complet de fonctionnalités WebView2's
-* Référence sur l' [API](../reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md) d’extraction pour plus d’informations sur nos API
+* Référence sur l' [API](/dotnet/api/microsoft.web.webview2.winformswebview2) d’extraction pour plus d’informations sur nos API
 * Extraire une liste de [ressources WebView2](../index.md#next-steps) pour en savoir plus sur WebView2
 
 

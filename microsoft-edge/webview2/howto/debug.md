@@ -3,17 +3,17 @@ description: Découvrez comment déboguer des contrôles WebView2.
 title: Commencer le débogage des applications WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/21/2020
+ms.date: 10/14/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge
-ms.openlocfilehash: 78c0fb982de8ccce71a8df2b59447b55f64fdc2f
-ms.sourcegitcommit: 24151cc65bad92d751a8e7a868c102e1121456e3
+ms.openlocfilehash: 25a710796b499a78a43045266058029caa890b78
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052142"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119107"
 ---
 # Commencer le débogage des applications WebView2  
 
@@ -55,7 +55,7 @@ Installez et configurez les outils de débogage de script dans Visual Studio.
     1. Dans le programme d’installation de Visual Studio, sur la version installée, sélectionnez le bouton **plus** , puis sélectionnez **modifier**.  
     1. Dans Visual Studio, sous **charges de travail**, choisissez le paramètre **développement de bureau en C++** .  
         
-        :::image type="complex" source="./media/workloads.png" alt-text="Écran modification de la charge de travail dans Visual Studio" lightbox="./media/workloads.png":::
+        :::image type="complex" source="./media/workloads.png" alt-text="Débogage DevTools" lightbox="./media/workloads.png":::
             Écran modification de la charge de travail dans Visual Studio :::image-end:::  
         
     1.  Choisissez **des composants individuels**.  
@@ -63,7 +63,7 @@ Installez et configurez les outils de débogage de script dans Visual Studio.
     1.  Sélectionnez le paramètre **Diagnostics JavaScript** .  
     1.  Sélectionnez **modifier**. 
         
-        :::image type="complex" source="./media/indivcomp.png" alt-text="Onglet de modification de composants individuels dans Visual Studio" lightbox="./media/indivcomp.png":::
+        :::image type="complex" source="./media/indivcomp.png" alt-text="Débogage DevTools" lightbox="./media/indivcomp.png":::
            Onglet de modification de composants individuels dans Visual Studio  
         :::image-end:::  
         
@@ -72,7 +72,7 @@ Installez et configurez les outils de débogage de script dans Visual Studio.
     1.  Sous les **Propriétés de configuration**, sélectionnez **débogage**.  
     1.  Sous le **type de débogueur**, choisissez **JavaScript (WebView2)**.  
         
-        :::image type="complex" source="./media/enbjs.png" alt-text="Propriété de configuration du débogage de Visual Studio" lightbox="./media/enbjs.png":::
+        :::image type="complex" source="./media/enbjs.png" alt-text="Débogage DevTools" lightbox="./media/enbjs.png":::
            Propriété de configuration du **débogage** de Visual Studio  
         :::image-end:::  
         
@@ -80,19 +80,19 @@ Effectuez les opérations suivantes pour déboguer votre application WebView2.
 
 1.  Pour définir un point d’arrêt dans votre code source, positionnez le curseur à gauche du numéro de ligne et choisissez de définir un point d’arrêt.  L’adaptateur de débogage JS/TS n’effectue pas le mappage de chemin d’accès source.  Vous devez ouvrir exactement le même chemin d’accès associé à votre WebView2.  
     
-    :::image type="complex" source="./media/breakpoint.png" alt-text="Ajouter un point d’arrêt dans Visual Studio" lightbox="./media/breakpoint.png"::: 
+    :::image type="complex" source="./media/breakpoint.png" alt-text="Débogage DevTools" lightbox="./media/breakpoint.png"::: 
        Ajouter un point d’arrêt dans Visual Studio  
     :::image-end:::  
     
 1.  Pour exécuter le débogueur, choisissez la taille en bits de la plateforme, puis sélectionnez le bouton de lecture de couleur verte en regard du **débogueur Windows local**.  L’application s’exécute et le débogueur se connecte au premier processus WebView2 créé.  
     
-    :::image type="complex" source="./media/run.png" alt-text=" Débogueur Windows de Visual Studio local" lightbox="./media/run.png"::: 
+    :::image type="complex" source="./media/run.png" alt-text="Débogage DevTools" lightbox="./media/run.png"::: 
        **Débogueur Windows** de Visual Studio local  
     :::image-end:::  
     
 1.  Dans la **console de débogage**, recherchez la sortie du débogueur.  
     
-    :::image type="complex" source="./media/console.png" alt-text=" Console de débogage de Visual Studio" lightbox="./media/console.png"::: 
+    :::image type="complex" source="./media/console.png" alt-text="Débogage DevTools" lightbox="./media/console.png"::: 
        Console de **débogage** de Visual Studio  
     :::image-end:::  
     
@@ -119,7 +119,7 @@ Dans le code Visual Studio, effectuez les actions suivantes pour déboguer votre
         
 1.  Pour définir un point d’arrêt dans votre code source, pointez sur la ligne, puis sélectionnez `F9`
     
-    :::image type="complex" source="./media/breakpointvs.png" alt-text="Le point d’arrêt est défini dans le code Visual Studio" lightbox="./media/breakpointvs.png":::
+    :::image type="complex" source="./media/breakpointvs.png" alt-text="Débogage DevTools" lightbox="./media/breakpointvs.png":::
        Le point d’arrêt est défini dans le code Visual Studio  
     :::image-end:::
     
@@ -130,13 +130,13 @@ Dans le code Visual Studio, effectuez les actions suivantes pour déboguer votre
     1.  Dans l’onglet **exécuter** , choisissez la configuration de lancement dans le menu déroulant.  
     1.  Pour démarrer le débogage de votre application, sélectionnez Démarrer le débogage, qui est le triangle vert en regard de la liste déroulante de configuration de lancement.  
         
-        :::image type="complex" source="./media/runvs.png" alt-text=" Onglet exécuter de code Visual Studio" lightbox="./media/runvs.png":::
+        :::image type="complex" source="./media/runvs.png" alt-text="Débogage DevTools" lightbox="./media/runvs.png":::
            Onglet exécuter de code Visual Studio  
         :::image-end:::  
         
 1.  Ouvrez la **console de débogage** pour afficher les erreurs et la sortie de débogage.  
     
-    :::image type="complex" source="./media/resultsvs.png" alt-text=" Console de débogage de code Visual Studio" lightbox="./media/resultsvs.png":::
+    :::image type="complex" source="./media/resultsvs.png" alt-text="Débogage DevTools" lightbox="./media/resultsvs.png":::
        Console de débogage de code Visual Studio  
     :::image-end:::  
     
@@ -208,7 +208,7 @@ Dans le code Visual Studio, effectuez les actions suivantes pour déboguer votre
                 ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
               ```  
               
-              :::image type="complex" source="./media/tracelog.png" alt-text=" Enregistrez la sortie de débogage dans un fichier journal." lightbox="./media/tracelog.png":::
+              :::image type="complex" source="./media/tracelog.png" alt-text="Débogage DevTools" lightbox="./media/tracelog.png":::
                  Enregistrer la sortie de débogage dans un fichier journal  
               :::image-end:::  
            :::column-end:::
@@ -217,7 +217,7 @@ Dans le code Visual Studio, effectuez les actions suivantes pour déboguer votre
               ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
               ```  
               
-              :::image type="complex" source="./media/verbose.png" alt-text=" Sortie détaillée" lightbox="./media/verbose.png":::
+              :::image type="complex" source="./media/verbose.png" alt-text="Débogage DevTools" lightbox="./media/verbose.png":::
                  Sortie du débogage de code Visual Studio avec l’affichage suivi détaillé activé  
               :::image-end:::  
            :::column-end:::
@@ -236,7 +236,7 @@ Dans le code Visual Studio, effectuez les actions suivantes pour déboguer votre
     Vous pouvez rencontrer les situations suivantes lors de l’utilisation du débogueur.  
 
     *   Le débogueur ne s’arrête pas au point d’arrêt et vous avez une sortie de débogage.  Pour résoudre ce problème, vérifiez que le fichier contenant le point d’arrêt est le même que celui utilisé par le contrôle WebView2.  Le débogueur n’effectue pas le mappage de chemin d’accès source.  
-    *   Vous ne pouvez pas attacher de processus en cours d’exécution et vous obtenez une erreur de temporisation.  Pour résoudre ce problème, vérifiez que le contrôle WebView2 a ouvert le port CDP.  Vérifiez que votre  `additionalBrowserArguments`  valeur dans le Registre est correcte ou que les options sont correctes.  Pour plus d’informations, reportez-vous à [additionalBrowserArguments pour dotnet] [Webview2ReferenceDotnet09515MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] et [additionalBrowserArguments pour Win32] [Webview2ReferenceWin3209538Webview2IdlParameters].  
+    *   Vous ne pouvez pas attacher de processus en cours d’exécution et vous obtenez une erreur de temporisation.  Pour résoudre ce problème, vérifiez que le contrôle WebView2 a ouvert le port CDP.  Vérifiez que votre  `additionalBrowserArguments`  valeur dans le Registre est correcte ou que les options sont correctes.  Pour plus d’informations, consultez [additionalBrowserArguments pour dotnet][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] et [additionalBrowserArguments pour Win32][Webview2ReferenceWin32Webview2IdlParameters].  
     
 * * *  
 
@@ -258,8 +258,8 @@ Dans le code Visual Studio, effectuez les actions suivantes pour déboguer votre
 
 [DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Outils de développement Microsoft Edge (chrome)"  
 
-[Webview2ReferenceDotnet09628MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: ../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environmentoptions.md#additionalbrowserarguments "AdditionalBrowserArguments-0.9.515-Microsoft. Web. WebView2. Core. CoreWebView2EnvironmentOptions classe | Documents Microsoft"  
-[Webview2ReferenceWin3209622Webview2IdlParameters]: ../reference/win32/0-9-622/webview2-idl.md#createcorewebview2environment  "CreateCoreWebView2Environment-global | Documents Microsoft"  
+[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "Propriété CoreWebView2EnvironmentOptions. AdditionalBrowserArguments (Microsoft. Web. WebView2. Core) | Documents Microsoft"  
+[Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment-global | Documents Microsoft"  
 [Webview2ApiReference]: ../webview2-api-reference.md "Référence sur l’API Microsoft Edge WebView2 | Documents Microsoft"  
 [Webview2MainNextSteps]: ../index.md#next-steps "Étapes suivantes-présentation de Microsoft Edge WebView2 (Preview) | Documents Microsoft"  
 [Webview2MainGettingStarted]: ../index.md#getting-started "Mise en route-présentation de Microsoft Edge WebView2 (Preview) | Documents Microsoft"  

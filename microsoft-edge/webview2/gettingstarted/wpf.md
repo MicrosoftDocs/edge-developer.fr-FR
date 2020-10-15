@@ -1,25 +1,25 @@
 ---
-description: Héberger le contenu Web dans votre application WPF avec le contrôle WebView 2 de Microsoft Edge
-title: Applications WebView 2 de Microsoft Edge 2 pour les applications WPF
+description: Guide de mise en route de WebView2 pour les applications WPF
+title: Mise en route de WebView2 pour les applications WPF
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, applications WPF, WPF, Edge, CoreWebView2, contrôle de navigateur, html Edge, mise en route, mise en route, .NET
-ms.openlocfilehash: 65cd858cc314060e75113337f0ae6efc59896a43
-ms.sourcegitcommit: 0faf538d5033508af4320b9b89c4ed99872f0574
+ms.openlocfilehash: 8a18d12f30872ce3dd373e40ce8c7a4f0c4edad9
+ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11010723"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119114"
 ---
 # Commencer à utiliser WebView2 dans WPF (Preview)
 
-Dans cet article, vous allez commencer à créer votre première application WebView2 et à découvrir les principales fonctionnalités de [WebView2 (Preview)](../index.md).  Pour plus d’informations sur les API individuelles, voir informations de référence sur les [API](../reference/dotnet/0-9-628-reference-webview2.md).  
+Dans cet article, vous allez commencer à créer votre première application WebView2 et à découvrir les principales fonctionnalités de [WebView2 (Preview)](../index.md).  Pour plus d’informations sur les API individuelles, voir informations de référence sur les [API](/dotnet/api/microsoft.web.webview2.wpf).  
 
-## Éléments prérequis  
+## Conditions préalables  
 
 Vérifiez que vous avez installé la liste des conditions préalables suivantes avant de continuer:  
 
@@ -39,7 +39,7 @@ Utiliser un projet de bureau de base contenant une seule fenêtre principale.
              Noyau WPF :::image-end:::
        :::column-end:::
        :::column span="1":::
-          :::image type="complex" source="./media/wpf-gettingstarted-wpffw.png" alt-text="Infrastructure WPF":::
+          :::image type="complex" source="./media/wpf-gettingstarted-wpffw.png" alt-text="Noyau WPF":::
              Infrastructure WPF :::image-end:::
        :::column-end:::
     :::row-end:::
@@ -48,11 +48,11 @@ Utiliser un projet de bureau de base contenant une seule fenêtre principale.
     
     :::row:::
            :::column span="1":::
-              :::image type="complex" source="./media/wpf-gettingstarted-createcore.png" alt-text="Créer un cœur":::
+              :::image type="complex" source="./media/wpf-gettingstarted-createcore.png" alt-text="Noyau WPF":::
                  Créer un cœur :::image-end:::
            :::column-end:::
            :::column span="1":::
-              :::image type="complex" source="./media/wpf-gettingstarted-createfw.png" alt-text="Créer une infrastructure":::
+              :::image type="complex" source="./media/wpf-gettingstarted-createfw.png" alt-text="Noyau WPF":::
                  Créer une infrastructure :::image-end:::
            :::column-end:::
         :::row-end:::
@@ -65,7 +65,7 @@ Ajoutez ensuite le kit de développement logiciel (SDK) WebView2 au projet.  Pou
 
 1.  Ouvrez le menu contextuel du projet \ (cliquez avec le bouton droit sur \), puis sélectionnez **gérer les packages NuGet...**.  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="NuGet":::
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Noyau WPF":::
        NuGet
     :::image-end:::
     
@@ -78,7 +78,7 @@ Ajoutez ensuite le kit de développement logiciel (SDK) WebView2 au projet.  Pou
     
     Vous êtes prêt à commencer à développer des applications à l’aide de l’API WebView2.  Sélectionnez `F5` pour générer et exécuter le projet.  Le projet en cours d’exécution affiche une fenêtre vide.  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Application vide":::
+    :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Noyau WPF":::
        Application vide
     :::image-end:::  
     
@@ -125,7 +125,7 @@ Ensuite, ajoutez un WebView à votre application.
     
 1.  Appuyez `F5` pour générer et exécuter votre projet.  Vérifiez que votre contrôle WebView2 s’affiche [https://www.microsoft.com](https://www.microsoft.com) .  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="Microsoft.com":::
+    :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="Noyau WPF":::
        Microsoft.com
     :::image-end:::  
     
@@ -183,7 +183,7 @@ Ajoutez la possibilité d’autoriser les utilisateurs à modifier l’URL d’a
     > [!NOTE]
     > Vérifiez qu’une URL complète est entrée dans la barre d’adresses.  `ArgumentException`A est levé si l’URL ne commence pas par `http://` ou `https://` .  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-bing.png" alt-text="Bing":::
+    :::image type="complex" source="./media/wpf-gettingstarted-bing.png" alt-text="Noyau WPF":::
        Bing
     :::image-end:::
     
@@ -199,7 +199,7 @@ L’application qui héberge les contrôles WebView2 écoute les événements su
 
 Pour plus d’informations, voir [événements de navigation](../concepts/navigation-events.md).  
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="Événements de navigation":::
+:::image type="complex" source="../media/navigation-events.png" alt-text="Noyau WPF":::
    Événements de navigation
 :::image-end:::  
 
@@ -240,7 +240,7 @@ Appuyez `F5` pour générer et exécuter votre projet.  Confirmez que lorsque vo
 
 Vous pouvez utiliser des applications hôtes pour injecter du code JavaScript dans les contrôles WebView2 lors de l’exécution.  Le JavaScript injecté s’applique à tous les nouveaux documents de niveau supérieur ainsi qu’à toute image enfant jusqu’à ce que le JavaScript soit supprimé.  Le JavaScript injecté est exécuté après la création de l’objet global et avant l’exécution de tout autre script inclus dans le document HTML.  
 
-Vous pouvez utiliser les scripts pour alerter l’utilisateur lorsque vous naviguez vers un site non HTTPs.  Modifiez la `EnsureHttps` fonction de telle sorte qu’elle injecte le script dans le contenu Web à l’aide de la méthode [ExecuteScriptAsync](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#executescriptasync) .  
+Vous pouvez utiliser les scripts pour alerter l’utilisateur lorsque vous naviguez vers un site non HTTPs.  Modifiez la `EnsureHttps` fonction de telle sorte qu’elle injecte le script dans le contenu Web à l’aide de la méthode [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) .  
 
 ```csharp
 void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
@@ -256,7 +256,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 Appuyez `F5` pour générer et exécuter votre projet.  Vérifiez que l’application affiche une alerte lorsque vous naviguez vers un site qui n’utilise pas HTTPs.  
 
-:::image type="complex" source="./media/wpf-gettingstarted-https.png" alt-text="HTTPS":::
+:::image type="complex" source="./media/wpf-gettingstarted-https.png" alt-text="Noyau WPF":::
    HTTPS
 :::image-end:::  
 
@@ -271,7 +271,7 @@ Ce mécanisme de communication permet au contenu Web de transmettre des messages
 
 Dans votre projet, lorsque le contrôle WebView2 navigue vers une URL, il affiche l’URL dans la barre d’adresse et avertit l’utilisateur de l’URL qui s’affiche dans le contrôle WebView2.  
 
-1.  Dans **MainWindow.Xaml.cs**, mettez à jour votre constructeur et créez une `InitializeAsync` fonction comme illustré dans l’extrait de code suivant.  La `InitializeAsync` fonction est en attente [EnsureCoreWebView2Async](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#ensurecorewebview2async) , car l’initialisation de `CoreWebView2` est asynchrone.  
+1.  Dans **MainWindow.Xaml.cs**, mettez à jour votre constructeur et créez une `InitializeAsync` fonction comme illustré dans l’extrait de code suivant.  La `InitializeAsync` fonction est en attente [EnsureCoreWebView2Async](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async) , car l’initialisation de `CoreWebView2` est asynchrone.  
     
     ```csharp
     public MainWindow()
@@ -324,7 +324,7 @@ Dans votre projet, lorsque le contrôle WebView2 navigue vers une URL, il affich
     
     Appuyez `F5` pour générer et exécuter l’application.  À présent, la barre d’adresses affiche l’URI dans le WebView et, lorsque vous accédez à un nouvel URI, le WebView avertit l’utilisateur de l’URI affiché dans le WebView.  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-searchbar.png" alt-text="addressBar":::
+    :::image type="complex" source="./media/wpf-gettingstarted-searchbar.png" alt-text="Noyau WPF":::
        addressBar
     :::image-end:::
 
@@ -333,7 +333,7 @@ Félicitations, vous avez créé votre première application WebView2.
 ## Étapes suivantes  
 
 *   Pour obtenir un exemple complet de fonctionnalités WebView2, voir [WebView2Samples référentiel Samples](https://github.com/MicrosoftEdge/WebView2Samples) sur GitHub.  
-*   Pour plus d’informations sur les API WebView2, voir informations de référence sur les [API](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md).  
+*   Pour plus d’informations sur les API WebView2, voir informations de référence sur les [API](/dotnet/api/microsoft.web.webview2.wpf.webview2).  
 *   Pour plus d’informations sur WebView2, voir [ressources WebView2](../index.md#next-steps).  
 
 ## Contacter l’équipe WebView de Microsoft Edge  
