@@ -36,6 +36,8 @@
   href: roadmap.md
 - name: Procédures
   items:
+    - name: Scénarios JavaScript étendus de WebView2
+      href: howto/js.md
     - name: Chargeur de liens statiques
       href: howto/static.md
     - name: Débogage WebView2
