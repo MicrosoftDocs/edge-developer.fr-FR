@@ -3,17 +3,17 @@ description: Guide de mise en route de WebView2 pour les applications WinForms
 title: Mise en route de WebView2 pour les applications WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 10/15/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinForms applications, WinForms, Edge, CoreWebView2, contrôle de navigateur, html Edge, mise en route, mise en route, .NET, Windows Forms
-ms.openlocfilehash: e9451d4bfafacf78f723be75379e57400d0ba914
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+ms.openlocfilehash: 90d25816b862d6096856faf439436706c98f7dbe
+ms.sourcegitcommit: 442de63da52d00c6dc27fa08ccdb736534127566
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119079"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "11120087"
 ---
 # Mise en route de WebView2 dans Windows Forms (Preview)  
 
@@ -299,7 +299,7 @@ Félicitations, vous avez créé votre première application WebView2.
 ## Étapes suivantes 
 
 * Extraire le [référentiel Samples WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) pour obtenir un exemple complet de fonctionnalités WebView2's
-* Référence sur l' [API](/dotnet/api/microsoft.web.webview2.winformswebview2) d’extraction pour plus d’informations sur nos API
+* Référence sur l' [API](/dotnet/api/microsoft.web.webview2.winforms.webview2) d’extraction pour plus d’informations sur nos API
 * Extraire une liste de [ressources WebView2](../index.md#next-steps) pour en savoir plus sur WebView2
 
 
