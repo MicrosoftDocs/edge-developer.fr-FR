@@ -3,16 +3,16 @@ description: Découvrez comment afficher et modifier des données IndexedDB à l
 title: Afficher et modifier des données de IndexedDB avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 6b1209ddcbfac305535d9d61e001441dbf61b6ec
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 54d232780e5e071ce34cdfb55e12daed6f631491
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993561"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125432"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,11 @@ ms.locfileid: "10993561"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
+# Afficher et modifier des données de IndexedDB avec Microsoft Edge DevTools  
 
+Ce guide vous montre comment utiliser [Microsoft Edge devtools][MicrosoftEdgeDevTools] pour afficher et modifier des données [IndexedDB][MDNIndexedDBAPI] .  Il part du principe que vous êtes familiarisé avec DevTools.  Il suppose également que vous êtes familiarisé avec IndexedDB.  Si ce n’est pas le cas, accédez à [utiliser IndexedDB][MDNUsingIndexedDB].  
 
-
-
-# Afficher et modifier des données de IndexedDB avec Microsoft Edge DevTools   
-
-  
-
-Ce guide vous montre comment utiliser [Microsoft Edge devtools][MicrosoftEdgeDevTools] pour afficher et modifier des données [IndexedDB][MDNIndexedDBAPI] .  Il part du principe que vous êtes familiarisé avec DevTools.  Il suppose également que vous êtes familiarisé avec IndexedDB.  Si ce n’est pas le cas, voir [utilisation de IndexedDB][MDNUsingIndexedDB].  
-
-## Afficher les données de IndexedDB   
+## Afficher les données de IndexedDB  
 
 1.  Sélectionnez l’onglet **application** pour ouvrir le volet de l' **application** .  Le volet **manifeste** s’ouvre généralement par défaut.  
     
@@ -48,7 +42,7 @@ Ce guide vous montre comment utiliser [Microsoft Edge devtools][MicrosoftEdgeDev
     
 1.  Développez le menu **IndexedDB** pour afficher les bases de données disponibles.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="Menu de IndexedDB" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
        Menu de **IndexedDB**  
     :::image-end:::  
     
@@ -61,7 +55,7 @@ Ce guide vous montre comment utiliser [Microsoft Edge devtools][MicrosoftEdgeDev
     
 1.  Sélectionner une base de données pour afficher l’origine et le numéro de version.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="La base de données Notes" lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
        La base de données **Notes**  
     :::image-end:::  
     
@@ -70,7 +64,7 @@ Ce guide vous montre comment utiliser [Microsoft Edge devtools][MicrosoftEdgeDev
     > [!NOTE]
     > Les données IndexedDB ne sont pas mises à jour en temps réel.  Voir [Actualiser les données de IndexedDB](#refresh-indexeddb-data).  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="Magasin d’objets notes" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
        Magasin d’objets **Notes**  
     :::image-end:::  
     
@@ -79,87 +73,85 @@ Ce guide vous montre comment utiliser [Microsoft Edge devtools][MicrosoftEdgeDev
     
 1.  Sélectionnez une cellule dans la colonne **valeur** pour développer cette valeur.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="Afficher une valeur IndexedDB" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
        Afficher une valeur **IndexedDB**  
     :::image-end:::  
     
 1.  Sélectionner un index, tel que **titre** ou **corps** dans l’illustration suivante, pour trier la Banque d’objets en fonction des valeurs de cet index.  
    
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="Trier un magasin d’objets par index" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
        Trier un magasin d’objets par index  
     :::image-end:::  
     
-## Actualiser les données de IndexedDB   
+## Actualiser les données de IndexedDB  
 
-Les valeurs IndexedDB dans le panneau d' **application** ne sont pas mises à jour en temps réel.  Sélectionnez **Actualiser** \ ( ![ Actualiser ][ImageReloadIcon] \) lors de l’affichage d’un magasin d’objets pour actualiser les données, ou affichez une base de données, puis cliquez sur **Actualiser la base de données** pour actualiser toutes les données.  
+Les valeurs IndexedDB dans le panneau d' **application** ne sont pas mises à jour en temps réel.  Sélectionnez **Actualiser** \ ( ![ Actualiser ][ImageReloadIcon] \) lors de l’affichage d’un magasin d’objets pour actualiser les données, ou affichez une base de données et sélectionnez **Actualiser la base de données** pour actualiser toutes les données.  
 
-:::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Affichage d’une base de données" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
+:::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    Affichage d’une base de données  
 :::image-end:::  
 
-## Modifier les données de IndexedDB   
+## Modifier les données de IndexedDB  
 
 Les valeurs et les clés IndexedDB ne peuvent pas être modifiées dans le panneau de l' **application** .  Dans la mesure où DevTools a accès au contexte de page, vous pouvez exécuter du code JavaScript dans DevTools pour modifier les données IndexedDB.  
 
-### Modification de données IndexedDB avec des extraits de niveau   
+### Modification de données IndexedDB avec des extraits de niveau  
 
 Les [extraits][DevtoolsJavascriptSnippets] de code permettent de stocker et d’exécuter des blocs de code JavaScript dans devtools.  Lorsque vous exécutez un snippet, le résultat est enregistré dans la **console**.  Vous pouvez utiliser un extrait de code pour exécuter du code JavaScript afin de modifier une base de données IndexedDB.  
 
-:::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="Utiliser un snippet pour interagir avec IndexedDB" lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
+:::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
    Utiliser un snippet pour interagir avec IndexedDB  
 :::image-end:::  
 
-## Supprimer des données de IndexedDB   
+## Supprimer des données de IndexedDB  
 
-### Supprimer une paire clé-valeur IndexedDB   
+### Supprimer une paire clé-valeur IndexedDB  
 
 1.  [Afficher un magasin d’objets IndexedDB](#view-indexeddb-data).  
 1.  Sélectionnez la paire clé-valeur que vous voulez supprimer.  DevTools le met en surbrillance pour indiquer qu’il est sélectionné.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Sélectionner une paire clé-valeur pour la supprimer" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
        Sélectionner une paire clé-valeur pour la supprimer  
     :::image-end:::  
     
-1.  Appuyez sur la `Delete` touche ou cliquez sur **Supprimer la sélection** ![ ][ImageDeleteIcon] .  
+1.  Appuyez sur la `Delete` touche ou sélectionnez **Supprimer la sélection** \ (supprimer la ![ sélection ][ImageDeleteIcon] ).  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Aspect du magasin d’objets après la suppression de la paire clé-valeur" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
        Aspect du magasin d’objets après la suppression de la paire clé-valeur  
     :::image-end:::  
     
-### Supprimer toutes les paires clé-valeur dans un magasin d’objets   
+### Supprimer toutes les paires clé-valeur dans un magasin d’objets  
 
 1.  [Afficher un magasin d’objets IndexedDB](#view-indexeddb-data).  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="Afficher un magasin d’objets" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
        Afficher un magasin d’objets  
     :::image-end:::  
     
-1.  Sélectionnez **effacer le magasin d’objets** \ ( ![ Vider le magasin d’objets ][ImageClearIcon] \).  
+1.  Sélectionnez **effacer le magasin d’objets** \ ( ![ effacer le magasin d’objets ][ImageClearIcon] \).  
     
-### Supprimer une base de données IndexedDB   
+### Supprimer une base de données IndexedDB  
 
 1.  [Affichez la base de données IndexedDB](#view-indexeddb-data) que vous voulez supprimer.  
-1.  Sélectionnez **Supprimer la base de données**.  
+1.  Cliquez sur **Supprimer la base de données**.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="Bouton supprimer la base de données" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
        Bouton **Supprimer la base de données**  
     :::image-end:::  
     
-### Supprimer tout le stockage IndexedDB   
+### Supprimer tout le stockage IndexedDB  
 
 1.  Ouvrir le volet de **stockage effacer** .  
 1.  Vérifiez que la case à cocher **IndexedDB** est activée.  
 1.  Sélectionnez **effacer les données du site**.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="Vider le volet stockage" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
        Vider le volet **stockage**  
     :::image-end:::  
     
-<!--  
- 
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

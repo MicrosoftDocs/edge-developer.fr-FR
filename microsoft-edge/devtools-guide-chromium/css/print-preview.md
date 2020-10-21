@@ -3,16 +3,16 @@ description: Ouvrez l’onglet «Affichage», puis sélectionnez «émuler les m
 title: Force Microsoft Edge DevTools en mode d’aperçu avant impression (CSS Print Media Type)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 1b71135c5ed2d86903b76e659434ee2125985a24
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: d4e8e06d60461ac4cdcab8686a18a0698d52f6e3
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993050"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125117"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,36 +28,28 @@ ms.locfileid: "10993050"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Force Microsoft Edge DevTools en mode d’aperçu avant impression (CSS Print Media Type)   
-
-
+# Force Microsoft Edge DevTools en mode d’aperçu avant impression (CSS Print Media Type)  
 
 La [requête imprimer][MDNUsingMediaQueries] sur le média détermine l’apparence de votre page avant son impression.  Pour forcer votre page en mode aperçu avant impression:  
 
-1.  Appuyez sur `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
+1.  Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Menu de commandes" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        **Menu de commandes**  
     :::image-end:::  
     
-1.  Tapez `rendering` , sélectionnez **afficher le rendu**, puis appuyez sur `Enter` .  
+1.  Tapez `rendering` , sélectionnez **afficher le rendu**, puis sélectionnez `Enter` .  
 1.  Sous **émuler le média CSS** , sélectionnez **Imprimer**.  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="Mode aperçu avant impression" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="Menu de commandes" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
        Mode aperçu avant impression  
     :::image-end:::  
     
 À partir de cet emplacement, vous pouvez afficher et modifier votre CSS, comme n’importe quelle autre page Web.  Voir [commencer à afficher et modifier des feuilles CSS][DevToolsCSSGetStarted].  
 
-<!--  
- 
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

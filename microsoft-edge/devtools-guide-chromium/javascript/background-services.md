@@ -3,16 +3,16 @@ description: Découvrez comment déboguer une extraction en arrière-plan, une s
 title: Déboguer les services en arrière-plan avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 1724bd3a5e45734555650c3d46e377161a3a7c65
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: fb5e408eb261ae3b2145780a1d7d5566c4501936
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992868"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124816"
 ---
 <!-- Copyright Kayce Basques 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,13 +27,7 @@ ms.locfileid: "10992868"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Déboguer les services en arrière-plan avec Microsoft Edge DevTools   
-
-
+# Déboguer les services en arrière-plan avec Microsoft Edge DevTools  
 
 La section **services en arrière-plan** de Microsoft Edge devtools est une collection d’outils pour les API JavaScript qui permet à votre site Web d’envoyer et de recevoir des mises à jour même si votre site Web n’est pas ouvert sur votre site Web.  
 Un service en arrière-plan est semblable au fonctionnement d’une [processus en arrière-plan] [WikiBackgroundProcess].  
@@ -47,13 +41,13 @@ Microsoft Edge DevTools considère que chacune des API suivantes est un service 
 Microsoft Edge DevTools peut consigner les événements de service en arrière-plan pendant 3 jours, même si DevTools n’est pas ouvert.  
 Cela peut vous aider à vous assurer que les événements sont envoyés et reçus comme prévu.  Vous pouvez également examiner les détails de chaque événement.  
 
-:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Afficher les détails d’un événement dans le volet de messagerie de transmission" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
-   Afficher les détails d’un événement dans le volet de **messagerie de transmission**  
+:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Volet de messagerie de type pousser" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+   Volet de **messagerie de type pousser**  
 :::image-end:::  
 
-## Récupération en arrière-plan   
+## Récupération en arrière-plan  
 
-L' *API FETCH en arrière-plan*permet à un **ouvrier de service** de télécharger de manière fiable des ressources de grande taille, comme des films ou des podcasts, comme service en arrière-plan.  Pour consigner l’événement FETCH en arrière-plan pendant 3 jours, même si DevTools n’est pas ouvert:  
+L' **API FETCH en arrière-plan** permet à un **travailleur de service** de télécharger de manière fiable des ressources de grande taille, comme des films ou des podcasts, comme un service en arrière-plan.  Pour consigner l’événement FETCH en arrière-plan pendant 3 jours, même si DevTools n’est pas ouvert:  
 
 <!--Todo: add background fetch api section when available -->  
 
@@ -61,24 +55,24 @@ L' *API FETCH en arrière-plan*permet à un **ouvrier de service** de téléchar
 1.  Ouvrez le volet de l' **application** .  
 1.  Ouvrir le volet **récupération en arrière-plan** .  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="Volet récupération en arrière-plan" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="Volet de messagerie de type pousser" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
        Volet **récupération en arrière-plan**  
     :::image-end:::  
     
-1.  Cliquez sur **Enregistrer** \ ( ![ Enregistrer ][ImageRecordIcon] \).  
+1.  Cliquez sur **Enregistrer** \ ( ![ enregistrement ][ImageRecordIcon] \).  
    Après avoir déclenché une activité de récupération en arrière-plan, DevTools enregistre les événements dans la table.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Journal des événements dans le volet récupération en arrière-plan" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Volet de messagerie de type pousser" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
        Journal des événements dans le volet **récupération en arrière-plan**  
     :::image-end:::  
     
 1.  Cliquez sur un événement pour afficher ses détails dans l’espace situé sous le tableau.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="Afficher les détails d’un événement dans le volet récupération en arrière-plan" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="Volet de messagerie de type pousser" lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
        Afficher les détails d’un événement dans le volet **récupération en arrière-plan**  
     :::image-end:::  
     
-## Synchronisation en arrière-plan   
+## Synchronisation en arrière-plan  
 
 L' **API de synchronisation en arrière-plan** permet à un **travailleur de service** hors connexion d’envoyer des données à un serveur dès qu’il a rétabli une connexion Internet fiable.  Pour consigner les événements de synchronisation en arrière-plan pendant 3 jours, même si DevTools n’est pas ouvert, procédez comme suit:  
 
@@ -88,24 +82,24 @@ L' **API de synchronisation en arrière-plan** permet à un **travailleur de ser
 1.  Ouvrez le volet de l' **application** .  
 1.  Ouvrir le volet de **synchronisation en arrière-plan** .  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="Volet de synchronisation en arrière-plan" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="Volet de messagerie de type pousser" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
        Volet de **synchronisation en arrière-plan**  
     :::image-end:::  
     
-1.  Cliquez sur **Enregistrer** \ ( ![ Enregistrer ][ImageRecordIcon] \).  
+1.  Cliquez sur **Enregistrer** \ ( ![ enregistrement ][ImageRecordIcon] \).  
    Après avoir déclenché une activité de synchronisation en arrière-plan, DevTools enregistre les événements dans la table.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="Journal des événements dans le volet synchronisation en arrière-plan" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="Volet de messagerie de type pousser" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
        Journal des événements dans le volet **synchronisation en arrière-plan**  
     :::image-end:::  
     
 1.  Cliquez sur un événement pour afficher ses détails dans l’espace situé sous le tableau.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="Afficher les détails d’un événement dans le volet synchronisation en arrière-plan" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="Volet de messagerie de type pousser" lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
        Afficher les détails d’un événement dans le volet **synchronisation en arrière-plan**  
     :::image-end:::  
     
-## Notifications 
+## Notifications  
 
 Lorsque le **travailleur** d’un service a reçu un [message envoyé][MDNPush] par un serveur, le travailleur du service utilise l' [API notifications][MDNNotifications] pour afficher les données à un utilisateur.  Pour consigner les notifications pendant 3 jours, même si DevTools n’est pas ouvert, procédez comme suit:  
 
@@ -113,24 +107,24 @@ Lorsque le **travailleur** d’un service a reçu un [message envoyé][MDNPush] 
 1.  Ouvrez le volet de l' **application** .  
 1.  Ouvrez le volet **notifications** .  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="Volet notifications" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="Volet de messagerie de type pousser" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
        Volet **notifications**  
     :::image-end:::  
     
-1.  Cliquez sur **Enregistrer** \ ( ![ Enregistrer ][ImageRecordIcon] \).  
+1.  Cliquez sur **Enregistrer** \ ( ![ enregistrement ][ImageRecordIcon] \).  
    Après avoir déclenché une activité de notification, DevTools enregistre les événements dans la table.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Journal des événements dans le volet notifications" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Volet de messagerie de type pousser" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
        Journal des événements dans le volet **notifications**  
     :::image-end:::  
     
 1.  Cliquez sur un événement pour afficher ses détails dans l’espace situé sous le tableau.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="Afficher les détails d’un événement dans le volet notifications" lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="Volet de messagerie de type pousser" lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
        Afficher les détails d’un événement dans le volet **notifications**  
     :::image-end:::  
     
-## Messages de type pousser 
+## Messages de type pousser  
 
 Pour afficher une notification de transmission à un utilisateur, un **ouvrier de services** doit d’abord utiliser l' [API du message de transmission][MDNPush] pour recevoir des données d’un serveur.  Lorsque le travailleur du service est prêt à afficher la notification, il utilise l' [API notifications][MDNNotifications].  Pour consigner les messages envoyés pendant 3 jours, même si DevTools n’est pas ouvert, procédez comme suit:  
 
@@ -139,27 +133,25 @@ Pour afficher une notification de transmission à un utilisateur, un **ouvrier d
 1.  Ouvrez le volet de **messagerie de transmission** .  
     
     :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="Volet de messagerie de type pousser" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
-       Volet de **messagerie de type pousser**  
+       Ouvrir le volet de **messagerie de transmission**  
     :::image-end:::  
     
-1.  Cliquez sur **Enregistrer** \ ( ![ Enregistrer ][ImageRecordIcon] \).  
+1.  Cliquez sur **Enregistrer** \ ( ![ enregistrement ][ImageRecordIcon] \).  
     Après avoir déclenché une activité de message, DevTools enregistre les événements dans la table.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Journal des événements dans le volet de messagerie de transmission" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Volet de messagerie de type pousser" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
        Journal des événements dans le volet de **messagerie de transmission**  
     :::image-end:::  
     
-1.  Cliquez sur un événement pour afficher ses détails dans l’espace situé sous le tableau.  
+1.  Cliquez sur un événement pour afficher les détails dans l’espace situé sous le tableau.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="Afficher les détails d’un événement dans le volet de messagerie de transmission" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="Volet de messagerie de type pousser" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
        Afficher les détails d’un événement dans le volet de **messagerie de transmission**  
     :::image-end:::  
     
-<!--  
- 
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

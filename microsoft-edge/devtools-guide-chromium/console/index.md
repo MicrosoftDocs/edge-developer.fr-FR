@@ -3,16 +3,16 @@ description: 'Les principales utilisations de la console Microsoft Edge DevTools
 title: Présentation de la console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 0cdce953b22d22f9a2bf8048a6eff89388aa6e2e
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 32272c3f76f715566ced66d11346985dc95dd290
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993155"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125264"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,13 @@ ms.locfileid: "10993155"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Présentation de la console   
+# Présentation de la console  
 
   
 
 Cette page décrit la façon dont la console Microsoft Edge DevTools simplifie le développement de pages Web.  La console a 2 utilisations principales: [afficher les messages enregistrés](#viewing-logged-messages) et [exécuter JavaScript](#running-javascript).  
 
-## Affichage des messages enregistrés   
+## Affichage des messages enregistrés  
 
 Les développeurs Web enregistrent souvent les messages sur la console pour s’assurer que leur JavaScript fonctionne comme prévu.  Pour enregistrer un message, vous devez insérer une expression telle que `console.log('Hello, Console!')` dans votre code JavaScript.  Lorsque le navigateur exécute votre JavaScript et voit une expression semblable à celle-ci, il enregistre le message sur la console.  
 
@@ -62,7 +58,7 @@ Les développeurs Web enregistrent souvent les messages sur la console pour s’
                   const artists = [
                       { first: 'René', last: 'Magritte' },
                       { first: 'Chaim', last: 'Soutine' },
-                      { first: 'Henri', last: 'Matisse' }
+                        
                   ];
                   console.table(artists);
                   setTimeout(() => {
@@ -92,7 +88,7 @@ Les développeurs Web consignent les messages pour les 2 raisons générales sui
 
 Pour en savoir plus sur la journalisation, voir [utiliser les messages de journalisation][DevtoolsConsoleLoggingMessages] .  Pour consulter la liste complète des méthodes, voir la référence de l’API de la [console][DevToolsConsoleAPI] `console` .  La principale différence entre les méthodes est le mode d’affichage des données qui sont enregistrées.  
 
-## Exécution de JavaScript   
+## Exécution de JavaScript  
 
 La **console** est également une [REPL][WikiREPLoop].  Vous pouvez exécuter JavaScript dans la **console** pour interagir avec la page inspectée.   
 
@@ -100,29 +96,29 @@ La **console** est également une [REPL][WikiREPLoop].  Vous pouvez exécuter Ja
    :::column span="":::
       Dans l’illustration suivante, la **console** est affichée en regard de la page d’accueil devtools.  
       
-      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="Panneau console en regard de la page d’accueil de DevTools" lightbox="../media/devtools-console-empty.msft.png":::
+      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="Panneau de la console" lightbox="../media/devtools-console-empty.msft.png":::
          Panneau **console** en regard de la page d’accueil de devtools  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       Dans l’illustration suivante, la même page s’affiche après l’utilisation de la **console** pour modifier le titre supérieur de la page.
       
-      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Utiliser la console pour modifier le titre supérieur de la page" lightbox="../media/devtools-console-h1-changed.msft.png":::
+      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Panneau de la console" lightbox="../media/devtools-console-h1-changed.msft.png":::
          Utiliser la **console** pour modifier le titre supérieur de la page  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
 
-La modification de la page à partir de la **console** est possible, car la **console** dispose d’un accès complet à la [fenêtre][MDNWindow] de la page.  DevTools offre quelques fonctions de commodité qui vous permettent d’inspecter une page plus facilement.  Par exemple, supposons que votre JavaScript contienne une fonction appelée `hideModal` .  L’exécution `debug(hideModal)` interrompt votre code sur la première ligne `hideModal` la prochaine fois que vous l’exécutez.  Pour plus d’informations sur la liste complète des fonctions d’utilitaire, voir informations de référence sur l' [API des utilitaires de console][DevtoolsConsoleUtilitiesDebug].  
+La modification de la page à partir de la **console** est possible, car la **console** dispose d’un accès complet à la [fenêtre][MDNWindow] de la page.  DevTools offre quelques fonctions de commodité qui vous permettent d’inspecter une page plus facilement.  Par exemple, supposons que votre JavaScript contienne une fonction appelée `hideModal` .  L’exécution `debug(hideModal)` interrompt votre code sur la première ligne `hideModal` la prochaine fois que vous l’exécutez.  Pour plus d’informations sur la liste complète des fonctions d’utilitaire, [voir][DevtoolsConsoleUtilitiesDebug]informations de référence sur l’API de la console.  
 
 Lorsque vous exécutez JavaScript, vous n’avez pas besoin d’interagir avec la page.  Vous pouvez utiliser la **console** pour essayer le nouveau code non lié à la page.  Par exemple, supposons que vous viens d’apprendre sur la méthode intégrée de mappage de tableau JavaScript [()][MDNMap] et que vous souhaitez tester.  
 La **console** est l’endroit idéal pour tester la fonction.  
 
-Pour plus d’informations sur la façon d’utiliser JavaScript dans la **console**, voir [commencer à utiliser JavaScript][DevtoolsConsoleRunningJavascript].  
+Pour plus d’informations sur la façon d’utiliser JavaScript dans la **console**, accédez à la section [commencer à utiliser JavaScript][DevtoolsConsoleRunningJavascript].  
 
-   
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

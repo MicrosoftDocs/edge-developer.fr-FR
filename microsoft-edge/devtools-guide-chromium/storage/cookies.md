@@ -3,16 +3,16 @@ description: Découvrez comment afficher, modifier et supprimer les cookies HTTP
 title: Afficher, modifier et supprimer des cookies avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: eaaf4663504fc674fd70dc1ca9e0357febb529e0
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 328771aa254dac1f851535a44126ea220dc95a9c
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993239"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125481"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -43,7 +43,7 @@ ms.locfileid: "10993239"
 
 1.  Sous **stockage** , développez **cookies**, puis sélectionnez une origine.  
     
-    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="Volet cookies" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
        Figure 2: volet cookies  
     :::image-end:::  
 
@@ -66,7 +66,7 @@ La table **cookies** contient les champs suivants.
 
 Utilisez la zone de texte **filtre** pour filtrer les cookies par **nom** ou par **valeur**.  Le filtrage par d’autres champs n’est pas pris en charge.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="Filtrage de tout cookie qui ne contient pas l’ID de texte" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
+:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
    Figure 3: filtrage de tout cookie qui ne contient pas le texte `ID`  
 :::image-end:::  
 
@@ -75,23 +75,27 @@ Utilisez la zone de texte **filtre** pour filtrer les cookies par **nom** ou par
 Les champs **nom**, **valeur**, **domaine**, **chemin d’accès**et **durée d’expiration/maximum** doivent être modifiables.  
 Double-cliquez sur un champ pour le modifier.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="Définir le nom d’un cookie sur DEVTOOLS!" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
+:::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
    Figure 4: définition du nom d’un cookie sur `DEVTOOLS!`  
 :::image-end:::  
 
 ## Supprimer les cookies  
 
-Sélectionnez un cookie et sélectionnez **supprimer** ![ la suppression sélectionnée ][ImageDeleteIcon]  pour supprimer le cookie spécifique.  
+Sélectionnez un cookie et choisissez **supprimer** ![ la suppression sélectionnée ][ImageDeleteIcon]  pour supprimer le cookie spécifique.  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Suppression d’un cookie spécifique" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
+:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    Figure 5: suppression d’un cookie spécifique  
 :::image-end:::  
 
 Pour supprimer tous les cookies, sélectionnez **Effacer tout** ![ Effacer tout ][ImageClearIcon]  .  
 
-:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Effacement de tous les cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
+:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    Figure 6: suppression de tous les cookies  
 :::image-end:::  
+
+## Contacter l’équipe DevTools MicrosoftEdge  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

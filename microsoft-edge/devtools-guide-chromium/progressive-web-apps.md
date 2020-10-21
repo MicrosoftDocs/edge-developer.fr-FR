@@ -7,12 +7,12 @@ ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 7eb71d0d57d8a9227a54b921f15dfe434ad6e65b
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 80475ebcbbdd3fb04fd0196e993c933e0bdcf090
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993603"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125390"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993603"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Déboguer des applications Web progressives   
-
-
+# Déboguer des applications Web progressives  
 
 Utilisez le panneau **application** pour inspecter, modifier et déboguer des manifestes de l’application Web, des travailleurs de services et des mises en cache de service.  
 
@@ -55,7 +49,7 @@ Ce guide traite uniquement des fonctionnalités d’application Web progressive 
 *   Affichez le cache de votre service d’assistance dans le volet **stockage du cache** .  
 *   Annulez l’enregistrement d’un ouvrier de services et effacez l’intégralité du stockage et des caches à l’aide d’un seul bouton dans le volet de **stockage clair** .  
     
-## Manifeste de l’application Web   
+## Manifeste de l’application Web  
 
 Si vous souhaitez que vos utilisateurs puissent ajouter votre application à leur mobile homescreens, vous avez besoin d’un manifeste d’application Web.  Le manifeste définit la façon dont l’application s’affiche sur le écran d’accueil, où diriger l’utilisateur lors du lancement à partir de écran d’accueil, et l’apparence de l’application au moment du lancement.  
 
@@ -77,7 +71,7 @@ Une fois votre manifeste configuré, vous pouvez utiliser le volet **manifeste**
 *   Les sections **identité** et **Présentation** affichent simplement les champs de la source du manifeste dans un affichage plus convivial.  
 *   La section **icônes** affiche chaque icône que vous avez spécifiée.  
     
-<!--### Simulate Add to Homescreen events   -->
+<!--### Simulate Add to Homescreen events  -->
 
 <!--A web app can only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, this criteria can be inconvenient.  
 The **Add to homescreen** button on the **App Manifest** pane lets you simulate Add to Homescreen events whenever you want.  -->
@@ -85,7 +79,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!--You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Clicking on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
 
 <!--  
-:::image type="complex" source="./media/io.msft.png" alt-text="Add to desktop shelf" lightbox="./media/io.msft.png":::
+:::image type="complex" source="./media/io.msft.png" alt-text="Volet manifeste" lightbox="./media/io.msft.png":::
    Add to desktop shelf  
 :::image-end:::
 -->  
@@ -102,7 +96,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
-## Travailleurs de service   
+## Workers du service  
 
 Les travailleurs de service constituent une technologie fondamentale dans la prochaine plateforme Web.  Il s’agit de scripts que le navigateur exécute en arrière-plan, séparés d’une page Web.  Ces scripts vous permettent d’accéder aux fonctionnalités qui n’ont pas besoin d’une interaction utilisateur ou page Web, comme les notifications de transmission, la synchronisation en arrière-plan et les expériences hors connexion.  
 
@@ -115,7 +109,7 @@ Les travailleurs de service constituent une technologie fondamentale dans la pro
 
 Le volet **travailleurs de services** dans le panneau d' **application** est l’endroit principal de devtools pour inspecter et déboguer des travailleurs de service.  
 
-:::image type="complex" source="./media/service-workers-pane.msft.png" alt-text="Volet travailleurs de service" lightbox="./media/service-workers-pane.msft.png":::
+:::image type="complex" source="./media/service-workers-pane.msft.png" alt-text="Volet manifeste" lightbox="./media/service-workers-pane.msft.png":::
    Volet **travailleurs de service**  
 :::image-end:::  
 
@@ -134,7 +128,7 @@ Le volet **travailleurs de services** dans le panneau d' **application** est l�
 Si le travailleur du service génère des erreurs, une nouvelle étiquette appelée **Erreurs** s’affiche.  
 
 <!--  
-:::image type="complex" source="./media/sw-error.msft.png" alt-text="Service worker with errors" lightbox="./media/sw-error.msft.png":::
+:::image type="complex" source="./media/sw-error.msft.png" alt-text="Volet manifeste" lightbox="./media/sw-error.msft.png":::
    Service worker with errors  
 :::image-end:::
 -->  
@@ -142,11 +136,11 @@ Si le travailleur du service génère des erreurs, une nouvelle étiquette appel
 <!--TODO:  Capture Service Worker Errors sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
 
-## Caches du travailleur de service 
+## Caches du travailleur de service  
 
 Le volet **stockage du cache** fournit une liste en lecture seule de ressources qui ont été mises en cache à l’aide de l' [API de cache][MDNWebCacheAPI]\ (Service Worker \).  
 
-:::image type="complex" source="./media/cache-pane-cache-storage-resources.msft.png" alt-text="Volet stockage du cache" lightbox="./media/cache-pane-cache-storage-resources.msft.png":::
+:::image type="complex" source="./media/cache-pane-cache-storage-resources.msft.png" alt-text="Volet manifeste" lightbox="./media/cache-pane-cache-storage-resources.msft.png":::
    Volet **stockage du cache**  
 :::image-end:::  
 
@@ -155,11 +149,11 @@ Le volet **stockage du cache** fournit une liste en lecture seule de ressources 
 
 Si vous avez deux mises en cache ouvertes, celles-ci s’affichent sous la liste déroulante **stockage du cache** .  
 
-:::image type="complex" source="./media/cache-pane-cache-storage.msft.png" alt-text="Liste déroulante stockage du cache" lightbox="./media/cache-pane-cache-storage.msft.png":::
+:::image type="complex" source="./media/cache-pane-cache-storage.msft.png" alt-text="Volet manifeste" lightbox="./media/cache-pane-cache-storage.msft.png":::
    Liste déroulante **stockage du cache**  
 :::image-end:::  
 
-## Utilisation du quota 
+## Utilisation du quota  
 
 Certaines réponses dans le volet **stockage du cache** sont signalées comme «opaques».  Fait référence à une réponse Récupérée à partir d’une autre origine, par exemple à partir d’une API de **réseau de distribution de contenu ou d'** une API distante, lorsque [cors][FetchHttpCorsProtocol] n’est pas activé.  
 
@@ -179,7 +173,7 @@ Guides connexes:
     
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
 
-## Effacement du stockage 
+## Effacement du stockage  
 
 Le volet **Vider le stockage** est une fonctionnalité très utile lorsque vous développez des applications Web progressives.  Ce volet vous permet d’annuler l’enregistrement des travailleurs de services et d’effacer tous les caches et stockage avec un seul clic de bouton.  <!--Check out the section below to learn more.  -->
 
@@ -189,7 +183,7 @@ Le volet **Vider le stockage** est une fonctionnalité très utile lorsque vous 
     
 <!--TODO:  Link to sections when available. -->
 
-<!--## Other Application panel guides 
+<!--## Other Application panel guides   
 
 Check out the guides below for more help on the other panes of the **Application** panel.  
 
@@ -198,13 +192,9 @@ Related Guides:
 *   [Inspect page resources](/iterate/manage-data/page-resources)  
 *   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
     
-<!--TODO  -->
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-<!--  
- 
-
-
--->  
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

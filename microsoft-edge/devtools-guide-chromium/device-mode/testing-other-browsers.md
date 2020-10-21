@@ -3,16 +3,16 @@ description: Votre travail ne se termine pas par le bon fonctionnement de votre 
 title: Émuler et tester d’autres navigateurs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 1b76447aa86837abac88bc4727eb7f4ee082342a
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 1a7cc1c7e0a49760f30afdc16921824372b3a1aa
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992910"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124942"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -28,14 +28,7 @@ ms.locfileid: "10992910"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Émuler et tester d’autres navigateurs   
-
-
-
+# Émuler et tester d’autres navigateurs  
 
 Votre travail ne se termine pas par le bon fonctionnement de votre site sur Microsoft Edge et Android.  Même si le mode périphérique est en mesure de simuler une gamme d’autres appareils tels que les iPhone, nous vous encourageons à consulter des solutions d’émulation fournies par d’autres navigateurs.  
 
@@ -79,7 +72,7 @@ Une fois votre émulateur démarré, cliquez sur l’icône du navigateur et tes
 #### Interpréteur de contenus de chrome sur Android  
 
 <!--  
-:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
+:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
    Android Emulator Content Shell  
 :::image-end:::  
 -->  
@@ -97,7 +90,7 @@ Vous pouvez à présent tester votre site à l’aide de l’interpréteur de co
 #### Firefox sur Android  
 
 <!--  
-:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
+:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
    Firefox Icon on Android Emulator  
 :::image-end:::  
 -->  
@@ -123,7 +116,7 @@ Lorsque vous avez travaillé, Apprenez à utiliser le simulateur dans la [docume
 
 ###  Microsoft Edge (EdgeHTML)  
 
-:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="VM d’Internet Explorer modernes" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
+:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
    VM d’Internet Explorer modernes  
 :::image-end:::  
 
@@ -137,11 +130,9 @@ Si vous n’êtes pas en mesure d’utiliser les émulateurs et que vous n’ave
 *   [SauceLabs (commercial)][SauceLabs] vous permet d’exécuter des tests unitaires au sein d’un émulateur, qui peuvent être très utiles pour l’écriture de scripts d’un flux sur votre site, ainsi que pour visionner l’enregistrement vidéo de cela sur différents appareils.  Vous pouvez également effectuer un test manuel sur votre site.  
 *   [Device Anywhere (commercial)][AppExperience] n’utilise pas d’émulateurs mais de véritables périphériques que vous pouvez contrôler à distance.  Cela est très utile dans les cas où vous avez besoin de reproduire un problème sur un appareil spécifique et que vous ne pouvez pas voir le bogue à l’aide de l’une des options dans les guides précédents.  
 
-<!--  
- 
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

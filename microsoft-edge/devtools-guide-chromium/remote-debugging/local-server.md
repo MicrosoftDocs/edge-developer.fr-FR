@@ -3,16 +3,16 @@ description: Hébergez un site sur un serveur Web d’ordinateur de développeme
 title: Accéder aux serveurs locaux
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 373cd7ce5cd262bad9fa5460bb2187241246cd75
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f994092460f090743119d7304bfe12aa28556b19
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993484"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125411"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,14 +28,7 @@ ms.locfileid: "10993484"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Accéder aux serveurs locaux   
-
-
-
+# Accéder aux serveurs locaux  
 
 Hébergez un site sur un serveur Web d’ordinateur de développement, puis accédez au contenu d’un appareil Android.  
 
@@ -46,7 +39,7 @@ Avec un câble USB et Microsoft Edge DevTools, exécutez un site à partir d’u
 *   Le transfert de port vous permet d’afficher le contenu hébergé par le serveur Web exécuté sur votre ordinateur de développement sur votre appareil Android.  
 *   Si votre serveur Web utilise un domaine personnalisé, configurez votre appareil Android pour accéder au contenu de ce domaine avec le mappage de domaine personnalisé.  
 
-## Configurer le transfert de port   
+## Configurer le transfert de port  
 
 Le transfert de port permet à votre appareil Android d’accéder au contenu hébergé sur le serveur Web exécuté sur votre ordinateur de développement.  Le transfert de port fonctionne en créant un port TCP d’écoute sur votre appareil Android qui mappe vers un port TCP sur votre ordinateur de développement.  Le trafic entre les ports voyage via la connexion USB entre votre appareil et votre machine de développement Android, de sorte que la connexion ne dépend pas de votre configuration réseau.  
 
@@ -54,7 +47,7 @@ Pour activer le transfert de port:
 
 1.  Configurez le [débogage à distance][RemoteDebuggingGettingStarted] entre votre ordinateur de développement et votre appareil Android.  Lorsque vous avez terminé, vous devriez voir votre appareil Android dans le menu de gauche de la boîte de dialogue **inspecter les appareils** et un témoin de statut **connecté** .  
 1.  Dans la boîte de dialogue **inspection des appareils** de devtools, activez le **transfert de port**.  
-1.  Sélectionnez **Ajouter une règle**.  
+1.  Cliquez sur **Ajouter une règle**.  
     
     :::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png" alt-text="Ajout d’une règle de transfert de port" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png":::
        Ajout d’une règle de transfert de port  
@@ -66,13 +59,13 @@ Pour activer le transfert de port:
     
 Le transfert de port est désormais configuré.  Pour afficher l’indicateur d’État du port vers l’avant, accédez à l’onglet de votre appareil dans la boîte de dialogue **inspecter les appareils** .  
 
-:::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="État de transfert de port" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
+:::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="Ajout d’une règle de transfert de port" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
    État de transfert de port  
 :::image-end:::  
 
 Pour afficher le contenu, ouvrez Microsoft Edge sur votre appareil Android et accédez au `localhost` port que vous avez spécifié dans le champ **port** de l’appareil.  Par exemple, si vous avez entré `5000` dans le champ, rendez-vous `localhost:5000` .  
 
-## Mapper aux domaines locaux personnalisés   
+## Mapper aux domaines locaux personnalisés  
 
 Le mappage de domaine personnalisé vous permet d’afficher le contenu sur un appareil Android à partir d’un serveur Web sur votre ordinateur de développement qui utilise un domaine personnalisé.  
 
@@ -89,7 +82,7 @@ Pour configurer le renvoi de port vers un proxy:
     > [!NOTE]
     > Le serveur proxy et votre serveur Web doivent s’exécuter sur différents ports.  
     
-1.  Configurez le [renvoi de port](#set-up-port-forwarding) vers votre appareil Android.  Pour le champ **adresse locale** , entrez `localhost:` suivi du port sur lequel votre serveur proxy s’exécute.  Par exemple, s’il est en cours d’exécution sur le port `8000` , rendez-vous `localhost:8000` .  Dans le champ Port de l' **appareil** , entrez le numéro que vous souhaitez que votre appareil Android écoute, par exemple `3333` .  
+1.  Configurez le [renvoi de port](#set-up-port-forwarding) vers votre appareil Android.  Pour le champ **adresse locale** , entrez `localhost:` suivi du port sur lequel votre serveur proxy s’exécute.  Par exemple, s’il est en cours d’exécution sur le port `8000` , accédez à `localhost:8000` .  Dans le champ Port de l' **appareil** , entrez le numéro que vous souhaitez que votre appareil Android écoute, par exemple `3333` .  
     
 ### Configurer les paramètres de proxy sur votre appareil  
 
@@ -103,10 +96,10 @@ Ensuite, vous devez configurer votre appareil Android pour communiquer avec le s
     
 1.  Sélectionnez **modifier le réseau**.  
 1.  Sélectionnez **Options avancées**.  Les paramètres du proxy apparaissent.  
-1.  Sélectionnez le menu **proxy** et sélectionnez **Manuel**.  
+1.  Sélectionnez le menu **proxy** , puis choisissez **Manuel**.  
 1.  Pour le champ **nom_hôte du proxy** , entrez `localhost` .  
 1.  Pour le champ **port proxy** , entrez le numéro de port que vous avez entré pour **port d’appareil** dans la section précédente.  
-1.  Sélectionnez **Enregistrer**.  
+1.  Cliquez sur **Enregistrer**.  
     
 À l’aide de ces paramètres, votre appareil transfère toutes les demandes à ce proxy sur votre ordinateur de développement.  Le serveur proxy effectue des demandes de la part de votre appareil, de sorte que les demandes adressées à votre domaine local personnalisé sont correctement résolues.  
 
@@ -117,11 +110,10 @@ Si votre serveur Web est en cours d’exécution sur un port autre qu’un port 
 > [!TIP]
 > Pour reprendre la navigation normale, n’oubliez pas de rétablir les paramètres de proxy sur votre appareil Android après vous être déconnecté de l’ordinateur de développement.  
 
-<!--  
-  
+## Contacter l’équipe DevTools MicrosoftEdge  
 
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
--->  
 <!-- links -->  
 
 [RemoteDebuggingGettingStarted]: ./index.md "Commencer à utiliser le débogage à distance des appareils Android | Documents Microsoft"  

@@ -3,16 +3,16 @@ description: Dernières fonctionnalités expérimentales de Microsoft Edge DevTo
 title: Fonctionnalités expérimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/05/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, expérience
-ms.openlocfilehash: f885201ddfb7553a2b9c58a07dd52b7a77c4137a
-ms.sourcegitcommit: 0326a4082064e9cdfa602736f3f9ce7d8d294604
+ms.openlocfilehash: 65cf178596abfbaaac0e80bf205035838967cf59
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "11094929"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124893"
 ---
 # Fonctionnalités expérimentales  
 
@@ -25,7 +25,7 @@ Si les fonctionnalités expérimentales sont disponibles dans tous les canaux de
 Pour activer ou désactiver les fonctionnalités expérimentales dans Microsoft Edge, procédez comme suit.  
 
 1.  [Ouvrez devtools][DevtoolsOpen].  
-     *   Sélectionnez `Control` + `Shift` + `I` \ (Windows \) ou `Command` + `Option` + `I` \ (MacOS \).  Pour plus d’informations, accédez à [raccourcis clavier de Microsoft Edge devtools][DevToolsShortcuts].  
+     *   Sélectionnez `Control` + `Shift` + `I` \ (Windows, Linux \) ou `Command` + `Option` + `I` \ (MacOS \).  Pour plus d’informations, accédez à [raccourcis clavier de Microsoft Edge devtools][DevToolsShortcuts].  
 1.  Ouvrez le volet [paramètres][DevToolsCustomizeSettings] .  
     *   Sélectionnez `Shift` + `?` .  Pour plus d’informations, accédez à [raccourcis clavier de Microsoft Edge devtools][DevToolsShortcuts].  
 1.  Sur le côté gauche du volet **paramètres** , sélectionnez la section **expériences** .  
@@ -195,7 +195,7 @@ Après avoir activé l’expérience, assurez-vous de redémarrer l’DevTools. 
 1.  Recherchez la demande réseau que vous souhaitez modifier et renvoyer.  
 1.  Ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez **modifier, puis relire**.  
 1.  Lorsque la **console réseau** s’ouvre, modifiez les informations de requête réseau.  
-1.  Sélectionnez **Envoyer**.  
+1.  Cliquez sur **Envoyer**.  
 
 :::image type="complex" source="./media/network-network-console.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/network-network-console.msft.png":::
    **Console réseau** dans le tiroir de la **console**  

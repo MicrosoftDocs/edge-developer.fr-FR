@@ -3,16 +3,16 @@ description: Utilisez l’instrumentation d’allocation sur la barre de plannin
 title: Utilisation de l’instrumentation d’allocation sur une barre de planning
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 58a951c4241ae0fe7dce70f523a701694b8254f9
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 1e76e3459128be5b659d790163ef62447dd97ae4
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993505"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125446"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -56,7 +56,7 @@ Pour commencer à utiliser l' **instrumentation d’allocation sur la chronologi
 1.  Ouvrez le panneau **mémoire** , sélectionnez la case **d’option attribution de l’instrumentation sur la chronologie** .  
 1.  Démarrer l’enregistrement.  
     
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Enregistrer le profil d’allocation du tas" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Instrumentation d’allocation sur une barre de planning" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
        Enregistrer le profil d’allocation du tas  
     :::image-end:::  
     
@@ -66,16 +66,16 @@ La chronologie de l’allocation du tas montre l’emplacement de création des 
 
 La hauteur de chaque barre correspond à la taille des objets récemment alloués, et la couleur des barres indique si ces objets sont toujours présents dans l’instantané final du tas.  Les barres bleues indiquent les objets qui sont toujours en temps réel à la fin de la chronologie, car ils indiquent des objets qui ont été alloués lors de la chronologie, mais qui ont été collectés par le garbage collector.  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Instrumentation d’allocation sur un instantané de chronologie" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
+:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Instrumentation d’allocation sur une barre de planning" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
    **Instrumentation d’allocation sur un instantané de chronologie**  
 :::image-end:::  
 
 <!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
 <!--todo: redo figure 4 with multiple click actions  -->  
 
-Vous pouvez utiliser les curseurs de la chronologie ci-dessus pour effectuer un zoom avant sur cet instantané particulier et afficher les objets qui ont été récemment attribués à ce point:  
+Vous pouvez utiliser les curseurs de la chronologie ci-dessus pour effectuer un zoom sur cet instantané particulier et passer en revue les objets qui ont été récemment attribués à ce point:  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Effectuer un zoom avant sur un instantané" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Instrumentation d’allocation sur une barre de planning" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
    Effectuer un zoom avant sur un instantané  
 :::image-end:::  
 
@@ -83,7 +83,7 @@ Cliquez sur un objet spécifique du tas pour afficher l’arborescence de conser
 
 ## Afficher l’allocation de mémoire par fonction  
 
-Vous pouvez afficher l’allocation de mémoire par fonction JavaScript.  Pour plus d’informations, voir [analyser l’allocation de mémoire par fonction][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
+Vous pouvez afficher l’allocation de mémoire par fonction JavaScript.  Pour plus d’informations, accédez à la section [vérifier l’allocation de mémoire par fonction][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
 ## Contacter l’équipe DevTools MicrosoftEdge  
 

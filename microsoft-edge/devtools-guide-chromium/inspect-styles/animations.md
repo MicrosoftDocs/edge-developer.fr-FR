@@ -3,16 +3,16 @@ description: Examinez et modifiez des animations avec l’inspecteur d’animati
 title: Inspecter des animations
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: e867cc373286666f73bee3b8fb886f60fa1b94f6
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+ms.openlocfilehash: fed686c07acd0648ac512dac131d85a317fb64eb
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015771"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124774"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -42,7 +42,7 @@ Examinez et modifiez des animations avec l’inspecteur d’animation Microsoft 
 *   Examinez les animations en ralentissant chacune d’elles, en reproduisant chacune d’elles ou en consultant le code source.  
 *   Modifiez des animations en modifiant le minutage, le délai, la durée ou les décalages d’images clés.  
 
-## Présentation  
+## Vue d'ensemble  
 
 L’inspecteur d’animation Microsoft Edge DevTools possède deux objectifs principaux.  
 
@@ -64,7 +64,7 @@ Il existe deux façons d’ouvrir l’inspecteur d’animation:
     1.  Accédez au sous-menu **plus d’outils** .  
     1.  Sélectionnez **animations**:  
         
-        :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Animations utilisant le menu principal" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
+        :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="inspecteur d’animation" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
            **Animations** utilisant le menu principal  
     :::image-end:::  
         
@@ -73,7 +73,7 @@ Il existe deux façons d’ouvrir l’inspecteur d’animation:
 
 L’inspecteur d’animation s’ouvre en tant qu’onglet en regard du tiroir de la console.  Dans la mesure où l’inspecteur d’animation est l’onglet tiroir, vous pouvez utiliser l’inspecteur d’animation de n’importe quel panneau DevTools.  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="Inspecteur d’animation vide" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="inspecteur d’animation" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
    Inspecteur d’animation vide  
 :::image-end:::  
 
@@ -82,11 +82,11 @@ L’inspecteur d’animation est groupé en quatre sections principales \ (ou vo
 | Index | Volet | Description |  
 |:--- |:--- |:--- |  
 | 1 | **Contrôles** | Vous pouvez alors effacer tous les groupes d’animations actuellement capturées ou changer la vitesse du groupe d’animation actuellement sélectionné. |  
-| deuxième | **Présentation** | Sélectionnez un groupe d’animations pour l’inspecter et le modifier dans le volet **Détails** . |  
+| deuxième | **Vue d'ensemble** | Sélectionnez un groupe d’animations pour l’inspecter et le modifier dans le volet **Détails** . |  
 | 3D | **Chronologie** | Interrompez et démarrez une animation à partir de cet emplacement, ou accédez à un point spécifique de l’animation. |  
 | n°4 | **Détails** | Inspecter et modifier le groupe d’animations actuellement sélectionné. |  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="Inspecteur d’animation annoté" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png" alt-text="inspecteur d’animation" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png":::
    Inspecteur d’animation annoté  
 :::image-end:::  
 
@@ -110,25 +110,25 @@ Après avoir capturé une animation, plusieurs méthodes s’offrent à vous pou
 
 Une fois le groupe d’animations capturé, cliquez dessus dans le volet **vue d’ensemble** pour afficher les détails.  Dans le volet d' **informations** , chaque animation individuelle est affectée à une ligne.  
 
-:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Détails sur le groupe d’animations" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
+:::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="inspecteur d’animation" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
    Détails sur le groupe d’animations  
 :::image-end:::  
 
 Placez le pointeur sur une animation pour la mettre en surbrillance dans la fenêtre d’affichage.  Cliquez sur l’animation pour la sélectionner dans le panneau **éléments** .  
 
-:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Survol de l’animation pour la mettre en surbrillance dans la fenêtre d’affichage" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
+:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="inspecteur d’animation" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
    Survol de l’animation pour la mettre en surbrillance dans la fenêtre d’affichage  
 :::image-end:::  
 
 La section la plus à gauche d’une animation est la définition.  La section à droite, plus ternie représente des itérations.  Par exemple, dans l’illustration suivante, les sections deux et trois représentent des itérations de la section One.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="Diagramme d’itérations d’animation" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="inspecteur d’animation" lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
    Diagramme d’itérations d’animation  
 :::image-end:::  
 
 Si deux éléments ont la même animation appliquée, l’inspecteur d’animation affecte la même couleur aux éléments.  La couleur est aléatoire et n’a aucune précision.  Par exemple, dans l’illustration suivante, les deux éléments `div.cwccw.earlier` et `div.cwccw.later` ont la même animation \ ( `spinrightleft` \) appliquée, comme les `div.ccwcw.earlier` éléments et `div.ccwcw.later` .  
 
-:::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="Animations à code couleur" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="inspecteur d’animation" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
    Animations à code couleur  
 :::image-end:::  
 
@@ -142,25 +142,25 @@ Il existe trois façons de modifier une animation à l’aide de l’inspecteur 
     
 Dans l’illustration suivante, l’animation d’origine est représentée.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="Animation d’origine avant modification" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="inspecteur d’animation" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
    Animation d’origine avant modification  
 :::image-end:::  
 
 Pour modifier la durée d’une animation, cliquez sur le premier ou le dernier cercle et faites-le glisser.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="Durée modifiée" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="inspecteur d’animation" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
    Durée modifiée  
 :::image-end:::  
 
 Si l’animation définit des règles d’images clés, celles-ci sont représentées sous forme de cercles intérieurs blancs.  Cliquez sur l’un des éléments suivants pour modifier le minutage de l’image clé.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="Image clé modifiée" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="inspecteur d’animation" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
    Image clé modifiée  
 :::image-end:::  
 
 Pour ajouter un délai à une animation, cliquez dessus et faites-la glisser n’importe où, à l’exception des cercles.  
 
-:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="Retard modifié" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
+:::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="inspecteur d’animation" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
    Retard modifié  
 :::image-end:::  
 

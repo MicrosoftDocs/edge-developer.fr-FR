@@ -3,16 +3,16 @@ description: Découvrez comment afficher les données du cache à partir du pann
 title: Afficher les données du cache avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: c920a171ec89925cc79ab741eed01e11d749bf1b
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 5ab5fd0b3b504443e495f1d5108907a4551e6ac6
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993295"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125439"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,19 +28,13 @@ ms.locfileid: "10993295"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Afficher les données du cache avec Microsoft Edge DevTools   
-
-
+# Afficher les données du cache avec Microsoft Edge DevTools  
 
 Ce guide vous montre comment utiliser [Microsoft Edge devtools][MicrosoftEdgeDevTools] pour inspecter les données [du cache][MDNCache] .  
 
 Si vous essayez d’inspecter les données [du cache http][MDNHTTPCaching] , il ne s’agit pas du guide souhaité.  Recherchez les informations dans la colonne **taille** du journal du **réseau**.  Voir [enregistrement][DevtoolsNetworkLogActivity]de l’activité du réseau.  
 
-## Afficher les données du cache   
+## Afficher les données du cache  
 
 1.  Sélectionnez l’onglet **application** pour ouvrir le volet de l' **application** .  Le volet **manifeste** s’ouvre généralement par défaut.  
     
@@ -50,79 +44,77 @@ Si vous essayez d’inspecter les données [du cache http][MDNHTTPCaching] , il 
     
 1.  Développez la section **stockage du cache** pour afficher les caches disponibles.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="Caches disponibles" lightbox="../media/storage-application-cache-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-cache-storage.msft.png":::
        Caches disponibles  
     :::image-end:::  
     
 1.  Sélectionnez un cache pour afficher le contenu.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="Afficher le contenu d’un cache" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
        Afficher le contenu d’un cache  
     :::image-end:::  
     
 1.  Sélectionnez une ressource pour afficher les en-têtes HTTP dans la section située sous le tableau.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="Afficher les en-têtes HTTP d’une ressource" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
        Afficher les en-têtes HTTP d’une ressource  
     :::image-end:::  
     
 1.  Sélectionnez **Aperçu** pour afficher le contenu d’une ressource.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="Afficher le contenu d’une ressource" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
        Afficher le contenu d’une ressource  
     :::image-end:::  
     
-## Actualiser une ressource   
+## Actualiser une ressource  
 
 1.  [Afficher les données d’un cache](#view-cache-data).  
 1.  Sélectionnez la ressource que vous voulez actualiser.  DevTools le met en surbrillance pour indiquer qu’il est sélectionné.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Sélectionner une ressource" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
-       Sélectionner une ressource  
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
+       Sélectionner une ressource à actualiser  
     :::image-end:::  
     
-1.  Sélectionnez **Actualiser** /actualiser ![ ][ImageRefreshIcon] .  
+1.  Cliquez sur **Actualiser** , puis sur ![ Actualiser ][ImageRefreshIcon] .  
     
-## Filtrer les ressources   
+## Filtrer les ressources  
 
 1.  [Afficher les données d’un cache](#view-cache-data).  
 1.  Utilisez la zone de texte **Filtrer par chemin** pour filtrer les ressources qui ne correspondent pas au chemin que vous fournissez.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="Filtrer les ressources qui ne correspondent pas au chemin spécifié" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
+    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
        Filtrer les ressources qui ne correspondent pas au chemin spécifié  
     :::image-end:::  
     
-## Suppression d'une ressource   
+## Suppression d'une ressource  
 
 1.  [Afficher les données d’un cache](#view-cache-data).  
 1.  Sélectionnez la ressource que vous voulez supprimer.  DevTools le met en surbrillance pour indiquer qu’il est sélectionné.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="Sélectionner une ressource" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
-       Sélectionner une ressource  
+    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
+       Sélectionner une ressource à supprimer  
     :::image-end:::  
     
 1.  Sélectionnez **Supprimer la sélection** \ ( ![ Supprimer la sélection ][ImageDeleteIcon] \).  
     
-## Supprimer toutes les données du cache   
+## Supprimer toutes les données du cache  
 
 1.  Ouvrez l' **application**  >  **Clear Storage**.  
 1.  Vérifiez que la case à cocher **stockage du cache** est activée.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Case à cocher stockage du cache" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
        Case à cocher **stockage du cache**  
     :::image-end:::  
     
 1.  Sélectionnez **effacer les données du site**.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="Bouton Effacer les données du site" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
        Bouton **effacer les données du site**  
     :::image-end:::  
     
-<!--  
-  
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

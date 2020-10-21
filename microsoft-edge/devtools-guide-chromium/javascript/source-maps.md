@@ -3,16 +3,16 @@ description: Gardez votre code côté client lisible et déboguable même après
 title: Mapper le code prétraité au code source
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: bd04c7bae6f57d4fe3f9b293d70775aa99db3dd1
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: c16f59658217ab9dfb905bd814f96af21f95130d
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993232"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124679"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -50,7 +50,7 @@ Cet article explique comment interagir avec des cartes sources JavaScript dans l
 
 ## Utiliser un préprocesseur pris en charge  
 
-Vous devez utiliser un Minifier capable de créer des mappages sources.  <!--For the most popular options, see the preprocessor support section.  -->  Pour un affichage étendu, voir la page [mappages de sources: langues, outils et autres informations][GitHubWikiSourceMapsLanguagesTools] wiki.  
+Vous devez utiliser un Minifier capable de créer des mappages sources.  <!--For the most popular options, navigate to preprocessor support section.  -->  Pour un affichage étendu, accédez à [mappages de sources: langues, outils et][GitHubWikiSourceMapsLanguagesTools] page wiki d’autres informations.  
 
 <!--todo: add link to see the preprocessor support section when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
@@ -108,7 +108,7 @@ Effectuez les opérations suivantes.
     
 Si vous développez le sous-panneau **sources** , vous voyez maintenant un nouveau fichier avec le nom de fichier personnalisé que vous avez entré précédemment.  Si vous double-cliquez sur le fichier pour l’afficher, il contient le code JavaScript compilé pour la source d’origine.  En revanche, la dernière ligne est un `// @sourceURL` Commentaire indiquant le fichier source d’origine.  Cela risque de vous aider à procéder au débogage lorsque vous travaillez avec des résumés de langue.  
 
-:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Utiliser sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Activer les mappages sources" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
    Utiliser `sourceURL`  
 :::image-end:::  
 

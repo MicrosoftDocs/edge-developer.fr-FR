@@ -3,16 +3,16 @@ description: Référence aux commandes de commodité disponibles dans la console
 title: XXXXXX xxxxxxx xxx xxxxxxxxx
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 2882d980e6da45072cab4b028ceb1838a9078064
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f224bb8235437e971ff0e59c20d69e589ce520fb
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993106"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125250"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -53,7 +53,7 @@ Dans l’illustration suivante, une expression simple \ ( `2 + 2` \) est évalu�
 
 Dans l’illustration suivante, l’expression évaluée contient initialement un tableau de noms.  Si vous évaluez la `$_.length` longueur de l’argument matrice, la valeur stockée dans `$_` les modifications devient la dernière expression évaluée `4` .  
 
-:::image type="complex" source="../media/console-array-length.msft.png" alt-text="$ _ change lorsque de nouvelles commandes sont évaluées" lightbox="../media/console-array-length.msft.png":::
+:::image type="complex" source="../media/console-array-length.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-array-length.msft.png":::
    Figure 2:  `$_` modifications lors de l’évaluation de nouvelles commandes  
 :::image-end:::  
 
@@ -99,13 +99,13 @@ Retourne l’élément le plus récemment sélectionné ou l’objet JavaScript.
 
 Dans l’illustration suivante, un `img` élément est sélectionné dans le panneau **éléments** .  Le tiroir **Console** de la console `$0` a été évalué et affiche le même élément.  
 
-:::image type="complex" source="../media/console-image-highlighted-$0.msft.png" alt-text="$0" lightbox="../media/console-image-highlighted-$0.msft.png":::
+:::image type="complex" source="../media/console-image-highlighted-$0.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-image-highlighted-$0.msft.png":::
    Figure 3: le `$0`  
 :::image-end:::  
 
 Dans l’illustration suivante, l’image montre un élément différent sélectionné dans la même page.  L' `$0` élément désormais fait référence à l’élément que vous venez de sélectionner, tandis qu’il `$1` renvoie le précédent.  
 
-:::image type="complex" source="../media/console-image-highlighted-$1.msft.png" alt-text="$1" lightbox="../media/console-image-highlighted-$1.msft.png":::
+:::image type="complex" source="../media/console-image-highlighted-$1.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-image-highlighted-$1.msft.png":::
    Figure 4: le `$1`  
 :::image-end:::  
 
@@ -119,15 +119,15 @@ Renvoie la référence au premier élément DOM avec le sélecteur CSS spécifi�
 
 Dans l’illustration suivante, une référence au premier `<img>` élément du document est renvoyée.  
 
-:::image type="complex" source="../media/console-element-selector-image.msft.png" alt-text="$ ('Img')" lightbox="../media/console-element-selector-image.msft.png":::
+:::image type="complex" source="../media/console-element-selector-image.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-element-selector-image.msft.png":::
    Figure 5: le `$('img')`  
 :::image-end:::  
 
-Positionnez le pointeur sur le résultat retourné, ouvrez le menu contextuel (cliquez avec le bouton droit sur \), puis sélectionnez l’option **révéler dans le panneau d’éléments** pour le Rechercher dans le DOM ou **faire défiler pour** afficher la page.  
+Positionnez le pointeur sur le résultat retourné, ouvrez le menu contextuel (cliquez avec le bouton droit sur \), puis sélectionnez **afficher dans le panneau d’éléments** pour le Rechercher dans le DOM ou **faire défiler pour** afficher la page.  
 
 Dans l’illustration suivante, une référence à l’élément actuellement sélectionné est renvoyée et la propriété SRC est affichée.  
 
-:::image type="complex" source="../media/console-element-selector-image-source.msft.png" alt-text="$ ('Img'). SRC" lightbox="../media/console-element-selector-image-source.msft.png":::
+:::image type="complex" source="../media/console-element-selector-image-source.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-element-selector-image-source.msft.png":::
    Figure 6: le `$('img').src`  
 :::image-end:::  
 
@@ -135,7 +135,7 @@ Cette méthode prend également en charge un second paramètre, startNode, qui s
 
 Dans l’illustration suivante, le premier `img` élément est trouvé après `title--image` et affiche le `src` résultat correct.  
 
-:::image type="complex" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="$ ('Img', document. querySelector ('title--image')). SRC" lightbox="../media/console-element-selector-image-filter-source.msft.png":::
+:::image type="complex" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-element-selector-image-filter-source.msft.png":::
    Figure 7: le `$('img', document.querySelector('title--image')).src`  
 :::image-end:::  
 
@@ -159,7 +159,7 @@ for (each in images) {
 }
 ```  
 
-:::image type="complex" source="../media/console-element-selector-image-all.msft.png" alt-text="Utilisation de $ $ () pour sélectionner toutes les images du document et afficher les sources" lightbox="../media/console-element-selector-image-all.msft.png":::
+:::image type="complex" source="../media/console-element-selector-image-all.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-element-selector-image-all.msft.png":::
    Figure 8: utilisation `$$()` pour sélectionner toutes les images du document et afficher les sources  
 :::image-end:::  
 
@@ -174,12 +174,12 @@ for (each in images) {
 }
 ```  
 
-:::image type="complex" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="Utilisation de $ $ () pour sélectionner toutes les images qui s’affichent après l’élément <div> spécifié dans le document et afficher les sources" lightbox="../media/console-element-selector-image-filter-all.msft.png":::
+:::image type="complex" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-element-selector-image-filter-all.msft.png":::
    Figure 9: utilisation `$$()` pour sélectionner toutes les images qui apparaissent après l' `<div>` élément spécifié dans le document et afficher les sources  
 :::image-end:::  
 
 > [!NOTE]
-> Appuyez sur `Shift` + `Enter` la console pour commencer une nouvelle ligne sans exécuter le script.  
+> Sélectionnez `Shift` + `Enter` dans la console pour commencer une nouvelle ligne sans exécuter le script.  
 
 ## Suivante  
 
@@ -195,7 +195,7 @@ Dans l’exemple de code et la figure ci-dessous, tous les `<p>` éléments de l
 $x("//p")
 ```  
 
-:::image type="complex" source="../media/console-array-xpath.msft.png" alt-text="Utilisation d’un sélecteur XPath" lightbox="../media/console-array-xpath.msft.png":::
+:::image type="complex" source="../media/console-array-xpath.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-array-xpath.msft.png":::
    Figure 10: utilisation d’un sélecteur XPath  
 :::image-end:::  
 
@@ -205,13 +205,13 @@ Dans l’exemple de code et la figure ci-dessous, tous les `<p>` éléments qui 
 $x("//p[a]")
 ```  
 
-:::image type="complex" source="../media/console-array-xpath-sub-element.msft.png" alt-text="Utilisation d’un sélecteur XPath plus complexe" lightbox="../media/console-array-xpath-sub-element.msft.png":::
+:::image type="complex" source="../media/console-array-xpath-sub-element.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-array-xpath-sub-element.msft.png":::
    Figure 11: utilisation d’un sélecteur XPath plus complexe  
 :::image-end:::  
 
 À l’instar des autres commandes de sélecteur, `$x(path)` possède un deuxième paramètre facultatif, `startNode` qui spécifie un élément ou un nœud à partir duquel Rechercher des éléments.  
 
-:::image type="complex" source="../media/console-array-xpath-startnode.msft.png" alt-text="Utilisation d’un sélecteur XPath avec startNode" lightbox="../media/console-array-xpath-startnode.msft.png":::
+:::image type="complex" source="../media/console-array-xpath-startnode.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-array-xpath-startnode.msft.png":::
    Figure 12: utilisation d’un sélecteur XPath avec `startNode`  
 :::image-end:::  
 
@@ -254,13 +254,13 @@ Lorsque vous demandez la méthode spécifiée, le débogueur est appelé et s’
 debug("debug");
 ```  
 
-:::image type="complex" source="../media/console-debug-text.msft.png" alt-text="Casser au sein d’une méthode à l’aide du débogage ()" lightbox="../media/console-debug-text.msft.png":::
+:::image type="complex" source="../media/console-debug-text.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-debug-text.msft.png":::
    Figure 13: rupture dans une méthode avec `debug()`  
 :::image-end:::  
 
 Utilisez `undebug(method)` cette commande pour arrêter l’interruption de la méthode, ou utilisez l’interface utilisateur pour désactiver tous les points d’arrêt.  
 
-Pour plus d’informations sur les points d’arrêt, voir [suspendre votre code avec des points d’arrêt][DevToolsJavascriptBreakpoints].  
+Pour plus d’informations sur les points d’arrêt, accédez à [la section suspendre votre code avec des points d’arrêt][DevToolsJavascriptBreakpoints].  
 
 ## dir  
 
@@ -277,11 +277,11 @@ document.head;
 dir(document.head);
 ```  
 
-:::image type="complex" source="../media/console-dir-document-head-expanded.msft.png" alt-text="Journalisation du document. Head avec la méthode dir ()" lightbox="../media/console-dir-document-head-expanded.msft.png":::
+:::image type="complex" source="../media/console-dir-document-head-expanded.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-dir-document-head-expanded.msft.png":::
    Figure 14: journalisation `document.head` avec la `dir()` méthode  
 :::image-end:::  
 
-Pour plus d’informations, consultez l' [`console.dir()`][DevToolsConsoleApiConsoleDirObject] entrée dans l’API de la console.  
+Pour plus d’informations, accédez à [`console.dir()`][DevToolsConsoleApiConsoleDirObject] entrée dans l’API de la console.  
 
 ## dirxml  
 
@@ -305,7 +305,7 @@ Dans l’exemple de code et la figure ci-après, l' `document.body` élément s�
 inspect(document.body);
 ```  
 
-:::image type="complex" source="../media/console-inspect-document-body.msft.png" alt-text="Inspecter un élément avec Inspect ()" lightbox="../media/console-inspect-document-body.msft.png":::
+:::image type="complex" source="../media/console-inspect-document-body.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-inspect-document-body.msft.png":::
    Figure 15: examen d’un élément avec `inspect()`  
 :::image-end:::  
 
@@ -323,19 +323,19 @@ Renvoie les écouteurs d’événements enregistrés sur l’objet spécifié.  
 getEventListeners(document);
 ```  
 
-:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png" alt-text="Sortie de l’utilisation de getEventListeners (document)" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png":::
+:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png":::
    Figure 16: résultat de l’utilisation de `getEventListeners(document)`  
 :::image-end:::  
 
 S’il existe plusieurs écouteurs enregistrés sur l’objet spécifié, le tableau contient un membre pour chaque écouteur.  Dans l’illustration suivante, deux écouteurs d’événements sont inscrits dans l’élément document pour l' `click` événement.  
 
-:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png" alt-text="Écouteurs multiples" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png":::
+:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png":::
    Figure 17: écouteurs multiples  
 :::image-end:::  
 
 Vous pouvez également développer chacun des objets suivants pour découvrir les propriétés.  
 
-:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png" alt-text="Affichage développé de l’objet Listener" lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png":::
+:::image type="complex" source="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png":::
    Figure 18: vue développée de l’objet Listener  
 :::image-end:::  
 
@@ -350,7 +350,7 @@ Retourne une matrice contenant les noms des propriétés appartenant à l’obje
 Par exemple, supposons que votre application définisse l’objet suivant.  
 
 ```console
-var player1 = { "name":  "Ted", "level": 42 }
+var player1 =   
 ```  
 
 Dans les exemples de code et figures suivants, le résultat suppose qu’il `player1` a été défini dans l’espace de noms global \ (pour la simplicité \) avant de taper `keys(player1)` et `values(player1)` dans la console.  
@@ -361,7 +361,7 @@ keys(player1)
 values(player1)
 ```  
 
-:::image type="complex" source="../media/console-keys-values.msft.png" alt-text="Commandes Keys () et values ()" lightbox="../media/console-keys-values.msft.png":::
+:::image type="complex" source="../media/console-keys-values.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-keys-values.msft.png":::
    Figure 19: `keys()` commandes et `values()`  
 :::image-end:::  
 
@@ -380,7 +380,7 @@ function sum(x, y) {
 monitor(sum);
 ```  
 
-:::image type="complex" source="../media/console-function-monitor-sum.msft.png" alt-text="Méthode Monitor ()" lightbox="../media/console-function-monitor-sum.msft.png":::
+:::image type="complex" source="../media/console-function-monitor-sum.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-function-monitor-sum.msft.png":::
    Figure 20: `monitor()` méthode  
 :::image-end:::  
 
@@ -400,7 +400,7 @@ Le code suivant analyse tous les événements de redimensionnement sur l’objet
 monitorEvents(window, "resize");
 ```  
 
-:::image type="complex" source="../media/console-monitor-events-resize-window.msft.png" alt-text="Surveiller les événements de redimensionnement d’une fenêtre" lightbox="../media/console-monitor-events-resize-window.msft.png":::
+:::image type="complex" source="../media/console-monitor-events-resize-window.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-monitor-events-resize-window.msft.png":::
    Figure 21: surveiller les événements de redimensionnement d’une fenêtre  
 :::image-end:::  
 
@@ -427,7 +427,7 @@ monitorEvents($0, "key");
 
 Dans l’illustration suivante, la sortie de l’exemple après saisie d’un caractère dans le champ de texte s’affiche.  
 
-:::image type="complex" source="../media/console-monitor-events-type-t-y.msft.png" alt-text="Surveiller les événements de touche" lightbox="../media/console-monitor-events-type-t-y.msft.png":::
+:::image type="complex" source="../media/console-monitor-events-type-t-y.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-monitor-events-type-t-y.msft.png":::
    Figure 22: surveiller les événements de touche  
 :::image-end:::  
 
@@ -485,7 +485,7 @@ profileEnd('B');
 
 Le résultat s’affiche sous la forme d’un instantané de tas dans le panneau **mémoire** .  
 
-:::image type="complex" source="../media/console-memory-multiple-cpu-profiles.msft.png" alt-text="Profils groupés" lightbox="../media/console-memory-multiple-cpu-profiles.msft.png":::
+:::image type="complex" source="../media/console-memory-multiple-cpu-profiles.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-memory-multiple-cpu-profiles.msft.png":::
    Figure 23: profils groupés  
 :::image-end:::  
 
@@ -548,7 +548,7 @@ var names = {
 table(names);
 ```  
 
-:::image type="complex" source="../media/console-table-display.msft.png" alt-text="Résultat de la méthode table ()." lightbox="../media/console-table-display.msft.png":::
+:::image type="complex" source="../media/console-table-display.msft.png" alt-text="$ _ est l’expression la plus récemment évaluée." lightbox="../media/console-table-display.msft.png":::
    Figure 24: résultat de la `table()` méthode  
 :::image-end:::  
 
@@ -606,6 +606,10 @@ Renvoie une matrice contenant les valeurs de toutes les propriétés de l’obje
 ```console
 values(object);
 ```  
+
+## Contacter l’équipe DevTools MicrosoftEdge  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

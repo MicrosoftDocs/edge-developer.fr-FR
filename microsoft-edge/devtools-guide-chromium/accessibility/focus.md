@@ -3,16 +3,16 @@ description: Ouvrez la console, créez une expression dynamique et attribuez à 
 title: Effectuer le suivi de l’élément actif
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 9000b8ca1fa52daf5257f201c65dcabd78298ec7
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: a0d0861494db87e546443c0f3a1d4f531412300c
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993204"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125306"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,7 +35,7 @@ Imaginons que vous testiez l’accessibilité de la navigation au clavier d’un
 Procédez comme suit pour effectuer le suivi de l’élément prioritaire dans DevTools.  
 
 1.  Ouvrez la **console**.  
-1.  Cliquez sur **créer une expression dynamique** \ ( ![ créer une expression dynamique ][ImageCreateIcon] \).  
+1.  Sélectionnez **créer une expression dynamique** \ ( ![ créer une expression dynamique ][ImageCreateIcon] \).  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Créer une expression dynamique" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        Créer une expression dynamique  

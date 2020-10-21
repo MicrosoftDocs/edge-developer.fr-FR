@@ -3,16 +3,16 @@ description: Découvrir HTML et le DOM
 title: 'DevTools pour les débutants: commencez à utiliser HTML et au DOM'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: 182885cb97dbd1672d33b257569b0d841466985b
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f17b68845ef746fa2612cdf4d02cc7e1003baabb
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993281"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125299"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -28,13 +28,13 @@ ms.locfileid: "10993281"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# DevTools pour les débutants: commencez à utiliser HTML et au DOM   
+# DevTools pour les débutants: commencez à utiliser HTML et au DOM  
 
 Voici le premier d’une série de didacticiels pour vous apprendre les notions de base du développement Web.  Vous découvrirez également un ensemble d’outils de développement Web, appelés Microsoft Edge DevTools, qui peuvent augmenter votre productivité.  
 
 Dans ce didacticiel, vous allez découvrir HTML et le DOM.  HTML est l’une des technologies fondamentales du développement Web.  Il s’agit de la langue qui contrôle la structure et le contenu de pages Web.  Le DOM est également lié à la structure et au contenu des pages Web, mais vous en saurez plus à ce sujet plus tard.  
 
-## Définis   
+## Définis  
 
 Vous allez découvrir le développement Web en créant votre propre site Web.  Au moment où vous effectuez tous les didacticiels de la série *devtools pour les débutants* , votre site fini se présente comme suit.  
 
@@ -50,43 +50,43 @@ Vous allez découvrir le développement Web en créant votre propre site Web.  A
 
 Vous disposez également d’un site Web réel.  Vous pouvez utiliser ce site pour héberger votre c.v. ou votre blog.  
 
-## Éléments prérequis   
+## Conditions préalables  
 
 Avant de suivre ce didacticiel, remplissez les conditions préalables suivantes:  
 
 *   Si vous n’êtes pas familiarisé avec le format HTML, consultez la rubrique [mise en route de HTML][MDNGettingStartedHtml].  
 *   Téléchargez le navigateur Web [Microsoft Edge][MicrosoftEdgeInsider] .  Ce didacticiel utilise un ensemble d’outils de développement Web, appelés Microsoft Edge DevTools, qui sont intégrés à Microsoft Edge.  
 
-## Configurer votre code   
+## Configurer votre code  
 
 Vous allez créer votre site dans un éditeur de code en ligne appelé erreur.  
 
 1.  Ouvrez le [code source][GlitchAlluringShockIndex].  Cet onglet est appelé **onglet Éditeur** tout au long de ce didacticiel.  
     
-    :::image type="complex" source="../media/beginners-html-setup1.msft.png" alt-text="Onglet Éditeur" lightbox="../media/beginners-html-setup1.msft.png":::
+    :::image type="complex" source="../media/beginners-html-setup1.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-setup1.msft.png":::
        Onglet Éditeur  
     :::image-end:::  
     
-1.  Cliquez sur **alluring-choc**.  Le menu options de Project s’ouvre dans le coin supérieur gauche.  
+1.  Choisissez **alluring-choc**.  Le menu options de Project s’ouvre dans le coin supérieur gauche.  
     
-    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="Menu options de Project" lightbox="../media/beginners-html-setup2.msft.png":::
+    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-setup2.msft.png":::
        Menu options de Project  
     :::image-end:::  
     
-1.  Cliquez sur **Remix Project**.  Le problème crée une copie du projet que vous pouvez modifier et qui génère de manière aléatoire un nouveau nom pour le projet.  Le contenu est le même qu’auparavant.  
+1.  Sélectionnez **Remix Project**.  Le problème crée une copie du projet que vous pouvez modifier et qui génère de manière aléatoire un nouveau nom pour le projet.  Le contenu est le même qu’auparavant.  
     
-    :::image type="complex" source="../media/beginners-html-setup3.msft.png" alt-text="Le projet Remixed" lightbox="../media/beginners-html-setup3.msft.png":::
+    :::image type="complex" source="../media/beginners-html-setup3.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-setup3.msft.png":::
        Le projet Remixed  
     :::image-end:::  
     
-1.  Si vous envisagez de terminer le didacticiel suivant de cette série, cliquez sur **se connecter** , puis connectez-vous à votre compte GitHub ou Facebook.  Si vous ne vous connectez pas, vous perdrez la possibilité de modifier ce projet une fois que vous avez fermé l’onglet modification.  
-1.  Cliquez sur **Afficher** et sélectionnez **dans une nouvelle fenêtre**.  Un nouvel onglet s’ouvre et affiche la page dynamique.  Cet onglet est appelé **onglet dynamique** tout au long de ce didacticiel.  
+1.  Si vous envisagez de terminer le didacticiel suivant de cette série, sélectionnez **se connecter** , puis connectez-vous à votre compte GitHub ou Facebook.  Si vous ne vous connectez pas, vous perdrez la possibilité de modifier ce projet une fois que vous avez fermé l’onglet modification.  
+1.  Sélectionnez **Afficher** et choisissez **dans une nouvelle fenêtre**.  Un nouvel onglet s’ouvre et affiche la page dynamique.  Cet onglet est appelé **onglet dynamique** tout au long de ce didacticiel.  
     
-    :::image type="complex" source="../media/beginners-html-setup4.msft.png" alt-text="Onglet Live" lightbox="../media/beginners-html-setup4.msft.png":::
+    :::image type="complex" source="../media/beginners-html-setup4.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-setup4.msft.png":::
        Onglet Live  
     :::image-end:::  
     
-## Ajouter du contenu   
+## Ajouter du contenu  
 
 Votre site est assez vide.  Pour ajouter du contenu à votre présentation, procédez comme suit.  
 
@@ -108,7 +108,7 @@ Votre site est assez vide.  Pour ajouter du contenu à votre présentation, proc
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/beginners-html-add1.msft.png" alt-text="Le nouveau code est mis en surbrillance dans l’onglet Éditeur" lightbox="../media/beginners-html-add1.msft.png":::
+          :::image type="complex" source="../media/beginners-html-add1.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-add1.msft.png":::
              Le nouveau code est mis en surbrillance dans l’onglet Éditeur  
           :::image-end:::  
        :::column-end:::
@@ -116,7 +116,7 @@ Votre site est assez vide.  Pour ajouter du contenu à votre présentation, proc
     
 1.  Affichez vos modifications sous l' **onglet Live**.  Le texte `About Me` est visible sur la page.  Il est plus grand que le reste du texte, car l' `<h1>` élément représente un titre de section.  Dans votre navigateur Web, les titres sont automatiquement appliqués en taille de police plus grande.  
     
-    :::image type="complex" source="../media/beginners-html-add2.msft.png" alt-text="Le nouveau titre est affiché dans l’onglet Live" lightbox="../media/beginners-html-add2.msft.png":::
+    :::image type="complex" source="../media/beginners-html-add2.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-add2.msft.png":::
        Le nouveau titre est affiché dans l’onglet Live  
     :::image-end:::  
     
@@ -139,8 +139,8 @@ Votre site est assez vide.  Pour ajouter du contenu à votre présentation, proc
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/beginners-html-add3.msft.png" alt-text="Le nouveau code est mis en surbrillance dans l’onglet Éditeur" lightbox="../media/beginners-html-add3.msft.png":::
-             Le nouveau code est mis en surbrillance dans l’onglet Éditeur  
+          :::image type="complex" source="../media/beginners-html-add3.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-add3.msft.png":::
+             Le code mis à jour est mis en surbrillance dans l’onglet Éditeur  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
@@ -167,59 +167,59 @@ Votre site est assez vide.  Pour ajouter du contenu à votre présentation, proc
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/beginners-html-add4.msft.png" alt-text="Le nouveau code est mis en surbrillance dans l’onglet Éditeur" lightbox="../media/beginners-html-add4.msft.png":::
-             Le nouveau code est mis en surbrillance dans l’onglet Éditeur  
+          :::image type="complex" source="../media/beginners-html-add4.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-add4.msft.png":::
+             Le code mis à jour est également mis en surbrillance dans l’onglet Éditeur  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
 1.  Revenez à l' **onglet Live** pour vérifier que le nouveau contenu s’affiche correctement.  
     
-    :::image type="complex" source="../media/beginners-html-add5.msft.png" alt-text="La nouvelle liste est affichée sous l’onglet Live" lightbox="../media/beginners-html-add5.msft.png":::
+    :::image type="complex" source="../media/beginners-html-add5.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-add5.msft.png":::
        La nouvelle liste est affichée sous l’onglet Live  
     :::image-end:::  
     
-## Tester les modifications de contenu dans Microsoft Edge DevTools   
+## Tester les modifications de contenu dans Microsoft Edge DevTools  
 
 Si vous développez une grande page à l’aide d’un grand nombre de fichiers HTML, vous pouvez imaginer qu’il peut être fastidieux de reculer entre l’onglet Éditeur et l’onglet actif de centaines de fois pour voir vos modifications, en particulier si vous ne savez pas exactement ce que vous voulez faire dans la page.  Microsoft Edge DevTools peut vous aider à tester du contenu sans quitter l’onglet Live.  
 
-### Différences entre le format HTML et le DOM   
+### Différences entre le format HTML et le DOM  
 
 Avant de commencer à modifier votre contenu à partir de Microsoft Edge DevTools, il est utile de comprendre la différence entre le code HTML et le DOM.  Le meilleur moyen d’apprendre est, par exemple:  
 
 1.  Accédez à l' **onglet Live**.  Le texte s’affiche en bas de la page `A new element!?!` .  
     
-    :::image type="complex" source="../media/beginners-html-dom1.msft.png" alt-text="En bas de la page, le texte!?! un nouvel élément est visible" lightbox="../media/beginners-html-dom1.msft.png":::
+    :::image type="complex" source="../media/beginners-html-dom1.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-dom1.msft.png":::
        En bas de la page, le texte!?! un nouvel élément est visible  
     :::image-end:::  
     
 1.  Revenez à l' **onglet Éditeur** et essayez de Rechercher ce texte dans `index.html` .  Ce n’est pas là!  
     
-    :::image type="complex" source="../media/beginners-html-dom2.msft.png" alt-text="Le texte du mystère est un nouvel élément!?! n’est pas disponible dans index.html" lightbox="../media/beginners-html-dom2.msft.png":::
+    :::image type="complex" source="../media/beginners-html-dom2.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-dom2.msft.png":::
        Le texte `A new element!?!` de mystère est introuvable dans `index.html`  
     :::image-end:::  
     
 1.  Revenez à l' **onglet Live**, cliquez avec le bouton droit `A new element!?!` , puis sélectionnez **inspecter**.  
     
-    :::image type="complex" source="../media/beginners-html-dom3.msft.png" alt-text="Inspecter du texte" lightbox="../media/beginners-html-dom3.msft.png":::
+    :::image type="complex" source="../media/beginners-html-dom3.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-dom3.msft.png":::
        Inspecter du texte  
     :::image-end:::  
     
     DevTools s’ouvre à côté de votre page.  `<div>A new element!?!</div>` est en surbrillance bleue.  Même si cette structure dans DevTools ressemble à votre code HTML, il s’agit en réalité de l' **arborescence DOM**.  
     
-    :::image type="complex" source="../media/beginners-html-dom4.msft.png" alt-text="DevTools est ouvert parallèlement à la page" lightbox="../media/beginners-html-dom4.msft.png":::
+    :::image type="complex" source="../media/beginners-html-dom4.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-dom4.msft.png":::
        DevTools est ouvert parallèlement à la page  
     :::image-end:::  
     
 Lors du chargement de la page, le navigateur utilise votre code HTML pour créer le contenu *initial* de la page.  Le DOM représente le contenu *actuel* de la page, qui peut changer au fil du temps.  Le `<div>A new element!?!</div>` contenu mystérieux est ajouté à votre page en raison de la `<script src="new.js"></script>` balise située en bas de votre code html.  Cette balise entraîne l’exécution du code JavaScript.  En savoir plus sur JavaScript dans un didacticiel ultérieur, mais pour le considérer comme un langage de programmation qui peut changer le contenu de votre page.  Dans ce cas particulier, le code JavaScript est ajouté `<div>A new element!?!</div>` à votre page.  C’est la raison pour laquelle ce texte de mystère est visible sur votre page dynamique, mais pas dans votre code HTML.  
 
-### Modifier le DOM   
+### Modifier le DOM  
 
 Si vous voulez tester rapidement les changements de contenu sans quitter l’onglet Live, essayez DevTools.  
 
 1.  Dans DevTools, cliquez avec le bouton droit, `Your site!` puis sélectionnez **modifier en HTML**.  
     
-    :::image type="complex" source="../media/beginners-html-edit1.msft.png" alt-text="Modification du nœud au format HTML" lightbox="../media/beginners-html-edit1.msft.png":::
+    :::image type="complex" source="../media/beginners-html-edit1.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-edit1.msft.png":::
        Modification du nœud au format HTML  
     :::image-end:::  
     
@@ -241,27 +241,27 @@ Si vous voulez tester rapidement les changements de contenu sans quitter l’ong
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/beginners-html-edit2.msft.png" alt-text="Modification du nœud au format HTML" lightbox="../media/beginners-html-edit2.msft.png":::
-             Modification du nœud au format HTML  
+          :::image type="complex" source="../media/beginners-html-edit2.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-edit2.msft.png":::
+             Mise à jour du nœud au format HTML  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
-1.  `Control` + `Enter` `Command` + `Enter` Pour enregistrer vos modifications ou cliquez en dehors de la zone, appuyez sur \ (Windows \) ou \ (MacOS \).  Vos modifications apparaissent automatiquement dans le mode en direct de votre page.  Le texte `Your site!` a été remplacé par le nouveau contenu.  
+1.  `Control` + `Enter` `Command` + `Enter` Pour enregistrer vos modifications ou cliquez en dehors de la zone, sélectionnez \ (Windows, Linux \) ou \ (MacOS \).  Vos modifications apparaissent automatiquement dans le mode en direct de votre page.  Le texte `Your site!` a été remplacé par le nouveau contenu.  
     
-    :::image type="complex" source="../media/beginners-html-edit3.msft.png" alt-text="Le nouveau contenu apparaît immédiatement sur la page" lightbox="../media/beginners-html-edit3.msft.png":::
+    :::image type="complex" source="../media/beginners-html-edit3.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-edit3.msft.png":::
        Le nouveau contenu apparaît immédiatement sur la page  
     :::image-end:::  
     
 Ce flux de travail est uniquement utile pour tester les modifications de contenu.  Si vous rechargez la page ou que vous fermez l’onglet, vos modifications sont supprimées définitivement.  Si vous utilisez ce flux de travail et que vous voulez enregistrer les modifications, vous devez les copier manuellement dans votre code HTML.  Les deux sections suivantes vous montrent davantage de moyens de changer le contenu de l’arborescence DOM.  
 
-## Réorganiser les nœuds   
+## Réorganiser les nœuds  
 
 Vous pouvez également modifier l’ordre des nœuds DOM.  Par exemple, sur votre page Web, le menu de navigation est proche du bas.  Pour le déplacer vers le haut:  
 
 1.  Recherchez le `<nav>` nœud dans l' **arborescence DOM** de devtools.  
     
-    :::image type="complex" source="../media/beginners-html-reorder1.msft.png" alt-text="Le nœud de navigation est surligné en bleu dans DevTools" lightbox="../media/beginners-html-reorder1.msft.png":::
+    :::image type="complex" source="../media/beginners-html-reorder1.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-reorder1.msft.png":::
        Le nœud de navigation est surligné en bleu dans DevTools  
     :::image-end:::  
     
@@ -269,42 +269,42 @@ Vous pouvez également modifier l’ordre des nœuds DOM.  Par exemple, sur votr
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/beginners-html-reorder2.msft.png" alt-text="Faire glisser le nœud de navigation vers le haut" lightbox="../media/beginners-html-reorder2.msft.png":::
+          :::image type="complex" source="../media/beginners-html-reorder2.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-reorder2.msft.png":::
              Faire glisser le nœud de navigation vers le haut  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           Le `<nav>` nœud est désormais affiché en haut de votre page.  
           
-          :::image type="complex" source="../media/beginners-html-reorder3.msft.png" alt-text="Le nœud de navigation est en haut de la page" lightbox="../media/beginners-html-reorder3.msft.png":::
+          :::image type="complex" source="../media/beginners-html-reorder3.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-reorder3.msft.png":::
              Le nœud de navigation est en haut de la page  
           :::image-end:::  
        :::column-end:::
    :::row-end:::  
     
-### Supprimer un nœud   
+### Supprimer un nœud  
 
 Vous pouvez également supprimer des nœuds de l’arborescence DOM.  
 
 1.  Dans l' **arborescence DOM**, cliquez sur `<div>A new element!?!</div>` .  DevTools surligne le nœud bleu.  
     
-    :::image type="complex" source="../media/beginners-html-delete1.msft.png" alt-text="Sélection du nœud à supprimer" lightbox="../media/beginners-html-delete1.msft.png":::
+    :::image type="complex" source="../media/beginners-html-delete1.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-delete1.msft.png":::
        Sélection du nœud à supprimer  
     :::image-end:::  
     
 1.  Appuyez sur la `Delete` touche de votre clavier.  Le `<div>A new element!?!</div>` nœud est supprimé de votre arborescence DOM.  
     
-    :::image type="complex" source="../media/beginners-html-delete2.msft.png" alt-text="Le nœud a été supprimé." lightbox="../media/beginners-html-delete2.msft.png":::
+    :::image type="complex" source="../media/beginners-html-delete2.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-delete2.msft.png":::
        Le nœud a été supprimé.  
     :::image-end:::  
     
-## Copiez vos modifications   
+## Copiez vos modifications  
 
 Vous avez presque terminé.  Vous avez apporté des modifications à votre page dans DevTools, mais celles-ci ne sont pas encore enregistrées dans votre code source.  
 
 1.  Actualisez votre **onglet actif**.  Les modifications que vous avez apportées à l’arborescence DOM disparaissent.  Par exemple, le texte `Your site!` revient en haut de la page et le texte `A new element!?!` revient en bas.  
     
-    :::image type="complex" source="../media/beginners-html-copy1.msft.png" alt-text="Les modifications que vous avez apportées ont disparu" lightbox="../media/beginners-html-copy1.msft.png":::
+    :::image type="complex" source="../media/beginners-html-copy1.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-copy1.msft.png":::
        Les modifications que vous avez apportées ont disparu  
     :::image-end:::  
     
@@ -344,15 +344,19 @@ Vous avez presque terminé.  Vous avez apporté des modifications à votre page 
     
 1.  Revenez à l' **onglet Éditeur** et remplacez le contenu de votre `index.html` fichier par le code que vous venez de copier.  
     
-    :::image type="complex" source="../media/beginners-html-copy2.msft.png" alt-text="Aspect de votre fichier index.html" lightbox="../media/beginners-html-copy2.msft.png":::
+    :::image type="complex" source="../media/beginners-html-copy2.msft.png" alt-text="Le site terminé" lightbox="../media/beginners-html-copy2.msft.png":::
        Aspect de votre `index.html` fichier  
     :::image-end:::  
     
-## Étapes suivantes   
+## Étapes suivantes  
 
 *   Suivez les étapes ci-dessous pour découvrir comment appliquer un [style à votre][DevToolsBeginnersCss]page et tester les modifications de style dans Microsoft Edge devtools.  
 *   Lire [Introduction au DOM][MDNIntroductionDom] pour en savoir plus sur le DOM.  
 *   Consultez un cours comme [Introduction au développement Web][CourseraIntroductionToWebDevelopment] pour bénéficier d’une expérience de développement Web plus pratique.  
+
+## Contacter l’équipe DevTools MicrosoftEdge  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!--- links --->  
 

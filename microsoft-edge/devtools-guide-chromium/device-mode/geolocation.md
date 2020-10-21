@@ -3,16 +3,16 @@ description: Ouvrez l’onglet capteurs et sélectionnez coordonnées dans la li
 title: Remplacer le géolocalisation avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 269e7ca4bf259aa168c06ac0fd915604731463c4
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f2bc395993ff59d88360a363b2c4bc12b570f1ab
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992987"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125012"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -36,16 +36,16 @@ De nombreux sites Web tirent parti de l’emplacement de l’utilisateur, afin d
 
 Si vous créez une interface utilisateur qui change en fonction de l’emplacement de l’utilisateur, vous devez probablement vous assurer que le site se comporte correctement à différents emplacements du monde.  Pour ignorer votre géolocalisation dans Microsoft Edge DevTools, effectuez les actions suivantes.  
 
-1.  Appuyez sur `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
+1.  Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Menu de commandes" lightbox="../media/device-mode-console-command-menu.msft.png":::
        **Menu de commandes**  
     :::image-end:::  
     
-1.  Tapez `sensors` , sélectionnez **afficher les capteurs**, puis appuyez sur `Enter` .  L’onglet **capteurs** s’ouvre en bas de la fenêtre devtools.  
-1.  Dans la liste de **géolocalisation** , sélectionnez l’une des villes prédéfinies, par exemple `Tokyo` , ou sélectionnez **emplacement personnalisé** pour entrer des coordonnées de longitude et de latitude personnalisées, ou sélectionnez **emplacement non disponible** pour voir l’apparence de votre site lorsque l’emplacement de l’utilisateur n’est pas disponible.  
+1.  Tapez `sensors` , choisissez **afficher les capteurs**, puis sélectionnez `Enter` .  L’onglet **capteurs** s’ouvre en bas de la fenêtre devtools.  
+1.  Dans la liste de **géolocalisation** , sélectionnez une des villes prédéfinies, par exemple `Tokyo` , ou choisissez un **emplacement personnalisé** pour entrer des coordonnées de longitude et de latitude personnalisées, ou sélectionnez **emplacement non disponible** pour voir le comportement de votre site lorsque l’emplacement de l’utilisateur n’est pas disponible.  
     
-    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Sélectionner Tokyo dans la liste de géolocalisation" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
+    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Menu de commandes" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
        Sélectionner `Tokyo` dans la liste de **géolocalisation**  
     :::image-end:::  
     

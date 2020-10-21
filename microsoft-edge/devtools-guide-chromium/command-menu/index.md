@@ -1,18 +1,18 @@
 ---
-description: Guide permettant d’ouvrir le menu de commandes, d’exécuter des commandes, d’afficher d’autres actions, etc.
+description: Guide permettant d’ouvrir le menu de commandes, d’exécuter des commandes, de revoir d’autres actions, etc.
 title: Exécuter des commandes à l’aide du menu de commande de Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 54dead492e7d58053efab77c82a10e7e3c912460
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 2f13461fdf04e034b324db63c6ec6d9090f80f50
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993197"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125278"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,11 +28,7 @@ ms.locfileid: "10993197"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Exécuter des commandes à l’aide du menu de commande de Microsoft Edge DevTools   
+# Exécuter des commandes à l’aide du menu de commande de Microsoft Edge DevTools  
 
   
 
@@ -42,31 +38,31 @@ Le menu de commandes fournit un moyen rapide de naviguer dans l’interface util
    Utiliser le menu de commande pour désactiver JavaScript  
 :::image-end:::  
 
-## Ouvrir le menu de commandes   
+## Ouvrir le menu de commandes  
 
-Appuyez sur `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \). Vous avez le choix entre les commandes **personnaliser et contrôler devtools** `...` , puis sélectionner **exécuter**.  
+Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \). Vous avez le choix entre les commandes **personnaliser et contrôler devtools** `...` , puis sélectionner **exécuter**.  
 
-:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Commande exécuter" lightbox="../media/command-menu-options-run-command.msft.png":::
+:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Utiliser le menu de commande pour désactiver JavaScript" lightbox="../media/command-menu-options-run-command.msft.png":::
    Commande exécuter  
 :::image-end:::  
 
-## Afficher les autres actions disponibles   
+## Afficher les autres actions disponibles  
 
 Si vous utilisez le flux de travail en mode plan dans [ouvrir le menu](#open-the-command-menu)de commandes, le menu de commandes s’ouvre avec un préfixe de `>` caractère dans la zone de texte menu de commandes.  
 
-:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="Le caractère de commande" lightbox="../media/command-menu-run-command.msft.png":::
+:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="Utiliser le menu de commande pour désactiver JavaScript" lightbox="../media/command-menu-run-command.msft.png":::
    Le caractère de commande  
 :::image-end:::  
 
 Supprimez le `>` caractère et tapez `?` pour afficher d’autres actions disponibles dans le menu de commandes.  
 
-:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Autres actions disponibles" lightbox="../media/command-menu-help.msft.png":::
+:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Utiliser le menu de commande pour désactiver JavaScript" lightbox="../media/command-menu-help.msft.png":::
    Autres actions disponibles  
 :::image-end:::  
 
- 
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

@@ -3,16 +3,16 @@ description: Utilisez des périphériques virtuels dans Microsoft Edge pour cré
 title: Émuler des appareils mobiles dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/04/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, émulation, appareil, simulation, mobile
-ms.openlocfilehash: c70b81eabb145461eac7d1b9a8f438d6a18fbc89
-ms.sourcegitcommit: cc96ada9679b23feb841e46f19d8077251c4a4df
+ms.openlocfilehash: 8b636a20fcb1c55630009031ec8bf300624d03d7
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "10997061"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125103"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +59,7 @@ Par défaut, la barre d’outils de l’appareil s’ouvre en mode de fenêtre d
 
 Pour tester rapidement l’aspect de votre page sur plusieurs tailles d’écran, faites glisser les poignées pour redimensionner la fenêtre d’affichage selon vos besoins.  Vous pouvez également entrer des valeurs spécifiques dans les zones largeur et hauteur.  Dans l’illustration suivante, la largeur est définie sur `626` et la hauteur est définie sur `516` .  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="Poignées permettant de modifier les dimensions de la fenêtre d’affichage en mode de fenêtre d’affichage réactif" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
     Poignées permettant de modifier les dimensions de la fenêtre d’affichage en mode de fenêtre d’affichage réactif  
 :::image-end:::  
 
@@ -67,13 +67,13 @@ Pour tester rapidement l’aspect de votre page sur plusieurs tailles d’écran
 
 Si vous avez défini des requêtes multimédias sur votre page, accédez aux dimensions de la fenêtre d’affichage dans lesquelles ces requêtes multimédias sont prises en compte en affichant des points d’arrêt de requête multimédia au-dessus de votre fenêtre d’affichage.  Sélectionnez **autres options**  >  **afficher les requêtes multimédias**.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="Afficher les requêtes multimédias" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
    **Afficher les requêtes multimédias**  
 :::image-end:::  
 
 Choisissez un point d’arrêt pour modifier la largeur de la fenêtre d’affichage de telle sorte que la requête multimédia soit déclenchée.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="Sélectionner un point d’arrêt pour modifier la largeur de la fenêtre d’affichage" lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
    Sélectionner un point d’arrêt pour modifier la largeur de la fenêtre d’affichage  
 :::image-end:::  
 
@@ -81,7 +81,7 @@ Choisissez un point d’arrêt pour modifier la largeur de la fenêtre d’affic
 
 Utilisez la liste **type d’appareil** pour simuler un appareil mobile ou un appareil de bureau.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="Liste type d’appareil" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
    Liste **type d’appareil**  
 :::image-end:::  
 
@@ -101,7 +101,7 @@ Le tableau suivant décrit les différences entre les options de type d’appare
 
 Pour simuler les dimensions d’un appareil mobile spécifique, sélectionnez-le dans la liste des **appareils** .  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="La liste des appareils" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
    La liste des **appareils**  
 :::image-end:::  
 
@@ -111,7 +111,7 @@ Testez votre page Web en orientation paysage.
 
 *   Pour faire pivoter la fenêtre d’affichage en orientation paysage, sélectionnez **faire pivoter** \ ( ![ rotation ][ImageRotateIcon] \).  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Page affichée en orientation paysage" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
        Page affichée en orientation paysage  
     :::image-end:::  
     
@@ -136,12 +136,12 @@ Affichez le frame d’appareil physique à l’écran de la fenêtre d’afficha
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="Afficher le cadre de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
          Afficher le cadre de l’appareil  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="Le cadre de l’appareil pour l’iPhone 6" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
          Le cadre de l’appareil pour l’iPhone 6  
       :::image-end:::  
    :::column-end:::
@@ -153,14 +153,14 @@ Si l’option d’appareil mobile dont vous avez besoin ne figure pas dans la li
 
 1.  Choisissez la liste des **appareils** > **modifier**.  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Sélectionnez Modifier." lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
        Sélectionnez **modifier** .  
     :::image-end:::  
     
 1.  Sélectionnez **Ajouter un appareil personnalisé**.  
 1.  Sur les **appareils émulés**, entrez le nom d’un appareil, la largeur de l’écran et la hauteur de l’écran de l’appareil personnalisé.  Le [coefficient d’appareil][MDNWindowDevicePixelRatio], la [chaîne de l’agent utilisateur][MDNUserAgent]et les champs [type d’appareil](#set-the-device-type) sont facultatifs.  Le champ type d’appareil utilise par défaut la valeur **mobile**.  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Créer un appareil personnalisé" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
        Créer un appareil personnalisé  
     :::image-end:::  
     
@@ -170,12 +170,12 @@ Si vous avez besoin de mesurer les dimensions de l’écran, vous pouvez utilise
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="Option de menu pour afficher les règles" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
          Option de menu pour afficher les règles  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="Règles au-dessus et à gauche de la fenêtre d’affichage" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
          Règles au-dessus et à gauche de la fenêtre d’affichage  
       :::image-end:::  
    :::column-end:::
@@ -185,7 +185,7 @@ Si vous avez besoin de mesurer les dimensions de l’écran, vous pouvez utilise
 
 Pour tester l’apparence de votre page à plusieurs niveaux de zoom, utilisez la liste **Zoom** pour effectuer un zoom avant ou arrière.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="Zoom" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
    **Zoom**  
 :::image-end:::  
 
@@ -201,7 +201,7 @@ Limiter le réseau et le processeur.
     
 Toutes les limitations dépendent de la fonctionnalité normale de votre ordinateur portable ou de votre ordinateur de bureau.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="Liste de limitations de la barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
    Liste de **limitations** de la barre d’outils de l’appareil  
 :::image-end:::  
 
@@ -219,7 +219,7 @@ Pour limiter le processeur et non le réseau, procédez comme suit.
 1.  Sélectionnez le panneau **performances** , puis choisissez **paramètres de capture** \ ( ![ paramètres de capture ][ImageCaptureIcon] \).
 1.  Sélectionnez **CPU**  >  **ralentissement** de l’UC 4x ou **6 ralentissements**.
     
-    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="Liste UC du panneau de performance" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
        Liste **UC** du panneau de **performance**  
     :::image-end:::  
     
@@ -230,13 +230,13 @@ Pour limiter le réseau uniquement, procédez comme suit.
 1.  Choisissez le panneau **réseau** .
 1.  Choisissez **connexion**  >  **Fast 3G** ou **lente 3G**.
     
-    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="Liste de limitations du panneau réseau" lightbox="../media/device-mode-network-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-network-throttle.msft.png":::
        Liste de **limitations** du panneau réseau  
     :::image-end:::  
     
-    `Control` + `Shift` + `P` Vous pouvez sélectionner \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**, taper `3G` , puis sélectionner **activer la limitation Fast 3G** ou **activer la limitation 3G lente**.  
+    `Control` + `Shift` + `P` Vous pouvez ou sélectionner \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**, taper `3G` , puis sélectionner **activer la limitation Fast 3G** ou **activer la limitation lente 3G**.  
     
-    :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Menu de commandes" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
        **Menu de commandes**  
     :::image-end:::  
     
@@ -244,7 +244,7 @@ Vous pouvez également définir la limitation du réseau dans le panneau **perfo
 
 1.  Sélectionnez **paramètres de capture** \ ( ![ paramètres de capture ][ImageCaptureIcon] \), puis choisissez la liste des **réseaux** et définissez le paramètre prédéfini sur **Fast 3G** ou **lente 3G**.  
     
-    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Définir la limitation du réseau à partir du panneau performances" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
+    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
        Définir la limitation du réseau à partir du panneau **performances**  
     :::image-end:::  
     
@@ -256,16 +256,16 @@ Vous pouvez également définir la limitation du réseau dans le panneau **perfo
 
       1.  Sélectionnez **personnaliser et contrôler devtools** \ ( `...` \) > **plus**de  >  **capteurs**d’outils.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Capteurs pour la géolocalisation" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
          **Capteurs** pour la géolocalisation  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       1.  Ouvrir le menu de commandes.  
-          *   Sélectionnez `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \).  
+          *   Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \).  
       1. Tapez `Sensors` , puis sélectionnez **afficher les capteurs**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Afficher les capteurs pour la géolocalisation" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
          **Afficher les capteurs** pour la géolocalisation  
       :::image-end:::  
    :::column-end:::
@@ -273,7 +273,7 @@ Vous pouvez également définir la limitation du réseau dans le panneau **perfo
 
 Dans le panneau **capteurs** , vous pouvez sélectionner l’un des emplacements prédéfinis inclus dans devtools à l’aide du menu déroulant **emplacement** .  Pour entrer un emplacement personnalisé, sélectionnez **autres...** et entrez les coordonnées de votre emplacement personnalisé.  Pour tester votre page dans un état d’erreur lorsque les informations de géolocalisation ne sont pas disponibles, sélectionnez **emplacement non disponible**.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="Panneau capteurs avec une position prédéfinie sélectionnée" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
     Panneau **capteurs** avec une position prédéfinie sélectionnée  
 :::image-end:::
 
@@ -285,16 +285,16 @@ Dans le panneau **capteurs** , vous pouvez sélectionner l’un des emplacements
 
       1.  Sélectionnez **personnaliser et contrôler devtools** \ ( `...` \) > **plus**de  >  **capteurs**d’outils.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Capteurs d’orientation" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
          **Capteurs** d’orientation  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       1.  Ouvrir le menu de commandes.  
-          *   Sélectionnez `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \).  
+          *   Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \).  
       1. Tapez `Sensors` , puis sélectionnez **afficher les capteurs**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Afficher les capteurs d’orientation" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
          **Afficher les capteurs** d’orientation  
       :::image-end:::  
    :::column-end:::
@@ -302,7 +302,7 @@ Dans le panneau **capteurs** , vous pouvez sélectionner l’un des emplacements
 
 Dans le panneau **capteurs** , vous pouvez sélectionner une orientation prédéfinie dans le menu déroulant **orientation** .  Pour entrer votre propre orientation, choisissez **orientation personnalisée**, puis entrez vos valeurs [alpha][MDNDeviceOrientaitonAlpha], [bêta][MDNDeviceOrientaitonBeta]et [gamma][MDNDeviceOrientaitonGamma] .  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="Options d’orientation dans le panneau capteurs" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
     Options d' **orientation** dans le panneau **capteurs**  
 :::image-end:::  
 
@@ -314,24 +314,24 @@ Dans le panneau **capteurs** , vous pouvez sélectionner une orientation prédé
       
       1.  Sélectionnez **personnaliser et contrôler devtools** \ ( `...` \) > **plus d’outils**  >  **conditions réseau**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Entrée conditions réseau dans le menu plus d’outils" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
          Entrée **conditions réseau** dans le menu **plus d’outils**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       1.  Ouvrir le menu de commandes.  
-          *   Sélectionnez `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \).  
+          *   Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \).  
       1. Tapez `Network conditions` , puis choisissez **afficher les conditions du réseau**.  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Afficher les conditions réseau" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
          **Afficher les conditions réseau**  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-En regard d' **agent utilisateur**, décochez la case **sélectionner automatiquement** .  Ensuite, sélectionnez **Custom (personnalisé)...** pour effectuer une sélection dans une liste de chaînes prédéfinies agent utilisateur.  Pour entrer votre propre chaîne d’agent utilisateur, entrez la chaîne dans **entrer un agent utilisateur personnalisé**.  
+En regard d' **agent utilisateur**, décochez la case **sélectionner automatiquement** .  Sélectionnez ensuite **personnalisé...** pour effectuer une sélection dans une liste de chaînes prédéfinies agent utilisateur.  Pour entrer votre propre chaîne d’agent utilisateur, entrez la chaîne dans **entrer un agent utilisateur personnalisé**.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Définissez la chaîne de l’agent utilisateur sur Microsoft Edge sur macOS." lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
     Définissez la chaîne de l’agent utilisateur sur Microsoft Edge sur macOS.  
 :::image-end:::  
 

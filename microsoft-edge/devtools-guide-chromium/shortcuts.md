@@ -3,16 +3,16 @@ description: Documentation canonique sur les raccourcis clavier dans Microsoft E
 title: Raccourcis clavier dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/08/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: ab2e162af9b59e2ed92abc0cebf8e9fa2ac3a3d2
-ms.sourcegitcommit: 6b577cb118f34f3ff2c65eab2908b65f155dc151
+ms.openlocfilehash: 78e96fa3ae927a8aee24dfc18d4fa6ee515556a8
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11003949"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125341"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -38,7 +38,7 @@ Vous pouvez également accéder à des raccourcis dans les info-bulles. Pointez 
 
 Pour ouvrir DevTools, sélectionnez les raccourcis clavier suivants lorsque le curseur se trouve dans la fenêtre d’affichage du navigateur.
 
-| Action | Windows | macOS |  
+| Action | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Ouvrir le panneau de configuration que vous avez utilisé en dernier | `F12` ou `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Ouvrir l’écran de la **console** | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
@@ -48,7 +48,7 @@ Pour ouvrir DevTools, sélectionnez les raccourcis clavier suivants lorsque le c
 
 Les raccourcis clavier suivants sont disponibles dans la plupart des panneaux de DevTools.
 
-| Action | Windows | macOS |  
+| Action | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Afficher les **paramètres** | `?` ou `F1` | `?` ou `Function`+`F1` |  
 | Mettre le focus sur le panneau suivant | `Control`+`]` | `Command`+`]` |  
@@ -73,7 +73,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart des panneaux de
 
 ## Raccourcis clavier du panneau éléments  
 
-| Action | Windows | macOS |  
+| Action | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Annuler la modification | `Control`+`Z` | `Command`+`Z` |  
 | Rétablir la modification | `Control`+`Y` | `Command`+`Shift`+`Z` |  
@@ -88,7 +88,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart des panneaux de
 
 ### Raccourcis clavier du volet styles  
 
-| Action | Windows | macOS |  
+| Action | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Accéder à la ligne où une valeur de propriété est déclarée | Mettre `Control` en attente, puis sélectionner la valeur de la propriété | Mettre `Command` en attente, puis sélectionner la valeur de la propriété |  
 | Parcourir les représentations RBGA, HSLA et Hex d’une valeur de couleur | Mettre `Shift` en attente, puis sélectionner la zone **Aperçu** de la couleur en regard de la valeur | Mettre `Shift` en attente, puis sélectionner la zone **Aperçu** de la couleur en regard de la valeur |  
@@ -100,7 +100,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart des panneaux de
 
 ## Raccourcis clavier du panneau sources  
 
-| Action | Windows | macOS |  
+| Action | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Suspendre le script Runtime \ (s’il est en cours d’exécution \) ou reprendre \ (si vous êtes en pause) | `F8` ou `Control`+`\` | `F8` ou `Command`+`\` |  
 | Étape au fil de l’appel de fonction suivante | `F10` ou `Control`+`'` | `F10` ou `Command`+`'` |  
@@ -118,7 +118,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart des panneaux de
 
 ### Raccourcis clavier de l’éditeur de code  
 
-| Action | Windows | macOS |  
+| Action | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Supprimer tous les caractères du dernier mot, jusqu’au curseur | `Control`+`Delete` | `Option`+`Delete` |  
 | Ajouter ou supprimer un [point d’arrêt de ligne de code][DevtoolsJavascriptBreakpointsLOC] | Focalisez le curseur sur la ligne, puis sélectionnez `Control`+`B` | Focalisez le curseur sur la ligne, puis sélectionnez `Command`+`B` |  
@@ -128,7 +128,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart des panneaux de
 
 ## Raccourcis clavier du panneau performances  
 
-| Action | Windows | macOS |  
+| Action | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Démarrer/arrêter l’enregistrement | `Control`+`E` | `Command`+`E` |  
 | Enregistrer un enregistrement | `Control`+`S` | `Command`+`S` |  
@@ -136,13 +136,13 @@ Les raccourcis clavier suivants sont disponibles dans la plupart des panneaux de
 
 ## Raccourcis clavier du panneau mémoire  
 
-| Action | Windows | macOS |  
+| Action | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Démarrer/arrêter l’enregistrement | `Control`+`E` | `Command`+`E` |  
 
 ## Raccourcis clavier de l’écran de la console  
 
-| Action | Windows | macOS |  
+| Action | Windows \/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Accepter la suggestion de saisie semi-automatique | `Right Arrow` ou `Tab` | `Right Arrow` ou `Tab` |  
 | Rejeter la suggestion de saisie semi-automatique | `Escape` | `Escape` |  

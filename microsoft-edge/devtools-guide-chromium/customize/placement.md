@@ -3,16 +3,16 @@ description: Pour déplacer Microsoft Edge DevTools en bas ou à gauche de votre
 title: Changer la position de Microsoft Edge DevTools (détacher, ancrer en bas, ancrer à gauche)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: da7bd4ed23c54faac6d9fef9afbc78128f8cfd3c
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 65c0849af5da671bb0d76397d6d9395bc249eaac
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993008"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125047"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993008"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Changer la position de Microsoft Edge DevTools (détacher, ancrer en bas, ancrer à gauche)   
-
-
+# Changer la position de Microsoft Edge DevTools (détacher, ancrer en bas, ancrer à gauche)  
 
 Par défaut, DevTools est ancré à droite de votre fenêtre d’affichage.  Vous pouvez également ancrer en bas, ancrer à gauche, ou détacher la DevTools dans une autre fenêtre.  
 
@@ -45,46 +39,44 @@ Par défaut, DevTools est ancré à droite de votre fenêtre d’affichage.  Vou
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Sélectionner ancrer en bas" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Sélectionner ancrer à gauche" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
          Sélectionner `Dock To Bottom`  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Navigateur dans une fenêtre séparée" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Sélectionner ancrer à gauche" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
          Navigateur dans une fenêtre séparée  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="DevTools non attaché dans une fenêtre séparée" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="Sélectionner ancrer à gauche" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
          DevTools non attaché dans une fenêtre séparée  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-## Changer la position dans le menu principal   
+## Changer la position dans le menu principal  
 
-1.  Cliquez sur **personnaliser et contrôler devtools** \ ( `...` \), puis sélectionnez **détacher dans une fenêtre séparée** \ ( ![ détacher ][ImageUndockIcon] \), **ancrer en bas** \ ( ![ ancrer en bas ][ImageBottomIcon] \), ou **ancrer à gauche** , ![ ][ImageLeftIcon]  
+1.  Sélectionnez **personnaliser et contrôler devtools** \ ( `...` \) et sélectionnez **détacher dans la fenêtre séparée** \ ( ![ détacher ][ImageUndockIcon] \), **ancrer en bas** \ ( ![ ancrer en bas ][ImageBottomIcon] \), ou **ancrer à gauche** , ![ ][ImageLeftIcon]  
     
-    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Sélectionner détacher dans une fenêtre séparée" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Sélectionner ancrer à gauche" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        Sélectionner **détacher dans une fenêtre séparée**  
     :::image-end:::  
     
-## Changer le positionnement dans le menu de commandes   
+## Changer le positionnement dans le menu de commandes  
 
 1.  [Ouvrir le menu de commandes][DevtoolsCommandMenu].  
 1.  Exécutez l’une des commandes `Dock To Bottom` suivantes: `Undock Into Separate Window`  Il n’existe actuellement aucune commande pour l’ancrage à gauche, mais vous pouvez y accéder à partir du [menu principal](#change-placement-from-the-main-menu).  
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Commande détacher" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Sélectionner ancrer à gauche" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
        Commande détacher  
     :::image-end:::  
     
-<!--  
- 
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

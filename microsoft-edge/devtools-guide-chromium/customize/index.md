@@ -3,16 +3,16 @@ description: Liste des méthodes de personnalisation de Microsoft Edge DevTools
 title: Personnaliser Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 238ee27a75aa94bf986d41f00a98e5eacc806d7f
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 91f353c6b6c4dea2bc6764a972acf2ad52b1f151
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992994"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125082"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,87 +28,81 @@ ms.locfileid: "10992994"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Personnaliser Microsoft Edge DevTools   
+# Personnaliser Microsoft Edge DevTools  
 
   
 
 Cette page présente les méthodes de personnalisation de Microsoft Edge DevTools.  
 
-## Paramètres   
+## Paramètres  
 
 **Paramètres**  >  **Préférences** propose de nombreuses options de personnalisation de devtools.  
 
 Pour ouvrir les paramètres, effectuez l’une des opérations suivantes:  
 
-*   `F1`Devtools est activé.  
+*   Sélectionner `F1` lorsque devtools a le focus.  
 *   Ouvrez le **menu principal** , puis sélectionnez **paramètres**.  
     
     :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Paramètres" lightbox="../media/customize-settings-preferences.msft.png":::
        **Paramètres**  
     :::image-end:::  
     
-## Bac   
+## Bac  
 
 Le **tiroir** comporte de nombreuses fonctionnalités masquées.  
 
-Appuyez `Escape` pour ouvrir ou fermer le **tiroir**.  
+Sélectionnez `Escape` cette option pour ouvrir ou fermer le **tiroir**.  
 
-:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Le tiroir" lightbox="../media/customize-drawer-open.msft.png":::
+:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Paramètres" lightbox="../media/customize-drawer-open.msft.png":::
    Le **tiroir**  
 :::image-end:::  
 
-Cliquez **sur autres** ![ ][ImageMoreIcon] pour afficher d’autres onglets de **tiroir-caisse** .  
+Sélectionnez **autres** ![ ][ImageMoreIcon] pour afficher d’autres onglets de **tiroir-caisse** .  
 
-:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Bouton permettant d’ouvrir les onglets du tiroir-tiroir" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Paramètres" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
    Bouton permettant d’ouvrir les onglets du **tiroir-tiroir**  
 :::image-end:::  
 
-## Réorganiser les panneaux   
+## Réorganiser les panneaux  
 
 Cliquez et faites glisser un onglet de panneau pour en modifier l’ordre.  L’ordre de tabulation personnalisé persiste dans toutes les sessions DevTools.  
 
 > [!NOTE]
 > Par défaut, l’onglet du panneau **réseau** est généralement le quatrième à partir de la gauche.  Dans l’illustration suivante, le panneau **réseau** est le premier à partir de la gauche.  
 
-:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Fenêtre DevTools avec un ordre de tabulation de panneau personnalisé" lightbox="../media/customize-network-first-position.msft.png":::
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Paramètres" lightbox="../media/customize-network-first-position.msft.png":::
    Fenêtre DevTools avec un ordre de tabulation de panneau personnalisé  
 :::image-end:::  
 
-## Changer la position de DevTools   
+## Changer la position de DevTools  
 
 Voir [placement de Microsoft Edge devtools][DevToolsPlacement].  
 
-:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="DevTools non attaché" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Paramètres" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
    DevTools non attaché  
 :::image-end:::  
 
-## Thème foncé   
+## Thème foncé  
 
 Voir [activer un thème foncé][DarkTheme].  
 
-:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Thème foncé" lightbox="../media/customize-settings-appearance-theme.msft.png":::
+:::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Paramètres" lightbox="../media/customize-settings-appearance-theme.msft.png":::
    Thème foncé  
 :::image-end:::  
 
-## Expériences   
+## Expériences  
 
 Pour activer les expériences DevTools, effectuez les actions suivantes.  
 
 1.  Accédez à `edge://flags/#enable-devtools-experiments` .  
-1.  Cliquez sur **Activer**.  
-1.  Cliquez sur **relancer maintenant**, en bas de la page.  
+1.  Cliquez sur **activer**.  
+1.  Sélectionnez **relancer maintenant**, en bas de la page.  
 
-La prochaine fois que vous ouvrez DevTools, une nouvelle page s’affiche appelée **expériences** dans les [paramètres](#settings).  
+La prochaine fois que vous ouvrez DevTools, une nouvelle page nommée **expériences** apparaît dans les [paramètres](#settings).  
 
-<!--  
-   
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

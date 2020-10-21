@@ -3,16 +3,16 @@ description: Référence complète des fonctionnalités du panneau réseau de Mi
 title: Référence d’analyse du réseau
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/30/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 758623482ab2179987c6467f8e30c72d8893d710
-ms.sourcegitcommit: addfd27bb765c92880a59f259dc702f6e4e1bf28
+ms.openlocfilehash: 8123fbebadf1d43fd1460ecebf91190cac793e19
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "11092313"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125369"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -49,12 +49,12 @@ Par défaut, DevTools enregistre toutes les demandes réseau dans le panneau ré
 
 Pour arrêter l’enregistrement de demandes, procédez comme suit.  
 
-1.  Cliquez sur **arrêter l’enregistrement du journal réseau** \ ( ![ arrêter l’enregistrement du journal réseau ][ImageRecordOnIcon] \) sur le panneau **réseau** .  Il devient gris pour indiquer que DevTools n’enregistre plus les demandes.  
-1.  Appuyez sur `Control` + `E` \ (Windows \) ou `Command` + `E` \ (MacOS \) lorsque le panneau **réseau** a le focus.  
+1.  Pour arrêter l' **enregistrement du journal du réseau** , cliquez sur arrêter l' ![ enregistrement réseau ][ImageRecordOnIcon] dans le panneau **réseau** .  Il devient gris pour indiquer que DevTools n’enregistre plus les demandes.  
+1.  `Control` + `E` Dans le panneau réseau du réseau, sélectionnez \ (Windows, Linux \) ou `Command` + `E` \ (MacOS \). **Network**  
 
 ### Supprimer des demandes  
 
-Sélectionnez **Effacer** \ ( ![ Clear ][ImageClearIcon] \) sur le panneau réseau pour effacer toutes les demandes de la table demandes.  
+**Clear** ![ Dans le volet réseau, sélectionnez Effacer \ (Clear ][ImageClearIcon] \) pour effacer toutes les demandes de la table demandes.  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Panneau réseau" lightbox="../media/network-network-clear-button.msft.png":::
    Bouton **Effacer**  
@@ -72,7 +72,7 @@ Pour enregistrer les demandes lors du chargement de la page, activez la case à 
 
 Capture des captures d’écran permettant d’analyser ce qui s’affiche pour les utilisateurs lorsque vous patientez pendant le chargement de la page.  
 
-Pour activer les captures d’écran, sélectionnez **paramètres du réseau** , puis cochez la case **capturer les captures d’écran** dans le panneau **réseau** .  
+Pour activer les captures d’écran, choisissez **paramètres du réseau** , puis cochez la case **capturer les captures d’écran** dans le panneau **réseau** .  
 
 Actualisez la page lorsque le panneau **réseau** a le focus pour capturer les captures d’écran.  
 
@@ -88,7 +88,7 @@ Après avoir capturé une capture d’écran, vous interagissez comme suit.
 
 <!--  ### Replay XHR request  -->
 
-<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and select **Replay XHR**.  -->
+<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and choose **Replay XHR**.  -->
 
 <!--  
 :::image type="complex" source="../media/network-replay-xhr.msft.png" alt-text="Panneau réseau" lightbox="../media/network-replay-xhr.msft.png":::
@@ -129,7 +129,7 @@ Une nouvelle classe d’applications Web, appelées [applications Web progressiv
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
-Sélectionnez le menu déroulant **en ligne** , Rechercher sous **présélections**, puis sélectionnez **hors ligne** pour simuler une utilisation du réseau hors connexion.  
+Sélectionnez le menu déroulant **en ligne** , recherchez sous **présélections**, puis sélectionnez **hors ligne** pour simuler une utilisation du réseau hors connexion.  
 
 :::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="Panneau réseau" lightbox="../media/network-network-offline-dropdown.msft.png":::
    Menu déroulant **hors connexion**  
@@ -244,7 +244,7 @@ Pour filtrer les demandes par type de requête, sélectionnez l’un des boutons
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Support**  
+      **Media**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -294,7 +294,7 @@ Pour filtrer les demandes par type de requête, sélectionnez l’un des boutons
 Si ce n’est pas le cas, le volet **filtres** est masqué.  
 Pour plus d’informations, accédez à [la section masquer le volet filtres](#hide-the-filters-pane).  
 
-Pour activer plusieurs filtres de type simultanément, appuyez sur `Control` \ (Windows \) ou `Command` \ (MacOS \), puis sélectionnez.  
+Pour activer plusieurs filtres de type simultanément, appuyez sur `Control` \ (Windows, Linux \) ou `Command` \ (MacOS \), puis sélectionnez.  
 
 :::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Panneau réseau" lightbox="../media/network-network-type-filters.msft.png":::
    Utiliser les filtres de type pour afficher les ressources JS, CSS et document  
@@ -575,7 +575,7 @@ Pour afficher la source du paramètre de chaîne de requête d’une demande, pr
 Pour afficher les paramètres de chaîne de requête dans un format lisible par l’utilisateur, mais avec les codages prédéfinis, procédez comme suit.  
 
 1.  Accédez à la section paramètres de chaîne de requête.  Pour plus d’informations, accédez à [afficher les paramètres de chaîne de requête](#view-query-string-parameters).  
-1.  Sélectionnez **afficher l’URL**.  
+1.  Choisissez **affichage URL encodée**.  
 
 ### Afficher les cookies  
 
@@ -807,7 +807,7 @@ Activez la case à cocher **utiliser des lignes de requête volumineuses** , pui
 Pour enregistrer toutes les demandes réseau dans un fichier QAR, procédez comme suit.  
 
 1.  Positionnez le pointeur sur une requête dans la table demandes et ouvrez le menu contextuel, puis cliquez sur le bouton droit de la souris.  
-1.  Sélectionnez **Save As QAR with content**.  DevTools enregistre toutes les demandes qui se sont produites depuis que vous avez ouvert DevTools sur le fichier.  Vous ne pouvez pas filtrer les demandes.  Vous ne pouvez pas non plus enregistrer une demande unique.  
+1.  Choisissez **enregistrer en tant que le contenu**.  DevTools enregistre toutes les demandes qui se sont produites depuis que vous avez ouvert DevTools sur le fichier.  Vous ne pouvez pas filtrer les demandes.  Vous ne pouvez pas non plus enregistrer une demande unique.  
 
 Lorsque vous enregistrez un fichier QAR, vous pouvez l’importer de nouveau dans DevTools pour analyse.  Il suffit de glisser-déplacer le fichier QAR dans la table demandes.  
 <!--For more information, navigate to also [HAR Analyzer][HARAnalyzer].  -->  
@@ -891,7 +891,7 @@ Vous pouvez développer ou réduire des sections de l’interface utilisateur du
 ### Masquer le volet filtres  
 
 Par défaut, DevTools affiche le **volet filtres**.  
-Sélectionnez **Filtrer** \ ( ![ filtre ][ImageFilterIcon] \) pour la masquer.  
+Choisissez **filtre** \ ( ![ filtre ][ImageFilterIcon] \) pour le masquer.  
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Panneau réseau" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    Bouton Masquer les filtres  
@@ -918,6 +918,10 @@ Par défaut, DevTools affiche le **volet vue d’ensemble**.  Désélectionnez l
 :::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="Panneau réseau" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
    Case à cocher **afficher la vue d’ensemble**  
 :::image-end:::  
+
+## Contacter l’équipe DevTools MicrosoftEdge  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

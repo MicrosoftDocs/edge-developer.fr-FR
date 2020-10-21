@@ -3,16 +3,16 @@ description: Le mode événements de chronologie affiche tous les événements d
 title: Référence d’événement de chronologie
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 624035636e2231cf1f3cd1e2ba0fdda7e2e4fa00
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 989d4d84345fedc1c5aef2cb8d893db3c0e1634b
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992847"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124900"
 ---
 <!-- Copyright Meggin Kearney and Flavio Copes
 
@@ -28,14 +28,7 @@ ms.locfileid: "10992847"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Référence d’événement de chronologie   
-
-
-
+# Référence d’événement de chronologie  
 
 Le mode événements de chronologie affiche tous les événements déclenchés lors de la création d’un enregistrement.  Utilisez la référence d’événement Timeline pour en savoir plus sur chaque type d’événement de chronologie.  
 
@@ -149,11 +142,9 @@ Cette section répertorie les événements qui appartiennent à la catégorie Pa
 | Location | Pour les événements Paint, les coordonnées x et y du rectangle de peinture. |  
 | Analytique | Pour les événements Paint, hauteur et largeur de la zone peinte. |  
 
- 
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-
-
-<!-- image links -->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->
 

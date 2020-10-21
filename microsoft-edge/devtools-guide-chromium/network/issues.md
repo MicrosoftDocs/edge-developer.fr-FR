@@ -3,16 +3,16 @@ description: Découvrez comment détecter les problèmes de réseau dans le vole
 title: Guide des problèmes réseau
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: ccd78c34a50bf235416df58aad28df9253b1b24e
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 4713dc252d428abbf5b60ee5f74a7316a102dab6
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993372"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125376"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -28,20 +28,13 @@ ms.locfileid: "10993372"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Guide de problèmes réseau   
-
-
-
+# Guide des problèmes de réseau  
 
 Ce guide vous montre comment détecter les problèmes de réseau ou les opportunités d’optimisation dans le volet réseau de Microsoft Edge DevTools.  
 
 Pour [plus d’informations][NetworkPerformance] sur les concepts de base du **réseau** , voir découvrir le panneau de configuration.  
 
-## Demandes mises en file d’attente ou bloquées   
+## Demandes mises en file d’attente ou bloquées  
 
 **Symptômes**  
 
@@ -63,7 +56,7 @@ Il y a trop de demandes sur un domaine unique.  Sur les connexions HTTP/1.0 ou H
 *   Utiliser HTTP/2.  N’utilisez pas le domaine sharding avec HTTP/2.  
 *   Supprimez ou différez les demandes inutiles de manière à ce que les demandes critiques soient téléchargées plus tôt.  
     
-## Temps lent vers le premier octet (TTFB)   
+## Temps lent vers le premier octet (TTFB)  
 
 **Symptômes**  
 
@@ -71,7 +64,7 @@ Une requête passe un certain temps en attente de réception du premier octet du
 
 Dans l’illustration ci-dessous, la barre verte longue de la **cascade** indique que la requête attendait un certain temps.  Il a été simulé à l’aide d’un profil afin de limiter la vitesse du réseau et d’ajouter un délai.  
 
-:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Exemple d’une requête avec un délai de première octet lent" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
+:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Exemple d’une série mise en file d’attente ou bloquée dans le panneau réseau" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
    Exemple d’une requête avec un délai de première octet lent  
 :::image-end:::  
 
@@ -85,7 +78,7 @@ Dans l’illustration ci-dessous, la barre verte longue de la **cascade** indiqu
 *   Si la connexion est lente, envisagez d’héberger votre contenu sur un réseau de distribution de contenu ou de modifier des fournisseurs d’hébergement.  
 *   Si le serveur est lent, envisagez d’optimiser les requêtes de base de données, de mettre en cache ou de modifier votre configuration serveur.  
     
-## Téléchargement de contenu lent   
+## Téléchargement de contenu lent  
 
 **Symptômes**  
 
@@ -93,7 +86,7 @@ Le téléchargement d’une requête prend beaucoup de temps.
 
 Dans l’illustration ci-dessous, la barre bleue longue en **regard du** fichier PNG signifie que le téléchargement a duré longtemps.  
 
-:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="Exemple d’une requête prenant du temps à télécharger" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
+:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="Exemple d’une série mise en file d’attente ou bloquée dans le panneau réseau" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
    Exemple d’une requête prenant du temps à télécharger  
 :::image-end:::  
 
@@ -107,19 +100,17 @@ Dans l’illustration ci-dessous, la barre bleue longue en **regard du** fichier
 *   Envisagez d’héberger votre contenu sur un réseau de distribution de contenu ou de modifier des fournisseurs d’hébergement.  
 *   Envoyez moins d’octets en optimisant vos demandes.  
     
-## Compétences de collaboration  
+<!--   ## Contribute knowledge  
 
-Vous rencontrez un problème réseau qui doit être ajouté à ce guide?  
+Do you have a network issue that should be added to this guide?  
 
-*   Envoyez un tweet à [@EdgeDevTools][MicrosoftEdgeTweet].  
-*   Pour **Envoyer** ![ des ][ImageSendFeedbackIcon] `Alt` + `Shift` + `I` `Option` + `Shift` + `I` commentaires ou des demandes de fonctionnalité, sélectionnez Envoyer des commentaires \ (envoyer des commentaires \) dans le devtools ou appuyez sur \  
-*   [Ouvrez un problème][WebFundamentalsIssue] dans le référentiel Samples docs.  
+*   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].  
+*   Choose **Send Feedback** \(![Send Feedback][ImageSendFeedbackIcon]\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
+*   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->  
     
-<!--  
-  
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

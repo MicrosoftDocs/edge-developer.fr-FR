@@ -3,16 +3,16 @@ description: Guide sur la navigation dans Microsoft Edge DevTools à l’aide de
 title: Navigation dans Microsoft Edge DevTools avec la technologie d’assistance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 9a9accd043d05d1c55b1e79ce580f7b45711118f
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f4ec63a0d432925b7db99ce695db66dd61f8bcf1
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993190"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125292"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -34,7 +34,7 @@ L’article suivant a pour but de permettre aux utilisateurs qui s’appuient es
 
 L’accessibilité de DevTools est une opération en cours.  Certains panneaux et onglets fonctionnent mieux avec les technologies d’assistance.  Ce guide vous guide à travers les écrans qui sont les plus accessibles et met en surbrillance des problèmes spécifiques que vous pouvez rencontrer.  
 
-## Présentation  
+## Vue d'ensemble  
 
 Avant de commencer, il est utile d’avoir un modèle mental illustrant la structure de l’interface utilisateur d’DevTools.  DevTools est divisé en une série de panneaux organisés en [TabList Aria][W3CWaiAriaTablist].  
 
@@ -52,14 +52,14 @@ Les raccourcis clavier [DevTools] [DevtoolsShortcuts] sont des Cheatsheet utiles
 
 ## Ouvrir DevTools  
 
-Pour commencer, voir [ouvrir Microsoft Edge DevTools] [DevtoolsOpen].  Il existe plusieurs façons d’ouvrir DevTools, à l’aide des raccourcis clavier ou des éléments de menu.  
+Pour commencer, accédez à [ouvrez Microsoft Edge DevTools] [DevtoolsOpen].  Il existe plusieurs façons d’ouvrir DevTools, à l’aide des raccourcis clavier ou des éléments de menu.  
 
 ## Naviguer entre les panneaux  
 
 ### Navigation à l’aide du clavier  
 
-*   Avec devtools ouvert, sélectionnez `Control` + `]` \ (Windows \) ou `Command` + `]` \ (MacOS \) pour cibler le panneau suivant.  
-*   Sélectionnez `Control` + `[` \ (Windows \) ou `Command` + `[` \ (MacOS \) pour cibler le panneau précédent.  
+*   Avec devtools ouvert, sélectionnez `Control` + `]` \ (Windows, Linux \) ou `Command` + `]` \ (MacOS \) pour cibler le panneau suivant.  
+*   Sélectionnez `Control` + `[` \ (Windows, Linux \) ou `Command` + `[` \ (MacOS \) pour cibler le panneau précédent.  
 *   Il est également possible d’utiliser le `Shift` + `Tab` pour déplacer le focus vers l' [TabList Aria][W3CWaiAriaTablist] d’un panneau et utiliser les touches de direction pour modifier les panneaux, même s’il peut être plus rapide d’utiliser les raccourcis mentionnés précédemment.  
 
 **Problèmes connus**  
@@ -71,7 +71,7 @@ Pour commencer, voir [ouvrir Microsoft Edge DevTools] [DevtoolsOpen].  Il existe
 
 Pour vous concentrer sur un panneau spécifique, utilisez le [menu de commandes][DevtoolsCommandMenuIndex]:  
 
-1.  Avec devtools ouvert, sélectionnez `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
+1.  Avec devtools ouvert, sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
     Le **menu de commandes** est un élément ComboBox de saisie semi-automatique de recherche floue.  
 1.  Entrez le nom du panneau que vous voulez ouvrir, puis utilisez le `Down Arrow` clavier visuel pour accéder à l’option appropriée.  
 1.  Sélectionnez `Enter` pour exécuter une commande.  
@@ -92,7 +92,7 @@ L’ouverture d’un panneau permet de transférer le focus sur le contenu du pa
 1.  Simulez un clic avec le bouton droit sur l’élément pour ouvrir le menu contextuel.  
 1.  Sélectionnez l’option **inspecter** .  Cet élément [ouvre le panneau éléments et il a pour but de concentrer l’élément dans l’arborescence DOM] [DevtoolsDomIndexViewDomNodes].  
 
-L' **arborescence DOM** est disposée en tant qu' [arborescence Aria][W3CWaiAriaTree].  Pour obtenir un exemple, voir [naviguer dans l' **arborescence DOM** à l’aide d’un clavier] [DevtoolsDomIndexNavigateDomTreeKeyboard].  
+L' **arborescence DOM** est disposée en tant qu' [arborescence Aria][W3CWaiAriaTree].  Pour obtenir un exemple, naviguez jusqu’à [naviguez dans l' **arborescence DOM** à l’aide d’un clavier] [DevtoolsDomIndexNavigateDomTreeKeyboard].  
 
 ### Copiez le code d’un élément dans l’arborescence DOM.  
 
@@ -108,7 +108,7 @@ L' **arborescence DOM** est disposée en tant qu' [arborescence Aria][W3CWaiAria
 
 *   Avec le focus sur un nœud dans l' **arborescence DOM**, sélectionnez `Enter` pour le rendre modifiable.  
 *   `Tab`Pour vous déplacer entre les valeurs d’attribut.  Lorsque vous entendez «espace» vous vous trouvez à l’intérieur d’une entrée de texte vide et êtes en mesure de taper une nouvelle valeur d’attribut.  
-*   `Control` + `Enter` `Command` + `Enter` Pour accepter la modification et entendre tout le contenu de l’élément, sélectionnez \ (Windows \) ou \ (MacOS \).  
+*   `Control` + `Enter` `Command` + `Enter` Pour accepter la modification et entendre tout le contenu de l’élément, sélectionnez \ (Windows, Linux \) ou \ (MacOS \).  
 
 **Problèmes connus**  
 
@@ -118,9 +118,9 @@ L' **arborescence DOM** est disposée en tant qu' [arborescence Aria][W3CWaiAria
 
 *   Avec le focus sur un nœud dans l' **arborescence DOM**, sélectionnez `Enter` pour le rendre modifiable.  
 *   `Tab`Pour vous déplacer entre les valeurs d’attribut.  Lorsque vous entendez le nom de l’élément, par exemple, `h2` vous vous trouvez à l’intérieur d’une entrée de texte et risquez de changer le type de l’élément.  
-*   Sélectionnez `Control` + `Enter` \ (Windows \) ou `Command` + `Enter` \ (MacOS \) pour accepter la modification.  
+*   Sélectionnez `Control` + `Enter` \ (Windows, Linux \) ou `Command` + `Enter` \ (MacOS \) pour accepter la modification.  
 
-Par exemple, lorsque vous tapez `h3` et sélectionnez `Control` + `Enter` \ (Windows \) ou `Command` + `Enter` \ (MacOS \), les balises de début et de fin de l' `h3` élément changent.  
+Par exemple, lorsque vous tapez `h3` et sélectionnez `Control` + `Enter` \ (Windows, Linux \) ou `Command` + `Enter` \ (MacOS \), les balises de début et de fin de l' `h3` élément changent.  
 
 ## Onglets du panneau éléments  
 
@@ -152,7 +152,7 @@ Dans la mesure où tous les outils de style se connectent d’une façon ou d’
 *   `Tab`Pour vous déplacer entre les versions modifiables de chaque propriété CSS et les valeurs correspondantes.  À la fin de chaque bloc de style s’agit d’un champ de texte modifiable vierge que vous pouvez utiliser pour ajouter des propriétés CSS supplémentaires.  
 *   Il est possible que vous deviez sélectionner `Tab` pour parcourir la liste des styles ou sélectionner `Escape` pour quitter le mode et revenir à la navigation à l’aide des touches de direction.  
 
-Pour obtenir des raccourcis supplémentaires, voir [référence clavier du volet styles] [DevtoolsShortcutsStylesPaneKeyboard].  
+Pour accéder à d’autres raccourcis, accédez à [Référence du clavier du volet styles] [DevtoolsShortcutsStylesPaneKeyboard].  
 
 **Problèmes connus**  
 
@@ -236,7 +236,7 @@ Le rapport d’audit est organisé en sections correspondant à chacune des cat�
 
 Pour effectuer un nouvel audit, utilisez `Shift` + `Tab` pour quitter le rapport et recherchez le bouton **effectuer un audit** .  
 
-## Contacter l’équipe DevTools MicrosoftEdge
+## Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

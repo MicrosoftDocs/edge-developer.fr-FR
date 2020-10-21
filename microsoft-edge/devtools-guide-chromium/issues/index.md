@@ -1,17 +1,18 @@
 ---
+description: Utilisez l’outil problèmes pour rechercher et résoudre les problèmes liés à votre site Web.
 title: Recherchez et corrigez les problèmes liés à l’outil problèmes dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: bad9e9d99f0d2f3179784920fc334823289b9f99
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 4691db9542ecff93d1b59e243844109e0c730d23
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992819"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124725"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -54,7 +55,7 @@ L’outil **problèmes** dans Microsoft Edge devtools réduit la fatigue et l’
        :::column span="":::
           Vous pouvez également sélectionner **problèmes** dans le menu **autres outils** .  
           
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Outil problèmes dans le menu plus d’outils" lightbox="../media//issues-more-tools-menu.msft.png":::
+          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Accéder au bouton problèmes dans la barre d’avertissement jaune lorsque des problèmes sont détectés" lightbox="../media//issues-more-tools-menu.msft.png":::
              Outil **problèmes** dans le menu **plus d’outils**  
           :::image-end:::  
        :::column-end:::
@@ -62,13 +63,13 @@ L’outil **problèmes** dans Microsoft Edge devtools réduit la fatigue et l’
     
 1.  Cliquez sur le bouton **recharger la page** , si nécessaire.  
     
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Outil problèmes dans le tiroir DevTools avec le bouton recharger la page" lightbox="../media/issues-tab-before-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Accéder au bouton problèmes dans la barre d’avertissement jaune lorsque des problèmes sont détectés" lightbox="../media/issues-tab-before-refresh.msft.png":::
        Outil **problèmes** dans le tiroir devtools avec le bouton **recharger la page**  
     :::image-end:::  
 
     Les problèmes signalés dans la **console** sont relativement difficiles à comprendre, tels que les avertissements de cookie dans l’image suivante.  En fonction des problèmes signalés, il est possible que vous n’ayez pas besoin d’effacer ce que vous devez faire.  
     
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Outil problèmes dans le tiroir DevTools avec trois problèmes de cookie" lightbox="../media/issues-tab-after-refresh.msft.png":::
+    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Accéder au bouton problèmes dans la barre d’avertissement jaune lorsque des problèmes sont détectés" lightbox="../media/issues-tab-after-refresh.msft.png":::
        Outil **problèmes** dans le tiroir devtools avec trois problèmes de cookie  
     :::image-end:::  
     
@@ -78,7 +79,7 @@ L’outil de **problèmes** du tiroir devtools présente des avertissements de m
 
 1.  Pour obtenir des instructions sur la façon de résoudre le problème et de trouver les ressources affectées, sélectionnez un élément dans l’outil **problèmes** .  
     
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Marquer des cookies intersites comme un problème de sécurité ouvrir dans l’outil problèmes" lightbox="../media/issues-tab-issue-open.msft.png":::
+    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Accéder au bouton problèmes dans la barre d’avertissement jaune lorsque des problèmes sont détectés" lightbox="../media/issues-tab-issue-open.msft.png":::
        **Marquer des cookies intersites comme** un problème de sécurité ouvrir dans l’outil **problèmes**  
     :::image-end:::  
     
@@ -91,7 +92,7 @@ L’outil de **problèmes** du tiroir devtools présente des avertissements de m
     
 1.  Sélectionnez les éléments des **ressources affectées** pour afficher les détails.  Dans l’exemple suivant, l' **option marquer les cookies intersites comme problème sécurisé** affecte un cookie et deux requêtes.  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Les ressources affectées sont ouvertes dans l’onglet tiroir de problèmes" lightbox="../media/issues-tab-affected-resources.msft.png":::
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Accéder au bouton problèmes dans la barre d’avertissement jaune lorsque des problèmes sont détectés" lightbox="../media/issues-tab-affected-resources.msft.png":::
        Ressources concernées ouvertes dans l’outil **problèmes** du tiroir-devtools  
     :::image-end:::  
     
@@ -99,13 +100,13 @@ L’outil de **problèmes** du tiroir devtools présente des avertissements de m
 
 1.  Sélectionnez un lien vers une ressource pour afficher l’élément dans le contexte approprié dans DevTools.  Dans l’exemple suivant, sélectionnez `samesite-sandbox.glitch.me` sous **demandes** pour afficher les cookies joints à cette demande.  
     
-    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Afficher le cookie affecté dans le volet réseau de DevTools" lightbox="../media/issues-tab-view-request.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Accéder au bouton problèmes dans la barre d’avertissement jaune lorsque des problèmes sont détectés" lightbox="../media/issues-tab-view-request.msft.png":::
        Afficher le cookie affecté dans le volet **réseau** de devtools  
     :::image-end:::  
 
 1.  Faites défiler pour afficher l’élément présentant un problème: pour l’exemple suivant, le `ck02` cookie.  Positionnez le pointeur sur la colonne **SameSite** pour afficher la `None` valeur du problème détecté.  
     
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Valeur None dans la colonne SameSite pour le cookie ck02 dans le panneau réseau d’DevTools" lightbox="../media/issues-tab-view-issue.msft.png":::
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Accéder au bouton problèmes dans la barre d’avertissement jaune lorsque des problèmes sont détectés" lightbox="../media/issues-tab-view-issue.msft.png":::
        `None` la valeur de la colonne **SameSite** pour le `ck02` cookie dans le volet **réseau** devtools  
     :::image-end:::  
 

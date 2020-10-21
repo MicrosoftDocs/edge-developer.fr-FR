@@ -3,16 +3,16 @@ description: Ouvrez le menu de commandes et exécutez la commande «désactiver 
 title: Désactiver JavaScript avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: de756e04c91768c49eed50debce97ae91fdaa3bd
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 4a200e2faa303a12d46fe2daf7ba89226a985b1f
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10992798"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11124718"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -33,21 +33,21 @@ ms.locfileid: "10992798"
 Suivez les étapes ci-dessous pour voir l’apparence et le comportement d’une page Web lorsque JavaScript est désactivé.  
 
 1.  [Ouvrez Microsoft Edge devtools][DevToolsOpen].  
-1.  Appuyez sur `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
+1.  Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
     
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="Menu de commandes" lightbox="../media/javascript-console-command.msft.png":::
        **Menu de commandes**  
     :::image-end:::  
     
-1.  Commencez `javascript` à taper, sélectionnez **Désactiver JavaScript**, puis appuyez sur `Enter` la touche pour exécuter la commande.  JavaScript est désormais désactivé.  
+1.  Commencez `javascript` à taper, sélectionnez **Désactiver JavaScript**, puis sélectionnez `Enter` pour exécuter la commande.  JavaScript est désormais désactivé.  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Sélectionnez Désactiver JavaScript dans le menu de commandes." lightbox="../media/javascript-console-command-javascript.msft.png":::
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Menu de commandes" lightbox="../media/javascript-console-command-javascript.msft.png":::
        Sélectionnez **Désactiver JavaScript** dans le **menu de commandes** .  
     :::image-end:::  
     
     L’icône d’avertissement jaune en regard de **sources** vous rappelle que JavaScript est désactivé.  
     
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="Icône d’avertissement en regard de sources" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="Menu de commandes" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
        Icône d’avertissement en regard de **sources**  
     :::image-end:::  
     

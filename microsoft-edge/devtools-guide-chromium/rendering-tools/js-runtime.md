@@ -3,16 +3,16 @@ description: Identifiez les fonctions onéreuses à l’aide du volet Microsoft 
 title: Accélérer le runtime JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 27afe999083470cde0cc0fabf76d0d1ab54e6562
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f3cf0440579865495f4afc8b1ae4e3940af7b04f
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993582"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125355"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -47,7 +47,7 @@ Si vous remarquez Jank dans votre code JavaScript, recueillez un profil d’éch
 
 1.  Accédez au panneau **mémoire** de devtools.  
 1.  Sélectionnez la case d’option d’échantillonnage de l' **attribution** .  
-1.  Sélectionnez **Démarrer**.  
+1.  Cliquez sur **Démarrer**.  
 1.  En fonction de ce que vous essayez d’analyser, vous pouvez recharger la page, interagir avec la page ou laisser la page s’exécuter.  
 1.  Lorsque vous avez terminé, cliquez sur le bouton **arrêter** .  
     
@@ -66,19 +66,19 @@ Pour modifier l’ordre de tri, sélectionnez le menu déroulant en regard de la
 
 **Graphique**.  Affiche un graphique chronologique de l’enregistrement.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Graphique à flamme" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Exemples de profils" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
    Graphique à flamme  
 :::image-end:::  
 
 **Gros (haut)**.  Répertorie les fonctions en conséquence sur les performances et vous permet d’examiner les chemins d’appel aux fonctions.  Il s’agit de l’affichage par défaut.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Graphique gros" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Exemples de profils" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
    Graphique gros  
 :::image-end:::  
 
 **Arborescence (haut vers le bas)**.  Affiche une image globale de la structure de l’appel, en commençant par la partie supérieure de la pile d’appels.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png" alt-text="Arborescence" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png" alt-text="Exemples de profils" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png":::
    Arborescence  
 :::image-end:::  
 
@@ -94,7 +94,7 @@ Le mode graphique fournit une représentation visuelle du profil d’échantillo
 
 Après avoir [enregistré un profil d’échantillonnage](#record-a-sampling-profile), vous pouvez l’afficher en tant que graphique de type flamme en [modifiant l’ordre de tri](#change-sort-order) en **graphique**.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Affichage de graphique à flamme" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Exemples de profils" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
    Affichage de graphique à flamme  
 :::image-end:::  
 
@@ -102,12 +102,12 @@ Le graphique à flamme est divisé en deux parties.
 
 | index | Quatrième | Description |  
 | --- |:--- |:--- |  
-| 1 | Présentation | Un affichage attractif des oiseaux de l’ensemble de l’enregistrement.  La hauteur des barres correspond à la profondeur de la pile d’appels.  C’est pourquoi, plus la barre est grande, plus la pile d’appels est profonde.  |  
+| 1 | Vue d'ensemble | Un affichage attractif des oiseaux de l’ensemble de l’enregistrement.  La hauteur des barres correspond à la profondeur de la pile d’appels.  C’est pourquoi, plus la barre est grande, plus la pile d’appels est profonde.  |  
 | deuxième | Piles d’appels | Il s’agit d’une vue détaillée des fonctions qui ont été appelées lors de l’enregistrement.  L’axe horizontal est le temps et l’axe vertical est la pile d’appels.  Les piles sont organisées de haut en bas.  Par conséquent, la fonction en haut appelle celle qui s’en trouve au-dessous, et ainsi de suite.  |  
 
 Les fonctions apparaissent de façon aléatoire.  Il n’existe aucune corrélation avec les couleurs utilisées dans les autres panneaux.  Toutefois, les fonctions sont toujours les mêmes coloriées entre les appels, afin que vous puissiez voir les modèles dans chaque Runtime.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="Graphique à flamme annotée" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="Exemples de profils" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
    Graphique à flamme annotée  
 :::image-end:::  
 
@@ -117,7 +117,7 @@ Une pile d’appels de haut niveau n’est pas nécessairement importante, cela 
 
 Maintenez la touche CTRL enfoncée, puis faites glisser la souris vers la gauche et la droite pour effectuer un zoom avant sur certaines parties de la pile d’appels.  Après le zoom, la pile d’appels affiche automatiquement la partie de l’enregistrement que vous avez sélectionnée.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png" alt-text="Zoom de graphique" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png" alt-text="Exemples de profils" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png":::
    Zoom de graphique  
 :::image-end:::  
 
@@ -137,7 +137,7 @@ Pointez sur une fonction pour afficher les données de nom et de minutage.  Les 
 <!--*   **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->  
 <!--*   **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="Afficher les détails des fonctions dans le graphique" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="Exemples de profils" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
    Afficher les détails des fonctions dans le graphique  
 :::image-end:::  
 

@@ -3,16 +3,16 @@ description: Comment activer le thème sombre dans Microsoft Edge DevTools.
 title: Activer un thème foncé dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 4369d06fff8372677910e2807daa3b23c2c0e333
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 7eaedc59bf1b8ab592612f3a2006a0aac1dfbe9e
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993022"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125096"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993022"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Activer un thème foncé dans Microsoft Edge DevTools   
-
-  
+# Activer un thème foncé dans Microsoft Edge DevTools  
 
 Vous pouvez activer le thème sombre dans les [paramètres](#set-up-dark-theme-from-settings) ou le [menu de commandes](#set-up-dark-theme-from-the-command-menu).  
 
@@ -42,34 +36,32 @@ Vous pouvez activer le thème sombre dans les [paramètres](#set-up-dark-theme-f
    Thème foncé  
 :::image-end:::  
 
-## Configurer un thème foncé à partir des paramètres   
+## Configurer un thème foncé à partir des paramètres  
 
-1.  Cliquez sur **personnaliser et contrôler devtools** `...` , puis sélectionnez **paramètres**.  Vous pouvez également ouvrir les **paramètres** en appuyant sur `F1` .  
+1.  Sélectionnez **personnaliser et contrôler devtools** \ ( `...` \), puis sélectionnez **paramètres**.  Vous pouvez également ouvrir les **paramètres** en appuyant sur `F1` .  
     
-    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Ouvrez le menu Paramètres" lightbox="../media/customize-options-settings.msft.png":::
+    :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Thème foncé" lightbox="../media/customize-options-settings.msft.png":::
        Ouvrir les **paramètres**  
     :::image-end:::  
 
-1.  Dans le volet **Préférences** , sous **apparence**, cliquez sur la liste déroulante **thème** , puis sélectionnez **foncé**.  
+1.  Dans le volet **Préférences** , sous **apparence**, cliquez sur la liste déroulante **thème** , puis sélectionnez **Dark**.  
     
-    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="Préférences" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
+    :::image type="complex" source="../media/customize-settings-preferences-appearance-theme-dark.msft.png" alt-text="Thème foncé" lightbox="../media/customize-settings-preferences-appearance-theme-dark.msft.png":::
        **Préférences**  
     :::image-end:::  
 
-## Configurer un thème foncé dans le menu de commandes   
+## Configurer un thème foncé dans le menu de commandes  
 
 1.  [Ouvrir le menu de commandes][DevtoolsCommandMenu].  
-1.  Commencez à taper `dark` , sélectionnez la commande **basculer vers le thème foncé** , puis appuyez sur la touche `Enter` pour exécuter la commande.  
+1.  Commencez `dark` à taper, sélectionnez la commande **basculer vers le thème foncé** , puis sélectionnez `Enter` pour exécuter la commande.  
     
-    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Commande thème foncé" lightbox="../media/customize-command-menu-dark.msft.png":::
+    :::image type="complex" source="../media/customize-command-menu-dark.msft.png" alt-text="Thème foncé" lightbox="../media/customize-command-menu-dark.msft.png":::
        Commande thème foncé  
     :::image-end:::  
     
-<!--  
-   
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

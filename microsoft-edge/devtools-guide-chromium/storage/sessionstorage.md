@@ -3,16 +3,16 @@ description: Découvrez comment afficher et modifier sessionStorage à l’aide 
 title: Afficher et modifier le stockage de session avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 24fca3fd3a068f3b2ffbe4ec1c23e6b80b968953
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 6543c03f04ff80b1bba1d244598a901d066db13a
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993547"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125474"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,17 +28,11 @@ ms.locfileid: "10993547"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Afficher et modifier le stockage de session avec Microsoft Edge DevTools   
-
-  
+# Afficher et modifier le stockage de session avec Microsoft Edge DevTools  
 
 Ce guide vous montre comment utiliser [Microsoft Edge devtools][MicrosoftEdgeDevTools] pour afficher, modifier et supprimer des [`sessionStorage`][MDNSessionStorage] paires clé-valeur.  
 
-## Afficher les clés et valeurs de sessionStorage   
+## Afficher les clés et valeurs de sessionStorage  
 
 1.  Sélectionnez l’onglet **application** pour ouvrir le volet de l' **application** .  Le volet **manifeste** est affiché par défaut.  
     
@@ -48,72 +42,70 @@ Ce guide vous montre comment utiliser [Microsoft Edge devtools][MicrosoftEdgeDev
     
 1.  Développez le menu stockage de la **session** .  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Menu de stockage de session" lightbox="../media/storage-application-storage-session-storage.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-session-storage.msft.png":::
        Menu de **stockage de session**  
     :::image-end:::  
     
 1.  Sélectionnez un domaine pour afficher les paires clé-valeur.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="Paires clé-valeur «sessionStorage»" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
        `sessionStorage`Paires clé-valeur  
     :::image-end:::  
     
 1.  Sélectionnez une ligne du tableau pour afficher la valeur dans la visionneuse sous le tableau.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="Afficher la valeur de la clé x-sid" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
        Afficher la valeur de la `x-sid` clé  
     :::image-end:::  
     
-## Créer une paire clé-valeur sessionStorage   
+## Créer une paire clé-valeur sessionStorage  
 
 1.  [Afficher les `sessionStorage` paires clé-valeur d’un domaine](#view-sessionstorage-keys-and-values).  
 1.  Double-cliquez sur la partie vide de la table.  DevTools crée une nouvelle ligne et concentre votre curseur dans la colonne **clé** .  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="Partie vide de la table dans laquelle vous pouvez double-cliquer pour créer une paire clé-valeur" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
        Partie vide de la table dans laquelle vous pouvez double-cliquer pour créer une paire clé-valeur  
     :::image-end:::  
     
-## Modifier les clés ou valeurs de sessionStorage   
+## Modifier les clés ou valeurs de sessionStorage  
 
 1.  [Afficher les `sessionStorage` paires clé-valeur d’un domaine](#view-sessionstorage-keys-and-values).  
 1.  Double-cliquez sur une cellule dans la colonne **clé** ou **valeur** pour modifier cette clé ou valeur.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="Modifier une clé de sessionStorage" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
        Modifier une `sessionStorage` clé  
     :::image-end:::  
     
-## Supprimer des paires clé-valeur sessionStorage   
+## Supprimer des paires clé-valeur sessionStorage  
 
 1.  [Afficher les `sessionStorage` paires clé-valeur d’un domaine](#view-sessionstorage-keys-and-values).  
 1.  Sélectionnez la paire clé-valeur que vous voulez supprimer.  DevTools met en surbrillance bleu pour indiquer qu’il est sélectionné.  
-1.  Appuyez sur la `Delete` touche ou cliquez sur **Supprimer la sélection** ![ ][ImageDeleteIcon] .  
+1.  Appuyez sur la `Delete` touche ou sélectionnez **Supprimer la sélection** \ (supprimer la ![ sélection ][ImageDeleteIcon] ).  
     
-## Suppression de toutes les paires clé-valeur sessionStorage pour un domaine   
+## Suppression de toutes les paires clé-valeur sessionStorage pour un domaine  
 
 1.  [Afficher les `sessionStorage` paires clé-valeur d’un domaine](#view-sessionstorage-keys-and-values).  
-1.  Sélectionnez **Effacer tout** \ ( ![ Effacer tout ][ImageClearIcon] ).  
+1.  Sélectionnez **Effacer tout** ( ![ Effacer tout ][ImageClearIcon] ).  
     
-## Interagir avec sessionStorage à partir de la console   
+## Interagir avec sessionStorage à partir de la console  
 
 Dans la mesure où vous pouvez exécuter JavaScript dans la **console**, et puisque la **console** a accès aux contextes JavaScript de la page, il est possible d’interagir avec `sessionStorage` à partir de la **console**.  
 
 1.  Utilisez le menu **contextes JavaScript** pour modifier le contexte JavaScript de la **console** si vous souhaitez accéder aux `sessionStorage` paires clé-valeur d’un domaine autre que celui de la page sur laquelle vous vous trouvez.  
     
-    :::image type="complex" source="../media/storage-console-domain-selection.msft.png" alt-text="Changer le contexte JavaScript de la console" lightbox="../media/storage-console-domain-selection.msft.png":::
+    :::image type="complex" source="../media/storage-console-domain-selection.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-console-domain-selection.msft.png":::
        Changer le contexte JavaScript de la console  
     :::image-end:::  
     
 1.  Exécutez vos `sessionStorage` expressions dans la console, de la même manière que dans JavaScript.  
     
-    :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="Interagir avec sessionStorage à partir de la console" lightbox="../media/storage-console-session-storage-keys.msft.png":::
+    :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-console-session-storage-keys.msft.png":::
        Interagir avec `sessionStorage` à partir de la **console**  
     :::image-end:::  
     
-<!--  
-   
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

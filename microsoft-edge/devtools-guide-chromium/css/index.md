@@ -3,16 +3,16 @@ description: Découvrez comment utiliser Microsoft Edge DevTools pour afficher e
 title: Prise en main de l’affichage et de la modification de réplication Commerce Server
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: f055606ff6140652341627097e7fe7b270dc929c
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 3cd833c97cb2e7b746943f18526d09481b4e3cc5
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993064"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125208"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -34,12 +34,12 @@ Suivez ces didacticiels interactifs pour découvrir les notions de base de l’a
 
 ## Exemples de CSS ouverts  
 
-1.  Appuyez `Control` sur \ (Windows \) ou `Command` \ (MacOS \) et sélectionnez **exemples CSS** à ouvrir dans une nouvelle fenêtre.  
+1.  Maintenez la touche Windows enfoncée `Control` `Command` et sélectionnez les **exemples CSS** à ouvrir dans une nouvelle fenêtre.  
     
     [Exemples CSS][GlitchDevToolsCssExamples]  
     
     > [!NOTE]
-    > Si vous voulez [ancrer votre fenêtre devtools][DevToolsCustomizePlacement] à droite de votre fenêtre d’affichage \ (affichée dans la figure ci-dessous), sélectionnez **personnaliser et contrôler devtools** `...` .  Dans le menu déroulant **personnaliser et contrôler devtools** , dans la section **ancrer** , sélectionnez **ancrer à droite**.  
+    > Si vous voulez [ancrer votre fenêtre devtools][DevToolsCustomizePlacement] à droite de votre Viewport \ (affiché dans la figure ci-dessous), sélectionnez **personnaliser et contrôler devtools** `...` .  Dans le menu déroulant **personnaliser et contrôler devtools** , dans la section **ancrer** , sélectionnez **ancrer à droite**.  
     
 ## Affichage de la feuille de style en cascade pour un élément  
 
@@ -63,7 +63,7 @@ Suivez ces didacticiels interactifs pour découvrir les notions de base de l’a
         
     1.  Dans la `aloha` classe, recherchez la valeur du `padding` style et copiez-la.  
         
-        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Les classes CSS appliquées à l’élément inspecté sont mises en surbrillance dans l’onglet styles" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="L’élément inspecté est surligné dans l’arborescence DOM" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
            Figure 2: les classes CSS qui sont appliquées à l’élément sélectionné, par exemple `aloha` , sont affichées dans l’onglet **styles**  
         :::image-end:::  
         
@@ -79,10 +79,10 @@ Utilisez l’onglet **styles** lorsque vous voulez modifier ou ajouter des décl
 1.  [Exemples de CSS ouverts](#open-css-examples).  
 1.  Positionnez le pointeur sur le `Add A Background Color To Me!` texte, ouvrez le menu contextuel, puis cliquez sur **inspecter**.  
 1.  Sélectionnez `element.style` près du haut de l’onglet **styles** .  
-1.  Tapez `background-color` et appuyez sur `Enter` .  
-1.  Tapez `honeydew` et appuyez sur `Enter` .  Dans l' **arborescence DOM** , vous devez voir qu’une déclaration de style intraligne a été appliquée à l’élément.  
+1.  Tapez `background-color` et sélectionnez `Enter` .  
+1.  Tapez `honeydew` et sélectionnez `Enter` .  Dans l' **arborescence DOM** , vous devez voir qu’une déclaration de style intraligne a été appliquée à l’élément.  
     
-    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Ajout d’une déclaration CSS à l’élément à l’aide de l’onglet styles" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
+    :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="L’élément inspecté est surligné dans l’arborescence DOM" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
        Figure 3: la `background-color:honeydew` déclaration a été appliquée à l’élément à l’aide `element.style` de la section de l’onglet **styles** .  
     :::image-end:::  
     
@@ -96,9 +96,9 @@ Utilisez l’onglet **styles** pour voir l’apparence d’un élément lorsqu�
 1.  [Exemples de CSS ouverts](#open-css-examples).  
 1.  Positionnez le pointeur sur le `Add A Class To Me!` texte, ouvrez le menu contextuel, puis cliquez sur **inspecter**.  
 1.  Sélectionnez **. CLS**.  DevTools révèle une zone de texte dans laquelle vous pouvez ajouter des classes à l’élément sélectionné.  
-1.  Entrez `color_me` dans la zone de texte **Ajouter une nouvelle classe** , puis appuyez sur `Enter` .  Une case à cocher s’affiche sous la zone de texte **Ajouter une nouvelle classe** , dans laquelle vous pouvez activer ou désactiver la classe.  Si d' `Add A Class To Me!` autres classes sont appliquées à l’élément, vous pouvez également basculer chacun d’eux ici.  
+1.  Entrez `color_me` dans la zone de texte **Ajouter une nouvelle classe** et sélectionnez `Enter` .  Une case à cocher s’affiche sous la zone de texte **Ajouter une nouvelle classe** , dans laquelle vous pouvez activer ou désactiver la classe.  Si d' `Add A Class To Me!` autres classes sont appliquées à l’élément, vous pouvez également basculer chacun d’eux ici.  
     
-    :::image type="complex" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="Application de la classe color_me à l’élément" lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
+    :::image type="complex" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="L’élément inspecté est surligné dans l’arborescence DOM" lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
        Figure 4: la `color_me` classe a été appliquée à l’élément à l’aide de la section **. CLS** de l’onglet **styles**  
     :::image-end:::  
     
@@ -112,10 +112,10 @@ Utilisez l’onglet **styles** pour appliquer de manière définitive une Pseudo
 1.  [Exemples de CSS ouverts](#open-css-examples).  
 1.  Placez le pointeur sur le `Hover Over Me!` texte.  La couleur d’arrière-plan change.  
 1.  Positionnez le pointeur sur le `Hover Over Me!` texte, ouvrez le menu contextuel, puis cliquez sur **inspecter**.  
-1.  Dans l’onglet **styles** , sélectionnez **: HOV**.  
+1.  Dans l’onglet **styles** , choisissez **: HOV**.  
 1.  Cochez la case **sensitif** .  La couleur d’arrière-plan change comme auparavant, même si vous n’avez pas réellement pointé sur l’élément.  
     
-    :::image type="complex" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="Activation de la fonction Hover PseudoState sur un élément" lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
+    :::image type="complex" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="L’élément inspecté est surligné dans l’arborescence DOM" lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
        Figure 5: activer/désactiver le `:hover` PseudoState sur un élément  
     :::image-end:::  
     
@@ -134,16 +134,16 @@ Pour modifier la largeur, la hauteur, le remplissage, la marge ou la taille de l
     > En fonction de la taille de votre fenêtre DevTools, il est possible que vous deviez faire défiler vers le bas de l’onglet **styles** pour afficher le **modèle de zone**.  
 
 1.  Double-cliquez sur la marge gauche dans le **modèle de zone**, ce qui a pour effet de savoir `-` que l’élément n’a pas de marge gauche.  
-1.  Tapez `100px` et appuyez sur `Enter` .  Le **modèle Box** utilise par défaut la valeur pixels, mais accepte également d’autres valeurs, comme `25%` , ou `10vw` .  
+1.  Tapez `100px` et sélectionnez `Enter` .  Le **modèle Box** utilise par défaut la valeur pixels, mais accepte également d’autres valeurs, comme `25%` , ou `10vw` .  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="Survol du remplissage de l’élément" lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
+          :::image type="complex" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="L’élément inspecté est surligné dans l’arborescence DOM" lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
              Figure 6: survol du remplissage de l’élément  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-elements-change-my-margin-styles-margin-edit.msft.png" alt-text="Modification de la marge gauche de l’élément" lightbox="../media/css-elements-change-my-margin-styles-margin-edit.msft.png":::
+          :::image type="complex" source="../media/css-elements-change-my-margin-styles-margin-edit.msft.png" alt-text="L’élément inspecté est surligné dans l’arborescence DOM" lightbox="../media/css-elements-change-my-margin-styles-margin-edit.msft.png":::
              Figure 7: modification de la marge gauche de l’élément  
           :::image-end:::  
        :::column-end:::
@@ -155,30 +155,34 @@ Les [requêtes multimédias][MDNUsingMediaGueries] permettent de répartir le pr
 
 Si vous souhaitez déboguer ou tester les requêtes multimédias que vous avez définies dans votre CSS, procédez comme suit.  
 
-1.  Ouvrez les outils de développement et sélectionnez l’icône **basculer la barre d’outils** de l’appareil dans le coin supérieur gauche, ou appuyez sur `Ctrl` + `Shift` + `M` \ ( `Cmd` + `Shift` + `M` sur MacOS \).  
+1.  Ouvrez les outils de développement et sélectionnez l’icône **basculer la barre d’outils** de l’appareil dans le coin supérieur gauche, ou sélectionnez `Ctrl` + `Shift` + `M` \ ( `Cmd` + `Shift` + `M` sur MacOS \).  
     
-    :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="Ouverture de la barre d’outils de l’appareil" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
+    :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="L’élément inspecté est surligné dans l’arborescence DOM" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
        Figure 8: ouverture de la barre d’outils de l’appareil  
     :::image-end:::  
     
 1.  Ouvrez la barre d’outils de l’appareil, sélectionnez le `...` menu dans le coin supérieur droit, puis sélectionnez **afficher les requêtes multimédias**.  Vous devez voir les barres de couleur qui s’affichent au-dessus de l’affichage de la page qui représentent les différentes requêtes multimédia.  
     
-    :::image type="complex" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="Affichage de requêtes multimédias dans la barre d’outils de l’appareil" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
+    :::image type="complex" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="L’élément inspecté est surligné dans l’arborescence DOM" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
        Figure 9: affichage de requêtes multimédias dans la barre d’outils de l’appareil  
     :::image-end:::  
     
 1.  Placez le pointeur de la souris sur les limites dans les barres pour afficher les valeurs des différentes requêtes multimédias. Sélectionnez chaque pour redimensionner la page Web pour qu’elle corresponde.  
     
-    :::image type="complex" source="../media/css-elements-media-queries-select-bar.msft.png" alt-text="Sélection d’une requête multimédia dans la barre d’aperçu" lightbox="../media/css-elements-media-queries-select-bar.msft.png":::
+    :::image type="complex" source="../media/css-elements-media-queries-select-bar.msft.png" alt-text="L’élément inspecté est surligné dans l’arborescence DOM" lightbox="../media/css-elements-media-queries-select-bar.msft.png":::
        Figure 10: sélectionner une requête multimédia dans la barre d’aperçu  
     :::image-end:::  
     
 1.  Pour déboguer des requêtes multimédias et ouvrir le fichier CSS dans l' `Sources` éditeur, pointez sur l’un des segments de la barre, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez `reveal in source code` .  
     
-    :::image type="complex" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="Affichage de requêtes multimédias dans l’éditeur de sources" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
+    :::image type="complex" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="L’élément inspecté est surligné dans l’arborescence DOM" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
        Figure 11: affichage de requêtes multimédias dans l’éditeur de sources  
     :::image-end:::  
     
+## Contacter l’équipe DevTools MicrosoftEdge  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 <!-- links -->  
 
 [DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Changer la position de Microsoft Edge DevTools (détacher, ancrer en bas, ancrer à gauche)"  

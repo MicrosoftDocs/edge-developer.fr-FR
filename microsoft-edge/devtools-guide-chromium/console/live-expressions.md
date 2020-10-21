@@ -1,18 +1,18 @@
 ---
 description: Si vous êtes en train de taper les mêmes expressions JavaScript dans la console à plusieurs reprises, essayez plutôt d’utiliser des expressions dynamiques.
-title: Regardez des valeurs d’expression JavaScript en temps réel avec des expressions dynamiques
+title: Examiner les valeurs d’expression JavaScript dans Real-Time avec des expressions dynamiques
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 6b66c44b77cd50bc0c1575e5eceb7c8d1a01b709
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: f6787455863f738d0fa4e014ca8fc318ad83a9cb
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993113"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125229"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,32 +28,24 @@ ms.locfileid: "10993113"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Regardez des valeurs d’expression JavaScript en temps réel avec des expressions dynamiques   
-
-  
+# Examiner les valeurs d’expression JavaScript dans Real-Time avec des expressions dynamiques  
 
 Si vous vous intentez de taper la même expression JavaScript dans la console à plusieurs reprises, il peut être plus facile de créer une **expression dynamique**.  Dans les **expressions dynamiques** , vous tapez une expression une seule fois, puis épinglez celle-ci en haut de votre console.  La valeur de l’expression est mise à jour en temps réel.  
 
-## Créer une expression dynamique   
+## Créer une expression dynamique  
 
 1.  [Ouvrez la console][DevToolsConsoleReferenceOpenConsole].  
-1.  Cliquez sur **créer une expression dynamique** \ ( ![ créer une expression dynamique ][ImageCreateLiveExpressionIcon] \).  La zone de texte **expression dynamique** s’affiche.  
+1.  Sélectionnez **créer une expression dynamique** \ ( ![ créer une expression dynamique ][ImageCreateLiveExpressionIcon] \).  La zone de texte **expression dynamique** s’affiche.  
     
     :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Taper document. activeElement dans la zone de texte expression dynamique" lightbox="../media/console-create-live-expression.msft.png":::
        Saisie `document.activeElement` de texte dans la zone de texte **expression dynamique**  
     :::image-end:::  
     
-1.  Tapez `Control` + `Enter` \ (Windows \) ou `Command` + `Enter` \ (MacOS \) pour enregistrer l’expression ou cliquez en dehors de la zone de texte **expression dynamique** .  
+1.  Sélectionnez `Control` + `Enter` \ (Windows, Linux \) ou `Command` + `Enter` \ (MacOS \) pour enregistrer l’expression, ou sélectionnez en dehors de la zone de texte de l' **expression dynamique** .  
 
-<!--todo: add reference open console (open the console) section when available  -->  
+## Contacter l’équipe DevTools MicrosoftEdge  
 
- 
-
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

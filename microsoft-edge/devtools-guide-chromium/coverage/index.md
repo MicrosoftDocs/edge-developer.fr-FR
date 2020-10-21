@@ -3,16 +3,16 @@ description: Recherche et analyse du code JavaScript et CSS inutilisé dans Micr
 title: Rechercher du code JavaScript et CSS inutilisé avec l’onglet couverture dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 19bc15578e00e5a9f3389529f589e9790280a0e4
-ms.sourcegitcommit: 63e6d34ff483f3b419a0e271a3513874e6ce6c79
+ms.openlocfilehash: 08c4daaabd30296b53ad57a81caa0e7b155a4fc9
+ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993092"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "11125187"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,7 @@ ms.locfileid: "10993092"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Rechercher du code JavaScript et CSS inutilisé avec l’onglet couverture dans Microsoft Edge DevTools   
-
-
+# Rechercher du code JavaScript et CSS inutilisé avec l’onglet couverture dans Microsoft Edge DevTools  
 
 L’onglet couverture dans Microsoft Edge DevTools vous permet de rechercher du code JavaScript et CSS inutilisé.  La suppression du code inutilisé risque d’accélérer le chargement de la page et d’enregistrer les données cellulaires de vos utilisateurs mobiles.  
 
@@ -45,7 +39,7 @@ L’onglet couverture dans Microsoft Edge DevTools vous permet de rechercher du 
 > [!WARNING]
 > La recherche de code inutilisé est relativement simple.  Toutefois, la refactorisation d’un code base de telle sorte que chaque page expédie uniquement les scripts JavaScript et CSS dont il a besoin risque d’être difficile.  Ce guide ne traite pas de la refactorisation d’un code base pour éviter le code inutilisé, car ces derniers dépendent fortement de votre pile de technologie.  
 
-## Présentation   
+## Vue d'ensemble  
 
 L’expédition de code JavaScript ou CSS inutilisé est un problème courant du développement Web.  Par exemple, supposons que vous vouliez utiliser le [composant de bouton amorce][BootstrapButtons] sur votre page.  Pour utiliser le composant Button, vous devez ajouter un lien vers la feuille de style bootstrap dans votre code HTML, comme suit:  
 
@@ -66,27 +60,27 @@ Cette feuille de style n’inclut pas uniquement le code du composant Button.  I
     
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->  
 
-## Ouvrir l’onglet couverture   
+## Ouvrir l’onglet couverture  
 
 1.  [Ouvrir le menu de commandes][DevToolsCommandMenu].  
-1.  Commencez `coverage` à taper, sélectionnez la commande **afficher la couverture** , puis appuyez sur `Enter` pour exécuter la commande.  L’onglet **couverture** s’ouvre dans le **tiroir**.  
+1.  Commencez `coverage` à taper, sélectionnez la commande **afficher la couverture** , puis sélectionnez `Enter` pour exécuter la commande.  L’onglet **couverture** s’ouvre dans le **tiroir**.  
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Onglet couverture" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Analyser la couverture du code" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
        Onglet **couverture**  
     :::image-end:::  
     
-## Enregistrer la couverture du code   
+## Enregistrer la couverture du code  
 
 1.  Cliquez sur l’un des boutons suivants sous l’onglet **couverture** .  
-    *   Cliquez sur **Démarrer l’instrumentation, puis rechargez la page** , (démarrez la ![ couverture d’instrumentation et rechargez ][ImageReloadIcon] la page \) si vous souhaitez voir le code nécessaire pour charger la page.  
-    *   Cliquez sur couverture de l' **instrument** \ ( ![ couverture de l’instrument ][ImageRecordIcon] \) si vous souhaitez voir le code utilisé après l’interaction avec la page.  
-1.  Cliquez sur **arrêter la couverture de l’instrumentation et afficher les résultats** \ ( ![ arrêter l’instrumentation et afficher les résultats ][ImageStopIcon] \) lorsque vous ne souhaitez plus enregistrer la couverture du code.  
+    *   Sélectionnez **Démarrer la couverture de l’instrumentation et recharger la page** \ ( ![ Démarrer la couverture de l’instrumentation et recharger ][ImageReloadIcon] la page \) si vous souhaitez voir le code nécessaire au chargement de la page.  
+    *   Sélectionnez **couverture** de l’instrument \ ( ![ couverture de ][ImageRecordIcon] l’instrument \) si vous souhaitez voir le code utilisé après l’interaction avec la page.  
+1.  Pour arrêter l’enregistrement de la couverture du code, sélectionnez **arrêter l’instrumentation et afficher les résultats** \ ( ![ arrêter l’instrumentation et afficher les résultats ][ImageStopIcon] \).  
     
-## Analyser la couverture du code   
+## Analyser la couverture du code  
 
 La table dans l’onglet **couverture** vous indique les ressources qui ont été analysées et le code utilisé dans chaque ressource.  Cliquez sur une ligne pour ouvrir cette ressource dans le volet **sources** et observez une répartition ligne par ligne du code utilisé et du code inutilisé.  
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Rapport de couverture du code" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Analyser la couverture du code" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
    Rapport de couverture du code  
 :::image-end:::  
 
@@ -96,11 +90,9 @@ La table dans l’onglet **couverture** vous indique les ressources qui ont ét�
 *   La colonne **octets inutilisés** correspond au nombre d’octets qui n’ont pas été utilisés.  
 *   La dernière colonne sans nom est une visualisation des colonnes **nombre total d’octets** et **octets inutilisés** .  La section rouge de la barre est des octets inutilisés.  La section verte est utilisée en octets.  
     
-<!--  
- 
+## Contacter l’équipe DevTools MicrosoftEdge  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
