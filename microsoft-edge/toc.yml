@@ -372,6 +372,8 @@
               href: extensions-chromium/getting-started/extension-sideloading.md
         - name: Guide du développeur
           items:
+            - name: Prise en charge de l’API
+              href: extensions-chromium/developer-guide/api-support.md
             - name: Extension de Port Chromium à Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
             - name: Migrer votre extension du manifeste v2 au manifeste v3
@@ -519,7 +521,7 @@
           href: web-platform/tracking-prevention.md
         - name: Chaîne de l’agent utilisateur Microsoft Edge
           href: web-platform/user-agent-string.md
-    - name: WebView2 (Chromium) (version d’évaluation)
+    - name: WebView2 (Chromium)
       href: webview2/toc.yml
     - name: Guide du développeur WebVR
       href: /microsoft-edge/webvr/index
