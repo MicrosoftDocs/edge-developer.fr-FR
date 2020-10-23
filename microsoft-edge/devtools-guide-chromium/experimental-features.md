@@ -3,16 +3,16 @@ description: Dernières fonctionnalités expérimentales de Microsoft Edge DevTo
 title: Fonctionnalités expérimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, expérience
-ms.openlocfilehash: 65cf178596abfbaaac0e80bf205035838967cf59
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: b620388df309109e28ab8b9c010dfd448ca906f7
+ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124893"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11133846"
 ---
 # Fonctionnalités expérimentales  
 
@@ -31,7 +31,7 @@ Pour activer ou désactiver les fonctionnalités expérimentales dans Microsoft 
 1.  Sur le côté gauche du volet **paramètres** , sélectionnez la section **expériences** .  
     
     :::image type="complex" source="./media/experiments-devtools.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-devtools.msft.png":::
-       Liste des expériences dans les paramètres de DevTools  
+       Liste des expériences dans les **paramètres** de devtools  
     :::image-end:::  
     
 1.  Sur la page **expériences** , faites défiler la liste de toutes les fonctionnalités expérimentales disponibles, puis cochez la case en regard de chaque fonctionnalité que vous voulez tester.  
@@ -52,6 +52,7 @@ Les sections suivantes décrivent les nouvelles fonctionnalités expérimentales
 | [Activer webhint](#enable-webhint) | 85 ou version ultérieure |  
 | [Activer la console réseau](#enable-network-console) | 85 ou version ultérieure |  
 | [Visionneuse de commandes source](#source-order-viewer) | 86 ou version ultérieure |  
+| [Activer l’éditeur de raccourcis clavier](#enable-keyboard-shortcut-editor) | 87 ou version ultérieure |  
 
 ### Émulation: prise en charge du mode double écran  
 
@@ -92,7 +93,7 @@ Pour utiliser la [fonctionnalité de répartition d’écran de média CSS][Dual
 
 Lorsque vous émulez le [duo de surface][SurfaceDevicesDuo] dans une position sur deux écrans dans Microsoft Edge, la couture (espace entre les deux écrans \) est tracée sur votre site Web ou votre application.  
 
-L’affichage émulé correspond au mode de rendu de votre site Web (ou de l’application) dans l' [application Microsoft Edge Android][GooglePlayMicrosoftEdge] sur [surface Duo][SurfaceDevicesDuo].  Il est possible que vous deviez mettre à jour votre site Web \ (ou l’application \) pour l’afficher mieux le long de la couture.  Pour plus d’informations sur l’adaptation de votre site Web (ou de l’application \) à la couture, accédez à l' [utilisation de la couture][DualScreenIntroductionHowWorkSeam] dans la documentation surface Duo.  
+L’affichage émulé correspond au mode de rendu de votre site Web (ou de l’application) dans l' [application Microsoft Edge Android][GooglePlayMicrosoftEdge] exécuté sur [surface Duo][SurfaceDevicesDuo].  Il est possible que vous deviez mettre à jour votre site Web \ (ou l’application \) pour l’afficher mieux le long de la couture.  Pour plus d’informations sur l’adaptation de votre site Web (ou de l’application) à la couture, accédez à l' [utilisation de la couture][DualScreenIntroductionHowWorkSeam].  
 
 La [barre d’outils][DevtoolsDeviceModeIndexSimulateMobileViewport] de l’appareil inclut des fonctionnalités supplémentaires pour vous aider à tester votre site Web ou votre application en plusieurs positions et orientations.  Sélectionnez **faire pivoter** \ ( ![ faire pivoter ][ImageRotateIcon] ) pour faire pivoter la fenêtre d’affichage en orientation paysage. Combinez la fonctionnalité avec la **plage** \ ( ![ span ][ImageSpanIcon] \) pour basculer entre les positions à un seul écran ou pliées en deux ou non pliées.  Ensemble, les fonctionnalités permettent le test de votre site Web ou de votre application dans les quatre positions et orientations possibles.  
 
@@ -105,7 +106,8 @@ Les **fonctionnalités de la plateforme Web expérimentales** \ ( ![ Experimenta
 <!-- Commenting out until the icon issue is fixed in Edge Canary
 The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->  
 
-Voici d’autres ressources qui peuvent vous aider à améliorer votre site Web \ (ou l’application \) pour les périphériques à deux écrans:
+Voici d’autres ressources qui peuvent vous aider à améliorer votre site Web \ (ou votre application \) pour les appareils à deux écrans.  
+
 *   Pour plus d’informations sur le développement Web sur les appareils à deux écrans, voir [expériences sur le Web à deux écrans][DualScreenWebIndex].  
 *   Installez l' [émulateur de surface Duo][DualScreenAndroidUseEmulator].  Il est différent de l’émulateur dans Microsoft Edge, émule le duo de surface sur lequel s’exécute Android et intégré à [Android Studio][AndroidDeveloperStudio].  Pour plus d’informations, accédez au [Kit de développement logiciel (SDK) surface Duo][DualScreenAndroidGetDuoSdk].  
 
@@ -116,7 +118,7 @@ Voici d’autres ressources qui peuvent vous aider à améliorer votre site Web 
 
 ### Activer les nouvelles fonctionnalités de débogage de grille CSS  
 
-Cette fonctionnalité expérimentale fournit un certain nombre de nouvelles visualisations pour vous aider à déboguer des dispositions de grille CSS.  Pour afficher un aperçu des dernières fonctionnalités expérimentales, [activez cette expérience](#turn-on-experimental-features) et rechargez devtools.  Cette expérience est activée par défaut dans Microsoft Edge 87 et les versions ultérieures.  
+Cette fonctionnalité expérimentale fournit un certain nombre de nouvelles visualisations pour vous aider à déboguer des dispositions de grille CSS.  Pour afficher un aperçu des dernières fonctionnalités expérimentales, [activez cette expérience](#turn-on-experimental-features) et rechargez devtools.  Cette expérience est activée par défaut dans Microsoft Edge version 87 ou ultérieure.  
 
 #### Affichage des superpositions de la grille sur le survol avec l’outil inspecter  
 
@@ -128,29 +130,29 @@ L’outil **Inspect** vous permet d’identifier et de visualiser rapidement les
 
 #### Affichage de superpositions de grille persistante  
 
-Dans Edge 86 et les versions ultérieures, la fonctionnalité de grille de feuilles de style  Les superpositions persistantes offrent plusieurs avantages.  
+Dans la version 86 de Microsoft Edge ou version ultérieure, la fonctionnalité de grille de feuilles de style  Les superpositions persistantes offrent plusieurs avantages.  
 
 *   Les superpositions persistantes restent visibles sur la page lorsque vous faites défiler, déplacez la souris et utilisez les autres fonctionnalités du DevTools.  
-*   Plusieurs superpositions persistantes peuvent être activées en même temps, ce qui vous permet de revoir de nombreux dispositions en une seule fois.  
-*   Les superpositions persistantes proposent de nombreuses options de configuration, telles que le masquage et l’affichage des noms des zones de la grille, des espaces de grille, des tailles de suivi, etc.  
+*   Plusieurs superpositions persistantes peuvent être activées en même temps, ce qui vous permet de revoir différentes dispositions de grille en une seule fois.  
+*   Les superpositions persistantes proposent de nombreuses options de configuration, telles que le masquage et l’affichage des noms dans la zone de grille, les espaces de grille, les tailles de suivi, etc.  
 
 Il existe deux façons d’activer ou de désactiver une superposition de grille persistante.  
 
-*   Choisissez le losange de **grille** en regard d’un élément Grid affiché dans l’arborescence DOM de l’outil **éléments** .  
+*   Cliquez sur l’icône ovale de **grille** en regard d’un élément Grid affiché dans l’arborescence DOM de l’outil **éléments** .  
     
     :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/grid-adorner.msft.png":::
-       Losange grille dans l’outil éléments  
+       Icône ovale de grille dans l’outil **éléments**  
     :::image-end:::  
     
 *   Ouvrez le nouveau panneau de **disposition** situé dans l’outil éléments, puis activez la case à cocher en regard de chaque élément de grille que vous souhaitez mettre en surbrillance.  
     
     :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/grid-layout-zoom.msft.png":::
-       Panneau de disposition  
+       Panneau de **disposition** dans devtools  
     :::image-end:::  
     
 #### Configuration de la superposition persistante  
 
-Le nouveau panneau de **disposition** , situé dans l’outil **éléments** , ainsi que les onglets **Styles** et **calculs** dans les 86 et les versions ultérieures, les options de configuration des surfaces pour les superpositions persistantes.  
+Dans la version 86 de Microsoft Edge ou version ultérieure, le nouveau panneau de **disposition** se trouve dans l’outil **éléments** , à côté des **styles** et des onglets **calculés** .  Les options de configuration du panneau de **disposition** pour les superpositions persistantes.  
 
 :::image type="complex" source="./media/experiments-grid.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-grid.msft.png":::
    Fonctionnalité de débogage de grille CSS  
@@ -177,7 +179,7 @@ En règle générale, il est possible que les outils tels que les **éléments**
 *   PWA  
 *   autres problèmes courants liés au développement Web  
 
-L’expérience [webhint][WebhintMain] affiche le commentaire de webhint dans le volet [problèmes][DevtoolsIssues] .  Sélectionnez un problème pour afficher la documentation de la solution et une liste des ressources affectées sur votre site Web.  Sélectionnez un lien vers une ressource pour ouvrir le volet **réseau**, **sources**ou **éléments** approprié dans devtools.  
+L’expérience [webhint][WebhintMain] affiche le commentaire de webhint dans le volet [problèmes][DevtoolsIssues] .  Sélectionnez un problème pour afficher la documentation de la solution et une liste des ressources affectées sur votre site Web.  Cliquez sur le lien d’une ressource pour ouvrir le volet **réseau**, **sources**ou **éléments** approprié dans devtools.  
 
 :::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-webhint.msft.png":::
    Commentaires de webhint dans le volet **problèmes**  
@@ -220,6 +222,42 @@ Après avoir activé l’expérience, assurez-vous de redémarrer l’DevTools. 
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
 
+### Activer l’éditeur de raccourcis clavier
+
+Lorsque l’expérience d’activation de l' **éditeur de raccourcis clavier** est activée, vous pouvez désormais personnaliser les raccourcis clavier pour n’importe quelle action dans le devtools.  Pour personnaliser le raccourci clavier pour une action spécifique, procédez comme suit.  
+
+1.  [Ouvrez devtools][DevtoolsOpenMain].  
+1.  Ouvrez [paramètres][DevToolsCustomizeSettings].
+    *   Sélectionnez `Shift` + `?` .  
+1.  Accédez à la page **raccourcis** .  
+1.  Choisissez l’action que vous voulez personnaliser.  
+1.  Cliquez sur l’icône **Edit** \ ( ![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \).  
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+       Sélectionner l’action à personnaliser dans la page **raccourcis** dans les [paramètres][DevToolsCustomizeSettings]
+    :::image-end:::  
+    
+1.  Sur le clavier, sélectionnez les touches que vous souhaitez lier à l’action.
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       Sélectionner les touches que vous voulez affecter à l’action
+    :::image-end:::  
+    
+1.  Pour enregistrer votre nouveau raccourci clavier, activez la case à cocher![CheckmarkKeyboardShortcut][ImageCheckmarkKeyboardShortcutIcon]\) icône.
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       Cliquez sur l’icône de coche pour enregistrer votre nouveau raccourci clavier
+    :::image-end:::  
+    
+1.  Sélectionnez votre nouveau raccourci clavier pour déclencher l’action dans le DevTools.  
+    
+Sur la page **raccourcis** , l’icône du **raccourci clavier personnalisé** \ ( ![ CustomKeyboardShortcut ][ImageCustomKeyboardShortcutIcon] \) affiche les raccourcis clavier que vous avez personnalisés.  Pour rétablir tous les raccourcis, sélectionnez **rétablir les raccourcis par défaut**.  
+
+Lorsque vous modifiez les raccourcis clavier pour une action, pour ignorer vos modifications, sélectionnez l’icône X \ ( ![ XKeyboardShortcut ][ImageXKeyboardShortcutIcon] \).  Pour supprimer les raccourcis pour une action spécifique, sélectionnez l’icône **supprimer le raccourci** \ ( ![ DeleteKeyboardShortcut ][ImageDeleteKeyboardShortcutIcon] \).  Pour ajouter plusieurs raccourcis pour une action, sélectionnez **Ajouter un raccourci**.
+
+> [!NOTE]
+> Si un raccourci clavier est actuellement affecté à une autre action, vous ne pouvez pas l’enregistrer pour une nouvelle action.  Vous devez d’abord supprimer le raccourci clavier pour l’action précédente, puis l’ajouter à la nouvelle action.  
+
 ## Fonctionnalités expérimentales antérieures  
 
 *   la [vue 3D][Devtools3dViewIndex] est désormais disponible et activée par défaut dans Microsoft Edge version 83 ou ultérieure.  
@@ -247,6 +285,11 @@ Pour transmettre des commentaires sur les expériences DevTools Microsoft Edge, 
 [ImageRotateIcon]: ./media/rotate-dark-icon.msft.png  
 [ImageSpanIcon]: ./media/span-dark-icon.msft.png  
 [ImageExperimentalApisIcon]: ./media/experimental-apis-dark-icon.msft.png  
+[ImageEditKeyboardShortcutIcon]: ./media/edit-keyboard-shortcut-icon.msft.png  
+[ImageCheckmarkKeyboardShortcutIcon]: ./media/checkmark-keyboard-shortcut-icon.msft.png  
+[ImageCustomKeyboardShortcutIcon]: ./media/custom-keyboard-shortcut-icon.msft.png  
+[ImageDeleteKeyboardShortcutIcon]: ./media/delete-keyboard-shortcut-icon.msft.png  
+[ImageXKeyboardShortcutIcon]: ./media/discard-changes-keyboard-shortcut-icon.msft.png  
 
 <!-- links -->  
 
@@ -256,7 +299,8 @@ Pour transmettre des commentaires sur les expériences DevTools Microsoft Edge, 
 [DevtoolsIssues]: ./issues/index.md "Recherchez et corrigez les problèmes liés à l’outil problèmes dans Microsoft Edge DevTools Documents Microsoft"  
 [DevToolsShortcuts]: ./shortcuts.md "Raccourcis clavier dans Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsOpen]: ./open.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Personnaliser les raccourcis clavier dans Microsoft Edge DevTools | Documents Microsoft"
+[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Personnaliser les raccourcis clavier dans Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsOpenMain]: ./open.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
 
 [DualScreenWebIndex]: /dual-screen/web/index "Expérience Web sur deux écrans | Documents Microsoft"  
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Obtenez l’émulateur Duo surface | Documents Microsoft"  

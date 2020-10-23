@@ -7,12 +7,12 @@ ms.date: 10/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 74fb4e276547d9f653a5bcbdcab9c4406d09a81a
-ms.sourcegitcommit: 912609aa49864e3363aaa3b245ff2aa4bec3fc3e
+ms.openlocfilehash: 0e759c18b5ef547bfd490f4d525930f92809a6a1
+ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104860"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11133910"
 ---
 # Nouveautés de DevTools (Microsoft Edge 86)  
 
@@ -490,7 +490,7 @@ Si vous utilisez Windows ou macOS, envisagez d’utiliser les [canaux Microsoft 
 [CR772558]: https://crbug.com/772558 "DevTools: mise à jour vers la dernière version de phare | Bugs du chrome"  
 [CR807440]: https://crbug.com/807440 "Blocage de chrome avec un grand nombre de SWs | Bugs du chrome"  
 [CR997694]: https://crbug.com/997694 "Les requêtes XHR avec le statut 302 ne sont pas affichées sous le filtre \ «XHR \» dans le panneau réseau | Bugs du chrome"  
-[CR1047356]: https://crbug.com/1047356 "Outils CSS Grid/Flexbox/table"  
+[CR1047356]: https://crbug.com/1047356 "Outils CSS Grid/Flexbox/tableau | Bugs du chrome"  
 [CR1051466]: https://crbug.com/1051466 "Prendre en charge le débogage COOP/COEP dans DevTools | Bugs du chrome"  
 [CR1054281]: https://crbug.com/1054281 "Demande de fonctionnalité: DevTools doit émuler les périphériques pliants et à deux écrans | Bugs du chrome"  
 [CR1067184]: https://crbug.com/1067184 "Demande de fonctionnalité: bouton Effacer le filtre sur réseau & les éléments-> entrées de filtre de style Bugs du chrome"  
