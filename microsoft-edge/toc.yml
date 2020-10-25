@@ -62,6 +62,8 @@
           href: devtools-guide-chromium/open.md
         - name: Nouveautés
           items:
+            - name: MicrosoftEdge87
+              href: devtools-guide-chromium/whats-new/2020/10/devtools.md
             - name: Microsoft Edge86
               href: devtools-guide-chromium/whats-new/2020/08/devtools.md
             - name: MicrosoftEdge85
@@ -96,6 +98,8 @@
               href: devtools-guide-chromium/coverage/index.md
             - name: Inspecter des animations
               href: devtools-guide-chromium/inspect-styles/animations.md
+            - name: Inspecter la grille CSS
+              href: devtools-guide-chromium/css/grid.md
             - name: Forcer DevTools en mode aperçu avant impression
               href: devtools-guide-chromium/css/print-preview.md
         - name: Console
@@ -236,6 +240,8 @@
               href: devtools-guide-chromium/memory-problems/allocation-profiler.md
         - name: Media
           href: devtools-guide-chromium/media-panel/index.md
+        - name: WebAuthn
+          href: devtools-guide-chromium/WebAuthn/index.md
         - name: Espaces travail
           href: devtools-guide-chromium/workspaces/index.md
         - name: Applications web progressives
