@@ -511,8 +511,8 @@
       items:
         - name: Débogueur pour Edge
           href: visual-studio-code/debugger-for-edge.md
-        - name: Éléments pour Edge
-          href: visual-studio-code/elements-for-edge.md
+        - name: Extension DevTools Microsoft Edge
+          href: visual-studio-code/microsoft-edge-devtools-extension.md
         - name: webhint
           href: visual-studio-code/webhint.md
     - name: WebDriver (Chromium)
