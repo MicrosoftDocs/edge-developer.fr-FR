@@ -178,6 +178,8 @@
               href: devtools-guide-chromium/javascript/reference.md
             - name: Extraits de code
               href: devtools-guide-chromium/javascript/snippets.md
+            - name: Remplacements
+              href: devtools-guide-chromium/javascript/overrides.md
             - name: Vue d’ensemble du volet Sources
               href: devtools-guide-chromium/sources.md
             - name: Services d’arrière-plan de débogage
