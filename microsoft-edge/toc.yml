@@ -525,6 +525,8 @@
       items:
         - name: Modifications apportées à Microsoft Edge ayant un impact sur la compatibilité des sites
           href: web-platform/site-impacting-changes.md
+        - name: Déplacer des utilisateurs vers Microsoft Edge à partir d’Internet Explorer
+          href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Protection contre le suivi dans Microsoft Edge
           href: web-platform/tracking-prevention.md
         - name: Chaîne de l’agent utilisateur Microsoft Edge
