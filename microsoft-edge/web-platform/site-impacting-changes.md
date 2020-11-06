@@ -3,16 +3,16 @@ description: Fournit un récapitulatif des changements à forte incidence qui po
 title: Modifications apportées à Microsoft Edge ayant un impact sur la compatibilité des sites
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/02/2020
+ms.date: 11/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, compatibilité, plateforme Web
-ms.openlocfilehash: 49fbedb2fe979a52b771539c7ceedce8968c2fb4
-ms.sourcegitcommit: 903524ab85321ade278facd741d6487e8cabe33f
+ms.openlocfilehash: bb4d67bf1ab6274a10a83ee750fa9db52ab85464
+ms.sourcegitcommit: 4497b399a6ddfa34163b7d3db4f76423d4da3c12
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100287"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "11156347"
 ---
 # Modifications apportées à Microsoft Edge ayant un impact sur la compatibilité des sites  
 
@@ -28,7 +28,7 @@ Le web évolue constamment pour améliorer l’expérience utilisateur, la sécu
 | Bloquer les téléchargements de contenu mixte | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, y compris sur la chronologie prévue par Google pour cette modification, accédez à l' [entrée de blog Google Security][GoogleBlogSecurity20200206].  Le planning de déploiement Microsoft des types de fichiers à avertir ou bloquer est planifié pour une version après chrome.  |  
 | Déconseillé AppCache | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, accédez à la [documentation de WebDev][WebDevAppCacheRemoval].  Le planning de déploiement Microsoft pour le retrait est prévu pour une version ultérieure après chrome.  La demande d’un [jeton AppCache OriginTrial][AppCacheOriginTrial] permet aux sites de continuer à utiliser l’API déconseillée jusqu’à l’aide de l’option V90.  |  
 | Suppression d’Adobe Flash | Bordure V88  |  | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, accédez à la feuille de [route de chrome Adobe Flash][ChromiumFlashRoadmapSupportRemoved].  | 
-| Désactiver et supprimer FTP | Bordure V88  | Bordure V87 | Dans Edge V87, la prise en charge du protocole FTP est désactivée par défaut.  Dans Edge V88, la prise en charge du protocole FTP est supprimée.  Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, accédez à l’entrée d’état de la [plateforme chrome][ChromePlatformStatus6246151319715840].  |   
+| Désactiver et supprimer FTP | Bordure V88  | V87 Edge Beta | Dans la version bêta latérale de V87, la prise en charge du protocole FTP est désactivée par défaut. dans le cas d’un V87 de frontière stable, il reste activé.  Dans Edge V88, la prise en charge du protocole FTP est entièrement supprimée.  Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, accédez à l’entrée d’état de la [plateforme chrome][ChromePlatformStatus6246151319715840].  Les entreprises qui disposent d’un site nécessitant une prise en charge FTP peuvent continuer à utiliser le protocole FTP en configurant le site pour utiliser le [mode IE](https://docs.microsoft.com/deployedge/edge-ie-mode).  |   
 
 ##### Commentaires de publication  
 
@@ -64,3 +64,5 @@ Le web évolue constamment pour améliorer l’expérience utilisateur, la sécu
 
 [WebDevAppCacheRemoval]: https://web.dev/appcache-removal/ "Suppression de AppCache"
 [AppCacheOriginTrial]: https://developers.chrome.com/origintrials/#/view_trial/1776670052997660673 "Jeton OriginTrial AppCache"
+
+<!--todo:  cleanup links  -->  
