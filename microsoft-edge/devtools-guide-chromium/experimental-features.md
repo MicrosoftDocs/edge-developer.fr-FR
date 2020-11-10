@@ -3,16 +3,16 @@ description: Dernières fonctionnalités expérimentales de Microsoft Edge DevTo
 title: Fonctionnalités expérimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/21/2020
+ms.date: 11/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, expérience
-ms.openlocfilehash: b620388df309109e28ab8b9c010dfd448ca906f7
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: ddedf62ff27023751c511a7d2e34b6ea14461db5
+ms.sourcegitcommit: be42902c404e9f9ac2d661df9c55de3db4d956a5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11133846"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "11160364"
 ---
 # Fonctionnalités expérimentales  
 
@@ -22,7 +22,7 @@ Si les fonctionnalités expérimentales sont disponibles dans tous les canaux de
 
 ## Activer les fonctionnalités expérimentales  
 
-Pour activer ou désactiver les fonctionnalités expérimentales dans Microsoft Edge, procédez comme suit.  
+Pour activer les fonctionnalités expérimentales de \ (ou de désactivation) dans Microsoft Edge, procédez comme suit.  
 
 1.  [Ouvrez devtools][DevtoolsOpen].  
      *   Sélectionnez `Control` + `Shift` + `I` \ (Windows, Linux \) ou `Command` + `Option` + `I` \ (MacOS \).  Pour plus d’informations, accédez à [raccourcis clavier de Microsoft Edge devtools][DevToolsShortcuts].  
@@ -53,6 +53,7 @@ Les sections suivantes décrivent les nouvelles fonctionnalités expérimentales
 | [Activer la console réseau](#enable-network-console) | 85 ou version ultérieure |  
 | [Visionneuse de commandes source](#source-order-viewer) | 86 ou version ultérieure |  
 | [Activer l’éditeur de raccourcis clavier](#enable-keyboard-shortcut-editor) | 87 ou version ultérieure |  
+| [Activer les calques composites dans l’affichage 3D](#turn-on-composited-layers-in-3d-view) | 87 ou version ultérieure |  
 
 ### Émulation: prise en charge du mode double écran  
 
@@ -68,7 +69,7 @@ Fournit des fonctionnalités supplémentaires pour l’émulation de deux nouvea
     
 [Activez les API de plateforme Web expérimentales](#enable-experimental-apis) et utilisez la [fonctionnalité de répartition d’écran de média CSS][DualScreenDocsCssMedia] et l' [API getWindowSegments JavaScript][DualScreenDocsJSAPI] pour améliorer votre site Web \ (ou l’application \) pour les appareils à double écran et pliant.  
 
-:::image type="complex" source="./media/experiments-surface-duo-emulation.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-surface-duo-emulation.msft.png":::  
+:::image type="complex" source="./media/experiments-surface-duo-emulation.msft.png" alt-text="Émuler surface duo dans Microsoft Edge" lightbox="./media/experiments-surface-duo-emulation.msft.png":::  
    Émuler surface duo dans Microsoft Edge  
 :::image-end:::  
 
@@ -80,7 +81,7 @@ Pour utiliser la [fonctionnalité de répartition d’écran de média CSS][Dual
 1.  Dans la zone de texte **indicateurs de recherche** , entrez `Experimental Web Platform features` , sélectionnez l’indicateur **fonctionnalités de plateforme Web expérimentales** , puis **désactivez** l' **option**désactivé.  
 1.  Redémarrez MicrosoftEdge.  
 
-:::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
+:::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Activer l’indicateur de fonctionnalités de plateforme Web expérimentale" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
    Activer l’indicateur de fonctionnalités de plateforme Web expérimentale  
 :::image-end:::  
 
@@ -97,7 +98,7 @@ L’affichage émulé correspond au mode de rendu de votre site Web (ou de l’a
 
 La [barre d’outils][DevtoolsDeviceModeIndexSimulateMobileViewport] de l’appareil inclut des fonctionnalités supplémentaires pour vous aider à tester votre site Web ou votre application en plusieurs positions et orientations.  Sélectionnez **faire pivoter** \ ( ![ faire pivoter ][ImageRotateIcon] ) pour faire pivoter la fenêtre d’affichage en orientation paysage. Combinez la fonctionnalité avec la **plage** \ ( ![ span ][ImageSpanIcon] \) pour basculer entre les positions à un seul écran ou pliées en deux ou non pliées.  Ensemble, les fonctionnalités permettent le test de votre site Web ou de votre application dans les quatre positions et orientations possibles.  
 
-:::image type="complex" source="./media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-dual-screen-emulation-rotate-span.msft.png":::
+:::image type="complex" source="./media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="Matrice de positions et d’orientations pour les appareils à écran double et pliant" lightbox="./media/experiments-dual-screen-emulation-rotate-span.msft.png":::
    Matrice de positions et d’orientations pour les appareils à écran double et pliant  
 :::image-end:::  
 
@@ -124,7 +125,7 @@ Cette fonctionnalité expérimentale fournit un certain nombre de nouvelles visu
 
 L’outil **Inspect** vous permet d’identifier et de visualiser rapidement les dispositions d’une grille CSS dans un site Web en les plaçant au-dessus à l’aide de la souris.  **Inspect** ![ ](./media/inspect-icon.msft.png) Dans le coin supérieur gauche de devtools, sélectionnez l’icône inspecter \ (Inspect \).  Ensuite, pointez sur un élément Grid sur le site Web que vous déboguez.  Les plans sont affichés dans la grille, et l’ombrage indique l’emplacement des espaces de la grille, le cas échéant.  
 
-:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/grid-inspect.msft.png":::
+:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Affichage de grilles avec l’outil Inspect" lightbox="./media/grid-inspect.msft.png":::
    Affichage de grilles avec l’outil Inspect  
 :::image-end:::  
 
@@ -140,13 +141,13 @@ Il existe deux façons d’activer ou de désactiver une superposition de grille
 
 *   Cliquez sur l’icône ovale de **grille** en regard d’un élément Grid affiché dans l’arborescence DOM de l’outil **éléments** .  
     
-    :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/grid-adorner.msft.png":::
+    :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="Icône ovale de grille dans l’outil éléments" lightbox="./media/grid-adorner.msft.png":::
        Icône ovale de grille dans l’outil **éléments**  
     :::image-end:::  
     
 *   Ouvrez le nouveau panneau de **disposition** situé dans l’outil éléments, puis activez la case à cocher en regard de chaque élément de grille que vous souhaitez mettre en surbrillance.  
     
-    :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/grid-layout-zoom.msft.png":::
+    :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="Panneau de disposition dans DevTools" lightbox="./media/grid-layout-zoom.msft.png":::
        Panneau de **disposition** dans devtools  
     :::image-end:::  
     
@@ -154,7 +155,7 @@ Il existe deux façons d’activer ou de désactiver une superposition de grille
 
 Dans la version 86 de Microsoft Edge ou version ultérieure, le nouveau panneau de **disposition** se trouve dans l’outil **éléments** , à côté des **styles** et des onglets **calculés** .  Les options de configuration du panneau de **disposition** pour les superpositions persistantes.  
 
-:::image type="complex" source="./media/experiments-grid.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-grid.msft.png":::
+:::image type="complex" source="./media/experiments-grid.msft.png" alt-text="Fonctionnalité de débogage de grille CSS" lightbox="./media/experiments-grid.msft.png":::
    Fonctionnalité de débogage de grille CSS  
 :::image-end:::  
 
@@ -162,7 +163,7 @@ Dans la version 86 de Microsoft Edge ou version ultérieure, le nouveau panneau 
 
 En règle générale, il est possible que les outils tels que les **éléments** et le **réseau** s’ouvrent uniquement dans le panneau principal qui se trouve en haut du devtools.  Outils tels que l' **affichage 3D** et les **problèmes** qui s’ouvrent normalement uniquement dans le panneau du **tiroir** situé en bas du devtools.  Après avoir choisi l’expérience, vous pouvez déplacer des outils entre les volets supérieur et inférieur.  Pour déplacer un outil, pointez sur celui-ci, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez **déplacer vers le haut** ou **déplacer vers le bas**.   Cette expérience vous permet de personnaliser la disposition de votre DevTools.  Pour afficher ou masquer le panneau de la **tiroir** , sélectionnez `Escape` .  
 
-:::image type="complex" source="./media/experiments-move-panels.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-move-panels.msft.png":::
+:::image type="complex" source="./media/experiments-move-panels.msft.png" alt-text="Déplacement d’un onglet entre les panneaux" lightbox="./media/experiments-move-panels.msft.png":::
    Déplacement d’un onglet entre les panneaux  
 :::image-end:::  
 
@@ -176,12 +177,12 @@ En règle générale, il est possible que les outils tels que les **éléments**
 *   compatibilité entre les navigateurs  
 *   sécurité  
 *   les  
-*   PWA  
+*   Applications Web progressives (PWAs)  
 *   autres problèmes courants liés au développement Web  
 
 L’expérience [webhint][WebhintMain] affiche le commentaire de webhint dans le volet [problèmes][DevtoolsIssues] .  Sélectionnez un problème pour afficher la documentation de la solution et une liste des ressources affectées sur votre site Web.  Cliquez sur le lien d’une ressource pour ouvrir le volet **réseau**, **sources**ou **éléments** approprié dans devtools.  
 
-:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-webhint.msft.png":::
+:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="Commentaires de webhint dans le volet problèmes" lightbox="./media/experiments-webhint.msft.png":::
    Commentaires de webhint dans le volet **problèmes**  
 :::image-end:::  
 
@@ -199,7 +200,7 @@ Après avoir activé l’expérience, assurez-vous de redémarrer l’DevTools. 
 1.  Lorsque la **console réseau** s’ouvre, modifiez les informations de requête réseau.  
 1.  Cliquez sur **Envoyer**.  
 
-:::image type="complex" source="./media/network-network-console.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/network-network-console.msft.png":::
+:::image type="complex" source="./media/network-network-console.msft.png" alt-text="Console réseau dans le tiroir de la console" lightbox="./media/network-network-console.msft.png":::
    **Console réseau** dans le tiroir de la **console**  
 :::image-end:::  
 
@@ -216,7 +217,7 @@ Après avoir activé l’expérience, assurez-vous de redémarrer l’DevTools. 
 1.  Dans la section **visionneuse de commandes sources** , activez la case à cocher **afficher l’ordre source** .  
 1.  Mettez en surbrillance un élément HTML pour afficher une superposition de l’ordre dans la source de la page.  
 
-:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-source-order-viewer.msft.png":::
+:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Visionneuse de commandes source dans le volet accessibilité" lightbox="./media/experiments-source-order-viewer.msft.png":::
    **Visionneuse de commandes source** dans le volet **accessibilité**  
 :::image-end:::  
 
@@ -233,19 +234,19 @@ Lorsque l’expérience d’activation de l' **éditeur de raccourcis clavier** 
 1.  Choisissez l’action que vous voulez personnaliser.  
 1.  Cliquez sur l’icône **Edit** \ ( ![ EditKeyboardShortcut ][ImageEditKeyboardShortcutIcon] \).  
     
-    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Sélectionner l’action à personnaliser dans la page raccourcis dans les paramètres" lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        Sélectionner l’action à personnaliser dans la page **raccourcis** dans les [paramètres][DevToolsCustomizeSettings]
     :::image-end:::  
     
 1.  Sur le clavier, sélectionnez les touches que vous souhaitez lier à l’action.
     
-    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Sélectionner les touches que vous voulez affecter à l’action" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
        Sélectionner les touches que vous voulez affecter à l’action
     :::image-end:::  
     
 1.  Pour enregistrer votre nouveau raccourci clavier, activez la case à cocher![CheckmarkKeyboardShortcut][ImageCheckmarkKeyboardShortcutIcon]\) icône.
     
-    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Cliquez sur l’icône de coche pour enregistrer votre nouveau raccourci clavier" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
        Cliquez sur l’icône de coche pour enregistrer votre nouveau raccourci clavier
     :::image-end:::  
     
@@ -257,6 +258,25 @@ Lorsque vous modifiez les raccourcis clavier pour une action, pour ignorer vos m
 
 > [!NOTE]
 > Si un raccourci clavier est actuellement affecté à une autre action, vous ne pouvez pas l’enregistrer pour une nouvelle action.  Vous devez d’abord supprimer le raccourci clavier pour l’action précédente, puis l’ajouter à la nouvelle action.  
+
+<!--Available in Microsoft Edge version 87 and later.  -->
+
+### Activer les calques composites dans l’affichage 3D
+
+Il est possible que vous souhaitiez visualiser des couches en plus des index z et du modèle d’objet document (DOM).  Cette fonctionnalité vous permet de déboguer sans basculer entre les contextes.  Vous avez identifié que le changement de contexte de réduction était un point essentiel.  Il n’est pas toujours évident de savoir comment le code que vous écrivez affecte votre application Web.  Pour une interface de débogage complète, l’affichage 3D et les couches composites sont désormais combinés.  Après avoir activé l’expérience, assurez-vous de redémarrer l’DevTools.  Pour utiliser des **couches composites**, procédez comme suit.  
+
+<!--1.  Navigate to a PWA-enabled website such as `twitter.com`.  
+1.  Choose the **Install ...** \(![Install PWA icon](./media/install-pwa-icon.msft.png)\) icon to install the Twitter PWA.  If it is already set up, open the app as usual.  
+1.  Open the Devtools.  -->  
+1.  Sur le tiroir, sélectionnez l’outil **affichage 3D** .  
+1.  Ouvrez le volet **couches composites** .  
+1.  Toutes les couches peintes de l’application sont affichées.  Essayez cette fonctionnalité avec vos propres applications Web.  
+
+:::image type="complex" source="./media/experiments-layers.msft.png" alt-text="Volet couches composites" lightbox="./media/experiments-layers.msft.png":::
+   Volet **couches composites**  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 87 and later.  -->  
 
 ## Fonctionnalités expérimentales antérieures  
 
@@ -270,7 +290,7 @@ Pour transmettre des commentaires sur les expériences DevTools Microsoft Edge, 
 *   Envoyez vos commentaires à l’aide de l’icône **Envoyer des commentaires** dans le devtools  
 *   Tweeter sur [@EdgeDevTools][TwitterEdgedevtools]  
 
-:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="Liste des expériences dans les paramètres de DevTools" lightbox="./media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="Icône Envoyer des commentaires dans Microsoft Edge DevTools" lightbox="./media/bing-devtools-send-feedback.msft.png":::
    Icône **Envoyer des commentaires** dans Microsoft Edge devtools  
 :::image-end:::  
 
