@@ -2,16 +2,16 @@
 description: Déplacer des utilisateurs vers Microsoft Edge à partir d’Internet Explorer
 title: Déplacer des utilisateurs vers Microsoft Edge à partir d’Internet Explorer
 author: MSEdgeTeam
-ms.date: 11/04/2020
+ms.date: 11/06/2020
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, compatibilité, plateforme Web, Internet Explorer
-ms.openlocfilehash: 48f0f4121fb444d80603dcbb408397679c64753d
-ms.sourcegitcommit: 7b4441b7656c8317139650f904b70cc87797d37e
+ms.openlocfilehash: 2e1488359e405247e290ad8f6300c480a7e20af6
+ms.sourcegitcommit: 6ef48c8cda392c6bf8217cff5f696ac620d10739
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "11154330"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163210"
 ---
 # Déplacer des utilisateurs vers Microsoft Edge à partir d’Internet Explorer 
 
@@ -20,8 +20,7 @@ De nombreux sites Web modernes possèdent des conceptions incompatibles avec Int
 Cet article décrit les concepts suivants.  
 
 *   Interface utilisateur pour la redirection  
-*   Comment ajouter votre site Web à la liste de compatibilité d’Internet Explorer  
-*   Suppression de votre site Web de la liste de compatibilité d’Internet Explorer  
+*   Comment demander une mise à jour à la liste  
     
 ## Pourquoi un site Web est-il ajouté à la liste de compatibilité Internet?  
 
@@ -42,9 +41,10 @@ Envoyez les informations suivantes à [ietoedge@microsoft.com][MailtoMicrosoftIe
 *   Nom de la société  
 *   Adresse postale  
 *   Adresse du site Web  
-<!--  *   Telephone number  -->  
-<!--  *   Target platform \(desktop, phone, Xbox\)  -->  
     
+> [!NOTE]
+> La liste de compatibilité d’Internet Explorer est conçue pour fonctionner uniquement avec des sites publics.  
+
 <!-- links -->  
 
 [MailtoMicrosoftIetoedge]: mailto:ietoedge@microsoft.com "Envoyer un e-mail à ietoedge@microsoft.com"  

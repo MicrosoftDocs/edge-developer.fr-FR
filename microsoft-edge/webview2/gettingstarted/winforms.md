@@ -3,17 +3,17 @@ description: Guide de mise en route de WebView2 pour les applications WinForms
 title: Mise en route de WebView2 pour les applications WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/15/2020
+ms.date: 11/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinForms applications, WinForms, Edge, CoreWebView2, contrôle de navigateur, html Edge, mise en route, mise en route, .NET, Windows Forms
-ms.openlocfilehash: 90d25816b862d6096856faf439436706c98f7dbe
-ms.sourcegitcommit: 442de63da52d00c6dc27fa08ccdb736534127566
+ms.openlocfilehash: c4092c545c24bf09667a5090251b51b96259efc2
+ms.sourcegitcommit: a59464aff9e2c0bf57d172afbacdeed2c1a3ea42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "11120087"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162642"
 ---
 # Mise en route de WebView2 dans Windows Forms (Preview)  
 
@@ -23,11 +23,11 @@ Dans cet article, vous allez commencer à créer votre première application Web
 
 Vérifiez que vous avez installé la liste des conditions préalables suivantes avant de continuer:  
 
-* [Canal Canaries Microsoft Edge (chrome)](https://www.microsoftedgeinsider.com/download) installé sur Windows 10, Windows 8,1 ou Windows 7. 
+* [WebView2 Runtime][Webview2Installer] ou un canal de l’alphabet [Microsoft Edge (chrome) non stable](https://www.microsoftedgeinsider.com/download) installé sur windows 10, Windows 8,1 ou Windows 7. 
 * [Visual Studio](https://visualstudio.microsoft.com) 2017 ou version ultérieure.
 
 > [!NOTE]
-> WebView2 ne prend actuellement pas en charge le concepteur de .NET Core 3.0 [(Preview)](https://visualstudio.microsoft.com/vs/preview).
+> WebView2 ne prend actuellement pas en charge les concepteurs principaux de .NET 5 et .NET.
 
 ## Étape 1: créer une application de fenêtre unique
 
@@ -72,17 +72,17 @@ Ensuite, ajoutez un WebView à votre application.
 1. Ouvrez le **Concepteur Windows Forms**.  
 1. Recherchez **WebView2** dans la **boîte à outils**. Faites glisser et déposez le contrôle **WebView2** dans l’application Windows Forms.
     
-    :::image type="complex" source="./media/winforms-toolbox.png" alt-text="Gérer les packages NuGet":::
+    :::image type="complex" source="./media/winforms-toolbox.png" alt-text="Boîte à outils affichant WebView2":::
        Boîte à outils affichant WebView2 :::image-end:::  
 
 1. Remplacez la `Name` propriété par `webView` .
     
-    :::image type="complex" source="./media/winforms-properties.png" alt-text="Gérer les packages NuGet":::
+    :::image type="complex" source="./media/winforms-properties.png" alt-text="Propriétés du contrôle WebView2":::
        Propriétés du contrôle WebView2 :::image-end:::
 
 1. La `Source` propriété définit l’URI initial affiché dans le contrôle WebView2. Définissez la propriété source sur <https://www.microsoft.com>
     
-    :::image type="complex" source="./media/winforms-source.png" alt-text="Gérer les packages NuGet":::
+    :::image type="complex" source="./media/winforms-source.png" alt-text="Propriété source du contrôle WebView2":::
        Propriété source du contrôle WebView2 :::image-end:::
 
 Sélectionnez `F5` pour générer et exécuter votre projet.  Vérifiez que votre contrôle WebView2 s’affiche [https://www.microsoft.com](https://www.microsoft.com) .
@@ -166,7 +166,7 @@ L’application qui héberge les contrôles WebView2 écoute les événements su
 
 Pour plus d’informations, voir [événements de navigation](../concepts/navigation-events.md).  
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="Gérer les packages NuGet":::
+:::image type="complex" source="../media/navigation-events.png" alt-text="Événements de navigation":::
    Événements de navigation
 :::image-end:::
 
@@ -306,3 +306,8 @@ Félicitations, vous avez créé votre première application WebView2.
 ## Contacter l’équipe WebView de Microsoft Edge  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+
+
+<!-- links -->  
+
+[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "Programme d’installation de WebView2" 
