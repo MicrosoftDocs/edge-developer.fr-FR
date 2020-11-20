@@ -7,12 +7,12 @@ ms.date: 05/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, code vs, code Visual Studio, débogueur
-ms.openlocfilehash: 58bcbc927505f4c5a1f493349c3e9475cb75e1be
-ms.sourcegitcommit: c1b5fdd48d39d874a76c9b8f68309eb1b507fd0b
+ms.openlocfilehash: d9f33a17db7083a6a7cbb013dbf9886755f92c5e
+ms.sourcegitcommit: 56cb5821d1b8e96f55bfa14a4ce87a3845b009c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "10695865"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182300"
 ---
 # Débogueur pour l’extension de code Microsoft Edge VS  
 
@@ -47,7 +47,7 @@ Si vous appuyez `F5` une nouvelle fois sur Windows ou MacOS ou sélectionnez le 
 
 ### Microsoft Edge (Chromium)  
 
-Si vous voulez lancer Microsoft Edge \ (chrome \), la nouvelle version de Microsoft Edge, au lieu de Microsoft Edge \ (EdgeHTML), vous devez simplement ajouter un `version` attribut à votre configuration existante avec la version de Microsoft Edge \ (chrome \) que vous voulez lancer \ ( `dev` , `beta` ou `canary` \). La configuration suivante suivante lance la version Canaries de Microsoft Edge \ (chrome \).  
+Si vous voulez lancer Microsoft Edge \ (chrome \), la nouvelle version de Microsoft Edge, au lieu de Microsoft Edge \ (EdgeHTML \), il vous suffit d’ajouter un `version` attribut à votre configuration existante avec la version de Microsoft Edge \ (chrome \) que vous voulez lancer \ ( `stable` , `dev` , `beta` ou `canary` \). La configuration suivante suivante lance la version Canaries de Microsoft Edge \ (chrome \).  
 
 ```json
 {
@@ -91,7 +91,7 @@ Pour vous aider à améliorer les éléments de l’extension du code Microsoft 
 <!-- image links -->  
 
 <!--[ImageGifDebuggerEdge]: ./media/debugger-for-edge.gif "Debugger for Edge VS Code extension in action"  -->  
-[ImagePngDebuggerEdge]:./Media/Debugger-for-Edge.png "débogueur pour l’extension de code Edge et VS en action"  
+[ImagePngDebuggerEdge]:./Media/debugger-for-edge.png "débogueur pour l’extension du code Edge VS en action"  
 
 <!--links -->  
 
