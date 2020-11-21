@@ -3,21 +3,21 @@ description: En savoir plus sur les nouveautés à venir pour WebView2
 title: Introduction à la WebView 2 de Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge
-ms.openlocfilehash: 52a2f6d9ef3447955554a5507c3eaab39e6b6a9e
-ms.sourcegitcommit: af91bfc3e6d8afc51f0fbbc0fe392262f424225c
+ms.openlocfilehash: 99e743db0c1fb17ea46405b08e1ed074a3386068
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "11120367"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182359"
 ---
 # Introduction à Microsoft Edge WebView2  
 
-##### Dernière mise à jour: 2020 Oct  
+##### Dernière mise à jour: 2020 novembre  
 
 Le contrôle WebView2 permet aux développeurs d’incorporer des technologies Web dans leurs applications natives.  La page suivante présente la procédure prospective pour WebView2.  
 
@@ -61,7 +61,7 @@ Le [modèle de distribution persistant][ConceptDistributionEvergreenModel] vous 
 
 ## Version corrigée  
 
-Le [modèle de distribution de version fixe][ConceptsDistributionFixedVersionModel] vous permet d’empaqueter les fichiers binaires Microsoft Edge dans votre application native.  Ce service est actuellement disponible en préversion et destiné à la disponibilité du 4e trimestre 2020.  
+Le [modèle de distribution de version fixe][ConceptsDistributionFixedVersionModel] vous permet d’empaqueter les fichiers binaires Microsoft Edge dans votre application native.  La version fixe a atteint une disponibilité générale (GA).  
 
 ## Disponibilité générale  
 
@@ -71,7 +71,7 @@ Le kit de développement logiciel (SDK) Win32 C/C++ a atteint la disponibilité.
 
 ### .NET  
 
-Le kit de développement logiciel (SDK) .NET englobe le SDK C/C++ Win32.  Le kit de développement logiciel (SDK) .NET est censé se produire sous la version de Win32 C/C++ GA du 4e trimestre 2020.  
+Le kit de développement logiciel (SDK) .NET a atteint la disponibilité. 
 
 ### WinUI 3.0  
 

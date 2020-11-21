@@ -3,21 +3,21 @@ description: Guide de mise en route de WebView2 pour les applications WinForms
 title: Mise en route de WebView2 pour les applications WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/10/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, WebView2, WebView, WebView, WinForms applications, WinForms, Edge, CoreWebView2, contrôle de navigateur, html Edge, mise en route, mise en route, .NET, Windows Forms
-ms.openlocfilehash: c4092c545c24bf09667a5090251b51b96259efc2
-ms.sourcegitcommit: a59464aff9e2c0bf57d172afbacdeed2c1a3ea42
+ms.openlocfilehash: f4768c38f293d1931e625136ea7068a61176541e
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162642"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182387"
 ---
-# Mise en route de WebView2 dans Windows Forms (Preview)  
+# Mise en route de WebView2 dans Windows Forms
 
-Dans cet article, vous allez commencer à créer votre première application WebView2 et à découvrir les principales fonctionnalités de [WebView2 (Preview)](/microsoft-edge/webview2/index).  Pour plus d’informations sur les API individuelles, voir informations de référence sur les [API](/dotnet/api/microsoft.web.webview2.winforms).  
+Dans cet article, vous allez commencer à créer votre première application WebView2 et à découvrir les principales fonctionnalités de [WebView2](/microsoft-edge/webview2/index).  Pour plus d’informations sur les API individuelles, voir informations de référence sur les [API](/dotnet/api/microsoft.web.webview2.winforms).  
 
 ## Conditions préalables  
 
@@ -47,7 +47,7 @@ Utiliser un projet de bureau de base contenant une seule fenêtre principale.
 
 ## Étape 2: installer le SDK WebView2
 
-Ajoutez ensuite le kit de développement logiciel (SDK) WebView2 au projet.  Pour obtenir un aperçu, installez le kit de développement logiciel (SDK) WebView2 avec NuGet.  
+Ensuite, ajoutez le kit de développement logiciel (SDK) WebView2 au projet en utilisant NuGet.
 
 1. Ouvrez le menu contextuel du projet \ (cliquez avec le bouton droit sur \) et sélectionnez **gérer les packages NuGet...**.  
 
@@ -56,12 +56,9 @@ Ajoutez ensuite le kit de développement logiciel (SDK) WebView2 au projet.  Pou
 
 1. Entrez `Microsoft.Web.WebView2` dans la barre de recherche.  Pour cela, sélectionnez **Microsoft. Web. WebView2** dans les résultats de recherche.  
 
-    > [!IMPORTANT]
-    > Assurez-vous que la case à cocher inclure la version **préliminaire**, sélectionnez un package de version préliminaire dans **version**, puis sélectionnez **installer**.  
-
     ![NuGet](./media/installnuget.png)
 
-Vous êtes prêt à commencer à développer des applications à l’aide de l’API WebView2.  Sélectionnez `F5` pour générer et exécuter le projet.  Le projet en cours d’exécution affiche une fenêtre vide.  
+Pour commencer à développer des applications à l’aide de l’API WebView2, vous avez terminé.  Sélectionnez `F5` pour générer et exécuter le projet.  Le projet en cours d’exécution affiche une fenêtre vide.  
 
 ![emptyApp](./media/winforms-emptyApp.png)
 
@@ -96,11 +93,11 @@ Sélectionnez `F5` pour générer et exécuter votre projet.  Vérifiez que votr
 
 Ajoutez quelques contrôles supplémentaires à vos formulaires Windows à partir de la boîte à outils, puis gérez les événements de redimensionnement de fenêtre de manière appropriée.
 
-1. Dans le **Concepteur Windows Forms** , ouvrez la **boîte à outils**
+1. Dans le **Concepteur Windows Forms**, ouvrez la **boîte à outils**
 1. Faites glisser et déposez un **contrôle TextBox** dans l’application Windows Forms. Nommez le **contrôle TextBox** `addressBar` dans l' **onglet Propriétés**.
 1. Faites glisser et déposez un **bouton** dans l’application Windows Forms. Modifiez le texte du **bouton** `Go!` et nommez-le **Button** `goButton` dans l' **onglet Propriétés**.
 
-    Dans le concepteur, l’application doit ressembler à ce qui suit:
+    L’application doit ressembler à l’image suivante dans le concepteur.
     
     ![concepteur](./media/winforms-designer.png)
 
@@ -147,7 +144,7 @@ Ajoutez la possibilité d’autoriser les utilisateurs à modifier l’URL d’a
     }
     ```  
 
-Sélectionnez `F5` pour générer et exécuter votre projet.  Entrez une nouvelle URL dans la barre d’adresses, puis cliquez sur **atteindre**.  Par exemple, entrez `https://www.bing.com` .  Vérifiez que le contrôle WebView2 accède à l’URL.  
+Sélectionnez `F5` pour générer et exécuter votre projet.  Entrez une nouvelle URL dans la barre d’adresses, puis sélectionnez **atteindre**.  Par exemple, entrez `https://www.bing.com` .  Vérifiez que le contrôle WebView2 accède à l’URL.  
 
 > [!NOTE]
 > Vérifiez qu’une URL complète est entrée dans la barre d’adresses. `ArgumentException`A est levé si l’URL ne commence pas par `http://` ou `https://`
@@ -156,7 +153,7 @@ Sélectionnez `F5` pour générer et exécuter votre projet.  Entrez une nouvell
 
 ## Étape 6: événements de navigation  
 
-L’application qui héberge les contrôles WebView2 écoute les événements suivants qui sont déclenchés par le contrôle WebView2 lors de la navigation dans les pages Web.  
+Lors de la navigation de la page Web, le contrôle WebView2 déclenche des événements. L’application qui héberge les contrôles WebView2 écoute les événements suivants.  
 
 * `NavigationStarting`  
 * `SourceChanged`  
@@ -176,9 +173,9 @@ Lorsqu’une erreur se produit, les événements suivants sont déclenchés et p
 * `ContentLoading`  
 * `HistoryChanged`  
 
-S’il existe une redirection HTTP, il existe plusieurs `NavigationStarting` événements.  
+Lorsqu’il existe une redirection HTTP, il existe plusieurs `NavigationStarting` événements.  
 
-Pour illustrer l’utilisation de ces événements, commencez par enregistrer un gestionnaire pour `NavigationStarting` cela annule toutes les demandes qui n’utilisent pas HTTPS.  
+Pour illustrer l’utilisation de ces événements, commencez par enregistrer un gestionnaire pour `NavigationStarting` Annuler toutes les demandes qui n’utilisent pas HTTPS.  
 
 Dans `Form1.cs` , modifiez le constructeur comme illustré ci-dessous, puis ajoutez la `EnsureHttps` fonction.  
 
@@ -207,7 +204,7 @@ Sélectionnez `F5` pour générer et exécuter votre projet. Confirmez que lorsq
 
 ## Étape 7: création de scripts  
 
-Vous pouvez utiliser des applications hôtes pour injecter du code JavaScript dans les contrôles WebView2 lors de l’exécution.  Le JavaScript injecté s’applique à tous les nouveaux documents de niveau supérieur ainsi qu’à toute image enfant jusqu’à ce que le JavaScript soit supprimé.  Le JavaScript injecté est exécuté après la création de l’objet global et avant l’exécution de tout autre script inclus dans le document HTML.  
+Vous pouvez utiliser des applications hôtes pour injecter du code JavaScript dans les contrôles WebView2 lors de l’exécution.  Le JavaScript injecté s’applique à tous les nouveaux documents de niveau supérieur ainsi qu’à toute image enfant, jusqu’à ce que le JavaScript soit supprimé.  Le JavaScript injecté est exécuté après la création de l’objet global et avant les scripts inclus dans le document HTML.  
 
 Vous pouvez utiliser les scripts pour alerter l’utilisateur lorsque vous naviguez vers un site non HTTPs.  Modifiez la `EnsureHttps` fonction de telle sorte qu’elle injecte le script dans le contenu Web à l’aide de la méthode [ExecuteScriptAsync]() .  
 
@@ -255,7 +252,7 @@ Dans votre projet, lorsque le contrôle WebView2 navigue vers une URL, il affich
     }
     ```  
 
-1. Une fois **CoreWebView2** initialisé, inscrivez un gestionnaire d’événements pour y répondre `WebMessageReceived` .  Dans `Form1.cs` Update `InitializeAsync` et ajoutez `UpdateAddressBar` à l’aide de l’extrait de code suivant.  
+1. Une fois **CoreWebView2** initialisé, inscrivez un gestionnaire d’événements pour y répondre `WebMessageReceived` .  Dans `Form1.cs` , mettez à jour `InitializeAsync` et ajoutez `UpdateAddressBar` à l’aide de l’extrait de code suivant.  
 
     ```csharp
     async void InitializeAsync()
@@ -298,9 +295,11 @@ Félicitations, vous avez créé votre première application WebView2.
 
 ## Étapes suivantes 
 
-* Extraire le [référentiel Samples WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) pour obtenir un exemple complet de fonctionnalités WebView2's
-* Référence sur l' [API](/dotnet/api/microsoft.web.webview2.winforms.webview2) d’extraction pour plus d’informations sur nos API
-* Extraire une liste de [ressources WebView2](../index.md#next-steps) pour en savoir plus sur WebView2
+Pour continuer à vous familiariser avec WebView2, accédez aux ressources suivantes.
+
+* Le [WebView2Samples référentiel Samples](https://github.com/MicrosoftEdge/WebView2Samples) dispose d’un exemple exhaustif de capacités WebView2's.
+* Les informations de référence sur l' [API](/dotnet/api/microsoft.web.webview2.winforms.webview2) pour obtenir des informations plus détaillées sur nos API.
+* [Ressources WebView2](../index.md#next-steps).
 
 
 ## Contacter l’équipe WebView de Microsoft Edge  

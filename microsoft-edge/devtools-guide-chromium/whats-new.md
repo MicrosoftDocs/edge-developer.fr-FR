@@ -3,20 +3,20 @@ description: Fonctionnalités ajoutées au DevTools Microsoft Edge (chrome) en m
 title: Nouveautés de Microsoft Edge (chrome) DevTools en mars 2019
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: bf1919b0ab46df378880d664dd4e59aee96605e5
-ms.sourcegitcommit: 24430258f363b7dd85f7067afd4565bf102b4a1f
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: 0b592eddbd68b3bbd8ff0a9edf9a1253bd79677e
+ms.sourcegitcommit: acf8ad7cb6c8ecf83a6170f8eeb9bec32878f8ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "10645321"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182511"
 ---
 # Nouveautés de Microsoft Edge (chrome) DevTools
 
-Nous vous remercions tellement d’avoir essayé une version d’évaluation de la prochaine version de Microsoft Edge. Avec cette version, nous avons entrepris une équipe majeure dans la plateforme Web sous-jacente de Microsoft Edge en adoptant le projet open source de chrome. Avec cette modification, il est plus facile de créer et tester vos sites Web dans Microsoft Edge et de veiller à ce que les utilisateurs puissent continuer à travailler comme prévu, même si vos utilisateurs naviguent dans un autre navigateur de chrome, tel que Google Chrome, Vivaldi, Opera ou en 3D.
+Nous vous remercions d’avoir essayé une version d’évaluation du nouveau Microsoft Edge. Avec cette version, nous avons entrepris une équipe majeure dans la plateforme Web sous-jacente de Microsoft Edge en adoptant le projet open source de chrome. Avec cette modification, il est plus facile de créer et tester vos sites Web dans Microsoft Edge et de veiller à ce que les utilisateurs puissent continuer à travailler comme prévu, même si vos utilisateurs naviguent dans un autre navigateur de chrome, tel que Google Chrome, Vivaldi, Opera ou en 3D.
 
 ## Le nouveau Microsoft Edge (chrome) DevTools
 
@@ -24,7 +24,7 @@ Si vous examinez Microsoft Edge et que vous développez essentiellement dans un 
 
 ![DevTools Microsoft Edge (chrome)](./media/devtools.png)
 
-Si vous découvrez la nouvelle version de Microsoft Edge et que vous avez développé le plus souvent dans Microsoft Edge (EdgeHTML), nous avons mis en place des outils formidables pour vous permettre de créer et de tester plus facilement vos sites Web dans Microsoft Edge. Pour en savoir plus sur ces nouveaux outils, consultez [le Guide Microsoft Edge (chrome) devtools](../devtools-guide-chromium.md).
+Si vous découvrez la nouvelle version de Microsoft Edge et que vous avez développé la version de Microsoft Edge (EdgeHTML), nous avons mis en place de nouveaux outils qui vous permettront de créer et tester plus facilement vos sites Web dans Microsoft Edge. Pour en savoir plus sur ces nouveaux outils, consultez [le Guide Microsoft Edge (chrome) devtools](../devtools-guide-chromium.md).
 
 ## Nouveaux thèmes sombres et clairs pour le DevTools
 
@@ -40,7 +40,7 @@ Le [débogueur de l’extension de code Microsoft Edge](https://marketplace.visu
 
 ![Débogueur pour l’extension de code Edge VS](./media/vscode-debugger.png)
 
-Pour lancer Microsoft Edge (chrome) au lieu de Microsoft Edge (EdgeHTML) à partir du code VS, vous devez ajouter un `version` attribut à votre configuration de **lancement. JSON** existante avec la version de Microsoft Edge (chrome) que vous voulez lancer ( `dev` , `beta` ou `canary` ). Voici un exemple de configuration de **Launch. JSON** qui lance la version Canaries de Microsoft Edge (chrome) sur [Bing.com](https://www.bing.com/):
+Pour lancer Microsoft Edge (chrome) au lieu de Microsoft Edge (EdgeHTML) à partir du code VS, vous devez ajouter un `version` attribut à votre **launch.jsexistant sur** la configuration avec la version de Microsoft Edge (chrome) que vous voulez lancer ( `dev` , `beta` ou `canary` ). Voici un exemple ** delaunch.jsde** configuration qui lancera la version Canaries de Microsoft Edge (chrome) sur [Bing.com](https://www.bing.com/):
 
 ```json
 {
@@ -58,7 +58,7 @@ Pour plus d’informations, consultez [la procédure de débogage de Microsoft E
 
 Avec le Shift dans la plateforme Web sous-jacente de Microsoft Edge, le protocole Edge DevTools ne recevra plus aucune mise à jour. Le DevTools de Microsoft Edge (chrome) utilise le protocole DevTools chrome ou le protocole CDP. Pour référencer la documentation sur les domaines et méthodes en CDP, consultez [la visionneuse CDP](https://chromedevtools.github.io/devtools-protocol/tot/Accessibility).
 
-Dans la prochaine version de Microsoft Edge, toutes les méthodes qui sont préfixées `ms` ne seront pas prises en charge. Pour en savoir plus sur l’utilisation de la technologie CDP dans Microsoft Edge (chrome), consultez la rubrique [protocole devtools (chrome)](../devtools-protocol-chromium.md).
+Dans le nouveau Microsoft Edge, toutes les méthodes qui sont préfixées ne sont `ms` pas prises en charge. Pour en savoir plus sur l’utilisation de la technologie CDP dans Microsoft Edge (chrome), consultez la rubrique [protocole devtools (chrome)](../devtools-protocol-chromium.md).
 
 ## Problèmes connus
 

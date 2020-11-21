@@ -3,17 +3,17 @@ description: Découvrir les outils de développement Microsoft Edge (chrome)
 title: Outils de développement Microsoft Edge (chrome)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/22/2020
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 9f035df5bc80aa6a1df0464eb326e4185e2205d2
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: ffc31dad9e641adfb9f1ae0b5b88b29192ea4152
+ms.sourcegitcommit: acf8ad7cb6c8ecf83a6170f8eeb9bec32878f8ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11133903"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "11182497"
 ---
 # Outils de développement Microsoft Edge (chrome)  
 
@@ -23,11 +23,11 @@ Dans la mesure où le Web s’est passé dans une utilisation importante de type
 
 Si vous examinez Microsoft Edge et que vous développez essentiellement dans un navigateur en chrome, il est préférable de vous sentir à la maison.  Les outils de développement Microsoft Edge \ (chrome \) fonctionnent de la même manière que les outils de développement que vous connaissez et utilisez déjà.  Pour plus d’informations, reportez-vous à [la section nouveautés de Microsoft Edge (chrome) devtools][DevtoolsGuideChromiumWhatsNewIndex].  
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="DevTools Microsoft Edge (chrome)":::
+:::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="DevTools Microsoft Edge (chrome)" lightbox="./devtools-guide-chromium/media/devtools.png":::
    DevTools Microsoft Edge (chrome)  
 :::image-end:::  
 
-Si vous découvrez la nouvelle version de Microsoft Edge et que vous avez déjà développés dans Microsoft Edge \ (EdgeHTML), vous disposez maintenant de nouveaux outils très pratiques qui vous permettent de créer et tester plus facilement vos sites Web dans Microsoft Edge.  
+Si vous consultez la nouvelle version de Microsoft Edge et que vous avez déjà développé dans Microsoft Edge \ (EdgeHTML \), vous disposez maintenant de nouveaux outils très pratiques qui vous permettent de créer et tester plus facilement vos sites Web dans Microsoft Edge.  
 
 ## Ouvrir le DevTools  
 
@@ -51,7 +51,7 @@ Si vous voulez afficher les journaux de votre code JavaScript frontal ou exécut
 
 ## Outils principaux  
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="DevTools Microsoft Edge (chrome)":::
+:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Outils principaux de Microsoft Edge (chrome) DevTools" lightbox="./devtools-guide-chromium/media/devtools-core-tools.png":::
    Outils principaux de Microsoft Edge (chrome) DevTools  
 :::image-end::: 
 
@@ -80,7 +80,7 @@ Vous pouvez avoir utilisé les extensions de DevTools pour diagnostiquer et déb
 
 Vous pouvez également ajouter des extensions à partir du [Web Store chrome][GoogleChromeWebstoreExtensions].  
 
-:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="DevTools Microsoft Edge (chrome)":::
+:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Magasin Web chrome dans Microsoft Edge" lightbox="./devtools-guide-chromium/media/allow-extensions-from-stores.png":::
    Magasin Web chrome dans Microsoft Edge  
 :::image-end:::  
 
@@ -91,4 +91,60 @@ Dans la partie supérieure, sélectionnez **autoriser les extensions d’autres 
 
 Sélectionnez **Ajouter au chrome** pour ajouter votre extension devtools à Microsoft Edge.  
 
-:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="DevTools Microsoft Edge (chrome)"  
+:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Ajout d’une extension du Web Store chrome à Microsoft Edge" lightbox="./devtools-guide-chromium/media/install-extension-from-chrome-store.png":::
+   Ajout d’une extension du Web Store chrome à Microsoft Edge  
+:::image-end:::  
+
+## Raccourcis  
+
+Ces raccourcis contrôlent la fenêtre principale de DevTools, travaillent sur tous les outils, ou les deux.  
+
+| Action | Windows/Linux | macOS |  
+|:--- |:--- | :--- |  
+| Afficher/masquer DevTools \ (s’ouvre sur le panneau dernier affichage\) | `F12` ou `Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
+| Afficher le panneau de la console | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
+| Afficher le DevTools dans le **mode inspecter l’élément** , qui vous permet de sélectionner un élément sur le site et de voir les balises HTML et CSS dans le panneau **éléments** | `Ctrl`+`Shift`+`C` | `Command`+`Option`+`C` |  
+| Afficher les paramètres | `?` ou `Fn`+`F1` | `?` ou `Fn`+`F1` |  
+| Afficher le panneau suivant | `Ctrl`+`]` | `Command`+`]` |  
+| Afficher le panneau précédent | `Ctrl`+`[` | `Command`+`[` |  
+| Ancrez le DevTools à la dernière position utilisée.  Si la DevTools reste dans la position par défaut de la session entière, ce raccourci détache DevTools dans une fenêtre séparée | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
+| Activer/désactiver le **mode périphérique** | `Ctrl`+`Shift`+`M` | `Command`+`Shift`+`M` |  
+| Activez/désactivez l’option **inspecter l’élément** , ce qui vous permet de sélectionner un élément sur le site et de voir les balises HTML et CSS dans le panneau **éléments** . | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
+| Afficher le menu de commandes | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
+| Afficher/masquer le tiroir | `Esc` | `Esc` |  
+| Mise.  Cette opération actualise la page à l’aide du cache.  | `F5` ou `Ctrl`+`R` | `Command`+`R` |  
+| Actualisation matérielle.  Cela force Microsoft Edge à télécharger de nouveau les ressources et à les recharger.  Il est possible que les ressources utilisées peuvent provenir d’une version mise en cache | `Ctrl`+`F5` ou `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
+| Rechercher du texte dans le panneau actuel.  Non pris en charge dans les panneaux d’audit, d’application et de sécurité | `Ctrl`+`F` | `Command`+`F` |  
+| Afficher le volet de recherche dans le tiroir pour vous permettre de rechercher du texte sur toutes les ressources chargées | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |  
+| Ouvrir un fichier dans le volet sources | `Ctrl`+`O` ou `Ctrl`+`P` | `Command`+`O` ou `Command`+`P` |  
+| Effectuer un zoom avant | `Ctrl`+`Shift`+`+` | `Command`+`Shift`+`+` |  
+| Zoom arrière | `Ctrl`+`-` | `Command`+`-` |  
+| Restaurer le niveau de zoom par défaut | `Ctrl`+`0` | `Command`+`0` |  
+| Exécution d’un extrait | `Ctrl`+`O`ou `Ctrl` + `P` tapez `!` suivi du nom du script, puis appuyez sur `Enter` | Appuyez `Command` + `O` ou `Command` + `P` tapez `!` suivi du nom du script, puis appuyez sur `Enter` |  
+| Afficher le code source HTML non modifiable dans un nouvel onglet | `Ctrl`+`U` | Non applicable |  
+
+> [!NOTE]
+> S’il s’agit d’un débogage et interrompu à un point d’arrêt, le raccourci d' **actualisation** reprend d’abord le Runtime.  
+
+## Voir également  
+
+*   [DevTools pour les débutants: commencez à utiliser HTML et au DOM][DevtoolsGuideChromiumBeginnersHtml]  
+*   [Protocole DevTools Microsoft Edge (chrome)][DevtoolsProtocolChromiumIndex]  
+
+## Contacter l’équipe DevTools MicrosoftEdge  
+
+[!INCLUDE [contact DevTools team note](./devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
+
+Pour afficher un aperçu des fonctionnalités les plus récentes qui s’affichent [sur le devtools][DevtoolsGuideChromiumWhatsNewIndex], téléchargez le [Canaries Microsoft Edge][MicrosoftedgeinsiderDownload], qui se développe de façon nocturne.  
+
+<!-- links -->  
+
+[DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools pour les débutants: prenez en main HTML et le DOM | Documents Microsoft"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools "Nouveautés de Microsoft Edge (chrome) DevTools | Documents Microsoft"  
+[DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Protocole DevTools Microsoft Edge (chrome) | Documents Microsoft"  
+
+[MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Modules complémentaires Microsoft Edge"  
+
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Télécharger les canaux Microsoft Edge Insider"  
+
+[GoogleChromeWebstoreExtensions]: https://chrome.google.com/webstore/category/extensions "Extensions | Magasin Web chrome"  

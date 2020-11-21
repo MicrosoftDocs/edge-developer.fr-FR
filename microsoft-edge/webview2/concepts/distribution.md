@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge
-ms.openlocfilehash: 89e53c43c3550d0a7a3707381cc4c76be111db28
-ms.sourcegitcommit: 56cb5821d1b8e96f55bfa14a4ce87a3845b009c3
+ms.openlocfilehash: cbe3fb35bdf64a3627256028940cf868b8b185c2
+ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182288"
+ms.locfileid: "11182408"
 ---
 # Distribution d’applications à l’aide de WebView2  
 
@@ -125,14 +125,12 @@ Le Web évolue constamment.  Le runtime WebView2 persistant est mis à jour de m
 
 Les canaux Microsoft Edge non stables \ (bêta/dev/Canaries \) offrent un aperçu de ce qui se passe dans WebView2 Runtime.  Tout comme le développement de sites Web pour Microsoft Edge, nous vous conseillons de tester régulièrement votre application WebView2.  Testez votre application WebView2 sur l’un des canaux non stables et mettez à jour votre application ou [signalez des problèmes][GithubMicrosoftedgeWebviewfeedback] en cas de problème. En règle générale, le développement et la version bêta sont les canaux recommandés.  Pour vous aider à déterminer le canal qui vous convient, accédez à [vue d’ensemble des canaux Microsoft Edge][DeployEdgeMicrosoftEdgeChannels].  Vous pouvez télécharger le [canal Microsoft Edge non stable][DownloadNonstableEdge] sur votre environnement de test et utiliser des `regkey` variables d’environnement pour indiquer les préférences de canal de votre application de test.  Pour plus d’informations, accédez à [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions].  Vous pouvez également utiliser [WebDriver][HowtoWebdriver] pour automatiser les tests WebView2.
 
-## Mode de distribution de version fixe  
-
-> [!NOTE]
-> Le mode de distribution de la version fixe est en version publique preview.  
-
-Le mode de distribution de la version fixe a été auparavant appelé «vous-même».  
+## Mode de distribution de version fixe   
 
 Pour les environnements restreints ayant des exigences de compatibilité strictes, envisagez d’utiliser le mode de distribution de version fixe.  Choisissez et Empaquetez une version spécifique du runtime WebView2 à l’aide du mode de distribution de version fixe.  Vous pouvez spécifier le minutage des mises à jour de l’exécution de votre application.  Le mode de distribution de la version fixe ne reçoit pas de mises à jour automatiques. Envisagez de mettre à jour votre application et le Runtime.  
+
+> [!NOTE] 
+> Le mode de distribution de la version fixe a été auparavant appelé vous-même.  
 
 Pour utiliser le mode de version fixe, effectuez les actions suivantes:
 
