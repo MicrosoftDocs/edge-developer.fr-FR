@@ -3,17 +3,17 @@ description: Options de distribution lors de la publication d’une application 
 title: Distribution des applications WebView2 Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
+ms.date: 11/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge
-ms.openlocfilehash: cbe3fb35bdf64a3627256028940cf868b8b185c2
-ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
+ms.openlocfilehash: 0cbaaeade03feac766647c55bb5edabfe8e8456e
+ms.sourcegitcommit: 7b16c3e6eb458e0b2458279c2498597fb227bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182408"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "11182908"
 ---
 # Distribution d’applications à l’aide de WebView2  
 
@@ -58,7 +58,7 @@ Une seule installation de l’exécutable WebView2 persistant est nécessaire po
     
 Pour le moment, le programme d’amorçage et le programme d’installation autonome prennent uniquement en charge les installations par ordinateur qui nécessitent une élévation.  Si un programme d’installation est exécuté sans élévation, l’utilisateur est invité à élever ses autorisations.  
 
-Utilisez les flux de travail suivants pour vérifier que le runtime est déjà installé avant le lancement de l’application.  Vous pouvez ajuster votre flux de travail en fonction de votre scénario.  Un exemple de code est disponible dans le [Samples référentiel Samples] [GitHubMicrosoftedgeWebView2samplesWebview2Deployment].  
+Utilisez les flux de travail suivants pour vérifier que le runtime est déjà installé avant le lancement de l’application.  Vous pouvez ajuster votre flux de travail en fonction de votre scénario.  Un exemple de code est disponible dans le [référentiel samples d’exemples][GitHubMicrosoftedgeWebView2samplesWebview2Deployment].  
 
 #### Déploiement en ligne uniquement  
 
@@ -195,6 +195,6 @@ Comparé à l’exécution persistantes, la version corrigée n’a pas de proce
 
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "Commentaires sur le WebView | GitHub"  
 
-[GitHubMicrosoftMicrosoftEdgeWebView2SamplesWebview2Deployment]: https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment "Déploiement de WebView2-MicrosoftEdge/WebView2Samples | GitHub"  
+[GitHubMicrosoftEdgeWebView2SamplesWebview2Deployment]: https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment "Déploiement de WebView2-MicrosoftEdge/WebView2Samples | GitHub"  
 
 [MicrosoftPlayReady]: https://www.microsoft.com/playready "Microsoft PlayReady"  
