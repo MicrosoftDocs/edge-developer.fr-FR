@@ -3,17 +3,17 @@ description: Notes de publication du SDK Microsoft Edge WebView2
 title: Notes de publication de Microsoft Edge WebView2 pour Win32, WPF et WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/23/2020
+ms.date: 11/24/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Controller, contrôle de navigateur, html Edge
-ms.openlocfilehash: f0be7602bd5fe5cf8ede5158b12cb0b957247c20
-ms.sourcegitcommit: 2d2cef9046f85ae731f8aa80b565546fcfe72e90
+ms.openlocfilehash: f0ddcbfe2d72c1285e6d4a42c3cb796b93495c55
+ms.sourcegitcommit: 652c345b46aae8b7e3723eb55a01b71a4ef76bf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "11182841"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "11191442"
 ---
 # Notes de publication pour WebView2 SDK  
 
@@ -26,7 +26,7 @@ L’équipe WebView2 met à jour le [SDK WebView2][NuGetGallery] sur une cadence
 
 Date de publication: 23 novembre 2020  
 
-[Package NuGet][NuGetGallery1.0.707-prerelease] \ | version de Microsoft Edge 89.0.707.0 minimum.  
+[Package NuGet][NuGetGallery1.0.707-prerelease] \ | version de Microsoft Edge 86.0.616.0 minimum.  
 
 #### Général  
 
@@ -51,8 +51,9 @@ Date de publication: 23 novembre 2020
 
 ###### Fonctionnalités  
 
-* Activez le concepteur WinForms dans .NET Core 3.1 + et .NET 5.  
-* Amélioration de la gestion des cookies .NET.  \ ([\ #611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
+*   Activez le concepteur WinForms dans .NET Core 3.1 + et .NET 5.  
+*   Amélioration de la gestion des cookies .NET.  \ ([\ #611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
+*   Renommé `CoreWebView2Ready` [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs].
 
 ###### Correction de bogues
 
@@ -64,7 +65,7 @@ Date de publication: 23 novembre 2020
 
 Date de publication: 20 novembre 2020  
 
-[Package NuGet][NuGetGallery1.0.664.37] \ | version d’WebView2 Runtime minimum 86.0.664.37.  
+[Package NuGet][NuGetGallery1.0.664.37] \ | version d’WebView2 Runtime minimum 86.0.616.0.  
 
 #### Général  
 
@@ -467,6 +468,8 @@ Version préliminaire du développeur
 [DotnetApiMicrosoftWebWebview2WpfWebview2Destroywindowcore]: /dotnet/api/microsoft.web.webview2.wpf.webview2.destroywindowcore "Méthode WebView2. DestroyWindowCore (HandleRef) (Microsoft. Web. WebView2. WPF) | Documents Microsoft"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2Acceleratorkeypressed]: /dotnet/api/microsoft.web.webview2.wpf.webview2.acceleratorkeypressed "Microsoft. Web. webview2. WPF. webview2. acceleratorkeypressed | Documents Microsoft"  
+
+[DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs]: /dotnet/api/microsoft.web.webview2.core.corewebview2initializationcompletedeventargs "Classe CoreWebView2InitializationCompletedEventArgs | Documents Microsoft"  
 
 [ReferenceWin32Icorewebview2Addhostobjecttoscript09538]: /microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript?view=webview2-0.9.538&preserve-view=true "AddHostObjectToScript-interface ICoreWebView2 | Documents Microsoft"  
 [ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived09538]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-0.9.538-prerelease&preserve-view=true#add_webresourceresponsereceived "add_WebResourceResponseReceived-interface ICoreWebView2Experimental | Documents Microsoft"  

@@ -7,12 +7,12 @@ ms.date: 10/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 0e4b1972918797d69e2068236f6d1336c54cc858
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: b972468ad21f3a64985a00aecbe29836032b3334
+ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134009"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "11190004"
 ---
 # Nouveautés de DevTools (Microsoft Edge 87)  
 
@@ -41,14 +41,14 @@ DevTools prend désormais en charge le déplacement d’outils entre les volets 
    :::column span="":::
       Pour déplacer un outil du haut vers le bas, pointez sur un onglet, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez **déplacer vers le bas**.  
       
-      :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
+      :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Déplacer vers le bas" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
          Déplacer vers le bas  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       Pour déplacer n’importe quel outil inférieur vers le haut, pointez sur un onglet, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez **déplacer vers le haut**.  
       
-      :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/move-to-top.msft.png":::
+      :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="Déplacer vers le haut" lightbox="../../media/2020/10/move-to-top.msft.png":::
          Déplacer vers le haut  
       :::image-end:::  
    :::column-end:::
@@ -56,7 +56,7 @@ DevTools prend désormais en charge le déplacement d’outils entre les volets 
 
 ## Enregistrer et exporter à l’aide de la console réseau  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Outil réseau avec filtres non localisés":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Fonctionnalités expérimentales":::
    Fonctionnalités expérimentales  
 :::image-end:::  
 
@@ -69,12 +69,12 @@ Pour consulter les mises à jour en temps réel de cette fonctionnalité dans le
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
+      :::image type="complex" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="Entrez le nom du nouvel environnement" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
          Entrez le nom du nouvel environnement  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
+      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="Choisir la mise en forme pour le nouvel environnement" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
          Choisir la mise en forme pour le nouvel environnement  
       :::image-end:::  
    :::column-end:::
@@ -82,7 +82,7 @@ Pour consulter les mises à jour en temps réel de cette fonctionnalité dans le
 
 ## Outils de grille CSS améliorés  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Outil réseau avec filtres non localisés":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Fonctionnalités expérimentales":::
    Fonctionnalités expérimentales  
 :::image-end:::  
 
@@ -95,13 +95,13 @@ Microsoft Edge DevTools prend désormais en charge les fonctionnalités suivante
     
 Les fonctionnalités sont activées par défaut.  Pour plus d’informations sur les fonctionnalités, accédez à [grilles CSS][DevtoolsCssGrid].  Pour passer en revue l’historique de cette fonctionnalité dans le projet open-source de chrome, accédez à [#1047356][CR1047356]problème.  Par ailleurs, l’équipe Microsoft Edge DevTools collabore avec la communauté de l’équipe chrome DevTools et la communauté de chrome pour ajouter de nouvelles fonctionnalités d’outils Flexbox à DevTools.  Pour les mises à jour apportées à l’outil Flexbox dans le projet open-source de chrome, accédez à [#1136394][CR1136394]problème.  
 
-:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
+:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Outil disposition avec des grilles" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
    Outil **disposition** avec des grilles  
 :::image-end:::  
 
 ## Personnaliser les raccourcis clavier dans les paramètres  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Outil réseau avec filtres non localisés":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Fonctionnalités expérimentales":::
    Fonctionnalités expérimentales  
 :::image-end:::  
 
@@ -109,7 +109,7 @@ Vous pouvez désormais personnaliser le raccourci clavier pour n’importe quell
 
 Pour activer l’expérience, naviguez jusqu’à [activation des fonctionnalités expérimentales][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] , puis activez la case à cocher en regard de **activer l’éditeur de raccourcis clavier**.  Pour plus d’informations sur la personnalisation et la modification des raccourcis, accédez à [activer la fonctionnalité expérience de l’éditeur de raccourcis clavier][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  Pour consulter les mises à jour en temps réel de cette fonctionnalité dans le projet open-source de chrome, accédez à l' [#174309][CR174309]du problème.  
 
-:::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
+:::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Raccourci personnalisé pour suspendre un script" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    Raccourci personnalisé pour suspendre un script  
 :::image-end:::  
 
@@ -125,12 +125,12 @@ Avec l’extension, lancez Microsoft Edge, connectez-vous à une instance exista
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="Utilisation de l’extension dans la capture d’écran du mode navigateur complet" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
          Utilisation de l’extension dans la capture d’écran du mode navigateur complet  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="Utilisation de l’extension dans la capture d’écran du mode headless" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
          Utilisation de l’extension dans la capture d’écran du mode headless  
       :::image-end:::  
    :::column-end:::
@@ -154,12 +154,12 @@ Vous pouvez émuler les authentificateurs et déboguer l' [API d’authentificat
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
+      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="Ouvrir l’outil webauthn" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
          Ouvrir l’outil **Webauthn**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
+      :::image type="complex" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="Outil webauthn" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
          Outil **Webauthn**  
       :::image-end:::  
    :::column-end:::
@@ -173,12 +173,12 @@ Activer/désactiver le volet **calculé** dans le volet **styles**  Le volet **c
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Ouvrir le volet de barre latérale calculée" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
          Ouvrir le volet de **barre latérale calculée**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Volet barre latérale calculée" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
          Volet **barre latérale calculée**  
       :::image-end:::  
    :::column-end:::
@@ -188,7 +188,7 @@ Activer/désactiver le volet **calculé** dans le volet **styles**  Le volet **c
 
 Pour afficher une feuille de style CSS appliquée moins de défilement, regrouper les propriétés CSS par catégories dans le volet **calculé** .  Vous pouvez également vous concentrer sur un ensemble de propriétés associées lorsque vous examinez votre CSS.  Dans l’outil **éléments** , sélectionnez un élément.  Pour regrouper \ (ou dissocier \) les propriétés CSS, activez la case à cocher du **groupe** .  Pour consulter les mises à jour en temps réel de cette fonctionnalité dans le projet open-source de chrome, accédez à problèmes [#1096230][CR1096230], [#1084673][CR1084673]et [#1106251][CR1106251].  
 
-:::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
+:::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Regroupement des propriétés CSS" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
    Regroupement des propriétés CSS  
 :::image-end:::  
 
@@ -210,7 +210,7 @@ performance.mark('end');
 
 Ensuite, ouvrez l’outil [performance][DevtoolsGuideChromiumEvaluatePerformanceReference] et naviguez jusqu’à la **section minutage** pour enregistrer votre code JavaScript.  Les `performance.mark()` événements que vous avez ajoutés apparaissent désormais dans l’enregistrement.  
 
-:::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/perf-mark.msft.png":::
+:::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Performance. marquer des événements" lightbox="../../media/2020/10/perf-mark.msft.png":::
    `performance.mark` venu  
 :::image-end:::  
 
@@ -218,7 +218,7 @@ Ensuite, ouvrez l’outil [performance][DevtoolsGuideChromiumEvaluatePerformance
 
 Utilisez les nouveaux `resource-type` et `url` Mots clés de l’outil **réseau** pour filtrer les requêtes réseau.  Par exemple, utilisez `resource-type:image` pour vous concentrer sur les requêtes réseau qui sont des images.  
 
-:::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
+:::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="filtre de type de ressource" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
    filtre de type de ressource  
 :::image-end:::  
 
@@ -230,7 +230,7 @@ Pour en savoir plus sur les mots-clés spéciaux, tels que `resource-type` et `u
 
 Affichez le point de terminaison de la stratégie d’intégrateur à l’origine \ (COEP \) et de la stratégie d’ouverture de la stratégie d’ouverture de la stratégie d’ouverture de fichiers \ (COOP \) `reporting to` dans la section **isolement du & de sécurité** .  L' [API de création de rapports][MdnReportingApi] définit `Report-To` un nouvel en-tête http, qui vous permet de spécifier les points de terminaison du serveur pour le navigateur et d’envoyer des avertissements et des erreurs.  Pour consulter les mises à jour en temps réel de cette fonctionnalité dans le projet open-source de chrome, accédez à l' [#1051466][CR1051466]du problème.  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="Rapport au point de terminaison" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
    Le `reporting to` point de terminaison  
 :::image-end:::  
 
@@ -238,13 +238,13 @@ Affichez le point de terminaison de la stratégie d’intégrateur à l’origin
 
 DevTools affiche maintenant l' `report-only` étiquette pour COEP et Coop définies sur `report-only` mode.  Pour consulter les mises à jour en temps réel de cette fonctionnalité dans le projet open-source de chrome, accédez à l' [#1051466][CR1051466]du problème.  
 
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="Étiquette du mode rapport uniquement" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
    `report-only`Étiquette mode  
 :::image-end:::  
 
 ### Afficher et résoudre les problèmes de contraste des couleurs dans l’outil vue d’ensemble CSS  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Outil réseau avec filtres non localisés":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Fonctionnalités expérimentales":::
    Fonctionnalités expérimentales  
 :::image-end:::  
 
@@ -254,7 +254,7 @@ L’outil de **vue d’ensemble CSS** affiche désormais une liste des élément
 
 Pour activer cette expérience, sous **Settings**  >  **expériences**de configuration, sélectionnez la case à cocher **vue d’ensemble CSS** .  Pour afficher une liste des éléments présentant un problème de contraste de couleurs, dans la liste **problèmes de contraste**, sélectionnez **texte**.  Pour ouvrir l’élément dans l’outil **éléments** , sélectionnez un élément dans la liste.  Pour vous aider à résoudre les problèmes de contraste, le Microsoft Edge DevTools [fournit automatiquement des suggestions de couleurs][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane].  Pour consulter les mises à jour en temps réel de cette fonctionnalité dans le projet open-source de chrome, accédez à l' [#1120316][CR1120316]du problème.  
 
-:::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Outil réseau avec filtres non localisés" lightbox="../../media/2020/10/css-overview.msft.png":::
+:::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Problèmes de contraste de faible couleur" lightbox="../../media/2020/10/css-overview.msft.png":::
    Problèmes de contraste de faible couleur  
 :::image-end:::  
 
