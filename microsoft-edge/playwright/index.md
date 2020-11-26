@@ -1,21 +1,21 @@
 ---
 description: Utiliser Playwright pour automatiser et effectuer des tests dans Microsoft Edge
-title: Playwright
+title: Dramaturge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/06/2020
+ms.date: 11/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, développement Web, développeur, outils, Automation, test, Playwright, nœud, JavaScript, NPM
-ms.openlocfilehash: 419d534b3757609528f05bac50ce55bad9dafec4
-ms.sourcegitcommit: 5af0ba56a93871eb4890d1aa7c56c3524c2261de
+ms.openlocfilehash: ac03923fb25da00f07cb70e81ac06b106a6e1452
+ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "11160168"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "11192211"
 ---
-# Playwright  
+# Dramaturge  
 
 [Playwright][|::ref1::|Main] est une bibliothèque [Node.js][NodejsMain] permettant d’automatiser le [chrome][ChromiumHome], le [Firefox][FirefoxMain]et la [WebKit][|::ref2::|Main] d’une API unique.  Playwright est conçu pour permettre l’automatisation Web sur le Web, qui est toujours compatible avec le Green, la fiabilité et la rapidité.  [Dans la mesure où Microsoft Edge repose sur la plateforme Web de chrome Open-source][MicrosoftBlogsWindowsExperience20181206], Playwright est également capable d’automatiser Microsoft Edge.  
 
@@ -100,7 +100,7 @@ Pour plus d’informations sur Playwright, accédez au [site Web Playwright][|::
 
 <!-- links -->  
 
-[WebdriverChromiumMain]: ../webdriver-chromium.md "WebDriver (chrome) | Documents Microsoft"  
+[WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (chrome) | Documents Microsoft"  
 [PuppeteerMain]: ../puppeteer.md "Puppeteer | Documents Microsoft"  
 
 [MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge: améliorez le Web grâce à une collaboration en ligne plus ouverte | Blog sur l’interface Microsoft"  
@@ -109,11 +109,11 @@ Pour plus d’informations sur Playwright, accédez au [site Web Playwright][|::
 
 [ChromiumHome]: https://www.chromium.org/Home "Chrome | Projets de chrome"  
 
-[FirefoxMain]: https://www.mozilla.org/firefox "Mozilla Firefox"
+[FirefoxMain]: https://www.mozilla.org/firefox "Mozilla Firefox"  
 
 [NodejsMain]: https://nodejs.org "Node.js"  
 
-[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "bords-tracés | NPM"
+[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "bords-tracés | NPM"  
 
 [PlaywrightMain]: https://playwright.dev "Playwright"  
 [PlaywrightAPIReference]: https://playwright.dev#?path=docs/api.md "Référence sur les API Playwright"  
@@ -123,6 +123,6 @@ Pour plus d’informations sur Playwright, accédez au [site Web Playwright][|::
 [PlaywrightRepo]: https://github.com/microsoft/playwright "Playwright | GitHub"  
 [PlaywrightRepoNewIssue]: https://github.com/microsoft/playwright/issues/new/choose "Nouveau problème dans Playwright référentiel Samples | GitHub"  
 
-[WebKitMain]: https://webkit.org "WebKit"
+[WebKitMain]: https://webkit.org "WebKit"  
 
 [WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Navigateur headless | Wikipédia"  

@@ -1,20 +1,20 @@
 ---
 ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
 description: Découvrez comment les meilleures pratiques et les applications Internet enrichies accessibles peuvent être utilisées pour créer un site Web accessible.
-title: Accessibilité-version
+title: Créer | Fonctions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibilité, accessibilité pour les développeurs, sites Web accessibles, Edge, développement Web, ARIA, développeur, UIA, UI Automation
 ms.custom: seodec18
-ms.openlocfilehash: 4412fef6bb78b5a393ccafd5a2cfa79aba223141
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: 7a8ff5082132ec3270a6e01af594a5bd9fb35389
+ms.sourcegitcommit: 5d3802721036dc7cd90e9e6f7ac90dc3acc24eec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10564678"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "11191550"
 ---
 # Créer des sites Web accessibles
 Le Web est rempli par des sites Web, des applications et des interfaces utilisateur dynamiques et complexes, développés à l’aide d’une combinaison de HTML, CSS et JavaScript.  Néanmoins, lors d’une conception et d’une conception sans l’accessibilité, ces sites Web complexes sont difficiles à utiliser par les personnes qui utilisent des [technologies d’assistance](https://webaim.org/articles/motor/assistive) pour naviguer sur le Web. La création de sites Web accessibles aux personnes atteintes de handicaps nécessite des informations sémantiques sur l’interface utilisateur. Cela permet aux technologies d’assistance (par exemple, les lecteurs d’écran) de transmettre les informations nécessaires à des personnes atteintes de capacités d’utilisation du site Web.
@@ -57,6 +57,44 @@ Accédez au [modèle de rôles](https://www.w3.org/TR/wai-aria-1.1/#roles) par l
 
 Pour plus d’informations sur ARIA, voir la section «ARIA» dans la section « [ressources](#resources) ».
 
+## Test de compatibilité de technologie d’assistance  
+
+Vérifiez que le site Web que vous êtes en train de générer fonctionne avec de véritables technologies d’assistance est le meilleur moyen de garantir une bonne utilisation pour les utilisateurs souffrant de handicaps.  Dans la mesure où de nombreuses technologies d’assistance utilisent le clavier, le test de l’accessibilité du clavier de votre site Web est l’endroit idéal pour commencer.  Le [test de compatibilité au clavier][W3cPerspectiveVideosKeyboard] vérifie que les utilisateurs ont accès à tous les contrôles interactifs sans nécessiter de souris.  Microsoft [Accessibility Insights pour le Web][AccessibilityinsightsWebOverview] est une extension de navigateur pour Microsoft Edge et chrome qui vous guide et révèle plusieurs problèmes courants.  
+
+Lorsque vous êtes certain que votre site Web fonctionne correctement avec un clavier, essayez avec d’autres technologies d’assistance telles que les lecteurs d’écran.  Ce problème ne concerne pas les problèmes suivants.
+
+*   Votre code HTML, ARIA et CSS.  
+*   Le niveau de prise en charge d’une technologie d’assistance pour une fonction ou une technique.  
+    
+Les différents navigateurs sont susceptibles de mapper des éléments aux API d’accessibilité de plateforme différemment de Microsoft Edge.  Lorsque vous créez votre interface, il est important de prendre en considération chaque différence.  
+
+WebAIM effectue des enquêtes avec le [lecteur d’écran][WebaimProjectsScreenreadersurvey8] et les utilisateurs [malvoyants][WebaimProjectsLowvisionsurvey2] , qui vous permettent de déterminer les technologies d’assistance et les navigateurs que vous souhaitez tester.  
+
+### Découvrir comment tester  
+
+Les technologies d’assistance sont des outils sophistiqués.  Ne supposez pas que vous êtes en mesure de démarrer immédiatement les tests avec une technologie d’assistance sans avoir d’abord d’apprendre sur son fonctionnement.  L’apprentissage de tests avec un lecteur d’écran a une courbe d’apprentissage particulièrement en pente.  Un utilisateur de lecteur d’écran débutant peut supposer qu’un bogue de lecteur d’écran s’est produit alors que le problème est lié à une mauvaise utilisation du lecteur d’écran.  
+
+Pour plus d’informations sur les connaissances en matière de tests avec des technologies d’assistance, voir [test avec les lecteurs d’écran][WebaimArticlesScreenreaderTesting] sur WebAIM.  
+
+### Test local  
+
+La plupart des appareils incluent une technologie d’assistance intégrée au système d’exploitation.  Microsoft Windows inclut le lecteur d’écran [narrateur Windows][MicrosoftSupport22798] et la [loupe Windows][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198].  des technologies d’assistance tierces telles que [NVDA][NvaccessAboutNvda], [FreedomscientificSoftwareJaws]et [ZoomText][FreedomscientificSoftwareZoomtext] peuvent être téléchargées.  Apple macOS inclut le lecteur d’écran [VoiceOver][AppleAccessibilityMacVision] .  Ainsi que iOS, Android et Linux prennent en charge une variété de technologies d’assistance.  
+
+### Tests sur machines virtuelles et émulateurs  
+
+Sous macOS, si vous voulez effectuer un test à l’aide d’une technologie d’assistance uniquement disponible pour Windows (par exemple, narrateur Windows ou NVDA), créez une machine virtuelle Windows.  Les machines virtuelles avec Microsoft Edge \ (EdgeHTML \) et Internet Explorer sont disponibles pour VirtualBox et VMWare sur la page de téléchargement de l' [ordinateur virtuel][MicrosoftDeveloperEdgeVms].  
+
+[Android Studio][AndroidDeveloperSdkInstallingStudioHtml] inclut un émulateur qui vous permet de tester les technologies d’assistance dans le cadre de la [suite Android Accessibility][GooglePlayStoreAndroidAccessibilitySuite].  Suivez les instructions de [configuration d’un périphérique virtuel][AndroidDeveloperDevicesManagingAvdsHtml] et [Démarrez l’émulateur][AndroidDeveloperDevicesEmulatorHtml], puis installez la [suite d’accessibilité Android][GooglePlayStoreAndroidAccessibilitySuite] à partir du Windows Store GooglePlay.  
+
+> [!NOTE]
+> Pour le moment, le simulateur iOS n’inclut pas VoiceOver.  
+
+### Outils de test basés sur le Cloud  
+
+Si aucune technologie d’assistance n’est disponible sur votre système d’exploitation, ou si vous n’êtes pas en mesure d’en installer une sur un ordinateur virtuel ou un émulateur, les outils de test de technologie d’assistance dans le Cloud sont les plus avantageux.  
+
+*   [Assistiv Labs (commercial)][AssistivlabsMain] vous permet d’effectuer des tests manuels avec des technologies d’assistance via n’importe quel navigateur Web moderne.  Choisissez une technologie et un navigateur d’assistance et il vous connecte avec un ordinateur virtuel, un émulateur ou un appareil réel avec lequel vous pouvez interagir.  
+
 ## Ressources
 
 ### Notions de base sur l’accessibilité
@@ -77,7 +115,7 @@ Le simple accès est une équipe de spécialistes de l’accessibilité qui four
 Le groupe SSB Christian est une entreprise d’accessibilité numérique qui soutient ses clients lors du développement et du déploiement de produits et services accessibles. Son blog adresse des rubriques telles que les meilleures pratiques ARIA, les tendances d’accessibilité, les webinaires, etc.
 
 ### Exemples accessibles
-#### [allié. js-didacticiels](http://allyjs.io/tutorials/)
+#### [Didacticiels ally.js](http://allyjs.io/tutorials/)
 Bibliothèque JavaScript pour aider les applications Web modernes en matière d’accessibilité, rendre l’accessibilité plus simple.
 
 #### [Heydonworks-exemples de ARIA](http://heydonworks.com/practical_aria_examples/)
@@ -141,3 +179,35 @@ Liste des outils d’évaluation de l’accessibilité du Web permettant de dét
 
 #### [Perspectives d’accessibilité sur le Web: découvrir les avantages et les avantages de tout le monde](https://w3.org/WAI/perspectives/)
 Une série de vidéos de courte durée par le W3C sur l’impact de l’accessibilité et les avantages de tout le monde.
+
+<!-- links -->  
+
+<!--todo: link updates and acrolinx  -->  
+
+[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Machines virtuelles | Développeur pour Microsoft Edge"  
+
+[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "Guide complet du narrateur | Support Microsoft"  
+[MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "Utiliser la loupe pour faciliter l’affichage des éléments à l’écran | Support Microsoft"  
+
+[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Conseils d’accessibilité pour le Web | Insights sur l’accessibilité"  
+
+[AndroidDeveloperDevicesManagingAvdsHtml]: https://developer.android.com/tools/devices/managing-avds.html "Créer et gérer des périphériques virtuels | Développeurs Android"  
+[AndroidDeveloperDevicesEmulatorHtml]: https://developer.android.com/tools/devices/emulator.html "Exécuter des applications sur l’émulateur Android | Développeurs Android"  
+[AndroidDeveloperSdkInstallingStudioHtml]: https://developer.android.com/sdk/installing/studio.html "Télécharger Android Studio | Développeurs Android"  
+
+[AppleAccessibilityMacVision]: https://www.apple.com/accessibility/mac/vision "Accessibilité de la vision-Mac | pomme"  
+
+[AssistivlabsMain]: https://assistivlabs.com "Assistiv Labs"  
+
+[FreedomscientificSoftwareJaws]: https://www.freedomscientific.com/products/software/jaws "Jaws® | Sciences" de la liberté  
+[FreedomscientificSoftwareZoomtext]: https://www.freedomscientific.com/products/software/zoomtext "ZoomText | Sciences de la liberté"  
+
+[GooglePlayStoreAndroidAccessibilitySuite]: https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback "Suite d’accessibilité Android | Magasin GooglePlay"  
+
+[NvaccessAboutNvda]: https://www.nvaccess.org/about-nvda "À propos de NVDA | Accès NV"  
+
+[W3cPerspectiveVideosKeyboard]: https://www.w3.org/WAI/perspective-videos/keyboard "Compatibilité clavier | W3C"  
+
+[WebaimProjectsLowvisionsurvey2]: https://webaim.org/projects/lowvisionsurvey2 "Enquête sur les utilisateurs souffrant de troubles de la vue et des résultats de #2 | WebAIM"  
+[WebaimProjectsScreenreadersurvey8]: https://webaim.org/projects/screenreadersurvey8 "Examen des utilisateurs du lecteur d’écran \ #8 résultats | WebAIM"  
+[WebaimArticlesScreenreaderTesting]: https://webaim.org/articles/screenreader_testing "Tests avec des lecteurs d’écran | WebAIM"  
