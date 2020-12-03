@@ -1,58 +1,49 @@
 ---
 description: Processus de portage de l’extension chrome vers Microsoft Edge.
-title: Extension du chrome port sur le bord Microsoft (chrome)
+title: Extension du chrome port sur Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 11/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Edge-chrome, développement d’extensions, extensions de navigateur, compléments, Centre des partenaires, développeur
-ms.openlocfilehash: 1852e267579f0fb790c6b8cac75a566298223933
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+ms.openlocfilehash: 0f767107bfb259476d1ab35d081fb9bb05c81b46
+ms.sourcegitcommit: e79503c6c53ea9b7de58f8cf1532b5c82116a6eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015687"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "11195158"
 ---
-# <span data-ttu-id="05c84-104">Extension de chrome de port vers Microsoft \ (chrome \)</span><span class="sxs-lookup"><span data-stu-id="05c84-104">Port Chrome Extension To Microsoft \(Chromium\) Edge</span></span>  
+# <span data-ttu-id="4d6b9-104">Porter votre extension</span><span class="sxs-lookup"><span data-stu-id="4d6b9-104">Port your extension</span></span>  
 
-<span data-ttu-id="05c84-105">Le processus de Portage d’une extension chrome vers Microsoft Edge est très simple.</span><span class="sxs-lookup"><span data-stu-id="05c84-105">The process of porting a Chrome Extension to Microsoft Edge is very straightforward.</span></span>  <span data-ttu-id="05c84-106">Extensions écrites pour le chrome, dans la plupart des cas, s’exécutent sur Microsoft Edge avec des modifications minimales.</span><span class="sxs-lookup"><span data-stu-id="05c84-106">Extensions written for Chromium, in most cases, run on Microsoft Edge with minimal changes.</span></span>  <span data-ttu-id="05c84-107">Les API d’extension et les clés de manifeste prises en charge par chrome sont compatibles avec le code Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="05c84-107">The Extension APIs and manifest keys supported by Chrome are code-compatible with Microsoft Edge.</span></span>  <span data-ttu-id="05c84-108">Toutefois, Microsoft Edge ne prend pas en charge les API d’extension suivantes:</span><span class="sxs-lookup"><span data-stu-id="05c84-108">However, Microsoft Edge does not support the following Extension APIs:</span></span>  
+<span data-ttu-id="4d6b9-105">Microsoft Edge vous permet de porter votre extension chrome avec les modifications minimales.</span><span class="sxs-lookup"><span data-stu-id="4d6b9-105">Microsoft Edge allows you to port your Chrome extension with minimal changes.</span></span>  <span data-ttu-id="4d6b9-106">Les API d’extension et les clés de manifeste prises en charge par chrome sont compatibles avec le code Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="4d6b9-106">The Extension APIs and manifest keys supported by Chrome are code-compatible with Microsoft Edge.</span></span>  <span data-ttu-id="4d6b9-107">Pour obtenir la liste des API prises en charge par Microsoft Edge, accédez à la [prise en charge des API][ExtensionApiSupport].</span><span class="sxs-lookup"><span data-stu-id="4d6b9-107">For a list of APIs supported by Microsoft Edge, navigate to [API support][ExtensionApiSupport].</span></span>  
 
-*   `chrome.gcm`  
-*   `chrome.identity.getAccounts`  
-*   `chrome.identity.getAuthToken`  
-*   `chrome.instanceID`  
+<span data-ttu-id="4d6b9-108">Pour porter votre extension chrome, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="4d6b9-108">To port your Chrome extension, complete the following steps.</span></span>  
 
-> [!Note]
-> <span data-ttu-id="05c84-109">Pour pouvoir utiliser l’API, l’utilisateur doit être connecté à Microsoft Edge à l’aide d’un compte MSA ou AAD `chrome.identity.getProfileUserInfo` .</span><span class="sxs-lookup"><span data-stu-id="05c84-109">The user must be signed into Microsoft Edge using an MSA or AAD account in order to use the `chrome.identity.getProfileUserInfo` API.</span></span>  <span data-ttu-id="05c84-110">Si l’utilisateur est connecté à Microsoft Edge à l’aide **d’une annonce locale**, l’API renvoie les `null` valeurs de messagerie et d’ID.</span><span class="sxs-lookup"><span data-stu-id="05c84-110">If the user is signed into Microsoft Edge using **On-premise AD**, the API returns `null` for the email and ID values.</span></span>  
-
-> [!IMPORTANT]
-> <span data-ttu-id="05c84-111">**Paiements**: Microsoft Edge n’a pas de prise en charge directe d’une extension qui utilise les paiements du Windows [Store chrome][ChromeDeveloperWebStorePayments] en raison de la nécessité d’utiliser la `identity.getAuthtoken` requête pour obtenir le jeton des utilisateurs connectés afin d’envoyer la demande d’API de gestion de licences Rest.</span><span class="sxs-lookup"><span data-stu-id="05c84-111">**Payments**:  Microsoft Edge does not directly support an Extension that uses [Chrome Web Store payments][ChromeDeveloperWebStorePayments] due to the requirement to use the `identity.getAuthtoken` request to get the token for signed-in users to send the REST-based licensing API request.</span></span>  <span data-ttu-id="05c84-112">Microsoft Edge ne prend pas en charge la `getAuthtoken` requête, donc ce flux ne fonctionne pas.</span><span class="sxs-lookup"><span data-stu-id="05c84-112">Microsoft Edge does not support the `getAuthtoken` request, so this flow does not work.</span></span>  
-
-<span data-ttu-id="05c84-113">Pour porter votre extension chrome, procédez comme suit:</span><span class="sxs-lookup"><span data-stu-id="05c84-113">To port your Chrome Extension, follow these steps:</span></span>  
-
-1.  <span data-ttu-id="05c84-114">Passez en revue les API d’extension chrome utilisées dans vos extensions.</span><span class="sxs-lookup"><span data-stu-id="05c84-114">Review the Chrome Extension APIs used in your Extensions.</span></span>  <span data-ttu-id="05c84-115">Si vous utilisez des fonctionnalités ou des API qui ne sont pas prises en charge par Microsoft Edge, il est possible que vous ne puissiez pas porter votre extension.</span><span class="sxs-lookup"><span data-stu-id="05c84-115">If you are using features or APIs that are not supported by Microsoft Edge, you may not be able to port your Extension.</span></span>  
+1.  <span data-ttu-id="4d6b9-109">Passez en revue les API d’extension chrome utilisées dans vos extensions à l’aide de la liste des [API prises en charge][ExtensionApiSupport] par Microsoft Edge extensions.</span><span class="sxs-lookup"><span data-stu-id="4d6b9-109">Review the Chrome extension APIs used in your extensions with the Microsoft Edge extensions [supported APIs][ExtensionApiSupport] list.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="05c84-116">L' `getAuthToken` API ne fonctionne pas avec Microsoft Edge, mais vous pouvez l’utiliser `launchWebAuthFlow` pour récupérer un jeton OAuth2 pour authentifier les utilisateurs.</span><span class="sxs-lookup"><span data-stu-id="05c84-116">The `getAuthToken` API does not work with Microsoft Edge, however you may use `launchWebAuthFlow` to fetch an OAuth2 token to authenticate users.</span></span>  
+    > <span data-ttu-id="4d6b9-110">Si votre extension utilise des API qui ne sont pas prises en charge par Microsoft Edge, il est possible qu’elle ne soit pas portée directement.</span><span class="sxs-lookup"><span data-stu-id="4d6b9-110">If your extension uses APIs that are not supported by Microsoft Edge, it may not port directly.</span></span>  
     
-1.  <span data-ttu-id="05c84-117">Si vous utilisez `Chrome` le nom ou la description de votre poste, remarquez l’extension de `Microsoft Edge` .</span><span class="sxs-lookup"><span data-stu-id="05c84-117">If you are using `Chrome` in the name or description of your Extension, re-brand the Extension for `Microsoft Edge`.</span></span>  <span data-ttu-id="05c84-118">Vous devez réussir le processus de certification.</span><span class="sxs-lookup"><span data-stu-id="05c84-118">You must pass the certification process.</span></span>  
-    
-1.  <span data-ttu-id="05c84-119">Testez votre extension pour vérifier qu’elle fonctionne dans Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="05c84-119">Test your Extension to check if it works in Microsoft Edge.</span></span>  <span data-ttu-id="05c84-120">Pour cela, la première étape consiste à vérifier que vous avez activé les fonctionnalités de développement d’extensions.</span><span class="sxs-lookup"><span data-stu-id="05c84-120">The first step to do this is to ensure that you have Extension developer features turned on.</span></span>  <span data-ttu-id="05c84-121">Cela vous permet de charger les fichiers d’extension dans Microsoft Edge pour pouvoir tester votre extension lors de sa création.</span><span class="sxs-lookup"><span data-stu-id="05c84-121">This enables you to side load Extension files in Microsoft Edge so that you are able to test your Extension while developing it.</span></span>  
-    
-1.  <span data-ttu-id="05c84-122">Si vous rencontrez des problèmes, Déboguez vos extensions dans Microsoft Edge à l’aide du DevTools ou [Contactez-nous][mailtoExtensionPartnerOpsMicrosoft].</span><span class="sxs-lookup"><span data-stu-id="05c84-122">If you have any issues, debug your Extensions in Microsoft Edge by using the DevTools, or [contact us][mailtoExtensionPartnerOpsMicrosoft].</span></span>  
-    
-1.  <span data-ttu-id="05c84-123">À présent, votre extension est finalement impeccable et prête à être empaquetée.</span><span class="sxs-lookup"><span data-stu-id="05c84-123">Now your Extension is finally polished up and ready to be packaged.</span></span>  <span data-ttu-id="05c84-124">Si vous souhaitez préparer la soumission au catalogue de compléments Microsoft Edge (Microsoft Edge addons), vous n’avez pas besoin de empaqueter votre extension.</span><span class="sxs-lookup"><span data-stu-id="05c84-124">If you wish to prepare for submission to the Microsoft Edge Addons catalog \(Microsoft Edge Addons\), you do not need to package your Extension.</span></span>  <span data-ttu-id="05c84-125">Vous pouvez également suivre nos recommandations en matière de [publication][ExtensionsPublishExtension] pour publier votre extension sur les modules complémentaires Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="05c84-125">Further, follow our [publishing guidelines][ExtensionsPublishExtension] to publish your Extension on Microsoft Edge Addons.</span></span>  
+1.  <span data-ttu-id="4d6b9-111">Si le nom `Chrome` est utilisé dans le nom ou la description de l’extension, remarquez l’extension de `Microsoft Edge` .</span><span class="sxs-lookup"><span data-stu-id="4d6b9-111">If the name `Chrome` is being used in either the name or the description of the extension, rebrand the extension for `Microsoft Edge`.</span></span>  <span data-ttu-id="4d6b9-112">Cette étape est nécessaire pour réussir le processus de certification.</span><span class="sxs-lookup"><span data-stu-id="4d6b9-112">This step is required to pass the certification process.</span></span>  
+1.  <span data-ttu-id="4d6b9-113">Testez votre extension pour vérifier qu’elle fonctionne dans Microsoft Edge [chargement indépendant votre extension][ExtensionsGettingStartedExtensionSideloading].</span><span class="sxs-lookup"><span data-stu-id="4d6b9-113">Test your extension to check if it works in Microsoft Edge by [sideloading your extension][ExtensionsGettingStartedExtensionSideloading].</span></span>  
+1.  <span data-ttu-id="4d6b9-114">Si vous rencontrez des problèmes, vous pouvez déboguer vos extensions dans Microsoft Edge à l’aide du DevTools ou [nous contacter][mailtoExtensionMicrosoft].</span><span class="sxs-lookup"><span data-stu-id="4d6b9-114">If you face any issues, you may debug your extensions in Microsoft Edge by using the DevTools, or [contact us][mailtoExtensionMicrosoft].</span></span>  
+1.  <span data-ttu-id="4d6b9-115">Suivez les [recommandations][ExtensionsPublishPublishExtension] en matière de publication pour publier votre extension sur le magasin de modules complémentaires Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="4d6b9-115">Follow the [publishing guidelines][ExtensionsPublishPublishExtension] to publish your extension on Microsoft Edge Add-ons store.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="05c84-126">Si votre extension échange des messages avec une application native utilisant une `chrome.runtime.connectNative` API, assurez-vous de définir `allowedorigins` « `extension://[Microsoft-Catalog-extensionID]` » dans le fichier manifeste de votre hôte de messagerie natif.</span><span class="sxs-lookup"><span data-stu-id="05c84-126">If your Extension exchanges messages with a native application using `chrome.runtime.connectNative` API, ensure that you set `allowedorigins` to "`extension://[Microsoft-Catalog-extensionID]`" in your native messaging host manifest file.</span></span>  <span data-ttu-id="05c84-127">Cela permet à l’application d’identifier l’extension.</span><span class="sxs-lookup"><span data-stu-id="05c84-127">This enables the app to identify the Extension.</span></span>  
+    > <span data-ttu-id="4d6b9-116">Si l’extension échange des messages avec une application native en utilisant une `chrome.runtime.connectNative` API, assurez-vous que vous avez défini `allowed_origins` `extension://[Microsoft-Catalog-extensionID]` dans le fichier manifeste de votre hôte de messagerie natif.</span><span class="sxs-lookup"><span data-stu-id="4d6b9-116">If the extension exchanges messages with a native app using `chrome.runtime.connectNative` API, ensure that you set `allowed_origins` to `extension://[Microsoft-Catalog-extensionID]` in your native messaging host manifest file.</span></span>  <span data-ttu-id="4d6b9-117">Cela permet à l’application d’identifier l’extension.</span><span class="sxs-lookup"><span data-stu-id="4d6b9-117">This enables the app to identify the extension.</span></span>  
+    
+## <span data-ttu-id="4d6b9-118">Étapes suivantes</span><span class="sxs-lookup"><span data-stu-id="4d6b9-118">Next steps</span></span>  
 
-<!-- image links -->  
+<span data-ttu-id="4d6b9-119">Dès lors que votre package d’extension est prêt à être publié dans le magasin de modules complémentaires Microsoft Edge, [créez un compte de développeur][ExtensionsPublishCreateDevAccount] et [publiez votre extension][ExtensionsPublishPublishExtension].</span><span class="sxs-lookup"><span data-stu-id="4d6b9-119">Once your extension package is ready to be published to Microsoft Edge add-ons store, [create a developer account][ExtensionsPublishCreateDevAccount] and [publish your extension][ExtensionsPublishPublishExtension].</span></span>  
 
 <!-- links -->  
 
-[ExtensionsPublishExtension]: ../publish/publish-extension.md "Publier une extension"  
+[ExtensionApiSupport]: ./api-support.md "Support des API | Documents Microsoft"  
+[ExtensionsGettingStartedExtensionSideloading]: ../getting-started/extension-sideloading.md "Charger votre extension | Documents Microsoft"  
+[ExtensionsPublishCreateDevAccount]: ../publish/create-dev-account.md "Inscription du développeur | Documents Microsoft"  
+[ExtensionsPublishPublishExtension]: ../publish/publish-extension.md "Publier votre extension | Documents Microsoft"  
 
-[mailtoExtensionPartnerOpsMicrosoft]: mailto:extensionpartnerops@microsoft.com "ExtensionPartnerOps@microsoft.com"  
+[ChromeDeveloperWebStorePayments]: https://developer.chrome.com/webstore/one_time_payments "Paiements à la fois | Développeur de chrome"  
 
-[ChromeDeveloperWebStorePayments]: https://developer.chrome.com/webstore/one_time_payments "Paiements ponctuels-Google Chrome"  
+[mailtoExtensionMicrosoft]: mailto:ext_dev_support@microsoft.com "ext_dev_support@microsoft.com"  

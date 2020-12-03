@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, WebView, applications WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge
-ms.openlocfilehash: 0cbaaeade03feac766647c55bb5edabfe8e8456e
-ms.sourcegitcommit: 7b16c3e6eb458e0b2458279c2498597fb227bc8c
+ms.openlocfilehash: 14f252b0155beb6bfce0b01dc080900f2d3e57ee
+ms.sourcegitcommit: e79503c6c53ea9b7de58f8cf1532b5c82116a6eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "11182908"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "11195165"
 ---
 # <span data-ttu-id="17479-104">Distribution d’applications à l’aide de WebView2</span><span class="sxs-lookup"><span data-stu-id="17479-104">Distribution of apps using WebView2</span></span>  
 
@@ -76,7 +76,7 @@ ms.locfileid: "11182908"
         <span data-ttu-id="17479-155">Sous Windows 32 bits</span><span class="sxs-lookup"><span data-stu-id="17479-155">On 32-bit Windows</span></span>  
         
         ```text
-        HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
         ```  
         
     *   <span data-ttu-id="17479-156">Exécutez [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] et assurez-vous que le `versionInfo` est `NULL` .</span><span class="sxs-lookup"><span data-stu-id="17479-156">Run [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and ensure the `versionInfo` is `NULL`.</span></span>  
@@ -109,7 +109,7 @@ ms.locfileid: "11182908"
         <span data-ttu-id="17479-173">Sous Windows 32 bits</span><span class="sxs-lookup"><span data-stu-id="17479-173">On 32-bit Windows</span></span>  
         
         ```text
-        HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
         ```  
         
     *   <span data-ttu-id="17479-174">Exécutez [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] et assurez-vous que le `versionInfo` est `NULL` .</span><span class="sxs-lookup"><span data-stu-id="17479-174">Run [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and ensure the `versionInfo` is `NULL`.</span></span>  
