@@ -7,12 +7,12 @@ ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 707841901046db6a7e957771164ffb868900bdd8
-ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
+ms.openlocfilehash: 83edc15549b4f8e668af99a4d95966736aaa0992
+ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "11190011"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11204011"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -544,6 +544,8 @@ ms.locfileid: "11190011"
        <span data-ttu-id="d137f-376">Utiliser le compte-gouttes</span><span class="sxs-lookup"><span data-stu-id="d137f-376">Using the Eyedropper</span></span>  
     :::image-end:::  
     
+<!--todo:  add the section on the Angle clock section for What's New 88.  -->  
+
 ## <span data-ttu-id="d137f-377">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="d137f-377">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
