@@ -62,6 +62,8 @@
           href: devtools-guide-chromium/open.md
         - name: Nouveautés
           items:
+            - name: Microsoft Edge 88
+              href: devtools-guide-chromium/whats-new/2020/11/devtools.md
             - name: MicrosoftEdge87
               href: devtools-guide-chromium/whats-new/2020/10/devtools.md
             - name: Microsoft Edge86
