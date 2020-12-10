@@ -3,16 +3,16 @@ description: Dernières fonctionnalités expérimentales de Microsoft Edge DevTo
 title: Fonctionnalités expérimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/06/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, expérience
-ms.openlocfilehash: ddedf62ff27023751c511a7d2e34b6ea14461db5
-ms.sourcegitcommit: be42902c404e9f9ac2d661df9c55de3db4d956a5
+ms.openlocfilehash: b2b2e591834f1c75d51ec98523e2752d67a2d354
+ms.sourcegitcommit: 6571bcc0b7f1c4c9d6ead65081374bab87cd4469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "11160364"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11203898"
 ---
 # Fonctionnalités expérimentales  
 
@@ -25,7 +25,7 @@ Si les fonctionnalités expérimentales sont disponibles dans tous les canaux de
 Pour activer les fonctionnalités expérimentales de \ (ou de désactivation) dans Microsoft Edge, procédez comme suit.  
 
 1.  [Ouvrez devtools][DevtoolsOpen].  
-     *   Sélectionnez `Control` + `Shift` + `I` \ (Windows, Linux \) ou `Command` + `Option` + `I` \ (MacOS \).  Pour plus d’informations, accédez à [raccourcis clavier de Microsoft Edge devtools][DevToolsShortcuts].  
+    *   Sélectionnez `Control` + `Shift` + `I` \ (Windows, Linux \) ou `Command` + `Option` + `I` \ (MacOS \).  Pour plus d’informations, accédez à [raccourcis clavier de Microsoft Edge devtools][DevToolsShortcuts].  
 1.  Ouvrez le volet [paramètres][DevToolsCustomizeSettings] .  
     *   Sélectionnez `Shift` + `?` .  Pour plus d’informations, accédez à [raccourcis clavier de Microsoft Edge devtools][DevToolsShortcuts].  
 1.  Sur le côté gauche du volet **paramètres** , sélectionnez la section **expériences** .  
@@ -36,7 +36,7 @@ Pour activer les fonctionnalités expérimentales de \ (ou de désactivation) da
     
 1.  Sur la page **expériences** , faites défiler la liste de toutes les fonctionnalités expérimentales disponibles, puis cochez la case en regard de chaque fonctionnalité que vous voulez tester.  
 1.  Fermez et rouvrez Microsoft Edge DevTools.  
-
+    
 > [!NOTE]
 > Les fonctionnalités expérimentales sont constamment mises à jour et peuvent entraîner des problèmes de performances.  Pour désactiver une fonctionnalité expérimentale, ouvrez la page **expériences** , puis décochez la case de la fonctionnalité expérimental que vous souhaitez désactiver.  
 
@@ -61,7 +61,7 @@ Fournit des fonctionnalités supplémentaires pour l’émulation de deux nouvea
 
 *   [Surface Duo][SurfaceDevicesDuo]  
 *   [Samsung Galaxy Fold][SamsungMobileGalaxyFold]  
-
+    
 Émuler les appareils et basculer entre les positions suivantes.  
 
 *   un écran ou une position pliée  
@@ -80,13 +80,13 @@ Pour utiliser la [fonctionnalité de répartition d’écran de média CSS][Dual
 1.  Accédez à `edge://flags` .  
 1.  Dans la zone de texte **indicateurs de recherche** , entrez `Experimental Web Platform features` , sélectionnez l’indicateur **fonctionnalités de plateforme Web expérimentales** , puis **désactivez** l' **option**désactivé.  
 1.  Redémarrez MicrosoftEdge.  
-
+    
 :::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Activer l’indicateur de fonctionnalités de plateforme Web expérimentale" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
    Activer l’indicateur de fonctionnalités de plateforme Web expérimentale  
 :::image-end:::  
 
 > [!NOTE]
-> Si vous utilisez des [requêtes multimédias CSS][DualScreenDocsCssMedia] ou l’API d' [énumération de segment Windows JavaScript][DualScreenDocsJSAPI] pour améliorer votre site Web ou votre application pour le duo de [surface][SurfaceDevicesDuo], vous devez également activer l' [Android Microsoft Edge app][GooglePlayMicrosoftEdge] indicateur de **fonctionnalités de plateforme Web** [Surface Duo][SurfaceDevicesDuo]  
+> Si vous utilisez des [requêtes multimédias CSS][DualScreenDocsCssMedia] ou l’API d' [énumération de segment Windows JavaScript][DualScreenDocsJSAPI] pour améliorer votre site Web ou votre application pour le duo de [surface][SurfaceDevicesDuo], vous devez également activer l' [][GooglePlayMicrosoftEdge] indicateur de **fonctionnalités de plateforme Web** [][SurfaceDevicesDuo]  
 > 
 > Si l’indicateur fonctionnalités de la **plateforme Web expérimentée** est activé dans la version de [Bureau de Microsoft Edge][MicrosoftEdge] et désactivée dans l' [application Microsoft Edge Android][GooglePlayMicrosoftEdge], le comportement de votre site Web ou de votre application dans l’émulateur de surface duo dans l’application de bureau Microsoft Edge ne correspond pas à l' [application Android Microsoft Edge][GooglePlayMicrosoftEdge] sur le [Duo][SurfaceDevicesDuo].  Assurez-vous que les indicateurs sont mis en correspondance entre Android et Microsoft Edge pour pouvoir utiliser l’émulateur de surface duo dans [Microsoft Edge][MicrosoftEdge].  
 
@@ -111,7 +111,7 @@ Voici d’autres ressources qui peuvent vous aider à améliorer votre site Web 
 
 *   Pour plus d’informations sur le développement Web sur les appareils à deux écrans, voir [expériences sur le Web à deux écrans][DualScreenWebIndex].  
 *   Installez l' [émulateur de surface Duo][DualScreenAndroidUseEmulator].  Il est différent de l’émulateur dans Microsoft Edge, émule le duo de surface sur lequel s’exécute Android et intégré à [Android Studio][AndroidDeveloperStudio].  Pour plus d’informations, accédez au [Kit de développement logiciel (SDK) surface Duo][DualScreenAndroidGetDuoSdk].  
-
+    
 > [!NOTE]
 > Voici une liste des problèmes connus actuels.  
 > 
@@ -123,7 +123,7 @@ Cette fonctionnalité expérimentale fournit un certain nombre de nouvelles visu
 
 #### Affichage des superpositions de la grille sur le survol avec l’outil inspecter  
 
-L’outil **Inspect** vous permet d’identifier et de visualiser rapidement les dispositions d’une grille CSS dans un site Web en les plaçant au-dessus à l’aide de la souris.  **Inspect** ![ ](./media/inspect-icon.msft.png) Dans le coin supérieur gauche de devtools, sélectionnez l’icône inspecter \ (Inspect \).  Ensuite, pointez sur un élément Grid sur le site Web que vous déboguez.  Les plans sont affichés dans la grille, et l’ombrage indique l’emplacement des espaces de la grille, le cas échéant.  
+L’outil **Inspect** vous permet d’identifier et de visualiser rapidement les dispositions d’une grille CSS dans un site Web en les plaçant au-dessus à l’aide de la souris.  **** ![ ](./media/inspect-icon.msft.png) Dans le coin supérieur gauche de devtools, sélectionnez l’icône inspecter \ (Inspect \).  Ensuite, pointez sur un élément Grid sur le site Web que vous déboguez.  Les plans sont affichés dans la grille, et l’ombrage indique l’emplacement des espaces de la grille, le cas échéant.  
 
 :::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Affichage de grilles avec l’outil Inspect" lightbox="./media/grid-inspect.msft.png":::
    Affichage de grilles avec l’outil Inspect  
@@ -136,7 +136,7 @@ Dans la version 86 de Microsoft Edge ou version ultérieure, la fonctionnalité 
 *   Les superpositions persistantes restent visibles sur la page lorsque vous faites défiler, déplacez la souris et utilisez les autres fonctionnalités du DevTools.  
 *   Plusieurs superpositions persistantes peuvent être activées en même temps, ce qui vous permet de revoir différentes dispositions de grille en une seule fois.  
 *   Les superpositions persistantes proposent de nombreuses options de configuration, telles que le masquage et l’affichage des noms dans la zone de grille, les espaces de grille, les tailles de suivi, etc.  
-
+    
 Il existe deux façons d’activer ou de désactiver une superposition de grille persistante.  
 
 *   Cliquez sur l’icône ovale de **grille** en regard d’un élément Grid affiché dans l’arborescence DOM de l’outil **éléments** .  
@@ -179,7 +179,7 @@ En règle générale, il est possible que les outils tels que les **éléments**
 *   les  
 *   Applications Web progressives (PWAs)  
 *   autres problèmes courants liés au développement Web  
-
+    
 L’expérience [webhint][WebhintMain] affiche le commentaire de webhint dans le volet [problèmes][DevtoolsIssues] .  Sélectionnez un problème pour afficher la documentation de la solution et une liste des ressources affectées sur votre site Web.  Cliquez sur le lien d’une ressource pour ouvrir le volet **réseau**, **sources**ou **éléments** approprié dans devtools.  
 
 :::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="Commentaires de webhint dans le volet problèmes" lightbox="./media/experiments-webhint.msft.png":::
@@ -199,7 +199,7 @@ Après avoir activé l’expérience, assurez-vous de redémarrer l’DevTools. 
 1.  Ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez **modifier, puis relire**.  
 1.  Lorsque la **console réseau** s’ouvre, modifiez les informations de requête réseau.  
 1.  Cliquez sur **Envoyer**.  
-
+    
 :::image type="complex" source="./media/network-network-console.msft.png" alt-text="Console réseau dans le tiroir de la console" lightbox="./media/network-network-console.msft.png":::
    **Console réseau** dans le tiroir de la **console**  
 :::image-end:::  
@@ -216,7 +216,7 @@ Après avoir activé l’expérience, assurez-vous de redémarrer l’DevTools. 
 1.  Ouvrez le volet **accessibilité** dans le panneau du tiroir.  
 1.  Dans la section **visionneuse de commandes sources** , activez la case à cocher **afficher l’ordre source** .  
 1.  Mettez en surbrillance un élément HTML pour afficher une superposition de l’ordre dans la source de la page.  
-
+    
 :::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Visionneuse de commandes source dans le volet accessibilité" lightbox="./media/experiments-source-order-viewer.msft.png":::
    **Visionneuse de commandes source** dans le volet **accessibilité**  
 :::image-end:::  
@@ -265,13 +265,10 @@ Lorsque vous modifiez les raccourcis clavier pour une action, pour ignorer vos m
 
 Il est possible que vous souhaitiez visualiser des couches en plus des index z et du modèle d’objet document (DOM).  Cette fonctionnalité vous permet de déboguer sans basculer entre les contextes.  Vous avez identifié que le changement de contexte de réduction était un point essentiel.  Il n’est pas toujours évident de savoir comment le code que vous écrivez affecte votre application Web.  Pour une interface de débogage complète, l’affichage 3D et les couches composites sont désormais combinés.  Après avoir activé l’expérience, assurez-vous de redémarrer l’DevTools.  Pour utiliser des **couches composites**, procédez comme suit.  
 
-<!--1.  Navigate to a PWA-enabled website such as `twitter.com`.  
-1.  Choose the **Install ...** \(![Install PWA icon](./media/install-pwa-icon.msft.png)\) icon to install the Twitter PWA.  If it is already set up, open the app as usual.  
-1.  Open the Devtools.  -->  
 1.  Sur le tiroir, sélectionnez l’outil **affichage 3D** .  
 1.  Ouvrez le volet **couches composites** .  
 1.  Toutes les couches peintes de l’application sont affichées.  Essayez cette fonctionnalité avec vos propres applications Web.  
-
+    
 :::image type="complex" source="./media/experiments-layers.msft.png" alt-text="Volet couches composites" lightbox="./media/experiments-layers.msft.png":::
    Volet **couches composites**  
 :::image-end:::  
