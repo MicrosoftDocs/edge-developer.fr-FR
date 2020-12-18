@@ -3,16 +3,16 @@ description: Les extraits sont des petits scripts que vous pouvez créer et exé
 title: Exécuter des extraits de code JavaScript sur n’importe quelle page avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/29/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 3542243f7fa886865ced47d47991cd9b11001e2e
-ms.sourcegitcommit: 9dcaf598f3930bcfab9f93ff63463beb98274de0
+ms.openlocfilehash: 89b028177016a9194a67bbbe44d08572e5755f95
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "11145119"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230956"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +59,7 @@ L’utilisation d’extraits est un excellent moyen de changer quelques élémen
 
 Dans l’illustration suivante, la page Web s’affiche après l’exécution de l’extrait de code.  Le **tiroir** de la console s’affiche pour afficher le `Hello, Snippets!` message indiquant que le Snippet enregistre les journaux et le contenu de la page Web s’en trouve entièrement modifié.  
 
-:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="Avant d’exécuter l’extrait de." lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="La page Web après l’exécution de l’extrait" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
    La page Web après l’exécution de l’extrait  
 :::image-end:::  
 
@@ -67,7 +67,7 @@ Dans l’illustration suivante, la page Web s’affiche après l’exécution de
 
 Le volet d' **extraits** de liste répertorie vos extraits.  Lorsque vous voulez modifier un extrait de rapport, vous devez l’ouvrir à partir du volet **extraits** .  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="Avant d’exécuter l’extrait de." lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="Volet Snippets" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
    Volet **snippets**  
 :::image-end:::  
 
@@ -75,7 +75,7 @@ Le volet d' **extraits** de liste répertorie vos extraits.  Lorsque vous voulez
 
 1.  Sélectionnez l’onglet **sources** pour ouvrir l’outil **sources** .  Le volet **page** s’ouvre généralement par défaut.  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Avant d’exécuter l’extrait de." lightbox="../media/javascript-sources-page-pane.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Outil sources avec le volet pages ouvert à gauche" lightbox="../media/javascript-sources-page-pane.msft.png":::
        Outil **sources** avec le volet **pages** ouvert à gauche  
     :::image-end:::  
     
@@ -87,7 +87,7 @@ Le volet d' **extraits** de liste répertorie vos extraits.  Lorsque vous voulez
 1.  Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le menu de commandes.  
 1.  Tapez `Snippets` , choisissez **afficher les extraits**, puis sélectionnez `Enter` pour exécuter la commande.  
     
-    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="Avant d’exécuter l’extrait de." lightbox="../media/javascript-search-show-snippets.msft.png":::
+    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="Commande Afficher les extraits" lightbox="../media/javascript-search-show-snippets.msft.png":::
        Commande **afficher les extraits**  
     :::image-end:::  
     
@@ -99,7 +99,7 @@ Le volet d' **extraits** de liste répertorie vos extraits.  Lorsque vous voulez
 1.  Sélectionnez **nouvel extrait**.  
 1.  Entrez le nom de votre snippet, puis sélectionnez `Enter` Enregistrer.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Avant d’exécuter l’extrait de." lightbox="../media/javascript-sources-snippets-naming.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Nommer un snippet" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
        Nommer un snippet  
     :::image-end:::  
     
@@ -109,7 +109,7 @@ Le volet d' **extraits** de liste répertorie vos extraits.  Lorsque vous voulez
 1.  Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le menu de commandes.  
 1.  Tapez `Snippet` , choisissez **créer un nouvel extrait**, puis sélectionnez `Enter` pour exécuter la commande.  
     
-    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="Avant d’exécuter l’extrait de." lightbox="../media/javascript-search-create-new-snippet.msft.png":::
+    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="Commande de création d’un nouveau Snippet" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
        Commande de création d’un nouveau Snippet  
     :::image-end:::  
     
@@ -120,14 +120,14 @@ Pour renommer votre nouveau Snippet avec un nom personnalisé, accédez à [Reno
 1.  [Ouvrez le volet d' **extraits** ](#open-the-snippets-pane).  
 1.  Dans le volet **snippets** , sélectionnez le nom de l’extrait que vous voulez modifier.  Il s’ouvre dans l' **éditeur de code**.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="Avant d’exécuter l’extrait de." lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="Éditeur de code" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
        **Éditeur de code**  
     :::image-end:::  
     
 1.  Utilisez l' **éditeur de code** pour ajouter du JavaScript à votre snippet.  
 1.  Lorsqu’un astérisque apparaît en regard du nom de votre snippet, cela signifie que vous avez du code non enregistré.  Sélectionnez `Control` + `S` \ (Windows, Linux \) ou `Command` + `S` \ (MacOS \) pour l’enregistrer.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="Avant d’exécuter l’extrait de." lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="Un astérisque en regard du nom de l’extrait de code indique le code non enregistré" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
        Un astérisque en regard du nom de l’extrait de code indique le code non enregistré  
     :::image-end:::  
     
@@ -145,7 +145,7 @@ Pour renommer votre nouveau Snippet avec un nom personnalisé, accédez à [Reno
 1.  Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le menu de commandes.  
 1.  Supprimez le `>` caractère et tapez le `!` caractère suivi du nom de l’extrait que vous voulez exécuter.  
     
-    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Avant d’exécuter l’extrait de." lightbox="../media/javascript-search-run-command.msft.png":::
+    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Exécution d’un snippet à partir du menu de commandes" lightbox="../media/javascript-search-run-command.msft.png":::
        Exécution d’un snippet à partir du **menu de commandes**  
     :::image-end:::  
     
@@ -173,17 +173,17 @@ Pour renommer votre nouveau Snippet avec un nom personnalisé, accédez à [Reno
 <!-- links -->  
 
 [DevtoolsConsoleIndex]: ../console/index.md "Présentation de la console | Documents Microsoft"  
-[DevToolsSourcesTool]: ../sources.md "Présentation de l’outil sources | Documents Microsoft"  
+[DevToolsSourcesTool]: ../sources/index.md "Présentation de l’outil sources | Documents Microsoft"  
 [DevtoolsJavascriptOverrides]: ./overrides.md "Remplacements | Documents Microsoft"  
 
 [MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Bloc-notes | MDN"  
 [WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet | Wikipédia"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

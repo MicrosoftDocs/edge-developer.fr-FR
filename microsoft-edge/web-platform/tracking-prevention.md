@@ -3,16 +3,16 @@ description: Cette page fournit une documentation sur la fonctionnalité de prot
 title: Protection contre le suivi dans Microsoft Edge (chrome)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/05/2020
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, compatibilité, plateforme Web, prévention du suivi, suivis, cookies, stockage, blocage de publicités, blocage du suivi, protection contre le suivi
-ms.openlocfilehash: 2648f05c112a00e66eae85ed44adf22632a0524a
-ms.sourcegitcommit: 6860234c25a8be863b7f29a54838e78e120dbb62
+ms.openlocfilehash: a767e55a44c4d416b6d40ca12eb49f2c3a722010
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "10566669"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231149"
 ---
 # Protection contre le suivi dans Microsoft Edge (chrome)  
 
@@ -24,7 +24,7 @@ Microsoft Edge offre actuellement aux utilisateurs trois niveaux de protection c
 
 1.  **Basique** : niveau de protection le moins restrictif qui est conçu pour les utilisateurs qui apprécieront des publicités personnalisées et qui ne sont pas suivies sur le Web.  Basique protège uniquement les utilisateurs contre les suivis malveillants tels que les empreintes digitales et la cryptominers.  
 1.  **Équilibré (par défaut)** -niveau de suivi par défaut conçu pour les utilisateurs qui souhaitent afficher moins de publications sur le Web lors de leur navigation.  Équilibré a pour but de bloquer les suivis des sites que les utilisateurs ne peuvent pas utiliser tout en minimisant le risque de problèmes de compatibilité sur le Web.  
-1.  **Strict** Le niveau de prévention du suivi le plus restrictif est limité aux utilisateurs qui ont la même compatibilité avec le site Web pour une confidentialité optimale.  
+1.  **** Le niveau de prévention du suivi le plus restrictif est limité aux utilisateurs qui ont la même compatibilité avec le site Web pour une confidentialité optimale.  
 
 La fonctionnalité de protection contre le suivi de Microsoft Edge est composée de trois composants principaux qui travaillent ensemble pour déterminer si une ressource spécifique d’un site Web doit être classée comme suivi et bloquée.  Les composants sont les suivants:  
 
@@ -71,15 +71,15 @@ Le mode d’application appliqué dépend du niveau de prévention de suivi choi
 
 Pour vous assurer que la compatibilité Web est conservée le plus possible, Microsoft Edge a trois atténuations pour vous aider à équilibrer les mesures dans des situations spécifiques.  Il s’agit de l’atténuation de la [relation d’organisation](#org-relationship-mitigation), de l’atténuation de l’engagement de l' [organisation](#org-engagement-mitigation)et de la [liste CompatExceptions](#the-compatexceptions-list).  
 
-Avant de vous plonger dans les atténuations, il est préférable de définir le concept d’une «organisation» ou d’une «organisation» pour court.  La [déconnexion][|::ref3::|Main] gère également une liste appelée [Entities. JSON][GitHubDisconnectMeTrackingProtectionEntitiesJson] , qui définit des groupes d’URL appartenant à la même organisation ou société parente.  La fonctionnalité de protection contre le suivi de Microsoft Edge utilise cette liste à la fois dans l’atténuation de la [relation d’organisation](#org-relationship-mitigation) et dans le cadre de l’intervention de l' [organisation](#org-engagement-mitigation) pour limiter l’apparition de problèmes de compatibilité liés à une prévention affectant des demandes interentreprises.  
+Avant de vous plonger dans les atténuations, il est préférable de définir le concept d’une «organisation» ou d’une «organisation» pour court.  La [fonction de][GitHubDisconnectMeTrackingProtectionEntitiesJson] [déconnexion][|::ref3::|Main] gère également une liste appeléeentities.jsqui définit des groupes d’URL appartenant à la même organisation ou société parente.  La fonctionnalité de protection contre le suivi de Microsoft Edge utilise cette liste à la fois dans l’atténuation de la [relation d’organisation](#org-relationship-mitigation) et dans le cadre de l’intervention de l' [organisation](#org-engagement-mitigation) pour limiter l’apparition de problèmes de compatibilité liés à une prévention affectant des demandes interentreprises.  
 
 ### Réduction de la relation d’organisation  
 
-Plusieurs sites Web populaires permettent de gérer les sites Web et les réseaux de distribution de contenu (CDN \) pour fournir des ressources et du contenu statiques à ces sites.  Pour vous assurer que ces types de scénarios ne sont pas affectés par le suivi de la prévention, Microsoft Edge exempte un site de la prévention de suivi lorsque ce dernier effectue des demandes tierces à d’autres sites appartenant [à la même][GitHubDisconnectMeTrackingProtectionEntitiesJson]organisation mère  C’est le meilleur illustré par un exemple.  
+Plusieurs sites Web populaires permettent de gérer les sites Web et les réseaux de distribution de contenu (CDN \) pour fournir des ressources et du contenu statiques à ces sites.  Pour vous assurer que ces types de scénarios ne sont pas affectés par le suivi de la protection, Microsoft Edge exempte un site de la protection contre le suivi lorsque le site effectue des demandes tierces à d’autres sites appartenant à la même [entities.js][GitHubDisconnectMeTrackingProtectionEntitiesJson]organisation parente  C’est le meilleur illustré par un exemple.  
 
-> **Exemple :**
+> **Exemple:**
 > 
-> Une organisation nommée Org1 possède les domaines `org1.test` et `org1-cdn.test` , comme indiqué dans la [liste Disconnect Entities. JSON][GitHubDisconnectMeTrackingProtectionEntitiesJson].  Imaginez qu' `org1-cdn.test` il s’agit d’un suivi et que les mesures de prévention du suivi sont généralement appliquées.  Si un utilisateur effectue une visite `https://org1.test` et que le site essaie de charger une ressource `https://org1-cdn.test` , Microsoft Edge ne prend en charge aucune action de mise en application contre les demandes effectuées `org1-cdn.test` , même s’il ne s’agit pas d’une URL d’une première partie.  Toutefois, si une autre URL qui ne fait pas partie de l’organisation Org1 tente de charger cette même ressource, cette dernière fera l’objet de mises en œuvre, car elle ne fait pas partie de la même organisation.  
+> Une organisation nommée Org1 possède les domaines `org1.test` et `org1-cdn.test` , comme indiqué dans la [liste déconnecter entities.js][GitHubDisconnectMeTrackingProtectionEntitiesJson].  Imaginez qu' `org1-cdn.test` il s’agit d’un suivi et que les mesures de prévention du suivi sont généralement appliquées.  Si un utilisateur effectue une visite `https://org1.test` et que le site essaie de charger une ressource `https://org1-cdn.test` , Microsoft Edge ne prend en charge aucune action de mise en application contre les demandes effectuées `org1-cdn.test` , même s’il ne s’agit pas d’une URL d’une première partie.  Toutefois, si une autre URL qui ne fait pas partie de l’organisation Org1 tente de charger cette même ressource, cette dernière fera l’objet de mises en œuvre, car elle ne fait pas partie de la même organisation.  
 > 
 > Même si cela assouplit le suivi des mesures de prévention des sites qui appartiennent à la même organisation, il est peu probable que cela entraîne une forte probabilité de confidentialité dans la mesure où ces organisations sont en mesure de déterminer les sites ou ressources auxquels vous avez accédé à partir de `https://org1.test` `https://org1-cdn.test` données principales internes.  
 
@@ -87,7 +87,7 @@ Plusieurs sites Web populaires permettent de gérer les sites Web et les réseau
 
 L’atténuation de l’engagement de l’organisation a été créée pour réduire les risques de compatibilité introduits par le suivi de la prévention en s’assurant que les sites appartenant à des organisations dont les utilisateurs s’engagent à fonctionner comme prévu sur le Web.  Ce service utilise l' [engagement de site][ChromiumDesignDocsSiteEngagement] pour assouplir les vigueur dès qu’un utilisateur a établi une relation en cours (actuellement définie par un score d’engagement de 4,1 ou plus) sur un site donné.  C’est le meilleur illustré par un exemple:
 
-> **Exemple :**
+> **Exemple:**
 > 
 > Le nom d’une organisation est propriétaire de Domains `social.example` et `social-videos.example` .
 > 
@@ -119,8 +119,8 @@ Le tableau suivant répertorie les actions d’application et les atténuations 
 
 | | Publicité | Analytique | Contenu | Cryptomining | Empreinte digitale | Social | Other | Même réduction d’organisation | Réduction des engagements de l’Organisation |  
 | - | - | - | - | - | - | - | - | - | - | - |  
-| **De base** | - | - | - | B | B | - | - | Activé | N/A |  
-| **Manquant** | S | - | S | B | B | S | S | Activé | Activée |  
+| **De base** | - | - | - | B | B | - | - | Activé | Non applicable |  
+| **Manquant** | S | - | S | B | B | S | S | Activée | Activée |  
 | **Strict** | B | B | S | B | B | B | B | Activé | Désactivé |  
 
 > [!NOTE]
@@ -145,7 +145,7 @@ Le moyen le plus simple de déterminer s’il s’agit d’une URL spécifique c
     1.  Il est possible que vous souhaitiez effacer **les cookies et autres données de site** d’abord pour rétablir les scores d’engagement de site et garantir une ardoise entièrement claire.  
 1.  Recherchez les messages lus `Tracking Prevention blocked access to storage for <URL>` .  
     1.  Vous pouvez développer les messages pour afficher les URL individuelles bloquées.  
-1.  Si vous avez besoin d’identifier la catégorie dans laquelle se trouve un site bloqué spécifique, le moyen le plus facile de le faire consiste à la Rechercher dans la [liste de services de déconnexion. JSON][GitHubDisconnectTrackingProtectionCategories].  Les entrées sont classées par ordre alphabétique, de sorte que le défilement en haut d’un bloc d’entrées de site permet de rechercher la catégorie spécifique d’un site particulier.  
+1.  Si vous avez besoin d’identifier la catégorie dans laquelle se trouve un site bloqué spécifique, le moyen le plus simple est de le Rechercher dans la [liste déconnecter services.js][GitHubDisconnectTrackingProtectionCategories].  Les entrées sont classées par ordre alphabétique, de sorte que le défilement en haut d’un bloc d’entrées de site permet de rechercher la catégorie spécifique d’un site particulier.  
 
 > [!TIP]
 > Si vous avez besoin d’accéder aux listes de prévention du suivi stockées sur le disque, chacune d’elles se trouve dans l’un des deux emplacements suivantes.  
@@ -174,8 +174,8 @@ Comme nous l’avons dit, il est possible d’utiliser les options **bloquer** e
 
 <!-- image links -->  
 
-[ImageThreeSettingsTrackingPrevention]: ../media/web-platform/tracking-prevention/tracking-prevention-settings.png  
-[ImageBlockedTrackersPageInfoFlyout]: ../media/web-platform/tracking-prevention/page-info-flyout.png  
+[ImageThreeSettingsTrackingPrevention]: ./media/tracking-prevention-settings.png  
+[ImageBlockedTrackersPageInfoFlyout]: ./media/page-info-flyout.png  
 
 <!-- links -->  
 
@@ -186,7 +186,7 @@ Comme nous l’avons dit, il est possible d’utiliser les options **bloquer** e
 [DisconnectMain]: https://disconnect.me "Se"  
 
 [GitHubDisconnectMeTrackingProtection]: https://github.com/disconnectme/disconnect-tracking-protection "disconnectme/Disconnect-Track-protection | GitHub"  
-[GitHubDisconnectTrackingProtectionCategories]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/services.json "services. JSON-disconnectme/Disconnect-Track-protection | GitHub"  
-[GitHubDisconnectMeTrackingProtectionEntitiesJson]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json "Entities. JSON-disconnectme/Disconnect-suivi-protection | GitHub"  
+[GitHubDisconnectTrackingProtectionCategories]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/services.json "services.jssur-disconnectme/le suivi de la déconnexion-protection | GitHub"  
+[GitHubDisconnectMeTrackingProtectionEntitiesJson]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json "entities.jssur-disconnectme/le suivi de la déconnexion-protection | GitHub"  
 
 [GitHubMsExplainersStorageAccessApi]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md "Explainst Storage API-MSEdgeExplainers/StorageAccessAPI | GitHub"

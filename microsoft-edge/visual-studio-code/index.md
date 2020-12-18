@@ -7,14 +7,14 @@ ms.date: 11/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, code vs, code Visual Studio, débogueur, webhint
-ms.openlocfilehash: 0d13c6eb9411f89e3a681176ade0caf8d59d46d8
-ms.sourcegitcommit: 02c602379537ab3b9d0a355cea7fcf96fdbd8870
+ms.openlocfilehash: 1aa5b66043e87ebb0f1b848dcd60e2553b378f36
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "11182735"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230690"
 ---
-# VisualStudioCode  
+# Présentation du code Visual Studio  
 
 Le [code Visual Studio][VisualStudioCodeDocs] est un éditeur de code source léger, mais puissant.  Le [code Visual Studio][VisualStudioCodeDocs] est disponible pour Windows, Linux et MacOS.  Il inclut une prise en charge intégrée pour JavaScript, la machine à écrire et Node.js, donc c’est un excellent outil pour les développeurs Web avant de le personnaliser.  Si vous ne l’utilisez pas encore, téléchargez le [code Visual Studio][VisualstudioCode].  
 
@@ -110,5 +110,5 @@ Pour plus d’informations, accédez à [l’utilisation de webhint dans le code
 
 [VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Visual Studio Marketplace"  
 
-[WebhintMain]:  https://webhint.io "Astuce"  
+[WebhintMain]:  https://webhint.io "webhint"  
 [OpenjsFoundation]:  https://openjsf.org "OpenJS Foundation"  

@@ -3,16 +3,16 @@ description: Découvrez comment afficher et modifier des données IndexedDB à l
 title: Afficher et modifier des données de IndexedDB avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 54d232780e5e071ce34cdfb55e12daed6f631491
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 03e6d04050677a0ba153c6adc06dd795cc42115d
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125432"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231201"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -34,15 +34,15 @@ Ce guide vous montre comment utiliser [Microsoft Edge devtools][MicrosoftEdgeDev
 
 ## Afficher les données de IndexedDB  
 
-1.  Sélectionnez l’onglet **application** pour ouvrir le volet de l' **application** .  Le volet **manifeste** s’ouvre généralement par défaut.  
+1.  Sélectionnez l’onglet **application** pour ouvrir l’outil de l' **application** .  Le volet **manifeste** s’ouvre généralement par défaut.  
     
     :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-manifest-empty.msft.png":::
        Volet **manifeste**  
     :::image-end:::  
     
-1.  Développez le menu **IndexedDB** pour afficher les bases de données disponibles.  
+1.  Développez le menu **IndexedDB** pour connaître les bases de données disponibles.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="Menu de IndexedDB" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
        Menu de **IndexedDB**  
     :::image-end:::  
     
@@ -51,55 +51,55 @@ Ce guide vous montre comment utiliser [Microsoft Edge devtools][MicrosoftEdgeDev
     *   le **titre** et le **corps** sont des [index][MDNUsingIndexedDBUsingIndex].  
     
     > [!NOTE]
-    > **Limitation connue**  Les bases de données tierces ne sont pas visibles.  Par exemple, si vous utilisez un `<iframe>` pour incorporer une publicité sur votre page, et si votre réseau publicitaire utilise IndexedDB, les données IndexedDB pour votre réseau publicitaire ne sont pas visibles.  Voir [#943770 de problèmes][ChromiumIssue943770].  
+    > **Limitation connue**  Les bases de données tierces ne sont pas visibles.  Par exemple, si vous utilisez un `<iframe>` pour incorporer une publicité sur votre page, et si votre réseau publicitaire utilise IndexedDB, les données IndexedDB pour votre réseau publicitaire ne sont pas visibles.  Accédez à [#943770 problème][ChromiumIssue943770].  
     
-1.  Sélectionner une base de données pour afficher l’origine et le numéro de version.  
+1.  Choisissez une base de données pour vérifier l’origine et le numéro de version.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="La base de données Notes" lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
        La base de données **Notes**  
     :::image-end:::  
     
-1.  Sélectionnez un magasin d’objets pour afficher les paires clé-valeur.  
+1.  Sélectionnez un magasin d’objets pour passer en revue les paires clé-valeur.  
     
     > [!NOTE]
-    > Les données IndexedDB ne sont pas mises à jour en temps réel.  Voir [Actualiser les données de IndexedDB](#refresh-indexeddb-data).  
+    > Les données IndexedDB ne sont pas mises à jour en temps réel.  Accédez à [Actualiser les données de IndexedDB](#refresh-indexeddb-data).  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="Magasin d’objets notes" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
        Magasin d’objets **Notes**  
     :::image-end:::  
     
     *   Nombre **total d’entrées** est le nombre total de paires clé-valeur dans le magasin d’objets.  
-    *   **Valeur de générateur de clé** est la clé disponible suivante.  Ce champ est affiché uniquement lors de l’utilisation de [générateurs de touches][MDNBasicConceptsKeyGenerator].  
+    *   **Valeur de générateur de clé** est la clé disponible suivante.  Le champ est affiché uniquement lors de l’utilisation de [générateurs de touches][MDNBasicConceptsKeyGenerator].  
     
-1.  Sélectionnez une cellule dans la colonne **valeur** pour développer cette valeur.  
+1.  Choisissez une cellule dans la colonne **valeur** pour développer la valeur.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="Afficher une valeur IndexedDB" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
        Afficher une valeur **IndexedDB**  
     :::image-end:::  
     
-1.  Sélectionner un index, tel que **titre** ou **corps** dans l’illustration suivante, pour trier la Banque d’objets en fonction des valeurs de cet index.  
+1.  Choisissez un index, tel que **titre** ou **corps** dans l’illustration suivante, pour trier la Banque d’objets en fonction des valeurs de cet index.  
    
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="Trier un magasin d’objets par index" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
        Trier un magasin d’objets par index  
     :::image-end:::  
     
 ## Actualiser les données de IndexedDB  
 
-Les valeurs IndexedDB dans le panneau d' **application** ne sont pas mises à jour en temps réel.  Sélectionnez **Actualiser** \ ( ![ Actualiser ][ImageReloadIcon] \) lors de l’affichage d’un magasin d’objets pour actualiser les données, ou affichez une base de données et sélectionnez **Actualiser la base de données** pour actualiser toutes les données.  
+Les valeurs IndexedDB dans l’outil d' **application** ne sont pas mises à jour en temps réel.  Sélectionnez **Actualiser** \ ( ![ Actualiser ][ImageReloadIcon] \) lors de l’affichage d’un magasin d’objets pour actualiser les données, ou affichez une base de données et sélectionnez **Actualiser la base de données** pour actualiser toutes les données.  
 
-:::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
+:::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Affichage d’une base de données" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    Affichage d’une base de données  
 :::image-end:::  
 
 ## Modifier les données de IndexedDB  
 
-Les valeurs et les clés IndexedDB ne peuvent pas être modifiées dans le panneau de l' **application** .  Dans la mesure où DevTools a accès au contexte de page, vous pouvez exécuter du code JavaScript dans DevTools pour modifier les données IndexedDB.  
+Les valeurs et les clés de IndexedDB ne sont pas modifiables à partir de l’outil de l' **application** .  Dans la mesure où DevTools a accès au contexte de page, vous pouvez exécuter du code JavaScript dans DevTools pour modifier les données IndexedDB.  
 
 ### Modification de données IndexedDB avec des extraits de niveau  
 
 Les [extraits][DevtoolsJavascriptSnippets] de code permettent de stocker et d’exécuter des blocs de code JavaScript dans devtools.  Lorsque vous exécutez un snippet, le résultat est enregistré dans la **console**.  Vous pouvez utiliser un extrait de code pour exécuter du code JavaScript afin de modifier une base de données IndexedDB.  
 
-:::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
+:::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="Utiliser un snippet pour interagir avec IndexedDB" lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
    Utiliser un snippet pour interagir avec IndexedDB  
 :::image-end:::  
 
@@ -110,13 +110,13 @@ Les [extraits][DevtoolsJavascriptSnippets] de code permettent de stocker et d’
 1.  [Afficher un magasin d’objets IndexedDB](#view-indexeddb-data).  
 1.  Sélectionnez la paire clé-valeur que vous voulez supprimer.  DevTools le met en surbrillance pour indiquer qu’il est sélectionné.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Sélectionner une paire clé-valeur pour la supprimer" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
        Sélectionner une paire clé-valeur pour la supprimer  
     :::image-end:::  
     
 1.  Appuyez sur la `Delete` touche ou sélectionnez **Supprimer la sélection** \ (supprimer la ![ sélection ][ImageDeleteIcon] ).  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Aspect du magasin d’objets après la suppression de la paire clé-valeur" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
        Aspect du magasin d’objets après la suppression de la paire clé-valeur  
     :::image-end:::  
     
@@ -124,7 +124,7 @@ Les [extraits][DevtoolsJavascriptSnippets] de code permettent de stocker et d’
 
 1.  [Afficher un magasin d’objets IndexedDB](#view-indexeddb-data).  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="Afficher un magasin d’objets" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
        Afficher un magasin d’objets  
     :::image-end:::  
     
@@ -135,7 +135,7 @@ Les [extraits][DevtoolsJavascriptSnippets] de code permettent de stocker et d’
 1.  [Affichez la base de données IndexedDB](#view-indexeddb-data) que vous voulez supprimer.  
 1.  Cliquez sur **Supprimer la base de données**.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="Bouton supprimer la base de données" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
        Bouton **Supprimer la base de données**  
     :::image-end:::  
     
@@ -145,7 +145,7 @@ Les [extraits][DevtoolsJavascriptSnippets] de code permettent de stocker et d’
 1.  Vérifiez que la case à cocher **IndexedDB** est activée.  
 1.  Sélectionnez **effacer les données du site**.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
+    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="Vider le volet stockage" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
        Vider le volet **stockage**  
     :::image-end:::  
     
@@ -163,7 +163,7 @@ Les [extraits][DevtoolsJavascriptSnippets] de code permettent de stocker et d’
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
 [DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Exécution d’extraits de code JavaScript sur n’importe quelle page avec Microsoft Edge DevTools | Documents Microsoft"  
 
 [ChromiumIssue943770]: https://crbug.com/943770 "943770-DevTools: afficher les bases de données iframe IndexedDB-chrome-monorail"  
@@ -174,10 +174,10 @@ Les [extraits][DevtoolsJavascriptSnippets] de code permettent de stocker et d’
 [MDNUsingIndexedDBUsingIndex]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index "Utilisation d’un index à l’aide d’IndexedDB | MDN"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/indexeddb) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/indexeddb) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

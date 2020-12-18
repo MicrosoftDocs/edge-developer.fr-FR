@@ -3,16 +3,16 @@ description: Découvrez comment utiliser Microsoft Edge DevTools pour afficher e
 title: Examiner la grille CSS dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/22/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 150aea57aa676580b554cc74292671ed567a0a2c
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: 1fe6bd1c8efd244315fb9a38777df6ea3e9b1a4d
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134011"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231096"
 ---
 # Inspecter la grille CSS  
 
@@ -37,13 +37,13 @@ Lorsqu’un élément HTML de votre page l’a `display: grid` ou `display: inli
 
 Sélectionnez le badge pour basculer vers l’affichage d’une superposition de grille sur la page.  La superposition s’affiche au-dessus de l’élément, disposé comme une grille pour afficher la position des lignes et des pistes de la grille:  
 
-:::image type="complex" source="../media/grid-highlight-grid.msft.png" alt-text="Découvrir la grille" lightbox="../media/grid-highlight-grid.msft.png":::
+:::image type="complex" source="../media/grid-highlight-grid.msft.png" alt-text="Activer/désactiver le badge de grille" lightbox="../media/grid-highlight-grid.msft.png":::
    Activer/désactiver le badge de grille  
 :::image-end:::  
 
 Ouvrir le volet **disposition**  Lorsque les grilles sont incluses sur une page, le volet **disposition** inclut une section **grille** contenant un certain nombre d’options pour afficher les grilles.  
 
-:::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="Découvrir la grille" lightbox="../media/grid-layout-pane.msft.png":::
+:::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="Volet disposition" lightbox="../media/grid-layout-pane.msft.png":::
    Volet **disposition**  
 :::image-end:::  
 
@@ -82,7 +82,7 @@ Par défaut, les nombres de lignes positifs et négatifs sont affichés dans la 
 
 Pour plus d’informations sur les nombres négatifs dans la superposition de la grille, voir [placement en ligne avec CSS Grid][MdnLineBasedPlacementCssGrid].  
 
-:::image type="complex" source="../media/grid-show-line-numbers.msft.png" alt-text="Découvrir la grille" lightbox="../media/grid-show-line-numbers.msft.png":::
+:::image type="complex" source="../media/grid-show-line-numbers.msft.png" alt-text="Afficher les numéros de ligne" lightbox="../media/grid-show-line-numbers.msft.png":::
    Afficher les numéros de ligne  
 :::image-end:::  
 
@@ -90,20 +90,19 @@ Pour plus d’informations sur les nombres négatifs dans la superposition de la
 
 Pour masquer les numéros de ligne, sélectionnez **Masquer les étiquettes de lignes** .  
 
-:::image type="complex" source="../media/grid-hide-line-labels.msft.png" alt-text="Découvrir la grille" lightbox="../media/grid-hide-line-labels.msft.png":::
+:::image type="complex" source="../media/grid-hide-line-labels.msft.png" alt-text="Masquer les étiquettes de lignes" lightbox="../media/grid-hide-line-labels.msft.png":::
    Masquer les étiquettes de lignes  
 :::image-end:::  
 
 ### Afficher les noms de lignes  
 
-<!--todo: @rachel verify the link and text for line name -->  
 Pour plus d’informations sur les noms de lignes dans la superposition de grille, accédez à [disposition à l’aide de l’intitulé lignes de grille][MdnLayoutUsingNamedGridLines].  
 
 Sélectionnez **afficher les noms des lignes** pour afficher les noms de lignes au lieu de nombres.  Dans l’exemple, quatre lignes portent des noms: `left` , `middle1` ,, `middle2` et `right` .  
 
 <!--In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  -->  
 
-:::image type="complex" source="../media/grid-show-line-names.msft.png" alt-text="Découvrir la grille" lightbox="../media/grid-show-line-names.msft.png":::
+:::image type="complex" source="../media/grid-show-line-names.msft.png" alt-text="Afficher les noms de lignes" lightbox="../media/grid-show-line-names.msft.png":::
    **Afficher les noms de lignes**  
 :::image-end:::  
 
@@ -132,7 +131,7 @@ Les étiquettes de ligne de ligne n’affichent que des tailles calculées, car 
 | **80px** | &nbsp;| 80px |  
 | **80px** | &nbsp;| 80px |  
 
-:::image type="complex" source="../media/grid-show-track-sizes.msft.png" alt-text="Découvrir la grille" lightbox="../media/grid-show-track-sizes.msft.png":::
+:::image type="complex" source="../media/grid-show-track-sizes.msft.png" alt-text="Afficher les tailles de suivi" lightbox="../media/grid-show-track-sizes.msft.png":::
    **Afficher les tailles de suivi**  
 :::image-end:::  
 
@@ -140,7 +139,7 @@ Les étiquettes de ligne de ligne n’affichent que des tailles calculées, car 
 
 Pour afficher les noms de zone, activez la case à cocher **afficher les noms des zones** .  Dans l’exemple, il existe 3 zones dans la grille: **Top**, **bottom1** et **bottom2**.  
 
-:::image type="complex" source="../media/grid-show-area-names.msft.png" alt-text="Découvrir la grille" lightbox="../media/grid-show-area-names.msft.png":::
+:::image type="complex" source="../media/grid-show-area-names.msft.png" alt-text="Afficher les noms des zones" lightbox="../media/grid-show-area-names.msft.png":::
    **Afficher les noms des zones**  
 :::image-end:::  
 
@@ -148,7 +147,7 @@ Pour afficher les noms de zone, activez la case à cocher **afficher les noms de
 
 Activez la case à cocher **prolonger les lignes de grille** pour étendre les lignes de la grille au bord de la fenêtre d’affichage, le long de chaque axe.  
 
-:::image type="complex" source="../media/grid-extend-grid-lines.msft.png" alt-text="Découvrir la grille" lightbox="../media/grid-extend-grid-lines.msft.png":::
+:::image type="complex" source="../media/grid-extend-grid-lines.msft.png" alt-text="Prolonger le quadrillage" lightbox="../media/grid-extend-grid-lines.msft.png":::
    **Prolonger le quadrillage**  
 :::image-end:::  
 
@@ -158,14 +157,12 @@ La section **façades de grille** contient une liste des grilles présentes dans
 
 ### Activer les vues de superposition de plusieurs grilles  
 
-<!--todo: @zoher verify and provide updates -->  
-
 Pour afficher la grille Overlay pour plusieurs grilles, activez la case à cocher en regard de chaque nom de la grille.  Dans l’exemple, il est possible d’activer 2 superpositions de grille avec des couleurs différentes.  
 
 *   `main`  
 *   `div.snack-box`  
     
-:::image type="complex" source="../media/grid-grid-overlays.msft.png" alt-text="Découvrir la grille" lightbox="../media/grid-grid-overlays.msft.png":::
+:::image type="complex" source="../media/grid-grid-overlays.msft.png" alt-text="Activer les vues de superposition de plusieurs grilles" lightbox="../media/grid-grid-overlays.msft.png":::
    Activer les vues de superposition de plusieurs grilles  
 :::image-end:::  
 
@@ -173,7 +170,7 @@ Pour afficher la grille Overlay pour plusieurs grilles, activez la case à coche
 
 Pour ouvrir le sélecteur de couleurs et personnaliser la couleur de superposition de la grille, sélectionnez la zone en regard du nom de la superposition de la grille.  
 
-:::image type="complex" source="../media/grid-grid-overlays-color.msft.png" alt-text="Découvrir la grille" lightbox="../media/grid-grid-overlays-color.msft.png":::
+:::image type="complex" source="../media/grid-grid-overlays-color.msft.png" alt-text="Personnaliser la couleur de superposition de la grille" lightbox="../media/grid-grid-overlays-color.msft.png":::
    Personnaliser la couleur de superposition de la grille  
 :::image-end:::  
 
@@ -181,7 +178,7 @@ Pour ouvrir le sélecteur de couleurs et personnaliser la couleur de superpositi
 
 Pour mettre en surbrillance l’élément HTML dans le panneau **éléments** et y faire défiler dans la page Web, sélectionnez l' **élément afficher dans le panneau éléments** \ ( ![ élément d’affichage de l’icône \) du panneau éléments ][ImageShowElementInElementsPanelIcon] .  
 
-:::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Découvrir la grille" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
+:::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Mettre en surbrillance la grille" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
    Mettre en surbrillance la grille  
 :::image-end:::  
 
@@ -195,7 +192,7 @@ Pour mettre en surbrillance l’élément HTML dans le panneau **éléments** et
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
 
 [JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "Grille CSS | JEC. Money"  
 [JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "Grille CSS | JEC. Money"  
@@ -205,10 +202,10 @@ Pour mettre en surbrillance l’élément HTML dans le panneau **éléments** et
 [MdnLineBasedPlacementCssGrid]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid "Placement en ligne avec grille CSS | MDN"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/css/grid) et est créée par [Jecelyn Yeen][JecelynYeen] \ (développeurs, chrome devtools \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/css/grid) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

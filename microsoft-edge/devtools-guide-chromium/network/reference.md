@@ -3,16 +3,16 @@ description: Référence complète des fonctionnalités du panneau réseau de Mi
 title: Référence d’analyse du réseau
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/08/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 4d4dc8ad5102766f3ad3c8322dbf9342a69e9097
-ms.sourcegitcommit: 6571bcc0b7f1c4c9d6ead65081374bab87cd4469
+ms.openlocfilehash: c600197ffa0e415fe42aecc704a523d1b23f8260
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "11203905"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230753"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -972,7 +972,7 @@ Par défaut, DevTools affiche le volet **vue d’ensemble** .  Pour le masquer, 
 
 <!-- links -->  
 
-[DevtoolsProgressiveWebApps]: ../progressive-web-apps.md "Déboguer des applications Web progressives | Documents Microsoft"  
+[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Déboguer des applications Web progressives | Documents Microsoft"  
 
 <!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->  
 
@@ -981,10 +981,10 @@ Par défaut, DevTools affiche le volet **vue d’ensemble** .  Pour le masquer, 
 [WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Serveur proxy-Wikipédia"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/reference) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

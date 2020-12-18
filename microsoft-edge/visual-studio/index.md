@@ -3,16 +3,16 @@ description: Microsoft Edge (chrome) et Visual Studio
 title: Visual Studio
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/20/2019
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, vs, Visual Studio, débogueur
-ms.openlocfilehash: 3fc2e2c3dc21689d8c378ccbe33e4dff813ea12f
-ms.sourcegitcommit: b88d2a55a59db8373ff2bac275d3730977bf19c9
+ms.openlocfilehash: f3796a040fe6c658211b4009445b5c179ab9b077
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986191"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231208"
 ---
 # Visual Studio
 
@@ -76,7 +76,7 @@ Le débogueur JavaScript dans Visual Studio va appuyer sur le point d’arrêt d
 > ##### Figure8
 > Visual Studio suspend JavaScript en cours d’exécution dans Microsoft Edge ![ Visual Studio suspendre JavaScript en cours d’exécution dans Microsoft Edge](./media/hit-breakpoint.png)  
 
-Cet exemple ne s’agissait que d’une simple démonstration des fonctionnalités disponibles dans Visual Studio. Pour plus d’informations sur les opérations que vous pouvez effectuer dans Visual Studio 2019, consultez la [documentation](https://docs.microsoft.com/visualstudio/windows/?view=vs-2019)correspondante.
+Cet exemple ne s’agissait que d’une simple démonstration des fonctionnalités disponibles dans Visual Studio. Pour plus d’informations sur les opérations que vous pouvez effectuer dans Visual Studio 2019, consultez la [documentation](/visualstudio/windows/?view=vs-2019&preserve-view=true)correspondante.
 
 ## Joindre à Microsoft Edge
 Dans le flux de travail précédent, Visual Studio lance Microsoft Edge. Avec ce flux de travail, vous serez en mesure de joindre Visual Studio Debugger à une instance déjà en cours d’exécution de Microsoft Edge. 

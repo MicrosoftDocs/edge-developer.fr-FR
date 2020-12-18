@@ -3,16 +3,16 @@ description: Utilisez le volet média pour afficher des informations et débogue
 title: Afficher et déboguer les informations sur les lecteurs multimédias
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/08/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: dfcf17861c0296e347007bc3a1a02a2b80661e6f
-ms.sourcegitcommit: 912609aa49864e3363aaa3b245ff2aa4bec3fc3e
+ms.openlocfilehash: e6259cf573b76df7e281527ad30360b8f473a165
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11105186"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230949"
 ---
 # Afficher et déboguer les informations sur les lecteurs multimédias  
 
@@ -38,25 +38,25 @@ Le panneau **média** est l’emplacement principal de devtools pour l’examen 
 1.  Dans le menu des **joueurs** , un lecteur multimédia est affiché.  
 1.  Sélectionnez le joueur.  L’onglet **Propriétés** affiche les propriétés du lecteur multimédia.  
     
-    :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Panneau multimédia" lightbox="../media/media-panel-view.msft.png":::
+    :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Propriétés du média" lightbox="../media/media-panel-view.msft.png":::
        Propriétés du média  
     :::image-end:::  
     
 1.  Pour afficher tous les événements du lecteur multimédia, sélectionnez l’onglet **Events (événements** ).  
     
-    :::image type="complex" source="../media/media-panel-events.msft.png" alt-text="Panneau multimédia" lightbox="../media/media-panel-events.msft.png":::
+    :::image type="complex" source="../media/media-panel-events.msft.png" alt-text="Événements multimédias" lightbox="../media/media-panel-events.msft.png":::
        Événements multimédias  
     :::image-end:::  
     
 1.  Pour afficher les journaux du message du lecteur multimédia, sélectionnez l’onglet **messages** .  Vous pouvez filtrer les messages par niveau de journal ou chaîne.  
     
-    :::image type="complex" source="../media/media-panel-messages.msft.png" alt-text="Panneau multimédia" lightbox="../media/media-panel-messages.msft.png":::
+    :::image type="complex" source="../media/media-panel-messages.msft.png" alt-text="Messages multimédias" lightbox="../media/media-panel-messages.msft.png":::
        Messages multimédias  
     :::image-end:::  
     
 1.  Dans l’onglet **chronologie** , la lecture multimédia et l’état de la mémoire tampon sont affichés en temps réel.  
     
-    :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Panneau multimédia" lightbox="../media/media-panel-timeline.msft.png":::
+    :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Barre de Planning multimédia" lightbox="../media/media-panel-timeline.msft.png":::
        Barre de Planning multimédia  
     :::image-end:::  
     
@@ -69,7 +69,7 @@ Affichez les informations sur les lecteurs multimédias sur un appareil Android 
     
     <!-- TODO: recreate image using an Android device -->  
     <!--  
-    :::image type="complex" source="../media/media-panel-remote-debug.msft.png" alt-text="Panneau multimédia" lightbox="../media/media-panel-remote-debug.msft.png":::
+    :::image type="complex" source="../media/media-panel-remote-debug.msft.png" alt-text="Remote debugging" lightbox="../media/media-panel-remote-debug.msft.png":::
        Remote debugging  
     :::image-end:::  
     -->  
@@ -85,7 +85,7 @@ Il est possible que vous deviez masquer \ (ou afficher \) chaque lecteur multim�
     *   Pour masquer un lecteur multimédia, pointez sur un lecteur multimédia, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \) et sélectionnez **masquer le joueur**.  
     *   Pour masquer tous les autres lecteurs multimédias, pointez sur un lecteur multimédia, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \) et sélectionnez **masquer tous les autres**.  
     
-    :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Panneau multimédia" lightbox="../media/media-panel-hide-show.msft.png":::
+    :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Masquer des lecteurs multimédias" lightbox="../media/media-panel-hide-show.msft.png":::
        Masquer des lecteurs multimédias  
     :::image-end:::  
     
@@ -93,7 +93,7 @@ Il est possible que vous deviez masquer \ (ou afficher \) chaque lecteur multim�
 
 1.  Pour télécharger les informations du lecteur multimédia sous forme de fichier JSON, pointez sur un lecteur multimédia, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez **enregistrer les informations du joueur**.  
     
-    :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Panneau multimédia" lightbox="../media/media-panel-save.msft.png":::
+    :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Exporter des informations sur le média" lightbox="../media/media-panel-save.msft.png":::
        Exporter des informations sur le média  
     :::image-end:::  
     
@@ -103,17 +103,17 @@ Il est possible que vous deviez masquer \ (ou afficher \) chaque lecteur multim�
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open.md "Ouvrir Microsoft Edge DevTools"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Ouvrir Microsoft Edge (chrome) DevTools | Documents Microsoft"  
 
 [DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Commencer à utiliser le débogage à distance des appareils Android | Documents Microsoft"  
 
 [BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Optimisation de la productivité grâce aux outils de développement Edge | Bing Video"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) et est créée par [Jecelyn Yeen][JecelynYeen] \ (développeurs, chrome devtools \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

@@ -3,16 +3,16 @@ description: Utilisez l’instrumentation d’allocation sur la barre de plannin
 title: Utilisation de l’instrumentation d’allocation sur une barre de planning
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 1e76e3459128be5b659d790163ef62447dd97ae4
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 946c2d8b45f316b491a604c16c37bb2467983222
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125446"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230914"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -56,7 +56,7 @@ Pour commencer à utiliser l' **instrumentation d’allocation sur la chronologi
 1.  Ouvrez le panneau **mémoire** , sélectionnez la case **d’option attribution de l’instrumentation sur la chronologie** .  
 1.  Démarrer l’enregistrement.  
     
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Instrumentation d’allocation sur une barre de planning" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Enregistrer le profil d’allocation du tas" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
        Enregistrer le profil d’allocation du tas  
     :::image-end:::  
     
@@ -66,7 +66,7 @@ La chronologie de l’allocation du tas montre l’emplacement de création des 
 
 La hauteur de chaque barre correspond à la taille des objets récemment alloués, et la couleur des barres indique si ces objets sont toujours présents dans l’instantané final du tas.  Les barres bleues indiquent les objets qui sont toujours en temps réel à la fin de la chronologie, car ils indiquent des objets qui ont été alloués lors de la chronologie, mais qui ont été collectés par le garbage collector.  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Instrumentation d’allocation sur une barre de planning" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
+:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Instrumentation d’allocation sur un instantané de chronologie" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
    **Instrumentation d’allocation sur un instantané de chronologie**  
 :::image-end:::  
 
@@ -75,7 +75,7 @@ La hauteur de chaque barre correspond à la taille des objets récemment alloué
 
 Vous pouvez utiliser les curseurs de la chronologie ci-dessus pour effectuer un zoom sur cet instantané particulier et passer en revue les objets qui ont été récemment attribués à ce point:  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Instrumentation d’allocation sur une barre de planning" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Effectuer un zoom avant sur un instantané" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
    Effectuer un zoom avant sur un instantané  
 :::image-end:::  
 
@@ -91,7 +91,7 @@ Vous pouvez afficher l’allocation de mémoire par fonction JavaScript.  Pour p
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: ../open.md "Ouvrir Microsoft Edge (chrome) DevTools | Documents Microsoft"
+[DevToolsOpenIndex]: ../open/index.md "Ouvrir Microsoft Edge (chrome) DevTools | Documents Microsoft"
 [DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Analyser l’allocation de mémoire par fonction-résoudre les problèmes de mémoire Documents Microsoft"  
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
@@ -100,10 +100,10 @@ Vous pouvez afficher l’allocation de mémoire par fonction JavaScript.  Pour p
 [MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Télécharger un canal Microsoft Edge"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) et est créée par [Meggin Kearney][MegginKearney] \ (Technical Writer \).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

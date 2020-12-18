@@ -3,19 +3,19 @@ description: Découvrez comment tester votre site Web ou votre application dans 
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/25/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, développement Web, html, CSS, JavaScript, développeur, Web Driver, sélénium, test, outils, Automation, test
-ms.openlocfilehash: 3c197a83dbf16c68102ff6e9a4ee6f33b0573af2
-ms.sourcegitcommit: 2e14ff82350f700d7eabc8d33b3ec3e5fc8c61fa
+ms.openlocfilehash: 5e881eec59c966fd4fa6d35118032a3a51e7b9e5
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "11192247"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231128"
 ---
-# Utiliser le WebDriver (chrome) pour l’automatisation des tests  
+# Utiliser le WebDriver (chrome) pour la vue d’ensemble de test Automation  
 
 Le WebDriver vous permet d’effectuer des tests automatisés pour simuler l’interaction de l’utilisateur.  Les tests et simulations du lecteur WebPart diffèrent des tests unitaires JavaScript pour les raisons suivantes:  
 
@@ -36,19 +36,21 @@ Pour commencer à automatiser les tests, procédez comme suit pour vous assurer 
 
 1.  Accédez à `edge://settings/help` la version de Microsoft Edge.  
     
-    :::image type="complex" source="../media/webdriver-chromium/edge-version.png" alt-text="Numéro de build de l’Canaries Microsoft Edge le 14 janvier 2020" lightbox="../media/webdriver-chromium/edge-version.png":::
-       Numéro de build de l’Canaries Microsoft Edge le 14 janvier 2020  
+    :::image type="complex" source="./media/edge-version.png" alt-text="Numéro de build de l’Canaries Microsoft Edge le 14 janvier 2020":::
+       Numéro de build de l’Canaries Microsoft Edge le 14 janvier 2020
     :::image-end:::  
     
 1.  Accédez à la page de [téléchargements de pilotes Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriverDownloads] et téléchargez le pilote correspondant au numéro de version de Microsoft Edge.  
     
-    :::image type="complex" source="../media/webdriver-chromium/edge-driver-install.png" alt-text="Section téléchargements de la page du pilote Microsoft Edge" lightbox="../media/webdriver-chromium/edge-driver-install.png":::
-       Section téléchargements de la page du [pilote Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver]  
+    :::image type="complex" source="./media/edge-driver-install.png" alt-text="Section téléchargements de la page du pilote Microsoft Edge":::
+       Section téléchargements de la page du [pilote Microsoft Edge][MicrosoftDeveloperEdgeToolsWebdriver]
     :::image-end:::  
     
+    <!--  
     > [!NOTE] 
-    > Pour plus d’informations sur l’automatisation des tests à l’aide de Microsoft Edge \ (EdgeHTML \), voir [Microsoft WebDriver pour Microsoft Edge (EdgeHTML)][Webdriver].  
-    
+    > For more information about test automation using Microsoft Edge (EdgeHTML), see [Microsoft WebDriver for Microsoft Edge (EdgeHTML)][Webdriver].  
+    -->  
+
 ## Choisir une liaison de langue du WebDriver  
 
 Le dernier composant que vous devez télécharger est un pilote client propre à la langue, qui permet de traduire votre code \ (Python, Java, C \ #, Rubi, JavaScript \) en commandes exécutées par le pilote Microsoft Edge.  
@@ -326,14 +328,14 @@ Pour plus d’informations, consultez [conteneur sur le hub de l’ancrage][Dock
 
 L’équipe Microsoft Edge a hâte d’entendre vos commentaires concernant l’utilisation de WebDriver, de sélénium et de Microsoft Edge.  Pour indiquer à l’équipe votre avis, sélectionnez l’icône **Envoyer des commentaires** dans Microsoft Edge devtools ou envoyez un tweet [@EdgeDevTools][TwitterTweetEdgeDevTools].  
 
-:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="Icône Envoyer des commentaires dans Microsoft Edge DevTools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="L’icône Envoyer des commentaires dans Microsoft Edge DevTools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    Icône **Envoyer des commentaires** dans Microsoft Edge devtools  
 :::image-end:::  
 
 <!-- links -->  
 
-[DevToolsMain]: ../devtools-guide-chromium.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"
-[Webdriver]: ../webdriver.md "Web Driver (EdgeHTML) | Documents Microsoft"  
+[DevToolsMain]: ../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"
+[Webdriver]: ../webdriver/index.md "Web Driver (EdgeHTML) | Documents Microsoft"  
 
 [DeployedgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability-Microsoft Edge-politiques | Documents Microsoft"  
 

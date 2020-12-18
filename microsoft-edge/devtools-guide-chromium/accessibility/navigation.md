@@ -3,16 +3,16 @@ description: Guide sur la navigation dans Microsoft Edge DevTools à l’aide de
 title: Navigation dans Microsoft Edge DevTools avec la technologie d’assistance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: f4ec63a0d432925b7db99ce695db66dd61f8bcf1
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: d72c856e9136291e9255b3784aad7c6cd99f92fc
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125292"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230809"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -30,7 +30,7 @@ ms.locfileid: "11125292"
 
 # Navigation dans Microsoft Edge DevTools avec la technologie d’assistance  
 
-L’article suivant a pour but de permettre aux utilisateurs qui s’appuient essentiellement sur la technologie d’assistance comme les lecteurs d’écran d’accéder et d’utiliser [Microsoft Edge devtools][MicrosoftEdgeDevtoolsMain].  [Microsoft Edge devtools][MicrosoftEdgeDevtoolsMain] est une suite d’outils de développement Web intégrés au navigateur Microsoft Edge.  Pour plus d’informations sur les fonctionnalités d’DevTools liées à l’amélioration de l’accessibilité d’une page Web, voir informations de référence sur l' [accessibilité][DevtoolsAccessibilityReference].  
+L’article suivant a pour but de permettre aux utilisateurs qui s’appuient essentiellement sur la technologie d’assistance comme les lecteurs d’écran d’accéder et d’utiliser [Microsoft Edge devtools][MicrosoftEdgeDevtoolsMain].  [Microsoft Edge devtools][MicrosoftEdgeDevtoolsMain] est une suite d’outils de développement Web intégrés au navigateur Microsoft Edge.  Si vous recherchez des fonctionnalités DevTools liées à l’amélioration de l’accessibilité d’une page Web, accédez à référence sur l' [accessibilité][DevtoolsAccessibilityReference].  
 
 L’accessibilité de DevTools est une opération en cours.  Certains panneaux et onglets fonctionnent mieux avec les technologies d’assistance.  Ce guide vous guide à travers les écrans qui sont les plus accessibles et met en surbrillance des problèmes spécifiques que vous pouvez rencontrer.  
 
@@ -44,7 +44,7 @@ Par exemple:
 *   Le [panneau Console][DevtoolsConsoleIndex] vous permet de lire les journaux JavaScript et de modifier les objets dynamiques.  
 
 Dans la zone de contenu de chaque panneau, il existe un certain nombre d’outils différents, souvent désignés sous le nom d’onglets ou de volets dans la documentation.  
-Par exemple, le panneau **éléments** contient d’autres onglets pour inspecter les écouteurs d’événements, l’arborescence d’accessibilité, et bien plus encore.  La distinction entre les onglets et les volets est un peu arbitraire.  La seule raison pour laquelle il est possible que vous voyiez un terme ou l’autre consiste à assurer une cohérence avec le reste de la documentation relative au DevTools officiel.  
+Par exemple, le panneau **éléments** contient d’autres onglets pour inspecter les écouteurs d’événements, l’arborescence d’accessibilité, et bien plus encore.  La distinction entre les onglets et les volets est un peu arbitraire.  La seule raison pour laquelle il est possible que vous deviez examiner un terme ou l’autre consiste à assurer une cohérence avec le reste de la documentation officielle DevTools.  
 
 ## Raccourcis clavier  
 
@@ -244,7 +244,7 @@ Pour effectuer un nouvel audit, utilisez `Shift` + `Tab` pour quitter le rapport
 
 [DevtoolsAccessibilityReference]: ./reference.md "Référence d’accessibilité | Documents Microsoft"  
 [DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "Volet accessibilité-référence de l’accessibilité | Documents Microsoft"  
-[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
+[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes à l’aide du menu de commandes de Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsConsoleIndex]: ../console/index.md "Présentation de la console | Documents Microsoft"  
 [DevtoolsCssIndex]: ../css/index.md "Découvrir comment afficher et modifier des feuilles CSS | Documents Microsoft"  
@@ -252,9 +252,9 @@ Pour effectuer un nouvel audit, utilisez `Shift` + `Tab` pour quitter le rapport
 <!--[DevtoolsDomIndex]: ../dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  -->  
 [DevtoolsDomIndexViewDomNodes]: .. /Dom/index.MD # View-DOM-Nodes "afficher les nœuds DOM-découvrir comment afficher et modifier le DOM | Documents Microsoft  
 [DevtoolsDomIndexNavigateDomTreeKeyboard]: .. /Dom/index.MD # navigation------------------------------------------------- Documents Microsoft  
-[DevtoolsOpen]: .. /open.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft  
-[DevtoolsShortcuts]: .. /shortcuts.md "raccourcis clavier de Microsoft Edge DevTools | Documents Microsoft  
-[DevtoolsShortcutsStylesPaneKeyboard]: .. /Shortcuts.MD # styles-volet-raccourcis clavier-raccourcis clavier du volet de styles-raccourcis clavier de Microsoft Edge DevTools | Documents Microsoft  
+[DevtoolsOpen]: .. /Open/index.MD "Ouvrez Microsoft Edge DevTools | Documents Microsoft  
+[DevtoolsShortcuts]: .. /shortcuts/index.MD "raccourcis clavier Microsoft Edge DevTools | Documents Microsoft  
+[DevtoolsShortcutsStylesPaneKeyboard]: .. /shortcuts/index.MD # styles-volet-raccourcis clavier-raccourcis clavier du volet de styles-raccourcis clavier de Microsoft Edge DevTools | Documents Microsoft  
 
 [ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Problème 868480-exposer les arborescences ARIA sous forme de tableaux dans l’accessibilité Mac"  
 
@@ -269,10 +269,10 @@ Pour effectuer un nouvel audit, utilisez `Shift` + `Tab` pour quitter le rapport
 [W3CWaiAriaTree]: https://www.w3.org/TR/wai-aria-1.1/#tree "arborescence (rôle)-applications Internet riches accessibles (WAI-ARIA) 1,1 | W3C"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) et est créée par [Rob Dodson][RobDodson] \ (Contributor, Google Web Fundamentals).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

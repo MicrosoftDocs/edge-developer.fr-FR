@@ -1,21 +1,22 @@
 ---
+description: Émuler les déficiences de la vision dans Microsoft Edge DevTools.
 title: Émuler les déficiences de la vision dans Microsoft Edge DevTools (cécité des couleurs)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/29/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools
-ms.openlocfilehash: b70499fa189d162fa7589966bab183f4c12f68f7
-ms.sourcegitcommit: 0048eb692d49eab4755c0c3ef6866e6a9122d579
+keywords: Microsoft Edge, développement web, outils F12, devtools
+ms.openlocfilehash: 5343d32992880f8c60501a86db6cb3a92f417331
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "10843920"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230823"
 ---
-# Émuler les déficiences de la vision
+# Émuler les faiblesses de la vision
 
-Pour mieux répondre aux besoins de vos utilisateurs grâce à la déficience de la [couleur][ColorblindawarenessMain] (en aveugle \), [Microsoft Edge devtools][MicrosoftEdgeDevTools] vous permet de simuler des défauts de vision spécifiques.  L’outil **émuler les déficiences** de la vision simule les catégories suivantes.  
+Pour mieux répondre aux besoins de vos utilisateurs grâce à la déficience de la [couleur][ColorblindawarenessMain] (en aveugle \), [Microsoft Edge devtools][DevtoolsIndex] vous permet de simuler des défauts de vision spécifiques.  L’outil **émuler les déficiences** de la vision simule les catégories suivantes.  
 
 | Déficience de la vision couleur | Détails |  
 |:--- |:--- |  
@@ -27,11 +28,11 @@ Pour mieux répondre aux besoins de vos utilisateurs grâce à la déficience de
 
 ## Accéder aux outils de rendu  
 
-Pour simuler une déficience de vision pour votre produit Web, ouvrez les [outils de rendu][RenderingTools].  
+Pour simuler une déficience de vision pour votre produit Web, ouvrez les [outils de rendu][DevtoolsRenderingToolsIndex].  
 
-1.  Ouvrir les outils de rendu en sélectionnant l' `...` élément de menu dans la barre d’outils  
-1.  Sélectionner `More tools`  
-1.  Sélectionner `Rendering`  
+1.  Pour ouvrir les outils de rendu, en choisissant l' `...` élément de menu dans la barre d’outils  
+1.  Choisir `More tools`  
+1.  Choisir `Rendering`  
     
     :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Ouverture des outils de rendu" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
        Ouverture des **outils de rendu**  
@@ -51,7 +52,7 @@ Le menu **rendu** s’affiche dans le tiroir.
        Options de menu **émuler la vision carences**  
     :::image-end:::  
     
-1.  La fenêtre principale de Windows affiche la simulation de l’option sélectionnée appliquée à la page active.  
+1.  La fenêtre principale de Windows affiche la simulation de l’option choisie appliquée à la page active.  
     
     :::row:::
        :::column span="":::
@@ -69,13 +70,13 @@ Le menu **rendu** s’affiche dans le tiroir.
 
 Vous pouvez également utiliser le **menu de commandes** pour accéder aux différentes simulations.  
 
-1.  Appuyez sur `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
+1.  Sélectionnez `Control` + `Shift` + `P` \ (Windows \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Menu de commandes" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        **Menu de commandes**  
     :::image-end:::  
     
-1.  Tapez `emulate` , sélectionnez ce que vous voulez simuler et appuyez sur `Enter` .  
+1.  Tapez `emulate` , sélectionnez ce que vous voulez simuler et sélectionnez `Enter` .  
     
     :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="Différentes options de simulation disponibles dans le menu de commandes" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
        Différentes options de simulation disponibles dans le **menu de commandes**  
@@ -86,7 +87,10 @@ Vous pouvez également utiliser le **menu de commandes** pour accéder aux diff�
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Outils de développement Microsoft Edge (chrome)"  
+[DevtoolsIndex]: ../index.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
+[DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analyser les performances au moment de l’exécution | Documents Microsoft"  
+
 [ColorblindawarenessMain]: http://www.colourblindawareness.org "Organisme de sensibilisation couleur aveugle"  
+
 [AmfcbMain]: https://www.amfcb.org "L’American Foundation pour les aveugles en couleur (AFCB)"  
-[RenderingTools]: /microsoft-edge/devtools-guide-chromium/rendering-tools "Outils de rendu Microsoft Edge (chrome)"  
+

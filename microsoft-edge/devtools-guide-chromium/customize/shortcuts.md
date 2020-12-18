@@ -3,16 +3,16 @@ description: Faire correspondre les raccourcis clavier du DevTools au code Visua
 title: Personnaliser les raccourcis clavier dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/21/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement Web, outils F12, devtools, personnalisé, raccourcis, clavier, code Visual Studio
-ms.openlocfilehash: 2af2ea5c17e699ded6f2163d08a74d1f094ea4e8
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: d7cae5a7718c48f9665b17e59bd006bacd27d4ee
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11133889"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230907"
 ---
 # Personnaliser les raccourcis clavier dans Microsoft Edge DevTools  
 
@@ -34,7 +34,7 @@ Pour faire correspondre les raccourcis clavier dans Microsoft Edge DevTools pour
 1.  Ouvrez la page **raccourcis** .
 1.  Sélectionnez le menu déroulant **faire correspondre les raccourcis de** la liste déroulante prédéfinis et modifiez **devtools (par défaut)** en **code Visual Studio**.  
     
-    :::image type="complex" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="Page raccourcis dans les paramètres" lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
+    :::image type="complex" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="Faire correspondre les raccourcis clavier du DevTools au code Visual Studio" lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
        Faire correspondre les raccourcis clavier du DevTools au code Visual Studio  
     :::image-end:::  
     
@@ -45,7 +45,8 @@ Par exemple, pour suspendre ou continuer à exécuter un script dans du [code Vi
 <!-- links -->  
 
 [DevToolsCustomizeSettings]: ./index.md#settings "Paramètres-personnaliser Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsOpenMain]: ../open.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
-[DevToolsShortcuts]: ../shortcuts.md "Raccourcis clavier dans Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsOpenMain]: ../open/index.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
+[DevToolsShortcuts]: ../shortcuts/index.md "Raccourcis clavier dans Microsoft Edge DevTools | Documents Microsoft"  
+
 [VisualStudioCode]: https://code.visualstudio.com "Code Microsoft Visual Studio"  
 [VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Raccourcis clavier dans Visual Studio pour Windows | Code Microsoft Visual Studio"  

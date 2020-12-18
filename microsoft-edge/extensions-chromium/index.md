@@ -3,18 +3,18 @@ description: La vue d’ensemble des extensions Microsoft Edge (chrome), ainsi q
 title: Extensions Microsoft Edge (chrome)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 10/27/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: Edge, développement d’extensions, extensions de navigateur, compléments, centre de partenaires, développeurs et extensions chrome
-ms.openlocfilehash: 85858fc7e1159db3175c3a67c3cfd5f6dfbb448f
-ms.sourcegitcommit: 845a0d53a86bee3678f421adee26b3372cefce57
+ms.openlocfilehash: 04b9ffb7ec175bad4f980310819ea6d3551ef9f8
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104699"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230942"
 ---
-# Extensions Microsoft Edge (chrome) 
+# Vue d’ensemble des extensions Microsoft Edge (chrome) 
 
 Une extension est un petit programme que vous \ (le développeur \) peut utiliser pour ajouter de nouvelles fonctionnalités à Microsoft Edge \ (chrome \) ou pour modifier la fonctionnalité existante.  Une extension est conçue pour améliorer l’utilisation de la navigation quotidienne d’un utilisateur en fournissant une fonctionnalité de niche essentielle pour les audiences ciblées.  
 
@@ -22,7 +22,7 @@ Vous pouvez créer des extensions si votre idée ou votre produit dépend de la 
 
 Une extension est structurée de façon similaire à une application Web standard.  Le cas échéant, il inclut un fichier JSON de manifeste de l’application qui contient des informations sur la plateforme de base, un fichier JavaScript pour définir les fonctionnalités, ainsi qu’un fichier HTML et CSS pour déterminer l’apparence de l’interface utilisateur \ (si nécessaire).  Pour travailler directement avec une partie du navigateur, telle qu’une fenêtre ou un onglet, vous devez envoyer des demandes d’API et souvent référencer le navigateur par son nom.  
 
-:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="Extension Microsoft Edge (chrome)&quot;:::
+:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="Extension Microsoft Edge (chrome)":::
   Extension Microsoft Edge \ (chrome \)  
 :::image-end:::  
 
@@ -106,35 +106,35 @@ Lorsque vous avez terminé le processus de soumission, votre extension est exami
 
 <!-- links -->  
 
-[ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md &quot;Extension du chrome port sur le bord Microsoft (chrome) | Documents Microsoft&quot;  
-[ExtensionsChromiumGettingStartedIndex]: ./getting-started/index.md &quot;Premiers pas avec les extensions Microsoft Edge (chrome) | Documents Microsoft&quot;  
-[ExtensionsChromiumPublish]: ./publish/publish-extension.md &quot;Publier une extension | Documents Microsoft&quot;  
+[ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "Extension du chrome port sur le bord Microsoft (chrome) | Documents Microsoft"  
+[ExtensionsChromiumGettingStartedIndex]: ./getting-started/index.md "Premiers pas avec les extensions Microsoft Edge (chrome) | Documents Microsoft"  
+[ExtensionsChromiumPublish]: ./publish/publish-extension.md "Publier une extension | Documents Microsoft"  
 
-[MicrosoftDeveloperEdgeExtensions]: https://developer.microsoft.com/microsoft-edge/extensions &quot;Développement d’extensions pour Microsoft Edge | Développeur Microsoft&quot;  
-[MicrosoftDeveloperRegistration]: https://developer.microsoft.com/registration &quot;Centre de partenariat | Développeur Microsoft&quot;  
+[MicrosoftDeveloperEdgeExtensions]: https://developer.microsoft.com/microsoft-edge/extensions "Développement d’extensions pour Microsoft Edge | Développeur Microsoft"  
+[MicrosoftDeveloperRegistration]: https://developer.microsoft.com/registration "Centre de partenariat | Développeur Microsoft"  
 
-[MicrosoftEdgeAddonsCategoryExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions &quot;Extensions pour Microsoft Edge | Microsoft Edge&quot;  
+[MicrosoftEdgeAddonsCategoryExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Extensions pour Microsoft Edge | Microsoft Edge"  
 
-[AppleDeveloperSafariservicesAppExtensions]: https://developer.apple.com/documentation/safariservices/safari_app_extensions &quot;Extensions de l’application Safari | Développeur Apple&quot;  
-[AppleDeveloperSafariservicesAppExtensionsBuilding]: https://developer.apple.com/documentation/safariservices/safari_app_extensions/building_a_safari_app_extension &quot;Création d’une extension d’application Safari | Développeur Apple&quot;  
+[AppleDeveloperSafariservicesAppExtensions]: https://developer.apple.com/documentation/safariservices/safari_app_extensions "Extensions de l’application Safari | Développeur Apple"  
+[AppleDeveloperSafariservicesAppExtensionsBuilding]: https://developer.apple.com/documentation/safariservices/safari_app_extensions/building_a_safari_app_extension "Création d’une extension d’application Safari | Développeur Apple"  
 
-[ChromeDeveloperExtensions]: https://developer.chrome.com/extensions &quot;Présentation des extensions Développeur de chrome&quot;  
-[ChromeDeveloperExtensionsApiIndex]: https://developer.chrome.com/extensions/api_index &quot;API chrome | Développeur de chrome&quot;  
-[ChromeDeveloperExtensionsGetstarted]: https://developer.chrome.com/extensions/getstarted &quot;Didacticiel de mise en route | Développeur de chrome&quot;  
+[ChromeDeveloperExtensions]: https://developer.chrome.com/extensions "Présentation des extensions Développeur de chrome"  
+[ChromeDeveloperExtensionsApiIndex]: https://developer.chrome.com/extensions/api_index "API chrome | Développeur de chrome"  
+[ChromeDeveloperExtensionsGetstarted]: https://developer.chrome.com/extensions/getstarted "Didacticiel de mise en route | Développeur de chrome"  
 
-[ChromiumHome]: https://www.chromium.org/Home &quot;Hexavalent&quot;  
+[ChromiumHome]: https://www.chromium.org/Home "Hexavalent"  
 
-[ExtensionworkshopPorting]: https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension &quot;Portage d’une extension Google Chrome | Ateliers d’extension&quot;  
+[ExtensionworkshopPorting]: https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension "Portage d’une extension Google Chrome | Ateliers d’extension"  
 
-[GoogleChromeWebstoreCategoryExtensions]: https://chrome.google.com/webstore/category/extensions &quot;Extensions | Magasin Web chrome&quot;  
+[GoogleChromeWebstoreCategoryExtensions]: https://chrome.google.com/webstore/category/extensions "Extensions | Magasin Web chrome"  
 
-[MDNWebextensions]: https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions &quot;Extensions de navigateur | MDN&quot;  
-[MDNWebextensionsYourFirst]: https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension &quot;Votre première extension | MDN&quot;  
+[MDNWebextensions]: https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions "Extensions de navigateur | MDN"  
+[MDNWebextensionsYourFirst]: https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension "Votre première extension | MDN"  
 
-[MozillaAddonsFirefoxExtensions]: https://addons.mozilla.org/firefox/extensions &quot;Extensions | Modules complémentaires pour Firefox&quot;  
+[MozillaAddonsFirefoxExtensions]: https://addons.mozilla.org/firefox/extensions "Extensions | Modules complémentaires pour Firefox"  
 
-[OperaAddonsExtensions]: https://addons.opera.com/extensions &quot;Extensions | Compléments Opera&quot;  
+[OperaAddonsExtensions]: https://addons.opera.com/extensions "Extensions | Compléments Opera"  
 
-[OperaDevExtensions]: https://dev.opera.com/extensions &quot;Documentation sur les extensions | Dev. Opera&quot;  
-[OperaDevExtensionsApis]: https://dev.opera.com/extensions/apis &quot;API d’extension prises en charge dans Opera | Dev. Opera&quot;  
-[OperaDevExtensionsGettingStarted]: https://dev.opera.com/extensions/getting-started &quot;Mise en route | Dev. Opera"  
+[OperaDevExtensions]: https://dev.opera.com/extensions "Documentation sur les extensions | Dev. Opera"  
+[OperaDevExtensionsApis]: https://dev.opera.com/extensions/apis "API d’extension prises en charge dans Opera | Dev. Opera"  
+[OperaDevExtensionsGettingStarted]: https://dev.opera.com/extensions/getting-started "Mise en route | Dev. Opera"  

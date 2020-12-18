@@ -3,16 +3,16 @@ description: Émuler les authentificateurs et déboguer webauthn dans Microsoft 
 title: Émuler les authentificateurs et déboguer webauthn dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/22/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 6727e9aeea1a51689a80570a2f1c9df880a8c9db
-ms.sourcegitcommit: 6e2b26d41a0aa56ac34e6edc7dddd852ddb415b1
+ms.openlocfilehash: 3200f22485bfd642a37a7d34ac727b8da4500d06
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "11134046"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231180"
 ---
 # Émuler les authentificateurs et déboguer webauthn dans Microsoft Edge DevTools  
 
@@ -36,10 +36,10 @@ Le bon endroit où vous pouvez commencer à utiliser l’authentification Web es
        Outil **Webauthn**  
     :::image-end:::  
     
-1.  Dans l’outil **Webauthn** , activez la case à cocher en regard de **activer l’environnement d’authentificateur virtuel**.  
+1.  Dans l’outil **Webauthn** , activez la case à cocher **activer l’environnement d’authentificateur virtuel** .  
 1.  Après activation, une nouvelle section nommée **nouvel authentificateur** est affichée.  
     
-    :::image type="complex" source="../media/webauthn-enable-virtual-auth.msft.png" alt-text="Outil webauthn" lightbox="../media/webauthn-enable-virtual-auth.msft.png":::
+    :::image type="complex" source="../media/webauthn-enable-virtual-auth.msft.png" alt-text="Activer l’environnement d’authentificateur virtuel" lightbox="../media/webauthn-enable-virtual-auth.msft.png":::
         **Activer l’environnement d’authentificateur virtuel**  
     :::image-end:::  
     
@@ -55,13 +55,13 @@ Le bon endroit où vous pouvez commencer à utiliser l’authentification Web es
 1.  Cliquez sur le bouton **Ajouter** .  
 1.  Une nouvelle section de votre authentificateur nouvellement créé s’affiche.  
     
-    :::image type="complex" source="../media/webauthn-authenticator.msft.png" alt-text="Outil webauthn" lightbox="../media/webauthn-authenticator.msft.png":::
+    :::image type="complex" source="../media/webauthn-authenticator.msft.png" alt-text="Authentificateur" lightbox="../media/webauthn-authenticator.msft.png":::
        Authentificateur  
     :::image-end:::  
     
 La section **authentificateur** inclut une table **Credentials** .  Le tableau est vide tant qu’aucune information d’identification n’est inscrite auprès de l’authentificateur.  
 
-:::image type="complex" source="../media/webauthn-no-cred.msft.png" alt-text="Outil webauthn" lightbox="../media/webauthn-no-cred.msft.png":::
+:::image type="complex" source="../media/webauthn-no-cred.msft.png" alt-text="Aucune information d’identification" lightbox="../media/webauthn-no-cred.msft.png":::
    Aucune information d’identification  
 :::image-end:::  
 
@@ -72,7 +72,7 @@ Pour enregistrer une nouvelle information d’identification, procédez comme su
 1.  Sur le site Web de démonstration, choisissez **enregistrer les nouvelles informations d’identification**.  
 1.  Une nouvelle information d’identification est désormais ajoutée à la table **informations d’identification** de l’outil webauthn.  
     
-    :::image type="complex" source="../media/webauthn-view-cred.msft.png" alt-text="Outil webauthn" lightbox="../media/webauthn-view-cred.msft.png":::
+    :::image type="complex" source="../media/webauthn-view-cred.msft.png" alt-text="Afficher les informations d’identification" lightbox="../media/webauthn-view-cred.msft.png":::
        Afficher les informations d’identification  
     :::image-end:::  
     
@@ -82,7 +82,7 @@ Sur le site Web de démonstration, sélectionnez le bouton **authentifier** .  V
 
 Pour exporter ou supprimer des informations d’identification, cliquez sur le bouton **Exporter** ou **supprimer** .  
 
-:::image type="complex" source="../media/webauthn-export-remove.msft.png" alt-text="Outil webauthn" lightbox="../media/webauthn-export-remove.msft.png":::
+:::image type="complex" source="../media/webauthn-export-remove.msft.png" alt-text="Exporter ou supprimer des informations d’identification" lightbox="../media/webauthn-export-remove.msft.png":::
    Exporter ou supprimer des informations d’identification  
 :::image-end:::  
 
@@ -93,7 +93,7 @@ Pour renommer un authentificateur, procédez comme suit.
 1.  En regard du nom de l’authentificateur, sélectionnez le bouton **modifier** .  
 1.  Modifiez le nom, puis appuyez sur **entrée** pour enregistrer les modifications.  
 
-:::image type="complex" source="../media/webauthn-rename.msft.png" alt-text="Outil webauthn" lightbox="../media/webauthn-rename.msft.png":::
+:::image type="complex" source="../media/webauthn-rename.msft.png" alt-text="Renommer un authentificateur" lightbox="../media/webauthn-rename.msft.png":::
    Renommer un authentificateur  
 :::image-end:::  
 
@@ -104,7 +104,7 @@ Un authentificateur nouvellement créé est automatiquement activé.  Pour utili
 > [!NOTE]
 > DevTools ne prend en charge qu’un seul authentificateur virtuel actif à tout moment.  Si vous supprimez l’authentificateur actif, un autre authentificateur n’est pas activé automatiquement.  
 
-:::image type="complex" source="../media/webauthn-set-active.msft.png" alt-text="Outil webauthn" lightbox="../media/webauthn-set-active.msft.png":::
+:::image type="complex" source="../media/webauthn-set-active.msft.png" alt-text="Définir l’authentificateur actif" lightbox="../media/webauthn-set-active.msft.png":::
    Définir l’authentificateur actif  
 :::image-end:::  
 
@@ -112,7 +112,7 @@ Un authentificateur nouvellement créé est automatiquement activé.  Pour utili
 
 Pour supprimer un authentificateur virtuel, en regard de l’authentificateur, cliquez sur le bouton **supprimer** .  
 
-:::image type="complex" source="../media/webauthn-remove-authenticator.msft.png" alt-text="Outil webauthn" lightbox="../media/webauthn-remove-authenticator.msft.png":::
+:::image type="complex" source="../media/webauthn-remove-authenticator.msft.png" alt-text="Supprimer l’authentificateur" lightbox="../media/webauthn-remove-authenticator.msft.png":::
    Supprimer l’authentificateur  
 :::image-end:::  
 
@@ -122,7 +122,7 @@ Pour supprimer un authentificateur virtuel, en regard de l’authentificateur, c
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
 
 [AppspotWebauthndemo]: https://webauthndemo.appspot.com "Démonstration webauth Appspot"  
 
@@ -138,10 +138,10 @@ Pour supprimer un authentificateur virtuel, en regard de l’authentificateur, c
 [GithubW3cWebauthnSctnSignCounter]: https://w3c.github.io/webauthn/#sctn-sign-counter "Considérations relatives aux compteurs de signature-authentification Web: API d’accès aux informations d’identification de la clé publique niveau 2 | GitHub"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/webauthn/index) et est créée par [Jecelyn Yeen][JecelynYeen] \ (développeurs, chrome devtools \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/webauthn/index) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

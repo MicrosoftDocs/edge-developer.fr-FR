@@ -3,16 +3,16 @@ description: Utilisez le volet sécurité pour vous assurer qu’une page est en
 title: Présentation des problèmes de sécurité avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 09f7e641ddd8da74c361980b9ce61b212a8477fe
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 5bef22eae8deacc81e31cf6d1c7791e016541346
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125383"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230613"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,7 +32,7 @@ ms.locfileid: "11125383"
 
   
 
-<!--Use the **Security** Panel in [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to make sure HTTPS is properly implemented on a page.  See **Why HTTPS Matters** to learn why every website should be protected with HTTPS, even sites that do not handle sensitive user data.  -->  
+<!--Use the **Security** Panel in [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to make sure HTTPS is properly implemented on a page.  Navigate to **Why HTTPS Matters** to learn why every website should be protected with HTTPS, even sites that do not handle sensitive user data.  -->  
 
 <!--todo: add section when why-https is available -->  
 
@@ -53,7 +53,7 @@ Le volet **sécurité** est l’endroit principal de devtools pour vérifier la 
 
 Lorsque l’origine principale d’une page n’est pas sécurisée, la **vue d’ensemble** de la sécurité indique que **cette page n’est pas sécurisée**.  
 
-:::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="Volet sécurité" lightbox="../media/security-security-overview-non-secure.msft.png":::
+:::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="Page non sécurisée" lightbox="../media/security-security-overview-non-secure.msft.png":::
    Page non sécurisée  
 :::image-end:::  
 
@@ -70,13 +70,13 @@ Si vous n’avez pas configuré HTTPs sur votre serveur, [cryptez][LetsEncrypt] 
 
 Le **contenu mixte** signifie que l’origine principale d’une page est sécurisée, mais que la page a demandé des ressources d’origines non sécurisées.  Les pages de contenu mixte ne sont que partiellement protégées, car le contenu HTTP est accessible aux renifleurs et est vulnérable aux attaques par le biais du milieu.  
 
-:::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Volet sécurité" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
+:::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Contenu mixte" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
    Contenu mixte  
 :::image-end:::  
 
 Dans la figure précédente, sélectionnez **afficher une requête dans le panneau réseau** pour ouvrir le panneau **réseau** et appliquer le `mixed-content:displayed` filtre de sorte que le **Journal réseau** n’affiche que les ressources non sécurisées.  
 
-:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Volet sécurité" lightbox="../media/security-network-filter.msft.png":::
+:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Ressources mixtes du journal réseau" lightbox="../media/security-network-filter.msft.png":::
    Ressources mixtes du **Journal réseau**  
 :::image-end:::  
 
@@ -86,15 +86,15 @@ Dans la figure précédente, sélectionnez **afficher une requête dans le panne
 
 Dans la **vue d’ensemble**de la sécurité, sélectionnez **afficher le certificat** pour inspecter rapidement le certificat de l’origine principale.  
 
-:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="Volet sécurité" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
+:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="Un certificat d’origine principal;" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
    Un certificat d’origine principal;  
 :::image-end:::  
 
 ### Afficher les détails de l’origine  
 
-Cliquez sur l’une des entrées dans le volet de navigation de gauche pour afficher les détails de l’origine.  Dans la page détails, vous pouvez consulter les informations de connexion et de certificat.  Les informations de transparence du certificat apparaissent également lorsqu’elles sont disponibles.  
+Pour afficher les détails de l’origine, sélectionnez l’une des entrées dans le volet de navigation de gauche.  Dans la page détails, vous pouvez consulter les informations de connexion et de certificat.  Les informations de transparence du certificat apparaissent également lorsqu’elles sont disponibles.  
 
-:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Volet sécurité" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
+:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Détails de l’origine principale" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
    Détails de l’origine principale  
 :::image-end:::  
 
@@ -104,20 +104,21 @@ Cliquez sur l’une des entrées dans le volet de navigation de gauche pour affi
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
-[DevToolsOpen]: ../open.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
+[DevToolsOpen]: ../open/index.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
+
 [LetsEncrypt]: https://letsencrypt.org "Utiliser des certificats SSL/TLS sans cryptage"  
 
-[Webhint]: https://webhint.io "Astuce"  
+[Webhint]: https://webhint.io "webhint"  
 [WebhintUseHttps]: https://webhint.io/docs/user-guide/hints/hint-https-only "Utiliser HTTPs | documentation webhint"  
 
 <!--[mixed]: /web/fundamentals/security/prevent-mixed-content/what-is-mixed-content ""  -->
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/security/index) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/security/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

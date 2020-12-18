@@ -3,16 +3,16 @@ description: La fonctionnalité de substitution est une fonctionnalité de l’o
 title: Remplacer les ressources de pages Web par des copies locales à l’aide de Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/29/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 579ebe92dc50571837e7e3caf8fb7c1a9989bc59
-ms.sourcegitcommit: 9dcaf598f3930bcfab9f93ff63463beb98274de0
+ms.openlocfilehash: 7f273f89708e0948e68cd2c7ba79cefb6d7e167c
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "11145155"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11230963"
 ---
 # Remplacer les ressources de pages Web par des copies locales à l’aide de Microsoft Edge DevTools  
 
@@ -33,7 +33,7 @@ Vous pouvez à présent prendre une ressource de la page Web actuelle et la stoc
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/javascript-overrides-menu.msft.png" alt-text="Outil sources avec un espace insuffisant pour afficher l’option de remplacement" lightbox="../media/javascript-overrides-menu.msft.png":::
+          :::image type="complex" source="../media/javascript-overrides-menu.msft.png" alt-text="Sélectionner l’option remplacements" lightbox="../media/javascript-overrides-menu.msft.png":::
              Sélectionner l’option remplacements  
           :::image-end:::  
        :::column-end:::
@@ -41,19 +41,19 @@ Vous pouvez à présent prendre une ressource de la page Web actuelle et la stoc
     
 1.  Après avoir sélectionné l’option **remplacements** , vous devez choisir un dossier sur votre ordinateur local pour stocker les fichiers de ressources que vous souhaitez remplacer.  Pour rechercher un dossier, sélectionnez le **dossier + Sélectionner pour les remplacements** .  
     
-    :::image type="complex" source="../media/javascript-overrides-select-folder.msft.png" alt-text="Outil sources avec un espace insuffisant pour afficher l’option de remplacement" lightbox="../media/javascript-overrides-select-folder.msft.png":::
+    :::image type="complex" source="../media/javascript-overrides-select-folder.msft.png" alt-text="Sélectionner un dossier à utiliser pour les remplacements" lightbox="../media/javascript-overrides-select-folder.msft.png":::
        Sélectionner un dossier à utiliser pour les remplacements  
     :::image-end:::  
     
 1.  DevTools vous avertit que vous devez disposer d’un accès complet au dossier et que vous ne devez pas divulguer d’informations sensibles.  Dans la barre d’avertissement, sélectionnez **autoriser** pour accorder l’accès.  
     
-    :::image type="complex" source="../media/javascript-overrides-give-access-to-folder.msft.png" alt-text="Outil sources avec un espace insuffisant pour afficher l’option de remplacement" lightbox="../media/javascript-overrides-give-access-to-folder.msft.png":::
+    :::image type="complex" source="../media/javascript-overrides-give-access-to-folder.msft.png" alt-text="accorder à DevTools l’accès au dossier" lightbox="../media/javascript-overrides-give-access-to-folder.msft.png":::
        Accorder à DevTools l’accès au dossier  
     :::image-end:::  
     
 1.  Dans le volet **remplacements** , une case à cocher doit s’afficher à côté `Enable Local Overrides` et au dossier de remplacements.  Une icône s’affiche à côté de celle-ci pour vous permettre de supprimer vos paramètres de remplacement locaux.  Vous avez terminé la configuration de votre dossier et vous êtes prêt à remplacer les ressources dynamiques par des ressources locales.
     
-    :::image type="complex" source="../media/javascript-overrides-folder-setup-complete.msft.png" alt-text="Outil sources avec un espace insuffisant pour afficher l’option de remplacement" lightbox="../media/javascript-overrides-folder-setup-complete.msft.png":::
+    :::image type="complex" source="../media/javascript-overrides-folder-setup-complete.msft.png" alt-text="Configuration réussie d’un dossier de remplacement" lightbox="../media/javascript-overrides-folder-setup-complete.msft.png":::
        Configuration réussie d’un dossier de remplacement  
     :::image-end:::  
     
@@ -61,23 +61,23 @@ Vous pouvez à présent prendre une ressource de la page Web actuelle et la stoc
   
 Pour ajouter des fichiers à votre dossier de remplacements, ouvrez l’outil **éléments** et examinez la page Web.  Pour modifier le fichier CSS, sélectionnez son nom dans l’inspecteur de **styles** .  
 
-:::image type="complex" source="../media/javascript-overrides-select-css-file.msft.png" alt-text="Outil sources avec un espace insuffisant pour afficher l’option de remplacement" lightbox="../media/javascript-overrides-select-css-file.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-select-css-file.msft.png" alt-text="Sélectionner un fichier dans l’inspecteur de styles" lightbox="../media/javascript-overrides-select-css-file.msft.png":::
    Sélectionner un fichier dans l’inspecteur de **styles**  
 :::image-end:::  
 
 Dans l’éditeur de **sources** , pointez sur le nom du fichier que vous avez choisi, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez **Enregistrer pour les remplacements**.  
 
-:::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="Outil sources avec un espace insuffisant pour afficher l’option de remplacement" lightbox="../media/javascript-overrides-file-name.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="Dans l’éditeur de sources, ajoutez le nom du fichier aux substitutions." lightbox="../media/javascript-overrides-file-name.msft.png":::
    Dans l’éditeur de **sources** , ajoutez le nom du fichier aux substitutions.  
 :::image-end:::  
 
-:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="Outil sources avec un espace insuffisant pour afficher l’option de remplacement" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="Dans le menu contextuel, cliquez sur Enregistrer pour les remplacements" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
    Dans le menu contextuel, cliquez sur **Enregistrer pour les remplacements**  
 :::image-end:::  
 
 Le fichier est stocké dans votre dossier Overrides.  Vérifiez que DevTools crée un dossier nommé à l’aide de l’URL du fichier avec la structure de répertoires correcte.  Le fichier est stocké dans.  Le nom de fichier de l’éditeur comporte également un point violet qui indique que le fichier est local et non en cours.  
 
-:::image type="complex" source="../media/javascript-overrides-file-stored.msft.png" alt-text="Outil sources avec un espace insuffisant pour afficher l’option de remplacement" lightbox="../media/javascript-overrides-file-stored.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-file-stored.msft.png" alt-text="Le fichier a été enregistré dans le dossier de remplacements" lightbox="../media/javascript-overrides-file-stored.msft.png":::
    Le fichier a été enregistré dans le dossier de remplacements  
 :::image-end:::  
 
@@ -92,7 +92,7 @@ Le fichier est stocké dans votre dossier Overrides.  Vérifiez que DevTools cr�
    :::column span="":::
       Le fichier est enregistré automatiquement sur votre ordinateur.  Si vous actualisez le fichier, la bordure est affichée et aucune de vos tâches ne sera perdue.  
       
-      :::image type="complex" source="../media/javascript-overrides-changing-styles.msft.png" alt-text="Outil sources avec un espace insuffisant pour afficher l’option de remplacement" lightbox="../media/javascript-overrides-changing-styles.msft.png":::
+      :::image type="complex" source="../media/javascript-overrides-changing-styles.msft.png" alt-text="Changer les styles de pages Web de façon permanente en modifiant un fichier dans votre dossier de remplacement" lightbox="../media/javascript-overrides-changing-styles.msft.png":::
          Changer les styles de pages Web de façon permanente en modifiant un fichier dans votre dossier de remplacement  
       :::image-end:::  
    :::column-end:::
@@ -102,14 +102,14 @@ Le fichier est stocké dans votre dossier Overrides.  Vérifiez que DevTools cr�
    :::column span="":::
       Dans l’outil **sources** , dans la section **page** , pointez sur un fichier, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \) et ajoutez-le à des substitutions.  Là encore, les fichiers qui se trouvent déjà dans votre dossier remplacements sont dotés d’un point violet sur l’icône.  
       
-      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Outil sources avec un espace insuffisant pour afficher l’option de remplacement" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
+      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Choisir un fichier à partir de l’outil sources pour les remplacements" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
          Choisir un fichier à partir de l’outil **sources** pour les remplacements  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       Vous pouvez également accéder à un fichier à l’aide de l’outil **réseau** , ouvrir le menu contextuel \ (cliquez avec le bouton droit sur \) et l’ajouter aux remplacements.  Lorsque les remplacements sont activés, les fichiers qui se trouvent sur votre ordinateur et non à partir de la page Web dynamique.  Lorsque les remplacements sont activés, dans l’outil **réseau** , recherchez une icône d’avertissement en regard du nom du fichier.  
       
-      :::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="Outil sources avec un espace insuffisant pour afficher l’option de remplacement" lightbox="../media/javascript-overrides-network.msft.png":::
+      :::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="Choisir un fichier à partir de l’outil réseau pour les remplacements" lightbox="../media/javascript-overrides-network.msft.png":::
          Choisir un fichier à partir de l’outil **réseau** pour les remplacements  
       :::image-end:::  
    :::column-end:::
@@ -125,4 +125,4 @@ Utilisez l’éditeur fourni avec l’outil **sources** de devtools ou un édite
 
 <!-- links -->  
 
-[DevToolsSourcesTool]: ../sources.md "Présentation de l’outil sources | Documents Microsoft"  
+[DevToolsSourcesTool]: ../sources/index.md "Présentation de l’outil sources | Documents Microsoft"  

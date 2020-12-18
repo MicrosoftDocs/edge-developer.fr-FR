@@ -3,16 +3,16 @@ description: Découvrez comment consigner les messages dans la console.
 title: Commencer à utiliser la journalisation des messages dans la console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 96e3ad76fb86e32cf58abe6187fa0d6e75a2c00a
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 2f91f1847bf5469e8106edc21553172fc06db9ee
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125271"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231110"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -50,7 +50,7 @@ Ce didacticiel est conçu pour que vous puissiez ouvrir la démonstration et ess
     > [!TIP]
     > Move the demo to a separate window.  
     > 
-    > :::image type="complex" source="../media/log-set-up-1.msft.png" alt-text="Messages dans la console" lightbox="../media/log-set-up-1.msft.png":::
+    > :::image type="complex" source="../media/log-set-up-1.msft.png" alt-text="The tutorial on the left, and the demo on the right" lightbox="../media/log-set-up-1.msft.png":::
     >    The tutorial on the left, and the demo on the right  
     > :::image-end:::  
     -->
@@ -59,7 +59,7 @@ Ce didacticiel est conçu pour que vous puissiez ouvrir la démonstration et ess
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/console-example-devtools-right-console.msft.png" alt-text="Messages dans la console" lightbox="../media/console-example-devtools-right-console.msft.png":::
+          :::image type="complex" source="../media/console-example-devtools-right-console.msft.png" alt-text="DevTools s’ouvre à droite de la démonstration." lightbox="../media/console-example-devtools-right-console.msft.png":::
              DevTools s’ouvre à droite de la démonstration.  
           :::image-end:::  
        :::column-end:::
@@ -67,7 +67,7 @@ Ce didacticiel est conçu pour que vous puissiez ouvrir la démonstration et ess
           > [!TIP]
           > [Ancrez devtools en bas de la fenêtre][DevToolsCustomizePlacement].  
           
-          :::image type="complex" source="../media/console-example-devtools-bottom-console.msft.png" alt-text="Messages dans la console" lightbox="../media/console-example-devtools-bottom-console.msft.png":::
+          :::image type="complex" source="../media/console-example-devtools-bottom-console.msft.png" alt-text="DevTools ancré en bas de la démo" lightbox="../media/console-example-devtools-bottom-console.msft.png":::
              DevTools ancré en bas de la démo  
           :::image-end:::  
        :::column-end:::
@@ -77,7 +77,7 @@ Ce didacticiel est conçu pour que vous puissiez ouvrir la démonstration et ess
           > [!TIP]
           > [Détacher devtools dans une fenêtre séparée][DevToolsCustomizePlacement].  
           
-          :::image type="complex" source="../media/console-example-devtools-separate-console-browse.msft.png" alt-text="Messages dans la console" lightbox="../media/console-example-devtools-separate-console-browse.msft.png":::
+          :::image type="complex" source="../media/console-example-devtools-separate-console-browse.msft.png" alt-text="Navigateur dans une fenêtre séparée" lightbox="../media/console-example-devtools-separate-console-browse.msft.png":::
              Navigateur dans une fenêtre séparée  
           :::image-end:::  
        :::column-end:::
@@ -85,7 +85,7 @@ Ce didacticiel est conçu pour que vous puissiez ouvrir la démonstration et ess
           > [!TIP]
           > [Détacher devtools dans une fenêtre séparée][DevToolsCustomizePlacement].  
           
-          :::image type="complex" source="../media/console-example-devtools-separate-console-devtools.msft.png" alt-text="Messages dans la console" lightbox="../media/console-example-devtools-separate-console-devtools.msft.png":::
+          :::image type="complex" source="../media/console-example-devtools-separate-console-devtools.msft.png" alt-text="DevTools non ancré dans une fenêtre séparée" lightbox="../media/console-example-devtools-separate-console-devtools.msft.png":::
              DevTools non ancré dans une fenêtre séparée  
           :::image-end:::  
        :::column-end:::
@@ -93,67 +93,67 @@ Ce didacticiel est conçu pour que vous puissiez ouvrir la démonstration et ess
     
 ## Afficher les messages enregistrés depuis JavaScript  
 
-La plupart des messages que vous voyez dans la console proviennent des développeurs Web qui écrivent le JavaScript de la page.  L’objectif de cette section consiste à vous présenter les différents types de messages que vous risquez de voir dans la console et à expliquer la façon dont vous pouvez enregistrer chaque type de message vous-même dans JavaScript.  
+La plupart des messages qui s’affichent dans la **console** proviennent des développeurs Web qui écrivent le JavaScript de la page.  L’objectif de cette section consiste à vous présenter les différents types de messages que vous êtes susceptible de consulter dans la **console**et à expliquer comment vous pouvez consigner chaque type de message vous-même à partir de votre propre code JavaScript.  
 
 1.  Cliquez sur le bouton **informations du journal** dans la démonstration.  `Hello, Console!` est connecté à la console.
     
-    :::image type="complex" source="../media/console-log-info.msft.png" alt-text="Messages dans la console" lightbox="../media/console-log-info.msft.png":::
-       La **console** après avoir cliqué sur **informations du journal**  
+    :::image type="complex" source="../media/console-log-info.msft.png" alt-text="La console après avoir sélectionné les informations du journal" lightbox="../media/console-log-info.msft.png":::
+       La **console** après avoir sélectionné les **informations du journal**  
     :::image-end:::  
     
 1.  En regard du `Hello, Console!` message dans la console, sélectionnez **log.js:2**.  Le panneau sources s’ouvre et met en surbrillance la ligne de code qui a entraîné le message à se connecter à la console.  Le message a été enregistré lors de l’exécution du code JavaScript de la page `console.log('Hello, Console!')` .
     
-    :::image type="complex" source="../media/console-sources-logjs.msft.png" alt-text="Messages dans la console" lightbox="../media/console-sources-logjs.msft.png":::
-       DevTools ouvre le panneau **sources** après avoir cliqué sur `log.js:2`  
+    :::image type="complex" source="../media/console-sources-logjs.msft.png" alt-text="DevTools ouvre le panneau sources après que vous avez choisi log.js:2" lightbox="../media/console-sources-logjs.msft.png":::
+       DevTools ouvre le panneau **sources** après que vous avez choisi `log.js:2`  
     :::image-end:::  
     
 1.  Revenez à la **console** à l’aide de l’un des flux de travail suivants:  
     
     *   Cliquez sur l’onglet de la **console** .  
-    *   Sélectionnez `Control` + `[` \ (Windows, Linux \) ou `Command` + `[` \ (MacOS \) jusqu’à ce que le panneau de la console soit en focus.  
-    *   [Ouvrez le menu de commandes][DevToolsCommandMenu], commencez à taper `Console` , sélectionnez l’option **afficher le panneau** de la console, puis sélectionnez `Enter` .  
+    *   Sélectionnez `Control` + `[` \ (Windows, Linux \) ou `Command` + `[` \ (MacOS \) jusqu’à ce que le panneau de la **console** soit en focus.  
+    *   [Ouvrez le menu de commandes][DevToolsCommandMenu], tapez `Console` la commande **afficher le panneau** de la console, puis cliquez sur `Enter` .  
     
-1.  Cliquez sur le bouton **Avertissement du journal** dans la démonstration.  `Abandon Hope All Ye Who Enter` est connecté à la console.  Les messages mis en forme comme celui-ci sont des avertissements.  
+1.  Cliquez sur le bouton **Avertissement du journal** dans la démonstration.  `Abandon Hope All Ye Who Enter` est connecté à la **console**.  Les messages mis en forme comme celui-ci sont des avertissements.  
     
-    :::image type="complex" source="../media/console-log-warning.msft.png" alt-text="Messages dans la console" lightbox="../media/console-log-warning.msft.png":::
+    :::image type="complex" source="../media/console-log-warning.msft.png" alt-text="La console après avoir sélectionné avertissement de journalisation" lightbox="../media/console-log-warning.msft.png":::
        La **console** après avoir sélectionné **avertissement de journalisation**  
     :::image-end:::  
     
     > [!TIP]
-    > Si vous souhaitez voir le code ayant entraîné l’enregistrement d’un message d’une certaine façon, cliquez sur un script (par exemple, `log.js:12` \) pour afficher le code ayant entraîné la mise en forme du message.  
+    > Si vous souhaitez afficher le code ayant entraîné l’enregistrement d’un message d’une certaine façon, sélectionnez un script (par exemple, `log.js:12` \) pour afficher le code ayant entraîné la mise en forme du message.  
 
 1.  Cliquez sur l’icône **développer** \ ( ![ développer ][ImageExpandIcon] \) devant `Abandon Hope All Ye Who Enter` .  DevTools affiche la [trace de pile][WikiStackTrace] qui se trouve au début de l’appel.  
     
-    :::image type="complex" source="../media/console-log-warning-expanded.msft.png" alt-text="Messages dans la console" lightbox="../media/console-log-warning-expanded.msft.png":::
+    :::image type="complex" source="../media/console-log-warning-expanded.msft.png" alt-text="Une trace de pile" lightbox="../media/console-log-warning-expanded.msft.png":::
        Une trace de pile  
     :::image-end:::  
     
-    La trace de pile vous indique qu’une fonction nommée `logWarning` a été appelée, qui à son tour appelait une fonction nommée `quoteDante` .  En d’autres termes, l’appel qui s’est produit en premier est en bas de la trace de pile.  Vous pouvez enregistrer des traces de pile à tout moment en les appelant `console.trace()` .  
+    La trace de pile vous indique qu’une fonction nommée `logWarning` est exécutée, qui à son tour exécute une fonction nommée `quoteDante` .  En d’autres termes, la requête qui s’est produite en premier est en bas de la trace de pile.  Vous pouvez enregistrer des traces de pile à tout moment en exécutant `console.trace()` .  
 
 1.  Sélectionnez **erreur de connexion**.  Le message d’erreur suivant s’affiche: `I'm sorry, Dave.  I'm afraid I can't do that.`  
     
-    :::image type="complex" source="../media/console-log-error.msft.png" alt-text="Messages dans la console" lightbox="../media/console-log-error.msft.png":::
+    :::image type="complex" source="../media/console-log-error.msft.png" alt-text="Un message d’erreur" lightbox="../media/console-log-error.msft.png":::
        Un message d’erreur  
     :::image-end:::  
     
-1.  Sélectionnez **table de journaux**.  Un tableau sur les artistes célèbres est connecté à la console.  
+1.  Sélectionnez **table de journaux**.  Un tableau sur les artistes célèbres est connecté à la **console**.  
     
     > [!NOTE]
     > La `birthday` colonne est uniquement remplie pour une seule ligne.  Révisez le code pour déterminer la raison pour laquelle il s’agit.
     
-    :::image type="complex" source="../media/console-log-table.msft.png" alt-text="Messages dans la console" lightbox="../media/console-log-table.msft.png":::
+    :::image type="complex" source="../media/console-log-table.msft.png" alt-text="Tableau sur la console" lightbox="../media/console-log-table.msft.png":::
        Tableau sur la **console**  
     :::image-end:::  
     
 1.  Choisissez le **groupe de journaux**.  Les noms des 4 plus célèbres et des tortues sont regroupés sous l' `Adolescent Irradiated Espionage Tortoises` étiquette.  
     
-    :::image type="complex" source="../media/console-log-group.msft.png" alt-text="Messages dans la console" lightbox="../media/console-log-group.msft.png":::
+    :::image type="complex" source="../media/console-log-group.msft.png" alt-text="Groupe de messages dans la console" lightbox="../media/console-log-group.msft.png":::
        Groupe de messages dans la **console**  
     :::image-end:::  
     
 1.  Sélectionnez **journal personnalisé**.  Un message avec une bordure rouge et un arrière-plan bleu est connecté à la console.  
     
-    :::image type="complex" source="../media/console-log-custom.msft.png" alt-text="Messages dans la console" lightbox="../media/console-log-custom.msft.png":::
+    :::image type="complex" source="../media/console-log-custom.msft.png" alt-text="Message avec une mise en forme personnalisée dans la console" lightbox="../media/console-log-custom.msft.png":::
        Message avec une mise en forme personnalisée dans la **console**  
     :::image-end:::  
     
@@ -167,13 +167,13 @@ Le navigateur enregistre également les messages sur la console.  Cela se produi
 
 1.  Choisissez **Cause 404**.  Le navigateur enregistre un code d’état HTTP d' `404` erreur réseau, car le code JavaScript de la page essayait de récupérer un fichier qui n’existe pas.  
     
-    :::image type="complex" source="../media/console-cause-404.msft.png" alt-text="Messages dans la console" lightbox="../media/console-cause-404.msft.png":::
+    :::image type="complex" source="../media/console-cause-404.msft.png" alt-text="Erreur 404 dans la console" lightbox="../media/console-cause-404.msft.png":::
        `404`Erreur dans la **console**  
     :::image-end:::  
     
 1.  Sélectionnez **cause d’erreur**.  Le navigateur enregistre une incapture `TypeError` car JavaScript tente de mettre à jour un nœud DOM qui n’existe pas.  
     
-    :::image type="complex" source="../media/console-cause-error.msft.png" alt-text="Messages dans la console" lightbox="../media/console-cause-error.msft.png":::
+    :::image type="complex" source="../media/console-cause-error.msft.png" alt-text="A TypeError dans la console" lightbox="../media/console-cause-error.msft.png":::
        A `TypeError` sur la **console**  
     :::image-end:::  
     
@@ -182,28 +182,28 @@ Le navigateur enregistre également les messages sur la console.  Cela se produi
     > [!NOTE]
     > Si la liste déroulante niveaux par défaut est désactivée, vous devrez peut-être fermer **la barre latérale** .  Filtrer par source de message ci-dessous pour plus d’informations sur la barre latérale de la **console** .
     
-    :::image type="complex" source="../media/console-cause-error-log-levels.msft.png" alt-text="Messages dans la console" lightbox="../media/console-cause-error-log-levels.msft.png":::
+    :::image type="complex" source="../media/console-cause-error-log-levels.msft.png" alt-text="Activer le niveau de journalisation détaillé" lightbox="../media/console-cause-error-log-levels.msft.png":::
        Activer le niveau de journalisation détaillé  
     :::image-end:::  
     
 1.  Choisissez **provoquer une violation**.  La page cesse de répondre pendant quelques secondes, puis le navigateur enregistre le message `[Violation] 'click' handler took 3000ms` sur la console.  La durée exacte est variable.  
     
-    :::image type="complex" source="../media/console-cause-violation.msft.png" alt-text="Messages dans la console" lightbox="../media/console-cause-violation.msft.png":::
+    :::image type="complex" source="../media/console-cause-violation.msft.png" alt-text="Violation dans la console" lightbox="../media/console-cause-violation.msft.png":::
        Violation dans la **console**  
     :::image-end:::  
     
 ## Filtrer les messages  
 
-Dans certaines pages, la console est inondée de messages.  DevTools offre différentes façons de filtrer les messages qui ne sont pas pertinents pour la tâche en cours.  
+Sur certaines pages Web, vous examinez la **console** pour être inondées de messages.  DevTools offre différentes façons de filtrer les messages qui ne sont pas pertinents pour la tâche en cours.  
 
 ### Filtrer par niveau de journal  
 
 `console`Un niveau de gravité est attribué à chaque méthode: `Verbose` , `Info` , `Warning` ou `Error` .  Par exemple, `console.log()` il s’agit d’un `Info` message de `console.error()` niveau supérieur `Error` .  
 
-1.  Cliquez sur la liste déroulante **niveaux du journal** et désactivez **Erreurs**.  Un niveau est désactivé quand il n’y a plus de coche en regard de celui-ci.  Les `Error` messages de niveau disparaissent.  
+1.  Choisissez la liste déroulante **niveaux du journal** et désactivez les **Erreurs**.  Un niveau est désactivé quand il n’y a plus de coche en regard de celui-ci.  Les `Error` messages de niveau disparaissent.  
     
-    :::image type="complex" source="../media/console-cause-violation-log-levels.msft.png" alt-text="Messages dans la console" lightbox="../media/console-cause-violation-log-levels.msft.png":::
-       Désactivation des messages de niveau erreur dans la **console**  
+    :::image type="complex" source="../media/console-cause-violation-log-levels.msft.png" alt-text="Désactiver les messages de niveau erreur dans la console" lightbox="../media/console-cause-violation-log-levels.msft.png":::
+       Désactiver les messages de niveau erreur dans la **console**  
     :::image-end:::  
     
 1.  Cliquez de nouveau sur la liste déroulante **niveaux du journal** et activez de nouveau les **Erreurs**.  Les `Error` messages de niveau supérieur apparaissent.  
@@ -212,10 +212,10 @@ Dans certaines pages, la console est inondée de messages.  DevTools offre diff�
 
 Lorsque vous souhaitez uniquement afficher les messages qui incluent une chaîne exacte, tapez cette chaîne dans la zone de texte du **filtre** .  
 
-1.  Entrez `Dave` dans la zone de texte du **filtre** .  Tous les messages n’incluant pas la chaîne `Dave` sont masqués.  Vous pouvez également voir l' `Adolescent Irradiated Espionage Tortoises` étiquette.  Il s’agit d’un bogue.  
+1.  Entrez `Dave` dans la zone de texte du **filtre** .  Tous les messages n’incluant pas la chaîne `Dave` sont masqués.  Vous pouvez également examiner l' `Adolescent Irradiated Espionage Tortoises` étiquette.  Il s’agit d’un bogue.  
     
-    :::image type="complex" source="../media/console-all-messages-text-filter.msft.png" alt-text="Messages dans la console" lightbox="../media/console-all-messages-text-filter.msft.png":::
-       Filtrage des messages n’incluant pas `Dave`  
+    :::image type="complex" source="../media/console-all-messages-text-filter.msft.png" alt-text="Filtrer les messages n’incluant pas Dave" lightbox="../media/console-all-messages-text-filter.msft.png":::
+       Filtrer les messages qui ne sont pas inclus `Dave`  
     :::image-end:::  
     
 1.  Supprimer `Dave` de la zone de texte du **filtre** .  Tous les messages réapparaissent.  
@@ -226,7 +226,7 @@ Pour afficher tous les messages qui incluent un modèle de texte plutôt qu’un
 
 1.  Entrez `/^[AH]/` dans la zone de texte du **filtre** .  Tapez ce modèle dans [Regex][|::ref1::|Main] pour obtenir une explication de ce qu’il fait.  
     
-    :::image type="complex" source="../media/console-all-messages-regex-filter.msft.png" alt-text="Messages dans la console" lightbox="../media/console-all-messages-regex-filter.msft.png":::
+    :::image type="complex" source="../media/console-all-messages-regex-filter.msft.png" alt-text="Filtrage de tout message ne correspondant à aucun critère" lightbox="../media/console-all-messages-regex-filter.msft.png":::
        Filtrage de tout message ne correspondant pas au modèle `/^[AH]/`  
     :::image-end:::  
     
@@ -238,23 +238,23 @@ Pour afficher uniquement les messages provenant d’une URL spécifique, utilise
 
 1.  Sélectionnez **afficher la barre latérale** de la console ![ ][ImageShowConsoleSidebarIcon] .  
     
-    :::image type="complex" source="../media/console-sidebar-all-messages.msft.png" alt-text="Messages dans la console" lightbox="../media/console-sidebar-all-messages.msft.png":::
+    :::image type="complex" source="../media/console-sidebar-all-messages.msft.png" alt-text="Barre latérale" lightbox="../media/console-sidebar-all-messages.msft.png":::
        Barre latérale  
     :::image-end:::  
     
 1.  Cliquez sur l’icône **développer** \ ( ![ développer ][ImageExpandIcon] \) en regard du nombre de messages.  Dans l’illustration suivante, le nombre de messages est indiqué par **13 messages**.  La **barre latérale** affiche une liste des URL ayant entraîné la journalisation des messages.  Par exemple, il `log.js` a généré 11 messages.  
     
-    :::image type="complex" source="../media/console-sidebar-expanded-all-messages.msft.png" alt-text="Messages dans la console" lightbox="../media/console-sidebar-expanded-all-messages.msft.png":::
+    :::image type="complex" source="../media/console-sidebar-expanded-all-messages.msft.png" alt-text="Affichage de la source de messages dans la barre latérale" lightbox="../media/console-sidebar-expanded-all-messages.msft.png":::
        Affichage de la source de messages dans la barre latérale  
     :::image-end:::  
     
 ### Filtrer par message utilisateur  
 
-Auparavant, lorsque vous cliquiez sur informations sur le **Journal**, un script appelé pour `console.log('Hello, Console!')` consigner le message sur la console.  Les messages enregistrés depuis JavaScript comme celui-ci s’appelle **messages utilisateur**.  En revanche, lorsque vous avez cliqué sur **Cause 404**, le navigateur a enregistré un `Error` message de niveau indiquant que la ressource demandée est introuvable.  Les messages comme les **messages du navigateur**.  Utilisez la **barre latérale** pour filtrer les messages de navigateur et afficher uniquement les messages utilisateurs.  
+Dans les versions antérieures, lorsque vous choisissez les **informations du journal**, un script intitulé `console.log('Hello, Console!')` pour consigner le message sur la console.  Les messages enregistrés depuis JavaScript comme celui-ci se nomment **messages utilisateurs**.  En revanche, lorsque vous choisissez **Cause 404**, le navigateur enregistre un `Error` message de niveau indiquant que la ressource demandée est introuvable.  Les messages comme les **messages du navigateur**.  Utilisez la **barre latérale** pour filtrer les messages de navigateur et afficher uniquement les messages utilisateurs.  
 
 1.  Sélectionnez **9 messages utilisateurs**.  Les messages de navigateur sont masqués.  
     
-    :::image type="complex" source="../media/console-sidebar-user-messages.msft.png" alt-text="Messages dans la console" lightbox="../media/console-sidebar-user-messages.msft.png":::
+    :::image type="complex" source="../media/console-sidebar-user-messages.msft.png" alt-text="Filtrage des messages de navigateur" lightbox="../media/console-sidebar-user-messages.msft.png":::
        Filtrage des messages de navigateur  
     :::image-end:::  
     
@@ -264,19 +264,19 @@ Auparavant, lorsque vous cliquiez sur informations sur le **Journal**, un script
 
 Que se passe-t-il si vous modifiez les styles, mais vous avez besoin de consulter rapidement le journal de la console pour obtenir un élément?  Utiliser le tiroir.  
 
-1.  Cliquez sur l’onglet **éléments** .  
+1.  Sélectionnez l’onglet **éléments** .  
 1.  Sélectionnez `Escape` .  L’onglet **console** du **tiroir** s’ouvre.  Toutes les fonctionnalités du panneau de la console que vous avez utilisées tout au long de ce didacticiel.  
     
-    :::image type="complex" source="../media/console-elements-drawer-console-sidebar-all-messages.msft.png" alt-text="Messages dans la console" lightbox="../media/console-elements-drawer-console-sidebar-all-messages.msft.png":::
+    :::image type="complex" source="../media/console-elements-drawer-console-sidebar-all-messages.msft.png" alt-text="Onglet Console du tiroir" lightbox="../media/console-elements-drawer-console-sidebar-all-messages.msft.png":::
          Onglet **console** du **tiroir**  
     :::image-end:::  
     
 <!--## Next steps  -->
 
 <!--
-*   See [Console Reference][DevToolsConsoleApi] to explore more features and workflows related to the Console UI.
-*   See [Console API Reference][DevToolsConsoleReference] to learn more about all of the `console` methods that were demonstrated in [View messages logged from JavaScript(#view-messages-logged-from-javascript) and explore the other `console` methods that were not covered in this tutorial.  
-*   See [Get Started](/microsoft-edge/devtools-guide-chromium/#start) to explore what else you are able to do with DevTools.  -->  
+*   Navigate to [Console Reference][DevToolsConsoleApi] to explore more features and workflows related to the Console UI.
+*   Navigate to [Console API Reference][DevToolsConsoleReference] to learn more about all of the `console` methods that were demonstrated in [View messages logged from JavaScript(#view-messages-logged-from-javascript) and explore the other `console` methods that were not covered in this tutorial.  
+*   Navigate to [Get Started](/microsoft-edge/devtools-guide-chromium/#start) to explore what else you are able to do with DevTools.  -->  
 
 ## Contacter l’équipe DevTools MicrosoftEdge  
 
@@ -289,7 +289,7 @@ Que se passe-t-il si vous modifiez les styles, mais vous avez besoin de consulte
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Outils de développement Microsoft Edge \ (chrome \) | Documents Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge \ (chrome \) | Documents Microsoft"  
 [DevToolsCommandMenu]: ../command-menu/index.md "Exécuter des commandes à l’aide du menu de commandes de Microsoft Edge DevTools | Documents Microsoft"  
 [DevToolsCustomizePlacement]: ../customize/placement.md "Changer la position de Microsoft Edge DevTools Documents Microsoft"  
 [DevToolsConsoleApi]: ./api.md "Référence sur les API de console | Documents Microsoft"  
@@ -303,10 +303,10 @@ Que se passe-t-il si vous modifiez les styles, mais vous avez besoin de consulte
 
 [WikiStackTrace]: https://en.wikipedia.org/wiki/Stack_trace "Trace de pile-Wikipédia"  
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/log) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/log) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

@@ -3,16 +3,16 @@ description: Ce guide vous donne une vue d’ensemble des notions de base de Win
 title: Commencer à utiliser les applications Web progressives (chrome)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/01/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: applications Web progressives, PWA, Edge, Windows, PWABuilder, le manifeste Web, le travailleur de service, l’émission
-ms.openlocfilehash: 065ced3afa8ecd4165325fd4f10a673d86c72fa7
-ms.sourcegitcommit: be76feed0d616a96c77ea2748a9f0d6c0c06284b
+ms.openlocfilehash: 7ad13f98f54c52891681d7591b21503c9d5825ff
+ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11103923"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "11231222"
 ---
 # Commencer à utiliser les applications Web progressives (chrome)  
 
@@ -23,11 +23,11 @@ Le guide suivant vous donne une vue d’ensemble des concepts de base de la cré
 > [!TIP]
 > Vous pouvez utiliser [PWABuilder][PwaBuilder] pour créer une nouvelle application Project Web App, améliorer votre version Web.  
 
-## Conditions préalables  
+## Prérequis  
 
 *   Utilisez le [code Visual Studio][VisualstudioCodeMain] pour modifier votre code source PWA.  
 *   Utilisez [Node.js][NodejsMain] comme serveur Web local.  
-
+    
 ## Créer une application Web de base  
 
 Pour créer une application Web vide, suivez les étapes décrites dans l’article [Générateur d’applications de nœud][ExpressjsApplicationGenerator]et nommez votre application `MySamplePwa` .  
@@ -118,7 +118,7 @@ Les travailleurs de service sont des tâches en arrière-plan qui interceptent l
 *   Exécution des tâches de récupération en arrière-plan  
 *   Icônes de badge  
 *   et bien plus encore  
-
+    
 Les travailleurs de service sont définis dans un fichier spécial JavaScript.  Pour plus d’informations, accédez à [utiliser les travailleurs de service][MDNUsingServiceWorkers] et les API du travailleur du [service][MDNServiceWorkerApi].  
 
 Pour créer un Worker Worker dans votre projet, utilisez la recette du travailleur du service de première connexion de service de **mise en cache** du [Générateur PWA][PwaBuilderServiceWorker].  
@@ -127,9 +127,8 @@ Pour créer un Worker Worker dans votre projet, utilisez la recette du travaille
     
     *   `pwabuilder-sw-register.js`  
     *   `pwabuilder-sw.js`  
-    
+        
 1.  Copiez les fichiers téléchargés dans le `public` dossier de votre projet d’application Web.  
-    
 1.  Dans le code Visual Studio, ouvrez `/public/index.html` et ajoutez l’extrait de code suivant à l’intérieur de la `<head>` balise.  
     
     ```html
@@ -147,26 +146,26 @@ Procédez comme suit pour vérifier que votre travailleur de service s’exécut
     ```
     
 1.  Dans Microsoft Edge, sélectionnez `F12` pour ouvrir Microsoft Edge devtools.  Sélectionnez **application**, puis **travailleurs de service** pour afficher les travailleurs de service.  Si le travailleur de service n’est pas affiché, actualisez la page.  
-     
-    :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Exécution de votre nouveau PWA sur localhost" lightbox="./media/devtools-sw-overview.png":::
+    
+    :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Vue d’ensemble des travailleurs de service Microsoft Edge DevTools" lightbox="./media/devtools-sw-overview.png":::
        Vue d’ensemble des travailleurs de service Microsoft Edge DevTools
     :::image-end:::
     
 1.  Affichez le cache du travailleur de service en développant **stockage du cache** et sélectionnez **pwabuilder-cache**.  Toutes les ressources mises en cache par le travailleur de service doivent être affichées.  Les ressources mises en cache par le travailleur de service incluent l’icône d’application, le manifeste de l’application, les fichiers CSS et JavaScript.  
     
-    :::image type="complex" source="./media/devtools-cache.png" alt-text="Exécution de votre nouveau PWA sur localhost" lightbox="./media/devtools-cache.png":::
+    :::image type="complex" source="./media/devtools-cache.png" alt-text="Cache du travailleur de service dans Microsoft Edge DevTools" lightbox="./media/devtools-cache.png":::
        Cache du travailleur de service dans Microsoft Edge DevTools (F12)
     :::image-end:::
     
-1.  Essayez votre application PWA en tant qu’application en mode hors connexion.  Dans Microsoft Edge DevTools \ ( `F12` \), cliquez sur **réseau** , puis **Online** définissez l’état de **connexion sur hors connexion**.  
+1.  Essayez votre application PWA en tant qu’application en mode hors connexion.  Dans Microsoft Edge DevTools \ ( `F12` \), cliquez sur **réseau** , puis **** définissez l’état de **connexion sur hors connexion**.  
     
-    :::image type="complex" source="./media/devtools-offline.png" alt-text="Exécution de votre nouveau PWA sur localhost" lightbox="./media/devtools-offline.png":::
+    :::image type="complex" source="./media/devtools-offline.png" alt-text="Définir l’application en mode hors connexion dans Microsoft Edge DevTools" lightbox="./media/devtools-offline.png":::
        Définir l’application en mode hors connexion dans Microsoft Edge DevTools
     :::image-end:::
     
 1.  Actualisez votre application pour qu’elle affiche le mécanisme hors connexion pour le service des ressources de votre application à partir du cache.  
     
-    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Exécution de votre nouveau PWA sur localhost" lightbox="./media/vs-nodejs-express-index.png":::
+    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="PWA exécuté hors connexion" lightbox="./media/vs-nodejs-express-index.png":::
        PWA exécuté hors connexion
     :::image-end:::
     
@@ -285,23 +284,24 @@ Pour tester les notifications de transmission pour votre PWA, procédez comme su
 
 1.  Accédez à votre PWA à l’adresse `http://localhost:3000` .  Lorsque le travailleur de votre service active et tente d’abonner votre PWA aux notifications de transmission, Microsoft Edge vous invite à autoriser votre PWA à afficher les notifications.  Sélectionnez **autoriser**.  
     
-    :::image type="complex" source="./media/notification-permission.png" alt-text="Exécution de votre nouveau PWA sur localhost" lightbox="./media/notification-permission.png":::
+    :::image type="complex" source="./media/notification-permission.png" alt-text="Boîte de dialogue autorisation permettant d’activer les notifications" lightbox="./media/notification-permission.png":::
        Boîte de dialogue autorisation permettant d’activer les notifications
     :::image-end:::
     
-1.  Simuler une notification de transmission côté serveur.  Avec votre PWA ouvert `http://localhost:3000` dans votre navigateur, sélectionnez `F12` pour ouvrir le devtools.  Sélectionnez **Application**  >  **Worker Worker Worker Worker**  >  **Push** pour envoyer une notification d’émission de test à votre application Project Web App.  
+1.  Simuler une notification de transmission côté serveur.  Avec votre PWA ouvert `http://localhost:3000` dans votre navigateur, sélectionnez `F12` pour ouvrir le devtools.  Sélectionnez ****  >  **Worker Worker Worker Worker**  >  **** pour envoyer une notification d’émission de test à votre application Project Web App.  
+    
     :::row:::
        :::column span="":::
           Une notification de transmission doit s’afficher à proximité de la barre des tâches.  
           
-          :::image type="complex" source="./media/devtools-push.png" alt-text="Exécution de votre nouveau PWA sur localhost" lightbox="./media/devtools-push.png":::
+          :::image type="complex" source="./media/devtools-push.png" alt-text="Pousser une notification de DevTools" lightbox="./media/devtools-push.png":::
              Pousser une notification de DevTools  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           Si vous ne sélectionnez pas \ (ou activer) une notification Toast, le système la ferme automatiquement après quelques secondes et la met en file d’attente dans votre centre de maintenance Windows.  
           
-          :::image type="complex" source="./media/windows-action-center.png" alt-text="Exécution de votre nouveau PWA sur localhost" lightbox="./media/windows-action-center.png":::
+          :::image type="complex" source="./media/windows-action-center.png" alt-text="Notifications dans le centre de notifications Windows" lightbox="./media/windows-action-center.png":::
              Notifications dans le centre de notifications Windows :::image-end:::
        :::column-end:::
     :::row-end:::  
@@ -316,7 +316,7 @@ Les étapes suivantes incluent des tâches supplémentaires pour vous aider à c
 *   Liaison Poussée  
 *   [Tests entre navigateurs][BrowserStackTestEdgeBrowser]  
 *   Mettre en œuvre des pratiques de validation et de test telles que [webhint][Webhint]  
-   
+    
 ## Voir également  
 
 *   [Applications Web progressives sur MDN Web docs][MDNProgressiveWebApps]  
@@ -338,7 +338,7 @@ Les étapes suivantes incluent des tâches supplémentaires pour vous aider à c
 
 <!-- links -->  
 
-<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps-edgehtml/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
+<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
 [VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Déploiement d’une application Node.js sur Azure avec du code Visual Studio | Documents Microsoft"  
 
@@ -399,7 +399,7 @@ Les étapes suivantes incluent des tâches supplémentaires pour vous aider à c
 
 [VapidkeysMain]: https://vapidkeys.com "Générateur de clés sécurisées VAPID | VapidKeys" 
 
-[Webhint]: https://webhint.io "Astuce"  
+[Webhint]: https://webhint.io "webhint"  
 
 [WebDevProgressiveWebApps]: https://developers.google.com/web/progressive-web-apps "Applications Web progressives | Web. dev"  
 
