@@ -3,63 +3,24 @@
   expanded: true
   items:
     - name: Accessibilité
-      href: accessibility.md
       items:
+        - name: Vue d’ensemble de l’accessibilité
+          href: accessibility/index.md
         - name: Conception
           href: accessibility/design.md
         - name: Build
-          href: accessibility/build.md
+          href: accessibility/build/index.md
           items:
             - name: ARIA et automatisation de l’interface utilisateur
               href: accessibility/build/ARIA-and-UI-Automation.md
         - name: Test
           href: accessibility/test.md
-    - name: Guide de développement
-      href: dev-guide.md
+    - name: DevTools
       items:
-        - name: Nouveautés de EdgeHTML
-          href: dev-guide/whats-new.md
-          items:
-            - name: EdgeHTML17
-              href: dev-guide/whats-new/edgeHTML-17.md
-            - name: EdgeHTML16
-              href: dev-guide/whats-new/edgeHTML-16.md
-            - name: EdgeHTML 15
-              href: dev-guide/whats-new/edgeHTML-15.md
-            - name: EdgeHTML14
-              href: dev-guide/whats-new/edgeHTML-14.md
-            - name: EdgeHTML13
-              href: dev-guide/whats-new/edgeHTML-13.md
-            - name: EdgeHTML12
-              href: dev-guide/whats-new/edgeHTML-12.md
-              items:
-                - name: Informations sur la version JavaScript
-                  href: dev-guide/whats-new/javascript-version-information.md
-        - name: Fonctionnalités de navigateur
-          href: dev-guide/browser-features.md
-          items:
-            - name: Stratégies d’exécution automatique
-              href: dev-guide/browser-features/autoplay-policies.md
-            - name: Flash
-              href: dev-guide/browser-features/flash.md
-            - name: Mode Lecture
-              href: dev-guide/browser-features/reading-view.md
-            - name: Découverte de moteur de recherche
-              href: dev-guide/browser-features/search-provider-discovery.md
-        - name: Fonctionnalités d’intégration de Windows
-          href: dev-guide/windows-integration.md
-          items:
-            - name: API de demande de paiement
-              href: dev-guide/windows-integration/Payment-Request-API.md
-            - name: Authentification web
-              href: dev-guide/windows-integration/web-authentication.md
-            - name: API notifications Web
-              href: dev-guide/windows-integration/web-Notifications-API.md
-    - name: DevTools (Chromium)
-      href: devtools-guide-chromium.md
-      items:
+        - name: Vue d’ensemble de DevTools
+          href: devtools-guide-chromium/index.md
         - name: Ouvrir DevTools
-          href: devtools-guide-chromium/open.md
+          href: devtools-guide-chromium/open/index.md
         - name: Nouveautés
           items:
             - name: Microsoft Edge 88
@@ -79,9 +40,9 @@
             - name: MicrosoftEdge80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
         - name: Fonctionnalités expérimentales
-          href: devtools-guide-chromium/experimental-features.md
+          href: devtools-guide-chromium/experimental-features/index.md
         - name: Mode InternetExplorer
-          href: devtools-guide-chromium/ie-mode.md
+          href: devtools-guide-chromium/ie-mode/index.md
         - name: Vue 3D
           href: devtools-guide-chromium/3d-view/index.md
         - name: Travailleurs du service
@@ -108,7 +69,7 @@
               href: devtools-guide-chromium/css/print-preview.md
         - name: Console
           items:
-            - name: Vue d'ensemble
+            - name: Présentation de la console
               href: devtools-guide-chromium/console/index.md
             - name: Messages de journal
               href: devtools-guide-chromium/console/log.md
@@ -152,7 +113,7 @@
           href: devtools-guide-chromium/command-menu/index.md
         - name: Émulation
           items:
-            - name: Vue d'ensemble
+            - name: Vue d’ensemble de l’émulation
               href: devtools-guide-chromium/device-mode/index.md
             - name: Émuler et tester d’autres navigateurs
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
@@ -185,7 +146,7 @@
             - name: Remplacements
               href: devtools-guide-chromium/javascript/overrides.md
             - name: Vue d’ensemble du volet Sources
-              href: devtools-guide-chromium/sources.md
+              href: devtools-guide-chromium/sources/index.md
             - name: Services d’arrière-plan de débogage
               href: devtools-guide-chromium/javascript/background-services.md
             - name: Guides
@@ -236,7 +197,7 @@
               href: devtools-guide-chromium/remote-debugging/windows.md
         - name: Mémoire
           items:
-            - name: Vue d'ensemble
+            - name: Vue d’ensemble de la mémoire
               href: devtools-guide-chromium/memory-problems/index.md
             - name: Comprendre la terminologie de la mémoire
               href: devtools-guide-chromium/memory-problems/memory-101.md
@@ -247,20 +208,20 @@
         - name: Media
           href: devtools-guide-chromium/media-panel/index.md
         - name: WebAuthn
-          href: devtools-guide-chromium/WebAuthn/index.md
+          href: devtools-guide-chromium/webauthn/index.md
         - name: Espaces travail
           href: devtools-guide-chromium/workspaces/index.md
         - name: Applications web progressives
-          href: devtools-guide-chromium/progressive-web-apps.md
+          href: devtools-guide-chromium/progressive-web-apps/index.md
         - name: Sécurité
           href: devtools-guide-chromium/security/index.md
         - name: Raccourcis clavier
-          href: devtools-guide-chromium/shortcuts.md
+          href: devtools-guide-chromium/shortcuts/index.md
         - name: Ressources
           href: devtools-guide-chromium/resources/index.md
         - name: Personnalisation
           items:
-            - name: Vue d'ensemble
+            - name: Personnaliser la vue d’ensemble
               href: devtools-guide-chromium/customize/index.md
             - name: Thème foncé
               href: devtools-guide-chromium/customize/dark-theme.md
@@ -270,108 +231,12 @@
               href: devtools-guide-chromium/customize/localization.md
             - name: Raccourcis
               href: devtools-guide-chromium/customize/shortcuts.md
-    - name: DevTools (EdgeHTML)
-      href: devtools-guide.md
+    - name: Vue d’ensemble du protocole DevTools
+      href: devtools-protocol-chromium/index.md
+    - name: Extensions
       items:
-        - name: Nouveautés
-          href: devtools-guide/whats-new.md
-          items:
-            - name: EdgeHTML17
-              href: devtools-guide/whats-new/edgehtml-17.md
-            - name: EdgeHTML16
-              href: devtools-guide/whats-new/edgehtml-16.md
-        - name: Éléments
-          href: devtools-guide/elements.md
-          items:
-            - name: Styles
-              href: devtools-guide/elements/styles.md
-            - name: Calculée
-              href: devtools-guide/elements/computed.md
-            - name: Événements
-              href: devtools-guide/elements/events.md
-            - name: Points d’arrêt DOM
-              href: devtools-guide/elements/dom-breakpoints.md
-            - name: Polices
-              href: devtools-guide/elements/fonts.md
-            - name: Accessibilité
-              href: devtools-guide/elements/accessibility.md
-            - name: Modifications
-              href: devtools-guide/elements/changes.md
-        - name: Console
-          href: devtools-guide/console.md
-          items:
-            - name: API de la console
-              href: devtools-guide/console/console-api.md
-            - name: Ligne de commande
-              href: devtools-guide/console/command-line.md
-            - name: Codes d’erreur et d’état
-              href: devtools-guide/console/error-and-status-codes.md
-        - name: Débogueur
-          href: devtools-guide/debugger.md
-        - name: Network
-          href: devtools-guide/network.md
-        - name: Niveau de performance
-          href: devtools-guide/performance.md
-        - name: Mémoire
-          href: devtools-guide/memory.md
-        - name: Stockage
-          href: devtools-guide/storage.md
-        - name: Workers du service
-          href: devtools-guide/service-workers.md
-        - name: Émulation
-          href: devtools-guide/emulation.md
-    - name: Protocole DevTools (Chromium)
-      href: devtools-protocol-chromium.md
-    - name: Protocole DevTools (EdgeHTML)
-      href: devtools-protocol/index.md
-      items:
-        - name: 0.1
-          href: devtools-protocol/0.1/index.md
-          items:
-            - name: Clients
-              href: devtools-protocol/0.1/clients.md
-            - name: Points de terminaison HTTP
-              href: devtools-protocol/0.1/http.md
-            - name: 'les domaines,'
-              href: devtools-protocol/0.1/domains/index.md
-              items:
-                - name: Débogueur
-                  href: devtools-protocol/0.1/domains/debugger.md
-                - name: Page
-                  href: devtools-protocol/0.1/domains/page.md
-                - name: Runtime
-                  href: devtools-protocol/0.1/domains/runtime.md
-                - name: Schéma
-                  href: devtools-protocol/0.1/domains/schema.md
-        - name: 0.2
-          href: devtools-protocol/0.2/index.md
-          items:
-            - name: Clients
-              href: devtools-protocol/0.2/clients.md
-            - name: Points de terminaison HTTP
-              href: devtools-protocol/0.2/http.md
-            - name: 'les domaines,'
-              href: devtools-protocol/0.2/domains/index.md
-              items:
-                - name: CSS
-                  href: devtools-protocol/0.2/domains/css.md
-                - name: DOM
-                  href: devtools-protocol/0.2/domains/dom.md
-                - name: DOMDebugger
-                  href: devtools-protocol/0.2/domains/domdebugger.md
-                - name: Débogueur
-                  href: devtools-protocol/0.2/domains/debugger.md
-                - name: Overlay
-                  href: devtools-protocol/0.2/domains/overlay.md
-                - name: Page
-                  href: devtools-protocol/0.2/domains/page.md
-                - name: Runtime
-                  href: devtools-protocol/0.2/domains/runtime.md
-                - name: Schéma
-                  href: devtools-protocol/0.2/domains/schema.md
-    - name: Extensions (Chromium)
-      href: extensions-chromium/index.md
-      items:
+        - name: Présentation des extensions
+          href: extensions-chromium/index.md
         - name: Prise en main
           items:
             - name: Architecture d'extension
@@ -420,75 +285,15 @@
               href: extensions-chromium/enterprise/match-patterns.md
             - name: Hébergement et mise à jour
               href: extensions-chromium/enterprise/hosting-and-updating.md
-    - name: Extensions (EdgeHTML)
-      href: extensions/index.md
-      items:
-        - name: Prise en charge de l’API
-          href: extensions/API-support.md
-          items:
-            - name: Feuille de route API d’extension
-              href: extensions/API-support/extension-API-roadmap.md
-            - name: API prises en charge
-              href: extensions/API-support/supported-APIs.md
-            - name: Clés de manifeste prises en charge
-              href: extensions/API-support/supported-manifest-keys.md
-              items:
-                - name: Exemple de manifeste JSON
-                  href: extensions/API-support/supported-manifest-keys/json-manifest-example.md
-        - name: Extensions pour les entreprises
-          href: extensions/extensions-for-enterprise.md
-        - name: Prise en main
-          href: extensions/getting-started.md
-        - name: Guides
-          href: extensions/guides.md
-          items:
-            - name: Accessibilité
-              href: extensions/guides/accessibility.md
-            - name: Ajout et suppression d’extensions
-              href: extensions/guides/adding-and-removing-extensions.md
-            - name: Création d’une extension
-              href: extensions/guides/creating-an-extension.md
-            - name: Extensions de débogage
-              href: extensions/guides/debugging-extensions.md
-            - name: Conception
-              href: extensions/guides/design.md
-            - name: Internationalisation
-              href: extensions/guides/internationalization.md
-            - name: Messagerie native
-              href: extensions/guides/native-messaging.md
-            - name: Packages
-              href: extensions/guides/packaging.md
-              items:
-                - name: Création et test de packages d’extension
-                  href: extensions/guides/packaging/creating-and-testing-extension-packages.md
-                - name: Extensions dans le centre de développement Windows
-                  href: extensions/guides/packaging/extensions-in-the-windows-dev-center.md
-                - name: Localisation des packages d’extension
-                  href: extensions/guides/packaging/localizing-extension-packages.md
-                - name: Utilisation de ManifoldJS pour conditionner les extensions
-                  href: extensions/guides/packaging/using-ManifoldJS-to-package-extensions.md
-                - name: Exécution du Kit de certification des applications Windows
-                  href: extensions/guides/packaging/running-the-windows-app-certification-kit.md
-            - name: Portage des extensions de Chrome
-              href: extensions/guides/porting-Chrome-extensions.md
-        - name: Stratégie d’extension du navigateur Microsoft
-          href: extensions/microsoft-browser-extension-policy.md
-        - name: Conseils et astuces
-          href: extensions/tips-and-tricks.md
-        - name: Résolution des problèmes
-          href: extensions/troubleshooting.md
-    - name: Hébergement
-      href: hosting/toc.md
-    - name: Versions d’évaluation d’origine
+    - name: Vue d’ensemble des essais d’origine
       href: origin-trials/index.md
-    - name: Analyse des performances
-      href: performance-analysis.md
     - name: Livre blanc sur la confidentialité
-      href: privacy-whitepaper.md
-    - name: Applications web progressives (Chromium)
-      href: progressive-web-apps-chromium/index.md
+      href: privacy-whitepaper/index.md
+    - name: Applications web progressives
       items:
-        - name: Prise en main des applications web progressives (Chromium)
+        - name: Vue d’ensemble des applications web progressives
+          href: progressive-web-apps-chromium/index.md
+        - name: Prise en main de PWA
           href: progressive-web-apps-chromium/get-started.md
         - name: Scénarios hors connexion
           href: progressive-web-apps-chromium/offline.md
@@ -496,42 +301,29 @@
           href: progressive-web-apps-chromium/serviceworker.md
         - name: Manifestes d’application web
           href: progressive-web-apps-chromium/webappmanifests.md
-    - name: Applications web progressives (EdgeHTML)
-      href: progressive-web-apps-edgehtml/index.md
-      items:
-        - name: Prise en main des applications web progressives (EdgeHTML)
-          href: progressive-web-apps-edgehtml/get-started.md
-        - name: Personnaliser votre PWA pour Windows
-          href: progressive-web-apps-edgehtml/windows-features.md
-          items:
-            - name: PWA pour Xbox
-              href: progressive-web-apps-edgehtml/xbox-considerations.md
-        - name: PWA dans le Microsoft Store
-          href: progressive-web-apps-edgehtml/microsoft-store.md
-    - name: Dramaturge
+    - name: Vue d’ensemble de Playwright
       href: playwright/index.md
-    - name: Marionnettiste
-      href: puppeteer.md
-    - name: Visual Studio
+    - name: Vue d’ensemble de Puppeteer
+      href: puppeteer/index.md
+    - name: Vue d’ensemble de Visual Studio
       href: visual-studio/index.md
     - name: VisualStudioCode
-      href: visual-studio-code/index.md
       items:
-        - name: Débogueur pour Edge
+        - name: Vue d’ensemble du Visual Studio Code
+          href: visual-studio-code/index.md
+        - name: Débogueur pour l’extension Edge
           href: visual-studio-code/debugger-for-edge.md
         - name: Extension DevTools Microsoft Edge
           href: visual-studio-code/microsoft-edge-devtools-extension.md
-        - name: webhint
+        - name: extension webhint
           href: visual-studio-code/webhint.md
-    - name: WebDriver (Chromium)
+    - name: WebDriver
       items:
-        - name: Prise en main
+        - name: Vue d’ensemble du WebDriver
           href: webdriver-chromium/index.md
-        - name: Fonctionnalités & EdgeOptions
+        - name: Fonctionnalités et EdgeOptions
           href: webdriver-chromium/capabilities-edge-options.md
-    - name: WebDriver (EdgeHTML)
-      href: webdriver.md
-    - name: Plateforme web (Chromium)
+    - name: Plateforme web
       items:
         - name: Modifications apportées à Microsoft Edge ayant un impact sur la compatibilité des sites
           href: web-platform/site-impacting-changes.md
@@ -541,10 +333,7 @@
           href: web-platform/tracking-prevention.md
         - name: Chaîne de l’agent utilisateur Microsoft Edge
           href: web-platform/user-agent-string.md
-    - name: WebView2 (Chromium)
+    - name: WebView2
       href: webview2/toc.yml
-    - name: Guide du développeur WebVR
-      href: /microsoft-edge/webvr/index
-    - name: Windows Runtime (WinRT)
-      href: windows-runtime/toc.yml
-      topicHref: windows-runtime/index.md
+    - name: Documentation Microsoft Edge héritée
+      href: edgehtml/index.md
