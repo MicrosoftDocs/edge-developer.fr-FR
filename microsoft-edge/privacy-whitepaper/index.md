@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 86981c0ab9dcce7069c7da7b3bdaaee6bf93077e
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: e34228f7b094fbf11320da7d9523f04d2a550aae
+ms.sourcegitcommit: 5f10022bd1da3477660be40c559411fadf59d8f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11232851"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "11297736"
 ---
 # Livre blanc sur la confidentialité MicrosoftEdge  
 
@@ -149,7 +149,7 @@ Lors du retour de la licence média, un identificateur de média est créé, leq
 Pour désactiver toutes les protections de contenu et DRM, accédez à `edge://settings/content/protectedContent` et désactivez les paramètres **Autoriser les sites à lire du contenu protégé (recommandé)** et **Autoriser les identificateurs pour le contenu protégé (le redémarrage de l’ordinateur peut être nécessaire)**.  
 
 *   La désactivation du paramètre **Autoriser les sites à lire du contenu protégé** désactive la lecture pour les systèmes DRM basés sur CDM, tels que PlayReady et Widevine, mais pas pour les systèmes non-CDM tels que Flash Access DRM.  Pour gérer les autorisations de site Flash, accédez à `edge://settings/content/flash`.  La désactivation du paramètre a pour effet que la fonctionnalité multimédia cesse de fonctionner correctement.  
-*   La désactivation de l’option **Autoriser les identificateurs pour le contenu protégé** empêche la création d’identificateurs pour Flash Access DRM et empêche Widevine de récupérer régulièrement les mises à jour à partir de Google.  Le fait de désactiver le paramètre peut empêcher certaines fonctionnalités multimédias de fonctionner correctement.  
+*   La désactivation de l’option **Autoriser les identificateurs pour le contenu protégé** empêche la création d’identificateurs pour Flash Access DRM et empêche Widevine de récupérer régulièrement les mises à jour à partir de Google.  Le fait de désactiver le paramètre peut empêcher certaines fonctionnalités multimédias sur certains sites de fonctionner correctement.  
 
 ## Ne pas effectuer de suivi  
 
