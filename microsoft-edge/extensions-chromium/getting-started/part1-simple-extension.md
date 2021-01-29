@@ -47,7 +47,7 @@ L’extrait de code suivant présente les informations de base nécessaires dans
 
 Commencez par créer le `icons` répertoire dans votre projet pour stocker les fichiers image d’icône.  Les icônes sont utilisées pour l’image d’arrière-plan du bouton que les utilisateurs sélectionnent pour lancer l’extension.  
 
-:::image type="complex" source="./media/part1-badge1.png" alt-text="Dans la barre d’outils pour ouvrir votre extension&quot;:::
+:::image type="complex" source="./media/part1-badge1.png" alt-text="Dans la barre d’outils pour ouvrir votre extension":::
    Dans la barre d’outils pour ouvrir votre extension
 :::image-end:::
 
