@@ -323,6 +323,8 @@
           href: webdriver-chromium/index.md
         - name: Fonctionnalités et EdgeOptions
           href: webdriver-chromium/capabilities-edge-options.md
+        - name: Vérification des téléchargements des outils Selenium pour Microsoft Edge
+          href: webdriver-chromium/verify-selenium-tools.md
     - name: Plateforme web
       items:
         - name: Modifications apportées à Microsoft Edge ayant un impact sur la compatibilité des sites
