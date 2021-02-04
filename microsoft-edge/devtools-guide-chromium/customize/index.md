@@ -1,18 +1,18 @@
 ---
-description: Liste des méthodes de personnalisation de Microsoft Edge DevTools
+description: Liste des façons de personnaliser Microsoft Edge DevTools
 title: Personnaliser Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/20/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 682ff78b6a5272c1f6462648d64241448838edac
-ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
+ms.openlocfilehash: 5822fa087244fdfafdefe040709058411040ea45
+ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "11189977"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313022"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,74 +30,74 @@ ms.locfileid: "11189977"
 
 # Personnaliser Microsoft Edge DevTools  
 
-Cette page présente les méthodes de personnalisation de Microsoft Edge DevTools.  
+Cette page répertorie les méthodes de personnalisation de Microsoft Edge DevTools.  
 
 ## Paramètres  
 
-**Paramètres**  >  **Préférences** propose de nombreuses options de personnalisation de devtools.  
+**Paramètres**  >  **Les préférences** contiennent de nombreuses options de personnalisation de DevTools.  
 
-Pour ouvrir les paramètres, effectuez l’une des actions suivantes.  
+Pour ouvrir Paramètres, effectuer l’une des actions suivantes.  
 
-*   Sélectionner `F1` lorsque devtools a le focus.  
-*   Ouvrez le **menu principal** , puis sélectionnez **paramètres**.  
+*   Sélectionnez `F1` pendant que DevTools est en focus.  
+*   Ouvrez **le menu principal,** puis choisissez **Paramètres.**  
     
 :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Paramètres" lightbox="../media/customize-settings-preferences.msft.png":::
    **Paramètres**  
 :::image-end:::  
 
-## Bac  
+## Caisse  
 
-Le **tiroir** est un deuxième panneau dans lequel sont affichés les outils de votre choix.  
+Le **Panneau** est un second panneau dans lequel les outils de votre choix sont affichés.  
 
-Pour ouvrir \ (ou fermer) le **tiroir**, sélectionnez `Escape` .  
+Pour ouvrir \(ou fermer\) le **caisse,** sélectionnez `Escape` .  
 
-:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Le tiroir" lightbox="../media/customize-drawer-open.msft.png":::
-   Le **tiroir**  
+:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="Le caisse" lightbox="../media/customize-drawer-open.msft.png":::
+   Le **caisse**  
 :::image-end:::  
 
-Par défaut, certains outils s’ouvrent dans le panneau principal, tandis que d’autres apparaissent dans le **tiroir**.  **More** `...` Pour ouvrir un outil du **tiroir**-panneau, sélectionnez plus.  
+Par défaut, certains outils s’ouvrent dans le panneau principal, tandis que d’autres apparaissent dans le **panneau**.  Choose **More** \( `...` \) to open a tool in the **Drawer**.  
 
-:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Bouton permettant d’ouvrir le tiroir" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
-   Bouton permettant d’ouvrir le **tiroir**  
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="Bouton pour ouvrir le caisse" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+   Bouton pour ouvrir le **caisse**  
 :::image-end:::  
 
-Vous pouvez déplacer des outils entre le panneau principal et le tiroir.  
+Vous pouvez déplacer les outils entre le panneau principal et le panneau.  
 
-*   Pour déplacer un outil du tiroir vers le panneau principal, positionnez le pointeur sur un outil, ouvrez le menu contextuel (cliquez avec le bouton droit sur \) et sélectionnez **déplacer vers le haut**.  
+*   Pour déplacer un outil du panneau vers le panneau principal, pointez sur un outil, ouvrez le menu contextuel \(clic droit\) et choisissez Déplacer **vers le haut.**  
     
-    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Déplacer l’outil du tiroir vers le panneau principal" lightbox="../media/move-from-drawer.msft.png":::
-       Déplacer l’outil du **tiroir** vers le panneau principal  
+    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Déplacer l’outil du Panneau vers le panneau principal" lightbox="../media/move-from-drawer.msft.png":::
+       Déplacer l’outil du **Panneau** vers le panneau principal  
     :::image-end:::  
     
-*   Pour déplacer un outil du panneau principal vers le tiroir, pointez sur un outil, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \) et sélectionnez **déplacer vers le bas**.  
+*   Pour déplacer un outil du panneau principal vers le panneau, pointez sur un outil, ouvrez le menu contextuel \(clic droit\) et choisissez Déplacer **vers le bas.**  
     
-    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Déplacer l’outil du panneau principal vers le tiroir" lightbox="../media/move-to-drawer.msft.png":::
-       Déplacer l’outil du panneau principal vers le **tiroir**
+    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Déplacer l’outil du panneau principal vers le panneau" lightbox="../media/move-to-drawer.msft.png":::
+       Déplacer l’outil du panneau principal vers le **panneau**
     :::image-end:::  
     
 
-## Réorganiser les panneaux  
+## Réordesser les panneaux  
 
-Pour modifier le classement, sélectionnez et faites glisser un outil.  L’ordre de vos outils personnalisés persiste dans toutes les sessions DevTools.  
+Choisissez et faites glisser un outil pour modifier l’ordre.  Votre ordre d’outils personnalisé est persistant dans les sessions DevTools.  
 
 > [!NOTE]
-> Par défaut, l’outil **réseau** est généralement le quatrième à partir de la gauche.  Dans l’illustration suivante, le panneau **réseau** est le premier à partir de la gauche.  
+> Par défaut, **l’outil** Réseau est généralement le quatrième à partir de la gauche.  Dans la figure suivante, le **panneau** Réseau est le premier à partir de la gauche.  
 
-:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Ordre personnalisé de devtools dans un panneau" lightbox="../media/customize-network-first-position.msft.png":::
-   Ordre personnalisé de devtools dans un panneau  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Ordre personnalisé des Devtools dans un panneau" lightbox="../media/customize-network-first-position.msft.png":::
+   Ordre personnalisé des Devtools dans un panneau  
 :::image-end:::  
 
-## Changer la position de DevTools  
+## Modifier le placement de DevTools  
 
-Voir [placement de Microsoft Edge devtools][DevToolsPlacement].  
+Voir [Microsoft Edge DevTools Placement][DevToolsPlacement].  
 
-:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="DevTools non attaché" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
-   DevTools non attaché  
+:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="DevTools non barraté" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+   DevTools non barraté  
 :::image-end:::  
 
 ## Thème foncé  
 
-Voir [activer un thème foncé][DarkTheme].  
+Voir [Activer le thème foncé.][DarkTheme]  
 
 :::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Thème foncé" lightbox="../media/customize-settings-appearance-theme.msft.png":::
    Thème foncé  
@@ -105,13 +105,13 @@ Voir [activer un thème foncé][DarkTheme].
 
 ## Expériences  
 
-Pour activer les expériences DevTools, effectuez les actions suivantes.  
+Pour activer les expériences DevTools, effectuer les actions suivantes.  
 
-1.  Accédez à `edge://flags/#enable-devtools-experiments` .  
-1.  Cliquez sur **activer**.  
-1.  Sélectionnez **relancer maintenant**, en bas de la page.  
+1.  Accédez `edge://flags/#enable-devtools-experiments` à .  
+1.  Choose **Enable**.  
+1.  Choose **Relaunch Now**, at the bottom of the page.  
 
-La prochaine fois que vous ouvrez DevTools, une nouvelle page nommée **expériences** apparaît dans les [paramètres](#settings).  
+La prochaine fois que vous ouvrirez DevTools, une nouvelle page nommée **Expériences** s’affiche dans [Paramètres.](#settings)  
 
 ## Contacter l’équipe DevTools MicrosoftEdge  
 
@@ -123,14 +123,14 @@ La prochaine fois que vous ouvrez DevTools, une nouvelle page nommée **expérie
 
 <!-- links -->  
 
-[DevToolsPlacement]: ./placement.md "Changer la position de Microsoft Edge DevTools Documents Microsoft"  
-[DarkTheme]: ./dark-theme.md "Activer un thème foncé dans Microsoft Edge DevTools | Documents Microsoft"  
+[DevToolsPlacement]: ./placement.md "Modifier le placement de Microsoft Edge DevTools | Documents Microsoft"  
+[DarkTheme]: ./dark-theme.md "Activer le thème foncé dans Microsoft Edge DevTools | Documents Microsoft"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/customize/index) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/customize/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

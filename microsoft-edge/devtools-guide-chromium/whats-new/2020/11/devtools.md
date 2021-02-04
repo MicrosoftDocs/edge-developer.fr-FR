@@ -3,16 +3,16 @@ description: Microsoft Edge sur Linux, conseils d’amélioration de webhint dan
 title: Nouveautés de DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/15/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: a9c262075f3d541861ed825a8da96b3a86956c0e
-ms.sourcegitcommit: c06a4ece7bcbfeae4677d15fca677ca42a0373b9
-ms.translationtype: HT
+ms.openlocfilehash: 9e4bdfcb3cc32364931894dcb3c857ac6e082809
+ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "11229474"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313085"
 ---
 # Nouveautés de DevTools (Microsoft Edge 88)  
 
@@ -62,7 +62,7 @@ Pour vous aider à passer en revue les problèmes détectés par [webhint][Webhi
 <!-- Title: 3D View is now integrated with Composited Layers  -->  
 <!-- Subtitle: Composited Layers are now in 3D View.  -->  
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
+:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
 Vous avez désormais la possibilité de visualiser les contenus de **calques** avec les valeurs d’index z et le modèle d’objet du document (DOM).  Cette fonctionnalité vous permet de déboguer sans basculer entre les outils d’[affichage 3D][Devtools3dViewIndex] et de **calques** .  Pour une expérience complète de débogage, [l’affichage 3D et les couches composites sont désormais combinés][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView].  
 
@@ -222,7 +222,7 @@ Cet angle CSS est utilisé pour l’exemple.
 
 ```css
 background: linear-gradient(100deg, lightblue, pink);
-```  
+```
 
 :::image type="complex" source="../../media/2020/11/css-angle.msft.png" alt-text="Angle CSS" lightbox="../../media/2020/11/css-angle.msft.png":::
    Angle CSS  
@@ -329,7 +329,7 @@ Par exemple, l’outil **réseau** utilisait `kB` dans les étiquettes, mais uti
 
 ## Télécharger les canaux d’aperçu Microsoft Edge  
 
-Si vous utilisez Windows, Linux ou macOS, envisagez d’utiliser [les canaux d’aperçu de Microsoft Edge] [MicrosoftEdgePreviewChannels] en tant que navigateur de développement par défaut.  Les canaux d’aperçu vous permettent d’accéder aux dernières fonctionnalités de DevTools.  
+Si vous utilisez Windows, Linux ou macOS, envisagez d’utiliser les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] comme navigateur de développement par défaut.  Les canaux d’aperçu vous permettent d’accéder aux dernières fonctionnalités de DevTools.  
 
 ## Contacter l’équipe Microsoft Edge DevTools  
 
@@ -360,6 +360,8 @@ Si vous utilisez Windows, Linux ou macOS, envisagez d’utiliser [les canaux d�
 
 [MicrosoftinsiderDownloadPlatformLinux]: https://www.microsoftedgeinsider.com/download?platform=linux "Télécharger les canaux Microsoft Edge Insider"  
 
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canaux d’aperçu Microsoft Edge"  
+
 [VisualStudioCode]: https://code.visualstudio.com "Code Visual Studio"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Bogues Chromium"  
@@ -370,7 +372,7 @@ Si vous utilisez Windows, Linux ou macOS, envisagez d’utiliser [les canaux d�
 [CR1035309]: https://crbug.com/1035309 "Problème 1035309: DevTools doit utiliser de manière cohérente Mo pour signifier mégaoctets, pas mebibyte | Bogues Chromium"  
 [CR1051466]: https://crbug.com/1051466 "Problème 1051466: Prendre en charge le débogage COOP/COEP dans DevTools | Bogues Chromium"  
 [CR1058836]: https://crbug.com/1058836 "Problème 1058836: Problèmes UX liés au débogage de WASM | Bogues Chromium"  
-[CR1071432]: https://crbug.com/1071432 "Problème 1071432: ☂️ Experience de développeur de base WASM | Bogues Chromium"  
+[CR1071432]: https://crbug.com/1071432 "Problème 1071432 : ☂︝'expérience de développement de base de Wasm | Bogues Chromium"  
 [CR1107766]: https://crbug.com/1107766 "Problème 1107766: Affichez des informations sur les cadres générées par ’window.open()' dans l’arborescence de cadre | Bogues Chromium"  
 [CR1122507]: https://crbug.com/1122507 "Problème 1122507: Informations sur le travailleur de surface dans l’affichage de l’arborescence de cadre | Bogues Chromium"  
 [CR1126178]: https://crbug.com/1126178 "Problème 1126178: ☂ DevTools: CSS <type> composants | Bogues Chromium"  
