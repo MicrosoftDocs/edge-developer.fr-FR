@@ -3,16 +3,16 @@ description: Dernières fonctionnalités expérimentales de Microsoft Edge DevTo
 title: Fonctionnalités expérimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2020
+ms.date: 02/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft Edge, développement web, outils f12, devtools, expérimentation
-ms.openlocfilehash: 018364d4debc1791685a028c337f61f85865ef6b
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: 32eaa3e8d41efefa669142297891e7c62cf4eb5b
+ms.sourcegitcommit: d53421b7219ad87fa9d58f601d9c61ee44c2e43a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313048"
+ms.locfileid: "11313464"
 ---
 # Fonctionnalités expérimentales  
 
@@ -51,9 +51,9 @@ Les sections suivantes décrivent les nouvelles fonctionnalités expérimentales
 | [Visionneuse de commandes source](#source-order-viewer) | 86 ou ultérieure |  
 | [Activer l’éditeur de raccourci clavier](#enable-keyboard-shortcut-editor) | 87 ou ultérieure |  
 | [Activer les couches composites en vue 3D](#enable-composited-layers-in-3d-view) | 87 ou ultérieure |  
-| [Activer le nouvel outil Éditeur de polices dans le volet Styles](#) | 89 ou ultérieure |  
+| [Activer le nouvel outil Éditeur de polices dans le volet Styles](#enable-new-font-editor-tool-within-the-styles-pane) | 89 ou ultérieure |  
 | [Activer les nouvelles fonctionnalités de débogage Flexbox CSS](#enable-new-css-flexbox-debugging-features) | 89 ou ultérieure |  
-| [Activer les menus + onglet de bouton pour ouvrir d’autres outils](#enable--button-tab-menus-to-open-more-tools) | 89 ou ultérieure |  
+| [Activer + les menus onglet de bouton pour ouvrir d’autres outils](#enable--button-tab-menus-to-open-more-tools) | 89 ou ultérieure |  
 | [Activer l’onglet Bienvenue](#enable-welcome-tool) | 89 ou ultérieure |  
 
 ### Activer les nouvelles fonctionnalités de débogage de grille CSS  
@@ -62,13 +62,13 @@ Cette fonctionnalité expérimentale fournit un certain nombre de nouvelles visu
 
 #### Affichage des superpositions de grille sur pointage à l’aide de l’outil Inspect  
 
-**L’outil Inspect** permet d’identifier et de visualiser rapidement les dispositions de grille CSS dans un site web en pointant dessus avec la souris.  Choisissez **l’icône Inspect** \( Inspect \) dans le ![ coin supérieur gauche de ](../media/inspect-icon.msft.png) DevTools.  Ensuite, pointez sur un élément Grid sur le site web que vous déboguer.  Les contours sont affichés autour de la grille et la ombrage indique l’emplacement des intervalles de grille, le cas présent.  
+**L’outil Inspect** permet d’identifier et de visualiser rapidement les dispositions de grille CSS dans un site web en pointant dessus avec la souris.  Choisissez **l’icône Inspect** \( Inspect \) dans le ![ coin supérieur gauche de ](../media/inspect-icon.msft.png) DevTools.  Ensuite, pointez sur un élément Grid sur le site web que vous déboguerz.  Les contours sont affichés autour de la grille et la ombrage indique l’emplacement des intervalles de grille, le cas présent.  
 
 :::image type="complex" source="../media/grid-inspect.msft.png" alt-text="Affichage des grilles à l’aide de l’outil Inspect" lightbox="../media/grid-inspect.msft.png":::
    Affichage des grilles à l’aide de **l’outil Inspect**  
 :::image-end:::  
 
-#### Affichage des superpositions de grilles persistantes  
+#### Affichage des superpositions de grille persistantes  
 
 Dans Microsoft Edge version 86 ou ultérieure, la fonctionnalité de grille CSS expérimentale offre également la possibilité d’activer les superpositions de grille persistantes.  Les superpositions persistantes offrent plusieurs avantages.  
 
@@ -92,7 +92,7 @@ Les deux façons de faire basculer une superposition de grille persistante.
     
 #### Configuration des superpositions persistantes  
 
-Dans Microsoft Edge version 86 **** ou ultérieure, le nouveau panneau de **** disposition se trouve dans l’outil **Éléments,** ainsi que dans les onglets **Styles** et Calculés.  Le **panneau de** disposition offre des options de configuration pour les superpositions persistantes.  
+Dans Microsoft Edge version 86 **** ou ultérieure, le nouveau panneau de **** disposition se trouve dans l’outil **Éléments** avec les onglets **Styles** et Calculés.  Le **panneau de** disposition offre des options de configuration pour les superpositions persistantes.  
 
 :::image type="complex" source="../media/experiments-grid.msft.png" alt-text="Fonctionnalité de débogage de grille CSS" lightbox="../media/experiments-grid.msft.png":::
    Fonctionnalité de débogage de grille CSS  
@@ -147,7 +147,7 @@ Après avoir activer l’expérience, assurez-vous de redémarrer DevTools.  Pou
 
 ### Visionneuse de commandes source  
 
-**L’Afficheur des** commandes source est une expérience qui affiche l’ordre des éléments dans la source de la page web.  L’ordre d’affichage à l’écran peut différer de l’ordre de la source, ce qui peut dérouter les utilisateurs du lecteur d’écran et du clavier.  Utilisez **l’expérience de l’Observateur** d’ordre de sources pour trouver les différences entre l’ordre d’affichage à l’écran et l’ordre de la source.  
+**L’Afficheur des** commandes source est une expérience qui affiche l’ordre des éléments dans la source de la page web.  L’ordre d’affichage à l’écran peut différer de l’ordre de la source, ce qui peut dérouter les utilisateurs du lecteur d’écran et du clavier.  Utilisez **l’expérience de l’Observateur** d’ordre de commandes source pour rechercher les différences entre l’ordre d’affichage à l’écran et l’ordre de la source.  
 
 Après avoir activer l’expérience, assurez-vous de redémarrer DevTools.  Pour utiliser **l’Observateur de commandes source,** complétez les étapes suivantes.  
 
@@ -164,7 +164,7 @@ Après avoir activer l’expérience, assurez-vous de redémarrer DevTools.  Pou
 
 ### Activer l’éditeur de raccourci clavier
 
-Une fois **l’expérience** d’éditeur de raccourci clavier activée, vous pouvez personnaliser les raccourcis clavier pour toute action dans DevTools.  Pour personnaliser le raccourci clavier pour une action spécifique, complétez les étapes suivantes.  
+Avec **l’expérience** Activer l’éditeur de raccourci clavier activée, vous pouvez personnaliser les raccourcis clavier pour toute action dans DevTools.  Pour personnaliser le raccourci clavier pour une action spécifique, complétez les étapes suivantes.  
 
 1.  [Ouvrez DevTools][DevtoolsOpenMain].  
 1.  Ouvrez [Paramètres.][DevToolsCustomizeIndexSettings]  
@@ -202,7 +202,7 @@ Pour ignorer vos modifications pendant que vous modifiez les raccourcis clavier 
 
 ### Activer les couches composites en vue 3D  
 
-Vous pouvez maintenant visualiser calques avec les index z et le modèle objet de document \(DOM\).  Cette fonctionnalité vous permet de déboguer sans changer de contexte aussi souvent.  Vous avez identifié que la réduction du basculement de contexte était un problème majeur.  Il n’est pas toujours clair comment le code que vous écrivez affecte votre application web.  Pour une expérience complète de débogage, l’affichage 3D et les couches composites sont désormais combinés.  
+Vous pouvez maintenant visualiser calques avec les index z et le modèle objet de document \(DOM\).  Cette fonctionnalité vous permet de déboguer sans changer de contexte aussi souvent.  Vous avez identifié que la réduction du basculement de contexte était un problème majeur.  Il n’est pas toujours évident de savoir comment le code que vous écrivez affecte votre application web.  Pour une expérience complète de débogage, l’affichage 3D et les couches composites sont désormais combinés.  
 
 Après avoir activer l’expérience, assurez-vous de redémarrer DevTools.  Pour utiliser **les couches composites,** complétez les étapes suivantes.  
 
@@ -245,7 +245,7 @@ Cette fonctionnalité expérimentale fournit de nombreuses nouvelles visualisati
 
 #### Afficher des superpositions persistantes sur les dispositions Flexbox à l’aide de l’outil Inspect  
 
-**L’outil Inspect** permet d’identifier et de visualiser rapidement les dispositions flexbox CSS dans un site web en pointant dessus avec la souris.  Choisissez **l’icône Inspect** \( Inspect \) dans le ![ coin supérieur gauche de ](../media/inspect-icon.msft.png) DevTools.  Ensuite, lors du débogage du site web, pointez sur un conteneur flexible pour afficher les contours autour du conteneur flexible.  
+**L’outil Inspect** permet d’identifier et de visualiser rapidement les dispositions flexbox CSS dans un site web en pointant dessus avec la souris.  Choisissez **l’icône Inspect** \( Inspect \) dans le coin supérieur gauche ![ de ](../media/inspect-icon.msft.png) DevTools.  Ensuite, lors du débogage du site web, pointez sur un conteneur flexible pour afficher les contours autour du conteneur flexible.  
 
 :::image type="complex" source="../media/flexbox-hover.msft.png" alt-text="Afficher les conteneurs Flexbox avec l’outil Inspect" lightbox="../media/flexbox-hover.msft.png":::
    Afficher les conteneurs Flexbox avec **l’outil Inspect**  
@@ -270,7 +270,7 @@ Pour faire bascule les superpositions persistantes sur la disposition Flexbox, u
 
 #### Configurer des superpositions persistantes  
 
-Pour configurer les options des superpositions persistantes pour les grilles CSS ou les dispositions Flexbox, utilisez le **volet** De disposition.  Le **volet** Disposition se trouve dans l’outil **Éléments** en plus des **volets Styles** **et** Calculés.  
+Pour configurer les options des superpositions persistantes pour les grilles CSS ou les dispositions Flexbox, utilisez **le** volet Disposition.  Le **volet** Disposition se trouve dans l’outil **Éléments** en plus des **volets Styles** **et** Calculés.  
 
 :::image type="complex" source="../media/flexbox-layout.msft.png" alt-text="Panneau de disposition" lightbox="../media/flexbox-layout.msft.png":::
    Panneau de disposition  
@@ -280,7 +280,7 @@ Pour configurer les options des superpositions persistantes pour les grilles CSS
 
 ### Activer + les menus onglet de bouton pour ouvrir d’autres outils  
 
-Vous pouvez maintenant ouvrir d’autres outils à l’aide de la nouvelle icône **Plus d’outils** `+` \( \).  Une fois que vous avez activé les menus Onglet Activer **+** bouton pour ouvrir d’autres outils et recharger DevTools, un signe plus \( \) s’affiche à droite du groupe d’onglets en haut de `+` DevTools.  Pour afficher la liste des autres outils que vous pouvez ajouter à la barre d’onglets, choisissez la nouvelle icône Outils plus **\(** `+` \).  
+Vous pouvez maintenant ouvrir d’autres outils à l’aide de la nouvelle icône **Plus d’outils** \( `+` \).  Une fois que vous avez activé les menus Onglet Activer **+** bouton pour ouvrir d’autres outils et recharger DevTools, un signe plus \( \) s’affiche à droite du groupe d’onglets en haut de `+` DevTools.  Pour afficher la liste des autres outils que vous pouvez ajouter à la barre d’onglets, choisissez la nouvelle icône Outils plus **\(** `+` \).  
 
 :::image type="complex" source="../media/experiments-more-tools-button.msft.png" alt-text="Autres outils dans le volet supérieur" lightbox="../media/experiments-more-tools-button.msft.png":::
    **Autres outils** dans le volet supérieur
@@ -292,14 +292,14 @@ Vous pouvez maintenant ouvrir d’autres outils à l’aide de la nouvelle icôn
 
 Cette expérience remplace **l’outil Nouveautés** par le nouvel **outil Welcome.**  Il affiche une conception actualisée pour le contenu suivant.  
 
-*   Liens vers des documents de développeur  
-*   les dernières fonctionnalités  
+*   Liens vers des documents de développement  
+*   fonctionnalités les plus récentes  
 *   notes de publication  
 *   Option de contact de l’équipe Microsoft Edge DevTools  
     
-**L’outil** Welcome s’ouvre automatiquement après chaque mise à jour de Microsoft Edge.  Pour empêcher l’affichage de l’outil **Welcome** après **** chaque mise à jour, cochez la case en regard de l’onglet Ouvrir après chaque mise à jour sous le titre de **l’outil** Welcome.  
+**L’outil** Welcome s’ouvre automatiquement après chaque mise à jour de Microsoft Edge.  Pour empêcher l’affichage de l’outil **d’accueil** **** après chaque mise à jour, cochez la case en regard de l’onglet Ouvrir après chaque mise à jour sous le titre de **l’outil** d’accueil.  
 
-Si vous préférez **l’outil Nouveautés d’origine,** accédez à [Expériences][DevtoolsCustomizeIndexSettings]de paramètres et supprimez la case à cocher en regard de  >  **** l’onglet **Activer l’accueil.**  
+Si vous préférez **l’outil Nouveautés d’origine,** accédez à [Expériences][DevtoolsCustomizeIndexSettings]de paramètres et supprimez la case à cocher en regard de l’onglet  >  **** **Activer l’accueil.**  
 
 :::image type="complex" source="../media/experiments-welcome.msft.png" alt-text="Outil d’accueil" lightbox="../media/experiments-welcome.msft.png":::
    **Outil d’accueil**  
@@ -313,7 +313,7 @@ Si vous préférez **l’outil Nouveautés d’origine,** accédez à [Expérien
 *   [Activer la prise en charge pour déplacer des onglets][DevtoolsMoveTabs] entre les panneaux est désormais disponible et est désactivée par défaut dans Microsoft Edge version 85 ou ultérieure.  
 *   [La personnalisation des raccourcis clavier][DevtoolsCustomKeyboardShortcuts] est désormais disponible et est désactivée par défaut dans Microsoft Edge version 86 ou ultérieure.  
 *   [Émulation : le mode double écran][DevtoolsDeviceModeDualScreenAndFoldables] de prise en charge est désormais disponible et est allumé par défaut dans Microsoft Edge version 89 ou ultérieure.  
-*   [Activer les nouvelles fonctionnalités][DevtoolsCssGrid] de débogage de grille CSS est désormais disponible et est désactivé par défaut dans Microsoft Edge version 89 ou ultérieure.  
+*   [L’option Activer les nouvelles][DevtoolsCssGrid] fonctionnalités de débogage de grille CSS est désormais disponible et est désactivée par défaut dans Microsoft Edge version 89 ou ultérieure.  
     
 ## Commentaires sur les fonctionnalités expérimentales  
 
@@ -342,7 +342,7 @@ Pour fournir des commentaires sur les expériences DevTools de Microsoft Edge ou
 [DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Modifier les styles et paramètres de police CSS dans le volet Styles de DevTools | Documents Microsoft"  
 [DevtoolsIssues]: ../issues/index.md "Recherchez et corrigez les problèmes liés à l’outil des problèmes de Microsoft Edge DevTools | Documents Microsoft"  
 [DevToolsShortcuts]: ../shortcuts/index.md "Raccourcis clavier Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsCustomKeyboardShortcuts]: ../customize/shortcuts.md "Personnaliser les raccourcis clavier dans la | Microsoft Edge DevTools Documents Microsoft"  
+[DevtoolsCustomKeyboardShortcuts]: ../customize/shortcuts.md "Personnaliser les raccourcis clavier dans l'| Microsoft Edge DevTools Documents Microsoft"  
 [DevtoolsOpenMain]: ../open/index.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
 
 [DualScreenWebIndex]: /dual-screen/web/index "Expériences web à double écran | Documents Microsoft"  
