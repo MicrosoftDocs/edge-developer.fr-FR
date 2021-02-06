@@ -277,6 +277,8 @@
               href: extensions-chromium/publish/submission-states.md
             - name: Gérer les paramètres du compte
               href: extensions-chromium/publish/manage-settings.md
+            - name: Nous contacter
+              href: extensions-chromium/publish/contact-us.md
         - name: Stratégies des extensions Microsoft Edge
           items:
             - name: Stratégie de sécurité du contenu
