@@ -1,18 +1,18 @@
 ---
-description: Nouveaux outils de débogage grille CSS, outil Webauthn, outils moveables et panneau de barre latérale calculé.
+description: Nouveaux outils de débogage de grille CSS, outil Webauthn, outils moveables et panneau de barre latérale calculé.
 title: Nouveautés de DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/22/2020
+ms.date: 01/26/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: cf3a685a1a4e9a3f13d2401a6294058a71dd5104
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: 88e6678880172a7a494bcf73c74874aeb70c24b9
+ms.sourcegitcommit: e737277744dd25a7585c113eef22a2aa4d4c167f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313029"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "11325958"
 ---
 # Nouveautés de DevTools (Microsoft Edge 87)  
 
@@ -60,7 +60,7 @@ DevTools prend désormais en charge le déplacement d’outils entre les panneau
    Fonctionnalité expérimentale  
 :::image-end:::  
 
-**L’outil Console** réseau a désormais une meilleure compatibilité avec les schémas [Postman v2.1][PostmanSchemaJsonCollectionv210Index] et [OpenAPI v2.][SwaggerSpecificationV2]  Pour activer l’expérience, [accédez à Activer][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] les fonctionnalités expérimentales et cochez la case en regard de **Activer la console réseau.**  Pour plus d’informations sur la **console**réseau, accédez à la fonctionnalité [Activer la console réseau expérimentale.][DevtoolsExperimentalFeaturesEnableNetworkConsole]  Cette expérience prend désormais en charge les actions suivantes.  
+**L’outil Console** réseau a désormais une meilleure compatibilité avec les schémas [Postman v2.1][PostmanSchemaJsonCollectionv210Index] et [OpenAPI v2.][SwaggerSpecificationV2]  Pour activer l’expérience, [accédez à Activer][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] les fonctionnalités expérimentales et cochez la case en regard de **Activer la console réseau.**  Pour plus d’informations sur la **console**réseau, accédez à la fonctionnalité Activer la [console réseau expérimentale.][DevtoolsExperimentalFeaturesEnableNetworkConsole]  Cette expérience prend désormais en charge les actions suivantes.  
 
 *   Enregistrer et exporter des collections et des environnements.  
 *   Modifier et exporter des ensembles de variables d’environnement dans **l’outil Console** réseau.  
@@ -107,7 +107,7 @@ Les fonctionnalités sont désactivées par défaut.  Pour plus d’informations
 
 Vous pouvez désormais personnaliser le raccourci clavier pour toute action dans DevTools.  Depuis La version 84 de Microsoft Edge, vous pouvez choisir entre les présets **Visual Studio Code** et **DevTools (par défaut)** pour les [raccourcis clavier.][DevtoolsCustomizeShortcuts]  À partir de la version 87 **** de Microsoft Edge, vous pouvez activer l’expérience d’éditeur de raccourci clavier pour personnaliser davantage les [raccourcis clavier.][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]  
 
-Pour activer l’expérience, [accédez à Activer][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] les fonctionnalités expérimentales et activez la case à cocher en regard de **l’éditeur de raccourci clavier.**  Pour plus d’informations sur la personnalisation et la modification des raccourcis, accédez à [activer la fonctionnalité expérimentale de l’éditeur de raccourcis clavier][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  Pour passer en revue les mises à jour en temps réel de cette fonctionnalité dans le projet open source Chromium, accédez à [Problème #174309][CR174309].  
+Pour activer l’expérience, [accédez à Activer][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] les fonctionnalités expérimentales et activez la case à cocher en regard de l’éditeur **de raccourci clavier.**  Pour plus d’informations sur la personnalisation et la modification des raccourcis, accédez à [activer la fonctionnalité expérimentale de l’éditeur de raccourcis clavier][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  Pour passer en revue les mises à jour en temps réel de cette fonctionnalité dans le projet open source Chromium, accédez à [Problème #174309][CR174309].  
 
 :::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Raccourci personnalisé pour la suspension d’un script" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    Raccourci personnalisé pour la suspension d’un script  
@@ -115,13 +115,13 @@ Pour activer l’expérience, [accédez à Activer][DevtoolsExperimentalFeatures
 
 ## Présentation des outils Microsoft Edge pour l’extension Visual Studio code  
 
-Les **éléments pour Visual Studio code** et réseau pour les extensions Visual Studio **Code** sont désormais fusionnés dans les nouveaux outils de développement Microsoft Edge pour l’extension Visual Studio [Code.][VisualStudioCodeMarketplaceMsEdgedevtools]  Utilisez Microsoft Edge DevTools pour les activités suivantes sans quitter Visual Studio Code.  
+Les **éléments pour Visual Studio code** et réseau pour les extensions Visual Studio **Code** sont désormais fusionnés dans les nouveaux outils de développement Microsoft Edge pour Visual Studio extension [de code.][VisualStudioCodeMarketplaceMsEdgedevtools]  Utilisez Microsoft Edge DevTools pour les activités suivantes sans quitter Visual Studio Code.  
 
 *   Déboguer le DOM  
 *   Modifier CSS  
 *   Inspecter le trafic réseau  
 
-Avec l’extension, lancez Microsoft Edge, connectez-vous à une instance existante du navigateur ou utilisez un navigateur sans en-tête directement à partir de votre éditeur.  Pour commencer à contribuer et classer les problèmes avec vos commentaires sur cette extension, accédez au référentiel Outils de développement [Microsoft Edge Visual Studio code][GithubMicrosoftVscodeEdgeDevtools] sur GitHub.  
+Avec l’extension, lancez Microsoft Edge, connectez-vous à une instance existante du navigateur ou utilisez un navigateur sans en-tête directement à partir de votre éditeur.  Pour commencer à contribuer et classer les problèmes avec vos commentaires sur cette extension, accédez au référentiel Outils de développement [Microsoft Edge pour Visual Studio code][GithubMicrosoftVscodeEdgeDevtools] sur GitHub.  
 
 :::row:::
    :::column span="":::
@@ -150,7 +150,7 @@ Dans les versions antérieures de Microsoft Edge, il n’y avait aucune prise en
     
 Pour plus d’informations sur la fonctionnalité **WebAuthn,** accédez à Émuler les authentifiés et [déboguer WebAuthn dans Microsoft Edge DevTools.][DevtoolsWebauthnIndex]  
 
-Vous pouvez émuler les authentifiés et déboguer [l’API][GithubW3cWebauthn] d’authentification web avec le nouvel [outil WebAuthn.][DevtoolsWebauthnIndex]  Pour ouvrir **l’outil WebAuthn,** choisissez l’icône Personnaliser et contrôler **DevTools** \( \) > `...` **outils**  >  **WebAuthn**.  Pour passer en revue les mises à jour en temps réel de cette fonctionnalité dans le projet open source Chromium, accédez à [Problème #1034663][CR1034663].  
+Vous pouvez émuler les authentifiés et déboguer [l’API][GithubW3cWebauthn] d’authentification web avec le nouvel [outil WebAuthn.][DevtoolsWebauthnIndex]  Pour ouvrir **l’outil WebAuthn,** sélectionnez l’icône Personnaliser et contrôler **DevTools** \( \) > `...` **outils**  >  **WebAuthn**.  Pour passer en revue les mises à jour en temps réel de cette fonctionnalité dans le projet open source Chromium, accédez à [Problème #1034663][CR1034663].  
 
 :::row:::
    :::column span="":::
@@ -198,7 +198,7 @@ Pour afficher votre feuille CSS appliquée avec moins de défilement, groupez le
 
 ### événements performance.mark() dans la section Timings  
 
-La **section Minutages** d’un enregistrement dans l’outil [Performance][DevtoolsGuideChromiumEvaluatePerformanceReference] marque désormais les `performance.mark()` événements.  Pour essayer cette fonctionnalité et mesurer les performances de votre code JavaScript, ajoutez des `performance.mark()` événements à votre code.  Par exemple, l’extrait de code suivant ajoute des marqueurs avant et après une boucle qui itérera de 0 à `for` 1 000 à l’aide d’incréments de 7.  
+La **section Minutages** d’un enregistrement dans l’outil [Performance][DevtoolsGuideChromiumEvaluatePerformanceReference] marque désormais les `performance.mark()` événements.  Pour essayer cette fonctionnalité et mesurer les performances de votre code JavaScript, ajoutez des `performance.mark()` événements à votre code.  Par exemple, l’extrait de code suivant ajoute des marqueurs avant et après une boucle qui s’itérera de 0 à `for` 1 000 à l’aide d’incréments de 7.  
 
 ```javascript
 performance.mark('start');
@@ -216,7 +216,7 @@ Ensuite, ouvrez [l’outil Performance][DevtoolsGuideChromiumEvaluatePerformance
 
 ### Nouveaux filtres de type de ressource et d’URL dans l’outil Réseau  
 
-Utilisez les mots clés et `resource-type` les nouveaux mots clés dans `url` **l’outil** Réseau pour filtrer les demandes réseau.  Par exemple, utilisez cette `resource-type:image` fonction pour vous concentrer sur les demandes réseau qui sont des images.  
+Utilisez les mots clés et `resource-type` les nouveaux mots clés dans `url` **l’outil** Réseau pour filtrer les demandes réseau.  Par exemple, utilisez cette fonction `resource-type:image` pour vous concentrer sur les demandes réseau qui sont des images.  
 
 :::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="filtre de type ressource" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
    filtre de type ressource  
@@ -226,7 +226,7 @@ Pour découvrir des mots clés plus spéciaux tels que et `resource-type` `url` 
 
 ### Mises à jour de l’affichage des détails du cadre  
 
-#### Afficher les rapports COEP et REPORTING sur le point de terminaison  
+#### Afficher les rapports COEP et BIP sur le point de terminaison  
 
 Affichez le point de terminaison De la stratégie d’incorporation d’origine croisée \(COEP\) et de la stratégie d’ouverture d’origine croisée \(PRINCIPAL\) sous la section Isolation & `reporting to` sécurité. ****  [L’API][MdnReportingApi] De rapports définit , un nouvel en-tête HTTP, qui vous permet de spécifier les points de terminaison du serveur pour le navigateur pour envoyer des `Report-To` avertissements et des erreurs.  Pour passer en revue les mises à jour en temps réel de cette fonctionnalité dans le projet open source Chromium, accédez à [Problème #1051466][CR1051466].  
 
@@ -287,11 +287,11 @@ Si vous utilisez Windows ou macOS, envisagez d’utiliser les canaux d’aperçu
 [DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "tableau - Référence de l’API de console | Documents Microsoft"  
 [DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Recherchez du code JavaScript et CSS inutilisé avec l’onglet Couverture dans Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsCssGrid]:  /microsoft-edge/devtools-guide-chromium/css/grid "Inspecter la grille CSS | Documents Microsoft"  
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Caisse : personnaliser l'| Microsoft Edge DevTools Documents Microsoft"  
+[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Caisse : personnaliser les paramètres DevTools de Microsoft Edge | Documents Microsoft"  
 [DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Paramètres-personnaliser Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyser les performances de rendu avec l’onglet Rendu - Référence de l’analyse des performances | Documents Microsoft"  
 [DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "Afficher et déboguer les informations des joueurs multimédias | Documents Microsoft"  
-[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties  "Filtrer les demandes par propriétés : référence de l’analyse | Documents Microsoft"  
+[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties  "Filtrer les demandes par propriétés – Référence de l’analyse réseau | Documents Microsoft"  
 [DevtoolsWebauthnIndex]: /microsoft-edge/devtools-guide-chromium/webauthn/index "Émuler les authentifiés et déboguer WebAuthn dans Microsoft Edge DevTools | Documents Microsoft"  
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canaux d’aperçu Microsoft Edge"  
@@ -314,7 +314,7 @@ Si vous utilisez Windows ou macOS, envisagez d’utiliser les canaux d’aperçu
 [CR1096230]: https://crbug.com/1096230 "Group CSS properties by categories in Computed Styles pane | Bogues Chromium"  
 [CR1104188]: https://crbug.com/1104188 "La recherche de l’outil réseau ne trouve pas de résultats lors de la recherche d’URL complètes | Bogues Chromium"  
 [CR1106251]: https://crbug.com/1106251 "☂ DevTools : améliorer l’onglet Styles calculés | Bogues Chromium"  
-[CR1120316]: https://crbug.com/1120316 "Mettre en surbrillez le mauvais contraste sous Vue d’ensemble de CSS > couleurs | Bogues Chromium"  
+[CR1120316]: https://crbug.com/1120316 "Mettre en surbrillez le mauvais contraste sous Vue d’ensemble > CSS | Bogues Chromium"  
 [CR1121141]: https://crbug.com/1121141 "Autoriser le filtrage par type de ressource dans les journaux | Bogues Chromium"  
 [CR1121312]: https://crbug.com/1121312 "Les paramètres doivent être supprimés du menu Plus d’outils | Bogues Chromium"  
 [CR1136394]: https://crbug.com/1136394 "Outils Flexbox | Bogues Chromium"  
@@ -346,4 +346,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen
+[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
