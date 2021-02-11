@@ -28,7 +28,7 @@ Identifiez et corrigez les problèmes de votre code HTML, de CSS, de JavaScript,
 
 ## Configuration  
 
-Cette extension utilise un fichier JSON de [configuration par défaut][GithubWebhintioIndexjson] qui active les indicateurs et les analyseurs pour les fichiers HTML, CSS, de création de modèles \ (jsx/TSX, angulaire, etc.), JavaScript/dactylographié, etc.  
+Cette extension utilise un fichier JSON de [configuration par défaut][GithubWebhintioIndexjson] qui active les indicateurs et les analyseurs pour les fichiers HTML, CSS, de création de modèles \ (jsx/TSX, angulaire, etc.), JavaScript/TypeScript, etc.  
 
 ```json
 {
