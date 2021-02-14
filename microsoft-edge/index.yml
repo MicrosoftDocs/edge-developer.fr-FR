@@ -8,14 +8,14 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 12/10/2020
+  ms.date: 02/04/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 787e80a0db6754d9d2046084f601294aa68a62a5
-  ms.sourcegitcommit: 5f10022bd1da3477660be40c559411fadf59d8f0
+  ms.openlocfilehash: 150dcdf1a5d4f5ac06a4d0b105f89a05907d7ddb
+  ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 01/23/2021
-  ms.locfileid: "11297722"
+  ms.lasthandoff: 02/13/2021
+  ms.locfileid: "11327629"
 highlightedContent:
   items:
   - title: Microsoft Edge (canal stable officiel)
@@ -158,11 +158,11 @@ additionalContent:
         url: /microsoft-edge/extensions-chromium/publish/update
       - text: Gérer les paramètres du compte
         url: /microsoft-edge/extensions-chromium/publish/manage-settings
-    - title: 'Extensions : stratégies d’ajout Microsoft Edge'
+    - title: 'Extensions : stratégies des extensions Microsoft Edge'
       links:
       - text: Stratégie de sécurité du contenu
         url: /microsoft-edge/extensions-chromium/store-policies/csp
-      - text: Stratégies pour les développeurs de catalogue Microsoft Edge addons
+      - text: Stratégies de développeur du catalogue de modules de développement de microsoft Edge
         url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
     - title: Applications web progressives
       links:
@@ -193,9 +193,9 @@ additionalContent:
   - title: Aide et support
     items:
     - summary: Obtenir des conseils et des réponses d’experts de la communauté sur les questions&A
-      title: Support de la communauté sur les questions&Microsoft
+      title: Support de la communauté sur microsoft Q&A
       url: /answers/topics/ms-edge.html
-    - summary: Microsoft s’engage à s’assurer que vos applications fonctionnent sur Microsoft Edge.  Si vous rencontrez des problèmes avec vos applications professionnelles ou sites web sur la dernière version de Edge, Microsoft vous aide à résoudre vos applications et sites web sans frais supplémentaires.  Consultez les détails de l’offre pour les conditions d’éligibilité.
+    - summary: Microsoft s’engage à s’assurer que vos applications fonctionnent sur Microsoft Edge.  Si vous rencontrez des problèmes avec vos applications professionnelles ou sites web sur la dernière version de Edge, Microsoft vous aide à résoudre vos applications et sites web sans frais supplémentaires.  Voir les détails de l’offre pour les conditions d’éligibilité.
       title: Obtenir de l’aide gratuite à l’aide d’App Assure
       url: https://fasttrack.microsoft.com/portal
     - summary: Si votre entreprise a besoin d’un support technique immédiat pour Microsoft Edge, le support 1:1 de Microsoft est disponible à l’aide de différents plans pour vous aider à obtenir votre niveau de support requis.

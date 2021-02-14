@@ -1,68 +1,73 @@
 ---
-description: Processus de mise à jour de l’extension sur le Microsoft Store.
+description: Processus de mise à jour ou de suppression des extensions du magasin de modules extensions Microsoft Edge
 title: Mettre à jour une liste d’extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-chrome, développement d’extensions, extensions de navigateur, compléments, Centre des partenaires, développeur
-ms.openlocfilehash: 0d4512331b4f9542921d2063c908b5e9d4251074
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium, développement d’extensions, extensions de navigateur, extensions, extensions, centre de partenaires, développeur
+ms.openlocfilehash: 930d0f835e89451d09743a20ac4097c596ea5c30
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015676"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327483"
 ---
-# Mettre à jour une liste d’extensions  
+# Mettre à jour ou supprimer votre extension  
 
-Mise à jour d’une liste existante dans le catalogue Microsoft Edge addons  Vous pouvez modifier à tout moment une extension publiée.  Pendant que vous effectuez une mise à jour, vous n’avez pas besoin de mettre à jour l’intégralité de l’extension pour apporter d’autres modifications, telles que la mise à jour de la description ou du logo.  Si vous mettez à jour votre package d’extension, n’oubliez pas d’augmenter le numéro de version à chaque fois.  
+Vous pouvez mettre à jour une extension envoyée ou supprimer une liste d’extensions publiées du magasin de modules extensions Microsoft Edge à tout moment.  
 
-## Mettre à jour une extension déjà publiée  
-
-Pour mettre à jour votre liste, procédez comme suit:  
-
-1.  Accédez au [tableau de bord][MicrosoftPartnerCenter]de votre développeur.  Sur la page vue d’ensemble, cliquez sur la liste que vous voulez mettre à jour.  Cette opération affiche les détails du formulaire de soumission que vous avez remplis lors de la publication.  
-1.  Apportez les modifications souhaitées au package, à la description, aux ressources graphiques ou à d’autres paramètres.  Si vous mettez à jour le fichier de package, assurez-vous que la version du manifeste est supérieure à la version précédente du package.
-1.  Après avoir apporté les modifications, cliquez sur enregistrer, puis sur publier.
-1.  Rendez-vous sur le tableau de bord du développeur [Centre de partenaires][MicrosoftPartnerCenter] pour afficher l’état de votre annonce modifié de a `In the store` à `In the store.  Certification in progress` .  
+## Mettre à jour votre extension sur le magasin de modules de microsoft Edge  
 
 > [!NOTE]
-> La durée du processus de publication des mises à jour s’étend de quelques heures à quelques jours.  
+> La durée du processus de certification pour une mise à jour d’une extension peut prendre de quelques heures à quelques jours.  
 
-Une fois la `Status` colonne affichée `In the store` , la mise à jour des extensions est disponible dans les modules complémentaires Microsoft Edge.  
+### Mettre à jour une extension existante dans le magasin de modules extensions Microsoft Edge  
 
-## Mise à jour d’une extension lors de la phase de certification  
+Pour mettre à jour votre extension sur le store, complétez les étapes suivantes.  
 
-Vous pouvez modifier et mettre à jour votre soumission d’extension après l’avoir soumise avant d’entrer l’étape de publication.  Vous pouvez vérifier l’état de votre poste sur la page de présentation de l' **extension** associée à votre annonce dans le [Centre des partenaires][MicrosoftPartnerCenter].  
+1.  Accédez à votre [tableau de bord du][MicrosoftPartnerCenter] développeur et choisissez l’extension que vous souhaitez mettre à jour.  
+1.  Mettez à jour le package d’extension ou les métadonnées de l’extension.  Si vous mettez à jour le package d’extension, veillez à augmenter la version dans le fichier manifeste.  
+1.  Après avoir apporté les modifications, **sélectionnez Enregistrer**publier pour mettre à jour votre liste d’extensions  >  **** et démarrer le processus de certification.  
+1.  Une fois que la colonne s’affiche, votre mise à jour d’extension est disponible dans le magasin des `Status` `In the store` extensions Microsoft Edge.  
+    
+### Mettre à jour votre extension au cours de l’étape de certification  
 
-Pour modifier votre soumission, vous pouvez procéder comme suit:  
+Bien que votre extension soit encore en phase de certification et avant sa publication dans le magasin de modules de microsoft Edge, vous pouvez la mettre à jour. Si votre extension échoue au processus de certification, vous devrez peut-être également mettre à jour votre extension.    
 
-1.  Accédez au [tableau de bord][MicrosoftPartnerCenter]de votre développeur.  Sur la page **vue d’ensemble** , cliquez sur la liste que vous voulez mettre à jour.  Cette opération affiche les détails du formulaire de soumission que vous avez remplis lors de la publication.  
-1.  Accédez à la section **vue d’ensemble** de l’extension à l’aide de la barre de navigation gauche, comme illustré.  Annuler la soumission actuelle en cliquant sur le bouton **annuler la soumission** .  
-1.  Basculez vers une autre section et apportez les modifications souhaitées au package, à la description, aux ressources graphiques ou à d’autres paramètres.  Si vous mettez à jour le fichier de package, assurez-vous que la version du manifeste est supérieure à la version précédente du package.  
-1.  Après avoir apporté les modifications, cliquez sur **Enregistrer** , puis sur **publier**.  
+Pour vérifier l’état de votre extension, accédez au tableau de bord associé à votre liste sur [l’Partner Center][MicrosoftPartnerCenter].  
 
+Pour modifier votre soumission, complétez les étapes suivantes.  
+
+1.  Accédez à votre [tableau de bord du][MicrosoftPartnerCenter] développeur et choisissez l’extension que vous souhaitez mettre à jour.  Les informations que vous avez remplies lors de la soumission précédente s’affichent.  
+1.  Pour ouvrir la section **Vue d’ensemble de** l’extension, utilisez la barre de navigation de gauche.  Pour annuler la soumission actuelle, choisissez **Annuler la soumission.**  
+1.  Déplacez-vous vers d’autres sections et mettez à jour le package d’extension ou les métadonnées de l’extension.  Si vous mettez à jour le package d’extension, veillez à augmenter la version dans le fichier manifeste pour qu’elle corresponde aux modifications apportées depuis la version précédente du package.  
+1.  Après avoir apporté des modifications, **sélectionnez Enregistrer**  >  **publier.**  
+    
 > [!IMPORTANT]
-> Ce processus arrête et supprime votre soumission actuelle de notre pipeline de certification et une nouvelle révision commence par la dernière soumission.  
+> Le processus arrête et supprime votre soumission actuelle du pipeline de certification des extensions Microsoft Edge et une nouvelle révision commence par la dernière soumission.  
 
-> [!NOTE]
-> La durée du processus de publication des mises à jour s’étend de quelques heures à quelques jours.  
+### Mettre à jour votre extension après l’échec de la certification  
 
-Une fois la `Status` colonne affichée `In the store` , la mise à jour des extensions est disponible dans les modules complémentaires Microsoft Edge.  
+Une fois que votre extension a échoué au processus de certification, vous devez mettre à jour votre extension et la resoumettre en intégrant les commentaires.  
 
-## Supprimer votre extension des modules complémentaires Microsoft Edge  
+Pour modifier votre extension, complétez les étapes suivantes.  
 
-Pour supprimer votre extension des modules complémentaires Microsoft Edge, procédez comme suit:  
+1.  Accédez à votre [tableau de bord du][MicrosoftPartnerCenter] développeur et choisissez l’extension qui a échoué au processus de certification.  
+1.  Mettez à jour le package d’extension ou les métadonnées incorporant les commentaires reçus à partir du processus de certification.  Si vous mettez à jour le package d’extension, veillez à augmenter la version dans le fichier manifeste.  
+1.  Après avoir apporté des modifications, **sélectionnez Enregistrer**  >  **publier.**  
+    
+## Supprimer des extensions du magasin de modules extensions Microsoft Edge  
 
-1.  Accédez au [tableau de bord][MicrosoftPartnerCenter]de votre développeur.  Sur la page **vue d’ensemble** , cliquez sur la liste que vous voulez supprimer.  
-1.  Ouvrez la page de présentation de l' **extension** de votre annonce.  
-1.  Cliquez sur **annuler la publication**.  Cette opération annule la publication de la liste des modules complémentaires Microsoft Edge.  
+Pour supprimer votre extension du magasin de modules supplémentaires Microsoft Edge, complétez les étapes suivantes.  
 
-Ces étapes suppriment l’extension des modules complémentaires Microsoft Edge, ce qui signifie que les nouveaux utilisateurs ne peuvent pas trouver votre extension ou l’installer, mais que les utilisateurs qui ont déjà installé l’extension peuvent continuer à l’utiliser.  
-
-<!-- image links -->  
+1.  Accédez à votre [tableau de bord du développeur.][MicrosoftPartnerCenter]  Dans la page Tableau de bord, choisissez la liste à supprimer.  
+1.  Sélectionnez **Vue d’ensemble de** l’extension dans votre description.  
+1.  Choose **Unpublish** to remove the listing from the Microsoft Edge Add-ons store.  
+    
+Votre extension est désormais supprimée du magasin de modules extensions Microsoft Edge.  Les utilisateurs qui ont déjà installé votre extension peuvent continuer à l’utiliser, mais les nouveaux utilisateurs ne la trouvent pas.  
 
 <!-- links -->  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Centre de partenariat"  
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  

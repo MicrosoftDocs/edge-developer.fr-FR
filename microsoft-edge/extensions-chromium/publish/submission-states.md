@@ -1,32 +1,32 @@
 ---
-description: Étapes de création d’un compte de développeur Microsoft Edge addons dans le centre de partenariat.
-title: Présentation et état de la soumission d’extension
+description: Découvrez les différents états lors de l’envoi d’extensions au Store.
+title: États de soumission pour les extensions dans le store
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-chrome, développement d’extensions, extensions de navigateur, compléments, Centre des partenaires, développeur
-ms.openlocfilehash: 028112f958656a705c7b52fa3a7bbfa49a1a0f79
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium, développement d’extensions, extensions de navigateur, addons, centre de partenaires, développeur
+ms.openlocfilehash: e6ed0381f7de186500d8fe910f367716a8368d10
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015730"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327651"
 ---
-# Présentation et état de la soumission d’extension  
+# États de soumission pour les extensions dans le magasin d’extensions Edge  
 
-La page de la vue d’ensemble du Centre des partenaires affiche l’état de votre extension dans le flux de soumission global.  
+La page vue d’ensemble de l’Partner Center affiche l’état de votre extension dans le flux de soumission global.  Cet article décrit les différents états où votre extension peut se présenter à tout moment pendant le processus de soumission et de certification.  
 
-| # |  État |  Description/Détails |  
+| # |  État |  Détails |  
 |:--- |:--- |:--- |  
-| 1 |  Dans le brouillon |  Une fois que vous avez créé votre soumission et enregistré celle-ci dans votre compte, l’état passe à cet État.  <br />  Vous n’avez pas soumis votre package d’extension et les détails de votre formulaire de soumission pour la publication sur le Microsoft Store.  <br />  Votre extension n’est pas disponible pour les utilisateurs qui se trouvent dans cet État.  |  
-| deuxième|  Lors de la révision |  Après avoir soumis votre extension, l’état passe à cet État.  <br />  Votre package d’extension et les détails de votre formulaire de soumission sont examinés par Microsoft.  <br />  Votre extension n’est pas disponible pour les utilisateurs qui se trouvent dans cet État.  |  
-| 3D|  En attente de publication |  Lorsque la révision de votre extension s’est déroulée correctement et que votre extension est prête pour la publication sur le Microsoft Store, l’état passe à cet État.  <br />  Il s’agit d’un état intermédiaire entre `In review` et `In the store` .  <br />  Cet État ne s’affiche pas pour tous les envois.  |  
-| n°4|  Dans le Windows Store |  Une fois l’examen terminé et votre extension publiée sur le Microsoft Store, l’état passe à cet État.  <br />  Votre extension est disponible sur la boutique Microsoft dans les marchés que vous avez spécifiés.  |  
-| n°5 |  Dans le Windows Store.  Mise à jour à l’avis |  Votre extension est publiée sur le Microsoft Store et vous avez soumis une mise à jour examinée par Microsoft.  |  
-| 6 |  Échec de la révision |  Si votre extension ne fait pas l’un des avis, l’état passe à cet État.  <br />  Un examen en échec risque de se produire lors de la révision initiale ou lors d’une mise à jour.  <br />  Vous devez effectuer une action corrective et renvoyer votre extension pour la publication sur le Microsoft Store.  |  
-| 6 |  Non disponible dans le Windows Store |  Il existe trois scénarios possibles lorsque votre extension affiche cet État: non  **publié du Store** , **supprimé du Store**et **bloqué**.  La description de chacun de ces trois est indiquée ci-dessous.  |  
-| version8 |  Non publié du Store |  Vous avez annulé votre extension du Microsoft Store dans le Centre des partenaires.  <br />  Dans le centre de partenaires, sur votre page de soumission d’extensions, vous avez cliqué sur le bouton Annuler la publication.  <br />  Après la dépublication, votre extension n’est plus disponible sur le Microsoft Store pour permettre aux nouveaux utilisateurs de procéder au téléchargement, mais les utilisateurs existants peuvent continuer à utiliser leurs copies de votre extension.  |  
-| 09 |  A supprimé du Store |  Si votre extension est trouvée pour violer les conditions générales de la boutique Microsoft, Microsoft peut la supprimer de la boutique Microsoft et l’état passe à cet État.  <br />  Après la suppression de votre poste par Microsoft, votre extension n’est plus disponible sur le Microsoft Store pour permettre aux nouveaux utilisateurs d’être téléchargés, mais les utilisateurs existants peuvent continuer à utiliser leurs copies de votre extension.  |  
-| 0,10 |  Élément bloqué |  Si votre poste est considéré comme malveillant et compromettant la sécurité et la confidentialité des utilisateurs, Microsoft a le droit de bloquer votre extension du Microsoft Store et l’état passe à cet État.  <br />  Si votre extension est bloquée, votre extension est supprimée de la boutique Microsoft, votre extension est également supprimée des appareils des utilisateurs.  |  
+| 1 |  Dans le brouillon |  Vous créez votre soumission et enregistrez un brouillon dans votre compte.  Vous n’avez pas soumis votre package d’extension et les détails de votre formulaire de soumission à publier dans le magasin de modules extensions Microsoft Edge.  Votre extension n’est pas disponible pour les utilisateurs dans cet état.  |  
+| 2|  En révision |  Vous avez envoyé votre extension.  Votre package d’extension et les détails de votre formulaire d’envoi sont examinés par Microsoft.  Votre extension n’est pas disponible pour les utilisateurs dans cet état.  |  
+| 3|  En attente de publication |  Votre soumission est dans cet état une fois la révision de votre extension terminée et votre extension est en cours de préparation pour la publication dans le Microsoft Store.  Cet état est un état intermédiaire entre `In review` `In the store` et .  Cet état n’apparaît peut-être pas pour toutes les soumissions.  |  
+| 4|  Dans la boutique |  L’examen est maintenant terminé et votre extension est publiée dans le magasin de modules extensions Microsoft Edge.  Votre extension est disponible sur le Microsoft Store dans les marchés que vous avez spécifiés.  |  
+| 5 |  Dans le store.  Mise à jour en révision |  Votre extension est publiée dans le magasin des extensions Microsoft Edge et vous avez soumis une mise à jour qui est en cours de révision par Microsoft.  |  
+| 6 |  Échec de la révision |  Votre envoi est dans cet état si votre extension échoue à un examen.  Un échec de révision peut se produire lors de la révision initiale ou d’une mise à jour.  Vous devez prendre des mesures correctives et resoumettre votre extension.  |  
+| 7 |  Indisponible dans le Store |  Il existe trois scénarios possibles lorsque votre extension affiche cet état :  **Unpublished from store**, **Removed from store**et **Blocked**.  La description de chacun des trois états est spécifiée dans 8, 9 et 10.  |  
+| 8 |  Non publié à partir du Store |  Vous avez publié votre extension à partir du magasin de modules de microsoft Edge dans l’Partner Center.  Dans l’Partner Center, vous avez choisi **d’unpublish** sur la page de soumission d’extension.  Après la désinscriture de votre extension, elle n’est plus disponible dans le magasin des extensions Microsoft Edge pour les nouveaux utilisateurs à télécharger, mais les utilisateurs existants peuvent continuer à utiliser leurs copies de votre extension.  |  
+| 9 |  Supprimé du store |  Si votre extension enfreint les conditions générales du Microsoft Edge Add-ons Store, Microsoft peut la supprimer du magasin d’extensions Edge et l’état passe à cet état.  <br />  Après la suppression de votre extension par Microsoft, votre extension n’est plus disponible dans le magasin des extensions Microsoft Edge pour les nouveaux utilisateurs à télécharger, mais les utilisateurs existants peuvent continuer à utiliser leurs copies de votre extension.  |  
+| 10 |  Élément bloqué |  Si votre extension est malveillante et compromet la sécurité et la confidentialité des utilisateurs, Microsoft a le droit de bloquer votre extension à partir du magasin des extensions Edge et l’état passe à cet état.  Si votre extension est bloquée, elle est supprimée du magasin des extensions Edge et de tous les appareils utilisateur.  |  

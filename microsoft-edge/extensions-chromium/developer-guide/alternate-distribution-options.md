@@ -1,69 +1,141 @@
 ---
-description: Processus de distribution de l’extension par un mécanisme autre que les magasins validés
-title: Autre méthode de distribution de l’extension
+description: Découvrez comment distribuer des extensions à l’aide d’autres méthodes qui n’utilisent pas de magasins vérifiés
+title: Autre méthode de distribution des extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-chrome, développement d’extensions, extensions de navigateur, compléments, Centre des partenaires, développeur
-ms.openlocfilehash: e28a84fd75ad1ac0be2000a22c26371ca73d0293
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium, développement d’extensions, extensions de navigateur, extensions, extensions, centre de partenaires, développeur
+ms.openlocfilehash: 9232b8912acaa52c8d97fdd5f13b82ec33c865d4
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015694"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327623"
 ---
-# Autre méthode de distribution de l’extension  
+# Autres méthodes de distribution d’extension  
 
-Si vous êtes un développeur qui veut distribuer une extension dans le cadre de la procédure d’installation d’autres logiciels ou d’un administrateur réseau qui souhaite distribuer une extension dans toute l’organisation, Microsoft Edge prend en charge les méthodes d’installation d’extension suivantes:  
+En règle générale, les extensions sont distribuées via le magasin de modules extensions Microsoft Edge. Dans certains scénarios, les développeurs peuvent avoir besoin de distribuer des extensions à l’aide d’autres méthodes. Par exemple:
 
-*   **Utilisation du Registre Windows (Windows uniquement)**  
+1.  L’extension est associée à d’autres logiciels et doit être installée avec le reste du logiciel groupé.   
+1.  Les administrateurs réseau souhaitent distribuer une extension dans toute leur organisation.   
 
-Microsoft Edge prend en charge l’installation d’une extension hébergée sur une extension `update_URL` .  Sous Windows, le `update_URL` doit pointer sur le catalogue des compléments Microsoft Edge (Microsoft Edge addons \) sur lequel l’extension doit être hébergée.  
+Les extensions qui ne sont pas chargées à partir du magasin d’extensions Edge sont appelées extensions installées en externe. La liste suivante fournit d’autres méthodes de distribution des extensions installées en externe. 
 
-> [!NOTE]
-> Installation externe de l’extension par le biais d’un fichier JSON préférences pour macOS <!--and Linux--> ne sont pas encore pris en charge.  Cette prise en charge de cette fonctionnalité sera bientôt disponible.
-
-## Utilisation du Registre Windows  
-
-Tout d’abord, publiez l’extension dans les modules complémentaires Microsoft Edge ou emportez un fichier. CRX et assurez-vous que le programme s’installe correctement.  
-
-Les étapes à suivre pour installer une extension via le registre dans Windows sont les suivantes:  
-
-*   Recherchez ou créez la clé de Registre suivante:  
-    *   Windows 32 bits:  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`  
-    *   Windows 64 bits:  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`  
-*   Créez une nouvelle clé \ (dossier \) sous la clé extensions avec le même nom que l’ID de votre extension \ (par exemple, `aaaaaaaaaabbbbbbbbbbcccccccccc` \).  
-*   Dans votre clé d’extension, créez une propriété, `update_url` et définissez-la sur la valeur: `https://edge.microsoft.com/extensionwebstorebase/v1/crx` , \ (cela pointe vers le CRX de votre extension dans les compléments Microsoft Edge). Si vous voulez installer une extension à partir du Web Store chrome, spécifiez l’URL de mise à jour du Web Store chrome `https://clients2.google.com/service/update2/crx` .  
+*   Utilisez le Registre Windows (Windows uniquement).  
+*   Utilisez un fichier JSON de préférences (macOS et Linux).  
     
-    ```javascript
+## Avant de commencer  
+
+Veillez à publier votre extension dans le magasin de modules de microsoft Edge ou à mettre en package un fichier et assurez-vous qu’il s’installe `.crx` correctement sur votre ordinateur.  Si vous installez le `.crx` fichier à l’aide de `update_URL` la , assurez-vous que vous pouvez accéder à votre extension à cette URL.  
+
+Assurez-vous également que vous avez les informations suivantes.    
+
+1.  Chemin d’accès du `.crx` fichier ou de votre `update_URL` extension.
+1.  Version de votre extension.  Les informations de version sont disponibles dans votre fichier manifeste ou dans Microsoft Edge après le chargement de `edge://extensions` l’extension packaisée.   
+1.  ID de votre extension.  Les informations d’ID sont disponibles dans Microsoft Edge après le chargement `edge://extensions` de l’extension packée.  
+
+> [!NOTE] 
+> Les exemples `1.0` suivants utilisent la version et `aaaaaaaaaabbbbbbbbbbcccccccccc` l’ID.  
+
+## Utiliser le Registre Windows (Windows uniquement)  
+
+Pour distribuer votre extension à l’aide du Registre Windows, effectuez les étapes suivantes.
+
+1.  Recherchez ou créez la clé suivante dans le Registre :  
+    *   Windows 32 bits  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions` : .  
+    *   Windows 64 bits  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions` : .  
+1.  Créez une clé ou un dossier sous **Extensions** avec le même nom que l’ID de votre extension. Par exemple, créez la clé avec le nom `aaaaaaaaaabbbbbbbbbbcccccccccc` .  
+1.  Dans la **clé Extensions,** créez `update_url` la propriété et définissez la valeur sur `https://edge.microsoft.com/extensionwebstorebase/v1/crx` .  La propriété pointe vers le fichier de votre extension dans le magasin de `update_url` `.crx` modules supplémentaires Microsoft Edge.  
+
+    ```json
     {
         "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
     }
     ```  
     
-*   Lancez le navigateur et accédez à `edge://extensions` ; l’extension doit apparaître dans la liste.  
+    > [!NOTE]
+    > Si vous souhaitez installer une extension à partir du Chrome Web Store, définissez la valeur `update_url` sur `https://clients2.google.com/service/update2/crx` .  
+  
+1.  Vérifiez que votre extension est répertoriée dans Microsoft Edge en naviguant vers `edge://extensions` .  
 
-## Mise à jour et désinstallation  
+## Utiliser un fichier JSON de préférences (macOS et Linux)  
 
-Microsoft Edge analyse les entrées de métadonnées du Registre chaque fois que le navigateur démarre, puis apporte les modifications nécessaires aux extensions externes installées.  
+Pour distribuer votre extension à l’aide d’un fichier JSON de préférences, effectuez les étapes suivantes.
 
-Pour mettre à jour votre extension vers une nouvelle version, mettez à jour le fichier, puis mettez à jour la version dans le registre.  
+1.  Lorsque vous utilisez Linux, assurez-vous que votre fichier d’extension est disponible sur l’ordinateur sur qui `.crx` l’extension sera installée. Copiez le fichier d’extension dans un répertoire local ou utilisez un partage réseau `.crx` accessible à partir de l’ordinateur. 
+1.  Créez un fichier JSON dans lequel le nom du fichier correspond à l’ID de votre extension. Par exemple, créez un fichier JSON avec le nom de fichier `aaaaaaaaaabbbbbbbbbbcccccccccc.json` .  
+1.  Selon votre système d’exploitation, enregistrez le fichier JSON dans l’un des dossiers suivants.   
+    *   **macOS**  
+        *   Spécifiques à l’utilisateur : `~USERNAME/Library/Application Support/Microsoft Edge/External Extensions/`  
+        *   Tous les utilisateurs : `/Library/Application Support/Microsoft/Edge/External Extensions/`  
+        
+        Pour empêcher les utilisateurs non autorisés d’installer des extensions pour tous les utilisateurs, assurez-vous que votre fichier d’extension est en lecture seule. En outre, assurez-vous que les conditions suivantes sont remplies :
+        
+        *   Chaque répertoire du chemin d’accès appartient à la racine de l’utilisateur.  
+        *   Chaque répertoire du chemin d’accès est affecté au `admin` ou au `wheel` groupe.  
+        *   Tous les répertoires du chemin d’accès ne sont pas accessibles en création.  
+        *   Le chemin d’accès doit également être exempt de liens symboliques.  
+        
+    *   **Linux**  
+        *   Spécifiques à l’utilisateur : `~/.config/microsoft-edge/External Extensions/`  
+        *   Tous les utilisateurs : `/usr/share/microsoft-edge/extensions/`  
+1.  Selon votre scénario, copiez le code approprié qui suit dans votre fichier JSON. 
+    *   S’applique uniquement à Linux. Si vous installez à partir d’un fichier, spécifiez l’emplacement et la version à `external_crx` l’aide et `external_version` .  
+            
+        ```json
+        {
+            "external_crx": "/home/share/extension.crx",
+            "external_version": "1.0"
+        }
+        ```  
 
-Pour désinstaller votre extension (par exemple, si votre logiciel est désinstallé), supprimez votre fichier de préférences \ ( `aaaaaaaaaabbbbbbbbbbcccccccccc.json` \) ou les métadonnées du Registre.  
+    *   S’applique à macOS et Linux. Si vous installez à partir `update_URL` d’un , spécifiez l’URL de mise à jour à l’aide `external_update_url` . 
+        
+        Copiez le code suivant dans votre fichier JSON lors de l’installation à partir de fichiers locaux `.crx` sur Linux uniquement.  
+    
+        ```json
+        {
+            "external_update_url": "http://myhost.com/mytestextension/updates.xml"
+        }
+        ```  
+ 
+    *  Copiez le code suivant dans votre fichier JSON lors de l’installation à partir du magasin de modules de microsoft Edge sur macOS et Linux.
+    
+        ```json
+        {
+            "external_update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+        }
+        ```  
+    
+1.  Pour installer des extensions pour des paramètres régionaux spécifiques, listez les paramètres régionaux pris en charge à l’aide `supported_locale` de .  Vous pouvez également spécifier des paramètres régionaux parents pour installer votre extension pour tous les paramètres régionaux de langue qui utilisent ce parent. Par exemple, lorsque vous utilisez les paramètres régionaux parents, votre extension s’installe pour tous les paramètres régionaux anglais, tels `en` que , et ainsi de `en-US` `en-GB` suite.  Lorsque les utilisateurs modifient leurs paramètres régionaux dans leur navigateur, les extensions installées en externe sont désinstallées.  Pour installer votre extension pour tous les paramètres régionaux, n’utilisez pas `supported_locales` .  
 
-<!-- image links -->  
+    ```json
+    {
+        "external_update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+        "supported_locales": [ "en", "fr", "de" ]
+    }
+    ```  
+
+1.  Vérifiez que votre extension est installée dans Microsoft Edge en naviguant vers `edge://extensions` .  
+
+## Mettre à jour et désinstaller les extensions installées en externe
+
+Microsoft Edge analyse les entrées de métadonnées dans le Registre chaque fois que le navigateur démarre et modifie les extensions installées en externe.  
+
+Pour mettre à jour votre extension vers une nouvelle version, mettez à jour la version dans le fichier manifeste, puis mettez à jour la version dans le Registre.  
+
+Vous devrez peut-être désinstaller les extensions installées en externe, qui ont été installées dans le cadre d’un ensemble de logiciels précédemment installé sur l’ordinateur.  Pour désinstaller votre extension, supprimez votre fichier JSON de préférences ou supprimez la clé du Registre.   
 
 <!-- links -->  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developer.chrome.com/apps/external_extensions).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  La page d’origine se trouve [ici.](https://developer.chrome.com/apps/external_extensions)  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  

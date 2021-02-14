@@ -1,49 +1,51 @@
 ---
-description: Guide sur la gestion du compte Microsoft Edge Partner Center.
+description: Guide sur la gestion du compte De l’Centre de partenaires Microsoft Edge
 title: Gérer les paramètres du compte
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Edge-chrome, développement d’extensions, extensions de navigateur, compléments, Centre des partenaires, développeur
-ms.openlocfilehash: 2d7bfa3c33bb7f32745fac13b8f5765c122e975d
-ms.sourcegitcommit: d360e419b5f96f4f691cf7330b0d8dff9126f82e
+keywords: edge-chromium, développement d’extensions, extensions de navigateur, addons, centre de partenaires, développeur
+ms.openlocfilehash: f929d087ecde0face752a4c3ce9b5fc6bbd9919d
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015735"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327511"
 ---
 # Gérer les paramètres du compte  
 
-Gestion du paramètre pour votre compte de développeur Microsoft Edge.  Vous pouvez afficher et mettre à jour les paramètres de votre compte et les détails de votre profil dans la section paramètre de compte du [Centre de partenariat][MicrosoftPartnerCenter].  
+Gérez les paramètres de votre compte et les détails de votre profil pour votre compte de développeur Microsoft Edge dans [l’Partner Center][MicrosoftPartnerCenter].  
 
 ## Paramètres de compte  
 
-Pour afficher les paramètres de votre compte, cliquez sur l’icône d’engrenage dans le coin supérieur droit du [Centre des partenaires][MicrosoftPartnerCenter] , puis sélectionnez **paramètres du développeur**.  Les **paramètres de développement** affichent des détails sur votre compte, des liens vers d’autres pages dans lesquelles vous pouvez afficher des informations et vous pouvez effectuer différentes tâches relatives au compte.  
+Pour afficher les paramètres de votre compte, sélectionnez l’icône d’engrenage dans le coin supérieur droit des paramètres de [l’Partner Center][MicrosoftPartnerCenter]  >  **Developer**.  Dans les **paramètres développeur,** examinez et mettez à jour les informations suivantes.  
 
-Dans la section **Détails du compte** , vous pouvez voir le statut et le type de votre compte.  Vous pouvez également afficher l’ID de vendeur et d’autres informations d’ID de l’éditeur.  Ces valeurs sont affectées par Microsoft pour identifier de façon unique votre compte de développeur et sont en lecture seule.  
+*   Passer en revue les informations sur votre compte.  
+*   Liens vers d’autres pages pour passer en revue les informations.  
+*   Modifiez les informations de votre compte.  
+    
+Dans la section **Détails du compte,** examinez l’état et le type de votre compte.  Vos informations d’ID de vendeur et d’autre ID d’éditeur sont également affichées ici.  Les valeurs sont affectées par Microsoft pour identifier de manière unique votre compte de développeur et sont en lecture seule.  
 
 ## Coordonnées  
 
-La **section coordonnées** vous permet d’afficher les informations que vous avez fournies lors de la configuration de votre compte.  Nous utilisons ces informations pour vous contacter à propos de votre compte.  Le nom complet de l’éditeur que nous affichons à vos utilisateurs dans le catalogue de compléments Microsoft Edge (ou compléments) s’affiche également ici.  
+La **section Coordonnées** affiche les détails que vous avez fournis lors de la création de votre compte.  L’équipe d’extension Microsoft Edge utilise les informations de contact pour vous contacter à propos de votre compte.  Le nom complet de l’éditeur affiché dans le magasin de modules de microsoft Edge est également affiché ici.  
   
-Vous devez modifier cette section si l’un de vos détails de contact a changé. Pour cela, cliquez sur **mettre à jour** \ ( **ou sélectionnez coordonnées** dans le menu de navigation de gauche), apportez les modifications souhaitées, puis cliquez sur **Enregistrer**.  
+Si vos informations de contact changent, modifiez la section **Coordonnées.**  Choose **Update**, make your changes, and then choose **Save**.  Vous pouvez également choisir **les coordonnées dans** le menu de navigation de gauche pour ouvrir la section **Coordonnées.**  
 
-Toute modification de vos détails de contact peut nécessiter une nouvelle vérification de votre compte, en particulier si vous avez un compte d'entreprise.  Votre statut de vérification s’affiche à l’état actuel `Pending` .  La durée du processus de vérification s’échelonne de quelques jours à quelques semaines et votre entreprise peut recevoir un appel téléphonique de notre partenaire de vérification.  
+Si vous devez modifier l’un de vos coordonnées, l’équipe d’extension Microsoft Edge peut vérifier à nouveau votre compte, en particulier si vous avez un compte d’entreprise.  L’état de vérification est de nouveau le même pendant `Pending` que l’examen est en cours.  Le processus de vérification peut aller de quelques jours à quelques semaines, et votre entreprise peut recevoir un appel téléphonique de notre partenaire de vérification.  
 
 ## Autres paramètres  
 
-Passez en revue les paramètres suivants dans la section paramètres du compte.  
+Examinez les paramètres suivants dans la section Paramètres du compte.  
 
 | Paramètres du compte | Description |  
 |:--- |:--- |  
-| État de la vérification | Lorsque votre compte est soumis au processus de vérification (par exemple, lorsque vous vous inscrivez pour la première fois ou que vous avez mis à jour les informations de contact de façon significative), vous examinez votre statut de vérification ici. |  
-| Programmes | Affichez des détails sur les programmes auxquels vous participez, ainsi que d’autres programmes susceptibles de vous intéresser.  
-| Contrats | Affichez le contrat accepté par votre compte. |  
-
-<!-- image links -->  
+| État de vérification | Examinez votre état de vérification lorsque votre compte passe par le processus de vérification.  Par exemple, votre compte est vérifié lorsque vous créez un compte pour la première fois ou après avoir mis à jour vos informations de contact.  |  
+| Programmes | Passer en revue les informations sur les programmes inscrits ou d’autres programmes qui peuvent vous intéresser.  
+| Contrats | Examinez les contrats acceptés par votre compte.  |  
 
 <!-- links -->  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Centre de partenariat"  
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  

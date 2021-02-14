@@ -1,73 +1,77 @@
 ---
-description: Fournit un récapitulatif des changements à forte incidence qui pourraient affecter la compatibilité du site
+description: Fournit un résumé des modifications à fort impact qui peuvent avoir un impact sur la compatibilité des sites
 title: Modifications apportées à Microsoft Edge ayant un impact sur la compatibilité des sites
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, compatibilité, plateforme Web
-ms.openlocfilehash: 8c872546b29633cb22e0095fdd1a0326f89fc087
-ms.sourcegitcommit: 5d3802721036dc7cd90e9e6f7ac90dc3acc24eec
+keywords: microsoft Edge, compatibilité, plateforme web
+ms.openlocfilehash: 64cdb417e6bd0aa648c7e1225bb6dc522f3873ce
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "11191551"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327504"
 ---
 # Modifications apportées à Microsoft Edge ayant un impact sur la compatibilité des sites  
 
-Le web évolue constamment pour améliorer l’expérience utilisateur, la sécurité et la confidentialité.  Dans certains cas, les modifications apportées risquent d’avoir une incidence sur les fonctionnalités des pages existantes.  Le tableau suivant récapitule les changements particulièrement importants qui sont en cours de suivi par l’équipe Microsoft Edge.  Consultez régulièrement cet article. l’équipe Microsoft Edge met à jour la page suivante en apportant des réflexions, des chronologies et de nouvelles modifications.  
+Le web évolue constamment pour améliorer l’expérience utilisateur, la sécurité et la confidentialité.  Dans certains cas, les modifications peuvent être suffisamment importantes pour avoir un impact sur les fonctionnalités des pages existantes.  Le tableau suivant récapitule les modifications particulièrement importantes que l’équipe Microsoft Edge suit actuellement.  Examinez souvent cet article . L’équipe Microsoft Edge met à jour la page suivante à mesure que la réflexion évolue, que les chronologies s’unifient et que de nouvelles modifications sont annoncées.  
 
 | Modification | Canal Stable | Expérimentation | Informations complémentaires |  
 |:--- |:--- |:--- |:--- |
-| Cookies par défaut `SameSite=Lax` `SameSite=None-requires-Secure` | [Chrome + 1](#release-comments) \ (Edge V86 \)  | V82 Canaries, dev V82 | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, y compris sur la chronologie prévue par Google pour cette modification, accédez à l’entrée d’état de la [plateforme chrome][ChromePlatformStatus5088147346030592].  |  
-| Stratégie de renvoi: par défaut `strict-origin-when-cross-origin` | [Chrome + 1](#release-comments) \ (Edge V86 \)  | V79 Canaries, dev V79 | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, y compris sur la chronologie prévue par Google pour cette modification, accédez à l’entrée d’état de la [plateforme chrome][ChromePlatformStatus6251880185331712].  |  
-| Désactiver la synchronisation synchrone `XmlHttpRequest` dans la page | [Chrome + 1](#release-comments) \ (Edge V83 \) |  | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  À la correspondance de chrome, Microsoft Edge propose une stratégie de groupe pour désactiver cette modification jusqu’au V88 Edge.  Pour plus d’informations, y compris sur la chronologie prévue par Google pour cette modification, accédez à l’entrée d’état de la [plateforme chrome][ChromePlatformStatus4664843055398912].  |  
-| Afficher une invite discrète pour les demandes d’autorisation de notification | Bordure V84 |  | Les demandes de notification silencieuse affichent une icône de requête subtile dans la barre d’adresse pour les autorisations de notification de site demandées à l’aide de l' `Notifications` `Push` API ou, en remplaçant l’interface utilisateur d’invite de menu volant d’autorisation complète ou standard.  Cette fonctionnalité est actuellement activée pour tous les utilisateurs.  Pour refuser les demandes de notifications de silence, accédez à `edge://settings/content/notifications` .  À l’avenir, l’équipe Microsoft Edge risque de réactiver l’invite de notifications flyout complète dans certains cas.  |  
-| Désactiver TLS/1.0 et TLS/1.1 par défaut | Bordure V84 |  | La stratégie de groupe [SSLMinVersion][DeployedgePoliciesSslversionmin] autorise la réactivation de TLS/1.0 et TLS/1.1; la stratégie reste disponible jusqu’au tour V90.  |  
-| Bloquer les téléchargements de contenu mixte | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, y compris sur la chronologie prévue par Google pour cette modification, accédez à l' [entrée de blog Google Security][GoogleBlogSecurity20200206].  Le planning de déploiement Microsoft des types de fichiers à avertir ou bloquer est planifié pour une version après chrome.  |  
-| Déconseillé AppCache | [Chrome + 1](#release-comments) \ (Edge V86 \)  |  | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, accédez à la [documentation de WebDev][WebDevAppCacheRemoval].  Le planning de déploiement Microsoft pour le retrait est prévu pour une version ultérieure après chrome.  La demande d’un [jeton AppCache OriginTrial][ChromeDevelopersOrigintrialsAppCacheOriginTrial] permet aux sites de continuer à utiliser l’API déconseillée jusqu’à l’aide de l’option V90.  |  
-| Suppression d’Adobe Flash | Bordure V88  |  | Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, accédez à la feuille de [route de chrome Adobe Flash][ChromiumFlashRoadmapSupportRemoved].  | 
-| Désactiver et supprimer FTP | Bordure V88  | V87 Edge Beta | Dans la version bêta latérale de V87, la prise en charge du protocole FTP est désactivée par défaut. dans le cadre d’un V87 de bord stable, il reste activé.  Dans Edge V88, la prise en charge du protocole FTP est entièrement supprimée.  Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé.  Pour plus d’informations, accédez à l’entrée d’état de la [plateforme chrome][ChromePlatformStatus6246151319715840].  Les entreprises qui utilisent des sites qui nécessitent une prise en charge de FTP peuvent continuer à utiliser le protocole FTP en configurant le site pour utiliser le [mode IE][DeployedgeEdgeIeMode].  | 
-| Mise à niveau automatique d’images de contenu mixte | Bordure V88  |  | Les références non sécurisées (HTTP) aux images sont automatiquement mises à niveau vers HTTPs. Si l’image n’est pas disponible sur HTTPs, le téléchargement de l’image échoue. Une [stratégie de groupe][DeployedgePoliciesInsecurecontentallowedforurls] est disponible pour contrôler cette fonctionnalité. Cette modification intervient dans le projet de chrome sur lequel Microsoft Edge est basé. Pour plus d’informations, accédez à l’entrée d’état de la [plateforme chrome][ChromePlatformStatus4926989725073408].  |  
+| Cookies par défaut sur `SameSite=Lax` et `SameSite=None-requires-Secure` | [Chrome+1](#release-comments) \(Edge v86\)  | Canary v82, Dev v82 | Cette modification se produit dans le projet Chromium, sur lequel Microsoft Edge est basé.  Pour plus d’informations, y compris la chronologie planifiée par Google pour cette modification, accédez à l’entrée État de la plateforme [Chrome.][ChromePlatformStatus5088147346030592]  |  
+| Stratégie de référence : par défaut `strict-origin-when-cross-origin` | [Chrome+1](#release-comments) \(Edge v86\)  | Canary v79, Dev v79 | Cette modification se produit dans le projet Chromium, sur lequel Microsoft Edge est basé.  Pour plus d’informations, y compris la chronologie planifiée par Google pour cette modification, accédez à l’entrée État de la plateforme [Chrome.][ChromePlatformStatus6251880185331712]  |  
+| Ne pas être synchrone lors `XmlHttpRequest` du rejet de page | [Chrome+1](#release-comments) \(Edge v83\) |  | Cette modification se produit dans le projet Chromium, sur lequel Microsoft Edge est basé.  Correspondant à Chrome, Microsoft Edge propose une stratégie de groupe pour désactiver cette modification jusqu’à Edge v88.  Pour plus d’informations, y compris la chronologie planifiée par Google pour cette modification, accédez à l’entrée État de la plateforme [Chrome.][ChromePlatformStatus4664843055398912]  |  
+| Afficher une invite subtile pour les demandes d’autorisations de notification | Edge v84 |  | Les demandes de notification silencieuses affichent une icône de demande subtile dans la barre d’adresses pour les autorisations de notification de site demandées à l’aide de l’API ou de l’API, en remplaçant l’interface utilisateur du message volant d’autorisation complète ou `Notifications` `Push` standard.  Cette fonctionnalité est actuellement activée pour tous les utilisateurs.  Pour refuser les demandes de notification silencieuse, accédez à `edge://settings/content/notifications` .  À l’avenir, l’équipe Microsoft Edge peut envisager de réactiver l’invite de notification de volant complet dans certains scénarios.  |  
+| Désactiver TLS/1.0 et TLS/1.1 par défaut | Edge v84 |  | La stratégie de groupe [SSLMinVersion][DeployedgeMicrosoftEdgePoliciesSslversionmin] permet de réactiver TLS/1.0 et TLS/1.1 ; la stratégie reste disponible jusqu’à Edge v90.  |  
+| Bloquer les téléchargements de contenu mixte | [Chrome+1](#release-comments) \(Edge v86\)  |  | Cette modification se produit dans le projet Chromium, sur lequel Microsoft Edge est basé.  Pour plus d’informations, y compris la chronologie planifiée par Google pour cette modification, accédez à l’entrée du blog sur [la sécurité Google.][GoogleBlogSecurity20200206]  La planification du déploiement de Microsoft sur les types de fichiers à avertir ou bloquer est planifiée pour une version après Chrome.  |  
+| Deprecate AppCache | [Chrome+1](#release-comments) \(Edge v86\)  |  | Cette modification se produit dans le projet Chromium, sur lequel Microsoft Edge est basé.  Pour plus d’informations, accédez à la [documentation WebDev.][WebDevAppCacheRemoval]  La planification du déploiement de Microsoft pour l’annulation est prévue pour une version après Chrome.  La demande d’un [jeton OriginTrial AppCache][ChromeDevelopersOrigintrialsAppCacheOriginTrial] permet aux sites de continuer à utiliser l’API dépréciée jusqu’à Edge v90.  |  
+| Suppression d’Adobe Flash | Edge v88  |  | Cette modification se produit dans le projet Chromium, sur lequel Microsoft Edge est basé.  Pour plus d’informations, accédez à la feuille de [route Adobe Flash Chromium.][ChromiumFlashRoadmapSupportRemoved]  | 
+| Désactiver et supprimer FTP | Edge v88  | Edge Beta v87 | Dans Edge Beta v87, la prise en charge ftp est désactivée par défaut . dans Edge Stable v87, il reste activé.  Dans Edge v88, la prise en charge ftp est entièrement supprimée.  Cette modification se produit dans le projet Chromium, sur lequel Microsoft Edge est basé.  Pour plus d’informations, accédez à l’entrée d’état [de la plateforme Chrome.][ChromePlatformStatus6246151319715840]  Les entreprises qui ont des sites qui nécessitent toujours la prise en charge de FTP peuvent continuer à utiliser FTP en configurant le site pour qu’il utilise [le mode IE.][DeployedgeEdgeIeMode]  | 
+| Autoupgrade mixed content images | Edge v88  |  | Les références \(HTTP\) non sécurisées aux images sont automatiquement mises à niveau vers HTTPS ; Si l’image n’est pas disponible sur HTTPS, le téléchargement de l’image échoue. Une [stratégie de groupe][DeployedgeMicrosoftEdgePoliciesInsecurecontentallowedforurls] est disponible pour contrôler cette fonctionnalité. Cette modification se produit dans le projet Chromium, sur lequel Microsoft Edge est basé. Pour plus d’informations, accédez à l’entrée État de [la plateforme Chrome.][ChromePlatformStatus4926989725073408]  | 
+| Authentification HTTP non bloquée lorsque les cookies tiers sont bloqués  | Edge v87  |  | À partir de Edge v87, lorsque les cookies sont bloqués pour les demandes tierces, à l’aide de la stratégie [BlockThirdPartyCookies][DeployedgeMicrosoftEdgePoliciesBlockthirdpartycookies] ou via la page Paramètres Edge, l’authentification HTTP est également interdit. Cette modification peut avoir un impact sur les [téléchargements][DeployedgeEdgeIeModePoliciesConfigureUsingUseEnterpriseModeIeWebsiteListPolicy] de liste des sites en mode Entreprise pour le mode Internet Explorer si le point de terminaison hébergeant la liste requiert l’utilisation de l’authentification HTTP.  Pour autoriser l’utilisation des cookies et de l’authentification HTTP pour les téléchargements de listes de sites en mode Entreprise, ajoutez un modèle d’URL correspondant à la stratégie [CookiesAllowedForURLs.][DeployedgeMicrosoftEdgePoliciesCookiesallowedforurls]  |   
 
-##### Commentaires de publication  
+##### Publier des commentaires  
 
 :::row:::
    :::column span="1":::
-      Chrome + 1
+      Chrome+1  
    :::column-end:::
    :::column span="2":::
-      Sur la base des commentaires des utilisateurs et des développeurs, la fonctionnalité indiquée ou la modification d’une version après chrome.
+      En fonction des commentaires des utilisateurs et des développeurs, la fonctionnalité ou la modification indiquée est fourni une version après Chrome.  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Chrome ou chrome + 1
+      Chrome ou Chrome+1  
    :::column-end:::
    :::column span="2":::
-      En fonction des commentaires des utilisateurs et des développeurs, de la fonctionnalité ou du changement de navires en même temps ou en une seule dissémination après chrome.
+      En fonction des commentaires des utilisateurs et des développeurs, la fonctionnalité ou le changement indiqué est fourni en même temps ou une version après Chrome.  
    :::column-end:::
 :::row-end:::
 
 <!-- links -->  
 
 [DeployedgeEdgeIeMode]: /deployedge/edge-ie-mode "À propos du mode IE | Documents Microsoft"  
-[DeployedgePoliciesInsecurecontentallowedforurls]:  /deployedge/microsoft-edge-policies#insecurecontentallowedforurls "InsecureContentAllowedForUrls-Microsoft Edge-politiques | Documents Microsoft"  
-[DeployedgePoliciesSslversionmin]: /deployedge/microsoft-edge-policies#sslversionmin "SSLVersionMin-Microsoft Edge-politiques | Documents Microsoft"  
+[DeployedgeEdgeIeModePoliciesConfigureUsingUseEnterpriseModeIeWebsiteListPolicy]: /deployedge/edge-ie-mode-policies#configure-using-the-use-the-enterprise-mode-ie-website-list-policy "Configurer à l’aide de la stratégie de liste des sites web En mode Entreprise d’Internet IE : configurer les stratégies de mode IE | Documents Microsoft"  
+[DeployedgeMicrosoftEdgePoliciesBlockthirdpartycookies]: /deployedge/microsoft-edge-policies#blockthirdpartycookies "BlockThirdPartyCookies - Microsoft Edge - Stratégies | Documents Microsoft"  
+[DeployedgeMicrosoftEdgePoliciesCookiesallowedforurls]: /deployedge/microsoft-edge-policies#cookiesallowedforurls "CookiesAllowedForUrls - Microsoft Edge - Stratégies | Documents Microsoft"  
+[DeployedgeMicrosoftEdgePoliciesInsecurecontentallowedforurls]:  /deployedge/microsoft-edge-policies#insecurecontentallowedforurls "InsecureContentAllowedForUrls - Microsoft Edge - Stratégies | Documents Microsoft"  
+[DeployedgeMicrosoftEdgePoliciesSslversionmin]: /deployedge/microsoft-edge-policies#sslversionmin "SSLVersionMin - Microsoft Edge - Stratégies | Documents Microsoft"  
 
-[ChromePlatformStatus4664843055398912]: https://chromestatus.com/feature/4664843055398912 "Empêcher la synchronisation de XHR dans le code JavaScript de page État de la plateforme chrome"  
-[ChromePlatformStatus4926989725073408]: https://chromestatus.com/feature/4926989725073408 "Image de mise à niveau automatique contenu mixte | État de la plateforme chrome"  
-[ChromePlatformStatus5088147346030592]: https://chromestatus.com/feature/5088147346030592 "Cookies par défaut de SameSite = Lax | État de la plateforme chrome"  
-[ChromePlatformStatus6246151319715840]: https://chromestatus.com/feature/6246151319715840 "Déconseillé du support FTP État de la plateforme chrome"  
-[ChromePlatformStatus6251880185331712]: https://chromestatus.com/feature/6251880185331712 "Stratégie de renvoi: par défaut en cas d’origine État de la plateforme chrome"  
+[ChromePlatformStatus4664843055398912]: https://chromestatus.com/feature/4664843055398912 "Disallow sync XHR in page dismissal JavaScript | État de la plateforme Chrome"  
+[ChromePlatformStatus4926989725073408]: https://chromestatus.com/feature/4926989725073408 "Mise à niveau automatique du contenu mixte d’image | État de la plateforme Chrome"  
+[ChromePlatformStatus5088147346030592]: https://chromestatus.com/feature/5088147346030592 "Valeur par défaut des cookies SameSite=Lax | État de la plateforme Chrome"  
+[ChromePlatformStatus6246151319715840]: https://chromestatus.com/feature/6246151319715840 "Désintépreser la prise en charge de FTP | État de la plateforme Chrome"  
+[ChromePlatformStatus6251880185331712]: https://chromestatus.com/feature/6251880185331712 "Stratégie de référence : par défaut sur strict-origin-when-cross-origin | État de la plateforme Chrome"  
 
-[ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "Prise en charge de la prise en charge du chrome (cible: chrome 88 +-Jan 2021) Projets de chrome"  
+[ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "Prise en charge flash supprimée de Chromium (cible : Chrome 88+ - Jan 2021) - Feuille de route flash | Projets Chromium"  
 
-[ChromeDevelopersOrigintrialsAppCacheOriginTrial]: https://developers.chrome.com/origintrials/#/view_trial/1776670052997660673 "AppCache OriginTrial jeton | Développeurs de chrome"  
+[ChromeDevelopersOrigintrialsAppCacheOriginTrial]: https://developers.chrome.com/origintrials/#/view_trial/1776670052997660673 "Jeton AppCache OriginTrial | Développeurs Chrome"  
 
-[GoogleBlogSecurity20200206]: https://security.googleblog.com/2020/02/protecting-users-from-insecure_6.html "Protection des utilisateurs contre les téléchargements insécurisés dans Google Chrome-blog de sécurité Google Online" 
+[GoogleBlogSecurity20200206]: https://security.googleblog.com/2020/02/protecting-users-from-insecure_6.html "Protection des utilisateurs contre les téléchargements non sécurisés dans Google Chrome - Blog sur la sécurité Google Online" 
 
-[WebDevAppCacheRemoval]: https://web.dev/appcache-removal "Préparation de la suppression d’AppCache | Web. dev"  
+[WebDevAppCacheRemoval]: https://web.dev/appcache-removal "Préparation de la suppression d’AppCache | web.dev"  
 
 <!--todo:  cleanup links  -->  
