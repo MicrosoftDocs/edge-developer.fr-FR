@@ -3,7 +3,7 @@ description: Livre blanc sur la confidentialité MicrosoftEdge
 title: Livre blanc sur la confidentialité MicrosoftEdge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/02/2020
+ms.date: 02/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, confidentialité, livre blanc, confiance
@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: e34228f7b094fbf11320da7d9523f04d2a550aae
-ms.sourcegitcommit: 5f10022bd1da3477660be40c559411fadf59d8f0
+ms.openlocfilehash: f62fae09c5d52dd2bdb67f0bbceb0ee394c97ea3
+ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "11297736"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "11327665"
 ---
 # Livre blanc sur la confidentialité MicrosoftEdge  
 
@@ -227,7 +227,7 @@ Pour importer des données à partir d’un autre navigateur à tout moment, acc
 
 Vous pouvez télécharger et installer Microsoft Edge sur les plateformes telles que Windows et macOS.  Microsoft Edge utilise le service de mise à jour pour assurer la mise à jour et la sécurité de votre version de Microsoft Edge.  
 
-Lorsque vous téléchargez et installez Microsoft Edge, des informations sur votre appareil (par exemple, votre canal de publication, les informations matérielles de base, les identificateurs de mise à jour, un identificateur propre à votre appareil) et un identificateur réinitialisable propre à votre navigateur sont envoyés à Microsoft pendant le processus d’installation.  L’adresse IP de l’appareil est envoyée au service de mise à jour, mais la dernière décimale est nettoyée afin de renforcer la protection de la confidentialité.  Pendant chaque session de navigation, un nouveau jeton généré de façon aléatoire est créé pour installer les versions mises à jour de Microsoft Edge.  Le jeton n’est pas associé à des informations personnelles et est uniquement utilisé pour le processus d’installation et de mise à jour, et pour améliorer le service de mise à jour.  
+Lorsque vous téléchargez, puis installez ou mettez à jour Microsoft Edge, le programme envoie à Microsoft des informations sur votre appareil (par exemple, votre canal de publication, les informations matérielles de base, les identificateurs de mise à jour, un identificateur propre à votre appareil) et un identificateur réinitialisable propre à votre navigateur pendant le processus d’installation.  Le programme envoie l’adresse IP de l’appareil au service de mise à jour mais supprime la dernière décimale pour renforcer la protection de la confidentialité.  Pendant chaque session de navigation, un nouveau jeton généré de façon aléatoire est créé pour installer les versions mises à jour de Microsoft Edge.  Le jeton n’est pas associé à des informations personnelles et est uniquement utilisé pour le processus d’installation et de mise à jour, et pour améliorer le service de mise à jour.  
 
 Microsoft Edge interroge le service mise à jour Microsoft Edge sur la progression de l’installation et de la mise à jour.  En cas d’échec de l’installation ou de la mise à jour et si la notification d’incident est activée, un journal est créé et envoyé à Microsoft.  Si vous souhaitez en savoir plus sur l’envoi de rapports d’incident à Microsoft, consultez la section [Incidents](#crashes).  Microsoft collecte des informations concernant la façon dont vous avez téléchargé MicrosoftEdge, les installations réussies, ainsi que les désinstallations pour mieux comprendre le succès des téléchargements MicrosoftEdge.  
 
@@ -387,7 +387,9 @@ Lorsque vous appliquez les coupons, les cookies sont stockés sur votre appareil
    Achats et coupons  
 :::image-end:::  
 
-Pour vous aider à trouver le meilleur prix lors de vos achats en ligne et de l’utilisation des collections, MicrosoftEdge détermine localement si la page ou l’élément de collection que vous consultez est une page de détails de produit.  Si vous consultez une page de détails du produit, MicrosoftEdge envoie les détails du produit au service d’achat, y compris l’URL avec les informations d’identification personnelle supprimées. Nous envoyons également au service le prix du produit, l’image du produit, le nom du produit, les notes et les avis, ainsi que des informations sur MicrosoftEdge et la version de votre système d’exploitation.  Ces données sont envoyées via HTTPS avec un identifiant généré aléatoirement.  Le service d’achat Microsoft renvoie les prix d’autres détaillants pour le même produit.  
+Pour vous aider à trouver le meilleur prix lors de l’achat en ligne, Microsoft Edge détermine localement si la page ou l’élément de collection que vous affichez est une page de détails de produit.  Si vous consultez une page de détails du produit, MicrosoftEdge envoie les détails du produit au service d’achat, y compris l’URL avec les informations d’identification personnelle supprimées. Nous envoyons également au service le prix du produit, l’image du produit, le nom du produit, les notes et les avis, ainsi que des informations sur MicrosoftEdge et la version de votre système d’exploitation.  Ces données sont envoyées via HTTPS avec un identifiant généré aléatoirement.  Le service d’achat Microsoft renvoie les prix d’autres détaillants pour le même produit.  
+
+Si vous visitez un domaine d’achat et que vous utilisez actuellement Bing Rebates, Microsoft Edge transmet les informations relatives au domaine avec des cookies au service d’achat Microsoft pour récupérer votre profil Bing Rebates et vos offres de remise concernant le domaine. Si vous choisissez d’activer le montant rendu en espèces, Microsoft Edge envoie votre URL au service d’achat Microsoft pour recevoir une URL affiliée. Vous pouvez stocker les cookies sur votre appareil pour attribuer correctement le fournisseur de remises. 
 
 Le service d’achat est activé par défaut pour tous les utilisateurs.  Pour modifier le paramètre d’achat dans MicrosoftEdge, accédez à `edge://settings/privacy` , puis désactivez l’option **Gagnez du temps et de l’argent avec Achats dans MicrosoftEdge**.  La navigation InPrivate utilise le paramètre d’achat du profil qui a lancé la session InPrivate.  
 
@@ -445,7 +447,7 @@ Pour résoudre les fautes de frappe d’URL dans la barre d’adresses qui gén�
 
 ## Sync  
 
-La connexion à MicrosoftEdge avec un compte Microsoft vous permet de synchroniser les données de navigation de toutes vos versions de MicrosoftEdge.  Vous pouvez synchroniser votre historique de navigation, vos favoris, vos paramètres, vos données de remplissage de formulaire \(adresses, etc.\), vos mots de passe, vos extensions et vos collections.  Vous devez autoriser l’activation de la synchronisation dans MicrosoftEdge. Chaque type de données synchronisées peut être activé ou désactivé individuellement.  Les favoris incluent les onglets que vous avez précédemment définis dans la version héritée de Microsoft Edge, qui sont synchronisés avec le reste de vos favoris.  Les favoris ou autres données supprimés ou modifiés d’une version de Microsoft Edge synchronisée avec toutes les autres versions connectées de Microsoft Edge où la synchronisation est activée.  Pour gérer les configurations de synchronisation, accédez à `edge://settings/profiles/sync`.  Vos paramètres de synchronisation peuvent être gérés par votre organisation.
+La connexion à MicrosoftEdge avec un compte Microsoft vous permet de synchroniser vos données de navigation de toutes vos versions connectées de MicrosoftEdge.  Vous pouvez synchroniser l’historique de navigation, les favoris, les paramètres, les données de remplissage de formulaire \(adresses et plus\), les mots de passe, les extensions, les onglets ouverts et les collections.  Vous devez autoriser l’activation de la synchronisation dans MicrosoftEdge. Vous pouvez activer ou désactiver individuellement chaque type de données synchronisées.  Les favoris incluent les onglets que vous avez précédemment définis dans la version héritée de Microsoft Edge, qui sont synchronisés avec le reste de vos favoris.  Les favoris ou autres données supprimés ou modifiés d’une version de Microsoft Edge synchronisée avec toutes les autres versions connectées de Microsoft Edge où la synchronisation est activée.  Pour gérer les configurations de synchronisation, accédez à `edge://settings/profiles/sync`.  Vos paramètres de synchronisation peuvent être gérés par votre organisation.
 
 :::image type="complex" source="./media/sync.png" alt-text="Image du paramètre de synchronisation défini sur activé" lightbox="./media/sync.png":::
    Le paramètre de synchronisation est activé
