@@ -267,11 +267,11 @@
               href: extensions-chromium/developer-guide/native-messaging.md
         - name: Publier sur le Microsoft Store
           items:
-            - name: Publier votre extension
-              href: extensions-chromium/publish/publish-extension.md
             - name: Inscription des développeurs
               href: extensions-chromium/publish/create-dev-account.md
-            - name: Mettre à jour la liste des extensions
+            - name: Publier votre extension
+              href: extensions-chromium/publish/publish-extension.md
+            - name: Mettre à jour votre extension
               href: extensions-chromium/publish/update.md
             - name: États de soumission
               href: extensions-chromium/publish/submission-states.md
