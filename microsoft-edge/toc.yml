@@ -272,20 +272,20 @@
             - name: Publier votre extension
               href: extensions-chromium/publish/publish-extension.md
             - name: Mettre à jour votre extension
-              href: extensions-chromium/publish/update.md
+              href: extensions-chromium/publish/update-extension.md
             - name: États de soumission
               href: extensions-chromium/publish/submission-states.md
             - name: Gérer les paramètres du compte
               href: extensions-chromium/publish/manage-settings.md
-            - name: Nous contacter
-              href: extensions-chromium/publish/contact-us.md
+            - name: Prise en charge des extensions de contacts
+              href: extensions-chromium/publish/contact-extensions-team.md
         - name: Stratégies des extensions Microsoft Edge
           items:
             - name: Stratégie de sécurité du contenu
               href: extensions-chromium/store-policies/csp.md
             - name: Addendum ADA pour les développeurs Microsoft Edge
               href: extensions-chromium/store-policies/ada-addendum.md
-            - name: Stratégies pour les développeurs de catalogue des extensions Microsoft Edge
+            - name: Stratégies de développement du magasin des extensions Microsoft Edge
               href: extensions-chromium/store-policies/developer-policies.md
         - name: Extensions pour les entreprises
           items:
