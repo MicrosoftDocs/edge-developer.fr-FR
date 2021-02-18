@@ -3,16 +3,16 @@ description: Découvrez comment distribuer des extensions à l’aide d’autres
 title: Autre méthode de distribution des extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, développement d’extensions, extensions de navigateur, extensions, extensions, centre de partenaires, développeur
-ms.openlocfilehash: 9232b8912acaa52c8d97fdd5f13b82ec33c865d4
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 3b2c72e13488632e2fadea2a7e8eb95888f67170
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327623"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343149"
 ---
 # Autres méthodes de distribution d’extension  
 
@@ -64,8 +64,8 @@ Pour distribuer votre extension à l’aide du Registre Windows, effectuez les �
 
 Pour distribuer votre extension à l’aide d’un fichier JSON de préférences, effectuez les étapes suivantes.
 
-1.  Lorsque vous utilisez Linux, assurez-vous que votre fichier d’extension est disponible sur l’ordinateur sur qui `.crx` l’extension sera installée. Copiez le fichier d’extension dans un répertoire local ou utilisez un partage réseau `.crx` accessible à partir de l’ordinateur. 
-1.  Créez un fichier JSON dans lequel le nom du fichier correspond à l’ID de votre extension. Par exemple, créez un fichier JSON avec le nom de fichier `aaaaaaaaaabbbbbbbbbbcccccccccc.json` .  
+1.  Lorsque vous utilisez Linux, assurez-vous que votre fichier d’extension est disponible sur l’ordinateur où `.crx` l’extension sera installée. Copiez le fichier d’extension dans un répertoire local ou utilisez un partage réseau `.crx` accessible à partir de l’ordinateur. 
+1.  Créez un fichier JSON où le nom du fichier correspond à l’ID de votre extension. Par exemple, créez un fichier JSON avec le nom de fichier `aaaaaaaaaabbbbbbbbbbcccccccccc.json` .  
 1.  Selon votre système d’exploitation, enregistrez le fichier JSON dans l’un des dossiers suivants.   
     *   **macOS**  
         *   Spécifiques à l’utilisateur : `~USERNAME/Library/Application Support/Microsoft Edge/External Extensions/`  

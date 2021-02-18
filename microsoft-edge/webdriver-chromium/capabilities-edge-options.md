@@ -3,21 +3,21 @@ description: Référence pour les fonctionnalités WebDriver et les options spé
 title: Fonctionnalités et EdgeOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/29/2021
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, développement web, html, css, javascript, développeur, webdriver, selenium, test, outils, automatisation, test
-ms.openlocfilehash: c2842740dfc6d902d1727634e00565f8e556969d
-ms.sourcegitcommit: 070a60f634908eea0e29e260331f9fc0aa85ee78
+ms.openlocfilehash: 5a48ca34e46b56fa60bcacfade2add23026be144
+ms.sourcegitcommit: f95812c4e1b7277f67c6c4891be2779cc1b5bdf1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "11306233"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "11343778"
 ---
 # Fonctionnalités et EdgeOptions  
 
-Les fonctionnalités sont des options que vous pouvez utiliser pour personnaliser et configurer une `EdgeDriver` session.  Pour en savoir plus sur le démarrage `EdgeDriver` d’une nouvelle session, accédez à [Automatiser Microsoft Edge.][WebdriverIndexDrivingMicrosoftEdgeChromium]  Cet article décrit toutes les fonctionnalités prise en charge pour [Microsoft Edge][WebdriverIndexInstallMicrosoftEdgeChromium] et détaille la transmission des fonctionnalités aux `EdgeDriver` sessions.  
+Les fonctionnalités sont des options que vous pouvez utiliser pour personnaliser et configurer une `EdgeDriver` session.  Pour en savoir plus sur le démarrage `EdgeDriver` d’une nouvelle session, accédez à [Automatisation de Microsoft Edge.][WebdriverIndexAutomateMicrosoftEdgeChromium]  Cet article décrit toutes les fonctionnalités prise en charge pour [Microsoft Edge][WebdriverIndexInstallMicrosoftEdgeChromium] et détaille la transmission des fonctionnalités aux `EdgeDriver` sessions.  
 
 Les fonctionnalités sont transmises à une session WebDriver en tant que carte JSON.  Les liaisons de langage WebDriver fournissent généralement des méthodes pratiques sécurisées pour le type, vous n’avez donc pas besoin de configurer vous-même la carte JSON.  Différentes liaisons de langage WebDriver utilisent différents mécanismes pour configurer des fonctionnalités.  Accédez à la documentation de votre [liaison de langue préférée][WebdriverIndexChooseWebdriverLanguageBinding] pour en savoir plus sur la configuration des fonctionnalités.  [Selenium][SeleniumMain] configure les fonctionnalités par le biais de la `EdgeOptions` classe.  
 
@@ -58,7 +58,7 @@ La plupart des fonctionnalités propres à Microsoft Edge sont exposées via `Ed
 | minidumpPath | chaîne |  | Répertoire pour stocker les minidumps Microsoft Edge.  \(Pris en charge uniquement sur Linux.\) |  
 | mobileEmulation | dictionnaire |  | Dictionnaire avec une valeur pour `deviceName` , ou des valeurs pour et `deviceMetrics` `userAgent` . |  
 | perfLoggingPrefs | dictionnaire |  | Dictionnaire facultatif qui spécifie les préférences de journalisation des performances.  pour plus d’informations, accédez à [l’objet perfLoggingPrefs](#perfloggingprefs-object). |  
-| prefs | dictionnaire |  | Dictionnaire avec chaque entrée constituée du nom de la préférence et de la valeur.  Les préférences sont appliquées uniquement au profil utilisateur utilisé.  Pour obtenir des exemples, `Preferences` accédez au fichier dans le dossier de données utilisateur de Microsoft Edge. |  
+| prefs | dictionnaire |  | Dictionnaire avec chaque entrée constituée du nom de la préférence et de la valeur.  Les préférences sont appliquées uniquement au profil utilisateur en cours d’utilisation.  Pour obtenir des exemples, `Preferences` accédez au fichier dans le dossier de données utilisateur de Microsoft Edge. |  
 | wdpAddress | chaîne |  | Adresse d’un serveur Windows Device Portal auquel vous vous connectez, par `hostname/ip:port` exemple. `127.0.0.1:50080`  Pour plus d’informations, accédez [à Débogage à distance - Appareils Windows 10.][DevtoolsRemoteDebuggingWindows] |  
 | wdpPassword | chaîne |  | Mot de passe facultatif à utiliser lors de la connexion à un serveur Windows Device Portal.  Obligatoire si l’authentification est activée sur le serveur. |  
 | wdpUsername | chaîne |  | Nom d’utilisateur facultatif à utiliser lors de la connexion à un serveur Windows Device Portal.  Obligatoire si l’authentification est activée sur le serveur. |  
@@ -78,7 +78,7 @@ Le `perfLoggingPrefs` dictionnaire a le format suivant \(toutes les clés sont f
 
 ## Fonctionnalités renvoyées  
 
-La liste suivante contient toutes les fonctionnalités spécifiques à Microsoft Edge qui sont de retour `EdgeDriver` lorsque vous créez une nouvelle session.  
+La liste suivante contient toutes les fonctionnalités spécifiques de Microsoft Edge qui renvoient lorsque `EdgeDriver` vous créez une nouvelle session.  
 
 | Fonctionnalité | Type | Détails |  
 |:--- |:--- |:--- |  
@@ -89,7 +89,7 @@ La liste suivante contient toutes les fonctionnalités spécifiques à Microsoft
 
 [DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Mise en place du débogage à distance des appareils Windows 10 | Documents Microsoft"  
 [WebdriverIndexChooseWebdriverLanguageBinding]: ./index.md#choose-a-webdriver-language-binding "Choose a WebDriver language binding - WebDriver (Chromium) | Documents Microsoft"
-[WebdriverIndexDrivingMicrosoftEdgeChromium]: ./index.md#automating-microsoft-edge-chromium "Automatisation de Microsoft Edge (Chromium) - WebDriver (Chromium) | Documents Microsoft"    
+[WebdriverIndexAutomateMicrosoftEdgeChromium]: ./index.md#automate-microsoft-edge-chromium "Automatiser Microsoft Edge (Chromium) - WebDriver (Chromium) | Documents Microsoft"    
 [WebdriverIndexInstallMicrosoftEdgeChromium]: ./index.md#install-microsoft-edge-chromium "Installer Microsoft Edge (Chromium) - WebDriver (Chromium) | Documents Microsoft"  
 
 [SeleniumMain]: https://www.selenium.dev "Automation du navigateur SeleniumHQ"  

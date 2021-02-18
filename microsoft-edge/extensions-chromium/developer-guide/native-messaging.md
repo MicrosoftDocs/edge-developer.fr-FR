@@ -3,16 +3,16 @@ description: Documentation sur la messagerie native
 title: Messagerie native
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, développement d’extensions, extensions de navigateur, addons, centre de partenaires, développeur
-ms.openlocfilehash: 2d629762d4c7c75832905cfbf8c2d5311191092d
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: d9c2370d6a4f9f7cd25001c1c58ce266423af19a
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327700"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343065"
 ---
 # Messagerie native  
 
@@ -98,7 +98,7 @@ Le fichier manifeste hôte doit être un fichier JSON valide qui contient les cl
       *   Sur les appareils Windows, vous pouvez utiliser des chemins d’accès relatifs au répertoire qui contient le fichier manifeste.  
       *   Sur macOS et Linux, le chemin d’accès doit être absolu.  
       
-      Le processus hôte commence par le répertoire actuel qui contient le fichier binaire hôte.  Par exemple \ (Windows\), si ce paramètre est paramétrage , le fichier binaire est démarré à l’aide du répertoire `C:\Application\nm_host.exe` actuel \( `C:\Application\` \).  
+      Le processus hôte commence par le répertoire actuel qui contient le fichier binaire hôte.  Par exemple \(Windows\), si ce paramètre est paramétrage, le fichier binaire est démarré à l’aide du répertoire `C:\Application\nm_host.exe` actuel \( `C:\Application\` \).  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -132,7 +132,7 @@ Pour recharger une version de votre extension pendant le développement et `micr
 1.  Accédez à `edge://extensions` la page et vérifiez que votre extension est répertoriée.  
 1.  Copiez la clé à partir `microsoft_catalog_extension_id` de \(ID\) à partir de la liste des extensions sur la page.  
 
-Lorsque vous êtes prêt à distribuer votre extension aux utilisateurs, publiez-la dans le magasin des extensions Microsoft Edge.  L’ID d’extension de l’extension publiée peut différer de l’ID utilisé lors du chargement de votre extension.  Si l’ID a changé, mettez à jour dans le fichier manifeste hôte avec `allowed_origins` l’ID de votre extension publiée.  
+Lorsque vous êtes prêt à distribuer votre extension aux utilisateurs, publiez-la dans le magasin de modules extensions Microsoft Edge.  L’ID d’extension de l’extension publiée peut différer de l’ID utilisé lors du chargement de votre extension.  Si l’ID a changé, mettez à jour dans le fichier manifeste hôte avec `allowed_origins` l’ID de votre extension publiée.  
 
 ## Étape 3 : copier le fichier manifeste de l’hôte de messagerie native dans votre système  
 
@@ -223,7 +223,7 @@ Pour stocker le fichier manifeste, effectuer l’une des actions suivantes.
 * * *  
 
 > [!NOTE]
-> Veillez à fournir des autorisations de lecture sur le fichier manifeste et à exécuter les autorisations sur le runtime hôte.  
+> Veillez à fournir des autorisations de lecture sur le fichier manifeste et à exécuter les autorisations sur l’runtime hôte.  
 
 <!-- links -->  
 

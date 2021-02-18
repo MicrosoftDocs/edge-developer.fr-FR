@@ -1,34 +1,34 @@
 ---
-description: Stratégies de développeur du catalogue de modules de développement de Microsoft Edge.
-title: Stratégies de développeur du catalogue de modules de développement de microsoft Edge
+description: Microsoft Edge Add-ons store developer policies
+title: Microsoft Edge Add-ons store developer policies
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, développement d’extensions, extensions de navigateur, addons, centre de partenaires, développeur
-ms.openlocfilehash: 5c2a8dd816a28a35b6e7b725d5106814e401f6ec
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: cc34a95e08d01ebee54581222d0eb9fefa3dc458
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327644"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343079"
 ---
-# Stratégies de développeur du catalogue de modules de développement de microsoft Edge  
+# Microsoft Edge Add-ons store developer policies  
 
 ## Introduction et objectif de ce document  
 
-Merci de votre intérêt pour le développement d’extensions pour le catalogue d’extensions Microsoft Edge.  Les stratégies de développeur du catalogue de modules extensions Microsoft Edge \(Stratégies de développeur de catalogue d’extensions\) s’appliquent à vos extensions, y compris votre envoi d’extensions via l’Partner [Center][MicrosoftPartnerCenter] et la mise en service de ces extensions via les extensions Microsoft Edge.  
+Nous vous remercions de votre intérêt pour le développement d’extensions pour le magasin de modules extensions Microsoft Edge.  Les stratégies de développeur du magasin de modules microsoft Edge \(stratégies de développeur du magasin d’extensions\) s’appliquent à vos extensions, y compris votre soumission d’extensions via l’Partner [Center][MicrosoftPartnerCenter] et la mise en service de ces extensions via les extensions Microsoft Edge.  
 
 ## Principes  
 
 Quelques principes pour vous aider à démarrer :  
 
-*   Vous devez offrir une valeur unique et distincte dans vos extensions pour Microsoft Edge.  Fournissez une raison intéressante pour télécharger vos extensions à partir du catalogue d’extensions Microsoft Edge \(Microsoft Edge Add-ons\).  
+*   Vous devez offrir une valeur unique et distincte dans vos extensions pour Microsoft Edge.  Fournissez une bonne raison de télécharger vos extensions à partir du magasin de modules de microsoft Edge \(Modules de extension Microsoft Edge\).  
 *   Vous ne devez pas induire en erreur nos utilisateurs communs concernant les actions de votre extension, les personnes qui l’offrent, etc.  
 *   Vous ne devez pas essayer de insérer les utilisateurs, le système ou l’écosystème.  Il n’y a pas de place dans nos modules de modules microsoft Edge pour tout type de fraude ; que ce soit la manipulation des évaluations et des révisions, la fraude par carte de crédit ou toute autre activité frauduleuse.  
     
-Le respect des stratégies de développement du magasin de modules de développement Microsoft Edge doit vous aider à faire des choix qui améliorent l’appel et le public de votre extension.  
+L’application aux stratégies de développeur du magasin de modules de microsoft Edge doit vous aider à faire des choix qui améliorent l’appel et le public de votre extension.  
 
 Vos extensions sont essentielles à l’expérience de centaines de millions d’utilisateurs.  Nous avons le plaisir de découvrir ce que vous créez et sommes ravis de vous aider à fournir vos extensions au monde entier.  
 
@@ -44,7 +44,7 @@ Votre extension doit avoir un seul objectif avec une fonctionnalité étroite.
 
 #### 1.1.2 Décrire votre extension  
 
-Tous les aspects de votre extension doivent décrire avec précision les fonctions, fonctionnalités et limitations importantes de votre extension, y compris les périphériques d’entrée requis ou pris en charge.  La proposition de valeur de votre extension doit être claire lors de la première utilisation.  Votre extension peut ne pas utiliser un nom ou une icône semblable à celui d’autres extensions et ne doit pas revendiquer la représentation d’une société, d’un organisme public ou d’une autre entité si vous n’êtes pas autorisé à effectuer cette représentation.  
+Tous les aspects de votre extension doivent décrire avec précision les fonctions, fonctionnalités et limitations importantes de votre extension, y compris les périphériques d’entrée requis ou pris en charge.  La proposition de valeur de votre extension doit être claire lors de la première utilisation.  Votre extension peut ne pas utiliser un nom ou une icône similaire à celui d’autres extensions et ne doit pas revendiquer la représentation d’une société, d’un organisme public ou d’une autre entité si vous n’êtes pas autorisé à effectuer cette représentation.  
 
 #### 1.1.3 Fonctionnalité  
 
@@ -129,7 +129,7 @@ Votre extension peut collecter, consulter, utiliser ou transmettre des informati
 
 #### 1.5.2 Maintenir une politique de confidentialité  
 
-Que votre extension accède, collecte ou transmette des informations personnelles ; vous devez fournir une notification importante et vous conformer à votre politique de confidentialité si la loi l’exige.  Votre politique de confidentialité doit informer les utilisateurs des informations personnelles accessibles, collectées ou transmises par votre poste, de la façon dont ces informations sont utilisées, stockées et sécurisées, et d’indiquer les types de parties à qui elles sont divulguées.  Votre politique de confidentialité doit décrire les contrôles que les utilisateurs ont sur l’utilisation et le partage de leurs informations, la façon dont ils accèdent à leurs informations, et elle doit respecter les lois et réglementations applicables.  Votre politique de confidentialité doit être tenue à jour lorsque vous ajoutez de nouvelles fonctionnalités à votre extension.  
+Que votre extension accède, collecte ou transmette des informations personnelles ; vous devez fournir une notification importante de votre politique de confidentialité et la respecter si la loi l’exige.  Votre politique de confidentialité doit informer les utilisateurs des informations personnelles accessibles, collectées ou transmises par votre poste, de la façon dont ces informations sont utilisées, stockées et sécurisées, et d’indiquer les types de parties à qui elles sont divulguées.  Votre politique de confidentialité doit décrire les contrôles que les utilisateurs ont sur l’utilisation et le partage de leurs informations, la façon dont ils accèdent à leurs informations, et elle doit respecter les lois et réglementations applicables.  Votre politique de confidentialité doit être tenue à jour lorsque vous ajoutez de nouvelles fonctionnalités à votre extension.  
 
 Si vous fournissez à Microsoft votre politique de confidentialité, vous acceptez d’autoriser Microsoft à partager cette politique de confidentialité avec les utilisateurs de votre extension.  
 
@@ -189,7 +189,7 @@ Les conditions suivantes s’appliquent à votre utilisation d’une API d’ach
     
 #### 1.8.2 Divulgation des fonctionnalités payantes  
 
-Votre extension et les métadonnées associées doivent fournir des informations sur les types d’achats in-product proposés et la plage de prix.  Vous ne devez pas induire en erreur les utilisateurs et être clair sur la nature de vos offres et promotions dans le produit, y compris l’étendue et les conditions des expériences d’essai.  Si votre extension limite l’accès au contenu créé par l’utilisateur pendant ou après une version d’essai, vous devez en informer les utilisateurs à l’avance.  En outre, votre extension doit clairement faire savoir aux utilisateurs qu’ils lancent une option d’achat dans votre extension.  
+Votre extension et les métadonnées associées doivent fournir des informations sur les types d’achats in-product proposés et la plage de prix.  Vous ne devez pas induire en erreur les utilisateurs et être clair sur la nature de vos offres et promotions in-product, y compris l’étendue et les conditions des expériences d’essai.  Si votre extension limite l’accès au contenu créé par l’utilisateur pendant ou après une version d’essai, vous devez en informer les utilisateurs à l’avance.  En outre, votre extension doit clairement faire savoir aux utilisateurs qu’ils lancent une option d’achat dans votre extension.  
 
 ### 1.9 Notifications  
 
@@ -211,7 +211,7 @@ Vous ne devez pas inclure dans une notification des informations que les utilisa
 
 #### 1.9.4 Objectif des notifications  
 
-Les notifications envoyées à partir de votre extension doivent être liées à cette extension ou à d’autres extensions que vous publiez dans le catalogue d’extensions Microsoft Edge et ne doivent pas inclure de messages promotionnels de quelque type que ce soit qui n’est pas lié à vos extensions.  
+Les notifications envoyées à partir de votre extension doivent être liées à cette extension ou à d’autres extensions que vous publiez dans le magasin des extensions Microsoft Edge et ne doivent pas inclure de messages promotionnels d’un type quelconque qui n’est pas lié à vos extensions.  
 
 ### 1.10 Conduite et contenu publicitaire  
 
@@ -223,7 +223,7 @@ Le contenu principal de votre extension ne doit pas être une publicité, et la 
 
 #### 1.10.2 Stratégies et accords  
 
-Tout contenu publicitaire affiché par votre extension doit être conforme à la politique [d’acceptation créative de Microsoft.][MicrosoftAdvertisingCreativeAcceptancePolicies]  
+Tout contenu publicitaire affiché par votre extension doit respecter la politique [d’acceptation créative de Microsoft.][MicrosoftAdvertisingCreativeAcceptancePolicies]  
 Si votre extension affiche des publicités, tout le contenu [][MicrosoftAppDeveloperAgreement] affiché doit être conforme aux exigences publicitaires du Contrat du développeur d’applications et de la présente stratégie.  
 
 #### 1.10.3 Qualité de la publicité  
@@ -235,7 +235,7 @@ Si votre extension affiche des publicités, tout le contenu [][MicrosoftAppDevel
 
 Si vous achetez ou créez des campagnes publicitaires pour promouvoir vos extensions par le biais de la fonctionnalité de campagne publicitaire dans l’Espace [partenaires,][MicrosoftPartnerCenter]tous les supports publicitaires que vous fournissez à Microsoft, y compris les pages d’accueil associées, doivent être conformes à la stratégie de [spécifications créatives][MicrosoftAdvertisingCreativeSpecifications] de Microsoft et à la stratégie d’acceptation créative [de Microsoft.][MicrosoftAdvertisingCreativeAcceptancePolicies]  
 
-#### 1.10.5 Avertir les utilisateurs de la Opt-Out publicité Interest-Based publicité  
+#### 1.10.5 Avertir les utilisateurs de l'Opt-Out de Interest-Based publicité  
 
 Votre déclaration de confidentialité ou vos conditions d’utilisation doivent informer les utilisateurs que vous envisagez d’envoyer des informations personnelles au fournisseur de services publicitaires et indiquer aux utilisateurs comment ils peuvent refuser les publicités basées sur les intérêts.  
 
@@ -260,11 +260,11 @@ Tout le contenu de votre extension et les métadonnées associées doivent être
 
 #### 2.3.1 Conditions requises  
 
-Votre extension ne doit pas contenir de contenu qui facilite ou favorise les activités du monde réel suivantes : \(a\) violence extrême ou gratuite ; \(b\) violations des droits de l’homme ; \(c\) la création d’armes illégales ; ou \(d\) l’utilisation d’armes contre une personne, un animaux ou une propriété réelle ou personnelle.  
+Votre extension ne doit pas contenir de contenu facilitant ou facilitant les activités du monde réel suivantes : \(a\) violence extrême ou gratuite ; \(b\) violations des droits de l’homme ; \(c\) la création d’armes illégales ; ou \(d\) l’utilisation d’armes contre une personne, un animaux ou une propriété réelle ou personnelle.  
 
 #### 2.3.2 Responsabilité  
 
-Votre poste ne doit pas : \(a\) poser un risque de sécurité pour, ni entraîner une gêne, une gêne ou tout autre dommage pour les utilisateurs finaux ou toute autre personne ou enfant ; ou \(b\) posent un risque de dommages ou de dommages à des propriétés réelles ou personnelles.  Vous êtes le seul responsable des tests de sécurité des extensions, de l’acquisition de certificats et de l’implémentation de toutes les protections de fonctionnalités appropriées.  Vous ne devez pas désactiver les fonctionnalités de sécurité ou de confort de la plateforme et vous devez inclure tous les avertissements, notifications et clauses d’exclusion de responsabilité juridiquement requis et standard applicables dans votre extension.  
+Votre extension ne doit pas : \(a\) poser un risque de sécurité pour, ni entraîner une gêne, une gêne ou tout autre dommage pour les utilisateurs finaux ou toute autre personne ou enfant ; ou \(b\) posent un risque de dommages ou de dommages à des propriétés réelles ou personnelles.  Vous êtes le seul responsable des tests de sécurité des extensions, de l’acquisition de certificats et de l’implémentation de toutes les protections de fonctionnalités appropriées.  Vous ne devez pas désactiver les fonctionnalités de sécurité ou de confort des plateformes et inclure tous les avertissements, notifications et clauses d’exclusion de responsabilité juridiquement requis et standard applicables dans votre extension.  
 
 ### 2.4 Diffamante, caâmeuse, caeuse et répante  
 
@@ -286,7 +286,7 @@ Votre extension ne doit pas contenir ou afficher du contenu qu’une personne ra
 
 Votre extension doit respecter les conditions suivantes.  
 
-*   Votre extension ne doit pas contenir de contenu ni fournir de services qui facilitent les jeux en ligne.  Les jeux en ligne incluent, sans s’y limiter, des jeux en ligne, des jeux de société ou des jeux de compétences qui offrent des billets ou d’autres valeurs.  
+*   Votre extension ne doit pas contenir de contenu ni fournir de services qui facilitent les jeux en ligne.  Les jeux en ligne incluent, sans s’y limiter, des jeux en ligne, des jeux de jeux ou des jeux de compétences qui offrent des billets ou d’autres valeurs.  
 *   Votre extension ne doit pas fournir un accès non autorisé au contenu du site web, par exemple en contournant les paywalls ou les restrictions de connexion.  
 *   Votre extension ne doit pas fournir, encourager ou activer l’accès non autorisé, le téléchargement ou la diffusion en continu de contenu ou de contenu multimédia protégés par des droits d’auteur.  
 *   Votre extension ne doit pas être minée par cryptomonnaie.  

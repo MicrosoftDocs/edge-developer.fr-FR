@@ -1,22 +1,22 @@
 ---
-description: Découvrez comment vous inscrire à un compte de développeur pour publier des extensions dans le magasin des extensions Microsoft Edge.
+description: Découvrez comment vous inscrire à un compte de développeur pour publier des extensions dans le magasin de modules extensions Microsoft Edge
 title: S’inscrire en tant que développeur d’extensions Microsoft Edge pour publier des extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/05/2021
+ms.date: 02/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, développement d’extensions, extensions de navigateur, extensions, extensions, centre de partenaires, développeur
-ms.openlocfilehash: 8277390bb78e6692345e9c30ef26f60528655374
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 0c3b4d70da214a171b7a6ebb308e89bad2ab16c2
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327518"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343058"
 ---
 # S’inscrire en tant que développeur d’extensions Microsoft Edge  
 
-Pour soumettre votre extension au catalogue d’extensions Microsoft Edge, vous devez être inscrit en tant que développeur au programme Microsoft Edge.  Le programme Microsoft Edge se trouve dans [l’Partner Center][MicrosoftPartnerCenter].  
+Pour soumettre votre extension au magasin de modules de développement Microsoft Edge, vous devez être inscrit en tant que développeur au programme Microsoft Edge.  Le programme Microsoft Edge se trouve dans [l’Partner Center][MicrosoftPartnerCenter].  
 
 > [!IMPORTANT]
 > Aucun frais d’inscription n’est associé à l’envoi d’extensions au programme Microsoft Edge.  
@@ -26,7 +26,7 @@ Pour soumettre votre extension au catalogue d’extensions Microsoft Edge, vous 
 Si vous n’avez pas de compte ou si vous avez un compte commercial existant auprès de l’Espace partenaires, créez un compte [Microsoft (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] pour vous inscrire au programme Microsoft Edge.  Pour créer un compte Microsoft \(Outlook/live/Hotmail\), effectuer les actions suivantes.  
 
 1.  Accédez [à account.microsoft.com][MicrosoftAccount].  
-1.  Choose **Create a Microsoft account**.  
+1.  Choisissez **Créer un compte Microsoft.**  
     
 Si vous avez un compte de développeur enregistré dans l’Partner center, utilisez le compte Microsoft correspondant \(MSA\) pour vous inscrire à votre compte de développeur, puis inscrivez-vous au programme Microsoft Edge.  
 
@@ -57,7 +57,7 @@ Si vous avez un compte de développeur enregistré dans l’Partner center, util
           **Type de compte**  
        :::column-end:::
        :::column span="2":::
-          Le programme Microsoft Edge de [l’Partner Center][MicrosoftPartnerCenter] offre des comptes individuels et d’entreprise.  Les comptes sont décrits en détail dans les puces suivantes.  Les deux types de compte vous permettent de publier des extensions dans le catalogue de modules extensions Microsoft Edge.  
+          Le programme Microsoft Edge de [l’Partner Center][MicrosoftPartnerCenter] offre des comptes individuels et d’entreprise.  Les comptes sont décrits en détail dans les puces suivantes.  Les deux types de compte vous permettent de publier des extensions dans le magasin de modules extensions Microsoft Edge.  
           
           > [!IMPORTANT]
           > Après l’inscription, vous ne pouvez pas modifier la valeur de ce champ.  
@@ -75,7 +75,7 @@ Si vous avez un compte de développeur enregistré dans l’Partner center, util
           **Nom complet de l’éditeur**  
        :::column-end:::
        :::column span="2":::
-          Ce champ contient le nom qui s’affiche dans le catalogue de modules add-ons Microsoft Edge.  Vous ne pouvez utiliser un nom que s’il est disponible et vous disposez des droits pour l’utiliser.  Les comptes d’entreprise doivent utiliser le nom d’entreprise enregistré de votre organisation.  
+          Ce champ contient le nom qui s’affiche dans le magasin de modules add-ons Microsoft Edge.  Vous ne pouvez utiliser un nom que s’il est disponible et vous disposez des droits pour l’utiliser.  Les comptes d’entreprise doivent utiliser le nom d’entreprise enregistré de votre organisation.  
           
           > [!NOTE]
           > La longueur maximale de ce champ est de 50 caractères.  

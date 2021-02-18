@@ -1,18 +1,18 @@
 ---
-description: Processus de portage de l’extension Chrome vers Microsoft Edge.
+description: Processus de portage de l’extension Chrome vers Microsoft Edge
 title: Extension Port Chrome vers Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, développement d’extensions, extensions de navigateur, addons, centre de partenaires, développeur
-ms.openlocfilehash: 64a92927b9fe7658562f87f326bb9ac148991031
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: 6be7d788ac22232475e278ae9a5b04de9b6e17f7
+ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327693"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "11343135"
 ---
 # Portage de votre extension  
 

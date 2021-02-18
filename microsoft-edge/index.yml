@@ -1,21 +1,21 @@
 ### YamlMime:Hub
 title: Documentation MicrosoftEdge
-summary: Explorez la documentation de Microsoft Edge.  Apprenez à utiliser Microsoft Edge en parcourant la documentation, les didacticiels et les exemples pour les développeurs, les administrateurs et les utilisateurs.
+summary: Explorez la documentation de Microsoft Edge.  Apprenez à utiliser Microsoft Edge en parcourant de la documentation, des didacticiels et des exemples pour les développeurs, les administrateurs et les utilisateurs.
 brand: m365
 metadata:
   title: Documentation MicrosoftEdge
-  description: Informations Microsoft Edge pour les développeurs, les administrateurs informatiques et les utilisateurs du navigateur ; notamment DevTools, Extensions, PWAs, WebDriver, etc.
+  description: Informations Microsoft Edge pour les développeurs, les administrateurs informatiques et les utilisateurs du navigateur ; y compris DevTools, Extensions, PWAs, WebDriver, etc.
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 02/04/2021
+  ms.date: 02/17/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 150dcdf1a5d4f5ac06a4d0b105f89a05907d7ddb
-  ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+  ms.openlocfilehash: 873c85a7c8ac7c3c561bc1bee11348562173093d
+  ms.sourcegitcommit: 916b4daa26c2c78611f7d837bd6ecf009f0082df
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 02/13/2021
-  ms.locfileid: "11327629"
+  ms.lasthandoff: 02/17/2021
+  ms.locfileid: "11343072"
 highlightedContent:
   items:
   - title: Microsoft Edge (canal stable officiel)
@@ -162,7 +162,7 @@ additionalContent:
       links:
       - text: Stratégie de sécurité du contenu
         url: /microsoft-edge/extensions-chromium/store-policies/csp
-      - text: Stratégies de développeur du catalogue de modules de développement de microsoft Edge
+      - text: Microsoft Edge Add-ons store developer policies
         url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
     - title: Applications web progressives
       links:
@@ -193,9 +193,9 @@ additionalContent:
   - title: Aide et support
     items:
     - summary: Obtenir des conseils et des réponses d’experts de la communauté sur les questions&A
-      title: Support de la communauté sur microsoft Q&A
+      title: Support de la communauté sur les questions&Microsoft
       url: /answers/topics/ms-edge.html
-    - summary: Microsoft s’engage à s’assurer que vos applications fonctionnent sur Microsoft Edge.  Si vous rencontrez des problèmes avec vos applications professionnelles ou sites web sur la dernière version de Edge, Microsoft vous aide à résoudre vos applications et sites web sans frais supplémentaires.  Voir les détails de l’offre pour les conditions d’éligibilité.
+    - summary: Microsoft s’engage à s’assurer que vos applications fonctionnent sur Microsoft Edge.  Si vous rencontrez des problèmes avec vos applications professionnelles ou sites web sur la dernière version de Edge, Microsoft vous aide à résoudre vos applications et sites web sans frais supplémentaires.  Consultez les détails de l’offre pour les conditions d’éligibilité.
       title: Obtenir de l’aide gratuite à l’aide d’App Assure
       url: https://fasttrack.microsoft.com/portal
     - summary: Si votre entreprise a besoin d’un support technique immédiat pour Microsoft Edge, le support 1:1 de Microsoft est disponible à l’aide de différents plans pour vous aider à obtenir votre niveau de support requis.
