@@ -1,97 +1,97 @@
 ---
-description: En savoir plus sur les améliorations apportées aux travailleurs de services et leur utilisation.
-title: Améliorations apportées aux travailleurs de services
+description: Tout sur les améliorations apportées aux services de travail et sur l’utilisation de chacune d’elles.
+title: Améliorations apportées aux services de travail
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/10/2020
+ms.date: 02/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools, travailleur de service, PWA
-ms.openlocfilehash: 4e1b43235ccd7b108d2aadd1c803aa3276fa1265
-ms.sourcegitcommit: 080759f68a0a158f10dc20d20c14e222ace1be84
+keywords: microsoft Edge, développement web, outils f12, devtools, service worker, PWA
+ms.openlocfilehash: 2f32155d1d28d1e65ad29abfe58a414f3e3c6ed7
+ms.sourcegitcommit: 661e8def3f27cea381c59ac38954789e736c18f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "11190029"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387281"
 ---
-# Améliorations apportées aux travailleurs de services  
+# <a name="service-worker-improvements"></a>Améliorations apportées aux services de travail  
 
-Cet article vous présente les améliorations apportées aux [travailleurs de services][MdnServiceWorkerApi] et aux requêtes réseau qui passent par eux.  Les **améliorations apportées aux travailleurs de services** se trouvent dans les outils **réseau**, **application**et **sources** .  Les améliorations incluent les tâches suivantes.  
+Cet article vous explique les améliorations apportées aux outils de développement pour travailler avec les travailleurs du [service][MdnServiceWorkerApi] et les demandes réseau qui passent par chacun d’eux.  Les améliorations **apportées aux services de travail se** font dans les outils **Réseau,** **Application**et **Sources.**  Les améliorations simplifient les tâches suivantes.  
 
-*   Déboguer selon les chronologies des travailleurs de service.  
-    *   Le début d’une demande et la durée de l’amorce.  
-    *   Mise à jour vers l’enregistrement du travailleur de service.  
-    *   Exécution d’une requête à l’aide du gestionnaire d' [événements FETCH][MdnFetchEvent] .  
-    *   Exécution de tous les événements de récupération pour le chargement d’un client.  
-*   Explorez les détails d’exécution des gestionnaires d’événements de récupération, d’installation de gestionnaires d’événements et de gestionnaires d’événements d’activation.  
-*   Pas à pas dans le gestionnaire d’événements Fetch et déconnectez-vous avec les [informations de script de page](#sources).  
+*   Déboguer en fonction des chronologies du service de travail.  
+    *   Le début d’une demande et la durée du démarrage.  
+    *   Mise à jour de l’inscription du service de travail.  
+    *   Runtime d’une demande à l’aide du [handler d’événements fetch.][MdnFetchEvent]  
+    *   Runtime de tous les événements de récupération pour le chargement d’un client.  
+*   Explorez les détails d’utilisation des handlers d’événements d’extraction, installez les handlers d’événements et activez les handlers d’événements.  
+*   Entrez et sortez du handler d’événements de récupération avec les [informations de script de page.](#sources)  
+    
+Les expériences s’étendent sur trois outils de développement différents.  
 
-Ces expériences s’étendent à trois outils de développement différents.  
+1.  Outil [Réseau.](#network)  Choisissez une demande réseau qui s’exécute par le biais d’un service de travail et qui accède à la chronologie correspondante du travail de service dans **l’outil de minutage.**  
+1.  Outil [Application.](#application)  Pour déboguer les travailleurs du service, accédez à l’outil **Travailleurs de** service.  
+1.  Outil [Sources.](#sources)  Accéder aux informations de script de page lors de la pas à pas dans les handlers d’événements de récupération.  
+    
+## <a name="network"></a>Network  
 
-1.  Outil [réseau](#network) .  Choisissez une requête réseau qui s’exécute par le biais d’un travailleur de service et accédez à la chronologie correspondante du travailleur de service dans l’outil **minutage** .  
-1.  Outil de l' [application](#application) .  Pour déboguer les travailleurs de service, accédez à l’outil **travailleurs de service** .  
-1.  Outil [sources](#sources) .  Accédez à des informations de script de page lorsque vous accédez à des gestionnaires d’événements Fetch.  
-
-## Network  
-
-:::image type="complex" source="../media/sw-network-timeline.msft.png" alt-text="Chronologie du travailleur de service dans l’outil réseau" lightbox="../media/sw-network-timeline.msft.png":::
-   Vue réseau  
+:::image type="complex" source="../media/sw-network-timeline.msft.png" alt-text="Chronologie du travail de service dans l’outil Réseau" lightbox="../media/sw-network-timeline.msft.png":::
+   Affichage réseau  
 :::image-end:::  
 
-Pour accéder aux fonctionnalités de débogage du travailleur de service dans l’outil **réseau** , effectuez l’une des actions suivantes.  
+Pour accéder aux fonctionnalités de débogage du service de travail dans l’outil **Réseau,** effectuer l’une des actions suivantes.  
 
-*   Accédez directement à l’outil **réseau** .  
-*   Démarré dans l’outil de l' **application** .  
+*   Accédez directement à **l’outil** Réseau.  
+*   Démarré dans **l’outil Application.**  
     
-### Demander le routage  
+### <a name="request-routing"></a>Routage des demandes  
 
-Pour faciliter l’affichage du routage de requête, les chronologies affichent désormais le démarrage du travailleur de service et les `respondWith` événements de récupération.  Pour déboguer et visualiser une requête réseau transmise par le biais d’un travailleur de service, procédez comme suit.  
+Pour faciliter la visualisation du routage des demandes, les chronologies affichent désormais la start-up du service de travail et les événements `respondWith` de récupération.  Pour déboguer et visualiser une demande réseau transmise via un service de travail, effectuer les actions suivantes.  
 
-1.  Cliquez sur la demande de réseau qui a été passée par un travailleur de service.  
-1.  Ouvrez l’outil **minutage** .  
+1.  Choisissez la demande réseau qui a été passée par un service de travail.  
+1.  Ouvrez **l’outil** De minutage.  
     
-### Extraire des événements  
+### <a name="fetch-events"></a>Récupérer des événements  
 
-Pour en savoir plus sur les `respondWith` événements FETCH, cliquez sur la flèche déroulante située à gauche de la zone `respondWith` .  Pour en savoir plus sur la demande et la **réponse** **d’origine** reçues, utilisez les flèches déroulantes correspondantes.  
+Pour en savoir plus sur les événements de récupération, choisissez la flèche de la flèche de la flèche vers la `respondWith` gauche de `respondWith` la .  Pour plus d’informations **** sur la demande d’origine et la réponse **reçue,** utilisez les flèches de liste rouge correspondantes.  
 
-## Application  
+## <a name="application"></a>Application  
 
-:::image type="complex" source="../media/sw-application-timeline.msft.png" alt-text="Affichage des applications" lightbox="../media/sw-application-timeline.msft.png":::
-   Affichage des applications  
+:::image type="complex" source="../media/sw-application-timeline.msft.png" alt-text="Affichage de l’application" lightbox="../media/sw-application-timeline.msft.png":::
+   Affichage de l’application  
 :::image-end:::  
 
-### Chronologie des mises à jour de service Worker  
+### <a name="service-worker-update-timeline"></a>Chronologie de mise à jour du service de travail  
 
-L’équipe Microsoft Edge DevTools a ajouté une chronologie dans l’outil de l' **application** pour refléter le cycle de vie des mises à jour du travailleur de service.  Il affiche les événements d’installation et d’activation.  Chacun des événements dispose d’une flèche déroulante correspondante pour vous fournir des informations supplémentaires.  
+L’équipe Microsoft Edge DevTools a ajouté une chronologie dans l’outil **Application** pour refléter le cycle de vie de mise à jour du service de travail.  Il affiche les événements d’installation et d’activation.  Chacun des événements possède une flèche de liste verte correspondante pour vous donner plus de détails.  
 
-### Demander le routage et récupérer des événements  
+### <a name="request-routing-and-fetch-events"></a>Demander des événements de routage et de récupération  
 
-Vous pouvez maintenant accéder aux chronologies du travailleur de service via l’outil **réseau** du tiroir de la console.  La fonctionnalité présente les performances, réduit la réplication de l’interface utilisateur et crée une connaissance plus complète en matière de débogage.  
+Vous pouvez maintenant accéder aux chronologies de travail de service via **l’outil Réseau** dans le caisse de la console.  La fonctionnalité bénéficie de performances, réduit la duplication de l’interface utilisateur et crée une expérience de débogage plus complète.  
 
-1.  Ouvrez le travailleur de service en cours de débogage.  
-1.  Cliquez sur le bouton **réseau** pour ouvrir l' [interface de demande de routage](#network).  
-1.  Utilisez les listes déroulantes **respondWith** pour récupérer des informations de demande et de réponse à l’événement.  
+1.  Ouvrez le service de travail que vous déboguer.  
+1.  Choisissez le **bouton Réseau** pour ouvrir l’expérience [de routage des demandes.](#network)  
+1.  Utilisez les dropdowns **respondWith** pour récupérer les informations de demande d’événement et de réponse.  
 
-L’outil **réseau** affiche les requêtes réseau ayant suivi le travailleur de service en cours de débogage.  Le filtre automatique permet de limiter votre exploration.
+**L’outil** Réseau affiche les demandes réseau qui ont été passées par le service de travail que vous déboguer.  Le filtre automatique est un moyen de restreindre votre exploration.
 
-## Sources  
+## <a name="sources"></a>Sources  
 
 :::image type="complex" source="../media/sw-sources.msft.png" alt-text="Affichage DOM" lightbox="../media/sw-sources.msft.png":::
    Affichage DOM  
 :::image-end:::  
 
-Pour trouver d’autres informations sur la pile, définissez un point d’arrêt dans le gestionnaire de récupération.  Les détails conduisent à l’endroit où la ressource est demandée dans le script de la page.  Lorsque le débogueur s’arrête dans un gestionnaire de récupération, des informations sur la pile combinée apparaissent dans le panneau de droite.  Après cela, vous pouvez vous déplacer dans les frames de pile.  
+Pour trouver plus d’informations sur la pile, définissez un point d’coupure dans le handler d’extraction.  Les détails mènent à l’endroit où la ressource est demandée dans le script de page.  Lorsque le débogger s’interrompt à l’intérieur d’un handler d’extraction, une pile combinée d’informations s’affiche dans le panneau à droite.  Après cela, vous pouvez vous déplacer dans les cadres de pile.  
 
-### Future Work  
+### <a name="future-work"></a>Travail à venir  
 
-L’équipe Microsoft Edge DevTools envisage d’améliorer davantage les détails de la mise en cache et étudie d’autres façons d’améliorer l’interface de débogage du travailleur de services pour les développeurs d' [applications Web progressives][MdnProgressiveWebApps] .  
+L’équipe Microsoft Edge DevTools prévoit de développer davantage les détails du cache et étudie d’autres façons d’améliorer l’expérience de débogage du service de travail pour les développeurs [d’applications Web][MdnProgressiveWebApps] progressives.  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [MdnFetchEvent]: https://developer.mozilla.org/docs/Web/API/FetchEvent "FetchEvent | MDN"  
-[MdnProgressiveWebApps]: https://developer.mozilla.org/docs/Web/Progressive_web_apps "Applications Web progressives (PWAs) | MDN"  
-[MdnServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "API du travailleur de service | MDN"  
+[MdnProgressiveWebApps]: https://developer.mozilla.org/docs/Web/Progressive_web_apps "Applications web progressives (P PWA) | MDN"  
+[MdnServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "Service Worker API | MDN"  
