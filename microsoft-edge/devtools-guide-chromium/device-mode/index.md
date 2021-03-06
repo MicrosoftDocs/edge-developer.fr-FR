@@ -1,18 +1,18 @@
 ---
-description: Utilisez des périphériques virtuels dans Microsoft Edge pour créer des sites Web de premier prénom.
+description: Utilisez des périphériques virtuels dans Microsoft Edge pour créer des sites web d’abord mobiles.
 title: Émuler des appareils mobiles dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools, émulation, appareil, simulation, mobile
-ms.openlocfilehash: 8b636a20fcb1c55630009031ec8bf300624d03d7
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+keywords: microsoft Edge, développement web, outils f12, devtools, émulation, appareil, simulation, mobile
+ms.openlocfilehash: 1a83dece95acba386385bfea035a9e2c91639240
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125103"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398783"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,314 +28,314 @@ ms.locfileid: "11125103"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <span data-ttu-id="88132-104">Émuler des appareils mobiles dans Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="88132-104">Emulate mobile devices in Microsoft Edge DevTools</span></span>  
+# <a name="emulate-mobile-devices-in-microsoft-edge-devtools"></a><span data-ttu-id="fd1fd-104">Émuler des appareils mobiles dans Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="fd1fd-104">Emulate mobile devices in Microsoft Edge DevTools</span></span>  
 
-<span data-ttu-id="88132-105">Utilisez l' **émulation d’appareil** pour rapprocher l’apparence de votre page et la réponse sur un appareil mobile.</span><span class="sxs-lookup"><span data-stu-id="88132-105">Use **Device emulation** to approximate how your page looks and responds on a mobile device.</span></span>  <span data-ttu-id="88132-106">Le Microsoft Edge DevTools fournit un ensemble de fonctionnalités pour vous aider à émuler les appareils mobiles.</span><span class="sxs-lookup"><span data-stu-id="88132-106">The Microsoft Edge DevTools provide a collection of features to help you emulate mobile devices.</span></span>  <span data-ttu-id="88132-107">La collection inclut les fonctionnalités suivantes.</span><span class="sxs-lookup"><span data-stu-id="88132-107">The collection includes the following features.</span></span>  
+<span data-ttu-id="fd1fd-105">Utilisez **l’émulation de l’appareil** pour approximativement l’apparence et la réponse de votre page sur un appareil mobile.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-105">Use **Device emulation** to approximate how your page looks and responds on a mobile device.</span></span>  <span data-ttu-id="fd1fd-106">Microsoft Edge DevTools fournit un ensemble de fonctionnalités pour vous aider à émuler des appareils mobiles.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-106">The Microsoft Edge DevTools provide a collection of features to help you emulate mobile devices.</span></span>  <span data-ttu-id="fd1fd-107">La collection inclut les fonctionnalités suivantes.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-107">The collection includes the following features.</span></span>  
 
-*   [<span data-ttu-id="88132-108">Simuler une fenêtre d’affichage mobile</span><span class="sxs-lookup"><span data-stu-id="88132-108">Simulate a mobile viewport</span></span>](#simulate-a-mobile-viewport)  
-*   [<span data-ttu-id="88132-109">Limiter le réseau</span><span class="sxs-lookup"><span data-stu-id="88132-109">Throttle the network</span></span>](#throttle-the-network-only)  
-*   [<span data-ttu-id="88132-110">Limiter le processeur</span><span class="sxs-lookup"><span data-stu-id="88132-110">Throttle the CPU</span></span>](#throttle-the-cpu-only)  
-*   [<span data-ttu-id="88132-111">Simuler géolocalisation</span><span class="sxs-lookup"><span data-stu-id="88132-111">Simulate geolocation</span></span>](#override-geolocation)  
-*   [<span data-ttu-id="88132-112">Définir l’orientation</span><span class="sxs-lookup"><span data-stu-id="88132-112">Set orientation</span></span>](#set-orientation)  
-*   [<span data-ttu-id="88132-113">Définir la chaîne de l’agent utilisateur</span><span class="sxs-lookup"><span data-stu-id="88132-113">Set the user agent string</span></span>](#set-user-agent-string)  
+*   [<span data-ttu-id="fd1fd-108">Simuler une vue mobile</span><span class="sxs-lookup"><span data-stu-id="fd1fd-108">Simulate a mobile viewport</span></span>](#simulate-a-mobile-viewport)  
+*   [<span data-ttu-id="fd1fd-109">Limiter le réseau</span><span class="sxs-lookup"><span data-stu-id="fd1fd-109">Throttle the network</span></span>](#throttle-the-network-only)  
+*   [<span data-ttu-id="fd1fd-110">Limiter l’UC</span><span class="sxs-lookup"><span data-stu-id="fd1fd-110">Throttle the CPU</span></span>](#throttle-the-cpu-only)  
+*   [<span data-ttu-id="fd1fd-111">Simuler la géolocalisation</span><span class="sxs-lookup"><span data-stu-id="fd1fd-111">Simulate geolocation</span></span>](#override-geolocation)  
+*   [<span data-ttu-id="fd1fd-112">Définir l’orientation</span><span class="sxs-lookup"><span data-stu-id="fd1fd-112">Set orientation</span></span>](#set-orientation)  
+*   [<span data-ttu-id="fd1fd-113">Définir la chaîne de l’agent utilisateur</span><span class="sxs-lookup"><span data-stu-id="fd1fd-113">Set the user agent string</span></span>](#set-user-agent-string)  
 
-## <span data-ttu-id="88132-114">Limitations</span><span class="sxs-lookup"><span data-stu-id="88132-114">Limitations</span></span>  
+## <a name="limitations"></a><span data-ttu-id="fd1fd-114">Limitations</span><span class="sxs-lookup"><span data-stu-id="fd1fd-114">Limitations</span></span>  
 
-<span data-ttu-id="88132-115">L' **émulation d’appareil** est une [approximation première commande][WikiApproximation] de l’apparence de votre page sur un appareil mobile.</span><span class="sxs-lookup"><span data-stu-id="88132-115">**Device emulation** is a [first-order approximation][WikiApproximation] of the look and feel of your page on a mobile device.</span></span>  <span data-ttu-id="88132-116">L' **émulation d’appareil** n’exécute pas réellement votre code sur un appareil mobile.</span><span class="sxs-lookup"><span data-stu-id="88132-116">**Device emulation** does not actually run your code on a mobile device.</span></span>  <span data-ttu-id="88132-117">À la place, vous simulez l’expérience utilisateur mobile sur votre ordinateur portable ou votre ordinateur de bureau.</span><span class="sxs-lookup"><span data-stu-id="88132-117">Instead you simulate the mobile user experience from your laptop or desktop.</span></span>  
+<span data-ttu-id="fd1fd-115">**L’émulation de** l’appareil est une [estimation][WikiApproximation] de premier ordre de l’apparence de votre page sur un appareil mobile.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-115">**Device emulation** is a [first-order approximation][WikiApproximation] of the look and feel of your page on a mobile device.</span></span>  <span data-ttu-id="fd1fd-116">**L’émulation d’appareil** n’exécute pas réellement votre code sur un appareil mobile.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-116">**Device emulation** does not actually run your code on a mobile device.</span></span>  <span data-ttu-id="fd1fd-117">Au lieu de cela, vous simulez l’expérience utilisateur mobile à partir de votre ordinateur portable ou de bureau.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-117">Instead you simulate the mobile user experience from your laptop or desktop.</span></span>  
 
-<span data-ttu-id="88132-118">Certains aspects des appareils mobiles ne sont jamais émulés dans DevTools.</span><span class="sxs-lookup"><span data-stu-id="88132-118">Some aspects of mobile devices are never emulated in DevTools.</span></span>  <span data-ttu-id="88132-119">Par exemple, l’architecture des UC mobiles est différente de l’architecture de l’ordinateur portable ou de l’UC de bureau.</span><span class="sxs-lookup"><span data-stu-id="88132-119">For example, the architecture of mobile CPUs is different than the architecture of laptop or desktop CPUs.</span></span>  <span data-ttu-id="88132-120">En cas de doute, il est préférable d’exécuter votre page sur un appareil mobile.</span><span class="sxs-lookup"><span data-stu-id="88132-120">When in doubt, your best bet is to actually run your page on a mobile device.</span></span>  <span data-ttu-id="88132-121">Utilisez [débogage à distance] [DevToolsRemoteDebugging] pour interagir avec le code d’une page à partir de votre ordinateur, tandis que votre page s’exécute réellement sur un appareil mobile.</span><span class="sxs-lookup"><span data-stu-id="88132-121">Use [Remote Debugging][DevToolsRemoteDebugging] to interact with the code of a page from your machine while your page actually runs on a mobile device.</span></span>  <span data-ttu-id="88132-122">Vous pouvez afficher, modifier, déboguer, profiler ou les quatre lorsque vous interagissez avec le code.</span><span class="sxs-lookup"><span data-stu-id="88132-122">You may view, change, debug, profile, or all four while you interact with the code.</span></span>  <span data-ttu-id="88132-123">Votre ordinateur est-il possible d’un bloc-notes ou d’un ordinateur de bureau.</span><span class="sxs-lookup"><span data-stu-id="88132-123">Your machine may be a notebook or desktop computer.</span></span>  
+<span data-ttu-id="fd1fd-118">Certains aspects des appareils mobiles ne sont jamais émulés dans DevTools.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-118">Some aspects of mobile devices are never emulated in DevTools.</span></span>  <span data-ttu-id="fd1fd-119">Par exemple, l’architecture des processeurs mobiles est différente de celle des processeurs d’ordinateur portable ou de bureau.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-119">For example, the architecture of mobile CPUs is different than the architecture of laptop or desktop CPUs.</span></span>  <span data-ttu-id="fd1fd-120">En cas de doute, votre meilleur objectif est d’exécuter réellement votre page sur un appareil mobile.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-120">When in doubt, your best bet is to actually run your page on a mobile device.</span></span>  <span data-ttu-id="fd1fd-121">Utilisez [Débogage à distance][DevToolsRemoteDebugging] pour interagir avec le code d’une page à partir de votre ordinateur pendant que votre page s’exécute réellement sur un appareil mobile.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-121">Use [Remote Debugging][DevToolsRemoteDebugging] to interact with the code of a page from your machine while your page actually runs on a mobile device.</span></span>  <span data-ttu-id="fd1fd-122">Vous pouvez afficher, modifier, déboguer, profiler ou les quatre pendant que vous interagissez avec le code.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-122">You may view, change, debug, profile, or all four while you interact with the code.</span></span>  <span data-ttu-id="fd1fd-123">Votre ordinateur peut être un ordinateur de bureau ou un bloc-notes.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-123">Your machine may be a notebook or desktop computer.</span></span>  
 
-## <span data-ttu-id="88132-124">Simuler une fenêtre d’affichage mobile</span><span class="sxs-lookup"><span data-stu-id="88132-124">Simulate a mobile viewport</span></span>  
+## <a name="simulate-a-mobile-viewport"></a><span data-ttu-id="fd1fd-124">Simuler une vue mobile</span><span class="sxs-lookup"><span data-stu-id="fd1fd-124">Simulate a mobile viewport</span></span>  
 
-<span data-ttu-id="88132-125">Sélectionnez **basculer l’émulation d’appareil**  \ ( ![ activez la barre d’outils de l’appareil ][ImageDeviceToolbarIcon] \) ou sélectionnez **personnaliser et contrôler devtools** \ ( `...` \) > l' **émulation d’appareil** pour ouvrir l’interface utilisateur qui vous permet de simuler une fenêtre d’affichage mobile.</span><span class="sxs-lookup"><span data-stu-id="88132-125">Choose **Toggle device emulation**  \(![Toggle Device Toolbar][ImageDeviceToolbarIcon]\) or choose **Customize and control DevTools** \(`...`\) > **Device emulation** to open the UI that enables you to simulate a mobile viewport.</span></span>  
+<span data-ttu-id="fd1fd-125">Choose **Toggle device emulation**  \( ![ Toggle Device Toolbar ][ImageDeviceToolbarIcon] \) or choose **Customize and control DevTools** \( `...` \) > Device **emulation** to open the UI that enables you to simulate a mobile viewport.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-125">Choose **Toggle device emulation**  \(![Toggle Device Toolbar][ImageDeviceToolbarIcon]\) or choose **Customize and control DevTools** \(`...`\) > **Device emulation** to open the UI that enables you to simulate a mobile viewport.</span></span>  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
-    <span data-ttu-id="88132-127">Barre d’outils de l’appareil</span><span class="sxs-lookup"><span data-stu-id="88132-127">The Device Toolbar</span></span>  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Barre d’outils Appareil" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+    <span data-ttu-id="fd1fd-127">Barre d’outils Appareil</span><span class="sxs-lookup"><span data-stu-id="fd1fd-127">The Device Toolbar</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="88132-128">Par défaut, la barre d’outils de l’appareil s’ouvre en mode de fenêtre d’affichage réactif.</span><span class="sxs-lookup"><span data-stu-id="88132-128">By default the Device Toolbar opens in Responsive Viewport Mode.</span></span>  
+<span data-ttu-id="fd1fd-128">Par défaut, la barre d’outils de l’appareil s’ouvre en mode Deport réactif.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-128">By default the Device Toolbar opens in Responsive Viewport Mode.</span></span>  
 
-### <span data-ttu-id="88132-129">Mode de fenêtre d’affichage réactif</span><span class="sxs-lookup"><span data-stu-id="88132-129">Responsive Viewport Mode</span></span>  
+### <a name="responsive-viewport-mode"></a><span data-ttu-id="fd1fd-129">Mode d’affichage réactif</span><span class="sxs-lookup"><span data-stu-id="fd1fd-129">Responsive Viewport Mode</span></span>  
 
-<span data-ttu-id="88132-130">Pour tester rapidement l’aspect de votre page sur plusieurs tailles d’écran, faites glisser les poignées pour redimensionner la fenêtre d’affichage selon vos besoins.</span><span class="sxs-lookup"><span data-stu-id="88132-130">To quickly test the look and feel of your page across multiple screen sizes, drag the handles to resize the viewport to your required dimensions.</span></span>  <span data-ttu-id="88132-131">Vous pouvez également entrer des valeurs spécifiques dans les zones largeur et hauteur.</span><span class="sxs-lookup"><span data-stu-id="88132-131">You may also enter specific values in the width and height boxes.</span></span>  <span data-ttu-id="88132-132">Dans l’illustration suivante, la largeur est définie sur `626` et la hauteur est définie sur `516` .</span><span class="sxs-lookup"><span data-stu-id="88132-132">In the following figure, the width is set to `626` and the height is set to `516`.</span></span>  
+<span data-ttu-id="fd1fd-130">Pour tester rapidement l’apparence de votre page sur plusieurs tailles d’écran, faites glisser les poignées pour resizer laport d’affichage à vos dimensions requises.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-130">To quickly test the look and feel of your page across multiple screen sizes, drag the handles to resize the viewport to your required dimensions.</span></span>  <span data-ttu-id="fd1fd-131">Vous pouvez également entrer des valeurs spécifiques dans les zones de largeur et de hauteur.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-131">You may also enter specific values in the width and height boxes.</span></span>  <span data-ttu-id="fd1fd-132">Dans la figure suivante, la largeur est définie sur `626` et la hauteur sur `516` .</span><span class="sxs-lookup"><span data-stu-id="fd1fd-132">In the following figure, the width is set to `626` and the height is set to `516`.</span></span>  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
-    <span data-ttu-id="88132-134">Poignées permettant de modifier les dimensions de la fenêtre d’affichage en mode de fenêtre d’affichage réactif</span><span class="sxs-lookup"><span data-stu-id="88132-134">The handles for changing the dimensions of the viewport when in Responsive Viewport Mode</span></span>  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="Poignées de modification des dimensions de laport d’affichage en mode d’affichage réactif" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
+    <span data-ttu-id="fd1fd-134">Poignées de modification des dimensions de laport d’affichage en mode d’affichage réactif</span><span class="sxs-lookup"><span data-stu-id="fd1fd-134">The handles for changing the dimensions of the viewport when in Responsive Viewport Mode</span></span>  
 :::image-end:::  
 
-#### <span data-ttu-id="88132-135">Afficher les requêtes multimédias</span><span class="sxs-lookup"><span data-stu-id="88132-135">Show media queries</span></span>  
+#### <a name="show-media-queries"></a><span data-ttu-id="fd1fd-135">Afficher les requêtes multimédias</span><span class="sxs-lookup"><span data-stu-id="fd1fd-135">Show media queries</span></span>  
 
-<span data-ttu-id="88132-136">Si vous avez défini des requêtes multimédias sur votre page, accédez aux dimensions de la fenêtre d’affichage dans lesquelles ces requêtes multimédias sont prises en compte en affichant des points d’arrêt de requête multimédia au-dessus de votre fenêtre d’affichage.</span><span class="sxs-lookup"><span data-stu-id="88132-136">If you have defined media queries on your page, jump to the viewport dimensions where those media queries take effect by showing media query breakpoints above your viewport.</span></span>  <span data-ttu-id="88132-137">Sélectionnez **autres options**  >  **afficher les requêtes multimédias**.</span><span class="sxs-lookup"><span data-stu-id="88132-137">Choose **More options** > **Show media queries**.</span></span>  
+<span data-ttu-id="fd1fd-136">Si vous avez défini des requêtes multimédias sur votre page, vous pouvez passer aux dimensions de laport d’affichage dans laquelle ces requêtes multimédias prennent effet en affichant les points d’arrêt des requêtes multimédias au-dessus de votreport d’affichage.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-136">If you have defined media queries on your page, jump to the viewport dimensions where those media queries take effect by showing media query breakpoints above your viewport.</span></span>  <span data-ttu-id="fd1fd-137">Choose **More options**Show media  >  **queries**.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-137">Choose **More options** > **Show media queries**.</span></span>  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
-   **<span data-ttu-id="88132-139">Afficher les requêtes multimédias</span><span class="sxs-lookup"><span data-stu-id="88132-139">Show media queries</span></span>**  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="Afficher les requêtes multimédias" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
+   **<span data-ttu-id="fd1fd-139">Afficher les requêtes multimédias</span><span class="sxs-lookup"><span data-stu-id="fd1fd-139">Show media queries</span></span>**  
 :::image-end:::  
 
-<span data-ttu-id="88132-140">Choisissez un point d’arrêt pour modifier la largeur de la fenêtre d’affichage de telle sorte que la requête multimédia soit déclenchée.</span><span class="sxs-lookup"><span data-stu-id="88132-140">Choose a breakpoint to change the width of the viewport so that the media query gets triggered.</span></span>  
+<span data-ttu-id="fd1fd-140">Choisissez un point d’arrêt pour modifier la largeur de laport d’affichage afin que la requête multimédia soit déclenchée.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-140">Choose a breakpoint to change the width of the viewport so that the media query gets triggered.</span></span>  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
-   <span data-ttu-id="88132-142">Sélectionner un point d’arrêt pour modifier la largeur de la fenêtre d’affichage</span><span class="sxs-lookup"><span data-stu-id="88132-142">Choose a breakpoint to change the width of the viewport</span></span>  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="Choisir un point d’arrêt pour modifier la largeur de laport d’affichage" lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
+   <span data-ttu-id="fd1fd-142">Choisir un point d’arrêt pour modifier la largeur de laport d’affichage</span><span class="sxs-lookup"><span data-stu-id="fd1fd-142">Choose a breakpoint to change the width of the viewport</span></span>  
 :::image-end:::  
 
-#### <span data-ttu-id="88132-143">Définir le type d’appareil</span><span class="sxs-lookup"><span data-stu-id="88132-143">Set the device type</span></span>  
+#### <a name="set-the-device-type"></a><span data-ttu-id="fd1fd-143">Définir le type d’appareil</span><span class="sxs-lookup"><span data-stu-id="fd1fd-143">Set the device type</span></span>  
 
-<span data-ttu-id="88132-144">Utilisez la liste **type d’appareil** pour simuler un appareil mobile ou un appareil de bureau.</span><span class="sxs-lookup"><span data-stu-id="88132-144">Use the **Device Type** list to simulate a mobile device or desktop device.</span></span>  
+<span data-ttu-id="fd1fd-144">Utilisez la liste **Type d’appareil** pour simuler un appareil mobile ou un appareil de bureau.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-144">Use the **Device Type** list to simulate a mobile device or desktop device.</span></span>  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
-   <span data-ttu-id="88132-146">Liste **type d’appareil**</span><span class="sxs-lookup"><span data-stu-id="88132-146">The **Device Type** list</span></span>  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="Liste des types d’appareils" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
+   <span data-ttu-id="fd1fd-146">Liste **des types d’appareils**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-146">The **Device Type** list</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="88132-147">Le tableau suivant décrit les différences entre les options de type d’appareil disponibles.</span><span class="sxs-lookup"><span data-stu-id="88132-147">The following table describes the differences between the available device type options.</span></span>  <span data-ttu-id="88132-148">La colonne méthode de rendu fait référence au rendu de la page par Microsoft Edge en tant qu’affichage mobile ou de bureau.</span><span class="sxs-lookup"><span data-stu-id="88132-148">The Rendering method column refers to whether Microsoft Edge renders the page as a mobile or desktop viewport.</span></span>  <span data-ttu-id="88132-149">La colonne icône du curseur fait référence au type de curseur qui s’affiche lorsque vous pointez sur la page.</span><span class="sxs-lookup"><span data-stu-id="88132-149">The Cursor icon column refers to what type of cursor you see when you hover on the page.</span></span>  <span data-ttu-id="88132-150">La colonne déclenchée Events indique si la page déclenche ou a des `touch` `click` événements lorsque vous interagissez avec la page.</span><span class="sxs-lookup"><span data-stu-id="88132-150">The Events triggered column refers to whether the page triggers `touch` or `click` events when you interact with the page.</span></span>  
+<span data-ttu-id="fd1fd-147">Le tableau suivant décrit les différences entre les options de type d’appareil disponibles.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-147">The following table describes the differences between the available device type options.</span></span>  <span data-ttu-id="fd1fd-148">La colonne Méthode de rendu indique si Microsoft Edge restituera la page en tant que port d’affichage mobile ou de bureau.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-148">The Rendering method column refers to whether Microsoft Edge renders the page as a mobile or desktop viewport.</span></span>  <span data-ttu-id="fd1fd-149">La colonne d’icône curseur fait référence au type de curseur qui s’affiche lorsque vous pointez sur la page.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-149">The Cursor icon column refers to what type of cursor is displayed when you hover on the page.</span></span>  <span data-ttu-id="fd1fd-150">La colonne Événements déclenchés indique si la page se déclenche ou se déclenche lorsque `touch` `click` vous interagissez avec la page.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-150">The Events triggered column refers to whether the page triggers `touch` or `click` events when you interact with the page.</span></span>  
 
-| <span data-ttu-id="88132-151">Option</span><span class="sxs-lookup"><span data-stu-id="88132-151">Option</span></span> | <span data-ttu-id="88132-152">Méthode de rendu</span><span class="sxs-lookup"><span data-stu-id="88132-152">Rendering method</span></span> | <span data-ttu-id="88132-153">Icône du curseur</span><span class="sxs-lookup"><span data-stu-id="88132-153">Cursor icon</span></span> | <span data-ttu-id="88132-154">Événements déclenchés</span><span class="sxs-lookup"><span data-stu-id="88132-154">Events triggered</span></span> |  
+| <span data-ttu-id="fd1fd-151">Option</span><span class="sxs-lookup"><span data-stu-id="fd1fd-151">Option</span></span> | <span data-ttu-id="fd1fd-152">Méthode de rendu</span><span class="sxs-lookup"><span data-stu-id="fd1fd-152">Rendering method</span></span> | <span data-ttu-id="fd1fd-153">Icône curseur</span><span class="sxs-lookup"><span data-stu-id="fd1fd-153">Cursor icon</span></span> | <span data-ttu-id="fd1fd-154">Événements déclenchés</span><span class="sxs-lookup"><span data-stu-id="fd1fd-154">Events triggered</span></span> |  
 |:--- |:--- |:--- |:--- |  
-| <span data-ttu-id="88132-155">Appareils mobiles</span><span class="sxs-lookup"><span data-stu-id="88132-155">Mobile</span></span> | <span data-ttu-id="88132-156">Appareils mobiles</span><span class="sxs-lookup"><span data-stu-id="88132-156">Mobile</span></span> | <span data-ttu-id="88132-157">Cercle</span><span class="sxs-lookup"><span data-stu-id="88132-157">Circle</span></span> | <span data-ttu-id="88132-158">interface tactile</span><span class="sxs-lookup"><span data-stu-id="88132-158">touch</span></span> |  
-| <span data-ttu-id="88132-159">Mobile \ (sans interaction</span><span class="sxs-lookup"><span data-stu-id="88132-159">Mobile \(no touch\)</span></span> | <span data-ttu-id="88132-160">Appareils mobiles</span><span class="sxs-lookup"><span data-stu-id="88132-160">Mobile</span></span> | <span data-ttu-id="88132-161">Normal</span><span class="sxs-lookup"><span data-stu-id="88132-161">Normal</span></span> | <span data-ttu-id="88132-162"> cliquez sur </span><span class="sxs-lookup"><span data-stu-id="88132-162">click</span></span> |  
-| <span data-ttu-id="88132-163">Bureau</span><span class="sxs-lookup"><span data-stu-id="88132-163">Desktop</span></span> | <span data-ttu-id="88132-164">Bureau</span><span class="sxs-lookup"><span data-stu-id="88132-164">Desktop</span></span> | <span data-ttu-id="88132-165">Normal</span><span class="sxs-lookup"><span data-stu-id="88132-165">Normal</span></span> | <span data-ttu-id="88132-166"> cliquez sur </span><span class="sxs-lookup"><span data-stu-id="88132-166">click</span></span> |  
-| <span data-ttu-id="88132-167">Bureau \ (effleurement)</span><span class="sxs-lookup"><span data-stu-id="88132-167">Desktop \(touch\)</span></span> | <span data-ttu-id="88132-168">Bureau</span><span class="sxs-lookup"><span data-stu-id="88132-168">Desktop</span></span> | <span data-ttu-id="88132-169">Cercle</span><span class="sxs-lookup"><span data-stu-id="88132-169">Circle</span></span> | <span data-ttu-id="88132-170">interface tactile</span><span class="sxs-lookup"><span data-stu-id="88132-170">touch</span></span> |  
+| <span data-ttu-id="fd1fd-155">Appareils mobiles</span><span class="sxs-lookup"><span data-stu-id="fd1fd-155">Mobile</span></span> | <span data-ttu-id="fd1fd-156">Appareils mobiles</span><span class="sxs-lookup"><span data-stu-id="fd1fd-156">Mobile</span></span> | <span data-ttu-id="fd1fd-157">Cercle</span><span class="sxs-lookup"><span data-stu-id="fd1fd-157">Circle</span></span> | <span data-ttu-id="fd1fd-158">interface tactile</span><span class="sxs-lookup"><span data-stu-id="fd1fd-158">touch</span></span> |  
+| <span data-ttu-id="fd1fd-159">Mobile \(aucune touche\)</span><span class="sxs-lookup"><span data-stu-id="fd1fd-159">Mobile \(no touch\)</span></span> | <span data-ttu-id="fd1fd-160">Appareils mobiles</span><span class="sxs-lookup"><span data-stu-id="fd1fd-160">Mobile</span></span> | <span data-ttu-id="fd1fd-161">Normal</span><span class="sxs-lookup"><span data-stu-id="fd1fd-161">Normal</span></span> | <span data-ttu-id="fd1fd-162"> choisissez</span><span class="sxs-lookup"><span data-stu-id="fd1fd-162">choose</span></span> |  
+| <span data-ttu-id="fd1fd-163">Bureau</span><span class="sxs-lookup"><span data-stu-id="fd1fd-163">Desktop</span></span> | <span data-ttu-id="fd1fd-164">Bureau</span><span class="sxs-lookup"><span data-stu-id="fd1fd-164">Desktop</span></span> | <span data-ttu-id="fd1fd-165">Normal</span><span class="sxs-lookup"><span data-stu-id="fd1fd-165">Normal</span></span> | <span data-ttu-id="fd1fd-166"> choisissez</span><span class="sxs-lookup"><span data-stu-id="fd1fd-166">choose</span></span> |  
+| <span data-ttu-id="fd1fd-167">Bureau \(tactile\)</span><span class="sxs-lookup"><span data-stu-id="fd1fd-167">Desktop \(touch\)</span></span> | <span data-ttu-id="fd1fd-168">Bureau</span><span class="sxs-lookup"><span data-stu-id="fd1fd-168">Desktop</span></span> | <span data-ttu-id="fd1fd-169">Cercle</span><span class="sxs-lookup"><span data-stu-id="fd1fd-169">Circle</span></span> | <span data-ttu-id="fd1fd-170">interface tactile</span><span class="sxs-lookup"><span data-stu-id="fd1fd-170">touch</span></span> |  
 
 > [!NOTE]
-> <span data-ttu-id="88132-171">Si la liste **type d’appareil** n’est pas affichée, sélectionnez **autres options**  >  **Ajouter un type d’appareil**.</span><span class="sxs-lookup"><span data-stu-id="88132-171">If the **Device Type** list is not displayed, choose **More options** > **Add device type**.</span></span>  
+> <span data-ttu-id="fd1fd-171">Si la liste **Type d’appareil** n’est pas affichée, sélectionnez **Autres options**Ajouter un  >  **type d’appareil.**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-171">If the **Device Type** list is not displayed, choose **More options** > **Add device type**.</span></span>  
 
-### <span data-ttu-id="88132-172">Mode d’affichage de l’appareil mobile</span><span class="sxs-lookup"><span data-stu-id="88132-172">Mobile Device Viewport Mode</span></span>  
+### <a name="mobile-device-viewport-mode"></a><span data-ttu-id="fd1fd-172">Mode d’affichage d’appareil mobile</span><span class="sxs-lookup"><span data-stu-id="fd1fd-172">Mobile Device Viewport Mode</span></span>  
 
-<span data-ttu-id="88132-173">Pour simuler les dimensions d’un appareil mobile spécifique, sélectionnez-le dans la liste des **appareils** .</span><span class="sxs-lookup"><span data-stu-id="88132-173">To simulate the dimensions of a specific mobile device, select the device from the **Device** list.</span></span>  
+<span data-ttu-id="fd1fd-173">Pour simuler les dimensions d’un appareil mobile spécifique, sélectionnez l’appareil dans la liste **Des** appareils.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-173">To simulate the dimensions of a specific mobile device, select the device from the **Device** list.</span></span>  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
-   <span data-ttu-id="88132-175">La liste des **appareils**</span><span class="sxs-lookup"><span data-stu-id="88132-175">The **Device** list</span></span>  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="Liste des appareils" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
+   <span data-ttu-id="fd1fd-175">Liste **des appareils**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-175">The **Device** list</span></span>  
 :::image-end:::  
 
-#### <span data-ttu-id="88132-176">Faire pivoter la fenêtre d’affichage avec l’orientation paysage</span><span class="sxs-lookup"><span data-stu-id="88132-176">Rotate the viewport to landscape orientation</span></span>  
+#### <a name="rotate-the-viewport-to-landscape-orientation"></a><span data-ttu-id="fd1fd-176">Faire pivoter laport d’affichage vers l’orientation paysage</span><span class="sxs-lookup"><span data-stu-id="fd1fd-176">Rotate the viewport to landscape orientation</span></span>  
 
-<span data-ttu-id="88132-177">Testez votre page Web en orientation paysage.</span><span class="sxs-lookup"><span data-stu-id="88132-177">Test your webpage in landscape orientation.</span></span>  
+<span data-ttu-id="fd1fd-177">Testez votre page web en orientation paysage.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-177">Test your webpage in landscape orientation.</span></span>  
 
-*   <span data-ttu-id="88132-178">Pour faire pivoter la fenêtre d’affichage en orientation paysage, sélectionnez **faire pivoter** \ ( ![ rotation ][ImageRotateIcon] \).</span><span class="sxs-lookup"><span data-stu-id="88132-178">To rotate the viewport to landscape orientation, choose **Rotate** \(![Rotate][ImageRotateIcon]\).</span></span>  
+*   <span data-ttu-id="fd1fd-178">Pour faire pivoter la vue vers l’orientation paysage, choisissez **Rotation** \( ![ Rotation ][ImageRotateIcon] \).</span><span class="sxs-lookup"><span data-stu-id="fd1fd-178">To rotate the viewport to landscape orientation, choose **Rotate** \(![Rotate][ImageRotateIcon]\).</span></span>  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
-       <span data-ttu-id="88132-180">Page affichée en orientation paysage</span><span class="sxs-lookup"><span data-stu-id="88132-180">Page displayed in landscape orientation</span></span>  
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Page affichée en orientation paysage" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
+       <span data-ttu-id="fd1fd-180">Page affichée en orientation paysage</span><span class="sxs-lookup"><span data-stu-id="fd1fd-180">Page displayed in landscape orientation</span></span>  
     :::image-end:::  
     
 > [!NOTE]
-> <span data-ttu-id="88132-181">Le bouton **faire pivoter** disparaît si la **barre d’outils** de votre appareil est étroite.</span><span class="sxs-lookup"><span data-stu-id="88132-181">The **Rotate** button disappears if your **Device Toolbar** is narrow.</span></span>  
+> <span data-ttu-id="fd1fd-181">Le **bouton Pivoter** disparaît si la barre d’outils de **votre** appareil est étroite.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-181">The **Rotate** button disappears if your **Device Toolbar** is narrow.</span></span>  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
-   <span data-ttu-id="88132-183">**Barre d’outils** de l’appareil</span><span class="sxs-lookup"><span data-stu-id="88132-183">The **Device Toolbar**</span></span>  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Barre d’outils Appareil" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+   <span data-ttu-id="fd1fd-183">Barre **d’outils Appareil**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-183">The **Device Toolbar**</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="88132-184">Pour plus d’informations, voir [définir l’orientation](#set-orientation).</span><span class="sxs-lookup"><span data-stu-id="88132-184">For more information, go to [Set orientation](#set-orientation).</span></span>  
+<span data-ttu-id="fd1fd-184">Pour plus d’informations, accédez à [Définir l’orientation.](#set-orientation)</span><span class="sxs-lookup"><span data-stu-id="fd1fd-184">For more information, navigate to [Set orientation](#set-orientation).</span></span>  
 
-#### <span data-ttu-id="88132-185">Afficher le cadre de l’appareil</span><span class="sxs-lookup"><span data-stu-id="88132-185">Show device frame</span></span>  
+#### <a name="show-device-frame"></a><span data-ttu-id="fd1fd-185">Afficher le cadre de l’appareil</span><span class="sxs-lookup"><span data-stu-id="fd1fd-185">Show device frame</span></span>  
 
-<span data-ttu-id="88132-186">Affichez le frame d’appareil physique à l’écran de la fenêtre d’affichage lorsque vous simulez les dimensions d’un appareil mobile spécifique tel qu’un iPhone 6.</span><span class="sxs-lookup"><span data-stu-id="88132-186">Display the physical device frame around the viewport when you simulate the dimensions of a specific mobile device such as an iPhone 6.</span></span>  
+<span data-ttu-id="fd1fd-186">Affichez le cadre de l’appareil physique autour de la fenêtre d’affichage lorsque vous simulez les dimensions d’un appareil mobile spécifique tel qu’un iPhone 6.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-186">Display the physical device frame around the viewport when you simulate the dimensions of a specific mobile device such as an iPhone 6.</span></span>  
 
-1.  <span data-ttu-id="88132-187">Ouvrez **plus d’options**.</span><span class="sxs-lookup"><span data-stu-id="88132-187">Open **More options**.</span></span>  
-1.  <span data-ttu-id="88132-188">Sélectionnez **afficher le cadre**de l’appareil.</span><span class="sxs-lookup"><span data-stu-id="88132-188">Choose **Show device frame**.</span></span>  
+1.  <span data-ttu-id="fd1fd-187">Ouvrez **plus d’options.**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-187">Open **More options**.</span></span>  
+1.  <span data-ttu-id="fd1fd-188">Choose **Show device frame**.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-188">Choose **Show device frame**.</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="88132-189">Si vous ne voyez pas d’image d’appareil pour un appareil particulier, cela signifie que DevTools n’a pas d’image pour cette option.</span><span class="sxs-lookup"><span data-stu-id="88132-189">If you do not see a device frame for a particular device, it means that DevTools does not have art for that option.</span></span>  
+> <span data-ttu-id="fd1fd-189">Si un cadre d’appareil pour un appareil particulier n’est pas affiché, cela signifie que DevTools n’a pas d’image pour l’option.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-189">If a device frame for a particular device is not displayed, it means that DevTools does not have art for the option.</span></span>  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
-         <span data-ttu-id="88132-191">Afficher le cadre de l’appareil</span><span class="sxs-lookup"><span data-stu-id="88132-191">Show device frame</span></span>  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="Afficher le cadre de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
+         <span data-ttu-id="fd1fd-191">Afficher le cadre de l’appareil</span><span class="sxs-lookup"><span data-stu-id="fd1fd-191">Show device frame</span></span>  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
-         <span data-ttu-id="88132-193">Le cadre de l’appareil pour l’iPhone 6</span><span class="sxs-lookup"><span data-stu-id="88132-193">The device frame for the iPhone 6</span></span>  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="Image de l’appareil pour l’iPhone 6" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
+         <span data-ttu-id="fd1fd-193">Image de l’appareil pour l’iPhone 6</span><span class="sxs-lookup"><span data-stu-id="fd1fd-193">The device frame for the iPhone 6</span></span>  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-#### <span data-ttu-id="88132-194">Ajouter un appareil mobile personnalisé</span><span class="sxs-lookup"><span data-stu-id="88132-194">Add a custom mobile device</span></span>  
+#### <a name="add-a-custom-mobile-device"></a><span data-ttu-id="fd1fd-194">Ajouter un appareil mobile personnalisé</span><span class="sxs-lookup"><span data-stu-id="fd1fd-194">Add a custom mobile device</span></span>  
 
-<span data-ttu-id="88132-195">Si l’option d’appareil mobile dont vous avez besoin ne figure pas dans la liste par défaut, vous pouvez ajouter un appareil personnalisé.</span><span class="sxs-lookup"><span data-stu-id="88132-195">If the mobile device option that you need is not included on the default list, you may add a custom device.</span></span>  <span data-ttu-id="88132-196">Pour ajouter un appareil personnalisé, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="88132-196">To add a custom device, complete the following steps.</span></span>  
+<span data-ttu-id="fd1fd-195">Si l’option d’appareil mobile dont vous avez besoin n’est pas incluse dans la liste par défaut, vous pouvez ajouter un appareil personnalisé.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-195">If the mobile device option that you need is not included on the default list, you may add a custom device.</span></span>  <span data-ttu-id="fd1fd-196">Pour ajouter un appareil personnalisé, complétez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-196">To add a custom device, complete the following steps.</span></span>  
 
-1.  <span data-ttu-id="88132-197">Choisissez la liste des **appareils** > **modifier**.</span><span class="sxs-lookup"><span data-stu-id="88132-197">Choose the **Device** list > **Edit**.</span></span>  
+1.  <span data-ttu-id="fd1fd-197">Choose the **Device** list > **Edit**.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-197">Choose the **Device** list > **Edit**.</span></span>  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
-       <span data-ttu-id="88132-199">Sélectionnez **modifier** .</span><span class="sxs-lookup"><span data-stu-id="88132-199">Choose **Edit**</span></span>  
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Choose Edit" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+       <span data-ttu-id="fd1fd-199">Choose **Edit**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-199">Choose **Edit**</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="88132-200">Sélectionnez **Ajouter un appareil personnalisé**.</span><span class="sxs-lookup"><span data-stu-id="88132-200">Choose **Add custom device**.</span></span>  
-1.  <span data-ttu-id="88132-201">Sur les **appareils émulés**, entrez le nom d’un appareil, la largeur de l’écran et la hauteur de l’écran de l’appareil personnalisé.</span><span class="sxs-lookup"><span data-stu-id="88132-201">On **Emulated Devices**, enter a device name, screen width, and screen height for the custom device.</span></span>  <span data-ttu-id="88132-202">Le [coefficient d’appareil][MDNWindowDevicePixelRatio], la [chaîne de l’agent utilisateur][MDNUserAgent]et les champs [type d’appareil](#set-the-device-type) sont facultatifs.</span><span class="sxs-lookup"><span data-stu-id="88132-202">The [device pixel ratio][MDNWindowDevicePixelRatio], [user agent string][MDNUserAgent], and [device type](#set-the-device-type) fields are optional.</span></span>  <span data-ttu-id="88132-203">Le champ type d’appareil utilise par défaut la valeur **mobile**.</span><span class="sxs-lookup"><span data-stu-id="88132-203">The device type field defaults to **Mobile**.</span></span>  
+1.  <span data-ttu-id="fd1fd-200">Choisissez **Ajouter un appareil personnalisé.**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-200">Choose **Add custom device**.</span></span>  
+1.  <span data-ttu-id="fd1fd-201">Sur **les appareils émulés,** entrez un nom d’appareil, la largeur de l’écran et la hauteur de l’écran pour l’appareil personnalisé.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-201">On **Emulated Devices**, enter a device name, screen width, and screen height for the custom device.</span></span>  <span data-ttu-id="fd1fd-202">Les champs [Ratio de pixels][MDNWindowDevicePixelRatio]de l’appareil, Chaîne de [l’agent][MDNUserAgent]utilisateur et [Type](#set-the-device-type) d’appareil sont facultatifs.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-202">The [device pixel ratio][MDNWindowDevicePixelRatio], [user agent string][MDNUserAgent], and [device type](#set-the-device-type) fields are optional.</span></span>  <span data-ttu-id="fd1fd-203">Par défaut, le champ De type d’appareil est **Mobile.**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-203">The device type field defaults to **Mobile**.</span></span>  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
-       <span data-ttu-id="88132-205">Créer un appareil personnalisé</span><span class="sxs-lookup"><span data-stu-id="88132-205">Create a custom device</span></span>  
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Créer un appareil personnalisé" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
+       <span data-ttu-id="fd1fd-205">Créer un appareil personnalisé</span><span class="sxs-lookup"><span data-stu-id="fd1fd-205">Create a custom device</span></span>  
     :::image-end:::  
     
-### <span data-ttu-id="88132-206">Afficher les règles</span><span class="sxs-lookup"><span data-stu-id="88132-206">Show rulers</span></span>  
+### <a name="show-rulers"></a><span data-ttu-id="fd1fd-206">Afficher les règles</span><span class="sxs-lookup"><span data-stu-id="fd1fd-206">Show rulers</span></span>  
 
-<span data-ttu-id="88132-207">Si vous avez besoin de mesurer les dimensions de l’écran, vous pouvez utiliser des règles pour mesurer la taille de l’écran en pixels.</span><span class="sxs-lookup"><span data-stu-id="88132-207">If you need to measure screen dimensions, you may use rulers to measure the screen size in pixels.</span></span>  <span data-ttu-id="88132-208">Sélectionnez **autres options**  >  **afficher les règles** pour afficher les règles au-dessus et à gauche de votre fenêtre d’affichage.</span><span class="sxs-lookup"><span data-stu-id="88132-208">Choose **More options** > **Show rulers** to display rulers above and to the left of your viewport.</span></span>  
+<span data-ttu-id="fd1fd-207">Si vous devez mesurer les dimensions de l’écran, vous pouvez utiliser des règles pour mesurer la taille de l’écran en pixels.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-207">If you need to measure screen dimensions, you may use rulers to measure the screen size in pixels.</span></span>  <span data-ttu-id="fd1fd-208">Choose **More options**Show  >  **rulers** to display rulers above and to the left of your viewport.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-208">Choose **More options** > **Show rulers** to display rulers above and to the left of your viewport.</span></span>  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
-         <span data-ttu-id="88132-210">Option de menu pour afficher les règles</span><span class="sxs-lookup"><span data-stu-id="88132-210">Menu item to display rulers</span></span>  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="Élément de menu pour afficher les règles" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
+         <span data-ttu-id="fd1fd-210">Élément de menu pour afficher les règles</span><span class="sxs-lookup"><span data-stu-id="fd1fd-210">Menu item to display rulers</span></span>  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
-         <span data-ttu-id="88132-212">Règles au-dessus et à gauche de la fenêtre d’affichage</span><span class="sxs-lookup"><span data-stu-id="88132-212">Rulers above and to the left of the viewport</span></span>  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="Règles au-dessus et à gauche de la vue" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
+         <span data-ttu-id="fd1fd-212">Règles au-dessus et à gauche de la vue</span><span class="sxs-lookup"><span data-stu-id="fd1fd-212">Rulers above and to the left of the viewport</span></span>  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-### <span data-ttu-id="88132-213">Effectuer un zoom dans la fenêtre d’affichage</span><span class="sxs-lookup"><span data-stu-id="88132-213">Zoom the viewport</span></span>  
+### <a name="zoom-the-viewport"></a><span data-ttu-id="fd1fd-213">Zoomer laporte d’affichage</span><span class="sxs-lookup"><span data-stu-id="fd1fd-213">Zoom the viewport</span></span>  
 
-<span data-ttu-id="88132-214">Pour tester l’apparence de votre page à plusieurs niveaux de zoom, utilisez la liste **Zoom** pour effectuer un zoom avant ou arrière.</span><span class="sxs-lookup"><span data-stu-id="88132-214">To test the look and feel of your page at multiple zoom levels, use the **Zoom** list to zoom in or out.</span></span>  
+<span data-ttu-id="fd1fd-214">Pour tester l’apparence de votre page à plusieurs niveaux de zoom, utilisez la liste **Zoom** pour effectuer un zoom avant ou arrière.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-214">To test the look and feel of your page at multiple zoom levels, use the **Zoom** list to zoom in or out.</span></span>  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
-   **<span data-ttu-id="88132-216">Zoom</span><span class="sxs-lookup"><span data-stu-id="88132-216">Zoom</span></span>**  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="Zoom" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
+   **<span data-ttu-id="fd1fd-216">Zoom</span><span class="sxs-lookup"><span data-stu-id="fd1fd-216">Zoom</span></span>**  
 :::image-end:::  
 
-## <span data-ttu-id="88132-217">Limiter le réseau et le processeur</span><span class="sxs-lookup"><span data-stu-id="88132-217">Throttle the network and CPU</span></span>  
+## <a name="throttle-the-network-and-cpu"></a><span data-ttu-id="fd1fd-217">Limiter le réseau et le processeur</span><span class="sxs-lookup"><span data-stu-id="fd1fd-217">Throttle the network and CPU</span></span>  
 
-<span data-ttu-id="88132-218">Les appareils mobiles sont souvent dotés de contraintes réseau et UC.</span><span class="sxs-lookup"><span data-stu-id="88132-218">Mobile devices often have network and CPU constraints.</span></span>  <span data-ttu-id="88132-219">Assurez-vous d’avoir testé la rapidité de chargement de la page et la manière dont elle réagit aux différentes vitesses d’utilisation de l’Internet et du processeur.</span><span class="sxs-lookup"><span data-stu-id="88132-219">Ensure you test how quickly your page loads and how it responds at different internet and CPU speeds.</span></span>  
+<span data-ttu-id="fd1fd-218">Les appareils mobiles ont souvent des contraintes de réseau et de processeur.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-218">Mobile devices often have network and CPU constraints.</span></span>  <span data-ttu-id="fd1fd-219">Veillez à tester la rapidité de chargement de votre page et la façon dont elle répond à différentes vitesses internet et processeur.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-219">Ensure you test how quickly your page loads and how it responds at different internet and CPU speeds.</span></span>  
 
-<span data-ttu-id="88132-220">Limiter le réseau et le processeur.</span><span class="sxs-lookup"><span data-stu-id="88132-220">Throttle the network and CPU.</span></span>  
+<span data-ttu-id="fd1fd-220">Limiter le réseau et le processeur.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-220">Throttle the network and CPU.</span></span>  
 
-1.  <span data-ttu-id="88132-221">Choisissez liste de **limitations** et sélectionnez mobile de **niveau supérieur** ou mobile de niveau **inférieur**.</span><span class="sxs-lookup"><span data-stu-id="88132-221">Choose **Throttle** list and change the preset to **Mid-tier mobile** or **Low-end mobile**.</span></span>  
-    *   <span data-ttu-id="88132-222">Le **mobile milieu de niveau** simule `fast 3G` et limite votre processeur.</span><span class="sxs-lookup"><span data-stu-id="88132-222">**Mid-tier mobile** simulates `fast 3G` and throttles your CPU.</span></span>  <span data-ttu-id="88132-223">Il est quatre fois plus lent qu’normal.</span><span class="sxs-lookup"><span data-stu-id="88132-223">It is four times slower than normal.</span></span>  
-    *   <span data-ttu-id="88132-224">Un **mobile de bas de gamme** simule `slow 3G` et limite votre processeur.</span><span class="sxs-lookup"><span data-stu-id="88132-224">**Low-end mobile** simulates `slow 3G` and throttles your CPU.</span></span>  <span data-ttu-id="88132-225">Il est plus lent que le nombre normal.</span><span class="sxs-lookup"><span data-stu-id="88132-225">It is six times slower than normal.</span></span>  
+1.  <span data-ttu-id="fd1fd-221">Choose **Throttle** list and change the preset to **Mid-tier mobile** or **Low-end mobile**.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-221">Choose **Throttle** list and change the preset to **Mid-tier mobile** or **Low-end mobile**.</span></span>  
+    *   <span data-ttu-id="fd1fd-222">**Un appareil mobile de niveau intermédiaire** simule et limitation votre `fast 3G` processeur.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-222">**Mid-tier mobile** simulates `fast 3G` and throttles your CPU.</span></span>  <span data-ttu-id="fd1fd-223">Elle est quatre fois plus lente que la normale.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-223">It is four times slower than normal.</span></span>  
+    *   <span data-ttu-id="fd1fd-224">**Un appareil mobile bas de gamme** `slow 3G` simule et limitation votre processeur.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-224">**Low-end mobile** simulates `slow 3G` and throttles your CPU.</span></span>  <span data-ttu-id="fd1fd-225">Elle est six fois plus lente que la normale.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-225">It is six times slower than normal.</span></span>  
     
-<span data-ttu-id="88132-226">Toutes les limitations dépendent de la fonctionnalité normale de votre ordinateur portable ou de votre ordinateur de bureau.</span><span class="sxs-lookup"><span data-stu-id="88132-226">All of the throttling is based upon the normal capability of your laptop or desktop.</span></span>  
+<span data-ttu-id="fd1fd-226">Toutes les limitations sont basées sur les fonctionnalités normales de votre ordinateur portable ou de votre bureau.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-226">All of the throttling is based upon the normal capability of your laptop or desktop.</span></span>  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
-   <span data-ttu-id="88132-228">Liste de **limitations** de la barre d’outils de l’appareil</span><span class="sxs-lookup"><span data-stu-id="88132-228">The **Throttle** list in the Device Toolbar</span></span>  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="Liste Limitation dans la barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
+   <span data-ttu-id="fd1fd-228">Liste **Limitation dans** la barre d’outils de l’appareil</span><span class="sxs-lookup"><span data-stu-id="fd1fd-228">The **Throttle** list in the Device Toolbar</span></span>  
 :::image-end:::  
 
 > [!NOTE]
-> <span data-ttu-id="88132-229">Si la **liste des limitations** est masquée, votre **barre d’outils** de l’appareil est trop étroite.</span><span class="sxs-lookup"><span data-stu-id="88132-229">If the **Throttle list** is hidden, your **Device Toolbar** is too narrow.</span></span>  <span data-ttu-id="88132-230">Pour accéder à la **liste de limitation**, augmentez la largeur de la **barre d’outils**de l’appareil.</span><span class="sxs-lookup"><span data-stu-id="88132-230">To access the **Throttle list**, increase the width of the **Device Toolbar**.</span></span>  
+> <span data-ttu-id="fd1fd-229">Si la liste **Throttle est** masquée, votre **barre d’outils d’appareil** est trop étroite.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-229">If the **Throttle list** is hidden, your **Device Toolbar** is too narrow.</span></span>  <span data-ttu-id="fd1fd-230">Pour accéder à la liste **Limitation,** augmentez la largeur de la barre d’outils **de l’appareil.**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-230">To access the **Throttle list**, increase the width of the **Device Toolbar**.</span></span>  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
-   <span data-ttu-id="88132-232">**Barre d’outils** de l’appareil</span><span class="sxs-lookup"><span data-stu-id="88132-232">The **Device Toolbar**</span></span>  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Barre d’outils Appareil" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+   <span data-ttu-id="fd1fd-232">Barre **d’outils Appareil**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-232">The **Device Toolbar**</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="88132-233">Limiter le processeur uniquement</span><span class="sxs-lookup"><span data-stu-id="88132-233">Throttle the CPU only</span></span>  
+### <a name="throttle-the-cpu-only"></a><span data-ttu-id="fd1fd-233">Limiter l’UC uniquement</span><span class="sxs-lookup"><span data-stu-id="fd1fd-233">Throttle the CPU only</span></span>  
 
-<span data-ttu-id="88132-234">Pour limiter le processeur et non le réseau, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="88132-234">To throttle the CPU only and not the network, complete the following steps.</span></span>
+<span data-ttu-id="fd1fd-234">Pour limiter l’UC uniquement et non le réseau, complétez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-234">To throttle the CPU only and not the network, complete the following steps.</span></span>
 
-1.  <span data-ttu-id="88132-235">Sélectionnez le panneau **performances** , puis choisissez **paramètres de capture** \ ( ![ paramètres de capture ][ImageCaptureIcon] \).</span><span class="sxs-lookup"><span data-stu-id="88132-235">Choose the **Performance** panel, and choose **Capture Settings** \(![Capture Settings][ImageCaptureIcon]\).</span></span>
-1.  <span data-ttu-id="88132-236">Sélectionnez **CPU**  >  **ralentissement** de l’UC 4x ou **6 ralentissements**.</span><span class="sxs-lookup"><span data-stu-id="88132-236">Choose **CPU** > **4x slowdown** or **6x slowdown**.</span></span>
+1.  <span data-ttu-id="fd1fd-235">Choisissez le **panneau Performances,** puis **sélectionnez Paramètres de capture** \( ![ Paramètres de capture ][ImageCaptureIcon] \).</span><span class="sxs-lookup"><span data-stu-id="fd1fd-235">Choose the **Performance** panel, and choose **Capture Settings** \(![Capture Settings][ImageCaptureIcon]\).</span></span>
+1.  <span data-ttu-id="fd1fd-236">Choisissez **le**  >  **ralentissement 4x du** processeur ou le ralentissement **6x.**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-236">Choose **CPU** > **4x slowdown** or **6x slowdown**.</span></span>
     
-    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
-       <span data-ttu-id="88132-238">Liste **UC** du panneau de **performance**</span><span class="sxs-lookup"><span data-stu-id="88132-238">The **CPU** list in the **Performance** panel</span></span>  
+    :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="Liste du processeur dans le panneau Performances" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
+       <span data-ttu-id="fd1fd-238">Liste **du processeur** dans le panneau **Performances**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-238">The **CPU** list in the **Performance** panel</span></span>  
     :::image-end:::  
     
-### <span data-ttu-id="88132-239">Limiter le réseau uniquement</span><span class="sxs-lookup"><span data-stu-id="88132-239">Throttle the network only</span></span>  
+### <a name="throttle-the-network-only"></a><span data-ttu-id="fd1fd-239">Limiter le réseau uniquement</span><span class="sxs-lookup"><span data-stu-id="fd1fd-239">Throttle the network only</span></span>  
 
-<span data-ttu-id="88132-240">Pour limiter le réseau uniquement, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="88132-240">To throttle the network only, complete the following steps.</span></span>
+<span data-ttu-id="fd1fd-240">Pour limiter le réseau uniquement, complétez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-240">To throttle the network only, complete the following steps.</span></span>
 
-1.  <span data-ttu-id="88132-241">Choisissez le panneau **réseau** .</span><span class="sxs-lookup"><span data-stu-id="88132-241">Choose the **Network** panel.</span></span>
-1.  <span data-ttu-id="88132-242">Choisissez **connexion**  >  **Fast 3G** ou **lente 3G**.</span><span class="sxs-lookup"><span data-stu-id="88132-242">Choose **Online** > **Fast 3G** or **Slow 3G**.</span></span>
+1.  <span data-ttu-id="fd1fd-241">Choisissez **l’outil** Réseau.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-241">Choose the **Network** tool.</span></span>
+1.  <span data-ttu-id="fd1fd-242">Choose **Online**  >  **Fast 3G** or Slow **3G**.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-242">Choose **Online** > **Fast 3G** or **Slow 3G**.</span></span>
     
-    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-network-throttle.msft.png":::
-       <span data-ttu-id="88132-244">Liste de **limitations** du panneau réseau</span><span class="sxs-lookup"><span data-stu-id="88132-244">The **Throttle** list in the Network panel</span></span>  
+    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="Liste De limitation dans le panneau Réseau" lightbox="../media/device-mode-network-throttle.msft.png":::
+       <span data-ttu-id="fd1fd-244">Liste **De limitation** dans le panneau Réseau</span><span class="sxs-lookup"><span data-stu-id="fd1fd-244">The **Throttle** list in the Network panel</span></span>  
     :::image-end:::  
     
-    <span data-ttu-id="88132-245">`Control` + `Shift` + `P` Vous pouvez ou sélectionner \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**, taper `3G` , puis sélectionner **activer la limitation Fast 3G** ou **activer la limitation lente 3G**.</span><span class="sxs-lookup"><span data-stu-id="88132-245">Or select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**, type `3G`, and choose **Enable fast 3G throttling** or **Enable slow 3G throttling**.</span></span>  
+    <span data-ttu-id="fd1fd-245">Ou sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) \*\*\*\* `3G` \*\*\*\* \*\*\*\* pour ouvrir le menu Commande, tapez et choisissez Activer la limitation 3G rapide ou Activer la limitation 3G lente.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-245">Or select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**, type `3G`, and choose **Enable fast 3G throttling** or **Enable slow 3G throttling**.</span></span>  
     
-    :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
-       <span data-ttu-id="88132-247">**Menu de commandes**</span><span class="sxs-lookup"><span data-stu-id="88132-247">The **Command Menu**</span></span>  
+    :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Menu Commande" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
+       <span data-ttu-id="fd1fd-247">Menu **Commande**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-247">The **Command Menu**</span></span>  
     :::image-end:::  
     
-<span data-ttu-id="88132-248">Vous pouvez également définir la limitation du réseau dans le panneau **performances** .</span><span class="sxs-lookup"><span data-stu-id="88132-248">You may also set network throttling from the **Performance** panel.</span></span>  
+<span data-ttu-id="fd1fd-248">Vous pouvez également définir la limitation du réseau à partir du **panneau Performances.**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-248">You may also set network throttling from the **Performance** panel.</span></span>  
 
-1.  <span data-ttu-id="88132-249">Sélectionnez **paramètres de capture** \ ( ![ paramètres de capture ][ImageCaptureIcon] \), puis choisissez la liste des **réseaux** et définissez le paramètre prédéfini sur **Fast 3G** ou **lente 3G**.</span><span class="sxs-lookup"><span data-stu-id="88132-249">Choose **Capture Settings** \(![Capture Settings][ImageCaptureIcon]\) and choose the **Network** list and change the preset to **Fast 3G** or **Slow 3G**.</span></span>  
+1.  <span data-ttu-id="fd1fd-249">Choose **Capture Settings** \( ![ Capture Settings ][ImageCaptureIcon] \) and choose the **Network** list and change the preset to **Fast 3G** or Slow **3G**.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-249">Choose **Capture Settings** \(![Capture Settings][ImageCaptureIcon]\) and choose the **Network** list and change the preset to **Fast 3G** or **Slow 3G**.</span></span>  
     
-    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
-       <span data-ttu-id="88132-251">Définir la limitation du réseau à partir du panneau **performances**</span><span class="sxs-lookup"><span data-stu-id="88132-251">Set network throttling from the **Performance** panel</span></span>  
+    :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Définir la limitation du réseau à partir du panneau Performances" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
+       <span data-ttu-id="fd1fd-251">Définir la limitation du réseau à partir du panneau **Performances**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-251">Set network throttling from the **Performance** panel</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="88132-252">Remplacer la géolocalisation</span><span class="sxs-lookup"><span data-stu-id="88132-252">Override geolocation</span></span>  
+## <a name="override-geolocation"></a><span data-ttu-id="fd1fd-252">Remplacer la géolocalisation</span><span class="sxs-lookup"><span data-stu-id="fd1fd-252">Override geolocation</span></span>  
 
 :::row:::
    :::column span="":::
-      <span data-ttu-id="88132-253">Si votre page dépend d’informations géolocalisation d’un appareil mobile pour s’afficher correctement, fournissez des géolocalisation différentes à l’aide de l’interface utilisateur de remplacement de géolocalisation.</span><span class="sxs-lookup"><span data-stu-id="88132-253">If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation overriding UI.</span></span>  
+      <span data-ttu-id="fd1fd-253">Si votre page dépend des informations de géolocalisation d’un appareil mobile pour un rendu correct, fournissez différentes géolocalisations à l’aide de l’interface utilisateur de remplacement de la géolocalisation.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-253">If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation overriding UI.</span></span>  
 
-      1.  <span data-ttu-id="88132-254">Sélectionnez **personnaliser et contrôler devtools** \ ( `...` \) > **plus**de  >  **capteurs**d’outils.</span><span class="sxs-lookup"><span data-stu-id="88132-254">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Sensors**.</span></span>  
+      1.  <span data-ttu-id="fd1fd-254">Choose **Customize and control DevTools** \( `...` \) > More **tools**  >  **Sensors**.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-254">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Sensors**.</span></span>  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
-         <span data-ttu-id="88132-256">**Capteurs** pour la géolocalisation</span><span class="sxs-lookup"><span data-stu-id="88132-256">**Sensors** for geolocation</span></span>  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Capteurs pour la géolocalisation" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+         <span data-ttu-id="fd1fd-256">**Capteurs** pour la géolocalisation</span><span class="sxs-lookup"><span data-stu-id="fd1fd-256">**Sensors** for geolocation</span></span>  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  <span data-ttu-id="88132-257">Ouvrir le menu de commandes.</span><span class="sxs-lookup"><span data-stu-id="88132-257">Open the Command Menu.</span></span>  
-          *   <span data-ttu-id="88132-258">Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \).</span><span class="sxs-lookup"><span data-stu-id="88132-258">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span>  
-      1. <span data-ttu-id="88132-259">Tapez `Sensors` , puis sélectionnez **afficher les capteurs**.</span><span class="sxs-lookup"><span data-stu-id="88132-259">Type `Sensors`, and choose **Show Sensors**.</span></span>  
+      1.  <span data-ttu-id="fd1fd-257">Ouvrez le menu Commande.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-257">Open the Command Menu.</span></span>  
+          *   <span data-ttu-id="fd1fd-258">Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="fd1fd-258">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span>  
+      1. <span data-ttu-id="fd1fd-259">Tapez `Sensors` et choisissez Afficher les **capteurs.**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-259">Type `Sensors`, and choose **Show Sensors**.</span></span>  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
-         <span data-ttu-id="88132-261">**Afficher les capteurs** pour la géolocalisation</span><span class="sxs-lookup"><span data-stu-id="88132-261">**Show Sensors** for geolocation</span></span>  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Afficher les capteurs pour la géolocalisation" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+         <span data-ttu-id="fd1fd-261">**Afficher les capteurs** pour la géolocalisation</span><span class="sxs-lookup"><span data-stu-id="fd1fd-261">**Show Sensors** for geolocation</span></span>  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-<span data-ttu-id="88132-262">Dans le panneau **capteurs** , vous pouvez sélectionner l’un des emplacements prédéfinis inclus dans devtools à l’aide du menu déroulant **emplacement** .</span><span class="sxs-lookup"><span data-stu-id="88132-262">On the **Sensors** panel, you may select one of the preset locations included in DevTools using the **Location** drop-down menu.</span></span>  <span data-ttu-id="88132-263">Pour entrer un emplacement personnalisé, sélectionnez **autres...**</span><span class="sxs-lookup"><span data-stu-id="88132-263">To enter a custom location, choose **Other…**</span></span> <span data-ttu-id="88132-264">et entrez les coordonnées de votre emplacement personnalisé.</span><span class="sxs-lookup"><span data-stu-id="88132-264">and enter the coordinates of your custom location.</span></span>  <span data-ttu-id="88132-265">Pour tester votre page dans un état d’erreur lorsque les informations de géolocalisation ne sont pas disponibles, sélectionnez **emplacement non disponible**.</span><span class="sxs-lookup"><span data-stu-id="88132-265">To test your page in an error state when location information is unavailable, choose **Location unavailable**.</span></span>  
+<span data-ttu-id="fd1fd-262">Dans le **panneau Capteurs,** vous pouvez sélectionner l’un des emplacements prédéfinés inclus dans DevTools à l’aide du menu déroulant Emplacement. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="fd1fd-262">On the **Sensors** panel, you may select one of the preset locations included in DevTools using the **Location** drop-down menu.</span></span>  <span data-ttu-id="fd1fd-263">Pour entrer un emplacement personnalisé, choisissez **Autre...**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-263">To enter a custom location, choose **Other…**</span></span> <span data-ttu-id="fd1fd-264">et entrez les coordonnées de votre emplacement personnalisé.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-264">and enter the coordinates of your custom location.</span></span>  <span data-ttu-id="fd1fd-265">Pour tester votre page dans un état d’erreur lorsque les informations d’emplacement ne sont pas disponibles, choisissez **Emplacement indisponible.**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-265">To test your page in an error state when location information is unavailable, choose **Location unavailable**.</span></span>  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
-    <span data-ttu-id="88132-267">Panneau **capteurs** avec une position prédéfinie sélectionnée</span><span class="sxs-lookup"><span data-stu-id="88132-267">**Sensors** panel with a preset location selected.</span></span>  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="Panneau capteurs avec un emplacement prédéfiny sélectionné" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
+    <span data-ttu-id="fd1fd-267">**Panneau capteurs** avec un emplacement prédéfiny sélectionné.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-267">**Sensors** panel with a preset location selected.</span></span>  
 :::image-end:::
 
-## <span data-ttu-id="88132-268">Définir l’orientation</span><span class="sxs-lookup"><span data-stu-id="88132-268">Set orientation</span></span>  
+## <a name="set-orientation"></a><span data-ttu-id="fd1fd-268">Définir l’orientation</span><span class="sxs-lookup"><span data-stu-id="fd1fd-268">Set orientation</span></span>  
 
 :::row:::
    :::column span="":::
-      <span data-ttu-id="88132-269">Si votre page dépend des informations d’orientation d’un appareil mobile pour s’afficher correctement, ouvrez l’interface utilisateur d’orientation.</span><span class="sxs-lookup"><span data-stu-id="88132-269">If your page depends on orientation information from a mobile device to render properly, open the orientation UI.</span></span>  
+      <span data-ttu-id="fd1fd-269">Si votre page dépend des informations d’orientation d’un appareil mobile pour un rendu correct, ouvrez l’interface utilisateur d’orientation.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-269">If your page depends on orientation information from a mobile device to render properly, open the orientation UI.</span></span>  
 
-      1.  <span data-ttu-id="88132-270">Sélectionnez **personnaliser et contrôler devtools** \ ( `...` \) > **plus**de  >  **capteurs**d’outils.</span><span class="sxs-lookup"><span data-stu-id="88132-270">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Sensors**.</span></span>  
+      1.  <span data-ttu-id="fd1fd-270">Choose **Customize and control DevTools** \( `...` \) > More **tools**  >  **Sensors**.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-270">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Sensors**.</span></span>  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
-         <span data-ttu-id="88132-272">**Capteurs** d’orientation</span><span class="sxs-lookup"><span data-stu-id="88132-272">**Sensors** for orientation</span></span>  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Capteurs d’orientation" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+         <span data-ttu-id="fd1fd-272">**Capteurs d’orientation**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-272">**Sensors** for orientation</span></span>  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  <span data-ttu-id="88132-273">Ouvrir le menu de commandes.</span><span class="sxs-lookup"><span data-stu-id="88132-273">Open the Command Menu.</span></span>  
-          *   <span data-ttu-id="88132-274">Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \).</span><span class="sxs-lookup"><span data-stu-id="88132-274">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span>  
-      1. <span data-ttu-id="88132-275">Tapez `Sensors` , puis sélectionnez **afficher les capteurs**.</span><span class="sxs-lookup"><span data-stu-id="88132-275">Type `Sensors`, and choose **Show Sensors**.</span></span>  
+      1.  <span data-ttu-id="fd1fd-273">Ouvrez le menu Commande.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-273">Open the Command Menu.</span></span>  
+          *   <span data-ttu-id="fd1fd-274">Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="fd1fd-274">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span>  
+      1. <span data-ttu-id="fd1fd-275">Tapez `Sensors` et choisissez Afficher les **capteurs.**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-275">Type `Sensors`, and choose **Show Sensors**.</span></span>  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
-         <span data-ttu-id="88132-277">**Afficher les capteurs** d’orientation</span><span class="sxs-lookup"><span data-stu-id="88132-277">**Show Sensors** for orientation</span></span>  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Afficher les capteurs pour l’orientation" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+         <span data-ttu-id="fd1fd-277">**Afficher les capteurs pour** l’orientation</span><span class="sxs-lookup"><span data-stu-id="fd1fd-277">**Show Sensors** for orientation</span></span>  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-<span data-ttu-id="88132-278">Dans le panneau **capteurs** , vous pouvez sélectionner une orientation prédéfinie dans le menu déroulant **orientation** .</span><span class="sxs-lookup"><span data-stu-id="88132-278">On the **Sensors** panel, you may select a preset orientation from the **Orientation** drop-down menu.</span></span>  <span data-ttu-id="88132-279">Pour entrer votre propre orientation, choisissez **orientation personnalisée**, puis entrez vos valeurs [alpha][MDNDeviceOrientaitonAlpha], [bêta][MDNDeviceOrientaitonBeta]et [gamma][MDNDeviceOrientaitonGamma] .</span><span class="sxs-lookup"><span data-stu-id="88132-279">To enter your own orientation, choose **Custom orientation**, and enter your own [alpha][MDNDeviceOrientaitonAlpha], [beta][MDNDeviceOrientaitonBeta], and [gamma][MDNDeviceOrientaitonGamma] values.</span></span>  
+<span data-ttu-id="fd1fd-278">Dans le **panneau Capteurs,** vous pouvez sélectionner une orientation prédéfinë dans le menu déroulant **Orientation.**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-278">On the **Sensors** panel, you may select a preset orientation from the **Orientation** drop-down menu.</span></span>  <span data-ttu-id="fd1fd-279">Pour entrer votre propre orientation, choisissez **l’orientation**personnalisée, puis entrez vos propres valeurs [alpha,][MDNDeviceOrientaitonAlpha] [bêta][MDNDeviceOrientaitonBeta]et [gamma.][MDNDeviceOrientaitonGamma]</span><span class="sxs-lookup"><span data-stu-id="fd1fd-279">To enter your own orientation, choose **Custom orientation**, and enter your own [alpha][MDNDeviceOrientaitonAlpha], [beta][MDNDeviceOrientaitonBeta], and [gamma][MDNDeviceOrientaitonGamma] values.</span></span>  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
-    <span data-ttu-id="88132-281">Options d' **orientation** dans le panneau **capteurs**</span><span class="sxs-lookup"><span data-stu-id="88132-281">**Orientation** options on the **Sensors** panel</span></span>  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="Options d’orientation sur le panneau Capteurs" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
+    <span data-ttu-id="fd1fd-281">**Options d’orientation** sur le **panneau Capteurs**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-281">**Orientation** options on the **Sensors** panel</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="88132-282">Définir une chaîne d’agent utilisateur</span><span class="sxs-lookup"><span data-stu-id="88132-282">Set user agent string</span></span>  
+## <a name="set-user-agent-string"></a><span data-ttu-id="fd1fd-282">Définir la chaîne de l’agent utilisateur</span><span class="sxs-lookup"><span data-stu-id="fd1fd-282">Set user agent string</span></span>  
 
 :::row:::
    :::column span="":::
-      <span data-ttu-id="88132-283">Si votre page dépend de la chaîne de l’agent utilisateur d’un appareil mobile pour s’afficher correctement, utilisez le volet de **conditions réseau** pour fournir différentes chaînes d’agent utilisateur.</span><span class="sxs-lookup"><span data-stu-id="88132-283">If your page depends on the user agent string from a mobile device to render properly, use the **Network conditions** panel to provide different user agent strings.</span></span>  
+      <span data-ttu-id="fd1fd-283">Si votre page dépend de la chaîne d’agent utilisateur d’un appareil mobile pour un rendu correct, utilisez le panneau **Conditions** réseau pour fournir différentes chaînes d’agent utilisateur.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-283">If your page depends on the user agent string from a mobile device to render properly, use the **Network conditions** panel to provide different user agent strings.</span></span>  
       
-      1.  <span data-ttu-id="88132-284">Sélectionnez **personnaliser et contrôler devtools** \ ( `...` \) > **plus d’outils**  >  **conditions réseau**.</span><span class="sxs-lookup"><span data-stu-id="88132-284">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Network conditions**.</span></span>  
+      1.  <span data-ttu-id="fd1fd-284">Choose **Customize and control DevTools** \( `...` \) > More **tools**  >  **Network conditions**.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-284">Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Network conditions**.</span></span>  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
-         <span data-ttu-id="88132-286">Entrée **conditions réseau** dans le menu **plus d’outils**</span><span class="sxs-lookup"><span data-stu-id="88132-286">**Network conditions** entry in the **More tools** menu</span></span>  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Entrée des conditions réseau dans le menu Plus d’outils" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
+         <span data-ttu-id="fd1fd-286">**Entrée des conditions réseau** dans le menu **Plus d’outils**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-286">**Network conditions** entry in the **More tools** menu</span></span>  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  <span data-ttu-id="88132-287">Ouvrir le menu de commandes.</span><span class="sxs-lookup"><span data-stu-id="88132-287">Open the Command Menu.</span></span>  
-          *   <span data-ttu-id="88132-288">Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \).</span><span class="sxs-lookup"><span data-stu-id="88132-288">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span>  
-      1. <span data-ttu-id="88132-289">Tapez `Network conditions` , puis choisissez **afficher les conditions du réseau**.</span><span class="sxs-lookup"><span data-stu-id="88132-289">Type `Network conditions`, and choose **Show Network conditions**.</span></span>  
+      1.  <span data-ttu-id="fd1fd-287">Ouvrez le menu Commande.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-287">Open the Command Menu.</span></span>  
+          *   <span data-ttu-id="fd1fd-288">Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="fd1fd-288">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).</span></span>  
+      1. <span data-ttu-id="fd1fd-289">Tapez `Network conditions` et choisissez Afficher les conditions **réseau.**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-289">Type `Network conditions`, and choose **Show Network conditions**.</span></span>  
       
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
-         **<span data-ttu-id="88132-291">Afficher les conditions réseau</span><span class="sxs-lookup"><span data-stu-id="88132-291">Show Network conditions</span></span>**  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Afficher les conditions réseau" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
+         **<span data-ttu-id="fd1fd-291">Afficher les conditions réseau</span><span class="sxs-lookup"><span data-stu-id="fd1fd-291">Show Network conditions</span></span>**  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-<span data-ttu-id="88132-292">En regard d' **agent utilisateur**, décochez la case **sélectionner automatiquement** .</span><span class="sxs-lookup"><span data-stu-id="88132-292">Next to **User agent**, clear the **Select automatically** checkbox.</span></span>  <span data-ttu-id="88132-293">Sélectionnez ensuite **personnalisé...** pour effectuer une sélection dans une liste de chaînes prédéfinies agent utilisateur.</span><span class="sxs-lookup"><span data-stu-id="88132-293">Then, choose **Custom...** to select from a list of predefined user agent strings.</span></span>  <span data-ttu-id="88132-294">Pour entrer votre propre chaîne d’agent utilisateur, entrez la chaîne dans **entrer un agent utilisateur personnalisé**.</span><span class="sxs-lookup"><span data-stu-id="88132-294">To enter your own user agent string, enter the string in **Enter a custom user agent**.</span></span>  
+<span data-ttu-id="fd1fd-292">En regard de **l’agent utilisateur,** cochez la **case** Sélectionner automatiquement.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-292">Next to **User agent**, clear the **Select automatically** checkbox.</span></span>  <span data-ttu-id="fd1fd-293">Ensuite, choisissez **Personnalisé...** pour sélectionner dans une liste de chaînes d’agent utilisateur prédéfinées.</span><span class="sxs-lookup"><span data-stu-id="fd1fd-293">Then, choose **Custom...** to select from a list of predefined user agent strings.</span></span>  <span data-ttu-id="fd1fd-294">Pour entrer votre propre chaîne d’agent utilisateur, entrez la chaîne **dans Entrer un agent utilisateur personnalisé.**</span><span class="sxs-lookup"><span data-stu-id="fd1fd-294">To enter your own user agent string, enter the string in **Enter a custom user agent**.</span></span>  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Barre d’outils de l’appareil" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
-    <span data-ttu-id="88132-296">Définissez la chaîne de l’agent utilisateur sur Microsoft Edge sur macOS.</span><span class="sxs-lookup"><span data-stu-id="88132-296">Set the user agent string to Microsoft Edge on macOS</span></span>  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Définir la chaîne de l’agent utilisateur sur Microsoft Edge sur macOS" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
+    <span data-ttu-id="fd1fd-296">Définir la chaîne de l’agent utilisateur sur Microsoft Edge sur macOS</span><span class="sxs-lookup"><span data-stu-id="fd1fd-296">Set the user agent string to Microsoft Edge on macOS</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="88132-297">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="88132-297">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="fd1fd-297">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="fd1fd-297">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -348,22 +348,22 @@ ms.locfileid: "11125103"
 <!-- links -->  
 
 <!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community | Microsoft Docs"  -->
-[DevToolsRemoteDebugging]: .. /Remote-Debugging/index.MD "mise en route des appareils Android de débogage à distance | Documents Microsoft  
+[DevToolsRemoteDebugging]: .. /remote-debugging/index.md " Get started with remote debugging Android devices | Microsoft Docs »  
 
-[MDNWindowDevicePixelRatio]: https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio "Window. devicePixelRatio | MDN"  
+[MDNWindowDevicePixelRatio]: https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio "Window.devicePixelRatio | MDN"  
 [MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "Agent utilisateur | MDN"  
-[MDNDeviceOrientaitonAlpha]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha "DeviceOrientationEvent. alpha | MDN"  
-[MDNDeviceOrientaitonBeta]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta "DeviceOrientationEvent. beta | MDN"  
-[MDNDeviceOrientaitonGamma]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma "DeviceOrientationEvent. gamma | MDN"  
+[MDNDeviceOrientaitonAlpha]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha "DeviceOrientationEvent.alpha, | MDN"  
+[MDNDeviceOrientaitonBeta]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta "DeviceOrientationEvent.beta, | MDN"  
+[MDNDeviceOrientaitonGamma]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma "DeviceOrientationEvent.gamma, | MDN"  
 
-[WikiApproximation]: https://en.wikipedia.org/wiki/Order_of_approximation#First-order "Ordre de rapprochement-premier-ordre-Wikipédia"  
+[WikiApproximation]: https://en.wikipedia.org/wiki/Order_of_approximation#First-order "Order of Approximation - First-order - Wikipedia"  
 
 > [!NOTE]
-> <span data-ttu-id="88132-305">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="88132-305">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="88132-306">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/device-mode/index) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).</span><span class="sxs-lookup"><span data-stu-id="88132-306">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="fd1fd-305">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="fd1fd-305">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="fd1fd-306">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/device-mode/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="fd1fd-306">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
-<span data-ttu-id="88132-308">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="88132-308">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+<span data-ttu-id="fd1fd-308">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="fd1fd-308">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -1,89 +1,90 @@
 ---
-description: En savoir plus sur les nouveautés à venir pour WebView2
-title: Introduction à la WebView 2 de Microsoft Edge
+description: En savoir plus sur les étapes suivantes pour WebView2
+title: Feuille de route pour Microsoft Edge WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge
-ms.openlocfilehash: 99e743db0c1fb17ea46405b08e1ed074a3386068
-ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+ms.openlocfilehash: 0f51b5cab32bdb9b9aa9b6baceef5fe5a17eea54
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182359"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398412"
 ---
-# <span data-ttu-id="13c33-104">Introduction à Microsoft Edge WebView2</span><span class="sxs-lookup"><span data-stu-id="13c33-104">Microsoft Edge WebView2 roadmap</span></span>  
-
-##### <span data-ttu-id="13c33-105">Dernière mise à jour: 2020 novembre</span><span class="sxs-lookup"><span data-stu-id="13c33-105">Last Updated: November 2020</span></span>  
-
-<span data-ttu-id="13c33-106">Le contrôle WebView2 permet aux développeurs d’incorporer des technologies Web dans leurs applications natives.</span><span class="sxs-lookup"><span data-stu-id="13c33-106">The WebView2 control allows developers to embed web technologies in their native applications.</span></span>  <span data-ttu-id="13c33-107">La page suivante présente la procédure prospective pour WebView2.</span><span class="sxs-lookup"><span data-stu-id="13c33-107">The following page outlines the prospective roadmap for WebView2.</span></span>  
+# <a name="microsoft-edge-webview2-roadmap"></a><span data-ttu-id="636d4-104">Feuille de route Microsoft Edge WebView2</span><span class="sxs-lookup"><span data-stu-id="636d4-104">Microsoft Edge WebView2 roadmap</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="13c33-108">WebView2 est en cours de développement actif et la présentation continue à évoluer en fonction des variations du marché et des commentaires des clients. Veuillez noter que les plans décrits ici ne sont pas exhaustifs et peuvent faire l’objet de modifications.</span><span class="sxs-lookup"><span data-stu-id="13c33-108">WebView2 is under active development and the roadmap continues to evolve based on market changes and customer feedback, so please note that the plans outlined here are not exhaustive and are subject to change.</span></span>  
+> <span data-ttu-id="636d4-105">Last Updated: November 2020</span><span class="sxs-lookup"><span data-stu-id="636d4-105">Last Updated:  November 2020</span></span>  
 
-<span data-ttu-id="13c33-109">Si vous avez des inquiétudes ou des questions concernant la formule d’introduction, reportez-vous à la [référentiel Samples][GithubMicrosoftedgeWebviewfeedbackMain]de vos commentaires.</span><span class="sxs-lookup"><span data-stu-id="13c33-109">If you have concerns or questions about the Roadmap, provide your feedback in the [feedback repo][GithubMicrosoftedgeWebviewfeedbackMain].</span></span>  
+<span data-ttu-id="636d4-106">Le contrôle WebView2 permet aux développeurs d’incorporer des technologies web dans leurs applications natives.</span><span class="sxs-lookup"><span data-stu-id="636d4-106">The WebView2 control allows developers to embed web technologies in their native applications.</span></span>  <span data-ttu-id="636d4-107">La page suivante décrit la feuille de route prospective pour WebView2.</span><span class="sxs-lookup"><span data-stu-id="636d4-107">The following page outlines the prospective roadmap for WebView2.</span></span>  
 
-<span data-ttu-id="13c33-110">L’équipe WebView2 planifie les efforts importants suivants pour les mises à jour ultérieures.</span><span class="sxs-lookup"><span data-stu-id="13c33-110">The WebView2 team is planning the following major efforts for future updates.</span></span>  
+> [!NOTE]
+> <span data-ttu-id="636d4-108">WebView2 est en cours de développement actif et la feuille de route continue d’évoluer en fonction des changements de marché et des commentaires des clients. Notez donc que les plans présentés ici ne sont pas exhaustifs et peuvent faire l’objet de modifications.</span><span class="sxs-lookup"><span data-stu-id="636d4-108">WebView2 is under active development and the roadmap continues to evolve based on market changes and customer feedback, so please note that the plans outlined here are not exhaustive and are subject to change.</span></span>  
+
+<span data-ttu-id="636d4-109">Si vous avez des préoccupations ou des questions sur la feuille de route, faites part de vos commentaires dans le [repo de commentaires.][GithubMicrosoftedgeWebviewfeedbackMain]</span><span class="sxs-lookup"><span data-stu-id="636d4-109">If you have concerns or questions about the Roadmap, provide your feedback in the [feedback repo][GithubMicrosoftedgeWebviewfeedbackMain].</span></span>  
+
+<span data-ttu-id="636d4-110">L’équipe WebView2 planifie les efforts majeurs suivants pour les futures mises à jour.</span><span class="sxs-lookup"><span data-stu-id="636d4-110">The WebView2 team is planning the following major efforts for future updates.</span></span>  
 
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="13c33-111">Programme d’installation d’WebView2 Runtime</span><span class="sxs-lookup"><span data-stu-id="13c33-111">WebView2 Runtime Installer</span></span>  
+      <span data-ttu-id="636d4-111">Programme d’installation Runtime WebView2</span><span class="sxs-lookup"><span data-stu-id="636d4-111">WebView2 Runtime Installer</span></span>  
    :::column-end:::
    :::column span="2":::
-      *   <span data-ttu-id="13c33-112">4e trimestre 2020</span><span class="sxs-lookup"><span data-stu-id="13c33-112">Q4 2020</span></span>
+      *   <span data-ttu-id="636d4-112">T4 2020</span><span class="sxs-lookup"><span data-stu-id="636d4-112">Q4 2020</span></span>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="13c33-113">Version corrigée</span><span class="sxs-lookup"><span data-stu-id="13c33-113">Fixed Version</span></span>  
+      <span data-ttu-id="636d4-113">Version corrigée</span><span class="sxs-lookup"><span data-stu-id="636d4-113">Fixed Version</span></span>  
    :::column-end:::
    :::column span="2":::
-      *   <span data-ttu-id="13c33-114">4e trimestre 2020</span><span class="sxs-lookup"><span data-stu-id="13c33-114">Q4 2020</span></span>  
+      *   <span data-ttu-id="636d4-114">T4 2020</span><span class="sxs-lookup"><span data-stu-id="636d4-114">Q4 2020</span></span>  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      <span data-ttu-id="13c33-115">Disponibilité générale</span><span class="sxs-lookup"><span data-stu-id="13c33-115">General Availability</span></span>  
+      <span data-ttu-id="636d4-115">Disponibilité générale</span><span class="sxs-lookup"><span data-stu-id="636d4-115">General Availability</span></span>  
    :::column-end:::
    :::column span="2":::
-      *   <span data-ttu-id="13c33-116">Win32 C/C++ \ (4e trim 2020 \)</span><span class="sxs-lookup"><span data-stu-id="13c33-116">Win32 C/C++ \(Q4 2020\)</span></span>  
-      *   <span data-ttu-id="13c33-117">.NET \ (4E TRIM 2020 \)</span><span class="sxs-lookup"><span data-stu-id="13c33-117">.NET \(Q4 2020\)</span></span>  
-      *   [<span data-ttu-id="13c33-118">WinUI 3.0</span><span class="sxs-lookup"><span data-stu-id="13c33-118">WinUI 3.0</span></span>][GithubMicrosoftUiXamlRoadmap]  
+      *   <span data-ttu-id="636d4-116">Win32 C/C++ \(Q4 2020\)</span><span class="sxs-lookup"><span data-stu-id="636d4-116">Win32 C/C++ \(Q4 2020\)</span></span>  
+      *   <span data-ttu-id="636d4-117">.NET \(Q4 2020\)</span><span class="sxs-lookup"><span data-stu-id="636d4-117">.NET \(Q4 2020\)</span></span>  
+      *   [<span data-ttu-id="636d4-118">WinUI 3.0</span><span class="sxs-lookup"><span data-stu-id="636d4-118">WinUI 3.0</span></span>][GithubMicrosoftUiXamlRoadmap]  
    :::column-end:::
 :::row-end:::  
 
-## <span data-ttu-id="13c33-119">Programme d’exécution et de WebView2</span><span class="sxs-lookup"><span data-stu-id="13c33-119">WebView2 Runtime and Installer</span></span>  
+## <a name="webview2-runtime-and-installer"></a><span data-ttu-id="636d4-119">Runtime et programme d’installation WebView2</span><span class="sxs-lookup"><span data-stu-id="636d4-119">WebView2 Runtime and Installer</span></span>  
 
-<span data-ttu-id="13c33-120">Le [modèle de distribution persistant][ConceptDistributionEvergreenModel] vous permet de cibler ou de mettre en chaîne l’installation de WebView2 Runtime sur l’ordinateur de l’utilisateur.</span><span class="sxs-lookup"><span data-stu-id="13c33-120">[Evergreen distribution model][ConceptDistributionEvergreenModel] allows you to target or chain install the WebView2 Runtime onto your user's machine.</span></span>  <span data-ttu-id="13c33-121">Le programme d’exécution et de programme d’installation de WebView2 a atteint une disponibilité générale (GA).</span><span class="sxs-lookup"><span data-stu-id="13c33-121">The Evergreen WebView2 Runtime and installer has reached General Availability \(GA\).</span></span>  
+<span data-ttu-id="636d4-120">[Un modèle de distribution persistant][ConceptDistributionEvergreenModel] vous permet de cibler ou d’installer le runtime WebView2 sur l’ordinateur de votre utilisateur.</span><span class="sxs-lookup"><span data-stu-id="636d4-120">[Evergreen distribution model][ConceptDistributionEvergreenModel] allows you to target or chain install the WebView2 Runtime onto your user's machine.</span></span>  <span data-ttu-id="636d4-121">Le programme d’installation et le runtime WebView2 persistants ont atteint la disponibilité générale \(GA\).</span><span class="sxs-lookup"><span data-stu-id="636d4-121">The Evergreen WebView2 Runtime and installer has reached General Availability \(GA\).</span></span>  
 
-## <span data-ttu-id="13c33-122">Version corrigée</span><span class="sxs-lookup"><span data-stu-id="13c33-122">Fixed version</span></span>  
+## <a name="fixed-version"></a><span data-ttu-id="636d4-122">Version fixe</span><span class="sxs-lookup"><span data-stu-id="636d4-122">Fixed version</span></span>  
 
-<span data-ttu-id="13c33-123">Le [modèle de distribution de version fixe][ConceptsDistributionFixedVersionModel] vous permet d’empaqueter les fichiers binaires Microsoft Edge dans votre application native.</span><span class="sxs-lookup"><span data-stu-id="13c33-123">[Fixed version distribution model][ConceptsDistributionFixedVersionModel] allows you to package the Microsoft Edge binaries inside your native application.</span></span>  <span data-ttu-id="13c33-124">La version fixe a atteint une disponibilité générale (GA).</span><span class="sxs-lookup"><span data-stu-id="13c33-124">The Fixed Version has reached General Availability \(GA\).</span></span>  
+<span data-ttu-id="636d4-123">[Le modèle de distribution de version][ConceptsDistributionFixedVersionModel] fixe vous permet de mettre en package les binaires Microsoft Edge à l’intérieur de votre application native.</span><span class="sxs-lookup"><span data-stu-id="636d4-123">[Fixed version distribution model][ConceptsDistributionFixedVersionModel] allows you to package the Microsoft Edge binaries inside your native application.</span></span>  <span data-ttu-id="636d4-124">La version fixe a atteint la disponibilité générale \(GA\).</span><span class="sxs-lookup"><span data-stu-id="636d4-124">The Fixed Version has reached General Availability \(GA\).</span></span>  
 
-## <span data-ttu-id="13c33-125">Disponibilité générale</span><span class="sxs-lookup"><span data-stu-id="13c33-125">General availability</span></span>  
+## <a name="general-availability"></a><span data-ttu-id="636d4-125">Disponibilité générale</span><span class="sxs-lookup"><span data-stu-id="636d4-125">General availability</span></span>  
 
-### <span data-ttu-id="13c33-126">Win32 C/C++</span><span class="sxs-lookup"><span data-stu-id="13c33-126">Win32 C/C++</span></span>  
+### <a name="win32-cc"></a><span data-ttu-id="636d4-126">Win32 C/C++</span><span class="sxs-lookup"><span data-stu-id="636d4-126">Win32 C/C++</span></span>  
 
-<span data-ttu-id="13c33-127">Le kit de développement logiciel (SDK) Win32 C/C++ a atteint la disponibilité.</span><span class="sxs-lookup"><span data-stu-id="13c33-127">The Win32 C/C++ SDK has reached GA.</span></span>  
+<span data-ttu-id="636d4-127">Le SDK Win32 C/C++ a atteint la ga.</span><span class="sxs-lookup"><span data-stu-id="636d4-127">The Win32 C/C++ SDK has reached GA.</span></span>  
 
-### <span data-ttu-id="13c33-128">.NET</span><span class="sxs-lookup"><span data-stu-id="13c33-128">.NET</span></span>  
+### <a name="net"></a><span data-ttu-id="636d4-128">.NET</span><span class="sxs-lookup"><span data-stu-id="636d4-128">.NET</span></span>  
 
-<span data-ttu-id="13c33-129">Le kit de développement logiciel (SDK) .NET a atteint la disponibilité.</span><span class="sxs-lookup"><span data-stu-id="13c33-129">The .NET SDK has reached GA.</span></span> 
+<span data-ttu-id="636d4-129">Le SDK .NET a atteint la ga.</span><span class="sxs-lookup"><span data-stu-id="636d4-129">The .NET SDK has reached GA.</span></span> 
 
-### <span data-ttu-id="13c33-130">WinUI 3.0</span><span class="sxs-lookup"><span data-stu-id="13c33-130">WinUI 3.0</span></span>  
+### <a name="winui-30"></a><span data-ttu-id="636d4-130">WinUI 3.0</span><span class="sxs-lookup"><span data-stu-id="636d4-130">WinUI 3.0</span></span>  
 
-<span data-ttu-id="13c33-131">Vous pouvez accéder à WebView2 dans vos applications UWP à l’aide de [Win interface 3,0][UwpToolkitsWinui3Index], actuellement en alpha.</span><span class="sxs-lookup"><span data-stu-id="13c33-131">You can access WebView2 in your UWP applications using [Win UI 3.0][UwpToolkitsWinui3Index], currently in alpha.</span></span>  <span data-ttu-id="13c33-132">Pour plus d’informations sur la façon de rester à jour, consultez la documentation de la [bibliothèque d’interface utilisateur Windows][GithubMicrosoftUiXamlRoadmap].</span><span class="sxs-lookup"><span data-stu-id="13c33-132">For more information about keeping up to date, see [Windows UI Library Roadmap][GithubMicrosoftUiXamlRoadmap].</span></span>  
+<span data-ttu-id="636d4-131">Vous pouvez accéder à WebView2 dans vos applications UWP à l’aide de [Win UI 3.0,][UwpToolkitsWinui3Index]actuellement en alpha.</span><span class="sxs-lookup"><span data-stu-id="636d4-131">You can access WebView2 in your UWP applications using [Win UI 3.0][UwpToolkitsWinui3Index], currently in alpha.</span></span>  <span data-ttu-id="636d4-132">Pour plus d’informations sur la mise à jour, accédez à la feuille de route de la bibliothèque [d’interface utilisateur Windows.][GithubMicrosoftUiXamlRoadmap]</span><span class="sxs-lookup"><span data-stu-id="636d4-132">For more information about keeping up to date, navigate to [Windows UI Library Roadmap][GithubMicrosoftUiXamlRoadmap].</span></span>  
 
 <!-- links -->  
 
-[ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "Modèle de distribution persistant: distribution d’applications à l’aide de WebView2 | Documents Microsoft"  
-[ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "Modèle de distribution de version fixe: distribution d’applications à l’aide de WebView2 | Documents Microsoft"  
+[ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "Modèle de distribution persistant : distribution d’applications à l’aide de WebView2 | Documents Microsoft"  
+[ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "Modèle de distribution de version fixe : distribution d’applications à l’aide de WebView2 | Documents Microsoft"  
 
-[UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Version d’évaluation de la bibliothèque d’interface utilisateur 3,0 Preview 1 (2020) | Documents Microsoft"  
+[UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Windows UI Library 3.0 Preview 1 (mai 2020) | Documents Microsoft"  
 
-[GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "Commentaires sur le WebView-MicrosoftEdge/WebViewFeedback | GitHub"  
+[GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "Commentaires WebView - MicrosoftEdge/WebViewFeedback | GitHub"  
 
-[GithubMicrosoftUiXamlRoadmap]: https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md "Plan de la bibliothèque d’interface utilisateur Windows-Microsoft/Microsoft-UI-XAML | GitHub"  
+[GithubMicrosoftUiXamlRoadmap]: https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md "Feuille de route de la bibliothèque d’interface utilisateur Windows - Microsoft/microsoft-ui-xaml | GitHub"  

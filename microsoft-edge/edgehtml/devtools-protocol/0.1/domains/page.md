@@ -1,85 +1,69 @@
 ---
-description: Référence du 0,1 Protocole DevTools (EdgeHTML) pour le domaine de la page. Les actions et événements liés à la page inspectée appartiennent au domaine de la page.
-title: Page Domain-DevTools Protocol version 0,1 (EdgeHTML)
+description: Référence du protocole DevTools version 0.1 (EdgeHTML) pour le domaine de page. Les actions et événements liés à la page inspectée appartiennent au domaine de page.
+title: Domaine de page - DevTools Protocol Version 0.1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 55575e54b9125d7ff544c23c81da4b15d3b56fb1
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: b04b0685a6b465d40e999a2a48d370573a3058d8
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233249"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399147"
 ---
-# <span data-ttu-id="b5f93-104">Page Domain-DevTools Protocol version 0,1 (EdgeHTML)</span><span class="sxs-lookup"><span data-stu-id="b5f93-104">Page Domain - DevTools Protocol Version 0.1 (EdgeHTML)</span></span>  
+# <a name="page-domain---devtools-protocol-version-01-edgehtml"></a><span data-ttu-id="e6547-104">Domaine de page - DevTools Protocol Version 0.1 (EdgeHTML)</span><span class="sxs-lookup"><span data-stu-id="e6547-104">Page Domain - DevTools Protocol Version 0.1 (EdgeHTML)</span></span>  
 
-<span data-ttu-id="b5f93-105">Les actions et événements liés à la page inspectée appartiennent au domaine de la page.</span><span class="sxs-lookup"><span data-stu-id="b5f93-105">Actions and events related to the inspected page belong to the page domain.</span></span>
+<span data-ttu-id="e6547-105">Les actions et événements liés à la page inspectée appartiennent au domaine de page.</span><span class="sxs-lookup"><span data-stu-id="e6547-105">Actions and events related to the inspected page belong to the page domain.</span></span>  
 
-| | |
-|-|-|
-| [**<span data-ttu-id="b5f93-106">Méthodes</span><span class="sxs-lookup"><span data-stu-id="b5f93-106">Methods</span></span>**](#methods) | <span data-ttu-id="b5f93-107">[activer](#enable), [Désactiver](#disable), [naviguer](#navigate)</span><span class="sxs-lookup"><span data-stu-id="b5f93-107">[enable](#enable), [disable](#disable), [navigate](#navigate)</span></span> |
-| [**<span data-ttu-id="b5f93-108">Types</span><span class="sxs-lookup"><span data-stu-id="b5f93-108">Types</span></span>**](#types) | [<span data-ttu-id="b5f93-109">FrameId</span><span class="sxs-lookup"><span data-stu-id="b5f93-109">FrameId</span></span>](#frameid) |
-## <span data-ttu-id="b5f93-110">Méthodes</span><span class="sxs-lookup"><span data-stu-id="b5f93-110">Methods</span></span>
+| <span data-ttu-id="e6547-106">Classification</span><span class="sxs-lookup"><span data-stu-id="e6547-106">Classification</span></span> | <span data-ttu-id="e6547-107">Membres</span><span class="sxs-lookup"><span data-stu-id="e6547-107">Members</span></span> |  
+|:--- |:--- |  
+| [**<span data-ttu-id="e6547-108">Méthodes</span><span class="sxs-lookup"><span data-stu-id="e6547-108">Methods</span></span>**](#methods) | <span data-ttu-id="e6547-109">[activer,](#enable) [désactiver,](#disable) [naviguer](#navigate)</span><span class="sxs-lookup"><span data-stu-id="e6547-109">[enable](#enable), [disable](#disable), [navigate](#navigate)</span></span> |  
+| [**<span data-ttu-id="e6547-110">Types</span><span class="sxs-lookup"><span data-stu-id="e6547-110">Types</span></span>**](#types) | [<span data-ttu-id="e6547-111">FrameId</span><span class="sxs-lookup"><span data-stu-id="e6547-111">FrameId</span></span>](#frameid) |  
 
-### <span data-ttu-id="b5f93-111">activer</span><span class="sxs-lookup"><span data-stu-id="b5f93-111">enable</span></span>
-<span data-ttu-id="b5f93-112">Active les notifications de domaine de page.</span><span class="sxs-lookup"><span data-stu-id="b5f93-112">Enables page domain notifications.</span></span>
+## <a name="methods"></a><span data-ttu-id="e6547-112">Méthodes</span><span class="sxs-lookup"><span data-stu-id="e6547-112">Methods</span></span>  
 
+### <a name="enable"></a><span data-ttu-id="e6547-113">activer</span><span class="sxs-lookup"><span data-stu-id="e6547-113">enable</span></span>  
 
----
+<span data-ttu-id="e6547-114">Active les notifications de domaine de page.</span><span class="sxs-lookup"><span data-stu-id="e6547-114">Enables page domain notifications.</span></span>  
 
-### <span data-ttu-id="b5f93-113">désactiver </span><span class="sxs-lookup"><span data-stu-id="b5f93-113">disable</span></span>
-<span data-ttu-id="b5f93-114">Désactive les notifications de domaine de la page.</span><span class="sxs-lookup"><span data-stu-id="b5f93-114">Disables page domain notifications.</span></span>
+&nbsp;  
 
+---  
 
----
+### <a name="disable"></a><span data-ttu-id="e6547-115">désactiver </span><span class="sxs-lookup"><span data-stu-id="e6547-115">disable</span></span>  
 
-### <span data-ttu-id="b5f93-115">naviguer</span><span class="sxs-lookup"><span data-stu-id="b5f93-115">navigate</span></span>
-<span data-ttu-id="b5f93-116">Accède à la page active à l’URL donnée.</span><span class="sxs-lookup"><span data-stu-id="b5f93-116">Navigates current page to the given URL.</span></span>
+<span data-ttu-id="e6547-116">Désactive les notifications de domaine de page.</span><span class="sxs-lookup"><span data-stu-id="e6547-116">Disables page domain notifications.</span></span>  
 
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="b5f93-117">Parameters</span><span class="sxs-lookup"><span data-stu-id="b5f93-117">Parameters</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="b5f93-118">url</span><span class="sxs-lookup"><span data-stu-id="b5f93-118">url</span></span></td>
-            <td><code class="flyout">string</code></td>
-            <td><span data-ttu-id="b5f93-119">URL permettant d’accéder à la page.</span><span class="sxs-lookup"><span data-stu-id="b5f93-119">URL to navigate the page to.</span></span></td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th><span data-ttu-id="b5f93-120">Renvoie</span><span class="sxs-lookup"><span data-stu-id="b5f93-120">Returns</span></span></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span data-ttu-id="b5f93-121">frameId</span><span class="sxs-lookup"><span data-stu-id="b5f93-121">frameId</span></span></td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td><span><b><span data-ttu-id="b5f93-122">Pratiqué.</span><span class="sxs-lookup"><span data-stu-id="b5f93-122">Experimental.</span></span> </b></span><span data-ttu-id="b5f93-123">ID de cadre qui sera parcouru.</span><span class="sxs-lookup"><span data-stu-id="b5f93-123">Frame id that will be navigated.</span></span></td>
-        </tr>
-    </tbody>
-</table>
+&nbsp;  
 
----
+---  
 
-## <span data-ttu-id="b5f93-124">Types</span><span class="sxs-lookup"><span data-stu-id="b5f93-124">Types</span></span>
+### <a name="navigate"></a><span data-ttu-id="e6547-117">naviguer</span><span class="sxs-lookup"><span data-stu-id="e6547-117">navigate</span></span>  
 
-### <a name="frameid"></a> <span data-ttu-id="b5f93-125">FrameId</span><span class="sxs-lookup"><span data-stu-id="b5f93-125">FrameId</span></span> `string`
+<span data-ttu-id="e6547-118">Navigue vers la page actuelle jusqu’à l’URL donnée.</span><span class="sxs-lookup"><span data-stu-id="e6547-118">Navigates current page to the given URL.</span></span>  
 
-<span data-ttu-id="b5f93-126">Identificateur de cadre unique.</span><span class="sxs-lookup"><span data-stu-id="b5f93-126">Unique frame identifier.</span></span>
+| <span data-ttu-id="e6547-119">Parameters</span><span class="sxs-lookup"><span data-stu-id="e6547-119">Parameters</span></span> | <span data-ttu-id="e6547-120">Type</span><span class="sxs-lookup"><span data-stu-id="e6547-120">Type</span></span> | <span data-ttu-id="e6547-121">Détails</span><span class="sxs-lookup"><span data-stu-id="e6547-121">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="e6547-122">url</span><span class="sxs-lookup"><span data-stu-id="e6547-122">url</span></span> | `string` | <span data-ttu-id="e6547-123">URL vers qui accéder à la page.</span><span class="sxs-lookup"><span data-stu-id="e6547-123">URL to navigate the page to.</span></span> |  
 
+| <span data-ttu-id="e6547-124">Renvoie</span><span class="sxs-lookup"><span data-stu-id="e6547-124">Returns</span></span> | <span data-ttu-id="e6547-125">Type</span><span class="sxs-lookup"><span data-stu-id="e6547-125">Type</span></span> | <span data-ttu-id="e6547-126">Détails</span><span class="sxs-lookup"><span data-stu-id="e6547-126">Details</span></span> |  
+|:--- |:--- |:--- |  
+| <span data-ttu-id="e6547-127">frameId</span><span class="sxs-lookup"><span data-stu-id="e6547-127">frameId</span></span> | [<span data-ttu-id="e6547-128">FrameId</span><span class="sxs-lookup"><span data-stu-id="e6547-128">FrameId</span></span>](#frameid) | <span data-ttu-id="e6547-129">**Expérimental**.</span><span class="sxs-lookup"><span data-stu-id="e6547-129">**Experimental**.</span></span>  <span data-ttu-id="e6547-130">ID d’image à parcourir.</span><span class="sxs-lookup"><span data-stu-id="e6547-130">Frame ID that will be navigated.</span></span> |  
 
----
+---  
+
+## <a name="types"></a><span data-ttu-id="e6547-131">Types</span><span class="sxs-lookup"><span data-stu-id="e6547-131">Types</span></span>  
+
+### <a name="frameid-string"></a><span data-ttu-id="e6547-132">Chaîne FrameId</span><span class="sxs-lookup"><span data-stu-id="e6547-132">FrameId string</span></span>  
+
+<a name="frameid"></a>  
+
+<span data-ttu-id="e6547-133">Identificateur d’image unique.</span><span class="sxs-lookup"><span data-stu-id="e6547-133">Unique frame identifier.</span></span>  
+
+&nbsp;  
+
+---  

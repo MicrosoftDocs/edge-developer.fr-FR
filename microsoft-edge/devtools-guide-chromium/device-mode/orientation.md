@@ -1,18 +1,18 @@
 ---
-description: Ouvrez l’onglet capteurs et accédez à la section orientation.
+description: Ouvrez l’outil Capteurs et accédez à la section Orientation.
 title: Simuler l’orientation de l’appareil avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 01e6d3a24513b504665dbe0c03d9e72cc1f97533
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 754df3b271b44f986802c2847862624f6a8b5bd9
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124956"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398713"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,40 +28,40 @@ ms.locfileid: "11124956"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <span data-ttu-id="49f0c-104">Simuler l’orientation de l’appareil avec Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="49f0c-104">Simulate device orientation with Microsoft Edge DevTools</span></span>  
+# <a name="simulate-device-orientation-with-microsoft-edge-devtools"></a><span data-ttu-id="c30c5-104">Simuler l’orientation de l’appareil avec Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="c30c5-104">Simulate device orientation with Microsoft Edge DevTools</span></span>  
 
-<span data-ttu-id="49f0c-105">Effectuez les opérations suivantes pour simuler différentes orientations d’appareil à partir de Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="49f0c-105">Complete the following actions to simulate different device orientations from Microsoft Edge DevTools.</span></span>  
+<span data-ttu-id="c30c5-105">Effectuer les actions suivantes pour simuler différentes orientations d’appareil à partir de Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="c30c5-105">Complete the following actions to simulate different device orientations from Microsoft Edge DevTools.</span></span>  
 
 <!--todo: update device orientation section when available -->  
 
-1.  <span data-ttu-id="49f0c-106">Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.</span><span class="sxs-lookup"><span data-stu-id="49f0c-106">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
+1.  <span data-ttu-id="c30c5-106">Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le **menu Commande.**</span><span class="sxs-lookup"><span data-stu-id="c30c5-106">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
     
-    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Menu de commandes" lightbox="../media/device-mode-console-command-menu.msft.png":::
-       <span data-ttu-id="49f0c-108">**Menu de commandes**</span><span class="sxs-lookup"><span data-stu-id="49f0c-108">The **Command Menu**</span></span>  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Menu Commande" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       <span data-ttu-id="c30c5-108">Menu **Commande**</span><span class="sxs-lookup"><span data-stu-id="c30c5-108">The **Command Menu**</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="49f0c-109">Tapez `sensors` , choisissez **afficher les capteurs**, puis sélectionnez `Enter` .</span><span class="sxs-lookup"><span data-stu-id="49f0c-109">Type `sensors`, choose **Show Sensors**, and select `Enter`.</span></span>  <span data-ttu-id="49f0c-110">L’onglet **capteurs** s’ouvre en bas de la fenêtre devtools.</span><span class="sxs-lookup"><span data-stu-id="49f0c-110">The **Sensors** tab opens at the bottom of your DevTools window.</span></span>  
-1.  <span data-ttu-id="49f0c-111">Dans la liste **orientation** , sélectionnez l’une des orientations prédéfinies, par exemple `Portrait upside down` , ou choisissez **orientation personnalisée** pour fournir votre propre orientation exacte.</span><span class="sxs-lookup"><span data-stu-id="49f0c-111">From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or choose **Custom orientation** to provide your own exact orientation.</span></span>  
+1.  <span data-ttu-id="c30c5-109">Tapez `sensors` , choisissez Afficher les **capteurs,** puis sélectionnez `Enter` .</span><span class="sxs-lookup"><span data-stu-id="c30c5-109">Type `sensors`, choose **Show Sensors**, and select `Enter`.</span></span>  <span data-ttu-id="c30c5-110">**L’outil** Capteurs s’ouvre en bas de votre fenêtre DevTools.</span><span class="sxs-lookup"><span data-stu-id="c30c5-110">The **Sensors** tool opens at the bottom of your DevTools window.</span></span>  
+1.  <span data-ttu-id="c30c5-111">Dans la **liste Orientation,** sélectionnez l’une des orientations prédéfines, par exemple, ou choisissez Orientation personnalisée pour fournir `Portrait upside down` votre propre orientation exacte. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="c30c5-111">From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or choose **Custom orientation** to provide your own exact orientation.</span></span>  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Menu de commandes" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
-             <span data-ttu-id="49f0c-113">Sélectionner `Portrait upside down` dans la liste d' **orientation**</span><span class="sxs-lookup"><span data-stu-id="49f0c-113">Select `Portrait upside down` from the **Orientation** list</span></span>  
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Choisir portrait à l’envers à partir de la liste Orientation" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
+             <span data-ttu-id="c30c5-113">Choisir `Portrait upside down` dans la liste **Orientation**</span><span class="sxs-lookup"><span data-stu-id="c30c5-113">Choose `Portrait upside down` from the **Orientation** list</span></span>  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          <span data-ttu-id="49f0c-114">Une fois l' **orientation personnalisée**sélectionnée, `alpha` les `beta` champs, et `gamma` sont activés.</span><span class="sxs-lookup"><span data-stu-id="49f0c-114">After you choose **Custom orientation**, the `alpha`, `beta`, and `gamma` fields are enabled.</span></span>  
-          <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how each axis works.  -->  
+          <span data-ttu-id="c30c5-114">Une fois que **vous avez choisi l’orientation**personnalisée, les champs et les champs `alpha` sont `beta` `gamma` activés.</span><span class="sxs-lookup"><span data-stu-id="c30c5-114">After you choose **Custom orientation**, the `alpha`, `beta`, and `gamma` fields are enabled.</span></span>  
+          <!--To understand how each axis works, navigate to [Alpha][alpha], [Beta][beta], and [Gamma][gamma].  -->  
           <!--todo: update links to alpha, beta, and gamma section when available -->  
-          <span data-ttu-id="49f0c-115">Vous pouvez également définir une orientation personnalisée en faisant glisser le modèle d' **orientation**.</span><span class="sxs-lookup"><span data-stu-id="49f0c-115">You are also able to set a custom orientation by dragging the **Orientation Model**.</span></span>  <span data-ttu-id="49f0c-116">Mettre `Shift` en attente avant de faire pivoter pour faire pivoter le long de l' `alpha` axe.</span><span class="sxs-lookup"><span data-stu-id="49f0c-116">Hold `Shift` before dragging to rotate along the `alpha` axis.</span></span>  
+          <span data-ttu-id="c30c5-115">Vous pouvez également définir une orientation personnalisée en faisant glisser le modèle **d’orientation.**</span><span class="sxs-lookup"><span data-stu-id="c30c5-115">You are also able to set a custom orientation by dragging the **Orientation Model**.</span></span>  <span data-ttu-id="c30c5-116">Maintenez `Shift` la main avant de faire glisser pour faire pivoter le long de `alpha` l’axe.</span><span class="sxs-lookup"><span data-stu-id="c30c5-116">Hold `Shift` before dragging to rotate along the `alpha` axis.</span></span>  
           
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="Menu de commandes" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
-             <span data-ttu-id="49f0c-118">Le **modèle d’orientation**</span><span class="sxs-lookup"><span data-stu-id="49f0c-118">The **Orientation Model**</span></span>  
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="Modèle d’orientation" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
+             <span data-ttu-id="c30c5-118">Modèle **d’orientation**</span><span class="sxs-lookup"><span data-stu-id="c30c5-118">The **Orientation Model**</span></span>  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-## <span data-ttu-id="49f0c-119">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="49f0c-119">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="c30c5-119">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="c30c5-119">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -73,11 +73,11 @@ ms.locfileid: "11124956"
 <!--[WebFundamentasNativeHardwareDeviceOrientationIndexGamma]: /web/fundamentals/native-hardware/device-orientation/index#gamma "Gamma - Device Orientation & Motion"  -->  
 
 > [!NOTE]
-> <span data-ttu-id="49f0c-120">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="49f0c-120">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="49f0c-121">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/device-mode/orientation) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).</span><span class="sxs-lookup"><span data-stu-id="49f0c-121">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/orientation) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="c30c5-120">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="c30c5-120">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="c30c5-121">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/device-mode/orientation) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="c30c5-121">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/orientation) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
-<span data-ttu-id="49f0c-123">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="49f0c-123">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+<span data-ttu-id="c30c5-123">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="c30c5-123">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

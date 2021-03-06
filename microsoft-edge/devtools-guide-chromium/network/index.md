@@ -1,18 +1,18 @@
 ---
-description: Didacticiel sur les fonctionnalités les plus populaires relatives au réseau dans Microsoft Edge DevTools.
-title: Examiner l’activité réseau dans Microsoft Edge DevTools
+description: Didacticiel sur les fonctionnalités réseau les plus populaires dans Microsoft Edge DevTools.
+title: Inspecter l’activité réseau dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 1874c6222798755aa5ad7002e22b0cef00c8fd41
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 16b60716c91d2f4ce778f1fac37afc0e73e30ab6
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230977"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398657"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,11 +28,11 @@ ms.locfileid: "11230977"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <span data-ttu-id="fb9b0-104">Examiner l’activité réseau dans Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="fb9b0-104">Inspect network activity in Microsoft Edge DevTools</span></span>  
+# <a name="inspect-network-activity-in-microsoft-edge-devtools"></a><span data-ttu-id="cad95-104">Inspecter l’activité réseau dans Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="cad95-104">Inspect network activity in Microsoft Edge DevTools</span></span>  
 
-<span data-ttu-id="fb9b0-105">Il s’agit d’un didacticiel d’utilisation des fonctionnalités DevTools les plus fréquemment utilisées associées à l’inspection de l’activité réseau d’une page.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-105">This is a hands-on tutorial of some of the most commonly-used DevTools features related to inspecting network activity for a page.</span></span>  
+<span data-ttu-id="cad95-105">Il s’agit d’un didacticiel pratique de certaines des fonctionnalités de DevTools les plus couramment utilisées liées à l’inspection de l’activité réseau d’une page.</span><span class="sxs-lookup"><span data-stu-id="cad95-105">This is a hands-on tutorial of some of the most commonly-used DevTools features related to inspecting network activity for a page.</span></span>  
 
-<span data-ttu-id="fb9b0-106">Pour parcourir les fonctionnalités, voir [référence réseau][DevtoolsNetworkReference] .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-106">See [Network Reference][DevtoolsNetworkReference] if you want to browse features instead.</span></span>  
+<span data-ttu-id="cad95-106">Si vous souhaitez parcourir les fonctionnalités, accédez à [Référence réseau.][DevtoolsNetworkReference]</span><span class="sxs-lookup"><span data-stu-id="cad95-106">If you want to browse features, navigate to [Network Reference][DevtoolsNetworkReference].</span></span>  
 
 <!--TODO: This entire section needs a Microsoft Edge DevTools re-write  -->
 
@@ -42,23 +42,23 @@ ms.locfileid: "11230977"
 > [!VIDEO embed/e1gAyQuIFQo]  
 -->
 
-## <span data-ttu-id="fb9b0-107">Quand utiliser le panneau réseau</span><span class="sxs-lookup"><span data-stu-id="fb9b0-107">When to use the Network panel</span></span>  
+## <a name="when-to-use-the-network-panel"></a><span data-ttu-id="cad95-107">Quand utiliser le panneau réseau</span><span class="sxs-lookup"><span data-stu-id="cad95-107">When to use the Network panel</span></span>  
 
-<span data-ttu-id="fb9b0-108">En règle générale, utilisez le panneau réseau pour vous assurer que les ressources sont téléchargées ou chargées comme prévu.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-108">In general, use the Network panel when you need to make sure that resources are being downloaded or uploaded as expected.</span></span>  <span data-ttu-id="fb9b0-109">Les cas d’utilisation les plus courants du panneau réseau sont les suivants:</span><span class="sxs-lookup"><span data-stu-id="fb9b0-109">The most common use cases for the Network panel are:</span></span>  
+<span data-ttu-id="cad95-108">En règle générale, utilisez le panneau Réseau lorsque vous devez vous assurer que les ressources sont téléchargées ou téléchargées comme prévu.</span><span class="sxs-lookup"><span data-stu-id="cad95-108">In general, use the Network panel when you need to make sure that resources are being downloaded or uploaded as expected.</span></span>  <span data-ttu-id="cad95-109">Les cas d’utilisation les plus courants pour le panneau réseau sont :</span><span class="sxs-lookup"><span data-stu-id="cad95-109">The most common use cases for the Network panel are:</span></span>  
 
-*   <span data-ttu-id="fb9b0-110">Vérifiez que les ressources sont en train d’être chargées ou téléchargées du tout.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-110">Making sure that resources are actually being uploaded or downloaded at all.</span></span>  
-*   <span data-ttu-id="fb9b0-111">Inspecter les propriétés d’une ressource individuelle, par exemple, les en-têtes HTTP, le contenu, la taille, etc.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-111">Inspecting the properties of an individual resource, such as the HTTP headers, content, size, and so on.</span></span>  
+*   <span data-ttu-id="cad95-110">S’assurer que les ressources sont réellement téléchargées ou téléchargées.</span><span class="sxs-lookup"><span data-stu-id="cad95-110">Making sure that resources are actually being uploaded or downloaded at all.</span></span>  
+*   <span data-ttu-id="cad95-111">Inspection des propriétés d’une ressource individuelle, telles que les en-têtes HTTP, le contenu, la taille, etc.</span><span class="sxs-lookup"><span data-stu-id="cad95-111">Inspecting the properties of an individual resource, such as the HTTP headers, content, size, and so on.</span></span>  
     
-<span data-ttu-id="fb9b0-112">Si vous recherchez des moyens d’améliorer les performances de chargement de page, **ne démarrez pas** avec l’outil **réseau** .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-112">If you are looking for ways to improve page load performance, **do not** start with the **Network** tool.</span></span>  <span data-ttu-id="fb9b0-113">Il existe de nombreux types de problèmes de performances de chargement qui ne sont pas liés à l’activité réseau.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-113">There are many types of load performance issues that are not related to network activity.</span></span>  <span data-ttu-id="fb9b0-114">Commencez avec le panneau audits, car il vous donne des suggestions ciblées sur l’amélioration de votre page.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-114">Start with the Audits panel because it gives you targeted suggestions on how to improve your page.</span></span>  <span data-ttu-id="fb9b0-115">Naviguez jusqu’à [optimiser la vitesse du site Web][DevtoolsSpeedGetStarted].</span><span class="sxs-lookup"><span data-stu-id="fb9b0-115">Navigate to [Optimize Website Speed][DevtoolsSpeedGetStarted].</span></span>  
+<span data-ttu-id="cad95-112">Si vous recherchez des moyens d’améliorer les performances de chargement de page, ne **commencez** pas par **l’outil** Réseau.</span><span class="sxs-lookup"><span data-stu-id="cad95-112">If you are looking for ways to improve page load performance, **do not** start with the **Network** tool.</span></span>  <span data-ttu-id="cad95-113">Il existe de nombreux types de problèmes de performances de charge qui ne sont pas liés à l’activité réseau.</span><span class="sxs-lookup"><span data-stu-id="cad95-113">There are many types of load performance issues that are not related to network activity.</span></span>  <span data-ttu-id="cad95-114">Commencez par le panneau Audits, car il vous propose des suggestions ciblées sur l’amélioration de votre page.</span><span class="sxs-lookup"><span data-stu-id="cad95-114">Start with the Audits panel because it gives you targeted suggestions on how to improve your page.</span></span>  <span data-ttu-id="cad95-115">Accédez à [Optimiser la vitesse du site web.][DevtoolsSpeedGetStarted]</span><span class="sxs-lookup"><span data-stu-id="cad95-115">Navigate to [Optimize Website Speed][DevtoolsSpeedGetStarted].</span></span>  
 
-## <span data-ttu-id="fb9b0-116">Ouvrir le panneau réseau</span><span class="sxs-lookup"><span data-stu-id="fb9b0-116">Open the Network panel</span></span>  
+## <a name="open-the-network-panel"></a><span data-ttu-id="cad95-116">Ouvrir le panneau réseau</span><span class="sxs-lookup"><span data-stu-id="cad95-116">Open the Network panel</span></span>  
 
-<span data-ttu-id="fb9b0-117">Pour tirer le meilleur parti de ce didacticiel, ouvrez la démonstration et testez les fonctionnalités de la page de démonstration.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-117">To get the most out of this tutorial, open up the demo and try out the features on the demo page.</span></span>  
+<span data-ttu-id="cad95-117">Pour obtenir le meilleur de ce didacticiel, ouvrez la démonstration et testez les fonctionnalités sur la page de démonstration.</span><span class="sxs-lookup"><span data-stu-id="cad95-117">To get the most out of this tutorial, open up the demo and try out the features on the demo page.</span></span>  
 
-1.  <span data-ttu-id="fb9b0-118">Ouvrir la [démonstration commencer][GlitchNetworkGetStarted].</span><span class="sxs-lookup"><span data-stu-id="fb9b0-118">Open the [Get Started Demo][GlitchNetworkGetStarted].</span></span>  
+1.  <span data-ttu-id="cad95-118">Ouvrez la [démonstration de mise en place.][GlitchNetworkGetStarted]</span><span class="sxs-lookup"><span data-stu-id="cad95-118">Open the [Get Started Demo][GlitchNetworkGetStarted].</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="La démonstration" lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
-       <span data-ttu-id="fb9b0-120">La démonstration</span><span class="sxs-lookup"><span data-stu-id="fb9b0-120">The demo</span></span>  
+    :::image type="complex" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="Démonstration" lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
+       <span data-ttu-id="cad95-120">Démonstration</span><span class="sxs-lookup"><span data-stu-id="cad95-120">The demo</span></span>  
     :::image-end:::  
     
     <!--You may prefer to move the demo to a separate window.  -->  
@@ -69,297 +69,297 @@ ms.locfileid: "11230977"
     :::image-end:::  
     -->
     
-1.  <span data-ttu-id="fb9b0-121">[Ouvrez devtools][DevToolsOpen] en appuyant sur `Control` + `Shift` + `J` \ (Windows, Linux \) ou `Command` + `Option` + `J` \ (MacOS \).</span><span class="sxs-lookup"><span data-stu-id="fb9b0-121">[Open DevTools][DevToolsOpen] by pressing `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).</span></span>  <span data-ttu-id="fb9b0-122">L’outil **console** s’ouvre.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-122">The **Console** tool opens.</span></span>  
+1.  <span data-ttu-id="cad95-121">Pour [ouvrir DevTools,][DevToolsOpen]sélectionnez `Control` + `Shift` + `J` \(Windows, Linux\) ou `Command` + `Option` + `J` \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="cad95-121">To [Open DevTools][DevToolsOpen], select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).</span></span>  <span data-ttu-id="cad95-122">**L’outil Console** s’ouvre.</span><span class="sxs-lookup"><span data-stu-id="cad95-122">The **Console** tool opens.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="La console" lightbox="../media/network-glitch-console.msft.png":::
-       <span data-ttu-id="fb9b0-124">La **console**</span><span class="sxs-lookup"><span data-stu-id="fb9b0-124">The **Console**</span></span>  
+    :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="The Console" lightbox="../media/network-glitch-console.msft.png":::
+       <span data-ttu-id="cad95-124">Console \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="cad95-124">The **Console**</span></span>  
     :::image-end:::  
     
-    <span data-ttu-id="fb9b0-125">Vous pouvez [ancrer devtools en bas de la fenêtre][DevToolsCustomizePlacement].</span><span class="sxs-lookup"><span data-stu-id="fb9b0-125">You may prefer to [dock DevTools to the bottom of your window][DevToolsCustomizePlacement].</span></span>  
+    <span data-ttu-id="cad95-125">Vous pouvez préférer [ancrer DevTools][DevToolsCustomizePlacement]en bas de votre fenêtre.</span><span class="sxs-lookup"><span data-stu-id="cad95-125">You may prefer to [dock DevTools to the bottom of your window][DevToolsCustomizePlacement].</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-console-bottom.msft.png" alt-text="DevTools ancré en bas de la fenêtre" lightbox="../media/network-glitch-console-bottom.msft.png":::
-       <span data-ttu-id="fb9b0-127">DevTools ancré en bas de la fenêtre</span><span class="sxs-lookup"><span data-stu-id="fb9b0-127">DevTools docked to the bottom of the window</span></span>  
+    :::image type="complex" source="../media/network-glitch-console-bottom.msft.png" alt-text="DevTools docked to the bottom of the window" lightbox="../media/network-glitch-console-bottom.msft.png":::
+       <span data-ttu-id="cad95-127">DevTools docked to the bottom of the window</span><span class="sxs-lookup"><span data-stu-id="cad95-127">DevTools docked to the bottom of the window</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-128">Sélectionnez l’onglet **Network (réseau** ).  Le volet **réseau** s’ouvre.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-128">Select the **Network** tab.  The **Network** panel opens.</span></span>  
+1.  <span data-ttu-id="cad95-128">Ouvrez **l’outil** Réseau.</span><span class="sxs-lookup"><span data-stu-id="cad95-128">Open the **Network** tool.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-bottom.msft.png" alt-text="Outil console dans le DevTools ancré en bas de la fenêtre" lightbox="../media/network-glitch-network-bottom.msft.png":::
-       <span data-ttu-id="fb9b0-130">Outil **console** dans le devtools ancré en bas de la fenêtre</span><span class="sxs-lookup"><span data-stu-id="fb9b0-130">**Console** tool in the DevTools docked to the bottom of the window</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-bottom.msft.png" alt-text="Outil console dans devTools docked to the bottom of the window" lightbox="../media/network-glitch-network-bottom.msft.png":::
+       <span data-ttu-id="cad95-130">**Outil** console dans devTools docked to the bottom of the window</span><span class="sxs-lookup"><span data-stu-id="cad95-130">**Console** tool in the DevTools docked to the bottom of the window</span></span>  
     :::image-end:::  
     
-<span data-ttu-id="fb9b0-131">Pour le moment, le volet réseau est vide.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-131">Right now the Network panel is empty.</span></span>  <span data-ttu-id="fb9b0-132">DevTools uniquement les journaux d’activité réseau après l’ouverture et aucune activité réseau ne s’est produite depuis que vous avez ouvert DevTools.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-132">DevTools only logs network activity after you open it and no network activity has occurred since you opened DevTools.</span></span>  
+<span data-ttu-id="cad95-131">Pour l’instant, **l’outil** Réseau est vide.</span><span class="sxs-lookup"><span data-stu-id="cad95-131">Right now the **Network** tool is empty.</span></span>  <span data-ttu-id="cad95-132">DevTools enregistre uniquement l’activité réseau après l’avoir ouverte et aucune activité réseau ne s’est produite depuis que vous avez ouvert DevTools.</span><span class="sxs-lookup"><span data-stu-id="cad95-132">DevTools only logs network activity after you open it and no network activity has occurred since you opened DevTools.</span></span>  
 
-## <span data-ttu-id="fb9b0-133">Journalisation de l’activité du réseau</span><span class="sxs-lookup"><span data-stu-id="fb9b0-133">Log network activity</span></span>  
+## <a name="log-network-activity"></a><span data-ttu-id="cad95-133">Journal de l’activité réseau</span><span class="sxs-lookup"><span data-stu-id="cad95-133">Log network activity</span></span>  
 
-<span data-ttu-id="fb9b0-134">Pour afficher l’activité réseau provoquée par une page:</span><span class="sxs-lookup"><span data-stu-id="fb9b0-134">To view the network activity that a page causes:</span></span>  
+<span data-ttu-id="cad95-134">Pour afficher l’activité réseau qu’une page provoque :</span><span class="sxs-lookup"><span data-stu-id="cad95-134">To view the network activity that a page causes:</span></span>  
 
-1.  <span data-ttu-id="fb9b0-135">Rechargez la page.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-135">Reload the page.</span></span>  <span data-ttu-id="fb9b0-136">Le panneau réseau enregistre toutes les activités du réseau dans le **Journal du réseau**.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-136">The Network panel logs all network activity in the **Network Log**.</span></span>  
+1.  <span data-ttu-id="cad95-135">Actualisez la page web.</span><span class="sxs-lookup"><span data-stu-id="cad95-135">Refresh the webpage.</span></span>  <span data-ttu-id="cad95-136">Le panneau Réseau enregistre toute l’activité réseau dans **le journal réseau.**</span><span class="sxs-lookup"><span data-stu-id="cad95-136">The Network panel logs all network activity in the **Network Log**.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network.msft.png" alt-text="Journal du réseau" lightbox="../media/network-glitch-network.msft.png":::
-       <span data-ttu-id="fb9b0-138">**Journal du réseau**</span><span class="sxs-lookup"><span data-stu-id="fb9b0-138">The **Network Log**</span></span>  
+    :::image type="complex" source="../media/network-glitch-network.msft.png" alt-text="Journal réseau" lightbox="../media/network-glitch-network.msft.png":::
+       <span data-ttu-id="cad95-138">Journal **réseau**</span><span class="sxs-lookup"><span data-stu-id="cad95-138">The **Network Log**</span></span>  
     :::image-end:::  
     
-    <span data-ttu-id="fb9b0-139">Chaque ligne du **Journal réseau** représente une ressource.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-139">Each row of the **Network Log** represents a resource.</span></span>  <span data-ttu-id="fb9b0-140">Par défaut, les ressources sont répertoriées dans l’ordre chronologique.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-140">By default the resources are listed chronologically.</span></span>  <span data-ttu-id="fb9b0-141">La principale ressource correspond généralement au document HTML principal.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-141">The top resource is usually the main HTML document.</span></span>  <span data-ttu-id="fb9b0-142">Le dernier élément de la ressource est le dernier demandé.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-142">The bottom resource is whatever was requested last.</span></span>  
+    <span data-ttu-id="cad95-139">Chaque ligne du journal **réseau représente** une ressource.</span><span class="sxs-lookup"><span data-stu-id="cad95-139">Each row of the **Network Log** represents a resource.</span></span>  <span data-ttu-id="cad95-140">Par défaut, les ressources sont répertoriées dans l’ordre chronologique.</span><span class="sxs-lookup"><span data-stu-id="cad95-140">By default the resources are listed chronologically.</span></span>  <span data-ttu-id="cad95-141">La ressource supérieure est généralement le document HTML principal.</span><span class="sxs-lookup"><span data-stu-id="cad95-141">The top resource is usually the main HTML document.</span></span>  <span data-ttu-id="cad95-142">La ressource inférieure est la dernière ressource demandée.</span><span class="sxs-lookup"><span data-stu-id="cad95-142">The bottom resource is whatever was requested last.</span></span>  
     
-    <span data-ttu-id="fb9b0-143">Chaque colonne représente des informations sur une ressource.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-143">Each column represents information about a resource.</span></span>  <span data-ttu-id="fb9b0-144">Dans la figure précédente, les colonnes par défaut sont affichées.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-144">In the previous figure the default columns are displayed.</span></span>  
+    <span data-ttu-id="cad95-143">Chaque colonne représente des informations sur une ressource.</span><span class="sxs-lookup"><span data-stu-id="cad95-143">Each column represents information about a resource.</span></span>  <span data-ttu-id="cad95-144">Dans la figure précédente, les colonnes par défaut sont affichées.</span><span class="sxs-lookup"><span data-stu-id="cad95-144">In the previous figure the default columns are displayed.</span></span>  
 
-    *   <span data-ttu-id="fb9b0-145">**Status**.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-145">**Status**.</span></span>  <span data-ttu-id="fb9b0-146">Code d’état HTTP de la réponse.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-146">The HTTP status code for response.</span></span>  
-    *   <span data-ttu-id="fb9b0-147">**Type**.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-147">**Type**.</span></span>  <span data-ttu-id="fb9b0-148">Type de ressource.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-148">The resource type.</span></span>  
-    *   <span data-ttu-id="fb9b0-149">**Initiator**.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-149">**Initiator**.</span></span>  <span data-ttu-id="fb9b0-150">La cause de la demande de ressource.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-150">The cause of the resource request.</span></span>  <span data-ttu-id="fb9b0-151">La sélection d’un lien dans la colonne initiateur vous permet d’accéder au code source à l’origine de la demande.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-151">Selecting a link in the Initiator column takes you to the source code that caused the request.</span></span>  
-    *   <span data-ttu-id="fb9b0-152">**Temps**.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-152">**Time**.</span></span>  <span data-ttu-id="fb9b0-153">Durée de la requête.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-153">The duration of the request.</span></span>  
-    *   <span data-ttu-id="fb9b0-154">En **cascade**.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-154">**Waterfall**.</span></span>  <span data-ttu-id="fb9b0-155">Représentation graphique des différentes étapes de la requête.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-155">A graphical representation of the different stages of the request.</span></span>  <span data-ttu-id="fb9b0-156">Placez le pointeur de la souris sur une cascade pour afficher une répartition.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-156">Hover over a Waterfall to see a breakdown.</span></span>  
+    *   <span data-ttu-id="cad95-145">**État**.</span><span class="sxs-lookup"><span data-stu-id="cad95-145">**Status**.</span></span>  <span data-ttu-id="cad95-146">Code d’état HTTP pour la réponse.</span><span class="sxs-lookup"><span data-stu-id="cad95-146">The HTTP status code for response.</span></span>  
+    *   <span data-ttu-id="cad95-147">**Type**.</span><span class="sxs-lookup"><span data-stu-id="cad95-147">**Type**.</span></span>  <span data-ttu-id="cad95-148">Type de ressource.</span><span class="sxs-lookup"><span data-stu-id="cad95-148">The resource type.</span></span>  
+    *   <span data-ttu-id="cad95-149">**Initiateur**.</span><span class="sxs-lookup"><span data-stu-id="cad95-149">**Initiator**.</span></span>  <span data-ttu-id="cad95-150">Cause de la demande de ressource.</span><span class="sxs-lookup"><span data-stu-id="cad95-150">The cause of the resource request.</span></span>  <span data-ttu-id="cad95-151">La mise en place d’un lien dans la colonne Initiateur vous permet d’obtenir le code source à l’origine de la demande.</span><span class="sxs-lookup"><span data-stu-id="cad95-151">CHoosing a link in the Initiator column takes you to the source code that caused the request.</span></span>  
+    *   <span data-ttu-id="cad95-152">**Heure**.</span><span class="sxs-lookup"><span data-stu-id="cad95-152">**Time**.</span></span>  <span data-ttu-id="cad95-153">Durée de la demande.</span><span class="sxs-lookup"><span data-stu-id="cad95-153">The duration of the request.</span></span>  
+    *   <span data-ttu-id="cad95-154">**Cascade**.</span><span class="sxs-lookup"><span data-stu-id="cad95-154">**Waterfall**.</span></span>  <span data-ttu-id="cad95-155">Représentation graphique des différentes étapes de la demande.</span><span class="sxs-lookup"><span data-stu-id="cad95-155">A graphical representation of the different stages of the request.</span></span>  <span data-ttu-id="cad95-156">Pour afficher une répartition, pointez sur une cascade.</span><span class="sxs-lookup"><span data-stu-id="cad95-156">To display a breakdown, hover on a Waterfall.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="fb9b0-157">Le graphique au-dessus du journal réseau est appelé vue d’ensemble.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-157">The graph above the Network Log is called the Overview.</span></span>  <span data-ttu-id="fb9b0-158">Dans ce didacticiel, vous n’utiliserez pas le graphique de vue d’ensemble et vous pouvez le masquer.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-158">You will not use the Overview graph in this tutorial, so you may hide it.</span></span>  <span data-ttu-id="fb9b0-159">Voir [masquer le volet vue d’ensemble][DevtoolsReferenceHideOverview].</span><span class="sxs-lookup"><span data-stu-id="fb9b0-159">See [Hide the Overview pane][DevtoolsReferenceHideOverview].</span></span>
+    > <span data-ttu-id="cad95-157">Le graphique au-dessus du journal réseau est appelé Vue d’ensemble.</span><span class="sxs-lookup"><span data-stu-id="cad95-157">The graph above the Network Log is called the Overview.</span></span>  <span data-ttu-id="cad95-158">Vous n’utiliserez pas le graphique Vue d’ensemble dans ce didacticiel, vous pouvez donc le masquer.</span><span class="sxs-lookup"><span data-stu-id="cad95-158">You will not use the Overview graph in this tutorial, so you may hide it.</span></span>  <span data-ttu-id="cad95-159">Accédez à [Masquer le volet Vue d’ensemble.][DevtoolsReferenceHideOverview]</span><span class="sxs-lookup"><span data-stu-id="cad95-159">Navigate to [Hide the Overview pane][DevtoolsReferenceHideOverview].</span></span>
     
-1.  <span data-ttu-id="fb9b0-160">Après l’ouverture de DevTools, elle enregistre l’activité réseau dans le journal du réseau.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-160">After you open DevTools, it records network activity in the Network Log.</span></span>  
-    <span data-ttu-id="fb9b0-161">Pour en expliquer le résultat, observez d’abord la partie inférieure du **Journal du réseau** et prenez note de la dernière activité.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-161">To demonstrate this, first look at the bottom of the **Network Log** and make a mental note of the last activity.</span></span>  
-1.  <span data-ttu-id="fb9b0-162">À présent, sélectionnez le bouton **obtenir des données** dans la démonstration.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-162">Now, select the **Get Data** button in the demo.</span></span>  
-1.  <span data-ttu-id="fb9b0-163">Regardez de nouveau le journal du **réseau** .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-163">Look at the bottom of the **Network Log** again.</span></span>  <span data-ttu-id="fb9b0-164">Une nouvelle ressource doit apparaître `getstarted.json` .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-164">You should see a new resource called `getstarted.json`.</span></span>  <span data-ttu-id="fb9b0-165">Le fait de sélectionner le bouton **Get Data** a entraîné la demande de ce fichier.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-165">Selecting the **Get Data** button caused the page to request this file.</span></span>  
+1.  <span data-ttu-id="cad95-160">Après avoir ouvert DevTools, il enregistre l’activité réseau dans le journal réseau.</span><span class="sxs-lookup"><span data-stu-id="cad95-160">After you open DevTools, it records network activity in the Network Log.</span></span>  
+    <span data-ttu-id="cad95-161">Pour le montrer, regardez d’abord le bas du journal réseau et notez la dernière activité. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="cad95-161">To demonstrate this, first look at the bottom of the **Network Log** and make a mental note of the last activity.</span></span>  
+1.  <span data-ttu-id="cad95-162">Sélectionnez maintenant le **bouton Obtenir les** données dans la démonstration.</span><span class="sxs-lookup"><span data-stu-id="cad95-162">Now, select the **Get Data** button in the demo.</span></span>  
+1.  <span data-ttu-id="cad95-163">Regardez de nouveau le bas du **journal** réseau.</span><span class="sxs-lookup"><span data-stu-id="cad95-163">Look at the bottom of the **Network Log** again.</span></span>  <span data-ttu-id="cad95-164">Une nouvelle ressource nommée `getstarted.json` s’affiche.</span><span class="sxs-lookup"><span data-stu-id="cad95-164">A new resource named `getstarted.json` is displayed.</span></span>  <span data-ttu-id="cad95-165">Pour que la page web demande le fichier, sélectionnez le **bouton Obtenir des** données.</span><span class="sxs-lookup"><span data-stu-id="cad95-165">To cause the webpage to request the file, choose the **Get Data** button.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-new-resource.msft.png" alt-text="Nouvelle ressource dans le journal réseau" lightbox="../media/network-glitch-network-new-resource.msft.png":::
-       <span data-ttu-id="fb9b0-167">Nouvelle ressource dans le **Journal réseau**</span><span class="sxs-lookup"><span data-stu-id="fb9b0-167">A new resource in the **Network Log**</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-new-resource.msft.png" alt-text="Une nouvelle ressource dans le journal réseau" lightbox="../media/network-glitch-network-new-resource.msft.png":::
+       <span data-ttu-id="cad95-167">Une nouvelle ressource dans le **journal réseau**</span><span class="sxs-lookup"><span data-stu-id="cad95-167">A new resource in the **Network Log**</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="fb9b0-168">Afficher plus d’informations</span><span class="sxs-lookup"><span data-stu-id="fb9b0-168">Show more information</span></span>  
+## <a name="show-more-information"></a><span data-ttu-id="cad95-168">Afficher plus d’informations</span><span class="sxs-lookup"><span data-stu-id="cad95-168">Show more information</span></span>  
 
-<span data-ttu-id="fb9b0-169">Les colonnes du journal du réseau peuvent être configurées.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-169">The columns of the Network Log are configurable.</span></span>  <span data-ttu-id="fb9b0-170">Vous pouvez masquer les colonnes que vous n’utilisez pas.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-170">You may hide columns that you are not using.</span></span>  
-<span data-ttu-id="fb9b0-171">Il existe également plusieurs colonnes qui sont masquées par défaut, qui peuvent être utiles.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-171">There are also many columns that are hidden by default which you may find useful.</span></span>  
+<span data-ttu-id="cad95-169">Les colonnes du journal réseau sont configurables.</span><span class="sxs-lookup"><span data-stu-id="cad95-169">The columns of the Network Log are configurable.</span></span>  <span data-ttu-id="cad95-170">Vous pouvez masquer les colonnes que vous n’utilisez pas.</span><span class="sxs-lookup"><span data-stu-id="cad95-170">You may hide columns that you are not using.</span></span>  
+<span data-ttu-id="cad95-171">Il existe également de nombreuses colonnes qui sont masquées par défaut et qui peuvent vous être utiles.</span><span class="sxs-lookup"><span data-stu-id="cad95-171">There are also many columns that are hidden by default which you may find useful.</span></span>  
 
-1.  <span data-ttu-id="fb9b0-172">Placez le pointeur de la souris sur l’en-tête de la table du journal du réseau, ouvrez le menu contextuel (cliquez avec le bouton droit sur \) et sélectionnez **Domain (domaine**).</span><span class="sxs-lookup"><span data-stu-id="fb9b0-172">Hover on the header of the Network Log table, open the contextual menu \(right-click\), and choose **Domain**.</span></span>  <span data-ttu-id="fb9b0-173">Le domaine de chaque ressource est désormais affiché.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-173">The domain of each resource is now shown.</span></span>  
+1.  <span data-ttu-id="cad95-172">Pointez sur l’en-tête de la table Journal réseau, ouvrez le menu contextuel \(clic droit\), puis choisissez **Domaine**.</span><span class="sxs-lookup"><span data-stu-id="cad95-172">Hover on the header of the Network Log table, open the contextual menu \(right-click\), and choose **Domain**.</span></span>  <span data-ttu-id="cad95-173">Le domaine de chaque ressource est maintenant affiché.</span><span class="sxs-lookup"><span data-stu-id="cad95-173">The domain of each resource is now shown.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Activez la colonne Domain (domaine)" lightbox="../media/network-glitch-network-edit-column.msft.png":::
-       <span data-ttu-id="fb9b0-175">Activez la colonne Domain (domaine)</span><span class="sxs-lookup"><span data-stu-id="fb9b0-175">Enable the Domain column</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Activer la colonne Domaine" lightbox="../media/network-glitch-network-edit-column.msft.png":::
+       <span data-ttu-id="cad95-175">Activer la colonne Domaine</span><span class="sxs-lookup"><span data-stu-id="cad95-175">Enable the Domain column</span></span>  
     :::image-end:::  
     
     > [!TIP]
-    > <span data-ttu-id="fb9b0-176">Pour afficher l’URL complète d’une ressource, placez le pointeur de la souris sur la cellule de la colonne **nom** .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-176">See the full URL of a resource by hovering over the cell in the **Name** column.</span></span>  
+    > <span data-ttu-id="cad95-176">Pour passer en revue l’URL complète d’une ressource, pointez sur la cellule dans la **colonne** Nom.</span><span class="sxs-lookup"><span data-stu-id="cad95-176">To review the full URL of a resource, hover on the cell in the **Name** column.</span></span>  
     
-## <span data-ttu-id="fb9b0-177">Simuler une connexion réseau plus lente</span><span class="sxs-lookup"><span data-stu-id="fb9b0-177">Simulate a slower network connection</span></span>  
+## <a name="simulate-a-slower-network-connection"></a><span data-ttu-id="cad95-177">Simuler une connexion réseau plus lente</span><span class="sxs-lookup"><span data-stu-id="cad95-177">Simulate a slower network connection</span></span>  
 
-<span data-ttu-id="fb9b0-178">La connexion réseau de l’ordinateur que vous utilisez pour créer des sites est probablement plus rapide que les connexions réseau des appareils mobiles de vos utilisateurs.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-178">The network connection of the computer that you use to build sites is probably faster than the network connections of the mobile devices of your users.</span></span>  <span data-ttu-id="fb9b0-179">La limitation de la page vous permet d’obtenir une meilleure idée du temps nécessaire au chargement d’une page sur un appareil mobile.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-179">By throttling the page, you get a better idea of how long a page takes to load on a mobile device.</span></span>  
+<span data-ttu-id="cad95-178">La connexion réseau de l’ordinateur que vous utilisez pour créer des sites est probablement plus rapide que les connexions réseau des appareils mobiles de vos utilisateurs.</span><span class="sxs-lookup"><span data-stu-id="cad95-178">The network connection of the computer that you use to build sites is probably faster than the network connections of the mobile devices of your users.</span></span>  <span data-ttu-id="cad95-179">En limitation de la page, vous obtenez une meilleure idée du temps de chargement d’une page sur un appareil mobile.</span><span class="sxs-lookup"><span data-stu-id="cad95-179">By throttling the page, you get a better idea of how long a page takes to load on a mobile device.</span></span>  
 
-1.  <span data-ttu-id="fb9b0-180">Sélectionner la liste déroulante de **limitation** , définie sur **en ligne** par défaut.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-180">Choose the **Throttling** dropdown, which is set to **Online** by default.</span></span>  
+1.  <span data-ttu-id="cad95-180">Choose the **Throttling** dropdown, which is set to **Online** by default.</span><span class="sxs-lookup"><span data-stu-id="cad95-180">Choose the **Throttling** dropdown, which is set to **Online** by default.</span></span>  
     
     :::image type="complex" source="../media/network-glitch-network-throttling.msft.png" alt-text="Activer la limitation" lightbox="../media/network-glitch-network-throttling.msft.png":::
-       <span data-ttu-id="fb9b0-182">Activer la limitation</span><span class="sxs-lookup"><span data-stu-id="fb9b0-182">Enable throttling</span></span>  
+       <span data-ttu-id="cad95-182">Activer la limitation</span><span class="sxs-lookup"><span data-stu-id="cad95-182">Enable throttling</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-183">Sélectionnez **3G lente**.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-183">Choose **Slow 3G**.</span></span>  
+1.  <span data-ttu-id="cad95-183">Choose **Slow 3G**.</span><span class="sxs-lookup"><span data-stu-id="cad95-183">Choose **Slow 3G**.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="Sélectionnez 3G lente" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
-       <span data-ttu-id="fb9b0-185">Sélectionnez 3G lente</span><span class="sxs-lookup"><span data-stu-id="fb9b0-185">Select Slow 3G</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="Choose Slow 3G" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
+       <span data-ttu-id="cad95-185">Choose Slow 3G</span><span class="sxs-lookup"><span data-stu-id="cad95-185">Choose Slow 3G</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-186">Appuyez longuement sur **rechargez** \ ( ![ Reload ][ImageRefreshIcon] \), puis sélectionnez **Vider le cache et télécharger le matériel**.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-186">Long-press **Reload** \(![Reload][ImageRefreshIcon]\) and then choose **Empty Cache And Hard Reload**.</span></span>  
+1.  <span data-ttu-id="cad95-186">Appuyez **longuement sur Recharger** \( Recharger \), puis choisissez ![ Cache vide et ][ImageRefreshIcon] **Rechargement dur.**</span><span class="sxs-lookup"><span data-stu-id="cad95-186">Long-press **Reload** \(![Reload][ImageRefreshIcon]\) and then choose **Empty Cache And Hard Reload**.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="Vider le cache et procéder au recharge" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
-       **<span data-ttu-id="fb9b0-188">Vider le cache et procéder au recharge</span><span class="sxs-lookup"><span data-stu-id="fb9b0-188">Empty Cache And Hard Reload</span></span>**  
+    :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="Cache vide et rechargement dur" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
+       **<span data-ttu-id="cad95-188">Cache vide et rechargement dur</span><span class="sxs-lookup"><span data-stu-id="cad95-188">Empty Cache And Hard Reload</span></span>**  
     :::image-end:::  
     
-    <span data-ttu-id="fb9b0-189">Lorsque vous révisez les visites, le navigateur fournit généralement certains fichiers du [cache][MDNHTTPCache], ce qui accélère le chargement de la page.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-189">On repeat visits, the browser usually serves some files from the [cache][MDNHTTPCache], which speeds up the page load.</span></span>  <span data-ttu-id="fb9b0-190">Le **vidage du cache et du rechargement forcé** force le navigateur à accéder au réseau pour toutes les ressources.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-190">**Empty Cache And Hard Reload** forces the browser to go the network for all resources.</span></span>  <span data-ttu-id="fb9b0-191">Cette méthode est utile lorsque vous souhaitez voir la façon dont un visiteur commence à se charger de la page.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-191">This is helpful when you want to see how a first-time visitor experiences a page load.</span></span>  
+    <span data-ttu-id="cad95-189">Lors des visites répétées, le navigateur sert généralement certains fichiers à partir du [cache,][MDNHTTPCache]ce qui accélère le chargement de la page.</span><span class="sxs-lookup"><span data-stu-id="cad95-189">On repeat visits, the browser usually serves some files from the [cache][MDNHTTPCache], which speeds up the page load.</span></span>  <span data-ttu-id="cad95-190">**Le cache vide et le rechargement dur** forcent le navigateur à se rendre sur le réseau pour toutes les ressources.</span><span class="sxs-lookup"><span data-stu-id="cad95-190">**Empty Cache And Hard Reload** forces the browser to go the network for all resources.</span></span>  <span data-ttu-id="cad95-191">Utilisez-le pour afficher la façon dont un premier visiteur subit un chargement de page.</span><span class="sxs-lookup"><span data-stu-id="cad95-191">Use it to display how a first-time visitor experiences a page load.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="fb9b0-192">Le flux **de travail vider le cache et le chargement papier** est uniquement disponible lorsque devtools est ouvert.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-192">The **Empty Cache And Hard Reload** workflow is only available when DevTools is open.</span></span>  
+    > <span data-ttu-id="cad95-192">Le **flux de travail Cache vide et Rechargement** dur n’est disponible que lorsque DevTools est ouvert.</span><span class="sxs-lookup"><span data-stu-id="cad95-192">The **Empty Cache And Hard Reload** workflow is only available when DevTools is open.</span></span>  
     
-## <span data-ttu-id="fb9b0-193">Capture de captures d’écran</span><span class="sxs-lookup"><span data-stu-id="fb9b0-193">Capture screenshots</span></span>  
+## <a name="capture-screenshots"></a><span data-ttu-id="cad95-193">Capture d’écran</span><span class="sxs-lookup"><span data-stu-id="cad95-193">Capture screenshots</span></span>  
 
-<span data-ttu-id="fb9b0-194">Les captures d’écran vous permettent de voir l’aspect d’une page au fil du temps pendant son chargement.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-194">Screenshots let you see how a page looked over time while it was loading.</span></span>  
+<span data-ttu-id="cad95-194">Les captures d’écran affichent l’apparence d’une page web au fil du temps pendant son chargement.</span><span class="sxs-lookup"><span data-stu-id="cad95-194">Screenshots display how a webpage looks over time while it loads.</span></span>  
 
-1.  <span data-ttu-id="fb9b0-195">Sélectionnez \ ( ![ paramètres réseau ][ImageSettingsIcon] \) et activez la case à cocher capture des captures d' **écran** .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-195">Choose \(![Network settings][ImageSettingsIcon]\) and turn on the **Capture screenshots** checkbox.</span></span>
-1.  <span data-ttu-id="fb9b0-196">Actualisez de nouveau la page à l’aide du flux **de travail vider le cache et en dur** .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-196">Refresh the page again using the **Empty Cache And Hard Reload** workflow.</span></span>  <span data-ttu-id="fb9b0-197">Naviguez jusqu’à [une connexion plus lente](#simulate-a-slower-network-connection) si vous avez besoin d’un rappel sur la manière de procéder.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-197">Navigate to [Simulate a slower connection](#simulate-a-slower-network-connection) if you need a reminder on how to do this.</span></span>  
-    <span data-ttu-id="fb9b0-198">Le volet capture d’écran fournit des miniatures illustrant la manière dont la page a été recherchée à différents points au cours du processus de chargement.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-198">The Screenshots pane provides thumbnails of how the page looked at various points during the loading process.</span></span>  
+1.  <span data-ttu-id="cad95-195">Sélectionnez \( ![ Paramètres réseau \) et ][ImageSettingsIcon] cochez la case Capturer les **captures d’écran.**</span><span class="sxs-lookup"><span data-stu-id="cad95-195">Choose \(![Network settings][ImageSettingsIcon]\) and turn on the **Capture screenshots** checkbox.</span></span>
+1.  <span data-ttu-id="cad95-196">Actualisez la page à l’aide **du cache vide et du flux de travail de rechargement** dur.</span><span class="sxs-lookup"><span data-stu-id="cad95-196">Refresh the page again using the **Empty Cache And Hard Reload** workflow.</span></span>  <span data-ttu-id="cad95-197">Si vous [avez besoin](#simulate-a-slower-network-connection) d’un rappel sur la façon de le faire, accédez à Simuler une connexion plus lente.</span><span class="sxs-lookup"><span data-stu-id="cad95-197">Navigate to [Simulate a slower connection](#simulate-a-slower-network-connection) if you need a reminder on how to do this.</span></span>  
+    <span data-ttu-id="cad95-198">Le panneau Captures d’écran fournit des miniatures de l’aperçu de la page à différents points pendant le processus de chargement.</span><span class="sxs-lookup"><span data-stu-id="cad95-198">The Screenshots panel provides thumbnails of how the page looked at various points during the loading process.</span></span>  
     
     :::image type="complex" source="../media/network-glitch-network-screenshots.msft.png" alt-text="Captures d’écran du chargement de la page" lightbox="../media/network-glitch-network-screenshots.msft.png":::
-       <span data-ttu-id="fb9b0-200">Captures d’écran du chargement de la page</span><span class="sxs-lookup"><span data-stu-id="fb9b0-200">Screenshots of the page load</span></span>  
+       <span data-ttu-id="cad95-200">Captures d’écran du chargement de la page</span><span class="sxs-lookup"><span data-stu-id="cad95-200">Screenshots of the page load</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-201">Choisissez la première miniature.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-201">Choose the first thumbnail.</span></span>  <span data-ttu-id="fb9b0-202">DevTools indique l’activité réseau qui se produit à ce moment précis.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-202">DevTools shows you what network activity was occurring at that moment in time.</span></span>  
+1.  <span data-ttu-id="cad95-201">Choisissez la première miniature.</span><span class="sxs-lookup"><span data-stu-id="cad95-201">Choose the first thumbnail.</span></span>  <span data-ttu-id="cad95-202">DevTools vous indique l’activité réseau qui se produisait à ce moment-là.</span><span class="sxs-lookup"><span data-stu-id="cad95-202">DevTools shows you what network activity was occurring at that moment in time.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-screenshots-first.msft.png" alt-text="Activité réseau qui se produit pendant la première capture d’écran" lightbox="../media/network-glitch-network-screenshots-first.msft.png":::
-       <span data-ttu-id="fb9b0-204">Activité réseau qui se produit pendant la première capture d’écran</span><span class="sxs-lookup"><span data-stu-id="fb9b0-204">The network activity that was happening during the first screenshot</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-screenshots-first.msft.png" alt-text="Activité réseau qui s’est produit lors de la première capture d’écran" lightbox="../media/network-glitch-network-screenshots-first.msft.png":::
+       <span data-ttu-id="cad95-204">Activité réseau qui s’est produit lors de la première capture d’écran</span><span class="sxs-lookup"><span data-stu-id="cad95-204">The network activity that was happening during the first screenshot</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-205">Choisissez de nouveau \ ( ![ paramètres réseau ][ImageSettingsIcon] \) et désactivez la case à cocher **capture** des captures d’écran pour fermer le volet captures d’écran.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-205">Choose \(![Network settings][ImageSettingsIcon]\) again and turn off the **Capture screenshots** checkbox to close the Screenshots pane.</span></span>
-1.  <span data-ttu-id="fb9b0-206">Actualisez la page.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-206">Refresh the page again.</span></span>  
+1.  <span data-ttu-id="cad95-205">Sélectionnez de nouveau \( Paramètres réseau \) et cochez la case Capture d’écran pour fermer le ![ ][ImageSettingsIcon] volet Captures d’écran. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="cad95-205">Choose \(![Network settings][ImageSettingsIcon]\) again and turn off the **Capture screenshots** checkbox to close the Screenshots pane.</span></span>
+1.  <span data-ttu-id="cad95-206">Actualisez la page.</span><span class="sxs-lookup"><span data-stu-id="cad95-206">Refresh the page again.</span></span>  
     
-## <span data-ttu-id="fb9b0-207">Inspecter les détails de la ressource</span><span class="sxs-lookup"><span data-stu-id="fb9b0-207">Inspect the details of the resource</span></span>  
+## <a name="inspect-the-details-of-the-resource"></a><span data-ttu-id="cad95-207">Inspecter les détails de la ressource</span><span class="sxs-lookup"><span data-stu-id="cad95-207">Inspect the details of the resource</span></span>  
 
-<span data-ttu-id="fb9b0-208">Choisissez une ressource pour en savoir plus sur celle-ci.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-208">Choose a resource to learn more information about it.</span></span>  <span data-ttu-id="fb9b0-209">Essayez-le maintenant:</span><span class="sxs-lookup"><span data-stu-id="fb9b0-209">Try it now:</span></span>  
+<span data-ttu-id="cad95-208">Choisissez une ressource pour en savoir plus à son sujet.</span><span class="sxs-lookup"><span data-stu-id="cad95-208">Choose a resource to learn more information about it.</span></span>  <span data-ttu-id="cad95-209">Essayez maintenant :</span><span class="sxs-lookup"><span data-stu-id="cad95-209">Try it now:</span></span>  
 
-1.  <span data-ttu-id="fb9b0-210">Sélectionnez `getstarted.html` .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-210">Choose `getstarted.html`.</span></span>  <span data-ttu-id="fb9b0-211">L’onglet **en-têtes** est affiché.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-211">The **Headers** tab is shown.</span></span>  <span data-ttu-id="fb9b0-212">Utilisez cet onglet pour inspecter les en-têtes HTTP.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-212">Use this tab to inspect HTTP headers.</span></span>  
+1.  <span data-ttu-id="cad95-210">Choose `getstarted.html` .</span><span class="sxs-lookup"><span data-stu-id="cad95-210">Choose `getstarted.html`.</span></span>  <span data-ttu-id="cad95-211">Le **panneau En-têtes** s’affiche.</span><span class="sxs-lookup"><span data-stu-id="cad95-211">The **Headers** panel is shown.</span></span>  <span data-ttu-id="cad95-212">Utilisez ce panneau pour inspecter les en-têtes HTTP.</span><span class="sxs-lookup"><span data-stu-id="cad95-212">Use this panel to inspect HTTP headers.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="Onglet en-têtes" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
-       <span data-ttu-id="fb9b0-214">Onglet **en-têtes**</span><span class="sxs-lookup"><span data-stu-id="fb9b0-214">The **Headers** tab</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="Panneau En-têtes" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
+       <span data-ttu-id="cad95-214">Panneau **En-têtes**</span><span class="sxs-lookup"><span data-stu-id="cad95-214">The **Headers** panel</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-215">Sélectionnez l’onglet **Aperçu** .  Un rendu de base du code HTML est affiché.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-215">Choose the **Preview** tab.  A basic rendering of the HTML is shown.</span></span>  
+1.  <span data-ttu-id="cad95-215">Choisissez le **panneau d’aperçu.**</span><span class="sxs-lookup"><span data-stu-id="cad95-215">Choose the **Preview** panel.</span></span>  <span data-ttu-id="cad95-216">Un rendu de base du code HTML est affiché.</span><span class="sxs-lookup"><span data-stu-id="cad95-216">A basic rendering of the HTML is shown.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="Onglet Aperçu" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
-       <span data-ttu-id="fb9b0-217">Onglet **Aperçu**</span><span class="sxs-lookup"><span data-stu-id="fb9b0-217">The **Preview** tab</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="Panneau d’aperçu" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
+       <span data-ttu-id="cad95-218">Panneau **d’aperçu**</span><span class="sxs-lookup"><span data-stu-id="cad95-218">The **Preview** panel</span></span>  
     :::image-end:::  
     
-    <span data-ttu-id="fb9b0-218">L’onglet est utile lorsqu’une API renvoie un code d’erreur en HTML.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-218">The tab is helpful when an API returns an error code in HTML.</span></span>  <span data-ttu-id="fb9b0-219">Il est possible que vous puissiez lire le code HTML affiché plus facilement que le code source HTML ou lorsque vous examinez des images.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-219">You may find it easier to read the rendered HTML than the HTML source code, or when you inspect images.</span></span>  
+    <span data-ttu-id="cad95-219">Le panneau est utile lorsqu’une API renvoie un code d’erreur au format HTML.</span><span class="sxs-lookup"><span data-stu-id="cad95-219">The panel is helpful when an API returns an error code in HTML.</span></span>  <span data-ttu-id="cad95-220">Il peut être plus facile de lire le code HTML rendu que le code source HTML, ou lorsque vous examinez des images.</span><span class="sxs-lookup"><span data-stu-id="cad95-220">You may find it easier to read the rendered HTML than the HTML source code, or when you inspect images.</span></span>  
 
-1.  <span data-ttu-id="fb9b0-220">Sélectionnez l’onglet **réponse** .  Le code source HTML est affiché.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-220">Choose the **Response** tab.  The HTML source code is shown.</span></span>  
+1.  <span data-ttu-id="cad95-221">Choisissez le **panneau de** réponse.</span><span class="sxs-lookup"><span data-stu-id="cad95-221">Choose the **Response** panel.</span></span>  <span data-ttu-id="cad95-222">Le code source HTML est affiché.</span><span class="sxs-lookup"><span data-stu-id="cad95-222">The HTML source code is shown.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="Onglet réponse" lightbox="../media/network-glitch-network-resources-response.msft.png":::
-       <span data-ttu-id="fb9b0-222">Onglet **réponse**</span><span class="sxs-lookup"><span data-stu-id="fb9b0-222">The **Response** tab</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="Panneau de réponse" lightbox="../media/network-glitch-network-resources-response.msft.png":::
+       <span data-ttu-id="cad95-224">Panneau **de** réponse</span><span class="sxs-lookup"><span data-stu-id="cad95-224">The **Response** panel</span></span>  
     :::image-end:::  
     
     > [!TIP]
-    > <span data-ttu-id="fb9b0-223">S’il s’agit d’minified d’un fichier, sélectionnez le bouton **mettre** en forme \ ( ![ format ][ImageFormatIcon] \) en bas de l’onglet **réponse** pour mettre en forme le contenu du fichier à des fins de lisibilité.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-223">When a file is minified, choose the **Format** \(![Format][ImageFormatIcon]\) button at the bottom of the **Response** tab to re-format the contents of the file for readability.</span></span>  
+    > <span data-ttu-id="cad95-225">Lorsqu’un fichier est minifié, sélectionnez le bouton **Format** \( Format \) en bas du panneau De réponse pour re-mettre en forme le contenu du fichier pour plus de ![ ][ImageFormatIcon] \*\*\*\* lisibilité.</span><span class="sxs-lookup"><span data-stu-id="cad95-225">When a file is minified, choose the **Format** \(![Format][ImageFormatIcon]\) button at the bottom of the **Response** panel to re-format the contents of the file for readability.</span></span>  
     
-1.  <span data-ttu-id="fb9b0-224">Sélectionnez l’onglet **minutage** .  Le détail de l’activité réseau de la ressource est affiché.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-224">Choose the **Timing** tab.  A breakdown of the network activity for the resource is displayed.</span></span>  
+1.  <span data-ttu-id="cad95-226">Sélectionnez **le panneau De minutage.**</span><span class="sxs-lookup"><span data-stu-id="cad95-226">Choose the **Timing** panel.</span></span>  <span data-ttu-id="cad95-227">Une répartition de l’activité réseau de la ressource s’affiche.</span><span class="sxs-lookup"><span data-stu-id="cad95-227">A breakdown of the network activity for the resource is displayed.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="Onglet Minutage" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
-       <span data-ttu-id="fb9b0-226">Onglet **minutage**</span><span class="sxs-lookup"><span data-stu-id="fb9b0-226">The **Timing** tab</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="Panneau De minutage" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
+       <span data-ttu-id="cad95-229">Panneau **De minutage**</span><span class="sxs-lookup"><span data-stu-id="cad95-229">The **Timing** panel</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-227">Sélectionnez **Close** ( ![ fermer ][ImageCloseIcon] ) pour afficher de nouveau le journal du réseau.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-227">Choose **Close** \(![Close][ImageCloseIcon]\) to view the Network Log again.</span></span>  
+1.  <span data-ttu-id="cad95-230">Choose **Close** \( ![ Close ][ImageCloseIcon] \) to view the Network Log again.</span><span class="sxs-lookup"><span data-stu-id="cad95-230">Choose **Close** \(![Close][ImageCloseIcon]\) to view the Network Log again.</span></span>  
     
     :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="Bouton Fermer" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
-       <span data-ttu-id="fb9b0-229">Bouton **Fermer**</span><span class="sxs-lookup"><span data-stu-id="fb9b0-229">The **Close** button</span></span>  
+       <span data-ttu-id="cad95-232">Bouton \*\*\*\* Fermer</span><span class="sxs-lookup"><span data-stu-id="cad95-232">The **Close** button</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="fb9b0-230">Effectuer une recherche dans les en-têtes et réponses du réseau</span><span class="sxs-lookup"><span data-stu-id="fb9b0-230">Search network headers and responses</span></span>  
+## <a name="search-network-headers-and-responses"></a><span data-ttu-id="cad95-233">En-têtes et réponses du réseau de recherche</span><span class="sxs-lookup"><span data-stu-id="cad95-233">Search network headers and responses</span></span>  
 
-<span data-ttu-id="fb9b0-231">Le volet de **recherche** vous permet d’effectuer une recherche dans les en-têtes et réponses HTTP de toutes les ressources pour une chaîne ou une expression régulière spécifique.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-231">Use the **Search** pane when you need to search the HTTP headers and responses of all resources for a certain string or regular expression.</span></span>  
+<span data-ttu-id="cad95-234">Utilisez le **volet de** recherche lorsque vous devez rechercher dans les en-têtes HTTP et les réponses de toutes les ressources une chaîne ou une expression régulière.</span><span class="sxs-lookup"><span data-stu-id="cad95-234">Use the **Search** pane when you need to search the HTTP headers and responses of all resources for a certain string or regular expression.</span></span>  
 
-<span data-ttu-id="fb9b0-232">Par exemple, supposons que vous vouliez vérifier que vos ressources utilisent des **stratégies de cache**raisonnables.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-232">For example, suppose you want to verify that your resources are using reasonable **cache policies**.</span></span>  
+<span data-ttu-id="cad95-235">Par exemple, supposons que vous vouliez vérifier que vos ressources utilisent des stratégies **de cache raisonnables.**</span><span class="sxs-lookup"><span data-stu-id="cad95-235">For example, suppose you want to verify that your resources are using reasonable **cache policies**.</span></span>  
 
 <!--TODO: add cache policies section when available  -->
 
-1.  <span data-ttu-id="fb9b0-233">Sélectionnez **Rechercher** \ ( ![ Rechercher ][ImageSearchIcon] \).</span><span class="sxs-lookup"><span data-stu-id="fb9b0-233">Choose **Search** \(![Search][ImageSearchIcon]\).</span></span>  <span data-ttu-id="fb9b0-234">Le volet de recherche s’ouvre à gauche du journal du réseau.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-234">The Search pane opens to the left of the Network log.</span></span>  
+1.  <span data-ttu-id="cad95-236">Choose **Search** \( ![ Search ][ImageSearchIcon] \).</span><span class="sxs-lookup"><span data-stu-id="cad95-236">Choose **Search** \(![Search][ImageSearchIcon]\).</span></span>  <span data-ttu-id="cad95-237">Le volet Recherche s’ouvre à gauche du journal réseau.</span><span class="sxs-lookup"><span data-stu-id="cad95-237">The Search pane opens to the left of the Network log.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="Le volet de recherche" lightbox="../media/network-glitch-network-search-empty.msft.png":::
-       <span data-ttu-id="fb9b0-236">Le volet de **recherche**</span><span class="sxs-lookup"><span data-stu-id="fb9b0-236">The **Search** pane</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="Volet de recherche" lightbox="../media/network-glitch-network-search-empty.msft.png":::
+       <span data-ttu-id="cad95-239">Volet \*\*\*\* de recherche</span><span class="sxs-lookup"><span data-stu-id="cad95-239">The **Search** pane</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-237">Tapez `Cache-Control` et sélectionnez `Enter` .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-237">Type `Cache-Control` and select `Enter`.</span></span>  <span data-ttu-id="fb9b0-238">Le volet de recherche répertorie toutes les instances `Cache-Control` qu’il recherche dans les en-têtes de ressources ou le contenu.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-238">The Search pane lists all instances of `Cache-Control` that it finds in resource headers or content.</span></span>  
+1.  <span data-ttu-id="cad95-240">Tapez `Cache-Control` et sélectionnez `Enter` .</span><span class="sxs-lookup"><span data-stu-id="cad95-240">Type `Cache-Control` and select `Enter`.</span></span>  <span data-ttu-id="cad95-241">Le volet De recherche répertorie toutes les instances de ce qu’il trouve dans les en-têtes de ressource `Cache-Control` ou le contenu.</span><span class="sxs-lookup"><span data-stu-id="cad95-241">The Search pane lists all instances of `Cache-Control` that it finds in resource headers or content.</span></span>  
     
     :::image type="complex" source="../media/network-glitch-network-search-cache-control.msft.png" alt-text="Résultats de la recherche pour Cache-Control" lightbox="../media/network-glitch-network-search-cache-control.msft.png":::
-       <span data-ttu-id="fb9b0-240">Résultats de la recherche pour </span><span class="sxs-lookup"><span data-stu-id="fb9b0-240">Search results for</span></span> `Cache-Control`  
+       <span data-ttu-id="cad95-243">Résultats de la recherche pour </span><span class="sxs-lookup"><span data-stu-id="cad95-243">Search results for</span></span> `Cache-Control`  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-241">Sélectionnez un résultat pour afficher la ressource dans laquelle le résultat a été trouvé.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-241">Choose a result to view the resource in which the result was found.</span></span>  <span data-ttu-id="fb9b0-242">Si vous examinez les détails de la ressource, sélectionnez un résultat pour y accéder directement.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-242">If you are looking at the details of the resource, select a result to go directly to it.</span></span>  <span data-ttu-id="fb9b0-243">Par exemple, si la requête se trouve dans un en-tête, l’onglet en-têtes s’ouvre.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-243">For example, if the query was found in a header, the Headers tab opens.</span></span>   <span data-ttu-id="fb9b0-244">Si la requête se trouve dans le contenu, l’onglet **réponse** s’ouvre.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-244">If the query was found in content, the **Response** tab opens.</span></span>  
+1.  <span data-ttu-id="cad95-244">Choisissez un résultat pour afficher la ressource dans laquelle le résultat a été trouvé.</span><span class="sxs-lookup"><span data-stu-id="cad95-244">Choose a result to view the resource in which the result was found.</span></span>  <span data-ttu-id="cad95-245">Si vous recherchez les détails de la ressource, sélectionnez un résultat pour y aller directement.</span><span class="sxs-lookup"><span data-stu-id="cad95-245">If you are looking at the details of the resource, select a result to go directly to it.</span></span>  <span data-ttu-id="cad95-246">Par exemple, si la requête a été trouvée dans un en-tête, le panneau **En-têtes** s’ouvre.</span><span class="sxs-lookup"><span data-stu-id="cad95-246">For example, if the query was found in a header, the **Headers** panel opens.</span></span>   <span data-ttu-id="cad95-247">Si la requête a été trouvée dans le contenu, le panneau **Réponse** s’ouvre.</span><span class="sxs-lookup"><span data-stu-id="cad95-247">If the query was found in content, the **Response** panel opens.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="Résultat de la recherche en surbrillance dans l’onglet en-têtes" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
-       <span data-ttu-id="fb9b0-246">Résultat de la recherche en surbrillance dans l’onglet **en-têtes**</span><span class="sxs-lookup"><span data-stu-id="fb9b0-246">A search result highlighted in the **Headers** tab</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="Résultat de recherche mis en évidence dans le panneau En-têtes" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
+       <span data-ttu-id="cad95-249">Résultat de recherche mis en évidence dans le panneau **En-têtes**</span><span class="sxs-lookup"><span data-stu-id="cad95-249">A search result highlighted in the **Headers** panel</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-247">Fermez le volet de recherche et l’onglet en-têtes.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-247">Close the Search pane and the Headers tab.</span></span>  
+1.  <span data-ttu-id="cad95-250">Fermez le volet Recherche et le volet **En-têtes.**</span><span class="sxs-lookup"><span data-stu-id="cad95-250">Close the Search pane and the **Headers** panel.</span></span>  
     
     :::image type="complex" source="../media/network-glitch-network-search-close.msft.png" alt-text="Boutons Fermer" lightbox="../media/network-glitch-network-search-close.msft.png":::
-       <span data-ttu-id="fb9b0-249">Boutons **Fermer**</span><span class="sxs-lookup"><span data-stu-id="fb9b0-249">The **Close** buttons</span></span>  
+       <span data-ttu-id="cad95-252">Boutons **Fermer**</span><span class="sxs-lookup"><span data-stu-id="cad95-252">The **Close** buttons</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="fb9b0-250">Filtrer les ressources</span><span class="sxs-lookup"><span data-stu-id="fb9b0-250">Filter resources</span></span>  
+## <a name="filter-resources"></a><span data-ttu-id="cad95-253">Filtrer les ressources</span><span class="sxs-lookup"><span data-stu-id="cad95-253">Filter resources</span></span>  
 
-<span data-ttu-id="fb9b0-251">DevTools fournit de nombreux flux de travail pour filtrer les ressources qui ne sont pas pertinentes pour la tâche en cours.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-251">DevTools provides numerous workflows for filtering out resources that are not relevant to the task at hand.</span></span>  
+<span data-ttu-id="cad95-254">DevTools fournit de nombreux flux de travail pour filtrer les ressources qui ne sont pas pertinentes pour la tâche en cours.</span><span class="sxs-lookup"><span data-stu-id="cad95-254">DevTools provides numerous workflows for filtering out resources that are not relevant to the task at hand.</span></span>  
 
-:::image type="complex" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="Barre d’outils filtres" lightbox="../media/network-glitch-network-filter-empty.msft.png":::
-   <span data-ttu-id="fb9b0-253">Barre d’outils **filtres**</span><span class="sxs-lookup"><span data-stu-id="fb9b0-253">The **Filters** toolbar</span></span>  
+:::image type="complex" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="Barre d’outils Filtres" lightbox="../media/network-glitch-network-filter-empty.msft.png":::
+   <span data-ttu-id="cad95-256">Barre **d’outils Filtres**</span><span class="sxs-lookup"><span data-stu-id="cad95-256">The **Filters** toolbar</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="fb9b0-254">La barre d’outils **filtres** doit être activée par défaut.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-254">The **Filters** toolbar should be turned on by default.</span></span>  <span data-ttu-id="fb9b0-255">Si ce n’est pas le cas:</span><span class="sxs-lookup"><span data-stu-id="fb9b0-255">If not:</span></span>  
+<span data-ttu-id="cad95-257">La **barre d’outils** Filtres doit être allumée par défaut.</span><span class="sxs-lookup"><span data-stu-id="cad95-257">The **Filters** toolbar should be turned on by default.</span></span>  <span data-ttu-id="cad95-258">Si ce n’est pas le cas :</span><span class="sxs-lookup"><span data-stu-id="cad95-258">If not:</span></span>  
 
-1.  <span data-ttu-id="fb9b0-256">Choisissez **filtre** \ ( ![ filtre ][ImageFilterIcon] \) pour l’afficher.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-256">Choose **Filter** \(![Filter][ImageFilterIcon]\) to show it.</span></span>  
+1.  <span data-ttu-id="cad95-259">Choisissez **Filtre** \( ![ Filtre ][ImageFilterIcon] \) pour l’afficher.</span><span class="sxs-lookup"><span data-stu-id="cad95-259">Choose **Filter** \(![Filter][ImageFilterIcon]\) to show it.</span></span>  
     
-### <span data-ttu-id="fb9b0-257">Filtrer par chaîne, expression régulière ou propriété</span><span class="sxs-lookup"><span data-stu-id="fb9b0-257">Filter by string, regular expression, or property</span></span>  
+### <a name="filter-by-string-regular-expression-or-property"></a><span data-ttu-id="cad95-260">Filtrer par chaîne, expression régulière ou propriété</span><span class="sxs-lookup"><span data-stu-id="cad95-260">Filter by string, regular expression, or property</span></span>  
 
-<span data-ttu-id="fb9b0-258">La zone de texte **filtre** prend en charge différents types de filtrage.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-258">The **Filter** text box supports many different types of filtering.</span></span>  
+<span data-ttu-id="cad95-261">La **zone de** texte Filtre prend en charge différents types de filtrage.</span><span class="sxs-lookup"><span data-stu-id="cad95-261">The **Filter** text box supports many different types of filtering.</span></span>  
 
-1.  <span data-ttu-id="fb9b0-259">Entrez `png` dans la zone de texte du **filtre** .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-259">Type `png` into the **Filter** text box.</span></span>  <span data-ttu-id="fb9b0-260">Seuls les fichiers qui contiennent le texte `png` sont affichés.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-260">Only the files that contain the text `png` are shown.</span></span>  <span data-ttu-id="fb9b0-261">Dans ce cas, les seuls fichiers correspondant au filtre sont les images PNG.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-261">In this case the only files that match the filter are the PNG images.</span></span>  
+1.  <span data-ttu-id="cad95-262">Tapez `png` dans la zone **de** texte Filtrer.</span><span class="sxs-lookup"><span data-stu-id="cad95-262">Type `png` into the **Filter** text box.</span></span>  <span data-ttu-id="cad95-263">Seuls les fichiers contenant le texte `png` sont affichés.</span><span class="sxs-lookup"><span data-stu-id="cad95-263">Only the files that contain the text `png` are shown.</span></span>  <span data-ttu-id="cad95-264">Dans ce cas, les seuls fichiers qui correspondent au filtre sont les images PNG.</span><span class="sxs-lookup"><span data-stu-id="cad95-264">In this case the only files that match the filter are the PNG images.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-png.msft.png" alt-text="Filtre de chaîne" lightbox="../media/network-glitch-network-filter-png.msft.png":::
-       <span data-ttu-id="fb9b0-263">Filtre de chaîne</span><span class="sxs-lookup"><span data-stu-id="fb9b0-263">A string filter</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-filter-png.msft.png" alt-text="Un filtre de chaîne" lightbox="../media/network-glitch-network-filter-png.msft.png":::
+       <span data-ttu-id="cad95-266">Un filtre de chaîne</span><span class="sxs-lookup"><span data-stu-id="cad95-266">A string filter</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-264">Entrez `/.*\.[cj]s+$/`.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-264">Type `/.*\.[cj]s+$/`.</span></span>  <span data-ttu-id="fb9b0-265">DevTools filtre les ressources dont le nom ne se termine pas par un `j` ou après `c` suivi de 1 ou plusieurs `s` caractères.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-265">DevTools filters out any resource with a filename that does not end with a `j` or a `c` followed by 1 or more `s` characters.</span></span>  
+1.  <span data-ttu-id="cad95-267">Entrez `/.*\.[cj]s+$/`.</span><span class="sxs-lookup"><span data-stu-id="cad95-267">Type `/.*\.[cj]s+$/`.</span></span>  <span data-ttu-id="cad95-268">DevTools filtre toute ressource dont le nom de fichier ne se termine pas par un ou plusieurs `j` `c` `s` caractères.</span><span class="sxs-lookup"><span data-stu-id="cad95-268">DevTools filters out any resource with a filename that does not end with a `j` or a `c` followed by 1 or more `s` characters.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-regex.msft.png" alt-text="Un filtre d’expression régulier" lightbox="../media/network-glitch-network-filter-regex.msft.png":::
-       <span data-ttu-id="fb9b0-267">Un filtre d’expression régulier</span><span class="sxs-lookup"><span data-stu-id="fb9b0-267">A regular expression filter</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-filter-regex.msft.png" alt-text="Filtre d’expression régulière" lightbox="../media/network-glitch-network-filter-regex.msft.png":::
+       <span data-ttu-id="cad95-270">Filtre d’expression régulière</span><span class="sxs-lookup"><span data-stu-id="cad95-270">A regular expression filter</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-268">Entrez `-main.css`.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-268">Type `-main.css`.</span></span>  <span data-ttu-id="fb9b0-269">DevTools filtre `main.css` .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-269">DevTools filters out `main.css`.</span></span>  <span data-ttu-id="fb9b0-270">Si un autre fichier correspond au modèle, il sera également filtré.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-270">If any other file matched the pattern they would also be filtered out.</span></span>  
+1.  <span data-ttu-id="cad95-271">Entrez `-main.css`.</span><span class="sxs-lookup"><span data-stu-id="cad95-271">Type `-main.css`.</span></span>  <span data-ttu-id="cad95-272">DevTools filtre les `main.css` sorties.</span><span class="sxs-lookup"><span data-stu-id="cad95-272">DevTools filters out `main.css`.</span></span>  <span data-ttu-id="cad95-273">Si un fichier correspond au modèle, le son est également filtré.</span><span class="sxs-lookup"><span data-stu-id="cad95-273">If any file matches the pattern, tit is also filtered out.</span></span>  
     
     :::image type="complex" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="Un filtre négatif" lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
-       <span data-ttu-id="fb9b0-272">Un filtre négatif</span><span class="sxs-lookup"><span data-stu-id="fb9b0-272">A negative filter</span></span>  
+       <span data-ttu-id="cad95-275">Un filtre négatif</span><span class="sxs-lookup"><span data-stu-id="cad95-275">A negative filter</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-273">Entrez `domain:cdn.glitch.com` dans la zone de texte du **filtre** .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-273">Type `domain:cdn.glitch.com` into the **Filter** text box.</span></span>  <span data-ttu-id="fb9b0-274">DevTools filtre les ressources disposant d’une URL qui ne correspond pas à ce domaine.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-274">DevTools filters out any resource with a URL that does not match this domain.</span></span>  
+1.  <span data-ttu-id="cad95-276">Tapez `domain:cdn.glitch.com` dans la zone **de** texte Filtrer.</span><span class="sxs-lookup"><span data-stu-id="cad95-276">Type `domain:cdn.glitch.com` into the **Filter** text box.</span></span>  <span data-ttu-id="cad95-277">DevTools filtre toutes les ressources avec une URL qui ne correspond pas à ce domaine.</span><span class="sxs-lookup"><span data-stu-id="cad95-277">DevTools filters out any resource with a URL that does not match this domain.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-property-value.msft.png" alt-text="Filtre de propriétés" lightbox="../media/network-glitch-network-filter-property-value.msft.png":::
-       <span data-ttu-id="fb9b0-276">Filtre de propriétés</span><span class="sxs-lookup"><span data-stu-id="fb9b0-276">A property filter</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-filter-property-value.msft.png" alt-text="Un filtre de propriété" lightbox="../media/network-glitch-network-filter-property-value.msft.png":::
+       <span data-ttu-id="cad95-279">Un filtre de propriété</span><span class="sxs-lookup"><span data-stu-id="cad95-279">A property filter</span></span>  
     :::image-end:::  
     
-    <span data-ttu-id="fb9b0-277">Pour obtenir la liste complète des propriétés filtrées [, voir filtrer les demandes par propriétés][DevtoolsReferenceProperty] .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-277">See [Filter requests by properties][DevtoolsReferenceProperty] for the full list of filterable properties.</span></span>  
+    <span data-ttu-id="cad95-280">Pour obtenir la liste complète des propriétés filtrables, accédez à [Filtrer les demandes par propriétés.][DevtoolsReferenceProperty]</span><span class="sxs-lookup"><span data-stu-id="cad95-280">For the full list of filterable properties, navigate to [Filter requests by properties][DevtoolsReferenceProperty].</span></span>  
     
-1.  <span data-ttu-id="fb9b0-278">Effacez la zone de texte du **filtre** d’un texte.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-278">Clear the **Filter** text box of any text.</span></span>  
+1.  <span data-ttu-id="cad95-281">Effacer la **zone de** texte Filtrer de n’importe quel texte.</span><span class="sxs-lookup"><span data-stu-id="cad95-281">Clear the **Filter** text box of any text.</span></span>  
     
-### <span data-ttu-id="fb9b0-279">Filtrer par type de ressource</span><span class="sxs-lookup"><span data-stu-id="fb9b0-279">Filter by resource type</span></span>  
+### <a name="filter-by-resource-type"></a><span data-ttu-id="cad95-282">Filtrer par type de ressource</span><span class="sxs-lookup"><span data-stu-id="cad95-282">Filter by resource type</span></span>  
 
-<span data-ttu-id="fb9b0-280">Pour vous concentrer sur un certain type de fichier, tel que les feuilles de style:</span><span class="sxs-lookup"><span data-stu-id="fb9b0-280">To focus in on a certain type of file, such as stylesheets:</span></span>  
+<span data-ttu-id="cad95-283">Pour vous concentrer sur un certain type de fichier, comme les feuilles de style :</span><span class="sxs-lookup"><span data-stu-id="cad95-283">To focus in on a certain type of file, such as stylesheets:</span></span>  
 
-1.  <span data-ttu-id="fb9b0-281">Sélectionnez **CSS**.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-281">Choose **CSS**.</span></span>  <span data-ttu-id="fb9b0-282">Tous les autres types de fichiers sont filtrés.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-282">All other file types are filtered out.</span></span>  
+1.  <span data-ttu-id="cad95-284">Choisissez **CSS**.</span><span class="sxs-lookup"><span data-stu-id="cad95-284">Choose **CSS**.</span></span>  <span data-ttu-id="cad95-285">Tous les autres types de fichiers sont filtrés.</span><span class="sxs-lookup"><span data-stu-id="cad95-285">All other file types are filtered out.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-file-type-css.msft.png" alt-text="Afficher les fichiers CSS uniquement" lightbox="../media/network-glitch-network-filter-file-type-css.msft.png":::
-       <span data-ttu-id="fb9b0-284">Afficher les fichiers CSS uniquement</span><span class="sxs-lookup"><span data-stu-id="fb9b0-284">Show CSS files only</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-filter-file-type-css.msft.png" alt-text="Afficher uniquement les fichiers CSS" lightbox="../media/network-glitch-network-filter-file-type-css.msft.png":::
+       <span data-ttu-id="cad95-287">Afficher uniquement les fichiers CSS</span><span class="sxs-lookup"><span data-stu-id="cad95-287">Show CSS files only</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-285">Pour afficher également les scripts, appuyez sur `Control` \ (Windows, Linux \) ou `Command` \ (MacOS \), puis sélectionnez **js**.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-285">To also see scripts, hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then choose **JS**.</span></span>  
+1.  <span data-ttu-id="cad95-288">Pour afficher également des scripts, sélectionnez et maintenez `Control` \(Windows, Linux\) ou `Command` \(macOS\), puis choisissez **JS**.</span><span class="sxs-lookup"><span data-stu-id="cad95-288">To also display scripts, select and hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then choose **JS**.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Afficher les fichiers CSS et JS uniquement" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
-       <span data-ttu-id="fb9b0-287">Afficher les fichiers CSS et JS uniquement</span><span class="sxs-lookup"><span data-stu-id="fb9b0-287">Show CSS and JS files only</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Afficher uniquement les fichiers CSS et JS" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
+       <span data-ttu-id="cad95-290">Afficher uniquement les fichiers CSS et JS</span><span class="sxs-lookup"><span data-stu-id="cad95-290">Show CSS and JS files only</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-288">Cliquez sur **toutes** pour supprimer les filtres et afficher de nouveau toutes les ressources.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-288">Choose **All** to remove the filters and see all resources again.</span></span>  
+1.  <span data-ttu-id="cad95-291">Pour supprimer les filtres et afficher à nouveau toutes les ressources, choisissez **Tout**.</span><span class="sxs-lookup"><span data-stu-id="cad95-291">To remove the filters and display all resources again, choose **All**.</span></span>  
     
-<span data-ttu-id="fb9b0-289">Pour plus d’autres flux de travail de filtrage, voir [Filtrer les demandes][DevtoolsNetworkReferenceFilter] .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-289">See [Filter requests][DevtoolsNetworkReferenceFilter] for other filtering workflows.</span></span>  
+<span data-ttu-id="cad95-292">Pour les autres flux de travail de filtrage, accédez à [Filtrer les demandes.][DevtoolsNetworkReferenceFilter]</span><span class="sxs-lookup"><span data-stu-id="cad95-292">For other filtering workflows, navigate to [Filter requests][DevtoolsNetworkReferenceFilter].</span></span>  
 
-## <span data-ttu-id="fb9b0-290">Bloquer les demandes</span><span class="sxs-lookup"><span data-stu-id="fb9b0-290">Block requests</span></span>  
+## <a name="block-requests"></a><span data-ttu-id="cad95-293">Bloquer les demandes</span><span class="sxs-lookup"><span data-stu-id="cad95-293">Block requests</span></span>  
 
-<span data-ttu-id="fb9b0-291">Quel est l’aspect et le comportement d’une page lorsque certaines ressources de la page ne sont pas disponibles?</span><span class="sxs-lookup"><span data-stu-id="fb9b0-291">How does a page look and behave when some of the page resources are not available?</span></span>  <span data-ttu-id="fb9b0-292">Est-ce que l’opération échoue entièrement ou fonctionne-t-elle toujours?</span><span class="sxs-lookup"><span data-stu-id="fb9b0-292">Does it fail completely, or is it still somewhat functional?</span></span>  <span data-ttu-id="fb9b0-293">Bloquer les requêtes à Rechercher:</span><span class="sxs-lookup"><span data-stu-id="fb9b0-293">Block requests to find out:</span></span>  
+<span data-ttu-id="cad95-294">Comment se comporte une page lorsque certaines ressources de page ne sont pas disponibles ?</span><span class="sxs-lookup"><span data-stu-id="cad95-294">How does a page look and behave when some of the page resources are not available?</span></span>  <span data-ttu-id="cad95-295">Échoue-t-elle complètement ou est-elle encore quelque peu fonctionnelle ?</span><span class="sxs-lookup"><span data-stu-id="cad95-295">Does it fail completely, or is it still somewhat functional?</span></span>  <span data-ttu-id="cad95-296">Bloquez les demandes pour savoir :</span><span class="sxs-lookup"><span data-stu-id="cad95-296">Block requests to find out:</span></span>  
 
-1.  <span data-ttu-id="fb9b0-294">Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-294">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
+1.  <span data-ttu-id="cad95-297">Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le **menu Commande.**</span><span class="sxs-lookup"><span data-stu-id="cad95-297">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-cli-empty.msft.png" alt-text="Menu de commandes" lightbox="../media/network-glitch-network-cli-empty.msft.png":::
-       <span data-ttu-id="fb9b0-296">**Menu de commandes**</span><span class="sxs-lookup"><span data-stu-id="fb9b0-296">The **Command Menu**</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-cli-empty.msft.png" alt-text="Menu Commande" lightbox="../media/network-glitch-network-cli-empty.msft.png":::
+       <span data-ttu-id="cad95-299">Menu **Commande**</span><span class="sxs-lookup"><span data-stu-id="cad95-299">The **Command Menu**</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-297">Tapez `block` , sélectionnez **afficher le blocage de requête**, puis sélectionnez `Enter` .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-297">Type `block`, choose **Show Request Blocking**, and select `Enter`.</span></span>  
+1.  <span data-ttu-id="cad95-300">Tapez `block` , choisissez Afficher le blocage **des**demandes, puis sélectionnez `Enter` .</span><span class="sxs-lookup"><span data-stu-id="cad95-300">Type `block`, choose **Show Request Blocking**, and select `Enter`.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-cli-block.msft.png" alt-text="Afficher le blocage de requête" lightbox="../media/network-glitch-network-cli-block.msft.png":::
-       **<span data-ttu-id="fb9b0-299">Afficher le blocage de requête</span><span class="sxs-lookup"><span data-stu-id="fb9b0-299">Show Request Blocking</span></span>**  
+    :::image type="complex" source="../media/network-glitch-network-cli-block.msft.png" alt-text="Afficher le blocage des demandes" lightbox="../media/network-glitch-network-cli-block.msft.png":::
+       **<span data-ttu-id="cad95-302">Afficher le blocage des demandes</span><span class="sxs-lookup"><span data-stu-id="cad95-302">Show Request Blocking</span></span>**  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-300">Choisissez **Ajouter un modèle** \ ( ![ Ajouter le modèle ][ImageAddIcon] \).</span><span class="sxs-lookup"><span data-stu-id="fb9b0-300">Choose **Add Pattern** \(![Add Pattern][ImageAddIcon]\).</span></span>  
-1.  <span data-ttu-id="fb9b0-301">Entrez `main.css`.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-301">Type `main.css`.</span></span>  
+1.  <span data-ttu-id="cad95-303">Choose **Add Pattern** \( Add Pattern ![ ][ImageAddIcon] \).</span><span class="sxs-lookup"><span data-stu-id="cad95-303">Choose **Add Pattern** \(![Add Pattern][ImageAddIcon]\).</span></span>  
+1.  <span data-ttu-id="cad95-304">Entrez `main.css`.</span><span class="sxs-lookup"><span data-stu-id="cad95-304">Type `main.css`.</span></span>  
     
-    :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Blocage de main. CSS" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
-       <span data-ttu-id="fb9b0-303">Bloquer</span><span class="sxs-lookup"><span data-stu-id="fb9b0-303">Blocking</span></span> `main.css`  
+    :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Blocage de main.css" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
+       <span data-ttu-id="cad95-306">Blocage</span><span class="sxs-lookup"><span data-stu-id="cad95-306">Blocking</span></span> `main.css`  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-304">Cliquez sur **Ajouter**.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-304">Choose **Add**.</span></span>  
-1.  <span data-ttu-id="fb9b0-305">Rechargez la page.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-305">Reload the page.</span></span>  <span data-ttu-id="fb9b0-306">Comme prévu, le style de la page est légèrement gâché, car la feuille de style principale a été bloquée.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-306">As expected, the styling of the page is slightly messed up because the main stylesheet has been blocked.</span></span>  
+1.  <span data-ttu-id="cad95-307">Choose **Add**.</span><span class="sxs-lookup"><span data-stu-id="cad95-307">Choose **Add**.</span></span>  
+1.  <span data-ttu-id="cad95-308">Actualisez la page.</span><span class="sxs-lookup"><span data-stu-id="cad95-308">Refresh the page.</span></span>  <span data-ttu-id="cad95-309">Comme prévu, le style de la page est légèrement désordessé car la feuille de style principale a été bloquée.</span><span class="sxs-lookup"><span data-stu-id="cad95-309">As expected, the styling of the page is slightly messed up because the main stylesheet has been blocked.</span></span>  
     
     > [!NOTE]
-    > <span data-ttu-id="fb9b0-307">`main.css`Ligne du journal du réseau.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-307">The `main.css` row in the Network Log.</span></span>  <span data-ttu-id="fb9b0-308">Le texte rouge signifie que la ressource a été bloquée.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-308">The red text means that the resource was blocked.</span></span>
+    > <span data-ttu-id="cad95-310">Ligne `main.css` du journal réseau.</span><span class="sxs-lookup"><span data-stu-id="cad95-310">The `main.css` row in the Network Log.</span></span>  <span data-ttu-id="cad95-311">Le texte rouge signifie que la ressource a été bloquée.</span><span class="sxs-lookup"><span data-stu-id="cad95-311">The red text means that the resource was blocked.</span></span>
     
-    :::image type="complex" source="../media/network-glitch-network-cli-block-main-css.msft.png" alt-text="main. CSS a été bloqué" lightbox="../media/network-glitch-network-cli-block-main-css.msft.png":::
-       `main.css` <span data-ttu-id="fb9b0-310">a été bloqué</span><span class="sxs-lookup"><span data-stu-id="fb9b0-310">has been blocked</span></span>  
+    :::image type="complex" source="../media/network-glitch-network-cli-block-main-css.msft.png" alt-text="main.css a été bloqué" lightbox="../media/network-glitch-network-cli-block-main-css.msft.png":::
+       `main.css` <span data-ttu-id="cad95-313">a été bloqué</span><span class="sxs-lookup"><span data-stu-id="cad95-313">has been blocked</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="fb9b0-311">Désélectionnez la case à cocher **activer le blocage de requête** .</span><span class="sxs-lookup"><span data-stu-id="fb9b0-311">Deselect the **Enable request blocking** checkbox.</span></span>  
+1.  <span data-ttu-id="cad95-314">Désélection de la **case à cocher Activer le blocage des** demandes.</span><span class="sxs-lookup"><span data-stu-id="cad95-314">Deselect the **Enable request blocking** checkbox.</span></span>  
 
-## <span data-ttu-id="fb9b0-312">Conclusion</span><span class="sxs-lookup"><span data-stu-id="fb9b0-312">Conclusion</span></span>  
+## <a name="conclusion"></a><span data-ttu-id="cad95-315">Conclusion</span><span class="sxs-lookup"><span data-stu-id="cad95-315">Conclusion</span></span>  
 
-<span data-ttu-id="fb9b0-313">Félicitations, vous avez terminé le didacticiel.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-313">Congratulations, you have completed the tutorial.</span></span>  <span data-ttu-id="fb9b0-314">Vous savez maintenant comment utiliser le panneau **réseau** dans Microsoft Edge devtools!</span><span class="sxs-lookup"><span data-stu-id="fb9b0-314">You now know how to use the **Network** panel in the Microsoft Edge DevTools!</span></span>
+<span data-ttu-id="cad95-316">Félicitations, vous avez terminé le didacticiel.</span><span class="sxs-lookup"><span data-stu-id="cad95-316">Congratulations, you have completed the tutorial.</span></span>  <span data-ttu-id="cad95-317">Vous savez maintenant comment utiliser l’outil **Réseau** dans Microsoft Edge DevTools !</span><span class="sxs-lookup"><span data-stu-id="cad95-317">You now know how to use the **Network** tool in the Microsoft Edge DevTools!</span></span>
 
-<span data-ttu-id="fb9b0-315">Accédez à la [référence réseau][DevtoolsNetworkReference] pour découvrir d’autres fonctionnalités devtools liées à l’examen de l’activité du réseau.</span><span class="sxs-lookup"><span data-stu-id="fb9b0-315">Navigate to the [Network Reference][DevtoolsNetworkReference] to discover more DevTools features related to inspecting network activity.</span></span>  
+<span data-ttu-id="cad95-318">Accédez à la [Référence réseau][DevtoolsNetworkReference] pour découvrir d’autres fonctionnalités DevTools liées à l’inspection de l’activité réseau.</span><span class="sxs-lookup"><span data-stu-id="cad95-318">Navigate to the [Network Reference][DevtoolsNetworkReference] to discover more DevTools features related to inspecting network activity.</span></span>  
 
-## <span data-ttu-id="fb9b0-316">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="fb9b0-316">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="cad95-319">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="cad95-319">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -378,24 +378,24 @@ ms.locfileid: "11230977"
 
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->  
 
-[DevToolsCustomizePlacement]: ../customize/placement.md "Changer la position de Microsoft Edge DevTools Documents Microsoft"  
-[DevtoolsNetworkReference]: ./reference.md "Référence d’analyse du réseau | Documents Microsoft"
-[DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Demandes de filtre-référence d’analyse du réseau | Documents Microsoft"  
-[DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Masquer le volet vue d’ensemble-référence d’analyse du réseau | Documents Microsoft"
-[DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Demandes de filtre par propriétés-référence d’analyse du réseau | Documents Microsoft"
+[DevToolsCustomizePlacement]: ../customize/placement.md "Modifier le placement de Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsNetworkReference]: ./reference.md "Référence de l’analyse réseau | Documents Microsoft"
+[DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Demandes de filtre : référence de l’analyse réseau | Documents Microsoft"  
+[DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Masquer le volet Vue d’ensemble - Référence de l’analyse réseau | Documents Microsoft"
+[DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Filtrer les demandes par propriétés – Référence de l’analyse réseau | Documents Microsoft"
 [DevToolsOpen]: ../open/index.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimiser la vitesse de votre site Web avec Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimiser la vitesse du site web avec Microsoft Edge DevTools | Documents Microsoft"  
 
-[GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Examen de la démonstration d’activité réseau | Problème"  
+[GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Inspect Network Activity Demo | Glitch"  
 
-[MDNHTTPCache]: https://developer.mozilla.org/docs/Web/HTTP/Caching "Mise en cache HTTP MDN"  
+[MDNHTTPCache]: https://developer.mozilla.org/docs/Web/HTTP/Caching "Mise en cache HTTP | MDN"  
 
 > [!NOTE]
-> <span data-ttu-id="fb9b0-326">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="fb9b0-326">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="fb9b0-327">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="fb9b0-327">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="cad95-329">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="cad95-329">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="cad95-330">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="cad95-330">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="fb9b0-329">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="fb9b0-329">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="cad95-332">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="cad95-332">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

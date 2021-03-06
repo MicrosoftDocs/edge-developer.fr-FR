@@ -1,18 +1,18 @@
 ---
-description: Référence complète des fonctionnalités du panneau réseau de Microsoft Edge DevTools.
-title: Référence d’analyse du réseau
+description: Référence complète des fonctionnalités du panneau réseau Microsoft Edge DevTools.
+title: Référence de l’analyse réseau
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: c600197ffa0e415fe42aecc704a523d1b23f8260
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: e8e2259e0f95499519c954e2199e191382998649
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230753"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398377"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,57 +28,57 @@ ms.locfileid: "11230753"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <span data-ttu-id="d8516-104">Référence d’analyse du réseau</span><span class="sxs-lookup"><span data-stu-id="d8516-104">Network Analysis reference</span></span>  
+# <a name="network-analysis-reference"></a><span data-ttu-id="454db-104">Référence de l’analyse réseau</span><span class="sxs-lookup"><span data-stu-id="454db-104">Network Analysis reference</span></span>  
 
-<span data-ttu-id="d8516-105">Découvrez de nouvelles façons d’analyser le chargement de votre page dans cette référence complète des fonctionnalités d’analyse du réseau Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="d8516-105">Discover new ways to analyze how your page loads in this comprehensive reference of Microsoft Edge DevTools network analysis features.</span></span>  
+<span data-ttu-id="454db-105">Découvrez de nouvelles façons d’analyser le chargement de votre page dans cette référence complète des fonctionnalités d’analyse réseau Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="454db-105">Discover new ways to analyze how your page loads in this comprehensive reference of Microsoft Edge DevTools network analysis features.</span></span>  
 
-## <span data-ttu-id="d8516-106">Enregistrer les requêtes réseau</span><span class="sxs-lookup"><span data-stu-id="d8516-106">Record network requests</span></span>  
+## <a name="record-network-requests"></a><span data-ttu-id="454db-106">Enregistrer des demandes réseau</span><span class="sxs-lookup"><span data-stu-id="454db-106">Record network requests</span></span>  
 
-<span data-ttu-id="d8516-107">Par défaut, DevTools enregistre toutes les demandes réseau dans le panneau **réseau** , tant que devtools est ouvert.</span><span class="sxs-lookup"><span data-stu-id="d8516-107">By default, DevTools record all network requests in the **Network** panel, so long as DevTools is open.</span></span>  
+<span data-ttu-id="454db-107">Par défaut, DevTools enregistre toutes \*\*\*\* les demandes réseau dans l’outil Réseau, tant que DevTools est ouvert.</span><span class="sxs-lookup"><span data-stu-id="454db-107">By default, DevTools record all network requests in the **Network** tool, so long as DevTools is open.</span></span>  
 
 :::image type="complex" source="../media/network-network-panel.msft.png" alt-text="Panneau réseau" lightbox="../media/network-network-panel.msft.png":::
-   <span data-ttu-id="d8516-109">Panneau **réseau**</span><span class="sxs-lookup"><span data-stu-id="d8516-109">The **Network** panel</span></span>  
+   <span data-ttu-id="454db-109">Outil **Réseau**</span><span class="sxs-lookup"><span data-stu-id="454db-109">The **Network** tool</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-110">Arrêter l’enregistrement des requêtes réseau</span><span class="sxs-lookup"><span data-stu-id="d8516-110">Stop recording network requests</span></span>  
+### <a name="stop-recording-network-requests"></a><span data-ttu-id="454db-110">Arrêter l’enregistrement des demandes réseau</span><span class="sxs-lookup"><span data-stu-id="454db-110">Stop recording network requests</span></span>  
 
-<span data-ttu-id="d8516-111">Pour arrêter l’enregistrement de demandes, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="d8516-111">To stop recording requests, complete the following steps.</span></span>  
+<span data-ttu-id="454db-111">Pour arrêter l’enregistrement des demandes, complétez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-111">To stop recording requests, complete the following steps.</span></span>  
 
-1.  <span data-ttu-id="d8516-112">Dans le volet **réseau** , cliquez sur **arrêter l’enregistrement du journal réseau** \ ( ![ arrêter l’enregistrement du journal réseau ][ImageRecordOnIcon] \).</span><span class="sxs-lookup"><span data-stu-id="d8516-112">On the **Network** panel, choose **Stop recording network log** \(![Stop recording network log][ImageRecordOnIcon]\).</span></span>  <span data-ttu-id="d8516-113">Il devient gris pour indiquer que DevTools n’enregistre plus les demandes.</span><span class="sxs-lookup"><span data-stu-id="d8516-113">It turns grey to indicate that DevTools is no longer recording requests.</span></span>  
-1.  <span data-ttu-id="d8516-114">`Control` + `E` Dans le panneau réseau du réseau, sélectionnez \ (Windows, Linux \) ou `Command` + `E` \ (MacOS \). \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="d8516-114">Select `Control`+`E` \(Windows, Linux\) or `Command`+`E` \(macOS\) while the **Network** panel is in focus.</span></span>  
+1.  <span data-ttu-id="454db-112">Dans **l’outil Réseau,** **sélectionnez Arrêter l’enregistrement du journal réseau** \( ![ Arrêter l’enregistrement du journal ][ImageRecordOnIcon] réseau \).</span><span class="sxs-lookup"><span data-stu-id="454db-112">On the **Network** tool, choose **Stop recording network log** \(![Stop recording network log][ImageRecordOnIcon]\).</span></span>  <span data-ttu-id="454db-113">Il devient gris pour indiquer que DevTools n’enregistre plus les demandes.</span><span class="sxs-lookup"><span data-stu-id="454db-113">It turns grey to indicate that DevTools is no longer recording requests.</span></span>  
+1.  <span data-ttu-id="454db-114">Sélectionnez `Control` + `E` \(Windows, Linux\) ou `Command` + `E` \(macOS\) \*\*\*\* lorsque l’outil Réseau est en cours de mise au point.</span><span class="sxs-lookup"><span data-stu-id="454db-114">Select `Control`+`E` \(Windows, Linux\) or `Command`+`E` \(macOS\) while the **Network** tool is in focus.</span></span>  
 
-### <span data-ttu-id="d8516-115">Supprimer des demandes</span><span class="sxs-lookup"><span data-stu-id="d8516-115">Clear requests</span></span>  
+### <a name="clear-requests"></a><span data-ttu-id="454db-115">Effacer les demandes</span><span class="sxs-lookup"><span data-stu-id="454db-115">Clear requests</span></span>  
 
-<span data-ttu-id="d8516-116">\*\*\*\* ![ Dans le volet réseau, sélectionnez Effacer \ (Clear ][ImageClearIcon] \) pour effacer toutes les demandes de la table demandes. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="d8516-116">Choose **Clear** \(![Clear][ImageClearIcon]\) on the **Network** panel to clear all requests from the Requests table.</span></span>  
+<span data-ttu-id="454db-116">Sélectionnez **Effacer** \( ![ Effacer \) sur l’outil Réseau pour effacer toutes les demandes de ][ImageClearIcon] la table Demandes. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="454db-116">Choose **Clear** \(![Clear][ImageClearIcon]\) on the **Network** tool to clear all requests from the Requests table.</span></span>  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Bouton Effacer" lightbox="../media/network-network-clear-button.msft.png":::
-   <span data-ttu-id="d8516-118">Bouton **Effacer**</span><span class="sxs-lookup"><span data-stu-id="d8516-118">The **Clear** button</span></span>  
+   <span data-ttu-id="454db-118">Bouton \*\*\*\* Effacer</span><span class="sxs-lookup"><span data-stu-id="454db-118">The **Clear** button</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-119">Enregistrer les demandes lors du chargement de la page</span><span class="sxs-lookup"><span data-stu-id="d8516-119">Save requests across page loads</span></span>  
+### <a name="save-requests-across-page-loads"></a><span data-ttu-id="454db-119">Enregistrer des demandes sur les chargements de page</span><span class="sxs-lookup"><span data-stu-id="454db-119">Save requests across page loads</span></span>  
 
-<span data-ttu-id="d8516-120">Pour enregistrer les demandes lors du chargement de la page, dans le panneau **réseau** , activez la case à cocher **conserver le journal** .</span><span class="sxs-lookup"><span data-stu-id="d8516-120">To save requests across page loads, on the **Network** panel, turn on the **Preserve log** checkbox.</span></span>  <span data-ttu-id="d8516-121">DevTools enregistre toutes les demandes jusqu’à ce que vous désactiviez le **Journal de conservation**.</span><span class="sxs-lookup"><span data-stu-id="d8516-121">DevTools saves all requests until you disable **Preserve log**.</span></span>  
+<span data-ttu-id="454db-120">Pour enregistrer les demandes sur les chargements de page, sur l’outil **Réseau,** activer la case à cocher Conserver **le journal.**</span><span class="sxs-lookup"><span data-stu-id="454db-120">To save requests across page loads, on the **Network** tool, turn on the **Preserve log** checkbox.</span></span>  <span data-ttu-id="454db-121">DevTools enregistre toutes les demandes jusqu’à ce que vous **désactiviez conserver le journal.**</span><span class="sxs-lookup"><span data-stu-id="454db-121">DevTools saves all requests until you disable **Preserve log**.</span></span>  
 
-:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="Case à cocher conserver le journal" lightbox="../media/network-network-preserve-log.msft.png":::
-   <span data-ttu-id="d8516-123">Case à cocher **conserver le journal**</span><span class="sxs-lookup"><span data-stu-id="d8516-123">The **Preserve Log** checkbox</span></span>  
+:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="Case à cocher Conserver le journal" lightbox="../media/network-network-preserve-log.msft.png":::
+   <span data-ttu-id="454db-123">Case **à cocher** Conserver le journal</span><span class="sxs-lookup"><span data-stu-id="454db-123">The **Preserve Log** checkbox</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-124">Capture de captures d’écran pendant le chargement de la page</span><span class="sxs-lookup"><span data-stu-id="d8516-124">Capture screenshots during page load</span></span>  
+### <a name="capture-screenshots-during-page-load"></a><span data-ttu-id="454db-124">Capture d’écran pendant le chargement de la page</span><span class="sxs-lookup"><span data-stu-id="454db-124">Capture screenshots during page load</span></span>  
 
-<span data-ttu-id="d8516-125">Capture des captures d’écran permettant d’analyser ce qui s’affiche pour les utilisateurs lorsque vous patientez pendant le chargement de la page.</span><span class="sxs-lookup"><span data-stu-id="d8516-125">Capture screenshots to analyze what displays for users while waiting for your page to load.</span></span>  
+<span data-ttu-id="454db-125">Capturez des captures d’écran pour analyser ce qui s’affiche pour les utilisateurs en attendant le chargement de votre page.</span><span class="sxs-lookup"><span data-stu-id="454db-125">Capture screenshots to analyze what displays for users while waiting for your page to load.</span></span>  
 
-<span data-ttu-id="d8516-126">Pour activer les captures d’écran, choisissez **paramètres du réseau**, puis, dans le volet **réseau** , activez la case à cocher capture des captures d' **écran** .</span><span class="sxs-lookup"><span data-stu-id="d8516-126">To enable screenshots, choose **Network settings**, and on the **Network** panel, turn on the **Capture screenshots** checkbox.</span></span>  
+<span data-ttu-id="454db-126">Pour activer les captures d’écran, \*\*\*\* **sélectionnez Paramètres**réseau et, dans l’outil Réseau, activez la case à cocher Capturer les **captures d’écran.**</span><span class="sxs-lookup"><span data-stu-id="454db-126">To enable screenshots, choose **Network settings**, and on the **Network** tool, turn on the **Capture screenshots** checkbox.</span></span>  
 
-<span data-ttu-id="d8516-127">Actualisez la page lorsque le panneau **réseau** a le focus pour capturer les captures d’écran.</span><span class="sxs-lookup"><span data-stu-id="d8516-127">Refresh the page while the **Network** panel is in focus to capture screenshots.</span></span>  
+<span data-ttu-id="454db-127">Actualisez la page lorsque **l’outil** Réseau est en cours de mise en place pour capturer des captures d’écran.</span><span class="sxs-lookup"><span data-stu-id="454db-127">Refresh the page while the **Network** tool is in focus to capture screenshots.</span></span>  
 
-<span data-ttu-id="d8516-128">Après avoir capturé une capture d’écran, vous interagissez comme suit.</span><span class="sxs-lookup"><span data-stu-id="d8516-128">After capturing a screenshot, you interact with it in the following ways.</span></span>  
+<span data-ttu-id="454db-128">Après avoir capturé une capture d’écran, vous interagissez avec elle des manières suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-128">After capturing a screenshot, you interact with it in the following ways.</span></span>  
 
-*   <span data-ttu-id="d8516-129">Survol d’une capture d’écran pour afficher le point de capture de cette capture d’écran.</span><span class="sxs-lookup"><span data-stu-id="d8516-129">Hover on a screenshot to display the point at which that screenshot was captured.</span></span>  <span data-ttu-id="d8516-130">Une ligne jaune s’affiche dans le volet **vue d’ensemble** .</span><span class="sxs-lookup"><span data-stu-id="d8516-130">A yellow line is displayed on the **Overview** pane.</span></span>  
-*   <span data-ttu-id="d8516-131">Choisissez la miniature d’un écran pour filtrer toutes les demandes qui se sont produites après la capture de la capture d’écran.</span><span class="sxs-lookup"><span data-stu-id="d8516-131">Choose the thumbnail of a screen to filter out any requests that occurred after the screenshot was captured.</span></span>  
-*   <span data-ttu-id="d8516-132">Double-cliquez sur une miniature pour y effectuer un zoom.</span><span class="sxs-lookup"><span data-stu-id="d8516-132">Double-click a thumbnail to zoom into it.</span></span>  
+*   <span data-ttu-id="454db-129">Pointez sur une capture d’écran pour afficher le point auquel cette capture d’écran a été capturée.</span><span class="sxs-lookup"><span data-stu-id="454db-129">Hover on a screenshot to display the point at which that screenshot was captured.</span></span>  <span data-ttu-id="454db-130">Une ligne jaune s’affiche dans le **volet** Vue d’ensemble.</span><span class="sxs-lookup"><span data-stu-id="454db-130">A yellow line is displayed on the **Overview** pane.</span></span>  
+*   <span data-ttu-id="454db-131">Choisissez la miniature d’un écran pour filtrer les demandes qui se sont produites après la capture d’écran.</span><span class="sxs-lookup"><span data-stu-id="454db-131">Choose the thumbnail of a screen to filter out any requests that occurred after the screenshot was captured.</span></span>  
+*   <span data-ttu-id="454db-132">Double-cliquez sur une miniature pour la zoomer.</span><span class="sxs-lookup"><span data-stu-id="454db-132">Double-click a thumbnail to zoom into it.</span></span>  
 
-:::image type="complex" source="../media/network-network-screenshot-hover.msft.png" alt-text="Survol d’une capture d’écran" lightbox="../media/network-network-screenshot-hover.msft.png":::
-   <span data-ttu-id="d8516-134">Survol d’une capture d’écran</span><span class="sxs-lookup"><span data-stu-id="d8516-134">Hover on a screenshot</span></span>  
+:::image type="complex" source="../media/network-network-screenshot-hover.msft.png" alt-text="Pointer sur une capture d’écran" lightbox="../media/network-network-screenshot-hover.msft.png":::
+   <span data-ttu-id="454db-134">Pointer sur une capture d’écran</span><span class="sxs-lookup"><span data-stu-id="454db-134">Hover on a screenshot</span></span>  
 :::image-end:::  
 
 <!--  ### Replay XHR request  -->
@@ -91,123 +91,123 @@ ms.locfileid: "11230753"
 :::image-end:::  
 -->  
 
-## <span data-ttu-id="d8516-135">Changer le comportement de chargement</span><span class="sxs-lookup"><span data-stu-id="d8516-135">Change loading behavior</span></span>  
+## <a name="change-loading-behavior"></a><span data-ttu-id="454db-135">Modifier le comportement de chargement</span><span class="sxs-lookup"><span data-stu-id="454db-135">Change loading behavior</span></span>  
 
-### <span data-ttu-id="d8516-136">Émuler un visiteur pour la première fois en désactivant le cache du navigateur</span><span class="sxs-lookup"><span data-stu-id="d8516-136">Emulate a first-time visitor by disabling the browser cache</span></span>  
+### <a name="emulate-a-first-time-visitor-by-disabling-the-browser-cache"></a><span data-ttu-id="454db-136">Émuler un premier visiteur en désactivant le cache du navigateur</span><span class="sxs-lookup"><span data-stu-id="454db-136">Emulate a first-time visitor by disabling the browser cache</span></span>  
 
-<span data-ttu-id="d8516-137">Pour émuler la façon dont un utilisateur a expériences sur votre site pour la première fois, activez la case à cocher **désactiver le cache** .</span><span class="sxs-lookup"><span data-stu-id="d8516-137">To emulate how a first-time user experiences your site, turn on the **Disable cache** checkbox.</span></span>  <span data-ttu-id="d8516-138">DevTools désactive le cache du navigateur.</span><span class="sxs-lookup"><span data-stu-id="d8516-138">DevTools disables the browser cache.</span></span>  <span data-ttu-id="d8516-139">Cette fonctionnalité émule plus précisément l’utilisation de la première utilisation de l’utilisateur, car les requêtes sont servies dans le cache du navigateur lors de plusieurs visites.</span><span class="sxs-lookup"><span data-stu-id="d8516-139">This feature more accurately emulates a first-time user's experience, because requests are served from the browser cache on repeat visits.</span></span>  
+<span data-ttu-id="454db-137">Pour émuler la façon dont un utilisateur se retrouve pour la première fois sur votre site, cochez la case Désactiver le **cache.**</span><span class="sxs-lookup"><span data-stu-id="454db-137">To emulate how a first-time user experiences your site, turn on the **Disable cache** checkbox.</span></span>  <span data-ttu-id="454db-138">DevTools désactive le cache du navigateur.</span><span class="sxs-lookup"><span data-stu-id="454db-138">DevTools disables the browser cache.</span></span>  <span data-ttu-id="454db-139">Cette fonctionnalité émule plus précisément l’expérience d’un premier utilisateur, car les demandes sont reçues à partir du cache du navigateur lors de visites répétées.</span><span class="sxs-lookup"><span data-stu-id="454db-139">This feature more accurately emulates a first-time user's experience, because requests are served from the browser cache on repeat visits.</span></span>  
 
 :::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="Case à cocher Désactiver le cache" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
-   <span data-ttu-id="d8516-141">Case à cocher **désactiver le cache**</span><span class="sxs-lookup"><span data-stu-id="d8516-141">The **Disable Cache** checkbox</span></span>  
+   <span data-ttu-id="454db-141">Case **à cocher** Désactiver le cache</span><span class="sxs-lookup"><span data-stu-id="454db-141">The **Disable Cache** checkbox</span></span>  
 :::image-end:::  
 
-#### <span data-ttu-id="d8516-142">Désactiver le cache du navigateur dans le tiroir du réseau</span><span class="sxs-lookup"><span data-stu-id="d8516-142">Disable the browser cache from the Network Conditions drawer</span></span>  
+#### <a name="disable-the-browser-cache-from-the-network-conditions-drawer"></a><span data-ttu-id="454db-142">Désactiver le cache du navigateur à partir du caisse des conditions réseau</span><span class="sxs-lookup"><span data-stu-id="454db-142">Disable the browser cache from the Network Conditions drawer</span></span>  
 
-<span data-ttu-id="d8516-143">Si vous voulez désactiver le cache lorsque vous travaillez dans d’autres panneaux DevTools, utilisez le tiroir de l’état du réseau.</span><span class="sxs-lookup"><span data-stu-id="d8516-143">If you want to disable the cache while working in other DevTools panels, use the Network Conditions drawer.</span></span>  
+<span data-ttu-id="454db-143">Si vous souhaitez désactiver le cache tout en travaillant dans d’autres panneaux DevTools, utilisez le panneau Conditions réseau.</span><span class="sxs-lookup"><span data-stu-id="454db-143">If you want to disable the cache while working in other DevTools panels, use the Network Conditions drawer.</span></span>  
 
-1.  <span data-ttu-id="d8516-144">Ouvrez le tiroir de **conditions du réseau** .</span><span class="sxs-lookup"><span data-stu-id="d8516-144">Open the **Network Conditions** drawer.</span></span>  
-1.  <span data-ttu-id="d8516-145">Activez/désactivez la case à cocher **désactiver le cache** .</span><span class="sxs-lookup"><span data-stu-id="d8516-145">Turn on \(or off\) the **Disable cache** checkbox.</span></span>  
+1.  <span data-ttu-id="454db-144">Ouvrez le **caisse des conditions réseau.**</span><span class="sxs-lookup"><span data-stu-id="454db-144">Open the **Network Conditions** drawer.</span></span>  
+1.  <span data-ttu-id="454db-145">Activer \(ou désactiver\) la case à cocher Désactiver le **cache.**</span><span class="sxs-lookup"><span data-stu-id="454db-145">Turn on \(or off\) the **Disable cache** checkbox.</span></span>  
 
 <!--todo: add network condition section when available -->  
 
-### <span data-ttu-id="d8516-146">Vider manuellement le cache du navigateur</span><span class="sxs-lookup"><span data-stu-id="d8516-146">Manually clear the browser cache</span></span>  
+### <a name="manually-clear-the-browser-cache"></a><span data-ttu-id="454db-146">Effacer manuellement le cache du navigateur</span><span class="sxs-lookup"><span data-stu-id="454db-146">Manually clear the browser cache</span></span>  
 
-<span data-ttu-id="d8516-147">Pour vider manuellement le cache du navigateur à tout moment, ouvrez le menu contextuel (cliquez avec le bouton droit sur \) n’importe où dans la table demandes et sélectionnez **Vider le cache du navigateur**.</span><span class="sxs-lookup"><span data-stu-id="d8516-147">To manually clear the browser cache at any time, open the contextual menu \(right-click\) anywhere in the Requests table and choose **Clear Browser Cache**.</span></span>  
+<span data-ttu-id="454db-147">Pour effacer manuellement le cache du navigateur à tout moment, ouvrez le menu contextuel \(clic droit\) n’importe où dans la table Demandes et choisissez Effacer le **cache du navigateur.**</span><span class="sxs-lookup"><span data-stu-id="454db-147">To manually clear the browser cache at any time, open the contextual menu \(right-click\) anywhere in the Requests table and choose **Clear Browser Cache**.</span></span>  
 
-:::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="Sélectionner vider le cache du navigateur" lightbox="../media/network-network-clear-browser-cache.msft.png":::
-   <span data-ttu-id="d8516-149">Sélectionner **Vider le cache du navigateur**</span><span class="sxs-lookup"><span data-stu-id="d8516-149">Choose **Clear Browser Cache**</span></span>  
+:::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="Choisir Effacer le cache du navigateur" lightbox="../media/network-network-clear-browser-cache.msft.png":::
+   <span data-ttu-id="454db-149">Choisir **Effacer le cache du navigateur**</span><span class="sxs-lookup"><span data-stu-id="454db-149">Choose **Clear Browser Cache**</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-150">Émuler hors connexion</span><span class="sxs-lookup"><span data-stu-id="d8516-150">Emulate offline</span></span>  
+### <a name="emulate-offline"></a><span data-ttu-id="454db-150">Émuler hors connexion</span><span class="sxs-lookup"><span data-stu-id="454db-150">Emulate offline</span></span>  
 
-<span data-ttu-id="d8516-151">Une nouvelle classe d’applications Web, appelées [applications Web progressives][DevtoolsProgressiveWebApps], fonctionne en mode hors connexion avec l’aide des **travailleurs de service**.</span><span class="sxs-lookup"><span data-stu-id="d8516-151">A new class of web apps, named [Progressive Web Apps][DevtoolsProgressiveWebApps], functions offline with the help of **service workers**.</span></span>  <span data-ttu-id="d8516-152">Vous constaterez peut-être qu’il est utile de simuler rapidement un appareil dépourvu de connexion aux données lors de la création de ce type d’application.</span><span class="sxs-lookup"><span data-stu-id="d8516-152">You may find it useful to quickly simulate a device that has no data connection when you are building this type of app.</span></span>  
+<span data-ttu-id="454db-151">Une nouvelle classe d’applications web, nommée [Progressive Web Apps,][DevtoolsProgressiveWebApps]fonctionne en mode hors connexion à l’aide des travailleurs **du service.**</span><span class="sxs-lookup"><span data-stu-id="454db-151">A new class of web apps, named [Progressive Web Apps][DevtoolsProgressiveWebApps], functions offline with the help of **service workers**.</span></span>  <span data-ttu-id="454db-152">Il peut s’avérer utile de simuler rapidement un appareil sans connexion de données lorsque vous construisez ce type d’application.</span><span class="sxs-lookup"><span data-stu-id="454db-152">You may find it useful to quickly simulate a device that has no data connection when you are building this type of app.</span></span>  
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
-<span data-ttu-id="d8516-153">Sélectionnez le menu déroulant **en ligne** , recherchez sous **présélections**, puis sélectionnez **hors ligne** pour simuler une utilisation du réseau hors connexion.</span><span class="sxs-lookup"><span data-stu-id="d8516-153">Choose the **Online** dropdown menu, search under **Presets**, and choose **Offline** to simulate an offline network experience.</span></span>  
+<span data-ttu-id="454db-153">Choisissez le menu déroulant **En** ligne, recherchez sous **Presets**et choisissez **Hors** connexion pour simuler une expérience réseau hors connexion.</span><span class="sxs-lookup"><span data-stu-id="454db-153">Choose the **Online** dropdown menu, search under **Presets**, and choose **Offline** to simulate an offline network experience.</span></span>  
 
-:::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="Menu déroulant hors connexion" lightbox="../media/network-network-offline-dropdown.msft.png":::
-   <span data-ttu-id="d8516-155">Menu déroulant **hors connexion**</span><span class="sxs-lookup"><span data-stu-id="d8516-155">The **Offline** dropdown menu</span></span>  
+:::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="Menu déroulant Hors connexion" lightbox="../media/network-network-offline-dropdown.msft.png":::
+   <span data-ttu-id="454db-155">Menu **déroulant Hors** connexion</span><span class="sxs-lookup"><span data-stu-id="454db-155">The **Offline** dropdown menu</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-156">Émuler une connexion réseau lente</span><span class="sxs-lookup"><span data-stu-id="d8516-156">Emulate slow network connections</span></span>  
+### <a name="emulate-slow-network-connections"></a><span data-ttu-id="454db-156">Émuler les connexions réseau lentes</span><span class="sxs-lookup"><span data-stu-id="454db-156">Emulate slow network connections</span></span>  
 
-<span data-ttu-id="d8516-157">Émulez des vitesses de connexion 3G, Fast 3G et autres vitesses de connexion dans le menu déroulant **en ligne** .</span><span class="sxs-lookup"><span data-stu-id="d8516-157">Emulate Slow 3G, Fast 3G, and other connection speeds from the **Online** dropdown menu.</span></span>  
+<span data-ttu-id="454db-157">Émulez les 3G, les vitesses 3G rapides et d’autres vitesses de connexion à partir du menu déroulant **En** ligne.</span><span class="sxs-lookup"><span data-stu-id="454db-157">Emulate Slow 3G, Fast 3G, and other connection speeds from the **Online** dropdown menu.</span></span>  
 
-:::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="Menu déroulant limitation" lightbox="../media/network-network-throttling-menu.msft.png":::
-   <span data-ttu-id="d8516-159">Menu déroulant **limitation**</span><span class="sxs-lookup"><span data-stu-id="d8516-159">The **Throttling** dropdown menu</span></span>  
+:::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="Menu déroulant Limitation" lightbox="../media/network-network-throttling-menu.msft.png":::
+   <span data-ttu-id="454db-159">Menu **déroulant Limitation**</span><span class="sxs-lookup"><span data-stu-id="454db-159">The **Throttling** dropdown menu</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="d8516-160">Vous pouvez choisir parmi différents préréglages, par exemple, lente 3G ou Fast 3G.</span><span class="sxs-lookup"><span data-stu-id="d8516-160">You may choose from different presets, such as Slow 3G or Fast 3G.</span></span>  <span data-ttu-id="d8516-161">Pour ajouter vos propres Présélections personnalisées, ouvrez le menu limitation, puis **Sélectionnez**  >  **Ajouter**.</span><span class="sxs-lookup"><span data-stu-id="d8516-161">To add your own custom presets, open the Throttling menu, and choose **Custom** > **Add**.</span></span>  
+<span data-ttu-id="454db-160">Vous pouvez choisir parmi différents prérets, tels que Slow 3G ou Fast 3G.</span><span class="sxs-lookup"><span data-stu-id="454db-160">You may choose from different presets, such as Slow 3G or Fast 3G.</span></span>  <span data-ttu-id="454db-161">Pour ajouter vos propres prérets personnalisés, ouvrez le menu Limitation, puis choisissez **Ajouter**  >  **personnalisé.**</span><span class="sxs-lookup"><span data-stu-id="454db-161">To add your own custom presets, open the Throttling menu, and choose **Custom** > **Add**.</span></span>  
 
-<span data-ttu-id="d8516-162">DevTools affiche une icône d’avertissement en regard de l’onglet **réseau** pour vous rappeler que la limitation est activée.</span><span class="sxs-lookup"><span data-stu-id="d8516-162">DevTools displays a warning icon next to the **Network** tab to remind you that throttling is enabled.</span></span>  
+<span data-ttu-id="454db-162">DevTools affiche une icône d’avertissement à côté de l’outil Réseau pour vous rappeler que la limitation est activée. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="454db-162">DevTools displays a warning icon next to the **Network** tool to remind you that throttling is enabled.</span></span>  
 
-#### <span data-ttu-id="d8516-163">Émuler une connexion réseau lente à partir du tiroir du réseau</span><span class="sxs-lookup"><span data-stu-id="d8516-163">Emulate slow network connections from the Network Conditions drawer</span></span>  
+#### <a name="emulate-slow-network-connections-from-the-network-conditions-drawer"></a><span data-ttu-id="454db-163">Émuler les connexions réseau lentes à partir du caisse des conditions réseau</span><span class="sxs-lookup"><span data-stu-id="454db-163">Emulate slow network connections from the Network Conditions drawer</span></span>  
 
-<span data-ttu-id="d8516-164">Si vous souhaitez limiter la connexion réseau lorsque vous travaillez dans d’autres panneaux DevTools, utilisez le tiroir de l’état du réseau.</span><span class="sxs-lookup"><span data-stu-id="d8516-164">If you want to throttle the network connection while working in other DevTools panels, use the Network Conditions drawer.</span></span>  
+<span data-ttu-id="454db-164">Si vous souhaitez limiter la connexion réseau tout en travaillant dans d’autres panneaux DevTools, utilisez le panneau Conditions réseau.</span><span class="sxs-lookup"><span data-stu-id="454db-164">If you want to throttle the network connection while working in other DevTools panels, use the Network Conditions drawer.</span></span>  
 
-1.  <span data-ttu-id="d8516-165">Ouvrez le tiroir de **conditions du réseau** .</span><span class="sxs-lookup"><span data-stu-id="d8516-165">Open the **Network Conditions** drawer.</span></span>  
-1.  <span data-ttu-id="d8516-166">Choisissez votre vitesse de connexion dans le menu **limitation** .</span><span class="sxs-lookup"><span data-stu-id="d8516-166">Choose your connection speed from the **Throttling** menu.</span></span>  
+1.  <span data-ttu-id="454db-165">Ouvrez le **caisse des conditions réseau.**</span><span class="sxs-lookup"><span data-stu-id="454db-165">Open the **Network Conditions** drawer.</span></span>  
+1.  <span data-ttu-id="454db-166">Choisissez votre vitesse de connexion dans le menu **Limitation.**</span><span class="sxs-lookup"><span data-stu-id="454db-166">Choose your connection speed from the **Throttling** menu.</span></span>  
 
 <!--todo: add network condition section when available -->  
 
-### <span data-ttu-id="d8516-167">Effacement manuel des cookies du navigateur</span><span class="sxs-lookup"><span data-stu-id="d8516-167">Manually clear browser cookies</span></span>  
+### <a name="manually-clear-browser-cookies"></a><span data-ttu-id="454db-167">Effacer manuellement les cookies du navigateur</span><span class="sxs-lookup"><span data-stu-id="454db-167">Manually clear browser cookies</span></span>  
 
-<span data-ttu-id="d8516-168">Pour effacer manuellement les cookies du navigateur à tout moment, positionnez le curseur n’importe où dans le tableau demandes, ouvrez le menu contextuel, puis sélectionnez **effacer les cookies du navigateur**.</span><span class="sxs-lookup"><span data-stu-id="d8516-168">To manually clear browser cookies at any time, hover anywhere in the Requests table, open the contextual menu \(right-click\), and choose **Clear Browser Cookies**.</span></span>  
+<span data-ttu-id="454db-168">Pour effacer manuellement les cookies du navigateur à tout moment, pointez n’importe où dans la table Demandes, ouvrez le menu contextuel \(clic droit\), puis choisissez Effacer les **cookies du navigateur.**</span><span class="sxs-lookup"><span data-stu-id="454db-168">To manually clear browser cookies at any time, hover anywhere in the Requests table, open the contextual menu \(right-click\), and choose **Clear Browser Cookies**.</span></span>  
 
-:::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="Sélectionnez effacer les cookies du navigateur." lightbox="../media/network-network-clear-browser-cookies.msft.png":::
-   <span data-ttu-id="d8516-170">Sélectionnez **effacer les cookies du navigateur** .</span><span class="sxs-lookup"><span data-stu-id="d8516-170">Choose **Clear Browser Cookies**</span></span>  
+:::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="Choose Clear Browser Cookies" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
+   <span data-ttu-id="454db-170">Choose **Clear Browser Cookies**</span><span class="sxs-lookup"><span data-stu-id="454db-170">Choose **Clear Browser Cookies**</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-171">Remplacer l’agent utilisateur</span><span class="sxs-lookup"><span data-stu-id="d8516-171">Override the user agent</span></span>  
+### <a name="override-the-user-agent"></a><span data-ttu-id="454db-171">Remplacer l’agent utilisateur</span><span class="sxs-lookup"><span data-stu-id="454db-171">Override the user agent</span></span>  
 
-<span data-ttu-id="d8516-172">Pour remplacer manuellement l’agent utilisateur, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="d8516-172">To manually override the user agent, use the following steps.</span></span>  
+<span data-ttu-id="454db-172">Pour remplacer manuellement l’agent utilisateur, utilisez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-172">To manually override the user agent, use the following steps.</span></span>  
 
-1.  <span data-ttu-id="d8516-173">Ouvrez le tiroir de **conditions du réseau** .</span><span class="sxs-lookup"><span data-stu-id="d8516-173">Open the **Network Conditions** drawer.</span></span>  
-1.  <span data-ttu-id="d8516-174">Désactiver la case à cocher **sélectionner automatiquement** .</span><span class="sxs-lookup"><span data-stu-id="d8516-174">Turn off the **Select automatically** checkbox.</span></span>  
-1.  <span data-ttu-id="d8516-175">Choisissez une option de l’agent utilisateur dans le menu ou entrez-en un dans la zone de texte.</span><span class="sxs-lookup"><span data-stu-id="d8516-175">Choose a user agent option from the menu, or enter a custom one in the text box.</span></span>  
+1.  <span data-ttu-id="454db-173">Ouvrez le **caisse des conditions réseau.**</span><span class="sxs-lookup"><span data-stu-id="454db-173">Open the **Network Conditions** drawer.</span></span>  
+1.  <span data-ttu-id="454db-174">Désactiver la case **à cocher Sélectionner** automatiquement.</span><span class="sxs-lookup"><span data-stu-id="454db-174">Turn off the **Select automatically** checkbox.</span></span>  
+1.  <span data-ttu-id="454db-175">Choisissez une option d’agent utilisateur dans le menu ou entrez une option personnalisée dans la zone de texte.</span><span class="sxs-lookup"><span data-stu-id="454db-175">Choose a user agent option from the menu, or enter a custom one in the text box.</span></span>  
 
 <!--todo: add network condition section when available -->  
 
-## <span data-ttu-id="d8516-176">Demandes de filtre</span><span class="sxs-lookup"><span data-stu-id="d8516-176">Filter requests</span></span>  
+## <a name="filter-requests"></a><span data-ttu-id="454db-176">Filtrer les demandes</span><span class="sxs-lookup"><span data-stu-id="454db-176">Filter requests</span></span>  
 
-### <span data-ttu-id="d8516-177">Filtrer les demandes par propriétés</span><span class="sxs-lookup"><span data-stu-id="d8516-177">Filter requests by properties</span></span>  
+### <a name="filter-requests-by-properties"></a><span data-ttu-id="454db-177">Filtrer les demandes par propriétés</span><span class="sxs-lookup"><span data-stu-id="454db-177">Filter requests by properties</span></span>  
 
-<span data-ttu-id="d8516-178">Utilisez la zone de texte **filtre** pour filtrer les demandes par propriétés, telles que le domaine ou la taille de la requête.</span><span class="sxs-lookup"><span data-stu-id="d8516-178">Use the **Filter** text box to filter requests by properties, such as the domain or size of the request.</span></span>  
+<span data-ttu-id="454db-178">Utilisez la **zone de** texte Filtrer pour filtrer les demandes par propriétés, telles que le domaine ou la taille de la demande.</span><span class="sxs-lookup"><span data-stu-id="454db-178">Use the **Filter** text box to filter requests by properties, such as the domain or size of the request.</span></span>  
 
-<span data-ttu-id="d8516-179">Si la zone de texte n’est pas affichée, le volet **filtres** est probablement masqué.</span><span class="sxs-lookup"><span data-stu-id="d8516-179">If the text box is not displayed, the **Filters** pane is probably hidden.</span></span>  
-<span data-ttu-id="d8516-180">Pour plus d’informations, accédez à [la section masquer le volet filtres](#hide-the-filters-pane).</span><span class="sxs-lookup"><span data-stu-id="d8516-180">For more information, navigate to [Hide the Filters pane](#hide-the-filters-pane).</span></span>  
+<span data-ttu-id="454db-179">Si la zone de texte n’est pas affichée, le volet **Filtres** est probablement masqué.</span><span class="sxs-lookup"><span data-stu-id="454db-179">If the text box is not displayed, the **Filters** pane is probably hidden.</span></span>  
+<span data-ttu-id="454db-180">Pour plus d’informations, [accédez à Masquer le volet Filtres.](#hide-the-filters-pane)</span><span class="sxs-lookup"><span data-stu-id="454db-180">For more information, navigate to [Hide the Filters pane](#hide-the-filters-pane).</span></span>  
 
-:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="Zone de texte filtre" lightbox="../media/network-network-filters-textbox.msft.png":::
-   <span data-ttu-id="d8516-182">Zone de texte **filtre**</span><span class="sxs-lookup"><span data-stu-id="d8516-182">The **Filter** text box</span></span>  
+:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="Zone de texte Filtre" lightbox="../media/network-network-filters-textbox.msft.png":::
+   <span data-ttu-id="454db-182">Zone **de texte** Filtre</span><span class="sxs-lookup"><span data-stu-id="454db-182">The **Filter** text box</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="d8516-183">Vous pouvez utiliser plusieurs propriétés simultanément en séparant chaque propriété d’un espace.</span><span class="sxs-lookup"><span data-stu-id="d8516-183">You may use multiple properties simultaneously by separating each property with a space.</span></span>  <span data-ttu-id="d8516-184">Par exemple, `mime-type:image/png larger-than:1K` affiche tous les png dont la taille est supérieure à 1 kilo-octets.</span><span class="sxs-lookup"><span data-stu-id="d8516-184">For example, `mime-type:image/png larger-than:1K` displays all PNGs that are larger than 1 kilobyte.</span></span>  <span data-ttu-id="d8516-185">Les filtres multi-propriétés sont équivalents aux `AND` opérations.</span><span class="sxs-lookup"><span data-stu-id="d8516-185">The multi-property filters are equivalent to `AND` operations.</span></span>  `OR` <span data-ttu-id="d8516-186">les opérations ne sont actuellement pas prises en charge.</span><span class="sxs-lookup"><span data-stu-id="d8516-186">operations are currently not supported.</span></span>  
+<span data-ttu-id="454db-183">Vous pouvez utiliser plusieurs propriétés simultanément en séparant chaque propriété par un espace.</span><span class="sxs-lookup"><span data-stu-id="454db-183">You may use multiple properties simultaneously by separating each property with a space.</span></span>  <span data-ttu-id="454db-184">Par exemple, affiche tous les PNG dont la taille `mime-type:image/png larger-than:1K` est supérieure à 1 kilo-octet.</span><span class="sxs-lookup"><span data-stu-id="454db-184">For example, `mime-type:image/png larger-than:1K` displays all PNGs that are larger than 1 kilobyte.</span></span>  <span data-ttu-id="454db-185">Les filtres multi-propriétés sont équivalents aux `AND` opérations.</span><span class="sxs-lookup"><span data-stu-id="454db-185">The multi-property filters are equivalent to `AND` operations.</span></span>  `OR` <span data-ttu-id="454db-186">ne sont actuellement pas pris en charge.</span><span class="sxs-lookup"><span data-stu-id="454db-186">operations are currently not supported.</span></span>  
 
-<span data-ttu-id="d8516-187">Liste complète des propriétés prises en charge.</span><span class="sxs-lookup"><span data-stu-id="d8516-187">The complete list of supported properties.</span></span>  
+<span data-ttu-id="454db-187">Liste complète des propriétés prise en charge.</span><span class="sxs-lookup"><span data-stu-id="454db-187">The complete list of supported properties.</span></span>  
 
-| <span data-ttu-id="d8516-188">Propriété</span><span class="sxs-lookup"><span data-stu-id="d8516-188">Property</span></span> | <span data-ttu-id="d8516-189">Détails</span><span class="sxs-lookup"><span data-stu-id="d8516-189">Details</span></span> |  
+| <span data-ttu-id="454db-188">Propriété</span><span class="sxs-lookup"><span data-stu-id="454db-188">Property</span></span> | <span data-ttu-id="454db-189">Détails</span><span class="sxs-lookup"><span data-stu-id="454db-189">Details</span></span> |  
 |:--- | :--- |  
-| `domain` | <span data-ttu-id="d8516-190">Afficher uniquement les ressources du domaine spécifié.</span><span class="sxs-lookup"><span data-stu-id="d8516-190">Only display resources from the specified domain.</span></span>  <span data-ttu-id="d8516-191">Vous pouvez utiliser un caractère générique \ ( `*` \) pour inclure plusieurs domaines.</span><span class="sxs-lookup"><span data-stu-id="d8516-191">You may use a wildcard character \(`*`\) to include multiple domains.</span></span>  <span data-ttu-id="d8516-192">Par exemple, `*.com` affiche les ressources de tous les noms de domaine se terminant par `.com` .</span><span class="sxs-lookup"><span data-stu-id="d8516-192">For example, `*.com` displays resources from all domain names ending in `.com`.</span></span>  <span data-ttu-id="d8516-193">DevTools peuplez le menu déroulant de saisie semi-automatique avec tous les domaines trouvés.</span><span class="sxs-lookup"><span data-stu-id="d8516-193">DevTools populate the autocomplete dropdown menu with all of the domains that are found.</span></span> |  
-| `has-response-header` | <span data-ttu-id="d8516-194">Affiche les ressources contenant l’en-tête de réponse HTTP spécifié.</span><span class="sxs-lookup"><span data-stu-id="d8516-194">Displays the resources that contain the specified HTTP response header.</span></span>  <span data-ttu-id="d8516-195">DevTools remplissez la liste déroulante de saisie semi-automatique avec tous les en-têtes de réponse détectés.</span><span class="sxs-lookup"><span data-stu-id="d8516-195">DevTools populate the autocomplete dropdown with all of the response headers that are found.</span></span> |  
-| `is` | <span data-ttu-id="d8516-196">Utiliser `is:running` pour rechercher des `WebSocket` ressources.</span><span class="sxs-lookup"><span data-stu-id="d8516-196">Use `is:running` to find `WebSocket` resources.</span></span> |  
-| `larger-than` | <span data-ttu-id="d8516-197">Affiche les ressources dont la taille est supérieure à la taille spécifiée, en octets.</span><span class="sxs-lookup"><span data-stu-id="d8516-197">Displays resources that are larger than the specified size, in bytes.</span></span>  <span data-ttu-id="d8516-198">La définition d’une valeur est égale à la valeur `1000` `1k` .</span><span class="sxs-lookup"><span data-stu-id="d8516-198">Setting a value of `1000` is equivalent to setting a value of `1k`.</span></span> |  
-| `method` | <span data-ttu-id="d8516-199">Affiche les ressources récupérées par le biais d’un type de méthode HTTP spécifié.</span><span class="sxs-lookup"><span data-stu-id="d8516-199">Displays resources that were retrieved over a specified HTTP method type.</span></span>  <span data-ttu-id="d8516-200">DevTools remplissez la liste déroulante avec toutes les méthodes HTTP trouvées.</span><span class="sxs-lookup"><span data-stu-id="d8516-200">DevTools populate the dropdown with all of the HTTP methods  that are found.</span></span> |  
-| `mime-type` | <span data-ttu-id="d8516-201">Affiche les ressources d’un type MIME spécifié.</span><span class="sxs-lookup"><span data-stu-id="d8516-201">Displays resources of a specified MIME type.</span></span>  <span data-ttu-id="d8516-202">DevTools remplissez la liste déroulante à l’aide de tous les types MIME trouvés.</span><span class="sxs-lookup"><span data-stu-id="d8516-202">DevTools populate the dropdown with all MIME types  that are found.</span></span> |  
-| `mixed-content` | <span data-ttu-id="d8516-203">Affichez toutes les ressources de contenu mixte \ ( `mixed-content:all` \) ou uniquement celles actuellement affichées \ ( `mixed-content:displayed` \).</span><span class="sxs-lookup"><span data-stu-id="d8516-203">Show all mixed content resources \(`mixed-content:all`\) or just the ones that are currently displayed \(`mixed-content:displayed`\).</span></span> |  
-| `scheme` | <span data-ttu-id="d8516-204">Affiche les ressources récupérées par le biais d’une connexion HTTP \ ( `scheme:http` \) ou protégé https \ ( `scheme:https` \).</span><span class="sxs-lookup"><span data-stu-id="d8516-204">Displays resources retrieved over unprotected HTTP \(`scheme:http`\) or protected HTTPS \(`scheme:https`\).</span></span> |  
-| `set-cookie-domain` | <span data-ttu-id="d8516-205">Affiche les ressources qui ont un `Set-Cookie` en-tête avec un `Domain` attribut qui correspond à la valeur spécifiée.</span><span class="sxs-lookup"><span data-stu-id="d8516-205">Displays resources that have a `Set-Cookie` header with a `Domain` attribute that matches the specified value.</span></span>  <span data-ttu-id="d8516-206">DevTools remplir la saisie semi-automatique avec tous les domaines de cookie détectés.</span><span class="sxs-lookup"><span data-stu-id="d8516-206">DevTools populate the autocomplete with all of the cookie domains that are found.</span></span> |  
-| `set-cookie-name` | <span data-ttu-id="d8516-207">Affiche les ressources possédant un `Set-Cookie` en-tête dont le nom correspond à la valeur spécifiée.</span><span class="sxs-lookup"><span data-stu-id="d8516-207">Displays resources that have a `Set-Cookie` header with a name that matches the specified value.</span></span>  <span data-ttu-id="d8516-208">DevTools remplir la saisie semi-automatique à l’aide du nom de cookie détecté.</span><span class="sxs-lookup"><span data-stu-id="d8516-208">DevTools populate the autocomplete with all of the cookie names that are found.</span></span> |  
-| `set-cookie-value` | <span data-ttu-id="d8516-209">Affiche les ressources dont `Set-Cookie` l’en-tête comporte une valeur qui correspond à la valeur spécifiée.</span><span class="sxs-lookup"><span data-stu-id="d8516-209">Displays resources that have a `Set-Cookie` header with a value that matches the specified value.</span></span>  <span data-ttu-id="d8516-210">DevTools remplir la saisie semi-automatique avec toutes les valeurs de cookie trouvées.</span><span class="sxs-lookup"><span data-stu-id="d8516-210">DevTools populate the autocomplete with all of the cookie values that are found.</span></span> |  
-| `status-code` | <span data-ttu-id="d8516-211">Affiche les ressources qui correspondent au code d’état HTTP spécifique.</span><span class="sxs-lookup"><span data-stu-id="d8516-211">Displays resources that match the specific HTTP status code.</span></span>  <span data-ttu-id="d8516-212">DevTools remplit le menu déroulant de saisie semi-automatique avec tous les codes d’État trouvés.</span><span class="sxs-lookup"><span data-stu-id="d8516-212">DevTools populates the autocomplete dropdown menu with all of the status codes that are found.</span></span> |  
+| `domain` | <span data-ttu-id="454db-190">Afficher uniquement les ressources du domaine spécifié.</span><span class="sxs-lookup"><span data-stu-id="454db-190">Only display resources from the specified domain.</span></span>  <span data-ttu-id="454db-191">Vous pouvez utiliser un caractère générique \( `*` \) pour inclure plusieurs domaines.</span><span class="sxs-lookup"><span data-stu-id="454db-191">You may use a wildcard character \(`*`\) to include multiple domains.</span></span>  <span data-ttu-id="454db-192">Par exemple, `*.com` affiche les ressources de tous les noms de domaine se terminant par `.com` .</span><span class="sxs-lookup"><span data-stu-id="454db-192">For example, `*.com` displays resources from all domain names ending in `.com`.</span></span>  <span data-ttu-id="454db-193">DevTools remplit le menu déroulant de la mise à jour de la mise à jour automatique avec tous les domaines trouvés.</span><span class="sxs-lookup"><span data-stu-id="454db-193">DevTools populate the autocomplete dropdown menu with all of the domains that are found.</span></span> |  
+| `has-response-header` | <span data-ttu-id="454db-194">Affiche les ressources qui contiennent l’en-tête de réponse HTTP spécifié.</span><span class="sxs-lookup"><span data-stu-id="454db-194">Displays the resources that contain the specified HTTP response header.</span></span>  <span data-ttu-id="454db-195">DevTools remplit la zone de mise à jour de la mise à jour automatique avec tous les en-têtes de réponse trouvés.</span><span class="sxs-lookup"><span data-stu-id="454db-195">DevTools populate the autocomplete dropdown with all of the response headers that are found.</span></span> |  
+| `is` | <span data-ttu-id="454db-196">À `is:running` utiliser pour rechercher des `WebSocket` ressources.</span><span class="sxs-lookup"><span data-stu-id="454db-196">Use `is:running` to find `WebSocket` resources.</span></span> |  
+| `larger-than` | <span data-ttu-id="454db-197">Affiche les ressources dont la taille est supérieure à la taille spécifiée, en octets.</span><span class="sxs-lookup"><span data-stu-id="454db-197">Displays resources that are larger than the specified size, in bytes.</span></span>  <span data-ttu-id="454db-198">Définir une valeur de `1000` . `1k`</span><span class="sxs-lookup"><span data-stu-id="454db-198">Setting a value of `1000` is equivalent to setting a value of `1k`.</span></span> |  
+| `method` | <span data-ttu-id="454db-199">Affiche les ressources qui ont été récupérées sur un type de méthode HTTP spécifié.</span><span class="sxs-lookup"><span data-stu-id="454db-199">Displays resources that were retrieved over a specified HTTP method type.</span></span>  <span data-ttu-id="454db-200">DevTools remplit la zone de détail avec toutes les méthodes HTTP qui sont trouvées.</span><span class="sxs-lookup"><span data-stu-id="454db-200">DevTools populate the dropdown with all of the HTTP methods  that are found.</span></span> |  
+| `mime-type` | <span data-ttu-id="454db-201">Affiche les ressources d’un type MIME spécifié.</span><span class="sxs-lookup"><span data-stu-id="454db-201">Displays resources of a specified MIME type.</span></span>  <span data-ttu-id="454db-202">DevTools remplit la zone de détail avec tous les types MIME trouvés.</span><span class="sxs-lookup"><span data-stu-id="454db-202">DevTools populate the dropdown with all MIME types  that are found.</span></span> |  
+| `mixed-content` | <span data-ttu-id="454db-203">Afficher toutes les ressources de contenu mixte \( \) ou uniquement ceux qui sont `mixed-content:all` actuellement affichés \( `mixed-content:displayed` \).</span><span class="sxs-lookup"><span data-stu-id="454db-203">Show all mixed content resources \(`mixed-content:all`\) or just the ones that are currently displayed \(`mixed-content:displayed`\).</span></span> |  
+| `scheme` | <span data-ttu-id="454db-204">Affiche les ressources récupérées sur http \( \) ou `scheme:http` HTTPS \( `scheme:https` \) protégées.</span><span class="sxs-lookup"><span data-stu-id="454db-204">Displays resources retrieved over unprotected HTTP \(`scheme:http`\) or protected HTTPS \(`scheme:https`\).</span></span> |  
+| `set-cookie-domain` | <span data-ttu-id="454db-205">Affiche les ressources qui ont un `Set-Cookie` en-tête avec un `Domain` attribut qui correspond à la valeur spécifiée.</span><span class="sxs-lookup"><span data-stu-id="454db-205">Displays resources that have a `Set-Cookie` header with a `Domain` attribute that matches the specified value.</span></span>  <span data-ttu-id="454db-206">DevTools remplit la mise à jour automatique avec tous les domaines de cookie trouvés.</span><span class="sxs-lookup"><span data-stu-id="454db-206">DevTools populate the autocomplete with all of the cookie domains that are found.</span></span> |  
+| `set-cookie-name` | <span data-ttu-id="454db-207">Affiche les ressources qui ont un `Set-Cookie` en-tête avec un nom qui correspond à la valeur spécifiée.</span><span class="sxs-lookup"><span data-stu-id="454db-207">Displays resources that have a `Set-Cookie` header with a name that matches the specified value.</span></span>  <span data-ttu-id="454db-208">DevTools remplit la mise à jour automatique avec tous les noms de cookies trouvés.</span><span class="sxs-lookup"><span data-stu-id="454db-208">DevTools populate the autocomplete with all of the cookie names that are found.</span></span> |  
+| `set-cookie-value` | <span data-ttu-id="454db-209">Affiche les ressources qui ont un `Set-Cookie` en-tête avec une valeur qui correspond à la valeur spécifiée.</span><span class="sxs-lookup"><span data-stu-id="454db-209">Displays resources that have a `Set-Cookie` header with a value that matches the specified value.</span></span>  <span data-ttu-id="454db-210">DevTools remplit la mise à jour automatique avec toutes les valeurs de cookie trouvées.</span><span class="sxs-lookup"><span data-stu-id="454db-210">DevTools populate the autocomplete with all of the cookie values that are found.</span></span> |  
+| `status-code` | <span data-ttu-id="454db-211">Affiche les ressources qui correspondent au code d’état HTTP spécifique.</span><span class="sxs-lookup"><span data-stu-id="454db-211">Displays resources that match the specific HTTP status code.</span></span>  <span data-ttu-id="454db-212">DevTools remplit le menu déroulant de lacomplet automatique avec tous les codes d’état trouvés.</span><span class="sxs-lookup"><span data-stu-id="454db-212">DevTools populates the autocomplete dropdown menu with all of the status codes that are found.</span></span> |  
 
-### <span data-ttu-id="d8516-213">Filtrer les demandes par type</span><span class="sxs-lookup"><span data-stu-id="d8516-213">Filter requests by type</span></span>  
+### <a name="filter-requests-by-type"></a><span data-ttu-id="454db-213">Filtrer les demandes par type</span><span class="sxs-lookup"><span data-stu-id="454db-213">Filter requests by type</span></span>  
 
-<span data-ttu-id="d8516-214">Pour filtrer les demandes par type de requête, sélectionnez l’un des boutons suivants dans le volet **réseau** .</span><span class="sxs-lookup"><span data-stu-id="d8516-214">To filter requests by request type, choose the one of the following buttons on the **Network** panel.</span></span>  
+<span data-ttu-id="454db-214">Pour filtrer les demandes par type de requête, choisissez l’un des boutons suivants sur **l’outil** Réseau.</span><span class="sxs-lookup"><span data-stu-id="454db-214">To filter requests by request type, choose the one of the following buttons on the **Network** tool.</span></span>  
 
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-215">XHR</span><span class="sxs-lookup"><span data-stu-id="d8516-215">XHR</span></span>**  
+      **<span data-ttu-id="454db-215">XHR</span><span class="sxs-lookup"><span data-stu-id="454db-215">XHR</span></span>**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -215,7 +215,7 @@ ms.locfileid: "11230753"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-216">JS</span><span class="sxs-lookup"><span data-stu-id="d8516-216">JS</span></span>**  
+      **<span data-ttu-id="454db-216">JS</span><span class="sxs-lookup"><span data-stu-id="454db-216">JS</span></span>**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -223,7 +223,7 @@ ms.locfileid: "11230753"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-217">CSS</span><span class="sxs-lookup"><span data-stu-id="d8516-217">CSS</span></span>**  
+      **<span data-ttu-id="454db-217">CSS</span><span class="sxs-lookup"><span data-stu-id="454db-217">CSS</span></span>**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -231,7 +231,7 @@ ms.locfileid: "11230753"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-218">IMG</span><span class="sxs-lookup"><span data-stu-id="d8516-218">Img</span></span>**  
+      **<span data-ttu-id="454db-218">Img</span><span class="sxs-lookup"><span data-stu-id="454db-218">Img</span></span>**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -239,7 +239,7 @@ ms.locfileid: "11230753"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-219">Media</span><span class="sxs-lookup"><span data-stu-id="d8516-219">Media</span></span>**  
+      **<span data-ttu-id="454db-219">Media</span><span class="sxs-lookup"><span data-stu-id="454db-219">Media</span></span>**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -247,7 +247,7 @@ ms.locfileid: "11230753"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-220">Police</span><span class="sxs-lookup"><span data-stu-id="d8516-220">Font</span></span>**  
+      **<span data-ttu-id="454db-220">Police</span><span class="sxs-lookup"><span data-stu-id="454db-220">Font</span></span>**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -255,7 +255,7 @@ ms.locfileid: "11230753"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-221">Documentation</span><span class="sxs-lookup"><span data-stu-id="d8516-221">Doc</span></span>**  
+      **<span data-ttu-id="454db-221">Doc</span><span class="sxs-lookup"><span data-stu-id="454db-221">Doc</span></span>**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -263,15 +263,15 @@ ms.locfileid: "11230753"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-222">NOMBRES</span><span class="sxs-lookup"><span data-stu-id="d8516-222">WS</span></span>**  
+      **<span data-ttu-id="454db-222">WS</span><span class="sxs-lookup"><span data-stu-id="454db-222">WS</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-223">WebSocket.</span><span class="sxs-lookup"><span data-stu-id="d8516-223">WebSocket.</span></span>  
+      <span data-ttu-id="454db-223">WebSocket.</span><span class="sxs-lookup"><span data-stu-id="454db-223">WebSocket.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-224">Manifeste</span><span class="sxs-lookup"><span data-stu-id="d8516-224">Manifest</span></span>**  
+      **<span data-ttu-id="454db-224">Manifeste</span><span class="sxs-lookup"><span data-stu-id="454db-224">Manifest</span></span>**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -279,202 +279,202 @@ ms.locfileid: "11230753"
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-225">Other</span><span class="sxs-lookup"><span data-stu-id="d8516-225">Other</span></span>**  
+      **<span data-ttu-id="454db-225">Other</span><span class="sxs-lookup"><span data-stu-id="454db-225">Other</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-226">Tout autre type qui ne figure pas dans la liste.</span><span class="sxs-lookup"><span data-stu-id="d8516-226">Any other type not listed.</span></span>  
+      <span data-ttu-id="454db-226">Tout autre type non répertorié.</span><span class="sxs-lookup"><span data-stu-id="454db-226">Any other type not listed.</span></span>  
    :::column-end:::
 :::row-end:::  
 
-<span data-ttu-id="d8516-227">Si ce n’est pas le cas, le volet **filtres** est masqué.</span><span class="sxs-lookup"><span data-stu-id="d8516-227">If the buttons do not display, the **Filters** pane may be hidden.</span></span>  
-<span data-ttu-id="d8516-228">Pour plus d’informations, accédez à [la section masquer le volet filtres](#hide-the-filters-pane).</span><span class="sxs-lookup"><span data-stu-id="d8516-228">For more information, navigate to [Hide the Filters pane](#hide-the-filters-pane).</span></span>  
+<span data-ttu-id="454db-227">Si les boutons ne s’affichent pas, le volet **Filtres** peut être masqué.</span><span class="sxs-lookup"><span data-stu-id="454db-227">If the buttons do not display, the **Filters** pane may be hidden.</span></span>  
+<span data-ttu-id="454db-228">Pour plus d’informations, [accédez à Masquer le volet Filtres.](#hide-the-filters-pane)</span><span class="sxs-lookup"><span data-stu-id="454db-228">For more information, navigate to [Hide the Filters pane](#hide-the-filters-pane).</span></span>  
 
-<span data-ttu-id="d8516-229">Pour activer plusieurs filtres de type simultanément, appuyez sur `Control` \ (Windows, Linux \) ou `Command` \ (MacOS \), puis sélectionnez.</span><span class="sxs-lookup"><span data-stu-id="d8516-229">To enable multiple type filters simultaneously, hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then choose.</span></span>  
+<span data-ttu-id="454db-229">Pour activer plusieurs filtres de type simultanément, maintenez la main sur `Control` \(Windows, Linux\) ou `Command` \(macOS\), puis choisissez.</span><span class="sxs-lookup"><span data-stu-id="454db-229">To enable multiple type filters simultaneously, hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then choose.</span></span>  
 
-:::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Utiliser les filtres de type pour afficher les ressources JS, CSS et document" lightbox="../media/network-network-type-filters.msft.png":::
-   <span data-ttu-id="d8516-231">Utiliser les filtres de type pour afficher les ressources JS, CSS et document</span><span class="sxs-lookup"><span data-stu-id="d8516-231">Use the Type filters to display JS, CSS, and Document resources</span></span>  
+:::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Utiliser les filtres type pour afficher les ressources JS, CSS et Document" lightbox="../media/network-network-type-filters.msft.png":::
+   <span data-ttu-id="454db-231">Utiliser les filtres type pour afficher les ressources JS, CSS et Document</span><span class="sxs-lookup"><span data-stu-id="454db-231">Use the Type filters to display JS, CSS, and Document resources</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-232">Filtrer les demandes par heure</span><span class="sxs-lookup"><span data-stu-id="d8516-232">Filter requests by time</span></span>  
+### <a name="filter-requests-by-time"></a><span data-ttu-id="454db-232">Filtrer les demandes par heure</span><span class="sxs-lookup"><span data-stu-id="454db-232">Filter requests by time</span></span>  
 
-<span data-ttu-id="d8516-233">Sélectionnez et faites glisser vers la gauche ou la droite dans le volet **vue d’ensemble** pour afficher uniquement les demandes qui ont été actives pendant ce laps de temps.</span><span class="sxs-lookup"><span data-stu-id="d8516-233">Choose and drag left or right on the **Overview** pane to only display requests that were active during that time frame.</span></span>  <span data-ttu-id="d8516-234">Le filtre est inclusive.</span><span class="sxs-lookup"><span data-stu-id="d8516-234">The filter is inclusive.</span></span>  <span data-ttu-id="d8516-235">Toutes les demandes qui ont été actives pendant la durée en surbrillance apparaissent.</span><span class="sxs-lookup"><span data-stu-id="d8516-235">Any request that was active during the highlighted time is shown.</span></span>  
+<span data-ttu-id="454db-233">Choisissez et faites glisser \*\*\*\* vers la gauche ou la droite dans le volet Vue d’ensemble pour afficher uniquement les demandes qui étaient actives pendant cette période.</span><span class="sxs-lookup"><span data-stu-id="454db-233">Choose and drag left or right on the **Overview** pane to only display requests that were active during that time frame.</span></span>  <span data-ttu-id="454db-234">Le filtre est inclus.</span><span class="sxs-lookup"><span data-stu-id="454db-234">The filter is inclusive.</span></span>  <span data-ttu-id="454db-235">Toute demande qui était active pendant l’heure mise en surbrillant s’affiche.</span><span class="sxs-lookup"><span data-stu-id="454db-235">Any request that was active during the highlighted time is shown.</span></span>  
 
-:::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="Filtrer toutes les demandes inactives à propos de 300 ms" lightbox="../media/network-network-overview-filter.msft.png":::
-   <span data-ttu-id="d8516-237">Filtrer toutes les demandes inactives à propos de 300 ms</span><span class="sxs-lookup"><span data-stu-id="d8516-237">Filter out any requests that were inactive around 300 ms</span></span>  
+:::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="Filtrer toutes les demandes inactives d’environ 300 ms" lightbox="../media/network-network-overview-filter.msft.png":::
+   <span data-ttu-id="454db-237">Filtrer toutes les demandes inactives d’environ 300 ms</span><span class="sxs-lookup"><span data-stu-id="454db-237">Filter out any requests that were inactive around 300 ms</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-238">Masquer les URL de données</span><span class="sxs-lookup"><span data-stu-id="d8516-238">Hide data URLs</span></span>  
+### <a name="hide-data-urls"></a><span data-ttu-id="454db-238">Masquer les URL de données</span><span class="sxs-lookup"><span data-stu-id="454db-238">Hide data URLs</span></span>  
 
-<span data-ttu-id="d8516-239">Les [URL de données][MDNHTTPDataURIs] sont des petits fichiers incorporés dans d’autres documents.</span><span class="sxs-lookup"><span data-stu-id="d8516-239">[Data URLs][MDNHTTPDataURIs] are small files embedded into other documents.</span></span>  <span data-ttu-id="d8516-240">Toute demande qui s’affiche dans la table demandes qui commence par `data:` est une URL de données.</span><span class="sxs-lookup"><span data-stu-id="d8516-240">Any request that displays in the Requests table that starts with `data:` is a data URL.</span></span>  
+<span data-ttu-id="454db-239">[Les URL de données sont][MDNHTTPDataURIs] de petits fichiers incorporés dans d’autres documents.</span><span class="sxs-lookup"><span data-stu-id="454db-239">[Data URLs][MDNHTTPDataURIs] are small files embedded into other documents.</span></span>  <span data-ttu-id="454db-240">Toute demande qui s’affiche dans la table Demandes qui commence par `data:` est une URL de données.</span><span class="sxs-lookup"><span data-stu-id="454db-240">Any request that displays in the Requests table that starts with `data:` is a data URL.</span></span>  
 
-<span data-ttu-id="d8516-241">Pour masquer les demandes, désactivez la case à cocher **Masquer les URL de données** .</span><span class="sxs-lookup"><span data-stu-id="d8516-241">To hide the requests, turn off the **Hide data URLs** checkbox.</span></span>  
+<span data-ttu-id="454db-241">Pour masquer les demandes, cochez la case Masquer **les URL de** données.</span><span class="sxs-lookup"><span data-stu-id="454db-241">To hide the requests, turn off the **Hide data URLs** checkbox.</span></span>  
 
 :::image type="complex" source="../media/network-network-hide-data-urls.msft.png" alt-text="Case à cocher Masquer les URL de données" lightbox="../media/network-network-hide-data-urls.msft.png":::
-   <span data-ttu-id="d8516-243">Case à cocher **Masquer les URL de données**</span><span class="sxs-lookup"><span data-stu-id="d8516-243">The **Hide Data URLs** checkbox</span></span>  
+   <span data-ttu-id="454db-243">Case **à cocher Masquer les URL de** données</span><span class="sxs-lookup"><span data-stu-id="454db-243">The **Hide Data URLs** checkbox</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="d8516-244">Demandes de tri</span><span class="sxs-lookup"><span data-stu-id="d8516-244">Sort requests</span></span>  
+## <a name="sort-requests"></a><span data-ttu-id="454db-244">Trier les demandes</span><span class="sxs-lookup"><span data-stu-id="454db-244">Sort requests</span></span>  
 
-<span data-ttu-id="d8516-245">Par défaut, les requêtes dans la table demandes sont triées par heure de début, mais vous pouvez trier le tableau en utilisant d’autres critères.</span><span class="sxs-lookup"><span data-stu-id="d8516-245">By default, the requests in the Requests table are sorted by initiation time, but you may sort the table using other criteria.</span></span>  
+<span data-ttu-id="454db-245">Par défaut, les demandes de la table Requests sont triées par heure d’initiation, mais vous pouvez trier le tableau à l’aide d’autres critères.</span><span class="sxs-lookup"><span data-stu-id="454db-245">By default, the requests in the Requests table are sorted by initiation time, but you may sort the table using other criteria.</span></span>  
 
-### <span data-ttu-id="d8516-246">Trier par colonne</span><span class="sxs-lookup"><span data-stu-id="d8516-246">Sort by column</span></span>  
+### <a name="sort-by-column"></a><span data-ttu-id="454db-246">Trier par colonne</span><span class="sxs-lookup"><span data-stu-id="454db-246">Sort by column</span></span>  
 
-<span data-ttu-id="d8516-247">Sélectionnez l’en-tête de n’importe quelle colonne dans les requêtes pour trier les demandes en se sur cette colonne.</span><span class="sxs-lookup"><span data-stu-id="d8516-247">Choose the header of any column in the Requests to sort requests by that column.</span></span>  
+<span data-ttu-id="454db-247">Choisissez l’en-tête d’une colonne dans les demandes de tri des demandes par cette colonne.</span><span class="sxs-lookup"><span data-stu-id="454db-247">Choose the header of any column in the Requests to sort requests by that column.</span></span>  
 
-### <span data-ttu-id="d8516-248">Trier par phase d’activité</span><span class="sxs-lookup"><span data-stu-id="d8516-248">Sort by activity phase</span></span>  
+### <a name="sort-by-activity-phase"></a><span data-ttu-id="454db-248">Trier par phase d’activité</span><span class="sxs-lookup"><span data-stu-id="454db-248">Sort by activity phase</span></span>  
 
-<span data-ttu-id="d8516-249">Pour modifier la façon dont les demandes de tri d’une cascade sont triées, pointez sur l’en-tête de la table demandes, ouvrez le menu **contextuel, puis**sélectionnez l’une des options suivantes.</span><span class="sxs-lookup"><span data-stu-id="d8516-249">To change how the Waterfall sorts requests, hover on the header of the Requests table, open the contextual menu \(right-click\), hover on **Waterfall**, and choose one of the following options.</span></span>  
+<span data-ttu-id="454db-249">Pour modifier la façon dont la cascade trie les demandes, pointez sur l’en-tête de la table Requests, ouvrez le menu contextuel \(clic droit\), pointez sur Cascade **et**choisissez l’une des options suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-249">To change how the Waterfall sorts requests, hover on the header of the Requests table, open the contextual menu \(right-click\), hover on **Waterfall**, and choose one of the following options.</span></span>  
 
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-250">Heure de début</span><span class="sxs-lookup"><span data-stu-id="d8516-250">Start Time</span></span>**  
+      **<span data-ttu-id="454db-250">Heure de début</span><span class="sxs-lookup"><span data-stu-id="454db-250">Start Time</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-251">La première requête lancée est en haut.</span><span class="sxs-lookup"><span data-stu-id="d8516-251">The first request that was initiated is at the top.</span></span>  
+      <span data-ttu-id="454db-251">La première requête qui a été lancée se trouve en haut.</span><span class="sxs-lookup"><span data-stu-id="454db-251">The first request that was initiated is at the top.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-252">Temps de réponse</span><span class="sxs-lookup"><span data-stu-id="d8516-252">Response Time</span></span>**  
+      **<span data-ttu-id="454db-252">Temps de réponse</span><span class="sxs-lookup"><span data-stu-id="454db-252">Response Time</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-253">La première demande qui a démarré le téléchargement est en haut.</span><span class="sxs-lookup"><span data-stu-id="d8516-253">The first request that started downloading is at the top.</span></span>  
+      <span data-ttu-id="454db-253">La première requête qui a démarré le téléchargement se trouve en haut.</span><span class="sxs-lookup"><span data-stu-id="454db-253">The first request that started downloading is at the top.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-254">Heure de fin</span><span class="sxs-lookup"><span data-stu-id="d8516-254">End Time</span></span>**  
+      **<span data-ttu-id="454db-254">Heure de fin</span><span class="sxs-lookup"><span data-stu-id="454db-254">End Time</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-255">La première demande qui est terminée est en haut.</span><span class="sxs-lookup"><span data-stu-id="d8516-255">The first request that finished is at the top.</span></span>  
+      <span data-ttu-id="454db-255">La première requête terminée se trouve en haut.</span><span class="sxs-lookup"><span data-stu-id="454db-255">The first request that finished is at the top.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-256">Durée totale</span><span class="sxs-lookup"><span data-stu-id="d8516-256">Total Duration</span></span>**  
+      **<span data-ttu-id="454db-256">Durée totale</span><span class="sxs-lookup"><span data-stu-id="454db-256">Total Duration</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-257">La requête avec les paramètres de connexion les plus courts et la requête ou la réponse est située dans la partie supérieure.</span><span class="sxs-lookup"><span data-stu-id="d8516-257">The request with the shortest connection settings and request or response is at the top.</span></span>  
+      <span data-ttu-id="454db-257">La demande avec les paramètres de connexion et la demande ou la réponse les plus courts se trouve en haut.</span><span class="sxs-lookup"><span data-stu-id="454db-257">The request with the shortest connection settings and request or response is at the top.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-258">Latence</span><span class="sxs-lookup"><span data-stu-id="d8516-258">Latency</span></span>**  
+      **<span data-ttu-id="454db-258">Latence</span><span class="sxs-lookup"><span data-stu-id="454db-258">Latency</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-259">La requête qui a attendu le plus court délai d’une réponse est située en haut.</span><span class="sxs-lookup"><span data-stu-id="d8516-259">The request that waited the shortest time for a response is at the top.</span></span>  
+      <span data-ttu-id="454db-259">La demande qui a attendu le plus court moment pour une réponse se trouve en haut.</span><span class="sxs-lookup"><span data-stu-id="454db-259">The request that waited the shortest time for a response is at the top.</span></span>  
    :::column-end:::
 :::row-end:::  
 
-<span data-ttu-id="d8516-260">Ces descriptions présupposent que chaque option respective est classée du plus court au plus long.</span><span class="sxs-lookup"><span data-stu-id="d8516-260">These descriptions assume that each respective option is ranked from shortest to longest.</span></span>  <span data-ttu-id="d8516-261">Sélectionnez l’en-tête de la colonne **cascade** pour inverser l’ordre.</span><span class="sxs-lookup"><span data-stu-id="d8516-261">Choose the header of the **Waterfall** column to reverse the order.</span></span>  
+<span data-ttu-id="454db-260">Ces descriptions supposent que chaque option respective est classée de la plus courte à la plus longue.</span><span class="sxs-lookup"><span data-stu-id="454db-260">These descriptions assume that each respective option is ranked from shortest to longest.</span></span>  <span data-ttu-id="454db-261">Choisissez l’en-tête de la colonne **Cascade** pour inverser l’ordre.</span><span class="sxs-lookup"><span data-stu-id="454db-261">Choose the header of the **Waterfall** column to reverse the order.</span></span>  
 
-:::image type="complex" source="../media/network-network-waterfall-total-duration.msft.png" alt-text="Trier en cascade la durée totale" lightbox="../media/network-network-waterfall-total-duration.msft.png":::
-   <span data-ttu-id="d8516-263">Trier les cascades en fonction de la durée totale \ (la partie plus claire de chaque barre est le temps passé en attente et la partie plus foncée est le temps de télécharger les octets \)</span><span class="sxs-lookup"><span data-stu-id="d8516-263">Sort the Waterfall by total duration  \(The lighter portion of each bar is time spent waiting and the darker portion is time spent downloading bytes\)</span></span>  
+:::image type="complex" source="../media/network-network-waterfall-total-duration.msft.png" alt-text="Trier la cascade par durée totale" lightbox="../media/network-network-waterfall-total-duration.msft.png":::
+   <span data-ttu-id="454db-263">Trier la cascade par durée totale \(La partie la plus claire de chaque barre est le temps passé en attente et la partie la plus sombre est le temps consacré au téléchargement d’octets\)</span><span class="sxs-lookup"><span data-stu-id="454db-263">Sort the Waterfall by total duration  \(The lighter portion of each bar is time spent waiting and the darker portion is time spent downloading bytes\)</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="d8516-264">Analyser les requêtes</span><span class="sxs-lookup"><span data-stu-id="d8516-264">Analyze requests</span></span>  
+## <a name="analyze-requests"></a><span data-ttu-id="454db-264">Analyser les demandes</span><span class="sxs-lookup"><span data-stu-id="454db-264">Analyze requests</span></span>  
 
-<span data-ttu-id="d8516-265">Tant que DevTools est ouvert, il enregistre toutes les demandes dans le panneau **réseau** .</span><span class="sxs-lookup"><span data-stu-id="d8516-265">So long as DevTools are open, it logs all requests in the **Network** panel.</span></span>  
-<span data-ttu-id="d8516-266">Utilisez le volet réseau pour analyser les requêtes.</span><span class="sxs-lookup"><span data-stu-id="d8516-266">Use the Network panel to analyze requests.</span></span>  
+<span data-ttu-id="454db-265">Tant que DevTools est ouvert, il enregistre toutes les demandes dans **l’outil** Réseau.</span><span class="sxs-lookup"><span data-stu-id="454db-265">So long as DevTools are open, it logs all requests in the **Network** tool.</span></span>  
+<span data-ttu-id="454db-266">Utilisez le panneau réseau pour analyser les demandes.</span><span class="sxs-lookup"><span data-stu-id="454db-266">Use the Network panel to analyze requests.</span></span>  
 
-### <span data-ttu-id="d8516-267">Afficher un journal de demandes</span><span class="sxs-lookup"><span data-stu-id="d8516-267">Display a log of requests</span></span>  
+### <a name="display-a-log-of-requests"></a><span data-ttu-id="454db-267">Afficher un journal des demandes</span><span class="sxs-lookup"><span data-stu-id="454db-267">Display a log of requests</span></span>  
 
-<span data-ttu-id="d8516-268">Utilisez le tableau demandes pour afficher un journal de toutes les demandes effectuées lors de l’ouverture de DevTools.</span><span class="sxs-lookup"><span data-stu-id="d8516-268">Use the Requests table to display a log of all requests made while DevTools have been open.</span></span>  <span data-ttu-id="d8516-269">Pour obtenir des informations supplémentaires sur chaque élément, choisissez ou pointez sur demandes.</span><span class="sxs-lookup"><span data-stu-id="d8516-269">To reveals more information about each item, choose or hover on requests.</span></span>  
+<span data-ttu-id="454db-268">Utilisez la table Requests pour afficher un journal de toutes les demandes réalisées alors que DevTools a été ouvert.</span><span class="sxs-lookup"><span data-stu-id="454db-268">Use the Requests table to display a log of all requests made while DevTools have been open.</span></span>  <span data-ttu-id="454db-269">Pour révéler plus d’informations sur chaque élément, choisissez ou pointez sur les demandes.</span><span class="sxs-lookup"><span data-stu-id="454db-269">To reveals more information about each item, choose or hover on requests.</span></span>  
 
-:::image type="complex" source="../media/network-network-requests-table.msft.png" alt-text="Table demandes" lightbox="../media/network-network-requests-table.msft.png":::
-   <span data-ttu-id="d8516-271">Table demandes</span><span class="sxs-lookup"><span data-stu-id="d8516-271">The Requests table</span></span>  
+:::image type="complex" source="../media/network-network-requests-table.msft.png" alt-text="Table Requests" lightbox="../media/network-network-requests-table.msft.png":::
+   <span data-ttu-id="454db-271">Table Requests</span><span class="sxs-lookup"><span data-stu-id="454db-271">The Requests table</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="d8516-272">La table demandes affiche les colonnes suivantes par défaut.</span><span class="sxs-lookup"><span data-stu-id="d8516-272">The Requests table displays the following columns by default.</span></span>  
+<span data-ttu-id="454db-272">La table Requests affiche les colonnes suivantes par défaut.</span><span class="sxs-lookup"><span data-stu-id="454db-272">The Requests table displays the following columns by default.</span></span>  
 
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-273">Nom</span><span class="sxs-lookup"><span data-stu-id="d8516-273">Name</span></span>**  
+      **<span data-ttu-id="454db-273">Nom</span><span class="sxs-lookup"><span data-stu-id="454db-273">Name</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-274">Nom de fichier ou un identificateur pour la ressource.</span><span class="sxs-lookup"><span data-stu-id="d8516-274">The filename of, or an identifier for, the resource.</span></span>  
+      <span data-ttu-id="454db-274">Nom de fichier ou identificateur de la ressource.</span><span class="sxs-lookup"><span data-stu-id="454db-274">The filename of, or an identifier for, the resource.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-275">Statut</span><span class="sxs-lookup"><span data-stu-id="d8516-275">Status</span></span>**  
+      **<span data-ttu-id="454db-275">Statut</span><span class="sxs-lookup"><span data-stu-id="454db-275">Status</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-276">Code d’état HTTP.</span><span class="sxs-lookup"><span data-stu-id="d8516-276">The HTTP status code.</span></span>  
+      <span data-ttu-id="454db-276">Code d’état HTTP.</span><span class="sxs-lookup"><span data-stu-id="454db-276">The HTTP status code.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-277">Type</span><span class="sxs-lookup"><span data-stu-id="d8516-277">Type</span></span>**  
+      **<span data-ttu-id="454db-277">Type</span><span class="sxs-lookup"><span data-stu-id="454db-277">Type</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-278">Type MIME de la ressource demandée.</span><span class="sxs-lookup"><span data-stu-id="d8516-278">The MIME type of the requested resource.</span></span>  
+      <span data-ttu-id="454db-278">Type MIME de la ressource demandée.</span><span class="sxs-lookup"><span data-stu-id="454db-278">The MIME type of the requested resource.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-279">Initiateur</span><span class="sxs-lookup"><span data-stu-id="d8516-279">Initiator</span></span>**  
+      **<span data-ttu-id="454db-279">Initiateur</span><span class="sxs-lookup"><span data-stu-id="454db-279">Initiator</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-280">Les objets ou processus suivants déclenchent des demandes.</span><span class="sxs-lookup"><span data-stu-id="d8516-280">The following objects or processes initiate requests.</span></span>  
+      <span data-ttu-id="454db-280">Les objets ou processus suivants lancent des demandes.</span><span class="sxs-lookup"><span data-stu-id="454db-280">The following objects or processes initiate requests.</span></span>  
       
-      *   <span data-ttu-id="d8516-281">**Analyseur**  Analyseur HTML pour Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="d8516-281">**Parser**  The HTML parser for Microsoft Edge.</span></span>  
-      *   <span data-ttu-id="d8516-282">**Rediriger**  Une redirection HTTP.</span><span class="sxs-lookup"><span data-stu-id="d8516-282">**Redirect**  An HTTP redirect.</span></span>  
-      *   <span data-ttu-id="d8516-283">**Script**  Fonction JavaScript.</span><span class="sxs-lookup"><span data-stu-id="d8516-283">**Script**  A JavaScript function.</span></span>  
-      *   <span data-ttu-id="d8516-284">**Autres**  Un autre processus ou action, tel que la navigation sur une page à l’aide d’un lien ou la saisie d’une URL dans la barre d’adresses.</span><span class="sxs-lookup"><span data-stu-id="d8516-284">**Other**  Some other process or action, such as navigating to a page using a link or entering a URL in the address bar.</span></span>  
+      *   <span data-ttu-id="454db-281">**Parser**  L’en-tête HTML pour Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="454db-281">**Parser**  The HTML parser for Microsoft Edge.</span></span>  
+      *   <span data-ttu-id="454db-282">**Redirection**  Une redirection HTTP.</span><span class="sxs-lookup"><span data-stu-id="454db-282">**Redirect**  An HTTP redirect.</span></span>  
+      *   <span data-ttu-id="454db-283">**Script**  Fonction JavaScript.</span><span class="sxs-lookup"><span data-stu-id="454db-283">**Script**  A JavaScript function.</span></span>  
+      *   <span data-ttu-id="454db-284">**Autre**  Un autre processus ou une autre action, comme la navigation vers une page à l’aide d’un lien ou la saisie d’une URL dans la barre d’adresses.</span><span class="sxs-lookup"><span data-stu-id="454db-284">**Other**  Some other process or action, such as navigating to a page using a link or entering a URL in the address bar.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-285">Taille</span><span class="sxs-lookup"><span data-stu-id="d8516-285">Size</span></span>**  
+      **<span data-ttu-id="454db-285">Taille</span><span class="sxs-lookup"><span data-stu-id="454db-285">Size</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-286">Taille combinée des en-têtes de réponse et du corps de la réponse, tel qu’il est délivré par le serveur.</span><span class="sxs-lookup"><span data-stu-id="d8516-286">The combined size of the response headers plus the response body, as delivered by the server.</span></span>  
+      <span data-ttu-id="454db-286">Taille combinée des en-têtes de réponse et corps de la réponse, tel qu’il est remis par le serveur.</span><span class="sxs-lookup"><span data-stu-id="454db-286">The combined size of the response headers plus the response body, as delivered by the server.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-287">Heure</span><span class="sxs-lookup"><span data-stu-id="d8516-287">Time</span></span>**  
+      **<span data-ttu-id="454db-287">Heure</span><span class="sxs-lookup"><span data-stu-id="454db-287">Time</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-288">Durée totale, entre le début de la demande et la réception de l’octet final dans la réponse.</span><span class="sxs-lookup"><span data-stu-id="d8516-288">The total duration, from the start of the request to the receipt of the final byte in the response.</span></span>  
+      <span data-ttu-id="454db-288">Durée totale, depuis le début de la demande jusqu’à la réception de l’byte final dans la réponse.</span><span class="sxs-lookup"><span data-stu-id="454db-288">The total duration, from the start of the request to the receipt of the final byte in the response.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [<span data-ttu-id="d8516-289">Cascade</span><span class="sxs-lookup"><span data-stu-id="d8516-289">Waterfall</span></span>](#display-the-timing-relationship-of-requests)  
+      [<span data-ttu-id="454db-289">Cascade</span><span class="sxs-lookup"><span data-stu-id="454db-289">Waterfall</span></span>](#display-the-timing-relationship-of-requests)  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-290">Répartition visuelle de l’activité pour chaque demande.</span><span class="sxs-lookup"><span data-stu-id="d8516-290">A visual breakdown of the activity for each request.</span></span>  
+      <span data-ttu-id="454db-290">Répartition visuelle de l’activité pour chaque demande.</span><span class="sxs-lookup"><span data-stu-id="454db-290">A visual breakdown of the activity for each request.</span></span>  
    :::column-end:::
 :::row-end:::  
 
-#### <span data-ttu-id="d8516-291">Ajouter ou supprimer des colonnes</span><span class="sxs-lookup"><span data-stu-id="d8516-291">Add or remove columns</span></span>  
+#### <a name="add-or-remove-columns"></a><span data-ttu-id="454db-291">Ajouter ou supprimer des colonnes</span><span class="sxs-lookup"><span data-stu-id="454db-291">Add or remove columns</span></span>  
 
-<span data-ttu-id="d8516-292">Placez le pointeur de la souris sur l’en-tête de la table demandes, ouvrez le menu contextuel (cliquez avec le bouton droit sur \), puis choisissez une option pour masquer ou afficher le menu contextuel.</span><span class="sxs-lookup"><span data-stu-id="d8516-292">Hover on the header of the Requests table, open the contextual menu \(right-click\), and choose an option to hide or show it.</span></span>  <span data-ttu-id="d8516-293">Les options actuellement affichées disposent de coches en regard de chaque élément.</span><span class="sxs-lookup"><span data-stu-id="d8516-293">Currently displayed options have checkmarks next to each item.</span></span>  
+<span data-ttu-id="454db-292">Pointez sur l’en-tête de la table Requests, ouvrez le menu contextuel \(clic droit\), puis choisissez une option pour le masquer ou l’afficher.</span><span class="sxs-lookup"><span data-stu-id="454db-292">Hover on the header of the Requests table, open the contextual menu \(right-click\), and choose an option to hide or show it.</span></span>  <span data-ttu-id="454db-293">Les options actuellement affichées ont des coches en regard de chaque élément.</span><span class="sxs-lookup"><span data-stu-id="454db-293">Currently displayed options have checkmarks next to each item.</span></span>  
 
-:::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="Ajouter une colonne à la table demandes" lightbox="../media/network-network-requests-add-column.msft.png":::
-   <span data-ttu-id="d8516-295">Ajouter une colonne à la table demandes</span><span class="sxs-lookup"><span data-stu-id="d8516-295">Add a column to the Requests table</span></span>  
+:::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="Ajouter une colonne à la table Requests" lightbox="../media/network-network-requests-add-column.msft.png":::
+   <span data-ttu-id="454db-295">Ajouter une colonne à la table Requests</span><span class="sxs-lookup"><span data-stu-id="454db-295">Add a column to the Requests table</span></span>  
 :::image-end:::  
 
-#### <span data-ttu-id="d8516-296">Ajouter des colonnes personnalisées</span><span class="sxs-lookup"><span data-stu-id="d8516-296">Add custom columns</span></span>  
+#### <a name="add-custom-columns"></a><span data-ttu-id="454db-296">Ajouter des colonnes personnalisées</span><span class="sxs-lookup"><span data-stu-id="454db-296">Add custom columns</span></span>  
 
-<span data-ttu-id="d8516-297">Pour ajouter une colonne personnalisée dans la table demandes, positionnez le curseur sur l’en-tête de la table demandes, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez les **en-têtes de réponse**  >  **gérer les colonnes d’en-tête**.</span><span class="sxs-lookup"><span data-stu-id="d8516-297">To add a custom column to the Requests table, hover on the header of the Requests table, open the contextual menu \(right-click\), and choose **Response Headers** > **Manage Header Columns**.</span></span>  
+<span data-ttu-id="454db-297">Pour ajouter une colonne personnalisée à la table Requests, pointez sur l’en-tête de la \*\*\*\* table Requests, ouvrez le menu contextuel \(clic droit\), puis choisissez En-têtes de réponse Gérer les colonnes d’en-tête.  >  \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="454db-297">To add a custom column to the Requests table, hover on the header of the Requests table, open the contextual menu \(right-click\), and choose **Response Headers** > **Manage Header Columns**.</span></span>  
 
-:::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Ajouter une colonne personnalisée à la table demandes" lightbox="../media/network-network-requests-add-custom.msft.png":::
-   <span data-ttu-id="d8516-299">Ajouter une colonne personnalisée à la table demandes</span><span class="sxs-lookup"><span data-stu-id="d8516-299">Add a custom column to the Requests table</span></span>  
+:::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Ajouter une colonne personnalisée à la table Requests" lightbox="../media/network-network-requests-add-custom.msft.png":::
+   <span data-ttu-id="454db-299">Ajouter une colonne personnalisée à la table Requests</span><span class="sxs-lookup"><span data-stu-id="454db-299">Add a custom column to the Requests table</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-300">Afficher la relation de minutage des requêtes</span><span class="sxs-lookup"><span data-stu-id="d8516-300">Display the timing relationship of requests</span></span>  
+### <a name="display-the-timing-relationship-of-requests"></a><span data-ttu-id="454db-300">Afficher la relation de minutage des demandes</span><span class="sxs-lookup"><span data-stu-id="454db-300">Display the timing relationship of requests</span></span>  
 
-<span data-ttu-id="d8516-301">Utilisez la cascade pour afficher les relations de minutage des requêtes.</span><span class="sxs-lookup"><span data-stu-id="d8516-301">Use the Waterfall to display the timing relationships of requests.</span></span>  
-<span data-ttu-id="d8516-302">L’organisation par défaut de la cascade utilise l’heure de début des requêtes.</span><span class="sxs-lookup"><span data-stu-id="d8516-302">The default organization of the Waterfall uses the start time of the requests.</span></span>  
-<span data-ttu-id="d8516-303">Par conséquent, les demandes qui sont plus éloignées du volet gauche sont restées plus anciennes que celles qui sont plus éloignées.</span><span class="sxs-lookup"><span data-stu-id="d8516-303">So, requests that are farther to the left started earlier than the requests that are farther to the right.</span></span>  
+<span data-ttu-id="454db-301">Utilisez la cascade pour afficher les relations de minutage des demandes.</span><span class="sxs-lookup"><span data-stu-id="454db-301">Use the Waterfall to display the timing relationships of requests.</span></span>  
+<span data-ttu-id="454db-302">L’organisation par défaut de la cascade utilise l’heure de début des demandes.</span><span class="sxs-lookup"><span data-stu-id="454db-302">The default organization of the Waterfall uses the start time of the requests.</span></span>  
+<span data-ttu-id="454db-303">Ainsi, les demandes qui sont plus à gauche ont commencé plus tôt que les demandes qui sont plus à droite.</span><span class="sxs-lookup"><span data-stu-id="454db-303">So, requests that are farther to the left started earlier than the requests that are farther to the right.</span></span>  
 
-<span data-ttu-id="d8516-304">Pour passer en revue les différentes façons dont vous pouvez trier les cascade, sélectionnez [Trier par phase d’activité](#sort-by-activity-phase).</span><span class="sxs-lookup"><span data-stu-id="d8516-304">To review the different ways that you may sort the Waterfall, navigate to [Sort by activity phase](#sort-by-activity-phase).</span></span>  
+<span data-ttu-id="454db-304">Pour passer en revue les différentes façons de trier la cascade, accédez à [Trier par phase d’activité.](#sort-by-activity-phase)</span><span class="sxs-lookup"><span data-stu-id="454db-304">To review the different ways that you may sort the Waterfall, navigate to [Sort by activity phase](#sort-by-activity-phase).</span></span>  
 
-:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Colonne cascade du volet demandes" lightbox="../media/network-network-requests-waterfall.msft.png":::
-   <span data-ttu-id="d8516-306">Colonne cascade du volet **demandes**</span><span class="sxs-lookup"><span data-stu-id="d8516-306">The Waterfall column of the **Requests** pane</span></span>  
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Colonne Cascade du volet Demandes" lightbox="../media/network-network-requests-waterfall.msft.png":::
+   <span data-ttu-id="454db-306">Colonne Cascade du volet **Demandes**</span><span class="sxs-lookup"><span data-stu-id="454db-306">The Waterfall column of the **Requests** pane</span></span>  
 :::image-end:::  
 
 <!-- ### Analyze the frames of a WebSocket Connection  -->
@@ -482,13 +482,13 @@ ms.locfileid: "11230753"
 <!--To review the frames of a WebSocket connection, use the following steps.  
 
 1.  Choose the URL of the WebSocket connection, under the **Name** column of the Requests table.  
-1.  Choose the **Frames** tab.  The table shows the last 100 frames.  
+1.  Choose the **Frames** panel.  The table shows the last 100 frames.  
 
 To refresh the table, re-choose the name of the WebSocket connection under the **Name** column of the Requests table.  -->
 
 <!--
-:::image type="complex" source="../media/network-frames.msft.png" alt-text="The Frames tab" lightbox="../media/network-frames.msft.png":::
-   The **Frames** tab  
+:::image type="complex" source="../media/network-frames.msft.png" alt-text="The Frames panel" lightbox="../media/network-frames.msft.png":::
+   The **Frames** panel  
 :::image-end:::  
 -->
 
@@ -505,268 +505,268 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 *   WebSocket opcodes are light-yellow.  
 *   Errors are light-red.  -->
 
-### <span data-ttu-id="d8516-307">Afficher un aperçu d’un corps de réponse</span><span class="sxs-lookup"><span data-stu-id="d8516-307">Display a preview of a response body</span></span>  
+### <a name="display-a-preview-of-a-response-body"></a><span data-ttu-id="454db-307">Afficher un aperçu d’un corps de réponse</span><span class="sxs-lookup"><span data-stu-id="454db-307">Display a preview of a response body</span></span>  
 
-<span data-ttu-id="d8516-308">Pour afficher un aperçu du corps de la réponse, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="d8516-308">To display a preview of a response body, use the following steps.</span></span>  
+<span data-ttu-id="454db-308">Pour afficher un aperçu d’un corps de réponse, utilisez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-308">To display a preview of a response body, use the following steps.</span></span>  
 
-1.  <span data-ttu-id="d8516-309">Sélectionnez l’URL de la requête dans la colonne **nom** de la table demandes.</span><span class="sxs-lookup"><span data-stu-id="d8516-309">Choose the URL of the request, under the **Name** column of the Requests table.</span></span>  
-1.  <span data-ttu-id="d8516-310">Sélectionnez l’onglet **Aperçu** .</span><span class="sxs-lookup"><span data-stu-id="d8516-310">Choose the **Preview** tab.</span></span>  
+1.  <span data-ttu-id="454db-309">Choisissez l’URL de la demande, sous la colonne **Nom** de la table Requests.</span><span class="sxs-lookup"><span data-stu-id="454db-309">Choose the URL of the request, under the **Name** column of the Requests table.</span></span>  
+1.  <span data-ttu-id="454db-310">Choisissez le **panneau d’aperçu.**</span><span class="sxs-lookup"><span data-stu-id="454db-310">Choose the **Preview** panel.</span></span>  
 
-<span data-ttu-id="d8516-311">L’onglet Aperçu est principalement utile pour afficher des images.</span><span class="sxs-lookup"><span data-stu-id="d8516-311">The Preview tab is mostly useful to display images.</span></span>  
+<span data-ttu-id="454db-311">L’onglet Aperçu est principalement utile pour afficher des images.</span><span class="sxs-lookup"><span data-stu-id="454db-311">The Preview tab is mostly useful to display images.</span></span>  
 
-:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Onglet Aperçu" lightbox="../media/network-network-resources-preview.msft.png":::
-   <span data-ttu-id="d8516-313">Onglet **Aperçu**</span><span class="sxs-lookup"><span data-stu-id="d8516-313">The **Preview** tab</span></span>  
+:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Panneau d’aperçu" lightbox="../media/network-network-resources-preview.msft.png":::
+   <span data-ttu-id="454db-313">Panneau **d’aperçu**</span><span class="sxs-lookup"><span data-stu-id="454db-313">The **Preview** panel</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-314">Afficher un corps de réponse</span><span class="sxs-lookup"><span data-stu-id="d8516-314">Display a response body</span></span>  
+### <a name="display-a-response-body"></a><span data-ttu-id="454db-314">Afficher un corps de réponse</span><span class="sxs-lookup"><span data-stu-id="454db-314">Display a response body</span></span>  
 
-<span data-ttu-id="d8516-315">Pour afficher le corps de la réponse à une demande, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="d8516-315">To display the response body to a request, use the following steps.</span></span>  
+<span data-ttu-id="454db-315">Pour afficher le corps de la réponse à une demande, utilisez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-315">To display the response body to a request, use the following steps.</span></span>  
 
-1.  <span data-ttu-id="d8516-316">Sélectionnez l’URL de la requête dans la colonne **nom** de la table demandes.</span><span class="sxs-lookup"><span data-stu-id="d8516-316">Choose the URL of the request, under the **Name** column of the Requests table.</span></span>  
-1.  <span data-ttu-id="d8516-317">Sélectionnez l’onglet **réponse** .</span><span class="sxs-lookup"><span data-stu-id="d8516-317">Choose the **Response** tab.</span></span>  
+1.  <span data-ttu-id="454db-316">Choisissez l’URL de la demande, sous la colonne **Nom** de la table Requests.</span><span class="sxs-lookup"><span data-stu-id="454db-316">Choose the URL of the request, under the **Name** column of the Requests table.</span></span>  
+1.  <span data-ttu-id="454db-317">Choisissez le **panneau de** réponse.</span><span class="sxs-lookup"><span data-stu-id="454db-317">Choose the **Response** panel.</span></span>  
 
-:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Onglet réponse" lightbox="../media/network-network-resources-response.msft.png":::
-   <span data-ttu-id="d8516-319">Onglet **réponse**</span><span class="sxs-lookup"><span data-stu-id="d8516-319">The **Response** tab</span></span>  
+:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Panneau de réponse" lightbox="../media/network-network-resources-response.msft.png":::
+   <span data-ttu-id="454db-319">Panneau **de** réponse</span><span class="sxs-lookup"><span data-stu-id="454db-319">The **Response** panel</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-320">Afficher les en-têtes HTTP</span><span class="sxs-lookup"><span data-stu-id="d8516-320">Display HTTP headers</span></span>  
+### <a name="display-http-headers"></a><span data-ttu-id="454db-320">Afficher les en-têtes HTTP</span><span class="sxs-lookup"><span data-stu-id="454db-320">Display HTTP headers</span></span>  
 
-<span data-ttu-id="d8516-321">Pour afficher des données d’en-tête HTTP sur une requête, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="d8516-321">To display HTTP header data about a request, use the following steps.</span></span>  
+<span data-ttu-id="454db-321">Pour afficher les données d’en-tête HTTP relatives à une demande, utilisez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-321">To display HTTP header data about a request, use the following steps.</span></span>  
 
-1.  <span data-ttu-id="d8516-322">Sélectionnez l’URL de la requête dans la colonne **nom** de la table demandes.</span><span class="sxs-lookup"><span data-stu-id="d8516-322">Choose the URL of the request, under the **Name** column of the Requests table.</span></span>  
-1.  <span data-ttu-id="d8516-323">Cliquez sur l’onglet **en-têtes** .</span><span class="sxs-lookup"><span data-stu-id="d8516-323">Choose the **Headers** tab.</span></span>  
+1.  <span data-ttu-id="454db-322">Choisissez l’URL de la demande, sous la colonne **Nom** de la table Requests.</span><span class="sxs-lookup"><span data-stu-id="454db-322">Choose the URL of the request, under the **Name** column of the Requests table.</span></span>  
+1.  <span data-ttu-id="454db-323">Choisissez le **psanel d’en-têtes.**</span><span class="sxs-lookup"><span data-stu-id="454db-323">Choose the **Headers** psanel.</span></span>  
 
-:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Onglet en-têtes" lightbox="../media/network-resources-headers.msft.png":::
-   <span data-ttu-id="d8516-325">Onglet **en-têtes**</span><span class="sxs-lookup"><span data-stu-id="d8516-325">The **Headers** tab</span></span>  
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Panneau En-têtes" lightbox="../media/network-resources-headers.msft.png":::
+   <span data-ttu-id="454db-325">Panneau **En-têtes**</span><span class="sxs-lookup"><span data-stu-id="454db-325">The **Headers** panel</span></span>  
 :::image-end:::  
 
-#### <span data-ttu-id="d8516-326">Afficher une source d’en-tête HTTP</span><span class="sxs-lookup"><span data-stu-id="d8516-326">Display HTTP header source</span></span>  
+#### <a name="display-http-header-source"></a><span data-ttu-id="454db-326">Afficher la source d’en-tête HTTP</span><span class="sxs-lookup"><span data-stu-id="454db-326">Display HTTP header source</span></span>  
 
-<span data-ttu-id="d8516-327">Par défaut, l’onglet en-têtes affiche les noms des en-têtes par ordre alphabétique.</span><span class="sxs-lookup"><span data-stu-id="d8516-327">By default, the Headers tab shows header names alphabetically.</span></span>  <span data-ttu-id="d8516-328">Pour désactivé présente les noms d’en-tête HTTP dans l’ordre de réception, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="d8516-328">To dsiplay the HTTP header names in the order received, use the following steps.</span></span>  
+<span data-ttu-id="454db-327">Par défaut, le panneau **En-têtes** affiche les noms d’en-tête par ordre alphabétique.</span><span class="sxs-lookup"><span data-stu-id="454db-327">By default, the **Headers** panel shows header names alphabetically.</span></span>  <span data-ttu-id="454db-328">Pour dsiplay les noms d’en-tête HTTP dans l’ordre reçu, utilisez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-328">To dsiplay the HTTP header names in the order received, use the following steps.</span></span>  
 
-1.  <span data-ttu-id="d8516-329">Ouvrez l’onglet **en-têtes** pour la requête qui vous intéresse.</span><span class="sxs-lookup"><span data-stu-id="d8516-329">Open the **Headers** tab for the request that interests you.</span></span>  <span data-ttu-id="d8516-330">Pour plus d’informations, accédez à [afficher les en-têtes http](#display-http-headers).</span><span class="sxs-lookup"><span data-stu-id="d8516-330">For more information, navigate to [Display HTTP headers](#display-http-headers).</span></span>  
-1.  <span data-ttu-id="d8516-331">Sélectionnez **afficher la source**, en regard de la section en **-tête de requête** ou **en-tête de réponse** .</span><span class="sxs-lookup"><span data-stu-id="d8516-331">Choose **view source**, next to the **Request Header** or **Response Header** section.</span></span>  
+1.  <span data-ttu-id="454db-329">Ouvrez **le panneau En-têtes** pour la demande qui vous intéresse.</span><span class="sxs-lookup"><span data-stu-id="454db-329">Open the **Headers** panel for the request that interests you.</span></span>  <span data-ttu-id="454db-330">Pour plus d’informations, accédez à [Afficher les en-têtes HTTP.](#display-http-headers)</span><span class="sxs-lookup"><span data-stu-id="454db-330">For more information, navigate to [Display HTTP headers](#display-http-headers).</span></span>  
+1.  <span data-ttu-id="454db-331">Choose **view source**, next to the Request **Header** or **Response Header** section.</span><span class="sxs-lookup"><span data-stu-id="454db-331">Choose **view source**, next to the **Request Header** or **Response Header** section.</span></span>  
 
-### <span data-ttu-id="d8516-332">Afficher les paramètres de chaîne de requête</span><span class="sxs-lookup"><span data-stu-id="d8516-332">Display query string parameters</span></span>  
+### <a name="display-query-string-parameters"></a><span data-ttu-id="454db-332">Afficher les paramètres de chaîne de requête</span><span class="sxs-lookup"><span data-stu-id="454db-332">Display query string parameters</span></span>  
 
-<span data-ttu-id="d8516-333">Pour afficher les paramètres de chaîne de requête d’une URL dans un format lisible par l’utilisateur, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="d8516-333">To display the query string parameters of a URL in a human-readable format, use the following steps.</span></span>  
+<span data-ttu-id="454db-333">Pour afficher les paramètres de chaîne de requête d’une URL dans un format lisible par l’homme, utilisez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-333">To display the query string parameters of a URL in a human-readable format, use the following steps.</span></span>  
 
-1.  <span data-ttu-id="d8516-334">Ouvrez l’onglet **en-têtes** pour la requête qui vous intéresse.</span><span class="sxs-lookup"><span data-stu-id="d8516-334">Open the **Headers** tab for the request that interests you.</span></span>  <span data-ttu-id="d8516-335">Pour plus d’informations, accédez à [afficher les en-têtes http](#display-http-headers).</span><span class="sxs-lookup"><span data-stu-id="d8516-335">For more information, navigate to [Display HTTP headers](#display-http-headers).</span></span>  
-1.  <span data-ttu-id="d8516-336">Accédez à la section **paramètres de chaîne de requête** .</span><span class="sxs-lookup"><span data-stu-id="d8516-336">Go to the **Query String Parameters** section.</span></span>  
+1.  <span data-ttu-id="454db-334">Ouvrez **le panneau En-têtes** pour la demande qui vous intéresse.</span><span class="sxs-lookup"><span data-stu-id="454db-334">Open the **Headers** panel for the request that interests you.</span></span>  <span data-ttu-id="454db-335">Pour plus d’informations, accédez à [Afficher les en-têtes HTTP.](#display-http-headers)</span><span class="sxs-lookup"><span data-stu-id="454db-335">For more information, navigate to [Display HTTP headers](#display-http-headers).</span></span>  
+1.  <span data-ttu-id="454db-336">Accédez à la section **Paramètres de chaîne de requête.**</span><span class="sxs-lookup"><span data-stu-id="454db-336">Navigate to the **Query String Parameters** section.</span></span>  
 
-:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="Section paramètres de chaîne de requête" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
-   <span data-ttu-id="d8516-338">Section **paramètres de chaîne de requête**</span><span class="sxs-lookup"><span data-stu-id="d8516-338">The **Query String Parameters** section</span></span>  
+:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="Section Paramètres de chaîne de requête" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
+   <span data-ttu-id="454db-338">Section **Paramètres de chaîne de** requête</span><span class="sxs-lookup"><span data-stu-id="454db-338">The **Query String Parameters** section</span></span>  
 :::image-end:::  
 
-#### <span data-ttu-id="d8516-339">Afficher les paramètres de chaîne de requête source</span><span class="sxs-lookup"><span data-stu-id="d8516-339">Display query string parameters source</span></span>  
+#### <a name="display-query-string-parameters-source"></a><span data-ttu-id="454db-339">Afficher la source des paramètres de chaîne de requête</span><span class="sxs-lookup"><span data-stu-id="454db-339">Display query string parameters source</span></span>  
 
-<span data-ttu-id="d8516-340">Pour afficher la source du paramètre de chaîne de requête d’une demande, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="d8516-340">To display the query string parameter source of a request, use the following steps.</span></span>  
+<span data-ttu-id="454db-340">Pour afficher la source du paramètre de chaîne de requête d’une requête, utilisez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-340">To display the query string parameter source of a request, use the following steps.</span></span>  
 
-1.  <span data-ttu-id="d8516-341">Accédez à la section paramètres de chaîne de requête.</span><span class="sxs-lookup"><span data-stu-id="d8516-341">Go to the Query String Parameters section.</span></span>  <span data-ttu-id="d8516-342">Pour plus d’informations, accédez à [afficher les paramètres de chaîne de requête](#display-query-string-parameters).</span><span class="sxs-lookup"><span data-stu-id="d8516-342">For more information, navigate to [Display query string parameters](#display-query-string-parameters).</span></span>  
-1.  <span data-ttu-id="d8516-343">Sélectionnez **afficher la source**.</span><span class="sxs-lookup"><span data-stu-id="d8516-343">Choose **view source**.</span></span>  
+1.  <span data-ttu-id="454db-341">Accédez à la section Paramètres de chaîne de requête.</span><span class="sxs-lookup"><span data-stu-id="454db-341">Navigate to the Query String Parameters section.</span></span>  <span data-ttu-id="454db-342">Pour plus d’informations, [accédez à Afficher les paramètres de chaîne de requête.](#display-query-string-parameters)</span><span class="sxs-lookup"><span data-stu-id="454db-342">For more information, navigate to [Display query string parameters](#display-query-string-parameters).</span></span>  
+1.  <span data-ttu-id="454db-343">Choisissez **la source d’affichage.**</span><span class="sxs-lookup"><span data-stu-id="454db-343">Choose **view source**.</span></span>  
 
-#### <span data-ttu-id="d8516-344">Afficher les paramètres de chaîne de requête codés en URL</span><span class="sxs-lookup"><span data-stu-id="d8516-344">Display URL-encoded query string parameters</span></span>  
+#### <a name="display-url-encoded-query-string-parameters"></a><span data-ttu-id="454db-344">Afficher les paramètres de chaîne de requête codés en URL</span><span class="sxs-lookup"><span data-stu-id="454db-344">Display URL-encoded query string parameters</span></span>  
 
-<span data-ttu-id="d8516-345">Pour afficher les paramètres de chaîne de requête dans un format lisible par l’utilisateur, mais avec les codages prédéfinis, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="d8516-345">To display query string parameters in a human-readable format, but with encodings preserved, use the following steps.</span></span>  
+<span data-ttu-id="454db-345">Pour afficher les paramètres de chaîne de requête dans un format lisible par l’homme, mais avec des codages conservés, utilisez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-345">To display query string parameters in a human-readable format, but with encodings preserved, use the following steps.</span></span>  
 
-1.  <span data-ttu-id="d8516-346">Accédez à la section paramètres de chaîne de requête.</span><span class="sxs-lookup"><span data-stu-id="d8516-346">Go to the Query String Parameters section.</span></span>  <span data-ttu-id="d8516-347">Pour plus d’informations, accédez à [afficher les paramètres de chaîne de requête](#display-query-string-parameters).</span><span class="sxs-lookup"><span data-stu-id="d8516-347">For more information, navigate to [Display query string parameters](#display-query-string-parameters).</span></span>  
-1.  <span data-ttu-id="d8516-348">Choisissez **affichage URL encodée**.</span><span class="sxs-lookup"><span data-stu-id="d8516-348">Choose **view URL encoded**.</span></span>  
+1.  <span data-ttu-id="454db-346">Accédez à la section Paramètres de chaîne de requête.</span><span class="sxs-lookup"><span data-stu-id="454db-346">Navigate to the Query String Parameters section.</span></span>  <span data-ttu-id="454db-347">Pour plus d’informations, [accédez à Afficher les paramètres de chaîne de requête.](#display-query-string-parameters)</span><span class="sxs-lookup"><span data-stu-id="454db-347">For more information, navigate to [Display query string parameters](#display-query-string-parameters).</span></span>  
+1.  <span data-ttu-id="454db-348">Choisissez **l’URL d’affichage codée.**</span><span class="sxs-lookup"><span data-stu-id="454db-348">Choose **view URL encoded**.</span></span>  
 
-### <span data-ttu-id="d8516-349">Afficher les cookies</span><span class="sxs-lookup"><span data-stu-id="d8516-349">Display cookies</span></span>  
+### <a name="display-cookies"></a><span data-ttu-id="454db-349">Afficher les cookies</span><span class="sxs-lookup"><span data-stu-id="454db-349">Display cookies</span></span>  
 
-<span data-ttu-id="d8516-350">Pour afficher les cookies envoyés dans l’en-tête HTTP d’une requête, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="d8516-350">To display the cookies sent in the HTTP header of a request, use the following steps.</span></span>  
+<span data-ttu-id="454db-350">Pour afficher les cookies envoyés dans l’en-tête HTTP d’une requête, utilisez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-350">To display the cookies sent in the HTTP header of a request, use the following steps.</span></span>  
 
-1.  <span data-ttu-id="d8516-351">Sélectionnez l’URL de la requête dans la colonne **nom** de la table demandes.</span><span class="sxs-lookup"><span data-stu-id="d8516-351">Choose the URL of the request, under the **Name** column of the Requests table.</span></span>  
-1.  <span data-ttu-id="d8516-352">Sélectionnez l’onglet **cookies** .</span><span class="sxs-lookup"><span data-stu-id="d8516-352">Choose the **Cookies** tab.</span></span>  
+1.  <span data-ttu-id="454db-351">Choisissez l’URL de la demande, sous la colonne **Nom** de la table Requests.</span><span class="sxs-lookup"><span data-stu-id="454db-351">Choose the URL of the request, under the **Name** column of the Requests table.</span></span>  
+1.  <span data-ttu-id="454db-352">Choisissez le **panneau Cookies.**</span><span class="sxs-lookup"><span data-stu-id="454db-352">Choose the **Cookies** panel.</span></span>  
 
 <!--For more information about each of the columns, navigate to [Fields][ManageDataCookiesFields].  -->  
 
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->  
 <!--TODO: add link when section is available -->  
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Onglet cookies" lightbox="../media/network-network-resources-cookies.msft.png":::
-   <span data-ttu-id="d8516-354">Onglet cookies</span><span class="sxs-lookup"><span data-stu-id="d8516-354">The Cookies tab</span></span>  
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Panneau Cookies" lightbox="../media/network-network-resources-cookies.msft.png":::
+   <span data-ttu-id="454db-354">Panneau Cookies</span><span class="sxs-lookup"><span data-stu-id="454db-354">The Cookies panel</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-355">Afficher la répartition du minutage d’une requête</span><span class="sxs-lookup"><span data-stu-id="d8516-355">Display the timing breakdown of a request</span></span>  
+### <a name="display-the-timing-breakdown-of-a-request"></a><span data-ttu-id="454db-355">Affichage de la répartition du minutage d’une demande</span><span class="sxs-lookup"><span data-stu-id="454db-355">Display the timing breakdown of a request</span></span>  
 
-<span data-ttu-id="d8516-356">Pour afficher la répartition du minutage d’une demande, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="d8516-356">To display the timing breakdown of a request, use the following steps.</span></span>  
+<span data-ttu-id="454db-356">Pour afficher la répartition du minutage d’une demande, utilisez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-356">To display the timing breakdown of a request, use the following steps.</span></span>  
 
-1.  <span data-ttu-id="d8516-357">Sélectionnez l’URL de la requête dans la colonne **nom** de la table demandes.</span><span class="sxs-lookup"><span data-stu-id="d8516-357">Choose the URL of the request, under the **Name** column of the Requests table.</span></span>  
-1.  <span data-ttu-id="d8516-358">Sélectionnez l’onglet **minutage** .</span><span class="sxs-lookup"><span data-stu-id="d8516-358">Choose the **Timing** tab.</span></span>  
+1.  <span data-ttu-id="454db-357">Choisissez l’URL de la demande, sous la colonne **Nom** de la table Requests.</span><span class="sxs-lookup"><span data-stu-id="454db-357">Choose the URL of the request, under the **Name** column of the Requests table.</span></span>  
+1.  <span data-ttu-id="454db-358">Sélectionnez **le panneau De minutage.**</span><span class="sxs-lookup"><span data-stu-id="454db-358">Choose the **Timing** panel.</span></span>  
 
-<span data-ttu-id="d8516-359">Pour accéder aux données plus rapidement, accédez à aperçu d' [une répartition du minutage](#preview-a-timing-breakdown).</span><span class="sxs-lookup"><span data-stu-id="d8516-359">For a faster way to access the data, navigate to [Preview a timing breakdown](#preview-a-timing-breakdown).</span></span>  
+<span data-ttu-id="454db-359">Pour accéder plus rapidement aux données, accédez à l’aperçu [d’une répartition du minutage.](#preview-a-timing-breakdown)</span><span class="sxs-lookup"><span data-stu-id="454db-359">For a faster way to access the data, navigate to [Preview a timing breakdown](#preview-a-timing-breakdown).</span></span>  
 
-<span data-ttu-id="d8516-360">Pour plus d’informations sur les différentes phases qui s’affichent dans l’onglet **minutage** , accédez à la [rubrique étapes de répartition du temps](#timing-breakdown-phases-explained).</span><span class="sxs-lookup"><span data-stu-id="d8516-360">For more information about each of the phases that may be displayed in the **Timing** tab, navigate to [Timing breakdown phases explained](#timing-breakdown-phases-explained).</span></span>  
+<span data-ttu-id="454db-360">Pour plus d’informations sur chacune des phases \*\*\*\* qui peuvent être affichées dans le panneau de minutage, accédez aux phases de répartition [du minutage expliquées.](#timing-breakdown-phases-explained)</span><span class="sxs-lookup"><span data-stu-id="454db-360">For more information about each of the phases that may be displayed in the **Timing** panel, navigate to [Timing breakdown phases explained](#timing-breakdown-phases-explained).</span></span>  
 
-:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="Onglet Minutage" lightbox="../media/network-network-resources-timing.msft.png":::
-   <span data-ttu-id="d8516-362">Onglet **minutage**</span><span class="sxs-lookup"><span data-stu-id="d8516-362">The **Timing** tab</span></span>  
+:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="Panneau De minutage" lightbox="../media/network-network-resources-timing.msft.png":::
+   <span data-ttu-id="454db-362">Panneau **De minutage**</span><span class="sxs-lookup"><span data-stu-id="454db-362">The **Timing** panel</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="d8516-363">Plus d’informations sur chacune de ces étapes.</span><span class="sxs-lookup"><span data-stu-id="d8516-363">More information about each of the phases.</span></span>  
+<span data-ttu-id="454db-363">Plus d’informations sur chacune des phases.</span><span class="sxs-lookup"><span data-stu-id="454db-363">More information about each of the phases.</span></span>  
 
-<span data-ttu-id="d8516-364">Pour plus d’informations sur l’accès à l’affichage, accédez à l' [affichage répartition du minutage](#display-the-timing-breakdown-of-a-request).</span><span class="sxs-lookup"><span data-stu-id="d8516-364">For more information about accessing the display, navigate to [Display timing breakdown](#display-the-timing-breakdown-of-a-request).</span></span>  
+<span data-ttu-id="454db-364">Pour plus d’informations sur l’accès à l’affichage, accédez à [Afficher la répartition du minutage.](#display-the-timing-breakdown-of-a-request)</span><span class="sxs-lookup"><span data-stu-id="454db-364">For more information about accessing the display, navigate to [Display timing breakdown](#display-the-timing-breakdown-of-a-request).</span></span>  
 
-#### <span data-ttu-id="d8516-365">Prévisualiser une répartition de minutage</span><span class="sxs-lookup"><span data-stu-id="d8516-365">Preview a timing breakdown</span></span>  
+#### <a name="preview-a-timing-breakdown"></a><span data-ttu-id="454db-365">Afficher un aperçu de la répartition du minutage</span><span class="sxs-lookup"><span data-stu-id="454db-365">Preview a timing breakdown</span></span>  
 
-<span data-ttu-id="d8516-366">Pour afficher un aperçu de la répartition du minutage d’une requête, dans la colonne en **cascade** de la table demandes, pointez sur l’entrée de la requête.</span><span class="sxs-lookup"><span data-stu-id="d8516-366">To display a preview of the timing breakdown of a request, in the **Waterfall** column of the Requests table, hover on the entry for the request.</span></span>  
+<span data-ttu-id="454db-366">Pour afficher un aperçu de la répartition du minutage d’une demande, dans la colonne **Cascade** de la table Demandes, pointez sur l’entrée de la demande.</span><span class="sxs-lookup"><span data-stu-id="454db-366">To display a preview of the timing breakdown of a request, in the **Waterfall** column of the Requests table, hover on the entry for the request.</span></span>  
 
-<span data-ttu-id="d8516-367">Pour plus d’informations sur l’accès aux données sans survol, accédez à [afficher la répartition du minutage d’une demande](#display-the-timing-breakdown-of-a-request).</span><span class="sxs-lookup"><span data-stu-id="d8516-367">For more information about how to access the data without hovering, navigate to [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request).</span></span>  
+<span data-ttu-id="454db-367">Pour plus d’informations sur l’accès aux données sans pointage, accédez à Afficher la répartition du [minutage d’une demande.](#display-the-timing-breakdown-of-a-request)</span><span class="sxs-lookup"><span data-stu-id="454db-367">For more information about how to access the data without hovering, navigate to [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request).</span></span>  
 
-:::image type="complex" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text="> afficher la répartition du minutage d’une requête" lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
-   <span data-ttu-id="d8516-369">Prévisualiser la répartition du minutage d’une requête</span><span class="sxs-lookup"><span data-stu-id="d8516-369">Preview the timing breakdown of a request</span></span>  
+:::image type="complex" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text="> aperçu de la répartition du minutage d’une demande" lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
+   <span data-ttu-id="454db-369">Afficher un aperçu de la répartition du minutage d’une demande</span><span class="sxs-lookup"><span data-stu-id="454db-369">Preview the timing breakdown of a request</span></span>  
 :::image-end:::  
 
-#### <span data-ttu-id="d8516-370">Explication des phases de répartition du temps</span><span class="sxs-lookup"><span data-stu-id="d8516-370">Timing breakdown phases explained</span></span>  
+#### <a name="timing-breakdown-phases-explained"></a><span data-ttu-id="454db-370">Phases de répartition du minutage expliquées</span><span class="sxs-lookup"><span data-stu-id="454db-370">Timing breakdown phases explained</span></span>  
 
-<span data-ttu-id="d8516-371">Plus d’informations sur chacune des phases qui s’affichent dans l’onglet **minutage** .</span><span class="sxs-lookup"><span data-stu-id="d8516-371">More information about each of the phases that may display in the **Timing** tab.</span></span>  
+<span data-ttu-id="454db-371">Plus d’informations sur chacune des phases qui peuvent s’afficher dans le **panneau De** minutage.</span><span class="sxs-lookup"><span data-stu-id="454db-371">More information about each of the phases that may display in the **Timing** panel.</span></span>  
 
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-372">Mise en file d’attente</span><span class="sxs-lookup"><span data-stu-id="d8516-372">Queueing</span></span>**  
+      **<span data-ttu-id="454db-372">File d’attente</span><span class="sxs-lookup"><span data-stu-id="454db-372">Queueing</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-373">Le navigateur met en file d’attente les demandes lorsque l’une des conditions suivantes est vraie.</span><span class="sxs-lookup"><span data-stu-id="d8516-373">The browser queues requests when any of the following are true.</span></span>  
+      <span data-ttu-id="454db-373">Le navigateur place les demandes en file d’attente lorsque l’une des valeurs suivantes est vraie.</span><span class="sxs-lookup"><span data-stu-id="454db-373">The browser queues requests when any of the following are true.</span></span>  
       
-      *   <span data-ttu-id="d8516-374">Il existe des demandes de priorité élevée.</span><span class="sxs-lookup"><span data-stu-id="d8516-374">Higher priority requests exist.</span></span>  
-      *   <span data-ttu-id="d8516-375">Six connexions TCP sont ouvertes pour la même origine, qui correspond à la limite.</span><span class="sxs-lookup"><span data-stu-id="d8516-375">Six TCP connections are open for the same origin, which is the limit.</span></span>  <span data-ttu-id="d8516-376">S’applique uniquement aux protocoles HTTP/1.0 et HTTP/1.1.</span><span class="sxs-lookup"><span data-stu-id="d8516-376">Applies to HTTP/1.0 and HTTP/1.1 only.</span></span>  
-      *   <span data-ttu-id="d8516-377">Le navigateur alloue de l’espace dans le cache disque.</span><span class="sxs-lookup"><span data-stu-id="d8516-377">The browser is briefly allocating space in the disk cache.</span></span>  
+      *   <span data-ttu-id="454db-374">Des demandes de priorité élevée existent.</span><span class="sxs-lookup"><span data-stu-id="454db-374">Higher priority requests exist.</span></span>  
+      *   <span data-ttu-id="454db-375">Six connexions TCP sont ouvertes pour la même origine, ce qui est la limite.</span><span class="sxs-lookup"><span data-stu-id="454db-375">Six TCP connections are open for the same origin, which is the limit.</span></span>  <span data-ttu-id="454db-376">S’applique uniquement à HTTP/1.0 et HTTP/1.1.</span><span class="sxs-lookup"><span data-stu-id="454db-376">Applies to HTTP/1.0 and HTTP/1.1 only.</span></span>  
+      *   <span data-ttu-id="454db-377">Le navigateur alloue brièvement de l’espace dans le cache disque.</span><span class="sxs-lookup"><span data-stu-id="454db-377">The browser is briefly allocating space in the disk cache.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-378">Bloquée</span><span class="sxs-lookup"><span data-stu-id="d8516-378">Stalled</span></span>**  
+      **<span data-ttu-id="454db-378">Bloqué</span><span class="sxs-lookup"><span data-stu-id="454db-378">Stalled</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-379">La requête est bloquée pour l’une des raisons décrites dans la **file d’attente**.</span><span class="sxs-lookup"><span data-stu-id="d8516-379">The request is stalled for any of the reasons described in **Queueing**.</span></span>  
+      <span data-ttu-id="454db-379">La demande est bloquée pour l’une des raisons décrites dans **la file d’attente.**</span><span class="sxs-lookup"><span data-stu-id="454db-379">The request is stalled for any of the reasons described in **Queueing**.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-380">Recherche DNS</span><span class="sxs-lookup"><span data-stu-id="d8516-380">DNS Lookup</span></span>**  
+      **<span data-ttu-id="454db-380">Recherche DNS</span><span class="sxs-lookup"><span data-stu-id="454db-380">DNS Lookup</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-381">Le navigateur résout l’adresse IP pour la requête.</span><span class="sxs-lookup"><span data-stu-id="d8516-381">The browser is resolving the IP address for the request.</span></span>  
+      <span data-ttu-id="454db-381">Le navigateur est en cours de résolution de l’adresse IP de la demande.</span><span class="sxs-lookup"><span data-stu-id="454db-381">The browser is resolving the IP address for the request.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-382">Connexion initiale</span><span class="sxs-lookup"><span data-stu-id="d8516-382">Initial connection</span></span>**  
+      **<span data-ttu-id="454db-382">Connexion initiale</span><span class="sxs-lookup"><span data-stu-id="454db-382">Initial connection</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-383">Le navigateur établit une connexion, y compris les négociations TCP, les tentatives de TCP et négocie une couche de socket sécurisée.</span><span class="sxs-lookup"><span data-stu-id="d8516-383">The browser establishes a connection including TCP handshakes, TCP retries, and negotiates a Secure Socket Layer.</span></span>
+      <span data-ttu-id="454db-383">Le navigateur établit une connexion incluant des liaisons TCP, des tentatives TCP et négocie une couche de socket sécurisée.</span><span class="sxs-lookup"><span data-stu-id="454db-383">The browser establishes a connection including TCP handshakes, TCP retries, and negotiates a Secure Socket Layer.</span></span>
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-384">Négociation de proxy</span><span class="sxs-lookup"><span data-stu-id="d8516-384">Proxy negotiation</span></span>**  
+      **<span data-ttu-id="454db-384">Négociation de proxy</span><span class="sxs-lookup"><span data-stu-id="454db-384">Proxy negotiation</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-385">Le navigateur négocie la requête avec un [serveur proxy][WikiProxyServer].</span><span class="sxs-lookup"><span data-stu-id="d8516-385">The browser is negotiating the request with a [proxy server][WikiProxyServer].</span></span>  
+      <span data-ttu-id="454db-385">Le navigateur négocie la demande avec un [serveur proxy.][WikiProxyServer]</span><span class="sxs-lookup"><span data-stu-id="454db-385">The browser is negotiating the request with a [proxy server][WikiProxyServer].</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-386">Demande envoyée</span><span class="sxs-lookup"><span data-stu-id="d8516-386">Request sent</span></span>**  
+      **<span data-ttu-id="454db-386">Demande envoyée</span><span class="sxs-lookup"><span data-stu-id="454db-386">Request sent</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-387">La requête est en cours d’envoi.</span><span class="sxs-lookup"><span data-stu-id="d8516-387">The request is being sent.</span></span>  
+      <span data-ttu-id="454db-387">La demande est envoyée.</span><span class="sxs-lookup"><span data-stu-id="454db-387">The request is being sent.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-388">Préparation de ServiceWorker</span><span class="sxs-lookup"><span data-stu-id="d8516-388">ServiceWorker Preparation</span></span>**  
+      **<span data-ttu-id="454db-388">Préparation de ServiceWorker</span><span class="sxs-lookup"><span data-stu-id="454db-388">ServiceWorker Preparation</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-389">Le navigateur démarre le travailleur de service.</span><span class="sxs-lookup"><span data-stu-id="d8516-389">The browser is starting the service worker.</span></span>  
+      <span data-ttu-id="454db-389">Le navigateur démarre le service de travail.</span><span class="sxs-lookup"><span data-stu-id="454db-389">The browser is starting the service worker.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-390">Demander à ServiceWorker</span><span class="sxs-lookup"><span data-stu-id="d8516-390">Request to ServiceWorker</span></span>**  
+      **<span data-ttu-id="454db-390">Demande à ServiceWorker</span><span class="sxs-lookup"><span data-stu-id="454db-390">Request to ServiceWorker</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-391">La demande est envoyée au travailleur de service.</span><span class="sxs-lookup"><span data-stu-id="d8516-391">The request is being sent to the service worker.</span></span>  
+      <span data-ttu-id="454db-391">La demande est envoyée au service de travail.</span><span class="sxs-lookup"><span data-stu-id="454db-391">The request is being sent to the service worker.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-392">En attente \ (TTFB \)</span><span class="sxs-lookup"><span data-stu-id="d8516-392">Waiting \(TTFB\)</span></span>**  
+      **<span data-ttu-id="454db-392">Waiting \(TTFB\)</span><span class="sxs-lookup"><span data-stu-id="454db-392">Waiting \(TTFB\)</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-393">Le navigateur attend le premier octet d’une réponse.</span><span class="sxs-lookup"><span data-stu-id="d8516-393">The browser is waiting for the first byte of a response.</span></span>  <span data-ttu-id="d8516-394">TTFB représente le temps à l’octet initial.</span><span class="sxs-lookup"><span data-stu-id="d8516-394">TTFB stands for Time To First Byte.</span></span>  <span data-ttu-id="d8516-395">Ce minutage inclut un aller-retour d’une latence et la durée du serveur pour préparer la réponse.</span><span class="sxs-lookup"><span data-stu-id="d8516-395">This timing includes one round trip of latency and the time the server took to prepare the response.</span></span>  
+      <span data-ttu-id="454db-393">Le navigateur attend le premier byte d’une réponse.</span><span class="sxs-lookup"><span data-stu-id="454db-393">The browser is waiting for the first byte of a response.</span></span>  <span data-ttu-id="454db-394">TTFB signifie « Time To First Byte ».</span><span class="sxs-lookup"><span data-stu-id="454db-394">TTFB stands for Time To First Byte.</span></span>  <span data-ttu-id="454db-395">Ce délai inclut un aller-retour de latence et le temps que le serveur a pris pour préparer la réponse.</span><span class="sxs-lookup"><span data-stu-id="454db-395">This timing includes one round trip of latency and the time the server took to prepare the response.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-396">Téléchargement du contenu</span><span class="sxs-lookup"><span data-stu-id="d8516-396">Content Download</span></span>**  
+      **<span data-ttu-id="454db-396">Téléchargement de contenu</span><span class="sxs-lookup"><span data-stu-id="454db-396">Content Download</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-397">Le navigateur reçoit la réponse.</span><span class="sxs-lookup"><span data-stu-id="d8516-397">The browser is receiving the response.</span></span>  
+      <span data-ttu-id="454db-397">Le navigateur reçoit la réponse.</span><span class="sxs-lookup"><span data-stu-id="454db-397">The browser is receiving the response.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-398">Réception d’une émission</span><span class="sxs-lookup"><span data-stu-id="d8516-398">Receiving Push</span></span>**  
+      **<span data-ttu-id="454db-398">Réception de push</span><span class="sxs-lookup"><span data-stu-id="454db-398">Receiving Push</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-399">Le navigateur reçoit des données pour cette réponse via le protocole HTTP/2 Server Poussée.</span><span class="sxs-lookup"><span data-stu-id="d8516-399">The browser is receiving data for this response via HTTP/2 Server Push.</span></span>  
+      <span data-ttu-id="454db-399">Le navigateur reçoit des données pour cette réponse via HTTP/2 Server Push.</span><span class="sxs-lookup"><span data-stu-id="454db-399">The browser is receiving data for this response via HTTP/2 Server Push.</span></span>  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **<span data-ttu-id="d8516-400">Lecture Poussée</span><span class="sxs-lookup"><span data-stu-id="d8516-400">Reading Push</span></span>**  
+      **<span data-ttu-id="454db-400">Lecture push</span><span class="sxs-lookup"><span data-stu-id="454db-400">Reading Push</span></span>**  
    :::column-end:::
    :::column span="2":::
-      <span data-ttu-id="d8516-401">Le navigateur lit les données locales précédemment reçues.</span><span class="sxs-lookup"><span data-stu-id="d8516-401">The browser is reading the local data previously received.</span></span>  
+      <span data-ttu-id="454db-401">Le navigateur lit les données locales reçues précédemment.</span><span class="sxs-lookup"><span data-stu-id="454db-401">The browser is reading the local data previously received.</span></span>  
    :::column-end:::
 :::row-end:::  
 
-### <span data-ttu-id="d8516-402">Afficher les initiateurs et les dépendances</span><span class="sxs-lookup"><span data-stu-id="d8516-402">Display initiators and dependencies</span></span>  
+### <a name="display-initiators-and-dependencies"></a><span data-ttu-id="454db-402">Afficher les initiateurs et les dépendances</span><span class="sxs-lookup"><span data-stu-id="454db-402">Display initiators and dependencies</span></span>  
 
-<span data-ttu-id="d8516-403">Pour afficher les initiateurs et les dépendances d’une requête, maintenez la touche enfoncée `Shift` et placez le curseur sur la requête dans la table demandes.</span><span class="sxs-lookup"><span data-stu-id="d8516-403">To display the initiators and dependencies of a request, hold `Shift`and hover on the request in the Requests table.</span></span>  <span data-ttu-id="d8516-404">Couleurs de DevTools: les initiateurs apparaissent en vert et les dépendances apparaissent en rouge.</span><span class="sxs-lookup"><span data-stu-id="d8516-404">DevTools colors: initiators are shown in green and dependencies are shown in red.</span></span>  
+<span data-ttu-id="454db-403">Pour afficher les initiateurs et les dépendances d’une demande, maintenez la demande en attente et pointez dessus `Shift` dans la table Demandes.</span><span class="sxs-lookup"><span data-stu-id="454db-403">To display the initiators and dependencies of a request, hold `Shift`and hover on the request in the Requests table.</span></span>  <span data-ttu-id="454db-404">Couleurs DevTools : les initiateurs sont affichés en vert et les dépendances en rouge.</span><span class="sxs-lookup"><span data-stu-id="454db-404">DevTools colors: initiators are shown in green and dependencies are shown in red.</span></span>  
 
-:::image type="complex" source="../media/network-network-resources-initiators-dependencies.msft.png" alt-text="Afficher les initiateurs et les dépendances d’une requête" lightbox="../media/network-network-resources-initiators-dependencies.msft.png":::
-   <span data-ttu-id="d8516-406">Afficher les initiateurs et les dépendances d’une requête</span><span class="sxs-lookup"><span data-stu-id="d8516-406">Display the initiators and dependencies of a request</span></span>  
+:::image type="complex" source="../media/network-network-resources-initiators-dependencies.msft.png" alt-text="Afficher les initiateurs et les dépendances d’une demande" lightbox="../media/network-network-resources-initiators-dependencies.msft.png":::
+   <span data-ttu-id="454db-406">Afficher les initiateurs et les dépendances d’une demande</span><span class="sxs-lookup"><span data-stu-id="454db-406">Display the initiators and dependencies of a request</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="d8516-407">Lorsque la table requêtes est classée dans l’ordre chronologique, si vous pointez sur une ligne, la ligne qui la précède affiche une requête verte.</span><span class="sxs-lookup"><span data-stu-id="d8516-407">When the Requests table is ordered chronologically, if you hover on a line, the line preceding it displays a green request.</span></span>  <span data-ttu-id="d8516-408">La requête Green est l’initiateur de la dépendance.</span><span class="sxs-lookup"><span data-stu-id="d8516-408">The green request is the initiator of the dependency.</span></span>  <span data-ttu-id="d8516-409">Si une autre demande verte apparaît sur la ligne avant celle-ci, il s’agit de l’initiateur de l’initiateur.</span><span class="sxs-lookup"><span data-stu-id="d8516-409">If another green request is displayed on the line before that, that higher request is the initiator of the initiator.</span></span>  <span data-ttu-id="d8516-410">Et ainsi de suite.</span><span class="sxs-lookup"><span data-stu-id="d8516-410">And so on.</span></span>  
+<span data-ttu-id="454db-407">Lorsque la table Requests est classé dans l’ordre chronologique, si vous pointez sur une ligne, la ligne qui précède affiche une demande verte.</span><span class="sxs-lookup"><span data-stu-id="454db-407">When the Requests table is ordered chronologically, if you hover on a line, the line preceding it displays a green request.</span></span>  <span data-ttu-id="454db-408">La demande verte est l’initiateur de la dépendance.</span><span class="sxs-lookup"><span data-stu-id="454db-408">The green request is the initiator of the dependency.</span></span>  <span data-ttu-id="454db-409">Si une autre demande verte est affichée sur la ligne avant cette ligne, cette demande supérieure est l’initiateur de l’initiateur.</span><span class="sxs-lookup"><span data-stu-id="454db-409">If another green request is displayed on the line before that, that higher request is the initiator of the initiator.</span></span>  <span data-ttu-id="454db-410">Et ainsi de suite.</span><span class="sxs-lookup"><span data-stu-id="454db-410">And so on.</span></span>  
 
-### <span data-ttu-id="d8516-411">Afficher les événements de chargement</span><span class="sxs-lookup"><span data-stu-id="d8516-411">Display load events</span></span>  
+### <a name="display-load-events"></a><span data-ttu-id="454db-411">Afficher les événements de chargement</span><span class="sxs-lookup"><span data-stu-id="454db-411">Display load events</span></span>  
 
-<span data-ttu-id="d8516-412">DevTools affiche le minutage des `DOMContentLoaded` événements et `load` dans plusieurs emplacements du panneau **réseau** .</span><span class="sxs-lookup"><span data-stu-id="d8516-412">DevTools displays the timing of the `DOMContentLoaded` and `load` events in multiple places on the **Network** panel.</span></span>  <span data-ttu-id="d8516-413">L' `DOMContentLoaded` événement est coloré en bleu et l' `load` événement est rouge.</span><span class="sxs-lookup"><span data-stu-id="d8516-413">The `DOMContentLoaded` event is colored blue, and the `load` event is red.</span></span>  
+<span data-ttu-id="454db-412">DevTools affiche le minutage des événements à plusieurs `DOMContentLoaded` `load` endroits sur **l’outil** Réseau.</span><span class="sxs-lookup"><span data-stu-id="454db-412">DevTools displays the timing of the `DOMContentLoaded` and `load` events in multiple places on the **Network** tool.</span></span>  <span data-ttu-id="454db-413">`DOMContentLoaded`L’événement est bleu et l’événement est `load` rouge.</span><span class="sxs-lookup"><span data-stu-id="454db-413">The `DOMContentLoaded` event is colored blue, and the `load` event is red.</span></span>  
 
-:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="Emplacements des événements DOMContentLoaded et Load sur le panneau réseau" lightbox="../media/network-network-requests-load-events.msft.png":::
-   <span data-ttu-id="d8516-415">Emplacement des `DOMContentLoaded` `load` événements et dans le volet **réseau**</span><span class="sxs-lookup"><span data-stu-id="d8516-415">The locations of the `DOMContentLoaded` and `load` events on the **Network** panel</span></span>  
+:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="Emplacements du DOMContentLoaded et chargement des événements sur le panneau réseau" lightbox="../media/network-network-requests-load-events.msft.png":::
+   <span data-ttu-id="454db-415">Emplacements des `DOMContentLoaded` événements et des événements `load` sur **l’outil** Réseau</span><span class="sxs-lookup"><span data-stu-id="454db-415">The locations of the `DOMContentLoaded` and `load` events on the **Network** tool</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-416">Afficher le nombre total de demandes</span><span class="sxs-lookup"><span data-stu-id="d8516-416">Display the total number of requests</span></span>  
+### <a name="display-the-total-number-of-requests"></a><span data-ttu-id="454db-416">Affichage du nombre total de demandes</span><span class="sxs-lookup"><span data-stu-id="454db-416">Display the total number of requests</span></span>  
 
-<span data-ttu-id="d8516-417">Le nombre total de demandes est répertorié dans le volet **Résumé** , au bas du panneau **réseau** .</span><span class="sxs-lookup"><span data-stu-id="d8516-417">The total number of requests is listed in the **Summary** pane, at the bottom of the **Network** panel.</span></span>  
+<span data-ttu-id="454db-417">Le nombre total de demandes \*\*\*\* est répertorié dans le volet Résumé, en bas de **l’outil** Réseau.</span><span class="sxs-lookup"><span data-stu-id="454db-417">The total number of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.</span></span>  
 
 > [!CAUTION]
-> <span data-ttu-id="d8516-418">Ce numéro suit uniquement les requêtes qui ont été enregistrées depuis l’ouverture de DevTools.</span><span class="sxs-lookup"><span data-stu-id="d8516-418">This number only tracks requests that have been logged since DevTools was opened.</span></span>  <span data-ttu-id="d8516-419">Si d’autres requêtes s’est produites avant l’ouverture de DevTools, ces demandes ne sont pas comptabilisées.</span><span class="sxs-lookup"><span data-stu-id="d8516-419">If other requests occurred before DevTools was opened, those requests are not counted.</span></span>  
+> <span data-ttu-id="454db-418">Ce numéro suit uniquement les demandes qui ont été enregistrées depuis l’ouverture de DevTools.</span><span class="sxs-lookup"><span data-stu-id="454db-418">This number only tracks requests that have been logged since DevTools was opened.</span></span>  <span data-ttu-id="454db-419">Si d’autres demandes se sont produites avant l’ouverture de DevTools, ces demandes ne sont pas comptabilisées.</span><span class="sxs-lookup"><span data-stu-id="454db-419">If other requests occurred before DevTools was opened, those requests are not counted.</span></span>  
 
 :::image type="complex" source="../media/network-network-total-requests.msft.png" alt-text="Nombre total de demandes depuis l’ouverture de DevTools" lightbox="../media/network-network-total-requests.msft.png":::
-   <span data-ttu-id="d8516-421">Nombre total de demandes depuis l’ouverture de DevTools</span><span class="sxs-lookup"><span data-stu-id="d8516-421">The total number of requests since DevTools were opened</span></span>  
+   <span data-ttu-id="454db-421">Nombre total de demandes depuis l’ouverture de DevTools</span><span class="sxs-lookup"><span data-stu-id="454db-421">The total number of requests since DevTools were opened</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-422">Affichez la taille totale du téléchargement</span><span class="sxs-lookup"><span data-stu-id="d8516-422">Display the total download size</span></span>  
+### <a name="display-the-total-download-size"></a><span data-ttu-id="454db-422">Afficher la taille totale du téléchargement</span><span class="sxs-lookup"><span data-stu-id="454db-422">Display the total download size</span></span>  
 
-<span data-ttu-id="d8516-423">La taille de téléchargement totale des demandes figure dans le volet **Résumé** , en bas du volet **réseau** .</span><span class="sxs-lookup"><span data-stu-id="d8516-423">The total download size of requests is listed in the **Summary** pane, at the bottom of the **Network** panel.</span></span>  
+<span data-ttu-id="454db-423">La taille totale des demandes de \*\*\*\* téléchargement est répertoriée dans le volet Résumé, en bas de **l’outil** Réseau.</span><span class="sxs-lookup"><span data-stu-id="454db-423">The total download size of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.</span></span>  
 
 > [!CAUTION]
-> <span data-ttu-id="d8516-424">Ce numéro suit uniquement les requêtes qui ont été enregistrées depuis l’ouverture de DevTools.</span><span class="sxs-lookup"><span data-stu-id="d8516-424">This number only tracks requests that have been logged since DevTools was opened.</span></span>  <span data-ttu-id="d8516-425">Si d’autres requêtes s’est produites avant l’ouverture de DevTools, les requêtes précédentes ne sont pas comptabilisées.</span><span class="sxs-lookup"><span data-stu-id="d8516-425">If other requests occurred before DevTools was opened, the previous requests are not counted.</span></span>  
+> <span data-ttu-id="454db-424">Ce numéro suit uniquement les demandes qui ont été enregistrées depuis l’ouverture de DevTools.</span><span class="sxs-lookup"><span data-stu-id="454db-424">This number only tracks requests that have been logged since DevTools was opened.</span></span>  <span data-ttu-id="454db-425">Si d’autres demandes se sont produites avant l’ouverture de DevTools, les demandes précédentes ne sont pas comptabilisées.</span><span class="sxs-lookup"><span data-stu-id="454db-425">If other requests occurred before DevTools was opened, the previous requests are not counted.</span></span>  
 
-:::image type="complex" source="../media/network-network-total-download-size.msft.png" alt-text="La taille de téléchargement totale des requêtes" lightbox="../media/network-network-total-download-size.msft.png":::
-   <span data-ttu-id="d8516-427">La taille de téléchargement totale des requêtes</span><span class="sxs-lookup"><span data-stu-id="d8516-427">The total download size of requests</span></span>  
+:::image type="complex" source="../media/network-network-total-download-size.msft.png" alt-text="Taille totale des demandes de téléchargement" lightbox="../media/network-network-total-download-size.msft.png":::
+   <span data-ttu-id="454db-427">Taille totale des demandes de téléchargement</span><span class="sxs-lookup"><span data-stu-id="454db-427">The total download size of requests</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="d8516-428">Pour vérifier le nombre de ressources disponibles lorsque le navigateur décompresse chaque élément, naviguez jusqu’à [afficher la taille de la ressource](#display-the-uncompressed-size-of-a-resource).</span><span class="sxs-lookup"><span data-stu-id="d8516-428">To verify how large resources are after the browser uncompresses each item, navigate to [display the uncompressed size of a resource](#display-the-uncompressed-size-of-a-resource).</span></span>  
+<span data-ttu-id="454db-428">Pour vérifier la taille des ressources une fois que le navigateur a décompressé chaque élément, accédez pour afficher la taille non [compressée d’une ressource.](#display-the-uncompressed-size-of-a-resource)</span><span class="sxs-lookup"><span data-stu-id="454db-428">To verify how large resources are after the browser uncompresses each item, navigate to [display the uncompressed size of a resource](#display-the-uncompressed-size-of-a-resource).</span></span>  
 
-### <span data-ttu-id="d8516-429">Afficher la trace de pile ayant entraîné une requête</span><span class="sxs-lookup"><span data-stu-id="d8516-429">Display the stack trace that caused a request</span></span>  
+### <a name="display-the-stack-trace-that-caused-a-request"></a><span data-ttu-id="454db-429">Afficher la trace de pile à l’origine d’une demande</span><span class="sxs-lookup"><span data-stu-id="454db-429">Display the stack trace that caused a request</span></span>  
 
-<span data-ttu-id="d8516-430">Après qu’une instruction JavaScript demande une ressource, pointez sur la colonne **Initiator** pour afficher la trace de pile qui se trouve au début de la requête.</span><span class="sxs-lookup"><span data-stu-id="d8516-430">After a JavaScript statement requests a resource, hover on the **Initiator** column to display the stack trace leading up to the request.</span></span>  
+<span data-ttu-id="454db-430">Après qu’une instruction JavaScript demande une ressource, pointez sur la colonne **Initiator** pour afficher la trace de pile précédant la demande.</span><span class="sxs-lookup"><span data-stu-id="454db-430">After a JavaScript statement requests a resource, hover on the **Initiator** column to display the stack trace leading up to the request.</span></span>  
 
 <!-- [codepen.io/contoso/pen/yLBrOWa?editors=0010#0](https://codepen.io/contoso/pen/yLBrOWa?editors=0010#0) -->  
 
@@ -784,50 +784,50 @@ init();
 ```  
 -->  
 
-:::image type="complex" source="../media/network-network-requests-initiator-stack.msft.png" alt-text="Trace de pile aboutissant à une demande de ressources" lightbox="../media/network-network-requests-initiator-stack.msft.png":::
-   <span data-ttu-id="d8516-432">Trace de pile aboutissant à une demande de ressources</span><span class="sxs-lookup"><span data-stu-id="d8516-432">The stack trace leading up to a resource request</span></span>  
+:::image type="complex" source="../media/network-network-requests-initiator-stack.msft.png" alt-text="Trace de pile menant à une demande de ressource" lightbox="../media/network-network-requests-initiator-stack.msft.png":::
+   <span data-ttu-id="454db-432">Trace de pile menant à une demande de ressource</span><span class="sxs-lookup"><span data-stu-id="454db-432">The stack trace leading up to a resource request</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-433">Affichage de la taille de la ressource non compressée</span><span class="sxs-lookup"><span data-stu-id="d8516-433">Display the uncompressed size of a resource</span></span>  
+### <a name="display-the-uncompressed-size-of-a-resource"></a><span data-ttu-id="454db-433">Afficher la taille non compressée d’une ressource</span><span class="sxs-lookup"><span data-stu-id="454db-433">Display the uncompressed size of a resource</span></span>  
 
-<span data-ttu-id="d8516-434">Activez la case à cocher **utiliser des lignes de requête volumineuses** , puis examinez la dernière valeur de la colonne **taille** .</span><span class="sxs-lookup"><span data-stu-id="d8516-434">Turn on the **Use large request rows** checkbox and then review the bottom value of the **Size** column.</span></span>  
+<span data-ttu-id="454db-434">Activer la case **à cocher** Utiliser les lignes de requête de grande taille, puis passer en revue la valeur inférieure de la **colonne** Taille.</span><span class="sxs-lookup"><span data-stu-id="454db-434">Turn on the **Use large request rows** checkbox and then review the bottom value of the **Size** column.</span></span>  
 
 :::image type="complex" source="../media/network-network-requests-uncompressed-compare.msft.png" alt-text="Exemple de ressources non compressées" lightbox="../media/network-network-requests-uncompressed-compare.msft.png":::
-   <span data-ttu-id="d8516-436">Voici un exemple de ressources non compressées \ (la taille du `jquery-3.3.1.min.js` fichier qui a été envoyée par le biais du réseau était `29.9 KB` alors la taille du fichier non compressé `84.9 KB` ).</span><span class="sxs-lookup"><span data-stu-id="d8516-436">An example of uncompressed resources  \(The compressed size of the `jquery-3.3.1.min.js` file that was sent over the network was `29.9 KB`, whereas the uncompressed size was `84.9 KB`\)</span></span>  
+   <span data-ttu-id="454db-436">Exemple de ressources non compressées \(La taille compressée du fichier envoyé sur le réseau était , alors que la taille non compressée était `jquery-3.3.1.min.js` `29.9 KB` `84.9 KB` \)</span><span class="sxs-lookup"><span data-stu-id="454db-436">An example of uncompressed resources  \(The compressed size of the `jquery-3.3.1.min.js` file that was sent over the network was `29.9 KB`, whereas the uncompressed size was `84.9 KB`\)</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="d8516-437">Exporter les données de requête</span><span class="sxs-lookup"><span data-stu-id="d8516-437">Export requests data</span></span>  
+## <a name="export-requests-data"></a><span data-ttu-id="454db-437">Exporter les données des demandes</span><span class="sxs-lookup"><span data-stu-id="454db-437">Export requests data</span></span>  
 
-### <span data-ttu-id="d8516-438">Enregistrer toutes les demandes réseau dans un fichier QAR</span><span class="sxs-lookup"><span data-stu-id="d8516-438">Save all network requests to a HAR file</span></span>  
+### <a name="save-all-network-requests-to-a-har-file"></a><span data-ttu-id="454db-438">Enregistrer toutes les demandes réseau dans un fichier HAR</span><span class="sxs-lookup"><span data-stu-id="454db-438">Save all network requests to a HAR file</span></span>  
 
-<span data-ttu-id="d8516-439">Pour enregistrer toutes les demandes réseau dans un fichier QAR, procédez comme suit.</span><span class="sxs-lookup"><span data-stu-id="d8516-439">To save all network requests to a HAR file, complete the following steps.</span></span>  
+<span data-ttu-id="454db-439">Pour enregistrer toutes les demandes réseau dans un fichier HAR, complétez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-439">To save all network requests to a HAR file, complete the following steps.</span></span>  
 
-1.  <span data-ttu-id="d8516-440">Positionnez le pointeur sur une requête dans la table demandes et ouvrez le menu contextuel, puis cliquez sur le bouton droit de la souris.</span><span class="sxs-lookup"><span data-stu-id="d8516-440">Hover on any request in the Requests table and open the contextual menu \(right-click\).</span></span>  
-1.  <span data-ttu-id="d8516-441">Choisissez **enregistrer en tant que le contenu**.</span><span class="sxs-lookup"><span data-stu-id="d8516-441">Choose **Save as HAR with Content**.</span></span>  <span data-ttu-id="d8516-442">DevTools enregistre toutes les demandes qui se sont produites depuis que vous avez ouvert DevTools sur le fichier.</span><span class="sxs-lookup"><span data-stu-id="d8516-442">DevTools saves all requests that have occurred since you opened DevTools to the HAR file.</span></span>  <span data-ttu-id="d8516-443">Vous ne pouvez pas filtrer les demandes.</span><span class="sxs-lookup"><span data-stu-id="d8516-443">You are not able to filter requests.</span></span>  <span data-ttu-id="d8516-444">Vous ne pouvez pas non plus enregistrer une demande unique.</span><span class="sxs-lookup"><span data-stu-id="d8516-444">You are also not able to save a single request.</span></span>  
+1.  <span data-ttu-id="454db-440">Pointez sur n’importe quelle demande dans la table Demandes et ouvrez le menu contextuel \(clic droit\).</span><span class="sxs-lookup"><span data-stu-id="454db-440">Hover on any request in the Requests table and open the contextual menu \(right-click\).</span></span>  
+1.  <span data-ttu-id="454db-441">Choose **Save as HAR with Content**.</span><span class="sxs-lookup"><span data-stu-id="454db-441">Choose **Save as HAR with Content**.</span></span>  <span data-ttu-id="454db-442">DevTools enregistre toutes les demandes qui se sont produites depuis que vous avez ouvert DevTools dans le fichier HAR.</span><span class="sxs-lookup"><span data-stu-id="454db-442">DevTools saves all requests that have occurred since you opened DevTools to the HAR file.</span></span>  <span data-ttu-id="454db-443">Vous ne pouvez pas filtrer les demandes.</span><span class="sxs-lookup"><span data-stu-id="454db-443">You are not able to filter requests.</span></span>  <span data-ttu-id="454db-444">Vous ne pouvez pas non plus enregistrer une seule requête.</span><span class="sxs-lookup"><span data-stu-id="454db-444">You are also not able to save a single request.</span></span>  
 
-<span data-ttu-id="d8516-445">Lorsque vous enregistrez un fichier QAR, vous pouvez l’importer de nouveau dans DevTools pour analyse.</span><span class="sxs-lookup"><span data-stu-id="d8516-445">Once you save a HAR file, you may import it back into DevTools for analysis.</span></span>  <span data-ttu-id="d8516-446">Il suffit de glisser-déplacer le fichier QAR dans la table demandes.</span><span class="sxs-lookup"><span data-stu-id="d8516-446">Just drag-and-drop the HAR file into the Requests table.</span></span>  
+<span data-ttu-id="454db-445">Une fois que vous enregistrez un fichier HAR, vous pouvez l’importer à nouveau dans DevTools pour analyse.</span><span class="sxs-lookup"><span data-stu-id="454db-445">Once you save a HAR file, you may import it back into DevTools for analysis.</span></span>  <span data-ttu-id="454db-446">Il suffit de glisser-déposer le fichier HAR dans la table Requests.</span><span class="sxs-lookup"><span data-stu-id="454db-446">Just drag-and-drop the HAR file into the Requests table.</span></span>  
 <!--For more information, navigate to also [HAR Analyzer][HARAnalyzer].  -->  
 
 <!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->  
 <!--Todo: add section link when content is available  -->  
 
-:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Choisissez Enregistrer comme le contenu de votre fichier." lightbox="../media/network-network-requests-save-har-content.msft.png":::
-   <span data-ttu-id="d8516-448">Choisissez **Enregistrer comme le contenu de votre fichier** .</span><span class="sxs-lookup"><span data-stu-id="d8516-448">Choose **Save as HAR with Content**</span></span>  
+:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Choose Save as HAR with Content" lightbox="../media/network-network-requests-save-har-content.msft.png":::
+   <span data-ttu-id="454db-448">Choose **Save as HAR with Content**</span><span class="sxs-lookup"><span data-stu-id="454db-448">Choose **Save as HAR with Content**</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-449">Copier une ou plusieurs demandes dans le presse-papiers</span><span class="sxs-lookup"><span data-stu-id="d8516-449">Copy one or more requests to the clipboard</span></span>  
+### <a name="copy-one-or-more-requests-to-the-clipboard"></a><span data-ttu-id="454db-449">Copier une ou plusieurs demandes dans le Presse-papiers</span><span class="sxs-lookup"><span data-stu-id="454db-449">Copy one or more requests to the clipboard</span></span>  
 
-<span data-ttu-id="d8516-450">Dans la colonne **nom** de la table demandes, positionnez le **pointeur sur une**requête, ouvrez le menu contextuel, puis sélectionnez l’une des options suivantes...</span><span class="sxs-lookup"><span data-stu-id="d8516-450">Under the **Name** column of the Requests table, hover on a request, open the contextual menu \(right-click\), hover on **Copy**, and choose one of the following options.</span></span>  
+<span data-ttu-id="454db-450">Sous la **colonne Nom** de la table Demandes, pointez sur une demande, ouvrez le menu contextuel \(clic droit\), pointez sur **Copier**et choisissez l’une des options suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-450">Under the **Name** column of the Requests table, hover on a request, open the contextual menu \(right-click\), hover on **Copy**, and choose one of the following options.</span></span>  
 
-| <span data-ttu-id="d8516-451">Nom</span><span class="sxs-lookup"><span data-stu-id="d8516-451">Name</span></span> | <span data-ttu-id="d8516-452">Détails</span><span class="sxs-lookup"><span data-stu-id="d8516-452">Details</span></span> |  
+| <span data-ttu-id="454db-451">Nom</span><span class="sxs-lookup"><span data-stu-id="454db-451">Name</span></span> | <span data-ttu-id="454db-452">Détails</span><span class="sxs-lookup"><span data-stu-id="454db-452">Details</span></span> |  
 |:--- |:--- |  
-| **<span data-ttu-id="d8516-453">Copier l’adresse du lien</span><span class="sxs-lookup"><span data-stu-id="d8516-453">Copy Link Address</span></span>** | <span data-ttu-id="d8516-454">Copiez l’URL de la requête dans le presse-papiers.</span><span class="sxs-lookup"><span data-stu-id="d8516-454">Copy the URL of the request to the clipboard.</span></span> |  
-| **<span data-ttu-id="d8516-455">Copier la réponse</span><span class="sxs-lookup"><span data-stu-id="d8516-455">Copy Response</span></span>** | <span data-ttu-id="d8516-456">Copiez le corps de la réponse dans le presse-papiers.</span><span class="sxs-lookup"><span data-stu-id="d8516-456">Copy the response body to the clipboard.</span></span> |  
-| **<span data-ttu-id="d8516-457">Copier en tant qu’extraction</span><span class="sxs-lookup"><span data-stu-id="d8516-457">Copy as Fetch</span></span>** | &nbsp; |  
-| **<span data-ttu-id="d8516-458">Copier sous forme de courbe</span><span class="sxs-lookup"><span data-stu-id="d8516-458">Copy as cURL</span></span>** | <span data-ttu-id="d8516-459">Copiez la demande en tant que commande en forme de boucle.</span><span class="sxs-lookup"><span data-stu-id="d8516-459">Copy the request as a cURL command.</span></span> |  
-| **<span data-ttu-id="d8516-460">Copy All As Fetch</span><span class="sxs-lookup"><span data-stu-id="d8516-460">Copy All as Fetch</span></span>** | &nbsp; |  
-| **<span data-ttu-id="d8516-461">Tout copier comme courbe</span><span class="sxs-lookup"><span data-stu-id="d8516-461">Copy All as cURL</span></span>** | <span data-ttu-id="d8516-462">Copiez toutes les demandes comme une chaîne de commandes bouclé.</span><span class="sxs-lookup"><span data-stu-id="d8516-462">Copy all requests as a chain of cURL commands.</span></span> |  
-| **<span data-ttu-id="d8516-463">Tout copier comme.</span><span class="sxs-lookup"><span data-stu-id="d8516-463">Copy All as HAR</span></span>** | <span data-ttu-id="d8516-464">Copiez toutes les demandes en tant que données QAR.</span><span class="sxs-lookup"><span data-stu-id="d8516-464">Copy all requests as HAR data.</span></span> |  
+| **<span data-ttu-id="454db-453">Copier l’adresse du lien</span><span class="sxs-lookup"><span data-stu-id="454db-453">Copy Link Address</span></span>** | <span data-ttu-id="454db-454">Copiez l’URL de la demande dans le Presse-papiers.</span><span class="sxs-lookup"><span data-stu-id="454db-454">Copy the URL of the request to the clipboard.</span></span> |  
+| **<span data-ttu-id="454db-455">Copier la réponse</span><span class="sxs-lookup"><span data-stu-id="454db-455">Copy Response</span></span>** | <span data-ttu-id="454db-456">Copiez le corps de la réponse dans le Presse-papiers.</span><span class="sxs-lookup"><span data-stu-id="454db-456">Copy the response body to the clipboard.</span></span> |  
+| **<span data-ttu-id="454db-457">Copier en tant que récupération</span><span class="sxs-lookup"><span data-stu-id="454db-457">Copy as Fetch</span></span>** | &nbsp; |  
+| **<span data-ttu-id="454db-458">Copier en tant que cURL</span><span class="sxs-lookup"><span data-stu-id="454db-458">Copy as cURL</span></span>** | <span data-ttu-id="454db-459">Copiez la demande en tant que commande cURL.</span><span class="sxs-lookup"><span data-stu-id="454db-459">Copy the request as a cURL command.</span></span> |  
+| **<span data-ttu-id="454db-460">Copier tout en tant que récupération</span><span class="sxs-lookup"><span data-stu-id="454db-460">Copy All as Fetch</span></span>** | &nbsp; |  
+| **<span data-ttu-id="454db-461">Copier tout en tant que cURL</span><span class="sxs-lookup"><span data-stu-id="454db-461">Copy All as cURL</span></span>** | <span data-ttu-id="454db-462">Copiez toutes les demandes en tant que chaîne de commandes cURL.</span><span class="sxs-lookup"><span data-stu-id="454db-462">Copy all requests as a chain of cURL commands.</span></span> |  
+| **<span data-ttu-id="454db-463">Copier tout en tant que HAR</span><span class="sxs-lookup"><span data-stu-id="454db-463">Copy All as HAR</span></span>** | <span data-ttu-id="454db-464">Copiez toutes les demandes en tant que données HAR.</span><span class="sxs-lookup"><span data-stu-id="454db-464">Copy all requests as HAR data.</span></span> |  
 
 <!--
 :::row:::
@@ -888,76 +888,76 @@ init();
 :::row-end:::  
 -->  
 
-:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Cliquez sur copier la réponse." lightbox="../media/network-network-requests-copy-response.msft.png":::
-   <span data-ttu-id="d8516-466">Cliquez sur **copier la réponse** .</span><span class="sxs-lookup"><span data-stu-id="d8516-466">Choose **Copy Response**</span></span>  
+:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Choose Copy Response" lightbox="../media/network-network-requests-copy-response.msft.png":::
+   <span data-ttu-id="454db-466">Choose **Copy Response**</span><span class="sxs-lookup"><span data-stu-id="454db-466">Choose **Copy Response**</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-467">Copier la réponse mise en forme JSON dans le presse-papiers</span><span class="sxs-lookup"><span data-stu-id="d8516-467">Copy formatted response JSON to the clipboard</span></span>  
+### <a name="copy-formatted-response-json-to-the-clipboard"></a><span data-ttu-id="454db-467">Copier la réponse mise en forme JSON dans le Presse-papiers</span><span class="sxs-lookup"><span data-stu-id="454db-467">Copy formatted response JSON to the clipboard</span></span>  
 
-<span data-ttu-id="d8516-468">Choisissez une requête réseau et naviguez jusqu’au volet **en-têtes** .</span><span class="sxs-lookup"><span data-stu-id="d8516-468">Choose a network request and navigate to the **Headers** pane.</span></span>  <span data-ttu-id="d8516-469">Pour copier la valeur JSON d’une réponse, accédez à **requête Payload**, pointez sur le contenu de la réponse JSON, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez **copier la valeur**.</span><span class="sxs-lookup"><span data-stu-id="d8516-469">To copy the JSON value of a response, navigate to **Request payload**, hover on the JSON response content, open the contextual menu \(right-click\), and choose **Copy Value**.</span></span>  
+<span data-ttu-id="454db-468">Choisissez une demande réseau et accédez au volet **En-têtes.**</span><span class="sxs-lookup"><span data-stu-id="454db-468">Choose a network request and navigate to the **Headers** pane.</span></span>  <span data-ttu-id="454db-469">Pour copier la valeur JSON d’une réponse, accédez à La charge utile de la **demande,** pointez sur le contenu de la réponse JSON, ouvrez le menu contextuel \(clic droit\), puis choisissez Copier la **valeur**.</span><span class="sxs-lookup"><span data-stu-id="454db-469">To copy the JSON value of a response, navigate to **Request payload**, hover on the JSON response content, open the contextual menu \(right-click\), and choose **Copy Value**.</span></span>  
 
 :::row:::
    :::column span="":::
         :::image type="complex" source="../media/network-header-copy-property-value.msft.png" alt-text="Copier la valeur dans le menu contextuel" lightbox="../media/network-header-copy-property-value.msft.png":::
-          <span data-ttu-id="d8516-471">**Copier la valeur** dans le menu contextuel</span><span class="sxs-lookup"><span data-stu-id="d8516-471">**Copy Value** in contextual menu</span></span>  
+          <span data-ttu-id="454db-471">**Copier la valeur** dans le menu contextuel</span><span class="sxs-lookup"><span data-stu-id="454db-471">**Copy Value** in contextual menu</span></span>  
         :::image-end:::  
    :::column-end:::
    :::column span="":::
-        :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="Code Visual Studio avec JSON de réponse mis en forme" lightbox="../media/network-header-paste-property-value.msft.png":::
-          <span data-ttu-id="d8516-473">Collage de la réponse formatée JSON dans le code Visual Studio</span><span class="sxs-lookup"><span data-stu-id="d8516-473">Pasting formatted response JSON in Visual Studio Code</span></span>  
+        :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="Code microsoft Visual Studio avec réponse mise en forme JSON" lightbox="../media/network-header-paste-property-value.msft.png":::
+          <span data-ttu-id="454db-473">Pasting formatted response JSON in Microsoft Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="454db-473">Pasting formatted response JSON in Microsoft Visual Studio Code</span></span>  
         :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-### <span data-ttu-id="d8516-474">Copier les valeurs de propriétés des requêtes réseau dans le presse-papiers</span><span class="sxs-lookup"><span data-stu-id="d8516-474">Copy property values from network requests to your clipboard</span></span>  
+### <a name="copy-property-values-from-network-requests-to-your-clipboard"></a><span data-ttu-id="454db-474">Copier les valeurs des propriétés des demandes réseau dans votre Presse-papiers</span><span class="sxs-lookup"><span data-stu-id="454db-474">Copy property values from network requests to your clipboard</span></span>  
 
-<span data-ttu-id="d8516-475">Pour copier les valeurs de propriétés des requêtes réseau dans le presse-papiers, effectuez les actions suivantes.</span><span class="sxs-lookup"><span data-stu-id="d8516-475">To copy property values from network requests to your clipboard, complete the following actions.</span></span>  
+<span data-ttu-id="454db-475">Pour copier les valeurs des propriétés des demandes réseau dans votre Presse-papiers, effectuer les actions suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-475">To copy property values from network requests to your clipboard, complete the following actions.</span></span>  
 
-1.  <span data-ttu-id="d8516-476">Ouvrez le volet **en-têtes** .</span><span class="sxs-lookup"><span data-stu-id="d8516-476">Open the **Headers** pane.</span></span>  
-1.  <span data-ttu-id="d8516-477">Ouvrez l’une des sections d’en-tête suivantes.</span><span class="sxs-lookup"><span data-stu-id="d8516-477">Open one of the following header sections.</span></span>  
-    *   <span data-ttu-id="d8516-478">Charge utile de requête \ (JSON \)</span><span class="sxs-lookup"><span data-stu-id="d8516-478">Request payload \(JSON\)</span></span>  
-    *   <span data-ttu-id="d8516-479">Données de formulaire</span><span class="sxs-lookup"><span data-stu-id="d8516-479">Form Data</span></span>  
-    *   <span data-ttu-id="d8516-480">Paramètres de chaîne de requête</span><span class="sxs-lookup"><span data-stu-id="d8516-480">Query String Parameters</span></span>  
-    *   <span data-ttu-id="d8516-481">En-têtes de demande</span><span class="sxs-lookup"><span data-stu-id="d8516-481">Request Headers</span></span>  
-    *   <span data-ttu-id="d8516-482">En-têtes de réponse</span><span class="sxs-lookup"><span data-stu-id="d8516-482">Response Headers</span></span>  
-1.  <span data-ttu-id="d8516-483">Ouvrir le menu contextuel \ (cliquez avec le bouton droit sur \) > **copier la valeur**.</span><span class="sxs-lookup"><span data-stu-id="d8516-483">Open the contextual menu \(right-click\) > **Copy value**.</span></span>  <span data-ttu-id="d8516-484">Vous pouvez à présent coller la valeur dans n’importe quel éditeur pour la vérifier.</span><span class="sxs-lookup"><span data-stu-id="d8516-484">You can now paste the value into any editor to review it.</span></span>  
+1.  <span data-ttu-id="454db-476">Ouvrez **le volet En-têtes.**</span><span class="sxs-lookup"><span data-stu-id="454db-476">Open the **Headers** pane.</span></span>  
+1.  <span data-ttu-id="454db-477">Ouvrez l’une des sections d’en-tête suivantes.</span><span class="sxs-lookup"><span data-stu-id="454db-477">Open one of the following header sections.</span></span>  
+    *   <span data-ttu-id="454db-478">Demander la charge utile \(JSON\)</span><span class="sxs-lookup"><span data-stu-id="454db-478">Request payload \(JSON\)</span></span>  
+    *   <span data-ttu-id="454db-479">Données de formulaire</span><span class="sxs-lookup"><span data-stu-id="454db-479">Form Data</span></span>  
+    *   <span data-ttu-id="454db-480">Paramètres de chaîne de requête</span><span class="sxs-lookup"><span data-stu-id="454db-480">Query String Parameters</span></span>  
+    *   <span data-ttu-id="454db-481">En-têtes de requête</span><span class="sxs-lookup"><span data-stu-id="454db-481">Request Headers</span></span>  
+    *   <span data-ttu-id="454db-482">En-têtes de réponse</span><span class="sxs-lookup"><span data-stu-id="454db-482">Response Headers</span></span>  
+1.  <span data-ttu-id="454db-483">Ouvrez le menu contextuel \(clic droit\) > **valeur copier.**</span><span class="sxs-lookup"><span data-stu-id="454db-483">Open the contextual menu \(right-click\) > **Copy value**.</span></span>  <span data-ttu-id="454db-484">Vous pouvez maintenant coller la valeur dans n’importe quel éditeur pour la réviser.</span><span class="sxs-lookup"><span data-stu-id="454db-484">You may now paste the value into any editor to review it.</span></span>  
     
-## <span data-ttu-id="d8516-485">Modifier la disposition du panneau réseau</span><span class="sxs-lookup"><span data-stu-id="d8516-485">Change the layout of the Network panel</span></span>  
+## <a name="change-the-layout-of-the-network-panel"></a><span data-ttu-id="454db-485">Modifier la disposition du panneau Réseau</span><span class="sxs-lookup"><span data-stu-id="454db-485">Change the layout of the Network panel</span></span>  
 
-<span data-ttu-id="d8516-486">Vous pouvez développer ou réduire des sections de l’interface utilisateur du panneau **réseau** pour cibler les informations importantes.</span><span class="sxs-lookup"><span data-stu-id="d8516-486">You may expand or collapse sections of the **Network** panel UI to focus important information.</span></span>  
+<span data-ttu-id="454db-486">Vous pouvez développer ou réduire \*\*\*\* des sections de l’interface utilisateur de l’outil réseau pour concentrer des informations importantes.</span><span class="sxs-lookup"><span data-stu-id="454db-486">You may expand or collapse sections of the **Network** tool UI to focus important information.</span></span>  
 
-### <span data-ttu-id="d8516-487">Masquer le volet filtres</span><span class="sxs-lookup"><span data-stu-id="d8516-487">Hide the Filters pane</span></span>  
+### <a name="hide-the-filters-pane"></a><span data-ttu-id="454db-487">Masquer le volet Filtres</span><span class="sxs-lookup"><span data-stu-id="454db-487">Hide the Filters pane</span></span>  
 
-<span data-ttu-id="d8516-488">Par défaut, DevTools affiche le volet **filtres** .</span><span class="sxs-lookup"><span data-stu-id="d8516-488">By default, DevTools show the **Filters** pane.</span></span>  
-<span data-ttu-id="d8516-489">Choisissez **filtre** \ ( ![ filtre ][ImageFilterIcon] \) pour le masquer.</span><span class="sxs-lookup"><span data-stu-id="d8516-489">Choose **Filter** \(![Filter][ImageFilterIcon]\) to hide it.</span></span>  
+<span data-ttu-id="454db-488">Par défaut, DevTools affiche le volet **Filtres.**</span><span class="sxs-lookup"><span data-stu-id="454db-488">By default, DevTools show the **Filters** pane.</span></span>  
+<span data-ttu-id="454db-489">Choisissez **Filtre** \( ![ Filtre ][ImageFilterIcon] \) pour le masquer.</span><span class="sxs-lookup"><span data-stu-id="454db-489">Choose **Filter** \(![Filter][ImageFilterIcon]\) to hide it.</span></span>  
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Bouton Masquer les filtres" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
-   <span data-ttu-id="d8516-491">Bouton Masquer les filtres</span><span class="sxs-lookup"><span data-stu-id="d8516-491">The Hide Filters button</span></span>  
+   <span data-ttu-id="454db-491">Bouton Masquer les filtres</span><span class="sxs-lookup"><span data-stu-id="454db-491">The Hide Filters button</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-492">Utiliser des lignes de requête volumineuses</span><span class="sxs-lookup"><span data-stu-id="d8516-492">Use large request rows</span></span>  
+### <a name="use-large-request-rows"></a><span data-ttu-id="454db-492">Utiliser des lignes de requête de grande taille</span><span class="sxs-lookup"><span data-stu-id="454db-492">Use large request rows</span></span>  
 
-<span data-ttu-id="d8516-493">Utilisez des lignes de grande taille si vous voulez plus d’espace dans votre tableau de requêtes réseau.</span><span class="sxs-lookup"><span data-stu-id="d8516-493">Use large rows when you want more whitespace in your network requests table.</span></span>  <span data-ttu-id="d8516-494">Certaines colonnes fournissent également quelques informations supplémentaires sur l’utilisation de lignes de grande taille.</span><span class="sxs-lookup"><span data-stu-id="d8516-494">Some columns also provide a little more information when using large rows.</span></span>  <span data-ttu-id="d8516-495">Par exemple, la valeur la plus en bas de la colonne **taille** correspond à la taille de requête non compressée.</span><span class="sxs-lookup"><span data-stu-id="d8516-495">For example, the bottom value of the **Size** column is the uncompressed size of a request.</span></span>  
+<span data-ttu-id="454db-493">Utilisez des lignes de grande taille lorsque vous souhaitez davantage d’espaces dans votre table de demandes réseau.</span><span class="sxs-lookup"><span data-stu-id="454db-493">Use large rows when you want more whitespace in your network requests table.</span></span>  <span data-ttu-id="454db-494">Certaines colonnes fournissent également un peu plus d’informations lors de l’utilisation de lignes de grande taille.</span><span class="sxs-lookup"><span data-stu-id="454db-494">Some columns also provide a little more information when using large rows.</span></span>  <span data-ttu-id="454db-495">Par exemple, la valeur inférieure de la colonne **Size** est la taille non compressée d’une demande.</span><span class="sxs-lookup"><span data-stu-id="454db-495">For example, the bottom value of the **Size** column is the uncompressed size of a request.</span></span>  
 
-:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Exemple de longues lignes de requête dans le volet requêtes" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
-   <span data-ttu-id="d8516-497">Exemple de longues lignes de requête dans le volet **requêtes**</span><span class="sxs-lookup"><span data-stu-id="d8516-497">An example of large request rows in the **Requests** pane</span></span>  
+:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Exemple de lignes de requête importantes dans le volet Demandes" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
+   <span data-ttu-id="454db-497">Exemple de lignes de requête importantes dans le **volet Demandes**</span><span class="sxs-lookup"><span data-stu-id="454db-497">An example of large request rows in the **Requests** pane</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="d8516-498">Pour activer les lignes de grande taille, activez la case à cocher **utiliser des lignes de requête volumineuses** .</span><span class="sxs-lookup"><span data-stu-id="d8516-498">To enable large rows, turn on the **Use large request rows** checkbox.</span></span>  
+<span data-ttu-id="454db-498">Pour activer les lignes de grande taille, activez la case à cocher Utiliser les **lignes de requête de** grande taille.</span><span class="sxs-lookup"><span data-stu-id="454db-498">To enable large rows, turn on the **Use large request rows** checkbox.</span></span>  
 
-:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Case à cocher utiliser de grandes lignes de requête" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
-   <span data-ttu-id="d8516-500">Case à cocher **utiliser de grandes lignes de requête**</span><span class="sxs-lookup"><span data-stu-id="d8516-500">The **Use large request rows** checkbox</span></span>  
+:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Case à cocher Utiliser les lignes de requête de grande taille" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
+   <span data-ttu-id="454db-500">Case **à cocher Utiliser les lignes de requête de grande** taille</span><span class="sxs-lookup"><span data-stu-id="454db-500">The **Use large request rows** checkbox</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d8516-501">Masquer le volet vue d’ensemble</span><span class="sxs-lookup"><span data-stu-id="d8516-501">Hide the Overview pane</span></span>  
+### <a name="hide-the-overview-pane"></a><span data-ttu-id="454db-501">Masquer le volet Vue d’ensemble</span><span class="sxs-lookup"><span data-stu-id="454db-501">Hide the Overview pane</span></span>  
 
-<span data-ttu-id="d8516-502">Par défaut, DevTools affiche le volet **vue d’ensemble** .</span><span class="sxs-lookup"><span data-stu-id="d8516-502">By default, DevTools displays the **Overview** pane.</span></span>  <span data-ttu-id="d8516-503">Pour le masquer, désactivez la case à cocher **afficher la vue d’ensemble** .</span><span class="sxs-lookup"><span data-stu-id="d8516-503">To hide it, turn off the **Show Overview** checkbox.</span></span>  
+<span data-ttu-id="454db-502">Par défaut, DevTools \*\*\*\* affiche le volet Vue d’ensemble.</span><span class="sxs-lookup"><span data-stu-id="454db-502">By default, DevTools displays the **Overview** pane.</span></span>  <span data-ttu-id="454db-503">Pour le masquer, cochez la case **Afficher la** vue d’ensemble.</span><span class="sxs-lookup"><span data-stu-id="454db-503">To hide it, turn off the **Show Overview** checkbox.</span></span>  
 
 :::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="Case à cocher Afficher la vue d’ensemble" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
-   <span data-ttu-id="d8516-505">Case à cocher **afficher la vue d’ensemble**</span><span class="sxs-lookup"><span data-stu-id="d8516-505">The **Show Overview** checkbox</span></span>  
+   <span data-ttu-id="454db-505">Case **à cocher Afficher la vue d’ensemble**</span><span class="sxs-lookup"><span data-stu-id="454db-505">The **Show Overview** checkbox</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="d8516-506">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="d8516-506">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="454db-506">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="454db-506">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -972,20 +972,20 @@ init();
 
 <!-- links -->  
 
-[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Déboguer des applications Web progressives | Documents Microsoft"  
+[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Déboguer les applications web progressives | Documents Microsoft"  
 
 <!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->  
 
-[MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "URL de données | MDN"  
+[MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Url de données | MDN"  
 
-[WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Serveur proxy-Wikipédia"  
+[WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Serveur proxy - Wikipedia"  
 
 > [!NOTE]
-> <span data-ttu-id="d8516-510">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="d8516-510">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="d8516-511">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="d8516-511">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="454db-510">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="454db-510">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="454db-511">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="454db-511">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="d8516-513">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="d8516-513">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="454db-513">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="454db-513">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

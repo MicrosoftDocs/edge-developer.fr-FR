@@ -1,18 +1,18 @@
 ---
-description: Utilisez le volet sécurité pour vous assurer qu’une page est entièrement protégée par HTTPs.
-title: Présentation des problèmes de sécurité avec Microsoft Edge DevTools
+description: Utilisez le Panneau de sécurité pour vous assurer qu’une page est entièrement protégée par HTTPS.
+title: Comprendre les problèmes de sécurité avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 5bef22eae8deacc81e31cf6d1c7791e016541346
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 71138ad33afb9eb56055fa522eb35edb71974c89
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230613"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397775"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,7 +28,7 @@ ms.locfileid: "11230613"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <span data-ttu-id="d33d1-104">Présentation des problèmes de sécurité avec Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="d33d1-104">Understand security issues with Microsoft Edge DevTools</span></span>  
+# <a name="understand-security-issues-with-microsoft-edge-devtools"></a><span data-ttu-id="92418-104">Comprendre les problèmes de sécurité avec Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="92418-104">Understand security issues with Microsoft Edge DevTools</span></span>  
 
   
 
@@ -36,90 +36,90 @@ ms.locfileid: "11230613"
 
 <!--todo: add section when why-https is available -->  
 
-## <span data-ttu-id="d33d1-105">Ouvrir le volet sécurité</span><span class="sxs-lookup"><span data-stu-id="d33d1-105">Open the Security panel</span></span>  
+## <a name="open-the-security-panel"></a><span data-ttu-id="92418-105">Ouvrir le panneau de sécurité</span><span class="sxs-lookup"><span data-stu-id="92418-105">Open the Security panel</span></span>  
 
-<span data-ttu-id="d33d1-106">Le volet **sécurité** est l’endroit principal de devtools pour vérifier la sécurité d’une page.</span><span class="sxs-lookup"><span data-stu-id="d33d1-106">The **Security** panel is the main place in DevTools for inspecting the security of a page.</span></span>  
+<span data-ttu-id="92418-106">Le **panneau** de sécurité est l’endroit principal dans DevTools pour l’inspection de la sécurité d’une page.</span><span class="sxs-lookup"><span data-stu-id="92418-106">The **Security** panel is the main place in DevTools for inspecting the security of a page.</span></span>  
 
-1.  <span data-ttu-id="d33d1-107">[Ouvrez devtools][DevToolsOpen].</span><span class="sxs-lookup"><span data-stu-id="d33d1-107">[Open DevTools][DevToolsOpen].</span></span>  
-1.  <span data-ttu-id="d33d1-108">Sélectionnez l’onglet **sécurité** pour ouvrir le volet **sécurité** .</span><span class="sxs-lookup"><span data-stu-id="d33d1-108">Choose the **Security** tab to open the **Security** panel.</span></span>  
+1.  <span data-ttu-id="92418-107">[Ouvrez DevTools][DevToolsOpen].</span><span class="sxs-lookup"><span data-stu-id="92418-107">[Open DevTools][DevToolsOpen].</span></span>  
+1.  <span data-ttu-id="92418-108">Sélectionnez **l’onglet** Sécurité pour ouvrir **l’outil** Sécurité.</span><span class="sxs-lookup"><span data-stu-id="92418-108">Choose the **Security** tab to open the **Security** tool.</span></span>  
     
-    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="Volet sécurité" lightbox="../media/security-security-overview-secure.msft.png":::
-       <span data-ttu-id="d33d1-110">Volet **sécurité**</span><span class="sxs-lookup"><span data-stu-id="d33d1-110">The **Security** panel</span></span>  
+    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="Panneau de sécurité" lightbox="../media/security-security-overview-secure.msft.png":::
+       <span data-ttu-id="92418-110">Panneau **de** sécurité</span><span class="sxs-lookup"><span data-stu-id="92418-110">The **Security** panel</span></span>  
     :::image-end:::  
     
-## <span data-ttu-id="d33d1-111">Problèmes courants</span><span class="sxs-lookup"><span data-stu-id="d33d1-111">Common problems</span></span>  
+## <a name="common-problems"></a><span data-ttu-id="92418-111">Problèmes courants</span><span class="sxs-lookup"><span data-stu-id="92418-111">Common problems</span></span>  
 
-### <span data-ttu-id="d33d1-112">Origines principales non sécurisées</span><span class="sxs-lookup"><span data-stu-id="d33d1-112">Non-secure main origins</span></span>  
+### <a name="non-secure-main-origins"></a><span data-ttu-id="92418-112">Origines principales non sécurisées</span><span class="sxs-lookup"><span data-stu-id="92418-112">Non-secure main origins</span></span>  
 
-<span data-ttu-id="d33d1-113">Lorsque l’origine principale d’une page n’est pas sécurisée, la **vue d’ensemble** de la sécurité indique que **cette page n’est pas sécurisée**.</span><span class="sxs-lookup"><span data-stu-id="d33d1-113">When the main origin of a page is not secure, the **Security Overview** says **This page is not secure**.</span></span>  
+<span data-ttu-id="92418-113">Lorsque l’origine principale d’une page n’est pas sécurisée, la vue **d’ensemble** de la sécurité indique **que cette page n’est pas sécurisée.**</span><span class="sxs-lookup"><span data-stu-id="92418-113">When the main origin of a page is not secure, the **Security Overview** says **This page is not secure**.</span></span>  
 
 :::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="Page non sécurisée" lightbox="../media/security-security-overview-non-secure.msft.png":::
-   <span data-ttu-id="d33d1-115">Page non sécurisée</span><span class="sxs-lookup"><span data-stu-id="d33d1-115">A non-secure page</span></span>  
+   <span data-ttu-id="92418-115">Page non sécurisée</span><span class="sxs-lookup"><span data-stu-id="92418-115">A non-secure page</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="d33d1-116">Ce problème survient lorsque l’URL visitée a été demandée sur HTTP.</span><span class="sxs-lookup"><span data-stu-id="d33d1-116">This problem occurs when the URL that you visited was requested over HTTP.</span></span>  <span data-ttu-id="d33d1-117">Pour garantir la sécurité de votre application, vous devez la demander sur HTTPs.</span><span class="sxs-lookup"><span data-stu-id="d33d1-117">To make it secure you need to request it over HTTPS.</span></span>  <span data-ttu-id="d33d1-118">Par exemple, si vous observez l’URL dans la barre d’adresses, il est probable que le résultat ressemble à ceci `http://example.com` .</span><span class="sxs-lookup"><span data-stu-id="d33d1-118">For example, if you look at the URL in your address bar, it probably looks similar to `http://example.com`.</span></span>  <span data-ttu-id="d33d1-119">Pour sécuriser l’URL, l’URL devrait être `https://example.com` .</span><span class="sxs-lookup"><span data-stu-id="d33d1-119">To make it secure the URL should be `https://example.com`.</span></span>  
+<span data-ttu-id="92418-116">Ce problème se produit lorsque l’URL que vous avez visitée a été demandée sur HTTP.</span><span class="sxs-lookup"><span data-stu-id="92418-116">This problem occurs when the URL that you visited was requested over HTTP.</span></span>  <span data-ttu-id="92418-117">Pour le sécuriser, vous devez le demander sur HTTPS.</span><span class="sxs-lookup"><span data-stu-id="92418-117">To make it secure you need to request it over HTTPS.</span></span>  <span data-ttu-id="92418-118">Par exemple, si vous examinez l’URL dans votre barre d’adresses, elle ressemble probablement à `http://example.com` .</span><span class="sxs-lookup"><span data-stu-id="92418-118">For example, if you look at the URL in your address bar, it probably looks similar to `http://example.com`.</span></span>  <span data-ttu-id="92418-119">Pour sécuriser l’URL doit être `https://example.com` .</span><span class="sxs-lookup"><span data-stu-id="92418-119">To make it secure the URL should be `https://example.com`.</span></span>  
 
-<span data-ttu-id="d33d1-120">Si vous avez déjà configuré HTTPs sur votre serveur, il vous suffit de configurer votre serveur pour rediriger toutes les demandes HTTP vers HTTPs.</span><span class="sxs-lookup"><span data-stu-id="d33d1-120">If you already set up HTTPS on your server, all you need to do to fix this problem is configure your server to redirect all HTTP requests to HTTPS.</span></span>  
+<span data-ttu-id="92418-120">Si vous avez déjà configuré HTTPS sur votre serveur, il vous suffit de configurer votre serveur pour qu’il redirige toutes les requêtes HTTP vers HTTPS.</span><span class="sxs-lookup"><span data-stu-id="92418-120">If you already set up HTTPS on your server, all you need to do to fix this problem is configure your server to redirect all HTTP requests to HTTPS.</span></span>  
 
-<span data-ttu-id="d33d1-121">Si vous n’avez pas configuré HTTPs sur votre serveur, [cryptez][LetsEncrypt] -vous pour démarrer le processus de manière gratuite et relativement simple.</span><span class="sxs-lookup"><span data-stu-id="d33d1-121">If you have not set up HTTPS on your server, [Let's Encrypt][LetsEncrypt] provides a free and relatively-easy way to start the process.</span></span>  <span data-ttu-id="d33d1-122">Vous pouvez également envisagez d’héberger votre site sur un réseau de distribution de contenu (CDN).</span><span class="sxs-lookup"><span data-stu-id="d33d1-122">Or, you might consider hosting your site on a CDN.</span></span>  <span data-ttu-id="d33d1-123">La plupart des sites hôtes CDN les plus importants sur HTTPs par défaut.</span><span class="sxs-lookup"><span data-stu-id="d33d1-123">Most major CDNs host sites on HTTPS by default now.</span></span>  
+<span data-ttu-id="92418-121">Si vous [n’avez][LetsEncrypt] pas installé HTTPS sur votre serveur, chiffrer offre un moyen gratuit et relativement simple de démarrer le processus.</span><span class="sxs-lookup"><span data-stu-id="92418-121">If you have not set up HTTPS on your server, [Let's Encrypt][LetsEncrypt] provides a free and relatively-easy way to start the process.</span></span>  <span data-ttu-id="92418-122">Vous pouvez également envisager d’héberger votre site sur un CDN.</span><span class="sxs-lookup"><span data-stu-id="92418-122">Or, you may consider hosting your site on a CDN.</span></span>  <span data-ttu-id="92418-123">La plupart des PRINCIPAUX CDN hébergent des sites sur HTTPS par défaut maintenant.</span><span class="sxs-lookup"><span data-stu-id="92418-123">Most major CDNs host sites on HTTPS by default now.</span></span>  
 
 > [!TIP]
-> <span data-ttu-id="d33d1-124">La directive [utiliser HTTPS][WebhintUseHttps] dans [webhint][Webhint] permet d’automatiser le processus de vérification de l’utilisation de toutes les demandes HTTP adressées aux HTTPS.</span><span class="sxs-lookup"><span data-stu-id="d33d1-124">The [Use HTTPS][WebhintUseHttps] hint in [webhint][Webhint] may help automate the process of making sure that all HTTP requests are directed to HTTPS.</span></span>  
+> <span data-ttu-id="92418-124">[L’indication Utiliser HTTPS][WebhintUseHttps] dans [webhint][Webhint] peut vous aider à automatiser le processus de s’assurer que toutes les requêtes HTTP sont dirigées vers HTTPS.</span><span class="sxs-lookup"><span data-stu-id="92418-124">The [Use HTTPS][WebhintUseHttps] hint in [webhint][Webhint] may help automate the process of making sure that all HTTP requests are directed to HTTPS.</span></span>  
 
-### <span data-ttu-id="d33d1-125">Contenu mixte</span><span class="sxs-lookup"><span data-stu-id="d33d1-125">Mixed content</span></span>  
+### <a name="mixed-content"></a><span data-ttu-id="92418-125">Contenu mixte</span><span class="sxs-lookup"><span data-stu-id="92418-125">Mixed content</span></span>  
 
-<span data-ttu-id="d33d1-126">Le **contenu mixte** signifie que l’origine principale d’une page est sécurisée, mais que la page a demandé des ressources d’origines non sécurisées.</span><span class="sxs-lookup"><span data-stu-id="d33d1-126">**Mixed content** means that the main origin of a page is secure, but the page requested resources from non-secure origins.</span></span>  <span data-ttu-id="d33d1-127">Les pages de contenu mixte ne sont que partiellement protégées, car le contenu HTTP est accessible aux renifleurs et est vulnérable aux attaques par le biais du milieu.</span><span class="sxs-lookup"><span data-stu-id="d33d1-127">Mixed content pages are only partially protected because the HTTP content is accessible to sniffers and vulnerable to man-in-the-middle attacks.</span></span>  
+<span data-ttu-id="92418-126">**Le contenu mixte** signifie que l’origine principale d’une page est sécurisée, mais que la page a demandé des ressources à partir d’origines non sécurisées.</span><span class="sxs-lookup"><span data-stu-id="92418-126">**Mixed content** means that the main origin of a page is secure, but the page requested resources from non-secure origins.</span></span>  <span data-ttu-id="92418-127">Les pages de contenu mixte ne sont que partiellement protégées, car le contenu HTTP est accessible aux renifleurs et vulnérable aux attaques de l’homme au milieu.</span><span class="sxs-lookup"><span data-stu-id="92418-127">Mixed content pages are only partially protected because the HTTP content is accessible to sniffers and vulnerable to man-in-the-middle attacks.</span></span>  
 
 :::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Contenu mixte" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
-   <span data-ttu-id="d33d1-129">Contenu mixte</span><span class="sxs-lookup"><span data-stu-id="d33d1-129">Mixed content</span></span>  
+   <span data-ttu-id="92418-129">Contenu mixte</span><span class="sxs-lookup"><span data-stu-id="92418-129">Mixed content</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="d33d1-130">Dans la figure précédente, sélectionnez **afficher une requête dans le panneau réseau** pour ouvrir le panneau **réseau** et appliquer le `mixed-content:displayed` filtre de sorte que le **Journal réseau** n’affiche que les ressources non sécurisées.</span><span class="sxs-lookup"><span data-stu-id="d33d1-130">In the previous figure, choose **View 1 request in Network panel** to open the **Network** panel and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.</span></span>  
+<span data-ttu-id="92418-130">Dans la figure précédente, choisissez Afficher **1** \*\*\*\* dans le panneau Réseau pour ouvrir l’outil Réseau et appliquer le filtre afin que le journal réseau affiche uniquement les ressources `mixed-content:displayed` non \*\*\*\* sécurisées.</span><span class="sxs-lookup"><span data-stu-id="92418-130">In the previous figure, choose **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.</span></span>  
 
-:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Ressources mixtes du journal réseau" lightbox="../media/security-network-filter.msft.png":::
-   <span data-ttu-id="d33d1-132">Ressources mixtes du **Journal réseau**</span><span class="sxs-lookup"><span data-stu-id="d33d1-132">Mixed resources in the **Network Log**</span></span>  
+:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Ressources mixtes dans le journal réseau" lightbox="../media/security-network-filter.msft.png":::
+   <span data-ttu-id="92418-132">Ressources mixtes dans le **journal réseau**</span><span class="sxs-lookup"><span data-stu-id="92418-132">Mixed resources in the **Network Log**</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="d33d1-133">Afficher les détails</span><span class="sxs-lookup"><span data-stu-id="d33d1-133">View details</span></span>  
+## <a name="view-details"></a><span data-ttu-id="92418-133">Afficher les détails</span><span class="sxs-lookup"><span data-stu-id="92418-133">View details</span></span>  
 
-### <span data-ttu-id="d33d1-134">Afficher le certificat d’origine principal</span><span class="sxs-lookup"><span data-stu-id="d33d1-134">View main origin certificate</span></span>  
+### <a name="view-main-origin-certificate"></a><span data-ttu-id="92418-134">Afficher le certificat d’origine principale</span><span class="sxs-lookup"><span data-stu-id="92418-134">View main origin certificate</span></span>  
 
-<span data-ttu-id="d33d1-135">Dans la **vue d’ensemble**de la sécurité, sélectionnez **afficher le certificat** pour inspecter rapidement le certificat de l’origine principale.</span><span class="sxs-lookup"><span data-stu-id="d33d1-135">From the **Security Overview**, choose **View certificate** to quickly inspect the certificate for the main origin.</span></span>  
+<span data-ttu-id="92418-135">Dans la **vue d’ensemble de**la sécurité, choisissez **Afficher le certificat** pour inspecter rapidement le certificat pour l’origine principale.</span><span class="sxs-lookup"><span data-stu-id="92418-135">From the **Security Overview**, choose **View certificate** to quickly inspect the certificate for the main origin.</span></span>  
 
-:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="Un certificat d’origine principal;" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
-   <span data-ttu-id="d33d1-137">Un certificat d’origine principal;</span><span class="sxs-lookup"><span data-stu-id="d33d1-137">A main origin certificate</span></span>  
+:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="Un certificat d’origine principale" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
+   <span data-ttu-id="92418-137">Un certificat d’origine principale</span><span class="sxs-lookup"><span data-stu-id="92418-137">A main origin certificate</span></span>  
 :::image-end:::  
 
-### <span data-ttu-id="d33d1-138">Afficher les détails de l’origine</span><span class="sxs-lookup"><span data-stu-id="d33d1-138">View origin details</span></span>  
+### <a name="view-origin-details"></a><span data-ttu-id="92418-138">Afficher les détails de l’origine</span><span class="sxs-lookup"><span data-stu-id="92418-138">View origin details</span></span>  
 
-<span data-ttu-id="d33d1-139">Pour afficher les détails de l’origine, sélectionnez l’une des entrées dans le volet de navigation de gauche.</span><span class="sxs-lookup"><span data-stu-id="d33d1-139">Choose one of the entries in the left-hand nav to view the details of the origin.</span></span>  <span data-ttu-id="d33d1-140">Dans la page détails, vous pouvez consulter les informations de connexion et de certificat.</span><span class="sxs-lookup"><span data-stu-id="d33d1-140">From the details page you are able to view connection and certificate information.</span></span>  <span data-ttu-id="d33d1-141">Les informations de transparence du certificat apparaissent également lorsqu’elles sont disponibles.</span><span class="sxs-lookup"><span data-stu-id="d33d1-141">Certificate transparency information is also shown when available.</span></span>  
+<span data-ttu-id="92418-139">Choisissez l’une des entrées du navigation gauche pour afficher les détails de l’origine.</span><span class="sxs-lookup"><span data-stu-id="92418-139">Choose one of the entries in the left-hand nav to view the details of the origin.</span></span>  <span data-ttu-id="92418-140">À partir de la page de détails, vous pouvez afficher les informations de connexion et de certificat.</span><span class="sxs-lookup"><span data-stu-id="92418-140">From the details page you are able to view connection and certificate information.</span></span>  <span data-ttu-id="92418-141">Les informations de transparence des certificats sont également affichées lorsqu’elles sont disponibles.</span><span class="sxs-lookup"><span data-stu-id="92418-141">Certificate transparency information is also shown when available.</span></span>  
 
 :::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Détails de l’origine principale" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
-   <span data-ttu-id="d33d1-143">Détails de l’origine principale</span><span class="sxs-lookup"><span data-stu-id="d33d1-143">Main origin details</span></span>  
+   <span data-ttu-id="92418-143">Détails de l’origine principale</span><span class="sxs-lookup"><span data-stu-id="92418-143">Main origin details</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="d33d1-144">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="d33d1-144">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="92418-144">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="92418-144">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
 [DevToolsOpen]: ../open/index.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
 
-[LetsEncrypt]: https://letsencrypt.org "Utiliser des certificats SSL/TLS sans cryptage"  
+[LetsEncrypt]: https://letsencrypt.org "Chiffrement - Certificats SSL/TLS gratuits"  
 
 [Webhint]: https://webhint.io "webhint"  
-[WebhintUseHttps]: https://webhint.io/docs/user-guide/hints/hint-https-only "Utiliser HTTPs | documentation webhint"  
+[WebhintUseHttps]: https://webhint.io/docs/user-guide/hints/hint-https-only "Utiliser le protocole HTTPS | documentation webhint"  
 
 <!--[mixed]: /web/fundamentals/security/prevent-mixed-content/what-is-mixed-content ""  -->
 
 > [!NOTE]
-> <span data-ttu-id="d33d1-150">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="d33d1-150">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="d33d1-151">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/security/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="d33d1-151">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/security/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="92418-150">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="92418-150">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="92418-151">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/security/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="92418-151">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/security/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="d33d1-153">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="d33d1-153">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="92418-153">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="92418-153">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
