@@ -1,322 +1,164 @@
 ---
-description: Référence du 0,2 Protocole DevTools (EdgeHTML) pour le domaine de la page. Les actions et événements liés à la page inspectée appartiennent au domaine de la page.
-title: Page Domain-DevTools Protocol version 0,2 (EdgeHTML)
+description: Référence du protocole DevTools Version 0.2 (EdgeHTML) pour le domaine de page. Les actions et événements liés à la page inspectée appartiennent au domaine de page.
+title: Domaine de page - DevTools Protocol Version 0.2 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 2f1849a2e2aa2f53cef9dff5d03ac991d368a6f3
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: d969dd100164ace61445a4618174cfa943dcfd2b
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11232859"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398846"
 ---
-# Page Domain-DevTools Protocol version 0,2 (EdgeHTML)  
+# <a name="page-domain---devtools-protocol-version-02-edgehtml"></a>Domaine de page - DevTools Protocol Version 0.2 (EdgeHTML)  
 
-Les actions et événements liés à la page inspectée appartiennent au domaine de la page.
+Les actions et événements liés à la page inspectée appartiennent au domaine de page.  
 
-| | |
-|-|-|
-| [**Méthodes**](#methods) | [activer](#enable), [Désactiver](#disable), [naviguer](#navigate), [getFrameTree](#getframetree) |
-| [**Événements**](#events) | [frameAttached](#frameattached), [frameDetached](#framedetached), [frameNavigated](#framenavigated), [loadEventFired](#loadeventfired), [domContentEventFired](#domcontenteventfired) |
-| [**Types**](#types) | [FrameId](#frameid), [Frame](#frame), [FrameTree](#frametree) |
-## Méthodes
+| Classification | Membres |  
+|:--- |:--- |  
+| [Méthodes](#methods) | [activer,](#enable) [désactiver,](#disable) [naviguer,](#navigate) [getFrameTree](#getframetree) |  
+| [Événements](#events) | [frameAttached](#frameattached), [frameDetached](#framedetached), [frameNavigated](#framenavigated), [loadEventFired](#loadeventfired), [domContentEventFired](#domcontenteventfired) |  
+| [Types](#types) | [FrameId](#frameid), [Frame](#frame), [FrameTree](#frametree) |  
 
-### activer
-Active les notifications de domaine de page.
+## <a name="methods"></a>Méthodes  
 
-</p>
+### <a name="enable"></a>activer  
 
----
+Active les notifications de domaine de page.  
 
-### désactiver 
-Désactive les notifications de domaine de la page.
+&nbsp;  
 
-</p>
+---  
 
----
+### <a name="disable"></a>désactiver   
 
-### naviguer
-Accède à la page active à l’URL donnée.
+Désactive les notifications de domaine de page.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>URL permettant d’accéder à la page.</td>
-        </tr>
-        <tr>
-            <td>frameId <br/> <i>facultatif</i></td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>ID de cadre pour naviguer. Si ce n’est pas le cas, accède à la page du haut.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Renvoie</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>ID de cadre qui sera parcouru.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+&nbsp;  
 
----
+---  
 
-### getFrameTree
-Renvoie une structure d’arborescence de trames.
+### <a name="navigate"></a>naviguer  
 
-<table>
-    <thead>
-        <tr>
-            <th>Renvoie</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameTree</td>
-            <td><a href="#frametree"><code class="flyout">FrameTree</code></a></td>
-            <td>Présenter une structure d’arborescence d’images</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+Navigue vers la page actuelle jusqu’à l’URL donnée.  
 
----
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| url | `string` | URL vers qui accéder à la page. |  
+| frameId \(facultatif\) | [FrameId](#frameid) | ID d’image à parcourir.  S’il n’est pas spécifié, navigue vers la page supérieure. |  
 
-## Événements
+| Renvoie | Type | Détails |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | ID d’image à parcourir. |  
 
-### frameAttached
-Déclenché lorsque le frame a été attaché à son parent.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>ID de l’image jointe.</td>
-        </tr>
-        <tr>
-            <td>parentFrameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Identificateur d’image parent.</td>
-        </tr>
-        <tr>
-            <td>graphique <br/> <i>facultatif</i></td>
-            <td><a href="runtime.md#stacktrace"><code class="flyout">Runtime.StackTrace</code></a></td>
-            <td>Trace de pile JavaScript du moment où l’image a été attachée, ne définir que le frame lancé à partir d’un script.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="getframetree"></a>getFrameTree  
 
----
+Renvoie la structure de l’arborescence d’images présente.  
 
-### frameDetached
-Déclenché lorsque le frame a été détaché du parent.
+| Renvoie | Type | Détails |  
+|:--- |:--- |:--- |  
+| frameTree | [FrameTree](#frametree) | Structure d’arborescence de cadres présente. |  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>ID de l’image qui a été dissociée.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+---  
 
----
+## <a name="events"></a>Événements  
 
-### frameNavigated
-Déclenché une fois que la navigation de l’image est terminée.
+### <a name="frameattached"></a>frameAttached  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>séquence</td>
-            <td><a href="#frame"><code class="flyout">Frame</code></a></td>
-            <td>Objet Frame.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+Déclenché lorsque l’image a été attachée à son parent.  
 
----
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | ID du cadre attaché. |  
+| parentFrameId | [FrameId](#frameid) | Identificateur d’image parent. |  
+| stack \(optional\) | [Runtime.StackTrace](./runtime.md#stacktrace) | Suivi de la pile JavaScript du moment où l’image a été attachée, uniquement définie si l’image a été initiée à partir d’un script. |  
 
-### loadEventFired
-Correspond à l’événement Window. OnLoad.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>telle</td>
-            <td><code class="flyout">number</code></td>
-            <td>Nombre de millisecondes depuis l’époque.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="framedetached"></a>frameDetached  
 
----
+Déclenché lorsque l’image a été détachée de son parent.  
 
-### domContentEventFired
-Correspond à l’événement document. onDOMContentLoaded.
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | ID du cadre qui a été détaché. |  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>telle</td>
-            <td><code class="flyout">number</code></td>
-            <td>Nombre de millisecondes depuis l’époque.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+---  
 
----
+### <a name="framenavigated"></a>frameNavigated  
 
-## Types
+Déclenché une fois la navigation de l’image terminée.  
 
-### <a name="frameid"></a> FrameId `string`
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| frame | [Trame](#frame) | Objet Frame. |  
 
-Identificateur de cadre unique.
+---  
 
-</p>
+### <a name="loadeventfired"></a>loadEventFired  
 
----
+Correspond à `window.onload` l’événement.  
 
-### <a name="frame"></a> Trame `object`
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| timestamp | `number` | Nombre de millisecondes depuis l’époque. |  
 
-Des informations sur le cadre de la page.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Propriétés</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>id</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Cadre identificateur unique.</td>
-        </tr>
-        <tr>
-            <td>Parent <br/> <i>facultatif</i></td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Identificateur unique du cadre parent.</td>
-        </tr>
-        <tr>
-            <td>name <br/> <i>facultatif</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Nom de l’image, tel que spécifié dans la balise.</td>
-        </tr>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>URL du document Frame.</td>
-        </tr>
-        <tr>
-            <td>securityOrigin</td>
-            <td><code class="flyout">string</code></td>
-            <td>Origine de la sécurité du document Frame.</td>
-        </tr>
-        <tr>
-            <td>MIME</td>
-            <td><code class="flyout">string</code></td>
-            <td>Le mimeType du document de cadre déterminé par le navigateur.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+### <a name="domcontenteventfired"></a>domContentEventFired  
 
----
+Correspond à `document.onDOMContentLoaded` l’événement.  
 
-### <a name="frametree"></a> FrameTree `object`
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| timestamp | `number` | Nombre de millisecondes depuis l’époque. |  
 
-Des informations sur la hiérarchie de trames.
+---  
 
-<table>
-    <thead>
-        <tr>
-            <th>Propriétés</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>séquence</td>
-            <td><a href="#frame"><code class="flyout">Frame</code></a></td>
-            <td>Informations d’image pour cet élément d’arborescence.</td>
-        </tr>
-        <tr>
-            <td>childFrames <br/> <i>facultatif</i></td>
-            <td><a href="#frametree"><code class="flyout">FrameTree[]</code></a></td>
-            <td>Images enfants.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+## <a name="types"></a>Types  
 
----
+### <a name="frameid-string"></a>Chaîne FrameId  
+
+<a name="frameid"></a>  
+
+Identificateur d’image unique.  
+
+&nbsp;  
+
+---  
+
+### <a name="frame-object"></a>Objet Frame  
+
+<a name="frame"></a>  
+
+Informations sur le cadre de la page.  
+
+| Propriétés | Type | Détails |  
+|:--- |:--- |:--- |  
+| id | [FrameId](#frameid) | Identificateur unique de trame. |  
+| parentId \(facultatif\) | [FrameId](#frameid) | Identificateur unique du cadre parent. |  
+| name \(optional\) | `string` | Nom du cadre tel que spécifié dans la balise. |  
+| url | `string` | URL du document frame. |  
+| securityOrigin | `string` | Origine de la sécurité du document frame. |  
+| mimeType | `string` | MimeType du document frame tel que déterminé par le navigateur. |  
+
+---  
+
+### <a name="frametree-object"></a>Objet FrameTree  
+
+<a name="frametree"></a>  
+
+Informations sur la hiérarchie frame.  
+
+| Propriétés | Type | Détails |  
+|:--- |:--- |:--- |  
+| frame | [Trame](#frame) | Informations d’image pour cet élément d’arborescence. |  
+| childFrames \(optional\) | [FrameTree[]](#frametree) | Images enfants. |  
+
+---  

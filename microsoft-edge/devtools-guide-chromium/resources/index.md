@@ -1,18 +1,18 @@
 ---
-description: Organisez les ressources par cadre, domaine, type ou d’autres critères.
+description: Organisez les ressources par trame, domaine, type ou autre critère.
 title: Afficher les ressources de page avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 353c36a9d98dac287c3fdaaa3feed2fe3b17cd07
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 75063b23f23c25ff4fe2e7f6e044a2de9a7b1ccd
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230774"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398223"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,144 +28,142 @@ ms.locfileid: "11230774"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Afficher les ressources de page avec Microsoft Edge DevTools  
+# <a name="view-page-resources-with-microsoft-edge-devtools"></a>Afficher les ressources de page avec Microsoft Edge DevTools  
 
-  
+Ce guide vous apprend à utiliser Microsoft Edge DevTools pour afficher les ressources d’une page web.  Les ressources sont les fichiers dont une page a besoin pour s’afficher correctement.  Les fichiers CSS, JavaScript et HTML sont des exemples de ressources, ainsi que des images.  
 
-Ce guide vous explique comment utiliser Microsoft Edge DevTools pour afficher les ressources d’une page Web.  Les ressources sont les fichiers nécessaires à une page pour s’afficher correctement.  Les exemples de ressources incluent les fichiers CSS, JavaScript et HTML, ainsi que les images.  
+Ce guide suppose que vous connaissez les principes de base du [développement web][MDNLearnWebDevelopment] et de Microsoft [Edge DevTools.][MicrosoftEdgeDevTools]  
 
-Ce guide suppose que vous êtes familiarisé avec les notions de base du [développement Web][MDNLearnWebDevelopment] et de [Microsoft Edge devtools][MicrosoftEdgeDevTools].  
+## <a name="open-resources"></a>Ouvrir des ressources  
 
-## Ouvrir les ressources  
+Lorsque vous connaissez le nom de la ressource que vous souhaitez inspecter, le **menu** Commande permet d’ouvrir rapidement la ressource.  
 
-Lorsque vous connaissez le nom de la ressource que vous voulez examiner, le **menu de commandes** permet d’ouvrir rapidement la ressource.  
-
-1.  Sélectionnez `Control` + `P` \ (Windows, Linux \) ou `Command` + `P` \ (MacOS \).  La boîte de dialogue **ouvrir le fichier** s’ouvre.  
+1.  Sélectionnez `Control` + `P` \(Windows, Linux\) ou `Command` + `P` \(macOS\).  La **boîte de dialogue Ouvrir** un fichier s’ouvre.  
     
     :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="Boîte de dialogue Ouvrir un fichier" lightbox="../media/resources-command-menu-empty.msft.png":::
-       Boîte de dialogue **ouvrir un fichier**  
+       Boîte **de dialogue Ouvrir un** fichier  
     :::image-end:::  
     
-1.  Sélectionnez le fichier dans la liste déroulante ou commencez à taper le nom du fichier et sélectionnez `Enter` une fois que le fichier approprié est mis en surbrillance dans la zone de saisie semi-automatique.  
+1.  Choisissez le fichier dans la zone de dépôt ou commencez à taper le nom du fichier, puis sélectionnez une fois que le fichier correct est mis en surbrillence dans la `Enter` zone de saisie automatique.  
     
     :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Tapez un nom de fichier dans la boîte de dialogue Ouvrir un fichier" lightbox="../media/resources-command-menu-file-search.msft.png":::
-       Tapez un nom de fichier dans la boîte de dialogue **ouvrir un fichier**  
+       Tapez un nom de fichier dans la boîte **de dialogue Ouvrir un** fichier  
     :::image-end:::  
     
-### Ouvrir ressources dans le panneau réseau  
+### <a name="open-resources-in-the-network-tool"></a>Ouvrir des ressources dans l’outil Réseau  
 
-Accédez à [inspecter les détails d’une ressource][DevtoolsNetworkInspectDetailsResource].  
+Accédez [à Inspecter les détails d’une ressource.][DevtoolsNetworkInspectDetailsResource]  
 
-:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="Inspecter une ressource dans le panneau réseau" lightbox="../media/resources-network-response.msft.png":::
-   Inspecter une ressource dans le panneau **réseau**  
+:::image type="complex" source="../media/resources-network-response.msft.png" alt-text="Inspecter une ressource dans l’outil Réseau" lightbox="../media/resources-network-response.msft.png":::
+   Inspecter une ressource dans **l’outil** Réseau  
 :::image-end:::  
 
-### Afficher les ressources dans le panneau réseau à partir d’autres panneaux  
+### <a name="reveal-resources-in-the-network-tool-from-other-panels"></a>Faire apparaître des ressources dans l’outil Réseau à partir d’autres panneaux  
 
-La section [Parcourir les ressources](#browse-resources) ci-dessous vous explique comment afficher les ressources de diverses parties de l’interface utilisateur d’devtools.  Si vous souhaitez inspecter une ressource dans le panneau **réseau** , cliquez avec le bouton droit sur la ressource, puis sélectionnez **afficher dans le panneau réseau**.  
+La section [Parcourir les](#browse-resources) ressources ci-dessous vous montre comment afficher les ressources de différentes parties de l’interface utilisateur DevTools.  Si vous souhaitez inspecter une **** ressource dans l’outil Réseau, pointez sur la ressource, ouvrez le menu contextuel \(clic droit\), puis choisissez Révéler dans le **panneau Réseau.**  
 
-:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Afficher dans le panneau réseau" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
-   **Afficher dans le panneau réseau**  
+:::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Révéler dans le panneau réseau" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+   **Révéler dans le panneau réseau**  
 :::image-end:::  
 
-## Parcourir les ressources  
+## <a name="browse-resources"></a>Parcourir les ressources  
 
-### Parcourir les ressources du panneau réseau  
+### <a name="browse-resources-in-the-network-panel"></a>Parcourir les ressources dans le panneau Réseau  
 
-Naviguez jusqu’à [log Activity Network][DevtoolsNetworkLogActivity].  
+Accédez à [Journal de l’activité réseau.][DevtoolsNetworkLogActivity]  
 
 :::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="Ressources de page dans le journal réseau" lightbox="../media/resources-network-resources.msft.png":::
-   Ressources de page dans le journal **réseau**  
+   Ressources de page dans le **journal** réseau  
 :::image-end:::  
 
-### Parcourir les répertoires  
+### <a name="browse-by-directory"></a>Parcourir par répertoire  
 
-Pour afficher les ressources d’une page organisée par annuaire:  
+Pour afficher les ressources d’une page organisée par répertoire :  
 
-1.  Cliquez sur l’onglet **sources** pour ouvrir le panneau **sources** .  
-1.  Cliquez sur l’onglet **page** pour afficher les ressources de la page.  Le volet **page** s’ouvre.  
+1.  Choisissez **l’outil Sources** pour ouvrir le **panneau Sources.**  
+1.  Choisissez le **panneau Page** pour afficher les ressources de la page.  Le **volet Page** s’ouvre.  
     
     :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="Le volet des pages" lightbox="../media/resources-sources-page-empty.msft.png":::
-       Le volet des **pages**  
+       Panneau **Page**  
     :::image-end:::  
     
-    Voici une répartition des éléments non évidents de la figure précédente.  
+    Voici une répartition des éléments non évidents dans la figure précédente.  
     
     | Élément de page | Description |  
     |:--- |:--- |  
-    | `top` | Le contexte de [navigation][MDNInlineFrame]principal du document. |  
-    | `airhorner.com` | Le domaine.  Toutes les ressources imbriquées sous celle-ci proviennent du domaine.  Par exemple, il s’agit probablement de l’URL complète du `comlink.global.j` fichier `https://airhorner.com/scripts/comlink.global.js` . |  
-    | `scripts` | Un répertoire. |  
-    | `(index)` | Le document HTML principal. |  
-    | `sw.js` | Contexte du runtime du travailleur de service. |  
+    | `top` | Contexte de [navigation de document principal.][MDNInlineFrame] |  
+    | `airhorner.com` | Le domaine.  Toutes les ressources imbrmbrées sous celui-ci proviennent de ce domaine.  Par exemple, l’URL complète du `comlink.global.j` fichier est probablement `https://airhorner.com/scripts/comlink.global.js` . |  
+    | `scripts` | Répertoire. |  
+    | `(index)` | Document HTML principal. |  
+    | `sw.js` | Contexte d’runtime de travail de service. |  
     
-1.  Cliquez sur une ressource pour l’afficher dans l' **éditeur**.  
+1.  Choisissez une ressource pour l’afficher dans **l’Éditeur.**  
     
-    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="Afficher un fichier dans l’éditeur" lightbox="../media/resources-sources-page-resource.msft.png":::
-       Afficher un fichier dans l' **éditeur**  
+    :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="Afficher un fichier dans l’Éditeur" lightbox="../media/resources-sources-page-resource.msft.png":::
+       Afficher un fichier dans **l’Éditeur**  
     :::image-end:::  
     
-### Parcourir par nom de fichier  
+### <a name="browse-by-filename"></a>Parcourir par nom de fichier  
 
-Par défaut, le volet **page** regroupe les ressources par annuaire.  Pour désactiver ce regroupement et afficher les ressources de chaque domaine sous forme de liste plate:  
+Par défaut, le panneau **Page** groupe les ressources par répertoire.  Pour désactiver ce regroupement et afficher les ressources de chaque domaine en tant que liste plate :  
 
-1.  Ouvrir le volet de **pages** .  Naviguez jusqu’à [l’annuaire](#browse-by-directory).  
-1.  Cliquez sur **autres options** `...` et désactivez **l’option regrouper par dossier**.  
+1.  Ouvrez le **panneau Page.**  Accédez [à Parcourir par répertoire.](#browse-by-directory)  
+1.  Choisissez **d’autres options** `...` et désactivez **Grouper par dossier.**  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Option de regroupement par dossier" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
-       Option de **regroupement par dossier**  
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="Option Grouper par dossier" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+       Option **Grouper par** dossier  
     :::image-end:::  
     
-    Les ressources sont organisées par type de fichier.  Dans chaque type de fichier, les ressources sont classées par ordre alphabétique.  
+    Les ressources sont organisées par type de fichier.  Dans chaque type de fichier, les ressources sont organisées par ordre alphabétique.  
     
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Volet de page après la désactivation du groupe par dossier" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
-       Volet de **page** après la désactivation du **groupe par dossier**  
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="Panneau Page après la désactivation du regroupement par dossier" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+       Panneau **Page** après la désactivation du **regroupement par dossier**  
     :::image-end:::  
     
-### Parcourir par type de fichier  
+### <a name="browse-by-file-type"></a>Parcourir par type de fichier  
 
-Pour regrouper les ressources en fonction de leur type de fichier:  
+Pour grouper des ressources en fonction de leur type de fichier :  
 
-1.  Cliquez sur l’onglet **application** .  Le volet de l' **application** s’ouvre.  Par défaut, le volet **manifeste** s’ouvre en premier.  
+1.  Sélectionnez **l’onglet** Application.  **L’outil Application** s’ouvre.  Par défaut, **le volet** Manifeste s’ouvre généralement en premier.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="Panneau application" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
-       Panneau **application**  
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="L’outil Application" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
+       **L’outil Application**  
     :::image-end:::  
     
-1.  Faites défiler vers le bas jusqu’au volet **cadres** .  
+1.  Faites défiler vers le bas **jusqu’au** volet Cadres.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="Volet cadres" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
-       Volet **cadres**  
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="Volet Cadres" lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
+       Volet **Cadres**  
     :::image-end:::  
     
 1.  Développez les sections qui vous intéressent.  
-1.  Cliquez sur une ressource pour l’afficher.  
+1.  Choisissez une ressource pour l’afficher.  
     
-    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="Afficher une ressource dans le volet de l’application" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
-       Afficher une ressource dans le volet de l' **application**  
+    :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="Afficher une ressource dans le panneau Application" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
+       Afficher une ressource dans le panneau **Application**  
     :::image-end:::  
     
-#### Parcourir les fichiers par type dans le panneau réseau  
+#### <a name="browse-files-by-type-in-the-network-panel"></a>Parcourir les fichiers par type dans le panneau Réseau  
 
-Accédez au [filtre par type de ressource][DevtoolsNetworkFilterByResourceType].  
+Accédez à [Filtrer par type de ressource.][DevtoolsNetworkFilterByResourceType]  
 
-:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="Filtrer les feuilles CSS dans le journal réseau" lightbox="../media/resources-network-resources-filter-css.msft.png":::
-   Filtrer les feuilles CSS dans le journal **réseau**  
+:::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="Filtre pour CSS dans le journal réseau" lightbox="../media/resources-network-resources-filter-css.msft.png":::
+   Filtre pour CSS dans le **journal** réseau  
 :::image-end:::  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
-[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Filtrer par type de ressource: inspecter l’activité réseau dans Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Inspecter les détails de l’activité du réseau d’examen des ressources dans Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "Journalisation de l’activité du réseau-Inspectez l’activité réseau dans Microsoft Edge DevTools | Documents Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
+[DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Filtrer par type de ressource : inspecter l’activité réseau dans microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Inspecter les détails de la ressource : inspecter l’activité réseau dans Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "Journal de l’activité réseau : inspecter l’activité réseau dans microsoft Edge DevTools | Documents Microsoft"  
 
-[MDNInlineFrame]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>: élément de cadre inséré | MDN"  
-[MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "Découvrir le développement Web | MDN"  
+[MDNInlineFrame]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe> : l’élément Inline Frame | MDN"  
+[MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "En savoir plus sur les | MDN"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  

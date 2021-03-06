@@ -1,18 +1,18 @@
 ---
-description: Liste des façons de personnaliser Microsoft Edge DevTools
+description: Liste des méthodes de personnalisation de Microsoft Edge DevTools
 title: Personnaliser Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/22/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 5822fa087244fdfafdefe040709058411040ea45
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+ms.openlocfilehash: 2b242fcb74b7c8cdbca2d523c55ab4e5eed56b45
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313022"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399036"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,11 +28,11 @@ ms.locfileid: "11313022"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Personnaliser Microsoft Edge DevTools  
+# <a name="customize-microsoft-edge-devtools"></a>Personnaliser Microsoft Edge DevTools  
 
 Cette page répertorie les méthodes de personnalisation de Microsoft Edge DevTools.  
 
-## Paramètres  
+## <a name="settings"></a>Paramètres  
 
 **Paramètres**  >  **Les préférences** contiennent de nombreuses options de personnalisation de DevTools.  
 
@@ -45,7 +45,7 @@ Pour ouvrir Paramètres, effectuer l’une des actions suivantes.
    **Paramètres**  
 :::image-end:::  
 
-## Caisse  
+## <a name="drawer"></a>Caisse  
 
 Le **Panneau** est un second panneau dans lequel les outils de votre choix sont affichés.  
 
@@ -76,34 +76,34 @@ Vous pouvez déplacer les outils entre le panneau principal et le panneau.
     :::image-end:::  
     
 
-## Réordesser les panneaux  
+## <a name="reorder-panels"></a>Réordesser les panneaux  
 
 Choisissez et faites glisser un outil pour modifier l’ordre.  Votre ordre d’outils personnalisé est persistant dans les sessions DevTools.  
 
 > [!NOTE]
-> Par défaut, **l’outil** Réseau est généralement le quatrième à partir de la gauche.  Dans la figure suivante, le **panneau** Réseau est le premier à partir de la gauche.  
+> Par défaut, **l’outil** Réseau est généralement le quatrième à partir de la gauche.  Dans la figure suivante, **l’outil** Réseau est le premier à partir de la gauche.  
 
 :::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Ordre personnalisé des Devtools dans un panneau" lightbox="../media/customize-network-first-position.msft.png":::
    Ordre personnalisé des Devtools dans un panneau  
 :::image-end:::  
 
-## Modifier le placement de DevTools  
+## <a name="change-devtools-placement"></a>Modifier le placement de DevTools  
 
-Voir [Microsoft Edge DevTools Placement][DevToolsPlacement].  
+Accédez [à Microsoft Edge DevTools Placement][DevToolsPlacement].  
 
 :::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="DevTools non barraté" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
    DevTools non barraté  
 :::image-end:::  
 
-## Thème foncé  
+## <a name="dark-theme"></a>Thème foncé  
 
-Voir [Activer le thème foncé.][DarkTheme]  
+Accédez à [Activer le thème foncé.][DarkTheme]  
 
 :::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="Thème foncé" lightbox="../media/customize-settings-appearance-theme.msft.png":::
    Thème foncé  
 :::image-end:::  
 
-## Expériences  
+## <a name="experiments"></a>Expériences  
 
 Pour activer les expériences DevTools, effectuer les actions suivantes.  
 
@@ -113,7 +113,7 @@ Pour activer les expériences DevTools, effectuer les actions suivantes.
 
 La prochaine fois que vous ouvrirez DevTools, une nouvelle page nommée **Expériences** s’affiche dans [Paramètres.](#settings)  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

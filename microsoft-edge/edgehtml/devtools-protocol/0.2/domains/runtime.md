@@ -1,865 +1,375 @@
 ---
-description: Référence de la version 0,2 (EdgeHTML) du protocole DevTools pour le domaine d’exécution. Le domaine d’exécution expose le runtime JavaScript au moyen de l’évaluation à distance et des objets miroirs. Les résultats d’évaluation sont retournés sous la forme d’un objet miroir exposant le type d’objet, la représentation de chaîne et l’identificateur unique qui peuvent être utilisés pour une référence d’objet supplémentaire. Les objets d’origine sont conservés en mémoire, sauf s’ils sont explicitement émis.
-title: Domain Runtime-DevTools Protocol version 0,2 (EdgeHTML)
+description: Référence du protocole DevTools version 0.2 (EdgeHTML) pour le domaine d’runtime. Le domaine runtime expose le runtime JavaScript au moyen d’objets miroir et d’évaluation à distance. Les résultats de l’évaluation sont renvoyés en tant qu’objet miroir qui exposent le type d’objet, la représentation de chaîne et l’identificateur unique qui peuvent être utilisés pour d’autres références d’objet. Les objets d’origine sont conservés en mémoire, sauf s’ils sont libérés explicitement.
+title: Domaine d’runtime - DevTools Protocol Version 0.2 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.date: 12/16/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: f18cca951b298e8b4d870a7d722f30c9d28ad346
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: afc79a17c5002f60806872a9add57f518ff6cb45
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233237"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398139"
 ---
-# Domain Runtime-DevTools Protocol version 0,2 (EdgeHTML)  
-
-Le domaine d’exécution expose le runtime JavaScript au moyen de l’évaluation à distance et des objets miroirs. Les résultats d’évaluation sont retournés sous la forme d’un objet miroir exposant le type d’objet, la représentation de chaîne et l’identificateur unique qui peuvent être utilisés pour une référence d’objet supplémentaire. Les objets d’origine sont conservés en mémoire, sauf s’ils sont explicitement émis.
-
-| | |
-|-|-|
-| [**Méthodes**](#methods) | [activer](#enable), [Désactiver](#disable), [évaluer](#evaluate), [callFunctionOn](#callfunctionon), [awaitPromise](#awaitpromise), [GetProperties](#getproperties), [globalLexicalScopeNames](#globallexicalscopenames), [releaseObject](#releaseobject), [releaseObjectGroup](#releaseobjectgroup), [discardConsoleEntries](#discardconsoleentries) |
-| [**Événements**](#events) | [executionContextCreated](#executioncontextcreated), [executionContextDestroyed](#executioncontextdestroyed), [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown), [consoleAPICalled](#consoleapicalled) |
-| [**Types**](#types) | [ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExecutionContextDescription](#executioncontextdescription), [ExceptionDetails](#exceptiondetails), [timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace) |
-## Méthodes
-
-### activer
-Active la création de rapports sur les <code>executionContextCreated</code> <code>executionContextDestroyed</code> <code>executionContextsCleared</code> événements et. Lorsque la création de rapports est activée <code>executionContextCreated</code> , l’événement est envoyé immédiatement pour chaque contexte d’exécution existant.
-
-</p>
-
----
-
-### désactiver 
-Désactive la création de rapports sur <code>executionContextCreated</code> les <code>executionContextDestroyed</code> <code>executionContextsCleared</code> événements et.
-
-</p>
-
----
-
-### evaluat
-Évalue l’expression sur l’objet global.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>termes</td>
-            <td><code class="flyout">string</code></td>
-            <td>Expression à évaluer.</td>
-        </tr>
-        <tr>
-            <td>includeCommandLineAPI <br/> <i>facultatif</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Détermine si une API de ligne de commande doit être disponible au cours de l’évaluation.</td>
-        </tr>
-        <tr>
-            <td>objectGroup <br/> <i>facultatif</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Nom du groupe de symboles qui peut être utilisé pour libérer plusieurs objets.</td>
-        </tr>
-        <tr>
-            <td>silent <br/> <i>facultatif</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>En mode silencieux, les exceptions levées lors de l’évaluation ne sont pas communiquées et n’interrompent pas l’exécution. Remplace l' <code>setPauseOnException</code> État.</td>
-        </tr>
-        <tr>
-            <td>contextId <br/> <i>facultatif</i></td>
-            <td><a href="#executioncontextid"><code class="flyout">ExecutionContextId</code></a></td>
-            <td>Spécifie le contexte d’exécution permettant d’effectuer une évaluation. Si le paramètre est omis, l’évaluation sera exécutée dans le contexte de la page inspectée.</td>
-        </tr>
-        <tr>
-            <td>returnByValue <br/> <i>facultatif</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Si le résultat est censé être un objet JSON qui doit être envoyé par valeur.</td>
-        </tr>
-        <tr>
-            <td>awaitPromise <br/> <i>facultatif</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Si l’exécution doit avoir <code>await</code> pour résultat la valeur résultante et l’État retour une fois la promesse attendue résolue.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Renvoie</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>provoqué</td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td>Résultat de l’évaluation.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### callFunctionOn
-Fonction appelle avec la déclaration fournie sur l’objet donné. Le groupe d’objets du résultat est hérité de l’objet cible.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>functionDeclaration</td>
-            <td><code class="flyout">string</code></td>
-            <td>Déclaration de la fonction à appeler.</td>
-        </tr>
-        <tr>
-            <td>Algorithm <br/> <i>facultatif</i></td>
-            <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td>Identificateur de l’objet sur lequel appeler la fonction. ObjectId ou executionContextId doit être spécifié.  objectId doit être issu de la fonction Runtime. Evaluate ().</td>
-        </tr>
-        <tr>
-            <td>arguments <br/> <i>facultatif</i></td>
-            <td><a href="#callargument"><code class="flyout">CallArgument[]</code></a></td>
-            <td>Appeler des arguments. Tous les arguments d’appel doivent appartenir au même univers JavaScript que l’objet cible.</td>
-        </tr>
-        <tr>
-            <td>silent <br/> <i>facultatif</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>En mode silencieux, les exceptions levées lors de l’évaluation ne sont pas communiquées et n’interrompent pas l’exécution. Remplace l' <code>setPauseOnException</code> État.</td>
-        </tr>
-        <tr>
-            <td>returnByValue <br/> <i>facultatif</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Si le résultat est censé être un objet JSON qui doit être envoyé par valeur.</td>
-        </tr>
-        <tr>
-            <td>awaitPromise <br/> <i>facultatif</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Si l’exécution doit avoir <code>await</code> pour résultat la valeur résultante et l’État retour une fois la promesse attendue résolue.</td>
-        </tr>
-        <tr>
-            <td>executionContextId <br/> <i>facultatif</i></td>
-            <td><a href="#executioncontextid"><code class="flyout">ExecutionContextId</code></a></td>
-            <td>Spécifie le contexte d’exécution sur lequel l’objet global sera utilisé pour appeler la fonction. La valeur executionContextId ou objectId doit être spécifiée.</td>
-        </tr>
-        <tr>
-            <td>objectGroup <br/> <i>facultatif</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Nom du groupe de symboles qui peut être utilisé pour libérer plusieurs objets. Si objectGroup n’est pas spécifié et que objectId est, objectGroup sera hérité de Object.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Renvoie</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>provoqué</td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td>Résultat de l’appel.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### awaitPromise
-Ajoutez le gestionnaire à la promesse avec ID d’objet promise.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>promiseObjectId</td>
-            <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td>Identificateur de la promesse.</td>
-        </tr>
-        <tr>
-            <td>returnByValue <br/> <i>facultatif</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Si le résultat est censé être un objet JSON qui doit être envoyé par valeur.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Renvoie</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>provoqué</td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td>Résultat de la promesse.  Va contenir la valeur rejetée si la promesse a été refusée.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### getProperties
-Renvoie les propriétés d’un objet donné. Le groupe d’objets du résultat est hérité de l’objet cible.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Algorithm</td>
-            <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td>Identificateur de l’objet dont vous souhaitez renvoyer les propriétés. objectId doit être issu de la fonction Debugger. evaluateOnCallFrame ().</td>
-        </tr>
-        <tr>
-            <td>ownProperties <br/> <i>facultatif</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Si la valeur est true, retourne les propriétés qui ne sont liées qu’à l’élément proprement dit, et non à sa chaîne de prototype.</td>
-        </tr>
-        <tr>
-            <td>accessorPropertiesOnly <br/> <i>facultatif</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span><b>Pratiqué. </b></span>Si true, retourne les propriétés d’accesseur (avec l’accesseur get/set) uniquement; les propriétés internes ne sont pas renvoyées.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Renvoie</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>provoqué</td>
-            <td><a href="#propertydescriptor"><code class="flyout">PropertyDescriptor[]</code></a></td>
-            <td>Propriétés d’objet.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### globalLexicalScopeNames
-Renvoie toutes les variables de type, de constante et de classe à partir de l’étendue globale de la console.
-
-<table>
-    <thead>
-        <tr>
-            <th>Renvoie</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>leurs</td>
-            <td><code class="flyout">string[]</code></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### releaseObject
-Libère l’objet distant avec l’ID donné.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Algorithm</td>
-            <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td>Identificateur de l’objet à libérer. </td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### releaseObjectGroup
-Libère tous les objets distants appartenant à un groupe donné.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>objectGroup</td>
-            <td><code class="flyout">string</code></td>
-            <td>Nom du groupe d’objets symboliques. </td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### discardConsoleEntries
-Supprime les exceptions collectées et les appels d’API de console.
-
-</p>
-
----
-
-## Événements
-
-### executionContextCreated
-Émis lors de la création du contexte d’exécution.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>contexte</td>
-            <td><a href="#executioncontextdescription"><code class="flyout">ExecutionContextDescription</code></a></td>
-            <td>Contexte d’exécution nouvellement créé.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### executionContextDestroyed
-Émis lorsque le contexte d’exécution est détruit.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>executionContextId</td>
-            <td><a href="#executioncontextid"><code class="flyout">ExecutionContextId</code></a></td>
-            <td>ID du contexte détruit</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### executionContextsCleared
-Émis lorsque tous les executionContexts étaient effacés dans le navigateur
-
-</p>
-
----
-
-### exceptionThrown
-Émis quand une exception a été levée et non gérée.
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>telle</td>
-            <td><a href="#timestamp"><code class="flyout">Timestamp</code></a></td>
-            <td>Horodatage de l’exception.</td>
-        </tr>
-        <tr>
-            <td>exceptionDetails</td>
-            <td><a href="#exceptiondetails"><code class="flyout">ExceptionDetails</code></a></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### consoleAPICalled
-
-
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>type</td>
-            <td><code class="flyout">string</code> <br/> <i>Valeurs autorisées: Journal, informations, avertissement, erreur, déboguer, assertion, table, trace, dir, DirXML, Clear, Select, Count, countReset, timeEnd, timeStamp, startGroup, startGroupCollapsed, endGroup</i></td>
-            <td>Type de l’appel. Il s’agit de journaux, d’informations, d’avertissement, d’erreur, de débogage, d’assertion, de table, de suivi, de Rép, de DirXML, d’effacement, de countReset, d’timeEnd, d’exception, d’horodatage, de groupe, groupCollapsed, groupEnd.</td>
-        </tr>
-        <tr>
-            <td>args</td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject[]</code></a></td>
-            <td>Appeler des arguments.</td>
-        </tr>
-        <tr>
-            <td>executionContextId</td>
-            <td><a href="#executioncontextid"><code class="flyout">ExecutionContextId</code></a></td>
-            <td>Identificateur du contexte dans lequel l’appel de console a été effectué.</td>
-        </tr>
-        <tr>
-            <td>telle <br/> <i>facultatif</i></td>
-            <td><a href="#timestamp"><code class="flyout">Timestamp</code></a></td>
-            <td>Horodatage de l’appel.</td>
-        </tr>
-        <tr>
-            <td>Trace <br/> <i>facultatif</i></td>
-            <td><a href="#stacktrace"><code class="flyout">StackTrace</code></a></td>
-            <td>Trace de pile capturée, le cas échéant</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-## Types
-
-### <a name="scriptid"></a> ScriptId `string`
-
-Identificateur de script unique.
-
-</p>
-
----
-
-### <a name="remoteobjectid"></a> RemoteObjectId `string`
-
-Identifiant unique de l’objet.
-
-</p>
-
----
-
-### <a name="unserializablevalue"></a> UnserializableValue `string`
-
-Valeur primitive qui ne peut pas être JSON-stringified.
-
-##### Valeurs autorisées
-Infinity, NaN,-Infinity,-0
-</p>
-
----
-
-### <a name="remoteobject"></a> RemoteObject `object`
-
-Objet Mirror référençant l’objet JavaScript d’origine.
-
-<table>
-    <thead>
-        <tr>
-            <th>Propriétés</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>type</td>
-            <td><code class="flyout">string</code> <br/> <i>Valeurs autorisées: objet, fonction, non défini, chaîne, nombre, booléen, symbole</i></td>
-            <td>Type d’objet.</td>
-        </tr>
-        <tr>
-            <td>sous-type <br/> <i>facultatif</i></td>
-            <td><code class="flyout">string</code> <br/> <i>Valeurs autorisées: null, erreur, promesse, nœud</i></td>
-            <td>Indicateur de sous-type d’objet. Spécifié pour les <code>object</code> valeurs de type uniquement.</td>
-        </tr>
-        <tr>
-            <td>NomClasse <br/> <i>facultatif</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Nom de classe d’objet (constructeur). Spécifié pour les <code>object</code> valeurs de type uniquement.</td>
-        </tr>
-        <tr>
-            <td>value <br/> <i>facultatif</i></td>
-            <td><code class="flyout">any</code></td>
-            <td>Valeur de l’objet distant en cas de valeurs primitives ou de valeurs JSON (le cas échéant).</td>
-        </tr>
-        <tr>
-            <td>unserializableValue <br/> <i>facultatif</i></td>
-            <td><a href="#unserializablevalue"><code class="flyout">UnserializableValue</code></a></td>
-            <td>Valeur primitive qui ne peut pas être JSON-stringified <code>value</code>mais obtient cette propriété.</td>
-        </tr>
-        <tr>
-            <td>description <br/> <i>facultatif</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Représentation de chaîne de l’objet.</td>
-        </tr>
-        <tr>
-            <td>Algorithm <br/> <i>facultatif</i></td>
-            <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td>Identificateur d’objet unique (pour les valeurs non Primitives).</td>
-        </tr>
-        <tr>
-            <td>msDebuggerPropertyId <br/> <i>facultatif</i></td>
-            <td><code class="flyout">string</code></td>
-            <td><span><b>Pratiqué. </b></span>Microsoft: ID de propriété de débogueur associé pour cet objet.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### <a name="propertydescriptor"></a> PropertyDescriptor `object`
-
-Descripteur de propriété objet.
-
-<table>
-    <thead>
-        <tr>
-            <th>Propriétés</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>name</td>
-            <td><code class="flyout">string</code></td>
-            <td>Nom de la propriété ou description du symbole.</td>
-        </tr>
-        <tr>
-            <td>value <br/> <i>facultatif</i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td>Valeur associée à la propriété.</td>
-        </tr>
-        <tr>
-            <td>accès <br/> <i>facultatif</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>True si la valeur associée à la propriété est susceptible d’être modifiée (descripteurs de données uniquement).</td>
-        </tr>
-        <tr>
-            <td>obtenir <br/> <i>facultatif</i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td>Fonction qui sert de Getter pour la propriété, ou <code>undefined</code> s’il n’y a pas d’accesseur get (descripteurs d’accesseur uniquement).</td>
-        </tr>
-        <tr>
-            <td>set <br/> <i>facultatif</i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td>Fonction utilisée comme une méthode setter de la propriété, ou <code>undefined</code> s’il n’y a pas de méthodes setter (descripteurs d’accesseur uniquement).</td>
-        </tr>
-        <tr>
-            <td>configurables</td>
-            <td><code class="flyout">boolean</code></td>
-            <td>True si le type de ce descripteur de propriété est modifiable et si la propriété est susceptible d’être supprimée de l’objet correspondant.</td>
-        </tr>
-        <tr>
-            <td>tournant</td>
-            <td><code class="flyout">boolean</code></td>
-            <td>True si cette propriété s’affiche lors de l’énumération des propriétés de l’objet correspondant.</td>
-        </tr>
-        <tr>
-            <td>wasThrown <br/> <i>facultatif</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>True si le résultat a été levé lors de l’évaluation.</td>
-        </tr>
-        <tr>
-            <td>isOwn <br/> <i>facultatif</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>True si la propriété est possédée pour l’objet.</td>
-        </tr>
-        <tr>
-            <td>msReturnValue <br/> <i>facultatif</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td><span><b>Pratiqué. </b></span>Microsoft: true si la propriété est une valeur de retour.</td>
-        </tr>
-        <tr>
-            <td>symbol <br/> <i>facultatif</i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td>Objet symbol de propriété, si la propriété est de `symbol` type. </td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### <a name="callargument"></a> CallArgument `object`
-
-Représente l’argument appel de fonction. ID d’objet distant <code>objectId</code> , primitive <code>value</code> , valeur primitive unserializable ou aucun de (pour undefined).
-
-<table>
-    <thead>
-        <tr>
-            <th>Propriétés</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>value <br/> <i>facultatif</i></td>
-            <td><code class="flyout">any</code></td>
-            <td>Valeur primitive ou objet JavaScript sérialisable.</td>
-        </tr>
-        <tr>
-            <td>unserializableValue <br/> <i>facultatif</i></td>
-            <td><a href="#unserializablevalue"><code class="flyout">UnserializableValue</code></a></td>
-            <td>Valeur primitive qui ne peut pas être JSON-stringified.</td>
-        </tr>
-        <tr>
-            <td>Algorithm <br/> <i>facultatif</i></td>
-            <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td>Handle d’objet distant.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### <a name="executioncontextid"></a> ExecutionContextId `integer`
-
-ID du contexte d’exécution.
-
-</p>
-
----
-
-### <a name="executioncontextdescription"></a> ExecutionContextDescription `object`
-
-Description d’un monde isolé.
-
-<table>
-    <thead>
-        <tr>
-            <th>Propriétés</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>id</td>
-            <td><a href="#executioncontextid"><code class="flyout">ExecutionContextId</code></a></td>
-            <td>ID unique du contexte d’exécution. Il peut être utilisé pour spécifier l’évaluation du script de contexte d’exécution qui doit être effectuée.</td>
-        </tr>
-        <tr>
-            <td>prêts</td>
-            <td><code class="flyout">string</code></td>
-            <td>Origine du contexte d’exécution.</td>
-        </tr>
-        <tr>
-            <td>name</td>
-            <td><code class="flyout">string</code></td>
-            <td>Nom lisible par le humain décrivant le contexte donné.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### <a name="exceptiondetails"></a> ExceptionDetails `object`
-
-Informations détaillées sur l’exception (ou l’erreur) levée lors de la compilation ou de l’exécution d’un script.
-
-<table>
-    <thead>
-        <tr>
-            <th>Propriétés</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>exceptionId</td>
-            <td><code class="flyout">integer</code></td>
-            <td>ID de l’exception.</td>
-        </tr>
-        <tr>
-            <td>texte</td>
-            <td><code class="flyout">string</code></td>
-            <td>Texte de l’exception, qui doit être utilisé avec l’objet exception lorsqu’il est disponible.</td>
-        </tr>
-        <tr>
-            <td>lineNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Numéro de ligne de l’emplacement de l’exception (0).</td>
-        </tr>
-        <tr>
-            <td>columnNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Numéro de colonne de l’emplacement de l’exception (0).</td>
-        </tr>
-        <tr>
-            <td>scriptId <br/> <i>facultatif</i></td>
-            <td><a href="#scriptid"><code class="flyout">ScriptId</code></a></td>
-            <td>ID de script de l’emplacement de l’exception.</td>
-        </tr>
-        <tr>
-            <td>url <br/> <i>facultatif</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>URL de l’emplacement de l’exception à utiliser lorsque le script n’a pas été communiqué.</td>
-        </tr>
-        <tr>
-            <td>Trace <br/> <i>facultatif</i></td>
-            <td><a href="#stacktrace"><code class="flyout">StackTrace</code></a></td>
-            <td>Trace de pile JavaScript, le cas échéant.</td>
-        </tr>
-        <tr>
-            <td>sauf <br/> <i>facultatif</i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td>Objet exception, s’il est disponible.</td>
-        </tr>
-        <tr>
-            <td>executionContextId <br/> <i>facultatif</i></td>
-            <td><a href="#executioncontextid"><code class="flyout">ExecutionContextId</code></a></td>
-            <td>Identificateur du contexte où une exception s’est produite.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### <a name="timestamp"></a> Horodateur `integer`
-
-Nombre de millisecondes depuis l’époque.
-
-</p>
-
----
-
-### <a name="callframe"></a> CallFrame `object`
-
-Entrée de pile pour les erreurs d’exécution et les affirmations.
-
-<table>
-    <thead>
-        <tr>
-            <th>Propriétés</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Admises</td>
-            <td><code class="flyout">string</code></td>
-            <td>Nom de la fonction JavaScript.</td>
-        </tr>
-        <tr>
-            <td>scriptId</td>
-            <td><a href="#scriptid"><code class="flyout">ScriptId</code></a></td>
-            <td>ID de script JavaScript. ScriptId est vide si le débogueur n’est pas activé.</td>
-        </tr>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>Nom ou URL du script JavaScript.</td>
-        </tr>
-        <tr>
-            <td>lineNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Numéro de ligne de script JavaScript (0).</td>
-        </tr>
-        <tr>
-            <td>columnNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td>Numéro de colonne de script JavaScript (0).</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### <a name="stacktrace"></a> Trace `object`
-
-Trames d’appel pour les affirmations ou messages d’erreur.
-
-<table>
-    <thead>
-        <tr>
-            <th>Propriétés</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>description <br/> <i>facultatif</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Étiquette de chaîne de cette trace de pile. Pour les traces Async, il s’agit du nom de la fonction qui a déclenché l’appel asynchrone.</td>
-        </tr>
-        <tr>
-            <td>callFrames</td>
-            <td><a href="#callframe"><code class="flyout">CallFrame[]</code></a></td>
-            <td>Nom de la fonction JavaScript.</td>
-        </tr>
-        <tr>
-            <td>dernier <br/> <i>facultatif</i></td>
-            <td><a href="#stacktrace"><code class="flyout">StackTrace</code></a></td>
-            <td>Trace de pile JavaScript asynchrone qui précède cette pile, s’il est disponible.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
+# <a name="runtime-domain---devtools-protocol-version-02-edgehtml"></a>Domaine d’runtime - DevTools Protocol Version 0.2 (EdgeHTML)  
+
+Le domaine d’runtime expose le runtime JavaScript au moyen d’objets d’évaluation et de miroir distants. Les résultats de l’évaluation sont renvoyés en tant qu’objet miroir qui exposent le type d’objet, la représentation de chaîne et l’identificateur unique qui peuvent être utilisés pour d’autres références d’objet. Les objets d’origine sont conservés en mémoire, sauf s’ils sont libérés explicitement.  
+
+| Classification | Membres |  
+|:--- |:--- |  
+| [**Méthodes**](#methods) | [enable](#enable), [disable](#disable), [evaluate](#evaluate), [callFunctionOn](#callfunctionon), [awaitPromise](#awaitpromise), [getProperties](#getproperties), [globalLexicalScopeNames](#globallexicalscopenames), [releaseObject](#releaseobject), [releaseObjectGroup](#releaseobjectgroup), [discardConsoleEntries](#discardconsoleentries) |  
+| [**Événements**](#events) | [executionContextCreated](#executioncontextcreated), [executionContextDestroyed](#executioncontextdestroyed), [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown), [consoleAPICalled](#consoleapicalled) |  
+| [**Types**](#types) | [ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExecutionContextDescription](#executioncontextdescription), [ExceptionDetails](#exceptiondetails), [Timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace) |  
+
+## <a name="methods"></a>Méthodes  
+
+### <a name="enable"></a>activer  
+
+Permet de signaler les `executionContextCreated` événements `executionContextDestroyed` et les `executionContextsCleared` événements.  Lorsque le rapport est activé, l’événement est envoyé immédiatement `executionContextCreated` pour chaque contexte d’exécution existant.  
+
+---  
+
+### <a name="disable"></a>désactiver   
+
+Désactive le signalement des `executionContextCreated` `executionContextDestroyed` événements et des `executionContextsCleared` événements.  
+
+---  
+
+### <a name="evaluate"></a>évaluer  
+
+Évalue l’expression sur l’objet global.  
+
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| expression | `string` | Expression à évaluer. |  
+| includeCommandLineAPI \(optional\) | `boolean` | Détermine si l’API de ligne de commande doit être disponible pendant l’évaluation. |  
+| objectGroup \(optional\) | `string` | Nom de groupe symbolique qui peut être utilisé pour libérer plusieurs objets. |  
+| silent \(optional\) | `boolean` | En mode silencieux, les exceptions lancées lors de l’évaluation ne sont pas signalées et ne suspendent pas l’exécution.  Remplace `setPauseOnException` l’état. |  
+| contextId \(facultatif\) | [ExecutionContextId](#executioncontextid) | Spécifie dans quel contexte d’exécution effectuer l’évaluation.  Si le paramètre est omis, l’évaluation est effectuée dans le contexte de la page inspectée. |  
+| returnByValue \(optional\) | `boolean` | Si le résultat est censé être un objet JSON qui doit être envoyé par valeur. |  
+| awaitPromise \(optional\) | `boolean` | Si l’exécution doit être résolue pour la valeur et le retour une fois `await` la promesse attendue résolue. |  
+
+| Renvoie | Type | Détails |  
+|:--- |:--- |:--- |  
+| result | [RemoteObject](#remoteobject) | Résultat de l’évaluation. |  
+
+---  
+
+### <a name="callfunctionon"></a>callFunctionOn  
+
+Appelle la fonction avec déclaration donnée sur l’objet donné.  Le groupe d’objets du résultat est hérité de l’objet cible.  
+
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| functionDeclaration | `string` | Déclaration de la fonction à appeler. |  
+| objectId \(optional\) | [RemoteObjectId](#remoteobjectid) | Identificateur de l’objet sur qui appeler la fonction.  `objectId` `executionContextId` L’une ou l’autre doit être spécifiée.  `objectId` doit être issu de la `Runtime.evaluate()` fonction. |  
+| arguments \(facultatif\) | [CallArgument[]](#callargument) | Arguments d’appel.  Tous les arguments d’appel doivent appartenir au même monde JavaScript que l’objet cible. |  
+| booléen \(facultatif\) | `boolean` | En mode silencieux, les exceptions lancées lors de l’évaluation ne sont pas signalées et ne suspendent pas l’exécution. Remplace `setPauseOnException` l’état. |  
+| returnByValue \(optional\) | `boolean` | Si le résultat est censé être un objet JSON qui doit être envoyé par valeur. |  
+| awaitPromise \(optional\) | `boolean` | Si l’exécution doit être résolue pour la valeur et le retour une fois `await` la promesse attendue résolue. |  
+| executionContextId \(optional\) | [ExecutionContextId](#executioncontextid) | Spécifie le contexte d’exécution sur lequel l’objet global sera utilisé pour appeler la fonction.  Soit
+`executionContextId` ou `objectId` doit être spécifié |  
+| objectGroup \(optional\) | `string` | Nom de groupe symbolique qui peut être utilisé pour libérer plusieurs objets.  Si `objectGroup` elle n’est pas spécifiée `objectId` et qu’elle l’est, elle `objectGroup` sera héritée de l’objet. |  
+
+| Renvoie | Type | Détails |  
+|:--- |:--- |:--- |  
+| result | [RemoteObject](#remoteobject) | Résultat de l’appel. |  
+
+---  
+
+### <a name="awaitpromise"></a>awaitPromise  
+
+Ajoutez un handler à la promesse avec un ID d’objet promise donné.  
+
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| promiseObjectId | [RemoteObjectId](#remoteobjectid) | Identificateur de la promesse. |  
+| returnByValue \(optional\) | booléen | Si le résultat est censé être un objet JSON qui doit être envoyé par valeur. |  
+
+| Renvoie | Type | Détails |  
+|:--- |:--- |:--- |  
+| result | [RemoteObject](#remoteobject) | Résultat de la promesse.  Contient la valeur rejetée si la promesse a été rejetée. |  
+
+---  
+
+### <a name="getproperties"></a>getProperties  
+
+Renvoie les propriétés d’un objet donné. Le groupe d’objets du résultat est hérité de l’objet cible.  
+
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| objectId | [RemoteObjectId](#remoteobjectid) | Identificateur de l’objet pour qui renvoyer les propriétés.  `objectId` doit être issu de la `Debugger.evaluateOnCallFrame()` fonction. |  
+| ownProperties \(optional\) | `boolean` | Si `true` , renvoie les propriétés appartenant uniquement à l’élément lui-même, et non à sa chaîne prototype. |  
+| accessorPropertiesOnly \(optional\) | `boolean` | **Expérimental**.  Si `true` , renvoie les propriétés d’accesseur \(avec getter/setter\) uniquement ; les propriétés internes ne sont pas renvoyées non plus. |  
+
+| Renvoie | Type | Détails |  
+|:--- |:--- |:--- |  
+| result | [PropertyDescriptor[]](#propertydescriptor) | Propriétés de l’objet. |  
+
+---  
+
+### <a name="globallexicalscopenames"></a>globalLexicalScopeNames  
+
+Renvoie toutes les variables let, const et class de l’étendue globale de la console.  
+
+| Renvoie | Type | Détails |  
+|:--- |:--- |:--- |  
+| names | `string[]` | &nbsp; |  
+
+---  
+
+### <a name="releaseobject"></a>releaseObject  
+
+Libère l’objet distant avec un ID donné.  
+
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| objectId | [RemoteObjectId](#remoteobjectid) | Identificateur de l’objet à libérer. |  
+
+---  
+
+### <a name="releaseobjectgroup"></a>releaseObjectGroup  
+
+Libère tous les objets distants appartenant à un groupe donné.  
+
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| objectGroup | `string` | Nom du groupe d’objets symboliques. |  
+
+---  
+
+### <a name="discardconsoleentries"></a>discardConsoleEntries  
+
+Rejette les exceptions collectées et les appels d’API de console.  
+
+---  
+
+## <a name="events"></a>Événements  
+
+### <a name="executioncontextcreated"></a>executionContextCreated  
+
+Émis lors de la création d’un contexte d’exécution.  
+
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| context | [ExecutionContextDescription](#executioncontextdescription) | Contexte d’exécution nouvellement créé. |  
+
+---  
+
+### <a name="executioncontextdestroyed"></a>executionContextDestroyed  
+
+Émis lorsque le contexte d’exécution est détruit.  
+
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| executionContextId | [ExecutionContextId](#executioncontextid) | ID du contexte détruit. |  
+
+---  
+
+### <a name="executioncontextscleared"></a>executionContextsCleared  
+
+Émis lorsque tous les executionContexts ont été effacés dans le navigateur.  
+
+&nbsp;  
+
+---  
+
+### <a name="exceptionthrown"></a>exceptionThrown  
+
+Émise lorsque l’exception a été levée et nonhandée.  
+
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| timestamp | [Horodateur](#timestamp) | Timestamp de l’exception. |  
+| exceptionDetails | [ExceptionDetails](#exceptiondetails) | &nbsp; |  
+
+---  
+
+### <a name="consoleapicalled"></a>consoleAPICalled  
+
+| Parameters | Type | Détails |  
+|:--- |:--- |:--- |  
+| type | `string` | Type de l’appel.  Valeurs autorisées  `log` : , , , , , , , `info` , , , `warning` , , , `error` , `debug` `assert` `table` `trace` `dir` , `dirxml` `clear` `select` `count` `countReset` `timeEnd` `timeStamp` `startGroup` `startGroupCollapsed` et `endGroup` |  
+| args | [RemoteObject[]] (#remoteobject | Arguments d’appel. |  
+| executionContextId | [ExecutionContextId](#executioncontextid) | Identificateur du contexte dans lequel l’appel de console a été effectué. |  
+| timestamp \(optional\) | [Horodateur](#timestamp) | Appel de l’timestamp. |  
+| stackTrace \(optional\) | [StackTrace](#stacktrace) | Trace de pile capturée si disponible. |  
+
+---  
+
+## <a name="types"></a>Types  
+
+### <a name="scriptid-string"></a>Chaîne ScriptId  
+
+<a name="scriptid"></a>
+
+Identificateur de script unique.  
+
+&nbsp;  
+
+---  
+
+### <a name="remoteobjectid-string"></a>Chaîne RemoteObjectId  
+
+<a name="remoteobjectid"></a>
+
+Identificateur d’objet unique.  
+
+&nbsp;  
+
+---  
+
+### <a name="unserializablevalue-string"></a>Chaîne UnserializableValue  
+
+<a name="unserializablevalue"></a>  
+
+Valeur de primitive qui ne peut pas être stringified JSON.  
+
+##### <a name="allowed-values"></a>Valeurs autorisées  
+
+`Infinity`, `NaN`, `-Infinity`, `-0`  
+
+---  
+
+### <a name="remoteobject-object"></a>Objet RemoteObject  
+
+<a name="remoteobject"></a>  
+
+Objet Miroir référencant un objet JavaScript d’origine.  
+
+| Propriétés | Type | Détails |  
+|:--- |:--- |:--- |  
+| type | `string` | Type d’objet.  Valeurs autorisées  `object` : , , , , `function` `undefined` `string` `number` `boolean` et `symbol` |  
+| subtype \(optional\) | `string` | Conseil de sous-type d’objet.  Spécifié pour les `object` valeurs de type uniquement.  Valeurs autorisées  `null` : `error` , `promise` et `node` |  
+| className \(optional\) | `string` | Nom de la classe d’objet \(constructor\).  Spécifié pour les `object` valeurs de type uniquement. |  
+| value \(optional\) | `any` | Valeur de l’objet distant en cas de valeurs primitives ou de valeurs JSON \(si elle a été demandée\). |  
+| unserializableValue \(optional\) | [UnserializableValue](#unserializablevalue) | La valeur primitive qui ne peut pas être stringified JSON n’a `value` pas , mais obtient cette propriété. |  
+| description \(facultatif\) | `string` | Représentation sous la chaîne de l’objet. |  
+| objectId \(optional\) | [RemoteObjectId](#remoteobjectid) | Identificateur d’objet unique \(pour les valeurs non primitives\). |  
+| msDebuggerPropertyId \(optional\) | `string` | **Expérimental**.  Microsoft : ID de propriété de débogger associé pour cet objet. |  
+
+---  
+
+### <a name="propertydescriptor-object"></a>Objet PropertyDescriptor  
+
+<a name="propertydescriptor"></a>  
+
+Descripteur de propriété d’objet.  
+
+| Propriétés | Type | Détails |  
+|:--- |:--- |:--- |  
+| name | `string` | Nom de la propriété ou description du symbole. |  
+| value \(optional\) | [RemoteObject](#remoteobject) | Valeur associée à la propriété. |  
+| writable \(optional\) | `boolean` | `True` si la valeur associée à la propriété peut être modifiée \(descripteurs de données uniquement\). |  
+| get \(optional\) | [RemoteObject](#remoteobject) | Fonction qui sert de getter pour la propriété, ou s’il n’existe pas de `undefined` getter \(descripteurs d’accesseurs uniquement\). |  
+| set \(optional\) | [RemoteObject](#remoteobject) | Fonction qui sert de setter pour la propriété, ou s’il n’y a pas de `undefined` setter \(descripteurs d’accesseurs uniquement\). |  
+| configurable | `boolean` | `True` si le type de ce descripteur de propriété peut être modifié et si la propriété peut être supprimée de l’objet correspondant. |  
+| éumerable | `boolean` | `True` si cette propriété s’affiche lors de l’éumération des propriétés sur l’objet correspondant. |  
+| wasThrown \(optional\) | `boolean` | `True` si le résultat a été lancé au cours de l’évaluation. |  
+| isOwn \(optional\) | `boolean` | `True` si la propriété appartient à l’objet. |  
+| msReturnValue \(optional\) | `boolean` | **Expérimental**.  Microsoft :  `True` si la propriété est une valeur de retour. |  
+| symbol \(optional\) | [RemoteObject](#remoteobject) | Objet symbole de propriété, si la propriété est du `symbol` type. |  
+
+---  
+
+### <a name="callargument-object"></a>Objet CallArgument  
+
+<a name="callargument"></a>  
+
+Représente l’argument d’appel de fonction.  Soit l’ID d’objet distant, la primitive, la valeur de primitive non personnalisable, soit aucune des `objectId` `value` valeurs \(pour undefined\) ne doit être spécifiée.  
+
+| Propriétés | Type | Détails |  
+|:--- |:--- |:--- |  
+| value \(optional\) | `any` | Valeur de primitive ou objet javascript sérialisable. |  
+| unserializableValue \(optional\) | [UnserializableValue](#unserializablevalue) | Valeur de primitive qui ne peut pas être stringified JSON. |  
+| objectId \(optional\) | [RemoteObjectId](#remoteobjectid)] | Handle d’objet distant. |  
+
+---  
+
+### <a name="executioncontextid-integer"></a>ExecutionContextId, integer  
+
+<a name="executioncontextid"></a>  
+
+ID d’un contexte d’exécution.  
+
+&nbsp;  
+
+---  
+
+### <a name="executioncontextdescription-object"></a>Objet ExecutionContextDescription  
+
+<a name="executioncontextdescription"></a>  
+
+Description d’un monde isolé.  
+
+| Propriétés | Type | Détails |  
+|:--- |:--- |:--- |  
+| id | [ExecutionContextId](#executioncontextid) | ID unique du contexte d’exécution.  Il peut être utilisé pour spécifier dans quel contexte d’exécution
+l’évaluation de script doit être effectuée. |  
+| origin | `string` | Origine du contexte d’exécution. |  
+| name | `string` | Nom lisible par l’homme décrivant un contexte donné. |  
+
+---  
+
+### <a name="exceptiondetails-object"></a>Objet ExceptionDetails  
+
+<a name="exceptiondetails"></a>  
+
+Informations détaillées sur l’exception (ou l’erreur) qui a été lancée lors de la compilation ou de l’exécution du script.  
+
+| Propriétés | Type | Détails |  
+|:--- |:--- |:--- |  
+| exceptionId | `integer` | ID d’exception. |  
+| texte | `string` | Texte d’exception, qui doit être utilisé avec l’objet exception lorsqu’il est disponible. |  
+| lineNumber | `integer` | Numéro de ligne de l’emplacement de l’exception \(0-based\). |  
+| columnNumber | `integer` | Numéro de colonne de l’emplacement de l’exception \(0-based\). |  
+| scriptId \(facultatif\) | [ScriptId](#scriptid) | ID de script de l’emplacement d’exception. |  
+| url \(optional\) | `string` | URL de l’emplacement de l’exception, à utiliser lorsque le script n’a pas été signalé. |  
+| stackTrace \(optional\) | [StackTrace](#stacktrace) | Trace de pile JavaScript si disponible. |  
+| exception \(facultatif\) | [RemoteObject](#remoteobject) | Objet Exception, s’il est disponible. |  
+| executionContextId \(optional\) | [ExecutionContextId](#executioncontextid) | Identificateur du contexte dans lequel l’exception s’est produite. |  
+
+---  
+
+### <a name="timestamp-integer"></a>Timestamp integer  
+
+<a name="timestamp"></a>  
+
+Nombre de millisecondes depuis l’époque.  
+
+&nbsp;  
+
+---  
+
+### <a name="callframe-object"></a>Objet CallFrame  
+
+<a name="callframe"></a>  
+
+Entrée de pile pour les erreurs d’runtime et les assertions.  
+
+| Propriétés | Type | Détails |  
+|:--- |:--- |:--- |  
+| functionName | `string` | Nom de la fonction JavaScript. |  
+| scriptId | [ScriptId](#scriptid) | ID de script JavaScript. ScriptId sera vide si le débogger n’est pas activé. |  
+| url | `string` | Nom ou URL du script JavaScript. |  
+| lineNumber | `integer` | Numéro de ligne de script JavaScript \(0-based\). |  
+| columnNumber | entier | Numéro de colonne de script JavaScript \(basé sur 0\). |  
+
+---  
+
+### <a name="stacktrace-object"></a>Objet StackTrace  
+
+<a name="stacktrace"></a>  
+
+Appelez des cadres pour les assertions ou les messages d’erreur.  
+
+| Propriétés | Type | Détails |  
+|:--- |:--- |:--- |  
+| description \(facultatif\) | `string` | Étiquette de chaîne de cette trace de pile.  Pour les suivis async, il peut s’agit d’un nom de la fonction qui a initié l’appel async. |  
+| callFrames | [CallFrame[]](#callframe) | Nom de la fonction JavaScript. |  
+| parent \(facultatif\) | [StackTrace](#stacktrace) | Trace de pile JavaScript asynchrone précédant cette pile, si disponible. |  
+
+---  

@@ -1,18 +1,18 @@
 ---
-description: Découvrez comment afficher les données SQL Web à partir du panneau application de Microsoft Edge DevTools.
-title: Afficher des données SQL Web avec Microsoft Edge DevTools
+description: Découvrez comment afficher les SQL web à partir du panneau Application de Microsoft Edge DevTools.
+title: Afficher les données SQL web avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 802f21cb4cadfa3ee08ddd8feeea8b8132551740
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 326fe492a3436a40d81c8e31db99a26da4ea054f
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231173"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397551"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,78 +28,78 @@ ms.locfileid: "11231173"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Afficher des données SQL Web avec Microsoft Edge DevTools  
+# <a name="view-web-sql-data-with-microsoft-edge-devtools"></a>Afficher les données SQL web avec Microsoft Edge DevTools  
 
 > [!WARNING]
-> La spécification Web SQL n’est [pas conservée][W3CWebSQLStatus].  
+> La spécification de SQL web [n’est pas conservée.][W3CWebSQLStatus]  
 
-Ce guide vous montre comment utiliser [Microsoft Edge devtools][MicrosoftEdgeDevTools] pour inspecter les données SQL Web.  
+Ce guide vous montre comment utiliser [Microsoft Edge DevTools][MicrosoftEdgeDevTools] pour inspecter les données SQL Web.  
 
-## Afficher des données SQL Web  
+## <a name="view-web-sql-data"></a>Afficher les données de SQL Web  
 
-1.  Sélectionnez l’onglet **sources** pour ouvrir l’outil **sources** .  Le volet **manifeste** s’ouvre généralement par défaut.  
+1.  Choisissez **l’outil Sources** pour ouvrir **l’outil Sources.**  Le **volet Manifeste** s’ouvre généralement par défaut.  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-manifest.msft.png":::
-       Volet **manifeste**  
+       Volet **** manifeste  
     :::image-end:::  
     
-1.  Développez la section **SQL Web** pour afficher les bases de données et les tables.  Dans l’illustration ci-dessous, **html5meetup** est une base de données et les **salles** constituent une table.  
+1.  Développez la section **SQL** web pour afficher les bases de données et les tables.  Dans la figure suivante, sous **html5meetup se** trouve une base de données et **les salles** un tableau.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="Volet Web SQL" lightbox="../media/storage-application-storage-web-sql.msft.png":::
-       Volet **Web SQL**  
+    :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="Volet De SQL Web" lightbox="../media/storage-application-storage-web-sql.msft.png":::
+       Volet **SQL** Web  
     :::image-end:::  
     
-1.  Sélectionnez une table pour afficher les données de cette table.  
+1.  Choisissez une table pour afficher les données de cette table.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="Afficher les données d’une table SQL Web" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
-       Afficher les données d’une table SQL Web  
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="Afficher les données d’une table de SQL Web" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
+       Afficher les données d’une table de SQL Web  
     :::image-end:::  
     
-## Modifier des données SQL Web  
+## <a name="edit-web-sql-data"></a>Modifier les données de SQL web  
 
-Vous ne pouvez pas modifier les données SQL Web lors de l’affichage d’une table SQL Web, comme ci-dessus.  Toutefois, vous pouvez exécuter des instructions à partir de la console Web SQL qui modifient ou suppriment des tables.  Voir [exécuter des requêtes SQL Web](#run-web-sql-queries).  
+Vous ne pouvez pas modifier les données de SQL web lors de l’affichage d’un tableau de SQL web, comme dans la version précédente.  Toutefois, vous pouvez exécuter des instructions à partir de la console web SQL qui modifient ou suppriment des tables.  Accédez à [Exécuter des requêtes SQL web.](#run-web-sql-queries)  
 
-## Exécuter des requêtes SQL Web  
+## <a name="run-web-sql-queries"></a>Exécuter des requêtes SQL web  
 
-1.  Choisissez une base de données pour ouvrir la console de cette base de données.  
-1.  Tapez une instruction SQL Web, puis sélectionnez `Enter` pour l’exécuter.  
+1.  Choisissez une base de données pour ouvrir une console pour cette base de données.  
+1.  Tapez une instruction web SQL, puis `Enter` sélectionnez-la pour l’exécuter.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Utiliser la console Web SQL pour supprimer une ligne d’un tableau" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
-       Utiliser la console Web SQL pour supprimer une ligne d’un tableau  
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Utiliser la console web SQL pour supprimer une ligne d’un tableau" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
+       Utiliser la console web SQL pour supprimer une ligne d’un tableau  
     :::image-end:::  
     
-## Actualiser une table SQL Web  
+## <a name="refresh-a-web-sql-table"></a>Actualiser une table de SQL Web  
 
-DevTools ne met pas à jour les tables en temps réel.  Pour mettre à jour les données d’une table, procédez comme suit.  
+DevTools ne met pas à jour les tables en temps réel.  Pour mettre à jour les données d’une table, effectuer les actions suivantes.  
 
-1.  [Afficher les données dans une table SQL Web](#view-web-sql-data).  
-1.  Cliquez sur **Actualiser** , puis sur ![ Actualiser ][ImageRefreshIcon] .  
+1.  [Afficher les données dans une table de SQL Web.](#view-web-sql-data)  
+1.  Choose **Refresh** \( ![ Refresh ][ImageRefreshIcon] \).  
     
-## Filtrer les colonnes d’une table Web SQL  
+## <a name="filter-out-columns-in-a-web-sql-table"></a>Filtrer les colonnes dans un tableau de SQL Web  
 
-1.  [Afficher les données dans une table SQL Web](#view-web-sql-data).  
-1.  Utilisez la zone de texte **colonnes visibles** pour spécifier les colonnes que vous voulez afficher.  Indiquez les noms des colonnes sous forme de liste CSV.  
+1.  [Afficher les données dans une table de SQL Web.](#view-web-sql-data)  
+1.  Utilisez la **zone de texte Colonnes** visibles pour spécifier les colonnes que vous souhaitez afficher.  Fournissez les noms des colonnes sous la mesure d’une liste CSV.  
     
-    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Utiliser la zone de texte colonnes visibles pour réduire le nombre de colonnes affichées" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
-       Utiliser la zone de texte **colonnes visibles** pour réduire le nombre de colonnes affichées  
+    :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Utiliser la zone de texte Colonnes visibles pour réduire le nombre de colonnes affichées" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
+       Utiliser la **zone de texte Colonnes** visibles pour réduire le nombre de colonnes affichées  
     :::image-end:::  
     
-## Supprimer toutes les données SQL Web  
+## <a name="delete-all-web-sql-data"></a>Supprimer toutes les données de SQL Web  
 
-1.  Ouvrir le volet de **stockage effacer** .  
-1.  Assurez-vous que la case à cocher **SQL Web** est activée.  
+1.  Ouvrez **le volet Effacer le** stockage.  
+1.  Assurez-vous que **la case à SQL** web est allumée.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="Case à cocher SQL Web" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
-       Case à cocher **SQL Web**  
+    :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="Case à cocher SQL web" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
+       Case **à cocher SQL** web  
     :::image-end:::  
     
-1.  Sélectionnez **effacer les données du site**.  
+1.  Choisissez **Effacer les données de site.**  
     
     :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="Bouton Effacer les données du site" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
-       Bouton **effacer les données du site**  
+       Bouton **Effacer les données du** site  
     :::image-end:::  
     
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -109,9 +109,9 @@ DevTools ne met pas à jour les tables en temps réel.  Pour mettre à jour les 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
 
-[W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Base de données SQL Web | W3C"  
+[W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Base de données SQL web | W3C"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  

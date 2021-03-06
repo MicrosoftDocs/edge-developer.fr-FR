@@ -1,18 +1,18 @@
 ---
-description: Recherche et analyse du code JavaScript et CSS inutilisé dans Microsoft Edge DevTools.
-title: Rechercher du code JavaScript et CSS inutilisé avec l’onglet couverture dans Microsoft Edge DevTools
+description: Découvrez comment rechercher et analyser du code JavaScript et CSS inutilisé dans Microsoft Edge DevTools.
+title: Rechercher du code JavaScript et CSS inutilisé avec le panneau Couverture dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 08c4daaabd30296b53ad57a81caa0e7b155a4fc9
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 092788606347352876483b1a8282fbb75b2bff66
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125187"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398762"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,20 +28,20 @@ ms.locfileid: "11125187"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Rechercher du code JavaScript et CSS inutilisé avec l’onglet couverture dans Microsoft Edge DevTools  
+# <a name="find-unused-javascript-and-css-code-with-the-coverage-panel-in-microsoft-edge-devtools"></a>Rechercher du code JavaScript et CSS inutilisé avec le panneau Couverture dans Microsoft Edge DevTools  
 
-L’onglet couverture dans Microsoft Edge DevTools vous permet de rechercher du code JavaScript et CSS inutilisé.  La suppression du code inutilisé risque d’accélérer le chargement de la page et d’enregistrer les données cellulaires de vos utilisateurs mobiles.  
+Le **panneau** Couverture de Microsoft Edge DevTools vous permet de trouver du code JavaScript et CSS inutilisé.  La suppression du code inutilisé peut accélérer le chargement de votre page et enregistrer les données cellulaires de vos utilisateurs mobiles.  
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analyser la couverture du code" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
-   Analyser la couverture du code  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analyse de la couverture du code" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
+   Analyse de la couverture du code  
 :::image-end:::  
 
 > [!WARNING]
-> La recherche de code inutilisé est relativement simple.  Toutefois, la refactorisation d’un code base de telle sorte que chaque page expédie uniquement les scripts JavaScript et CSS dont il a besoin risque d’être difficile.  Ce guide ne traite pas de la refactorisation d’un code base pour éviter le code inutilisé, car ces derniers dépendent fortement de votre pile de technologie.  
+> Il est relativement facile de trouver du code inutilisé.  Toutefois, il peut être difficile de refactoriser une base de code pour que chaque page n’expédie que les fichiers JavaScript et CSS dont elle a besoin.  Ce guide ne couvre pas la refactoriser une base de code pour éviter le code inutilisé, car ces refactoriseurs dépendent fortement de votre pile technologique.  
 
-## Vue d'ensemble  
+## <a name="overview"></a>Vue d'ensemble  
 
-L’expédition de code JavaScript ou CSS inutilisé est un problème courant du développement Web.  Par exemple, supposons que vous vouliez utiliser le [composant de bouton amorce][BootstrapButtons] sur votre page.  Pour utiliser le composant Button, vous devez ajouter un lien vers la feuille de style bootstrap dans votre code HTML, comme suit:  
+La livraison de fichiers JavaScript ou CSS inutilisés est un problème courant dans le développement web.  Par exemple, supposons que vous souhaitez utiliser le composant bouton [Bootstrap][BootstrapButtons] sur votre page.  Pour utiliser le composant de bouton, vous devez ajouter un lien vers la feuille de style Bootstrap dans votre code HTML, comme ceci :  
 
 ```html
 ...
@@ -53,44 +53,44 @@ L’expédition de code JavaScript ou CSS inutilisé est un problème courant du
 ...
 ```  
 
-Cette feuille de style n’inclut pas uniquement le code du composant Button.  Il contient la feuille de style en cascade (CSS) pour **tous** les composants d’amorce.  Mais vous n’utilisez pas les autres composants d’amorce.  C’est pourquoi votre page télécharge un ensemble de feuilles CSS dont il n’a pas besoin.  Ce code CSS supplémentaire est un problème pour les raisons suivantes.  
+Cette feuille de style n’inclut pas uniquement le code du composant de bouton.  Il contient le CSS pour **tous les** composants Bootstrap.  Mais vous n’utilisez aucun des autres composants Bootstrap.  Votre page télécharge donc une série de fichiers CSS dont elle n’a pas besoin.  Cette CSS supplémentaire est un problème pour les raisons suivantes.  
 
-*   Le code supplémentaire ralentira le chargement de la page.  <!--See [Render-Blocking CSS][render].  -->  
+*   Le code supplémentaire ralentit le chargement de votre page.  <!--Navigate to [Render-Blocking CSS][render].  -->  
 *   Si un utilisateur accède à la page sur un appareil mobile, le code supplémentaire utilise ses données cellulaires.  
     
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->  
 
-## Ouvrir l’onglet couverture  
+## <a name="open-the-coverage-panel"></a>Ouvrir le panneau Couverture  
 
-1.  [Ouvrir le menu de commandes][DevToolsCommandMenu].  
-1.  Commencez `coverage` à taper, sélectionnez la commande **afficher la couverture** , puis sélectionnez `Enter` pour exécuter la commande.  L’onglet **couverture** s’ouvre dans le **tiroir**.  
+1.  [Ouvrez le menu Commande.][DevToolsCommandMenu]  
+1.  Commencez à `coverage` taper, sélectionnez **la commande Afficher la** couverture, puis `Enter` sélectionnez pour exécuter la commande.  Le **panneau** Couverture s’ouvre dans le **panneau .**  
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Analyser la couverture du code" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
-       Onglet **couverture**  
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="Panneau Couverture" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+       Panneau **Couverture**  
     :::image-end:::  
     
-## Enregistrer la couverture du code  
+## <a name="record-code-coverage"></a>Couverture du code d’enregistrement  
 
-1.  Cliquez sur l’un des boutons suivants sous l’onglet **couverture** .  
-    *   Sélectionnez **Démarrer la couverture de l’instrumentation et recharger la page** \ ( ![ Démarrer la couverture de l’instrumentation et recharger ][ImageReloadIcon] la page \) si vous souhaitez voir le code nécessaire au chargement de la page.  
-    *   Sélectionnez **couverture** de l’instrument \ ( ![ couverture de ][ImageRecordIcon] l’instrument \) si vous souhaitez voir le code utilisé après l’interaction avec la page.  
-1.  Pour arrêter l’enregistrement de la couverture du code, sélectionnez **arrêter l’instrumentation et afficher les résultats** \ ( ![ arrêter l’instrumentation et afficher les résultats ][ImageStopIcon] \).  
+1.  Choisissez l’un des boutons suivants dans le **panneau Couverture.**  
+    *   Choose **Start Instrumenting Coverage and Reload Page** \( Start ![ Instrumenting Coverage and Reload Page ][ImageReloadIcon] \) if you want to review what code is needed to load the page.  
+    *   Choisissez **Instrument Coverage** \( Instrument Coverage \) si vous souhaitez passer en revue le code utilisé après avoir ![ ][ImageRecordIcon] interagi avec la page.  
+1.  Choisissez **Arrêter l’instrumentage de la couverture et afficher les résultats** \( Arrêter l’instrumentage de la couverture et afficher les résultats \) lorsque vous souhaitez arrêter l’enregistrement de ![ la couverture de ][ImageStopIcon] code.  
     
-## Analyser la couverture du code  
+## <a name="analyze-code-coverage"></a>Analyser la couverture du code  
 
-La table dans l’onglet **couverture** vous indique les ressources qui ont été analysées et le code utilisé dans chaque ressource.  Cliquez sur une ligne pour ouvrir cette ressource dans le volet **sources** et observez une répartition ligne par ligne du code utilisé et du code inutilisé.  
+Le tableau du panneau **Couverture** affiche les ressources qui ont été analysées et la quantité de code utilisée dans chaque ressource.  Choisissez une ligne pour ouvrir cette ressource dans le panneau **Sources** et examiner une répartition ligne par ligne du code utilisé et du code inutilisé.  
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Analyser la couverture du code" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
-   Rapport de couverture du code  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="Un rapport de couverture de code" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+   Un rapport de couverture de code  
 :::image-end:::  
 
-*   La colonne **URL** correspond à l’URL de la ressource qui a été analysée.  
-*   La colonne **type** indique si la ressource contient des éléments CSS ou JavaScript, ou les deux.  
-*   La colonne **Total octets** correspond à la taille totale de la ressource en octets.  
-*   La colonne **octets inutilisés** correspond au nombre d’octets qui n’ont pas été utilisés.  
-*   La dernière colonne sans nom est une visualisation des colonnes **nombre total d’octets** et **octets inutilisés** .  La section rouge de la barre est des octets inutilisés.  La section verte est utilisée en octets.  
+*   La **colonne URL** est l’URL de la ressource qui a été analysée.  
+*   La **colonne Type** indique si la ressource contient CSS, JavaScript ou les deux.  
+*   La **colonne Nombre total d’octets** est la taille totale de la ressource en octets.  
+*   La **colonne Octets inutilisés** est le nombre d’octets qui n’ont pas été utilisés.  
+*   La dernière colonne sans nom est une visualisation des colonnes **Octets** totaux et **Octets inutilisés.**  La section rouge de la barre est des octets inutilisés.  La section verte est utilisée en octets.  
     
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -102,15 +102,15 @@ La table dans l’onglet **couverture** vous indique les ressources qui ont ét�
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Exécuter des commandes à l’aide du menu de commandes de Microsoft Edge DevTools | Documents Microsoft"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Exécuter des commandes avec le menu DevTools Command de Microsoft Edge | Documents Microsoft"  
 
-[BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Boutons-démarrage"  
+[BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Boutons - Bootstrap"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/coverage/index) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/coverage/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

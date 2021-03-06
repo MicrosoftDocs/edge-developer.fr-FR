@@ -8,14 +8,14 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 05b757b7cb399815d072b9d6038873cfd118a59d
-ms.sourcegitcommit: fe7301d0f62493e42e6a1a81cdbda3457f0343b8
+ms.openlocfilehash: fa407393f8ecb79a3382294742bf9061787ec04a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "11327490"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397701"
 ---
-# Présentation des outils de développement Microsoft Edge (Chromium)  
+# <a name="microsoft-edge-chromium-developer-tools-overview"></a>Vue d’ensemble des outils de développement Microsoft Edge (Chromium)  
 
 Microsoft Edge a adopté le projet open source Chromium.  Le nouveau navigateur Microsoft Edge crée une meilleure compatibilité web et réduit la fragmentation des différentes plateformes web.  La modification doit vous permettre de créer et de tester plus facilement vos pages web dans Microsoft Edge.  Le nouveau Microsoft Edge doit aider vos pages web à fonctionner comme prévu lorsqu’elles sont ouvertes dans d’autres navigateurs basés sur Chromium.  Les navigateurs basés sur Chromium incluent Google Chrome, Chrome, Opera, Firefox et le nouveau Microsoft Edge.  
 
@@ -29,7 +29,7 @@ En tant que développeur de navigateur basé sur Chromium, vous devez vous senti
 
 Si vous avez précédemment développé pour Microsoft Edge \(EdgeHTML\) et que vous évaluez le nouveau Microsoft Edge, il fournit désormais de nouveaux outils pour créer et tester vos pages web plus facilement et plus rapidement.  
 
-## Ouvrez DevTools  
+## <a name="open-the-devtools"></a>Ouvrez DevTools  
 
 Microsoft Edge DevTools est un ensemble d’outils intégrés directement au navigateur Microsoft Edge.  DevTools vous permet d’effectuer les tâches suivantes directement dans le navigateur.  
 
@@ -49,7 +49,7 @@ Si vous souhaitez voir le code HTML ou CSS d’un élément sur votre site, cliq
 
 Si vous souhaitez consulter les journaux à partir de votre code JavaScript frontal ou exécuter rapidement un script, ouvrez la **console.**   Pour lancer **l’outil Console** dans DevTools, sélectionnez `Ctrl` + `Shift` + `J` \(Windows/Linux\) ou `Command` + `Option` + `J` \(macOS\).  
 
-## Outils principaux  
+## <a name="core-tools"></a>Outils principaux  
 
 :::image type="complex" source="./media/devtools-core-tools.png" alt-text="Outils principaux de Microsoft Edge (Chromium) DevTools" lightbox="./media/devtools-core-tools.png":::
    Outils principaux de Microsoft Edge (Chromium) DevTools  
@@ -58,12 +58,12 @@ Si vous souhaitez consulter les journaux à partir de votre code JavaScript fron
 Microsoft Edge \(Chromium\) DevTools inclut les outils suivants.  
 
 *   Outil **Elements permettant** de modifier le code HTML et CSS, d’inspecter les propriétés d’accessibilité, d’afficher les écouteurs d’événements et de définir des points d’arrêt de la mutation DOM  
-*   Une **console pour** examiner et filtrer les messages du journal, inspecter les objets JavaScript et les nodes DOM, et exécuter JavaScript dans le contexte de la fenêtre ou du cadre sélectionné  
+*   Une **console pour** examiner et filtrer les messages du journal, inspecter les objets JavaScript et les nodes DOM et exécuter JavaScript dans le contexte de la fenêtre ou du cadre sélectionné  
 *   Un **outil Sources** pour ouvrir et modifier votre code, définir des points d’arrêt, passer du code pas à pas et afficher l’état de votre page web
-*   Outil **réseau permettant** de surveiller et d’inspecter les demandes et les réponses provenant du cache du réseau et du navigateur   
+*   Outil **réseau permettant** de surveiller et d’inspecter les demandes et les réponses provenant du cache réseau et du navigateur   
 *   Un **outil de** performances pour profiler le temps et les ressources système requis par votre site  
 *   Un **outil mémoire pour** mesurer votre utilisation des ressources mémoire et comparer des instantanés de tas à différents états du runtime de code  
-*   Outil **d’application** permettant d’inspecter, de modifier et de déboguer des manifestes d’application web, des travailleurs de service et des caches de travail de service.  Vous pouvez également inspecter et gérer le stockage, les bases de données et les caches à partir de **l’outil Application.**  
+*   Outil **d’application** permettant d’inspecter, de modifier et de déboguer les manifestes d’application web, les travailleurs de service et les caches de travail de service.  Vous pouvez également inspecter et gérer le stockage, les bases de données et les caches à partir de **l’outil Application.**  
 *   Outil **de** sécurité permettant de déboguer les problèmes de sécurité et de vous assurer que vous avez correctement implémenté HTTPS sur votre page web.  HTTPS fournit une sécurité et une intégrité des données essentielles pour votre site et vos utilisateurs qui fournissent des informations personnelles sur votre site.  
 *   Un **outil Audits** \(désormais renommé **Contrôle**\) pour exécuter un audit de votre page web.  Les résultats de l’audit vous aident à améliorer la qualité de votre site des manières suivantes.  
     *   Catch common errors related to making your webpage accessible, secure, performant, and so on.  
@@ -74,7 +74,7 @@ Microsoft Edge \(Chromium\) DevTools inclut les outils suivants.
 
 Envoyez vos [commentaires et demandes de fonctionnalités.](#getting-in-touch-with-the-microsoft-edge-devtools-team)  
 
-## Extensions  
+## <a name="extensions"></a>Extensions  
 
 Vous avez peut-être accédé à DevTools à l’aide d’extensions lorsque vous avez diagnostiquer et déboté des problèmes pendant que vous avez créé vos pages web \(ou applications\). Les extensions Microsoft Edge sont acquises auprès des [extensions Microsoft Edge.][MicrosoftEdgeAddonsExtensions]  Sur [les extensions Microsoft Edge,][MicrosoftEdgeAddonsExtensions]parcourez les extensions DevTools à partir de la catégorie Outils de développement ou recherchez une extension spécifique. ****  
 
@@ -95,7 +95,7 @@ Choisissez **Ajouter à Chrome** pour ajouter votre extension DevTools à Micros
    Ajouter une extension du Chrome Web Store à Microsoft Edge  
 :::image-end:::  
 
-## Raccourcis  
+## <a name="shortcuts"></a>Raccourcis  
 
 Les raccourcis suivants contrôlent la fenêtre principale de DevTools, fonctionnent dans tous les outils ou les deux.  
 
@@ -107,7 +107,7 @@ Les raccourcis suivants contrôlent la fenêtre principale de DevTools, fonction
 | Afficher les paramètres | `?` ou `Fn`+`F1` | `?` ou `Fn`+`F1` |  
 | Afficher le panneau suivant | `Ctrl`+`]` | `Command`+`]` |  
 | Afficher le panneau précédent | `Ctrl`+`[` | `Command`+`[` |  
-| Ancrez les DevTools à la dernière position utilisée.  Si les DevTools restent à la position par défaut pour toute la session, le raccourci dissocie les DevTools dans une fenêtre distincte. | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
+| Ancrez les DevTools à la dernière position utilisée.  Si les DevTools restent à la position par défaut pour toute la session, le raccourci dissocie de DevTools dans une fenêtre distincte. | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
 | Toggle **Device Mode** | `Ctrl`+`Shift`+`M` | `Command`+`Shift`+`M` |  
 | Toggle **Inspect Element Mode** that allows to you to choose an element and display the HTML and CSS in the **Elements** tool | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Afficher le menu Commande | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
@@ -120,18 +120,18 @@ Les raccourcis suivants contrôlent la fenêtre principale de DevTools, fonction
 | Zoom avant | `Ctrl`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Zoom arrière | `Ctrl`+`-` | `Command`+`-` |  
 | Restaurer le niveau de zoom par défaut | `Ctrl`+`0` | `Command`+`0` |  
-| Exécuter l’extrait de code | `Ctrl`+`O`ou `Ctrl` + `P` , `!` tapez suivi du nom du script, puis appuyez sur `Enter` | Appuyez `Command` + `O` `Command` + `P` ou , `!` tapez suivi du nom du script, puis appuyez sur `Enter` |  
+| Exécuter l’extrait de code | `Ctrl`+`O`ou `Ctrl` + `P` , `!` tapez suivi du nom du script, puis sélectionnez `Enter` | Sélectionnez `Command` + `O` `Command` + `P` ou , `!` tapez suivi du nom du script, puis sélectionnez `Enter` |  
 | Afficher le code source HTML non modifiable dans un nouvel onglet | `Ctrl`+`U` | Non applicable |  
 
 > [!NOTE]
 > Si vous déboguer et que vous êtes suspendu à un point d’arrêt, le **raccourci** Actualiser reprend d’abord l’runtime.  
 
-## Voir également  
+## <a name="see-also"></a>Voir également  
 
 *   [DevTools pour les débutants : mise en place du code HTML et du DOM][DevtoolsGuideChromiumBeginnersHtml]  
 *   [Protocole DevTools Microsoft Edge (Chromium)][DevtoolsProtocolChromiumIndex]  
     
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 

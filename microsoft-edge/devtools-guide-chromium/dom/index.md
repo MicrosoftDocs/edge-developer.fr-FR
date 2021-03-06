@@ -1,18 +1,18 @@
 ---
-description: Pour afficher des nœuds, recherchez des nœuds, modifiez des nœuds, des nœuds de référence dans la console, Rompez les changements de nœud, etc.
-title: Découvrir comment afficher et modifier le DOM
+description: Découvrez comment afficher les nœuds, rechercher des nœuds, modifier des nœuds, référencer des nœuds dans la console, rompre sur les modifications de nœuds, etc.
+title: Commencer à afficher et modifier le DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 5b12b984aed7e35ce11dd45e8bc33f5d5fd454f8
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: bb2b733cfa3597c47f0a20de00e9c8b506e7c41c
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231103"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398328"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,307 +28,307 @@ ms.locfileid: "11231103"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Découvrir comment afficher et modifier le DOM  
+# <a name="get-started-with-viewing-and-changing-the-dom"></a>Commencer à afficher et modifier le DOM  
 
-Pour découvrir les notions de base de l’affichage et de la modification du DOM d’une page, suivez les didacticiels interactifs de Microsoft DevTools.  
+Complétez ces didacticiels interactifs pour découvrir les principes de base de l’affichage et de la modification du DOM d’une page à l’aide de Microsoft Edge DevTools.  
 
-Ce didacticiel part du principe que vous connaissez la différence entre le DOM et le code HTML.  Accédez à l' [annexe: HTML et au DOM](#appendix-html-versus-the-dom) pour obtenir une explication.  
+Ce didacticiel suppose que vous connaissez la différence entre le DOM et le code HTML.  Accédez à [l’Annexe : HTML par rapport au DOM](#appendix-html-versus-the-dom) pour obtenir une explication.  
 
-## Exemples d’ouverture de DOM  
+## <a name="open-dom-examples"></a>Exemples d’ouverture de DOM  
 
-1.  Maintenez la touche Windows enfoncée `Control` `Command` et sélectionnez les **exemples DOM** à ouvrir dans un nouvel onglet.  
+1.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and choose **DOM Examples** to open in a new tab.  
     
     [Exemples DOM][GlitchDomExamples]  
     
-## Afficher les nœuds DOM  
+## <a name="view-dom-nodes"></a>Afficher les nodes DOM  
 
-L’arborescence DOM du panneau éléments vous permet d’effectuer toutes les activités liées au DOM dans DevTools.  
+L’arborescence DOM du panneau Éléments est l’endroit où vous pouvez faire toutes les activités liées au DOM dans DevTools.  
 
-### Inspecter un nœud  
+### <a name="inspect-a-node"></a>Inspecter un nœud  
 
-Lorsque vous êtes intéressé par un nœud DOM particulier, **Inspect** est un moyen rapide d’ouvrir devtools et d’examiner ce nœud.  
+Lorsque vous êtes intéressé par un nœud DOM particulier, **Inspect** est un moyen rapide d’ouvrir DevTools et d’examiner ce nœud.  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Sous **inspecter un nœud**, cliquez avec le bouton droit sur **Michelangelo** , puis sélectionnez **inspecter**.  
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Under **Inspect a Node**, right-choose **Contrôleo** and choose **Inspect**.  
     
     :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png" alt-text="Inspecter un nœud" lightbox="../media/dom-glitch-dom-examples-michelangelo-inspect.msft.png":::
        Inspecter un nœud  
     :::image-end:::  
     
-    1.  Le panneau **éléments** de devtools s’ouvre.  `<li>Michelangelo</li>` est mise en évidence dans l' **arborescence DOM**.  
+    1.  **L’outil Elements** de DevTools s’ouvre.  `<li>Michelangelo</li>` est mis en surbrillant dans **l’arborescence DOM.**  
         
-        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Mise en surbrillance du nœud Michelangelo" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
-           Mettre en surbrillance le `Michelangelo` nœud  
+        :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Mettre en surbrillon le nœud" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
+           Mettre en `Michelangelo` surbrillade le nœud  
         :::image-end:::  
         
-        1.  **** ![ ][ImageInspectIcon] Dans le coin supérieur gauche de devtools, cliquez sur l’icône d’examen.  
+        1.  Choisissez **l’icône Inspect** \( Inspect \) dans le coin supérieur gauche ![ de ][ImageInspectIcon] DevTools.  
             
-            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Icône Inspect" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
-               Icône **Inspect**  
+            :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Icône Inspecter" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
+               Icône **Inspecter**  
             :::image-end:::  
             
-1.  Sous **inspecter un nœud**, cliquez sur le texte de **Tokyo** .  Est désormais `<li>Tokyo</li>` mis en surbrillance dans l’arborescence DOM.  
+1.  Sous **Inspecter un nœud,** choisissez le **texte Tokyo.**  À présent, `<li>Tokyo</li>` est mis en surbrillant dans l’arborescence DOM.  
 
-L’examen d’un nœud est également la première étape de l’affichage et de la modification des styles d’un nœud.  Naviguez jusqu’à la section [découvrir comment afficher et modifier des feuilles CSS][DevToolsCssGetStarted].  
+L’inspection d’un nœud constitue également la première étape de l’affichage et de la modification des styles d’un nœud.  Accédez à [la mise en place de l’affichage et de la modification de CSS][DevToolsCssGetStarted].  
 
-### Parcourir l’arborescence DOM à l’aide d’un clavier  
+### <a name="navigate-the-dom-tree-with-a-keyboard"></a>Naviguer dans l’arborescence DOM avec un clavier  
 
-Une fois que vous avez sélectionné un nœud dans l’arborescence DOM, vous pouvez parcourir l’arborescence DOM à l’aide de votre clavier.  
+Une fois que vous avez sélectionné un nœud dans l’arborescence DOM, vous pouvez naviguer dans l’arborescence DOM avec votre clavier.  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Sous **naviguez dans l’arborescence DOM à l’aide d’un clavier**, cliquez avec le bouton droit sur **Ringo** , puis sélectionnez **inspecter**.  `<li>Ringo</li>` est sélectionnée dans l’arborescence DOM.  
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Under **Navigate the DOM Tree with a Keyboard**, right-choose **Ringo** and choose **Inspect**.  `<li>Ringo</li>` est sélectionné dans l’arborescence DOM.  
     
-    :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png" alt-text="Inspectez le nœud Ringo" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png":::
+    :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png" alt-text="Inspecter le nœud Ringo" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png":::
        Inspecter le `Ringo` nœud  
     :::image-end:::  
     
-    1.  Appuyez sur la `Up` touche de direction 2 fois.  `<ul>`  est sélectionnée.  
+    1.  Sélectionnez la `Up` touche de direction 2 fois.  `<ul>`  est sélectionnée.  
         
-        :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png" alt-text="Examen du nœud UL" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png":::
+        :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png" alt-text="Inspecter le nœud ul" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png":::
            Inspecter le `ul` nœud  
         :::image-end:::  
         
-    1.  Appuyez sur la `Left` touche de direction.  La `<ul>` liste est réduite.  
-    1.  Appuyez de `Left` nouveau sur la touche de direction.  Le parent du `<ul>` nœud est sélectionné.  Dans le cas présent, il s’agit de l' `<div>` ID with `navigate-the-dom-tree-with-a-keyboard-1` .  
-    1.  Appuyez `Down` deux fois sur la touche de direction pour que vous ayez sélectionné de nouveau la `<ul>` liste que vous venez de réduire.  Il doit se présenter comme suit: `<ul>... </ul>`  
-    1.  Appuyez sur la `Right` touche de direction.  La liste est développée.  
+    1.  Sélectionnez la `Left` touche de direction.  La `<ul>` liste est réduire.  
+    1.  Sélectionnez de `Left` nouveau la touche de direction.  Le parent du `<ul>` nœud est sélectionné.  Dans ce cas, il s’agit `<div>` de l’ID `navigate-the-dom-tree-with-a-keyboard-1` .  
+    1.  Sélectionnez la touche de direction 2 fois de sorte que vous avez re-sélectionné la liste `Down` `<ul>` que vous venons de réduire.  Il doit se présenter comme suit: `<ul>... </ul>`  
+    1.  Sélectionnez la `Right` touche de direction.  La liste se développe.  
 
-### Faire défiler l’affichage  
+### <a name="scroll-into-view"></a>Faire défiler vers l’avant  
 
-Lors de l’affichage de l’arborescence DOM, il se peut que vous vous trouviez intéressé par un nœud DOM qui n’est pas disponible dans la fenêtre d’affichage.  Par exemple, supposons que vous faites défiler vers le bas de la page et que vous soyez intéressé par le `<h1>` nœud en haut de la page.  **Faire défiler dans l’affichage** vous permet de repositionner rapidement la fenêtre d’affichage pour pouvoir passer en revue le nœud.  
+Lorsque vous affichez l’arborescence DOM, vous pouvez être intéressé par un nœud DOM qui ne se trouve pas actuellement dans laport d’affichage.  Par exemple, supposons que vous avez fait défiler vers le bas de la page et que le nœud en haut de la page vous `<h1>` intéresse.  **Le défilement vers l’affichage** vous permet de repositionner rapidement la vue afin de pouvoir passer en revue le nœud.  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Sous **défilement dans l’affichage**, cliquez avec le bouton droit sur **Magritte** , puis sélectionnez **inspecter**.  
-1.  Faites défiler vers le bas de la page des exemples DOM.  
-1.  Le `<li>Magritte</li>` nœud doit toujours être sélectionné dans votre arborescence DOM.  Si ce n’est pas le cas, revenez à la [fenêtre de défilement pour faire défiler](#scroll-into-view) le document.  
-1.  Pointez sur le `<li>Magritte</li>` nœud, ouvrez le menu contextuel, puis sélectionnez **défilement dans l’affichage**.  Votre fenêtre d’affichage défile vers le haut pour que vous puissiez consulter le nœud **Magritte** .  Naviguez jusqu’à [l’annexe: options manquantes](#appendix-missing-options) si vous n’êtes pas en mesure de passer en revue l’option **défilement dans l’affichage** .
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Under **Scroll into View**, right-choose **Magritte** and choose **Inspect**.  
+1.  Faites défiler vers le bas de la page Exemples DOM.  
+1.  Le `<li>Magritte</li>` nœud doit toujours être sélectionné dans votre arborescence DOM.  Si ce n’est pas le cas, revenir [à Scroll into view](#scroll-into-view) et recommencer.  
+1.  Pointez sur `<li>Magritte</li>` le nœud, ouvrez le menu contextuel \(clic droit\), puis choisissez Faire **défiler l’affichage.**  Votre port d’affichage défile vers le haut afin de passer en revue le nœud **Magritte.**  Accédez à [l’Annexe : options manquantes](#appendix-missing-options) si vous n’êtes pas en mesure de passer en revue l’option **Défilement vers l’affichage.**
     
-    :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Faire défiler l’affichage" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
-       **Faire défiler l’affichage**  
+    :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Faire défiler vers l’avant" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
+       **Faire défiler vers l’avant**  
     :::image-end:::  
 
-### Rechercher des nœuds  
+### <a name="search-for-nodes"></a>Rechercher des nodes  
 
 Vous pouvez effectuer une recherche dans l’arborescence DOM par chaîne, sélecteur CSS ou sélecteur XPath.  
 
-1.  Pointez votre curseur sur le panneau **éléments** .  
-1.  Sélectionnez `Control` + `F` \ (Windows, Linux \) ou `Command` + `F` \ (MacOS \).  La barre de recherche s’ouvre en bas de l’arborescence DOM.  
-1.  Entrez `The Moon is a Harsh Mistress`.  Dernière phrase mise en évidence dans l’arborescence DOM.  
+1.  Concentrez votre curseur sur **l’outil Éléments.**  
+1.  Sélectionnez `Control` + `F` \(Windows, Linux\) ou `Command` + `F` \(macOS\).  La barre de recherche s’ouvre en bas de l’arborescence DOM.  
+1.  Entrez `The Moon is a Harsh Mistress`.  La dernière phrase est mise en évidence dans l’arborescence DOM.  
     
-    :::image type="complex" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="Mettre en surbrillance la requête dans la barre de recherche" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
-       Mettre en surbrillance la requête dans la barre de recherche  
+    :::image type="complex" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="Mettre la requête en surbrill valeur dans la barre de recherche" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
+       Mettre la requête en surbrill valeur dans la barre de recherche  
     :::image-end:::  
     
-Comme mentionné précédemment, la barre de recherche prend également en charge les sélecteurs de CSS et de XPath.  
+Comme mentionné ci-dessus, la barre de recherche prend également en charge les sélecteurs CSS et XPath.  
 
-## Modifier le DOM  
+## <a name="edit-the-dom"></a>Modifier le DOM  
 
-Vous pouvez modifier le DOM à la volée et passer en revue la façon dont les modifications affectent la page.  
+Vous pouvez modifier le DOM à la volée et examiner l’impact des modifications sur la page.  
 
-### Modifier du contenu  
+### <a name="edit-content"></a>Modifier le contenu  
 
-Pour modifier le contenu d’un nœud, double-cliquez sur le contenu de l’arborescence DOM.  
+Pour modifier le contenu d’un nœud, double-cliquez sur le contenu dans l’arborescence DOM.  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Sous **modifier le contenu**, cliquez avec le bouton droit sur **Michelle** , puis sélectionnez **inspecter**.  
-    1.  Dans l’arborescence DOM, double-cliquez `Michelle` .  En d’autres termes, double-cliquez sur le texte entre `<li>` et `</li>` .  Le texte est mis en surbrillance pour indiquer qu’il est sélectionné.  
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Under **Edit Content**, right-choose **Michelle** and choose **Inspect**.  
+    1.  Dans l’arborescence DOM, double-cliquez `Michelle` sur .  En d’autres termes, double-cliquez sur le texte entre `<li>` et `</li>` .  Le texte est mis en surbrillant pour indiquer qu’il est sélectionné.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-edit-content.msft.png" alt-text="Modifier le texte" lightbox="../media/dom-elements-highlighted-edit-content.msft.png":::
            Modifier le texte  
         :::image-end:::  
         
-    1.  Supprimez `Michelle` , tapez `Leela` , puis sélectionnez `Enter` pour confirmer la modification.  Le texte du DOM passe de **Michelle** à **Leela**.  
+    1.  Supprimer `Michelle` , `Leela` tapez , puis `Enter` sélectionnez pour confirmer la modification.  Le texte du DOM change de **Michelle** à **Leela**.  
 
-### Modifier les attributs  
+### <a name="edit-attributes"></a>Modifier les attributs  
 
-Pour modifier les attributs, double-cliquez sur le nom ou la valeur de l’attribut.  Suivez les instructions pour savoir comment ajouter des attributs à un nœud.  
+Pour modifier les attributs, double-cliquez sur le nom ou la valeur de l’attribut.  Suivez les instructions pour apprendre à ajouter des attributs à un nœud.  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Sous **modifier les attributs**, cliquez avec le bouton droit sur **Howard** , puis sélectionnez **inspecter**.  
-1.  Double-cliquez sur `<li>` .  Le texte est mis en surbrillance pour indiquer que le nœud est sélectionné.  
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Under **Edit Attributes**, right-choose **Contrôle** and choose **Inspect**.  
+1.  Double-cliquez `<li>` sur .  Le texte est mis en surbrillade pour indiquer que le nœud est sélectionné.  
     
     :::image type="complex" source="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png" alt-text="Modifier le nœud" lightbox="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png":::
        Modifier le nœud  
     :::image-end:::  
     
-1.  Appuyez sur la `Right` touche de direction, ajoutez un espace, tapez `style="background-color:gold"` , puis sélectionnez `Enter` .  La couleur d’arrière-plan du nœud devient or.  
+1.  Sélectionnez `Right` la touche de direction, ajoutez un espace, `style="background-color:gold"` tapez, puis sélectionnez `Enter` .  La couleur d’arrière-plan du nœud est or.  
     
     :::image type="complex" source="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png" alt-text="Ajouter un attribut de style au nœud" lightbox="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png":::
        Ajouter un `style` attribut au nœud  
     :::image-end:::  
     
-### Modifier le type de nœud  
+### <a name="edit-node-type"></a>Modifier le type de nœud  
 
-Pour modifier le type d’un nœud, double-cliquez sur le type et tapez le nouveau type.  
+Pour modifier le type d’un nœud, double-cliquez sur le type, puis tapez le nouveau type.  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Sous **modifier le type de nœud**, cliquez avec le bouton droit sur **Hank** , puis sélectionnez **inspecter**.  
-    1.  Double-cliquez sur `<li>` .  Le texte `li` est mis en surbrillance.  
-    1.  Supprimez `li` , tapez `button` , puis sélectionnez `Enter` .  Le `<li>` nœud devient un `<button>` nœud.  
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Under **Edit Node Type**, right-chooseEve and choose **Inspect**. ****  
+    1.  Double-cliquez `<li>` sur .  Le texte `li` est mis en surbrillant.  
+    1.  `li`Supprimer, `button` tapez, puis sélectionnez `Enter` .  Le `<li>` nœud est changé en `<button>` nœud.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-edit-node-type-button.msft.png" alt-text="Changer le type de nœud en bouton" lightbox="../media/dom-elements-highlighted-edit-node-type-button.msft.png":::
-           Changer le type de nœud en `button`  
+           Modifier le type de nœud par `button`  
         :::image-end:::  
         
-### Réorganiser les nœuds DOM  
+### <a name="reorder-dom-nodes"></a>Réordez les nodes DOM  
 
-Faites glisser les nœuds pour les réorganiser.  
+Faites glisser les nodes pour les réorder.  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Sous **Réorganiser les nœuds DOM**, cliquez avec le bouton droit sur **Elvis Presley** , puis sélectionnez **inspecter**.  
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Under **Reorder DOM Nodes**, right-choose **Contrôle and** choose **Inspect**.  
     
     > [!NOTE]
     > Il s’agit du dernier élément de la liste.  
     
-    1.  Dans l’arborescence DOM, faites glisser `<li>Elvis Presley</li>` vers le haut de la liste.  
+    1.  Dans l’arborescence DOM, faites `<li>Elvis Presley</li>` glisser vers le haut de la liste.  
         
-        :::image type="complex" source="../media/dom-elements-reorder-dom-nodes.msft.png" alt-text="Faites glisser le nœud vers le haut de la liste." lightbox="../media/dom-elements-reorder-dom-nodes.msft.png":::
-           Faites glisser le nœud vers le haut de la liste.  
+        :::image type="complex" source="../media/dom-elements-reorder-dom-nodes.msft.png" alt-text="Faire glisser le nœud vers le haut de la liste" lightbox="../media/dom-elements-reorder-dom-nodes.msft.png":::
+           Faire glisser le nœud vers le haut de la liste  
         :::image-end:::  
         
-### État de la force  
+### <a name="force-state"></a>État de force  
 
-Vous pouvez imposer aux nœuds de rester dans des États, y compris,,, `:active` `:hover` `:focus` `:visited` et `:focus-within` .  
+Vous pouvez forcer les nodes à rester dans les états, y compris `:active` , , `:hover` et `:focus` `:visited` `:focus-within` .  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Dans **État**de l’état de force, pointez sur **le Seigneur du brusque**.  La couleur d’arrière-plan devient orange.  
-    1.  Cliquez avec le bouton droit sur **la Seigneur du brusque** , puis sélectionnez **inspecter**.  
-    1.  Cliquez avec le bouton droit `<li class="demo--hover">The Lord of the Flies</li>` de la souris et sélectionnez **forcer l’État**  >  **: hover**.  Accédez à [l’annexe: options manquantes](#appendix-missing-options) si l’option n’est pas affichée.  La couleur d’arrière-plan reste orange même si vous n’êtes pas en train de pointer sur le nœud.  
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Sous **l’état Force,** **pointez sur la souris de l’en-dessous.**  La couleur d’arrière-plan devient orange.  
+    1.  Pointez **sur le Bouton de l’enfant,** ouvrez le menu contextuel \(clic droit\), puis choisissez **Inspecter**.  
+    1.  Pointez `<li class="demo--hover">The Lord of the Flies</li>` dessus, ouvrez le menu contextuel \(clic droit\), puis choisissez **Force State**  >  **:hover**.  Accédez à [l’Annexe : Options manquantes](#appendix-missing-options) si l’option n’est pas affichée.  La couleur d’arrière-plan reste orange même si vous ne pointez pas réellement sur le nœud.  
 
-### Masquer un nœud  
+### <a name="hide-a-node"></a>Masquer un nœud  
 
 Sélectionnez `H` pour masquer un nœud.  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Sous **masquer un nœud**, cliquez avec le bouton droit sur **les étoiles ma destination** et sélectionnez **inspecter**.  
-    1.  Appuyez sur la `H` touche.  Le nœud est masqué.  
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Sous **Masquer un nœud,** sélectionnez avec le droit de la main **Les étoiles ma destination** et sélectionnez **Inspecter.**  
+    1.  Sélectionnez la `H` clé.  Le nœud est masqué.  
         
-        :::image type="complex" source="../media/dom-elements-highlighted-hide-a-node.msft.png" alt-text="Aspect du nœud dans l’arborescence DOM après son masquage" lightbox="../media/dom-elements-highlighted-hide-a-node.msft.png":::
-           Aspect du nœud dans l’arborescence DOM après son masquage  
+        :::image type="complex" source="../media/dom-elements-highlighted-hide-a-node.msft.png" alt-text="Apparence du nœud dans l’arborescence DOM une fois masqué" lightbox="../media/dom-elements-highlighted-hide-a-node.msft.png":::
+           Apparence du nœud dans l’arborescence DOM une fois masqué  
         :::image-end:::  
         
-    1.  Appuyez de `H` nouveau sur la touche.  Le nœud s’affiche à nouveau.  
+    1.  Sélectionnez `H` de nouveau la clé.  Le nœud est de nouveau affiché.  
 
-### Supprimer un nœud  
+### <a name="delete-a-node"></a>Supprimer un nœud  
 
 Sélectionnez `Delete` pour supprimer un nœud.  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Sous **supprimer un nœud**, cliquez avec le bouton droit sur **Fondation** , puis sélectionnez **inspecter**.  
-    1.  Appuyez sur la `Delete` touche.  Le nœud est supprimé.  
-    1.  Sélectionnez `Control` + `Z` \ (Windows, Linux \) ou `Command` + `Z` \ (MacOS \).  La dernière action est déstablie et le nœud réapparaît.  
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Under **Delete a Node**, right-choose **Foundation** and choose **Inspect**.  
+    1.  Sélectionnez la `Delete` clé.  Le nœud est supprimé.  
+    1.  Sélectionnez `Control` + `Z` \(Windows, Linux\) ou `Command` + `Z` \(macOS\).  La dernière action est annulée et le nœud réapparaît.  
 
-## Accéder aux nœuds de la console  
+## <a name="access-nodes-in-the-console"></a>Accès aux nodes dans la console  
 
-DevTools fournit plusieurs raccourcis pour accéder aux nœuds DOM à partir de la console ou pour obtenir des références JavaScript à chacun d’eux.  
+DevTools fournit quelques raccourcis pour accéder aux nodes DOM à partir de la console ou obtenir des références JavaScript à chacun d’eux.  
 
-### Faire référence au nœud actuellement sélectionné avec $0  
+### <a name="reference-the-currently-selected-node-with-0"></a>Référencer le nœud actuellement sélectionné avec 0 $  
 
-Lorsque vous examinez un nœud, le `== $0` texte en regard du nœud signifie que vous pouvez référencer ce nœud dans la console avec la variable `$0` .  
+Lorsque vous examinez un nœud, le texte à côté du nœud signifie que vous pouvez faire référence à ce nœud dans la `== $0` console avec la variable `$0` .  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Sous **faire référence au nœud actuellement sélectionné avec $0**, cliquez avec le bouton droit **de la main sur la gauche de l’obscurité** et sélectionnez **inspecter**.  
-    1.  Appuyez sur la `Escape` touche pour ouvrir le tiroir de la console.  
-    1.  Tapez `$0` , puis appuyez sur la `Enter` touche.  Le résultat de l’expression indique `$0` `<li>The Left Hand of Darkness</li>` .  
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Under **Reference the currently-selected node with $0**, right-choose **The Left Hand of Darkness** and choose **Inspect**.  
+    1.  Sélectionnez `Escape` la clé pour ouvrir le caisse de la console.  
+    1.  Tapez `$0` et sélectionnez la `Enter` clé.  Le résultat de l’expression indique `$0` que le résultat est `<li>The Left Hand of Darkness</li>` .  
         
-        :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png" alt-text="Résultat de la première expression $0 dans la console." lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png":::
-            Résultat de la première `$0` expression de la **console** .  
+        :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png" alt-text="Résultat de la première expression $0 dans la console" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png":::
+            Résultat de la première `$0` expression dans la **console**  
         :::image-end:::  
         
-    1.  Positionnez le pointeur sur le résultat.  Le nœud est mis en surbrillance dans la fenêtre d’affichage.  
-    1.  Cliquez `<li>Dune</li>` dans l’arborescence DOM, retapez `$0` la console, puis sélectionnez `Enter` à nouveau.  `$0`Évalue désormais `<li>Dune</li>` .  
+    1.  Pointez sur le résultat.  Le nœud est mis en surbrillade dans laport d’affichage.  
+    1.  Choisissez `<li>Dune</li>` dans l’arborescence DOM, tapez `$0` de nouveau dans la console, puis sélectionnez à `Enter` nouveau.  À présent, `$0` évalue à `<li>Dune</li>` .  
         
-        :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png" alt-text="Résultat de la deuxième expression $0 dans la console." lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png":::
-           Résultat de la deuxième `$0` expression de la **console** .  
+        :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png" alt-text="Résultat de la deuxième expression $0 dans la console" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png":::
+           Résultat de la deuxième `$0` expression dans la **console**  
         :::image-end:::  
         
-### Store en tant que variable globale  
+### <a name="store-as-global-variable"></a>Store en tant que variable globale  
 
-Si vous devez vous référer à un nœud à plusieurs reprises, stockez-le en tant que variable globale.  
+Si vous devez faire référence à un nœud plusieurs fois, stockez-le en tant que variable globale.  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Sous **stocker comme variable globale**, cliquez avec le bouton droit sur **la grande** mise en veille et sélectionnez **inspecter**.  
-    1.  Cliquez avec le bouton droit `<li>The Big Sleep</li>` dans l’arborescence DOM et sélectionnez **stocker comme variable globale**.  Accédez à [l’annexe: options manquantes](#appendix-missing-options) si l’option n’est pas affichée.  
-    1.  Entrez `temp1` dans la console et sélectionnez `Enter` .  Le résultat de l’expression indique que la variable est évaluée au nœud.  
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Sous **Store en tant que variable globale,** pointez sur la grande **veille,** ouvrez le menu contextuel \(clic droit\), puis choisissez **Inspecter**.  
+    1.  Pointez `<li>The Big Sleep</li>` dessus dans l’arborescence DOM, ouvrez le menu contextuel \(clic droit\), puis choisissez Store en tant que variable **globale.**  Accédez à [l’Annexe : Options manquantes](#appendix-missing-options) si l’option n’est pas affichée.  
+    1.  Tapez `temp1` dans la console, puis sélectionnez `Enter` .  Le résultat de l’expression indique que la variable est évaluée au nœud.  
         
-        :::image type="complex" source="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png" alt-text="Résultat de l’expression temp1." lightbox="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png":::
-           Le résultat de l' `temp1` expression.  
+        :::image type="complex" source="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png" alt-text="Résultat de l’expression temp1" lightbox="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png":::
+           Résultat de `temp1` l’expression  
         :::image-end:::  
         
-### Copier le chemin d’accès JS  
+### <a name="copy-js-path"></a>Copier le chemin d’accès JS  
 
-Copiez le chemin d’accès JavaScript vers un nœud lorsque vous devez le référencer dans un test automatisé.  
+Copiez le chemin d’accès JavaScript sur un nœud lorsque vous devez le référencer dans un test automatisé.  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Sous **copier le chemin d’accès js**, cliquez avec le bouton droit sur **le Karamazov de frères** et sélectionnez **inspecter**.  
-    1.  `<li>The Brothers Karamazov</li>`Dans l’arborescence DOM, cliquez avec le bouton droit, puis sélectionnez **copier**le  >  **chemin d’accès js**.  Une `document.querySelector()` expression qui est résolue en nœud est copiée dans le presse-papiers.  
-    1.  Sélectionnez `Control` + `V` \ (Windows, Linux \) ou `Command` + `V` \ (MacOS \) pour coller l’expression dans la console.  
-    1.  `Enter`Pour évaluer l’expression.
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Sous **Copier le chemin d’accès JS,** pointez sur le contrôle **ContrôleZov,** ouvrez le menu contextuel \(clic droit\), puis choisissez **Inspecter**.  
+    1.  Pointez `<li>The Brothers Karamazov</li>` dessus dans l’arborescence DOM, ouvrez le menu contextuel \(clic droit\), puis choisissez **Copier**le  >  **chemin d’accès JS.**  Une expression résolue en nœud a `document.querySelector()` été copiée dans le Presse-papiers.  
+    1.  Sélectionnez `Control` + `V` \(Windows, Linux\) ou `Command` + `V` \(macOS\) pour coller l’expression dans la console.  
+    1.  Sélectionnez `Enter` pour évaluer l’expression.
         
-        :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="Résultat de l’expression de chemin d’accès JS de copie" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
-           Résultat de l’expression de **chemin d’accès js de copie**  
+        :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="Résultat de l’expression Copier le chemin d’accès JS" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
+           Résultat de l’expression **Copier le chemin d’accès JS**  
         :::image-end:::  
         
-## Arrêt sur les modifications DOM  
+## <a name="break-on-dom-changes"></a>Pause sur les modifications DOM  
 
-DevTools vous permet de suspendre le JavaScript d’une page lorsque JavaScript modifie le DOM.  
+DevTools vous permet de suspendre le code JavaScript d’une page lorsque javaScript modifie le DOM.  
 
-### Annuler les modifications apportées aux attributs  
+### <a name="break-on-attribute-modifications"></a>Pause sur les modifications d’attribut  
 
-Utilisez des points d’arrêt de modification d’attribut lorsque vous souhaitez suspendre le JavaScript qui entraîne la modification des attributs d’un nœud.  
+Utilisez des points d’arrêt de modification d’attribut lorsque vous souhaitez suspendre le JavaScript qui entraîne la modification de n’importe quel attribut d’un nœud.  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Dans la section **arrêter la modification des attributs**, cliquez avec le bouton droit sur **sauerkraut** , puis sélectionnez **inspecter**.  
-    1.  Dans l’arborescence DOM, cliquez avec le bouton droit, `<li id="target">Sauerkraut</li>` puis choisissez **arrêt sur**la  >  **modification des attributs**.  Accédez à [l’annexe: options manquantes](#appendix-missing-options) si l’option n’est pas affichée.
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Under **Break on attribute modifications**, right-choose **Saueruterut** and choose **Inspect**.  
+    1.  Dans l’arborescence DOM, pointez sur , ouvrez le menu contextuel `<li id="target">Sauerkraut</li>` \(clic droit\), puis choisissez **Break On**  >  **Attribute Modifications**.  Accédez à [l’Annexe : Options manquantes](#appendix-missing-options) si l’option n’est pas affichée.
         
-        :::image type="complex" source="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png" alt-text="Annuler les modifications apportées aux attributs" lightbox="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png":::
-           **Annuler les modifications apportées aux attributs**  
+        :::image type="complex" source="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png" alt-text="Pause sur les modifications d’attribut" lightbox="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png":::
+           **Pause sur les modifications d’attribut**  
         :::image-end:::  
         
-    1.  Dans la prochaine étape, vous allez être invité à cliquer sur un bouton qui met en pause le code de la page.  Après l’interruption de la page, vous ne pouvez plus faire défiler la page.  Pour faire en **** sorte que ![ ][ImageResumeScriptIcon] la page puisse être défiler de nouveau, vous devez choisir l’un de ces scripts.
+    1.  À l’étape suivante, il vous sera demandé de choisir un bouton qui interrompt le code de la page.  Une fois la page suspendue, vous ne pouvez plus la faire défiler.  Vous devez choisir **Resume Script** \( Resume Script \) pour que la page défile ![ à ][ImageResumeScriptIcon] nouveau.
         
         :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="Où reprendre l’exécution du script" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
            Où reprendre l’exécution du script  
         :::image-end:::  
         
-    1.  Cliquez sur le bouton **définir l’arrière-plan** ci-dessus.  L' `style` attribut du nœud est alors défini sur `background-color:thistle` .  DevTools interrompt la page et met en surbrillance le code à l’origine du changement d’attribut.  
-    1.  Sélectionnez **curriculum vitae** ( ![ script de reprise ][ImageResumeScriptIcon] \), comme mentionné précédemment.  
+    1.  Sélectionnez le **bouton Définir l’arrière-plan** ci-dessus.  Cela définit `style` l’attribut du nœud sur `background-color:thistle` .  DevTools suspend la page et met en sur évidence le code à l’origine de la modification de l’attribut.  
+    1.  Choose **Resume Script** \( Resume Script ![ ][ImageResumeScriptIcon] \), as mentioned earlier.  
     
-### Arrêt lors de la suppression du nœud  
+### <a name="break-on-node-removal"></a>Rupture lors de la suppression du nœud  
 
-Si vous souhaitez suspendre la suppression d’un nœud particulier, utilisez des points d’arrêt de suppression de nœud.  
+Si vous souhaitez suspendre lorsqu’un nœud particulier est supprimé, utilisez des points d’arrêt de suppression de nœud.  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Sous **arrêt du nœud lors de la suppression du nœud**, cliquez avec le bouton droit sur **Neuromancer** , puis sélectionnez **inspecter**.  
-    1.  Dans l’arborescence DOM, cliquez avec le bouton droit, `<li id="target">Neuromancer</li>` puis sélectionnez **interrompre lors de**la  >  **suppression du nœud**.  Accédez à [l’annexe: options manquantes](#appendix-missing-options) si l’option n’est pas affichée.  
-    1.  Cliquez sur le bouton **supprimer** .  DevTools interrompt la page et met en surbrillance le code ayant entraîné la suppression du nœud.  
-    1.  Sélectionnez **curriculum vitae** ( ![ script de reprise ][ImageResumeScriptIcon] \).  
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Under **Break on Node Removal**, right-choose **Contrôlemancer** and choose **Inspect**.  
+    1.  Dans l’arborescence DOM, pointez sur , ouvrez le menu contextuel `<li id="target">Neuromancer</li>` \(clic droit\), puis choisissez **Pause sur**la suppression  >  **du nœud.**  Accédez à [l’Annexe : Options manquantes](#appendix-missing-options) si l’option n’est pas affichée.  
+    1.  Sélectionnez le **bouton Supprimer** ci-dessus.  DevTools suspend la page et met en évidence le code qui a provoqué la suppression du nœud.  
+    1.  Choose **Resume Script** \( Resume Script ![ ][ImageResumeScriptIcon] \).  
     
-### Modification de la sous-arborescence  
+### <a name="break-on-subtree-modifications"></a>Pause sur les modifications de sous-arbre  
 
-Après avoir placé un point d’arrêt de modification de sous-arborescence sur un nœud, DevTools interrompt la page lorsque l’un des descendants du nœud est ajouté ou supprimé.  
+Après avoir placé un point d’arrêt de modification de sous-arbre sur un nœud, DevTools interrompt la page lorsqu’un des descendants du nœud est ajouté ou supprimé.  
 
-1.  [Ouvrir des exemples DOM](#open-dom-examples).  
-1.  Sous **modifications de**la sous-arborescence, cliquez avec le bouton droit sur **un incendie en profondeur** et sélectionnez **inspecter**.  
-    1.  Dans l’arborescence DOM, cliquez avec le bouton droit `<ul id="target">` , qui correspond au nœud ci-dessus `<li>A Fire Upon the Deep</li>` , puis choisissez l’élément **saut de sous**-  >  **arborescence modifié**.  Accédez à [l’annexe: options manquantes](#appendix-missing-options) si l’option n’est pas affichée.  
-    1.  Choisissez **Ajouter un enfant**.  Le code s’interrompt, car un `<li>` nœud a été ajouté à la liste.  
-    1.  Sélectionnez **curriculum vitae** ( ![ script de reprise ][ImageResumeScriptIcon] \).  
+1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
+1.  Under **Break on Subtree Modifications**, right-choose A Fire Upon The **Deep** and choose **Inspect**.  
+    1.  Dans l’arborescence DOM, pointez sur , qui est le nœud ci-dessus, ouvrez le menu contextuel `<ul id="target">` `<li>A Fire Upon the Deep</li>` \(clic droit\), puis choisissez **Break On**  >  **Subtree Modifications**.  Si l’option n’est pas affichée, accédez à Annexe [: Options manquantes.](#appendix-missing-options)  
+    1.  Choose **Add Child**.  Le code est suspendu car un nœud a `<li>` été ajouté à la liste.  
+    1.  Choose **Resume Script** \( Resume Script ![ ][ImageResumeScriptIcon] \).  
     
-## Étapes suivantes  
+## <a name="next-steps"></a>Étapes suivantes  
 
-Ce qui couvre la plupart des fonctionnalités relatives au DOM dans DevTools.  Vous pouvez découvrir les autres options disponibles en cliquant avec le bouton droit sur les nœuds de l’arborescence DOM et en expérimentant les autres options qui n’ont pas été traitées dans ce didacticiel.  Accédez aux [raccourcis clavier du panneau d’éléments][DevToolsShortcutsElements].  
+Cela couvre la plupart des fonctionnalités DOM dans DevTools.  Vous pouvez découvrir le reste des fonctionnalités en pointant sur les nodes dans l’arborescence DOM, en ouvrant le menu contextuel \(clic droit\) et en testant les autres options qui n’ont pas été couvertes dans ce didacticiel.  Accédez aux [raccourcis clavier du panneau][DevToolsShortcutsElements]Éléments.  
 
-Consultez la [page d’accueil de Microsoft Edge devtools][MicrosoftEdgeDevTools] pour découvrir tout ce que vous pouvez faire avec devtools.  
+Consultez la [page d’accueil de Microsoft Edge DevTools][MicrosoftEdgeDevTools] pour découvrir tout ce que vous pouvez faire avec DevTools.  
 
 <!--Navigate to [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->  
 
-## Annexe: HTML et DOM  
+## <a name="appendix-html-versus-the-dom"></a>Annexe : HTML par rapport au DOM  
 
-La section suivante décrit rapidement la différence entre le code HTML et le DOM.  
+La section suivante explique rapidement la différence entre le code HTML et le DOM.  
 
 :::row:::
    :::column span="":::
-      Lorsque vous utilisez un navigateur Web pour demander une page, le serveur retourne du code HTML, comme dans l’extrait de code suivant.  
+      Lorsque vous utilisez un navigateur web pour demander une page, le serveur renvoie du code HTML comme l’extrait de code suivant  
 
       ```html
       <!doctype html>
@@ -345,7 +345,7 @@ La section suivante décrit rapidement la différence entre le code HTML et le D
       ```  
    :::column-end:::
    :::column span="":::
-      Le navigateur analyse le code HTML et crée une arborescence d’objets, comme la liste suivante.  
+      Le navigateur pare le code HTML et crée une arborescence d’objets comme la liste suivante.  
       
       ```dom
       html
@@ -359,11 +359,11 @@ La section suivante décrit rapidement la différence entre le code HTML et le D
    :::column-end:::
 :::row-end:::  
 
-Ce type d’arborescence d’objets ou de nœuds, qui représente le contenu de la page, est appelé le DOM.  
+Cette arborescence d’objets, ou de nodes, représentant le contenu de la page est appelée DOM.  
 
 :::row:::
    :::column span="":::
-      Dans le cas présent, le code HTML ressemble à ceci, mais supposez que le script référencé en bas du code HTML exécute l’extrait de code suivant.  
+      Pour l’instant, il ressemble au code HTML, mais supposons que le script référencé en bas du code HTML exécute l’extrait de code suivant.  
       
       ```javascript
       const h1 = document.querySelector('h1');
@@ -374,7 +374,7 @@ Ce type d’arborescence d’objets ou de nœuds, qui représente le contenu de 
       ```  
    :::column-end:::
    :::column span="":::
-      Ce code supprime le `h1` nœud et ajoute un autre `p` nœud au DOM.  Le DOM complet affiche désormais la liste suivante.  
+      Ce code supprime le `h1` nœud et en ajoute un autre au `p` DOM.  Le DOM complet affiche maintenant la liste suivante.  
       
       ```dom
       html
@@ -388,9 +388,9 @@ Ce type d’arborescence d’objets ou de nœuds, qui représente le contenu de 
    :::column-end:::
 :::row-end:::  
 
-Le code HTML de la page est désormais différent du DOM.  En d’autres termes, HTML représente le contenu de page initial et le DOM représente le contenu de la page active.  Lorsque JavaScript ajoute, supprime ou modifie des nœuds, le DOM devient différent du code HTML.  
+Le code HTML de la page est désormais différent du DOM.  En d’autres termes, html représente le contenu de la page initiale et le DOM représente le contenu de la page actuelle.  Lorsque JavaScript ajoute, supprime ou modifie des nodes, le DOM devient différent du code HTML.  
 
-Accédez à [Présentation du DOM][MDNIntroductionToDOM] pour en savoir plus.  
+Accédez [à Introduction au DOM][MDNIntroductionToDOM] pour en savoir plus.  
 
 <!--
 ## Appendix: Scroll into view  
@@ -398,22 +398,22 @@ Accédez à [Présentation du DOM][MDNIntroductionToDOM] pour en savoir plus.
 This is a continuation of the [Scroll into view](#scroll-into-view) section.  Follow the instructions below to complete the section.  
 
 1.  The `<li>Magritte</li>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.  
-1.  Right-click the `<li>Magritte</li>` node and choose **Scroll into view**.  Your viewport scrolls back up so that you may see the **Magritte** node.  Navigate to [Appendix: Missing options](#appendix-missing-options) if you are not able to see the **Scroll into view** option.
+1.  Hover on the `<li>Magritte</li>` node, open the contextual menu \(right-click\), and choose **Scroll into view**.  Your viewport scrolls back up so that the **Magritte** node is displayed.  If you the **Scroll into view** option is not displayed, navigate to [Appendix: Missing options](#appendix-missing-options).
     
     :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Scroll into view" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
        Scroll into view  
     :::image-end:::  
     -->  
 
-## Annexe: options manquantes  
+## <a name="appendix-missing-options"></a>Annexe : Options manquantes  
 
-La plupart des instructions de ce didacticiel vous demandent de cliquer avec le bouton droit sur un nœud dans l’arborescence DOM, puis de sélectionner une option dans le menu contextuel qui s’affiche.  Si l’option spécifiée dans le menu contextuel n’est pas affichée, cliquez avec le bouton droit en dehors du texte du nœud.  
+De nombreuses instructions de ce didacticiel vous indiquent de pointer sur un nœud dans l’arborescence DOM, d’ouvrir le menu contextuel \(clic droit\), puis de choisir une option dans le menu contextuel qui s’ouvre.  Si l’option spécifiée dans le menu contextuel n’est pas affichée, essayez de pointer à l’extérieur du texte du nœud et d’ouvrir le menu contextuel \(clic droit\).  
 
 :::image type="complex" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="Où choisir si toutes les options ne sont pas affichées" lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
    Où choisir si toutes les options ne sont pas affichées  
 :::image-end:::  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -424,13 +424,13 @@ La plupart des instructions de ce didacticiel vous demandent de cliquer avec le 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge \ (chrome \) | Documents Microsoft"  
-[DevToolsCssGetStarted]: ../css/index.md "Découvrir comment afficher et modifier des feuilles CSS | Documents Microsoft"  
-[DevToolsShortcutsElements]: ../shortcuts/index.md#elements-panel-keyboard-shortcuts "Raccourcis clavier du panneau d’éléments-raccourcis clavier de Microsoft Edge DevTools | Documents Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge \(Chromium\) | Documents Microsoft"  
+[DevToolsCssGetStarted]: ../css/index.md "Mise en place de l’affichage et de la modification des | Documents Microsoft"  
+[DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "Raccourcis clavier de l’outil Éléments : raccourcis clavier Microsoft Edge DevTools | Documents Microsoft"  
 
-[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Exemple de modèle DOM Microsoft Edge (chrome) DevTools Problème"
+[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Exemple de dom Microsoft Edge (Chromium) DevTools | Glitch"
 
-[MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introduction au DOM | MDN"  
+[MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Présentation de la | DOM MDN"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  

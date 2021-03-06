@@ -1,18 +1,18 @@
 ---
-description: Afficher et modifier des fichiers, créer des extraits de code, déboguer JavaScript et configurer des espaces de travail dans le panneau sources de Microsoft Edge DevTools.
+description: Afficher et modifier des fichiers, créer des extraits de code, déboguer JavaScript et configurer des espaces de travail dans le panneau Sources de Microsoft Edge DevTools.
 title: Vue d’ensemble du volet Sources
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: b90f927670146c004a335256ace28203219442eb
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 4677bf82d3506a4b8d6336ded7ab557b794fd3df
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11232944"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397761"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,22 +28,22 @@ ms.locfileid: "11232944"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Vue d’ensemble du volet Sources  
+# <a name="sources-panel-overview"></a>Vue d’ensemble du volet Sources  
 
 Utilisez le volet **sources** de Microsoft Edge DevTools pour effectuer ces actions.  
 
 *   [Afficher les fichiers](#display-files).  
 *   [Modifier les feuilles CSS et JavaScript](#edit-css-and-javascript).  
-*   [Créez et enregistrez des **extraits** de code JavaScript](#create-save-and-run-snippets), que vous pouvez exécuter sur n’importe quelle page Web.  **Les extraits de code** sont similaires aux bookmarklets.  
+*   [Créez et **enregistrez des extraits** de code JavaScript](#create-save-and-run-snippets)que vous pouvez exécuter sur n’importe quelle page web.  **Les extraits de code** sont similaires aux bookmarklets.  
 *   [Déboguer JavaScript](#debug-javascript).  
 *   [Configurer un espace de travail](#set-up-a-workspace)de telle sorte que les modifications que vous apportez dans DevTools soient enregistrées dans le code de votre système de fichiers.  
     
-## Afficher des fichiers  
+## <a name="display-files"></a>Afficher des fichiers  
 
-Utilisez le volet **page** pour afficher toutes les ressources que la page a chargées.
+Utiliser le panneau **Page** ; pour afficher toutes les ressources que la page a chargées.
 
-:::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="Le volet des pages" lightbox="../media/sources-page-pane.msft.png":::
-   Le volet des **pages**  
+:::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="Panneau Page" lightbox="../media/sources-page-pane.msft.png":::
+   Panneau **Page**  
 :::image-end:::  
 
 Organisation du volet des **pages** :  
@@ -51,13 +51,13 @@ Organisation du volet des **pages** :
 *   Le second niveau, tel que `docs.microsoft.com` dans l’illustration précédente, représente une [origine][HtmlstandardOrigin].  
 *   Le troisième niveau, le quatrième niveau ainsi de suite, représentent les répertoires et les ressources qui ont été chargés depuis cette origine.  Par exemple, dans l’illustration précédente, le chemin d’accès complet à la ressource `devtools-guide-chromium` est `docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium`  
     
-Pour afficher le contenu dans le volet **éditeur** , sélectionnez un fichier dans le volet de la **page** .  Vous pouvez afficher n’importe quel type de fichier.  Pour les images, un aperçu de l’image est affiché.  
+Choisissez un fichier dans le volet **Page** pour afficher le contenu dans **le** volet Éditeur.  Vous pouvez afficher n’importe quel type de fichier.  Pour les images, un aperçu de l’image est affiché.  
 
-:::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="Afficher le contenu de a4d10f71.index-docs.js dans le volet éditeur" lightbox="../media/sources-editor-pane.msft.png":::
-   Afficher le contenu de `a4d10f71.index-docs.js` dans le volet **éditeur**  
+:::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="Afficher le contenu des a4d10f71.index-docs.js dans le volet Éditeur" lightbox="../media/sources-editor-pane.msft.png":::
+   Affichage du contenu du `a4d10f71.index-docs.js` panneau **Éditeur**  
 :::image-end:::  
 
-## Modifier CSS et JavaScript  
+## <a name="edit-css-and-javascript"></a>Modifier CSS et JavaScript  
 
 Utilisez le volet **éditeur** pour modifier les feuilles CSS et JavaScript.  DevTools met à jour la page pour exécuter votre nouveau code.  Par exemple, si vous modifiez un fichier CSS en ajoutant la règle de style ci-dessous:
 
@@ -73,17 +73,17 @@ Cette modification doit prendre effet immédiatement.
    Modification de CSS dans le volet **éditeur** pour modifier la couleur du texte du sous-titre en rouge  
 :::image-end:::  
 
-Les modifications apportées aux feuilles CSS sont immédiatement appliquées, sans enregistrement.  Pour que les modifications JavaScript soient appliquées, sélectionnez `Control`+`S` \ (Windows, Linux \) ou `Command`+`S` \ (MacOS \).  DevTools ne ré-exécute pas de script, les seules modifications JavaScript qui prennent effet sont celles que vous effectuez dans les fonctions.  Par exemple, dans l’illustration suivante, vous remarquerez que `console.log('A')`n’exécute pas, alors que `console.log('B')` exécute.  Si DevTools ré-exécute le script entier après avoir apporté la modification, le texte `A` aurait été enregistré dans la **console**.  
+Les modifications apportées aux feuilles CSS sont immédiatement appliquées, sans enregistrement.  Pour que les modifications JavaScript soient appliquées, sélectionnez `Control`+`S` \ (Windows, Linux \) ou `Command`+`S` \ (MacOS \).  DevTools ne ré-exécute pas de script, les seules modifications JavaScript qui prennent effet sont celles que vous effectuez dans les fonctions.  Par exemple, dans l’illustration suivante, vous remarquerez que `console.log('A')`n’exécute pas, alors que `console.log('B')` exécute.  Si DevTools ré-exécute à nouveau l’intégralité du script après avoir fait la modification, le texte est enregistré `A` dans la **console**.  
 
 :::image type="complex" source="../media/edit-js.msft.png" alt-text="Modification de JavaScript dans le volet éditeur" lightbox="../media/edit-js.msft.png":::
-   Modification de JavaScript dans le volet **éditeur**  
+   Modification de JavaScript dans le panneau **Éditeur**  
 :::image-end:::  
 
-DevTools efface vos modifications CSS et JavaScript lorsque vous rechargez la page.  Accédez à [configurer un espace de travail](#set-up-a-workspace) pour découvrir comment enregistrer les modifications apportées à votre système de fichiers.  
+DevTools efface vos modifications CSS et JavaScript lorsque vous actualisez la page.  Accédez à [configurer un espace de travail](#set-up-a-workspace) pour découvrir comment enregistrer les modifications apportées à votre système de fichiers.  
 
-## Création, enregistrement et exécution d’extraits de code  
+## <a name="create-save-and-run-snippets"></a>Création, enregistrement et exécution d’extraits de code  
 
-Les extraits de code sont des scripts que vous pouvez exécuter sur n’importe quelle page.  Imaginez que vous entrez le code suivant à plusieurs reprises dans la **console**pour insérer la bibliothèque jQuery dans une page, de sorte que vous puissiez exécuter des commandes jQuery à partir de la **console**.  
+Les extraits de code sont des scripts que vous pouvez exécuter sur n’importe quelle page.  Imaginez que vous tapez à plusieurs reprises le code suivant dans la **console,** afin d’insérer la bibliothèque jQuery dans une page, afin que vous pouvez exécuter des commandes jQuery à partir de la **console**.  
 
 ```javascript
 let script = document.createElement('script');
@@ -101,14 +101,14 @@ Au lieu de cela, vous pouvez enregistrer ce code dans un **extrait de code** et 
 
 Pour exécuter un **extrait de code** :
 
-*   Ouvrez le fichier à l’aide du volet **extrait de code** , puis sélectionnez **exécuter** \ (![le bouton d’exécution][ImageRunIcon]\).  
-*   Ouvrez le [menu de commandes][DevtoolsGuideChromiumCommandMenuIndex], supprimez le `>` caractère, tapez `!` le nom de votre **extrait**de texte, puis sélectionnez `Enter` .  
+*   Ouvrez le **** fichier à l’aide du panneau Extraits de code, puis choisissez **Exécuter** \( Le bouton ![ Exécuter ][ImageRunIcon] \).  
+*   Ouvrez [le menu Commande,][DevtoolsGuideChromiumCommandMenuIndex]supprimez le caractère, tapez, tapez le nom de votre extrait `>` `!` de code, puis **** sélectionnez `Enter` .  
     
 Pour plus d’informations, accédez à [exécuter des extraits de code à partir de n’importe quelle page][DevtoolsGuideChromiumJavascriptSnippets] .
 
-## Déboguer JavaScript  
+## <a name="debug-javascript"></a>Déboguer JavaScript  
 
-Au lieu d’utiliser `console.log()` pour induire l’endroit où votre code JavaScript rencontre un problème, envisagez plutôt d’utiliser les outils de débogage de Microsoft Edge DevTools.  L’idée générale consiste à définir un point d’arrêt, qui est un point d’arrêt intentionnel dans votre code, et à parcourir le runtime de votre code, une ligne à la fois.  Lorsque vous parcourez le code, vous pouvez afficher et modifier les valeurs de toutes les propriétés et variables actuellement définies, exécuter JavaScript dans la **console**, etc.
+Au lieu d’utiliser `console.log()` pour induire l’endroit où votre code JavaScript rencontre un problème, envisagez plutôt d’utiliser les outils de débogage de Microsoft Edge DevTools.  L’idée générale consiste à définir un point d’arrêt, qui est un point d’arrêt intentionnel dans votre code, et à parcourir le runtime de votre code, une ligne à la fois.  À mesure que vous avancez dans le code, vous pouvez afficher et modifier les valeurs de toutes les propriétés et variables actuellement définies, exécuter JavaScript dans la **console,** etc.
 
 Pour les informations de base sur le débogage dans DevTools, accédez à la section [commencer le débogage de JavaScript][DevtoolsGuideChromiumJavascriptIndex].
 
@@ -116,13 +116,13 @@ Pour les informations de base sur le débogage dans DevTools, accédez à la sec
    Déboguer JavaScript  
 :::image-end:::  
 
-## Configurer un espace de travail  
+## <a name="set-up-a-workspace"></a>Configurer un espace de travail  
 
-Par défaut, lorsque vous modifiez un fichier dans l’outil **sources** , les modifications correspondantes sont perdues lorsque vous rechargez la page.  Les **espaces de travail** vous permettent d’enregistrer les modifications que vous apportez dans Devtools à votre système de fichiers.  Fondamentalement, DevTools peut être utilisé en tant qu’éditeur de code.
+Par défaut, lorsque vous modifiez un fichier dans l’outil **Sources,** ces modifications sont perdues lorsque vous actualisez la page.  Les **espaces de travail** vous permettent d’enregistrer les modifications que vous apportez dans Devtools à votre système de fichiers.  Fondamentalement, DevTools peut être utilisé en tant qu’éditeur de code.
 
 Accédez à [modifier les fichiers avec des espaces de travail][DevtoolsGuideChromiumWorkspacesIndex] pour commencer.
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -132,12 +132,12 @@ Accédez à [modifier les fichiers avec des espaces de travail][DevtoolsGuideChr
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes à l’aide du menu de commandes de Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "Commencer à utiliser le débogage JavaScript dans Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "Exécution d’extraits de code JavaScript sur n’importe quelle page avec Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "Modifier des fichiers avec des espaces de travail | Documents Microsoft"  
+[DevtoolsGuideChromiumCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes avec le menu de commandes Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "Commencer à déboguer JavaScript dans Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "Exécuter des extraits de code JavaScript sur n’importe quelle page avec Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "Modifier des fichiers à l'| Documents Microsoft"  
 
-[HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "Origine | HTML standard"  
+[HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "Origine | HTML Standard"  
 
 [W3CHtml4Frames]: https://w3.org/TR/html401/present/frames.html "Images | W3C"  
 

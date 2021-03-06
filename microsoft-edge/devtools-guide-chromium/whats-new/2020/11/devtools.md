@@ -3,16 +3,16 @@ description: Microsoft Edge sur Linux, conseils d’amélioration de webhint dan
 title: Nouveautés de DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: f56586fa77e34da7884d9d7c565b8cbcc4106c4a
-ms.sourcegitcommit: 661e8def3f27cea381c59ac38954789e736c18f4
+ms.openlocfilehash: 7d24d1ba6fe33a7420ff34376c981d608a4e30af
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387288"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397574"
 ---
 # <a name="whats-new-in-devtools-microsoft-edge-88"></a>Nouveautés de DevTools (Microsoft Edge 88)  
 
@@ -98,9 +98,9 @@ Dans le volet **styles** , les [variables CSS][MdnUsingCssCustomProperties] sont
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->  
 <!-- Subtitle:  Making service workers easier to debug for progressive web applications and more.  -->  
 
-Ces nouvelles fonctionnalités dans les outils [réseau](#network-tool), [application](#application-tool)et [sources](#sources-tool) vous aident à créer votre [PWA][ProgressiveWebAppsChromiumIndex].  Si vous éprouvez des difficultés à déboguer votre worker du service, utilisez ces fonctionnalités.  
+Ces nouvelles fonctionnalités dans les outils [réseau](#network-tool), [application](#application-tool)et [sources](#sources-tool) vous aident à créer votre [PWA][ProgressiveWebAppsIndex].  Si vous éprouvez des difficultés à déboguer votre worker du service, utilisez ces fonctionnalités.  
 
-Le routage de demande affiche les événements de `startup` et de `fetch` basés sur les requêtes réseau exécutées par le biais des workers du service.  Les chronologies sont accessibles à partir de l’outil de **l’application** ou du **réseau** .  Les chronologies sont utiles lorsque vous rencontrez des problèmes avec les workers du service et que vous souhaitez voir s’il y a un problème avec l'événement `startup` ou `fetch`.  
+Le routage de demande affiche les événements de `startup` et de `fetch` basés sur les requêtes réseau exécutées par le biais des workers du service.  Les chronologies sont accessibles à partir de l’outil de **l’application** ou du **réseau** .  Les chronologies vous aident lorsque vous avez des difficultés avec les travailleurs du service et que vous souhaitez afficher un problème avec `startup` l’événement ou `fetch` l’événement.  
 
 ### <a name="application-tool"></a>Outil de l’application  
 
@@ -179,8 +179,8 @@ Pour copier la valeur de la propriété dans le presse-papiers, accédez à [cop
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Coller une valeur de propriété dans le code Visual Studio" lightbox="../../media/2020/11/paste-property-value.msft.png":::
-         Coller une valeur de propriété dans le code Visual Studio  
+      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Coller la valeur de propriété dans Microsoft Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
+         Coller la valeur de propriété dans Microsoft Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -351,10 +351,10 @@ Si vous utilisez Windows, Linux ou macOS, envisagez d’utiliser les canaux d’
 
 <!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: /microsoft-edge/devtools-guide-chromium/css/reference#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
 
-[ProgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Applications web progressives sur Windows | Documents Microsoft"  
+[ProgressiveWebAppsIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Applications web progressives sur Windows | Documents Microsoft"  
 
-[WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools#customize-keyboard-shortcuts-in-settings "Personnaliser les raccourcis clavier dans les paramètres - nouveautés de DevTools (Microsoft Edge 87) | Documents Microsoft"  
-[WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#webhint-feedback-in-the-issues-panel "Commentaires sur les webhint dans le panneau des problèmes - nouveautés de DevTools (Microsoft Edge 85) | Documents Microsoft"  
+[WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: ../10/devtools.md#customize-keyboard-shortcuts-in-settings "Personnaliser les raccourcis clavier dans les paramètres - nouveautés de DevTools (Microsoft Edge 87) | Documents Microsoft"  
+[WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: ../06/devtools.md#webhint-feedback-in-the-issues-panel "Commentaires sur les webhint dans le panneau des problèmes - nouveautés de DevTools (Microsoft Edge 85) | Documents Microsoft"  
 
 [MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Télécharger WebDriver | Développeur Microsoft"  
 

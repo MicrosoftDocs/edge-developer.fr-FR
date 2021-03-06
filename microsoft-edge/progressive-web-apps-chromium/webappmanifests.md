@@ -1,27 +1,27 @@
 ---
-title: Utiliser le manifeste Web App pour intégrer votre application Web progressive au système d’exploitation
-description: Découvrez comment utiliser le manifeste Web App pour intégrer votre application Web progressive dans votre système d’exploitation.
+title: Utiliser le manifeste d’application web pour intégrer votre application Web progressive au système d’exploitation
+description: Découvrez comment utiliser le manifeste d’application web pour intégrer votre application Web progressive à votre système d’exploitation.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/15/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: applications Web progressives, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: f493ae0c3cef3a1950b2207d66fef65055b2d959
-ms.sourcegitcommit: d9cc829deb709b0866f6b43a5f4733682ddae5ca
+keywords: applications web progressives, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
+ms.openlocfilehash: 0063323b1fde94d84e70df51170726325dd0f2a9
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "10659292"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399098"
 ---
-# Utiliser le manifeste Web App pour intégrer votre application Web progressive au système d’exploitation
+# <a name="use-the-web-app-manifest-to-integrate-your-progressive-web-app-into-the-operating-system"></a>Utiliser le manifeste d’application web pour intégrer votre application web progressive au système d’exploitation
 
-Un manifeste de l’application Web d’un site Web détermine le fonctionnement et le comportement de votre application Web multifonction de votre application sur un appareil.  Au niveau le plus simple, le manifeste fournit des détails sur le nom de votre application, des icônes à utiliser pour représenter votre application dans les menus système et des couleurs de thème utilisées dans la barre de titre.  Le manifeste vous permet également de déverrouiller des fonctionnalités puissantes qui permettent à votre application de se comporter comme d’autres applications natives sur le système.  
+Un manifeste d’application web d’un site web régit l’apparence et le comportement de votre application web progressive \(PWA\) lorsqu’elle est installée sur un appareil.  Au niveau le plus élémentaire, le manifeste fournit des détails sur le nom de votre application, les icônes à utiliser pour représenter votre application dans les menus système et le thème colore le système d’exploitation \(OS\) utilise dans la barre de titre.  Le manifeste vous permet également de déverrouiller des fonctionnalités puissantes qui permettent à votre application de se comporter comme d’autres applications natives sur le système.  
 
-## Utiliser des raccourcis pour fournir un accès rapide aux fonctionnalités  
+## <a name="use-shortcuts-to-provide-quick-access-to-features"></a>Utiliser des raccourcis pour fournir un accès rapide aux fonctionnalités  
 
-La plupart des systèmes d’exploitation fournissent un accès rapide aux fonctionnalités d’application principales à l’aide de raccourcis dans le menu contextuel associé à l’icône de l’application.  Pour utiliser des raccourcis dans votre fichier Project Web App, incluez la `shortcuts` propriété dans le manifeste de votre application Web.  L’extrait de code suivant montre comment définir un raccourci dans le manifeste de votre application Web.  
+La plupart des systèmes d’exploitation fournissent un accès rapide aux fonctionnalités clés de l’application à l’aide de raccourcis dans le menu contextique connecté à l’icône de l’application.  Pour utiliser des raccourcis dans votre PWA, incluez `shortcuts` la propriété dans votre manifeste d’application web.  L’extrait de code suivant montre comment définir un raccourci dans le manifeste de votre application web.  
 
 ```json
 "shortcuts": [
@@ -45,11 +45,11 @@ La plupart des systèmes d’exploitation fournissent un accès rapide aux fonct
 ]
 ```  
 
-Lors de l’ajout d’un manifeste d’application Web complet, l’ajout de l’extrait de code précédent permet d’activer deux raccourcis dans le menu contextuel de l’icône de l’application.  Le premier est nommé `Play Later` et possède une icône personnalisée.  Le second est nommé `Subscriptions` et ne comporte pas d’icône, car la `icons` propriété est facultative.  La `description` propriété est également facultative et peut être utilisée pour fournir des informations supplémentaires à des fins d’accessibilité.  
+Lorsqu’il est ajouté à un manifeste d’application web complet, l’ajout de l’extrait de code précédent active deux raccourcis dans le menu contextique sur l’icône de l’application.  Le premier est nommé `Play Later` et possède une icône personnalisée.  Le second est nommé `Subscriptions` et n’a pas d’icône, car `icons` la propriété est facultative.  La propriété est également facultative et peut être utilisée pour fournir des informations supplémentaires à `description` des fins d’accessibilité.  
 
-## Identifier votre application en tant que cible de partage
+## <a name="identify-your-app-as-a-share-target"></a>Identifier votre application en tant que cible de partage
 
-De nombreux systèmes d’exploitation permettent aux utilisateurs de partager rapidement des liens et des fichiers avec des applications natives. Les applications Web progressives peuvent également participer à cette fonction par le biais du `share_target` manifeste de l’application Web. À l’aide de share_target, vous définissez la page «action» (similaire à un formulaire) et les paramètres que vous vous attendez à y transmettre. L’extrait de code suivant montre un exemple de l’utilisation de `share_target` .
+De nombreux systèmes d’exploitation permettent aux utilisateurs de partager rapidement des liens et des fichiers avec des applications natives. Les applications web progressives peuvent également participer à cette fonctionnalité, à l’aide du `share_target` membre du manifeste d’application web.  À `share_target` l’aide de , vous définissez la page \(similaire à un formulaire\) et les paramètres que vous prévoyez `"action"` d’y passer.  L’extrait de code suivant affiche un exemple `share_target` d’utilisation.
 
 ```json
 "share_target": {
@@ -62,18 +62,21 @@ De nombreux systèmes d’exploitation permettent aux utilisateurs de partager r
 }
 ```
 
-Lors de l’ajout du manifeste de l’application Web, cette action établit «/share.html» en tant que page d’action du partage. Par ailleurs, il définit trois paramètres qui seraient transmis à cette page d’action: «Title», «Text» et «URL». Ces paramètres sont stockés dans les propriétés «Name», «description» et «Link» de l’objet [ShareData](https://wicg.github.io/web-share#dom-sharedata) . Par défaut, la page d’action reçoit ces paramètres dans le cadre d’une demande GET, mais vous pouvez spécifier la requête `method` et le codage \ (en tant que `enctype` \), comme vous le feriez sur un formulaire Web.
+Lorsqu’il est ajouté au manifeste de l’application Web, il s’agit de la `"/share.html"` page d’action d’un partage. En outre, il définit trois paramètres qui seraient transmis à cette page d’action : `"title"` `"text"` , et `"url"` .  Ces paramètres sont stockés dans les propriétés et les propriétés `"name"` `"description"` de `"link"` [l’objet ShareData.][GitHubWicgWebShareDomSharedata]  Par défaut, la page d’action reçoit les paramètres dans le cadre d’une requête GET, mais vous pouvez spécifier la demande et `method` l’encodage \(en tant que \), comme vous le feriez sur un `enctype` formulaire web.
 
-## Voir également  
+## <a name="see-also"></a>Voir également  
 
-Pour en savoir plus sur les manifestes de l’application Web, consultez la liste suivante de rubriques connexes.  
+Pour en savoir plus sur les manifestes d’application web, accédez à la liste suivante des rubriques connexes.  
 
-* [Manifestes de l’application Web][MDNWebAppManifests]  
-* [Cible de partage Web][WICGShareTarget]
-* [Partager sur le Web][WICGShare]
-
+*   [Manifestes d’application web][MDNWebAppManifests]  
+*   [Cible de partage web][GitHubWicgWebShareTarget]
+*   [Partage web][GithubW3cWebShare]
+    
 <!-- links -->  
 
-[MDNWebAppManifests]: https://developer.mozilla.org/docs/Web/Manifest "Manifestes de l’application Web | MDN"  
-[WICGShareTarget]: https://wicg.github.io/web-share-target/ "API cible de partage Web | WICG"
-[WICGShare]: https://w3c.github.io/web-share/ "API de partage Web | WICG"
+[MDNWebAppManifests]: https://developer.mozilla.org/docs/Web/Manifest "Manifestes d’application web | MDN"  
+
+[GitHubWicgWebShareTarget]: https://wicg.github.io/web-share-target "Web Share Target API | WICG"
+[GitHubWicgWebShareDomSharedata]: https://wicg.github.io/web-share#dom-sharedata "Dictionnaire ShareData - Api de partage web | WICG"  
+
+[GithubW3cWebShare]: https://w3c.github.io/web-share/ "Web Share API | WICG"

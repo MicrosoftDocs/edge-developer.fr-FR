@@ -1,18 +1,18 @@
 ---
-description: Pour déplacer Microsoft Edge DevTools en bas ou à gauche de votre fenêtre d’affichage, ou dans une fenêtre séparée.
-title: Changer la position de Microsoft Edge DevTools (détacher, ancrer en bas, ancrer à gauche)
+description: Comment déplacer Microsoft Edge DevTools vers le bas ou la gauche de votre fenêtre d’affichage, ou vers une fenêtre distincte.
+title: Modifier le placement de Microsoft Edge DevTools (Undock, Dock To Bottom, Dock To Left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 65c0849af5da671bb0d76397d6d9395bc249eaac
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: e3160999a1072afffdc5c5d44f8fc60fab65d264
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125047"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399037"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,53 +28,53 @@ ms.locfileid: "11125047"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Changer la position de Microsoft Edge DevTools (détacher, ancrer en bas, ancrer à gauche)  
+# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Modifier le placement de Microsoft Edge DevTools (Undock, Dock To Bottom, Dock To Left)  
 
-Par défaut, DevTools est ancré à droite de votre fenêtre d’affichage.  Vous pouvez également ancrer en bas, ancrer à gauche, ou détacher la DevTools dans une autre fenêtre.  
+Par défaut, DevTools est docké à droite de votre port d’affichage.  Vous pouvez également vous ancrer en bas, ancrer à gauche ou détacher de DevTools une fenêtre distincte.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Sélectionner ancrer à gauche" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
-         Sélectionner `Dock To Left`  
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Choisir Station d’accueil vers la gauche" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+         Choisir `Dock To Left`  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Sélectionner ancrer à gauche" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
-         Sélectionner `Dock To Bottom`  
+      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Choose Dock To Bottom" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+         Choisir `Dock To Bottom`  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Sélectionner ancrer à gauche" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
-         Navigateur dans une fenêtre séparée  
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Navigateur dans une fenêtre distincte" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
+         Navigateur dans une fenêtre distincte  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="Sélectionner ancrer à gauche" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
-         DevTools non attaché dans une fenêtre séparée  
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="DevTools non barraté dans une fenêtre distincte" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
+         DevTools non barraté dans une fenêtre distincte  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-## Changer la position dans le menu principal  
+## <a name="change-placement-from-the-main-menu"></a>Modifier l’emplacement à partir du menu principal  
 
-1.  Sélectionnez **personnaliser et contrôler devtools** \ ( `...` \) et sélectionnez **détacher dans la fenêtre séparée** \ ( ![ détacher ][ImageUndockIcon] \), **ancrer en bas** \ ( ![ ancrer en bas ][ImageBottomIcon] \), ou **ancrer à gauche** , ![ ][ImageLeftIcon]  
+1.  Choisissez Personnaliser et contrôler **DevTools** \( \) et désémarrer dans une fenêtre distincte `...` \( **** ![ Undock ][ImageUndockIcon] \), Dock to **Bottom** \( Dock to Bottom \) ou Dock ![ To ][ImageBottomIcon] **Left** \( Dock To ![ Left ][ImageLeftIcon] \).  
     
-    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Sélectionner ancrer à gauche" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
-       Sélectionner **détacher dans une fenêtre séparée**  
+    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Choose Undock Into Separate Window" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+       Choose **Undock Into Separate Window**  
     :::image-end:::  
     
-## Changer le positionnement dans le menu de commandes  
+## <a name="change-placement-from-the-command-menu"></a>Modifier l’emplacement à partir du menu Commande  
 
-1.  [Ouvrir le menu de commandes][DevtoolsCommandMenu].  
-1.  Exécutez l’une des commandes `Dock To Bottom` suivantes: `Undock Into Separate Window`  Il n’existe actuellement aucune commande pour l’ancrage à gauche, mais vous pouvez y accéder à partir du [menu principal](#change-placement-from-the-main-menu).  
+1.  [Ouvrez le menu Commande.][DevtoolsCommandMenu]  
+1.  Exécutez l’une des commandes suivantes `Dock To Bottom` : , `Undock Into Separate Window` .  Il n’existe actuellement aucune commande pour l’ancrer à gauche, mais vous pouvez y accéder à partir du [menu principal.](#change-placement-from-the-main-menu)  
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Sélectionner ancrer à gauche" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
-       Commande détacher  
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Commande de désédock" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       Commande de désédock  
     :::image-end:::  
     
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -86,13 +86,13 @@ Par défaut, DevTools est ancré à droite de votre fenêtre d’affichage.  Vou
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: ../command-menu/index.md "Exécuter des commandes à l’aide du menu de commandes de Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Exécuter des commandes avec le menu DevTools Command de Microsoft Edge | Documents Microsoft"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/customize/placement) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/customize/placement) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

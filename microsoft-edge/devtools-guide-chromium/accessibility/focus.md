@@ -1,18 +1,18 @@
 ---
-description: Ouvrez la console, créez une expression dynamique et attribuez à l’expression la valeur document. activeElement.
+description: Ouvrez la console, créez une expression dynamique et définissez l’expression sur document.activeElement.
 title: Effectuer le suivi de l’élément actif
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: a0d0861494db87e546443c0f3a1d4f531412300c
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 3f3e59c4ee6f10b8e162f30efbff337ca2beec8d
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125306"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398314"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,31 +28,31 @@ ms.locfileid: "11125306"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Effectuer le suivi de l’élément actif  
+# <a name="track-which-element-has-focus"></a>Effectuer le suivi de l’élément actif  
 
-Imaginons que vous testiez l’accessibilité de la navigation au clavier d’une page.  Lorsque vous naviguez dans la page à l’aide de la `Tab` touche, l’appel de focus disparaît parfois, car l’élément qui a le focus est masqué.  
+Supposons que vous testiez l’accessibilité de la navigation au clavier d’une page.  Lorsque vous naviguez sur la page avec la touche, l’anneau de focus disparaît parfois car l’élément qui `Tab` a le focus est masqué.  
 
-Procédez comme suit pour effectuer le suivi de l’élément prioritaire dans DevTools.  
+Effectuer les actions suivantes pour suivre l’élément focus dans DevTools.  
 
-1.  Ouvrez la **console**.  
-1.  Sélectionnez **créer une expression dynamique** \ ( ![ créer une expression dynamique ][ImageCreateIcon] \).  
+1.  Ouvrez la **console.**  
+1.  Choose **Create Live Expression** \( Create Live Expression ![ ][ImageCreateIcon] \).  
     
-    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Créer une expression dynamique" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
-       Créer une expression dynamique  
+    :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Créer une expression live" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
+       Créer une expression live  
     :::image-end:::  
     
 1.  Entrez `document.activeElement`.  
-1.  Cliquez en dehors de l’interface utilisateur de l' **expression dynamique** pour l’enregistrer.  
+1.  Choisissez en dehors de **l’interface** utilisateur Live Expression à enregistrer.  
     
-La valeur que vous voyez ci-dessous `document.activeElement` est le résultat de l’expression.  
+La valeur affichée `document.activeElement` ci-dessous est le résultat de l’expression.  
 
-Dans la mesure où cette expression représente toujours l’élément prioritaire, vous disposez maintenant d’un moyen de toujours garder une trace de l’élément qui a le focus.  
+Étant donné que cette expression représente toujours l’élément focus, vous avez désormais un moyen de toujours suivre l’élément qui a le focus.  
 
-*   Pointez sur le résultat pour mettre en surbrillance l’élément prioritaire dans la fenêtre d’affichage.  
-*   Cliquez avec le bouton droit sur le résultat et sélectionnez **Reveal dans le panneau éléments** pour afficher l’élément dans l’arborescence DOM sur le panneau **éléments** .  
-*   Cliquez avec le bouton droit sur le résultat et sélectionnez **stocker comme variable globale** pour créer une référence variable au nœud que vous pouvez utiliser dans la **console**.  
+*   Pointez sur le résultat pour mettre en évidence l’élément focus dans la vue.  
+*   Pointez sur le résultat, ouvrez le menu contextuel \(clic droit\), puis choisissez Révéler dans le panneau **Éléments** pour afficher l’élément dans l’arborescence DOM sur l’outil **Éléments.**  
+*   Pointez sur le résultat, ouvrez le menu contextuel \(clic droit\), puis choisissez Store comme **variable** globale pour créer une référence de variable au nœud que vous pouvez utiliser dans la **console.**  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -63,10 +63,10 @@ Dans la mesure où cette expression représente toujours l’élément prioritai
 <!-- links -->  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

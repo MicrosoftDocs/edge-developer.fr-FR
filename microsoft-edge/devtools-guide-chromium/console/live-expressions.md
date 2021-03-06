@@ -1,18 +1,18 @@
 ---
-description: Si vous êtes en train de taper les mêmes expressions JavaScript dans la console à plusieurs reprises, essayez plutôt d’utiliser des expressions dynamiques.
-title: Examiner les valeurs d’expression JavaScript dans Real-Time avec des expressions dynamiques
+description: Si vous vous trouvez en train de taper les mêmes expressions JavaScript dans la console à plusieurs reprises, essayez plutôt Expressions live.
+title: Regardez les valeurs des expressions JavaScript en temps réel avec des expressions en direct
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: f6787455863f738d0fa4e014ca8fc318ad83a9cb
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 5bc49b60cc1c1dfb41c793c3fec7681fb6415e4c
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125229"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398797"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,22 +28,22 @@ ms.locfileid: "11125229"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Examiner les valeurs d’expression JavaScript dans Real-Time avec des expressions dynamiques  
+# <a name="watch-javascript-expression-values-in-real-time-with-live-expressions"></a>Regardez les valeurs des expressions JavaScript en temps réel avec des expressions en direct  
 
-Si vous vous intentez de taper la même expression JavaScript dans la console à plusieurs reprises, il peut être plus facile de créer une **expression dynamique**.  Dans les **expressions dynamiques** , vous tapez une expression une seule fois, puis épinglez celle-ci en haut de votre console.  La valeur de l’expression est mise à jour en temps réel.  
+Si vous vous trouvez en train de taper la même expression JavaScript dans la console à plusieurs reprises, vous trouverez peut-être plus facile de créer une **expression live.**  Avec **les expressions live,** vous tapez une expression une seule fois, puis vous l’épinglez en haut de votre console.  La valeur de l’expression est mise à jour en temps quasi réel.  
 
-## Créer une expression dynamique  
+## <a name="create-a-live-expression"></a>Créer une expression live  
 
-1.  [Ouvrez la console][DevToolsConsoleReferenceOpenConsole].  
-1.  Sélectionnez **créer une expression dynamique** \ ( ![ créer une expression dynamique ][ImageCreateLiveExpressionIcon] \).  La zone de texte **expression dynamique** s’affiche.  
+1.  [Ouvrez la console.][DevToolsConsoleReferenceOpenConsole]  
+1.  Choose **Create Live Expression** \( Create Live Expression ![ ][ImageCreateLiveExpressionIcon] \).  La **zone de texte Expression** en direct s’affiche.  
     
-    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Taper document. activeElement dans la zone de texte expression dynamique" lightbox="../media/console-create-live-expression.msft.png":::
-       Saisie `document.activeElement` de texte dans la zone de texte **expression dynamique**  
+    :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Saisie de document.activeElement dans la zone de texte Expression dynamique" lightbox="../media/console-create-live-expression.msft.png":::
+       Saisie dans `document.activeElement` la zone de texte **Expression** live  
     :::image-end:::  
     
-1.  Sélectionnez `Control` + `Enter` \ (Windows, Linux \) ou `Command` + `Enter` \ (MacOS \) pour enregistrer l’expression, ou sélectionnez en dehors de la zone de texte de l' **expression dynamique** .  
+1.  Sélectionnez `Control` + `Enter` \(Windows, Linux\) ou `Command` + `Enter` \(macOS\) **** pour enregistrer l’expression, ou choisissez en dehors de la boîte de texte Live Expression.  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -53,13 +53,13 @@ Si vous vous intentez de taper la même expression JavaScript dans la console à
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Ouvrez la console-référence de la console | Documents Microsoft"  
+[DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Ouvrez la console - Console Reference | Documents Microsoft"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

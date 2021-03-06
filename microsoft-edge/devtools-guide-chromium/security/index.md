@@ -1,18 +1,18 @@
 ---
-description: Utilisez le volet sécurité pour vous assurer qu’une page est entièrement protégée par HTTPs.
-title: Présentation des problèmes de sécurité avec Microsoft Edge DevTools
+description: Utilisez le Panneau de sécurité pour vous assurer qu’une page est entièrement protégée par HTTPS.
+title: Comprendre les problèmes de sécurité avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 5bef22eae8deacc81e31cf6d1c7791e016541346
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 71138ad33afb9eb56055fa522eb35edb71974c89
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230613"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397775"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,7 +28,7 @@ ms.locfileid: "11230613"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Présentation des problèmes de sécurité avec Microsoft Edge DevTools  
+# <a name="understand-security-issues-with-microsoft-edge-devtools"></a>Comprendre les problèmes de sécurité avec Microsoft Edge DevTools  
 
   
 
@@ -36,81 +36,81 @@ ms.locfileid: "11230613"
 
 <!--todo: add section when why-https is available -->  
 
-## Ouvrir le volet sécurité  
+## <a name="open-the-security-panel"></a>Ouvrir le panneau de sécurité  
 
-Le volet **sécurité** est l’endroit principal de devtools pour vérifier la sécurité d’une page.  
+Le **panneau** de sécurité est l’endroit principal dans DevTools pour l’inspection de la sécurité d’une page.  
 
-1.  [Ouvrez devtools][DevToolsOpen].  
-1.  Sélectionnez l’onglet **sécurité** pour ouvrir le volet **sécurité** .  
+1.  [Ouvrez DevTools][DevToolsOpen].  
+1.  Sélectionnez **l’onglet** Sécurité pour ouvrir **l’outil** Sécurité.  
     
-    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="Volet sécurité" lightbox="../media/security-security-overview-secure.msft.png":::
-       Volet **sécurité**  
+    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="Panneau de sécurité" lightbox="../media/security-security-overview-secure.msft.png":::
+       Panneau **de** sécurité  
     :::image-end:::  
     
-## Problèmes courants  
+## <a name="common-problems"></a>Problèmes courants  
 
-### Origines principales non sécurisées  
+### <a name="non-secure-main-origins"></a>Origines principales non sécurisées  
 
-Lorsque l’origine principale d’une page n’est pas sécurisée, la **vue d’ensemble** de la sécurité indique que **cette page n’est pas sécurisée**.  
+Lorsque l’origine principale d’une page n’est pas sécurisée, la vue **d’ensemble** de la sécurité indique **que cette page n’est pas sécurisée.**  
 
 :::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="Page non sécurisée" lightbox="../media/security-security-overview-non-secure.msft.png":::
    Page non sécurisée  
 :::image-end:::  
 
-Ce problème survient lorsque l’URL visitée a été demandée sur HTTP.  Pour garantir la sécurité de votre application, vous devez la demander sur HTTPs.  Par exemple, si vous observez l’URL dans la barre d’adresses, il est probable que le résultat ressemble à ceci `http://example.com` .  Pour sécuriser l’URL, l’URL devrait être `https://example.com` .  
+Ce problème se produit lorsque l’URL que vous avez visitée a été demandée sur HTTP.  Pour le sécuriser, vous devez le demander sur HTTPS.  Par exemple, si vous examinez l’URL dans votre barre d’adresses, elle ressemble probablement à `http://example.com` .  Pour sécuriser l’URL doit être `https://example.com` .  
 
-Si vous avez déjà configuré HTTPs sur votre serveur, il vous suffit de configurer votre serveur pour rediriger toutes les demandes HTTP vers HTTPs.  
+Si vous avez déjà configuré HTTPS sur votre serveur, il vous suffit de configurer votre serveur pour qu’il redirige toutes les requêtes HTTP vers HTTPS.  
 
-Si vous n’avez pas configuré HTTPs sur votre serveur, [cryptez][LetsEncrypt] -vous pour démarrer le processus de manière gratuite et relativement simple.  Vous pouvez également envisagez d’héberger votre site sur un réseau de distribution de contenu (CDN).  La plupart des sites hôtes CDN les plus importants sur HTTPs par défaut.  
+Si vous [n’avez][LetsEncrypt] pas installé HTTPS sur votre serveur, chiffrer offre un moyen gratuit et relativement simple de démarrer le processus.  Vous pouvez également envisager d’héberger votre site sur un CDN.  La plupart des PRINCIPAUX CDN hébergent des sites sur HTTPS par défaut maintenant.  
 
 > [!TIP]
-> La directive [utiliser HTTPS][WebhintUseHttps] dans [webhint][Webhint] permet d’automatiser le processus de vérification de l’utilisation de toutes les demandes HTTP adressées aux HTTPS.  
+> [L’indication Utiliser HTTPS][WebhintUseHttps] dans [webhint][Webhint] peut vous aider à automatiser le processus de s’assurer que toutes les requêtes HTTP sont dirigées vers HTTPS.  
 
-### Contenu mixte  
+### <a name="mixed-content"></a>Contenu mixte  
 
-Le **contenu mixte** signifie que l’origine principale d’une page est sécurisée, mais que la page a demandé des ressources d’origines non sécurisées.  Les pages de contenu mixte ne sont que partiellement protégées, car le contenu HTTP est accessible aux renifleurs et est vulnérable aux attaques par le biais du milieu.  
+**Le contenu mixte** signifie que l’origine principale d’une page est sécurisée, mais que la page a demandé des ressources à partir d’origines non sécurisées.  Les pages de contenu mixte ne sont que partiellement protégées, car le contenu HTTP est accessible aux renifleurs et vulnérable aux attaques de l’homme au milieu.  
 
 :::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Contenu mixte" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
    Contenu mixte  
 :::image-end:::  
 
-Dans la figure précédente, sélectionnez **afficher une requête dans le panneau réseau** pour ouvrir le panneau **réseau** et appliquer le `mixed-content:displayed` filtre de sorte que le **Journal réseau** n’affiche que les ressources non sécurisées.  
+Dans la figure précédente, choisissez Afficher **1** **** dans le panneau Réseau pour ouvrir l’outil Réseau et appliquer le filtre afin que le journal réseau affiche uniquement les ressources `mixed-content:displayed` non **** sécurisées.  
 
-:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Ressources mixtes du journal réseau" lightbox="../media/security-network-filter.msft.png":::
-   Ressources mixtes du **Journal réseau**  
+:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Ressources mixtes dans le journal réseau" lightbox="../media/security-network-filter.msft.png":::
+   Ressources mixtes dans le **journal réseau**  
 :::image-end:::  
 
-## Afficher les détails  
+## <a name="view-details"></a>Afficher les détails  
 
-### Afficher le certificat d’origine principal  
+### <a name="view-main-origin-certificate"></a>Afficher le certificat d’origine principale  
 
-Dans la **vue d’ensemble**de la sécurité, sélectionnez **afficher le certificat** pour inspecter rapidement le certificat de l’origine principale.  
+Dans la **vue d’ensemble de**la sécurité, choisissez **Afficher le certificat** pour inspecter rapidement le certificat pour l’origine principale.  
 
-:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="Un certificat d’origine principal;" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
-   Un certificat d’origine principal;  
+:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="Un certificat d’origine principale" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
+   Un certificat d’origine principale  
 :::image-end:::  
 
-### Afficher les détails de l’origine  
+### <a name="view-origin-details"></a>Afficher les détails de l’origine  
 
-Pour afficher les détails de l’origine, sélectionnez l’une des entrées dans le volet de navigation de gauche.  Dans la page détails, vous pouvez consulter les informations de connexion et de certificat.  Les informations de transparence du certificat apparaissent également lorsqu’elles sont disponibles.  
+Choisissez l’une des entrées du navigation gauche pour afficher les détails de l’origine.  À partir de la page de détails, vous pouvez afficher les informations de connexion et de certificat.  Les informations de transparence des certificats sont également affichées lorsqu’elles sont disponibles.  
 
 :::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Détails de l’origine principale" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
    Détails de l’origine principale  
 :::image-end:::  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
 [DevToolsOpen]: ../open/index.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
 
-[LetsEncrypt]: https://letsencrypt.org "Utiliser des certificats SSL/TLS sans cryptage"  
+[LetsEncrypt]: https://letsencrypt.org "Chiffrement - Certificats SSL/TLS gratuits"  
 
 [Webhint]: https://webhint.io "webhint"  
-[WebhintUseHttps]: https://webhint.io/docs/user-guide/hints/hint-https-only "Utiliser HTTPs | documentation webhint"  
+[WebhintUseHttps]: https://webhint.io/docs/user-guide/hints/hint-https-only "Utiliser le protocole HTTPS | documentation webhint"  
 
 <!--[mixed]: /web/fundamentals/security/prevent-mixed-content/what-is-mixed-content ""  -->
 

@@ -1,6 +1,8 @@
 ---
-description: Gestion des événements Windows Runtime en JavaScript.
+description: Gestion des événements Windows Runtime dans JavaScript
 title: Gestion des événements Windows Runtime dans JavaScript
+ms.custom: ''
+ms.date: 11/03/2020
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 ms.topic: article
@@ -11,20 +13,19 @@ ms.assetid: d9436aff-2c30-4846-b8df-eaa3e63fd75c
 caps.latest.revision: 6
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: e0a3e35c908c766c0308903381b271f5ccdb27a3
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 08562f7ebff0c02b96bfc8229238a62463b95451
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233340"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397523"
 ---
-# Gestion des événements Windows Runtime dans JavaScript  
+# <a name="handling-windows-runtime-events-in-javascript"></a>Gestion des événements Windows Runtime dans JavaScript  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-Les événements Windows Runtime ne sont pas représentés de la même manière dans JavaScript en C++ ou .NET Framework.  Il ne s’agit pas de propriétés de classe, mais sont des identificateurs de chaîne \ (minuscules) qui sont transmis aux `addEventListener` méthodes et au cours `removeEventListener` .  Par exemple, vous pouvez ajouter un gestionnaire d’événements pour l’événement [géolocateur. PositionChanged][UwpWindowsGeolocationGeolocatorDevicesPositionChanged] en transmettant la chaîne `positionchanged` à la `Geolocator.addEventListener` méthode:  
+Les événements Windows Runtime ne sont pas représentés de la même manière en JavaScript qu’en C++ ou dans le .NET Framework.  Ce ne sont pas des propriétés de classe, mais plutôt des identificateurs de chaîne \(minuscules\) qui sont transmis aux méthodes et à la `addEventListener` `removeEventListener` classe.  Par exemple, vous pouvez ajouter un handler d’événements pour l’événement [Geolocator.PositionChanged][UwpWindowsGeolocationGeolocatorDevicesPositionChanged] en passant la chaîne `positionchanged` à la méthode `Geolocator.addEventListener` :  
 
 ```javascript  
 var locator = new Windows.Devices.Geolocation.Geolocator();
@@ -35,7 +36,7 @@ locator.addEventListener(
     });
 ```  
 
-Vous pouvez également définir la `locator.onpositionchanged` propriété:  
+Vous pouvez également définir la `locator.onpositionchanged` propriété :  
 
 ```javascript
 locator.onpositionchanged =
@@ -44,7 +45,7 @@ locator.onpositionchanged =
     };
 ```  
 
-Une autre différence entre .NET/C++ et JavaScript est le nombre de paramètres effectués par un gestionnaire d’événements.  Dans .NET/C++, un gestionnaire utilise deux éléments: l’expéditeur de l’événement et les données d’événement.  Dans JavaScript, les deux sont regroupées comme un `Event` objet unique.  Dans l’exemple suivant, le `ev` paramètre contient à la fois l’expéditeur de l’événement \ (la `target` propriété \) et les propriétés des données d’événements (ici, uniquement `position` \).  Les propriétés de données d’événements sont décrites dans chaque événement.  
+Une autre différence entre .NET/C++ et JavaScript est le nombre de paramètres pris par un handler d’événements.  Dans .NET/C++, un handler en prend deux : l’expéditeur de l’événement et les données d’événement.  Dans JavaScript, les deux sont regroupés en tant qu’objet `Event` unique.  Dans l’exemple suivant, le paramètre contient à la fois l’expéditeur de l’événement \(la propriété\) et les propriétés de données d’événement `ev` `target` \(ici, juste `position` \).  Les propriétés de données d’événement sont les propriétés documentées pour chaque événement.  
 
 ```javascript
 function (ev) {
@@ -58,7 +59,7 @@ function (ev) {
 > [!IMPORTANT]
 > Les fonctionnalités Windows Runtime ne sont pas disponibles pour les applications qui s’exécutent dans Internet Explorer.  
 
-## Voir également  
+## <a name="see-also"></a>Voir également  
 
 [Utilisation de Windows Runtime en JavaScript][WindowsRuntimeJavascript]  
 
@@ -66,4 +67,4 @@ function (ev) {
 
 [WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Utilisation de Windows Runtime en JavaScript | Documents Microsoft"  
 
-[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Classe de géolocalisation | Documents Microsoft"  
+[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Classe Geolocator | Documents Microsoft"  

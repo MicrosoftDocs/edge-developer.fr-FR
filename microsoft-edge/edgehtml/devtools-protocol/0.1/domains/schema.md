@@ -1,78 +1,52 @@
 ---
-description: Référence de la version 0,1 (EdgeHTML) du protocole DevTools pour le domaine de schéma. Fournit des informations sur le schéma de protocole.
-title: Domain Schema-DevTools Protocol version 0,1 (EdgeHTML)
+description: Référence du protocole DevTools version 0.1 (EdgeHTML) pour le domaine de schéma. Fournit des informations sur le schéma de protocole.
+title: Domaine de schéma - DevTools Protocol Version 0.1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 7b4ec71b7799ae099c673bd81fa5b15a8ddd5d27
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: e89f4269b4984ee49e83a23fcab9679485c49040
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233242"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398860"
 ---
-# Domain Schema-DevTools Protocol version 0,1 (EdgeHTML)  
+# <a name="schema-domain---devtools-protocol-version-01-edgehtml"></a>Domaine de schéma - DevTools Protocol Version 0.1 (EdgeHTML)  
 
-Fournit des informations sur le schéma de protocole.
+Fournit des informations sur le schéma de protocole.  
 
-| | |
-|-|-|
-| [**Méthodes**](#methods) | [getDomains](#getdomains) |
-| [**Types**](#types) | [Domaine](#domain) |
-## Méthodes
+| Classification | Membres |  
+|:--- |:--- |  
+| [Méthodes](#methods) | [getDomains](#getdomains) |  
+| [Types](#types) | [Domaine](#domain) |  
 
-### getDomains
-Renvoie les domaines pris en charge.
+## <a name="methods"></a>Méthodes  
 
-<table>
-    <thead>
-        <tr>
-            <th>Renvoie</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>ils</td>
-            <td><a href="#domain"><code class="flyout">Domain[]</code></a></td>
-            <td>Liste des domaines pris en charge.</td>
-        </tr>
-    </tbody>
-</table>
+### <a name="getdomains"></a>getDomains  
 
----
+Renvoie les domaines pris en charge.  
 
-## Types
+| Renvoie | Type | Détails |  
+|:--- |:--- |:--- |  
+| domains | [Domaine[]](#domain) | Liste des domaines pris en charge. |  
 
-### <a name="domain"></a> Domaine `object`
+---  
 
-Description du domaine du protocole.
+## <a name="types"></a>Types  
 
-<table>
-    <thead>
-        <tr>
-            <th>Propriétés</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>name</td>
-            <td><code class="flyout">string</code></td>
-            <td>Nom de domaine.</td>
-        </tr>
-        <tr>
-            <td>version</td>
-            <td><code class="flyout">string</code></td>
-            <td>Version du domaine.</td>
-        </tr>
-    </tbody>
-</table>
+### <a name="domain-object"></a>Objet Domain  
 
----
+<a name="domain"></a>  
+
+Description du domaine de protocole.  
+
+| Propriétés | Type | Détails |  
+|:--- |:--- |:--- |  
+| name | `string` | Nom de domaine. |  
+| version | `string` | Version du domaine. |  
+
+---  

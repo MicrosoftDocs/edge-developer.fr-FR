@@ -1,18 +1,18 @@
 ---
-description: Utilisez l’instrumentation d’allocation sur la barre de planning pour rechercher les objets qui ne sont pas correctement nettoyés de la mémoire et conservez la mémoire.
-title: Utilisation de l’instrumentation d’allocation sur une barre de planning
+description: Utilisez l’instrumentation d’allocation sur la chronologie pour rechercher des objets qui ne sont pas correctement collectés à la mémoire et continuer à conserver la mémoire.
+title: Utilisation de l’instrumentation d’allocation sur la chronologie
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 946c2d8b45f316b491a604c16c37bb2467983222
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 374b7f0ad80b8975319b2b0ec5cecf42ce4bde82
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230914"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397817"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -28,71 +28,71 @@ ms.locfileid: "11230914"
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# Utilisation de l’instrumentation d’allocation sur une barre de planning  
+# <a name="how-to-use-allocation-instrumentation-on-timeline"></a>Utilisation de l’instrumentation d’allocation sur la chronologie  
 
-Utilisez l' **instrumentation d’allocation sur la barre de Planning** pour rechercher les objets qui ne sont pas correctement nettoyés de la mémoire et conservez la mémoire.  
+Utilisez **l’instrumentation d’allocation** sur la chronologie pour rechercher des objets qui ne sont pas correctement collectés à la mémoire et continuer à conserver de la mémoire.  
 
-## Fonctionnement de l’instrumentation d’allocation sur la chronologie  
+## <a name="how-allocation-instrumentation-on-timeline-works"></a>Fonctionnement de l’instrumentation d’allocation sur la chronologie  
 
-L' **instrumentation d’allocation sur la chronologie** combine les informations d’instantané détaillées du **profileur de segment de mémoire** avec la mise à jour incrémentielle et le suivi du panneau **performance** .  De même, le suivi de l’attribution des tas pour les objets implique le démarrage d’un enregistrement, l’exécution d’une séquence d’actions et l’arrêt de l’enregistrement à des fins d’analyse.  
+**L’instrumentation d’allocation** sur la chronologie combine les informations de capture instantanée détaillées du **profileur** de tas avec la mise à jour incrémentielle et le suivi du panneau **Performance.**  De même, le suivi de l’allocation de tas pour les objets implique de démarrer un enregistrement, d’effectuer une séquence d’actions et d’arrêter l’enregistrement pour analyse.  
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-L' **instrumentation d’allocation sur la chronologie** utilise périodiquement des instantanés de tas tout au long de l’enregistrement \ (aussi souvent que chaque 50 ms \) et un instantané final à la fin de l’enregistrement.  
+**L’instrumentation d’allocation** sur la chronologie prend régulièrement des instantanés de tas dans l’enregistrement \(aussi souvent que toutes les 50 ms\) et une capture instantanée finale à la fin de l’enregistrement.  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Instrumentation d’allocation sur une barre de planning" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
-   **Instrumentation d’allocation sur une barre de planning**  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Instrumentation d’allocation sur la chronologie" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
+   **Instrumentation d’allocation sur la chronologie**  
 :::image-end:::  
 
 > [!NOTE]
-> Le nombre `@` qui se trouve après est un ID d’objet qui persiste sur les différentes captures d’image effectuées lors de la session d’enregistrement.  L’ID d’objet persistant autorise une comparaison précise entre les États des tas.  Les objets étant déplacés lors du nettoyage de la mémoire, l’affichage de l’adresse d’un objet n’est pas judicieux.  
+> Nombre après l’ID d’objet qui persiste dans les `@` multiples captures instantanées prises pendant la session d’enregistrement.  L’ID d’objet persistant permet une comparaison précise entre les états de tas.  Les objets sont déplacés pendant les collectes de la garbage, de sorte que l’affichage de l’adresse d’un objet n’a aucun sens.  
 
-## Activer l’instrumentation d’allocation sur la chronologie  
+## <a name="enable-allocation-instrumentation-on-timeline"></a>Activer l’instrumentation d’allocation sur la chronologie  
 
-Pour commencer à utiliser l' **instrumentation d’allocation sur la chronologie**, procédez comme suit.  
+Effectuer les actions suivantes pour commencer à utiliser **l’instrumentation d’allocation sur la chronologie**.  
 
-1.  [Ouvrez le devtools][DevtoolsOpenIndex].  
-1.  Ouvrez le panneau **mémoire** , sélectionnez la case **d’option attribution de l’instrumentation sur la chronologie** .  
+1.  [Ouvrez DevTools][DevtoolsOpenIndex].  
+1.  Ouvrez le **panneau Mémoire,** sélectionnez l’instrumentation **d’allocation sur la bouton d’radio** de chronologie.  
 1.  Démarrer l’enregistrement.  
     
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Enregistrer le profil d’allocation du tas" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
-       Enregistrer le profil d’allocation du tas  
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Profileur d’allocations de tas d’enregistrement" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+       Profileur d’allocations de tas d’enregistrement  
     :::image-end:::  
     
-## Lire une chronologie d’allocation de tas  
+## <a name="read-a-heap-allocation-timeline"></a>Lire une chronologie d’allocation de tas  
 
-La chronologie de l’allocation du tas montre l’emplacement de création des objets et identifie le chemin de conservation.  Dans l’illustration suivante, les barres du haut indiquent le nombre de nouveaux objets dans le tas.  
+La chronologie d’allocation de tas indique où les objets sont créés et identifie le chemin de rétention.  Dans la figure suivante, les barres en haut indiquent quand de nouveaux objets sont trouvés dans le tas.  
 
-La hauteur de chaque barre correspond à la taille des objets récemment alloués, et la couleur des barres indique si ces objets sont toujours présents dans l’instantané final du tas.  Les barres bleues indiquent les objets qui sont toujours en temps réel à la fin de la chronologie, car ils indiquent des objets qui ont été alloués lors de la chronologie, mais qui ont été collectés par le garbage collector.  
+La hauteur de chaque barre correspond à la taille des objets récemment alloués et la couleur des barres indique si ces objets sont toujours ou non en direct dans la capture instantanée finale du tas.  Les barres bleues indiquent les objets qui sont toujours en vie à la fin de la chronologie, les barres grises indiquent les objets qui ont été alloués au cours de la chronologie, mais qui ont depuis été collectés à la garbage.  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Instrumentation d’allocation sur un instantané de chronologie" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
-   **Instrumentation d’allocation sur un instantané de chronologie**  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Instrumentation d’allocation sur la capture instantanée de chronologie" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
+   **Instrumentation d’allocation sur la capture instantanée de** chronologie  
 :::image-end:::  
 
 <!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
-<!--todo: redo figure 4 with multiple click actions  -->  
+<!--todo: redo figure 4 with multiple choose actions  -->  
 
-Vous pouvez utiliser les curseurs de la chronologie ci-dessus pour effectuer un zoom sur cet instantané particulier et passer en revue les objets qui ont été récemment attribués à ce point:  
+Vous pouvez utiliser les curseurs de la chronologie ci-dessus pour effectuer un zoom sur cette capture instantanée particulière et passer en revue les objets qui ont été récemment alloués à ce stade :  
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Effectuer un zoom avant sur un instantané" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
-   Effectuer un zoom avant sur un instantané  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Zoom sur une capture instantanée" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
+   Zoom sur une capture instantanée  
 :::image-end:::  
 
-Cliquez sur un objet spécifique du tas pour afficher l’arborescence de conservation située dans la partie inférieure de l’instantané de tas.  Si vous examinez le chemin de conservation de l’objet, vous devez disposer d’informations suffisantes pour comprendre la raison pour laquelle l’objet n’a pas été collecté et vous devez apporter les modifications de code nécessaires pour supprimer la référence inutile.  
+Le choix d’un objet spécifique dans le tas montre l’arborescence de rétention dans la partie inférieure de la capture instantanée du tas.  L’examen du chemin de rétention de l’objet doit vous fournir suffisamment d’informations pour comprendre pourquoi l’objet n’a pas été collecté et vous devez apporter les modifications de code nécessaires pour supprimer la référence inutile.  
 
-## Afficher l’allocation de mémoire par fonction  
+## <a name="view-memory-allocation-by-function"></a>Afficher l’allocation de mémoire par fonction  
 
-Vous pouvez afficher l’allocation de mémoire par fonction JavaScript.  Pour plus d’informations, accédez à la section [vérifier l’allocation de mémoire par fonction][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
+Vous pouvez afficher l’allocation de mémoire par fonction JavaScript.  Pour plus d’informations, accédez à [Examiner l’allocation de mémoire par fonction.][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: ../open/index.md "Ouvrir Microsoft Edge (chrome) DevTools | Documents Microsoft"
-[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Analyser l’allocation de mémoire par fonction-résoudre les problèmes de mémoire Documents Microsoft"  
+[DevToolsOpenIndex]: ../open/index.md "Ouvrez Microsoft Edge (Chromium) DevTools | Documents Microsoft"
+[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Examiner l’allocation de mémoire par fonction : résoudre les problèmes de mémoire | Documents Microsoft"  
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
@@ -101,7 +101,7 @@ Vous pouvez afficher l’allocation de mémoire par fonction JavaScript.  Pour p
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) et est créée par [Meggin Kearney][MegginKearney] \ (Technical Writer \).  
+> La page d’origine se trouve [ici](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) et est co-auteure par [Meggin Kearney][MegginKearney] \(Technical Writer\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  

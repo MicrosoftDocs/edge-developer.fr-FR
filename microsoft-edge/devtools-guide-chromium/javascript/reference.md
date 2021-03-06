@@ -1,18 +1,18 @@
 ---
-description: Découvrez de nouveaux flux de travail de débogage dans cette référence complète des fonctionnalités de débogage de Microsoft Edge DevTools.
+description: Découvrez les nouveaux flux de travail de débogage dans cette référence complète des fonctionnalités de débogage Microsoft Edge DevTools.
 title: Référence de débogage JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: c1d6b9d301ff2bc696900b48d80a3d5352f8fd58
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 09a2d61269b2fe3a23a57ce58eb1c89b12a7639c
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124802"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398475"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,31 +28,31 @@ ms.locfileid: "11124802"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Référence de débogage JavaScript  
+# <a name="javascript-debugging-reference"></a>Référence de débogage JavaScript  
 
-Découvrez les nouveaux flux de travail de débogage avec la référence complète suivante des fonctionnalités de débogage de Microsoft Edge DevTools.  
+Découvrez les nouveaux flux de travail de débogage avec la référence complète suivante des fonctionnalités de débogage Microsoft Edge DevTools.  
 
-Pour en savoir plus sur le [débogage, voir prendre en main le langage JavaScript dans Microsoft Edge devtools][DevToolsJavascriptGetStarted] .  
+Pour découvrir les principes de base du débogage, accédez à La mise en place du débogage JavaScript dans [Microsoft Edge DevTools][DevToolsJavascriptGetStarted].  
 
-## Suspendre le code avec des points d’arrêt  
+## <a name="pause-code-with-breakpoints"></a>Suspendre le code avec des points d’arrêt  
 
-Définissez un point d’arrêt pour pouvoir mettre en pause votre code au milieu de l’exécution.  
+Définissez un point d’arrêt afin de pouvoir suspendre votre code au milieu de l’runtime.  
 
-Pour plus d’informations sur la façon de définir des points d’arrêt, voir [suspendre votre code avec des points d’arrêt][DevToolsJavascriptBreakpoints] .  
+Pour découvrir comment définir des points d’arrêt, accédez à [Suspendre votre code avec des points d’arrêt.][DevToolsJavascriptBreakpoints]  
 
-## Parcourir le code  
+## <a name="step-through-code"></a>Code pas à pas  
 
-Une fois votre code interrompu, parcourez-le, une ligne à la fois, en analysant le flux de contrôle et les valeurs de propriétés.  
+Une fois que votre code est suspendu, pas à pas, une ligne à la fois, en enquêtant sur le flux de contrôle et les valeurs des propriétés en cours de route.  
 
-### Étape au-dessus de la ligne de code  
+### <a name="step-over-line-of-code"></a>Pas à pas avant la ligne de code  
 
-Lorsqu’elle est suspendue sur une ligne de code contenant une fonction qui n’est pas pertinente pour le problème que vous déboguez **Step over** , cliquez sur le ![ bouton pas ][ImageStepOverIcon] à pas pour exécuter la fonction sans vous mettre à niveau.  
+Lorsqu’il est suspendu sur une ligne de code contenant une fonction qui n’est pas pertinente pour le problème que vous déboguer, choisissez le bouton Pas à pas principal **\(** Pas-à-pas \) pour exécuter la fonction sans y aller pas à ![ ][ImageStepOverIcon] pas.  
 
-:::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
-   Sélectionnez **pas à pas**  
+:::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="Choose Step over" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
+   Choose **Step over**  
 :::image-end:::  
 
-Par exemple, supposons que vous déboguez l’extrait de code suivant.  
+Par exemple, supposons que vous déboguer l’extrait de code suivant.  
 
 ```javascript
 function updateHeader() {
@@ -66,17 +66,17 @@ function getName() {
 }
 ```  
 
-Vous êtes en pause `A` .  En appuyant sur la touche de **progression**, devtools exécute tout le code de la fonction que vous êtes en passe, c’est-à-dire `B` et `C` .  DevTools puis s’interrompt `D` .  
+Vous êtes `A` suspendu.  Une fois que vous avez choisi **Pas**à pas, DevTools exécute tout le code dans la fonction que vous exécutez pas à pas, c’est-à-dire `B` et `C` .  DevTools s’interrompt ensuite sur `D` .  
 
-### Passer à la ligne de code  
+### <a name="step-into-line-of-code"></a>Pas à pas dans la ligne de code  
 
-Lorsque vous êtes en pause sur une ligne de code contenant un appel de fonction associé au problème que vous déboguez, cliquez sur le bouton pas à pas détaillé **dans** \ ( ![ étape en ][ImageStepIntoIcon] \) pour examiner davantage cette fonction.  
+Lorsqu’il est suspendu sur une ligne de code contenant un appel de fonction lié au problème que vous déboguer, choisissez le bouton Pas à pas dans **\(** Pas à pas dans \) pour examiner cette fonction plus ![ en ][ImageStepIntoIcon] détail.  
 
-:::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
-   Sélectionnez la **procédure dans**  
+:::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="Choose Step into" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
+   Choose **Step into**  
 :::image-end:::  
 
-Par exemple, supposons que vous déboguez l’extrait de code suivant.  
+Par exemple, supposons que vous déboguer l’extrait de code suivant.  
 
 ```javascript
 function updateHeader() {
@@ -90,17 +90,17 @@ function getName() {
 }
 ```  
 
-Vous êtes en pause `A` .  En appuyant sur la touche **pas à pas**, devtools exécute cette ligne de code, puis arrête le suivi `B` .  
+Vous êtes `A` suspendu.  Une fois que **vous avez choisi Pas à**pas, DevTools exécute cette ligne de code, puis s’interrompt. `B`  
 
-### Pas à pas hors ligne de code  
+### <a name="step-out-of-line-of-code"></a>Sortir de la ligne de code  
 
-Lorsque vous êtes en pause dans une fonction qui n’est pas associée au problème que vous déboguez, cliquez sur le bouton pas à pas **détaillé** \ ( ![ extraire ][ImageStepOutIcon] \) pour exécuter le reste du code de la fonction.  
+Lorsqu’il est suspendu à l’intérieur d’une fonction qui n’est pas liée au problème que vous déboguer, choisissez le bouton Pas **à** pas principal \( Pas à pas sortant \) pour exécuter le reste du code de la ![ ][ImageStepOutIcon] fonction.  
 
-:::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
-   Sélectionner **sortir**  
+:::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="Choose Step out" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
+   Choose **Step out**  
 :::image-end:::  
 
-Par exemple, supposons que vous déboguez l’extrait de code suivant.  
+Par exemple, supposons que vous déboguer l’extrait de code suivant.  
 
 ```javascript
 function updateHeader() {
@@ -114,25 +114,25 @@ function getName() {
 }
 ```  
 
-Vous êtes en pause `A` .  En appuyant sur **sortir**, devtools exécute le reste du code dans `getName()` , qui est uniquement `B` dans cet exemple, puis il s’interrompt `C` .  
+Vous êtes `A` suspendu.  Une fois que vous avez choisi Pas **à**pas, DevTools exécute le reste du code dans , qui se trouve juste dans cet exemple, puis `getName()` `B` s’interrompt. `C`  
 
-### Exécuter tout le code jusqu’à une ligne spécifique  
+### <a name="run-all-code-up-to-a-specific-line"></a>Exécuter tout le code jusqu’à une ligne spécifique  
 
-Lors du débogage d’une fonction longue, il peut y avoir un grand nombre de code qui n’est pas lié au problème que vous déboguez.  
+Lors du débogage d’une fonction longue, il peut y avoir un grand nombre de code qui n’est pas lié au problème que vous déboguer.  
 
-Vous pouvez passer d’une ligne à l’autres, mais cela est laborieux.  Vous pouvez décider de définir un point d’arrêt de ligne de code sur la ligne qui vous intéresse, puis de cliquer sur le bouton de reprise de l' **exécution du script** \ (Resume du ![ script d’exécution ][ImageResumeScriptExecutionIcon] \), mais il existe une méthode plus rapide.  
+Vous pouvez choisir d’aller dans toutes les lignes, mais cela est fastidieux.  Vous pouvez choisir de définir un point d’arrêt de ligne de code sur la ligne qui vous intéresse, puis de choisir le bouton Reprendre l’exécution de **script** \( Reprendre l’exécution de script \), mais il existe un moyen plus ![ ][ImageResumeScriptExecutionIcon] rapide.  
 
-Cliquez avec le bouton droit sur la ligne de code qui vous intéresse, puis sélectionnez **continuer pour accéder à la page suivante**.  DevTools exécute tout le code jusqu’à ce point, puis le met en pause.  
+Pointez sur la ligne de code qui vous intéresse, ouvrez le menu contextuel \(clic droit\), puis choisissez **Continuer ici.**  DevTools exécute l’ensemble du code jusqu’à ce point, puis s’interrompt sur cette ligne.  
 
-:::image type="complex" source="../media/javascript-source-page-continue-to-here.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-source-page-continue-to-here.msft.png":::
-   Cliquez sur **continuer ici**  
+:::image type="complex" source="../media/javascript-source-page-continue-to-here.msft.png" alt-text="Choose Continue to here" lightbox="../media/javascript-source-page-continue-to-here.msft.png":::
+   Choose **Continue to here**  
 :::image-end:::  
 
-### Redémarrez la fonction Top de la pile d’appels.  
+### <a name="restart-the-top-function-of-the-call-stack"></a>Redémarrer la fonction supérieure de la pile d’appels  
 
-Lorsque vous êtes en pause sur une ligne de code, cliquez avec le bouton droit n’importe où dans le volet **pile d’appels** et sélectionnez **redémarrer l’image** pour suspendre la première ligne de la fonction Top dans votre pile d’appels.  La fonction Top est la dernière fonction exécutée.  
+Pour suspendre la première ligne de la fonction supérieure de votre pile d’appels, puis sur une ligne de code, pointez n’importe où dans le volet Pile des appels, ouvrez le menu contextuel \(clic droit\), puis choisissez Redémarrer le **cadre.** ****  La fonction supérieure est la dernière fonction qui a été exécuté.  
 
-L’extrait de code suivant est un exemple qui vous permet de passer en revue.  
+L’extrait de code suivant est un exemple de procédure pas à pas.  
 
 ```javascript
 function factorial(n) {
@@ -144,89 +144,89 @@ function factorial(n) {
 }
 ```  
 
-Vous êtes en pause `A` .  Après avoir choisi **relancer l’image**, vous devez être suspendu sans avoir à `B` définir un point d’arrêt ou en choisissant **reprendre l’exécution du script**.  
+Vous êtes `A` suspendu.  Après avoir choisi **l’image**de redémarrage, vous devez être suspendu, sans jamais définir de point d’arrêt ou choisir reprendre l’exécution `B` **du script.**  
 
-:::image type="complex" source="../media/javascript-source-page-debugger-restart-frame.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-source-page-debugger-restart-frame.msft.png":::
-   Sélectionner **redémarrer le cadre**  
+:::image type="complex" source="../media/javascript-source-page-debugger-restart-frame.msft.png" alt-text="Choisir un cadre de redémarrage" lightbox="../media/javascript-source-page-debugger-restart-frame.msft.png":::
+   Choisir **un cadre de redémarrage**  
 :::image-end:::  
 
-### Exécution du script de reprise  
+### <a name="resume-script-runtime"></a>Reprise du runtime de script  
 
-Pour continuer à exécuter le runtime après une pause de votre script, sélectionnez le bouton de reprise de l' **exécution du script** ![ ][ImageResumeScriptExecutionIcon]  DevTools exécute le script jusqu’au prochain point d’arrêt, le cas échéant.  
+Pour poursuivre l’exécution après une pause de votre script, choisissez le bouton Reprendre l’exécution du **script** \( Reprendre l’exécution ![ du script ][ImageResumeScriptExecutionIcon] \).  DevTools exécute le script jusqu’au point d’arrêt suivant, s’il y en a.  
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
-   Sélectionner **l’exécution du script de reprise**  
+:::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="Choose Resume script execution" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
+   Choose **Resume script execution**  
 :::image-end:::  
 
-#### Forcer le runtime de script  
+#### <a name="force-script-runtime"></a>Forcer le runtime du script  
 
-Pour ignorer tous les points d’arrêt et forcer votre script à continuer à s’exécuter, cliquez de façon prolongée sur le bouton de reprise d’exécution du **script** \ ( ![ Resume du script Execution ][ImageResumeScriptExecutionIcon] \), puis sélectionnez le bouton **forcer** l' ![ exécution du script ][ImageForceScriptExecutionIcon]  
+Pour ignorer tous les points d’arrêt et forcer votre script à reprendre l’exécution, choisissez et maintenez le bouton Reprendre l’exécution du script **\(** Reprendre l’exécution du script \), puis choisissez le bouton Forcer l’exécution du script \( Forcer l’exécution du ![ ][ImageResumeScriptExecutionIcon] **script** ![ ][ImageForceScriptExecutionIcon] \).  
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
-   Sélectionner **forcer l’exécution du script**  
+:::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Choose Force script execution" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
+   Choose **Force script execution**  
 :::image-end:::  
 
-### Modification du contexte de thread  
+### <a name="change-thread-context"></a>Modifier le contexte du thread  
 
-Lorsque vous travaillez avec des travailleurs Web ou des travailleurs de service, sélectionnez un contexte dans le volet **Threads** pour basculer vers ce contexte.  L’icône de flèche bleue représente le contexte actuellement sélectionné.  
+Lorsque vous travaillez avec des travailleurs du web ou des travailleurs de service, choisissez un contexte répertorié dans le volet **Threads** pour basculer vers ce contexte.  L’icône de flèche bleue représente le contexte actuellement sélectionné.  
 
-:::image type="complex" source="../media/javascript-sources-main-min-js-threads.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-sources-main-min-js-threads.msft.png":::
-   Le volet **Threads**  
+:::image type="complex" source="../media/javascript-sources-main-min-js-threads.msft.png" alt-text="Volet Threads" lightbox="../media/javascript-sources-main-min-js-threads.msft.png":::
+   Volet **Threads**  
 :::image-end:::  
 
-Par exemple, supposons que vous soyez suspendu sur un point d’arrêt dans votre script principal et votre script de travailleur de service.  Vous voulez afficher les propriétés locales et globales du contexte du travailleur de service, mais le panneau **sources** affiche le contexte de script principal.  En sélectionnant l’entrée du travailleur de service dans le volet **Threads** , vous devez être en mesure de basculer vers ce contexte.  
+Par exemple, supposons que vous êtes suspendu sur un point d’arrêt dans votre script principal et votre script de travail de service.  Vous souhaitez afficher les propriétés locales et globales pour le contexte de travail de service, mais le panneau **Sources** affiche le contexte de script principal.  En choisissant l’entrée de travail de service dans le volet **Threads,** vous devriez pouvoir basculer vers ce contexte.  
 
-## Afficher et modifier les propriétés locales, de fermeture et globales  
+## <a name="view-and-edit-local-closure-and-global-properties"></a>Afficher et modifier les propriétés locales, de fermeture et globales  
 
-En pause sur une ligne de code, utilisez le volet **scope** pour afficher et modifier les valeurs des propriétés et variables des étendues locales, de fermeture et globales.  
+Bien qu’il soit suspendu sur **** une ligne de code, utilisez le volet Étendue pour afficher et modifier les valeurs des propriétés et des variables dans les étendues locale, de fermeture et globale.  
 
 *   Double-cliquez sur une valeur de propriété pour la modifier.  
-*   Les propriétés non Enumerable sont grisées.  
+*   Les propriétés non éumables sont grisées.  
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-scope.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-sources-get-started-js-scope.msft.png":::
-   Volet **cadre**  
+:::image type="complex" source="../media/javascript-sources-get-started-js-scope.msft.png" alt-text="Volet d’étendue" lightbox="../media/javascript-sources-get-started-js-scope.msft.png":::
+   Volet **d’étendue**  
 :::image-end:::  
 
-## Afficher la pile d’appels actuelle  
+## <a name="view-the-current-call-stack"></a>Afficher la pile d’appels actuelle  
 
-Lorsque vous avez interrompu une ligne de code, utilisez le volet **pile d’appels** pour afficher la pile d’appels qui vous a donné ce point.  
+Bien qu’il soit suspendu sur **** une ligne de code, utilisez le volet Pile des appels pour afficher la pile d’appels qui vous a mis à ce point.  
 
 <!--If you are working with async code, check the **Async** checkbox to enable async call stacks.  -->  
 
-Choisissez sur une entrée pour accéder à la ligne de code où cette fonction a été appelée.  L’icône de flèche bleue représente quelle fonction DevTools est actuellement en surbrillance.  
+Choisissez une entrée pour passer à la ligne de code où cette fonction a été appelée.  L’icône de flèche bleue représente la fonction DevTools actuellement mise en surbrillance.  
 
-:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png":::
-   Volet **pile d’appels**  
+:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png" alt-text="Volet Pile des appels" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png":::
+   Volet **Pile des** appels  
 :::image-end:::  
 
 > [!NOTE]
-> Lorsque vous n’êtes pas en pause sur une ligne de code, le volet **pile d’appels** est vide.  
+> Lorsqu’il n’est pas suspendu sur une ligne de code, le volet **Pile** des appels est vide.  
 
-### Copier la trace de pile  
+### <a name="copy-stack-trace"></a>Copier la trace de pile  
 
 <!--
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there is not right now, so it is here.
 -->
 
-Cliquez avec le bouton droit n’importe où dans le volet **pile d’appels** et sélectionnez Copier la **trace de pile** pour copier la pile d’appels actuelle dans le presse-papiers.  
+pour copier la pile d’appels actuelle dans **** le Presse-papiers, pointez n’importe où dans le volet Pile des appels, ouvrez le menu contextuel \(clic droit\), puis choisissez Copier la trace de **pile.**  
 
-:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
-   Cliquez sur **copier la trace de pile**  
+:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="Choose Copy Stack Trace" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
+   Choose **Copy Stack Trace**  
 :::image-end:::  
 
-L’extrait de code suivant est un exemple de la sortie.  
+L’extrait de code suivant est un exemple de sortie.  
 
 ```javascript
 getNumber1 (get-started.js:35)
 inputsAreEmpty (get-started.js:22)
-onClick (get-started.js:15)
+onChoose (get-started.js:15)
 ```  
 
-## Ignorer un script ou un modèle de scripts  
+## <a name="ignore-a-script-or-pattern-of-scripts"></a>Ignorer un script ou un modèle de scripts  
 
-Marquez un script en tant que code de bibliothèque quand vous voulez ignorer ce script lors du débogage.  Lorsqu’il est marqué comme code de la bibliothèque, un script est masqué dans le volet **pile d’appels** et vous n’êtes pas encore dans les fonctions du script lorsque vous parcourez votre code.  
+Marquez un script en tant que code de bibliothèque lorsque vous souhaitez ignorer ce script lors du débogage.  Lorsqu’il est marqué comme code de **** bibliothèque, un script est masqué dans le volet Pile des appels et vous n’entrez jamais dans les fonctions du script lorsque vous avancez dans votre code.  
 
-L’extrait de code suivant est un exemple qui vous permet de passer en revue.  
+L’extrait de code suivant est un exemple de procédure pas à pas.  
 
 ```javascript
 function animate() {
@@ -236,90 +236,90 @@ function animate() {
 }
 ```  
 
-`A` est une bibliothèque tierce digne de confiance.  Si vous êtes sûr que le problème que vous déboguez n’est pas lié à la bibliothèque tierce, il est préférable de marquer le script en tant que **code**de la bibliothèque.  
+`A` est une bibliothèque tierce de confiance.  Si vous êtes certain que le problème que vous déboguer n’est pas lié à la bibliothèque tierce, il est logique de marquer le script comme du **code de bibliothèque.**  
 
-### Marquer un script en tant que code de bibliothèque à partir du volet éditeur  
+### <a name="mark-a-script-as-library-code-from-the-editor-pane"></a>Marquer un script en tant que code de bibliothèque à partir du volet Éditeur  
 
-Pour marquer un script en tant que code de **bibliothèque** à partir du volet **éditeur** , vous pouvez effectuer les actions suivantes.  
+Effectuer les actions suivantes pour marquer un script en tant **que code de bibliothèque** à partir du volet Éditeur. ****  
 
 1.  Ouvrez le fichier.  
-1.  Cliquez avec le bouton droit n’importe où.  
-1.  Sélectionnez **marquer comme code de la bibliothèque**.  
+1.  Pointez n’importe où et ouvrez le menu contextuel \(clic droit\).  
+1.  Choose **Mark as Library code**.  
     
-    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
-       Marquer un script en tant que **Code de bibliothèque** à partir du volet **éditeur**  
+    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="Marquer un script en tant que code de bibliothèque à partir du volet Éditeur" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
+       Marquer un script en tant **que code de bibliothèque** à partir du volet Éditeur ****  
     :::image-end:::  
     
-### Marquer un script en tant que code de bibliothèque à partir du volet pile d’appels  
+### <a name="mark-a-script-as-library-code-from-the-call-stack-pane"></a>Marquer un script en tant que code de bibliothèque à partir du volet Pile des appels  
 
-Composez les actions folliwng pour marquer un script en tant que **Code de bibliothèque** à partir du volet **pile d’appels** .  
+Effectuer les actions suivantes pour marquer un script en tant que **code de** bibliothèque à partir du volet **Pile** des appels.  
 
-1.  Cliquez avec le bouton droit sur une fonction à partir du script.  
-1.  Sélectionnez **marquer comme code de la bibliothèque**.  
+1.  Pointez sur une fonction à partir du script et ouvrez le menu contextuel \(clic droit\).  
+1.  Choose **Mark as Library code**.  
     
-    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
-       Marquer un script en tant que **Code de bibliothèque** à partir du volet **pile d’appels**  
+    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Marquer un script en tant que code de bibliothèque à partir du volet Pile des appels" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
+       Marquer un script en tant **que code de bibliothèque** à partir du volet **Pile** des appels  
     :::image-end:::  
     
-### Marquer un script en tant que code de bibliothèque à partir des paramètres  
+### <a name="mark-a-script-as-library-code-from-settings"></a>Marquer un script comme code de bibliothèque à partir des paramètres  
 
-Pour marquer un script ou un modèle de scripts à partir de **paramètres**, procédez comme suit.  
+Effectuer les actions suivantes pour marquer un seul script ou modèle de scripts à partir **des paramètres**.  
 
-1.  Ouvrez [paramètres][DevToolsCustomize].  
-1.  Accédez à l’onglet Code de la **bibliothèque** .  
-1.  Choisissez **Ajouter un modèle**.  
-1.  Entrez le nom du script ou un modèle Regex de noms de script pour le marquer comme code de la **bibliothèque**.  
-1.  Cliquez sur **Ajouter**.  
+1.  Ouvrez [Paramètres.][DevToolsCustomize]  
+1.  Accédez au **paramètre de code** Bibliothèque.  
+1.  Choose **Add pattern**.  
+1.  Entrez le nom du script ou un modèle regex de noms de script à marquer en tant **que code de bibliothèque.**  
+1.  Choose **Add**.  
     
-    :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-framework-library-code.msft.png":::
-       Marquer un script en tant que **Code de bibliothèque** à partir des **paramètres**  
+    :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="Marquer un script comme code de bibliothèque à partir des paramètres" lightbox="../media/javascript-framework-library-code.msft.png":::
+       Marquer un script comme **code de bibliothèque** à partir des **paramètres**  
     :::image-end:::  
     
-## Exécuter des extraits de code de débogage à partir de n’importe quelle page  
+## <a name="run-snippets-of-debug-code-from-any-page"></a>Exécuter des extraits de code de débogage à partir de n’importe quelle page  
 
-Si vous vous retrouvez vous exécutez le même code de débogage dans la console que sur et sur le passé, considérez les extraits de code.  Les extraits sont des scripts d’exécution que vous créez, stockez et exécutez dans DevTools.  
+Si vous vous trouvez en cours d’exécution du même code de débogage dans la console, pensez à des extraits de code.  Les extraits de code sont des scripts d’runtime que vous pouvez écrire, stocker et exécuter dans DevTools.  
 
-Pour en savoir plus, voir [exécution d’extraits de code à partir de n’importe quelle page][DevToolsJavascriptSnippets] .  
+Pour en savoir plus, accédez à Exécuter des extraits de code à [partir d’une page][DevToolsJavascriptSnippets]quelconque.  
 
-## Regardez les valeurs des expressions JavaScript personnalisées  
+## <a name="watch-the-values-of-custom-javascript-expressions"></a>Regardez les valeurs des expressions JavaScript personnalisées  
 
-Utilisez le volet **Espion** pour surveiller les valeurs des expressions personnalisées.  Vous pouvez voir une expression JavaScript valide.  
+Utilisez le **volet** d’observation pour observer les valeurs des expressions personnalisées.  Vous pouvez regarder n’importe quelle expression JavaScript valide.  
 
-:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
-   Volet **Espion**  
+:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="Volet d’observation" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
+   Volet **d’observation**  
 :::image-end:::  
 
-*   Cliquez sur le bouton **Ajouter une expression** \ ( ![ Ajouter une expression ][ImageAddExpressionIcon] \) pour créer une expression espionne.  
-*   Cliquez sur le bouton **Actualiser** pour actualiser ![ ][ImageRefreshIcon] les valeurs de toutes les expressions existantes.  Les valeurs sont automatiquement actualisées lors de l’exécution du code.  
-*   Placez le pointeur de la souris sur une expression et sélectionnez le bouton **Supprimer l’expression** \ ( ![ Supprimer l’expression ][ImageDeleteExpressionIcon] \) pour la supprimer.  
+*   Sélectionnez **le bouton Ajouter une expression** \( Ajouter une expression ![ ][ImageAddExpressionIcon] \) pour créer une expression d’observation.  
+*   Sélectionnez **le bouton Actualiser** \( Actualiser \) pour actualiser les ![ ][ImageRefreshIcon] valeurs de toutes les expressions existantes.  Les valeurs s’actualisent automatiquement lors du code pas à pas.  
+*   Pointez sur une expression et choisissez le bouton **Supprimer l’expression** \( ![ Supprimer l’expression ][ImageDeleteExpressionIcon] \) pour la supprimer.  
 
-## Rendre un fichier minified lisible  
+## <a name="make-a-minified-file-readable"></a>Rendre un fichier minifié lisible  
 
-Sélectionnez le bouton **mettre en forme** \ ( ![ format ][ImageFormatIcon] \) pour rendre un fichier minified lisible par l’homme.  
+Choisissez le **bouton Format** \( Format \) pour rendre un fichier ![ ][ImageFormatIcon] minifié lisible par l’homme.  
 
-:::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
-   Bouton **format**  
+:::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="Bouton Format" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
+   Bouton **Format**  
 :::image-end:::  
 
-## Modification d’un script  
+## <a name="edit-a-script"></a>Modifier un script  
 
-Lors de la résolution d’un bogue, il est souvent préférable d’effectuer des tests dans votre code JavaScript.  Vous n’avez pas besoin d’apporter des modifications dans un éditeur externe ou un IDE, puis de recharger la page.  Vous pouvez modifier votre script dans DevTools.  
+Lorsque vous corrigez un bogue, vous souhaitez souvent tester certaines modifications apportées à votre code JavaScript.  Vous n’avez pas besoin d’apporter les modifications dans un éditeur externe ou IDE, puis d’actualiser la page.  Vous pouvez modifier votre script dans DevTools.  
 
-Effectuez les opérations suivantes pour modifier un script.  
+Effectuer les actions suivantes pour modifier un script.  
 
-1.  Ouvrez le fichier dans le volet de l' **éditeur** du panneau **sources** .  
-1.  Apportez les modifications souhaitées dans le volet de l' **éditeur** .  
-1.  Sélectionnez `Ctrl` + `S` \ (Windows, Linux \) ou `Command` + `S` \ (MacOS \) pour l’enregistrer.  DevTools corrige le fichier JS complet dans le moteur JavaScript de Microsoft Edge.  
+1.  Ouvrez le fichier **dans** le volet Éditeur du panneau **Sources.**  
+1.  A apporté vos modifications **dans** le volet Éditeur.  
+1.  Sélectionnez `Ctrl` + `S` \(Windows, Linux\) ou `Command` + `S` \(macOS\) à enregistrer.  DevTools correctifs tout le fichier JS dans le moteur JavaScript de Microsoft Edge.  
     
-    :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="Sélectionner pas à pas" lightbox="../media/javascript-sources-html-minified.msft.png":::
-       Volet **éditeur**  
+    :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="Volet Éditeur" lightbox="../media/javascript-sources-html-minified.msft.png":::
+       Volet **** Éditeur  
     :::image-end:::  
      
-## Désactiver JavaScript  
+## <a name="disable-javascript"></a>Désactiver JavaScript  
 
-Naviguez jusqu’à [Disable JavaScript with Microsoft Edge devtools][DevToolsJavascriptDisable].  
+Accédez [à Désactiver JavaScript avec Microsoft Edge DevTools][DevToolsJavascriptDisable].  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -339,15 +339,15 @@ Naviguez jusqu’à [Disable JavaScript with Microsoft Edge devtools][DevToolsJa
 
 [DevToolsJavascriptBreakpoints]: ./breakpoints.md "Comment suspendre votre code avec des points d’arrêt dans Microsoft Edge DevTools | Documents Microsoft"  
 [DevToolsJavascriptDisable]: ./disable.md "Désactiver JavaScript avec Microsoft Edge DevTools | Documents Microsoft"  
-[DevToolsJavascriptGetStarted]: ./index.md "Commencer à utiliser le débogage JavaScript dans Microsoft Edge DevTools | Documents Microsoft"  
-[DevToolsJavascriptSnippets]: ./snippets.md "Exécution d’extraits de code JavaScript sur n’importe quelle page avec Microsoft Edge DevTools | Documents Microsoft"  
-[DevToolsCustomize]: ../customize/index.md "Personnaliser Microsoft Edge DevTools | Documents Microsoft"  
+[DevToolsJavascriptGetStarted]: ./index.md "Commencer à déboguer JavaScript dans Microsoft Edge DevTools | Documents Microsoft"  
+[DevToolsJavascriptSnippets]: ./snippets.md "Exécuter des extraits de code JavaScript sur n’importe quelle page avec Microsoft Edge DevTools | Documents Microsoft"  
+[DevToolsCustomize]: ../customize/index.md "Personnaliser microsoft Edge DevTools | Documents Microsoft"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/javascript/reference) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/javascript/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

@@ -1,18 +1,18 @@
 ---
-description: Ouvrez l’onglet capteurs et accédez à la section orientation.
+description: Ouvrez l’outil Capteurs et accédez à la section Orientation.
 title: Simuler l’orientation de l’appareil avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 01e6d3a24513b504665dbe0c03d9e72cc1f97533
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 754df3b271b44f986802c2847862624f6a8b5bd9
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11124956"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398713"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,40 +28,40 @@ ms.locfileid: "11124956"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Simuler l’orientation de l’appareil avec Microsoft Edge DevTools  
+# <a name="simulate-device-orientation-with-microsoft-edge-devtools"></a>Simuler l’orientation de l’appareil avec Microsoft Edge DevTools  
 
-Effectuez les opérations suivantes pour simuler différentes orientations d’appareil à partir de Microsoft Edge DevTools.  
+Effectuer les actions suivantes pour simuler différentes orientations d’appareil à partir de Microsoft Edge DevTools.  
 
 <!--todo: update device orientation section when available -->  
 
-1.  Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
+1.  Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le **menu Commande.**  
     
-    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Menu de commandes" lightbox="../media/device-mode-console-command-menu.msft.png":::
-       **Menu de commandes**  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="Menu Commande" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       Menu **Commande**  
     :::image-end:::  
     
-1.  Tapez `sensors` , choisissez **afficher les capteurs**, puis sélectionnez `Enter` .  L’onglet **capteurs** s’ouvre en bas de la fenêtre devtools.  
-1.  Dans la liste **orientation** , sélectionnez l’une des orientations prédéfinies, par exemple `Portrait upside down` , ou choisissez **orientation personnalisée** pour fournir votre propre orientation exacte.  
+1.  Tapez `sensors` , choisissez Afficher les **capteurs,** puis sélectionnez `Enter` .  **L’outil** Capteurs s’ouvre en bas de votre fenêtre DevTools.  
+1.  Dans la **liste Orientation,** sélectionnez l’une des orientations prédéfines, par exemple, ou choisissez Orientation personnalisée pour fournir `Portrait upside down` votre propre orientation exacte. ****  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Menu de commandes" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
-             Sélectionner `Portrait upside down` dans la liste d' **orientation**  
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Choisir portrait à l’envers à partir de la liste Orientation" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
+             Choisir `Portrait upside down` dans la liste **Orientation**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          Une fois l' **orientation personnalisée**sélectionnée, `alpha` les `beta` champs, et `gamma` sont activés.  
-          <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how each axis works.  -->  
+          Une fois que **vous avez choisi l’orientation**personnalisée, les champs et les champs `alpha` sont `beta` `gamma` activés.  
+          <!--To understand how each axis works, navigate to [Alpha][alpha], [Beta][beta], and [Gamma][gamma].  -->  
           <!--todo: update links to alpha, beta, and gamma section when available -->  
-          Vous pouvez également définir une orientation personnalisée en faisant glisser le modèle d' **orientation**.  Mettre `Shift` en attente avant de faire pivoter pour faire pivoter le long de l' `alpha` axe.  
+          Vous pouvez également définir une orientation personnalisée en faisant glisser le modèle **d’orientation.**  Maintenez `Shift` la main avant de faire glisser pour faire pivoter le long de `alpha` l’axe.  
           
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="Menu de commandes" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
-             Le **modèle d’orientation**  
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="Modèle d’orientation" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
+             Modèle **d’orientation**  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -73,10 +73,10 @@ Effectuez les opérations suivantes pour simuler différentes orientations d’a
 <!--[WebFundamentasNativeHardwareDeviceOrientationIndexGamma]: /web/fundamentals/native-hardware/device-orientation/index#gamma "Gamma - Device Orientation & Motion"  -->  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/device-mode/orientation) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/device-mode/orientation) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

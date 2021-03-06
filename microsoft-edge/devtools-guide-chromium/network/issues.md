@@ -1,18 +1,18 @@
 ---
-description: Découvrez comment détecter les problèmes de réseau dans le volet réseau de Microsoft Edge DevTools.
-title: Guide des problèmes réseau
+description: Découvrez comment détecter les problèmes réseau dans le panneau Réseau de Microsoft Edge DevTools.
+title: Guide des problèmes de réseau
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 4713dc252d428abbf5b60ee5f74a7316a102dab6
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 12cc447fa9d8ef8624e8528430eabc25ab523dd0
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125376"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398272"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -28,76 +28,76 @@ ms.locfileid: "11125376"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Guide des problèmes de réseau  
+# <a name="network-issues-guide"></a>Guide des problèmes de réseau  
 
-Ce guide vous montre comment détecter les problèmes de réseau ou les opportunités d’optimisation dans le volet réseau de Microsoft Edge DevTools.  
+Ce guide vous montre comment détecter les problèmes réseau ou les opportunités d’optimisation dans le panneau Réseau de Microsoft Edge DevTools.  
 
-Pour [plus d’informations][NetworkPerformance] sur les concepts de base du **réseau** , voir découvrir le panneau de configuration.  
+Pour découvrir les principes de base de **l’outil Réseau,** accédez à [Démarrer.][NetworkPerformance]  
 
-## Demandes mises en file d’attente ou bloquées  
+## <a name="queued-or-stalled-requests"></a>Demandes en file d’attente ou bloquées  
 
 **Symptômes**  
 
-Six demandes sont en train de télécharger simultanément.  Après cela, une série de demandes est mise en file d’attente ou bloquée.  Après l’exécution de l’une des six premières demandes, une des requêtes de la file d’attente démarre.  
+Six demandes sont téléchargées simultanément.  Après cela, une série de demandes sont en file d’attente ou bloquées.  Une fois l’une des six premières demandes se termine, l’une des demandes de la file d’attente démarre.  
 
-Dans la **figure** ci-dessous, les six premières demandes de l' `edge-iconx1024.msft.png` actif commencent simultanément.  Les demandes ultérieures sont bloquées jusqu’à ce que l’une des six nouvelles préfinissements.  
+Dans la **cascade de** la figure suivante, les six premières demandes de ressources démarrent `edge-iconx1024.msft.png` simultanément.  Les demandes suivantes sont bloquées jusqu’à ce que l’une des six premières se termine.  
 
-:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="Exemple d’une série mise en file d’attente ou bloquée dans le panneau réseau" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
-   Exemple d’une série mise en file d’attente ou bloquée dans le panneau **réseau**  
+:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="Exemple de série en file d’attente ou bloquée dans le panneau Réseau" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
+   Exemple d’une série en file d’attente ou bloquée dans **l’outil** Réseau  
 :::image-end:::  
 
 **Causes**  
 
-Il y a trop de demandes sur un domaine unique.  Sur les connexions HTTP/1.0 ou HTTP/1.1, Microsoft Edge autorise un maximum de six connexions TCP simultanées par hôte.  
+Trop de demandes sont faites sur un seul domaine.  Sur les connexions HTTP/1.0 ou HTTP/1.1, Microsoft Edge autorise un maximum de six connexions TCP simultanées par hôte.  
 
 **Correctifs**  
 
-*   Implémentez Domain sharding si vous devez utiliser HTTP/1.0 ou HTTP/1.1.  
-*   Utiliser HTTP/2.  N’utilisez pas le domaine sharding avec HTTP/2.  
-*   Supprimez ou différez les demandes inutiles de manière à ce que les demandes critiques soient téléchargées plus tôt.  
+*   Implémentez le partitionnage de domaine si vous devez utiliser HTTP/1.0 ou HTTP/1.1.  
+*   Utilisez HTTP/2.  N’utilisez pas le partitionnage de domaine avec HTTP/2.  
+*   Supprimer ou différer les demandes inutiles afin que les demandes critiques se téléchargent plus tôt.  
     
-## Temps lent vers le premier octet (TTFB)  
+## <a name="slow-time-to-first-byte-ttfb"></a>Slow Time To First Byte (TTFB)  
 
 **Symptômes**  
 
-Une requête passe un certain temps en attente de réception du premier octet du serveur.  
+Une demande passe beaucoup de temps à attendre de recevoir le premier byte du serveur.  
 
-Dans l’illustration ci-dessous, la barre verte longue de la **cascade** indique que la requête attendait un certain temps.  Il a été simulé à l’aide d’un profil afin de limiter la vitesse du réseau et d’ajouter un délai.  
+Dans la figure suivante, la barre longue et verte de la **cascade** indique que la demande attendait longtemps.  Cela a été simulé à l’aide d’un profil pour limiter la vitesse du réseau et ajouter un délai.  
 
-:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Exemple d’une série mise en file d’attente ou bloquée dans le panneau réseau" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
-   Exemple d’une requête avec un délai de première octet lent  
-:::image-end:::  
-
-**Causes**  
-
-*   La connexion entre le client et le serveur est lente.  
-*   La réponse du serveur est lente.  Hébergez le serveur localement pour déterminer s’il s’agit d’une connexion ou d’un serveur lent.  Si vous obtenez encore un temps lente pour le premier octet \ (TTFB \) lors de l’accès à un serveur local, le serveur est lent.  
-    
-**Correctifs**  
-
-*   Si la connexion est lente, envisagez d’héberger votre contenu sur un réseau de distribution de contenu ou de modifier des fournisseurs d’hébergement.  
-*   Si le serveur est lent, envisagez d’optimiser les requêtes de base de données, de mettre en cache ou de modifier votre configuration serveur.  
-    
-## Téléchargement de contenu lent  
-
-**Symptômes**  
-
-Le téléchargement d’une requête prend beaucoup de temps.  
-
-Dans l’illustration ci-dessous, la barre bleue longue en **regard du** fichier PNG signifie que le téléchargement a duré longtemps.  
-
-:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="Exemple d’une série mise en file d’attente ou bloquée dans le panneau réseau" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
-   Exemple d’une requête prenant du temps à télécharger  
+:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Exemple d’une demande dont l’heure est lente au premier sur deux byte" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
+   Exemple d’une demande dont l’heure est lente au premier sur deux byte  
 :::image-end:::  
 
 **Causes**  
 
 *   La connexion entre le client et le serveur est lente.  
-*   Un grand nombre de contenus est en cours de téléchargement.  
+*   Le serveur est lent à répondre.  Hébergez le serveur localement pour déterminer si la connexion ou le serveur est lent.  Si vous obtenez toujours une durée lente jusqu’au premier byte \(TTFB\) lors de l’accès à un serveur local, le serveur est lent.  
     
 **Correctifs**  
 
-*   Envisagez d’héberger votre contenu sur un réseau de distribution de contenu ou de modifier des fournisseurs d’hébergement.  
+*   Si la connexion est lente, envisagez d’héberger votre contenu sur un CDN ou de modifier les fournisseurs d’hébergement.  
+*   Si le serveur est lent, envisagez d’optimiser les requêtes de base de données, d’implémenter un cache ou de modifier la configuration de votre serveur.  
+    
+## <a name="slow-content-download"></a>Téléchargement de contenu lent  
+
+**Symptômes**  
+
+Le téléchargement d’une demande prend beaucoup de temps.  
+
+Dans la figure suivante, la longue **** barre bleue dans la cascade en face du png signifie que le téléchargement a pris beaucoup de temps.  
+
+:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="Exemple de demande longue à télécharger" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
+   Exemple de demande longue à télécharger  
+:::image-end:::  
+
+**Causes**  
+
+*   La connexion entre le client et le serveur est lente.  
+*   Une grande partie du contenu est en cours de téléchargement.  
+    
+**Correctifs**  
+
+*   Envisagez d’héberger votre contenu sur un CDN ou de modifier les fournisseurs d’hébergement.  
 *   Envoyez moins d’octets en optimisant vos demandes.  
     
 <!--   ## Contribute knowledge  
@@ -108,7 +108,7 @@ Do you have a network issue that should be added to this guide?
 *   Choose **Send Feedback** \(![Send Feedback][ImageSendFeedbackIcon]\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
 *   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->  
     
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -118,17 +118,17 @@ Do you have a network issue that should be added to this guide?
 
 <!-- links -->  
 
-[NetworkPerformance]: ./index.md "Examiner l’activité réseau dans Microsoft Edge DevTools | Documents Microsoft"  
+[NetworkPerformance]: ./index.md "Inspecter l’activité réseau dans microsoft Edge DevTools | Documents Microsoft"  
 
 [MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]  
 
-[WebFundamentalsIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D "Nouveau problème-MicrosoftDocs/Edge-développeur"  
+[WebFundamentalsIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D "Nouveau problème : MicrosoftDocs/edge-developer"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/issues) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \) et [Jonathan Garbee][JonathanGarbee] \ (Google Developer expertise pour Web Technology \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est trouvée ici et est co-auteure par [Les Basques Decéssaisie \(Rédacteur][KayceBasques] technique, Chrome DevTools \& Évérité\) et [Chef Garbee][JonathanGarbee] \(Google Developer Expert for Web Technology\). [](https://developers.google.com/web/tools/chrome-devtools/network/issues)  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

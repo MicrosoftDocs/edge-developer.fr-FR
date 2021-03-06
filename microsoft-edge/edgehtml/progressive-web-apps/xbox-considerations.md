@@ -1,158 +1,158 @@
 ---
-description: Assurez-vous que votre PWA offre une excellente interface pour Xbox
-title: Applications Web progressives pour Xbox One
+description: Assurez-vous que votre application PWA offre une expérience excellente pour Xbox
+title: Applications web progressives pour Xbox One
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: applications Web progressives, PWA, Edge, Windows, UWP, Xbox, Xbox One, TVJS
-ms.date: 12/15/2020
+keywords: applications web progressives, PWA, Edge, Windows, UWP, Xbox, Xbox One, TVJS
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: f1c46fe49f335373323de106b1b2a84418b97577
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 3ac4174c821f221d6d666a25880867275ca5cbd5
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233524"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397670"
 ---
-# Applications Web progressives pour Xbox One  
+# <a name="progressive-web-apps-for-xbox-one"></a>Applications web progressives pour Xbox One  
 
-Vous pouvez prolonger une application Web afin de la rendre disponible en tant qu’application Xbox One via le Microsoft Store tout en continuant à utiliser vos infrastructures existantes, votre réseau de distribution de contenu et votre serveur principal.  Comme toutes les applications de plateforme Windows universelle (UWP), les applications Web progressives (PWAs) qui s’exécutent sur Xbox One peuvent également appeler des API Windows 10 natives.  Un certain nombre de PWAs sont déjà disponibles pour Xbox One, en particulier dans la catégorie des [applications de lecture de contenu multimédia](#media-pwas-on-xbox).  
+Vous pouvez étendre une application web et la rendre disponible en tant qu’application Xbox One via le Microsoft Store tout en continuant à utiliser vos infrastructure, CDN et serveur principal existants.  Et comme toutes les applications de plateforme Windows universelle \(UWP\), les applications web progressives \(PWAs\) qui s’exécutent sur Xbox One peuvent également appeler des API Windows 10 natives.  Il existe déjà un certain nombre de PJA disponibles pour xbox One, en particulier dans la catégorie des applications de [lecture multimédia.](#media-pwas-on-xbox)  
 
-Dans la plupart des cas, vous pouvez empaqueter votre application Project Web App pour Xbox One de la [même manière que pour Windows](./windows-features.md), à l’aide des outils du [Concepteur PWA](https://www.pwabuilder.com/) ou de l’environnement IDE [Visual Studio](https://visualstudio.microsoft.com/vs/) pour générer le fichier *appxmanifest* requis pour l’exécution de votre application Project Web App. Néanmoins, il existe plusieurs différences principales que ce guide va vous guider.
+En grande partie, vous pouvez créer un package PWA pour Xbox One de la même manière que pour [Windows,](./windows-features.md)à l’aide des outils du Générateur PWA ou de l’IDE [Visual Studio](https://visualstudio.microsoft.com/vs) pour générer le fichier requis pour exécuter votre PWA en tant qu’application [UWP.](https://www.pwabuilder.com) `appxmanifest`  Toutefois, il existe plusieurs différences clés que ce guide vous guidera.  
 
-## Déploiement et test de PWAs sur Xbox
+## <a name="deploying-and-testing-pwas-on-xbox"></a>Déploiement et test de P PWAs sur Xbox  
 
-Pour commencer, procédez comme [suit pour activer le *mode développeur Xbox One* ](/windows/uwp/xbox-apps/devkit-activation) . Le mode développeur étant activé, [configurez *Device Portal pour Xbox* ](/windows/uwp/debug-test-perf/device-portal-xbox) afin d’obtenir l’accès à distance à votre Xbox à partir du navigateur dans votre environnement de développement.
+Pour commencer, suivez ces [étapes pour activer le *mode développeur Xbox One.*](/windows/uwp/xbox-apps/devkit-activation)  Lorsque le Mode développeur est activé, configurer [ *Device Portal* ](/windows/uwp/debug-test-perf/device-portal-xbox) pour Xbox afin qu’il accède à distance à votre Xbox à partir du navigateur de votre environnement de développement.  
 
-Vous êtes maintenant prêt à déployer votre application à des fins de test à l’aide de *PWA Builder* ou *Visual Studio*.
+Vous êtes maintenant prêt à déployer votre application pour les tests à l’aide du Générateur PWA ou de Visual Studio.  
 
-### Option 1: concepteur PWA
+### <a name="option-1--pwa-builder"></a>Option 1 : Générateur PWA  
 
-Le [Concepteur PWA](https://www.pwabuilder.com/) est une application Node.js que vous pouvez installer à partir de node Package Manager (NPM). Il utilise les métadonnées de votre site Web pour générer des applications hébergées natives sur Android, iOS et Windows. Si votre site comporte déjà un [manifeste de l’application Web](https://developer.mozilla.org/docs/Web/Manifest), le concepteur PWA l’utilise pour générer des packages d’installation spécifiques à la plateforme. Dans le cas contraire, le concepteur Project générera une *manifest.jsde base sur* un fichier en fonction des caractéristiques de votre site.
+[PWA Builder](https://www.pwabuilder.com) est une application Node.js que vous pouvez installer à partir de Node Gestionnaire de package \(NPM\).  Il utilise les métadonnées de votre site web pour générer des applications hébergées natives sur Android, iOS et Windows.  Si votre site possède déjà un manifeste [d’application web,](https://developer.mozilla.org/docs/Web/Manifest)le Générateur PWA l’utilisera pour générer des packages d’installation spécifiques à la plateforme.  Dans le cas contraire, le Générateur PWA génère un fichier de base basé sur `manifest.json` les caractéristiques de votre site.  
 
-#### Conditions requises
+#### <a name="requirements"></a>Conditions requises  
 
- - [Node.js](https://nodejs.org/en/), qui inclut NPM.
+*   [Node.js](https://nodejs.org), qui inclut NPM.  
 
-#### Configuration
+#### <a name="setup"></a>Configuration  
 
-1.  Ouvrez une invite de commandes de nœud pour installer le générateur PWA:
+1.  Ouvrez une invite de commandes Nœud pour installer le Générateur PWA :  
     
     ```shell
     npm install pwabuilder --global
     ```  
     
-2.  Exécutez le générateur PWA sur l’URL de votre site Web:
+1.  Exécutez le Générateur PWA sur l’URL de votre site web :  
     
     ```shell
     pwabuilder https://example.com/ -windows10
     ```  
     
-    L’indicateur *-Windows 10* limite la génération du package à Windows 10 (UWP). Vous pouvez l’omettre pour générer des packages sur toutes les plateformes prises en charge, y compris iOS et Android. Pour plus d’informations, consultez les [documents du concepteur PWA](https://docs.pwabuilder.com/) .
+    *L’indicateur -windows10 limite* la génération de package à Windows 10 \(UWP\).  Vous pouvez l’omettre pour générer des packages sur toutes les plateformes pris en charge, y compris iOS et Android.  Pour plus [d’informations,](https://docs.pwabuilder.com) voir la documentation du Générateur PWA.  
     
-3.  À partir de [Device Portal pour Xbox](/windows/uwp/debug-test-perf/device-portal-xbox), accédez à **page d’accueil**,  >  Sélectionnez l’option à partir de **& applications**  >  ****, choisissez l’option de *téléchargement de fichiers libres*, puis sélectionnez le dossier de manifeste de l’application Windows 10 généré par le concepteur PWA dans le répertoire actif.
-
-4.  Suivez les instructions de l’Assistant pour terminer le processus d’installation. Une fois l’installation terminée. vous pourrez voir et lancer votre compte PWA à partir du tableau de bord Xbox One.
+1.  À partir de Device Portal pour [Xbox,](/windows/uwp/debug-test-perf/device-portal-xbox)go to **Home**  >  **My games & apps**  >  **Add**, choose the option to **upload loose files**, and select the Windows 10 app manifest folder generated by PWA Builder in the current directory.  
+1.  Pas à pas dans l’Assistant pour terminer le processus d’installation.  Une fois installé.  Vous pourrez voir et lancer votre PWA à partir du tableau de bord Xbox One.  
     
-### Option 2: Visual Studio
+### <a name="option-2--visual-studio"></a>Option 2 : Visual Studio  
 
-La [Communauté Visual Studio](https://visualstudio.microsoft.com/vs/community/) gratuite et complète de la 2017 communauté inclut des outils de développement de Windows 10, des modèles d’application universelles, un éditeur de code, un débogueur puissant, des émulateurs Windows Mobile, une prise en charge de plusieurs langues et bien plus encore, le tout prêt à être utilisé en production. Les versions [ *professionnel* et *entreprise* ](https://visualstudio.microsoft.com/vs/compare/) fournissent encore plus de fonctionnalités.
+La Visual Studio [Community 2017](https://visualstudio.microsoft.com/vs/community) gratuite et complète inclut des outils de développement Windows 10, des modèles d’application universelle, un éditeur de code, un puissant débogger, des émulateurs Windows Mobile, une prise en charge linguistique enrichie et bien plus encore, tous prêts à être utilisés en production.  Les versions [Professionnel et Entreprise](https://visualstudio.microsoft.com/vs/compare) fournissent encore plus de fonctionnalités.  
 
-#### Conditions requises
+#### <a name="requirements"></a>Conditions requises  
 
--   [**Visual Studio 2017**](https://visualstudio.microsoft.com/vs/
-    ): n’importe quelle version, y compris la *communauté* gratuite Edition.
--   [**Kit de développement logiciel (SDK) Windows 10**](/windows/uwp/xbox-apps/development-environment-setup): sélectionnez ce composant facultatif dans le *programme d’installation de Visual Studio 2017*.
-    
-#### Configuration
+*   [Visual Studio 2017 :](https://visualstudio.microsoft.com/vs)n’importe quelle version, y compris l’édition communautaire gratuite.  
+*   [SDK Windows 10](/windows/uwp/xbox-apps/development-environment-setup): sélectionnez ce composant facultatif dans le programme d’installation Visual Studio 2017.  
 
-1.  Suivez les étapes de [configuration et d’exécution de votre PWA en tant qu’application Windows universelle](/microsoft-edge/progressive-web-apps-edgehtml/windows-features#set-up-and-run-your-universal-windows-app). Vous aurez ainsi une application Windows 10 entièrement fonctionnelle capable d’accéder aux API Windows universelles.
-2.  Vous pouvez désormais déployer et déboguer votre version de Project Web App (en tant qu’application UWP) sur Xbox One (comme avec tout autre appareil distant Windows 10) en utilisant le [Visual Studio Remote Debugger] (/VisualStudio/Debugger/Run-Windows-Store-Apps-on-a-Remote-machine? View = vs-2017 &Preserve-View = true). Vous pouvez également installer votre système de Project Web App à l’aide [de Device Portal pour Xbox](/windows/uwp/debug-test-perf/device-portal-xbox) en procédant comme suit.
-3.  À partir de Device Portal pour Xbox, accédez à Accueil > mes jeux & applications > ajouter, sélectionnez l’option permettant de télécharger le *package d’application et les dépendances*.
-4.  Accédez au dossier de package que vous avez généré pour votre application à l’étape 1, puis sélectionnez le fichier *. AppX* à télécharger. Le [fichier *. AppX* ](/windows/uwp/packaging/packaging-uwp-apps) est un fichier de package d’application UWP qui peut être chargée sur n’importe quel appareil à des fins de test.
-5.  Appuyez ensuite sur le bouton **dépendances** et sélectionnez le sous-dossier *Dependencies* pour votre application et chargez chacun d’eux. Cette étape est uniquement requise pour le déploiement d’applications à partir de Device Portal pour Xbox. Visual Studio fournit des dépendances lors du débogage distant et de l’ordinateur de l’utilisateur final disposant déjà de ces éléments installés lors de leur remise sur le Microsoft Store.
-6.  Lorsque le package d’application et les dépendances sont chargés, cliquez sur le bouton **Go** situé sous la section *Deploy* pour installer l’application. Vous êtes prêt à lancer votre application sur Xbox!
-    
-## Considérations relatives à l’expérience utilisateur pour PWAs sur Xbox
+#### <a name="setup"></a>Configuration  
 
-### Conception «10-foot»
+1.  Suivez les étapes pour [configurer et exécuter votre application PWA en tant qu’application Windows universelle.](./windows-features.md#set-up-and-run-your-universal-windows-app)  Ainsi, vous aurez une application Windows 10 entièrement fonctionnelle capable d’accéder aux API Windows universelles.  
+1.  Vous pouvez désormais déployer et déboguer votre application PWA \(en tant qu’application UWP\) sur Xbox One \(comme avec n’importe quel autre appareil distant Windows 10\) à l’aide du déboguer à distance [Visual Studio.](/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine?view=vs-2017&preserve-view=true
+)  Vous pouvez également installer votre PWA à l’aide de [Device Portal pour Xbox](/windows/uwp/debug-test-perf/device-portal-xbox) en suivant les étapes ci-après.  
+1.  À partir de Device Portal pour Xbox, go to **Home**  >  **My games \& apps**  >  **Add**, choose the option to upload **App Package and Dependencies**.  
+1.  Accédez au dossier de package que vous avez généré pour votre application à l’étape 1 et sélectionnez `.appx` le fichier à télécharger.  Le [fichier .appx est](/windows/uwp/packaging/packaging-uwp-apps) un fichier de package d’application UWP qui peut être chargé de façon test sur n’importe quel appareil.  
+1.  Appuyez ensuite sur le bouton **Dépendances,** sélectionnez le `dependencies` sous-dossier de votre application et chargez chacun d’eux.  Cette étape est requise uniquement pour le déploiement d’applications à partir de Device Portal pour Xbox.  Visual Studio fournit des dépendances lorsque le débogage à distance et l’ordinateur de l’utilisateur final les ont déjà installés lorsqu’ils sont remis à partir du Microsoft Store.  
+1.  Une fois le package d’application et **** les dépendances chargés, cliquez sur le bouton Aller sous la section *Déployer* et l’application sera installée.  Vous êtes prêt à lancer votre application à partir de Xbox !  
 
-La console Xbox One est considérée comme une «interface «10-foot», ce qui signifie que vos utilisateurs seront probablement assis à un minimum de 3 mètres de votre écran. Par exemple, considérez l’utilisation de votre application à cette distance par rapport à l’expérience de navigateur Web de bureau classique avec une souris et un clavier. Pour plus d’informations sur les recommandations en matière de conception et d’expérience utilisateur, voir [conception pour Xbox et télévision](/windows/uwp/design/devices/designing-for-tv).
+## <a name="ux-considerations-for-pwas-on-xbox"></a>Considérations sur l’expérience UX pour les applications de bureau à la demande sur Xbox  
 
-### Comprendre les «SafeZone TV»
+### <a name="design-for-the-10-foot-experience"></a>Conception pour l’expérience « 10-Foot Experience »  
 
-Les fabricants de télévision appliquent une [«zone sécurisée»](/windows/uwp/design/devices/designing-for-tv#tv-safe-area) dans le contenu qui peut capturer votre application. Par défaut, nous appliquons une bordure sécurisée autour de votre application, mais vous pouvez vous assurer que votre application prend en compte la taille de l’écran en appelant [`setDesiredBoundsMode`](/uwp/api/windows.ui.viewmanagement.applicationview.setdesiredboundsmode) et en spécifiant [`useCoreWindow`](/uwp/api/windows.ui.viewmanagement.applicationviewboundsmode) :
+Xbox One est considérée comme une « expérience « 10-foot experience », ce qui signifie que vos utilisateurs seront probablement à 10 mètres au minimum de l’écran.  En tant que tel, réfléchissez à la façon dont votre application peut être utilisée à cette distance par opposition à l’expérience classique du navigateur web de bureau avec une souris et un clavier.  Pour obtenir des conseils de conception et d’expérience UX, consultez [conception pour Xbox et télévision.](/windows/uwp/design/devices/designing-for-tv)  
+
+### <a name="understand-the-tv-safezone"></a>Comprendre « TV SafeZone »  
+
+Les fabricants de télévision appliquent une [zone sécurisée autour](/windows/uwp/design/devices/designing-for-tv#tv-safe-area) du contenu qui peut cliper votre application.  Par défaut, nous appliquons une bordure sécurisée autour de votre application pour en tenir compte, mais vous pouvez vous assurer que votre application prend la taille de l’écran complet en appelant [setDesiredBoundsMode](/uwp/api/windows.ui.viewmanagement.applicationview.setdesiredboundsmode) et en spécifiant [useCoreWindow](/uwp/api/windows.ui.viewmanagement.applicationviewboundsmode):  
 
 ```javascript
 var applicationView = Windows.UI.ViewManagement.ApplicationView.getForCurrentView();
 applicationView.setDesiredBoundsMode(Windows.UI.ViewManagement.ApplicationViewBoundsMode.useCoreWindow);
 ```  
 
-Pour plus d’informations, consultez la [`Windows.UI.ViewManagement`](/uwp/api/windows.ui.viewmanagement) documentation relative aux espaces de noms.
+Pour plus d’informations, consultez la documentation de l’espace de noms [Windows.UI.ViewManagement.](/uwp/api/windows.ui.viewmanagement)  
 
-### Gérer le focus et la navigation XY
+### <a name="manage-xy-focus-and-navigation"></a>Gérer le focus XY et la navigation  
 
-Les méthodes d’entrée utilisateur pour Xbox sont le boîtier de commande ou la télécommande qui utilise un [système de navigation](/windows/uwp/design/devices/designing-for-tv#xy-focus-navigation-and-interaction)en mode XY, ce qui permet à l’utilisateur de déplacer le focus d’un contrôle à l’autre en le déplaçant vers le haut, le bas, la gauche et la droite.
+Les méthodes d’entrée utilisateur pour Xbox sont le manette de jeu ou la télécommande, qui utilisent un système de [navigation XY,](/windows/uwp/design/devices/designing-for-tv#xy-focus-navigation-and-interaction)ce qui permet à l’utilisateur de déplacer le focus du contrôle vers le haut, le bas, la gauche et la droite.  
 
-Par exemple, vous souhaiterez peut-être que votre application fonctionne correctement avec la navigation en mode XY. Veillez également à [désactiver le *mode souris*](/windows/uwp/xbox-apps/how-to-disable-mouse-mode), qui est activé par défaut pour les applications UWP (et probablement non applicable à l’interface Xbox de votre application).
+En tant que tel, vous devez vous assurer que votre application fonctionne bien avec la navigation XY.  Veillez également à désactiver le [mode](/windows/uwp/xbox-apps/how-to-disable-mouse-mode)souris, qui est en vigueur par défaut pour les applications UWP \(et probablement non applicable à l’expérience Xbox de votre application\).  
 
-Le code suivant désactive le `mouse` mode et permet l’entrée de boîtier de commande pour générer des événements de clavier DOM:
+Le code suivant active le mode et permet aux entrées du `mouse` pavé numérique de générer des événements de clavier DOM :  
 
 ```javascript
 navigator.gamepadInputEmulation = "keyboard";
 ```  
 
-Vous pouvez `gamepad` également spécifier, ce qui désactive la souris, ne génère pas d’événements de clavier DOM et vous permet d’utiliser les API de boîtier de connexion Web et/ou WinRT standard.
+Vous pouvez également spécifier , qui également éteint la souris, ne génère pas d’événements de clavier DOM et vous permet d’utiliser les API standard du web et/ou du manette de jeu `gamepad` WinRT.  
 
-Pour activer la navigation directionnelle, voir la [bibliothèque TVJS](#tvjs), abordée plus loin.
+Pour activer la navigation directionnelle, consultez la [bibliothèque TVJS](#tvjs), abordée ci-après.  
 
-### TVJS
+### <a name="tvjs"></a>TVJS  
 
-[TVJS est une collection de bibliothèques d’assistance](https://github.com/Microsoft/TVHelpers) qui facilitent la création d’applications Web pour les téléviseurs. Si vous créez une application Web hébergée qui s’exécute également sur la console Xbox, TVJS peut vous aider à ajouter de la prise en charge de la *navigation directionnelle*, et fournir plusieurs contrôles qui simplifient l’interaction avec le contenu sur le téléviseur.
+[TVJS est une collection de bibliothèques d’aide](https://github.com/Microsoft/TVHelpers) qui facilitent la construction d’applications web pour la télévision.  Si vous construisez une application web hébergée qui s’exécutera également sur xbox, TVJS peut vous aider à ajouter la prise en charge de la *navigation directionnelle,* ainsi que fournir plusieurs contrôles qui facilitent l’interaction avec le contenu de la télévision.  
 
-La [navigation directionnelle](https://github.com/Microsoft/TVHelpers/wiki/Using-DirectionalNavigation) est une fonctionnalité TVJS qui offre une navigation à deux dimensions automatique dans les pages de votre application de télévision. Il n’est pas nécessaire de détecter et de gérer la navigation dans les pages de votre application, ou de spécifier explicitement toutes les cibles de focus valides pour chaque élément de l’interface utilisateur. La gestion automatique du Focus permet aux utilisateurs de se déplacer d’une manière intuitive et fiable.
+[La navigation directionnelle](https://github.com/Microsoft/TVHelpers/wiki/Using-DirectionalNavigation) est une fonctionnalité TVJS qui fournit une navigation bidimensionnelle automatique dans les pages de votre application TV.  Avec elle, il n’est pas nécessaire d’éviter et de gérer la navigation dans les pages de votre application, ni de spécifier explicitement toutes les cibles de focus valides pour chaque élément dans l’interface utilisateur.  La gestion automatique du focus permet aux utilisateurs de naviguer de manière intuitive et robuste.  
 
-Lorsque l’utilisateur navigue dans l’interface utilisateur de l’application à l’aide des boutons d’orientation du contrôleur, l’algorithme de focus automatique examine l’ensemble des cibles de focus potentielles, détermine l’élément suivant sur lequel se déplacer, puis définit automatiquement le focus sur cet élément. Pour déterminer l’élément suivant, l’algorithme combine l’entrée directionnelle, l’historique du focus passé et la disposition physique des éléments d’interface utilisateur de la page.
+Lorsque votre utilisateur navigue dans l’interface utilisateur de l’application avec les boutons de direction du contrôleur, l’algorithme de focus automatique examine l’ensemble des cibles de focus potentielles, détermine l’élément suivant vers qui se déplacer, puis définit automatiquement le focus sur cet élément.  Pour déterminer l’élément suivant, l’algorithme combine l’entrée directionnelle, l’historique du focus passé et la disposition physique des éléments d’interface utilisateur sur la page.  
 
-Pour activer la navigation directionnelle, incluez la référence de script suivante:
+Pour activer la navigation directionnelle, incluez la référence de script suivante :  
 
 ```html
 <script src="directionalnavigation-1.0.0.0.js"></script>
 ```  
 
-Par défaut, seuls `<a>` , `<button>` , `<input>` `<select>` et `<textarea>` les éléments peuvent être actifs. Pour activer le focus sur d’autres éléments, attribuez-leur une [IndexTabulation](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/tabindex)valide.
+Par défaut, `<a>` seuls `<button>` , , et les éléments sont `<input>` `<select>` `<textarea>` focusables.  Pour activer le focus sur d’autres éléments, attribuez-leur un [tabindex valide.](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/tabindex)  
 
 ```html
 <div tabindex="0″>This div is eligible for focus</div>
 ```  
 
-Pour plus d’informations sur la façon de modifier l’élément racine, de définir le focus initial, de remplacer le focus suivant, d’optimiser les contrôles pour le focus, et de personnaliser l’entrée, consultez la documentation [DirectionalNavigation](https://github.com/Microsoft/TVHelpers/wiki/DirectionalNavigation) . Il existe également un certain nombre d’autres exemples utiles.
+Consultez la documentation [DirectionalNavigation](https://github.com/Microsoft/TVHelpers/wiki/DirectionalNavigation) pour découvrir comment modifier l’élément racine, définir le focus initial, remplacer le focus suivant, optimiser les contrôles pour le focus, personnaliser l’entrée.  Il existe également un certain nombre d’autres exemples utiles.
 
-## Media PWAs sur Xbox
+## <a name="media-pwas-on-xbox"></a>P PWAs multimédias sur Xbox  
 
-Si vous créez une lecture de contenu multimédia PWA pour Xbox One, tenez compte des points suivants.
+Si vous construisez un PWA de lecture multimédia pour Xbox One, ez comptez sur les considérations suivantes.  
 
-### Extensions multimédias chiffrées (Encrypted) dans le navigateur
+### <a name="encrypted-media-extensions-eme-in-the-browser"></a>Extensions de média chiffrées (EME) dans le navigateur  
 
-Le navigateur Microsoft Edge sur Xbox One ne prend pas en charge les [extensions multimédias chiffrées](https://developer.mozilla.org/docs/Web/API/Encrypted_Media_Extensions_API) (Encrypted). Si votre support de votre application Media App utilise la gestion des droits numériques (DRM), vous ne pouvez pas l’exécuter à partir du navigateur sur votre Xbox. Au lieu de cela, vous devez le prototyper et le tester en tant qu' [application Xbox One à l’aide de PWABuilder ou Visual Studio](#deploying-and-testing-pwas-on-xbox), comme décrit ci-dessus. Vous pouvez également l’exécuter sur le navigateur Microsoft Edge sous Windows, où Encrypted est entièrement pris en charge.
+Le navigateur Microsoft Edge sur Xbox One ne prend pas en charge [les extensions multimédias chiffrées](https://developer.mozilla.org/docs/Web/API/Encrypted_Media_Extensions_API) \(EME\).  Si votre PWA multimédia l’utilise pour la gestion des droits numériques \(DRM\), vous ne pourrez pas l’exécuter à partir du navigateur sur votre Xbox.  Au lieu de cela, prototypez et testez-le en tant qu’application Xbox One à l’aide de [PWABuilder ou Visual Studio](#deploying-and-testing-pwas-on-xbox), comme décrit ci-dessus.  Vous pouvez également l’exécuter sur le navigateur Microsoft Edge sur Windows, où EME est entièrement pris en charge.  
 
-### Intégration aux contrôles de transport de média système
+### <a name="integrating-with-system-media-transport-controls"></a>Intégration aux contrôles de transport de média système  
 
-Si votre application est une application multimédia, il est important que votre application réponde aux contrôles multimédias initiés par l’utilisateur via des boutons à l’écran, des [commandes vocales Cortana](https://support.xbox.com/xbox-one/console/cortana-voice-commands), des [contrôles de transport de média système](/windows/uwp/audio-video-camera/system-media-transport-controls) dans le volet de navigation ou des applications [Xbox](https://www.microsoft.com/p/xbox/9wzdncrfjbd8
-) et [Xbox One SmartGlass](https://www.microsoft.com/p/xbox-one-smartglass/9wzdncrfhvx2) sur d’autres appareils. Jetez un coup d’œil au contrôle [MediaPlayer](https://github.com/Microsoft/TVHelpers/wiki/MediaPlayer-Overview) de la [bibliothèque TVJS](#tvjs), qui s’intègre automatiquement à ces contrôles. Vous pouvez également [intégrer manuellement les contrôles de transport de média système](https://msdn.microsoft.com/windows/uwp/audio-video-camera/system-media-transport-controls).
+Si votre application est une application multimédia, il est important que votre application réponde aux contrôles multimédias initiés par l’utilisateur via les boutons à l’écran, les commandes [vocales Cortana,](https://support.xbox.com/xbox-one/console/cortana-voice-commands)les contrôles de [transport](/windows/uwp/audio-video-camera/system-media-transport-controls) de média système dans le volet de navigation ou les applications [SmartGlass Xbox](https://www.microsoft.com/p/xbox/9wzdncrfjbd8
+) et [Xbox One](https://www.microsoft.com/p/xbox-one-smartglass/9wzdncrfhvx2) sur d’autres appareils.  Regardez le contrôle [MediaPlayer](https://github.com/Microsoft/TVHelpers/wiki/MediaPlayer-Overview) de la bibliothèque [TVJS,](#tvjs)qui s’intègre automatiquement à ces contrôles.  Vous pouvez également intégrer manuellement les contrôles de transport de [média système.](/windows/uwp/audio-video-camera/system-media-transport-controls)  
 
-### Chiffrement de contenu PlayReady
+### <a name="playready-content-encryption"></a>Chiffrement de contenu PlayReady  
 
-Au moment de l’écriture, la [ `cbcs` prise en charge du codage est limitée](/playready/packaging/content-encryption-modes#support-for-the-cbcs-aes-cbc-encryption-scheme) au client PlayReady pour Xbox One (version 1709 ou ultérieure). Si les éléments multimédias de votre application Project ne prennent pas en charge le chiffrement *CBCS* , sachez que les fonctionnalités de votre application seront probablement limitées (ou entièrement indisponibles) sur Windows.
+Au moment de la rédaction de cet article, la prise en charge du codage [cbcs](/playready/packaging/content-encryption-modes#support-for-the-cbcs-aes-cbc-encryption-scheme) est limitée au client PlayReady pour XBox One \(version 1709 ou supérieure\).  Si le média de votre PWA prend uniquement en charge le chiffrement **cbcs,** sachez que les fonctionnalités de votre application seront probablement limitées \(ou totalement indisponibles\) sur Windows.  
 
-## Voir également
-[Vidéo d’arête du Sud](https://github.com/Microsoft/uwp-experiences/tree/master/apps/video): exemple d’application vidéo pour Xbox créée avec des React.js et hébergée sur un serveur Web.
+## <a name="see-also"></a>Voir également  
 
-[Conception pour Xbox et TV](/windows/uwp/design/devices/designing-for-tv): concevez votre application de plateforme Windows universelle (UWP) de façon à ce qu’elle s’affiche correctement et qu’elle fonctionne bien sur les écrans Xbox One et de télévision.
+[South Video :](https://github.com/Microsoft/uwp-experiences/tree/master/apps/video)exemple d’application vidéo pour Xbox conçue avec React.js et hébergée sur un serveur web.  
 
-[Meilleures pratiques Xbox](/windows/uwp/xbox-apps/tailoring-for-xbox): suivez ces meilleures pratiques pour personnaliser votre application pour Xbox One.
+[Conception pour Xbox](/windows/uwp/design/devices/designing-for-tv)et télévision : concevez votre application de plateforme Windows universelle \(UWP\) afin qu’elle s’affiche bien et fonctionne bien sur Xbox One et les écrans de télévision.  
 
-[PWAS dans le Microsoft Store](/microsoft-edge/progressive-web-apps-edgehtml/microsoft-store): Voici comment (et pourquoi!) transmettre votre PWA au Microsoft Store.
+[Meilleures pratiques Xbox](/windows/uwp/xbox-apps/tailoring-for-xbox): suivez ces meilleures pratiques pour personnaliser votre application pour Xbox One.  
 
-[UWP sur Xbox One](/windows/uwp/xbox-apps/): Guide complet du développement d’applications UWP pour Xbox One.
+[PWA dans le Microsoft Store](./microsoft-store.md): voici comment soumettre votre PWA au Microsoft Store.  
+
+[UWP sur Xbox One :](/windows/uwp/xbox-apps/index)guide complet du développement d’applications UWP pour Xbox One.  

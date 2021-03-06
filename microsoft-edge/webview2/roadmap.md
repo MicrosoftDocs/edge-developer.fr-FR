@@ -1,39 +1,40 @@
 ---
-description: En savoir plus sur les nouveautés à venir pour WebView2
-title: Introduction à la WebView 2 de Microsoft Edge
+description: En savoir plus sur les étapes suivantes pour WebView2
+title: Feuille de route pour Microsoft Edge WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, applications Win32, Win32, Edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge
-ms.openlocfilehash: 99e743db0c1fb17ea46405b08e1ed074a3386068
-ms.sourcegitcommit: fab44f7e183a3c4f12bf925512fc62d84a4d6edc
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+ms.openlocfilehash: 0f51b5cab32bdb9b9aa9b6baceef5fe5a17eea54
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182359"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398412"
 ---
-# Introduction à Microsoft Edge WebView2  
-
-##### Dernière mise à jour: 2020 novembre  
-
-Le contrôle WebView2 permet aux développeurs d’incorporer des technologies Web dans leurs applications natives.  La page suivante présente la procédure prospective pour WebView2.  
+# <a name="microsoft-edge-webview2-roadmap"></a>Feuille de route Microsoft Edge WebView2  
 
 > [!NOTE]
-> WebView2 est en cours de développement actif et la présentation continue à évoluer en fonction des variations du marché et des commentaires des clients. Veuillez noter que les plans décrits ici ne sont pas exhaustifs et peuvent faire l’objet de modifications.  
+> Last Updated: November 2020  
 
-Si vous avez des inquiétudes ou des questions concernant la formule d’introduction, reportez-vous à la [référentiel Samples][GithubMicrosoftedgeWebviewfeedbackMain]de vos commentaires.  
+Le contrôle WebView2 permet aux développeurs d’incorporer des technologies web dans leurs applications natives.  La page suivante décrit la feuille de route prospective pour WebView2.  
 
-L’équipe WebView2 planifie les efforts importants suivants pour les mises à jour ultérieures.  
+> [!NOTE]
+> WebView2 est en cours de développement actif et la feuille de route continue d’évoluer en fonction des changements de marché et des commentaires des clients. Notez donc que les plans présentés ici ne sont pas exhaustifs et peuvent faire l’objet de modifications.  
+
+Si vous avez des préoccupations ou des questions sur la feuille de route, faites part de vos commentaires dans le [repo de commentaires.][GithubMicrosoftedgeWebviewfeedbackMain]  
+
+L’équipe WebView2 planifie les efforts majeurs suivants pour les futures mises à jour.  
 
 :::row:::
    :::column span="1":::
-      Programme d’installation d’WebView2 Runtime  
+      Programme d’installation Runtime WebView2  
    :::column-end:::
    :::column span="2":::
-      *   4e trimestre 2020
+      *   T4 2020
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -41,7 +42,7 @@ L’équipe WebView2 planifie les efforts importants suivants pour les mises à 
       Version corrigée  
    :::column-end:::
    :::column span="2":::
-      *   4e trimestre 2020  
+      *   T4 2020  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -49,41 +50,41 @@ L’équipe WebView2 planifie les efforts importants suivants pour les mises à 
       Disponibilité générale  
    :::column-end:::
    :::column span="2":::
-      *   Win32 C/C++ \ (4e trim 2020 \)  
-      *   .NET \ (4E TRIM 2020 \)  
+      *   Win32 C/C++ \(Q4 2020\)  
+      *   .NET \(Q4 2020\)  
       *   [WinUI 3.0][GithubMicrosoftUiXamlRoadmap]  
    :::column-end:::
 :::row-end:::  
 
-## Programme d’exécution et de WebView2  
+## <a name="webview2-runtime-and-installer"></a>Runtime et programme d’installation WebView2  
 
-Le [modèle de distribution persistant][ConceptDistributionEvergreenModel] vous permet de cibler ou de mettre en chaîne l’installation de WebView2 Runtime sur l’ordinateur de l’utilisateur.  Le programme d’exécution et de programme d’installation de WebView2 a atteint une disponibilité générale (GA).  
+[Un modèle de distribution persistant][ConceptDistributionEvergreenModel] vous permet de cibler ou d’installer le runtime WebView2 sur l’ordinateur de votre utilisateur.  Le programme d’installation et le runtime WebView2 persistants ont atteint la disponibilité générale \(GA\).  
 
-## Version corrigée  
+## <a name="fixed-version"></a>Version fixe  
 
-Le [modèle de distribution de version fixe][ConceptsDistributionFixedVersionModel] vous permet d’empaqueter les fichiers binaires Microsoft Edge dans votre application native.  La version fixe a atteint une disponibilité générale (GA).  
+[Le modèle de distribution de version][ConceptsDistributionFixedVersionModel] fixe vous permet de mettre en package les binaires Microsoft Edge à l’intérieur de votre application native.  La version fixe a atteint la disponibilité générale \(GA\).  
 
-## Disponibilité générale  
+## <a name="general-availability"></a>Disponibilité générale  
 
-### Win32 C/C++  
+### <a name="win32-cc"></a>Win32 C/C++  
 
-Le kit de développement logiciel (SDK) Win32 C/C++ a atteint la disponibilité.  
+Le SDK Win32 C/C++ a atteint la ga.  
 
-### .NET  
+### <a name="net"></a>.NET  
 
-Le kit de développement logiciel (SDK) .NET a atteint la disponibilité. 
+Le SDK .NET a atteint la ga. 
 
-### WinUI 3.0  
+### <a name="winui-30"></a>WinUI 3.0  
 
-Vous pouvez accéder à WebView2 dans vos applications UWP à l’aide de [Win interface 3,0][UwpToolkitsWinui3Index], actuellement en alpha.  Pour plus d’informations sur la façon de rester à jour, consultez la documentation de la [bibliothèque d’interface utilisateur Windows][GithubMicrosoftUiXamlRoadmap].  
+Vous pouvez accéder à WebView2 dans vos applications UWP à l’aide de [Win UI 3.0,][UwpToolkitsWinui3Index]actuellement en alpha.  Pour plus d’informations sur la mise à jour, accédez à la feuille de route de la bibliothèque [d’interface utilisateur Windows.][GithubMicrosoftUiXamlRoadmap]  
 
 <!-- links -->  
 
-[ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "Modèle de distribution persistant: distribution d’applications à l’aide de WebView2 | Documents Microsoft"  
-[ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "Modèle de distribution de version fixe: distribution d’applications à l’aide de WebView2 | Documents Microsoft"  
+[ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "Modèle de distribution persistant : distribution d’applications à l’aide de WebView2 | Documents Microsoft"  
+[ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "Modèle de distribution de version fixe : distribution d’applications à l’aide de WebView2 | Documents Microsoft"  
 
-[UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Version d’évaluation de la bibliothèque d’interface utilisateur 3,0 Preview 1 (2020) | Documents Microsoft"  
+[UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Windows UI Library 3.0 Preview 1 (mai 2020) | Documents Microsoft"  
 
-[GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "Commentaires sur le WebView-MicrosoftEdge/WebViewFeedback | GitHub"  
+[GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "Commentaires WebView - MicrosoftEdge/WebViewFeedback | GitHub"  
 
-[GithubMicrosoftUiXamlRoadmap]: https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md "Plan de la bibliothèque d’interface utilisateur Windows-Microsoft/Microsoft-UI-XAML | GitHub"  
+[GithubMicrosoftUiXamlRoadmap]: https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md "Feuille de route de la bibliothèque d’interface utilisateur Windows - Microsoft/microsoft-ui-xaml | GitHub"  

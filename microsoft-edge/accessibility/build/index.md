@@ -1,245 +1,245 @@
 ---
 ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
-description: Découvrez comment les meilleures pratiques et les applications Internet enrichies accessibles peuvent être utilisées pour créer un site Web accessible.
-title: Créer | Fonctions
+description: Découvrir comment les meilleures pratiques et les applications Internet enrichies accessibles (ARIA) peuvent se rassembler pour créer un site web accessible.
+title: Créer | Accessibilité
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/13/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: accessibilité, accessibilité pour les développeurs, sites Web accessibles, Edge, développement Web, ARIA, développeur, UIA, UI Automation
+keywords: accessibilité, accessibilité pour les développeurs, sites web accessibles, edge, développement web, ARIA, développeur, UIA, UI Automation
 ms.custom: seodec18
-ms.openlocfilehash: 40ab1acd0b5356ad4696cde0762f656708a67890
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 69f0576b39815708d01477972abad1f8bdc9486e
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11232951"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397887"
 ---
-# Créer des sites Web accessibles
+# <a name="building-accessible-websites"></a>Création de sites web accessibles
 
-Le Web est rempli par des sites Web, des applications et des interfaces utilisateur dynamiques et complexes, développés à l’aide d’une combinaison de HTML, CSS et JavaScript.  Néanmoins, lors d’une conception et d’une conception sans l’accessibilité, ces sites Web complexes sont difficiles à utiliser par les personnes qui utilisent des [technologies d’assistance](https://webaim.org/articles/motor/assistive) pour naviguer sur le Web. La création de sites Web accessibles aux personnes atteintes de handicaps nécessite des informations sémantiques sur l’interface utilisateur. Cela permet aux technologies d’assistance (par exemple, les lecteurs d’écran) de transmettre les informations nécessaires à des personnes atteintes de capacités d’utilisation du site Web.
+Le site web est rempli de sites web, d’applications et d’interfaces utilisateur dynamiques et complexes créés à l’aide d’une combinaison de code HTML, CSS et JavaScript.  Toutefois, lorsqu’ils sont conçus et créés sans accessibilité à l’esprit, ces sites web complexes sont difficiles à utiliser par les personnes qui s’appuient sur des [technologies](https://webaim.org/articles/motor/assistive) d’assistance pour parcourir le web. La création de sites web accessibles aux personnes présentant un handicap nécessite des informations sémantiques sur l’interface utilisateur. Cela permet aux technologies d’assistance, telles que les lecteurs d’écran, de transmettre les informations nécessaires pour aider les personnes ayant un large éventail de capacités à utiliser le site web.
 
-Consultez [HTML5Accessibility](https://html5accessibility.com) pour en savoir plus sur les nouvelles fonctionnalités HTML5 prises en charge par Microsoft Edge.
+Visitez [HTML5Accessibility pour](https://html5accessibility.com) obtenir des informations sur les nouvelles fonctionnalités HTML5 qui sont accessibles et pris en charge par Microsoft Edge.
 
-## Fonctionnement de l’accessibilité
+## <a name="how-accessibility-works"></a>Fonctionnement de l’accessibilité
 
-Les technologies d’assistance permettent d’ajouter des fonctionnalités qui ne sont généralement pas disponibles sur les ordinateurs. Par exemple, un utilisateur souffrant d’une déficience visuelle peut utiliser son clavier en association avec la technologie d’assistance telle qu’un lecteur d’écran, plutôt que d’utiliser directement le navigateur avec la souris et l’écran. Pour les applications sur les plates-formes Microsoft et sur le Web, la technologie d’assistance interagit avec Microsoft [UI Automation](https://msdn.microsoft.com/library/windows/desktop/bb892135.aspx), un modèle d’objet spécifique à l’application tel que le DOM (Document Object Model) dans Microsoft Edge, ou une combinaison de ces éléments.
+Les technologies d’assistance ajoutent des fonctionnalités que les ordinateurs n’ont généralement pas. Par exemple, un utilisateur malvoyant peut utiliser son clavier en combinaison avec une technologie d’assistance telle qu’un lecteur d’écran, plutôt que d’utiliser directement le navigateur avec la souris et l’écran. Pour les applications sur les plateformes Microsoft et sur le web, la technologie d’assistance interagit avec Microsoft [UI Automation,](https://msdn.microsoft.com/library/windows/desktop/bb892135.aspx)un modèle objet propre à l’application, tel que le modèle DOM (Document Object Model) dans Microsoft Edge, ou une combinaison de ces derniers.
 
-Pour les développeurs Web, certains éléments HTML sont mappés aux objets UI Automation, de sorte que la sélection de ces éléments HTML par le développeur peut utiliser les propriétés d’accessibilité et les événements intégrés à ces éléments. Lors du développement de votre site Web, il n’est généralement pas nécessaire de veiller à ce que l’API soit correctement écrite (ou que l’élément approprié soit spécifié), afin que l’application soit accessible. Pour plus d’informations, voir [Aria et UI Automation dans Microsoft Edge](./ARIA-and-UI-Automation.md) .  Pour plus d’informations sur les applications de plateforme Windows universelle (UWP) accessibles, voir la rubrique [accessibilité](https://msdn.microsoft.com/windows/uwp/accessibility/accessibility) dans le centre de développement Windows.
+Pour les développeurs web, certains éléments HTML sont mappés à des objets UI Automation. Ainsi, lors de la sélection de ces éléments HTML, le développeur peut utiliser les propriétés d’accessibilité et les événements intégrés à ces éléments. Lors du développement de votre site web, il vous suffit généralement de vous assurer que l’API est correctement écrite (ou que l’élément approprié est spécifié), afin que l’application soit accessible. Pour plus [d’informations, consultez ARIA](./ARIA-and-UI-Automation.md) et UI Automation dans Microsoft Edge.  Pour plus d’informations sur les applications de plateforme Windows universelle (UWP) accessibles, accédez à la rubrique [Accessibilité](https://msdn.microsoft.com/windows/uwp/accessibility/accessibility) du Centre de dév. Windows.
 
-De nombreux problèmes d’accessibilité courants liés au contenu dynamique peuvent être corrigés par de bonnes pratiques de programmation, et la documentation de [WCAG 2,0](https://go.microsoft.com/fwlink/p/?LinkID=24629) comporte de nombreuses techniques et meilleures pratiques pour vous aider à créer des applications Web dynamiques plus accessibles. Même s’il est correctement codé, le contenu dynamique n’est pas nécessairement accessible. Les [applications Internet enrichies accessibles](#aria) peuvent résoudre ce problème.  
+De nombreux problèmes d’accessibilité courants avec le contenu dynamique peuvent être résolus par une bonne pratique de codage, et la documentation [WCAG 2.0](https://go.microsoft.com/fwlink/p/?LinkID=24629) inclut de nombreuses techniques et meilleures pratiques pour vous aider à créer des applications web dynamiques plus accessibles. Toutefois, même lorsqu’il est correctement codé, le contenu dynamique n’est pas nécessairement accessible. [Les applications Internet enrichies accessibles (ARIA)](#aria) permettent de contourner ce problème.  
 
-Pour plus d’informations sur l’accessibilité Web, consultez l’article [Présentation de](https://www.w3.org/WAI/intro/accessibility.php) l’accessibilité Web par l' [initiative de Web Accessibility](https://www.w3.org/WAI/) (WAI).
+Pour plus d’informations sur l’accessibilité web, consultez [l’introduction à](https://www.w3.org/WAI/intro/accessibility.php) l’accessibilité web par l’initiative d’accessibilité web [(CAS).](https://www.w3.org/WAI)
 
-## ENRICHI
+## <a name="aria"></a>ARIA
 
-La spécification Aria ( [Rich Internet applications) accessible](https://www.w3.org/TR/wai-aria/) par l' [initiative W3C’s Web Accessibility](https://www.w3.org/WAI/) définit en tant que syntaxe pour rendre le contenu Web dynamique et les interfaces utilisateur personnalisés accessibles à tous les utilisateurs. ARIA étend le code HTML à l’aide d’attributs supplémentaires (rôles, propriétés et États) conçus pour transmettre des sémantiques personnalisées. Ces attributs sont utilisés par les navigateurs pour passer de l’État et du rôle de contrôles à l’API d’accessibilité.
+La spécification ARIA [(Accessible Rich Internet Applications)](https://www.w3.org/TR/wai-aria/) de l’Initiative d’accessibilité web du W3C définit comme une syntaxe pour rendre le contenu web dynamique et les interfaces utilisateur personnalisées accessibles à tous. [](https://www.w3.org/WAI/) ARIA étend le code HTML à l’aide d’attributs supplémentaires (rôles, propriétés et états) conçus pour transmettre la sémantique personnalisée. Ces attributs sont utilisés par les navigateurs pour transmettre l’état et le rôle des contrôles à l’API d’accessibilité.
 
-### Rôles, propriétés et États
+### <a name="roles-properties-and-states"></a>Rôles, propriétés et états
 
-Les rôles ARIA sont définis sur des éléments à l’aide de l' [`role`](https://msdn.microsoft.com/library/cc304102(v=vs.85).aspx) attribut pour fournir des informations sur les technologies d’assistance et sur l’élément. Par exemple, l' `<li>` élément suivant est assigné `role="menuitem"` pour indiquer qu’il s’agit d’un élément d’un menu.
+Les rôles ARIA sont définies sur des éléments utilisant l’attribut pour fournir des technologies d’assistance et des API [`role`](https://msdn.microsoft.com/library/cc304102(v=vs.85).aspx) d’accessibilité sur l’élément. Par exemple, l’élément `<li>` ci-dessous est affecté pour signifier `role="menuitem"` qu’il s’agit d’un élément dans un menu.
 
 ```html
 <li role="menuitem">Home</li>
 ```
 
-Les États et propriétés ARIA sont des attributs prédéfinis de Aria qui fournissent des informations spécifiques sur un objet pour faciliter la définition de la nature des rôles. Les propriétés sont des attributs essentiels pour la nature d’un objet, par exemple [`aria-readonly`](https://msdn.microsoft.com/library/cc304089(v=vs.85).aspx) et [`aria-haspopup`](https://msdn.microsoft.com/library/cc304081(v=vs.85).aspx) . Le changement de propriété affecte la signification de l’objet. Dans l’exemple ci-dessous, la propriété `aria-haspopup="true"` est définie sur un `<li>` élément de menu pour signifier qu’il s’agit d’une fenêtre contextuelle.
+Les états et propriétés ARIA sont des attributs préfixés aria qui fournissent des informations spécifiques sur un objet pour vous aider à définir la nature des rôles. Les propriétés sont des attributs essentiels à la nature d’un objet, comme [`aria-readonly`](https://msdn.microsoft.com/library/cc304089(v=vs.85).aspx) et [`aria-haspopup`](https://msdn.microsoft.com/library/cc304081(v=vs.85).aspx) . La modification d’une propriété affecte la signification de l’objet. Dans l’exemple ci-dessous, la propriété est définie sur un élément de `aria-haspopup="true"` menu pour signifier qu’elle possède une fenêtre `<li>` déroulante.
 
 ```html
 <li role="menuitem" aria-haspopup="true">Open</li>
 ```
 
-Les États ne changent pas la nature de l’objet, mais représentent des informations associées à l’interaction de l’objet ou de l’utilisateur avec l’objet, par exemple [`aria-hidden`](https://msdn.microsoft.com/library/cc304083(v=vs.85).aspx) ou [`aria-checked`](https://msdn.microsoft.com/library/cc304075(v=vs.85).aspx) . Par exemple, l’état `aria-checked="false"` dans l’exemple ci-dessous correspond à la case à cocher non activée.
+Les états ne modifient pas la nature de l’objet, mais représentent les informations associées à l’interaction de l’objet ou de l’utilisateur avec l’objet, comme [`aria-hidden`](https://msdn.microsoft.com/library/cc304083(v=vs.85).aspx) ou [`aria-checked`](https://msdn.microsoft.com/library/cc304075(v=vs.85).aspx) . Par exemple, l’état dans l’exemple ci-dessous représente que la case à `aria-checked="false"` cocher n’est pas cochée.
 
 ```html
 <div role="checkbox" aria-checked="false">Accept</div>
 ```
 
-Accédez au [modèle de rôles](https://www.w3.org/TR/wai-aria-1.1/#roles) par le W3C pour afficher une liste complète des rôles, propriétés et États.
+Go to [The Roles Model](https://www.w3.org/TR/wai-aria-1.1/#roles) by the W3C to see a full list of roles, properties, and states.
 
-Pour plus d’informations sur ARIA, voir la section «ARIA» dans la section « [ressources](#resources) ».
+Pour plus d’informations sur ARIA, accédez à ARIA dans la section [Ressources.](#resources)
 
-## Test de compatibilité de technologie d’assistance  
+## <a name="assistive-technology-compatibility-testing"></a>Test de compatibilité des technologies d’assistance  
 
-Vérifiez que le site Web que vous êtes en train de générer fonctionne avec de véritables technologies d’assistance est le meilleur moyen de garantir une bonne utilisation pour les utilisateurs souffrant de handicaps.  Dans la mesure où de nombreuses technologies d’assistance utilisent le clavier, le test de l’accessibilité du clavier de votre site Web est l’endroit idéal pour commencer.  Le [test de compatibilité au clavier][W3cPerspectiveVideosKeyboard] vérifie que les utilisateurs ont accès à tous les contrôles interactifs sans nécessiter de souris.  Microsoft [Accessibility Insights pour le Web][AccessibilityinsightsWebOverview] est une extension de navigateur pour Microsoft Edge et chrome qui vous guide et révèle plusieurs problèmes courants.  
+Vérifier que le site web que vous construisez fonctionne avec des technologies d’assistance réelles est la meilleure façon de garantir une bonne expérience pour vos utilisateurs présentant un handicap.  Étant donné que de nombreuses technologies d’assistance utilisent le clavier, le test de l’accessibilité du clavier de votre site web est un bon point de départ.  [Le test de compatibilité du clavier][W3cPerspectiveVideosKeyboard] valide que les utilisateurs ont accès à tous les contrôles interactifs sans nécessiter de souris.  Microsoft [Accessibility Insights for Web][AccessibilityinsightsWebOverview] est une extension de navigateur pour Microsoft Edge et Chrome qui vous guide et révèle plusieurs problèmes courants.  
 
-Lorsque vous êtes certain que votre site Web fonctionne correctement avec un clavier, essayez avec d’autres technologies d’assistance telles que les lecteurs d’écran.  Ce problème ne concerne pas les problèmes suivants.
+Une fois que vous êtes certain que votre site web fonctionne bien avec un clavier, essayez-le avec d’autres technologies d’assistance, telles que les lecteurs d’écran.  Il révèle les problèmes suivants.
 
 *   Votre code HTML, ARIA et CSS.  
-*   Le niveau de prise en charge d’une technologie d’assistance pour une fonction ou une technique.  
+*   Niveau de prise en charge d’une technologie d’assistance pour une fonctionnalité ou une technique.  
     
-Les différents navigateurs sont susceptibles de mapper des éléments aux API d’accessibilité de plateforme différemment de Microsoft Edge.  Lorsque vous créez votre interface, il est important de prendre en considération chaque différence.  
+Différents navigateurs peuvent maquer des éléments sur des API d’accessibilité de plateforme différemment de Microsoft Edge.  Lors de la création de votre interface, il est important de prendre en compte chaque différence.  
 
-WebAIM effectue des enquêtes avec le [lecteur d’écran][WebaimProjectsScreenreadersurvey8] et les utilisateurs [malvoyants][WebaimProjectsLowvisionsurvey2] , qui vous permettent de déterminer les technologies d’assistance et les navigateurs que vous souhaitez tester.  
+WebAIM effectue des [][WebaimProjectsScreenreadersurvey8] enquêtes [][WebaimProjectsLowvisionsurvey2] avec des utilisateurs de lecteur d’écran et de vision faible qui vous aident à choisir les technologies d’assistance et les navigateurs que vous souhaitez tester.  
 
-### Découvrir comment tester  
+### <a name="learning-how-to-test"></a>Apprendre à tester  
 
-Les technologies d’assistance sont des outils sophistiqués.  Ne supposez pas que vous êtes en mesure de démarrer immédiatement les tests avec une technologie d’assistance sans avoir d’abord d’apprendre sur son fonctionnement.  L’apprentissage de tests avec un lecteur d’écran a une courbe d’apprentissage particulièrement en pente.  Un utilisateur de lecteur d’écran débutant peut supposer qu’un bogue de lecteur d’écran s’est produit alors que le problème est lié à une mauvaise utilisation du lecteur d’écran.  
+Les technologies d’assistance sont des outils sophistiqués.  Ne supposez pas que vous êtes en mesure de commencer immédiatement les tests avec une technologie d’assistance sans avoir tout d’abord appris comment elle fonctionne.  L’apprentissage du test avec un lecteur d’écran présente une courbe d’apprentissage particulièrement pointée.  Un utilisateur de lecteur d’écran débutant peut supposer qu’un bogue de lecteur d’écran s’est produit alors que le problème est lié à une mauvaise utilisation du lecteur d’écran.  
 
-Pour plus d’informations sur les connaissances en matière de tests avec des technologies d’assistance, voir [test avec les lecteurs d’écran][WebaimArticlesScreenreaderTesting] sur WebAIM.  
+Pour plus d’informations sur l’apprentissage des technologies d’assistance, accédez à [Test avec][WebaimArticlesScreenreaderTesting] lecteurs d’écran sur WebAIM.  
 
-### Test local  
+### <a name="testing-locally"></a>Test local  
 
-La plupart des appareils incluent une technologie d’assistance intégrée au système d’exploitation.  Microsoft Windows inclut le lecteur d’écran [narrateur Windows][MicrosoftSupport22798] et la [loupe Windows][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198].  des technologies d’assistance tierces telles que [NVDA][NvaccessAboutNvda], [FreedomscientificSoftwareJaws]et [ZoomText][FreedomscientificSoftwareZoomtext] peuvent être téléchargées.  Apple macOS inclut le lecteur d’écran [VoiceOver][AppleAccessibilityMacVision] .  Ainsi que iOS, Android et Linux prennent en charge une variété de technologies d’assistance.  
+La plupart des appareils incluent une technologie d’assistance intégrée au système d’exploitation.  Microsoft Windows inclut le lecteur [d’écran][MicrosoftSupport22798] du Narrateur Windows et la [Loupe Windows.][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]  Les technologies d’assistance tierces telles que [NVDA,][NvaccessAboutNvda] [FreedomscientificSoftwareJaws]et [ZoomText][FreedomscientificSoftwareZoomtext] sont disponibles en téléchargement.  Apple macOS inclut le [lecteur d’écran VoiceOver.][AppleAccessibilityMacVision]  Et iOS, Android et Linux sont tous en charge de nombreuses technologies d’assistance.  
 
-### Tests sur machines virtuelles et émulateurs  
+### <a name="testing-in-virtual-machines-and-emulators"></a>Test dans les machines virtuelles et les émulateurs  
 
-Sous macOS, si vous voulez effectuer un test à l’aide d’une technologie d’assistance uniquement disponible pour Windows (par exemple, narrateur Windows ou NVDA), créez une machine virtuelle Windows.  Les machines virtuelles avec Microsoft Edge \ (EdgeHTML \) et Internet Explorer sont disponibles pour VirtualBox et VMWare sur la page de téléchargement de l' [ordinateur virtuel][MicrosoftDeveloperEdgeVms].  
+Sous macOS, si vous souhaitez tester une technologie d’assistance uniquement disponible pour Windows, comme le Narrateur Windows ou NVDA, créez une machine virtuelle Windows.  Les machines virtuelles avec Microsoft Edge \(EdgeHTML\) et IE sont disponibles pour VirtualBox et VMWare sur la page de téléchargement [des machines virtuelles.][MicrosoftDeveloperEdgeVms]  
 
-[Android Studio][AndroidDeveloperSdkInstallingStudioHtml] inclut un émulateur qui vous permet de tester les technologies d’assistance dans le cadre de la [suite Android Accessibility][GooglePlayStoreAndroidAccessibilitySuite].  Suivez les instructions de [configuration d’un périphérique virtuel][AndroidDeveloperDevicesManagingAvdsHtml] et [Démarrez l’émulateur][AndroidDeveloperDevicesEmulatorHtml], puis installez la [suite d’accessibilité Android][GooglePlayStoreAndroidAccessibilitySuite] à partir du Windows Store GooglePlay.  
+[Android Studio][AndroidDeveloperSdkInstallingStudioHtml] inclut un émulateur qui vous aide à tester les technologies d’assistance dans [la suite d’accessibilité Android.][GooglePlayStoreAndroidAccessibilitySuite]  Suivez les instructions pour configurer un périphérique [virtuel][AndroidDeveloperDevicesManagingAvdsHtml] et démarrer l’émulateur, [][AndroidDeveloperDevicesEmulatorHtml]puis installer la suite [d’accessibilité Android][GooglePlayStoreAndroidAccessibilitySuite] à partir de GooglePlay Store.  
 
 > [!NOTE]
-> Pour le moment, le simulateur iOS n’inclut pas VoiceOver.  
+> Le simulateur iOS n’inclut actuellement pas VoiceOver.  
 
-### Outils de test basés sur le Cloud  
+### <a name="cloud-based-testing-tools"></a>Outils de test basés sur le cloud  
 
-Si aucune technologie d’assistance n’est disponible sur votre système d’exploitation, ou si vous n’êtes pas en mesure d’en installer une sur un ordinateur virtuel ou un émulateur, les outils de test de technologie d’assistance dans le Cloud sont les plus avantageux.  
+Si une technologie d’assistance n’est pas disponible sur votre système d’exploitation ou si vous ne pouvez pas en installer une sur une machine virtuelle ou un émulateur, les outils de test de technologie d’assistance en nuage sont la meilleure chose à faire.  
 
-*   [Assistiv Labs (commercial)][AssistivlabsMain] vous permet d’effectuer des tests manuels avec des technologies d’assistance via n’importe quel navigateur Web moderne.  Choisissez une technologie et un navigateur d’assistance et il vous connecte avec un ordinateur virtuel, un émulateur ou un appareil réel avec lequel vous pouvez interagir.  
+*   [Assistiv Labs (commercial)][AssistivlabsMain] vous permet de tester manuellement des technologies d’assistance via n’importe quel navigateur web moderne.  Choisissez une technologie d’assistance et un navigateur qui vous connecte à un ordinateur virtuel, un émulateur ou un appareil réel avec lequel vous pouvez interagir.  
 
-## Ressources
+## <a name="resources"></a>Ressources
 
-### Notions de base sur l’accessibilité
+### <a name="accessibility-basics"></a>Informations de base sur l’accessibilité
 
-#### [Le projet A11Y](http://a11yproject.com/)
+#### [<a name="the-a11y-project"></a>Le projet A11Y](http://a11yproject.com/)
 
-Le projet A11Y est un effort axé sur la communauté pour faciliter l’accessibilité Web. Consultez le site de [projet A11Y](https://a11yproject.com/) pour en savoir plus sur les principes d’accessibilité de base, la [bibliothèque](https://a11yproject.com/patterns)de modèles et de gadgets accessibles et leurs [ressources](http://a11yproject.com/resources.html) sur les logiciels d’accessibilité, les blogs, les livres et les outils.
+Le projet A11Y est un effort communautaire visant à faciliter l’accessibilité du web. Consultez le site projet [A11Y](https://a11yproject.com/) pour en savoir plus sur les principes [](http://a11yproject.com/resources.html) d’accessibilité de base, leur modèle accessible et la bibliothèque de [widgets,](https://a11yproject.com/patterns)ainsi que leurs ressources sur les logiciels d’accessibilité, les blogs, les livres et les outils.
 
-#### [Initiative Web Accessibility (WAI)](https://w3.org/WAI/)
+#### [<a name="web-accessibility-initiative-wai"></a>Initiative d’accessibilité web (CAS)](https://w3.org/WAI/)
 
-Le World Wide Web Accessibility Initiative (WAI) W3C vous permet d’améliorer l’accessibilité du Web. Son site fournit diverses ressources pour la [prise en main de l’accessibilité Web](https://www.w3.org/WAI/gettingstarted/Overview.html), la [création d’une inclusion, des](https://www.w3.org/WAI/users/Overview.html) [didacticiels et des présentations](https://www.w3.org/WAI/train.html), et bien plus encore.
+L’initiative DNS (Web Accessibility Initiative) W3C est un effort pour améliorer l’accessibilité du site web. Leur site fournit une variété de ressources pour la prise en compte de l’accessibilité [web,](https://www.w3.org/WAI/gettingstarted/Overview.html)la conception pour [l’inclusion,](https://www.w3.org/WAI/users/Overview.html)les [didacticiels et les présentations,](https://www.w3.org/WAI/train.html)et bien plus encore.
 
-### Blogs sur l’accessibilité
+### <a name="accessibility-blogs"></a>Blogs sur l’accessibilité
 
-#### [Le groupe Paciello](https://www.paciellogroup.com/blog/)
+#### [<a name="the-paciello-group"></a>Groupe Paciello](https://www.paciellogroup.com/blog/)
 
-Le groupe Paciello fournit des solutions de Conseil et de technologie aux organisations du monde entier pour s’assurer que leurs clients accèdent efficacement à tous les audiences, tout en remplissant les normes gouvernementales et internationales. Leur blog englobe des sujets tels que les meilleures pratiques en matière d’accessibilité Web, les outils d’accessibilité et les tendances en matière d’accessibilité.
+Le groupe Paciello fournit des solutions de conseil et de technologie aux organisations du monde entier pour s’assurer que leurs clients atteignent tous les publics efficacement, tout en respectant les normes gouvernementales et internationales. Leur blog traite de sujets tels que les meilleures pratiques en matière d’accessibilité web, les outils d’accessibilité et les tendances d’accessibilité.
 
-#### [Accès simple](http://simplyaccessible.com/articles/)
+#### [<a name="simply-accessible"></a>Simple accessible](http://simplyaccessible.com/articles/)
 
-Le simple accès est une équipe de spécialistes de l’accessibilité qui fournissent une formation sur l’accessibilité, des conseils et plus encore pour modifier la perception de l’accessibilité sur le Web. La section relative à cette rubrique [décrit les meilleures](http://simplyaccessible.com/articles/) pratiques en matière d’accessibilité Web, de conception accessible et plus encore.
+Simply Accessible est une équipe de spécialistes de l’accessibilité qui fournit une formation sur l’accessibilité, des conseils et bien plus encore pour modifier la perception de l’accessibilité sur le web. Sa section [Articles](http://simplyaccessible.com/articles/) présente les meilleures pratiques en matière d’accessibilité web, de conception accessible et bien plus encore.
 
-#### [Groupe SSB Christian (SSB)](http://www.ssbbartgroup.com/blog/)
+#### [<a name="ssb-bart-group-ssb"></a>SSB PREMIER GROUPE (SSB)](http://www.ssbbartgroup.com/blog/)
 
-Le groupe SSB Christian est une entreprise d’accessibilité numérique qui soutient ses clients lors du développement et du déploiement de produits et services accessibles. Son blog adresse des rubriques telles que les meilleures pratiques ARIA, les tendances d’accessibilité, les webinaires, etc.
+Le groupe SSB TELS est une société d’accessibilité numérique qui aide ses clients dans le développement et le déploiement de produits et de services accessibles. Leurs rubriques de blog traitent de sujets tels que les meilleures pratiques ARIA, les tendances d’accessibilité, les webinaires, etc.
 
-### Exemples accessibles
+### <a name="accessible-examples"></a>Exemples accessibles
 
-#### [Didacticiels ally.js](http://allyjs.io/tutorials/)
+#### [<a name="allyjs---tutorials"></a>ally.js - Didacticiels](http://allyjs.io/tutorials/)
 
-Bibliothèque JavaScript pour aider les applications Web modernes en matière d’accessibilité, rendre l’accessibilité plus simple.
+Bibliothèque JavaScript pour aider les applications web modernes avec des problèmes d’accessibilité en rendant l’accessibilité plus simple.
 
-#### [Heydonworks-exemples de ARIA](http://heydonworks.com/practical_aria_examples/)
+#### [<a name="heydonworks---aria-examples"></a>Heydonworks - Exemples ARIA](http://heydonworks.com/practical_aria_examples/)
 
-Exemples pratiques ARIA pour améliorer l’accessibilité de votre application
+Exemples d’aria pratiques pour améliorer l’accessibilité de votre application
 
-#### [Exemples de OpenAjax](http://oaa-accessibility.org/)
+#### [<a name="openajax-examples"></a>Exemples OpenAjax](http://oaa-accessibility.org/)
 
-Le site Web de OpenAjax Alliance est une excellente ressource de vérification des règles pour le WAI-ARIA et fournit plusieurs exemples d’implémentations WAI-ARIA.
+Le site web OpenAjax Alliance est une excellente ressource pour vérifier les règles pour LARY-ARIA et fournit un certain nombre d’exemples d’implémentations DE LATN-ARIA.
 
-#### [Masques](http://a11yproject.com/patterns.html)
+#### [<a name="patterns"></a>Modèles](http://a11yproject.com/patterns.html)
 
-[Le projet A11Y](http://a11yproject.com/) propose une bibliothèque de gadgets et de modèles accessibles tels que des menus, des boutons, des info-bulles, etc.
+[Le projet A11Y](http://a11yproject.com/) offre une bibliothèque de widgets et de modèles accessibles, tels que des menus, des boutons, des bulles et bien plus encore.
 
-### Techniques d’accessibilité & outils
+### <a name="accessibility-techniques--tools"></a>Techniques d’accessibilité & outils
 
-#### [Accessibilité: création d’icônes d’extension accessibles pour Microsoft Edge](../../edgehtml/extensions/guides/accessibility.md)
+#### [<a name="accessibility-creating-accessible-extension-icons-for-microsoft-edge"></a>Accessibilité : création d’icônes d’extension accessibles pour Microsoft Edge](../../edgehtml/extensions/guides/accessibility.md)
 
 Obtenez des conseils sur la création d’icônes d’extensions accessibles pour Microsoft Edge.
 
-#### [Nom et description accessibles: calculs et mappages 1,1](https://www.w3.org/TR/accname-1.1/)
+#### [<a name="accessible-name-and-description-computation-and-mappings-11"></a>Nom et description accessibles : Calcul et mappages 1.1](https://www.w3.org/TR/accname-1.1/)
 
-Ce document de mappage W3C décrit la façon dont les navigateurs déterminent les noms et descriptions des objets accessibles dans les langages de contenu Web, et les exposent dans les API d’accessibilité.
+Ce document de mappage W3C explique comment les navigateurs déterminent le nom et les descriptions des objets accessibles à partir de langages de contenu web et les exposent dans les API d’accessibilité.
 
-#### [Ressources d’évaluation de l’accessibilité](https://www.w3.org/WAI/eval/Overview.html)
+#### [<a name="accessibility-evaluation-resources"></a>Ressources d’évaluation de l’accessibilité](https://www.w3.org/WAI/eval/Overview.html)
 
-Les ressources d’évaluation de l’accessibilité sont une ressource de plusieurs pages par le W3C qui souligne les différentes approches d’évaluation des sites Web pour l’accessibilité.
+Les ressources d’évaluation de l’accessibilité sont une ressource multi-pages du W3C qui décrit différentes approches d’évaluation des sites web pour l’accessibilité.
 
-#### [Tests de compatibilité de technologie d’assistance](http://www.powermapper.com/tests/)
+#### [<a name="assistive-technology-compatibility-tests"></a>Tests de compatibilité des technologies d’assistance](http://www.powermapper.com/tests/)
 
-Résultats de test montrant le comportement des différents types de contenu et normes dans les technologies d’assistance comme les lecteurs d’écran.
+Résultats des tests montrant le comportement de différents types de contenu et normes dans les technologies d’assistance (AT) comme les lecteurs d’écran.
 
-#### [La création de sites Web accessibles est encore plus facile](https://blogs.msdn.microsoft.com/webdev/2016/05/02/building-accessible-websites-just-got-a-lot-easier/)
+#### [<a name="building-accessible-websites-just-got-a-lot-easier"></a>La création de sites web accessibles a été beaucoup plus facile](https://blogs.msdn.microsoft.com/webdev/2016/05/02/building-accessible-websites-just-got-a-lot-easier/)
 
-Ce billet de blog .NET Web Development et Tools décrit le [vérificateur d’accessibilité](https://go.microsoft.com/fwlink/p/?linkid=841539)sur le Web de Visual Studio extensions.
+Ce billet de blog .NET Web Development and Tools décrit l’extension Visual Studio [Web Accessibility Checker](https://go.microsoft.com/fwlink/p/?linkid=841539).
 
-#### [Mappages des API d’accessibilité principales 1,1](https://www.w3.org/TR/core-aam-1.1/)
+#### [<a name="core-accessibility-api-mappings-11"></a>Mappages des API d’accessibilité principales 1.1](https://www.w3.org/TR/core-aam-1.1/)
 
-Ce document de mappage W3C explique comment les sémantiques des langages de contenu Web sont exposées aux API d’accessibilité.  
+Ce document de mappage W3C explique comment la sémantique des langages de contenu web est exposée aux API d’accessibilité.  
 
-#### [Vérifications simplifiées: un premier examen de l’accessibilité sur le Web](https://www.w3.org/WAI/eval/preliminary.html)
+#### [<a name="easy-checks--a-first-review-of-web-accessibility"></a>Vérifications faciles : premier examen de l’accessibilité web](https://www.w3.org/WAI/eval/preliminary.html)
 
-Séries de contrôles rapide par le WAI qui vous permettent d’identifier l’accessibilité d’une page Web.
+Une série de vérifications rapides par la FONCTIONNALITÉ DNS qui vous aident à vérifier l’accessibilité d’une page web.
 
-#### [Comment respecter les 2,0 de WCAG](https://www.w3.org/WAI/WCAG20/quickref/)
+#### [<a name="how-to-meet-wcag-20"></a>Comment rencontrer WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)
 
-Référence rapide aux instructions d’accessibilité pour le contenu Web (WCAG) 2,0 (critères de réussite) et aux techniques.
+Référence rapide aux exigences et techniques WCAG (Web Content Accessibility Guidelines) 2.0 (critères de réussite).
 
-#### [Mappages des API d’accessibilité HTML 1,0](https://www.w3.org/TR/html-aam-1.0/)
+#### [<a name="html-accessibility-api-mappings-10"></a>Mappages d’API d’accessibilité HTML 1.0](https://www.w3.org/TR/html-aam-1.0/)
 
-Ce document relatif aux mappages W3C décrit le mappage des éléments et attributs HTML 5.1 aux API d’accessibilité de la plateforme.
+Ce document de mappages W3C explique comment les éléments et attributs HTML5.1 sont mappages avec les API d’accessibilité de la plateforme.
 
-#### [Conseils rapides](http://a11yproject.com/#Quick-tips)
+#### [<a name="quick-tips"></a>Conseils rapides](http://a11yproject.com/#Quick-tips)
 
-Liste de conseils de développement Web rapide pour l’accessibilité par [le projet A11Y](http://a11yproject.com/).
+Liste des conseils de développement web rapide pour l’accessibilité par [le projet A11Y](http://a11yproject.com/).
 
-#### [Analyse du site](https://developer.microsoft.com/microsoft-edge/tools/staticscan/)
+#### [<a name="site-scan"></a>Analyse du site](https://developer.microsoft.com/microsoft-edge/tools/staticscan/)
 
-L’outil d’analyse de site dans le centre de développement Microsoft Edge recherche les bibliothèques obsolètes, les problèmes de disposition et les problèmes d’accessibilité.
+L’outil Analyse du site du Centre de développement Microsoft Edge recherche les bibliothèques, les problèmes de disposition et d’accessibilité.
 
-#### [Techniques pour WCAG 2,0](https://www.w3.org/TR/WCAG20-TECHS/Overview.html)
+#### [<a name="techniques-for-wcag-20"></a>Techniques pour WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/Overview.html)
 
-Techniques du W3C qui fournissent des recommandations pour les développeurs Web en matière d’indications sur l' [accessibilité du contenu Web de réunion (WCAG) 2,0](https://w3.org/TR/WCAG20/) critères de réussite.
+Techniques du W3C qui fournissent des conseils aux développeurs web sur la réunion des critères de réussite [WCAG (Web Content Accessibility Guidelines) 2.0.](https://w3.org/TR/WCAG20/)
 
-#### [Conseils en matière de développement pour l’accessibilité sur le Web](https://w3.org/WAI/gettingstarted/tips/developing.html)
+#### [<a name="tips-on-developing-for-web-accessibility"></a>Conseils sur le développement pour l’accessibilité web](https://w3.org/WAI/gettingstarted/tips/developing.html)
 
-Conseils du W3C sur le développement de contenus Web plus accessibles aux personnes atteintes de handicaps.
+Conseils du W3C sur le développement de contenu web plus accessible aux personnes présentant un handicap.
 
-#### [WAI-ARIA, pratiques de création 1,1](http://w3c.github.io/aria-practices/)
+#### [<a name="wai-aria-authoring-practices-11"></a>PRATIQUES DE AUTHORING ARIA-ARIA 1.1](http://w3c.github.io/aria-practices/)
 
-Document par le W3C qui fournit aux lecteurs des informations de savoir comment utiliser WAI-ARIA 1,1 et recommande des approches pour rendre les widgets, la navigation et les comportements accessibles à l’aide des rôles et des propriétés WAI-ARIA.
+Document du W3C qui fournit aux lecteurs une compréhension de l’utilisation de LA FONCTION ARIA 1.1 et recommande des approches pour rendre les widgets, la navigation et les comportements accessibles à l’aide des rôles, états et propriétés DE LA FONCTION ARIA.
 
-#### [Recommandations et techniques pour le WAI](https://w3.org/WAI/guid-tech.html)
+#### [<a name="wai-guidelines-and-techniques"></a>Instructions et techniques DE LATS](https://w3.org/WAI/guid-tech.html)
 
-Série de recommandations et de normes en matière d’accessibilité Web développées par le WAI.  
+Série d’instructions et de normes d’accessibilité web développées par LASL.  
 
-#### [Liste des outils d’évaluation de l’accessibilité Web](https://www.w3.org/WAI/ER/tools/index.html)
+#### [<a name="web-accessibility-evaluation-tools-list"></a>Liste des outils d’évaluation de l’accessibilité web](https://www.w3.org/WAI/ER/tools/index.html)
 
-Liste des outils d’évaluation de l’accessibilité du Web permettant de déterminer si les sites Web respectent les recommandations en matière d’accessibilité.
+Liste des outils d’évaluation de l’accessibilité web pour vous aider à déterminer si les sites web respectent les recommandations en matière d’accessibilité.
 
-#### [Perspectives d’accessibilité sur le Web: découvrir les avantages et les avantages de tout le monde](https://w3.org/WAI/perspectives/)
+#### [<a name="web-accessibility-perspectives-explore-the-impact-and-benefits-for-everyone"></a>Perspectives d’accessibilité web : explorer l’impact et les avantages pour tout le monde](https://w3.org/WAI/perspectives/)
 
-Une série de vidéos de courte durée par le W3C sur l’impact de l’accessibilité et les avantages de tout le monde.
+Série de courtes vidéos de situation par le W3C sur l’impact de l’accessibilité et les avantages pour tout le monde.
 
 <!-- links -->  
 
 <!--todo: link updates and acrolinx  -->  
 
-[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Machines virtuelles | Développeur pour Microsoft Edge"  
+[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Machines virtuelles | Développeur Microsoft Edge"  
 
-[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "Guide complet du narrateur | Support Microsoft"  
-[MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "Utiliser la loupe pour faciliter l’affichage des éléments à l’écran | Support Microsoft"  
+[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "Guide complet de la | Microsoft Support"  
+[MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "Utilisez la Loupe pour faciliter l’affichage des éléments à l’écran | Microsoft Support"  
 
-[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Conseils d’accessibilité pour le Web | Insights sur l’accessibilité"  
+[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Informations sur l’accessibilité pour les | Web Informations sur l’accessibilité"  
 
 [AndroidDeveloperDevicesManagingAvdsHtml]: https://developer.android.com/tools/devices/managing-avds.html "Créer et gérer des périphériques virtuels | Développeurs Android"  
 [AndroidDeveloperDevicesEmulatorHtml]: https://developer.android.com/tools/devices/emulator.html "Exécuter des applications sur l’émulateur Android | Développeurs Android"  
-[AndroidDeveloperSdkInstallingStudioHtml]: https://developer.android.com/sdk/installing/studio.html "Télécharger Android Studio | Développeurs Android"  
+[AndroidDeveloperSdkInstallingStudioHtml]: https://developer.android.com/sdk/installing/studio.html "Télécharger android Studio | Développeurs Android"  
 
-[AppleAccessibilityMacVision]: https://www.apple.com/accessibility/mac/vision "Accessibilité de la vision-Mac | pomme"  
+[AppleAccessibilityMacVision]: https://www.apple.com/accessibility/mac/vision "Accessibilité de la vision - Mac | pomme"  
 
 [AssistivlabsMain]: https://assistivlabs.com "Assistiv Labs"  
 
-[FreedomscientificSoftwareJaws]: https://www.freedomscientific.com/products/software/jaws "Jaws® | Sciences" de la liberté  
-[FreedomscientificSoftwareZoomtext]: https://www.freedomscientific.com/products/software/zoomtext "ZoomText | Sciences de la liberté"  
+[FreedomscientificSoftwareJaws]: https://www.freedomscientific.com/products/software/jaws "JAWS® | Liberté scientifique"  
+[FreedomscientificSoftwareZoomtext]: https://www.freedomscientific.com/products/software/zoomtext "ZoomText | Liberté scientifique"  
 
-[GooglePlayStoreAndroidAccessibilitySuite]: https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback "Suite d’accessibilité Android | Magasin GooglePlay"  
+[GooglePlayStoreAndroidAccessibilitySuite]: https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback "Android Accessibility Suite | GooglePlay Store"  
 
-[NvaccessAboutNvda]: https://www.nvaccess.org/about-nvda "À propos de NVDA | Accès NV"  
+[NvaccessAboutNvda]: https://www.nvaccess.org/about-nvda "À propos des | NVDA Accès NV"  
 
-[W3cPerspectiveVideosKeyboard]: https://www.w3.org/WAI/perspective-videos/keyboard "Compatibilité clavier | W3C"  
+[W3cPerspectiveVideosKeyboard]: https://www.w3.org/WAI/perspective-videos/keyboard "Compatibilité du clavier | W3C"  
 
-[WebaimProjectsLowvisionsurvey2]: https://webaim.org/projects/lowvisionsurvey2 "Enquête sur les utilisateurs souffrant de troubles de la vue et des résultats de #2 | WebAIM"  
-[WebaimProjectsScreenreadersurvey8]: https://webaim.org/projects/screenreadersurvey8 "Examen des utilisateurs du lecteur d’écran \ #8 résultats | WebAIM"  
-[WebaimArticlesScreenreaderTesting]: https://webaim.org/articles/screenreader_testing "Tests avec des lecteurs d’écran | WebAIM"  
+[WebaimProjectsLowvisionsurvey2]: https://webaim.org/projects/lowvisionsurvey2 "Enquête auprès des utilisateurs ayant une faible vision \#2 résultats | WebAIM"  
+[WebaimProjectsScreenreadersurvey8]: https://webaim.org/projects/screenreadersurvey8 "Screen Reader User Survey \#8 Results | WebAIM"  
+[WebaimArticlesScreenreaderTesting]: https://webaim.org/articles/screenreader_testing "Test avec les lecteurs d’écran | WebAIM"  

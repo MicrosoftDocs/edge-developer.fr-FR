@@ -1,51 +1,51 @@
 ---
-Description: Forcez Microsoft Edge DevTools en mode d’aperçu du jeu de couleurs.
-title: Forcez Microsoft Edge DevTools en mode d’aperçu du jeu de couleurs (CSS préfère le modèle de couleurs)
+description: Forcez Microsoft Edge DevTools en mode Aperçu du jeu de couleurs.
+title: Forcer Microsoft Edge DevTools en mode Aperçu du jeu de couleurs (CSS Préfère le jeu de couleurs)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 29b0121a616a037fa11b61799efeffd201eb1821
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 84f482605acd6edab6829e00d5fa31f927ebc032
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230795"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398300"
 ---
-# Simulation de jeu de couleurs sombre ou léger  
+# <a name="dark-or-light-color-scheme-simulation"></a>Simulation de jeu de couleurs foncées ou claires  
 
-Les systèmes d’exploitation peuvent afficher n’importe quelle application en couleurs plus sombres ou plus claires.  Le fait de disposer d’un produit Web comportant un thème clair dans un système d’exploitation en mode foncé est un réseau qui peut être un problème d’accessibilité pour certains utilisateurs.  Sur le Web, vous pouvez utiliser la requête de médias CSS de [jeu de couleurs][MDNPrefersColorScheme] pour détecter si les utilisateurs préfèrent voir votre produit dans le cadre d’un jeu de couleurs plus sombre ou plus clair.  Utilisez [Microsoft Edge devtools][DevtoolsGuideChromiumMain] pour simuler une modification du mode sombre au mode clair sans avoir à modifier l’intégralité du système d’exploitation.  
+Les systèmes d’exploitation peuvent afficher n’importe quelle application dans des couleurs plus foncées ou plus claires.  Le fait de disposer d’un produit web avec un thème clair dans un système d’exploitation en mode sombre constitue un problème d’accessibilité pour certains utilisateurs.  Sur le web, vous pouvez utiliser la requête multimédia CSS [prefers-color-scheme][MDNPrefersColorScheme] pour détecter si les utilisateurs préfèrent afficher votre produit dans un schéma de couleurs plus sombre ou plus claire.  Utilisez [Microsoft Edge DevTools pour][DevtoolsIndex] simuler un changement de mode sombre en mode clair sans avoir à modifier l’intégralité du système d’exploitation.  
 
-1.  Ouvrir le **menu de commandes**.  
-    1.  Sélectionnez `Control` + `Shift` + `P` Windows/Linux ou `Command` + `Shift` + `P` MacOS.  
+1.  Ouvrez **le menu Commande.**  
+    1.  Sélectionnez `Control` + `Shift` + `P` \(Windows/Linux\) ou `Command` + `Shift` + `P` \(macOS\).  
         
-        :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Menu de commandes" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-           **Menu de commandes**  
+        :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Menu Commande" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+           Menu **Commande**  
         :::image-end:::  
         
-1.  Tapez `emulate color` , choisissez l’option **émuler les feuilles CSS préférée-couleur-jeu: Dark** ou **émuler des feuilles de style CSS préférée-couleur: clair** et sélectionnez `Enter` .  
+1.  Type `emulate color` , choose either Emulate **CSS prefers-color-scheme: dark** or Emulate **CSS prefers-color-scheme: light** and then select `Enter` .  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png" alt-text="Option de jeu de couleurs dans le menu de commandes" lightbox="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png":::
-       Option de jeu de couleurs dans le menu de **commandes**  
+    :::image type="complex" source="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png" alt-text="Option de modèle de couleurs du menu Commande" lightbox="../media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png":::
+       Option de modèle de **couleurs** du menu Commande  
     :::image-end:::  
     
     > [!IMPORTANT]
-    > Il suffit de taper `dark` ou de `light` ne pas afficher l’outil approprié, car il existe également un moyen de [choisir un thème pour devtools][DevtoolsGuideChromiumCustomizeDarkTheme].  Si vous vous demandez ce qu’il faut choisir, assurez-vous de choisir un élément de menu de **rendu** , et non un élément de menu d' **apparence** .  
+    > Il suffit de taper ou de ne pas révéler l’outil qui vous permet de le faire, car il existe également un moyen de choisir un thème `dark` `light` pour [DevTools.][DevtoolsCustomizeDarkTheme]  Si vous vous demandez ce qu’il faut choisir, assurez-vous que vous choisissez un élément de **menu** de rendu, et non un **élément de** menu Apparence.  
 
-1.  Après avoir choisi un modèle de couleurs, rechargez le document actuel pour afficher le mode simulé.  
+1.  Après avoir choisi un jeu de couleurs, actualisez le document actuel pour afficher le mode simulé.  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Mode Light simulé dans Microsoft Edge DevTools" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
-       Mode Light simulé dans Microsoft Edge DevTools  
+    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Mode lumineux simulé à l’intérieur de Microsoft Edge DevTools" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
+       Mode lumineux simulé à l’intérieur de Microsoft Edge DevTools  
     :::image-end:::  
     
-    Affichez et modifiez votre CSS comme n’importe quelle autre page Web.  Pour plus d’informations, voir [commencer à afficher et modifier des feuilles CSS][DevtoolsGuideChromiumCssIndex].  
+    Affichez et modifiez votre CSS comme n’importe quelle autre page web.  Pour plus d’informations, [accédez à La mise en place de l’affichage et de la modification du CSS.][DevtoolsCssIndex]  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../index.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
-[DevtoolsGuideChromiumCustomizeDarkTheme]: ../customize/dark-theme.md "Activer un thème foncé dans Microsoft Edge DevTools | Documents Microsoft"
-[DevtoolsGuideChromiumCssIndex]: ../css/index.md "Découvrir comment afficher et modifier des feuilles CSS | Documents Microsoft"  
+[DevtoolsIndex]: ../index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
+[DevtoolsCustomizeDarkTheme]: ../customize/dark-theme.md "Activer le thème foncé dans Microsoft Edge DevTools | Documents Microsoft"
+[DevtoolsCssIndex]: ../css/index.md "Commencer à afficher et modifier les | Documents Microsoft"  
 
-[MDNPrefersColorScheme]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme "préférence-jeu de couleurs | MDN"  
+[MDNPrefersColorScheme]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme "prefers-color-scheme | MDN"  

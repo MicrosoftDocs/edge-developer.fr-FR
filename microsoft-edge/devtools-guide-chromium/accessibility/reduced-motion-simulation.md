@@ -1,22 +1,22 @@
 ---
-description: Simulez un mouvement réduit grâce aux outils de développement.
-title: Simulez un mouvement réduit grâce aux outils de développement (CSS est le mouvement réduit)
+description: Simulez un mouvement réduit à l’aide des outils de développement.
+title: Simuler un mouvement réduit à l’aide des outils de développement (CSS préfère le mouvement réduit)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 0e5243e01ca6c9344dceffb0bf004dadccc3d4d7
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 29cdbd7492665e819315910b3f743d444470cc12
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230788"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11397866"
 ---
-# Simulation de mouvement réduite  
+# <a name="reduced-motion-simulation"></a>Simulation de mouvement réduit  
 
-Une animation dans des produits Web est susceptible de résoudre un problème d’accessibilité.  Les systèmes d’exploitation traitent le problème en incluant une option de désactivation des animations pour éviter toute confusion et risque de problèmes liés à la santé tels que les crises de déclenchement.  Sur le Web, vous pouvez utiliser la requête de média CSS [-Reduced-Motion][MDNPrefersReducedMotion] pour détecter si les utilisateurs préfèrent ne voir aucune animation.  Dans votre produit, vous pouvez encapsuler votre code d’animation dans un test pour éviter d’avoir des animations destinées aux utilisateurs concernés.  
+L’animation dans les produits web peut être un problème d’accessibilité.  Les systèmes d’exploitation traitent le problème en incluant une option pour désactiver les animations afin d’éviter toute confusion chez l’utilisateur et d’éventuels problèmes liés à l’état, tels que le déclenchement de crises.  Sur le web, vous pouvez utiliser la requête multimédia CSS à mouvement réduit pour détecter si les [utilisateurs][MDNPrefersReducedMotion] préfèrent ne pas exécuter ou afficher d’animations.  Dans votre produit, vous pouvez encapsuler votre code d’animation dans un test afin d’éviter que des animations ne s’affichent pour les utilisateurs concernés.  
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -27,25 +27,25 @@ Une animation dans des produits Web est susceptible de résoudre un problème d�
 }
 ```  
 
-À l’aide de [Microsoft Edge devtools][DevtoolsIndex], vous pouvez simuler ce paramètre de mouvement réduit sans avoir à modifier votre système d’exploitation.  
+À [l’aide de Microsoft Edge DevTools][DevtoolsIndex], vous pouvez simuler ce paramètre de mouvement réduit sans avoir à modifier votre système d’exploitation.  
 
-1.  Ouvrir le **menu de commandes**.  
-    1.  Sélectionnez `Control` + `Shift` + `P` Windows/Linux ou `Command` + `Shift` + `P` MacOS.  
+1.  Ouvrez **le menu Commande.**  
+    1.  Sélectionnez `Control` + `Shift` + `P` sur Windows/Linux `Command` + `Shift` + `P` ou sur macOS.  
         
-        :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Menu de commandes" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-           **Menu de commandes**  
+        :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Menu Commande" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+           Menu **Commande**  
         :::image-end:::  
         
-1.  Tapez `reduced` pour activer ou désactiver la simulation.  Sélectionnez l’option et sélectionnez `Enter` .  
+1.  Tapez `reduced` , pour activer et désactiver la simulation.  Choisissez l’option et sélectionnez `Enter` .  
     
-    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="Activer ou désactiver le paramètre de réduction du mouvement de votre choix dans le menu de commandes" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
-       Activer ou désactiver le paramètre de **réduction du mouvement** de votre choix dans le menu de **commandes**  
+    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="Activer ou désactiver le paramètre de mouvement réduit préféré à partir du menu Commande" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
+       Activer ou désactiver le paramètre de mouvement **réduit préféré** à partir du **menu Commande**  
     :::image-end:::  
     
-1.  Actualisez la page active pour tester si vos animations sont désactivées ou visibles.  
+1.  Actualisez la page actuelle pour tester si vos animations sont désactivées ou visibles.  
     
 <!-- links -->  
 
-[DevtoolsIndex]: ../index.md "Outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
+[DevtoolsIndex]: ../index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
 
-[MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "préféré-réduction du mouvement | MDN"  
+[MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion | MDN"  

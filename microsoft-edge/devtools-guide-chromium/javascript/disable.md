@@ -1,18 +1,18 @@
 ---
-description: Ouvrez le menu de commandes et exécutez la commande «désactiver JavaScript».
+description: Ouvrez le menu Commande et exécutez la commande « Désactiver JavaScript ».
 title: Désactiver JavaScript avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: f7aafee4b05f843319a4a744e6cba148d4642667
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 2067944fa17c332dd15ffb3ef97afe02d35685ed
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230669"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398559"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,39 +28,39 @@ ms.locfileid: "11230669"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Désactiver JavaScript avec Microsoft Edge DevTools  
+# <a name="disable-javascript-with-microsoft-edge-devtools"></a>Désactiver JavaScript avec Microsoft Edge DevTools  
 
-Suivez les étapes ci-dessous pour voir l’apparence et le comportement d’une page Web lorsque JavaScript est désactivé.  
+Effectuer les actions suivantes pour afficher l’apparence et le comportement d’une page web lorsque JavaScript est désactivé.  
 
-1.  [Ouvrez Microsoft Edge devtools][DevToolsOpen].  
-1.  Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le **menu de commandes**.  
+1.  [Ouvrez Microsoft Edge DevTools.][DevToolsOpen]  
+1.  Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le **menu Commande.**  
     
-    :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="Menu de commandes" lightbox="../media/javascript-console-command.msft.png":::
-       **Menu de commandes**  
+    :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="Menu Commande" lightbox="../media/javascript-console-command.msft.png":::
+       Menu **Commande**  
     :::image-end:::  
     
-1.  Commencez `javascript` à taper, sélectionnez **Désactiver JavaScript**, puis sélectionnez `Enter` pour exécuter la commande.  JavaScript est désormais désactivé.  
+1.  Commencez à `javascript` taper, choisissez **Désactiver JavaScript,** puis `Enter` sélectionnez pour exécuter la commande.  JavaScript est désormais désactivé.  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Sélectionnez Désactiver JavaScript dans le menu de commandes." lightbox="../media/javascript-console-command-javascript.msft.png":::
-       Sélectionnez **Désactiver JavaScript** dans le **menu de commandes** .  
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Choose Disable JavaScript in the Command Menu" lightbox="../media/javascript-console-command-javascript.msft.png":::
+       Choose **Disable JavaScript** in the **Command Menu**  
     :::image-end:::  
     
-    L’icône d’avertissement jaune en regard de **sources** vous rappelle que JavaScript est désactivé.  
+    L’icône d’avertissement jaune en de côté **des sources** vous rappelle que JavaScript est désactivé.  
     
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="Icône d’avertissement en regard de sources" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
-       Icône d’avertissement en regard de **sources**  
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="Icône d’avertissement en de côté des sources" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+       Icône d’avertissement en de côté des **sources**  
     :::image-end:::  
     
-JavaScript reste désactivé dans l’onglet tant que vous avez DevTools ouvert.  
+JavaScript reste désactivé dans l’onglet tant que DevTools est ouvert.  
 
-Vous pouvez vouloir recharger la page pour voir si et comment la page dépend de JavaScript lors du chargement.  
+Vous souhaitez peut-être actualiser la page pour examiner si et comment la page web dépend de JavaScript lors du chargement.  
 
-Pour réactiver JavaScript, effectuez les actions suivantes.  
+Pour ré-activer JavaScript, effectuer les actions suivantes.  
 
-*   Ouvrez à nouveau le **menu de commandes** et exécutez la `Enable JavaScript` commande.  
+*   Ouvrez **de nouveau le menu Commande** et exécutez la `Enable JavaScript` commande.  
 *   Fermez DevTools.  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

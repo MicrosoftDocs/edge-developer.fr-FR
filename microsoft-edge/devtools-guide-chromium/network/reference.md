@@ -1,18 +1,18 @@
 ---
-description: Référence complète des fonctionnalités du panneau réseau de Microsoft Edge DevTools.
-title: Référence d’analyse du réseau
+description: Référence complète des fonctionnalités du panneau réseau Microsoft Edge DevTools.
+title: Référence de l’analyse réseau
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: c600197ffa0e415fe42aecc704a523d1b23f8260
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: e8e2259e0f95499519c954e2199e191382998649
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230753"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398377"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,57 +28,57 @@ ms.locfileid: "11230753"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Référence d’analyse du réseau  
+# <a name="network-analysis-reference"></a>Référence de l’analyse réseau  
 
-Découvrez de nouvelles façons d’analyser le chargement de votre page dans cette référence complète des fonctionnalités d’analyse du réseau Microsoft Edge DevTools.  
+Découvrez de nouvelles façons d’analyser le chargement de votre page dans cette référence complète des fonctionnalités d’analyse réseau Microsoft Edge DevTools.  
 
-## Enregistrer les requêtes réseau  
+## <a name="record-network-requests"></a>Enregistrer des demandes réseau  
 
-Par défaut, DevTools enregistre toutes les demandes réseau dans le panneau **réseau** , tant que devtools est ouvert.  
+Par défaut, DevTools enregistre toutes **** les demandes réseau dans l’outil Réseau, tant que DevTools est ouvert.  
 
 :::image type="complex" source="../media/network-network-panel.msft.png" alt-text="Panneau réseau" lightbox="../media/network-network-panel.msft.png":::
-   Panneau **réseau**  
+   Outil **Réseau**  
 :::image-end:::  
 
-### Arrêter l’enregistrement des requêtes réseau  
+### <a name="stop-recording-network-requests"></a>Arrêter l’enregistrement des demandes réseau  
 
-Pour arrêter l’enregistrement de demandes, procédez comme suit.  
+Pour arrêter l’enregistrement des demandes, complétez les étapes suivantes.  
 
-1.  Dans le volet **réseau** , cliquez sur **arrêter l’enregistrement du journal réseau** \ ( ![ arrêter l’enregistrement du journal réseau ][ImageRecordOnIcon] \).  Il devient gris pour indiquer que DevTools n’enregistre plus les demandes.  
-1.  `Control` + `E` Dans le panneau réseau du réseau, sélectionnez \ (Windows, Linux \) ou `Command` + `E` \ (MacOS \). ****  
+1.  Dans **l’outil Réseau,** **sélectionnez Arrêter l’enregistrement du journal réseau** \( ![ Arrêter l’enregistrement du journal ][ImageRecordOnIcon] réseau \).  Il devient gris pour indiquer que DevTools n’enregistre plus les demandes.  
+1.  Sélectionnez `Control` + `E` \(Windows, Linux\) ou `Command` + `E` \(macOS\) **** lorsque l’outil Réseau est en cours de mise au point.  
 
-### Supprimer des demandes  
+### <a name="clear-requests"></a>Effacer les demandes  
 
-**** ![ Dans le volet réseau, sélectionnez Effacer \ (Clear ][ImageClearIcon] \) pour effacer toutes les demandes de la table demandes. ****  
+Sélectionnez **Effacer** \( ![ Effacer \) sur l’outil Réseau pour effacer toutes les demandes de ][ImageClearIcon] la table Demandes. ****  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Bouton Effacer" lightbox="../media/network-network-clear-button.msft.png":::
-   Bouton **Effacer**  
+   Bouton **** Effacer  
 :::image-end:::  
 
-### Enregistrer les demandes lors du chargement de la page  
+### <a name="save-requests-across-page-loads"></a>Enregistrer des demandes sur les chargements de page  
 
-Pour enregistrer les demandes lors du chargement de la page, dans le panneau **réseau** , activez la case à cocher **conserver le journal** .  DevTools enregistre toutes les demandes jusqu’à ce que vous désactiviez le **Journal de conservation**.  
+Pour enregistrer les demandes sur les chargements de page, sur l’outil **Réseau,** activer la case à cocher Conserver **le journal.**  DevTools enregistre toutes les demandes jusqu’à ce que vous **désactiviez conserver le journal.**  
 
-:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="Case à cocher conserver le journal" lightbox="../media/network-network-preserve-log.msft.png":::
-   Case à cocher **conserver le journal**  
+:::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="Case à cocher Conserver le journal" lightbox="../media/network-network-preserve-log.msft.png":::
+   Case **à cocher** Conserver le journal  
 :::image-end:::  
 
-### Capture de captures d’écran pendant le chargement de la page  
+### <a name="capture-screenshots-during-page-load"></a>Capture d’écran pendant le chargement de la page  
 
-Capture des captures d’écran permettant d’analyser ce qui s’affiche pour les utilisateurs lorsque vous patientez pendant le chargement de la page.  
+Capturez des captures d’écran pour analyser ce qui s’affiche pour les utilisateurs en attendant le chargement de votre page.  
 
-Pour activer les captures d’écran, choisissez **paramètres du réseau**, puis, dans le volet **réseau** , activez la case à cocher capture des captures d' **écran** .  
+Pour activer les captures d’écran, **** **sélectionnez Paramètres**réseau et, dans l’outil Réseau, activez la case à cocher Capturer les **captures d’écran.**  
 
-Actualisez la page lorsque le panneau **réseau** a le focus pour capturer les captures d’écran.  
+Actualisez la page lorsque **l’outil** Réseau est en cours de mise en place pour capturer des captures d’écran.  
 
-Après avoir capturé une capture d’écran, vous interagissez comme suit.  
+Après avoir capturé une capture d’écran, vous interagissez avec elle des manières suivantes.  
 
-*   Survol d’une capture d’écran pour afficher le point de capture de cette capture d’écran.  Une ligne jaune s’affiche dans le volet **vue d’ensemble** .  
-*   Choisissez la miniature d’un écran pour filtrer toutes les demandes qui se sont produites après la capture de la capture d’écran.  
-*   Double-cliquez sur une miniature pour y effectuer un zoom.  
+*   Pointez sur une capture d’écran pour afficher le point auquel cette capture d’écran a été capturée.  Une ligne jaune s’affiche dans le **volet** Vue d’ensemble.  
+*   Choisissez la miniature d’un écran pour filtrer les demandes qui se sont produites après la capture d’écran.  
+*   Double-cliquez sur une miniature pour la zoomer.  
 
-:::image type="complex" source="../media/network-network-screenshot-hover.msft.png" alt-text="Survol d’une capture d’écran" lightbox="../media/network-network-screenshot-hover.msft.png":::
-   Survol d’une capture d’écran  
+:::image type="complex" source="../media/network-network-screenshot-hover.msft.png" alt-text="Pointer sur une capture d’écran" lightbox="../media/network-network-screenshot-hover.msft.png":::
+   Pointer sur une capture d’écran  
 :::image-end:::  
 
 <!--  ### Replay XHR request  -->
@@ -91,119 +91,119 @@ Après avoir capturé une capture d’écran, vous interagissez comme suit.
 :::image-end:::  
 -->  
 
-## Changer le comportement de chargement  
+## <a name="change-loading-behavior"></a>Modifier le comportement de chargement  
 
-### Émuler un visiteur pour la première fois en désactivant le cache du navigateur  
+### <a name="emulate-a-first-time-visitor-by-disabling-the-browser-cache"></a>Émuler un premier visiteur en désactivant le cache du navigateur  
 
-Pour émuler la façon dont un utilisateur a expériences sur votre site pour la première fois, activez la case à cocher **désactiver le cache** .  DevTools désactive le cache du navigateur.  Cette fonctionnalité émule plus précisément l’utilisation de la première utilisation de l’utilisateur, car les requêtes sont servies dans le cache du navigateur lors de plusieurs visites.  
+Pour émuler la façon dont un utilisateur se retrouve pour la première fois sur votre site, cochez la case Désactiver le **cache.**  DevTools désactive le cache du navigateur.  Cette fonctionnalité émule plus précisément l’expérience d’un premier utilisateur, car les demandes sont reçues à partir du cache du navigateur lors de visites répétées.  
 
 :::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="Case à cocher Désactiver le cache" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
-   Case à cocher **désactiver le cache**  
+   Case **à cocher** Désactiver le cache  
 :::image-end:::  
 
-#### Désactiver le cache du navigateur dans le tiroir du réseau  
+#### <a name="disable-the-browser-cache-from-the-network-conditions-drawer"></a>Désactiver le cache du navigateur à partir du caisse des conditions réseau  
 
-Si vous voulez désactiver le cache lorsque vous travaillez dans d’autres panneaux DevTools, utilisez le tiroir de l’état du réseau.  
+Si vous souhaitez désactiver le cache tout en travaillant dans d’autres panneaux DevTools, utilisez le panneau Conditions réseau.  
 
-1.  Ouvrez le tiroir de **conditions du réseau** .  
-1.  Activez/désactivez la case à cocher **désactiver le cache** .  
+1.  Ouvrez le **caisse des conditions réseau.**  
+1.  Activer \(ou désactiver\) la case à cocher Désactiver le **cache.**  
 
 <!--todo: add network condition section when available -->  
 
-### Vider manuellement le cache du navigateur  
+### <a name="manually-clear-the-browser-cache"></a>Effacer manuellement le cache du navigateur  
 
-Pour vider manuellement le cache du navigateur à tout moment, ouvrez le menu contextuel (cliquez avec le bouton droit sur \) n’importe où dans la table demandes et sélectionnez **Vider le cache du navigateur**.  
+Pour effacer manuellement le cache du navigateur à tout moment, ouvrez le menu contextuel \(clic droit\) n’importe où dans la table Demandes et choisissez Effacer le **cache du navigateur.**  
 
-:::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="Sélectionner vider le cache du navigateur" lightbox="../media/network-network-clear-browser-cache.msft.png":::
-   Sélectionner **Vider le cache du navigateur**  
+:::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="Choisir Effacer le cache du navigateur" lightbox="../media/network-network-clear-browser-cache.msft.png":::
+   Choisir **Effacer le cache du navigateur**  
 :::image-end:::  
 
-### Émuler hors connexion  
+### <a name="emulate-offline"></a>Émuler hors connexion  
 
-Une nouvelle classe d’applications Web, appelées [applications Web progressives][DevtoolsProgressiveWebApps], fonctionne en mode hors connexion avec l’aide des **travailleurs de service**.  Vous constaterez peut-être qu’il est utile de simuler rapidement un appareil dépourvu de connexion aux données lors de la création de ce type d’application.  
+Une nouvelle classe d’applications web, nommée [Progressive Web Apps,][DevtoolsProgressiveWebApps]fonctionne en mode hors connexion à l’aide des travailleurs **du service.**  Il peut s’avérer utile de simuler rapidement un appareil sans connexion de données lorsque vous construisez ce type d’application.  
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
-Sélectionnez le menu déroulant **en ligne** , recherchez sous **présélections**, puis sélectionnez **hors ligne** pour simuler une utilisation du réseau hors connexion.  
+Choisissez le menu déroulant **En** ligne, recherchez sous **Presets**et choisissez **Hors** connexion pour simuler une expérience réseau hors connexion.  
 
-:::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="Menu déroulant hors connexion" lightbox="../media/network-network-offline-dropdown.msft.png":::
-   Menu déroulant **hors connexion**  
+:::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="Menu déroulant Hors connexion" lightbox="../media/network-network-offline-dropdown.msft.png":::
+   Menu **déroulant Hors** connexion  
 :::image-end:::  
 
-### Émuler une connexion réseau lente  
+### <a name="emulate-slow-network-connections"></a>Émuler les connexions réseau lentes  
 
-Émulez des vitesses de connexion 3G, Fast 3G et autres vitesses de connexion dans le menu déroulant **en ligne** .  
+Émulez les 3G, les vitesses 3G rapides et d’autres vitesses de connexion à partir du menu déroulant **En** ligne.  
 
-:::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="Menu déroulant limitation" lightbox="../media/network-network-throttling-menu.msft.png":::
-   Menu déroulant **limitation**  
+:::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="Menu déroulant Limitation" lightbox="../media/network-network-throttling-menu.msft.png":::
+   Menu **déroulant Limitation**  
 :::image-end:::  
 
-Vous pouvez choisir parmi différents préréglages, par exemple, lente 3G ou Fast 3G.  Pour ajouter vos propres Présélections personnalisées, ouvrez le menu limitation, puis **Sélectionnez**  >  **Ajouter**.  
+Vous pouvez choisir parmi différents prérets, tels que Slow 3G ou Fast 3G.  Pour ajouter vos propres prérets personnalisés, ouvrez le menu Limitation, puis choisissez **Ajouter**  >  **personnalisé.**  
 
-DevTools affiche une icône d’avertissement en regard de l’onglet **réseau** pour vous rappeler que la limitation est activée.  
+DevTools affiche une icône d’avertissement à côté de l’outil Réseau pour vous rappeler que la limitation est activée. ****  
 
-#### Émuler une connexion réseau lente à partir du tiroir du réseau  
+#### <a name="emulate-slow-network-connections-from-the-network-conditions-drawer"></a>Émuler les connexions réseau lentes à partir du caisse des conditions réseau  
 
-Si vous souhaitez limiter la connexion réseau lorsque vous travaillez dans d’autres panneaux DevTools, utilisez le tiroir de l’état du réseau.  
+Si vous souhaitez limiter la connexion réseau tout en travaillant dans d’autres panneaux DevTools, utilisez le panneau Conditions réseau.  
 
-1.  Ouvrez le tiroir de **conditions du réseau** .  
-1.  Choisissez votre vitesse de connexion dans le menu **limitation** .  
+1.  Ouvrez le **caisse des conditions réseau.**  
+1.  Choisissez votre vitesse de connexion dans le menu **Limitation.**  
 
 <!--todo: add network condition section when available -->  
 
-### Effacement manuel des cookies du navigateur  
+### <a name="manually-clear-browser-cookies"></a>Effacer manuellement les cookies du navigateur  
 
-Pour effacer manuellement les cookies du navigateur à tout moment, positionnez le curseur n’importe où dans le tableau demandes, ouvrez le menu contextuel, puis sélectionnez **effacer les cookies du navigateur**.  
+Pour effacer manuellement les cookies du navigateur à tout moment, pointez n’importe où dans la table Demandes, ouvrez le menu contextuel \(clic droit\), puis choisissez Effacer les **cookies du navigateur.**  
 
-:::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="Sélectionnez effacer les cookies du navigateur." lightbox="../media/network-network-clear-browser-cookies.msft.png":::
-   Sélectionnez **effacer les cookies du navigateur** .  
+:::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="Choose Clear Browser Cookies" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
+   Choose **Clear Browser Cookies**  
 :::image-end:::  
 
-### Remplacer l’agent utilisateur  
+### <a name="override-the-user-agent"></a>Remplacer l’agent utilisateur  
 
-Pour remplacer manuellement l’agent utilisateur, procédez comme suit.  
+Pour remplacer manuellement l’agent utilisateur, utilisez les étapes suivantes.  
 
-1.  Ouvrez le tiroir de **conditions du réseau** .  
-1.  Désactiver la case à cocher **sélectionner automatiquement** .  
-1.  Choisissez une option de l’agent utilisateur dans le menu ou entrez-en un dans la zone de texte.  
+1.  Ouvrez le **caisse des conditions réseau.**  
+1.  Désactiver la case **à cocher Sélectionner** automatiquement.  
+1.  Choisissez une option d’agent utilisateur dans le menu ou entrez une option personnalisée dans la zone de texte.  
 
 <!--todo: add network condition section when available -->  
 
-## Demandes de filtre  
+## <a name="filter-requests"></a>Filtrer les demandes  
 
-### Filtrer les demandes par propriétés  
+### <a name="filter-requests-by-properties"></a>Filtrer les demandes par propriétés  
 
-Utilisez la zone de texte **filtre** pour filtrer les demandes par propriétés, telles que le domaine ou la taille de la requête.  
+Utilisez la **zone de** texte Filtrer pour filtrer les demandes par propriétés, telles que le domaine ou la taille de la demande.  
 
-Si la zone de texte n’est pas affichée, le volet **filtres** est probablement masqué.  
-Pour plus d’informations, accédez à [la section masquer le volet filtres](#hide-the-filters-pane).  
+Si la zone de texte n’est pas affichée, le volet **Filtres** est probablement masqué.  
+Pour plus d’informations, [accédez à Masquer le volet Filtres.](#hide-the-filters-pane)  
 
-:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="Zone de texte filtre" lightbox="../media/network-network-filters-textbox.msft.png":::
-   Zone de texte **filtre**  
+:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="Zone de texte Filtre" lightbox="../media/network-network-filters-textbox.msft.png":::
+   Zone **de texte** Filtre  
 :::image-end:::  
 
-Vous pouvez utiliser plusieurs propriétés simultanément en séparant chaque propriété d’un espace.  Par exemple, `mime-type:image/png larger-than:1K` affiche tous les png dont la taille est supérieure à 1 kilo-octets.  Les filtres multi-propriétés sont équivalents aux `AND` opérations.  `OR` les opérations ne sont actuellement pas prises en charge.  
+Vous pouvez utiliser plusieurs propriétés simultanément en séparant chaque propriété par un espace.  Par exemple, affiche tous les PNG dont la taille `mime-type:image/png larger-than:1K` est supérieure à 1 kilo-octet.  Les filtres multi-propriétés sont équivalents aux `AND` opérations.  `OR` ne sont actuellement pas pris en charge.  
 
-Liste complète des propriétés prises en charge.  
+Liste complète des propriétés prise en charge.  
 
 | Propriété | Détails |  
 |:--- | :--- |  
-| `domain` | Afficher uniquement les ressources du domaine spécifié.  Vous pouvez utiliser un caractère générique \ ( `*` \) pour inclure plusieurs domaines.  Par exemple, `*.com` affiche les ressources de tous les noms de domaine se terminant par `.com` .  DevTools peuplez le menu déroulant de saisie semi-automatique avec tous les domaines trouvés. |  
-| `has-response-header` | Affiche les ressources contenant l’en-tête de réponse HTTP spécifié.  DevTools remplissez la liste déroulante de saisie semi-automatique avec tous les en-têtes de réponse détectés. |  
-| `is` | Utiliser `is:running` pour rechercher des `WebSocket` ressources. |  
-| `larger-than` | Affiche les ressources dont la taille est supérieure à la taille spécifiée, en octets.  La définition d’une valeur est égale à la valeur `1000` `1k` . |  
-| `method` | Affiche les ressources récupérées par le biais d’un type de méthode HTTP spécifié.  DevTools remplissez la liste déroulante avec toutes les méthodes HTTP trouvées. |  
-| `mime-type` | Affiche les ressources d’un type MIME spécifié.  DevTools remplissez la liste déroulante à l’aide de tous les types MIME trouvés. |  
-| `mixed-content` | Affichez toutes les ressources de contenu mixte \ ( `mixed-content:all` \) ou uniquement celles actuellement affichées \ ( `mixed-content:displayed` \). |  
-| `scheme` | Affiche les ressources récupérées par le biais d’une connexion HTTP \ ( `scheme:http` \) ou protégé https \ ( `scheme:https` \). |  
-| `set-cookie-domain` | Affiche les ressources qui ont un `Set-Cookie` en-tête avec un `Domain` attribut qui correspond à la valeur spécifiée.  DevTools remplir la saisie semi-automatique avec tous les domaines de cookie détectés. |  
-| `set-cookie-name` | Affiche les ressources possédant un `Set-Cookie` en-tête dont le nom correspond à la valeur spécifiée.  DevTools remplir la saisie semi-automatique à l’aide du nom de cookie détecté. |  
-| `set-cookie-value` | Affiche les ressources dont `Set-Cookie` l’en-tête comporte une valeur qui correspond à la valeur spécifiée.  DevTools remplir la saisie semi-automatique avec toutes les valeurs de cookie trouvées. |  
-| `status-code` | Affiche les ressources qui correspondent au code d’état HTTP spécifique.  DevTools remplit le menu déroulant de saisie semi-automatique avec tous les codes d’État trouvés. |  
+| `domain` | Afficher uniquement les ressources du domaine spécifié.  Vous pouvez utiliser un caractère générique \( `*` \) pour inclure plusieurs domaines.  Par exemple, `*.com` affiche les ressources de tous les noms de domaine se terminant par `.com` .  DevTools remplit le menu déroulant de la mise à jour de la mise à jour automatique avec tous les domaines trouvés. |  
+| `has-response-header` | Affiche les ressources qui contiennent l’en-tête de réponse HTTP spécifié.  DevTools remplit la zone de mise à jour de la mise à jour automatique avec tous les en-têtes de réponse trouvés. |  
+| `is` | À `is:running` utiliser pour rechercher des `WebSocket` ressources. |  
+| `larger-than` | Affiche les ressources dont la taille est supérieure à la taille spécifiée, en octets.  Définir une valeur de `1000` . `1k` |  
+| `method` | Affiche les ressources qui ont été récupérées sur un type de méthode HTTP spécifié.  DevTools remplit la zone de détail avec toutes les méthodes HTTP qui sont trouvées. |  
+| `mime-type` | Affiche les ressources d’un type MIME spécifié.  DevTools remplit la zone de détail avec tous les types MIME trouvés. |  
+| `mixed-content` | Afficher toutes les ressources de contenu mixte \( \) ou uniquement ceux qui sont `mixed-content:all` actuellement affichés \( `mixed-content:displayed` \). |  
+| `scheme` | Affiche les ressources récupérées sur http \( \) ou `scheme:http` HTTPS \( `scheme:https` \) protégées. |  
+| `set-cookie-domain` | Affiche les ressources qui ont un `Set-Cookie` en-tête avec un `Domain` attribut qui correspond à la valeur spécifiée.  DevTools remplit la mise à jour automatique avec tous les domaines de cookie trouvés. |  
+| `set-cookie-name` | Affiche les ressources qui ont un `Set-Cookie` en-tête avec un nom qui correspond à la valeur spécifiée.  DevTools remplit la mise à jour automatique avec tous les noms de cookies trouvés. |  
+| `set-cookie-value` | Affiche les ressources qui ont un `Set-Cookie` en-tête avec une valeur qui correspond à la valeur spécifiée.  DevTools remplit la mise à jour automatique avec toutes les valeurs de cookie trouvées. |  
+| `status-code` | Affiche les ressources qui correspondent au code d’état HTTP spécifique.  DevTools remplit le menu déroulant de lacomplet automatique avec tous les codes d’état trouvés. |  
 
-### Filtrer les demandes par type  
+### <a name="filter-requests-by-type"></a>Filtrer les demandes par type  
 
-Pour filtrer les demandes par type de requête, sélectionnez l’un des boutons suivants dans le volet **réseau** .  
+Pour filtrer les demandes par type de requête, choisissez l’un des boutons suivants sur **l’outil** Réseau.  
 
 :::row:::
    :::column span="1":::
@@ -231,7 +231,7 @@ Pour filtrer les demandes par type de requête, sélectionnez l’un des boutons
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **IMG**  
+      **Img**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -255,7 +255,7 @@ Pour filtrer les demandes par type de requête, sélectionnez l’un des boutons
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Documentation**  
+      **Doc**  
    :::column-end:::
    :::column span="2":::
       &nbsp;  
@@ -263,7 +263,7 @@ Pour filtrer les demandes par type de requête, sélectionnez l’un des boutons
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **NOMBRES**  
+      **WS**  
    :::column-end:::
    :::column span="2":::
       WebSocket.  
@@ -282,55 +282,55 @@ Pour filtrer les demandes par type de requête, sélectionnez l’un des boutons
       **Other**  
    :::column-end:::
    :::column span="2":::
-      Tout autre type qui ne figure pas dans la liste.  
+      Tout autre type non répertorié.  
    :::column-end:::
 :::row-end:::  
 
-Si ce n’est pas le cas, le volet **filtres** est masqué.  
-Pour plus d’informations, accédez à [la section masquer le volet filtres](#hide-the-filters-pane).  
+Si les boutons ne s’affichent pas, le volet **Filtres** peut être masqué.  
+Pour plus d’informations, [accédez à Masquer le volet Filtres.](#hide-the-filters-pane)  
 
-Pour activer plusieurs filtres de type simultanément, appuyez sur `Control` \ (Windows, Linux \) ou `Command` \ (MacOS \), puis sélectionnez.  
+Pour activer plusieurs filtres de type simultanément, maintenez la main sur `Control` \(Windows, Linux\) ou `Command` \(macOS\), puis choisissez.  
 
-:::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Utiliser les filtres de type pour afficher les ressources JS, CSS et document" lightbox="../media/network-network-type-filters.msft.png":::
-   Utiliser les filtres de type pour afficher les ressources JS, CSS et document  
+:::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Utiliser les filtres type pour afficher les ressources JS, CSS et Document" lightbox="../media/network-network-type-filters.msft.png":::
+   Utiliser les filtres type pour afficher les ressources JS, CSS et Document  
 :::image-end:::  
 
-### Filtrer les demandes par heure  
+### <a name="filter-requests-by-time"></a>Filtrer les demandes par heure  
 
-Sélectionnez et faites glisser vers la gauche ou la droite dans le volet **vue d’ensemble** pour afficher uniquement les demandes qui ont été actives pendant ce laps de temps.  Le filtre est inclusive.  Toutes les demandes qui ont été actives pendant la durée en surbrillance apparaissent.  
+Choisissez et faites glisser **** vers la gauche ou la droite dans le volet Vue d’ensemble pour afficher uniquement les demandes qui étaient actives pendant cette période.  Le filtre est inclus.  Toute demande qui était active pendant l’heure mise en surbrillant s’affiche.  
 
-:::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="Filtrer toutes les demandes inactives à propos de 300 ms" lightbox="../media/network-network-overview-filter.msft.png":::
-   Filtrer toutes les demandes inactives à propos de 300 ms  
+:::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="Filtrer toutes les demandes inactives d’environ 300 ms" lightbox="../media/network-network-overview-filter.msft.png":::
+   Filtrer toutes les demandes inactives d’environ 300 ms  
 :::image-end:::  
 
-### Masquer les URL de données  
+### <a name="hide-data-urls"></a>Masquer les URL de données  
 
-Les [URL de données][MDNHTTPDataURIs] sont des petits fichiers incorporés dans d’autres documents.  Toute demande qui s’affiche dans la table demandes qui commence par `data:` est une URL de données.  
+[Les URL de données sont][MDNHTTPDataURIs] de petits fichiers incorporés dans d’autres documents.  Toute demande qui s’affiche dans la table Demandes qui commence par `data:` est une URL de données.  
 
-Pour masquer les demandes, désactivez la case à cocher **Masquer les URL de données** .  
+Pour masquer les demandes, cochez la case Masquer **les URL de** données.  
 
 :::image type="complex" source="../media/network-network-hide-data-urls.msft.png" alt-text="Case à cocher Masquer les URL de données" lightbox="../media/network-network-hide-data-urls.msft.png":::
-   Case à cocher **Masquer les URL de données**  
+   Case **à cocher Masquer les URL de** données  
 :::image-end:::  
 
-## Demandes de tri  
+## <a name="sort-requests"></a>Trier les demandes  
 
-Par défaut, les requêtes dans la table demandes sont triées par heure de début, mais vous pouvez trier le tableau en utilisant d’autres critères.  
+Par défaut, les demandes de la table Requests sont triées par heure d’initiation, mais vous pouvez trier le tableau à l’aide d’autres critères.  
 
-### Trier par colonne  
+### <a name="sort-by-column"></a>Trier par colonne  
 
-Sélectionnez l’en-tête de n’importe quelle colonne dans les requêtes pour trier les demandes en se sur cette colonne.  
+Choisissez l’en-tête d’une colonne dans les demandes de tri des demandes par cette colonne.  
 
-### Trier par phase d’activité  
+### <a name="sort-by-activity-phase"></a>Trier par phase d’activité  
 
-Pour modifier la façon dont les demandes de tri d’une cascade sont triées, pointez sur l’en-tête de la table demandes, ouvrez le menu **contextuel, puis**sélectionnez l’une des options suivantes.  
+Pour modifier la façon dont la cascade trie les demandes, pointez sur l’en-tête de la table Requests, ouvrez le menu contextuel \(clic droit\), pointez sur Cascade **et**choisissez l’une des options suivantes.  
 
 :::row:::
    :::column span="1":::
       **Heure de début**  
    :::column-end:::
    :::column span="2":::
-      La première requête lancée est en haut.  
+      La première requête qui a été lancée se trouve en haut.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -338,7 +338,7 @@ Pour modifier la façon dont les demandes de tri d’une cascade sont triées, p
       **Temps de réponse**  
    :::column-end:::
    :::column span="2":::
-      La première demande qui a démarré le téléchargement est en haut.  
+      La première requête qui a démarré le téléchargement se trouve en haut.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -346,7 +346,7 @@ Pour modifier la façon dont les demandes de tri d’une cascade sont triées, p
       **Heure de fin**  
    :::column-end:::
    :::column span="2":::
-      La première demande qui est terminée est en haut.  
+      La première requête terminée se trouve en haut.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -354,7 +354,7 @@ Pour modifier la façon dont les demandes de tri d’une cascade sont triées, p
       **Durée totale**  
    :::column-end:::
    :::column span="2":::
-      La requête avec les paramètres de connexion les plus courts et la requête ou la réponse est située dans la partie supérieure.  
+      La demande avec les paramètres de connexion et la demande ou la réponse les plus courts se trouve en haut.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -362,37 +362,37 @@ Pour modifier la façon dont les demandes de tri d’une cascade sont triées, p
       **Latence**  
    :::column-end:::
    :::column span="2":::
-      La requête qui a attendu le plus court délai d’une réponse est située en haut.  
+      La demande qui a attendu le plus court moment pour une réponse se trouve en haut.  
    :::column-end:::
 :::row-end:::  
 
-Ces descriptions présupposent que chaque option respective est classée du plus court au plus long.  Sélectionnez l’en-tête de la colonne **cascade** pour inverser l’ordre.  
+Ces descriptions supposent que chaque option respective est classée de la plus courte à la plus longue.  Choisissez l’en-tête de la colonne **Cascade** pour inverser l’ordre.  
 
-:::image type="complex" source="../media/network-network-waterfall-total-duration.msft.png" alt-text="Trier en cascade la durée totale" lightbox="../media/network-network-waterfall-total-duration.msft.png":::
-   Trier les cascades en fonction de la durée totale \ (la partie plus claire de chaque barre est le temps passé en attente et la partie plus foncée est le temps de télécharger les octets \)  
+:::image type="complex" source="../media/network-network-waterfall-total-duration.msft.png" alt-text="Trier la cascade par durée totale" lightbox="../media/network-network-waterfall-total-duration.msft.png":::
+   Trier la cascade par durée totale \(La partie la plus claire de chaque barre est le temps passé en attente et la partie la plus sombre est le temps consacré au téléchargement d’octets\)  
 :::image-end:::  
 
-## Analyser les requêtes  
+## <a name="analyze-requests"></a>Analyser les demandes  
 
-Tant que DevTools est ouvert, il enregistre toutes les demandes dans le panneau **réseau** .  
-Utilisez le volet réseau pour analyser les requêtes.  
+Tant que DevTools est ouvert, il enregistre toutes les demandes dans **l’outil** Réseau.  
+Utilisez le panneau réseau pour analyser les demandes.  
 
-### Afficher un journal de demandes  
+### <a name="display-a-log-of-requests"></a>Afficher un journal des demandes  
 
-Utilisez le tableau demandes pour afficher un journal de toutes les demandes effectuées lors de l’ouverture de DevTools.  Pour obtenir des informations supplémentaires sur chaque élément, choisissez ou pointez sur demandes.  
+Utilisez la table Requests pour afficher un journal de toutes les demandes réalisées alors que DevTools a été ouvert.  Pour révéler plus d’informations sur chaque élément, choisissez ou pointez sur les demandes.  
 
-:::image type="complex" source="../media/network-network-requests-table.msft.png" alt-text="Table demandes" lightbox="../media/network-network-requests-table.msft.png":::
-   Table demandes  
+:::image type="complex" source="../media/network-network-requests-table.msft.png" alt-text="Table Requests" lightbox="../media/network-network-requests-table.msft.png":::
+   Table Requests  
 :::image-end:::  
 
-La table demandes affiche les colonnes suivantes par défaut.  
+La table Requests affiche les colonnes suivantes par défaut.  
 
 :::row:::
    :::column span="1":::
       **Nom**  
    :::column-end:::
    :::column span="2":::
-      Nom de fichier ou un identificateur pour la ressource.  
+      Nom de fichier ou identificateur de la ressource.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -416,12 +416,12 @@ La table demandes affiche les colonnes suivantes par défaut.
       **Initiateur**  
    :::column-end:::
    :::column span="2":::
-      Les objets ou processus suivants déclenchent des demandes.  
+      Les objets ou processus suivants lancent des demandes.  
       
-      *   **Analyseur**  Analyseur HTML pour Microsoft Edge.  
-      *   **Rediriger**  Une redirection HTTP.  
+      *   **Parser**  L’en-tête HTML pour Microsoft Edge.  
+      *   **Redirection**  Une redirection HTTP.  
       *   **Script**  Fonction JavaScript.  
-      *   **Autres**  Un autre processus ou action, tel que la navigation sur une page à l’aide d’un lien ou la saisie d’une URL dans la barre d’adresses.  
+      *   **Autre**  Un autre processus ou une autre action, comme la navigation vers une page à l’aide d’un lien ou la saisie d’une URL dans la barre d’adresses.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -429,7 +429,7 @@ La table demandes affiche les colonnes suivantes par défaut.
       **Taille**  
    :::column-end:::
    :::column span="2":::
-      Taille combinée des en-têtes de réponse et du corps de la réponse, tel qu’il est délivré par le serveur.  
+      Taille combinée des en-têtes de réponse et corps de la réponse, tel qu’il est remis par le serveur.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -437,7 +437,7 @@ La table demandes affiche les colonnes suivantes par défaut.
       **Heure**  
    :::column-end:::
    :::column span="2":::
-      Durée totale, entre le début de la demande et la réception de l’octet final dans la réponse.  
+      Durée totale, depuis le début de la demande jusqu’à la réception de l’byte final dans la réponse.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -449,32 +449,32 @@ La table demandes affiche les colonnes suivantes par défaut.
    :::column-end:::
 :::row-end:::  
 
-#### Ajouter ou supprimer des colonnes  
+#### <a name="add-or-remove-columns"></a>Ajouter ou supprimer des colonnes  
 
-Placez le pointeur de la souris sur l’en-tête de la table demandes, ouvrez le menu contextuel (cliquez avec le bouton droit sur \), puis choisissez une option pour masquer ou afficher le menu contextuel.  Les options actuellement affichées disposent de coches en regard de chaque élément.  
+Pointez sur l’en-tête de la table Requests, ouvrez le menu contextuel \(clic droit\), puis choisissez une option pour le masquer ou l’afficher.  Les options actuellement affichées ont des coches en regard de chaque élément.  
 
-:::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="Ajouter une colonne à la table demandes" lightbox="../media/network-network-requests-add-column.msft.png":::
-   Ajouter une colonne à la table demandes  
+:::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="Ajouter une colonne à la table Requests" lightbox="../media/network-network-requests-add-column.msft.png":::
+   Ajouter une colonne à la table Requests  
 :::image-end:::  
 
-#### Ajouter des colonnes personnalisées  
+#### <a name="add-custom-columns"></a>Ajouter des colonnes personnalisées  
 
-Pour ajouter une colonne personnalisée dans la table demandes, positionnez le curseur sur l’en-tête de la table demandes, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez les **en-têtes de réponse**  >  **gérer les colonnes d’en-tête**.  
+Pour ajouter une colonne personnalisée à la table Requests, pointez sur l’en-tête de la **** table Requests, ouvrez le menu contextuel \(clic droit\), puis choisissez En-têtes de réponse Gérer les colonnes d’en-tête.  >  ****  
 
-:::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Ajouter une colonne personnalisée à la table demandes" lightbox="../media/network-network-requests-add-custom.msft.png":::
-   Ajouter une colonne personnalisée à la table demandes  
+:::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Ajouter une colonne personnalisée à la table Requests" lightbox="../media/network-network-requests-add-custom.msft.png":::
+   Ajouter une colonne personnalisée à la table Requests  
 :::image-end:::  
 
-### Afficher la relation de minutage des requêtes  
+### <a name="display-the-timing-relationship-of-requests"></a>Afficher la relation de minutage des demandes  
 
-Utilisez la cascade pour afficher les relations de minutage des requêtes.  
-L’organisation par défaut de la cascade utilise l’heure de début des requêtes.  
-Par conséquent, les demandes qui sont plus éloignées du volet gauche sont restées plus anciennes que celles qui sont plus éloignées.  
+Utilisez la cascade pour afficher les relations de minutage des demandes.  
+L’organisation par défaut de la cascade utilise l’heure de début des demandes.  
+Ainsi, les demandes qui sont plus à gauche ont commencé plus tôt que les demandes qui sont plus à droite.  
 
-Pour passer en revue les différentes façons dont vous pouvez trier les cascade, sélectionnez [Trier par phase d’activité](#sort-by-activity-phase).  
+Pour passer en revue les différentes façons de trier la cascade, accédez à [Trier par phase d’activité.](#sort-by-activity-phase)  
 
-:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Colonne cascade du volet demandes" lightbox="../media/network-network-requests-waterfall.msft.png":::
-   Colonne cascade du volet **demandes**  
+:::image type="complex" source="../media/network-network-requests-waterfall.msft.png" alt-text="Colonne Cascade du volet Demandes" lightbox="../media/network-network-requests-waterfall.msft.png":::
+   Colonne Cascade du volet **Demandes**  
 :::image-end:::  
 
 <!-- ### Analyze the frames of a WebSocket Connection  -->
@@ -482,13 +482,13 @@ Pour passer en revue les différentes façons dont vous pouvez trier les cascade
 <!--To review the frames of a WebSocket connection, use the following steps.  
 
 1.  Choose the URL of the WebSocket connection, under the **Name** column of the Requests table.  
-1.  Choose the **Frames** tab.  The table shows the last 100 frames.  
+1.  Choose the **Frames** panel.  The table shows the last 100 frames.  
 
 To refresh the table, re-choose the name of the WebSocket connection under the **Name** column of the Requests table.  -->
 
 <!--
-:::image type="complex" source="../media/network-frames.msft.png" alt-text="The Frames tab" lightbox="../media/network-frames.msft.png":::
-   The **Frames** tab  
+:::image type="complex" source="../media/network-frames.msft.png" alt-text="The Frames panel" lightbox="../media/network-frames.msft.png":::
+   The **Frames** panel  
 :::image-end:::  
 -->
 
@@ -505,140 +505,140 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 *   WebSocket opcodes are light-yellow.  
 *   Errors are light-red.  -->
 
-### Afficher un aperçu d’un corps de réponse  
+### <a name="display-a-preview-of-a-response-body"></a>Afficher un aperçu d’un corps de réponse  
 
-Pour afficher un aperçu du corps de la réponse, procédez comme suit.  
+Pour afficher un aperçu d’un corps de réponse, utilisez les étapes suivantes.  
 
-1.  Sélectionnez l’URL de la requête dans la colonne **nom** de la table demandes.  
-1.  Sélectionnez l’onglet **Aperçu** .  
+1.  Choisissez l’URL de la demande, sous la colonne **Nom** de la table Requests.  
+1.  Choisissez le **panneau d’aperçu.**  
 
 L’onglet Aperçu est principalement utile pour afficher des images.  
 
-:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Onglet Aperçu" lightbox="../media/network-network-resources-preview.msft.png":::
-   Onglet **Aperçu**  
+:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="Panneau d’aperçu" lightbox="../media/network-network-resources-preview.msft.png":::
+   Panneau **d’aperçu**  
 :::image-end:::  
 
-### Afficher un corps de réponse  
+### <a name="display-a-response-body"></a>Afficher un corps de réponse  
 
-Pour afficher le corps de la réponse à une demande, procédez comme suit.  
+Pour afficher le corps de la réponse à une demande, utilisez les étapes suivantes.  
 
-1.  Sélectionnez l’URL de la requête dans la colonne **nom** de la table demandes.  
-1.  Sélectionnez l’onglet **réponse** .  
+1.  Choisissez l’URL de la demande, sous la colonne **Nom** de la table Requests.  
+1.  Choisissez le **panneau de** réponse.  
 
-:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Onglet réponse" lightbox="../media/network-network-resources-response.msft.png":::
-   Onglet **réponse**  
+:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="Panneau de réponse" lightbox="../media/network-network-resources-response.msft.png":::
+   Panneau **de** réponse  
 :::image-end:::  
 
-### Afficher les en-têtes HTTP  
+### <a name="display-http-headers"></a>Afficher les en-têtes HTTP  
 
-Pour afficher des données d’en-tête HTTP sur une requête, procédez comme suit.  
+Pour afficher les données d’en-tête HTTP relatives à une demande, utilisez les étapes suivantes.  
 
-1.  Sélectionnez l’URL de la requête dans la colonne **nom** de la table demandes.  
-1.  Cliquez sur l’onglet **en-têtes** .  
+1.  Choisissez l’URL de la demande, sous la colonne **Nom** de la table Requests.  
+1.  Choisissez le **psanel d’en-têtes.**  
 
-:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Onglet en-têtes" lightbox="../media/network-resources-headers.msft.png":::
-   Onglet **en-têtes**  
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="Panneau En-têtes" lightbox="../media/network-resources-headers.msft.png":::
+   Panneau **En-têtes**  
 :::image-end:::  
 
-#### Afficher une source d’en-tête HTTP  
+#### <a name="display-http-header-source"></a>Afficher la source d’en-tête HTTP  
 
-Par défaut, l’onglet en-têtes affiche les noms des en-têtes par ordre alphabétique.  Pour désactivé présente les noms d’en-tête HTTP dans l’ordre de réception, procédez comme suit.  
+Par défaut, le panneau **En-têtes** affiche les noms d’en-tête par ordre alphabétique.  Pour dsiplay les noms d’en-tête HTTP dans l’ordre reçu, utilisez les étapes suivantes.  
 
-1.  Ouvrez l’onglet **en-têtes** pour la requête qui vous intéresse.  Pour plus d’informations, accédez à [afficher les en-têtes http](#display-http-headers).  
-1.  Sélectionnez **afficher la source**, en regard de la section en **-tête de requête** ou **en-tête de réponse** .  
+1.  Ouvrez **le panneau En-têtes** pour la demande qui vous intéresse.  Pour plus d’informations, accédez à [Afficher les en-têtes HTTP.](#display-http-headers)  
+1.  Choose **view source**, next to the Request **Header** or **Response Header** section.  
 
-### Afficher les paramètres de chaîne de requête  
+### <a name="display-query-string-parameters"></a>Afficher les paramètres de chaîne de requête  
 
-Pour afficher les paramètres de chaîne de requête d’une URL dans un format lisible par l’utilisateur, procédez comme suit.  
+Pour afficher les paramètres de chaîne de requête d’une URL dans un format lisible par l’homme, utilisez les étapes suivantes.  
 
-1.  Ouvrez l’onglet **en-têtes** pour la requête qui vous intéresse.  Pour plus d’informations, accédez à [afficher les en-têtes http](#display-http-headers).  
-1.  Accédez à la section **paramètres de chaîne de requête** .  
+1.  Ouvrez **le panneau En-têtes** pour la demande qui vous intéresse.  Pour plus d’informations, accédez à [Afficher les en-têtes HTTP.](#display-http-headers)  
+1.  Accédez à la section **Paramètres de chaîne de requête.**  
 
-:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="Section paramètres de chaîne de requête" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
-   Section **paramètres de chaîne de requête**  
+:::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="Section Paramètres de chaîne de requête" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
+   Section **Paramètres de chaîne de** requête  
 :::image-end:::  
 
-#### Afficher les paramètres de chaîne de requête source  
+#### <a name="display-query-string-parameters-source"></a>Afficher la source des paramètres de chaîne de requête  
 
-Pour afficher la source du paramètre de chaîne de requête d’une demande, procédez comme suit.  
+Pour afficher la source du paramètre de chaîne de requête d’une requête, utilisez les étapes suivantes.  
 
-1.  Accédez à la section paramètres de chaîne de requête.  Pour plus d’informations, accédez à [afficher les paramètres de chaîne de requête](#display-query-string-parameters).  
-1.  Sélectionnez **afficher la source**.  
+1.  Accédez à la section Paramètres de chaîne de requête.  Pour plus d’informations, [accédez à Afficher les paramètres de chaîne de requête.](#display-query-string-parameters)  
+1.  Choisissez **la source d’affichage.**  
 
-#### Afficher les paramètres de chaîne de requête codés en URL  
+#### <a name="display-url-encoded-query-string-parameters"></a>Afficher les paramètres de chaîne de requête codés en URL  
 
-Pour afficher les paramètres de chaîne de requête dans un format lisible par l’utilisateur, mais avec les codages prédéfinis, procédez comme suit.  
+Pour afficher les paramètres de chaîne de requête dans un format lisible par l’homme, mais avec des codages conservés, utilisez les étapes suivantes.  
 
-1.  Accédez à la section paramètres de chaîne de requête.  Pour plus d’informations, accédez à [afficher les paramètres de chaîne de requête](#display-query-string-parameters).  
-1.  Choisissez **affichage URL encodée**.  
+1.  Accédez à la section Paramètres de chaîne de requête.  Pour plus d’informations, [accédez à Afficher les paramètres de chaîne de requête.](#display-query-string-parameters)  
+1.  Choisissez **l’URL d’affichage codée.**  
 
-### Afficher les cookies  
+### <a name="display-cookies"></a>Afficher les cookies  
 
-Pour afficher les cookies envoyés dans l’en-tête HTTP d’une requête, procédez comme suit.  
+Pour afficher les cookies envoyés dans l’en-tête HTTP d’une requête, utilisez les étapes suivantes.  
 
-1.  Sélectionnez l’URL de la requête dans la colonne **nom** de la table demandes.  
-1.  Sélectionnez l’onglet **cookies** .  
+1.  Choisissez l’URL de la demande, sous la colonne **Nom** de la table Requests.  
+1.  Choisissez le **panneau Cookies.**  
 
 <!--For more information about each of the columns, navigate to [Fields][ManageDataCookiesFields].  -->  
 
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->  
 <!--TODO: add link when section is available -->  
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Onglet cookies" lightbox="../media/network-network-resources-cookies.msft.png":::
-   Onglet cookies  
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="Panneau Cookies" lightbox="../media/network-network-resources-cookies.msft.png":::
+   Panneau Cookies  
 :::image-end:::  
 
-### Afficher la répartition du minutage d’une requête  
+### <a name="display-the-timing-breakdown-of-a-request"></a>Affichage de la répartition du minutage d’une demande  
 
-Pour afficher la répartition du minutage d’une demande, procédez comme suit.  
+Pour afficher la répartition du minutage d’une demande, utilisez les étapes suivantes.  
 
-1.  Sélectionnez l’URL de la requête dans la colonne **nom** de la table demandes.  
-1.  Sélectionnez l’onglet **minutage** .  
+1.  Choisissez l’URL de la demande, sous la colonne **Nom** de la table Requests.  
+1.  Sélectionnez **le panneau De minutage.**  
 
-Pour accéder aux données plus rapidement, accédez à aperçu d' [une répartition du minutage](#preview-a-timing-breakdown).  
+Pour accéder plus rapidement aux données, accédez à l’aperçu [d’une répartition du minutage.](#preview-a-timing-breakdown)  
 
-Pour plus d’informations sur les différentes phases qui s’affichent dans l’onglet **minutage** , accédez à la [rubrique étapes de répartition du temps](#timing-breakdown-phases-explained).  
+Pour plus d’informations sur chacune des phases **** qui peuvent être affichées dans le panneau de minutage, accédez aux phases de répartition [du minutage expliquées.](#timing-breakdown-phases-explained)  
 
-:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="Onglet Minutage" lightbox="../media/network-network-resources-timing.msft.png":::
-   Onglet **minutage**  
+:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="Panneau De minutage" lightbox="../media/network-network-resources-timing.msft.png":::
+   Panneau **De minutage**  
 :::image-end:::  
 
-Plus d’informations sur chacune de ces étapes.  
+Plus d’informations sur chacune des phases.  
 
-Pour plus d’informations sur l’accès à l’affichage, accédez à l' [affichage répartition du minutage](#display-the-timing-breakdown-of-a-request).  
+Pour plus d’informations sur l’accès à l’affichage, accédez à [Afficher la répartition du minutage.](#display-the-timing-breakdown-of-a-request)  
 
-#### Prévisualiser une répartition de minutage  
+#### <a name="preview-a-timing-breakdown"></a>Afficher un aperçu de la répartition du minutage  
 
-Pour afficher un aperçu de la répartition du minutage d’une requête, dans la colonne en **cascade** de la table demandes, pointez sur l’entrée de la requête.  
+Pour afficher un aperçu de la répartition du minutage d’une demande, dans la colonne **Cascade** de la table Demandes, pointez sur l’entrée de la demande.  
 
-Pour plus d’informations sur l’accès aux données sans survol, accédez à [afficher la répartition du minutage d’une demande](#display-the-timing-breakdown-of-a-request).  
+Pour plus d’informations sur l’accès aux données sans pointage, accédez à Afficher la répartition du [minutage d’une demande.](#display-the-timing-breakdown-of-a-request)  
 
-:::image type="complex" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text="> afficher la répartition du minutage d’une requête" lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
-   Prévisualiser la répartition du minutage d’une requête  
+:::image type="complex" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text="> aperçu de la répartition du minutage d’une demande" lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
+   Afficher un aperçu de la répartition du minutage d’une demande  
 :::image-end:::  
 
-#### Explication des phases de répartition du temps  
+#### <a name="timing-breakdown-phases-explained"></a>Phases de répartition du minutage expliquées  
 
-Plus d’informations sur chacune des phases qui s’affichent dans l’onglet **minutage** .  
+Plus d’informations sur chacune des phases qui peuvent s’afficher dans le **panneau De** minutage.  
 
 :::row:::
    :::column span="1":::
-      **Mise en file d’attente**  
+      **File d’attente**  
    :::column-end:::
    :::column span="2":::
-      Le navigateur met en file d’attente les demandes lorsque l’une des conditions suivantes est vraie.  
+      Le navigateur place les demandes en file d’attente lorsque l’une des valeurs suivantes est vraie.  
       
-      *   Il existe des demandes de priorité élevée.  
-      *   Six connexions TCP sont ouvertes pour la même origine, qui correspond à la limite.  S’applique uniquement aux protocoles HTTP/1.0 et HTTP/1.1.  
-      *   Le navigateur alloue de l’espace dans le cache disque.  
+      *   Des demandes de priorité élevée existent.  
+      *   Six connexions TCP sont ouvertes pour la même origine, ce qui est la limite.  S’applique uniquement à HTTP/1.0 et HTTP/1.1.  
+      *   Le navigateur alloue brièvement de l’espace dans le cache disque.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Bloquée**  
+      **Bloqué**  
    :::column-end:::
    :::column span="2":::
-      La requête est bloquée pour l’une des raisons décrites dans la **file d’attente**.  
+      La demande est bloquée pour l’une des raisons décrites dans **la file d’attente.**  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -646,7 +646,7 @@ Plus d’informations sur chacune des phases qui s’affichent dans l’onglet *
       **Recherche DNS**  
    :::column-end:::
    :::column span="2":::
-      Le navigateur résout l’adresse IP pour la requête.  
+      Le navigateur est en cours de résolution de l’adresse IP de la demande.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -654,7 +654,7 @@ Plus d’informations sur chacune des phases qui s’affichent dans l’onglet *
       **Connexion initiale**  
    :::column-end:::
    :::column span="2":::
-      Le navigateur établit une connexion, y compris les négociations TCP, les tentatives de TCP et négocie une couche de socket sécurisée.
+      Le navigateur établit une connexion incluant des liaisons TCP, des tentatives TCP et négocie une couche de socket sécurisée.
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -662,7 +662,7 @@ Plus d’informations sur chacune des phases qui s’affichent dans l’onglet *
       **Négociation de proxy**  
    :::column-end:::
    :::column span="2":::
-      Le navigateur négocie la requête avec un [serveur proxy][WikiProxyServer].  
+      Le navigateur négocie la demande avec un [serveur proxy.][WikiProxyServer]  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -670,7 +670,7 @@ Plus d’informations sur chacune des phases qui s’affichent dans l’onglet *
       **Demande envoyée**  
    :::column-end:::
    :::column span="2":::
-      La requête est en cours d’envoi.  
+      La demande est envoyée.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -678,28 +678,28 @@ Plus d’informations sur chacune des phases qui s’affichent dans l’onglet *
       **Préparation de ServiceWorker**  
    :::column-end:::
    :::column span="2":::
-      Le navigateur démarre le travailleur de service.  
+      Le navigateur démarre le service de travail.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Demander à ServiceWorker**  
+      **Demande à ServiceWorker**  
    :::column-end:::
    :::column span="2":::
-      La demande est envoyée au travailleur de service.  
+      La demande est envoyée au service de travail.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **En attente \ (TTFB \)**  
+      **Waiting \(TTFB\)**  
    :::column-end:::
    :::column span="2":::
-      Le navigateur attend le premier octet d’une réponse.  TTFB représente le temps à l’octet initial.  Ce minutage inclut un aller-retour d’une latence et la durée du serveur pour préparer la réponse.  
+      Le navigateur attend le premier byte d’une réponse.  TTFB signifie « Time To First Byte ».  Ce délai inclut un aller-retour de latence et le temps que le serveur a pris pour préparer la réponse.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Téléchargement du contenu**  
+      **Téléchargement de contenu**  
    :::column-end:::
    :::column span="2":::
       Le navigateur reçoit la réponse.  
@@ -707,66 +707,66 @@ Plus d’informations sur chacune des phases qui s’affichent dans l’onglet *
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Réception d’une émission**  
+      **Réception de push**  
    :::column-end:::
    :::column span="2":::
-      Le navigateur reçoit des données pour cette réponse via le protocole HTTP/2 Server Poussée.  
+      Le navigateur reçoit des données pour cette réponse via HTTP/2 Server Push.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      **Lecture Poussée**  
+      **Lecture push**  
    :::column-end:::
    :::column span="2":::
-      Le navigateur lit les données locales précédemment reçues.  
+      Le navigateur lit les données locales reçues précédemment.  
    :::column-end:::
 :::row-end:::  
 
-### Afficher les initiateurs et les dépendances  
+### <a name="display-initiators-and-dependencies"></a>Afficher les initiateurs et les dépendances  
 
-Pour afficher les initiateurs et les dépendances d’une requête, maintenez la touche enfoncée `Shift` et placez le curseur sur la requête dans la table demandes.  Couleurs de DevTools: les initiateurs apparaissent en vert et les dépendances apparaissent en rouge.  
+Pour afficher les initiateurs et les dépendances d’une demande, maintenez la demande en attente et pointez dessus `Shift` dans la table Demandes.  Couleurs DevTools : les initiateurs sont affichés en vert et les dépendances en rouge.  
 
-:::image type="complex" source="../media/network-network-resources-initiators-dependencies.msft.png" alt-text="Afficher les initiateurs et les dépendances d’une requête" lightbox="../media/network-network-resources-initiators-dependencies.msft.png":::
-   Afficher les initiateurs et les dépendances d’une requête  
+:::image type="complex" source="../media/network-network-resources-initiators-dependencies.msft.png" alt-text="Afficher les initiateurs et les dépendances d’une demande" lightbox="../media/network-network-resources-initiators-dependencies.msft.png":::
+   Afficher les initiateurs et les dépendances d’une demande  
 :::image-end:::  
 
-Lorsque la table requêtes est classée dans l’ordre chronologique, si vous pointez sur une ligne, la ligne qui la précède affiche une requête verte.  La requête Green est l’initiateur de la dépendance.  Si une autre demande verte apparaît sur la ligne avant celle-ci, il s’agit de l’initiateur de l’initiateur.  Et ainsi de suite.  
+Lorsque la table Requests est classé dans l’ordre chronologique, si vous pointez sur une ligne, la ligne qui précède affiche une demande verte.  La demande verte est l’initiateur de la dépendance.  Si une autre demande verte est affichée sur la ligne avant cette ligne, cette demande supérieure est l’initiateur de l’initiateur.  Et ainsi de suite.  
 
-### Afficher les événements de chargement  
+### <a name="display-load-events"></a>Afficher les événements de chargement  
 
-DevTools affiche le minutage des `DOMContentLoaded` événements et `load` dans plusieurs emplacements du panneau **réseau** .  L' `DOMContentLoaded` événement est coloré en bleu et l' `load` événement est rouge.  
+DevTools affiche le minutage des événements à plusieurs `DOMContentLoaded` `load` endroits sur **l’outil** Réseau.  `DOMContentLoaded`L’événement est bleu et l’événement est `load` rouge.  
 
-:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="Emplacements des événements DOMContentLoaded et Load sur le panneau réseau" lightbox="../media/network-network-requests-load-events.msft.png":::
-   Emplacement des `DOMContentLoaded` `load` événements et dans le volet **réseau**  
+:::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="Emplacements du DOMContentLoaded et chargement des événements sur le panneau réseau" lightbox="../media/network-network-requests-load-events.msft.png":::
+   Emplacements des `DOMContentLoaded` événements et des événements `load` sur **l’outil** Réseau  
 :::image-end:::  
 
-### Afficher le nombre total de demandes  
+### <a name="display-the-total-number-of-requests"></a>Affichage du nombre total de demandes  
 
-Le nombre total de demandes est répertorié dans le volet **Résumé** , au bas du panneau **réseau** .  
+Le nombre total de demandes **** est répertorié dans le volet Résumé, en bas de **l’outil** Réseau.  
 
 > [!CAUTION]
-> Ce numéro suit uniquement les requêtes qui ont été enregistrées depuis l’ouverture de DevTools.  Si d’autres requêtes s’est produites avant l’ouverture de DevTools, ces demandes ne sont pas comptabilisées.  
+> Ce numéro suit uniquement les demandes qui ont été enregistrées depuis l’ouverture de DevTools.  Si d’autres demandes se sont produites avant l’ouverture de DevTools, ces demandes ne sont pas comptabilisées.  
 
 :::image type="complex" source="../media/network-network-total-requests.msft.png" alt-text="Nombre total de demandes depuis l’ouverture de DevTools" lightbox="../media/network-network-total-requests.msft.png":::
    Nombre total de demandes depuis l’ouverture de DevTools  
 :::image-end:::  
 
-### Affichez la taille totale du téléchargement  
+### <a name="display-the-total-download-size"></a>Afficher la taille totale du téléchargement  
 
-La taille de téléchargement totale des demandes figure dans le volet **Résumé** , en bas du volet **réseau** .  
+La taille totale des demandes de **** téléchargement est répertoriée dans le volet Résumé, en bas de **l’outil** Réseau.  
 
 > [!CAUTION]
-> Ce numéro suit uniquement les requêtes qui ont été enregistrées depuis l’ouverture de DevTools.  Si d’autres requêtes s’est produites avant l’ouverture de DevTools, les requêtes précédentes ne sont pas comptabilisées.  
+> Ce numéro suit uniquement les demandes qui ont été enregistrées depuis l’ouverture de DevTools.  Si d’autres demandes se sont produites avant l’ouverture de DevTools, les demandes précédentes ne sont pas comptabilisées.  
 
-:::image type="complex" source="../media/network-network-total-download-size.msft.png" alt-text="La taille de téléchargement totale des requêtes" lightbox="../media/network-network-total-download-size.msft.png":::
-   La taille de téléchargement totale des requêtes  
+:::image type="complex" source="../media/network-network-total-download-size.msft.png" alt-text="Taille totale des demandes de téléchargement" lightbox="../media/network-network-total-download-size.msft.png":::
+   Taille totale des demandes de téléchargement  
 :::image-end:::  
 
-Pour vérifier le nombre de ressources disponibles lorsque le navigateur décompresse chaque élément, naviguez jusqu’à [afficher la taille de la ressource](#display-the-uncompressed-size-of-a-resource).  
+Pour vérifier la taille des ressources une fois que le navigateur a décompressé chaque élément, accédez pour afficher la taille non [compressée d’une ressource.](#display-the-uncompressed-size-of-a-resource)  
 
-### Afficher la trace de pile ayant entraîné une requête  
+### <a name="display-the-stack-trace-that-caused-a-request"></a>Afficher la trace de pile à l’origine d’une demande  
 
-Après qu’une instruction JavaScript demande une ressource, pointez sur la colonne **Initiator** pour afficher la trace de pile qui se trouve au début de la requête.  
+Après qu’une instruction JavaScript demande une ressource, pointez sur la colonne **Initiator** pour afficher la trace de pile précédant la demande.  
 
 <!-- [codepen.io/contoso/pen/yLBrOWa?editors=0010#0](https://codepen.io/contoso/pen/yLBrOWa?editors=0010#0) -->  
 
@@ -784,50 +784,50 @@ init();
 ```  
 -->  
 
-:::image type="complex" source="../media/network-network-requests-initiator-stack.msft.png" alt-text="Trace de pile aboutissant à une demande de ressources" lightbox="../media/network-network-requests-initiator-stack.msft.png":::
-   Trace de pile aboutissant à une demande de ressources  
+:::image type="complex" source="../media/network-network-requests-initiator-stack.msft.png" alt-text="Trace de pile menant à une demande de ressource" lightbox="../media/network-network-requests-initiator-stack.msft.png":::
+   Trace de pile menant à une demande de ressource  
 :::image-end:::  
 
-### Affichage de la taille de la ressource non compressée  
+### <a name="display-the-uncompressed-size-of-a-resource"></a>Afficher la taille non compressée d’une ressource  
 
-Activez la case à cocher **utiliser des lignes de requête volumineuses** , puis examinez la dernière valeur de la colonne **taille** .  
+Activer la case **à cocher** Utiliser les lignes de requête de grande taille, puis passer en revue la valeur inférieure de la **colonne** Taille.  
 
 :::image type="complex" source="../media/network-network-requests-uncompressed-compare.msft.png" alt-text="Exemple de ressources non compressées" lightbox="../media/network-network-requests-uncompressed-compare.msft.png":::
-   Voici un exemple de ressources non compressées \ (la taille du `jquery-3.3.1.min.js` fichier qui a été envoyée par le biais du réseau était `29.9 KB` alors la taille du fichier non compressé `84.9 KB` ).  
+   Exemple de ressources non compressées \(La taille compressée du fichier envoyé sur le réseau était , alors que la taille non compressée était `jquery-3.3.1.min.js` `29.9 KB` `84.9 KB` \)  
 :::image-end:::  
 
-## Exporter les données de requête  
+## <a name="export-requests-data"></a>Exporter les données des demandes  
 
-### Enregistrer toutes les demandes réseau dans un fichier QAR  
+### <a name="save-all-network-requests-to-a-har-file"></a>Enregistrer toutes les demandes réseau dans un fichier HAR  
 
-Pour enregistrer toutes les demandes réseau dans un fichier QAR, procédez comme suit.  
+Pour enregistrer toutes les demandes réseau dans un fichier HAR, complétez les étapes suivantes.  
 
-1.  Positionnez le pointeur sur une requête dans la table demandes et ouvrez le menu contextuel, puis cliquez sur le bouton droit de la souris.  
-1.  Choisissez **enregistrer en tant que le contenu**.  DevTools enregistre toutes les demandes qui se sont produites depuis que vous avez ouvert DevTools sur le fichier.  Vous ne pouvez pas filtrer les demandes.  Vous ne pouvez pas non plus enregistrer une demande unique.  
+1.  Pointez sur n’importe quelle demande dans la table Demandes et ouvrez le menu contextuel \(clic droit\).  
+1.  Choose **Save as HAR with Content**.  DevTools enregistre toutes les demandes qui se sont produites depuis que vous avez ouvert DevTools dans le fichier HAR.  Vous ne pouvez pas filtrer les demandes.  Vous ne pouvez pas non plus enregistrer une seule requête.  
 
-Lorsque vous enregistrez un fichier QAR, vous pouvez l’importer de nouveau dans DevTools pour analyse.  Il suffit de glisser-déplacer le fichier QAR dans la table demandes.  
+Une fois que vous enregistrez un fichier HAR, vous pouvez l’importer à nouveau dans DevTools pour analyse.  Il suffit de glisser-déposer le fichier HAR dans la table Requests.  
 <!--For more information, navigate to also [HAR Analyzer][HARAnalyzer].  -->  
 
 <!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->  
 <!--Todo: add section link when content is available  -->  
 
-:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Choisissez Enregistrer comme le contenu de votre fichier." lightbox="../media/network-network-requests-save-har-content.msft.png":::
-   Choisissez **Enregistrer comme le contenu de votre fichier** .  
+:::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Choose Save as HAR with Content" lightbox="../media/network-network-requests-save-har-content.msft.png":::
+   Choose **Save as HAR with Content**  
 :::image-end:::  
 
-### Copier une ou plusieurs demandes dans le presse-papiers  
+### <a name="copy-one-or-more-requests-to-the-clipboard"></a>Copier une ou plusieurs demandes dans le Presse-papiers  
 
-Dans la colonne **nom** de la table demandes, positionnez le **pointeur sur une**requête, ouvrez le menu contextuel, puis sélectionnez l’une des options suivantes...  
+Sous la **colonne Nom** de la table Demandes, pointez sur une demande, ouvrez le menu contextuel \(clic droit\), pointez sur **Copier**et choisissez l’une des options suivantes.  
 
 | Nom | Détails |  
 |:--- |:--- |  
-| **Copier l’adresse du lien** | Copiez l’URL de la requête dans le presse-papiers. |  
-| **Copier la réponse** | Copiez le corps de la réponse dans le presse-papiers. |  
-| **Copier en tant qu’extraction** | &nbsp; |  
-| **Copier sous forme de courbe** | Copiez la demande en tant que commande en forme de boucle. |  
-| **Copy All As Fetch** | &nbsp; |  
-| **Tout copier comme courbe** | Copiez toutes les demandes comme une chaîne de commandes bouclé. |  
-| **Tout copier comme.** | Copiez toutes les demandes en tant que données QAR. |  
+| **Copier l’adresse du lien** | Copiez l’URL de la demande dans le Presse-papiers. |  
+| **Copier la réponse** | Copiez le corps de la réponse dans le Presse-papiers. |  
+| **Copier en tant que récupération** | &nbsp; |  
+| **Copier en tant que cURL** | Copiez la demande en tant que commande cURL. |  
+| **Copier tout en tant que récupération** | &nbsp; |  
+| **Copier tout en tant que cURL** | Copiez toutes les demandes en tant que chaîne de commandes cURL. |  
+| **Copier tout en tant que HAR** | Copiez toutes les demandes en tant que données HAR. |  
 
 <!--
 :::row:::
@@ -888,13 +888,13 @@ Dans la colonne **nom** de la table demandes, positionnez le **pointeur sur une*
 :::row-end:::  
 -->  
 
-:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Cliquez sur copier la réponse." lightbox="../media/network-network-requests-copy-response.msft.png":::
-   Cliquez sur **copier la réponse** .  
+:::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Choose Copy Response" lightbox="../media/network-network-requests-copy-response.msft.png":::
+   Choose **Copy Response**  
 :::image-end:::  
 
-### Copier la réponse mise en forme JSON dans le presse-papiers  
+### <a name="copy-formatted-response-json-to-the-clipboard"></a>Copier la réponse mise en forme JSON dans le Presse-papiers  
 
-Choisissez une requête réseau et naviguez jusqu’au volet **en-têtes** .  Pour copier la valeur JSON d’une réponse, accédez à **requête Payload**, pointez sur le contenu de la réponse JSON, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez **copier la valeur**.  
+Choisissez une demande réseau et accédez au volet **En-têtes.**  Pour copier la valeur JSON d’une réponse, accédez à La charge utile de la **demande,** pointez sur le contenu de la réponse JSON, ouvrez le menu contextuel \(clic droit\), puis choisissez Copier la **valeur**.  
 
 :::row:::
    :::column span="":::
@@ -903,61 +903,61 @@ Choisissez une requête réseau et naviguez jusqu’au volet **en-têtes** .  Po
         :::image-end:::  
    :::column-end:::
    :::column span="":::
-        :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="Code Visual Studio avec JSON de réponse mis en forme" lightbox="../media/network-header-paste-property-value.msft.png":::
-          Collage de la réponse formatée JSON dans le code Visual Studio  
+        :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="Code microsoft Visual Studio avec réponse mise en forme JSON" lightbox="../media/network-header-paste-property-value.msft.png":::
+          Pasting formatted response JSON in Microsoft Visual Studio Code  
         :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-### Copier les valeurs de propriétés des requêtes réseau dans le presse-papiers  
+### <a name="copy-property-values-from-network-requests-to-your-clipboard"></a>Copier les valeurs des propriétés des demandes réseau dans votre Presse-papiers  
 
-Pour copier les valeurs de propriétés des requêtes réseau dans le presse-papiers, effectuez les actions suivantes.  
+Pour copier les valeurs des propriétés des demandes réseau dans votre Presse-papiers, effectuer les actions suivantes.  
 
-1.  Ouvrez le volet **en-têtes** .  
+1.  Ouvrez **le volet En-têtes.**  
 1.  Ouvrez l’une des sections d’en-tête suivantes.  
-    *   Charge utile de requête \ (JSON \)  
+    *   Demander la charge utile \(JSON\)  
     *   Données de formulaire  
     *   Paramètres de chaîne de requête  
-    *   En-têtes de demande  
+    *   En-têtes de requête  
     *   En-têtes de réponse  
-1.  Ouvrir le menu contextuel \ (cliquez avec le bouton droit sur \) > **copier la valeur**.  Vous pouvez à présent coller la valeur dans n’importe quel éditeur pour la vérifier.  
+1.  Ouvrez le menu contextuel \(clic droit\) > **valeur copier.**  Vous pouvez maintenant coller la valeur dans n’importe quel éditeur pour la réviser.  
     
-## Modifier la disposition du panneau réseau  
+## <a name="change-the-layout-of-the-network-panel"></a>Modifier la disposition du panneau Réseau  
 
-Vous pouvez développer ou réduire des sections de l’interface utilisateur du panneau **réseau** pour cibler les informations importantes.  
+Vous pouvez développer ou réduire **** des sections de l’interface utilisateur de l’outil réseau pour concentrer des informations importantes.  
 
-### Masquer le volet filtres  
+### <a name="hide-the-filters-pane"></a>Masquer le volet Filtres  
 
-Par défaut, DevTools affiche le volet **filtres** .  
-Choisissez **filtre** \ ( ![ filtre ][ImageFilterIcon] \) pour le masquer.  
+Par défaut, DevTools affiche le volet **Filtres.**  
+Choisissez **Filtre** \( ![ Filtre ][ImageFilterIcon] \) pour le masquer.  
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="Bouton Masquer les filtres" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    Bouton Masquer les filtres  
 :::image-end:::  
 
-### Utiliser des lignes de requête volumineuses  
+### <a name="use-large-request-rows"></a>Utiliser des lignes de requête de grande taille  
 
-Utilisez des lignes de grande taille si vous voulez plus d’espace dans votre tableau de requêtes réseau.  Certaines colonnes fournissent également quelques informations supplémentaires sur l’utilisation de lignes de grande taille.  Par exemple, la valeur la plus en bas de la colonne **taille** correspond à la taille de requête non compressée.  
+Utilisez des lignes de grande taille lorsque vous souhaitez davantage d’espaces dans votre table de demandes réseau.  Certaines colonnes fournissent également un peu plus d’informations lors de l’utilisation de lignes de grande taille.  Par exemple, la valeur inférieure de la colonne **Size** est la taille non compressée d’une demande.  
 
-:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Exemple de longues lignes de requête dans le volet requêtes" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
-   Exemple de longues lignes de requête dans le volet **requêtes**  
+:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="Exemple de lignes de requête importantes dans le volet Demandes" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
+   Exemple de lignes de requête importantes dans le **volet Demandes**  
 :::image-end:::  
 
-Pour activer les lignes de grande taille, activez la case à cocher **utiliser des lignes de requête volumineuses** .  
+Pour activer les lignes de grande taille, activez la case à cocher Utiliser les **lignes de requête de** grande taille.  
 
-:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Case à cocher utiliser de grandes lignes de requête" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
-   Case à cocher **utiliser de grandes lignes de requête**  
+:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="Case à cocher Utiliser les lignes de requête de grande taille" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
+   Case **à cocher Utiliser les lignes de requête de grande** taille  
 :::image-end:::  
 
-### Masquer le volet vue d’ensemble  
+### <a name="hide-the-overview-pane"></a>Masquer le volet Vue d’ensemble  
 
-Par défaut, DevTools affiche le volet **vue d’ensemble** .  Pour le masquer, désactivez la case à cocher **afficher la vue d’ensemble** .  
+Par défaut, DevTools **** affiche le volet Vue d’ensemble.  Pour le masquer, cochez la case **Afficher la** vue d’ensemble.  
 
 :::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="Case à cocher Afficher la vue d’ensemble" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
-   Case à cocher **afficher la vue d’ensemble**  
+   Case **à cocher Afficher la vue d’ensemble**  
 :::image-end:::  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -972,13 +972,13 @@ Par défaut, DevTools affiche le volet **vue d’ensemble** .  Pour le masquer, 
 
 <!-- links -->  
 
-[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Déboguer des applications Web progressives | Documents Microsoft"  
+[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Déboguer les applications web progressives | Documents Microsoft"  
 
 <!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->  
 
-[MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "URL de données | MDN"  
+[MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Url de données | MDN"  
 
-[WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Serveur proxy-Wikipédia"  
+[WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Serveur proxy - Wikipedia"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  

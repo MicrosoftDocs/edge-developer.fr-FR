@@ -1,18 +1,18 @@
 ---
-description: 'Les principales utilisations de la console Microsoft Edge DevTools: journalisation des messages et exécution de JavaScript.'
+description: Les principales utilisations de la console Microsoft Edge DevTools sont la journalisation des messages et l’exécution de JavaScript.
 title: Présentation de la console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 32272c3f76f715566ced66d11346985dc95dd290
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: 496caa4d304d9511d4b1c341846f377899ba4597
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125264"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399119"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,19 +28,19 @@ ms.locfileid: "11125264"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Présentation de la console  
+# <a name="console-overview"></a>Présentation de la console  
 
   
 
-Cette page décrit la façon dont la console Microsoft Edge DevTools simplifie le développement de pages Web.  La console a 2 utilisations principales: [afficher les messages enregistrés](#viewing-logged-messages) et [exécuter JavaScript](#running-javascript).  
+Cette page explique comment la console Microsoft Edge DevTools facilite le développement de pages web.  La **console a** 2 utilisations principales : l’affichage des messages [enregistrés](#viewing-logged-messages) et [l’exécution de JavaScript](#running-javascript).  
 
-## Affichage des messages enregistrés  
+## <a name="viewing-logged-messages"></a>Affichage des messages enregistrés  
 
-Les développeurs Web enregistrent souvent les messages sur la console pour s’assurer que leur JavaScript fonctionne comme prévu.  Pour enregistrer un message, vous devez insérer une expression telle que `console.log('Hello, Console!')` dans votre code JavaScript.  Lorsque le navigateur exécute votre JavaScript et voit une expression semblable à celle-ci, il enregistre le message sur la console.  
+Les développeurs web enregistrent souvent des messages dans la console pour s’assurer que leur JavaScript fonctionne comme prévu.  Pour enregistrer un message, vous insérez une expression comme `console.log('Hello, Console!')` dans votre JavaScript.  Lorsque le navigateur exécute votre JavaScript et traite une expression comme celle-ci, le navigateur enregistre le message dans la **console.**  
 
 :::row:::
    :::column span="":::
-      HTML et JavaScript pour la page.  
+      Code HTML et JavaScript pour la page.  
       
       ```html
       <!doctype html>
@@ -71,72 +71,72 @@ Les développeurs Web enregistrent souvent les messages sur la console pour s’
       ```  
    :::column-end:::
    :::column span="":::
-      Dans l’illustration suivante, la **console** affiche les résultats du chargement de la page et l’attente de 3 secondes.  
+      Dans la figure suivante, la **console affiche** les résultats du chargement de la page et de l’attente de 3 secondes.  
       
-      :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="Panneau de la console" lightbox="../media/console-console-demo.msft.png":::
-         Panneau de la **console**  
+      :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="Panneau console" lightbox="../media/console-console-demo.msft.png":::
+         **L’outil Console**  
       :::image-end:::  
       
-      Essayez de déterminer les lignes de code à l’origine du journal du navigateur.  
+      Essayez de déterminer les lignes de code à l’origine du journal des messages par le navigateur.  
    :::column-end:::
 :::row-end:::  
 
-Les développeurs Web consignent les messages pour les 2 raisons générales suivantes.  
+Les développeurs web enregistrent les messages pour les 2 raisons générales suivantes.  
 
-*   Vérifier que le code s’exécute dans l’ordre approprié.  
-*   Inspecter les valeurs des variables à un moment donné.  
+*   Assurez-vous que le code s’exécute dans le bon ordre.  
+*   Inspection des valeurs des variables à un moment donné.  
 
-Pour en savoir plus sur la journalisation, voir [utiliser les messages de journalisation][DevtoolsConsoleLoggingMessages] .  Pour consulter la liste complète des méthodes, voir la référence de l’API de la [console][DevToolsConsoleAPI] `console` .  La principale différence entre les méthodes est le mode d’affichage des données qui sont enregistrées.  
+Pour obtenir une expérience pratique de la journalisation, accédez à [Démarrer avec la journalisation des messages.][DevtoolsConsoleLoggingMessages]  Pour parcourir la liste complète des `console` méthodes, accédez à la référence de [l’API console.][DevToolsConsoleAPI]  La principale différence entre les méthodes est la façon dont les données enregistrées sont affichées.  
 
-## Exécution de JavaScript  
+## <a name="running-javascript"></a>Exécution de JavaScript  
 
-La **console** est également une [REPL][WikiREPLoop].  Vous pouvez exécuter JavaScript dans la **console** pour interagir avec la page inspectée.   
+La **console** est également un [rePL][WikiREPLoop].  Vous pouvez exécuter JavaScript dans la **console pour** interagir avec la page en cours d’inspection.   
 
 :::row:::
    :::column span="":::
-      Dans l’illustration suivante, la **console** est affichée en regard de la page d’accueil devtools.  
+      Dans la figure suivante, la **console est** affichée à côté de la page d’accueil de DevTools.  
       
-      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="Panneau de la console" lightbox="../media/devtools-console-empty.msft.png":::
-         Panneau **console** en regard de la page d’accueil de devtools  
+      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="Outil console en de côté de la page d’accueil de DevTools" lightbox="../media/devtools-console-empty.msft.png":::
+         **L’outil Console** en de côté de la page d’accueil de DevTools  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      Dans l’illustration suivante, la même page s’affiche après l’utilisation de la **console** pour modifier le titre supérieur de la page.
+      Dans la figure suivante, la même page s’affiche après avoir utilisé la **console** pour modifier le titre supérieur de la page.
       
-      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Panneau de la console" lightbox="../media/devtools-console-h1-changed.msft.png":::
-         Utiliser la **console** pour modifier le titre supérieur de la page  
+      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Utiliser la console pour modifier l’en-tête supérieur de la page" lightbox="../media/devtools-console-h1-changed.msft.png":::
+         Utiliser la **console pour** modifier l’en-tête supérieur de la page  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
 
-La modification de la page à partir de la **console** est possible, car la **console** dispose d’un accès complet à la [fenêtre][MDNWindow] de la page.  DevTools offre quelques fonctions de commodité qui vous permettent d’inspecter une page plus facilement.  Par exemple, supposons que votre JavaScript contienne une fonction appelée `hideModal` .  L’exécution `debug(hideModal)` interrompt votre code sur la première ligne `hideModal` la prochaine fois que vous l’exécutez.  Pour plus d’informations sur la liste complète des fonctions d’utilitaire, [voir][DevtoolsConsoleUtilitiesDebug]informations de référence sur l’API de la console.  
+La modification de la page à partir de la **console** est possible, car la **console** dispose d’un accès complet à [la fenêtre][MDNWindow] de la page.  DevTools a quelques fonctions pratiques qui facilitent l’inspection d’une page.  Par exemple, supposons que votre JavaScript contient une fonction appelée `hideModal` .  `debug(hideModal)`L’exécution interrompt votre code sur la première ligne `hideModal` de la prochaine exécution.  Pour plus d’informations sur la liste complète des fonctions utilitaires, accédez à référence de [l’API des utilitaires de console.][DevtoolsConsoleUtilitiesDebug]  
 
-Lorsque vous exécutez JavaScript, vous n’avez pas besoin d’interagir avec la page.  Vous pouvez utiliser la **console** pour essayer le nouveau code non lié à la page.  Par exemple, supposons que vous viens d’apprendre sur la méthode intégrée de mappage de tableau JavaScript [()][MDNMap] et que vous souhaitez tester.  
-La **console** est l’endroit idéal pour tester la fonction.  
+Lorsque vous exécutez JavaScript, vous n’avez pas besoin d’interagir avec la page.  Vous pouvez utiliser la **console pour** tester un nouveau code non lié à la page.  Par exemple, supposons que vous venons d’apprendre la méthode intégrée de tableau JavaScript [map()][MDNMap] et que vous souhaitez l’expérimenter.  
+La **console** est un bon endroit pour tester la fonction.  
 
-Pour plus d’informations sur la façon d’utiliser JavaScript dans la **console**, accédez à la section [commencer à utiliser JavaScript][DevtoolsConsoleRunningJavascript].  
+Pour plus d’expérience pratique avec l’exécution de JavaScript dans la **console,** accédez à Démarrer [avec l’exécution de JavaScript][DevtoolsConsoleRunningJavascript].  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsConsoleAPI]: ./api.md "Référence sur les API de console | Documents Microsoft"  
-[DevtoolsConsoleLoggingMessages]: ./log.md "Commencer à utiliser la journalisation des messages dans la console | Documents Microsoft"  
+[DevToolsConsoleAPI]: ./api.md "Console API Reference | Documents Microsoft"  
+[DevtoolsConsoleLoggingMessages]: ./log.md "Commencer à journalisation des messages dans la console | Documents Microsoft"  
 [DevtoolsConsoleRunningJavascript]: ./javascript.md "Commencer à utiliser JavaScript dans la console | Documents Microsoft"  
-[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "XXXXXX xxx xxxxxxx xxx xxxxxxx xxxxx Documents Microsoft"  
+[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "debug - Console Utilities API Reference | Documents Microsoft"  
 
-[MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array. prototype. map () | MDN"  
+[MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array.prototype.map() | MDN"  
 [MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "Fenêtre | MDN"  
 
-[WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Lecture-eval-imprimer en boucle-Wikipédia"  
+[WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read-eval-print loop - Wikipedia"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/index) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

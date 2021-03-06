@@ -1,18 +1,18 @@
 ---
-description: Documentation canonique sur les raccourcis clavier dans Microsoft Edge DevTools
-title: Raccourcis clavier dans Microsoft Edge DevTools
+description: Documentation canonique pour les raccourcis clavier de Microsoft Edge DevTools.
+title: Raccourcis clavier Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 417e2235e4ea63d0258c158035ea201cd5657099
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: c6d51d27ce41ed8192a867cf33555b3880dd3ef9
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11232820"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398349"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,133 +28,133 @@ ms.locfileid: "11232820"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Raccourcis clavier dans Microsoft Edge DevTools  
+# <a name="microsoft-edge-devtools-keyboard-shortcuts"></a>Raccourcis clavier Microsoft Edge DevTools  
 
-Cet article est une référence sur les raccourcis clavier dans Microsoft Edge DevTools.
+Cet article est une référence aux raccourcis clavier dans Microsoft Edge DevTools.
 
-Vous pouvez également accéder à des raccourcis dans les info-bulles.  Pointez sur un élément de l’interface utilisateur de DevTools pour afficher l’info-bulle.  Si l’élément comporte un raccourci, l’info-bulle y est associée.
+Vous pouvez également trouver des raccourcis dans les bulles.  Pointez sur un élément d’interface utilisateur de DevTools pour afficher l’bulle.  Si l’élément possède un raccourci, l’bulle l’inclut.
 
-## Raccourcis clavier pour l’ouverture de DevTools  
+## <a name="keyboard-shortcuts-for-opening-devtools"></a>Raccourcis clavier pour l’ouverture de DevTools  
 
-Pour ouvrir DevTools, sélectionnez les raccourcis clavier suivants lorsque le curseur se trouve dans la fenêtre d’affichage du navigateur.
+Pour ouvrir DevTools, sélectionnez les raccourcis clavier suivants lorsque votre curseur est sélectionné sur la fenêtre d’affichage du navigateur.
 
-| Action | Windows \/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Ouvrir le panneau de configuration que vous avez utilisé en dernier | `F12` ou `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
-| Ouvrir l’écran de la **console** | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
-| Ouvrir le panneau **éléments** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` ou `Command`+`Option`+`C` |  
+| Ouvrez le panneau que vous avez utilisé en dernier | `F12` ou `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
+| Ouvrir **l’outil Console** | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
+| Ouvrir **l’outil Éléments** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` ou `Command`+`Option`+`C` |  
 
-## Raccourcis clavier globaux  
+## <a name="global-keyboard-shortcuts"></a>Raccourcis clavier globaux  
 
-Les raccourcis clavier suivants sont disponibles dans la plupart des panneaux de DevTools.
+Les raccourcis clavier suivants sont disponibles dans la plupart, sinon la plupart, des panneaux DevTools.
 
-| Action | Windows \/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Afficher les **paramètres** | `?` ou `F1` | `?` ou `Function`+`F1` |  
-| Mettre le focus sur le panneau suivant | `Control`+`]` | `Command`+`]` |  
-| Focus le panneau précédent | `Control`+`[` | `Command`+`[` |  
-| Revenez à la [position d’ancrage][DevtoolsCustomizeIndexPlacement] que vous avez utilisée pour la dernière fois.  Si DevTools se trouve à la position par défaut de la session entière, ce raccourci détache DevTools dans une fenêtre séparée | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
-| Basculer l’émulation de l' [appareil][DevtoolsDeviceModeIndex] | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |  
-| Activer/désactiver le **mode d’élément Inspect** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` |  
-| Ouvrir le [menu de commandes][DevtoolsCommandMenuIndex] | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |  
-| Faire basculer le [tiroir][DevtoolsCustomizeIndexDrawer] | `Escape` | `Escape` |  
-| Rechargement normal | `F5` ou `Control`+`R` | `Command`+`R` |  
-| Chargement papier | `Control`+`F5` ou `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
-| Rechercher du texte dans le panneau actuel.  Non pris en charge dans les panneaux **d’audit, d'** **application**et de **sécurité** | `Control`+`F` | `Command`+`F` |  
-| Ouvrir l’onglet **recherche** du [tiroir][DevtoolsCustomizeIndexDrawer]pour vous permettre de rechercher du texte sur toutes les ressources chargées | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Ouvrir un fichier dans le volet **sources** | `Control`+`O` ou `Control`+`P` | `Command`+`O` ou `Command`+`P` |  
-| Effectuer un zoom avant | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
+| Afficher **les paramètres** | `?` or `F1` | `?` ou `Function`+`F1` |  
+| Focus sur le panneau suivant | `Control`+`]` | `Command`+`]` |  
+| Focus sur le panneau précédent | `Control`+`[` | `Command`+`[` |  
+| Revenir à la [position d’accueil que][DevtoolsCustomizeIndexPlacement] vous avez utilisée en dernier.  Si DevTools a été à la position par défaut pour toute la session, ce raccourci désédocke DevTools dans une fenêtre distincte. | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
+| Basculez [l’émulation de l’appareil][DevtoolsDeviceModeIndex] | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |  
+| Toggle **Inspect Element Mode** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` |  
+| Ouvrir le [menu Commande][DevtoolsCommandMenuIndex] | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |  
+| Toggle the [Drawer][DevtoolsCustomizeIndexDrawer] | `Escape` | `Escape` |  
+| Actualisation normale | `F5` ou `Control`+`R` | `Command`+`R` |  
+| Actualisation en dur | `Control`+`F5` ou `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
+| Recherchez du texte dans le panneau actuel.  Non pris en charge dans **les outils Audits,** **Application**et **Sécurité** | `Control`+`F` | `Command`+`F` |  
+| Ouvre **l’onglet Recherche** dans le [caisse,][DevtoolsCustomizeIndexDrawer]ce qui vous permet de rechercher du texte sur toutes les ressources chargées. | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
+| Ouvrir un fichier dans le **panneau Sources** | `Control`+`O` ou `Control`+`P` | `Command`+`O` ou `Command`+`P` |  
+| Zoom avant | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Zoom arrière | `Control`+`-` | `Command`+`-` |  
 | Restaurer le niveau de zoom par défaut | `Control`+`0` | `Command`+`0` |  
-| Exécution d’un extrait | Sélectionnez `Control` + `O` cette option pour ouvrir le [menu de commandes][DevtoolsCommandMenuIndex], tapez `!` suivi du nom du script, puis sélectionnez `Enter` | Sélectionnez `Command` + `O` cette option pour ouvrir le [menu de commandes][DevtoolsCommandMenuIndex], tapez `!` suivi du nom du script, puis sélectionnez `Enter` |  
+| Exécuter l’extrait de code | Sélectionnez `Control` + `O` pour ouvrir le [menu Commande][DevtoolsCommandMenuIndex], `!` tapez suivi du nom du script, puis sélectionnez `Enter` | Sélectionnez `Command` + `O` pour ouvrir le [menu Commande][DevtoolsCommandMenuIndex], `!` tapez suivi du nom du script, puis sélectionnez `Enter` |  
 
 <!-- TODO: make a bug about this UIPlacement link being ambiguous.  -->  
 <!-- TODO: Link "Inspect Element Mode" when a good section exists.  -->  
 
-## Raccourcis clavier du panneau éléments  
+## <a name="elements-tool-keyboard-shortcuts"></a>Raccourcis clavier de l’outil Éléments  
 
-| Action | Windows \/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Annuler la modification | `Control`+`Z` | `Command`+`Z` |  
-| Rétablir la modification | `Control`+`Y` | `Command`+`Shift`+`Z` |  
-| Sélectionner l’élément au-dessus/en dessous de l’élément actuellement sélectionné | `Up Arrow` / `Down Arrow` | `Up Arrow` / `Down Arrow` |  
-| Développez le nœud actuellement sélectionné.  Si le nœud est déjà développé, ce raccourci sélectionne l’élément situé en dessous | `Right Arrow` | `Right Arrow` |  
-| Réduire le nœud actuellement sélectionné.  Si le nœud est déjà réduit, ce raccourci sélectionne l’élément situé au-dessus | `Left Arrow` | `Left Arrow` |  
-| Développer ou réduire le nœud actuellement sélectionné et tous les enfants | `Control` + `Alt` Puis sélectionnez l’icône en **** regard du nom de l’élément | `Option`Puis sélectionnez l’icône en **** regard du nom de l’élément |  
-| Activer/désactiver le mode **modification des attributs** sur l’élément actuellement sélectionné | `Enter` | `Enter` |  
-| Sélectionner l’attribut suivant/précédent après avoir entré le mode **modifier les attributs** | `Tab` / `Shift`+`Tab` | `Tab` / `Shift`+`Tab` |  
+| Redo change | `Control`+`Y` | `Command`+`Shift`+`Z` |  
+| Sélectionnez l’élément au-dessus/en dessous de l’élément actuellement sélectionné | `Up Arrow` / `Down Arrow` | `Up Arrow` / `Down Arrow` |  
+| Développez le nœud actuellement sélectionné.  Si le nœud est déjà développé, ce raccourci sélectionne l’élément en dessous | `Right Arrow` | `Right Arrow` |  
+| Réduire le nœud actuellement sélectionné.  Si le nœud est déjà réduire, ce raccourci sélectionne l’élément au-dessus | `Left Arrow` | `Left Arrow` |  
+| Développer ou réduire le nœud actuellement sélectionné et tous les enfants | Maintenez le nom de l’élément en attente, puis `Control` + `Alt` choisissez l’icône de flèche en haut du nom de l’élément. **** | Maintenez le nom de l’élément en attente, puis `Option` choisissez l’icône de flèche en haut du nom de l’élément. **** |  
+| Basculez le mode **Modifier les attributs** sur l’élément actuellement sélectionné | `Enter` | `Enter` |  
+| Sélectionnez l’attribut suivant/précédent après avoir entré le mode **Modifier les attributs** | `Tab` / `Shift`+`Tab` | `Tab` / `Shift`+`Tab` |  
 | Masquer l’élément actuellement sélectionné | `H` | `H` |  
-| Basculer la **modification en mode HTML** sur l’élément actuellement sélectionné | `Function`+`F2` | `F2` |  
+| Toggle **Edit as HTML** mode on the currently selected element | `Function`+`F2` | `F2` |  
 
-### Raccourcis clavier du volet styles  
+### <a name="styles-panel-keyboard-shortcuts"></a>Raccourcis clavier du panneau Styles  
 
-| Action | Windows \/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Accéder à la ligne où une valeur de propriété est déclarée | Mettre `Control` en attente, puis sélectionner la valeur de la propriété | Mettre `Command` en attente, puis sélectionner la valeur de la propriété |  
-| Parcourir les représentations RBGA, HSLA et Hex d’une valeur de couleur | Mettre `Shift` en attente, puis sélectionner la zone **Aperçu** de la couleur en regard de la valeur | Mettre `Shift` en attente, puis sélectionner la zone **Aperçu** de la couleur en regard de la valeur |  
-| Sélectionner la propriété ou la valeur suivante/précédente | Choisissez un nom de propriété ou une valeur, puis sélectionnez `Tab` / `Shift`+`Tab` | Choisissez un nom de propriété ou une valeur, puis sélectionnez `Tab` / `Shift`+`Tab` |  
-| Incrémenter/décrémenter une valeur de propriété de 0,1 | Choisissez une valeur, puis sélectionnez `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | Sélectionnez une valeur, puis sélectionnez `Option` + `Up Arrow` /option + flèche vers le bas |  
+| Accéder à la ligne dans laquelle une valeur de propriété est déclarée | Conserver, `Control` puis sélectionner la valeur de la propriété | Conserver, `Command` puis sélectionner la valeur de la propriété |  
+| Faire passer en cycle les représentations RBGA, HSLA et Hex d’une valeur de couleur | Mettre `Shift` en attente, puis choisir la **zone d’aperçu** de couleur en de côté de la valeur | Mettre `Shift` en attente, puis choisir la **zone d’aperçu** de couleur en de côté de la valeur |  
+| Sélectionnez la propriété ou la valeur suivante/précédente | Choisissez un nom ou une valeur de propriété, puis sélectionnez `Tab` / `Shift`+`Tab` | Choisissez un nom ou une valeur de propriété, puis sélectionnez `Tab` / `Shift`+`Tab` |  
+| Incrémenter/décrémenter une valeur de propriété de 0,1 | Choisissez une valeur, puis sélectionnez `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | Choisissez une valeur, puis `Option` + `Up Arrow` sélectionnez /Option+Flèche vers le bas |  
 | Incrémenter/décrémenter une valeur de propriété de 1 | Choisissez une valeur, puis sélectionnez `Up Arrow` / `Down Arrow` | Choisissez une valeur, puis sélectionnez `Up Arrow` / `Down Arrow` |  
 | Incrémenter/décrémenter une valeur de propriété de 10 | Choisissez une valeur, puis sélectionnez `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Choisissez une valeur, puis sélectionnez `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |  
 | Incrémenter/décrémenter une valeur de propriété de 100 | Choisissez une valeur, puis sélectionnez `Control`+`Up Arrow` / `Control`+`Down Arrow` | Choisissez une valeur, puis sélectionnez `Command`+`Up Arrow` / `Command`+`Down Arrow` |  
 
-## Raccourcis clavier du panneau sources  
+## <a name="sources-tool-keyboard-shortcuts"></a>Raccourcis clavier de l’outil Sources  
 
-| Action | Windows \/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Suspendre le script Runtime \ (s’il est en cours d’exécution \) ou reprendre \ (si vous êtes en pause) | `F8` ou `Control`+`\` | `F8` ou `Command`+`\` |  
-| Étape au fil de l’appel de fonction suivante | `F10` ou `Control`+`'` | `F10` ou `Command`+`'` |  
-| Passer à l’appel de fonction suivante | `F11` ou `Control`+`;` | `F11` ou `Command`+`;` |  
+| Suspendre le runtime du script \(s’il est en cours d’exécution\) ou reprendre \(si actuellement suspendu\) | `F8` ou `Control`+`\` | `F8` ou `Command`+`\` |  
+| Pas à pas sur l’appel de fonction suivant | `F10` ou `Control`+`'` | `F10` ou `Command`+`'` |  
+| Pas à pas dans l’appel de fonction suivant | `F11` ou `Control`+`;` | `F11` ou `Command`+`;` |  
 | Sortir de la fonction actuelle | `Shift`+`F11` ou `Control`+`Shift`+`;` | `Shift`+`F11` ou `Command`+`Shift`+`;` |  
-| Accéder à une [ligne de code spécifique en pause][DevtoolsJavascriptBreakpointsLOC] | `Control`Puis sélectionnez la ligne de code | `Command`Puis sélectionnez la ligne de code |  
-| Sélectionner l’image d’appel ci-dessous ou au-dessus de l’image actuellement sélectionnée | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |  
+| Continuer [jusqu’à une ligne de code spécifique en pause][DevtoolsJavascriptBreakpointsLOC] | Conserver, `Control` puis choisir la ligne de code | Conserver, `Command` puis choisir la ligne de code |  
+| Sélectionnez l’image d’appel sous/au-dessus de l’image actuellement sélectionnée | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |  
 | Enregistrer les modifications apportées aux modifications locales | `Control`+`S` | `Command`+`S` |  
 | Enregistrer toutes les modifications | `Control`+`Alt`+`S` | `Command`+`Option`+`S` |  
-| Atteindre le trait | `Control`+`G` | `Control`+`G` |  
-| Atteindre un numéro de ligne du fichier actuellement ouvert | Sélectionnez `Control` + `O` pour ouvrir le [menu de commandes][DevtoolsCommandMenuIndex], tapez `:` suivi du numéro de ligne, puis sélectionnez `Enter` | Sélectionnez `Command` + `O` pour ouvrir le [menu de commandes][DevtoolsCommandMenuIndex], tapez `:` suivi du numéro de ligne, puis sélectionnez `Enter` |  
-| Accéder à une colonne du fichier actuellement ouvert \ (par exemple, ligne 5, colonne 9 \) | Sélectionnez `Control` + `O` cette option pour ouvrir le [menu de commandes][DevtoolsCommandMenuIndex], tapez `:` , puis le numéro de ligne, un autre `:` , puis le numéro de la colonne, puis sélectionnez `Enter` | Sélectionnez `Command` + `O` cette option pour ouvrir le [menu de commandes][DevtoolsCommandMenuIndex], tapez `:` , puis le numéro de ligne, un autre `:` , puis le numéro de la colonne, puis sélectionnez `Enter` |  
-| Accédez à une déclaration de fonction, si le fichier actuel est du code HTML ou un script.  <br />  Accédez à un ensemble de règles si le fichier actuel est une feuille de style.  | Sélectionnez `Control` + `Shift` + `O` , puis entrez le nom de l’ensemble de déclarations/règles ou sélectionnez-le dans la liste des options. | Sélectionnez `Command` + `Shift` + `O` , puis entrez le nom de l’ensemble de déclarations/règles ou sélectionnez-le dans la liste des options. |  
+| Accéder à la ligne | `Control`+`G` | `Control`+`G` |  
+| Passer à un numéro de ligne du fichier actuellement ouvert | Sélectionnez `Control` + `O` pour ouvrir le [menu Commande][DevtoolsCommandMenuIndex], `:` tapez suivi du numéro de ligne, puis sélectionnez `Enter` | Sélectionnez `Command` + `O` pour ouvrir le [menu Commande][DevtoolsCommandMenuIndex], `:` tapez suivi du numéro de ligne, puis sélectionnez `Enter` |  
+| Aller à une colonne du fichier actuellement ouvert \(par exemple, ligne 5, colonne 9\) | Sélectionnez `Control` + `O` pour ouvrir le [menu Commande,][DevtoolsCommandMenuIndex]tapez, puis le numéro de ligne, puis un autre, puis le numéro `:` de `:` colonne, puis sélectionnez `Enter` | Sélectionnez `Command` + `O` pour ouvrir le [menu Commande,][DevtoolsCommandMenuIndex]tapez, puis le numéro de ligne, puis un autre, puis le numéro `:` de `:` colonne, puis sélectionnez `Enter` |  
+| Accédez à une déclaration de fonction, si le fichier actuel est html ou un script.  <br />  Accédez à un ensemble de règles, si le fichier actuel est une feuille de style.  | Sélectionnez, puis tapez le nom de la déclaration/de l’ensemble de règles, ou `Control` + `Shift` + `O` sélectionnez-le dans la liste des options | Sélectionnez, puis tapez le nom de la déclaration/de l’ensemble de règles, ou `Command` + `Shift` + `O` sélectionnez-le dans la liste des options |  
 | Fermer l’onglet actif | `Alt`+`W` | `Option`+`W` |  
 
-### Raccourcis clavier de l’éditeur de code  
+### <a name="code-editor-keyboard-shortcuts"></a>Raccourcis clavier de l’éditeur de code  
 
-| Action | Windows \/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Supprimer tous les caractères du dernier mot, jusqu’au curseur | `Control`+`Delete` | `Option`+`Delete` |  
-| Ajouter ou supprimer un [point d’arrêt de ligne de code][DevtoolsJavascriptBreakpointsLOC] | Focalisez le curseur sur la ligne, puis sélectionnez `Control`+`B` | Focalisez le curseur sur la ligne, puis sélectionnez `Command`+`B` |  
-| Atteindre le crochet correspondant | `Control`+`M` | `Control`+`M` |  
-| Basculer entre les commentaires d’une ligne.  Si plusieurs lignes sont sélectionnées, DevTools ajouter un commentaire au début de chaque ligne. | `Control`+`/` | `Command`+`/` |  
-| Sélectionner/désélectionner l’occurrence suivante du mot sur lequel se trouve le curseur.  Chaque occurrence est mise en surbrillance en même temps | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
+| Ajouter ou supprimer un [point d’arrêt de ligne de code][DevtoolsJavascriptBreakpointsLOC] | Concentrez votre curseur sur la ligne, puis sélectionnez `Control`+`B` | Concentrez votre curseur sur la ligne, puis sélectionnez `Command`+`B` |  
+| Accéder à un crochet correspondant | `Control`+`M` | `Control`+`M` |  
+| Basculez le commentaire d’une seule ligne.  Si plusieurs lignes sont sélectionnées, DevTools ajoute un commentaire au début de chaque ligne | `Control`+`/` | `Command`+`/` |  
+| Activer ou désactiver l’occurrence suivante du mot sur le curseur.  Chaque occurrence est mise en surbrillance simultanément | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
 
-## Raccourcis clavier du panneau performances  
+## <a name="performance-tool-keyboard-shortcuts"></a>Raccourcis clavier de l’outil de performance  
 
-| Action | Windows \/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Démarrer/arrêter l’enregistrement | `Control`+`E` | `Command`+`E` |  
-| Enregistrer un enregistrement | `Control`+`S` | `Command`+`S` |  
-| Charger un enregistrement | `Control`+`O` | `Command`+`O` |  
+| Enregistrer l’enregistrement | `Control`+`S` | `Command`+`S` |  
+| Enregistrement du chargement | `Control`+`O` | `Command`+`O` |  
 
-## Raccourcis clavier du panneau mémoire  
+## <a name="memory-tool-keyboard-shortcuts"></a>Raccourcis clavier de l’outil mémoire  
 
-| Action | Windows \/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Démarrer/arrêter l’enregistrement | `Control`+`E` | `Command`+`E` |  
 
-## Raccourcis clavier de l’écran de la console  
+## <a name="console-tool-keyboard-shortcuts"></a>Raccourcis clavier de l’outil console  
 
-| Action | Windows \/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Accepter la suggestion de saisie semi-automatique | `Right Arrow` ou `Tab` | `Right Arrow` ou `Tab` |  
-| Rejeter la suggestion de saisie semi-automatique | `Escape` | `Escape` |  
-| Instruction Get Previous | `Up Arrow` | `Up Arrow` |  
-| Instruction Get suivante | `Down Arrow` | `Down Arrow` |  
-| Mettre le focus sur la **console** | `Control`+ `` ` `` | `Control`+`` ` `` |  
-| Effacement de la **console** | `Control`+`L` | `Command`+`K` ou `Option`+`L` |  
-| Forcer une entrée multiligne  Ce raccourci est essentiellement inutile, car DevTools doit détecter les scénarios multilignes par défaut. | `Shift`+`Enter` | `Command`+`Return` |  
+| Accepter la suggestion de mise encomplet automatique | `Right Arrow` or `Tab` | `Right Arrow` or `Tab` |  
+| Rejeter la suggestion de mise encomplet automatique | `Escape` | `Escape` |  
+| Obtenir l’instruction précédente | `Up Arrow` | `Up Arrow` |  
+| Obtenir l’instruction suivante | `Down Arrow` | `Down Arrow` |  
+| Focus sur la **console** | `Control`+ `` ` `` | `Control`+`` ` `` |  
+| Effacer la **console** | `Control`+`L` | `Command`+`K` ou `Option`+`L` |  
+| Forcer une entrée multi-lignes.  Ce raccourci est principalement inutile, car DevTools doit détecter les scénarios multi-lignes par défaut | `Shift`+`Enter` | `Command`+`Return` |  
 | Exécution | `Enter` | `Return` |  
-| Développer toutes les sous-propriétés d’un objet connecté à la console | Maintenez la touche enfoncée `Alt` , puis sélectionnez **développer** \ ( ![ expand ][ImageExpandIcon] \) | Maintenez la touche enfoncée `Alt` , puis sélectionnez **développer** \ ( ![ expand ][ImageExpandIcon] \) |  
+| Développer toutes les sous-catégories d’un objet qui sont enregistrées dans la console | Hold, `Alt` then choose **Expand** \( ![ Expand ][ImageExpandIcon] \) | Hold, `Alt` then choose **Expand** \( ![ Expand ][ImageExpandIcon] \) |  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -164,11 +164,11 @@ Les raccourcis clavier suivants sont disponibles dans la plupart des panneaux de
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes à l’aide du menu de commandes de Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Tiroir-personnaliser Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Changer le positionnement de DevTools-personnaliser Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes avec le menu de commandes Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Caisse : personnaliser les paramètres DevTools de Microsoft Edge | Documents Microsoft"  
+[DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Modifier le placement de DevTools : personnaliser l'| Microsoft Edge DevTools Documents Microsoft"  
 [DevtoolsDeviceModeIndex]: ../device-mode/index.md "Émuler des appareils mobiles dans Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "Points d’arrêt de la ligne de code: comment mettre en pause votre code avec des points d’arrêt dans Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "Points d’arrêt de ligne de code : comment suspendre votre code avec des points d’arrêt dans Microsoft Edge DevTools | Documents Microsoft"  
 
 <!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->  
 

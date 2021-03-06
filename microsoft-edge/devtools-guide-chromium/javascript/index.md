@@ -1,18 +1,18 @@
 ---
 description: Découvrez comment utiliser Microsoft Edge DevTools pour rechercher et corriger les bogues JavaScript.
-title: Commencer à utiliser le débogage de JavaScript dans Microsoft Edge DevTools
+title: Commencer à déboguer JavaScript dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/09/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: b036fc87149d13446ab1bc05afc8fc8631d27c8d
-ms.sourcegitcommit: e737277744dd25a7585c113eef22a2aa4d4c167f
+ms.openlocfilehash: e146c6708f097b1ea8dc82f08be58f5aa5e52d1f
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "11325946"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398440"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,11 +27,11 @@ ms.locfileid: "11325946"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-# Commencer à déboguer JavaScript dans Microsoft Edge DevTools  
+# <a name="get-started-with-debugging-javascript-in-microsoft-edge-devtools"></a>Commencer à déboguer JavaScript dans Microsoft Edge DevTools  
 
 Cet article vous apprend le flux de travail de base pour le débogage d’un problème JavaScript dans DevTools.  
 
-## Étape 1 : Reproduire le bogue  
+## <a name="step-1-reproduce-the-bug"></a>Étape 1 : Reproduire le bogue  
 
 La recherche d’une série d’actions qui reproduisent systématiquement un bogue est toujours la première étape du débogage.  
 
@@ -47,33 +47,33 @@ La recherche d’une série d’actions qui reproduisent systématiquement un bo
        `5 + 1` résultats `51` dans , mais doit être `6`  
     :::image-end:::  
     
-## Étape 2 : Familiarisez-vous avec l’interface utilisateur du panneau Sources  
+## <a name="step-2-get-familiar-with-the-sources-tool-ui"></a>Étape 2 : Familiarisez-vous avec l’interface utilisateur de l’outil Sources  
 
-DevTools fournit de nombreux outils différents pour différentes tâches.  Les différentes tâches incluent la modification du CSS, le profilage des performances de chargement de page et la surveillance des demandes réseau.  Le **panneau Sources** est l’endroit où vous déboguer JavaScript.  
+DevTools fournit de nombreux outils différents pour différentes tâches.  Les différentes tâches incluent la modification du CSS, le profilage des performances de chargement de page et la surveillance des demandes réseau.  **L’outil Sources** vous permet de déboguer JavaScript.  
 
-1.  Ouvrez DevTools en appuyant sur `Control` + `Shift` + `J` \(Windows, Linux\) ou `Command` + `Option` + `J` \(macOS\).  Ce raccourci ouvre le panneau **Console.**  
+1.  Pour ouvrir **l’outil Console** dans DevTools, sélectionnez `Control` + `Shift` + `J` \(Windows, Linux\) ou `Command` + `Option` + `J` \(macOS\).  
     
-    :::image type="complex" source="../media/javascript-console-empty.msft.png" alt-text="Panneau console" lightbox="../media/javascript-console-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-console-empty.msft.png" alt-text="L’outil Console" lightbox="../media/javascript-console-empty.msft.png":::
        **L’outil Console**  
     :::image-end:::  
     
 1.  Choisissez **l’outil Sources.**  
     
-    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="Panneau Sources" lightbox="../media/javascript-sources-sections.msft.png":::
-       Panneau **Sources**  
+    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="Outil Sources" lightbox="../media/javascript-sources-sections.msft.png":::
+       Outil **Sources**  
     :::image-end:::  
     
-**L’interface utilisateur** du panneau Sources est en trois parties.  
+**L’interface utilisateur** de l’outil Sources est en trois parties.  
 
-:::image type="complex" source="../media/javascript-sources-sections-annotated.msft.png" alt-text="Les 3 parties de l’interface utilisateur du panneau Sources" lightbox="../media/javascript-sources-sections-annotated.msft.png":::
-   Les 3 parties de l’interface utilisateur **du panneau Sources**  
+:::image type="complex" source="../media/javascript-sources-sections-annotated.msft.png" alt-text="Les 3 parties de l’interface utilisateur de l’outil Sources" lightbox="../media/javascript-sources-sections-annotated.msft.png":::
+   Les 3 parties de l’interface utilisateur de l’outil **Sources**  
 :::image-end:::  
 
 1.  Volet **Navigateur de** fichiers \(Section 1 dans la figure précédente\).  Chaque fichier demandé par la page web est répertorié ici.  
-1.  Volet **Éditeur** de code \(Section 2 dans la figure précédente\).  Après avoir sélectionné un fichier dans **le** volet Navigateur de fichiers, le contenu de ce fichier s’affiche ici.  
-1.  Volet **Debugging JavaScript** \(Section 3 dans la figure précédente\).  Divers outils permettant d’inspecter javaScript pour la page web.  Si votre fenêtre DevTools est large, ce volet s’affiche à droite du volet Éditeur **de** code.  
+1.  Panneau **Éditeur de** code \(Section 2 dans la figure précédente\).  Après avoir sélectionné un fichier dans **le** volet Navigateur de fichiers, le contenu de ce fichier s’affiche ici.  
+1.  Panneau **de débogage JavaScript** \(Section 3 dans la figure précédente\).  Divers outils permettant d’inspecter javaScript pour la page web.  Si votre fenêtre DevTools est large, ce volet s’affiche à droite du volet Éditeur **de** code.  
     
-## Étape 3 : Suspendre le code avec un point d’arrêt  
+## <a name="step-3-pause-the-code-with-a-breakpoint"></a>Étape 3 : Suspendre le code avec un point d’arrêt  
 
 Une méthode courante pour le débogage de ce type de problème consiste à insérer plusieurs instructions dans le code, puis à inspecter les valeurs à mesure que `console.log()` le script s’exécute.  Par exemple:  
 
@@ -89,10 +89,10 @@ function updateLabel() {
 }
 ```  
 
-La méthode peut faire le travail, mais les points d’arrêt `console.log()` le sont plus rapidement. ****  Un point d’arrêt vous permet de suspendre votre code au milieu de l’runtime et d’examiner toutes les valeurs à ce moment-là.  Les points d’arrêt ont quelques avantages par rapport à la `console.log()` méthode :  
+La méthode peut faire le travail, mais les points d’arrêt `console.log()` le sont plus rapidement. ****  Un point d’arrêt vous permet de suspendre votre code au milieu de l’runtime et d’examiner toutes les valeurs à ce moment-là.  Les points d’arrêt ont les avantages suivants par rapport à la `console.log()` méthode.  
 
 *   Avec , vous devez ouvrir manuellement le code source, trouver le code approprié, insérer les instructions, puis actualiser la page web pour afficher les messages dans `console.log()` `console.log()` la **console**.  Avec les points d’arrêt, vous pouvez suspendre le code pertinent sans même savoir comment le code est structuré.  
-*   Dans vos `console.log()` instructions, vous devez spécifier explicitement chaque valeur que vous souhaitez inspecter.  Avec les points d’arrêt, DevTools affiche les valeurs de toutes les variables à ce moment-là.  Parfois, les variables qui affectent votre code sont masquées et obscurcies.  
+*   Dans vos `console.log()` instructions, vous devez spécifier explicitement chaque valeur que vous souhaitez inspecter.  Avec les points d’arrêt, DevTools vous montre les valeurs de toutes les variables à ce moment-là.  Parfois, les variables qui affectent votre code sont masquées et obscurcies.  
     
 En bref, les points d’arrêt peuvent vous aider à trouver et corriger les bogues plus rapidement que la `console.log()` méthode.  
 
@@ -106,22 +106,22 @@ Si vous revenir en arrière et réfléchissez au fonctionnement de l’applicati
        Sélectionnez la case à cocher en regard de **cliquer**  
     :::image-end:::  
     
-1.  De retour à la démonstration, choisissez de nouveau **Ajouter le numéro 1 et le numéro 2.**  DevTools interrompt la démonstration et met en évidence une ligne de code dans le **panneau Sources.**  DevTools doit s’interrompre sur la ligne 16 dans `get-started.js` .  
+1.  De retour à la démonstration, choisissez de nouveau **Ajouter le numéro 1 et le numéro 2.**  DevTools interrompt la démonstration et met en évidence une ligne de code dans **l’outil Sources.**  DevTools doit s’interrompre sur la ligne 16 dans `get-started.js` .  
     
     ```javascript
     if (inputsAreEmpty()) {
     ```  
     
-    Si vous faites une pause sur une autre ligne de code, appuyez sur Reprendre l’exécution du **script** \( Reprendre l’exécution du script \) jusqu’à ce que vous arrêtiez ![ sur la ligne ][ImageResumeIcon] correcte.  
+    Si vous faites une pause sur une autre ligne de code, choisissez Reprendre l’exécution du **script** \( Reprendre l’exécution du script \) jusqu’à ce que vous arrêtiez ![ sur la ligne ][ImageResumeIcon] correcte.  
     
     > [!NOTE]
-    > Si vous avez suspendu sur une autre ligne, vous avez une extension de navigateur qui inscrit un listener d’événement sur chaque `click` page web que vous visitez.  Vous avez été suspendu dans `click` l’écoute de l’extension.  Si vous utilisez le mode InPrivate pour parcourir en privé **,** ce qui désactive toutes les extensions, vous pouvez voir que vous mettez en pause la ligne de code souhaitée à chaque fois.  
+    > Si vous avez suspendu sur une autre ligne, vous avez une extension de navigateur qui inscrit un listener d’événement sur chaque `click` page web que vous visitez.  Vous êtes suspendu dans `click` l’écoute de l’extension.  Si vous utilisez le mode InPrivate pour parcourir en privé **,** ce qui désactive toutes les extensions, vous pouvez voir que vous mettez en pause la ligne de code souhaitée à chaque fois.  
 
 <!--todo: add inprivate section when available -->  
 
 **Les points d’arrêt de l’écoute** d’événements ne sont qu’un des nombreux types de points d’arrêt disponibles dans DevTools.  Mémorisez tous les différents types pour vous aider à déboguer les différents scénarios aussi rapidement que possible.  <!--See [Pause Your Code With Breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
 
-## Étape 4 : Procédure pas à pas dans le code  
+## <a name="step-4-step-through-the-code"></a>Étape 4 : Procédure pas à pas dans le code  
 
 Une cause courante de bogues est lorsqu’un script s’exécute dans un mauvais ordre.  La procédure pas à pas de votre code vous permet de parcourir l’runtime de votre code.  Vous pouvez parcourir une ligne à la fois pour déterminer exactement où votre code s’exécute dans un ordre différent de celui prévu.  Essayez maintenant :  
 
@@ -134,11 +134,11 @@ Une cause courante de bogues est lorsqu’un script s’exécute dans un mauvais
     > [!NOTE]
     > DevTools ignore quelques lignes de code.  En effet, étant donné que la qualité est false, le `inputsAreEmpty()` bloc de code de l’instruction ne `if` s’exécute pas.  
     
-1.  Dans le panneau **Sources** de DevTools, sélectionnez Pas à pas dans l’appel de fonction suivante **\(** Pas à pas dans l’appel de fonction suivant \) pour exécuter la fonction, ligne par ![ ][ImageIntoIcon] `updateLabel()` ligne.  
+1.  Dans l’outil **Sources** de DevTools, sélectionnez Pas à pas dans l’appel de fonction suivante **\(** Pas à pas dans l’appel de fonction suivant \) pour exécuter la fonction, une ligne à la ![ ][ImageIntoIcon] `updateLabel()` fois.  
     
-Passer en revue une ligne à la fois est l’idée de base qui consiste à passer en revue le code pas à pas.  Si vous regardez le code dans , vous voyez que le bogue se trouve probablement quelque `get-started.js` part dans la `updateLabel()` fonction.  Au lieu d’aller pas à pas dans chaque ligne de code, vous pouvez utiliser un autre type de point d’arrêt pour suspendre le code plus près de l’emplacement probable du bogue.  
+Passer en revue une ligne à la fois est l’idée de base qui consiste à passer en revue le code pas à pas.  Si vous examinez le code `get-started.js` dans , le bogue se trouve probablement quelque part dans la `updateLabel()` fonction.  Au lieu d’aller pas à pas dans chaque ligne de code, vous pouvez utiliser un autre type de point d’arrêt pour suspendre le code plus près de l’emplacement probable du bogue.  
 
-## Étape 5 : Définir un point d’arrêt de ligne de code  
+## <a name="step-5-set-a-line-of-code-breakpoint"></a>Étape 5 : Définir un point d’arrêt de ligne de code  
 
 Les points d’arrêt de ligne de code sont le type de point d’arrêt le plus courant.  Lorsque vous arrivez à la ligne de code spécifique que vous souhaitez suspendre, utilisez un point d’arrêt de ligne de code.  
 
@@ -148,30 +148,30 @@ Les points d’arrêt de ligne de code sont le type de point d’arrêt le plus 
     label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;
     ```  
     
-1.  À gauche, le numéro de cette ligne de code particulière s’affiche sous la couleur **34**.  Choisissez la **ligne 34**.  DevTools place une icône rouge à gauche de **34**.  L’icône rouge indique qu’un point d’arrêt de ligne de code se trouve sur cette ligne.  DevTools s’interrompt toujours avant l’utilisation de cette ligne de code.  
-1.  Choose **Resume script execution** \( Resume script execution ![ ][ImageResumeIcon] \).  Le script continue d’être en cours d’exécution jusqu’à atteindre la ligne 33.  Sur les lignes 31, 32 et 33, DevTools imprime les valeurs de , et à droite du point-virgule sur `addend1` `addend2` chaque `sum` ligne.  
+1.  À gauche, le numéro de cette ligne de code particulière s’affiche sous la couleur **34**.  Choisissez la **ligne 34**.  DevTools affiche une icône rouge à gauche de **34**.  L’icône rouge indique qu’un point d’arrêt de ligne de code se trouve sur cette ligne.  DevTools s’interrompt toujours avant l’utilisation de cette ligne de code.  
+1.  Choose **Resume script execution** \( Resume script execution ![ ][ImageResumeIcon] \).  Le script continue à s’exécuter jusqu’à atteindre la ligne 33.  Sur les lignes 31, 32 et 33, DevTools imprime les valeurs de , et à droite du point-virgule sur `addend1` `addend2` chaque `sum` ligne.  
     
     :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools s’interrompt sur le point d’arrêt de ligne de code sur la ligne 34" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
        DevTools s’interrompt sur le point d’arrêt de ligne de code sur la ligne 34  
     :::image-end:::  
     
-## Étape 6 : Vérifier les valeurs des variables  
+## <a name="step-6-check-variable-values"></a>Étape 6 : Vérifier les valeurs des variables  
 
 Les valeurs `addend1` de , `addend2` et `sum` semblent suspectes.  Les valeurs sont wrapped entre guillemets.  Les guillemets signifient que la valeur est une chaîne, ce qui constitue une bonne hypothèse pour expliquer la cause du bogue.  Recueillez plus d’informations sur la situation.  DevTools fournit de nombreux outils pour examiner les valeurs des variables.  
 
-### Méthode 1 : volet d’étendue  
+### <a name="method-1-the-scope-panel"></a>Méthode 1 : panneau d’étendue  
 
-Si vous faites une pause **** sur une ligne de code, le volet Étendue affiche les variables locales et globales actuellement définies, ainsi que la valeur de chaque variable.  Il affiche également les variables de fermeture, le cas échéant.  Double-cliquez sur une valeur de variable pour la modifier.  Si vous ne faites pas de pause sur une ligne de code, **le** volet d’étendue est vide.  
+Si vous faites une pause **** sur une ligne de code, le panneau d’étendue affiche les variables locales et globales actuellement définies, ainsi que la valeur de chaque variable.  Il affiche également les variables de fermeture, le cas échéant.  Double-cliquez sur une valeur de variable pour la modifier.  Si vous ne mettez pas en pause une ligne de code, le panneau **d’étendue** est vide.  
 
 :::image type="complex" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="Volet d’étendue" lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
    Volet **d’étendue**  
 :::image-end:::  
 
-### Méthode 2 : Expressions d’observation  
+### <a name="method-2-watch-expressions"></a>Méthode 2 : Expressions d’observation  
 
-Le **volet Expressions** observateurs vous permet de surveiller les valeurs des variables au fil du temps.  Comme son nom l’indique, les **expressions** d’observation ne sont pas limitées aux variables.  Vous pouvez stocker n’importe quelle expression JavaScript valide dans une **expression d’observation.**  Essayez maintenant.  
+Le **panneau Expressions** observateurs vous permet de surveiller les valeurs des variables au fil du temps.  Comme son nom l’indique, les **expressions** d’observation ne sont pas limitées aux variables.  Vous pouvez stocker n’importe quelle expression JavaScript valide dans une **expression d’observation.**  Essayez maintenant.  
 
-1.  Choisissez le **volet** d’observation.  
+1.  Choisissez le **panneau De** surveillance.  
 1.  Choose **Add Expression** \( Add Expression ![ ][ImageAddIcon] \).  
 1.  Entrez `typeof sum`.  
 1.  Sélectionnez `Enter` .  DevTools affiche `typeof sum: "string"` .  La valeur à droite du deux-points est le résultat de votre Expression d’observation.  
@@ -179,25 +179,25 @@ Le **volet Expressions** observateurs vous permet de surveiller les valeurs des 
 > [!NOTE]
 > Dans le **volet Expression** de l’observation \(en bas à droite\) de la figure suivante, l’Expression `typeof sum` d’observation s’affiche.  Si votre fenêtre DevTools est grande, le volet **Expression** d’observation se trouve à droite au-dessus du volet Points d’arrêt de l’écoute d’événements. ****  
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="Volet d’expression d’observation" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
-   Volet **d’expression** d’observation  
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="Panneau Expression de l’observation" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
+   Panneau **Expression de l’observation**  
 :::image-end:::  
 
-Comme on le suspecte, `sum` est évalué en tant que chaîne, lorsqu’il doit s’agit d’un nombre.  Vous avez maintenant confirmé que le type de valeur est la cause du bogue.  
+Comme il est suspecté, `sum` est évalué en tant que chaîne, lorsqu’il doit s’agit d’un nombre.  Vous avez maintenant confirmé que le type de valeur est la cause du bogue.  
 
-### Méthode 3 : Console  
+### <a name="method-3-the-console"></a>Méthode 3 : Console  
 
 La **console** vous permet d’afficher les messages et vous pouvez également l’utiliser pour évaluer des `console.log()` instructions JavaScript arbitraires.  Pour le débogage, vous pouvez utiliser la **console** pour tester les correctifs potentiels pour les bogues.  Essayez maintenant.  
 
-1.  Si le caisse de la **console** est fermé, `Escape` sélectionnez-le pour l’ouvrir.  Le **panneau** console s’ouvre dans le panneau inférieur de la fenêtre DevTools.  
+1.  Si **l’outil Console** est fermé, `Escape` sélectionnez-le pour l’ouvrir.  **L’outil** Console s’ouvre dans le panneau inférieur de la fenêtre DevTools.  
 1.  Dans la **console,** tapez `parseInt(addend1) + parseInt(addend2)` .  L’instruction de l’outil est suspendue sur une ligne de code où `addend1` et se trouve dans `addend2` l’étendue.  
 1.  Sélectionnez `Enter` .  DevTools évalue l’instruction et imprime, ce qui est le résultat que vous attendez de `6` la démonstration.  
     
-    :::image type="complex" source="../media/javascript-sources-breakpoint-paused-console.msft.png" alt-text="Le caisse de la console, après avoir évalué parseInt(addend1) + parseInt(addend2)" lightbox="../media/javascript-sources-breakpoint-paused-console.msft.png":::
-       Le caisse **de** la console, après évaluation `parseInt(addend1) + parseInt(addend2)`  
+    :::image type="complex" source="../media/javascript-sources-breakpoint-paused-console.msft.png" alt-text="L’outil Console, après avoir évalué parseInt(addend1) + parseInt(addend2)" lightbox="../media/javascript-sources-breakpoint-paused-console.msft.png":::
+       **L’outil Console,** après évaluation `parseInt(addend1) + parseInt(addend2)`  
     :::image-end:::  
     
-## Étape 7 : Appliquer un correctif  
+## <a name="step-7-apply-a-fix"></a>Étape 7 : Appliquer un correctif  
 
 Si vous trouvez un correctif pour le bogue, essayez votre correctif en éditant le code et en réruisant la démonstration.  Vous pouvez modifier le code JavaScript directement dans l’interface utilisateur de DevTools et appliquer le correctif.  Essayez maintenant.  
 
@@ -210,7 +210,7 @@ Si vous trouvez un correctif pour le bogue, essayez votre correctif en éditant 
 > [!CAUTION]
 > Ce flux de travail applique uniquement un correctif au code en cours d’exécution dans votre navigateur.  Il ne corrige pas le code pour tous les utilisateurs qui visitent votre page web.  Pour ce faire, vous devez corriger le code qui se trouve sur vos serveurs.  
 
-## Étapes suivantes  
+## <a name="next-steps"></a>Étapes suivantes  
 
 Félicitations!  Vous savez maintenant comment utiliser microsoft Edge DevTools lors du débogage de JavaScript.  Les outils et méthodes que vous avez appris dans cet article peuvent vous faire gagner un nombre d’heures.  
 
@@ -220,11 +220,11 @@ Cet article vous a appris uniquement deux façons de définir des points d’arr
 *   Points d’arrêt sur les exceptions capturées ou non.  
 *   Points d’arrêt XHR déclenchés lorsque l’URL demandée correspond à une sous-stration que vous fournissez.  
     
-Pour plus d’informations sur le moment et la façon d’utiliser chaque type, accédez à [Suspendre votre code avec des points d’arrêt.][DevtoolsJavscriptBreakpoints]  
+Pour plus d’informations sur le moment et la façon d’utiliser chaque type, accédez à [Pause Your Code With Breakpoints][DevtoolsJavscriptBreakpoints].  
 
 Quelques contrôles de code pas à pas ne sont pas expliqués dans cet article.  Pour plus d’informations, [accédez à la ligne de code][DevtoolsJavascriptReferenceStepThroughCode]Pas à pas.  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

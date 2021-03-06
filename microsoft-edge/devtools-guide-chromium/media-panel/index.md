@@ -1,71 +1,85 @@
 ---
-description: Utilisez le volet média pour afficher des informations et déboguer les lecteurs multimédias par onglet de navigateur.
-title: Afficher et déboguer les informations sur les lecteurs multimédias
+description: Utilisez l’outil Multimédia pour afficher les informations et déboguer les joueurs multimédias par onglet de navigateur.
+title: Afficher et déboguer les informations des joueurs multimédias
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: e6259cf573b76df7e281527ad30360b8f473a165
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 7680faa13f65a2ea6f0a8b085316b5ed67bfdaba
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230949"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398405"
 ---
-# Afficher et déboguer les informations sur les lecteurs multimédias  
+<!-- Copyright Jecelyn Yeen
 
-Utilisez le panneau **multimédia** dans Microsoft Edge devtools pour afficher des informations et déboguer les lecteurs multimédias par onglet de navigateur.  
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
 
-## Ouvrir le panneau multimédia  
+       https://www.apache.org/licenses/LICENSE-2.0
 
-Le panneau **média** est l’emplacement principal de devtools pour l’examen du lecteur multimédia d’une page Web.
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
 
-1.  [Ouvrez devtools][DevtoolsGuideChromiumOpen].  
-1.  Pour ouvrir le panneau **média** , sélectionnez **personnaliser et contrôler devtools** `...`  >  **plus**de  >  **médias**.  
+# <a name="view-and-debug-media-players-information"></a>Afficher et déboguer les informations des joueurs multimédias  
+
+Utilisez **l’outil Media** dans Microsoft Edge DevTools pour afficher des informations et déboguer les joueurs multimédias par onglet de navigateur.  
+
+## <a name="open-the-media-tool"></a>Ouvrir l’outil Multimédia  
+
+**L’outil** Media est l’endroit principal dans DevTools pour l’inspection du lecteur multimédia d’une page web.
+
+1.  [Ouvrez DevTools][DevtoolsGuideChromiumOpen].  
+1.  Pour ouvrir le **panneau Média,** choisissez **Personnaliser et contrôler les outils DevTools** `...`  >  **More**  >  **Media**.  
     
     :::image type="complex" source="../media/media-panel-empty.msft.png" alt-text="Panneau multimédia" lightbox="../media/media-panel-empty.msft.png":::
-       Panneau **multimédia**  
+       **Panneau** multimédia  
     :::image-end:::  
     
-## Afficher les informations des lecteurs multimédias  
+## <a name="view-media-players-information"></a>Afficher les informations des joueurs multimédias  
 
-1.  Accédez à une page Web à l’aide d’un lecteur multimédia, tel que le page Web suivant.  
+1.  Accédez à une page web avec un lecteur multimédia, tel que la page web suivante.  
     
-    [Optimisation de la productivité grâce aux outils de développement Edge][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]  
+    [Optimisation de la productivité avec les outils de développement Edge][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]  
     
-1.  Dans le menu des **joueurs** , un lecteur multimédia est affiché.  
-1.  Sélectionnez le joueur.  L’onglet **Propriétés** affiche les propriétés du lecteur multimédia.  
+1.  Sous le menu **Joueurs,** un lecteur multimédia s’affiche.  
+1.  Choisissez le joueur.  Le **panneau Propriétés** affiche les propriétés du lecteur multimédia.  
     
-    :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Propriétés du média" lightbox="../media/media-panel-view.msft.png":::
-       Propriétés du média  
+    :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Propriétés multimédias" lightbox="../media/media-panel-view.msft.png":::
+       Propriétés multimédias  
     :::image-end:::  
     
-1.  Pour afficher tous les événements du lecteur multimédia, sélectionnez l’onglet **Events (événements** ).  
+1.  Pour afficher tous les événements du lecteur multimédia, choisissez le panneau **Événements.**  
     
     :::image type="complex" source="../media/media-panel-events.msft.png" alt-text="Événements multimédias" lightbox="../media/media-panel-events.msft.png":::
        Événements multimédias  
     :::image-end:::  
     
-1.  Pour afficher les journaux du message du lecteur multimédia, sélectionnez l’onglet **messages** .  Vous pouvez filtrer les messages par niveau de journal ou chaîne.  
+1.  Pour afficher les journaux des messages du lecteur multimédia, sélectionnez le **panneau Messages.**  Vous pouvez filtrer les messages par niveau de journal ou chaîne.  
     
     :::image type="complex" source="../media/media-panel-messages.msft.png" alt-text="Messages multimédias" lightbox="../media/media-panel-messages.msft.png":::
        Messages multimédias  
     :::image-end:::  
     
-1.  Dans l’onglet **chronologie** , la lecture multimédia et l’état de la mémoire tampon sont affichés en temps réel.  
+1.  Dans le **panneau Chronologie,** l’état de la lecture multimédia et de la mémoire tampon est affiché en direct.  
     
-    :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Barre de Planning multimédia" lightbox="../media/media-panel-timeline.msft.png":::
-       Barre de Planning multimédia  
+    :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Chronologie des médias" lightbox="../media/media-panel-timeline.msft.png":::
+       Chronologie des médias  
     :::image-end:::  
     
-### Débogage à distance  
+### <a name="remote-debugging"></a>Débogage à distance  
 
-Affichez les informations sur les lecteurs multimédias sur un appareil Android à partir de votre ordinateur Windows ou macOS.  
+Affichez les informations des joueurs multimédias sur un appareil Android à partir de votre ordinateur Windows ou macOS.  
 
-1.  Pour configurer le débogage à distance, accédez à la rubrique mise [en route des appareils Android de débogage à distance][DevtoolsGuideChromiumRemoteDebuggingIndex].  
-1.  Affichez les informations sur les lecteurs multimédias à distance.  
+1.  Pour configurer le débogage à distance, accédez à Commencer avec le [débogage à distance des appareils Android.][DevtoolsGuideChromiumRemoteDebuggingIndex]  
+1.  Afficher les informations des joueurs multimédias à distance.  
     
     <!-- TODO: recreate image using an Android device -->  
     <!--  
@@ -74,40 +88,40 @@ Affichez les informations sur les lecteurs multimédias sur un appareil Android 
     :::image-end:::  
     -->  
     
-## Masquer et afficher des lecteurs multimédias  
+## <a name="hide-and-show-media-players"></a>Masquer et afficher les joueurs multimédias  
 
-Vous pouvez parfois exécuter plusieurs lecteurs multimédias sur une page Web ou utiliser le même onglet de navigateur pour parcourir les différentes pages Web, chacune avec des lecteurs multimédias.
+Parfois, vous exécutez plusieurs lecteur multimédia sur une page web ou utilisez le même onglet de navigateur pour parcourir différentes pages web, chacune avec des lecteur multimédia.
 
-Il est possible que vous deviez masquer \ (ou afficher \) chaque lecteur multimédia pour faciliter le débogage.  
+Vous pouvez choisir de masquer \(ou afficher\) chaque lecteur multimédia pour une expérience de débogage plus facile.  
 
-1.  Naviguez jusqu’à différentes pages Web vidéo à l’aide de l’onglet de navigateur.  
-1.  Pour masquer les lecteurs multimédias, effectuez l’une des actions suivantes.  
-    *   Pour masquer un lecteur multimédia, pointez sur un lecteur multimédia, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \) et sélectionnez **masquer le joueur**.  
-    *   Pour masquer tous les autres lecteurs multimédias, pointez sur un lecteur multimédia, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \) et sélectionnez **masquer tous les autres**.  
+1.  Accédez à plusieurs pages web vidéo différentes à l’aide du même onglet de navigateur.  
+1.  Pour masquer les joueurs multimédias, effectuer l’une des actions suivantes.  
+    *   Pour masquer un lecteur multimédia, pointez sur un lecteur multimédia, ouvrez le menu contextuel \(clic droit\), puis choisissez **Masquer le lecteur.**  
+    *   Pour masquer tous les autres joueurs multimédias, pointez sur un lecteur multimédia, ouvrez le menu contextuel \(clic droit\), puis choisissez **Masquer tous les autres.**  
     
-    :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Masquer des lecteurs multimédias" lightbox="../media/media-panel-hide-show.msft.png":::
-       Masquer des lecteurs multimédias  
+    :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Masquer les joueurs multimédias" lightbox="../media/media-panel-hide-show.msft.png":::
+       Masquer les joueurs multimédias  
     :::image-end:::  
     
-## Exporter des informations sur le lecteur multimédia  
+## <a name="export-media-player-information"></a>Exporter les informations du lecteur multimédia  
 
-1.  Pour télécharger les informations du lecteur multimédia sous forme de fichier JSON, pointez sur un lecteur multimédia, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez **enregistrer les informations du joueur**.  
+1.  Pour télécharger les informations du lecteur multimédia en tant que fichier JSON, pointez sur un lecteur multimédia, ouvrez le menu contextuel \(clic droit\), puis choisissez Enregistrer les informations **du lecteur.**  
     
-    :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Exporter des informations sur le média" lightbox="../media/media-panel-save.msft.png":::
-       Exporter des informations sur le média  
+    :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Exporter des informations multimédias" lightbox="../media/media-panel-save.msft.png":::
+       Exporter des informations multimédias  
     :::image-end:::  
     
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Ouvrir Microsoft Edge (chrome) DevTools | Documents Microsoft"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Ouvrez Microsoft Edge (Chromium) DevTools | Documents Microsoft"  
 
-[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Commencer à utiliser le débogage à distance des appareils Android | Documents Microsoft"  
+[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Commencer à déboguer à distance les appareils Android | Documents Microsoft"  
 
-[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Optimisation de la productivité grâce aux outils de développement Edge | Bing Video"  
+[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Optimisation de la productivité avec les outils de développement Edge | Bing Video"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  

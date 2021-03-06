@@ -1,18 +1,18 @@
 ---
 description: Référence complète des fonctionnalités d’accessibilité dans Microsoft Edge DevTools.
-title: Référence sur l’accessibilité
+title: Référence d’accessibilité
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: de8f4bee6fef7725af9b97fb80ab45582dfa2286
-ms.sourcegitcommit: 99eee78698dc95b2a3fa638a5b063ef449899cda
+ms.openlocfilehash: e3fed1c4e53c69b7a6837f71c270c0bf2f65b7e2
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "11125313"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398335"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,165 +28,165 @@ ms.locfileid: "11125313"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Référence sur l’accessibilité  
+# <a name="accessibility-reference"></a>Référence d’accessibilité  
 
-Cette page est une référence complète des fonctionnalités d’accessibilité dans Microsoft Edge DevTools.  Ce service est destiné aux développeurs Web qui:  
+Cette page est une référence complète des fonctionnalités d’accessibilité dans Microsoft Edge DevTools.  Il est destiné aux développeurs web qui :  
 
-*   Découvrir les notions de base de DevTools, par exemple pour l’ouvrir.  
-*   Vous connaissez les [principes et les pratiques d’accessibilité][MDNAccessibility].  
+*   Avoir une connaissance de base de DevTools, par exemple comment l’ouvrir.  
+*   Familiarisez-vous [avec les principes d’accessibilité et les meilleures pratiques.][MDNAccessibility]  
     
-Cette référence a pour but de vous aider à découvrir les outils disponibles dans DevTools qui vous aident à examiner l’accessibilité d’une page.  
+L’objectif de cette référence est de vous aider à découvrir tous les outils disponibles dans DevTools qui vous aident à examiner l’accessibilité d’une page.  
 
-Pour plus d’informations sur la navigation dans DevTools à l’aide d’une technologie d’assistance telle qu’un lecteur d’écran, reportez-vous à la rubrique [navigation dans Microsoft Edge devtools avec la technologie d’assistance][DevtoolsAccessibilityNavigation] .  
+Si vous recherchez de l’aide sur la navigation de DevTools avec une technologie d’assistance telle qu’un lecteur d’écran, accédez à [Navigation dans Microsoft Edge DevTools Avec][DevtoolsAccessibilityNavigation]technologie d’assistance.  
 
-## Vue d’ensemble des fonctionnalités d’accessibilité dans Microsoft Edge DevTools  
+## <a name="overview-of-accessibility-features-in-microsoft-edge-devtools"></a>Vue d’ensemble des fonctionnalités d’accessibilité dans Microsoft Edge DevTools  
 
-Cette section décrit la façon dont DevTools s’inscrit dans votre kit de fonctions d’accessibilité global.  
+Cette section explique comment DevTools s’inscrit dans votre kit de ressources d’accessibilité global.  
 
-Lorsque vous déterminez s’il est possible d’accéder à une page, vous devez avoir 2 questions générales à retenir:  
+Lorsque vous déterminez si une page est accessible, vous devez avoir 2 questions générales à l’esprit :  
 
-1.  Êtes-vous en mesure de naviguer sur la page à l’aide d’un clavier ou d’un [lecteur d’écran][MDNScreenReader]?  
-1.  Les éléments de la page sont-ils correctement marqués pour les lecteurs d’écran?  
+1.  Êtes-vous en mesure de naviguer dans la page à l’aide d’un clavier ou [d’un lecteur d’écran][MDNScreenReader]?  
+1.  Les éléments de la page sont-ils correctement marqués pour les lecteurs d’écran ?  
     
-En général, DevTools devrait vous aider à résoudre les erreurs liées aux questions #2, car ces erreurs sont faciles à détecter de manière automatisée.  Le #1 de questions est comme important, mais malheureusement DevTools ne vous permet pas de le faire.  La seule façon de rechercher les erreurs liées aux questions #1 est d’essayer d’utiliser une page à l’aide d’un clavier ou d’un lecteur d’écran.  <!--See [How To Do An Accessibility Review][AccessibilityReview] to learn more.  -->  
+En règle générale, DevTools doit vous aider à résoudre les erreurs liées aux #2, car ces erreurs sont faciles à détecter de manière automatisée.  La question #1 est tout aussi importante, mais malheureusement, DevTools ne vous y aide pas.  La seule façon de rechercher les erreurs liées aux #1 question consiste à essayer d’utiliser une page avec un clavier ou un lecteur d’écran vous-même.  <!--To learn more, navigate to [How To Do An Accessibility Review][AccessibilityReview].  -->  
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
-## Auditer l’accessibilité d’une page  
+## <a name="audit-the-accessibility-of-a-page"></a>Auditer l’accessibilité d’une page  
 
 > [!NOTE]
-> Le volet **audits** fournit des liens vers du contenu hébergé sur des sites Web tiers.  Microsoft n’est pas responsable et n’a aucun contrôle sur le contenu de ces sites et sur les données qui pourraient être collectées.  
+> **L’outil Audits** fournit des liens vers du contenu hébergé sur des sites web tiers.  Microsoft n’est pas responsable et n’a aucun contrôle sur le contenu de ces sites et les données qui peuvent être collectées.  
 
-En règle générale, utilisez le volet audits pour déterminer si:  
+En règle générale, utilisez le panneau Audits pour déterminer si :  
 
 *   Une page est correctement marquée pour les lecteurs d’écran.  
-*   Les éléments de texte sur une page présentent des coefficients de contraste suffisants.  Voir [afficher le coefficient de contraste d’un élément de texte dans le sélecteur de couleurs](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
+*   Les éléments de texte d’une page ont des coefficients de contraste suffisants.  Accédez [à Afficher le coefficient de contraste d’un élément de texte dans le s sélectionneur de couleurs.](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker)  
 
-Pour auditer une page:  
+Pour auditer une page :  
 
-1.  Accédez à l’URL que vous voulez auditer.  
-1.  Dans DevTools, cliquez sur l’onglet **audits** .  DevTools vous présente diverses options de configuration.  
+1.  Accédez à l’URL que vous souhaitez auditer.  
+1.  Dans DevTools, choisissez **l’outil Audits.**  DevTools vous présente différentes options de configuration.  
     
     :::image type="complex" source="../media/accessibility-audits-pane.msft.png" alt-text="Configurer les audits" lightbox="../media/accessibility-audits-pane.msft.png":::
        Configurer les audits  
     :::image-end:::  
     
     > [!NOTE]
-    > Les captures d’écran de cette section ont été effectuées avec la version 79 de Microsoft Edge.  Vous pouvez vérifier la version que vous utilisez `edge://version` .  L’interface utilisateur du panneau **audits** est différente dans les versions antérieures de Microsoft Edge, mais le flux de travail général est le même.  
+    > Les captures d’écran de cette section ont été prises avec la version 79 de Microsoft Edge.  Vous pouvez vérifier la version à partir de quelle version vous `edge://version` exécutez.  L’interface utilisateur de l’outil **Audits** est différente dans les versions antérieures de Microsoft Edge, mais le flux de travail général est le même.  
     
-1.  Pour **appareil**, choisissez **mobile** si vous voulez simuler un appareil mobile.  Cette option modifie votre chaîne d’agent utilisateur et redimensionne la fenêtre d’affichage.  Si la version mobile de la page ne s’affiche pas comme la version de bureau, cette option peut avoir un effet notable sur les résultats de votre audit.  
-1.  Dans la section **audits** , vérifiez que l’option **accessibilité** est activée.  Désactivez les autres catégories si vous voulez les exclure de votre rapport.  Laissez-les activés si vous voulez découvrir d’autres façons d’améliorer la qualité de votre page.  
-1.  La section **limitation** vous permet de limiter le réseau et le processeur, ce qui est utile lors de l’analyse des performances de chargement.  Cette option n’est pas adaptée à votre score d’accessibilité, donc vous pouvez utiliser ce que vous préférez.  
-1.  La case à cocher **Clear Storage** vous permet d’effacer tout le stockage avant de charger la page ou de conserver le stockage entre les chargements de pages.  Cette option n’est pas non plus pertinente pour votre score d’accessibilité, vous pouvez donc utiliser ce que vous préférez.  
-1.  Sélectionnez **exécuter les audits**. Après 10 à 30 secondes, DevTools fournit un rapport.  Votre rapport vous donne différentes astuces pour améliorer l’accessibilité de la page.  
+1.  Pour **l’appareil,** **choisissez Mobile** si vous souhaitez simuler un appareil mobile.  Cette option modifie la chaîne de votre agent utilisateur et resize laport d’affichage.  Si la version mobile de la page s’affiche différemment de la version de bureau, cette option peut avoir un impact significatif sur les résultats de votre audit.  
+1.  Dans la section **Audits,** assurez-vous que **l’accessibilité** est activée.  Désactivez les autres catégories si vous souhaitez les exclure de votre rapport.  Laissez-les activées si vous souhaitez découvrir d’autres façons d’améliorer la qualité de votre page.  
+1.  La section **Limitation vous** permet de limiter le réseau et le processeur, ce qui est utile lors de l’analyse des performances de charge.  Cette option ne doit pas être pertinente pour votre score d’accessibilité. Vous pouvez donc utiliser ce que vous préférez.  
+1.  La **case à cocher** Effacer le stockage vous permet d’effacer tout le stockage avant de charger la page ou de conserver le stockage entre les chargements de page.  Cette option n’est probablement pas pertinente pour votre score d’accessibilité. Vous pouvez donc utiliser ce que vous préférez.  
+1.  Choose **Run Audits**. Après 10 à 30 secondes, DevTools fournit un rapport.  Votre rapport vous donne différents conseils sur l’amélioration de l’accessibilité de la page.  
     
-    :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="Configurer les audits" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
+    :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="Un rapport" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
        Un rapport  
     :::image-end:::  
     
-1.  Cliquez sur un audit pour en savoir plus à son sujet.  
+1.  Choisissez un audit pour en savoir plus à ce sujet.  
     
-    :::image type="complex" source="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png" alt-text="Configurer les audits" lightbox="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png":::
+    :::image type="complex" source="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png" alt-text="Plus d’informations sur un audit" lightbox="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png":::
        Plus d’informations sur un audit  
     :::image-end:::  
     
-1.  Sélectionnez **en savoir plus** pour afficher la documentation de cet audit.  
+1.  Sélectionnez **En savoir plus** pour afficher la documentation de cet audit.  
     
-    :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="Configurer les audits" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
+    :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="Afficher la documentation d’un audit" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
        Afficher la documentation d’un audit  
     :::image-end:::  
     
-### Voir aussi: extension de la hache  
+### <a name="see-also-axe-extension"></a>Voir aussi : extension aXe  
 
-Il est possible que vous préfériez utiliser l’extension de la [hache][ChromeWebStoreAxe] plutôt que le panneau **audits** .  
-L’extension de la hache fournit généralement les mêmes informations, car il s’agit du moteur sous-jacent qui alimente le panneau audits.  L’extension de aXe a une interface utilisateur différente et décrit les audits légèrement différemment.  
-Un des avantages que l’extension de aXe a sur le panneau **d’audit** est qu’il vous permet d’inspecter et de mettre en surbrillance les nœuds défectueux.  
+Vous pouvez préférer utiliser [l’extension aXe plutôt][ChromeWebStoreAxe] que l’outil **Audits.**  
+L’extension aXe fournit généralement les mêmes informations, car il s’agit du moteur sous-jacent qui alimente le panneau Audits.  L’extension aXe a une interface utilisateur différente et décrit les audits légèrement différemment.  
+L’un des avantages de l’extension aXe par rapport à l’outil **Audits** est qu’elle vous permet d’inspecter et de mettre en surbrillez les points d’échec.  
 
-:::image type="complex" source="../media/accessibility-devtools-extension-axe-panel.msft.png" alt-text="Configurer les audits" lightbox="../media/accessibility-devtools-extension-axe-panel.msft.png":::
-   Extension de la hache  
+:::image type="complex" source="../media/accessibility-devtools-extension-axe-panel.msft.png" alt-text="Extension aXe" lightbox="../media/accessibility-devtools-extension-axe-panel.msft.png":::
+   Extension aXe  
 :::image-end:::  
 
-## Volet accessibilité  
+## <a name="the-accessibility-panel"></a>Panneau Accessibilité  
 
-Le volet **accessibilité** vous permet d’afficher l’arborescence d’accessibilité, les attributs Aria et les propriétés d’accessibilité calculée des nœuds DOM.  
+Le **panneau Accessibilité** vous permet d’afficher l’arborescence d’accessibilité, les attributs ARIA et les propriétés d’accessibilité calculées des nodes DOM.  
 
-Pour ouvrir le volet **accessibilité** :  
+Pour ouvrir le panneau **Accessibilité** :  
 
-1.  Cliquez sur l’onglet **éléments** .  
-1.  Dans l' **arborescence DOM**, sélectionnez l’élément que vous voulez inspecter.  
-1.  Cliquez sur l’onglet **accessibilité** .  Il est possible qu’il soit masqué derrière le bouton **plus d’onglets** \ ( ![ plus d’onglets ][ImageMoreTabsIcon] \).  
+1.  Choisissez **l’outil Éléments.**  
+1.  Dans **l’arborescence DOM,** sélectionnez l’élément que vous souhaitez inspecter.  
+1.  Choisissez le **panneau Accessibilité.**  Ce panneau peut être masqué derrière le bouton **Autres onglets** \( ![ Autres onglets ][ImageMoreTabsIcon] \).  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Configurer les audits" lightbox="../media/accessibility-elements-accessibility.msft.png":::
-   Inspecter l' `h1` élément de la page d’accueil devtools dans le volet **accessibilité**  
+:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspecter l’élément h1 de la page d’accueil DevTools dans le panneau Accessibilité" lightbox="../media/accessibility-elements-accessibility.msft.png":::
+   Inspecter `h1` l’élément de la page d’accueil DevTools dans le **panneau Accessibilité**  
 :::image-end:::  
 
-### Afficher la position d’un élément dans l’arborescence d’accessibilité  
+### <a name="view-the-position-of-an-element-in-the-accessibility-tree"></a>Afficher la position d’un élément dans l’arborescence d’accessibilité  
 
-L' [arborescence d’accessibilité][MDNAccessibilityTree] est un sous-ensemble de l’arborescence DOM.  Il contient uniquement des éléments de l’arborescence DOM qui sont pertinents et utiles pour afficher le contenu d’une page dans un lecteur d’écran.  
+[L’arborescence d’accessibilité][MDNAccessibilityTree] est un sous-ensemble de l’arborescence DOM.  Il contient uniquement les éléments de l’arborescence DOM qui sont pertinents et utiles pour afficher le contenu d’une page dans un lecteur d’écran.  
 
-Inspectez la position d’un élément dans l’arborescence d’accessibilité à partir du [volet accessibilité](#the-accessibility-pane).  
+Inspectez la position d’un élément dans l’arborescence d’accessibilité à partir du [panneau Accessibilité.](#the-accessibility-panel)  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="Configurer les audits" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
-   Section **arborescence d’accessibilité**  
+:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="Section Arborescence de l’accessibilité" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
+   Section Arborescence **de l’accessibilité**  
 :::image-end:::  
 
-### Afficher les attributs ARIA d’un élément  
+### <a name="view-the-aria-attributes-of-an-element"></a>Afficher les attributs ARIA d’un élément  
 
-Les attributs ARIA garantissent que les lecteurs d’écran disposent de toutes les informations dont ils ont besoin pour représenter correctement le contenu d’une page.  
+Les attributs ARIA garantissent que les lecteurs d’écran ont toutes les informations dont ils ont besoin pour représenter correctement le contenu d’une page.  
 
-Affichez les attributs ARIA d’un élément dans le [volet accessibilité](#the-accessibility-pane).  
+Afficher les attributs ARIA d’un élément dans le [panneau Accessibilité.](#the-accessibility-panel)  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="Configurer les audits" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
-   Section **attributs Aria**  
+:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="Section Attributs ARIA" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
+   Section **Attributs ARIA**  
 :::image-end:::  
 
-### Afficher les propriétés d’accessibilité calculées d’un élément  
+### <a name="view-the-computed-accessibility-properties-of-an-element"></a>Afficher les propriétés d’accessibilité calculées d’un élément  
 
 > [!NOTE]
-> Si vous recherchez des propriétés CSS calculées, accédez à l' [onglet calculé][DevtoolsCssReferenceViewActuallyAppliedElements].  
+> Si vous recherchez des propriétés CSS calculées, accédez au [panneau][DevtoolsCssReferenceViewActuallyAppliedElements] calculé.  
 
-Certaines propriétés d’accessibilité sont calculées de manière dynamique par le navigateur.  Ces propriétés sont affichées dans la section **propriétés calculées** du volet **accessibilité** .  
+Certaines propriétés d’accessibilité sont calculées dynamiquement par le navigateur.  Ces propriétés sont affichées dans la section **Propriétés** calculées du panneau **Accessibilité.**  
 
-Afficher les propriétés d’accessibilité calculées d’un élément dans le [volet accessibilité](#the-accessibility-pane).  
+Afficher les propriétés d’accessibilité calculées d’un élément dans le panneau [Accessibilité.](#the-accessibility-panel)  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="Configurer les audits" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
-   Section **propriétés calculées** du volet **accessibilité**  
+:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="Section Propriétés calculées du panneau Accessibilité" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
+   Section **Propriétés calculées** du panneau **Accessibilité**  
 :::image-end:::  
 
-## Afficher le coefficient de contraste d’un élément de texte dans le sélecteur de couleurs  
+## <a name="view-the-contrast-ratio-of-a-text-element-in-the-color-picker"></a>Afficher le coefficient de contraste d’un élément de texte dans le s sélectionneur de couleurs  
 
-Certaines personnes souffrant de troubles de la vue ne voient pas les zones comme très brillantes ou très sombres.  Tout a tendance à apparaître à la même luminosité, ce qui permet de distinguer les plans et les bords.  
+Certaines personnes ayant une vision faible ne voient pas les zones comme étant très claires ou très sombres.  Tout a tendance à apparaître à peu près à la même luminosité, ce qui rend difficile la distinction entre les contours et les bords.  
 
-Coefficient de contraste mesure la différence de luminosité entre le premier plan et l’arrière-plan du texte.  Si votre texte a un coefficient de contraste faible, il est possible que les utilisateurs malvoyants puissent littéralement voir votre site comme un écran vierge.  
+Le coefficient de contraste mesure la différence de luminosité entre le premier plan et l’arrière-plan du texte.  Si votre texte présente un faible coefficient de contraste, ces utilisateurs à faible vision peuvent littéralement voir votre site comme un écran vide.  
 
-Le sélecteur de couleurs permet de vérifier que votre texte répond aux niveaux de contraste recommandés:  
+Le s picker de couleur vous permet de vérifier que votre texte répond aux niveaux de coefficient de contraste recommandés :  
 
-1.  Cliquez sur l’onglet **éléments** .  
-1.  Dans l' **arborescence DOM**, sélectionnez l’élément de texte que vous voulez inspecter.  
+1.  Choisissez **l’outil Éléments.**  
+1.  Dans **l’arborescence DOM,** sélectionnez l’élément de texte à inspecter.  
     
-    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Configurer les audits" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
-       Inspecter un paragraphe dans l' **arborescence DOM**  
+    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Inspecter un paragraphe dans l’arborescence DOM" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
+       Inspecter un paragraphe dans l’arborescence **DOM**  
     :::image-end:::  
     
-1.  Dans le volet **styles** , cliquez sur le carré de couleur en regard de la `color` valeur de l’élément.  
+1.  Dans le **panneau Styles,** choisissez le carré de couleur en face de la `color` valeur de l’élément.  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="Configurer les audits" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
-       La `color` propriété de l’élément  
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="Propriété de couleur de l’élément" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
+       Propriété `color` de l’élément  
     :::image-end:::  
     
-1.  Vérifiez la section **coefficient de contraste** du sélecteur de couleurs.  Une coche signifie que l’élément est conforme à la [recommandation minimum][W3CContrastMinimum].  Deux coches signifient qu’il est conforme à la [recommandation améliorée][W3CContrastEnhanced].  
+1.  Consultez la section **Coefficient de** contraste du s sélectionneur de couleurs.  Une coche signifie que l’élément répond à la [recommandation minimale.][W3CContrastMinimum]  Deux coches signifient qu’elle répond à la [recommandation améliorée][W3CContrastEnhanced].  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="Configurer les audits" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
-       La section **coefficient de contraste** du sélecteur de couleurs affiche 2 coches et une valeur de `13.97`  
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="La section Coefficient de contraste du s picker de couleur affiche 2 coches et une valeur de 13,97" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
+       La section **Coefficient de** contraste du s picker de couleur affiche 2 coches et une valeur de `13.97`  
     :::image-end:::  
     
-1.  Cliquez sur la section **coefficient de contraste** pour afficher des informations supplémentaires.  Une ligne s’affiche dans le sélecteur de visuels en haut du sélecteur de couleurs.  Si la couleur actuelle répond aux recommandations, tout ce qui se trouve sur le même côté de la ligne répond également aux recommandations.  Si la couleur en cours ne répond pas aux recommandations, tout ce qui se trouve dans le même côté ne répond pas aux recommandations.  
+1.  Pour plus d’informations, sélectionnez la section **Coefficient de** contraste.  Une ligne apparaît dans le s picker visuel en haut du s picker de couleurs.  Si la couleur actuelle répond aux recommandations, tout ce qui se place du même côté de la ligne répond également à des recommandations.  Si la couleur actuelle ne répond pas aux recommandations, tout ce qui se présente du même côté ne répond pas non plus aux recommandations.  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="Configurer les audits" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
-       Ligne de **coefficient de contraste** dans le sélecteur visuel  
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="Ligne coefficient de contraste dans le s picker visuel" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
+       Ligne **coefficient de contraste** dans le s picker visuel  
     :::image-end:::  
     
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -196,23 +196,23 @@ Le sélecteur de couleurs permet de vérifier que votre texte répond aux niveau
 
 <!-- links -->  
 
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigation dans Microsoft Edge DevTools avec la technologie d’assistance | Documents Microsoft"  
-[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "Afficher uniquement les feuilles CSS appliquées actuellement à une référence d’élément CSS | Documents Microsoft"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Naviguer dans Microsoft Edge DevTools avec la technologie d’assistance | Documents Microsoft"  
+[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "Afficher uniquement le CSS réellement appliqué à un élément - CSS Reference | Documents Microsoft"  
 
-[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe-tests d’accessibilité sur le Web-chrome Web Store"  
+[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe - Test d’accessibilité web - Chrome Web Store"  
 
 [MDNAccessibilityTree]: https://developer.mozilla.org/docs/Glossary/AOM "Arborescence d’accessibilité (AOM) | MDN"  
 [MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "Accessibilité | MDN"  
 [MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "Lecteur d’écran | MDN"  
 
-[W3CContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced "Niveau de contraste (amélioré) AAA | W3C"  
-[W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "Contraste (minimum) niveau AA | W3C"  
+[W3CContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced "Contraste (amélioré) Niveau AAA | W3C"  
+[W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "Contraste (Minimum) Niveau AA | W3C"  
 
 > [!NOTE]
-> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution Creative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) et est créée par [Kayce basques][KayceBasques] \ (Technical Writer, chrome devtools \ & phare \).  
+> Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
-[![Licence Creative d’Creative][CCby4Image]][CCA4IL]  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

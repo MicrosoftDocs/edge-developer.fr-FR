@@ -1,18 +1,18 @@
 ---
-description: Apprenez à exécuter JavaScript dans la console.
-title: Commencer à utiliser JavaScript sur la console
+description: Découvrez comment exécuter JavaScript dans la console.
+title: Commencer à utiliser JavaScript dans la console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: ecd1a2fffb311990b6e743e99d038f1f2a519ee4
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: c1d6c393b6278f4622cf80576ccc8f9c70bdb6b5
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11231089"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398818"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,59 +28,59 @@ ms.locfileid: "11231089"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Commencer à utiliser JavaScript sur la console  
+# <a name="get-started-with-running-javascript-in-the-console"></a>Commencer à utiliser JavaScript dans la console  
 
-Ce didacticiel interactif vous montre comment exécuter JavaScript dans la **console**Microsoft Edge devtools.  Pour plus d’informations sur la façon de consigner les messages dans la **console**, accédez à la section [commencer à utiliser la journalisation des messages][DevToolsConsoleLoggingMessages].  Pour plus d’informations sur la façon de suspendre le code JavaScript et de parcourir ce code une ligne à la fois, accédez à la rubrique mise [en route du JavaScript][DevToolsJavascriptIndex].  
+Ce didacticiel interactif vous montre comment exécuter JavaScript dans la **console**Microsoft Edge DevTools.  Pour plus d’informations sur la journalisation des messages dans la **console,** accédez à [Démarrer avec la journalisation des messages.][DevToolsConsoleLoggingMessages]  Pour plus d’informations sur la façon de suspendre du code JavaScript et de le parcourir une ligne à la fois, accédez à Commencer avec [le débogage javaScript][DevToolsJavascriptIndex].  
 
-:::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="La console" lightbox="../media/console-javascript-example-console-playground.msft.png":::
-   La **console**  
+:::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="The Console" lightbox="../media/console-javascript-example-console-playground.msft.png":::
+   Console ****  
 :::image-end:::  
 
-## Vue d'ensemble  
+## <a name="overview"></a>Vue d'ensemble  
 
-La **console** est une valeur [REPL][WikiReadEvalPrintLoop]qui correspond à la lecture, à l’évaluation, à l’impression et au bouclage.  Elle lit le code JavaScript que vous entrez, évalue votre code, imprime le résultat de l' [expression][2alityExpressionsVersusStatements], puis revient à la première étape.  
+La **console** est [un rePL,][WikiReadEvalPrintLoop]qui signifie Read, Evaluate, Print et Loop.  Il lit le code JavaScript que vous tapez dans celui-ci, évalue votre code, imprime le résultat de votre [expression,][2alityExpressionsVersusStatements]puis revient à la première étape.  
 
-## Configurer DevTools  
+## <a name="set-up-devtools"></a>Configurer DevTools  
 
-Ce didacticiel est conçu pour vous permettre d’ouvrir la démonstration et d’essayer les flux de travail vous-même.  Lorsque vous effectuez une suivi physique, il est plus probable de mémoriser les flux de travail.
+Ce didacticiel est conçu pour ouvrir la démonstration et essayer tous les flux de travail vous-même.  Lorsque vous suivez physiquement le processus, vous êtes plus susceptible de mémoriser les flux de travail ultérieurement.
 
-1.  Sélectionnez `Control` + `Shift` + `J` \ (Windows, Linux \) ou `Command` + `Option` + `J` \ (MacOS \) pour ouvrir la **console**.  
-1.  Maintenez la touche Windows enfoncée `Control` `Command` et sélectionnez l' **exemple de console JavaScript** à ouvrir dans une nouvelle fenêtre.  
+1.  Sélectionnez `Control` + `Shift` + `J` \(Windows, Linux\) ou `Command` + `Option` + `J` \(macOS\) pour ouvrir la **console.**  
+1.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and choose **Console Javascript Example** to open in a new window.  
     
-    *   [Exemple de console JavaScript][GlitchConsoleJavascriptExample]  
+    *   [Exemple JavaScript pour la console][GlitchConsoleJavascriptExample]  
     
-    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="Page d’exemple de langage JavaScript de la console à gauche et DevTools sur la droite" lightbox="../media/console-javascript-example-console-empty.msft.png":::
-       Page d’exemple de langage JavaScript de la console à gauche et DevTools sur la droite  
+    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="Page Exemple JavaScript pour la console à gauche et DevTools à droite" lightbox="../media/console-javascript-example-console-empty.msft.png":::
+       Page Exemple JavaScript pour la console à gauche et DevTools à droite  
     :::image-end:::  
     
-## Afficher et modifier le code JavaScript ou DOM de la page  
+## <a name="view-and-change-the-javascript-or-dom-of-the-page"></a>Afficher et modifier le JavaScript ou le DOM de la page  
 
-Lorsque vous créez ou déboguez une page, il est souvent utile d’exécuter des instructions dans la **console** afin de modifier l’apparence ou l’exécution de la page.  
+Lors de la création ou du débogage d’une page, il est souvent utile d’exécuter des instructions dans la **console** afin de modifier l’apparence ou l’apparence de la page.  
     
-1.  Notez le texte du bouton.  
-1.  Entrez `document.getElementById('hello').textContent = 'Hello, Console!'` dans la **console** , puis sélectionnez `Enter` pour évaluer l’expression.  Notez la façon dont le texte à l’intérieur du bouton change.  
+1.  Notez le texte dans le bouton.  
+1.  Tapez `document.getElementById('hello').textContent = 'Hello, Console!'` dans la **console,** puis sélectionnez `Enter` pour évaluer l’expression.  Notez que le texte à l’intérieur du bouton change.  
     
-    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="Aspect de la console après l’évaluation de l’expression" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
-       Aspect de la **console** après l’évaluation de l’expression  
+    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="Apparence de la console après l’évaluation de l’expression" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
+       Apparence de la **console** après l’évaluation de l’expression  
     :::image-end:::  
     
-    Le code que vous avez évalué est affiché sous `"Hello, Console!"` .  Rappelez-vous des 4 étapes de REPL: lecture, évaluation, impression, boucle.  Après avoir évalué votre code, une valeur REPL imprime le résultat de l’expression.  `"Hello, Console!"`Le résultat doit donc être évalué `document.getElementById('hello').textContent = 'Hello, Console!'` .  
+    `"Hello, Console!"`, s’affiche sous le code que vous avez évalué.  N’oubliez pas les 4 étapes de REPL : lire, évaluer, imprimer, boucle.  Après avoir évalué votre code, un rePL imprime le résultat de l’expression.  Vous `"Hello, Console!"` devez donc être le résultat de l’évaluation. `document.getElementById('hello').textContent = 'Hello, Console!'`  
     
-## Exécuter du JavaScript arbitraire qui n’est pas lié à la page  
+## <a name="run-arbitrary-javascript-that-is-not-related-to-the-page"></a>Exécuter un javaScript arbitraire qui n’est pas lié à la page  
 
-Il arrive parfois que vous souhaitiez créer un code de laboratoire dans lequel vous pouvez tester du code ou essayer de nouvelles fonctionnalités JavaScript que vous ne connaissez pas.  La **console** est l’endroit idéal pour ces types d’expériences.  
+Parfois, vous souhaitez simplement un aire de jeu de code où vous pouvez tester du code ou tester de nouvelles fonctionnalités JavaScript que vous ne connaissez pas.  La **console** est un endroit idéal pour ces types d’expériences.  
 
-1.  Entrez `5 + 15` dans la console, puis sélectionnez `Enter` pour évaluer l’expression. La console imprime le résultat de l’expression sous votre code.  Dans l’illustration suivante, votre **console** doit afficher le résultat après l’évaluation de l’expression.  
+1.  Tapez `5 + 15` dans la console et sélectionnez pour évaluer `Enter` l’expression. La console imprime le résultat de l’expression sous votre code.  Dans la figure suivante, votre **console** doit afficher le résultat après avoir évalué l’expression.  
 
-1.  Tapez le code suivant dans la **console**.  Essayez de taper le texte, caractère par caractère, plutôt que de copier-coller.  
+1.  Tapez le code suivant dans la **console.**  Essayez de la taper, caractère par caractère, plutôt que de la copier-coller.  
     
     ```javascript
     function add(a, b=20)
     ```  
     
-    Si vous n’êtes pas familiarisé avec la `b=20` syntaxe, accédez à la section [définir les valeurs par défaut des arguments de fonction][Esma6DefaultParameterValues].  
+    Si vous ne connaissez pas la `b=20` syntaxe, accédez à la définition des [valeurs par défaut des arguments de fonction.][Esma6DefaultParameterValues]  
     
-1.  À présent, exécutez la fonction que vous venez de définir.  
+1.  À présent, exécutez la fonction que vous venons de définir.  
     
     :::row:::
        :::column span="":::
@@ -90,47 +90,47 @@ Il arrive parfois que vous souhaitiez créer un code de laboratoire dans lequel 
        :::column-end:::
        :::column span="":::
           :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="La console s’affiche après l’évaluation des expressions dans l’extrait de code" lightbox="../media/console-javascript-example-console-playground.msft.png":::
-             La **console** s’affiche après l’évaluation des expressions dans l’extrait de code  
+             La **console s’affiche** après l’évaluation des expressions dans l’extrait de code  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-    `add(25)` prend la valeur, `45` car lorsque la `add` fonction est appelée sans deuxième argument, la `b` valeur par défaut est `20` .  
+    `add(25)` est évaluée `45` à, car lorsque la `add` fonction est appelée sans second argument, est par défaut `b` . `20`  
 
-## Étapes suivantes  
+## <a name="next-steps"></a>Étapes suivantes  
 
-<!--See [Run JavaScript][DevToolsConsoleReference] to explore more features related to running JavaScript in the Console.  -->  
+<!--To explore more features related to running JavaScript in the **Console**, navigate to [Run JavaScript][DevToolsConsoleReference].  -->  
 
 <!--todo: add console reference (run javascript) section when available  -->  
 
-DevTools vous permet de suspendre un script au milieu de l’exécution.  Lorsque vous êtes en pause, vous pouvez utiliser la **console** pour afficher et modifier le `window` ou la `DOM` page à ce moment précis.  Le flux de travail effectue un flux de travail puissant de débogage.  Pour un didacticiel interactif, naviguez jusqu’à la section [commencer le débogage de JavaScript][DevToolsJavascriptIndex].  
+DevTools vous permet de suspendre un script en cours d’exécution.  Pendant que vous êtes suspendu, vous pouvez utiliser la **console** pour afficher et modifier le ou la page à `window` ce `DOM` moment-là.  Le flux de travail constitue un flux de travail de débogage puissant.  Pour un didacticiel interactif, [accédez à Commencer avec le débogage de JavaScript][DevToolsJavascriptIndex].  
 
 La **console** dispose également d’un ensemble de fonctions pratiques qui facilitent l’interaction avec une page.  Par exemple:  
 
-*   Au lieu de taper `document.querySelector()` pour sélectionner un élément, tapez `$()` .  Cette syntaxe est inspirée par jQuery, mais elle n’est pas réellement jQuery.  Il s’agit simplement d’un alias pour `document.querySelector()` .  
-*   `debug(function)` définit efficacement un point d’arrêt sur la première ligne de cette fonction.  
-*   `keys(object)` retourne une matrice contenant les clés de l’objet spécifié.  
+*   Au lieu de taper `document.querySelector()` pour sélectionner un élément, tapez `$()` .  Cette syntaxe s’inspire de jQuery, mais elle n’est pas réellement jQuery.  Il s’agit simplement d’un alias pour `document.querySelector()` .  
+*   `debug(function)` définit effectivement un point d’arrêt sur la première ligne de cette fonction.  
+*   `keys(object)` renvoie un tableau contenant les clés de l’objet spécifié.  
 
-Pour plus d’informations sur les fonctions de commodité, accédez à informations de référence sur l’API de la [console][DevToolsConsoleUtilities].  
+Pour plus d’informations sur les fonctions pratiques, accédez à référence de [l’API des utilitaires de console.][DevToolsConsoleUtilities]  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsConsoleLoggingMessages]: ./log.md "Commencer à utiliser la journalisation des messages dans la console | Documents Microsoft"  
+[DevToolsConsoleLoggingMessages]: ./log.md "Commencer à journalisation des messages dans la console | Documents Microsoft"  
 [DevToolsConsoleReference]: ./reference.md#run-javascript "Référence de la console | Documents Microsoft"  
-[DevToolsConsoleUtilities]: ./utilities.md "Référence sur l’API des utilitaires de console | Documents Microsoft"  
-[DevToolsJavascriptIndex]: ../javascript/index.md "Commencer à utiliser le débogage JavaScript dans Microsoft Edge DevTools | Documents Microsoft"  
+[DevToolsConsoleUtilities]: ./utilities.md "Référence de l’API des utilitaires de console | Documents Microsoft"  
+[DevToolsJavascriptIndex]: ../javascript/index.md "Commencer à déboguer JavaScript dans Microsoft Edge DevTools | Documents Microsoft"  
 
-[2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "Expressions et instructions dans JavaScript"  
+[2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "Expressions et instructions en JavaScript"  
 
-[Esma6DefaultParameterValues]: https://es6-features.org/index#DefaultParameterValues "Valeurs de paramètre par défaut-gestion étendue des paramètres-ECMAScript 6: nouvelles fonctionnalités: vue d’ensemble & comparaison"  
+[Esma6DefaultParameterValues]: https://es6-features.org/index#DefaultParameterValues "Valeurs des paramètres par défaut - Gestion étendue des paramètres - ECMAScript 6 — Nouvelles fonctionnalités : vue d’ensemble & comparaison"  
 
-[GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "Exemple de console JavaScript | Problème"  
+[GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "Exemple de console Javascript | Glitch"  
 
-[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Lecture-eval-imprimer en boucle-Wikipédia"  
+[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Read-eval-print loop - Wikipedia"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  

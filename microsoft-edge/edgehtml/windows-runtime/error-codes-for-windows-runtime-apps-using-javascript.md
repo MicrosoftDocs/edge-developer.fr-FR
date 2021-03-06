@@ -1,6 +1,8 @@
 ---
-description: Codes d’erreur pour les applications Windows Runtime en JavaScript.
+description: Codes d’erreur pour les applications Windows Runtime utilisant JavaScript
 title: Codes d’erreur pour les applications Windows Runtime utilisant JavaScript
+ms.custom: ''
+ms.date: 11/03/2020
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 ms.topic: article
@@ -31,52 +33,51 @@ ms.assetid: 4c6d4e90-602a-4b56-ae74-3458929da442
 caps.latest.revision: 1
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 5a04a9c348a29aee2ec5936e7d923377dd53b21c
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 3e7241d675a6f488e70eefb20c40149683f965c8
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233522"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11398489"
 ---
-# Codes d’erreur pour les applications Windows Runtime utilisant JavaScript  
+# <a name="error-codes-for-windows-runtime-apps-using-javascript"></a>Codes d’erreur pour les applications Windows Runtime utilisant JavaScript  
 
 [!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-Voici les codes d’erreur qui s’affichent dans la console Microsoft Visual Studio lorsque vous développez des applications Windows Runtime en JavaScript.  
+Voici les codes d’erreur affichés par la console Microsoft Visual Studio lors du développement d’applications Windows Runtime à l’aide de JavaScript.  
 
 | Erreur | Remarques |  
 |:--- |:--- |  
-| APPHOST9601: "Impossible de charger *remoteURI*.  Une application ne peut pas charger du contenu Web distant dans le contexte local.» | Pour plus d’informations sur ce qui est autorisé dans le contexte Web, voir [fonctionnalités et restrictions par contexte][PreviousVersionsWindowsAppsHh465373].  |  
-| APPHOST9602: "'JavaScript: 'est une valeur d’attribut non valide et sera ignorée.  N’utilisez pas d’URI «JavaScript:» dans le contexte local.» | Pour des raisons de sécurité, vous ne pouvez pas utiliser des URI’JavaScript: 'dans le contexte local.  Pour plus d’informations sur ce qui est autorisé dans le contexte local, voir [fonctionnalités et restrictions par contexte][PreviousVersionsWindowsAppsHh465373].  |  
-| APPHOST9603: "Impossible de charger le plug-in ActiveX ayant l’ID de classe *ClassID*.  Les applications ne peuvent pas charger de contrôles ActiveX.» | Les applications Windows Runtime utilisant JavaScript ne prennent pas en charge Microsoft ActiveXcontrols personnalisé.  Si vous avez besoin d’un contrôle d’interface utilisateur, utilisez un contrôle Web standard, une bibliothèque de contrôles ou créez votre propre contrôle personnalisé.  Si vous devez exécuter une logique personnalisée, créez plutôt un objet Windows Runtime personnalisé.  Pour plus d’informations sur les autres différences HTML, CSS et JavaScript, voir [fonctionnalités html, CSS et JavaScript et différences][PreviousVersionsWindowsAppsHh465380].  |  
-| APPHOST9604: «vous ne pouvez pas accéder à l' *URI* car il utilise un codage de caractères non valide.  Une application peut accéder uniquement aux fichiers codés en UTF8.» | Tout le code HTML, JavaScript et CSS accédé par un Windows Runtime doit être encodé en tant que format UTF-8 (Unicode Transformation Format).  Pour plus d’informations sur les autres différences HTML, CSS et JavaScript, voir [fonctionnalités html, CSS et JavaScript et différences][PreviousVersionsWindowsAppsHh465380].  |  
-| APPHOST9605: «vous ne pouvez pas accéder à *targetURI* depuis *sourceURI* , car l’URI de destination se trouve dans une zone de sécurité plus élevée.  Vous ne pouvez pas naviguer à partir d’une zone avec un niveau de sécurité inférieur vers une zone avec une sécurité plus élevée, sauf si vous naviguez jusqu’à un URI de contexte local à partir d’un URI de contexte Web et que vous avez inscrit l’URI de contexte local avec la méthode MSApp. addPublicLocalApplicationUri. " | Pour plus d’informations, voir [MSApp. addPublicLocalApplicationUri][PreviousVersionsHh771917].  |  
-| APPHOST9606: "Impossible de charger l' *URI* , car il utilise une connexion http et l’élément méta MS-https-connections uniquement est présent.  Seules les connexions HTTPs sont autorisées lorsque vous utilisez l’élément méta MS-https-connections-only.  Utiliser une connexion HTTPs ou, si vous n’avez pas besoin d’une connexion sécurisée, supprimez l’élément méta. | Pour plus d’informations, reportez-vous [à la rubrique exiger une connexion HTTPS][PreviousVersionsWindowsAppsHh452771].  |  
-| APPHOST9607: «l’application ne peut pas lancer l’URI sur l' *URI* en raison de l’erreur suivante: *failureCode*». | Un fichier manquant ou non valide est le cause courante de cette erreur.  |  
-| APPHOST9608: «l’application n’a pas pu accéder à la page «à propos de:» en raison de l’erreur suivante: *codeerreur*.» |  |  
+| APPHOST9601: «Can’t load *remoteURI*.  Une application ne peut pas charger de contenu web distant dans le contexte local. » | Pour plus d’informations sur ce qui est autorisé dans le contexte web, voir [Fonctionnalités et restrictions par contexte.][PreviousVersionsWindowsAppsHh465373]  |  
+| APPHOST9602: «'javascript:' is an invalid attribute value and will be ignored.  N’utilisez pas d' URIs « javascript: » dans le contexte local. » | Pour des raisons de sécurité, vous ne pouvez pas utiliser les URL « javascript: » dans le contexte local.  Pour plus d’informations sur ce qui est autorisé dans le contexte local, voir [Fonctionnalités et restrictions par contexte.][PreviousVersionsWindowsAppsHh465373]  |  
+| APPHOST9603 : « Can’t load the ActiveX plug-in that has the class ID *classID*.  Les applications ne peuvent pas charger ActiveX contrôles. » | Les applications Windows Runtime utilisant JavaScript ne permettent pas de personnaliser Microsoft ActiveXcontrols.  Si vous avez besoin d’un contrôle d’interface utilisateur, utilisez un contrôle web standard, une bibliothèque de contrôles ou créez votre propre contrôle personnalisé.  Si vous devez effectuer une logique personnalisée, créez plutôt un objet Windows Runtime personnalisé.  Pour plus d’informations sur les autres différences HTML, CSS et JavaScript, voir [html, CSS et JavaScript fonctionnalités et différences][PreviousVersionsWindowsAppsHh465380].  |  
+| APPHOST9604: «Can’t navigate to *uri* because it uses an invalid character encoding.  Une application peut accéder uniquement aux fichiers codés en UTF8. » | Tous les fichiers HTML, JavaScript et CSS accessibles par Windows Runtime doivent être codés au format UTF-8 (Unicode Transformation Format) 8 bits.  Pour plus d’informations sur les autres différences HTML, CSS et JavaScript, voir [html, CSS et JavaScript fonctionnalités et différences][PreviousVersionsWindowsAppsHh465380].  |  
+| APPHOST9605 : « Can’t navigate to *targetURI* from *sourceURI* because the destination URI is in a higher security zone.  Vous ne pouvez pas naviguer d’une zone avec une sécurité inférieure à une zone avec une sécurité plus élevée, sauf si vous naviguez vers un URI de contexte local à partir d’un URI de contexte web et que vous avez inscrit l’URI de contexte local à l’aide de la méthode MSApp.addPublicLocalApplicationUri. » | Pour plus d’informations, [voir MSApp.addPublicLocalApplicationUri][PreviousVersionsHh771917].  |  
+| APPHOST9606: «Can’t load *uri* because it uses an HTTP connection and the ms-https-connections-only meta element is present.  Seules les connexions HTTPS sont autorisées lorsque vous utilisez l’élément meta ms-https-connections-only.  Utilisez une connexion HTTPS ou, si vous n’avez pas besoin d’une connexion sécurisée, supprimez l’élément meta. » | Pour plus d’informations, [voir Comment exiger une connexion HTTPS][PreviousVersionsWindowsAppsHh452771].  |  
+| APPHOST9607 : « L’application ne peut pas lancer l’URI à *l’URI* en raison de cette erreur *: failureCode*. » | Une ressource manquante ou un fichier non valide sont des causes courantes de cette erreur.  |  
+| APPHOST9608 : « L’application n’a pas pu accéder à la page about:blank en raison de cette erreur : *errorCode*. » |  |  
 
 | Erreur | Remarques |  
 |:--- |:--- |  
-| APPHOST9610: «l’application a détecté une erreur lors de la préparation de la navigation vers une page d’erreur personnalisée: *codeerreur*». |  |  
-| APPHOST9611: «l’application n’a pas pu accéder à une page d’erreur personnalisée en raison de l’erreur suivante: *codeerreur*.» |  |  
-| APPHOST9613: «l’application n’a pas pu accéder à l' *URI*  en raison de l’erreur suivante: *codeerreur*.» |  |  
-| APPHOST9614: «un document dans un IFRAME a demandé le mode de document *requestedDocMode* , mais le système applique le mode de document *currentDocMode* .  L’iframe utilise le mode de document *currentDocMode* . | Pour plus d’informations sur l’affichage de contenu Web distant, voir [comment créer un lien vers des pages Web externes][PreviousVersionsWindowsAppsHh780594].  |  
-| APPHOST9615: «l’application ne peut pas télécharger le fichier sur *URI* , car il a été appelé par programme en dehors du contexte local.» | Se produit lorsque le contenu du contexte Web essaie de télécharger un fichier par programme.  |  
-| APPHOST9616: "cet URI ne peut pas utiliser les API de géolocalisation.  Les API de géolocalisation peuvent être appelées uniquement à partir d’un URI qui fait partie du package ou qui est inclus dans l’élément ApplicationContentUris du manifeste.» | Pour plus d’informations sur ce qui est autorisé dans le contexte Web, voir [fonctionnalités et restrictions par contexte][PreviousVersionsWindowsAppsHh465373].  |  
-| APPHOST9617: «cet URI ne peut pas utiliser les API du presse-papiers.  Les API du presse-papiers peuvent être appelées uniquement à partir d’un URI qui fait partie du package ou qui est inclus dans l’élément ApplicationContentUris du manifeste.» | Pour plus d’informations sur ce qui est autorisé dans le contexte Web, voir [fonctionnalités et restrictions par contexte][PreviousVersionsWindowsAppsHh465373].  |  
-| APPHOST9618: «cet URI ne peut pas utiliser Window. Close.  La méthode Window. Close peut être appelée uniquement à partir du contenu empaqueté chargé avec un schéma d’URI MS-Appx.» | Pour plus d’informations sur ce qui est autorisé dans le contexte Web, voir [fonctionnalités et restrictions par contexte][PreviousVersionsWindowsAppsHh465373].  |  
-| APPHOST9619: «l’application ne peut pas accéder à l' *URI* , car une page du contexte Web ne peut pas être le document de niveau supérieur de l’application.  Il est préférable de charger la page dans un IFRAME.» | Vous ne pouvez pas parcourir votre page de niveau supérieur vers une page Web distante, mais votre application peut afficher une page Web dans un [IFRAME][MDNIframe].  Pour plus d’informations sur l’affichage de contenu Web distant, voir [comment créer un lien vers des pages Web externes][PreviousVersionsWindowsAppsHh780594].  |  
+| APPHOST9610 : « L’application a trouvé une erreur lors de la préparation pour accéder à une page d’erreur personnalisée : *errorCode*. » |  |  
+| APPHOST9611 : « L’application n’a pas pu accéder à une page d’erreur personnalisée en raison de cette erreur : *errorCode*. » |  |  
+| APPHOST9613 : « L’application n’a pas pu accéder à *l’uri*  en raison de cette erreur : *errorCode*. » |  |  
+| APPHOST9614 : « Un document dans un iframe a demandé le mode doc *requestedDocMode,* mais le système applique le mode doc *currentDocMode.*  L’iframe utilise le mode doc *currentDocMode.* » | Pour plus d’informations sur l’affichage de contenu web distant, voir [Comment lier des pages web externes.][PreviousVersionsWindowsAppsHh780594]  |  
+| APPHOST9615 : « L’application ne peut pas télécharger le fichier à *l’URI,* car il a été appelé par programmation en dehors du contexte local. » | Se produit lorsque le contenu du contexte web tente de télécharger un fichier par programmation.  |  
+| APPHOST9616 : « Cet URI ne peut pas utiliser les API de géolocalisation.  Les API de géolocalisation peuvent être invoquées uniquement à partir d’un URI qui fait partie du package ou qui est inclus dans l’élément ApplicationContentUris du manifeste. » | Pour plus d’informations sur ce qui est autorisé dans le contexte web, voir [Fonctionnalités et restrictions par contexte.][PreviousVersionsWindowsAppsHh465373]  |  
+| APPHOST9617 : « Cet URI ne peut pas utiliser les API du Presse-papiers.  Les API du Presse-papiers peuvent être invoquées uniquement à partir d’un URI qui fait partie du package ou qui est inclus dans l’élément ApplicationContentUris du manifeste. » | Pour plus d’informations sur ce qui est autorisé dans le contexte web, voir [Fonctionnalités et restrictions par contexte.][PreviousVersionsWindowsAppsHh465373]  |  
+| APPHOST9618: «Cet URI ne peut pas utiliser window.close.  La méthode window.close peut être invoquée uniquement à partir du contenu empaqueté qui a été chargé avec un schéma d’URI ms-appx. » | Pour plus d’informations sur ce qui est autorisé dans le contexte web, voir [Fonctionnalités et restrictions par contexte.][PreviousVersionsWindowsAppsHh465373]  |  
+| APPHOST9619 : « L’application ne peut pas accéder à *l’URI,* car une page dans le contexte web ne peut pas être le document de niveau supérieur de l’application.  Chargez plutôt la page dans un iframe. » | Vous ne pouvez pas naviguer dans votre page de niveau supérieur vers une page web distante, mais votre application peut afficher une page web dans [un iframe.][MDNIframe]  Pour plus d’informations sur l’affichage de contenu web distant, voir [Comment lier des pages web externes.][PreviousVersionsWindowsAppsHh780594]  |  
 
 | Erreur | Remarques |  
 |:--- |:--- |  
-| APPHOST9620: «cette application a été fermée, car elle a utilisé une connexion HTTP et l’élément méta MS-https-connections uniquement est présent.  Seules les connexions HTTPs sont autorisées lorsque vous utilisez l’élément méta MS-https-connections-only.  Utiliser une connexion HTTPs ou, si vous n’avez pas besoin d’une connexion sécurisée, supprimez l’élément méta. | Pour plus d’informations, reportez-vous [à la rubrique exiger une connexion HTTPS][PreviousVersionsWindowsAppsHh452771].  |  
-| APPHOST9623: «l’application n’a pas pu résoudre l' *URL* en raison de l’erreur suivante: *codeerreur*.» | La cause courante de cette erreur est un fichier manquant.  |  
-| APPHOST9624: «l’application ne peut pas utiliser le script pour charger l’URL d' *URL* , car l’URL lance une autre application.  Seule l’action directe de l’utilisateur peut lancer une autre application.» | Les applications ne peuvent pas lancer d’autres applications directement.  Les autres applications peuvent être lancées par l’utilisateur lorsque l’application implémente certains contrats.  Pour plus d’informations, voir [Contrats et extensions d’application][PreviousVersionsWindowsAppsHh464906].  |  
-| APPHOST9626: «une référence directe à un fichier de ressources `ms-appx://1d33240b-0b00-40e4-a416-a4750c48787f/ja-jp\images\logo.scale-140.png` a été détectée.  Cette référence entraîne des échecs lorsqu’elle est utilisée en dehors de l’environnement de débogage. | En raison du chemin d’accès du fichier `logo.scale-140.png` , ce fichier PNG est considéré comme une ressource localisée, ce qui provoque l’erreur dans ces ressources localisées qui ne peuvent pas être référencées directement.  Voir [globalisation de votre application (html)][PreviousVersionsWindowsAppsHh465006] si vous envisagez d’utiliser ce fichier en tant que ressource de langue.  Dans le cas contraire, essayez de renommer le répertoire posant problème.  |  
+| APPHOST9620 : « Cette application a été fermée car elle utilisait une connexion HTTP et l’élément meta ms-https-connections-only est présent.  Seules les connexions HTTPS sont autorisées lorsque vous utilisez l’élément meta ms-https-connections-only.  Utilisez une connexion HTTPS ou, si vous n’avez pas besoin d’une connexion sécurisée, supprimez l’élément meta. » | Pour plus d’informations, [voir Comment exiger une connexion HTTPS][PreviousVersionsWindowsAppsHh452771].  |  
+| APPHOST9623 : « L’application n’a pas pu résoudre *l’URL* en raison de cette erreur : *errorCode*. » | Une cause courante de cette erreur est un fichier manquant.  |  
+| APPHOST9624 : « L’application ne peut pas utiliser de script pour charger *l’URL,* car l’URL lance une autre application.  Seule l’interaction directe de l’utilisateur peut lancer une autre application. » | Les applications ne peuvent pas lancer d’autres applications directement.  D’autres applications peuvent être lancées par l’utilisateur lorsque l’application implémente certains contrats.  Pour plus d’informations, voir [Contrats et extensions d’application][PreviousVersionsWindowsAppsHh464906].  |  
+| APPHOST9626 : « Une référence directe au fichier de ressources `ms-appx://1d33240b-0b00-40e4-a416-a4750c48787f/ja-jp\images\logo.scale-140.png` a été détectée.  Cette référence provoque des échecs lorsqu’elle est utilisée en dehors de l’environnement de débogage. » | En raison du chemin d’accès au fichier, ce fichier PNG est traité comme une ressource localisée, ce qui provoque l’erreur dans le fait que les ressources localisées ne peuvent pas être `logo.scale-140.png` référencés directement.  Voir [Globalisation de votre application (HTML)][PreviousVersionsWindowsAppsHh465006] si vous avez l’intention d’utiliser ce fichier comme ressource de langue.  Sinon, essayez de renommer le répertoire problématique.  |  
 
-## Voir également  
+## <a name="see-also"></a>Voir également  
 
 [Utilisation de Windows Runtime en JavaScript][WindowsRuntimeJavascript]  
 
@@ -84,15 +85,15 @@ Voici les codes d’erreur qui s’affichent dans la console Microsoft Visual St
 
 [WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Utilisation de Windows Runtime en JavaScript | Documents Microsoft"  
 
-[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Classe de géolocalisation | Documents Microsoft"  
+[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Classe Geolocator | Documents Microsoft"  
 
-[PreviousVersionsHh771917]: /previous-versions/hh771917(v=vs.85) "méthode addPublicLocalApplicationUri | Documents Microsoft"  
+[PreviousVersionsHh771917]: /previous-versions/hh771917(v=vs.85) "AddPublicLocalApplicationUri, méthode | Documents Microsoft"  
 
-[PreviousVersionsWindowsAppsHh452771]: /previous-versions/windows/apps/hh452771(v=win.10) "Comment exiger une connexion HTTPs (HTML) | Documents Microsoft"  
+[PreviousVersionsWindowsAppsHh452771]: /previous-versions/windows/apps/hh452771(v=win.10) "Comment exiger une connexion HTTPS (HTML) | Documents Microsoft"  
 [PreviousVersionsWindowsAppsHh464906]: /previous-versions/windows/apps/hh464906(v=win.10) "Contrats et extensions d’application (applications Windows Runtime) | Documents Microsoft"  
 [PreviousVersionsWindowsAppsHh465006]: /previous-versions/windows/apps/hh465006(v=win.10) "Globalisation de votre application (HTML) | Documents Microsoft"  
 [PreviousVersionsWindowsAppsHh465373]: /previous-versions/windows/apps/hh465373(v=win.10) "Fonctionnalités et restrictions par contexte (HTML) | Documents Microsoft"  
-[PreviousVersionsWindowsAppsHh465380]: /previous-versions/windows/apps/hh465380(v=win.10) "Fonctionnalités HTML, CSS et JavaScript et différences (HTML) | Documents Microsoft"  
-[PreviousVersionsWindowsAppsHh780594]: /previous-versions/windows/apps/hh780594(v=win.10) "Créer un lien vers des pages Web externes (HTML) | Documents Microsoft"  
+[PreviousVersionsWindowsAppsHh465380]: /previous-versions/windows/apps/hh465380(v=win.10) "Fonctionnalités html, CSS et JavaScript et différences (HTML) | Documents Microsoft"  
+[PreviousVersionsWindowsAppsHh780594]: /previous-versions/windows/apps/hh780594(v=win.10) "Comment lier des pages web externes (HTML) | Documents Microsoft"  
 
-[MDNIframe]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>: élément de cadre inséré | MDN"  
+[MDNIframe]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe> : l’élément Inline Frame | MDN"  

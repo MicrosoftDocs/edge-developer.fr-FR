@@ -1,27 +1,27 @@
 ---
-title: Utiliser des travailleurs de services pour gérer les demandes réseau et les notifications de transmission
-description: Les travailleurs de service sont des travailleurs Web qui vous permettent d’améliorer les performances, de répondre à des conditions réseau variables et de renforcer la connectivité avec votre application Web.
+title: Utiliser les employés de service pour gérer les demandes réseau et les notifications Push
+description: Les travailleurs de service sont des travailleurs web qui permettent d’améliorer les performances, de répondre à différentes conditions réseau et d’améliorer la connectivité avec votre application web.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/15/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: applications Web progressives, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: 9bf573b668ade351716b69965f653e05857c32ec
-ms.sourcegitcommit: d9cc829deb709b0866f6b43a5f4733682ddae5ca
+keywords: applications web progressives, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
+ms.openlocfilehash: 314acbbd5a2f423c274f92e815b2be4329ace9b8
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "10659299"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399133"
 ---
-# Utiliser des travailleurs de services pour gérer les demandes réseau et les notifications de transmission
+# <a name="use-service-workers-to-manage-network-requests-and-push-notifications"></a>Utiliser les employés de service pour gérer les demandes réseau et les notifications Push
 
-Les travailleurs de service constituent un type spécial de travailleur Web qui peut intercepter, modifier et répondre à toutes les requêtes réseau à l’aide de l' `Fetch` API.  Les travailleurs de services peuvent accéder `Cache` à l’API et aux magasins de données côté client asynchrones, par exemple `IndexedDB` pour stocker des ressources.  
+Les travailleurs de service sont un type spécial de travail web ayant la possibilité d’intercepter, de modifier et de répondre à toutes les demandes réseau à l’aide de `Fetch` l’API.  Les employés de service peuvent accéder à l’API et aux magasins de données `Cache` côté client asynchrones, tels que, pour `IndexedDB` stocker des ressources.  
 
-## Enregistrement d’un travailleur de service  
+## <a name="registering-a-service-worker"></a>Inscription d’un service de travail  
 
-À l’instar des autres travailleurs sur le Web, les travailleurs de services doivent exister dans un fichier distinct. Vous référencez ce fichier lors de l’enregistrement du travailleur de service, comme le montre l’extrait de code suivant.  
+Comme d’autres travailleurs web, les travailleurs du service doivent exister dans un fichier distinct. Vous référencez ce fichier lors de l’inscription du service de travail, comme illustré dans l’extrait de code suivant.  
 
 ```javascript
 if ( "serviceWorker" in navigator ) {
@@ -29,14 +29,14 @@ if ( "serviceWorker" in navigator ) {
 }
 ```  
 
-Les navigateurs modernes fournissent différents niveaux de prise en charge pour les travailleurs de service. C’est pourquoi il est recommandé de tester l’existence de l' `serviceWorker` objet avant d’exécuter tout code lié au travailleur du service. Dans l’extrait de code ci-dessus, un ouvrier de service est enregistré à l’aide du `serviceworker.min.js` fichier situé à la racine du site. Assurez-vous que le fichier JavaScript qui définit votre service d’assistance existe dans le répertoire de niveau supérieur que vous voulez qu’il gère \ (qui est appelé application du travailleur de service).  Dans l’extrait de code ci-dessus, le fichier est stocké à la racine et le travailleur de service gère toutes les pages du domaine. Si le fichier de travailleur de service était stocké dans un `js` répertoire, l’étendue du travailleur de service sera le `js` répertoire et tous ses sous-répertoires.  Nous vous conseillons de placer le fichier du travailleur de service à la racine de votre site, sauf si vous avez besoin de réduire l’étendue de votre travailleur de service.  
+Les navigateurs modernes fournissent différents niveaux de prise en charge pour les travailleurs du service. En tant que tel, il est bon de tester l’existence de l’objet avant d’exécution d’un code lié au service `serviceWorker` de travail. Dans l’extrait de code ci-dessus, un service de travail est enregistré à l’aide du fichier situé à la `serviceworker.min.js` racine du site. Assurez-vous que le fichier JavaScript qui définit votre service de travail existe dans le répertoire de niveau le plus élevé que vous souhaitez qu’il gère \(qui est appelé étendue du Service Worker\).  Dans l’extrait de code précédent, le fichier est stocké à la racine et le service de travail gère toutes les pages du domaine. Si le fichier de travail de service était stocké dans un répertoire, l’étendue du service de travail serait le répertoire et tous les `js` `js` sous-répertoires.  En tant que meilleure pratique, placez le fichier de travail de service à la racine de votre site, sauf si vous devez réduire l’étendue de votre service de travail.  
 
-## Cycle de vie du travailleur de service  
+## <a name="the-service-worker-lifecycle"></a>Cycle de vie des travailleurs du service  
 
-Le cycle de vie d’un travailleur de service se compose de plusieurs étapes, chaque étape déclenchant un événement. Vous pouvez ajouter des écouteurs à ces événements pour exécuter du code afin d’effectuer une action. La liste suivante présente une vue d’ensemble du cycle de vie et des événements liés des travailleurs de service. 
+Le cycle de vie d’un service de travail se compose de plusieurs étapes, chaque étape déclenchant un événement. Vous pouvez ajouter des écouteurs à ces événements pour exécuter du code pour effectuer une action. La liste suivante présente une vue d’un haut niveau du cycle de vie et des événements connexes des travailleurs du service. 
 
-1. Enregistrez le travailleur de service.  
-1.  Le navigateur télécharge le fichier JavaScript, installe le travailleur du service et déclenche l' `install` événement. Vous pouvez utiliser l' `install` événement pour mettre en cache tout fichier important et à durée de vie longue (par exemple, fichiers CSS, fichiers JavaScript, images de logo, pages hors connexion, etc.) de votre site Web.  
+1.  Inscrivez le service de travail.  
+1.  Le navigateur télécharge le fichier JavaScript, installe le service de travail et déclenche `install` l’événement. Vous pouvez utiliser l’événement pour pré-mettre en cache tous les fichiers importants et à durée de vie longue, tels que les fichiers CSS, les fichiers JavaScript, les images de logo, les pages hors connexion, etc. à partir de votre `install` site web.  
     
     ```javascript
     self.addEventListener( "install", function( event ){
@@ -44,7 +44,7 @@ Le cycle de vie d’un travailleur de service se compose de plusieurs étapes, c
     });
     ```  
     
-1.  Le travailleur de service est activé, ce qui déclenche l' `activate` événement.  Utilisez cet événement pour nettoyer les caches obsolètes.  
+1.  Le service de travail est activé, ce qui déclenche `activate` l’événement.  Utilisez cet événement pour nettoyer les caches obsolètes.  
     
     ```javascript
     self.addEventListener( "activate", event => {
@@ -52,7 +52,7 @@ Le cycle de vie d’un travailleur de service se compose de plusieurs étapes, c
     });
     ```  
     
-1.  Le travailleur de service est prêt à s’exécuter lorsque la page est actualisée ou lorsque l’utilisateur navigue vers une nouvelle page sur le site. Si vous souhaitez exécuter le travailleur de service sans attendre, utilisez la `self.skipWaiting()` méthode pendant l' `install` événement.  
+1.  Le service de travail est prêt à s’exécuter lorsque la page est actualisée ou lorsque l’utilisateur navigue vers une nouvelle page sur le site. Si vous souhaitez exécuter le service de travail sans attendre, utilisez `self.skipWaiting()` la méthode pendant `install` l’événement.  
     
     ```javascript
     self.addEventListener( "install", event => {
@@ -61,11 +61,11 @@ Le cycle de vie d’un travailleur de service se compose de plusieurs étapes, c
     });
     ```
     
-1.  Le travailleur du service s’exécute actuellement.     
+1.  Le service de travail est en cours d’exécution.     
     
-## Utilisation de FETCH dans les travailleurs de service  
+## <a name="using-fetch-in-service-workers"></a>Utilisation de la récupération dans les travailleurs du service  
 
-Il s’agit de l’événement principal que vous utilisez dans un travailleur de service `fetch` .  L' `fetch` événement s’exécute chaque fois que le navigateur tente d’accéder au contenu dans le cadre du travailleur de service. L’extrait de code suivant montre comment ajouter un écouteur à l’événement Fetch.  
+L’événement principal que vous utilisez dans un service de travail est `fetch` l’événement.  L’événement s’exécute chaque fois que le navigateur tente d’accéder au contenu `fetch` dans l’étendue du service de travail. L’extrait de code suivant montre comment ajouter un listener à l’événement fetch.  
 
 ```javascript
 self.addEventListener( "fetch", event => {
@@ -73,28 +73,28 @@ self.addEventListener( "fetch", event => {
 });
 ```  
 
-Dans le `fetch` Gestionnaire, vous pouvez contrôler si une requête accède au réseau, s’extrait du cache, etc.  L’approche que vous prenez peut varier en fonction du type de ressource demandé, de la fréquence de mise à jour et d’autres logiques métiers propres à votre application.  Voici quelques exemples de ce que vous pouvez faire:  
+Au sein du handler, vous pouvez contrôler si une demande est traitée sur le réseau, s’il est tiré du `fetch` cache, etc.  L’approche que vous prenez varie probablement en fonction du type de ressource demandée, de la fréquence de sa mise à jour et d’une autre logique métier propre à votre application.  Voici quelques exemples de ce que vous pouvez faire :  
 
-*   S’il est disponible, renvoyer une réponse à partir du cache, sinon le secours pour demander la ressource sur le réseau.  
-*   Récupérer une ressource à partir du réseau, en mettre en cache une copie et retourner la réponse.
-*   Permettre aux utilisateurs de spécifier une préférence pour enregistrer les données. 
-*   Fournissez une image d’espace réservé pour certaines requêtes d’image.  
-*   Générer une réponse directement dans le travailleur de service.  
+*   Si disponible, renvoyer une réponse à partir du cache, sinon de secours pour demander la ressource sur le réseau.  
+*   Récupérer une ressource à partir du réseau, mettre en cache une copie et renvoyer la réponse.
+*   Autoriser les utilisateurs à spécifier une préférence pour enregistrer des données. 
+*   Fournir une image d’espace réservé pour certaines demandes d’image.  
+*   Générer une réponse directement dans le service de travail.  
+    
+## <a name="push-notifications"></a>Push Notifications  
 
-## Notifications de transmission  
+Les employés de service peuvent envoyer des notifications aux utilisateurs. Les notifications Push sont utiles pour inciter les utilisateurs à interagir à l’aide de votre application après un certain temps. Pour plus d’informations, accédez à la démonstration et à la démonstration des [notifications Push.][AzurewebsitesWebpushdemo]  
 
-Les travailleurs de services peuvent transmettre les notifications aux utilisateurs. Les notifications de transmission sont utiles pour inviter les utilisateurs à se réengager avec votre application après un certain temps. Pour plus d’informations, reportez-vous à la rubrique [démonstration de notifications de transmission][AzurewebsitesWebpushdemo].  
+## <a name="see-also"></a>Voir également  
 
-## Voir également  
+Pour en savoir plus sur les travailleurs de service, accédez à la liste suivante des rubriques connexes.  
 
-Pour en savoir plus sur les travailleurs de service, consultez la liste suivante de rubriques connexes.  
-
-*   [Rendre PWAs travailler hors connexion avec des travailleurs de service][MDNPwasMakingOfflineServiceWorkers]  
-*   [Comment faire pour rendre PWAs à nouveau à l’aide de notifications et de l’émission][MDNPwasMakeReengageablesingNotificationsPush]  
-
+*   [Mise en mode hors connexion des P PWA avec les travailleurs du service][MDNPwasMakingOfflineServiceWorkers]  
+*   [Comment rendre les P.A.S. ré-engageables à l’aide de Notifications et Push][MDNPwasMakeReengageablesingNotificationsPush]  
+    
 <!-- links -->  
 
-[AzurewebsitesWebpushdemo]: https://webpushdemo.azurewebsites.net "Notifications de transmission Web |  Démonstrations de Microsoft Edge"  
+[AzurewebsitesWebpushdemo]: https://webpushdemo.azurewebsites.net "Web Push Notifications |  Démonstrations de Microsoft Edge"  
 
-[MDNPwasMakingOfflineServiceWorkers]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Offline_Service_workers "Faire en sorte que PWAs travaille hors connexion avec des travailleurs de services-PWAs | MDN"  
-[MDNPwasMakeReengageablesingNotificationsPush]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push "Comment rendre PWAs réutilisable à l’aide de notifications et de PWAs | MDN"  
+[MDNPwasMakingOfflineServiceWorkers]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Offline_Service_workers "Mise en mode hors connexion des P PWAs avec les travailleurs du service : les P PWAs | MDN"  
+[MDNPwasMakeReengageablesingNotificationsPush]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push "Comment rendre les PAS ré-engageables à l’aide de Notifications et Push - P PWAs | MDN"  
