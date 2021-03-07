@@ -3,16 +3,16 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 08/10/2020
-ms.openlocfilehash: 14f193971fe9b768d2af5c3a0f5728e08460afa2
-ms.sourcegitcommit: 4bc904c5d54347185f275bd76441975be471c320
+ms.date: 01/07/2021
+ms.openlocfilehash: 4720f275fa5a795b062b5c7266ce6109daa6e252
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926443"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11399659"
 ---
-Partagez vos commentaires pour vous aider à créer des expériences WebView2 plus riches.  Pour envoyer des demandes de fonctionnalité ou des bogues, ou pour rechercher des problèmes connus, voir le référentiel samples de [Commentaires du WebView Microsoft Edge][GithubMicrosoftedgeWebviewfeedback] .  
+Partagez vos commentaires pour vous aider à créer des expériences WebView2 plus riches.  Pour soumettre des demandes de fonctionnalités ou des bogues, ou rechercher des problèmes connus, accédez au repo de commentaires [Microsoft Edge WebView.][GithubMicrosoftedgeWebviewfeedback]  
 
 <!-- links -->  
 
-[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "Commentaires sur le WebView-MicrosoftEdge/WebViewFeedback | GitHub"  
+[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "Commentaires WebView - MicrosoftEdge/WebViewFeedback | GitHub"  
