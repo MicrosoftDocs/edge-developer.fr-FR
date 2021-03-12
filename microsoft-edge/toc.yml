@@ -19,11 +19,11 @@
       items:
         - name: Vue d’ensemble de DevTools
           href: devtools-guide-chromium/index.md
-        - name: Ouvrir DevTools
-          href: devtools-guide-chromium/open/index.md
-        - name: Quoi de neuf ?
+        - name: Nouveautés
           items:
-            - name: Microsoft Edge 89
+            - name: Fonctionnalités expérimentales
+              href: devtools-guide-chromium/experimental-features/index.md
+            - name: Microsoft Edge89
               href: devtools-guide-chromium/whats-new/2021/01/devtools.md
             - name: Microsoft Edge 88
               href: devtools-guide-chromium/whats-new/2020/11/devtools.md
@@ -41,204 +41,216 @@
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
             - name: MicrosoftEdge80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-        - name: Fonctionnalités expérimentales
-          href: devtools-guide-chromium/experimental-features/index.md
-        - name: Mode InternetExplorer
-          href: devtools-guide-chromium/ie-mode/index.md
-        - name: Vue 3D
-          href: devtools-guide-chromium/3d-view/index.md
-        - name: Travailleurs du service
-          href: devtools-guide-chromium/service-workers/index.md
-        - name: DevTools pour les débutants
+        - name: Didacticiels
           items:
-            - name: HTML et DOM
-              href: devtools-guide-chromium/beginners/html.md
-            - name: CSS
-              href: devtools-guide-chromium/beginners/css.md
-        - name: CSS
-          items:
-            - name: Prise en main de l’affichage et de la modification de CSS
-              href: devtools-guide-chromium/css/index.md
-            - name: Référence CSS
-              href: devtools-guide-chromium/css/reference.md
-            - name: Rechercher des CSS inutilisées
-              href: devtools-guide-chromium/coverage/index.md
-            - name: Inspecter les animations
-              href: devtools-guide-chromium/inspect-styles/animations.md
-            - name: Modifier les styles et les paramètres des polices CSS
-              href: devtools-guide-chromium/inspect-styles/edit-fonts.md
-            - name: Inspecter la grille CSS
-              href: devtools-guide-chromium/css/grid.md
-            - name: Forcer DevTools en mode aperçu avant impression
-              href: devtools-guide-chromium/css/print-preview.md
-        - name: Console
-          items:
-            - name: Présentation de la console
-              href: devtools-guide-chromium/console/index.md
-            - name: Messages de journal
-              href: devtools-guide-chromium/console/log.md
-            - name: Exécuter JavaScript
-              href: devtools-guide-chromium/console/javascript.md
-            - name: Référence
-              href: devtools-guide-chromium/console/reference.md
-            - name: Informations de référence sur les API
-              href: devtools-guide-chromium/console/api.md
-            - name: Informations de référence sur les API Utilitaires
-              href: devtools-guide-chromium/console/utilities.md
-            - name: Expressions dynamiques
-              href: devtools-guide-chromium/console/live-expressions.md
-        - name: Network
-          items:
-            - name: Prise en main
-              href: devtools-guide-chromium/network/index.md
-            - name: Guide des problèmes de réseau
-              href: devtools-guide-chromium/network/issues.md
-            - name: Référence
-              href: devtools-guide-chromium/network/reference.md
-        - name: Stockage
-          items:
-            - name: Cookies
-              href: devtools-guide-chromium/storage/cookies.md
-            - name: Stockage local
-              href: devtools-guide-chromium/storage/localstorage.md
-            - name: IndexedDB
-              href: devtools-guide-chromium/storage/indexeddb.md
-            - name: Stockage de session
-              href: devtools-guide-chromium/storage/sessionstorage.md
-            - name: Cache de l’application
-              href: devtools-guide-chromium/storage/applicationcache.md
-            - name: WebSQL
-              href: devtools-guide-chromium/storage/websql.md
-            - name: Cache
-              href: devtools-guide-chromium/storage/cache.md
-        - name: Aucun problème
-          href: devtools-guide-chromium/issues/index.md
-        - name: Menu de commande
-          href: devtools-guide-chromium/command-menu/index.md
-        - name: Émulation
-          items:
-            - name: Aperçu de l'émulation
-              href: devtools-guide-chromium/device-mode/index.md
-            - name: Émuler des dispositifs à double écran et pliables
-              href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
-            - name: Émuler et tester d'autres navigateurs
-              href: devtools-guide-chromium/device-mode/testing-other-browsers.md
-            - name: Guides
+            - name: Pour les débutants
               items:
+                - name: Ouvrir DevTools
+                  href: devtools-guide-chromium/open/index.md
+                - name: Mise en place du code HTML et du DOM
+                  href: devtools-guide-chromium/beginners/html.md
+                - name: Prise en main de l’affichage et de la modification du DOM
+                  href: devtools-guide-chromium/dom/index.md
+                - name: Prise en main de CSS
+                  href: devtools-guide-chromium/beginners/css.md
+                - name: Prise en main de l’affichage et de la modification de CSS
+                  href: devtools-guide-chromium/css/index.md
+                - name: Prise en main du débogage de JavaScript
+                  href: devtools-guide-chromium/javascript/index.md
+                - name: Prise en main de l’analyse des performances runtime
+                  href: devtools-guide-chromium/evaluate-performance/index.md
+                - name: Afficher les ressources de page
+                  href: devtools-guide-chromium/resources/index.md
+            - name: Modifier des fichiers avec les espaces de travail
+              href: devtools-guide-chromium/workspaces/index.md
+            - name: Inspecter l’activité réseau
+              href: devtools-guide-chromium/network/index.md
+            - name: Optimiser la vitesse du site web
+              href: devtools-guide-chromium/speed/get-started.md
+            - name: Débogage à distance
+              items:
+                - name: Prise en main du débogage à distance des appareils Android
+                  href: devtools-guide-chromium/remote-debugging/index.md
+                - name: Prise en main du débogage à distance avec les émulateurs SurfaceDuo
+                  href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
+                - name: Prise en main du débogage à distance des appareils Windows10
+                  href: devtools-guide-chromium/remote-debugging/windows.md
+        - name: Guides pratiques
+          items:
+            - name: Accessibilité
+              items:
+                - name: Référence d’accessibilité
+                  href: devtools-guide-chromium/accessibility/reference.md
+                - name: Naviguer dans DevTools avec les technologies d’assistance
+                  href: devtools-guide-chromium/accessibility/navigation.md
+                - name: Effectuer le suivi de l’élément actif
+                  href: devtools-guide-chromium/accessibility/focus.md
+            - name: Menu de commande
+              href: devtools-guide-chromium/command-menu/index.md
+            - name: Personnalisation de DevTools
+              items:
+                - name: Vue d'ensemble
+                  href: devtools-guide-chromium/customize/index.md
+                - name: Thème foncé
+                  href: devtools-guide-chromium/customize/dark-theme.md
+                - name: Modifier l’emplacement
+                  href: devtools-guide-chromium/customize/placement.md
+                - name: Faire correspondre la langue du navigateur
+                  href: devtools-guide-chromium/customize/localization.md
+                - name: Personnaliser les raccourcis
+                  href: devtools-guide-chromium/customize/shortcuts.md
+            - name: Test et émulation des appareils
+              items:
+                - name: Aperçu de l'émulation
+                  href: devtools-guide-chromium/device-mode/index.md
+                - name: Émuler des dispositifs à double écran et pliables
+                  href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
+                - name: Émuler et tester d'autres navigateurs
+                  href: devtools-guide-chromium/device-mode/testing-other-browsers.md
                 - name: Remplacer la chaîne de l’agent utilisateur
                   href: devtools-guide-chromium/device-mode/override-user-agent.md
                 - name: Remplacer la géolocalisation
                   href: devtools-guide-chromium/device-mode/geolocation.md
                 - name: Simuler l’orientation de l’appareil
                   href: devtools-guide-chromium/device-mode/orientation.md
-        - name: DOM
-          items:
-            - name: Prise en main
-              href: devtools-guide-chromium/dom/index.md
-        - name: JavaScript
-          items:
-            - name: Prise en main
-              href: devtools-guide-chromium/javascript/index.md
-            - name: Interrompre votre code avec des points d’arrêt
-              href: devtools-guide-chromium/javascript/breakpoints.md
-            - name: Rechercher du code JavaScript non utilisé
-              href: devtools-guide-chromium/coverage/index.md
-            - name: Mapper le code prétraité au code source
-              href: devtools-guide-chromium/javascript/source-maps.md
-            - name: Référence de débogage JavaScript
-              href: devtools-guide-chromium/javascript/reference.md
-            - name: Extraits de code
-              href: devtools-guide-chromium/javascript/snippets.md
-            - name: Remplacements
-              href: devtools-guide-chromium/javascript/overrides.md
-            - name: Vue d’ensemble du volet Sources
-              href: devtools-guide-chromium/sources/index.md
-            - name: Services d’arrière-plan de débogage
-              href: devtools-guide-chromium/javascript/background-services.md
-            - name: Guides
+            - name: Mode InternetExplorer
+              href: devtools-guide-chromium/ie-mode/index.md
+            - name: Résolution des problèmes Javascript
               items:
-                - name: Marquer des scripts de contenu comme du code de bibliothèque
+                - name: Référence de débogage JavaScript
+                  href: devtools-guide-chromium/javascript/reference.md
+                - name: Mapper le code prétraité au code source
+                  href: devtools-guide-chromium/javascript/source-maps.md
+                - name: Marquer des scripts de contenu comme code de bibliothèque
                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
-                - name: Désactiver JavaScript
-                  href: devtools-guide-chromium/javascript/disable.md
-        - name: Niveau de performance
-          items:
-            - name: Prise en main
-              href: devtools-guide-chromium/evaluate-performance/index.md
-            - name: Optimiser la vitesse du site web
-              href: devtools-guide-chromium/speed/get-started.md
-            - name: Vue d'ensemble
-              href: devtools-guide-chromium/rendering-tools/index.md
-            - name: Référence d’analyse des performances
-              href: devtools-guide-chromium/evaluate-performance/reference.md
-            - name: Référence d’événement de chronologie
-              href: devtools-guide-chromium/evaluate-performance/performance-reference.md
-            - name: Accélérer le runtime JavaScript
-              href: devtools-guide-chromium/rendering-tools/js-runtime.md
-        - name: Accessibilité
-          items:
-            - name: Référence
-              href: devtools-guide-chromium/accessibility/reference.md
-            - name: Naviguer dans DevTools avec les technologies d’assistance
-              href: devtools-guide-chromium/accessibility/navigation.md
-            - name: Guides
+                - name: Interrompre votre code avec des points d’arrêt
+                  href: devtools-guide-chromium/javascript/breakpoints.md
+            - name: Résolution des problèmes de mémoire
               items:
-                - name: Effectuer le suivi de l’élément actif
-                  href: devtools-guide-chromium/accessibility/focus.md
-                - name: Simulation du modèle de couleurs sombre/clair
+                - name: Terminologie de la mémoire
+                  href: devtools-guide-chromium/memory-problems/memory-101.md
+                - name: Résoudre les problèmes de mémoire
+                  href: devtools-guide-chromium/memory-problems/index.md
+            - name: Résolution des problèmes de performances
+              items:
+                - name: Référence d’analyse des performances
+                  href: devtools-guide-chromium/evaluate-performance/reference.md
+                - name: Référence d’événement de chronologie
+                  href: devtools-guide-chromium/evaluate-performance/performance-reference.md
+            - name: Résolution des problèmes de Worker du service
+              href: devtools-guide-chromium/service-workers/index.md
+        - name: Concepts
+          items:
+            - name: Vue 3D
+              href: devtools-guide-chromium/3d-view/index.md
+            - name: Animations
+              href: devtools-guide-chromium/inspect-styles/animations.md
+            - name: Application
+              items:
+                - name: Cache de l’application
+                  href: devtools-guide-chromium/storage/applicationcache.md
+                - name: Cache
+                  href: devtools-guide-chromium/storage/cache.md
+                - name: Cookies
+                  href: devtools-guide-chromium/storage/cookies.md
+                - name: Services d’arrière-plan de débogage
+                  href: devtools-guide-chromium/javascript/background-services.md
+                - name: Déboguer des PWA
+                  href: devtools-guide-chromium/progressive-web-apps/index.md
+                - name: IndexedDB
+                  href: devtools-guide-chromium/storage/indexeddb.md
+                - name: Stockage local
+                  href: devtools-guide-chromium/storage/localstorage.md
+                - name: Stockage de session
+                  href: devtools-guide-chromium/storage/sessionstorage.md
+                - name: WebSQL
+                  href: devtools-guide-chromium/storage/websql.md
+            - name: Console
+              items:
+                - name: Présentation de la console
+                  href: devtools-guide-chromium/console/index.md
+                - name: Messages de journal
+                  href: devtools-guide-chromium/console/log.md
+                - name: Exécuter JavaScript
+                  href: devtools-guide-chromium/console/javascript.md
+                - name: Référence
+                  href: devtools-guide-chromium/console/reference.md
+                - name: Regarder des expressions JavaScript en temps réel
+                  href: devtools-guide-chromium/console/live-expressions.md
+            - name: Couverture
+              href: devtools-guide-chromium/coverage/index.md
+            - name: Éléments
+              items:
+                - name: Référence CSS
+                  href: devtools-guide-chromium/css/reference.md
+                - name: Modifier les styles et les paramètres des polices CSS
+                  href: devtools-guide-chromium/inspect-styles/edit-fonts.md
+                - name: Inspecter la grille CSS
+                  href: devtools-guide-chromium/css/grid.md
+                - name: Forcer DevTools en mode Aperçu avant impression
+                  href: devtools-guide-chromium/css/print-preview.md
+            - name: Aucun problème
+              href: devtools-guide-chromium/issues/index.md
+            - name: Media
+              href: devtools-guide-chromium/media-panel/index.md
+            - name: Mémoire
+              items:
+                - name: Vue d’ensemble de la mémoire
+                  href: devtools-guide-chromium/memory-problems/index.md
+                - name: Enregistrer des instantanés de segment de mémoire
+                  href: devtools-guide-chromium/memory-problems/heap-snapshots.md
+                - name: Accélérer le runtime JavaScript
+                  href: devtools-guide-chromium/rendering-tools/js-runtime.md
+                - name: Utiliser l’instrumentation d’allocation sur la chronologie
+                  href: devtools-guide-chromium/memory-problems/allocation-profiler.md
+            - name: Network
+              items:
+                - name: Vue d'ensemble
+                  href: devtools-guide-chromium/network/reference.md
+                - name: Guide des problèmes de réseau
+                  href: devtools-guide-chromium/network/issues.md
+            - name: Performances
+              items:
+                - name: Analyser les performances runtime
+                  href: devtools-guide-chromium/rendering-tools/index.md
+                - name: Mode Événements de chronologie
+                  href: devtools-guide-chromium/evaluate-performance/performance-reference.md
+            - name: Appareils distants
+              href: devtools-guide-chromium/remote-debugging/local-server.md
+            - name: Rendu
+              items:
+                - name: Émuler les faiblesses de la vision
+                  href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
+                - name: Simuler des schémas de couleurs
                   href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
                 - name: Simuler un mouvement réduit
                   href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
-                - name: Émuler les faiblesses de la vision
-                  href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
-        - name: Débogage à distance
+            - name: Sécurité
+              href: devtools-guide-chromium/security/index.md
+            - name: Sources
+              items:
+                - name: Vue d’ensemble du volet sources
+                  href: devtools-guide-chromium/sources/index.md
+                - name: Référence de débogage JavaScript
+                  href: devtools-guide-chromium/javascript/reference.md
+                - name: Désactiver JavaScript
+                  href: devtools-guide-chromium/javascript/disable.md
+                - name: Remplacements
+                  href: devtools-guide-chromium/javascript/overrides.md
+                - name: Extraits de code
+                  href: devtools-guide-chromium/javascript/snippets.md
+            - name: WebAuthn
+              href: devtools-guide-chromium/webauthn/index.md
+        - name: Référence
           items:
-            - name: Périphériques Android
-              href: devtools-guide-chromium/remote-debugging/index.md
-            - name: Accéder aux serveurs locaux
-              href: devtools-guide-chromium/remote-debugging/local-server.md
-            - name: Émulateurs Surface Duo
-              href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
-            - name: Appareils Windows10
-              href: devtools-guide-chromium/remote-debugging/windows.md
-        - name: Mémoire
-          items:
-            - name: Vue d’ensemble de la mémoire
-              href: devtools-guide-chromium/memory-problems/index.md
-            - name: Comprendre la terminologie de la mémoire
-              href: devtools-guide-chromium/memory-problems/memory-101.md
-            - name: Enregistrer des instantanés de segment de mémoire
-              href: devtools-guide-chromium/memory-problems/heap-snapshots.md
-            - name: Utiliser l’instrumentation d’allocation sur la chronologie
-              href: devtools-guide-chromium/memory-problems/allocation-profiler.md
-        - name: Media
-          href: devtools-guide-chromium/media-panel/index.md
-        - name: WebAuthn
-          href: devtools-guide-chromium/webauthn/index.md
-        - name: Espaces travail
-          href: devtools-guide-chromium/workspaces/index.md
-        - name: Applications web progressives
-          href: devtools-guide-chromium/progressive-web-apps/index.md
-        - name: Sécurité
-          href: devtools-guide-chromium/security/index.md
-        - name: Raccourcis clavier
-          href: devtools-guide-chromium/shortcuts/index.md
-        - name: Ressources
-          href: devtools-guide-chromium/resources/index.md
-        - name: Personnalisation
-          items:
-            - name: Personnaliser la vue d’ensemble
-              href: devtools-guide-chromium/customize/index.md
-            - name: Thème foncé
-              href: devtools-guide-chromium/customize/dark-theme.md
-            - name: Modifier l’emplacement
-              href: devtools-guide-chromium/customize/placement.md
-            - name: Faire correspondre la langue du navigateur
-              href: devtools-guide-chromium/customize/localization.md
-            - name: Raccourcis
-              href: devtools-guide-chromium/customize/shortcuts.md
-    - name: Vue d’ensemble du protocole DevTools
-      href: devtools-protocol-chromium/index.md
+            - name: Référence de l’API de console
+              href: devtools-guide-chromium/console/api.md
+            - name: Référence de l’API des utilitaires de console
+              href: devtools-guide-chromium/console/utilities.md
+            - name: Vue d’ensemble du protocole DevTools
+              href: devtools-protocol-chromium/index.md
+            - name: Raccourcis clavier
+              href: devtools-guide-chromium/shortcuts/index.md
     - name: Extensions
       items:
         - name: Présentation des extensions
