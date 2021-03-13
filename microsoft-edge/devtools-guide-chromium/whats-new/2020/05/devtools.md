@@ -3,16 +3,16 @@ description: Utilisez les DevTools en mode de contraste élevé Windows, faire c
 title: Nouveautés de DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 701c328c1dc975a81129049fe2931139757205c3
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3264292721d5e4385b0e6d256d042c76182c21c7
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398573"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408324"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11398573"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="whats-new-in-devtools-microsoft-edge-84"></a>Nouveautés de DevTools (Microsoft Edge 84)  
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Annonces de l’équipe Microsoft Edge DevTools  
 
-Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer les nouvelles fonctionnalités des extensions DevTools, Microsoft Visual Studio Code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [microsoft Edge][MicrosoftEdgePreviewChannels] et suivez-nous [sur Twitter.][EdgeDevToolsTwitterAccount]  
+Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer les nouvelles fonctionnalités des extensions DevTools, Microsoft Visual Studio Code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et [suivez-nous sur Twitter.][EdgeDevToolsTwitterAccount]  
 
 ### <a name="use-the-devtools-in-windows-high-contrast-mode"></a>Utiliser les DevTools en mode de contraste élevé Windows
 
@@ -61,7 +60,7 @@ Pour essayer l’expérience, ouvrez Paramètres de DevTools en sélectionnant o
 
 Choose **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  Les raccourcis clavier des DevTools correspondent désormais aux raccourcis des actions équivalentes dans Visual Studio Code.  
 
-Par exemple, le raccourci clavier pour mettre en pause ou poursuivre l’exécution d’un script [dans Visual Studio Code][VisualStudioCodeShortcuts] est `F5` .  Avec **devTools (par défaut)** prédéfiny, ce même raccourci dans devTools est, mais avec le `F8` **code Visual Studio** prédéfiny, ce raccourci est maintenant également `F5` .  
+Par exemple, le raccourci clavier pour mettre en pause ou poursuivre l’exécution d’un script [dans Visual Studio Code][VisualStudioCodeShortcuts] est `F5` .  Avec **devTools (par défaut)** prédéfiny, ce même raccourci dans DevTools est, mais avec le code `F8` **Visual Studio** prédéfiny, ce raccourci est désormais également `F5` .  
 
 La fonctionnalité est actuellement disponible dans Microsoft Edge 84 en tant qu’expérience. Veuillez donc partager vos commentaires [avec](#getting-in-touch-with-microsoft-edge-devtools-team) l’équipe !  
 
@@ -87,7 +86,7 @@ Choisissez **inspectez** l’onglet ou PWA que vous souhaitez déboguer pour ouv
 
 ### <a name="resize-the-devtools-drawer-more-easily"></a>Resize the DevTools drawer more easily  
 
-Dans Microsoft Edge 83 ou une antérieure, vous n’avez pu resizer le caisse [DevTools][DevToolsDrawer] qu’en pointant à l’intérieur de la barre d’outils du caisse.  Le drawer se comporte différemment des autres contrôles de re resize pour les volets des DevTools où vous placez le pointeur sur la bordure du volet pour le resizer.  Sélectionnez l’image suivante pour afficher le resizing the Drawer worked in version 83 or earlier of Microsoft Edge.  
+Dans Microsoft Edge 83 ou une précédente, vous n’avez pu resizer le caisse [DevTools][DevToolsDrawer] qu’en pointant à l’intérieur de la barre d’outils du bac à outils.  Le drawer se comporte différemment des autres contrôles de re resize pour les volets des DevTools où vous placez le pointeur sur la bordure du volet pour le resizer.  Sélectionnez l’image suivante pour afficher le resizing the Drawer worked in version 83 or earlier of Microsoft Edge.  
 
 :::image type="complex" source="../../media/2020/05/drawer-83.msft.png" alt-text="Resizing the DevTools Drawer in Microsoft Edge 83" lightbox="../../media/2020/05/drawer-83.msft.gif":::
    Resizing the DevTools Drawer in Microsoft Edge 83
@@ -129,7 +128,7 @@ Problème de chrome [#963183][CR963183]
 
 Les sections suivantes annoncent des fonctionnalités supplémentaires disponibles dans Microsoft Edge 84 qui ont été contribués au projet Chromium open source.  
 
-### <a name="fix-site-issues-with-the-new-issues-tool-in-the-devtools-drawer"></a>Résoudre les problèmes de site avec le nouvel outil Problèmes dans le caisse DevTools
+### <a name="fix-site-issues-with-the-new-issues-tool-in-the-devtools-drawer"></a>Résoudre les problèmes de site avec le nouvel outil Problèmes dans le caisse de DevTools
 
 Le nouvel outil Problèmes dans le caisse DevTools a été conçu pour vous aider à réduire la fatigue et l’encombrement des **notifications** de la **console.**  Actuellement, la **console** est l’endroit central pour les développeurs de sites web, les bibliothèques, les frameworks et Microsoft Edge pour enregistrer les messages, les avertissements et les erreurs.  L’outil Problèmes regroupe les avertissements du navigateur de manière structurée, agrégée et actionnable, des liens vers les ressources affectées dans Microsoft Edge DevTools et fournit des conseils sur la façon de résoudre les problèmes. ****  Au fil du temps, de plus en plus d’avertissements sont **publiés** dans Microsoft Edge dans l’outil Problèmes plutôt que dans la **console,** ce qui devrait aider à réduire l’encombrement dans la **console.**  
 
@@ -157,7 +156,7 @@ Problème de chrome [#1040025][CR1040025]
 
 ### <a name="performance-panel-updates"></a>Mises à jour du panneau de performances  
 
-#### <a name="view-total-blocking-time-information-in-the-footer"></a>Afficher les informations sur le temps total de blocage dans le pied de groupe  
+#### <a name="view-total-blocking-time-information-in-the-footer"></a>Afficher le nombre total d’informations sur le temps de blocage dans le pied de groupe  
 
 Après avoir enregistré vos performances de chargement, le panneau **Performances** affiche désormais les informations sur le temps de blocage total \(TBT\) dans le pied de groupe.  TBT est une mesure de performances de charge qui permet de quantifier le temps qu’une page prend pour devenir utilisable.  Elle mesure essentiellement la durée pendant combien de temps une page semble utilisable \(car le contenu est restituer à l’écran\) ; mais n’est pas réellement utilisable, car JavaScript bloque le thread principal et par conséquent, la page ne répond pas aux entrées de l’utilisateur.  TBT est la mesure principale pour l’approximation du premier délai d’entrée.  
 
@@ -184,7 +183,7 @@ La nouvelle section **Expérience** du panneau **Performances** vous permet de d
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->  
 <!--todo:  add link layout shifts (WebdevCls) when section is live  -->  
 
-Choisissez **l’événement Layout Shift** pour afficher les détails de l’équipe de disposition dans le **volet** Résumé.  Pointez sur **les champs Déplacé d’et** Déplacé **vers** pour visualiser l’endroit où le changement de disposition s’est produit.  
+Choisissez **l’événement Layout Shift** pour afficher les détails de l’équipe de disposition dans le **volet** Résumé.  Pointez sur les **champs Déplacé d’et** Déplacé **vers** pour visualiser l’endroit où le changement de disposition s’est produit.  
 
 :::image type="complex" source="../../media/2020/05/cls.msft.png" alt-text="Détails d’un changement de disposition" lightbox="../../media/2020/05/cls.msft.png":::
    Détails d’un changement de disposition  
@@ -275,7 +274,7 @@ Les raccourcis d’application aident les utilisateurs à démarrer rapidement d
 
 Si vous utilisez Windows ou macOS, envisagez d’utiliser les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] comme navigateur de développement par défaut.  Les canaux d’aperçu vous permettent d’accéder aux dernières fonctionnalités de DevTools.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Mise en contact avec l’équipe Devtools de Microsoft Edge  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Entrer en contact avec l’équipe microsoft Edge Devtools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -311,9 +310,9 @@ Si vous utilisez Windows ou macOS, envisagez d’utiliser les canaux d’aperçu
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Bogues Chromium"
 
 [CR174309]: https://crbug.com/174309 "DevTools : autoriser la personnalisation des raccourcis clavier/des liaisons de touches | Bogues Chromium"  
-[CR963183]: https://crbug.com/963183 "DevTools ne sont pas conformes WCAG | Bogues Chromium"  
+[CR963183]: https://crbug.com/963183 "Les devTools ne sont pas conformes AUX WCAG | Bogues Chromium"  
 [CR1040019]: https://crbug.com/1040019 "DevTools : afficher facilement un aperçu des images et des images d’arrière-plan dans le volet Styles | Bogues Chromium"  
-[CR1040025]: https://crbug.com/1040025 "DevTools : afficher des informations a11y de base dans la fenêtre de | Bogues Chromium"  
+[CR1040025]: https://crbug.com/1040025 "DevTools : afficher les informations a11y de base dans la fenêtre de | Bogues Chromium"  
 [CR1048378]: https://crbug.com/1048378 "Prise en charge de l’interface utilisateur DevTools pour les | Bogues Chromium"  
 [CR1054381]: https://crbug.com/1054381 "CR 1054381 | Bogues Chromium"  
 [CR1068116]: https://crbug.com/1068116 "Ship issues panel | Bogues Chromium"  

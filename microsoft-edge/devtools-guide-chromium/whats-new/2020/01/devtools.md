@@ -3,16 +3,16 @@ description: Affichage 3D, Visual Studio’intégration à Microsoft Edge, et bi
 title: Nouveautés de DevTools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: a60be4d55d7f6152ed7ce7afd24049f0f5909a4b
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 204a596e2497415eefeeb8aa819106635ff30caa
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398244"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408359"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11398244"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="whats-new-in-devtools-microsoft-edge-81"></a>Nouveautés de DevTools (Microsoft Edge 81)  
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Annonces de l’équipe Microsoft Edge DevTools  
 
-Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer les nouvelles fonctionnalités des extensions DevTools, Microsoft Visual Studio Code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et [suivez-nous sur Twitter.][EdgeDevToolsTwitterAccount]  
+Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités des extensions DevTools, Microsoft Visual Studio Code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et [suivez-nous sur Twitter.][EdgeDevToolsTwitterAccount]  
 
 ### <a name="accessibility-improvements-to-the-devtools"></a>Améliorations de l’accessibilité de DevTools  
 
@@ -105,7 +104,7 @@ De nombreux développeurs utilisent d’autres outils de développement, tels qu
 
 DevTools correspond automatiquement à la langue que vous utilisez pour Microsoft Edge dans `edge://settings/languages` .  
 
-Si vous souhaitez que Microsoft Edge soit dans une langue et que vos DevTools restent en anglais, sélectionnez `F1` Dans DevTools pour ouvrir [Paramètres][Settings] et désactiver la langue du navigateur Match . ****  
+Si vous souhaitez que Microsoft Edge soit dans une langue et que vos DevTools restent en anglais, sélectionnez `F1` dans DevTools pour ouvrir [Paramètres][Settings] et désactiver la langue du navigateur Match. ****  
 
 :::image type="complex" source="../../images/2020/01/localized-devtools.msft.png" alt-text="DevTools en allemand" lightbox="../../images/2020/01/localized-devtools.msft.png":::
    DevTools en allemand  
@@ -137,7 +136,7 @@ Utilisez la vue **3D** pour déboguer votre application web en naviguant dans le
 
 Pour accéder à la vue 3D, sélectionnez , tapez en mode `Ctrl`  +  `Shift`  +  `P` **3D** et **sélectionnez Afficher la vue 3D.**  
 
-L’équipe Microsoft Edge travaille avec l’équipe Chromium sur l’interface utilisateur et ajoute des fonctionnalités à la vue 3D. Par ailleurs, envoyez vos [commentaires.](#getting-in-touch-with-microsoft-edge-devtools-team)  
+L’équipe Microsoft Edge travaille avec l’équipe Chromium sur l’interface utilisateur et ajoute des fonctionnalités à la vue 3D, donc veuillez envoyer vos [commentaires.](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
 Problème de chrome [#987787][CR987787]  
 
@@ -167,10 +166,10 @@ Pour plus d’informations, [découvrez comment déboguer Microsoft Edge][Visual
 
 #### <a name="webhint"></a>webhint  
 
-La [Visual Studio][VisualStudioMarketplaceWebhintExtension] l’extension de code utilise pour améliorer votre page web pendant `webhint` que vous l’écrivez.  Cette extension s’exécute et signale les diagnostics sur vos fichiers d’espace de travail en fonction de `webhint` l’analyse.  
+La [Visual Studio][VisualStudioMarketplaceWebhintExtension] l’extension de code utilise pour améliorer votre `webhint` page web pendant que vous l’écrivez.  Cette extension s’exécute et signale les diagnostics sur vos fichiers d’espace de travail en fonction de `webhint` l’analyse.  
 
 :::image type="complex" source="../../images/2020/01/webhint-vscode-extension.msft.png" alt-text="The webhint Visual Studio Code extension analyzing a .tsx file in Visual Studio Code" lightbox="../../images/2020/01/webhint-vscode-extension.msft.png":::
-   La page web Visual Studio’extension de code analysant un `.tsx` fichier dans Visual Studio Code  
+   La Visual Studio l’extension de code qui analyse un `.tsx` fichier dans Visual Studio Code  
 :::image-end:::  
 
 [En savoir plus sur l Visual Studio’extension web code.][WebhintVisualStudioCodeExtension]  
@@ -207,7 +206,7 @@ Après [avoir activé la barre d’outils][DeviceToolbar]de l’appareil, simule
    Simulation d’uneport d’affichage G4  
 :::image-end:::  
 
-Sélectionnez [Afficher le cadre de][DeviceFrame] l’appareil pour afficher le matériel de LaG4 autour de la fenêtre d’affichage.  
+Choisissez [Afficher l’image de l’appareil][DeviceFrame] pour afficher le matériel De LaG4 autour de la fenêtre d’affichage.  
 
 :::image type="complex" source="../../images/2020/01/motog4frame.msft.png" alt-text="Affichage du matériel Du G4" lightbox="../../images/2020/01/motog4frame.msft.png":::
    Affichage du matériel Du G4  
@@ -237,7 +236,7 @@ Problème de chrome [#1030258][CR1030258]  <!-- inaccessible  -->
 Les tableaux Cookies des **outils** Réseau et **Application** incluent désormais une **colonne** Priorité.  
 
 > [!CAUTION]
-> Les navigateurs basés sur Chromium, tels que Microsoft Edge, sont les seuls à la prise en charge de la priorité des cookies.  
+> Les navigateurs basés sur Chromium, tels que Microsoft Edge, sont les seuls à prise en charge de la priorité des cookies.  
 
 Problème de chrome [#1026879][CR1026879]  
 
@@ -346,7 +345,7 @@ Si vous utilisez Windows ou macOS, envisagez d’utiliser les canaux d’aperçu
 [CR1029826]: https://crbug.com/1029826 "onglet réseau -> choisir de demander -> copie -> copie, car l’extraction ne copie pas les cookies | Bogues Chromium"  
 [CR985402]: https://crbug.com/985402 "Les chaînes d’erreur d’icône de manifeste d’application web | Bogues Chromium"  
 [CR963183]: https://crbug.com/963183 "DevTools ne sont pas conformes WCAG | Bogues Chromium"  
-[CR941561]: https://crbug.com/941561 "Localisabilité de l'| Bogues Chromium"  
+[CR941561]: https://crbug.com/941561 "Localisabilité du | DevTools Bogues Chromium"  
 [CR987787]: https://crbug.com/987787 "Vue Dom 3D | Bogues Chromium"  
 
 [CSSContentDemo]: https://mathiasbynens.github.io/css-dbg-stories/css-escapes.html "Démonstration du contenu CSS sans paysage"  
@@ -355,7 +354,7 @@ Si vous utilisez Windows ou macOS, envisagez d’utiliser les canaux d’aperçu
 
 [TheWebWeWant]: https://aka.ms/webwewant "Le site web que nous voulons"  
 [AccessibilityInsights]: https://aka.ms/a11yinsights "Informations sur l’accessibilité"  
-[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Modèle objet de document (DOM) | MDN"  
+[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"  
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools compte Twitter"  
 

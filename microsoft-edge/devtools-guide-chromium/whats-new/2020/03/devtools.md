@@ -3,16 +3,16 @@ description: Émuler les défaillances de la vision des couleurs, ancrer à gauc
 title: Nouveautés de DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 158d91e3d9c925beebe03a1baa8d6308b650262b
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: f97155b12a679f630ce80c007e7f0ca693e19876
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398944"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408352"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398944"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="whats-new-in-devtools-microsoft-edge-83"></a>Nouveautés de DevTools (Microsoft Edge 83)  
 
 Après la mise à jour de la planification Chromium, nous ajustons notre planification pour les prochaines publication de Microsoft Edge et annulons la version Microsoft Edge 82. Consultez notre [billet de blog pour][WindowsBlogStableRelease] plus d’informations.  
@@ -36,11 +35,11 @@ Voici les nouvelles fonctionnalités disponibles dans DevTools dans Microsoft Ed
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Annonces de l’équipe Microsoft Edge DevTools  
 
-Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer les nouvelles fonctionnalités des extensions DevTools, Microsoft Visual Studio Code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [microsoft Edge][MicrosoftEdgePreviewChannels] et suivez-nous [sur Twitter.][EdgeDevToolsTwitterAccount]  
+Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer les nouvelles fonctionnalités des extensions DevTools, Microsoft Visual Studio Code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et [suivez-nous sur Twitter.][EdgeDevToolsTwitterAccount]  
 
 ### <a name="remotely-debug-microsoft-edge-on-windows-10-devices"></a>Débogage à distance de Microsoft Edge sur les appareils Windows 10  
 
-[L’application Outils à distance pour Microsoft Edge \(Bêta\)][RemoteTools] est désormais disponible dans le [Microsoft Store.][MicrosoftStore]  À l’aide de cette application, qui étend [Windows Device Portal,][WindowsUwpDebugTestPerfDevicePortal]vous pouvez vous connecter à partir de l’instance de Microsoft Edge en cours d’exécution sur votre ordinateur de développement à un appareil Windows 10 distant, afficher la liste des cibles \(tous les onglets de Microsoft Edge et [pwAs][ProgressiveWebAppsChromiumIndex] s’ouvrent sur l’appareil Windows 10\), et utiliser DevTools sur votre ordinateur de développement par rapport à une cible s’exécutant sur l’appareil Windows 10 distant.  
+[L’application Outils à distance pour Microsoft Edge \(Bêta\)][RemoteTools] est désormais disponible dans le [Microsoft Store.][MicrosoftStore]  À l’aide de cette application, qui étend [Windows Device Portal,][WindowsUwpDebugTestPerfDevicePortal]vous pouvez vous connecter à partir de l’instance de Microsoft Edge en cours d’exécution sur votre ordinateur de développement à un appareil Windows 10 distant, afficher une liste des cibles \(tous les onglets de Microsoft Edge et [pwAs][ProgressiveWebAppsChromiumIndex] ouverts sur l’appareil Windows 10\) et utiliser DevTools sur votre ordinateur de développement par rapport à une cible s’exécutant sur l’appareil Windows 10 distant.  
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="Application Outils à distance pour Microsoft Edge (bêta) disponible dans le Microsoft Store" lightbox="../../media/2020/03/remote-tools.msft.png":::
    Application [Outils à distance pour Microsoft Edge (bêta)][RemoteTools] disponible dans le [Microsoft Store][MicrosoftStore]  
@@ -50,7 +49,7 @@ Lisez notre guide pour la configuration de votre appareil Windows 10 et de votre
 
 ### <a name="new-ways-to-access-settings"></a>Nouvelles façons d’accéder aux paramètres  
 
-Il existe des milliers de paramètres pour devTools que vous pouvez personnaliser pour donner à DevTools l’apparence, l’apparence et le travail dont vous avez besoin. Dans Microsoft Edge 83, l’accès aux [paramètres][DevtoolsCustomizeIndexSettings] dans DevTools est désormais beaucoup plus facile.  Ouvrez Paramètres avec l’icône d’engrenage en face des alertes de la console et du menu principal.  
+Il existe des milliers de paramètres pour devTools que vous pouvez personnaliser pour donner à DevTools l’apparence, l’apparence et le travail dont vous avez besoin. Dans Microsoft Edge 83, l’accès aux [paramètres][DevtoolsCustomizeIndexSettings] dans DevTools est désormais beaucoup plus facile.  Ouvrez Paramètres avec l’icône d’engrenage en face des alertes de console et du menu principal.  
 
 :::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="L’icône d’engrenage ouvre paramètres dans DevTools" lightbox="../../media/2020/03/settings.msft.png":::
    L’icône d’engrenage ouvre **paramètres** dans DevTools  
@@ -66,7 +65,7 @@ Problème de chrome [#1050855][CR1050855]
 
 ### <a name="new-and-improved-infobars"></a>Barres d’informations nouvelles et améliorées
 
-Les barres de notification d’information \(infobars\) dans DevTools ont désormais une apparence améliorée et des fonctionnalités supplémentaires. Dans Microsoft Edge 83, les barres d’informations sont plus faciles à lire et fournissent des boutons afin que vous pouvez immédiatement prendre l’action pertinente.  
+Les barres de notification d’information \(infobars\) dans DevTools ont désormais une apparence améliorée et des fonctionnalités supplémentaires. Dans Microsoft Edge 83, les barres d’informations sont plus faciles à lire et fournissent des boutons de sorte que vous pouvez immédiatement prendre l’action pertinente.  
 
 :::image type="complex" source="../../media/2020/03/infobar.msft.png" alt-text="Barre d’informations pour l’impression d’un fichier minifié dans Microsoft Edge 83" lightbox="../../media/2020/03/infobar.msft.png":::
    Barre d’informations pour l’impression d’un fichier minifié dans Microsoft Edge Version 83  
@@ -76,7 +75,7 @@ Problème de chrome [#1056348][CR1056348]
 
 ### <a name="navigate-the-color-picker-with-your-keyboard"></a>Naviguer dans le s sélectionneur de couleurs avec votre clavier  
 
-Le [s sélectionneur de couleurs][DevtoolsCssReferenceColorPicker] est une interface graphique graphique dans le panneau [Éléments pour][DevtoolsCssIndex] la modification et les `color` `background-color` déclarations.  Dans les versions précédentes de Microsoft Edge, vous n’étiez pas en mesure de naviguer dans la section **Nuances** du s [picker][DevtoolsCssReferenceColorPicker] de couleurs avec le clavier.  
+Le [s picker de couleur][DevtoolsCssReferenceColorPicker] est une interface graphique graphique dans le panneau Éléments [pour][DevtoolsCssIndex] la modification et `color` les `background-color` déclarations.  Dans les versions précédentes de Microsoft Edge, vous n’étiez pas en mesure de naviguer dans la section **Nuances** du s [picker][DevtoolsCssReferenceColorPicker] de couleurs avec le clavier.  
 
 :::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="Vous pouvez désormais utiliser votre clavier pour déplacer le sélecteur dans la section Nuances du sélecteur de couleurs" lightbox="../../media/2020/03/color-picker.msft.png":::
    Vous pouvez désormais utiliser votre clavier pour déplacer le sélecteur dans la section **Nuances** du [sélecteur de couleurs][DevtoolsCssReferenceColorPicker]  
@@ -88,7 +87,7 @@ Problème de chrome [#963183][CR963183]
 
 ### <a name="properties-tab-now-populates-after-a-page-refresh"></a>L’onglet Propriétés se remplit maintenant après l’actualisation d’une page  
 
-Dans Microsoft Edge 81 et **** les antérieures, l’onglet Propriétés du panneau [Éléments][DevtoolsCssIndex] a été rompu par des actualisations de page.  Lorsque vous avez actualisé la page, **l’onglet Propriétés** n’a pas rempli les propriétés de l’élément actuellement sélectionné.  
+Dans Microsoft Edge 81 et **** les précédentes, l’onglet Propriétés du panneau [Éléments][DevtoolsCssIndex] a été rompu par des actualisations de page.  Lorsque vous avez actualisé la page, **l’onglet Propriétés** n’a pas rempli les propriétés de l’élément actuellement sélectionné.  
 
 :::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="Dans Microsoft Edge 81 et les précédentes, l’onglet Propriétés était vide après l’actualisation d’une page" lightbox="../../media/2020/03/properties-in-81.msft.png":::
    Dans Microsoft Edge 81 et les précédentes, **l’onglet Propriétés** était vide après l’actualisation d’une page  
@@ -106,21 +105,21 @@ Problème de chrome [#1050999][CR1050999]
 
 **L’outil Changes** suit toutes les modifications que vous avez apportées à CSS ou JavaScript dans DevTools.  Vous pouvez utiliser l’outil **Modifications** pour afficher rapidement toutes vos modifications et les remettre à votre éditeur/IDE.  
 
-Pour ouvrir **l’outil Modifications,** sélectionnez `Ctrl` + `Shift` + `P` dans DevTools pour ouvrir le [menu commande][DevToolsCommandMenuIndex] et tapez `changes` .  choisissez et exécutez la **commande Afficher les modifications** pour ouvrir **l’outil Modifications** dans le caisse DevTools.  
+Pour ouvrir **l’outil Modifications,** sélectionnez `Ctrl` + `Shift` + `P` dans DevTools pour ouvrir le [menu commande][DevToolsCommandMenuIndex] et tapez `changes` .  choisissez et exécutez la **commande Afficher les modifications** pour ouvrir l’outil **Modifications** dans le caisse de DevTools.  
 
-Lorsque vous avez apporté une modification à un fichier minifié, l’outil **Changes** vous permet de faire défiler horizontalement pour afficher l’ensemble de votre code minifié.  À partir de Microsoft Edge 83, vous pouvez maintenant faire défiler horizontalement à l’aide des touches de direction de votre clavier.  
+Lorsque vous avez apporté une modification à un fichier minifié, l’outil **Changes** vous permet de faire défiler horizontalement pour afficher l’ensemble de votre code minifié.  À partir de Microsoft Edge 83, vous pouvez désormais faire défiler horizontalement à l’aide des touches de direction de votre clavier.  
 
 :::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="Dans Microsoft Edge 83, vous pouvez faire défiler horizontalement avec les touches de direction pour afficher votre code minifié dans l’outil Modifications" lightbox="../../media/2020/03/changes.msft.png":::
-   Dans Microsoft Edge 83, vous pouvez faire défiler horizontalement avec les touches de direction pour afficher les modifications apportées à votre code minifié dans l’outil **Modifications**  
+   Dans Microsoft Edge 83, vous pouvez faire défiler horizontalement avec les touches de direction pour afficher les modifications apportées à votre code minifié dans l’outil **Modifications.**  
 :::image-end:::  
 
-Si vous utilisez des lecteurs d’écran ou le clavier pour naviguer dans DevTools, envoyez-nous vos commentaires en nous faisant part de vos [commentaires][PostTweetEdgeDevTools] ou en criant l’icône Envoyer [des](#getting-in-touch-with-microsoft-edge-devtools-team) commentaires !  
+Si vous utilisez des lecteurs d’écran ou le clavier pour naviguer dans DevTools, envoyez-nous vos commentaires en [nous][PostTweetEdgeDevTools] tweetant ou en cinglant l’icône Envoyer [des](#getting-in-touch-with-microsoft-edge-devtools-team) commentaires !  
 
 Problème de chrome [#963183][CR963183]  
 
 ## <a name="announcements-from-the-chromium-project"></a>Annonces du projet de Chromium  
 
-Les sections suivantes annoncent des fonctionnalités supplémentaires disponibles dans Microsoft Edge 83 qui ont été contribués au projet Chromium open source.  
+Les sections suivantes annoncent des fonctionnalités supplémentaires disponibles dans Microsoft Edge 83 qui ont été contribués au projet open source Chromium.  
 
 ### <a name="emulate-vision-deficiencies"></a>Émuler les faiblesses de la vision  
 
@@ -130,7 +129,7 @@ Ouvrez [l’onglet][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] Ren
    Émulation d’une vision floue  
 :::image-end:::  
 
-DevTools est en mesure d’émuler la vision floue et les types suivants de [défauts de vision de couleur.][ColorBlindnessTypes]  
+DevTools est en mesure d’émuler la vision floue et les types suivants de défauts [de vision de couleur.][ColorBlindnessTypes]  
 
 | Problèmes de vision des couleurs | Détails |  
 |:--- |:--- |  
@@ -223,7 +222,7 @@ Problème de chrome [#1011679][CR1011679]
 
 ### <a name="the-audits-panel-is-now-the-lighthouse-panel"></a>Le panneau Audits est désormais le panneau Panneau de sélection  
 
-L’équipe DevTools a fréquemment reçu des commentaires des développeurs web qui ont dit que même s’il était possible d’exécuter [Lasser][GithubGoogleChromeLighthouse] à partir de DevTools, lorsqu’ils l’ont essayé, ils n’ont pas pu trouver le panneau « Course », de sorte que le panneau **Audits** est désormais le panneau DevTools. ****  
+L’équipe DevTools a fréquemment reçu des commentaires des développeurs web qui ont dit que même s’il était possible d’exécuter [Lasser][GithubGoogleChromeLighthouse] à partir de DevTools, lorsqu’ils l’ont essayé, ils n’ont pas pu trouver le panneau « Îles », de sorte que le panneau **Audits** est désormais le panneau DevTools. ****  
 
 :::image type="complex" source="../../media/2020/03/lighthouse.msft.png" alt-text="Panneau de sélection" lightbox="../../media/2020/03/lighthouse.msft.png":::
    Panneau de sélection  

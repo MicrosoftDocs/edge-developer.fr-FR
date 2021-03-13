@@ -3,16 +3,16 @@ description: Améliorations en matière d’accessibilité, utilisation de DevTo
 title: Nouveautés de DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 80f870d22c81479bff9b9413717ccc7c323d9a05
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 7758b7f8ed55bb766abc56d6dd29ec124617e7ff
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397558"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408310"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11397558"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="whats-new-in-devtools-microsoft-edge-80"></a>Nouveautés de DevTools (Microsoft Edge 80)  
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Annonces de l’équipe Microsoft Edge DevTools  
 
-Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer les nouvelles fonctionnalités des extensions DevTools, Microsoft Visual Studio Code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et [suivez-nous sur Twitter.][EdgeDevToolsTwitterAccount]  
+Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités des extensions DevTools, Microsoft Visual Studio Code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et [suivez-nous sur Twitter.][EdgeDevToolsTwitterAccount]  
 
 ### <a name="accessibility-improvements-to-the-devtools"></a>Améliorations de l’accessibilité de DevTools  
 
@@ -42,7 +41,7 @@ L’équipe DevTools a apporté 170 modifications à Chromium pour résoudre les
    **L’outil Performances** dans DevTools avec les améliorations apportées à la navigation au clavier et au lecteur d’écran  
 :::image-end:::  
 
-Vous souhaitez savoir comment rendre votre page web accessible à tous vos utilisateurs ?  Téléchargez [les informations sur l’accessibilité][AccessibilityInsights] et les extensions web [pour][WebhintBrowserExtension] que Microsoft Edge commence.  
+Vous souhaitez découvrir comment rendre votre page web accessible à tous vos utilisateurs ?  Téléchargez [les informations sur l’accessibilité][AccessibilityInsights] et les extensions web [pour][WebhintBrowserExtension] que Microsoft Edge commence.  
 
 Si vous utilisez des lecteurs d’écran ou le clavier pour naviguer dans DevTools, envoyez vos commentaires en nous faisant un [tweet][PostTweetEdgeDevTools] ou en criant l’icône Envoyer [des](#getting-in-touch-with-microsoft-edge-devtools-team) commentaires !  
 
@@ -121,7 +120,7 @@ L’extension Microsoft Edge webhint vous permet d’analyser facilement votre p
    Outil **Hints** dans DevTools lors de l’installation de l’extension de navigateur webhint  
 :::image-end:::  
 
-[Essayez l’extension de navigateur webhint dans Microsoft Edge.][MicrosoftEdgeInsiderAddons]  Une fois l’extension installée, ouvrez DevTools et choisissez l’outil **Hints.**  À partir de là, exécutez une analyse de site personnalisable.  Pour en savoir [plus, webhint.io][WebhintBrowserExtension] plus d’informations.
+[Essayez l’extension de navigateur webhint dans Microsoft Edge.][MicrosoftEdgeInsiderAddons]  Une fois l’extension installée, ouvrez DevTools et choisissez **l’outil Hints.**  À partir de là, exécutez une analyse de site personnalisable.  Pour en savoir [plus, webhint.io][WebhintBrowserExtension] plus d’informations.
 
 ### <a name="3d-view"></a>Vue 3D  
 
@@ -133,7 +132,7 @@ Utilisez la vue **3D** pour déboguer votre application web en naviguant dans le
 
 Pour accéder à la vue 3D, accédez à l’indicateur d’expériences Outils de développement et assurez-vous qu’il `edge://flags` est activé. **** ****  Redémarrez Microsoft Edge et ouvrez DevTools.  Sélectionnez dans DevTools ou ouvrez la section Expériences de `F1` **paramètres,** puis activez la case à cocher Activer l’affichage  >  **** **3D.**  Maintenant, `Ctrl`  +  `Shift`  +  `P` sélectionnez , tapez **en mode 3D et** **sélectionnez Afficher la vue 3D**.  
 
-Nous travaillons sur l’interface utilisateur et ajoutons des fonctionnalités à la vue 3D. Veuillez donc nous envoyer vos [commentaires.](#getting-in-touch-with-microsoft-edge-devtools-team)  
+Nous travaillons sur l’interface utilisateur et ajoutons des fonctionnalités à l’affichage 3D. Veuillez donc nous envoyer vos [commentaires.](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
 Problème de chrome [#987787][CR987787]
 
@@ -149,7 +148,7 @@ Utilisez l’outil Elements à partir Visual Studio Code en ajoutant l’extensi
    **L’outil Elements** dans Visual Studio Code à l’aide de l’extension Elements pour Microsoft Edge  
 :::image-end:::  
 
-Pour plus d’informations, consultez [Éléments pour l’extension de code Visual Studio Microsoft Edge.][VisualStudioCodeElementEdgeExtension]  
+Pour plus d’informations, consultez [Éléments pour l’extension][VisualStudioCodeElementEdgeExtension]de code Visual Studio Microsoft Edge.  
 
 #### <a name="debugger-for-microsoft-edge"></a>Débogger pour Microsoft Edge  
 
@@ -166,7 +165,7 @@ Pour plus d’informations, [découvrez comment déboguer Microsoft Edge][Visual
 [L’extension de Visual Studio][VisualStudioMarketplaceWebhintExtension] web utilise l’extension de code pour améliorer votre page web pendant que vous `webhint` l’écrivez ! Cette extension s’exécute et signale les diagnostics sur vos fichiers d’espace de travail en fonction de `webhint` l’analyse.  
 
 :::image type="complex" source="../../images/2019/12/webhint-vscode-extension.msft.png" alt-text="The webhint Visual Studio Code extension analyzing a .tsx file in Visual Studio Code" lightbox="../../images/2019/12/webhint-vscode-extension.msft.png":::
-   La page web Visual Studio’extension de code analysant un `.tsx` fichier dans Visual Studio Code  
+   La Visual Studio l’extension de code qui analyse un `.tsx` fichier dans Visual Studio Code  
 :::image-end:::  
 
 [En savoir plus sur l Visual Studio’extension web code.][WebhintVisualStudioCodeExtension]  
@@ -197,14 +196,14 @@ Les sections suivantes annoncent des fonctionnalités supplémentaires disponibl
 
 ### <a name="support-for-let-and-class-redeclarations-in-the-console"></a>Prise en charge des redéclarations de classes et de let dans la console  
 
-La **console** prend désormais en charge les déclarations et `let` les `class` instructions.  L’incapacité à redéclarer était une gêne courante pour les développeurs web qui utilisent la console pour expérimenter du nouveau code JavaScript.  
+La **console prend** désormais en charge les déclarations et les `let` `class` instructions.  L’incapacité à redéclarer était une gêne courante pour les développeurs web qui utilisent la console pour expérimenter du nouveau code JavaScript.  
 
 > [!WARNING]
-> La déclaration d’une ou d’une instruction dans un script en dehors de la console ou au sein d’une seule entrée de `let` console provoque toujours une `class` `SyntaxError` .  
+> La déclaration d’une `let` ou `class` d’une instruction dans un script en dehors de la console ou au sein d’une seule entrée de console provoque toujours une `SyntaxError` .  
 
 Par exemple, précédemment, lors de la nouvelle déclaration d’une variable locale avec `let` , la console a lancé une erreur :  
 
-:::image type="complex" source="../../images/2019/12/letbefore.msft.png" alt-text="Console dans Microsoft Edge 79 indiquant que la redéclaration échoue" lightbox="../../images/2019/12/letbefore.msft.png":::
+:::image type="complex" source="../../images/2019/12/letbefore.msft.png" alt-text="Console dans Microsoft Edge 79 indiquant que la déclaration d’échec de la déclaration" lightbox="../../images/2019/12/letbefore.msft.png":::
    Console **dans** Microsoft Edge 79 indiquant que la nouvelle déclaration échoue  
 :::image-end:::  
 
@@ -290,7 +289,7 @@ Pour accéder **aux conditions réseau,** [ouvrez le menu Commande][DevToolsComm
 
 Problème de chrome [#1029031][CR1029031]  
 
-### <a name="audits-panel-updates"></a>Mises à jour du panneau Audits  
+### <a name="audits-panel-updates"></a>Audits panel updates  
 
 #### <a name="new-configuration-ui"></a>Nouvelle interface utilisateur de configuration  
 
@@ -334,13 +333,13 @@ Si vous utilisez Windows ou macOS, envisagez d’utiliser les canaux d’aperçu
 <!-- links -->  
 
 [DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Exécuter des commandes avec le menu de commandes Microsoft Edge DevTools | Documents Microsoft"  
-[DevToolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Recherchez du code JavaScript et CSS inutilisé avec l’outil Couverture dans Microsoft Edge DevTools | Documents Microsoft"  
+[DevToolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Recherchez du code JavaScript et CSS inutilisé à l’aide de l’outil Couverture dans Microsoft Edge DevTools | Documents Microsoft"  
 [DevToolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simuler une port d’affichage mobile : simuler des appareils mobiles avec le mode appareil dans Microsoft Edge DevTools | Documents Microsoft"  
 [DevToolsNetworkIndex]: /microsoft-edge/devtools-guide-chromium/network/index "Inspecter l’activité réseau dans microsoft Edge DevTools | Documents Microsoft"  
 [DevToolsNetworkReferenceViewInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#view-initiators-and-dependencies "Afficher les initiateurs et les dépendances - Référence de l’analyse réseau | Documents Microsoft"  
 [DevGuideEdgeHtmlWhatsNew]: /microsoft-edge/dev-guide/whats-new "Nouveautés de l'| EdgeHTML Documents Microsoft"  
 [VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Débogger pour l’extension de code Visual Studio Microsoft Edge | Documents Microsoft"  
-[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Éléments pour l’extension de code Visual Studio Microsoft Edge | Documents Microsoft"  
+[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Éléments de l’extension de code Visual Studio Microsoft Edge | Documents Microsoft"  
 
 <!--  [201912Webassembly]: webassembly.md "Improved WebAssembly debugging in Microsoft Edge DevTools"  -->  
 
@@ -351,7 +350,7 @@ Si vous utilisez Windows ou macOS, envisagez d’utiliser les canaux d’aperçu
 [CR1004203]: https://crbug.com/1004203 "Faire en sorte que la couverture de code soit | Bogues Chromium"  
 [CR1029031]: https://crbug.com/1029031 "Les chaînes UA sont obsolètes | Bogues Chromium" 
 [CR963183]: https://crbug.com/963183 "DevTools ne sont pas conformes WCAG | Bogues Chromium"
-[CR941561]: https://crbug.com/941561 "Localisabilité de l'| Bogues Chromium"
+[CR941561]: https://crbug.com/941561 "Localisabilité du | DevTools Bogues Chromium"
 [CR987787]: https://crbug.com/987787 "Vue Dom 3D | Bogues Chromium"
 
 [AccessibilityInsights]: https://aka.ms/a11yinsights "Informations sur l’accessibilité"  
@@ -364,7 +363,7 @@ Si vous utilisez Windows ou macOS, envisagez d’utiliser les canaux d’aperçu
 [MicrosoftVisualStudio]: https://aka.ms/vs "Visual Studio"  
 [MicrosoftVisualStudioBlogDebugJavascript]: https://aka.ms/vs/debug-edge "Déboguer JavaScript dans Microsoft Edge à partir de Visual Studio | Visual Studio Blog"  
 [MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "Télécharger Visual Studio 2019 pour Windows \& Mac"  
-[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Modèle objet de document (DOM) | MDN"  
+[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"  
 [PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Publier un Tweet"  
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools compte Twitter"

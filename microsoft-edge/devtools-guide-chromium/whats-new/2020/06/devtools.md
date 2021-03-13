@@ -3,22 +3,35 @@ description: Fonctionnalités de débogage de grille CSS, demandes de modificati
 title: Nouveautés de DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 3085153b87f09c1b5aba8fbe43c42cef0851fa9c
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 9031f817a6079f64352c261a70eb9581213bf8c7
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397754"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408317"
 ---
+<!-- Copyright Jecelyn Yeen 
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
 # <a name="whats-new-in-devtools-microsoft-edge-85"></a>Nouveautés de DevTools (Microsoft Edge 85)  
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Annonces de l’équipe Microsoft Edge DevTools  
 
-Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer les nouvelles fonctionnalités des extensions DevTools, Microsoft Visual Studio Code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez l’équipe Microsoft [Edge DevTools][EdgeDevToolsTwitterAccount]sur Twitter.  
+Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer les nouvelles fonctionnalités des extensions DevTools, Microsoft Visual Studio Code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [de Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez l’équipe Microsoft Edge [DevTools][EdgeDevToolsTwitterAccount]sur Twitter.  
 
 ### <a name="css-grid-debugging-features"></a>Fonctionnalités de débogage de grille CSS  
 
@@ -77,7 +90,7 @@ Problème de chrome [#1093687][CR1093687]
    Événement `respondWith` de travail de service dans **l’onglet Minutage** de **l’outil** Réseau  
 :::image-end:::  
 
-Développez **la réponse reçue** pour afficher des informations supplémentaires à partir de la réponse telle que , et `fetch` `CacheStorageCacheName` `serviceWorkerResponseSource` `ResponseTime` .  
+Développez **la réponse reçue** pour afficher des informations supplémentaires à partir de la réponse comme , et `fetch` `CacheStorageCacheName` `serviceWorkerResponseSource` `ResponseTime` .  
 
 :::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Développer la réponse reçue pour afficher des informations supplémentaires à partir de la réponse d’extraction" lightbox="../../media/2020/06/timing-tab2.msft.png":::
    Développer **la réponse reçue** pour afficher des informations supplémentaires à partir de la `fetch` réponse  
@@ -141,7 +154,7 @@ Problème de chrome [#1069404][CR1069404]
 
 Les sections suivantes annoncent des fonctionnalités supplémentaires disponibles dans Microsoft Edge 85 qui ont été contribués au projet open source Chromium.  
 
-### <a name="style-editing-for-css-in-js-frameworks"></a>Modification du style pour les frameworks CSS-in-JS  
+### <a name="style-editing-for-css-in-js-frameworks"></a>Modification du style pour les infrastructure CSS-in-JS  
 
 Le **volet Styles** a désormais une meilleure prise en charge de l’édition des styles créés avec les API [CSS Object Model (CSSOM).][CsswgDraftsCssom]  De nombreuses bibliothèques et infrastructure CSS-in-JS utilisent les API CSSOM sous-programme pour construire des styles.  
 
@@ -193,12 +206,12 @@ DevTools offre désormais une meilleure prise en charge de certaines des derniè
       Mise en surbrillance de [syntaxe pour les champs privés][V8DevClassFieldsPrivate]  
    :::column-end:::
    :::column span="2":::
-      les champs de classe privés sont désormais correctement mis en surbrillants et assez imprimés dans le **panneau Sources.**  
+      les champs de classe privés sont désormais correctement mis en surbrillantes et assez imprimés dans le **panneau Sources.**  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Mise en surbrillance de syntaxe pour [l’opérateur de hillage nullish][V8DevNullishCoalescing]
+      Mise en surbrillance de la [syntaxe pour l’opérateur de hillage nullish][V8DevNullishCoalescing]
    :::column-end:::
    :::column span="2":::
       DevTools imprime maintenant correctement l’opérateur de houillement nullish dans le **panneau Sources.**  
@@ -207,7 +220,7 @@ DevTools offre désormais une meilleure prise en charge de certaines des derniè
 
 Problèmes de chrome [#1073903,][CR1073903] [#1083214,][CR1083214] [#1083797][CR1083797]  
 
-### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a>Avertissements de raccourcis de nouvelle application dans le volet manifeste  
+### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a>Avertissements de raccourcis pour les nouvelles applications dans le volet manifeste  
 
 **Les raccourcis d’application** aident les utilisateurs à démarrer rapidement des tâches courantes ou recommandées dans une application web.  
 
@@ -218,8 +231,8 @@ Le **volet Manifeste** affiche désormais des avertissements pour les conditions
 * Les icônes de raccourci de l’application sont plus petites que 96 x 96 pixels  
 * Les icônes de raccourci de l’application et les icônes de manifeste ne sont pas carrées \(étant donné que les icônes sont ignorées\)  
 
-:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Avertissements de raccourci d’application" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
-   Avertissements de raccourci d’application  
+:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Avertissements de raccourcis d’application" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
+   Avertissements de raccourcis d’application  
 :::image-end:::  
 
 Problème de chrome [#955497][CR955497]  
@@ -245,7 +258,7 @@ Problème de chrome [#1071432][CR1071432]
 
 Lorsque vous effectuez une copie ou une coupure sans sélection dans l’éditeur du panneau [Sources,][DevtoolsSourcesEditCssJavascript]DevTools copie ou coupe la ligne de contenu actuelle.  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Avec le curseur à la fin de la ligne 5, copiez la ligne entière à partir de pen.js dans devTools et coller dans Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="Avec le curseur à la fin de la ligne 5, copiez la ligne entière à partir de pen.js dans DevTools et coller dans Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
    Avec le curseur à la fin de la ligne 5, copiez la ligne entière à partir de **pen.js** dans devTools et coller dans Visual Studio [Code][VisualStudioCode].
 :::image-end:::  
 
@@ -255,9 +268,9 @@ Problème de chrome [#800028][CR800028]
 
 #### <a name="ungroup-same-console-messages"></a>Dégrouper les mêmes messages de console  
 
-Le **groupe semblable** au basculement dans paramètres de la console s’applique désormais aux messages en double.  Auparavant, il vient d’être appliqué à des messages similaires.  
+Le **basculement de groupe** similaire dans paramètres de la console s’applique désormais aux messages en double.  Auparavant, il vient d’être appliqué à des messages similaires.  
 
-Par exemple, auparavant, DevTools n’a pas désgroupé les messages même si le groupe `hello` **similaire** est décoché.  À présent, `hello` les messages sont désgroupés.  
+Par exemple, auparavant, DevTools n’a pas désgroupé les messages même si le groupe similaire `hello` est désactivé. ****  À présent, `hello` les messages sont désgroupés.  
 
 :::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Lorsque le groupe similaire est désactivé, les messages Hello sont désgroupés" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
    Lorsque **le groupe similaire** est désactivé, les messages sont `hello` désgroupés
@@ -291,7 +304,7 @@ Problème de chrome [#912581][CR912581]
 
 #### <a name="navigation-timing-alignment-in-the-performance-panel"></a>Alignement du minutage de navigation dans le panneau Performances  
 
-Panneau **Performances** utilisé pour afficher les heures dans les règles en fonction du moment où l’enregistrement a démarré.  Le minutage a changé pour les enregistrements où l’utilisateur navigue, où DevTools affiche désormais les temps de règle par rapport à la navigation.  
+Panneau **Performances** utilisé pour afficher les heures dans les règles en fonction du moment où l’enregistrement a démarré.  Le minutage a changé pour les enregistrements où l’utilisateur navigue, où DevTools affiche désormais les heures de règle par rapport à la navigation.  
 
 :::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Aligner le minutage de navigation dans l’outil Performances" lightbox="../../media/2020/06/nav-timing.msft.png":::
    Aligner le minutage de navigation dans **l’outil Performances**  
@@ -337,14 +350,14 @@ Si vous utilisez Windows ou macOS, envisagez d’utiliser les canaux d’aperçu
 
 [CR772558]: https://crbug.com/772558 "DevTools : mise à jour vers la dernière version de | Bogues Chromium"  
 [CR800028]: https://crbug.com/800028 "Le raccourci de ligne en double dans l’éditeur outils de développement ne fonctionne pas après la mise à jour de Chrome | Bogues Chromium"  
-[CR912581]: https://crbug.com/912581 "Exposer les scripts mis en cache par V8 dans DevTools/about:tracing | Bogues Chromium"  
+[CR912581]: https://crbug.com/912581 "Exposer les scripts qui ont été mis en cache par code par V8 dans DevTools/about:tracing | Bogues Chromium"  
 [CR946975]: https://crbug.com/946975 "La barre latérale Styles DevTools ne fonctionne pas avec les feuilles de style | Bogues Chromium"  
 [CR955497]: https://crbug.com/955497 "Menu de raccourci d’icône d’application pour les applications de | Bogues Chromium"  
 [CR974550]: https://crbug.com/974550 "Non-matisation des mesures entre le panneau Perf et performanceObserver | Bogues Chromium"  
 [CR1041830]: https://crbug.com/1041830 "Améliorer les couleurs des points d’arrêt | Bogues Chromium"  
-[CR1055875]: https://crbug.com/1055875 "La valeur du paramètre de console de contexte sélectionné uniquement n’est pas persistante après la fermeture et la réouverture des outils de développement | Bogues Chromium"  
-[CR1066579]: https://crbug.com/1066579 "DevTools : afficher la chronologie d’extraction serviceWorkers par demande dans le panneau réseau | Bogues Chromium"  
-[CR1071432]: https://crbug.com/1071432 "Expérience de développement de base wasm | Bogues Chromium"  
+[CR1055875]: https://crbug.com/1055875 "La valeur du paramètre de console Contexte uniquement sélectionné ne persiste pas après la fermeture et la réouverture des outils de développement | Bogues Chromium"  
+[CR1066579]: https://crbug.com/1066579 "DevTools : afficher la chronologie d’extraction serviceWorkers par demande dans le panneau | Bogues Chromium"  
+[CR1071432]: https://crbug.com/1071432 "Wasm Basic Developer Experience | Bogues Chromium"  
 [CR1073899]: https://crbug.com/1073899 "L’onglet Style calculé disparaît en mode | Bogues Chromium"  
 [CR1073903]: https://crbug.com/1073903 "DevTools : la mise en surbrillance de la syntaxe ne fonctionne pas avec les champs privés | Bogues Chromium"  
 [CR1082963]: https://crbug.com/1082963 "Can’t disable console’s Group similar messages behavior | Bogues Chromium"  
@@ -354,8 +367,8 @@ Si vous utilisez Windows ou macOS, envisagez d’utiliser les canaux d’aperçu
 [CR1047356]: https://crbug.com/1047356 "Outils Grille CSS/Flexbox/Tableau | Bogues Chromium"  
 [CR1093687]: https://crbug.com/1093687 "Créer un outil pour créer et relire des demandes de réseau synthétique | Bogues Chromium"  
 [CR1070378]: https://crbug.com/1070378 "Intégrer webhint dans devTools | Bogues Chromium"  
-[CR1069404]: https://crbug.com/1069404 "Les fenêtres pop-up de widget [Outils de développement] sont trop | Bogues Chromium"  
-[CR897944]: https://crbug.com/897944 "Panneaux de | Bogues Chromium"
+[CR1069404]: https://crbug.com/1069404 "Les fenêtres pop-up de widget [Outils de développement] sont trop étroites | Bogues Chromium"  
+[CR897944]: https://crbug.com/897944 "Panneaux devtool draggables | Bogues Chromium"
 
 [GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v6.0.0 - GoogleChrome/| GitHub"  
 

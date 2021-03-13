@@ -3,17 +3,17 @@ description: Découvrir les outils de développement Microsoft Edge (Chromium)
 title: Outils de développement Microsoft Edge (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: fa407393f8ecb79a3382294742bf9061787ec04a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 29ded7376ab1788998acf059c6677916a52d5d15
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397701"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408275"
 ---
 # <a name="microsoft-edge-chromium-developer-tools-overview"></a>Vue d’ensemble des outils de développement Microsoft Edge (Chromium)  
 
@@ -31,7 +31,7 @@ Si vous avez précédemment développé pour Microsoft Edge \(EdgeHTML\) et que 
 
 ## <a name="open-the-devtools"></a>Ouvrez DevTools  
 
-Microsoft Edge DevTools est un ensemble d’outils intégrés directement au navigateur Microsoft Edge.  DevTools vous permet d’effectuer les tâches suivantes directement dans le navigateur.  
+Microsoft Edge DevTools est un ensemble d’outils intégrés directement dans le navigateur Microsoft Edge.  DevTools vous permet d’effectuer les tâches suivantes directement dans le navigateur.  
 
 *   Inspecter et apporter des modifications à votre page web HTML  
 *   Modifiez CSS et affichez instantanément un aperçu du rendu de votre page web  
@@ -60,7 +60,7 @@ Microsoft Edge \(Chromium\) DevTools inclut les outils suivants.
 *   Outil **Elements permettant** de modifier le code HTML et CSS, d’inspecter les propriétés d’accessibilité, d’afficher les écouteurs d’événements et de définir des points d’arrêt de la mutation DOM  
 *   Une **console pour** examiner et filtrer les messages du journal, inspecter les objets JavaScript et les nodes DOM et exécuter JavaScript dans le contexte de la fenêtre ou du cadre sélectionné  
 *   Un **outil Sources** pour ouvrir et modifier votre code, définir des points d’arrêt, passer du code pas à pas et afficher l’état de votre page web
-*   Outil **réseau permettant** de surveiller et d’inspecter les demandes et les réponses provenant du cache réseau et du navigateur   
+*   Outil **réseau permettant** de surveiller et d’inspecter les demandes et les réponses provenant du cache du réseau et du navigateur   
 *   Un **outil de** performances pour profiler le temps et les ressources système requis par votre site  
 *   Un **outil mémoire pour** mesurer votre utilisation des ressources mémoire et comparer des instantanés de tas à différents états du runtime de code  
 *   Outil **d’application** permettant d’inspecter, de modifier et de déboguer les manifestes d’application web, les travailleurs de service et les caches de travail de service.  Vous pouvez également inspecter et gérer le stockage, les bases de données et les caches à partir de **l’outil Application.**  
@@ -107,7 +107,7 @@ Les raccourcis suivants contrôlent la fenêtre principale de DevTools, fonction
 | Afficher les paramètres | `?` ou `Fn`+`F1` | `?` ou `Fn`+`F1` |  
 | Afficher le panneau suivant | `Ctrl`+`]` | `Command`+`]` |  
 | Afficher le panneau précédent | `Ctrl`+`[` | `Command`+`[` |  
-| Ancrez les DevTools à la dernière position utilisée.  Si les DevTools restent à la position par défaut pour toute la session, le raccourci dissocie de DevTools dans une fenêtre distincte. | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
+| Ancrez les DevTools à la dernière position utilisée.  Si les DevTools restent à la position par défaut pour toute la session, le raccourci dissocie les DevTools dans une fenêtre distincte. | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
 | Toggle **Device Mode** | `Ctrl`+`Shift`+`M` | `Command`+`Shift`+`M` |  
 | Toggle **Inspect Element Mode** that allows to you to choose an element and display the HTML and CSS in the **Elements** tool | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Afficher le menu Commande | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
@@ -140,7 +140,7 @@ Si vous souhaitez prévisualiser les dernières fonctionnalités à venir dans [
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools pour les débutants : mise en place du code HTML et du dom | Documents Microsoft"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools "Nouveautés de Microsoft Edge (Chromium) DevTools | Documents Microsoft"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2021/02/devtools "Nouveautés de Microsoft Edge (Chromium) DevTools | Documents Microsoft"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Protocole Microsoft Edge (Chromium) DevTools | Documents Microsoft"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge Add-ons"  

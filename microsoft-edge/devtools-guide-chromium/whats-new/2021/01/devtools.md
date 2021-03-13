@@ -3,22 +3,35 @@ description: L’outil Nouveautés est désormais welcome, Visual Font Editor da
 title: Nouveautés de DevTools (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/04/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 0a8a5e69281ced9421733059b554bd8cb997c7cd
-ms.sourcegitcommit: 085046a5885c68243b763aaf6809fea43452403a
+ms.openlocfilehash: 2722da0093b3ba6521b5190e61bb208e02a2041e
+ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "11313775"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408338"
 ---
-# Nouveautés de DevTools (Microsoft Edge 89)  
+<!-- Copyright Jecelyn Yeen 
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
+# <a name="whats-new-in-devtools-microsoft-edge-89"></a>Nouveautés de DevTools (Microsoft Edge 89)  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
-## Nouveautés : bienvenue  
+## <a name="whats-new-is-now-welcome"></a>Nouveautés : bienvenue  
 
 <!--  Title: What's New is now Welcome  -->  
 <!--  Subtitle: The What's New tool now has a new appearance and a new name:  Welcome -->  
@@ -31,7 +44,7 @@ ms.locfileid: "11313775"
    **L’outil Bienvenue** est mis en surbrill  
 :::image-end:::  
 
-## Visual Font Editor dans le volet Styles  
+## <a name="visual-font-editor-in-the-styles-pane"></a>Visual Font Editor dans le volet Styles  
 
 <!--  Title: Visual font editor in the Styles pane  -->  
 <!--  Subtitle: Visual font editor in the Styles pane -->  
@@ -45,24 +58,24 @@ Lorsque vous utilisez des polices dans CSS, utilisez le nouvel éditeur de [poli
 *   Convertir des unités  
 *   Générer un code CSS précis  
     
-Pour activer cette expérience, accédez à Expériences de [paramètres][DevtoolsCustomizeIndexSettings]et cochez la case en regard d’Activer les nouveaux outils Éditeur de polices  >  **** dans le **volet Styles.**  Pour plus d’informations, accédez à Modifier les styles et paramètres de police CSS dans le volet [Styles de DevTools.][DevtoolsInspectStylesEditFonts]  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1093229][CR1093229].  
+Pour activer cette expérience, accédez à Expériences de [paramètres][DevtoolsCustomizeIndexSettings]et activez la case à cocher en regard d’Activer les nouveaux outils d’éditeur de polices  >  **** dans le **volet Styles.**  Pour plus d’informations, accédez à Modifier les styles et paramètres de police CSS dans le volet [Styles de DevTools.][DevtoolsInspectStylesEditFonts]  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1093229][CR1093229].  
 
 :::image type="complex" source="../../media/2021/01/visual-font-editor.msft.png" alt-text="L’éditeur de police visuel est mis en surbrillon dans le volet Styles" lightbox="../../media/2021/01/visual-font-editor.msft.png":::
    L’éditeur **de police visuel** est mis en surbrillon dans le volet **Styles**  
 :::image-end:::  
 
-## Outils de débogage CSS Flexbox  
+## <a name="css-flexbox-debugging-tools"></a>Outils de débogage CSS Flexbox  
 
 Les fonctionnalités de débogage Flexbox sont en cours de développement.  Pour activer l’expérience pour les deux [fonctionnalités suivantes,][DevtoolsCustomizeIndexSettings]accédez à Expériences de paramètres et activez la case à cocher en regard de activer les nouvelles fonctionnalités de débogage de la boîte de réception  >  **** **Flexbox CSS.**  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez à Problèmes [1136394][CR1136394] et [1139949][CR1139949].  
 
-### La nouvelle icône Flexbox (flex) permet d’identifier et d’afficher les conteneurs flex  
+### <a name="new-flexbox-flex-icon-helps-identify-and-display-flex-containers"></a>La nouvelle icône Flexbox (flex) permet d’identifier et d’afficher les conteneurs flex  
 
 <!--  Title: Display Flexbox containers with Flexbox (flex) icon  -->  
 <!--  Subtitle: New Flexbox (flex) icon in the Elements tool help you identify Flexbox containers in your code.  When toggled, the adorner displays and hides outlines of the flex container to help you debug the layout -->  
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-Dans **l’outil Elements,** la nouvelle icône Flexbox (flex) vous permet d’identifier les conteneurs Flexbox dans votre code.  Sélectionnez l’icône Flexbox \(flex\) pour activer ou désactiver l’effet de superposition qui contoure un conteneur Flexbox.  Vous pouvez personnaliser la couleur de **** la superposition dans le volet De disposition, qui se trouve à côté de **Styles** et **calculé**.  
+Dans **l’outil Elements,** la nouvelle icône Flexbox (flex) vous permet d’identifier les conteneurs Flexbox dans votre code.  Sélectionnez l’icône Flexbox \(flex\) pour activer ou désactiver l’effet de superposition qui contoure un conteneur Flexbox.  Vous pouvez personnaliser la couleur de **** la superposition dans le volet De disposition, qui se trouve à côté de **Styles** et **calculé .**  
 
 :::row:::
    :::column span="":::
@@ -84,7 +97,7 @@ Dans **l’outil Elements,** la nouvelle icône Flexbox (flex) vous permet d’i
    :::column-end:::
 :::row-end:::  
 
-### Afficher les icônes d’alignement et le quadrillage lorsque les dispositions de Flexbox changent à l’aide des propriétés CSS  
+### <a name="display-alignment-icons-and-gridlines-when-flexbox-layouts-change-using-css-properties"></a>Afficher les icônes d’alignement et le quadrillage lorsque les dispositions de Flexbox changent à l’aide des propriétés CSS  
 
 <!--  Title: Display alignment icons and gridlines for changes to Flexbox layouts from CSS properties  -->  
 <!--  Subtitle:  CSS autocomplete in the Styles tool now displays icons next to Flexbox properties to help you review the effect a property has on your Flexbox layout -->  
@@ -98,7 +111,7 @@ Lorsque vous modifiez CSS pour votre disposition Flexbox, les mises à jour auto
       Le menu de la mise à jour automatique affiche désormais des icônes qui indiquent l’effet des propriétés d’alignement telles `align-content` que et `align-items` .  
    :::column-end:::
    :::column span="":::
-      De plus, DevTools affiche désormais une ligne de guid pour vous aider à mieux examiner la `align-items` propriété CSS.  La `gap` propriété CSS est également prise en charge.  Dans la figure suivante, la propriété CSS est définie sur et le modèle d’effet de hachage `gap` `gap: 12px;` pour chaque intervalle s’affiche.  
+      De plus, DevTools affiche désormais une ligne de guid pour vous aider à mieux examiner la `align-items` propriété CSS.  La `gap` propriété CSS est également prise en charge.  Dans la figure suivante, la propriété CSS est définie sur et le modèle d’ingage `gap` `gap: 12px;` pour chaque intervalle s’affiche.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -114,7 +127,7 @@ Lorsque vous modifiez CSS pour votre disposition Flexbox, les mises à jour auto
    :::column-end:::
 :::row-end:::  
 
-## Ajouter rapidement des outils avec le nouveau bouton Plus d’outils  
+## <a name="add-tools-quickly-with-new-more-tools-button"></a>Ajouter rapidement des outils avec le nouveau bouton Plus d’outils  
 
 <!--  Title: Add tools quickly with new More Tools button  -->  
 <!--  Subtitle: A convenient way to open new tools in Microsoft Edge DevTools -->  
@@ -127,7 +140,7 @@ Vous avez maintenant une nouvelle façon d’ouvrir d’autres outils dans Micro
    **Autres outils** mis en évidence dans DevTools  
 :::image-end:::  
 
-## Les technologies d’assistance annoncent désormais la position et le nombre de suggestions CSS  
+## <a name="assistive-technologies-now-announce-position-and-count-of-css-suggestions"></a>Les technologies d’assistance annoncent désormais la position et le nombre de suggestions CSS  
 
 <!--  Title: Assistive technologies now announce position and count of CSS suggestions  -->  
 <!--  Subtitle: CSS suggestions are now easier to navigate using screen readers -->  
@@ -140,7 +153,7 @@ Pour afficher une vidéo qui affiche et lit plusieurs suggestions avec cette exp
    Liste `suggestion` mise en évidence dans le volet **Styles**  
 :::image-end:::  
 
-## Émuler Surface Duo et Samsung Samsung Fold  
+## <a name="emulate-surface-duo-and-samsung-galaxy-fold"></a>Émuler Surface Duo et Samsung Samsung Fold  
 
 <!--  Title: Emulate new dual-screen and foldable devices  -->  
 <!--  Subtitle: Test the appearance and feel of your website or app with Surface Duo and Samsung Galaxy Fold emulators -->  
@@ -150,7 +163,7 @@ Testez l’apparence de votre site web ou de votre application sur les appareils
 *   [Surface Duo][MicrosoftSurfaceDevicesSurfaceDuo]  
 *   [Samsung Galaxy Fold][SamsungUsMobileGalaxyFold]  
     
-Activer les **fonctionnalités de** plateforme Web expérimentale pour accéder à la nouvelle fonctionnalité multimédia [CSS][DualScreenWebCssMediaSpanning] couvrant l’écran et à [l’API JavaScript getWindowSegments.][DualScreenWebJavascriptGetwindowsegments]  Accédez à `edge://flags` l’indicateur et basculez-le en de côté des **fonctionnalités de plateforme Web expérimentale.**  Pour améliorer votre site web ou votre application pour les appareils à double écran et pliables, utilisez les fonctionnalités suivantes lors de [l’émulation de l’appareil.][DevtoolsDeviceModeIndex]  
+Activer les **fonctionnalités de** plateforme Web expérimentale pour accéder à la nouvelle fonctionnalité multimédia [CSS][DualScreenWebCssMediaSpanning] couvrant l’écran et à [l’API JavaScript getWindowSegments.][DualScreenWebJavascriptGetwindowsegments]  Accédez à l’indicateur à côté des fonctionnalités de plateforme Web expérimentale et `edge://flags` **basculez-le.**  Pour améliorer votre site web ou votre application pour les appareils à double écran et pliables, utilisez les fonctionnalités suivantes lors de [l’émulation de l’appareil.][DevtoolsDeviceModeIndex]  
 
 *   [Couvrant,][DevtoolsDeviceModeDualScreenFoldablesTestingFoldableDualScreenDevices]c’est-à-dit lorsque votre site web \(ou application\) apparaît sur les deux écrans.  
 *   [Rendu de la séam,][DualScreenIntroductionHowToWorkWithSeam]qui est l’espace entre les deux écrans.  
@@ -161,32 +174,32 @@ Pour passer en revue l’historique de cette fonctionnalité dans le projet open
    Émuler double écran  
 :::image-end:::  
 
-## Outils de développement Microsoft Edge Visual Studio Code version 1.1.2  
+## <a name="microsoft-edge-developer-tools-for-visual-studio-code-version-112"></a>Outils de développement Microsoft Edge Visual Studio Code version 1.1.2  
 
-Les outils de développement [Microsoft Edge pour Visual Studio l’extension][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] de code version 1.1.2 pour Microsoft Visual Studio Code ont les modifications suivantes depuis la version précédente.  Microsoft Visual Studio code met automatiquement à jour les extensions.  Pour mettre à jour manuellement la version 1.1.2, accédez à Mettre à jour [une extension manuellement.][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]  
+Les outils de développement Microsoft Edge pour [Visual Studio version][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] 1.1.2 pour Microsoft Visual Studio Code ont les modifications suivantes depuis la version précédente.  Microsoft Visual Studio code met automatiquement à jour les extensions.  Pour mettre à jour manuellement la version 1.1.2, accédez à Mettre à jour [une extension manuellement.][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]  
 
 *   Ajout **d’un bouton Fermer l’instance** à chaque élément de la liste cible \([#248][GithubMicrosoftVscodeEdgeDevtoolsPull248]\)  
 *   Version de [Microsoft Edge DevTools][DevtoolsMain] déversée de 84.0.522.63 à [85.0.564.40][DevtoolsWhatsNew85] \([#235][GithubMicrosoftVscodeEdgeDevtoolsPull235]\)  
 *   [Débogger inclus pour Microsoft Edge][VisualstudioMarketplaceMsjsdiagDebuggerMicrosoftEdge] en tant que dépendance \([#233][GithubMicrosoftVscodeEdgeDevtoolsPull233]\)  
-*   Option de paramètres implémentée pour modifier les thèmes d’extension \([#229][GithubMicrosoftVscodeEdgeDevtoolsPull229]\)  
+*   Option des paramètres implémentés pour modifier les thèmes d’extension \([#229][GithubMicrosoftVscodeEdgeDevtoolsPull229]\)  
     
 Vous pouvez déposer des problèmes et contribuer à l’extension sur le référentiel [GitHub vscode-edge-devtools.][GithubMicrosoftVscodeEdgeDevtools]  
 
-## Annonces du projet de Chromium  
+## <a name="announcements-from-the-chromium-project"></a>Annonces du projet de Chromium  
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
 
-### Capture d’écran du nœud au-delà de la vue  
+### <a name="capture-node-screenshot-beyond-viewport"></a>Capture d’écran du nœud au-delà de la vue  
 
-Dans Microsoft Edge version 89, les captures d’écran de nœud sont plus précises, ce qui permet de capturer le nœud complet même si le contenu du nœud n’est pas visible dans la vue.  Dans **l’outil Éléments,** pointez sur un élément, ouvrez le menu contextuel \(clic droit\), puis choisissez **Capture d’écran du nœud .**  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1003629][CR1003629].  
+Dans Microsoft Edge version 89, les captures d’écran de nœud sont plus précises, ce qui permet de capturer le nœud complet même si le contenu du nœud n’est pas visible dans laport d’affichage.  Dans **l’outil Éléments,** pointez sur un élément, ouvrez le menu contextuel \(clic droit\), puis choisissez **Capture d’écran du nœud .**  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1003629][CR1003629].  
 
 :::image type="complex" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="Capture d’écran du nœud mis en évidence dans le menu contextique de l’outil Éléments" lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
    **Capture d’écran du nœud** mis en évidence dans le menu contextique de **l’outil Éléments**  
 :::image-end:::  
 
-### Mises à jour de l’outil Éléments  
+### <a name="elements-tool-updates"></a>Mises à jour de l’outil Éléments  
 
-#### Prise en charge du forçage de l’état CSS cible  
+#### <a name="support-forcing-the-target-css-state"></a>Prise en charge du forçage de l’état CSS cible  
 
 Vous pouvez désormais utiliser DevTools pour forcer [la][MdnDocsWebCssTarget] pseudo-classe CSS cible.  La pseudo-classe est déclenchée lorsqu’un élément unique \(l’élément cible\) a un élément qui correspond à un `:target` `id` fragment de l’URL.  Par exemple, `http://www.example.com/index.html#section1` l’URL déclenche la `:target` pseudo-classe sur un élément HTML avec `id="section1"` .  Pour essayer une démonstration avec la section 1 mise en évidence, accédez à [CSS :target demo][GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1].  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1156628][CR1156628].  
 
@@ -203,7 +216,7 @@ Vous pouvez désormais utiliser DevTools pour forcer [la][MdnDocsWebCssTarget] p
    :::column-end:::
 :::row-end:::
 
-#### Utiliser des éléments dupliqués pour copier des éléments  
+#### <a name="use-duplicate-elements-to-copy-elements"></a>Utiliser des éléments en double pour copier des éléments  
 
 Utilisez le raccourci du nouvel élément **Duplicate** pour cloner un élément.  Dans **l’outil Éléments,** pointez sur un élément, ouvrez le menu contextuel \(clic droit\), choisissez **Élément dupliqué**.  Un nouvel élément est créé sous l’élément sélectionné.  Pour dupliquer l’élément à l’aide d’un raccourci clavier, sélectionnez `Shift` + `Alt` + `Down Arrow` \(Windows/Linux\) ou `Shift` + `Option` + `Down Arrow` \(macOS\).  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1150797][CR1150797].  
 
@@ -211,7 +224,7 @@ Utilisez le raccourci du nouvel élément **Duplicate** pour cloner un élément
    **L’élément Duplicate** est mis en surbrillon dans le menu contextique d’un élément de **l’outil Elements**  
 :::image-end:::  
 
-#### S sélectionneurs de couleurs pour les propriétés CSS personnalisées  
+#### <a name="color-pickers-for-custom-css-properties"></a>S sélectionneurs de couleurs pour les propriétés CSS personnalisées  
 
 Le **volet Styles** affiche désormais les soches de couleur pour les propriétés CSS personnalisées.  Pour passer en cycle dans les formats RGBA, HSLA et Hex de la valeur de couleur, maintenez et choisissez le s `Shift` sélectionneur de couleurs.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1147016.][CR1147016]  
 
@@ -219,9 +232,9 @@ Le **volet Styles** affiche désormais les soches de couleur pour les propriét�
    S sélectionneurs de couleurs pour les propriétés CSS personnalisées  
 :::image-end:::  
 
-#### Copier les classes et propriétés CSS  
+#### <a name="copy-css-classes-and-properties"></a>Copier les classes et propriétés CSS  
 
-Vous pouvez maintenant copier les propriétés CSS plus rapidement avec quelques nouvelles options dans le menu contextuel.  Dans **l’outil Elements,** choisissez un élément.  Pour copier la valeur, dans le volet **Styles,** pointez sur une classe CSS ou une propriété CSS, ouvrez un menu contextuel \(clic droit\), puis choisissez l’option de copie.  
+Vous pouvez maintenant copier les propriétés CSS plus rapidement avec quelques nouvelles options dans le menu contextuel.  Dans **l’outil Elements,** choisissez un élément.  Pour copier la valeur, dans le volet **Styles,** pointez sur une classe CSS ou sur une propriété CSS, ouvrez un menu contextuel \(clic droit\), puis choisissez l’option de copie.  
 
 :::row:::
    :::column span="":::
@@ -258,9 +271,9 @@ Vous pouvez maintenant copier les propriétés CSS plus rapidement avec quelques
 
 Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1152391][CR1152391].  
 
-### Mises à jour des cookies  
+### <a name="cookies-updates"></a>Mises à jour des cookies  
 
-#### Nouvelle option pour afficher les cookies décodés par l’URL  
+#### <a name="new-option-to-display-url-decoded-cookies"></a>Nouvelle option pour afficher les cookies décodés par l’URL  
 
 Vous pouvez maintenant choisir d’afficher la valeur des cookies décodés par l’URL dans le **volet Cookies.**  Pour afficher le cookie décodé, accédez au volet Cookies de **l’application,** choisissez un cookie dans la liste, puis cochez la case en regard de  >  **** **l’url décodée.**  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au [problème 997625][CR997625].  
 
@@ -268,7 +281,7 @@ Vous pouvez maintenant choisir d’afficher la valeur des cookies décodés par 
    Option d’affichage des cookies décodés par l’URL  
 :::image-end:::  
 
-#### Filtrer et effacer les cookies visibles  
+#### <a name="filter-and-clear-visible-cookies"></a>Filtrer et effacer les cookies visibles  
 
 Dans Microsoft Edge version 88 ou antérieure, l’outil **Application** fournissait uniquement un moyen d’effacer tous les cookies avec le bouton Effacer **tous les cookies.**  Dans Microsoft Edge version 89, vous pouvez désormais choisir Effacer les **cookies filtrés** pour supprimer uniquement les cookies filtrés.  Pour filtrer les **** cookies, accédez à  >  **Cookies d’application**et tapez dans la **boîte** de texte Filtrer.  Pour supprimer les cookies affichés, sélectionnez le bouton Effacer **les cookies filtrés.**  Pour afficher tous les autres cookies, effacer le texte du filtre.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au [problème 978059][CR978059].  
 
@@ -276,11 +289,11 @@ Dans Microsoft Edge version 88 ou antérieure, l’outil **Application** fournis
    Effacer uniquement les cookies visibles  
 :::image-end:::  
 
-#### Nouvelle option pour effacer les cookies tiers dans le volet stockage  
+#### <a name="new-option-to-clear-third-party-cookies-in-the-storage-pane"></a>Nouvelle option pour effacer les cookies tiers dans le volet stockage  
 
-DevTools n’effacera désormais que les cookies de première partie par défaut.  Pour effacer les données du site web **** et les cookies de première partie uniquement, accédez au stockage d’applications, puis choisissez  >  **** Effacer les données **de site.**  
+DevTools n’effacera désormais que les cookies de première partie par défaut.  Pour effacer les données de site web **** et les cookies de première partie uniquement, accédez au stockage d’applications, puis choisissez  >  **** Effacer les données **de site.**  
 
-Pour effacer les données du site web et tous les cookies, accédez à **Stockage**  >  **d’applications.**  Cochez la case en regard de **l’utilisation de cookies tiers,** puis **sélectionnez Effacer les données du site.**  
+Pour effacer les données du site web et tous les cookies, accédez à **Stockage**  >  **d’applications.**  Cochez la case en regard de l’utilisation des **cookies tiers,** puis **sélectionnez Effacer les données du site.**  
 
 Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1012337][CR1012337].  
 
@@ -288,9 +301,9 @@ Pour passer en revue l’historique de cette fonctionnalité dans le projet open
    Option pour effacer les cookies tiers  
 :::image-end:::  
 
-### Mises à jour de l’outil réseau  
+### <a name="network-tool-updates"></a>Mises à jour de l’outil réseau  
 
-#### Paramètre du journal réseau d’enregistrement persistant  
+#### <a name="persist-record-network-log-setting"></a>Paramètre du journal réseau d’enregistrement persistant  
 
 Dans Microsoft Edge version 88 ou antérieure, DevTools réinitialise le paramètre enregistrer le journal réseau lors de l’actualisation d’une page web. ****  Dans Microsoft Edge version 89, DevTools fait désormais persister le paramètre Enregistrer le **journal réseau.**  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1122580][CR1122580].  
 
@@ -298,7 +311,7 @@ Dans Microsoft Edge version 88 ou antérieure, DevTools réinitialise le paramè
    Enregistrer le journal réseau  
 :::image-end:::  
 
-#### L’option en ligne n’est plus une option de limitation  
+#### <a name="online-option-is-now-no-throttling-option"></a>L’option en ligne n’est plus une option de limitation  
 
 L’option d’émulation réseau **en ligne** est désormais renommée **No Throttling**.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1028078][CR1028078].  
 
@@ -306,9 +319,9 @@ L’option d’émulation réseau **en ligne** est désormais renommée **No Thr
    **Aucune** option de limitation  
 :::image-end:::  
 
-### Nouvelles options de copie dans l’outil Console, l’outil Sources et le volet Styles
+### <a name="new-copy-options-in-the-console-tool-sources-tool-and-styles-pane"></a>Nouvelles options de copie dans l’outil Console, l’outil Sources et le volet Styles
 
-#### Copier un objet dans l’outil Console et Sources  
+#### <a name="copy-object-in-the-console-and-sources-tool"></a>Copier un objet dans l’outil Console et Sources  
 
 Vous pouvez maintenant copier des valeurs d’objet dans les outils **Console** **et Sources.**  La possibilité de copier des valeurs d’objet est utile lorsque vous travaillez avec des objets de grande taille.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez à Problèmes [1148353][CR1148353] et [1149859][CR1149859].  
 
@@ -333,7 +346,7 @@ Vous pouvez maintenant copier des valeurs d’objet dans les outils **Console** 
    :::column-end:::
 :::row-end:::  
 
-#### Copier le nom de fichier dans l’outil Sources et le volet Styles  
+#### <a name="copy-file-name-in-the-sources-tool-and-styles-pane"></a>Copier le nom de fichier dans l’outil Sources et le volet Styles  
 
 Vous pouvez maintenant copier un nom de fichier à l’aide du menu contextuel.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez à Problèmes [1155120][CR1155120].  
 
@@ -358,9 +371,9 @@ Vous pouvez maintenant copier un nom de fichier à l’aide du menu contextuel. 
    :::column-end:::
 :::row-end:::  
 
-### Mises à jour des détails du cadre  
+### <a name="updates-to-frame-details"></a>Mises à jour des détails du cadre  
 
-#### Informations sur les employés de service dans les détails de l’image  
+#### <a name="service-workers-information-in-frame-details"></a>Informations sur les employés de service dans les détails de l’image  
 
 DevTools répertorie désormais un service de travail dédié sous le cadre parent.  Dans la figure suivante, les détails du service de travail sont affichés.  Pour afficher les détails du travail de service, accédez aux travailleurs du service Cadres **d’application,**  >  ****  >  `top`  >  **** puis choisissez un service de travail.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1122507][CR1122507].  
 
@@ -368,7 +381,7 @@ DevTools répertorie désormais un service de travail dédié sous le cadre pare
    **Informations sur les employés** de service dans les **détails des** cadres  
 :::image-end:::  
 
-#### Mesurer les informations de mémoire dans les détails de l’image  
+#### <a name="measure-memory-information-in-frame-details"></a>Mesurer les informations de mémoire dans les détails de l’image  
 
 `performance.measureMemory()`L’état de l’API s’affiche désormais sous la section **disponibilité de l’API.**  La nouvelle `performance.measureMemory()` API estime l’utilisation de la mémoire de la page web entière.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1139899][CR1139899].  
 
@@ -376,7 +389,7 @@ DevTools répertorie désormais un service de travail dédié sous le cadre pare
    Mesurer la mémoire  
 :::image-end:::  
 
-### Images abandonnées dans l’outil Performances  
+### <a name="dropped-frames-in-the-performance-tool"></a>Images abandonnées dans l’outil Performance  
 
 Lorsque vous [analysez les performances de chargement dans l’outil Performance,][DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]la section **Frames** marque désormais les images abandonnées en rouge.  Pour afficher la fréquence d’images, pointez sur une image abandonnée.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au [problème 1075865][CR1075865].  
 
@@ -384,7 +397,7 @@ Lorsque vous [analysez les performances de chargement dans l’outil Performance
    Cadres supprimés  
 :::image-end:::  
 
-#### Nouveau calcul de contraste de couleur - Algorithme de contraste perceptif avancé (APCA)  
+#### <a name="new-color-contrast-calculation---advanced-perceptual-contrast-algorithm-apca"></a>Nouveau calcul de contraste de couleur - Algorithme de contraste perceptif avancé (APCA)  
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
@@ -400,11 +413,11 @@ Pour activer cette expérience, accédez à Expériences de paramètres et coche
    APCA dans le s picker de couleurs  
 :::image-end:::  
 
-## Télécharger les canaux d’aperçu Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Télécharger les canaux d’aperçu Microsoft Edge  
 
 Si vous utilisez Windows, Linux ou macOS, envisagez d’utiliser les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] comme navigateur de développement par défaut.  Les canaux d’aperçu vous permettent d’accéder aux dernières fonctionnalités de DevTools.  
 
-## Contacter l’équipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Contacter l’équipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
 
@@ -416,7 +429,7 @@ Si vous utilisez Windows, Linux ou macOS, envisagez d’utiliser les canaux d’
 [DevtoolsCssReferenceChangeCss]: /microsoft-edge/devtools-guide-chromium/css/reference#change-css "Modifier la référence CSS - CSS | Documents Microsoft"  
 [DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Paramètres-personnaliser Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsCustomizeShortcuts]: microsoft-edge/devtools-guide-chromium/customize/shortcuts "Personnaliser les raccourcis clavier dans l'| Microsoft Edge DevTools Documents Microsoft"  
-[DevtoolsDeviceModeDualScreenFoldablesTestingFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/device-mode/dual-screen-and-foldables#testing-on-foldable-and-dual-screen-devices "Test sur les appareils pliables et à double écran : émuler les appareils à double écran et pliables dans Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsDeviceModeDualScreenFoldablesTestingFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/device-mode/dual-screen-and-foldables#testing-on-foldable-and-dual-screen-devices "Test sur les appareils pliables et à double écran : émule les appareils à double écran et pliables dans Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Émuler des appareils mobiles dans Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simuler une port d’affichage mobile : émuler des appareils mobiles dans Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-load-performance "Performances de charge d’enregistrement : référence de l’analyse des performances | Documents Microsoft"  
@@ -432,7 +445,7 @@ Si vous utilisez Windows, Linux ou macOS, envisagez d’utiliser les canaux d’
 [GithubMicrosoftVscodeEdgeDevtoolsPull229]: https://github.com/microsoft/vscode-edge-devtools/pull/229 "Pull 229 : mise en œuvre de la dropdown dans les paramètres pour modifier les thèmes | GitHub"  
 [GithubMicrosoftVscodeEdgeDevtoolsPull233]: https://github.com/microsoft/vscode-edge-devtools/pull/233 "Pull 233 : inclure le débogger pour Microsoft Edge en tant que | GitHub"  
 [GithubMicrosoftVscodeEdgeDevtoolsPull235]: https://github.com/microsoft/vscode-edge-devtools/pull/235 "Pull 235 : mise à niveau de la version Edge DevTools vers 85.0.564.40 | GitHub"  
-[GithubMicrosoftVscodeEdgeDevtoolsPull248]: https://github.com/microsoft/vscode-edge-devtools/pull/248 "Pull 248 : ajouter des boutons de fermeture unique au panneau instances | GitHub"  
+[GithubMicrosoftVscodeEdgeDevtoolsPull248]: https://github.com/microsoft/vscode-edge-devtools/pull/248 "Pull 248 : ajouter des boutons de fermeture simples au panneau instances | GitHub"  
 [GithubW3cSilverGuidelinesMethodsMethodFontCharacteristicContrastHtml]: https://w3c.github.io/silver/guidelines/methods/Method-font-characteristic-contrast.html "Sélectionnez les caractéristiques de police et les couleurs d’arrière-plan pour fournir un contraste suffisant pour une | W3C"  
 [GithubW3cWebappsecTrustedTypesDistSpec]: https://w3c.github.io/webappsec-trusted-types/dist/spec  "Types d'| W3C"  
 
@@ -464,7 +477,7 @@ Si vous utilisez Windows, Linux ou macOS, envisagez d’utiliser les canaux d’
 [CR1148353]: https://crbug.com/1148353 "Problème 1148353 : Demande de fonctionnalité : copier l’objet à partir de la console devtools | Bogues Chromium"  
 [CR1149859]: https://crbug.com/1149859 "Problème 1149859: [feature request][Console] add copy object to clipboard item to contextual menu | Bogues Chromium"  
 [CR1150797]: https://crbug.com/1150797 "Problème 1150797 : ajouter un menu contextif d’élément dupliqué dans le panneau d'| Bogues Chromium"  
-[CR1152391]: https://crbug.com/1152391 "Problème 1152391 : prise en charge de la copie du menu contextux CSS dans le panneau de styles | Bogues Chromium"  
+[CR1152391]: https://crbug.com/1152391 "Problème 1152391 : prise en charge de la copie du menu contexté CSS dans le panneau de styles | Bogues Chromium"  
 [CR1155120]: https://crbug.com/1155120 "Problème 1155120 : [FR]Nom du fichier de copie de support et numéro de ligne | Bogues Chromium"  
 [CR1156628]: https://crbug.com/1156628 "Problème 1156628 : DevTools : ajoutez la prise en charge de la fonctionnalité d’état d’élément :target en force | Bogues Chromium"  
 [CR1157329]: https://crbug.com/1157329 "Problème 1157329 : Accessibilité - Narrateur : le Narrateur n’annonce pas le nombre et la position des suggestions disponibles pour le code dans l’onglet Styles | Bogues Chromium"  
