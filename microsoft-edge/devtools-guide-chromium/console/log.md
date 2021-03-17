@@ -3,16 +3,16 @@ description: Découvrez comment enregistrer des messages dans la console.
 title: Commencer à journalisation des messages dans la console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: e2ea1a8327dd2a591e067b69198c4509b2abcb2d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: fb428154b00959db1627096819c565dd5dc11346
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399168"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439288"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -75,7 +75,7 @@ Ce didacticiel est conçu pour vous permettre d’ouvrir la démonstration et d�
     :::row:::
        :::column span="":::
           > [!TIP]
-          > [Désédock DevTools dans une fenêtre distincte.][DevToolsCustomizePlacement]  
+          > [Undock DevTools dans une fenêtre distincte.][DevToolsCustomizePlacement]  
           
           :::image type="complex" source="../media/console-example-devtools-separate-console-browse.msft.png" alt-text="Navigateur dans une fenêtre distincte" lightbox="../media/console-example-devtools-separate-console-browse.msft.png":::
              Navigateur dans une fenêtre distincte  
@@ -101,7 +101,7 @@ La plupart des messages affichés dans la **console** proviennent des développe
        Console **après** avoir choisi Les **informations du journal**  
     :::image-end:::  
     
-1.  En face du `Hello, Console!` message dans la console, choisissez **log.js:2**.  Le panneau Sources s’ouvre et met en évidence la ligne de code à l’origine de la journalisé du message sur la console.  Le message a été enregistré lors de l’utilisation du javaScript de la `console.log('Hello, Console!')` page.
+1.  En face du `Hello, Console!` message dans la console, choisissez **log.js:2**.  Le panneau Sources s’ouvre et met en évidence la ligne de code à l’origine de la consigner dans la console.  Le message a été consigné lorsque le JavaScript de la page a été en cours `console.log('Hello, Console!')` d’utilisation.
     
     :::image type="complex" source="../media/console-sources-logjs.msft.png" alt-text="DevTools ouvre l’outil Sources après avoir choisi log.js:2" lightbox="../media/console-sources-logjs.msft.png":::
        DevTools ouvre l’outil **Sources** une fois que vous avez choisi `log.js:2`  
@@ -122,7 +122,7 @@ La plupart des messages affichés dans la **console** proviennent des développe
     > [!TIP]
     > Si vous souhaitez afficher le code à l’origine de la journalisé d’un message d’une certaine façon, choisissez un script \(tel que \) pour afficher le code à l’origine de la mise en forme du `log.js:12` message.  
 
-1.  Choose the **Expand** \( ![ Expand ][ImageExpandIcon] \) icon in front of `Abandon Hope All Ye Who Enter` .  DevTools affiche la [trace de pile][WikiStackTrace] précédant l’appel.  
+1.  Choose the **Expand** \( ![ Expand ](../media/expand-icon.msft.png) \) icon in front of `Abandon Hope All Ye Who Enter` .  DevTools affiche la [trace de pile][WikiStackTrace] précédant l’appel.  
     
     :::image type="complex" source="../media/console-log-warning-expanded.msft.png" alt-text="Une trace de pile" lightbox="../media/console-log-warning-expanded.msft.png":::
        Une trace de pile  
@@ -236,13 +236,13 @@ Lorsque vous souhaitez afficher tous les messages qui incluent un modèle de tex
 
 Lorsque vous souhaitez afficher uniquement les messages provenant d’une URL spécifique, utilisez la **barre latérale**.  
 
-1.  Choose **Show Console Sidebar** \( ![ Show Console Sidebar ][ImageShowConsoleSidebarIcon] \).  
+1.  Choose **Show Console Sidebar** \( ![ Show Console Sidebar ](../media/show-console-sidebar-icon.msft.png) \).  
     
     :::image type="complex" source="../media/console-sidebar-all-messages.msft.png" alt-text="Barre latérale" lightbox="../media/console-sidebar-all-messages.msft.png":::
        Barre latérale  
     :::image-end:::  
     
-1.  Sélectionnez **l’icône** Développer \( ![ Développer ][ImageExpandIcon] \) en de côté du nombre de messages.  Dans la figure suivante, le nombre de messages est indiqué en tant que **13 Messages**.  La **barre latérale affiche** la liste des URL à l’origine de la journalologie des messages.  Par exemple, `log.js` 11 messages ont été envoyés.  
+1.  Sélectionnez **l’icône** Développer \( ![ Développer ](../media/expand-icon.msft.png) \) en de côté du nombre de messages.  Dans la figure suivante, le nombre de messages est indiqué en tant que **13 Messages**.  La **barre latérale affiche** la liste des URL à l’origine de la journalologie des messages.  Par exemple, `log.js` 11 messages ont été envoyés.  
     
     :::image type="complex" source="../media/console-sidebar-expanded-all-messages.msft.png" alt-text="Affichage de la source des messages dans la barre latérale" lightbox="../media/console-sidebar-expanded-all-messages.msft.png":::
        Affichage de la source des messages dans la barre latérale  
@@ -265,7 +265,7 @@ Précédemment, lorsque vous choisissez **Log Info**, un script nommé pour enre
 Si vous modifiez des styles, mais que vous devez rapidement vérifier le journal de la console, utilisez le caisse.  
 
 1.  Choisissez **l’outil Éléments.**  
-1.  Sélectionnez `Escape` .  **L’outil Console** dans **le caisse s’ouvre.**  Il comporte toutes les fonctionnalités du panneau Console que vous avez utilisé tout au long de ce didacticiel.  
+1.  Sélectionnez `Escape` .  **L’outil Console** dans **le caisse s’ouvre.**  Il comporte toutes les fonctionnalités du panneau Console que vous utilisez tout au long de ce didacticiel.  
     
     :::image type="complex" source="../media/console-elements-drawer-console-sidebar-all-messages.msft.png" alt-text="Outil Console dans le caisse" lightbox="../media/console-elements-drawer-console-sidebar-all-messages.msft.png":::
          Outil **Console** dans le **caisse**  
@@ -280,11 +280,6 @@ Si vous modifiez des styles, mais que vous devez rapidement vérifier le journal
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageExpandIcon]: ../media/expand-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 

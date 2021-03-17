@@ -3,16 +3,16 @@ description: Découvrez comment afficher et modifier sessionStorage avec le vole
 title: Afficher et modifier le stockage de session avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: cf00d71302e7a1f16ba1cceaa17c9380245d12f8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0168b01fd01071ebd19bd211c6d947ae006d778c
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398006"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439660"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -79,13 +79,13 @@ Ce guide vous montre comment utiliser [Microsoft Edge DevTools][MicrosoftEdgeDev
 ## <a name="delete-sessionstorage-key-value-pairs"></a>Supprimer des paires clé-valeur sessionStorage  
 
 1.  [Afficher les `sessionStorage` paires clé-valeur d’un domaine.](#view-sessionstorage-keys-and-values)  
-1.  Choisissez la paire clé-valeur à supprimer.  DevTools le met en surdessauté en bleu pour indiquer qu’il est sélectionné.  
-1.  Sélectionnez `Delete` la clé ou choisissez Supprimer **sélectionné** \( Supprimer ![ sélectionné ][ImageDeleteIcon] \).  
+1.  Choisissez la paire clé-valeur à supprimer.  DevTools le met en sur-soulignement en bleu pour indiquer qu’il est sélectionné.  
+1.  Sélectionnez `Delete` la clé ou choisissez Supprimer **sélectionné** \( Supprimer ![ sélectionné ](../media/delete-icon.msft.png) \).  
     
 ## <a name="delete-all-sessionstorage-key-value-pairs-for-a-domain"></a>Supprimer toutes les paires clé-valeur sessionStorage pour un domaine  
 
 1.  [Afficher les `sessionStorage` paires clé-valeur d’un domaine.](#view-sessionstorage-keys-and-values)  
-1.  Choose **Clear All** \( Clear All ![ ][ImageClearIcon] \).  
+1.  Choose **Clear All** \( Clear All ![ ](../media/clear-icon.msft.png) \).  
     
 ## <a name="interact-with-sessionstorage-from-the-console"></a>Interagir avec sessionStorage à partir de la console  
 
@@ -106,11 +106,6 @@ Ce guide vous montre comment utiliser [Microsoft Edge DevTools][MicrosoftEdgeDev
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 

@@ -3,16 +3,16 @@ description: Identifiez les fonctions coûteuses à l’aide du panneau Mémoire
 title: Accélérer le runtime JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 682001ae8d265b342e5d6e0725f9f8ac4e298cf8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2151777c6a9f94408f48552839531c3534d3de36
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397600"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439737"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -30,7 +30,7 @@ ms.locfileid: "11397600"
 
 # <a name="speed-up-javascript-runtime"></a>Accélérer le runtime JavaScript  
 
-Identifiez les fonctions coûteuses à l’aide **du panneau** Mémoire.  
+Identifiez les fonctions coûteuses à l’aide **de l’outil** Mémoire.  
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Exemples de profils" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
    Exemples de profils  
@@ -38,18 +38,18 @@ Identifiez les fonctions coûteuses à l’aide **du panneau** Mémoire.
 
 ### <a name="summary"></a>Résumé  
 
-*   Enregistrez exactement les fonctions qui ont été appelées et la quantité de mémoire nécessaire avec l’échantillonnage d’allocation dans le **panneau Mémoire.**  
+*   Enregistrez exactement les fonctions qui ont été appelées et la quantité de mémoire nécessaire avec l’échantillonnage d’allocation dans **l’outil Mémoire.**  
 *   Visualisez vos profils en tant que graphique graphique.  
     
 ## <a name="record-a-sampling-profile"></a>Enregistrer un profil d’échantillonnage  
 
 Si vous remarquez jank dans votre JavaScript, collectez un profil d’échantillonnage.  Les profils d’échantillonnage indiquent où le temps d’exécution est passé sur les fonctions de votre page.  
 
-1.  Accédez au **panneau** Mémoire de DevTools.  
+1.  Accédez à **l’outil** Mémoire de DevTools.  
 1.  Choisissez la **radio d’échantillonnage** d’allocation.  
 1.  Choose **Start**.  
 1.  Selon ce que vous essayez d’analyser, vous pouvez soit actualiser la page, interagir avec la page, soit laisser la page s’exécuter.  
-1.  Lorsque vous **avez** terminé, sélectionnez le bouton Arrêter.  
+1.  Lorsque **vous** avez terminé, sélectionnez le bouton Arrêter.  
     
 > [!NOTE]
 > Vous pouvez également utiliser [l’API des utilitaires console][DevtoolsConsoleUtilities] pour enregistrer et grouper des profils à partir de la ligne de commande.  
@@ -58,11 +58,11 @@ Si vous remarquez jank dans votre JavaScript, collectez un profil d’échantill
 
 Lorsque vous avez terminé l’enregistrement, DevTools remplit automatiquement le panneau Mémoire sous **PROFILS D’ÉCHANTILLONNAGE** avec les données de votre enregistrement. ****  
 
-L’affichage par défaut **est Heavy \(Bottom Up\)**.  Cette vue vous permet de passer en revue les fonctions qui ont eu le plus d’impact sur les performances et d’examiner le chemin d’accès à la demande pour chaque fonction.  
+L’affichage par défaut **est Heavy \(Bottom Up\)**.  Cette vue vous permet d’examiner les fonctions qui ont eu le plus d’impact sur les performances et d’examiner le chemin d’accès à la demande pour chaque fonction.  
 
 ### <a name="change-sort-order"></a>Modifier l’ordre de tri  
 
-Pour modifier l’ordre de tri, sélectionnez le menu déroulant en face de l’icône de la fonction sélectionnée du **focus** \( focus selected function \), puis choisissez l’une des ![ options ][ImageFocusIcon] suivantes.
+Pour modifier l’ordre de tri, sélectionnez le menu déroulant en face de l’icône de la fonction sélectionnée du **focus** \( focus selected function \), puis choisissez l’une des ![ options ](../media/focus-icon.msft.png) suivantes.
 
 **Graphique**.  Affiche un graphique chronologique de l’enregistrement.  
 
@@ -84,15 +84,15 @@ Pour modifier l’ordre de tri, sélectionnez le menu déroulant en face de l’
 
 ### <a name="exclude-functions"></a>Exclure des fonctions  
 
-Pour exclure une fonction de votre profil d’échantillonnage, sélectionnez-la, puis sélectionnez le bouton exclure la fonction sélectionnée **\(** exclure la ![ fonction sélectionnée ][ImageExcludeIcon] \).  La fonction de demande \(parent\) de la fonction exclue \(enfant\) est chargée de la mémoire allouée affectée à la fonction exclue \(enfant\).  
+Pour exclure une fonction de votre profil d’échantillonnage, choisissez-la, puis sélectionnez le bouton exclure la fonction sélectionnée **\(** exclure la ![ fonction sélectionnée ](../media/exclude-icon.msft.png) \).  La fonction de demande \(parent\) de la fonction exclue \(enfant\) est chargée de la mémoire allouée affectée à la fonction exclue \(enfant\).  
 
-Sélectionnez le bouton restaurer **toutes les fonctions** \( restaurer toutes les fonctions \) pour restaurer toutes les fonctions ![ ][ImageRestoreIcon] exclues dans l’enregistrement.  
+Sélectionnez le bouton restaurer **toutes les fonctions** \( restaurer toutes les fonctions \) pour restaurer toutes les fonctions ![ ](../media/restore-icon.msft.png) exclues dans l’enregistrement.  
 
 ## <a name="view-sampling-profile-as-chart"></a>Afficher le profil d’échantillonnage en tant que graphique  
 
 L’affichage Graphique fournit une représentation visuelle du profil d’échantillonnage au fil du temps.  
 
-Après avoir [enregistré un profil d’échantillonnage,](#record-a-sampling-profile)affichez l’enregistrement sous la forme d’un graphique à graphiques en modifiant l’ordre [de tri](#change-sort-order) en **graphique.**  
+Après avoir [enregistré un profil d’échantillonnage,](#record-a-sampling-profile)affichez l’enregistrement sous la forme d’un graphique à graphique graphique en modifiant l’ordre [de tri](#change-sort-order) en **graphique.**  
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Affichage Graphique de graphique" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
    Affichage Graphique de graphique  
@@ -105,7 +105,7 @@ Le graphique en graphiques est divisé en deux parties.
 | 1 | Vue d'ensemble | Vue oculaire de l’intégralité de l’enregistrement.  La hauteur des barres correspond à la profondeur de la pile d’appels.  Ainsi, plus la barre est élevée, plus la pile d’appels est profonde.  |  
 | 2 | Pile des appels | Il s’agit d’une vue détaillée des fonctions qui ont été appelées pendant l’enregistrement.  L’axe horizontal est le temps et l’axe vertical est la pile d’appels.  Les piles sont organisées de haut en bas.  Ainsi, la fonction au-dessus appelait celle en dessous, et ainsi de suite.  |  
 
-Les fonctions sont colorées de manière aléatoire.  Il n’existe aucune corrélation avec les couleurs utilisées dans les autres panneaux.  Toutefois, les fonctions sont toujours colorées de la même façon entre les appels, de sorte que vous pouvez observer les modèles dans chaque runtime.  
+Les fonctions sont colorées de manière aléatoire.  Il n’existe aucune corrélation avec les couleurs utilisées dans les autres panneaux.  Toutefois, les fonctions sont toujours colorées de la même façon entre les appels afin que vous pouvez observer les modèles dans chaque runtime.  
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="Graphique à graphiques sous-annotés" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
    Graphique à graphiques sous-annotés  
@@ -123,7 +123,7 @@ Choisissez, maintenez la souris à gauche et à droite dans la vue d’ensemble 
 
 ### <a name="view-function-details"></a>Afficher les détails de la fonction  
 
-Choisissez une fonction pour afficher la définition dans le **panneau Sources.**  
+Choisissez une fonction pour afficher la définition dans **l’outil Sources.**  
 
 Pointez sur une fonction pour afficher le nom et les données de minutage.  Les informations suivantes sont fournies.  
 
@@ -144,12 +144,6 @@ Pointez sur une fonction pour afficher le nom et les données de minutage.  Les 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageExcludeIcon]: ../media/exclude-icon.msft.png  
-[ImageFocusIcon]: ../media/focus-icon.msft.png  
-[ImageRestoreIcon]: ../media/restore-icon.msft.png  
 
 <!-- links -->  
 

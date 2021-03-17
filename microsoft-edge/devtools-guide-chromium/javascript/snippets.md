@@ -1,18 +1,18 @@
 ---
-description: Les extraits sont des petits scripts que vous pouvez créer et exécuter dans l’outil sources de Microsoft Edge DevTools.  Vous pouvez accéder aux ressources et les exécuter à partir de n’importe quelle page.  Lorsque vous exécutez un snippet, il s’exécute à partir du contexte de la page Web actuellement ouverte.
+description: Les extraits de code sont de petits scripts que vous pouvez écrire et exécuter dans l’outil Sources de Microsoft Edge DevTools.  Vous pouvez accéder aux ressources et les exécuter à partir de n’importe quelle page web.  Lorsque vous exécutez un extrait de code, il s’exécute à partir du contexte de la page web actuellement ouverte.
 title: Exécuter des extraits de code JavaScript sur n’importe quelle page avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 89b028177016a9194a67bbbe44d08572e5755f95
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: 779c3dcec66b6b5df3e38abe9ee458bca7dc0c45
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11230956"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439422"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,24 +28,24 @@ ms.locfileid: "11230956"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Exécuter des extraits de code JavaScript sur n’importe quelle page Web avec Microsoft Edge DevTools  
+# <a name="run-snippets-of-javascript-on-any-webpage-with-microsoft-edge-devtools"></a>Exécuter des extraits de code JavaScript sur n’importe quelle page web avec Microsoft Edge DevTools  
 
-Si vous exécutez le même code dans la [console][DevtoolsConsoleIndex] de manière répétée, envisagez d’enregistrer le code en tant qu’extrait.  Les extraits sont des scripts que vous créez dans l’outil [sources][DevToolsSourcesTool] .  Les extraits de code ont accès au contexte JavaScript de la page Web, et vous pouvez exécuter des extraits de code sur une page Web.  Les paramètres de sécurité de la plupart des pages Web se bloquent lors du chargement d’autres scripts dans les extraits.  Pour cette raison, vous devez inclure tout votre code dans un fichier.  
+Si vous exécutez le même code dans la [console][DevtoolsConsoleIndex] à plusieurs reprises, envisagez plutôt d’enregistrer le code en tant qu’extrait de code.  Les extraits de code sont des scripts que vous avez écrits dans [l’outil Sources.][DevToolsSourcesTool]  Les extraits de code ont accès au contexte JavaScript de la page web et vous pouvez exécuter des extraits de code sur n’importe quelle page web.  Les paramètres de sécurité de la plupart des pages web bloquent le chargement d’autres scripts dans des extraits de code.  Pour cette raison, vous devez inclure tout votre code dans un seul fichier.  
 
-Les extraits de vue sont une alternative aux [bookmarklets][WikiBookmarklet] à la différence que les extraits de la base ne s’exécutent que dans devtools et ne sont pas limités à la longueur autorisée d’une URL.  
+Les extraits de code [][WikiBookmarklet] sont une alternative aux signets avec la différence que les extraits de code s’exécutent uniquement dans DevTools et ne sont pas limités à la longueur autorisée d’une URL.  
 
-L’utilisation d’extraits est un excellent moyen de changer quelques éléments dans une page Web tierce.  Les changements de code dans les extraits de code sont ajoutés à la page Web actuelle et s’exécutent dans le même contexte.  Pour plus d’informations sur la modification du code existant d’une page Web, voir [remplacement][DevtoolsJavascriptOverrides].  
+L’utilisation d’extraits de code est un excellent moyen de modifier quelques éléments dans une page web tierce.  Les modifications de code dans les extraits de code sont ajoutées à la page web actuelle et s’exécutent dans le même contexte.  Pour plus d’informations sur la modification du code existant d’une page web, accédez [à Remplacements.][DevtoolsJavascriptOverrides]  
 
 :::row:::
    :::column span="":::
-      Par exemple, dans la figure suivante, la page d’accueil DevTools sur la gauche et le code source de l’extrait de code à droite.  
+      Par exemple, la figure suivante montre la page d’accueil de DevTools à gauche et du code source d’extrait de code à droite.  
       
-      :::image type="complex" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="Avant d’exécuter l’extrait de." lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
-         Page Web avant d’exécuter l’extrait  
+      :::image type="complex" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="Avant d’exécution de l’extrait de code" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
+         Page web avant l’exécution de l’extrait de code  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      Code source de l’extrait de code de la page Web avant d’exécuter l’extrait de code.  
+      Code source de l’extrait de code à partir de la page web avant d’exécutez l’extrait de code.  
       
       ```javascript
       console.log('Hello, Snippets!');
@@ -57,127 +57,122 @@ L’utilisation d’extraits est un excellent moyen de changer quelques élémen
    :::column-end:::
 :::row-end:::  
 
-Dans l’illustration suivante, la page Web s’affiche après l’exécution de l’extrait de code.  Le **tiroir** de la console s’affiche pour afficher le `Hello, Snippets!` message indiquant que le Snippet enregistre les journaux et le contenu de la page Web s’en trouve entièrement modifié.  
+Dans la figure suivante, la page web apparaît après l’exécution de l’extrait de code.  Le **caisse de la** console s’affiche pour afficher le message journal de l’extrait de code et le contenu de la page web change `Hello, Snippets!` complètement.  
 
-:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="La page Web après l’exécution de l’extrait" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
-   La page Web après l’exécution de l’extrait  
+:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="Page web après l’exécution de l’extrait de code" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
+   Page web après l’exécution de l’extrait de code  
 :::image-end:::  
 
-## Ouvrir le volet d’extraits  
+## <a name="open-the-snippets-pane"></a>Ouvrir le volet Extraits de code  
 
-Le volet d' **extraits** de liste répertorie vos extraits.  Lorsque vous voulez modifier un extrait de rapport, vous devez l’ouvrir à partir du volet **extraits** .  
+Le **volet Extraits de** code répertorie vos extraits de code.  Lorsque vous souhaitez modifier un extrait de code, vous devez l’ouvrir à partir du **volet** Extraits de code.  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="Volet Snippets" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
-   Volet **snippets**  
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="Volet Extraits de code" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+   Volet **Extraits** de code  
 :::image-end:::  
 
-### Ouvrir le volet des fragments de fenêtre à l’aide d’une souris  
+### <a name="open-the-snippets-pane-with-a-mouse"></a>Ouvrir le volet Extraits de code à l’aide d’une souris  
 
-1.  Sélectionnez l’onglet **sources** pour ouvrir l’outil **sources** .  Le volet **page** s’ouvre généralement par défaut.  
+1.  Choisissez **l’onglet Sources** pour ouvrir **l’outil Sources.**  Le **volet Page** s’ouvre généralement par défaut.  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Outil sources avec le volet pages ouvert à gauche" lightbox="../media/javascript-sources-page-pane.msft.png":::
-       Outil **sources** avec le volet **pages** ouvert à gauche  
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="Outil Sources avec le volet Page ouvert à gauche" lightbox="../media/javascript-sources-page-pane.msft.png":::
+       Outil **Sources** avec le volet **Page** ouvert à gauche  
     :::image-end:::  
     
-1.  Cliquez sur l’onglet **extraits** de vue pour ouvrir le volet d' **extraits** .  Il est possible que vous deviez sélectionner d' **autres onglets** \ ( ![ plus d’onglets ][ImageMoreTabsIcon] \) pour accéder à l’option d' **extraits** .  
+1.  Choisissez **l’onglet Extraits** de code pour ouvrir le volet **Extraits** de code.  Vous devrez peut-être choisir **Plus d’onglets** \( Autres onglets \) pour accéder à l’option ![ ](../media/more-tabs-icon.msft.png) Extraits **de** code.  
     
-### Ouvrir le volet d’extraits de fenêtre à l’aide du menu de commandes  
+### <a name="open-the-snippets-pane-with-the-command-menu"></a>Ouvrir le volet Extraits de code avec le menu Commande  
 
-1.  Focalisez votre curseur à un endroit quelconque dans DevTools.  
-1.  Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le menu de commandes.  
-1.  Tapez `Snippets` , choisissez **afficher les extraits**, puis sélectionnez `Enter` pour exécuter la commande.  
+1.  Concentrez votre curseur quelque part dans DevTools.  
+1.  Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le menu Commande.  
+1.  Tapez `Snippets` , choisissez Afficher les extraits de **code,** puis `Enter` sélectionnez pour exécuter la commande.  
     
-    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="Commande Afficher les extraits" lightbox="../media/javascript-search-show-snippets.msft.png":::
-       Commande **afficher les extraits**  
+    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="Commande Afficher les extraits de code" lightbox="../media/javascript-search-show-snippets.msft.png":::
+       Commande **Afficher les extraits de** code  
     :::image-end:::  
     
-## Créer des extraits de  
+## <a name="create-snippets"></a>Créer des extraits de code  
 
-### Créer un snippet via le volet sources  
+### <a name="create-a-snippet-through-the-sources-panel"></a>Créer un extrait de code via le panneau Sources  
 
-1.  [Ouvrez le volet d' **extraits** ](#open-the-snippets-pane).  
-1.  Sélectionnez **nouvel extrait**.  
-1.  Entrez le nom de votre snippet, puis sélectionnez `Enter` Enregistrer.  
+1.  [Ouvrez **le volet Extraits** de code.](#open-the-snippets-pane)  
+1.  Choose **New snippet**.  
+1.  Entrez un nom pour votre extrait de code, puis `Enter` sélectionnez enregistrer.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Nommer un snippet" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
-       Nommer un snippet  
+    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Nommer un extrait de code" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
+       Nommer un extrait de code  
     :::image-end:::  
     
-### Créer un snippet via le menu de commandes  
+### <a name="create-a-snippet-through-the-command-menu"></a>Créer un extrait de code dans le menu Commande  
 
-1.  Focalisez votre curseur à un endroit quelconque dans DevTools.  
-1.  Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le menu de commandes.  
-1.  Tapez `Snippet` , choisissez **créer un nouvel extrait**, puis sélectionnez `Enter` pour exécuter la commande.  
+1.  Concentrez votre curseur quelque part dans DevTools.  
+1.  Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le menu Commande.  
+1.  Tapez , choisissez Créer un extrait de `Snippet` **code,** puis `Enter` sélectionnez pour exécuter la commande.  
     
-    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="Commande de création d’un nouveau Snippet" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
-       Commande de création d’un nouveau Snippet  
+    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="Commande de création d’un extrait de code" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
+       Commande de création d’un extrait de code  
     :::image-end:::  
     
-Pour renommer votre nouveau Snippet avec un nom personnalisé, accédez à [Renommer des extraits de nom](#rename-snippets).  
+Pour renommer votre nouvel extrait de code avec un nom personnalisé, accédez à Renommer les [extraits de code.](#rename-snippets)  
 
-## Modifier des extraits de ce profil  
+## <a name="edit-snippets"></a>Modifier les extraits de code  
 
-1.  [Ouvrez le volet d' **extraits** ](#open-the-snippets-pane).  
-1.  Dans le volet **snippets** , sélectionnez le nom de l’extrait que vous voulez modifier.  Il s’ouvre dans l' **éditeur de code**.  
+1.  [Ouvrez **le volet Extraits** de code.](#open-the-snippets-pane)  
+1.  Dans le **volet Extraits** de code, choisissez le nom de l’extrait de code à modifier.  Il s’ouvre dans **l’éditeur de code.**  
     
     :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="Éditeur de code" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
-       **Éditeur de code**  
+       Éditeur **de code**  
     :::image-end:::  
     
-1.  Utilisez l' **éditeur de code** pour ajouter du JavaScript à votre snippet.  
-1.  Lorsqu’un astérisque apparaît en regard du nom de votre snippet, cela signifie que vous avez du code non enregistré.  Sélectionnez `Control` + `S` \ (Windows, Linux \) ou `Command` + `S` \ (MacOS \) pour l’enregistrer.  
+1.  Utilisez **l’Éditeur de code** pour ajouter JavaScript à votre extrait de code.  
+1.  Lorsqu’un astérisque apparaît à côté du nom de votre extrait de code, cela signifie que vous avez du code nonavé.  Sélectionnez `Control` + `S` \(Windows, Linux\) ou `Command` + `S` \(macOS\) à enregistrer.  
     
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="Un astérisque en regard du nom de l’extrait de code indique le code non enregistré" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
-       Un astérisque en regard du nom de l’extrait de code indique le code non enregistré  
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="Un astérisque à côté du nom de l’extrait de code indique du code nonavé" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
+       Un astérisque à côté du nom de l’extrait de code indique du code nonavé  
     :::image-end:::  
     
-## Exécuter des Snippets  
+## <a name="run-snippets"></a>Exécuter des extraits de code  
 
-### Exécuter un snippet à partir du panneau sources  
+### <a name="run-a-snippet-from-the-sources-panel"></a>Exécuter un extrait de code à partir du panneau Sources  
 
-1.  [Ouvrez le volet d' **extraits** ](#open-the-snippets-pane).  
-1.  Sélectionnez le nom de l’extrait que vous souhaitez exécuter.  L’extrait de code s’ouvre dans l' **éditeur de code**.  
-1.  Sélectionnez **exécuter le fragment** de passe \ ( ![ exécuter l’extrait ][ImageRunSnippetIcon] \), ou sélectionnez `Control` + `Enter` \ (Windows, Linux \) ou `Command` + `Enter` \ (MacOS \).  
+1.  [Ouvrez **le volet Extraits** de code.](#open-the-snippets-pane)  
+1.  Choisissez le nom de l’extrait de code à exécuter.  L’extrait de code s’ouvre dans l’éditeur **de code.**  
+1.  Choose **Run Snippet** \( ![ Run Snippet ](../media/run-snippet-icon.msft.png) \), or select `Control` + `Enter` \(Windows, Linux\) or `Command` + `Enter` \(macOS\).  
     
-### Exécuter un extrait de commande avec le menu de commandes  
+### <a name="run-a-snippet-with-the-command-menu"></a>Exécuter un extrait de code avec le menu Commande  
 
-1.  Focalisez votre curseur à un endroit quelconque dans DevTools.  
-1.  Sélectionnez `Control` + `Shift` + `P` \ (Windows, Linux \) ou `Command` + `Shift` + `P` \ (MacOS \) pour ouvrir le menu de commandes.  
-1.  Supprimez le `>` caractère et tapez le `!` caractère suivi du nom de l’extrait que vous voulez exécuter.  
+1.  Concentrez votre curseur quelque part dans DevTools.  
+1.  Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le menu Commande.  
+1.  Supprimez le caractère et tapez le caractère suivi du nom de l’extrait de code à `>` `!` exécuter.  
     
-    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Exécution d’un snippet à partir du menu de commandes" lightbox="../media/javascript-search-run-command.msft.png":::
-       Exécution d’un snippet à partir du **menu de commandes**  
+    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Exécution d’un extrait de code à partir du menu Commande" lightbox="../media/javascript-search-run-command.msft.png":::
+       Exécution d’un extrait de code à partir du **menu Commande**  
     :::image-end:::  
     
-1.  Activez `Enter` cette option pour exécuter l’extrait de.  
+1.  Sélectionnez `Enter` pour exécuter l’extrait de code.  
 
-## Renommer des extraits de nom  
+## <a name="rename-snippets"></a>Renommer les extraits de code  
 
-1.  [Ouvrez le volet d' **extraits** ](#open-the-snippets-pane).  
-1.  Placez le curseur sur le nom de l’extrait, ouvrez le menu contextuel, puis cliquez sur **Renommer**.  
+1.  [Ouvrez **le volet Extraits** de code.](#open-the-snippets-pane)  
+1.  Pointez sur le nom de l’extrait de code, ouvrez le menu contextuel \(clic droit\), puis choisissez **Renommer.**  
     
-## Supprimer des extraits de  
+## <a name="delete-snippets"></a>Supprimer des extraits de code  
 
-1.  [Ouvrez le volet d' **extraits** ](#open-the-snippets-pane).  
-1.  Placez le curseur sur le nom de l’extrait, ouvrez le menu contextuel, puis cliquez sur **supprimer**.  
+1.  [Ouvrez **le volet Extraits** de code.](#open-the-snippets-pane)  
+1.  Pointez sur le nom de l’extrait de code, ouvrez le menu contextuel \(clic droit\), puis choisissez **Supprimer.**  
     
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageMoreTabsIcon]: ../media/more-tabs-icon.msft.png  
-[ImageRunSnippetIcon]: ../media/run-snippet-icon.msft.png  
-
 <!-- links -->  
 
-[DevtoolsConsoleIndex]: ../console/index.md "Présentation de la console | Documents Microsoft"  
-[DevToolsSourcesTool]: ../sources/index.md "Présentation de l’outil sources | Documents Microsoft"  
-[DevtoolsJavascriptOverrides]: ./overrides.md "Remplacements | Documents Microsoft"  
+[DevtoolsConsoleIndex]: ../console/index.md "Vue d’ensemble de la console | Documents Microsoft"  
+[DevToolsSourcesTool]: ../sources/index.md "Vue d’ensemble de l’outil Sources | Documents Microsoft"  
+[DevtoolsJavascriptOverrides]: ./overrides.md "Remplace les | Documents Microsoft"  
 
-[MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Bloc-notes | MDN"  
-[WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet | Wikipédia"  
+[MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Scratchpad | MDN"  
+[WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet | Wikipedia"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  

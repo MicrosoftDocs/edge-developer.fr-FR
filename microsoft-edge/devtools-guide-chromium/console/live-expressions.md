@@ -3,16 +3,16 @@ description: Si vous vous trouvez en train de taper les mêmes expressions JavaS
 title: Regardez les valeurs des expressions JavaScript en temps réel avec des expressions en direct
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 5bc49b60cc1c1dfb41c793c3fec7681fb6415e4c
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: af920de1c395489dc09b83f3cc0f24814c4f5cbe
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398797"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439225"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,7 +35,7 @@ Si vous vous trouvez en train de taper la même expression JavaScript dans la co
 ## <a name="create-a-live-expression"></a>Créer une expression live  
 
 1.  [Ouvrez la console.][DevToolsConsoleReferenceOpenConsole]  
-1.  Choose **Create Live Expression** \( Create Live Expression ![ ][ImageCreateLiveExpressionIcon] \).  La **zone de texte Expression** en direct s’affiche.  
+1.  Choose **Create Live Expression** \( Create Live Expression ![ ](../media/create-live-expression-icon.msft.png) \).  La **zone de texte Expression** en direct s’affiche.  
     
     :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Saisie de document.activeElement dans la zone de texte Expression dynamique" lightbox="../media/console-create-live-expression.msft.png":::
        Saisie dans `document.activeElement` la zone de texte **Expression** live  
@@ -46,10 +46,6 @@ Si vous vous trouvez en train de taper la même expression JavaScript dans la co
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCreateLiveExpressionIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 

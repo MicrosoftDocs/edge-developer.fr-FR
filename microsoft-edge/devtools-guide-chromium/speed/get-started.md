@@ -1,18 +1,18 @@
 ---
-description: Découvrez comment utiliser Microsoft Edge DevTools pour trouver des moyens d’accélérer le chargement de vos sites web.
+description: Découvrez comment utiliser Microsoft Edge DevTools pour trouver des moyens d’accélérer la charge de vos sites web.
 title: Optimiser la vitesse du site web avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 7de97ab27528e89e2373e0a0d1002e8c86e37613
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 75c9df5d86ce994cebfda882a0adfa2664b6ec30
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398111"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439443"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,7 +41,7 @@ Ce didacticiel vous apprend à utiliser Microsoft Edge DevTools pour trouver des
 
 ## <a name="introduction"></a>Introduction  
 
-Il s’agit de Tony.  Tony est très moderne dans la société de chat.  Il a créé un site web pour que ses fans puissent en savoir plus sur son favori.  Ses fans aiment le site, mais Tony ne cesse d’entendre des plaintes concernant le chargement lent du site.  Tony vous a demandé de l’aider à accélérer le site.  
+Il s’agit de Tony.  Tony est très moderne dans la société des chats.  Il a créé un site web pour que ses fans puissent en savoir plus sur son favori.  Ses fans aiment le site, mais Tony ne cesse d’entendre des plaintes concernant le chargement lent du site.  Tony vous a demandé de l’aider à accélérer le site.  
 
 :::image type="complex" source="../media/speed-tony.msft.png" alt-text="Tony le chat" lightbox="../media/speed-tony.msft.png":::
    Tony le chat  
@@ -74,8 +74,8 @@ Tout d’abord, vous devez configurer le site afin de pouvoir y apporter des mod
 1.  Sélectionnez **Projet DeNte**.  Le nom du projet change de **Tony** à un nom généré de manière aléatoire.  Vous avez maintenant votre propre copie modifiable du code.  Plus tard, vous pouvez apporter des modifications à ce code.  
 1.  Choose **Show** and choose **In a New Window**.  La démonstration s’ouvre dans un nouvel onglet.  Cet onglet est appelé « **onglet de démonstration**».  Le chargement du site peut prendre un certain temps.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-show-live.msft.png" alt-text="Onglet de démonstration" lightbox="../media/speed-glitch-tony-show-live.msft.png":::
-       Onglet de démonstration  
+    :::image type="complex" source="../media/speed-glitch-tony-show-live.msft.png" alt-text="Onglet démonstration" lightbox="../media/speed-glitch-tony-show-live.msft.png":::
+       Onglet démonstration  
     :::image-end:::  
     
 1.  Sélectionnez `Control` + `Shift` + `J` \(Windows, Linux\) ou `Command` + `Option` + `J` \(macOS\).  Microsoft Edge DevTools s’ouvre en même temps que la démonstration.  
@@ -94,7 +94,7 @@ Pour le reste des captures d’écran de ce didacticiel, DevTools est affiché d
 
 La ligne de base est un enregistrement de la façon dont le site a été exécuté avant d’apporter des améliorations de performances.  
 
-1.  Choisissez **l’outil Audits.**  Il peut être masqué derrière le **bouton Plus de panneaux** \( ![ Plus de ][ImageMorePanelsIcon] panneaux \).  Ce panneau présente une partie du panneau, car le projet qui alimente le panneau Audits s’appelle **Le Chef d’équipe**.  
+1.  Choisissez **l’outil Audits.**  Il peut être masqué derrière le **bouton Plus de panneaux** \( ![ Plus de ](../media/more-panels-icon.msft.png) panneaux \).  Ce panneau présente une partie du panneau, car le projet qui alimente le panneau Audits s’appelle **Le Chef d’équipe**.  
     
     [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]  
     
@@ -137,7 +137,7 @@ Le nombre en haut de votre rapport est le score de performances global du site. 
    Le score de performances global  
 :::image-end:::  
 
-La section **Mesures** fournit des mesures quantifias des performances du site.  Chaque métrique fournit un aperçu d’un aspect différent des performances.  Par exemple, **First Contentful Paint** vous indique quand le contenu est d’abord peint à l’écran, ce qui est un jalon important dans la perception de l’utilisateur du chargement de la page, tandis que **Time To Interactive** marque le point auquel la page apparaît suffisamment prête pour gérer les interactions utilisateur.  
+La section **Mesures** fournit des mesures quantifias des performances du site.  Chaque métrique fournit un aperçu d’un aspect différent des performances.  Par exemple, **First Contentful Paint** vous indique quand le contenu est peint pour la première fois à l’écran, ce qui est un jalon important dans la perception de l’utilisateur du chargement de la page, tandis que **Time To Interactive** marque le point auquel la page apparaît suffisamment prête pour gérer les interactions utilisateur.  
 
 :::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png" alt-text="Section Mesures" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png":::
    Section **Mesures**  
@@ -163,8 +163,8 @@ La section **Opportunités** fournit des conseils spécifiques sur l’améliora
 
 Choisissez l’opportunité d’en savoir plus à ce sujet.  
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-opportunities-expanded.msft.png" alt-text="Éliminer l’opportunité de ressources de blocage de rendu" lightbox="../media/speed-glitch-tony-remix-audits-performance-opportunities-expanded.msft.png":::
-   **Éliminer l’opportunité de ressources de blocage de rendu**  
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-opportunities-expanded.msft.png" alt-text="Éliminer les opportunités de ressources de blocage de rendu" lightbox="../media/speed-glitch-tony-remix-audits-performance-opportunities-expanded.msft.png":::
+   **Éliminer les opportunités de ressources de blocage de rendu**  
 :::image-end:::  
 
 Choose **Learn More** to display documentation about why an opportunity is important, and specific recommendations on how to fix it.  
@@ -204,7 +204,7 @@ Avant d’activer la compression, voici quelques méthodes pour vérifier manuel
     :::image-end:::  
     
 1.  Sélectionnez **l’icône Paramètre** réseau.  
-1.  Cochez **la case Utiliser les lignes de demande importantes.**  La hauteur des lignes du tableau des demandes réseau augmente.  
+1.  Cochez **la case Utiliser les lignes De grandes demandes.**  La hauteur des lignes du tableau des demandes réseau augmente.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png" alt-text="Lignes de grande taille dans le tableau des demandes réseau" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png":::
        Lignes de grande taille dans le tableau des demandes réseau  
@@ -228,7 +228,7 @@ Vérifiez la compression en inspectant les en-têtes HTTP d’une ressource :
 
 Suffisamment avec les explications.  Il est temps d’apporter des modifications.  Activez la compression de texte en ajoutant quelques lignes de code :  
 
-1.  Dans l’onglet Éditeur, choisissez **server.js**.  
+1.  Dans l’onglet Éditeur, ** choisissezserver.js**.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-server-js.msft.png" alt-text="Modifier server.js" lightbox="../media/speed-glitch-tony-remix-server-js.msft.png":::
        Edit `server.js`  
@@ -278,7 +278,7 @@ Utilisez les flux de travail que vous avez appris précédemment pour vérifier 
 Auditer à nouveau la page pour mesurer le type d’impact de la compression de texte sur les performances de charge de la page :  
 
 1.  Choisissez **l’outil Audits.**  
-1.  Choose **Perform an audit** \( Perform an audit ![ ][ImagePerformIcon] \).  
+1.  Choose **Perform an audit** \( Perform an audit ![ ](../media/perform-icon.msft.png) \).  
 1.  Laissez les paramètres identiques qu’auparavant.  
 1.  Choose **Run audit**.  
     
@@ -296,7 +296,7 @@ La plupart des serveurs ont vraiment des correctifs simples comme celui-ci pour 
 
 Votre rapport indique que le fait d’éviter d’importantes charges utiles réseau est l’une des meilleures opportunités pour améliorer les performances de la page.  Le re dimensionnement des images permet de réduire la taille de la charge utile du réseau.  Si votre utilisateur affiche vos images sur un écran d’appareil mobile de 500 pixels de large, l’envoi d’une image de 1 500 pixels ne sert à rien.  Dans l’idéal, vous envoyez une image de 500 pixels au maximum.  
 
-1.  Dans votre rapport, choisissez **d’éviter** les charges utiles réseau importantes pour afficher les images qui doivent être resa capacité.  Il semble que 2 des fichiers jpg font plus de 2 000 Ko, ce qui est plus important que nécessaire.  
+1.  Dans votre rapport, choisissez **d’éviter** les charges utiles réseau importantes pour afficher les images à re tailler.  Il semble que 2 des fichiers jpg font plus de 2 000 Ko, ce qui est plus important que nécessaire.  
     
     <!--
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png" alt-text="Details about the properly size images opportunity" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png":::
@@ -316,7 +316,7 @@ La modification affichée n’a qu’un impact mineur sur le score de performanc
 
 #### <a name="resizing-images-in-the-real-world"></a>Re resizing images in the real world  
 
-Pour une petite application, un resize one-off comme celui-ci peut être suffisant.  Mais pour une application de grande taille, cela n’est évidemment pas évolutif.  Voici quelques stratégies de gestion des images dans les applications de grande taille :  
+Pour une petite application, une telle re taille peut être suffisante.  Mais pour une application de grande taille, ce n’est évidemment pas évolutif.  Voici quelques stratégies de gestion des images dans les applications de grande taille :  
 
 *   Resize images during your build process.  
 *   Créez plusieurs tailles de chaque image pendant le processus de création, puis `srcset` utilisez-la dans votre code.  Au moment de l’utilisation, le navigateur s’occupe de choisir la taille la plus grande pour l’appareil.  
@@ -340,7 +340,7 @@ La première tâche consiste ensuite à trouver le code que vous n’avez pas be
     `lodash.js` et `jquery.js` .  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png" alt-text="Plus d’informations sur l’opportunité d’éliminer les ressources de blocage de rendu" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png":::
-       Plus d’informations sur la possibilité **d’éliminer les ressources de blocage de rendu**  
+       Plus d’informations sur **l’opportunité d’éliminer les ressources de blocage de rendu**  
     :::image-end:::  
     
 1.  Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) `Coverage` **** pour ouvrir le menu Commande, commencez à taper, puis choisissez Afficher la couverture.  
@@ -353,7 +353,7 @@ La première tâche consiste ensuite à trouver le code que vous n’avez pas be
        **L’outil Couverture**  
     :::image-end:::  
     
-1.  Choose **Refresh** \( ![ Refresh ][ImageRefreshIcon] \).  **L’outil** Couverture fournit une vue d’ensemble de la quantité de code dans , et s’exécute pendant le chargement `bundle.js` de la `jquery.js` `lodash.js` page.  Dans la figure ci-après, environ 76 % et 30 % des fichiers jQuery et Lodash ne sont pas utilisés, respectivement.  
+1.  Choose **Refresh** \( ![ Refresh ](../media/reload-icon.msft.png) \).  **L’outil** Couverture fournit une vue d’ensemble de la quantité de code dans , et s’exécute pendant le chargement `bundle.js` de la `jquery.js` `lodash.js` page.  Dans la figure ci-après, environ 76 % et 30 % des fichiers jQuery et Lodash ne sont pas utilisés, respectivement.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="Rapport de couverture" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
        Rapport de couverture  
@@ -379,7 +379,7 @@ Les fichiers `jquery.js` et les `lodash.js` fichiers sont-ils nécessaires pour 
        Outil **de blocage des** demandes  
     :::image-end:::  
     
-1.  Choose **Add Pattern** \( Add Pattern ![ ][ImageAddPatternIcon] \), type , and then select `/libs/*` to `Enter` confirm.  
+1.  Choose **Add Pattern** \( Add Pattern ![ ](../media/add-pattern-icon.msft.png) \), type , and then select `/libs/*` to `Enter` confirm.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="Ajouter un modèle pour bloquer toute demande dans le répertoire libs" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
        Ajouter un modèle pour bloquer toute demande à `libs` l’annuaire  
@@ -391,9 +391,9 @@ Les fichiers `jquery.js` et les `lodash.js` fichiers sont-ils nécessaires pour 
        **L’outil** Réseau indique que les demandes ont été bloquées  
     :::image-end:::  
     
-1.  Choose **Remove all patterns** \( ![ Remove all patterns ][ImageRemoveIcon] \) to delete the blocking `/libs/*` pattern.  
+1.  Choose **Remove all patterns** \( ![ Remove all patterns ](../media/remove-icon.msft.png) \) to delete the blocking `/libs/*` pattern.  
     
-En règle générale, **l’outil de** blocage des demandes est utile pour simuler le comportement de votre page lorsqu’une ressource donnée n’est pas disponible.  
+En règle générale, **l’outil** de blocage des demandes est utile pour simuler le comportement de votre page lorsqu’une ressource donnée n’est pas disponible.  
 
 Maintenant, supprimez les références à ces fichiers du code et auditer à nouveau la page :  
 
@@ -408,11 +408,11 @@ Maintenant, supprimez les références à ces fichiers du code et auditer à nou
     
 #### <a name="optimizing-the-critical-rendering-path-in-the-real-world"></a>Optimisation du chemin d’accès de rendu critique dans le monde réel  
 
-Le **chemin d’accès de** rendu critique fait référence au code dont vous avez besoin pour charger une page.  En règle générale, accélèrez le chargement de la page en expédiant uniquement du code critique pendant le chargement de la page, puis en chargeant différée tout le reste.  
+Le **chemin d’accès** de rendu critique fait référence au code dont vous avez besoin pour charger une page.  En règle générale, accélèrez le chargement de la page en expédiant uniquement du code critique pendant le chargement de la page, puis en chargeant différée tout le reste.  
 
 <!--[CRP]: /web/fundamentals/performance/critical-rendering-path/  -->  
 
-*   Il est peu probable que vous soyez en mesure de trouver des scripts que vous êtes en mesure de supprimer totalement, mais il se peut que vous trouviez de nombreux scripts que vous n’avez pas besoin de demander pendant le chargement de la page et qu’il soit possible de demander de manière asynchrone.  <!--Navigate to [Using async or defer][async].  -->  
+*   Il est peu probable que vous soyez en mesure de trouver des scripts que vous êtes en mesure de supprimer totalement, mais vous trouverez peut-être de nombreux scripts que vous n’avez pas besoin de demander pendant le chargement de la page et qui peuvent être demandés de manière asynchrone.  <!--Navigate to [Using async or defer][async].  -->  
 *   Si vous utilisez une infrastructure, vérifiez si elle dispose d’un mode de production.  Ce mode peut utiliser une fonctionnalité telle que l’arborescence [afin][WebpackTreeShaking] d’éliminer le code inutile qui bloque le rendu critique.  
     
 <!--[async]: /web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer  -->  
@@ -423,12 +423,12 @@ Votre dernier rapport présente quelques économies potentielles mineures dans l
 
 Le thread principal est l’endroit où le navigateur fait la plupart des travaux nécessaires à l’affichage d’une page, telles que l’affichage et l’exécution de CODE HTML, CSS et JavaScript.  
 
-L’objectif est d’utiliser le panneau Performance pour analyser le travail que le thread principal fait pendant le chargement de la page et trouver des moyens de différer ou de supprimer le travail inutile.  
+L’objectif est d’utiliser le panneau Performances pour analyser le travail que le thread principal fait pendant le chargement de la page et trouver des moyens de différer ou de supprimer le travail inutile.  
 
 1.  Choisissez **l’outil Performance.**  
-1.  Choose **Capture Settings** \( ![ Capture Settings ][ImageCaptureIcon] \).  
+1.  Choose **Capture Settings** \( ![ Capture Settings ](../media/capture-icon.msft.png) \).  
 1.  Définissez **le** réseau **sur le 3G** et le **processeur** **à 6x le ralentissement.**  Les appareils mobiles ont généralement plus de contraintes matérielles que les ordinateurs portables ou les ordinateurs de bureau. Ces paramètres vous offrent donc la même expérience que si vous utilisiez un appareil moins puissant.  
-1.  Choose **Refresh** \( ![ Refresh ][ImageRefreshIcon] \).  DevTools actuale la page, puis produit une visualisation de tout le travail effectué afin de charger la page.  Cette visualisation est appelée **suivi.**  
+1.  Choose **Refresh** \( ![ Refresh ](../media/reload-icon.msft.png) \).  DevTools actuale la page, puis produit une visualisation de tout le travail effectué afin de charger la page.  Cette visualisation est appelée **suivi.**  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="Suivi de l’outil Performance du chargement de la page" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
        Suivi **de l’outil** Performance du chargement de la page  
@@ -472,7 +472,7 @@ Examinez la trace pour trouver des méthodes pour faire moins de travail JavaScr
     
 La **colonne Temps** libre vous indique le temps passé directement dans chaque activité.  Par exemple, dans la figure suivante, environ 63 % du temps du thread principal a été passé sur la `mineBitcoin` fonction.  
 
-Il est temps de vérifier si l’utilisation du mode production et la réduction de l’activité JavaScript peuvent accélérer le chargement de la page.  Démarrez avec le mode de production :  
+Il est temps de vérifier si l’utilisation du mode de production et la réduction de l’activité JavaScript peuvent accélérer le chargement de la page.  Démarrez avec le mode de production :  
 
 1.  Dans l’onglet Éditeur, ouvrez `webpack.config.js` .  
 1.  Change `"mode":"development"` to `"mode":"production"` .  
@@ -494,7 +494,7 @@ Réduisez l’activité JavaScript en supprimant la demande à `mineBitcoin` :
        Un rapport Audits après la suppression de travail JavaScript inutile  
     :::image-end:::  
     
-Il semble que cette dernière modification a provoqué un gros saut dans les performances !  
+Il semble que cette dernière modification a provoqué un saut important des performances !  
 
 > [!NOTE]
 > Cette section a présenté brièvement le panneau Performances.  Pour en savoir plus sur l’analyse des performances de page, accédez à [Référence de l’analyse des performances.][DevtoolsEvaluatePerformanceReference]  
@@ -505,7 +505,7 @@ Il semble que cette dernière modification a provoqué un gros saut dans les per
 
 En règle générale, l’outil **Performance** est le moyen le plus courant de comprendre l’activité que fait votre site pendant son chargement et de trouver des moyens de supprimer les activités inutiles.  
 
-Si vous préférez une approche qui ressemble davantage, l’API de minutage utilisateur vous permet de marquer arbitrairement certaines phases du cycle de vie de votre application, afin de suivre la durée de chacune de ces `console.log()` phases. [][MDNUserTimingApi]  
+Si vous préférez une approche qui ressemble davantage, l’API de minutage de l’utilisateur vous permet de marquer arbitrairement certaines phases du cycle de vie de votre application, afin de suivre la durée de chacune de ces `console.log()` phases. [][MDNUserTimingApi]  
 
 ## <a name="summary"></a>Résumé  
 
@@ -523,15 +523,6 @@ Si vous préférez une approche qui ressemble davantage, l’API de minutage uti
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageAddPatternIcon]: ../media/add-pattern-icon.msft.png  
-[ImageCaptureIcon]: ../media/capture-icon.msft.png  
-[ImageLargeResourceRowsButtonIcon]: ../media/large-resource-rows-button-icon.msft.png  
-[ImageMorePanelsIcon]: ../media/more-panels-icon.msft.png  
-[ImagePerformIcon]: ../media/perform-icon.msft.png  
-[ImageRefreshIcon]: ../media/reload-icon.msft.png  
-[ImageRemoveIcon]: ../media/remove-icon.msft.png  
 <!-- links -->  
 
 [DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "Référence de l’analyse des performances | Documents Microsoft"  

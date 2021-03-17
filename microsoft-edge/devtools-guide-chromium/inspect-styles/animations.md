@@ -3,16 +3,16 @@ description: Inspectez et modifiez les animations à l’aide de l’inspecteur 
 title: Inspecter les animations
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 742096f13179de2ad1a95dc9fa62d2bbf3d7c226
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: dba948087ca06015f686d17ba48584199373805a
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397733"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439541"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -40,7 +40,7 @@ Inspectez et modifiez les animations à l’aide de l’inspecteur d’animation
 
 *   Capturez les animations en ouvrant l’Inspecteur d’animation.  L’Inspecteur d’animation détecte et trie automatiquement les animations en groupes.  
 *   Inspectez les animations en ralentissant chacune d’elles, en relisant chacune d’elles ou en visualxant le code source.  
-*   Modifiez les animations en modifiant le minutage, le délai, la durée ou les décalages d’images clés.  
+*   Modifiez les animations en modifiant le minutage, le retard, la durée ou les décalages de l’image clé.  
 
 ## <a name="overview"></a>Vue d'ensemble  
 
@@ -62,7 +62,7 @@ Il existe deux façons d’ouvrir l’Inspecteur d’animation :
 
 *   Ouvrir le menu Personnaliser et contrôler **DevTools**  
     1.  Accédez au **sous-menu Outils** Plus.  
-    1.  Choisissez **Animations**:  
+    1.  Choisissez **animations**:  
         
         :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Animations à l’aide du menu principal" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
            **Animations à l’aide** du menu principal  
@@ -103,8 +103,8 @@ Pour capturer une animation, il vous suffit d’effectuer l’interaction qui d�
 Une fois que vous avez capturé une animation, vous pouvez la relire de plusieurs façons :  
 
 *   Pointez sur la miniature dans **le** volet Vue d’ensemble pour en afficher un aperçu.  
-*   Choisissez le groupe **** d’animations dans le volet Vue **** d’ensemble \(afin qu’il s’affiche dans le volet d’informations\) et choisissez l’icône de relecture **\(** icône de relecture ![ ][ImageReplayButtonIcon] \).  L’animation est relecture dans la vue.  Choisissez les **icônes de vitesse d’animation** \( icônes de vitesse d’animation \) pour modifier la vitesse d’aperçu du groupe d’animations ![ actuellement ][ImageAnimationSpeedButtonsIcon] sélectionné.  Vous pouvez utiliser la barre verticale rouge pour modifier votre position actuelle.  
-*   Choisissez et faites glisser la barre verticale rouge pour nettoyer l’animation de la vue.  
+*   Choisissez le groupe **** d’animations dans le volet Vue **** d’ensemble \(afin qu’il s’affiche dans le volet d’informations\) et choisissez l’icône relecture **\(** icône de relecture ![ ](../media/replay-button-icon.msft.png) \).  L’animation est relecture dans la vue.  Choisissez les **icônes de vitesse d’animation** \( icônes de vitesse d’animation \) pour modifier la vitesse d’aperçu du groupe d’animations ![ actuellement ](../media/animation-speed-buttons-icon.msft.png) sélectionné.  Vous pouvez utiliser la barre verticale rouge pour modifier votre position actuelle.  
+*   Choisissez et faites glisser la barre verticale rouge pour nettoyer l’animation de laport d’affichage.  
     
 ### <a name="view-animation-details"></a>Afficher les détails de l’animation  
 
@@ -170,8 +170,8 @@ Pour ajouter un délai à une animation, choisissez-la et faites-la glisser n’
 
 <!-- image links -->  
 
-[ImageAnimationSpeedButtonsIcon]: ../media/animation-speed-buttons-icon.msft.png  
-[ImageReplayButtonIcon]: ../media/replay-button-icon.msft.png  
+(.. /media/animation-speed-buttons-icon.msft.png) : .. /media/animation-speed-buttons-icon.msft.png  
+(.. /media/replay-button-icon.msft.png) : .. /media/replay-button-icon.msft.png  
 
 <!-- links -->  
 

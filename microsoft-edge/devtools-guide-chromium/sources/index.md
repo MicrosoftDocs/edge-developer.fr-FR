@@ -3,16 +3,16 @@ description: Afficher et modifier des fichiers, créer des extraits de code, dé
 title: Vue d’ensemble du volet Sources
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 4677bf82d3506a4b8d6336ded7ab557b794fd3df
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 7ce7ae32b4bf91419512ec9e387cdf75549552a5
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397761"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439604"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,7 +32,7 @@ ms.locfileid: "11397761"
 
 Utilisez le volet **sources** de Microsoft Edge DevTools pour effectuer ces actions.  
 
-*   [Afficher les fichiers](#display-files).  
+*   [Afficher des fichiers](#display-files).  
 *   [Modifier les feuilles CSS et JavaScript](#edit-css-and-javascript).  
 *   [Créez et **enregistrez des extraits** de code JavaScript](#create-save-and-run-snippets)que vous pouvez exécuter sur n’importe quelle page web.  **Les extraits de code** sont similaires aux bookmarklets.  
 *   [Déboguer JavaScript](#debug-javascript).  
@@ -101,14 +101,14 @@ Au lieu de cela, vous pouvez enregistrer ce code dans un **extrait de code** et 
 
 Pour exécuter un **extrait de code** :
 
-*   Ouvrez le **** fichier à l’aide du panneau Extraits de code, puis choisissez **Exécuter** \( Le bouton ![ Exécuter ][ImageRunIcon] \).  
+*   Ouvrez le **** fichier à l’aide du panneau Extraits de code, puis choisissez **Exécuter** \( Le bouton ![ Exécuter ](../media/run-snippet-icon.msft.png) \).  
 *   Ouvrez [le menu Commande,][DevtoolsGuideChromiumCommandMenuIndex]supprimez le caractère, tapez, tapez le nom de votre extrait `>` `!` de code, puis **** sélectionnez `Enter` .  
     
 Pour plus d’informations, accédez à [exécuter des extraits de code à partir de n’importe quelle page][DevtoolsGuideChromiumJavascriptSnippets] .
 
 ## <a name="debug-javascript"></a>Déboguer JavaScript  
 
-Au lieu d’utiliser `console.log()` pour induire l’endroit où votre code JavaScript rencontre un problème, envisagez plutôt d’utiliser les outils de débogage de Microsoft Edge DevTools.  L’idée générale consiste à définir un point d’arrêt, qui est un point d’arrêt intentionnel dans votre code, et à parcourir le runtime de votre code, une ligne à la fois.  À mesure que vous avancez dans le code, vous pouvez afficher et modifier les valeurs de toutes les propriétés et variables actuellement définies, exécuter JavaScript dans la **console,** etc.
+Au lieu d’utiliser `console.log()` pour induire l’endroit où votre code JavaScript rencontre un problème, envisagez plutôt d’utiliser les outils de débogage de Microsoft Edge DevTools.  L’idée générale consiste à définir un point d’arrêt, qui est un point d’arrêt intentionnel dans votre code, et à parcourir le runtime de votre code, une ligne à la fois.  Au fil du code, vous pouvez afficher et modifier les valeurs de toutes les propriétés et variables actuellement définies, exécuter JavaScript dans la **console,** etc.
 
 Pour les informations de base sur le débogage dans DevTools, accédez à la section [commencer le débogage de JavaScript][DevtoolsGuideChromiumJavascriptIndex].
 
@@ -126,13 +126,9 @@ Accédez à [modifier les fichiers avec des espaces de travail][DevtoolsGuideChr
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageRunIcon]: ../media/run-snippet-icon.msft.png  
-
 <!-- links -->  
 
-[DevtoolsGuideChromiumCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes avec le menu de commandes Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsGuideChromiumCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes avec le menu de commande Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "Commencer à déboguer JavaScript dans Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "Exécuter des extraits de code JavaScript sur n’importe quelle page avec Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "Modifier des fichiers à l'| Documents Microsoft"  

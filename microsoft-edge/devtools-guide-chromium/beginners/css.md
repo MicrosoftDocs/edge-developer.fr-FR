@@ -3,16 +3,16 @@ description: Mise en place de CSS
 title: 'DevTools pour les débutants : mise en place de CSS'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft Edge, développement web, outils f12, devtools
-ms.openlocfilehash: 7aa33c339a7d130265660e4a4af6f50dde7e3e90
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 6a7135e144123917535e7c43e6a3cd608ec0c8a7
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398398"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439436"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -51,7 +51,7 @@ Une fois le didacticiel terminé, votre site doit ressembler à la figure suivan
 
 ## <a name="goals"></a>Objectifs  
 
-Suivez ce didacticiel pour mieux comprendre les concepts et tâches suivants.  
+Suivez ce didacticiel pour mieux comprendre les concepts et les tâches suivants.  
 
 *   Utilisation de CSS pour le style d’une page web.  
 *   Comment utiliser Microsoft Edge DevTools pour expérimenter CSS.  
@@ -82,7 +82,7 @@ Pour créer votre site, vous devez d’abord effectuer les actions suivantes pou
 1.  Choisissez **l’ombrabe**.  Un menu s’insérait.  
     
     :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="Menu Options de Projet" lightbox="../media/beginners-css-setup2.msft.png":::
-       Menu Options de projet  
+       Menu Options de Projet  
     :::image-end:::  
 
 1.  Sélectionnez **Projet DeNte**.  Glitch crée une copie du projet que vous pouvez modifier.  
@@ -260,7 +260,7 @@ Effectuer les actions suivantes pour utiliser des virgules afin d’ajouter plus
     L’extrait de code précédent indique au navigateur de styler les éléments de la même façon qu’il styles les éléments `<h1>` qui correspondent au modèle `li a` .  
     
 1.  Accédez à **l’onglet en direct.**  
-1.  Choisissez le **lien de** contact pour revenir à la page de contact.  À présent, **contactez-moi !** a la même police que les liens de navigation.  
+1.  Sélectionnez **le lien** Contact pour revenir à la page de contact.  À présent, **contactez-moi !** a la même police que les liens de navigation.  
     
     :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="Le texte Me contacter !  a maintenant la même police que les liens d’accueil et de contact" lightbox="../media/beginners-css-multiple1.msft.png":::
        Le texte **Me contacter !** a maintenant la même police que les liens **d’accueil** **et de** contact  
@@ -321,7 +321,7 @@ Complétez les actions suivantes pour itérer sur le style d’un élément exis
 
 Effectuer les actions suivantes pour modifier les déclarations existantes dans DevTools.  
 
-1.  Choisissez le carré magenta en côté `magenta` de .  Un s picker de couleur s’insérait.  
+1.  Choose the magenta square next to `magenta` .  Un s picker de couleur apparaît.  
     
     :::image type="complex" source="../media/beginners-css-edit1.msft.png" alt-text="S sélectionneur de couleurs" lightbox="../media/beginners-css-edit1.msft.png":::
        S sélectionneur de couleurs  
@@ -337,7 +337,7 @@ Effectuer les actions suivantes pour modifier les déclarations existantes dans 
 
 Pour ajouter de nouveaux jeux de règles dans DevTools, complétez les actions suivantes.  
 
-1.  Choose **New Style Rule** \( New Style Rule ![ ][ImageNewStyleRuleIcon] \) which is next to **.cls**.  Un jeu de règles vide apparaît avec `a` le sélecteur.  
+1.  Choose **New Style Rule** \( New Style Rule ![ ](../media/new-style-rule-icon.msft.png) \) which is next to **.cls**.  Un jeu de règles vide apparaît avec `a` le sélecteur.  
     
     :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="Ajouter une nouvelle règle" lightbox="../media/beginners-css-rule1.msft.png":::
        Ajouter une nouvelle règle  
@@ -345,7 +345,7 @@ Pour ajouter de nouveaux jeux de règles dans DevTools, complétez les actions s
     
 1.  Remplacez `a` par `a:hover` .  
     
-    :::image type="complex" source="../media/beginners-css-rule2.msft.png" alt-text="Remplacer une par une : pointer" lightbox="../media/beginners-css-rule2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule2.msft.png" alt-text="Remplacer un par un : pointer" lightbox="../media/beginners-css-rule2.msft.png":::
        Remplacer `a` par `a:hover`  
     :::image-end:::  
     
@@ -388,7 +388,7 @@ Dans une étape précédente, vous avez ajouté l’extrait de code suivant en t
 ...
 ```  
 
-Que se passe-t-il si vous `index.html` souhaitez un style identique ?  Que se passe-t-il si vous avez un grand nombre de pages sur lesquelles vous souhaitez appliquer vos styles ?  Vous devez copier et coller la feuille de style interne dans chaque page web de votre site.  Pour ajouter une feuille de style externe, vous devez effectuer les actions suivantes pour écrire votre feuille de **style** CSS une seule fois et l’appliquer à plusieurs pages.  
+Que se passe-t-il si vous `index.html` souhaitez un style identique ?  Que se passe-t-il si vous avez un grand nombre de pages sur lesquelles vous souhaitez appliquer vos styles ?  Vous devez copier et coller la feuille de style interne dans chaque page web de votre site.  Effectuer les actions suivantes pour ajouter une feuille de **style externe** afin de vous permettre d’écrire votre feuille de style CSS une seule fois et de l’appliquer à plusieurs pages.  
 
 1.  Tout d’abord, actualisez l’onglet en direct pour supprimer les modifications que vous avez apportées dans DevTools.  
     
@@ -464,10 +464,10 @@ Que se passe-t-il si vous `index.html` souhaitez un style identique ?  Que se pa
 1.  Ouvrez `contact.html` le fichier et ajoutez-y le lien.  
     
     :::image type="complex" source="../media/beginners-css-external9.msft.png" alt-text="Lien vers style.css dans contact.html" lightbox="../media/beginners-css-external9.msft.png":::
-       Lien vers `style.css` l’in `contact.html`  
+       Lien vers `style.css` l’en `contact.html`  
     :::image-end:::  
     
-1.  Accédez à **l’onglet en direct.**  La page d’accueil possède désormais la même police que dans la dernière section et une section de navigation bleue.  
+1.  Accédez à **l’onglet en direct.**  La page d’accueil possède désormais la même police que la dernière section et une section de navigation bleue.  
     
     :::image type="complex" source="../media/beginners-css-external10.msft.png" alt-text="Page d’accueil" lightbox="../media/beginners-css-external10.msft.png":::
        Page d’accueil  
@@ -606,14 +606,10 @@ Félicitations, vous avez terminé.
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!--- image links --->  
-
-[ImageNewStyleRuleIcon]: ../media/new-style-rule-icon.msft.png  
-
 <!--- links  --->  
 
 [DevtoolsBeginnersHtml]: ./html.md "DevTools pour les débutants : mise en place du code HTML et du dom | Documents Microsoft"  
-[DevtoolsCssIndex]: ../css/index.md "Commencer à afficher et modifier les | Documents Microsoft"  
+[DevtoolsCssIndex]: ../css/index.md "Mise en place de l’affichage et de la modification des | Documents Microsoft"  
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"  
 
@@ -623,7 +619,7 @@ Félicitations, vous avez terminé.
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est [trouvée ici](https://developers.google.com/web/tools/chrome-devtools/beginners/css) et est co-auteure par [Le Rédacteur technique (Intern),][KatherineJackson] Chrome DevTools\).  
+> La page d’origine est [trouvée ici](https://developers.google.com/web/tools/chrome-devtools/beginners/css) et est co-auteure par [Le rédacteur technique Principal \(interne][KatherineJackson] rédacteur technique, Chrome DevTools\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  

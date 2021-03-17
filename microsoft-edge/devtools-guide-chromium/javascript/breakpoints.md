@@ -3,16 +3,16 @@ description: Découvrez toutes les façons dont vous pouvez suspendre votre code
 title: Comment suspendre votre code avec des points d’arrêt dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 84077503d6c786244fc2ca4d54c349ae9f6d20d8
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3d50b7b105aa9a9018ba61e44147f46f3d340079
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398594"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439513"
 ---
 <!-- Copyright Kayce Basques
 
@@ -36,7 +36,7 @@ Utilisez des points d’arrêt pour suspendre votre code JavaScript.  Ce guide e
 
 Le type de point d’arrêt le plus connu est la ligne de code.  Toutefois, les points d’arrêt de ligne de code peuvent être inefficaces à définir, en particulier si vous ne savez pas exactement où rechercher, ou si vous travaillez avec une base de code de grande taille.  Vous pouvez gagner du temps lors du débogage en sachant comment et quand utiliser les autres types de points d’arrêt.  
 
-| Type de point d’arrêt | Utilisez-le lorsque vous souhaitez suspendre...  |  
+| Type de point d’arrêt | Utilisez-le lorsque vous souhaitez suspendre... |  
 |:--- |:--- |  
 | [Ligne de code](#line-of-code-breakpoints) | Sur une zone de code exacte.  |  
 | [Ligne de code conditionnelle](#conditional-line-of-code-breakpoints) | Sur une zone de code exacte, mais uniquement lorsqu’une autre condition est vraie.  |  
@@ -92,7 +92,7 @@ Pour définir un point d’arrêt de ligne de code conditionnel :
     
 ### <a name="manage-line-of-code-breakpoints"></a>Gérer les points d’arrêt de ligne de code  
 
-Utilisez le **volet Points d’arrêt** pour désactiver ou supprimer des points d’arrêt de ligne de code à partir d’un seul emplacement.  
+Utilisez le **volet Points d’arrêt** pour désactiver ou supprimer des points d’arrêt de ligne de code à partir d’un emplacement unique.  
 
 :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-16-33.msft.png" alt-text="Panneau Points d’arrêt" lightbox="../media/javascript-sources-page-js-breakpoints-16-33.msft.png":::
    Panneau **Points d’arrêt**  
@@ -148,16 +148,16 @@ Pour définir un point d’arrêt XHR :
        Créer un point d’arrêt XHR  
     :::image-end:::  
     
-## <a name="event-listener-breakpoints"></a>Points d’arrêt du lanceur d’événements  
+## <a name="event-listener-breakpoints"></a>Points d’arrêt de l’écoute d’événements  
 
 Utilisez des points d’arrêt de l’écoute d’événements lorsque vous souhaitez suspendre le code de l’écoute d’événement qui s’exécute après le déclenché d’un événement.  Vous pouvez sélectionner des événements spécifiques, tels que, ou des catégories d’événements, tels que tous `click` les événements de souris.  
 
 1.  Choisissez **l’outil Sources.**  
-1.  Développez le **panneau Points d’arrêt de l’écoute d’événements.**  DevTools affiche une liste de catégories d’événements, **telles**que Animation .  
+1.  Développez le **panneau Points d’arrêt de l’écoute d’événements.**  DevTools affiche une liste des catégories d’événements, **telles**que Animation .  
 1.  Vérifiez l’une de ces catégories pour suspendre chaque fois qu’un événement de cette catégorie est déclenché, ou développez la catégorie et vérifiez un événement spécifique.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png" alt-text="Créer un point d’arrêt de l’écoute d’événements" lightbox="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png":::
-       Créer un point d’arrêt de l’écoute d’événements  
+    :::image type="complex" source="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png" alt-text="Créer un point d’arrêt d’écoute d’événements" lightbox="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png":::
+       Créer un point d’arrêt d’écoute d’événements  
     :::image-end:::  
     
 ## <a name="exception-breakpoints"></a>Points d’arrêt d’exception  
@@ -165,7 +165,7 @@ Utilisez des points d’arrêt de l’écoute d’événements lorsque vous souh
 Utilisez des points d’arrêt d’exception lorsque vous souhaitez suspendre la ligne de code qui lance une exception capturée ou non.  
 
 1.  Choisissez **l’outil Sources.**  
-1.  Choose **Pause on exceptions** \( ![ Pause on exceptions ][ImagePauseOnExceptionsIcon] \).  L’icône devient bleue lorsqu’elle est activée.  
+1.  Choose **Pause on exceptions** \( ![ Pause on exceptions ](../media/pause-on-exceptions-icon.msft.png) \).  L’icône devient bleue lorsqu’elle est activée.  
     
     :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="Bouton Pause sur les exceptions" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
        Bouton **Pause sur les exceptions**  
@@ -173,13 +173,13 @@ Utilisez des points d’arrêt d’exception lorsque vous souhaitez suspendre la
     
 1.  **Facultatif**.  Cochez la case Pause sur les **exceptions** capturées si vous souhaitez également suspendre les exceptions capturées, en plus des exceptions non capturées.  
     
-    :::image type="complex" source="../media/javascript-sources-page-js-paused-on-exception.msft.png" alt-text="Suspendu sur une exception non importante" lightbox="../media/javascript-sources-page-js-paused-on-exception.msft.png":::
-       Suspendu sur une exception non importante  
+    :::image type="complex" source="../media/javascript-sources-page-js-paused-on-exception.msft.png" alt-text="Suspendu sur une exception nonc qu’il n’a pas" lightbox="../media/javascript-sources-page-js-paused-on-exception.msft.png":::
+       Suspendu sur une exception nonc qu’il n’a pas  
     :::image-end:::  
     
 ## <a name="function-breakpoints"></a>Points d’arrêt des fonctions  
 
-Exécutez la méthode, où se trouve la commande, la fonction ou la méthode que vous souhaitez déboguer, lorsque vous souhaitez suspendre chaque fois qu’une `debug(method)` `method` fonction spécifique est exécuté.  Vous pouvez insérer dans votre code (comme une instruction) ou exécuter la méthode à partir `debug()` `console.log()` de la console DevTools.  `debug()` équivaut à définir un [point d’arrêt de](#line-of-code-breakpoints) ligne de code sur la première ligne de la fonction.  
+Exécutez la méthode, où se trouve la commande, la fonction ou la méthode que vous souhaitez déboguer, lorsque vous souhaitez suspendre chaque fois qu’une `debug(method)` `method` fonction spécifique est exécuté.  Vous pouvez insérer dans votre code (comme une instruction) ou exécuter la méthode à partir `debug()` `console.log()` de la console DevTools.  `debug()` équivaut à définir un [point d’arrêt de ligne de code](#line-of-code-breakpoints) sur la première ligne de la fonction.  
 
 ```javascript
 function sum(a, b) {
@@ -208,7 +208,7 @@ DevTools throws a `ReferenceError` if the function you want to debug is not in s
 debug(hey); // This does not work.  hey() is out of scope.
 ```  
 
-S’assurer que la fonction cible est dans l’étendue est difficile si vous exécutez la méthode à partir `debug()` de la console DevTools.  Voici une stratégie :  
+Il est difficile de s’assurer que la fonction cible est dans l’étendue si vous exécutez la méthode à partir `debug()` de la console DevTools.  Voici une stratégie :  
 
 1.  Définissez [un point d’arrêt de ligne](#line-of-code-breakpoints) de code quelque part où la fonction est dans l’étendue.
 1.  Déclenchez le point d’arrêt.  
@@ -217,10 +217,6 @@ S’assurer que la fonction cible est dans l’étendue est difficile si vous ex
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImagePauseOnExceptionsIcon]: ../media/pause-on-exceptions-icon.msft.png  
 
 <!-- links -->  
 

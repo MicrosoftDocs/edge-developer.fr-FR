@@ -5,73 +5,73 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.date: 12/02/2020
+ms.date: 03/16/2021
 ROBOTS: NOINDEX,NOFOLLOW
-ms.openlocfilehash: 2ba81e51d3f9abd2aa2011993532566885ce553f
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
+ms.openlocfilehash: bc95f6c167479e958ffd16137176418aba872a43
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233232"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439309"
 ---
-# Protocole DevTools Microsoft Edge (EdgeHTML)
+# <a name="microsoft-edge-edgehtml-devtools-protocol"></a>Protocole DevTools Microsoft Edge (EdgeHTML)
 
 > [!NOTE]
-> Le protocole DevTools de Microsoft Edge (EdgeHTML) ne fonctionne qu’avec la [mise à jour 2018 d’avril](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) et les versions ultérieures de Windows 10.
+> Le protocole Microsoft Edge (EdgeHTML) DevTools fonctionne uniquement sur la mise à jour [d’avril 2018 de Windows 10](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) et les builds ultérieures.
 
-Les outils de développement peuvent utiliser le **protocole devtools Microsoft Edge (EdgeHTML)** pour inspecter et déboguer le navigateur Microsoft Edge (EdgeHTML). Il fournit un ensemble de méthodes et d’événements organisés en différents [domaines](0.2/domains/index.md) d’instrumentation du moteur EdgeHTML.
+Les outils de développement peuvent utiliser le protocole **DevTools Microsoft Edge (EdgeHTML)** pour inspecter et déboguer le navigateur Microsoft Edge (EdgeHTML). Il fournit un ensemble de méthodes et d’événements [organisés](0.2/domains/index.md) en différents domaines d’instrumentation du moteur EdgeHTML.
 
- Les clients d’outils peuvent appeler ces méthodes et surveiller ces événements par le biais de messages Web Sockets JSON échangés avec le *serveur devtools* hébergé par Microsoft Edge (EdgeHTML) ou Windows Device Portal. Microsoft Edge (EdgeHTML) DevTools utilise ce protocole pour activer le [débogage à distance](0.2/clients.md#microsoft-edge-devtools-preview) d’un ordinateur hôte exécutant Microsoft Edge (EdgeHTML) à partir du client autonome devtools disponible sur le [Microsoft Store](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj).
+ Les clients d’outils peuvent appeler ces méthodes et surveiller ces événements via des messages de socket web JSON échangés avec le serveur *DevTools* hébergé par Microsoft Edge (EdgeHTML) ou Windows Device Portal. Microsoft Edge (EdgeHTML) DevTools utilise [](0.2/clients.md#microsoft-edge-devtools-preview) ce protocole pour activer le débogage à distance d’un ordinateur hôte exécutant Microsoft Edge (EdgeHTML) à partir du client DevTools autonome disponible à partir du [Microsoft Store.](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj)
 
-Le protocole DevTools de Microsoft Edge (EdgeHTML) est conçu pour s’aligner étroitement avec le protocole chrome DevTools (voir les [WICG W3C pour les protocoles devtools](https://github.com/WICG/devtools-protocol/)), mais il existe des lacunes d’interopérabilité connues dans cette version.
+Le protocole Microsoft Edge (EdgeHTML) DevTools est conçu pour s’aligner étroitement avec le protocole Chrome DevTools (voir [le W3C WICG pour les protocoles DevTools),](https://github.com/WICG/devtools-protocol/)bien qu’il existe des lacunes d’interopérabilité connues dans cette version.
 
-## Utiliser le protocole
+## <a name="using-the-protocol"></a>Utilisation du protocole
 
-Voici comment associer un client d’outils personnalisé au serveur DevTools dans Microsoft Edge (EdgeHTML). Consultez les instructions de [débogage distantes](0.2/clients.md#microsoft-edge-devtools-preview) si vous utilisez Microsoft Edge devtools comme client.
+Voici comment attacher un client d’outils personnalisé au serveur DevTools dans Microsoft Edge (EdgeHTML). Consultez les instructions [de débogage](0.2/clients.md#microsoft-edge-devtools-preview) à distance si vous utilisez Microsoft Edge DevTools comme client.
 
-1. Lancez Microsoft Edge (EdgeHTML) avec le port de débogage distant ouvert, en spécifiant l’URL que vous voulez ouvrir. Par exemple:
+1. Lancez Microsoft Edge (EdgeHTML) avec le port de débogage à distance ouvert, en spécifiant l’URL que vous souhaitez ouvrir. Par exemple:
 
     ```shell
     MicrosoftEdge.exe --devtools-server-port 9222 https://www.bing.com
     ```
 
-    Si Edge est déjà démarré, le paramètre URL est facultatif. Un bouton s’affiche à côté de la barre d’adresses du navigateur pour indiquer que le **serveur des outils de développement** a démarré:
+    Si Edge est déjà lancé, le paramètre URL est facultatif. Un bouton apparaît à côté de la barre d’adresses du navigateur pour indiquer que le serveur outils de développement **a** démarré :
 
     ![Serveur des outils de développement](media/developer-tools-server.png) 
 
-2. Utilisez ce [point de terminaison http](0.2/http.md) pour obtenir une liste des cibles de page pouvant être jointes:
+2. Utilisez ce [point de terminaison HTTP pour](0.2/http.md) obtenir la liste des cibles de page attachables :
 
     ```http
     http://localhost:9222/json/list
     ```
 
-3. Connectez-vous à la liste `webSocketDebuggerUrl` des pages souhaitées pour générer d’autres [commandes de protocole](0.2/domains/index.md) et recevoir des messages d’événement par le biais du serveur de socket devtools.
+3. Connectez-vous à la page répertoriée pour émettre d’autres commandes de protocole et recevoir des messages d’événement par le biais du serveur `webSocketDebuggerUrl` de socket de devtools. [](0.2/domains/index.md)
 
-## État et commentaires
+## <a name="status-and-feedback"></a>État et commentaires
 
-La [Version 0,2](0.2/index.md) du protocole devtools fournit de nouveaux domaines pour le débogage de style et de mise en page (lecture seule) et les API de console, en plus de la fonctionnalité de débogage de script principal introduite dans la [version 0,1](0.1/index.md). Dans l’interface utilisateur de Microsoft Edge DevTools, cela se traduit par une fonctionnalité disponible dans les panneaux [**éléments**](../devtools-guide/elements.md), [**console**](../devtools-guide/console.md) et [**débogueur**](../devtools-guide/debugger.md) .
+[La version 0.2](0.2/index.md) du protocole DevTools fournit de nouveaux domaines pour le style et la disposition (lecture seule) des API de débogage et de console, en plus de la fonctionnalité de débogage de script principale introduite dans la [version 0.1](0.1/index.md). Dans l’interface utilisateur DevTools de Microsoft Edge, cela se traduit par des fonctionnalités disponibles dans les panneaux [**Éléments,**](../devtools-guide/elements.md) [**Console**](../devtools-guide/console.md) et [**Débogueur.**](../devtools-guide/debugger.md)
 
-Merci d’avoir essayé le protocole Edge DevTools! Nous aimerions entendre vos commentaires à l’adresse suivante:
+Merci d’avoir essayé le protocole Edge DevTools ! Nous aimeriez connaître vos commentaires sur :
 
- - [**Développeur Microsoft Edge**](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer?category_id=84475): idées et demandes de devtools
+<!-- - [**Microsoft Edge Developer UserVoice**](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer?category_id=84475): DevTools feature ideas and requests-->  
 
- - [**EdgeHTML**](https://developer.microsoft.com/microsoft-edge/platform/issues/)des problèmes de suivi des problèmes: protocoles, devtools et problèmes de plateforme EdgeHTML
+ - [**Suivi des problèmes EdgeHTML**](https://developer.microsoft.com/microsoft-edge/platform/issues/): protocole, devTools et problèmes de plateforme EdgeHTML
 
- - [**Concentrateur de commentaires Microsoft Edge devtools**](feedback-hub:?referrer=microsoftEdge&tabID=2&newFeedback=true&ContextId=344): protocoles et devtools problèmes et suggestions par le biais de l’application Hub de commentaires
+ - [**Hub de commentaires Microsoft Edge DevTools**](feedback-hub:?referrer=microsoftEdge&tabID=2&newFeedback=true&ContextId=344): problèmes et suggestions relatifs au protocole et à DevTools via l’application Hub de commentaires
 
-## Forum Aux Questions
+## <a name="faq"></a>Forum Aux Questions
 
-#### Plusieurs clients peuvent-ils se connecter au même serveur DevTools?
-Non, pas simultanément lors du débogage des clients. Le dernier client à connecter va arrêter le précédent. À l’avenir, lorsque d’autres outils sont pris en charge, ceux-ci peuvent prendre en charge des connexions client simultanées.
+#### <a name="can-multiple-clients-connect-to-the-same-devtools-server"></a>Plusieurs clients peuvent-ils se connecter au même serveur DevTools ?
+Non, pas simultanément lorsque les clients sont en cours de débogage. Le dernier client à se connecter lancera le précédent. À l’avenir, lorsque des outils supplémentaires seront pris en charge, ceux-ci ront probablement pris en charge les connexions client simultanées.
 
-#### Dois-je utiliser 9222 comme port de serveur DevTools?
-Non. Vous pouvez spécifier n’importe quel port, même s’il n’est pas déjà utilisé. Le port 9222 pour le débogage à distance est utilisé par Convention.
+#### <a name="do-i-have-to-use-9222-as-the-devtools-server-port"></a>Dois-je utiliser le port 9222 comme port DevTools Server ?
+Non. Vous pouvez spécifier n’importe quel port, mais n’oubliez pas d’en sélectionner un qui n’est pas déjà utilisé. Le port 9222 pour le débogage à distance est utilisé par convention.
 
-#### Comment puis-je connecter mon client d’outils personnalisés à Microsoft Edge (EdgeHTML) exécutant DevTools Server?
-Pour en savoir plus sur l’utilisation de l’ordinateur local, voir utilisation des instructions de [*protocole*](#using-the-protocol) ci-dessus. Si vous souhaitez prendre en charge le débogage à distance, vous devez concevoir un flux de travail utilisateur pour l’installation du certificat SSL de l’ordinateur hôte sur le client, par exemple avec une boîte de dialogue d’installation telle que [Microsoft Edge devtools Preview](./0.2/clients.md#microsoft-edge-devtools-preview) utilise.
+#### <a name="how-do-i-connect-my-custom-tooling-client-to-microsoft-edge-edgehtml-running-the-devtools-server"></a>Comment connecter mon client d’outils personnalisé à Microsoft Edge (EdgeHTML) exécutant le serveur DevTools ?
+Voir Utilisation des instructions [*de protocole*](#using-the-protocol) ci-dessus pour l’attachement à Microsoft Edge (EdgeHTML) en cours d’exécution sur l’ordinateur local. Si vous cherchez à prendre en charge le débogage à distance, vous devez concevoir un flux de travail utilisateur pour installer le certificat SSL de l’ordinateur hôte sur le client, par exemple avec une boîte de dialogue d’installation que [Microsoft Edge DevTools Preview](./0.2/clients.md#microsoft-edge-devtools-preview) utilise.
 
-#### S’il s’agit du débogage à distance à l’aide de Edge DevTools, dois-je lancer le processus de navigateur hôte avec *--devtools-Server-Port* de la ligne de commande? 
-Non. Si vous configurez le [débogage à distance à l’aide de Microsoft Edge devtools Preview](./0.2/clients.md#microsoft-edge-devtools-preview), le `--devtools-server-port` commutateur de ligne de commande n’est pas nécessaire pour démarrer Edge. Dans le cas présent, Windows *Device Portal* héberge le serveur devtools pour le compte du navigateur.
+#### <a name="if-im-remote-debugging-using-edge-devtools-do-i-need-to-start-the-host-browser-process-with---devtools-server-port-cmd-line-switch"></a>Si je suis en train de déboguer à distance à l’aide de Edge DevTools, dois-je démarrer le processus du navigateur hôte avec le commutateur de ligne de commande *--devtools-server-port* ? 
+Non. Si vous mettez en place le débogage à distance à l’aide de [Microsoft Edge DevTools Preview,](./0.2/clients.md#microsoft-edge-devtools-preview)le commutateur de ligne de commande n’est pas nécessaire pour démarrer `--devtools-server-port` Edge. Dans ce cas, Windows *Device Portal* héberge le serveur DevTools pour le compte du navigateur.
 
-#### Est-il possible d’utiliser le protocole Edge DevTools pour déboguer à distance un processus WWAHost.exe ou WebView?
-Le protocole Edge DevTools prend actuellement en charge uniquement les onglets du navigateur. Les processus WWAHost.exe et WebView ne sont pas pris en charge.
+#### <a name="can-i-use-the-edge-devtools-protocol-to-remotely-debug-a-wwahostexe-or-webview-process"></a>Puis-je utiliser le protocole Edge DevTools pour déboguer à distance un processus WWAHost.exe ou webview ?
+Le protocole Edge DevTools prend actuellement en charge uniquement les onglets de navigateur. WWAHost.exe et webview ne sont pas pris en charge.

@@ -1,20 +1,20 @@
 ---
 description: Commencer avec les émulateurs Surface Duo de débogage à distance.
-title: Mise en route avec les émulateurs Surface Duo de débogage à distance
+title: Mise en route des émulateurs Surface Duo de débogage à distance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, développement web, outils f12, devtools, débogage à distance, android, surface duo
-ms.openlocfilehash: a9696e63528a674d349b78fbdec2a1b804f61c49
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 61f903a5b929b7ee7b924938cf6ddc21a9783ca7
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398013"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439326"
 ---
-# <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>Mise en route avec les émulateurs Surface Duo de débogage à distance  
+# <a name="get-started-with-remote-debugging-surface-duo-emulators"></a>Mise en route des émulateurs Surface Duo de débogage à distance  
 
 Dans cet article, vous allez passer en revue le processus de débogage à distance de votre contenu web dans l’application [Microsoft Edge][GooglePlayStoreAppsComMicrosoftEmmx] sur un émulateur [Surface Duo][MicrosoftSurfaceDevicesSurfaceDuo] à partir d’une instance de bureau de [Microsoft Edge.][MicrosoftEdge]  Pour plus d’informations sur le débogage sur un appareil Surface Duo, suivez notre guide pour [le débogage][DevtoolsRemoteDebuggingMain]à distance des appareils Android.  
 
@@ -62,26 +62,26 @@ Revenir à l’instance de bureau [de Microsoft Edge.][MicrosoftEdge]  La `edge:
 > [!NOTE]
 > Si **SurfaceDuoEmulator** n’est pas affiché sur la page, essayez d’ouvrir ou de fermer des onglets dans l’application Microsoft Edge sur `edge://inspect` l’émulateur Surface [Duo][DualScreenAndroidUseEmulator]. [][GooglePlayStoreAppsComMicrosoftEmmx]  Pour obtenir des étapes de dépannage supplémentaires, accédez à [la section dépannage pour les appareils Android.][DevtoolsRemoteDebuggingIndexTroubleshootingDevtoolsIsNotDetectingAndroidDevice]  
 
-Dans la liste des onglets ouverts en cours d’exécution sur l’émulateur, sélectionnez **Inspecter** sur l’onglet qui a le contenu web à débocher.  Microsoft [Edge DevTools s’ouvre][DevtoolsIndex] dans une nouvelle fenêtre.  Choisissez **Toggle Screencast** \( Toggle Screencast \) pour afficher le contenu web à partir de votre émulateur Surface Duo dans la ![ fenêtre ][ImageToggleScreencastIcon] DevTools. [][DualScreenAndroidUseEmulator]  Vous pouvez désormais utiliser Microsoft Edge DevTools pour déboguer votre contenu web sur [l’émulateur Surface Duo.][DualScreenAndroidUseEmulator]  
+Dans la liste des onglets ouverts en cours d’exécution sur l’émulateur, sélectionnez **Inspecter** sur l’onglet qui a le contenu web à débocher.  Microsoft [Edge DevTools s’ouvre][DevtoolsIndex] dans une nouvelle fenêtre.  Choisissez **Toggle Screencast** \( Toggle Screencast \) pour afficher le contenu web à partir de votre émulateur Surface Duo dans la ![ fenêtre ](../media/toggle-screencast-icon.msft.png) DevTools. [][DualScreenAndroidUseEmulator]  Vous pouvez désormais utiliser Microsoft Edge DevTools pour déboguer votre contenu web sur [l’émulateur Surface Duo.][DualScreenAndroidUseEmulator]  
 
 :::image type="complex" source="../media/remote-debugging-surface-duo-devtools.msft.png" alt-text="Utilisation de Microsoft Edge DevTools pour déboguer Bing dans l’application Microsoft Edge sur l’émulateur Surface Duo" lightbox="../media/remote-debugging-surface-duo-devtools.msft.png":::
    Utilisation de Microsoft Edge DevTools pour déboguer Bing dans l’application Microsoft Edge sur l’émulateur Surface Duo  
 :::image-end:::  
 
 > [!NOTE]
-> Si vous étendez [l’application Microsoft Edge][GooglePlayStoreAppsComMicrosoftEmmx] sur les deux écrans de l’émulateur, la capture vidéo reflète la nouvelle taille de l’application, mais pas l’avantage.  Pour comprendre l’impact de l’impact sur la disposition de votre contenu web, utilisez l’émulateur [Surface Duo][DualScreenAndroidUseEmulator] au lieu de la capture vidéo.  
+> Si vous étendez [l’application Microsoft Edge][GooglePlayStoreAppsComMicrosoftEmmx] sur les deux écrans de l’émulateur, la capture vidéo reflètera la nouvelle taille de l’application, mais pas la petite taille.  Pour comprendre l’impact de l’impact sur la disposition de votre contenu web, utilisez l’émulateur [Surface Duo][DualScreenAndroidUseEmulator] au lieu de la capture vidéo.  
 
 ## <a name="additional-resources"></a>Ressources complémentaires  
 
-Le site web est une excellente plateforme pour la nouvelle classe d’appareils pliables et à double écran, car vous pouvez écrire votre code HTML, CSS et JavaScript une seule fois et l’avoir très bien sur les appareils à écran unique, double écran et pliables.  Pour plus d’informations, accédez aux ressources supplémentaires suivantes pour commencer à créer du contenu web pour ces nouveaux appareils.  
+Le web est une plate-forme excellente pour la nouvelle classe d’appareils pliables et à double écran, car vous pouvez écrire votre code HTML, CSS et JavaScript une seule fois et l’avoir s’affiche bien sur les appareils à écran unique, double écran et pliables.  Pour plus d’informations, accédez aux ressources supplémentaires suivantes pour commencer à créer du contenu web pour ces nouveaux appareils.  
 
 *   [Documentation pour la création d’applications sur des appareils à double écran][DualScreenIndex]  
 *   [L’outil d’explication de la plateforme web Microsoft Edge pour les nouvelles API pour créer des expériences web sur des appareils pliables et à double écran][GithubMicrosoftedgeMsedgeexplainersFoldablesExplainer]  
-*   [Enregistrement de la session de la Journée du développeur Microsoft 365 : comment créer des expériences à double écran pour les sites web et les applications web][YoutubeDxrzwsqxpvc]  
+*   [Enregistrement de la session de la Journée des développeurs Microsoft 365 : comment créer des expériences à double écran pour les sites web et les applications web][YoutubeDxrzwsqxpvc]  
 
-<!-- image links -->  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
-[ImageToggleScreencastIcon]: images/toggle-screencast-icon.msft.png  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

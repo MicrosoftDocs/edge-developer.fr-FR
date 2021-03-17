@@ -3,18 +3,20 @@ description: Découvrez comment modifier les styles et paramètres de police CSS
 title: Modifier les styles et paramètres de police CSS dans le volet Styles de DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2021
+ms.date: 03/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 928f7abb0f74839708cbe5c904ad321109ae33f0
-ms.sourcegitcommit: 12c30ad4ab2664d17c9b7e9d59d7a3cda60ff65c
+no-loc:
+- Enable new font editor tool within the Styles pane
+ms.openlocfilehash: 5d9074ca65f9cb98662a1bc181f70ead4c4232e1
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313177"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439492"
 ---
-# Modifier les styles et paramètres de police CSS dans le volet Styles  
+# <a name="edit-css-font-styles-and-settings-in-the-styles-pane"></a>Modifier les styles et paramètres de police CSS dans le volet Styles  
 
 :::image type="icon" source="../media/experimental-tag-14px.msft.png":::
 
@@ -24,9 +26,9 @@ CSS offre une meilleure prise en charge de la typographie au cours des dernière
 
 Pour faciliter l’travail avec la typographie, un **éditeur** de polices visuel se trouve désormais dans le **volet Styles.**  Vous pouvez modifier vos paramètres de police et les modifications sont restituer immédiatement dans le navigateur.  Tout cela sans connaissances approfondies du CSS.  
 
-Actuellement, **l’outil** Activer un nouvel éditeur de polices dans la fonctionnalité du volet Styles est expérimental et vous devez l’activer pour les outils de développement [Microsoft Edge.][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]  
+Actuellement, **Enable new font editor tool within the Styles pane** la fonctionnalité est expérimentale et vous devez [l’activer pour les outils de développement Microsoft Edge.][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]  
 
-Toute CSS dans le volet **Styles,** définitions de police ou styles inline, affiche automatiquement une icône qui ouvre l’éditeur de **polices visuel.**  Pour ouvrir visual **Font Editor,** sélectionnez l’icône **Éditeur de** polices.  
+Toute CSS dans le volet **Styles,** définitions de police ou styles inline, affiche automatiquement une icône qui ouvre l’éditeur de **polices visuel.**  Pour ouvrir Visual **Font Editor,** sélectionnez l’icône **Éditeur de** polices.  
 
 :::row:::
    :::column span="":::
@@ -41,11 +43,11 @@ Toute CSS dans le volet **Styles,** définitions de police ou styles inline, aff
    :::column-end:::
 :::row-end:::  
 
-Tous les champs de l’éditeur **de police** visuel sont remplis à partir des valeurs du CSS dans le **volet Styles.**  Par exemple, la définition est définie sur dans le volet Styles, de sorte que le champ de texte de la hauteur de ligne s’affiche et que la zone de texte d’unité `line-height` `160%` **** `160` s’affiche. `%`  En outre, le curseur est automatiquement définie pour correspondre aux valeurs du champ de texte.  
+Tous les champs de l’éditeur **de police** visuel sont remplis à partir des valeurs du CSS dans le **volet Styles.**  Par exemple, la définition est définie sur dans le volet Styles, de sorte que le champ de texte de hauteur de ligne s’affiche et que la zone de texte d’unité `line-height` `160%` **** `160` s’affiche. `%`  En outre, le curseur est automatiquement définie pour correspondre aux valeurs du champ de texte.  
 
 **L’éditeur de** polices se compose de deux parties : le sélecteur de la famille de polices et l’éditeur de propriétés CSS.  
 
-## Sélecteur de la famille de polices  
+## <a name="the-font-family-selector"></a>Sélecteur de la famille de polices  
 
 Le sélecteur de la famille de polices est la partie supérieure de l’éditeur **de polices visuel.**  Pour choisir les polices de la règle CSS, dans l’éditeur CSS, utilisez le sélecteur **de** la famille de polices.  Vous pouvez choisir des polices principales et de base pour chaque règle CSS.  
 
@@ -71,13 +73,13 @@ Une fois que vous avez choisi une police, un autre menu déroulant s’affiche p
 :::image-end:::  -->
 
 > [!NOTE]
-> Si vous choisissez une valeur globale pour la famille de polices, vous n’obtenez pas une autre dropdown, car il n’y a pas de retour pour cette valeur dans CSS.  
+> Si vous choisissez une valeur globale pour la famille de polices, vous n’obtenez pas une autre dropdown, car il n’y a pas de retour pour elle dans CSS.  
 
-## Éditeur de propriétés CSS  
+## <a name="the-css-properties-editor"></a>Éditeur de propriétés CSS  
 
 Vous pouvez modifier les propriétés de police CSS dans la partie inférieure de Visual **Font Editor**.  Vous pouvez modifier la taille de la police, la hauteur de ligne, le poids de la police et l’espacement des lettres à l’aide de l’un des contrôles d’interface utilisateur.  Vos modifications sont appliquées immédiatement dans le navigateur.  
 
-:::image type="complex" source="../media/font-editor-css-properties.msft.png" alt-text="L’éditeur de polices s’ouvre en haut du volet Styles avec les propriétés CSS mises en évidence" lightbox="../media/font-editor-css-properties.msft.png":::
+:::image type="complex" source="../media/font-editor-css-properties.msft.png" alt-text="Éditeur de polices ouvert en haut du volet Styles avec les propriétés CSS mises en surbrill" lightbox="../media/font-editor-css-properties.msft.png":::
    Éditeur **de polices** ouvert en haut du volet **Styles** avec les propriétés CSS mises en surbrill  
 :::image-end:::  
 
@@ -86,7 +88,7 @@ Vous pouvez également convertir des unités CSS à l’aide de Visual **Font Ed
 :::row:::
    :::column span="":::
       :::image type="complex" source="../media/font-editor-setting-to-16px.msft.png" alt-text="Modifier la taille de police à 16 pixels" lightbox="../media/font-editor-setting-to-16px.msft.png":::
-         Modifier la taille de police en `16 pixels`  
+         Modifier la taille de la police en `16 pixels`  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
@@ -96,7 +98,7 @@ Vous pouvez également convertir des unités CSS à l’aide de Visual **Font Ed
    :::column-end:::
 :::row-end:::  
 
-La dropdown d’unité fournit toutes les unités CSS numériques disponibles.  La taille de la police, la hauteur des lignes, l’importance de la police et l’espacement utilisent des unités différentes.  Lorsque les zones de texte sont sélectionnées, vous pouvez sélectionner les touches et les touches pour `arrow up` `arrow down` affiner vos paramètres.  Pour utiliser les curseurs avec un clavier, sélectionnez les `arrow left` touches et les `arrow down` touches.  
+La dropdown d’unité fournit toutes les unités CSS numériques disponibles.  La taille de police, la hauteur des lignes, l’importance de la police et l’espacement utilisent des unités différentes.  Lorsque les zones de texte sont sélectionnées, vous pouvez sélectionner les touches et les touches pour `arrow up` `arrow down` affiner vos paramètres.  Pour utiliser les curseurs avec un clavier, sélectionnez les `arrow left` touches et les `arrow down` touches.  
 
 L’éditeur de propriétés CSS inclut également des mots clés prédéfincis.  Pour utiliser les mots clés prédéfins, sur le côté droit, sélectionnez `Toggle Input Type` l’icône.  L’interface utilisateur change et une liste liste des mots clés prédéfini s’affiche.  Pour revenir à l’interface utilisateur avec le curseur et d’autres contrôles d’interface utilisateur, choisissez de nouveau `Toggle Input Type` l’icône.  
 
@@ -104,7 +106,7 @@ L’éditeur de propriétés CSS inclut également des mots clés prédéfincis.
    Ouvrir l’interface de mot clé prédéfiny  
 :::image-end:::  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

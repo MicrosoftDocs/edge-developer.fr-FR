@@ -3,16 +3,16 @@ description: Utilisez des périphériques virtuels dans Microsoft Edge pour cré
 title: Émuler des appareils mobiles dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft Edge, développement web, outils f12, devtools, émulation, appareil, simulation, mobile
-ms.openlocfilehash: 1a83dece95acba386385bfea035a9e2c91639240
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: bb081ddd5f773e5e9ae6a1b83b5fcb13408df6cb
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398783"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439450"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -41,13 +41,13 @@ Utilisez **l’émulation de l’appareil** pour approximativement l’apparence
 
 ## <a name="limitations"></a>Limitations  
 
-**L’émulation de** l’appareil est une [estimation][WikiApproximation] de premier ordre de l’apparence de votre page sur un appareil mobile.  **L’émulation d’appareil** n’exécute pas réellement votre code sur un appareil mobile.  Au lieu de cela, vous simulez l’expérience utilisateur mobile à partir de votre ordinateur portable ou de bureau.  
+**L’émulation d’appareil** est une [approximation][WikiApproximation] de premier ordre de l’apparence de votre page sur un appareil mobile.  **L’émulation d’appareil** n’exécute pas réellement votre code sur un appareil mobile.  Au lieu de cela, vous simulez l’expérience utilisateur mobile à partir de votre ordinateur portable ou de bureau.  
 
 Certains aspects des appareils mobiles ne sont jamais émulés dans DevTools.  Par exemple, l’architecture des processeurs mobiles est différente de celle des processeurs d’ordinateur portable ou de bureau.  En cas de doute, votre meilleur objectif est d’exécuter réellement votre page sur un appareil mobile.  Utilisez [Débogage à distance][DevToolsRemoteDebugging] pour interagir avec le code d’une page à partir de votre ordinateur pendant que votre page s’exécute réellement sur un appareil mobile.  Vous pouvez afficher, modifier, déboguer, profiler ou les quatre pendant que vous interagissez avec le code.  Votre ordinateur peut être un ordinateur de bureau ou un bloc-notes.  
 
 ## <a name="simulate-a-mobile-viewport"></a>Simuler une vue mobile  
 
-Choose **Toggle device emulation**  \( ![ Toggle Device Toolbar ][ImageDeviceToolbarIcon] \) or choose **Customize and control DevTools** \( `...` \) > Device **emulation** to open the UI that enables you to simulate a mobile viewport.  
+Choose **Toggle device emulation**  \( ![ Toggle Device Toolbar ](../media/toggle-device-toolbar-dark-icon.msft.png) \) or choose **Customize and control DevTools** \( `...` \) > Device **emulation** to open the UI that enables you to simulate a mobile viewport.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Barre d’outils Appareil" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
     Barre d’outils Appareil  
@@ -85,7 +85,7 @@ Utilisez la liste **Type d’appareil** pour simuler un appareil mobile ou un ap
    Liste **des types d’appareils**  
 :::image-end:::  
 
-Le tableau suivant décrit les différences entre les options de type d’appareil disponibles.  La colonne Méthode de rendu indique si Microsoft Edge restituera la page en tant que port d’affichage mobile ou de bureau.  La colonne d’icône curseur fait référence au type de curseur qui s’affiche lorsque vous pointez sur la page.  La colonne Événements déclenchés indique si la page se déclenche ou se déclenche lorsque `touch` `click` vous interagissez avec la page.  
+Le tableau suivant décrit les différences entre les options de type d’appareil disponibles.  La colonne Méthode de rendu indique si Microsoft Edge restituera la page en tant que port d’affichage mobile ou de bureau.  La colonne Icône du curseur fait référence au type de curseur qui s’affiche lorsque vous pointez sur la page.  La colonne Événements déclenchés indique si la page se déclenche ou s’il s’agit d’événements lorsque `touch` `click` vous interagissez avec la page.  
 
 | Option | Méthode de rendu | Icône curseur | Événements déclenchés |  
 |:--- |:--- |:--- |:--- |  
@@ -95,7 +95,7 @@ Le tableau suivant décrit les différences entre les options de type d’appare
 | Bureau \(tactile\) | Bureau | Cercle | interface tactile |  
 
 > [!NOTE]
-> Si la liste **Type d’appareil** n’est pas affichée, sélectionnez **Autres options**Ajouter un  >  **type d’appareil.**  
+> Si la liste **Type d’appareil** n’est pas affichée, sélectionnez **Autres options**Ajouter un type  >  **d’appareil.**  
 
 ### <a name="mobile-device-viewport-mode"></a>Mode d’affichage d’appareil mobile  
 
@@ -109,7 +109,7 @@ Pour simuler les dimensions d’un appareil mobile spécifique, sélectionnez l�
 
 Testez votre page web en orientation paysage.  
 
-*   Pour faire pivoter la vue vers l’orientation paysage, choisissez **Rotation** \( ![ Rotation ][ImageRotateIcon] \).  
+*   Pour faire pivoter la vue vers l’orientation paysage, choisissez **Rotation** \( ![ Rotation ](../media/rotate-dark-icon.msft.png) \).  
     
     :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Page affichée en orientation paysage" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
        Page affichée en orientation paysage  
@@ -206,7 +206,7 @@ Toutes les limitations sont basées sur les fonctionnalités normales de votre o
 :::image-end:::  
 
 > [!NOTE]
-> Si la liste **Throttle est** masquée, votre **barre d’outils d’appareil** est trop étroite.  Pour accéder à la liste **Limitation,** augmentez la largeur de la barre d’outils **de l’appareil.**  
+> Si la liste **Throttle est** masquée, votre **barre d’outils d’appareil** est trop étroite.  Pour accéder à la liste **Limitation,** augmentez la largeur de la barre **d’outils de l’appareil.**  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Barre d’outils Appareil" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
    Barre **d’outils Appareil**  
@@ -216,7 +216,7 @@ Toutes les limitations sont basées sur les fonctionnalités normales de votre o
 
 Pour limiter l’UC uniquement et non le réseau, complétez les étapes suivantes.
 
-1.  Choisissez le **panneau Performances,** puis **sélectionnez Paramètres de capture** \( ![ Paramètres de capture ][ImageCaptureIcon] \).
+1.  Choisissez le **panneau Performances,** puis **sélectionnez Paramètres de capture** \( ![ Paramètres de capture ](../media/capture-settings-icon.msft.png) \).
 1.  Choisissez **le**  >  **ralentissement 4x du** processeur ou le ralentissement **6x.**
     
     :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="Liste du processeur dans le panneau Performances" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -234,7 +234,7 @@ Pour limiter le réseau uniquement, complétez les étapes suivantes.
        Liste **De limitation** dans le panneau Réseau  
     :::image-end:::  
     
-    Ou sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) **** `3G` **** **** pour ouvrir le menu Commande, tapez et choisissez Activer la limitation 3G rapide ou Activer la limitation 3G lente.  
+    Ou sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) **** `3G` **** **** pour ouvrir le menu commande, tapez et choisissez Activer la limitation 3G rapide ou Activer la limitation 3G lente.  
     
     :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Menu Commande" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
        Menu **Commande**  
@@ -242,7 +242,7 @@ Pour limiter le réseau uniquement, complétez les étapes suivantes.
     
 Vous pouvez également définir la limitation du réseau à partir du **panneau Performances.**  
 
-1.  Choose **Capture Settings** \( ![ Capture Settings ][ImageCaptureIcon] \) and choose the **Network** list and change the preset to **Fast 3G** or Slow **3G**.  
+1.  Choose **Capture Settings** \( ![ Capture Settings ](../media/capture-settings-icon.msft.png) \) and choose the **Network** list and change the preset to **Fast 3G** or Slow **3G**.  
     
     :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Définir la limitation du réseau à partir du panneau Performances" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
        Définir la limitation du réseau à partir du panneau **Performances**  
@@ -338,12 +338,6 @@ En regard de **l’agent utilisateur,** cochez la **case** Sélectionner automat
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCaptureIcon]: ../media/capture-settings-icon.msft.png  
-[ImageDeviceToolbarIcon]: ../media/toggle-device-toolbar-dark-icon.msft.png  
-[ImageRotateIcon]: ../media/rotate-dark-icon.msft.png  
 
 <!-- links -->  
 

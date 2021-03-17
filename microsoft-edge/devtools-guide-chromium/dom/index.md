@@ -3,16 +3,16 @@ description: Découvrez comment afficher les nœuds, rechercher des nœuds, modi
 title: Commencer à afficher et modifier le DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: bb2b733cfa3597c47f0a20de00e9c8b506e7c41c
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: e4c08fb2fd5f360f037502c04edabaabb873ba16
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398328"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439239"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -61,7 +61,7 @@ Lorsque vous êtes intéressé par un nœud DOM particulier, **Inspect** est un 
            Mettre en `Michelangelo` surbrillade le nœud  
         :::image-end:::  
         
-        1.  Choisissez **l’icône Inspect** \( Inspect \) dans le coin supérieur gauche ![ de ][ImageInspectIcon] DevTools.  
+        1.  Choisissez **l’icône Inspect** \( Inspect \) dans le ![ coin supérieur gauche de ](../media/inspect-icon.msft.png) DevTools.  
             
             :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Icône Inspecter" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                Icône **Inspecter**  
@@ -69,7 +69,7 @@ Lorsque vous êtes intéressé par un nœud DOM particulier, **Inspect** est un 
             
 1.  Sous **Inspecter un nœud,** choisissez le **texte Tokyo.**  À présent, `<li>Tokyo</li>` est mis en surbrillant dans l’arborescence DOM.  
 
-L’inspection d’un nœud constitue également la première étape de l’affichage et de la modification des styles d’un nœud.  Accédez à [la mise en place de l’affichage et de la modification de CSS][DevToolsCssGetStarted].  
+L’inspection d’un nœud constitue également la première étape de l’affichage et de la modification des styles d’un nœud.  Accédez [à la mise en place de l’affichage et de la modification de CSS][DevToolsCssGetStarted].  
 
 ### <a name="navigate-the-dom-tree-with-a-keyboard"></a>Naviguer dans l’arborescence DOM avec un clavier  
 
@@ -137,7 +137,7 @@ Pour modifier le contenu d’un nœud, double-cliquez sur le contenu dans l’ar
            Modifier le texte  
         :::image-end:::  
         
-    1.  Supprimer `Michelle` , `Leela` tapez , puis `Enter` sélectionnez pour confirmer la modification.  Le texte du DOM change de **Michelle** à **Leela**.  
+    1.  Supprimer `Michelle` , `Leela` tapez , puis `Enter` sélectionnez pour confirmer la modification.  Le texte du DOM change de **Michelle** en **Leela**.  
 
 ### <a name="edit-attributes"></a>Modifier les attributs  
 
@@ -191,7 +191,7 @@ Faites glisser les nodes pour les réorder.
 Vous pouvez forcer les nodes à rester dans les états, y compris `:active` , , `:hover` et `:focus` `:visited` `:focus-within` .  
 
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
-1.  Sous **l’état Force,** **pointez sur la souris de l’en-dessous.**  La couleur d’arrière-plan devient orange.  
+1.  Dans **l’état Force,** **pointez sur le cadre de l’en-dessous.**  La couleur d’arrière-plan devient orange.  
     1.  Pointez **sur le Bouton de l’enfant,** ouvrez le menu contextuel \(clic droit\), puis choisissez **Inspecter**.  
     1.  Pointez `<li class="demo--hover">The Lord of the Flies</li>` dessus, ouvrez le menu contextuel \(clic droit\), puis choisissez **Force State**  >  **:hover**.  Accédez à [l’Annexe : Options manquantes](#appendix-missing-options) si l’option n’est pas affichée.  La couleur d’arrière-plan reste orange même si vous ne pointez pas réellement sur le nœud.  
 
@@ -200,7 +200,7 @@ Vous pouvez forcer les nodes à rester dans les états, y compris `:active` , , 
 Sélectionnez `H` pour masquer un nœud.  
 
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
-1.  Sous **Masquer un nœud,** sélectionnez avec le droit de la main **Les étoiles ma destination** et sélectionnez **Inspecter.**  
+1.  Sous **Masquer un nœud,** choisissez avec le droit de la main **Les étoiles ma destination** et sélectionnez **Inspecter.**  
     1.  Sélectionnez la `H` clé.  Le nœud est masqué.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-hide-a-node.msft.png" alt-text="Apparence du nœud dans l’arborescence DOM une fois masqué" lightbox="../media/dom-elements-highlighted-hide-a-node.msft.png":::
@@ -224,10 +224,10 @@ DevTools fournit quelques raccourcis pour accéder aux nodes DOM à partir de la
 
 ### <a name="reference-the-currently-selected-node-with-0"></a>Référencer le nœud actuellement sélectionné avec 0 $  
 
-Lorsque vous examinez un nœud, le texte à côté du nœud signifie que vous pouvez faire référence à ce nœud dans la `== $0` console avec la variable `$0` .  
+Lorsque vous examinez un nœud, le texte en face du nœud signifie que vous pouvez faire référence à ce nœud dans la `== $0` console avec la variable `$0` .  
 
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
-1.  Under **Reference the currently-selected node with $0**, right-choose **The Left Hand of Darkness** and choose **Inspect**.  
+1.  Sous Référencer le nœud actuellement sélectionné avec **0 $,** choisissez la **main gauche** de la noirceur et choisissez **Inspecter**.  
     1.  Sélectionnez `Escape` la clé pour ouvrir le caisse de la console.  
     1.  Tapez `$0` et sélectionnez la `Enter` clé.  Le résultat de l’expression indique `$0` que le résultat est `<li>The Left Hand of Darkness</li>` .  
         
@@ -261,7 +261,7 @@ Copiez le chemin d’accès JavaScript sur un nœud lorsque vous devez le réfé
 
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
 1.  Sous **Copier le chemin d’accès JS,** pointez sur le contrôle **ContrôleZov,** ouvrez le menu contextuel \(clic droit\), puis choisissez **Inspecter**.  
-    1.  Pointez `<li>The Brothers Karamazov</li>` dessus dans l’arborescence DOM, ouvrez le menu contextuel \(clic droit\), puis choisissez **Copier**le  >  **chemin d’accès JS.**  Une expression résolue en nœud a `document.querySelector()` été copiée dans le Presse-papiers.  
+    1.  Pointez `<li>The Brothers Karamazov</li>` dessus dans l’arborescence DOM, ouvrez le menu contextuel \(clic droit\), puis choisissez **Copier**le  >  **chemin d’accès JS**.  Une expression résolue en nœud a `document.querySelector()` été copiée dans le Presse-papiers.  
     1.  Sélectionnez `Control` + `V` \(Windows, Linux\) ou `Command` + `V` \(macOS\) pour coller l’expression dans la console.  
     1.  Sélectionnez `Enter` pour évaluer l’expression.
         
@@ -285,14 +285,14 @@ Utilisez des points d’arrêt de modification d’attribut lorsque vous souhait
            **Pause sur les modifications d’attribut**  
         :::image-end:::  
         
-    1.  À l’étape suivante, il vous sera demandé de choisir un bouton qui interrompt le code de la page.  Une fois la page suspendue, vous ne pouvez plus la faire défiler.  Vous devez choisir **Resume Script** \( Resume Script \) pour que la page défile ![ à ][ImageResumeScriptIcon] nouveau.
+    1.  À l’étape suivante, il vous sera demandé de choisir un bouton qui interrompt le code de la page.  Une fois la page suspendue, vous ne pouvez plus la faire défiler.  Vous devez choisir **Resume Script** \( Resume Script \) pour que la page défile ![ à ](../media/resume-script-icon.msft.png) nouveau.
         
         :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="Où reprendre l’exécution du script" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
            Où reprendre l’exécution du script  
         :::image-end:::  
         
-    1.  Sélectionnez le **bouton Définir l’arrière-plan** ci-dessus.  Cela définit `style` l’attribut du nœud sur `background-color:thistle` .  DevTools suspend la page et met en sur évidence le code à l’origine de la modification de l’attribut.  
-    1.  Choose **Resume Script** \( Resume Script ![ ][ImageResumeScriptIcon] \), as mentioned earlier.  
+    1.  Sélectionnez le **bouton Définir l’arrière-plan** ci-dessus.  Cela définit `style` l’attribut du nœud sur `background-color:thistle` .  DevTools suspend la page et met en évidence le code à l’origine de la modification de l’attribut.  
+    1.  Choose **Resume Script** \( Resume Script ![ ](../media/resume-script-icon.msft.png) \), as mentioned earlier.  
     
 ### <a name="break-on-node-removal"></a>Rupture lors de la suppression du nœud  
 
@@ -301,18 +301,18 @@ Si vous souhaitez suspendre lorsqu’un nœud particulier est supprimé, utilise
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
 1.  Under **Break on Node Removal**, right-choose **Contrôlemancer** and choose **Inspect**.  
     1.  Dans l’arborescence DOM, pointez sur , ouvrez le menu contextuel `<li id="target">Neuromancer</li>` \(clic droit\), puis choisissez **Pause sur**la suppression  >  **du nœud.**  Accédez à [l’Annexe : Options manquantes](#appendix-missing-options) si l’option n’est pas affichée.  
-    1.  Sélectionnez le **bouton Supprimer** ci-dessus.  DevTools suspend la page et met en évidence le code qui a provoqué la suppression du nœud.  
-    1.  Choose **Resume Script** \( Resume Script ![ ][ImageResumeScriptIcon] \).  
+    1.  Sélectionnez le **bouton Supprimer** ci-dessus.  DevTools suspend la page et met en évidence le code à l’origine de la suppression du nœud.  
+    1.  Choose **Resume Script** \( Resume Script ![ ](../media/resume-script-icon.msft.png) \).  
     
 ### <a name="break-on-subtree-modifications"></a>Pause sur les modifications de sous-arbre  
 
-Après avoir placé un point d’arrêt de modification de sous-arbre sur un nœud, DevTools interrompt la page lorsqu’un des descendants du nœud est ajouté ou supprimé.  
+Après avoir placé un point d’arrêt de modification de sous-arbre sur un nœud, DevTools interrompt la page lorsque l’un des descendants du nœud est ajouté ou supprimé.  
 
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
 1.  Under **Break on Subtree Modifications**, right-choose A Fire Upon The **Deep** and choose **Inspect**.  
     1.  Dans l’arborescence DOM, pointez sur , qui est le nœud ci-dessus, ouvrez le menu contextuel `<ul id="target">` `<li>A Fire Upon the Deep</li>` \(clic droit\), puis choisissez **Break On**  >  **Subtree Modifications**.  Si l’option n’est pas affichée, accédez à Annexe [: Options manquantes.](#appendix-missing-options)  
-    1.  Choose **Add Child**.  Le code est suspendu car un nœud a `<li>` été ajouté à la liste.  
-    1.  Choose **Resume Script** \( Resume Script ![ ][ImageResumeScriptIcon] \).  
+    1.  Choose **Add Child**.  Le code s’interrompt car un nœud a `<li>` été ajouté à la liste.  
+    1.  Choose **Resume Script** \( Resume Script ![ ](../media/resume-script-icon.msft.png) \).  
     
 ## <a name="next-steps"></a>Étapes suivantes  
 
@@ -374,7 +374,7 @@ Cette arborescence d’objets, ou de nodes, représentant le contenu de la page 
       ```  
    :::column-end:::
    :::column span="":::
-      Ce code supprime le `h1` nœud et en ajoute un autre au `p` DOM.  Le DOM complet affiche maintenant la liste suivante.  
+      Ce code supprime le `h1` nœud et ajoute un autre nœud au `p` DOM.  Le DOM complet affiche maintenant la liste suivante.  
       
       ```dom
       html
@@ -417,15 +417,10 @@ De nombreuses instructions de ce didacticiel vous indiquent de pointer sur un n�
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageInspectIcon]: ../media/inspect-icon.msft.png  
-[ImageResumeScriptIcon]: ../media/resume-script-icon.msft.png  
-
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge \(Chromium\) | Documents Microsoft"  
-[DevToolsCssGetStarted]: ../css/index.md "Mise en place de l’affichage et de la modification des | Documents Microsoft"  
+[DevToolsCssGetStarted]: ../css/index.md "Commencer à afficher et modifier les | Documents Microsoft"  
 [DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "Raccourcis clavier de l’outil Éléments : raccourcis clavier Microsoft Edge DevTools | Documents Microsoft"  
 
 [GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Exemple de dom Microsoft Edge (Chromium) DevTools | Glitch"

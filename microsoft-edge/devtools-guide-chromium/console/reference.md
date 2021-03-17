@@ -3,16 +3,16 @@ description: Une référence complète sur chaque fonctionnalité et comportemen
 title: Référence de la console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 1aed46486240dea19420e8b7cb52b6758f1f528b
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d6fed1681e64f8f57c2e577017d623039a7b4152
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399161"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439366"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,13 +30,13 @@ ms.locfileid: "11399161"
 
 # <a name="console-reference"></a>Référence de la console  
 
-Cette page est une référence de fonctionnalités liées à la console Microsoft Edge DevTools.  Il part du principe que vous êtes déjà familiarisé avec l’utilisation de la console pour afficher les messages enregistrés et exécuter JavaScript.  Si ce n’est pas le cas, accédez à l’exécution de [JavaScript][DevToolsConsoleJavascript] dans la console et à la journalisation des [messages dans la console.][DevToolsConsoleLog]  
+Cette page est une référence des fonctionnalités liées à la console Microsoft Edge DevTools.  Il part du principe que vous êtes déjà familiarisé avec l’utilisation de la console pour afficher les messages enregistrés et exécuter JavaScript.  Si ce n’est pas le cas, accédez à l’exécution de [JavaScript][DevToolsConsoleJavascript] dans la console et à la journalisation des [messages dans la console.][DevToolsConsoleLog]  
 
-Si vous recherchez la référence d’API sur des fonctions telles que , accédez à Référence `console.log()` de [l’API console.][DevToolsConsoleApi]  Pour obtenir la référence sur des fonctions telles que , accédez à Référence de `monitorEvents()` [l’API des utilitaires de console.][DevToolsConsoleUtilities]  
+Si vous recherchez la référence d’API sur des fonctions telles que , accédez à Référence `console.log()` de [l’API console.][DevToolsConsoleApi]  Pour obtenir la référence sur des fonctions telles que , accédez à Référence de `monitorEvents()` l’API des [utilitaires de console.][DevToolsConsoleUtilities]  
 
 ## <a name="open-the-console"></a>Ouvrir la console  
 
-Vous pouvez ouvrir la **console en tant** qu’outil dans le [volet](#open-the-console-tool) supérieur ou en tant qu’outil dans [le caisse.](#open-the-console-tool-in-the-drawer)  
+Vous pouvez ouvrir la **console en** tant [qu’outil](#open-the-console-tool) dans le volet supérieur ou en tant [qu’outil dans le caisse.](#open-the-console-tool-in-the-drawer)  
 
 ### <a name="open-the-console-tool"></a>Ouvrir l’outil Console  
 
@@ -74,7 +74,7 @@ Pour ouvrir **l’outil Console** à partir du [menu][DevToolsCommandMenu]Comman
 
 ### <a name="open-console-settings"></a>Ouvrir les paramètres de la console  
 
-Choose **Console Settings** \( ![ Console Settings icon ][ImageSettingsButtonIcon] \).  
+Choose **Console Settings** \( ![ Console Settings icon ](../media/settings-button-icon.msft.png) \).  
 
 :::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Paramètres de la console" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **Paramètres de la console**  
@@ -92,7 +92,7 @@ Les liens ci-dessous expliquent chaque paramètre :
     
 ### <a name="open-the-console-sidebar"></a>Ouvrir la barre latérale de la console  
 
-Choisissez **Afficher la barre latérale de la console** \( Afficher la barre latérale de la console \) pour afficher la barre latérale, ce qui est utile pour le ![ ][ImageShowConsoleSidebarIcon] filtrage.  
+Choisissez **Afficher la barre latérale de la console** \( Afficher la barre latérale de la console \) pour afficher la barre latérale, ce qui est utile pour le ![ ](../media/show-console-sidebar-icon.msft.png) filtrage.  
 
 :::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Console Sidebar" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
    **Console** Barre latérale  
@@ -209,13 +209,13 @@ Cette section contient des fonctionnalités liées à l’exécution de JavaScri
 
 Sélectionnez la clé à utiliser pour passer en cycle de l’historique des expressions JavaScript que vous avez précédemment dans `Up Arrow` la console.  Sélectionnez `Enter` pour exécuter à nouveau cette expression.  
 
-### <a name="watch-the-value-of-an-expression-in-real-time-with-live-expressions"></a>Regarder la valeur d’une expression en temps réel avec des expressions en direct  
+### <a name="watch-the-value-of-an-expression-in-real-time-with-live-expressions"></a>Regarder la valeur d’une expression en temps réel avec des expressions live  
 
 Si vous vous trouvez en train de taper la même expression JavaScript dans la console à plusieurs reprises, vous trouverez peut-être plus facile de créer une **expression live.**  Avec **les expressions live,** vous tapez une expression une seule fois, puis vous l’épinglez en haut de votre console.  La valeur de l’expression est mise à jour en temps quasi réel.  Accédez à [regarder les valeurs d’expression JavaScript Real-Time avec des expressions live.][DevToolsConsoleLiveExpressions]  
 
 ### <a name="disable-eager-evaluation"></a>Désactiver l’évaluation enthousiaste  
 
-Lorsque vous tapez des expressions JavaScript dans la console, **l’évaluation de l’enthousiaste** affiche un aperçu de la valeur de retour de cette expression.  [Ouvrez les paramètres de](#open-console-settings) la console et désactivez la case à cocher Évaluation de l’adage **pour** désactiver les aperçus de valeur de retour.  
+Lorsque vous tapez des expressions JavaScript dans la console, **l’évaluation de l’enthousiaste** affiche un aperçu de la valeur de retour de cette expression.  [Ouvrez paramètres de la](#open-console-settings) console et désactivez la case à cocher Évaluation de l’adage pour désactiver les aperçus de valeur de retour. ****  
 
 ### <a name="disable-autocomplete-from-history"></a>Désactiver la mise encomplet automatique de l’historique  
 
@@ -230,13 +230,13 @@ Lorsque vous tapez une expression, la fenêtre popup de la console de lacomplet 
 
 ### <a name="select-javascript-context"></a>Sélectionner un contexte JavaScript  
 
-Par défaut, la liste liste de listes des [][MDNBrowsingContext] contextes **JavaScript** est définie sur **haut,** ce qui représente le contexte de navigation du document principal.  
+Par défaut, la **liste finale du contexte JavaScript** est définie sur **haut,** ce qui représente le contexte de navigation du document principal. [][MDNBrowsingContext]  
 
 :::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="La dropdown de contexte JavaScript" lightbox="../media/console-dom-level-top.msft.png":::
    La **dropdown de contexte JavaScript**  
 :::image-end:::  
 
-Supposons que vous avez une vidéo sur votre page incorporée dans un `<iframe>` .  Vous souhaitez exécuter JavaScript afin d’ajuster le DOM de la commande.  Vous devez tout d’abord sélectionner le contexte de navigation de la nouvelle dans la dropdown Contexte **JavaScript.**  
+Supposons que vous avez une vidéo sur votre page incorporée dans `<iframe>` un .  Vous souhaitez exécuter JavaScript afin d’ajuster le DOM de la commande.  Vous devez tout d’abord sélectionner le contexte de navigation de la nouvelle dans la dropdown Contexte **JavaScript.**  
 
 :::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Choisir un autre contexte JavaScript" lightbox="../media/console-dom-level-multiple.msft.png":::
    Choisir un autre contexte JavaScript  
@@ -246,7 +246,7 @@ Supposons que vous avez une vidéo sur votre page incorporée dans un `<iframe>`
 
 Vous pouvez utiliser l’un des flux de travail suivants pour effacer la console :  
 
-*   Choose **Clear Console** \( Clear Console ![ ][ImageClearConsoleIcon] \).  
+*   Choose **Clear Console** \( Clear Console ![ ](../media/clear-console-button-icon.msft.png) \).  
 *   Pointez sur un message, ouvrez le menu contextuel \(righ-click\), puis choisissez **Effacer la console.**  
 *   Entrez `clear()` dans la **console,** puis sélectionnez `Enter` .  
 *   Exécutez `console.clear()` à partir de JavaScript pour votre page web.  
@@ -255,12 +255,6 @@ Vous pouvez utiliser l’un des flux de travail suivants pour effacer la console
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearConsoleIcon]: ../media/clear-console-button-icon.msft.png  
-[ImageSettingsButtonIcon]: ../media/settings-button-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 

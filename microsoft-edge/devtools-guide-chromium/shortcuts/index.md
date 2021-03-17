@@ -3,16 +3,16 @@ description: Documentation canonique pour les raccourcis clavier de Microsoft Ed
 title: Raccourcis clavier Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: c6d51d27ce41ed8192a867cf33555b3880dd3ef9
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 8197157c3024374e11db71f919cc937fed2e6b1b
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398349"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439590"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -53,7 +53,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart, sinon la plupa
 | Afficher **les paramètres** | `?` or `F1` | `?` ou `Function`+`F1` |  
 | Focus sur le panneau suivant | `Control`+`]` | `Command`+`]` |  
 | Focus sur le panneau précédent | `Control`+`[` | `Command`+`[` |  
-| Revenir à la [position d’accueil que][DevtoolsCustomizeIndexPlacement] vous avez utilisée en dernier.  Si DevTools a été à la position par défaut pour toute la session, ce raccourci désédocke DevTools dans une fenêtre distincte. | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
+| Revenir à la [position d’accueil que][DevtoolsCustomizeIndexPlacement] vous avez utilisée en dernier.  Si DevTools est à la position par défaut pour l’ensemble de la session, ce raccourci désespéra de DevTools dans une fenêtre distincte. | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
 | Basculez [l’émulation de l’appareil][DevtoolsDeviceModeIndex] | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |  
 | Toggle **Inspect Element Mode** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Ouvrir le [menu Commande][DevtoolsCommandMenuIndex] | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |  
@@ -61,7 +61,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart, sinon la plupa
 | Actualisation normale | `F5` ou `Control`+`R` | `Command`+`R` |  
 | Actualisation en dur | `Control`+`F5` ou `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Recherchez du texte dans le panneau actuel.  Non pris en charge dans **les outils Audits,** **Application**et **Sécurité** | `Control`+`F` | `Command`+`F` |  
-| Ouvre **l’onglet Recherche** dans le [caisse,][DevtoolsCustomizeIndexDrawer]ce qui vous permet de rechercher du texte sur toutes les ressources chargées. | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
+| Ouvre **l’onglet Recherche** dans le [caisse,][DevtoolsCustomizeIndexDrawer]ce qui vous permet de rechercher du texte sur toutes les ressources chargées | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
 | Ouvrir un fichier dans le **panneau Sources** | `Control`+`O` ou `Control`+`P` | `Command`+`O` ou `Command`+`P` |  
 | Zoom avant | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Zoom arrière | `Control`+`-` | `Command`+`-` |  
@@ -80,7 +80,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart, sinon la plupa
 | Sélectionnez l’élément au-dessus/en dessous de l’élément actuellement sélectionné | `Up Arrow` / `Down Arrow` | `Up Arrow` / `Down Arrow` |  
 | Développez le nœud actuellement sélectionné.  Si le nœud est déjà développé, ce raccourci sélectionne l’élément en dessous | `Right Arrow` | `Right Arrow` |  
 | Réduire le nœud actuellement sélectionné.  Si le nœud est déjà réduire, ce raccourci sélectionne l’élément au-dessus | `Left Arrow` | `Left Arrow` |  
-| Développer ou réduire le nœud actuellement sélectionné et tous les enfants | Maintenez le nom de l’élément en attente, puis `Control` + `Alt` choisissez l’icône de flèche en haut du nom de l’élément. **** | Maintenez le nom de l’élément en attente, puis `Option` choisissez l’icône de flèche en haut du nom de l’élément. **** |  
+| Développer ou réduire le nœud actuellement sélectionné et tous les enfants | Maintenez `Control` + `Alt` la touche Maintenez, puis sélectionnez **l’icône** de flèche en haut du nom de l’élément. | Maintenez `Option` la touche Maintenez, puis sélectionnez **l’icône** de flèche en haut du nom de l’élément. |  
 | Basculez le mode **Modifier les attributs** sur l’élément actuellement sélectionné | `Enter` | `Enter` |  
 | Sélectionnez l’attribut suivant/précédent après avoir entré le mode **Modifier les attributs** | `Tab` / `Shift`+`Tab` | `Tab` / `Shift`+`Tab` |  
 | Masquer l’élément actuellement sélectionné | `H` | `H` |  
@@ -91,7 +91,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart, sinon la plupa
 | Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Accéder à la ligne dans laquelle une valeur de propriété est déclarée | Conserver, `Control` puis sélectionner la valeur de la propriété | Conserver, `Command` puis sélectionner la valeur de la propriété |  
-| Faire passer en cycle les représentations RBGA, HSLA et Hex d’une valeur de couleur | Mettre `Shift` en attente, puis choisir la **zone d’aperçu** de couleur en de côté de la valeur | Mettre `Shift` en attente, puis choisir la **zone d’aperçu** de couleur en de côté de la valeur |  
+| Faire passer en cycle les représentations RBGA, HSLA et Hex d’une valeur de couleur | Mettre `Shift` en attente, puis sélectionner la **zone d’aperçu** de couleur en de côté de la valeur | Mettre `Shift` en attente, puis choisir la **zone d’aperçu** de couleur en de côté de la valeur |  
 | Sélectionnez la propriété ou la valeur suivante/précédente | Choisissez un nom ou une valeur de propriété, puis sélectionnez `Tab` / `Shift`+`Tab` | Choisissez un nom ou une valeur de propriété, puis sélectionnez `Tab` / `Shift`+`Tab` |  
 | Incrémenter/décrémenter une valeur de propriété de 0,1 | Choisissez une valeur, puis sélectionnez `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | Choisissez une valeur, puis `Option` + `Up Arrow` sélectionnez /Option+Flèche vers le bas |  
 | Incrémenter/décrémenter une valeur de propriété de 1 | Choisissez une valeur, puis sélectionnez `Up Arrow` / `Down Arrow` | Choisissez une valeur, puis sélectionnez `Up Arrow` / `Down Arrow` |  
@@ -113,7 +113,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart, sinon la plupa
 | Accéder à la ligne | `Control`+`G` | `Control`+`G` |  
 | Passer à un numéro de ligne du fichier actuellement ouvert | Sélectionnez `Control` + `O` pour ouvrir le [menu Commande][DevtoolsCommandMenuIndex], `:` tapez suivi du numéro de ligne, puis sélectionnez `Enter` | Sélectionnez `Command` + `O` pour ouvrir le [menu Commande][DevtoolsCommandMenuIndex], `:` tapez suivi du numéro de ligne, puis sélectionnez `Enter` |  
 | Aller à une colonne du fichier actuellement ouvert \(par exemple, ligne 5, colonne 9\) | Sélectionnez `Control` + `O` pour ouvrir le [menu Commande,][DevtoolsCommandMenuIndex]tapez, puis le numéro de ligne, puis un autre, puis le numéro `:` de `:` colonne, puis sélectionnez `Enter` | Sélectionnez `Command` + `O` pour ouvrir le [menu Commande,][DevtoolsCommandMenuIndex]tapez, puis le numéro de ligne, puis un autre, puis le numéro `:` de `:` colonne, puis sélectionnez `Enter` |  
-| Accédez à une déclaration de fonction, si le fichier actuel est html ou un script.  <br />  Accédez à un ensemble de règles, si le fichier actuel est une feuille de style.  | Sélectionnez, puis tapez le nom de la déclaration/de l’ensemble de règles, ou `Control` + `Shift` + `O` sélectionnez-le dans la liste des options | Sélectionnez, puis tapez le nom de la déclaration/de l’ensemble de règles, ou `Command` + `Shift` + `O` sélectionnez-le dans la liste des options |  
+| Accédez à une déclaration de fonction, si le fichier actuel est html ou un script.  <br />  Accédez à un ensemble de règles, si le fichier actuel est une feuille de style.  | Sélectionnez, puis tapez le nom de la déclaration /ensemble de règles, ou `Control` + `Shift` + `O` sélectionnez-le dans la liste des options | Sélectionnez, puis tapez le nom de la déclaration /ensemble de règles, ou `Command` + `Shift` + `O` sélectionnez-le dans la liste des options |  
 | Fermer l’onglet actif | `Alt`+`W` | `Option`+`W` |  
 
 ### <a name="code-editor-keyboard-shortcuts"></a>Raccourcis clavier de l’éditeur de code  
@@ -152,21 +152,17 @@ Les raccourcis clavier suivants sont disponibles dans la plupart, sinon la plupa
 | Effacer la **console** | `Control`+`L` | `Command`+`K` ou `Option`+`L` |  
 | Forcer une entrée multi-lignes.  Ce raccourci est principalement inutile, car DevTools doit détecter les scénarios multi-lignes par défaut | `Shift`+`Enter` | `Command`+`Return` |  
 | Exécution | `Enter` | `Return` |  
-| Développer toutes les sous-catégories d’un objet qui sont enregistrées dans la console | Hold, `Alt` then choose **Expand** \( ![ Expand ][ImageExpandIcon] \) | Hold, `Alt` then choose **Expand** \( ![ Expand ][ImageExpandIcon] \) |  
+| Développer toutes les sous-catégories d’un objet qui sont enregistrées dans la console | Hold, `Alt` then choose **Expand** \( ![ Expand ](../media/expand-icon.msft.png) \) | Hold, `Alt` then choose **Expand** \( ![ Expand ](../media/expand-icon.msft.png) \) |  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageExpandIcon]: ../media/expand-icon.msft.png  
-
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes avec le menu de commandes Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Caisse : personnaliser les paramètres DevTools de Microsoft Edge | Documents Microsoft"  
-[DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Modifier le placement de DevTools : personnaliser l'| Microsoft Edge DevTools Documents Microsoft"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes avec le menu de commande Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Caisse : personnaliser l'| Microsoft Edge DevTools Documents Microsoft"  
+[DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Modifier le placement de DevTools : personnaliser l’emplacement de DevTools de Microsoft Edge | Documents Microsoft"  
 [DevtoolsDeviceModeIndex]: ../device-mode/index.md "Émuler des appareils mobiles dans Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "Points d’arrêt de ligne de code : comment suspendre votre code avec des points d’arrêt dans Microsoft Edge DevTools | Documents Microsoft"  
 

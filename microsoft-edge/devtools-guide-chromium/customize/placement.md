@@ -3,16 +3,16 @@ description: Comment déplacer Microsoft Edge DevTools vers le bas ou la gauche 
 title: Modifier le placement de Microsoft Edge DevTools (Undock, Dock To Bottom, Dock To Left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: e3160999a1072afffdc5c5d44f8fc60fab65d264
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 8fabeaf6d972badd08ab85486913ef17f54bcf67
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399037"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439176"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -59,7 +59,7 @@ Par défaut, DevTools est docké à droite de votre port d’affichage.  Vous po
 
 ## <a name="change-placement-from-the-main-menu"></a>Modifier l’emplacement à partir du menu principal  
 
-1.  Choisissez Personnaliser et contrôler **DevTools** \( \) et désémarrer dans une fenêtre distincte `...` \( **** ![ Undock ][ImageUndockIcon] \), Dock to **Bottom** \( Dock to Bottom \) ou Dock ![ To ][ImageBottomIcon] **Left** \( Dock To ![ Left ][ImageLeftIcon] \).  
+1.  Choisissez Personnaliser et contrôler **DevTools** \( \) et désémarrer dans une fenêtre distincte `...` \( **** ![ Undock ](../media/undock-icon.msft.png) \), Dock to **Bottom** \( Dock to Bottom \) ou Dock ![ To ](../media/bottom-icon.msft.png) **Left** \( Dock To ![ Left ](../media/left-icon.msft.png) \).  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Choose Undock Into Separate Window" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        Choose **Undock Into Separate Window**  
@@ -77,12 +77,6 @@ Par défaut, DevTools est docké à droite de votre port d’affichage.  Vous po
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageUndockIcon]: ../media/undock-icon.msft.png  
-[ImageBottomIcon]: ../media/bottom-icon.msft.png  
-[ImageLeftIcon]: ../media/left-icon.msft.png  
 
 <!-- links -->  
 

@@ -3,16 +3,16 @@ description: Didacticiel sur les fonctionnalités réseau les plus populaires da
 title: Inspecter l’activité réseau dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 16b60716c91d2f4ce778f1fac37afc0e73e30ab6
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: a4a552fa9a45267a6ffa4a4e83e7ebc4e1817162
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398657"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439695"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -93,7 +93,7 @@ Pour l’instant, **l’outil** Réseau est vide.  DevTools enregistre uniquemen
 
 Pour afficher l’activité réseau qu’une page provoque :  
 
-1.  Actualisez la page web.  Le panneau Réseau enregistre toute l’activité réseau dans **le journal réseau.**  
+1.  Actualisez la page web.  Le panneau Réseau enregistre toute l’activité réseau dans le **journal réseau.**  
     
     :::image type="complex" source="../media/network-glitch-network.msft.png" alt-text="Journal réseau" lightbox="../media/network-glitch-network.msft.png":::
        Journal **réseau**  
@@ -105,7 +105,7 @@ Pour afficher l’activité réseau qu’une page provoque :
 
     *   **État**.  Code d’état HTTP pour la réponse.  
     *   **Type**.  Type de ressource.  
-    *   **Initiateur**.  Cause de la demande de ressource.  La mise en place d’un lien dans la colonne Initiateur vous permet d’obtenir le code source à l’origine de la demande.  
+    *   **Initiateur**.  Cause de la demande de ressource.  La mise en place d’un lien dans la colonne Initiator vous permet d’obtenir le code source à l’origine de la demande.  
     *   **Heure**.  Durée de la demande.  
     *   **Cascade**.  Représentation graphique des différentes étapes de la demande.  Pour afficher une répartition, pointez sur une cascade.  
     
@@ -145,13 +145,13 @@ La connexion réseau de l’ordinateur que vous utilisez pour créer des sites e
        Activer la limitation  
     :::image-end:::  
     
-1.  Choose **Slow 3G**.  
+1.  Choisissez **Slow 3G**.  
     
     :::image type="complex" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="Choose Slow 3G" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
        Choose Slow 3G  
     :::image-end:::  
     
-1.  Appuyez **longuement sur Recharger** \( Recharger \), puis choisissez ![ Cache vide et ][ImageRefreshIcon] **Rechargement dur.**  
+1.  Appuyez **longuement sur Recharger** \( Recharger \), puis choisissez ![ Cache vide et ](../media/refresh-icon.msft.png) **Rechargement dur.**  
     
     :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="Cache vide et rechargement dur" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
        **Cache vide et rechargement dur**  
@@ -166,7 +166,7 @@ La connexion réseau de l’ordinateur que vous utilisez pour créer des sites e
 
 Les captures d’écran affichent l’apparence d’une page web au fil du temps pendant son chargement.  
 
-1.  Sélectionnez \( ![ Paramètres réseau \) et ][ImageSettingsIcon] cochez la case Capturer les **captures d’écran.**
+1.  Sélectionnez \( ![ Paramètres réseau \) et ](../media/settings-icon.msft.png) cochez la case Capturer les **captures d’écran.**
 1.  Actualisez la page à l’aide **du cache vide et du flux de travail de rechargement** dur.  Si vous [avez besoin](#simulate-a-slower-network-connection) d’un rappel sur la façon de le faire, accédez à Simuler une connexion plus lente.  
     Le panneau Captures d’écran fournit des miniatures de l’aperçu de la page à différents points pendant le processus de chargement.  
     
@@ -180,7 +180,7 @@ Les captures d’écran affichent l’apparence d’une page web au fil du temps
        Activité réseau qui s’est produit lors de la première capture d’écran  
     :::image-end:::  
     
-1.  Sélectionnez de nouveau \( Paramètres réseau \) et cochez la case Capture d’écran pour fermer le ![ ][ImageSettingsIcon] volet Captures d’écran. ****
+1.  Sélectionnez de nouveau \( Paramètres réseau \) et cochez la case Capture d’écran pour fermer le ![ ](../media/settings-icon.msft.png) volet Captures d’écran. ****
 1.  Actualisez la page.  
     
 ## <a name="inspect-the-details-of-the-resource"></a>Inspecter les détails de la ressource  
@@ -208,7 +208,7 @@ Choisissez une ressource pour en savoir plus à son sujet.  Essayez maintenant :
     :::image-end:::  
     
     > [!TIP]
-    > Lorsqu’un fichier est minifié, sélectionnez le bouton **Format** \( Format \) en bas du panneau De réponse pour re-mettre en forme le contenu du fichier pour plus de ![ ][ImageFormatIcon] **** lisibilité.  
+    > Lorsqu’un fichier est minifié, sélectionnez le bouton **Format** \( Format \) en bas du panneau De réponse pour re-mettre en forme le contenu du fichier pour plus de ![ ](../media/format-icon.msft.png) **** lisibilité.  
     
 1.  Sélectionnez **le panneau De minutage.**  Une répartition de l’activité réseau de la ressource s’affiche.  
     
@@ -216,7 +216,7 @@ Choisissez une ressource pour en savoir plus à son sujet.  Essayez maintenant :
        Panneau **De minutage**  
     :::image-end:::  
     
-1.  Choose **Close** \( ![ Close ][ImageCloseIcon] \) to view the Network Log again.  
+1.  Choisissez **Fermer** \( Fermer \) pour afficher à nouveau ![ le journal ](../media/close-icon.msft.png) réseau.  
     
     :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="Bouton Fermer" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
        Bouton **** Fermer  
@@ -226,17 +226,17 @@ Choisissez une ressource pour en savoir plus à son sujet.  Essayez maintenant :
 
 Utilisez le **volet de** recherche lorsque vous devez rechercher dans les en-têtes HTTP et les réponses de toutes les ressources une chaîne ou une expression régulière.  
 
-Par exemple, supposons que vous vouliez vérifier que vos ressources utilisent des stratégies **de cache raisonnables.**  
+Par exemple, supposons que vous vouliez vérifier que vos ressources utilisent des stratégies de **cache raisonnables.**  
 
 <!--TODO: add cache policies section when available  -->
 
-1.  Choose **Search** \( ![ Search ][ImageSearchIcon] \).  Le volet Recherche s’ouvre à gauche du journal réseau.  
+1.  Choose **Search** \( ![ Search ](../media/search-icon.msft.png) \).  Le volet Recherche s’ouvre à gauche du journal réseau.  
     
     :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="Volet de recherche" lightbox="../media/network-glitch-network-search-empty.msft.png":::
        Volet **** de recherche  
     :::image-end:::  
     
-1.  Tapez `Cache-Control` et sélectionnez `Enter` .  Le volet De recherche répertorie toutes les instances de ce qu’il trouve dans les en-têtes de ressource `Cache-Control` ou le contenu.  
+1.  Tapez `Cache-Control` et sélectionnez `Enter` .  Le volet de recherche répertorie toutes les instances de ce qu’il trouve dans les en-têtes `Cache-Control` ou le contenu des ressources.  
     
     :::image type="complex" source="../media/network-glitch-network-search-cache-control.msft.png" alt-text="Résultats de la recherche pour Cache-Control" lightbox="../media/network-glitch-network-search-cache-control.msft.png":::
        Résultats de la recherche pour  `Cache-Control`  
@@ -264,7 +264,7 @@ DevTools fournit de nombreux flux de travail pour filtrer les ressources qui ne 
 
 La **barre d’outils** Filtres doit être allumée par défaut.  Si ce n’est pas le cas :  
 
-1.  Choisissez **Filtre** \( ![ Filtre ][ImageFilterIcon] \) pour l’afficher.  
+1.  Choisissez **Filtre** \( ![ Filtre ](../media/filter-icon.msft.png) \) pour l’afficher.  
     
 ### <a name="filter-by-string-regular-expression-or-property"></a>Filtrer par chaîne, expression régulière ou propriété  
 
@@ -282,7 +282,7 @@ La **zone de** texte Filtre prend en charge différents types de filtrage.
        Filtre d’expression régulière  
     :::image-end:::  
     
-1.  Entrez `-main.css`.  DevTools filtre les `main.css` sorties.  Si un fichier correspond au modèle, le son est également filtré.  
+1.  Entrez `-main.css`.  DevTools filtre les `main.css` sorties.  Si un fichier correspond au modèle, son sein est également filtré.  
     
     :::image type="complex" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="Un filtre négatif" lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
        Un filtre négatif  
@@ -334,7 +334,7 @@ Comment se comporte une page lorsque certaines ressources de page ne sont pas di
        **Afficher le blocage des demandes**  
     :::image-end:::  
     
-1.  Choose **Add Pattern** \( Add Pattern ![ ][ImageAddIcon] \).  
+1.  Choose **Add Pattern** \( Add Pattern ![ ](../media/add-icon.msft.png) \).  
 1.  Entrez `main.css`.  
     
     :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Blocage de main.css" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
@@ -342,7 +342,7 @@ Comment se comporte une page lorsque certaines ressources de page ne sont pas di
     :::image-end:::  
     
 1.  Choose **Add**.  
-1.  Actualisez la page.  Comme prévu, le style de la page est légèrement désordessé car la feuille de style principale a été bloquée.  
+1.  Actualisez la page.  Comme prévu, le style de la page est légèrement décoché car la feuille de style principale a été bloquée.  
     
     > [!NOTE]
     > Ligne `main.css` du journal réseau.  Le texte rouge signifie que la ressource a été bloquée.
@@ -351,7 +351,7 @@ Comment se comporte une page lorsque certaines ressources de page ne sont pas di
        `main.css` a été bloqué  
     :::image-end:::  
     
-1.  Désélection de la **case à cocher Activer le blocage des** demandes.  
+1.  Désélectionner la **case à cocher Activer le blocage des** demandes.  
 
 ## <a name="conclusion"></a>Conclusion  
 
@@ -363,26 +363,15 @@ Accédez à la [Référence réseau][DevtoolsNetworkReference] pour découvrir d
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageAddIcon]: ../media/add-icon.msft.png  
-[ImageCloseIcon]: ../media/close-icon.msft.png  
-[ImageFilterIcon]: ../media/filter-icon.msft.png  
-[ImageFormatIcon]: ../media/format-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-[ImageScreenshotsIcon]: ../media/screenshots-icon.msft.png  
-[ImageSearchIcon]: ../media/search-icon.msft.png  
-[ImageSettingsIcon]: ../media/settings-icon.msft.png
-
 <!-- links -->  
 
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->  
 
 [DevToolsCustomizePlacement]: ../customize/placement.md "Modifier le placement de Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsNetworkReference]: ./reference.md "Référence de l’analyse réseau | Documents Microsoft"
-[DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Demandes de filtre : référence de l’analyse réseau | Documents Microsoft"  
+[DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Demandes de filtrage : référence de l’analyse réseau | Documents Microsoft"  
 [DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Masquer le volet Vue d’ensemble - Référence de l’analyse réseau | Documents Microsoft"
-[DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Filtrer les demandes par propriétés – Référence de l’analyse réseau | Documents Microsoft"
+[DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Filtrer les demandes par propriétés : référence de l’analyse réseau | Documents Microsoft"
 [DevToolsOpen]: ../open/index.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimiser la vitesse du site web avec Microsoft Edge DevTools | Documents Microsoft"  
 

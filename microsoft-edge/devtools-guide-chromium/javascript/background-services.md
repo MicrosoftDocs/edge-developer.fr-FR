@@ -3,16 +3,16 @@ description: Comment déboguer la récupération en arrière-plan, la synchronis
 title: Débogage des services d’arrière-plan avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: cf3459e7b5f80a695a855ffdd0c249c2bc223d31
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 15023098c547d31bf46bd387f849b365c13b38f6
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398636"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439527"
 ---
 <!-- Copyright Kayce Basques
 
@@ -57,14 +57,14 @@ Le journal des événements du service en arrière-plan peut vous aider à vous 
 1.  Ouvrez le **panneau Extraction en arrière-plan.**  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="Panneau Extraction en arrière-plan" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
-       Panneau **Extraction d’arrière-plan**  
+       Panneau **Extraction en arrière-plan**  
     :::image-end:::  
     
-1.  Choose **Record** \( ![ Record ][ImageRecordIcon] \).  
+1.  Choose **Record** \( ![ Record ](../media/record-icon.msft.png) \).  
    Après avoir déclenché une activité de récupération en arrière-plan, DevTools enregistre les événements dans la table.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Journal des événements dans le panneau Extraction en arrière-plan" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
-       Journal des événements dans le panneau Extraction en **arrière-plan**  
+       Journal des événements dans le **panneau Extraction en arrière-plan**  
     :::image-end:::  
     
 1.  Choisissez un événement pour afficher ses détails dans l’espace sous le tableau.  
@@ -84,10 +84,10 @@ Le journal des événements du service en arrière-plan peut vous aider à vous 
 1.  Ouvrez le **volet Synchronisation** en arrière-plan.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="Volet Synchronisation en arrière-plan" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
-       Volet **Synchronisation en arrière-plan**  
+       Volet **Synchronisation en** arrière-plan  
     :::image-end:::  
     
-1.  Choose **Record** \( ![ Record ][ImageRecordIcon] \).  
+1.  Choose **Record** \( ![ Record ](../media/record-icon.msft.png) \).  
    Après avoir déclenché une activité de synchronisation en arrière-plan, DevTools enregistre les événements dans la table.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="Journal des événements dans le volet Synchronisation en arrière-plan" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
@@ -112,7 +112,7 @@ Une fois **qu’un employé** de service a reçu un [message push][MDNPush] d’
        Volet **Notifications**  
     :::image-end:::  
     
-1.  Choose **Record** \( ![ Record ][ImageRecordIcon] \).  
+1.  Choose **Record** \( ![ Record ](../media/record-icon.msft.png) \).  
    Après avoir déclenché une activité Notifications, DevTools enregistre les événements dans la table.  
     
     :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="Journal des événements dans le volet Notifications" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
@@ -127,7 +127,7 @@ Une fois **qu’un employé** de service a reçu un [message push][MDNPush] d’
     
 ## <a name="push-messages"></a>Push Messages  
 
-Pour afficher une notification Push **** à un utilisateur, un service de travail doit d’abord utiliser l’API Push [Message][MDNPush] pour recevoir des données à partir d’un serveur.  Lorsque le service de travail est prêt à afficher la notification, il utilise [l’API Notifications][MDNNotifications].  Pour enregistrer les messages push pendant 3 jours, même lorsque DevTools n’est pas ouvert :  
+Pour afficher une notification Push **** à un utilisateur, un service de travail doit d’abord utiliser l’API Push [Message][MDNPush] pour recevoir des données à partir d’un serveur.  Lorsque le service de travail est prêt à afficher la notification, il utilise [l’API Notifications.][MDNNotifications]  Pour enregistrer les messages push pendant 3 jours, même lorsque DevTools n’est pas ouvert :  
 
 1.  [Ouvrez DevTools][OpenDevTools].  
 1.  Ouvrez **l’outil Application.**  
@@ -137,7 +137,7 @@ Pour afficher une notification Push **** à un utilisateur, un service de travai
        Ouvrir le **volet De messagerie** push  
     :::image-end:::  
     
-1.  Choose **Record** \( ![ Record ][ImageRecordIcon] \).  
+1.  Choose **Record** \( ![ Record ](../media/record-icon.msft.png) \).  
     Après avoir déclenché une activité de message push, DevTools enregistre les événements dans la table.  
     
     :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="Journal des événements dans le volet De messagerie push" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
@@ -153,10 +153,6 @@ Pour afficher une notification Push **** à un utilisateur, un service de travai
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageRecordIcon]: ../media/record-icon.msft.png  
 
 <!-- links -->  
 

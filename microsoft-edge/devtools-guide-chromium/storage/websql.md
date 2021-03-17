@@ -1,18 +1,18 @@
 ---
 description: Découvrez comment afficher les SQL web à partir du panneau Application de Microsoft Edge DevTools.
-title: Afficher les données SQL web avec Microsoft Edge DevTools
+title: Afficher les données de SQL web avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 326fe492a3436a40d81c8e31db99a26da4ea054f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 9f684aabf3592220079e6a8595d91cfea6785769
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397551"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439597"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,7 +28,7 @@ ms.locfileid: "11397551"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <a name="view-web-sql-data-with-microsoft-edge-devtools"></a>Afficher les données SQL web avec Microsoft Edge DevTools  
+# <a name="view-web-sql-data-with-microsoft-edge-devtools"></a>Afficher les données de SQL web avec Microsoft Edge DevTools  
 
 > [!WARNING]
 > La spécification de SQL web [n’est pas conservée.][W3CWebSQLStatus]  
@@ -43,7 +43,7 @@ Ce guide vous montre comment utiliser [Microsoft Edge DevTools][MicrosoftEdgeDev
        Volet **** manifeste  
     :::image-end:::  
     
-1.  Développez la section **SQL** web pour afficher les bases de données et les tables.  Dans la figure suivante, sous **html5meetup se** trouve une base de données et **les salles** un tableau.  
+1.  Développez la section **SQL** web pour afficher les bases de données et les tables.  Dans la figure suivante, sous **html5meetup** se trouve une base de données et **les salles** un tableau.  
     
     :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="Volet De SQL Web" lightbox="../media/storage-application-storage-web-sql.msft.png":::
        Volet **SQL** Web  
@@ -73,7 +73,7 @@ Vous ne pouvez pas modifier les données de SQL web lors de l’affichage d’un
 DevTools ne met pas à jour les tables en temps réel.  Pour mettre à jour les données d’une table, effectuer les actions suivantes.  
 
 1.  [Afficher les données dans une table de SQL Web.](#view-web-sql-data)  
-1.  Choose **Refresh** \( ![ Refresh ][ImageRefreshIcon] \).  
+1.  Choose **Refresh** \( ![ Refresh ](../media/refresh-icon.msft.png) \).  
     
 ## <a name="filter-out-columns-in-a-web-sql-table"></a>Filtrer les colonnes dans un tableau de SQL Web  
 
@@ -86,7 +86,7 @@ DevTools ne met pas à jour les tables en temps réel.  Pour mettre à jour les 
     
 ## <a name="delete-all-web-sql-data"></a>Supprimer toutes les données de SQL Web  
 
-1.  Ouvrez **le volet Effacer le** stockage.  
+1.  Ouvrez **le volet** Effacer le stockage.  
 1.  Assurez-vous que **la case à SQL** web est allumée.  
     
     :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="Case à cocher SQL web" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
@@ -102,10 +102,6 @@ DevTools ne met pas à jour les tables en temps réel.  Pour mettre à jour les 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
 
 <!-- links -->  
 

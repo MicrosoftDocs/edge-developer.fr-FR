@@ -3,16 +3,16 @@ description: Découvrez comment afficher les données de cache à partir du pann
 title: Afficher les données de cache avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 7e0523e3293bbdafa9c3575344714da708fffe62
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0ce4dbbf2456579abe84fca48bca8106384995dd
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397537"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439316"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -75,7 +75,7 @@ Si vous essayez d’inspecter les [données de cache HTTP,][MDNHTTPCaching] ce n
        Choisir une ressource à actualiser  
     :::image-end:::  
     
-1.  Choose **Refresh** \( ![ Refresh ][ImageRefreshIcon] \).  
+1.  Choose **Refresh** \( ![ Refresh ](../media/refresh-icon.msft.png) \).  
     
 ## <a name="filter-resources"></a>Filtrer les ressources  
 
@@ -95,11 +95,11 @@ Si vous essayez d’inspecter les [données de cache HTTP,][MDNHTTPCaching] ce n
        Choisir une ressource à supprimer  
     :::image-end:::  
     
-1.  Choose **Delete Selected** \( ![ Delete Selected ][ImageDeleteIcon] \).  
+1.  Choose **Delete Selected** \( ![ Delete Selected ](../media/delete-icon.msft.png) \).  
     
 ## <a name="delete-all-cache-data"></a>Supprimer toutes les données de cache  
 
-1.  Ouvrez **Application**  >  **Clear Storage**.  
+1.  Ouvrez ****  >  **l’application Effacer le stockage.**  
 1.  Assurez-vous que la case **à cocher Stockage** du cache est activée.  
     
     :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Case à cocher Stockage du cache" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
@@ -115,11 +115,6 @@ Si vous essayez d’inspecter les [données de cache HTTP,][MDNHTTPCaching] ce n
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
 
 <!-- links -->  
 

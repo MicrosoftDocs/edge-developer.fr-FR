@@ -3,16 +3,16 @@ description: Découvrez comment détecter les problèmes réseau dans le panneau
 title: Guide des problèmes de réseau
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 12cc447fa9d8ef8624e8528430eabc25ab523dd0
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 9b92ca7b759fab80d7d829b31f605ccb8062a816
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398272"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439618"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -64,7 +64,7 @@ Une demande passe beaucoup de temps à attendre de recevoir le premier byte du s
 
 Dans la figure suivante, la barre longue et verte de la **cascade** indique que la demande attendait longtemps.  Cela a été simulé à l’aide d’un profil pour limiter la vitesse du réseau et ajouter un délai.  
 
-:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Exemple d’une demande dont l’heure est lente au premier sur deux byte" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
+:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Exemple d’une demande dont l’heure est lente jusqu’au premier sur deux byte" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
    Exemple d’une demande dont l’heure est lente au premier sur deux byte  
 :::image-end:::  
 
@@ -105,16 +105,12 @@ Dans la figure suivante, la longue **** barre bleue dans la cascade en face du p
 Do you have a network issue that should be added to this guide?  
 
 *   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].  
-*   Choose **Send Feedback** \(![Send Feedback][ImageSendFeedbackIcon]\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
+*   Choose **Send Feedback** \(![Send Feedback](../media/smile-icon.msft.png)\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
 *   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageSendFeedbackIcon]: ../media/smile-icon.msft.png  
 
 <!-- links -->  
 
@@ -126,7 +122,7 @@ Do you have a network issue that should be added to this guide?
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est trouvée ici et est co-auteure par [Les Basques Decéssaisie \(Rédacteur][KayceBasques] technique, Chrome DevTools \& Évérité\) et [Chef Garbee][JonathanGarbee] \(Google Developer Expert for Web Technology\). [](https://developers.google.com/web/tools/chrome-devtools/network/issues)  
+> La page d’origine est trouvée ici et est co-auteure par [Les Basques DeCénais (Rédacteur][KayceBasques] technique, Chrome DevTools \& Évérité\) [etPérave Garbee][JonathanGarbee] \(Google Developer Expert for Web Technology\). [](https://developers.google.com/web/tools/chrome-devtools/network/issues)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  

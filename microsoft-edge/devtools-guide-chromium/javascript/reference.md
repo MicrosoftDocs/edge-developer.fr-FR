@@ -3,16 +3,16 @@ description: Découvrez les nouveaux flux de travail de débogage dans cette ré
 title: Référence de débogage JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 09a2d61269b2fe3a23a57ce58eb1c89b12a7639c
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2944e054a08a901d2e1752fa7c4e48ae110f5787
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398475"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439457"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -44,9 +44,9 @@ Pour découvrir comment définir des points d’arrêt, accédez à [Suspendre v
 
 Une fois que votre code est suspendu, pas à pas, une ligne à la fois, en enquêtant sur le flux de contrôle et les valeurs des propriétés en cours de route.  
 
-### <a name="step-over-line-of-code"></a>Pas à pas avant la ligne de code  
+### <a name="step-over-line-of-code"></a>Ligne de code pas à pas  
 
-Lorsqu’il est suspendu sur une ligne de code contenant une fonction qui n’est pas pertinente pour le problème que vous déboguer, choisissez le bouton Pas à pas principal **\(** Pas-à-pas \) pour exécuter la fonction sans y aller pas à ![ ][ImageStepOverIcon] pas.  
+Lorsqu’il est suspendu sur une ligne de code contenant une fonction qui n’est pas pertinente pour le problème que vous déboguer, choisissez le bouton Pas à pas principal **\(** Pas-à-pas \) pour exécuter la fonction sans y aller pas à ![ ](../media/step-over-icon.msft.png) pas.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="Choose Step over" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
    Choose **Step over**  
@@ -66,11 +66,11 @@ function getName() {
 }
 ```  
 
-Vous êtes `A` suspendu.  Une fois que vous avez choisi **Pas**à pas, DevTools exécute tout le code dans la fonction que vous exécutez pas à pas, c’est-à-dire `B` et `C` .  DevTools s’interrompt ensuite sur `D` .  
+Vous êtes `A` suspendu.  Une fois que vous avez choisi **Pas**à pas, DevTools exécute tout le code dans la fonction que vous exécutez pas à pas, c’est-à-dire. `B` `C`  DevTools s’interrompt ensuite sur `D` .  
 
 ### <a name="step-into-line-of-code"></a>Pas à pas dans la ligne de code  
 
-Lorsqu’il est suspendu sur une ligne de code contenant un appel de fonction lié au problème que vous déboguer, choisissez le bouton Pas à pas dans **\(** Pas à pas dans \) pour examiner cette fonction plus ![ en ][ImageStepIntoIcon] détail.  
+Lorsqu’il est suspendu sur une ligne de code contenant un appel de fonction lié au problème que vous déboguer, choisissez le bouton Pas à pas dans **\(** Pas à pas dans \) pour examiner cette fonction plus ![ en ](../media/step-into-icon.msft.png) détail.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="Choose Step into" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
    Choose **Step into**  
@@ -94,7 +94,7 @@ Vous êtes `A` suspendu.  Une fois que **vous avez choisi Pas à**pas, DevTools 
 
 ### <a name="step-out-of-line-of-code"></a>Sortir de la ligne de code  
 
-Lorsqu’il est suspendu à l’intérieur d’une fonction qui n’est pas liée au problème que vous déboguer, choisissez le bouton Pas **à** pas principal \( Pas à pas sortant \) pour exécuter le reste du code de la ![ ][ImageStepOutIcon] fonction.  
+Lorsqu’il est suspendu à l’intérieur d’une fonction qui n’est pas liée au problème que vous déboguer, choisissez le bouton Pas **à** pas principal \( Pas à pas sortant \) pour exécuter le reste du code de la ![ ](../media/step-out-icon.msft.png) fonction.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="Choose Step out" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
    Choose **Step out**  
@@ -114,13 +114,13 @@ function getName() {
 }
 ```  
 
-Vous êtes `A` suspendu.  Une fois que vous avez choisi Pas **à**pas, DevTools exécute le reste du code dans , qui se trouve juste dans cet exemple, puis `getName()` `B` s’interrompt. `C`  
+Vous êtes `A` suspendu.  Après avoir choisi **Pas à pas,** DevTools exécute le reste du code dans , qui se trouve juste dans cet exemple, puis `getName()` `B` s’interrompt. `C`  
 
 ### <a name="run-all-code-up-to-a-specific-line"></a>Exécuter tout le code jusqu’à une ligne spécifique  
 
 Lors du débogage d’une fonction longue, il peut y avoir un grand nombre de code qui n’est pas lié au problème que vous déboguer.  
 
-Vous pouvez choisir d’aller dans toutes les lignes, mais cela est fastidieux.  Vous pouvez choisir de définir un point d’arrêt de ligne de code sur la ligne qui vous intéresse, puis de choisir le bouton Reprendre l’exécution de **script** \( Reprendre l’exécution de script \), mais il existe un moyen plus ![ ][ImageResumeScriptExecutionIcon] rapide.  
+Vous pouvez choisir d’aller dans toutes les lignes, mais cela est fastidieux.  Vous pouvez choisir de définir un point d’arrêt de ligne de code sur la ligne qui vous intéresse, puis de choisir le bouton Reprendre l’exécution de **script** \( Reprendre l’exécution de script \), mais il existe un moyen plus ![ ](../media/resume-script-run-icon.msft.png) rapide.  
 
 Pointez sur la ligne de code qui vous intéresse, ouvrez le menu contextuel \(clic droit\), puis choisissez **Continuer ici.**  DevTools exécute l’ensemble du code jusqu’à ce point, puis s’interrompt sur cette ligne.  
 
@@ -130,7 +130,7 @@ Pointez sur la ligne de code qui vous intéresse, ouvrez le menu contextuel \(cl
 
 ### <a name="restart-the-top-function-of-the-call-stack"></a>Redémarrer la fonction supérieure de la pile d’appels  
 
-Pour suspendre la première ligne de la fonction supérieure de votre pile d’appels, puis sur une ligne de code, pointez n’importe où dans le volet Pile des appels, ouvrez le menu contextuel \(clic droit\), puis choisissez Redémarrer le **cadre.** ****  La fonction supérieure est la dernière fonction qui a été exécuté.  
+Pour suspendre la première ligne de la fonction supérieure de votre pile d’appels, sur une ligne de code, pointez n’importe où dans le volet Pile des appels, ouvrez le menu contextuel \(clic droit\), puis choisissez Redémarrer le **cadre.** ****  La fonction supérieure est la dernière fonction qui a été exécuté.  
 
 L’extrait de code suivant est un exemple de procédure pas à pas.  
 
@@ -150,17 +150,17 @@ Vous êtes `A` suspendu.  Après avoir choisi **l’image**de redémarrage, vous
    Choisir **un cadre de redémarrage**  
 :::image-end:::  
 
-### <a name="resume-script-runtime"></a>Reprise du runtime de script  
+### <a name="resume-script-runtime"></a>Reprendre le runtime de script  
 
-Pour poursuivre l’exécution après une pause de votre script, choisissez le bouton Reprendre l’exécution du **script** \( Reprendre l’exécution ![ du script ][ImageResumeScriptExecutionIcon] \).  DevTools exécute le script jusqu’au point d’arrêt suivant, s’il y en a.  
+Pour poursuivre l’exécution après une pause de votre script, choisissez le bouton Reprendre l’exécution du **script** \( Reprendre l’exécution ![ du script ](../media/resume-script-run-icon.msft.png) \).  DevTools exécute le script jusqu’au point d’arrêt suivant, s’il y en a.  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="Choose Resume script execution" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
    Choose **Resume script execution**  
 :::image-end:::  
 
-#### <a name="force-script-runtime"></a>Forcer le runtime du script  
+#### <a name="force-script-runtime"></a>Forcer le runtime de script  
 
-Pour ignorer tous les points d’arrêt et forcer votre script à reprendre l’exécution, choisissez et maintenez le bouton Reprendre l’exécution du script **\(** Reprendre l’exécution du script \), puis choisissez le bouton Forcer l’exécution du script \( Forcer l’exécution du ![ ][ImageResumeScriptExecutionIcon] **script** ![ ][ImageForceScriptExecutionIcon] \).  
+Pour ignorer tous les points d’arrêt et forcer votre script à reprendre l’exécution, choisissez et maintenez le bouton Reprendre l’exécution du script **\(** Reprendre l’exécution du script \), puis choisissez le bouton Forcer l’exécution du script \( Forcer l’exécution du ![ ](../media/resume-script-run-icon.msft.png) **script** ![ ](../media/force-script-run-icon.msft.png) \).  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Choose Force script execution" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    Choose **Force script execution**  
@@ -208,7 +208,7 @@ Choisissez une entrée pour passer à la ligne de code où cette fonction a ét�
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there is not right now, so it is here.
 -->
 
-pour copier la pile d’appels actuelle dans **** le Presse-papiers, pointez n’importe où dans le volet Pile des appels, ouvrez le menu contextuel \(clic droit\), puis choisissez Copier la trace de **pile.**  
+pour copier la pile d’appels actuelle dans **** le Presse-papiers, pointez n’importe où dans le volet Pile des appels, ouvrez le menu contextuel \(clic droit\), puis choisissez Copier la **trace de**pile.  
 
 :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="Choose Copy Stack Trace" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
    Choose **Copy Stack Trace**  
@@ -236,7 +236,7 @@ function animate() {
 }
 ```  
 
-`A` est une bibliothèque tierce de confiance.  Si vous êtes certain que le problème que vous déboguer n’est pas lié à la bibliothèque tierce, il est logique de marquer le script comme du **code de bibliothèque.**  
+`A` est une bibliothèque tierce de confiance.  Si vous êtes certain que le problème que vous déboguer n’est pas lié à la bibliothèque tierce, il est logique de marquer le script en tant que **code de bibliothèque.**  
 
 ### <a name="mark-a-script-as-library-code-from-the-editor-pane"></a>Marquer un script en tant que code de bibliothèque à partir du volet Éditeur  
 
@@ -279,7 +279,7 @@ Effectuer les actions suivantes pour marquer un seul script ou modèle de script
 
 Si vous vous trouvez en cours d’exécution du même code de débogage dans la console, pensez à des extraits de code.  Les extraits de code sont des scripts d’runtime que vous pouvez écrire, stocker et exécuter dans DevTools.  
 
-Pour en savoir plus, accédez à Exécuter des extraits de code à [partir d’une page][DevToolsJavascriptSnippets]quelconque.  
+Pour en savoir plus, accédez à Exécuter des extraits de code à [partir de n’importe quelle page.][DevToolsJavascriptSnippets]  
 
 ## <a name="watch-the-values-of-custom-javascript-expressions"></a>Regardez les valeurs des expressions JavaScript personnalisées  
 
@@ -289,13 +289,13 @@ Utilisez le **volet** d’observation pour observer les valeurs des expressions 
    Volet **d’observation**  
 :::image-end:::  
 
-*   Sélectionnez **le bouton Ajouter une expression** \( Ajouter une expression ![ ][ImageAddExpressionIcon] \) pour créer une expression d’observation.  
-*   Sélectionnez **le bouton Actualiser** \( Actualiser \) pour actualiser les ![ ][ImageRefreshIcon] valeurs de toutes les expressions existantes.  Les valeurs s’actualisent automatiquement lors du code pas à pas.  
-*   Pointez sur une expression et choisissez le bouton **Supprimer l’expression** \( ![ Supprimer l’expression ][ImageDeleteExpressionIcon] \) pour la supprimer.  
+*   Choisissez le **bouton Ajouter une expression** \( Ajouter une expression ![ ](../media/add-expression-icon.msft.png) \) pour créer une expression d’observation.  
+*   Sélectionnez **le bouton Actualiser** \( Actualiser \) pour actualiser les ![ ](../media/refresh-icon.msft.png) valeurs de toutes les expressions existantes.  Les valeurs s’actualisent automatiquement lors du code pas à pas.  
+*   Pointez sur une expression et choisissez le bouton **Supprimer l’expression** \( ![ Supprimer l’expression ](../media/delete-expression-icon.msft.png) \) pour la supprimer.  
 
 ## <a name="make-a-minified-file-readable"></a>Rendre un fichier minifié lisible  
 
-Choisissez le **bouton Format** \( Format \) pour rendre un fichier ![ ][ImageFormatIcon] minifié lisible par l’homme.  
+Choisissez le **bouton Format** \( Format \) pour rendre un fichier ![ ](../media/format-icon.msft.png) minifié lisible par l’homme.  
 
 :::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="Bouton Format" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
    Bouton **Format**  
@@ -307,7 +307,7 @@ Lorsque vous corrigez un bogue, vous souhaitez souvent tester certaines modifica
 
 Effectuer les actions suivantes pour modifier un script.  
 
-1.  Ouvrez le fichier **dans** le volet Éditeur du panneau **Sources.**  
+1.  Ouvrez le fichier **dans** le volet Éditeur du volet **Sources.**  
 1.  A apporté vos modifications **dans** le volet Éditeur.  
 1.  Sélectionnez `Ctrl` + `S` \(Windows, Linux\) ou `Command` + `S` \(macOS\) à enregistrer.  DevTools correctifs tout le fichier JS dans le moteur JavaScript de Microsoft Edge.  
     
@@ -322,18 +322,6 @@ Accédez [à Désactiver JavaScript avec Microsoft Edge DevTools][DevToolsJavasc
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageStepOverIcon]: ../media/step-over-icon.msft.png  
-[ImageStepIntoIcon]: ../media/step-into-icon.msft.png  
-[ImageStepOutIcon]: ../media/step-out-icon.msft.png  
-[ImageResumeScriptExecutionIcon]: ../media/resume-script-run-icon.msft.png  
-[ImageForceScriptExecutionIcon]: ../media/force-script-run-icon.msft.png  
-[ImageAddExpressionIcon]: ../media/add-expression-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-[ImageDeleteExpressionIcon]: ../media/delete-expression-icon.msft.png  
-[ImageFormatIcon]: ../media/format-icon.msft.png  
 
 <!-- links -->  
 

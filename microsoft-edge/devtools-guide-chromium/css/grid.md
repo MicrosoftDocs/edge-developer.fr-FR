@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 5e4b20690eac3a692f6428f391def102a4f78ecb
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 034fbdf82ddba39fc0818bc6f3add8824c6bb3ac
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398769"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439260"
 ---
 # <a name="inspect-css-grid"></a>Inspecter la grille CSS  
 
@@ -21,7 +21,7 @@ Cet article vous explique en détail l’identification des grilles CSS sur un s
 Les exemples utilisés dans les figures de cet article sont issus des pages web suivantes.  
 
 *   [Zone de fruit][JecFyiDemoCssGridFruit]  
-*   [Zone de box][JecFyiDemoCssGridSnack]  
+*   [Zone de boîtier de case][JecFyiDemoCssGridSnack]  
 
 ## <a name="before-you-begin"></a>Avant de commencer  
 
@@ -98,7 +98,7 @@ Choisissez **Masquer les étiquettes de** ligne pour masquer les numéros de lig
 
 Pour plus d’informations sur les noms de lignes dans la superposition de grille, accédez à Disposition à l’aide de [lignes de grille nommées.][MdnLayoutUsingNamedGridLines]  
 
-Choisissez **Afficher les noms de ligne** pour afficher les noms de lignes au lieu des nombres.  Dans l’exemple, 4 lignes ont des noms `left` : , , et `middle1` `middle2` `right` .  
+Choisissez **Afficher les noms de ligne** pour afficher les noms de ligne au lieu des nombres.  Dans l’exemple, 4 lignes ont des noms `left` : , , et `middle1` `middle2` `right` .  
 
 <!--In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  -->  
 
@@ -117,9 +117,9 @@ DevTools s’affiche `[authored size]` et dans chaque étiquette de `[computed s
 | **taille d’auteur** | Taille définie dans la feuille de style \(omise si elle n’est pas définie\). |  
 | **taille calculée** | Taille réelle à l’écran. |  
 
-Dans la démonstration, les `snack-box` tailles de colonne sont définies dans `grid-template-columns:1fr 2fr;` le CSS.  Par conséquent, les étiquettes de ligne de colonne affichent les tailles calculées et les tailles.  
+Dans la démonstration, les `snack-box` tailles de colonne sont définies dans `grid-template-columns:1fr 2fr;` le CSS.  Par conséquent, les étiquettes de ligne de colonne affichent les tailles calculées et les tailles de la colonne.  
 
-| Suivre la taille | Taille de la forme | Taille calculée |  
+| Suivre la taille | Taille de la forme de la forme | Taille calculée |  
 |:--- |:--- |:--- |  
 | **1fr** &#x2022; **96,66 px** | 1fr | 96,66 px |  
 | **2fr** &#x2022; **193,32 px** | 2fr | 193,32 px |  
@@ -157,7 +157,7 @@ La section **Superpositions** de grille contient une liste de grilles présentes
 
 ### <a name="enable-overlay-views-of-multiple-grids"></a>Activer les affichages de superposition de plusieurs grilles  
 
-Pour afficher la grille de superposition de plusieurs grilles, cochez la case en regard de chaque nom de la grille.  Dans l’exemple, il existe 2 superpositions de grilles activées qui sont chacune représentées avec des couleurs différentes.  
+Pour afficher la grille de superposition pour plusieurs grilles, cochez la case en regard de chaque nom de la grille.  Dans l’exemple, il existe 2 superpositions de grilles activées qui sont chacune représentées avec des couleurs différentes.  
 
 *   `main`  
 *   `div.snack-box`  
@@ -168,7 +168,7 @@ Pour afficher la grille de superposition de plusieurs grilles, cochez la case en
 
 ### <a name="customize-the-grid-overlay-color"></a>Personnaliser la couleur de superposition de la grille  
 
-Pour ouvrir le s picker de couleurs et personnaliser la couleur de superposition de la grille, choisissez la case à côté du nom de la superposition de la grille.  
+Pour ouvrir le s picker de couleurs et personnaliser la couleur de superposition de la grille, sélectionnez la case à côté du nom de la superposition de la grille.  
 
 :::image type="complex" source="../media/grid-grid-overlays-color.msft.png" alt-text="Personnaliser la couleur de superposition de la grille" lightbox="../media/grid-grid-overlays-color.msft.png":::
    Personnaliser la couleur de superposition de la grille  
@@ -176,7 +176,7 @@ Pour ouvrir le s picker de couleurs et personnaliser la couleur de superposition
 
 ### <a name="highlight-the-grid"></a>Surligner la grille  
 
-Pour mettre en surbrillez l’élément HTML dans l’outil **Elements** et faites-le défiler sur la page web, choisissez l’élément **Show** dans le panneau Éléments \( Afficher l’élément dans l’icône du panneau Éléments ![ ][ImageShowElementInElementsPanelIcon] \).  
+Pour mettre en surbrillez l’élément HTML dans l’outil **Elements** et faites-le défiler sur la page web, choisissez l’élément **Show** dans le panneau Éléments \( Afficher l’élément dans l’icône du panneau Éléments ![ ](../media/show-element-in-element-panel-icon.msft.png) \).  
 
 :::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Surligner la grille" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
    Surligner la grille  
@@ -185,10 +185,6 @@ Pour mettre en surbrillez l’élément HTML dans l’outil **Elements** et fait
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageShowElementInElementsPanelIcon]: ../media/show-element-in-element-panel-icon.msft.png  
 
 <!-- links -->  
 

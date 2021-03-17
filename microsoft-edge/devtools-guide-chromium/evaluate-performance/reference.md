@@ -3,16 +3,16 @@ description: Référence sur toutes les façons d’enregistrer et d’analyser 
 title: Référence d’analyse des performances
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 181bc05fffbaef6a06bebcc5cb9ccfcc8e7de498
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: e7774dc0aab647b8cf2bf47699368fafe6c21d70
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398804"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439688"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -32,17 +32,17 @@ ms.locfileid: "11398804"
 
 Cette page est une référence complète des fonctionnalités DevTools de Microsoft Edge liées à l’analyse des performances.  
 
-Accédez [à Démarrer avec l’analyse][DevtoolsEvaluatePerformanceGettingStarted] des performances d’exécution pour un didacticiel guidé sur la façon d’analyser les performances d’une page à l’aide de Microsoft Edge [DevTools][MicrosoftEdgeDevTools].  
+Accédez [à Démarrer avec l’analyse][DevtoolsEvaluatePerformanceGettingStarted] des performances d’exécution pour un didacticiel guidé sur l’analyse des performances d’une page à l’aide de Microsoft Edge [DevTools][MicrosoftEdgeDevTools].  
 
 ## <a name="record-performance"></a>Performances d’enregistrement  
 
-### <a name="record-runtime-performance"></a>Performances d’exécution d’enregistrement  
+### <a name="record-runtime-performance"></a>Enregistrer les performances d’exécution  
 
 Enregistrez les performances d’exécution lorsque vous souhaitez analyser les performances d’une page en cours d’exécution, par opposition au chargement.  
 
 1.  Accédez à la page que vous souhaitez analyser.  
 1.  Ouvrez **l’outil** Performance dans DevTools.  
-1.  Choose **Record** \( ![ Record icon ][ImageRecordIcon] \).  
+1.  Choose **Record** \( ![ Record icon ](../media/record-icon.msft.png) \).  
     
     :::image type="complex" source="../media/evaluate-performance-performance-record-highlight.msft.png" alt-text="Record" lightbox="../media/evaluate-performance-performance-record-highlight.msft.png":::
        **Record**  
@@ -57,7 +57,7 @@ Enregistrez les performances de chargement lorsque vous souhaitez analyser les p
 
 1.  Accédez à la page que vous souhaitez analyser.  
 1.  Ouvrez **le panneau Performances** de DevTools.  
-1.  Choose **Refresh page** \( Refresh Page ![ ][ImageRefreshPageIcon] \).  DevTools enregistre les mesures de performances pendant l’actualisation de la page, puis arrête automatiquement l’enregistrement quelques secondes après la fin du chargement.  
+1.  Choose **Refresh page** \( Refresh Page ![ ](../media/refresh-page-icon.msft.png) \).  DevTools enregistre les mesures de performances pendant l’actualisation de la page, puis arrête automatiquement l’enregistrement quelques secondes après la fin du chargement.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-refresh-button.msft.png" alt-text="Page Actualiser" lightbox="../media/evaluate-performance-performance-refresh-button.msft.png":::
        **Page Actualiser**  
@@ -79,9 +79,9 @@ Activer la case à cocher **Captures** d’écran pour capturer une capture d’
 
 Accédez à [Afficher une capture d’écran](#view-a-screenshot) pour apprendre à interagir avec les captures d’écran.  
 
-### <a name="force-garbage-collection-while-recording"></a>Forcer le garbage collection lors de l’enregistrement  
+### <a name="force-garbage-collection-while-recording"></a>Forcer le collecte de la garbage lors de l’enregistrement  
 
-Pendant l’enregistrement d’une page, sélectionnez Collecter la **garbage** \( Collect garbage icon \) pour forcer le ![ collecte de la ][ImageCollectGarbageIcon] garbage.  
+Pendant l’enregistrement d’une page, sélectionnez Collecter la **garbage** \( Collect garbage icon \) pour forcer le ![ collecte de la ](../media/collect-garbage-icon.msft.png) garbage.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="Collecter la garbage" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
    Collecter la garbage  
@@ -89,7 +89,7 @@ Pendant l’enregistrement d’une page, sélectionnez Collecter la **garbage** 
 
 ### <a name="show-recording-settings"></a>Afficher les paramètres d’enregistrement  
 
-Choose **Capture settings** \( ![ Capture settings ][ImageCaptureSettingsIcon] \) to expose more settings related to how DevTools captures performance recordings.  
+Choose **Capture settings** \( ![ Capture settings ](../media/capture-settings-icon.msft.png) \) to expose more settings related to how DevTools captures performance recordings.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Section Paramètres de capture" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
    Section **Paramètres de** capture  
@@ -161,7 +161,7 @@ Pour charger un enregistrement, ouvrez le menu contextuel \(clic droit\), puis c
 
 ## <a name="clear-the-previous-recording"></a>Effacer l’enregistrement précédent  
 
-Après avoir enregistré l’enregistrement, sélectionnez **Effacer l’enregistrement** \( Effacer l’icône d’enregistrement \) pour effacer cet enregistrement à ![ partir du panneau ][ImageClearRecordingIcon] **Performances.**  
+Après avoir enregistré l’enregistrement, sélectionnez **Effacer l’enregistrement** \( Effacer l’icône d’enregistrement \) pour effacer cet enregistrement à ![ partir du panneau ](../media/clear-recording-icon.msft.png) **Performances.**  
 
 :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png" alt-text="Effacer l’enregistrement" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png":::
    **Effacer l’enregistrement**  
@@ -169,14 +169,14 @@ Après avoir enregistré l’enregistrement, sélectionnez **Effacer l’enregis
 
 ## <a name="analyze-a-performance-recording"></a>Analyser un enregistrement des performances  
 
-Une fois [que](#record-runtime-performance) vous avez enregistré **** les performances d’exécution ou les performances de chargement d’enregistrement, le panneau Performances fournit un grand nombre de données pour analyser les performances de ce qui vient de se produire. [](#record-load-performance)  
+Une fois que vous avez enregistré **** [les](#record-runtime-performance) performances d’exécution ou les performances de chargement d’enregistrement, [](#record-load-performance)le panneau Performances fournit un grand nombre de données pour analyser les performances de ce qui vient de se produire.  
 
 ### <a name="select-a-portion-of-a-recording"></a>Sélectionner une partie d’un enregistrement  
 
 Faites glisser votre souris vers la gauche ou la droite dans la **vue d’ensemble** pour sélectionner une partie d’un enregistrement.  La **vue d’ensemble** est la section qui contient **les graphiques FPS,** **CPU**et **NET.**  
 
-:::image type="complex" source="../media/evaluate-performance-performance-zoom-highlighted.msft.png" alt-text="Faire glisser la souris sur la vue d’ensemble pour effectuer un zoom" lightbox="../media/evaluate-performance-performance-zoom-highlighted.msft.png":::
-   Faire glisser la souris sur la **vue d’ensemble** pour zoomer  
+:::image type="complex" source="../media/evaluate-performance-performance-zoom-highlighted.msft.png" alt-text="Faire glisser la souris sur la vue d’ensemble pour zoomer" lightbox="../media/evaluate-performance-performance-zoom-highlighted.msft.png":::
+   Faire glisser la souris sur la **vue d’ensemble** pour effectuer un zoom  
 :::image-end:::  
 
 Pour sélectionner une partie à l’aide du clavier :  
@@ -201,13 +201,13 @@ Sélectionnez `Control` + `F` \(Windows, Linux\) ou `Command` + `F` \(macOS\) **
 
 Pour naviguer dans les activités qui correspondent à votre requête :  
 
-*   Utilisez les **boutons** Précédent \( ![ Précédent ][ImagePreviousIcon] \) et **Suivant** \( ![ Suivant ][ImageNextIcon] \).  
+*   Utilisez les **boutons** Précédent \( ![ Précédent ](../media/previous-icon.msft.png) \) et **Suivant** \( ![ Suivant ](../media/next-icon.msft.png) \).  
 *   Sélectionnez `Shift` + `Enter` le précédent ou `Enter` le suivant.  
 
 Pour modifier les paramètres de requête :  
 
-*   Choose **Case sensitive** \( Case sensitive ![ ][ImageSearchCaseIcon] \) to make the query case sensitive.  
-*   Choisissez **Regex** \( ![ Regex ][ImageSearchRegexIcon] \) pour utiliser une expression régulière dans votre requête.  
+*   Choose **Case sensitive** \( Case sensitive ![ ](../media/search-case-icon.msft.png) \) to make the query case sensitive.  
+*   Choisissez **Regex** \( ![ Regex ](../media/search-regex-icon.msft.png) \) pour utiliser une expression régulière dans votre requête.  
 
 Pour masquer la zone de recherche, choisissez **Annuler.**  
 
@@ -215,7 +215,7 @@ Pour masquer la zone de recherche, choisissez **Annuler.**
 
 Utilisez la section **Main** pour afficher l’activité qui s’est produite sur le thread principal de la page.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Section Principale" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Section Main" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
    Section **Main**  
 :::image-end:::  
 
@@ -225,13 +225,13 @@ Choisissez un événement pour afficher plus d’informations à son sujet dans 
    Plus d’informations sur `anonymous` la fonction dans le panneau **Résumé**  
 :::image-end:::  
 
-DevTools représente l’activité de thread principale avec un graphique graphique.  L’axe X représente l’enregistrement au fil du temps.  L’axe Y représente la pile d’appels.  Les événements en haut provoquent les événements en dessous.  
+DevTools représente l’activité de thread principale avec un graphique graphique.  L’axe X représente l’enregistrement au fil du temps.  L’axe Y représente la pile d’appels.  Les événements en premier provoquent les événements en dessous.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-main-flame-chart.msft.png" alt-text="Graphique de graphique" lightbox="../media/evaluate-performance-performance-main-flame-chart.msft.png":::
    Graphique de graphique  
 :::image-end:::  
 
-Dans la figure précédente, un événement a `click` provoqué un événement sur la ligne `Function Call` `activitytabs.js` 53.  Vous trouverez `Function Call` ci-dessous un avis sur le fait qu’une fonction anonyme a été exécuté.  La fonction anonyme demandée `a` , qui a demandé , qui a demandé `wait` `Minor GC` .  
+Dans la figure précédente, un événement a `click` provoqué un événement sur la ligne `Function Call` `activitytabs.js` 53.  `Function Call`Ci-dessous, examinez qu’une fonction anonyme a été exécuté.  La fonction anonyme demandée `a` , qui a demandé , qui a demandé `wait` `Minor GC` .  
 
 DevTools affecte des couleurs aléatoires aux scripts.  Dans la figure précédente, les demandes de fonction d’un script sont colorées en vert clair.  Les demandes provenant d’un autre script sont colorées.  Le jaune foncé représente l’activité de script et l’événement violet représente l’activité de rendu.  Ces événements jaunes et violets plus foncés sont cohérents dans tous les enregistrements.  
 
@@ -254,7 +254,7 @@ Voici une explication **du concept** d’activités racine **** mentionné dans 
 
 Les activités racines sont celles qui entraînent le travail du navigateur.  Par exemple, lorsque vous choisissez une page web, le navigateur exécute une `Event` activité en tant qu’activité racine.  Cela `Event` peut entraîner l’exécuter, et ainsi de suite.  
 
-Dans le graphique graphique de la section **Main,** les activités racine sont en haut du graphique.  Dans les **panneaux Arborescence des** appels **et Journal des** événements, les activités racines sont les éléments de niveau supérieur.  
+Dans le graphique de graphique de la section **Main,** les activités racines sont en haut du graphique.  Dans les **panneaux Arborescence des** appels **et Journal des** événements, les activités racines sont les éléments de niveau supérieur.  
 
 Accédez au panneau [Arborescence des](#the-call-tree-panel) appels pour obtenir un exemple d’activités racine.  
 
@@ -274,11 +274,11 @@ Dans la figure précédente, le niveau **** supérieur des éléments dans la co
 
 Choisissez **Temps libre,** **Temps total**ou **Activité** pour trier le tableau par colonne.  
 
-Utilisez la **zone de texte Filtrer** pour filtrer les événements par nom d’activité.  
+Utilisez la zone de texte **Filtrer** pour filtrer les événements par nom d’activité.  
 
 Par défaut, le menu **De** regroupement est définie sur **Aucun regroupement.**  Utilisez le menu **Regroupement pour** trier le tableau d’activité en fonction de différents critères.  
 
-Choose **Show Heaviest Stack** \( Show ![ Heaviest Stack ][ImageShowHeaviestStackIcon] \) to reveal another table to the right of the **Activity** table.  Choisissez une activité pour remplir la table **Stack la plus** lourde.  Le **tableau Stack le plus lourd** affiche les enfants de l’activité sélectionnée qui ont mis le plus de temps à s’exécuter.  
+Choose **Show Heaviest Stack** \( Show ![ Heaviest Stack ](../media/show-heaviest-stack-icon.msft.png) \) to reveal another table to the right of the **Activity** table.  Choisissez une activité pour remplir la table **Stack la plus** lourde.  Le **tableau Stack le plus lourd** affiche les enfants de l’activité sélectionnée qui ont mis le plus de temps à s’exécuter.  
 
 #### <a name="the-bottom-up-panel"></a>Panneau de Bottom-Up  
 
@@ -303,7 +303,7 @@ Utilisez le **panneau Journal des** événements pour afficher les activités da
 Le **panneau Journal des** événements affiche uniquement les activités pendant la partie sélectionnée de l’enregistrement.  Accédez [à Sélectionner une partie d’un enregistrement](#select-a-portion-of-a-recording) pour découvrir comment sélectionner des parties.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-event-log.msft.png" alt-text="Panneau Journal des événements" lightbox="../media/evaluate-performance-performance-event-log.msft.png":::
-   Panneau **Journal des** événements  
+   Panneau **Journal des événements**  
 :::image-end:::  
 
 La **colonne Heure** de début représente le point auquel cette activité a démarré, par rapport au début de l’enregistrement.  Par exemple, l’heure de début de l’élément sélectionné dans la figure précédente signifie que l’activité a démarré 175,7 ms après le démarrage de `175.7 ms` l’enregistrement.  
@@ -360,7 +360,7 @@ DevTools offre de nombreuses façons d’analyser les images par seconde :
 
 Le **graphique FPS** fournit une vue d’ensemble de la fréquence d’images pendant toute la durée d’un enregistrement.  En règle générale, plus la barre verte est élevée, plus la fréquence d’images est élevée.  
 
-Une barre rouge au-dessus **du graphique FPS** est un avertissement signalant que la fréquence d’images a été si basse qu’elle a probablement nuire à l’expérience de l’utilisateur.  
+Une barre rouge au-dessus **du graphique FPS** est un avertissement signalant que la fréquence d’images a été si faible qu’elle a probablement nuire à l’expérience de l’utilisateur.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-fps-highlight.msft.png" alt-text="Graphique FPS" lightbox="../media/evaluate-performance-performance-fps-highlight.msft.png":::
    Graphique **FPS**  
@@ -464,7 +464,7 @@ Vous pouvez également afficher des captures d’écran en choisissant un cadre 
    Afficher une capture d’écran dans le **panneau Résumé**  
 :::image-end:::  
 
-Choisissez la miniature du panneau Résumé **pour** effectuer un zoom avant sur la capture d’écran.  
+Choisissez la miniature du **** panneau Résumé pour effectuer un zoom avant sur la capture d’écran.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-summary-preview-select.msft.png" alt-text="Zoom sur une capture d’écran à partir du panneau Résumé" lightbox="../media/evaluate-performance-performance-summary-preview-select.msft.png":::
    Zoom sur une capture d’écran à partir du **panneau Résumé**  
@@ -483,15 +483,15 @@ Pour afficher les informations sur les couches avancées sur un cadre :
     
 Pointez sur un calque pour le surligner dans le diagramme.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png" alt-text="Surligner un calque" lightbox="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png":::
-   Surligner un calque  
+:::image type="complex" source="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png" alt-text="Mettre en surbrill niveau un calque" lightbox="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png":::
+   Mettre en surbrill niveau un calque  
 :::image-end:::  
 
 Pour déplacer le diagramme :  
 
-*   Choisissez **Pan Mode** \( Pan Mode ![ ][ImagePanModeIcon] \) pour vous déplacer le long des axes X et Y.  
-*   Choisissez **Le mode Rotation** \( Mode rotation ![ ][ImageRotateModeIcon] \) pour faire pivoter le long de l’axe Z.  
-*   Choisissez **Réinitialiser la transformation** \( ![ Réinitialiser la transformation \) pour rétablir la position ][ImageResetTransformIcon] d’origine du diagramme.  
+*   Choisissez **Pan Mode** \( Pan Mode ![ ](../media/pan-mode-icon.msft.png) \) pour vous déplacer le long des axes X et Y.  
+*   Choisissez **Le mode Rotation** \( Mode rotation ![ ](../media/rotate-mode-icon.msft.png) \) pour faire pivoter le long de l’axe Z.  
+*   Choisissez **Réinitialiser la transformation** \( ![ Réinitialiser la transformation \) pour rétablir la position ](../media/reset-transform-icon.msft.png) d’origine du diagramme.  
     
 ### <a name="view-paint-profiler"></a>Afficher le profileur de pinceau  
 
@@ -537,8 +537,8 @@ Pour activer le clignotement paint, effectuer les actions suivantes.
 1.  Ouvrez **l’outil de** rendu.  Accédez à [Analyser les performances de rendu à l’aide de l’outil de rendu.](#analyze-rendering-performance-with-the-rendering-tool)  
 1.  Activer la case **à cocher Peindre le clignotement.**  
     
-    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png" alt-text="Flashing de couleur" lightbox="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png":::
-       **Flashing de couleur**  
+    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png" alt-text="Clignotement de couleur" lightbox="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png":::
+       **Clignotement de couleur**  
     :::image-end:::  
     
 ### <a name="view-an-overlay-of-layers-with-layer-borders"></a>Afficher une superposition de couches avec des bordures de calque  
@@ -559,7 +559,7 @@ Accédez aux commentaires dans [debug_colors.cc][ChromiumDebugColors] pour obten
 ### <a name="find-scroll-performance-issues-in-realtime"></a>Rechercher les problèmes de performances de défilement en temps réel  
 
 Utilisez les problèmes de performances de défilement pour identifier les éléments de la page qui ont des écouteurs d’événements liés au défilement qui peuvent nuire aux performances de la page.  
-DevTools décrit les éléments potentiellement problématiques dans les sarcelles.  
+DevTools décrit les éléments potentiellement problématiques dans le teal.  
 
 Pour afficher les problèmes de performances de défilement, effectuer les actions suivantes. 
 
@@ -574,26 +574,10 @@ Pour afficher les problèmes de performances de défilement, effectuer les actio
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageCaptureSettingsIcon]: ../media/capture-settings-icon.msft.png  
-[ImageClearRecordingIcon]: ../media/clear-recording-icon.msft.png  
-[ImageCollectGarbageIcon]: ../media/collect-garbage-icon.msft.png  
-[ImageNextIcon]: ../media/next-icon.msft.png  
-[ImagePanModeIcon]: ../media/pan-mode-icon.msft.png  
-[ImagePreviousIcon]: ../media/previous-icon.msft.png  
-[ImageRecordIcon]: ../media/record-icon.msft.png
-[ImageRefreshPageIcon]: ../media/refresh-page-icon.msft.png  
-[ImageResetTransformIcon]: ../media/reset-transform-icon.msft.png  
-[ImageRotateModeIcon]: ../media/rotate-mode-icon.msft.png  
-[ImageSearchCaseIcon]: ../media/search-case-icon.msft.png  
-[ImageSearchRegexIcon]: ../media/search-regex-icon.msft.png  
-[ImageShowHeaviestStackIcon]: ../media/show-heaviest-stack-icon.msft.png  
-
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
-[DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Ouvrez le menu Commande - Exécutez des commandes avec le menu de commandes Microsoft Edge DevTools | Documents Microsoft"  
+[DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Ouvrez le menu Commande - Exécutez les commandes avec le menu de commandes Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsEvaluatePerformanceGettingStarted]: ./index.md "Commencer à analyser les performances d’exécution | Documents Microsoft"  
 
 [ActivityTabsDemo]: https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html "Démonstration des onglets Activité | glitch"  

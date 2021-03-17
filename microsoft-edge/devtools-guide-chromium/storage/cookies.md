@@ -3,16 +3,16 @@ description: Découvrez comment afficher, modifier et supprimer les cookies HTTP
 title: Afficher, modifier et supprimer des cookies avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 9c040aaa30142c2759c67b2c034d3a9271ca0a64
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c208ca628fe91ed5922bc36566be2b9bdd20ec0b
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397747"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439681"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,7 +35,7 @@ ms.locfileid: "11397747"
 ## <a name="open-the-cookies-pane"></a>Ouvrir le volet Cookies  
 
 1.  [Ouvrez DevTools][DevToolsOpen].  
-1.  Choisissez **l’onglet Application** pour ouvrir le panneau **Application.**  Le **volet** Manifeste doit s’ouvrir.  
+1.  Choisissez **l’onglet Application** pour ouvrir le **panneau Application.**  Le **volet** Manifeste doit s’ouvrir.  
     
     :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-manifest-empty.msft.png":::
        Figure 1 : Volet manifeste  
@@ -72,7 +72,7 @@ Utilisez la **zone de** texte Filtrer pour filtrer les cookies par **nom ou** **
 
 ## <a name="edit-a-cookie"></a>Modifier un cookie  
 
-Les **champs Name**, **Value**, **Domain**, **Path**et **Expires /Max-Age** sont modifiables.  
+Les **champs Nom,** **Valeur,** **Domaine,** Chemin d’accès et **Expires/Max-Age** sont modifiables. ****  
 Double-cliquez sur un champ pour le modifier.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="Définition du nom d’un cookie sur DEVTOOLS !" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
@@ -81,13 +81,13 @@ Double-cliquez sur un champ pour le modifier.
 
 ## <a name="delete-cookies"></a>Supprimer les cookies  
 
-Choisissez un cookie et choisissez **Supprimer sélectionné** \( Supprimer sélectionné ![ ][ImageDeleteIcon] \) pour supprimer le cookie spécifique.  
+Choisissez un cookie et choisissez **Supprimer sélectionné** \( Supprimer sélectionné ![ ](../media/delete-icon.msft.png) \) pour supprimer le cookie spécifique.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Suppression d’un cookie spécifique" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    Figure 5 : Suppression d’un cookie spécifique  
 :::image-end:::  
 
-Choisissez **Effacer tout** \( Effacer tout ![ ][ImageClearIcon] \) pour supprimer tous les cookies.  
+Choisissez **Effacer tout** \( Effacer tout ![ ](../media/clear-icon.msft.png) \) pour supprimer tous les cookies.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Effacement de tous les cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    Figure 6 : Effacement de tous les cookies  
@@ -96,11 +96,6 @@ Choisissez **Effacer tout** \( Effacer tout ![ ][ImageClearIcon] \) pour supprim
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 
@@ -111,7 +106,7 @@ Choisissez **Effacer tout** \( Effacer tout ![ ][ImageClearIcon] \) pour supprim
 
 [MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "Cookies HTTP | MDN"  
 [MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "Cookies HTTP : cookies permanents | MDN"  
-[MDNHTTPCookiesSamesite]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies "Cookies HTTP : les cookies SameSite | MDN"  
+[MDNHTTPCookiesSamesite]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies "Cookies HTTP : cookies SameSite | MDN"  
 [MDNHTTPCookiesScope]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Scope_of_cookies "Cookies HTTP : étendue des cookies | MDN"  
 [MDNHTTPCookiesSecure]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies "Cookies HTTP : les cookies sécurisés et HttpOnly | MDN"  
 [MDNHTTPCookiesSession]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Session_cookies "Cookies HTTP : cookies de session | MDN"  

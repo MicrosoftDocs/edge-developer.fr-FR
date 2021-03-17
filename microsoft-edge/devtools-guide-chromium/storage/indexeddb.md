@@ -3,16 +3,16 @@ description: Découvrez comment afficher et modifier les données IndexedDB avec
 title: Afficher et modifier les données IndexedDB avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 6062cb6b574b2295441bc98616f600cbf00cee8e
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 719348067b1343ca3d7781737fa6441f92ad7ba1
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398977"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439709"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -46,12 +46,12 @@ Ce guide vous montre comment utiliser [Microsoft Edge DevTools][MicrosoftEdgeDev
        Menu **IndexedDB**  
     :::image-end:::  
     
-    *   \( Icône de base de données \) représente une base de données, où est le nom de la base de données et l’origine qui ![ accède à la base de ][ImageDatabaseIcon] `notes - https://mdn.github.io` `notes` `https://mdn.github.io` données.  
-    *   \( ![ Icône du magasin d’objets ][ImageObjectStoreIcon] \) est un magasin `notes` d’objets.  
+    *   \( Icône de base de données \) représente une base de données, où est le nom de la base de données et l’origine qui ![ accède à la base de ](../media/database-icon.msft.png) `notes - https://mdn.github.io` `notes` `https://mdn.github.io` données.  
+    *   \( ![ Icône du magasin d’objets ](../media/object-store-icon.msft.png) \) est un magasin `notes` d’objets.  
     *   **title** and **body** are [indexes][MDNUsingIndexedDBUsingIndex].  
     
     > [!NOTE]
-    > **Limitation connue**  Les bases de données tierces ne sont pas visibles.  Par exemple, si vous utilisez une fonction pour incorporer une valeur sur votre page et que votre réseau de distribution de données utilise IndexedDB, les données IndexedDB de votre réseau de distribution ne sont pas `<iframe>` visibles.  Accédez au [problème #943770][ChromiumIssue943770].  
+    > **Limitation connue**  Les bases de données tierces ne sont pas visibles.  Par exemple, si vous utilisez une fonction pour incorporer une nouvelle page et que votre réseau de distribution utilise IndexedDB, les données IndexedDB de votre réseau de distribution ne sont pas `<iframe>` visibles.  Accédez au [problème #943770][ChromiumIssue943770].  
     
 1.  Choisissez une base de données pour passer en revue l’origine et le numéro de version.  
     
@@ -85,7 +85,7 @@ Ce guide vous montre comment utiliser [Microsoft Edge DevTools][MicrosoftEdgeDev
     
 ## <a name="refresh-indexeddb-data"></a>Actualiser les données IndexedDB  
 
-Les valeurs IndexedDB dans **l’outil Application** ne sont pas mises à jour en temps réel.  Choisissez **Actualiser** \( Actualiser \) lors de l’affichage d’un magasin d’objets pour actualiser les données, ou affichez une base de données et sélectionnez Actualiser la base de données ![ pour actualiser toutes les ][ImageRefreshIcon] données. ****  
+Les valeurs IndexedDB dans **l’outil Application** ne sont pas mises à jour en temps réel.  Choisissez **Actualiser** \( Actualiser \) lors de l’affichage d’un magasin d’objets pour actualiser les données, ou affichez une base de données et sélectionnez Actualiser la base de données ![ pour actualiser toutes les ](../media/reload-icon.msft.png) données. ****  
 
 :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="Afficher une base de données" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    Afficher une base de données  
@@ -114,7 +114,7 @@ Les clés et valeurs IndexedDB ne sont pas modifiables à partir de **l’outil 
        Choisir une paire clé-valeur pour la supprimer  
     :::image-end:::  
     
-1.  Sélectionnez `Delete` la clé ou choisissez Supprimer **sélectionné** \( Supprimer ![ sélectionné ][ImageDeleteIcon] \).  
+1.  Sélectionnez `Delete` la clé ou choisissez Supprimer **sélectionné** \( Supprimer ![ sélectionné ](../media/delete-icon.msft.png) \).  
     
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="Apparence du magasin d’objets après la suppression de la paire clé-valeur" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
        Apparence du magasin d’objets après la suppression de la paire clé-valeur  
@@ -128,7 +128,7 @@ Les clés et valeurs IndexedDB ne sont pas modifiables à partir de **l’outil 
        Afficher un magasin d’objets  
     :::image-end:::  
     
-1.  Choose **Clear object store** \( Clear object store ![ ][ImageClearIcon] \).  
+1.  Choose **Clear object store** \( Clear object store ![ ](../media/clear-icon.msft.png) \).  
     
 ### <a name="delete-an-indexeddb-database"></a>Supprimer une base de données IndexedDB  
 
@@ -145,21 +145,13 @@ Les clés et valeurs IndexedDB ne sont pas modifiables à partir de **l’outil 
 1.  Assurez-vous que la case à cocher **IndexedDB** est activée.  
 1.  Choisissez **Effacer les données de site.**  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="Volet de stockage Effacer" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
-       Volet **de stockage** Effacer  
+    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="Volet effacer le stockage" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
+       Volet **effacer le** stockage  
     :::image-end:::  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDatabaseIcon]: ../media/database-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
-[ImageObjectStoreIcon]: ../media/object-store-icon.msft.png  
-[ImageRefreshIcon]: ../media/reload-icon.msft.png  
 
 <!-- links -->  
 
@@ -170,7 +162,7 @@ Les clés et valeurs IndexedDB ne sont pas modifiables à partir de **l’outil 
 
 [MDNBasicConceptsKeyGenerator]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_keygenerator "Générateur de clés : concepts de base | MDN"  
 [MDNIndexedDBAPI]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "IndexedDB API | MDN"  
-[MDNUsingIndexedDB]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Utilisation de la base de données IndexedDB | MDN"  
+[MDNUsingIndexedDB]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Utilisation d’IndexedDB | MDN"  
 [MDNUsingIndexedDBUsingIndex]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index "Utilisation d’un index : utilisation de la base de données IndexedDB | MDN"  
 
 > [!NOTE]

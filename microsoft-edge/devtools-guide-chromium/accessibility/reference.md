@@ -3,16 +3,16 @@ description: Référence complète des fonctionnalités d’accessibilité dans 
 title: Référence d’accessibilité
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: e3fed1c4e53c69b7a6837f71c270c0bf2f65b7e2
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: fce6dec3883cbcc758780a9fedb4c0fb2a8d0a4c
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398335"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439253"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -37,7 +37,7 @@ Cette page est une référence complète des fonctionnalités d’accessibilité
     
 L’objectif de cette référence est de vous aider à découvrir tous les outils disponibles dans DevTools qui vous aident à examiner l’accessibilité d’une page.  
 
-Si vous recherchez de l’aide sur la navigation de DevTools avec une technologie d’assistance telle qu’un lecteur d’écran, accédez à [Navigation dans Microsoft Edge DevTools Avec][DevtoolsAccessibilityNavigation]technologie d’assistance.  
+Si vous recherchez de l’aide sur la navigation de DevTools avec une technologie d’assistance telle qu’un lecteur d’écran, accédez à Navigation dans [Microsoft Edge DevTools avec][DevtoolsAccessibilityNavigation]technologie d’assistance.  
 
 ## <a name="overview-of-accessibility-features-in-microsoft-edge-devtools"></a>Vue d’ensemble des fonctionnalités d’accessibilité dans Microsoft Edge DevTools  
 
@@ -48,7 +48,7 @@ Lorsque vous déterminez si une page est accessible, vous devez avoir 2 question
 1.  Êtes-vous en mesure de naviguer dans la page à l’aide d’un clavier ou [d’un lecteur d’écran][MDNScreenReader]?  
 1.  Les éléments de la page sont-ils correctement marqués pour les lecteurs d’écran ?  
     
-En règle générale, DevTools doit vous aider à résoudre les erreurs liées aux #2, car ces erreurs sont faciles à détecter de manière automatisée.  La question #1 est tout aussi importante, mais malheureusement, DevTools ne vous y aide pas.  La seule façon de rechercher les erreurs liées aux #1 question consiste à essayer d’utiliser une page avec un clavier ou un lecteur d’écran vous-même.  <!--To learn more, navigate to [How To Do An Accessibility Review][AccessibilityReview].  -->  
+En règle générale, DevTools doit vous aider à résoudre les erreurs liées aux #2, car ces erreurs sont faciles à détecter de manière automatisée.  La question #1 est tout aussi importante, mais malheureusement, DevTools ne vous aide pas.  La seule façon de rechercher les erreurs liées aux #1 question consiste à essayer d’utiliser une page avec un clavier ou un lecteur d’écran vous-même.  <!--To learn more, navigate to [How To Do An Accessibility Review][AccessibilityReview].  -->  
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
@@ -72,7 +72,7 @@ Pour auditer une page :
     :::image-end:::  
     
     > [!NOTE]
-    > Les captures d’écran de cette section ont été prises avec la version 79 de Microsoft Edge.  Vous pouvez vérifier la version à partir de quelle version vous `edge://version` exécutez.  L’interface utilisateur de l’outil **Audits** est différente dans les versions antérieures de Microsoft Edge, mais le flux de travail général est le même.  
+    > Les captures d’écran de cette section ont été prises avec Microsoft Edge version 79.  Vous pouvez vérifier la version à partir de quelle version vous `edge://version` exécutez.  L’interface utilisateur de l’outil **Audits** est différente dans les versions antérieures de Microsoft Edge, mais le flux de travail général est le même.  
     
 1.  Pour **l’appareil,** **choisissez Mobile** si vous souhaitez simuler un appareil mobile.  Cette option modifie la chaîne de votre agent utilisateur et resize laport d’affichage.  Si la version mobile de la page s’affiche différemment de la version de bureau, cette option peut avoir un impact significatif sur les résultats de votre audit.  
 1.  Dans la section **Audits,** assurez-vous que **l’accessibilité** est activée.  Désactivez les autres catégories si vous souhaitez les exclure de votre rapport.  Laissez-les activées si vous souhaitez découvrir d’autres façons d’améliorer la qualité de votre page.  
@@ -114,7 +114,7 @@ Pour ouvrir le panneau **Accessibilité** :
 
 1.  Choisissez **l’outil Éléments.**  
 1.  Dans **l’arborescence DOM,** sélectionnez l’élément que vous souhaitez inspecter.  
-1.  Choisissez le **panneau Accessibilité.**  Ce panneau peut être masqué derrière le bouton **Autres onglets** \( ![ Autres onglets ][ImageMoreTabsIcon] \).  
+1.  Choisissez le **panneau Accessibilité.**  Ce panneau peut être masqué derrière le bouton **Autres onglets** \( ![ Autres onglets ](../media/more-tabs-icon.msft.png) \).  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspecter l’élément h1 de la page d’accueil DevTools dans le panneau Accessibilité" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Inspecter `h1` l’élément de la page d’accueil DevTools dans le **panneau Accessibilité**  
@@ -147,7 +147,7 @@ Afficher les attributs ARIA d’un élément dans le [panneau Accessibilité.](#
 
 Certaines propriétés d’accessibilité sont calculées dynamiquement par le navigateur.  Ces propriétés sont affichées dans la section **Propriétés** calculées du panneau **Accessibilité.**  
 
-Afficher les propriétés d’accessibilité calculées d’un élément dans le panneau [Accessibilité.](#the-accessibility-panel)  
+Afficher les propriétés d’accessibilité calculées d’un élément dans le [panneau Accessibilité.](#the-accessibility-panel)  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="Section Propriétés calculées du panneau Accessibilité" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
    Section **Propriétés calculées** du panneau **Accessibilité**  
@@ -189,10 +189,6 @@ Le s picker de couleur vous permet de vérifier que votre texte répond aux nive
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageMoreTabsIcon]: ../media/more-tabs-icon.msft.png  
 
 <!-- links -->  
 

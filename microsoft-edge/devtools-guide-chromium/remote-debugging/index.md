@@ -1,18 +1,18 @@
 ---
 description: Débogage à distance du contenu en direct sur un appareil Android à partir d’un ordinateur Windows ou macOS.
-title: Mise en place du débogage à distance des appareils Android
+title: Prise en main du débogage à distance des appareils Android
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 61fad793ca03dbef68a5f769dbfd25e780fd9930
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2beab5bf6d4b58dc93d883f5114e168213053e84
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398258"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439565"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,13 +28,13 @@ ms.locfileid: "11398258"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="get-started-with-remote-debugging-android-devices"></a>Mise en place du débogage à distance des appareils Android  
+# <a name="get-started-with-remote-debugging-android-devices"></a>Prise en main du débogage à distance des appareils Android  
 
 Déboguer à distance du contenu en direct sur un appareil Android à partir de votre ordinateur Windows ou macOS.  La page de didacticiel suivante vous apprend à effectuer les actions suivantes.  
 
 *   Configurer votre appareil Android pour le débogage à distance et le découvrir à partir de votre ordinateur de développement.  
 *   Inspectez et déboguer le contenu en direct sur votre appareil Android à partir de votre ordinateur de développement.  
-*   Contenu de la capture vidéo de votre appareil Android sur une instance DevTools sur votre ordinateur de développement.  
+*   Capture vidéo du contenu de votre appareil Android sur une instance DevTools sur votre ordinateur de développement.  
 
 <!--  
 :::image type="complex" source="../media/remote-debugging--remote-debugging.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging--remote-debugging.msft.png":::
@@ -78,7 +78,7 @@ Le flux de travail ci-dessous fonctionne pour la plupart des utilisateurs.  Pour
 Utilisez les conseils suivants pour vous aider à résoudre les problèmes de paramètres corrects pour votre matériel.  
 
 *   Si vous utilisez un concentrateur USB, essayez de connecter votre appareil Android directement à votre ordinateur de développement.  
-*   Essayez de débrancher le câble USB entre votre appareil Android et votre ordinateur de développement, puis de le brancher à nouveau.  Terminez la tâche pendant que vos écrans d’ordinateur Android et de développement sont déverrouillés.  
+*   Essayez de débrancher le câble USB entre votre appareil Android et votre ordinateur de développement, puis de le brancher à nouveau.  Terminez la tâche pendant que vos écrans d’ordinateur android et de développement sont déverrouillés.  
 *   Assurez-vous que votre câble USB fonctionne.  Vous devriez être en mesure d’inspecter les fichiers sur votre appareil Android à partir de votre ordinateur de développement.  
 
 Utilisez les conseils suivants pour vérifier que votre logiciel est correctement installé.  
@@ -114,7 +114,7 @@ Si vous trouvez une solution qui n’est pas mentionnée sur cette page ou dans 
 <!-- The version of Microsoft Edge running on your Android device determines the version of DevTools that opens on your development machine.  
     So, if your Android device is running a very old version of Microsoft Edge, the DevTools instance may look very different than what you are used to.   -->
 
-### <a name="more-actions-focus-refresh-or-close-a-tab"></a>Autres actions : mise au point, actualisation ou fermeture d’un onglet  
+### <a name="more-actions-focus-refresh-or-close-a-tab"></a>Autres actions : mettre au point, actualiser ou fermer un onglet  
 
 Choisissez **l’onglet Focus,** **rechargez**ou fermez-le à côté de l’onglet que vous souhaitez mettre au point, actualiser ou fermer. ****  
 
@@ -126,14 +126,14 @@ Choisissez **l’onglet Focus,** **rechargez**ou fermez-le à côté de l’ongl
 
 Accédez à **l’outil Elements** de votre instance DevTools et pointez sur un élément pour le mettre en surbrillation dans la vue de votre appareil Android.  
 
-Vous pouvez également sélectionner un élément sur l’écran de votre appareil Android pour le sélectionner dans **l’outil Éléments.**  Sélectionnez **l’icône** Select Element \( Select Element \) sur votre ![ instance DevTools, puis sélectionnez l’élément sur l’écran de ][ImageSelectElementIcon] votre appareil Android.  
+Vous pouvez également sélectionner un élément sur l’écran de votre appareil Android pour le sélectionner dans **l’outil Éléments.**  Sélectionnez **l’icône** Select Element \( Select Element \) sur votre ![ instance DevTools, puis sélectionnez l’élément sur l’écran de ](../media/select-element-icon.msft.png) votre appareil Android.  
 
 > [!NOTE]
 > **Select Element** est désactivé après la première sélection. Vous devez donc le réactiver chaque fois que vous souhaitez utiliser la fonctionnalité.  
 
 ### <a name="screencast-your-android-screen-to-your-development-machine"></a>Capture d’écran de votre écran Android sur votre ordinateur de développement  
 
-Choisissez **l’icône Deggle Screencast** \( Toggle Screencast \) pour afficher le contenu de votre appareil Android dans votre ![ instance ][ImageToggleScreencastIcon] DevTools.  
+Choisissez **l’icône Deggle Screencast** \( Toggle Screencast \) pour afficher le contenu de votre appareil Android dans votre ![ instance ](../media/toggle-screencast-icon.msft.png) DevTools.  
 
 Vous pouvez interagir avec la capture vidéo des manières suivantes.  
 
@@ -152,11 +152,6 @@ Vous pouvez interagir avec la capture vidéo des manières suivantes.
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageSelectElementIcon]: /microsoft-edge/devtools-guide-chromium/media/select-element-icon.msft.png  
-[ImageToggleScreencastIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-screencast-icon.msft.png  
 
 <!-- links -->  
 

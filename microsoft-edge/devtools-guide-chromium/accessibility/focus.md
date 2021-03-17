@@ -3,16 +3,16 @@ description: Ouvrez la console, créez une expression dynamique et définissez l
 title: Effectuer le suivi de l’élément actif
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 3f3e59c4ee6f10b8e162f30efbff337ca2beec8d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2c2040c690441fb33c802cf454dc7a1e3f33c494
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398314"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439169"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,7 +35,7 @@ Supposons que vous testiez l’accessibilité de la navigation au clavier d’un
 Effectuer les actions suivantes pour suivre l’élément focus dans DevTools.  
 
 1.  Ouvrez la **console.**  
-1.  Choose **Create Live Expression** \( Create Live Expression ![ ][ImageCreateIcon] \).  
+1.  Choose **Create Live Expression** \( Create Live Expression ![ ](../media/create-live-expression-icon.msft.png) \).  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Créer une expression live" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        Créer une expression live  
@@ -55,10 +55,6 @@ La valeur affichée `document.activeElement` ci-dessous est le résultat de l’
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCreateIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 

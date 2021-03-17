@@ -3,16 +3,16 @@ description: Découvrez comment évaluer les performances d’exécution dans Mi
 title: Commencer à analyser les performances d’exécution
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 074c112b99abb4689cac2274338f2276bc46b4ae
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 439d6d4331550b7fc92bfc5fef4c3fc88df38872
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398720"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439611"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -65,8 +65,8 @@ Dans le didacticiel suivant, vous ouvrez DevTools sur une page en direct et util
 Les appareils mobiles ont beaucoup moins de puissance processeur que les ordinateurs de bureau et les ordinateurs portables.  Chaque fois que vous profilez une page, utilisez la limitation du processeur pour simuler le fonctionnement de votre page sur les appareils mobiles.  
 
 1.  Dans DevTools, choisissez **l’outil Performance.**  
-1.  Assurez-vous que la case **à cocher Captures** d’écran est activée.  
-1.  Choose **Capture Settings** \(![ Capture Settings][ImageCaptureSettingsIcon]\).  DevTools révèle les paramètres liés à la façon dont il capture les mesures de performances.  
+1.  Assurez-vous que vous choisissez la case à cocher en regard des **captures d’écran.**  
+1.  Choose **Capture Settings** \( ![ Capture Settings ](../media/capture-settings-icon.msft.png) \).  DevTools révèle les paramètres liés à la façon dont il capture les mesures de performances.  
 1.  Pour **l’UC,** choisissez **un ralentissement 4x.**  DevTools permet de limiter votre processeur de sorte qu’il soit 4 fois plus lent que d’habitude.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="Limitation du processeur" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
@@ -91,9 +91,9 @@ Il est difficile de créer une démonstration des performances d’exécution qu
     
 ### <a name="record-runtime-performance"></a>Enregistrer les performances d’exécution  
 
-Lorsque vous avez publié la version optimisée de la page, les icônes bleues se déplacent plus rapidement.  Pourquoi?  Les deux versions sont supposées déplacer les icônes de la même quantité d’espace dans la même durée.  Prenez un enregistrement dans le panneau Performance pour découvrir comment détecter le goulot d’étranglement des performances dans la version non optimisée.  
+Lorsque vous avez publié la version optimisée de la page, les icônes bleues se déplacent plus rapidement.  Pourquoi?  Les deux versions sont supposées déplacer les icônes de la même quantité d’espace dans la même durée.  Prenez un enregistrement dans le panneau Performances pour découvrir comment détecter le goulot d’étranglement des performances dans la version non optimisée.  
 
-1.  Dans DevTools, choisissez **Record** \(![ Record][ImageRecordIcon]\).  DevTools capture les mesures de performances au cours de l’exécution de la page.  
+1.  Dans DevTools, choisissez **Record** \( ![ Record ](../media/record-icon.msft.png) \).  DevTools capture les mesures de performances au cours de l’exécution de la page.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="Profiler la page" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
        Profiler la page  
@@ -114,7 +114,7 @@ Après avoir enregistré les performances de la page, mesurez la qualité des pe
 
 ### <a name="analyze-frames-per-second"></a>Analyser des images par seconde  
 
-La mesure principale pour mesurer les performances d’une animation est une image par seconde \(FPS\).  Les utilisateurs sont satisfaits lorsque les animations s’exécutent à 60 FPS.  
+La mesure principale pour mesurer les performances d’une animation est l’image par seconde \(FPS\).  Les utilisateurs sont satisfaits lorsque les animations s’exécutent à 60 FPS.  
 
 1.  Examinez **le graphique FPS.**  Chaque fois qu’une barre rouge est affichée au-dessus de **FPS,** cela signifie que la vitesse d’images est si basse qu’elle nuit probablement à l’expérience utilisateur.  En règle générale, plus la barre verte est élevée, plus le FPS est élevé.  
     
@@ -125,7 +125,7 @@ La mesure principale pour mesurer les performances d’une animation est une ima
 1.  Sous le **graphique FPS,** le **graphique UC** s’affiche.  Les couleurs du **graphique UC** correspondent **** aux couleurs du panneau Résumé, en bas du panneau Performances.  Le fait que le **graphique de l’UC** soit plein de couleurs signifie que l’UC a été maximale pendant l’enregistrement.  Chaque fois que l’UC a été maximale pendant de longues périodes, il s’agit d’un indicateur qui vous permet de trouver des moyens de faire moins de travail.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="Graphique de l’UC et panneau De synthèse" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
-       Graphique **de l’UC** **et panneau De** synthèse  
+       Graphique **de l’UC** et **panneau De** synthèse  
     :::image-end:::  
     
 1.  Pointez sur **les graphiques FPS,** **CPU** **ou NET.**  DevTools affiche une capture d’écran de la page à ce stade.  Déplacez votre souris vers la gauche et la droite pour relire l’enregistrement.  L’action est référencé en tant que nettoyage et est utile pour analyser manuellement la progression des animations.  
@@ -134,7 +134,7 @@ La mesure principale pour mesurer les performances d’une animation est une ima
        Afficher une capture d’écran de la page autour de la marque de 2 500 ms de l’enregistrement  
     :::image-end:::  
     
-1.  Dans la section **Cadres,** pointez sur l’un des carrés verts.  DevTools vous montre le FPS pour ce cadre particulier.  Chaque image est probablement bien en dessous de la cible de 60 FPS.  
+1.  Dans la section **Cadres,** pointez sur l’un des carrés verts.  DevTools vous montre le FPS pour cette image particulière.  Chaque image est probablement bien en dessous de la cible de 60 FPS.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-frame-hover.msft.png" alt-text="Pointer sur un cadre" lightbox="../media/evaluate-performance-performance-frame-hover.msft.png":::
        Pointer sur un cadre  
@@ -148,7 +148,7 @@ Un autre outil pratique est la jauge FPS, qui fournit des estimations en temps r
 
 1.  Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le **menu Commande.**  
 1.  Commencez à taper `Rendering` dans le menu Commande **et** choisissez Afficher **le rendu.**  
-1.  Dans **l’outil de** rendu, activez **la jauge FPS.**  Une nouvelle superposition apparaît dans le haut à droite de votre vue.  
+1.  Dans **l’outil de** rendu, allumez **la jauge FPS.**  Une nouvelle superposition apparaît dans le haut à droite de votre vue.  
     
     :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="Indicateur FPS" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
        Indicateur **FPS**  
@@ -168,11 +168,11 @@ Une fois que vous avez mesuré et vérifié que l’animation ne s’exécute pa
     
 1.  Développez **la** section Main.  DevTools vous présente un graphique d’activité sur le thread principal, au fil du temps.  L’axe X représente l’enregistrement, au fil du temps.  Chaque barre représente un événement.  Une barre plus large signifie que l’événement a pris plus de temps.  L’axe Y représente la pile d’appels.  Lorsque les événements sont empilés les uns sur les autres, cela signifie que les événements supérieurs ont provoqué les événements inférieurs.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-main.msft.png" alt-text="Section Principale" lightbox="../media/evaluate-performance-performance-main.msft.png":::
-       Section **Principale**  
+    :::image type="complex" source="../media/evaluate-performance-performance-main.msft.png" alt-text="Section Main" lightbox="../media/evaluate-performance-performance-main.msft.png":::
+       Section **Main**  
     :::image-end:::  
     
-1.  Il y a beaucoup de données dans l’enregistrement.  Pour effectuer un zoom sur un seul événement ; choisissez, maintenez votre curseur sur **** la vue d’ensemble, qui est la section qui inclut les graphiques **FPS,** **CPU**et **NET.**  La section **Principale** et **le volet Résumé** affichent uniquement les informations de la partie sélectionnée de l’enregistrement.  
+1.  Il y a beaucoup de données dans l’enregistrement.  Pour effectuer un zoom sur un seul événement ; choisissez, maintenez votre curseur sur **** la vue d’ensemble, qui est la section qui inclut les graphiques **FPS,** **CPU**et **NET.**  La section **Principale** et **le panneau Résumé** affichent uniquement les informations de la partie sélectionnée de l’enregistrement.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Zoom sur un événement" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
        Zoom sur un événement  
@@ -184,9 +184,9 @@ Une fois que vous avez mesuré et vérifié que l’animation ne s’exécute pa
     1.  Focus sur le triangle rouge dans le haut à droite de l’événement de **tir du cadre d’animation.**  Chaque fois qu’un triangle rouge est affiché, il s’agit d’un avertissement signalant qu’il peut y avoir un problème lié à l’événement.  
     
     > [!NOTE]
-    > **L’événement Animation Frame Fired** se produit chaque fois qu’un [ `requestAnimationFrame()` rappel][MDNWebRequestAnimationFrame] est exécuté.  
+    > **L’événement Animation Frame Fired** se produit chaque fois qu’un rappel [requestAnimationFrame()][MDNWebRequestAnimationFrame] est exécuté.  
     
-1.  Choisissez **l’événement De cadre d’animation** déclenché.  Le **panneau Résumé** vous présente désormais des informations sur cet événement.  Notez le **lien Révéler.**  Une fois que vous l’avez choisi, DevTools met en évidence l’événement qui a initié l’événement Animation **Frame Fired.**  En outre, concentrez-vous **sur le lienapp.js:95.**  Une fois que vous l’avez choisi, la ligne pertinente dans le code source s’affiche.
+1.  Choisissez **l’événement De cadre d’animation** déclenché.  Le **panneau Résumé** vous présente désormais des informations sur cet événement.  Notez le **lien Révéler.**  Une fois que vous l’avez choisi, DevTools met en évidence l’événement qui a initié l’événement Animation **Frame Fired.**  En outre, concentrez-vous **surapp.js:95.**  Une fois que vous l’avez choisi, la ligne pertinente dans le code source s’affiche.
     
     :::image type="complex" source="../media/evaluate-performance-performance-animation-frame-fired.msft.png" alt-text="Plus d’informations sur l’événement Animation Frame Fired" lightbox="../media/evaluate-performance-performance-animation-frame-fired.msft.png":::
        Plus d’informations sur **l’événement Animation Frame Fired**  
@@ -213,7 +213,7 @@ Cela a été beaucoup à apprendre.  Vous avez maintenant une base solide dans l
 
 ### <a name="bonus-analyze-the-optimized-version"></a>Bonus : analyser la version optimisée  
 
-À l’aide des flux de **** travail et des outils que vous venons d’apprendre, choisissez Optimiser sur la démonstration pour activer le code optimisé, prenez un autre enregistrement des performances, puis analysez les résultats.  De la trame améliorée à la réduction du nombre d’événements dans le graphique de l’animation dans la section **Main,** la version optimisée de l’application fait beaucoup moins de travail, ce qui améliore les performances.  
+À l’aide des flux de **** travail et des outils que vous venons d’apprendre, sélectionnez Optimiser sur la démonstration pour activer le code optimisé, prendre un autre enregistrement des performances, puis analyser les résultats.  De la trame améliorée à la réduction du nombre d’événements dans le graphique de l’animation dans la section **Main,** la version optimisée de l’application fait beaucoup moins de travail, ce qui améliore les performances.  
 
 > [!NOTE]
 > Même la version optimisée n’est pas très bonne, car elle manipule la `top` propriété de chaque icône.  Une meilleure approche consiste à s’en tenir aux propriétés qui affectent uniquement la composition.  <!--  > For more information, navigate to [Use transform and opacity changes for animations][RenderingCompositor].  -->  
@@ -250,7 +250,7 @@ Enfin, il existe de nombreuses façons d’améliorer les performances d’exéc
 
 <!-- links -->
 
-[DevtoolsCustomizePlacement]: ../customize/placement.md "Modifier l’emplacement de Microsoft Edge DevTools (Undock, Dock To Bottom, Dock To Left)"  
+[DevtoolsCustomizePlacement]: ../customize/placement.md "Modifier l’emplacement de Microsoft Edge DevTools (Undock, Dock to Bottom, Dock To Left)"  
 [DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimiser la vitesse du site web avec Microsoft Edge DevTools"  
 
 [TwitterEdgeDevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "EdgeDevTools - Publier un tweet | Twitter"  

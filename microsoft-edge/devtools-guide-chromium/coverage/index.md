@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 092788606347352876483b1a8282fbb75b2bff66
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2a2d48bda34daa95b9f500c31a12859a1cb08625
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398762"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439197"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -72,9 +72,9 @@ Cette feuille de style n’inclut pas uniquement le code du composant de bouton.
 ## <a name="record-code-coverage"></a>Couverture du code d’enregistrement  
 
 1.  Choisissez l’un des boutons suivants dans le **panneau Couverture.**  
-    *   Choose **Start Instrumenting Coverage and Reload Page** \( Start ![ Instrumenting Coverage and Reload Page ][ImageReloadIcon] \) if you want to review what code is needed to load the page.  
-    *   Choisissez **Instrument Coverage** \( Instrument Coverage \) si vous souhaitez passer en revue le code utilisé après avoir ![ ][ImageRecordIcon] interagi avec la page.  
-1.  Choisissez **Arrêter l’instrumentage de la couverture et afficher les résultats** \( Arrêter l’instrumentage de la couverture et afficher les résultats \) lorsque vous souhaitez arrêter l’enregistrement de ![ la couverture de ][ImageStopIcon] code.  
+    *   Choose **Start Instrumenting Coverage and Reload Page** \( Start ![ Instrumenting Coverage and Reload Page ](../media/reload-icon.msft.png) \) if you want to review what code is needed to load the page.  
+    *   Choisissez **Instrument Coverage** \( Instrument Coverage \) si vous souhaitez passer en revue le code utilisé après avoir ![ ](../media/record-icon.msft.png) interagi avec la page.  
+1.  Choisissez **Arrêter l’instrumentage de la couverture et afficher les résultats** \( Arrêter l’instrumentage de la couverture et afficher les résultats \) lorsque vous souhaitez arrêter l’enregistrement de ![ la couverture de ](../media/stop-icon.msft.png) code.  
     
 ## <a name="analyze-code-coverage"></a>Analyser la couverture du code  
 
@@ -93,12 +93,6 @@ Le tableau du panneau **Couverture** affiche les ressources qui ont été analys
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageReloadIcon]: ../media/reload-icon.msft.png  
-[ImageRecordIcon]: ../media/record-icon.msft.png  
-[ImageStopIcon]: ../media/stop-icon.msft.png  
 
 <!-- links -->  
 
