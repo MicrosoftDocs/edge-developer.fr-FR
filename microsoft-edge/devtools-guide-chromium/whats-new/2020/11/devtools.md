@@ -3,16 +3,17 @@ description: Microsoft Edge sur Linux, conseils d’amélioration de webhint dan
 title: Nouveautés de DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 6a36029aa97604b6aea20f232d329ce3805a3144
-ms.sourcegitcommit: e29cd1c393fc1f433dba8c3d8f260b425ade63a9
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 7f4f9e2602d26b09a8b52a570c4caaaccc4f04f1
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408366"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439274"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -113,7 +114,7 @@ Dans le volet **styles** , les [variables CSS][MdnUsingCssCustomProperties] sont
 
 Ces nouvelles fonctionnalités dans les outils [réseau](#network-tool), [application](#application-tool)et [sources](#sources-tool) vous aident à créer votre [PWA][ProgressiveWebAppsIndex].  Si vous éprouvez des difficultés à déboguer votre worker du service, utilisez ces fonctionnalités.  
 
-Le routage de demande affiche les événements de `startup` et de `fetch` basés sur les requêtes réseau exécutées par le biais des workers du service.  Les chronologies sont accessibles à partir de l’outil de **l’application** ou du **réseau** .  Les chronologies vous aident lorsque vous avez des difficultés avec les travailleurs du service et que vous souhaitez afficher un problème avec `startup` l’événement ou `fetch` l’événement.  
+Le routage de demande affiche les événements de `startup` et de `fetch` basés sur les requêtes réseau exécutées par le biais des workers du service.  Les chronologies sont accessibles à partir de l'outil **Application** ou **Réseau**.  Les chronologies sont utiles lorsque vous avez des problèmes avec les travailleurs de service et que vous voulez afficher si quelque chose ne va pas avec`startup` l'événement`fetch`.  
 
 ### <a name="application-tool"></a>Outil de l’application  
 
@@ -188,17 +189,17 @@ Pour copier la valeur de la propriété dans le presse-papiers, accédez à [cop
 :::row:::
    :::column span="":::
       :::image type="complex" source="../../media/2020/11/copy-property-value.msft.png" alt-text="Copier la valeur de la propriété dans DevTools" lightbox="../../media/2020/11/copy-property-value.msft.png":::
-         Copier la valeur de la propriété dans DevTools  
+         Copier la valeur d'une propriété dans DevTools  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Coller la valeur de propriété dans Microsoft Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
-         Coller la valeur de propriété dans Microsoft Visual Studio Code  
+      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Coller la valeur d'une propriété dans Microsoft Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
+         Coller la valeur d'une propriété dans Microsoft Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-## <a name="customize-multi-press-keyboard-shortcuts"></a>Personnaliser les raccourcis clavier en plusieurs clics.  
+## <a name="customize-multi-press-keyboard-shortcuts"></a>Personnaliser les raccourcis clavier multi-presses  
 
 <!-- Title: Customize multi-press keyboard shortcuts  -->  
 <!-- Subtitle: Create custom multi-press keyboard shortcuts in the shortcut editor.  -->  
@@ -340,9 +341,9 @@ Désormais DevTools utilise `kB` pour l’affichage des tailles de fichiers et d
     
 Par exemple, l’outil **réseau** utilisait `kB` dans les étiquettes, mais utilisait `KiB` dans les calculs.  Votre commentaire a démontré que cette incohérence a causé une confusion.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open-source de Chromium, accédez au problème [1035309][CR1035309].  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a>Télécharger les canaux d’aperçu Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Téléchargez les canaux de l'aperçu de Microsoft Edge  
 
-Si vous utilisez Windows, Linux ou macOS, envisagez d’utiliser les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] comme navigateur de développement par défaut.  Les canaux d’aperçu vous permettent d’accéder aux dernières fonctionnalités de DevTools.  
+Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'aperçu de Microsoft Edge][MicrosoftEdgePreviewChannels] comme navigateur de développement par défaut.  Les canaux de prévisualisation vous donnent accès aux dernières fonctionnalités de DevTools.  
 
 ## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Contacter l’équipe Microsoft Edge DevTools  
 

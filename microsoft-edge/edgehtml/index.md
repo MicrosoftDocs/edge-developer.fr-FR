@@ -1,159 +1,77 @@
 ---
-description: Documentation Microsoft Edge héritée.  Contenu de Microsoft Edge (edgeHTML).
+description: Documentation Microsoft Edge héritée.  Contenu pour Microsoft Edge (edgeHTML).
 title: Documentation Microsoft Edge héritée
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2020
+ms.date: 03/16/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: ca3b9787ddce23ea3692fc2d93d005fa52ea791f
-ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 0579626f42cfda823b5bb3ec732370a2ccf86bc7
+ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "11233468"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439730"
 ---
-# Documentation Microsoft Edge héritée  
+# <a name="legacy-microsoft-edge-documentation"></a>Documentation Microsoft Edge héritée  
 
-Merci de votre intérêt dans Microsoft Edge.  L’article suivant résume le contenu du produit hérité, qui n’est plus mis à jour.  Le nouveau contenu Microsoft Edge remplace le contenu du produit hérité et est marqué comme recommandé dans les tableaux suivants.  
+Merci de votre intérêt pour Microsoft Edge.  L’article suivant récapitule le contenu du produit hérité, que nous ne mettons plus à jour.  Le nouveau contenu Microsoft Edge remplace le contenu du produit hérité, et les tableaux suivants signalent ce nouveau contenu comme recommandé.  
 
-## Nouvelle documentation Microsoft Edge  
+## <a name="new-microsoft-edge-documentation"></a>Nouvelle documentation Microsoft Edge  
 
 | Fonctionnalité | Détails |  
 |:--- |:--- |  
-| [Présentation de devtools][DevtoolsGuideChromiumMain] | Familiarisez-vous avec les outils de développement Microsoft Edge \ (chrome \). |  
-| [Vue d’ensemble du protocole devtools][DevtoolsProtocolChromiumMain] \ (recommandé \) | Mise à jour du protocole Microsoft Edge DevTools. |  
-| [Présentation des extensions][ExtensionsChromiumIndex] \ (recommandé \) | Présentation des extensions Microsoft Edge \ (chrome \).  Développez et publiez les extensions de navigateur en général. |  
-| [Vue d’ensemble des applications Web progressives][ProgressiveWebAppsChromiumIndex] \ (recommandé \) | Les applications Web progressives \ (chrome \) s’exécutent en mode natif sur Windows 10.  Tout ce que vous devez savoir en tant que développeur Web. |  
-| [Présentation de WebView2][Webview2Index] | Hébergez le contenu Web dans vos applications Win32, .NET et UWP avec le contrôle Microsoft Edge WebView2. |  
-| [Interopérabilité (compatibilité du site)][WebPlatformSiteImpactingChanges] \ (recommandé \) | Fournit un récapitulatif des changements à forte incidence qui risquent d’avoir un impact sur la compatibilité de site. |  
-| [WebDriver][WebdriverChromiumIndex] \ (recommandé) | Découvrez comment tester votre site Web ou votre application dans Microsoft Edge ou automatiser le navigateur à l’aide du Web. |  
+| [Vue d’ensemble de DevTools][DevtoolsGuideChromiumMain] \(recommandé\) | Découvrir les outils de développement Microsoft Edge \(Chromium\). |  
+| [Vue d’ensemble du protocole DevTools][DevtoolsProtocolChromiumMain] \(recommandé\) | Mise à jour du protocole Microsoft Edge DevTools. |  
+| [Vue d’ensemble des extensions][ExtensionsChromiumIndex] \(recommandé\) | Vue d’ensemble des extensions Microsoft Edge \(Chromium\).  Créez et publiez des extensions de navigateur en général. |  
+| [Présentation progressive des applications web][ProgressiveWebAppsChromiumIndex] \(recommandé\) | Les applications web progressives \(Chromium\) s’exécutent en natif sur Windows 10.  Tout ce que vous devez savoir en tant que développeur web. |  
+| [Vue d’ensemble de WebView2][Webview2Index] \(recommandé\) | Hébergez du contenu web dans vos applications Win32, .NET et UWP avec le contrôle WebView2 de Microsoft Edge. |  
+| [Interopérabilité (compatibilité du site)][WebPlatformSiteImpactingChanges] \(recommandé\) | Fournit un résumé des modifications à fort impact qui peuvent avoir un impact sur la compatibilité du site. |  
+| [WebDriver][WebdriverChromiumIndex] \(recommandé\) | Découvrez comment tester votre site web ou votre application dans Microsoft Edge ou automatiser le navigateur avec WebDriver. |  
 
-<!--  
-:::row:::
-   :::column span="":::
-      [DevTools overview][DevtoolsGuideChromiumMain]  
-   :::column-end:::
-   :::column span="":::
-      [DevTools Protocol overview][DevtoolsProtocolChromiumMain]  
-   :::column-end:::
-   :::column span="":::
-      [Extensions overview][ExtensionsChromiumIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [Progressive Web Apps overview][ProgressiveWebAppsChromiumIndex]  
-   :::column-end:::
-   :::column span="":::
-      [New Microsoft Edge WebView2 overview][Webview2Index]  
-   :::column-end:::
-   :::column span="":::
-      [Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [WebDriver][WebdriverChromiumIndex]  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-:::row-end:::  
--->  
-
-## Documentation Microsoft Edge héritée  
+## <a name="legacy-microsoft-edge-documentation"></a>Documentation Microsoft Edge héritée  
 
 <!--  This is deprecated and legacy content.  For new content, navigate to the associated [Chromium category](#new-microsoft-edge-documentation).  -->  
 
 > [!IMPORTANT]
-> Le Microsoft Edge hérité a été remplacé par le nouveau Microsoft Edge.  
+> L’ancien Microsoft Edge a été remplacé par le nouveau Microsoft Edge.  
 
 | Fonctionnalité | Détails |  
 |:--- |:--- |  
-| [Guide du développeur][EdgehtmlDevGuideIndex] (non recommandé) | Cet article fournit une vue d’ensemble des normes et fonctionnalités de développement incluses dans Microsoft Edge. |  
-| [Présentation des outils de développement][EdgehtmlDevtoolsGuideIndex] \ (non recommandé) | Familiarisez-vous avec les outils de développement Microsoft Edge \ (EdgeHTML \). |  
-| [Vue d’ensemble du protocole des outils de développement][EdgehtmlDevtoolsProtocolIndex] \ (non recommandé) | Utilisez le protocole Microsoft Edge DevTools pour inspecter et déboguer le navigateur Microsoft Edge \ (EdgeHTML \). |  
-| [Présentation des extensions][EdgehtmlExtensionsIndex] \ (non recommandé \) | Apprenez à développer des extensions Microsoft Edge.  Les petits programmes permettent d’ajouter de nouvelles fonctionnalités à Microsoft Edge ou de modifier des fonctionnalités existantes. |  
-| [Vue d’ensemble des applications Web progressives][EdgehtmlProgressiveWebAppsIndex] \ (non recommandé) | Une application Web progressive s’exécute en mode natif sur Windows 10.  Tout ce que vous devez savoir en tant que développeur Web. |  
-| [Vue d’ensemble de WebView][EdgehtmlHostingWebviewIndex] \ (non recommandé) | Hébergez le contenu Web de votre application Windows 10 à l’aide du contrôle WebView \ (EdgeHTML \). |  
-| [Vue d’ensemble de l’hébergement du runtime JavaScript][EdgehtmlHostingJavascriptRuntimeHostingIndex] \ (non recommandé) | Les API d’exécution JavaScript (JsRT \) offrent un moyen pour les applications de bureau, Windows Store et côté serveur.  Les API s’exécutent sur le système d’exploitation Windows pour ajouter des fonctionnalités de script à une application à l’aide du moteur JavaScript Chakra basé sur des normes.   Le moteur JavaScript chakra est également utilisé par les versions antérieures de Microsoft Edge et Internet Explorer. |  
-| [Présentation][EdgehtmlPerformanceAnalysisIndex] de l’analyse des performances \ (non recommandé) | Utilisez les outils de développement F12 pour analyser les performances générales des sites Web. |  
-| [Vue d’ensemble du WebDriver][EdgehtmlWebdriverIndex] \ (non recommandé) | Découvrez comment prendre en main l’utilisation de WebDriver.  WebDriver est un protocole Wire qui permet aux programmes et aux scripts de contrôler le comportement de votre navigateur Web. |  
-| [WebVR][WebvrIndex] \ (déconseillé \) | WebVR est une API JavaScript standard ouverte qui permet d’accéder à des applications en 3D virtuelles immersives en 3D à l’aide d’un navigateur Web, tel que Microsoft Edge et un casque VR compatible. |  
-| [Vue d’ensemble de Windows Runtime (WinRT)][EdgehtmlWindowsRuntimeIndex] \ (non recommandé) | Utilisez Windows Runtime \ (WinRT \) pour appeler des API Windows natives à partir de votre application JavaScript. |  
-
-<!--  
-:::row:::
-   :::column span="":::
-      [developer guide][EdgehtmlDevGuideIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Developer Tools overview][EdgehtmlDevtoolsGuideIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Developer Tools Protocol overview][EdgehtmlDevtoolsProtocolIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [Extensions overview][EdgehtmlExtensionsIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Progressive Web Apps overview][EdgehtmlProgressiveWebAppsIndex]  
-   :::column-end:::
-   :::column span="":::
-      [WebView overview][EdgehtmlHostingWebviewIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [JavaScript runtime hosting overview][EdgehtmlHostingJavascriptRuntimeHostingIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Performance Analysis overview][EdgehtmlPerformanceAnalysisIndex]  
-   :::column-end:::
-   :::column span="":::
-      [WebDriver overview][EdgehtmlWebdriverIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [WebVR][WebvrIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Windows Runtime (WinRT) overview][EdgehtmlWindowsRuntimeIndex]  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-:::row-end:::  
--->  
+| [Guide du développeur][EdgehtmlDevGuideIndex] \(non recommandé\) | Cet article fournit une vue d’ensemble des fonctionnalités et normes de développement incluses dans Microsoft Edge. |  
+| [Vue d’ensemble des outils de développement][EdgehtmlDevtoolsGuideIndex] \(non recommandé\) | Découvrir les outils de développement Microsoft Edge \(EdgeHTML\). |  
+| [Vue d’ensemble du protocole outils de][EdgehtmlDevtoolsProtocolIndex] développement \(non recommandé\) | Utilisez le protocole Microsoft Edge DevTools pour inspecter, puis déboguer le navigateur Microsoft Edge \(EdgeHTML\). |  
+| [Vue d’ensemble des extensions][EdgehtmlExtensionsIndex] \(non recommandé\) | Découvrez comment développer des extensions Microsoft Edge.  Les petits programmes permettent d’ajouter de nouvelles fonctionnalités à Microsoft Edge ou de modifier les fonctionnalités existantes. |  
+| [Vue d’ensemble des applications web progressives][EdgehtmlProgressiveWebAppsIndex] \(non recommandé\) | Une application web progressive s’exécute en natif sur Windows 10.  Tout ce que vous devez savoir en tant que développeur web. |  
+| [Vue d’ensemble de WebView][EdgehtmlHostingWebviewIndex] \(non recommandé\) | Hébergez du contenu web dans votre application Windows10 avec le contrôle WebView \(EdgeHTML\). |  
+| [Vue d’ensemble de l’hébergement du runtime JavaScript][EdgehtmlHostingJavascriptRuntimeHostingIndex] \(non recommandé\) | Les API JavaScript Runtime \(JsRT\) permettent d’utiliser des applications de bureau, du Windows Store et côté serveur.  Les API s’exécutent sur le système d’exploitation Windows pour ajouter des fonctionnalités de script à une application à l’aide du moteur JavaScript Chakra basé sur des normes.   Microsoft Edge et Internet Explorer hérités utilisent eux aussi le moteur JavaScript Chakra. |  
+| [Vue d’ensemble de l’analyse des performances][EdgehtmlPerformanceAnalysisIndex] \(non recommandé\) | Utilisez les outils de développement F12 pour analyser les performances générales des sites web. |  
+| [Vue d’ensemble de WebDriver][EdgehtmlWebdriverIndex] \(non recommandé\) | Découvrez comment démarrer avec WebDriver.  WebDriver est un protocole filaire qui permet aux programmes et aux scripts de contrôler le comportement de votre navigateur web. |  
+| [WebVR][WebvrIndex] \(non recommandé\) | WebVR est une API JavaScript de norme ouverte qui permet de faire l’expérience d’applications immersives 3D Virtual Reality \(VR\) à l’aide d’un navigateur web tel que Microsoft Edge et d’un casque VR pris en charge. |  
+| [Vue d’ensemble de Windows Runtime (WinRT)][EdgehtmlWindowsRuntimeIndex] \(non recommandé\) | Utilisez Windows Runtime \(WinRT\) pour appeler des API Windows natives depuis votre application JavaScript. |  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../devtools-guide-chromium/index.md "Vue d’ensemble des outils de développement Microsoft Edge (chrome) | Documents Microsoft"  
-[DevtoolsProtocolChromiumMain]: ../devtools-protocol-chromium/index.md "Présentation du protocole DevTools Microsoft Edge (chrome) | Documents Microsoft"  
-[EdgehtmlDevGuideIndex]: ./dev-guide/index.md "Guide du développeur Microsoft Edge | Documents Microsoft"  
-[EdgehtmlDevtoolsGuideIndex]: ./devtools-guide/index.md "Outils de développement Microsoft Edge (EdgeHTML) | Documents Microsoft"  
-[EdgehtmlDevtoolsProtocolIndex]: ./devtools-protocol/index.md "Protocole DevTools de Microsoft Edge (EdgeHTML) | Documents Microsoft"  
-[EdgehtmlExtensionsIndex]: ./extensions/index.md "Extensions Microsoft Edge (EdgeHTML) | Documents Microsoft"  
-[EdgehtmlProgressiveWebAppsIndex]: ./progressive-web-apps/index.md "Applications Web progressives (EdgeHTML) sur Windows | Documents Microsoft"  
-[EdgehtmlHostingWebviewIndex]: ./hosting/webview/index.md "WebView (EdgeHTML) pour les applications Windows 10 | Documents Microsoft"  
-[EdgehtmlHostingJavascriptRuntimeHostingIndex]: ./hosting/javascript-runtime-hosting.md "Hébergement Runtime JavaScript | Documents Microsoft"  
-[EdgehtmlPerformanceAnalysisIndex]: ./performance-analysis/index.md "Analyse des performances Documents Microsoft"  
-[EdgehtmlWebdriverIndex]: ./webdriver/index.md "Web Driver (EdgeHTML) | Documents Microsoft"  
-[EdgehtmlWindowsRuntimeIndex]: ./windows-runtime/index.md "Windows Runtime (WinRT) pour JavaScript | Documents Microsoft"  
-[ExtensionsChromiumIndex]: ../extensions-chromium/index.md "Vue d’ensemble des extensions Microsoft Edge (chrome) | Documents Microsoft"  
-[ProgressiveWebAppsChromiumIndex]: ../progressive-web-apps-chromium/index.md "Vue d’ensemble des applications Web progressivement sur Windows | Documents Microsoft"  
-[WebdriverChromiumIndex]: ../webdriver-chromium/index.md "Utiliser le WebDriver (chrome) pour avoir une vue d’ensemble de l’automatisation des tests | Documents Microsoft"  
-[WebPlatformSiteImpactingChanges]: ../web-platform/site-impacting-changes.md "Compatibilité de site-modification affectant les modifications apportées à Microsoft Edge | Documents Microsoft"  
-[Webview2Index]: ../webview2/index.md "Introduction à Microsoft Edge WebView2 | Documents Microsoft"  
+[DevtoolsGuideChromiumMain]: ../devtools-guide-chromium/index.md "Vue d’ensemble des outils de développement Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsProtocolChromiumMain]: ../devtools-protocol-chromium/index.md "Vue d’ensemble du protocole Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
+[EdgehtmlDevGuideIndex]: ./dev-guide/index.md "Guide du développeur Microsoft Edge | Microsoft Docs"  
+[EdgehtmlDevtoolsGuideIndex]: ./devtools-guide/index.md "Outils de développement Microsoft Edge (EdgeHTML) | Microsoft Docs"  
+[EdgehtmlDevtoolsProtocolIndex]: ./devtools-protocol/index.md "Protocole Microsoft Edge DevTools (EdgeHTML) | Microsoft Docs"  
+[EdgehtmlExtensionsIndex]: ./extensions/index.md "Extensions Microsoft Edge (EdgeHTML) | Microsoft Docs"  
+[EdgehtmlProgressiveWebAppsIndex]: ./progressive-web-apps/index.md "Applications web progressives (EdgeHTML) sous Windows | Microsoft Docs"  
+[EdgehtmlHostingWebviewIndex]: ./hosting/webview/index.md "WebView (EdgeHTML) pour les applications Windows10 | Microsoft Docs"  
+[EdgehtmlHostingJavascriptRuntimeHostingIndex]: ./hosting/javascript-runtime-hosting.md "Hébergement du runtime JavaScript | Microsoft Docs"  
+[EdgehtmlPerformanceAnalysisIndex]: ./performance-analysis/index.md "Analyse des performances | Microsoft Docs"  
+[EdgehtmlWebdriverIndex]: ./webdriver/index.md "WebDriver (EdgeHTML) | Microsoft Docs"  
+[EdgehtmlWindowsRuntimeIndex]: ./windows-runtime/index.md "Windows Runtime (WinRT) pour JavaScript | Microsoft Docs"  
+[ExtensionsChromiumIndex]: ../extensions-chromium/index.md "Vue d’ensemble des extensions Microsoft Edge (Chromium) | Microsoft Docs"  
+[ProgressiveWebAppsChromiumIndex]: ../progressive-web-apps-chromium/index.md "Vue d’ensemble des applications web progressive sous Windows | Microsoft Docs"  
+[WebdriverChromiumIndex]: ../webdriver-chromium/index.md "Utiliser WebDriver (Chromium) pour tester l’automatisation (vue d’ensemble) | Microsoft Docs"  
+[WebPlatformSiteImpactingChanges]: ../web-platform/site-impacting-changes.md "Modifications qui ont un impact sur la compatibilité des sites dans Microsoft Edge | Microsoft Docs"  
+[Webview2Index]: ../webview2/index.md "Présentation de Microsoft Edge WebView2 | Microsoft Docs"  
 
-[WebvrIndex]: /microsoft-edge/webvr/index "Guide du développeur WebVR | Documents Microsoft"  
+[WebvrIndex]: /microsoft-edge/webvr/index "Guide du développeur WebVR | Microsoft Docs"  
 
