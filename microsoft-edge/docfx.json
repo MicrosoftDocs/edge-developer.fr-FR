@@ -1,0 +1,59 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "microsoft-edge/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.svg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "microsoft-edge/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
+      "titleSuffix": "Microsoft Edge Development",
+      "uhfHeaderId": "MSDocsHeader-MSEdge",
+      "feedback_system": "None",
+      "bilingual_type": "hover over",
+       "hide_comments": true,
+      "feedback_github_repo": "MicrosoftDocs/edge-developer",
+      "extendBreadcrumb": true
+    },
+    "fileMetadata": {
+      "ms.technology":{
+        "devtools-guide-chromium/**.md": "devtools",
+        "devtools-protocol/**.md": "devtools",
+        "extensions-chromium/**.md": "extensions",
+        "webview2/**.md": "webview2",
+        "progressive-web-apps-chromium/**.md": "pwa",
+        "edgehtml/**.md": ""
+      }
+    },
+    "template": [
+      "docs.html"
+    ],
+    "dest": "microsoft-edge",
+    "markdownEngineName": "markdig"
+  }
+}
