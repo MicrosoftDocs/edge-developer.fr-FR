@@ -1,41 +1,41 @@
 ---
-description: Déplacer des utilisateurs vers Microsoft Edge à partir d’Internet Explorer
-title: Déplacer des utilisateurs vers Microsoft Edge à partir d’Internet Explorer
+description: Déplacement d’utilisateurs vers Microsoft Edge à partir d’Internet Explorer
+title: Déplacement d’utilisateurs vers Microsoft Edge à partir d’Internet Explorer
 author: MSEdgeTeam
 ms.date: 11/13/2020
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, compatibilité, plateforme Web, Internet Explorer
-ms.openlocfilehash: 872bd5ec52f471e4958ef7354c046ec30f1ba72e
-ms.sourcegitcommit: 62258ce0ef469948ca8af42141d02aa9719243f8
+keywords: microsoft Edge, compatibilité, plateforme web, Internet Explorer
+ms.openlocfilehash: c2106955ed79bd28dc1f847dee220944bb014689
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "11168362"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461135"
 ---
-# Déplacer des utilisateurs vers Microsoft Edge à partir d’Internet Explorer  
+# <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>Déplacement d’utilisateurs vers Microsoft Edge à partir d’Internet Explorer  
 
-De nombreux sites Web modernes possèdent des conceptions incompatibles avec Internet Explorer \ (IE \).  Lorsqu’un utilisateur d’IE visite un site Web public incompatible, il est possible qu’un message s’affiche.  Le message indique que le site Web n’est pas compatible avec le navigateur.  Une fois le message affiché, l’utilisateur est censé basculer manuellement vers un navigateur moderne.  Pour limiter les perturbations, à partir de la version 84, Microsoft Edge prend en charge une nouvelle fonctionnalité qui redirige automatiquement les utilisateurs.  Lorsqu’un utilisateur d’Internet Explorer navigue vers un site Web incompatible avec IE, Windows redirige automatiquement l’utilisateur vers Microsoft Edge.  Pour passer en revue les sites Web de la liste, accédez à la [liste Microsoft Edge requis][MicrosoftEdgeNeededgeV1].
+De nombreux sites web modernes ont des conceptions incompatibles avec Internet Explorer \(IE\).  Lorsqu’un utilisateur d’Internet IE visite un site web public incompatible, il peut obtenir un message.  Le message indique que le site web est incompatible avec le navigateur.  Une fois le message affiché, l’utilisateur est censé basculer manuellement vers un navigateur moderne.  Pour minimiser les interruptions, à partir de la version 84, Microsoft Edge prend en charge une nouvelle fonctionnalité qui redirige automatiquement les utilisateurs.  Lorsqu’un utilisateur d’Internet Explorer navigue vers un site web incompatible avec Internet Explorer, Windows redirige automatiquement l’utilisateur vers Microsoft Edge.  Pour consulter les sites web de la liste, accédez à [La liste Besoin de Microsoft Edge.][MicrosoftEdgeNeededgeV1]
 
 Cet article décrit les concepts suivants.  
 
-*   Pourquoi un site Web est ajouté à la liste?  
-*   Interface utilisateur pour la redirection  
-*   Demander la mise à jour de la liste  
+*   Pourquoi un site web est ajouté à la liste  
+*   Expérience utilisateur pour la redirection  
+*   Demander une mise à jour de la liste  
     
-## Pourquoi un site Web est-il ajouté à la liste de compatibilité Internet?  
+## <a name="why-is-a-website-added-to-the-ie-compatibility-list"></a>Pourquoi un site web est-il ajouté à la liste de compatibilité d’Internet IE ?  
 
-La liste de compatibilité d’Internet Explorer ajoute uniquement un site Web lorsque les actions suivantes se produisent.  
+La liste de compatibilité d’Internet IE ajoute un site web uniquement lorsque les actions suivantes se produisent.  
 
-*   Affiche un message aux fins de compatibilité d’un utilisateur d’un autre navigateur.  
-*   Demandes de propriétaire pour ajouter le site Web à la liste de compatibilité d’Internet Explorer.  
+*   Affiche un message à un utilisateur d’Internet Explorer lui suggérant d’utiliser un autre navigateur pour des raisons de compatibilité.  
+*   Le propriétaire demande d’ajouter le site web à la liste de compatibilité d’Internet IE.  
 
-## Expérience de redirection
+## <a name="redirection-experience"></a>Expérience de redirection
 
-Lorsque vous redirigez vers Microsoft Edge, l’utilisateur affiche la boîte de dialogue ponctuelle suivante.  La boîte de dialogue fournit à l’utilisateur les informations suivantes.  
+Lors de la redirection vers Microsoft Edge, la boîte de dialogue à une seule est affichée dans la capture d’écran suivante.  La boîte de dialogue fournit à l’utilisateur les informations suivantes.  
 
-*   Il explique pourquoi le site Web est redirigé.  
-*   Le système demande à l’utilisateur l’autorisation de copier les données de navigation et les préférences d’Internet Explorer dans Microsoft Edge.  
+*   Il explique pourquoi le site web est redirigé.  
+*   Il invite l’utilisateur à consentir à copier les données de navigation et les préférences d’Internet Internet (IE) vers Microsoft Edge.  
 
 :::row:::
    :::column span="":::
@@ -51,56 +51,58 @@ Lorsque vous redirigez vers Microsoft Edge, l’utilisateur affiche la boîte de
       *   Page d’accueil  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/neededge-dialog1.msft.png" alt-text="Notification de navigation et invite d’importation de données et préférences" lightbox="../media/neededge-dialog1.msft.png":::
-         Notification de navigation et invite d’importation de données et préférences  
+      :::image type="complex" source="../media/neededge-dialog1.msft.png" alt-text="Notification de navigation et invite à importer des données et des préférences" lightbox="../media/neededge-dialog1.msft.png":::
+         Notification de navigation et invite à importer des données et des préférences  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
 
-Si l’utilisateur n’est pas en mesure d’accepter en activant la case à cocher **toujours faire basculer les données et préférences de navigation d’Internet Explorer** , il est possible que l’utilisateur sélectionne **poursuivre la navigation**   pour continuer la session de navigation.  
+Si l’utilisateur ne donne pas son consentement en choisissant la case à cocher **** Toujours mettre en avant mes données et préférences de navigation à partir d’Internet **Explorer,** l’utilisateur peut choisir Continuer la navigation pour poursuivre la session de   navigation.  
 
-Enfin, une bannière d’incompatibilité de site Web s’affiche sous la barre d’adresse pour chaque redirection.  Un exemple de bannière d’incompatibilité de site Web s’affiche dans la figure ci-dessous.
+Enfin, une bannière d’incompatibilité de site web s’affiche sous la barre d’adresse pour chaque redirection.  Un exemple de bannière d’incompatibilité de site web est affiché dans la figure suivante.
 
-:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Notification sur les sites modernes et invite à définir Microsoft Edge comme navigateur par défaut ou découvrir Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
-   Notification sur les sites modernes et invite à définir Microsoft Edge comme navigateur par défaut ou découvrir Microsoft Edge  
+:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Notification sur les sites modernes et invite à définir Microsoft Edge comme navigateur par défaut ou explorer Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
+   Notification sur les sites modernes et invite à définir Microsoft Edge comme navigateur par défaut ou explorer Microsoft Edge  
 :::image-end:::
 
-La bannière d’incompatibilité de site Web fournit les informations suivantes à l’utilisateur.  
+La bannière d’incompatibilité du site web fournit les détails suivants à l’utilisateur.  
 
-*   Recommande aux utilisateurs de basculer vers Microsoft Edge.  
-*   Propose de définir Microsoft Edge comme navigateur par défaut.  
-*   Offre à l’utilisateur la possibilité d’explorer Microsoft Edge.    
+*   Recommande à l’utilisateur de basculer vers Microsoft Edge.  
+*   Offre de définir Microsoft Edge comme navigateur par défaut.  
+*   Permet à l’utilisateur d’explorer Microsoft Edge.    
     
-Lorsqu’un site Web est redirigé d’Internet Explorer vers Microsoft Edge, l’une des actions suivantes se produit.
+Lorsqu’un site web est redirigé d’Internet Explorer vers Microsoft Edge, l’une des actions suivantes se produit.
 
-*   Si l’onglet IE actif ne contenait aucun contenu antérieur, il est fermé.  
-*   Si l’onglet IE actif comporte du contenu antérieur, il accède à la [page du support Microsoft qui explique pourquoi le site Web a été redirigé vers Microsoft Edge][MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer].  
+*   Si l’onglet IE actif n’avait aucun contenu préalable, il est fermé.  
+*   Si l’onglet Internet Explorer actif avait un contenu antérieur, il navigue vers la page de support Microsoft qui explique pourquoi le site web a été [redirigé vers Microsoft Edge.][MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]  
 
 > [!NOTE]
-> Après une redirection, les utilisateurs peuvent continuer à utiliser Internet Explorer pour les sites Web qui ne figurent pas dans la liste de compatibilité d’Internet Explorer.  
+> Après une redirection, les utilisateurs peuvent continuer à utiliser Internet IE pour les sites web qui ne sont pas répertoriés dans la liste de compatibilité d’Internet Internet.  
 
-## Demander une mise à jour de la liste de compatibilité d’Internet Explorer  
+## <a name="request-an-update-to-the-ie-compatibility-list"></a>Demander une mise à jour de la liste de compatibilité d’IE  
 
-La liste de compatibilité Internet est un fichier XML sur [Microsoft.com][MicrosoftOfficialHome].  La liste est régulièrement mise à jour en réponse aux demandes des développeurs de sites Web et d’utilisateurs qui ont été ajoutées ou supprimées.  Les mises à jour apportées à la liste sont automatiquement téléchargées sur les ordinateurs des utilisateurs.  
+La liste de compatibilité d’IE est un fichier XML sur [microsoft.com][MicrosoftOfficialHome].  La liste est régulièrement mise à jour en réponse aux demandes des utilisateurs et des développeurs de sites web pour ajouter ou supprimer des sites web.  Les mises à jour de la liste sont automatiquement téléchargées sur les ordinateurs des utilisateurs.  
 
-Envoyez les informations suivantes à [ietoedge@microsoft.com][MailtoMicrosoftIetoedge] pour que votre site Web soit ajouté ou supprimé de la liste de compatibilité d’Internet Explorer.    
+Envoyez les informations suivantes [ietoedge@microsoft.com][MailtoMicrosoftIetoedge] pour que votre site web soit ajouté ou supprimé de la liste de compatibilité d’Internet IE.    
 
 *   Nom du propriétaire  
 *   Titre de l’entreprise  
 *   Adresse électronique  
 *   Nom de la société  
 *   Adresse postale  
-*   Adresse du site Web  
+*   Adresse du site web  
     
+La liste de compatibilité d’IE est mise à jour dans une semaine.
+
 > [!NOTE]
-> La liste de compatibilité d’Internet Explorer est conçue pour fonctionner uniquement avec des sites publics.  
+> La liste de compatibilité d’Internet IE est conçue pour fonctionner uniquement avec des sites publics.  
 
 <!-- links -->  
 
-[MailtoMicrosoftIetoedge]: mailto:ietoedge@microsoft.com "Envoyer un e-mail à ietoedge@microsoft.com"  
+[MailtoMicrosoftIetoedge]: mailto:ietoedge@microsoft.com "Envoyer un courrier électronique à ietoedge@microsoft.com"  
 
-[MicrosoftOfficialHome]: https://www.microsoft.com "Accueil Microsoft Official"  
+[MicrosoftOfficialHome]: https://www.microsoft.com "Accueil officiel Microsoft"  
 
-[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Vous avez besoin de la liste Microsoft Edge v1 XML | Microsoft Edge"  
+[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Besoin d’une liste xml De Microsoft Edge v1 | Microsoft Edge"  
 
-[MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]: https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554 "Le site Web que vous essayez de joindre ne fonctionne pas avec Internet Explorer | Support Microsoft Office"  
+[MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]: https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554 "Le site web que vous tentiez d’atteindre ne fonctionne pas avec Internet Explorer | Microsoft Office prise en charge"  
