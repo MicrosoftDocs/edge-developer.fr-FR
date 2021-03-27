@@ -3,16 +3,16 @@ description: Hébergez un site sur un serveur web d’ordinateur de développeme
 title: Accéder aux serveurs locaux
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 16c9927ce4548d71681d35e643aea0a6c44ec75a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 51ef0d951d587d310b6474698924d9f87cf68607
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398209"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461261"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398209"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="access-local-servers"></a>Accéder aux serveurs locaux  
 
 Hébergez un site sur un serveur web d’ordinateur de développement, puis accédez au contenu à partir d’un appareil Android.  
@@ -54,7 +53,7 @@ Pour activer le portage :
     :::image-end:::  
     
 1.  Dans la **zone de texte** Du port de l’appareil sur la gauche, entrez le numéro de port à partir duquel vous souhaitez pouvoir accéder au site sur votre appareil `localhost` Android.  Par exemple, si vous souhaitez accéder au site à partir `localhost:5000` `5000` d’entrée.  
-1.  Dans **** la zone de texte Adresse locale à droite, entrez l’adresse IP ou le nom d’hôte sur lequel votre site est hébergé sur le serveur web en cours d’exécution sur votre ordinateur de développement, suivi du numéro de port.  Par exemple, si votre site est en cours d’exécution lors de `localhost:7331` `localhost:7331` l’entrée.  
+1.  Dans **** la zone de texte Adresse locale à droite, entrez l’adresse IP ou le nom d’hôte sur lequel votre site est hébergé sur le serveur web en cours d’exécution sur votre ordinateur de développement, suivi du numéro de port.  Par exemple, si votre site est en cours d’exécution sur `localhost:7331` entrée `localhost:7331` .  
 1.  Choose **Add**.  
     
 Le forwarding de port est maintenant installé.  Examinez l’indicateur d’état du port avant sous l’onglet de votre appareil dans la boîte de dialogue **Inspecter les appareils.**  
@@ -71,7 +70,7 @@ Le mappage de domaine personnalisé vous permet d’afficher le contenu sur un a
 
 Par exemple, supposons que votre site utilise une bibliothèque JavaScript tierce qui fonctionne uniquement sur le `microsoft-edge.devtools` domaine.  Par exemple, vous créez une entrée dans votre fichier sur votre ordinateur de développement pour ma cartographier ce domaine sur `hosts` `localhost` \(par `127.0.0.1 microsoft-edge.devtools` exemple, \).  Après avoir mis en place le mappage de domaine personnalisé et le forwarding de port, affichez le site sur votre appareil Android à `microsoft-edge.devtools` l’URL.  
 
-### <a name="set-up-port-forwarding-to-proxy-server"></a>Configurer le forwarding de port vers le serveur proxy  
+### <a name="set-up-port-forwarding-to-proxy-server"></a>Configurer le port de forwarding vers le serveur proxy  
 
 Pour ma cartographier un domaine personnalisé, vous devez exécuter un serveur proxy sur votre ordinateur de développement.  Par exemple, les serveurs proxy [sont Charles][CharlesWebDebuggingProxy], Fiddler et [Fiddler.][FiddlerWebDebuggingProxy] [][SquidOptimisingWebDelivery]  
 

@@ -3,23 +3,23 @@ description: Guide de mise en place avec WebView2 pour les applications WinUI
 title: Mise en place de WebView2 pour les applications WinUI
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/29/2021
+ms.date: 03/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, applications winui, winui, edge, CoreWebView2, contrôle de navigateur, edge html, mise en main, mise en main, .NET
-ms.openlocfilehash: 5188a735eaf635c3b3bc0eead6f4ee4f3a83f1c4
-ms.sourcegitcommit: d89f77d4667dfbc44ed35f2ec7e3ae64ab98bf1a
+ms.openlocfilehash: 52d84afb6f9fe1e120f75525b2669a797309fdfe
+ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "11306151"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "11461205"
 ---
-# Mise en place de WebView2 dans WinUI 3 (prévisualisation)  
+# <a name="getting-started-with-webview2-in-winui-3-preview"></a>Mise en place de WebView2 dans WinUI 3 (prévisualisation)  
 
-Dans cet article, commencer à créer votre première application WebView2 et en savoir plus sur les principales fonctionnalités de [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Votre première application WebView2 utilise WinUI3.  Pour plus d’informations sur les API individuelles, accédez à la [référence d’API.][GithubMicrosoftUiXamlSpecsWebview2]  
+Dans cet article, commencer à créer votre première application WebView2 et en savoir plus sur les principales fonctionnalités de [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Votre première application WebView2 utilise WinUI3.  Pour plus d’informations sur les API individuelles, accédez à la [référence d’API.][GithubMicrosoftMicrosoftUiXamlSpecsWebview2]  
 
-## Conditions préalables  
+## <a name="prerequisites"></a>Conditions préalables  
 
 Veillez à installer la liste des conditions préalables suivante avant de poursuivre.  
 
@@ -29,7 +29,6 @@ Veillez à installer la liste des conditions préalables suivante avant de pours
     > L’équipe WebView recommande d’utiliser le canal Canary et la version minimale requise est 82.0.488.0.  
     
 *   [Visual Studio][MicrosoftVisualstudioMain] 2019, version 16.9 Preview.  Pour plus d’informations, accédez [à Windows UI Library 3 Preview 3][WindowsAppsWinui3ConfigureYourDevEnvironment].  
-    
     *   Incluez les charges de travail suivantes lorsque vous installez Visual Studio.  
         *   .NET Desktop Development \(le programme d’installation installe également .NET 5\)  
         *   Développement de plateforme Windows universelle  
@@ -37,7 +36,7 @@ Veillez à installer la liste des conditions préalables suivante avant de pours
         *   Développement de bureau avec C++  
         *   Composant facultatif des outils de plateforme Windows universelle C++ \(v142\) pour la charge de travail de la plateforme Windows universelle.  Pour plus d’informations, accédez aux **détails de l’installation** sous la section développement de la plateforme **Windows** universelle, dans le volet droit.  
         
-## Étape 0 : Visual Studio paramètres  
+## <a name="step-0---visual-studio-settings"></a>Étape 0 : Visual Studio paramètres  
 
 1.  Assurez-vous que votre système dispose d’une source de package NuGet activée pour [nuget.org][NugetHome].  Pour plus d’informations, accédez [aux configurations NuGet communes][NugetConsumePackagesConfiguringNugetBehavior] et à [Windows Community Shared Computer Toolkit][WindowsCommunitytoolkit].  
 1.  Téléchargez et installez [le package VSIX WinUI 3 Preview 3.][VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]  Le programme d’installation ajoute les modèles de projet WinUI 3 et le package NuGet contenant les bibliothèques WinUI 3 Visual Studio 2019.  
@@ -46,12 +45,12 @@ Veillez à installer la liste des conditions préalables suivante avant de pours
     
 1.  Pour accéder à toutes les fonctionnalités spécifiques Visual Studio développeur, activer [le Mode développeur.][WindowsUwpGetStartedEnableYourDeviceForDevelopment]  
     
-## Étape 1 : créer un projet  
+## <a name="step-1---create-project"></a>Étape 1 : créer un projet  
 
 Commencez par un projet de bureau de base qui contient une seule fenêtre principale.  
 
 1.  In Visual Studio, choose **Create a new project**.  
-1.  Dans la drop-down du projet, choisissez **respectivement C#**, **Windows**et **WinUI.**  
+1.  Dans la drop-down du projet, choisissez **C#,** **Windows**et **WinUI,** respectivement.  
     
     :::image type="complex" source="./media/winui-gettingstarted-selections.png" alt-text="Créer un projet WinUI à l’aide Visual Studio" lightbox="./media/winui-gettingstarted-selections.png":::
         Créer un projet WinUI à l’aide Visual Studio
@@ -61,7 +60,7 @@ Commencez par un projet de bureau de base qui contient une seule fenêtre princi
 1.  Entrez un nom de projet.
 1.  Choisissez les options selon vos besoins.  
 1.  Choisissez **Créer**.  
-1.  Dans **le nouveau projet de plateforme Windows**universelle, choisissez les valeurs suivantes, puis choisissez **OK.**  
+1.  Dans **nouveau projet de plateforme Windows**universelle, choisissez les valeurs suivantes, puis choisissez **OK.**  
     *   **Version cible**:  **Windows 10, version 1903 (build 18362)** ou ultérieure  
     *   **Version minimale**:  **Windows 10, version 1803 (build 17134)**  
     
@@ -70,11 +69,11 @@ Commencez par un projet de bureau de base qui contient une seule fenêtre princi
     :::image-end:::  
     
 1.  Dans l’Explorateur de solutions, deux projets sont générés.  
-    *   **Nom de votre projet (Bureau)**.  Le projet Bureau contient le code de votre application.  Le `App.xaml.cs` fichier définit une classe qui représente `Application` l’instance de votre application.  Le `MainWindow.xaml.cs` fichier définit une classe qui représente la fenêtre principale affichée par `MainWindow` l’instance de votre application.  Les classes dérivent des types de `Microsoft.UI.Xaml` l’espace de noms WinUI.  
-    *   **Nom de votre projet (package).**  Le projet package est un projet d’empaquetage d’application Windows qui est configuré pour créer l’application dans un package MSIX pour le déploiement.  Le projet contient le manifeste du package de votre application et est le projet de démarrage de votre solution par défaut.  Pour plus d’informations, accédez à Configurer votre application de bureau pour la mise en package [MSIX][WindowsMsixDesktopToUwpPackagingDotNet] dans Visual Studio et référence du schéma de manifeste de package [pour Windows 10.][UwpSchemasAppxpackageUapmanifestRoot]  
+    *   **Nom de votre projet (Bureau)**.  Le projet Bureau contient le code de votre application.  Le `App.xaml.cs` fichier définit une classe qui représente `Application` l’instance de votre application.  Le `MainWindow.xaml.cs` fichier définit une classe qui représente la fenêtre principale affichée par `MainWindow` l’instance de votre application.  Les classes dérivent de types dans `Microsoft.UI.Xaml` l’espace de noms de WinUI.  
+    *   **Nom de votre projet (package).**  Le projet package est un projet d’empaquetage d’application Windows qui est configuré pour créer l’application dans un package MSIX pour le déploiement.  Le projet contient le manifeste du package de votre application et est le projet de démarrage de votre solution par défaut.  Pour plus d’informations, accédez à Configurer votre application de bureau pour la mise en package [MSIX][WindowsMsixDesktopToUwpPackagingDotNet] dans Visual Studio et référence de schéma de manifeste de package [pour Windows 10][UwpSchemasAppxpackageUapmanifestRoot].  
 1.  Dans l’Explorateur de solutions, pour afficher le code, ouvrez le `MainWindow.xaml` fichier.  Pour exécuter votre projet et afficher une fenêtre avec un bouton, sélectionnez `F5` .  
     
-## Étape 2 : ajouter un contrôle WebView2 à votre projet  
+## <a name="step-2---add-a-webview2-control-to-your-project"></a>Étape 2 : ajouter un contrôle WebView2 à votre projet  
 
 Ajoutez un contrôle WebView2 à votre projet.  
 
@@ -137,7 +136,7 @@ Ajoutez un contrôle WebView2 à votre projet.
        Le contrôle WebView2 affiche les microsoft.com  
     :::image-end:::  
     
-## Étape 3 : ajouter des contrôles de navigation  
+## <a name="step-3---add-navigation-controls"></a>Étape 3 : ajouter des contrôles de navigation  
 
 Pour permettre aux utilisateurs de contrôler la page web qui s’affiche dans votre contrôle WebView2, ajoutez une barre d’adresse à votre application.  
 
@@ -197,7 +196,7 @@ Pour permettre aux utilisateurs de contrôler la page web qui s’affiche dans v
        bing.com  
     :::image-end:::  
     
-## Étape 4 : événements de navigation  
+## <a name="step-4---navigation-events"></a>Étape 4 : événements de navigation  
 
 Les applications qui hébergent des contrôles WebView2 écoutent les événements suivants qui sont élevés par les contrôles WebView2 lors de la navigation dans la page web.  
 
@@ -243,12 +242,12 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 Pour créer et exécuter votre projet, sélectionnez `F5` .  Assurez-vous que la navigation est bloquée sur les sites HTTP et autorisée pour les sites HTTPS.  
 
-## Étape 5 : scripts  
+## <a name="step-5---scripting"></a>Étape 5 : écriture de scripts  
 
 Vous pouvez utiliser des applications hôtes pour injecter du code JavaScript dans des contrôles WebView2 lors de l’utilisation.  Vous pouvez tâcher WebView pour exécuter du javaScript arbitraire ou ajouter des scripts d’initialisation.  Le javaScript injecté s’applique à tous les nouveaux documents de niveau supérieur et aux images enfants jusqu’à ce que le JavaScript soit supprimé.  Le javaScript injecté est exécuté avec un minutage spécifique.  
 
 *   Exécutez-le après la création de l’objet global.  
-*   Exécutez-le avant tout autre script inclus dans le document HTML.  
+*   Exécutez-le avant d’exécuter tout autre script inclus dans le document HTML.  
 
 Par exemple, ajoutez des scripts qui envoient une alerte lorsqu’un utilisateur navigue vers des sites non HTTPS.  Modifiez la fonction pour injecter un script dans le contenu web qui `EnsureHttps` utilise [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync].  
 
@@ -276,23 +275,25 @@ Pour créer et exécuter votre projet, sélectionnez `F5` .  Assurez-vous que vo
 
 Félicitations, vous avez créé votre première application WebView2.  
 
-## Étapes suivantes  
+## <a name="next-steps"></a>Étapes suivantes  
 
 Pour en savoir plus sur WebView2, accédez aux ressources suivantes.  
 
-### Voir également  
+### <a name="see-also"></a>Voir également  
 
 *   Pour obtenir un exemple complet des fonctionnalités WebView2, accédez [à WebView2Samples.][GithubMicrosoftedgeWebview2samplesMain]  
-*   Pour plus d’informations sur WebView2, accédez [à Ressources WebView2.][Webview2IndexNextSteps]  
+*   Pour plus d’informations sur WebView2, accédez à [Ressources WebView2.][Webview2IndexNextSteps]  
     
     > [!NOTE]
-    > L’objet WinRT CoreWebView2 n’est peut-être pas disponible avec la version de l’API WebView2.  Pour comprendre quelles API sont disponibles pour les contrôles WebView2, accédez à [WebView2 Spec][GithubMicrosoftUiXamlSpecsWebview2] pour obtenir la liste des API disponibles.  
+    > L’objet WinRT CoreWebView2 n’est peut-être pas disponible avec la version de l’API WebView2.  Pour comprendre quelles API sont disponibles pour les contrôles WebView2, accédez à [WebView2 Spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] pour obtenir la liste des API disponibles.  
     
-*   Pour plus d’informations sur l’API WebView2, accédez aux spécifications [WebView2.][GithubMicrosoftUiXamlSpecsWebview2]  
+*   Pour plus d’informations sur l’API WebView2, accédez aux spécifications [WebView2.][GithubMicrosoftMicrosoftUiXamlSpecsWebview2]  
     
-## Entrer en contact avec l’équipe Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+
+Pour envoyer vos demandes ou bogues de fonctionnalité spécifiques à WinUI, accédez à Problèmes [- microsoft/microsoft-ui-xaml][GithubMicrosoftMicrosoftUiXamlIssues] et choisissez **Nouveau problème.**  
 
 <!-- links -->  
 
@@ -312,7 +313,8 @@ Pour en savoir plus sur WebView2, accédez aux ressources suivantes.
 [WindowsMsixDesktopToUwpPackagingDotNet]: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net "Configurer votre application de bureau pour l’empaquetage MSIX dans Visual Studio | Documents Microsoft"  
 [WindowsUwpGetStartedEnableYourDeviceForDevelopment]: /windows/uwp/get-started/enable-your-device-for-development "Activer votre appareil pour le développement | Documents Microsoft"  
 
-[GithubMicrosoftUiXamlSpecsWebview2]: https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md "Spécifications WebView2 : microsoft/microsoft-ui-xaml-specs | GitHub"  
+[GithubMicrosoftMicrosoftUiXamlIssues]: https://github.com/microsoft/microsoft-ui-xaml/issues "Problèmes : microsoft/microsoft-ui-xaml | GitHub"  
+[GithubMicrosoftMicrosoftUiXamlSpecsWebview2]: https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md "Spécifications WebView2 : microsoft/microsoft-ui-xaml-specs | GitHub"  
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "Commentaires WebView - MicrosoftEdge/WebViewFeedback | GitHub"  
@@ -323,7 +325,7 @@ Pour en savoir plus sur WebView2, accédez aux ressources suivantes.
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Télécharger les canaux Microsoft Edge Insider"  
 
-[NugetHome]: https://nuget.org "Accueil | NuGet Gallery"  
+[NugetHome]: https://nuget.org "Accueil | Galerie NuGet"  
 
 [WindowsDotnetcliBlobCoreSdk50100Preview4202681X86]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exe "Télécharger dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exe"  
 
