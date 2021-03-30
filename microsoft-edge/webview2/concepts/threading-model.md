@@ -1,38 +1,91 @@
 ---
 description: Modèle de thread
-title: Modèle de thread
+title: Modèle de thread | WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 03/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, applications WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge
-ms.openlocfilehash: 61e3b7fc8d25e2a1ce9c60fb84f5f39ba43f281b
-ms.sourcegitcommit: efdc6369c48942bfa39e45c713300ed70f0e3655
+keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+ms.openlocfilehash: 7b447f5cc5fcce3439166638d47a0b87e5536c0a
+ms.sourcegitcommit: 5e218b24fb21fcfa9c82b99f17373fed1ba5a21c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "11013736"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "11462042"
 ---
-# Modèle de thread 
+# <a name="threading-model"></a>Modèle de thread 
 
-Le contrôle WebView2 est basé sur le [modèle COM (Component Object Model)](https://docs.microsoft.com/windows/win32/com/the-component-object-model) et doit être exécuté sur un thread de type [thread unique cloisonné (STA)](https://docs.microsoft.com/windows/win32/com/single-threaded-apartments) .
+:::row:::
+   :::column span="1":::
+      Plateformes pris en charge :
+   :::column-end:::
+   :::column span="2":::
+      Win32, Windows Forms, WinUi, WPF
+   :::column-end:::
+:::row-end:::  
 
-## Sécurité des threads  
+Le contrôle WebView2 est basé sur le modèle com [(Component Object Model)][WindowsWin32ComTheComponentObjectModel] et doit s’exécuter sur un thread [STA (Single Threaded Caser).][WindowsWin32ComSingleThreadedApartments]  
 
-WebView2 doit être créé sur un thread d’interface utilisateur.  Particulièrement un thread avec une pompe de messages.  Tous les rappels se produisent sur ce thread et les requêtes dans le WebView2 doivent être effectuées sur ce thread.  Il n’est pas sûr d’utiliser le WebView2 à partir d’un autre thread.  
+## <a name="thread-safety"></a>Sécurité des threads  
 
-La seule exception est pour la `Content` propriété de `CoreWebView2WebResourceRequest` .  Le `Content` flux de propriété est lu à partir d’un thread d’arrière-plan.  Le flux doit être une technologie agile ou être créé à partir d’une tâche STA d’arrière-plan pour éviter l’impact sur les performances du thread d’interface utilisateur.  
+WebView2 doit être créé sur un thread d’interface utilisateur.  Plus précisément, un fil de discussion avec un message.  Tous les rappels se produisent sur ce thread et les requêtes dans Le WebView2 doivent être faites sur ce thread.  Il n’est pas sûr d’utiliser WebView2 à partir d’un autre thread.  
 
-## Entr  
+La seule exception concerne la `Content` propriété de `CoreWebView2WebResourceRequest` .  Le flux `Content` de propriété est lu à partir d’un thread d’arrière-plan.  Le flux doit être agile ou être créé à partir d’un thread STA d’arrière-plan pour empêcher la dégradation des performances sur le thread d’interface utilisateur.  
 
-Les rappels incluant des gestionnaires d’événements et des gestionnaires d’achèvement s’exécutent en série.  Si vous disposez d’un gestionnaire d’événements et commencez une boucle de messages, aucun gestionnaire d’événements ou aucun rappel d’achèvement ne peut commencer à s’exécuter dans une méthode réentrante.  
+## <a name="re-entrancy"></a>Ré-entrancy  
 
-## Reports  
+Les rappels, y compris les handleurs d’événements et de fin d’exécution, s’exécutent en série.  
+Une fois que vous avez exécuté un handler d’événements et commencé une boucle de messages, vous ne pouvez exécuter aucun rappel de fin ou de handle d’événement de manière réentrante.  
 
-Certains événements WebView2 lisent les valeurs définies sur leurs arguments d’événement ou effectuent une action après la fin du gestionnaire d’événements.  Si vous devez également exécuter une opération asynchrone telle qu’un gestionnaire d’événements, vous pouvez utiliser la `GetDeferral` méthode sur les arguments d’événement des événements associés.  L’objet de report retourné garantit que le gestionnaire d’événements n’est pas considéré comme complet tant que la `Complete` méthode de l' `Deferral` est demandée.  
+## <a name="deferrals"></a>Reports  
 
-Par exemple, vous pouvez utiliser l' `NewWindowRequested` événement pour fournir une `CoreWebView2` connexion en tant que fenêtre enfant lorsque le gestionnaire d’événements est terminé.  Mais si vous avez besoin de créer la `CoreWebView2` méthode de manière asynchrone, demandez la `GetDeferral` méthode sur le `NewWindowRequestedEventArgs` .  Une fois que vous avez créé le et que vous avez `CoreWebView2` défini la `NewWindow` propriété sur la `NewWindowRequestedEventArgs` requête, l' `Complete` objet est retourné de manière asynchrone `Deferral` à l’aide de la `GetDeferral` méthode.  
+Certains événements WebView2 lisent les valeurs définies sur les arguments d’événements associés ou démarrent une action une fois que le handler d’événements est terminé.  Si vous devez également exécuter une opération asynchrone de ce type de handler d’événements, utilisez la méthode sur les arguments d’événement `GetDeferral` des événements associés.  L’objet renvoyé garantit que le handler d’événements n’est pas considéré comme étant terminé tant que `Deferral` la méthode de l’objet `Complete` `Deferral` n’est pas demandée.  
+
+Par exemple, vous pouvez utiliser l’événement pour fournir une fenêtre à connecter en tant qu’enfant `NewWindowRequested` lorsque le handler d’événements se `CoreWebView2` termine.  Mais si vous devez créer de manière asynchrone la `CoreWebView2` , demandez la méthode sur le `GetDeferral` `NewWindowRequestedEventArgs` .  Une fois que vous avez créé de manière asynchrone la propriété et que vous l’avez définie sur l’objet , la requête sur l’objet est renvoyée `CoreWebView2` à `NewWindow` l’aide de la `NewWindowRequestedEventArgs` `Complete` `Deferral` `GetDeferral` méthode.  
+
+## <a name="block-the-ui-thread"></a>Bloquer le thread d’interface utilisateur  
+
+WebView2 s’appuie sur la vision du message du thread d’interface utilisateur pour exécuter des rappels de handler d’événements et des rappels d’achèvement de méthode async.  Si vous utilisez des méthodes qui bloquent le message, telles que ou , vos serveurs `Task.Result` `WaitForSingleObject` d’événements WebView2 et les handles d’achèvement de méthode async ne s’exécutent pas.  Par exemple, le code suivant ne se termine pas, car il arrête le message pendant qu’il `Task.Result` attend `ExecuteScriptAsync` d’être terminé.  Dans la mesure où le message est bloqué, `ExecuteScriptAsync` l’opération n’est pas en mesure de se terminer.   
+
+```csharp
+private void Button_Click(object sender, EventArgs e)
+{
+    string result = webView2Control.CoreWebView2.ExecuteScriptAsync("'test'").Result;
+    MessageBox.Show(this, result, "Script Result");
+}
+```  
+
+Utilisez un mécanisme asynchrone tel que et , qui ne bloque pas le message ou le `await` `async` thread `await` d’interface utilisateur.  
+
+```csharp
+private async void Button_Click(object sender, EventArgs e)
+{
+    string result = await webView2Control.CoreWebView2.ExecuteScriptAsync("'test'");
+    MessageBox.Show(this, result, "Script Result");
+}
+```  
+
+## <a name="see-also"></a>Voir également  
+
+*   Pour commencer à utiliser WebView2, accédez aux guides de mise en page [WebView2.][Webview2IndexGettingStarted]  
+*   Pour obtenir un exemple complet des fonctionnalités WebView2, accédez au référentiel [WebView2Samples][GithubMicrosoftedgeWebview2samples] sur GitHub.  
+*   Pour plus d’informations sur les API WebView2, accédez à la [référence d’API.][DotnetApiMicrosoftWebWebview2WpfWebview2]  
+*   Pour plus d’informations sur WebView2, accédez à [Ressources WebView2.][Webview2IndexNextSteps]  
+
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe Microsoft Edge WebView  
+
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
+
+[Webview2IndexGettingStarted]: ../index.md#getting-started "Getting started - Introduction to Microsoft Edge WebView2 | Documents Microsoft"  
+[Webview2IndexNextSteps]: ../index.md#next-steps "Étapes suivantes : présentation de Microsoft Edge WebView2 | Documents Microsoft"  
+
+[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "Classe WebView2 | Documents Microsoft"  
+
+[WindowsWin32ComSingleThreadedApartments]: /windows/win32/com/single-threaded-apartments "Single-Threaded | Documents Microsoft"  
+[WindowsWin32ComTheComponentObjectModel]: /windows/win32/com/the-component-object-model "Modèle objet composant | Documents Microsoft"  
+
+[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  

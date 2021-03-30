@@ -1,5 +1,5 @@
 ---
-description: En savoir plus sur l’affichage 3D et son utilisation.
+description: Tout savoir sur la vue 3D et son utilisation.
 title: Vue 3D
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,134 +8,134 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
 ms.openlocfilehash: bd91939a19f02a426834a85ef92eca388f8f1eda
-ms.sourcegitcommit: 3234b32e73c9f8362082d995296bd1c5e4286036
+ms.sourcegitcommit: 5e218b24fb21fcfa9c82b99f17373fed1ba5a21c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2020
+ms.lasthandoff: 03/30/2021
 ms.locfileid: "11203969"
 ---
-# Vue 3D  
+# <a name="3d-view"></a>Vue 3D  
 
-Utilisez la **vue 3D** pour déboguer votre application Web en naviguant dans le [modèle DOM][MDNDocumentObjectModel] ou le contexte de pile d' [index z][MDNZIndex] .  Vous pouvez effectuer les tâches suivantes.  
+Utilisez la **vue 3D** pour déboguer votre application web en naviguant dans le modèle [DOM (Document Object Model)][MDNDocumentObjectModel] ou le contexte d’empilement [d’index z.][MDNZIndex]  Avec elle, vous pouvez effectuer les tâches suivantes.  
 
-*   [Explorer la page Web traduite en perspective 3D](#3d-dom)  
-*   [Déboguer en fonction du contexte de pile z-index](#z-index)  
-*   [Accéder à la fonctionnalité outil calques à partir de l’affichage 3D avec des couches composites](#composited-layers)  
-*   [Effacement de l’encombrement du volet DOM](#changing-your-view) ou du [volet index z](#change-the-scope-of-your-exploration)  
-*   [Choisissez le modèle de couleurs pour déboguer au mieux vos problèmes DOM](#dom-color-type) ou [index z](#z-index-color-type)  
+*   [Explorer la page web traduite dans une perspective 3D](#3d-dom)  
+*   [Débogage basé sur un contexte d’empilement d’index z](#z-index)  
+*   [Accéder aux fonctionnalités de l’outil Layers à partir de l’affichage 3D avec des couches composites](#composited-layers)  
+*   [Effacer une partie de l’encombrement dans le volet DOM](#changing-your-view) ou le [volet d’index z](#change-the-scope-of-your-exploration)  
+*   [Choisissez le modèle de couleurs pour déboguer au](#dom-color-type) mieux vos problèmes DOM ou [z-index](#z-index-color-type)  
 
-Si vous souhaitez explorer le prototype d’un projet 3D et exécuter le code vous-même, accédez à l' [exemple d’affichage 3D][GithubMicrosoftedgeDevtoolssamples3dview].  
+Si vous souhaitez explorer un prototype de projet d’affichage 3D et exécuter le code vous-même, accédez à [l’exemple d’affichage 3D.][GithubMicrosoftedgeDevtoolssamples3dview]  
 
-Sur le côté gauche se trouvent trois volets que vous pouvez utiliser pour l’utilisation de débogage.  
+Sur le côté gauche, vous pouvez utiliser trois volets pour votre expérience de débogage.  
 
-*   Volet [index Z](#z-index) .  Parcourez les différents éléments de l’application Web à l’aide du contexte de l’index z.  Le volet **indexation Z** est le volet par défaut.  
-*   Volet [DOM 3D](#3d-dom) .  Explorez globalement le DOM tout en étant facilement accessible.  Pour accéder au volet, sélectionnez le volet **DOM** en regard du volet **index Z** .  
-*   Volet [couches composites](#composited-layers) .  Ajoutez un autre élément 3D pour créer une connaissance plus complète du point de vue des couches.  Pour accéder au volet, sélectionnez le volet **couches composites** en regard du volet **DOM** .  
+*   Volet [d’index Z.](#z-index)  Parcourez les différents éléments de l’application web avec le contexte d’index z à l’esprit.  Le **volet d’index Z** est le volet par défaut.  
+*   Volet [DOM 3D.](#3d-dom)  Explorez le DOM dans son ensemble avec tous les éléments facilement accessibles.  Pour accéder au volet, choisissez le volet **DOM** en face du volet **d’index Z.**  
+*   Volet [Calques composites.](#composited-layers)  Ajoutez un autre élément 3D pour créer une expérience plus complète du point de vue des couches.  Pour accéder au volet, choisissez le volet **Couches** composites en côté du **volet DOM.**  
     
-Sur le côté droit, la zone de dessin affiche vos sélections à partir de l' [index Z](#z-index), du [DOM 3D](#3d-dom)ou des [couches composites](#composited-layers).  
+Sur le côté droit, la zone de dessin affiche vos sélections à partir de [l’index Z,](#z-index) [du DOM 3D](#3d-dom)ou des [calques composites.](#composited-layers)  
 
-## Navigation dans la zone de dessin  
+## <a name="navigating-the-canvas"></a>Navigation dans la zone de dessin  
 
-:::image type="complex" source="../media/3d-view-canvas.msft.png" alt-text="Toile de vue 3D" lightbox="../media/3d-view-canvas.msft.png":::
-   Toile de vue 3D  
+:::image type="complex" source="../media/3d-view-canvas.msft.png" alt-text="Canvas of 3D View" lightbox="../media/3d-view-canvas.msft.png":::
+   Canvas of 3D View  
 :::image-end:::  
 
-### Raccourcis clavier  
+### <a name="keyboard-shortcuts"></a>Raccourcis clavier  
 
-*   Faire pivoter le DOM: pour faire pivoter horizontalement, sélectionnez les `left-arrow` `right-arrow` touches et.  Pour faire pivoter à la verticale, sélectionnez les `up-arrow` `down-arrow` touches et.  
-*   Naviguez dans le DOM: pour parcourir les éléments adjacents, sélectionnez un élément, puis les `up-arrow` `down-arrow` touches et.  
+*   Faire pivoter le DOM : pour faire pivoter horizontalement, sélectionnez les `left-arrow` touches et les `right-arrow` touches.  Pour faire pivoter verticalement, sélectionnez `up-arrow` les touches et les `down-arrow` touches.  
+*   Naviguez dans le DOM : pour parcourir les éléments adjacents, choisissez un élément et sélectionnez les `up-arrow` touches et les `down-arrow` touches.  
 
-### Contrôles de souris  
+### <a name="mouse-controls"></a>Contrôles de souris  
 
-*   Faire pivoter le DOM: sélectionnez et faites glisser autour de l’espace de zone de dessin.  
-*   Panoramique du DOM: Ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \) et faites-le glisser dans la direction dans laquelle vous voulez que le DOM se déplace.  
-*   Zoom: faites glisser deux doigts sur le pavé tactile ou utilisez le volant de défilement de votre souris.  
+*   Faire pivoter le DOM : choisissez et faites glisser l’espace de dessin.  
+*   Faites un mouvement panoramique autour du DOM : ouvrez le menu contextuel \(clic droit\) et faites glisser le DOM dans la direction que vous souhaitez que le DOM se déplace.  
+*   Zoom : faites glisser deux doigts sur le pavé tactile ou utilisez la roulette de défilement sur votre souris.  
 
-### Contrôles à l’écran  
+### <a name="on-screen-controls"></a>Contrôles à l’écran  
 
 :::image type="complex" source="../media/3d-view-controls-small.msft.png" alt-text="Contrôles à l’écran" lightbox="../media/3d-view-controls-small.msft.png":::
    Contrôles à l’écran  
 :::image-end:::  
 
-*   Réinitialisation de l’affichage zone de dessin à l’affichage d’origine: cliquez sur le bouton **Réinitialiser l’appareil photo** , ou sélectionnez le bouton **Réinitialiser les éléments dans afficher et recentrer la caméra** \ (icône d’actualisation latérale \).  
-*   Actualiser la zone de dessin \ (par exemple, si le navigateur a changé ou s’il a été basculé vers une vue de l’émulateur de périphériques \): cliquez sur le bouton de nouveau **snapshot** ou sur le bouton **prendre un nouvel** instantané.  
+*   Réinitialisez l’affichage de **** la zone de dessin à l’affichage d’origine : choisissez le bouton Réinitialiser l’appareil photo ou le bouton Réinitialiser les éléments dans l’affichage et **ré centerz** l’appareil photo \(icône d’actualisation latérale\).  
+*   Actualisez la zone de dessin \(par exemple, si le navigateur a **** changé ou si **** vous avez basculé vers une vue d’émulateur d’appareil\) : sélectionnez le bouton Prendre une capture instantanée ou le bouton Prendre une nouvelle capture instantanée \(icône d’actualisation\).  
 
-## Index Z  
+## <a name="z-index"></a>Index Z  
 
-:::image type="complex" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Affichage index Z" lightbox="../media/3d-view-z-index-view-box.msft.png":::
-   Affichage index Z  
+:::image type="complex" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Vue d’index Z" lightbox="../media/3d-view-z-index-view-box.msft.png":::
+   Vue d’index Z  
 :::image-end:::  
 
-Lorsque le volet **Z-index** comporte des fonctionnalités partagées avec le volet **DOM 3D** , les volets contiennent toujours des éléments propres au volet.  
+Bien que le **volet d’index Z** dispose de fonctionnalités partagées avec le volet **DOM 3D,** les volets ont toujours des éléments qui sont propres au volet.  
 
-### Mettre en évidence des éléments avec un contexte de gerbage  
+### <a name="highlight-elements-with-stacking-context"></a>Mettre en surbrillation des éléments avec un contexte d’empilement  
 
-Les **éléments de mise en surbrillance avec un paramètre de contexte d’empilement** vous permettent d’activer \ (et désactivé) les balises z-index pour les éléments de la zone de dessin.  La case à cocher est activée par défaut.  
+Les **éléments Highlight avec le** paramètre de contexte d’empilement vous permettent d’activer \(et désactiver\) les balises d’index z pour les éléments de la zone de dessin.  La case à cocher est choisie par défaut.  
 
-### Changer l’étendue de votre exploration  
+### <a name="change-the-scope-of-your-exploration"></a>Modifier l’étendue de votre exploration  
 
-Le bouton **Afficher tous les éléments** est le moyen le plus rapide d’afficher tous les éléments du DOM après avoir modifié les paramètres situés au-dessous.  
+Le **bouton Afficher tous les** éléments est le moyen le plus rapide d’afficher tous les éléments du DOM après avoir changé les paramètres sous celui-ci.  
 
-Le bouton **afficher uniquement les éléments avec un contexte de empilement** supprime des éléments sans contexte de empilement et aplatit le DOM pour faciliter la navigation.  
+Le **bouton Afficher uniquement avec le** bouton de contexte d’empilement supprime les éléments sans contexte d’empilement et aplatit le DOM pour faciliter la navigation.  
 
-Le bouton **isoler l’élément sélectionné** est essentiellement composé de trois boutons.  Deux cases à cocher s’affichent sous le bouton **isoler l’élément sélectionné** : la case à cocher **Afficher tous les parents** et **conserver uniquement les parents avec la nouvelle case à cocher contexte de superposition** .  
+Le **bouton Isoler l’élément sélectionné** est essentiellement de trois boutons dans un.  Il existe deux case **** à cocher sous le bouton Isoler l’élément sélectionné : la case à cocher Afficher tous les **parents** et la case à cocher Conserver uniquement les **parents** avec une nouvelle case à cocher de contexte d’empilement.  
 
-La case à cocher **Afficher tous les parents** est activée par défaut.  Pour afficher l’élément et les parents de la zone de dessin, sélectionnez un élément et choisissez le bouton **isoler l’élément sélectionné** .  
+La **case à cocher** Afficher tous les parents est désactivée par défaut.  Pour afficher l’élément et tous les parents sur la zone de dessin, choisissez un élément et choisissez le bouton Isoler **l’élément** sélectionné.  
 
-Pour afficher l’élément et les parents ayant un nouveau contexte de gerbage sur la zone de dessin, activez le paramètre **conserver uniquement les parents avec le nouveau contexte d’empilage** et sélectionnez le bouton **isoler l’élément sélectionné** .  
+Pour afficher l’élément et les parents qui ont un nouveau contexte d’empilement sur la zone de dessin, sélectionnez Le paramètre Conserver uniquement les **parents** avec un nouveau paramètre de contexte d’empilement et choisissez le bouton Isoler l’élément **sélectionné.**  
 
-Pour afficher l’élément que vous avez sélectionné dans la zone de dessin, désactivez les paramètres, puis cliquez sur le bouton **isoler l’élément sélectionné** .  
+Pour afficher l’élément que vous avez choisi sur la zone de dessin, désactiver les deux paramètres et sélectionner le bouton Isoler **l’élément** sélectionné.  
 
-Dans la partie inférieure du volet **DOM 3D** , recherchez les **éléments Hide avec le même ordre de peinture que leur** case à cocher parent.  Le choix et la désélection de la case à cocher permet d’actualiser les éléments en fonction de votre choix.  Si cette propriété est activée, les éléments partageant l’ordre de peinture sont aplatis pour le parent.  
+En bas du volet **DOM 3D,** recherchez les éléments Hide avec le même ordre de couleur que leur case à cocher **parent.**  Le choix et la désélection de la case à cocher actualisent les éléments en fonction de votre choix.  S’il est choisi, les éléments qui partagent l’ordre de la couleur sont aplatis au parent.  
 
-Les options sont conçues pour effacer une partie du courrier pêle-mêle qu’il est difficile de créer dans votre zone de dessin.  
+Les options sont destinées à effacer une partie de l’encombrement que des pages web plus complexes créent dans votre zone de dessin.  
 
-### Type de couleur Z-index  
+### <a name="z-index-color-type"></a>Type de couleur d’index Z  
 
-Les différentes visualisations que vous pouvez utiliser pour le DOM dans votre zone de dessin.  Que vous l’utilisiez avec plaisir ou que les visualisations vous permettent de visualiser le DOM plus facilement, l’DevTools d’colorways et une option d’utilisation de la **couleur d’arrière-plan** .  Le volet **Z-index** partage la couleur **pourpre** avec le blanc et la couleur d' **arrière-plan** avec le volet **DOM 3D** .  À partir de l’élément visuel ajouté de l’étiquette de l’index z, vos commentaires ayant entraîné une réduction du nombre d’options de couleurs.  La nouvelle simplicité améliore l’interface de débogage d’index z.  Les cases d’option vous permettent d’activer ou de désactiver les options et de choisir le type de couleur.  Le type de couleur peut être le plus approprié pour votre projet ou pour un projet qui vous plaît le plus.  
+Les différentes visualisations que vous pouvez utiliser pour le DOM dans votre zone de dessin.  Que vous l’utilisez pour vous faire plaisir ou parce que les visualisations vous aident à mieux visualiser le DOM, les DevTools ont des colorways différents et une **option** utiliser la couleur d’arrière-plan.  Le **volet d’index Z partage** le violet en blanc et la couleur d’arrière-plan avec le volet **** **DOM 3D.** ****  Étant donné l’élément visuel ajouté des étiquettes d’index z, vos commentaires ont conduit à une réduction du nombre d’options de couleur.  La nouvelle simplicité améliore l’expérience de débogage z-index.  Les boutons d’option vous permettent de faire basculer les options et de sélectionner le type de couleur.  Le type de couleur est le plus approprié pour votre projet ou celui que vous aimez le plus.  
 
-## MODÈLE DOM 3D  
+## <a name="3d-dom"></a>DOM 3D  
 
 :::image type="complex" source="../media/3d-view-dom-purple-box.msft.png" alt-text="Affichage DOM" lightbox="../media/3d-view-dom-purple-box.msft.png":::
    Affichage DOM  
 :::image-end:::  
 
-Si vous souhaitez utiliser davantage d’une vue de débogage générale plutôt que l’interface z-index, le **DOM 3D** fournit une vue globale du DOM.  Dans la mesure où le contexte de l’index z est supprimé, le DOM est empilé plus en détail.  Le volet **DOM 3D** comporte des fonctionnalités similaires, mais il existe quelques nuancements.  
+Si vous souhaitez prendre plus d’une vue de débogage générale, plutôt que l’expérience d’index z, le **DOM 3D** donne une vue d’ensemble du DOM.  Étant donné que le contexte z-index est supprimé, le DOM est empilé plus étroitement et plus proprement.  Le **volet DOM 3D** possède des fonctionnalités similaires, mais il existe quelques nuances.  
 
-### Changer d’affichage  
+### <a name="changing-your-view"></a>Modification de votre affichage  
 
-Dans le volet **DOM 3D** , le bouton **isoler l’élément sélectionné** inclut les cases à cocher **enfant** et inclure les **parents** .  Les deux cases à cocher sont activées par défaut.  Cela signifie que si vous choisissez le bouton **isoler l’élément sélectionné** après le choix d’un élément, la zone de dessin affiche l’élément sélectionné, les parents de l’élément et les enfants de l’élément.  Désactivez le paramètre **inclure les enfants** , puis sélectionnez de nouveau le bouton **isoler l’élément sélectionné** pour afficher l’élément choisi et les parents de l’élément.  Si vous activez le paramètre **inclure les enfants** et désactivez le paramètre **inclure les parents** , puis sélectionnez le bouton **isoler l’élément sélectionné** , la zone de dessin affiche l’élément et tout enfant.  Si vous désactivez les deux paramètres et sélectionnez le bouton **isoler l’élément sélectionné** , la zone de dessin affiche uniquement l’élément que vous avez précédemment choisi.  
+Dans le volet **DOM 3D,** le bouton **** Isoler l’élément sélectionné inclut les case à cocher Inclure les enfants et Inclure **les parents.** ****  Les deux case à cocher sont désactivées par défaut.  Cela signifie que **** si vous choisissez le bouton Isoler l’élément sélectionné après avoir choisi un élément, la zone de dessin affiche l’élément choisi, les parents de l’élément et les enfants de l’élément.  Désactiver le paramètre **Inclure** les **** enfants et sélectionner de nouveau le bouton Isoler l’élément sélectionné pour afficher l’élément choisi et les parents de l’élément.  Si vous sélectionnez le paramètre Inclure **** des enfants et **** que vous la désactiverez, puis que vous choisissez le bouton Isoler l’élément sélectionné, la zone de dessin affiche l’élément et tous les enfants. ****  Si vous turn off both settings and choose the **Isolate selected element** button, the canvas only displays the element you previously choose.  
 
-Curseur sur le volet de contrôles intitulé **niveau d’imbrication de la page** avec un nombre en regard de celui-ci.  Le nombre indique le nombre de calques du document.  Le fait de faire glisser le curseur vers la gauche entraîne l’annulation des couches extérieures jusqu’à ce que vous soyez laissé avec un niveau d’imbrication défini sur `1` , qui n’affiche que l’élément le plus lointain dans le DOM.  Pour supprimer une partie du courrier pêle-mêle, faites glisser le curseur.  Cela vous permet de mieux voir ce qui se passe dans les niveaux inférieurs.  
+Un curseur sur le volet de contrôle nommé Niveau d’imbrmbrage pour **la page** avec un numéro à côté de celui-ci.  Le nombre indique le nombre de calques pour le document.  Le fait de faire glisser le curseur vers la gauche entraîne l’éloignement des couches les plus à l’extérieur jusqu’à ce qu’il vous reste un niveau d’imbrmbrage qui affiche uniquement l’élément arrière le plus éloigné dans le `1` DOM.  Pour supprimer une partie de l’encombrement, faites glisser le curseur.  Cela vous permet d’avoir un examen plus étroit de ce qui se passe dans les niveaux inférieurs.  
 
-### Type de couleur DOM  
+### <a name="dom-color-type"></a>Type de couleur DOM  
 
-Le volet **DOM 3D** affiche les options suivantes.  
+Le **volet DOM 3D** affiche les options suivantes.  
 
 *   Trois colorways différents.  
-    *   **Carte thermique engagements-pourpre à blanc**  
-    *   **Carte thermique engagements-bleu à jaune**  
-    *   **Carte thermique engagements-arc-en-ciel**  
+    *   **Map- Violet à Blanc**  
+    *   **Map- Bleu à Jaune**  
+    *   **Map-arc-en-ciel**  
 *   **Utiliser la couleur d’arrière-plan**  
 *   **Utiliser la texture d’écran**  
     
-L’option **utiliser la texture d’écran** ajoute du contexte à votre environnement de débogage.  Il affiche directement le contenu de la page Web sur les éléments.  
+**L’option Utiliser la texture d’écran** ajoute du contexte à votre expérience de débogage.  Il affiche directement le contenu de la page web sur les éléments.  
 
-## Calques composites
+## <a name="composited-layers"></a>Couches composites
 
-:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Volet couches composites" lightbox="../media/experiments-layers.msft.png":::
-   Volet **couches composites**
+:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Volet Couches composites" lightbox="../media/experiments-layers.msft.png":::
+   Volet des **couches composites**
 :::image-end:::  
 
-Le volet **couches composites** permet d’ouvrir les éléments de l’outil **calques** sans changer les contextes.  Vous pouvez toujours accéder aux détails de chacune des couches et utiliser les **rectangles de défilement lente** et **Paint**.
+Le **volet Calques composites** ouvre les éléments de l’outil **Layers** sans modifier les contextes.  Vous pouvez toujours accéder aux détails de chacune des couches et avoir les **rects** de défilement lent et **Paint**.
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
-L’équipe Microsoft Edge devtools travaille sur l’interface utilisateur et ajoute plus de fonctionnalités à l’affichage 3D en fonction de vos commentaires.  Envoyez vos commentaires pour vous aider à améliorer Microsoft Edge DevTools.  Cliquez sur l’icône **Envoyer des commentaires** dans le devtools ou sélectionnez `Alt` + `Shift` + `I` sur Windows/Linux ou `Option` + `Shift` + `I` sur MacOS et entrez les commentaires ou les demandes de fonctionnalité dont vous disposez pour le devtools.  
+L’équipe Microsoft Edge Devtools travaille sur l’interface utilisateur et ajoute des fonctionnalités à la vue 3D en fonction de vos commentaires.  Envoyez vos commentaires pour vous aider à améliorer Microsoft Edge DevTools.  Sélectionnez **l’icône** Envoyer des commentaires dans DevTools ou sélectionnez sur Windows/Linux ou sur macOS, puis entrez les commentaires ou les demandes de fonctionnalités dont vous disposez pour `Alt` + `Shift` + `I` `Option` + `Shift` + `I` devTools.  
 
 <!-- links -->  
 
-[GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Affichage 3D de Microsoft Edge DevTools-MicrosoftEdge/DevToolsSamples | GitHub"  
+[GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Vue 3D Microsoft Edge DevTools - MicrosoftEdge/DevToolsSamples | GitHub"  
 
-[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "DOM (Document Object Model) | MDN"  
-[MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "index z | MDN"  
+[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Modèle objet de document (DOM) | MDN"  
+[MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"  
