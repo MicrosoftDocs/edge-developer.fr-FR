@@ -27,7 +27,7 @@ ms.locfileid: "11343065"
 
 ## <span data-ttu-id="abb04-114">Étape 1 : ajouter des autorisations au manifeste d’extension</span><span class="sxs-lookup"><span data-stu-id="abb04-114">Step 1 - Add permissions to the extension manifest</span></span>  
 
-<span data-ttu-id="abb04-115">Ajoutez `nativeMessaging` l’autorisation au **manifest.jssur le** fichier de l’extension.</span><span class="sxs-lookup"><span data-stu-id="abb04-115">Add the `nativeMessaging` permission to the **manifest.json** file of the extension.</span></span>  <span data-ttu-id="abb04-116">L’extrait de code suivant est un exemple \*\* d'manifest.jssur\*\*.</span><span class="sxs-lookup"><span data-stu-id="abb04-116">The following code snippet is an example of **manifest.json**.</span></span>  
+<span data-ttu-id="abb04-115">Ajoutez `nativeMessaging` l’autorisation au **manifest.jssur le** fichier de l’extension.</span><span class="sxs-lookup"><span data-stu-id="abb04-115">Add the `nativeMessaging` permission to the **manifest.json** file of the extension.</span></span>  <span data-ttu-id="abb04-116">L’extrait de code suivant est un exemple  d'manifest.jssur.</span><span class="sxs-lookup"><span data-stu-id="abb04-116">The following code snippet is an example of **manifest.json**.</span></span>  
 
 ```json
     {

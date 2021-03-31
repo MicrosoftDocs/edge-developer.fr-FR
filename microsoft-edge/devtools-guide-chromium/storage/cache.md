@@ -39,7 +39,7 @@ ms.locfileid: "11439316"
 1.  <span data-ttu-id="ac372-110">Choisissez **l’onglet Application** pour ouvrir le **panneau Application.**</span><span class="sxs-lookup"><span data-stu-id="ac372-110">Choose the **Application** tab to open the **Application** panel.</span></span>  <span data-ttu-id="ac372-111">Le **volet Manifeste** s’ouvre généralement par défaut.</span><span class="sxs-lookup"><span data-stu-id="ac372-111">The **Manifest** pane usually opens by default.</span></span>  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-manifest.msft.png":::
-       <span data-ttu-id="ac372-113">Volet \*\*\*\* manifeste</span><span class="sxs-lookup"><span data-stu-id="ac372-113">The **Manifest** pane</span></span>  
+       <span data-ttu-id="ac372-113">Volet  manifeste</span><span class="sxs-lookup"><span data-stu-id="ac372-113">The **Manifest** pane</span></span>  
     :::image-end:::  
     
 1.  <span data-ttu-id="ac372-114">Développez la section **Stockage du cache** pour afficher les caches disponibles.</span><span class="sxs-lookup"><span data-stu-id="ac372-114">Expand the **Cache Storage** section to view available caches.</span></span>  
@@ -99,7 +99,7 @@ ms.locfileid: "11439316"
     
 ## <a name="delete-all-cache-data"></a><span data-ttu-id="ac372-145">Supprimer toutes les données de cache</span><span class="sxs-lookup"><span data-stu-id="ac372-145">Delete all cache data</span></span>  
 
-1.  <span data-ttu-id="ac372-146">Ouvrez \*\*\*\*  >  **l’application Effacer le stockage.**</span><span class="sxs-lookup"><span data-stu-id="ac372-146">Open **Application** > **Clear Storage**.</span></span>  
+1.  <span data-ttu-id="ac372-146">Ouvrez   >  **l’application Effacer le stockage.**</span><span class="sxs-lookup"><span data-stu-id="ac372-146">Open **Application** > **Clear Storage**.</span></span>  
 1.  <span data-ttu-id="ac372-147">Assurez-vous que la case **à cocher Stockage** du cache est activée.</span><span class="sxs-lookup"><span data-stu-id="ac372-147">Make sure that the **Cache Storage** checkbox is enabled.</span></span>  
     
     :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Case à cocher Stockage du cache" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
@@ -126,7 +126,7 @@ ms.locfileid: "11439316"
 
 > [!NOTE]
 > <span data-ttu-id="ac372-158">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="ac372-158">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="ac372-159">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/cache) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="ac372-159">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cache) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="ac372-159">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/cache) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="ac372-159">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cache) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="ac372-161">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="ac372-161">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

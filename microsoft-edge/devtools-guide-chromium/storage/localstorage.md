@@ -37,7 +37,7 @@ ms.locfileid: "11439674"
 1.  <span data-ttu-id="7fb41-107">Choisissez **l’onglet Application** pour ouvrir **l’outil Application.**</span><span class="sxs-lookup"><span data-stu-id="7fb41-107">Choose the **Application** tab to open the **Application** tool.</span></span>  <span data-ttu-id="7fb41-108">Le **volet** Manifeste s’affiche par défaut.</span><span class="sxs-lookup"><span data-stu-id="7fb41-108">The **Manifest** pane is shown by default.</span></span>  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-manifest.msft.png":::
-       <span data-ttu-id="7fb41-110">Volet \*\*\*\* manifeste</span><span class="sxs-lookup"><span data-stu-id="7fb41-110">The **Manifest** pane</span></span>  
+       <span data-ttu-id="7fb41-110">Volet  manifeste</span><span class="sxs-lookup"><span data-stu-id="7fb41-110">The **Manifest** pane</span></span>  
     :::image-end:::  
     
 1.  <span data-ttu-id="7fb41-111">Développez le menu **Stockage** local.</span><span class="sxs-lookup"><span data-stu-id="7fb41-111">Expand the **Local Storage** menu.</span></span>  
@@ -70,7 +70,7 @@ ms.locfileid: "11439674"
 ## <a name="edit-localstorage-keys-or-values"></a><span data-ttu-id="7fb41-126">Modifier les clés ou valeurs localStorage</span><span class="sxs-lookup"><span data-stu-id="7fb41-126">Edit localStorage keys or values</span></span>  
 
 1.  <span data-ttu-id="7fb41-127">[Afficher les paires clé-valeur localStorage d’un domaine.](#view-localstorage-keys-and-values)</span><span class="sxs-lookup"><span data-stu-id="7fb41-127">[View the localStorage key-value pairs of a domain](#view-localstorage-keys-and-values).</span></span>  
-1.  <span data-ttu-id="7fb41-128">Double-cliquez sur une cellule \*\*\*\* dans la colonne **Clé** ou Valeur pour modifier cette clé ou cette valeur.</span><span class="sxs-lookup"><span data-stu-id="7fb41-128">Double-click a cell in the **Key** or **Value** column to edit that key or value.</span></span>  
+1.  <span data-ttu-id="7fb41-128">Double-cliquez sur une cellule  dans la colonne **Clé** ou Valeur pour modifier cette clé ou cette valeur.</span><span class="sxs-lookup"><span data-stu-id="7fb41-128">Double-click a cell in the **Key** or **Value** column to edit that key or value.</span></span>  
     
     :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="Modifier une clé localStorage" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
        <span data-ttu-id="7fb41-130">Modifier une `localStorage` clé</span><span class="sxs-lookup"><span data-stu-id="7fb41-130">Edit a `localStorage` key</span></span>  
@@ -115,7 +115,7 @@ ms.locfileid: "11439674"
 
 > [!NOTE]
 > <span data-ttu-id="7fb41-150">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="7fb41-150">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="7fb41-151">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="7fb41-151">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="7fb41-151">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="7fb41-151">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="7fb41-153">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="7fb41-153">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

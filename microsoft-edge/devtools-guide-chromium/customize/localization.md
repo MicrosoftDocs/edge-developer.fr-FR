@@ -63,7 +63,7 @@ ms.locfileid: "11398988"
    <span data-ttu-id="028f9-117">DevTools en japonais</span><span class="sxs-lookup"><span data-stu-id="028f9-117">DevTools in Japanese</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="028f9-118">Si vous souhaitez revenir à DevTools en anglais, accédez à [Paramètres de DevTools][DevtoolsCustomizeIndexSettings] ou sélectionnez , choisissez Préférences et désélecteur de la case à cocher DevTools pour la langue du `F1` navigateur. \*\*\*\* \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="028f9-118">If you want to revert DevTools to English, navigate to [DevTools Settings][DevtoolsCustomizeIndexSettings] or select `F1`, choose **Preferences**, and turn off the **Match browser language** checkbox.</span></span>  
+<span data-ttu-id="028f9-118">Si vous souhaitez revenir à DevTools en anglais, accédez à [Paramètres de DevTools][DevtoolsCustomizeIndexSettings] ou sélectionnez , choisissez Préférences et désélecteur de la case à cocher DevTools pour la langue du `F1` navigateur.  </span><span class="sxs-lookup"><span data-stu-id="028f9-118">If you want to revert DevTools to English, navigate to [DevTools Settings][DevtoolsCustomizeIndexSettings] or select `F1`, choose **Preferences**, and turn off the **Match browser language** checkbox.</span></span>  
 
 <!-- links -->  
 

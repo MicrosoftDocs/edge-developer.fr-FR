@@ -41,13 +41,13 @@ ms.locfileid: "11439260"
    <span data-ttu-id="44170-119">Badge De grille bascule</span><span class="sxs-lookup"><span data-stu-id="44170-119">Toggle grid badge</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="44170-120">Ouvrez **le volet** Disposition.</span><span class="sxs-lookup"><span data-stu-id="44170-120">Open the **Layout** pane.</span></span>  <span data-ttu-id="44170-121">Lorsque des grilles sont incluses sur une page, le volet De disposition inclut une section **Grille** contenant un certain nombre d’options pour afficher les grilles. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="44170-121">When grids are included on a page, the **Layout** pane includes a **Grid** section containing a number of options for viewing the grids.</span></span>  
+<span data-ttu-id="44170-120">Ouvrez **le volet** Disposition.</span><span class="sxs-lookup"><span data-stu-id="44170-120">Open the **Layout** pane.</span></span>  <span data-ttu-id="44170-121">Lorsque des grilles sont incluses sur une page, le volet De disposition inclut une section **Grille** contenant un certain nombre d’options pour afficher les grilles. </span><span class="sxs-lookup"><span data-stu-id="44170-121">When grids are included on a page, the **Layout** pane includes a **Grid** section containing a number of options for viewing the grids.</span></span>  
 
 :::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="Volet de disposition" lightbox="../media/grid-layout-pane.msft.png":::
    <span data-ttu-id="44170-123">**Volet** de disposition</span><span class="sxs-lookup"><span data-stu-id="44170-123">**Layout** pane</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="44170-124">La \*\*\*\* section Grille **du** volet De disposition contient les 2 sous-sections suivantes.</span><span class="sxs-lookup"><span data-stu-id="44170-124">The **Grid** section in the **Layout** pane contains the following 2 sub-sections.</span></span>  
+<span data-ttu-id="44170-124">La  section Grille **du** volet De disposition contient les 2 sous-sections suivantes.</span><span class="sxs-lookup"><span data-stu-id="44170-124">The **Grid** section in the **Layout** pane contains the following 2 sub-sections.</span></span>  
 
 *   <span data-ttu-id="44170-125">Paramètres d’affichage de superposition</span><span class="sxs-lookup"><span data-stu-id="44170-125">Overlay display settings</span></span>  
 *   <span data-ttu-id="44170-126">Superpositions de grille</span><span class="sxs-lookup"><span data-stu-id="44170-126">Grid overlays</span></span>  

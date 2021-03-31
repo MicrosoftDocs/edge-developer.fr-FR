@@ -284,7 +284,7 @@ li a {
     
     :::row:::
        :::column span="":::
-          <span data-ttu-id="01314-231">Dans la figure suivante, la déclaration que vous avez précédemment ajoutée s’affiche dans l’onglet Styles sous `font-family: 'Courier New', Courier, serif` `contact.html` l’arborescence DOM. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="01314-231">In the following figure, the `font-family: 'Courier New', Courier, serif` declaration that you previously added to `contact.html` is displayed in the **Styles** tab below the DOM Tree.</span></span>  
+          <span data-ttu-id="01314-231">Dans la figure suivante, la déclaration que vous avez précédemment ajoutée s’affiche dans l’onglet Styles sous `font-family: 'Courier New', Courier, serif` `contact.html` l’arborescence DOM. </span><span class="sxs-lookup"><span data-stu-id="01314-231">In the following figure, the `font-family: 'Courier New', Courier, serif` declaration that you previously added to `contact.html` is displayed in the **Styles** tab below the DOM Tree.</span></span>  
           
           :::image type="complex" source="../media/beginners-css-add2.msft.png" alt-text="L’onglet Styles se trouve sous l’arborescence DOM" lightbox="../media/beginners-css-add2.msft.png":::
              <span data-ttu-id="01314-233">**L’onglet Styles** se trouve sous l’arborescence DOM</span><span class="sxs-lookup"><span data-stu-id="01314-233">The **Styles** tab is below the DOM Tree</span></span>  

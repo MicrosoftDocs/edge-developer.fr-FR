@@ -41,7 +41,7 @@ ms.locfileid: "11439225"
        <span data-ttu-id="459dd-113">Saisie dans `document.activeElement` la zone de texte **Expression** live</span><span class="sxs-lookup"><span data-stu-id="459dd-113">Typing `document.activeElement` into the **Live Expression** text box</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="459dd-114">Sélectionnez `Control` + `Enter` \(Windows, Linux\) ou `Command` + `Enter` \(macOS\) \*\*\*\* pour enregistrer l’expression, ou choisissez en dehors de la boîte de texte Live Expression.</span><span class="sxs-lookup"><span data-stu-id="459dd-114">Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save the expression, or choose outside of the **Live Expression** textbox.</span></span>  
+1.  <span data-ttu-id="459dd-114">Sélectionnez `Control` + `Enter` \(Windows, Linux\) ou `Command` + `Enter` \(macOS\)  pour enregistrer l’expression, ou choisissez en dehors de la boîte de texte Live Expression.</span><span class="sxs-lookup"><span data-stu-id="459dd-114">Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save the expression, or choose outside of the **Live Expression** textbox.</span></span>  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="459dd-115">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="459dd-115">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
@@ -53,7 +53,7 @@ ms.locfileid: "11439225"
 
 > [!NOTE]
 > <span data-ttu-id="459dd-117">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="459dd-117">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="459dd-118">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="459dd-118">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="459dd-118">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="459dd-118">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/live-expressions) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="459dd-120">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="459dd-120">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

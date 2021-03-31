@@ -15,19 +15,19 @@ ms.locfileid: "11233280"
 ---
 # <span data-ttu-id="d7a49-103">Présentation du protocole DevTools Microsoft Edge (chrome)</span><span class="sxs-lookup"><span data-stu-id="d7a49-103">Microsoft Edge (Chromium) DevTools Protocol overview</span></span>  
 
-<span data-ttu-id="d7a49-104">Avec le Shift dans la plate-forme Web sous-jacente de Microsoft Edge à chrome, le [protocole devtools de Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) ne recevra pas de nouvelles mises à jour.</span><span class="sxs-lookup"><span data-stu-id="d7a49-104">With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](../edgehtml/devtools-protocol/index.md) will not be receiving any further updates.</span></span>  <span data-ttu-id="d7a49-105">Le protocole DevTools de Microsoft Edge \ (chrome \) doit correspondre aux API du protocole DevTools chrome.</span><span class="sxs-lookup"><span data-stu-id="d7a49-105">The Microsoft Edge \(Chromium\) DevTools Protocol will match the APIs of the Chrome DevTools Protocol going forward.</span></span>  
+<span data-ttu-id="d7a49-104">Avec le Shift dans la plate-forme Web sous-jacente de Microsoft Edge à chrome, le [protocole devtools de Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) ne recevra pas de nouvelles mises à jour.</span><span class="sxs-lookup"><span data-stu-id="d7a49-104">With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](../edgehtml/devtools-protocol/index.md) will not be receiving any further updates.</span></span>  <span data-ttu-id="d7a49-105">Le protocole DevTools de Microsoft Edge \(chrome \) doit correspondre aux API du protocole DevTools chrome.</span><span class="sxs-lookup"><span data-stu-id="d7a49-105">The Microsoft Edge \(Chromium\) DevTools Protocol will match the APIs of the Chrome DevTools Protocol going forward.</span></span>  
 
 <span data-ttu-id="d7a49-106">Vous trouverez des informations sur ces domaines et méthodes en vous référant à la [visionneuse du protocole chrome devtools](https://chromedevtools.github.io/devtools-protocol/tot/).</span><span class="sxs-lookup"><span data-stu-id="d7a49-106">You can find documentation on those domains and methods by referring to the [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/tot/).</span></span>  
 
 > [!NOTE]
-> <span data-ttu-id="d7a49-107">Toutes les méthodes qui ont été préfixées `ms` dans le [protocole devtools de Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) ne sont plus prises en charge dans le protocole devtools Microsoft Edge \ (chrome \).</span><span class="sxs-lookup"><span data-stu-id="d7a49-107">Any methods that were prefixed with `ms` in the [Microsoft Edge (EdgeHTML) DevTools Protocol](../edgehtml/devtools-protocol/index.md) are no longer supported in the Microsoft Edge \(Chromium\) DevTools Protocol.</span></span>  
+> <span data-ttu-id="d7a49-107">Toutes les méthodes qui ont été préfixées `ms` dans le [protocole devtools de Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) ne sont plus prises en charge dans le protocole devtools Microsoft Edge \(chrome \).</span><span class="sxs-lookup"><span data-stu-id="d7a49-107">Any methods that were prefixed with `ms` in the [Microsoft Edge (EdgeHTML) DevTools Protocol](../edgehtml/devtools-protocol/index.md) are no longer supported in the Microsoft Edge \(Chromium\) DevTools Protocol.</span></span>  
 
 ## <span data-ttu-id="d7a49-108">Utiliser le protocole DevTools</span><span class="sxs-lookup"><span data-stu-id="d7a49-108">Using the DevTools Protocol</span></span>  
 
-<span data-ttu-id="d7a49-109">Voici comment joindre un client d’outillage personnalisé au serveur DevTools dans Microsoft Edge \ (chrome \).</span><span class="sxs-lookup"><span data-stu-id="d7a49-109">Here's how to attach a custom tooling client to the DevTools Server in Microsoft Edge \(Chromium\).</span></span>  
+<span data-ttu-id="d7a49-109">Voici comment joindre un client d’outillage personnalisé au serveur DevTools dans Microsoft Edge \(chrome \).</span><span class="sxs-lookup"><span data-stu-id="d7a49-109">Here's how to attach a custom tooling client to the DevTools Server in Microsoft Edge \(Chromium\).</span></span>  
 
 1.  <span data-ttu-id="d7a49-110">Assurez-vous que toutes les instances de Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="d7a49-110">Ensure all instances of Microsoft Edge \(Chromium\) are closed.</span></span>  
-1.  <span data-ttu-id="d7a49-111">Lancez Microsoft Edge \ (chrome \) avec le port de débogage à distance:.</span><span class="sxs-lookup"><span data-stu-id="d7a49-111">Launch Microsoft Edge \(Chromium\) with the remote debugging port:.</span></span> 
+1.  <span data-ttu-id="d7a49-111">Lancez Microsoft Edge \(chrome \) avec le port de débogage à distance:.</span><span class="sxs-lookup"><span data-stu-id="d7a49-111">Launch Microsoft Edge \(Chromium\) with the remote debugging port:.</span></span> 
     
     ```shell
     msedge.exe --remote-debugging-port=9222
@@ -49,7 +49,7 @@ ms.locfileid: "11233280"
 
 ## <span data-ttu-id="d7a49-115">Points de terminaison HTTPs du protocole DevTools</span><span class="sxs-lookup"><span data-stu-id="d7a49-115">DevTools Protocol HTTP Endpoints</span></span>  
 
-<span data-ttu-id="d7a49-116">Le protocole Microsoft Edge \ (chrome \) DevTools prend en charge les points de terminaison HTTP suivants.</span><span class="sxs-lookup"><span data-stu-id="d7a49-116">The Microsoft Edge \(Chromium\) DevTools Protocol supports the following HTTP endpoints.</span></span>  
+<span data-ttu-id="d7a49-116">Le protocole Microsoft Edge \(chrome \) DevTools prend en charge les points de terminaison HTTP suivants.</span><span class="sxs-lookup"><span data-stu-id="d7a49-116">The Microsoft Edge \(Chromium\) DevTools Protocol supports the following HTTP endpoints.</span></span>  
 
 ## <span data-ttu-id="d7a49-117">/json/version</span><span class="sxs-lookup"><span data-stu-id="d7a49-117">/json/version</span></span>  
 
@@ -108,7 +108,7 @@ ms.locfileid: "11233280"
 
 ## <span data-ttu-id="d7a49-133">/json/close</span><span class="sxs-lookup"><span data-stu-id="d7a49-133">/json/close</span></span>  
 
-<span data-ttu-id="d7a49-134">Ferme le processus cible \ (par exemple, dans Microsoft Edge \ (chrome \), ferme l’onglet de page \).</span><span class="sxs-lookup"><span data-stu-id="d7a49-134">Closes down the target process \(for example, in Microsoft Edge \(Chromium\), closes the page tab\).</span></span>  
+<span data-ttu-id="d7a49-134">Ferme le processus cible \(par exemple, dans Microsoft Edge \(chrome \), ferme l’onglet de page \).</span><span class="sxs-lookup"><span data-stu-id="d7a49-134">Closes down the target process \(for example, in Microsoft Edge \(Chromium\), closes the page tab\).</span></span>  
 
 **<span data-ttu-id="d7a49-135">Parameters</span><span class="sxs-lookup"><span data-stu-id="d7a49-135">Parameters</span></span>**  
 

@@ -72,7 +72,7 @@ ms.locfileid: "11439695"
 1.  <span data-ttu-id="18adb-121">Pour [ouvrir DevTools,][DevToolsOpen]sélectionnez `Control` + `Shift` + `J` \(Windows, Linux\) ou `Command` + `Option` + `J` \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="18adb-121">To [Open DevTools][DevToolsOpen], select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).</span></span>  <span data-ttu-id="18adb-122">**L’outil Console** s’ouvre.</span><span class="sxs-lookup"><span data-stu-id="18adb-122">The **Console** tool opens.</span></span>  
     
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="The Console" lightbox="../media/network-glitch-console.msft.png":::
-       <span data-ttu-id="18adb-124">Console \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="18adb-124">The **Console**</span></span>  
+       <span data-ttu-id="18adb-124">Console </span><span class="sxs-lookup"><span data-stu-id="18adb-124">The **Console**</span></span>  
     :::image-end:::  
     
     <span data-ttu-id="18adb-125">Vous pouvez préférer [ancrer DevTools][DevToolsCustomizePlacement]en bas de votre fenêtre.</span><span class="sxs-lookup"><span data-stu-id="18adb-125">You may prefer to [dock DevTools to the bottom of your window][DevToolsCustomizePlacement].</span></span>  
@@ -113,7 +113,7 @@ ms.locfileid: "11439695"
     > <span data-ttu-id="18adb-157">Le graphique au-dessus du journal réseau est appelé Vue d’ensemble.</span><span class="sxs-lookup"><span data-stu-id="18adb-157">The graph above the Network Log is called the Overview.</span></span>  <span data-ttu-id="18adb-158">Vous n’utiliserez pas le graphique Vue d’ensemble dans ce didacticiel, vous pouvez donc le masquer.</span><span class="sxs-lookup"><span data-stu-id="18adb-158">You will not use the Overview graph in this tutorial, so you may hide it.</span></span>  <span data-ttu-id="18adb-159">Accédez à [Masquer le volet Vue d’ensemble.][DevtoolsReferenceHideOverview]</span><span class="sxs-lookup"><span data-stu-id="18adb-159">Navigate to [Hide the Overview pane][DevtoolsReferenceHideOverview].</span></span>
     
 1.  <span data-ttu-id="18adb-160">Après avoir ouvert DevTools, il enregistre l’activité réseau dans le journal réseau.</span><span class="sxs-lookup"><span data-stu-id="18adb-160">After you open DevTools, it records network activity in the Network Log.</span></span>  
-    <span data-ttu-id="18adb-161">Pour le montrer, regardez d’abord le bas du journal réseau et notez la dernière activité. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="18adb-161">To demonstrate this, first look at the bottom of the **Network Log** and make a mental note of the last activity.</span></span>  
+    <span data-ttu-id="18adb-161">Pour le montrer, regardez d’abord le bas du journal réseau et notez la dernière activité. </span><span class="sxs-lookup"><span data-stu-id="18adb-161">To demonstrate this, first look at the bottom of the **Network Log** and make a mental note of the last activity.</span></span>  
 1.  <span data-ttu-id="18adb-162">Sélectionnez maintenant le **bouton Obtenir les** données dans la démonstration.</span><span class="sxs-lookup"><span data-stu-id="18adb-162">Now, select the **Get Data** button in the demo.</span></span>  
 1.  <span data-ttu-id="18adb-163">Regardez de nouveau le bas du **journal** réseau.</span><span class="sxs-lookup"><span data-stu-id="18adb-163">Look at the bottom of the **Network Log** again.</span></span>  <span data-ttu-id="18adb-164">Une nouvelle ressource nommée `getstarted.json` s’affiche.</span><span class="sxs-lookup"><span data-stu-id="18adb-164">A new resource named `getstarted.json` is displayed.</span></span>  <span data-ttu-id="18adb-165">Pour que la page web demande le fichier, sélectionnez le **bouton Obtenir des** données.</span><span class="sxs-lookup"><span data-stu-id="18adb-165">To cause the webpage to request the file, choose the **Get Data** button.</span></span>  
     
@@ -180,7 +180,7 @@ ms.locfileid: "11439695"
        <span data-ttu-id="18adb-204">Activité réseau qui s’est produit lors de la première capture d’écran</span><span class="sxs-lookup"><span data-stu-id="18adb-204">The network activity that was happening during the first screenshot</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="18adb-205">Sélectionnez de nouveau \( Paramètres réseau \) et cochez la case Capture d’écran pour fermer le ![ ](../media/settings-icon.msft.png) volet Captures d’écran. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="18adb-205">Choose \(![Network settings](../media/settings-icon.msft.png)\) again and turn off the **Capture screenshots** checkbox to close the Screenshots pane.</span></span>
+1.  <span data-ttu-id="18adb-205">Sélectionnez de nouveau \( Paramètres réseau \) et cochez la case Capture d’écran pour fermer le ![ ](../media/settings-icon.msft.png) volet Captures d’écran. </span><span class="sxs-lookup"><span data-stu-id="18adb-205">Choose \(![Network settings](../media/settings-icon.msft.png)\) again and turn off the **Capture screenshots** checkbox to close the Screenshots pane.</span></span>
 1.  <span data-ttu-id="18adb-206">Actualisez la page.</span><span class="sxs-lookup"><span data-stu-id="18adb-206">Refresh the page again.</span></span>  
     
 ## <a name="inspect-the-details-of-the-resource"></a><span data-ttu-id="18adb-207">Inspecter les détails de la ressource</span><span class="sxs-lookup"><span data-stu-id="18adb-207">Inspect the details of the resource</span></span>  
@@ -208,7 +208,7 @@ ms.locfileid: "11439695"
     :::image-end:::  
     
     > [!TIP]
-    > <span data-ttu-id="18adb-225">Lorsqu’un fichier est minifié, sélectionnez le bouton **Format** \( Format \) en bas du panneau De réponse pour re-mettre en forme le contenu du fichier pour plus de ![ ](../media/format-icon.msft.png) \*\*\*\* lisibilité.</span><span class="sxs-lookup"><span data-stu-id="18adb-225">When a file is minified, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button at the bottom of the **Response** panel to re-format the contents of the file for readability.</span></span>  
+    > <span data-ttu-id="18adb-225">Lorsqu’un fichier est minifié, sélectionnez le bouton **Format** \( Format \) en bas du panneau De réponse pour re-mettre en forme le contenu du fichier pour plus de ![ ](../media/format-icon.msft.png)  lisibilité.</span><span class="sxs-lookup"><span data-stu-id="18adb-225">When a file is minified, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button at the bottom of the **Response** panel to re-format the contents of the file for readability.</span></span>  
     
 1.  <span data-ttu-id="18adb-226">Sélectionnez **le panneau De minutage.**</span><span class="sxs-lookup"><span data-stu-id="18adb-226">Choose the **Timing** panel.</span></span>  <span data-ttu-id="18adb-227">Une répartition de l’activité réseau de la ressource s’affiche.</span><span class="sxs-lookup"><span data-stu-id="18adb-227">A breakdown of the network activity for the resource is displayed.</span></span>  
     
@@ -219,7 +219,7 @@ ms.locfileid: "11439695"
 1.  <span data-ttu-id="18adb-230">Choisissez **Fermer** \( Fermer \) pour afficher à nouveau ![ le journal ](../media/close-icon.msft.png) réseau.</span><span class="sxs-lookup"><span data-stu-id="18adb-230">Choose **Close** \(![Close](../media/close-icon.msft.png)\) to view the Network Log again.</span></span>  
     
     :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="Bouton Fermer" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
-       <span data-ttu-id="18adb-232">Bouton \*\*\*\* Fermer</span><span class="sxs-lookup"><span data-stu-id="18adb-232">The **Close** button</span></span>  
+       <span data-ttu-id="18adb-232">Bouton  Fermer</span><span class="sxs-lookup"><span data-stu-id="18adb-232">The **Close** button</span></span>  
     :::image-end:::  
     
 ## <a name="search-network-headers-and-responses"></a><span data-ttu-id="18adb-233">En-têtes et réponses du réseau de recherche</span><span class="sxs-lookup"><span data-stu-id="18adb-233">Search network headers and responses</span></span>  
@@ -233,7 +233,7 @@ ms.locfileid: "11439695"
 1.  <span data-ttu-id="18adb-236">Choose **Search** \( ![ Search ](../media/search-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="18adb-236">Choose **Search** \(![Search](../media/search-icon.msft.png)\).</span></span>  <span data-ttu-id="18adb-237">Le volet Recherche s’ouvre à gauche du journal réseau.</span><span class="sxs-lookup"><span data-stu-id="18adb-237">The Search pane opens to the left of the Network log.</span></span>  
     
     :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="Volet de recherche" lightbox="../media/network-glitch-network-search-empty.msft.png":::
-       <span data-ttu-id="18adb-239">Volet \*\*\*\* de recherche</span><span class="sxs-lookup"><span data-stu-id="18adb-239">The **Search** pane</span></span>  
+       <span data-ttu-id="18adb-239">Volet  de recherche</span><span class="sxs-lookup"><span data-stu-id="18adb-239">The **Search** pane</span></span>  
     :::image-end:::  
     
 1.  <span data-ttu-id="18adb-240">Tapez `Cache-Control` et sélectionnez `Enter` .</span><span class="sxs-lookup"><span data-stu-id="18adb-240">Type `Cache-Control` and select `Enter`.</span></span>  <span data-ttu-id="18adb-241">Le volet de recherche répertorie toutes les instances de ce qu’il trouve dans les en-têtes `Cache-Control` ou le contenu des ressources.</span><span class="sxs-lookup"><span data-stu-id="18adb-241">The Search pane lists all instances of `Cache-Control` that it finds in resource headers or content.</span></span>  
@@ -381,7 +381,7 @@ ms.locfileid: "11439695"
 
 > [!NOTE]
 > <span data-ttu-id="18adb-329">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="18adb-329">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="18adb-330">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="18adb-330">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="18adb-330">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/index) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="18adb-330">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="18adb-332">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="18adb-332">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

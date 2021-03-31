@@ -43,7 +43,7 @@ ms.locfileid: "11399294"
 }
 ```  
 
-<span data-ttu-id="7ba8f-113">Si vous sélectionnez sur Windows ou macOS ou sélectionnez de nouveau le bouton vert Lire, Visual Studio Code lance `F5` Microsoft Edge \(EdgeHTML\) et vous pouvez déboguer tout projet web que vous avez en cours d’exécution sur le port directement à partir de Visual Studio \*\*\*\* Code `8080` !</span><span class="sxs-lookup"><span data-stu-id="7ba8f-113">If you select `F5` on Windows or macOS or select the green **Play** button again, Visual Studio Code launches Microsoft Edge \(EdgeHTML\) and you are able to debug any web project you have running on port `8080` directly from Visual Studio Code!</span></span>  
+<span data-ttu-id="7ba8f-113">Si vous sélectionnez sur Windows ou macOS ou sélectionnez de nouveau le bouton vert Lire, Visual Studio Code lance `F5` Microsoft Edge \(EdgeHTML\) et vous pouvez déboguer tout projet web que vous avez en cours d’exécution sur le port directement à partir de Visual Studio  Code `8080` !</span><span class="sxs-lookup"><span data-stu-id="7ba8f-113">If you select `F5` on Windows or macOS or select the green **Play** button again, Visual Studio Code launches Microsoft Edge \(EdgeHTML\) and you are able to debug any web project you have running on port `8080` directly from Visual Studio Code!</span></span>  
 
 ### <a name="microsoft-edge-chromium"></a><span data-ttu-id="7ba8f-114">Microsoft Edge (Chromium)</span><span class="sxs-lookup"><span data-stu-id="7ba8f-114">Microsoft Edge (Chromium)</span></span>  
 

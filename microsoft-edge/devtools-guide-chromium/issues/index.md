@@ -101,13 +101,13 @@ ms.locfileid: "11398972"
 1.  <span data-ttu-id="b0763-143">Choisissez un lien de ressource pour afficher l’élément dans le contexte approprié dans DevTools.</span><span class="sxs-lookup"><span data-stu-id="b0763-143">Choose a resource link to view the item in the appropriate context within DevTools.</span></span>  <span data-ttu-id="b0763-144">Dans l’exemple suivant, choisissez `samesite-sandbox.glitch.me` sous **Demandes** pour afficher les cookies joints à cette demande.</span><span class="sxs-lookup"><span data-stu-id="b0763-144">In the following example, choose `samesite-sandbox.glitch.me` under **Requests** to show the cookies attached to that request.</span></span>  
     
     :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="Afficher le cookie affecté dans l’outil Réseau DevTools" lightbox="../media/issues-tab-view-request.msft.png":::
-       <span data-ttu-id="b0763-146">Afficher le cookie affecté dans l’outil Réseau DevTools \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="b0763-146">View the affected cookie in the DevTools **Network** tool</span></span>  
+       <span data-ttu-id="b0763-146">Afficher le cookie affecté dans l’outil Réseau DevTools </span><span class="sxs-lookup"><span data-stu-id="b0763-146">View the affected cookie in the DevTools **Network** tool</span></span>  
     :::image-end:::  
 
 1.  <span data-ttu-id="b0763-147">Faites défiler pour afficher l’élément qui pose problème : pour l’exemple suivant, le `ck02` cookie.</span><span class="sxs-lookup"><span data-stu-id="b0763-147">Scroll to view the item with a problem:  for the following example, the `ck02` cookie.</span></span>  <span data-ttu-id="b0763-148">Pointez sur **la colonne SameSite** pour passer en revue la `None` valeur détectée par le problème.</span><span class="sxs-lookup"><span data-stu-id="b0763-148">Hover on the **SameSite** column to review the `None` value that the issue detected.</span></span>  
     
     :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Aucune valeur dans la colonne SameSite pour le cookie ck02 dans l’outil Réseau DevTools" lightbox="../media/issues-tab-view-issue.msft.png":::
-       `None` <span data-ttu-id="b0763-150">dans la **colonne SameSite** pour le cookie dans l’outil `ck02` Réseau \*\*\*\* DevTools</span><span class="sxs-lookup"><span data-stu-id="b0763-150">value in the **SameSite** column for the `ck02` cookie in the DevTools **Network** tool</span></span>  
+       `None` <span data-ttu-id="b0763-150">dans la **colonne SameSite** pour le cookie dans l’outil `ck02` Réseau  DevTools</span><span class="sxs-lookup"><span data-stu-id="b0763-150">value in the **SameSite** column for the `ck02` cookie in the DevTools **Network** tool</span></span>  
     :::image-end:::  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="b0763-151">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="b0763-151">Getting in touch with the Microsoft Edge DevTools team</span></span>  

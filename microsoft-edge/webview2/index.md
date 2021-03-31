@@ -73,7 +73,7 @@ ms.locfileid: "11182366"
       <span data-ttu-id="b5e50-137">S’appuyer sur une version de chrome à jour avec les mises à jour de plateforme et les correctifs de sécurité normaux.</span><span class="sxs-lookup"><span data-stu-id="b5e50-137">Rely on an up-to-date version of Chromium with regular platform updates and security patches.</span></span>  
    :::column-end:::
    :::column span="1":::
-      <span data-ttu-id="b5e50-138">**Corrigé** \ (bientôt disponible)</span><span class="sxs-lookup"><span data-stu-id="b5e50-138">**Fixed** \(coming soon\)</span></span>  
+      <span data-ttu-id="b5e50-138">**Corrigé** \(bientôt disponible)</span><span class="sxs-lookup"><span data-stu-id="b5e50-138">**Fixed** \(coming soon\)</span></span>  
       <span data-ttu-id="b5e50-139">Choisissez de conditionner les bits de chrome dans votre application.</span><span class="sxs-lookup"><span data-stu-id="b5e50-139">Choose to package the Chromium bits in your application.</span></span>  
    :::column-end:::
    :::column span="1":::
@@ -97,25 +97,25 @@ ms.locfileid: "11182366"
 
 <span data-ttu-id="b5e50-152">Une disponibilité générale (GA \) ou version d’évaluation est disponible sur les environnements de programmation suivants.</span><span class="sxs-lookup"><span data-stu-id="b5e50-152">A General Availability \(GA\) or Preview version is available on the following programming environments.</span></span>  
 
-*   <span data-ttu-id="b5e50-153">Win32 C/C++ \ (GA \)</span><span class="sxs-lookup"><span data-stu-id="b5e50-153">Win32 C/C++ \(GA\)</span></span>
+*   <span data-ttu-id="b5e50-153">Win32 C/C++ \(GA \)</span><span class="sxs-lookup"><span data-stu-id="b5e50-153">Win32 C/C++ \(GA\)</span></span>
 *   <span data-ttu-id="b5e50-154">.NET Framework 4.6.2 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="b5e50-154">.NET Framework 4.6.2 or later</span></span>
 *   <span data-ttu-id="b5e50-155">.NET Core 3,1 ou version ultérieure</span><span class="sxs-lookup"><span data-stu-id="b5e50-155">.NET Core 3.1 or later</span></span>
 *   <span data-ttu-id="b5e50-156">.NET 5</span><span class="sxs-lookup"><span data-stu-id="b5e50-156">.NET 5</span></span>
-*   <span data-ttu-id="b5e50-157">[WinUI 3,0][UwpToolkitsWinui3] \ (Preview \)</span><span class="sxs-lookup"><span data-stu-id="b5e50-157">[WinUI 3.0][UwpToolkitsWinui3] \(Preview\)</span></span>
+*   <span data-ttu-id="b5e50-157">[WinUI 3,0][UwpToolkitsWinui3] \(Preview \)</span><span class="sxs-lookup"><span data-stu-id="b5e50-157">[WinUI 3.0][UwpToolkitsWinui3] \(Preview\)</span></span>
 
 <span data-ttu-id="b5e50-158">Vous pouvez exécuter des applications WebView2 sur les versions suivantes de Windows.</span><span class="sxs-lookup"><span data-stu-id="b5e50-158">You are able to run WebView2 applications on the following versions of Windows.</span></span>  
 
 *   <span data-ttu-id="b5e50-159">Windows 10</span><span class="sxs-lookup"><span data-stu-id="b5e50-159">Windows 10</span></span>  
 *   <span data-ttu-id="b5e50-160">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="b5e50-160">Windows 8.1</span></span>  
-*   <span data-ttu-id="b5e50-161">Windows 7 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="b5e50-161">Windows 7 \*\*</span></span>  
+*   <span data-ttu-id="b5e50-161">Windows 7 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="b5e50-161">Windows 7 </span></span>  
 *   <span data-ttu-id="b5e50-162">Windows Server2019</span><span class="sxs-lookup"><span data-stu-id="b5e50-162">Windows Server 2019</span></span>  
 *   <span data-ttu-id="b5e50-163">Windows Server2016</span><span class="sxs-lookup"><span data-stu-id="b5e50-163">Windows Server 2016</span></span>  
 *   <span data-ttu-id="b5e50-164">Windows Server2012</span><span class="sxs-lookup"><span data-stu-id="b5e50-164">Windows Server 2012</span></span>  
 *   <span data-ttu-id="b5e50-165">WindowsServer2012R2</span><span class="sxs-lookup"><span data-stu-id="b5e50-165">Windows Server 2012 R2</span></span>  
-*   <span data-ttu-id="b5e50-166">Windows Server 2008 R2 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="b5e50-166">Windows Server 2008 R2 \*\*</span></span>  
+*   <span data-ttu-id="b5e50-166">Windows Server 2008 R2 \ \* \ \*</span><span class="sxs-lookup"><span data-stu-id="b5e50-166">Windows Server 2008 R2 </span></span>  
 
 > [!IMPORTANT]
-> <span data-ttu-id="b5e50-167">\ \* \ \* WebView2 support pour Windows 7 et Windows Server 2008 R2 a le même cycle de support que Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="b5e50-167">\*\* WebView2 support for Windows 7 and Windows Server 2008 R2 has the same support cycle as Microsoft Edge.</span></span>  <span data-ttu-id="b5e50-168">Pour plus d’informations, accédez à la [section systèmes d’exploitation pris en charge par Microsoft Edge][DeployedgeMicrosoftEdgeSupportedOS].</span><span class="sxs-lookup"><span data-stu-id="b5e50-168">For more information, navigate to [Microsoft Edge supported Operating Systems][DeployedgeMicrosoftEdgeSupportedOS].</span></span>  
+> <span data-ttu-id="b5e50-167">\ \* \ \* WebView2 support pour Windows 7 et Windows Server 2008 R2 a le même cycle de support que Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="b5e50-167"> WebView2 support for Windows 7 and Windows Server 2008 R2 has the same support cycle as Microsoft Edge.</span></span>  <span data-ttu-id="b5e50-168">Pour plus d’informations, accédez à la [section systèmes d’exploitation pris en charge par Microsoft Edge][DeployedgeMicrosoftEdgeSupportedOS].</span><span class="sxs-lookup"><span data-stu-id="b5e50-168">For more information, navigate to [Microsoft Edge supported Operating Systems][DeployedgeMicrosoftEdgeSupportedOS].</span></span>  
 
 ## <span data-ttu-id="b5e50-169">Étapes suivantes</span><span class="sxs-lookup"><span data-stu-id="b5e50-169">Next steps</span></span>  
 

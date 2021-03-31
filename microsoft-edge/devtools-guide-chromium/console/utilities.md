@@ -63,7 +63,7 @@ $_
 $0
 ```  
 
-<span data-ttu-id="6ca9b-120">Renvoie l’élément ou l’objet JavaScript sélectionné le plus récemment.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-120">Returns the most recently selected element or JavaScript object.</span></span>  `$1` <span data-ttu-id="6ca9b-121">renvoie la deuxième dernière sélection, et ainsi de suite.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-121">returns the second most recently selected one, and so on.</span></span>  <span data-ttu-id="6ca9b-122">Les commandes , , et les commandes fonctionnent comme une référence historique aux cinq derniers éléments DOM inspectés dans l’outil Elements ou aux cinq derniers objets de tas `$0` `$1` `$2` `$3` `$4` JavaScript sélectionnés \*\*\*\* \*\*\*\* dans l’outil Mémoire.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-122">The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** tool or the last five JavaScript heap objects selected in the **Memory** tool.</span></span>  
+<span data-ttu-id="6ca9b-120">Renvoie l’élément ou l’objet JavaScript sélectionné le plus récemment.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-120">Returns the most recently selected element or JavaScript object.</span></span>  `$1` <span data-ttu-id="6ca9b-121">renvoie la deuxième dernière sélection, et ainsi de suite.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-121">returns the second most recently selected one, and so on.</span></span>  <span data-ttu-id="6ca9b-122">Les commandes , , et les commandes fonctionnent comme une référence historique aux cinq derniers éléments DOM inspectés dans l’outil Elements ou aux cinq derniers objets de tas `$0` `$1` `$2` `$3` `$4` JavaScript sélectionnés   dans l’outil Mémoire.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-122">The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** tool or the last five JavaScript heap objects selected in the **Memory** tool.</span></span>  
 
 :::row:::
    :::column span="1":::
@@ -123,7 +123,7 @@ $(selector, [startNode])
    <span data-ttu-id="6ca9b-136">Figure 5 : Le</span><span class="sxs-lookup"><span data-stu-id="6ca9b-136">Figure 5:  The</span></span> `$('img')`  
 :::image-end:::  
 
-<span data-ttu-id="6ca9b-137">Pointez sur le résultat renvoyé, ouvrez le menu contextuel \(clic droit\), puis \*\*\*\* choisissez **Révéler** dans le panneau Éléments pour le trouver dans le DOM ou faites défiler vers l’affichage pour l’afficher sur la page.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-137">Hover on the returned result, open the contextual menu \(right-click\), and choose **Reveal in Elements Panel** to find it in the DOM or **Scroll in to View** to show it on the page.</span></span>  
+<span data-ttu-id="6ca9b-137">Pointez sur le résultat renvoyé, ouvrez le menu contextuel \(clic droit\), puis  choisissez **Révéler** dans le panneau Éléments pour le trouver dans le DOM ou faites défiler vers l’affichage pour l’afficher sur la page.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-137">Hover on the returned result, open the contextual menu \(right-click\), and choose **Reveal in Elements Panel** to find it in the DOM or **Scroll in to View** to show it on the page.</span></span>  
 
 <span data-ttu-id="6ca9b-138">Dans la figure suivante, une référence à l’élément actuellement sélectionné est renvoyée et la propriété src est affichée.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-138">In the following figure, a reference to the currently selected element is returned and the src property is displayed.</span></span>  
 
@@ -297,7 +297,7 @@ dirxml(object)
 inspect(object/method)
 ```  
 
-<span data-ttu-id="6ca9b-194">Ouvre et sélectionne l’élément ou l’objet spécifié dans le panneau approprié \*\*\*\* : l’outil **Elements** pour les éléments DOM ou l’outil Mémoire pour les objets tas JavaScript.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-194">Opens and selects the specified element or object in the appropriate panel:  either the **Elements** tool for DOM elements or the **Memory** tool for JavaScript heap objects.</span></span>  
+<span data-ttu-id="6ca9b-194">Ouvre et sélectionne l’élément ou l’objet spécifié dans le panneau approprié  : l’outil **Elements** pour les éléments DOM ou l’outil Mémoire pour les objets tas JavaScript.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-194">Opens and selects the specified element or object in the appropriate panel:  either the **Elements** tool for DOM elements or the **Memory** tool for JavaScript heap objects.</span></span>  
 
 <span data-ttu-id="6ca9b-195">Dans l’exemple de code et la figure `document.body` suivants, l’élément s’ouvre dans **l’outil Elements.**</span><span class="sxs-lookup"><span data-stu-id="6ca9b-195">In the following code sample and figure, the `document.body` opens in the **Elements** tool.</span></span>  
 
@@ -437,7 +437,7 @@ monitorEvents($0, "key");
 profile([name])
 ```  
 
-<span data-ttu-id="6ca9b-246">Démarre une session de profilage du processeur JavaScript avec un nom facultatif.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-246">Starts a JavaScript CPU profiling session with an optional name.</span></span>  <span data-ttu-id="6ca9b-247">La [méthode profileEnd()](#profileend) termine le profil et affiche les résultats dans l’outil Mémoire. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="6ca9b-247">The [profileEnd()](#profileend) method completes the profile and displays the results in the **Memory** tool.</span></span>  <!--Navigate to [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
+<span data-ttu-id="6ca9b-246">Démarre une session de profilage du processeur JavaScript avec un nom facultatif.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-246">Starts a JavaScript CPU profiling session with an optional name.</span></span>  <span data-ttu-id="6ca9b-247">La [méthode profileEnd()](#profileend) termine le profil et affiche les résultats dans l’outil Mémoire. </span><span class="sxs-lookup"><span data-stu-id="6ca9b-247">The [profileEnd()](#profileend) method completes the profile and displays the results in the **Memory** tool.</span></span>  <!--Navigate to [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
 
 1.  <span data-ttu-id="6ca9b-248">Exécutez la `profile()` méthode pour démarrer le profilage.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-248">Run the `profile()` method to start profiling.</span></span>  
     
@@ -445,7 +445,7 @@ profile([name])
     profile("My profile")
     ```  
     
-1.  <span data-ttu-id="6ca9b-249">Exécutez [la méthode profileEnd()](#profileend) pour arrêter le profilage et afficher les résultats dans l’outil Mémoire. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="6ca9b-249">Run the [profileEnd()](#profileend) method to stop profiling and display the results in the **Memory** tool.</span></span>  
+1.  <span data-ttu-id="6ca9b-249">Exécutez [la méthode profileEnd()](#profileend) pour arrêter le profilage et afficher les résultats dans l’outil Mémoire. </span><span class="sxs-lookup"><span data-stu-id="6ca9b-249">Run the [profileEnd()](#profileend) method to stop profiling and display the results in the **Memory** tool.</span></span>  
 
 <span data-ttu-id="6ca9b-250">Les profils peuvent également être imbrmbrés.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-250">Profiles may also be nested.</span></span>  <span data-ttu-id="6ca9b-251">Dans les exemples de code suivants et la figure, le résultat est le même quelle que soit la commande.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-251">In the following code samples and figure the result is the same regardless of the order.</span></span>  
 
@@ -468,7 +468,7 @@ profileEnd([name])
 <span data-ttu-id="6ca9b-254">Termine une session de profilage du processeur JavaScript et affiche les résultats dans **l’outil** Mémoire.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-254">Completes a JavaScript CPU profiling session and displays the results in the **Memory** tool.</span></span>  <span data-ttu-id="6ca9b-255">Vous devez être en cours d’exécution [de la méthode profile().](#profile)</span><span class="sxs-lookup"><span data-stu-id="6ca9b-255">You must be running the [profile()](#profile) method.</span></span>  <!--Navigate to [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
 
 1.  <span data-ttu-id="6ca9b-256">Exécutez [la méthode profile()](#profile) pour démarrer le profilage.</span><span class="sxs-lookup"><span data-stu-id="6ca9b-256">Run the [profile()](#profile) method to start profiling.</span></span>  
-1.  <span data-ttu-id="6ca9b-257">Exécutez la `profileEnd()` méthode pour arrêter le profilage et afficher les résultats dans l’outil Mémoire. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="6ca9b-257">Run the `profileEnd()` method to stop profiling and display the results in the **Memory** tool.</span></span>  
+1.  <span data-ttu-id="6ca9b-257">Exécutez la `profileEnd()` méthode pour arrêter le profilage et afficher les résultats dans l’outil Mémoire. </span><span class="sxs-lookup"><span data-stu-id="6ca9b-257">Run the `profileEnd()` method to stop profiling and display the results in the **Memory** tool.</span></span>  
     
     ```console
     profileEnd("My profile")
@@ -627,7 +627,7 @@ values(object);
 
 > [!NOTE]
 > <span data-ttu-id="6ca9b-297">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="6ca9b-297">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="6ca9b-298">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/utilities) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="6ca9b-298">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/utilities) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="6ca9b-298">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/utilities) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="6ca9b-298">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/utilities) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="6ca9b-300">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="6ca9b-300">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

@@ -84,7 +84,7 @@ ms.locfileid: "11439618"
 
 <span data-ttu-id="54259-141">Le téléchargement d’une demande prend beaucoup de temps.</span><span class="sxs-lookup"><span data-stu-id="54259-141">A request takes a long time to download.</span></span>  
 
-<span data-ttu-id="54259-142">Dans la figure suivante, la longue \*\*\*\* barre bleue dans la cascade en face du png signifie que le téléchargement a pris beaucoup de temps.</span><span class="sxs-lookup"><span data-stu-id="54259-142">In the following figure, the long, blue bar in the **Waterfall** next to the png means it took a long time to download.</span></span>  
+<span data-ttu-id="54259-142">Dans la figure suivante, la longue  barre bleue dans la cascade en face du png signifie que le téléchargement a pris beaucoup de temps.</span><span class="sxs-lookup"><span data-stu-id="54259-142">In the following figure, the long, blue bar in the **Waterfall** next to the png means it took a long time to download.</span></span>  
 
 :::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="Exemple de demande longue à télécharger" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
    <span data-ttu-id="54259-144">Exemple de demande longue à télécharger</span><span class="sxs-lookup"><span data-stu-id="54259-144">An example of a request that takes a long time to download</span></span>  

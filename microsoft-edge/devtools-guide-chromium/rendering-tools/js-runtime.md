@@ -56,7 +56,7 @@ ms.locfileid: "11439737"
 
 ## <a name="view-sampling-profile"></a><span data-ttu-id="88c05-120">Afficher le profil d’échantillonnage</span><span class="sxs-lookup"><span data-stu-id="88c05-120">View Sampling Profile</span></span>  
 
-<span data-ttu-id="88c05-121">Lorsque vous avez terminé l’enregistrement, DevTools remplit automatiquement le panneau Mémoire sous **PROFILS D’ÉCHANTILLONNAGE** avec les données de votre enregistrement. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="88c05-121">When you finish recording, DevTools automatically populates the **Memory** panel under **SAMPLING PROFILES** with the data from your recording.</span></span>  
+<span data-ttu-id="88c05-121">Lorsque vous avez terminé l’enregistrement, DevTools remplit automatiquement le panneau Mémoire sous **PROFILS D’ÉCHANTILLONNAGE** avec les données de votre enregistrement. </span><span class="sxs-lookup"><span data-stu-id="88c05-121">When you finish recording, DevTools automatically populates the **Memory** panel under **SAMPLING PROFILES** with the data from your recording.</span></span>  
 
 <span data-ttu-id="88c05-122">L’affichage par défaut **est Heavy \(Bottom Up\)**.</span><span class="sxs-lookup"><span data-stu-id="88c05-122">The default view is **Heavy \(Bottom Up\)**.</span></span>  <span data-ttu-id="88c05-123">Cette vue vous permet d’examiner les fonctions qui ont eu le plus d’impact sur les performances et d’examiner le chemin d’accès à la demande pour chaque fonction.</span><span class="sxs-lookup"><span data-stu-id="88c05-123">This view allows you to review which functions had the most impact on performance and examine the requesting path for each function.</span></span>  
 

@@ -68,7 +68,7 @@ ms.locfileid: "11398265"
 
 *   <span data-ttu-id="a231f-125">Utilisez l’interface utilisateur de Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="a231f-125">Use the Microsoft Edge UI.</span></span>  
     
-    1.  <span data-ttu-id="a231f-126">Choisissez **l’icône Paramètres et plus** \( \) > Outils de développement `...` \*\*\*\*  >   **Outils de développement .**</span><span class="sxs-lookup"><span data-stu-id="a231f-126">Choose the **Settings and more** \(`...`\) icon >  **More Tools** >  **Developer Tools**.</span></span>  
+    1.  <span data-ttu-id="a231f-126">Choisissez **l’icône Paramètres et plus** \( \) > Outils de développement `...`   >   **Outils de développement .**</span><span class="sxs-lookup"><span data-stu-id="a231f-126">Choose the **Settings and more** \(`...`\) icon >  **More Tools** >  **Developer Tools**.</span></span>  
     
 *   <span data-ttu-id="a231f-127">Utilisez le clavier.</span><span class="sxs-lookup"><span data-stu-id="a231f-127">Use the keyboard.</span></span>  
     *   <span data-ttu-id="a231f-128">Sélectionnez `F12` `Control` + `Shift` + `I` ou \(Windows, Linux\) ou `Command` + `Option` + `I` \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="a231f-128">Select `F12` or `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).</span></span>  
@@ -156,7 +156,7 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 > [!NOTE]
 > <span data-ttu-id="a231f-155">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="a231f-155">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="a231f-156">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/open) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="a231f-156">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/open) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="a231f-156">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/open) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="a231f-156">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/open) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="a231f-158">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="a231f-158">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

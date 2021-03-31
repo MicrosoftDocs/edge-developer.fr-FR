@@ -38,7 +38,7 @@ ms.locfileid: "11399364"
     ![Bouton plus](../media/morebutton.png)  
     
 1.  <span data-ttu-id="c2180-114">Cliquez sur l’extension à déboguer.</span><span class="sxs-lookup"><span data-stu-id="c2180-114">Click on the extension that you want to debug.</span></span>  
-1.  <span data-ttu-id="c2180-115">Cliquez sur le lien de la page d’arrière-plan pour faire monter la F12 pour le processus en arrière-plan. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="c2180-115">Click on the **Background page** link to bring up F12 for the background process.</span></span>  
+1.  <span data-ttu-id="c2180-115">Cliquez sur le lien de la page d’arrière-plan pour faire monter la F12 pour le processus en arrière-plan. </span><span class="sxs-lookup"><span data-stu-id="c2180-115">Click on the **Background page** link to bring up F12 for the background process.</span></span>  
     
     ![vue d’extension sélectionnée des options avec le lien Inspecter](../media/debug-inspect.png)  
     

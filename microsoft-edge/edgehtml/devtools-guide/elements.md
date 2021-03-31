@@ -33,7 +33,7 @@ ms.locfileid: "11232909"
 
 ![Panneau éléments de DevTools Microsoft Edge](./media/elements.png)
 
-1. <span data-ttu-id="f454d-116">\*\*\*\* `Ctrl+B` Pour rechercher un élément dans l' **arborescence html** , utilisez l’outil sélectionner un élément () et cliquez dessus dans la page.</span><span class="sxs-lookup"><span data-stu-id="f454d-116">Use the **Select element** (`Ctrl+B`) tool to locate an element in the **HTML tree view** by clicking on it in the page.</span></span>
+1. <span data-ttu-id="f454d-116"> `Ctrl+B` Pour rechercher un élément dans l' **arborescence html** , utilisez l’outil sélectionner un élément () et cliquez dessus dans la page.</span><span class="sxs-lookup"><span data-stu-id="f454d-116">Use the **Select element** (`Ctrl+B`) tool to locate an element in the **HTML tree view** by clicking on it in the page.</span></span>
 
 2. <span data-ttu-id="f454d-117">Utilisez l’outil de **mise en surbrillance des éléments** `Ctrl+Shift+L` pour localiser un élément sur la page en pointant dessus dans l' **arborescence html**.</span><span class="sxs-lookup"><span data-stu-id="f454d-117">Use the **Element highlighting** (`Ctrl+Shift+L`) tool to locate an element on the page by hovering over it in the **HTML tree view**.</span></span>
 

@@ -72,7 +72,7 @@ ms.locfileid: "11439681"
 
 ## <a name="edit-a-cookie"></a><span data-ttu-id="2182c-150">Modifier un cookie</span><span class="sxs-lookup"><span data-stu-id="2182c-150">Edit a cookie</span></span>  
 
-<span data-ttu-id="2182c-151">Les **champs Nom,** **Valeur,** **Domaine,** Chemin d’accès et **Expires/Max-Age** sont modifiables. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="2182c-151">The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields are editable.</span></span>  
+<span data-ttu-id="2182c-151">Les **champs Nom,** **Valeur,** **Domaine,** Chemin d’accès et **Expires/Max-Age** sont modifiables. </span><span class="sxs-lookup"><span data-stu-id="2182c-151">The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields are editable.</span></span>  
 <span data-ttu-id="2182c-152">Double-cliquez sur un champ pour le modifier.</span><span class="sxs-lookup"><span data-stu-id="2182c-152">Double-click a field to edit it.</span></span>  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="Définition du nom d’un cookie sur DEVTOOLS !" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
@@ -113,7 +113,7 @@ ms.locfileid: "11439681"
 
 > [!NOTE]
 > <span data-ttu-id="2182c-172">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="2182c-172">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="2182c-173">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/cookies) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="2182c-173">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cookies) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="2182c-173">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/cookies) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="2182c-173">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cookies) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="2182c-175">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="2182c-175">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

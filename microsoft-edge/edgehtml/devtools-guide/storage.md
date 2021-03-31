@@ -177,7 +177,7 @@ ms.locfileid: "11398895"
 
 ### <a name="cache-manager"></a><span data-ttu-id="cebed-233">Gestionnaire de cache</span><span class="sxs-lookup"><span data-stu-id="cebed-233">Cache manager</span></span>  
 
-<span data-ttu-id="cebed-234">Cliquer sur une entrée de cache spécifique \*\*\*\* ouvre le gestionnaire de cache de travail du service, où vous pouvez inspecter et éventuellement supprimer des entrées de cache \( et `Request` `Response` paires clé/valeur\) :</span><span class="sxs-lookup"><span data-stu-id="cebed-234">Clicking on a specific cache entry will open up the service worker **Cache** manager, where you can inspect and optionally delete cache entries \(`Request` and `Response` key/value pairs\):</span></span>  
+<span data-ttu-id="cebed-234">Cliquer sur une entrée de cache spécifique  ouvre le gestionnaire de cache de travail du service, où vous pouvez inspecter et éventuellement supprimer des entrées de cache \( et `Request` `Response` paires clé/valeur\) :</span><span class="sxs-lookup"><span data-stu-id="cebed-234">Clicking on a specific cache entry will open up the service worker **Cache** manager, where you can inspect and optionally delete cache entries \(`Request` and `Response` key/value pairs\):</span></span>  
 
 ![Gestionnaire de cache](./media/storage_cache.png)  
 

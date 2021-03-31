@@ -34,7 +34,7 @@ ms.locfileid: "11439702"
 
 ## <a name="record-network-requests"></a><span data-ttu-id="594f0-106">Enregistrer des demandes réseau</span><span class="sxs-lookup"><span data-stu-id="594f0-106">Record network requests</span></span>  
 
-<span data-ttu-id="594f0-107">Par défaut, DevTools enregistre toutes \*\*\*\* les demandes réseau dans l’outil Réseau, tant que DevTools est ouvert.</span><span class="sxs-lookup"><span data-stu-id="594f0-107">By default, DevTools record all network requests in the **Network** tool, so long as DevTools is open.</span></span>  
+<span data-ttu-id="594f0-107">Par défaut, DevTools enregistre toutes  les demandes réseau dans l’outil Réseau, tant que DevTools est ouvert.</span><span class="sxs-lookup"><span data-stu-id="594f0-107">By default, DevTools record all network requests in the **Network** tool, so long as DevTools is open.</span></span>  
 
 :::image type="complex" source="../media/network-network-panel.msft.png" alt-text="Panneau réseau" lightbox="../media/network-network-panel.msft.png":::
    <span data-ttu-id="594f0-109">Outil **Réseau**</span><span class="sxs-lookup"><span data-stu-id="594f0-109">The **Network** tool</span></span>  
@@ -45,14 +45,14 @@ ms.locfileid: "11439702"
 <span data-ttu-id="594f0-111">Pour arrêter l’enregistrement des demandes, complétez les étapes suivantes.</span><span class="sxs-lookup"><span data-stu-id="594f0-111">To stop recording requests, complete the following steps.</span></span>  
 
 1.  <span data-ttu-id="594f0-112">Dans **l’outil Réseau,** **sélectionnez Arrêter l’enregistrement du journal réseau** \( ![ Arrêter l’enregistrement du journal ](../media/record-on-icon.msft.png) réseau \).</span><span class="sxs-lookup"><span data-stu-id="594f0-112">On the **Network** tool, choose **Stop recording network log** \(![Stop recording network log](../media/record-on-icon.msft.png)\).</span></span>  <span data-ttu-id="594f0-113">Il devient gris pour indiquer que DevTools n’enregistre plus les demandes.</span><span class="sxs-lookup"><span data-stu-id="594f0-113">It turns grey to indicate that DevTools is no longer recording requests.</span></span>  
-1.  <span data-ttu-id="594f0-114">Sélectionnez `Control` + `E` \(Windows, Linux\) ou `Command` + `E` \(macOS\) \*\*\*\* lorsque l’outil réseau est en cours de mise au point.</span><span class="sxs-lookup"><span data-stu-id="594f0-114">Select `Control`+`E` \(Windows, Linux\) or `Command`+`E` \(macOS\) while the **Network** tool is in focus.</span></span>  
+1.  <span data-ttu-id="594f0-114">Sélectionnez `Control` + `E` \(Windows, Linux\) ou `Command` + `E` \(macOS\)  lorsque l’outil réseau est en cours de mise au point.</span><span class="sxs-lookup"><span data-stu-id="594f0-114">Select `Control`+`E` \(Windows, Linux\) or `Command`+`E` \(macOS\) while the **Network** tool is in focus.</span></span>  
 
 ### <a name="clear-requests"></a><span data-ttu-id="594f0-115">Effacer les demandes</span><span class="sxs-lookup"><span data-stu-id="594f0-115">Clear requests</span></span>  
 
-<span data-ttu-id="594f0-116">Sélectionnez **Effacer** \( ![ Effacer \) sur l’outil Réseau pour effacer toutes les demandes de ](../media/clear-requests-icon.msft.png) la table Demandes. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="594f0-116">Choose **Clear** \(![Clear](../media/clear-requests-icon.msft.png)\) on the **Network** tool to clear all requests from the Requests table.</span></span>  
+<span data-ttu-id="594f0-116">Sélectionnez **Effacer** \( ![ Effacer \) sur l’outil Réseau pour effacer toutes les demandes de ](../media/clear-requests-icon.msft.png) la table Demandes. </span><span class="sxs-lookup"><span data-stu-id="594f0-116">Choose **Clear** \(![Clear](../media/clear-requests-icon.msft.png)\) on the **Network** tool to clear all requests from the Requests table.</span></span>  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Bouton Effacer" lightbox="../media/network-network-clear-button.msft.png":::
-   <span data-ttu-id="594f0-118">Bouton \*\*\*\* Effacer</span><span class="sxs-lookup"><span data-stu-id="594f0-118">The **Clear** button</span></span>  
+   <span data-ttu-id="594f0-118">Bouton  Effacer</span><span class="sxs-lookup"><span data-stu-id="594f0-118">The **Clear** button</span></span>  
 :::image-end:::  
 
 ### <a name="save-requests-across-page-loads"></a><span data-ttu-id="594f0-119">Enregistrer des demandes sur les chargements de page</span><span class="sxs-lookup"><span data-stu-id="594f0-119">Save requests across page loads</span></span>  
@@ -67,7 +67,7 @@ ms.locfileid: "11439702"
 
 <span data-ttu-id="594f0-125">Capturez des captures d’écran pour analyser ce qui s’affiche pour les utilisateurs en attendant le chargement de votre page.</span><span class="sxs-lookup"><span data-stu-id="594f0-125">Capture screenshots to analyze what displays for users while waiting for your page to load.</span></span>  
 
-<span data-ttu-id="594f0-126">Pour activer les captures d’écran, \*\*\*\* **sélectionnez Paramètres**réseau et, dans l’outil Réseau, activez la case à cocher Capturer les **captures d’écran.**</span><span class="sxs-lookup"><span data-stu-id="594f0-126">To enable screenshots, choose **Network settings**, and on the **Network** tool, turn on the **Capture screenshots** checkbox.</span></span>  
+<span data-ttu-id="594f0-126">Pour activer les captures d’écran,  **sélectionnez Paramètres**réseau et, dans l’outil Réseau, activez la case à cocher Capturer les **captures d’écran.**</span><span class="sxs-lookup"><span data-stu-id="594f0-126">To enable screenshots, choose **Network settings**, and on the **Network** tool, turn on the **Capture screenshots** checkbox.</span></span>  
 
 <span data-ttu-id="594f0-127">Actualisez la page lorsque **l’outil** Réseau est en cours de mise en place pour capturer des captures d’écran.</span><span class="sxs-lookup"><span data-stu-id="594f0-127">Refresh the page while the **Network** tool is in focus to capture screenshots.</span></span>  
 
@@ -140,7 +140,7 @@ ms.locfileid: "11439702"
 
 <span data-ttu-id="594f0-160">Vous pouvez choisir parmi différents prérets, tels que Slow 3G ou Fast 3G.</span><span class="sxs-lookup"><span data-stu-id="594f0-160">You may choose from different presets, such as Slow 3G or Fast 3G.</span></span>  <span data-ttu-id="594f0-161">Pour ajouter vos propres prérets personnalisés, ouvrez le menu Limitation, puis choisissez **Ajouter**  >  **personnalisé.**</span><span class="sxs-lookup"><span data-stu-id="594f0-161">To add your own custom presets, open the Throttling menu, and choose **Custom** > **Add**.</span></span>  
 
-<span data-ttu-id="594f0-162">DevTools affiche une icône d’avertissement à côté de l’outil Réseau pour vous rappeler que la limitation est activée. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="594f0-162">DevTools displays a warning icon next to the **Network** tool to remind you that throttling is enabled.</span></span>  
+<span data-ttu-id="594f0-162">DevTools affiche une icône d’avertissement à côté de l’outil Réseau pour vous rappeler que la limitation est activée. </span><span class="sxs-lookup"><span data-stu-id="594f0-162">DevTools displays a warning icon next to the **Network** tool to remind you that throttling is enabled.</span></span>  
 
 #### <a name="emulate-slow-network-connections-from-the-network-conditions-drawer"></a><span data-ttu-id="594f0-163">Émuler les connexions réseau lentes à partir du caisse des conditions réseau</span><span class="sxs-lookup"><span data-stu-id="594f0-163">Emulate slow network connections from the Network Conditions drawer</span></span>  
 
@@ -297,7 +297,7 @@ ms.locfileid: "11439702"
 
 ### <a name="filter-requests-by-time"></a><span data-ttu-id="594f0-232">Filtrer les demandes par heure</span><span class="sxs-lookup"><span data-stu-id="594f0-232">Filter requests by time</span></span>  
 
-<span data-ttu-id="594f0-233">Choisissez et faites glisser \*\*\*\* vers la gauche ou la droite dans le volet Vue d’ensemble pour afficher uniquement les demandes qui étaient actives pendant cette période.</span><span class="sxs-lookup"><span data-stu-id="594f0-233">Choose and drag left or right on the **Overview** pane to only display requests that were active during that time frame.</span></span>  <span data-ttu-id="594f0-234">Le filtre est inclus.</span><span class="sxs-lookup"><span data-stu-id="594f0-234">The filter is inclusive.</span></span>  <span data-ttu-id="594f0-235">Toute demande qui était active pendant l’heure mise en surbrillant s’affiche.</span><span class="sxs-lookup"><span data-stu-id="594f0-235">Any request that was active during the highlighted time is shown.</span></span>  
+<span data-ttu-id="594f0-233">Choisissez et faites glisser  vers la gauche ou la droite dans le volet Vue d’ensemble pour afficher uniquement les demandes qui étaient actives pendant cette période.</span><span class="sxs-lookup"><span data-stu-id="594f0-233">Choose and drag left or right on the **Overview** pane to only display requests that were active during that time frame.</span></span>  <span data-ttu-id="594f0-234">Le filtre est inclus.</span><span class="sxs-lookup"><span data-stu-id="594f0-234">The filter is inclusive.</span></span>  <span data-ttu-id="594f0-235">Toute demande qui était active pendant l’heure mise en surbrillant s’affiche.</span><span class="sxs-lookup"><span data-stu-id="594f0-235">Any request that was active during the highlighted time is shown.</span></span>  
 
 :::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="Filtrer toutes les demandes inactives d’environ 300 ms" lightbox="../media/network-network-overview-filter.msft.png":::
    <span data-ttu-id="594f0-237">Filtrer toutes les demandes inactives d’environ 300 ms</span><span class="sxs-lookup"><span data-stu-id="594f0-237">Filter out any requests that were inactive around 300 ms</span></span>  
@@ -459,7 +459,7 @@ ms.locfileid: "11439702"
 
 #### <a name="add-custom-columns"></a><span data-ttu-id="594f0-296">Ajouter des colonnes personnalisées</span><span class="sxs-lookup"><span data-stu-id="594f0-296">Add custom columns</span></span>  
 
-<span data-ttu-id="594f0-297">Pour ajouter une colonne personnalisée à la table Demandes, pointez sur l’en-tête de la \*\*\*\* table Demandes, ouvrez le menu contextuel \(clic droit\), puis choisissez En-têtes de réponse Gérer les colonnes d’en-tête.  >  \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="594f0-297">To add a custom column to the Requests table, hover on the header of the Requests table, open the contextual menu \(right-click\), and choose **Response Headers** > **Manage Header Columns**.</span></span>  
+<span data-ttu-id="594f0-297">Pour ajouter une colonne personnalisée à la table Demandes, pointez sur l’en-tête de la  table Demandes, ouvrez le menu contextuel \(clic droit\), puis choisissez En-têtes de réponse Gérer les colonnes d’en-tête.  >  </span><span class="sxs-lookup"><span data-stu-id="594f0-297">To add a custom column to the Requests table, hover on the header of the Requests table, open the contextual menu \(right-click\), and choose **Response Headers** > **Manage Header Columns**.</span></span>  
 
 :::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Ajouter une colonne personnalisée à la table Requests" lightbox="../media/network-network-requests-add-custom.msft.png":::
    <span data-ttu-id="594f0-299">Ajouter une colonne personnalisée à la table Requests</span><span class="sxs-lookup"><span data-stu-id="594f0-299">Add a custom column to the Requests table</span></span>  
@@ -597,7 +597,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 <span data-ttu-id="594f0-359">Pour accéder plus rapidement aux données, accédez à l’aperçu [d’une répartition du minutage.](#preview-a-timing-breakdown)</span><span class="sxs-lookup"><span data-stu-id="594f0-359">For a faster way to access the data, navigate to [Preview a timing breakdown](#preview-a-timing-breakdown).</span></span>  
 
-<span data-ttu-id="594f0-360">Pour plus d’informations sur chacune des phases \*\*\*\* qui peuvent être affichées dans le panneau de minutage, accédez aux phases de répartition [du minutage expliquées.](#timing-breakdown-phases-explained)</span><span class="sxs-lookup"><span data-stu-id="594f0-360">For more information about each of the phases that may be displayed in the **Timing** panel, navigate to [Timing breakdown phases explained](#timing-breakdown-phases-explained).</span></span>  
+<span data-ttu-id="594f0-360">Pour plus d’informations sur chacune des phases  qui peuvent être affichées dans le panneau de minutage, accédez aux phases de répartition [du minutage expliquées.](#timing-breakdown-phases-explained)</span><span class="sxs-lookup"><span data-stu-id="594f0-360">For more information about each of the phases that may be displayed in the **Timing** panel, navigate to [Timing breakdown phases explained](#timing-breakdown-phases-explained).</span></span>  
 
 :::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="Panneau De minutage" lightbox="../media/network-network-resources-timing.msft.png":::
    <span data-ttu-id="594f0-362">Panneau **De minutage**</span><span class="sxs-lookup"><span data-stu-id="594f0-362">The **Timing** panel</span></span>  
@@ -742,7 +742,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 ### <a name="display-the-total-number-of-requests"></a><span data-ttu-id="594f0-416">Affichage du nombre total de demandes</span><span class="sxs-lookup"><span data-stu-id="594f0-416">Display the total number of requests</span></span>  
 
-<span data-ttu-id="594f0-417">Le nombre total de demandes \*\*\*\* est répertorié dans le volet Résumé, en bas de **l’outil** Réseau.</span><span class="sxs-lookup"><span data-stu-id="594f0-417">The total number of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.</span></span>  
+<span data-ttu-id="594f0-417">Le nombre total de demandes  est répertorié dans le volet Résumé, en bas de **l’outil** Réseau.</span><span class="sxs-lookup"><span data-stu-id="594f0-417">The total number of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.</span></span>  
 
 > [!CAUTION]
 > <span data-ttu-id="594f0-418">Ce numéro suit uniquement les demandes qui ont été enregistrées depuis l’ouverture de DevTools.</span><span class="sxs-lookup"><span data-stu-id="594f0-418">This number only tracks requests that have been logged since DevTools was opened.</span></span>  <span data-ttu-id="594f0-419">Si d’autres demandes se sont produites avant l’ouverture de DevTools, ces demandes ne sont pas comptabilisées.</span><span class="sxs-lookup"><span data-stu-id="594f0-419">If other requests occurred before DevTools was opened, those requests are not counted.</span></span>  
@@ -753,7 +753,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 
 ### <a name="display-the-total-download-size"></a><span data-ttu-id="594f0-422">Afficher la taille totale du téléchargement</span><span class="sxs-lookup"><span data-stu-id="594f0-422">Display the total download size</span></span>  
 
-<span data-ttu-id="594f0-423">La taille totale des demandes de \*\*\*\* téléchargement est répertoriée dans le volet Résumé, en bas de **l’outil** Réseau.</span><span class="sxs-lookup"><span data-stu-id="594f0-423">The total download size of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.</span></span>  
+<span data-ttu-id="594f0-423">La taille totale des demandes de  téléchargement est répertoriée dans le volet Résumé, en bas de **l’outil** Réseau.</span><span class="sxs-lookup"><span data-stu-id="594f0-423">The total download size of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.</span></span>  
 
 > [!CAUTION]
 > <span data-ttu-id="594f0-424">Ce numéro suit uniquement les demandes qui ont été enregistrées depuis l’ouverture de DevTools.</span><span class="sxs-lookup"><span data-stu-id="594f0-424">This number only tracks requests that have been logged since DevTools was opened.</span></span>  <span data-ttu-id="594f0-425">Si d’autres demandes se sont produites avant l’ouverture de DevTools, les demandes précédentes ne sont pas comptabilisées.</span><span class="sxs-lookup"><span data-stu-id="594f0-425">If other requests occurred before DevTools was opened, the previous requests are not counted.</span></span>  
@@ -924,7 +924,7 @@ init();
     
 ## <a name="change-the-layout-of-the-network-panel"></a><span data-ttu-id="594f0-485">Modifier la disposition du panneau Réseau</span><span class="sxs-lookup"><span data-stu-id="594f0-485">Change the layout of the Network panel</span></span>  
 
-<span data-ttu-id="594f0-486">Vous pouvez développer ou réduire \*\*\*\* des sections de l’interface utilisateur de l’outil réseau pour concentrer des informations importantes.</span><span class="sxs-lookup"><span data-stu-id="594f0-486">You may expand or collapse sections of the **Network** tool UI to focus important information.</span></span>  
+<span data-ttu-id="594f0-486">Vous pouvez développer ou réduire  des sections de l’interface utilisateur de l’outil réseau pour concentrer des informations importantes.</span><span class="sxs-lookup"><span data-stu-id="594f0-486">You may expand or collapse sections of the **Network** tool UI to focus important information.</span></span>  
 
 ### <a name="hide-the-filters-pane"></a><span data-ttu-id="594f0-487">Masquer le volet Filtres</span><span class="sxs-lookup"><span data-stu-id="594f0-487">Hide the Filters pane</span></span>  
 
@@ -951,7 +951,7 @@ init();
 
 ### <a name="hide-the-overview-pane"></a><span data-ttu-id="594f0-501">Masquer le volet Vue d’ensemble</span><span class="sxs-lookup"><span data-stu-id="594f0-501">Hide the Overview pane</span></span>  
 
-<span data-ttu-id="594f0-502">Par défaut, DevTools \*\*\*\* affiche le volet Vue d’ensemble.</span><span class="sxs-lookup"><span data-stu-id="594f0-502">By default, DevTools displays the **Overview** pane.</span></span>  <span data-ttu-id="594f0-503">Pour le masquer, cochez la case **Afficher la** vue d’ensemble.</span><span class="sxs-lookup"><span data-stu-id="594f0-503">To hide it, turn off the **Show Overview** checkbox.</span></span>  
+<span data-ttu-id="594f0-502">Par défaut, DevTools  affiche le volet Vue d’ensemble.</span><span class="sxs-lookup"><span data-stu-id="594f0-502">By default, DevTools displays the **Overview** pane.</span></span>  <span data-ttu-id="594f0-503">Pour le masquer, cochez la case **Afficher la** vue d’ensemble.</span><span class="sxs-lookup"><span data-stu-id="594f0-503">To hide it, turn off the **Show Overview** checkbox.</span></span>  
 
 :::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="Case à cocher Afficher la vue d’ensemble" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
    <span data-ttu-id="594f0-505">Case **à cocher Afficher la vue d’ensemble**</span><span class="sxs-lookup"><span data-stu-id="594f0-505">The **Show Overview** checkbox</span></span>  
@@ -973,7 +973,7 @@ init();
 
 > [!NOTE]
 > <span data-ttu-id="594f0-510">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="594f0-510">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="594f0-511">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="594f0-511">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="594f0-511">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/reference) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="594f0-511">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 <span data-ttu-id="594f0-513">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="594f0-513">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  

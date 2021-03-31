@@ -33,7 +33,7 @@ ms.locfileid: "11232919"
 
 ### <span data-ttu-id="ab8d2-114">ToolBar</span><span class="sxs-lookup"><span data-stu-id="ab8d2-114">Toolbar</span></span>
 
-<span data-ttu-id="ab8d2-115">Utilisez les \*\*\*\*  /  boutons**Stop** de démarrage de la barre d’outils (ou `Ctrl+E` ) pour initier et terminer votre suivi des performances.</span><span class="sxs-lookup"><span data-stu-id="ab8d2-115">Use the **Start** / **Stop** buttons on the toolbar (or `Ctrl+E`) to initiate and conclude your performance trace.</span></span> <span data-ttu-id="ab8d2-116">Un indicateur vert s’affichent sous l’onglet **performance** pour indiquer qu’un enregistrement est en cours.</span><span class="sxs-lookup"><span data-stu-id="ab8d2-116">A green indicator will apear on the **Performance** tab to indicate a recording is in progress.</span></span> 
+<span data-ttu-id="ab8d2-115">Utilisez les   /  boutons**Stop** de démarrage de la barre d’outils (ou `Ctrl+E` ) pour initier et terminer votre suivi des performances.</span><span class="sxs-lookup"><span data-stu-id="ab8d2-115">Use the **Start** / **Stop** buttons on the toolbar (or `Ctrl+E`) to initiate and conclude your performance trace.</span></span> <span data-ttu-id="ab8d2-116">Un indicateur vert s’affichent sous l’onglet **performance** pour indiquer qu’un enregistrement est en cours.</span><span class="sxs-lookup"><span data-stu-id="ab8d2-116">A green indicator will apear on the **Performance** tab to indicate a recording is in progress.</span></span> 
 
 ![Barre d’outils du panneau performances](./media/performance_toolbar.png)
 
