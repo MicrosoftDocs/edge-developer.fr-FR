@@ -21,7 +21,7 @@ ms.locfileid: "11233143"
 
 Microsoft Edge présente EdgeHTML, un nouveau moteur «vivant» conçu pour une interopérabilité à son cœur, afin de vous assurer que vous avez toujours accès à la version la plus récente de la plateforme Windows Web.  Microsoft Edge est un saut de passe net par le passé, gratuitement à partir du code hérité requis pour prendre en charge les contrôles ActiveX, les objets d’assistance du navigateur (BHO \) et d’autres pratiques de développement Web Bygone.  Par ailleurs, Microsoft Edge fournit une prise en charge native PDF.  À partir de IE11, les modes de document hérités ont été déconseillés, et avec Microsoft Edge, l’infrastructure de navigateur pour les prendre en charge n’existe pas.  Pour plus d’informations, consultez [IEBlog](/archive/blogs/ie/living-on-the-edge-our-next-step-in-interoperability) .  
 
-Voici les modifications envoyées avec EdgeHTML 12 dans la version initiale de [Windows 10](https://blogs.windows.com/windowsexperience/2015/07/28/windows-10-free-upgrade-available-in-190-countries) \ (07/2015, Build 10240 \).  Pour obtenir une vue d’ensemble des modifications apportées au navigateur Microsoft Edge global, voir [une pause dans le passé: la naissance du nouveau moteur de rendu Web de Microsoft](https://blogs.windows.com/msedgedev/2015/02/26) et [un saut passé par le passé, 2e partie: dire adieu aux contrôles ActiveX, VBScript et AttachEvent...](https://blogs.windows.com/msedgedev/2015/05/06).  
+Voici les modifications envoyées avec EdgeHTML 12 dans la version initiale de [Windows 10](https://blogs.windows.com/windowsexperience/2015/07/28/windows-10-free-upgrade-available-in-190-countries) \(07/2015, Build 10240 \).  Pour obtenir une vue d’ensemble des modifications apportées au navigateur Microsoft Edge global, voir [une pause dans le passé: la naissance du nouveau moteur de rendu Web de Microsoft](https://blogs.windows.com/msedgedev/2015/02/26) et [un saut passé par le passé, 2e partie: dire adieu aux contrôles ActiveX, VBScript et AttachEvent...](https://blogs.windows.com/msedgedev/2015/05/06).  
 
 Vous trouverez ci-dessous le lien permanent pour la liste des modifications suivante:  [https://aka.ms/devguide_edgehtml_12](./edgehtml-12.md) .  
 
@@ -29,7 +29,7 @@ Vous trouverez ci-dessous le lien permanent pour la liste des modifications suiv
 
 ### Politique de sécurité du contenu 1,0  
 
-Microsoft Edge implémente désormais la stratégie de sécurité du contenu \ (CSP \) 1,0.  La norme de sécurité du fournisseur de services cryptographiques permet aux développeurs Web de contrôler les ressources \ (script, CSS, plug-ins, images, etc.) qui peuvent être récupérées ou exécutées dans le cadre de la recherche de contenu malveillant dans le contexte d’une page Web digne de confiance.  Pour plus d’informations sur les fournisseurs de services cryptographiques dans Microsoft Edge, voir [stratégie de sécurité du contenu](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Content_Security_Policy) .  
+Microsoft Edge implémente désormais la stratégie de sécurité du contenu \(CSP \) 1,0.  La norme de sécurité du fournisseur de services cryptographiques permet aux développeurs Web de contrôler les ressources \(script, CSS, plug-ins, images, etc.) qui peuvent être récupérées ou exécutées dans le cadre de la recherche de contenu malveillant dans le contexte d’une page Web digne de confiance.  Pour plus d’informations sur les fournisseurs de services cryptographiques dans Microsoft Edge, voir [stratégie de sécurité du contenu](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Content_Security_Policy) .  
 
 ### Effets de filtre  
 
@@ -37,14 +37,14 @@ Microsoft Edge fournit un moyen facile d’ajouter des effets visuels aux élém
 
 ### JavaScript  
 
-La prise en charge de JavaScript varie légèrement entre la version finale d’Internet Explorer \ (IE11 \) et Microsoft Edge.  Les nouvelles fonctionnalités de Microsoft Edge sont les suivantes:  
+La prise en charge de JavaScript varie légèrement entre la version finale d’Internet Explorer \(IE11 \) et Microsoft Edge.  Les nouvelles fonctionnalités de Microsoft Edge sont les suivantes:  
 
 :::row:::
    :::column span="1":::
       **Relevés**  
    :::column-end:::
    :::column span="2":::
-      [classe](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class) \ (expérimental \), [pour... de](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...of)  
+      [classe](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class) \(expérimental \), [pour... de](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...of)  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -68,7 +68,7 @@ La prise en charge de JavaScript varie légèrement entre la version finale d’
       **Méthodes**  
    :::column-end:::
    :::column span="2":::
-      [inclut](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/includes), [Keys](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/keys) \ (matrice \), [REPEAT](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/repeat) \ (chaîne \), [valeurs](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/values) \ (matrice \)  
+      [inclut](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/includes), [Keys](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/keys) \(matrice \), [REPEAT](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/repeat) \(chaîne \), [valeurs](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/values) \(matrice \)  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -76,7 +76,7 @@ La prise en charge de JavaScript varie légèrement entre la version finale d’
       **Autres fonctionnalités**  
    :::column-end:::
    :::column span="2":::
-      [Fonctions](https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions) \ (expérimental \), [générateurs](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_generators),  [itérateurs](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_generators), [ `y` indicateur d’expression régulière](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp) \ (expérimental \), [chaînes de modèle](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals), caractères d’échappement de point de [code Unicode](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals)  
+      [Fonctions](https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions) \(expérimental \), [générateurs](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_generators),  [itérateurs](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_generators), [ `y` indicateur d’expression régulière](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp) \(expérimental \), [chaînes de modèle](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals), caractères d’échappement de point de [code Unicode](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals)  
    :::column-end:::
 :::row-end:::  
 
@@ -91,17 +91,17 @@ Microsoft Edge présente la prise en charge des API de capture multimédia et de
 *   `meter` élément  
 *   `picture` élément  
 *   `template` élément  
-*   `image` élément: `srcset` et `sizes` attributs \ ( [billet de blog](https://blogs.windows.com/msedgedev/2015/06/08)du développeur Microsoft Edge \)  
+*   `image` élément: `srcset` et `sizes` attributs \( [billet de blog](https://blogs.windows.com/msedgedev/2015/06/08)du développeur Microsoft Edge \)  
 *   `selectionDirection` attribut  
 *   `input type=time` et `input type=datetime-local`  
 
 ### API RTC Object  
 
-Les communications d’objets Real-Time \ (ORTC \) permettent le contenu multimédia \ (audio et/ou vidéo) en flux (envoyés et reçus) en temps réel entre les navigateurs Web, les appareils mobiles et les serveurs par le biais des API JavaScript natives.  Pour plus d’informations sur la validation de l’utilisation de la mise en route dans Microsoft Edge, voir [objet](https://ortc.org) sujet du Guide de développement.  
+Les communications d’objets Real-Time \(ORTC \) permettent le contenu multimédia \(audio et/ou vidéo) en flux (envoyés et reçus) en temps réel entre les navigateurs Web, les appareils mobiles et les serveurs par le biais des API JavaScript natives.  Pour plus d’informations sur la validation de l’utilisation de la mise en route dans Microsoft Edge, voir [objet](https://ortc.org) sujet du Guide de développement.  
 
 ### Mode lecture  
 
-Microsoft Edge fournit un mode lecture pour une connaissance plus rationalisée et plus agréable de la lecture de pages Web, sans la distraction de contenus non liés ou secondaires sur la page.  Le mode lecture peut être activé ou désactivé à partir du bouton lecture \ (icône du livre \) sur la barre d’adresse ou avec `Ctrl` + `Shift` + `R` .  Pour plus d’informations, consultez le [mode lecture](../browser-features/reading-view.md) .  
+Microsoft Edge fournit un mode lecture pour une connaissance plus rationalisée et plus agréable de la lecture de pages Web, sans la distraction de contenus non liés ou secondaires sur la page.  Le mode lecture peut être activé ou désactivé à partir du bouton lecture \(icône du livre \) sur la barre d’adresse ou avec `Ctrl` + `Shift` + `R` .  Pour plus d’informations, consultez le [mode lecture](../browser-features/reading-view.md) .  
 
 ### Découverte de moteur de recherche  
 

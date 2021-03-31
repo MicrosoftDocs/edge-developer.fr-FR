@@ -20,7 +20,7 @@ ms.locfileid: "11233348"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Microsoft Edge fournit un mode lecture pour une connaissance plus rationalisée et plus agréable de la lecture de pages Web, sans la distraction de contenus non liés ou secondaires sur la page.  Le mode lecture peut être activé ou désactivé à partir du bouton **lecture** \ (icône du livre \) sur la barre d’adresse ou avec `Ctrl` + `Shift` + `R` .  Le mode lecture extrait les métadonnées suivantes d’une page:  
+Microsoft Edge fournit un mode lecture pour une connaissance plus rationalisée et plus agréable de la lecture de pages Web, sans la distraction de contenus non liés ou secondaires sur la page.  Le mode lecture peut être activé ou désactivé à partir du bouton **lecture** \(icône du livre \) sur la barre d’adresse ou avec `Ctrl` + `Shift` + `R` .  Le mode lecture extrait les métadonnées suivantes d’une page:  
 
 *   Title
 *   Auteur
@@ -44,7 +44,7 @@ Pour vous assurer que le mode lecture restitue le titre de votre article, procé
 
 *   Inclure un `title` élément dans votre en-tête  
 *   Ajoutez une balise Meta avec `name="title"`  
-*   Faites correspondre le texte du titre dans votre corps d’article à la chaîne de contenu de votre balise meta.  Les canaux \ ( `|` \) dans votre chaîne de contenu empêchent l’affichage du lecteur de lire le contenu, essayez d’utiliser des tirets \ ( `-` \) à la place.  
+*   Faites correspondre le texte du titre dans votre corps d’article à la chaîne de contenu de votre balise meta.  Les canaux \( `|` \) dans votre chaîne de contenu empêchent l’affichage du lecteur de lire le contenu, essayez d’utiliser des tirets \( `-` \) à la place.  
 
 ### Auteur  
 
@@ -92,7 +92,7 @@ Pour vous assurer que tout le texte de la page est capturé par le mode lecture,
 
 ### Copyright  
 
-Le mode lecture extrait et affiche les informations de Copyright signalées par des balises meta avec `name = "copyright"` , ou s’il n’existe aucune information de méta-indicateur, un nœud de texte contenant le symbole Copyright \ ( `©` \).  Le mode lecture affiche les informations de Copyright à la fin de l’article principal de l’article, dont le style est inférieur à celui du corps de texte principal.  
+Le mode lecture extrait et affiche les informations de Copyright signalées par des balises meta avec `name = "copyright"` , ou s’il n’existe aucune information de méta-indicateur, un nœud de texte contenant le symbole Copyright \( `©` \).  Le mode lecture affiche les informations de Copyright à la fin de l’article principal de l’article, dont le style est inférieur à celui du corps de texte principal.  
 
 ```html
 <meta name="copyright" content="Your copyright information">

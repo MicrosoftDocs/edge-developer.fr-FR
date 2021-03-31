@@ -20,7 +20,7 @@ ms.locfileid: "11233455"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Voici les modifications apportées à la version actuelle de la plateforme Microsoft Edge, à partir de [Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) \ (04/2017, Build 15063 \).  Pour obtenir une vue d’ensemble des modifications apportées au navigateur Microsoft Edge global, voir [Nouveautés de Microsoft Edge dans Windows 10 Creators Update](https://blogs.windows.com/msedgedev/2017/04/11).  
+Voici les modifications apportées à la version actuelle de la plateforme Microsoft Edge, à partir de [Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) \(04/2017, Build 15063 \).  Pour obtenir une vue d’ensemble des modifications apportées au navigateur Microsoft Edge global, voir [Nouveautés de Microsoft Edge dans Windows 10 Creators Update](https://blogs.windows.com/msedgedev/2017/04/11).  
 
 Pour plus d’informations sur les modifications apportées aux versions préliminaires de Windows Insider Preview, voir [Nouveautés de EdgeHTML](../whats-new.md).  
 
@@ -58,7 +58,7 @@ De plus, le EdgeHTML 15 présente les aperçus des fonctionnalités suivants:
 
 Activé avec `about:flags`  
 
-*   [Webassembly](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) \ ([démonstration](https://webassembly.org/demo)\)  
+*   [Webassembly](https://developer.microsoft.com/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) \([démonstration](https://webassembly.org/demo)\)  
 *   [Mémoire partagée et Atomic.](https://developer.microsoft.com/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)  
 
 Pour plus d’informations [, voir amélioration des performances JavaScript, de l’assemblage webassemblage et de la mémoire partagée dans Microsoft Edge](https://blogs.windows.com/msedgedev/2017/04/20) .  
@@ -97,7 +97,7 @@ Pour plus d’informations, voir les informations de référence sur les API [We
 
 ### Stratégie de sécurité du contenu (niveau 2)  
 
-Les sites utilisant déjà un fournisseur de services cryptographiques 1 doivent continuer à utiliser la prise en charge de Microsoft Edge pour FSC 2, mais il est préférable de basculer entre les directives permettant de `frame-src` charger les scripts de travail dans la nouvelle `child-src` directive afin de vérifier l’évolution de votre site.  \ (Dans FSC 3, `frame-src` ne s’appliquera plus à travailleurs. \) le fournisseur de services de cryptographie 2 ajoute également ce qui suit:  
+Les sites utilisant déjà un fournisseur de services cryptographiques 1 doivent continuer à utiliser la prise en charge de Microsoft Edge pour FSC 2, mais il est préférable de basculer entre les directives permettant de `frame-src` charger les scripts de travail dans la nouvelle `child-src` directive afin de vérifier l’évolution de votre site.  \(Dans FSC 3, `frame-src` ne s’appliquera plus à travailleurs. \) le fournisseur de services de cryptographie 2 ajoute également ce qui suit:  
 
 :::row:::
    :::column span="1":::
@@ -120,7 +120,7 @@ Les sites utilisant déjà un fournisseur de services cryptographiques 1 doivent
       Scripts et styles Inline  
    :::column-end:::
    :::column span="2":::
-      Le FSC 2 autorise l’exécution de scripts et de blocs de style inline en fournissant des nonces et des hachements en tant que mécanisme d’entrée de texte.  Les nonces sont des valeurs de base 64 aléatoires générées lors de chaque chargement de page qui s’affiche dans la stratégie de FSC et dans les balises de script de la page.  Lorsque la page est générée dynamiquement au chargement, le serveur génère une valeur nonce, l’insère dans le NonceToken de la page et la déclare dans l’en-tête HTTP de la stratégie de sécurité du contenu.  Les hachages sont des valeurs statiques générées \ (en utilisant les algorithmes SHA256, SHA384 ou SHA512) à partir du contenu d’un `<script>` `<style>` élément ou qui est ensuite spécifié \ (à l’aide `script-src` de `style-src` directives ou \) dans la stratégie CSP.  
+      Le FSC 2 autorise l’exécution de scripts et de blocs de style inline en fournissant des nonces et des hachements en tant que mécanisme d’entrée de texte.  Les nonces sont des valeurs de base 64 aléatoires générées lors de chaque chargement de page qui s’affiche dans la stratégie de FSC et dans les balises de script de la page.  Lorsque la page est générée dynamiquement au chargement, le serveur génère une valeur nonce, l’insère dans le NonceToken de la page et la déclare dans l’en-tête HTTP de la stratégie de sécurité du contenu.  Les hachages sont des valeurs statiques générées \(en utilisant les algorithmes SHA256, SHA384 ou SHA512) à partir du contenu d’un `<script>` `<style>` élément ou qui est ensuite spécifié \(à l’aide `script-src` de `style-src` directives ou \) dans la stratégie CSP.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -128,7 +128,7 @@ Les sites utilisant déjà un fournisseur de services cryptographiques 1 doivent
       Rapport de violation des CSP  
    :::column-end:::
    :::column span="2":::
-      Un nouvel événement `SecurityPolicyViolationEvent` est désormais déclenché lors des violations du fournisseur de services d’appel.  Le mécanisme antérieur pour la création de rapports de FSC, `report-uri` continue d’être pris en charge.  Plusieurs nouveaux champs ont été ajoutés aux rapports de violation communs aux deux éléments, y compris `effectiveDirective` \ (la stratégie qui a été violée \), `statusCode` \ (le code de réponse http \), `sourceFile` \ (l’URL de la ressource contrevenante \), `lineNumber` et `columnNumber` .  
+      Un nouvel événement `SecurityPolicyViolationEvent` est désormais déclenché lors des violations du fournisseur de services d’appel.  Le mécanisme antérieur pour la création de rapports de FSC, `report-uri` continue d’être pris en charge.  Plusieurs nouveaux champs ont été ajoutés aux rapports de violation communs aux deux éléments, y compris `effectiveDirective` \(la stratégie qui a été violée \), `statusCode` \(le code de réponse http \), `sourceFile` \(l’URL de la ressource contrevenante \), `lineNumber` et `columnNumber` .  
    :::column-end:::
 :::row-end:::  
 
@@ -140,13 +140,13 @@ La prise en charge de Microsoft Edge pour l' **API d’authentification Web** é
 
 *   [Dans le cadre de la](https://blogs.windows.com/msedgedev/2016/08/04) mise à jour anniversaire de Windows 10, la build 10240, 7/2016 \) a été exposée à l’aide des API MS-préfixé ( [MSCredentials](/previous-versions/mt697639(v=vs.85)) interface \).  Même si ces API sont toujours disponibles dans EdgeHTML 15, elles sont désormais déconseillées en faveur des API et des comportements non prédéfinis et prédéfinis définis dans un [instantané plus récent](https://w3.org/TR/2016/WD-webauthn-20160928) de la spécification, et sont susceptibles de continuer à changer à mesure que les spécifications arrivent à l’évolution de la normalisation.  
 
-*   La dernière mise en œuvre de Microsoft Edge est désactivée par défaut et est fournie derrière un indicateur \ (tapez `about:flags` dans la barre d’adresse pour activer la fonctionnalité \).  
+*   La dernière mise en œuvre de Microsoft Edge est désactivée par défaut et est fournie derrière un indicateur \(tapez `about:flags` dans la barre d’adresse pour activer la fonctionnalité \).  
 
 *   Microsoft Edge ne prend pas encore en charge les informations d’identification externes telles que les clés USB ou les appareils Bluetooth.  L’API actuelle est limitée aux informations d’identification incorporées stockées dans le module de plateforme sécurisée.  Un remplacement logiciel est utilisé si la plateforme sécurisée n’est pas disponible sur l’appareil.  
 
 *   Le compte d’utilisateur Windows actuellement connecté doit être configuré de manière à prendre en charge au moins un code confidentiel, et de préférence au visage ou à l’empreinte digitale biométriques.  Cela permet de s’assurer que Windows peut authentifier l’accès au module de plateforme sécurisée.  
 
-*   Parmi les [Extensions prédéfinies](https://w3.org/TR/webauthn/#extension-predef) décrites dans la spécification, Microsoft Edge ne prend en charge que l' [AppID](https://w3.org/TR/webauthn/#extension-appid) d’équipe \ ( `webauthn_txAuthSimple` \) pour le moment.  
+*   Parmi les [Extensions prédéfinies](https://w3.org/TR/webauthn/#extension-predef) décrites dans la spécification, Microsoft Edge ne prend en charge que l' [AppID](https://w3.org/TR/webauthn/#extension-appid) d’équipe \( `webauthn_txAuthSimple` \) pour le moment.  
 
 *  L' `timeoutSeconds` option n’est pas évaluée actuellement  
 

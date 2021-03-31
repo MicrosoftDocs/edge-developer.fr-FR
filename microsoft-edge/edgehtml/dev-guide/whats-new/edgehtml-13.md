@@ -19,7 +19,7 @@ ms.locfileid: "11233456"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-Voici les modifications apportées à EdgeHTML 13, le moteur permettant d’alimenter le navigateur Microsoft Edge dans la [première mise à jour majeure](https://blogs.windows.com/windowsexperience/2015/11/12) de Windows 10 \ (11/2015, Build 10586 \).  Pour obtenir une vue d’ensemble des modifications apportées au navigateur Microsoft Edge global, voir présentation de la [mise à jour de l’EdgeHTML 13, notre première plate-forme pour Microsoft Edge](https://blogs.windows.com/msedgedev/2015/11/16).  
+Voici les modifications apportées à EdgeHTML 13, le moteur permettant d’alimenter le navigateur Microsoft Edge dans la [première mise à jour majeure](https://blogs.windows.com/windowsexperience/2015/11/12) de Windows 10 \(11/2015, Build 10586 \).  Pour obtenir une vue d’ensemble des modifications apportées au navigateur Microsoft Edge global, voir présentation de la [mise à jour de l’EdgeHTML 13, notre première plate-forme pour Microsoft Edge](https://blogs.windows.com/msedgedev/2015/11/16).  
 
 Vous trouverez ci-dessous le lien permanent pour la liste des modifications suivante:  [https://aka.ms/devguide_edgehtml_13](./edgehtml-13.md) .  
 
@@ -35,7 +35,7 @@ EdgeHTML 13 prend en charge les nouvelles fonctionnalités de CSS, notamment:
 
 ### Extensions multimédias chiffrées  
 
-Microsoft Edge prend désormais en charge les API d' [extensions de média chiffrées](https://w3.org/TR/encrypted-media) sans préfixe.  Extensions multimédias chiffrées \ (Encrypted \) étend les éléments vidéo et audio pour activer le contenu protégé par la gestion des droits numériques (DRM) sans utiliser les plug-ins.  En savoir plus sur Encrypted:  [extensions multimédias chiffrées](https://developer.mozilla.org/docs/Web/API/Encrypted_Media_Extensions_API).  
+Microsoft Edge prend désormais en charge les API d' [extensions de média chiffrées](https://w3.org/TR/encrypted-media) sans préfixe.  Extensions multimédias chiffrées \(Encrypted \) étend les éléments vidéo et audio pour activer le contenu protégé par la gestion des droits numériques (DRM) sans utiliser les plug-ins.  En savoir plus sur Encrypted:  [extensions multimédias chiffrées](https://developer.mozilla.org/docs/Web/API/Encrypted_Media_Extensions_API).  
 
 ### Graphiques  
 
@@ -54,16 +54,16 @@ EdgeHTML 13 inclut des [améliorations majeures et une nouvelle prise en charge 
 
 Activé par défaut  
 
-*   [asm.js](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=asm.js) activé par défaut \ ([billet de blog](https://blogs.windows.com/msedgedev/2015/11/10), [démonstration](https://dev.windows.com/microsoft-edge/testdrive/demos/chess)\)  
-*   [Cours](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=classes) \ (ES2015 \)  
+*   [asm.js](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=asm.js) activé par défaut \([billet de blog](https://blogs.windows.com/msedgedev/2015/11/10), [démonstration](https://dev.windows.com/microsoft-edge/testdrive/demos/chess)\)  
+*   [Cours](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=classes) \(ES2015 \)  
 
 #### Fonctionnalités JavaScript expérimentales  
 
 Activé avec `about:flags`  
 
-*   [Fonctions Async](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctions/?q=async%20functions) \ (ES2016 \)  
-*   [Opérateur d’élévation](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016/?q=exponentiation%20operator) à la puissance \ (ES2016 \)  
-*   [Structuration](https://developer.microsoft.com/microsoft-edge/platform/status/destructuringES2015/?q=destructuring) de \ (ES2015 \)  
+*   [Fonctions Async](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctions/?q=async%20functions) \(ES2016 \)  
+*   [Opérateur d’élévation](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016/?q=exponentiation%20operator) à la puissance \(ES2016 \)  
+*   [Structuration](https://developer.microsoft.com/microsoft-edge/platform/status/destructuringES2015/?q=destructuring) de \(ES2015 \)  
 
 ### Entrée de l’utilisateur  
 

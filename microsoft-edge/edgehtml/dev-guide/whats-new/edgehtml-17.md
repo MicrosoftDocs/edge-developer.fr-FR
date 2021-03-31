@@ -39,7 +39,7 @@ EdgeHTML 17 prend désormais en charge les transformations CSS sur les élément
 
 ### Extensions  
 
-Microsoft Edge prend désormais en charge l' [API notification](https://developer.mozilla.org/Add-ons/WebExtensions/API/notifications) qui affiche les notifications d’extensions.  Les développeurs d’extensions peuvent désormais créer différents types de notifications \ (standard, liste, image, etc.) qui prennent en charge l’interaction utilisateur complète.  Les notifications sont également automatiquement enregistrées dans le centre de notifications.  Consultez l' [exemple notifications](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/notifications/notifications) pour savoir comment utiliser cette API dans votre extension.  
+Microsoft Edge prend désormais en charge l' [API notification](https://developer.mozilla.org/Add-ons/WebExtensions/API/notifications) qui affiche les notifications d’extensions.  Les développeurs d’extensions peuvent désormais créer différents types de notifications \(standard, liste, image, etc.) qui prennent en charge l’interaction utilisateur complète.  Les notifications sont également automatiquement enregistrées dans le centre de notifications.  Consultez l' [exemple notifications](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/notifications/notifications) pour savoir comment utiliser cette API dans votre extension.  
 
 EdgeHTML 17 prend désormais également en charge la `Tabs.reload()` méthode dans le cadre de la classe API des onglets standard.  Outre les nouveautés de la mise à jour 2018 de Windows 10, les utilisateurs peuvent désormais choisir d’autoriser les extensions lors de la navigation InPrivate.  
 
@@ -53,7 +53,7 @@ Cette version du DevTools est fournie de deux manières: en tant qu’outils in-
    Application Microsoft Edge DevTools  
 :::image-end:::  
 
-Les outils sont également mis à jour à l’aide d’un certain nombre de fonctionnalités importantes, notamment la prise en charge de base pour le débogage [à distance](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol) \ (via notre nouveau [protocole devtools](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol)\), les [fonctionnalités de débogage](../../devtools-guide/whats-new/edgehtml-17.md#pwa-debugging)de IndexedDB, la [gestion du cache](../../devtools-guide/whats-new/edgehtml-17.md#indexeddb-inspection), l' [ancrage vertical](../../devtools-guide/whats-new/edgehtml-17.md#docking-to-the-right-in-microsoft-edge) et bien plus encore. Nous avons également continué la mise en route globale de la [refactorisation](./edgehtml-16.md) dans le cadre d’investissements en cours de performance et de fiabilité.  
+Les outils sont également mis à jour à l’aide d’un certain nombre de fonctionnalités importantes, notamment la prise en charge de base pour le débogage [à distance](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol) \(via notre nouveau [protocole devtools](../../devtools-guide/whats-new/edgehtml-17.md#devtools-protocol)\), les [fonctionnalités de débogage](../../devtools-guide/whats-new/edgehtml-17.md#pwa-debugging)de IndexedDB, la [gestion du cache](../../devtools-guide/whats-new/edgehtml-17.md#indexeddb-inspection), l' [ancrage vertical](../../devtools-guide/whats-new/edgehtml-17.md#docking-to-the-right-in-microsoft-edge) et bien plus encore. Nous avons également continué la mise en route globale de la [refactorisation](./edgehtml-16.md) dans le cadre d’investissements en cours de performance et de fiabilité.  
 
 Pour plus d’informations, visitez [la page devtools de la dernière mise à jour de Windows 10 (EdgeHTML 17)](../../devtools-guide/whats-new/edgehtml-17.md) .  
 
@@ -66,7 +66,7 @@ Avec EdgeHTML 17 le moteur JavaScript Chakra introduit des améliorations des pe
       **Empreinte mémoire plus allégée**  
    :::column-end:::
    :::column span="2":::
-      *   \ (Re-\) différer l’analyse des [fonctions](https://github.com/Microsoft/ChakraCore/pull/4105) et [méthodes de flèche sur des littéraux d’objets](https://github.com/Microsoft/ChakraCore/pull/4136)  
+      *   \(Re-\) différer l’analyse des [fonctions](https://github.com/Microsoft/ChakraCore/pull/4105) et [méthodes de flèche sur des littéraux d’objets](https://github.com/Microsoft/ChakraCore/pull/4136)  
       *   [Refactorisation de bytecode RegExp](https://github.com/Microsoft/ChakraCore/pull/3915)  
    :::column-end:::
 :::row-end:::  
@@ -108,9 +108,9 @@ Microsoft Edge prend désormais en charge la capture d’écran dans RTC via l' 
 
 ### Applications web progressives  
 
-À partir de EdgeHTML 17, les travailleurs de services et les notifications de transmission sont activés par défaut \ (en savoir plus sur ces fonctionnalités dans le service de publication de blog [: sortir au-delà de la page](https://blogs.windows.com/msedgedev/2017/12/19)).  Cette opération a pour fin la suite de technologies \ (y compris les API FETCH Networking et de mise en cache \), qui comporte la Fondation technique pour les applications Web progressives (PWAs \) sur Windows 10.  
+À partir de EdgeHTML 17, les travailleurs de services et les notifications de transmission sont activés par défaut \(en savoir plus sur ces fonctionnalités dans le service de publication de blog [: sortir au-delà de la page](https://blogs.windows.com/msedgedev/2017/12/19)).  Cette opération a pour fin la suite de technologies \(y compris les API FETCH Networking et de mise en cache \), qui comporte la Fondation technique pour les applications Web progressives (PWAs \) sur Windows 10.  
 
-Les PWAs sont des applications Web qui ont été [progressivement améliorées](https://en.wikipedia.org/wiki/Progressive_enhancement) avec des fonctionnalités de type application native sur la prise en charge des plateformes et des moteurs de navigateur, tels que le lancement de l’écran de démarrage, la prise en charge hors ligne et les notifications de transmission.  Sur Windows 10 avec le moteur Microsoft Edge \ (EdgeHTML \), PWAs Profitez de l’avantage supplémentaire de s’exécuter indépendamment de la fenêtre du navigateur en tant qu’applications pour la [plateforme Windows universelle](/windows/uwp/get-started/whats-a-uwp) .  
+Les PWAs sont des applications Web qui ont été [progressivement améliorées](https://en.wikipedia.org/wiki/Progressive_enhancement) avec des fonctionnalités de type application native sur la prise en charge des plateformes et des moteurs de navigateur, tels que le lancement de l’écran de démarrage, la prise en charge hors ligne et les notifications de transmission.  Sur Windows 10 avec le moteur Microsoft Edge \(EdgeHTML \), PWAs Profitez de l’avantage supplémentaire de s’exécuter indépendamment de la fenêtre du navigateur en tant qu’applications pour la [plateforme Windows universelle](/windows/uwp/get-started/whats-a-uwp) .  
 
 Au-delà de PWAs, les travailleurs de services et l’API de cache permettent aux développeurs d’intercepter les requêtes réseau et de répondre à partir du cache.  Il n’est pas nécessaire qu’un site Web prenne en charge la mise en cache du service de travail pour la fiabilité et les performances de chargement des pages affinées, ainsi que la possibilité d’offrir une utilisation hors connexion pendant des périodes de connexion Internet ou médiocre.  
 
@@ -118,7 +118,7 @@ Pour en savoir plus sur les travailleurs de services et les détails sur PWAs su
 
 ### Sécurité Web  
 
-EdgeHTML 17 apporte une prise en charge de l’intégrité des sous-ressources \ (SRI \).  [L’intégrité](https://developer.mozilla.org/docs/Web/Security/Subresource_Integrity) des sous-ressources est une fonctionnalité de sécurité qui permet aux navigateurs de vérifier que les ressources récupérées (telles que les images, les scripts, les polices, etc.) sont transmises sans manipulation inattendue.  
+EdgeHTML 17 apporte une prise en charge de l’intégrité des sous-ressources \(SRI \).  [L’intégrité](https://developer.mozilla.org/docs/Web/Security/Subresource_Integrity) des sous-ressources est une fonctionnalité de sécurité qui permet aux navigateurs de vérifier que les ressources récupérées (telles que les images, les scripts, les polices, etc.) sont transmises sans manipulation inattendue.  
 
 Ajoutez un `integrity` attribut contenant une représentation de hachage de chiffrement de la ressource que vous prévoyez de charger sur votre page Web sur un `<script>` `<link>` élément ou, comme dans l’exemple ci-dessous.  Ensuite, Microsoft Edge compare la ressource demandée au hachage défini dans l' `integrity` attribut.  S’ils ne correspondent pas, Microsoft Edge n’exécutera pas la ressource et renverra une erreur au réseau.  
 
@@ -131,7 +131,7 @@ Ajoutez un `integrity` attribut contenant une représentation de hachage de chif
 Par ailleurs, nouveau dans EdgeHTML 17, l’en-tête de requête [mise à niveau-demandes non sécurisées autorise les](https://developer.mozilla.org/docs/Web/HTTP/Headers/Upgrade-Insecure-Requests) navigateurs à demander une interface de navigation sécurisée.  Cet en-tête indique au serveur que le navigateur prend en charge la mise à niveau de toutes les demandes non sécurisées et que l’utilisateur doit être redirigé vers une version sécurisée du site, le cas échéant.  
 
 ### Polices variables
-La prise en charge complète des polices variables \ (y compris CSS [font-variance-Settings](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings) et [font-Sizing-dimensionnement](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings)) est disponible dans EdgeHTML 17.  Les polices variables permettent aux développeurs d’obtenir l’apparence de différentes polices avec une seule police en ajustant différents axes, ce qui permet de réduire le nombre de fichiers de police et de meilleures performances.  
+La prise en charge complète des polices variables \(y compris CSS [font-variance-Settings](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings) et [font-Sizing-dimensionnement](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings)) est disponible dans EdgeHTML 17.  Les polices variables permettent aux développeurs d’obtenir l’apparence de différentes polices avec une seule police en ajustant différents axes, ce qui permet de réduire le nombre de fichiers de police et de meilleures performances.  
 
 Retrouvez-nous sur [une expédition pour en savoir plus sur les polices variables fournies par les développeurs et les concepteurs Web](https://developer.microsoft.com/microsoft-edge/testdrive/demos/variable-fonts), et la manière de les utiliser sur votre site.  Pour en savoir plus sur les polices variables du billet de blog, [vous pouvez utiliser une typographie expressif et performante sur Microsoft Edge avec des polices variables](https://blogs.windows.com/msedgedev/2018/03/13).  
 

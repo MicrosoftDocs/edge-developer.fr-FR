@@ -40,18 +40,18 @@ EdgeHTML 14 apporte un certain nombre de fonctionnalités nouvelles et expérime
 
 Activé par défaut  
 
-*   [Paramètres par défaut](https://developer.microsoft.com/microsoft-edge/platform/status/defaultparameteres6) \ (ES2015 \)
-*   [Opérateur d’élévation](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016) à la puissance \ (ES2016 \)
-*   [Array. prototype. include](https://developer.microsoft.com/microsoft-edge/platform/status/arrayprototypeincludeses2016) \ (ES2016 \)
-*   [Objet. Values](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/values) et [Object. Entries](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) \ (ES2017 \)  
+*   [Paramètres par défaut](https://developer.microsoft.com/microsoft-edge/platform/status/defaultparameteres6) \(ES2015 \)
+*   [Opérateur d’élévation](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016) à la puissance \(ES2016 \)
+*   [Array. prototype. include](https://developer.microsoft.com/microsoft-edge/platform/status/arrayprototypeincludeses2016) \(ES2016 \)
+*   [Objet. Values](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/values) et [Object. Entries](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) \(ES2017 \)  
 
 #### Fonctionnalités JavaScript expérimentales  
 
 Activé avec `about:flags`  
 
-*   [Modules](https://blogs.windows.com/msedgedev/2016/05/17) \ (ES2015 \)  
-*   [Async/await](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctionses2016) \ (ES2017 \)  
-*   [Symboles Regex](https://developer.microsoft.com/microsoft-edge/platform/status/regexpbuiltinses6) \ (ES2015 \)  
+*   [Modules](https://blogs.windows.com/msedgedev/2016/05/17) \(ES2015 \)  
+*   [Async/await](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctionses2016) \(ES2017 \)  
+*   [Symboles Regex](https://developer.microsoft.com/microsoft-edge/platform/status/regexpbuiltinses6) \(ES2015 \)  
 
 Pour plus d’informations, consultez la [vue d’ensemble de la prévisualisation des modules ES6 et plus encore d’ES2015, de ES2016 et de](https://blogs.windows.com/msedgedev/2016/05/17) [code asynchrone plus facile avec la prise en charge des fonctions Async ES2016 dans Chakra et Microsoft Edge](https://blogs.windows.com/msedgedev/2015/09/30).  
 
@@ -59,13 +59,13 @@ Pour plus d’informations, consultez la [vue d’ensemble de la prévisualisati
 
 API Web de la 2,0  
 
-L’API d’authentification Web (anciennement le 2,0 \) dans Microsoft Edge permet aux applications Web d’utiliser la biométrie [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) pour l’authentification des utilisateurs, afin que vous et vos utilisateurs puissiez éviter les problèmes liés à la gestion des mots de passe, y compris le processus de détection de mot de passe, les tentatives de hameçonnage et la journalisation.  L’implémentation actuelle de Microsoft Edge \ (@ `ms-` corrigée) est basée sur un brouillon antérieur de la spécification d’authentification Web et est susceptible d’être modifié à l’avenir.  En savoir plus sur l’authentification Web:  [authentification Web et Windows Hello](../windows-integration/web-authentication.md).
+L’API d’authentification Web (anciennement le 2,0 \) dans Microsoft Edge permet aux applications Web d’utiliser la biométrie [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) pour l’authentification des utilisateurs, afin que vous et vos utilisateurs puissiez éviter les problèmes liés à la gestion des mots de passe, y compris le processus de détection de mot de passe, les tentatives de hameçonnage et la journalisation.  L’implémentation actuelle de Microsoft Edge \(@ `ms-` corrigée) est basée sur un brouillon antérieur de la spécification d’authentification Web et est susceptible d’être modifié à l’avenir.  En savoir plus sur l’authentification Web:  [authentification Web et Windows Hello](../windows-integration/web-authentication.md).
 
 ### Notifications Web
 Les notifications Web permettent aux sites d’afficher des notifications pour avertir les utilisateurs en dehors du contexte de la page Web et du navigateur, en conformant les utilisateurs de nouveaux messages ou alertes et en permettant aux sites d’améliorer l’engagement des utilisateurs.  Les notifications Web dans Microsoft Edge sont entièrement intégrées à la plateforme de notification et au centre de notifications dans Windows 10 afin d’offrir une interface cohérente avec les autres applications du système et des contrôles simples sur les autorisations et les heures creuses.  Pour plus d’informations, voir [notifications Web dans Microsoft Edge](https://blogs.windows.com/msedgedev/2016/05/16) .  
 
 ### API Web Speech
-L' [API Web Speech](https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html) est une API JavaScript composée de deux parties: reconnaissance vocale et synthèse vocale \ (ou conversion de texte par synthèse vocale).  Pour le moment, Microsoft Edge prend en charge uniquement la synthèse vocale.  La synthèse vocale implique la conversion de texte par synthèse vocale qu’un utilisateur entend par le biais de ses haut-parleurs.  Pour plus d’informations, consultez l’article Guide du développeur de synthèse [vocale](https://developer.mozilla.org/docs/Web/API/Web_Speech_API) .  
+L' [API Web Speech](https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html) est une API JavaScript composée de deux parties: reconnaissance vocale et synthèse vocale \(ou conversion de texte par synthèse vocale).  Pour le moment, Microsoft Edge prend en charge uniquement la synthèse vocale.  La synthèse vocale implique la conversion de texte par synthèse vocale qu’un utilisateur entend par le biais de ses haut-parleurs.  Pour plus d’informations, consultez l’article Guide du développeur de synthèse [vocale](https://developer.mozilla.org/docs/Web/API/Web_Speech_API) .  
 
 ## Nouvelles API dans EdgeHTML 14
 

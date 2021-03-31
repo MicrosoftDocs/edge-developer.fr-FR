@@ -21,7 +21,7 @@ ms.locfileid: "11233035"
 > [!NOTE]
 > Le nouveau Microsoft Edge est conçu à l’aide du chrome et commence à la version 75.  Pour plus d’informations, [Téléchargez le nouveau Microsoft Edge][MicrosoftNewEdge]et testez les nouveaux [outils de développement Microsoft Edge (chrome)][DevtoolsGuideChromium].  
 > 
-> Pour émuler différents appareils, navigateurs, tailles d’écran et résolutions dans le nouveau DevTools, accédez à la section [émuler des appareils mobiles dans Microsoft Edge \ (chrome \) devtools][DevtoolsGuideChromiumDeviceMode].  
+> Pour émuler différents appareils, navigateurs, tailles d’écran et résolutions dans le nouveau DevTools, accédez à la section [émuler des appareils mobiles dans Microsoft Edge \(chrome \) devtools][DevtoolsGuideChromiumDeviceMode].  
 
 Le panneau d' **émulation** facilite les activités suivantes.    
 

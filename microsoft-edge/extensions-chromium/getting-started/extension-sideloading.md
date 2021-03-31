@@ -16,7 +16,7 @@ ms.locfileid: "11104771"
 ---
 # Charger une extension
 
-Pendant le développement, vous pouvez utiliser le navigateur Microsoft Edge \ (chrome \) pour exécuter et déboguer votre extension en toute sécurité. Chargement indépendant votre extension locale dans votre navigateur, vous pouvez exécuter et tester votre extension. Cet article explique comment charger les extensions dans Microsoft Edge.
+Pendant le développement, vous pouvez utiliser le navigateur Microsoft Edge \(chrome \) pour exécuter et déboguer votre extension en toute sécurité. Chargement indépendant votre extension locale dans votre navigateur, vous pouvez exécuter et tester votre extension. Cet article explique comment charger les extensions dans Microsoft Edge.
 
 Pour charger votre extension, procédez comme suit.
 

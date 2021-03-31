@@ -15,19 +15,19 @@ ms.locfileid: "11233280"
 ---
 # Présentation du protocole DevTools Microsoft Edge (chrome)  
 
-Avec le Shift dans la plate-forme Web sous-jacente de Microsoft Edge à chrome, le [protocole devtools de Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) ne recevra pas de nouvelles mises à jour.  Le protocole DevTools de Microsoft Edge \ (chrome \) doit correspondre aux API du protocole DevTools chrome.  
+Avec le Shift dans la plate-forme Web sous-jacente de Microsoft Edge à chrome, le [protocole devtools de Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) ne recevra pas de nouvelles mises à jour.  Le protocole DevTools de Microsoft Edge \(chrome \) doit correspondre aux API du protocole DevTools chrome.  
 
 Vous trouverez des informations sur ces domaines et méthodes en vous référant à la [visionneuse du protocole chrome devtools](https://chromedevtools.github.io/devtools-protocol/tot/).  
 
 > [!NOTE]
-> Toutes les méthodes qui ont été préfixées `ms` dans le [protocole devtools de Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) ne sont plus prises en charge dans le protocole devtools Microsoft Edge \ (chrome \).  
+> Toutes les méthodes qui ont été préfixées `ms` dans le [protocole devtools de Microsoft Edge (EdgeHTML)](../edgehtml/devtools-protocol/index.md) ne sont plus prises en charge dans le protocole devtools Microsoft Edge \(chrome \).  
 
 ## Utiliser le protocole DevTools  
 
-Voici comment joindre un client d’outillage personnalisé au serveur DevTools dans Microsoft Edge \ (chrome \).  
+Voici comment joindre un client d’outillage personnalisé au serveur DevTools dans Microsoft Edge \(chrome \).  
 
 1.  Assurez-vous que toutes les instances de Microsoft Edge.  
-1.  Lancez Microsoft Edge \ (chrome \) avec le port de débogage à distance:. 
+1.  Lancez Microsoft Edge \(chrome \) avec le port de débogage à distance:. 
     
     ```shell
     msedge.exe --remote-debugging-port=9222
@@ -49,7 +49,7 @@ Voici comment joindre un client d’outillage personnalisé au serveur DevTools 
 
 ## Points de terminaison HTTPs du protocole DevTools  
 
-Le protocole Microsoft Edge \ (chrome \) DevTools prend en charge les points de terminaison HTTP suivants.  
+Le protocole Microsoft Edge \(chrome \) DevTools prend en charge les points de terminaison HTTP suivants.  
 
 ## /json/version  
 
@@ -108,7 +108,7 @@ Fournit une liste de cibles de pages pour le débogage.
 
 ## /json/close  
 
-Ferme le processus cible \ (par exemple, dans Microsoft Edge \ (chrome \), ferme l’onglet de page \).  
+Ferme le processus cible \(par exemple, dans Microsoft Edge \(chrome \), ferme l’onglet de page \).  
 
 **Parameters**  
 

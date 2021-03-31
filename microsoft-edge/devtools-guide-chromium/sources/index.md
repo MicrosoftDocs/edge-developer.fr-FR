@@ -73,7 +73,7 @@ Cette modification doit prendre effet immédiatement.
    Modification de CSS dans le volet **éditeur** pour modifier la couleur du texte du sous-titre en rouge  
 :::image-end:::  
 
-Les modifications apportées aux feuilles CSS sont immédiatement appliquées, sans enregistrement.  Pour que les modifications JavaScript soient appliquées, sélectionnez `Control`+`S` \ (Windows, Linux \) ou `Command`+`S` \ (MacOS \).  DevTools ne ré-exécute pas de script, les seules modifications JavaScript qui prennent effet sont celles que vous effectuez dans les fonctions.  Par exemple, dans l’illustration suivante, vous remarquerez que `console.log('A')`n’exécute pas, alors que `console.log('B')` exécute.  Si DevTools ré-exécute à nouveau l’intégralité du script après avoir fait la modification, le texte est enregistré `A` dans la **console**.  
+Les modifications apportées aux feuilles CSS sont immédiatement appliquées, sans enregistrement.  Pour que les modifications JavaScript soient appliquées, sélectionnez `Control`+`S` \(Windows, Linux \) ou `Command`+`S` \(MacOS \).  DevTools ne ré-exécute pas de script, les seules modifications JavaScript qui prennent effet sont celles que vous effectuez dans les fonctions.  Par exemple, dans l’illustration suivante, vous remarquerez que `console.log('A')`n’exécute pas, alors que `console.log('B')` exécute.  Si DevTools ré-exécute à nouveau l’intégralité du script après avoir fait la modification, le texte est enregistré `A` dans la **console**.  
 
 :::image type="complex" source="../media/edit-js.msft.png" alt-text="Modification de JavaScript dans le volet éditeur" lightbox="../media/edit-js.msft.png":::
    Modification de JavaScript dans le panneau **Éditeur**  
@@ -139,7 +139,7 @@ Accédez à [modifier les fichiers avec des espaces de travail][DevtoolsGuideChr
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/sources) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/sources) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  

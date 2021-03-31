@@ -65,7 +65,7 @@ Pour ajouter des fichiers à votre dossier de remplacements, ouvrez l’outil **
    Sélectionner un fichier dans l’inspecteur de **styles**  
 :::image-end:::  
 
-Dans l’éditeur de **sources** , pointez sur le nom du fichier que vous avez choisi, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \), puis sélectionnez **Enregistrer pour les remplacements**.  
+Dans l’éditeur de **sources** , pointez sur le nom du fichier que vous avez choisi, ouvrez le menu contextuel \(cliquez avec le bouton droit sur \), puis sélectionnez **Enregistrer pour les remplacements**.  
 
 :::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="Dans l’éditeur de sources, ajoutez le nom du fichier aux substitutions." lightbox="../media/javascript-overrides-file-name.msft.png":::
    Dans l’éditeur de **sources** , ajoutez le nom du fichier aux substitutions.  
@@ -100,14 +100,14 @@ Le fichier est stocké dans votre dossier Overrides.  Vérifiez que DevTools cr�
 
 :::row:::
    :::column span="":::
-      Dans l’outil **sources** , dans la section **page** , pointez sur un fichier, ouvrez le menu contextuel \ (cliquez avec le bouton droit sur \) et ajoutez-le à des substitutions.  Là encore, les fichiers qui se trouvent déjà dans votre dossier remplacements sont dotés d’un point violet sur l’icône.  
+      Dans l’outil **sources** , dans la section **page** , pointez sur un fichier, ouvrez le menu contextuel \(cliquez avec le bouton droit sur \) et ajoutez-le à des substitutions.  Là encore, les fichiers qui se trouvent déjà dans votre dossier remplacements sont dotés d’un point violet sur l’icône.  
       
       :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Choisir un fichier à partir de l’outil sources pour les remplacements" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
          Choisir un fichier à partir de l’outil **sources** pour les remplacements  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      Vous pouvez également accéder à un fichier à l’aide de l’outil **réseau** , ouvrir le menu contextuel \ (cliquez avec le bouton droit sur \) et l’ajouter aux remplacements.  Lorsque les remplacements sont activés, les fichiers qui se trouvent sur votre ordinateur et non à partir de la page Web dynamique.  Lorsque les remplacements sont activés, dans l’outil **réseau** , recherchez une icône d’avertissement en regard du nom du fichier.  
+      Vous pouvez également accéder à un fichier à l’aide de l’outil **réseau** , ouvrir le menu contextuel \(cliquez avec le bouton droit sur \) et l’ajouter aux remplacements.  Lorsque les remplacements sont activés, les fichiers qui se trouvent sur votre ordinateur et non à partir de la page Web dynamique.  Lorsque les remplacements sont activés, dans l’outil **réseau** , recherchez une icône d’avertissement en regard du nom du fichier.  
       
       :::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="Choisir un fichier à partir de l’outil réseau pour les remplacements" lightbox="../media/javascript-overrides-network.msft.png":::
          Choisir un fichier à partir de l’outil **réseau** pour les remplacements  

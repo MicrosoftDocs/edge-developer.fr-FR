@@ -20,7 +20,7 @@ ms.locfileid: "11233033"
 
 [!INCLUDE [new-devtools-version-note](../includes/new-devtools-version-note.md)]  
 
-DevTools de Microsoft Edge \ (EdgeHTML \) sont conçus avec [TypeScript][|::ref1::|Index], avec [Open source][GithubMicrosoftChakracore], optimisés pour les flux de travail frontaux modernes et désormais disponible sous la forme d'[application Windows10 autonome][MicrosoftStoreEdgeDevtoolsPreview] dans le Microsoft Store.  
+DevTools de Microsoft Edge \(EdgeHTML \) sont conçus avec [TypeScript][|::ref1::|Index], avec [Open source][GithubMicrosoftChakracore], optimisés pour les flux de travail frontaux modernes et désormais disponible sous la forme d'[application Windows10 autonome][MicrosoftStoreEdgeDevtoolsPreview] dans le Microsoft Store.  
 
 Pour plus d’informations sur les fonctionnalités les plus récentes, consultez [DevTools dans la dernière mise à jour de Windows10 (EdgeHTML 18)][DevtoolsGuideEdgehtmlWhatsnew].  
 
@@ -52,11 +52,11 @@ N’hésitez pas à nous envoyer vos [commentaires et demandes de fonctionnalit�
 
 ## Application du MicrosoftStore  
 
-Les **DevTools Microsoft Edge \(EdgeHTML\)** sont [désormais disponibles][DevtoolsGuideEdgehtmlWhatsnew] sous la forme d’une application autonome [Windows10 à partir du Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview], en plus de l’expérience d’outils dans le navigateur \ (`F12`\).  La version store est accompagnée d'un panneau de **Sélecteur** permettant d'associer des cibles de pages locales et distantes ouvertes et d'une mise en page à onglets permettant de passer facilement d'une instance DevTools à l'autre.  
+Les **DevTools Microsoft Edge \(EdgeHTML\)** sont [désormais disponibles][DevtoolsGuideEdgehtmlWhatsnew] sous la forme d’une application autonome [Windows10 à partir du Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview], en plus de l’expérience d’outils dans le navigateur \(`F12`\).  La version store est accompagnée d'un panneau de **Sélecteur** permettant d'associer des cibles de pages locales et distantes ouvertes et d'une mise en page à onglets permettant de passer facilement d'une instance DevTools à l'autre.  
 
 ### Débogage local  
 
-Pour déboguer une page localement, lancez simplement l’application DevTools de Microsoft Edge.  Le panneau **Local** du sélecteur affiche tous les processus de contenu EdgeHTML actifs, y compris les onglets de navigateur ouvert, exécutant [PWAs][PwasEdgehtmlIndex] \ (`WWAHost.exe` processus \), et les contrôles de panneau [vue web][HostingWebview].  Sélectionnez la cible souhaitée à joindre et ouvrez une nouvelle instance d’onglet de DevTools.  
+Pour déboguer une page localement, lancez simplement l’application DevTools de Microsoft Edge.  Le panneau **Local** du sélecteur affiche tous les processus de contenu EdgeHTML actifs, y compris les onglets de navigateur ouvert, exécutant [PWAs][PwasEdgehtmlIndex] \(`WWAHost.exe` processus \), et les contrôles de panneau [vue web][HostingWebview].  Sélectionnez la cible souhaitée à joindre et ouvrez une nouvelle instance d’onglet de DevTools.  
 
 :::image type="complex" source=".//media/chooser_local.png" alt-text="Panneau local de l’application DevTools":::
    Panneau local de l’application DevTools
@@ -66,7 +66,7 @@ Pour déboguer une page localement, lancez simplement l’application DevTools d
 
 ### Débogage à distance  
 
-L’application DevTools Microsoft Edge présente la prise en charge de base pour le débogage de pages sur un ordinateur distant via le [Protocole DevTools][DevtoolsProtocolEdgehtmlIndex].  La dernière version inclut l’accès à distance aux fonctionnalités principales dans les panneaux [Débogage][DevtoolsGuideEdgehtml|::ref10::|],[Éléments][DevtoolsGuideEdgehtml|::ref11::|] \ (pour les opérations en lecture seule \) et [Console][DevtoolsGuideEdgehtml|::ref12::|].  Le débogage distant est limité à Microsoft Edge \(EdgeHTML\) qui exécute les hôtes de bureau, avec la prise en charge d’autres hôtes EdgeHTML et de périphériques Windows10 dans les versions à venir.  
+L’application DevTools Microsoft Edge présente la prise en charge de base pour le débogage de pages sur un ordinateur distant via le [Protocole DevTools][DevtoolsProtocolEdgehtmlIndex].  La dernière version inclut l’accès à distance aux fonctionnalités principales dans les panneaux [Débogage][DevtoolsGuideEdgehtml|::ref10::|],[Éléments][DevtoolsGuideEdgehtml|::ref11::|] \(pour les opérations en lecture seule \) et [Console][DevtoolsGuideEdgehtml|::ref12::|].  Le débogage distant est limité à Microsoft Edge \(EdgeHTML\) qui exécute les hôtes de bureau, avec la prise en charge d’autres hôtes EdgeHTML et de périphériques Windows10 dans les versions à venir.  
 
 Pour commencer, consultez la section [*DevTools Microsoft Edge*][DevtoolsProtocolEdgehtmlClientsEdgePreview] de la documentation sur le [protocole DevTools][DevtoolsProtocolEdgehtmlIndex].  
 
@@ -86,8 +86,8 @@ Ces raccourcis contrôlent la fenêtre principale DevTools et doivent fonctionne
 
 | Action | Raccourci |  
 |:--- |:--- |  
-| Afficher/masquer DevTools \ (s’ouvre sur le panneau dernier affichage\) | `F12`, `Ctrl`+`Shift`+`I` |  
-| Basculer la station d’Accueil \ (annuler la station d’accueil/bas/droite \) | `Ctrl`+`Shift`+`D` |  
+| Afficher/masquer DevTools \(s’ouvre sur le panneau dernier affichage\) | `F12`, `Ctrl`+`Shift`+`I` |  
+| Basculer la station d’Accueil \(annuler la station d’accueil/bas/droite \) | `Ctrl`+`Shift`+`D` |  
 | Ouvrir un fichier | `Ctrl`+`P`, `Ctrl`+`O` |  
 | Afficher le code source HTML non modifiable dans le débogueur | `Ctrl`+`U` |  
 | Afficher/masquer la console en bas de tout autre outil  | `Ctrl`+`` ` `` |  
@@ -117,7 +117,7 @@ Ces raccourcis contrôlent la fenêtre principale DevTools et doivent fonctionne
 
 ## Contacter l’équipe DevTools MicrosoftEdge  
 
-Envoyez-nous vos commentaires pour améliorer la DevTools de Microsoft Edge \ (EdgeHTML \) pour vous.  Il vous suffit d’ouvrir les outils \ (`F12`\) et de sélectionner le bouton [Envoyer des commentaires](#microsoft-edge-edgehtml-developer-tools).  
+Envoyez-nous vos commentaires pour améliorer la DevTools de Microsoft Edge \(EdgeHTML \) pour vous.  Il vous suffit d’ouvrir les outils \(`F12`\) et de sélectionner le bouton [Envoyer des commentaires](#microsoft-edge-edgehtml-developer-tools).  
 
 Devenez un [Windows Insider][WindowsInsiderProgram] pour prévisualiser le [dernières fonctionnalités en provenance de la DevTools][DevtoolsGuideEdgehtmlWhatsnew].  Utilisez l’application Hub de commentaires Windows pour publier, voter, effectuer le suivi et obtenir de l’aide sur les suggestions et problèmes généraux de Windows.  
 

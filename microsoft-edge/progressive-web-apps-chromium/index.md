@@ -17,7 +17,7 @@ ms.locfileid: "11231215"
 ---
 # Vue d’ensemble des applications Web progressivement sur Windows  
 
-Les [applications Web progressives][MDNApps] \ (PWAS \) offrent un accès aux technologies Web ouvertes pour une interopérabilité multiplateforme et fournissent aux utilisateurs une interface native et de type application adaptée à leurs appareils.  Les PWAs sont des sites Web qui sont [progressivement améliorés][AListApartUnderstandingProgressiveEnhancement] pour fonctionner comme des applications natives sur les plateformes prises en charge.  Les qualités d’une PWA combinent le meilleur des applications web et natives.  
+Les [applications Web progressives][MDNApps] \(PWAS \) offrent un accès aux technologies Web ouvertes pour une interopérabilité multiplateforme et fournissent aux utilisateurs une interface native et de type application adaptée à leurs appareils.  Les PWAs sont des sites Web qui sont [progressivement améliorés][AListApartUnderstandingProgressiveEnhancement] pour fonctionner comme des applications natives sur les plateformes prises en charge.  Les qualités d’une PWA combinent le meilleur des applications web et natives.  
 
 :::row:::
     :::column:::
@@ -70,17 +70,17 @@ Les [applications Web progressives][MDNApps] \ (PWAS \) offrent un accès aux te
 :::row-end:::  
 
 
-Créez \ (ou convertissez) votre site Web existant vers un site PWA pour améliorer vos engagements.  Les améliorations incluent les notifications de transmission, l’intégration de type application et la prise en charge hors connexion.  Continuez à développer votre public sur le Web ouvert pour que les utilisateurs puissent découvrir votre PWA par le biais de la recherche et du partage de liens.  Mieux, votre application est mise à jour à l’aide de votre code serveur Web.  
+Créez \(ou convertissez) votre site Web existant vers un site PWA pour améliorer vos engagements.  Les améliorations incluent les notifications de transmission, l’intégration de type application et la prise en charge hors connexion.  Continuez à développer votre public sur le Web ouvert pour que les utilisateurs puissent découvrir votre PWA par le biais de la recherche et du partage de liens.  Mieux, votre application est mise à jour à l’aide de votre code serveur Web.  
 
 ## PWAs sur Microsoft Edge (chrome)  
 
-Lorsque vous générez une API standard Web pour cibler une application Web, votre application peut être déployée sur différentes plateformes et appareils et tirer parti des fonctionnalités spécifiques à l’appareil.  PWAs dans Microsoft Edge \ (chrome \) ajoutez les avantages suivants à votre site Web.  
+Lorsque vous générez une API standard Web pour cibler une application Web, votre application peut être déployée sur différentes plateformes et appareils et tirer parti des fonctionnalités spécifiques à l’appareil.  PWAs dans Microsoft Edge \(chrome \) ajoutez les avantages suivants à votre site Web.  
 
 *   Votre application est basée sur une plateforme Web standard.  
 *   Permet aux utilisateurs d’installer votre application directement à partir du navigateur.  
 *   Permet à vos utilisateurs d’installer votre application sans déploiement ou inscription sur le Windows Store.  
     
-Les PWAs de bureau sont prises en charge sur n’importe quelle plateforme Microsoft Edge \ (chrome \) est disponible. Microsoft Edge \ (chrome \) est disponible sur Windows 7, Windows 10 et macOS.  Les avantages suivants sont inclus.  
+Les PWAs de bureau sont prises en charge sur n’importe quelle plateforme Microsoft Edge \(chrome \) est disponible. Microsoft Edge \(chrome \) est disponible sur Windows 7, Windows 10 et macOS.  Les avantages suivants sont inclus.  
 
 *   Les applications sont installées directement à partir du navigateur à l’aide de l’icône d' **installation** dans la barre de navigation.  
     
@@ -96,7 +96,7 @@ Les PWAs de bureau sont prises en charge sur n’importe quelle plateforme Micro
     
 *   Les notifications Web sont intégrées dans le système de notification Windows  
 *   Magasin de cookies partagés avec le profil de navigateur qui a installé l’application  
-*   Accès à d’autres fonctionnalités de navigateur à l’aide du menu **paramètre et plus** \ ( `...` \), avec la validation de certificats, les autorisations de site, la protection contre le suivi et les extensions de navigateur  
+*   Accès à d’autres fonctionnalités de navigateur à l’aide du menu **paramètre et plus** \( `...` \), avec la validation de certificats, les autorisations de site, la protection contre le suivi et les extensions de navigateur  
 *   Un accès complet à [Microsoft Edge devtools][DevtoolsProgressiveWebApps] pour le débogage de votre application  
     
 > [!IMPORTANT]

@@ -17,14 +17,14 @@ ms.locfileid: "11233214"
 ---
 # Personnaliser votre PWA (EdgeHTML) pour Windows  
 
-PWAs installé sur Windows 10 Profitez de [tous les avantages de l'][PwaIndexWindows10] utilisation des applications de [plateforme Windows universelle (UWP)][WindowsUWPGetStartedGuide] , notamment la protection de l’application Windows en mode sandbox et un accès complet aux API [Windows Runtime \ (WinRT \))][UwpApiIndex] , notamment pour:  
+PWAs installé sur Windows 10 Profitez de [tous les avantages de l'][PwaIndexWindows10] utilisation des applications de [plateforme Windows universelle (UWP)][WindowsUWPGetStartedGuide] , notamment la protection de l’application Windows en mode sandbox et un accès complet aux API [Windows Runtime \(WinRT \))][UwpApiIndex] , notamment pour:  
 
 *   Contrôle des fonctionnalités du périphérique (par exemple, caméra, micro, GPS \)  
-*   Accès aux ressources utilisateur \ (par exemple, calendrier, contacts, documents, musique \)  
+*   Accès aux ressources utilisateur \(par exemple, calendrier, contacts, documents, musique \)  
 *   Lancement/déplacement de votre application par le biais des commandes vocales Cortana  
-*   Intégration du système d’exploitation Windows \ (via le centre de notifications Windows, de la barre des tâches du bureau et des menus contextuels)  
+*   Intégration du système d’exploitation Windows \(via le centre de notifications Windows, de la barre des tâches du bureau et des menus contextuels)  
     
-Il ne s’agit que de quelques-unes des possibilités ajoutées pour votre PWA \ (EdgeHTML \) sur Windows.  
+Il ne s’agit que de quelques-unes des possibilités ajoutées pour votre PWA \(EdgeHTML \) sur Windows.  
 
 Cet article vous explique comment installer et exécuter une application Windows 10 (EdgeHTML \) et l’améliorer, tout en garantissant la compatibilité entre navigateur et multiplateforme.  
 
@@ -40,14 +40,14 @@ Cet article vous explique comment installer et exécuter une application Windows
         
 ## Configuration et exécution de votre application Windows universelle  
 
-Une application PWA \ (EdgeHTML \) installée en tant qu’application Windows 10 s’exécute en même temps que le navigateur, dans une fenêtre autonome \ ( `WWAHost.exe` processus \).  Pour cela, il vous suffit de disposer d’un wrapper d’application léger qui contient votre application Web hébergée, que vous pouvez configurer rapidement à l’aide du modèle de projet Visual Studio `Progressive Web App (Universal Windows)` .  \ (Toute la logique de votre application, y compris l’envoi de demandes d’API Windows Runtime natives, a toujours lieu dans le code de votre application Web d’origine. \)  
+Une application PWA \(EdgeHTML \) installée en tant qu’application Windows 10 s’exécute en même temps que le navigateur, dans une fenêtre autonome \( `WWAHost.exe` processus \).  Pour cela, il vous suffit de disposer d’un wrapper d’application léger qui contient votre application Web hébergée, que vous pouvez configurer rapidement à l’aide du modèle de projet Visual Studio `Progressive Web App (Universal Windows)` .  \(Toute la logique de votre application, y compris l’envoi de demandes d’API Windows Runtime natives, a toujours lieu dans le code de votre application Web d’origine. \)  
 
 Configurez votre environnement de développement d’applications Windows dans Visual Studio.  
 
-1.  Dans les paramètres Windows, activez le [mode développeur][WindowsUWPGetStartedEnable].  \ (Tapez `developer mode` dans le Searchbar Windows pour le trouver. \)  
+1.  Dans les paramètres Windows, activez le [mode développeur][WindowsUWPGetStartedEnable].  \(Tapez `developer mode` dans le Searchbar Windows pour le trouver. \)  
 1.  Lancez Visual Studio et sélectionnez **créer un nouveau projet...**.  
 1.  Choisissez **JavaScript**  >  **Windows Universal** et sélectionnez **application Web progressive (Windows universel)** dans la liste des types de projets dans Visual Studio 2017.  
-1.  Sélectionnez la version par défaut de Windows 10 `Target version` \ (version la plus récente) et `Minimum version` \ (Build 10586 ou version ultérieure) et sélectionnez **OK**.  
+1.  Sélectionnez la version par défaut de Windows 10 `Target version` \(version la plus récente) et `Minimum version` \(Build 10586 ou version ultérieure) et sélectionnez **OK**.  
     
     ![Boîte de dialogue de sélection Visual Studio pour les builds cibles de projet UWP](media/vs-target-min-version.png)  
     
@@ -57,37 +57,37 @@ Configurez votre environnement de développement d’applications Windows dans V
 1.  Dans le volet de l' **application** Project Designer, entrez l’URL de votre fichier `Start page` .
     
     > [!NOTE]
-    > Les travailleurs de service sont pris en charge pour toutes les URL HTTPS \ (sécurisées \) spécifiées en tant que `StartPage` .  Par défaut, les travailleurs de services ne sont pas pris en charge pour les applications Web qui spécifient une page d’accueil locale.  Pour permettre la prise en charge du travailleur de service dans ces cas-là, ajoutez une entrée [ApplicationContentUriRules](#set-application-content-uri-rules-acurs) explicite au manifeste, par exemple: `<uap:Rule Match="http://web-platform.test/" Type="include" uap5:ServiceWorker="true"/>`  
+    > Les travailleurs de service sont pris en charge pour toutes les URL HTTPS \(sécurisées \) spécifiées en tant que `StartPage` .  Par défaut, les travailleurs de services ne sont pas pris en charge pour les applications Web qui spécifient une page d’accueil locale.  Pour permettre la prise en charge du travailleur de service dans ces cas-là, ajoutez une entrée [ApplicationContentUriRules](#set-application-content-uri-rules-acurs) explicite au manifeste, par exemple: `<uap:Rule Match="http://web-platform.test/" Type="include" uap5:ServiceWorker="true"/>`  
     
     ![Panneau application de package. appxmanifest designer](media/vs-manifest-application.png)  
     
     Vous pouvez également modifier le `Display name` et `Description` comme vous le souhaitez.  
-1.  Enregistrez ce fichier \ (ou une autre image 512x512 de votre choix) sur votre ordinateur de bureau.  
-    Dans le panneau **composants visuels** du concepteur de manifeste, cliquez sur le `Source` bouton champ **...** , sélectionnez-le en tant que fichier source, puis cliquez sur **générer**.  \ (Puis cliquez sur **OK** pour remplacer les images d’espaces réservés par défaut).  
+1.  Enregistrez ce fichier \(ou une autre image 512x512 de votre choix) sur votre ordinateur de bureau.  
+    Dans le panneau **composants visuels** du concepteur de manifeste, cliquez sur le `Source` bouton champ **...** , sélectionnez-le en tant que fichier source, puis cliquez sur **générer**.  \(Puis cliquez sur **OK** pour remplacer les images d’espaces réservés par défaut).  
     
     ![Panneau de ressources visuelles de package. appxmanifest designer](media/vs-manifest-visual-assets.png)  
     
     Cela génère les ressources visuelles de base pour l’installation, l’exécution, le lancement et la distribution de votre application dans le Windows Store.  
-    Si vous voyez des erreurs rouges \ ( `X` \) indiquant des images manquantes, vous pouvez cliquer sur les boutons **...** pour sélectionner manuellement un fichier à partir des images générées.  
+    Si vous voyez des erreurs rouges \( `X` \) indiquant des images manquantes, vous pouvez cliquer sur les boutons **...** pour sélectionner manuellement un fichier à partir des images générées.  
 1.  Dans le volet des **URI de contenu** du concepteur de manifeste, remplacez `http://example.com` par l’emplacement de votre fichier `Rule`  =  `include` . `WinRT Access`  =  `All`  
     Cela octroie à votre accès à PWA l’autorisation d’envoyer des demandes d’API Windows Runtime Windows en natif lors de l’exécution en tant qu’application Windows 10, qui est abordée plus tard.   Si votre application PWA réelle ne requiert pas l’accès WinRT, vous pouvez basculer la `WinRT Access` valeur vers `None` .  Quelle que soit la méthode utilisée, veillez à désactiver la chaîne par défaut `http://example.com` avec l’URI de votre PWA ou votre application ne peut pas être chargée correctement au moment de l’exécution.  
     Vous pouvez exécuter et déboguer votre PWA en tant qu’application Windows 10.  Si vous utilisez un site localhost pour suivre ce guide, assurez-vous qu’il est en cours d’exécution.  Puis  
-1.  Créez \ ( `Ctrl` + `Shift` + `F5` \) et exécutez \ ( `F5` \) votre projet Project Web App.  Votre site Web doit maintenant être lancé dans une fenêtre d’application autonome.  Non seulement il s’agit d’une application Web hébergée; Il s’exécute en tant qu’application Web progressive installée sur Windows 10.  
+1.  Créez \( `Ctrl` + `Shift` + `F5` \) et exécutez \( `F5` \) votre projet Project Web App.  Votre site Web doit maintenant être lancé dans une fenêtre d’application autonome.  Non seulement il s’agit d’une application Web hébergée; Il s’exécute en tant qu’application Web progressive installée sur Windows 10.  
     
     ![PWA exécuté dans une fenêtre de WWAHost.exe](media/wwahost.png)  
     
-## Déboguer votre PWA \ (EdgeHTML \) en tant qu’application Windows  
+## Déboguer votre PWA \(EdgeHTML \) en tant qu’application Windows  
 
 Dans la mesure où une application Web hébergée par le biais d’une application Web PWA est simplement améliorée, vous pouvez déboguer votre code côté serveur de la même manière que n’importe quelle application Web, à l’aide de votre IDE et de votre flux de travail habituels.  Les modifications que vous déployez en direct sont reflétées dans votre installation de Project Web App la prochaine fois que vous lancez l’application.
 
-Pour le débogage côté client dans votre application Windows 10, vous devez disposer de l' `Microsoft Edge DevTools Preview` application.  Cette application autonome inclut toutes les fonctionnalités de la version d’origine du navigateur [Microsoft Edge devtools][DevToolsGuide] \ (y compris les [Outils PWA][DevToolsGuideServiceWorkers]\), ainsi que la prise en charge des fonctionnalités de [débogage à distance][DevToolsProtocol01ClientsEdgePreview] de base et un [Sélecteur de cibles de débogage][DevToolsGuideMicrosoftStoreApp] pour l’attachement à une instance en cours d’exécution du moteur EdgeHTML, y compris des compléments pour Office, Cortana  
+Pour le débogage côté client dans votre application Windows 10, vous devez disposer de l' `Microsoft Edge DevTools Preview` application.  Cette application autonome inclut toutes les fonctionnalités de la version d’origine du navigateur [Microsoft Edge devtools][DevToolsGuide] \(y compris les [Outils PWA][DevToolsGuideServiceWorkers]\), ainsi que la prise en charge des fonctionnalités de [débogage à distance][DevToolsProtocol01ClientsEdgePreview] de base et un [Sélecteur de cibles de débogage][DevToolsGuideMicrosoftStoreApp] pour l’attachement à une instance en cours d’exécution du moteur EdgeHTML, y compris des compléments pour Office, Cortana  
 
-Voici la procédure à suivre pour configurer le débogage pour votre page PWA \ (EdgeHTML \).  
+Voici la procédure à suivre pour configurer le débogage pour votre page PWA \(EdgeHTML \).  
 
 1.  Installez l’application [Microsoft Edge devtools Preview][MicrosoftStoreEdgeDevtoolsPreview] à partir du Microsoft Store si vous ne l’avez pas encore.  
 1.  Une fois le site de PWA en service opérationnel, lancez l’application DevTools.  
-1.  Dans Visual Studio, lancez votre application Windows 10 avec la `Start Without Debugging` `Ctrl` + `F5` commande ().  \ (L’application DevTools n’est pas correctement jointe si le débogueur Visual Studio est actif. \)  
-1.  Dans l’application DevTools, cliquez sur le bouton **Actualiser** du sélecteur de cibles de débogage local.  Votre site PWA \ (EdgeHTML \) doit maintenant être répertorié.  \ (S’il s’exécute également dans une fenêtre de navigateur, il s’agit de la dernière instance de ce site dans la liste. \)  
+1.  Dans Visual Studio, lancez votre application Windows 10 avec la `Start Without Debugging` `Ctrl` + `F5` commande ().  \(L’application DevTools n’est pas correctement jointe si le débogueur Visual Studio est actif. \)  
+1.  Dans l’application DevTools, cliquez sur le bouton **Actualiser** du sélecteur de cibles de débogage local.  Votre site PWA \(EdgeHTML \) doit maintenant être répertorié.  \(S’il s’exécute également dans une fenêtre de navigateur, il s’agit de la dernière instance de ce site dans la liste. \)  
 1.  Cliquez sur votre annonce sur votre site Web (EdgeHTML \) pour ouvrir un nouvel onglet d’instance DevTools et démarrer le débogage.  
     
     ![Sélecteur de cibles de débogage local dans l’application Microsoft Edge DevTools](media/devtools-local.png)  
@@ -102,7 +102,7 @@ Voici la procédure à suivre pour configurer le débogage pour votre page PWA \
     
 ## Rechercher des API Windows Runtime (WinRT)  
 
-Dans le cas d’une application Windows installée, votre application [PWA \ (EdgeHTML \) dispose d’un accès complet aux API Windows Runtime natives][WindowsRuntime]; Déterminez ce que vous devez utiliser, obtenez les autorisations requises, puis utilisez la détection de fonctionnalités pour envoyer cette demande d’API dans les environnements pris en charge.  Parcourez ce processus pour ajouter une amélioration progressive aux utilisateurs de bureau Windows de votre ordinateur de bureau Windows.  
+Dans le cas d’une application Windows installée, votre application [PWA \(EdgeHTML \) dispose d’un accès complet aux API Windows Runtime natives][WindowsRuntime]; Déterminez ce que vous devez utiliser, obtenez les autorisations requises, puis utilisez la détection de fonctionnalités pour envoyer cette demande d’API dans les environnements pris en charge.  Parcourez ce processus pour ajouter une amélioration progressive aux utilisateurs de bureau Windows de votre ordinateur de bureau Windows.  
 
 Il existe de nombreuses façons d’identifier les API de plateforme Windows universelle dont vous avez besoin pour votre Windows PWA, y compris la recherche dans l’ensemble des API de la plateforme Windows sur le centre de développement Windows, et le téléchargement et l’exécution d' [exemples de code UWP](#uwp-code-samples) avec Visual Studio, ainsi que les extraits de code de navigation pour les tâches courantes pour PWAS sur Windows.
 
@@ -113,7 +113,7 @@ Le fonctionnement global des API WinRT dans JavaScript, de la même manière que
 *   Les fonctionnalités WinRT dans JavaScript utilisent  [différentes conventions de casse][ScriptingJsinrtUsingWinRTCasingConventions]  
 *   [Les événements sont représentés sous forme de identificateurs de chaîne][ScriptingJsinrtHandlingWinRTEvents] transmis à des `addEventListener` / `removeEventListener` méthodes de classe.  
 *   Les [méthodes asynchrones][ScriptingJsinrtUsingWinRT] utilisent le modèle de promesse JavaScript  
-*   Les API dans l' `Windows.UI.Xaml` espace de noms ne sont pas prises en charge pour les applications JavaScript, qui utilisent plutôt la pile de rendu Web du moteur [EdgeHTML][DevGuideWhatsNew] \ (html, CSS \)  
+*   Les API dans l' `Windows.UI.Xaml` espace de noms ne sont pas prises en charge pour les applications JavaScript, qui utilisent plutôt la pile de rendu Web du moteur [EdgeHTML][DevGuideWhatsNew] \(html, CSS \)  
     
 Pour plus d’informations, consultez [utilisation de Windows Runtime en JavaScript][WindowRuntimeUsingJavascript].  
 
@@ -146,17 +146,17 @@ Consultez les exemples de code de la [plateforme Windows universelle (UWP \)][Mi
 
 ## Envoyer des demandes d’API WinRT à partir de votre PWA (EdgeHTML)  
 
-À ce stade, imaginons que vous vouliez ajouter un menu contextuel personnalisé pour les utilisateurs Windows de notre PWA \ (EdgeHTML \) et avoir identifié les API dont vous avez besoin dans l’espace de noms [Windows. UI. Popup][UwpApiWindowsUiPopups] .  
+À ce stade, imaginons que vous vouliez ajouter un menu contextuel personnalisé pour les utilisateurs Windows de notre PWA \(EdgeHTML \) et avoir identifié les API dont vous avez besoin dans l’espace de noms [Windows. UI. Popup][UwpApiWindowsUiPopups] .  
 
-Pour envoyer des demandes d’API WinRT à partir de notre PWA \ (EdgeHTML \), vous devez tout d’abord [établir les autorisations requises](#set-application-content-uri-rules-acurs) (ou les règles URI de contenu de l’application \) dans le manifeste du package d’application Windows `.appxmanifest` .  
+Pour envoyer des demandes d’API WinRT à partir de notre PWA \(EdgeHTML \), vous devez tout d’abord [établir les autorisations requises](#set-application-content-uri-rules-acurs) (ou les règles URI de contenu de l’application \) dans le manifeste du package d’application Windows `.appxmanifest` .  
 
 Si l’une de ces requêtes d’API implique l’accès à des ressources utilisateur telles que des images ou de la musique, ou à des fonctionnalités d’appareil comme la caméra ou le microphone, vous devez également ajouter des [déclarations de fonctionnalités d’application](#app-capability-declarations) au manifeste du package de l’application afin que Windows puisse lui demander une autorisation.  Par la suite, si vous publiez votre version d’Outlook. Outlook sur le Microsoft Store, les [autorisations d’application][MicrosoftSupportWindowsAppPermissions] requises sont également indiquées dans votre description dans le Windows Store.  
 
 #### Définir les règles URI de contenu de l’application (règles acur)  
 
-Par le biais des règles acur, également appelées liste des URL autorisées, vous pouvez donner aux URL de votre PWA \ (EdgeHTML \) un accès direct aux API Windows Runtime.  Au niveau du système d’exploitation Windows, des limites de stratégie appropriées ont été définies pour autoriser le code hébergé sur votre serveur Web à envoyer des demandes d’API de la plateforme.  Vous définissez ces limites dans le fichier manifeste du package d’application quand vous spécifiez les URL de Project Web App `ApplicationContentUriRules` .  
+Par le biais des règles acur, également appelées liste des URL autorisées, vous pouvez donner aux URL de votre PWA \(EdgeHTML \) un accès direct aux API Windows Runtime.  Au niveau du système d’exploitation Windows, des limites de stratégie appropriées ont été définies pour autoriser le code hébergé sur votre serveur Web à envoyer des demandes d’API de la plateforme.  Vous définissez ces limites dans le fichier manifeste du package d’application quand vous spécifiez les URL de Project Web App `ApplicationContentUriRules` .  
 
-Vos règles doivent inclure la page de démarrage de votre application et toutes les autres pages que vous souhaitez inclure en tant que pages de l’application.  Si votre utilisateur navigue vers une URL qui n’est pas incluse dans vos règles, Windows ouvre l’URL cible dans le navigateur Microsoft Edge plutôt que la fenêtre autonome PWA \ (EdgeHTML \) `WWAHost.exe` .  Vous pouvez également exclure des URL spécifiques.  
+Vos règles doivent inclure la page de démarrage de votre application et toutes les autres pages que vous souhaitez inclure en tant que pages de l’application.  Si votre utilisateur navigue vers une URL qui n’est pas incluse dans vos règles, Windows ouvre l’URL cible dans le navigateur Microsoft Edge plutôt que la fenêtre autonome PWA \(EdgeHTML \) `WWAHost.exe` .  Vous pouvez également exclure des URL spécifiques.  
 
 Il existe plusieurs façons de spécifier une URL `Match` dans vos règles:  
 
@@ -182,7 +182,7 @@ StartPage="https://contoso.com/home">
 
 Les URL définies dans règles acur pour votre application peuvent être accordées à Windows Runtime par le biais de l' `WindowsRuntimeAccess` attribut, qui accepte les valeurs suivantes:  
 
-*   `all`: Le code JavaScript distant dispose d’un accès à toutes les API WinRT et composants empaquetés locaux.  L’espace de noms [Windows \ (WinRT \))][UwpApiIndex] est injecté et présent dans le moteur de script.  
+*   `all`: Le code JavaScript distant dispose d’un accès à toutes les API WinRT et composants empaquetés locaux.  L’espace de noms [Windows \(WinRT \))][UwpApiIndex] est injecté et présent dans le moteur de script.  
 *   `allowForWeb`: L’accès au code JavaScript distant est limité aux composants empaquetés locaux, y compris aux composants C++/C # personnalisés.  
 *   `none`Définie.  L’URL spécifiée n’a pas d’accès à la plateforme.  
     
@@ -190,7 +190,7 @@ Dans ce didacticiel, vous avez déjà défini la seule forme règles ACUR que vo
 
 ![Panneau URI de contenu du concepteur Visual Studio appxmanifest](media/vs-appxmanifest-editor-acurs.png)  
 
-Vous pouvez également afficher le code XML brut de votre manifeste en cliquant avec le bouton droit sur votre `package.appxmanifest` fichier dans l’Explorateur de solutions de Visual Studio et en sélectionnant **afficher le code** \ ( `F7` \).  Pour basculer vers le mode concepteur, sélectionnez **afficher le concepteur** \ ( `Shift` + `F7` \).  
+Vous pouvez également afficher le code XML brut de votre manifeste en cliquant avec le bouton droit sur votre `package.appxmanifest` fichier dans l’Explorateur de solutions de Visual Studio et en sélectionnant **afficher le code** \( `F7` \).  Pour basculer vers le mode concepteur, sélectionnez **afficher le concepteur** \( `Shift` + `F7` \).  
 
 #### Déclarations des fonctionnalités d’application  
 
@@ -214,7 +214,7 @@ Dans ce didacticiel, seule la fonctionnalité Internet (client) par défaut est 
 
 Pour garantir une connaissance de base de qualité pour votre public sur toutes les plateformes, vous améliorez progressivement votre utilisation de Project Web App à l’aide de la fonctionnalité de détection des fonctionnalités WinRT.  De cette façon, vous pouvez être sûr que votre code spécifique à Windows s’exécute uniquement dans un contexte où les API WinRT sont disponibles et applicables.  
 
-Pour détecter les fonctionnalités, il est possible de rechercher en tant qu' `Windows` objet \ (le point d’entrée vers l' [espace de noms WinRT][UwpApiIndex]\) comme suit:  
+Pour détecter les fonctionnalités, il est possible de rechercher en tant qu' `Windows` objet \(le point d’entrée vers l' [espace de noms WinRT][UwpApiIndex]\) comme suit:  
 
 ```javascript
 if(window.Windows){
@@ -285,7 +285,7 @@ Avec cet arrière-plan, vous pouvez ajouter du code WinRT pour implémenter un m
     }
     ```
     
-1.  Comparez le comportement du menu contextuel lors de l’exécution de votre PWA dans le navigateur \ ( `F5` à partir du projet de site PWA \) plutôt que dans la fenêtre de l’application Windows ( `F5` à partir de votre projet d’application Windows universelle \).  Dans le navigateur, le fait de cliquer avec le bouton droit vous permet d’accéder au menu contextuel de Microsoft Edge par défaut, alors que dans le `WWAHost.exe` processus, votre menu personnalisé apparaît désormais.  
+1.  Comparez le comportement du menu contextuel lors de l’exécution de votre PWA dans le navigateur \( `F5` à partir du projet de site PWA \) plutôt que dans la fenêtre de l’application Windows ( `F5` à partir de votre projet d’application Windows universelle \).  Dans le navigateur, le fait de cliquer avec le bouton droit vous permet d’accéder au menu contextuel de Microsoft Edge par défaut, alors que dans le `WWAHost.exe` processus, votre menu personnalisé apparaît désormais.  
     
     | MicrosoftEdge | Application Windows 10 |  
     |:--- |:---- |  
@@ -299,7 +299,7 @@ Le [Centre de développement Windows][MicrosoftDeveloperWindowsApps] est votre r
 
 Pour obtenir une vue d’ensemble générale de la plateforme Windows universelle (UWP) et de la manière de cibler différentes familles d’appareils Windows 10, voir [Présentation de la plateforme Windows universelle][WindowsUWPGetStartedGuide].  
 
-Lorsque vous êtes prêt, voici comment \ (et pourquoi! \) pour [transmettre votre document PWA au Microsoft Store](./microsoft-store.md).  
+Lorsque vous êtes prêt, voici comment \(et pourquoi! \) pour [transmettre votre document PWA au Microsoft Store](./microsoft-store.md).  
 
 <!-- links -->  
 

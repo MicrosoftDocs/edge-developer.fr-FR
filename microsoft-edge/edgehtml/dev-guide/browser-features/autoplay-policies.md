@@ -52,7 +52,7 @@ Les paramètres par site remplacent le paramètre global.  Par exemple, si le pa
 
 Pour garantir une bonne utilisation de l’utilisateur avec le contenu multimédia hébergé sur votre site, procédez comme suit:  
 
-*   Supposez que l’utilisation d’un élément multimédia nécessite un mouvement utilisateur pour démarrer la lecture \ (car les utilisateurs peuvent bloquer la lecture automatique à tout moment \) et planifier en conséquence.  Les stratégies de lecture globale et globales par site s’appliquent à `<audio>` l’ensemble et aux `<video>` éléments, quelle que soit la façon dont ils sont utilisés sur votre site.  
+*   Supposez que l’utilisation d’un élément multimédia nécessite un mouvement utilisateur pour démarrer la lecture \(car les utilisateurs peuvent bloquer la lecture automatique à tout moment \) et planifier en conséquence.  Les stratégies de lecture globale et globales par site s’appliquent à `<audio>` l’ensemble et aux `<video>` éléments, quelle que soit la façon dont ils sont utilisés sur votre site.  
 
 *   Assurez-vous que les contrôles multimédias sont toujours présents sur les éléments multimédias et les contenus publicitaires.  Cela permettra aux utilisateurs de redémarrer la lecture si la lecture automatique est bloquée sur la page.  
 

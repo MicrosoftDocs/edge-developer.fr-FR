@@ -72,7 +72,7 @@ Dans le `color-changer` dossier, créez un fichier nommé `manifest.json` .  Le 
 | [auteur][MDNManifestjsonAuthor] | Auteur de l’extension.  |  
 | [version][MDNManifestjsonVersion] | Numéro de version de l’extension.  |  
 | [description][MDNManifestjsonDescription] | Description de l’extension affichée dans la section à propos du menu extension dans Microsoft Edge.  |  
-| [attribué][MDNManifestjsonPermissions] | Tableau de chaînes demandant des autorisations pour l’extension.  Pour votre extension, vous demandez des autorisations pour afficher les sites Web visités \ («onglets» \) et mettre à jour le contenu des URL correspondantes « `*://docs.microsoft.com/*` ».  |  
+| [attribué][MDNManifestjsonPermissions] | Tableau de chaînes demandant des autorisations pour l’extension.  Pour votre extension, vous demandez des autorisations pour afficher les sites Web visités \(«onglets» \) et mettre à jour le contenu des URL correspondantes « `*://docs.microsoft.com/*` ».  |  
 | [browser_action][MDNManifestjsonBrowserAction] | Contient les informations relatives à une icône. L’icône est placée sur la barre d’outils Microsoft Edge, à droite de la barre d’adresse.  |  
 
 #### définitions de clés de browser_action  
@@ -114,7 +114,7 @@ Créez un fichier nommé `popup.html` à la racine de votre `color-changer` doss
 </html>
 ```  
 
-Dans `popup.html` , vous créez un titre, un paragraphe et trois boutons \ (AliceBlue, Cornsilk et Reset \).  
+Dans `popup.html` , vous créez un titre, un paragraphe et trois boutons \(AliceBlue, Cornsilk et Reset \).  
 
 À présent, créez un dossier nommé `css` et dans créer un fichier nommé `styles.css` .  Ajoutez les styles ci-dessous.  
 
@@ -239,7 +239,7 @@ if (url.indexOf("//docs.microsoft.com") === -1) {
 }
 ```  
 
-Ce script obtient l’URL de la page active `document.location.href` et vérifie si la page actuelle est sur le domaine [docs.Microsoft.com][MicrosoftDocs] .  Si la page n’est pas sur le domaine [docs.Microsoft.com][MicrosoftDocs] \ (par exemple  [https://www.bing.com/][|::ref1::|] , \), les chemins d’accès aux icônes inactifs \ (icônes grisées \) sont envoyés au script en arrière-plan à l’aide de [Runtime. SendMessage ()][MDNApiRuntimeSendmessage].  
+Ce script obtient l’URL de la page active `document.location.href` et vérifie si la page actuelle est sur le domaine [docs.Microsoft.com][MicrosoftDocs] .  Si la page n’est pas sur le domaine [docs.Microsoft.com][MicrosoftDocs] \(par exemple  [https://www.bing.com/][|::ref1::|] , \), les chemins d’accès aux icônes inactifs \(icônes grisées \) sont envoyés au script en arrière-plan à l’aide de [Runtime. SendMessage ()][MDNApiRuntimeSendmessage].  
 
 Vous devez mettre à jour les [manifest.js][GithubMicrosoftEdgeExtensionsDemosColorChangerManifestjson] du fichier pour inclure la `content_scripts` clé suivante.  
 
@@ -263,7 +263,7 @@ Vous devez mettre à jour les [manifest.js][GithubMicrosoftEdgeExtensionsDemosCo
 
 | Clé | Détails |  
 |:--- |:---- |  
-| `matches` \ (obligatoire \) | Modèle d’URL à faire correspondre avant de charger le script de contenu. |  
+| `matches` \(obligatoire \) | Modèle d’URL à faire correspondre avant de charger le script de contenu. |  
 | `js` | Le script qui doit être chargé sur les URL correspondants. |  
 | `run_at` | Spécifie l’emplacement d’insertion des fichiers JavaScript de la `js` clé. |  
 
@@ -314,7 +314,7 @@ Vous devez ajouter le script en arrière-plan à la [manifest.jssur][GithubMicro
 | `scripts` | Le chemin d’accès à un fichier JavaScript. |  
 | `persistent` (obligatoire) | Ce doit être défini sur `true` ou `false` .  S' `true` il est défini sur, le script en arrière-plan est chargé et reste persistant pour la section de navigation entière.  S' `false` il est défini sur, le script en arrière-plan est chargé avec un délai et reste persistant pour la session de navigation. |  
 
-Rechargez votre extension et testez à nouveau.  Pour recharger votre extension: cliquez sur le **...** pour obtenir les paramètres et plus d’informations dans Microsoft Edge, cliquez sur **Extensions**, cliquez sur votre extension \ (**changer de couleur**\), puis cliquez sur **recharger l’extension**.  
+Rechargez votre extension et testez à nouveau.  Pour recharger votre extension: cliquez sur le **...** pour obtenir les paramètres et plus d’informations dans Microsoft Edge, cliquez sur **Extensions**, cliquez sur votre extension \(**changer de couleur**\), puis cliquez sur **recharger l’extension**.  
 
 À présent, ouvrez un nouvel onglet ou actualisez un onglet existant qui n’est pas une page de [docs.Microsoft.com][MicrosoftDocs] .  L’icône inactif doit apparaître et ne pas pouvoir cliquer sur l’action du navigateur.  
 

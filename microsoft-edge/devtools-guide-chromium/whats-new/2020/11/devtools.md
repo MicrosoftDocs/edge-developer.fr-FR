@@ -326,7 +326,7 @@ Pour passer en revue l’historique de cette fonctionnalité dans le projet open
 
 ### <a name="preview-wasm-variable-value-on-mouseover"></a>Afficher un aperçu de la valeur de la variable WASM sur mouseover  
 
-Utilisez cette fonction pour afficher un aperçu de la valeur d’une variable webassembly \ (WASM \) lorsque votre code est en pause.  Pour afficher la valeur actuelle d’une variable, pointez sur une variable.  Pour consulter les mises à jour en temps réel de cette fonctionnalité dans le projet open-source de Chromium, accédez aux problèmes [1058836][CR1058836] et [1071432][CR1071432].  
+Utilisez cette fonction pour afficher un aperçu de la valeur d’une variable webassembly \(WASM \) lorsque votre code est en pause.  Pour afficher la valeur actuelle d’une variable, pointez sur une variable.  Pour consulter les mises à jour en temps réel de cette fonctionnalité dans le projet open-source de Chromium, accédez aux problèmes [1058836][CR1058836] et [1071432][CR1071432].  
 
 :::image type="complex" source="../../media/2020/11/wasm-mouseover.msft.png" alt-text="Afficher un aperçu de la variable WASM sur mouseover" lightbox="../../media/2020/11/wasm-mouseover.msft.png":::
    Afficher un aperçu de la variable WASM sur mouseover  
@@ -336,8 +336,8 @@ Utilisez cette fonction pour afficher un aperçu de la valeur d’une variable w
 
 Désormais DevTools utilise `kB` pour l’affichage des tailles de fichiers et de mémoire.  Auparavant DevTools combinait `kB` et `KiB` .
 
-*   `kB` ou kilo-octets \ (10^3 ou 1000 octets \)  
-*   `KiB` ou kibibyte \ (2^10 ou 1024 octets \)  
+*   `kB` ou kilo-octets \(10^3 ou 1000 octets \)  
+*   `KiB` ou kibibyte \(2^10 ou 1024 octets \)  
     
 Par exemple, l’outil **réseau** utilisait `kB` dans les étiquettes, mais utilisait `KiB` dans les calculs.  Votre commentaire a démontré que cette incohérence a causé une confusion.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open-source de Chromium, accédez au problème [1035309][CR1035309].  
 

@@ -73,7 +73,7 @@ Les applications hybrides permettent aux développeurs de profiter au mieux de c
       S’appuyer sur une version de chrome à jour avec les mises à jour de plateforme et les correctifs de sécurité normaux.  
    :::column-end:::
    :::column span="1":::
-      **Corrigé** \ (bientôt disponible)  
+      **Corrigé** \(bientôt disponible)  
       Choisissez de conditionner les bits de chrome dans votre application.  
    :::column-end:::
    :::column span="1":::
@@ -97,11 +97,11 @@ Le référentiel d' [exemples WebView2][GithubMicrosoftedgeWebview2samples] cont
 
 Une disponibilité générale (GA \) ou version d’évaluation est disponible sur les environnements de programmation suivants.  
 
-*   Win32 C/C++ \ (GA \)
+*   Win32 C/C++ \(GA \)
 *   .NET Framework 4.6.2 ou version ultérieure
 *   .NET Core 3,1 ou version ultérieure
 *   .NET 5
-*   [WinUI 3,0][UwpToolkitsWinui3] \ (Preview \)
+*   [WinUI 3,0][UwpToolkitsWinui3] \(Preview \)
 
 Vous pouvez exécuter des applications WebView2 sur les versions suivantes de Windows.  
 

@@ -22,7 +22,7 @@ Le [code Visual Studio][VisualStudioCodeDocs] est un éditeur de code source lé
 
 <!--todo: We want to put something like the tiles for extensions Visual Studio Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 
-Pour acquérir les extensions mises en surbrillance ci-dessous, accédez à extensions \ (sélectionnez `Ctrl` + `Shift` + `X` sur Windows/Linux ou `Command` + `Shift` + `X` Mac \) dans le code Visual Studio.  
+Pour acquérir les extensions mises en surbrillance ci-dessous, accédez à extensions \(sélectionnez `Ctrl` + `Shift` + `X` sur Windows/Linux ou `Command` + `Shift` + `X` Mac \) dans le code Visual Studio.  
 
 Recherchez l’extension dans Marketplace et sélectionnez **installer**.  
 
@@ -55,7 +55,7 @@ Recherchez l’extension dans Marketplace et sélectionnez **installer**.
 
 Avec le [débogueur de][VisualstudioMarketplaceDebuggerMicrosoftEdge] l’extension de code Visual Studio Microsoft Edge, déboguez votre code JavaScript frontal par ligne et consultez les `console.log()` instructions directement à partir du [code Visual Studio][VisualstudioCode].  
       
-À l’aide de l’outil de débogage, vous pouvez lancer une connexion à Microsoft Edge \ (EdgeHTML \) et à Microsoft Edge \ (chrome \).  Pour obtenir une procédure pas à pas de débogage de Microsoft Edge à partir de l’exemple de code et de configurations Visual Studio `launch.json` , accédez à [débogueur pour l’extension de code Visual Studio Visual Studio][VisualStudioCodeDebuggerEdge].  Cliquez sur l’image suivante pour afficher l’extension en action.  
+À l’aide de l’outil de débogage, vous pouvez lancer une connexion à Microsoft Edge \(EdgeHTML \) et à Microsoft Edge \(chrome \).  Pour obtenir une procédure pas à pas de débogage de Microsoft Edge à partir de l’exemple de code et de configurations Visual Studio `launch.json` , accédez à [débogueur pour l’extension de code Visual Studio Visual Studio][VisualStudioCodeDebuggerEdge].  Cliquez sur l’image suivante pour afficher l’extension en action.  
 
 :::image type="complex" source="./media/debugger-for-edge.png" alt-text="Débogueur pour l’extension de code Visual Studio de Microsoft Edge en action" lightbox="./media/debugger-for-edge.gif":::
    **Débogueur pour Microsoft Edge** Extension de code Visual Studio en action  

@@ -17,7 +17,7 @@ ms.locfileid: "11191616"
 ---
 # Automatisation et test de WebView2 avec le pilote Microsoft Edge  
 
-Dans la mesure où WebView2 utilise la plate-forme Web Microsoft Edge (chrome), les développeurs WebView2 \ (vous \) peuvent tirer parti d’outils Web standard pour le débogage et l’automatisation.  Le sélénium est un de ces outils.  Il implémente l’API [WebDriver][W3cWebdriver2] W3C.  Vous pouvez utiliser le sélénium pour créer des tests automatisés pour simuler les interactions utilisateur.  
+Dans la mesure où WebView2 utilise la plate-forme Web Microsoft Edge (chrome), les développeurs WebView2 \(vous \) peuvent tirer parti d’outils Web standard pour le débogage et l’automatisation.  Le sélénium est un de ces outils.  Il implémente l’API [WebDriver][W3cWebdriver2] W3C.  Vous pouvez utiliser le sélénium pour créer des tests automatisés pour simuler les interactions utilisateur.  
 
 Familiarisez-vous avec les étapes suivantes.  
 
@@ -148,9 +148,9 @@ Félicitations.  Vous avez correctement automatisé un projet WebView2 et WebVie
 
 ## Voir également  
 
-*   Pour obtenir une vue d’ensemble de la façon dont les API sélénium pilotent WebView2 ou Microsoft Edge \ (chrome \), accédez à [la documentation sur le][SeleniumWebdriver] Web pour le sélénium.   
+*   Pour obtenir une vue d’ensemble de la façon dont les API sélénium pilotent WebView2 ou Microsoft Edge \(chrome \), accédez à [la documentation sur le][SeleniumWebdriver] Web pour le sélénium.   
 *   Pour en savoir plus sur le contrôle WebView2 et son utilisation lors de l’incorporation de contenu Web dans votre application native, accédez à la section [Présentation de Microsoft Edge WebView2][WebViewIndex].  
-*   Pour en savoir plus sur l’automatisation de Microsoft Edge \ (chrome \), accédez à la section [utilisation de WebDriver (chrome) pour l’automatisation des tests][WebdriverChromium] .   
+*   Pour en savoir plus sur l’automatisation de Microsoft Edge \(chrome \), accédez à la section [utilisation de WebDriver (chrome) pour l’automatisation des tests][WebdriverChromium] .   
     
 ## Contacter l’équipe WebView de Microsoft Edge  
 

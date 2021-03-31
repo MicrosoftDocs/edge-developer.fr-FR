@@ -16,7 +16,7 @@ ms.locfileid: "10566666"
 ---
 # Chaîne de l’agent utilisateur Microsoft Edge (bureau)  
 
-Une chaîne d’agent utilisateur \ (UA \) peut être utilisée pour détecter la version d’un navigateur spécifique utilisée sur un certain système d’exploitation.  À l’instar des autres navigateurs, Microsoft Edge inclut ces informations dans l' `User-Agent` en-tête http dès qu’il envoie une demande à un site.  Il est également possible d’y accéder en utilisant JavaScript en interrogeant la valeur de `navigator.userAgent` .  
+Une chaîne d’agent utilisateur \(UA \) peut être utilisée pour détecter la version d’un navigateur spécifique utilisée sur un certain système d’exploitation.  À l’instar des autres navigateurs, Microsoft Edge inclut ces informations dans l' `User-Agent` en-tête http dès qu’il envoie une demande à un site.  Il est également possible d’y accéder en utilisant JavaScript en interrogeant la valeur de `navigator.userAgent` .  
 
 Microsoft recommande aux développeurs Web de se servir de la [fonctionnalité de détection de fonctionnalités](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) chaque fois que cela peut améliorer la facilité de maintenance du code, de réduire le Fragility de code et d’éliminer le risque de rupture du code lors des mises à jour ultérieures des chaînes UA.  
 

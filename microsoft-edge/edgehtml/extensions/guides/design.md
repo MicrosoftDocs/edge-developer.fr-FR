@@ -115,7 +115,7 @@ Une fois votre extension prête pour l’emballage, trois tailles d’icône sup
 | Taille | Détails |  
 |:--- |:--- |  
 | 44px | Utilisé dans l’interface utilisateur de Windows (**liste des applications**, paramètres du système de **configuration**  \>  ****  \>  **& fonctionnalités**\). |  
-| pixels | Exigence d’emballage \ (non visible n’importe où \). |  
+| pixels | Exigence d’emballage \(non visible n’importe où \). |  
 | 150px | Utilisé comme icône du Microsoft Store. |  
 
 

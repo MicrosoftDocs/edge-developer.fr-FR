@@ -23,7 +23,7 @@ La création d’une conception inclusive rend la technologie exploitable par to
 *   Accessibilité du clavier: de nombreux utilisateurs d’accessibilité reposent sur le clavier pour naviguer et utiliser l’interface utilisateur en procédant comme suit:
     *   Déplacer le focus entre les éléments à l’aide de la touche Tab.
     *   Navigation dans les éléments conteneurs tels que les listes, les grilles et les arborescences à l’aide des touches de direction.
-    *   Activation de la fonctionnalité \ (appel d’actions \) à l’aide de la touche entrée ou espace.
+    *   Activation de la fonctionnalité \(appel d’actions \) à l’aide de la touche entrée ou espace.
     *   Utilisation des touches de raccourci pour accéder efficacement aux autres fonctionnalités de l’application.
 *   Accès visuel accessible: les utilisateurs malvoyants ont besoin d’un coefficient de contraste de texte suffisant pour le contenu du texte et d’une bonne interface visuelle avec les thèmes à contraste élevé.  Les utilisateurs qui utilisent des couleurs n’ont pas besoin d’être acheminés en couleur.
 

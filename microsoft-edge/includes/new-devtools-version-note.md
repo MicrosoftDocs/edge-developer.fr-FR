@@ -12,7 +12,7 @@ ms.lasthandoff: 04/09/2020
 ms.locfileid: "10565582"
 ---
 > [!NOTE]
-> Le nouveau Microsoft Edge est conçu à l’aide du chrome et commence à la version 75.  Pour plus d’informations, [Téléchargez le nouveau Microsoft Edge][MicrosoftNewEdge]et essayez les nouveaux [outils de développement Microsoft Edge \ (chrome \)][DevtoolsGuideChromium].  
+> Le nouveau Microsoft Edge est conçu à l’aide du chrome et commence à la version 75.  Pour plus d’informations, [Téléchargez le nouveau Microsoft Edge][MicrosoftNewEdge]et essayez les nouveaux [outils de développement Microsoft Edge \(chrome \)][DevtoolsGuideChromium].  
 
 <!-- image links -->  
 

@@ -20,12 +20,12 @@ ms.locfileid: "11233142"
 
 [!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
-La prise en charge de JavaScript varie entre les applications Microsoft Edge, Microsoft Store et différents modes de document d’Internet Explorer \ (IE \). Pour plus d’informations sur le contrôle de version du code de document IE, voir définition de la [compatibilité du document](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).  
+La prise en charge de JavaScript varie entre les applications Microsoft Edge, Microsoft Store et différents modes de document d’Internet Explorer \(IE \). Pour plus d’informations sur le contrôle de version du code de document IE, voir définition de la [compatibilité du document](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).  
 
 Le tableau suivant résume la prise en charge JavaScript entre les applications Internet Explorer, Microsoft Edge et Microsoft Store.  
   
 > [!IMPORTANT]
-> Les fonctionnalités expérimentales (activées à partir de `about:flags` \) sont indiquées par `Exp` . Dans certains cas, la prise en charge des applications du Windows Store varie en fonction des applications Windows 8 \ (V8 \) et Windows 10 \ (version 10 \) et de la version de bureau de Windows, comme indiqué.  
+> Les fonctionnalités expérimentales (activées à partir de `about:flags` \) sont indiquées par `Exp` . Dans certains cas, la prise en charge des applications du Windows Store varie en fonction des applications Windows 8 \(V8 \) et Windows 10 \(version 10 \) et de la version de bureau de Windows, comme indiqué.  
   
  | Élément Language | Excentriques, normes d’Internet Explorer 6, normes d’Internet Explorer 7 | Normes d’Internet Explorer 8 | Normes d’Internet Explorer 9 | Normes d’Internet Explorer 10 | Normes d’Internet Explorer 11 | MicrosoftEdge | Applications du Windows Store |  
  |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |  

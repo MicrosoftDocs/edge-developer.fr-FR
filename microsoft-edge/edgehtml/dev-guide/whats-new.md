@@ -21,7 +21,7 @@ ms.locfileid: "11233458"
 
 Obtenez les dernières API et fonctionnalités EdgeHTML en vous inscrivant au programme [Windows Insider](https://insider.windows.com).  Le [programme Windows Insider](https://insider.windows.com) fournit les dernières builds de Windows 10 dès qu’elles sont disponibles.  
 
-Accédez au Guide de [développement](../dev-guide/index.md) pour découvrir les nouvelles fonctionnalités et les API fournies dans la version actuelle de la plateforme Microsoft Edge, EdgeHTML 18 \ (Build 17763 \).  
+Accédez au Guide de [développement](../dev-guide/index.md) pour découvrir les nouvelles fonctionnalités et les API fournies dans la version actuelle de la plateforme Microsoft Edge, EdgeHTML 18 \(Build 17763 \).  
 
 Vous trouverez ci-dessous des API EdgeHTML nouvelles et mises à jour dans les versions de Windows 10 preview. Ils sont répertoriés au format de `[interface name].[api name]` .  Pour obtenir la liste complète des nouvelles fonctionnalités de Microsoft Edge et de la plateforme, consultez la rubrique [changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog) ou consultez le [Guide du développement](../dev-guide/index.md) pour découvrir les nouvelles fonctionnalités et les API fournies dans la version stable actuelle de la plateforme Microsoft Edge, EdgeHTML 18.   
 

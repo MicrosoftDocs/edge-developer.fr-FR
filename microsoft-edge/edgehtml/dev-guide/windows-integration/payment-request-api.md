@@ -19,7 +19,7 @@ ms.locfileid: "11233065"
 # API de demande de paiement (EdgeHTML)  
 
 > [!NOTE]
-> Cet article décrit le flux de travail pris en charge dans la [version héritée de Microsoft Edge][MicrosoftSupport44533505].  Microsoft Edge \ (chrome \) prend en charge l’API de demande de paiement avec une autre implémentation basée sur le projet de chrome.  
+> Cet article décrit le flux de travail pris en charge dans la [version héritée de Microsoft Edge][MicrosoftSupport44533505].  Microsoft Edge \(chrome \) prend en charge l’API de demande de paiement avec une autre implémentation basée sur le projet de chrome.  
 
 Les ventes de commerce électronique continuent de croître à un rythme rapide.  D’après [eMarketer](https://www.emarketer.com), les ventes numériques 2018 sont prévues pour une augmentation de 23% par rapport aux niveaux mesurés en 2013.  Si les particuliers et les entreprises jouissent de la commodité des ventes de commerce électronique, les problèmes persistent.  Dès à présent, chaque propriétaire de site Web d’e-commerce doit investir du temps pour développer des flux d’extraction de paiement et des règles de validation de grande qualité.  Les consommateurs doivent parcourir les différents flux d’extraction de paiement et entrer de nouveau les mêmes informations de paiement et d’expédition sur chaque site.  Cela peut prendre du temps et frustrant pour les particuliers, ce qui a pour principal taux d’abandon de panier d’achat et de diminution des ventes pour les commerçants.  L' [estimation](http://baymard.com/lists/cart-abandonment-rate) des commerçants entre 60% et 70% des paniers d’achat est abandonnée.  
 
@@ -205,7 +205,7 @@ Une fois le paiement terminé, la page Web appelle la méthode [Complete ()](/pr
 
 Pour les ventes qui nécessitent des produits physiques d’expédition, une adresse de livraison est requise.  Pour inclure une adresse d’expédition, définissez `requestShipping = True` le paramètre [options](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) de la requête.  
 
-Lorsque l’utilisateur sélectionne ou met à jour l’adresse de livraison, l’événement [onshippingaddresschange](/previous-versions/mt790442(v=vs.85)) est exécuté.  Le site Web, à l’aide d’un écouteur d’événements, sera averti de la modification et pourra ensuite valider l’adresse, recalculer les coûts d’expédition et les taxes, et mettre à jour [shippingOptions](/previous-versions/mt790440(v=vs.85)) pour refléter les coûts et les options d’expédition disponibles pour l’adresse sélectionnée \ (le cas échéant).  
+Lorsque l’utilisateur sélectionne ou met à jour l’adresse de livraison, l’événement [onshippingaddresschange](/previous-versions/mt790442(v=vs.85)) est exécuté.  Le site Web, à l’aide d’un écouteur d’événements, sera averti de la modification et pourra ensuite valider l’adresse, recalculer les coûts d’expédition et les taxes, et mettre à jour [shippingOptions](/previous-versions/mt790440(v=vs.85)) pour refléter les coûts et les options d’expédition disponibles pour l’adresse sélectionnée \(le cas échéant).  
 
 ### Options d’expédition  
 
