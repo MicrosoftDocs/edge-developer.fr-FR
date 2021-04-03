@@ -9,17 +9,17 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ms.openlocfilehash: 19bc0c5600ebd072ad9a6aa61d2a965e999865ce
-ms.sourcegitcommit: d89f77d4667dfbc44ed35f2ec7e3ae64ab98bf1a
+ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
+ms.lasthandoff: 04/02/2021
 ms.locfileid: "11306158"
 ---
-# Mise en place de WebView2  
+# <a name="getting-started-with-webview2"></a>Mise en place de WebView2  
 
 Dans cet article, commencer à créer votre première application WebView2 et en savoir plus sur les principales fonctionnalités de [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Pour plus d’informations sur les API WebView2 individuelles, accédez à la [référence d’API.][Webview2ReferenceWin32]  
 
-## Conditions préalables  
+## <a name="prerequisites"></a>Conditions préalables  
 
 Veillez à installer la liste des conditions préalables suivante avant de poursuivre.  
 
@@ -30,12 +30,12 @@ Veillez à installer la liste des conditions préalables suivante avant de pours
     
 *   [Visual Studio][MicrosoftVisualstudioMain] 2015 ou une ultérieure avec prise en charge de C++ installée.  
     
-## Étape 1 : créer une application à fenêtre unique  
+## <a name="step-1---create-a-single-window-app"></a>Étape 1 : créer une application à fenêtre unique  
 
 Commencez par un projet de bureau de base qui contient une seule fenêtre principale.  
 
 > [!IMPORTANT]
-> Pour mieux concentrer la procédure pas à pas, utilisez l’exemple de code modifié de la procédure pas à pas : créer une application de bureau [Windows traditionnelle (C++)][CppWindowsWalkthroughCreatingDesktopApplication] pour votre exemple d’application.  Pour télécharger l’exemple modifié et commencer, accédez [à WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].  
+> Pour mieux concentrer la procédure pas à pas, utilisez l’exemple de code modifié de la procédure pas à pas : créer une application de bureau [Windows traditionnelle (C++)][CppWindowsWalkthroughCreatingDesktopApplication] pour votre exemple d’application.  Pour télécharger l’exemple modifié et commencer, accédez à [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].  
 
 1.  Dans Visual Studio, ouvrez `WebView2GettingStarted.sln` .  
     Si vous utilisez une version antérieure de Visual Studio, pointez sur le projet **WebView2GettingStarted,** ouvrez le menu contextuel \(clic droit\), puis choisissez **Propriétés.**  Sous **Propriétés de configuration**générales, modifiez la version du SDK Windows et l’ensemble d’outils de plateforme pour utiliser le  >  **** SDK Win10 et Visual Studio’outils disponibles. **** ****  
@@ -46,7 +46,7 @@ Commencez par un projet de bureau de base qui contient une seule fenêtre princi
 
 Visual Studio peut afficher des erreurs, car le fichier d’en-tête WebView2 manque dans votre projet.  Les erreurs doivent être corrigées après [l’étape 2.](#step-2---install-webview2-sdk)  
 
-## Étape 2 : installer le SDK WebView2  
+## <a name="step-2---install-webview2-sdk"></a>Étape 2 : installer le SDK WebView2  
 
 Ajoutez le SDK WebView2 au projet.  Utilisez NuGet pour installer le SDK Win32.  
 
@@ -100,7 +100,7 @@ Ajoutez le SDK WebView2 au projet.  Utilisez NuGet pour installer le SDK Win32.
     
 Prêt à être utilisé et à créer avec l’API WebView2.  
 
-### Créer votre exemple d’application vide  
+### <a name="build-your-empty-sample-app"></a>Créer votre exemple d’application vide  
 
 Pour créer et exécuter l’exemple d’application, sélectionnez `F5` .  Votre application affiche une fenêtre vide.  
 
@@ -108,11 +108,11 @@ Pour créer et exécuter l’exemple d’application, sélectionnez `F5` .  Votr
    Application vide  
 :::image-end:::  
 
-## Étape 3 : créer un seul WebView dans la fenêtre parent  
+## <a name="step-3---create-a-single-webview-within-the-parent-window"></a>Étape 3 : créer un seul WebView dans la fenêtre parent  
 
 Ajoutez un WebView à la fenêtre principale.  
 
- Utilisez la méthode pour configurer l’environnement et localiser le `CreateCoreWebView2Environment` navigateur Microsoft Edge \(Chromium\) qui permet d’alimenter le contrôle.  Vous pouvez également utiliser la méthode si vous souhaitez spécifier l’emplacement du navigateur, le dossier utilisateur, les indicateurs de navigateur, etc., au lieu d’utiliser `CreateCoreWebView2EnvironmentWithOptions` le paramètre par défaut.  À la fin de la méthode, exécutez la méthode à l’intérieur du rappel et exécutez la méthode pour obtenir le `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` WebView associé.  
+ Utilisez la méthode pour configurer l’environnement et localiser le `CreateCoreWebView2Environment` navigateur Microsoft Edge \(Chromium\) qui permet d’alimenter le contrôle.  Vous pouvez également utiliser la méthode si vous souhaitez spécifier l’emplacement du navigateur, le dossier utilisateur, les indicateurs de navigateur, etc., au lieu d’utiliser le `CreateCoreWebView2EnvironmentWithOptions` paramètre par défaut.  À la fin de la méthode, exécutez la méthode à l’intérieur du rappel et exécutez la méthode pour obtenir le `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` WebView associé.  
 
 Dans le rappel, définissez quelques paramètres de plus, resizez le WebView pour prendre 100 % de la fenêtre parente et accédez à Bing.  
 
@@ -161,7 +161,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
     }).Get());
 ```  
 
-### Créer votre exemple d’application Bing  
+### <a name="build-your-bing-sample-app"></a>Créer votre exemple d’application Bing  
 
 Pour créer et exécuter l’application, sélectionnez `F5` .  Vous avez maintenant une fenêtre WebView qui affiche la page Bing.  
 
@@ -169,7 +169,7 @@ Pour créer et exécuter l’application, sélectionnez `F5` .  Vous avez mainte
    Fenêtre Bing  
 :::image-end:::  
 
-## Étape 4 : événements de navigation  
+## <a name="step-4---navigation-events"></a>Étape 4 : événements de navigation  
 
 L’équipe WebView a déjà abordé la navigation vers l’URL à l’aide `ICoreWebView2::Navigate` de la méthode de la dernière étape.  Lors de la navigation, WebView déclenche une séquence d’événements que l’hôte peut écouter.  
 
@@ -214,12 +214,12 @@ webviewWindow->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEv
 
 À présent, l’application ne navigue pas vers les sites non https.  Vous pouvez utiliser un mécanisme similaire pour accomplir d’autres tâches, telles que la limitation de la navigation à l’intérieur de votre propre domaine.  
 
-## Étape 5 : scripts  
+## <a name="step-5---scripting"></a>Étape 5 : écriture de scripts  
 
 Vous pouvez utiliser des applications hôtes pour injecter du code JavaScript dans des contrôles WebView2 lors de l’utilisation.  Vous pouvez tâcher WebView pour exécuter du javaScript arbitraire ou ajouter des scripts d’initialisation.  Le javaScript injecté s’applique à tous les nouveaux documents de niveau supérieur et aux images enfants jusqu’à ce que le JavaScript soit supprimé.  Le javaScript injecté est exécuté avec un minutage spécifique.  
 
 *   Exécutez-le après la création de l’objet global.  
-*   Exécutez-le avant tout autre script inclus dans le document HTML.  
+*   Exécutez-le avant d’exécuter tout autre script inclus dans le document HTML.  
 
 Copiez l’extrait de code suivant et collez-le dans `HelloWebView.cpp` .  
 
@@ -240,14 +240,14 @@ webviewWindow->ExecuteScript(L"window.document.URL;", Callback<ICoreWebView2Exec
 > [!NOTE] 
 > Les API d’injection de script \(et d’autres API WebView2\) sont asynchrones, vous devez utiliser des rappels si le code doit être exécuté dans un ordre spécifique.  
 
-## Étape 6 : communication entre le contenu hôte et le contenu web  
+## <a name="step-6---communication-between-host-and-web-content"></a>Étape 6 : communication entre le contenu hôte et le contenu web  
 
 L’hôte et le contenu web peuvent également communiquer entre eux par le biais de la `postMessage` méthode.  Le contenu web en cours d’exécution dans un WebView peut publier sur l’hôte par le biais de la méthode, et le message est géré par tout le handler d’événement inscrit `window.chrome.webview.postMessage` `ICoreWebView2WebMessageReceivedEventHandler` sur l’hôte.  De même, l’hôte peut envoyer un message au contenu web par le biais d’une méthode ou d’une méthode, qui est capturée par les handlers ajoutés à partir de `ICoreWebView2::PostWebMessageAsString` `ICoreWebView2::PostWebMessageAsJSON` `window.chrome.webview.addEventListener` l’écoute.  Le mécanisme de communication permet au contenu web d’utiliser des fonctionnalités natives en passant des messages pour demander à l’hôte d’exécuter des API natives.  
 
 Par exemple, pour comprendre le mécanisme, les étapes suivantes se produisent lorsque vous essayez d’afficher l’URL du document dans WebView.  
 
 1.  L’hôte inscrit un handler pour renvoyer le message reçu au contenu web  
-1.  L’hôte injecte un script au contenu web qui inscrit un handler pour imprimer le message à partir de l’hôte  
+1.  L’hôte injecte un script au contenu web qui inscrit un handler pour imprimer un message à partir de l’hôte  
 1.  L’hôte injecte un script au contenu web qui publie l’URL sur l’hôte  
 1.  Le handler de l’hôte est déclenché et renvoie le message \(l’URL\) au contenu web  
 1.  Le handler du contenu web est déclenché et imprime le message à partir de l’hôte \(l’URL\)  
@@ -275,7 +275,7 @@ webviewWindow->AddScriptToExecuteOnDocumentCreated(
 nullptr);
 ```  
 
-### Créer votre exemple d’application d’URL d’affichage  
+### <a name="build-your-display-url-sample-app"></a>Créer votre exemple d’application d’URL d’affichage  
 
 Pour créer et exécuter l’application, sélectionnez `F5` .  L’URL apparaît dans une fenêtre pop-up avant d’accéder à une page web.  
 
@@ -285,17 +285,17 @@ Pour créer et exécuter l’application, sélectionnez `F5` .  L’URL apparaî
 
 Félicitations, vous avez créé votre première application WebView2.  
 
-## Étapes suivantes  
+## <a name="next-steps"></a>Étapes suivantes  
 
 De nombreuses fonctionnalités WebView2 ne sont pas couvertes dans cet article, la section suivante fournit davantage de ressources.  
 
-### Voir également  
+### <a name="see-also"></a>Voir également  
 
 *   Pour obtenir un exemple complet des fonctionnalités WebView2, accédez à [l’exemple d’API WebView2.][GithubMicrosoftedgeWebview2samplesApisample]  
 *   Pour un exemple d’application créé à l’aide de WebView2, accédez [à WebView2Browser][GithubMicrosoftedgeWebview2browser].  
 *   Pour plus d’informations sur l’API WebView2, accédez à la référence [d’API.][Webview2ReferenceWin32]  
 
-## Entrer en contact avec l’équipe Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 

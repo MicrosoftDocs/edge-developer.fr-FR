@@ -1,37 +1,56 @@
 ---
-description: Conventions d’API de WebView2 C++ Win32
-title: Conventions d’API de WebView2 C++ Win32
+description: Conventions de l’API Win32 C++ WebView2
+title: Conventions de l’API Win32 C++ WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 02/24/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, WebView, applications WPF, WPF, Edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, html Edge
-ms.openlocfilehash: 42f0b5c9970b2e4a6424eb70458c58a98ec8dbc7
-ms.sourcegitcommit: 61cc15d2fc89aee3e09cec48ef1e0e5bbf8d289a
+keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+ms.openlocfilehash: b47e53a4846d4bb662ae108c6445a6c2a615722a
+ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11118974"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "11470857"
 ---
-# Conventions d’API de WebView2 C++ Win32  
+# <a name="win32-c-webview2-api-conventions"></a>Conventions de l’API Win32 C++ WebView2  
 
-## Méthodes Async  
+:::row:::
+   :::column span="1":::
+      Plateformes pris en charge :
+   :::column-end:::
+   :::column span="2":::
+      Win32
+   :::column-end:::
+:::row-end:::  
 
-Les méthodes asynchrones dans l’API C++ Win32 WebView2 utilisent une interface de délégué pour indiquer la fin de la méthode Async, le code de réussite ou d’échec, et pour some, le résultat de la méthode asynchrone.  Le paramètre final de toutes les méthodes asynchrones est un pointeur vers une interface de délégué qui vous permet de fournir une implémentation.  
+## <a name="prerequisites"></a>Conditions préalables  
 
-L’interface du délégué dispose d’une `Invoke` méthode unique qui utilise comme premier paramètre un `HRESULT` Code de réussite ou d’échec.  Par ailleurs, il peut exister un second paramètre qui est le résultat de la méthode si la méthode a un résultat.  Par exemple, la méthode [ICoreWebView2:: CapturePreview][Webview2ReferenceWin32Icorewebview2CapturePreview] utilise le paramètre final comme `ICoreWebView2CapturePreviewCompletedHandler` pointeur.  Pour envoyer une `CapturePreview` demande de méthode, vous fournissez une instance du `ICoreWebView2CapturePreviewCompletedHandler` pointeur que vous implémentez.  L’extrait de code suivant utilise une méthode à implémenter.  
+*   Expérience d’utilisation de l’API Win32  
+
+## <a name="async-methods"></a>Méthodes async  
+
+Les méthodes asynchrones dans l’API WebView2 Win32 C++ utilisent une interface déléguée pour vous contacter pour les raisons suivantes.  
+
+*   La méthode async est terminée.  
+*   Code de réussite ou d’échec.  
+*   Résultat de la méthode asynchrone.  
+
+Le dernier paramètre de toutes les méthodes asynchrones est un pointeur vers une interface déléguée dont vous fournissez une implémentation.  
+
+L’interface déléguée possède une méthode unique qui prend comme premier paramètre un code de réussite `Invoke` `HRESULT` ou d’échec.  En outre, il peut y avoir un deuxième paramètre qui est le résultat de la méthode si la méthode a un résultat.  Par exemple, la [méthode ICoreWebView2::CapturePreview][Webview2ReferenceWin32Icorewebview2CapturePreview] prend comme paramètre final un `ICoreWebView2CapturePreviewCompletedHandler` pointeur.  Pour envoyer une `CapturePreview` demande de méthode, vous fournissez une instance du `ICoreWebView2CapturePreviewCompletedHandler` pointeur que vous implémentez.  L’extrait de code suivant utilise une méthode pour implémenter.  
 
 ```cpp
 HRESULT Invoke(HRESULT result)
 ```  
 
-Vous implémentez la `Invoke` méthode et `CoreWebView2` sollicitez votre `Invoke` méthode lorsque la requête est `CapturePreview` terminée.  Le paramètre unique décrit le `HRESULT` Code de réussite ou d’échec de la `CapturePreview` requête.  
+Vous implémentez `Invoke` la méthode et demandez votre méthode lorsque la demande est `CoreWebView2` `Invoke` `CapturePreview` terminée.  Le paramètre unique est le code de réussite ou `HRESULT` d’échec de la `CapturePreview` demande.  
 
-Ou `ICoreWebView2::ExecuteScript` bien, vous fournissez une instance de `ICoreWebView2ExecuteScriptCompletedHandler` `Invoke` la méthode qui vous permet d’utiliser le code de réussite ou d’échec de la `ExecuteScript` requête, ainsi que le deuxième paramètre `resultObjectAsJson` qui est le paramètre JSON du résultat de l’exécution du script.  
+Vous pouvez également fournir une instance qui dispose d’une méthode qui vous fournit le code de réussite ou `ICoreWebView2::ExecuteScript` `Invoke` d’échec de la `ExecuteScript` demande.  Fournissez également le deuxième paramètre qui est le JSON du résultat de l’exécution du script.  
 
-Vous pouvez implémenter manuellement les `CompleteHandler` interfaces de délégué ou vous pouvez utiliser la [fonction de rappel WRL][CppCxWrlCallbackFunction].  La fonction callback est utilisée dans l’extrait de code WebView2 suivant.  
+Vous pouvez implémenter manuellement les interfaces déléguées, ou vous pouvez utiliser la fonction de rappel `CompleteHandler` [(WRL).][CppCxWrlCallbackFunction]  La [fonction de rappel (WRL)][CppCxWrlCallbackFunction] est utilisée dans l’extrait de code WebView2 suivant.  
 
 ```cpp
 void ScriptComponent::InjectScript()
@@ -58,15 +77,20 @@ void ScriptComponent::InjectScript()
 }
 ```  
 
-## Événements  
+## <a name="events"></a>Événements  
 
-Les événements de l’API C++ Win32 WebView2 utilisent `add_EventName` la `remove_EventName` paire de méthodes et vous abonner et vous désabonner des événements.  La `add_EventName` méthode prend une interface de délégué de gestionnaire d’événements et remet un `EventRegistrationToken` paramètre out en tant que paramètre out.  La `remove_EventName` méthode accepte un `EventRegistrationToken` et annule l’abonnement à l’événement correspondant.  
+Les événements dans l’API C++ Win32 WebView2 utilisent la paire méthode et abonnement pour s’abonner à des événements et `add_EventName` `remove_EventName` s’en désabonner.  La `add_EventName` méthode prend une interface déléguée de handler d’événements et retourne un `EventRegistrationToken` jeton en tant que paramètre de sortie.  La `remove_EventName` méthode prend un `EventRegistrationToken` jeton et désabonner l’abonnement à l’événement correspondant.  
 
-Les interfaces de délégué de gestionnaire d’événements fonctionnent de manière très similaire aux interfaces de délégué de gestionnaires terminés de méthode asynchrone.  Vous implémentez l’interface du délégué de gestionnaire d’événements et `CoreWebView2` envoyez un rappel chaque fois que l’événement se déclenche.  Chaque interface de délégué de gestionnaire d’événements possède une `Invoke` méthode unique qui a un paramètre sender suivi d’un paramètre d’arguments d’événement.  L’expéditeur est l’instance de l’objet sur lequel vous avez souscrit un abonnement à des événements.  Le paramètre args est une interface qui contient des informations sur l’événement actuellement en cours de déclenchement.  
+Les interfaces déléguées du handler d’événements fonctionnent de la même manière que les interfaces déléguées de la méthode async terminées.  Vous implémentez l’interface déléguée du handler d’événements et envoyez un rappel chaque `CoreWebView2` fois que l’événement s’exécute.  Chaque interface déléguée du handler d’événements possède une seule méthode qui possède un paramètre `Invoke` d’expéditeur suivi d’un paramètre d’rgs d’événement.  L’expéditeur est l’instance de l’objet auquel vous vous êtes abonné pour les événements.  Le paramètre args d’événement est une interface qui contient des informations sur l’événement en cours de tir.  
 
-Par exemple `NavigationCompleted` , l’événement sur `ICoreWebView2` a `ICoreWebView2::add_NavigationCompleted` la `ICoreWebView2::remove_NavigationCompleted` paire de méthodes et.  Lorsque vous demandez l’ajout, vous fournissez une instance de `ICoreWebView2NavigationCompletedEventHandler` la méthode que vous avez implémentée précédemment `Invoke` .  Lorsque l' `NavigationCompleted` événement est déclenché, votre `Invoke` méthode est sollicitée.  Le premier paramètre est le `ICoreWebView2` qui déclenche l' `NavigationCompleted` événement.  Le deuxième paramètre est le `ICoreWebView2NavigationCompletedEventArgs` qui contient des informations sur la réussite de la navigation et ainsi de suite.  
+Par exemple, `NavigationCompleted` l’événement sur a la paire méthode et la `ICoreWebView2` `ICoreWebView2::add_NavigationCompleted` `ICoreWebView2::remove_NavigationCompleted` paire.  Lorsque vous envoyez une demande, vous fournissez une instance dans laquelle `ICoreWebView2NavigationCompletedEventHandler` vous avez précédemment implémenté la `Invoke` méthode.  Lorsque `NavigationCompleted` l’événement s’exécute, `Invoke` votre méthode est demandée.  Le premier paramètre exécute `NavigationCompleted` l’événement.  Le deuxième paramètre contient des informations sur la réussite de la navigation, etc.  
 
-À l’instar de la méthode asynchrone, vous pouvez implémenter vous-même directement, ou vous pouvez utiliser la fonction de rappel WRL utilisée dans l’extrait de code WebView2 suivant.  
+À l’exemple de l’interface déléguée de handler terminée de la méthode async, utilisez l’une des actions suivantes pour la configurer.  
+
+*   Implémentez-le directement.  
+*   Utilisez la [fonction WRL (Callback Function)][CppCxWrlCallbackFunction] utilisée dans l’extrait de code WebView2 suivant.  
+
+<!-- todo:  what is async method completed handler delegate interface?  Is there a shorter name for it?  -->  
 
 ```cpp
 // Register a handler for the NavigationCompleted event.
@@ -97,26 +121,39 @@ CHECK_FAILURE(m_webView->add_NavigationCompleted(
     &m_navigationCompletedToken));
 ```  
 
-## String  
+## <a name="strings"></a>Chaînes  
 
-Les paramètres de type chaîne se `LPWSTR` terminent par un caractère nul.  Le demandeur alloue la chaîne à l’aide de `CoTaskMemAlloc` .  La propriété est transférée à la demande et il appartient au demandeur de libérer de la mémoire en utilisant `CoTaskMemFree` .  
+Les paramètres de sortie de chaîne `LPWSTR` sont des chaînes terminées par null.  Le demandeur fournit la chaîne à l’aide `CoTaskMemAlloc` de .  La propriété est transférée au demandeur et c’est au demandeur de libérer la mémoire à l’aide `CoTaskMemFree` de .  
 
-Les valeurs de chaîne dans les paramètres sont des `LPCWSTR` chaînes dont le caractère nul est terminé.  Le demandeur vérifie que la chaîne est valide pour la durée de la demande de fonction synchrone.  Si le destinataire doit conserver cette valeur à un certain point après la demande de la fonction, le destinataire doit allouer une copie associée de la valeur de chaîne.  
+Les paramètres d’entrée de chaîne `LPCWSTR` sont des chaînes terminées par null.  Le demandeur s’assure que la chaîne est valide pour la durée de la demande de fonction synchrone.  Si le récepteur doit stocker la valeur à un certain point une fois la demande de fonction terminée, le récepteur doit fournir une copie associée de la valeur de chaîne.  
 
-## D’analyse des URI et de JSON  
+## <a name="uri-and-json-parsing"></a>URI et l’doncsiation JSON  
 
-Diverses méthodes fournissent ou acceptent des URI et JSON en tant que chaînes.  Utilisez votre propre bibliothèque préférée pour analyser et générer les chaînes.  
+Diverses méthodes fournissent ou acceptent des URS et JSON sous forme de chaînes.  Utilisez votre bibliothèque préférée pour l’utilisation et la génération des chaînes.  
 
-Si WinRT est disponible pour votre application, vous pouvez utiliser les `RuntimeClass_Windows_Data_Json_JsonObject` `IJsonObjectStatics` méthodes et pour analyser ou générer des chaînes JSON ou `RuntimeClass_Windows_Foundation_Uri` des `IUriRuntimeClassFactory` méthodes pour analyser et générer des URI.  Les deux méthodes fonctionnent dans les applications Win32.  
+Si WinRT est disponible pour votre application, vous pouvez utiliser les méthodes et les méthodes pour parer ou produire des chaînes ou des méthodes JSON pour l' `RuntimeClass_Windows_Data_Json_JsonObject` `IJsonObjectStatics` `RuntimeClass_Windows_Foundation_Uri` `IUriRuntimeClassFactory` URIS.  Les deux méthodes fonctionnent dans les applications Win32.  
 
-Si vous utilisez `IUri` et que vous `CreateUri` souhaitez analyser les URI, vous pouvez utiliser les indicateurs de création d’URI suivants pour que le `CreateUri` comportement corresponde plus étroitement à l’analyse de l’URI dans le WebView.  
+Si vous utilisez et pour l’URI, vous pouvez utiliser les indicateurs de création d’URI suivants pour que le comportement corresponde plus étroitement à l’URI de l’URI dans `IUri` `CreateUri` `CreateUri` WebView.  
 
 ```json
 Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 ```  
 
+## <a name="see-also"></a>Voir également  
+
+*   To get started using WebView2 Win32 C/C++, navigate to [Getting started with WebView2][Webview2IndexGettingStarted] guides.  
+*   Pour plus d’informations sur les API WebView2, accédez à la [référence d’API.][DotnetApiMicrosoftWebWebview2WpfWebview2]  
+
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe Microsoft Edge WebView  
+
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+
 <!-- links -->  
 
-[Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview-interface ICoreWebView2 | Documents Microsoft"  
+[Webview2GettingstartedWin32]: ../gettingstarted/win32.md "Getting started with WebView2 | Documents Microsoft"  
 
-[CppCxWrlCallbackFunction]: /cpp/cppcx/wrl/callback-function-wrl "Fonction de rappel (WRL) | Documents Microsoft"  
+[Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview - interface ICoreWebView2 | Documents Microsoft"  
+
+[CppCxWrlCallbackFunction]: /cpp/cppcx/wrl/callback-function-wrl "Callback Function (WRL) | Documents Microsoft"  
+
+[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "Classe WebView2 | Documents Microsoft"  

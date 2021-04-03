@@ -23,10 +23,10 @@ no-loc:
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
 ms.openlocfilehash: c76830cb8bbcc597aa026f58e1926cd2f9bc2d62
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.sourcegitcommit: 2ddfd98d1e871be9c61380a8ca57da398d38bd54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 04/02/2021
 ms.locfileid: "11439583"
 ---
 # <a name="experimental-features"></a>Fonctionnalités expérimentales  
@@ -118,14 +118,14 @@ Après avoir activer l’expérience, assurez-vous de redémarrer de DevTools.  
 1.  Sous la **Source Order Viewer** section, cochez **la case Afficher** la commande source.  
 1.  Mettez en surbrillez n’importe quel élément HTML pour afficher une superposition que l’ordre dans la source de la page web.  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane» lightbox=».. /media/experiments-source-order-viewer.msft.png»::: dans le volet **Source Order Viewer** Accessibilité ****  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer) ::: in the Accessibility pane» lightbox=».. /media/experiments-source-order-viewer.msft.png»::: dans le volet **:::no-loc(Source Order Viewer** Accessibilité ****  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
 
 ### Enable Composited Layers in 3D View  
 
-Vous pouvez maintenant visualiser calques avec les index z et le modèle objet de document \(DOM\).  Cette fonctionnalité vous permet de déboguer sans changer de contexte aussi souvent.  Vous avez identifié que la réduction du basculement de contexte était un problème majeur.  Il n’est pas toujours clair comment le code que vous écrivez affecte votre application web.  Pour une expérience de débogage visuel complète, les couches composites et les couches composites 3D View sont désormais combinées.  
+Vous pouvez maintenant visualiser calques avec les index z et le modèle objet de document \(DOM\).  Cette fonctionnalité vous permet de déboguer sans changer de contexte aussi souvent.  Vous avez identifié que la réduction du basculement de contexte était un problème majeur.  Il n’est pas toujours clair comment le code que vous écrivez affecte votre application web.  Pour une expérience de débogage visuel complète, les couches composites et les couches 3D View composites sont désormais combinées.  
 
 Après avoir activer l’expérience, assurez-vous de redémarrer de DevTools.  Pour utiliser **les couches composites,** complétez les étapes suivantes.  
 
@@ -143,8 +143,8 @@ Après avoir activer l’expérience, assurez-vous de redémarrer de DevTools.  
 
 Vous pouvez désormais utiliser le nouvel éditeur de [polices][DevtoolsInspectStylesEditFonts] visuel pour modifier les polices.  Utilisez-la pour définir les polices et les caractéristiques de police.  Visual **Font Editor vous** aide à effectuer les actions suivantes.  
 
-*   Basculer entre les unités pour différentes propriétés de police  
-*   Basculer entre les mots clés pour différentes propriétés de police  
+*   Basculer entre les unités concernant différentes propriétés de police  
+*   Basculer entre les mots clés de différentes propriétés de police  
 *   Convertir des unités  
 *   Générer un code CSS précis  
     
@@ -154,7 +154,7 @@ Après avoir activer l’expérience, assurez-vous de redémarrer de DevTools.  
 1.  Ouvrez **le volet Styles.**  
 1.  Sélectionnez **l’icône Éditeur de** polices.  
     
-Pour plus d’informations sur le nouvel éditeur de polices **visuel,** accédez à Modifier les styles de police CSS et les paramètres dans le volet Styles dans [DevTools][DevtoolsInspectStylesEditFonts].  
+Pour plus d’informations sur le nouvel éditeur de **polices**visuel, accédez à Modifier les styles de police CSS et les paramètres dans le volet Styles dans [DevTools][DevtoolsInspectStylesEditFonts].  
 
 :::image type="complex" source="../media/font-editor-open.msft.png" alt-text="Le volet Visual Font Editor est mis en surbrill" lightbox="../media/font-editor-open.msft.png":::
    Le volet **Visual Font Editor** est mis en surbrill  
@@ -164,11 +164,11 @@ Pour plus d’informations sur le nouvel éditeur de polices **visuel,** accéde
 
 ### Enable new CSS Flexbox debugging features  
 
-Cette fonctionnalité expérimentale fournit de nombreuses nouvelles visualisations pour vous aider à déboguer les dispositions flexbox CSS.  Pour afficher un aperçu des dernières fonctionnalités expérimentales, [activer cette expérience](#turn-on-experimental-features) et recharger DevTools.  
+Cette fonctionnalité expérimentale fournit de nombreuses nouvelles visualisations pour vous aider à déboguer les dispositions flexbox CSS.  Pour afficher un aperçu des dernières fonctionnalités expérimentales, [allumez cette expérience](#turn-on-experimental-features) et rechargez DevTools.  
 
 #### <a name="display-persistent-overlays-on-flexbox-layouts-with-the-inspect-tool"></a>Afficher des superpositions persistantes sur les dispositions Flexbox à l’aide de l’outil Inspect  
 
-**L’outil Inspect** permet d’identifier et de visualiser rapidement les dispositions flexbox CSS dans un site web en pointant dessus avec la souris.  Choisissez **l’icône Inspect** \( Inspect \) dans le ![ coin supérieur gauche de ](../media/inspect-icon.msft.png) DevTools.  Ensuite, lors du débogage du site web, pointez sur un conteneur flexible pour afficher les contours autour du conteneur flexible.  
+**L’outil Inspect** permet d’identifier et de visualiser rapidement les dispositions flexbox CSS dans un site web en pointant dessus avec la souris.  Choisissez **l’icône Inspect** \( Inspect \) dans le coin supérieur gauche ![ de ](../media/inspect-icon.msft.png) DevTools.  Ensuite, lors du débogage du site web, pointez sur un conteneur flexible pour afficher les contours autour du conteneur flexible.  
 
 :::image type="complex" source="../media/flexbox-hover.msft.png" alt-text="Afficher les conteneurs Flexbox avec l’outil Inspect" lightbox="../media/flexbox-hover.msft.png":::
    Afficher les conteneurs Flexbox avec **l’outil Inspect**  
@@ -193,7 +193,7 @@ Pour faire bascule les superpositions persistantes sur la disposition Flexbox, u
 
 #### <a name="configure-persistent-overlays"></a>Configurer des superpositions persistantes  
 
-Pour configurer les options des superpositions persistantes pour les grilles CSS ou les dispositions Flexbox, utilisez **le** volet De disposition.  Le **volet** Disposition se trouve dans l’outil **Éléments** en plus des **volets Styles** **et** Calculés.  
+Pour configurer les options des superpositions persistantes pour les grilles CSS ou les dispositions Flexbox, utilisez **le** volet De disposition.  Le **volet** Disposition se trouve dans l’outil **Éléments** en côté des **volets Styles** **et** Calculés.  
 
 :::image type="complex" source="../media/flexbox-layout.msft.png" alt-text="Panneau de disposition" lightbox="../media/flexbox-layout.msft.png":::
    Panneau de disposition  
@@ -213,10 +213,10 @@ Vous pouvez maintenant ouvrir d’autres outils à l’aide de la nouvelle icôn
 
 ### Enable Welcome tab
 
-Cette expérience remplace **l’outil Nouveautés** par le nouvel outil **Welcome.**  Il affiche une conception actualisée pour le contenu suivant.  
+Cette expérience remplace **l’outil Nouveautés** par le nouvel **outil Welcome.**  Il affiche une conception actualisée pour le contenu suivant.  
 
 *   Liens vers des documents de développement  
-*   les dernières fonctionnalités  
+*   fonctionnalités les plus récentes  
 *   notes de publication  
 *   Option de contact de l’équipe Microsoft Edge DevTools  
     
@@ -261,11 +261,11 @@ Pour fournir des commentaires sur les expériences DevTools de Microsoft Edge ou
 [Devtools3dViewIndex]: ../3d-view/index.md "3D View | Documents Microsoft"  
 [DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsCustomizeIndex]: ../customize/index.md "Personnaliser microsoft Edge DevTools | Documents Microsoft"  
-[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Paramètres-personnaliser Microsoft Edge DevTools | Documents Microsoft"  
+[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Paramètres – Personnalisation de Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Edit keyboard shortcuts for any action in the DevTools | Documents Microsoft"  
 [DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code "Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code | Documents Microsoft"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simuler des appareils mobiles avec le mode appareil dans Microsoft Edge DevTools | Microsoft Edge"  
-[DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Modifier les styles et paramètres de police CSS dans le volet Styles de DevTools | Documents Microsoft"  
+[DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Modifier les styles et paramètres de police CSS dans le volet Styles de DevTools | Microsoft Docs"  
 [DevtoolsIssuesIndex]: ../issues/index.md "Recherchez et corrigez les problèmes liés à l’outil des problèmes de Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsOpenIndex]: ../open/index.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsShortcutsIndex]: ../shortcuts/index.md "Raccourcis clavier Microsoft Edge DevTools | Documents Microsoft"  
