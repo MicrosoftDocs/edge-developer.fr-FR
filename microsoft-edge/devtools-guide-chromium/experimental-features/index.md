@@ -118,7 +118,8 @@ ms.locfileid: "11439583"
 1.  <span data-ttu-id="5b093-166">Sous la **Source Order Viewer** section, cochez **la case Afficher** la commande source.</span><span class="sxs-lookup"><span data-stu-id="5b093-166">Under the **Source Order Viewer** section, choose the **Show Source Order** checkbox.</span></span>  
 1.  <span data-ttu-id="5b093-167">Mettez en surbrillez n’importe quel élément HTML pour afficher une superposition que l’ordre dans la source de la page web.</span><span class="sxs-lookup"><span data-stu-id="5b093-167">Highlight any HTML element to display an overlay that the order in the webpage source.</span></span>  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text=":::<span data-ttu-id="5b093-168">no-loc(Source Order Viewer) ::: in the Accessibility pane» lightbox=».. /media/experiments-source-order-viewer.msft.png»::: dans le volet **Source Order Viewer** Accessibilité \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="5b093-168">no-loc(Source Order Viewer)::: in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png"::: **Source Order Viewer** in the **Accessibility** pane</span></span>  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
+   **Source Order Viewer** in the **Accessibility** pane  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
