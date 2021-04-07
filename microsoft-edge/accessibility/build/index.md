@@ -4,17 +4,17 @@ description: Découvrir comment les meilleures pratiques et les applications Int
 title: Créer | Accessibilité
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibilité, accessibilité pour les développeurs, sites web accessibles, edge, développement web, ARIA, développeur, UIA, UI Automation
 ms.custom: seodec18
-ms.openlocfilehash: 69f0576b39815708d01477972abad1f8bdc9486e
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3bc16450a3a64c06d290d1d3e112a9b2faecbe14
+ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397887"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11480152"
 ---
 # <a name="building-accessible-websites"></a>Création de sites web accessibles
 
@@ -30,11 +30,11 @@ Pour les développeurs web, certains éléments HTML sont mappés à des objets 
 
 De nombreux problèmes d’accessibilité courants avec le contenu dynamique peuvent être résolus par une bonne pratique de codage, et la documentation [WCAG 2.0](https://go.microsoft.com/fwlink/p/?LinkID=24629) inclut de nombreuses techniques et meilleures pratiques pour vous aider à créer des applications web dynamiques plus accessibles. Toutefois, même lorsqu’il est correctement codé, le contenu dynamique n’est pas nécessairement accessible. [Les applications Internet enrichies accessibles (ARIA)](#aria) permettent de contourner ce problème.  
 
-Pour plus d’informations sur l’accessibilité web, consultez [l’introduction à](https://www.w3.org/WAI/intro/accessibility.php) l’accessibilité web par l’initiative d’accessibilité web [(CAS).](https://www.w3.org/WAI)
+Pour plus d’informations sur l’accessibilité web, consultez [l’introduction](https://www.w3.org/WAI/intro/accessibility.php) à l’accessibilité web par l’initiative d’accessibilité web [(CAS).](https://www.w3.org/WAI)
 
 ## <a name="aria"></a>ARIA
 
-La spécification ARIA [(Accessible Rich Internet Applications)](https://www.w3.org/TR/wai-aria/) de l’Initiative d’accessibilité web du W3C définit comme une syntaxe pour rendre le contenu web dynamique et les interfaces utilisateur personnalisées accessibles à tous. [](https://www.w3.org/WAI/) ARIA étend le code HTML à l’aide d’attributs supplémentaires (rôles, propriétés et états) conçus pour transmettre la sémantique personnalisée. Ces attributs sont utilisés par les navigateurs pour transmettre l’état et le rôle des contrôles à l’API d’accessibilité.
+La spécification ARIA [(Accessible Rich Internet Applications)](https://www.w3.org/TR/wai-aria/) de l’Initiative d’accessibilité web du W3C définit comme une syntaxe pour rendre le contenu web dynamique et les interfaces utilisateur personnalisées accessibles à tous. [](https://www.w3.org/WAI/) ARIA étend le code HTML à l’aide d’attributs supplémentaires (rôles, propriétés et états) conçus pour transmettre une sémantique personnalisée. Ces attributs sont utilisés par les navigateurs pour transmettre l’état et le rôle des contrôles à l’API d’accessibilité.
 
 ### <a name="roles-properties-and-states"></a>Rôles, propriétés et états
 
@@ -62,22 +62,22 @@ Pour plus d’informations sur ARIA, accédez à ARIA dans la section [Ressource
 
 ## <a name="assistive-technology-compatibility-testing"></a>Test de compatibilité des technologies d’assistance  
 
-Vérifier que le site web que vous construisez fonctionne avec des technologies d’assistance réelles est la meilleure façon de garantir une bonne expérience pour vos utilisateurs présentant un handicap.  Étant donné que de nombreuses technologies d’assistance utilisent le clavier, le test de l’accessibilité du clavier de votre site web est un bon point de départ.  [Le test de compatibilité du clavier][W3cPerspectiveVideosKeyboard] valide que les utilisateurs ont accès à tous les contrôles interactifs sans nécessiter de souris.  Microsoft [Accessibility Insights for Web][AccessibilityinsightsWebOverview] est une extension de navigateur pour Microsoft Edge et Chrome qui vous guide et révèle plusieurs problèmes courants.  
+Vérifier que le site web que vous construisez fonctionne avec des technologies d’assistance réelles est la meilleure façon de garantir une bonne expérience pour vos utilisateurs présentant un handicap.  Étant donné que de nombreuses technologies d’assistance utilisent le clavier, le test de l’accessibilité du clavier de votre site web est un bon point de départ.  [Le test de compatibilité du][W3cPerspectiveVideosKeyboard] clavier valide que les utilisateurs ont accès à tous les contrôles interactifs sans nécessiter de souris.  Microsoft [Accessibility Insights for Web][AccessibilityinsightsWebOverview] est une extension de navigateur pour Microsoft Edge et Chrome qui vous guide et révèle plusieurs problèmes courants.  
 
 Une fois que vous êtes certain que votre site web fonctionne bien avec un clavier, essayez-le avec d’autres technologies d’assistance, telles que les lecteurs d’écran.  Il révèle les problèmes suivants.
 
 *   Votre code HTML, ARIA et CSS.  
 *   Niveau de prise en charge d’une technologie d’assistance pour une fonctionnalité ou une technique.  
     
-Différents navigateurs peuvent maquer des éléments sur des API d’accessibilité de plateforme différemment de Microsoft Edge.  Lors de la création de votre interface, il est important de prendre en compte chaque différence.  
+Différents navigateurs peuvent maquer des éléments à des API d’accessibilité de plateforme différemment de Microsoft Edge.  Lors de la création de votre interface, il est important de prendre en compte chaque différence.  
 
-WebAIM effectue des [][WebaimProjectsScreenreadersurvey8] enquêtes [][WebaimProjectsLowvisionsurvey2] avec des utilisateurs de lecteur d’écran et de vision faible qui vous aident à choisir les technologies d’assistance et les navigateurs que vous souhaitez tester.  
+WebAIM effectue des [][WebaimProjectsScreenreadersurvey8] enquêtes avec des lecteurs d’écran et des utilisateurs à faible [vision][WebaimProjectsLowvisionsurvey2] qui vous aident à choisir les technologies d’assistance et les navigateurs que vous souhaitez tester.  
 
 ### <a name="learning-how-to-test"></a>Apprendre à tester  
 
 Les technologies d’assistance sont des outils sophistiqués.  Ne supposez pas que vous êtes en mesure de commencer immédiatement les tests avec une technologie d’assistance sans avoir tout d’abord appris comment elle fonctionne.  L’apprentissage du test avec un lecteur d’écran présente une courbe d’apprentissage particulièrement pointée.  Un utilisateur de lecteur d’écran débutant peut supposer qu’un bogue de lecteur d’écran s’est produit alors que le problème est lié à une mauvaise utilisation du lecteur d’écran.  
 
-Pour plus d’informations sur l’apprentissage des technologies d’assistance, accédez à [Test avec][WebaimArticlesScreenreaderTesting] lecteurs d’écran sur WebAIM.  
+Pour plus d’informations sur l’apprentissage des technologies d’assistance, accédez à Test avec lecteurs [d’écran][WebaimArticlesScreenreaderTesting] sur WebAIM.  
 
 ### <a name="testing-locally"></a>Test local  
 
@@ -94,7 +94,7 @@ Sous macOS, si vous souhaitez tester une technologie d’assistance uniquement d
 
 ### <a name="cloud-based-testing-tools"></a>Outils de test basés sur le cloud  
 
-Si une technologie d’assistance n’est pas disponible sur votre système d’exploitation ou si vous ne pouvez pas en installer une sur une machine virtuelle ou un émulateur, les outils de test de technologie d’assistance en nuage sont la meilleure chose à faire.  
+Si une technologie d’assistance n’est pas disponible sur votre système d’exploitation ou si vous ne pouvez pas en installer une sur une machine virtuelle ou un émulateur, les outils de test de technologie d’assistance informatique sont la meilleure chose à faire.  
 
 *   [Assistiv Labs (commercial)][AssistivlabsMain] vous permet de tester manuellement des technologies d’assistance via n’importe quel navigateur web moderne.  Choisissez une technologie d’assistance et un navigateur qui vous connecte à un ordinateur virtuel, un émulateur ou un appareil réel avec lequel vous pouvez interagir.  
 
@@ -144,7 +144,7 @@ Le site web OpenAjax Alliance est une excellente ressource pour vérifier les r�
 
 ### <a name="accessibility-techniques--tools"></a>Techniques d’accessibilité & outils
 
-#### [<a name="accessibility-creating-accessible-extension-icons-for-microsoft-edge"></a>Accessibilité : création d’icônes d’extension accessibles pour Microsoft Edge](../../edgehtml/extensions/guides/accessibility.md)
+#### [<a name="accessibility-creating-accessible-extension-icons-for-microsoft-edge"></a>Accessibilité : création d’icônes d’extension accessibles pour Microsoft Edge](/archive/microsoft-edge/legacy/developer/extensions/guides/accessibility)
 
 Obtenez des conseils sur la création d’icônes d’extensions accessibles pour Microsoft Edge.
 
@@ -218,7 +218,7 @@ Série de courtes vidéos de situation par le W3C sur l’impact de l’accessib
 
 [MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Machines virtuelles | Développeur Microsoft Edge"  
 
-[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "Guide complet de la | Microsoft Support"  
+[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "Guide complet du narrateur | Microsoft Support"  
 [MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "Utilisez la Loupe pour faciliter l’affichage des éléments à l’écran | Microsoft Support"  
 
 [AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Informations sur l’accessibilité pour les | Web Informations sur l’accessibilité"  

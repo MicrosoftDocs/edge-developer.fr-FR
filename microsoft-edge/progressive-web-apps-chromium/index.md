@@ -3,17 +3,17 @@ description: Les applications web progressives (Chromium) s’exécutent en nati
 title: Applications web progressives sur Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/02/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: applications web progressives, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: 2850c983c1dae34362a43be9cd33abbfd0df77cf
-ms.sourcegitcommit: f605e4e27fed88aca286f2ae236e27f9a396b517
+ms.openlocfilehash: be832ee5c0ad395dae7b4946c41da157ab5cd9ba
+ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11474890"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11480187"
 ---
 # <a name="progressive-web-apps-on-windows-overview"></a>Présentation progressive des applications web sur Windows  
 
@@ -40,7 +40,7 @@ ms.locfileid: "11474890"
     :::column:::
         :::image type="icon" source="./media/i_offline-small.png":::
         ### <a name="network-independentmdnpwaadvantagesnetworkindependent"></a>[Indépendant du réseau][MDNPwaAdvantagesNetworkIndependent]
-        Fonctionne en mode hors connexion et dans des conditions de réseau faible
+        Fonctionne en mode hors connexion et dans des conditions de faible réseau
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/i_progressive-small.png":::
@@ -104,14 +104,14 @@ Les applications de bureau de bureau sont pris en charge sur l’une des platefo
 
 ## <a name="requirements"></a>Conditions préalables  
 
-Pour s’exécuter en tant que PWA, votre application web hébergée sur le serveur doit inclure les conditions minimales suivantes.  
+Pour s’exécuter en tant que PWA, votre application web hébergée sur le serveur doit inclure les exigences minimales suivantes.  
 
 :::row:::
    :::column span="1":::
       [HTTPS][WikiHttps]  
    :::column-end:::
    :::column span="2":::
-      Protège vos utilisateurs en fournissant une connexion sécurisée pour la communication de serveur ou d’application.  Les travailleurs de service et les autres technologies PWA fonctionnent uniquement avec des ressources web servies sur une connexion sécurisée \(ou à partir d’une connexion à des fins `localhost` de débogage\).  
+      Protège vos utilisateurs en fournissant une connexion sécurisée pour la communication entre le serveur ou l’application.  Les travailleurs de service et les autres technologies PWA fonctionnent uniquement avec des ressources web servies sur une connexion sécurisée \(ou à partir de là à des fins `localhost` de débogage\).  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -175,7 +175,7 @@ Pour être un excellent PWA, votre application doit également répondre aux exi
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [Liste de contrôle PWA Chromium][WebDevGoodPwaChecklist]  
+      [Liste de vérification PWA Chromium][WebDevGoodPwaChecklist]  
    :::column-end:::
    :::column span="2":::
       Vérifie votre PWA par rapport à la liste de vérification PWA de référence google.  
@@ -183,7 +183,7 @@ Pour être un excellent PWA, votre application doit également répondre aux exi
 :::row-end:::  
 
 > [!NOTE]
-> Pour transformer votre PWA en application [du Microsoft Store,][MicrosoftDeveloperStore] accédez à [Progressive Web Apps (EdgeHTML) dans le Microsoft Store][PwaEdgehtmlMicrosoftStore].  
+> Pour transformer votre application PWA en application [du Microsoft Store,][MicrosoftDeveloperStore] accédez à Applications web progressives [dans le Microsoft Store.][PwaChromiumMicrosoftStore]  
   
 ## <a name="see-also"></a>Voir également  
 
@@ -205,7 +205,9 @@ Pour être un excellent PWA, votre application doit également répondre aux exi
 [DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps/index.md "Déboguer les applications web progressives | Documents Microsoft"  
 [PwaChromiumMicrosoftStore]: ./microsoft-store.md "Publier votre application web progressive sur le Microsoft Store | Documents Microsoft"
 
-[WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Vue d’ensemble de Windows Push Notification Services (WNS) | Documents Microsoft"  
+
+
+[WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Vue d’ensemble Notification Services Windows Push (WNS) | Documents Microsoft"  
 [WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "Conception pour xbox et télévision | Documents Microsoft"  
 [WindowsUWPDesignDevicesIndex]: /windows/uwp/design/devices/index.md "Considérations sur l’interface utilisateur pour les appareils UWP | Documents Microsoft"  
 [WindowsUWPGetStartedGuide]: /windows/uwp/get-started/universal-application-platform-guide.md "Qu’est-ce qu’une application de plateforme Windows universelle (UWP) ? | Documents Microsoft"  

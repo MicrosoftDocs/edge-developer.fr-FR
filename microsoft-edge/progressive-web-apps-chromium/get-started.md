@@ -7,12 +7,12 @@ ms.date: 03/16/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: applications web progressives, PWA, Edge, Windows, PWABuilder, manifeste web, service de travail, push
-ms.openlocfilehash: 6a40742c1065dbc3b8aaeeeb469ab9154629a47a
-ms.sourcegitcommit: f605e4e27fed88aca286f2ae236e27f9a396b517
+ms.openlocfilehash: 3023c38790185ca6989f4a487928abc79b1d5a2c
+ms.sourcegitcommit: 146072bf606b84e5145a48333abf9c6b892a12d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11474911"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11480194"
 ---
 # <a name="get-started-with-progressive-web-apps-chromium"></a>Mise en place des applications web progressives (Chromium)  
 
@@ -58,7 +58,7 @@ npm start
 
 ## <a name="get-started-building-a-pwa"></a>Commencer à créer un PWA  
 
-Maintenant que vous avez une application web simple, étendez-la en tant que PWA en ajoutant les trois conditions requises pour les applications PWA<!--[3 requirements for PWAs][PwaEdgehtmlIndexRequirements]-->: [HTTPS](#step-1---use-https), un [manifeste d’application web](#step-2---create-a-web-app-manifest)et un service de [travail](#step-3---add-a-service-worker).  
+Maintenant que vous avez une application web simple, étendez-la en tant que PWA en ajoutant les trois conditions requises pour les applications PWA<!--[3 requirements for PWAs][ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]-->: [HTTPS](#step-1---use-https), un [manifeste d’application web](#step-2---create-a-web-app-manifest)et un service de [travail](#step-3---add-a-service-worker).  
 
 ### <a name="step-1---use-https"></a>Étape 1 : utiliser HTTPS  
 
@@ -121,7 +121,7 @@ Les employés de service sont des tâches en arrière-plan qui interceptent les 
     
 Les employés de service sont définis dans un fichier JavaScript spécial.  Pour plus d’informations, accédez à [l’utilisation des travailleurs de service][MDNUsingServiceWorkers] et de [l’API de travail de service.][MDNServiceWorkerApi]  
 
-Pour créer un service de travail dans votre projet, utilisez la recette de travail de service réseau d’abord en **cache** du [Générateur PWA.][PwaBuilderServiceWorker]  
+Pour créer un service de travail dans votre projet, utilisez la recette de travail de travail de service réseau mise en **cache** à partir du [Générateur PWA.][PwaBuilderServiceWorker]  
 
 1.  Accédez [à pwabuilder.com/serviceworker,][PwaBuilderServiceWorker]sélectionnez le travail de service réseau mis **en cache** en premier, puis sélectionnez le bouton Télécharger. ****  Le fichier téléchargé contient les fichiers suivants :
     
@@ -182,7 +182,7 @@ Les étapes suivantes ont été adaptées à partir du manuel de travail de dém
 
 ### <a name="step-1---generate-vapid-keys"></a>Étape 1 : générer des clés VAPID  
 
-Les notifications Push nécessitent des clés VAPID \(Identification du serveur d’applications volontaires\) pour envoyer des messages push au client PWA.  Plusieurs générateurs de clés VAPID sont disponibles en ligne [\(par exemple, vapidkeys.com][VapidkeysMain]\).  Après la génération, vous devez obtenir un objet JSON contenant une clé publique et privée.  Enregistrez les clés pour les étapes ultérieures dans le didacticiel suivant.  Pour plus d’informations sur VAPID et WebPush, accédez à Envoyer des [notifications WebPush identifiées par VAPID][MozillaServicesSendingVapidWebPushNotificationsPush]à l’aide du service Push Mozilla.  
+Les notifications Push nécessitent des clés VAPID \(Voluntary Application Server Identification\) pour envoyer des messages push au client PWA.  Plusieurs générateurs de clés VAPID sont disponibles en ligne [\(par exemple, vapidkeys.com][VapidkeysMain]\).  Après la génération, vous devez obtenir un objet JSON contenant une clé publique et privée.  Enregistrez les clés pour les étapes ultérieures dans le didacticiel suivant.  Pour plus d’informations sur VAPID et WebPush, accédez à Envoyer des [notifications WebPush identifiées par VAPID][MozillaServicesSendingVapidWebPushNotificationsPush]à l’aide du service Push Mozilla.  
 
 ### <a name="step-2---subscribe-to-push-notifications"></a>Étape 2 : s’abonner aux notifications Push  
 
@@ -335,7 +335,7 @@ Les étapes suivantes incluent des tâches supplémentaires pour vous aider à c
 
 <!-- links -->  
 
-<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
+<!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
 [VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Déployer une application Node.js azure avec Visual Studio code | Documents Microsoft"  
 
@@ -368,7 +368,7 @@ Les étapes suivantes incluent des tâches supplémentaires pour vous aider à c
 [MDNPushApi]: https://developer.mozilla.org/docs/Web/API/Push_API "Api Push | MDN"  
 [MDNPushManager]: https://developer.mozilla.org/docs/Web/API/PushManager "| PushManager MDN"  
 [MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "Service Worker API | MDN"  
-[MDNUsingServiceWorkers]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers "Utilisation du service Workers | MDN"  
+[MDNUsingServiceWorkers]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers "Utilisation du service | MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Contenu du manifeste d’application | MDN"  
 
 [MediumWebEdgeOfflinePostsProgressiveWebApps]: https://medium.com/web-on-the-edge/offline-posts-with-progressive-web-apps-fc2dc4ad895 "Posts hors connexion avec applications web progressives"  
