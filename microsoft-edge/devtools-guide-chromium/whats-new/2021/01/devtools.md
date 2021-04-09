@@ -3,17 +3,17 @@ description: L’outil Nouveautés s’appelle à présent Welcome (Bienvenue), 
 title: Nouveautés de DevTools (Microsoft Edge89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 03/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: f04884c4022394ad96f1bd47236047d16ae5ccb9
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: d823408b40644585b885ad52201f7080bd542549
+ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439646"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "11481358"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -93,19 +93,19 @@ Dans l’outil **Éléments**, la nouvelle icône Flexbox (flex) vous permet d�
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="Superpositions Flexbox mises en évidence dans le volet Layout" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
-         **Superpositions Flexbox mises** en évidence dans le volet **Layout**  
+         **Superpositions Flexbox mises** en évidence dans le volet **Disposition**  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-### <a name="display-alignment-icons-and-gridlines-when-flexbox-layouts-change-using-css-properties"></a>Afficher les icônes d’alignement et le quadrillage lorsque les mises en page Flexbox changent à l’aide des propriétés CSS  
+### <a name="display-alignment-icons-and-visual-guides-when-flexbox-layouts-change-using-css-properties"></a>Afficher les icônes d’alignement et les guides visuels lorsque les dispositions de Flexbox changent à l’aide des propriétés CSS  
 
-<!--  Title: Display alignment icons and gridlines for changes to Flexbox layouts from CSS properties  -->  
+<!--  Title: Display alignment icons and visual guides for changes to Flexbox layouts from CSS properties  -->  
 <!--  Subtitle:  CSS autocomplete in the Styles tool now displays icons next to Flexbox properties to help you review the effect a property has on your Flexbox layout -->  
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-Lorsque vous modifiez des CSS pour votre mise en page Flexbox, le menu de remplissage automatique des CSS disponible dans le volet **Styles** affiche à présent des icônes utiles en regard des propriétés Flexbox concernées.  Pour essayer cette nouvelle fonctionnalité, ouvrez l’outil **Éléments**, puis sélectionnez un conteneur flex.  Ensuite, ajoutez ou modifiez une propriété sur ce conteneur dans le volet **Styles**.  
+Lorsque vous modifiez des CSS pour votre disposition Flexbox, le menu de remplissage automatique des CSS disponible dans le volet **Styles** affiche à présent des icônes utiles en regard des propriétés Flexbox concernées.  Pour essayer cette nouvelle fonctionnalité, ouvrez l’outil **Éléments**, puis sélectionnez un conteneur flex.  Ensuite, ajoutez ou modifiez une propriété sur ce conteneur dans le volet **Styles**.  
 
 :::row:::
    :::column span="":::
@@ -416,7 +416,7 @@ Pour activer cette expérience, accédez à [Paramètres][DevtoolsCustomizeIndex
 
 ## <a name="download-the-microsoft-edge-preview-channels"></a>Télécharger les canaux d’aperçu Microsoft Edge  
 
-Si vous utilisez Windows, Linux ou macOS, envisagez d’utiliser les [canaux de préversion de Microsoft Edge][MicrosoftEdgePreviewChannels] comme navigateur de développement par défaut.  Les canaux de préversion vous permettent d’accéder aux dernières fonctionnalités de DevTools.  
+Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'aperçu de Microsoft][MicrosoftEdgePreviewChannels] Edge comme navigateur de développement par défaut.  Les canaux de prévisualisation vous donnent accès aux dernières fonctionnalités de DevTools.  
 
 ## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Contacter l’équipe Microsoft Edge DevTools  
 
