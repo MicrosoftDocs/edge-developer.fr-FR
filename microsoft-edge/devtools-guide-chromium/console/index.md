@@ -1,145 +1,192 @@
 ---
-description: Les principales utilisations de la console Microsoft Edge DevTools sont la journalisation des messages et l’exécution de JavaScript.
-title: Présentation de la console
+description: Présentation de l'outil Console à l'intérieur des outils de développement Microsoft Edge.
+title: Utiliser la console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 496caa4d304d9511d4b1c341846f377899ba4597
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3f2f8c01a9bc9c4f40158f0959ba5b60e03bfb80
+ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399119"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "11483195"
 ---
-<!-- Copyright Kayce Basques 
+# <a name="use-the-console"></a><span data-ttu-id="452d4-104">Utiliser la console</span><span class="sxs-lookup"><span data-stu-id="452d4-104">Use the Console</span></span>  
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+<span data-ttu-id="452d4-105">**L'outil Console** de DevTools vous aide à effectuer plusieurs tâches.</span><span class="sxs-lookup"><span data-stu-id="452d4-105">The **Console** tool of the DevTools helps you with several tasks.</span></span>  <span data-ttu-id="452d4-106">La liste suivante inclut certaines des tâches.</span><span class="sxs-lookup"><span data-stu-id="452d4-106">The following list includes some of the tasks.</span></span>  
 
-       https://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.  -->
-
-# <a name="console-overview"></a><span data-ttu-id="db490-104">Présentation de la console</span><span class="sxs-lookup"><span data-stu-id="db490-104">Console overview</span></span>  
-
-  
-
-<span data-ttu-id="db490-105">Cette page explique comment la console Microsoft Edge DevTools facilite le développement de pages web.</span><span class="sxs-lookup"><span data-stu-id="db490-105">This page explains how the Microsoft Edge DevTools Console makes it easier to develop web pages.</span></span>  <span data-ttu-id="db490-106">La **console a** 2 utilisations principales : l’affichage des messages [enregistrés](#viewing-logged-messages) et [l’exécution de JavaScript](#running-javascript).</span><span class="sxs-lookup"><span data-stu-id="db490-106">The **Console** has 2 main uses: [viewing logged messages](#viewing-logged-messages) and [running JavaScript](#running-javascript).</span></span>  
-
-## <a name="viewing-logged-messages"></a><span data-ttu-id="db490-107">Affichage des messages enregistrés</span><span class="sxs-lookup"><span data-stu-id="db490-107">Viewing logged messages</span></span>  
-
-<span data-ttu-id="db490-108">Les développeurs web enregistrent souvent des messages dans la console pour s’assurer que leur JavaScript fonctionne comme prévu.</span><span class="sxs-lookup"><span data-stu-id="db490-108">Web developers often log messages to the Console to make sure that their JavaScript is working as expected.</span></span>  <span data-ttu-id="db490-109">Pour enregistrer un message, vous insérez une expression comme `console.log('Hello, Console!')` dans votre JavaScript.</span><span class="sxs-lookup"><span data-stu-id="db490-109">To log a message, you insert an expression like `console.log('Hello, Console!')` into your JavaScript.</span></span>  <span data-ttu-id="db490-110">Lorsque le navigateur exécute votre JavaScript et traite une expression comme celle-ci, le navigateur enregistre le message dans la **console.**</span><span class="sxs-lookup"><span data-stu-id="db490-110">When the browser runs your JavaScript and processes an expression like it, the browser logs the message to the **Console**.</span></span>  
+*   <span data-ttu-id="452d4-107">Découvrez pourquoi quelque chose ne fonctionne pas dans le projet actuel et [recherchez les problèmes.][DevtoolsConsoleConsoleDebugJavascript]</span><span class="sxs-lookup"><span data-stu-id="452d4-107">Find out why something isn't working in the current project and [track down problems][DevtoolsConsoleConsoleDebugJavascript].</span></span>  
+*   <span data-ttu-id="452d4-108">[Obtenez des informations sur le projet web dans][DevtoolsConsoleConsoleFilters] le navigateur en tant que messages de journal.</span><span class="sxs-lookup"><span data-stu-id="452d4-108">[Get information about the web project][DevtoolsConsoleConsoleFilters] in the browser as log messages.</span></span>  
+*   <span data-ttu-id="452d4-109">[Journal des informations][DevtoolsConsoleConsoleLog] dans les scripts à des fins de débogage.</span><span class="sxs-lookup"><span data-stu-id="452d4-109">[Log information][DevtoolsConsoleConsoleLog] in scripts for debugging purposes.</span></span>  
+*   <span data-ttu-id="452d4-110">[Essayez les expressions JavaScript][DevtoolsConsoleConsoleJavascript] en direct dans [un environnement REPL.][WikiReadEvalPrintLoop]</span><span class="sxs-lookup"><span data-stu-id="452d4-110">[Try JavaScript expressions][DevtoolsConsoleConsoleJavascript] live in a [REPL][WikiReadEvalPrintLoop] environment.</span></span>  
+*   <span data-ttu-id="452d4-111">[Interagir avec le projet web dans le navigateur à l'aide][DevtoolsConsoleConsoleDomInteraction] de JavaScript.</span><span class="sxs-lookup"><span data-stu-id="452d4-111">[Interact with the web project in the browser][DevtoolsConsoleConsoleDomInteraction] using JavaScript.</span></span>  
+    
+<span data-ttu-id="452d4-112">La **console est** un excellent outil complémentaire à utiliser avec d'autres outils.</span><span class="sxs-lookup"><span data-stu-id="452d4-112">The **Console** is a great companion tool to use with others tools.</span></span>  <span data-ttu-id="452d4-113">La **console offre** un moyen puissant de scripter des fonctionnalités, d'inspecter et de manipuler la page web actuelle à l'aide de JavaScript.</span><span class="sxs-lookup"><span data-stu-id="452d4-113">The **Console** provides a powerful way to script functionality, inspect, and manipulate the current webpage using JavaScript.</span></span>  
 
 :::row:::
    :::column span="":::
-      <span data-ttu-id="db490-111">Code HTML et JavaScript pour la page.</span><span class="sxs-lookup"><span data-stu-id="db490-111">The HTML and JavaScript for the page.</span></span>  
-      
-      ```html
-      <!doctype html>
-      <html>
-          <head>
-              <title>Console Demo</title>
-          </head>
-          <body>
-              <h1>Hello, World!</h1>
-              <script>
-                  console.log('Loading!');
-                  const h1 = document.querySelector('h1');
-                  console.log(h1.textContent);
-                  console.assert(document.querySelector('h2'), 'h2 not found!');
-                  const artists = [
-                      { first: 'René', last: 'Magritte' },
-                      { first: 'Chaim', last: 'Soutine' },
-                        
-                  ];
-                  console.table(artists);
-                  setTimeout(() => {
-                      h1.textContent = 'Hello, Console!';
-                      console.log(h1.textContent);
-                  }, 3000);
-              </script>
-          </body>
-      </html>
-      ```  
+      :::image type="complex" source="../media/console-intro-console-main.msft.png" alt-text="Outil Console ouvert dans le panneau supérieur" lightbox="../media/console-intro-console-main.msft.png":::
+         <span data-ttu-id="452d4-115">Outil **Console** ouvert dans le panneau supérieur</span><span class="sxs-lookup"><span data-stu-id="452d4-115">The **Console** tool open in the upper panel</span></span>  
+      :::image-end:::  
    :::column-end:::
    :::column span="":::
-      <span data-ttu-id="db490-112">Dans la figure suivante, la **console affiche** les résultats du chargement de la page et de l’attente de 3 secondes.</span><span class="sxs-lookup"><span data-stu-id="db490-112">In the following figure, the **Console** displays the results of loading the page and waiting 3 seconds.</span></span>  
-      
-      :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="Panneau console" lightbox="../media/console-console-demo.msft.png":::
-         <span data-ttu-id="db490-114">**L’outil Console**</span><span class="sxs-lookup"><span data-stu-id="db490-114">The **Console** tool</span></span>  
+      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="Console dans le panneau inférieur avec l'outil Éléments ouvert au-dessus" lightbox="../media/console-intro-console-panel.msft.png":::
+         <span data-ttu-id="452d4-117">**Console dans** le panneau inférieur avec l'outil **Éléments** ouvert au-dessus</span><span class="sxs-lookup"><span data-stu-id="452d4-117">**Console** in the lower panel with the **Elements** tool open above it</span></span>  
       :::image-end:::  
-      
-      <span data-ttu-id="db490-115">Essayez de déterminer les lignes de code à l’origine du journal des messages par le navigateur.</span><span class="sxs-lookup"><span data-stu-id="db490-115">Try to determine which lines of code caused the browser to log the messages.</span></span>  
    :::column-end:::
 :::row-end:::  
 
-<span data-ttu-id="db490-116">Les développeurs web enregistrent les messages pour les 2 raisons générales suivantes.</span><span class="sxs-lookup"><span data-stu-id="db490-116">Web developers log messages for the following 2 general reasons.</span></span>  
+<span data-ttu-id="452d4-118">Le moyen le plus rapide d'ouvrir directement la **console** consiste à sélectionner `Control` + `Shift` + `J` \(Windows, Linux\) ou `Command` + `Option` + `J` \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="452d4-118">The fastest way to directly open the **Console** is to select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).</span></span>  
 
-*   <span data-ttu-id="db490-117">Assurez-vous que le code s’exécute dans le bon ordre.</span><span class="sxs-lookup"><span data-stu-id="db490-117">Making sure that code is running in the right order.</span></span>  
-*   <span data-ttu-id="db490-118">Inspection des valeurs des variables à un moment donné.</span><span class="sxs-lookup"><span data-stu-id="db490-118">Inspecting the values of variables at a certain moment in time.</span></span>  
+## <a name="error-reports-and-console"></a><span data-ttu-id="452d4-119">Rapports d'erreur et console</span><span class="sxs-lookup"><span data-stu-id="452d4-119">Error reports and Console</span></span>  
 
-<span data-ttu-id="db490-119">Pour obtenir une expérience pratique de la journalisation, accédez à [Démarrer avec la journalisation des messages.][DevtoolsConsoleLoggingMessages]</span><span class="sxs-lookup"><span data-stu-id="db490-119">To get hands-on experience with logging, navigate to [Get Started With Logging Messages][DevtoolsConsoleLoggingMessages].</span></span>  <span data-ttu-id="db490-120">Pour parcourir la liste complète des `console` méthodes, accédez à la référence de [l’API console.][DevToolsConsoleAPI]</span><span class="sxs-lookup"><span data-stu-id="db490-120">To browse the full list of `console` methods, navigate to the [Console API Reference][DevToolsConsoleAPI].</span></span>  <span data-ttu-id="db490-121">La principale différence entre les méthodes est la façon dont les données enregistrées sont affichées.</span><span class="sxs-lookup"><span data-stu-id="db490-121">The main difference between the methods is how the data being logged is displayed.</span></span>  
+<span data-ttu-id="452d4-120">**La console** est l'endroit par défaut où les erreurs de connectivité et JavaScript sont signalées.</span><span class="sxs-lookup"><span data-stu-id="452d4-120">**Console** is the default place where JavaScript and connectivity errors are reported.</span></span>  <span data-ttu-id="452d4-121">Si des erreurs se produisent, un bouton s'affiche à côté de l'icône **Paramètres** dans DevTools qui fournit le nombre d'erreurs et d'avertissements.</span><span class="sxs-lookup"><span data-stu-id="452d4-121">If any errors occur, a button displays next to the **Settings** icon in DevTools that provides the number of errors and warnings.</span></span>  <span data-ttu-id="452d4-122">Choisissez-la pour ouvrir **la console** et afficher le problème.</span><span class="sxs-lookup"><span data-stu-id="452d4-122">Choose it to open the **Console** and display the problem.</span></span>  <span data-ttu-id="452d4-123">Pour plus d'informations, accédez [aux erreurs de débogage signalées dans la console.][DevtoolsConsoleConsoleDebugJavascript]</span><span class="sxs-lookup"><span data-stu-id="452d4-123">For more information, navigate to [Debug errors reported in Console][DevtoolsConsoleConsoleDebugJavascript].</span></span>  
 
-## <a name="running-javascript"></a><span data-ttu-id="db490-122">Exécution de JavaScript</span><span class="sxs-lookup"><span data-stu-id="db490-122">Running JavaScript</span></span>  
+:::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools fournit des informations détaillées sur l'erreur dans la console" lightbox="../media/console-debug-displays-error.msft.png":::
+   <span data-ttu-id="452d4-125">DevTools fournit des informations détaillées sur l'erreur dans la **console**</span><span class="sxs-lookup"><span data-stu-id="452d4-125">DevTools gives detailed information about the error in the **Console**</span></span>  
+:::image-end:::  
 
-<span data-ttu-id="db490-123">La **console** est également un [rePL][WikiREPLoop].</span><span class="sxs-lookup"><span data-stu-id="db490-123">The **Console** is also a [REPL][WikiREPLoop].</span></span>  <span data-ttu-id="db490-124">Vous pouvez exécuter JavaScript dans la **console pour** interagir avec la page en cours d’inspection.</span><span class="sxs-lookup"><span data-stu-id="db490-124">You may run JavaScript in the **Console** to interact with the page being inspected.</span></span>   
+## <a name="inspect-and-filter-information-on-the-current-webpage"></a><span data-ttu-id="452d4-126">Inspecter et filtrer des informations sur la page web actuelle</span><span class="sxs-lookup"><span data-stu-id="452d4-126">Inspect and filter information on the current webpage</span></span>  
 
-:::row:::
-   :::column span="":::
-      <span data-ttu-id="db490-125">Dans la figure suivante, la **console est** affichée à côté de la page d’accueil de DevTools.</span><span class="sxs-lookup"><span data-stu-id="db490-125">In the following figure, the **Console** is shown next to the DevTools homepage.</span></span>  
-      
-      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="Outil console en de côté de la page d’accueil de DevTools" lightbox="../media/devtools-console-empty.msft.png":::
-         <span data-ttu-id="db490-127">**L’outil Console** en de côté de la page d’accueil de DevTools</span><span class="sxs-lookup"><span data-stu-id="db490-127">The **Console** tool next to the DevTools homepage</span></span>  
-      :::image-end:::  
-   :::column-end:::
-   :::column span="":::
-      <span data-ttu-id="db490-128">Dans la figure suivante, la même page s’affiche après avoir utilisé la **console** pour modifier le titre supérieur de la page.</span><span class="sxs-lookup"><span data-stu-id="db490-128">In the following figure, the same page is shown after using the **Console** to change the top heading of the page.</span></span>
-      
-      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Utiliser la console pour modifier l’en-tête supérieur de la page" lightbox="../media/devtools-console-h1-changed.msft.png":::
-         <span data-ttu-id="db490-130">Utiliser la **console pour** modifier l’en-tête supérieur de la page</span><span class="sxs-lookup"><span data-stu-id="db490-130">Use the **Console** to change the top heading of the page</span></span>  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::
+<span data-ttu-id="452d4-127">Lorsque vous ouvrez de DevTools sur une page web, vous risquez d'afficher une suragée d'informations consignées dans la **console.**</span><span class="sxs-lookup"><span data-stu-id="452d4-127">When you open the DevTools on a webpage, you're likely to display a deluge of information logged to the **Console**.</span></span>  <span data-ttu-id="452d4-128">La quantité d'informations devient un problème lorsque vous devez identifier des informations importantes.</span><span class="sxs-lookup"><span data-stu-id="452d4-128">The amount of information becomes a problem when you need to identify important information.</span></span>  <span data-ttu-id="452d4-129">Pour afficher les informations importantes qui doivent être prises en compte, utilisez l'outil [Problèmes][DevtoolsIssuesIndex] dans DevTools.</span><span class="sxs-lookup"><span data-stu-id="452d4-129">To view the important information that needs action, use the [Issues][DevtoolsIssuesIndex] tool in DevTools.</span></span>  <span data-ttu-id="452d4-130">Une grande partie du bruit reste, c'est pourquoi il est bon de connaître les [options][DevtoolsConsoleConsoleFilters] de journal automatisé et de filtre dans la **console.**</span><span class="sxs-lookup"><span data-stu-id="452d4-130">Much of the noise remains, which is why it's a good idea to know about the [automated log and filter options][DevtoolsConsoleConsoleFilters] in the **Console**.</span></span>  
 
-<span data-ttu-id="db490-131">La modification de la page à partir de la **console** est possible, car la **console** dispose d’un accès complet à [la fenêtre][MDNWindow] de la page.</span><span class="sxs-lookup"><span data-stu-id="db490-131">Modifying the page from the **Console** is possible because the **Console** has full access to the [window][MDNWindow] of the page.</span></span>  <span data-ttu-id="db490-132">DevTools a quelques fonctions pratiques qui facilitent l’inspection d’une page.</span><span class="sxs-lookup"><span data-stu-id="db490-132">DevTools has a few convenience functions that make it easier to inspect a page.</span></span>  <span data-ttu-id="db490-133">Par exemple, supposons que votre JavaScript contient une fonction appelée `hideModal` .</span><span class="sxs-lookup"><span data-stu-id="db490-133">For example, suppose that your JavaScript contains a function called `hideModal`.</span></span>  <span data-ttu-id="db490-134">`debug(hideModal)`L’exécution interrompt votre code sur la première ligne `hideModal` de la prochaine exécution.</span><span class="sxs-lookup"><span data-stu-id="db490-134">Running `debug(hideModal)` pauses your code on the first line of `hideModal` the next time that you run it.</span></span>  <span data-ttu-id="db490-135">Pour plus d’informations sur la liste complète des fonctions utilitaires, accédez à référence de [l’API des utilitaires de console.][DevtoolsConsoleUtilitiesDebug]</span><span class="sxs-lookup"><span data-stu-id="db490-135">For more information about the full list of utility functions, navigate to [Console Utilities API Reference][DevtoolsConsoleUtilitiesDebug].</span></span>  
+:::image type="complex" source="../media/console-intro-noise.msft.png" alt-text="DevTools avec une console pleine de messages" lightbox="../media/console-intro-noise.msft.png":::
+   <span data-ttu-id="452d4-132">DevTools avec une **console pleine** de messages</span><span class="sxs-lookup"><span data-stu-id="452d4-132">DevTools with a **Console** full of messages</span></span>  
+:::image-end:::  
 
-<span data-ttu-id="db490-136">Lorsque vous exécutez JavaScript, vous n’avez pas besoin d’interagir avec la page.</span><span class="sxs-lookup"><span data-stu-id="db490-136">When you run JavaScript you do not have to interact with the page.</span></span>  <span data-ttu-id="db490-137">Vous pouvez utiliser la **console pour** tester un nouveau code non lié à la page.</span><span class="sxs-lookup"><span data-stu-id="db490-137">You may use the **Console** to try out new code unrelated to the page.</span></span>  <span data-ttu-id="db490-138">Par exemple, supposons que vous venons d’apprendre la méthode intégrée de tableau JavaScript [map()][MDNMap] et que vous souhaitez l’expérimenter.</span><span class="sxs-lookup"><span data-stu-id="db490-138">For example, suppose you just learned about the built-in JavaScript Array [map()][MDNMap] method, and you want to experiment with it.</span></span>  
-<span data-ttu-id="db490-139">La **console** est un bon endroit pour tester la fonction.</span><span class="sxs-lookup"><span data-stu-id="db490-139">The **Console** is a good place to try out the function.</span></span>  
+## <a name="log-information-to-display-in-the-console"></a><span data-ttu-id="452d4-133">Informations de journal à afficher dans la console</span><span class="sxs-lookup"><span data-stu-id="452d4-133">Log information to display in the Console</span></span>  
 
-<span data-ttu-id="db490-140">Pour plus d’expérience pratique avec l’exécution de JavaScript dans la **console,** accédez à Démarrer [avec l’exécution de JavaScript][DevtoolsConsoleRunningJavascript].</span><span class="sxs-lookup"><span data-stu-id="db490-140">For more hands-on experience with running JavaScript in the **Console**, navigate to [Get Started With Running JavaScript][DevtoolsConsoleRunningJavascript].</span></span>  
+<span data-ttu-id="452d4-134">Le cas d'utilisation le plus populaire de la console est la **journalisation** des informations de vos scripts à l'aide de la méthode ou d'autres `console.log()` méthodes similaires.</span><span class="sxs-lookup"><span data-stu-id="452d4-134">The most popular use case for the **Console** is logging information from your scripts using the `console.log()` method or other similar methods.</span></span>  <span data-ttu-id="452d4-135">Pour l'essayer, complétez les actions suivantes.</span><span class="sxs-lookup"><span data-stu-id="452d4-135">To try it, complete the following actions.</span></span>  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="db490-141">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="db490-141">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+1.  <span data-ttu-id="452d4-136">Pour ouvrir **console,** `Control` + `Shift` + `J` sélectionnez \(Windows, Linux\) ou `Command` + `Option` + `J` \(macOS\).</span><span class="sxs-lookup"><span data-stu-id="452d4-136">To open **Console**, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).</span></span>  
+1.  <span data-ttu-id="452d4-137">Accédez aux exemples de messages de [la console : journal, informations,][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]erreur et avertissement, ou copiez et exécutez l'extrait de code suivant dans la **console.**</span><span class="sxs-lookup"><span data-stu-id="452d4-137">Navigate to [Console messages examples: log, info, error and warn][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml], or copy and run the following code snippet in the **Console**.</span></span>  
+    
+    ```javascript
+    console.log('This is a log message');
+    console.info('This is some information'); 
+    console.error('This is an error');
+    console.warn('This is a warning');
+    console.log(document.body.getBoundingClientRect());
+    console.table(document.body.getBoundingClientRect());
+    let technologies = ["HTML", "CSS", "SVG", "ECMAScript"];
+    console.groupCollapsed('Technolgies');
+    technologies.forEach(tech => {console.info(tech);})
+    console.groupEnd('Technolgies');
+    ```  
+    
+1.  <span data-ttu-id="452d4-138">La **console** affiche les résultats.</span><span class="sxs-lookup"><span data-stu-id="452d4-138">The **Console** displays the results.</span></span>  
+    
+    :::image type="complex" source="../media/console-intro-logging.msft.png" alt-text="Console pleine de messages provoqués par du code de démonstration" lightbox="../media/console-intro-logging.msft.png":::
+       <span data-ttu-id="452d4-140">**Console pleine** de messages provoqués par du code de démonstration</span><span class="sxs-lookup"><span data-stu-id="452d4-140">**Console** full of messages caused by demo code</span></span>  
+    :::image-end:::  
+    
+<span data-ttu-id="452d4-141">De nombreuses méthodes utiles sont disponibles lorsque vous travaillez avec la **console.**</span><span class="sxs-lookup"><span data-stu-id="452d4-141">Many useful methods are available when you work with the **Console**.</span></span>  <span data-ttu-id="452d4-142">Pour plus d'informations, [accédez à Journal des messages dans l'outil Console.][DevtoolsConsoleConsoleLog]</span><span class="sxs-lookup"><span data-stu-id="452d4-142">For more information, navigate to [Log messages in the Console tool][DevtoolsConsoleConsoleLog].</span></span>  
+
+## <a name="try-your-javascript-live-in-the-console"></a><span data-ttu-id="452d4-143">Essayez votre javaScript en direct dans la console</span><span class="sxs-lookup"><span data-stu-id="452d4-143">Try your JavaScript live in the Console</span></span>  
+
+<span data-ttu-id="452d4-144">La **console n'est** pas seulement un endroit où enregistrer des informations.</span><span class="sxs-lookup"><span data-stu-id="452d4-144">The **Console** isn't only a place to log information.</span></span>  <span data-ttu-id="452d4-145">La **console** est un [environnement REPL.][WikiReadEvalPrintLoop]</span><span class="sxs-lookup"><span data-stu-id="452d4-145">The **Console** is a [REPL][WikiReadEvalPrintLoop] environment.</span></span>  <span data-ttu-id="452d4-146">Lorsque vous écrivez du code JavaScript dans la **console,** le code s'exécute immédiatement.</span><span class="sxs-lookup"><span data-stu-id="452d4-146">When you write any JavaScript in the **Console**, the code runs immediately.</span></span>  <span data-ttu-id="452d4-147">Il peut s'avérer utile de tester certaines nouvelles fonctionnalités JavaScript ou d'y faire des calculs rapides.</span><span class="sxs-lookup"><span data-stu-id="452d4-147">You may find it useful to test some new JavaScript features or to do some quick calculations.</span></span>  <span data-ttu-id="452d4-148">En outre, vous obtenez toutes les fonctionnalités que vous attendez d'un environnement d'édition moderne, telles que lacompletion automatique, la mise en surbrillance de la syntaxe et l'historique.</span><span class="sxs-lookup"><span data-stu-id="452d4-148">Also, you get all of the features you expect from a modern editing environment, such as autocompletion, syntax highlighting, and history.</span></span>  <span data-ttu-id="452d4-149">Pour l'essayer, complétez les actions suivantes.</span><span class="sxs-lookup"><span data-stu-id="452d4-149">To try it, complete the following actions.</span></span>  
+
+1.  <span data-ttu-id="452d4-150">Accédez à la **console.**</span><span class="sxs-lookup"><span data-stu-id="452d4-150">Navigate to the **Console**.</span></span>  
+1.  <span data-ttu-id="452d4-151">Tapez `2 + 2`.</span><span class="sxs-lookup"><span data-stu-id="452d4-151">Type `2 + 2`.</span></span>  
+    
+<span data-ttu-id="452d4-152">La **console** affiche le résultat `4` sur la ligne suivante.</span><span class="sxs-lookup"><span data-stu-id="452d4-152">The **Console** displays the result `4` on the following line.</span></span>  <span data-ttu-id="452d4-153">Cette **fonctionnalité d'évaluation** est utile pour déboguer et vérifier que vous n'avez pas fait d'erreurs dans votre code.</span><span class="sxs-lookup"><span data-stu-id="452d4-153">This **Eager evaluation** feature is useful to debug and verify that you aren't making mistakes in your code.</span></span>  
+
+:::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="La console affiche le résultat de 2 + 2 en direct lorsque vous le tapez" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
+   <span data-ttu-id="452d4-155">La **console** affiche le résultat de la commande `2 + 2` live à mesure que vous la tapez.</span><span class="sxs-lookup"><span data-stu-id="452d4-155">The **Console** displays the result of `2 + 2` live as you type it</span></span>  
+:::image-end:::  
+
+<span data-ttu-id="452d4-156">Pour exécuter l'expression JavaScript dans la **console** et éventuellement afficher un résultat, sélectionnez `Enter` .</span><span class="sxs-lookup"><span data-stu-id="452d4-156">To run the JavaScript expression in the **Console** and optionally display a result, select `Enter`.</span></span>  <span data-ttu-id="452d4-157">Ensuite, vous pouvez écrire le code JavaScript suivant à exécuter dans la **console.**</span><span class="sxs-lookup"><span data-stu-id="452d4-157">Then, you may write the next JavaScript code to run in the **Console**.</span></span>  
+
+:::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="Exécuter plusieurs lignes de code JavaScript successivement" lightbox="../media/console-javascript-several-expressions.msft.png":::
+   <span data-ttu-id="452d4-159">Exécuter plusieurs lignes de code JavaScript successivement</span><span class="sxs-lookup"><span data-stu-id="452d4-159">Run several lines of JavaScript code in succession</span></span>  
+:::image-end:::  
+
+<span data-ttu-id="452d4-160">Par défaut, vous exécutez du code JavaScript sur une seule ligne.</span><span class="sxs-lookup"><span data-stu-id="452d4-160">By default, you run JavaScript code on a single line.</span></span>  <span data-ttu-id="452d4-161">Pour exécuter une ligne, tapez votre JavaScript, puis sélectionnez `Enter` .</span><span class="sxs-lookup"><span data-stu-id="452d4-161">To run a line, type your JavaScript and then select `Enter`.</span></span>  <span data-ttu-id="452d4-162">Pour contourner la limitation d'une seule ligne, sélectionnez `Shift` + `Enter` plutôt . `Enter`</span><span class="sxs-lookup"><span data-stu-id="452d4-162">To work around the single-line limitation, select `Shift`+`Enter` instead of `Enter`.</span></span>  <span data-ttu-id="452d4-163">Comme pour d'autres expériences de ligne de commande, pour accéder à vos commandes JavaScript précédentes, sélectionnez `Arrow-Up` .</span><span class="sxs-lookup"><span data-stu-id="452d4-163">Similar to other command-line experiences, to access your previous JavaScript commands, select `Arrow-Up`.</span></span>  <span data-ttu-id="452d4-164">La fonctionnalité decompletion automatique de la **console** est un excellent moyen d'en savoir plus sur les méthodes peu familières.</span><span class="sxs-lookup"><span data-stu-id="452d4-164">The autocompletion feature of the **Console** is a great way to learn about unfamiliar methods.</span></span>  <span data-ttu-id="452d4-165">Pour l'essayer, complétez les actions suivantes.</span><span class="sxs-lookup"><span data-stu-id="452d4-165">To try it, complete the following actions.</span></span>  
+
+1.  <span data-ttu-id="452d4-166">Ouvrez la **console.**</span><span class="sxs-lookup"><span data-stu-id="452d4-166">Open the **Console**.</span></span>  
+1.  <span data-ttu-id="452d4-167">Tapez `doc`.</span><span class="sxs-lookup"><span data-stu-id="452d4-167">Type `doc`.</span></span>  
+1.  <span data-ttu-id="452d4-168">Choisissez `document` dans le menu déroulant.</span><span class="sxs-lookup"><span data-stu-id="452d4-168">Choose `document` from the dropdown menu.</span></span>  
+1.  <span data-ttu-id="452d4-169">Sélectionnez `tab` la clé pour la sélectionner.</span><span class="sxs-lookup"><span data-stu-id="452d4-169">Select the `tab` key to choose it.</span></span>  
+1.  <span data-ttu-id="452d4-170">Tapez `.bo`.</span><span class="sxs-lookup"><span data-stu-id="452d4-170">Type `.bo`.</span></span>  
+1.  <span data-ttu-id="452d4-171">Sélectionnez `tab` pour obtenir `document.body` .</span><span class="sxs-lookup"><span data-stu-id="452d4-171">Select `tab` to get `document.body`.</span></span>  
+1.  <span data-ttu-id="452d4-172">Tapez un autre pour afficher la liste complète des propriétés et méthodes `.` disponibles dans le corps de la page web actuelle.</span><span class="sxs-lookup"><span data-stu-id="452d4-172">Type another `.` to display the complete list of properties and methods available on the body of the current webpage.</span></span>  
+    
+<span data-ttu-id="452d4-173">Pour plus d'informations sur toutes les façons de travailler avec **console,** accédez à [Console en tant qu'environnement JavaScript.][DevtoolsConsoleConsoleJavascript]</span><span class="sxs-lookup"><span data-stu-id="452d4-173">For more information about all the ways to work with **Console**, navigate to [Console as a JavaScript environment][DevtoolsConsoleConsoleJavascript].</span></span>  
+
+:::image type="complex" source="../media/console-javascript-autocomplete.msft.png" alt-text="Autocompletion de console des expressions JavaScript" lightbox="../media/console-javascript-autocomplete.msft.png":::
+   <span data-ttu-id="452d4-175">**Autocompletion** de console des expressions JavaScript</span><span class="sxs-lookup"><span data-stu-id="452d4-175">**Console** autocompletion of JavaScript expressions</span></span>  
+:::image-end:::  
+
+## <a name="interact-with-the-current-webpage-in-the-browser"></a><span data-ttu-id="452d4-176">Interagir avec la page web actuelle dans le navigateur</span><span class="sxs-lookup"><span data-stu-id="452d4-176">Interact with the current webpage in the browser</span></span>  
+
+<span data-ttu-id="452d4-177">La **console** a accès à [l'objet Window][MdnDocsWebApiWindow] du navigateur.</span><span class="sxs-lookup"><span data-stu-id="452d4-177">The **Console** has access to the [Window][MdnDocsWebApiWindow] object of the browser.</span></span>  <span data-ttu-id="452d4-178">Vous pouvez écrire des scripts qui interagissent avec la page web actuelle.</span><span class="sxs-lookup"><span data-stu-id="452d4-178">You may write scripts that interact with the current webpage.</span></span>  <span data-ttu-id="452d4-179">Pour l'essayer, complétez les actions suivantes.</span><span class="sxs-lookup"><span data-stu-id="452d4-179">To try it, complete the following actions.</span></span>  
+
+1.  <span data-ttu-id="452d4-180">Ouvrez la **console.**</span><span class="sxs-lookup"><span data-stu-id="452d4-180">Open the **Console**.</span></span>  
+1.  <span data-ttu-id="452d4-181">Copiez et collez l'extrait de code suivant.</span><span class="sxs-lookup"><span data-stu-id="452d4-181">Copy and paste the following code snippet.</span></span>  
+    
+    ```javascript
+    document.querySelector('h1').innerHTML
+    ```  
+    
+:::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="Copier le contenu de titre supérieur (h1) à partir du DOM et afficher dans la console" lightbox="../media/console-intro-reading-DOM.msft.png":::
+   <span data-ttu-id="452d4-183">Copier le contenu de titre supérieur \( \) à partir du DOM et afficher `h1` dans la **console**</span><span class="sxs-lookup"><span data-stu-id="452d4-183">Copy the top heading \(`h1`\) content from the DOM and display in the **Console**</span></span>  
+:::image-end:::  
+
+<span data-ttu-id="452d4-184">Au lieu de lire uniquement la page web, vous pouvez également la modifier.</span><span class="sxs-lookup"><span data-stu-id="452d4-184">Instead of only reading from the webpage, you may also change it.</span></span>  <span data-ttu-id="452d4-185">Pour l'essayer, complétez les actions suivantes.</span><span class="sxs-lookup"><span data-stu-id="452d4-185">To try it, complete the following actions.</span></span>  
+
+1.  <span data-ttu-id="452d4-186">Ouvrez la **console.**</span><span class="sxs-lookup"><span data-stu-id="452d4-186">Open the **Console**.</span></span>  
+1.  <span data-ttu-id="452d4-187">Copiez et collez l'extrait de code suivant.</span><span class="sxs-lookup"><span data-stu-id="452d4-187">Copy and paste the following code snippet.</span></span>  
+    
+    ```javascript
+    document.querySelector('h1').innerHTML = 'Rocking the Console';
+    ```  
+    
+:::image type="complex" source="../media/console-intro-wrtiting-DOM.msft.png" alt-text="Écrire du texte dans le DOM de la console" lightbox="../media/console-intro-wrtiting-DOM.msft.png":::
+   <span data-ttu-id="452d4-189">Écrire du texte dans le DOM de la **console**</span><span class="sxs-lookup"><span data-stu-id="452d4-189">Write text to the DOM in the **Console**</span></span>  
+:::image-end:::  
+
+<span data-ttu-id="452d4-190">Vous avez modifié le titre principal de la page web en **Basculement de la console.**</span><span class="sxs-lookup"><span data-stu-id="452d4-190">You changed the main heading of the webpage to **Rocking the Console**.</span></span>  <span data-ttu-id="452d4-191">Les **méthodes de l'utilitaire** console vous rendent facile d'accéder à la page web actuelle et de la manipuler.</span><span class="sxs-lookup"><span data-stu-id="452d4-191">The **Console Utility** methods make it easy to access and manipulate the current webpage.</span></span>  <span data-ttu-id="452d4-192">Pour plus d'informations, accédez à [la référence de l'API des utilitaires de console.][DevtoolsConsoleUtilities]</span><span class="sxs-lookup"><span data-stu-id="452d4-192">For more information, navigate to [Console Utilities API reference][DevtoolsConsoleUtilities].</span></span>  <span data-ttu-id="452d4-193">Par exemple, pour ajouter une bordure verte autour de tous les liens de la page web actuelle, complétez les actions suivantes.</span><span class="sxs-lookup"><span data-stu-id="452d4-193">For example, to add a green border around all the links in the current webpage, complete the following actions.</span></span>  
+
+1.  <span data-ttu-id="452d4-194">Ouvrez la **console.**</span><span class="sxs-lookup"><span data-stu-id="452d4-194">Open the **Console**.</span></span>  
+1.  <span data-ttu-id="452d4-195">Copiez et collez l'extrait de code suivant.</span><span class="sxs-lookup"><span data-stu-id="452d4-195">Copy and paste the following code snippet.</span></span>  
+    
+    ```javascript
+    $$('a').forEach(a => a.style.border='1px solid lime');
+    ```  
+    
+
+:::image type="complex" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipuler une sélection d'éléments à l'aide de la console" lightbox="../media/console-intro-changing-styles.msft.png":::
+    <span data-ttu-id="452d4-197">Manipuler une sélection d'éléments à l'aide de la **console**</span><span class="sxs-lookup"><span data-stu-id="452d4-197">Manipulate a selection of elements using the **Console**</span></span>  
+:::image-end:::  
+
+<span data-ttu-id="452d4-198">Pour plus d'informations sur l'utilisation du DOM, accédez à [Utiliser la console pour interagir avec le DOM.][DevtoolsConsoleConsoleDomInteraction]</span><span class="sxs-lookup"><span data-stu-id="452d4-198">For more information about working with the DOM, navigate to [Use the Console to interact with the DOM][DevtoolsConsoleConsoleDomInteraction].</span></span>  
+
+## <a name="learn-more-about-console"></a><span data-ttu-id="452d4-199">En savoir plus sur console</span><span class="sxs-lookup"><span data-stu-id="452d4-199">Learn more about Console</span></span>  
+
+<span data-ttu-id="452d4-200">Pour plus d'informations sur la **console,** accédez à la référence de [console,][DevtoolsConsoleReference]à la référence d'API des utilitaires de [console][DevtoolsConsoleUtilities]et à la référence de [l'API de console.][DevtoolsConsoleApi]</span><span class="sxs-lookup"><span data-stu-id="452d4-200">For more information about the **Console**, navigate to [Console reference][DevtoolsConsoleReference], [Console Utilities API reference][DevtoolsConsoleUtilities], and [Console API reference][DevtoolsConsoleApi].</span></span>  
+
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="452d4-201">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="452d4-201">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevToolsConsoleAPI]: ./api.md "Console API Reference | Documents Microsoft"  
-[DevtoolsConsoleLoggingMessages]: ./log.md "Commencer à journalisation des messages dans la console | Documents Microsoft"  
-[DevtoolsConsoleRunningJavascript]: ./javascript.md "Commencer à utiliser JavaScript dans la console | Documents Microsoft"  
-[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "debug - Console Utilities API Reference | Documents Microsoft"  
+[DevtoolsConsoleApi]: ./api.md "Référence de l'API de console | Documents Microsoft"  
+[DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "Erreurs de débogage signalées dans console | Documents Microsoft"  
+[DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "Utiliser la console pour interagir avec la console DOM | Documents Microsoft" 
+[DevtoolsConsoleConsoleFilters]: ./console-filters.md "Filtrer les messages de la console | Documents Microsoft"  
+[DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console en tant qu'environnement JavaScript | Documents Microsoft"  
+[DevtoolsConsoleConsoleLog]: ./console-log.md "Journal des messages dans l'outil console | Documents Microsoft"  
+[DevtoolsConsoleReference]: ./reference.md "Référence de la console | Documents Microsoft"  
+[DevtoolsConsoleUtilities]: ./utilities.md "Référence de l'API des utilitaires de console | Documents Microsoft"  
 
-[MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array.prototype.map() | MDN"  
-[MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "Fenêtre | MDN"  
+[DevtoolsIssuesIndex]: ../issues/index.md "Recherchez et corrigez les problèmes liés à l’outil des problèmes de Microsoft Edge DevTools | Documents Microsoft"  
 
-[WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read-eval-print loop - Wikipedia"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "Exemples de messages de console : journal, informations, erreurs et avertissements | GitHub"  
 
-> [!NOTE]
-> <span data-ttu-id="db490-149">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="db490-149">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="db490-150">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/index) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="db490-150">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+[MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "Fenêtre | MDN"  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="db490-152">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="db490-152">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Lecture-eval-print loop | Wikipedia"  
