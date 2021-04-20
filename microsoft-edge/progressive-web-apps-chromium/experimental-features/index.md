@@ -3,18 +3,18 @@ description: Dernières fonctionnalités expérimentales de Microsoft Edge pour 
 title: Fonctionnalités expérimentales | Applications web progressives
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/09/2021
+ms.date: 04/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft Edge, expérimentation, applications web progressives, applications web, PWA
-ms.openlocfilehash: 20bc4c90c1fe30be360b44294966415823f9b3a6
-ms.sourcegitcommit: 4c6b74b9cdfca73c410d9eba9b42d229b695ee4a
+ms.openlocfilehash: 641b6fd5185e7f96289c1de6482764979ee0981d
+ms.sourcegitcommit: 9cc54ba3e731ecc8b713c3cf215018848f7405b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11482442"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "11496755"
 ---
-# <a name="experimental-features-in-progressive-web-apps-pwas"></a>Fonctionnalités expérimentales dans les applications web progressives (P.A.S.)  
+# <a name="experimental-features-in-progressive-web-apps-pwas"></a>Fonctionnalités expérimentales dans les applications web progressives (P PWA)  
 
 Microsoft Edge permet d'accéder aux fonctionnalités expérimentales qui sont toujours en développement.  Pour déterminer si chaque fonctionnalité est prête et quand publier chacune d'elles, testez [et fournissez des commentaires.](#providing-feedback-on-experimental-features)  
 
@@ -57,13 +57,13 @@ Pour plus d'informations sur les essais d'origine, accédez à la console du dé
 
 ## <a name="features-that-are-available-to-test"></a>Fonctionnalités disponibles pour le test  
 
-La liste suivante décrit les nouvelles fonctionnalités expérimentales d'application web disponibles pour le test et la validation sur Microsoft Edge.  
+La liste suivante décrit les nouvelles fonctionnalités d'application web expérimentales disponibles pour le test et la validation sur Microsoft Edge.  
 
 | Fonctionnalité | Version de Microsoft Edge | Plateforme |  
 |:--- |:--- |:--- |  
-| [Gestion du protocole URI](#uri-protocol-handling) | 91 ou ultérieure | Windows |    
-| [Gestion des liens d'URL](#url-link-handling) | 91 ou ultérieure | Windows|
-| [Superposition des contrôles de fenêtre pour les applications de bureau](#window-controls-overlay-for-installed-desktop-web-apps) | 91 ou ultérieure | Windows 10|   
+| [Gestion du protocole URI](#uri-protocol-handling) | 91 ou ultérieur | Windows et Linux |    
+| [Gestion des liens d'URL](#url-link-handling) | 91 ou ultérieur | Windows|
+| [Superposition des contrôles de fenêtre pour les applications de bureau](#window-controls-overlay-for-installed-desktop-web-apps) | 91 ou ultérieur | Windows 10|   
 | [Exécuter sur la connexion au système d'exploitation](#run-on-os-login) | 88 ou ultérieure | Tous |  
 | [Raccourcis](#shortcuts) | 87 ou ultérieure | Tous |  
 | [Gestion des fichiers](#file-handling) | 83 ou ultérieure | Tous les ordinateurs de bureau |  
@@ -71,7 +71,7 @@ La liste suivante décrit les nouvelles fonctionnalités expérimentales d'appli
 
 ## <a name="uri-protocol-handling"></a>Gestion du protocole URI  
 
-Un identificateur de ressource uniforme \(URI\) peut être utilisé pour définir plus que des liens vers des pages web et du contenu web à l'aide du protocole HTTP ou FTP.  Les UR peuvent être utilisés pour décrire les liens vers tout ce que vous codifiez dans un schéma.  Par exemple, le protocole est utilisé pour décrire un lien de messagerie et le système d'exploitation \(OS\) ou le navigateur décide quelle page web ou application doit gérer `mailto://` ce protocole.  
+Un identificateur de ressource uniforme \(URI\) peut être utilisé pour définir plus que des liens vers des pages web et du contenu web à l'aide du protocole HTTP ou FTP.  Les URIs peuvent être utilisés pour décrire les liens vers tout ce que vous codifiez dans un schéma.  Par exemple, le protocole est utilisé pour décrire un lien de messagerie et le système d'exploitation \(OS\) ou le navigateur décide quelle page web ou application doit gérer `mailto://` ce protocole.  
 
 Pour plus d'informations sur la prise en charge existante basée sur le navigateur, accédez aux serveurs de protocole [web.][MdnDocsWebApiNavigatorRegisterprotocolhandlerWebBasedProtocolHandlers]  
 
@@ -80,14 +80,14 @@ Cette fonctionnalité vous permet d'effectuer les actions suivantes.
 *   Inscrire votre PWA auprès du système d'exploitation hôte à l'aide du manifeste de votre application web
 *   Déclarer qu'un PWA gère un protocole URI spécifique  
      
-Après avoir inscrit un PWA en tant que programme de traitement de protocole, lorsqu'un utilisateur choisit un lien hypertexte avec un schéma spécifique tel qu'un navigateur ou une application native, l'application PWA enregistrée est activée par le système d'exploitation et reçoit `mailto://` `web+music://` l'URI.  
+Après avoir inscrit un PWA en tant que programme de traitement de protocole, lorsqu'un utilisateur choisit un lien hypertexte avec un schéma spécifique, tel qu'un navigateur ou une application native, l'application PWA enregistrée est activée par le système d'exploitation et reçoit `mailto://` `web+music://` l'URI.  
 
 Cette fonctionnalité nécessite que vous mettez à jour le manifeste de l'application web pour inclure un tableau, dans le tableau, vous devez `protocol_handlers` spécifier deux champs :  
 
 *   `protocol`: protocole de traitement de la demande, par exemple `mailto` ou `web+jngl` .  
 *   `url`: URI HTTPS dans l'étendue de l'application qui gère le protocole.  À l'avenir, l'URI commençant par le schéma de handlers de protocole est prévu pour remplacer le `%s` jeton.  
     
-Mettez à jour votre manifeste pour prendre en charge le protocole que vous souhaitez inscrire.  Une fois que vous avez mis en place cette fonctionnalité, Microsoft Edge termine les actions suivantes.  
+Mettez à jour votre manifeste pour prendre en charge le protocole que vous souhaitez inscrire.  Une fois que vous avez activer cette fonctionnalité, Microsoft Edge termine les actions suivantes.  
 
 1.  Détecte les modifications dans le manifeste  
 1.  Enregistre l'application pour le protocole  
@@ -96,7 +96,7 @@ Si plusieurs applications inscrivent un protocole, une invite s'est présentée 
 
 Pour afficher un aperçu de la gestion [](#turn-on-experimental-features) des protocoles dans Microsoft Edge sur Windows, accédez à Activer les fonctionnalités expérimentales et à activer la gestion du protocole **PWA de bureau.**  
 
-Pour plus d'informations sur l'essai d'origine est en cours d'exécution pour les responsables de protocole, accédez à [Register for Web App Protocol Handler Registration][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].  
+Pour plus d'informations sur l'essai d'origine en cours d'exécution pour les responsables de protocole, accédez à [Register for Web App Protocol Handler Registration][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].  
 
 ### <a name="example-manifest"></a>Exemple de manifeste
 
@@ -132,9 +132,9 @@ Dans cet exemple, un manifeste d'application web déclare que l'application doit
  
 ## <a name="url-link-handling"></a>Gestion des liens d'URL  
 
-Un localisateur de ressources uniforme \(URL\) est un type d'URI.  Créez une expérience plus attrayante lorsque les applications web progressives \(PWAs\) s'inscrivent en tant que handleurs pour les URIs https.  Les URS associés peuvent demander à être lancés lorsque les URIs associés sont activés.  Par exemple, si un utilisateur choisit un lien vers un article d'actualités dans un message électronique.  Un PWA associé pour afficher des articles d'actualités est automatiquement lancé pour gérer l'activation du lien.  
+Un localisateur de ressources uniforme \(URL\) est un type d'URI.  Créez une expérience plus attrayante lorsque les applications web progressives \(PWAs\) s'inscrivent en tant que handleurs pour les URIs https.  Les P PWA peuvent demander à se lancer lorsque les URIs associés sont activés.  Par exemple, si un utilisateur choisit un lien vers un article d'actualités dans un message électronique.  Un PWA associé pour afficher des articles d'actualités est automatiquement lancé pour gérer l'activation du lien.  
 
-Cette fonctionnalité vous permet d'inscrire un PWA auprès du navigateur à l'aide du manifeste de l'application web et de déclarer que le navigateur gère des liens spécifiques.  Pour inscrire un PWA avec le navigateur, ajoutez le `url_handlers` membre facultatif au fichier manifeste.  Le membre est un groupe qui groupe les origines des `url_handlers` `object[]` URIs que l'application souhaite gérer.  
+Cette fonctionnalité vous permet d'inscrire un PWA auprès du navigateur à l'aide du manifeste de l'application web et de déclarer que le navigateur gère des liens spécifiques.  Pour inscrire un PWA avec le navigateur, ajoutez le membre `url_handlers` facultatif au fichier manifeste.  Le membre est un groupe qui groupe les origines des `url_handlers` `object[]` URIs que l'application souhaite gérer.  
 
 La gestion des liens est validée par le navigateur à l'aide d'un `web-app-origin-association` fichier JSON situé sur l'origine.  Le fichier d'origine affinera davantage les chemins d'accès inclus ou exclus à l'origine.  Pour obtenir des instructions détaillées sur le test du handler d'URL, accédez à [pwAs en tant que handleurs d'URL.][GithubWicgPwaUrlHandlerBlobMainExplainerMd]  
 
@@ -189,7 +189,7 @@ Pour créer une barre de titre immersive comme une application native pour votre
 1.  Supprime la barre de titre réservée système.  Elle s'étend généralement sur la largeur du cadre client.  
 1.  La remplace par une superposition.  Il contient uniquement les contrôles de fenêtre nécessaires au système critique nécessaires pour qu'un utilisateur contrôle la fenêtre elle-même.  
     
-Une fois qu'elle fournit une superposition, vous pouvez utiliser l'intégralité de la zone du client web.  Cette fonctionnalité inclut une mise à jour du manifeste.  Il vous permet de déterminer la taille et la position de la superposition pour vous aider à organiser le contenu.  
+Une fois qu'elle fournit une superposition, toute la zone du client web est disponible.  Cette fonctionnalité inclut une mise à jour du manifeste.  Il vous permet de déterminer la taille et la position de la superposition pour vous aider à organiser le contenu.  
 
 Pour afficher un aperçu des superpositions de contrôles [](#turn-on-experimental-features) de fenêtre dans Microsoft Edge pour Windows 10, accédez à Activer les fonctionnalités expérimentales et accédez à Superposition des contrôles de fenêtre PWA de **bureau.**   
 
@@ -209,7 +209,7 @@ L'exemple suivant montre comment Visual Studio Code utilise la barre de titre po
 
 #### <a name="microsoft-teams"></a>Microsoft Teams  
 
-L'outil de collaboration et de communication de l'espace de travail Microsoft Teams est également créé avec Le Poste de travail et disponible sur plusieurs plateformes de bureau.  Dans l'exemple suivant, Microsoft Teams affiche et les boutons de navigation, une zone de `back` `forward` recherche et les contrôles de profil utilisateur.  
+L'outil de collaboration et de communication de l'espace de travail Microsoft Teams est également conçu avec Le poste de travail et disponible sur plusieurs plateformes de bureau.  Dans l'exemple suivant, Microsoft Teams affiche et les boutons de navigation, une zone de `back` `forward` recherche et les contrôles de profil utilisateur.  
 
 :::image type="complex" source="../media/teams-title-customization.png" alt-text="Exemple de barre de titre dans Microsoft Teams" lightbox="../media/teams-title-customization.png":::
    Exemple de barre de titre dans Microsoft Teams  
@@ -250,7 +250,7 @@ Un nouvel objet sur la propriété vous permet d'interroger le rectangle de `win
 *   `visible` est un booléen qui indique que la superposition des contrôles est affichée et affichée.  
     
 > [!IMPORTANT]
-> Pour des raisons de confidentialité, `windowControlsOverlay` l'élément n'est pas accessible aux `iframe` éléments du contenu web.  
+> Pour des raisons de confidentialité, les éléments du contenu web ne sont pas `windowControlsOverlay` `iframe` accessibles.  
 
 Chaque fois que la superposition est recalculée, un événement s'exécute sur l'objet pour avertir le `geometrychange` `navigator.windowControlsOverlay` client de recalculer la disposition de contenu.  La disposition de contenu recalculée est basée sur le nouveau rectangle de limite de la superposition.  
 
@@ -372,7 +372,7 @@ L'ID utilise et définit le , qui joint le conteneur en `titleBarContainer` haut
 }
 ```  
 
-`titleBar`L'ID `position: absolute` l'utilise `top: titlebar-area-inset-top` également et l'attache en haut de la fenêtre.  Par défaut, il utilise toute la largeur de la fenêtre.  Les bords et les bords sont définies sur et, respectivement, reviennent au moment où les valeurs `left` `right` ne sont pas `titlebar-area-inset-left` `titlebar-area-inset-right` `0` définies.  Il définit également pour empêcher toute tentative de faire glisser la fenêtre consommée à la place, il met en sur `user-select: none` évidence le texte dans l'élément. `div`  
+`titleBar`L'ID `position: absolute` l'utilise `top: titlebar-area-inset-top` également et l'attache en haut de la fenêtre.  Par défaut, elle consomme toute la largeur de la fenêtre.  Les bords et les bords sont respectivement définies sur le moment où les valeurs ne `left` `right` sont pas `titlebar-area-inset-left` `titlebar-area-inset-right` `0` définies.  Il définit également pour empêcher toute tentative de faire glisser la fenêtre consommée à la place, il met en sur `user-select: none` évidence le texte dans l'élément. `div`  
 
 ```css
 #titleBar {
@@ -415,7 +415,7 @@ Le conteneur de l'ID est également corrigé sur place et attaché `mainContent`
 }
 ```
 
-Dans les cas où le navigateur ne prend pas en charge la superposition des contrôles de fenêtre, une variable CSS est ajoutée pour définir une hauteur par défaut pour la barre de titre.  Les limites des ID et des ID sont initialement définies pour remplir l'intégralité de la zone cliente et vous n'avez pas besoin de la modifier si la superposition `titleBarContainer` `mainContent` n'est pas prise en charge.  
+Dans les cas où le navigateur ne prend pas en charge la superposition des contrôles de fenêtre, une variable CSS est ajoutée pour définir une hauteur par défaut pour la barre de titre.  Les limites des ID et des ID sont initialement définies pour remplir l'intégralité de la zone cliente, et vous n'avez pas besoin de la modifier si la superposition `titleBarContainer` `mainContent` n'est pas prise en charge.  
 
 L'extrait de code suivant inclut toutes les mises à jour CSS recommandées.
 
@@ -517,7 +517,7 @@ Pour activer la `Start app when you sign in` fonctionnalité pour un PWA install
 
 `Shortcuts` est un nouveau membre du fichier manifeste.  Il vous permet de définir des liens vers des composants, des pages web clés ou des actions dans votre application web.  Microsoft Windows l'intègre en tant **que Jumplists**.  **Les listes de** choix définissent des menus contextuels qui s'affichent lorsque vous êtes sur l'un des éléments d'interface utilisateur suivants et ouvrent un menu contextuel \(clic droit\).  
 
-*   Une vignette dans le menu Démarrer  
+*   Vignette du menu Démarrer  
 *   Icône de la barre des tâches  
     
 Lorsqu'un utilisateur appelle un raccourci, il navigue jusqu'à l'adresse spécifiée par le membre `url` du raccourci.  
@@ -560,7 +560,7 @@ Les propriétés suivantes définissent chaque raccourci.
 
 ## <a name="file-handling"></a>Gestion des fichiers  
 
-La possibilité de s'inscrire en tant que handler de type de fichier est dans la phase d'expérimentation.  Vous pouvez spécifier les types de fichiers gérés par votre application dans une entrée de manifeste.  Lors de l'installation, le système d'exploitation hôte de l'utilisateur inscrit votre application en tant que handleur de fichiers pour les types de fichiers répertoriés.  Assurez-vous que la fonctionnalité existe dans le code de démarrage de vos applications et `launchQueue` qu'elle gère le fichier.  
+La possibilité de s'inscrire en tant que handler de type de fichier est en phase d'expérimentation.  Vous pouvez spécifier les types de fichiers gérés par votre application dans une entrée de manifeste.  Lors de l'installation, le système d'exploitation hôte de l'utilisateur inscrit votre application en tant que responsable de fichiers pour les types de fichiers répertoriés.  Assurez-vous que la fonctionnalité existe dans le code de démarrage de vos applications et `launchQueue` qu'elle gère le fichier.  
 
 Les navigateurs basés sur Chromium testent et façonnent cette fonctionnalité.  Pour plus d'informations, y compris des exemples de code, accédez à [Let web applications be file handlers][WebDevFileHandling].  
 
