@@ -3,17 +3,17 @@ description: Prise en charge du débogage de CSS Flexbox, affichage des performa
 title: Nouveautés de DevTools (Microsoft Edge 90)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, développement web, outils f12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: e220bbbe0a545b7cc539d0c77deb2ecb070decc0
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 3653bd2293f96a6ddfb84d8e1c7492bea78c15c1
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439744"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514402"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -360,7 +360,7 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/updates/2021/02/devtools/index) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
+> La page d’origine est disponible [ici](https://developer.chrome.com/blog/new-in-devtools-90) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  

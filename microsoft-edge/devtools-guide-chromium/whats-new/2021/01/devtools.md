@@ -3,17 +3,17 @@ description: L’outil Nouveautés s’appelle à présent Welcome (Bienvenue), 
 title: Nouveautés de DevTools (Microsoft Edge89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/19/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: d823408b40644585b885ad52201f7080bd542549
-ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
+ms.openlocfilehash: ec14d802af52c0bb2e658549f48764279c787f47
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11481358"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514367"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -492,7 +492,7 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/updates/2021/01/devtools/index) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
+> La page d’origine est disponible [ici](https://developer.chrome.com/blog/new-in-devtools-89) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est sous [licence internationale Creative Commons Attribution4.0][CCA4IL].  

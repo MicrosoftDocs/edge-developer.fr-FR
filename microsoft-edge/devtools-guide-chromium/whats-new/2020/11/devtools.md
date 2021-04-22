@@ -3,17 +3,17 @@ description: Microsoft Edge sur Linux, conseils d’amélioration de webhint dan
 title: Nouveautés de DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 7f4f9e2602d26b09a8b52a570c4caaaccc4f04f1
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: a63515060d989a84838e4a9ba7f803184a3fc91f
+ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439274"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "11514374"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -326,7 +326,7 @@ Pour passer en revue l’historique de cette fonctionnalité dans le projet open
 
 ### <a name="preview-wasm-variable-value-on-mouseover"></a>Afficher un aperçu de la valeur de la variable WASM sur mouseover  
 
-Utilisez cette fonction pour afficher un aperçu de la valeur d’une variable webassembly \(WASM \) lorsque votre code est en pause.  Pour afficher la valeur actuelle d’une variable, pointez sur une variable.  Pour consulter les mises à jour en temps réel de cette fonctionnalité dans le projet open-source de Chromium, accédez aux problèmes [1058836][CR1058836] et [1071432][CR1071432].  
+Utilisez cette fonction pour afficher un aperçu de la valeur d’une variable webassembly \ (WASM \) lorsque votre code est en pause.  Pour afficher la valeur actuelle d’une variable, pointez sur une variable.  Pour consulter les mises à jour en temps réel de cette fonctionnalité dans le projet open-source de Chromium, accédez aux problèmes [1058836][CR1058836] et [1071432][CR1071432].  
 
 :::image type="complex" source="../../media/2020/11/wasm-mouseover.msft.png" alt-text="Afficher un aperçu de la variable WASM sur mouseover" lightbox="../../media/2020/11/wasm-mouseover.msft.png":::
    Afficher un aperçu de la variable WASM sur mouseover  
@@ -336,14 +336,14 @@ Utilisez cette fonction pour afficher un aperçu de la valeur d’une variable w
 
 Désormais DevTools utilise `kB` pour l’affichage des tailles de fichiers et de mémoire.  Auparavant DevTools combinait `kB` et `KiB` .
 
-*   `kB` ou kilo-octets \(10^3 ou 1000 octets \)  
-*   `KiB` ou kibibyte \(2^10 ou 1024 octets \)  
+*   `kB` ou kilo-octets \ (10^3 ou 1000 octets \)  
+*   `KiB` ou kibibyte \ (2^10 ou 1024 octets \)  
     
 Par exemple, l’outil **réseau** utilisait `kB` dans les étiquettes, mais utilisait `KiB` dans les calculs.  Votre commentaire a démontré que cette incohérence a causé une confusion.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open-source de Chromium, accédez au problème [1035309][CR1035309].  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a>Téléchargez les canaux de l'aperçu de Microsoft Edge  
+## <a name="download-the-microsoft-edge-preview-channels"></a>Télécharger les canaux d’aperçu Microsoft Edge  
 
-Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'aperçu de Microsoft Edge][MicrosoftEdgePreviewChannels] comme navigateur de développement par défaut.  Les canaux de prévisualisation vous donnent accès aux dernières fonctionnalités de DevTools.  
+Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'aperçu de Microsoft][MicrosoftEdgePreviewChannels] Edge comme navigateur de développement par défaut.  Les canaux de prévisualisation vous donnent accès aux dernières fonctionnalités de DevTools.  
 
 ## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Contacter l’équipe Microsoft Edge DevTools  
 
@@ -419,7 +419,7 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/updates/2020/11/devtools/index) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
+> La page d’origine est disponible [ici](https://developer.chrome.com/blog/new-in-devtools-88) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
