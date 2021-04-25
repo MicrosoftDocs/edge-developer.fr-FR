@@ -1,18 +1,18 @@
 ---
 description: Découvrez comment enregistrer les modifications apportées dans DevTools sur le disque.
-title: Modifier des fichiers avec des espaces de travail
+title: Modifier des fichiers avec les espaces de travail
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 17f9ced15dbacd62c9ffe40e4af889925a8155fb
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: f00e2e42f73f7d03c858deaf020db683391ff1f2
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399245"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519421"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,10 +28,9 @@ ms.locfileid: "11399245"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="edit-files-with-workspaces"></a>Modifier des fichiers avec des espaces de travail  
+# <a name="edit-files-with-workspaces"></a>Modifier des fichiers avec les espaces de travail  
 
-> [!NOTE]
-> L’objectif de ce didacticiel est de fournir des pratiques en configuration et en utilisation des espaces de travail, afin que vous pouvez utiliser les espaces de travail dans vos propres projets.  Vous pouvez enregistrer les modifications apportées au code source, sur votre ordinateur local, que vous avez apportées dans DevTools après avoir activé Les espaces de travail.  
+Ce didacticiel fournit des pratiques pratiques sur la configuration et l'utilisation d'un espace de travail.  Une fois que vous avez ajouté des fichiers à un espace de travail, les modifications que vous a faites dans votre code source dans DevTools sont enregistrées sur votre ordinateur local et sont conservées après l'actualisation de la page web.  
 
 > [!IMPORTANT]
 > **Conditions préalables**: avant de commencer ce didacticiel, vous devez savoir comment effectuer les actions suivantes.  
@@ -42,21 +41,21 @@ ms.locfileid: "11399245"
 
 ## <a name="overview"></a>Vue d'ensemble  
 
-Les espaces de travail vous permettent d’enregistrer une modification que vous a faites dans Devtools sur une copie locale du même fichier sur votre ordinateur.  Pour ce didacticiel, vous devez avoir les paramètres suivants sur votre ordinateur.  
+Les espaces de travail vous permettent d'enregistrer une modification que vous a faites dans Devtools sur une copie locale du même fichier sur votre ordinateur.  Pour ce didacticiel, vous devez avoir les paramètres suivants sur votre ordinateur.  
 
 *   Vous avez le code source de votre site sur votre bureau.  
-*   Vous exécutez un serveur web local à partir du répertoire de code source, afin que le site soit accessible à l’adresse `localhost:8080` .  
+*   Vous exécutez un serveur web local à partir du répertoire de code source, afin que le site soit accessible à l'adresse `localhost:8080` .  
 *   Vous avez ouvert dans Microsoft Edge et vous utilisez DevTools pour modifier le `localhost:8080` CSS du site.  
 
 Une fois les espaces de travail activés, les modifications CSS que vous a faites dans DevTools sont enregistrées dans le code source sur votre bureau.  
 
 ## <a name="limitations"></a>Limitations  
 
-Si vous utilisez une infrastructure moderne, il transforme probablement votre code source à partir d’un format facile à gérer dans un format optimisé pour s’exécuter aussi rapidement que possible.  
+Si vous utilisez une infrastructure moderne, il transforme probablement votre code source à partir d'un format facile à gérer dans un format optimisé pour s'exécuter aussi rapidement que possible.  
 
-Les espaces de travail sont généralement en mesure de ma cartographier le code optimisé sur votre code source d’origine à l’aide de [cartes sources.][TreehouseBlogSourceMaps]  Toutefois, il existe de nombreuses variations entre les frameworks sur la façon dont chacune utilise des cartes sources.  Devtools prend simplement en charge toutes les variantes.  
+Les espaces de travail sont généralement en mesure de ma cartographier le code optimisé sur votre code source d'origine à l'aide de [cartes sources.][TreehouseBlogSourceMaps]  Toutefois, il existe de nombreuses variations entre les frameworks sur la façon dont chaque infrastructure utilise les cartes sources.  Devtools ne prend pas en charge toutes les variantes.  
 
-Les espaces de travail ne fonctionnent pas avec l’infrastructure suivante.  
+Les espaces de travail ne fonctionnent pas avec l'infrastructure suivante.  
 
 *   Créer une application React  
 
@@ -92,7 +91,7 @@ Pour obtenir une expérience pratique avec les espaces de travail, vous pouvez e
     <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped directory is referred to as `~/Desktop/app`.  -->  
     
 1.  Créez `app` un répertoire sur votre bureau.  Enregistrez des copies des fichiers du `workspaces-demo` répertoire dans `app` le répertoire.  Pour le reste du didacticiel, le répertoire est appelé `~/Desktop/app` .  
-1.  Démarrez un serveur web local dans `~/Desktop/app` .  Voici un exemple de code pour le démarrage, mais vous pouvez `SimpleHTTPServer` utiliser n’importe quel serveur de votre préférence.  
+1.  Démarrez un serveur web local dans `~/Desktop/app` .  Voici un exemple de code pour le démarrage, mais vous pouvez `SimpleHTTPServer` utiliser n'importe quel serveur de votre préférence.  
     
     :::row:::
        :::column span="":::
@@ -109,7 +108,7 @@ Pour obtenir une expérience pratique avec les espaces de travail, vous pouvez e
        :::column-end:::
     :::row-end:::  
     
-1.  Ouvrez un onglet dans Microsoft Edge et accédez à la version hébergée localement du site.  Vous devriez être en mesure d’y accéder à l’aide d’une URL comme `localhost:8080` ou `http://0.0.0.0:8080` .  Le numéro [de port exact][WikiPortURLs] peut être différent.  
+1.  Ouvrez un onglet dans Microsoft Edge et accédez à la version hébergée localement du site.  Vous devriez être en mesure d'y accéder à l'aide d'une URL comme `localhost:8080` ou `http://0.0.0.0:8080` .  Le numéro [de port exact][WikiPortURLs] peut être différent.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="Démonstration" lightbox="../media/workspaces-workspaces-demo.msft.png":::
        Démonstration  
@@ -123,20 +122,20 @@ Pour obtenir une expérience pratique avec les espaces de travail, vous pouvez e
        Panneau **console**  
     :::image-end:::  
     
-1.  Choisissez **l’outil Sources.**  
-1.  Choisissez le **panneau Système de** fichiers.  
+1.  Accédez à **l'outil Sources.**  
+1.  Dans le **volet Navigateur** (à gauche), choisissez l'onglet **Système de** fichiers.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Panneau Système de fichiers" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
-       Panneau **Système de** fichiers  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="Onglet Système de fichiers" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+       Onglet **Système de** fichiers  
     :::image-end:::  
     
-1.  Choisissez **Ajouter un dossier à l’espace de travail.**  
-1.  Entrez `~/Desktop/app`.  
-1.  Choisissez **Autoriser** pour accorder à DevTools l’autorisation de lire et d’écrire dans le répertoire.  
-    Dans le **panneau Système de** fichiers, il y a maintenant un point vert à côté de , et `index.html` `script.js` `styles.css` .  Ces points verts signifient que DevTools a établi un mappage entre les ressources réseau de la page et les fichiers dans `~/Desktop/app` .  
+1.  Choisissez **Ajouter un dossier à l'espace de travail.**  
+1.  Tapez `~/Desktop/app`.  
+1.  Choisissez **Autoriser** pour accorder à DevTools l'autorisation de lire et d'écrire dans le répertoire.  
+    Dans **l'onglet Système de** fichiers, un point vert apparaît maintenant à côté `index.html` de , et `script.js` `styles.css` .  Un point vert indique que DevTools a établi un mappage entre une ressource réseau de la page et le fichier dans `~/Desktop/app` .  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="Le panneau Système de fichiers affiche désormais un mappage entre les fichiers locaux et les fichiers réseau" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
-       Le **panneau Système de** fichiers affiche désormais un mappage entre les fichiers locaux et les fichiers réseau  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="L'onglet Système de fichiers indique maintenant un mappage entre les fichiers locaux et les fichiers réseau" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+       **L'onglet Système** de fichiers indique maintenant un mappage entre les fichiers locaux et les fichiers réseau  
     :::image-end:::  
     
 ## <a name="step-2-save-a-css-change-to-disk"></a>Étape 2 : Enregistrer une modification CSS sur le disque  
@@ -150,24 +149,24 @@ Pour obtenir une expérience pratique avec les espaces de travail, vous pouvez e
        Afficher `styles.css` dans un éditeur de texte  
     :::image-end:::  
     
-1.  Choisissez **l’outil Éléments.**  
-1.  Modifiez la valeur de `color` la propriété de `<h1>` l’élément en votre couleur favorite.  
-    N’oubliez pas que vous devez choisir l’élément dans l’arborescence DOM pour afficher les règles CSS qui lui sont appliquées dans le `<h1>` **volet Styles.** ****  Le point vert en côté signifie que toute modification que vous `styles.css:1` a faites est mappée sur `~/Desktop/app/styles.css` .  
+1.  Choisissez **l'outil Éléments.**  
+1.  Modifiez la valeur de `color` la propriété de `<h1>` l'élément en votre couleur favorite.  
+    N'oubliez pas que vous devez choisir l'élément dans l'arborescence DOM pour afficher les règles CSS qui lui sont appliquées dans le `<h1>` **volet Styles.** ****  Le point vert en côté signifie que toute modification que vous `styles.css:1` a faites est mappée sur `~/Desktop/app/styles.css` .  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="Indicateur vert qui fait que le fichier est lié" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
        Indicateur vert qui fait que le fichier est lié  
     :::image-end:::  
     
 1.  Ouvrez `styles.css` à nouveau dans un éditeur de texte.  La `color` propriété est maintenant définie sur votre couleur favorite.  
-1.  Actualisez la page.  La couleur de `<h1>` l’élément est toujours définie sur votre couleur favorite.  La modification reste pendant une actualisation, car lorsque vous avez apporté la modification, DevTools a enregistré la modification sur le disque.  Puis, lorsque vous avez actualisé la page, votre serveur local a servi la copie modifiée du fichier à partir du disque.  
+1.  Actualisez la page.  La couleur de `<h1>` l'élément est toujours définie sur votre couleur favorite.  La modification reste pendant une actualisation, car lorsque vous avez apporté la modification, DevTools a enregistré la modification sur le disque.  Puis, lorsque vous avez actualisé la page, votre serveur local a servi la copie modifiée du fichier à partir du disque.  
     
 ## <a name="step-3-save-an-html-change-to-disk"></a>Étape 3 : Enregistrer une modification HTML sur le disque  
 
 ### <a name="change-html-from-the-elements-panel"></a>Modifier le code HTML à partir du panneau Éléments  
 
-Vous pouvez apporter des modifications au code HTML à partir du panneau d’élément, mais vos modifications apportées à l’arborescence DOM ne sont pas enregistrées sur le disque et n’ont qu’un effet sur la session de navigateur actuelle.  
+Vous pouvez apporter des modifications au code HTML à partir du panneau d'élément, mais vos modifications apportées à l'arborescence DOM ne sont pas enregistrées sur le disque et n'ont qu'un effet sur la session de navigateur actuelle.  
 
-L’arborescence DOM n’est pas html.  
+L'arborescence DOM n'est pas html.  
 
 <!--### Try changing HTML from the Elements panel  
 
@@ -199,46 +198,48 @@ L’arborescence DOM n’est pas html.
 In short, the **DOM Tree** `!==` HTML.  
 -->  
 
-### <a name="change-html-from-the-sources-panel"></a>Modifier le code HTML à partir du panneau Sources  
+### <a name="change-html-from-the-sources-tool"></a>Modifier le code HTML à partir de l'outil Sources  
 
-Si vous souhaitez enregistrer une modification dans le code HTML de la page, faites-le à l’aide du **panneau Sources.**  
+Si vous souhaitez enregistrer une modification au format HTML de la page web, utilisez **l'outil Sources.**  
 
-1.  Choisissez **l’outil Sources.**  
-1.  Choisissez le **panneau Page.**  
-1.  Choose **(index)**.  Le code HTML de la page s’ouvre.  
+1.  Accédez à **l'outil Sources.**  
+1.  Dans le **volet Navigateur** (à gauche), choisissez l'onglet **Page.**  
+1.  Choose **(index)**.  Le code HTML de la page s'ouvre.  
 1.  Remplacez `<h1>Workspaces Demo</h1>` par `<h1>I ❤️  Cake</h1>` .  Examinez la figure suivante.  
 1.  Sélectionnez `Control` + `S` \(Windows, Linux\) ou `Command` + `S` \(macOS\) pour enregistrer la modification.  
-1.  Actualisez la page.  `<h1>`L’élément affiche toujours le nouveau texte.  
+1.  Actualisez la page.  `<h1>`L'élément continue d'afficher le nouveau texte après l'actualisation de la page.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Modifier le code HTML à partir du panneau Sources" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       Modifier le code HTML à partir du **panneau Sources**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Modifier le code HTML à partir de l'outil Sources" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+       Modifier le code HTML à partir de **l'outil Sources**  
     :::image-end:::  
     
-1.  Ouvrez `~/Desktop/app/index.html` .  `<h1>`L’élément contient le nouveau texte.  
+1.  Ouvrez `~/Desktop/app/index.html` .  `<h1>`L'élément contient le nouveau texte.  
     
 ## <a name="step-4-save-a-javascript-change-to-disk"></a>Étape 4 : Enregistrer une modification JavaScript sur le disque  
 
-Le **panneau Sources** est également l’endroit où apporter des modifications à JavaScript.  Mais parfois, vous devez accéder à d’autres panneaux, tels que l’outil **Éléments** ou le panneau **Console,** tout en a apporté des modifications à votre site.  Il existe un moyen d’ouvrir le panneau **Sources** avec d’autres panneaux.  
+Le principal endroit où utiliser l'éditeur de code de DevTools est **l'outil Sources.**  Mais parfois, vous devez accéder à d'autres outils, tels que l'outil **Éléments** ou le panneau **console,** lors de la modification de fichiers.  **L'outil Source rapide** vous fournit uniquement l'éditeur de l'outil **Sources,** alors que n'importe quel outil est ouvert.  
 
-1.  Choisissez **l’outil Éléments.**  
-1.  Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\).  Le **menu Commande** s’ouvre.  
-1.  `QS`Tapez, puis choisissez Afficher la source **rapide.**  Au bas de la fenêtre DevTools se trouve désormais un **panneau Source** rapide.  Le panneau affiche le contenu de , qui est le dernier fichier que vous `index.html` avez modifié dans le panneau **Sources.**  Le **panneau Source rapide** vous fournit l’éditeur à partir du panneau **Sources,** afin que vous pouvez modifier des fichiers tout en ayant d’autres panneaux ouverts.  
+Pour ouvrir l'éditeur de code DevTools avec d'autres outils, vous pouvez :  
+
+1.  Accédez à **l'outil Éléments.**  
+1.  Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\).  Le **menu Commande** s'ouvre.  
+1.  `Quick Source`Tapez, puis choisissez Afficher la source **rapide.**  En bas de la fenêtre DevTools, l'outil **Source** rapide s'affiche, affichant le contenu de , qui est le dernier fichier que vous avez modifié dans l'outil `index.html` **Sources.**    
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Ouvrir le panneau Source rapide à l’aide du menu Commande" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
-       Ouvrir le **panneau Source rapide** à l’aide du menu **Commande**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Ouvrir l'outil Source rapide à l'aide du menu Commande" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+       Ouvrir **l'outil Source rapide** à l'aide du **menu Commande**  
     :::image-end:::  
     
 1.  Sélectionnez `Control` + `P` \(Windows, Linux\) ou `Command` + `P` \(macOS\) **** pour ouvrir la boîte de dialogue Ouvrir un fichier.  Examinez la figure suivante.  
 1.  `script`Tapez, puis choisissez **application/script.js**.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Ouvrir script.js à l’aide de la boîte de dialogue Ouvrir un fichier" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
-       Ouvrir `script.js` à l’aide **de la boîte de dialogue Ouvrir un** fichier  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Ouvrir script.js à l'aide de la boîte de dialogue Ouvrir un fichier" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+       Ouvrir `script.js` à l'aide **de la boîte de dialogue Ouvrir un** fichier  
     :::image-end:::  
     
     > [!NOTE]
     > Le `Save Changes To Disk With Workspaces` lien de la démonstration est régulièrement mis en forme.  
     
-1.  Ajoutez le code suivant au bas de la **script.js** à l’aide du **panneau Source** rapide.  
+1.  Ajoutez le code suivant au bas de la **script.js** l'aide de **l'outil Source** rapide.  
     
     ```javascript
     console.log('greetings from script.js');
@@ -281,7 +282,7 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 [MDNCSSContent]: https://developer.mozilla.org/docs/Web/CSS/content "Content - CSS: Cascading Style Sheets | MDN"  
 [MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Getting started with the Web | MDN"  
-[MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "Exécution d’un serveur HTTP local simple | MDN"  
+[MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "Exécution d'un serveur HTTP local simple | MDN"  
 [MDNWebAPIsDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Présentation du DOM - Api web | MDN"  
 
 <!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
@@ -294,7 +295,7 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  

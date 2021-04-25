@@ -1,18 +1,18 @@
 ---
-description: Guide d’ouverture du menu Commande, d’exécuter des commandes, de passer en revue d’autres actions, etc.
-title: Exécuter des commandes avec le menu DevTools DevTools de Microsoft Edge
+description: Guide d'ouverture du menu Commande, d'exécuter des commandes, de passer en revue d'autres actions, etc.
+title: Exécuter des commandes avec le menu de commandes Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: a9e67815f69a44d3bd2a741738b04c7170f6ac15
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: b815934da73f9f023629564da7bea14da166ff9b
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398027"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519190"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,9 +28,9 @@ ms.locfileid: "11398027"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>Exécuter des commandes avec le menu DevTools DevTools de Microsoft Edge  
+# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>Exécuter des commandes avec le menu de commandes Microsoft Edge DevTools  
 
-Le menu Commande permet de naviguer rapidement dans l’interface utilisateur DevTools de Microsoft Edge et d’accomplir des tâches courantes, telles que la [désactivation de JavaScript.][JavascriptDisable]  Vous connaissez peut-être une fonctionnalité similaire dans Microsoft Visual Studio Code, appelée [Palette][VisualStudioCodeUICommandPalette]de commandes, qui était l’inspiration d’origine du menu Commande.  
+Le menu Commande permet de naviguer rapidement dans l'interface utilisateur DevTools de Microsoft Edge et d'accomplir des tâches courantes, telles que la [désactivation de JavaScript.][JavascriptDisable]  Vous connaissez peut-être une fonctionnalité similaire dans Microsoft Visual Studio Code, appelée [Palette][VisualStudioCodeUICommandPalette]de commandes, qui était l'inspiration d'origine du menu Commande.  
 
 :::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Utilisation du menu Commande pour désactiver JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
    Utilisation du menu Commande pour désactiver JavaScript  
@@ -44,9 +44,9 @@ Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift
    Exécuter la commande  
 :::image-end:::  
 
-## <a name="display-other-available-actions"></a>Afficher d’autres actions disponibles  
+## <a name="display-other-available-actions"></a>Afficher d'autres actions disponibles  
 
-Si vous utilisez le flux de travail décrit dans Ouvrir le [menu](#open-the-command-menu)Commande, le menu Commande s’ouvre avec un caractère pré-pendé à la zone de texte `>` Menu commande.  
+Si vous utilisez le flux de travail décrit dans Ouvrir le [menu](#open-the-command-menu)Commande, le menu Commande s'ouvre avec un caractère pré-pendé à la zone de texte `>` Menu commande.  
 
 :::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="Caractère de commande" lightbox="../media/command-menu-run-command.msft.png":::
    Caractère de commande  
@@ -66,11 +66,11 @@ Supprimez `>` le caractère et le type pour afficher les autres actions disponib
 
 [JavascriptDisable]: ../javascript/disable.md "Désactiver JavaScript avec Microsoft Edge DevTools | Documents Microsoft"  
 
-[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Palette de commandes : Visual Studio’interface utilisateur de code"  
+[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Palette de commandes : Visual Studio'interface utilisateur de code"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  

@@ -121,16 +121,16 @@
                   href: devtools-guide-chromium/device-mode/orientation.md
             - name: Mode InternetExplorer
               href: devtools-guide-chromium/ie-mode/index.md
-            - name: Résolution des problèmes Javascript
+            - name: Résolution des problèmes JavaScript
               items:
-                - name: Référence de débogage JavaScript
+                - name: Utiliser les fonctionnalités du débogueur
                   href: devtools-guide-chromium/javascript/reference.md
+                - name: Interrompre votre code avec des points d’arrêt
+                  href: devtools-guide-chromium/javascript/breakpoints.md
                 - name: Mapper le code prétraité au code source
                   href: devtools-guide-chromium/javascript/source-maps.md
                 - name: Marquer des scripts de contenu comme code de bibliothèque
                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
-                - name: Interrompre votre code avec des points d’arrêt
-                  href: devtools-guide-chromium/javascript/breakpoints.md
             - name: Résolution des problèmes de mémoire
               items:
                 - name: Terminologie de la mémoire
@@ -241,16 +241,14 @@
               href: devtools-guide-chromium/security/index.md
             - name: Sources
               items:
-                - name: Vue d’ensemble du volet sources
+                - name: Vue d’ensemble de l’outil Sources
                   href: devtools-guide-chromium/sources/index.md
-                - name: Référence de débogage JavaScript
-                  href: devtools-guide-chromium/javascript/reference.md
-                - name: Désactiver JavaScript
-                  href: devtools-guide-chromium/javascript/disable.md
                 - name: Remplacements
                   href: devtools-guide-chromium/javascript/overrides.md
                 - name: Extraits de code
                   href: devtools-guide-chromium/javascript/snippets.md
+                - name: Désactiver JavaScript
+                  href: devtools-guide-chromium/javascript/disable.md
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
         - name: Référence

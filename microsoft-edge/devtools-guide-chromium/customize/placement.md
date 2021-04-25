@@ -1,18 +1,18 @@
 ---
-description: Comment déplacer Microsoft Edge DevTools vers le bas ou la gauche de votre fenêtre d’affichage, ou vers une fenêtre distincte.
-title: Modifier le placement de Microsoft Edge DevTools (Undock, Dock To Bottom, Dock To Left)
+description: Comment déplacer Microsoft Edge DevTools vers le bas ou la gauche de votre fenêtre d'affichage, ou vers une fenêtre distincte.
+title: Modifier le placement de Microsoft Edge DevTools (Undock, Dock to bottom, Dock to left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 8fabeaf6d972badd08ab85486913ef17f54bcf67
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: c4aca068c159f03b60bbf6d7643bb334a5b5a7f2
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439176"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519155"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -28,20 +28,39 @@ ms.locfileid: "11439176"
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Modifier le placement de Microsoft Edge DevTools (Undock, Dock To Bottom, Dock To Left)  
+# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Modifier le placement de Microsoft Edge DevTools (Undock, Dock to bottom, Dock to left)  
 
-Par défaut, DevTools est docké à droite de votre port d’affichage.  Vous pouvez également vous ancrer en bas, ancrer à gauche ou détacher de DevTools une fenêtre distincte.  
+Par défaut, DevTools est docké à droite de votre fenêtre d'affichage (fenêtre).  Vous pouvez également ancrer DevTools en bas ou à gauche de la fenêtre, ou détacher DevTools d'une fenêtre distincte.
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Choisir Station d’accueil vers la gauche" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
-         Choisir `Dock To Left`  
+      DevTools docked to the left side of the window:
+   :::column-end:::
+   :::column span="":::
+      DevTools docked to the bottom of the window:
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Choose Dock to left" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+         Choose **Dock to left**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Choose Dock To Bottom" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
-         Choisir `Dock To Bottom`  
+         Choisir `Dock to bottom`  
       :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+
+DevTools peut être désédocké vers une fenêtre distincte, que vous pouvez déplacer vers un moniteur distinct :
+
+:::row:::
+   :::column span="":::
+      Fenêtre du navigateur :
+   :::column-end:::
+   :::column span="":::
+      DevTools non barraté dans une fenêtre distincte :
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -57,21 +76,29 @@ Par défaut, DevTools est docké à droite de votre port d’affichage.  Vous po
    :::column-end:::
 :::row-end:::  
 
-## <a name="change-placement-from-the-main-menu"></a>Modifier l’emplacement à partir du menu principal  
+## <a name="change-placement-from-the-main-menu"></a>Modifier l'emplacement à partir du menu principal  
 
-1.  Choisissez Personnaliser et contrôler **DevTools** \( \) et désémarrer dans une fenêtre distincte `...` \( **** ![ Undock ](../media/undock-icon.msft.png) \), Dock to **Bottom** \( Dock to Bottom \) ou Dock ![ To ](../media/bottom-icon.msft.png) **Left** \( Dock To ![ Left ](../media/left-icon.msft.png) \).  
+1.  Choose **Customize and control DevTools** \( `...` \) and choose **Undock into separate window** \( ![ Undock ](../media/undock-icon.msft.png) \), Dock to **bottom** \( Dock to ![ bottom ](../media/bottom-icon.msft.png) \), or Dock to **left** \( Dock to ![ left ](../media/left-icon.msft.png) \).  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Choose Undock Into Separate Window" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
-       Choose **Undock Into Separate Window**  
+       Choose **Undock into separate window**  
     :::image-end:::  
     
-## <a name="change-placement-from-the-command-menu"></a>Modifier l’emplacement à partir du menu Commande  
+## <a name="change-placement-from-the-command-menu"></a>Modifier l'emplacement à partir du menu Commande  
 
-1.  [Ouvrez le menu Commande.][DevtoolsCommandMenu]  
-1.  Exécutez l’une des commandes suivantes `Dock To Bottom` : , `Undock Into Separate Window` .  Il n’existe actuellement aucune commande pour l’ancrer à gauche, mais vous pouvez y accéder à partir du [menu principal.](#change-placement-from-the-main-menu)  
+1.  [Ouvrez le menu Commande,][DevtoolsCommandMenu]en `Shift` + `Ctrl` + `P` sélectionnant sur Windows/Linux `Command` + `Shift` + `P` ou sur macOS.  
+1.  Après le `>` caractère, `dock` entrez, puis choisissez l'une des commandes suivantes :  
     
-    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Commande de désédock" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
-       Commande de désédock  
+    *  **Ancrer en bas**
+    *  **Station d'accueil vers la gauche**
+    *  **Station d'accueil vers la droite**
+    *  **Restaurer la dernière position de station d'accueil**
+    *  **Se désédocker dans une fenêtre distincte**
+    
+    Vous pouvez également accéder aux commandes à partir du [menu principal.](#change-placement-from-the-main-menu) 
+    
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="Commande Undock" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       Commande Undock  
     :::image-end:::  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
@@ -84,7 +111,7 @@ Par défaut, DevTools est docké à droite de votre port d’affichage.  Vous po
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/customize/placement) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/customize/placement) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  

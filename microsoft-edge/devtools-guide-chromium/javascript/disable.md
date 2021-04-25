@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 2067944fa17c332dd15ffb3ef97afe02d35685ed
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 665181b14e6fa5e86950a27822d52395f49f5b92
+ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398559"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "11519351"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,7 +30,9 @@ ms.locfileid: "11398559"
 
 # <a name="disable-javascript-with-microsoft-edge-devtools"></a>Désactiver JavaScript avec Microsoft Edge DevTools  
 
-Effectuer les actions suivantes pour afficher l’apparence et le comportement d’une page web lorsque JavaScript est désactivé.  
+Pour examiner le rendu de votre page web lorsqu'un navigateur ne prend pas en charge JavaScript, éteinez temporairement JavaScript.
+
+Effectuer les actions suivantes pour examiner la façon dont une page web s'affiche et se comporte lorsque vous éteinez JavaScript.  
 
 1.  [Ouvrez Microsoft Edge DevTools.][DevToolsOpen]  
 1.  Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le **menu Commande.**  
@@ -45,13 +47,13 @@ Effectuer les actions suivantes pour afficher l’apparence et le comportement d
        Choose **Disable JavaScript** in the **Command Menu**  
     :::image-end:::  
     
-    L’icône d’avertissement jaune en de côté **des sources** vous rappelle que JavaScript est désactivé.  
+    L'icône d'avertissement jaune en de côté **des sources** vous rappelle que JavaScript est désactivé.  
     
-    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="Icône d’avertissement en de côté des sources" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
-       Icône d’avertissement en de côté des **sources**  
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="Icône d'avertissement en de côté des sources" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+       Icône d'avertissement en de côté des **sources**  
     :::image-end:::  
     
-JavaScript reste désactivé dans l’onglet tant que DevTools est ouvert.  
+JavaScript reste désactivé dans l'onglet tant que DevTools est ouvert.  
 
 Vous souhaitez peut-être actualiser la page pour examiner si et comment la page web dépend de JavaScript lors du chargement.  
 
@@ -70,7 +72,7 @@ Pour ré-activer JavaScript, effectuer les actions suivantes.
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
