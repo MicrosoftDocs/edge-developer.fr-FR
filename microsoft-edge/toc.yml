@@ -407,8 +407,10 @@
               href: webview2/concepts/security.md
             - name: Contrôle de version
               href: webview2/concepts/versioning.md
-            - name: Modèle de thread
+            - name: Modèle de filetage
               href: webview2/concepts/threading-model.md
+            - name: Meilleures pratiques de développement WebView2
+              href: webview2/concepts/developer-guide.md
             - name: Conventions de l’API Win32
               href: webview2/concepts/win32-api-conventions.md
         - name: Notes de publication
