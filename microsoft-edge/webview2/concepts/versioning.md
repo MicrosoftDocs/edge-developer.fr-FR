@@ -3,17 +3,17 @@ description: Modèles de version utilisés pour Microsoft Edge WebView2
 title: Comprendre les versions du SDK WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/17/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-ms.openlocfilehash: b292f59e264293a958eb619d04b751203cb517ac
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+keywords: IWebView2, IWebView2WebView, webview2, webview, applications wpf, wpf, edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, edge html
+ms.openlocfilehash: 18ae2b8feb9310798f78e67cbb767d0642d83d24
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461177"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535712"
 ---
 # <a name="understand-webview2-sdk-versions"></a>Comprendre les versions du SDK WebView2  
 
@@ -44,18 +44,18 @@ L’équipe WebView recherche des commentaires sur les API expérimentales qui p
 > Les API expérimentales peuvent être introduites, modifiées et supprimées du SDK vers le SDK.  Évitez d’utiliser les API expérimentales dans les applications de production.  
 
 > [!NOTE]
-> Il se peut que les API expérimentales ne soient pas disponibles dans votre version installée de WebView2 Runtime.  
+> Il se peut que les API expérimentales ne soient pas disponibles dans votre version installée du runtime WebView2.  
 
-## <a name="matching-webview2-runtime-versions"></a>Correspondance des versions d’runtime de WebView2  
+## <a name="matching-webview2-runtime-versions"></a>Correspondance des versions d’runtime WebView2  
 Les applications WebView2 nécessitent que les utilisateurs installent [un runtime WebView2.][MicrosoftDeveloperEdgeWebview2]  WebView2 Runtime est automatiquement mis à jour vers la dernière version disponible.  Dans certains scénarios, les utilisateurs peuvent vouloir arrêter les mises à jour automatiques du runtime WebView2, ce qui peut entraîner des problèmes de compatibilité des applications.  
 
 Si les mises à jour WebView2 Runtime sont arrêtées, assurez-vous que vous comprenez la version minimale du [runtime WebView2][MicrosoftDeveloperEdgeWebview2] requise par votre application.  Prenez en compte les deux éléments suivants :  
 
-1.  La version minimale requise du SDK pour charger correctement une instance webview2 se trouve dans les notes de publication [WebView2][Webview2Releasenotes] sous Version minimale de Microsoft Edge à **charger.**  La version minimale à charger requise par le SDK change uniquement lorsqu’une modification importante se produit sur la plateforme web.  Par exemple, pour la version [1.0.622.22][Webview2Releasenotes1062222]du SDK, vous devez installer [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] ou un canal [Microsoft Edge non stable][MicrosoftedgeinsiderDownload] avec un numéro de build ou une version plus `86.0.616.0` récente.   
-1.  La version minimale requise du package NuGet requise pour prendre en charge les interfaces et les API de votre application se trouve dans les [notes][Webview2Releasenotes] de publication WebView2 sous **Compatibilité complète des API.**  De nouvelles interfaces et API sont régulièrement ajoutées à WebView2.  Les API et interfaces regroupées dans un SDK nécessitent différentes versions de WebView2 Runtime, car les API et l’interface sont ajoutées au SDK à différents moments.  La version WebView2 Runtime requise correspond au numéro de build, le troisième numéro, de la version du SDK dans qui l’API a été introduite pour la première fois.  Par exemple, une nouvelle API ou interface ajoutée dans la version [1.0.622.22][Webview2Releasenotes1062222] du SDK nécessite la version Runtime webView2 ou une version `86.0.622.0` plus récente.  Une API ou une interface ajoutée dans une version ultérieure du SDK nécessite un runtime WebView2 qui a le même numéro de version que le SDK.  Pour vous aider à déterminer si la version Runtime de WebView2 prend en charge une interface ou une API, accédez à Déterminer l’exigence [d’utilisation de WebView2.](#determine-webview2-runtime-requirement)  
+1.  La version minimale requise du SDK pour charger correctement une instance webview2 se trouve dans les notes de publication [WebView2][Webview2ReleaseNotes] sous Minimum Microsoft Edge version à **charger.**  La version minimale à charger requise par le SDK change uniquement lorsqu’une modification importante se produit sur la plateforme web.  Par exemple, pour la version [1.0.622.22][Webview2ReleaseNotes1062222]du SDK, vous devez installer [webView2 Runtime][MicrosoftDeveloperEdgeWebview2] ou un canal [Microsoft Edge non stable][MicrosoftedgeinsiderDownload] avec un numéro de build ou un canal plus `86.0.616.0` récent.   
+1.  La version minimale requise du package NuGet requis pour prendre en charge les interfaces et les API de votre application se trouve dans les [notes][Webview2ReleaseNotes] de publication WebView2 sous Compatibilité complète des **API.**  De nouvelles interfaces et API sont régulièrement ajoutées à WebView2.  Les API et interfaces regroupées dans un SDK nécessitent différentes versions de WebView2 Runtime, car les API et l’interface sont ajoutées au SDK à différents moments.  La version WebView2 Runtime requise correspond au numéro de build, le troisième numéro, de la version du SDK dans qui l’API a été introduite pour la première fois.  Par exemple, une nouvelle API ou interface ajoutée dans la version [1.0.622.22][Webview2ReleaseNotes1062222] du SDK nécessite la version Runtime webView2 ou une version `86.0.622.0` plus récente.  Une API ou une interface ajoutée dans une version ultérieure du SDK nécessite un runtime WebView2 qui a le même numéro de version que le SDK.  Pour vous aider à déterminer si la version Runtime de WebView2 prend en charge une interface ou une API, accédez à Déterminer l’exigence [d’utilisation de WebView2.](#determine-webview2-runtime-requirement)  
     
 > [!IMPORTANT]
-> Lorsque vous développez des applications [WebView2][Webview2ConceptsDistributionEvergreenDistributionMode]persistantes, testez régulièrement votre application par rapport aux dernières versions du Runtime WebView2 et des canaux Microsoft Edge non stables.  Étant donné que la plateforme web évolue constamment, des tests réguliers sont le meilleur moyen de s’assurer que votre application se exécute comme prévu.  
+> Lorsque vous développez des applications [WebView2][Webview2ConceptsDistributionEvergreenDistributionMode]persistantes, testez régulièrement votre application par rapport aux versions les plus récentes du runtime WebView2 et aux canaux Microsoft Edge non stables.  Étant donné que la plateforme web évolue constamment, des tests réguliers sont la meilleure façon de s’assurer que votre application s’exécute comme prévu.  
 
 ### <a name="determine-webview2-runtime-requirement"></a>Déterminer l’exigence d’un runtime WebView2  
 
@@ -79,10 +79,10 @@ After you have used a particular version of the SDK to build your app, your app 
 <!--links -->  
 
 [Webview2ConceptsDistributionEvergreenDistributionMode]: ./distribution.md#evergreen-distribution-mode "Mode de distribution persistant : distribution des applications à l’aide de WebView2 | Documents Microsoft"  
-[Webview2Releasenotes]: ../releasenotes.md "Notes de publication du SDK WebView2 | Documents Microsoft"  
-[Webview2Releasenotes1062222]: ../releasenotes.md#1062222 "1.0.622.22 - Notes de publication du SDK WebView2 | Documents Microsoft"   
+[Webview2ReleaseNotes]: ../release-notes.md "Notes de publication du SDK WebView2 | Documents Microsoft"  
+[Webview2ReleaseNotes1062222]: ../release-notes.md#1062222 "1.0.622.22 - Notes de publication du SDK WebView2 | Documents Microsoft"   
 
-[DeployedgeChannels]: /deployedge/microsoft-edge-channels "Vue d’ensemble des canaux Microsoft Edge | Documents Microsoft"  
+[DeployedgeChannels]: /deployedge/microsoft-edge-channels "Vue d’ensemble des Microsoft Edge de | Documents Microsoft"  
 
 [DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Espace de noms Microsoft.Web.WebView2.Core | Documents Microsoft"  
 [DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Espace de noms Microsoft.Web.WebView2.Wpf | Documents Microsoft"  

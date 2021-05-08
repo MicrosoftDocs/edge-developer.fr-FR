@@ -3,19 +3,19 @@ description: Conventions de l’API Win32 C++ WebView2
 title: Conventions de l’API Win32 C++ WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-ms.openlocfilehash: b47e53a4846d4bb662ae108c6445a6c2a615722a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: b5a86751bfe3386058812ca166fa7cf9e0e201dc
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11470857"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535642"
 ---
-# <a name="win32-c-webview2-api-conventions"></a>Conventions de l’API Win32 C++ WebView2  
+# <a name="win32-c-webview2-api-conventions"></a>Conventions de l’API WebView2 Win32 C++  
 
 :::row:::
    :::column span="1":::
@@ -79,16 +79,16 @@ void ScriptComponent::InjectScript()
 
 ## <a name="events"></a>Événements  
 
-Les événements dans l’API C++ Win32 WebView2 utilisent la paire méthode et abonnement pour s’abonner à des événements et `add_EventName` `remove_EventName` s’en désabonner.  La `add_EventName` méthode prend une interface déléguée de handler d’événements et retourne un `EventRegistrationToken` jeton en tant que paramètre de sortie.  La `remove_EventName` méthode prend un `EventRegistrationToken` jeton et désabonner l’abonnement à l’événement correspondant.  
+Les événements dans l’API C++ Win32 WebView2 utilisent la paire méthode et abonnement pour s’abonner à des événements et `add_EventName` `remove_EventName` s’en désabonner.  La `add_EventName` méthode prend une interface déléguée de gestion d’événements et retourne un `EventRegistrationToken` jeton en tant que paramètre de sortie.  La `remove_EventName` méthode prend un `EventRegistrationToken` jeton et désabonner l’abonnement à l’événement correspondant.  
 
-Les interfaces déléguées du handler d’événements fonctionnent de la même manière que les interfaces déléguées de la méthode async terminées.  Vous implémentez l’interface déléguée du handler d’événements et envoyez un rappel chaque `CoreWebView2` fois que l’événement s’exécute.  Chaque interface déléguée du handler d’événements possède une seule méthode qui possède un paramètre `Invoke` d’expéditeur suivi d’un paramètre d’rgs d’événement.  L’expéditeur est l’instance de l’objet auquel vous vous êtes abonné pour les événements.  Le paramètre args d’événement est une interface qui contient des informations sur l’événement en cours de tir.  
+Les interfaces déléguées du handler d’événements fonctionnent de la même manière que les interfaces déléguées de la méthode async terminées.  Vous implémentez l’interface déléguée du handler d’événements et envoyez un rappel chaque `CoreWebView2` fois que l’événement s’exécute.  Chaque interface déléguée du handler d’événements possède une seule méthode qui possède un paramètre d’expéditeur suivi d’un paramètre `Invoke` d’rgs d’événement.  L’expéditeur est l’instance de l’objet auquel vous vous êtes abonné pour les événements.  Le paramètre args d’événement est une interface qui contient des informations sur l’événement en cours de tir.  
 
 Par exemple, `NavigationCompleted` l’événement sur a la paire méthode et la `ICoreWebView2` `ICoreWebView2::add_NavigationCompleted` `ICoreWebView2::remove_NavigationCompleted` paire.  Lorsque vous envoyez une demande, vous fournissez une instance dans laquelle `ICoreWebView2NavigationCompletedEventHandler` vous avez précédemment implémenté la `Invoke` méthode.  Lorsque `NavigationCompleted` l’événement s’exécute, `Invoke` votre méthode est demandée.  Le premier paramètre exécute `NavigationCompleted` l’événement.  Le deuxième paramètre contient des informations sur la réussite de la navigation, etc.  
 
 À l’exemple de l’interface déléguée de handler terminée de la méthode async, utilisez l’une des actions suivantes pour la configurer.  
 
 *   Implémentez-le directement.  
-*   Utilisez la [fonction WRL (Callback Function)][CppCxWrlCallbackFunction] utilisée dans l’extrait de code WebView2 suivant.  
+*   Utilisez la [fonction WRL (Callback function)][CppCxWrlCallbackFunction] qui est utilisée dans l’extrait de code WebView2 suivant.  
 
 <!-- todo:  what is async method completed handler delegate interface?  Is there a shorter name for it?  -->  
 
@@ -129,7 +129,7 @@ Les paramètres d’entrée de chaîne `LPCWSTR` sont des chaînes terminées pa
 
 ## <a name="uri-and-json-parsing"></a>URI et l’doncsiation JSON  
 
-Diverses méthodes fournissent ou acceptent des URS et JSON sous forme de chaînes.  Utilisez votre bibliothèque préférée pour l’utilisation et la génération des chaînes.  
+Diverses méthodes fournissent ou acceptent des URS et JSON en tant que chaînes.  Utilisez votre bibliothèque préférée pour l’utilisation et la génération des chaînes.  
 
 Si WinRT est disponible pour votre application, vous pouvez utiliser les méthodes et les méthodes pour parer ou produire des chaînes ou des méthodes JSON pour l' `RuntimeClass_Windows_Data_Json_JsonObject` `IJsonObjectStatics` `RuntimeClass_Windows_Foundation_Uri` `IUriRuntimeClassFactory` URIS.  Les deux méthodes fonctionnent dans les applications Win32.  
 
@@ -141,8 +141,8 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 ## <a name="see-also"></a>Voir également  
 
-*   To get started using WebView2 Win32 C/C++, navigate to [Getting started with WebView2][Webview2IndexGettingStarted] guides.  
-*   Pour plus d’informations sur les API WebView2, accédez à la [référence d’API.][DotnetApiMicrosoftWebWebview2WpfWebview2]  
+*   To get started using WebView2 Win32 C/C++, navigate to [Get started with WebView2][Webview2IndexGetStarted] guides.  
+*   Pour plus d’informations sur les API WebView2, accédez à la référence [d’API.][DotnetApiMicrosoftWebWebview2WpfWebview2]  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe Microsoft Edge WebView  
 
@@ -150,7 +150,7 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 <!-- links -->  
 
-[Webview2GettingstartedWin32]: ../gettingstarted/win32.md "Getting started with WebView2 | Documents Microsoft"  
+[Webview2GetStartedWin32]: ../get-started/win32.md "Commencer à prendre en | WebView2 Documents Microsoft"  
 
 [Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview - interface ICoreWebView2 | Documents Microsoft"  
 

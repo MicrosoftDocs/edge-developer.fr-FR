@@ -1,21 +1,21 @@
 ---
-description: Modèle de thread
+description: Modèle de filetage
 title: Modèle de thread | WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/29/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-ms.openlocfilehash: 7b447f5cc5fcce3439166638d47a0b87e5536c0a
-ms.sourcegitcommit: 5e218b24fb21fcfa9c82b99f17373fed1ba5a21c
+keywords: IWebView2, IWebView2WebView, webview2, webview, applications wpf, wpf, edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, edge html
+ms.openlocfilehash: 9a7ce3d66e53b832d4430afb153e6539d97e5db7
+ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "11462042"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "11535607"
 ---
-# <a name="threading-model"></a>Modèle de thread 
+# <a name="threading-model"></a>Modèle de filetage 
 
 :::row:::
    :::column span="1":::
@@ -37,11 +37,11 @@ La seule exception concerne la `Content` propriété de `CoreWebView2WebResource
 ## <a name="re-entrancy"></a>Ré-entrancy  
 
 Les rappels, y compris les handleurs d’événements et de fin d’exécution, s’exécutent en série.  
-Une fois que vous avez exécuté un handler d’événements et commencé une boucle de messages, vous ne pouvez exécuter aucun rappel de fin ou de handle d’événement de manière réentrante.  
+Une fois que vous avez exécuté un handler d’événements et que vous avez commencé une boucle de messages, vous ne pouvez exécuter aucun rappel de fin ou de handle d’événement de manière réentrante.  
 
 ## <a name="deferrals"></a>Reports  
 
-Certains événements WebView2 lisent les valeurs définies sur les arguments d’événements associés ou démarrent une action une fois que le handler d’événements est terminé.  Si vous devez également exécuter une opération asynchrone de ce type de handler d’événements, utilisez la méthode sur les arguments d’événement `GetDeferral` des événements associés.  L’objet renvoyé garantit que le handler d’événements n’est pas considéré comme étant terminé tant que `Deferral` la méthode de l’objet `Complete` `Deferral` n’est pas demandée.  
+Certains événements WebView2 lisent les valeurs définies sur les arguments d’événements associés ou démarrent une action une fois que le handler d’événements est terminé.  Si vous devez également exécuter une opération asynchrone de ce type de handler d’événements, utilisez la méthode sur les arguments d’événement `GetDeferral` des événements associés.  L’objet renvoyé garantit que le handler d’événements n’est pas considéré comme étant terminé tant que `Deferral` `Complete` la méthode `Deferral` n’est pas demandée.  
 
 Par exemple, vous pouvez utiliser l’événement pour fournir une fenêtre à connecter en tant qu’enfant `NewWindowRequested` lorsque le handler d’événements se `CoreWebView2` termine.  Mais si vous devez créer de manière asynchrone la `CoreWebView2` , demandez la méthode sur le `GetDeferral` `NewWindowRequestedEventArgs` .  Une fois que vous avez créé de manière asynchrone la propriété et que vous l’avez définie sur l’objet , la requête sur l’objet est renvoyée `CoreWebView2` à `NewWindow` l’aide de la `NewWindowRequestedEventArgs` `Complete` `Deferral` `GetDeferral` méthode.  
 
@@ -69,10 +69,10 @@ private async void Button_Click(object sender, EventArgs e)
 
 ## <a name="see-also"></a>Voir également  
 
-*   Pour commencer à utiliser WebView2, accédez aux guides de mise en page [WebView2.][Webview2IndexGettingStarted]  
+*   Pour commencer à utiliser WebView2, accédez aux guides de mise en page [WebView2.][Webview2IndexGetStarted]  
 *   Pour obtenir un exemple complet des fonctionnalités WebView2, accédez au référentiel [WebView2Samples][GithubMicrosoftedgeWebview2samples] sur GitHub.  
-*   Pour plus d’informations sur les API WebView2, accédez à la [référence d’API.][DotnetApiMicrosoftWebWebview2WpfWebview2]  
-*   Pour plus d’informations sur WebView2, accédez à [Ressources WebView2.][Webview2IndexNextSteps]  
+*   Pour plus d’informations sur les API WebView2, accédez à la référence [d’API.][DotnetApiMicrosoftWebWebview2WpfWebview2]  
+*   Pour plus d’informations sur WebView2, accédez [à Ressources WebView2.][Webview2IndexNextSteps]  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe Microsoft Edge WebView  
 
@@ -80,7 +80,7 @@ private async void Button_Click(object sender, EventArgs e)
 
 <!-- links -->  
 
-[Webview2IndexGettingStarted]: ../index.md#getting-started "Getting started - Introduction to Microsoft Edge WebView2 | Documents Microsoft"  
+[Webview2IndexGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Documents Microsoft"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Étapes suivantes : présentation de Microsoft Edge WebView2 | Documents Microsoft"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "Classe WebView2 | Documents Microsoft"  
