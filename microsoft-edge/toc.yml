@@ -365,6 +365,8 @@
           href: web-platform/tracking-prevention.md
         - name: Chaîne de l’agent utilisateur Microsoft Edge
           href: web-platform/user-agent-string.md
+        - name: Personnaliser le bouton de révélation du mot de passe
+          href: web-platform/password-reveal.md
     - name: Vue d’ensemble de Web We Want
       href: web-we-want/index.md
     - name: WebDriver
