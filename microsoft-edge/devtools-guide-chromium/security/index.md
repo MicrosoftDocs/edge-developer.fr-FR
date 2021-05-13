@@ -3,16 +3,16 @@ description: Utilisez le Panneau de sécurité pour vous assurer qu’une page e
 title: Comprendre les problèmes de sécurité avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 71138ad33afb9eb56055fa522eb35edb71974c89
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 2e6aab865319e6ed7d108cddb77432f293153995
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397775"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565035"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,7 @@ ms.locfileid: "11397775"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="understand-security-issues-with-microsoft-edge-devtools"></a>Comprendre les problèmes de sécurité avec Microsoft Edge DevTools  
-
-  
 
 <!--Use the **Security** Panel in [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to make sure HTTPS is properly implemented on a page.  Navigate to **Why HTTPS Matters** to learn why every website should be protected with HTTPS, even sites that do not handle sensitive user data.  -->  
 
@@ -61,7 +58,7 @@ Ce problème se produit lorsque l’URL que vous avez visitée a été demandée
 
 Si vous avez déjà configuré HTTPS sur votre serveur, il vous suffit de configurer votre serveur pour qu’il redirige toutes les requêtes HTTP vers HTTPS.  
 
-Si vous [n’avez][LetsEncrypt] pas installé HTTPS sur votre serveur, chiffrer offre un moyen gratuit et relativement simple de démarrer le processus.  Vous pouvez également envisager d’héberger votre site sur un CDN.  La plupart des PRINCIPAUX CDN hébergent des sites sur HTTPS par défaut maintenant.  
+Si vous [n’avez][LetsEncrypt] pas installé HTTPS sur votre serveur, chiffrer offre un moyen gratuit et relativement simple de démarrer le processus.  Vous pouvez également envisager d’héberger votre site sur une CDN.  La plupart des PRINCIPAUX CDN hébergent des sites sur HTTPS par défaut maintenant.  
 
 > [!TIP]
 > [L’indication Utiliser HTTPS][WebhintUseHttps] dans [webhint][Webhint] peut vous aider à automatiser le processus de s’assurer que toutes les requêtes HTTP sont dirigées vers HTTPS.  
@@ -104,8 +101,8 @@ Choisissez l’une des entrées du navigation gauche pour afficher les détails 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
-[DevToolsOpen]: ../open/index.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
+[DevToolsOpen]: ../open/index.md "Ouvrez Microsoft Edge devTools | Documents Microsoft"  
 
 [LetsEncrypt]: https://letsencrypt.org "Chiffrement - Certificats SSL/TLS gratuits"  
 
@@ -116,7 +113,7 @@ Choisissez l’une des entrées du navigation gauche pour afficher les détails 
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/security/index) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/security/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -124,4 +121,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -3,16 +3,16 @@ description: Découvrez comment évaluer les performances d’exécution dans Mi
 title: Commencer à analyser les performances d’exécution
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 439d6d4331550b7fc92bfc5fef4c3fc88df38872
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: f40f23c4ac9fcc0bb0186ddb96956f691890c0c0
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439611"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564272"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,12 @@ ms.locfileid: "11439611"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="get-started-with-analyzing-runtime-performance"></a>Commencer à analyser les performances d’exécution  
 
 > [!NOTE]
 > Pour découvrir comment accélérer le chargement de vos pages, accédez à Optimiser la vitesse [du site web.][DevtoolsSpeedGetStarted]  
 
-Les performances d’exécution sont les performances de votre page lorsqu’elle est en cours d’exécution, par opposition au chargement.  L’article de didacticiel suivant vous explique comment utiliser le panneau DevTools Performance de Microsoft Edge pour analyser les performances d’exécution.  En ce qui concerne le modèle **RAIL,** les compétences que vous apprenez dans ce didacticiel sont utiles pour analyser les phases de réponse, d’animation et d’inactivité de votre page.  
+Les performances d’exécution sont les performances de votre page lorsqu’elle est en cours d’exécution, par opposition au chargement.  L’article de didacticiel suivant vous explique comment utiliser Microsoft Edge panneau Performance de DevTools pour analyser les performances d’exécution.  En ce qui concerne le modèle **RAIL,** les compétences que vous apprenez dans ce didacticiel sont utiles pour analyser les phases de réponse, d’animation et d’inactivité de votre page.  
 
 <!--todo: add rail link when section is ready -->  
 
@@ -41,7 +40,7 @@ Les performances d’exécution sont les performances de votre page lorsqu’ell
 
 Dans le didacticiel suivant, vous ouvrez DevTools sur une page en direct et utilisez le panneau Performances pour trouver un goulot d’étranglement des performances sur la page. ****  
 
-1.  Ouvrez Microsoft Edge **en mode InPrivate.**  Le mode InPrivate garantit que Microsoft Edge s’exécute dans un état propre.  Par exemple, si un grand nombre d’extensions sont installées, elles peuvent créer du bruit dans vos mesures de performances.  
+1.  Ouvrez Microsoft Edge en **mode InPrivate.**  Le mode InPrivate garantit que Microsoft Edge s’exécute dans un état propre.  Par exemple, si un grand nombre d’extensions sont installées, elles peuvent créer du bruit dans vos mesures de performances.  
     
     <!--TODO: replace section when updated for new Edge  -->
     
@@ -58,7 +57,7 @@ Dans le didacticiel suivant, vous ouvrez DevTools sur une page en direct et util
     :::image-end:::  
     
     > [!NOTE]
-    > Pour le reste des figures, DevTools n’est pas resserpé à une fenêtre distincte pour mieux se concentrer sur le contenu. [][DevtoolsCustomizePlacement]  
+    > Pour le reste des figures, DevTools [n’est][DevtoolsCustomizePlacement] pas retenté dans une fenêtre distincte pour mieux se concentrer sur le contenu.  
     
 ### <a name="simulate-a-mobile-cpu"></a>Simuler une UC mobile  
 
@@ -66,7 +65,7 @@ Les appareils mobiles ont beaucoup moins de puissance processeur que les ordinat
 
 1.  Dans DevTools, choisissez **l’outil Performance.**  
 1.  Assurez-vous que vous choisissez la case à cocher en regard des **captures d’écran.**  
-1.  Choose **Capture Settings** \( ![ Capture Settings ](../media/capture-settings-icon.msft.png) \).  DevTools révèle les paramètres liés à la façon dont il capture les mesures de performances.  
+1.  Choose **Capture Paramètres** \( Capture Paramètres ![ ](../media/capture-settings-icon.msft.png) \).  DevTools révèle les paramètres liés à la façon dont il capture les mesures de performances.  
 1.  Pour **l’UC,** choisissez **un ralentissement 4x.**  DevTools permet de limiter votre processeur de sorte qu’il soit 4 fois plus lent que d’habitude.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="Limitation du processeur" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
@@ -81,17 +80,17 @@ Les appareils mobiles ont beaucoup moins de puissance processeur que les ordinat
 Il est difficile de créer une démonstration des performances d’exécution qui fonctionne de manière cohérente pour tous les lecteurs du site web.  La section suivante vous permet de personnaliser la démonstration pour vous assurer que votre expérience est relativement cohérente avec les captures d’écran et les descriptions, quelle que soit votre disposition particulière.
 
 1.  Choisissez le **bouton Ajouter 10** jusqu’à ce que les icônes bleues se déplacent sensiblement plus lentement qu’auparavant.  Sur un ordinateur haut de gamme, vous pouvez le choisir environ 20 fois.  
-1.  Choisissez **Optimiser.**  Les icônes bleues doivent se déplacer plus rapidement et plus fluidement.  
+1.  Choose **Optimize**.  Les icônes bleues doivent se déplacer plus rapidement et plus harmonieusement.  
     
     > [!NOTE]
     > Pour mieux afficher une différence entre les versions optimisées et non optimisées, sélectionnez le bouton **Soustraction 10** plusieurs fois et essayez à nouveau.  
     > Si vous ajoutez un trop grand nombre d’icônes bleues, il se peut que vous n’observiez pas de différence majeure dans les résultats des deux versions.  
     
-1.  Choose **Un-Optimize**.  Les icônes bleues se déplacent plus lentement et sont de nouveau plus lentes.  
+1.  Choose **Un-Optimize**.  Les icônes bleues se déplacent plus lentement et avec plus de lenteur.  
     
-### <a name="record-runtime-performance"></a>Enregistrer les performances d’exécution  
+### <a name="record-runtime-performance"></a>Performances d’exécution d’enregistrement  
 
-Lorsque vous avez publié la version optimisée de la page, les icônes bleues se déplacent plus rapidement.  Pourquoi?  Les deux versions sont supposées déplacer les icônes de la même quantité d’espace dans la même durée.  Prenez un enregistrement dans le panneau Performances pour découvrir comment détecter le goulot d’étranglement des performances dans la version non optimisée.  
+Lorsque vous avez publié la version optimisée de la page, les icônes bleues se déplacent plus rapidement.  Pourquoi?  Les deux versions sont supposées déplacer les icônes de la même quantité d’espace dans la même durée.  Prenez un enregistrement dans le panneau Performance pour découvrir comment détecter le goulot d’étranglement des performances dans la version non optimisée.  
 
 1.  Dans DevTools, choisissez **Record** \( ![ Record ](../media/record-icon.msft.png) \).  DevTools capture les mesures de performances au cours de l’exécution de la page.  
     
@@ -112,9 +111,9 @@ Wow, il s’agit d’une quantité considérable de données.  ne vous inquiéte
 
 Après avoir enregistré les performances de la page, mesurez la qualité des performances de la page et trouvez les causes.  
 
-### <a name="analyze-frames-per-second"></a>Analyser des images par seconde  
+### <a name="analyze-frames-per-second"></a>Analyser les images par seconde  
 
-La mesure principale pour mesurer les performances d’une animation est l’image par seconde \(FPS\).  Les utilisateurs sont satisfaits lorsque les animations s’exécutent à 60 FPS.  
+La mesure principale pour mesurer les performances d’une animation est une image par seconde \(FPS\).  Les utilisateurs sont satisfaits lorsque les animations s’exécutent à 60 FPS.  
 
 1.  Examinez **le graphique FPS.**  Chaque fois qu’une barre rouge est affichée au-dessus de **FPS,** cela signifie que la vitesse d’images est si basse qu’elle nuit probablement à l’expérience utilisateur.  En règle générale, plus la barre verte est élevée, plus le FPS est élevé.  
     
@@ -151,7 +150,7 @@ Un autre outil pratique est la jauge FPS, qui fournit des estimations en temps r
 1.  Dans **l’outil de** rendu, allumez **la jauge FPS.**  Une nouvelle superposition apparaît dans le haut à droite de votre vue.  
     
     :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="Indicateur FPS" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
-       Indicateur **FPS**  
+       La **jauge FPS**  
         :::image-end:::  
     
 1.  Désactiver la jauge **FPS** et choisir de `Escape` fermer l’outil **de** rendu.  Vous n’utilisez pas la **jauge FPS** dans ce didacticiel.  
@@ -227,8 +226,8 @@ To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->
 
 Pour vous mettre à l’aise avec **l’outil Performance,** la pratique est parfaite.  Essayez de profiler vos pages et d’analyser les résultats.  Si vous avez des questions sur **** vos résultats, utilisez l’icône Envoyer des commentaires, sélectionnez `Alt` + `Shift` + `I` \(Windows, Linux\), `Option` + `Shift` + `I` sélectionnez \(macOS\) ou tweetez l’équipe [DevTools.][TwitterEdgeDevtools]  Incluez des captures d’écran ou des liens vers des pages reproductibles, si possible.  
 
-:::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="Icône **Commentaires** dans Microsoft Edge DevTools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
-   Icône **Envoyer des commentaires** dans Microsoft Edge DevTools  
+:::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="Icône **Commentaires** dans la Microsoft Edge DevTools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
+   Icône **Envoyer des commentaires** dans le Microsoft Edge DevTools  
 :::image-end:::  
 
 <!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance Overview][RenderingPerformance].  [The Anatomy Of A Frame][FrameAnatomy] dives into even more detail.  -->  
@@ -250,7 +249,7 @@ Enfin, il existe de nombreuses façons d’améliorer les performances d’exéc
 
 <!-- links -->
 
-[DevtoolsCustomizePlacement]: ../customize/placement.md "Modifier l’emplacement de Microsoft Edge DevTools (Undock, Dock to Bottom, Dock To Left)"  
+[DevtoolsCustomizePlacement]: ../customize/placement.md "Modifier Microsoft Edge placement de DevTools (Undock, Dock To Bottom, Dock To Left)"  
 [DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimiser la vitesse du site web avec Microsoft Edge DevTools"  
 
 [TwitterEdgeDevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "EdgeDevTools - Publier un tweet | Twitter"  
@@ -276,7 +275,7 @@ Enfin, il existe de nombreuses façons d’améliorer les performances d’exéc
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -284,4 +283,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

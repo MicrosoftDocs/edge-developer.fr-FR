@@ -3,16 +3,16 @@ description: Hébergez un site sur un serveur web d’ordinateur de développeme
 title: Accéder aux serveurs locaux
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 51ef0d951d587d310b6474698924d9f87cf68607
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: 2d721a0ccd27befc7a59726f4c5ef9227042b30b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461261"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565091"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -35,12 +35,12 @@ Avec un câble USB et Microsoft Edge DevTools, exécutez un site à partir d’u
 
 ### <a name="summary"></a>Résumé  
 
-*   Le portage vous permet d’afficher le contenu hébergé par le serveur web s’exécutant sur votre ordinateur de développement sur votre appareil Android.  
+*   Le portage vous permet d’afficher le contenu hébergé par le serveur web en cours d’exécution sur votre ordinateur de développement sur votre appareil Android.  
 *   Si votre serveur web utilise un domaine personnalisé, configurer votre appareil Android pour accéder au contenu de ce domaine avec le mappage de domaine personnalisé.  
 
 ## <a name="set-up-port-forwarding"></a>Configurer le forwarding de port  
 
-Le portage permet à votre appareil Android d’accéder au contenu hébergé sur le serveur web en cours d’exécution sur votre ordinateur de développement.  Le portage fonctionne en créant un port TCP d’écoute sur votre appareil Android qui est mappé à un port TCP sur votre ordinateur de développement.  Le trafic entre les ports passe par la connexion USB entre votre appareil Android et votre ordinateur de développement, de sorte que la connexion ne dépend pas de votre configuration réseau.  
+Le portage permet à votre appareil Android d’accéder au contenu hébergé sur le serveur web en cours d’exécution sur votre ordinateur de développement.  Le portage fonctionne en créant un port TCP d’écoute sur votre appareil Android qui est mappé à un port TCP sur votre ordinateur de développement.  Le trafic entre les ports passe par la connexion USB entre votre appareil Android et votre ordinateur de développement, de sorte que la connexion ne dépend pas de la configuration de votre réseau.  
 
 Pour activer le portage :  
 
@@ -52,8 +52,8 @@ Pour activer le portage :
        Ajout d’une règle de forwarding de port  
     :::image-end:::  
     
-1.  Dans la **zone de texte** Du port de l’appareil sur la gauche, entrez le numéro de port à partir duquel vous souhaitez pouvoir accéder au site sur votre appareil `localhost` Android.  Par exemple, si vous souhaitez accéder au site à partir `localhost:5000` `5000` d’entrée.  
-1.  Dans **** la zone de texte Adresse locale à droite, entrez l’adresse IP ou le nom d’hôte sur lequel votre site est hébergé sur le serveur web en cours d’exécution sur votre ordinateur de développement, suivi du numéro de port.  Par exemple, si votre site est en cours d’exécution sur `localhost:7331` entrée `localhost:7331` .  
+1.  Dans la **zone de texte** Port de l’appareil à gauche, entrez le numéro de port à partir duquel vous souhaitez pouvoir accéder au site sur votre appareil `localhost` Android.  Par exemple, si vous souhaitez accéder au site à partir `localhost:5000` `5000` d’entrée.  
+1.  Dans **** la zone de texte Adresse locale à droite, entrez l’adresse IP ou le nom d’hôte sur lequel votre site est hébergé sur le serveur web en cours d’exécution sur votre ordinateur de développement, suivi du numéro de port.  Par exemple, si votre site est en cours d’exécution lors de `localhost:7331` `localhost:7331` l’entrée.  
 1.  Choose **Add**.  
     
 Le forwarding de port est maintenant installé.  Examinez l’indicateur d’état du port avant sous l’onglet de votre appareil dans la boîte de dialogue **Inspecter les appareils.**  
@@ -70,9 +70,9 @@ Le mappage de domaine personnalisé vous permet d’afficher le contenu sur un a
 
 Par exemple, supposons que votre site utilise une bibliothèque JavaScript tierce qui fonctionne uniquement sur le `microsoft-edge.devtools` domaine.  Par exemple, vous créez une entrée dans votre fichier sur votre ordinateur de développement pour ma cartographier ce domaine sur `hosts` `localhost` \(par `127.0.0.1 microsoft-edge.devtools` exemple, \).  Après avoir mis en place le mappage de domaine personnalisé et le forwarding de port, affichez le site sur votre appareil Android à `microsoft-edge.devtools` l’URL.  
 
-### <a name="set-up-port-forwarding-to-proxy-server"></a>Configurer le port de forwarding vers le serveur proxy  
+### <a name="set-up-port-forwarding-to-proxy-server"></a>Configurer le forwarding de port vers le serveur proxy  
 
-Pour ma cartographier un domaine personnalisé, vous devez exécuter un serveur proxy sur votre ordinateur de développement.  Par exemple, les serveurs proxy [sont Charles][CharlesWebDebuggingProxy], Fiddler et [Fiddler.][FiddlerWebDebuggingProxy] [][SquidOptimisingWebDelivery]  
+Pour ma cartographier un domaine personnalisé, vous devez exécuter un serveur proxy sur votre ordinateur de développement.  Par exemple, les serveurs proxy [sont Charles][CharlesWebDebuggingProxy], Fiddler et [Fiddler.][TelerikFiddler] [][SquidCacheWiki]  
 
 Pour configurer le port de forwarding vers un proxy :  
 
@@ -87,7 +87,7 @@ Pour configurer le port de forwarding vers un proxy :
 
 Ensuite, vous devez configurer votre appareil Android pour communiquer avec le serveur proxy.  
 
-1.  Sur votre appareil Android, accédez à **Paramètres**  >  **Wi-Fi**.  
+1.  Sur votre appareil Android, accédez à **Paramètres**  >  **Wi-Fi.**  
 1.  Appuyez longuement sur le nom du réseau auquel vous êtes actuellement connecté.  
     
     > [!NOTE]
@@ -104,7 +104,7 @@ Avec ces paramètres, votre appareil forwarde toutes ses demandes au proxy sur v
 
 Accédez maintenant à des domaines personnalisés sur votre appareil Android, comme sur l’ordinateur de développement.  
 
-Si votre serveur web s’exécute hors d’un port non standard, n’oubliez pas de spécifier le port lorsque vous demandez le contenu à partir de votre appareil Android.  Par exemple, si votre serveur web utilise le domaine personnalisé sur le port, lorsque vous affichez le site à partir de votre appareil Android, vous devez utiliser `microsoft-edge.devtools` `7331` l’URL `microsoft-edge.devtools:7331` .  
+Si votre serveur web s’exécute hors d’un port non standard, n’oubliez pas de spécifier le port lorsque vous demandez le contenu à partir de votre appareil Android.  Par exemple, si votre serveur web utilise le domaine personnalisé sur le port, lorsque vous affichez le site à partir de votre appareil Android, vous devez utiliser `microsoft-edge.devtools` `7331` l’URL. `microsoft-edge.devtools:7331`  
 
 > [!TIP]
 > Pour reprendre la navigation normale, n’oubliez pas de revenir aux paramètres proxy de votre appareil Android après vous être déconnecté de l’ordinateur de développement.  
@@ -119,9 +119,9 @@ Si votre serveur web s’exécute hors d’un port non standard, n’oubliez pas
 
 [CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Proxy de débogage Web Charles"  
 
-[SquidOptimisingWebDelivery]: https://www.squid-cache.org "programme d’optimisation de la distribution web"  
+[SquidCacheWiki]: https://wiki.squid-cache.org "Wiki proxy wiki de"  
 
-[FiddlerWebDebuggingProxy]: https://www.telerik.com/fiddler "Fiddler - Proxy de débogage web gratuit"  
+[TelerikFiddler]: https://www.telerik.com/fiddler "Fiddler - Proxy de débogage web gratuit"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
@@ -133,5 +133,5 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

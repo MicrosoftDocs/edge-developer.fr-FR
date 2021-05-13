@@ -3,16 +3,16 @@ description: Didacticiel sur les fonctionnalités réseau les plus populaires da
 title: Inspecter l’activité réseau dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: a4a552fa9a45267a6ffa4a4e83e7ebc4e1817162
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 63a0c8dc1d481ee3fba93146c2e2925bbdd07203
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439695"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565042"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439695"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="inspect-network-activity-in-microsoft-edge-devtools"></a>Inspecter l’activité réseau dans Microsoft Edge DevTools  
 
 Il s’agit d’un didacticiel pratique de certaines des fonctionnalités de DevTools les plus couramment utilisées liées à l’inspection de l’activité réseau d’une page.  
@@ -55,7 +54,7 @@ Si vous recherchez des moyens d’améliorer les performances de chargement de p
 
 Pour obtenir le meilleur de ce didacticiel, ouvrez la démonstration et testez les fonctionnalités sur la page de démonstration.  
 
-1.  Ouvrez la [démonstration de mise en place.][GlitchNetworkGetStarted]  
+1.  Ouvrez [la démonstration Prise en main.][GlitchNetworkGetStarted]  
     
     :::image type="complex" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="Démonstration" lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
        Démonstration  
@@ -105,7 +104,7 @@ Pour afficher l’activité réseau qu’une page provoque :
 
     *   **État**.  Code d’état HTTP pour la réponse.  
     *   **Type**.  Type de ressource.  
-    *   **Initiateur**.  Cause de la demande de ressource.  La mise en place d’un lien dans la colonne Initiator vous permet d’obtenir le code source à l’origine de la demande.  
+    *   **Initiateur**.  Cause de la demande de ressource.  La mise en place d’un lien dans la colonne Initiateur vous permet d’obtenir le code source à l’origine de la demande.  
     *   **Heure**.  Durée de la demande.  
     *   **Cascade**.  Représentation graphique des différentes étapes de la demande.  Pour afficher une répartition, pointez sur une cascade.  
     
@@ -115,7 +114,7 @@ Pour afficher l’activité réseau qu’une page provoque :
 1.  Après avoir ouvert DevTools, il enregistre l’activité réseau dans le journal réseau.  
     Pour le montrer, regardez d’abord le bas du journal réseau et notez la dernière activité. ****  
 1.  Sélectionnez maintenant le **bouton Obtenir les** données dans la démonstration.  
-1.  Regardez de nouveau le bas du **journal** réseau.  Une nouvelle ressource nommée `getstarted.json` s’affiche.  Pour que la page web demande le fichier, sélectionnez le **bouton Obtenir des** données.  
+1.  Regardez de nouveau le bas du **journal** réseau.  Une nouvelle ressource nommée `getstarted.json` s’affiche.  Pour que la page web demande le fichier, choisissez le **bouton Obtenir des** données.  
     
     :::image type="complex" source="../media/network-glitch-network-new-resource.msft.png" alt-text="Une nouvelle ressource dans le journal réseau" lightbox="../media/network-glitch-network-new-resource.msft.png":::
        Une nouvelle ressource dans le **journal réseau**  
@@ -137,7 +136,7 @@ Il existe également de nombreuses colonnes qui sont masquées par défaut et qu
     
 ## <a name="simulate-a-slower-network-connection"></a>Simuler une connexion réseau plus lente  
 
-La connexion réseau de l’ordinateur que vous utilisez pour créer des sites est probablement plus rapide que les connexions réseau des appareils mobiles de vos utilisateurs.  En limitation de la page, vous obtenez une meilleure idée du temps de chargement d’une page sur un appareil mobile.  
+La connexion réseau de l’ordinateur que vous utilisez pour créer des sites est probablement plus rapide que les connexions réseau des appareils mobiles de vos utilisateurs.  En limitation de la page, vous avez une meilleure idée du temps de chargement d’une page sur un appareil mobile.  
 
 1.  Choose the **Throttling** dropdown, which is set to **Online** by default.  
     
@@ -145,19 +144,19 @@ La connexion réseau de l’ordinateur que vous utilisez pour créer des sites e
        Activer la limitation  
     :::image-end:::  
     
-1.  Choisissez **Slow 3G**.  
+1.  Choose **Slow 3G**.  
     
     :::image type="complex" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="Choose Slow 3G" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
        Choose Slow 3G  
     :::image-end:::  
     
-1.  Appuyez **longuement sur Recharger** \( Recharger \), puis choisissez ![ Cache vide et ](../media/refresh-icon.msft.png) **Rechargement dur.**  
+1.  Appuyez **longuement sur Recharger** \( Rechargez \), puis choisissez ![ Cache vide et ](../media/refresh-icon.msft.png) **Rechargement dur.**  
     
     :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="Cache vide et rechargement dur" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
        **Cache vide et rechargement dur**  
     :::image-end:::  
     
-    Lors des visites répétées, le navigateur sert généralement certains fichiers à partir du [cache,][MDNHTTPCache]ce qui accélère le chargement de la page.  **Le cache vide et le rechargement dur** forcent le navigateur à se rendre sur le réseau pour toutes les ressources.  Utilisez-le pour afficher la façon dont un premier visiteur subit un chargement de page.  
+    Lors des visites répétées, le navigateur sert généralement certains fichiers à partir du [cache,][MDNHTTPCache]ce qui accélère le chargement de la page.  **Le cache vide et le rechargement dur** forcent le navigateur à se rendre sur le réseau pour toutes les ressources.  Utilisez-le pour afficher la façon dont un premier visiteur fait l’expérience d’un chargement de page.  
     
     > [!NOTE]
     > Le **flux de travail Cache vide et Rechargement** dur n’est disponible que lorsque DevTools est ouvert.  
@@ -166,7 +165,7 @@ La connexion réseau de l’ordinateur que vous utilisez pour créer des sites e
 
 Les captures d’écran affichent l’apparence d’une page web au fil du temps pendant son chargement.  
 
-1.  Sélectionnez \( ![ Paramètres réseau \) et ](../media/settings-icon.msft.png) cochez la case Capturer les **captures d’écran.**
+1.  Choisissez \( ![ Paramètres réseau \) et ](../media/settings-icon.msft.png) cochez la case Capture **d’écran.**
 1.  Actualisez la page à l’aide **du cache vide et du flux de travail de rechargement** dur.  Si vous [avez besoin](#simulate-a-slower-network-connection) d’un rappel sur la façon de le faire, accédez à Simuler une connexion plus lente.  
     Le panneau Captures d’écran fournit des miniatures de l’aperçu de la page à différents points pendant le processus de chargement.  
     
@@ -201,14 +200,14 @@ Choisissez une ressource pour en savoir plus à son sujet.  Essayez maintenant :
     
     Le panneau est utile lorsqu’une API renvoie un code d’erreur au format HTML.  Il peut être plus facile de lire le code HTML rendu que le code source HTML, ou lorsque vous examinez des images.  
 
-1.  Choisissez le **panneau de** réponse.  Le code source HTML est affiché.  
+1.  Sélectionnez **le panneau de** réponse.  Le code source HTML est affiché.  
     
     :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="Panneau de réponse" lightbox="../media/network-glitch-network-resources-response.msft.png":::
        Panneau **de** réponse  
     :::image-end:::  
     
     > [!TIP]
-    > Lorsqu’un fichier est minifié, sélectionnez le bouton **Format** \( Format \) en bas du panneau De réponse pour re-mettre en forme le contenu du fichier pour plus de ![ ](../media/format-icon.msft.png) **** lisibilité.  
+    > Lorsqu’un fichier est minifié, sélectionnez le bouton **Format** \( Format \) en bas du panneau De réponse pour re-mettre en forme le contenu du fichier pour une ![ ](../media/format-icon.msft.png) **** lisibilité.  
     
 1.  Sélectionnez **le panneau De minutage.**  Une répartition de l’activité réseau de la ressource s’affiche.  
     
@@ -276,13 +275,13 @@ La **zone de** texte Filtre prend en charge différents types de filtrage.
        Un filtre de chaîne  
     :::image-end:::  
     
-1.  Entrez `/.*\.[cj]s+$/`.  DevTools filtre toute ressource dont le nom de fichier ne se termine pas par un ou plusieurs `j` `c` `s` caractères.  
+1.  Tapez `/.*\.[cj]s+$/`.  DevTools filtre toutes les ressources dont le nom de fichier ne se termine pas par un ou plusieurs `j` `c` `s` caractères.  
     
     :::image type="complex" source="../media/network-glitch-network-filter-regex.msft.png" alt-text="Filtre d’expression régulière" lightbox="../media/network-glitch-network-filter-regex.msft.png":::
        Filtre d’expression régulière  
     :::image-end:::  
     
-1.  Entrez `-main.css`.  DevTools filtre les `main.css` sorties.  Si un fichier correspond au modèle, son sein est également filtré.  
+1.  Tapez `-main.css`.  DevTools filtre les `main.css` sorties.  Si un fichier correspond au modèle, son sein est également filtré.  
     
     :::image type="complex" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="Un filtre négatif" lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
        Un filtre négatif  
@@ -320,7 +319,7 @@ Pour les autres flux de travail de filtrage, accédez à [Filtrer les demandes.]
 
 ## <a name="block-requests"></a>Bloquer les demandes  
 
-Comment se comporte une page lorsque certaines ressources de page ne sont pas disponibles ?  Échoue-t-elle complètement ou est-elle encore quelque peu fonctionnelle ?  Bloquez les demandes pour savoir :  
+Comment se comporte une page lorsque certaines ressources de page ne sont pas disponibles ?  Échoue-t-elle complètement ou est-elle encore quelque peu fonctionnelle ?  Bloquer les demandes pour savoir :  
 
 1.  Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le **menu Commande.**  
     
@@ -335,7 +334,7 @@ Comment se comporte une page lorsque certaines ressources de page ne sont pas di
     :::image-end:::  
     
 1.  Choose **Add Pattern** \( Add Pattern ![ ](../media/add-icon.msft.png) \).  
-1.  Entrez `main.css`.  
+1.  Tapez `main.css`.  
     
     :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Blocage de main.css" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
        Blocage `main.css`  
@@ -355,7 +354,7 @@ Comment se comporte une page lorsque certaines ressources de page ne sont pas di
 
 ## <a name="conclusion"></a>Conclusion  
 
-Félicitations, vous avez terminé le didacticiel.  Vous savez maintenant comment utiliser l’outil **Réseau** dans Microsoft Edge DevTools !
+Félicitations, vous avez terminé le didacticiel.  Vous savez maintenant comment **** utiliser l’outil Réseau dans le Microsoft Edge DevTools !
 
 Accédez à la [Référence réseau][DevtoolsNetworkReference] pour découvrir d’autres fonctionnalités DevTools liées à l’inspection de l’activité réseau.  
 
@@ -367,21 +366,21 @@ Accédez à la [Référence réseau][DevtoolsNetworkReference] pour découvrir d
 
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->  
 
-[DevToolsCustomizePlacement]: ../customize/placement.md "Modifier le placement de Microsoft Edge DevTools | Documents Microsoft"  
+[DevToolsCustomizePlacement]: ../customize/placement.md "Modifier Microsoft Edge placement de DevTools | Documents Microsoft"  
 [DevtoolsNetworkReference]: ./reference.md "Référence de l’analyse réseau | Documents Microsoft"
-[DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Demandes de filtrage : référence de l’analyse réseau | Documents Microsoft"  
+[DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Demandes de filtre : référence de l’analyse réseau | Documents Microsoft"  
 [DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Masquer le volet Vue d’ensemble - Référence de l’analyse réseau | Documents Microsoft"
 [DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Filtrer les demandes par propriétés : référence de l’analyse réseau | Documents Microsoft"
-[DevToolsOpen]: ../open/index.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimiser la vitesse du site web avec Microsoft Edge DevTools | Documents Microsoft"  
+[DevToolsOpen]: ../open/index.md "Ouvrez Microsoft Edge devTools | Documents Microsoft"  
+[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimiser la vitesse du site web avec Microsoft Edge devTools | Documents Microsoft"  
 
-[GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Inspect Network Activity Demo | Glitch"  
+[GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Inspecter la démonstration de l’activité | Glitch"  
 
 [MDNHTTPCache]: https://developer.mozilla.org/docs/Web/HTTP/Caching "Mise en cache HTTP | MDN"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/index) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -389,4 +388,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

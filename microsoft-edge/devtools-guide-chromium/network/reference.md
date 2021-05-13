@@ -1,18 +1,18 @@
 ---
-description: Référence complète des fonctionnalités du panneau réseau Microsoft Edge DevTools.
+description: Référence complète des fonctionnalités Microsoft Edge de panneau réseau DevTools.
 title: Référence de l’analyse réseau
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 94a7031763da1e540b4dab802358e5f200e0db4a
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: bdb1145e7ee8ed7865b68f9fd632c4b1a30007e9
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439702"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564832"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439702"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="network-analysis-reference"></a>Référence de l’analyse réseau  
 
-Découvrez de nouvelles façons d’analyser le chargement de votre page dans cette référence complète des fonctionnalités d’analyse réseau de Microsoft Edge DevTools.  
+Découvrez de nouvelles façons d’analyser le chargement de votre page dans cette référence complète Microsoft Edge fonctionnalités d’analyse réseau DevTools.  
 
 ## <a name="record-network-requests"></a>Enregistrer des demandes réseau  
 
@@ -49,7 +48,7 @@ Pour arrêter l’enregistrement des demandes, complétez les étapes suivantes.
 
 ### <a name="clear-requests"></a>Effacer les demandes  
 
-Sélectionnez **Effacer** \( ![ Effacer \) sur l’outil Réseau pour effacer toutes les demandes de ](../media/clear-requests-icon.msft.png) la table Demandes. ****  
+Sélectionnez **Effacer** \( ![ Effacer \) sur l’outil Réseau pour effacer toutes les demandes de ](../media/clear-requests-icon.msft.png) la table Requests. ****  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="Bouton Effacer" lightbox="../media/network-network-clear-button.msft.png":::
    Bouton **** Effacer  
@@ -74,7 +73,7 @@ Actualisez la page lorsque **l’outil** Réseau est en cours de mise en place p
 Après avoir capturé une capture d’écran, vous interagissez avec elle des manières suivantes.  
 
 *   Pointez sur une capture d’écran pour afficher le point auquel cette capture d’écran a été capturée.  Une ligne jaune s’affiche dans le **volet** Vue d’ensemble.  
-*   Choisissez la miniature d’un écran pour filtrer les demandes qui se sont produites après la capture d’écran.  
+*   Choisissez la miniature d’un écran pour filtrer toutes les demandes qui se sont produites après la capture d’écran.  
 *   Double-cliquez sur une miniature pour la zoomer.  
 
 :::image type="complex" source="../media/network-network-screenshot-hover.msft.png" alt-text="Pointer sur une capture d’écran" lightbox="../media/network-network-screenshot-hover.msft.png":::
@@ -95,13 +94,13 @@ Après avoir capturé une capture d’écran, vous interagissez avec elle des ma
 
 ### <a name="emulate-a-first-time-visitor-by-disabling-the-browser-cache"></a>Émuler un premier visiteur en désactivant le cache du navigateur  
 
-Pour émuler la façon dont un utilisateur se retrouve pour la première fois sur votre site, cochez la case Désactiver le **cache.**  DevTools désactive le cache du navigateur.  Cette fonctionnalité émule plus précisément l’expérience d’un premier utilisateur, car les demandes sont reçues à partir du cache du navigateur lors de visites répétées.  
+Pour émuler la façon dont un utilisateur rencontre votre site pour la première fois, cochez la case Désactiver le **cache.**  DevTools désactive le cache du navigateur.  Cette fonctionnalité émule plus précisément l’expérience d’un premier utilisateur, car les demandes sont reçues à partir du cache du navigateur lors de visites répétées.  
 
 :::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="Case à cocher Désactiver le cache" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
    Case **à cocher** Désactiver le cache  
 :::image-end:::  
 
-#### <a name="disable-the-browser-cache-from-the-network-conditions-drawer"></a>Désactiver le cache du navigateur à partir du caisse de conditions réseau  
+#### <a name="disable-the-browser-cache-from-the-network-conditions-drawer"></a>Désactiver le cache du navigateur à partir du caisse des conditions réseau  
 
 Si vous souhaitez désactiver le cache tout en travaillant dans d’autres panneaux DevTools, utilisez le panneau Conditions réseau.  
 
@@ -132,7 +131,7 @@ Choisissez le menu déroulant **En** ligne, recherchez sous **Presets**et choisi
 
 ### <a name="emulate-slow-network-connections"></a>Émuler les connexions réseau lentes  
 
-Émulez les 3G, les vitesses 3G rapides et d’autres vitesses de connexion à partir du menu déroulant **En** ligne.  
+Émulez les vitesses 3G, 3G rapides et autres vitesses de connexion à partir du menu déroulant **En** ligne.  
 
 :::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="Menu déroulant Limitation" lightbox="../media/network-network-throttling-menu.msft.png":::
    Menu **déroulant Limitation**  
@@ -142,7 +141,7 @@ Vous pouvez choisir parmi différents prérets, tels que Slow 3G ou Fast 3G.  Po
 
 DevTools affiche une icône d’avertissement à côté de l’outil Réseau pour vous rappeler que la limitation est activée. ****  
 
-#### <a name="emulate-slow-network-connections-from-the-network-conditions-drawer"></a>Émuler les connexions réseau lentes à partir du caisse des conditions réseau  
+#### <a name="emulate-slow-network-connections-from-the-network-conditions-drawer"></a>Émuler les connexions réseau lentes à partir du caisse de conditions réseau  
 
 Si vous souhaitez limiter la connexion réseau tout en travaillant dans d’autres panneaux DevTools, utilisez le panneau Conditions réseau.  
 
@@ -178,13 +177,13 @@ Utilisez la **zone de** texte Filtrer pour filtrer les demandes par propriétés
 Si la zone de texte n’est pas affichée, le volet **Filtres** est probablement masqué.  
 Pour plus d’informations, [accédez à Masquer le volet Filtres.](#hide-the-filters-pane)  
 
-:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="Zone de texte Filtrer" lightbox="../media/network-network-filters-textbox.msft.png":::
-   Zone **de texte** Filtrer  
+:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="Zone de texte Filtre" lightbox="../media/network-network-filters-textbox.msft.png":::
+   Zone **de texte** Filtre  
 :::image-end:::  
 
 Vous pouvez utiliser plusieurs propriétés simultanément en séparant chaque propriété par un espace.  Par exemple, affiche tous les PNG dont la taille `mime-type:image/png larger-than:1K` est supérieure à 1 kilo-octet.  Les filtres multi-propriétés sont équivalents aux `AND` opérations.  `OR` ne sont actuellement pas pris en charge.  
 
-Liste complète des propriétés prise en charge.  
+Liste complète des propriétés pris en charge.  
 
 | Propriété | Détails |  
 |:--- | :--- |  
@@ -192,12 +191,12 @@ Liste complète des propriétés prise en charge.
 | `has-response-header` | Affiche les ressources qui contiennent l’en-tête de réponse HTTP spécifié.  DevTools remplit la zone de mise à jour de la mise à jour automatique avec tous les en-têtes de réponse trouvés. |  
 | `is` | À `is:running` utiliser pour rechercher des `WebSocket` ressources. |  
 | `larger-than` | Affiche les ressources dont la taille est supérieure à la taille spécifiée, en octets.  Définir une valeur de `1000` . `1k` |  
-| `method` | Affiche les ressources qui ont été récupérées sur un type de méthode HTTP spécifié.  DevTools remplit la zone de détail avec toutes les méthodes HTTP trouvées. |  
+| `method` | Affiche les ressources qui ont été récupérées sur un type de méthode HTTP spécifié.  DevTools remplit la zone de détail avec toutes les méthodes HTTP qui sont trouvées. |  
 | `mime-type` | Affiche les ressources d’un type MIME spécifié.  DevTools remplit la zone de détail avec tous les types MIME trouvés. |  
 | `mixed-content` | Afficher toutes les ressources de contenu mixte \( \) ou uniquement ceux qui sont `mixed-content:all` actuellement affichés \( `mixed-content:displayed` \). |  
 | `scheme` | Affiche les ressources récupérées sur http \( \) ou `scheme:http` HTTPS \( `scheme:https` \) protégées. |  
 | `set-cookie-domain` | Affiche les ressources qui ont un `Set-Cookie` en-tête avec un `Domain` attribut qui correspond à la valeur spécifiée.  DevTools remplit la mise à jour automatique avec tous les domaines de cookie trouvés. |  
-| `set-cookie-name` | Affiche les ressources qui ont un `Set-Cookie` en-tête avec un nom qui correspond à la valeur spécifiée.  DevTools remplit la mise à jour automatique avec tous les noms de cookies trouvés. |  
+| `set-cookie-name` | Affiche les ressources qui ont un `Set-Cookie` en-tête dont le nom correspond à la valeur spécifiée.  DevTools remplit la mise à jour automatique avec tous les noms de cookies trouvés. |  
 | `set-cookie-value` | Affiche les ressources qui ont un `Set-Cookie` en-tête avec une valeur qui correspond à la valeur spécifiée.  DevTools remplit la mise à jour automatique avec toutes les valeurs de cookie trouvées. |  
 | `status-code` | Affiche les ressources qui correspondent au code d’état HTTP spécifique.  DevTools remplit le menu déroulant de lacomplet automatique avec tous les codes d’état trouvés. |  
 
@@ -289,7 +288,7 @@ Pour filtrer les demandes par type de requête, choisissez l’un des boutons su
 Si les boutons ne s’affichent pas, le volet **Filtres** peut être masqué.  
 Pour plus d’informations, [accédez à Masquer le volet Filtres.](#hide-the-filters-pane)  
 
-Pour activer plusieurs filtres de type simultanément, maintenez la main sur `Control` \(Windows, Linux\) ou `Command` \(macOS\), puis choisissez.  
+Pour activer plusieurs filtres de type simultanément, maintenez `Control` \(Windows, Linux\) ou `Command` \(macOS\), puis choisissez.  
 
 :::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Utiliser les filtres type pour afficher les ressources JS, CSS et Document" lightbox="../media/network-network-type-filters.msft.png":::
    Utiliser les filtres type pour afficher les ressources JS, CSS et Document  
@@ -297,7 +296,7 @@ Pour activer plusieurs filtres de type simultanément, maintenez la main sur `Co
 
 ### <a name="filter-requests-by-time"></a>Filtrer les demandes par heure  
 
-Choisissez et faites glisser **** vers la gauche ou la droite dans le volet Vue d’ensemble pour afficher uniquement les demandes qui étaient actives pendant cette période.  Le filtre est inclus.  Toute demande qui était active pendant l’heure mise en surbrillant s’affiche.  
+Choisissez et faites glisser **** vers la gauche ou la droite dans le volet Vue d’ensemble pour afficher uniquement les demandes qui étaient actives pendant cette période.  Le filtre est inclus.  Toutes les demandes qui étaient actives pendant l’heure en surbrillant sont affichées.  
 
 :::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="Filtrer toutes les demandes inactives d’environ 300 ms" lightbox="../media/network-network-overview-filter.msft.png":::
    Filtrer toutes les demandes inactives d’environ 300 ms  
@@ -418,7 +417,7 @@ La table Requests affiche les colonnes suivantes par défaut.
    :::column span="2":::
       Les objets ou processus suivants lancent des demandes.  
       
-      *   **Parser**  L’en-tête HTML pour Microsoft Edge.  
+      *   **Parser**  L’Microsoft Edge HTML.  
       *   **Redirection**  Redirection HTTP.  
       *   **Script**  Fonction JavaScript.  
       *   **Autre**  Un autre processus ou une autre action, comme la navigation vers une page à l’aide d’un lien ou la saisie d’une URL dans la barre d’adresses.  
@@ -505,7 +504,7 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 *   WebSocket opcodes are light-yellow.  
 *   Errors are light-red.  -->
 
-### <a name="display-a-preview-of-a-response-body"></a>Afficher un aperçu d’un corps de réponse  
+### <a name="display-a-preview-of-a-response-body"></a>Afficher un aperçu du corps d’une réponse  
 
 Pour afficher un aperçu d’un corps de réponse, utilisez les étapes suivantes.  
 
@@ -544,14 +543,14 @@ Pour afficher les données d’en-tête HTTP relatives à une demande, utilisez 
 
 Par défaut, le panneau **En-têtes** affiche les noms d’en-tête par ordre alphabétique.  Pour dsiplay les noms d’en-tête HTTP dans l’ordre reçu, utilisez les étapes suivantes.  
 
-1.  Ouvrez **le panneau En-têtes** pour la demande qui vous intéresse.  Pour plus d’informations, accédez [à Afficher les en-têtes HTTP.](#display-http-headers)  
-1.  Choisissez **la source d’affichage,** en regard de la section **En-tête de** demande ou **En-tête de réponse.**  
+1.  Ouvrez **le panneau En-têtes** pour la demande qui vous intéresse.  Pour plus d’informations, accédez à [Afficher les en-têtes HTTP.](#display-http-headers)  
+1.  Choose **view source**, next to the Request **Header** or **Response Header** section.  
 
 ### <a name="display-query-string-parameters"></a>Afficher les paramètres de chaîne de requête  
 
 Pour afficher les paramètres de chaîne de requête d’une URL dans un format lisible par l’homme, utilisez les étapes suivantes.  
 
-1.  Ouvrez **le panneau En-têtes** pour la demande qui vous intéresse.  Pour plus d’informations, accédez [à Afficher les en-têtes HTTP.](#display-http-headers)  
+1.  Ouvrez **le panneau En-têtes** pour la demande qui vous intéresse.  Pour plus d’informations, accédez à [Afficher les en-têtes HTTP.](#display-http-headers)  
 1.  Accédez à la section **Paramètres de chaîne de requête.**  
 
 :::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="Section Paramètres de chaîne de requête" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
@@ -734,10 +733,10 @@ Lorsque la table Requests est classé dans l’ordre chronologique, si vous poin
 
 ### <a name="display-load-events"></a>Afficher les événements de chargement  
 
-DevTools affiche le minutage des événements à plusieurs `DOMContentLoaded` `load` endroits sur **l’outil** Réseau.  `DOMContentLoaded`L’événement est bleu et l’événement est `load` rouge.  
+DevTools affiche le minutage des événements à plusieurs `DOMContentLoaded` `load` endroits sur **l’outil** Réseau.  `DOMContentLoaded`L’événement est de couleur bleue et l’événement est `load` rouge.  
 
 :::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="Emplacements du DOMContentLoaded et chargement des événements sur le panneau réseau" lightbox="../media/network-network-requests-load-events.msft.png":::
-   Emplacements des `DOMContentLoaded` événements et des événements `load` sur **l’outil** Réseau  
+   Emplacements des `DOMContentLoaded` `load` événements et des événements sur **l’outil** Réseau  
 :::image-end:::  
 
 ### <a name="display-the-total-number-of-requests"></a>Affichage du nombre total de demandes  
@@ -788,9 +787,9 @@ init();
    Trace de pile menant à une demande de ressource  
 :::image-end:::  
 
-### <a name="display-the-uncompressed-size-of-a-resource"></a>Afficher la taille non compressée d’une ressource  
+### <a name="display-the-uncompressed-size-of-a-resource"></a>Affichage de la taille non compressée d’une ressource  
 
-Activer la case **à cocher** Utiliser les lignes de requête de grande taille, puis passer en revue la valeur inférieure de la **colonne** Taille.  
+Activer la case **à cocher Utiliser les lignes de requête** de grande taille, puis passer en revue la valeur inférieure de la **colonne** Taille.  
 
 :::image type="complex" source="../media/network-network-requests-uncompressed-compare.msft.png" alt-text="Exemple de ressources non compressées" lightbox="../media/network-network-requests-uncompressed-compare.msft.png":::
    Exemple de ressources non compressées \(La taille compressée du fichier envoyé sur le réseau était , alors que la taille non compressée était `jquery-3.3.1.min.js` `29.9 KB` `84.9 KB` \)  
@@ -827,7 +826,7 @@ Sous la **colonne Nom** de la table Demandes, pointez sur une demande, ouvrez le
 | **Copier en tant que cURL** | Copiez la demande en tant que commande cURL. |  
 | **Copier tout en tant que récupération** | &nbsp; |  
 | **Copier tout en tant que cURL** | Copiez toutes les demandes en tant que chaîne de commandes cURL. |  
-| **Copier tout en tant que HAR** | Copiez toutes les demandes en tant que données HAR. |  
+| **Copier tout en tant que har** | Copiez toutes les demandes en tant que données HAR. |  
 
 <!--
 :::row:::
@@ -894,7 +893,7 @@ Sous la **colonne Nom** de la table Demandes, pointez sur une demande, ouvrez le
 
 ### <a name="copy-formatted-response-json-to-the-clipboard"></a>Copier la réponse mise en forme JSON dans le Presse-papiers  
 
-Choisissez une demande réseau et accédez au volet **En-têtes.**  Pour copier la valeur JSON d’une réponse, accédez à Charge utile de la **demande,** pointez sur le contenu de la réponse JSON, ouvrez le menu contextuel \(clic droit\), puis choisissez Copier la **valeur**.  
+Choisissez une demande réseau et accédez au volet **En-têtes.**  Pour copier la valeur JSON d’une réponse, accédez à La charge utile de la **demande,** pointez sur le contenu de la réponse JSON, ouvrez le menu contextuel \(clic droit\), puis choisissez Copier la **valeur**.  
 
 :::row:::
    :::column span="":::
@@ -903,7 +902,7 @@ Choisissez une demande réseau et accédez au volet **En-têtes.**  Pour copier 
         :::image-end:::  
    :::column-end:::
    :::column span="":::
-        :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="Code microsoft Visual Studio avec réponse mise en forme JSON" lightbox="../media/network-header-paste-property-value.msft.png":::
+        :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="Microsoft Visual Studio Code avec réponse mise en forme JSON" lightbox="../media/network-header-paste-property-value.msft.png":::
           Pasting formatted response JSON in Microsoft Visual Studio Code  
         :::image-end:::  
    :::column-end:::
@@ -967,13 +966,13 @@ Par défaut, DevTools **** affiche le volet Vue d’ensemble.  Pour le masquer, 
 
 <!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->  
 
-[MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Url de données | MDN"  
+[MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "URL de données | MDN"  
 
 [WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Serveur proxy - Wikipedia"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/reference) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -981,4 +980,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

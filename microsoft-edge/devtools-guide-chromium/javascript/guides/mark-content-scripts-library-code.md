@@ -1,18 +1,18 @@
 ---
-description: Activez « Marquer les scripts de contenu en tant que code de bibliothèque » à partir de Paramètres > Framework Library Code.
+description: Activez « Marquer les scripts de contenu en tant que code de bibliothèque » à partir Paramètres > Framework Library Code.
 title: Marquer les scripts de contenu en tant que code de bibliothèque
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: c1571ab909aac09e4593413e96f7d4b7723c7759
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: e3c2e89e8635b568d0beea8df8720bbb28beb711
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519344"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564027"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,13 +27,12 @@ ms.locfileid: "11519344"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="mark-content-scripts-as-library-code"></a>Marquer les scripts de contenu en tant que code de bibliothèque  
 
-Lorsque vous utilisez l'outil **Sources** pour passer du [code][DevToolsJavascriptStepThroughCode]pas à pas, vous suspendez parfois le code que vous ne connaissez pas.  Vous avez probablement suspendu le code de l'une des extensions Microsoft Edge que vous avez installées.  Pour ne pas suspendre le code d'extension, effectuer les actions suivantes.  
+Lorsque vous utilisez l’outil **Sources** pour passer du [code][DevToolsJavascriptStepThroughCode]pas à pas, vous suspendez parfois le code que vous ne connaissez pas.  Vous avez probablement suspendu le code pour l’une des extensions Microsoft Edge que vous avez installées.  Pour ne pas suspendre le code d’extension, effectuer les actions suivantes.  
 
-1.  Dans DevTools, dans le coin supérieur droit, choisissez l'icône d'engrenage (**Paramètres**).  La page **Settings** (Paramètres) s’affiche.  
-1.  Below **Settings**, choose **Ignore List**.  La section **Code de la** bibliothèque d'infrastructure **des paramètres s'affiche.**  
+1.  Dans DevTools, dans le coin supérieur droit, choisissez**l’icône d’engrenage**( Paramètres ).  La page **Settings** (Paramètres) s’affiche.  
+1.  Below **Paramètres**, choose **Ignore List**.  La section Code de la bibliothèque **d’Paramètres** **s’affiche.**  
 1.  Activer la case à cocher **Marquer les scripts de contenu** en tant que code bibliothèque.  
     
     :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Activer la case à cocher Marquer les scripts de contenu en tant que code bibliothèque" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
@@ -46,7 +45,7 @@ Lorsque vous utilisez l'outil **Sources** pour passer du [code][DevToolsJavascri
 
 <!-- links -->  
 
-[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Étape 4 : Pas à pas dans le code : commencer à déboguer JavaScript dans Microsoft Edge DevTools | Documents Microsoft"  
+[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Étape 4 : Pas à pas dans le code : commencer à déboguer JavaScript dans Microsoft Edge devTools | Documents Microsoft"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
@@ -58,4 +57,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

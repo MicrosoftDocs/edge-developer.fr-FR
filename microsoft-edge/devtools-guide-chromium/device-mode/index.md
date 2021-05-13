@@ -3,16 +3,16 @@ description: Utilisez des périphériques virtuels dans Microsoft Edge pour cré
 title: Émuler des appareils mobiles dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft Edge, développement web, outils f12, devtools, émulation, appareil, simulation, mobile
-ms.openlocfilehash: bb081ddd5f773e5e9ae6a1b83b5fcb13408df6cb
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: b62a1799b1707fc4c6890bb7ad9ad4aa9afab113
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439450"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564405"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439450"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="emulate-mobile-devices-in-microsoft-edge-devtools"></a>Émuler des appareils mobiles dans Microsoft Edge DevTools  
 
-Utilisez **l’émulation de l’appareil** pour approximativement l’apparence et la réponse de votre page sur un appareil mobile.  Microsoft Edge DevTools fournit un ensemble de fonctionnalités pour vous aider à émuler des appareils mobiles.  La collection inclut les fonctionnalités suivantes.  
+Utilisez **l’émulation de l’appareil** pour approximativement l’apparence et la réponse de votre page sur un appareil mobile.  Les Microsoft Edge DevTools fournissent un ensemble de fonctionnalités pour vous aider à émuler des appareils mobiles.  La collection inclut les fonctionnalités suivantes.  
 
 *   [Simuler une vue mobile](#simulate-a-mobile-viewport)  
 *   [Limiter le réseau](#throttle-the-network-only)  
@@ -85,7 +84,7 @@ Utilisez la liste **Type d’appareil** pour simuler un appareil mobile ou un ap
    Liste **des types d’appareils**  
 :::image-end:::  
 
-Le tableau suivant décrit les différences entre les options de type d’appareil disponibles.  La colonne Méthode de rendu indique si Microsoft Edge restituera la page en tant que port d’affichage mobile ou de bureau.  La colonne Icône du curseur fait référence au type de curseur qui s’affiche lorsque vous pointez sur la page.  La colonne Événements déclenchés indique si la page se déclenche ou s’il s’agit d’événements lorsque `touch` `click` vous interagissez avec la page.  
+Le tableau suivant décrit les différences entre les options de type d’appareil disponibles.  La colonne Méthode de rendu indique si Microsoft Edge rendu de la page en tant que port d’affichage mobile ou de bureau.  La colonne d’icône curseur fait référence au type de curseur qui s’affiche lorsque vous pointez sur la page.  La colonne Événements déclenchés indique si la page se déclenche ou s’il s’agit d’événements lorsque `touch` `click` vous interagissez avec la page.  
 
 | Option | Méthode de rendu | Icône curseur | Événements déclenchés |  
 |:--- |:--- |:--- |:--- |  
@@ -126,7 +125,7 @@ Pour plus d’informations, accédez à [Définir l’orientation.](#set-orienta
 
 #### <a name="show-device-frame"></a>Afficher le cadre de l’appareil  
 
-Affichez le cadre de l’appareil physique autour de la fenêtre d’affichage lorsque vous simulez les dimensions d’un appareil mobile spécifique tel qu’un iPhone 6.  
+Affichez le cadre de l’appareil physique autour de la fenêtre d’affichage lorsque vous simulez les dimensions d’un appareil mobile spécifique, tel qu’un iPhone 6.  
 
 1.  Ouvrez **plus d’options.**  
 1.  Choose **Show device frame**.  
@@ -141,8 +140,8 @@ Affichez le cadre de l’appareil physique autour de la fenêtre d’affichage l
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="Image de l’appareil pour l’iPhone 6" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
-         Image de l’appareil pour l’iPhone 6  
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="Image de l’appareil iPhone 6" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
+         Image de l’appareil iPhone 6  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -158,7 +157,7 @@ Si l’option d’appareil mobile dont vous avez besoin n’est pas incluse dans
     :::image-end:::  
     
 1.  Choisissez **Ajouter un appareil personnalisé.**  
-1.  Sur **les appareils émulés,** entrez un nom d’appareil, la largeur de l’écran et la hauteur de l’écran pour l’appareil personnalisé.  Les champs [Ratio de pixels][MDNWindowDevicePixelRatio]de l’appareil, Chaîne de [l’agent][MDNUserAgent]utilisateur et [Type](#set-the-device-type) d’appareil sont facultatifs.  Par défaut, le champ De type d’appareil est **Mobile.**  
+1.  Sur **les appareils émulés,** entrez un nom d’appareil, la largeur de l’écran et la hauteur de l’écran pour l’appareil personnalisé.  Les champs [Ratio de pixels de][MDNWindowDevicePixelRatio]l’appareil, chaîne [d’agent utilisateur][MDNUserAgent]et [type](#set-the-device-type) d’appareil sont facultatifs.  Par défaut, le champ De type d’appareil est **Mobile.**  
     
     :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Créer un appareil personnalisé" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
        Créer un appareil personnalisé  
@@ -181,7 +180,7 @@ Si vous devez mesurer les dimensions de l’écran, vous pouvez utiliser des rè
    :::column-end:::
 :::row-end:::  
 
-### <a name="zoom-the-viewport"></a>Zoomer laporte d’affichage  
+### <a name="zoom-the-viewport"></a>Zoomer la vue  
 
 Pour tester l’apparence de votre page à plusieurs niveaux de zoom, utilisez la liste **Zoom** pour effectuer un zoom avant ou arrière.  
 
@@ -197,7 +196,7 @@ Limiter le réseau et le processeur.
 
 1.  Choose **Throttle** list and change the preset to **Mid-tier mobile** or **Low-end mobile**.  
     *   **Un appareil mobile de niveau intermédiaire** simule et limitation votre `fast 3G` processeur.  Elle est quatre fois plus lente que la normale.  
-    *   **Un appareil mobile bas de gamme** `slow 3G` simule et limitation votre processeur.  Elle est six fois plus lente que la normale.  
+    *   **Un appareil mobile bas de gamme** simule et limitation votre `slow 3G` processeur.  Elle est six fois plus lente que la normale.  
     
 Toutes les limitations sont basées sur les fonctionnalités normales de votre ordinateur portable ou de votre bureau.  
 
@@ -206,7 +205,7 @@ Toutes les limitations sont basées sur les fonctionnalités normales de votre o
 :::image-end:::  
 
 > [!NOTE]
-> Si la liste **Throttle est** masquée, votre **barre d’outils d’appareil** est trop étroite.  Pour accéder à la liste **Limitation,** augmentez la largeur de la barre **d’outils de l’appareil.**  
+> Si la liste **Throttle est** masquée, votre **barre d’outils d’appareil** est trop étroite.  Pour accéder à la liste **Limitation,** augmentez la largeur de la barre d’outils **de l’appareil.**  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Barre d’outils Appareil" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
    Barre **d’outils Appareil**  
@@ -216,7 +215,7 @@ Toutes les limitations sont basées sur les fonctionnalités normales de votre o
 
 Pour limiter l’UC uniquement et non le réseau, complétez les étapes suivantes.
 
-1.  Choisissez le **panneau Performances,** puis **sélectionnez Paramètres de capture** \( ![ Paramètres de capture ](../media/capture-settings-icon.msft.png) \).
+1.  Choisissez le **panneau Performances,** puis **sélectionnez Capturer Paramètres** \( Capturer Paramètres ![ ](../media/capture-settings-icon.msft.png) \).
 1.  Choisissez **le**  >  **ralentissement 4x du** processeur ou le ralentissement **6x.**
     
     :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="Liste du processeur dans le panneau Performances" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -228,13 +227,13 @@ Pour limiter l’UC uniquement et non le réseau, complétez les étapes suivant
 Pour limiter le réseau uniquement, complétez les étapes suivantes.
 
 1.  Choisissez **l’outil** Réseau.
-1.  Choose **Online**  >  **Fast 3G** or Slow **3G**.
+1.  Choisissez **En ligne**Fast  >  **3G** ou Slow **3G**.
     
     :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="Liste De limitation dans le panneau Réseau" lightbox="../media/device-mode-network-throttle.msft.png":::
        Liste **De limitation** dans le panneau Réseau  
     :::image-end:::  
     
-    Ou sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) **** `3G` **** **** pour ouvrir le menu commande, tapez et choisissez Activer la limitation 3G rapide ou Activer la limitation 3G lente.  
+    Ou sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) **** `3G` **** **** pour ouvrir le menu commande, tapez et choisissez Activer la limitation 3G rapide ou Activer la limitation de 3G lente.  
     
     :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Menu Commande" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
        Menu **Commande**  
@@ -242,7 +241,7 @@ Pour limiter le réseau uniquement, complétez les étapes suivantes.
     
 Vous pouvez également définir la limitation du réseau à partir du **panneau Performances.**  
 
-1.  Choose **Capture Settings** \( ![ Capture Settings ](../media/capture-settings-icon.msft.png) \) and choose the **Network** list and change the preset to **Fast 3G** or Slow **3G**.  
+1.  Choose **Capture Paramètres** \( Capture Paramètres ![ ](../media/capture-settings-icon.msft.png) \) and choose the **Network** list and change the preset to **Fast 3G** or Slow **3G**.  
     
     :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Définir la limitation du réseau à partir du panneau Performances" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
        Définir la limitation du réseau à partir du panneau **Performances**  
@@ -354,7 +353,7 @@ En regard de **l’agent utilisateur,** cochez la **case** Sélectionner automat
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/device-mode/index) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/device-mode/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -362,4 +361,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -1,18 +1,18 @@
 ---
 description: Comment déboguer la récupération en arrière-plan, la synchronisation en arrière-plan, les notifications et les messages Push avec Microsoft Edge DevTools.
-title: Débogage des services d’arrière-plan avec Microsoft Edge DevTools
+title: Déboguer les services d’arrière-plan Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 15023098c547d31bf46bd387f849b365c13b38f6
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 4f5f52bcde976cea8432e3160a792438e5603e21
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439527"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564195"
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,8 +27,7 @@ ms.locfileid: "11439527"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
-# <a name="debug-background-services-with-microsoft-edge-devtools"></a>Débogage des services d’arrière-plan avec Microsoft Edge DevTools  
+# <a name="debug-background-services-with-microsoft-edge-devtools"></a>Déboguer les services d’arrière-plan Microsoft Edge DevTools  
 
 La **section** Services d’arrière-plan de Microsoft Edge DevTools est une collection d’outils pour les API JavaScript qui permet à votre site web d’envoyer et de recevoir des mises à jour même lorsqu’un utilisateur n’a pas votre site web ouvert.  
 Un service en arrière-plan est fonctionnellement similaire à un [processus en arrière-plan][WikiBackgroundProcess].  
@@ -64,7 +63,7 @@ Le journal des événements du service en arrière-plan peut vous aider à vous 
    Après avoir déclenché une activité de récupération en arrière-plan, DevTools enregistre les événements dans la table.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="Journal des événements dans le panneau Extraction en arrière-plan" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
-       Journal des événements dans le **panneau Extraction en arrière-plan**  
+       Journal des événements dans le panneau Extraction en **arrière-plan**  
     :::image-end:::  
     
 1.  Choisissez un événement pour afficher ses détails dans l’espace sous le tableau.  
@@ -127,7 +126,7 @@ Une fois **qu’un employé** de service a reçu un [message push][MDNPush] d’
     
 ## <a name="push-messages"></a>Push Messages  
 
-Pour afficher une notification Push **** à un utilisateur, un service de travail doit d’abord utiliser l’API Push [Message][MDNPush] pour recevoir des données à partir d’un serveur.  Lorsque le service de travail est prêt à afficher la notification, il utilise [l’API Notifications.][MDNNotifications]  Pour enregistrer les messages push pendant 3 jours, même lorsque DevTools n’est pas ouvert :  
+Pour afficher une notification Push **** à un utilisateur, un service de travail doit d’abord utiliser l’API Push [Message][MDNPush] pour recevoir des données à partir d’un serveur.  Lorsque le service de travail est prêt à afficher la notification, il utilise [l’API Notifications][MDNNotifications].  Pour enregistrer les messages push pendant 3 jours, même lorsque DevTools n’est pas ouvert :  
 
 1.  [Ouvrez DevTools][OpenDevTools].  
 1.  Ouvrez **l’outil Application.**  
@@ -159,7 +158,7 @@ Pour afficher une notification Push **** à un utilisateur, un service de travai
 <!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->  
 <!--[BackgroundSyncAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
 
-[OpenDevTools]: ../open/index.md "Ouvrez les outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
+[OpenDevTools]: ../open/index.md "Outils de développement Open Microsoft Edge (Chromium) | Documents Microsoft"  
 
 [MDNNotifications]: https://developer.mozilla.org/docs/Web/API/Notifications_API "Notifications API | MDN"  
 [MDNPush]: https://developer.mozilla.org/docs/Web/API/Push_API "Api Push | MDN"  
@@ -168,11 +167,11 @@ Pour afficher une notification Push **** à un utilisateur, un service de travai
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

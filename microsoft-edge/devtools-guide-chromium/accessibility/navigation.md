@@ -1,18 +1,18 @@
 ---
 description: Guide sur la navigation dans Microsoft Edge DevTools à l’aide d’une technologie d’assistance telle que les lecteurs d’écran.
-title: Naviguer dans Microsoft Edge DevTools avec la technologie d’assistance
+title: Naviguer Microsoft Edge DevTools avec la technologie d’assistance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 343ce99188234b40dd8554e3db8bf303876e7b2f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: cf2742dfb08ee482b26fe43417b7454e5b6ff809
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398433"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564580"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11398433"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>Naviguer Microsoft Edge DevTools avec la technologie d’assistance  
 
-# <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>Naviguer dans Microsoft Edge DevTools avec la technologie d’assistance  
-
-L’article suivant vise à aider les utilisateurs qui s’appuient principalement sur des technologies d’assistance telles que les lecteurs d’écran à accéder et à utiliser [Microsoft Edge DevTools.][MicrosoftEdgeDevtoolsMain]  [Microsoft Edge DevTools est][MicrosoftEdgeDevtoolsMain] une suite d’outils de développement web intégrés au navigateur Microsoft Edge.  Si vous recherchez des fonctionnalités DevTools relatives à l’amélioration de l’accessibilité d’une page web, accédez à La Référence [d’accessibilité.][DevtoolsAccessibilityReference]  
+L’article suivant vise à aider les utilisateurs qui s’appuient principalement sur des technologies d’assistance telles que les lecteurs d’écran à accéder Microsoft Edge [devTools.][MicrosoftEdgeDevtoolsMain]  [Microsoft Edge DevTools est][MicrosoftEdgeDevtoolsMain] une suite d’outils de développement web intégrée au navigateur Microsoft Edge web.  Si vous recherchez des fonctionnalités DevTools liées à l’amélioration de l’accessibilité d’une page web, accédez à La Référence [d’accessibilité.][DevtoolsAccessibilityReference]  
 
 L’accessibilité de DevTools est un travail en cours.  Certains panneaux et onglets fonctionnent mieux avec la technologie d’assistance que d’autres.  Ce guide vous guide à travers les panneaux qui sont les plus accessibles et met en évidence des problèmes spécifiques que vous pouvez rencontrer en cours de route.  
 
@@ -38,7 +37,7 @@ L’accessibilité de DevTools est un travail en cours.  Certains panneaux et on
 
 Avant de commencer, il est utile d’avoir un modèle de structure de l’interface utilisateur DevTools.  DevTools est divisé en une série de panneaux organisés en une [liste de tabulations ARIA.][W3CWaiAriaTablist]  
 
-Par exemple:  
+Exemple :  
 
 *   **L’outil Elements** vous permet [d’afficher et de modifier les nodes DOM][DevtoolsDomIndexNavigateDomTreeKeyboard] ou [CSS][DevtoolsCssIndex].  
 *   Le [panneau console vous][DevtoolsConsoleIndex] permet de lire les journaux JavaScript et d’éditer des objets en direct.  
@@ -52,13 +51,13 @@ Par exemple, l’outil **Elements** contient des onglets supplémentaires pour i
 
 ## <a name="open-devtools"></a>Ouvrir DevTools  
 
-Pour commencer, accédez à [Ouvrir Microsoft Edge DevTools][DevtoolsOpen].  Il existe plusieurs façons d’ouvrir DevTools, par le biais de raccourcis clavier ou d’éléments de menu.  
+Pour commencer, accédez à [Open Microsoft Edge DevTools][DevtoolsOpen].  Il existe plusieurs façons d’ouvrir DevTools, par le biais de raccourcis clavier ou d’éléments de menu.  
 
 ## <a name="navigate-between-panels"></a>Naviguer entre les panneaux  
 
 ### <a name="navigate-by-keyboard"></a>Naviguer à l’aide du clavier  
 
-*   Avec DevTools ouvert, sélectionnez `Control` + `]` \(Windows, Linux\) ou `Command` + `]` \(macOS\) pour mettre le panneau suivant au point.  
+*   Avec DevTools ouvert, sélectionnez `Control` + `]` \(Windows, Linux\) ou `Command` + `]` \(macOS\) pour centrer le panneau suivant.  
 *   Sélectionnez `Control` + `[` \(Windows, Linux\) ou `Command` + `[` \(macOS\) pour centrer le panneau précédent.  
 *   Il est également possible de déplacer le focus dans la liste d’onglets ARIA d’un panneau et d’utiliser les touches de direction pour modifier les panneaux, bien qu’il soit plus rapide d’utiliser les `Shift` + `Tab` raccourcis mentionnés précédemment. [][W3CWaiAriaTablist]  
 
@@ -71,7 +70,7 @@ Pour commencer, accédez à [Ouvrir Microsoft Edge DevTools][DevtoolsOpen].  Il 
 
 Pour mettre au point un panneau spécifique, utilisez [le menu Commande][DevtoolsCommandMenuIndex]:  
 
-1.  Avec DevTools ouvert, sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le **menu Commande.**  
+1.  Avec DevTools ouvert, sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) **** pour ouvrir le menu commande.  
     Le **menu Commande est** une zone de liste déroulante de la recherche de recherche automatique.  
 1.  Tapez le nom du panneau que vous souhaitez ouvrir, puis utilisez le clavier `Down Arrow` pour accéder à l’option correcte.  
 1.  Sélectionnez `Enter` pour exécuter une commande.  
@@ -90,7 +89,7 @@ Ouvrez un panneau de cette façon pour diriger le focus vers le contenu du panne
 
 1.  Accédez à l’élément que vous souhaitez inspecter à l’aide du curseur dans le lecteur d’écran.  
 1.  Simulez un clic droit à l’aide d’une souris sur l’élément pour ouvrir le menu contextif.  
-1.  Choisissez **l’option Inspecter.**  Cela [ouvre le panneau Éléments et concentre l’élément dans l’arborescence DOM][DevtoolsDomIndexViewDomNodes].  
+1.  Sélectionnez **l’option** Inspecter.  Cela [ouvre le panneau Éléments et concentre l’élément dans l’arborescence DOM][DevtoolsDomIndexViewDomNodes].  
 
 **L’arborescence DOM** est disposé en tant [qu’arborescence ARIA.][W3CWaiAriaTree]  Par exemple, accédez à [Naviguer dans l’arborescence **DOM** avec un clavier][DevtoolsDomIndexNavigateDomTreeKeyboard].  
 
@@ -108,7 +107,7 @@ Ouvrez un panneau de cette façon pour diriger le focus vers le contenu du panne
 
 *   Avec le focus sur un nœud dans l’arborescence **DOM,** sélectionnez `Enter` pour le rendre modifiable.  
 *   Sélectionnez `Tab` pour passer d’une valeur d’attribut à une autre.  Lorsque vous entendez « espace », vous êtes à l’intérieur d’une entrée de texte vide et êtes en mesure de taper une nouvelle valeur d’attribut.  
-*   Sélectionnez `Control` + `Enter` \(Windows, Linux\) ou `Command` + \(macOS\) pour accepter la modification et écouter tout le `Enter` contenu de l’élément.  
+*   Sélectionnez `Control` + `Enter` \(Windows, Linux\) ou `Command` + \(macOS\) pour accepter la modification et écouter l’intégralité du `Enter` contenu de l’élément.  
 
 **Problèmes connus**  
 
@@ -147,16 +146,16 @@ Le concept clé à comprendre sur le volet **Styles** est qu’il affiche unique
 
 *   Avec le focus sur le **volet Styles,** sélectionnez pour déplacer le focus à `Tab` l’intérieur et explorez le contenu.  
 *   Sélectionnez `Tab` jusqu’à ce que le premier style devienne actif.  Si vous utilisez un lecteur d’écran, ce premier style est annoncé comme `element.style {}` .  
-*   Sélectionnez `Down Arrow` pour parcourir la liste des styles par ordre de spécificité.  Un lecteur d’écran annonce chaque style en commençant par le nom du fichier CSS, le numéro de ligne sur lequel le style apparaît et le nom du style.  Exemple : `main.css:233 .card__img {}`.  
+*   Sélectionnez `Down Arrow` pour parcourir la liste des styles par ordre de spécificité.  Un lecteur d’écran annonce chaque style en commençant par le nom du fichier CSS, le numéro de ligne sur lequel le style apparaît et le nom du style.  Par exemple: `main.css:233 .card__img {}`.  
 *   Sélectionnez `Enter` pour inspecter un style plus en détail.  Le focus commence sur une version modifiable du nom du style.  
-*   Choisissez `Tab` de vous déplacer entre les versions modifiables de chaque propriété CSS et les valeurs correspondantes.  À la fin de chaque bloc de style se trouve un champ de texte modifiable vide que vous pouvez utiliser pour ajouter des propriétés CSS supplémentaires.  
+*   Choisissez `Tab` de passer des versions modifiables de chaque propriété CSS aux valeurs correspondantes.  À la fin de chaque bloc de style se trouve un champ de texte modifiable vide que vous pouvez utiliser pour ajouter des propriétés CSS supplémentaires.  
 *   Vous pouvez continuer à choisir de parcourir la liste des styles ou de quitter le mode et revenir à la navigation par `Tab` `Escape` les touches de direction.  
 
 Pour d’autres raccourcis, accédez à [Référence du clavier du volet Styles][DevtoolsShortcutsStylesPaneKeyboard].  
 
 **Problèmes connus**  
 
-*   Si vous utilisez le **champ de** texte modifiable Filtrer, vous ne pouvez plus naviguer dans la liste des styles.  
+*   Si vous utilisez le **champ de** texte modifiable Filtre, vous ne pouvez plus naviguer dans la liste des styles.  
 
 #### <a name="toggle-element-state"></a>État de l’élément Bascule  
 
@@ -170,9 +169,9 @@ Pour faire bascule l’état d’un élément, tel que `:active` : `:focus`
 
 #### <a name="add-an-existing-class"></a>Ajouter une classe existante  
 
-Adjacent au bouton **d’état de l’élément Bascule,** se trouve le **bouton Classes d’élément.**  Pour déplacer la sélection sur celui-ci, `Tab` sélectionnez et sélectionnez `Enter` .  Le focus se déplace dans un champ de texte d’édition étiqueté **Ajouter une nouvelle classe.**  
+Le bouton **Classes** d’élément est adjacent au **bouton d’état de** l’élément bascule.  Pour déplacer la sélection sur celui-ci, `Tab` sélectionnez et sélectionnez `Enter` .  Le focus se déplace dans un champ de texte d’édition étiqueté **Ajouter une nouvelle classe.**  
 
-Le **bouton Classes d’élément** est principalement utilisé pour ajouter des classes existantes à un élément.  Par exemple, si votre feuille de style contenait une classe d’aide nommée, vous pouvez sélectionner à l’intérieur du champ modifier le texte pour afficher une liste de suggestions de classes et utiliser la pour rechercher `.clearfix` `.` la `Down Arrow` `.clearfix` suggestion.  Vous pouvez également taper le nom de la classe vous-même et choisir `Enter` de l’appliquer.  
+Le **bouton Classes d’élément** est principalement utilisé pour ajouter des classes existantes à un élément.  Par exemple, si votre feuille de style contenait une classe d’aide nommée, vous pouvez sélectionner à l’intérieur du champ modifier le texte pour afficher une liste de suggestions de classes et utiliser la pour rechercher `.clearfix` `.` la `Down Arrow` `.clearfix` suggestion.  Ou tapez vous-même le nom de la classe et `Enter` sélectionnez-le pour l’appliquer.  
 
 #### <a name="add-a-new-style-rule"></a>Ajouter une nouvelle règle de style  
 
@@ -211,7 +210,7 @@ Avec le focus sur le volet **Accessibilité,** sélectionnez pour déplacer le f
 
 **Problèmes connus**  
 
-*   Le type d’arborescence **** [ARIA][W3CWaiAriaTree] utilisé par le volet Accessibilité peut ne pas être correctement exposé dans Microsoft Edge pour les lecteurs d’écran macOS tels que VoiceOver.  [Abonnez-vous au problème Chromium #868480][ChromiumIssues868480] être informé de la progression de ce problème.  
+*   Le type d’arborescence **** [ARIA][W3CWaiAriaTree] utilisé par le volet Accessibilité peut ne pas être correctement exposé dans Microsoft Edge pour les lecteurs d’écran macOS tels que VoiceOver.  [S’abonner Chromium problème #868480][ChromiumIssues868480] être informé de la progression de ce problème.  
 *   Chacune des **** **sections Attributs ARIA** et propriétés calculées est marquée comme une arborescence [ARIA,][W3CWaiAriaTree]mais elle ne dispose pas actuellement de la gestion du focus et n’est pas particulièrement sensible au clavier.  
 
 ## <a name="audits-panel"></a>Panneau Audits  
@@ -221,7 +220,7 @@ Avec le focus sur le volet **Accessibilité,** sélectionnez pour déplacer le f
 ### <a name="configure-and-run-an-audit"></a>Configurer et exécuter un audit  
 
 1.  Lorsque **l’outil Audits** est ouvert pour la première fois, le focus est placé sur le bouton Exécuter **l’audit** à la fin du formulaire.  Par défaut, le formulaire est configuré pour exécuter des audits pour chaque catégorie à l’aide de l’émulation mobile sur une connexion 3G simulée.  
-1.  Utilisez `Shift` + `Tab` ou naviguez vers l’arrière en mode Parcourir pour modifier les paramètres d’audit.  
+1.  Utilisez `Shift` + `Tab` ou revenir en mode Parcourir pour modifier les paramètres d’audit.  
 1.  Lorsque vous êtes prêt à exécuter l’audit, revenir au bouton **Exécuter l’audit** et sélectionnez `Enter` .  
 1.  Le focus se déplace dans une fenêtre modale avec un **bouton Annuler** qui vous permet de quitter l’audit.  Vous entendez peut-être une série d’écouteurs lorsque l’audit s’exécute et actualise la page plusieurs fois.  
 
@@ -244,16 +243,16 @@ Pour exécuter un nouvel audit, quittez le rapport et recherchez le bouton Effec
 
 [DevtoolsAccessibilityReference]: ./reference.md "Référence d’accessibilité | Documents Microsoft"  
 [DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "Volet Accessibilité : référence sur l’accessibilité | Documents Microsoft"  
-[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes avec le menu de commandes Microsoft Edge DevTools | Documents Microsoft"  
+[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge outils de développement (Chromium) | Documents Microsoft"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes avec le menu de Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsConsoleIndex]: ../console/index.md "Présentation de la console | Documents Microsoft"  
-[DevtoolsCssIndex]: ../css/index.md "Commencer à afficher et modifier les | Documents Microsoft"  
+[DevtoolsCssIndex]: ../css/index.md "Prise en main Avec l’affichage et la modification des | Documents Microsoft"  
 <!--[DevtoolsCssReferenceViewAppliedElement]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "CSS Reference - View only the CSS that is actually applied to an element | Microsoft Docs"  -->  
 <!--[DevtoolsDomIndex]: ../dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  -->  
 [DevtoolsDomIndexViewDomNodes]: .. /dom/index.md#view-dom-nodes «View DOM nodes - Get started with viewing and changing the DOM | Microsoft Docs »  
 [DevtoolsDomIndexNavigateDomTreeKeyboard]: .. /dom/index.md#navigate-the-dom-tree-with-a-keyboard " Navigate the DOM Tree with a keyboard - Get started with viewing and changing the DOM | Microsoft Docs »  
 [DevtoolsOpen]: .. /open/index.md «Open Microsoft Edge DevTools | Microsoft Docs »  
-[DevtoolsShortcuts] : .. /shortcuts/index.md «Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs »  
+[DevtoolsShortcuts] : .. /shortcuts/index.md " Microsoft Edge devTools Keyboard Shortcuts | Microsoft Docs »  
 [DevtoolsShortcutsStylesPaneKeyboard]: .. /shortcuts/index.md#styles-panel-keyboard-shortcuts «Styles panel keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs »  
 
 [ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Problème 868480 : exposer des arbre ARIA en tant que tables dans l’accessibilité de Mac"  
@@ -278,5 +277,5 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[RobDodson]: https://developers.google.com/web/resources/contributors/robdodson  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[RobDodson]: https://developers.google.com/web/resources/contributors#rob-dodson  

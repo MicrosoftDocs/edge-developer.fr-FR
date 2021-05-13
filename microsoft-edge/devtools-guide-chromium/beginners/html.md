@@ -1,18 +1,18 @@
 ---
-description: Mise en place du code HTML et du DOM
+description: Prise en main html et le DOM
 title: 'DevTools pour les débutants : mise en place du code HTML et du DOM'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft Edge, développement web, outils f12, devtools
-ms.openlocfilehash: 6ca27b720a17928545712666e43495c4da2fb880
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d2893021f5e19ffb714215b27edadba08c8d6f71
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397929"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564566"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11397929"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="devtools-for-beginners-get-started-with-html-and-the-dom"></a>DevTools pour les débutants : mise en place du code HTML et du DOM  
 
-Il s’agit du premier d’une série de didacticiels qui vous enseignent les principes de base du développement web.  Découvrez un ensemble d’outils de développement web, nommé Microsoft Edge DevTools, qui peuvent augmenter votre productivité.  
+Il s’agit du premier d’une série de didacticiels qui vous enseignent les principes de base du développement web.  Découvrez un ensemble d’outils de développement web, nommés Microsoft Edge DevTools, qui peuvent augmenter votre productivité.  
 
-Dans ce didacticiel en particulier, vous allez découvrir le code HTML et le DOM.  HTML est l’une des technologies de base du développement web.  Il s’agit du langage qui contrôle la structure et le contenu des pages web.  Le DOM est également lié à la structure et au contenu des pages web. En savoir plus à ce sujet ultérieurement.  
+Dans ce didacticiel particulier, vous découvrirez le code HTML et le DOM.  HTML est l’une des technologies de base du développement web.  Il s’agit du langage qui contrôle la structure et le contenu des pages web.  Le DOM est également lié à la structure et au contenu des pages web. En savoir plus à ce sujet ultérieurement.  
 
 ## <a name="goals"></a>Objectifs  
 
@@ -48,14 +47,14 @@ Vous allez apprendre le développement web en construisant réellement votre pro
 *   Comment Microsoft Edge DevTools peut vous aider à expérimenter les modifications HTML et DOM.  
 *   Différence entre le code HTML et le DOM.  
 
-Vous avez également un site web réel.  Vous pouvez utiliser le site pour héberger votre CV ou votre blog.  
+Vous avez également un site web réel.  Vous pouvez utiliser le site pour héberger votre cv ou votre blog.  
 
-## <a name="prerequisites"></a>Prérequis  
+## <a name="prerequisites"></a>Conditions préalables  
 
 Avant d’essayer ce didacticiel, remplissez les conditions préalables suivantes :  
 
 *   Si vous ne connaissez pas le langage HTML, lisez [La mise en place du code HTML.][MDNGettingStartedHtml]  
-*   Téléchargez le navigateur web [Microsoft Edge.][MicrosoftEdgeInsider]  Ce didacticiel utilise un ensemble d’outils de développement web, appelés Microsoft Edge DevTools, qui sont intégrés à Microsoft Edge.  
+*   Téléchargez le [Microsoft Edge][MicrosoftEdgeInsider] navigateur web.  Ce didacticiel utilise un ensemble d’outils de développement web, appelés Microsoft Edge DevTools, qui sont intégrés Microsoft Edge.  
 
 ## <a name="set-up-your-code"></a>Configurer votre code  
 
@@ -67,19 +66,19 @@ Vous allez créer votre site dans un éditeur de code en ligne appelé Glitch.
        Onglet Éditeur  
     :::image-end:::  
     
-1.  Choisissez **alluring-en-cas**.  Le menu Options de Projet s’ouvre dans le coin supérieur gauche.  
+1.  Choisissez **alluring-en-préc**.  Le menu Project Options s’ouvre dans le coin supérieur gauche.  
     
-    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="Menu Options de Projet" lightbox="../media/beginners-html-setup2.msft.png":::
-       Menu Options de Projet  
+    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="Menu Options Project’équipe" lightbox="../media/beginners-html-setup2.msft.png":::
+       Menu Options Project’équipe  
     :::image-end:::  
     
-1.  Sélectionnez **Projet DeNte**.  Glitch crée une copie du projet que vous pouvez modifier et génère de manière aléatoire un nouveau nom pour le projet.  Le contenu est le même qu’auparavant.  
+1.  Choisissez **Project**.  Glitch crée une copie du projet que vous pouvez modifier et génère de manière aléatoire un nouveau nom pour le projet.  Le contenu est le même qu’auparavant.  
     
     :::image type="complex" source="../media/beginners-html-setup3.msft.png" alt-text="Le projet en cours" lightbox="../media/beginners-html-setup3.msft.png":::
        Le projet en cours  
     :::image-end:::  
     
-1.  Si vous prévoyez d’effectuer le didacticiel suivant de cette série, choisissez **Se** connectez et connectez-vous à Glitch avec votre compte GitHub ou Facebook.  Si vous choisissez de ne pas vous inscrire à votre compte, vous perdez la possibilité de modifier le projet après avoir fermé l’onglet Modification.  
+1.  Si vous prévoyez d’effectuer le didacticiel suivant de cette série, choisissez Se connectez et connectez-vous à Glitch avec votre compte GitHub ou Facebook. ****  Si vous choisissez de ne pas vous inscrire à votre compte, vous perdez la possibilité de modifier le projet après avoir fermé l’onglet Modification.  
 1.  Choose **Show** and choose **In a New Window**.  Un nouvel onglet s’ouvre et vous montre la page en direct.  Cet onglet est appelé onglet **en direct tout** au long de ce didacticiel.  
     
     :::image type="complex" source="../media/beginners-html-setup4.msft.png" alt-text="Onglet en direct" lightbox="../media/beginners-html-setup4.msft.png":::
@@ -114,13 +113,13 @@ Votre site est assez vide.  Suivez les étapes ci-dessous pour y ajouter du cont
        :::column-end:::
     :::row-end:::
     
-1.  Affichez vos modifications dans **l’onglet en direct.**  Le texte `About Me` est visible sur la page.  Texte plus grand que le texte qui l’entoure, car `<h1>` l’élément représente un titre de section.  Votre navigateur web styles automatiquement les titres dans des tailles de police plus grandes.  
+1.  Affichez vos modifications dans **l’onglet en direct.**  Le texte `About Me` est visible sur la page.  Texte plus grand que le texte qui l’entoure, car `<h1>` l’élément représente un en-tête de section.  Votre navigateur web styles automatiquement les titres dans des tailles de police plus grandes.  
     
     :::image type="complex" source="../media/beginners-html-add2.msft.png" alt-text="Le nouveau titre est visible dans l’onglet en direct" lightbox="../media/beginners-html-add2.msft.png":::
        Le nouveau titre est visible dans l’onglet en direct  
     :::image-end:::  
     
-1.  De retour dans **l’onglet Éditeur**, `<p>I am learning HTML.  Recent accomplishments:</p>` insérez sur la ligne ci-dessous où vous avez placé `<h1>About Me</h1>` .  
+1.  De retour dans **l’onglet éditeur**, `<p>I am learning HTML.  Recent accomplishments:</p>` insérez sur la ligne ci-dessous où vous avez placé `<h1>About Me</h1>` .  
     
     :::row:::
        :::column span="":::
@@ -185,7 +184,7 @@ Si vous développiez une grande page avec beaucoup de code HTML, il est assez fa
 
 ### <a name="learn-the-difference-between-html-and-the-dom"></a>Découvrez la différence entre le code HTML et le DOM  
 
-Avant de commencer à modifier votre contenu à partir de Microsoft Edge DevTools, vous devez comprendre la différence entre html et DOM.  La meilleure façon d’apprendre est par exemple :  
+Avant de commencer à modifier votre contenu à partir Microsoft Edge DevTools, vous devez comprendre la différence entre HTML et le DOM.  La meilleure façon d’apprendre est par exemple :  
 
 1.  Accédez à **l’onglet en direct.**  Au bas de votre page, le texte `A new element!?!` s’affiche.  
     
@@ -255,7 +254,7 @@ Si vous souhaitez expérimenter rapidement les modifications de contenu sans qui
     
 Ce flux de travail est uniquement bon pour expérimenter les modifications de contenu.  Si vous actualisez la page ou fermez l’onglet, vos modifications ont disparu définitivement.  Si vous utilisez ce flux de travail et que vous souhaitez enregistrer vos modifications, vous devez copier manuellement ces modifications dans votre code HTML.  Les deux sections suivantes vous montrent d’autres façons de modifier le contenu à partir de l’arborescence DOM.  
 
-## <a name="reorder-nodes"></a>Réordez les nodes  
+## <a name="reorder-nodes"></a>Réordons les nodes  
 
 Vous pouvez également modifier l’ordre des nodes DOM.  Par exemple, sur votre page web, le menu de navigation se trouve près du bas.  Pour le déplacer vers le haut :  
 
@@ -269,24 +268,30 @@ Vous pouvez également modifier l’ordre des nodes DOM.  Par exemple, sur votre
     
     :::row:::
        :::column span="":::
+          &nbsp;  
+       :::column-end:::
+       :::column span="":::
+          Le `<nav>` nœud s’affiche maintenant en haut de votre page.  
+       :::column-end:::
+    :::row-end:::  
+    :::row:::
+       :::column span="":::
           :::image type="complex" source="../media/beginners-html-reorder2.msft.png" alt-text="Faire glisser le nœud de navigation vers le haut" lightbox="../media/beginners-html-reorder2.msft.png":::
              Faire glisser le nœud de navigation vers le haut  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          Le `<nav>` nœud s’affiche maintenant en haut de votre page.  
-          
           :::image type="complex" source="../media/beginners-html-reorder3.msft.png" alt-text="Le nœud de navigation se trouve en haut de la page" lightbox="../media/beginners-html-reorder3.msft.png":::
              Le nœud de navigation se trouve en haut de la page  
           :::image-end:::  
        :::column-end:::
-   :::row-end:::  
+    :::row-end:::  
     
 ### <a name="delete-a-node"></a>Supprimer un nœud  
 
 Vous pouvez également supprimer des nodes de l’arborescence DOM.  
 
-1.  Dans **l’arborescence DOM,** choisissez `<div>A new element!?!</div>` .  DevTools met en évidence le bleu du nœud.  
+1.  Dans **l’arborescence DOM,** choisissez `<div>A new element!?!</div>` .  DevTools met en évidence le nœud bleu.  
     
     :::image type="complex" source="../media/beginners-html-delete1.msft.png" alt-text="Choisir le nœud à supprimer" lightbox="../media/beginners-html-delete1.msft.png":::
        Choisir le nœud à supprimer  
@@ -350,7 +355,7 @@ Vous avez presque terminé.  Vous avez apporté quelques modifications à votre 
     
 ## <a name="next-steps"></a>Étapes suivantes  
 
-*   Complétez le didacticiel suivant de cette série, Get [Started with CSS][DevToolsBeginnersCss], pour apprendre à styler votre page et expérimenter les modifications de style dans Microsoft Edge DevTools.  
+*   Complétez le didacticiel suivant de cette série, [Prise en main avec CSS,][DevToolsBeginnersCss]pour apprendre à styler votre page et expérimenter les modifications de style dans Microsoft Edge DevTools.  
 *   Lisez [l’introduction au DOM][MDNIntroductionDom] pour en savoir plus sur le DOM.  
 *   Consultez un cours comme [Introduction au développement Web][CourseraIntroductionToWebDevelopment] pour obtenir une expérience de développement web plus pratique.  
 
@@ -360,7 +365,7 @@ Vous avez presque terminé.  Vous avez apporté quelques modifications à votre 
 
 <!--- links --->  
 
-[DevToolsBeginnersCss]: ./css.md "DevTools for Beginners: Get Started with CSS | Documents Microsoft"  
+[DevToolsBeginnersCss]: ./css.md "DevTools pour les débutants : Prise en main avec CSS | Documents Microsoft"  
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"  
 
@@ -373,7 +378,7 @@ Vous avez presque terminé.  Vous avez apporté quelques modifications à votre 
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est [trouvée ici](https://developers.google.com/web/tools/chrome-devtools/beginners/html) et est co-auteure par [Le Rédacteur technique (Intern),][KatherineJackson] Chrome DevTools\).  
+> La page d’origine a été [trouvée ici](https://developers.google.com/web/tools/chrome-devtools/beginners/html) et a été co-auteure par [Le rédacteur technique Principal \(Interne][KatherineJackson] au rédacteur technique, Chrome DevTools\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -381,5 +386,5 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[KatherineJackson]: https://developers.google.com/web/resources/contributors/katjackson  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[KatherineJackson]: https://developers.google.com/web/resources/contributors  

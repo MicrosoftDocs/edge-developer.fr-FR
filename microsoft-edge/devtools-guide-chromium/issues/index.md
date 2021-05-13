@@ -1,18 +1,18 @@
 ---
 description: Utilisez l’outil Problèmes pour rechercher et résoudre les problèmes liés à votre site web.
-title: Rechercher et résoudre les problèmes liés à l’outil Problèmes DevTools de Microsoft Edge
+title: Rechercher et résoudre les problèmes liés à Microsoft Edge’outil Problèmes de DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: e16bd926ea5bae35ad82f54ac5d1ae2028e3c59d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 64954d632416f7d1353269d04c1550ca7a0652b7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398972"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564181"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11398972"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
+# <a name="find-and-fix-problems-with-the-microsoft-edge-devtools-issues-tool"></a>Rechercher et résoudre les problèmes liés à Microsoft Edge’outil Problèmes de DevTools  
 
-# <a name="find-and-fix-problems-with-the-microsoft-edge-devtools-issues-tool"></a>Rechercher et résoudre les problèmes liés à l’outil Problèmes DevTools de Microsoft Edge  
-
-**L’outil Problèmes** dans Microsoft Edge DevTools réduit la fatigue et l’encombrement des notifications de la **console.**  Utilisez-le pour rechercher des solutions aux problèmes détectés par le navigateur, tels que les problèmes de cookie et le contenu mixte.  
+**L’outil Problèmes** dans Microsoft Edge DevTools réduit la fatigue et l’encombrement de la console de **notification.**  Utilisez-le pour rechercher des solutions aux problèmes détectés par le navigateur, tels que les problèmes de cookie et le contenu mixte.  
 
 > [!NOTE]
 > Dans Microsoft Edge 84, l’outil **Problèmes** prend en charge trois types de problèmes :  
@@ -38,9 +37,9 @@ ms.locfileid: "11398972"
 > *   [Contenu mixte][MDNMixedContent]  
 > *   [Problèmes coEP][W3CCOEPSpec]
 > 
-> L’équipe Microsoft Edge DevTools prévoit de prendre en charge d’autres types de problèmes dans les futures versions de Microsoft Edge.  
+> L Microsoft Edge’équipe DevTools prévoit de prendre en charge d’autres types de problèmes dans les futures versions de Microsoft Edge.  
 
-## <a name="open-the-issues-tool-in-the-devtools-drawer"></a>Ouvrir l’outil Problèmes dans le caisse de DevTools  
+## <a name="open-the-issues-tool-in-the-devtools-drawer"></a>Ouvrir l’outil Problèmes dans le bac DevTools  
 
 1.  Accédez à une page web, telle que [samesite-sandbox.glitch.me][GlitchSamesiteSandbox], qui contient des problèmes à résoudre.  
 1.  [Ouvrez DevTools][DevtoolsOpen].  
@@ -80,7 +79,7 @@ ms.locfileid: "11398972"
 1.  Choisissez un élément dans l’outil Problèmes pour obtenir des **conseils** sur la façon de résoudre le problème et de rechercher les ressources affectées.  
     
     :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Marquer les cookies entre sites comme problème sécurisé ouvert dans l’outil Problèmes" lightbox="../media/issues-tab-issue-open.msft.png":::
-       **Marquer les cookies entre sites comme problème** sécurisé ouvert dans **l’outil** Problèmes  
+       **Marquer les cookies entre sites comme problème** sécurisé ouvert dans **l’outil Problèmes**  
     :::image-end:::  
     
     Chaque élément possède quatre composants :  
@@ -116,14 +115,14 @@ ms.locfileid: "11398972"
 
 <!-- links -->  
 
-[DevtoolsOpen]: ../open/index.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsOpen]: ../open/index.md "Ouvrez Microsoft Edge devTools | Documents Microsoft"  
 
 [GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "Tests de cookie SameSite | Glitch"  
 
 [MDNSameSiteCookies]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite "Cookies SameSite | MDN"  
 [MDNMixedContent]: https://developer.mozilla.org/docs/Web/Security/Mixed_content "Contenu mixte | MDN"  
 
-[W3CCOEPSpec]: https://wicg.github.io/cross-origin-embedder-policy "Stratégie d’incorporation d’origine croisée | Groupe communautaire Web"  
+[W3CCOEPSpec]: https://wicg.github.io/cross-origin-embedder-policy "Stratégie d’incorporation d’origine croisée | Groupe de Community Web"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
@@ -134,5 +133,5 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[SamDutton]: https://developers.google.com/web/resources/contributors/samdutton  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[SamDutton]: https://developers.google.com/web/resources/contributors#sam-dutton  

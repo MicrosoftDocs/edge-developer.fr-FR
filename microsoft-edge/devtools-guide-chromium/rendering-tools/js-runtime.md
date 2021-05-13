@@ -1,18 +1,18 @@
 ---
-description: Identifiez les fonctions coûteuses à l’aide du panneau Mémoire DevTools de Microsoft Edge.
+description: Identifiez les fonctions coûteuses à l’aide Microsoft Edge panneau Mémoire DevTools.
 title: Accélérer le runtime JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 2151777c6a9f94408f48552839531c3534d3de36
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: bbac00ab46e205fb692cc3de3e5f08ba854b0911
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439737"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565084"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439737"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-
 # <a name="speed-up-javascript-runtime"></a>Accélérer le runtime JavaScript  
 
 Identifiez les fonctions coûteuses à l’aide **de l’outil** Mémoire.  
@@ -39,7 +38,7 @@ Identifiez les fonctions coûteuses à l’aide **de l’outil** Mémoire.
 ### <a name="summary"></a>Résumé  
 
 *   Enregistrez exactement les fonctions qui ont été appelées et la quantité de mémoire nécessaire avec l’échantillonnage d’allocation dans **l’outil Mémoire.**  
-*   Visualisez vos profils en tant que graphique graphique.  
+*   Visualisez vos profils en tant que graphique graphique graphique.  
     
 ## <a name="record-a-sampling-profile"></a>Enregistrer un profil d’échantillonnage  
 
@@ -58,7 +57,7 @@ Si vous remarquez jank dans votre JavaScript, collectez un profil d’échantill
 
 Lorsque vous avez terminé l’enregistrement, DevTools remplit automatiquement le panneau Mémoire sous **PROFILS D’ÉCHANTILLONNAGE** avec les données de votre enregistrement. ****  
 
-L’affichage par défaut **est Heavy \(Bottom Up\)**.  Cette vue vous permet d’examiner les fonctions qui ont eu le plus d’impact sur les performances et d’examiner le chemin d’accès à la demande pour chaque fonction.  
+L’affichage par défaut **est Heavy \(Bottom Up\).**  Cette vue vous permet d’examiner les fonctions qui ont eu le plus d’impact sur les performances et d’examiner le chemin d’accès à la demande pour chaque fonction.  
 
 ### <a name="change-sort-order"></a>Modifier l’ordre de tri  
 
@@ -84,7 +83,7 @@ Pour modifier l’ordre de tri, sélectionnez le menu déroulant en face de l’
 
 ### <a name="exclude-functions"></a>Exclure des fonctions  
 
-Pour exclure une fonction de votre profil d’échantillonnage, choisissez-la, puis sélectionnez le bouton exclure la fonction sélectionnée **\(** exclure la ![ fonction sélectionnée ](../media/exclude-icon.msft.png) \).  La fonction de demande \(parent\) de la fonction exclue \(enfant\) est chargée de la mémoire allouée affectée à la fonction exclue \(enfant\).  
+Pour exclure une fonction de votre profil d’échantillonnage, choisissez-la, puis choisissez le bouton exclure la fonction sélectionnée **\(** exclure la ![ fonction sélectionnée ](../media/exclude-icon.msft.png) \).  La fonction de demande \(parent\) de la fonction exclue \(enfant\) est chargée de la mémoire allouée affectée à la fonction exclue \(enfant\).  
 
 Sélectionnez le bouton restaurer **toutes les fonctions** \( restaurer toutes les fonctions \) pour restaurer toutes les fonctions ![ ](../media/restore-icon.msft.png) exclues dans l’enregistrement.  
 
@@ -92,7 +91,7 @@ Sélectionnez le bouton restaurer **toutes les fonctions** \( restaurer toutes l
 
 L’affichage Graphique fournit une représentation visuelle du profil d’échantillonnage au fil du temps.  
 
-Après avoir [enregistré un profil d’échantillonnage,](#record-a-sampling-profile)affichez l’enregistrement sous la forme d’un graphique à graphique graphique en modifiant l’ordre [de tri](#change-sort-order) en **graphique.**  
+Après avoir [enregistré un profil d’échantillonnage,](#record-a-sampling-profile)affichez l’enregistrement sous la forme d’un graphique à graphiques en modifiant l’ordre [de tri](#change-sort-order) en **graphique.**  
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Affichage Graphique de graphique" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
    Affichage Graphique de graphique  
@@ -105,17 +104,17 @@ Le graphique en graphiques est divisé en deux parties.
 | 1 | Vue d'ensemble | Vue oculaire de l’intégralité de l’enregistrement.  La hauteur des barres correspond à la profondeur de la pile d’appels.  Ainsi, plus la barre est élevée, plus la pile d’appels est profonde.  |  
 | 2 | Pile des appels | Il s’agit d’une vue détaillée des fonctions qui ont été appelées pendant l’enregistrement.  L’axe horizontal est le temps et l’axe vertical est la pile d’appels.  Les piles sont organisées de haut en bas.  Ainsi, la fonction au-dessus appelait celle en dessous, et ainsi de suite.  |  
 
-Les fonctions sont colorées de manière aléatoire.  Il n’existe aucune corrélation avec les couleurs utilisées dans les autres panneaux.  Toutefois, les fonctions sont toujours colorées de la même façon entre les appels afin que vous pouvez observer les modèles dans chaque runtime.  
+Les fonctions sont colorées de manière aléatoire.  Il n’existe aucune corrélation avec les couleurs utilisées dans les autres panneaux.  Toutefois, les fonctions sont toujours colorées de la même façon entre les appels, de sorte que vous pouvez observer les modèles dans chaque runtime.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="Graphique à graphiques sous-annotés" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
-   Graphique à graphiques sous-annotés  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="Graphique en graphiques à graphiques à annoter" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
+   Graphique en graphiques à graphiques à annoter  
 :::image-end:::  
 
 Une pile d’appels de grande taille n’est pas nécessairement significative, cela signifie simplement que de nombreuses fonctions ont été appelées.  Toutefois, une barre large signifie qu’une fonction a mis beaucoup de temps à se terminer.  Ce sont des candidats à l’optimisation.  
 
 ### <a name="zoom-in-on-specific-parts-of-recording"></a>Zoom sur des parties spécifiques de l’enregistrement  
 
-Choisissez, maintenez la souris à gauche et à droite dans la vue d’ensemble pour zoomer sur des parties particulières de la pile d’appels.  Après avoir zoomé, la pile d’appels affiche automatiquement la partie de l’enregistrement que vous avez sélectionnée.  
+Choisissez, maintenez la souris à gauche et à droite dans la vue d’ensemble, puis faites glisser la souris vers la gauche pour zoomer sur des parties particulières de la pile d’appels.  Après avoir zoomé, la pile d’appels affiche automatiquement la partie de l’enregistrement que vous avez sélectionnée.  
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png" alt-text="Graphique avec zoom" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png":::
    Graphique avec zoom  
@@ -161,5 +160,5 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

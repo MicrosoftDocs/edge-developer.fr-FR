@@ -1,18 +1,18 @@
 ---
-description: Inspectez et modifiez les animations à l’aide de l’inspecteur d’animation Microsoft Edge DevTools.
+description: Inspectez et modifiez les animations à l’Microsoft Edge’inspecteur d’animation DevTools.
 title: Inspecter les animations
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: dba948087ca06015f686d17ba48584199373805a
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: a695517cb56da057e62293b5ca92b22058602f44
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439541"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564216"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439541"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="inspect-animations"></a>Inspecter les animations  
 
-Inspectez et modifiez les animations à l’aide de l’inspecteur d’animation Microsoft Edge DevTools.  
+Inspectez et modifiez les animations à l’Microsoft Edge’inspecteur d’animation DevTools.  
 
 :::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="inspecteur d’animation" lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
    inspecteur d’animation  
@@ -40,11 +39,11 @@ Inspectez et modifiez les animations à l’aide de l’inspecteur d’animation
 
 *   Capturez les animations en ouvrant l’Inspecteur d’animation.  L’Inspecteur d’animation détecte et trie automatiquement les animations en groupes.  
 *   Inspectez les animations en ralentissant chacune d’elles, en relisant chacune d’elles ou en visualxant le code source.  
-*   Modifiez les animations en modifiant le minutage, le retard, la durée ou les décalages de l’image clé.  
+*   Modifiez les animations en modifiant le minutage, le délai, la durée ou les décalages d’images clés.  
 
 ## <a name="overview"></a>Vue d'ensemble  
 
-L’inspecteur d’animation Microsoft Edge DevTools a deux objectifs principaux.  
+L Microsoft Edge’inspecteur d’animation DevTools a deux objectifs principaux.  
 
 *   Inspection des animations.  Vous souhaitez ralentir, relire ou inspecter le code source d’un groupe d’animations.  
 *   Modification des animations.  Vous souhaitez modifier le minutage, le délai, la durée ou les décalages d’images clés d’un groupe d’animations.  La modification de Bézier et la modification d’images clés ne sont actuellement pas pris en charge.  
@@ -62,15 +61,15 @@ Il existe deux façons d’ouvrir l’Inspecteur d’animation :
 
 *   Ouvrir le menu Personnaliser et contrôler **DevTools**  
     1.  Accédez au **sous-menu Outils** Plus.  
-    1.  Choisissez **animations**:  
+    1.  Choisissez **Animations**:  
         
         :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Animations à l’aide du menu principal" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
            **Animations à l’aide** du menu principal  
-    :::image-end:::  
+        :::image-end:::  
         
 *   Ouvrir le **menu Commande**  
-    1.  Entrez `Drawer: Show Animations`.  
-
+    1.  Tapez `Drawer: Show Animations`.  
+        
 L’Inspecteur d’animation s’ouvre à côté de **l’outil Console.**  Étant donné que l’Inspecteur d’animation est un outil DevTools, vous pouvez utiliser l’Inspecteur d’animation à partir de n’importe quel panneau DevTools.  
 
 :::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="Inspecteur d’animation vide" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
@@ -104,7 +103,7 @@ Une fois que vous avez capturé une animation, vous pouvez la relire de plusieur
 
 *   Pointez sur la miniature dans **le** volet Vue d’ensemble pour en afficher un aperçu.  
 *   Choisissez le groupe **** d’animations dans le volet Vue **** d’ensemble \(afin qu’il s’affiche dans le volet d’informations\) et choisissez l’icône relecture **\(** icône de relecture ![ ](../media/replay-button-icon.msft.png) \).  L’animation est relecture dans la vue.  Choisissez les **icônes de vitesse d’animation** \( icônes de vitesse d’animation \) pour modifier la vitesse d’aperçu du groupe d’animations ![ actuellement ](../media/animation-speed-buttons-icon.msft.png) sélectionné.  Vous pouvez utiliser la barre verticale rouge pour modifier votre position actuelle.  
-*   Choisissez et faites glisser la barre verticale rouge pour nettoyer l’animation de laport d’affichage.  
+*   Choisissez et faites glisser la barre verticale rouge pour nettoyer l’animation de la vue.  
     
 ### <a name="view-animation-details"></a>Afficher les détails de l’animation  
 
@@ -168,16 +167,11 @@ Pour ajouter un délai à une animation, choisissez-la et faites-la glisser n’
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-(.. /media/animation-speed-buttons-icon.msft.png) : .. /media/animation-speed-buttons-icon.msft.png  
-(.. /media/replay-button-icon.msft.png) : .. /media/replay-button-icon.msft.png  
-
 <!-- links -->  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -185,4 +179,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

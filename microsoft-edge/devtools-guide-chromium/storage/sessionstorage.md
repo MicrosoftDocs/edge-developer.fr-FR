@@ -1,18 +1,18 @@
 ---
-description: Découvrez comment afficher et modifier sessionStorage avec le volet Stockage de session et la console.
-title: Afficher et modifier le stockage de session avec Microsoft Edge DevTools
+description: Découvrez comment afficher et modifier sessionStorage à l’Stockage de session et à la console.
+title: Afficher et modifier les Stockage session avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 0168b01fd01071ebd19bd211c6d947ae006d778c
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 6d686a6eb7bc6fca46d65c46fa9c5aee044ec052
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439660"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565063"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,8 +27,7 @@ ms.locfileid: "11439660"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="view-and-edit-session-storage-with-microsoft-edge-devtools"></a>Afficher et modifier le stockage de session avec Microsoft Edge DevTools  
+# <a name="view-and-edit-session-storage-with-microsoft-edge-devtools"></a>Afficher et modifier les Stockage session avec Microsoft Edge DevTools  
 
 Ce guide vous montre comment utiliser [Microsoft Edge DevTools][MicrosoftEdgeDevTools] pour afficher, modifier et supprimer des paires clé-valeur [sessionStorage.][MDNSessionStorage]  
 
@@ -40,10 +39,10 @@ Ce guide vous montre comment utiliser [Microsoft Edge DevTools][MicrosoftEdgeDev
        Volet **** manifeste  
     :::image-end:::  
     
-1.  Développez le menu **Stockage de** session.  
+1.  Développez **le menu Stockage** session.  
     
-    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Menu Stockage de session" lightbox="../media/storage-application-storage-session-storage.msft.png":::
-       Menu **Stockage de** session  
+    :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="Menu Session Stockage" lightbox="../media/storage-application-storage-session-storage.msft.png":::
+       **Menu Session Stockage**  
     :::image-end:::  
     
 1.  Choisissez un domaine pour afficher les paires clé-valeur.  
@@ -109,13 +108,13 @@ Ce guide vous montre comment utiliser [Microsoft Edge DevTools][MicrosoftEdgeDev
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
 
-[MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window.sessionStorage, | MDN"  
+[MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window.sessionStorage | MDN"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/sessionstorage) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/sessionstorage) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -123,4 +122,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

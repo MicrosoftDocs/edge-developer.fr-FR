@@ -1,18 +1,18 @@
 ---
-description: Mise en place de CSS
+description: Prise en main avec CSS
 title: 'DevTools pour les débutants : mise en place de CSS'
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft Edge, développement web, outils f12, devtools
-ms.openlocfilehash: 6a7135e144123917535e7c43e6a3cd608ec0c8a7
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 6f34cfa8610848505c8aa795c4fab16e5d2a98ed
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439436"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564643"
 ---
 <!-- Copyright Katherine Jackson 
 
@@ -32,10 +32,10 @@ ms.locfileid: "11439436"
 
 Dans ce didacticiel, vous allez apprendre à utiliser CSS pour styler une page web.  Vous apprendrez également à utiliser Microsoft Edge DevTools pour expérimenter les modifications CSS.  
 
-L’article suivant est le deuxième didacticiel d’une série de didacticiels qui vous apprend les principes de base du développement web et de Microsoft Edge DevTools.  Vous gagnez en expérience pratique en construisant votre propre site web.  Vous n’avez pas besoin de terminer le premier didacticiel avant de suivre le second.  [La mise en place de votre code](#set-up-your-code) vous montre comment la configurer.  
+L’article suivant est le deuxième didacticiel d’une série de didacticiels qui vous apprend les principes de base du développement web et Microsoft Edge DevTools.  Vous gagnez en expérience pratique en construisant votre propre site web.  Vous n’avez pas besoin de terminer le premier didacticiel avant de suivre le second.  [La mise en place de votre code](#set-up-your-code) vous montre comment la configurer.  
 
 > [!NOTE]
-> Ce didacticiel est conçu pour les néophytes et se concentre à la fois sur les principes de base du développement **web** et sur les principes de base de l’utilisation de DevTools pour expérimenter CSS.  Si vous souhaitez un didacticiel qui se concentre uniquement sur DevTools, accédez à Démarrer avec l’affichage et la modification [de CSS][DevtoolsCssIndex].  
+> Ce didacticiel est conçu pour les néophytes et se concentre à la fois sur les principes de base du développement **web** et sur les principes de base de l’utilisation de DevTools pour expérimenter CSS.  Si vous souhaitez un didacticiel qui se concentre uniquement sur DevTools, accédez à Prise en main avec affichage et modification [de CSS][DevtoolsCssIndex].  
 
 Au début du didacticiel, votre site doit ressembler à la figure suivante.  
 
@@ -51,7 +51,7 @@ Une fois le didacticiel terminé, votre site doit ressembler à la figure suivan
 
 ## <a name="goals"></a>Objectifs  
 
-Suivez ce didacticiel pour mieux comprendre les concepts et les tâches suivants.  
+Suivez ce didacticiel pour mieux comprendre les concepts et tâches suivants.  
 
 *   Utilisation de CSS pour le style d’une page web.  
 *   Comment utiliser Microsoft Edge DevTools pour expérimenter CSS.  
@@ -59,19 +59,19 @@ Suivez ce didacticiel pour mieux comprendre les concepts et les tâches suivants
 
 Vous construisez un site web réel.  
 
-## <a name="prerequisites"></a>Prérequis  
+## <a name="prerequisites"></a>Conditions préalables  
 
 Avant d’essayer ce didacticiel, remplissez les conditions préalables suivantes.  
 
-*   [Complétez la][DevtoolsBeginnersHtml] mise en place du code HTML et du DOM ou assurez-vous que vous avez une connaissance du code HTML et du DOM semblable à ce qui est appris dans ce didacticiel.  
-*   Téléchargez le navigateur web [Microsoft Edge.][MicrosoftEdgeInsider]  Le didacticiel suivant utilise un ensemble d’outils de développement web, appelés Microsoft Edge DevTools, qui sont intégrés à Microsoft Edge.  
+*   [Complétez][DevtoolsBeginnersHtml] Prise en main html et le DOM ou assurez-vous que vous avez une connaissance du code HTML et du DOM semblable à ce qui est appris dans ce didacticiel.  
+*   Téléchargez le [Microsoft Edge][MicrosoftEdgeInsider] navigateur web.  Le didacticiel suivant utilise un ensemble d’outils de développement web, appelés Microsoft Edge DevTools, qui sont intégrés Microsoft Edge.  
 
 ## <a name="set-up-your-code"></a>Configurer votre code  
 
 Pour créer votre site, vous devez d’abord effectuer les actions suivantes pour configurer votre code.  
 
 > [!NOTE]
-> Si vous avez déjà terminé le premier didacticiel de la série, passez à la section suivante.  Continuez à utiliser votre code du dernier didacticiel, [Get Started with HTML and the DOM][DevtoolsBeginnersHtml].  
+> Si vous avez déjà terminé le premier didacticiel de la série, passez à la section suivante.  Continuez à utiliser votre code du dernier [didacticiel, Prise en main html et le DOM][DevtoolsBeginnersHtml].  
 
 1.  Ouvrez le [code source.][GlitchCookedAmphibianIndex]  L’onglet sur le focus de votre navigateur est référencé en tant **qu’onglet d’édition.**  
     
@@ -81,11 +81,11 @@ Pour créer votre site, vous devez d’abord effectuer les actions suivantes pou
     
 1.  Choisissez **l’ombrabe**.  Un menu s’insérait.  
     
-    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="Menu Options de Projet" lightbox="../media/beginners-css-setup2.msft.png":::
-       Menu Options de Projet  
+    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="Menu Options Project’équipe" lightbox="../media/beginners-css-setup2.msft.png":::
+       Menu Options Project’équipe  
     :::image-end:::  
 
-1.  Sélectionnez **Projet DeNte**.  Glitch crée une copie du projet que vous pouvez modifier.  
+1.  Choisissez **Project**.  Glitch crée une copie du projet que vous pouvez modifier.  
     
     > [!NOTE]
     > Glitch génère un nom aléatoire pour le nouveau projet.  
@@ -112,7 +112,7 @@ L’extrait de code suivant est le code HTML et CSS utilisé pour créer le para
 </p>
 ```  
 
-`style="border: 1px dashed red; padding: 5px;"` vous semble probablement nouveau.  Le reste doit paraître familier.  Si ce n’est pas le cas, terminez la mise en place du code HTML et du [DOM][DevtoolsBeginnersHtml] avant d’essayer les sections suivantes.  
+`style="border: 1px dashed red; padding: 5px;"` vous semble probablement nouveau.  Le reste doit avoir l’air familier.  Si ce n’est [pas le cas, Prise en main le code HTML][DevtoolsBeginnersHtml] et le DOM avant d’essayer les sections suivantes.  
 
 ## <a name="add-inline-styles"></a>Ajouter des styles inline  
 
@@ -268,19 +268,19 @@ Effectuer les actions suivantes pour utiliser des virgules afin d’ajouter plus
     
 ## <a name="experiment-with-devtools"></a>Expérimenter Avec DevTools  
 
-Lorsque vous poursuivez votre parcours pour devenir un expert en développement web, il se peut que vous trouviez que CSS est difficile.  Vous pouvez écrire du CSS et vous attendre à ce qu’il s’affiche dans un sens, mais le navigateur fait quelque chose de complètement différent.  Microsoft Edge DevTools facilite l’expérimentation des modifications et l’affichage immédiat de l’impact de ces modifications sur la page.  
+Lorsque vous poursuivez votre parcours pour devenir un expert en développement web, il se peut que vous trouviez que CSS est difficile.  Vous pouvez écrire du CSS et vous attendre à ce qu’il s’affiche dans un sens, mais le navigateur fait quelque chose de complètement différent.  Microsoft Edge DevTools facilite l’expérimentation des modifications et affiche immédiatement leur impact sur la page.  
 
 ### <a name="add-a-declaration-to-an-existing-rulest-in-devtools"></a>Ajouter une déclaration à un rulest existant dans DevTools  
 
 Complétez les actions suivantes pour itérer sur le style d’un élément existant, ajoutez une déclaration à un jeu de règles existant.  
 
-1.  Pointez sur le **lien Accueil,** ouvrez le menu contextuel \(clic droit\), puis choisissez **Inspecter**.  
+1.  Pointez sur **le lien Accueil,** ouvrez le menu contextuel \(clic droit\), puis choisissez **Inspecter**.  
     
     :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="Inspecter le lien Accueil" lightbox="../media/beginners-css-add1.msft.png":::
        Inspecter le lien Accueil  
     :::image-end:::  
     
-    DevTools s’ouvre à côté de votre page.  Le code qui représente le lien Accueil est `<a href="/">Home</a>` mis en surbrillant en bleu dans l’arborescence DOM.  L’extrait de code et l’aperçu doivent être familiers à partir de La mise en route avec [HTML et le DOM][DevtoolsBeginnersHtml].  
+    DevTools s’ouvre à côté de votre page.  Le code qui représente le lien Accueil est `<a href="/">Home</a>` mis en surbrillant en bleu dans l’arborescence DOM.  L’extrait de code et l’aperçu doivent être familiers [à partir Prise en main html et le DOM][DevtoolsBeginnersHtml].  
     
     :::row:::
        :::column span="":::
@@ -305,7 +305,7 @@ Complétez les actions suivantes pour itérer sur le style d’un élément exis
        Ajouter une nouvelle déclaration  
     :::image-end:::  
     
-1.  Tapez `color` et sélectionnez `Enter` .  L’interface utilisateur de la mise àcomplet automatique suggère des options en cours de taper.  
+1.  Tapez `color` et sélectionnez `Enter` .  L’interface utilisateur de lacomplet automatique suggère des options au cours de la tape.  
     
     :::image type="complex" source="../media/beginners-css-add5.msft.png" alt-text="Couleur du type" lightbox="../media/beginners-css-add5.msft.png":::
        Type `color`  
@@ -321,7 +321,7 @@ Complétez les actions suivantes pour itérer sur le style d’un élément exis
 
 Effectuer les actions suivantes pour modifier les déclarations existantes dans DevTools.  
 
-1.  Choose the magenta square next to `magenta` .  Un s picker de couleur apparaît.  
+1.  Choisissez le carré magenta en côté `magenta` de .  Un s picker de couleur s’insérait.  
     
     :::image type="complex" source="../media/beginners-css-edit1.msft.png" alt-text="S sélectionneur de couleurs" lightbox="../media/beginners-css-edit1.msft.png":::
        S sélectionneur de couleurs  
@@ -329,8 +329,8 @@ Effectuer les actions suivantes pour modifier les déclarations existantes dans 
     
 1.  Utilisez le s sélectionneur de couleurs pour modifier le texte de police en une couleur que vous aimez.  
     
-    :::image type="complex" source="../media/beginners-css-edit2.msft.png" alt-text="Modifier la couleur de police en violet avec le s picker de couleurs" lightbox="../media/beginners-css-edit2.msft.png":::
-       Modifier la couleur de police en violet avec le s picker de couleurs  
+    :::image type="complex" source="../media/beginners-css-edit2.msft.png" alt-text="Modifier la couleur de police en violet avec le s picker de couleur" lightbox="../media/beginners-css-edit2.msft.png":::
+       Modifier la couleur de police en violet avec le s picker de couleur  
     :::image-end:::  
     
 ### <a name="add-a-new-ruleset-in-devtools"></a>Ajouter un nouveau jeu de règles dans DevTools  
@@ -345,7 +345,7 @@ Pour ajouter de nouveaux jeux de règles dans DevTools, complétez les actions s
     
 1.  Remplacez `a` par `a:hover` .  
     
-    :::image type="complex" source="../media/beginners-css-rule2.msft.png" alt-text="Remplacer un par un : pointer" lightbox="../media/beginners-css-rule2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule2.msft.png" alt-text="Remplacer une par une : pointer" lightbox="../media/beginners-css-rule2.msft.png":::
        Remplacer `a` par `a:hover`  
     :::image-end:::  
     
@@ -354,7 +354,7 @@ Pour ajouter de nouveaux jeux de règles dans DevTools, complétez les actions s
 1.  Choisissez entre les crochets pour ajouter une nouvelle déclaration.  
 1.  Tapez `background-color` le nom de la déclaration et sélectionnez `Enter` .  
     
-    :::image type="complex" source="../media/beginners-css-rule3.msft.png" alt-text="Tapez couleur d’arrière-plan" lightbox="../media/beginners-css-rule3.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule3.msft.png" alt-text="Type background-color" lightbox="../media/beginners-css-rule3.msft.png":::
        Type `background-color`  
     :::image-end:::  
     
@@ -388,7 +388,7 @@ Dans une étape précédente, vous avez ajouté l’extrait de code suivant en t
 ...
 ```  
 
-Que se passe-t-il si vous `index.html` souhaitez un style identique ?  Que se passe-t-il si vous avez un grand nombre de pages sur lesquelles vous souhaitez appliquer vos styles ?  Vous devez copier et coller la feuille de style interne dans chaque page web de votre site.  Effectuer les actions suivantes pour ajouter une feuille de **style externe** afin de vous permettre d’écrire votre feuille de style CSS une seule fois et de l’appliquer à plusieurs pages.  
+Que se passe-t-il si vous `index.html` souhaitez un style identique ?  Que se passe-t-il si vous avez un grand nombre de pages sur lesquelles vous souhaitez appliquer vos styles ?  Vous devez copier et coller la feuille de style interne dans chaque page web de votre site.  Pour ajouter une feuille de style externe, vous devez effectuer les actions suivantes pour écrire votre feuille de **style** CSS une seule fois et l’appliquer à plusieurs pages.  
 
 1.  Tout d’abord, actualisez l’onglet en direct pour supprimer les modifications que vous avez apportées dans DevTools.  
     
@@ -473,7 +473,7 @@ Que se passe-t-il si vous `index.html` souhaitez un style identique ?  Que se pa
        Page d’accueil  
     :::image-end:::  
     
-1.  Choisissez le **lien Contact** pour accéder à la page de contact.  La page de contact a la même mise en forme que la page d’accueil.  
+1.  Choisissez le **lien De** contact pour accéder à la page de contact.  La page de contact a la même mise en forme que la page d’accueil.  
     
     :::image type="complex" source="../media/beginners-css-external11.msft.png" alt-text="Page de contact" lightbox="../media/beginners-css-external11.msft.png":::
        Page de contact  
@@ -537,7 +537,7 @@ Dans la dernière section, vous avez ajouté Bootstrap à vos pages web, ce qui 
     
 ### <a name="understand-classes"></a>Comprendre les classes  
 
-Les classes vous permet d’affecter des collections de styles à des éléments arbitraires.  Utilisez l’extrait de code suivant pour appliquer plusieurs styles à l’élément après avoir définie `<header>` `class` l’attribut sur `jumbotron` .  
+Les classes vous permet d’affecter des collections de styles à des éléments arbitraires.  Utilisez l’extrait de code suivant pour appliquer plusieurs styles à l’élément après avoir appliqué `<header>` `class` l’attribut `jumbotron` à .  
 
 ```css
 .jumbotron {
@@ -576,7 +576,7 @@ Effectuer les actions suivantes pour amorcer et fournir des classes pour aligner
        Ajouter la `container-fluid` classe  
     :::image-end:::  
     
-1.  Encapsulez `<nav>` vos éléments et vos `<main>` `<div class="row">` éléments.  Veillez à placer `</div>` après afin de fermer correctement la nouvelle `</main>` balise.  
+1.  Encapsulez `<nav>` vos éléments et vos éléments dans `<main>` `<div class="row">` .  Veillez à placer `</div>` après afin de fermer correctement la nouvelle `</main>` balise.  
     
     :::image type="complex" source="../media/beginners-css-align2.msft.png" alt-text="Ajouter une ligne" lightbox="../media/beginners-css-align2.msft.png":::
        Ajouter une ligne  
@@ -598,9 +598,9 @@ Effectuer les actions suivantes pour amorcer et fournir des classes pour aligner
 
 Félicitations, vous avez terminé.  
 
-*   La meilleure façon d’améliorer le développement web consiste à créer davantage de sites.  Ne vous inquiétez pas de la casse.  Il vous suffit de vous faire plaisir et d’apprendre autant que possible en cours de route.  
-*   Pour en savoir plus sur le style des pages web, accédez à [Introduction à CSS][MDNCssFirstSteps].  
-*   Pour en savoir plus sur l’utilisation de DevTools pour expérimenter le CSS d’une page, accédez à Démarrer avec l’affichage et la modification [de CSS][DevtoolsCssIndex].  
+*   La meilleure façon d’améliorer le développement web consiste à créer davantage de sites.  Ne vous inquiétez pas des ruptures.  Il vous suffit de vous faire plaisir et d’apprendre autant que possible en cours de route.  
+*   Pour en savoir plus sur le style des pages web, accédez à [Introduction à CSS.][MDNCssFirstSteps]  
+*   Pour en savoir plus sur l’utilisation de DevTools pour expérimenter le CSS d’une page, accédez à Prise en main avec [Viewing and Changing CSS][DevtoolsCssIndex].  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
@@ -608,8 +608,8 @@ Félicitations, vous avez terminé.
 
 <!--- links  --->  
 
-[DevtoolsBeginnersHtml]: ./html.md "DevTools pour les débutants : mise en place du code HTML et du dom | Documents Microsoft"  
-[DevtoolsCssIndex]: ../css/index.md "Mise en place de l’affichage et de la modification des | Documents Microsoft"  
+[DevtoolsBeginnersHtml]: ./html.md "DevTools pour les débutants : Prise en main html et le dom | Documents Microsoft"  
+[DevtoolsCssIndex]: ../css/index.md "Prise en main Avec l’affichage et la modification des | Documents Microsoft"  
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"  
 
@@ -619,7 +619,7 @@ Félicitations, vous avez terminé.
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est [trouvée ici](https://developers.google.com/web/tools/chrome-devtools/beginners/css) et est co-auteure par [Le rédacteur technique Principal \(interne][KatherineJackson] rédacteur technique, Chrome DevTools\).  
+> La page d’origine a été [trouvée ici](https://developers.google.com/web/tools/chrome-devtools/beginners/css) et a été co-auteure par [Le rédacteur technique Principal \(Interne][KatherineJackson] au rédacteur technique, Chrome DevTools\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -627,5 +627,5 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[KatherineJackson]: https://developers.google.com/web/resources/contributors/katjackson  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[KatherineJackson]: https://developers.google.com/web/resources/contributors  

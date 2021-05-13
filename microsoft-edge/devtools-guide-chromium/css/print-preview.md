@@ -3,16 +3,16 @@ description: Ouvrez l’outil de rendu et sélectionnez Émuler le support CSS >
 title: Forcer Microsoft Edge DevTools en mode Aperçu avant impression (type de média d’impression CSS)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 0123b7abf475212304f654c04bc232e3e96f0bda
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 6c49d956a9a7185b162ca8e2996e7b3e715b40ab
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399077"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564426"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11399077"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="force-microsoft-edge-devtools-into-print-preview-mode"></a>Forcer Microsoft Edge DevTools en mode Aperçu avant impression  
 
 La [requête de média d’impression][MDNUsingMediaQueries] contrôle l’apparence de votre page lors de l’impression.  Pour forcer votre page en mode Aperçu avant impression :  
@@ -45,7 +44,7 @@ La [requête de média d’impression][MDNUsingMediaQueries] contrôle l’appar
        Mode Aperçu avant impression  
     :::image-end:::  
     
-À partir de là, vous pouvez afficher et modifier votre CSS, comme n’importe quelle autre page web.  Accédez à [la mise en place de l’affichage et de la modification de CSS][DevToolsCSSGetStarted].  
+À partir de là, vous pouvez afficher et modifier votre CSS, comme n’importe quelle autre page web.  Accédez à [Prise en main avec l’affichage et la modification du CSS.][DevToolsCSSGetStarted]  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
@@ -53,14 +52,14 @@ La [requête de média d’impression][MDNUsingMediaQueries] contrôle l’appar
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
 [DevToolsCSSGetStarted]: ./index.md "Commencer à afficher et modifier les | Documents Microsoft"  
 
 [MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Utilisation de requêtes multimédias | MDN"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/css/print-preview) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/css/print-preview) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -68,4 +67,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

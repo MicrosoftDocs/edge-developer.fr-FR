@@ -3,16 +3,16 @@ description: Découvrez comment utiliser Microsoft Edge DevTools pour afficher e
 title: Inspecter la grille CSS dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 034fbdf82ddba39fc0818bc6f3add8824c6bb3ac
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 68493fae5e96ef1b2c7ed1205d67fd2b4cf67df5
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439260"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564454"
 ---
 # <a name="inspect-css-grid"></a>Inspecter la grille CSS  
 
@@ -21,7 +21,7 @@ Cet article vous explique en détail l’identification des grilles CSS sur un s
 Les exemples utilisés dans les figures de cet article sont issus des pages web suivantes.  
 
 *   [Zone de fruit][JecFyiDemoCssGridFruit]  
-*   [Zone de boîtier de case][JecFyiDemoCssGridSnack]  
+*   [Zone de box][JecFyiDemoCssGridSnack]  
 
 ## <a name="before-you-begin"></a>Avant de commencer  
 
@@ -47,7 +47,7 @@ Ouvrez **le volet** Disposition.  Lorsque des grilles sont incluses sur une page
    **Volet** de disposition  
 :::image-end:::  
 
-La **** section Grille **du** volet De disposition contient les 2 sous-sections suivantes.  
+La **** section Grille **du** volet Disposition contient les 2 sous-sections suivantes.  
 
 *   Paramètres d’affichage de superposition  
 *   Superpositions de grille  
@@ -98,7 +98,7 @@ Choisissez **Masquer les étiquettes de** ligne pour masquer les numéros de lig
 
 Pour plus d’informations sur les noms de lignes dans la superposition de grille, accédez à Disposition à l’aide de [lignes de grille nommées.][MdnLayoutUsingNamedGridLines]  
 
-Choisissez **Afficher les noms de ligne** pour afficher les noms de ligne au lieu des nombres.  Dans l’exemple, 4 lignes ont des noms `left` : , , et `middle1` `middle2` `right` .  
+Choisissez **Afficher les noms de ligne** pour afficher les noms de lignes au lieu des nombres.  Dans l’exemple, 4 lignes ont des noms `left` : , , et `middle1` `middle2` `right` .  
 
 <!--In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  -->  
 
@@ -108,7 +108,7 @@ Choisissez **Afficher les noms de ligne** pour afficher les noms de ligne au lie
 
 ### <a name="show-track-sizes"></a>Afficher les tailles des pistes  
 
-Activez la **case à cocher** Afficher les tailles des pistes pour afficher les tailles de piste de la grille.  
+Activez la **case à cocher Afficher les tailles** des pistes pour afficher les tailles de piste de la grille.  
 
 DevTools s’affiche `[authored size]` et dans chaque étiquette de `[computed size]` ligne.  
 
@@ -126,7 +126,7 @@ Dans la démonstration, les `snack-box` tailles de colonne sont définies dans `
 
 Les étiquettes de ligne affichent uniquement les tailles calculées, car aucune taille de ligne n’est définie dans la feuille de style.  
 
-| Suivre la taille | Taille de la forme | Taille calculée |  
+| Suivre la taille | Taille de la forme de la forme | Taille calculée |  
 |:--- |:--- |:--- |  
 | **80px** | &nbsp;| 80px |  
 | **80px** | &nbsp;| 80px |  
@@ -137,7 +137,7 @@ Les étiquettes de ligne affichent uniquement les tailles calculées, car aucune
 
 ### <a name="show-area-names"></a>Afficher les noms de zone  
 
-Pour afficher les noms de zone, activez la case à cocher Afficher les **noms de** zone.  Dans l’exemple, il y a 3 zones dans la grille : **haut,** **bas1** et **bas2**.  
+Pour afficher les noms de zone, activez la case à cocher Afficher **les noms de** zone.  Dans l’exemple, il y a 3 zones dans la grille : **haut,** **bas1** et **bas2**.  
 
 :::image type="complex" source="../media/grid-show-area-names.msft.png" alt-text="Afficher les noms de zone" lightbox="../media/grid-show-area-names.msft.png":::
    **Afficher les noms de zone**  
@@ -157,7 +157,7 @@ La section **Superpositions** de grille contient une liste de grilles présentes
 
 ### <a name="enable-overlay-views-of-multiple-grids"></a>Activer les affichages de superposition de plusieurs grilles  
 
-Pour afficher la grille de superposition pour plusieurs grilles, cochez la case en regard de chaque nom de la grille.  Dans l’exemple, il existe 2 superpositions de grilles activées qui sont chacune représentées avec des couleurs différentes.  
+Pour afficher la grille de superposition de plusieurs grilles, cochez la case en regard de chaque nom de la grille.  Dans l’exemple, il existe 2 superpositions de grilles activées qui sont chacune représentées avec des couleurs différentes.  
 
 *   `main`  
 *   `div.snack-box`  
@@ -188,7 +188,7 @@ Pour mettre en surbrillez l’élément HTML dans l’outil **Elements** et fait
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Ouvrez Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Ouvrez Microsoft Edge devTools | Documents Microsoft"  
 
 [JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "Grille CSS | jec.fyi"  
 [JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "Grille CSS | jec.fyi"  
@@ -207,4 +207,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  

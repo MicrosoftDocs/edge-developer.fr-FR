@@ -1,18 +1,18 @@
 ---
-description: Découvrez comment enregistrer des captures instantanées de tas avec le profileur de tas Microsoft Edge DevTools et rechercher des fuites de mémoire.
+description: Découvrez comment enregistrer des instantanés de tas à l’Microsoft Edge profileur de tas DevTools et rechercher des fuites de mémoire.
 title: Comment enregistrer des captures instantanées de tas
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: ce7a6f972bed386f96312808428bd74f1241668f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 5f097cc45facc7f366a99a9564cf6f3d443f2058
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397803"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565014"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11397803"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="how-to-record-heap-snapshots"></a>Comment enregistrer des captures instantanées de tas  
 
-Découvrez comment enregistrer des captures instantanées de tas avec le profileur de tas Microsoft Edge DevTools et rechercher des fuites de mémoire.  
+Découvrez comment enregistrer des instantanés de tas à l’Microsoft Edge profileur de tas DevTools et rechercher des fuites de mémoire.  
 
-Le profileur de tas Microsoft Edge DevTools affiche la distribution de mémoire par les objets JavaScript et les nodes DOM associés de votre page.  Utilisez-le pour prendre des instantanés de tas JavaScript \(tas JS\), analyser des graphiques de mémoire, comparer des captures instantanées et rechercher des fuites de mémoire.  Accédez à [Objets conservant l’arborescence][DevtoolsMemoryProblems101ObjectsRetainingTree].  
+Le Microsoft Edge profileur de tas DevTools affiche la distribution de mémoire par les objets JavaScript et les nodes DOM associés de votre page.  Utilisez-le pour prendre des instantanés de tas JavaScript \(tas JS\), analyser des graphiques de mémoire, comparer des captures instantanées et rechercher des fuites de mémoire.  Accédez à [Objets en conservant l’arborescence][DevtoolsMemoryProblems101ObjectsRetainingTree].  
 
 ## <a name="take-a-snapshot"></a>Prendre une capture instantanée  
 
@@ -51,7 +50,7 @@ Une fois que la capture instantanée a été chargée dans DevTools et qu’elle
 :::image-end:::  
 
 > [!NOTE]
-> Seuls les objets accessibles sont inclus dans les captures instantanées.  En outre, la prise d’un instantané commence toujours par un garbage collection.  
+> Seuls les objets accessibles sont inclus dans les captures instantanées.  En outre, la prise d’une capture instantanée commence toujours par un garbage collection.  
 
 ## <a name="clear-snapshots"></a>Effacer des captures instantanées  
 
@@ -76,12 +75,12 @@ Afficher des captures instantanées sous différentes perspectives pour différe
 
 **Vue de comparaison**.  Affiche la différence entre deux captures instantanées.  Utilisez-le pour comparer deux captures instantanées de mémoire \(ou plus\) avant et après une opération.  L’inspection du delta dans la mémoire libérée et le nombre de références vous permet de confirmer la présence et la cause d’une fuite de mémoire.  
 
-**Affichage d’endiguement**.  Permet d’explorer le contenu du tas.  **La vue d’identisation** fournit une meilleure vue de la structure des objets, ce qui permet d’analyser les objets référencés dans l’espace de noms global \(window\) pour savoir ce qui permet de conserver les objets.  Utilisez-le pour analyser les fermetures et vous plonger dans vos objets à un niveau faible.  
+**Affichage d’endiguement**.  Permet d’explorer le contenu du tas.  **La vue d’endiguement** fournit une meilleure vue de la structure des objets, ce qui permet d’analyser les objets référencés dans l’espace de noms global \(window\) pour savoir ce qui permet de conserver les objets.  Utilisez-le pour analyser les fermetures et vous plonger dans vos objets à un niveau faible.  
 
 Pour basculer entre les vues, utilisez le sélecteur en haut de l’affichage.  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Sélecteur d’affichages de commutateur" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
-   Sélecteur d’affichages de commutateur  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Sélecteur de vues de commutateur" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
+   Sélecteur de vues de commutateur  
 :::image-end:::  
 
 > [!NOTE]
@@ -101,7 +100,7 @@ Les entrées de niveau supérieur sont des lignes « total ».
 |:--- |:--- |  
 | **Constructeur** | Représente tous les objets créés à l’aide de ce constructeur.  |  
 | **Distance** | affiche la distance d’accès à la racine à l’aide du chemin d’accès simple des nodes le plus court.  |  
-| **Taille superficiele** | Affiche la somme des tailles superficiels de tous les objets créés par une fonction de constructeur.  La taille peu profonde est la taille de la mémoire détenue par un objet \(généralement, les tableaux et les chaînes ont des tailles peu profondes plus grandes\).  Accédez à [tailles d’objet.][DevtoolsMemoryProblems101ObjectSizes]  |  
+| **Taille superficiele** | Affiche la somme des tailles superficiels de tous les objets créés par une fonction de constructeur.  La taille superficiele est la taille de la mémoire détenue par un objet \(généralement, les tableaux et les chaînes ont des tailles peu profondes plus grandes\).  Accédez à [tailles d’objet.][DevtoolsMemoryProblems101ObjectSizes]  |  
 | **Taille conservée** | Affiche la taille maximale conservée parmi le même ensemble d’objets.  La taille de la mémoire que vous pouvez libérer après la suppression d’un objet \(et que les dépendants ne sont plus accessibles\) est appelée taille conservée.  Accédez à [tailles d’objet.][DevtoolsMemoryProblems101ObjectSizes]  |  
 
 <!--| **Number of object instances** | Displayed in the # column.  |  -->  
@@ -146,7 +145,7 @@ Dans **l’affichage** Comparaison, la différence entre deux captures instantan
 
 ### <a name="containment-view"></a>Affichage d’endiguement  
 
-La **vue Containment** est essentiellement une « vue d’œil d’enfant » de la structure des objets de votre application.  Il vous permet de regarder dans les fermetures de fonction, d’observer les objets internes de la machine virtuelle \(VM\) qui, ensemble, forment vos objets JavaScript et de comprendre la quantité de mémoire que votre application utilise à un niveau très faible.  
+La **vue Containment** est essentiellement une « vue d’enfant » de la structure des objets de votre application.  Il vous permet de regarder dans les fermetures de fonction, d’observer les objets internes de la machine virtuelle \(VM\) qui, ensemble, forment vos objets JavaScript et de comprendre la quantité de mémoire que votre application utilise à un niveau très faible.  
 
 | Points d’entrée d’affichage de contenu | Description |  
 |:--- |:--- |  
@@ -201,7 +200,7 @@ Les propriétés et les valeurs de propriétés des objets ont différents types
 
 | Type de propriété | Description |  
 |:--- |:--- |  
-| **a: property** | Une propriété normale avec un nom, accessible via l’opérateur `.` \(dot\) ou via `[` `]` la notation \(brackets\), par exemple `["foo bar"]` .  |  
+| **a: property** | Propriété normale avec un nom, accessible via l’opérateur `.` \(dot\) ou via `[` `]` la notation \(brackets\), par exemple `["foo bar"]` .  |  
 | **0 : élément** | Propriété normale avec un index numérique, accessible via `[` `]` la notation \(brackets\).  |  
 | **a: context var** |  Variable dans un contexte de fonction, accessible par le nom de la variable à partir de l’intérieur d’une fermeture de fonction.  |  
 | **a: system prop** | Propriété ajoutée par la VM JavaScript, non accessible à partir du code JavaScript.  |  
@@ -215,7 +214,7 @@ Pour rechercher un objet dans le tas collecté, vous pouvez effectuer une recher
 ## <a name="uncover-dom-leaks"></a>Découvrir les fuites DOM  
 
 Le profileur de tas a la possibilité de refléter les dépendances bidirectionnelles entre les objets natifs du navigateur \(nodes DOM, règles CSS\) et les objets JavaScript.
-Cela permet de découvrir d’autres fuites invisibles qui se produisent en raison de sous-arbre DOM détachées oublié flottant.  
+Cela permet de découvrir les fuites invisibles qui se produisent en raison de sous-arbre DOM détachées oubliés flottant autour.  
 
 Les fuites DOM peuvent être plus importantes que vous ne le pensez.  Prenons l’exemple suivant.  Quand le GC #tree-il ?  
 
@@ -242,7 +241,7 @@ Il conserve une référence à l’objet parent \(parentNode\) pertinent et de m
 > [!NOTE]
 > Exemples : essayez cet exemple de fuite d’un nœud [DOM][GlitchDevtoolsMemoryExample06] pour comprendre où il peut être divulgué et comment le détecter.  Vous pouvez également examiner cet exemple de [fuites DOM plus importantes que prévu.][GlitchDevtoolsMemoryExample09]  
 
-Pour en savoir plus sur les fuites DOM et les principes de base de l’analyse de la mémoire, consultez La recherche et le débogage des fuites de mémoire avec [Microsoft Edge DevTools][GonzaloRuizdeVillaMemory] byPéroïoPér.  
+Pour en savoir plus sur les fuites DOM et les principes de base de l’analyse de la mémoire, consultez La recherche et le débogage des fuites de mémoire avec [les Microsoft Edge DevTools][GonzaloRuizdeVillaMemory] parPéroïenSyr.  
 
 <!--  
 > [!NOTE]
@@ -285,5 +284,5 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

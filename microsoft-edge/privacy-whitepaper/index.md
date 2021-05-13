@@ -3,7 +3,7 @@ description: Livre blanc sur la confidentialité MicrosoftEdge
 title: Livre blanc sur la confidentialité MicrosoftEdge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, confidentialité, livre blanc, confiance
@@ -11,12 +11,12 @@ ms.localizationpriority: high
 no-loc:
 - Cast
 - Google Cast
-ms.openlocfilehash: 52eb4e47ae70a222b24a70d5903f84e20058685b
-ms.sourcegitcommit: 1b1f099d9b0a8310784ccc8afd641e0708609602
+ms.openlocfilehash: ac07c968bbbf7f995018aa326a3f8781bda11e74
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "11496942"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564860"
 ---
 # <a name="microsoft-edge-privacy-whitepaper"></a>Livre blanc sur la confidentialité MicrosoftEdge  
 
@@ -104,7 +104,7 @@ Les outils de développement MicrosoftEdge fournissent des outils de débogage e
 
 Microsoft utilise les données de diagnostic pour améliorer nos produits et services et assurer la sécurité, la mise à jour et l’exécution de nos produits comme prévu. Lorsque nous collectons les données, nous voulons nous assurer qu’il s’agit bien du bon choix. Microsoft pratique et croit en la réduction de collecte des informations. Nous nous efforçons de rassembler uniquement les informations dont nous avons besoin et de les stocker uniquement tant qu’elles sont nécessaires pour améliorer nos produits et services. 
 
-MicrosoftEdge collecte un ensemble de données de diagnostic obligatoires, nécessaires pour assurer la sécurité, la mise à jour et le fonctionnement corrects du produit. Les données de diagnostic obligatoires incluent des données telles que la connectivité des appareils, les informations de configuration, la configuration logicielle et les données d’inventaire. Microsoft utilise les données de diagnostic obligatoires pour résoudre les problèmes et garantir la fiabilité, la sécurité et le fonctionnement normal des produits et services Microsoft. Pour plus d’informations sur les données de diagnostic sur les appareils gérés, accédez à [Configurer les données de diagnostic Windows dans votre organisation][WindowsPrivacyConfigureDiagnosticDataOrganization] et à la [stratégie de groupe de données de diagnostic MicrosoftEdge](https://docs.microsoft.com/deployedge/microsoft-edge-enterprise-privacy-settings). 
+MicrosoftEdge collecte un ensemble de données de diagnostic obligatoires, nécessaires pour assurer la sécurité, la mise à jour et le fonctionnement corrects du produit. Les données de diagnostic obligatoires incluent des données telles que la connectivité des appareils, les informations de configuration, la configuration logicielle et les données d’inventaire. Microsoft utilise les données de diagnostic obligatoires pour résoudre les problèmes et garantir la fiabilité, la sécurité et le fonctionnement normal des produits et services Microsoft. Pour plus d’informations sur les données de diagnostic sur les appareils gérés, accédez à [Configurer les données de diagnostic Windows dans votre organisation][WindowsPrivacyConfigureDiagnosticDataOrganization] et à la [stratégie de groupe de données de diagnostic MicrosoftEdge](/deployedge/microsoft-edge-enterprise-privacy-settings).  
 
 :::image type="complex" source="./media/diagnostic-data2.png" alt-text="Données de diagnostic" lightbox="./media/diagnostic-data2.png":::
    Données de diagnostic  

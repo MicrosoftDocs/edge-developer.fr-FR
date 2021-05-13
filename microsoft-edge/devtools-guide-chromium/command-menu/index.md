@@ -1,18 +1,18 @@
 ---
-description: Guide d'ouverture du menu Commande, d'exécuter des commandes, de passer en revue d'autres actions, etc.
-title: Exécuter des commandes avec le menu de commandes Microsoft Edge DevTools
+description: Guide d’ouverture du menu Commande, d’exécuter des commandes, de passer en revue d’autres actions, etc.
+title: Exécuter des commandes avec le Microsoft Edge menu de commandes DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: b815934da73f9f023629564da7bea14da166ff9b
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 973b440a27b0c4c06ba118fc09e4162a8fa346e8
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519190"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564489"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11519190"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
+# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>Exécuter des commandes avec le Microsoft Edge menu de commandes DevTools  
 
-# <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>Exécuter des commandes avec le menu de commandes Microsoft Edge DevTools  
-
-Le menu Commande permet de naviguer rapidement dans l'interface utilisateur DevTools de Microsoft Edge et d'accomplir des tâches courantes, telles que la [désactivation de JavaScript.][JavascriptDisable]  Vous connaissez peut-être une fonctionnalité similaire dans Microsoft Visual Studio Code, appelée [Palette][VisualStudioCodeUICommandPalette]de commandes, qui était l'inspiration d'origine du menu Commande.  
+Le menu Commande permet de naviguer rapidement dans l’interface Microsoft Edge’interface utilisateur de DevTools et d’accomplir des tâches courantes, telles que la désactivation [de JavaScript.][JavascriptDisable]  Vous connaissez peut-être une fonctionnalité similaire dans Microsoft Visual Studio code appelé palette de [commandes,][VisualStudioCodeUICommandPalette]qui était l’inspiration d’origine du menu de commandes.  
 
 :::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Utilisation du menu Commande pour désactiver JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
    Utilisation du menu Commande pour désactiver JavaScript  
@@ -44,9 +43,9 @@ Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift
    Exécuter la commande  
 :::image-end:::  
 
-## <a name="display-other-available-actions"></a>Afficher d'autres actions disponibles  
+## <a name="display-other-available-actions"></a>Afficher d’autres actions disponibles  
 
-Si vous utilisez le flux de travail décrit dans Ouvrir le [menu](#open-the-command-menu)Commande, le menu Commande s'ouvre avec un caractère pré-pendé à la zone de texte `>` Menu commande.  
+Si vous utilisez le flux de travail décrit dans Ouvrir le [menu](#open-the-command-menu)Commande, le menu Commande s’ouvre avec un caractère pré-pendé à la zone de texte `>` Menu commande.  
 
 :::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="Caractère de commande" lightbox="../media/command-menu-run-command.msft.png":::
    Caractère de commande  
@@ -64,9 +63,9 @@ Supprimez `>` le caractère et le type pour afficher les autres actions disponib
 
 <!-- links -->  
 
-[JavascriptDisable]: ../javascript/disable.md "Désactiver JavaScript avec Microsoft Edge DevTools | Documents Microsoft"  
+[JavascriptDisable]: ../javascript/disable.md "Désactiver JavaScript avec Microsoft Edge devTools | Documents Microsoft"  
 
-[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Palette de commandes : Visual Studio'interface utilisateur de code"  
+[VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Palette de commandes : Visual Studio Code’interface utilisateur"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
@@ -78,4 +77,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

@@ -1,18 +1,18 @@
 ---
-description: Comment déplacer Microsoft Edge DevTools vers le bas ou la gauche de votre fenêtre d'affichage, ou vers une fenêtre distincte.
-title: Modifier le placement de Microsoft Edge DevTools (Undock, Dock to bottom, Dock to left)
+description: Comment déplacer Microsoft Edge DevTools en bas ou à gauche de votre fenêtre d’affichage, ou vers une fenêtre distincte.
+title: Modifier Microsoft Edge placement de DevTools (Undock, Dock to bottom, Dock to left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: c4aca068c159f03b60bbf6d7643bb334a5b5a7f2
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: 3c6dbf3e4a72b793997fcbe0970c88e4bee07caf
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519155"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564363"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11519155"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Modifier Microsoft Edge placement de DevTools (Undock, Dock to bottom, Dock to left)  
 
-# <a name="change-microsoft-edge-devtools-placement-undock-dock-to-bottom-dock-to-left"></a>Modifier le placement de Microsoft Edge DevTools (Undock, Dock to bottom, Dock to left)  
-
-Par défaut, DevTools est docké à droite de votre fenêtre d'affichage (fenêtre).  Vous pouvez également ancrer DevTools en bas ou à gauche de la fenêtre, ou détacher DevTools d'une fenêtre distincte.
+Par défaut, DevTools est docké à droite de votre fenêtre d’affichage (fenêtre).  Vous pouvez également ancrer DevTools en bas ou à gauche de la fenêtre, ou détacher DevTools d’une fenêtre distincte.
 
 :::row:::
    :::column span="":::
@@ -76,7 +75,7 @@ DevTools peut être désédocké vers une fenêtre distincte, que vous pouvez d�
    :::column-end:::
 :::row-end:::  
 
-## <a name="change-placement-from-the-main-menu"></a>Modifier l'emplacement à partir du menu principal  
+## <a name="change-placement-from-the-main-menu"></a>Modifier l’emplacement à partir du menu principal  
 
 1.  Choose **Customize and control DevTools** \( `...` \) and choose **Undock into separate window** \( ![ Undock ](../media/undock-icon.msft.png) \), Dock to **bottom** \( Dock to ![ bottom ](../media/bottom-icon.msft.png) \), or Dock to **left** \( Dock to ![ left ](../media/left-icon.msft.png) \).  
     
@@ -84,15 +83,15 @@ DevTools peut être désédocké vers une fenêtre distincte, que vous pouvez d�
        Choose **Undock into separate window**  
     :::image-end:::  
     
-## <a name="change-placement-from-the-command-menu"></a>Modifier l'emplacement à partir du menu Commande  
+## <a name="change-placement-from-the-command-menu"></a>Modifier l’emplacement à partir du menu Commande  
 
 1.  [Ouvrez le menu Commande,][DevtoolsCommandMenu]en `Shift` + `Ctrl` + `P` sélectionnant sur Windows/Linux `Command` + `Shift` + `P` ou sur macOS.  
-1.  Après le `>` caractère, `dock` entrez, puis choisissez l'une des commandes suivantes :  
+1.  Après le `>` caractère, `dock` entrez, puis choisissez l’une des commandes suivantes :  
     
     *  **Ancrer en bas**
-    *  **Station d'accueil vers la gauche**
-    *  **Station d'accueil vers la droite**
-    *  **Restaurer la dernière position de station d'accueil**
+    *  **Station d’accueil vers la gauche**
+    *  **Station d’accueil vers la droite**
+    *  **Restaurer la dernière position de station d’accueil**
     *  **Se désédocker dans une fenêtre distincte**
     
     Vous pouvez également accéder aux commandes à partir du [menu principal.](#change-placement-from-the-main-menu) 
@@ -107,7 +106,7 @@ DevTools peut être désédocké vers une fenêtre distincte, que vous pouvez d�
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: ../command-menu/index.md "Exécuter des commandes avec le menu DevTools Command de Microsoft Edge | Documents Microsoft"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Exécuter des commandes avec le menu Microsoft Edge commande DevTools | Documents Microsoft"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
@@ -119,4 +118,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

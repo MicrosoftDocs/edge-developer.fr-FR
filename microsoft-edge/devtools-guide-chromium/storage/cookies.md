@@ -1,18 +1,18 @@
 ---
-description: Découvrez comment afficher, modifier et supprimer les cookies HTTP d’une page à l’aide de Microsoft Edge DevTools.
+description: Découvrez comment afficher, modifier et supprimer les cookies HTTP d’une page à l’aide Microsoft Edge DevTools.
 title: Afficher, modifier et supprimer des cookies avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: c208ca628fe91ed5922bc36566be2b9bdd20ec0b
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 4f5a352445bd13b82ada82df3a528a1e80aa144e
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439681"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565056"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11439681"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="view-edit-and-delete-cookies-with-microsoft-edge-devtools"></a>Afficher, modifier et supprimer des cookies avec Microsoft Edge DevTools  
 
 [Les cookies HTTP sont][MDNHTTPCookies] principalement utilisés pour gérer les sessions utilisateur, stocker les préférences de personnalisation des utilisateurs et suivre le comportement de l’utilisateur.  Les cookies sont également la cause de l’agacement de cette page qui utilise des formulaires de **consentement de cookies** qui sont trouvés sur le web.  Le guide suivant vous apprend à afficher, modifier et supprimer les cookies HTTP d’une page web avec [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
@@ -35,13 +34,13 @@ ms.locfileid: "11439681"
 ## <a name="open-the-cookies-pane"></a>Ouvrir le volet Cookies  
 
 1.  [Ouvrez DevTools][DevToolsOpen].  
-1.  Choisissez **l’onglet Application** pour ouvrir le **panneau Application.**  Le **volet** Manifeste doit s’ouvrir.  
+1.  Choisissez **l’onglet Application** pour ouvrir le panneau **Application.**  Le **volet** Manifeste doit s’ouvrir.  
     
     :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-manifest-empty.msft.png":::
        Figure 1 : Volet manifeste  
     :::image-end:::  
 
-1.  Sous **Stockage,** **développez Cookies,** puis sélectionnez une origine.  
+1.  Sous **Stockage** **développez Cookies,** puis sélectionnez une origine.  
     
     :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="Volet Cookies" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
        Figure 2 : Volet Cookies  
@@ -87,7 +86,7 @@ Choisissez un cookie et choisissez **Supprimer sélectionné** \( Supprimer sél
    Figure 5 : Suppression d’un cookie spécifique  
 :::image-end:::  
 
-Choisissez **Effacer tout** \( Effacer tout ![ ](../media/clear-icon.msft.png) \) pour supprimer tous les cookies.  
+Sélectionnez **Effacer tout** \( Effacer ![ tout ](../media/clear-icon.msft.png) \) pour supprimer tous les cookies.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Effacement de tous les cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    Figure 6 : Effacement de tous les cookies  
@@ -99,21 +98,21 @@ Choisissez **Effacer tout** \( Effacer tout ![ ](../media/clear-icon.msft.png) \
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Outils de développement Microsoft Edge (Chromium)"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "outils Microsoft Edge de développement (Chromium)"  
 [DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Ouvrir Microsoft Edge DevTools"  
 
-[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Problème Chromium 232693 : mise en œuvre du champ de priorité pour les cookies | Bogues Chromium"  
+[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Chromium Problème 232693 : mise en œuvre du champ priorité pour les cookies | Chromium Bogues"  
 
 [MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "Cookies HTTP | MDN"  
 [MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "Cookies HTTP : cookies permanents | MDN"  
-[MDNHTTPCookiesSamesite]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies "Cookies HTTP : cookies SameSite | MDN"  
+[MDNHTTPCookiesSamesite]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies "Cookies HTTP : les cookies SameSite | MDN"  
 [MDNHTTPCookiesScope]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Scope_of_cookies "Cookies HTTP : étendue des cookies | MDN"  
 [MDNHTTPCookiesSecure]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies "Cookies HTTP : les cookies sécurisés et HttpOnly | MDN"  
 [MDNHTTPCookiesSession]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Session_cookies "Cookies HTTP : cookies de session | MDN"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/cookies) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/cookies) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -121,4 +120,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

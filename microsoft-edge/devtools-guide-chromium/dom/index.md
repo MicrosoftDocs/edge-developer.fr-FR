@@ -3,16 +3,16 @@ description: Découvrez comment afficher les nœuds, rechercher des nœuds, modi
 title: Commencer à afficher et modifier le DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: e4c08fb2fd5f360f037502c04edabaabb873ba16
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 66078844730ebb22664c9ce89517511d7eb99ee7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439239"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564286"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,12 +27,11 @@ ms.locfileid: "11439239"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="get-started-with-viewing-and-changing-the-dom"></a>Commencer à afficher et modifier le DOM  
 
-Complétez ces didacticiels interactifs pour découvrir les principes de base de l’affichage et de la modification du DOM d’une page à l’aide de Microsoft Edge DevTools.  
+Complétez ces didacticiels interactifs pour découvrir les principes de base de l’affichage et de la modification du DOM d’une page à l’aide Microsoft Edge DevTools.  
 
-Ce didacticiel suppose que vous connaissez la différence entre le DOM et le code HTML.  Accédez à [l’Annexe : HTML par rapport au DOM](#appendix-html-versus-the-dom) pour obtenir une explication.  
+Ce didacticiel part du principe que vous connaissez la différence entre le DOM et le code HTML.  Accédez à [l’Annexe : HTML par rapport au DOM](#appendix-html-versus-the-dom) pour obtenir une explication.  
 
 ## <a name="open-dom-examples"></a>Exemples d’ouverture de DOM  
 
@@ -61,7 +60,7 @@ Lorsque vous êtes intéressé par un nœud DOM particulier, **Inspect** est un 
            Mettre en `Michelangelo` surbrillade le nœud  
         :::image-end:::  
         
-        1.  Choisissez **l’icône Inspect** \( Inspect \) dans le ![ coin supérieur gauche de ](../media/inspect-icon.msft.png) DevTools.  
+        1.  Choisissez **l’icône Inspect** \( Inspect \) dans le coin supérieur gauche ![ de ](../media/inspect-icon.msft.png) DevTools.  
             
             :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Icône Inspecter" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                Icône **Inspecter**  
@@ -69,7 +68,7 @@ Lorsque vous êtes intéressé par un nœud DOM particulier, **Inspect** est un 
             
 1.  Sous **Inspecter un nœud,** choisissez le **texte Tokyo.**  À présent, `<li>Tokyo</li>` est mis en surbrillant dans l’arborescence DOM.  
 
-L’inspection d’un nœud constitue également la première étape de l’affichage et de la modification des styles d’un nœud.  Accédez [à la mise en place de l’affichage et de la modification de CSS][DevToolsCssGetStarted].  
+L’inspection d’un nœud constitue également la première étape de l’affichage et de la modification des styles d’un nœud.  Accédez à [Prise en main avec l’affichage et la modification du CSS.][DevToolsCssGetStarted]  
 
 ### <a name="navigate-the-dom-tree-with-a-keyboard"></a>Naviguer dans l’arborescence DOM avec un clavier  
 
@@ -91,7 +90,7 @@ Une fois que vous avez sélectionné un nœud dans l’arborescence DOM, vous po
     1.  Sélectionnez la `Left` touche de direction.  La `<ul>` liste est réduire.  
     1.  Sélectionnez de `Left` nouveau la touche de direction.  Le parent du `<ul>` nœud est sélectionné.  Dans ce cas, il s’agit `<div>` de l’ID `navigate-the-dom-tree-with-a-keyboard-1` .  
     1.  Sélectionnez la touche de direction 2 fois de sorte que vous avez re-sélectionné la liste `Down` `<ul>` que vous venons de réduire.  Il doit se présenter comme suit: `<ul>... </ul>`  
-    1.  Sélectionnez la `Right` touche de direction.  La liste se développe.  
+    1.  Sélectionnez la `Right` touche de direction.  La liste est étendue.  
 
 ### <a name="scroll-into-view"></a>Faire défiler vers l’avant  
 
@@ -113,7 +112,7 @@ Vous pouvez effectuer une recherche dans l’arborescence DOM par chaîne, séle
 
 1.  Concentrez votre curseur sur **l’outil Éléments.**  
 1.  Sélectionnez `Control` + `F` \(Windows, Linux\) ou `Command` + `F` \(macOS\).  La barre de recherche s’ouvre en bas de l’arborescence DOM.  
-1.  Entrez `The Moon is a Harsh Mistress`.  La dernière phrase est mise en évidence dans l’arborescence DOM.  
+1.  Tapez `The Moon is a Harsh Mistress`.  La dernière phrase est mise en évidence dans l’arborescence DOM.  
     
     :::image type="complex" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="Mettre la requête en surbrill valeur dans la barre de recherche" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
        Mettre la requête en surbrill valeur dans la barre de recherche  
@@ -137,7 +136,7 @@ Pour modifier le contenu d’un nœud, double-cliquez sur le contenu dans l’ar
            Modifier le texte  
         :::image-end:::  
         
-    1.  Supprimer `Michelle` , `Leela` tapez , puis `Enter` sélectionnez pour confirmer la modification.  Le texte du DOM change de **Michelle** en **Leela**.  
+    1.  Supprimer `Michelle` , `Leela` tapez , puis `Enter` sélectionnez pour confirmer la modification.  Le texte du DOM change de **Michelle** à **Leela**.  
 
 ### <a name="edit-attributes"></a>Modifier les attributs  
 
@@ -224,7 +223,7 @@ DevTools fournit quelques raccourcis pour accéder aux nodes DOM à partir de la
 
 ### <a name="reference-the-currently-selected-node-with-0"></a>Référencer le nœud actuellement sélectionné avec 0 $  
 
-Lorsque vous examinez un nœud, le texte en face du nœud signifie que vous pouvez faire référence à ce nœud dans la `== $0` console avec la variable `$0` .  
+Lorsque vous examinez un nœud, le texte à côté du nœud signifie que vous pouvez faire référence à ce nœud dans la `== $0` console avec la variable `$0` .  
 
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
 1.  Sous Référencer le nœud actuellement sélectionné avec **0 $,** choisissez la **main gauche** de la noirceur et choisissez **Inspecter**.  
@@ -291,7 +290,7 @@ Utilisez des points d’arrêt de modification d’attribut lorsque vous souhait
            Où reprendre l’exécution du script  
         :::image-end:::  
         
-    1.  Sélectionnez le **bouton Définir l’arrière-plan** ci-dessus.  Cela définit `style` l’attribut du nœud sur `background-color:thistle` .  DevTools suspend la page et met en évidence le code à l’origine de la modification de l’attribut.  
+    1.  Sélectionnez le **bouton Définir l’arrière-plan** ci-dessus.  Cela définit `style` l’attribut du nœud sur `background-color:thistle` .  DevTools suspend la page et met en sur évidence le code à l’origine de la modification de l’attribut.  
     1.  Choose **Resume Script** \( Resume Script ![ ](../media/resume-script-icon.msft.png) \), as mentioned earlier.  
     
 ### <a name="break-on-node-removal"></a>Rupture lors de la suppression du nœud  
@@ -301,7 +300,7 @@ Si vous souhaitez suspendre lorsqu’un nœud particulier est supprimé, utilise
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
 1.  Under **Break on Node Removal**, right-choose **Contrôlemancer** and choose **Inspect**.  
     1.  Dans l’arborescence DOM, pointez sur , ouvrez le menu contextuel `<li id="target">Neuromancer</li>` \(clic droit\), puis choisissez **Pause sur**la suppression  >  **du nœud.**  Accédez à [l’Annexe : Options manquantes](#appendix-missing-options) si l’option n’est pas affichée.  
-    1.  Sélectionnez le **bouton Supprimer** ci-dessus.  DevTools suspend la page et met en évidence le code à l’origine de la suppression du nœud.  
+    1.  Sélectionnez le **bouton Supprimer** ci-dessus.  DevTools suspend la page et met en évidence le code qui a provoqué la suppression du nœud.  
     1.  Choose **Resume Script** \( Resume Script ![ ](../media/resume-script-icon.msft.png) \).  
     
 ### <a name="break-on-subtree-modifications"></a>Pause sur les modifications de sous-arbre  
@@ -311,14 +310,14 @@ Après avoir placé un point d’arrêt de modification de sous-arbre sur un nœ
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
 1.  Under **Break on Subtree Modifications**, right-choose A Fire Upon The **Deep** and choose **Inspect**.  
     1.  Dans l’arborescence DOM, pointez sur , qui est le nœud ci-dessus, ouvrez le menu contextuel `<ul id="target">` `<li>A Fire Upon the Deep</li>` \(clic droit\), puis choisissez **Break On**  >  **Subtree Modifications**.  Si l’option n’est pas affichée, accédez à Annexe [: Options manquantes.](#appendix-missing-options)  
-    1.  Choose **Add Child**.  Le code s’interrompt car un nœud a `<li>` été ajouté à la liste.  
+    1.  Choose **Add Child**.  Le code est suspendu car un nœud a `<li>` été ajouté à la liste.  
     1.  Choose **Resume Script** \( Resume Script ![ ](../media/resume-script-icon.msft.png) \).  
     
 ## <a name="next-steps"></a>Étapes suivantes  
 
 Cela couvre la plupart des fonctionnalités DOM dans DevTools.  Vous pouvez découvrir le reste des fonctionnalités en pointant sur les nodes dans l’arborescence DOM, en ouvrant le menu contextuel \(clic droit\) et en testant les autres options qui n’ont pas été couvertes dans ce didacticiel.  Accédez aux [raccourcis clavier du panneau][DevToolsShortcutsElements]Éléments.  
 
-Consultez la [page d’accueil de Microsoft Edge DevTools][MicrosoftEdgeDevTools] pour découvrir tout ce que vous pouvez faire avec DevTools.  
+Consultez la [Microsoft Edge d’accueil de DevTools][MicrosoftEdgeDevTools] pour découvrir tout ce que vous pouvez faire avec DevTools.  
 
 <!--Navigate to [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->  
 
@@ -407,7 +406,7 @@ This is a continuation of the [Scroll into view](#scroll-into-view) section.  Fo
 
 ## <a name="appendix-missing-options"></a>Annexe : Options manquantes  
 
-De nombreuses instructions de ce didacticiel vous indiquent de pointer sur un nœud dans l’arborescence DOM, d’ouvrir le menu contextuel \(clic droit\), puis de choisir une option dans le menu contextuel qui s’ouvre.  Si l’option spécifiée dans le menu contextuel n’est pas affichée, essayez de pointer à l’extérieur du texte du nœud et d’ouvrir le menu contextuel \(clic droit\).  
+De nombreuses instructions de ce didacticiel vous indiquent de pointer sur un nœud dans l’arborescence DOM, d’ouvrir le menu contextuel \(clic droit\), puis de choisir une option dans le menu contextuel qui s’ouvre.  Si l’option spécifiée dans le menu contextuel n’est pas affichée, essayez de pointer loin du texte du nœud et d’ouvrir le menu contextuel \(clic droit\).  
 
 :::image type="complex" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="Où choisir si toutes les options ne sont pas affichées" lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
    Où choisir si toutes les options ne sont pas affichées  
@@ -419,17 +418,17 @@ De nombreuses instructions de ce didacticiel vous indiquent de pointer sur un n�
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge \(Chromium\) | Documents Microsoft"  
-[DevToolsCssGetStarted]: ../css/index.md "Commencer à afficher et modifier les | Documents Microsoft"  
-[DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "Raccourcis clavier de l’outil Éléments : raccourcis clavier Microsoft Edge DevTools | Documents Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge outils de développement \(Chromium\) | Documents Microsoft"  
+[DevToolsCssGetStarted]: ../css/index.md "Prise en main Avec l’affichage et la modification des | Documents Microsoft"  
+[DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "Raccourcis clavier de l’outil Éléments : Microsoft Edge raccourcis clavier DevTools | Documents Microsoft"  
 
-[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Exemple de dom Microsoft Edge (Chromium) DevTools | Glitch"
+[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) DevTools DOM Example | Glitch"
 
 [MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Présentation de la | DOM MDN"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/dom/index) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/dom/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -437,4 +436,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

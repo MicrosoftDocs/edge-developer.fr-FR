@@ -3,16 +3,16 @@ description: Utilisez l’outil Multimédia pour afficher les informations et d�
 title: Afficher et déboguer les informations des joueurs multimédias
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 7680faa13f65a2ea6f0a8b085316b5ed67bfdaba
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0d2a60c31d5239a4b47102ae96a713b8bfcf46f3
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398405"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564062"
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -27,10 +27,9 @@ ms.locfileid: "11398405"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="view-and-debug-media-players-information"></a>Afficher et déboguer les informations des joueurs multimédias  
 
-Utilisez **l’outil Media** dans Microsoft Edge DevTools pour afficher des informations et déboguer les joueurs multimédias par onglet de navigateur.  
+Utilisez **l’outil Media** dans Microsoft Edge DevTools pour afficher les informations et déboguer les joueurs multimédias par onglet de navigateur.  
 
 ## <a name="open-the-media-tool"></a>Ouvrir l’outil Multimédia  
 
@@ -76,7 +75,7 @@ Utilisez **l’outil Media** dans Microsoft Edge DevTools pour afficher des info
     
 ### <a name="remote-debugging"></a>Débogage à distance  
 
-Affichez les informations des joueurs multimédias sur un appareil Android à partir de votre ordinateur Windows ou macOS.  
+Affichez les informations des joueurs multimédias sur un appareil Android à partir de Windows ou macOS.  
 
 1.  Pour configurer le débogage à distance, accédez à Commencer avec le [débogage à distance des appareils Android.][DevtoolsGuideChromiumRemoteDebuggingIndex]  
 1.  Afficher les informations des joueurs multimédias à distance.  
@@ -121,7 +120,7 @@ Vous pouvez choisir de masquer \(ou afficher\) chaque lecteur multimédia pour u
 
 [DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Commencer à déboguer à distance les appareils Android | Documents Microsoft"  
 
-[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Optimisation de la productivité avec les outils de développement Edge | Bing Video"  
+[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Optimisation de la productivité avec les outils de développement Edge | Bing Vidéo"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
@@ -133,5 +132,5 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  
 

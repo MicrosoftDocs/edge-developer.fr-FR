@@ -3,16 +3,16 @@ description: Référence sur toutes les façons d’enregistrer et d’analyser 
 title: Référence d’analyse des performances
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: e7774dc0aab647b8cf2bf47699368fafe6c21d70
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 5cd7c4aee6eb5f0c48f783e250efa1ef69010fc4
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439688"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564349"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,16 +27,15 @@ ms.locfileid: "11439688"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="performance-analysis-reference"></a>Référence d’analyse des performances  
 
-Cette page est une référence complète des fonctionnalités DevTools de Microsoft Edge liées à l’analyse des performances.  
+Cette page est une référence complète des fonctionnalités Microsoft Edge DevTools relatives à l’analyse des performances.  
 
-Accédez [à Démarrer avec l’analyse][DevtoolsEvaluatePerformanceGettingStarted] des performances d’exécution pour un didacticiel guidé sur l’analyse des performances d’une page à l’aide de Microsoft Edge [DevTools][MicrosoftEdgeDevTools].  
+Accédez [à Prise en main][DevtoolsEvaluatePerformanceGettingStarted] Avec analyse des performances d’exécution pour un didacticiel guidé sur l’analyse des performances d’une page à l’aide Microsoft Edge [DevTools][MicrosoftEdgeDevTools].  
 
 ## <a name="record-performance"></a>Performances d’enregistrement  
 
-### <a name="record-runtime-performance"></a>Enregistrer les performances d’exécution  
+### <a name="record-runtime-performance"></a>Performances d’exécution d’enregistrement  
 
 Enregistrez les performances d’exécution lorsque vous souhaitez analyser les performances d’une page en cours d’exécution, par opposition au chargement.  
 
@@ -91,8 +90,8 @@ Pendant l’enregistrement d’une page, sélectionnez Collecter la **garbage** 
 
 Choose **Capture settings** \( ![ Capture settings ](../media/capture-settings-icon.msft.png) \) to expose more settings related to how DevTools captures performance recordings.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Section Paramètres de capture" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
-   Section **Paramètres de** capture  
+:::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="Section Capture Paramètres" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
+   Section **Capture Paramètres**  
 :::image-end:::  
 
 ### <a name="disable-javascript-samples"></a>Désactiver les exemples JavaScript  
@@ -141,11 +140,11 @@ Pour afficher l’instrumentation de la couleur détaillée :
 1.  Ouvrez le menu **Paramètres de** capture.  Accédez à [Afficher les paramètres d’enregistrement.](#show-recording-settings)  
 1.  Activez **la case à cocher Activer l’instrumentation de pinceau avancée (lente).**  
 
-Pour apprendre à interagir avec les informations de la couleur, accédez aux couches [d’affichage](#view-layers-information) et [au profileur de la couleur d’affichage.](#view-paint-profiler)  
+Pour apprendre à interagir avec les informations de paint, accédez à [Afficher](#view-layers-information) les couches et [afficher le profileur de paint.](#view-paint-profiler)  
 
 ## <a name="save-a-recording"></a>Enregistrer un enregistrement  
 
-Pour enregistrer un enregistrement, ouvrez le menu contextuel \(clic droit\), puis choisissez **Enregistrer le profil**.  
+Pour enregistrer un enregistrement, ouvrez le menu contextuel \(clic droit\), puis choisissez **Enregistrer le profil.**  
 
 :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png" alt-text="Enregistrer le profil" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png":::
    **Enregistrer le profil**  
@@ -175,14 +174,14 @@ Une fois que vous avez enregistré **** [les](#record-runtime-performance) perfo
 
 Faites glisser votre souris vers la gauche ou la droite dans la **vue d’ensemble** pour sélectionner une partie d’un enregistrement.  La **vue d’ensemble** est la section qui contient **les graphiques FPS,** **CPU**et **NET.**  
 
-:::image type="complex" source="../media/evaluate-performance-performance-zoom-highlighted.msft.png" alt-text="Faire glisser la souris sur la vue d’ensemble pour zoomer" lightbox="../media/evaluate-performance-performance-zoom-highlighted.msft.png":::
+:::image type="complex" source="../media/evaluate-performance-performance-zoom-highlighted.msft.png" alt-text="Faire glisser la souris sur la vue d’ensemble pour effectuer un zoom" lightbox="../media/evaluate-performance-performance-zoom-highlighted.msft.png":::
    Faire glisser la souris sur la **vue d’ensemble** pour effectuer un zoom  
 :::image-end:::  
 
 Pour sélectionner une partie à l’aide du clavier :  
 
 1.  Choisissez l’arrière-plan de la section **Main** ou l’une des sections en de côté, telles que **Interactions,** **Réseau**ou **GPU.**  Ce flux de travail de clavier ne fonctionne que lorsque l’une de ces sections est en focus.  
-1.  Utilisez les `W` `A` touches , , , pour effectuer un zoom avant, déplacer vers la gauche, zoom arrière et déplacer vers `S` `D` la droite, respectivement.  
+1.  Utilisez les `W` touches `A` , , , `S` pour `D` zoomer, déplacer vers la gauche, zoom arrière et déplacer vers la droite, respectivement.  
 
 Pour sélectionner une partie à l’aide d’un trackpad, effectuer les actions suivantes.  
 
@@ -215,8 +214,8 @@ Pour masquer la zone de recherche, choisissez **Annuler.**
 
 Utilisez la section **Main** pour afficher l’activité qui s’est produite sur le thread principal de la page.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Section Main" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
-   Section **Main**  
+:::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Section Principale" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
+   Section **Principale**  
 :::image-end:::  
 
 Choisissez un événement pour afficher plus d’informations à son sujet dans le **panneau Résumé.**  DevTools décrit l’événement sélectionné.  
@@ -225,13 +224,13 @@ Choisissez un événement pour afficher plus d’informations à son sujet dans 
    Plus d’informations sur `anonymous` la fonction dans le panneau **Résumé**  
 :::image-end:::  
 
-DevTools représente l’activité de thread principale avec un graphique graphique.  L’axe X représente l’enregistrement au fil du temps.  L’axe Y représente la pile d’appels.  Les événements en premier provoquent les événements en dessous.  
+DevTools représente l’activité de thread principale avec un graphique graphique.  L’axe X représente l’enregistrement au fil du temps.  L’axe Y représente la pile d’appels.  Les événements en haut provoquent les événements en dessous.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-main-flame-chart.msft.png" alt-text="Graphique de graphique" lightbox="../media/evaluate-performance-performance-main-flame-chart.msft.png":::
    Graphique de graphique  
 :::image-end:::  
 
-Dans la figure précédente, un événement a `click` provoqué un événement sur la ligne `Function Call` `activitytabs.js` 53.  `Function Call`Ci-dessous, examinez qu’une fonction anonyme a été exécuté.  La fonction anonyme demandée `a` , qui a demandé , qui a demandé `wait` `Minor GC` .  
+Dans la figure précédente, un événement a `click` provoqué un événement sur la ligne `Function Call` `activitytabs.js` 53.  Vous trouverez `Function Call` ci-dessous un avis sur le fait qu’une fonction anonyme a été exécuté.  La fonction anonyme demandée `a` , qui a demandé , qui a demandé `wait` `Minor GC` .  
 
 DevTools affecte des couleurs aléatoires aux scripts.  Dans la figure précédente, les demandes de fonction d’un script sont colorées en vert clair.  Les demandes provenant d’un autre script sont colorées.  Le jaune foncé représente l’activité de script et l’événement violet représente l’activité de rendu.  Ces événements jaunes et violets plus foncés sont cohérents dans tous les enregistrements.  
 
@@ -254,7 +253,7 @@ Voici une explication **du concept** d’activités racine **** mentionné dans 
 
 Les activités racines sont celles qui entraînent le travail du navigateur.  Par exemple, lorsque vous choisissez une page web, le navigateur exécute une `Event` activité en tant qu’activité racine.  Cela `Event` peut entraîner l’exécuter, et ainsi de suite.  
 
-Dans le graphique de graphique de la section **Main,** les activités racines sont en haut du graphique.  Dans les **panneaux Arborescence des** appels **et Journal des** événements, les activités racines sont les éléments de niveau supérieur.  
+Dans le graphique graphique de la section **Main,** les activités racine sont en haut du graphique.  Dans les **panneaux Arborescence des appels** **et Journal des** événements, les activités racines sont les éléments de niveau supérieur.  
 
 Accédez au panneau [Arborescence des](#the-call-tree-panel) appels pour obtenir un exemple d’activités racine.  
 
@@ -282,7 +281,7 @@ Choose **Show Heaviest Stack** \( Show ![ Heaviest Stack ](../media/show-heavies
 
 #### <a name="the-bottom-up-panel"></a>Panneau de Bottom-Up  
 
-Utilisez le **panneau Bas vers le** haut pour afficher les activités qui ont pris le plus de temps en agrégation.  
+Utilisez le **panneau Bas vers le** haut pour afficher les activités qui ont pris le plus de temps dans l’agrégation.  
 
 Le **panneau Inférieur vers le** haut affiche uniquement les activités pendant la partie sélectionnée de l’enregistrement.  Accédez [à Sélectionner une partie d’un enregistrement](#select-a-portion-of-a-recording) pour découvrir comment sélectionner des parties.  
 
@@ -397,11 +396,11 @@ Les demandes sont codées en couleur comme suit :
 *   JS : Jaune  
 *   Images : vert  
     
-Choisissez une demande pour afficher plus d’informations à ce sujet dans le **panneau Résumé.**  Par exemple, dans la **** figure précédente, le panneau Résumé affiche plus d’informations sur la demande bleue sélectionnée dans la section **Réseau.**  
+Choisissez une demande pour afficher plus d’informations à son sujet dans le **panneau De** synthèse.  Par exemple, dans la **** figure précédente, le panneau Résumé affiche plus d’informations sur la demande bleue sélectionnée dans la section **Réseau.**  
 
 Un carré bleu foncé dans le haut à gauche d’une demande signifie qu’il s’agit d’une demande de priorité supérieure.  Un carré bleu clair signifie une priorité inférieure.  Par exemple, dans la figure précédente, la demande sélectionnée en bleu est de priorité supérieure et la demande verte en dessous est de priorité inférieure.  
 
-Dans la première des figures suivantes, la demande est représentée par une ligne à gauche, une barre au milieu avec une partie sombre et une partie claire, et une ligne à `www.bing.com` droite.  La deuxième des figures suivantes montre la représentation correspondante **** de la même demande dans le panneau Minutage de **l’outil** Réseau.  Voici comment ces deux représentations se m maient l’une à l’autre :
+Dans la première des figures suivantes, la demande est représentée par une ligne à gauche, une barre au milieu avec une partie sombre et une partie claire, et une ligne à `www.bing.com` droite.  La deuxième des figures suivantes montre la représentation correspondante **** de la même demande dans le panneau Minutage de **l’outil** Réseau.  Voici comment ces deux représentations se maient l’une à l’autre :
 
 *   La ligne de gauche est tout jusqu’au `Connection Start` groupe d’événements, inclus.  En d’autres termes, il s’agit de tout ce qui est `Request Sent` avant , exclusif.  
 *   La partie claire de la barre est `Request Sent` et `Waiting (TTFB)` .  
@@ -415,8 +414,8 @@ Dans la première des figures suivantes, la demande est représentée par une li
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/evaluate-performance-bing-network-timing.msft.png" alt-text="Outil Réseau" lightbox="../media/evaluate-performance-bing-network-timing.msft.png":::
-         Outil **Réseau**  
+      :::image type="complex" source="../media/evaluate-performance-bing-network-timing.msft.png" alt-text="L’outil Réseau" lightbox="../media/evaluate-performance-bing-network-timing.msft.png":::
+         **L’outil** Réseau  
 : ::image-end:::  
    :::column-end:::
 :::row-end:::
@@ -442,7 +441,7 @@ Le graphique affiche uniquement la région de l’enregistrement actuellement s�
 
 ### <a name="view-the-duration-of-a-portion-of-a-recording"></a>Afficher la durée d’une partie d’un enregistrement  
 
-Lors de l’analyse d’une section telle que **Réseau** ou **Main,** vous avez parfois besoin d’une estimation plus précise de la durée de certains événements.  Maintenez `Shift` , choisissez et maintenez, puis faites glisser vers la gauche ou la droite pour sélectionner une partie de l’enregistrement.  En bas de votre sélection, DevTools indique la durée de cette portion.  
+Lors de l’analyse d’une section telle que **Réseau** ou **Main,** vous avez parfois besoin d’une estimation plus précise de la durée de certains événements.  `Shift`Maintenez, choisissez et maintenez, puis faites glisser vers la gauche ou la droite pour sélectionner une partie de l’enregistrement.  En bas de votre sélection, DevTools indique la durée de cette portion.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-main-duration.msft.png" alt-text="Afficher la durée d’une partie d’un enregistrement" lightbox="../media/evaluate-performance-performance-main-duration.msft.png":::
    Afficher la durée d’une partie d’un enregistrement  
@@ -464,7 +463,7 @@ Vous pouvez également afficher des captures d’écran en choisissant un cadre 
    Afficher une capture d’écran dans le **panneau Résumé**  
 :::image-end:::  
 
-Choisissez la miniature du **** panneau Résumé pour effectuer un zoom avant sur la capture d’écran.  
+Choisissez la miniature du panneau Résumé **pour** effectuer un zoom avant sur la capture d’écran.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-summary-preview-select.msft.png" alt-text="Zoom sur une capture d’écran à partir du panneau Résumé" lightbox="../media/evaluate-performance-performance-summary-preview-select.msft.png":::
    Zoom sur une capture d’écran à partir du **panneau Résumé**  
@@ -483,8 +482,8 @@ Pour afficher les informations sur les couches avancées sur un cadre :
     
 Pointez sur un calque pour le surligner dans le diagramme.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png" alt-text="Mettre en surbrill niveau un calque" lightbox="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png":::
-   Mettre en surbrill niveau un calque  
+:::image type="complex" source="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png" alt-text="Surligner un calque" lightbox="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png":::
+   Surligner un calque  
 :::image-end:::  
 
 Pour déplacer le diagramme :  
@@ -498,10 +497,10 @@ Pour déplacer le diagramme :
 Pour afficher des informations avancées sur un événement de pinceau :  
 
 1.  [Activer](#turn-on-advanced-paint-instrumentation).  
-1.  Choisissez un **événement Paint** dans la section **Main.**  
+1.  Choisissez un **Paint** dans la section **Main.**  
     
-    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Panneau Paint Profiler" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
-       Panneau **Paint Profiler**  
+    :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="Panneau Paint profileur" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
+       Panneau **Paint profileur**  
     :::image-end:::  
     
 ## <a name="analyze-rendering-performance-with-the-rendering-tool"></a>Analyser les performances de rendu à l’aide de l’outil de rendu  
@@ -519,7 +518,7 @@ Pour ouvrir **l’outil de** rendu :
     
 ### <a name="view-frames-per-second-in-realtime-with-the-fps-meter"></a>Afficher les images par seconde en temps réel avec la jauge FPS  
 
-La **jauge FPS** est une superposition qui apparaît dans le coin supérieur droit de votreport d’affichage.  Il fournit une estimation en temps réel du service FPS à mesure que la page s’exécute.  Pour ouvrir la **jauge FPS**:  
+La **jauge FPS** est une superposition qui apparaît dans le coin supérieur droit de votre vue.  Il fournit une estimation en temps réel du service FPS à mesure que la page s’exécute.  Pour ouvrir la **jauge FPS**:  
 
 1.  Ouvrez **l’outil de** rendu.  [Analysez les performances de rendu à l’aide de l’outil de rendu.](#analyze-rendering-performance-with-the-rendering-tool)  
 1.  Activer la case **à cocher Indicateur FPS.**  
@@ -528,17 +527,17 @@ La **jauge FPS** est une superposition qui apparaît dans le coin supérieur dro
        Indicateur **FPS**  
     :::image-end:::  
     
-### <a name="view-painting-events-in-realtime-with-paint-flashing"></a>Afficher les événements de dessin en temps réel avec le clignotement paint  
+### <a name="view-painting-events-in-realtime-with-paint-flashing"></a>Afficher les événements de dessin en temps réel avec Paint clignotement  
 
-Utilisez paint flashing pour obtenir une vue en temps réel de tous les événements de paint sur la page.  Chaque fois qu’une partie de la page est peint à nouveau, DevTools souligne cette section en vert.  
+Utilisez Paint clignotement pour obtenir une vue en temps réel de tous les événements de pinceau sur la page.  Chaque fois qu’une partie de la page est peint à nouveau, DevTools souligne cette section en vert.  
 
-Pour activer le clignotement paint, effectuer les actions suivantes.  
+Pour activer Paint clignotement, effectuer les actions suivantes.  
 
 1.  Ouvrez **l’outil de** rendu.  Accédez à [Analyser les performances de rendu à l’aide de l’outil de rendu.](#analyze-rendering-performance-with-the-rendering-tool)  
-1.  Activer la case **à cocher Peindre le clignotement.**  
+1.  Activer la case **à Paint clignotement.**  
     
-    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png" alt-text="Clignotement de couleur" lightbox="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png":::
-       **Clignotement de couleur**  
+    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png" alt-text="Paint Clignotement" lightbox="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png":::
+       **Paint Clignotement**  
     :::image-end:::  
     
 ### <a name="view-an-overlay-of-layers-with-layer-borders"></a>Afficher une superposition de couches avec des bordures de calque  
@@ -576,8 +575,8 @@ Pour afficher les problèmes de performances de défilement, effectuer les actio
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
-[DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Ouvrez le menu Commande - Exécutez les commandes avec le menu de commandes Microsoft Edge DevTools | Documents Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
+[DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Ouvrez le menu Commande - Exécutez les commandes avec la Microsoft Edge menu de commande DevTools | Documents Microsoft"  
 [DevtoolsEvaluatePerformanceGettingStarted]: ./index.md "Commencer à analyser les performances d’exécution | Documents Microsoft"  
 
 [ActivityTabsDemo]: https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html "Démonstration des onglets Activité | glitch"  
@@ -586,7 +585,7 @@ Pour afficher les problèmes de performances de défilement, effectuer les actio
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -594,4 +593,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

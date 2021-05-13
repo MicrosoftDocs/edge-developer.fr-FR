@@ -3,16 +3,16 @@ description: Découvrez comment détecter les problèmes réseau dans le panneau
 title: Guide des problèmes de réseau
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 9b92ca7b759fab80d7d829b31f605ccb8062a816
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: c99f43872abe04800880c63ee4126bfcdd633edb
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439618"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564979"
 ---
 <!-- Copyright Kayce Basques and Jonathan Garbee
 
@@ -27,18 +27,17 @@ ms.locfileid: "11439618"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="network-issues-guide"></a>Guide des problèmes de réseau  
 
 Ce guide vous montre comment détecter les problèmes réseau ou les opportunités d’optimisation dans le panneau Réseau de Microsoft Edge DevTools.  
 
-Pour découvrir les principes de base de **l’outil Réseau,** accédez à [Démarrer.][NetworkPerformance]  
+Pour découvrir les principes de base de **l’outil** Réseau, accédez [à Prise en main][NetworkPerformance].  
 
 ## <a name="queued-or-stalled-requests"></a>Demandes en file d’attente ou bloquées  
 
 **Symptômes**  
 
-Six demandes sont téléchargées simultanément.  Après cela, une série de demandes sont en file d’attente ou bloquées.  Une fois l’une des six premières demandes se termine, l’une des demandes de la file d’attente démarre.  
+Six demandes sont téléchargées simultanément.  Après cela, une série de demandes sont en file d’attente ou bloquées.  Une fois l’une des six premières demandes terminé, l’une des demandes de la file d’attente démarre.  
 
 Dans la **cascade de** la figure suivante, les six premières demandes de ressources démarrent `edge-iconx1024.msft.png` simultanément.  Les demandes suivantes sont bloquées jusqu’à ce que l’une des six premières se termine.  
 
@@ -65,7 +64,7 @@ Une demande passe beaucoup de temps à attendre de recevoir le premier byte du s
 Dans la figure suivante, la barre longue et verte de la **cascade** indique que la demande attendait longtemps.  Cela a été simulé à l’aide d’un profil pour limiter la vitesse du réseau et ajouter un délai.  
 
 :::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="Exemple d’une demande dont l’heure est lente jusqu’au premier sur deux byte" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
-   Exemple d’une demande dont l’heure est lente au premier sur deux byte  
+   Exemple d’une demande dont l’heure est lente jusqu’au premier sur deux byte  
 :::image-end:::  
 
 **Causes**  
@@ -114,7 +113,7 @@ Do you have a network issue that should be added to this guide?
 
 <!-- links -->  
 
-[NetworkPerformance]: ./index.md "Inspecter l’activité réseau dans microsoft Edge DevTools | Documents Microsoft"  
+[NetworkPerformance]: ./index.md "Inspecter l’activité réseau dans Microsoft Edge devTools | Documents Microsoft"  
 
 [MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]  
 
@@ -122,7 +121,7 @@ Do you have a network issue that should be added to this guide?
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est trouvée ici et est co-auteure par [Les Basques DeCénais (Rédacteur][KayceBasques] technique, Chrome DevTools \& Évérité\) [etPérave Garbee][JonathanGarbee] \(Google Developer Expert for Web Technology\). [](https://developers.google.com/web/tools/chrome-devtools/network/issues)  
+> La page d’origine est trouvée ici et est co-auteure par [Les Basques Decéssaisie \(Rédacteur][KayceBasques] technique, Chrome DevTools \& Évérité\) et [Chef Garbee][JonathanGarbee] \(Google Developer Expert for Web Technology\). [](https://developers.google.com/web/tools/chrome-devtools/network/issues)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -130,5 +129,5 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[JonathanGarbee]: https://developers.google.com/web/resources/contributors/jonathangarbee
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[JonathanGarbee]: https://developers.google.com/web/resources/contributors#jonathan-garbee

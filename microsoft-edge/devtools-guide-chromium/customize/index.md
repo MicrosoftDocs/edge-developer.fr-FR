@@ -1,18 +1,18 @@
 ---
-description: Liste des méthodes de personnalisation de Microsoft Edge DevTools
+description: Liste des façons de personnaliser Microsoft Edge DevTools
 title: Personnaliser Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 2b242fcb74b7c8cdbca2d523c55ab4e5eed56b45
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 0be3219579794dca28f71e336da1154f31f2d2be
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399036"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564384"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11399036"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="customize-microsoft-edge-devtools"></a>Personnaliser Microsoft Edge DevTools  
 
-Cette page répertorie les méthodes de personnalisation de Microsoft Edge DevTools.  
+Cette page répertorie les méthodes de personnalisation Microsoft Edge DevTools.  
 
 ## <a name="settings"></a>Paramètres  
 
@@ -39,7 +38,7 @@ Cette page répertorie les méthodes de personnalisation de Microsoft Edge DevTo
 Pour ouvrir Paramètres, effectuer l’une des actions suivantes.  
 
 *   Sélectionnez `F1` pendant que DevTools est en focus.  
-*   Ouvrez **le menu principal,** puis choisissez **Paramètres.**  
+*   Ouvrez **le menu principal,** puis choisissez **Paramètres**.  
     
 :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Paramètres" lightbox="../media/customize-settings-preferences.msft.png":::
    **Paramètres**  
@@ -89,7 +88,7 @@ Choisissez et faites glisser un outil pour modifier l’ordre.  Votre ordre d’
 
 ## <a name="change-devtools-placement"></a>Modifier le placement de DevTools  
 
-Accédez [à Microsoft Edge DevTools Placement][DevToolsPlacement].  
+Accédez [à Microsoft Edge Placement de DevTools.][DevToolsPlacement]  
 
 :::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="DevTools non barraté" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
    DevTools non barraté  
@@ -107,11 +106,11 @@ Accédez à [Activer le thème foncé.][DarkTheme]
 
 Pour activer les expériences DevTools, effectuer les actions suivantes.  
 
-1.  Accédez `edge://flags/#enable-devtools-experiments` à .  
+1.  Naviguez vers`edge://flags/#enable-devtools-experiments` .  
 1.  Choose **Enable**.  
 1.  Choose **Relaunch Now**, at the bottom of the page.  
 
-La prochaine fois que vous ouvrirez DevTools, une nouvelle page nommée **Expériences** s’affiche dans [Paramètres.](#settings)  
+La prochaine fois que vous ouvrirez DevTools, une nouvelle page nommée **Expériences** s’affiche dans [Paramètres](#settings).  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
@@ -123,12 +122,12 @@ La prochaine fois que vous ouvrirez DevTools, une nouvelle page nommée **Expér
 
 <!-- links -->  
 
-[DevToolsPlacement]: ./placement.md "Modifier le placement de Microsoft Edge DevTools | Documents Microsoft"  
-[DarkTheme]: ./dark-theme.md "Activer le thème foncé dans Microsoft Edge DevTools | Documents Microsoft"  
+[DevToolsPlacement]: ./placement.md "Modifier Microsoft Edge placement de DevTools | Documents Microsoft"  
+[DarkTheme]: ./dark-theme.md "Activer le thème foncé dans Microsoft Edge devTools | Documents Microsoft"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/customize/index) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/customize/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -136,4 +135,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

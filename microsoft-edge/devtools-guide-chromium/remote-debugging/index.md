@@ -1,18 +1,18 @@
 ---
-description: Débogage à distance du contenu en direct sur un appareil Android à partir d’un ordinateur Windows ou macOS.
+description: Déboguer à distance du contenu en direct sur un appareil Android à partir d’un Windows ou macOS.
 title: Prise en main du débogage à distance des appareils Android
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: d69fd4832991826c76f47daea399bdd89e981bb4
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: d5a5ea8faef40925fb0fb986eb984ac9ae4f051b
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461212"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11565105"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,11 +29,11 @@ ms.locfileid: "11461212"
    limitations under the License.  -->  
 # <a name="get-started-with-remote-debugging-android-devices"></a>Prise en main du débogage à distance des appareils Android  
 
-Déboguer à distance du contenu en direct sur un appareil Android à partir de votre ordinateur Windows ou macOS.  La page de didacticiel suivante vous apprend à effectuer les actions suivantes.  
+Déboguer à distance du contenu en direct sur un appareil Android à partir de Windows ou macOS.  La page de didacticiel suivante vous apprend à effectuer les actions suivantes.  
 
 *   Configurer votre appareil Android pour le débogage à distance et le découvrir à partir de votre ordinateur de développement.  
 *   Inspectez et déboguer le contenu en direct sur votre appareil Android à partir de votre ordinateur de développement.  
-*   Capture vidéo du contenu de votre appareil Android sur une instance DevTools sur votre ordinateur de développement.  
+*   Contenu de la capture vidéo de votre appareil Android sur une instance DevTools sur votre ordinateur de développement.  
 
 <!--  
 :::image type="complex" source="../media/remote-debugging--remote-debugging.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging--remote-debugging.msft.png":::
@@ -42,8 +42,8 @@ Déboguer à distance du contenu en direct sur un appareil Android à partir de 
 -->  
 
 > [!NOTE]
-> Le débogage à distance de l’application Microsoft Edge sur les appareils iOS n’est actuellement pas pris en charge.  Le guide suivant est spécifiquement axé sur le débogage à distance de Microsoft Edge sur les appareils Android.
-> Si vous avez un appareil macOS, suivez le guide de [débogage Brightcove][BrightcoveSupportDebuggingMobileDevices] pour déboguer Microsoft Edge à distance sur un appareil iOS à l’aide de Safari.  Pour plus d’informations sur l’outil Inspecteur web dans Safari, accédez à [Safari Web Development Tools][AppleDeveloperSafariTools].  
+> Le débogage à distance de l’Microsoft Edge sur les appareils iOS n’est actuellement pas pris en charge.  Le guide suivant est spécifiquement axé sur le débogage à distance Microsoft Edge sur les appareils Android.
+> Si vous avez un appareil macOS, suivez le guide de [débogage Brightcove][BrightcoveSupportDebuggingMobileDevices] pour déboguer à distance des Microsoft Edge sur un appareil iOS à l’aide de Safari.  Pour plus d’informations sur l’outil Inspecteur web dans Safari, accédez à [Safari Web Development Tools][AppleDeveloperSafariTools].  
 
 ## <a name="step-1-discover-your-android-device"></a>Étape 1 : Découvrir votre appareil Android  
 
@@ -54,17 +54,17 @@ Le flux de travail ci-dessous fonctionne pour la plupart des utilisateurs.  Pour
 1.  Sur votre ordinateur de développement, ouvrez Microsoft Edge.  
 1.  Accédez à `edge://inspect` la page dans Microsoft Edge.  
     
-    :::image type="complex" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="Page de edge://inspect dans Microsoft Edge" lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
-       Figure1.  Page `edge://inspect` dans Microsoft Edge  
+    :::image type="complex" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="Page edge://inspect’Microsoft Edge" lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
+       Figure1.  La `edge://inspect` page dans Microsoft Edge  
     :::image-end:::  
     
-1.  Connectez votre appareil Android directement à votre ordinateur de développement à l’aide d’un câble USB.  La première fois que vous essayez de vous connecter, une invite doit s’afficher sur DevTools détectant un appareil inconnu.  Acceptez **l’invite d’autorisation Autoriser le débogage USB** sur votre appareil Android.  
+1.  Connecter votre appareil Android directement sur votre ordinateur de développement à l’aide d’un câble USB.  La première fois que vous essayez de vous connecter, une invite doit s’afficher sur DevTools détectant un appareil inconnu.  Acceptez **l’invite d’autorisation Autoriser le débogage USB** sur votre appareil Android.  
     
     :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Invite d’autorisation Autoriser le débogage USB sur un appareil Android" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
        Figure2.  Invite **d’autorisation Autoriser le débogage USB** sur un appareil Android  
     :::image-end:::  
     
-1.  Si le nom de modèle de votre appareil Android est affiché, Microsoft Edge a correctement établi la connexion à votre appareil.  Continuez [jusqu’à la section Étape 2.](#step-2-debug-content-on-your-android-device-from-your-development-machine)  
+1.  Si le nom de modèle de votre appareil Android s’affiche, Microsoft Edge a correctement établi la connexion à votre appareil.  Continuez [jusqu’à la section Étape 2.](#step-2-debug-content-on-your-android-device-from-your-development-machine)  
     
     <!--  
     :::image type="complex" source="../media/remote-debugging--unknown-device.msft.png" alt-text="The Remote Devices tab has successfully detected an unknown device that is pending authorization" lightbox="../media/remote-debugging--unknown-device.msft.png":::
@@ -82,7 +82,7 @@ Utilisez les conseils suivants pour vous aider à résoudre les problèmes de pa
 
 Utilisez les conseils suivants pour vérifier que votre logiciel est correctement installé.  
 
-*   Si votre ordinateur de développement exécute Windows, essayez d’installer manuellement les pilotes USB de votre appareil Android.  Pour plus d’informations, [accédez à Installer des pilotes USB OEM.][AndroidDeveloperToolsOemUsb]  
+*   Si votre ordinateur de développement est en cours d Windows, essayez d’installer manuellement les pilotes USB de votre appareil Android.  Pour plus d’informations, [accédez à Installer des pilotes USB OEM.][AndroidDeveloperToolsOemUsb]  
 *   Certaines combinaisons d’appareils Windows et Android \(notamment Samsung\) nécessitent des paramètres supplémentaires.  Pour plus d’informations, accédez [à DevTools Devices does not detect device when plugged in][Stackoverflow21925992].  
 
 Utilisez les conseils suivants pour vous aider à résoudre les problèmes si l’invite Autoriser le **débogage USB** n’est pas affichée sur votre appareil Android.  
@@ -98,10 +98,10 @@ Utilisez les conseils suivants pour vous aider à résoudre les problèmes si l�
 
 Si vous trouvez une solution qui n’est pas mentionnée sur cette page ou dans [DevTools Devices][Stackoverflow21925992] ne détecte pas l’appareil lorsqu’il est branché sur Stack Overflow, ajoutez votre solution à la question Stack Overflow.<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->.  
 
-## <a name="step-2-debug-content-on-your-android-device-from-your-development-machine"></a>Étape 2 : Déboguer le contenu de votre appareil Android à partir de votre ordinateur de développement  
+## <a name="step-2-debug-content-on-your-android-device-from-your-development-machine"></a>Étape 2 : Déboguer du contenu sur votre appareil Android à partir de votre ordinateur de développement  
 
 1.  Ouvrez Microsoft Edge sur votre appareil Android.  
-1.  Accédez `edge://inspect` à , le nom de modèle de votre appareil Android s’affiche, suivi du numéro de série de l’appareil.  En dessous de cela, la version de Microsoft Edge en cours d’exécution sur l’appareil doit être affichée, avec le numéro de version entre parenthèses.  Chaque onglet Microsoft Edge ouvert obtient une section unique.  Vous pouvez interagir avec cet onglet à partir d’une section.  <!--If there are any apps using WebView, a section for each of those apps should be displayed, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->  
+1.  Accédez `edge://inspect` à , le nom de modèle de votre appareil Android s’affiche, suivi du numéro de série de l’appareil.  En dessous de cela, la version Microsoft Edge’exécution sur l’appareil doit être affichée, avec le numéro de version entre parenthèses.  Chaque onglet Microsoft Edge ouvert obtient une section unique.  Vous pouvez interagir avec cet onglet à partir d’une section.  <!--If there are any apps using WebView, a section for each of those apps should be displayed, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->  
     
     :::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets.msft.png" alt-text="Un appareil distant connecté" lightbox="../media/remote-debugging-edge-inspect-with-targets.msft.png":::
        Figure3.  Un appareil distant connecté  
@@ -113,7 +113,7 @@ Si vous trouvez une solution qui n’est pas mentionnée sur cette page ou dans 
 <!-- The version of Microsoft Edge running on your Android device determines the version of DevTools that opens on your development machine.  
     So, if your Android device is running a very old version of Microsoft Edge, the DevTools instance may look very different than what you are used to.   -->
 
-### <a name="more-actions-focus-refresh-or-close-a-tab"></a>Autres actions : mise au point, actualisation ou fermeture d’un onglet  
+### <a name="more-actions-focus-refresh-or-close-a-tab"></a>Autres actions : mettre au point, actualiser ou fermer un onglet  
 
 Choisissez **l’onglet Focus,** **rechargez**ou fermez-le à côté de l’onglet que vous souhaitez mettre au point, actualiser ou fermer. ****  
 
@@ -144,7 +144,7 @@ Vous pouvez interagir avec la capture vidéo des manières suivantes.
 > [!NOTE]
 > Utilisez les conseils suivants pour vous aider à faire une capture vidéo.  
 > 
-> *   Les captures d’écran affichent uniquement le contenu de la page.  Les parties transparentes de la capture vidéo représentent des interfaces d’appareil, telles que la barre d’adresses Microsoft Edge, la barre d’état Android ou le clavier Android.  
+> *   Les captures d’écran affichent uniquement le contenu de la page.  Les parties transparentes de la capture vidéo représentent des interfaces d’appareil, telles que la barre d’Microsoft Edge, la barre d’état Android ou le clavier Android.  
 > *   Les captures vidéo affectent négativement les taux d’images.  Désactivez la capture vidéo lors de la mesure des défilements ou des animations pour obtenir une image plus précise des performances de votre page.  
 > *   Si l’écran de votre appareil Android se verrouille, le contenu de votre capture vidéo disparaît.  Déverrouillez l’écran de votre appareil Android pour reprendre automatiquement la capture vidéo.  
 
@@ -159,17 +159,17 @@ Vous pouvez interagir avec la capture vidéo des manières suivantes.
 
 [AppleDeveloperSafariTools]: https://developer.apple.com/safari/tools "Outils de développement web Safari | Développeur Apple"  
 
-[BrightcoveSupportDebuggingMobileDevices]: https://support.brightcove.com/debugging-mobile-devices "Débogage sur les appareils mobiles | Prise en charge de Brightcove"  
+[BrightcoveSupportDebuggingMobileDevices]: https://general.support.brightcove.com/developer/debugging-mobile-devices.html "Débogage sur les appareils mobiles | Prise en charge de Brightcove"  
 
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->  
 
-[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "adb - Android Enthusiast Stack Exchange"  
+[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "adb - Pile des fans Android Exchange"  
 
 [Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "DevTools Devices does not detect device when plugged in - Stack Overflow"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -177,4 +177,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

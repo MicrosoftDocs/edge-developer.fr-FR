@@ -3,16 +3,16 @@ description: Utilisez l’instrumentation d’allocation sur la chronologie pour
 title: Utilisation de l’instrumentation d’allocation sur la chronologie
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 374b7f0ad80b8975319b2b0ec5cecf42ce4bde82
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: a02249840256b1e5a2469a253d765eb888527662
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397817"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564083"
 ---
 <!-- Copyright Meggin Kearney 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11397817"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-
 # <a name="how-to-use-allocation-instrumentation-on-timeline"></a>Utilisation de l’instrumentation d’allocation sur la chronologie  
 
-Utilisez **l’instrumentation d’allocation** sur la chronologie pour rechercher des objets qui ne sont pas correctement collectés à la mémoire et continuer à conserver de la mémoire.  
+Utilisez **l’instrumentation d’allocation** sur la chronologie pour rechercher des objets qui ne sont pas correctement collectés à la mémoire et continuer à conserver la mémoire.  
 
 ## <a name="how-allocation-instrumentation-on-timeline-works"></a>Fonctionnement de l’instrumentation d’allocation sur la chronologie  
 
@@ -53,11 +52,11 @@ Utilisez **l’instrumentation d’allocation** sur la chronologie pour recherch
 Effectuer les actions suivantes pour commencer à utiliser **l’instrumentation d’allocation sur la chronologie**.  
 
 1.  [Ouvrez DevTools][DevtoolsOpenIndex].  
-1.  Ouvrez le **panneau Mémoire,** sélectionnez l’instrumentation **d’allocation sur la bouton d’radio** de chronologie.  
+1.  Ouvrez le **panneau** Mémoire, sélectionnez l’instrumentation **d’allocation sur la bouton d’radio** de chronologie.  
 1.  Démarrer l’enregistrement.  
     
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Profileur d’allocations de tas d’enregistrement" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
-       Profileur d’allocations de tas d’enregistrement  
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Enregistrer le profileur d’allocations de tas" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+       Enregistrer le profileur d’allocations de tas  
     :::image-end:::  
     
 ## <a name="read-a-heap-allocation-timeline"></a>Lire une chronologie d’allocation de tas  
@@ -92,12 +91,12 @@ Vous pouvez afficher l’allocation de mémoire par fonction JavaScript.  Pour p
 <!-- links -->  
 
 [DevToolsOpenIndex]: ../open/index.md "Ouvrez Microsoft Edge (Chromium) DevTools | Documents Microsoft"
-[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Examiner l’allocation de mémoire par fonction : résoudre les problèmes de mémoire | Documents Microsoft"  
+[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Examiner l’allocation de mémoire par fonction - Résoudre les problèmes de mémoire | Documents Microsoft"  
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
 
-[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Télécharger un canal Microsoft Edge"  
+[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Télécharger un canal Microsoft Edge de données"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
@@ -109,5 +108,5 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

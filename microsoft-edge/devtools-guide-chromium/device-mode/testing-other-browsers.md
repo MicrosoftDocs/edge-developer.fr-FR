@@ -3,16 +3,16 @@ description: Votre travail ne se termine pas par la garantie que votre site s’
 title: Émuler et tester d'autres navigateurs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/06/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 22153a54df7c5b92236a745be8e3bbac9a52d247
-ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
+ms.openlocfilehash: f2ca56c2e15f578a970e6ceb84b1554bfda53862
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11481365"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564279"
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -34,7 +34,7 @@ Votre travail ne se termine pas par la garantie que votre site s’exécute bien
 ### <a name="summary"></a>Résumé  
 
 *   Lorsque vous n’avez pas d’appareil particulier ou que vous souhaitez vérifier quelque chose, la meilleure option consiste à émuler l’appareil directement à l’intérieur de votre navigateur.  
-*   Les émulateurs et simulateurs de périphériques vous permettent d’imiter votre site de développement sur une plage d’appareils de votre station de travail.  
+*   Les émulateurs et simulateurs d’appareil vous permettent d’imiter votre site de développement sur une plage d’appareils de votre station de travail.  
 *   Les émulateurs basés sur le cloud vous permettent d’automatiser des tests unitaires pour votre site sur différentes plateformes.  
 
 ## <a name="browser-emulators"></a>Émulateurs de navigateur  
@@ -47,13 +47,13 @@ Firefox dispose [][MDNResponsiveDesignMode] d’une vue de conception réactive 
 
 ### <a name="edgehtml-emulation"></a>Émulation EdgeHTML  
 
-Pour émuler les Windows Phone, utilisez [l’émulation][ArchiveMicrosoftEdgeDevtoolsEmulation]intégrée Microsoft Edge \(EdgeHTML\).  
+Pour émuler Windows téléphones, utilisez l’émulation intégrée Microsoft Edge [][ArchiveMicrosoftEdgeDevtoolsEmulation]\(EdgeHTML\).  
 
 Utilisez [l’émulation d’Internet Explorer 11][Ie11DevToolsEmulation] pour simuler l’apparence de votre page dans les versions antérieures d’Internet Explorer.  
 
 ## <a name="device-emulators-and-simulators"></a>Émulateurs et simulateurs d’appareils  
 
-Les simulateurs et émulateurs de périphériques simulent non seulement l’environnement du navigateur, mais l’ensemble de l’appareil.  Chacun d’eux est utile pour tester les éléments qui nécessitent une intégration du système d’exploitation, par exemple une entrée de formulaire avec des claviers virtuels.  
+Les simulateurs et émulateurs d’appareil simulent non seulement l’environnement du navigateur, mais l’ensemble de l’appareil.  Chacun d’eux est utile pour tester des éléments qui nécessitent une intégration du système d’exploitation, par exemple une entrée de formulaire avec des claviers virtuels.  
 
 ### <a name="android-emulator"></a>Émulateur Android  
 
@@ -63,12 +63,12 @@ Les simulateurs et émulateurs de périphériques simulent non seulement l’env
 :::image-end:::  
 -->  
 
-Pour le moment, il n’existe aucun moyen d’installer Microsoft Edge sur un émulateur Android.  Toutefois, vous pouvez utiliser le navigateur Android, l’Chromium Content Shell et Firefox pour Android que nous examinerons plus loin dans ce guide.  Chromium Content Shell exécute le même moteur de rendu Chromium que Microsoft Edge, mais n’offre aucune fonctionnalité spécifique au navigateur.  
+Pour le moment, il n’existe aucun moyen d’installer Microsoft Edge sur un émulateur Android.  Toutefois, vous pouvez utiliser le navigateur Android, Chromium Content Shell et Firefox pour Android que nous examinerons plus loin dans ce guide.  Chromium Content Shell exécute le même moteur de rendu Chromium que Microsoft Edge, mais n’offre aucune fonctionnalité spécifique au navigateur.  
 
-L’émulateur Android est fourni avec le SDK Android que vous devez télécharger dans le cadre [d’Android Studio.][AndroidStudioDownload]  Suivez ensuite les instructions pour [configurer un périphérique virtuel et][AndroidStudioCreateManageVirtualDevices] démarrer [l’émulateur.][AndroidStudioRunAppsAndroidEmulator]  
+L’émulateur Android est fourni avec le SDK Android que vous devez télécharger dans le cadre [d’Android Studio.][AndroidStudioDownload]  Suivez ensuite les instructions pour [configurer un périphérique virtuel][AndroidStudioCreateManageVirtualDevices] et démarrer [l’émulateur.][AndroidStudioRunAppsAndroidEmulator]  
 Une fois votre émulateur démarré, sélectionnez l’icône Navigateur et testez votre site sur l’ancien navigateur Stock pour Android.  
 
-#### <a name="chromium-content-shell-on-android"></a>Shell de contenu Chromium sur Android  
+#### <a name="chromium-content-shell-on-android"></a>Chromium shell de contenu sur Android  
 
 <!--  
 :::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
@@ -76,7 +76,7 @@ Une fois votre émulateur démarré, sélectionnez l’icône Navigateur et test
 :::image-end:::  
 -->  
 
-Pour installer l’Chromium Content Shell pour Android, laissez votre émulateur en cours d’exécution et exécutez la commande suivante.  
+Pour installer l’Chromium de contenu pour Android, laissez votre émulateur en cours d’exécution et exécutez la commande suivante.  
 
 ```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
@@ -84,7 +84,7 @@ chmod u+x ./chromium-android-installer/*.sh
 ./chromium-android-installer/install-chromeandroid.sh
 ```  
 
-Vous pouvez maintenant tester votre site avec l’Chromium Content Shell.  
+Vous pouvez maintenant tester votre site avec l’Chromium de contenu.  
 
 #### <a name="firefox-on-android"></a>Firefox sur Android  
 
@@ -94,7 +94,7 @@ Vous pouvez maintenant tester votre site avec l’Chromium Content Shell.
 :::image-end:::  
 -->  
 
-À l’exemple de l’Chromium Content Shell, vous pouvez obtenir un APK pour installer Firefox sur l’émulateur.  
+À l’Chromium de contenu, vous pouvez obtenir un APK pour installer Firefox sur l’émulateur.  
 
 [Téléchargez le fichier .apk correct.][MozillaFirefoxDownload]  
 
@@ -119,14 +119,14 @@ Lorsque vous avez terminé, découvrez comment travailler avec le simulateur à 
    VM IE moderne  
 :::image-end:::  
 
-Les machines virtuelles Microsoft Edge \(EdgeHTML\) \(VMs\) vous permettent d’accéder à différentes versions de EdgeHTML et d’Internet IE sur votre ordinateur via VirtualBox \(ou VMWare\).  Choisissez une [machine virtuelle sur la page de téléchargement.][MicrosoftDeveloperEdgeVms]  
+Microsoft Edge \(EdgeHTML\) Virtual Machines \(VMs\) vous permettent d’accéder à différentes versions de EdgeHTML et d’IE sur votre ordinateur via VirtualBox \(ou VMWare\).  Choisissez une [machine virtuelle sur la page de téléchargement.][MicrosoftDeveloperEdgeVms]  
 
 ## <a name="cloud-based-emulators-and-simulators"></a>Émulateurs et simulateurs basés sur le cloud  
 
 Si vous n’êtes pas en mesure d’utiliser les émulateurs et que vous n’avez pas accès à des appareils réels, les émulateurs basés sur le cloud sont la meilleure chose à faire.  L’un des grands avantages des émulateurs basés sur le cloud par rapport aux appareils réels et aux émulateurs locaux est que vous pouvez automatiser des tests unitaires pour votre site sur différentes plateformes.  
 
 *   [BrowserStack (commercial)][|::ref1::|] est le plus simple à utiliser pour les tests manuels.  Vous sélectionnez un système d’exploitation, la version de votre navigateur et le type d’appareil, une URL à parcourir et une machine virtuelle hébergée avec laquelle vous pouvez interagir.  Vous pouvez également exécuter plusieurs émulateurs dans le même écran, ce qui vous permet de tester l’apparence de votre application sur plusieurs appareils en même temps.  
-*   [Le contrôle ContrôleLabs (commercial)][SauceLabs] vous permet d’exécuter des tests unitaires à l’intérieur d’un émulateur, ce qui peut s’avérer très utile pour écrire des scripts dans votre site et regarder l’enregistrement vidéo de ce dernier sur différents appareils.  Vous pouvez également tester manuellement votre site.  
+*   La fonction [ContrôleLabs (commercial)][SauceLabs] vous permet d’exécuter des tests unitaires à l’intérieur d’un émulateur, ce qui peut s’avérer très utile pour écrire des scripts dans votre site et regarder l’enregistrement vidéo de ce dernier sur différents appareils.  Vous pouvez également tester manuellement votre site.  
 *   [Device Anywhere (commercial) n’utilise][AppExperience] pas d’émulateurs, mais des appareils réels que vous pouvez contrôler à distance.  Ceci est très utile dans le cas où vous devez reproduire un problème sur un appareil spécifique et peut ne pas afficher le bogue à l’aide des options des guides précédents.  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
@@ -150,7 +150,7 @@ Si vous n’êtes pas en mesure d’utiliser les émulateurs et que vous n’ave
 [BrowserStack]: https://www.browserstack.com/automate "BrowserStack"  
 [MacAppStoreXcode]: https://itunes.apple.com/app/xcode/id497799835 "Xcode sur le Mac App Store"  
 [MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "Mode Création dynamique | MDN"  
-[MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Télécharger firefox Browser"  
+[MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Télécharger le navigateur Firefox"  
 [SauceLabs]: https://saucelabs.com "Sauce Labs"  
 
 > [!NOTE]
@@ -163,6 +163,6 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
-[PaulBakaus]: https://developers.google.com/web/resources/contributors/pbakaus  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  
+[PaulBakaus]: https://developers.google.com/web/resources/contributors#paul-bakaus  

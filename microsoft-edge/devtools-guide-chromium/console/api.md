@@ -1,18 +1,18 @@
 ---
-description: Utilisez l'API console pour écrire des messages dans la console.
+description: Utilisez l’API console pour écrire des messages dans la console.
 title: Référence de l’API de console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 54b89e25501449a1e5119afa812a0535fbc6ffbb
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+ms.openlocfilehash: 08a29db4dec05de0a21a0e6a9de9a0fb6e0d3f56
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483253"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564510"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,13 +29,13 @@ ms.locfileid: "11483253"
    limitations under the License.  -->
 # <a name="console-api-reference"></a>Référence de l’API de console  
 
-**L'outil** Console est utile lorsque vous terminez plusieurs tâches dans DevTools.  Les API peuvent être inclues dans vos scripts. Les méthodes de commodité sont uniquement disponibles pour une utilisation dans l'outil **Console,** telles que les `debug()` méthodes et les `monitorEvents()` méthodes.  Pour plus d'informations sur la mise en place de la **console,** accédez à Commencer à [journalisation des messages dans la console.][DevtoolsConsoleConsoleLog]  Pour plus d'informations sur les méthodes pratiques de la **console,** accédez à référence de [l'API des utilitaires de console.][DevtoolConsoleUtilities]  
+**L’outil** Console est utile lorsque vous terminez plusieurs tâches dans DevTools.  Les API peuvent être inclues dans vos scripts. Les méthodes de commodité sont uniquement disponibles pour une utilisation dans l’outil **Console,** telles que les `debug()` méthodes et les `monitorEvents()` méthodes.  Pour plus d’informations sur la mise en place de la **console,** accédez à Commencer à [journalisation des messages dans la console.][DevtoolsConsoleConsoleLog]  Pour plus d’informations sur les méthodes pratiques de la **console,** accédez à référence de [l’API des utilitaires de console.][DevtoolConsoleUtilities]  
 
 ---  
 
 ## <a name="assert"></a>assert  
 
-Cette méthode écrit une [erreur dans](#error) la **console** `expression` lorsqu'elle est évaluée à `false` .  
+Cette méthode écrit une [erreur dans](#error) la **console** lorsqu’elle est évaluée `expression` à `false` .  
 
 ### <a name="javascript-syntax"></a>Syntaxe JavaScript  
 
@@ -65,8 +65,8 @@ console.assert(expression, object)
       Sortie
    :::column-end:::
    :::column span="3":::
-      :::image type="complex" source="../media/console-demo-assert-button.msft.png" alt-text="Résultat de l'exemple console.assert()" lightbox="../media/console-demo-assert-button.msft.png":::
-         Résultat de `console.assert()` l'exemple  
+      :::image type="complex" source="../media/console-demo-assert-button.msft.png" alt-text="Résultat de l’exemple console.assert()" lightbox="../media/console-demo-assert-button.msft.png":::
+         Résultat de `console.assert()` l’exemple  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -75,7 +75,7 @@ console.assert(expression, object)
 
 ## <a name="clear"></a>clear  
 
-Cette méthode permet d'effacer la **console.**  
+Cette méthode permet d’effacer la **console.**  
 
 Si [conserver le journal][DevtoolsConsoleReferenceFilter] est désactivé, la méthode [Clear](#clear) est désactivée.  
 
@@ -144,8 +144,8 @@ console.count([label])
       Sortie
    :::column-end:::
    :::column span="3":::
-      :::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="Résultat de l'exemple console.count()" lightbox="../media/console-demo-count-button.msft.png":::
-         Résultat de `console.count()` l'exemple  
+      :::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="Résultat de l’exemple console.count()" lightbox="../media/console-demo-count-button.msft.png":::
+         Résultat de `console.count()` l’exemple  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -188,7 +188,7 @@ console.countReset([label])
 
 ## <a name="debug"></a>déboguer  
 
-Cette méthode est identique à la méthode [log,](#log) à l'exception d'un niveau de journal différent.  
+Cette méthode est identique à la méthode [log,](#log) à l’exception d’un niveau de journal différent.  
 
 ### <a name="javascript-syntax"></a>Syntaxe JavaScript  
 
@@ -215,8 +215,8 @@ console.debug(object [, object, ...])
       Sortie
    :::column-end:::
    :::column span="3":::
-      :::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="Résultat de l'exemple console.debug()" lightbox="../media/console-demo-debug-button.msft.png":::
-         Résultat de `console.debug()` l'exemple  
+      :::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="Résultat de l’exemple console.debug()" lightbox="../media/console-demo-debug-button.msft.png":::
+         Résultat de `console.debug()` l’exemple  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -225,7 +225,7 @@ console.debug(object [, object, ...])
 
 ## <a name="dir"></a>dir  
 
-Cette méthode imprime une représentation JSON de l'objet spécifié.  
+Cette méthode imprime une représentation JSON de l’objet spécifié.  
 
 ### <a name="javascript-syntax"></a>Syntaxe JavaScript  
 
@@ -252,8 +252,8 @@ console.dir(object)
       Sortie
    :::column-end:::
    :::column span="3":::
-      :::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="Résultat de l'exemple console.dir()" lightbox="../media/console-demo-dir-button.msft.png":::
-         Résultat de `console.dir()` l'exemple  
+      :::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="Résultat de l’exemple console.dir()" lightbox="../media/console-demo-dir-button.msft.png":::
+         Résultat de `console.dir()` l’exemple  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -289,8 +289,8 @@ console.dirxml(node)
       Sortie
    :::column-end:::
    :::column span="3":::
-      :::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="Résultat de l'exemple console.dirxml()" lightbox="../media/console-demo-dirxml-button.msft.png":::
-         Résultat de `console.dirxml()` l'exemple  
+      :::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="Résultat de l’exemple console.dirxml()" lightbox="../media/console-demo-dirxml-button.msft.png":::
+         Résultat de `console.dirxml()` l’exemple  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -326,8 +326,8 @@ console.error(object [, object, ...])
       Sortie
    :::column-end:::
    :::column span="3":::
-      :::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="Résultat de l'exemple console.error()" lightbox="../media/console-demo-error-button.msft.png":::
-         Résultat de `console.error()` l'exemple  
+      :::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="Résultat de l’exemple console.error()" lightbox="../media/console-demo-error-button.msft.png":::
+         Résultat de `console.error()` l’exemple  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -336,7 +336,7 @@ console.error(object [, object, ...])
 
 ## <a name="group"></a>groupe  
 
-Cette méthode groupe visuellement les messages jusqu'à ce que la [méthode groupEnd](#groupend) soit utilisée.  Utilisez la [méthode groupCollapsed](#groupcollapsed) pour réduire le groupe lorsqu'il se connecte initialement à la **console.**  
+Cette méthode groupe visuellement les messages jusqu’à ce que la [méthode groupEnd](#groupend) soit utilisée.  Utilisez la [méthode groupCollapsed](#groupcollapsed) pour réduire le groupe lorsqu’il se connecte initialement à la **console.**  
 
 ### <a name="javascript-syntax"></a>Syntaxe JavaScript  
 
@@ -367,8 +367,8 @@ console.group(label)
       Sortie
    :::column-end:::
    :::column span="3":::
-      :::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="Résultat de l'exemple console.group()" lightbox="../media/console-demo-group-button.msft.png":::
-         Résultat de `console.group()` l'exemple  
+      :::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="Résultat de l’exemple console.group()" lightbox="../media/console-demo-group-button.msft.png":::
+         Résultat de `console.group()` l’exemple  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -377,7 +377,7 @@ console.group(label)
 
 ## <a name="groupcollapsed"></a>groupCollapsed  
 
-Cette méthode est identique à la méthode [log,](#log) sauf que le groupe est initialement réduire lorsqu'il se connecte à la **console.**  
+Cette méthode est identique à la méthode [log,](#log) sauf que le groupe est initialement réduire lorsqu’il se connecte à la **console.**  
 
 ### <a name="javascript-syntax"></a>Syntaxe JavaScript  
 
@@ -428,8 +428,8 @@ console.info(object [, object, ...])
       Sortie
    :::column-end:::
    :::column span="3":::
-      :::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="Résultat de l'exemple console.info()" lightbox="../media/console-demo-info-button.msft.png":::
-         Résultat de `console.info()` l'exemple  
+      :::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="Résultat de l’exemple console.info()" lightbox="../media/console-demo-info-button.msft.png":::
+         Résultat de `console.info()` l’exemple  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -465,8 +465,8 @@ console.log(object [, object, ...])
       Sortie
    :::column-end:::
    :::column span="3":::
-      :::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="Résultat de l'exemple console.log()" lightbox="../media/console-demo-log-button.msft.png":::
-         Résultat de `console.log()` l'exemple  
+      :::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="Résultat de l’exemple console.log()" lightbox="../media/console-demo-log-button.msft.png":::
+         Résultat de `console.log()` l’exemple  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -475,7 +475,7 @@ console.log(object [, object, ...])
 
 ## <a name="table"></a>table  
 
-Cette méthode enregistre un tableau d'objets en tant que tableau.  
+Cette méthode enregistre un tableau d’objets en tant que tableau.  
 
 ### <a name="javascript-syntax"></a>Syntaxe JavaScript  
 
@@ -516,8 +516,8 @@ console.table(array)
       Sortie
    :::column-end:::
    :::column span="3":::
-      :::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="Résultat de l'exemple console.table()" lightbox="../media/console-demo-table-button.msft.png":::
-         Résultat de `console.table()` l'exemple  
+      :::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="Résultat de l’exemple console.table()" lightbox="../media/console-demo-table-button.msft.png":::
+         Résultat de `console.table()` l’exemple  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -555,8 +555,8 @@ console.time([label])
       Sortie
    :::column-end:::
    :::column span="3":::
-      :::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="Résultat de l'exemple console.time()" lightbox="../media/console-demo-time-button.msft.png":::
-         Résultat de `console.time()` l'exemple  
+      :::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="Résultat de l’exemple console.time()" lightbox="../media/console-demo-time-button.msft.png":::
+         Résultat de `console.time()` l’exemple  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -565,7 +565,7 @@ console.time([label])
 
 ## <a name="timeend"></a>timeEnd  
 
-Cette méthode arrête un timer.  Pour plus d'informations, accédez à la [méthode d'heure.](#time)  
+Cette méthode arrête un timer.  Pour plus d’informations, accédez à la [méthode d’heure.](#time)  
 
 ### <a name="javascript-syntax"></a>Syntaxe JavaScript  
 
@@ -610,8 +610,8 @@ console.trace()
       Sortie
    :::column-end:::
    :::column span="3":::
-      :::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="Résultat de l'exemple console.trace()" lightbox="../media/console-demo-trace-button.msft.png":::
-         Résultat de `console.trace()` l'exemple  
+      :::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="Résultat de l’exemple console.trace()" lightbox="../media/console-demo-trace-button.msft.png":::
+         Résultat de `console.trace()` l’exemple  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -647,8 +647,8 @@ console.warn(object [, object, ...])
       Sortie
    :::column-end:::
    :::column span="3":::
-      :::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="Résultat de l'exemple console.warn()" lightbox="../media/console-demo-warn-button.msft.png":::
-         Résultat de `console.warn()` l'exemple  
+      :::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="Résultat de l’exemple console.warn()" lightbox="../media/console-demo-warn-button.msft.png":::
+         Résultat de `console.warn()` l’exemple  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -662,7 +662,7 @@ console.warn(object [, object, ...])
 <!-- links -->  
 
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Logs in the Console tool | Documents Microsoft"  
-[DevtoolConsoleUtilities]: ./utilities.md "Référence de l'API des utilitaires de console | Documents Microsoft"  
+[DevtoolConsoleUtilities]: ./utilities.md "Référence de l’API des utilitaires de console | Documents Microsoft"  
 [DevtoolsConsoleReferenceClear]: ./reference.md#clear-the-console "Effacer la console - Référence de la console | Documents Microsoft"  
 [DevtoolsConsoleReferenceFilter]: ./reference.md#filter-by-log-level "Filtrer par niveau de journal – Référence de la console | Microsoft Docs"  
 [DevtoolsConsoleReferencePersist]: ./reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console reference | Documents Microsoft"  
@@ -679,4 +679,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

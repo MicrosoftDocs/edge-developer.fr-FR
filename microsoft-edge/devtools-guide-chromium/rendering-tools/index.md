@@ -1,18 +1,18 @@
 ---
 description: Les utilisateurs s’attendent à des pages interactives et fluides.  Chaque étape du pipeline de pixels représente une opportunité de présenter jank.  Découvrez les outils et les stratégies permettant d’identifier et de résoudre les problèmes courants qui ralentissent les performances d’exécution.
-title: Analyser les performances d’exécution
+title: Analyser les performances runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 646db5b2e88e33b109e5eb3ae01a296bf3a4fb46
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: d5c37c188ae9038a7baafc936d2a02299def6366
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397999"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564706"
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -27,8 +27,7 @@ ms.locfileid: "11397999"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
-# <a name="analyze-runtime-performance"></a>Analyser les performances d’exécution  
+# <a name="analyze-runtime-performance"></a>Analyser les performances runtime  
 
 Les utilisateurs s’attendent à des pages interactives et fluides.  Chaque étape du pipeline de pixels représente une opportunité de présenter jank.  Découvrez les outils et les stratégies permettant d’identifier et de résoudre les problèmes courants qui ralentissent les performances d’exécution.  
 
@@ -67,7 +66,7 @@ Le tableau suivant décrit certains problèmes JavaScript courants et les soluti
 
 ## <a name="style"></a>Style  
 
-Les modifications de style sont coûteuses, en particulier si ces modifications affectent plusieurs éléments du DOM.  Chaque fois que vous appliquez des styles à un élément, le navigateur calcule l’impact sur tous les éléments associés, recalcule la disposition et les repessaint.  
+Les modifications de style sont coûteuses, en particulier si ces modifications affectent plusieurs éléments dans le DOM.  Chaque fois que vous appliquez des styles à un élément, le navigateur calcule l’impact sur tous les éléments associés, recalcule la disposition et les repessaint.  
 
 <!--Related Guides:  
 
@@ -102,7 +101,7 @@ Le tableau suivant décrit certains problèmes de style courants et les solution
 | Problème | Exemple | Solution |  
 |:--- |:--- |:--- |  
 | Calculs de style coûteux affectant la réponse ou l’animation.  | Toute propriété CSS qui modifie la géométrie d’un élément, comme la largeur, la hauteur ou la position ; le navigateur vérifie tous les autres éléments et recalcule la disposition.  | Éviter les CSS qui déclenchent des dispositions |  
-| Sélecteurs complexes affectant la réponse ou l’animation.  | Les sélecteurs imbrmbrés forcent le navigateur à tout savoir sur tous les autres éléments, y compris les parents et les enfants.  | Référencez un élément dans votre CSS avec une simple classe.  |  
+| Sélecteurs complexes affectant la réponse ou l’animation.  | Les sélecteurs imbriques forcent le navigateur à tout savoir sur tous les autres éléments, y compris les parents et les enfants.  | Référencez un élément dans votre CSS avec une simple classe.  |  
 
 <!--todo: add Avoid CSS that triggers layouts section when available -->  
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations (Reference an element in your CSS with just a class) section when available -->  
@@ -144,7 +143,7 @@ Le tableau suivant décrit certains problèmes de disposition courants et les so
 | Problème | Exemple | Solution |  
 |:--- |:--- |:--- |  
 | Disposition synchrone forcée affectant la réponse ou l’animation.  | Forcer le navigateur à effectuer la disposition plus tôt dans le pipeline de pixels, ce qui entraîne des étapes répétées dans le processus de rendu.  | Traitement par lots des premières lectures de votre style, puis écritures.  <!--Navigate to [Avoid large, complex layouts and layout thrashing][WebFundamentalsPerformanceRenderingAvoidLargeComplexLayouts].  -->  |  
-| Disposition affectant la réponse ou l’animation.  | Boucle qui place le navigateur dans un cycle de lecture-écriture-lecture-écriture, ce qui oblige le navigateur à recalculer encore et encore la disposition.  | Traitement par lot automatique des opérations de lecture-écriture à [l’aide de la bibliothèque FastDom.][GitHubWilsonpageFastdom]  |  
+| Disposition affectant la réponse ou l’animation.  | Boucle qui place le navigateur dans un cycle de lecture-écriture-lecture-écriture, forçant le navigateur à recalculer la disposition encore et encore.  | Traitement par lot automatique des opérations de lecture-écriture à [l’aide de la bibliothèque FastDom.][GitHubWilsonpageFastdom]  |  
 
 <!--todo: add Avoid CSS that triggers layouts (Avoid large, complex layouts and layout thrashing) section when available -->  
 
@@ -156,7 +155,7 @@ La composition est l’endroit où les parties peints de la page sont rassemblé
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-### <a name="paint-and-composite-tools"></a>Paint et composite : outils  
+### <a name="paint-and-composite-tools"></a>Paint composite : outils  
 
 Vous souhaitez savoir combien de temps la peinture prend ou à quelle fréquence le dessin se produit-il ?  Vérifiez le [paramètre Activer l’instrumentation de pinceau][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] avancée dans le panneau **Performances,** puis prenez un enregistrement.  Si la majeure partie de votre temps de rendu est consacrée à la peinture, vous avez des problèmes de dessin.  
 
@@ -171,13 +170,13 @@ Check out the **Rendering** panel for further configurations that are able to he
 
 <!--todo: link Rendering panel in ../evaluate-performance/timeline-tool  sub-section when live  -->  
 
-### <a name="paint-and-composite-problems"></a>Paint et composite : problèmes  
+### <a name="paint-and-composite-problems"></a>Paint composite : problèmes  
 
 Le tableau suivant décrit certains problèmes courants liés aux images et aux composites, ainsi que les solutions potentielles.  
 
 | Problème | Exemple | Solution |  
 |:--- |:--- |:--- |  
-| Les tempêtes de couleurs affectent la réponse ou l’animation.  | Les grandes zones de dessin ou les pinceaux coûteux affectant la réponse ou l’animation.  | Évitez de peindre, promouvoir les éléments qui se déplacent vers leur propre couche, utiliser des transformations et l’opacité.  <!--Navigate to [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
+| Paint tempêtes affectant la réponse ou l’animation.  | Les grandes zones de dessin ou les pinceaux coûteux affectant la réponse ou l’animation.  | Évitez de peindre, promouvoir les éléments qui se déplacent vers leur propre couche, utiliser des transformations et l’opacité.  <!--Navigate to [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
 | Explosions de couches affectant les animations.  | La surpromotion d’un trop grand nombre d’éléments `translateZ(0)` avec une incidence importante sur les performances de l’animation.  | Faites une promotion aux couches avec parcimonie, et uniquement lorsque vous savez qu’elle offre des améliorations concrètes.  <!--Navigate to [Stick to composite-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  |  
 
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
@@ -224,5 +223,5 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

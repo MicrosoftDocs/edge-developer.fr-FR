@@ -3,16 +3,16 @@ description: Découvrez comment utiliser Microsoft Edge DevTools pour afficher e
 title: Prise en main de l’affichage et de la modification de CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: b3d19d34f329fec7a3903fb37e8be3558ba4d31d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: bc629286530e709bef0e04a671f1a0e56eee48ea
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399091"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564447"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11399091"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="get-started-with-viewing-and-changing-css"></a>Prise en main de l’affichage et de la modification de CSS  
 
-Complétez ces didacticiels interactifs pour découvrir les principes de base de l’affichage et de la modification du CSS d’une page à l’aide de Microsoft Edge DevTools.  
+Complétez ces didacticiels interactifs pour découvrir les principes de base de l’affichage et de la modification du CSS d’une page à l’aide Microsoft Edge DevTools.  
 
 ## <a name="open-css-examples"></a>Exemples open CSS  
 
@@ -63,7 +62,7 @@ Complétez ces didacticiels interactifs pour découvrir les principes de base de
         
     1.  Dans la `aloha` classe, recherchez la valeur du `padding` style et copiez-la.  
         
-        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Les classes CSS sont appliquées à l’élément inspecté sont mises en surbrill" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+        :::image type="complex" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="Les classes CSS sont appliquées à l’élément inspecté sont mises en surbrillant dans le panneau Styles" lightbox="../media/css-elements-inspect-me-styles.msft.png":::
            Les classes CSS sont appliquées à l’élément sélectionné, par exemple, sont affichées dans le `aloha` **panneau Styles**  
         :::image-end:::  
         
@@ -128,7 +127,7 @@ Utilisez le diagramme interactif **De modèle** de zone dans le panneau **Styles
 
 1.  [Ouvrez des exemples CSS.](#open-css-examples)  
 1.  Pointez sur `Change My Margin!` le texte, ouvrez le menu contextuel \(clic droit\), puis choisissez **Inspecter**.  
-1.  Dans le diagramme **de modèle Box** dans le panneau **Styles,** pointez sur **remplissage.**  Le remplissage d’un élément est mis en surbrillement dans laport d’affichage.  
+1.  Dans le diagramme **de modèle box** dans le panneau **Styles,** pointez sur **remplissage.**  Le remplissage d’un élément est mis en surbrillement dans laport d’affichage.  
 
     > [!NOTE]
     > Selon la taille de votre fenêtre DevTools, vous devrez peut-être faire défiler jusqu’au bas du panneau **Styles** pour afficher le **modèle box**.  
@@ -151,7 +150,7 @@ Utilisez le diagramme interactif **De modèle** de zone dans le panneau **Styles
     
 ## <a name="debugging-media-queries"></a>Débogage de requêtes multimédias  
 
-[Les requêtes multimédias][MDNUsingMediaGueries] sont un moyen de faire en sorte que votre produit web réagisse aux modifications apportées aux paramètres de configuration de chaque utilisateur.  Le cas d’utilisation le plus significatif consiste à fournir à votre produit une disposition CSS différente en fonction des dimensions de la vue.  L’utilisation de dispositions distinctes permet une disposition d’une colonne pour les appareils mobiles et des dispositions multi-colonnes lorsqu’il y a plus d’espace d’écran disponible.  
+[Les requêtes multimédias][MDNUsingMediaGueries] sont un moyen de faire en sorte que votre produit web réagisse aux modifications apportées aux paramètres de configuration de chaque utilisateur.  Le cas d’utilisation le plus significatif consiste à fournir à votre produit une disposition CSS différente en fonction des dimensions de la vue.  L’utilisation de dispositions distinctes permet une disposition à une colonne pour les appareils mobiles et des dispositions multi-colonnes lorsqu’il y a plus de espace d’écran disponible.  
 
 Si vous souhaitez déboguer ou tester les requêtes multimédias que vous avez définies dans votre CSS, utilisez les étapes suivantes.  
 
@@ -185,15 +184,15 @@ Si vous souhaitez déboguer ou tester les requêtes multimédias que vous avez d
 
 <!-- links -->  
 
-[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Modifier l’emplacement de Microsoft Edge DevTools (Undock, Dock to Bottom, Dock To Left)"  
+[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Modifier Microsoft Edge placement de DevTools (Undock, Dock To Bottom, Dock To Left)"  
 
-[GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "Exemples CSS - Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "Exemples CSS : Microsoft Edge (Chromium) DevTools | Glitch"  
 
 [MDNUsingMediaGueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Utilisation de requêtes multimédias | MDN"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/css/index) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/css/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -201,4 +200,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

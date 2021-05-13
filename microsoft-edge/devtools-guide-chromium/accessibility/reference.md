@@ -3,16 +3,16 @@ description: Référence complète des fonctionnalités d’accessibilité dans 
 title: Référence d’accessibilité
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: fce6dec3883cbcc758780a9fedb4c0fb2a8d0a4c
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: a82dec6ffd7e3fb44143ea103fc9756afcd1a161
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439253"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564573"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,19 +27,18 @@ ms.locfileid: "11439253"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="accessibility-reference"></a>Référence d’accessibilité  
 
-Cette page est une référence complète des fonctionnalités d’accessibilité dans Microsoft Edge DevTools.  Il est destiné aux développeurs web qui :  
+Cette page est une référence complète des fonctionnalités d’accessibilité Microsoft Edge DevTools.  Il est destiné aux développeurs web qui :  
 
 *   Avoir une connaissance de base de DevTools, par exemple comment l’ouvrir.  
 *   Familiarisez-vous [avec les principes d’accessibilité et les meilleures pratiques.][MDNAccessibility]  
     
 L’objectif de cette référence est de vous aider à découvrir tous les outils disponibles dans DevTools qui vous aident à examiner l’accessibilité d’une page.  
 
-Si vous recherchez de l’aide sur la navigation de DevTools avec une technologie d’assistance telle qu’un lecteur d’écran, accédez à Navigation dans [Microsoft Edge DevTools avec][DevtoolsAccessibilityNavigation]technologie d’assistance.  
+Si vous recherchez de l’aide sur la navigation de DevTools avec une technologie d’assistance telle qu’un lecteur d’écran, accédez à [Navigation dans Microsoft Edge DevTools With Assistive Technology][DevtoolsAccessibilityNavigation].  
 
-## <a name="overview-of-accessibility-features-in-microsoft-edge-devtools"></a>Vue d’ensemble des fonctionnalités d’accessibilité dans Microsoft Edge DevTools  
+## <a name="overview-of-accessibility-features-in-microsoft-edge-devtools"></a>Vue d’ensemble des fonctionnalités d’accessibilité Microsoft Edge DevTools  
 
 Cette section explique comment DevTools s’inscrit dans votre kit de ressources d’accessibilité global.  
 
@@ -48,7 +47,7 @@ Lorsque vous déterminez si une page est accessible, vous devez avoir 2 question
 1.  Êtes-vous en mesure de naviguer dans la page à l’aide d’un clavier ou [d’un lecteur d’écran][MDNScreenReader]?  
 1.  Les éléments de la page sont-ils correctement marqués pour les lecteurs d’écran ?  
     
-En règle générale, DevTools doit vous aider à résoudre les erreurs liées aux #2, car ces erreurs sont faciles à détecter de manière automatisée.  La question #1 est tout aussi importante, mais malheureusement, DevTools ne vous aide pas.  La seule façon de rechercher les erreurs liées aux #1 question consiste à essayer d’utiliser une page avec un clavier ou un lecteur d’écran vous-même.  <!--To learn more, navigate to [How To Do An Accessibility Review][AccessibilityReview].  -->  
+En règle générale, DevTools doit vous aider à résoudre les erreurs liées aux #2, car ces erreurs sont faciles à détecter de manière automatisée.  La question #1 est tout aussi importante, mais malheureusement, DevTools ne vous y aide pas.  La seule façon de rechercher les erreurs liées aux #1 question consiste à essayer d’utiliser une page avec un clavier ou un lecteur d’écran vous-même.  <!--To learn more, navigate to [How To Do An Accessibility Review][AccessibilityReview].  -->  
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
@@ -77,7 +76,7 @@ Pour auditer une page :
 1.  Pour **l’appareil,** **choisissez Mobile** si vous souhaitez simuler un appareil mobile.  Cette option modifie la chaîne de votre agent utilisateur et resize laport d’affichage.  Si la version mobile de la page s’affiche différemment de la version de bureau, cette option peut avoir un impact significatif sur les résultats de votre audit.  
 1.  Dans la section **Audits,** assurez-vous que **l’accessibilité** est activée.  Désactivez les autres catégories si vous souhaitez les exclure de votre rapport.  Laissez-les activées si vous souhaitez découvrir d’autres façons d’améliorer la qualité de votre page.  
 1.  La section **Limitation vous** permet de limiter le réseau et le processeur, ce qui est utile lors de l’analyse des performances de charge.  Cette option ne doit pas être pertinente pour votre score d’accessibilité. Vous pouvez donc utiliser ce que vous préférez.  
-1.  La **case à cocher** Effacer le stockage vous permet d’effacer tout le stockage avant de charger la page ou de conserver le stockage entre les chargements de page.  Cette option n’est probablement pas pertinente pour votre score d’accessibilité. Vous pouvez donc utiliser ce que vous préférez.  
+1.  La **case à cocher Effacer Stockage** vous permet d’effacer tout le stockage avant de charger la page ou de conserver le stockage entre les chargements de page.  Cette option n’est probablement pas pertinente pour votre score d’accessibilité. Vous pouvez donc utiliser ce que vous préférez.  
 1.  Choose **Run Audits**. Après 10 à 30 secondes, DevTools fournit un rapport.  Votre rapport vous donne différents conseils sur l’amélioration de l’accessibilité de la page.  
     
     :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="Un rapport" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
@@ -174,7 +173,7 @@ Le s picker de couleur vous permet de vérifier que votre texte répond aux nive
        Propriété `color` de l’élément  
     :::image-end:::  
     
-1.  Consultez la section **Coefficient de** contraste du s sélectionneur de couleurs.  Une coche signifie que l’élément répond à la [recommandation minimale.][W3CContrastMinimum]  Deux coches signifient qu’elle répond à la [recommandation améliorée][W3CContrastEnhanced].  
+1.  Consultez la section **Coefficient de** contraste du s sélectionneur de couleurs.  Une coche signifie que l’élément répond à la [recommandation minimale.][W3CContrastMinimum]  Deux coches signifient qu’elle répond à la [recommandation améliorée.][W3CContrastEnhanced]  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="La section Coefficient de contraste du s picker de couleur affiche 2 coches et une valeur de 13,97" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
        La section **Coefficient de** contraste du s picker de couleur affiche 2 coches et une valeur de `13.97`  
@@ -192,7 +191,7 @@ Le s picker de couleur vous permet de vérifier que votre texte répond aux nive
 
 <!-- links -->  
 
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Naviguer dans Microsoft Edge DevTools avec la technologie d’assistance | Documents Microsoft"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Naviguer Microsoft Edge devTools avec la technologie d’assistance | Documents Microsoft"  
 [DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "Afficher uniquement le CSS réellement appliqué à un élément - CSS Reference | Documents Microsoft"  
 
 [ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe - Test d’accessibilité web - Chrome Web Store"  
@@ -206,7 +205,7 @@ Le s picker de couleur vous permet de vérifier que votre texte répond aux nive
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -214,4 +213,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

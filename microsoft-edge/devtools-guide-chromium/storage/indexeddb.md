@@ -3,16 +3,16 @@ description: Découvrez comment afficher et modifier les données IndexedDB avec
 title: Afficher et modifier les données IndexedDB avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 719348067b1343ca3d7781737fa6441f92ad7ba1
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: b0927ab436d1278f50b0dee099ba3526e5506762
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439709"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564804"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,10 +27,9 @@ ms.locfileid: "11439709"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="view-and-change-indexeddb-data-with-microsoft-edge-devtools"></a>Afficher et modifier les données IndexedDB avec Microsoft Edge DevTools  
 
-Ce guide vous montre comment utiliser [Microsoft Edge DevTools][MicrosoftEdgeDevTools] pour afficher et modifier les [données IndexedDB.][MDNIndexedDBAPI]  Il part du principe que vous êtes familiarisé avec DevTools.  Il suppose également que vous êtes familiarisé avec IndexedDB.  Si ce n’est pas le cas, [accédez à Utilisation d’IndexedDB][MDNUsingIndexedDB].  
+Ce guide vous montre comment utiliser Microsoft Edge [DevTools][MicrosoftEdgeDevTools] pour afficher et modifier [les données IndexedDB.][MDNIndexedDBAPI]  Il part du principe que vous êtes familiarisé avec DevTools.  Il suppose également que vous êtes familiarisé avec IndexedDB.  Si ce n’est pas le cas, [accédez à Utilisation d’IndexedDB][MDNUsingIndexedDB].  
 
 ## <a name="view-indexeddb-data"></a>Afficher les données IndexedDB  
 
@@ -77,7 +76,7 @@ Ce guide vous montre comment utiliser [Microsoft Edge DevTools][MicrosoftEdgeDev
        Afficher une **valeur IndexedDB**  
     :::image-end:::  
     
-1.  Choisissez un index, tel **** que le **titre** ou le corps de la figure suivante, pour trier le magasin d’objets en fonction des valeurs de cet index.  
+1.  Choisissez un index, tel **** que **le titre** ou le corps dans la figure suivante, pour trier le magasin d’objets en fonction des valeurs de cet index.  
    
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="Trier un magasin d’objets par index" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
        Trier un magasin d’objets par index  
@@ -146,7 +145,7 @@ Les clés et valeurs IndexedDB ne sont pas modifiables à partir de **l’outil 
 1.  Choisissez **Effacer les données de site.**  
     
     :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="Volet effacer le stockage" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
-       Volet **effacer le** stockage  
+       Volet **de stockage** Effacer  
     :::image-end:::  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
@@ -155,19 +154,19 @@ Les clés et valeurs IndexedDB ne sont pas modifiables à partir de **l’outil 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
-[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Exécuter des extraits de code JavaScript sur n’importe quelle page avec Microsoft Edge DevTools | Documents Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
+[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Exécutez des extraits de code JavaScript sur n’importe quelle page avec Microsoft Edge DevTools | Documents Microsoft"  
 
 [ChromiumIssue943770]: https://crbug.com/943770 "943770 - DevTools : afficher les bases de données iframe IndexedDB - chromium - Monorail"  
 
 [MDNBasicConceptsKeyGenerator]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_keygenerator "Générateur de clés : concepts de base | MDN"  
 [MDNIndexedDBAPI]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "IndexedDB API | MDN"  
-[MDNUsingIndexedDB]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Utilisation d’IndexedDB | MDN"  
+[MDNUsingIndexedDB]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Utilisation de la base de données IndexedDB | MDN"  
 [MDNUsingIndexedDBUsingIndex]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index "Utilisation d’un index : utilisation de la base de données IndexedDB | MDN"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/indexeddb) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/indexeddb) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -175,4 +174,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

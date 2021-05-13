@@ -3,16 +3,16 @@ description: Utilisez le panneau Application pour inspecter, modifier et débogu
 title: Débogage d’applications web progressives
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: aea01d25474a030e78ac0eaeaef3954ab7f4539f
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 3a0732327aac210e399c438b8d9c34c75a7c2910
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398538"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564727"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,6 @@ ms.locfileid: "11398538"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # <a name="debug-progressive-web-apps"></a>Débogage d’applications web progressives  
 
 Utilisez le panneau **Application** pour inspecter, modifier et déboguer les manifestes d’application web, les travailleurs de service et les caches de travail de service.  
@@ -46,7 +45,7 @@ Ce guide traite uniquement des fonctionnalités Progressive Web App du panneau *
 
 *   Utilisez le **volet Manifeste** pour inspecter le manifeste de votre application web et déclencher des événements Ajouter à l’écran d’accueil.  
 *   Utilisez **** le volet Travailleurs du service pour toute une gamme de tâches liées au travail de service, telles que la désinssion ou la mise à jour d’un service, l’émulation d’événements Push, la mise hors connexion ou l’arrêt d’un service de travail.  
-*   Affichez votre cache de travail de service à partir du **volet Stockage** du cache.  
+*   Affichez votre cache de travail de service à partir du **volet Stockage** cache.  
 *   Désinsistez un service de travail et désinsérez tout le stockage et les caches à l’aide d’un seul bouton dans le volet Effacer **le** stockage.  
     
 ## <a name="web-app-manifest"></a>Manifeste d’application web  
@@ -96,7 +95,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
-## <a name="service-workers"></a>Travailleurs du service  
+## <a name="service-workers"></a>Workers du service  
 
 Les travailleurs de service sont une technologie fondamentale dans la future plateforme web.  Il s’agit de scripts que le navigateur exécute en arrière-plan, séparés d’une page web.  Les scripts vous permettent d’accéder à des fonctionnalités qui n’ont pas besoin d’une page web ou d’une interaction utilisateur, telles que les notifications Push, la synchronisation en arrière-plan et les expériences hors connexion.  
 
@@ -116,7 +115,7 @@ Le **volet Travailleurs** du service dans le panneau **Application** est l’end
 *   Si un service de travail est installé sur la page actuellement ouverte, il est répertorié dans ce volet.  Par exemple, dans la figure précédente, un service de travail est installé pour l’étendue de `https://weather-pwa-sample.firebaseapp.com` .  
 *   La **case à** cocher Hors connexion place DevTools en mode hors connexion.  Cela équivaut au mode hors connexion disponible à partir de l’outil **Réseau** ou à l’option `Go offline` du menu [Commande.][DevtoolsCommandMenuIndex]  
 *   La case à cocher Mise à **jour lors du rechargement** force le service de travail à mettre à jour chaque chargement de page.  
-*   La **case à cocher** Contournement du réseau contourne le service de travail et force le navigateur à se rendre sur le réseau pour les ressources demandées.  
+*   La **case à cocher** Contournement du réseau ignore le service de travail et force le navigateur à se rendre sur le réseau pour les ressources demandées.  
 *   Le **bouton** Mettre à jour effectue une mise à jour à une seule fois du service de travail spécifié.  
 *   Le **bouton Push** émule une notification Push sans charge utile \(également appelée une coche \). ****  
 *   Le **bouton Synchroniser** émule un événement de synchronisation en arrière-plan.  
@@ -138,24 +137,24 @@ Si le service de travail provoque des erreurs, une nouvelle étiquette appelée 
 
 ## <a name="service-worker-caches"></a>Caches de travail de service  
 
-Le **volet Stockage** du cache fournit une liste en lecture seule des ressources qui ont été mises en cache à l’aide de l’API de [cache][MDNWebCacheAPI]\(service worker\).  
+Le **volet Stockage** cache fournit une liste en lecture seule des ressources qui ont été mises en cache à l’aide de l’API de [cache][MDNWebCacheAPI]\(service worker\).  
 
-:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="Volet de stockage du cache" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
-   Volet **de stockage du** cache  
+:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="Volet d’Stockage cache" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
+   Volet **d’Stockage** cache  
 :::image-end:::  
 
 > [!NOTE]
 > La première fois que vous ouvrez un cache et y ajoutez une ressource, DevTools risque de ne pas détecter la modification.  Actualisez la page et affichez le cache.  
 
-Si vous avez au moins deux caches ouverts, les caches s’affichent sous la **liste** de stockage de cache suivante.  
+Si au moins deux caches sont ouverts, les caches s’affichent sous la liste Stockage **suivante.**  
 
-:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="La zone de dépôt Stockage du cache" lightbox="../media/cache-pane-cache-storage.msft.png":::
-   La zone **de dépôt Stockage** du cache  
+:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="La Stockage cache" lightbox="../media/cache-pane-cache-storage.msft.png":::
+   La **Stockage** cache  
 :::image-end:::  
 
 ## <a name="quota-usage"></a>Utilisation des quotas  
 
-Certaines réponses dans le **volet Stockage** du cache peuvent être marquées comme étant « opaques ».  Cela fait référence à une réponse extraite d’une origine différente, comme à partir d’un **CDN** ou d’une API distante, lorsque [CORS][FetchHttpCorsProtocol] n’est pas activé.  
+Certaines réponses dans le **volet Stockage** cache peuvent être marquées comme étant « opaques ».  Il s’agit d’une réponse extraite d’une origine différente, comme à partir **d’une** API CDN ou distante, lorsque [CORS][FetchHttpCorsProtocol] n’est pas activé.  
 
 <!--TODO:  Link Web "CDN" section when available. -->  
 <!--TODO:  Link Web "opaque" section when available. -->
@@ -175,7 +174,7 @@ Guides connexes :
 
 ## <a name="clear-storage"></a>Effacer le stockage  
 
-Le **volet Effacer le** stockage est une fonctionnalité très utile lors du développement d’applications web progressives.  Ce volet vous permet de désinsser les travailleurs du service et d’effacer tous les caches et tous les espaces de stockage en un seul bouton.  <!--Check out the section below to learn more.  -->
+Le **volet Effacer Stockage** est une fonctionnalité très utile lors du développement d’applications web progressives.  Ce volet vous permet de désinsser les travailleurs du service et d’effacer tous les caches et tous les espaces de stockage en un seul bouton.  <!--Check out the section below to learn more.  -->
 
 <!--Related Guides:  
 
@@ -198,9 +197,9 @@ Related Guides:
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes avec le menu de commandes Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes avec le menu de commande DevTools de Microsoft Edge | Microsoft Docs"  
 
-[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Issue 796060: Cache Storage value rises on each refresh when Analytics code is in the html"  
+[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Problème 796060 : la valeur Stockage mise en cache augmente à chaque actualisation lorsque le code d’analyse se trouve dans le code html"  
 
 [FetchHttpCorsProtocol]: https://fetch.spec.whatwg.org/#http-cors-protocol  
 
@@ -217,7 +216,7 @@ Related Guides:
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -225,4 +224,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

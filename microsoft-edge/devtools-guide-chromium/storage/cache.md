@@ -3,16 +3,16 @@ description: Découvrez comment afficher les données de cache à partir du pann
 title: Afficher les données de cache avec Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 0ce4dbbf2456579abe84fca48bca8106384995dd
-ms.sourcegitcommit: 4b9fb5c1176fdaa5e3c60af2b84e38d5bb86cd81
+ms.openlocfilehash: 1f66419014682a316fa565c5ef2ab704f652637f
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439316"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564685"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,22 +27,21 @@ ms.locfileid: "11439316"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # <a name="view-cache-data-with-microsoft-edge-devtools"></a>Afficher les données de cache avec Microsoft Edge DevTools  
 
-Ce guide vous montre comment utiliser [Microsoft Edge DevTools][MicrosoftEdgeDevTools] pour inspecter les [données de cache.][MDNCache]  
+Ce guide vous montre comment utiliser Microsoft Edge [DevTools pour][MicrosoftEdgeDevTools] inspecter les [données du cache.][MDNCache]  
 
 Si vous essayez d’inspecter les [données de cache HTTP,][MDNHTTPCaching] ce n’est pas le guide que vous souhaitez.  Recherchez les informations dans la colonne **Taille** du **journal réseau.**  Accédez à [Journal de l’activité réseau.][DevtoolsNetworkLogActivity]  
 
 ## <a name="view-cache-data"></a>Afficher les données de cache  
 
-1.  Choisissez **l’onglet Application** pour ouvrir le **panneau Application.**  Le **volet Manifeste** s’ouvre généralement par défaut.  
+1.  Choisissez **l’onglet Application** pour ouvrir le panneau **Application.**  Le **volet Manifeste** s’ouvre généralement par défaut.  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-manifest.msft.png":::
        Volet **** manifeste  
     :::image-end:::  
     
-1.  Développez la section **Stockage du cache** pour afficher les caches disponibles.  
+1.  Développez la **section Stockage** cache pour afficher les caches disponibles.  
     
     :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="Caches disponibles" lightbox="../media/storage-application-cache-storage.msft.png":::
        Caches disponibles  
@@ -99,11 +98,11 @@ Si vous essayez d’inspecter les [données de cache HTTP,][MDNHTTPCaching] ce n
     
 ## <a name="delete-all-cache-data"></a>Supprimer toutes les données de cache  
 
-1.  Ouvrez ****  >  **l’application Effacer le stockage.**  
-1.  Assurez-vous que la case **à cocher Stockage** du cache est activée.  
+1.  Open **Application**  >  **Clear Stockage**.  
+1.  Assurez-vous que la **case à Stockage** cache est activée.  
     
-    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Case à cocher Stockage du cache" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
-       Case **à cocher Stockage** du cache  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="Case à cocher Stockage cache" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+       Case **à cocher Stockage** cache  
     :::image-end:::  
     
 1.  Choisissez **Effacer les données de site.**  
@@ -118,7 +117,7 @@ Si vous essayez d’inspecter les [données de cache HTTP,][MDNHTTPCaching] ce n
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
 [DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Journal de l’activité réseau | Documents Microsoft"  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"  
@@ -126,7 +125,7 @@ Si vous essayez d’inspecter les [données de cache HTTP,][MDNHTTPCaching] ce n
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/cache) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/cache) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
@@ -134,4 +133,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
