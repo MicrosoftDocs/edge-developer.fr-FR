@@ -3,17 +3,17 @@ description: Microsoft Edge sur Linux, conseils d’amélioration de webhint dan
 title: Nouveautés de DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: a63515060d989a84838e4a9ba7f803184a3fc91f
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: 6fd9f9ca2c19c8db74036fb54efadb7be8566fd7
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514374"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564118"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -39,7 +39,7 @@ ms.locfileid: "11514374"
 
 Microsoft Edge dev est désormais pris en charge sur les distributions Ubuntu, Debian, Fedora et openSUSE.  Téléchargez et installez le Microsoft Edge dev `.deb` ou le `.rpm` package directement à partir du [site Microsoft Edge Insider][MicrosoftinsiderDownloadPlatformLinux] ou utilisez les outils de gestion des packages standard de votre distribution Linux.  
 
-Si vous utilisez un environnement Linux dans vos solutions \(CI/CD\) d’intégration et de remise en continu, vous pouvez également utiliser le pilote Microsoft Edge sur Linux.  Pour commencer à automatiser Microsoft Edge Dev avec le pilote Microsoft Edge, accédez à la [page de téléchargements de pilotes Microsoft Edge][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads].  Pour obtenir de l’aide sur l’automatisation de Microsoft Edge Dev avec le pilote Microsoft Edge, accédez à [utilisation de WebDriver (chrome) pour l’automatisation des tests][WebDriverChromiumMain].  
+Si vous utilisez un environnement Linux dans vos solutions \(CI/CD\) d’intégration et de remise en continu, vous pouvez également utiliser le pilote Microsoft Edge sur Linux.  Pour commencer à automatiser Microsoft Edge Dev avec le pilote Microsoft Edge, accédez à la [page de téléchargements de pilotes Microsoft Edge][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads].  Pour obtenir de l’aide sur l’automatisation de Microsoft Edge Dev avec le pilote Microsoft Edge, accédez à [utilisation de WebDriver (chrome) pour l’automatisation des tests][WebdriverChromiumMain].  
 
 :::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="DevTools dans Microsoft Edge sur Linux" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
    DevTools dans Microsoft Edge sur Linux  
@@ -50,7 +50,7 @@ Si vous utilisez un environnement Linux dans vos solutions \(CI/CD\) d’intégr
 <!-- Title: Improvements to Issues tool and webhint integration  -->  
 <!-- Subtitle: Categories and third-party filtering make it easier to survey issues in the Issues tool.  Issues surfaced by webhint now have improved code snippets and documentation links to help you fix problems in your website.  -->  
 
-Un outil open source, [webhint][WebhintMain], fournit des commentaires en temps réel sur les sites web et les pages web locales.  À partir de la [version 85 de Microsoft Edge][WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel], consultez les commentaires sur le webhint dans l’outil des [problèmes][DevtoolsIssuesIndex].  Il est désormais plus facile de passer en revue les problèmes qui s’affichent dans l’outil de **problèmes** en ajoutant ces catégories.  
+Un outil open source, [webhint][WebhintMain], fournit des commentaires en temps réel sur les sites web et les pages web locales.  À partir [Microsoft Edge version 85,][WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]examinez les commentaires de la page web dans l’outil [Problèmes][DevtoolsIssuesIndex].  Il est désormais plus facile de passer en revue les problèmes qui s’affichent dans l’outil de **problèmes** en ajoutant ces catégories.  
 
 *   [Accessibilité][WebhintUserGuideHintsAccessibility]  
 *   [Compatibilité][WebhintUserGuideHintsCompatibility]  
@@ -78,7 +78,7 @@ Pour vous aider à passer en revue les problèmes détectés par [webhint][Webhi
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-Vous avez désormais la possibilité de visualiser les contenus de **calques** avec les valeurs d’index z et le modèle d’objet du document (DOM).  Cette fonctionnalité vous permet de déboguer sans basculer entre les outils d’[affichage 3D][Devtools3dViewIndex] et de **calques** .  Pour une expérience complète de débogage, [l’affichage 3D et les couches composites sont désormais combinés][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView].  
+Vous avez désormais la possibilité de visualiser les contenus de **calques** avec les valeurs d’index z et le modèle d’objet du document (DOM).  Cette fonctionnalité vous permet de déboguer sans basculer entre les outils d’[affichage 3D][Devtools3dViewIndex] et de **calques** .  Pour une expérience complète de débogage, [l’affichage 3D et les couches composites sont désormais combinés][Devtools3dViewIndex].  
 
 :::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Volet des couches composites" lightbox="../../media/2020/11/experiments-layers.msft.png":::
    Volet des **couches composites**  
@@ -144,7 +144,7 @@ Affichez les informations de routage de demande des workers du service avec le n
     
 ### <a name="network-tool"></a>Outil réseau  
 
-Déboguer les requêtes réseau qui s’exécutent par le biais des workersdu service.  Vous pouvez également ouvrir des requêtes réseau à partir de l’outil de **l’application**.  Pour chaque demande, DevTools affiche ces informations dans le volet [chronométrage][DevtoolsNetworkReferenceViewTimingBreakdownRequest].  
+Déboguer les requêtes réseau qui s’exécutent par le biais des workersdu service.  Vous pouvez également ouvrir des requêtes réseau à partir de l’outil de **l’application**.  Pour chaque demande, DevTools affiche les informations suivantes dans le volet [Timing][DevtoolsNetworkReferenceDisplayTimingBreakdownRequest].  
 
 *   Le début d’une demande et la durée du démarrage.  
 *   Modification apportée à l’inscription du worker du service.  
@@ -184,7 +184,7 @@ Dans l’outil **réseau** , copiez la valeur de la propriété d’une demande 
 *   Mettez en surbrillance l’intégralité du texte et copiez-le.  
 *   Stockez la valeur en tant que variable globale, le cas échéant, puis copiez-la à partir de la [console][DevtoolsConsoleIndex]DevTools.  
     
-Pour copier la valeur de la propriété dans le presse-papiers, accédez à [copier la valeur JSON de la réponse mise en forme dans le presse-papiers][DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard].  Pour passer en revue l’historique de cette fonctionnalité dans le projet open-source Chromium, accédez à la section problème [1132084][CR1132084].  
+Pour copier la valeur de la propriété dans le Presse-papiers, accédez à [Copier la réponse mise en forme JSON dans le Presse-papiers][DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard].  Pour passer en revue l’historique de cette fonctionnalité dans le projet open-source Chromium, accédez à la section problème [1132084][CR1132084].  
 
 :::row:::
    :::column span="":::
@@ -206,7 +206,7 @@ Pour copier la valeur de la propriété dans le presse-papiers, accédez à [cop
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-[Depuis la version 87 de Microsoft Edge][WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings], vous pouvez personnaliser les raccourcis clavier pour n’importe quelle action dans DevTools.  Dans la version 88 de Microsoft Edge, vous pouvez désormais créer des raccourcis clavier à plusieurs clics.  Pour définir un raccourci vers une action dans la DevTools, accédez à [paramètres][DevtoolsCustomizeIndexSettings] > **expérimentations** et cochez la case en regard de **activer l’éditeur de raccourcis clavier**.  Pour plus d’informations sur la personnalisation et la modification des raccourcis, accédez à [activer la fonctionnalité expérimentale de l’éditeur de raccourcis clavier][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  
+[Depuis la version 87 de Microsoft Edge][WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings], vous pouvez personnaliser les raccourcis clavier pour n’importe quelle action dans DevTools.  Dans la version 88 de Microsoft Edge, vous pouvez désormais créer des raccourcis clavier à plusieurs clics.  Pour définir un raccourci vers une action dans la DevTools, accédez à [paramètres][DevtoolsCustomizeIndexSettings] > **expérimentations** et cochez la case en regard de **activer l’éditeur de raccourcis clavier**.  Pour plus d’informations sur la personnalisation et la modification des raccourcis, accédez à [Modifier les raccourcis clavier pour toute action dans DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools].  
 
 Par exemple, la mise en surbrillance rouge affiche un raccourci clavier à plusieurs clics personnalisé pour l’action **commencer l’enregistrement des événements**.  Pour consulter les mises à jour en temps réel de cette fonctionnalité dans le projet open-source de Chromium, accédez à [problème #174309][CR174309].  
 
@@ -345,30 +345,32 @@ Par exemple, l’outil **réseau** utilisait `kB` dans les étiquettes, mais uti
 
 Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'aperçu de Microsoft][MicrosoftEdgePreviewChannels] Edge comme navigateur de développement par défaut.  Les canaux de prévisualisation vous donnent accès aux dernières fonctionnalités de DevTools.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Contacter l’équipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Entrer en contact avec l'équipe Microsoft Edge DevTools  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 
-[Devtools3dViewIndex]: /microsoft-edge/devtools-guide-chromium/3d-view/index "Affichage 3D | Documents Microsoft"  
-[DevtoolsConsoleIndex]: /microsoft-edge/devtools-guide-chromium/console/index "Présentation de la console | Documents Microsoft"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Paramètres-personnaliser Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsCustomizeLocalization]: /microsoft-edge/devtools-guide-chromium/customize/localization "Modifier les paramètres de langue de DevTools | Documents Microsoft"  
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Émuler des appareils mobiles dans Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-keyboard-shortcut-editor "Activer l’éditeur de raccourcis clavier-fonctionnalités expérimentales | Documents Microsoft"  
-[DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-composited-layers-in-3d-view "Activer les couches composites dans l’affichage 3D - fonctionnalités expérimentales | Documents Microsoft"  
-[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Recherchez et corrigez les problèmes liés à l’outil des problèmes de Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: /microsoft-edge/devtools-guide-chromium/network/reference#copy-formatted-response-json-to-the-clipboard "Copier la valeur JSON de la réponse mise en forme dans le presse-papiers - référence d’analyse du réseau | Documents Microsoft"  
-[DevtoolsNetworkReferenceViewTimingBreakdownRequest]: /microsoft-edge/devtools-guide-chromium/network/reference#view-the-timing-breakdown-of-a-request "Afficher la répartition du chronométrage d’une demande - référence d’analyse du réseau | Documents Microsoft"  
-[WebDriverChromiumMain]: /microsoft-edge/webdriver-chromium "Utiliser le WebDriver (Chromium) pour l’automatisation des tests | Documents Microsoft"  
+[WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: ../10/devtools.md#customize-keyboard-shortcuts-in-settings "Personnaliser les raccourcis clavier dans les paramètres - nouveautés de DevTools (Microsoft Edge 87) | Microsoft Docs"  
+[WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: ../06/devtools.md#webhint-feedback-in-the-issues-panel "Commentaires sur les webhint dans le panneau des problèmes - nouveautés de DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
-<!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: /microsoft-edge/devtools-guide-chromium/css/reference#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
+[Devtools3dViewIndex]: ../../../3d-view/index.md "Affichage 3D | Microsoft Docs"  
+[DevtoolsConsoleIndex]: ../../../console/index.md "Présentation de la console | Documents Microsoft"  
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Paramètres-personnaliser Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsCustomizeLocalization]: ../../../customize/localization.md "Modifier les paramètres de langue de DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Modifier les raccourcis clavier pour toute action dans DevTools| Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Émuler des appareils mobiles dans Microsoft Edge DevTools | Microsoft Docs"  
+<!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  -->  
+<!--  [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features/index.md#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  -->  
+[DevtoolsIssuesIndex]: .. /.. /.. /issues/index.md «Rechercher et résoudre des problèmes liés à l’outil Problèmes de DevTools Microsoft Edge | Microsoft Docs»  
+[DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: .. /.. /.. /network/reference.md#copy-formatted-response-json-to-the-clipboard «Copier la réponse mise en forme JSON dans le Presse-papiers - Référence de l’analyse réseau | Microsoft Docs»  
+[DevtoolsNetworkReferenceDisplayTimingBreakdownRequest]: .. /.. /.. /network/reference.md#display-the-timing-breakdown-of-a-request «Afficher la répartition temporelle d'une demande - Référence d'analyse de réseau | Microsoft Docs»  
 
-[ProgressiveWebAppsIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Applications web progressives sur Windows | Documents Microsoft"  
+<!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: ../../../css/reference.md#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
 
-[WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: ../10/devtools.md#customize-keyboard-shortcuts-in-settings "Personnaliser les raccourcis clavier dans les paramètres - nouveautés de DevTools (Microsoft Edge 87) | Documents Microsoft"  
-[WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: ../06/devtools.md#webhint-feedback-in-the-issues-panel "Commentaires sur les webhint dans le panneau des problèmes - nouveautés de DevTools (Microsoft Edge 85) | Documents Microsoft"  
+[ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Applications web progressives sur Windows | Microsoft Docs"  
+
+[WebdriverChromiumMain]: ../../../../webdriver-chromium/index.md "Utiliser le WebDriver (Chromium) pour l’automatisation des tests | Microsoft Docs"  
 
 [MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Télécharger WebDriver | Développeur Microsoft"  
 
@@ -376,7 +378,7 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canaux d’aperçu Microsoft Edge"  
 
-[VisualStudioCode]: https://code.visualstudio.com "Code Visual Studio"  
+[VisualStudioCodeMain]: https://code.visualstudio.com "Code Visual Studio"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Bogues Chromium"  
 
@@ -427,4 +429,4 @@ Ce travail est concédé sous une [Licence internationale Creative Commons Attri
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen  
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  

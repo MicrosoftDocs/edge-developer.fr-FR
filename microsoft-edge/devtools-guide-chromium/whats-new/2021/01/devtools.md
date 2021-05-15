@@ -3,17 +3,17 @@ description: L’outil Nouveautés s’appelle à présent Welcome (Bienvenue), 
 title: Nouveautés de DevTools (Microsoft Edge89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: ec14d802af52c0bb2e658549f48764279c787f47
-ms.sourcegitcommit: de75fda30bb8964e9a184228d068b4402ec59c3e
+ms.openlocfilehash: 6d1952832c84dc159222a8aa16aa0ffe11edff34
+ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "11514367"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "11564923"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -166,7 +166,7 @@ Testez l’apparence de votre site web ou de votre application sur les appareils
     
 Activez les **fonctionnalités de plateforme Web expérimentale** pour accéder à la nouvelle [fonctionnalité couvrant l’écran multimédia CSS][DualScreenWebCssMediaSpanning] et à l’[API JavaScript getWindowSegments][DualScreenWebJavascriptGetwindowsegments].  Accédez à `edge://flags`, puis basculez l’indicateur à côté des **fonctionnalités de plateforme Web expérimentale**.  Pour contribuer à améliorer votre site web ou votre application pour les appareils à double écran et pliables, utilisez les fonctionnalités suivantes lors de [l’émulation de l’appareil][DevtoolsDeviceModeIndex].  
 
-*   [Couvrant,][DevtoolsDeviceModeDualScreenFoldablesTestingFoldableDualScreenDevices], c’est-à-dire lorsque votre site web \(ou application\) apparaît sur les deux écrans.  
+*   [Couvrant,][DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices], c’est-à-dire lorsque votre site web \(ou application\) apparaît sur les deux écrans.  
 *   [Rendu de la jointure][DualScreenIntroductionHowToWorkWithSeam], à savoir l’espace entre les deux écrans.  
     
 Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1054281][CR1054281].  
@@ -180,7 +180,7 @@ Pour passer en revue l’historique de cette fonctionnalité dans le projet open
 L’extension [Microsoft Edge Developer Tools pour Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] version1.1.2 pour Microsoft Visual Studio Code comporte les modifications suivantes depuis la version précédente.  Microsoft Visual Studio Code met automatiquement à jour les extensions.  Pour effectuer manuellement la mise à jour vers la version1.1.2, accédez à [Mettre à jour une extension manuellement][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  
 
 *   Ajout d’un bouton **Close instance** (Fermer l’instance) à chaque élément de la liste cible \([#248][GithubMicrosoftVscodeEdgeDevtoolsPull248]\)  
-*   Passage de [Microsoft Edge DevTools][DevtoolsMain] version84.0.522.63 à la version[85.0.564.40][DevtoolsWhatsNew85] \([#235][GithubMicrosoftVscodeEdgeDevtoolsPull235]\)  
+*   Passage de [Microsoft Edge DevTools][DevtoolsIndex] version84.0.522.63 à la version[85.0.564.40][DevtoolsWhatsNew85] \([#235][GithubMicrosoftVscodeEdgeDevtoolsPull235]\)  
 *   Inclusion du [débogueur de Microsoft Edge][VisualstudioMarketplaceMsjsdiagDebuggerMicrosoftEdge] en tant que dépendance \([#233][GithubMicrosoftVscodeEdgeDevtoolsPull233]\)  
 *   Implémentation de l’option de paramètres pour modifier les thèmes d’extension \([#229][GithubMicrosoftVscodeEdgeDevtoolsPull229]\)  
     
@@ -426,16 +426,16 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 
 [DevtoolsWhatsNew85]: ../../2020/06/devtools.md "Nouveautés de DevTools (Microsoft Edge85) | Microsoft Docs"  
 
-[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: /microsoft-edge/devtools-guide-chromium/accessibility/reference#view-the-contrast-ratio-of-a-text-element-in-the-color-picker "Afficher le coefficient de contraste d’un élément de texte dans le sélecteur de couleurs - Référence d’accessibilité | Microsoft Docs"  
-[DevtoolsCssReferenceChangeCss]: /microsoft-edge/devtools-guide-chromium/css/reference#change-css "Modifier des CSS - Référence CSS | Microsoft Docs"  .
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Paramètres - Personnaliser Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: microsoft-edge/devtools-guide-chromium/customize/shortcuts "Personnaliser les raccourcis clavier dans Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeDualScreenFoldablesTestingFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/device-mode/dual-screen-and-foldables#testing-on-foldable-and-dual-screen-devices "Test sur les appareils pliables et à double écran- Émuler les appareils à double écran et pliables dans Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Émuler des appareils mobiles dans Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeIndexSimulateMobileViewport]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simuler une fenêtre d’affichage mobile - Émuler des appareils mobiles dans Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-load-performance "Enregistrer les performances de charge d’enregistrement - Référence d’analyse des performances | Microsoft Docs"  
-[DevtoolsInspectStylesEditFonts]: /microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts "Modifier les styles et paramètres de police CSS dans le volet Styles de DevTools | Microsoft Docs"  
-[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium/index "Présentation de Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/reference.md#view-the-contrast-ratio-of-a-text-element-in-the-color-picker "Afficher le coefficient de contraste d’un élément de texte dans le sélecteur de couleurs - Référence d’accessibilité | Microsoft Docs"  
+[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Modifier des CSS - Référence CSS | Microsoft Docs"  .
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Paramètres - Personnaliser Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personnaliser les raccourcis clavier dans les DevTools de Microsoft Edge | Microsoft Docs"  
+[DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "Tester sur les appareils pliables et à double écran: émuler les appareils à double écran et pliables dans Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Émuler des appareils mobiles dans Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simuler une fenêtre d’affichage mobile - Émuler des appareils mobiles dans Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: ../../../evaluate-performance/reference.md#record-load-performance "Enregistrer les performances de charge d’enregistrement - Référence d’analyse des performances | Microsoft Docs"  
+[DevtoolsIndex]: ../../../index.md "Vue d’ensemble des outils de développement Microsoft Edge (Chromium) | Microsoft Docs"  
+[DevtoolsInspectStylesEditFonts]: ../../../inspect-styles/edit-fonts.md "Modifier les styles et paramètres de police CSS dans le volet Styles de DevTools | Microsoft Docs"  
 
 [DualScreenIntroductionHowToWorkWithSeam]: /dual-screen/introduction#how-to-work-with-the-seam "Utilisation de la jointure - Introduction aux appareils à double écran | Microsoft Docs"  
 [DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "Fonctionnalité couvrant l’écran multimédia CSS pour la détection à double écran | Microsoft Docs"  
@@ -500,6 +500,6 @@ Ce travail est sous [licence internationale Creative Commons Attribution4.0][CCA
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
 
 [SpanningPlaceholder]: link-t-b-d "Espace réservé couvrant"  
