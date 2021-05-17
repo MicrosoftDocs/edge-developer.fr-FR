@@ -32,22 +32,24 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
+      "extendBreadcrumb": true,
+      "feedback_system": "None",
+      "feedback_github_repo": "MicrosoftDocs/edge-developer",
+      "searchScope": [
+        "Microsoft Edge"
+      ],
       "titleSuffix": "Microsoft Edge Development",
       "uhfHeaderId": "MSDocsHeader-MSEdge",
-      "feedback_system": "None",
       "bilingual_type": "hover over",
-       "hide_comments": true,
-      "feedback_github_repo": "MicrosoftDocs/edge-developer",
-      "extendBreadcrumb": true
+      "hide_comments": true
     },
     "fileMetadata": {
-      "ms.technology":{
+      "ms.technology": {
         "devtools-guide-chromium/**.md": "devtools",
         "devtools-protocol/**.md": "devtools",
         "extensions-chromium/**.md": "extensions",
         "webview2/**.md": "webview2",
-        "progressive-web-apps-chromium/**.md": "pwa",
-        "edgehtml/**.md": ""
+        "progressive-web-apps-chromium/**.md": "pwa"
       }
     },
     "template": [
