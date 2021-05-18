@@ -1,4 +1,4 @@
-- name: Documentation MicrosoftEdge
+- name: Documentation Microsoft Edge
   href: index.yml
   expanded: true
   items:
@@ -23,27 +23,27 @@
           items:
             - name: Fonctionnalités expérimentales
               href: devtools-guide-chromium/experimental-features/index.md
-            - name: Microsoft Edge91
+            - name: Microsoft Edge 91
               href: devtools-guide-chromium/whats-new/2021/04/devtools.md
-            - name: Microsoft Edge90
+            - name: Microsoft Edge 90
               href: devtools-guide-chromium/whats-new/2021/02/devtools.md
             - name: Microsoft Edge 89
               href: devtools-guide-chromium/whats-new/2021/01/devtools.md
             - name: Microsoft Edge 88
               href: devtools-guide-chromium/whats-new/2020/11/devtools.md
-            - name: MicrosoftEdge87
+            - name: Microsoft Edge 87
               href: devtools-guide-chromium/whats-new/2020/10/devtools.md
-            - name: Microsoft Edge86
+            - name: Microsoft Edge 86
               href: devtools-guide-chromium/whats-new/2020/08/devtools.md
-            - name: MicrosoftEdge85
+            - name: Microsoft Edge 85
               href: devtools-guide-chromium/whats-new/2020/06/devtools.md
-            - name: MicrosoftEdge84
+            - name: Microsoft Edge 84
               href: devtools-guide-chromium/whats-new/2020/05/devtools.md
-            - name: MicrosoftEdge83
+            - name: Microsoft Edge 83
               href: devtools-guide-chromium/whats-new/2020/03/devtools.md
-            - name: MicrosoftEdge81
+            - name: Microsoft Edge 81
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
-            - name: MicrosoftEdge80
+            - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
         - name: Didacticiels
           items:
@@ -75,9 +75,9 @@
               items:
                 - name: Prise en main du débogage à distance des appareils Android
                   href: devtools-guide-chromium/remote-debugging/index.md
-                - name: Prise en main du débogage à distance avec les émulateurs SurfaceDuo
+                - name: Prise en main du débogage à distance avec les émulateurs Surface Duo
                   href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
-                - name: Prise en main du débogage à distance des appareils Windows10
+                - name: Prise en main du débogage à distance des appareils Windows 10
                   href: devtools-guide-chromium/remote-debugging/windows.md
                 - name: Prise en main du débogage à distance d’Android WebViews
                   href: devtools-guide-chromium/remote-debugging/webviews.md
@@ -119,7 +119,7 @@
                   href: devtools-guide-chromium/device-mode/geolocation.md
                 - name: Simuler l’orientation de l’appareil
                   href: devtools-guide-chromium/device-mode/orientation.md
-            - name: Mode InternetExplorer
+            - name: Mode Internet Explorer
               href: devtools-guide-chromium/ie-mode/index.md
             - name: Résolution des problèmes JavaScript
               items:
@@ -269,9 +269,9 @@
           items:
             - name: Architecture d'extension
               href: extensions-chromium/getting-started/index.md
-            - name: Didacticiel de création d’extension (partie1)
+            - name: Didacticiel de création d’extension (partie 1)
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: Didacticiel de création d’extension (partie2)
+            - name: Didacticiel de création d’extension (partie 2)
               href: extensions-chromium/getting-started/part2-content-scripts.md
             - name: Charger une version test d’une extension
               href: extensions-chromium/getting-started/extension-sideloading.md
@@ -345,7 +345,7 @@
       href: puppeteer/index.md
     - name: Vue d’ensemble de Visual Studio
       href: visual-studio/index.md
-    - name: VisualStudioCode
+    - name: Visual Studio Code
       items:
         - name: Vue d’ensemble du Visual Studio Code
           href: visual-studio-code/index.md
@@ -387,7 +387,7 @@
               href: webview2/get-started/win32.md
             - name: WPF
               href: webview2/get-started/wpf.md
-            - name: WindowsForms
+            - name: Windows Forms
               href: webview2/get-started/winforms.md
             - name: WinUI 3.0
               href: webview2/get-started/winui.md
