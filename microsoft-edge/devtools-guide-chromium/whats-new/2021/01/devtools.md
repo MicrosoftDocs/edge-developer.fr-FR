@@ -1,6 +1,6 @@
 ---
 description: L’outil Nouveautés s’appelle à présent Welcome (Bienvenue), éditeur de polices visuelles dans le volet Styles, outils de débogage CSS Flexbox, et bien plus encore.
-title: Nouveautés de DevTools (Microsoft Edge89)
+title: Nouveautés de DevTools (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -28,7 +28,7 @@ ms.locfileid: "11564923"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-# <a name="whats-new-in-devtools-microsoft-edge-89"></a>Nouveautés de DevTools (Microsoft Edge89)  
+# <a name="whats-new-in-devtools-microsoft-edge-89"></a>Nouveautés de DevTools (Microsoft Edge 89)  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
@@ -39,7 +39,7 @@ ms.locfileid: "11564923"
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-**L’outil Nouveautés** de Microsoft Edge DevTools a à présent une nouvelle apparence et un nouveau nom: **Welcome**.  L’outil **Welcome ** affiche toujours les dernières actualités et mises à jour DevTools.  Il inclut à présent également des liens vers la documentation de Microsoft Edge DevTools, des méthodes d’envoi de commentaires, et bien plus encore.  Pour afficher l’outil **Welcome** après chaque mise à jour de Microsoft Edge, cochez la case en regard de l’**onglet Ouvrir après chaque mise à jour** sous le titre.  Pour fermer **l’outil Welcome,** choisissez le **X** sur le côté droit du titre de l’onglet.  Si vous préférez l’outil **Nouveautés** d’origine, accédez à [Paramètres][DevtoolsCustomizeIndexSettings] > **Expériences**, puis décochez la case en regard de l’option **Enable Welcome tab**.  
+**L’outil Nouveautés** de Microsoft Edge DevTools a à présent une nouvelle apparence et un nouveau nom : **Welcome**.  L’outil **Welcome ** affiche toujours les dernières actualités et mises à jour DevTools.  Il inclut à présent également des liens vers la documentation de Microsoft Edge DevTools, des méthodes d’envoi de commentaires, et bien plus encore.  Pour afficher l’outil **Welcome** après chaque mise à jour de Microsoft Edge, cochez la case en regard de l’**onglet Ouvrir après chaque mise à jour** sous le titre.  Pour fermer **l’outil Welcome,** choisissez le **X** sur le côté droit du titre de l’onglet.  Si vous préférez l’outil **Nouveautés** d’origine, accédez à [Paramètres][DevtoolsCustomizeIndexSettings] > **Expériences**, puis décochez la case en regard de l’option **Enable Welcome tab**.  
 
 :::image type="complex" source="../../media/2021/01/welcome-tool-whats-new-88.msft.png" alt-text="L’outil Welcome apparaît en surbrillance." lightbox="../../media/2021/01/welcome-tool-whats-new-88.msft.png":::
    **L’outil Welcome** apparaît en surbrillance  
@@ -146,7 +146,7 @@ Vous avez maintenant une nouvelle façon d’ouvrir d’autres outils dans Micro
 <!--  Title: Assistive technologies now announce position and count of CSS suggestions  -->  
 <!--  Subtitle: CSS suggestions are now easier to navigate using screen readers -->  
 
-Lorsque vous modifiez des CSS, un menu déroulant de fonctionnalités s’affiche.  Cette fonctionnalité n’était pas disponible pour les utilisateurs de technologies d’assistance, car elle est annoncée dans Microsoft Edge version89.  Un utilisateur de technologies d’assistance peut à présent parcourir les suggestions CSS dans le volet **Styles**.  Dans Microsoft Edge version88 et les versions antérieures, la technologie d’assistance annoncée en tant qu’utilisateur a accédé à la liste des suggestions lors de la modification de CSS dans le volet `Suggestion` **Styles**.  Dans Microsoft Edge version89, un utilisateur de technologie d’assistance entend à présent la position et le nombre de suggestions actuelles.  Le programme annonce chaque suggestion lorsque l’utilisateur navigue dans la liste des suggestions, telles que la suggestion3 sur 5.  Si vous souhaitez en savoir plus sur l’écriture de CSS dans DevTools, veuillez consulter la rubrique [Modifier des CSS][DevtoolsCssReferenceChangeCss].  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1157329][CR1157329].  
+Lorsque vous modifiez des CSS, un menu déroulant de fonctionnalités s’affiche.  Cette fonctionnalité n’était pas disponible pour les utilisateurs de technologies d’assistance, car elle est annoncée dans Microsoft Edge version 89.  Un utilisateur de technologies d’assistance peut à présent parcourir les suggestions CSS dans le volet **Styles**.  Dans Microsoft Edge version 88 et les versions antérieures, la technologie d’assistance annoncée en tant qu’utilisateur a accédé à la liste des suggestions lors de la modification de CSS dans le volet `Suggestion` **Styles**.  Dans Microsoft Edge version 89, un utilisateur de technologie d’assistance entend à présent la position et le nombre de suggestions actuelles.  Le programme annonce chaque suggestion lorsque l’utilisateur navigue dans la liste des suggestions, telles que la suggestion 3 sur 5.  Si vous souhaitez en savoir plus sur l’écriture de CSS dans DevTools, veuillez consulter la rubrique [Modifier des CSS][DevtoolsCssReferenceChangeCss].  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1157329][CR1157329].  
 
 Pour visionner une vidéo qui affiche, puis lit à voix haute plusieurs suggestions avec cette expérience activée, accédez à [Voiceover announcing devtools options](https://youtu.be/9TcUpleEwwA) sur YouTube.  
 
@@ -175,12 +175,12 @@ Pour passer en revue l’historique de cette fonctionnalité dans le projet open
    Émuler double écran  
 :::image-end:::  
 
-## <a name="microsoft-edge-developer-tools-for-visual-studio-code-version-112"></a>Microsoft Edge Developer Tools pour Visual Studio Code version1.1.2  
+## <a name="microsoft-edge-developer-tools-for-visual-studio-code-version-112"></a>Microsoft Edge Developer Tools pour Visual Studio Code version 1.1.2  
 
-L’extension [Microsoft Edge Developer Tools pour Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] version1.1.2 pour Microsoft Visual Studio Code comporte les modifications suivantes depuis la version précédente.  Microsoft Visual Studio Code met automatiquement à jour les extensions.  Pour effectuer manuellement la mise à jour vers la version1.1.2, accédez à [Mettre à jour une extension manuellement][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  
+L’extension [Microsoft Edge Developer Tools pour Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] version 1.1.2 pour Microsoft Visual Studio Code comporte les modifications suivantes depuis la version précédente.  Microsoft Visual Studio Code met automatiquement à jour les extensions.  Pour effectuer manuellement la mise à jour vers la version 1.1.2, accédez à [Mettre à jour une extension manuellement][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  
 
 *   Ajout d’un bouton **Close instance** (Fermer l’instance) à chaque élément de la liste cible \([#248][GithubMicrosoftVscodeEdgeDevtoolsPull248]\)  
-*   Passage de [Microsoft Edge DevTools][DevtoolsIndex] version84.0.522.63 à la version[85.0.564.40][DevtoolsWhatsNew85] \([#235][GithubMicrosoftVscodeEdgeDevtoolsPull235]\)  
+*   Passage de [Microsoft Edge DevTools][DevtoolsIndex] version 84.0.522.63 à la version [85.0.564.40][DevtoolsWhatsNew85] \([#235][GithubMicrosoftVscodeEdgeDevtoolsPull235]\)  
 *   Inclusion du [débogueur de Microsoft Edge][VisualstudioMarketplaceMsjsdiagDebuggerMicrosoftEdge] en tant que dépendance \([#233][GithubMicrosoftVscodeEdgeDevtoolsPull233]\)  
 *   Implémentation de l’option de paramètres pour modifier les thèmes d’extension \([#229][GithubMicrosoftVscodeEdgeDevtoolsPull229]\)  
     
@@ -192,7 +192,7 @@ Vous pouvez signaler des problèmes, puis contribuer à l’extension sur le ré
 
 ### <a name="capture-node-screenshot-beyond-viewport"></a>Capture d’écran du nœud au-delà de la fenêtre d’affichage  
 
-Dans Microsoft Edge version89, les captures d’écran de nœud sont plus précises. Cela permet de capturer le nœud complet même si le contenu du nœud n’est pas visible dans la fenêtre d’affichage.  Dans l’outil **Éléments**, placez le curseur sur un élément, ouvrez le menu contextuel \(clic droit\), puis choisissez **Capture node screenshot** (Capture d’écran du nœud).  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1003629][CR1003629].  
+Dans Microsoft Edge version 89, les captures d’écran de nœud sont plus précises. Cela permet de capturer le nœud complet même si le contenu du nœud n’est pas visible dans la fenêtre d’affichage.  Dans l’outil **Éléments**, placez le curseur sur un élément, ouvrez le menu contextuel \(clic droit\), puis choisissez **Capture node screenshot** (Capture d’écran du nœud).  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1003629][CR1003629].  
 
 :::image type="complex" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="Capture d’écran du nœud mise en évidence dans le menu contextuel de l’outil Éléments" lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
    **Capture d’écran du nœud** mise en évidence dans le menu contextuel de l’outil **Éléments**  
@@ -202,7 +202,7 @@ Dans Microsoft Edge version89, les captures d’écran de nœud sont plus préci
 
 #### <a name="support-forcing-the-target-css-state"></a>Prise en charge du forçage de l’état CSS :target (cible)  
 
-Vous pouvez à présent utiliser DevTools pour forcer la pseudo-classe CSS [:target][MdnDocsWebCssTarget].  La pseudo-classe `:target`se déclenche lorsqu’un élément unique \(l’élément cible\) comporte un élément `id` qui correspond à un fragment de l’URL.  Par exemple, l’URL `http://www.example.com/index.html#section1` déclenche la pseudo-classe `:target` sur un élément HTML avec `id="section1"`.  Pour essayer une démonstration avec la section1 mise en évidence, accédez à [CSS :target demo][GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1] (Démo :target CSS).  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1156628][CR1156628].  
+Vous pouvez à présent utiliser DevTools pour forcer la pseudo-classe CSS [:target][MdnDocsWebCssTarget].  La pseudo-classe `:target`se déclenche lorsqu’un élément unique \(l’élément cible\) comporte un élément `id` qui correspond à un fragment de l’URL.  Par exemple, l’URL `http://www.example.com/index.html#section1` déclenche la pseudo-classe `:target` sur un élément HTML avec `id="section1"`.  Pour essayer une démonstration avec la section 1 mise en évidence, accédez à [CSS :target demo][GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1] (Démo :target CSS).  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1156628][CR1156628].  
 
 :::row:::
    :::column span="":::
@@ -284,7 +284,7 @@ Vous pouvez à présent choisir d’afficher la valeur des cookies décodés par
 
 #### <a name="filter-and-clear-visible-cookies"></a>Filtrer et effacer les cookies visibles  
 
-Dans Microsoft Edge version88 ou antérieures, l’outil **Application** fournissait uniquement un moyen d’effacer tous les cookies avec le bouton **Clear all cookies** (Effacer tous les cookies).  Dans Microsoft Edge version89, vous pouvez à présent choisir **Clear filtered cookies** (Effacer les cookies filtrés) pour supprimer uniquement les cookies filtrés.  Pour filtrer les cookies, accédez à **Application** > **Cookies**, puis tapez votre texte dans la zone de texte **Filter** (Filtrer).  Pour supprimer les cookies affichés, sélectionnez le bouton **Clear filtered cookies** (Effacer les cookies filtrés).  Pour afficher tous les autres cookies, effacer le texte du filtre.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [978059][CR978059].  
+Dans Microsoft Edge version 88 ou antérieures, l’outil **Application** fournissait uniquement un moyen d’effacer tous les cookies avec le bouton **Clear all cookies** (Effacer tous les cookies).  Dans Microsoft Edge version 89, vous pouvez à présent choisir **Clear filtered cookies** (Effacer les cookies filtrés) pour supprimer uniquement les cookies filtrés.  Pour filtrer les cookies, accédez à **Application** > **Cookies**, puis tapez votre texte dans la zone de texte **Filter** (Filtrer).  Pour supprimer les cookies affichés, sélectionnez le bouton **Clear filtered cookies** (Effacer les cookies filtrés).  Pour afficher tous les autres cookies, effacer le texte du filtre.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [978059][CR978059].  
 
 :::image type="complex" source="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png" alt-text="Effacer uniquement les cookies visibles" lightbox="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png":::
    Effacer uniquement les cookies visibles  
@@ -306,7 +306,7 @@ Pour passer en revue l’historique de cette fonctionnalité dans le projet open
 
 #### <a name="persist-record-network-log-setting"></a>Conserver le paramètre Enregistrer le journal de réseau  
 
-Dans Microsoft Edge version88 ou antérieure, DevTools réinitialise le paramètre **Enregistrer le journal de réseau** lors de l’actualisation d’une page web.  Dans Microsoft Edge version89, DevTools conserve à présent le paramètre **Enregistrer le journal de réseau**.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1122580][CR1122580].  
+Dans Microsoft Edge version 88 ou antérieure, DevTools réinitialise le paramètre **Enregistrer le journal de réseau** lors de l’actualisation d’une page web.  Dans Microsoft Edge version 89, DevTools conserve à présent le paramètre **Enregistrer le journal de réseau**.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez au problème [1122580][CR1122580].  
 
 :::image type="complex" source="../../media/2021/01/network-log.msft.png" alt-text="Enregistrer le journal de réseau" lightbox="../../media/2021/01/network-log.msft.png":::
    Enregistrer le journal de réseau  
@@ -424,13 +424,13 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 
 <!-- links -->  
 
-[DevtoolsWhatsNew85]: ../../2020/06/devtools.md "Nouveautés de DevTools (Microsoft Edge85) | Microsoft Docs"  
+[DevtoolsWhatsNew85]: ../../2020/06/devtools.md "Nouveautés de DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
 [DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/reference.md#view-the-contrast-ratio-of-a-text-element-in-the-color-picker "Afficher le coefficient de contraste d’un élément de texte dans le sélecteur de couleurs - Référence d’accessibilité | Microsoft Docs"  
 [DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Modifier des CSS - Référence CSS | Microsoft Docs"  .
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Paramètres - Personnaliser Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personnaliser les raccourcis clavier dans les DevTools de Microsoft Edge | Microsoft Docs"  
-[DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "Tester sur les appareils pliables et à double écran: émuler les appareils à double écran et pliables dans Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "Tester sur les appareils pliables et à double écran : émuler les appareils à double écran et pliables dans Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Émuler des appareils mobiles dans Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simuler une fenêtre d’affichage mobile - Émuler des appareils mobiles dans Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: ../../../evaluate-performance/reference.md#record-load-performance "Enregistrer les performances de charge d’enregistrement - Référence d’analyse des performances | Microsoft Docs"  
@@ -441,12 +441,12 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 [DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "Fonctionnalité couvrant l’écran multimédia CSS pour la détection à double écran | Microsoft Docs"  
 [DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "API JavaScript getWindowSegments pour appareils à double écran | Microsoft Docs"  
 
-[GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1]: https://microsoftedge.github.io/DevToolsSamples/whats-new/89/target-css-demo.html#section-1 "Section1 - Démo :target CSS pour les nouveautés de DevTools (Microsoft Edge89) | GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1]: https://microsoftedge.github.io/DevToolsSamples/whats-new/89/target-css-demo.html#section-1 "Section 1 - Démo :target CSS pour les nouveautés de DevTools (Microsoft Edge 89) | GitHub"  
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
-[GithubMicrosoftVscodeEdgeDevtoolsPull229]: https://github.com/microsoft/vscode-edge-devtools/pull/229 "Extraction229: implémentation du menu déroulant dans les paramètres pour modifier les thèmes | GitHub"  
-[GithubMicrosoftVscodeEdgeDevtoolsPull233]: https://github.com/microsoft/vscode-edge-devtools/pull/233 "Extraction233: inclure le débogueur pour Microsoft Edge en tant que dépendance | GitHub"  
-[GithubMicrosoftVscodeEdgeDevtoolsPull235]: https://github.com/microsoft/vscode-edge-devtools/pull/235 "Extraction235: mise à niveau d’Edge DevTools à la version vers 85.0.564.40 | GitHub"  
-[GithubMicrosoftVscodeEdgeDevtoolsPull248]: https://github.com/microsoft/vscode-edge-devtools/pull/248 "Extraction248: ajouter des boutons de fermeture simple au panneau d’instances | GitHub"  
+[GithubMicrosoftVscodeEdgeDevtoolsPull229]: https://github.com/microsoft/vscode-edge-devtools/pull/229 "Extraction 229 : implémentation du menu déroulant dans les paramètres pour modifier les thèmes | GitHub"  
+[GithubMicrosoftVscodeEdgeDevtoolsPull233]: https://github.com/microsoft/vscode-edge-devtools/pull/233 "Extraction 233 : inclure le débogueur pour Microsoft Edge en tant que dépendance | GitHub"  
+[GithubMicrosoftVscodeEdgeDevtoolsPull235]: https://github.com/microsoft/vscode-edge-devtools/pull/235 "Extraction 235 : mise à niveau d’Edge DevTools à la version vers 85.0.564.40 | GitHub"  
+[GithubMicrosoftVscodeEdgeDevtoolsPull248]: https://github.com/microsoft/vscode-edge-devtools/pull/248 "Extraction 248 : ajouter des boutons de fermeture simple au panneau d’instances | GitHub"  
 [GithubW3cSilverGuidelinesMethodsMethodFontCharacteristicContrastHtml]: https://w3c.github.io/silver/guidelines/methods/Method-font-characteristic-contrast.html "Sélectionnez les caractéristiques de police et les couleurs d’arrière-plan pour fournir un contraste suffisant pour la lisibilité | W3C"  
 [GithubW3cWebappsecTrustedTypesDistSpec]: https://w3c.github.io/webappsec-trusted-types/dist/spec  "Types approuvés | W3C"  
 
@@ -460,28 +460,28 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 [VisualstudioMarketplaceMsjsdiagDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Débogueur pour Microsoft Edge | Visual Studio Marketplace"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Bogues Chromium"  
-[CR978059]: https://crbug.com/978059 "Problème978059: suppression des cookies lors de leur filtrage; supprimer tous les cookies, et non seulement les cookies filtrés | Bogues Chromium"  
-[CR997625]: https://crbug.com/997625 "Problème997625: nouvelle fonctionnalité requise | Option nécessaire pour afficher la valeur décodée par l’URL dans les cookies | Bogues Chromium"  
-[CR1003629]: https://crbug.com/1003629 "Problème1003629: le nœud de capture n’effectue plus de capture d’écran du nœud sous le pliage. | Bogues Chromium"  
-[CR1012337]: https://crbug.com/1012337 "Problème1012337: l’effacement des données de site détruit une session Google sur des sites autres que Google | Bogues Chromium"  
-[CR1028078]: https://crbug.com/1028078 "Problème1028078: placer les options En ligne et Hors ligne l’une à côté de l’autre dans la liste | Bogues Chromium"  
-[CR1054281]: https://crbug.com/1054281 "Problème1054281: demande de fonctionnalité: DevTools doit émuler les appareils pliables et à double écran | Bogues Chromium"  
-[CR1075865]: https://crbug.com/1075865 "Problème1075865: afficher les cadres supprimés dans la chronologie de Devtools | Bogues Chromium"  
-[CR1093229]: https://crbug.com/1093229 "Problème1093229: DevTools: offre une interface utilisateur d’éditeur de police spécialisée | Bogues Chromium"  
-[CR1121900]: https://crbug.com/1121900 "Problème1121900: DevTools: mettre à jour la logique de calcul du contraste par nouvelle spécification | Bogues Chromium"  
-[CR1122507]: https://crbug.com/1122507 "Problème1122507: Informations sur le travailleur de surface dans l’affichage de l’arborescence de cadre | Bogues Chromium"  
-[CR1122580]: https://crbug.com/1122580 "Problème1122580: désolé... Nous n’avons pas pu désactiver l’enregistrement de réseau lors du rechargement | Bogues Chromium"  
-[CR1136394]: https://crbug.com/1136394 "Problème1136394: outils Flexbox | Bogues Chromium"  
-[CR1139899]: https://crbug.com/1139899 "Problème1139899: signaler la disponibilité des API contrôlées dans l’affichage des détails du cadre | Bogues Chromium"  
-[CR1139949]: https://crbug.com/1139949 "Problème1139949: superposition flexbox | Bogues Chromium"  
-[CR1147016]: https://crbug.com/1147016 "Problème1147016: le sélectionneur de couleurs ne s’affiche pas dans la fonction var(). | Bogues Chromium"  
-[CR1148353]: https://crbug.com/1148353 "Problème1148353: Demande de fonctionnalité: copier l’objet depuis la console devtools | Bogues Chromium"  
-[CR1149859]: https://crbug.com/1149859 "Problème1149859: [demande de fonctionnalité][Console] ajouter l’objet copier dans l’élément du Presse-papiers dans le menu contextuel | Bogues Chromium"  
-[CR1150797]: https://crbug.com/1150797 "Problème1150797: ajouter un menu contextuel Dupliquer l’élément dans le panneau Éléments | Bogues Chromium"  
-[CR1152391]: https://crbug.com/1152391 "Problème1152391: prise en charge du menu contextuel copier CSS dans le panneau de styles | Bogues Chromium"  
-[CR1155120]: https://crbug.com/1155120 "Problème1155120: [FR]Nom du fichier de copie de support et numéro de ligne | Bogues Chromium"  
-[CR1156628]: https://crbug.com/1156628 "Problème1156628: DevTools : ajouter la prise en charge de la fonctionnalité d’état d’élément :target en force | Bogues Chromium"  
-[CR1157329]: https://crbug.com/1157329 "Problème1157329: Accessibilité - Narrateur : le Narrateur n’annonce pas le nombre et la position des suggestions disponibles pour le code dans l’onglet Styles | Bogues Chromium"  
+[CR978059]: https://crbug.com/978059 "Problème 978059 : suppression des cookies lors de leur filtrage ; supprimer tous les cookies, et non seulement les cookies filtrés | Bogues Chromium"  
+[CR997625]: https://crbug.com/997625 "Problème 997625 : nouvelle fonctionnalité requise | Option nécessaire pour afficher la valeur décodée par l’URL dans les cookies | Bogues Chromium"  
+[CR1003629]: https://crbug.com/1003629 "Problème 1003629 : le nœud de capture n’effectue plus de capture d’écran du nœud sous le pliage. | Bogues Chromium"  
+[CR1012337]: https://crbug.com/1012337 "Problème 1012337 : l’effacement des données de site détruit une session Google sur des sites autres que Google | Bogues Chromium"  
+[CR1028078]: https://crbug.com/1028078 "Problème 1028078 : placer les options En ligne et Hors ligne l’une à côté de l’autre dans la liste | Bogues Chromium"  
+[CR1054281]: https://crbug.com/1054281 "Problème 1054281 : demande de fonctionnalité : DevTools doit émuler les appareils pliables et à double écran | Bogues Chromium"  
+[CR1075865]: https://crbug.com/1075865 "Problème 1075865 : afficher les cadres supprimés dans la chronologie de Devtools | Bogues Chromium"  
+[CR1093229]: https://crbug.com/1093229 "Problème 1093229 : DevTools : offre une interface utilisateur d’éditeur de police spécialisée | Bogues Chromium"  
+[CR1121900]: https://crbug.com/1121900 "Problème 1121900 : DevTools : mettre à jour la logique de calcul du contraste par nouvelle spécification | Bogues Chromium"  
+[CR1122507]: https://crbug.com/1122507 "Problème 1122507 : Informations sur le travailleur de surface dans l’affichage de l’arborescence de cadre | Bogues Chromium"  
+[CR1122580]: https://crbug.com/1122580 "Problème 1122580 : désolé... Nous n’avons pas pu désactiver l’enregistrement de réseau lors du rechargement | Bogues Chromium"  
+[CR1136394]: https://crbug.com/1136394 "Problème 1136394 : outils Flexbox | Bogues Chromium"  
+[CR1139899]: https://crbug.com/1139899 "Problème 1139899 : signaler la disponibilité des API contrôlées dans l’affichage des détails du cadre | Bogues Chromium"  
+[CR1139949]: https://crbug.com/1139949 "Problème 1139949 : superposition flexbox | Bogues Chromium"  
+[CR1147016]: https://crbug.com/1147016 "Problème 1147016 : le sélectionneur de couleurs ne s’affiche pas dans la fonction var(). | Bogues Chromium"  
+[CR1148353]: https://crbug.com/1148353 "Problème 1148353 : Demande de fonctionnalité : copier l’objet depuis la console devtools | Bogues Chromium"  
+[CR1149859]: https://crbug.com/1149859 "Problème 1149859 : [demande de fonctionnalité][Console] ajouter l’objet copier dans l’élément du Presse-papiers dans le menu contextuel | Bogues Chromium"  
+[CR1150797]: https://crbug.com/1150797 "Problème 1150797 : ajouter un menu contextuel Dupliquer l’élément dans le panneau Éléments | Bogues Chromium"  
+[CR1152391]: https://crbug.com/1152391 "Problème 1152391 : prise en charge du menu contextuel copier CSS dans le panneau de styles | Bogues Chromium"  
+[CR1155120]: https://crbug.com/1155120 "Problème 1155120 : [FR]Nom du fichier de copie de support et numéro de ligne | Bogues Chromium"  
+[CR1156628]: https://crbug.com/1156628 "Problème 1156628 : DevTools : ajouter la prise en charge de la fonctionnalité d’état d’élément :target en force | Bogues Chromium"  
+[CR1157329]: https://crbug.com/1157329 "Problème 1157329 : Accessibilité - Narrateur : le Narrateur n’annonce pas le nombre et la position des suggestions disponibles pour le code dans l’onglet Styles | Bogues Chromium"  
 
 [MdnDocsWebCssTarget]: https://developer.mozilla.org/docs/web/css/:target ":target | MDN"  
 
@@ -495,7 +495,7 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 > La page d’origine est disponible [ici](https://developer.chrome.com/blog/new-in-devtools-89) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est sous [licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est sous [licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

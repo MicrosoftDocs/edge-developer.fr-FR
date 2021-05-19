@@ -144,7 +144,7 @@ Affichez les informations de routage de demande des workers du service avec le n
     
 ### <a name="network-tool"></a>Outil réseau  
 
-Déboguer les requêtes réseau qui s’exécutent par le biais des workersdu service.  Vous pouvez également ouvrir des requêtes réseau à partir de l’outil de **l’application**.  Pour chaque demande, DevTools affiche les informations suivantes dans le volet [Timing][DevtoolsNetworkReferenceDisplayTimingBreakdownRequest].  
+Déboguer les requêtes réseau qui s’exécutent par le biais des workers du service.  Vous pouvez également ouvrir des requêtes réseau à partir de l’outil de **l’application**.  Pour chaque demande, DevTools affiche les informations suivantes dans le volet [Timing][DevtoolsNetworkReferenceDisplayTimingBreakdownRequest].  
 
 *   Le début d’une demande et la durée du démarrage.  
 *   Modification apportée à l’inscription du worker du service.  
@@ -362,9 +362,9 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Émuler des appareils mobiles dans Microsoft Edge DevTools | Microsoft Docs"  
 <!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  -->  
 <!--  [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features/index.md#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  -->  
-[DevtoolsIssuesIndex]: .. /.. /.. /issues/index.md «Rechercher et résoudre des problèmes liés à l’outil Problèmes de DevTools Microsoft Edge | Microsoft Docs»  
-[DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: .. /.. /.. /network/reference.md#copy-formatted-response-json-to-the-clipboard «Copier la réponse mise en forme JSON dans le Presse-papiers - Référence de l’analyse réseau | Microsoft Docs»  
-[DevtoolsNetworkReferenceDisplayTimingBreakdownRequest]: .. /.. /.. /network/reference.md#display-the-timing-breakdown-of-a-request «Afficher la répartition temporelle d'une demande - Référence d'analyse de réseau | Microsoft Docs»  
+[DevtoolsIssuesIndex]: .. /.. /.. /issues/index.md « Rechercher et résoudre des problèmes liés à l’outil Problèmes de DevTools Microsoft Edge | Microsoft Docs »  
+[DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: .. /.. /.. /network/reference.md#copy-formatted-response-json-to-the-clipboard « Copier la réponse mise en forme JSON dans le Presse-papiers - Référence de l’analyse réseau | Microsoft Docs »  
+[DevtoolsNetworkReferenceDisplayTimingBreakdownRequest]: .. /.. /.. /network/reference.md#display-the-timing-breakdown-of-a-request « Afficher la répartition temporelle d'une demande - Référence d'analyse de réseau | Microsoft Docs »  
 
 <!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: ../../../css/reference.md#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
 
@@ -382,26 +382,26 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Bogues Chromium"  
 
-[CR174309]: https://crbug.com/174309 "Problème 174309: DevTools: Autoriser la personnalisation des raccourcis clavier/les combinaisons de touches | Bogues Chromium"  
-[CR945786]: https://crbug.com/945786 "Problème 945786: DevTools: Autoriser le remplacement de navigator.storage.estimate() | Bogues Chromium"  
-[CR1029427]: https://crbug.com/1029427 "Problème 1029427: Réduire la surcharge des performances de l’envoi de messages de protocole frontal | Bogues Chromium"  
-[CR1035309]: https://crbug.com/1035309 "Problème 1035309: DevTools doit utiliser de manière cohérente Mo pour signifier mégaoctets, pas mebibyte | Bogues Chromium"  
-[CR1051466]: https://crbug.com/1051466 "Problème 1051466: Prendre en charge le débogage COOP/COEP dans DevTools | Bogues Chromium"  
-[CR1058836]: https://crbug.com/1058836 "Problème 1058836: Problèmes UX liés au débogage de WASM | Bogues Chromium"  
-[CR1071432]: https://crbug.com/1071432 "Problème 1071432: ☂️ Experience de développeur de base WASM | Bogues Chromium"  
-[CR1107766]: https://crbug.com/1107766 "Problème 1107766: Affichez des informations sur les cadres générées par ’window.open()' dans l’arborescence de cadre | Bogues Chromium"  
-[CR1122507]: https://crbug.com/1122507 "Problème 1122507: Informations sur le travailleur de surface dans l’affichage de l’arborescence de cadre | Bogues Chromium"  
-[CR1126178]: https://crbug.com/1126178 "Problème 1126178: ☂ DevTools: CSS <type> composants | Bogues Chromium"  
-[CR1130556]: https://crbug.com/1130556 "Problème 1130556: DevTools: tester l’image de retour (émulation) | Bogues Chromium"  
-[CR1132084]: https://crbug.com/1132084 "Problème 1132084: il n’y a pas de moyen simple de copier la charge utile de la requête JSON | Bogues Chromium"  
-[CR1136394]: https://crbug.com/1136394 "Problème 1136394: outils Flexbox | Bogues Chromium"  
-[CR1138633]: https://crbug.com/1138633 "Problème 1138633: DevTools: CSS <angle> le composant doit refléter son apparence de propriété dans l’arrière-plan d’horloge | Bogues Chromium"  
-[CR1139615]: https://crbug.com/1139615 "Problème 1139615: L’initiateur réseau doit permettre de copier le rapport des appels de procédure | Bogues Chromium"  
-[CR1139899]: https://crbug.com/1139899 "Problème 1139899: Signaler la disponibilité des API contrôlées dans l’affichage des détails du cadre | Bogues Chromium"  
-[CR1139945]: https://crbug.com/1139945 "Problème 1139945: icônes des propriétés CSS de Flexbox dans le panneau styles | Bogues Chromium"  
-[CR1141824]: https://crbug.com/1141824 "Problème 1141824: améliorer le signalement des erreurs CORS dans DevTools | Bogues Chromium"  
-[CR1144090]: https://crbug.com/1144090 "Problème 1144090: Ajouter des ornements de style flex à l’arborescence des éléments | Bogues Chromium"  
-[CR1146985]: https://crbug.com/1146985 "Problème 1146985: le texte supprimé reste affiché dans le champ de texte de la section «stockage» de la fenêtre « outils de développement » | Bogues Chromium"  
+[CR174309]: https://crbug.com/174309 "Problème 174309 : DevTools : Autoriser la personnalisation des raccourcis clavier/les combinaisons de touches | Bogues Chromium"  
+[CR945786]: https://crbug.com/945786 "Problème 945786 : DevTools : Autoriser le remplacement de navigator.storage.estimate() | Bogues Chromium"  
+[CR1029427]: https://crbug.com/1029427 "Problème 1029427 : Réduire la surcharge des performances de l’envoi de messages de protocole frontal | Bogues Chromium"  
+[CR1035309]: https://crbug.com/1035309 "Problème 1035309 : DevTools doit utiliser de manière cohérente Mo pour signifier mégaoctets, pas mebibyte | Bogues Chromium"  
+[CR1051466]: https://crbug.com/1051466 "Problème 1051466 : Prendre en charge le débogage COOP/COEP dans DevTools | Bogues Chromium"  
+[CR1058836]: https://crbug.com/1058836 "Problème 1058836 : Problèmes UX liés au débogage de WASM | Bogues Chromium"  
+[CR1071432]: https://crbug.com/1071432 "Problème 1071432 : ☂️ Experience de développeur de base WASM | Bogues Chromium"  
+[CR1107766]: https://crbug.com/1107766 "Problème 1107766 : Affichez des informations sur les cadres générées par ’window.open()' dans l’arborescence de cadre | Bogues Chromium"  
+[CR1122507]: https://crbug.com/1122507 "Problème 1122507 : Informations sur le travailleur de surface dans l’affichage de l’arborescence de cadre | Bogues Chromium"  
+[CR1126178]: https://crbug.com/1126178 "Problème 1126178 : ☂ DevTools : CSS <type> composants | Bogues Chromium"  
+[CR1130556]: https://crbug.com/1130556 "Problème 1130556 : DevTools : tester l’image de retour (émulation) | Bogues Chromium"  
+[CR1132084]: https://crbug.com/1132084 "Problème 1132084 : il n’y a pas de moyen simple de copier la charge utile de la requête JSON | Bogues Chromium"  
+[CR1136394]: https://crbug.com/1136394 "Problème 1136394 : outils Flexbox | Bogues Chromium"  
+[CR1138633]: https://crbug.com/1138633 "Problème 1138633 : DevTools : CSS <angle> le composant doit refléter son apparence de propriété dans l’arrière-plan d’horloge | Bogues Chromium"  
+[CR1139615]: https://crbug.com/1139615 "Problème 1139615 : L’initiateur réseau doit permettre de copier le rapport des appels de procédure | Bogues Chromium"  
+[CR1139899]: https://crbug.com/1139899 "Problème 1139899 : Signaler la disponibilité des API contrôlées dans l’affichage des détails du cadre | Bogues Chromium"  
+[CR1139945]: https://crbug.com/1139945 "Problème 1139945 : icônes des propriétés CSS de Flexbox dans le panneau styles | Bogues Chromium"  
+[CR1141824]: https://crbug.com/1141824 "Problème 1141824 : améliorer le signalement des erreurs CORS dans DevTools | Bogues Chromium"  
+[CR1144090]: https://crbug.com/1144090 "Problème 1144090 : Ajouter des ornements de style flex à l’arborescence des éléments | Bogues Chromium"  
+[CR1146985]: https://crbug.com/1146985 "Problème 1146985 : le texte supprimé reste affiché dans le champ de texte de la section « stockage » de la fenêtre « outils de développement » | Bogues Chromium"  
 
 [GlitchCorsErrors]: https://cors-errors.glitch.me "Erreurs CORS | Problème"  
 
@@ -424,7 +424,7 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 > La page d’origine est disponible [ici](https://developer.chrome.com/blog/new-in-devtools-88) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

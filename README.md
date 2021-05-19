@@ -1,9 +1,8 @@
-# <a name="microsoft-edge-documentation"></a>Documentation MicrosoftEdge  
+# <a name="microsoft-edge-documentation"></a>Documentation Microsoft Edge  
 
 ## <a name="microsoft-open-source-code-of-conduct"></a>Code de conduite Open Source Microsoft  
 
-Ce projet a adopté le code de conduite [Open Source de Microsoft.](https://opensource.microsoft.com/codeofconduct)  
-Pour plus d’informations, consultez la FAQ sur le [code](https://opensource.microsoft.com/codeofconduct/faq) de conduite ou [contactez opencode@microsoft.com](mailto:opencode@microsoft.com) avec d’autres questions ou commentaires.  
+Pour plus d’informations sur le code de conduite Open Source de Microsoft, accédez au code de conduite [Open Source de Microsoft.](CODE_OF_CONDUCT.md)  
 
 ## <a name="legal-notices"></a>Informations légales  
 
@@ -19,15 +18,15 @@ Microsoft et tout contributeur se réserve tous les autres droits, en vertu de l
 
 ## <a name="contributing"></a>Contribution  
 
-Il s’agit du référentiel de la **documentation** Microsoft Edge hébergée sur [https://docs.microsoft.com/microsoft-edge/](https://docs.microsoft.com/microsoft-edge/index) .  
+Il s’agit du référentiel de la documentation Microsoft Edge **hébergée** sur [https://docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge/index) .  
 
-Si vous souhaitez inclure une nouvelle couverture ou avoir des commentaires, envisagez [de contribuer.](./CONTRIBUTING.md)  Vous pouvez modifier le contenu existant, ajouter un nouveau contenu ou créer de [nouveaux problèmes.](https://github.com/MicrosoftDocs/edge-developer/issues)  L’équipe Microsoft Edge examine vos suggestions et travaille à incorporer ces suggestions dans les documents.  
+Si vous souhaitez inclure une nouvelle couverture ou avoir des commentaires, envisagez [de contribuer.](./CONTRIBUTING.md)  Vous pouvez modifier le contenu existant, ajouter un nouveau contenu ou créer de [nouveaux problèmes.](https://github.com/MicrosoftDocs/edge-developer/issues)  L Microsoft Edge’équipe examine vos suggestions et travaille à incorporer ces suggestions dans les documents.  
 
-Recherchez les données de la page [État](https://developer.microsoft.com/microsoft-edge/status) à l':. [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status)  La page fournit l’état d’implémentation le plus récent et les plans futurs `Status` pour les fonctionnalités de plateforme web dans Microsoft Edge.
+Recherchez les données de la page web [État](https://developer.microsoft.com/microsoft-edge/status) à l’adresse :  [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status) .  La `Status` page web fournit l’état d’implémentation le plus récent et les plans futurs pour les fonctionnalités de plateforme web Microsoft Edge.
 
 ### <a name="conventions"></a>Conventions  
 
-*   Lors de l’ajout d’une page, vous devez ajouter une entrée toc.md [pour](./microsoft-edge/toc.yml) qu’elle apparaisse.
+*   Lorsque vous ajoutez une page web, vous devez ajouter une entrée pour elle dans [toc.md](./microsoft-edge/toc.yml) pour qu’elle apparaisse.
 *   Un répertoire peut contenir d’autres répertoires ou `readme.md` s
 *   Les noms de dossier/répertoire sont séparés par des tirets \(par `f12-tools` exemple, \) et minuscules.  Les répertoires sont utilisés dans les URL du `docs.microsoft.com` site.  Évitez d’utiliser des traits de soulignement, des caractères de soulignement ou des caractères camelCase.  
 
@@ -40,11 +39,11 @@ Ces autres éléments de texte ont des styles disponibles :
     *   Vous pouvez également imbribrier des puces.  
     *   Les listes à puces doivent avoir plusieurs entrées.  
 *   Disposition standard 
-
+    
 1.  Listes ordonnées.  
 1.  Utilisez une numérot de style western normal.  
 1.  Ne doit être utilisé que lorsqu’une liste a réellement un ordre.  
-
+    
 ---  
 
 Des règles horizontales sont disponibles.  Utilisez les règles horizontales avec parcimonie pour réduire l’encombrement.  
@@ -52,7 +51,7 @@ Des règles horizontales sont disponibles.  Utilisez les règles horizontales av
 
 ### <a name="displaying-code"></a>Affichage du code  
 
-Vous pouvez utiliser la `code` syntaxe Markdown inline \(avec les backticks\).  
+Vous pouvez utiliser la `code` syntaxe inline markdown \(avec les backticks\).  
 
 Vous pouvez également afficher des blocs de code.  L’extrait de code suivant est un exemple css.  
 
@@ -73,13 +72,13 @@ body {
 
 Utilisez les notes avec parcimonie.  Les blocs sont conçus pour mettre en évidence les informations « à ne pas manquer ».  
 
-Quatre versions différentes de notes sont actuellement styled.  
+Quatre versions de notes différentes sont actuellement styled.  
 
 *   REMARQUE  
 *   AVERTISSEMENT  
 *   CONSEIL  
 *   IMPORTANT  
-
+    
 Respectivement, les notes ressemblent aux extraits de code suivants.  
 
 ```md
@@ -108,9 +107,9 @@ Pour les notes de blockquote à plusieurs lignes, utilisez un caractère supéri
 
 ```md
 > This is a line in a blockquote.  
-> My text may wrap to more than one line when the Markdown is parsed, but I must include all my information within a single \(sometimes very long line\) in the Markdown.  
+> My text may wrap to more than one line when the markdown is parsed, but I must include all my information within a single \(sometimes very long line\) in the markdown.  
 > This is another line in a blockquote.  
-```
+```  
 
 ### <a name="images"></a>Images  
 

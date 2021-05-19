@@ -1,19 +1,19 @@
 ---
-description: Guide de mise en place avec WebView2 pour les applications WinUI
+description: Guide de mise en ligne avec WebView2 pour les applications WinUI
 title: Mise en place de WebView2 pour les applications WinUI
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 05/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, applications winui, winui, edge, CoreWebView2, contrôle de navigateur, edge html, get started, Prise en main, .NET
-ms.openlocfilehash: ad78c5e65af507031ddd510f4b21782fe00ae465
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: e334e8e7aec5fff4c57700a99de5cde906242e4f
+ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535918"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "11574581"
 ---
 # <a name="get-started-with-webview2-in-winui-3-preview"></a>Mise en place de WebView2 dans WinUI 3 (prévisualisation)  
 
@@ -23,7 +23,7 @@ Dans cet article, commencer à créer votre première application WebView2 et en
 
 Veillez à installer la liste des conditions préalables suivante avant de poursuivre.  
 
-*   [WebView2 Runtime][Webview2Installer] ou tout [canal Microsoft Edge (Chromium) non stable][MicrosoftedgeinsiderDownload] installé sur Windows 10 version 1803 \(build 17134\) ou version ultérieure.  Pour plus d’informations sur Windows 10, accédez à [Windows mise à jour : FAQ][MicrosoftSupport12373].  
+*   [WebView2 Runtime][Webview2Installer] ou tout [canal Microsoft Edge (Chromium) non stable][MicrosoftedgeinsiderDownload] installé sur Windows 10 version 1803 \(build 17134\) ou version ultérieure.  Pour plus d’informations sur Windows 10, accédez [à Windows mise à jour : FAQ][MicrosoftSupport12373].  
     
     > [!NOTE]
     > L’équipe WebView recommande d’utiliser le canal Canary et la version minimale requise est 82.0.488.0.  
@@ -39,7 +39,7 @@ Veillez à installer la liste des conditions préalables suivante avant de pours
 ## <a name="step-0---visual-studio-settings"></a>Étape 0 : Visual Studio paramètres  
 
 1.  Assurez-vous que votre système dispose d’NuGet source de package activée pour [nuget.org][NugetHome].  Pour plus d’informations, accédez aux [configurations NuGet et][NugetConsumePackagesConfiguringNugetBehavior] aux [Windows Community Shared Computer Toolkit][WindowsCommunitytoolkit].  
-1.  Téléchargez et installez [le package VSIX WinUI 3 Preview 3.][VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]  Le programme d’installation ajoute les modèles de projet WinUI 3 et le package NuGet contenant les bibliothèques WinUI 3 à Visual Studio 2019.  
+1.  Téléchargez et installez le [package Project Réunion VSIX.][VisualstudioMarketplaceProjectreunionMicrosoftprojectreunion]  Le programme d’installation ajoute les modèles de projet WinUI 3 et le package NuGet contenant les bibliothèques WinUI 3 à Visual Studio 2019.  
     
     Pour obtenir des instructions sur l’ajout du package à Visual Studio, accédez à Recherche et utilisation `VSIX` [des extensions Visual Studio de recherche.][VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]
     
@@ -69,7 +69,7 @@ Commencez par un projet de bureau de base qui contient une seule fenêtre princi
     :::image-end:::  
     
 1.  Dans l’Explorateur de solutions, deux projets sont générés.  
-    *   **Nom de votre projet (Bureau)**.  Le projet Bureau contient le code de votre application.  Le `App.xaml.cs` fichier définit une classe qui représente `Application` l’instance de votre application.  Le `MainWindow.xaml.cs` fichier définit une classe qui représente la fenêtre principale affichée par `MainWindow` l’instance de votre application.  Les classes dérivent de types dans `Microsoft.UI.Xaml` l’espace de noms de WinUI.  
+    *   **Nom de votre projet (Bureau)**.  Le projet Bureau contient le code de votre application.  Le `App.xaml.cs` fichier définit une classe qui représente `Application` l’instance de votre application.  Le `MainWindow.xaml.cs` fichier définit une classe qui représente la fenêtre principale affichée par `MainWindow` l’instance de votre application.  Les classes dérivent des types de `Microsoft.UI.Xaml` l’espace de noms WinUI.  
     *   **Nom de votre projet (package).**  Le projet package est un Windows package d’application Project qui est configuré pour créer l’application dans un package MSIX pour le déploiement.  Le projet contient le manifeste du package de votre application et est le projet de démarrage de votre solution par défaut.  Pour plus d’informations, accédez à Configurer votre application de bureau pour la mise en package [MSIX][WindowsMsixDesktopToUwpPackagingDotNet] dans Visual Studio et référence de schéma de manifeste de package [pour Windows 10][UwpSchemasAppxpackageUapmanifestRoot].  
 1.  Dans l’Explorateur de solutions, pour afficher le code, ouvrez le `MainWindow.xaml` fichier.  Pour exécuter votre projet et afficher une fenêtre avec un bouton, sélectionnez `F5` .  
     
@@ -242,7 +242,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 Pour créer et exécuter votre projet, sélectionnez `F5` .  Assurez-vous que la navigation est bloquée sur les sites HTTP et autorisée pour les sites HTTPS.  
 
-## <a name="step-5---scripting"></a>Étape 5 : scripts  
+## <a name="step-5---scripting"></a>Étape 5 : écriture de scripts  
 
 Vous pouvez utiliser des applications hôtes pour injecter du code JavaScript dans des contrôles WebView2 lors de l’utilisation.  Vous pouvez tâcher WebView pour exécuter du javaScript arbitraire ou ajouter des scripts d’initialisation.  Le javaScript injecté s’applique à tous les nouveaux documents de niveau supérieur et aux images enfants jusqu’à ce que le JavaScript soit supprimé.  Le javaScript injecté est exécuté avec un minutage spécifique.  
 
@@ -288,7 +288,7 @@ Pour en savoir plus sur WebView2, accédez aux ressources suivantes.
     
 *   Pour plus d’informations sur l’API WebView2, accédez aux spécifications [WebView2.][GithubMicrosoftMicrosoftUiXamlSpecsWebview2]  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
@@ -296,10 +296,10 @@ Pour envoyer vos demandes ou bogues de fonctionnalité spécifiques à WinUI, ac
 
 <!-- links -->  
 [WV2BestPractices]: ../concepts/developer-guide.md "Meilleures pratiques en matière de développement WebView2 | Documents Microsoft"  
-
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Présentation de Microsoft Edge WebView2 (prévisualisation) | Documents Microsoft"  
-[Webview2IndexNextSteps]: ../index.md#next-steps "Étapes suivantes : présentation de Microsoft Edge WebView2 (prévisualisation) | Documents Microsoft"  
 [Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Événements de navigation | Documents Microsoft"  
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Présentation des Microsoft Edge WebView2 (prévisualisation) | Documents Microsoft"  
+[Webview2IndexNextSteps]: ../index.md#next-steps "Étapes suivantes : présentation de Microsoft Edge WebView2 (prévisualisation) | Documents Microsoft"  
+
 [Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.Exeméthode cuteScriptAsync(String) (Microsoft.Web.WebView2.Wpf) | Documents Microsoft"  
 
 [NugetConsumePackagesConfiguringNugetBehavior]: /nuget/consume-packages/configuring-nuget-behavior "Configurations NuGet courantes | Documents Microsoft"  
@@ -308,8 +308,8 @@ Pour envoyer vos demandes ou bogues de fonctionnalité spécifiques à WinUI, ac
 
 [VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "Installer sans utiliser la boîte de dialogue Gérer les extensions : gérer les extensions pour Visual Studio | Documents Microsoft"  
 
-[WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/winui/winui3#configure-your-dev-environment "Configurer votre environnement dev - Bibliothèque d’interface utilisateur Windows 3.0 Preview 1 (mai 2020) | Documents Microsoft"  
-[WindowsCommunitytoolkit]: /windows/communitytoolkit "Documentation de Shared Computer Toolkit communauté Windows | Documents Microsoft"  
+[WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/winui/winui3#configure-your-dev-environment "Configurer votre environnement de Windows UI Library 3.0 Preview 1 (mai 2020) | Documents Microsoft"  
+[WindowsCommunitytoolkit]: /windows/communitytoolkit "Windows Community Shared Computer Toolkit documentation | Documents Microsoft"  
 [WindowsMsixDesktopToUwpPackagingDotNet]: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net "Configurer votre application de bureau pour l’empaquetage MSIX dans Visual Studio | Documents Microsoft"  
 [WindowsUwpGetStartedEnableYourDeviceForDevelopment]: /windows/uwp/get-started/enable-your-device-for-development "Activer votre appareil pour le développement | Documents Microsoft"  
 
@@ -321,17 +321,17 @@ Pour envoyer vos demandes ou bogues de fonctionnalité spécifiques à WinUI, ac
 
 [MicrosoftMain]: https://www.microsoft.com "Microsoft"  
 
-[MicrosoftSupport12373]: https://support.microsoft.com/help/12373 "Windows Update : FAQ"  
+[MicrosoftSupport12373]: https://support.microsoft.com/help/12373 "Windows Mise à jour : FAQ"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Télécharger les canaux Microsoft Edge Insider"  
 
-[NugetHome]: https://nuget.org "Accueil | Galerie NuGet"  
+[NugetHome]: https://nuget.org "Accueil | NuGet Galerie"  
 
 [WindowsDotnetcliBlobCoreSdk50100Preview4202681X86]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exe "Télécharger dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exe"  
 
 [WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe " dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
 
-[VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]: https://marketplace.visualstudio.com/items?itemName=Microsoft-WinUI.WinUIProjectTemplates "Modèles de projet WinUI 3 | Visual Studio Marketplace"  
+[VisualstudioMarketplaceProjectreunionMicrosoftprojectreunion]: https://marketplace.visualstudio.com/items?itemName=ProjectReunion.MicrosoftProjectReunion "Project Réunion | Visual Studio Marketplace"  
 
 [MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
 

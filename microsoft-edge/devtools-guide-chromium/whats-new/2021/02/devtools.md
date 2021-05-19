@@ -363,7 +363,7 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 > La page d’origine est disponible [ici](https://developer.chrome.com/blog/new-in-devtools-90) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

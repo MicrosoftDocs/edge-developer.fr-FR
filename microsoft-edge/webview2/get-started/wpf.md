@@ -3,17 +3,17 @@ description: Guide de mise en ligne avec WebView2 pour les applications WPF
 title: Mise en place de WebView2 pour les applications WPF
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 05/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, webview2, WebView, webview, applications wpf, wpf, edge, CoreWebView2, contrôle de navigateur, edge html, get started, Get Started, .NET
-ms.openlocfilehash: e7ddb3977d34e8150a10354e638226bcf96d610d
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+keywords: WebView2, webview2, WebView, webview, applications wpf, wpf, edge, CoreWebView2, contrôle de navigateur, edge html, mise en Prise en main, .NET
+ms.openlocfilehash: 9808c6f801e3f7a5052186bb3088621758c41762
+ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535926"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "11574595"
 ---
 # <a name="get-started-with-webview2-in-wpf"></a>Mise en place de WebView2 dans WPF
 
@@ -23,7 +23,7 @@ Dans cet article, commencer à créer votre première application WebView2 et en
 
 Veillez à installer la liste des conditions préalables suivante avant de poursuivre.  
 
-*   [WebView2 Runtime][Webview2Installer] ou tout canal [non stable Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] installé sur le système d’exploitation pris en charge \(actuellement Windows 10, Windows 8.1 et Windows 7\).  
+*   [WebView2 Runtime][Webview2Installer] ou tout canal [Microsoft Edge (Chromium) non stable][MicrosoftedgeinsiderDownload] installé sur le système d’exploitation pris en charge \(actuellement Windows 10, Windows 8.1 et Windows 7\).  
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 ou ultérieure.  
     
 ## <a name="step-1---create-a-single-window-app"></a>Étape 1 : créer une application à fenêtre unique  
@@ -43,7 +43,7 @@ Commencez par un projet de bureau de base qui contient une seule fenêtre princi
        :::column-end:::
     :::row-end:::
     
-1.  Entrez des valeurs **pour le nom et l’emplacement** du **projet.**  Choisissez **.NET Framework 4.6.2** ou ultérieure \(ou **.NET Core 3.0** ou ultérieur\).  
+1.  Entrez des valeurs **pour Project nom et** **emplacement.**  Choisissez **.NET Framework 4.6.2** ou ultérieure \(ou **.NET Core 3.0** ou ultérieur\).  
     
     :::row:::
        :::column span="1":::
@@ -62,7 +62,7 @@ Commencez par un projet de bureau de base qui contient une seule fenêtre princi
 
 Utilisez NuGet pour ajouter le SDK WebView2 au projet.  
 
-1.  Pointez sur le projet, ouvrez le menu contextuel \(clic droit\), puis choisissez Gérer les **packages NuGet...**.  
+1.  Pointez sur le projet, ouvrez le menu contextuel \(clic droit\), puis choisissez **Gérer NuGet packages...**.  
     
     :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="Gérer des packages NuGet" lightbox="./media/wpf-getting-started-mng-nuget.png":::
        Gérer des packages NuGet
@@ -164,7 +164,7 @@ Ajoutez la possibilité d’autoriser les utilisateurs à modifier l’URL affic
     using Microsoft.Web.WebView2.Core;
     ```
     
-1.  Dans le fichier, copiez l’extrait de code suivant pour créer la méthode, qui permet d’accéder à l’URL entrée dans la barre `MainWindow.xaml.cs` `ButtonGo_Click` d’adresses dans le WebView.  
+1.  Dans le fichier, copiez l’extrait de code suivant pour créer la méthode, qui navigue dans le WebView jusqu’à l’URL entrée `MainWindow.xaml.cs` `ButtonGo_Click` dans la barre d’adresses.  
     
     ```csharp
     private void ButtonGo_Click(object sender, RoutedEventArgs e)
@@ -240,7 +240,7 @@ Pour créer et exécuter le projet, sélectionnez `F5` .  Assurez-vous que lorsq
 Vous pouvez utiliser des applications hôtes pour injecter du code JavaScript dans des contrôles WebView2 lors de l’utilisation.  Vous pouvez tâcher WebView pour exécuter du javaScript arbitraire ou ajouter des scripts d’initialisation.  Le javaScript injecté s’applique à tous les nouveaux documents de niveau supérieur et aux images enfants jusqu’à ce que le JavaScript soit supprimé.  Le javaScript injecté est exécuté avec un minutage spécifique.  
 
 *   Exécutez-le après la création de l’objet global.  
-*   Exécutez-le avant d’exécuter tout autre script inclus dans le document HTML.  
+*   Exécutez-le avant tout autre script inclus dans le document HTML.  
     
 Par exemple, ajoutez des scripts qui envoient une alerte lorsqu’un utilisateur navigue vers des sites non HTTPS.  Modifiez la fonction pour injecter un script dans le contenu web qui utilise la méthode `EnsureHttps` [ExecuteScriptAsync.](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync)  
 
@@ -310,7 +310,7 @@ Dans votre projet, lorsque le contrôle WebView2 navigue vers une URL, il affich
     1.  Injecte un script au contenu web qui inscrit un handler pour imprimer un message à partir de l’hôte.  
     1.  Injecte un script au contenu web qui publie l’URL à l’hôte.  
         
-    Dans le `MainWindow.xaml.cs` fichier, mettez à `InitializeAsync` jour pour correspondre à l’extrait de code suivant.  
+    Dans le `MainWindow.xaml.cs` fichier, mettez à jour `InitializeAsync` pour correspondre à l’extrait de code suivant.  
     
     ```csharp
     async void InitializeAsync()
@@ -336,11 +336,11 @@ Félicitations, vous avez créé votre première application WebView2.
 Pour en savoir plus sur WebView2, accédez aux ressources suivantes.  
 
 *   Pour en savoir plus sur la création d’applications WebView2, accédez aux meilleures pratiques de développement [WebView2.][WV2BestPractices]  
-*   Pour obtenir un exemple complet des fonctionnalités WebView2, accédez au référentiel [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain] sur GitHub.  
-*   Pour plus d’informations sur l’API WebView2, accédez à la référence [d’API.](/dotnet/api/microsoft.web.webview2.wpf.webview2)  
+*   Pour obtenir un exemple complet des fonctionnalités WebView2, accédez au [repo WebView2Samples][GithubMicrosoftedgeWebview2samplesMain] GitHub.  
+*   Pour plus d’informations sur l’API WebView2, accédez à la [référence d’API.](/dotnet/api/microsoft.web.webview2.wpf.webview2)  
 *   Pour plus d’informations sur WebView2, accédez à [Ressources WebView2.](../index.md#next-steps)  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
@@ -356,7 +356,7 @@ Pour en savoir plus sur WebView2, accédez aux ressources suivantes.
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
 
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Développeur Microsoft Edge"  
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 | Microsoft Edge Développeur"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Télécharger les canaux Microsoft Edge Insider"  
 
