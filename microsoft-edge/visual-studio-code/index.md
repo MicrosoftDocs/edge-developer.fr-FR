@@ -51,7 +51,7 @@ ms.locfileid: "11230690"
    :::column-end:::
 :::row-end:::  
 
-## <span data-ttu-id="250f6-123">Débogueur pour Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="250f6-123">Debugger for Microsoft Edge</span></span>  
+## <a name="debugger-for-microsoft-edge"></a><span data-ttu-id="250f6-123">Débogueur pour Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="250f6-123">Debugger for Microsoft Edge</span></span>  
 
 <span data-ttu-id="250f6-124">Avec le [débogueur de][VisualstudioMarketplaceDebuggerMicrosoftEdge] l’extension de code Visual Studio Microsoft Edge, déboguez votre code JavaScript frontal par ligne et consultez les `console.log()` instructions directement à partir du [code Visual Studio][VisualstudioCode].</span><span class="sxs-lookup"><span data-stu-id="250f6-124">With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio Code extension, debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode].</span></span>  
       
@@ -61,7 +61,7 @@ ms.locfileid: "11230690"
    <span data-ttu-id="250f6-129">**Débogueur pour Microsoft Edge** Extension de code Visual Studio en action</span><span class="sxs-lookup"><span data-stu-id="250f6-129">**Debugger for Microsoft Edge** Visual Studio Code extension in action</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="250f6-130">Microsoft Edge Tools pour le code Visual Studio</span><span class="sxs-lookup"><span data-stu-id="250f6-130">Microsoft Edge Tools for Visual Studio Code</span></span>
+## <a name="microsoft-edge-tools-for-visual-studio-code"></a><span data-ttu-id="250f6-130">Microsoft Edge Tools pour le code Visual Studio</span><span class="sxs-lookup"><span data-stu-id="250f6-130">Microsoft Edge Tools for Visual Studio Code</span></span>
 
 <span data-ttu-id="250f6-131">Avec l’extension de code Visual Studio [Microsoft Edge Tools pour Visual Studio][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] , utilisez l’outil **éléments** du navigateur Microsoft Edge dans le code Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="250f6-131">With the [Microsoft Edge Tools for Visual Studio Code][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] Visual Studio Code extension, use the **Elements** tool of the Microsoft Edge browser within Visual Studio Code.</span></span>  <span data-ttu-id="250f6-132">Utilisez-le pour les actions suivantes.</span><span class="sxs-lookup"><span data-stu-id="250f6-132">Use it for the following actions.</span></span>  
 
@@ -76,7 +76,7 @@ ms.locfileid: "11230690"
    <span data-ttu-id="250f6-139">**Microsoft Edge Tools pour le code Visual Studio** Extension de code Visual Studio en action</span><span class="sxs-lookup"><span data-stu-id="250f6-139">**Microsoft Edge Tools for Visual Studio Code** Visual Studio Code extension in action</span></span>  
 :::image-end:::  
 
-## <span data-ttu-id="250f6-140">webhint</span><span class="sxs-lookup"><span data-stu-id="250f6-140">webhint</span></span>  
+## <a name="webhint"></a><span data-ttu-id="250f6-140">webhint</span><span class="sxs-lookup"><span data-stu-id="250f6-140">webhint</span></span>  
       
 <span data-ttu-id="250f6-141">Utilisez [webhint][WebhintMain], un outil de désutilisation personnalisable pour améliorer les fonctionnalités suivantes de votre site.</span><span class="sxs-lookup"><span data-stu-id="250f6-141">Use [webhint][WebhintMain], a customizable linting tool, to improve the following functionality of your site.</span></span>  
 
