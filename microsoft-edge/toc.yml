@@ -363,8 +363,8 @@
           href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Protection contre le suivi dans Microsoft Edge
           href: web-platform/tracking-prevention.md
-        - name: Chaîne de l’agent utilisateur Microsoft Edge
-          href: web-platform/user-agent-string.md
+        - name: Comment détecter Microsoft Edge dans votre site web
+          href: web-platform/user-agent-guidance.md
         - name: Personnaliser le bouton de révélation du mot de passe
           href: web-platform/password-reveal.md
     - name: Vue d’ensemble de Web We Want
