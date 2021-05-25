@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, développement web, html, css, javascript, développeur, extensions
-ms.openlocfilehash: 48af14c33a368a3449acb88b4dfb875ad5398e7a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: c5a17cbc55c6ccb42e06369474cd274d70742494
+ms.sourcegitcommit: 31741a0c331816642ceafd20680bd3206c87c7bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397915"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "11579728"
 ---
 # <a name="create-an-extension-tutorial-part-2"></a>Didacticiel de création d’extension: partie2  
   
@@ -26,7 +26,7 @@ Ce didacticiel couvre les technologies d’extension suivantes.
 *   Inclure des pages de contenu dans les onglets de navigateur existants  
 *   Que les pages de contenu écoutent les messages des fenêtres publicitaires et répondent  
 
-Vous allez apprendre à mettre à jour votre menu déroulant pour remplacer votre image de démarrage statique par un titre et un bouton HTML standard.  Ce bouton, lorsqu’il est sélectionné, transmet cette image d’étoiles, qui est incorporée dans l’extension, à la page de contenu.  Cette image est insérée dans l’onglet du navigateur actif. Pour plus d’informations, suivez les étapes ci-dessous.
+Vous allez apprendre à mettre à jour votre menu déroulant pour remplacer votre image d’étoiles statiques par un titre et un bouton HTML standard.  Ce bouton, lorsqu’il est sélectionné, transmet cette image d’étoiles, qui est incorporée dans l’extension, à la page de contenu.  Cette image est insérée dans l’onglet du navigateur actif. Pour plus d’informations, suivez les étapes ci-dessous.
 
 1.  Supprimer l’image de la fenêtre pop-up et la remplacer par un bouton  
 
@@ -207,13 +207,13 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 Notez que tout ce que fait JavaScript ci-dessus consiste à inscrire un à `listener` l’aide de la méthode `chrome.runtime.onMessage.addListener` d’API d’extension.  Ce listener attend les messages comme celui que vous avez envoyé à partir de la décrit précédemment avec la méthode `popup.js` `chrome.tabs.sendMessage` API d’extension.  
 
-Le premier paramètre de la méthode est une fonction dont le premier paramètre, request, est les détails du `addListener` message transmis.  N’oubliez pas que lorsque vous avez utilisé la méthode, les attributs du premier paramètre sont `popup.js` `sendMessage` et `url` `imageDivId` .  
+Le premier paramètre de la méthode est une fonction dont le premier paramètre, request, est les `addListener` détails du message transmis.  N’oubliez pas que lorsque vous avez utilisé la méthode, les attributs du `popup.js` premier paramètre sont et `sendMessage` `url` `imageDivId` .  
 
 Lorsqu’un événement est géré par l’écoute, la fonction qui est le premier paramètre est exécuté.  Le premier paramètre de cette fonction est un objet qui possède des attributs attribués par `sendMessage` .  Cette fonction traite simplement les trois lignes de script jQuery.  
 
 *   La première ligne de script insère dynamiquement dans l’en-tête DOM une section que vous devez affecter en tant que **\<style\>** `slide-image` classe à votre `img` élément.  
-*   La deuxième ligne de script permet d’additioner un élément juste en dessous de l’onglet de votre navigateur avec la classe affectée, ainsi que l’ID de cet élément `img` `body` `slide-image` `imageDivId` image.  
-*   La troisième ligne de script ajoute un événement qui couvre la totalité de l’image, ce qui permet à l’utilisateur de sélectionner n’importe où sur l’image et cette image est supprimée de la page \(avec son écoute `click` d’événements\).  
+*   La deuxième ligne de script permet d’apposer un élément juste en dessous de l’onglet de votre navigateur avec la classe affectée, ainsi que l’ID de cet élément `img` `body` `slide-image` `imageDivId` image.  
+*   La troisième ligne de script ajoute un événement qui couvre l’intégralité de l’image, ce qui permet à l’utilisateur de sélectionner n’importe où sur l’image et cette image est supprimée de la page \(avec son écoute `click` d’événements\).  
 
 8. Ajouter des fonctionnalités pour supprimer l’image affichée lorsqu’elle est sélectionnée  
 
@@ -225,7 +225,7 @@ Maintenant, lorsque vous accédez à une page et sélectionnez votre icône **Ex
 
 <!--![popup.html display after selecting the Extension icon][ImagePart2Popupdialog]  -->  
 
-Lorsque vous sélectionnez le `Display` bouton, vous obtenez ce qui se trouve ci-dessous.  Si vous sélectionnez n’importe où sur l’image, cet élément d’image est supprimé et les pages de tabulation se resserrent à ce qui était `stars.jpeg` affiché à l’origine.  
+Lorsque vous sélectionnez le `Display` bouton, vous obtenez ce qui se trouve ci-dessous.  Si vous sélectionnez n’importe où sur l’image, cet élément d’image est supprimé et les pages d’onglets se resserrent à ce qui était `stars.jpeg` affiché à l’origine.  
 
 :::image type="complex" source="./media/part2-showingimage.png" alt-text="Image s’affichant dans le navigateur":::
    Image s’affichant dans le navigateur
