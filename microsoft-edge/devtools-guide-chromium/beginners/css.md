@@ -51,7 +51,7 @@ Une fois le didacticiel terminé, votre site doit ressembler à la figure suivan
 
 ## <a name="goals"></a>Objectifs  
 
-Suivez ce didacticiel pour mieux comprendre les concepts et tâches suivants.  
+Suivez ce didacticiel pour mieux comprendre les concepts et les tâches suivants.  
 
 *   Utilisation de CSS pour le style d’une page web.  
 *   Comment utiliser Microsoft Edge DevTools pour expérimenter CSS.  
@@ -116,7 +116,7 @@ L’extrait de code suivant est le code HTML et CSS utilisé pour créer le para
 
 ## <a name="add-inline-styles"></a>Ajouter des styles inline  
 
-Effectuer les actions suivantes pour utiliser des **styles inline** pour appliquer des styles à un seul élément.  
+Effectuer les actions suivantes pour utiliser **des styles inline** pour appliquer des styles à un seul élément.  
 
 1.  Revenir à l’onglet Édition et ouvrir `index.html` .  
     
@@ -244,7 +244,7 @@ li a {
 }
 ```  
 
-Effectuer les actions suivantes pour utiliser des virgules afin d’ajouter plusieurs sélecteurs à un jeu de règles.  
+Effectuer les actions suivantes pour utiliser des virgules pour ajouter plusieurs sélecteurs à un jeu de règles.  
 
 1.  Dans **l’onglet Éditeur,** ouvrez `contact.html` .  
 1.  Après `li a` le type `, h1` .  
@@ -321,7 +321,7 @@ Complétez les actions suivantes pour itérer sur le style d’un élément exis
 
 Effectuer les actions suivantes pour modifier les déclarations existantes dans DevTools.  
 
-1.  Choisissez le carré magenta en côté `magenta` de .  Un s picker de couleur s’insérait.  
+1.  Choose the magenta square next to `magenta` .  Un s picker de couleur apparaît.  
     
     :::image type="complex" source="../media/beginners-css-edit1.msft.png" alt-text="S sélectionneur de couleurs" lightbox="../media/beginners-css-edit1.msft.png":::
        S sélectionneur de couleurs  
@@ -345,7 +345,7 @@ Pour ajouter de nouveaux jeux de règles dans DevTools, complétez les actions s
     
 1.  Remplacez `a` par `a:hover` .  
     
-    :::image type="complex" source="../media/beginners-css-rule2.msft.png" alt-text="Remplacer une par une : pointer" lightbox="../media/beginners-css-rule2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule2.msft.png" alt-text="Remplacer un par un : pointer" lightbox="../media/beginners-css-rule2.msft.png":::
        Remplacer `a` par `a:hover`  
     :::image-end:::  
     
@@ -388,7 +388,7 @@ Dans une étape précédente, vous avez ajouté l’extrait de code suivant en t
 ...
 ```  
 
-Que se passe-t-il si vous `index.html` souhaitez un style identique ?  Que se passe-t-il si vous avez un grand nombre de pages sur lesquelles vous souhaitez appliquer vos styles ?  Vous devez copier et coller la feuille de style interne dans chaque page web de votre site.  Pour ajouter une feuille de style externe, vous devez effectuer les actions suivantes pour écrire votre feuille de **style** CSS une seule fois et l’appliquer à plusieurs pages.  
+Que se passe-t-il si vous `index.html` souhaitez un style identique ?  Que se passe-t-il si vous avez un grand nombre de pages sur lesquelles vous souhaitez appliquer vos styles ?  Vous devez copier et coller la feuille de style interne dans chaque page web de votre site.  Effectuer les actions suivantes pour ajouter une feuille de **style externe** afin de vous permettre d’écrire votre feuille de style CSS une seule fois et de l’appliquer à plusieurs pages.  
 
 1.  Tout d’abord, actualisez l’onglet en direct pour supprimer les modifications que vous avez apportées dans DevTools.  
     
@@ -600,7 +600,7 @@ Félicitations, vous avez terminé.
 
 *   La meilleure façon d’améliorer le développement web consiste à créer davantage de sites.  Ne vous inquiétez pas des ruptures.  Il vous suffit de vous faire plaisir et d’apprendre autant que possible en cours de route.  
 *   Pour en savoir plus sur le style des pages web, accédez à [Introduction à CSS.][MDNCssFirstSteps]  
-*   Pour en savoir plus sur l’utilisation de DevTools pour expérimenter le CSS d’une page, accédez à Prise en main avec [Viewing and Changing CSS][DevtoolsCssIndex].  
+*   Pour en savoir plus sur l’utilisation de DevTools pour expérimenter le CSS d’une page, accédez à Prise en main avec Affichage et modification [de CSS][DevtoolsCssIndex].  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
@@ -622,7 +622,7 @@ Félicitations, vous avez terminé.
 > La page d’origine a été [trouvée ici](https://developers.google.com/web/tools/chrome-devtools/beginners/css) et a été co-auteure par [Le rédacteur technique Principal \(Interne][KatherineJackson] au rédacteur technique, Chrome DevTools\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -37,8 +37,8 @@ Pour commencer à automatiser les tests, utilisez les étapes suivantes pour vou
 1.  Recherchez votre version de Microsoft Edge.  
     1.  Naviguez vers`edge://settings/help` .  
         
-        :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="Numéro de build de Microsoft Edge le 15 avril 2021" lightbox="./media/microsoft-edge-version.msft.png":::
-           Numéro de build de Microsoft Edge le 15 avril 2021  
+        :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="Numéro de build Microsoft Edge le 15 avril 2021" lightbox="./media/microsoft-edge-version.msft.png":::
+           Numéro de build Microsoft Edge le 15 avril 2021  
         :::image-end:::  
         
 1.  Accédez à [Microsoft Edge pilote .][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]  
@@ -253,7 +253,7 @@ using (var service = EdgeDriverService.CreateChromiumService())
 
 > [!NOTE] 
 >Vous n’avez pas besoin de fournir `EdgeOptions` l’objet lorsque vous passez `EdgeDriverService` à `EdgeDriver` l’instance.  La classe utilise les options par défaut pour `EdgeDriver` Microsoft Edge \(EdgeHTML\) ou Microsoft Edge \(Chromium\) en fonction du service que vous fournissez.  
-> Toutefois, si vous souhaitez fournir les deux classes, assurez-vous que les deux sont configurées pour la même version de `EdgeDriverService` `EdgeOptions` Microsoft Edge.  Par exemple, vous pouvez utiliser une classe Microsoft Edge \(EdgeHTML\) et Chromium `EdgeDriverService` propriétés dans la `EdgeOptions` classe.  La `EdgeDriver` classe envoie une erreur pour empêcher l’utilisation de différentes versions.  
+> Toutefois, si vous souhaitez fournir à la fois et des classes, assurez-vous que les deux sont configurés pour la `EdgeDriverService` `EdgeOptions` même version de Microsoft Edge.  Par exemple, vous pouvez utiliser une classe Microsoft Edge \(EdgeHTML\) et Chromium `EdgeDriverService` propriétés dans la `EdgeOptions` classe.  La `EdgeDriver` classe envoie une erreur pour empêcher l’utilisation de différentes versions.  
 
 #### [<a name="python"></a>Python](#tab/python/)  
 

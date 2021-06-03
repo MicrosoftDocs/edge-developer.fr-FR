@@ -31,7 +31,7 @@ ms.locfileid: "11564958"
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Annonces de l’équipe Microsoft Edge DevTools  
 
-Les sections suivantes sont une liste d’annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités dans DevTools, Microsoft Visual Studio extensions de code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez-nous [sur Twitter.][EdgeDevToolsTwitterAccount]  
+Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités dans DevTools, Microsoft Visual Studio extensions de code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez-nous [sur Twitter.][EdgeDevToolsTwitterAccount]  
 
 ### <a name="accessibility-improvements-to-the-devtools"></a>Améliorations de l’accessibilité de DevTools  
 
@@ -102,7 +102,7 @@ De nombreux développeurs utilisent d’autres outils de développement, tels qu
 | Russian – русский | Spanish - español |  
 -->  
 
-Les DevTools correspondent automatiquement à la langue que vous utilisez pour Microsoft Edge `edge://settings/languages` dans .  
+DevTools correspond automatiquement à la langue que vous utilisez pour Microsoft Edge `edge://settings/languages` dans .  
 
 Si vous souhaitez que Microsoft Edge soit dans une langue et que vos DevTools restent en anglais, sélectionnez `F1` dans DevTools pour ouvrir [Paramètres][DevtoolsCustomizeIndexSettings] et désactiver la langue du navigateur **Match.**  
 
@@ -124,7 +124,7 @@ L’extension de Microsoft Edge web vous permet d’analyser facilement votre pa
    Outil **Hints** dans DevTools lors de l’installation de l’extension de navigateur webhint  
 :::image-end:::  
 
-[Essayez l’extension de navigateur webhint dans Microsoft Edge][MicrosoftEdgeInsiderAddons].  Une fois l’extension installée, ouvrez DevTools et choisissez l’outil **Hints.**  À partir de là, exécutez une analyse de site personnalisable.  Pour en savoir [plus, webhint.io][WebhintBrowserExtension] plus d’informations.  
+[Essayez l’extension de navigateur webhint dans Microsoft Edge][MicrosoftEdgeInsiderAddons].  Une fois l’extension installée, ouvrez DevTools et choisissez **l’outil Hints.**  À partir de là, exécutez une analyse de site personnalisable.  Pour en savoir [plus, webhint.io][WebhintBrowserExtension] plus d’informations.  
 
 ### <a name="3d-view"></a>Vue 3D  
 
@@ -134,7 +134,7 @@ Utilisez la vue **3D** pour déboguer votre application web en naviguant dans le
    Affichage 3D dans devTools  
 :::image-end:::  
 
-Pour accéder à la vue 3D, sélectionnez , tapez en mode `Ctrl`  +  `Shift`  +  `P` **3D** et **sélectionnez Afficher la vue 3D.**  
+Pour accéder à la vue 3D, sélectionnez , tapez en mode `Ctrl`  +  `Shift`  +  `P` **3D,** puis **sélectionnez Afficher la vue 3D.**  
 
 L Microsoft Edge l’équipe Chromium sur l’interface utilisateur et ajoute des fonctionnalités à l’affichage 3D. Envoyez donc vos [commentaires.](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
@@ -146,9 +146,9 @@ L’équipe DevTools a également publié certaines extensions pour [Visual Stud
 
 #### <a name="elements-for-microsoft-edge"></a>Éléments pour Microsoft Edge  
 
-Utilisez l’outil Elements à partir de Visual Studio Code en ajoutant l’extension Microsoft Edge [\(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.  
+Utilisez l’outil Éléments à partir de Visual Studio Code en ajoutant l’extension Microsoft Edge [\(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.  
 
-:::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="L’outil Elements dans Visual Studio Code l’aide de l’extension Elements for Microsoft Edge" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
+:::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="L’outil Elements dans Visual Studio Code à l’aide de l’extension Elements for Microsoft Edge" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
    **L’outil Elements** dans Visual Studio Code l’aide de l’extension Elements for Microsoft Edge  
 :::image-end:::  
 
@@ -206,7 +206,7 @@ Après [avoir activé la barre d’outils][DevtoolsDeviceModeIndexSimulateMobile
    Simulation d’uneport d’affichage G4  
 :::image-end:::  
 
-Choisissez [Afficher l’image de l’appareil][DevtoolsDeviceModeIndexShowDeviceFrame] pour afficher le matériel De LaG4 autour de la fenêtre d’affichage.  
+Sélectionnez [Afficher le cadre de][DevtoolsDeviceModeIndexShowDeviceFrame] l’appareil pour afficher le matériel de LaG4 autour de la fenêtre d’affichage.  
 
 :::image type="complex" source="../../images/2020/01/motog4frame.msft.png" alt-text="Affichage du matériel Du G4" lightbox="../../images/2020/01/motog4frame.msft.png":::
    Affichage du matériel Du G4  
@@ -294,7 +294,7 @@ La console fournit désormais plus de détails sur les raisons pour lesquelles u
 
 ### <a name="setting-for-disabling-scrolling-past-the-end-of-a-file"></a>Paramètre de désactivation du défilement au-delà de la fin d’un fichier  
 
-Ouvrez [Paramètres][DevtoolsCustomizeIndexSettings] puis désactivez Préférences **** Sources Autoriser le défilement au-delà de la fin du fichier pour désactiver le comportement de l’interface utilisateur par défaut qui vous permet de faire défiler bien au-delà de la fin d’un fichier dans le panneau  >  ****  >  **** **Sources.**  
+Ouvrez [Paramètres][DevtoolsCustomizeIndexSettings] puis désactivez Préférences **** Sources Autoriser le défilement au-delà de la fin du fichier pour désactiver le comportement d’interface utilisateur par défaut qui vous permet de faire défiler bien au-delà de la fin d’un fichier dans le panneau  >  ****  >  **** **Sources.**  
 
 :::image type="complex" source="../../images/2020/01/settings.msft.png" alt-text="Désactivation de l’utilisation du défilement au-delà de la fin du fichier" lightbox="../../images/2020/01/settings.msft.png":::
    Désactivation de **l’utilisation du défilement au-delà de la fin du** fichier dans Paramètres  
@@ -318,15 +318,15 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 [DevtoolsDeviceModeIndexShowDeviceFrame]: ../../../device-mode/index.md#show-device-frame "Afficher l’image de l’appareil : simuler des appareils mobiles en mode Microsoft Edge devTools | Documents Microsoft"
 [DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Exécuter des commandes avec le menu de commande DevTools de Microsoft Edge | Microsoft Docs"  
 [DevtoolsDeviceModeIndexThrottleNetworkCpu]: ../../../device-mode/index.md#throttle-the-network-and-cpu "Limiter le réseau et le processeur : simuler des appareils mobiles en mode appareil Microsoft Edge devTools | Documents Microsoft"
-[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Paramètres-personnaliser Microsoft Edge DevTools | Documents Microsoft"
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Paramètres - Personnaliser Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsStorageCookiesFields]: ../../../storage/cookies.md#fields "Champs : afficher, modifier et supprimer des cookies avec Microsoft Edge devTools | Documents Microsoft"  
 
 [VisualStudioIndex]: ../../../../visual-studio/index.md "Visual Studio | Documents Microsoft"  
 
-[VisualStudioCodeDebuggerEdgeExtension]: ../../../../visual-studio-code/debugger-for-edge.md "Débogger pour les Microsoft Edge Visual Studio Code extension | Documents Microsoft"  
+[VisualStudioCodeDebuggerEdgeExtension]: ../../../../visual-studio-code/debugger-for-edge.md "Débogger pour les Microsoft Edge Visual Studio Code d’extension | Documents Microsoft"  
 [VisualStudioCodeElementEdgeExtension]: ../../../../visual-studio-code/elements-for-edge.md "Éléments pour les Microsoft Edge Visual Studio Code d’extension | Documents Microsoft"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canaux d’aperçu Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canaux de préversion de Microsoft Edge"  
 
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 [VisualStudioMarketplaceDebuggerEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Débogger pour Microsoft Edge | Visual Studio Marketplace"  
@@ -343,10 +343,10 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 [CR924693]: https://crbug.com/924693 "Demande de fonctionnalité : ajouter Le G4 à la liste des modes d’appareil | Chromium Bogues"  
 [CR1030258]: https://crbug.com/1030258 "Cr 1030258 | Chromium Bogues"  
 [CR1026879]: https://crbug.com/1026879 "L’onglet Cookie de la console dev n’affiche plus la priorité | Chromium Bogues"  
-[CR1029826]: https://crbug.com/1029826 "onglet réseau -> choisir de demander -> copie -> copie car l’extraction ne copie pas les cookies | Chromium Bogues"  
+[CR1029826]: https://crbug.com/1029826 "onglet réseau -> choisir de demander -> copie -> copie, car l’extraction ne copie pas les cookies | Chromium Bogues"  
 [CR985402]: https://crbug.com/985402 "Les chaînes d’erreur d’icône de manifeste d’application web | Chromium Bogues"  
-[CR963183]: https://crbug.com/963183 "DevTools ne sont pas conformes WCAG | Chromium Bogues"  
-[CR941561]: https://crbug.com/941561 "Localisabilité de l'| Chromium Bogues"  
+[CR963183]: https://crbug.com/963183 "Les devTools ne sont pas conformes AUX WCAG | Chromium Bogues"  
+[CR941561]: https://crbug.com/941561 "Localisabilité du | DevTools Chromium Bogues"  
 [CR987787]: https://crbug.com/987787 "Vue Dom 3D | Chromium Bogues"  
 
 [CSSContentDemo]: https://mathiasbynens.github.io/css-dbg-stories/css-escapes.html "Démonstration du contenu CSS sans paysage"  
@@ -369,7 +369,7 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 > La page d’origine est disponible [ici](https://developer.chrome.com/blog/new-in-devtools-81) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

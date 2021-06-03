@@ -1,5 +1,5 @@
 ---
-description: Processus de mise à jour ou de suppression des extensions du magasin de modules extensions Microsoft Edge
+description: Processus de mise à jour ou de suppression des extensions du magasin Microsoft Edge de modules.
 title: Mettre à jour une liste d’extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -16,25 +16,25 @@ ms.locfileid: "11343162"
 ---
 # Mettre à jour ou supprimer votre extension  
 
-Vous pouvez mettre à jour une extension envoyée ou supprimer une liste d’extensions publiées du magasin de modules extensions Microsoft Edge à tout moment.  
+Vous pouvez mettre à jour une extension envoyée ou supprimer une liste d’extensions publiées du magasin Microsoft Edge des extensions à tout moment.  
 
-## Mettre à jour votre extension sur le magasin de modules de microsoft Edge  
+## Mettre à jour votre extension sur le Microsoft Edge de modules logiciels  
 
 > [!NOTE]
 > La durée du processus de certification pour une mise à jour d’une extension peut prendre de quelques heures à quelques jours.  
 
-### Mettre à jour une extension existante dans le magasin de modules extensions Microsoft Edge  
+### Mettre à jour une extension existante dans le magasin Microsoft Edge de modules logiciels  
 
 Pour mettre à jour votre extension sur le store, complétez les étapes suivantes.  
 
 1.  Accédez à votre [tableau de bord du][MicrosoftPartnerCenter] développeur et choisissez l’extension que vous souhaitez mettre à jour.  
 1.  Mettez à jour le package d’extension ou les métadonnées de l’extension.  Si vous mettez à jour le package d’extension, veillez à augmenter la version dans le fichier manifeste.  
 1.  Après avoir apporté les modifications, **sélectionnez Enregistrer**publier pour mettre à jour votre liste d’extensions  >  **** et démarrer le processus de certification.  
-1.  Une fois que la colonne s’affiche, votre mise à jour d’extension est disponible dans le magasin des `Status` `In the store` extensions Microsoft Edge.  
+1.  Une fois que la colonne s’affiche, votre mise à jour d’extension est disponible dans Microsoft Edge `Status` `In the store` magasin de modules extensions.  
     
 ### Mettre à jour votre extension au cours de l’étape de certification  
 
-Alors que votre extension est encore en phase de certification et avant sa publication dans le magasin de modules de développement Microsoft Edge, vous pouvez la mettre à jour. Si votre extension échoue au processus de certification, vous devrez peut-être également mettre à jour votre extension.    
+Bien que votre extension soit encore en phase de certification et avant sa publication dans le magasin de modules Microsoft Edge, vous pouvez la mettre à jour. Si votre extension échoue au processus de certification, vous devrez peut-être également mettre à jour votre extension.    
 
 Pour vérifier l’état de votre extension, accédez au tableau de bord associé à votre liste sur [l’Partner Center][MicrosoftPartnerCenter].  
 
@@ -58,15 +58,15 @@ Pour modifier votre extension, complétez les étapes suivantes.
 1.  Mettez à jour le package d’extension ou les métadonnées incorporant les commentaires reçus à partir du processus de certification.  Si vous mettez à jour le package d’extension, veillez à augmenter la version dans le fichier manifeste.  
 1.  Après avoir apporté des modifications, **sélectionnez Enregistrer**  >  **publier.**  
     
-## Supprimer des extensions du magasin de modules extensions Microsoft Edge  
+## Supprimer des extensions du magasin Microsoft Edge de modules  
 
-Pour supprimer votre extension du magasin de modules supplémentaires Microsoft Edge, complétez les étapes suivantes.  
+Pour supprimer votre extension du magasin Microsoft Edge de modules supplémentaires, complétez les étapes suivantes.  
 
 1.  Accédez à votre [tableau de bord du développeur.][MicrosoftPartnerCenter]  Dans la page Tableau de bord, choisissez la liste à supprimer.  
 1.  Sélectionnez **Vue d’ensemble de** l’extension dans votre description.  
 1.  Choose **Unpublish** to remove the listing from the Microsoft Edge Add-ons store.  
     
-Votre extension est désormais supprimée du magasin de modules extensions Microsoft Edge.  Les utilisateurs qui ont déjà installé votre extension peuvent continuer à l’utiliser, mais les nouveaux utilisateurs ne la trouvent pas.  
+Votre extension est désormais supprimée du magasin Microsoft Edge de modules.  Les utilisateurs qui ont déjà installé votre extension peuvent continuer à l’utiliser, mais les nouveaux utilisateurs ne la trouvent pas.  
 
 <!-- links -->  
 

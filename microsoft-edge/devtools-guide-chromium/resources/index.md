@@ -31,11 +31,11 @@ ms.locfileid: "11565070"
 
 Ce guide vous apprend à utiliser Microsoft Edge DevTools pour afficher les ressources d’une page web.  Les ressources sont les fichiers dont une page a besoin pour s’afficher correctement.  Les fichiers CSS, JavaScript et HTML sont des exemples de ressources, ainsi que des images.  
 
-Ce guide suppose que vous connaissez les principes de base du développement [web][MDNLearnWebDevelopment] et Microsoft Edge [DevTools][MicrosoftEdgeDevTools].  
+Ce guide suppose que vous êtes familiarisé avec les principes de base du développement [web][MDNLearnWebDevelopment] et Microsoft Edge [DevTools][MicrosoftEdgeDevTools].  
 
 ## <a name="open-resources"></a>Ouvrir des ressources  
 
-Lorsque vous connaissez le nom de la ressource que vous souhaitez inspecter, le **menu** Commande permet d’ouvrir rapidement la ressource.  
+Lorsque vous connaissez le nom de la ressource que vous souhaitez inspecter, le **menu** Commande fournit un moyen rapide d’ouvrir la ressource.  
 
 1.  Sélectionnez `Control` + `P` \(Windows, Linux\) ou `Command` + `P` \(macOS\).  La **boîte de dialogue Ouvrir** un fichier s’ouvre.  
     
@@ -80,7 +80,7 @@ Accédez à [Journal de l’activité réseau.][DevtoolsNetworkLogActivity]
 Pour afficher les ressources d’une page web organisée par répertoire :  
 
 1.  Ouvrez DevTools.
-1.  Choisissez **l’outil Sources,** puis, dans le volet **Navigateur** dans le coin supérieur gauche, choisissez **l’onglet Page.**
+1.  Choisissez **l’outil Sources,** puis dans le volet **Navigateur** dans le coin supérieur gauche, choisissez **l’onglet Page.**
 1.  Choisissez le **bouton Plus d’options** (...) à droite de l’onglet **Page,** puis choisissez **Grouper par dossier.**
     
     :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="Onglet Page dans le volet Navigateur de l’outil Sources" lightbox="../media/resources-sources-page-empty.msft.png":::
@@ -91,7 +91,7 @@ Pour afficher les ressources d’une page web organisée par répertoire :
     
     | Élément de page | Description |  
     |:--- |:--- |  
-    | `top` | Contexte de navigation de document [principal.][MDNInlineFrame] |  
+    | `top` | Contexte de [navigation de document principal.][MDNInlineFrame] |  
     | `airhorner.com` | Le domaine.  Toutes les ressources imbrmbrées sous celui-ci proviennent de ce domaine.  Par exemple, l’URL complète du `comlink.global.j` fichier est probablement `https://airhorner.com/scripts/comlink.global.js` . |  
     | `scripts` | Répertoire. |  
     | `(index)` | Document HTML principal. |  
@@ -125,7 +125,7 @@ Par défaut, l’onglet **Page** groupe les ressources par répertoire.  Pour af
 
 Pour grouper des ressources en fonction de leur type de fichier :  
 
-1.  Choisissez **l’onglet** Application.  **L’outil Application** s’ouvre.  Par défaut, **le volet** Manifeste s’ouvre généralement en premier.  
+1.  Sélectionnez **l’onglet** Application.  **L’outil Application** s’ouvre.  Par défaut, **le volet** Manifeste s’ouvre généralement en premier.  
     
     :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="L’outil Application" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
        **L’outil Application**  
@@ -171,7 +171,7 @@ Accédez à [Filtrer par type de ressource.][DevtoolsNetworkFilterByResourceType
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/resources/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

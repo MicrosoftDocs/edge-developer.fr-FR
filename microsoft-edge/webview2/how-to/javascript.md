@@ -41,7 +41,7 @@ Dans cette section, accédez à un fichier JavaScript dédié à partir de votre
 
 Pour résoudre le problème, créez un fichier JavaScript distinct avec votre code, puis passez une référence à ce fichier à l’aide `ExecuteScriptAsync` des paramètres.  
 
-1.  Créez `.js` un fichier dans votre projet et ajoutez le code JavaScript à exécuter.  Par exemple, créez un fichier appelé `script.js` .  
+1.  Créez un fichier dans votre projet et ajoutez le `.js` code JavaScript à exécuter.  Par exemple, créez un fichier appelé `script.js` .  
 1.  Convertissez le fichier JavaScript en une chaîne qui est transmise à `ExecuteScriptAsync` .  
     1.  Pour convertir votre fichier JavaScript en chaîne, copiez l’extrait de code suivant.  
         
@@ -85,7 +85,7 @@ Pour commencer, explorez la fonctionnalité de glisser-déposer actuelle.
     ```  
     
 1.  Exécutez votre projet.  
-1.  Essayez de `contoso.txt` glisser-déposer.  Confirmez que vous n’êtes pas en mesure de glisser-déposer.  
+1.  Essayez de `contoso.txt` glisser-déposer.  Confirmez que vous ne pouvez pas glisser-déposer.  
     
 ## <a name="scenario--removing-the-context-menu"></a>Scénario : suppression du menu Context  
 
@@ -110,12 +110,12 @@ Pour commencer, explorez la fonctionnalité actuelle du menu contextuel.
     
 1.  Exécutez à nouveau le code.  Confirmez que vous n’êtes pas en mesure d’ouvrir un menu contexto \(clic droit\).  
     
-## <a name="see-also"></a>Voir également  
+## <a name="see-also"></a>Articles associés  
 
 *   To get started using WebView2, navigate to [WebView2 Prise en main Guides][Webview2MainGetStarted].  
 *   Pour obtenir un exemple complet des fonctionnalités WebView2, accédez au repo [WebView2Samples][GithubMicrosoftedgeWebview2samples] GitHub.  
 *   Pour plus d’informations sur les API WebView2, accédez à la [référence d’API.][Webview2ApiReference]  
-*   Pour plus d’informations sur WebView2, accédez à [Ressources WebView2.][Webview2MainNextSteps]  
+*   Pour plus d’informations sur WebView2, accédez [à Ressources WebView2.][Webview2MainNextSteps]  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe web Microsoft Edge WebView  
 

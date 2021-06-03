@@ -46,7 +46,7 @@ La séquence normale d’événements de navigation `NavigationStarting` est , ,
       |:--- |:--- |:--- |  
       | 1 | `NavigationStarting`  |  WebView2 commence à naviguer et la navigation entraîne une demande réseau.  L’hôte peut désapprouver la demande pendant l’événement.  |  
       | 2 | `SourceChanged`  |  La source de WebView2 se transforme en une nouvelle URL.  L’événement peut être le résultat d’une action de navigation qui ne provoque pas de demande réseau telle qu’une navigation par fragment.  |  
-      | 3 | `ContentLoading`  |  WebView commence à charger le contenu de la nouvelle page.  |  
+      | 3 | `ContentLoading`  |  WebView démarre le chargement du contenu pour la nouvelle page.  |  
       | 4 | `HistoryChanged`  |  La navigation entraîne la mise à jour de l’historique de WebView2.  |  
       | 5 | `NavigationCompleted`  |  WebView2 termine le chargement du contenu sur la nouvelle page.  |  
    :::column-end:::
@@ -64,11 +64,11 @@ Suivre les événements de navigation vers chaque nouveau document à l’aide d
 
 Pour surveiller ou annuler des événements de navigation à l’intérieur de sous-images dans une instance WebView2, utilisez les événements qui agissent comme les événements équivalents `FrameNavigationStarting` `FrameNavigationCompleted` sans trame.  
 
-## <a name="see-also"></a>Voir également  
+## <a name="see-also"></a>Articles associés  
 
 *   Pour commencer à utiliser WebView2, accédez aux guides de Prise en main [WebView2.][Webview2IndexGetStarted]  
 *   Pour obtenir un exemple complet des fonctionnalités WebView2, accédez au [repo WebView2Samples][GithubMicrosoftedgeWebview2samples] GitHub.  
-*   Pour plus d’informations sur les API WebView2, accédez à la référence [d’API.][DotnetApiMicrosoftWebWebview2WpfWebview2]  
+*   Pour plus d’informations sur les API WebView2, accédez à la [référence d’API.][DotnetApiMicrosoftWebWebview2WpfWebview2]  
 *   Pour plus d’informations sur WebView2, accédez [à Ressources WebView2.][Webview2IndexNextSteps]  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe web Microsoft Edge WebView  

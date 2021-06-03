@@ -61,7 +61,7 @@ Il existe deux façons d’ouvrir l’Inspecteur d’animation :
 
 *   Ouvrir le menu Personnaliser et contrôler **DevTools**  
     1.  Accédez au **sous-menu Outils** Plus.  
-    1.  Choisissez **Animations**:  
+    1.  Choisissez **animations**:  
         
         :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Animations à l’aide du menu principal" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
            **Animations à l’aide** du menu principal  
@@ -102,8 +102,8 @@ Pour capturer une animation, il vous suffit d’effectuer l’interaction qui d�
 Une fois que vous avez capturé une animation, vous pouvez la relire de plusieurs façons :  
 
 *   Pointez sur la miniature dans **le** volet Vue d’ensemble pour en afficher un aperçu.  
-*   Choisissez le groupe **** d’animations dans le volet Vue **** d’ensemble \(afin qu’il s’affiche dans le volet d’informations\) et choisissez l’icône relecture **\(** icône de relecture ![ ](../media/replay-button-icon.msft.png) \).  L’animation est relecture dans la vue.  Choisissez les **icônes de vitesse d’animation** \( icônes de vitesse d’animation \) pour modifier la vitesse d’aperçu du groupe d’animations ![ actuellement ](../media/animation-speed-buttons-icon.msft.png) sélectionné.  Vous pouvez utiliser la barre verticale rouge pour modifier votre position actuelle.  
-*   Choisissez et faites glisser la barre verticale rouge pour nettoyer l’animation de la vue.  
+*   Choisissez le groupe **** d’animations dans le volet Vue **** d’ensemble \(afin qu’il s’affiche dans le volet d’informations\) et choisissez l’icône de relecture **\(** icône de relecture ![ ](../media/replay-button-icon.msft.png) \).  L’animation est relecture dans la vue.  Choisissez les **icônes de vitesse d’animation** \( icônes de vitesse d’animation \) pour modifier la vitesse d’aperçu du groupe d’animations ![ actuellement ](../media/animation-speed-buttons-icon.msft.png) sélectionné.  Vous pouvez utiliser la barre verticale rouge pour modifier votre position actuelle.  
+*   Choisissez et faites glisser la barre verticale rouge pour nettoyer l’animation de laport d’affichage.  
     
 ### <a name="view-animation-details"></a>Afficher les détails de l’animation  
 
@@ -151,7 +151,7 @@ Pour modifier la durée d’une animation, choisissez et faites glisser le premi
    Durée modifiée  
 :::image-end:::  
 
-Si l’animation définit des règles d’image clé, celles-ci sont représentées en tant que cercles internes blancs.  Choisissez et faites glisser l’une d’entre elles pour modifier le minutage de l’images clés.  
+Si l’animation définit des règles d’image clé, celles-ci sont représentées en tant que cercles internes blancs.  Choisissez et faites glisser l’un de ces éléments pour modifier le minutage de l’images clés.  
 
 :::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="Images clés modifiées" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
    Images clés modifiées  
@@ -174,7 +174,7 @@ Pour ajouter un délai à une animation, choisissez-la et faites-la glisser n’
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

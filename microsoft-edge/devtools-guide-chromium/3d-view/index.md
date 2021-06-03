@@ -30,7 +30,7 @@ Sur le côté gauche, vous pouvez utiliser trois volets pour votre expérience d
 
 *   Volet [d’index Z.](#z-index)  Parcourez les différents éléments de l’application web avec le contexte d’index z à l’esprit.  Le **volet d’index Z** est le volet par défaut.  
 *   Volet [DOM 3D.](#3d-dom)  Explorez le DOM dans son ensemble avec tous les éléments facilement accessibles.  Pour accéder au volet, choisissez le volet **DOM** en face du volet **d’index Z.**  
-*   Volet [Calques composites.](#composited-layers)  Ajoutez un autre élément 3D pour créer une expérience plus complète du point de vue des couches.  Pour accéder au volet, choisissez le volet **Couches** composites en côté du **volet DOM.**  
+*   Volet [Calques composites.](#composited-layers)  Ajoutez un autre élément 3D pour créer une expérience plus complète du point de vue des couches.  Pour accéder au volet, choisissez le volet **Calques** composites en côté du **volet DOM.**  
     
 Sur le côté droit, la zone de dessin affiche vos sélections à partir de [l’index Z,](#z-index) [du DOM 3D](#3d-dom)ou des [calques composites.](#composited-layers)  
 
@@ -42,7 +42,7 @@ Sur le côté droit, la zone de dessin affiche vos sélections à partir de [l�
 
 ### <a name="keyboard-shortcuts"></a>Raccourcis clavier  
 
-*   Faire pivoter le DOM : pour faire pivoter horizontalement, sélectionnez les `left-arrow` touches et les `right-arrow` touches.  Pour faire pivoter verticalement, sélectionnez `up-arrow` les touches et les `down-arrow` touches.  
+*   Faire pivoter le DOM : pour faire pivoter horizontalement, sélectionnez les `left-arrow` touches et les `right-arrow` touches.  Pour faire pivoter verticalement, sélectionnez les `up-arrow` touches et les `down-arrow` touches.  
 *   Naviguez dans le DOM : pour parcourir les éléments adjacents, choisissez un élément et sélectionnez les `up-arrow` touches et les `down-arrow` touches.  
 
 ### <a name="mouse-controls"></a>Contrôles de souris  
@@ -76,17 +76,17 @@ Les **éléments Highlight avec le** paramètre de contexte d’empilement vous 
 
 Le **bouton Afficher tous les** éléments est le moyen le plus rapide d’afficher tous les éléments du DOM après avoir changé les paramètres sous celui-ci.  
 
-Le **bouton Afficher uniquement avec le** bouton de contexte d’empilement supprime les éléments sans contexte d’empilement et aplatit le DOM pour faciliter la navigation.  
+Le bouton Afficher uniquement avec un contexte **d’empilement** supprime les éléments sans contexte d’empilement et aplatit le DOM pour faciliter la navigation.  
 
 Le **bouton Isoler l’élément sélectionné** est essentiellement de trois boutons dans un.  Il existe deux case **** à cocher sous le bouton Isoler l’élément sélectionné : la case à cocher Afficher tous les **parents** et la case à cocher Conserver uniquement les **parents** avec une nouvelle case à cocher de contexte d’empilement.  
 
 La **case à cocher** Afficher tous les parents est désactivée par défaut.  Pour afficher l’élément et tous les parents sur la zone de dessin, choisissez un élément et choisissez le bouton Isoler **l’élément** sélectionné.  
 
-Pour afficher l’élément et les parents qui ont un nouveau contexte d’empilement sur la zone de dessin, sélectionnez Le paramètre Conserver uniquement les **parents** avec un nouveau paramètre de contexte d’empilement et choisissez le bouton Isoler l’élément **sélectionné.**  
+Pour afficher l’élément et les parents qui ont un nouveau contexte d’empilement sur la zone de dessin, sélectionnez Conserver uniquement les **parents** avec un nouveau paramètre de contexte d’empilement et choisissez le bouton Isoler l’élément **sélectionné.**  
 
 Pour afficher l’élément que vous avez choisi sur la zone de dessin, désactiver les deux paramètres et sélectionner le bouton Isoler **l’élément** sélectionné.  
 
-En bas du volet **DOM 3D,** recherchez les éléments Hide avec le même ordre de couleur que leur case à cocher **parent.**  Le choix et la désélection de la case à cocher actualisent les éléments en fonction de votre choix.  S’il est choisi, les éléments qui partagent l’ordre de la couleur sont aplatis au parent.  
+En bas du volet **DOM 3D,** recherchez les éléments Hide avec le même ordre de couleur que leur case à cocher **parente.**  Le choix et la désélection de la case à cocher actualisent les éléments en fonction de votre choix.  S’il est choisi, les éléments qui partagent l’ordre de la couleur sont aplatis au parent.  
 
 Les options sont destinées à effacer une partie de l’encombrement que des pages web plus complexes créent dans votre zone de dessin.  
 
@@ -100,13 +100,13 @@ Les différentes visualisations que vous pouvez utiliser pour le DOM dans votre 
    Affichage DOM  
 :::image-end:::  
 
-Si vous souhaitez prendre plus d’une vue de débogage générale, plutôt que l’expérience d’index z, le **DOM 3D** donne une vue d’ensemble du DOM.  Étant donné que le contexte z-index est supprimé, le DOM est empilé plus étroitement et plus proprement.  Le **volet DOM 3D** possède des fonctionnalités similaires, mais il existe quelques nuances.  
+Si vous souhaitez prendre plus d’une vue de débogage générale, plutôt que l’expérience d’index z, le **DOM 3D** donne une vue d’ensemble du DOM.  Étant donné que le contexte d’index z est supprimé, le DOM est empilé plus étroitement et plus proprement.  Le **volet DOM 3D** possède des fonctionnalités similaires, mais il existe quelques nuances.  
 
 ### <a name="changing-your-view"></a>Modification de votre affichage  
 
 Dans le volet **DOM 3D,** le bouton **** Isoler l’élément sélectionné inclut les case à cocher Inclure les enfants et Inclure **les parents.** ****  Les deux case à cocher sont désactivées par défaut.  Cela signifie que **** si vous choisissez le bouton Isoler l’élément sélectionné après avoir choisi un élément, la zone de dessin affiche l’élément choisi, les parents de l’élément et les enfants de l’élément.  Désactiver le paramètre **Inclure** les **** enfants et sélectionner de nouveau le bouton Isoler l’élément sélectionné pour afficher l’élément choisi et les parents de l’élément.  Si vous sélectionnez le paramètre Inclure **** des enfants et **** que vous la désactiverez, puis que vous choisissez le bouton Isoler l’élément sélectionné, la zone de dessin affiche l’élément et tous les enfants. ****  Si vous turn off both settings and choose the **Isolate selected element** button, the canvas only displays the element you previously choose.  
 
-Un curseur sur le volet de contrôle nommé Niveau d’imbrmbrage pour **la page** avec un numéro à côté de celui-ci.  Le nombre indique le nombre de calques pour le document.  Le fait de faire glisser le curseur vers la gauche entraîne l’éloignement des couches les plus à l’extérieur jusqu’à ce qu’il vous reste un niveau d’imbrmbrage qui affiche uniquement l’élément arrière le plus éloigné dans le `1` DOM.  Pour supprimer une partie de l’encombrement, faites glisser le curseur.  Cela vous permet d’avoir un examen plus étroit de ce qui se passe dans les niveaux inférieurs.  
+Un curseur sur le volet de contrôle nommé Niveau d’imbrmbrage pour **la page** avec un numéro à côté de celui-ci.  Le nombre indique le nombre de couches du document.  Le fait de faire glisser le curseur vers la gauche entraîne l’éloignement des couches les plus à l’extérieur jusqu’à ce qu’il vous reste un niveau d’imbrmbrage qui affiche uniquement l’élément arrière le plus éloigné dans le `1` DOM.  Pour supprimer une partie de l’encombrement, faites glisser le curseur.  Cela vous permet d’avoir un examen plus étroit de ce qui se passe dans les niveaux inférieurs.  
 
 ### <a name="dom-color-type"></a>Type de couleur DOM  
 
@@ -127,15 +127,15 @@ Le **volet DOM 3D** affiche les options suivantes.
    Volet des **couches composites**
 :::image-end:::  
 
-Le **volet Calques composites** ouvre les éléments de l’outil **Layers** sans modifier les contextes.  Vous pouvez toujours accéder aux détails de chacune des couches et avoir les **rects** de défilement lent et **Paint**.
+Le **volet Calques composites** ouvre les éléments de l’outil **Layers** sans modifier les contextes.  Vous pouvez toujours accéder aux détails de chacune des couches et avoir les **rects** de défilement **lent**et Paint .
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
-L’équipe Microsoft Edge Devtools travaille sur l’interface utilisateur et ajoute des fonctionnalités à la vue 3D en fonction de vos commentaires.  Envoyez vos commentaires pour vous aider à améliorer Microsoft Edge DevTools.  Sélectionnez **l’icône** Envoyer des commentaires dans DevTools ou sélectionnez sur Windows/Linux ou sur macOS, puis entrez les commentaires ou les demandes de fonctionnalités dont vous disposez pour `Alt` + `Shift` + `I` `Option` + `Shift` + `I` devTools.  
+L Microsoft Edge devtools travaille sur l’interface utilisateur et ajoute des fonctionnalités à la vue 3D en fonction de vos commentaires.  Envoyez vos commentaires pour vous aider à améliorer Microsoft Edge DevTools.  Sélectionnez **l’icône** Envoyer des commentaires dans DevTools ou sélectionnez sur Windows/Linux ou sur macOS et entrez les commentaires ou les demandes de fonctionnalités dont vous disposez pour `Alt` + `Shift` + `I` `Option` + `Shift` + `I` devTools.  
 
 <!-- links -->  
 
-[GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Vue 3D Microsoft Edge DevTools - MicrosoftEdge/DevToolsSamples | GitHub"  
+[GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Microsoft Edge Vue 3D DevTools - MicrosoftEdge/DevToolsSamples | GitHub"  
 
-[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Modèle objet de document (DOM) | MDN"  
+[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"  

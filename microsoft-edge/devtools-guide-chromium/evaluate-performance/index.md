@@ -84,13 +84,13 @@ Il est difficile de créer une démonstration des performances d’exécution qu
     
     > [!NOTE]
     > Pour mieux afficher une différence entre les versions optimisées et non optimisées, sélectionnez le bouton **Soustraction 10** plusieurs fois et essayez à nouveau.  
-    > Si vous ajoutez un trop grand nombre d’icônes bleues, il se peut que vous n’observiez pas de différence majeure dans les résultats des deux versions.  
+    > Si vous ajoutez trop d’icônes bleues, il se peut que vous n’observiez pas de différence majeure dans les résultats pour les deux versions.  
     
-1.  Choose **Un-Optimize**.  Les icônes bleues se déplacent plus lentement et avec plus de lenteur.  
+1.  Choose **Un-Optimize**.  Les icônes bleues se déplacent plus lentement et sont de nouveau plus lentes.  
     
-### <a name="record-runtime-performance"></a>Performances d’exécution d’enregistrement  
+### <a name="record-runtime-performance"></a>Enregistrer les performances d’exécution  
 
-Lorsque vous avez publié la version optimisée de la page, les icônes bleues se déplacent plus rapidement.  Pourquoi?  Les deux versions sont supposées déplacer les icônes de la même quantité d’espace dans la même durée.  Prenez un enregistrement dans le panneau Performance pour découvrir comment détecter le goulot d’étranglement des performances dans la version non optimisée.  
+Lorsque vous avez publié la version optimisée de la page, les icônes bleues se déplacent plus rapidement.  Pourquoi?  Les deux versions sont supposées déplacer les icônes de la même quantité d’espace dans la même durée.  Prenez un enregistrement dans le panneau Performances pour découvrir comment détecter le goulot d’étranglement des performances dans la version non optimisée.  
 
 1.  Dans DevTools, choisissez **Record** \( ![ Record ](../media/record-icon.msft.png) \).  DevTools capture les mesures de performances au cours de l’exécution de la page.  
     
@@ -111,9 +111,9 @@ Wow, il s’agit d’une quantité considérable de données.  ne vous inquiéte
 
 Après avoir enregistré les performances de la page, mesurez la qualité des performances de la page et trouvez les causes.  
 
-### <a name="analyze-frames-per-second"></a>Analyser les images par seconde  
+### <a name="analyze-frames-per-second"></a>Analyser des images par seconde  
 
-La mesure principale pour mesurer les performances d’une animation est une image par seconde \(FPS\).  Les utilisateurs sont satisfaits lorsque les animations s’exécutent à 60 FPS.  
+La mesure principale pour mesurer les performances d’une animation est l’image par seconde \(FPS\).  Les utilisateurs sont satisfaits lorsque les animations s’exécutent à 60 FPS.  
 
 1.  Examinez **le graphique FPS.**  Chaque fois qu’une barre rouge est affichée au-dessus de **FPS,** cela signifie que la vitesse d’images est si basse qu’elle nuit probablement à l’expérience utilisateur.  En règle générale, plus la barre verte est élevée, plus le FPS est élevé.  
     
@@ -124,7 +124,7 @@ La mesure principale pour mesurer les performances d’une animation est une ima
 1.  Sous le **graphique FPS,** le **graphique UC** s’affiche.  Les couleurs du **graphique UC** correspondent **** aux couleurs du panneau Résumé, en bas du panneau Performances.  Le fait que le **graphique de l’UC** soit plein de couleurs signifie que l’UC a été maximale pendant l’enregistrement.  Chaque fois que l’UC a été maximale pendant de longues périodes, il s’agit d’un indicateur qui vous permet de trouver des moyens de faire moins de travail.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="Graphique de l’UC et panneau De synthèse" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
-       Graphique **de l’UC** et **panneau De** synthèse  
+       Graphique **de l’UC** **et panneau De** synthèse  
     :::image-end:::  
     
 1.  Pointez sur **les graphiques FPS,** **CPU** **ou NET.**  DevTools affiche une capture d’écran de la page à ce stade.  Déplacez votre souris vers la gauche et la droite pour relire l’enregistrement.  L’action est référencé en tant que nettoyage et est utile pour analyser manuellement la progression des animations.  
@@ -133,7 +133,7 @@ La mesure principale pour mesurer les performances d’une animation est une ima
        Afficher une capture d’écran de la page autour de la marque de 2 500 ms de l’enregistrement  
     :::image-end:::  
     
-1.  Dans la section **Cadres,** pointez sur l’un des carrés verts.  DevTools vous montre le FPS pour cette image particulière.  Chaque image est probablement bien en dessous de la cible de 60 FPS.  
+1.  Dans la section **Cadres,** pointez sur l’un des carrés verts.  DevTools vous montre le FPS pour ce cadre particulier.  Chaque image est probablement bien en dessous de la cible de 60 FPS.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-frame-hover.msft.png" alt-text="Pointer sur un cadre" lightbox="../media/evaluate-performance-performance-frame-hover.msft.png":::
        Pointer sur un cadre  
@@ -149,7 +149,7 @@ Un autre outil pratique est la jauge FPS, qui fournit des estimations en temps r
 1.  Commencez à taper `Rendering` dans le menu Commande **et** choisissez Afficher **le rendu.**  
 1.  Dans **l’outil de** rendu, allumez **la jauge FPS.**  Une nouvelle superposition apparaît dans le haut à droite de votre vue.  
     
-    :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="Indicateur FPS" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
+    :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="La jauge FPS" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
        La **jauge FPS**  
         :::image-end:::  
     
@@ -171,7 +171,7 @@ Une fois que vous avez mesuré et vérifié que l’animation ne s’exécute pa
        Section **Main**  
     :::image-end:::  
     
-1.  Il y a beaucoup de données dans l’enregistrement.  Pour effectuer un zoom sur un seul événement ; choisissez, maintenez votre curseur sur **** la vue d’ensemble, qui est la section qui inclut les graphiques **FPS,** **CPU**et **NET.**  La section **Principale** et **le panneau Résumé** affichent uniquement les informations de la partie sélectionnée de l’enregistrement.  
+1.  Il y a beaucoup de données dans l’enregistrement.  Pour effectuer un zoom sur un seul événement ; choisissez, maintenez votre curseur sur **** la vue d’ensemble, qui est la section qui inclut les graphiques **FPS,** **CPU**et **NET.**  La section **Principale** et **le volet Résumé** affichent uniquement les informations de la partie sélectionnée de l’enregistrement.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Zoom sur un événement" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
        Zoom sur un événement  
@@ -212,7 +212,7 @@ Cela a été beaucoup à apprendre.  Vous avez maintenant une base solide dans l
 
 ### <a name="bonus-analyze-the-optimized-version"></a>Bonus : analyser la version optimisée  
 
-À l’aide des flux de **** travail et des outils que vous venons d’apprendre, sélectionnez Optimiser sur la démonstration pour activer le code optimisé, prendre un autre enregistrement des performances, puis analyser les résultats.  De la trame améliorée à la réduction du nombre d’événements dans le graphique de l’animation dans la section **Main,** la version optimisée de l’application fait beaucoup moins de travail, ce qui améliore les performances.  
+À l’aide des flux de **** travail et des outils que vous venons d’apprendre, sélectionnez Optimiser sur la démonstration pour activer le code optimisé, prendre un autre enregistrement des performances, puis analyser les résultats.  De la trame améliorée à la réduction du nombre d’événements dans le graphique de graphique graphique dans la section **Main,** la version optimisée de l’application fait beaucoup moins de travail, ce qui se produit de meilleures performances.  
 
 > [!NOTE]
 > Même la version optimisée n’est pas très bonne, car elle manipule la `top` propriété de chaque icône.  Une meilleure approche consiste à s’en tenir aux propriétés qui affectent uniquement la composition.  <!--  > For more information, navigate to [Use transform and opacity changes for animations][RenderingCompositor].  -->  
@@ -278,7 +278,7 @@ Enfin, il existe de nombreuses façons d’améliorer les performances d’exéc
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

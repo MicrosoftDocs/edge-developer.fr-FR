@@ -1,5 +1,5 @@
 ---
-description: Documentation canonique relative aux Microsoft Edge clavier DevTools.
+description: Documentation canonique pour les Microsoft Edge clavier DevTools.
 title: Microsoft Edge Raccourcis clavier DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -53,7 +53,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart, sinon la plupa
 | Focus sur le panneau suivant | `Control`+`]` | `Command`+`]` |  
 | Focus sur le panneau précédent | `Control`+`[` | `Command`+`[` |  
 | Revenir à la [position d’accueil que][DevtoolsCustomizeIndexPlacement] vous avez utilisée en dernier.  Si DevTools est à la position par défaut pour l’ensemble de la session, ce raccourci désespéra de DevTools dans une fenêtre distincte. | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
-| Basculer [l’émulation de l’appareil][DevtoolsDeviceModeIndex] | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |  
+| Basculez [l’émulation de l’appareil][DevtoolsDeviceModeIndex] | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |  
 | Toggle **Inspect Element Mode** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Ouvrir le [menu Commande][DevtoolsCommandMenuIndex] | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |  
 | Toggle the [Drawer][DevtoolsCustomizeIndexDrawer] | `Escape` | `Escape` |  
@@ -90,7 +90,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart, sinon la plupa
 | Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Accéder à la ligne dans laquelle une valeur de propriété est déclarée | Conserver, `Control` puis sélectionner la valeur de la propriété | Conserver, `Command` puis sélectionner la valeur de la propriété |  
-| Faire passer en cycle les représentations RBGA, HSLA et Hex d’une valeur de couleur | Mettre `Shift` en attente, puis sélectionner la **zone d’aperçu** de couleur en de côté de la valeur | Mettre `Shift` en attente, puis sélectionner la **zone d’aperçu** de couleur en de côté de la valeur |  
+| Faire passer en cycle les représentations RBGA, HSLA et Hex d’une valeur de couleur | Mettre `Shift` en attente, puis choisir la **zone d’aperçu** de couleur en de côté de la valeur | Mettre `Shift` en attente, puis choisir la **zone d’aperçu** de couleur en de côté de la valeur |  
 | Sélectionnez la propriété ou la valeur suivante/précédente | Choisissez un nom ou une valeur de propriété, puis sélectionnez `Tab` / `Shift`+`Tab` | Choisissez un nom ou une valeur de propriété, puis sélectionnez `Tab` / `Shift`+`Tab` |  
 | Incrémenter/décrémenter une valeur de propriété de 0,1 | Choisissez une valeur, puis sélectionnez `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | Choisissez une valeur, puis `Option` + `Up Arrow` sélectionnez /Option+Flèche vers le bas |  
 | Incrémenter/décrémenter une valeur de propriété de 1 | Choisissez une valeur, puis sélectionnez `Up Arrow` / `Down Arrow` | Choisissez une valeur, puis sélectionnez `Up Arrow` / `Down Arrow` |  
@@ -162,7 +162,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart, sinon la plupa
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes avec le menu de commande DevTools de Microsoft Edge | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Caisse : personnaliser Microsoft Edge devTools | Documents Microsoft"  
 [DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Modifier le placement de DevTools : personnaliser Microsoft Edge devTools | Documents Microsoft"  
-[DevtoolsDeviceModeIndex]: ../device-mode/index.md "Émuler des appareils mobiles dans Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsDeviceModeIndex]: ../device-mode/index.md "Émuler des appareils mobiles dans Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "Points d’arrêt de ligne de code : comment suspendre votre code avec des points d’arrêt dans Microsoft Edge devTools | Documents Microsoft"  
 
 <!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->  
@@ -172,7 +172,7 @@ Les raccourcis clavier suivants sont disponibles dans la plupart, sinon la plupa
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/shortcuts) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

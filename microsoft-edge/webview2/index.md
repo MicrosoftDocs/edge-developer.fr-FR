@@ -161,21 +161,21 @@ Une version de disponibilité générale \(GA\) ou d’aperçu est disponible da
     
 Vous pouvez exécuter des applications WebView2 sur les versions suivantes de Windows.  
 
-*   Windows 10  
+*   Windows10  
 *   Windows 8.1  
 *   Windows 7 \*\*  
 *   Windows Server2019  
 *   Windows Server2016  
-*   WindowsServer2012  
-*   WindowsServer2012R2  
+*   Windows Server 2012  
+*   Windows Server 2012 R2  
 *   Windows Server 2008 R2 \*\*  
     
 > [!IMPORTANT]
-> La prise en charge de \*\* WebView2 pour Windows 7 et Windows Server 2008 R2 possède le même cycle de prise en charge que Microsoft Edge.  Pour plus d’informations, [accédez à Microsoft Edge systèmes d’exploitation pris en charge.][DeployedgeMicrosoftEdgeSupportedOS]  
+> La prise en charge de \*\* WebView2 pour Windows 7 et Windows Server 2008 R2 possède le même cycle de prise en charge que Microsoft Edge.  Pour plus d’informations, [accédez Microsoft Edge systèmes d’exploitation pris en charge.][DeployedgeMicrosoftEdgeSupportedOS]  
 
 ## <a name="next-steps"></a>Étapes suivantes  
 
-Pour plus d’informations sur la façon de créer et de déployer des applications WebView2, examinez la documentation conceptuelle et les guides de pratiques.  
+Pour plus d’informations sur la façon de créer et de déployer des applications WebView2, examinez la documentation conceptuelle et les guides pratiques.  
 
 ### <a name="concepts"></a>Concepts  
 

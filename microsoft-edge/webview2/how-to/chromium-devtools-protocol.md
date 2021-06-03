@@ -1,5 +1,5 @@
 ---
-description: Découvrez comment utiliser le protocole Chrome DevTools dans vos applications WebView2 à l’aide du package NuGet du protocole Chromium DevTools de Microsoft Edge WebView2
+description: Découvrez comment utiliser le protocole Chrome DevTools dans vos applications WebView2 à l’aide du package Microsoft Edge WebView2 Chromium DevTools Protocol NuGet
 title: Utiliser le protocole Chrome DevTools dans WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -17,16 +17,16 @@ ms.locfileid: "11535912"
 ---
 # <a name="use-chromium-devtools-protocol-in-webview2"></a>Utiliser le protocole Chromium DevTools dans WebView2  
 
-Le [protocole Chromium DevTools][GitHubChromedevtoolsDevtoolsProtocol] fournit des API pour instrumenter, inspecter, déboguer et profiler les navigateurs basés sur Chromium.  Le protocole Chromium DevTools est la base de Microsoft Edge \(Chromium\) DevTools.  Utilisez le protocole Chromium DevTools pour les fonctionnalités qui ne sont pas implémentées dans la plateforme WebView2.  Pour plus d’informations sur la fonctionnalité de protocole Chromium DevTools, accédez au protocole [Chromium DevTools.][GitHubChromedevtoolsDevtoolsProtocol]  
+Le [Chromium DevTools fournit][GitHubChromedevtoolsDevtoolsProtocol] des API pour instrumenter, inspecter, déboguer et profiler Chromium navigateurs basés sur les navigateurs.  Le Chromium Protocole DevTools est la base de l’Microsoft Edge \(Chromium\) DevTools.  Utilisez le Chromium protocole DevTools pour les fonctionnalités qui ne sont pas implémentées dans la plateforme WebView2.  Pour plus d’informations sur Chromium fonctionnalités du protocole DevTools, accédez [Chromium protocole DevTools.][GitHubChromedevtoolsDevtoolsProtocol]  
 
 > [!CAUTION]
-> L’équipe Microsoft Edge WebView2 ne tient pas à jour ou ne prend pas en charge le protocole Chromium DevTools.  Le protocole Chromium DevTools est maintenu par le projet Chromium open source.  
+> L Microsoft Edge WebView2 ne tient pas à jour ou ne prend pas en charge Chromium protocole DevTools.  Le Chromium protocole DevTools est maintenu par le projet d’Chromium open source.  
 > 
 > Pour envoyer vos suggestions pour les futures fonctionnalités de la plateforme WebView2, accédez aux commentaires [WebView][GithubMicrosoftedgeWebview2feedback] et soumettez un problème.  
 
-Pour utiliser l’API de protocole Chromium DevTools dans WebView2, utilisez l’une des actions suivantes.  
+Pour utiliser l Chromium API de protocole DevTools dans WebView2, utilisez l’une des actions suivantes.  
 
-*   Installez et utilisez le package [NuGet Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview)][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] \(.NET\).  
+*   Installez et utilisez [Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview)][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet package \(.NET\).  
 *   Exécutez l’une des méthodes suivantes.  
     *   .NET :  [CallDevToolsProtocolAsync][DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString], [GetDevToolsProtocolEventReceiver][DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]  
     *   Win32 C/C++ :  [CallDevToolsProtocolMethod][Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod], [ICoreWebView2DevToolsProtocolEventReceiver][Webview2ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverViewWebview21077444]  
@@ -34,9 +34,9 @@ Pour utiliser l’API de protocole Chromium DevTools dans WebView2, utilisez l�
 ## <a name="use-devtoolsprotocolhelper-preview"></a>Utiliser DevToolsProtocolHelper (Aperçu)
 
 > [!NOTE]
-> Le package [NuGet Microsoft.Web.WebView2.DevToolsProtocolExtension][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] est actuellement en prévisualisation technique.  Pendant la prévisualisation, évitez d’utiliser le package dans les applications de production.
+> Le package [d’NuGet Microsoft.Web.WebView2.DevToolsProtocolExtension][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] est actuellement en prévisualisation technique.  Pendant la prévisualisation, évitez d’utiliser le package dans les applications de production.
 
-[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview)][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] est un package NuGet créé par l’équipe WebView2 qui fournit un accès facile aux fonctionnalités du protocole Chromium DevTools.  Les exemples suivants décrivent comment utiliser la fonctionnalité de géolocalisation dans le protocole Chromium DevTools dans votre contrôle WebView2.  Vous pouvez suivre un modèle similaire pour utiliser d’autres fonctionnalités du protocole Chromium DevTools.  
+[Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview)][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] est un package NuGet créé par l’équipe WebView2 qui fournit un accès facile aux fonctionnalités du protocole Chromium DevTools.  Les exemples suivants décrivent comment utiliser la fonctionnalité de géolocalisation dans Chromium protocole DevTools dans votre contrôle WebView2.  Vous pouvez suivre un modèle similaire pour utiliser d’Chromium fonctionnalités du protocole DevTools.  
 
 ## <a name="step-1-create-a-webpage-to-find-your-geolocation"></a>Étape 1 : Créer une page web pour trouver votre géolocalisation  
 
@@ -89,8 +89,8 @@ Pour créer un `HTML file` pour trouver votre géolocalisation, terminez en suiv
 ## <a name="step-2-display-geolocationhtml-in-a-webview2"></a>Étape 2 : Afficher geolocation.html dans un contrôle WebView2  
 
 1.  Pour créer une application WebView2, utilisez l’un des guides de prise en page suivants ou des exemples WebView2.  
-    *   [Mise en place de WebView2 dans Windows Forms][Webview2GetStartedWinforms]  
-    *   [Mise en place de WebView2 dans WPF][Webview2GetStartedWpf]  
+    *   [Prise en main webview2 dans Windows formulaires][Webview2GetStartedWinforms]  
+    *   [Prise en main avec WebView2 dans WPF][Webview2GetStartedWpf]  
     *   [Exemples WebView2][GithubMicrosoftedgeWebview2samples]  
         
 1.  Définissez la navigation initiale du contrôle WebView2 sur `geolocation.html` .  
@@ -105,15 +105,15 @@ Pour créer un `HTML file` pour trouver votre géolocalisation, terminez en suiv
        Afficher le `geolocation.html` fichier dans votre application de contrôle WebView2  
     :::image-end:::  
     
-## <a name="step-3-install-the-devtoolsprotocolhelper-nuget-package"></a>Étape 3 : Installer le package NuGet DevToolsProtocolHelper  
+## <a name="step-3-install-the-devtoolsprotocolhelper-nuget-package"></a>Étape 3 : Installer le package d’NuGet DevToolsProtocolHelper  
 
 Utilisez NuGet pour télécharger `Microsoft.Web.WebView2.DevToolsProtocolExtension` .  Pour installer le package, effectuer les actions suivantes.  
 
 1.  Choose **Project**  >  **Manage NuGet Packages**  >  **Browse**.  
 1.  Tapez `Microsoft.Web.WebView2.DevToolsProtocolExtension` et choisissez **Microsoft.Web.WebView2.DevToolsProtocolExtension**  >  **Install**.   
     
-:::image type="complex" source="./media/cdp-nuget.png" alt-text="Assurez-vous que Microsoft.Web.WebView2.DevToolsProtocolExtension s’affiche dans la Visual Studio NuGet Gestionnaire de package" lightbox="./media/cdp-nuget.png":::
-   **Assurez-vous que Microsoft.Web.WebView2.DevToolsProtocolExtension** s’affiche dans la Visual Studio NuGet Gestionnaire de package  
+:::image type="complex" source="./media/cdp-nuget.png" alt-text="Assurez-vous que Microsoft.Web.WebView2.DevToolsProtocolExtension s’affiche dans le Visual Studio NuGet Gestionnaire de package" lightbox="./media/cdp-nuget.png":::
+   **Assurez-vous que Microsoft.Web.WebView2.DevToolsProtocolExtension** s’affiche dans le Visual Studio NuGet Gestionnaire de package  
 :::image-end:::    
 
 ## <a name="step-4-use-devtools-protocol-helper"></a>Étape 4 : Utiliser l’aide du protocole DevTools  
@@ -163,25 +163,25 @@ Utilisez NuGet pour télécharger `Microsoft.Web.WebView2.DevToolsProtocolExtens
        Afficher le `.html` fichier dans un contrôle WebView2 avec les coordonnées de Paris  
     :::image-end:::  
     
-## <a name="file-a-chromium-devtools-protocol-bug"></a>Fichier d’un bogue de protocole Chromium DevTools  
+## <a name="file-a-chromium-devtools-protocol-bug"></a>Fichier d’Chromium de protocole DevTools  
 
-L’équipe WebView2 ne possède pas le protocole Chromium DevTools.  
+L’équipe WebView2 ne possède pas Chromium protocole DevTools.  
 
 > [!IMPORTANT]
-> Direct feedback and bugs to the Chromium Issues repo.  
+> Diriger les commentaires et les bogues vers le Chromium problèmes.  
 
-Pour déposer un bogue ou un problème de protocole Chromium DevTools, effectuer les actions suivantes.  
+Pour déposer un Chromium ou un problème du protocole DevTools, effectuer les actions suivantes.  
 
 1.  Fichier [d’un rapport de bogues.][ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform]  
 1.  Accédez [aux commentaires WebView][GithubMicrosoftedgeWebview2feedback] et ouvrez un nouveau problème.  
     
-## <a name="see-also"></a>Voir également  
+## <a name="see-also"></a>Articles associés  
 
 *   [Exemples WebView2][GithubMicrosoftedgeWebview2samples]  
     
  <!-- links -->  
 
-[Webview2GetStartedWinforms]: /microsoft-edge/webview2/get-started/winforms "Mise en place de WebView2 dans Windows Forms | Documents Microsoft"  
+[Webview2GetStartedWinforms]: /microsoft-edge/webview2/get-started/winforms "Commencer à travailler avec WebView2 dans Windows Forms | Documents Microsoft"  
 [Webview2GetStartedWpf]: /microsoft-edge/webview2/get-started/wpf "Mise en place de WebView2 dans WPF | Documents Microsoft"  
 
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver?view=webview2-dotnet-1.0.774.44&preserve-view=true "Méthode CoreWebView2.GetDevToolsProtocolEventReceiver(String) | Documents Microsoft"  
@@ -190,7 +190,7 @@ Pour déposer un bogue ou un problème de protocole Chromium DevTools, effectuer
 [Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.774.44&preserve-view=true#calldevtoolsprotocolmethod "CallDevToolsProtocolMethod - interface ICoreWebView2 | Documents Microsoft"  
 [Webview2ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverViewWebview21077444]: /microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-1.0.774.44&preserve-view=true "interface ICoreWebView2DevToolsProtocolEventReceiver | Documents Microsoft"  
 
-[BingMaps]: https://www.bing.com/maps "Cartes Bing"  
+[BingMaps]: https://www.bing.com/maps "Bing Cartes"  
 
 [GitHubChromedevtoolsDevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Protocole Chrome DevTools | GitHub"  
 [GithubChromedevtoolsDevtoolsProtocolTotEmulationMethodSetgeolocationoverride]: https://chromedevtools.github.io/devtools-protocol/tot/Emulation/#method-setGeolocationOverride "Emulation.setGeolocationOverride - Protocole Chrome DevTools | GitHub"  
@@ -198,6 +198,6 @@ Pour déposer un bogue ou un problème de protocole Chromium DevTools, effectuer
 [GithubMicrosoftedgeWebview2feedback]: https://github.com/MicrosoftEdge/WebView2Feedback "WebView Feedback | GitHub"  
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "Exemples webView2 | GitHub"  
 
-[ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform]: https://bugs.chromium.org/p/chromium/issues/entry?components=Platform%3EDevTools%3EPlatform "Rapport de | Bogues Chromium"  
+[ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform]: https://bugs.chromium.org/p/chromium/issues/entry?components=Platform%3EDevTools%3EPlatform "Rapport de | Chromium Bogues"  
 
-[NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension]: https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension "Microsoft.Web.WebView2.DevToolsProtocolExtension | NuGet QA Gallery"  
+[NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension]: https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension "Microsoft.Web.WebView2.DevToolsProtocolExtension | NuGet Galerie QA"  

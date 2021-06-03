@@ -11,7 +11,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "11399659"
 ---
-Partagez vos commentaires pour vous aider à créer des expériences WebView2 plus riches.  Pour soumettre des demandes de fonctionnalités ou des bogues, ou rechercher des problèmes connus, accédez au repo de commentaires [Microsoft Edge WebView.][GithubMicrosoftedgeWebviewfeedback]  
+Partagez vos commentaires pour vous aider à créer des expériences WebView2 plus riches.  Pour soumettre des demandes de fonctionnalités ou des bogues, ou rechercher des problèmes connus, accédez au Microsoft Edge de [commentaires WebView.][GithubMicrosoftedgeWebviewfeedback]  
 
 <!-- links -->  
 

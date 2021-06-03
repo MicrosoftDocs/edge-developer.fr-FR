@@ -1,6 +1,6 @@
 ---
-description: Découvrez les extensions Chromium et les concepts de base pour créer des extensions.
-title: Concepts et architecture des extensions Microsoft Edge (Chromium)
+description: Découvrez les Chromium extensions et les concepts de base pour créer des extensions.
+title: Microsoft Edge (Chromium) Concepts et architecture des extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
@@ -16,7 +16,7 @@ ms.locfileid: "11397923"
 ---
 # <a name="extension-concepts-and-architecture"></a>Concepts et architecture de l’extension  
 
-Cet article fournit une brève présentation des concepts qui vous aident à créer une extension.  Pour comprendre les extensions Microsoft Edge \(Chromium\), suivez la marche à suivre pour comprendre le fonctionnement des navigateurs multi-onglets.  
+Cet article fournit une brève présentation des concepts qui vous aident à créer une extension.  Pour comprendre Microsoft Edge les extensions \(Chromium\), suivez la marche à suivre pour comprendre le fonctionnement des navigateurs multi-onglets.  
 
 ## <a name="understand-how-browsers-work"></a>Comprendre le fonctionnement des navigateurs  
 
@@ -28,7 +28,7 @@ La liste suivante présente les informations utiles à comprendre avant de crée
        Un thread par onglet de navigateur  
     :::image-end:::  
     
-1.  Chaque onglet gère une requête GET.  Chaque onglet utilise une URL pour obtenir un seul flux de données, qui est normalement un document HTML.  Ce flux unique ou cette page inclut des instructions telles que JavaScript, notamment des balises, des références d’image, des références CSS, etc.  Toutes les ressources sont téléchargées sur cette page d’onglet, puis la page est restituer dans l’onglet.  
+1.  Chaque onglet gère une requête GET.  Chaque onglet utilise une URL pour obtenir un seul flux de données, qui est normalement un document HTML.  Cette page ou flux unique inclut des instructions telles que JavaScript incluent des balises, des références d’image, des références CSS, etc.  Toutes les ressources sont téléchargées sur cette page d’onglet, puis la page est restituer dans l’onglet.  
 1.  La communication a lieu entre chaque onglet et un serveur distant.  Chaque onglet s’exécute dans un environnement isolé.  Chaque onglet est toujours connecté à Internet, mais chacun est isolé des autres onglets.  Un onglet peut exécuter JavaScript pour communiquer avec un serveur.  Le serveur est le serveur d’origine de la première requête GET entrée dans la barre d’URL de l’onglet.  
 1.  Le modèle d’extension utilise un modèle de communication différent.  À l’exemple d’une page d’onglet, une extension s’exécute dans un thread individuel isolé des autres threads de page d’onglets.  Un onglet envoie des requêtes GET à des serveurs distants, puis restituer la page.  Toutefois, une extension fonctionne comme un serveur distant.  L’installation d’une extension dans un navigateur crée un serveur web autonome dans le navigateur.  L’extension est isolée de toutes les pages d’onglets.  
     
@@ -40,7 +40,7 @@ La liste suivante présente les informations utiles à comprendre avant de crée
 
 La liste suivante présente des informations utiles liées à l’architecture d’une extension.  
 
-1.  Ensemble de serveurs web d’extension.  Une extension est un ensemble de ressources web.  Les ressources web sont similaires aux autres ressources que vous publiez sur des serveurs web.  Vous regroupez les ressources web dans un fichier zip lors de la création d’une extension.  
+1.  Ensemble de serveurs web d’extension.  Une extension est un ensemble de ressources web.  Les ressources web sont similaires aux autres ressources que vous publiez sur les serveurs web .  Vous regroupez les ressources web dans un fichier zip lors de la création d’une extension.  
     
     Le fichier zip inclut les fichiers HTML, CSS, JavaScript et image.  Un fichier de plus est requis à la racine du fichier zip.  L’autre fichier est le fichier manifeste `manifest.json` nommé.  Le fichier manifeste est le plan de votre extension et inclut la version de votre extension, le titre, les autorisations nécessaires à l’utilisation de l’extension, etc.  
     
@@ -52,7 +52,7 @@ La liste suivante présente des informations utiles liées à l’architecture d
     
     Tout comme les serveurs web, une extension attend les notifications lorsque le navigateur est ouvert.  Les pages d’extension et d’onglet s’exécutent dans des threads isolés les uns des autres.  Pour permettre à une extension de fonctionner avec n’importe quelle page d’onglet, utilisez l’API d’extensions et définissez les autorisations dans le fichier manifeste.  
     
-1.  Une extension fournit des autorisations d’accès au moment de l’installation.  Vous spécifiez les autorisations d’extension dans le `manifest.json` fichier.  Lorsqu’un utilisateur installe une extension, des informations sur les autorisations nécessaires à l’extension s’affichent.  En fonction du type d’autorisation requis, l’extension peut extraire et utiliser des informations à partir du navigateur.  
+1.  Une extension fournit des autorisations d’accès au moment de l’installation.  Vous spécifiez les autorisations d’extension dans le `manifest.json` fichier.  Lorsqu’un utilisateur installe une extension, des informations sur les autorisations nécessaires s’affichent.  En fonction du type d’autorisation requis, l’extension peut extraire et utiliser des informations à partir du navigateur.  
     
 ## <a name="next-steps"></a>Étapes suivantes  
 

@@ -44,7 +44,7 @@ Ce guide traite uniquement des fonctionnalités Progressive Web App du panneau *
 ### <a name="summary"></a>Résumé  
 
 *   Utilisez le **volet Manifeste** pour inspecter le manifeste de votre application web et déclencher des événements Ajouter à l’écran d’accueil.  
-*   Utilisez **** le volet Travailleurs du service pour toute une gamme de tâches liées au travail de service, telles que la désinssion ou la mise à jour d’un service, l’émulation d’événements Push, la mise hors connexion ou l’arrêt d’un service de travail.  
+*   Utilisez **** le volet Travailleurs de service pour une gamme complète de tâches liées au travail de service, telles que la désinssion ou la mise à jour d’un service, l’émulation d’événements Push, la mise hors connexion ou l’arrêt d’un service de travail.  
 *   Affichez votre cache de travail de service à partir du **volet Stockage** cache.  
 *   Désinsistez un service de travail et désinsérez tout le stockage et les caches à l’aide d’un seul bouton dans le volet Effacer **le** stockage.  
     
@@ -67,7 +67,7 @@ Une fois votre manifeste installé, vous **** pouvez utiliser le volet Manifeste
 
 *   Pour examiner la source du manifeste, choisissez le lien sous l’étiquette **de manifeste** d’application \( `https://airhorner.com/manifest.json` dans la figure précédente\).  
 <!-- *   Choose the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->  
-*   Les **sections** **Identité** et Présentation affichent simplement les champs de la source de manifeste dans un affichage plus convivial.  
+*   Les **sections** **Identité** et Présentation affichent simplement les champs de la source du manifeste dans un affichage plus convivial.  
 *   La section **Icônes** affiche chaque icône que vous avez spécifiée.  
     
 <!--### Simulate Add to Homescreen events  -->
@@ -106,7 +106,7 @@ Les travailleurs de service sont une technologie fondamentale dans la future pla
     
 <!--TODO:  Link to sections when available. -->  
 
-Le **volet Travailleurs** du service dans le panneau **Application** est l’endroit principal dans DevTools pour inspecter et déboguer les travailleurs du service.  
+Le **volet Travailleurs** du service du panneau **Application** est l’endroit principal dans DevTools pour inspecter et déboguer les travailleurs du service.  
 
 :::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="Volet Travailleurs du service" lightbox="../media/service-workers-pane.msft.png":::
    Volet **Travailleurs** du service  
@@ -121,7 +121,7 @@ Le **volet Travailleurs** du service dans le panneau **Application** est l’end
 *   Le **bouton Synchroniser** émule un événement de synchronisation en arrière-plan.  
 *   Le **bouton Désinsserrement** désinsère le service de travail spécifié.  Consultez [Effacer le stockage](#clear-storage) pour supprimer l’enregistrement d’un service de travail et effacer le stockage et les caches avec un seul bouton.  
 *   La **ligne Source** vous indique quand le service de travail en cours d’exécution a été installé.  Le lien est le nom du fichier source du service de travail.  Le choix du lien vous envoie à la source du service de travail.  
-*   La **ligne État** vous indique l’état du service de travail.  Le numéro d’ID à côté de l’indicateur d’état vert \( dans la figure précédente\) est pour le service de travail `#36` actif.  En plus de **** l’état, un bouton de démarrage \(si le service de travail est arrêté\) ou un bouton d’arrêt \(si le service de travail est en cours d’exécution\) s’affiche. ****  Les employés de service sont conçus pour être arrêtés et démarrés par le navigateur à tout moment.  L’arrêt explicite de votre service à l’aide du **bouton** d’arrêt peut simuler cela.  L’arrêt de votre service de travail est un excellent moyen de tester le comportement de votre code lorsque le service de travail recommence à le faire.  Il révèle fréquemment des bogues en raison d’hypothèses erronées sur l’état global persistant.  
+*   La **ligne État** vous indique l’état du service de travail.  Le numéro d’ID à côté de l’indicateur d’état vert \( dans la figure précédente\) est pour le service de travail `#36` actif.  En plus de **** l’état, un bouton de démarrage \(si le service de travail est arrêté\) ou un bouton d’arrêt \(si le service de travail est en cours d’exécution\) s’affiche. ****  Les employés de service sont conçus pour être arrêtés et démarrés par le navigateur à tout moment.  L’arrêt explicite de votre service à l’aide du **bouton d’arrêt** peut simuler cela.  L’arrêt de votre service de travail est un excellent moyen de tester le comportement de votre code lorsque celui-vous recommence à le faire.  Il révèle fréquemment des bogues en raison d’hypothèses erronées sur l’état global persistant.  
 *   La **ligne Clients** vous indique l’origine de l’étendue du service de travail.  Le **bouton Focus** est principalement utile lorsque vous avez activé la case à cocher Afficher **tout.**  Lorsque cette case à cocher est activée, tous les employés de service inscrits sont répertoriés.  Si vous choisissez sur le **bouton focus** en face d’un service de travail qui s’exécute sous un autre onglet, Microsoft Edge se concentre sur cet onglet.  
     
 Si le service de travail provoque des erreurs, une nouvelle étiquette appelée **Erreurs** s’affiche.  
@@ -219,7 +219,7 @@ Related Guides:
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

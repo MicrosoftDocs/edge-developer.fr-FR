@@ -17,7 +17,7 @@ ms.locfileid: "11535885"
 ---
 # <a name="automate-and-test-webview2-with-microsoft-edge-driver"></a>Automatiser et tester WebView2 avec Microsoft Edge pilote  
 
-Étant donné que WebView2 utilise la plateforme web Microsoft Edge \(Chromium\), les développeurs WebView2 \(vous\) peuvent tirer parti des outils web standard pour le débogage et l’automatisation.  Selenium est l’un de ces outils.  Il implémente l’API [WebDriver][W3cWebdriver2] W3C.  Vous pouvez utiliser selenium pour créer des tests automatisés afin de simuler les interactions utilisateur.  
+Étant donné que WebView2 utilise la plateforme web Microsoft Edge \(Chromium\), les développeurs WebView2 \(vous\) peuvent tirer parti des outils web standard pour le débogage et l’automatisation.  Le selenium est l’un de ces outils.  Il implémente l’API [WebDriver][W3cWebdriver2] W3C.  Vous pouvez utiliser selenium pour créer des tests automatisés afin de simuler les interactions utilisateur.  
 
 Vous pouvez commencer par les étapes suivantes.  
 
@@ -62,7 +62,7 @@ Assurez-vous que la version Microsoft Edge pilote correspond à la version de We
        Nouveau projet  
     :::image-end:::  
     
-1.  Maintenant, **ajoutez Selenium** au projet.  Installez Selenium à l’aide **du package NuGet Selenium.WebDriver.**  
+1.  Maintenant, **ajoutez selenium** au projet.  Installez Selenium à l’aide **du package NuGet Selenium.WebDriver.**  
     
     Pour télécharger le **package NuGet Selenium.WebDriver,** dans **Visual Studio,** pointez sur **Project**et choisissez Gérer **NuGet package.**  L’écran suivant doit apparaître.  
     
@@ -146,13 +146,13 @@ Assurez-vous que la version Microsoft Edge pilote correspond à la version de We
     
 Félicitations.  Vous avez réussi à automatiser un projet WebView2 et piloté WebView2 à l’aide de Selenium et Microsoft Edge Driver.  
 
-## <a name="see-also"></a>Voir également  
+## <a name="see-also"></a>Articles associés  
 
 *   Pour un aperçu complet de la façon dont les API Selenium pilotent WebView2 ou Microsoft Edge \(Chromium\), accédez à WebDriver sur la [documentation Selenium][SeleniumWebdriver]   
 *   Pour en savoir plus sur le contrôle WebView2 et comment l’utiliser lors de l’incorporation de contenu web dans votre application native, accédez à Introduction à [Microsoft Edge WebView2][WebViewIndex].  
 *   Pour en savoir plus sur l’automatisation Microsoft Edge \(Chromium\), accédez à Utiliser [WebDriver (Chromium)][WebdriverChromium] pour tester l’automatisation   
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe web Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 

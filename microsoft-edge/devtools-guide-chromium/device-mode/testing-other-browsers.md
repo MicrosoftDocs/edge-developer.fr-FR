@@ -34,7 +34,7 @@ Votre travail ne se termine pas par la garantie que votre site s’exécute bien
 ### <a name="summary"></a>Résumé  
 
 *   Lorsque vous n’avez pas d’appareil particulier ou que vous souhaitez vérifier quelque chose, la meilleure option consiste à émuler l’appareil directement à l’intérieur de votre navigateur.  
-*   Les émulateurs et simulateurs d’appareil vous permettent d’imiter votre site de développement sur une plage d’appareils de votre station de travail.  
+*   Les émulateurs et simulateurs de périphériques vous permettent d’imiter votre site de développement sur une plage d’appareils de votre station de travail.  
 *   Les émulateurs basés sur le cloud vous permettent d’automatiser des tests unitaires pour votre site sur différentes plateformes.  
 
 ## <a name="browser-emulators"></a>Émulateurs de navigateur  
@@ -53,7 +53,7 @@ Utilisez [l’émulation d’Internet Explorer 11][Ie11DevToolsEmulation] pour s
 
 ## <a name="device-emulators-and-simulators"></a>Émulateurs et simulateurs d’appareils  
 
-Les simulateurs et émulateurs d’appareil simulent non seulement l’environnement du navigateur, mais l’ensemble de l’appareil.  Chacun d’eux est utile pour tester des éléments qui nécessitent une intégration du système d’exploitation, par exemple une entrée de formulaire avec des claviers virtuels.  
+Les simulateurs et émulateurs de périphériques simulent non seulement l’environnement du navigateur, mais l’ensemble de l’appareil.  Chacun d’eux est utile pour tester des éléments qui nécessitent une intégration du système d’exploitation, par exemple une entrée de formulaire avec des claviers virtuels.  
 
 ### <a name="android-emulator"></a>Émulateur Android  
 
@@ -126,8 +126,8 @@ Microsoft Edge \(EdgeHTML\) Virtual Machines \(VMs\) vous permettent d’accéde
 Si vous n’êtes pas en mesure d’utiliser les émulateurs et que vous n’avez pas accès à des appareils réels, les émulateurs basés sur le cloud sont la meilleure chose à faire.  L’un des grands avantages des émulateurs basés sur le cloud par rapport aux appareils réels et aux émulateurs locaux est que vous pouvez automatiser des tests unitaires pour votre site sur différentes plateformes.  
 
 *   [BrowserStack (commercial)][|::ref1::|] est le plus simple à utiliser pour les tests manuels.  Vous sélectionnez un système d’exploitation, la version de votre navigateur et le type d’appareil, une URL à parcourir et une machine virtuelle hébergée avec laquelle vous pouvez interagir.  Vous pouvez également exécuter plusieurs émulateurs dans le même écran, ce qui vous permet de tester l’apparence de votre application sur plusieurs appareils en même temps.  
-*   La fonction [ContrôleLabs (commercial)][SauceLabs] vous permet d’exécuter des tests unitaires à l’intérieur d’un émulateur, ce qui peut s’avérer très utile pour écrire des scripts dans votre site et regarder l’enregistrement vidéo de ce dernier sur différents appareils.  Vous pouvez également tester manuellement votre site.  
-*   [Device Anywhere (commercial) n’utilise][AppExperience] pas d’émulateurs, mais des appareils réels que vous pouvez contrôler à distance.  Ceci est très utile dans le cas où vous devez reproduire un problème sur un appareil spécifique et peut ne pas afficher le bogue à l’aide des options des guides précédents.  
+*   [Le contrôle ContrôleLabs (commercial)][SauceLabs] vous permet d’exécuter des tests unitaires à l’intérieur d’un émulateur, ce qui peut s’avérer très utile pour écrire des scripts dans votre site et regarder l’enregistrement vidéo de ce dernier sur différents appareils.  Vous pouvez également tester manuellement votre site.  
+*   [Device Anywhere (commercial) n’utilise][AppExperience] pas d’émulateurs, mais des appareils réels que vous pouvez contrôler à distance.  Cela est très utile dans le cas où vous devez reproduire un problème sur un appareil spécifique et peut ne pas afficher le bogue à l’aide des options des guides précédents.  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
@@ -150,7 +150,7 @@ Si vous n’êtes pas en mesure d’utiliser les émulateurs et que vous n’ave
 [BrowserStack]: https://www.browserstack.com/automate "BrowserStack"  
 [MacAppStoreXcode]: https://itunes.apple.com/app/xcode/id497799835 "Xcode sur le Mac App Store"  
 [MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "Mode Création dynamique | MDN"  
-[MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Télécharger le navigateur Firefox"  
+[MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Télécharger firefox Browser"  
 [SauceLabs]: https://saucelabs.com "Sauce Labs"  
 
 > [!NOTE]
@@ -158,7 +158,7 @@ Si vous n’êtes pas en mesure d’utiliser les émulateurs et que vous n’ave
 > La page d’origine est trouvée ici et est co-auteure par [Meggin Kearney][MegginKearney] \(Tech Writer\) et [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate chez Google | [](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) Outils, Performances, Animation, UX\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est sous [licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

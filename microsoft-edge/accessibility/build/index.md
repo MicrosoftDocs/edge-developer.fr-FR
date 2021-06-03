@@ -38,13 +38,13 @@ La spécification [ARIA (Accessible Rich Internet Applications)](https://www.w3.
 
 ### <a name="roles-properties-and-states"></a>Rôles, propriétés et états  
 
-Les rôles ARIA sont définies sur les éléments à l’aide de l’attribut [de](https://developer.mozilla.org/docs/Web/HTML/Reference) rôle pour fournir des informations sur les technologies d’assistance et les API d’accessibilité sur l’élément.  Par exemple, l’élément `<li>` ci-dessous est affecté pour signifier `role="menuitem"` qu’il s’agit d’un élément dans un menu.  
+Les rôles ARIA sont définies sur des éléments utilisant l’attribut [de](https://developer.mozilla.org/docs/Web/HTML/Reference) rôle pour fournir des technologies d’assistance et des API d’accessibilité sur l’élément.  Par exemple, l’élément `<li>` ci-dessous est affecté pour signifier `role="menuitem"` qu’il s’agit d’un élément dans un menu.  
 
 ```html
 <li role="menuitem">Home</li>
 ```  
 
-Les états et propriétés ARIA sont des attributs au préfixe aria qui fournissent des informations spécifiques sur un objet pour vous aider à définir la nature des rôles.  Les propriétés sont des attributs essentiels à la nature d’un objet, tels [qu’aria-readonly](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) et [aria-haspopup](https://developer.mozilla.org/docs/Web/Accessibility/ARIA).  La modification d’une propriété affecte la signification de l’objet.  Dans l’exemple ci-dessous, la propriété est définie sur un élément de menu pour signifier `aria-haspopup="true"` qu’elle possède une fenêtre `<li>` déroulante.  
+Les états et propriétés ARIA sont des attributs au préfixe aria qui fournissent des informations spécifiques sur un objet pour vous aider à définir la nature des rôles.  Les propriétés sont des attributs essentiels à la nature d’un objet, tels [qu’aria-readonly](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) et [aria-haspopup](https://developer.mozilla.org/docs/Web/Accessibility/ARIA).  La modification d’une propriété affecte la signification de l’objet.  Dans l’exemple ci-dessous, la propriété est définie sur un élément de `aria-haspopup="true"` menu pour signifier qu’elle possède une fenêtre `<li>` déroulante.  
 
 ```html
 <li role="menuitem" aria-haspopup="true">Open</li>
@@ -71,13 +71,13 @@ Une fois que vous êtes certain que votre site web fonctionne bien avec un clavi
     
 Différents navigateurs peuvent maquer des éléments à des API d’accessibilité de plateforme différemment des Microsoft Edge.  Lors de la création de votre interface, il est important de prendre en compte chaque différence.  
 
-WebAIM effectue des [][WebaimProjectsScreenreadersurvey8] enquêtes [][WebaimProjectsLowvisionsurvey2] avec des utilisateurs de lecteur d’écran et de vision faible qui vous aident à choisir les technologies d’assistance et les navigateurs que vous souhaitez tester.  
+WebAIM effectue des [][WebaimProjectsScreenreadersurvey8] enquêtes avec des lecteurs d’écran et des utilisateurs à faible [vision][WebaimProjectsLowvisionsurvey2] qui vous aident à choisir les technologies d’assistance et les navigateurs que vous souhaitez tester.  
 
 ### <a name="learning-how-to-test"></a>Apprendre à tester  
 
 Les technologies d’assistance sont des outils sophistiqués.  Ne supposez pas que vous êtes en mesure de commencer immédiatement les tests avec une technologie d’assistance sans avoir tout d’abord appris comment elle fonctionne.  L’apprentissage du test avec un lecteur d’écran présente une courbe d’apprentissage particulièrement pointée.  Un utilisateur de lecteur d’écran débutant peut supposer qu’un bogue de lecteur d’écran s’est produit alors que le problème est lié à une mauvaise utilisation du lecteur d’écran.  
 
-Pour plus d’informations sur l’apprentissage des technologies d’assistance, accédez à [Test avec][WebaimArticlesScreenreaderTesting] lecteurs d’écran sur WebAIM.  
+Pour plus d’informations sur l’apprentissage des technologies d’assistance, accédez à Test avec lecteurs [d’écran][WebaimArticlesScreenreaderTesting] sur WebAIM.  
 
 ### <a name="testing-locally"></a>Test local  
 
@@ -108,7 +108,7 @@ Si une technologie d’assistance n’est pas disponible sur votre système d’
 
 #### <a name="web-accessibility-initiative-wai"></a>Initiative d’accessibilité web (CAS)  
 
-L’initiative [DNS (Web Accessibility Initiative) W3C](https://w3.org/WAI) est un effort pour améliorer l’accessibilité du site web.  Leur site fournit une variété de ressources pour la prise en compte de l’accessibilité [web,](https://www.w3.org/WAI/gettingstarted/Overview.html)la conception pour [l’inclusion,](https://www.w3.org/WAI/users/Overview.html)les [didacticiels et les présentations,](https://www.w3.org/WAI/train.html)et bien plus encore.  
+L’initiative [DNS (Web Accessibility Initiative) W3C](https://w3.org/WAI) est un effort pour améliorer l’accessibilité du site web.  Leur site fournit une variété de ressources pour la mise en place de l’accessibilité [web,](https://www.w3.org/WAI/gettingstarted/Overview.html)la conception pour [l’inclusion,](https://www.w3.org/WAI/users/Overview.html)les [didacticiels et les présentations,](https://www.w3.org/WAI/train.html)et bien plus encore.  
 
 ### <a name="accessibility-blogs"></a>Blogs sur l’accessibilité  
 
@@ -128,7 +128,7 @@ L’initiative [DNS (Web Accessibility Initiative) W3C](https://w3.org/WAI) est 
 
 #### <a name="allyjs---tutorials"></a>ally.js - Didacticiels  
 
-Bibliothèque JavaScript pour aider les applications web modernes avec des problèmes d’accessibilité en rendant l’accessibilité plus simple.  Pour plus d’informations, [accédez àally.js - Didacticiels.](http://allyjs.io/tutorials)  
+Bibliothèque JavaScript pour aider les applications web modernes ayant des problèmes d’accessibilité en rendant l’accessibilité plus simple.  Pour plus d’informations, [accédez àally.js - Didacticiels.](http://allyjs.io/tutorials)  
 
 #### <a name="openajax-examples"></a>Exemples OpenAjax  
 
@@ -142,7 +142,7 @@ Le [site web OpenAjax Alliance](http://oaa-accessibility.org) est une excellente
 
 #### <a name="accessibility--creating-accessible-extension-icons-for-microsoft-edge"></a>Accessibilité : création d’icônes d’extension accessibles pour Microsoft Edge  
 
-Obtenez des conseils sur la création d’icônes d’extensions accessibles Microsoft Edge.  Pour plus d’informations, accédez [à Accessibilité : création d’icônes d’extension accessibles pour Microsoft Edge](/archive/microsoft-edge/legacy/developer/extensions/guides/accessibility).  
+Obtenez des conseils sur la création d’icônes d’extensions accessibles Microsoft Edge.  Pour plus d’informations, [accédez à Accessibilité : création d’icônes d’extension accessibles pour Microsoft Edge](/archive/microsoft-edge/legacy/developer/extensions/guides/accessibility).  
 
 #### <a name="accessible-name-and-description-computation-and-mappings-11"></a>Nom et description accessibles : Calcul et mappages 1.1  
 

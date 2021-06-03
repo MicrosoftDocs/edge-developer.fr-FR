@@ -50,7 +50,7 @@ Ce guide vous montre comment utiliser Microsoft Edge [DevTools][MicrosoftEdgeDev
     *   **title** and **body** are [indexes][MDNUsingIndexedDBUsingIndex].  
     
     > [!NOTE]
-    > **Limitation connue**  Les bases de données tierces ne sont pas visibles.  Par exemple, si vous utilisez une fonction pour incorporer une nouvelle page et que votre réseau de distribution utilise IndexedDB, les données IndexedDB de votre réseau de distribution ne sont pas `<iframe>` visibles.  Accédez au [problème #943770][ChromiumIssue943770].  
+    > **Limitation connue**  Les bases de données tierces ne sont pas visibles.  Par exemple, si vous utilisez une fonction pour incorporer une valeur sur votre page et que votre réseau de distribution de données utilise IndexedDB, les données IndexedDB de votre réseau de distribution ne sont pas `<iframe>` visibles.  Accédez au [problème #943770][ChromiumIssue943770].  
     
 1.  Choisissez une base de données pour passer en revue l’origine et le numéro de version.  
     
@@ -145,7 +145,7 @@ Les clés et valeurs IndexedDB ne sont pas modifiables à partir de **l’outil 
 1.  Choisissez **Effacer les données de site.**  
     
     :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="Volet effacer le stockage" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
-       Volet **de stockage** Effacer  
+       Volet **effacer le** stockage  
     :::image-end:::  
     
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
@@ -169,7 +169,7 @@ Les clés et valeurs IndexedDB ne sont pas modifiables à partir de **l’outil 
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/indexeddb) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

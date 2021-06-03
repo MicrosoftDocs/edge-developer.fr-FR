@@ -42,14 +42,14 @@ Gardez votre code côté client lisible et décomscriptible même après la comb
 
 ## <a name="get-started-with-preprocessors"></a>Mise en place des préprocesseurs  
 
-Cet article explique comment interagir avec les Cartes source JavaScript dans l’outil DevTools Sources.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->  
+Cet article explique comment interagir avec les Cartes source JavaScript dans l’outil Sources DevTools.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->  
 
 <!--todo: add link to Set Up CSS & JS Preprocessors when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content ""  -->  
 
 ## <a name="use-a-supported-preprocessor"></a>Utiliser un préprocesseur pris en charge  
 
-Utilisez un minifier capable de créer des cartes sources.  <!--For the most popular options, navigate to preprocessor support section.  -->  Pour une vue étendue, accédez à [Cartes sources : langues, outils et autres][GitHubWikiSourceMapsLanguagesTools] pages Wiki d’informations.  
+Utilisez un minifier capable de créer des cartes sources.  <!--For the most popular options, navigate to preprocessor support section.  -->  Pour une vue étendue, accédez à [Cartes sources : langues, outils et autre][GitHubWikiSourceMapsLanguagesTools] page Wiki d’informations.  
 
 <!--todo: add link to display the preprocessor support section when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
@@ -64,11 +64,11 @@ Les types de préprocesseurs suivants sont couramment utilisés en combinaison a
 
 Les Cartes sources provenant de préprocesseurs entraînent le chargement par DevTools de vos fichiers d’origine en plus de ceux qui sont minifiés.  Vous utilisez ensuite les originaux pour définir des points d’arrêt et coder pas à pas.  Pendant ce temps, Microsoft Edge exécute réellement votre code minifié.  L’exécution du code vous donne l’illusion d’exécution d’un site de développement en production.  
 
-Lorsque vous exécutez l’Cartes source dans DevTools, vous devez remarquer que javaScript n’est pas compilé et que tous les fichiers JavaScript qu’il référence sont affichés.  La Cartes source dans DevTools utilise le mappage de source, mais la fonctionnalité sous-jacente exécute en fait le code compilé.  Les erreurs, les journaux et les points d’arrêt sont map to the dev code for awesome debugging.  Ainsi, elle vous donne l’illusion que vous exécutez un site dev en production.  
+Lorsque vous exécutez la Cartes source dans DevTools, vous devez remarquer que javaScript n’est pas compilé et que tous les fichiers JavaScript qu’il référence sont affichés.  La Cartes source dans DevTools utilise le mappage de source, mais la fonctionnalité sous-jacente exécute en fait le code compilé.  Les erreurs, les journaux et les points d’arrêt sont map to the dev code for awesome debugging.  Ainsi, elle vous donne l’illusion que vous exécutez un site dev en production.  
 
 ### <a name="enable-source-maps-in-settings"></a>Activer l’Cartes source dans les paramètres  
 
-Les Cartes sources sont activées par défaut<!-- \(as of Microsoft Edge 39\)-->, mais si vous souhaitez les vérifier ou les activer ; tout d’abord, ouvrez DevTools, choisissez Personnaliser et contrôler **DevTools** \( `...` \) > **Paramètres**.  Dans le **volet Préférences,** sous **Sources,** activez **Activer javaScript source Cartes**.  Vous pouvez également activer **l' enable CSS Source Cartes**.  
+Les Cartes sources sont activées par défaut<!-- \(as of Microsoft Edge 39\)-->, mais si vous souhaitez les vérifier ou les activer ; tout d’abord, ouvrez DevTools, choisissez Personnaliser et contrôler **DevTools** \( `...` \) > **Paramètres**.  Dans le **volet Préférences,** sous **Sources,** activez Activer la source **JavaScript Cartes**.  Vous pouvez également activer **l' enable CSS Source Cartes**.  
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Activer l’Cartes" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
    **Activer l’Cartes source JavaScript**  
@@ -140,7 +140,7 @@ Si vous développez le sous-panneau **Sources,** vous affichez maintenant un nou
 > La page d’origine est trouvée ici et est rédigé par [Meggin Kearney][MegginKearney] \(Tech Writer\) et [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX\). [](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est sous [licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

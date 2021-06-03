@@ -15,7 +15,7 @@ ms.locfileid: "11461135"
 ---
 # <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>Déplacement d’utilisateurs vers Microsoft Edge à partir d’Internet Explorer  
 
-De nombreux sites web modernes ont des conceptions incompatibles avec Internet Explorer \(IE\).  Lorsqu’un utilisateur d’Internet IE visite un site web public incompatible, il peut obtenir un message.  Le message indique que le site web est incompatible avec le navigateur.  Une fois le message affiché, l’utilisateur est censé basculer manuellement vers un navigateur moderne.  Pour minimiser les interruptions, à partir de la version 84, Microsoft Edge prend en charge une nouvelle fonctionnalité qui redirige automatiquement les utilisateurs.  Lorsqu’un utilisateur d’Internet Explorer navigue vers un site web incompatible avec Internet Explorer, Windows redirige automatiquement l’utilisateur vers Microsoft Edge.  Pour consulter les sites web de la liste, accédez à [La liste Besoin de Microsoft Edge.][MicrosoftEdgeNeededgeV1]
+De nombreux sites web modernes ont des conceptions incompatibles avec Internet Explorer \(IE\).  Lorsqu’un utilisateur d’Internet IE visite un site web public incompatible, il peut obtenir un message.  Le message indique que le site web est incompatible avec le navigateur.  Une fois le message affiché, l’utilisateur est censé basculer manuellement vers un navigateur moderne.  Pour minimiser les interruptions, à partir de la version 84, Microsoft Edge prend en charge une nouvelle fonctionnalité qui redirige automatiquement les utilisateurs.  Lorsqu’un utilisateur d’Internet Explorer navigue vers un site web incompatible avec Internet Explorer, Windows redirige automatiquement l’utilisateur vers Microsoft Edge.  Pour passer en revue les sites web de la liste, accédez à [Microsoft Edge liste.][MicrosoftEdgeNeededgeV1]
 
 Cet article décrit les concepts suivants.  
 
@@ -25,17 +25,17 @@ Cet article décrit les concepts suivants.
     
 ## <a name="why-is-a-website-added-to-the-ie-compatibility-list"></a>Pourquoi un site web est-il ajouté à la liste de compatibilité d’Internet IE ?  
 
-La liste de compatibilité d’Internet IE ajoute un site web uniquement lorsque les actions suivantes se produisent.  
+La liste de compatibilité Internet Internet (IE) ajoute un site web uniquement lorsque les actions suivantes se produisent.  
 
 *   Affiche un message à un utilisateur d’Internet Explorer lui suggérant d’utiliser un autre navigateur pour des raisons de compatibilité.  
 *   Le propriétaire demande d’ajouter le site web à la liste de compatibilité d’Internet IE.  
 
 ## <a name="redirection-experience"></a>Expérience de redirection
 
-Lors de la redirection vers Microsoft Edge, la boîte de dialogue à une seule est affichée dans la capture d’écran suivante.  La boîte de dialogue fournit à l’utilisateur les informations suivantes.  
+Lors de la redirection vers Microsoft Edge, la boîte de dialogue à une seule fois s’affiche dans la capture d’écran suivante.  La boîte de dialogue fournit à l’utilisateur les informations suivantes.  
 
 *   Il explique pourquoi le site web est redirigé.  
-*   Il invite l’utilisateur à consentir à copier les données de navigation et les préférences d’Internet Internet (IE) vers Microsoft Edge.  
+*   Il invite l’utilisateur à consentir à copier les données de navigation et les préférences d’Internet Microsoft Edge.  
 
 :::row:::
    :::column span="":::
@@ -61,8 +61,8 @@ Si l’utilisateur ne donne pas son consentement en choisissant la case à coche
 
 Enfin, une bannière d’incompatibilité de site web s’affiche sous la barre d’adresse pour chaque redirection.  Un exemple de bannière d’incompatibilité de site web est affiché dans la figure suivante.
 
-:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Notification sur les sites modernes et invite à définir Microsoft Edge comme navigateur par défaut ou explorer Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
-   Notification sur les sites modernes et invite à définir Microsoft Edge comme navigateur par défaut ou explorer Microsoft Edge  
+:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Notification sur les sites modernes et invite à définir Microsoft Edge navigateur par défaut ou explorer Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
+   Notification sur les sites modernes et invite à définir Microsoft Edge navigateur par défaut ou explorer Microsoft Edge  
 :::image-end:::
 
 La bannière d’incompatibilité du site web fournit les détails suivants à l’utilisateur.  
@@ -92,7 +92,7 @@ Envoyez les informations suivantes [ietoedge@microsoft.com][MailtoMicrosoftIetoe
 *   Adresse postale  
 *   Adresse du site web  
     
-La liste de compatibilité d’IE est mise à jour dans une semaine.
+La liste de compatibilité d’IE est mise à jour au cours d’une semaine.
 
 > [!NOTE]
 > La liste de compatibilité d’Internet IE est conçue pour fonctionner uniquement avec des sites publics.  
@@ -103,6 +103,6 @@ La liste de compatibilité d’IE est mise à jour dans une semaine.
 
 [MicrosoftOfficialHome]: https://www.microsoft.com "Accueil officiel Microsoft"  
 
-[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Besoin d’une liste xml De Microsoft Edge v1 | Microsoft Edge"  
+[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Besoin Microsoft Edge liste xml v1 | Microsoft Edge"  
 
-[MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]: https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554 "Le site web que vous tentiez d’atteindre ne fonctionne pas avec Internet Explorer | Microsoft Office prise en charge"  
+[MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]: https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554 "Le site web que vous tentiez d’atteindre ne fonctionne pas avec Internet Explorer | Microsoft Office Prise en charge"  

@@ -15,13 +15,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/06/2021
 ms.locfileid: "11397544"
 ---
-# <a name="use-origin-trials-in-microsoft-edge"></a>Utiliser les essais origin dans Microsoft Edge  
+# <a name="use-origin-trials-in-microsoft-edge"></a>Utiliser les essais d’origine Microsoft Edge  
 
-Les développeurs peuvent utiliser les essais origin pour tester des API expérimentales sur des sites en direct pendant une période limitée.  Lorsque vous utilisez des essais originaux, les utilisateurs de Microsoft Edge qui visitent votre site peuvent exécuter du code qui utilise des API expérimentales.  Pour accéder aux API expérimentales sur chaque ordinateur utilisateur, vous n’avez pas besoin d’activer et d’activer les `edge://flags` indicateurs de fonctionnalité.  Pour plus d’informations, accédez [aux API expérimentales.][DeveloperMicrsoftEdgeOriginTrials]  En outre, vous pouvez fournir des commentaires sur la conception de l’API, vos cas d’utilisation ou votre expérience d’utilisation des API aux ingénieurs de navigateur et à la communauté web standard.  
+Les développeurs peuvent utiliser les essais origin pour tester des API expérimentales sur des sites en direct pendant une période limitée.  Lors de l’utilisation des essais originaux, les Microsoft Edge qui visitent votre site peuvent exécuter du code qui utilise des API expérimentales.  Pour accéder aux API expérimentales sur chaque ordinateur utilisateur, vous n’avez pas besoin d’activer et d’activer les `edge://flags` indicateurs de fonctionnalité.  Pour plus d’informations, accédez [aux API expérimentales.][DeveloperMicrsoftEdgeOriginTrials]  En outre, vous pouvez fournir des commentaires sur la conception de l’API, vos cas d’utilisation ou votre expérience d’utilisation des API aux ingénieurs de navigateur et à la communauté web standard.  
 
 ## <a name="get-started-using-origin-trials"></a>Commencer à utiliser les essais origin  
 
-Pour plus d’informations sur les API expérimentales disponibles dans Microsoft Edge, accédez à [microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials].  Veillez à vérifier la version minimale requise pour Microsoft Edge et la date de fin de la version d’évaluation pour évaluer la pertinence de l’utilisation des API expérimentales sur votre site web.  
+Pour plus d’informations sur les API expérimentales disponibles dans Microsoft Edge, accédez à Microsoft Edge Console du développeur des essais [Origin.][DeveloperMicrsoftEdgeOriginTrials]  Veillez à passer en revue la version minimale requise pour Microsoft Edge et la date de fin de la version d’évaluation pour évaluer la pertinence de l’utilisation des API expérimentales sur votre site web.  
 
 > [!NOTE]
 > Une expérience peut se terminer plus tôt que prévu si l’une des situations suivantes se produit.  
@@ -33,26 +33,26 @@ Pour plus d’informations sur les API expérimentales disponibles dans Microsof
 
 Utilisez les étapes suivantes pour vous inscrire à une version d’essai d’une API expérimentale.  
 
-1.  Visitez la page [console du développeur des essais d’origine de Microsoft Edge.][DeveloperMicrsoftEdgeOriginTrials]  
+1.  Visitez la page Microsoft Edge console du développeur [des essais Origin.][DeveloperMicrsoftEdgeOriginTrials]  
 1.  Sélectionnez le bouton Enregistrer sur l’une des expériences disponibles.  
-1.  Connectez-vous à la console du développeur à l’aide de votre nom d’utilisateur et mot de passe GitHub.  
+1.  Connectez-vous à la console du développeur à l’aide GitHub nom d’utilisateur et mot de passe.  
 1.  Choose **Authorize MicrosoftEdge**.  
 1.  Remplissez le formulaire.  
     
     > [!NOTE]
-    > Pour inscrire un seul ou tous les sous-domaine, choisissez de définir `Do you need to match all subdomains for the provided origin?` le paramètre sur `Yes` .  Par exemple, `https://dev.contoso.com` est un domaine unique et utilise un caractère générique pour représenter tous les `https://*.contoso.com` sous-domaines.  
+    > Pour inscrire un ou tous les sous-domaine, choisissez de définir `Do you need to match all subdomains for the provided origin?` le paramètre sur `Yes` .  Par exemple, `https://dev.contoso.com` est un domaine unique et utilise un caractère générique pour représenter tous les `https://*.contoso.com` sous-domaines.  
     
     > [!IMPORTANT]
     > Les formats d’origine suivants ne sont pas autorisés.  
-    > *   Spécification d’un sous-foldeur sur l’origine.  Par exemple: `https://contoso.com/path/subfolder`  
+    > *   Spécification d’un sous-foldeur sur l’origine.  Par exemple : `https://contoso.com/path/subfolder`  
     > 
-    > *   Utilisation d’une origine avec des paramètres de chaîne de requête.  Par exemple: `https://contoso.com/path/feature?query_parameter=12345`  
+    > *   Utilisation d’une origine avec des paramètres de chaîne de requête.  Par exemple : `https://contoso.com/path/feature?query_parameter=12345`  
     
 1.  Choose **ACCEPT and REGISTER**.  
     
 ### <a name="apply-your-token"></a>Appliquer votre jeton  
 
-Un jeton est généré instantanément et affiché sur la page console du développeur des essais [Microsoft Edge Origin.][DeveloperMicrsoftEdgeOriginTrials]  Pour commencer à utiliser la version d’essai sur votre site web, utilisez l’une des méthodes suivantes pour appliquer le jeton à votre page.  
+Un jeton est généré instantanément et affiché sur la page Microsoft Edge console du développeur des essais [Origin.][DeveloperMicrsoftEdgeOriginTrials]  Pour commencer à utiliser la version d’essai sur votre site web, utilisez l’une des méthodes suivantes pour appliquer le jeton à votre page.  
 
 *   Ajoutez `origin-trial` la valeur d’attribut et votre jeton à la `meta` balise sur chaque page qui utilise l’API expérimentale.  
     
@@ -91,13 +91,13 @@ Lorsque vous utilisez des API expérimentales, veillez à fournir une expérienc
 
 ### <a name="roadmap-for-allowed-origins"></a>Feuille de route pour les origines autorisées  
 
-Le portail d’essai d’origine de Microsoft Edge ne prend actuellement en charge que les origines SSL activées, ce qui signifie que le protocole HTTPS doit être correctement implémenté sur les sites web pour s’inscrire à une expérience.  À l’avenir, les origines sécurisées suivantes sont planifiées.  
+Le Microsoft Edge d’essai Origin aujourd’hui prend uniquement en charge les origines activées SSL, ce qui signifie que le protocole HTTPS doit être correctement implémenté sur les sites web pour s’inscrire à une expérience.  À l’avenir, les origines sécurisées suivantes sont planifiées.  
 
 *   `http://localhost`Inscrivez-vous comme origine de vos expériences.  Pour utiliser `http://localhost` aujourd’hui, `edge://flags` accédez à l’expérience et définissez-la **sur Activé.**  
 *   Utilisez des extensions avec `extensions://` des origines préfixées pour vous inscrire à des expériences.  
     
 <!-- links -->  
 
-[DeveloperMicrsoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Console de développement d’essai Microsoft Edge Origin | Documents Microsoft"  
+[DeveloperMicrsoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Microsoft Edge Console de développement Origin Trials | Documents Microsoft"  
 
 [MDNImplementingFeatureDetection]: https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection "Mise en œuvre des fonctionnalités de détection | MDN"  

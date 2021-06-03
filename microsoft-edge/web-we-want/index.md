@@ -1,6 +1,6 @@
 ---
 description: Une initiative entre navigateurs axée sur l’identification des fonctionnalités manquantes dans la plateforme web pour un développement potentiel en tant que normes web ou fonctionnalités de navigateur.
-title: Vue d’ensemble du web
+title: Vue d’ensemble de Web We Want
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/15/2021
@@ -30,11 +30,11 @@ L’initiative Web que nous voulons est l’endroit où faire savoir aux fournis
 
 *   Restez en contact en suivant l’initiative sur [Twitter][TwitterWebWeWant] ou [LinkedIn][LinkedInWebWeWant] pour rester à jour sur ce qui est en cours de développement ou participer à des enquêtes qui nous aident à hiérarchiser les demandes envoyées.
 
-Nous avons fourni quelques wants dans Chromium DevTools, tels que l’Afficheur des commandes source \([Want][WebWeWantWants64], [Docs][DevtoolsExperimentalFeaturesIndexSourceOrderViewer]\) et [3D View][Devtools3DViewIndex], similaire à ce qui était dans firefox DevTools. Il existe également quelques autres souhaites qui ont des propositions précédentes dans des groupes de normes. Rejoignez-nous pour faire avancer l’avenir du web avec le site Web que nous voulons !
+Nous avons fourni quelques wants dans l’Chromium DevTools, tels que l’Afficheur des commandes source \([Want][WebWeWantWants64], [Docs][DevtoolsExperimentalFeaturesIndexSourceOrderViewer]\) et [3D View][Devtools3DViewIndex], similaire à ce qui était dans firefox DevTools. Il existe également quelques autres souhaitent qui ont des propositions précédentes dans des groupes de normes. Rejoignez-nous pour faire avancer l’avenir du web avec le web que nous voulons !
 
 <!-- links -->  
 
-[Devtools3DViewIndex]: ../devtools-guide-chromium/3d-view/index.md "Affichage 3D | Documents Microsoft"
+[Devtools3DViewIndex]: ../devtools-guide-chromium/3d-view/index.md "Affichage 3D | Microsoft Docs"
 
 [DevtoolsExperimentalFeaturesIndexSourceOrderViewer]: ../devtools-guide-chromium/experimental-features/index.md#source-order-viewer "Visionneuse de commandes source - Fonctionnalités expérimentales | Documents Microsoft"
 

@@ -34,7 +34,7 @@ ms.locfileid: "11565056"
 ## <a name="open-the-cookies-pane"></a>Ouvrir le volet Cookies  
 
 1.  [Ouvrez DevTools][DevToolsOpen].  
-1.  Choisissez **l’onglet Application** pour ouvrir le panneau **Application.**  Le **volet** Manifeste doit s’ouvrir.  
+1.  Choisissez **l’onglet Application** pour ouvrir le **panneau Application.**  Le **volet** Manifeste doit s’ouvrir.  
     
     :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-manifest-empty.msft.png":::
        Figure 1 : Volet manifeste  
@@ -105,7 +105,7 @@ Sélectionnez **Effacer tout** \( Effacer ![ tout ](../media/clear-icon.msft.png
 
 [MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "Cookies HTTP | MDN"  
 [MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "Cookies HTTP : cookies permanents | MDN"  
-[MDNHTTPCookiesSamesite]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies "Cookies HTTP : les cookies SameSite | MDN"  
+[MDNHTTPCookiesSamesite]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#SameSite_cookies "Cookies HTTP : cookies SameSite | MDN"  
 [MDNHTTPCookiesScope]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Scope_of_cookies "Cookies HTTP : étendue des cookies | MDN"  
 [MDNHTTPCookiesSecure]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies "Cookies HTTP : les cookies sécurisés et HttpOnly | MDN"  
 [MDNHTTPCookiesSession]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Session_cookies "Cookies HTTP : cookies de session | MDN"  
@@ -115,7 +115,7 @@ Sélectionnez **Effacer tout** \( Effacer ![ tout ](../media/clear-icon.msft.png
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/cookies) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

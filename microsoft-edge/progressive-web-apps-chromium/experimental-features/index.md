@@ -14,9 +14,9 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "11574588"
 ---
-# <a name="experimental-features-in-progressive-web-apps-pwas"></a>Fonctionnalités expérimentales dans les applications web progressives (P.A.S.)  
+# <a name="experimental-features-in-progressive-web-apps-pwas"></a>Fonctionnalités expérimentales dans les applications web progressives (P PWA)  
 
-Microsoft Edge permet d’accéder aux fonctionnalités expérimentales en cours de développement.  Pour déterminer si chaque fonctionnalité est prête et quand publier chacune, testez [et fournissez des commentaires.](#providing-feedback-on-experimental-features)  
+Microsoft Edge permet d’accéder aux fonctionnalités expérimentales en cours de développement.  Pour déterminer si chaque fonctionnalité est prête et quand publier chacune d’elles, testez [et fournissez des commentaires.](#providing-feedback-on-experimental-features)  
 
 Les fonctionnalités expérimentales sont disponibles dans tous les canaux de Microsoft Edge, mais les fonctionnalités expérimentales les plus récentes sont disponibles uniquement dans les canal Microsoft Edge Canary.  
 
@@ -50,27 +50,27 @@ Pour activer \(ou désactiver\) les fonctionnalités expérimentales dans Micros
 
 Microsoft Edge utilise parfois des essais d’origine pour tester des fonctionnalités pour des domaines ou des sites web spécifiques.  Vous pouvez utiliser une version d’essai d’origine pour votre site web afin d’appliquer une fonctionnalité spécifique.  Si vous êtes propriétaire d’un site web, vous pouvez vous inscrire à une version d’essai d’origine.  Une version d’essai d’origine fournit des fonctionnalités à un pourcentage Microsoft Edge utilisateurs qui visitent votre site web.
 
-Pour plus d’informations sur les essais Origin, accédez à Microsoft Edge console du développeur [des essais Origin.][MicrosoftDeveloperMicrosoftEdgeOriginTrials]  
+Pour plus d’informations sur les essais d’origine, [accédez à Microsoft Edge console de][MicrosoftDeveloperMicrosoftEdgeOriginTrials]développement des essais Origin.  
     
 > [!NOTE]
-> Les fonctionnalités expérimentales sont constamment mises à jour et peuvent entraîner des problèmes de performances.  Pour désactiver une fonctionnalité expérimentale, accédez à Activer [les](#turn-on-experimental-features)fonctionnalités expérimentales, accédez à l’expérience, puis choisissez `Disabled` .  
+> Les fonctionnalités expérimentales sont constamment mises à jour et peuvent entraîner des problèmes de performances.  Pour désactiver une fonctionnalité expérimentale, accédez à [Activer les](#turn-on-experimental-features)fonctionnalités expérimentales, accédez à l’expérience, puis choisissez `Disabled` .  
 
 ## <a name="features-that-are-available-to-test"></a>Fonctionnalités disponibles pour le test  
 
-La liste suivante décrit les nouvelles fonctionnalités d’application web expérimentales disponibles pour le test et la validation sur Microsoft Edge.  
+La liste suivante décrit les nouvelles fonctionnalités expérimentales d’application web disponibles pour le test et la validation Microsoft Edge.  
 
 | Fonctionnalité | Microsoft Edge version | Plateforme |  
 |:--- |:--- |:--- |  
-| [Gestion du protocole URI](#uri-protocol-handling) | 91 ou ultérieur | Windows et Linux |    
-| [Gestion des liens d’URL](#url-link-handling) | 91 ou ultérieur | Windows|
-| [Superposition des contrôles de fenêtre pour les applications de bureau](#window-controls-overlay-for-installed-desktop-web-apps) | 91 ou ultérieur | Windows 10|   
+| [Gestion du protocole URI](#uri-protocol-handling) | 91 ou ultérieure | Windows et Linux |    
+| [Gestion des liens d’URL](#url-link-handling) | 91 ou ultérieure | Windows|
+| [Superposition des contrôles de fenêtre pour les applications de bureau](#window-controls-overlay-for-installed-desktop-web-apps) | 91 ou ultérieure | Windows10|   
 | [Exécuter sur la connexion au système d’exploitation](#run-on-os-login) | 88 ou ultérieure | Tous |  
 | [Raccourcis](#shortcuts) | 87 ou ultérieure | Tous |  
 | [Gestion des fichiers](#file-handling) | 83 ou ultérieure | Tous les ordinateurs de bureau |  
 
 ## <a name="uri-protocol-handling"></a>Gestion du protocole URI  
 
-Un identificateur de ressource uniforme \(URI\) peut être utilisé pour définir plus que des liens vers des pages web et du contenu web à l’aide du protocole HTTP ou FTP.  Les URIs peuvent être utilisés pour décrire les liens vers tout ce que vous codifiez dans un schéma.  Par exemple, le protocole est utilisé pour décrire un lien de messagerie et le système d’exploitation \(OS\) ou le navigateur décide quelle page web ou application doit gérer `mailto://` ce protocole.  
+Un identificateur de ressource uniforme \(URI\) peut être utilisé pour définir plus que des liens vers des pages web et du contenu web à l’aide du protocole HTTP ou FTP.  Les UR peuvent être utilisés pour décrire les liens vers tout ce que vous codifiez dans un schéma.  Par exemple, le protocole est utilisé pour décrire un lien de messagerie et le système d’exploitation \(OS\) ou le navigateur décide quelle page web ou application doit gérer `mailto://` ce protocole.  
 
 Pour plus d’informations sur la prise en charge existante basée sur le navigateur, accédez aux serveurs de protocole [web.][MdnDocsWebApiNavigatorRegisterprotocolhandlerWebBasedProtocolHandlers]  
 
@@ -95,7 +95,7 @@ Si plusieurs applications inscrivent un protocole, une invite s’est présenté
 
 Pour afficher un aperçu de la gestion de protocole [](#turn-on-experimental-features) Microsoft Edge sur Windows, accédez à Activer les fonctionnalités expérimentales et activer la gestion du protocole PWA **bureau.**  
 
-Pour plus d’informations sur l’essai d’origine en cours d’exécution pour les responsables de protocole, accédez à [Register for Web App Protocol Handler Registration][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].  
+Pour plus d’informations sur l’essai d’origine est en cours d’exécution pour les responsables de protocole, accédez à [Register for Web App Protocol Handler Registration][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].  
 
 ### <a name="example-manifest"></a>Exemple de manifeste
 
@@ -131,7 +131,7 @@ Dans cet exemple, un manifeste d’application web déclare que l’application 
  
 ## <a name="url-link-handling"></a>Gestion des liens d’URL  
 
-Un localisateur de ressources uniforme \(URL\) est un type d’URI.  Créez une expérience plus attrayante lorsque les applications web progressives \(PWAs\) s’inscrivent en tant que handleurs pour les URIs https.  Les P PWA peuvent demander à se lancer lorsque les URIs associés sont activés.  Par exemple, si un utilisateur choisit un lien vers un article d’actualités dans un message électronique.  Un PWA pour afficher des articles d’actualités est automatiquement lancé pour gérer l’activation du lien.  
+Un localisateur de ressources uniforme \(URL\) est un type d’URI.  Créez une expérience plus attrayante lorsque les applications web progressives \(PWAs\) s’inscrivent en tant que handleurs pour les URIs https.  Les P PWA peuvent demander à se lancer lorsque les URIs associés sont activés.  Par exemple, si un utilisateur choisit un lien vers un article d’actualités dans un message électronique.  Une PWA pour afficher des articles d’actualités est automatiquement lancée pour gérer l’activation du lien.  
 
 Cette fonctionnalité vous permet d’inscrire une PWA auprès du navigateur à l’aide du manifeste de l’application web et de déclarer que le navigateur gère des liens spécifiques.  Pour inscrire un PWA dans le navigateur, ajoutez le membre `url_handlers` facultatif au fichier manifeste.  Le membre est un groupe qui groupe les origines des `url_handlers` `object[]` URIs que l’application souhaite gérer.  
 
@@ -183,12 +183,12 @@ Par exemple, la `url_handlers` valeur de membre est définie sur `*.contoso.com`
 
 ## <a name="window-controls-overlay-for-installed-desktop-web-apps"></a>Superposition des contrôles de fenêtre pour les applications web de bureau installées  
 
-Pour créer une barre de titre immersive comme une application native pour votre application web installée sur le bureau, la fonctionnalité Superposition des contrôles **de fenêtre** permet d’effectuer les actions suivantes.  
+Pour créer une barre de titre immersive comme une application native pour votre application web installée sur le bureau, la fonctionnalité Superposition des contrôles **de** fenêtre permet d’effectuer les actions suivantes.  
     
 1.  Supprime la barre de titre réservée système.  Elle s’étend généralement sur la largeur du cadre client.  
 1.  La remplace par une superposition.  Il contient uniquement les contrôles de fenêtre nécessaires au système critique nécessaires pour qu’un utilisateur contrôle la fenêtre elle-même.  
     
-Une fois qu’elle fournit une superposition, vous pouvez utiliser l’intégralité de la zone du client web.  Cette fonctionnalité inclut une mise à jour du manifeste.  Il vous permet de déterminer la taille et la position de la superposition pour vous aider à organiser le contenu.  
+Une fois qu’elle fournit une superposition, toute la zone du client web est disponible.  Cette fonctionnalité inclut une mise à jour du manifeste.  Il vous permet de déterminer la taille et la position de la superposition pour vous aider à organiser le contenu.  
 
 Pour afficher un aperçu des superpositions de contrôles de [](#turn-on-experimental-features) fenêtre dans Microsoft Edge pour Windows 10, accédez à Activer les fonctionnalités expérimentales et accédez à Superposition des contrôles de fenêtre PWA **bureau.**   
 
@@ -206,7 +206,7 @@ L’exemple suivant montre comment Visual Studio Code utilise la barre de titre 
    Exemple de barre de titre dans Visual Studio Code  
 :::image-end:::  
 
-#### <a name="microsoft-teams"></a>Microsoft Teams  
+#### <a name="microsoft-teams"></a>MicrosoftTeams  
 
 L’outil de collaboration et de communication Microsoft Teams de travail est également créé avec Le poste de travail et disponible sur plusieurs plateformes de bureau.  Dans l’exemple suivant, Microsoft Teams affiche et les boutons de navigation, une zone de `back` `forward` recherche et les contrôles de profil utilisateur.  
 
@@ -216,7 +216,7 @@ L’outil de collaboration et de communication Microsoft Teams de travail est é
 
 ### <a name="overlay-window-controls-on-a-frameless-window"></a>Overlay Window Controls on a Frameless Window  
 
-Pour optimiser la zone adressaçable du contenu web, le navigateur crée une fenêtre sans cadre.  Une fenêtre sans cadre supprime toutes les interfaces utilisateur du navigateur, à l’exception des contrôles de fenêtre fournis en tant que superposition.  La fenêtre contrôle la superposition permet aux utilisateurs de réduire, d’optimiser, de restaurer et de fermer l’application.  Il permet également d’accéder aux contrôles de navigateur pertinents à l’aide du menu de l’application web.  Pour Chromium,la superposition inclut les contrôles suivants.  
+Pour optimiser la zone adressaçable du contenu web, le navigateur crée une fenêtre sans cadre.  Une fenêtre sans cadre supprime toutes les interfaces utilisateur du navigateur, à l’exception des contrôles de fenêtre fournis en tant que superposition.  La fenêtre contrôle la superposition permet aux utilisateurs de réduire, d’optimiser, de restaurer et de fermer l’application.  Il permet également d’accéder aux contrôles de navigateur appropriés à l’aide du menu de l’application web.  Pour Chromium,la superposition inclut les contrôles suivants.  
 
 *   Zone draggable de la même largeur et hauteur de chacun des boutons de contrôle de fenêtre  
 *   Bouton **Paramètres et plus** \(...\)  
@@ -414,7 +414,7 @@ Le conteneur de l’ID est également corrigé sur place et attaché `mainConten
 }
 ```
 
-Dans les cas où le navigateur ne prend pas en charge la superposition des contrôles de fenêtre, une variable CSS est ajoutée pour définir une hauteur par défaut pour la barre de titre.  Les limites des ID et des ID sont initialement définies pour remplir l’intégralité de la zone cliente et vous n’avez pas besoin de la modifier si la superposition `titleBarContainer` `mainContent` n’est pas prise en charge.  
+Dans les cas où le navigateur ne prend pas en charge la superposition des contrôles de fenêtre, une variable CSS est ajoutée pour définir une hauteur par défaut pour la barre de titre.  Les limites des ID et des ID sont initialement définies pour remplir l’intégralité de la zone cliente, et vous n’avez pas besoin de la modifier si la superposition `titleBarContainer` `mainContent` n’est pas prise en charge.  
 
 L’extrait de code suivant inclut toutes les mises à jour CSS recommandées.
 
@@ -497,7 +497,7 @@ Cette fonctionnalité vous permet de configurer le lancement automatique de votr
 
 Pour afficher un aperçu des fonctionnalités de connexion au [](#turn-on-experimental-features) système d’exploitation Run **On** pour votre PWA, accédez à Activer les fonctionnalités expérimentales et activer les applications de bureau de bureau qui s’exécutent sur la connexion au système **d’exploitation.**  
 
-:::image type="complex" source="../media/desktop-pwas-run-on-os-login-flag.png" alt-text="Activer les applications de bureau de bureau s’exécutent sur l’expérience de connexion au système d’exploitation" lightbox="../media/desktop-pwas-run-on-os-login-flag.png":::
+:::image type="complex" source="../media/desktop-pwas-run-on-os-login-flag.png" alt-text="Activer l’expérience de connexion du système d’exploitation pour les applications de bureau" lightbox="../media/desktop-pwas-run-on-os-login-flag.png":::
    Activer les applications de bureau de bureau **s’exécutent sur l’expérience de connexion au système d’exploitation**  
 :::image-end:::  
 
@@ -511,19 +511,19 @@ Pour activer la `Start app when you sign in` fonctionnalité d’une PWA,
 1.  Ouvrez le menu contextuel \(clic droit\), puis choisissez **Démarrer l’application lorsque vous vous connectez.**  
     
     :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="Utilisez le menu contextuel pour activer l’application Démarrer lorsque vous vous connectez à la fonctionnalité dans Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
-       Utilisez le menu contextuel pour activer **l’application Démarrer lorsque vous vous connectez** à la fonctionnalité dans Microsoft Edge  
+       Utilisez le menu contextuel pour activer **l’application Démarrer lorsque vous vous** connectez à la fonctionnalité dans Microsoft Edge  
     :::image-end:::  
     
 ## <a name="shortcuts"></a>Raccourcis  
 
 `Shortcuts` est un nouveau membre du fichier manifeste.  Il vous permet de définir des liens vers des composants, des pages web clés ou des actions dans votre application web.  Microsoft Windows’intègre en tant **que Jumplists**.  **Les listes de** choix définissent des menus contextuels qui s’affichent lorsque vous êtes sur l’un des éléments d’interface utilisateur suivants et ouvrent un menu contextuel \(clic droit\).  
 
-*   Vignette du menu Démarrer  
+*   Une vignette dans le menu Démarrer  
 *   Icône de la barre des tâches  
     
 Lorsqu’un utilisateur appelle un raccourci, il navigue jusqu’à l’adresse spécifiée par le membre `url` du raccourci.  
   
-:::image type="complex" source="../media/jumplists-on-windows-10.png" alt-text="Exemple de listes de Windows 10" lightbox="../media/jumplists-on-windows-10.png":::
+:::image type="complex" source="../media/jumplists-on-windows-10.png" alt-text="Exemple de jumplists sur Windows 10" lightbox="../media/jumplists-on-windows-10.png":::
    Exemple de **jumplists** sur Windows 10  
 :::image-end:::  
 
@@ -561,9 +561,9 @@ Les propriétés suivantes définissent chaque raccourci.
 
 ## <a name="file-handling"></a>Gestion des fichiers  
 
-La possibilité de s’inscrire en tant que handler de type de fichier est en phase d’expérimentation.  Vous pouvez spécifier les types de fichiers gérés par votre application dans une entrée de manifeste.  Lors de l’installation, le système d’exploitation hôte de l’utilisateur inscrit votre application en tant que handleur de fichiers pour les types de fichiers répertoriés.  Assurez-vous que la fonctionnalité existe dans le code de démarrage de vos applications et `launchQueue` qu’elle gère le fichier.  
+La possibilité de s’inscrire en tant que handler de type de fichier est en phase d’expérimentation.  Vous pouvez spécifier les types de fichiers gérés par votre application dans une entrée de manifeste.  Lors de l’installation, le système d’exploitation hôte de l’utilisateur inscrit votre application en tant que responsable de fichiers pour les types de fichiers répertoriés.  Assurez-vous que la fonctionnalité existe dans le code de démarrage de vos applications et `launchQueue` qu’elle gère le fichier.  
 
-Chromium navigateurs basés sur des navigateurs testent et façonnent cette fonctionnalité.  Pour plus d’informations, y compris des exemples de code, accédez à [Let web applications be file handlers][WebDevFileHandling].  
+Chromium navigateurs basés sur les navigateurs testent et façonnent cette fonctionnalité.  Pour plus d’informations, y compris des exemples de code, accédez à [Let web applications be file handlers][WebDevFileHandling].  
 
 Pour afficher un aperçu de la gestion des fichiers [](#turn-on-experimental-features) Microsoft Edge pour Windows 10, accédez à Activer les fonctionnalités expérimentales et activer l’API de **gestion de fichiers.**  
     

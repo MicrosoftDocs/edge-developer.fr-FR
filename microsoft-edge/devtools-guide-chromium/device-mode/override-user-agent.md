@@ -29,7 +29,7 @@ ms.locfileid: "11564293"
    limitations under the License.  -->
 # <a name="override-the-user-agent-string-from-microsoft-edge-devtools"></a>Remplacer la chaîne de l’agent utilisateur Microsoft Edge DevTools  
 
-Pour remplacer la chaîne [de l’agent utilisateur][MDNUserAgent] à Microsoft Edge DevTools :  
+Pour remplacer la chaîne [d’agent][MDNUserAgent] utilisateur à partir Microsoft Edge DevTools :  
 
 1.  Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le **menu Commande.**  
     
@@ -59,7 +59,7 @@ Pour remplacer la chaîne [de l’agent utilisateur][MDNUserAgent] à Microsoft 
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

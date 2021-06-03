@@ -29,9 +29,9 @@ ms.locfileid: "11461517"
    limitations under the License.  -->  
 # <a name="declare-api-permissions-in-extension-manifests"></a>Déclarer des autorisations d’API dans les manifestes d’extension  
 
-Pour utiliser la plupart des `chrome.*` API, votre extension doit déclarer le `permissions` manifeste.  Vous pouvez déclarer des autorisations à l’aide d’une chaîne d’autorisation à partir du tableau qui suit, ou utiliser un modèle pour faire correspondre des chaînes similaires.  Les autorisations permettent de limiter votre extension si elle est compromise par un programme malveillant.  Certaines autorisations peuvent s’afficher pour les utilisateurs avant l’installation de l’extension à l’aide des avertissements d’autorisation.  
+Pour utiliser la plupart des `chrome.*` API, votre extension doit déclarer le `permissions` manifeste.  Vous pouvez déclarer des autorisations à l’aide d’une chaîne d’autorisation du tableau qui suit ou utiliser un modèle pour faire correspondre des chaînes similaires.  Les autorisations permettent de limiter votre extension si elle est compromise par un programme malveillant.  Certaines autorisations peuvent s’afficher pour les utilisateurs avant l’installation de l’extension à l’aide des avertissements d’autorisation.  
 
-Si une API nécessite que vous déclariez des autorisations dans le manifeste, examinez la documentation de cette API pour comprendre les autorisations nécessaires.  Par exemple, la page API de stockage décrit comment déclarer `storage` l’autorisation.  
+Si une API nécessite que vous déclariez des autorisations dans le manifeste, examinez la documentation de cette API pour comprendre les autorisations nécessaires.  Par exemple, la page Stockage API indique comment déclarer `storage` l’autorisation.  
 
 L’extrait de code suivant décrit comment déclarer des autorisations dans le fichier manifeste.  
 
@@ -51,7 +51,7 @@ Le tableau suivant répertorie les chaînes d’autorisation actuellement dispon
 |:--- |:--- |  
 | `activeTab` | Demande l’octroi d’autorisations à l’extension conformément à la `activeTab` spécification. |  
 | `alarms` | Donne à votre extension l’accès à `chrome.alarms` l’API. |  
-| `background` | Permet à Microsoft Edge de démarrer tôt et de s’arrêter tardivement, de sorte que les extensions peuvent avoir une durée de vie plus longue.  Lorsqu’une extension installée dispose d’autorisations, Microsoft Edge s’exécute de manière invisible dès que l’utilisateur se connecte à l’ordinateur de l’utilisateur et avant que `background` l’utilisateur lance Microsoft Edge.  L’autorisation permet également à Microsoft Edge de poursuivre son exécution, même après la fermeture de sa dernière fenêtre, jusqu’à ce que l’utilisateur `background` quitte explicitement Microsoft Edge.  Cette autorisation n’affecte pas les extensions qui sont désactivées dans le navigateur.  `background`L’autorisation est normalement utilisée sur une page d’arrière-plan. |  
+| `background` | Permet Microsoft Edge démarrer tôt et s’arrêter tard, de sorte que les extensions peuvent avoir une durée de vie plus longue.  Lorsqu’une extension installée dispose d’une autorisation, Microsoft Edge s’exécute de manière invisible dès que l’utilisateur se connecte à l’ordinateur de l’utilisateur et avant que l’utilisateur ne lance `background` Microsoft Edge.  `background`L’autorisation permet également Microsoft Edge l’exécution, même après la fermeture de sa dernière fenêtre, jusqu’à ce que l’utilisateur quitte Microsoft Edge.  Cette autorisation n’affecte pas les extensions qui sont désactivées dans le navigateur.  `background`L’autorisation est normalement utilisée sur une page d’arrière-plan. |  
 | `bookmarks` | Donne à votre extension l’accès à `chrome.bookmarks` l’API. |  
 | `browsingData` | Donne à votre extension l’accès à `chrome.browsingData` l’API. |  
 | `certificateProvider` | Donne à votre extension l’accès à `chrome.certificateProvider` l’API. |  
@@ -108,7 +108,7 @@ Le tableau suivant répertorie les chaînes d’autorisation actuellement dispon
 | `topSites` | Donne à votre extension l’accès à `chrome.topSites` l’API. |  
 | `tts` | Donne à votre extension l’accès à `chrome.tts` l’API. |  
 | `ttsEngine` | Donne à votre extension l’accès à `chrome.ttsEngine` l’API. |  
-| `unlimitedStorage` | Fournit un quota illimité pour le stockage des données côté client, telles que les bases de données et les fichiers de stockage local.  Sans cette autorisation, l’extension est limitée à 5 Mo de stockage local. |  
+| `unlimitedStorage` | Fournit un quota illimité pour le stockage des données côté client, telles que les bases de données et les fichiers de stockage locaux.  Sans cette autorisation, l’extension est limitée à 5 Mo de stockage local. |  
 | `vpnProvider` | Donne à votre extension l’accès à `chrome.vpnProvider` l’API. |  
 | `wallpaper` | Donne à votre extension l’accès à `chrome.wallpaper` l’API. |  
 | `webNavigation` | Donne à votre extension l’accès à `chrome.webNavigation` l’API. |  
@@ -122,7 +122,7 @@ Le tableau suivant répertorie les chaînes d’autorisation actuellement dispon
 > La page d’origine se trouve [ici.](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

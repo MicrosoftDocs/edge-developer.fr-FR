@@ -66,10 +66,10 @@ Vous allez créer votre site dans un éditeur de code en ligne appelé Glitch.
        Onglet Éditeur  
     :::image-end:::  
     
-1.  Choisissez **alluring-en-préc**.  Le menu Project Options s’ouvre dans le coin supérieur gauche.  
+1.  Choisissez **alluring-en-cas**.  Le menu Project Options s’ouvre dans le coin supérieur gauche.  
     
-    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="Menu Options Project’équipe" lightbox="../media/beginners-html-setup2.msft.png":::
-       Menu Options Project’équipe  
+    :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="Menu Project Options" lightbox="../media/beginners-html-setup2.msft.png":::
+       Menu Project Options  
     :::image-end:::  
     
 1.  Choisissez **Project**.  Glitch crée une copie du projet que vous pouvez modifier et génère de manière aléatoire un nouveau nom pour le projet.  Le contenu est le même qu’auparavant.  
@@ -113,13 +113,13 @@ Votre site est assez vide.  Suivez les étapes ci-dessous pour y ajouter du cont
        :::column-end:::
     :::row-end:::
     
-1.  Affichez vos modifications dans **l’onglet en direct.**  Le texte `About Me` est visible sur la page.  Texte plus grand que le texte qui l’entoure, car `<h1>` l’élément représente un en-tête de section.  Votre navigateur web styles automatiquement les titres dans des tailles de police plus grandes.  
+1.  Affichez vos modifications dans **l’onglet en direct.**  Le texte `About Me` est visible sur la page.  Texte plus grand que le texte qui l’entoure, car `<h1>` l’élément représente un titre de section.  Votre navigateur web styles automatiquement les titres dans des tailles de police plus grandes.  
     
     :::image type="complex" source="../media/beginners-html-add2.msft.png" alt-text="Le nouveau titre est visible dans l’onglet en direct" lightbox="../media/beginners-html-add2.msft.png":::
        Le nouveau titre est visible dans l’onglet en direct  
     :::image-end:::  
     
-1.  De retour dans **l’onglet éditeur**, `<p>I am learning HTML.  Recent accomplishments:</p>` insérez sur la ligne ci-dessous où vous avez placé `<h1>About Me</h1>` .  
+1.  De retour dans **l’onglet Éditeur**, `<p>I am learning HTML.  Recent accomplishments:</p>` insérez sur la ligne ci-dessous où vous avez placé `<h1>About Me</h1>` .  
     
     :::row:::
        :::column span="":::
@@ -194,7 +194,7 @@ Avant de commencer à modifier votre contenu à partir Microsoft Edge DevTools, 
     
 1.  Revenir à **l’onglet Éditeur** et essayer de trouver le texte dans `index.html` .  Le texte n’est pas là.  
     
-    :::image type="complex" source="../media/beginners-html-dom2.msft.png" alt-text="Texte de texte texte A nouvel élément!?! est introuvable dans index.html" lightbox="../media/beginners-html-dom2.msft.png":::
+    :::image type="complex" source="../media/beginners-html-dom2.msft.png" alt-text="Texte texte texte A nouvel élément!?! est introuvable dans index.html" lightbox="../media/beginners-html-dom2.msft.png":::
        Le texte du `A new element!?!` texte de texte est introuvable dans `index.html`  
     :::image-end:::  
     
@@ -204,7 +204,7 @@ Avant de commencer à modifier votre contenu à partir Microsoft Edge DevTools, 
        Inspection d’un texte  
     :::image-end:::  
     
-    DevTools s’ouvre à côté de votre page.  `<div>A new element!?!</div>` est mis en surbrillant en bleu.  Bien que cette structure dans DevTools ressemble à votre code HTML, il s’agit en fait de l’arborescence **DOM**.  
+    DevTools s’ouvre à côté de votre page.  `<div>A new element!?!</div>` est mis en surbrillant en bleu.  Bien que cette structure dans DevTools ressemble à votre code HTML, il s’agit en fait de **l’arborescence DOM**.  
     
     :::image type="complex" source="../media/beginners-html-dom4.msft.png" alt-text="DevTools est ouvert à côté de la page" lightbox="../media/beginners-html-dom4.msft.png":::
        DevTools est ouvert à côté de la page  
@@ -254,7 +254,7 @@ Si vous souhaitez expérimenter rapidement les modifications de contenu sans qui
     
 Ce flux de travail est uniquement bon pour expérimenter les modifications de contenu.  Si vous actualisez la page ou fermez l’onglet, vos modifications ont disparu définitivement.  Si vous utilisez ce flux de travail et que vous souhaitez enregistrer vos modifications, vous devez copier manuellement ces modifications dans votre code HTML.  Les deux sections suivantes vous montrent d’autres façons de modifier le contenu à partir de l’arborescence DOM.  
 
-## <a name="reorder-nodes"></a>Réordons les nodes  
+## <a name="reorder-nodes"></a>Réordez les nodes  
 
 Vous pouvez également modifier l’ordre des nodes DOM.  Par exemple, sur votre page web, le menu de navigation se trouve près du bas.  Pour le déplacer vers le haut :  
 
@@ -381,7 +381,7 @@ Vous avez presque terminé.  Vous avez apporté quelques modifications à votre 
 > La page d’origine a été [trouvée ici](https://developers.google.com/web/tools/chrome-devtools/beginners/html) et a été co-auteure par [Le rédacteur technique Principal \(Interne][KatherineJackson] au rédacteur technique, Chrome DevTools\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -44,7 +44,7 @@ Le portage permet à votre appareil Android d’accéder au contenu hébergé su
 
 Pour activer le portage :  
 
-1.  Configurer le [débogage à distance][RemoteDebuggingGettingStarted] entre votre ordinateur de développement et votre appareil Android.  Lorsque vous avez terminé, votre appareil Android doit s’afficher **** dans le menu gauche de la boîte de dialogue Inspecter les appareils et un **indicateur d’état** Connecté.  
+1.  Configurer le [débogage à distance][RemoteDebuggingGettingStarted] entre votre ordinateur de développement et votre appareil Android.  Lorsque vous avez terminé, votre appareil Android doit s’afficher **** dans le menu gauche de la boîte de dialogue Inspecter les appareils et un **indicateur d’état** connecté.  
 1.  Dans la **boîte de dialogue Inspecter les** appareils dans DevTools, activez le **portage.**  
 1.  Choose **Add rule**.  
     
@@ -81,7 +81,7 @@ Pour configurer le port de forwarding vers un proxy :
     > [!NOTE]
     > Le serveur proxy et votre serveur web doivent s’exécuter sur différents ports.  
     
-1.  Configurer le [portage vers](#set-up-port-forwarding) votre appareil Android.  Pour le **champ d’adresse** local, entrez suivi du port sur `localhost:` qui votre serveur proxy est en cours d’exécution.  Par exemple, s’il est en cours d’exécution sur le `8000` port, accédez à `localhost:8000` .  Dans le **champ port de l’appareil,** entrez le numéro que vous souhaitez que votre appareil Android écoute, par `3333` exemple.  
+1.  Configurer le [portage vers](#set-up-port-forwarding) votre appareil Android.  Pour le **champ d’adresse** local, entrez `localhost:` suivi du port sur qui votre serveur proxy est en cours d’exécution.  Par exemple, s’il est en cours d’exécution sur le `8000` port, accédez à `localhost:8000` .  Dans le **champ port de l’appareil,** entrez le numéro que vous souhaitez que votre appareil Android écoute, par `3333` exemple.  
     
 ### <a name="configure-proxy-settings-on-your-device"></a>Configurer les paramètres de proxy sur votre appareil  
 
@@ -95,9 +95,9 @@ Ensuite, vous devez configurer votre appareil Android pour communiquer avec le s
     
 1.  Choose **Modify network**.  
 1.  Choisissez **Options avancées.**  Les paramètres du proxy s’affichent.  
-1.  Choisissez le menu **proxy** et choisissez **Manuel.**  
+1.  Choisissez le menu **Proxy** et choisissez **Manuel.**  
 1.  Pour le **champ Nom d’hôte proxy,** entrez `localhost` .  
-1.  Pour le **champ Port proxy,** entrez le numéro de port que vous avez entré pour le **port** d’appareil dans la section précédente.  
+1.  Pour le **champ Port proxy,** entrez le numéro de port que vous avez entré pour le port d’appareil dans la section précédente. ****  
 1.  Choose **Save**.  
     
 Avec ces paramètres, votre appareil forwarde toutes ses demandes au proxy sur votre ordinateur de développement.  Le proxy effectue des demandes au nom de votre appareil, afin que les demandes à votre domaine local personnalisé soient correctement résolues.  
@@ -107,7 +107,7 @@ Accédez maintenant à des domaines personnalisés sur votre appareil Android, c
 Si votre serveur web s’exécute hors d’un port non standard, n’oubliez pas de spécifier le port lorsque vous demandez le contenu à partir de votre appareil Android.  Par exemple, si votre serveur web utilise le domaine personnalisé sur le port, lorsque vous affichez le site à partir de votre appareil Android, vous devez utiliser `microsoft-edge.devtools` `7331` l’URL. `microsoft-edge.devtools:7331`  
 
 > [!TIP]
-> Pour reprendre la navigation normale, n’oubliez pas de revenir aux paramètres proxy de votre appareil Android après vous être déconnecté de l’ordinateur de développement.  
+> Pour reprendre la navigation normale, n’oubliez pas de rétablir les paramètres proxy sur votre appareil Android après vous être déconnecté de l’ordinateur de développement.  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
@@ -128,7 +128,7 @@ Si votre serveur web s’exécute hors d’un port non standard, n’oubliez pas
 > La page d’origine est trouvée ici et est co-auteure par [Les Basques DeCénais (Rédacteur][KayceBasques] technique, Chrome DevTools \& Writer\) et [Meggin Kearney][MegginKearney] \(Tech Writer\). [](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

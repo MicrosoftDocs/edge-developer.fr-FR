@@ -37,7 +37,7 @@ Pour découvrir les principes de base de **l’outil** Réseau, accédez [à Pri
 
 **Symptômes**  
 
-Six demandes sont téléchargées simultanément.  Après cela, une série de demandes sont en file d’attente ou bloquées.  Une fois l’une des six premières demandes terminé, l’une des demandes de la file d’attente démarre.  
+Six demandes sont téléchargées simultanément.  Après cela, une série de demandes sont en file d’attente ou bloquées.  Une fois l’une des six premières demandes se termine, l’une des demandes de la file d’attente démarre.  
 
 Dans la **cascade de** la figure suivante, les six premières demandes de ressources démarrent `edge-iconx1024.msft.png` simultanément.  Les demandes suivantes sont bloquées jusqu’à ce que l’une des six premières se termine.  
 
@@ -70,7 +70,7 @@ Dans la figure suivante, la barre longue et verte de la **cascade** indique que 
 **Causes**  
 
 *   La connexion entre le client et le serveur est lente.  
-*   Le serveur est lent à répondre.  Hébergez le serveur localement pour déterminer si la connexion ou le serveur est lent.  Si vous obtenez toujours une durée lente jusqu’au premier byte \(TTFB\) lors de l’accès à un serveur local, le serveur est lent.  
+*   Le serveur est lent à répondre.  Hébergez le serveur localement pour déterminer s’il s’agit de la connexion ou du serveur lent.  Si vous obtenez toujours une durée lente jusqu’au premier byte \(TTFB\) lors de l’accès à un serveur local, le serveur est lent.  
     
 **Correctifs**  
 
@@ -124,7 +124,7 @@ Do you have a network issue that should be added to this guide?
 > La page d’origine est trouvée ici et est co-auteure par [Les Basques Decéssaisie \(Rédacteur][KayceBasques] technique, Chrome DevTools \& Évérité\) et [Chef Garbee][JonathanGarbee] \(Google Developer Expert for Web Technology\). [](https://developers.google.com/web/tools/chrome-devtools/network/issues)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

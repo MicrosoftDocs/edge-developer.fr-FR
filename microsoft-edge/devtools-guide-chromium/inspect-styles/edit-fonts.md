@@ -26,9 +26,9 @@ CSS offre une meilleure prise en charge de la typographie au cours des dernière
 
 Pour faciliter l’travail avec la typographie, un **éditeur** de polices visuel se trouve désormais dans le **volet Styles.**  Vous pouvez modifier vos paramètres de police et les modifications sont restituer immédiatement dans le navigateur.  Tout cela sans connaissances approfondies du CSS.  
 
-Actuellement, **Enable new font editor tool within the Styles pane** la fonctionnalité est expérimentale et vous devez [l’activer pour les outils de développement Microsoft Edge.][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]  
+Actuellement, **Enable new font editor tool within the Styles pane** la fonctionnalité est expérimentale et vous devez [l’activer pour Microsoft Edge outils de développement.][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]  
 
-Toute CSS dans le volet **Styles,** définitions de police ou styles inline, affiche automatiquement une icône qui ouvre l’éditeur de **polices visuel.**  Pour ouvrir Visual **Font Editor,** sélectionnez l’icône **Éditeur de** polices.  
+Toute CSS dans le volet **Styles,** définitions de police ou styles inline, affiche automatiquement une icône qui ouvre l’éditeur de **polices visuel.**  Pour ouvrir visual **Font Editor,** sélectionnez l’icône **Éditeur de** polices.  
 
 :::row:::
    :::column span="":::
@@ -43,7 +43,7 @@ Toute CSS dans le volet **Styles,** définitions de police ou styles inline, aff
    :::column-end:::
 :::row-end:::  
 
-Tous les champs de l’éditeur **de police** visuel sont remplis à partir des valeurs du CSS dans le **volet Styles.**  Par exemple, la définition est définie sur dans le volet Styles, de sorte que le champ de texte de hauteur de ligne s’affiche et que la zone de texte d’unité `line-height` `160%` **** `160` s’affiche. `%`  En outre, le curseur est automatiquement définie pour correspondre aux valeurs du champ de texte.  
+Tous les champs de l’éditeur **de police** visuel sont remplis à partir des valeurs du CSS dans le **volet Styles.**  Par exemple, la définition est définie sur dans le volet Styles, de sorte que le champ de texte de la hauteur de ligne s’affiche et que la zone de texte d’unité `line-height` `160%` **** `160` s’affiche. `%`  En outre, le curseur est automatiquement définie pour correspondre aux valeurs du champ de texte.  
 
 **L’éditeur de** polices se compose de deux parties : le sélecteur de la famille de polices et l’éditeur de propriétés CSS.  
 
@@ -98,7 +98,7 @@ Vous pouvez également convertir des unités CSS à l’aide de Visual **Font Ed
    :::column-end:::
 :::row-end:::  
 
-La dropdown d’unité fournit toutes les unités CSS numériques disponibles.  La taille de police, la hauteur des lignes, l’importance de la police et l’espacement utilisent des unités différentes.  Lorsque les zones de texte sont sélectionnées, vous pouvez sélectionner les touches et les touches pour `arrow up` `arrow down` affiner vos paramètres.  Pour utiliser les curseurs avec un clavier, sélectionnez les `arrow left` touches et les `arrow down` touches.  
+La dropdown d’unité fournit toutes les unités CSS numériques disponibles.  La taille de la police, la hauteur des lignes, l’importance de la police et l’espacement utilisent des unités différentes.  Lorsque les zones de texte sont sélectionnées, vous pouvez sélectionner les touches et les touches pour `arrow up` `arrow down` affiner vos paramètres.  Pour utiliser les curseurs avec un clavier, sélectionnez les `arrow left` touches et les `arrow down` touches.  
 
 L’éditeur de propriétés CSS inclut également des mots clés prédéfincis.  Pour utiliser les mots clés prédéfins, sur le côté droit, sélectionnez `Toggle Input Type` l’icône.  L’interface utilisateur change et une liste liste des mots clés prédéfini s’affiche.  Pour revenir à l’interface utilisateur avec le curseur et d’autres contrôles d’interface utilisateur, choisissez de nouveau `Toggle Input Type` l’icône.  
 
@@ -112,6 +112,6 @@ L’éditeur de propriétés CSS inclut également des mots clés prédéfincis.
 
 <!-- links -->  
 
-[DevtoolsIndex]: ../index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
+[DevtoolsIndex]: ../index.md "Microsoft Edge outils de développement (Chromium) | Documents Microsoft"  
 [DevtoolsExperimentalFeaturesIndex]: ../experimental-features/index.md "Fonctionnalités expérimentales | Documents Microsoft"  
-[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../experimental-features/index.md#turn-on-experimental-features "Activer les fonctionnalités expérimentales : fonctionnalités expérimentales | Documents Microsoft"  
+[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../experimental-features/index.md#turn-on-experimental-features "Activer les fonctions expérimentales – Fonctions expérimentales | Microsoft Docs"  

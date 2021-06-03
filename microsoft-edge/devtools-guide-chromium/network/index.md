@@ -92,7 +92,7 @@ Pour l’instant, **l’outil** Réseau est vide.  DevTools enregistre uniquemen
 
 Pour afficher l’activité réseau qu’une page provoque :  
 
-1.  Actualisez la page web.  Le panneau Réseau enregistre toute l’activité réseau dans le **journal réseau.**  
+1.  Actualisez la page web.  Le panneau Réseau enregistre toute l’activité réseau dans **le journal réseau.**  
     
     :::image type="complex" source="../media/network-glitch-network.msft.png" alt-text="Journal réseau" lightbox="../media/network-glitch-network.msft.png":::
        Journal **réseau**  
@@ -104,7 +104,7 @@ Pour afficher l’activité réseau qu’une page provoque :
 
     *   **État**.  Code d’état HTTP pour la réponse.  
     *   **Type**.  Type de ressource.  
-    *   **Initiateur**.  Cause de la demande de ressource.  La mise en place d’un lien dans la colonne Initiateur vous permet d’obtenir le code source à l’origine de la demande.  
+    *   **Initiateur**.  Cause de la demande de ressource.  La mise en place d’un lien dans la colonne Initiator vous permet d’obtenir le code source à l’origine de la demande.  
     *   **Heure**.  Durée de la demande.  
     *   **Cascade**.  Représentation graphique des différentes étapes de la demande.  Pour afficher une répartition, pointez sur une cascade.  
     
@@ -136,7 +136,7 @@ Il existe également de nombreuses colonnes qui sont masquées par défaut et qu
     
 ## <a name="simulate-a-slower-network-connection"></a>Simuler une connexion réseau plus lente  
 
-La connexion réseau de l’ordinateur que vous utilisez pour créer des sites est probablement plus rapide que les connexions réseau des appareils mobiles de vos utilisateurs.  En limitation de la page, vous avez une meilleure idée du temps de chargement d’une page sur un appareil mobile.  
+La connexion réseau de l’ordinateur que vous utilisez pour créer des sites est probablement plus rapide que les connexions réseau des appareils mobiles de vos utilisateurs.  En limitation de la page, vous obtenez une meilleure idée du temps de chargement d’une page sur un appareil mobile.  
 
 1.  Choose the **Throttling** dropdown, which is set to **Online** by default.  
     
@@ -179,7 +179,7 @@ Les captures d’écran affichent l’apparence d’une page web au fil du temps
        Activité réseau qui s’est produit lors de la première capture d’écran  
     :::image-end:::  
     
-1.  Sélectionnez de nouveau \( Paramètres réseau \) et cochez la case Capture d’écran pour fermer le ![ ](../media/settings-icon.msft.png) volet Captures d’écran. ****
+1.  Sélectionnez à nouveau \( Paramètres réseau \) et cochez la case Capture d’écran pour fermer le ![ ](../media/settings-icon.msft.png) volet Captures d’écran. ****
 1.  Actualisez la page.  
     
 ## <a name="inspect-the-details-of-the-resource"></a>Inspecter les détails de la ressource  
@@ -198,7 +198,7 @@ Choisissez une ressource pour en savoir plus à son sujet.  Essayez maintenant :
        Panneau **d’aperçu**  
     :::image-end:::  
     
-    Le panneau est utile lorsqu’une API renvoie un code d’erreur au format HTML.  Il peut être plus facile de lire le code HTML rendu que le code source HTML, ou lorsque vous examinez des images.  
+    Le panneau est utile lorsqu’une API renvoie un code d’erreur au format HTML.  Vous trouverez peut-être plus facile de lire le code HTML rendu que le code source HTML, ou lorsque vous examinez des images.  
 
 1.  Sélectionnez **le panneau de** réponse.  Le code source HTML est affiché.  
     
@@ -215,7 +215,7 @@ Choisissez une ressource pour en savoir plus à son sujet.  Essayez maintenant :
        Panneau **De minutage**  
     :::image-end:::  
     
-1.  Choisissez **Fermer** \( Fermer \) pour afficher à nouveau ![ le journal ](../media/close-icon.msft.png) réseau.  
+1.  Choose **Close** \( ![ Close ](../media/close-icon.msft.png) \) to view the Network Log again.  
     
     :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="Bouton Fermer" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
        Bouton **** Fermer  
@@ -235,9 +235,9 @@ Par exemple, supposons que vous vouliez vérifier que vos ressources utilisent d
        Volet **** de recherche  
     :::image-end:::  
     
-1.  Tapez `Cache-Control` et sélectionnez `Enter` .  Le volet de recherche répertorie toutes les instances de ce qu’il trouve dans les en-têtes `Cache-Control` ou le contenu des ressources.  
+1.  Tapez `Cache-Control` et sélectionnez `Enter` .  Le volet De recherche répertorie toutes les instances de ce qu’il trouve dans les en-têtes de ressource `Cache-Control` ou le contenu.  
     
-    :::image type="complex" source="../media/network-glitch-network-search-cache-control.msft.png" alt-text="Résultats de la recherche pour Cache-Control" lightbox="../media/network-glitch-network-search-cache-control.msft.png":::
+    :::image type="complex" source="../media/network-glitch-network-search-cache-control.msft.png" alt-text="Résultats de recherche pour Cache-Control" lightbox="../media/network-glitch-network-search-cache-control.msft.png":::
        Résultats de la recherche pour  `Cache-Control`  
     :::image-end:::  
     
@@ -350,13 +350,13 @@ Comment se comporte une page lorsque certaines ressources de page ne sont pas di
        `main.css` a été bloqué  
     :::image-end:::  
     
-1.  Désélectionner la **case à cocher Activer le blocage des** demandes.  
+1.  Désélection de la **case à cocher Activer le blocage des** demandes.  
 
 ## <a name="conclusion"></a>Conclusion  
 
-Félicitations, vous avez terminé le didacticiel.  Vous savez maintenant comment **** utiliser l’outil Réseau dans le Microsoft Edge DevTools !
+Félicitations, vous avez terminé le didacticiel.  Vous savez maintenant comment utiliser **l’outil** Réseau dans Microsoft Edge DevTools !
 
-Accédez à la [Référence réseau][DevtoolsNetworkReference] pour découvrir d’autres fonctionnalités DevTools liées à l’inspection de l’activité réseau.  
+Accédez à la [référence réseau][DevtoolsNetworkReference] pour découvrir d’autres fonctionnalités DevTools liées à l’inspection de l’activité réseau.  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
@@ -368,7 +368,7 @@ Accédez à la [Référence réseau][DevtoolsNetworkReference] pour découvrir d
 
 [DevToolsCustomizePlacement]: ../customize/placement.md "Modifier Microsoft Edge placement de DevTools | Documents Microsoft"  
 [DevtoolsNetworkReference]: ./reference.md "Référence de l’analyse réseau | Documents Microsoft"
-[DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Demandes de filtre : référence de l’analyse réseau | Documents Microsoft"  
+[DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Demandes de filtrage : référence de l’analyse réseau | Documents Microsoft"  
 [DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Masquer le volet Vue d’ensemble - Référence de l’analyse réseau | Documents Microsoft"
 [DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Filtrer les demandes par propriétés : référence de l’analyse réseau | Documents Microsoft"
 [DevToolsOpen]: ../open/index.md "Ouvrez Microsoft Edge devTools | Documents Microsoft"  
@@ -383,7 +383,7 @@ Accédez à la [Référence réseau][DevtoolsNetworkReference] pour découvrir d
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

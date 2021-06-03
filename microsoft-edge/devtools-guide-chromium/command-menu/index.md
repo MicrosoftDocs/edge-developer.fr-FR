@@ -29,7 +29,7 @@ ms.locfileid: "11564489"
    limitations under the License.  -->  
 # <a name="run-commands-with-the-microsoft-edge-devtools-command-menu"></a>Exécuter des commandes avec le Microsoft Edge menu de commandes DevTools  
 
-Le menu Commande permet de naviguer rapidement dans l’interface Microsoft Edge’interface utilisateur de DevTools et d’accomplir des tâches courantes, telles que la désactivation [de JavaScript.][JavascriptDisable]  Vous connaissez peut-être une fonctionnalité similaire dans Microsoft Visual Studio code appelé palette de [commandes,][VisualStudioCodeUICommandPalette]qui était l’inspiration d’origine du menu de commandes.  
+Le menu Commande permet de naviguer rapidement dans l’interface Microsoft Edge’interface utilisateur de DevTools et d’accomplir des tâches courantes, telles que la désactivation [de JavaScript.][JavascriptDisable]  Vous connaissez peut-être une fonctionnalité similaire dans Microsoft Visual Studio code appelé palette de [commandes,][VisualStudioCodeUICommandPalette]qui était l’inspiration d’origine du menu commande.  
 
 :::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Utilisation du menu Commande pour désactiver JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
    Utilisation du menu Commande pour désactiver JavaScript  
@@ -72,7 +72,7 @@ Supprimez `>` le caractère et le type pour afficher les autres actions disponib
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/command-menu/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

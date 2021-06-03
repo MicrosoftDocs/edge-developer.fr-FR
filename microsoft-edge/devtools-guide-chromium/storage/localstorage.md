@@ -96,7 +96,7 @@ Ce guide vous montre comment utiliser [Microsoft Edge DevTools][MicrosoftEdgeDev
        Modifier le contexte JavaScript de la console  
     :::image-end:::  
     
-1.  Exécutez vos expressions dans la console, comme vous le faites `localStorage` dans votre JavaScript.  
+1.  Exécutez vos expressions dans la console, comme vous le faites `localStorage` dans votre javaScript.  
     
     :::image type="complex" source="../media/storage-console-local-storage-interaction.msft.png" alt-text="Interagir avec localStorage à partir de la console" lightbox="../media/storage-console-local-storage-interaction.msft.png":::
        Interagir avec `localStorage` à partir de la **console**  
@@ -110,14 +110,14 @@ Ce guide vous montre comment utiliser [Microsoft Edge DevTools][MicrosoftEdgeDev
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
 
-[MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window.localStorage, | MDN"  
+[MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window.localStorage | MDN"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

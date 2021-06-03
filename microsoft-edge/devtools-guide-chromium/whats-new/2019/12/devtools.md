@@ -31,7 +31,7 @@ ms.locfileid: "11564993"
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Annonces de l’équipe Microsoft Edge DevTools  
 
-Les sections suivantes sont une liste d’annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités dans DevTools, Microsoft Visual Studio extensions de code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez-nous [sur Twitter.][EdgeDevToolsTwitterAccount]  
+Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités dans DevTools, Microsoft Visual Studio extensions de code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez-nous [sur Twitter.][EdgeDevToolsTwitterAccount]  
 
 ### <a name="accessibility-improvements-to-the-devtools"></a>Améliorations de l’accessibilité de DevTools  
 
@@ -120,7 +120,7 @@ L’extension de Microsoft Edge web vous permet d’analyser facilement votre pa
    Outil **Hints** dans DevTools lors de l’installation de l’extension de navigateur webhint  
 :::image-end:::  
 
-[Essayez l’extension de navigateur webhint dans Microsoft Edge][MicrosoftEdgeInsiderAddons].  Une fois l’extension installée, ouvrez DevTools et choisissez l’outil **Hints.**  À partir de là, exécutez une analyse de site personnalisable.  Pour en savoir [plus, webhint.io][WebhintBrowserExtension] plus d’informations.
+[Essayez l’extension de navigateur webhint dans Microsoft Edge][MicrosoftEdgeInsiderAddons].  Une fois l’extension installée, ouvrez DevTools et choisissez **l’outil Hints.**  À partir de là, exécutez une analyse de site personnalisable.  Pour en savoir [plus, webhint.io][WebhintBrowserExtension] plus d’informations.
 
 ### <a name="3d-view"></a>Vue 3D  
 
@@ -130,9 +130,9 @@ Utilisez la vue **3D** pour déboguer votre application web en naviguant dans le
    Affichage **3D** dans devTools  
 :::image-end:::  
 
-Pour accéder à la vue 3D, accédez à l’indicateur d’expériences Outils de développement et assurez-vous qu’il `edge://flags` est activé. **** ****  Redémarrez Microsoft Edge et ouvrez DevTools.  Sélectionnez dans DevTools ou ouvrez la section Paramètres Expériences, puis activez la case à cocher Activer l’affichage `F1` ****  >  **** **3D.**  Maintenant, `Ctrl`  +  `Shift`  +  `P` sélectionnez , tapez **en mode 3D et** **sélectionnez Afficher la vue 3D.**  
+Pour accéder à la vue 3D, accédez à l’indicateur d’expériences Outils de développement et assurez-vous qu’il `edge://flags` est activé. **** ****  Redémarrez Microsoft Edge et ouvrez DevTools.  Sélectionnez dans DevTools ou ouvrez la section Paramètres expériences, puis activez la case à cocher Activer l’affichage `F1` ****  >  **** **3D.**  Maintenant, `Ctrl`  +  `Shift`  +  `P` sélectionnez , tapez **en mode 3D et** **sélectionnez Afficher la vue 3D.**  
 
-Nous travaillons sur l’interface utilisateur et ajoutons des fonctionnalités à l’affichage 3D. Veuillez donc nous envoyer vos [commentaires.](#getting-in-touch-with-microsoft-edge-devtools-team)  
+Nous travaillons sur l’interface utilisateur et ajoutons des fonctionnalités à la vue 3D. Veuillez donc nous envoyer vos [commentaires.](#getting-in-touch-with-microsoft-edge-devtools-team)  
 
 Chromium problème [#987787][CR987787]
 
@@ -144,7 +144,7 @@ L’équipe DevTools a également publié certaines extensions pour [Visual Stud
 
 Utilisez l’outil Elements depuis Visual Studio Code en ajoutant l’extension de Microsoft Edge [(Chromium)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code éléments.  
 
-:::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="L’outil Elements dans Visual Studio Code l’aide de l’extension Elements for Microsoft Edge" lightbox="../../images/2019/12/elements-for-edge.msft.png":::
+:::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="L’outil Elements dans Visual Studio Code à l’aide de l’extension Elements for Microsoft Edge" lightbox="../../images/2019/12/elements-for-edge.msft.png":::
    **L’outil Elements** dans Visual Studio Code l’aide de l’extension Elements for Microsoft Edge  
 :::image-end:::  
 
@@ -239,7 +239,7 @@ Vous pouvez désormais afficher les initiateurs et les dépendances d’une dema
    Chaîne de l’initiateur de la demande dans le **panneau Initiateur**  
 :::image-end:::  
 
-Après [avoir consigné l’activité][DevToolsNetworkIndex]réseau dans le **** panneau Réseau, choisissez une ressource, puis accédez au panneau Initiateur pour afficher la chaîne de **l’initiateur de demande**:  
+Après [avoir journalé l’activité][DevToolsNetworkIndex]réseau dans le **** panneau Réseau, choisissez une ressource, puis accédez au panneau Initiateur pour afficher la chaîne de **l’initiateur de demande**:  
 
 *   La **ressource inspectée est** en gras.  Dans la capture d’écran `ai.2.min.js` ci-dessus, se trouve la ressource inspectée.  
 *   Les ressources au-dessus de la ressource inspectée sont **les initiateurs.**  Dans la capture d’écran `https://www.microsoftedgeinsider.com` ci-dessus, est l’initiateur de `ai.2.min.js` .  En d’autres termes, `https://www.microsoftedgeinsider.com` a provoqué la demande réseau pour `ai.2.min.js` .  
@@ -276,7 +276,7 @@ Chromium problème [#993366][CR993366]
 
 DevTools prend en charge la définition d’une chaîne User-Agent personnalisée via le **panneau Conditions réseau.**  La User-Agent affecte l’en-tête HTTP attaché aux ressources réseau, ainsi que la `User-Agent` valeur de `navigator.userAgent` .  
 
-Les chaînes de User-Agent prédéfines ont été mises à jour pour refléter les versions modernes du navigateur.  
+Les chaînes de User-Agent prédéfines ont été mises à jour pour refléter les versions de navigateur modernes.  
 
 :::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text="Menu Agent utilisateur dans le panneau Conditions réseau" lightbox="../../images/2019/12/useragent.msft.png":::
    Menu Agent utilisateur dans le **panneau Conditions réseau**  
@@ -333,7 +333,7 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 [DevToolsDeviceModeIndex]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simuler une port d’affichage mobile : simuler des appareils mobiles en mode Microsoft Edge devTools | Documents Microsoft"  
 [DevToolsNetworkIndex]: ../../../network/index.md "Inspecter l’activité réseau dans Microsoft Edge devTools | Documents Microsoft"  
 [DevToolsNetworkReferenceDisplayInitiatorsDependencies]: ../../../network/reference.md#display-initiators-and-dependencies "Afficher les initiateurs et les dépendances - Référence de l’analyse réseau | Documents Microsoft"  
-[VisualStudioCodeDebuggerEdgeExtension]: ../../../../visual-studio-code/debugger-for-edge.md "Débogger pour les Microsoft Edge Visual Studio Code extension | Documents Microsoft"  
+[VisualStudioCodeDebuggerEdgeExtension]: ../../../../visual-studio-code/debugger-for-edge.md "Débogger pour les Microsoft Edge Visual Studio Code d’extension | Documents Microsoft"  
 [VisualStudioCodeElementEdgeExtension]: ../../../../visual-studio-code/elements-for-edge.md "Éléments pour les Microsoft Edge Visual Studio Code d’extension | Documents Microsoft"  
 
 <!--  [201912Webassembly]: webassembly.md "Improved WebAssembly debugging in Microsoft Edge DevTools"  -->  
@@ -344,8 +344,8 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 [CR1004193]: https://crbug.com/1004193 "Mode REPL pour les | V8 Chromium Bogues"  
 [CR1004203]: https://crbug.com/1004203 "Faire en sorte que la couverture du code soit | Chromium Bogues"  
 [CR1029031]: https://crbug.com/1029031 "Les chaînes UA sont obsolètes | Chromium Bogues" 
-[CR963183]: https://crbug.com/963183 "Les devTools ne sont pas conformes AUX WCAG | Chromium Bogues"
-[CR941561]: https://crbug.com/941561 "Localisabilité du | DevTools Chromium Bogues"
+[CR963183]: https://crbug.com/963183 "DevTools ne sont pas conformes WCAG | Chromium Bogues"
+[CR941561]: https://crbug.com/941561 "Localisabilité de l'| Chromium Bogues"
 [CR987787]: https://crbug.com/987787 "Vue Dom 3D | Chromium Bogues"
 
 [AccessibilityInsights]: https://aka.ms/a11yinsights "Informations sur l’accessibilité"  
@@ -357,7 +357,7 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 [MicrosoftVisualStudio]: https://aka.ms/vs "Visual Studio"  
 [MicrosoftVisualStudioBlogDebugJavascript]: https://aka.ms/vs/debug-edge "Déboguer JavaScript dans Microsoft Edge à partir Visual Studio | Visual Studio Blog"  
 [MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "Télécharger Visual Studio 2019 pour Windows \& Mac"  
-[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Modèle objet de document (DOM) | MDN"  
+[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"  
 [PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Publier un Tweet"  
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools compte Twitter"
@@ -376,7 +376,7 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 > La page d’origine est disponible [ici](https://developer.chrome.com/blog/new-in-devtools-80) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

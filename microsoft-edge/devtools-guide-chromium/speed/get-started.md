@@ -71,10 +71,10 @@ Tout d’abord, vous devez configurer le site afin de pouvoir y apporter des mod
     :::image-end:::  
     
 1.  Choisissez **Project**.  Le nom du projet change de **Tony** à un nom généré de manière aléatoire.  Vous avez maintenant votre propre copie modifiable du code.  Plus tard, vous pouvez apporter des modifications à ce code.  
-1.  Choose **Show** and choose **In a New Window**.  La démonstration s’ouvre dans un nouvel onglet.  Cet onglet est appelé « onglet **de démonstration**».  Le chargement du site peut prendre un certain temps.  
+1.  Choose **Show** and choose **In a New Window**.  La démonstration s’ouvre dans un nouvel onglet.  Cet onglet est appelé « **onglet de démonstration**».  Le chargement du site peut prendre un certain temps.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-show-live.msft.png" alt-text="Onglet démonstration" lightbox="../media/speed-glitch-tony-show-live.msft.png":::
-       Onglet démonstration  
+    :::image type="complex" source="../media/speed-glitch-tony-show-live.msft.png" alt-text="Onglet de démonstration" lightbox="../media/speed-glitch-tony-show-live.msft.png":::
+       Onglet de démonstration  
     :::image-end:::  
     
 1.  Sélectionnez `Control` + `Shift` + `J` \(Windows, Linux\) ou `Command` + `Option` + `J` \(macOS\).  Microsoft Edge DevTools s’ouvre en même temps que la démonstration.  
@@ -107,7 +107,7 @@ La ligne de base est un enregistrement de la façon dont le site a été exécut
 1.  Correspondez à vos paramètres de configuration d’audit à ceux de la figure précédente.  Voici une explication des différentes options :  
     
     *   **Appareil**.  Définir sur **Mobile** modifie la chaîne de l’agent utilisateur et simule une vue mobile.  Définir sur **Bureau** ne fait que éteindre les **modifications mobiles.**  
-    *   **Audits**.  Désactiver une catégorie pour empêcher le panneau **Audits** d’exécution de ces audits et exclure ces audits de votre rapport.  Laissez les autres catégories désactivées si vous souhaitez afficher les types de recommandations fournis.  Désactiver les catégories pour accélérer légèrement le processus d’audit.  
+    *   **Audits**.  Désactiver une catégorie pour empêcher le panneau **Audits** d’exécution de ces audits et exclut ces audits de votre rapport.  Laissez les autres catégories désactivées si vous souhaitez afficher les types de recommandations fournis.  Désactiver les catégories pour accélérer légèrement le processus d’audit.  
     *   **Limitation**.  Définie sur **Simulated Slow 4G, 4x CPU Slow** simule les conditions de navigation classiques sur un appareil mobile.  Il est nommé « simulé », car le panneau Audits n’est pas réellement limitée pendant le processus d’audit.  Au lieu de cela, il extrapole simplement la durée de chargement de la page dans des conditions mobiles.  En **revanche,** le paramètre Appliqué... permet de limiter votre processeur et votre réseau, avec le compromis d’un processus d’audit plus long.  
     *   **Effacer Stockage**.  Activer la case à cocher pour effacer tout le stockage associé à la page avant chaque audit.  Laissez ce paramètre sur si vous souhaitez auditer la façon dont les visiteurs ront la première expérience de votre site.  Désactiver ce paramètre lorsque vous souhaitez l’expérience de répétition de visite.  
     
@@ -142,7 +142,7 @@ La section **Mesures** fournit des mesures quantifias des performances du site. 
    Section **Mesures**  
 :::image-end:::  
 
-Sélectionnez le bouton bascule mis en surbrillon dans la **** figure suivante pour afficher une description pour chaque métrique, puis sélectionnez En savoir plus pour lire la documentation à ce sujet.  
+Sélectionnez le bouton bascule mis en surbrillon dans la **** figure suivante pour afficher une description pour chaque métrique, puis choisissez En savoir plus pour lire la documentation à ce sujet.  
 
 :::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png" alt-text="Sélectionnez le bouton bascule mis en surbrillon pour développer les éléments Mesures" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png":::
    Sélectionnez le bouton bascule mis en surbrillon pour développer les éléments Mesures  
@@ -199,11 +199,11 @@ Avant d’activer la compression, voici quelques méthodes pour vérifier manuel
 1.  Choisissez **l’outil** Réseau.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-network.msft.png" alt-text="Panneau réseau" lightbox="../media/speed-glitch-tony-remix-network.msft.png":::
-       Outil **Réseau**  
+       **L’outil** Réseau  
     :::image-end:::  
     
 1.  Sélectionnez **l’icône Paramètre** réseau.  
-1.  Cochez **la case Utiliser les lignes de demande importantes.**  La hauteur des lignes du tableau des demandes réseau augmente.  
+1.  Cochez **la case Utiliser les lignes De grandes demandes.**  La hauteur des lignes du tableau des demandes réseau augmente.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png" alt-text="Lignes de grande taille dans le tableau des demandes réseau" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png":::
        Lignes de grande taille dans le tableau des demandes réseau  
@@ -212,7 +212,7 @@ Avant d’activer la compression, voici quelques méthodes pour vérifier manuel
 1.  Si la **colonne Taille** dans le tableau des demandes réseau n’est pas affichée, choisissez l’en-tête de tableau > **Taille**.  
 
 Chaque **cellule Size** affiche deux valeurs.  La valeur supérieure est la taille de la ressource téléchargée.  
-La valeur inférieure est la taille de la ressource non compressée.  Si les deux valeurs sont identiques, la ressource n’est pas compressée lorsqu’elle est envoyée sur le réseau.  Par exemple, dans la figure précédente, les valeurs supérieure et inférieure de `bundle.js` sont `1.2 MB` et `1.2 MB` .  
+La valeur inférieure est la taille de la ressource non compressée.  Si les deux valeurs sont identiques, la ressource n’est pas compressée lorsqu’elle est envoyée sur le réseau.  Par exemple, dans la figure précédente, les valeurs supérieure et inférieure pour `bundle.js` sont `1.2 MB` et `1.2 MB` .  
 
 Vérifiez la compression en inspectant les en-têtes HTTP d’une ressource :  
 
@@ -223,7 +223,7 @@ Vérifiez la compression en inspectant les en-têtes HTTP d’une ressource :
        Panneau **En-têtes**  
     :::image-end:::  
     
-1.  Recherchez **un en-tête dans** la section `content-encoding` En-têtes de réponse.  Un `content-encoding` titre n’est pas affiché, ce qui signifie `bundle.js` qu’il n’a pas été compressé.  Lorsqu’une ressource est compressée, cet en-tête est généralement définie sur `gzip` `deflate` , ou `br` .  Pour obtenir une explication des valeurs, accédez à [Directives.][MDNContentEncodingDirectives]  
+1.  Recherchez **un en-tête dans** la section `content-encoding` En-têtes de réponse.  Un `content-encoding` titre n’est pas affiché, ce qui signifie `bundle.js` qu’il n’a pas été compressé.  Lorsqu’une ressource est compressée, cet en-tête est généralement définie sur `gzip` `deflate` , ou `br` .  Pour obtenir une explication des valeurs, accédez à [Directives][MDNContentEncodingDirectives].  
 
 Suffisamment avec les explications.  Il est temps d’apporter des modifications.  Activez la compression de texte en ajoutant quelques lignes de code :  
 
@@ -268,17 +268,17 @@ Utilisez les flux de travail que vous avez appris précédemment pour vérifier 
        La **colonne Taille** affiche désormais 2 valeurs différentes pour les ressources de texte  
     :::image-end:::  
     
-1.  La section **En-têtes de** réponse `bundle.js` pour doit maintenant inclure un `content-encoding: gzip` en-tête.
+1.  La section **En-têtes de** `bundle.js` réponse pour doit maintenant inclure un `content-encoding: gzip` en-tête.
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png" alt-text="La section En-têtes de réponse contient désormais un en-tête d’encodage de contenu" lightbox="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png":::
        La section **En-têtes de** réponse contient désormais un en-tête d’encodage de contenu  
     :::image-end:::  
     
-Auditer à nouveau la page pour mesurer le type d’impact de la compression de texte sur les performances de charge de la page :  
+Auditer de nouveau la page pour mesurer le type d’impact de la compression de texte sur les performances de charge de la page :  
 
 1.  Choisissez **l’outil Audits.**  
 1.  Choose **Perform an audit** \( Perform an audit ![ ](../media/perform-icon.msft.png) \).  
-1.  Laissez les paramètres identiques qu’auparavant.  
+1.  Laissez les paramètres identiques aux paramètres d’avant.  
 1.  Choose **Run audit**.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png" alt-text="Un rapport Audits après activation de la compression de texte" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png":::
@@ -315,7 +315,7 @@ La modification affichée n’a qu’un impact mineur sur le score de performanc
 
 #### <a name="resizing-images-in-the-real-world"></a>Re resizing images in the real world  
 
-Pour une petite application, un resize one-off comme celui-ci peut être suffisant.  Mais pour une application de grande taille, cela n’est évidemment pas évolutif.  Voici quelques stratégies de gestion des images dans les applications de grande taille :  
+Pour une petite application, une telle re taille peut être suffisante.  Mais pour une application de grande taille, ce n’est évidemment pas évolutif.  Voici quelques stratégies de gestion des images dans les applications de grande taille :  
 
 *   Resize images during your build process.  
 *   Créez plusieurs tailles de chaque image pendant le processus de création, puis `srcset` utilisez-la dans votre code.  Au moment de l’utilisation, le navigateur s’occupe de choisir la taille la plus grande pour l’appareil.  
@@ -392,7 +392,7 @@ Les fichiers `jquery.js` et les `lodash.js` fichiers sont-ils nécessaires pour 
     
 1.  Choose **Remove all patterns** \( ![ Remove all patterns ](../media/remove-icon.msft.png) \) to delete the blocking `/libs/*` pattern.  
     
-En règle générale, **l’outil de** blocage des demandes est utile pour simuler le comportement de votre page lorsqu’une ressource donnée n’est pas disponible.  
+En règle générale, **l’outil** de blocage des demandes est utile pour simuler le comportement de votre page lorsqu’une ressource donnée n’est pas disponible.  
 
 Maintenant, supprimez les références à ces fichiers du code et auditer à nouveau la page :  
 
@@ -407,7 +407,7 @@ Maintenant, supprimez les références à ces fichiers du code et auditer à nou
     
 #### <a name="optimizing-the-critical-rendering-path-in-the-real-world"></a>Optimisation du chemin d’accès de rendu critique dans le monde réel  
 
-Le **chemin d’accès** de rendu critique fait référence au code dont vous avez besoin pour charger une page.  En règle générale, accélèrez le chargement de la page en expédiant uniquement du code critique pendant le chargement de la page, puis en chargeant différée tout le reste.  
+Le **chemin d’accès de** rendu critique fait référence au code dont vous avez besoin pour charger une page.  En règle générale, accélèrez le chargement de la page en expédiant uniquement du code critique pendant le chargement de la page, puis en chargeant différée tout le reste.  
 
 <!--[CRP]: /web/fundamentals/performance/critical-rendering-path/  -->  
 
@@ -427,21 +427,21 @@ L’objectif est d’utiliser le panneau Performance pour analyser le travail qu
 1.  Choisissez **l’outil Performance.**  
 1.  Choose **Capture Paramètres** \( Capture Paramètres ![ ](../media/capture-icon.msft.png) \).  
 1.  Définissez **le** réseau **sur le 3G** et le **processeur** **à 6x le ralentissement.**  Les appareils mobiles ont généralement plus de contraintes matérielles que les ordinateurs portables ou les ordinateurs de bureau. Ces paramètres vous offrent donc la même expérience que si vous utilisiez un appareil moins puissant.  
-1.  Choose **Refresh** \( ![ Refresh ](../media/reload-icon.msft.png) \).  DevTools actuale la page, puis produit une visualisation de tout le travail effectué afin de charger la page.  Cette visualisation est appelée **suivi**.  
+1.  Choose **Refresh** \( ![ Refresh ](../media/reload-icon.msft.png) \).  DevTools actualise la page, puis produit une visualisation de tout le travail effectué afin de charger la page.  Cette visualisation est appelée **suivi**.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="Suivi de l’outil Performance du chargement de la page" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
        Suivi **de l’outil** Performance du chargement de la page  
     :::image-end:::  
     
-Le suivi montre l’activité dans l’ordre chronologique, de gauche à droite.  Les graphiques FPS, UC et NET en haut vous donnent une vue d’ensemble des images par seconde, de l’activité processeur et de l’activité réseau.  Bloc de jaune mis en surbrillant dans la figure suivant, l’UC était complètement occupée par l’activité de script.  Il s’agit d’un indice qui vous permet d’accélérer le chargement de la page en faisant moins de travail JavaScript.  
+Le suivi montre l’activité dans l’ordre chronologique, de gauche à droite.  Les graphiques FPS, processeur et NET en haut vous donnent une vue d’ensemble des images par seconde, de l’activité processeur et de l’activité réseau.  Bloc de jaune mis en surbrillant dans la figure suivant, l’UC était complètement occupée par l’activité de script.  Il s’agit d’un indice qui vous permet d’accélérer le chargement de la page en faisant moins de travail JavaScript.  
 
 :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png" alt-text="Section Vue d’ensemble du suivi" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png":::
    Section Vue d’ensemble du suivi  
 :::image-end:::  
 
-Examinez la trace pour trouver des moyens d’y faire moins de travail JavaScript :  
+Examinez la trace pour trouver des méthodes pour faire moins de travail JavaScript :  
 
-1.  Sélectionnez la section **Minutages** pour la développer.  En fonction du fait qu’il [][MDNUserTimingApi] peut y avoir un grand nombre de mesures de minutage de React, il semble que l’application de Tony utilise le mode de développement de React.  Le passage au mode de production React peut donner des résultats faciles en terme de performances.  
+1.  Sélectionnez la section **Minutages** pour la développer.  En fonction du fait qu’il [][MDNUserTimingApi] peut y avoir plusieurs mesures de minutage de React, il semble que l’application de Tony utilise le mode de développement de React.  Le passage au mode de production de React peut donner des résultats faciles en terme de performances.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text="La section Minutage" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
        La section **Minutage**  
@@ -454,7 +454,7 @@ Examinez la trace pour trouver des moyens d’y faire moins de travail JavaScrip
        Section **Main**  
     :::image-end:::  
     
-1.  Faites défiler vers le bas jusqu’au bas de la section **Main.**  Lorsque vous utilisez une infrastructure, la majeure partie de l’activité supérieure est due à l’infrastructure, qui est généralement hors de votre contrôle.  L’activité provoquée par votre application se trouve généralement en bas.  Dans cette application, il semble qu’une fonction nommée soit à l’origine d’un grand nombre de `App` demandes à une `mineBitcoin` fonction.  Il semble que Tony utilise peut-être les périphériques de ses fans pour utiliser la cryptomonnaie...  
+1.  Faites défiler vers le bas jusqu’au bas de la section **Main.**  Lorsque vous utilisez une infrastructure, la majeure partie de l’activité supérieure est due à l’infrastructure, qui est généralement hors de votre contrôle.  L’activité provoquée par votre application se trouve généralement en bas.  Dans cette application, il semble qu’une fonction nommée soit à l’origine d’un grand nombre de `App` demandes à une `mineBitcoin` fonction.  Il semble que Tony utilise peut-être les appareils de ses fans pour se servir de la cryptomonnaie...  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-minebitcoin.msft.png" alt-text="Pointer sur l’activité mineBitcoin" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-minebitcoin.msft.png":::
        Pointer sur `mineBitcoin` l’activité  
@@ -465,7 +465,7 @@ Examinez la trace pour trouver des moyens d’y faire moins de travail JavaScrip
     
 1.  Développez la section Bas vers **le** haut.  Cet onglet décompose les activités qui ont pris le plus de temps.  Si rien n’est affiché dans la section Bottom-Up, choisissez l’étiquette de la section **Main.**  La section **Bas vers le haut** affiche uniquement les informations concernant l’activité ou le groupe d’activités que vous avez actuellement sélectionné.  Par exemple, si vous avez choisi l’une des activités, la section Bas vers le haut affiche uniquement les informations `mineBitcoin` de cette activité. ****  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png" alt-text="Onglet Bottom-Up'onglet" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png" alt-text="Onglet Bottom-Up de l’onglet" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png":::
        Onglet **Bas vers le** haut  
     :::image-end:::  
     
@@ -493,7 +493,7 @@ Réduisez l’activité JavaScript en supprimant la demande à `mineBitcoin` :
        Un rapport Audits après la suppression de travail JavaScript inutile  
     :::image-end:::  
     
-Il semble que cette dernière modification a provoqué un gros saut dans les performances !  
+Il semble que cette dernière modification a provoqué un saut important des performances !  
 
 > [!NOTE]
 > Cette section a présenté brièvement le panneau Performances.  Pour en savoir plus sur l’analyse des performances de page, accédez à [Référence de l’analyse des performances.][DevtoolsEvaluatePerformanceReference]  
@@ -504,7 +504,7 @@ Il semble que cette dernière modification a provoqué un gros saut dans les per
 
 En règle générale, l’outil **Performance** est le moyen le plus courant de comprendre l’activité que fait votre site pendant son chargement et de trouver des moyens de supprimer les activités inutiles.  
 
-Si vous préférez une approche qui ressemble davantage, l’API de minutage utilisateur vous permet de marquer arbitrairement certaines phases du cycle de vie de votre application, afin de suivre la durée de chacune de ces `console.log()` phases. [][MDNUserTimingApi]  
+Si vous préférez une approche qui ressemble davantage, l’API de minutage de l’utilisateur vous permet de marquer arbitrairement certaines phases du cycle de vie de votre application, afin de suivre la durée de chacune de ces `console.log()` phases. [][MDNUserTimingApi]  
 
 ## <a name="summary"></a>Résumé  
 
@@ -526,21 +526,21 @@ Si vous préférez une approche qui ressemble davantage, l’API de minutage uti
 
 [DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "Référence de l’analyse des performances | Documents Microsoft"  
 
-[CourseraIntroductionWebDevelopmentClass]: https://www.coursera.org/learn/web-development#syllabus "Présentation des classes de développement Web | Coursera"  
+[CourseraIntroductionWebDevelopmentClass]: https://www.coursera.org/learn/web-development#syllabus "Présentation des classes de développement web | Coursera"  
 
 [EssentialImageOptimization]: https://images.guide "Optimisation des images essentielles"  
 
 [MDNContentEncodingDirectives]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Encoding#Directives "Directives : | MDN"  
 [MDNUserTimingApi]: https://developer.mozilla.org/docs/Web/API/User_Timing_API "Api de minutage utilisateur | MDN"  
 
-[WebpackTreeShaking]: https://webpack.js.org/guides/tree-shaking "Arborescence des | webpack"  
+[WebpackTreeShaking]: https://webpack.js.org/guides/tree-shaking "Arborescence de | webpack"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/speed/get-started) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -29,7 +29,7 @@ ms.locfileid: "11564510"
    limitations under the License.  -->
 # <a name="console-api-reference"></a>Référence de l’API de console  
 
-**L’outil** Console est utile lorsque vous terminez plusieurs tâches dans DevTools.  Les API peuvent être inclues dans vos scripts. Les méthodes de commodité sont uniquement disponibles pour une utilisation dans l’outil **Console,** telles que les `debug()` méthodes et les `monitorEvents()` méthodes.  Pour plus d’informations sur la mise en place de la **console,** accédez à Commencer à [journalisation des messages dans la console.][DevtoolsConsoleConsoleLog]  Pour plus d’informations sur les méthodes pratiques de la **console,** accédez à référence de [l’API des utilitaires de console.][DevtoolConsoleUtilities]  
+**L’outil** Console est utile lorsque vous terminez plusieurs tâches dans DevTools.  Les API peuvent être inclues dans vos scripts. Les méthodes pratiques sont uniquement disponibles pour une utilisation dans l’outil **Console,** telles que les `debug()` méthodes et les `monitorEvents()` méthodes.  Pour plus d’informations sur la mise en place de la **console,** accédez à Commencer à [journalisation des messages dans la console.][DevtoolsConsoleConsoleLog]  Pour plus d’informations sur les méthodes pratiques de la **console,** accédez à référence de [l’API des utilitaires de console.][DevtoolConsoleUtilities]  
 
 ---  
 
@@ -106,7 +106,7 @@ console.clear()
    :::column-end:::
 :::row-end:::  
 
-### <a name="see-also"></a>Voir également  
+### <a name="see-also"></a>Articles associés  
 
 *   [Effacer la console][DevtoolsConsoleReferenceClear]  
 
@@ -188,7 +188,7 @@ console.countReset([label])
 
 ## <a name="debug"></a>déboguer  
 
-Cette méthode est identique à la méthode [log,](#log) à l’exception d’un niveau de journal différent.  
+Cette méthode est identique à la méthode [de journal,](#log) à l’exception d’un niveau de journal différent.  
 
 ### <a name="javascript-syntax"></a>Syntaxe JavaScript  
 
@@ -336,7 +336,7 @@ console.error(object [, object, ...])
 
 ## <a name="group"></a>groupe  
 
-Cette méthode groupe visuellement les messages jusqu’à ce que la [méthode groupEnd](#groupend) soit utilisée.  Utilisez la [méthode groupCollapsed](#groupcollapsed) pour réduire le groupe lorsqu’il se connecte initialement à la **console.**  
+Cette méthode groupe visuellement les messages jusqu’à ce que la [méthode groupEnd](#groupend) soit utilisée.  Utilisez la [méthode groupCollapsed pour](#groupcollapsed) réduire le groupe lorsqu’il se connecte initialement à la **console.**  
 
 ### <a name="javascript-syntax"></a>Syntaxe JavaScript  
 
@@ -661,7 +661,7 @@ console.warn(object [, object, ...])
 
 <!-- links -->  
 
-[DevtoolsConsoleConsoleLog]: ./console-log.md "Logs in the Console tool | Documents Microsoft"  
+[DevtoolsConsoleConsoleLog]: ./console-log.md "Journaux dans l’outil Console | Documents Microsoft"  
 [DevtoolConsoleUtilities]: ./utilities.md "Référence de l’API des utilitaires de console | Documents Microsoft"  
 [DevtoolsConsoleReferenceClear]: ./reference.md#clear-the-console "Effacer la console - Référence de la console | Documents Microsoft"  
 [DevtoolsConsoleReferenceFilter]: ./reference.md#filter-by-log-level "Filtrer par niveau de journal – Référence de la console | Microsoft Docs"  
@@ -674,7 +674,7 @@ console.warn(object [, object, ...])
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/api) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -37,7 +37,7 @@ Certains détails sont présents dans les événements de tous types, tandis que
 
 | Propriété | Quand s’affiche-t-elle ? |  
 |:--- |:--- |  
-| Temps agrégé | Pour les événements avec **des événements**imbrmbrés, le temps pris par chaque catégorie d’événements. |  
+| Heure agrégée | Pour les événements avec **des événements**imbrmbrés, le temps pris par chaque catégorie d’événements. |  
 | Pile des appels | Pour les événements avec **des événements enfants,** le temps pris par chaque catégorie d’événements. |  
 | Temps processeur | Temps processeur de l’événement enregistré. |  
 | Détails | Autres détails sur l’événement. |  
@@ -65,7 +65,7 @@ Cette section répertorie les événements qui appartiennent à la catégorie Lo
 |:--- |:--- |  
 | Ressource | URL de la ressource demandée. |  
 | Preview | Aperçu de la ressource demandée \(images uniquement\). |  
-| Request, méthode | Méthode HTTP utilisée pour la requête \( `GET` `POST` ou, par exemple\). |  
+| Request, méthode | Méthode HTTP utilisée pour la requête \( `GET` ou `POST` , par exemple\). |  
 | Code d’état | Code de réponse HTTP. |  
 | MIME Type | Type MIME de la ressource demandée. |  
 | Longueur des données codées | Longueur de la ressource demandée en octets. |  
@@ -92,7 +92,7 @@ Cette section répertorie les événements qui appartiennent à la catégorie Sc
 | XHR Ready State Change | L’état prêt d’un XMLHTTPRequest a changé. |  
 | Charge XHR | Chargement `XMLHTTPRequest` terminé. |  
 
-### <a name="scripting-event-properties"></a>Propriétés des événements de script  
+### <a name="scripting-event-properties"></a>Propriétés d’événement de script  
 
 | Propriété | Description |  
 |:--- |:--- |  
@@ -101,7 +101,7 @@ Cette section répertorie les événements qui appartiennent à la catégorie Sc
 | Répétitions | Booléen qui spécifie si le timer se répète. |  
 | Appel de fonction | Fonction qui a été invoquée. |  
 
-## <a name="rendering-events"></a>Événements de rendu  
+## <a name="rendering-events"></a>Rendu des événements  
 
 Cette section répertorie les événements qui appartiennent à la catégorie Rendering et leurs propriétés.  
 
@@ -138,7 +138,7 @@ Cette section répertorie les événements qui appartiennent à la catégorie Pa
 
 | Propriété | Description |  
 |:--- |:--- |  
-| Services de localisation | Pour Paint événements, les coordonnées x et y du rectangle de pinceau. |  
+| Localisation | Pour Paint événements, les coordonnées x et y du rectangle de pinceau. |  
 | Dimensions | Pour Paint événements, la hauteur et la largeur de la région peint. |  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
@@ -160,7 +160,7 @@ Cette section répertorie les événements qui appartiennent à la catégorie Pa
 > La page d’origine est trouvée ici et est co-auteure par [Meggin Kearney][MegginKearney] \(Tech Writer\) et [ContrôleioQuets][FlavioCopes] \(Full Stack Developer\). [](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

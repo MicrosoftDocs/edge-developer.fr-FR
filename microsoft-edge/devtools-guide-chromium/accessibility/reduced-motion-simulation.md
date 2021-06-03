@@ -27,7 +27,7 @@ L’animation dans les produits web peut être un problème d’accessibilité. 
 }
 ```  
 
-À [l’aide de Microsoft Edge DevTools][DevtoolsIndex], vous pouvez simuler ce paramètre de mouvement réduit sans avoir à modifier votre système d’exploitation.  
+À [l’Microsoft Edge DevTools,][DevtoolsIndex]vous pouvez simuler ce paramètre de mouvement réduit sans avoir à modifier votre système d’exploitation.  
 
 1.  Ouvrez **le menu Commande.**  
     1.  Sélectionnez `Control` + `Shift` + `P` sur Windows/Linux `Command` + `Shift` + `P` ou sur macOS.  
@@ -46,6 +46,6 @@ L’animation dans les produits web peut être un problème d’accessibilité. 
     
 <!-- links -->  
 
-[DevtoolsIndex]: ../index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
+[DevtoolsIndex]: ../index.md "Microsoft Edge outils de développement (Chromium) | Documents Microsoft"  
 
 [MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion | MDN"  

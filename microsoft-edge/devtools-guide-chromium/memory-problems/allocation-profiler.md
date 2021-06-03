@@ -52,11 +52,11 @@ Utilisez **l’instrumentation d’allocation** sur la chronologie pour recherch
 Effectuer les actions suivantes pour commencer à utiliser **l’instrumentation d’allocation sur la chronologie**.  
 
 1.  [Ouvrez DevTools][DevtoolsOpenIndex].  
-1.  Ouvrez le **panneau** Mémoire, sélectionnez l’instrumentation **d’allocation sur la bouton d’radio** de chronologie.  
+1.  Ouvrez le **panneau Mémoire,** sélectionnez l’instrumentation **d’allocation sur la bouton d’radio** de chronologie.  
 1.  Démarrer l’enregistrement.  
     
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Enregistrer le profileur d’allocations de tas" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
-       Enregistrer le profileur d’allocations de tas  
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Profileur d’allocations de tas d’enregistrement" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+       Profileur d’allocations de tas d’enregistrement  
     :::image-end:::  
     
 ## <a name="read-a-heap-allocation-timeline"></a>Lire une chronologie d’allocation de tas  
@@ -91,7 +91,7 @@ Vous pouvez afficher l’allocation de mémoire par fonction JavaScript.  Pour p
 <!-- links -->  
 
 [DevToolsOpenIndex]: ../open/index.md "Ouvrez Microsoft Edge (Chromium) DevTools | Documents Microsoft"
-[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Examiner l’allocation de mémoire par fonction - Résoudre les problèmes de mémoire | Documents Microsoft"  
+[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Examiner l’allocation de mémoire par fonction : résoudre les problèmes de mémoire | Documents Microsoft"  
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
@@ -103,7 +103,7 @@ Vous pouvez afficher l’allocation de mémoire par fonction JavaScript.  Pour p
 > La page d’origine se trouve [ici](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) et est co-auteure par [Meggin Kearney][MegginKearney] \(Technical Writer\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

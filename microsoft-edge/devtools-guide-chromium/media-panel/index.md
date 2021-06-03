@@ -55,7 +55,7 @@ Utilisez **l’outil Media** dans Microsoft Edge DevTools pour afficher les info
        Propriétés multimédias  
     :::image-end:::  
     
-1.  Pour afficher tous les événements du lecteur multimédia, choisissez le panneau **Événements.**  
+1.  Pour afficher tous les événements du lecteur multimédia, choisissez le **panneau Événements.**  
     
     :::image type="complex" source="../media/media-panel-events.msft.png" alt-text="Événements multimédias" lightbox="../media/media-panel-events.msft.png":::
        Événements multimédias  
@@ -127,7 +127,7 @@ Vous pouvez choisir de masquer \(ou afficher\) chaque lecteur multimédia pour u
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

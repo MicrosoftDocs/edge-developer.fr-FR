@@ -56,7 +56,7 @@ Ce guide vous montre comment utiliser Microsoft Edge [DevTools pour][MicrosoftEd
     
 ## <a name="edit-web-sql-data"></a>Modifier les données de SQL Web  
 
-Vous ne pouvez pas modifier les données de SQL web lors de l’affichage d’un tableau de SQL Web, comme dans la version précédente.  Toutefois, vous pouvez exécuter des instructions à partir de la console web SQL qui modifient ou suppriment des tables.  Accédez à [Exécuter des requêtes SQL web.](#run-web-sql-queries)  
+Vous ne pouvez pas modifier les données de SQL web lors de l’affichage d’un tableau de SQL web, comme dans la version précédente.  Toutefois, vous pouvez exécuter des instructions à partir de la console web SQL qui modifient ou suppriment des tables.  Accédez à [Exécuter des requêtes SQL web.](#run-web-sql-queries)  
 
 ## <a name="run-web-sql-queries"></a>Exécuter des requêtes de SQL web  
 
@@ -86,7 +86,7 @@ DevTools ne met pas à jour les tables en temps réel.  Pour mettre à jour les 
 ## <a name="delete-all-web-sql-data"></a>Supprimer toutes les données de SQL Web  
 
 1.  Ouvrez **le volet Stockage** effacer.  
-1.  Assurez-vous que **la case à cocher SQL** web est allumée.  
+1.  Assurez-vous que **la case à SQL** web est allumée.  
     
     :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="Case à cocher SQL web" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
        Case **à cocher SQL** web  
@@ -113,7 +113,7 @@ DevTools ne met pas à jour les tables en temps réel.  Pour mettre à jour les 
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/websql) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

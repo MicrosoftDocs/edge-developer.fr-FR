@@ -41,7 +41,7 @@ Si vous construisez une interface utilisateur qui change en fonction de l’empl
        Menu **Commande**  
     :::image-end:::  
     
-1.  Tapez `sensors` , choisissez Afficher les **capteurs,** puis sélectionnez `Enter` .  **L’outil** Capteurs s’ouvre en bas de votre fenêtre DevTools.  
+1.  Tapez `sensors` , choisissez Afficher les **capteurs,** puis sélectionnez `Enter` .  **L’outil** Capteurs s’ouvre en bas de la fenêtre DevTools.  
 1.  Dans la liste **Géolocalisation,** sélectionnez l’une des villes prédéfinies, comme , ou choisissez Emplacement personnalisé pour entrer des coordonnées personnalisées de longitude et de latitude, ou choisissez Emplacement indisponible pour afficher le comportement de votre site lorsque `Tokyo` l’emplacement de **** l’utilisateur n’est pas disponible. ****  
     
     :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Choisir Tokyo dans la liste géolocalisation" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
@@ -61,7 +61,7 @@ Si vous construisez une interface utilisateur qui change en fonction de l’empl
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/device-mode/geolocation) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

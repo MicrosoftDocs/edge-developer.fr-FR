@@ -1,5 +1,5 @@
 ---
-description: Match keyboard shortcuts to Visual Studio Code, emulate Surface Duo and SamsungAy Fold, CSS grid overlay improvements, and more.
+description: Match keyboard shortcuts to Visual Studio Code, emulate Surface Duo and Samsung Samsung Fold, CSS grid overlay improvements, and more.
 title: Nouveautés de DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -73,7 +73,7 @@ Chromium problème : [#1054281][CR1054281]
 
 ### <a name="css-grid-overlay-improvements-and-new-experimental-grid-features"></a>Améliorations de la superposition de grille CSS et nouvelles fonctionnalités de grille expérimentale  
 
-Merci pour les commentaires positifs sur les superpositions de grille CSS améliorées.  Les superpositions de grille CSS sont désormais activées par défaut et ne vous obligent pas à activer une expérience.  
+Merci pour les commentaires positifs concernant les superpositions de grille CSS améliorées.  Les superpositions de grille CSS sont désormais activées par défaut et ne vous obligent pas à activer une expérience.  
 
 :::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="Superposition de grille CSS pour l’élément article" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
    Superposition de grille CSS pour `article` l’élément  
@@ -82,7 +82,7 @@ Merci pour les commentaires positifs sur les superpositions de grille CSS améli
 > [!NOTE]
 > Pour plus d’informations sur les superpositions de grille, accédez aux fonctionnalités de débogage de grille [CSS.][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]  
 
-L Microsoft Edge de DevTools et l’équipe Chrome DevTools collaborent sur des fonctionnalités supplémentaires.  Les nouvelles fonctionnalités incluent plusieurs superpositions persistantes et configurables à partir d’un **nouveau** volet Disposition de **l’outil Elements.**  
+L Microsoft Edge de DevTools et l’équipe Chrome DevTools collaborent sur des fonctionnalités supplémentaires.  Les nouvelles fonctionnalités incluent plusieurs superpositions persistantes et configurables à partir d’un **nouveau** volet Disposition de **l’outil Éléments.**  
 
 Pour activer cette fonctionnalité expérimentale, accédez à [Activer les fonctionnalités expérimentales][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] et cochez la case en regard de Activer les nouvelles fonctionnalités de débogage de la grille **CSS (options**de configuration disponibles dans le volet de barre latérale de disposition dans les éléments après redémarrage).  
 
@@ -101,7 +101,7 @@ Dans Microsoft Edge 85 ou une antérieure, la mise en forme d’une copie a `con
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="sortie de l’API console de table Microsoft Edge 85 ou antérieures dans Visual Studio Code" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
+      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="sortie de l’API console de Microsoft Edge 85 ou antérieures dans Visual Studio Code" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
          `table` Sortie de l’API de la console Microsoft Edge 85 ou antérieures dans un Visual Studio Code  
       :::image-end:::  
    :::column-end:::
@@ -117,7 +117,7 @@ Dans Microsoft Edge 86 ou version ultérieure, lorsque vous copiez un tableau à
    :::column-end:::  
    :::column span="":::
       :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="sortie de l’API de console de Microsoft Edge 86 ou ultérieures dans Visual Studio Code" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
-         `table` Sortie de l’API de la console Microsoft Edge 86 ou ultérieurement Visual Studio Code  
+         `table` Sortie de l’API console Microsoft Edge 86 ou ultérieures dans Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -167,13 +167,13 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
 The current effort to improve translation quality enables easier support for more languages in the future.  
 -->  
 
-### <a name="highlight-all-search-results-in-elements-tool"></a>Mettre en surbrill valeur tous les résultats de recherche dans l’outil Éléments  
+### <a name="highlight-all-search-results-in-elements-tool"></a>Mettre en surbrill niveau tous les résultats de recherche dans l’outil Éléments  
 
 Dans Microsoft Edge 84 et 85, le premier résultat de recherche dans l’outil **Éléments** n’a pas été mis en surbrillant.  Les résultats de recherche restants ont été mis en surbrillant correctement.  
 
 Merci d’avoir envoyé vos commentaires et d’avoir amélioré Chromium.  Vos commentaires ont révélé un [problème #1103316][CR1103316] dans le projet de Chromium open source.  
 
-:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Premier résultat de recherche mis en surbrillil dans le panneau Éléments Microsoft Edge 84 ou ultérieur" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
+:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Premier résultat de recherche mis en surbrillant dans le panneau Éléments Microsoft Edge 84 ou ultérieur" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
    Premier résultat de recherche mis en surbrillant sur **l’outil Elements** Microsoft Edge 84 ou ultérieur  
 :::image-end:::  
 
@@ -251,7 +251,7 @@ Si vous utilisez deux copies différentes de la même police lors du développem
 *   Police locale pour vos outils de conception.  
 *   Police web pour votre code.  
 
-**Désactivez les polices locales** pour faciliter l’effectuer.  
+Utilisez **Désactiver les polices locales** pour faciliter l’effectuer.  
 
 *   Déboguer et mesurer les performances de chargement et l’optimisation des polices web.  
 *   Vérifiez la précision de vos règles `@font-face` CSS.  
@@ -303,7 +303,7 @@ Chromium problème : [#772558][CR772558]
 
 ### <a name="deprecation-of-other-origins-listing-in-the-service-workers-pane"></a>Désérision d’autres origines dans le volet Travailleurs du service  
 
-DevTools fournit désormais un **** lien à partir du volet Travailleurs **** du service \(**Outil** d’application > Volet De travail du service\) pour afficher la liste complète des travailleurs de service d’autres origines.  Pour accéder à la liste sans ouvrir de DevTools, accédez à `edge://service-worker-internals/?devtools` .  
+DevTools fournit désormais un **** lien à partir du volet Travailleurs **** du service \(**Outil** d’application > Volet Travailleurs du service\) pour afficher la liste complète des travailleurs de service provenant d’autres origines.  Pour accéder à la liste sans ouvrir de DevTools, accédez à `edge://service-worker-internals/?devtools` .  
 
 Auparavant, DevTools affichait une liste imbriée sous l’outil **Application** pour > **de travail du service.**  
 
@@ -339,7 +339,7 @@ Chromium problème : [#1061385][CR1090802]
 DevTools affiche désormais une vue détaillée pour chaque image.  Pour y accéder, choisissez un cadre sous le menu **Cadres** de **l’outil Application.**  
 
 :::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="Nouvelle vue détaillée d’un cadre dans le panneau Application" lightbox="../../media/2020/08/frame-details.msft.png":::
-   Nouvelle vue détaillée d’une image dans **l’outil Application**  
+   Nouvelle vue détaillée d’un cadre dans **l’outil Application**  
 :::image-end:::  
 
 Chromium problème : [#1093247][CR1093247]  
@@ -416,7 +416,7 @@ Par exemple, si une police personnalisée est installée sur l’ordinateur loca
 
 Chromium problème : [#1106221][CR1106221]  
 
-#### <a name="consistently-display-resource-type-in-network-panel"></a>Afficher systématiquement le type de ressource dans le panneau réseau  
+#### <a name="consistently-display-resource-type-in-network-panel"></a>Afficher systématiquement le type de ressource dans le panneau Réseau  
 
 DevTools affiche désormais de manière cohérente le même type de ressource que la demande réseau d’origine et s’affiche à la valeur de colonne Type lorsque la redirection \(code d’état `/ Redirect` HTTP 302\) se produit. ****  
 
@@ -439,7 +439,7 @@ Sélectionnez **le bouton** Effacer pour supprimer tout texte en entrée.
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="Effacer les boutons des panneaux Éléments" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
+      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="Effacer les boutons dans les panneaux Éléments" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
          Effacer les boutons dans les **outils Éléments**  
       :::image-end:::  
    :::column-end:::
@@ -469,8 +469,8 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 [DevtoolsCoverageIndex]: ../../../coverage/index.md "Recherchez du code JavaScript et CSS inutilisé avec l’onglet Couverture dans Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsCssGrid]: ../../../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Caisse : personnaliser Microsoft Edge devTools | Documents Microsoft"  
-[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personnaliser les raccourcis clavier dans Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Émuler des appareils mobiles dans Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personnaliser les raccourcis clavier dans les DevTools de Microsoft Edge | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Émuler des appareils mobiles dans Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeDualScreenAndFoldables]: ../../../device-mode/dual-screen-and-foldables.md "Émuler les appareils à double écran et pliables dans Microsoft Edge devTools | Documents Microsoft"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "Analyser les performances de rendu à l’aide de l’outil de rendu – Référence de l’analyse des performances | Documents Microsoft"  
 <!--  [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features/index.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  -->  
@@ -484,7 +484,7 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 [DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "Fonctionnalité couvrant l’écran multimédia CSS pour la détection à double écran | Microsoft Docs"  
 [DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "API JavaScript getWindowSegments pour appareils à double écran | Microsoft Docs"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canaux d’aperçu Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canaux de préversion de Microsoft Edge"  
 
 [VisualStudioCodeMain]: https://code.visualstudio.com "Visual Studio Code"  
 [VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Raccourcis clavier pour Windows"  
@@ -518,7 +518,7 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 [CR1103316]: https://crbug.com/1103316 "La recherche d’éléments ne résout pasNode (mettre en surbrillon le texte, etc.) sur le premier résultat de | Chromium bogues"  
 [CR1103854]: https://crbug.com/1103854 "De-obfuscate X-Client-Data values in Developer Tools | Chromium bogues"  
 <!--  [CR1105205]: https://crbug.com/1105205 "Issue 1105205 | Chromium bugs"  -->  
-[CR1106221] : « Ajouter des polices importées à lacomplétion automatique de la famille de polices dans le panneau https://crbug.com/1106221 Styles | Chromium bogues »  
+[CR1106221] : « Ajouter des polices importées à lacompletion automatique de la famille de polices dans le panneau https://crbug.com/1106221 Styles | Chromium bogues »  
 [CR1107766] : « Afficher des informations sur les images générées par ' window.open() » dans l’arborescence https://crbug.com/1107766 d’images | Chromium bogues »  
 [CR1115011] : « Lors de la copie d’un tableau à partir de la console, la structure de la table n’est pas https://crbug.com/1115011 conservée | Chromium bogues »  
 [CR1116085] : « Veuillez retourner l’inspecteur de https://crbug.com/1116085 propriétés DevTools | Chromium bogues »  
@@ -543,7 +543,7 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 > La page d’origine est disponible [ici](https://developer.chrome.com/blog/new-in-devtools-86) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

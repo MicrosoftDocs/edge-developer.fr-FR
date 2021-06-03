@@ -81,7 +81,7 @@ Ajoutez un WebView à votre application.
 1.  Recherchez **WebView2 dans** la boîte **à outils.**  
     
     > [!NOTE]
-    > Si vous utilisez Visual Studio 2017, il se peut que **WebView2** ne s’affiche pas dans la **boîte à outils.**  Pour activer le comportement, **sélectionnez**  >  **Options**d’outils  >  **** > **** définir le paramètre Boîte à outils Remplir automatiquement sur `True` .  
+    > Si vous utilisez Visual Studio 2017, **webView2** n’est peut-être pas affiché par défaut dans la **boîte à outils.**  Pour activer le **** comportement, sélectionnez  >  **Options d’outils**> définir le paramètre Boîte à  >  **** **outils** Remplir automatiquement sur `True` .  
     
     Faites glisser et déposez **le contrôle WebView2** dans l’Windows Forms App.
     
@@ -124,7 +124,7 @@ Ajoutez quelques contrôles à votre Windows formulaires à partir de la boîte 
        Concepteur WinForms  
     :::image-end:::  
 
-1.  Dans le `Form1.cs` fichier, `Form_Resize` définissez pour conserver les contrôles en place lorsque la fenêtre d’application est re resserée.
+1.  Dans le `Form1.cs` fichier, `Form_Resize` définissez pour conserver les contrôles en place lorsque la fenêtre de l’application est re resserée.
     
 ```csharp
 public Form1()
@@ -242,7 +242,7 @@ Pour créer et exécuter votre projet, sélectionnez `F5` .  Assurez-vous que lo
 Vous pouvez utiliser des applications hôtes pour injecter du code JavaScript dans des contrôles WebView2 lors de l’utilisation.  Vous pouvez tâcher WebView pour exécuter du javaScript arbitraire ou ajouter des scripts d’initialisation.  Le javaScript injecté s’applique à tous les nouveaux documents de niveau supérieur et aux images enfants jusqu’à ce que le JavaScript soit supprimé.  Le javaScript injecté est exécuté avec un minutage spécifique.  
 
 *   Exécutez-le après la création de l’objet global.  
-*   Exécutez-le avant d’exécuter tout autre script inclus dans le document HTML.  
+*   Exécutez-le avant tout autre script inclus dans le document HTML.  
     
 Par exemple, ajoutez des scripts qui envoient une alerte lorsqu’un utilisateur navigue vers des sites non HTTPS.  Modifiez la fonction pour injecter un script dans le contenu web qui utilise la méthode `EnsureHttps` [ExecuteScriptAsync.][DotnetApiMicrosoftWebWebview2WinformsWebview2Executescriptasync]  
 
@@ -268,7 +268,7 @@ Pour créer et exécuter votre projet, sélectionnez `F5` .  Assurez-vous que l�
 
 Le contenu hôte et web peut être utilisé pour communiquer les uns avec les `postMessage` autres comme suit :  
 
-*   Le contenu Web d’un contrôle WebView2 peut être utilisé pour `window.chrome.webview.postMessage` publier un message à l’hôte.  L’hôte gère le message à l’aide de tous les messages `WebMessageReceived` enregistrés sur l’hôte.  
+*   Le contenu Web d’un contrôle WebView2 peut être `window.chrome.webview.postMessage` utilisé pour publier un message à l’hôte.  L’hôte gère le message à l’aide de tous les messages `WebMessageReceived` enregistrés sur l’hôte.  
 *   Héberge des messages publiés dans du contenu web dans un contrôle WebView2 à l’aide `CoreWebView2.PostWebMessageAsString` ou `CoreWebView2.PostWebMessageAsJSON` .  Ces messages sont capturés par des responsables ajoutés à `window.chrome.webview.addEventListener` .  
     
 Le mécanisme de communication transmet les messages du contenu web à l’hôte à l’aide de fonctionnalités natives.  
@@ -292,7 +292,7 @@ Dans votre projet, lorsque le contrôle WebView2 navigue vers une URL, il affich
     }
     ```  
     
-1.  Une `CoreWebView2` fois l’initialisation initialisée, inscrivez un handler d’événements pour y `WebMessageReceived` répondre.  Dans le `Form1.cs` fichier, mettez à jour `InitializeAsync` et ajoutez à `UpdateAddressBar` l’aide de l’extrait de code suivant.  
+1.  Après `CoreWebView2` l’initialisation, inscrivez un handler d’événements pour y `WebMessageReceived` répondre.  Dans le `Form1.cs` fichier, mettez à jour `InitializeAsync` et ajoutez à `UpdateAddressBar` l’aide de l’extrait de code suivant.  
     
     ```csharp
     async void InitializeAsync()
@@ -343,7 +343,7 @@ Pour en savoir plus sur WebView2, accédez aux ressources suivantes.
 *   Pour plus d’informations sur WebView2, accédez [à Ressources WebView2.][Webview2IndexNextSteps]  
 *   Pour plus d’informations sur l’API WebView2, accédez à la référence [d’API.][DotnetApiMicrosoftWebWebview2WinformsWebview2]  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe web Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
@@ -358,13 +358,13 @@ Pour en savoir plus sur WebView2, accédez aux ressources suivantes.
 [DotnetApiMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async "Méthode WebView2.EnsureCoreWebView2Async(CoreWebView2Environment) | Documents Microsoft"  
 [DotnetApiMicrosoftWebWebview2WinformsWebview2Executescriptasync]: /dotnet/api/microsoft.web.webview2.winforms.webview2.executescriptasync "WebView2.ExecuteScriptAsync(String) Method | Documents Microsoft"  
 
-[DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]: /dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support "Configuration de votre application Windows Forms pour une prise en charge haute DPI - Prise en charge hautespipis dans Windows Forms | Documents Microsoft"  
+[DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]: /dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support "Configuration de votre application Forms Windows pour une prise en charge haute de la haute Windows forms | Documents Microsoft"  
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Télécharger les canaux Microsoft Edge Insider"  
 
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Développeur Microsoft Edge"  
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 | Microsoft Edge Développeur"  
 
 [MicrosoftMain]: https://www.microsoft.com "Microsoft"  
 

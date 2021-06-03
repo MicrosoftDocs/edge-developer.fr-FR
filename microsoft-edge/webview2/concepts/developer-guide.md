@@ -31,7 +31,7 @@ Lorsque vous utilisez le runtime WebView2 persistant, veillez à exécuter des t
 
 ## <a name="ensure-apis-are-supported-by-the-installed-webview2-runtime"></a>S’assurer que les API sont pris en charge par le runtime WebView2 installé
 
-Les applications WebView2 ont besoin d’un SDK Webview2 et d’un runtime WebView2 installé sur l’ordinateur pour s’exécuter. La version du SDK et du runtime est la même. Étant donné que les API sont continuellement ajoutées à WebView2, de nouvelles versions du runtime sont également publiées pour prendre en charge les nouvelles API. Vous devez vous assurer que les API utilisées par votre application WebView2 sont pris en charge par le runtime WebView2 installé sur l’ordinateur. 
+Les applications WebView2 ont besoin d’un SDK Webview2 et d’un runtime WebView2 installé sur l’ordinateur pour s’exécuter. Le SDK et le runtime sont tous deux en version. Étant donné que les API sont continuellement ajoutées à WebView2, de nouvelles versions du runtime sont également publiées pour prendre en charge les nouvelles API. Vous devez vous assurer que les API utilisées par votre application WebView2 sont pris en charge par le runtime WebView2 installé sur l’ordinateur. 
 
 Si vous utilisez le runtime WebView2 persistant, il existe certains scénarios dans lequel le runtime peut ne pas être mis à jour pour utiliser la dernière version. Par exemple, lorsque les utilisateurs n’ont pas accès à Internet, le runtime n’est pas automatiquement mis à jour dans cet environnement. En outre, l’utilisation de certaines stratégies de groupe interrompt les mises à jour WebView2. Lorsque vous pushez une mise à jour vers votre application WebView2, l’application peut se rompre car elle utilise des API plus nouvelles qui ne sont pas disponibles dans le runtime installé.   
  
@@ -56,13 +56,13 @@ Pour prendre des mesures lorsqu’une nouvelle version est disponible, comme ave
 Les applications WebView2 créent un dossier de données utilisateur pour stocker des données telles que les cookies, les informations d’identification, les autorisations, etc. Après avoir créé le dossier, votre application est responsable de la gestion de la durée de vie du dossier de données utilisateur, y compris du nettoyage lorsque l’application est désinstallée.  Pour plus d’informations, [accédez à Gestion du dossier de données utilisateur.][Webview2ConceptsUserDataFolder]  
 
 ## <a name="follow-recommended-webview2-security-best-practices"></a>Respecter les meilleures pratiques recommandées en matière de sécurité WebView2 
-Pour n’importe quelle application WebView2, veillez à suivre nos meilleures pratiques recommandées en matière de sécurité WebView2.  Pour plus d’informations, [accédez aux meilleures pratiques pour le développement d’applications WebView2 sécurisées.][Webview2ConceptsSecurity]  
+Pour n’importe quelle application WebView2, veillez à respecter les meilleures pratiques recommandées en matière de sécurité WebView2.  Pour plus d’informations, [accédez aux meilleures pratiques pour le développement d’applications WebView2 sécurisées.][Webview2ConceptsSecurity]  
 
 <!-- links -->  
 
 [Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime]: ../concepts/distribution.md#deploying-the-evergreen-webview2-runtime "Déploiement du runtime WebView2 persistant : distribution d’applications à l’aide de WebView2 | Documents Microsoft"  
 [Webview2ConceptsDistributionFixedVersionDistributionMode]: ../concepts/distribution.md#fixed-version-distribution-mode "Mode de distribution de version fixe : distribution des applications à l’aide de WebView2 | Documents Microsoft"  
-[Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#stay-compatible-in-evergreen-mode "Restez compatible en mode persistant : distribution d’applications à l’aide de WebView2 | Documents Microsoft"  
+[Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#stay-compatible-in-evergreen-mode "Restez compatible en mode persistant : distribution des applications à l’aide de WebView2 | Documents Microsoft"  
 [Webview2ConceptsSecurity]: ../concepts/security.md "Meilleures pratiques pour le développement d’applications WebView2 sécurisées | Documents Microsoft"  
 [Webview2ConceptsUserDataFolder]: ../concepts/user-data-folder.md "Gérer le dossier de données utilisateur | Documents Microsoft"  
 [Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#determine-webview2-runtime-requirement "Déterminer l’exigence d’runtime WebView2 : comprendre les versions du SDK WebView2 | Documents Microsoft"  

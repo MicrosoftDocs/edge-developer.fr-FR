@@ -1,5 +1,5 @@
 ---
-description: Documentation de stratégie d’entreprise pour les extensions Edge (Chromium).
+description: Enterprise documentation de stratégie pour les extensions Edge (Chromium).
 title: Correspondance des modèles
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -36,7 +36,7 @@ Les autorisations d’hôte et la correspondance de script de contenu sont basé
 > [!NOTE]
 > L’accès `file` aux URL n’est pas automatique.  L’utilisateur doit visiter la page de gestion des extensions et choisir d’accéder à `file` chaque extension qui le demande.  
 
-*   `_host_` — par exemple, ou ; si le schéma est un fichier, il `www.google.com` `*.google.com` `*` n’y a pas de partie hôte.  
+*   `_host_` — par exemple, `www.google.com` ou ; si le schéma est un `*.google.com` `*` fichier, il n’y a pas de partie hôte.  
 *   `_path_` — par exemple, `/*` , `/foo*` ou `/foo/bar` .  Le chemin d’accès doit être présent dans une autorisation d’hôte, mais il est toujours traité comme `/*` .  
 
 Syntaxe de base :  
@@ -78,7 +78,7 @@ Certains schémas ne sont pas pris en charge dans tous les contextes.
 > La page d’origine se trouve [ici.](https://developer.chrome.com/extensions/match_patterns)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

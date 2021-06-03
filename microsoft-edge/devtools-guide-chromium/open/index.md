@@ -46,9 +46,9 @@ Chacune des tâches suivantes vous permet d’inspecter les styles ou attributs 
 
 ## <a name="open-the-console-panel"></a>Ouvrir le panneau console  
 
-Chacune des tâches suivantes vous permet d’ouvrir le volet [Console][DevtoolsConsoleIndex] pour afficher les messages enregistrés ou exécuter JavaScript.  
+Chacune des tâches suivantes vous [][DevtoolsConsoleIndex] permet d’ouvrir le volet console pour afficher les messages enregistrés ou exécuter JavaScript.  
 
-*   Utilisez les étapes suivantes pour ouvrir [le volet][DevtoolsConsoleIndex] console.  
+*   Pour ouvrir le volet [console,][DevtoolsConsoleIndex] utilisez les étapes suivantes.  
     
     1.  [Ouvrez DevTools](#open-microsoft-edge-devtools).  
     1.  Choisissez le [volet][DevtoolsConsoleIndex] console.  
@@ -116,11 +116,11 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 * * *  
 
-## <a name="toggle-the-f12-keyboard-shortcut-on-or-off"></a>Toggle the F12 keyboard shortcut on or off  
+## <a name="toggle-the-f12-keyboard-shortcut-on-or-off"></a>Mettre le raccourci clavier F12 sur ou hors de l’écran  
 
 Pour modifier le `F12` paramètre de raccourci clavier qui ouvre DevTools, effectuer les actions suivantes.  
 
-1.  Choose the icon the **Paramètres and more** \( `...` \) icon > **Paramètres**.  
+1.  Choisissez l’icône Paramètres **et plus** \( `...` \) icône > **Paramètres**.  
 1.  Dans **les paramètres de recherche,** entrez `Developer Tools` .  
     
     :::image type="complex" source="../media/settings-developer-tools-f12-on.msft.png" alt-text="Paramètre Ouvrir de DevTools lorsque l’on appuie sur la touche F12" lightbox="../media/settings-developer-tools-f12-on.msft.png":::
@@ -158,7 +158,7 @@ Pour modifier le `F12` paramètre de raccourci clavier qui ouvre DevTools, effec
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/open) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

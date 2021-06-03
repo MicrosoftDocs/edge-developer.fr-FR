@@ -7,7 +7,7 @@ ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+keywords: IWebView2, IWebView2WebView, webview2, webview, applications wpf, wpf, edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, edge html
 ms.openlocfilehash: b5a86751bfe3386058812ca166fa7cf9e0e201dc
 ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
 ms.translationtype: MT
@@ -79,7 +79,7 @@ void ScriptComponent::InjectScript()
 
 ## <a name="events"></a>Événements  
 
-Les événements dans l’API C++ Win32 WebView2 utilisent la paire méthode et abonnement pour s’abonner à des événements et `add_EventName` `remove_EventName` s’en désabonner.  La `add_EventName` méthode prend une interface déléguée de gestion d’événements et retourne un `EventRegistrationToken` jeton en tant que paramètre de sortie.  La `remove_EventName` méthode prend un `EventRegistrationToken` jeton et désabonner l’abonnement à l’événement correspondant.  
+Les événements dans l’API C++ Win32 WebView2 utilisent la paire méthode et abonnement pour s’abonner à des événements et `add_EventName` `remove_EventName` s’en désabonner.  La `add_EventName` méthode prend une interface déléguée de handler d’événements et retourne un `EventRegistrationToken` jeton en tant que paramètre de sortie.  La `remove_EventName` méthode prend un `EventRegistrationToken` jeton et désabonner l’abonnement à l’événement correspondant.  
 
 Les interfaces déléguées du handler d’événements fonctionnent de la même manière que les interfaces déléguées de la méthode async terminées.  Vous implémentez l’interface déléguée du handler d’événements et envoyez un rappel chaque `CoreWebView2` fois que l’événement s’exécute.  Chaque interface déléguée du handler d’événements possède une seule méthode qui possède un paramètre d’expéditeur suivi d’un paramètre `Invoke` d’rgs d’événement.  L’expéditeur est l’instance de l’objet auquel vous vous êtes abonné pour les événements.  Le paramètre args d’événement est une interface qui contient des informations sur l’événement en cours de tir.  
 
@@ -131,7 +131,7 @@ Les paramètres d’entrée de chaîne `LPCWSTR` sont des chaînes terminées pa
 
 Diverses méthodes fournissent ou acceptent des URS et JSON en tant que chaînes.  Utilisez votre bibliothèque préférée pour l’utilisation et la génération des chaînes.  
 
-Si WinRT est disponible pour votre application, vous pouvez utiliser les méthodes et les méthodes pour parer ou produire des chaînes ou des méthodes JSON pour l' `RuntimeClass_Windows_Data_Json_JsonObject` `IJsonObjectStatics` `RuntimeClass_Windows_Foundation_Uri` `IUriRuntimeClassFactory` URIS.  Les deux méthodes fonctionnent dans les applications Win32.  
+Si WinRT est disponible pour votre application, vous pouvez utiliser les méthodes et les méthodes pour parer ou produire des chaînes et des méthodes JSON pour l' `RuntimeClass_Windows_Data_Json_JsonObject` `IJsonObjectStatics` `RuntimeClass_Windows_Foundation_Uri` `IUriRuntimeClassFactory` URIS.  Les deux méthodes fonctionnent dans les applications Win32.  
 
 Si vous utilisez et pour l’URI, vous pouvez utiliser les indicateurs de création d’URI suivants pour que le comportement corresponde plus étroitement à l’URI de l’URI dans `IUri` `CreateUri` `CreateUri` WebView.  
 
@@ -139,12 +139,12 @@ Si vous utilisez et pour l’URI, vous pouvez utiliser les indicateurs de créat
 Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 ```  
 
-## <a name="see-also"></a>Voir également  
+## <a name="see-also"></a>Articles associés  
 
 *   To get started using WebView2 Win32 C/C++, navigate to [Get started with WebView2][Webview2IndexGetStarted] guides.  
-*   Pour plus d’informations sur les API WebView2, accédez à la référence [d’API.][DotnetApiMicrosoftWebWebview2WpfWebview2]  
+*   Pour plus d’informations sur les API WebView2, accédez à la [référence d’API.][DotnetApiMicrosoftWebWebview2WpfWebview2]  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe web Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 

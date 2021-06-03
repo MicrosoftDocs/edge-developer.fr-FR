@@ -20,7 +20,7 @@ Afin d’atténuer une grande classe de problèmes potentiels de scripts entre s
 
 En règle générale, le programme CSP fonctionne comme un mécanisme de blocage/mise en liste des listes d’utilisateurs pour les ressources chargées ou exécutés par vos extensions.  La définition d’une stratégie raisonnable pour votre extension vous permet d’examiner attentivement les ressources dont votre extension a besoin et de demander au navigateur de s’assurer qu’il s’agit des seules ressources à qui votre extension a accès.  Les stratégies assurent la sécurité au-delà des autorisations d’hôte que vos demandes d’extension . Il s’agit d’une couche de protection supplémentaire, et non d’un remplacement.  
 
-Sur le web, une telle stratégie est définie via un en-tête ou un élément `meta` HTTP.  À l’intérieur du système d’extension Microsoft Edge, aucun des deux n’est un mécanisme approprié.  Au lieu de cela, une stratégie d’extension est définie à l’aide du `manifest.json` fichier pour l’extension comme suit :  
+Sur le web, une telle stratégie est définie via un en-tête ou un élément `meta` HTTP.  Dans le système d Microsoft Edge d’extension, aucun des deux n’est un mécanisme approprié.  Au lieu de cela, une stratégie d’extension est définie à l’aide du `manifest.json` fichier pour l’extension comme suit :  
 
 ```javascript
 {
@@ -66,7 +66,7 @@ function() { return foo && foo.bar && foo.bar.baz };
 
 JavaScript en ligne n’est pas exécuté.  Cette restriction interdit les blocs inline et les handlers d’événements en `<script>` ligne, tels que `<button onclick="...">` .
 
-La première restriction efface une classe considérable d’attaques par scripts entre sites en vous rendant impossible d’exécuter accidentellement le script fourni par un tiers malveillant.  Toutefois, cela vous oblige à écrire votre code avec une séparation nette entre le contenu et le comportement \(ce que vous devez faire quand même, n’est-ce pas ?\).  Un exemple peut rendre cela plus clair.  Vous pouvez essayer d’écrire une fenêtre d’action de navigateur sous la seule mesure où : `pop-up.html`  
+La première restriction efface une classe considérable d’attaques de scripts entre sites en vous rendant impossible d’exécuter accidentellement le script fourni par un tiers malveillant.  Toutefois, cela vous oblige à écrire votre code avec une séparation nette entre le contenu et le comportement \(ce que vous devez faire quand même, n’est-ce pas ?\).  Un exemple peut rendre cela plus clair.  Vous pouvez essayer d’écrire une fenêtre d’action de navigateur sous la seule mesure où : `pop-up.html`  
 
 ```html
 <!doctype html>
@@ -154,9 +154,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 **Seules les ressources de script et d’objet locales sont chargées**  
 
-Les ressources de script et d’objet peuvent uniquement être chargées à partir du package d’extension, et non à partir du web en général.  Cela garantit que votre extension exécute uniquement le code que vous avez spécifiquement approuvé, ce qui empêche une personne malveillante de rediriger malveillantment votre demande pour une ressource.  
+Les ressources de script et d’objet peuvent uniquement être chargées à partir du package d’extension, et non à partir du web en général.  Cela garantit que votre extension exécute uniquement le code que vous avez spécifiquement approuvé, ce qui empêche une personne malveillante de rediriger votre demande pour une ressource.  
 
-Au lieu d’écrire du code qui dépend du chargement de jQuery \(ou toute autre bibliothèque\) à partir d’un CDN externe, envisagez d’inclure la version spécifique de jQuery dans votre package d’extension.  Autrement dit, au lieu de :  
+Au lieu d’écrire du code qui dépend du chargement de jQuery \(ou de toute autre bibliothèque\) à partir d’une CDN externe, envisagez d’inclure la version spécifique de jQuery dans votre package d’extension.  Autrement dit, au lieu de :  
 
 ```html
 <!doctype html>
@@ -200,9 +200,9 @@ Les scripts en ligne peuvent être autorisés en spécifiant le hachage codé en
 
 Si vous avez besoin de ressources JavaScript ou d’objets externes, vous pouvez relâcher la stratégie dans une certaine mesure en permettant la liste des origines sécurisées à partir des lesquelles les scripts doivent être acceptés.  Vérifiez que les ressources runtime chargées avec des autorisations élevées d’une extension sont exactement les ressources que vous attendez et qu’elles ne sont pas remplacées par une personne malveillante active du réseau.  Comme [les attaques de][WikiManMiddleAttacks] l’homme au milieu sont à la fois triviales et indétectables sur HTTP, ces origines ne sont pas acceptées.  
 
-Actuellement, les développeurs peuvent autoriser les origines de la liste avec les schémas suivants : `blob` `filesystem` , et `https` `extension` .  La partie hôte de l’origine doit être explicitement spécifiée pour les `https` `extension` schémas.  Les caractères génériques tels que https:, et ne sont pas autorisés ; les caractères génériques de sous-domaine `https://*` `https://*.com` tels que sont `https://*.example.com` autorisés.  Les domaines de la [liste Suffixe public][PublicSuffixList] sont également vus comme des domaines de niveau supérieur génériques.  Pour charger une ressource à partir de ces domaines, le sous-domaine doit être explicitement répertorié.  Par exemple, `https://*.cloudfront.net` n’est pas valide, mais `https://XXXX.cloudfront.net` peut `https://*.XXXX.cloudfront.net` l’être. `allowlisted`  
+Actuellement, les développeurs peuvent autoriser les origines de la liste avec les schémas suivants : `blob` `filesystem` , et `https` `extension` .  La partie hôte de l’origine doit être explicitement spécifiée pour les `https` `extension` schémas.  Les caractères génériques tels que https:, et ne sont pas autorisés ; les caractères génériques de sous-domaine tels `https://*` `https://*.com` que sont `https://*.example.com` autorisés.  Les domaines de la [liste Suffixe public][PublicSuffixList] sont également vus comme des domaines de niveau supérieur génériques.  Pour charger une ressource à partir de ces domaines, le sous-domaine doit être explicitement répertorié.  Par exemple, `https://*.cloudfront.net` n’est pas valide, mais `https://XXXX.cloudfront.net` peut `https://*.XXXX.cloudfront.net` l’être. `allowlisted`  
 
-Pour faciliter le développement, les ressources chargées sur HTTP à partir de serveurs sur votre ordinateur local peuvent être `allowlisted` .  Vous pouvez autoriser le script de liste et les sources d’objets sur n’importe quel port de `http://127.0.0.1` l’un ou l’autre. `http://localhost`  
+Pour faciliter le développement, les ressources chargées sur HTTP à partir de serveurs sur votre ordinateur local peuvent être `allowlisted` .  Vous pouvez autoriser le script de liste et les sources d’objets sur n’importe quel port de l’un `http://127.0.0.1` ou l’autre `http://localhost` port.  
 
 > [!NOTE]
 > La restriction sur les ressources chargées sur HTTP s’applique uniquement aux ressources qui sont directement exécutés.  Vous êtes toujours libre, par exemple, d’établir des connexions à n’importe quelle origine de votre choix ; la stratégie par défaut ne limite aucune des autres directives du programme `XMLHTTPRequest` `connect-src` CSP.  
@@ -240,14 +240,14 @@ La stratégie en cours de discussion s’applique aux pages d’arrière-plan et
 
 Les scripts de contenu ne sont généralement pas soumis au programme CSP de l’extension.  Étant donné que les scripts de contenu ne sont pas au format HTML, l’impact principal est qu’ils peuvent être utilisés même si le CSP de l’extension ne spécifie pas, bien que cela ne soit pas `eval` `unsafe-eval` recommandé.  En outre, le CSP de la page ne s’applique pas aux scripts de contenu.  Les balises que les scripts de contenu créent et placent dans le DOM de la page sur qui ils s’exécutent sont `<script>` plus complexes.  Ces scripts sont référencés en tant que scripts INJECTÉS DOM à l’avenir.  
 
-Les scripts DOM injectés qui s’exécutent immédiatement après l’injection dans la page s’exécutent comme prévu.  Imaginez un script de contenu avec le code suivant comme exemple simple :  
+Les scripts DOM injectés qui s’exécutent immédiatement après l’injection dans la page s’exécutent comme prévu.  Imagine script de contenu avec le code suivant comme exemple simple :  
 
 ```javascript
 document.write("<script>alert(1);</script>");
  ```  
 
 Ce script de contenu provoque une `alert` immédiatement sur `document.write()` le .  Notez que cette dernière s’exécute quelle que soit la stratégie qu’une page peut spécifier.
-Toutefois, le comportement devient plus complexe à la fois à l’intérieur de ce script DOM injecté et pour tout script qui ne s’exécute pas immédiatement lors de l’injection.  Imaginez que votre extension s’exécute sur une page qui fournit un CSP associé qui spécifie `script-src 'self'` .  Imaginez maintenant que le script de contenu exécute le code suivant :  
+Toutefois, le comportement devient plus complexe à la fois à l’intérieur de ce script DOM injecté et pour tout script qui ne s’exécute pas immédiatement lors de l’injection.  Imagine que votre extension est en cours d’exécution sur une page qui fournit un CSP associé qui spécifie `script-src 'self'` .  Imaginez maintenant que le script de contenu exécute le code suivant :  
 
 ```javascript
 document.write("<button onclick='alert(1);'>click me</button>'");
@@ -298,7 +298,7 @@ Ainsi, selon la façon dont vous écrivez des scripts INJECTÉS DOM dans votre e
 > La page d’origine se trouve [ici.](https://developer.chrome.com/extensions/contentSecurityPolicy)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

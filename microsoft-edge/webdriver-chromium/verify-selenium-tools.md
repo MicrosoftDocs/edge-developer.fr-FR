@@ -1,5 +1,5 @@
 ---
-description: Informations sur la vérification de la signature GPG pour les outils Selenium pour les version Microsoft Edge.
+description: Informations sur la vérification de la signature GPG pour les outils Selenium pour Microsoft Edge de publication.
 title: Vérification des téléchargements des outils Selenium pour Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -17,15 +17,15 @@ ms.locfileid: "11306270"
 ---
 # Vérifier les téléchargements des outils Selenium pour Microsoft Edge  
 
-Cet article fournit la clé publique à utiliser lors de la vérification de la signature des releases des outils [Selenium pour Microsoft Edge.][GithubMicrosoftEdgeSeleniumToolsReleases]  
+Cet article fournit la clé publique à utiliser lors de la vérification de la signature des releases des outils [Selenium pour Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases].  
 
-Les [Java des outils][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] [Selenium][GithubMicrosoftEdgeSeleniumToolsReleases] pour Microsoft Edge sont signées à l’aide de [GPG.][Gnupg]  
+Les [Java de][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases] sont signées à l’aide de [GPG][Gnupg].  
 
-Utilisez les clés suivantes pour vérifier la signature des packages fournis par l’équipe outils de développement [Microsoft Edge.][TwitterEdgeDevTools]  
+Utilisez les clés suivantes pour vérifier la signature des packages fournis par [l’équipe Microsoft Edge outils de développement.][TwitterEdgeDevTools]  
 
 ## Clé publique pour la vérification des outils Selenium pour Microsoft Edge  
 
-*   **ID de clé publique**: outils de développement Microsoft Edge [EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)  
+*   **ID de clé publique**: Microsoft Edge d’équipe outils [de développement EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)  
 *   **Empreinte numérique à clé publique**: `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  
 
 ```output

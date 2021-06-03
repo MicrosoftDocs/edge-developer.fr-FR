@@ -1,5 +1,5 @@
 ---
-description: Référence complète des fonctionnalités Microsoft Edge de panneau réseau DevTools.
+description: Référence complète des fonctionnalités Microsoft Edge panneau réseau DevTools.
 title: Référence de l’analyse réseau
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -36,7 +36,7 @@ Découvrez de nouvelles façons d’analyser le chargement de votre page dans ce
 Par défaut, DevTools enregistre toutes **** les demandes réseau dans l’outil Réseau, tant que DevTools est ouvert.  
 
 :::image type="complex" source="../media/network-network-panel.msft.png" alt-text="Panneau réseau" lightbox="../media/network-network-panel.msft.png":::
-   Outil **Réseau**  
+   **L’outil** Réseau  
 :::image-end:::  
 
 ### <a name="stop-recording-network-requests"></a>Arrêter l’enregistrement des demandes réseau  
@@ -44,7 +44,7 @@ Par défaut, DevTools enregistre toutes **** les demandes réseau dans l’outil
 Pour arrêter l’enregistrement des demandes, complétez les étapes suivantes.  
 
 1.  Dans **l’outil Réseau,** **sélectionnez Arrêter l’enregistrement du journal réseau** \( ![ Arrêter l’enregistrement du journal ](../media/record-on-icon.msft.png) réseau \).  Il devient gris pour indiquer que DevTools n’enregistre plus les demandes.  
-1.  Sélectionnez `Control` + `E` \(Windows, Linux\) ou `Command` + `E` \(macOS\) **** lorsque l’outil réseau est en cours de mise au point.  
+1.  Sélectionnez `Control` + `E` \(Windows, Linux\) ou `Command` + `E` \(macOS\) **** lorsque l’outil Réseau est en cours de mise au point.  
 
 ### <a name="clear-requests"></a>Effacer les demandes  
 
@@ -94,7 +94,7 @@ Après avoir capturé une capture d’écran, vous interagissez avec elle des ma
 
 ### <a name="emulate-a-first-time-visitor-by-disabling-the-browser-cache"></a>Émuler un premier visiteur en désactivant le cache du navigateur  
 
-Pour émuler la façon dont un utilisateur rencontre votre site pour la première fois, cochez la case Désactiver le **cache.**  DevTools désactive le cache du navigateur.  Cette fonctionnalité émule plus précisément l’expérience d’un premier utilisateur, car les demandes sont reçues à partir du cache du navigateur lors de visites répétées.  
+Pour émuler la façon dont un utilisateur se retrouve pour la première fois sur votre site, cochez la case Désactiver le **cache.**  DevTools désactive le cache du navigateur.  Cette fonctionnalité émule plus précisément l’expérience d’un premier utilisateur, car les demandes sont reçues à partir du cache du navigateur lors de visites répétées.  
 
 :::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="Case à cocher Désactiver le cache" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
    Case **à cocher** Désactiver le cache  
@@ -177,8 +177,8 @@ Utilisez la **zone de** texte Filtrer pour filtrer les demandes par propriétés
 Si la zone de texte n’est pas affichée, le volet **Filtres** est probablement masqué.  
 Pour plus d’informations, [accédez à Masquer le volet Filtres.](#hide-the-filters-pane)  
 
-:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="Zone de texte Filtre" lightbox="../media/network-network-filters-textbox.msft.png":::
-   Zone **de texte** Filtre  
+:::image type="complex" source="../media/network-network-filters-textbox.msft.png" alt-text="Zone de texte Filtrer" lightbox="../media/network-network-filters-textbox.msft.png":::
+   Zone **de texte** Filtrer  
 :::image-end:::  
 
 Vous pouvez utiliser plusieurs propriétés simultanément en séparant chaque propriété par un espace.  Par exemple, affiche tous les PNG dont la taille `mime-type:image/png larger-than:1K` est supérieure à 1 kilo-octet.  Les filtres multi-propriétés sont équivalents aux `AND` opérations.  `OR` ne sont actuellement pas pris en charge.  
@@ -191,10 +191,10 @@ Liste complète des propriétés pris en charge.
 | `has-response-header` | Affiche les ressources qui contiennent l’en-tête de réponse HTTP spécifié.  DevTools remplit la zone de mise à jour de la mise à jour automatique avec tous les en-têtes de réponse trouvés. |  
 | `is` | À `is:running` utiliser pour rechercher des `WebSocket` ressources. |  
 | `larger-than` | Affiche les ressources dont la taille est supérieure à la taille spécifiée, en octets.  Définir une valeur de `1000` . `1k` |  
-| `method` | Affiche les ressources qui ont été récupérées sur un type de méthode HTTP spécifié.  DevTools remplit la zone de détail avec toutes les méthodes HTTP qui sont trouvées. |  
+| `method` | Affiche les ressources qui ont été récupérées sur un type de méthode HTTP spécifié.  DevTools remplit la zone de détail avec toutes les méthodes HTTP trouvées. |  
 | `mime-type` | Affiche les ressources d’un type MIME spécifié.  DevTools remplit la zone de détail avec tous les types MIME trouvés. |  
 | `mixed-content` | Afficher toutes les ressources de contenu mixte \( \) ou uniquement ceux qui sont `mixed-content:all` actuellement affichés \( `mixed-content:displayed` \). |  
-| `scheme` | Affiche les ressources récupérées sur http \( \) ou `scheme:http` HTTPS \( `scheme:https` \) protégées. |  
+| `scheme` | Affiche les ressources récupérées sur HTTP \( \) ou `scheme:http` HTTPS \( `scheme:https` \) protégé. |  
 | `set-cookie-domain` | Affiche les ressources qui ont un `Set-Cookie` en-tête avec un `Domain` attribut qui correspond à la valeur spécifiée.  DevTools remplit la mise à jour automatique avec tous les domaines de cookie trouvés. |  
 | `set-cookie-name` | Affiche les ressources qui ont un `Set-Cookie` en-tête dont le nom correspond à la valeur spécifiée.  DevTools remplit la mise à jour automatique avec tous les noms de cookies trouvés. |  
 | `set-cookie-value` | Affiche les ressources qui ont un `Set-Cookie` en-tête avec une valeur qui correspond à la valeur spécifiée.  DevTools remplit la mise à jour automatique avec toutes les valeurs de cookie trouvées. |  
@@ -288,7 +288,7 @@ Pour filtrer les demandes par type de requête, choisissez l’un des boutons su
 Si les boutons ne s’affichent pas, le volet **Filtres** peut être masqué.  
 Pour plus d’informations, [accédez à Masquer le volet Filtres.](#hide-the-filters-pane)  
 
-Pour activer plusieurs filtres de type simultanément, maintenez `Control` \(Windows, Linux\) ou `Command` \(macOS\), puis choisissez.  
+Pour activer plusieurs filtres de type simultanément, `Control` maintenez \(Windows, Linux\) ou `Command` \(macOS\), puis choisissez.  
 
 :::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Utiliser les filtres type pour afficher les ressources JS, CSS et Document" lightbox="../media/network-network-type-filters.msft.png":::
    Utiliser les filtres type pour afficher les ressources JS, CSS et Document  
@@ -543,14 +543,14 @@ Pour afficher les données d’en-tête HTTP relatives à une demande, utilisez 
 
 Par défaut, le panneau **En-têtes** affiche les noms d’en-tête par ordre alphabétique.  Pour dsiplay les noms d’en-tête HTTP dans l’ordre reçu, utilisez les étapes suivantes.  
 
-1.  Ouvrez **le panneau En-têtes** pour la demande qui vous intéresse.  Pour plus d’informations, accédez à [Afficher les en-têtes HTTP.](#display-http-headers)  
-1.  Choose **view source**, next to the Request **Header** or **Response Header** section.  
+1.  Ouvrez **le panneau En-têtes** pour la demande qui vous intéresse.  Pour plus d’informations, accédez [à Afficher les en-têtes HTTP.](#display-http-headers)  
+1.  Choisissez **la source d’affichage,** en regard de la section **En-tête de** demande ou **En-tête de réponse.**  
 
 ### <a name="display-query-string-parameters"></a>Afficher les paramètres de chaîne de requête  
 
 Pour afficher les paramètres de chaîne de requête d’une URL dans un format lisible par l’homme, utilisez les étapes suivantes.  
 
-1.  Ouvrez **le panneau En-têtes** pour la demande qui vous intéresse.  Pour plus d’informations, accédez à [Afficher les en-têtes HTTP.](#display-http-headers)  
+1.  Ouvrez **le panneau En-têtes** pour la demande qui vous intéresse.  Pour plus d’informations, accédez [à Afficher les en-têtes HTTP.](#display-http-headers)  
 1.  Accédez à la section **Paramètres de chaîne de requête.**  
 
 :::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="Section Paramètres de chaîne de requête" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
@@ -618,7 +618,7 @@ Pour plus d’informations sur l’accès aux données sans pointage, accédez �
 
 #### <a name="timing-breakdown-phases-explained"></a>Phases de répartition du minutage expliquées  
 
-Plus d’informations sur chacune des phases qui peuvent s’afficher dans le **panneau De** minutage.  
+Plus d’informations sur chacune des phases qui peuvent s’afficher dans le **panneau Calendrier.**  
 
 :::row:::
    :::column span="1":::
@@ -729,11 +729,11 @@ Pour afficher les initiateurs et les dépendances d’une demande, maintenez la 
    Afficher les initiateurs et les dépendances d’une demande  
 :::image-end:::  
 
-Lorsque la table Requests est classé dans l’ordre chronologique, si vous pointez sur une ligne, la ligne qui la précède affiche une demande verte.  La demande verte est l’initiateur de la dépendance.  Si une autre demande verte est affichée sur la ligne avant cette ligne, cette demande supérieure est l’initiateur de l’initiateur.  Et ainsi de suite.  
+Lorsque la table Requests est classé dans l’ordre chronologique, si vous pointez sur une ligne, la ligne qui précède affiche une demande verte.  La demande verte est l’initiateur de la dépendance.  Si une autre demande verte est affichée sur la ligne avant cette ligne, cette demande supérieure est l’initiateur de l’initiateur.  Et ainsi de suite.  
 
 ### <a name="display-load-events"></a>Afficher les événements de chargement  
 
-DevTools affiche le minutage des événements à plusieurs `DOMContentLoaded` `load` endroits sur **l’outil** Réseau.  `DOMContentLoaded`L’événement est de couleur bleue et l’événement est `load` rouge.  
+DevTools affiche le minutage des événements à plusieurs endroits `DOMContentLoaded` `load` sur **l’outil** Réseau.  `DOMContentLoaded`L’événement est de couleur bleue et l’événement est `load` rouge.  
 
 :::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="Emplacements du DOMContentLoaded et chargement des événements sur le panneau réseau" lightbox="../media/network-network-requests-load-events.msft.png":::
    Emplacements des `DOMContentLoaded` `load` événements et des événements sur **l’outil** Réseau  
@@ -893,7 +893,7 @@ Sous la **colonne Nom** de la table Demandes, pointez sur une demande, ouvrez le
 
 ### <a name="copy-formatted-response-json-to-the-clipboard"></a>Copier la réponse mise en forme JSON dans le Presse-papiers  
 
-Choisissez une demande réseau et accédez au volet **En-têtes.**  Pour copier la valeur JSON d’une réponse, accédez à La charge utile de la **demande,** pointez sur le contenu de la réponse JSON, ouvrez le menu contextuel \(clic droit\), puis choisissez Copier la **valeur**.  
+Choisissez une demande réseau et accédez au volet **En-têtes.**  Pour copier la valeur JSON d’une réponse, accédez à Charge utile de la **demande,** pointez sur le contenu de la réponse JSON, ouvrez le menu contextuel \(clic droit\), puis choisissez Copier la **valeur**.  
 
 :::row:::
    :::column span="":::
@@ -975,7 +975,7 @@ Par défaut, DevTools **** affiche le volet Vue d’ensemble.  Pour le masquer, 
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/network/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

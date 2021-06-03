@@ -37,7 +37,7 @@ L’accessibilité de DevTools est un travail en cours.  Certains panneaux et on
 
 Avant de commencer, il est utile d’avoir un modèle de structure de l’interface utilisateur DevTools.  DevTools est divisé en une série de panneaux organisés en une [liste de tabulations ARIA.][W3CWaiAriaTablist]  
 
-Exemple :  
+Par exemple :  
 
 *   **L’outil Elements** vous permet [d’afficher et de modifier les nodes DOM][DevtoolsDomIndexNavigateDomTreeKeyboard] ou [CSS][DevtoolsCssIndex].  
 *   Le [panneau console vous][DevtoolsConsoleIndex] permet de lire les journaux JavaScript et d’éditer des objets en direct.  
@@ -63,7 +63,7 @@ Pour commencer, accédez à [Open Microsoft Edge DevTools][DevtoolsOpen].  Il ex
 
 **Problèmes connus**  
 
-*   Certains panneaux, tels **** que les outils **Console** et Performances, peuvent déplacer le focus dans la zone de contenu du panneau dès que chaque panneau est activé.  Cela peut rendre difficile la navigation par les touches de direction.  
+*   Certains panneaux, tels **** que les outils **console** et performance, peuvent déplacer le focus dans la zone de contenu du panneau dès que chaque panneau est activé.  Cela peut rendre difficile la navigation par les touches de direction.  
 *   Le nom du panneau sélectionné est annoncé, mais uniquement après avoir lu le contenu sélectionné dans le panneau.  Cela peut être très facile à manquer.  
 
 ### <a name="navigate-by-command-menu"></a>Naviguer par menu de commande  
@@ -89,9 +89,9 @@ Ouvrez un panneau de cette façon pour diriger le focus vers le contenu du panne
 
 1.  Accédez à l’élément que vous souhaitez inspecter à l’aide du curseur dans le lecteur d’écran.  
 1.  Simulez un clic droit à l’aide d’une souris sur l’élément pour ouvrir le menu contextif.  
-1.  Sélectionnez **l’option** Inspecter.  Cela [ouvre le panneau Éléments et concentre l’élément dans l’arborescence DOM][DevtoolsDomIndexViewDomNodes].  
+1.  Choisissez **l’option Inspecter.**  Cela [ouvre le panneau Éléments et concentre l’élément dans l’arborescence DOM][DevtoolsDomIndexViewDomNodes].  
 
-**L’arborescence DOM** est disposé en tant [qu’arborescence ARIA.][W3CWaiAriaTree]  Par exemple, accédez à [Naviguer dans l’arborescence **DOM** avec un clavier][DevtoolsDomIndexNavigateDomTreeKeyboard].  
+**L’arborescence DOM** est disposé en tant [qu’arborescence ARIA.][W3CWaiAriaTree]  Pour obtenir un exemple, accédez à [Naviguer dans l’arborescence **DOM** avec un clavier][DevtoolsDomIndexNavigateDomTreeKeyboard].  
 
 ### <a name="copy-the-code-for-an-element-in-the-dom-tree"></a>Copier le code d’un élément dans l’arborescence DOM  
 
@@ -123,7 +123,7 @@ Par exemple, lorsque vous tapez et sélectionnez `h3` `Control` + `Enter` \(Wind
 
 ## <a name="elements-tool-panels"></a>Panneaux d’outils Éléments  
 
-**L’outil Elements** contient des onglets supplémentaires pour inspecter des éléments tels que le CSS appliqué à un élément ou l’endroit approprié dans l’arborescence d’accessibilité.  
+**L’outil Elements** contient des onglets supplémentaires permettant d’inspecter des éléments tels que le CSS appliqué à un élément ou l’endroit approprié dans l’arborescence d’accessibilité.  
 
 *   Avec le focus sur un nœud dans l’arborescence **DOM,** sélectionnez jusqu’à ce que vous entendiez que le volet `Tab` **Styles** est sélectionné.  
 *   Utilisez `Right Arrow` l’onglet pour explorer les autres onglets disponibles.  
@@ -136,7 +136,7 @@ Les **** **onglets Points d’arrêt et Propriétés DOM** ne sont pas accessibl
 
 ### <a name="styles-pane"></a>Volet Styles  
 
-Dans le volet **Styles,** recherchez les contrôles de filtrage des styles, les états d’élément bascule \(tels que [:active][MDNActive] et [:focus][MDNFocus]\), le basculement de classes et l’ajout de nouvelles classes.  Il existe également un outil d’inspection de style puissant pour explorer et modifier les styles actuellement appliqués à l’élément qui est en focus dans l’arborescence **DOM**.  
+Dans le volet **Styles,** recherchez des contrôles pour le filtrage des styles, le basculement des états d’élément \(tels que [:active][MDNActive] et [:focus][MDNFocus]\), le basculement des classes et l’ajout de nouvelles classes.  Il existe également un outil d’inspection de style puissant pour explorer et modifier les styles actuellement appliqués à l’élément qui est en focus dans l’arborescence **DOM**.  
 
 Le concept clé à comprendre sur le volet **Styles** est qu’il affiche uniquement les styles pour le nœud actuellement sélectionné dans l’arborescence **DOM**.  Par exemple, supposons que vous avez terminé d’inspecter les styles d’un nœud et que vous souhaitez maintenant examiner les `<header>` styles `<footer>` d’un nœud.  Pour ce faire, vous devez d’abord sélectionner le `<footer>` nœud dans l’arborescence **DOM.**  Vous trouverez peut-être [](#inspect-an-element-on-the-page) plus rapide d’utiliser le flux de travail Inspect pour inspecter un nœud qui se trouve à proximité générale du nœud \(par exemple, un lien dans le pied de groupe\), qui se concentre sur l’arborescence `footer` **DOM,** puis utilisez votre clavier pour accéder au nœud exact qui vous intéresse.  
 
@@ -146,7 +146,7 @@ Le concept clé à comprendre sur le volet **Styles** est qu’il affiche unique
 
 *   Avec le focus sur le **volet Styles,** sélectionnez pour déplacer le focus à `Tab` l’intérieur et explorez le contenu.  
 *   Sélectionnez `Tab` jusqu’à ce que le premier style devienne actif.  Si vous utilisez un lecteur d’écran, ce premier style est annoncé comme `element.style {}` .  
-*   Sélectionnez `Down Arrow` pour parcourir la liste des styles par ordre de spécificité.  Un lecteur d’écran annonce chaque style en commençant par le nom du fichier CSS, le numéro de ligne sur lequel le style apparaît et le nom du style.  Par exemple: `main.css:233 .card__img {}`.  
+*   Sélectionnez `Down Arrow` pour parcourir la liste des styles par ordre de spécificité.  Un lecteur d’écran annonce chaque style en commençant par le nom du fichier CSS, le numéro de ligne sur lequel le style apparaît et le nom du style.  Par exemple : `main.css:233 .card__img {}`.  
 *   Sélectionnez `Enter` pour inspecter un style plus en détail.  Le focus commence sur une version modifiable du nom du style.  
 *   Choisissez `Tab` de passer des versions modifiables de chaque propriété CSS aux valeurs correspondantes.  À la fin de chaque bloc de style se trouve un champ de texte modifiable vide que vous pouvez utiliser pour ajouter des propriétés CSS supplémentaires.  
 *   Vous pouvez continuer à choisir de parcourir la liste des styles ou de quitter le mode et revenir à la navigation par `Tab` `Escape` les touches de direction.  
@@ -211,22 +211,22 @@ Avec le focus sur le volet **Accessibilité,** sélectionnez pour déplacer le f
 **Problèmes connus**  
 
 *   Le type d’arborescence **** [ARIA][W3CWaiAriaTree] utilisé par le volet Accessibilité peut ne pas être correctement exposé dans Microsoft Edge pour les lecteurs d’écran macOS tels que VoiceOver.  [S’abonner Chromium problème #868480][ChromiumIssues868480] être informé de la progression de ce problème.  
-*   Chacune des **** **sections Attributs ARIA** et propriétés calculées est marquée comme une arborescence [ARIA,][W3CWaiAriaTree]mais elle ne dispose pas actuellement de la gestion du focus et n’est pas particulièrement sensible au clavier.  
+*   Chacune des **** **sections Attributs ARIA** et Propriétés calculées est marquée comme une arborescence [ARIA,][W3CWaiAriaTree]mais chacune n’a pas de gestion du focus actuellement et n’est pas opérable au clavier.  
 
 ## <a name="audits-panel"></a>Panneau Audits  
 
-**L’outil Audits** vous devez exécuter une série de tests sur un site pour vérifier les problèmes courants liés aux performances, à l’accessibilité, au seO et à un certain nombre d’autres catégories.  
+**L’outil Audits** doit exécuter une série de tests sur un site pour vérifier les problèmes courants liés aux performances, à l’accessibilité, au seO et à un certain nombre d’autres catégories.  
 
 ### <a name="configure-and-run-an-audit"></a>Configurer et exécuter un audit  
 
 1.  Lorsque **l’outil Audits** est ouvert pour la première fois, le focus est placé sur le bouton Exécuter **l’audit** à la fin du formulaire.  Par défaut, le formulaire est configuré pour exécuter des audits pour chaque catégorie à l’aide de l’émulation mobile sur une connexion 3G simulée.  
-1.  Utilisez `Shift` + `Tab` ou revenir en mode Parcourir pour modifier les paramètres d’audit.  
+1.  Utilisez `Shift` + `Tab` ou naviguez vers l’arrière en mode Parcourir pour modifier les paramètres d’audit.  
 1.  Lorsque vous êtes prêt à exécuter l’audit, revenir au bouton **Exécuter l’audit** et sélectionnez `Enter` .  
 1.  Le focus se déplace dans une fenêtre modale avec un **bouton Annuler** qui vous permet de quitter l’audit.  Vous entendez peut-être une série d’écouteurs lorsque l’audit s’exécute et actualise la page plusieurs fois.  
 
 **Problèmes connus**  
 
-*   Les différentes sections du formulaire de configuration ne sont pas actuellement marquées avec un `fieldset` élément.  Il peut être plus facile de les parcourir en mode Parcourir pour déterminer quels contrôles sont associés à chaque section.  
+*   Les différentes sections du formulaire de configuration ne sont actuellement pas marquées avec un `fieldset` élément.  Il peut être plus facile de les parcourir en mode Parcourir pour déterminer quels contrôles sont associés à chaque section.  
 *   Il n’existe aucune annonce d’écouteur ou de région en direct lorsque l’audit est terminé.  En règle générale, la navigation vers les résultats prend environ 30 secondes.  L’utilisation du mode Parcourir peut être le moyen le plus simple d’atteindre les résultats.  
 
 ### <a name="navigate-the-audit-report"></a>Parcourir le rapport d’audit  
@@ -264,7 +264,7 @@ Pour exécuter un nouvel audit, quittez le rapport et recherchez le bouton Effec
 
 [MonorailChromiumIssues]: https://crbug.com "Problèmes - chromium - Monorail"  
 
-[W3CWaiAriaTablist]: https://www.w3.org/TR/wai-aria-1.1/#tablist "tablist (role) - Accessible Rich Internet Applications (ARIA-ARIA) 1.1 | W3C"  
+[W3CWaiAriaTablist]: https://www.w3.org/TR/wai-aria-1.1/#tablist "tablist (rôle) - Applications Internet enrichies accessibles (ARIA-ARIA) 1.1 | W3C"  
 [W3CWaiAriaTree]: https://www.w3.org/TR/wai-aria-1.1/#tree "tree (role) - Accessible Rich Internet Applications (ARIA-ARIA) 1.1 | W3C"  
 
 > [!NOTE]
@@ -272,7 +272,7 @@ Pour exécuter un nouvel audit, quittez le rapport et recherchez le bouton Effec
 > La page d’origine est [trouvée ici](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) et a été rédigé par [Rob Dodson][RobDodson] \(Contributor, Google Web Pdf\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

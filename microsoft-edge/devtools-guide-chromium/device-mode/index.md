@@ -29,7 +29,7 @@ ms.locfileid: "11564405"
    limitations under the License.  -->
 # <a name="emulate-mobile-devices-in-microsoft-edge-devtools"></a>Émuler des appareils mobiles dans Microsoft Edge DevTools  
 
-Utilisez **l’émulation de l’appareil** pour approximativement l’apparence et la réponse de votre page sur un appareil mobile.  Les Microsoft Edge DevTools fournissent un ensemble de fonctionnalités pour vous aider à émuler des appareils mobiles.  La collection inclut les fonctionnalités suivantes.  
+Utilisez **l’émulation d’appareil** pour approximativement l’apparence et la réponse de votre page sur un appareil mobile.  Les Microsoft Edge DevTools fournissent un ensemble de fonctionnalités pour vous aider à émuler des appareils mobiles.  La collection inclut les fonctionnalités suivantes.  
 
 *   [Simuler une vue mobile](#simulate-a-mobile-viewport)  
 *   [Limiter le réseau](#throttle-the-network-only)  
@@ -84,7 +84,7 @@ Utilisez la liste **Type d’appareil** pour simuler un appareil mobile ou un ap
    Liste **des types d’appareils**  
 :::image-end:::  
 
-Le tableau suivant décrit les différences entre les options de type d’appareil disponibles.  La colonne Méthode de rendu indique si Microsoft Edge rendu de la page en tant que port d’affichage mobile ou de bureau.  La colonne d’icône curseur fait référence au type de curseur qui s’affiche lorsque vous pointez sur la page.  La colonne Événements déclenchés indique si la page se déclenche ou s’il s’agit d’événements lorsque `touch` `click` vous interagissez avec la page.  
+Le tableau suivant décrit les différences entre les options de type d’appareil disponibles.  La colonne Méthode de rendu indique si Microsoft Edge rendu de la page en tant que port d’affichage mobile ou de bureau.  La colonne Icône du curseur fait référence au type de curseur qui s’affiche lorsque vous pointez sur la page.  La colonne Événements déclenchés indique si la page se déclenche ou s’il s’agit d’événements lorsque `touch` `click` vous interagissez avec la page.  
 
 | Option | Méthode de rendu | Icône curseur | Événements déclenchés |  
 |:--- |:--- |:--- |:--- |  
@@ -94,7 +94,7 @@ Le tableau suivant décrit les différences entre les options de type d’appare
 | Bureau \(tactile\) | Bureau | Cercle | interface tactile |  
 
 > [!NOTE]
-> Si la liste **Type d’appareil** n’est pas affichée, sélectionnez **Autres options**Ajouter un type  >  **d’appareil.**  
+> Si la liste **Type d’appareil** n’est pas affichée, sélectionnez **Autres options**Ajouter un  >  **type d’appareil.**  
 
 ### <a name="mobile-device-viewport-mode"></a>Mode d’affichage d’appareil mobile  
 
@@ -115,7 +115,7 @@ Testez votre page web en orientation paysage.
     :::image-end:::  
     
 > [!NOTE]
-> Le **bouton Pivoter** disparaît si la barre d’outils de **votre** appareil est étroite.  
+> Le **bouton Pivoter** disparaît si la barre d’outils **de votre** appareil est étroite.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="Barre d’outils Appareil" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
    Barre **d’outils Appareil**  
@@ -156,7 +156,7 @@ Si l’option d’appareil mobile dont vous avez besoin n’est pas incluse dans
        Choose **Edit**  
     :::image-end:::  
     
-1.  Choisissez **Ajouter un appareil personnalisé.**  
+1.  Choose **Add custom device**.  
 1.  Sur **les appareils émulés,** entrez un nom d’appareil, la largeur de l’écran et la hauteur de l’écran pour l’appareil personnalisé.  Les champs [Ratio de pixels de][MDNWindowDevicePixelRatio]l’appareil, chaîne [d’agent utilisateur][MDNUserAgent]et [type](#set-the-device-type) d’appareil sont facultatifs.  Par défaut, le champ De type d’appareil est **Mobile.**  
     
     :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Créer un appareil personnalisé" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
@@ -195,7 +195,7 @@ Les appareils mobiles ont souvent des contraintes de réseau et de processeur.  
 Limiter le réseau et le processeur.  
 
 1.  Choose **Throttle** list and change the preset to **Mid-tier mobile** or **Low-end mobile**.  
-    *   **Un appareil mobile de niveau intermédiaire** simule et limitation votre `fast 3G` processeur.  Elle est quatre fois plus lente que la normale.  
+    *   **Un appareil mobile intermédiaire** simule `fast 3G` et limitation votre processeur.  Elle est quatre fois plus lente que la normale.  
     *   **Un appareil mobile bas de gamme** simule et limitation votre `slow 3G` processeur.  Elle est six fois plus lente que la normale.  
     
 Toutes les limitations sont basées sur les fonctionnalités normales de votre ordinateur portable ou de votre bureau.  
@@ -227,10 +227,10 @@ Pour limiter l’UC uniquement et non le réseau, complétez les étapes suivant
 Pour limiter le réseau uniquement, complétez les étapes suivantes.
 
 1.  Choisissez **l’outil** Réseau.
-1.  Choisissez **En ligne**Fast  >  **3G** ou Slow **3G**.
+1.  Choose **Online**  >  **Fast 3G** or Slow **3G**.
     
-    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="Liste De limitation dans le panneau Réseau" lightbox="../media/device-mode-network-throttle.msft.png":::
-       Liste **De limitation** dans le panneau Réseau  
+    :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="Liste Limitation dans le panneau Réseau" lightbox="../media/device-mode-network-throttle.msft.png":::
+       Liste **Limitation** dans le panneau Réseau  
     :::image-end:::  
     
     Ou sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) **** `3G` **** **** pour ouvrir le menu commande, tapez et choisissez Activer la limitation 3G rapide ou Activer la limitation de 3G lente.  
@@ -280,7 +280,7 @@ Dans le **panneau Capteurs,** vous pouvez sélectionner l’un des emplacements 
 
 :::row:::
    :::column span="":::
-      Si votre page dépend des informations d’orientation d’un appareil mobile pour un rendu correct, ouvrez l’interface utilisateur d’orientation.  
+      Si votre page dépend des informations d’orientation d’un appareil mobile pour s’restituer correctement, ouvrez l’interface utilisateur d’orientation.  
 
       1.  Choose **Customize and control DevTools** \( `...` \) > More **tools**  >  **Sensors**.  
       
@@ -299,7 +299,7 @@ Dans le **panneau Capteurs,** vous pouvez sélectionner l’un des emplacements 
    :::column-end:::
 :::row-end:::  
 
-Dans le **panneau Capteurs,** vous pouvez sélectionner une orientation prédéfinë dans le menu déroulant **Orientation.**  Pour entrer votre propre orientation, choisissez **l’orientation**personnalisée, puis entrez vos propres valeurs [alpha,][MDNDeviceOrientaitonAlpha] [bêta][MDNDeviceOrientaitonBeta]et [gamma.][MDNDeviceOrientaitonGamma]  
+Dans le **panneau Capteurs,** vous pouvez sélectionner une orientation prédéfinë dans le menu **déroulant** Orientation.  Pour entrer votre propre orientation, choisissez **l’orientation**personnalisée, puis entrez vos propres valeurs [alpha,][MDNDeviceOrientaitonAlpha] [bêta][MDNDeviceOrientaitonBeta]et [gamma.][MDNDeviceOrientaitonGamma]  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="Options d’orientation sur le panneau Capteurs" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
     **Options d’orientation** sur le **panneau Capteurs**  
@@ -356,7 +356,7 @@ En regard de **l’agent utilisateur,** cochez la **case** Sélectionner automat
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/device-mode/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

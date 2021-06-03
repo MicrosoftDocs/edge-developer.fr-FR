@@ -21,7 +21,7 @@ Les extensions communiquent avec une application Win32 native installée sur l�
 Pour acquérir l’extension et l’hôte d’application native, vous avez deux modèles de distribution.  
 
 *   Rassemblez votre extension et l’hôte.  Lorsqu’un utilisateur installe le package, l’extension et l’hôte sont installés.  
-*   Installez votre extension à l’aide du magasin [de modules][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]de microsoft Edge et votre extension invite les utilisateurs à installer l’hôte.  
+*   Installez votre extension à [l’Microsoft Edge du][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]magasin d’extensions et votre extension invite les utilisateurs à installer l’hôte.  
 
 Pour créer votre extension pour envoyer et recevoir des messages avec des hôtes d’application natifs, complétez les étapes suivantes.  
 
@@ -116,10 +116,10 @@ Le fichier manifeste hôte doit être un fichier JSON valide qui contient les cl
       
       Spécifie le chemin d’accès au fichier binaire hôte de messagerie native.  
       
-      *   Sur les appareils Windows, vous pouvez utiliser des chemins d’accès relatifs au répertoire qui contient le fichier manifeste.  
+      *   Sur Windows, vous pouvez utiliser des chemins d’accès relatifs au répertoire qui contient le fichier manifeste.  
       *   Sur macOS et Linux, le chemin d’accès doit être absolu.  
           
-      Le processus hôte commence par le répertoire actuel qui contient le fichier binaire hôte.  Par exemple \(Windows\), si le paramètre est paramétrage, le fichier binaire est démarré à l’aide du répertoire `C:\App\nm_host.exe` actuel \( `C:\App\` \).  
+      Le processus hôte commence par le répertoire actuel qui contient le fichier binaire hôte.  Par exemple, \(Windows\), si le paramètre est paramétrable, le fichier binaire est démarré à l’aide du répertoire `C:\App\nm_host.exe` actuel \( `C:\App\` \).  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -131,7 +131,7 @@ Le fichier manifeste hôte doit être un fichier JSON valide qui contient les cl
    :::column span="3":::
       ---  
       
-      Spécifie le type de l’interface utilisée pour communiquer avec l’hôte de messagerie natif.  La valeur indique à Microsoft Edge d’utiliser `stdin` et de communiquer avec `stdout` l’hôte.  
+      Spécifie le type de l’interface utilisée pour communiquer avec l’hôte de messagerie natif.  La valeur indique Microsoft Edge utiliser `stdin` et communiquer avec `stdout` l’hôte.  
       La seule valeur acceptable est `stdio` .  
    :::column-end:::
 :::row-end:::  
@@ -161,11 +161,11 @@ Pour recharger une version de votre extension pendant le développement et `micr
 1.  Accédez à `edge://extensions` la page et vérifiez que votre extension est répertoriée.  
 1.  Copiez la clé à partir `microsoft_catalog_extension_id` de \(ID\) à partir de la liste des extensions sur la page.  
     
-Lorsque vous êtes prêt à distribuer votre extension aux utilisateurs, publiez-la dans le magasin de modules extensions Microsoft Edge.  L’ID d’extension de l’extension publiée peut différer de l’ID utilisé lors du chargement de votre extension.  Si l’ID a changé, mettez à jour dans le fichier manifeste hôte avec `allowed_origins` l’ID de votre extension publiée.  
+Lorsque vous êtes prêt à distribuer votre extension aux utilisateurs, publiez-la dans le magasin Microsoft Edge de modules.  L’ID d’extension de l’extension publiée peut différer de l’ID utilisé lors du chargement de votre extension.  Si l’ID a changé, mettez à jour dans le fichier manifeste hôte avec `allowed_origins` l’ID de votre extension publiée.  
 
 ## <a name="step-3---copy-the-native-messaging-host-manifest-file-to-your-system"></a>Étape 3 : copier le fichier manifeste de l’hôte de messagerie native dans votre système  
 
-La dernière étape consiste à copier le fichier manifeste de l’hôte de messagerie native sur votre ordinateur et à s’assurer que le fichier manifeste est correctement configuré.  Pour vous assurer que votre fichier manifeste est placé à l’emplacement attendu, complétez les actions suivantes.  L’emplacement varie en fonction de la plateforme.
+La dernière étape consiste à copier le fichier manifeste de l’hôte de messagerie native sur votre ordinateur et à s’assurer que le fichier manifeste est correctement configuré.  Pour vous assurer que votre fichier manifeste est placé à l’emplacement attendu, complétez les actions suivantes.  L’emplacement varie selon la plateforme.
 
 > [!NOTE]
 > Veillez à fournir des autorisations de lecture sur le fichier manifeste et à exécuter les autorisations sur l’runtime hôte.  
@@ -204,7 +204,7 @@ Pour ajouter une clé de Registre au répertoire avec la clé de manifeste, effe
         
     1.  Exécutez le `.reg` fichier.  
         
-Microsoft Edge interroge la `HKEY_CURRENT_USER` clé racine suivie de `HKEY_LOCAL_MACHINE` .  Dans les deux clés, le Registre 32 bits est recherché en premier, puis le Registre 64 bits est recherché pour identifier les hôtes de messagerie natifs.  La clé de Registre spécifie l’emplacement du manifeste d’hôte de messagerie native.  Si les entrées de Registre de Microsoft Edge n’ont pas l’emplacement du manifeste hôte, les emplacements de Registre Chromium et Chrome sont utilisés comme options de base.  Si Microsoft Edge trouve la clé de Registre à l’un des emplacements répertoriés précédemment, il n’interroge pas les emplacements répertoriés dans l’extrait de code suivant.  Si vous exécutez votre fichier créé dans le cadre d’un script de commandes, veillez à l’exécuter à l’aide d’une `.reg` invite de commandes d’administrateur.
+Microsoft Edge interroge la `HKEY_CURRENT_USER` clé racine suivie de `HKEY_LOCAL_MACHINE` .  Dans les deux clés, le Registre 32 bits est recherché en premier, puis le Registre 64 bits est recherché pour identifier les hôtes de messagerie natifs.  La clé de Registre spécifie l’emplacement du manifeste d’hôte de messagerie native.  Si les entrées de Registre pour Microsoft Edge n’ont pas l’emplacement du manifeste hôte, les emplacements de Registre Chromium et Chrome sont utilisés comme options de base.  Si Microsoft Edge trouve la clé de Registre à l’un des emplacements répertoriés précédemment, il n’interroge pas les emplacements répertoriés dans l’extrait de code suivant.  Si vous exécutez votre fichier créé dans le cadre d’un script de commandes, veillez à l’exécuter à l’aide d’une `.reg` invite de commandes d’administrateur.
 
 La liste suivante est l’ordre de recherche pour les emplacements du Registre.  
 
@@ -225,7 +225,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 ```  
  
 > [!NOTE] 
-> Si vous avez des extensions sur les extensions Microsoft Edge et chrome Webstore, vous devez ajouter les ID d’extension correspondant aux deux magasins dans le fichier manifeste de l’hôte, car seul le manifeste hôte correspondant au premier emplacement de Registre trouvé est `allowed_origins` lu.  
+> Si vous avez des extensions sur les extensions Microsoft Edge et chrome Webstore, vous devez ajouter les ID d’extension correspondant aux deux magasins dans le fichier manifeste hôte, car seul le manifeste hôte correspondant au premier emplacement de Registre trouvé est `allowed_origins` lu.  
 
 ### [<a name="macos"></a>macOS](#tab/macos/)  
 
@@ -275,14 +275,14 @@ Pour stocker le fichier manifeste, effectuer l’une des actions suivantes.
 
 <!-- links -->  
 
-[MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]: https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home "Microsoft Edge Add-ons"
+[MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]: https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home "Microsoft Edge Modules de modules"
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
 > La page d’origine se trouve [ici.](https://developer.chrome.com/extensions/nativeMessaging)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

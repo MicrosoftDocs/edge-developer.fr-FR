@@ -31,7 +31,7 @@ ms.locfileid: "11565014"
 
 Découvrez comment enregistrer des instantanés de tas à l’Microsoft Edge profileur de tas DevTools et rechercher des fuites de mémoire.  
 
-Le Microsoft Edge profileur de tas DevTools affiche la distribution de mémoire par les objets JavaScript et les nodes DOM associés de votre page.  Utilisez-le pour prendre des instantanés de tas JavaScript \(tas JS\), analyser des graphiques de mémoire, comparer des captures instantanées et rechercher des fuites de mémoire.  Accédez à [Objets en conservant l’arborescence][DevtoolsMemoryProblems101ObjectsRetainingTree].  
+Le Microsoft Edge profileur de tas DevTools affiche la distribution de mémoire par les objets JavaScript et les nodes DOM associés de votre page.  Utilisez-le pour prendre des instantanés de tas JavaScript \(tas JS\), analyser des graphiques de mémoire, comparer des captures instantanées et rechercher des fuites de mémoire.  Accédez à [Objets conservant l’arborescence][DevtoolsMemoryProblems101ObjectsRetainingTree].  
 
 ## <a name="take-a-snapshot"></a>Prendre une capture instantanée  
 
@@ -41,7 +41,7 @@ On the **Memory** panel, choose **Take snapshot,** then choose **Start**.  Vous 
    Choisir le type de profilage  
 :::image-end:::  
 
-**Les captures instantanées** sont initialement stockées dans la mémoire du processus de rendu.  Les captures instantanées sont transférées vers DevTools à la demande, lorsque vous choisissez sur l’icône de capture instantanée pour l’afficher.  
+**Les captures instantanées** sont initialement stockées dans la mémoire du processus de rendu.  Les captures instantanées sont transférées vers DevTools à la demande, lorsque vous choisissez l’icône de capture instantanée pour l’afficher.  
 
 Une fois que la capture instantanée a été chargée dans DevTools et qu’elle a été l’objet d’une recherche, le nombre en dessous du titre de la capture instantanée apparaît et indique la taille totale des objets [JavaScript accessibles.][DevtoolsMemoryProblems101ObjectSizes]  
 
@@ -79,8 +79,8 @@ Afficher des captures instantanées sous différentes perspectives pour différe
 
 Pour basculer entre les vues, utilisez le sélecteur en haut de l’affichage.  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Sélecteur de vues de commutateur" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
-   Sélecteur de vues de commutateur  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Sélecteur d’affichages de commutateur" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
+   Sélecteur d’affichages de commutateur  
 :::image-end:::  
 
 > [!NOTE]
@@ -117,7 +117,7 @@ N’oubliez pas que les objets jaunes ont des références JavaScript et que les
 
 | Constructor \(group\) entry | Description |  
 |:--- |:--- |  
-| **\(global, propriété\)** | Objets intermédiaires entre un objet global \(like \) et un `window` objet référencé par celui-ci.  Si un objet est créé à l’aide d’un constructeur et qu’il est conservé par un objet global, le chemin de rétention peut `Person` être représenté par `[global] > \(global property\) > Person` .  Cela contraste avec la norme, où les objets se référencent directement les uns les autres.  Des objets intermédiaires existent pour des raisons de performances.  Les globales sont modifiées régulièrement et les optimisations de l’accès aux propriétés s’appliquent bien aux objets non globaux qui ne s’appliquent pas aux objets globaux.  |  
+| **\(global, propriété\)** | Objets intermédiaires entre un objet global \(like \) et `window` un objet référencé par celui-ci.  Si un objet est créé à l’aide d’un constructeur et qu’il est conservé par un objet global, le chemin de rétention peut `Person` être représenté par `[global] > \(global property\) > Person` .  Cela contraste avec la norme, où les objets se référencent directement les uns les autres.  Des objets intermédiaires existent pour des raisons de performances.  Les globales sont modifiées régulièrement et les optimisations de l’accès aux propriétés s’appliquent bien aux objets non globaux qui ne s’appliquent pas aux objets globaux.  |  
 | **\(racines\)** | Les entrées racine dans l’arborescence de rétention sont les entités qui ont des références à l’objet sélectionné.  Les entrées peuvent également être des références créées par le moteur à des fins spécifiques au moteur.  Le moteur possède des caches qui référencent des objets, mais toutes ces références sont faibles et n’empêchent pas la collecte d’un objet, étant donné qu’il n’existe aucune référence vraiment forte.  |  
 | **\(fermeture\)** | Nombre de références à un groupe d’objets par le biais de fermetures de fonctions.  |  
 | **\(array, string, number, regexp\)** | Liste des types d’objets avec des propriétés qui font référence à une expression array, string, number ou régulière.  |  
@@ -145,7 +145,7 @@ Dans **l’affichage** Comparaison, la différence entre deux captures instantan
 
 ### <a name="containment-view"></a>Affichage d’endiguement  
 
-La **vue Containment** est essentiellement une « vue d’enfant » de la structure des objets de votre application.  Il vous permet de regarder dans les fermetures de fonction, d’observer les objets internes de la machine virtuelle \(VM\) qui, ensemble, forment vos objets JavaScript et de comprendre la quantité de mémoire que votre application utilise à un niveau très faible.  
+La **vue Containment** est essentiellement une « vue d’œil d’enfant » de la structure des objets de votre application.  Il vous permet de regarder dans les fermetures de fonction, d’observer les objets internes de la machine virtuelle \(VM\) qui, ensemble, forment vos objets JavaScript et de comprendre la quantité de mémoire que votre application utilise à un niveau très faible.  
 
 | Points d’entrée d’affichage de contenu | Description |  
 |:--- |:--- |  
@@ -200,7 +200,7 @@ Les propriétés et les valeurs de propriétés des objets ont différents types
 
 | Type de propriété | Description |  
 |:--- |:--- |  
-| **a: property** | Propriété normale avec un nom, accessible via l’opérateur `.` \(dot\) ou via `[` `]` la notation \(brackets\), par exemple `["foo bar"]` .  |  
+| **a: property** | Une propriété normale avec un nom, accessible via l’opérateur `.` \(dot\) ou via `[` `]` la notation \(brackets\), par exemple `["foo bar"]` .  |  
 | **0 : élément** | Propriété normale avec un index numérique, accessible via `[` `]` la notation \(brackets\).  |  
 | **a: context var** |  Variable dans un contexte de fonction, accessible par le nom de la variable à partir de l’intérieur d’une fermeture de fonction.  |  
 | **a: system prop** | Propriété ajoutée par la VM JavaScript, non accessible à partir du code JavaScript.  |  
@@ -209,7 +209,7 @@ Les objets désignés comme `System` n’ont pas de type JavaScript correspondan
 
 ## <a name="find-a-specific-object"></a>Rechercher un objet spécifique  
 
-Pour rechercher un objet dans le tas collecté, vous pouvez effectuer une recherche à l’aide de `Ctrl` + `F` l’ID d’objet et lui donner son ID.  
+Pour trouver un objet dans le tas collecté, vous pouvez effectuer une recherche à l’aide de `Ctrl` + `F` l’ID d’objet et l’y donner.  
 
 ## <a name="uncover-dom-leaks"></a>Découvrir les fuites DOM  
 
@@ -279,7 +279,7 @@ Pour en savoir plus sur les fuites DOM et les principes de base de l’analyse d
 > La page d’origine se trouve [ici](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) et est co-auteure par [Meggin Kearney][MegginKearney] \(Technical Writer\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

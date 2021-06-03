@@ -132,8 +132,8 @@ Pour passer en revue les erreurs et les avertissements dans votre manifeste d’
 
 À partir [Microsoft Edge version 81,][DevtoolsWhatsNew202001DevtoolsUsingDevtoolsInOtherLanguages]Microsoft Edge DevTools s’affiche dans votre propre langue.  De nombreux développeurs utilisent d’autres outils de développement tels que StackOverflow et Visual Studio Code dans leur langue native, et pas seulement en anglais.  L Microsoft Edge’équipe DevTools, l’équipe Chrome DevTools et l’équipe Google Chrome ont travaillé pour offrir la même expérience dans tous les navigateurs basés sur Chromium.  Pour plus d’informations sur l’utilisation de DevTools dans votre langue, accédez à Modifier les paramètres de langue [de DevTools.][DevtoolsCustomizeLocalization]  Pour plus d’informations sur la collaboration sur cette fonctionnalité dans le projet open source Chromium, accédez à [1136655][CR1136655].  
 
-:::image type="complex" source="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png" alt-text="Microsoft Edge navigateur et DevTools en japonais" lightbox="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png":::
-   Microsoft Edge navigateur et DevTools en japonais  
+:::image type="complex" source="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png" alt-text="Microsoft Edge navigateur et DevTools sont définies sur japonais" lightbox="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png":::
+   Microsoft Edge navigateur et DevTools sont définies sur japonais  
 :::image-end:::  
 
 ## <a name="use-the-keyboard-to-navigate-to-css-variables"></a>Utiliser le clavier pour accéder aux variables CSS  
@@ -141,7 +141,7 @@ Pour passer en revue les erreurs et les avertissements dans votre manifeste d’
 <!--  Title: Navigate to CSS variables with the arrow keys  -->  
 <!--  Subtitle: In the Styles pane, use the arrow keys to choose CSS variables.  Select `Enter` to see the variable definition.  -->  
 
-À partir [Microsoft Edge version 88,][DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]le volet **Styles** affiche les variables CSS et fournit un lien directement vers la définition de chaque variable.  Dans Microsoft Edge version 91 ou ultérieure, vous pouvez utiliser les touches de direction pour accéder facilement aux variables CSS.  Pour ouvrir la définition dans le volet **Styles,** pointez sur une variable, puis sélectionnez `Enter` .  Pour plus d’informations sur les variables CSS, accédez à [l’utilisation de propriétés personnalisées (variables) CSS.][MdnDocsWebCssUsingCssCustomProperties]  Pour passer en revue les mises à jour en temps réel de cette fonctionnalité dans le projet open source Chromium, accédez à Problème [1187735][CR1187735].  
+À partir [Microsoft Edge version 88,][DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]le volet **Styles** affiche les variables CSS et fournit un lien directement vers la définition de chaque variable.  Dans Microsoft Edge version 91 ou ultérieure, vous pouvez utiliser les touches de direction pour accéder facilement aux variables CSS.  Pour ouvrir la définition dans le volet **Styles,** pointez sur une variable, puis sélectionnez `Enter` .  Pour plus d’informations sur les variables CSS, accédez à [l’utilisation de propriétés personnalisées CSS (variables).][MdnDocsWebCssUsingCssCustomProperties]  Pour passer en revue les mises à jour en temps réel de cette fonctionnalité dans le projet open source Chromium, accédez à Problème [1187735][CR1187735].  
 
 :::image type="complex" source="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png" alt-text="Variable CSS --theme-body-background mise en évidence dans le volet Styles" lightbox="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png":::
    Variable `--theme-body-background` CSS mise en évidence dans le **volet Styles**  
@@ -163,7 +163,7 @@ Pour passer en revue les erreurs et les avertissements dans votre manifeste d’
 <!-- Title: Microsoft Edge DevTools for Visual Studio version 1.1.7  -->  
 <!-- Subtitle: Increased target closure reliability, automatically update the side panel, new contextual menu for settings and Changelog, and more. -->  
 
-Les [outils][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] Microsoft Edge pour Visual Studio Code version 1.1.7 fournissent les outils DevTools de [Microsoft Edge version 88.][DevtoolsWhatsNew202011Devtools]  Cette extension prend désormais en charge ARM et ne dépend plus [du débogger pour Microsoft Edge][VisualstudioMarketplaceMsjsdiagDebuggerForEdge] extension.  La version 1.1.7 inclut les correctifs et améliorations de bogue suivants.  
+Les [outils][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] Microsoft Edge pour Visual Studio Code version 1.1.7 fournissent les outils DevTools de [Microsoft Edge version 88.][DevtoolsWhatsNew202011Devtools]  Cette extension prend désormais en charge ARM et ne dépend plus du débogger [pour Microsoft Edge][VisualstudioMarketplaceMsjsdiagDebuggerForEdge] extension.  La version 1.1.7 inclut les correctifs et améliorations de bogue suivants.  
 
 *   Mise à jour de la fiabilité de la fermeture cible.  
 *   Mise à jour du panneau latéral pour qu’il soit actualisé automatiquement lorsque vous déboguer des cibles créées ou détruites.  
@@ -178,7 +178,7 @@ Pour mettre à jour manuellement la version 1.1.7, accédez à Mettre à jour [u
 
 ### <a name="visualize-css-scroll-snap"></a>Afficher l’achemin de défilement CSS  
 
-Vous pouvez maintenant faire bascule le badge dans l’outil Elements pour inspecter l’alignement de l’alignement en `scroll-snap` défilement CSS. ****  Lorsqu’un élément HTML de votre page web s’y est appliqué, un badge s’affiche à côté de `scroll-snap-type` `scroll-snap` celui-ci dans **l’outil Éléments.**  Choisissez le badge pour activer \(ou désactiver\) l’affichage d’une superposition d’un défilement sur la page web.  Pour consulter un exemple de page web, [accédez à Scroll Ancrer Demo][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml].  Dans l’exemple, les points s’affichent sur les bords en snap.  Le port de défilement a un plan plein tandis que les éléments d’a snap ont des tirets.  Le remplissage de défilement est rempli en vert tandis que la marge de défilement est remplie en orange.  Pour passer en revue l’historique de cette fonctionnalité dans Chromium projet open source, accédez au problème [862450][CR862450].  
+Vous pouvez maintenant faire bascule le badge dans l’outil Elements pour inspecter l’alignement de l’alignement en `scroll-snap` défilement CSS. ****  Lorsqu’un élément HTML de votre page web s’y est appliqué, un badge s’affiche à côté de `scroll-snap-type` `scroll-snap` celui-ci dans **l’outil Elements.**  Choisissez le badge pour activer \(ou désactiver\) l’affichage d’une superposition d’un défilement sur la page web.  Pour consulter un exemple de page web, [accédez à Scroll Ancrer Demo][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml].  Dans l’exemple, les points s’affichent sur les bords en snap.  Le port de défilement a un plan plein tandis que les éléments d’a snap ont des tirets.  Le remplissage de défilement est rempli en vert tandis que la marge de défilement est remplie en orange.  Pour passer en revue l’historique de cette fonctionnalité dans Chromium projet open source, accédez au problème [862450][CR862450].  
 
 :::image type="complex" source="../../media/2021/04/elements-scroll-snap-highlight.msft.png" alt-text="CSS scroll-snap" lightbox="../../media/2021/04/elements-scroll-snap-highlight.msft.png":::
    CSS scroll-snap  
@@ -431,8 +431,8 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Bogues Chromium"  
 [CR11374]: https://crbug.com/v8/11374 "Problème 11374 : implémenter la vérification de marque d’une marque d’une marque pour les champs privés"  
 [CR761019]: https://crbug.com/761019 "Problème 761019 : « Passer au symbole » rate la première fonction et préfère une correspondance pire si elle contient tous les caractères tapés"  
-[CR862450]: https://crbug.com/862450 "Problème 862450 : [css-scroll-snap] Envisagez d’ajouter une fonctionnalité Devtools pour l’snap de défilement css"  
-[CR979000]: https://crbug.com/979000 "Problème 979000 : les cartes source avec les chemins de sources entrent en conflit ne fonctionnent pas."  
+[CR862450]: https://crbug.com/862450 "Problème 862450 : [css-scroll-snap] Envisagez d’ajouter la fonctionnalité Devtools pour l’snap de défilement css"  
+[CR979000]: https://crbug.com/979000 "Problème 979000 : les cartes sources avec des chemins d’accès aux sources entrent en conflit ne fonctionnent pas."  
 [CR1066604]: https://crbug.com/1066604 "Problème 1066604 : DevTools : voir les détails sur l’installation et l’activation des événements par ServiceWorker | Chromium bogues"  
 <!--  [CR1066772]: https://crbug.com/1066772 "Issue 1066772: "  locked  -->  
 [CR1076198]: https://crbug.com/1076198 «Problème 1076198: [Feature Request] Jump to computed property from `styles` tab»  

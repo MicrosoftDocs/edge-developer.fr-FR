@@ -35,7 +35,7 @@ Veillez à installer la liste des conditions préalables suivante avant de pours
 Commencez par un projet de bureau de base qui contient une seule fenêtre principale.  
 
 > [!IMPORTANT]
-> Pour mieux concentrer la procédure pas à pas, utilisez l’exemple de code modifié de la procédure pas à pas : créer une application de bureau Windows classique [(C++)][CppWindowsWalkthroughCreatingDesktopApplication] pour votre exemple d’application.  Pour télécharger l’exemple modifié et commencer, accédez [à WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].  
+> Pour mieux concentrer la procédure pas à pas, utilisez l’exemple de code modifié de la procédure pas à pas : créer une application de bureau Windows classique [(C++)][CppWindowsWalkthroughCreatingDesktopApplication] pour votre exemple d’application.  Pour télécharger l’exemple modifié et commencer, accédez à [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].  
 
 1.  Dans Visual Studio, ouvrez `WebView2GettingStarted.sln` .  
     Si vous utilisez une version antérieure de Visual Studio, pointez sur le projet **WebView2GettingStarted,** ouvrez le menu contextuel \(clic droit\), puis choisissez **Propriétés.**  Sous **Propriétés**de configuration générales, modifiez Windows version du SDK et du jeu d’outils de plateforme pour utiliser le  >  **** SDK Win10 et Visual Studio’outils disponibles. **** ****  
@@ -220,7 +220,7 @@ webviewWindow->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEv
 Vous pouvez utiliser des applications hôtes pour injecter du code JavaScript dans des contrôles WebView2 lors de l’utilisation.  Vous pouvez tâcher WebView pour exécuter du javaScript arbitraire ou ajouter des scripts d’initialisation.  Le javaScript injecté s’applique à tous les nouveaux documents de niveau supérieur et aux images enfants jusqu’à ce que le JavaScript soit supprimé.  Le javaScript injecté est exécuté avec un minutage spécifique.  
 
 *   Exécutez-le après la création de l’objet global.  
-*   Exécutez-le avant d’exécuter tout autre script inclus dans le document HTML.  
+*   Exécutez-le avant tout autre script inclus dans le document HTML.  
     
 Copiez l’extrait de code suivant et collez-le dans `HelloWebView.cpp` .  
 
@@ -248,7 +248,7 @@ L’hôte et le contenu web peuvent également communiquer entre eux par le biai
 Par exemple, pour comprendre le mécanisme, les étapes suivantes se produisent lorsque vous essayez d’afficher l’URL du document dans WebView.  
 
 1.  L’hôte inscrit un handler pour renvoyer le message reçu au contenu web  
-1.  L’hôte injecte un script au contenu web qui inscrit un handler pour imprimer un message à partir de l’hôte  
+1.  L’hôte injecte un script au contenu web qui inscrit un handler pour imprimer le message à partir de l’hôte  
 1.  L’hôte injecte un script au contenu web qui publie l’URL sur l’hôte  
 1.  Le handler de l’hôte est déclenché et renvoie le message \(l’URL\) au contenu web  
 1.  Le handler du contenu web est déclenché et imprime le message à partir de l’hôte \(l’URL\)  
@@ -295,19 +295,19 @@ Pour obtenir des fonctionnalités WebView2 supplémentaires qui ne sont pas couv
 *   Pour un exemple d’application créé à l’aide de WebView2, accédez [à WebView2Browser][GithubMicrosoftedgeWebview2browser].  
 *   Pour plus d’informations sur l’API WebView2, accédez à la référence [d’API.][Webview2ReferenceWin32]  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe web Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
 [WV2BestPractices]: ../concepts/developer-guide.md "Meilleures pratiques en matière de développement WebView2 | Documents Microsoft"  
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Développeur Microsoft Edge"  
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 | Microsoft Edge Développeur"  
 
 [Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "Référence WebView2 Win32 C++ | Documents Microsoft"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Événements de navigation | Documents Microsoft"  
 
-[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Bibliothèque de modèles C++ Windows Runtime (WRL) | Documents Microsoft"  
+[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Windows Modèles WRL (Runtime C++ Template Library) | Documents Microsoft"  
 [CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true "Walkthrough: Create a traditional Windows Desktop application (C++) | Documents Microsoft"  
 
 [GithubMicrosoftedgeWebview2browser]: https://github.com/MicrosoftEdge/WebView2Browser "WebView2Browser - MicrosoftEdge/WebView2Browser | GitHub"  
@@ -319,7 +319,7 @@ Pour obtenir des fonctionnalités WebView2 supplémentaires qui ne sont pas couv
 [GithubMicrosoftedgeWebview2samplesApisample]: https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md "Exemple d’API WebView2 - MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebview2samplesGettingStartedGuide]: https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
 
-[GithubMicrosoftWilMain]: https://github.com/Microsoft/wil "Bibliothèques d’implémentation Windows (WIL) : microsoft/wil | GitHub"  
+[GithubMicrosoftWilMain]: https://github.com/Microsoft/wil "Windows Bibliothèques d’implémentation (WIL) : microsoft/wil | GitHub"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Télécharger les canaux Microsoft Edge Insider"  
 

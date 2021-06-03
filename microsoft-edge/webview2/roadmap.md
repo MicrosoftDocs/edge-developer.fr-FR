@@ -1,6 +1,6 @@
 ---
 description: En savoir plus sur les étapes suivantes pour WebView2
-title: Feuille de route pour Microsoft Edge WebView 2
+title: Feuille de route Microsoft Edge WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
@@ -15,7 +15,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/06/2021
 ms.locfileid: "11398412"
 ---
-# <a name="microsoft-edge-webview2-roadmap"></a>Feuille de route Microsoft Edge WebView2  
+# <a name="microsoft-edge-webview2-roadmap"></a>Microsoft Edge Feuille de route WebView2  
 
 > [!NOTE]
 > Last Updated: November 2020  
@@ -58,11 +58,11 @@ L’équipe WebView2 planifie les efforts majeurs suivants pour les futures mise
 
 ## <a name="webview2-runtime-and-installer"></a>Runtime et programme d’installation WebView2  
 
-[Un modèle de distribution persistant][ConceptDistributionEvergreenModel] vous permet de cibler ou d’installer le runtime WebView2 sur l’ordinateur de votre utilisateur.  Le programme d’installation et le runtime WebView2 persistants ont atteint la disponibilité générale \(GA\).  
+[Un modèle de distribution persistant][ConceptDistributionEvergreenModel] vous permet de cibler ou d’installer le runtime WebView2 sur l’ordinateur de votre utilisateur.  Le runtime et le programme d’installation WebView2 persistants ont atteint la disponibilité générale \(GA\).  
 
 ## <a name="fixed-version"></a>Version fixe  
 
-[Le modèle de distribution de version][ConceptsDistributionFixedVersionModel] fixe vous permet de mettre en package les binaires Microsoft Edge à l’intérieur de votre application native.  La version fixe a atteint la disponibilité générale \(GA\).  
+[Le modèle de distribution de version][ConceptsDistributionFixedVersionModel] fixe vous permet de mettre en package les Microsoft Edge binaires à l’intérieur de votre application native.  La version fixe a atteint la disponibilité générale \(GA\).  
 
 ## <a name="general-availability"></a>Disponibilité générale  
 
@@ -76,7 +76,7 @@ Le SDK .NET a atteint la ga.
 
 ### <a name="winui-30"></a>WinUI 3.0  
 
-Vous pouvez accéder à WebView2 dans vos applications UWP à l’aide de [Win UI 3.0,][UwpToolkitsWinui3Index]actuellement en alpha.  Pour plus d’informations sur la mise à jour, accédez à la feuille de route de la bibliothèque [d’interface utilisateur Windows.][GithubMicrosoftUiXamlRoadmap]  
+Vous pouvez accéder à WebView2 dans vos applications UWP à l’aide de [Win UI 3.0,][UwpToolkitsWinui3Index]actuellement en alpha.  Pour plus d’informations sur la tenue à jour, accédez à Windows feuille de route de la [bibliothèque d’interface utilisateur.][GithubMicrosoftUiXamlRoadmap]  
 
 <!-- links -->  
 
@@ -87,4 +87,4 @@ Vous pouvez accéder à WebView2 dans vos applications UWP à l’aide de [Win U
 
 [GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "Commentaires WebView - MicrosoftEdge/WebViewFeedback | GitHub"  
 
-[GithubMicrosoftUiXamlRoadmap]: https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md "Feuille de route de la bibliothèque d’interface utilisateur Windows - Microsoft/microsoft-ui-xaml | GitHub"  
+[GithubMicrosoftUiXamlRoadmap]: https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md "Windows Feuille de route de la bibliothèque d’interface utilisateur : microsoft/microsoft-ui-xaml | GitHub"  

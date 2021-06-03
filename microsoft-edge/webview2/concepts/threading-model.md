@@ -26,13 +26,13 @@ ms.locfileid: "11535607"
    :::column-end:::
 :::row-end:::  
 
-Le contrôle WebView2 est basé sur le modèle com [(Component Object Model)][WindowsWin32ComTheComponentObjectModel] et doit s’exécuter sur un thread [STA (Single Threaded Caser).][WindowsWin32ComSingleThreadedApartments]  
+Le contrôle WebView2 est basé sur le modèle com [(Component Object Model)][WindowsWin32ComTheComponentObjectModel] et doit s’exécuter sur un thread [STA (Single Threaded Threaded Thread).][WindowsWin32ComSingleThreadedApartments]  
 
 ## <a name="thread-safety"></a>Sécurité des threads  
 
 WebView2 doit être créé sur un thread d’interface utilisateur.  Plus précisément, un fil de discussion avec un message.  Tous les rappels se produisent sur ce thread et les requêtes dans Le WebView2 doivent être faites sur ce thread.  Il n’est pas sûr d’utiliser WebView2 à partir d’un autre thread.  
 
-La seule exception concerne la `Content` propriété de `CoreWebView2WebResourceRequest` .  Le flux `Content` de propriété est lu à partir d’un thread d’arrière-plan.  Le flux doit être agile ou être créé à partir d’un thread STA d’arrière-plan pour empêcher la dégradation des performances sur le thread d’interface utilisateur.  
+La seule exception concerne la `Content` propriété de `CoreWebView2WebResourceRequest` .  Le `Content` flux de propriété est lu à partir d’un thread d’arrière-plan.  Le flux doit être agile ou être créé à partir d’un thread STA d’arrière-plan pour empêcher la dégradation des performances sur le thread d’interface utilisateur.  
 
 ## <a name="re-entrancy"></a>Ré-entrancy  
 
@@ -67,21 +67,21 @@ private async void Button_Click(object sender, EventArgs e)
 }
 ```  
 
-## <a name="see-also"></a>Voir également  
+## <a name="see-also"></a>Articles associés  
 
-*   Pour commencer à utiliser WebView2, accédez aux guides de mise en page [WebView2.][Webview2IndexGetStarted]  
-*   Pour obtenir un exemple complet des fonctionnalités WebView2, accédez au référentiel [WebView2Samples][GithubMicrosoftedgeWebview2samples] sur GitHub.  
+*   Pour commencer à utiliser WebView2, accédez aux guides de Prise en main [WebView2.][Webview2IndexGetStarted]  
+*   Pour obtenir un exemple complet des fonctionnalités WebView2, accédez au [repo WebView2Samples][GithubMicrosoftedgeWebview2samples] GitHub.  
 *   Pour plus d’informations sur les API WebView2, accédez à la référence [d’API.][DotnetApiMicrosoftWebWebview2WpfWebview2]  
 *   Pour plus d’informations sur WebView2, accédez [à Ressources WebView2.][Webview2IndexNextSteps]  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe web Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
 [Webview2IndexGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Documents Microsoft"  
-[Webview2IndexNextSteps]: ../index.md#next-steps "Étapes suivantes : présentation de Microsoft Edge WebView2 | Documents Microsoft"  
+[Webview2IndexNextSteps]: ../index.md#next-steps "Étapes suivantes : présentation Microsoft Edge WebView2 | Documents Microsoft"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "Classe WebView2 | Documents Microsoft"  
 

@@ -1,6 +1,6 @@
 ---
-description: Mise à jour du protocole Microsoft Edge DevTools
-title: Mise à jour du protocole Microsoft Edge DevTools
+description: Mise à jour du Microsoft Edge DevTools
+title: Microsoft Edge Mise à jour du protocole DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/06/2021
@@ -13,20 +13,20 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/07/2021
 ms.locfileid: "11480159"
 ---
-# <a name="microsoft-edge-chromium-devtools-protocol-overview"></a>Vue d’ensemble du protocole DevTools Microsoft Edge (Chromium)  
+# <a name="microsoft-edge-chromium-devtools-protocol-overview"></a>Microsoft Edge (Chromium) DevTools Protocol  
 
-Avec la transition de la plateforme web sous-jacente de Microsoft Edge vers Chromium, le protocole [DevTools de Microsoft Edge (EdgeHTML)](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) ne reçoit aucune mise à jour supplémentaire.  Le protocole Microsoft Edge \(Chromium\) DevTools correspondra aux API du protocole Chrome DevTools à l’avenir.  
+Avec le passage de la plateforme web sous-jacente Microsoft Edge à Chromium, le protocole [Microsoft Edge (EdgeHTML) DevTools](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) ne reçoit aucune mise à jour supplémentaire.  Le Microsoft Edge \(Chromium\) DevTools correspondra aux API du protocole Chrome DevTools à l’avenir.  
 
 Vous trouverez de la documentation sur ces domaines et méthodes en faisant référence à la visionneuse de protocole [Chrome DevTools.](https://chromedevtools.github.io/devtools-protocol/tot)  
 
 > [!NOTE]
-> Toutes les méthodes avec préfixe dans le protocole `ms` [DevTools Microsoft Edge (EdgeHTML)](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) ne sont plus pris en charge dans le protocole DevTools Microsoft Edge \(Chromium\).  
+> Toutes les méthodes qui ont été précédées du protocole `ms` [Microsoft Edge (EdgeHTML) DevTools](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) ne sont plus pris en charge dans le protocole Microsoft Edge \(Chromium\) DevTools.  
 
 ## <a name="using-the-devtools-protocol"></a>Utilisation du protocole DevTools  
 
 Voici comment attacher un client d’outils personnalisé au serveur DevTools dans Microsoft Edge \(Chromium\).  
 
-1.  Assurez-vous que toutes les instances de Microsoft Edge \(Chromium\) sont fermées.  
+1.  Assurez-vous que toutes les instances Microsoft Edge \(Chromium\) sont fermées.  
 1.  Lancez Microsoft Edge \(Chromium\) avec le port de débogage à distance : 
     
     ```shell
@@ -49,7 +49,7 @@ Voici comment attacher un client d’outils personnalisé au serveur DevTools da
 
 ## <a name="devtools-protocol-http-endpoints"></a>Points de terminaison HTTP du protocole DevTools  
 
-Le protocole Microsoft Edge \(Chromium\) DevTools prend en charge les points de terminaison HTTP suivants.  
+Le Microsoft Edge \(Chromium\) DevTools prend en charge les points de terminaison HTTP suivants.  
 
 ## <a name="jsonversion"></a>/json/version  
 
@@ -122,11 +122,11 @@ String(“Target is closing”)
 
 ## <a name="remote-tools-for-microsoft-edge-beta"></a>Outils à distance pour Microsoft Edge (bêta)  
 
-Vous pouvez désormais installer les outils à distance [pour Microsoft Edge (bêta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) à partir du [Microsoft Store.](https://www.microsoft.com/store/apps/windows)  Cette application vous permet de déboguer à distance Microsoft Edge (Chromium) s’exécutant sur un appareil Windows 10 à partir de votre ordinateur de développement.  
+Vous pouvez désormais installer les outils à distance [pour Microsoft Edge (Bêta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) à partir du [Microsoft Store](https://www.microsoft.com/store/apps/windows).  Cette application vous permet de déboguer à distance Microsoft Edge (Chromium) en cours d’exécution sur un Windows 10 à partir de votre ordinateur de développement.  
 
-Pour découvrir comment configurer votre appareil Windows 10 et vous y connecter à partir de votre ordinateur de développement, accédez à Démarrer avec le débogage à distance des appareils [Windows 10.](../devtools-guide-chromium/remote-debugging/windows.md)  
+Pour découvrir comment configurer votre appareil Windows 10 et vous y connecter à partir de votre ordinateur de développement, accédez à Prise en main avec le débogage à distance Windows 10 [périphériques.](../devtools-guide-chromium/remote-debugging/windows.md)  
 
-Les outils à distance pour [Microsoft Edge (bêta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) utilisent le même protocole Microsoft Edge (Chromium) [DevTools que devTools](../devtools-guide-chromium/index.md) pour communiquer avec Microsoft Edge en cours d’exécution sur l’appareil Windows 10 que vous souhaitez déboguer.  Cette application est juste précédée d’un ID de processus ( ) avant `/msedge/` `pid` chaque appel au protocole.  Il prend en charge les points de terminaison HTTP suivants.  
+Les outils distants pour [Microsoft Edge (bêta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) utilisent le même protocole Microsoft Edge (Chromium) [DevTools que devTools](../devtools-guide-chromium/index.md) pour communiquer avec les Microsoft Edge en cours d’exécution sur l’appareil Windows 10 que vous souhaitez déboguer.  Cette application est juste précédée d’un ID de processus ( ) avant `/msedge/` `pid` chaque appel au protocole.  Il prend en charge les points de terminaison HTTP suivants.  
 
 ### <a name="msedgejsonlist"></a>/msedge/json/list  
 
@@ -158,7 +158,7 @@ Fonctionnellement équivalent à [/msedge/json/list](#msedgejsonlist).
 
 ### <a name="msedgepidjsonlist"></a>/msedge/[pid]/json/list  
 
-Fournit une liste candidate de cibles de page pour l’instance de Microsoft Edge qui correspond à celle fournie `[pid]` pour le débogage.  
+Fournit une liste candidate de cibles de page pour l’instance Microsoft Edge qui correspond à celle fournie `[pid]` pour le débogage.  
 
 **Parameters**  
 
@@ -181,7 +181,7 @@ Fournit une liste candidate de cibles de page pour l’instance de Microsoft Edg
 
 ### <a name="msedgepidjsonversion"></a>/msedge/[pid]/json/version  
 
-Fournit des informations sur l’instance de Microsoft Edge qui correspond à la version fournie et la version du protocole `[pid]` DevTools qu’elle prend en charge.  
+Fournit des informations sur l Microsoft Edge instance qui correspond à la version fournie et la version du protocole `[pid]` DevTools qu’elle prend en charge.  
 
 **Parameters**  
 
@@ -202,7 +202,7 @@ Fournit des informations sur l’instance de Microsoft Edge qui correspond à la
 
 ### <a name="msedgepidjsonprotocol"></a>/msedge/[pid]/json/protocol/  
 
-Fournit l’intégralité de la surface de l’API de protocole sérialisée en tant que JSON pour l’instance de Microsoft Edge qui correspond à la version `[pid]` fournie.  
+Fournit l’intégralité de la surface de l’API de protocole sérialisée en tant que JSON pour Microsoft Edge instance qui correspond à la version `[pid]` fournie.  
 
 **Parameters**  
 
@@ -210,4 +210,4 @@ Fournit l’intégralité de la surface de l’API de protocole sérialisée en 
 
 **Return, objet**  
 
-Objet JSON qui représente la surface d’API disponible pour la version du protocole que l’instance de Microsoft Edge qui correspond à l’api `[pid]` fournie utilise.  
+Objet JSON qui représente la surface d’API disponible pour la version du protocole que l’instance Microsoft Edge qui correspond à celle `[pid]` fournie.  

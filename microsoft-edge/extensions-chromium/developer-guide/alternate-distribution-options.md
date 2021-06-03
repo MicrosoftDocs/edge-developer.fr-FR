@@ -16,38 +16,38 @@ ms.locfileid: "11343149"
 ---
 # Autres méthodes de distribution d’extension  
 
-En règle générale, les extensions sont distribuées via le magasin de modules extensions Microsoft Edge. Dans certains scénarios, les développeurs peuvent avoir besoin de distribuer des extensions à l’aide d’autres méthodes. Par exemple:
+En règle générale, les extensions sont distribuées par le biais Microsoft Edge magasin d’extensions. Dans certains scénarios, les développeurs peuvent avoir besoin de distribuer des extensions à l’aide d’autres méthodes. Par exemple :
 
 1.  L’extension est associée à d’autres logiciels et doit être installée avec le reste du logiciel groupé.   
 1.  Les administrateurs réseau souhaitent distribuer une extension dans toute leur organisation.   
 
 Les extensions qui ne sont pas chargées à partir du magasin d’extensions Edge sont appelées extensions installées en externe. La liste suivante fournit d’autres méthodes de distribution des extensions installées en externe. 
 
-*   Utilisez le Registre Windows (Windows uniquement).  
+*   Utilisez le Windows registre (Windows uniquement).  
 *   Utilisez un fichier JSON de préférences (macOS et Linux).  
     
 ## Avant de commencer  
 
-Veillez à publier votre extension dans le magasin de modules de microsoft Edge ou à mettre en package un fichier et assurez-vous qu’il s’installe `.crx` correctement sur votre ordinateur.  Si vous installez le `.crx` fichier à l’aide de `update_URL` la , assurez-vous que vous pouvez accéder à votre extension à cette URL.  
+Veillez à publier votre extension dans le magasin d’extensions Microsoft Edge ou à mettre en package un fichier et assurez-vous qu’il s’installe `.crx` correctement sur votre ordinateur.  Si vous installez le `.crx` fichier à l’aide de la , assurez-vous que vous `update_URL` pouvez accéder à votre extension à cette URL.  
 
 Assurez-vous également que vous avez les informations suivantes.    
 
 1.  Chemin d’accès du `.crx` fichier ou de votre `update_URL` extension.
 1.  Version de votre extension.  Les informations de version sont disponibles dans votre fichier manifeste ou dans Microsoft Edge après le chargement de `edge://extensions` l’extension packaisée.   
-1.  ID de votre extension.  Les informations d’ID sont disponibles dans Microsoft Edge après le chargement `edge://extensions` de l’extension packée.  
+1.  ID de votre extension.  Les informations d’ID sont disponibles dans Microsoft Edge une fois que `edge://extensions` vous avez chargé l’extension packée.  
 
 > [!NOTE] 
 > Les exemples `1.0` suivants utilisent la version et `aaaaaaaaaabbbbbbbbbbcccccccccc` l’ID.  
 
-## Utiliser le Registre Windows (Windows uniquement)  
+## Utiliser le Windows registre (Windows uniquement)  
 
-Pour distribuer votre extension à l’aide du Registre Windows, effectuez les étapes suivantes.
+Pour distribuer votre extension à l’aide Windows registre, effectuez les étapes suivantes.
 
 1.  Recherchez ou créez la clé suivante dans le Registre :  
-    *   Windows 32 bits  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions` : .  
-    *   Windows 64 bits  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions` : .  
+    *   32 bits Windows : `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions` .  
+    *   64 bits Windows : `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions` .  
 1.  Créez une clé ou un dossier sous **Extensions** avec le même nom que l’ID de votre extension. Par exemple, créez la clé avec le nom `aaaaaaaaaabbbbbbbbbbcccccccccc` .  
-1.  Dans la **clé Extensions,** créez `update_url` la propriété et définissez la valeur sur `https://edge.microsoft.com/extensionwebstorebase/v1/crx` .  La propriété pointe vers le fichier de votre extension dans le magasin de `update_url` `.crx` modules supplémentaires Microsoft Edge.  
+1.  Dans la **clé Extensions,** créez `update_url` la propriété et définissez la valeur sur `https://edge.microsoft.com/extensionwebstorebase/v1/crx` .  La propriété pointe vers le fichier de votre extension dans le `update_url` `.crx` magasin Microsoft Edge modules supplémentaires.  
 
     ```json
     {
@@ -56,7 +56,7 @@ Pour distribuer votre extension à l’aide du Registre Windows, effectuez les �
     ```  
     
     > [!NOTE]
-    > Si vous souhaitez installer une extension à partir du Chrome Web Store, définissez la valeur `update_url` sur `https://clients2.google.com/service/update2/crx` .  
+    > Si vous souhaitez installer une extension à partir du Chrome Web Store, définissez la valeur `update_url` de `https://clients2.google.com/service/update2/crx` .  
   
 1.  Vérifiez que votre extension est répertoriée dans Microsoft Edge en naviguant vers `edge://extensions` .  
 
@@ -101,7 +101,7 @@ Pour distribuer votre extension à l’aide d’un fichier JSON de préférences
         }
         ```  
  
-    *  Copiez le code suivant dans votre fichier JSON lors de l’installation à partir du magasin de modules de microsoft Edge sur macOS et Linux.
+    *  Copiez le code suivant dans votre fichier JSON lors de l’installation à partir du magasin Microsoft Edge sur macOS et Linux.
     
         ```json
         {
@@ -134,7 +134,7 @@ Vous devrez peut-être désinstaller les extensions installées en externe, qui 
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  La page d’origine se trouve [ici.](https://developer.chrome.com/apps/external_extensions)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

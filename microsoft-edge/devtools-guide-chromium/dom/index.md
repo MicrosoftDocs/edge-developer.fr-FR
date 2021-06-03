@@ -60,7 +60,7 @@ Lorsque vous êtes intéressé par un nœud DOM particulier, **Inspect** est un 
            Mettre en `Michelangelo` surbrillade le nœud  
         :::image-end:::  
         
-        1.  Choisissez **l’icône Inspect** \( Inspect \) dans le coin supérieur gauche ![ de ](../media/inspect-icon.msft.png) DevTools.  
+        1.  Choisissez **l’icône Inspect** \( Inspect \) dans le ![ coin supérieur gauche de ](../media/inspect-icon.msft.png) DevTools.  
             
             :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="Icône Inspecter" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                Icône **Inspecter**  
@@ -90,7 +90,7 @@ Une fois que vous avez sélectionné un nœud dans l’arborescence DOM, vous po
     1.  Sélectionnez la `Left` touche de direction.  La `<ul>` liste est réduire.  
     1.  Sélectionnez de `Left` nouveau la touche de direction.  Le parent du `<ul>` nœud est sélectionné.  Dans ce cas, il s’agit `<div>` de l’ID `navigate-the-dom-tree-with-a-keyboard-1` .  
     1.  Sélectionnez la touche de direction 2 fois de sorte que vous avez re-sélectionné la liste `Down` `<ul>` que vous venons de réduire.  Il doit se présenter comme suit: `<ul>... </ul>`  
-    1.  Sélectionnez la `Right` touche de direction.  La liste est étendue.  
+    1.  Sélectionnez la `Right` touche de direction.  La liste se développe.  
 
 ### <a name="scroll-into-view"></a>Faire défiler vers l’avant  
 
@@ -136,7 +136,7 @@ Pour modifier le contenu d’un nœud, double-cliquez sur le contenu dans l’ar
            Modifier le texte  
         :::image-end:::  
         
-    1.  Supprimer `Michelle` , `Leela` tapez , puis `Enter` sélectionnez pour confirmer la modification.  Le texte du DOM change de **Michelle** à **Leela**.  
+    1.  Supprimer `Michelle` , `Leela` tapez , puis `Enter` sélectionnez pour confirmer la modification.  Le texte du DOM change de **Michelle** en **Leela**.  
 
 ### <a name="edit-attributes"></a>Modifier les attributs  
 
@@ -199,7 +199,7 @@ Vous pouvez forcer les nodes à rester dans les états, y compris `:active` , , 
 Sélectionnez `H` pour masquer un nœud.  
 
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
-1.  Sous **Masquer un nœud,** choisissez avec le droit de la main **Les étoiles ma destination** et sélectionnez **Inspecter.**  
+1.  Sous **Masquer un nœud,** sélectionnez avec le droit de la main **Les étoiles ma destination** et sélectionnez **Inspecter.**  
     1.  Sélectionnez la `H` clé.  Le nœud est masqué.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-hide-a-node.msft.png" alt-text="Apparence du nœud dans l’arborescence DOM une fois masqué" lightbox="../media/dom-elements-highlighted-hide-a-node.msft.png":::
@@ -300,7 +300,7 @@ Si vous souhaitez suspendre lorsqu’un nœud particulier est supprimé, utilise
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
 1.  Under **Break on Node Removal**, right-choose **Contrôlemancer** and choose **Inspect**.  
     1.  Dans l’arborescence DOM, pointez sur , ouvrez le menu contextuel `<li id="target">Neuromancer</li>` \(clic droit\), puis choisissez **Pause sur**la suppression  >  **du nœud.**  Accédez à [l’Annexe : Options manquantes](#appendix-missing-options) si l’option n’est pas affichée.  
-    1.  Sélectionnez le **bouton Supprimer** ci-dessus.  DevTools suspend la page et met en évidence le code qui a provoqué la suppression du nœud.  
+    1.  Sélectionnez le **bouton Supprimer** ci-dessus.  DevTools suspend la page et met en évidence le code à l’origine de la suppression du nœud.  
     1.  Choose **Resume Script** \( Resume Script ![ ](../media/resume-script-icon.msft.png) \).  
     
 ### <a name="break-on-subtree-modifications"></a>Pause sur les modifications de sous-arbre  
@@ -406,7 +406,7 @@ This is a continuation of the [Scroll into view](#scroll-into-view) section.  Fo
 
 ## <a name="appendix-missing-options"></a>Annexe : Options manquantes  
 
-De nombreuses instructions de ce didacticiel vous indiquent de pointer sur un nœud dans l’arborescence DOM, d’ouvrir le menu contextuel \(clic droit\), puis de choisir une option dans le menu contextuel qui s’ouvre.  Si l’option spécifiée dans le menu contextuel n’est pas affichée, essayez de pointer loin du texte du nœud et d’ouvrir le menu contextuel \(clic droit\).  
+De nombreuses instructions de ce didacticiel vous indiquent de pointer sur un nœud dans l’arborescence DOM, d’ouvrir le menu contextuel \(clic droit\), puis de choisir une option dans le menu contextuel qui s’ouvre.  Si l’option spécifiée dans le menu contextuel n’est pas affichée, essayez de pointer à l’extérieur du texte du nœud et d’ouvrir le menu contextuel \(clic droit\).  
 
 :::image type="complex" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="Où choisir si toutes les options ne sont pas affichées" lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
    Où choisir si toutes les options ne sont pas affichées  
@@ -431,7 +431,7 @@ De nombreuses instructions de ce didacticiel vous indiquent de pointer sur un n�
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/dom/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -46,7 +46,7 @@ Dans le modèle de performances **RAIL,** l’objectif de vos efforts en matièr
 
 Les problèmes de mémoire sont importants, car ils sont souvent perceptibles par les utilisateurs.  Les utilisateurs peuvent percevoir les problèmes de mémoire des manières suivantes :  
 
-*   **Les performances d’une page se dégradent progressivement au fil du temps.**  Il s’agit éventuellement d’un symptôme d’une fuite de mémoire.  Une fuite de mémoire est le cas lorsqu’un bogue dans la page entraîne l’utilisation progressive de la page de plus en plus de mémoire au fil du temps.  
+*   **Les performances d’une page se dégradent progressivement au fil du temps.**  Il s’agit éventuellement d’un symptôme d’une fuite de mémoire.  Une fuite de mémoire se fait lorsqu’un bogue dans la page fait que la page utilise progressivement de plus en plus de mémoire au fil du temps.  
 *   **Les performances d’une page sont constamment mauvaises.**  Il s’agit peut-être d’un symptôme d’un problème de mémoire.  La mémoire est en trop lorsqu’une page utilise plus de mémoire que nécessaire pour une vitesse de page optimale.  
 *   **Les performances d’une page sont retardées ou semblent régulièrement suspendues.**  Il s’agit éventuellement d’un symptôme de fréquents collectes de la garbage.  Le garbage collection est le moment où le navigateur récupère de la mémoire.  Le navigateur décide quand cela se produit.  Pendant les collections, tous les scripts en cours d’exécution sont suspendus.  Ainsi, si le navigateur collecte beaucoup de données de la garbage, le runtime de script sera beaucoup suspendu.  
 
@@ -58,7 +58,7 @@ Il n’existe pas de chiffres en dur ici, car différents appareils et navigateu
 
 L’essentiel ici est d’utiliser le modèle RAIL et de se concentrer sur vos utilisateurs.  Découvrez quels appareils sont populaires auprès de vos utilisateurs, puis testez votre page sur ces appareils.  Si l’expérience est constamment mauvaise, la page peut dépasser les capacités de mémoire de ces appareils.  
 
-## <a name="monitor-memory-use-in-realtime-with-the-microsoft-edge-browser-task-manager"></a>Surveiller l’utilisation de la mémoire en temps réel avec Microsoft Edge du Gestionnaire des tâches du navigateur  
+## <a name="monitor-memory-use-in-realtime-with-the-microsoft-edge-browser-task-manager"></a>Surveiller l’utilisation de la mémoire en temps réel avec Microsoft Edge du gestionnaire des tâches du navigateur  
 
 Utilisez le Gestionnaire des Microsoft Edge navigateur comme point de départ pour l’examen de votre problème de mémoire.  Le Gestionnaire Microsoft Edge navigateur est un moniteur en temps réel qui vous indique la quantité de mémoire qu’une page utilise actuellement.  
 
@@ -76,7 +76,7 @@ Utilisez le Gestionnaire des Microsoft Edge navigateur comme point de départ po
     
 Ces deux colonnes vous indiquent différentes choses sur la façon dont votre page utilise la mémoire.  
 
-*   La **colonne Mémoire** représente la mémoire native.  Les nodes DOM sont stockés dans la mémoire native.  Si cette valeur augmente, des nodes DOM sont créés.  
+*   La **colonne Mémoire** représente la mémoire native.  Les nodes DOM sont stockés dans la mémoire native.  Si cette valeur augmente, les nodes DOM sont créés.  
 *   La **colonne Mémoire JavaScript** représente le tas JS.  Cette colonne contient deux valeurs.  La valeur qui vous intéresse est le nombre direct \(le nombre entre parenthèses\).  Le nombre en direct représente la quantité de mémoire que les objets accessibles sur votre page utilisent.  Si ce nombre augmente, soit de nouveaux objets sont créés, soit les objets existants augmentent.  
 
 <!--*   live number reference: https://groups.google.com/d/msg/google-chrome-developer-tools/aTMVGoNM0VY/bLmf3l2CpJ8J  -->  
@@ -87,7 +87,7 @@ Vous pouvez également utiliser le panneau Performances comme autre point de dé
 
 1.  Ouvrez **le panneau Performances** sur DevTools.  
 1.  Activez la **case à** cocher Mémoire.  
-1.  [Effectuer un enregistrement][DevtoolsEvaluatePerformanceReferenceRecord].  
+1.  [Effectuer un enregistrement.][DevtoolsEvaluatePerformanceReferenceRecord]  
 
 > [!TIP]
 > Il est pratique de démarrer et de terminer votre enregistrement avec un garbage collection forcé.  Pour forcer le collecte de la garbage collection, **sélectionnez** le bouton de collecte de la garbage ![ force garbage collection lors de ][ImageForceGarbageCollectionIcon] l’enregistrement.  
@@ -105,7 +105,7 @@ function grow() {
 document.getElementById('grow').addEventListener('click', grow);
 ```  
 
-Chaque fois que le bouton référencé dans le code est choisi, dix milliers de nodes sont appendés au corps du document et une chaîne d’un million de caractères est enfoncée dans le `div` `x` `x` tableau.  L’exécution de l’exemple de code précédent produit un enregistrement dans le panneau **Performances** comme illustré ci-après.  
+Chaque fois que le bouton référencé dans le code est choisi, dix milliers de nodes sont appendés au corps du document et une chaîne d’un million de caractères est enfoncée sur le `div` `x` `x` tableau.  L’exécution de l’exemple de code précédent produit un enregistrement dans le panneau **Performances** comme illustré ci-après.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-1-performance-memory.msft.png" alt-text="Croissance simple" lightbox="../media/memory-problems-glitch-example-1-performance-memory.msft.png":::
    Figure 3 : Croissance simple  
@@ -137,11 +137,11 @@ function create() {
 document.getElementById('create').addEventListener('click', create);
 ```  
 
-Le choix du bouton référencé dans le code crée un `ul` nœud avec dix `li` enfants.  Les nodes sont référencés par le code, mais n’existent pas dans l’arborescence DOM, de sorte que chacun d’eux est détaché.  
+Le choix du bouton référencé dans le code crée `ul` un nœud avec dix `li` enfants.  Les nodes sont référencés par le code, mais n’existent pas dans l’arborescence DOM, de sorte que chacun d’eux est détaché.  
 
 Les captures instantanées de tas sont un moyen d’identifier les nodes détachées.  Comme son nom l’indique, les captures instantanées de tas vous montrent comment la mémoire est distribuée entre les objets JS et les nodes DOM de votre page au moment de la capture instantanée.  
 
-Pour créer une capture instantanée, ouvrez DevTools et accédez au panneau Mémoire, choisissez la bouton **d’radio** de capture instantanée de tas > bouton Prendre **une** capture instantanée. ****  
+Pour créer une capture instantanée, ouvrez DevTools et accédez au panneau Mémoire, choisissez la bouton **d’radio** Instantané de tas > bouton Prendre **une** capture instantanée. ****  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png" alt-text="Prendre une capture instantanée de tas" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png":::
    Figure 4 : Prendre une capture instantanée de tas  
@@ -149,7 +149,7 @@ Pour créer une capture instantanée, ouvrez DevTools et accédez au panneau Mé
 
 Le traitement et le chargement de la capture instantanée peuvent prendre un certain temps.  Une fois terminé, sélectionnez-le dans le panneau de gauche \(nommé **SNAPSHOTS TAS**\).  
 
-Tapez `Detached` dans la zone de texte **Filtre** classe pour rechercher des arbre DOM détachés.  
+Tapez `Detached` dans la zone de texte **Filtre** classe pour rechercher les arbre DOM détachés.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png" alt-text="Filtrage des nodes détachées" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png":::
    Figure 5 : Filtrage des nodes détachées  
@@ -230,7 +230,7 @@ DevTools vous présente une répartition de l’allocation de mémoire par fonct
 
 Si votre page s’interrompt fréquemment, vous risquez d’avoir des problèmes de collecte de la garbage collection.  
 
-Vous pouvez utiliser le Gestionnaire des tâches Microsoft Edge navigateur ou les enregistrements de mémoire des performances pour repérer les tâches fréquentes de collecte de la mémoire.  Dans le gestionnaire Microsoft Edge navigateur, les valeurs Mémoire ou Mémoire **JavaScript** qui tombent ou tombent fréquemment représentent un collecte fréquent de la mémoire. ****  Dans les enregistrements de performances, les modifications fréquentes \(déplacement et baisse\) du tas JS ou du nombre de nœuds indiquent un collecte fréquent de la mémoire.  
+Vous pouvez utiliser le Gestionnaire des tâches Microsoft Edge navigateur ou les enregistrements de mémoire des performances pour repérer les tâches fréquentes de collecte de la mémoire.  Dans le Gestionnaire des Microsoft Edge navigateur, les **** valeurs Mémoire ou Mémoire **JavaScript** qui tombent ou tombent fréquemment représentent un collecte fréquent de la mémoire.  Dans les enregistrements de performances, les modifications fréquentes \(déplacement et baisse\) du tas JS ou du nombre de nœuds indiquent un collecte fréquent de la mémoire.  
 
 Une fois que vous avez identifié le problème, vous pouvez utiliser une **instrumentation d’allocation** sur l’enregistrement chronologique pour savoir où la mémoire est allouée et quelles fonctions sont à l’origine des allocations.  
 
@@ -257,7 +257,7 @@ Une fois que vous avez identifié le problème, vous pouvez utiliser une **instr
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/memory-problems/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

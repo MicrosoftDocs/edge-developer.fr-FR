@@ -29,13 +29,13 @@ ms.locfileid: "11564524"
    limitations under the License.  -->
 # <a name="console-reference"></a>Référence de la console  
 
-Cet article est une référence des fonctionnalités liées à la Microsoft Edge console DevTools.  Il part du principe que vous êtes déjà familiarisé avec l’utilisation de la console pour afficher les messages enregistrés et exécuter JavaScript.  Si ce n’est pas le cas, accédez à l’exécution de [JavaScript][DevtoolsConsoleConsoleJavascript] dans la console et à la journalisation [des messages dans la console.][DevtoolsConsoleConsoleLog]  
+Cet article est une référence des fonctionnalités liées à Microsoft Edge console DevTools.  Il part du principe que vous êtes déjà familiarisé avec l’utilisation de la console pour afficher les messages enregistrés et exécuter JavaScript.  Si ce n’est pas le cas, accédez à l’exécution de [JavaScript][DevtoolsConsoleConsoleJavascript] dans la console et à la journalisation [des messages dans la console.][DevtoolsConsoleConsoleLog]  
 
-Si vous recherchez la référence d’API sur des fonctions telles que , accédez à Référence `console.log()` de [l’API console.][DevToolsConsoleApi]  Pour obtenir la référence sur des fonctions telles que , accédez à Référence de `monitorEvents()` [l’API des utilitaires de console.][DevToolsConsoleUtilities]  
+Si vous recherchez la référence d’API sur des fonctions telles que , accédez à Référence `console.log()` de [l’API console.][DevToolsConsoleApi]  Pour obtenir la référence sur des fonctions telles que , accédez à Référence de `monitorEvents()` l’API des [utilitaires de console.][DevToolsConsoleUtilities]  
 
 ## <a name="open-the-console"></a>Ouvrir la console  
 
-Vous pouvez ouvrir la **console en tant** qu’outil dans le [volet](#open-the-console-tool) supérieur ou en tant qu’outil dans [le caisse.](#open-the-console-tool-in-the-drawer)  
+Vous pouvez ouvrir la **console en** tant [qu’outil](#open-the-console-tool) dans le volet supérieur ou en tant [qu’outil dans le caisse.](#open-the-console-tool-in-the-drawer)  
 
 ### <a name="open-the-console-tool"></a>Ouvrir l’outil Console  
 
@@ -73,7 +73,7 @@ Pour ouvrir **l’outil Console** à partir du [menu][DevtoolsCommandMenuIndex]C
 
 ### <a name="open-console-settings"></a>Ouvrir la console Paramètres  
 
-Choisissez le **bouton console Paramètres** \( Console Paramètres icône ![ ](../media/settings-button-icon.msft.png) \).  
+Sélectionnez **le bouton Paramètres** console \( Icône Paramètres console ![ ](../media/settings-button-icon.msft.png) \).  
 
 :::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Console Paramètres" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **Console Paramètres**  
@@ -104,11 +104,11 @@ Cette section contient des fonctionnalités qui modifient la présentation des m
 
 ### <a name="turn-off-message-grouping"></a>Désactiver le regroupement de messages  
 
-Pour désactiver le comportement de regroupement des messages par défaut de la **console,** ouvrez console [Paramètres](#open-console-settings) et cochez la case en regard de **Groupe similaire**.  Pour obtenir un exemple, accédez à [Log XHR et fetch requests](#log-xhr-and-fetch-requests).  
+Pour désactiver le comportement de regroupement des messages par défaut de la **console,** ouvrez console [Paramètres](#open-console-settings) et cochez la case en regard de **Groupe similaire**.  Pour obtenir un exemple, accédez [à Log XHR et fetch requests](#log-xhr-and-fetch-requests).  
 
 ### <a name="log-xhr-and-fetch-requests"></a>Enregistrer les demandes XHR et Fetch  
 
-Pour enregistrer toutes les demandes et les demandes sur la console, ouvrez console Paramètres et cochez la case en regard de `XMLHttpRequest` `Fetch` Log **XMLHttpRequests**. **** [](#open-console-settings)  
+Pour enregistrer toutes les demandes et toutes les demandes sur la console, ouvrez console Paramètres et cochez la case en regard de `XMLHttpRequest` `Fetch` Log **XMLHttpRequests**. **** [](#open-console-settings)  
 
 :::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="Log XMLHttpRequest and Fetch requests" lightbox="../media/console-xhr-fetch.msft.png":::
    Journal `XMLHttpRequest` et `Fetch` demandes  
@@ -128,7 +128,7 @@ Le premier message de la figure précédente affiche le comportement de regroupe
 
 ### <a name="persist-messages-across-page-loads"></a>Persist messages across page loads  
 
-Lorsque vous chargez une nouvelle page web, l’action par défaut permet d’effacer la **console.**  Pour conserver les messages entre les chargements de page, [ouvrez console Paramètres](#open-console-settings) et cochez la case en regard de **Conserver le journal.**  
+Lorsque vous chargez une nouvelle page web, l’action par défaut permet d’effacer la **console.**  Pour conserver les messages entre les chargements de page, [ouvrez](#open-console-settings) Paramètres console et cochez la case en regard **de Conserver le journal.**  
 
 ### <a name="hide-network-messages"></a>Masquer les messages réseau  
 
@@ -172,7 +172,7 @@ Pour filtrer les messages, sélectionnez la dropdown **Niveaux** de journal et `
    La **dropdown Log Levels**  
 :::image-end:::  
 
-Pour utiliser le niveau de journal pour filtrer, ouvrez **** la barre latérale de la [console,](#open-the-console-sidebar) puis choisissez **Erreurs, Avertissements,** Informations ou **Détaillé.** ****  
+Pour utiliser le niveau de journal pour filtrer, ouvrez la barre latérale de la [console,](#open-the-console-sidebar) puis choisissez **Erreurs, Avertissements,** **Informations**ou **Détaillé.** ****  
 
 :::image type="complex" source="../media/console-sidebar-warnings.msft.png" alt-text="Utiliser la barre latérale pour afficher les avertissements" lightbox="../media/console-sidebar-warnings.msft.png":::
    Utiliser la barre latérale pour afficher les avertissements  
@@ -182,8 +182,8 @@ Pour utiliser le niveau de journal pour filtrer, ouvrez **** la barre latérale 
 
 Tapez `url:` suivi d’une URL pour afficher uniquement les messages provenant de cette URL.  Une fois que `url:` vous avez tapé, DevTools affiche toutes les URL pertinentes.  Les domaines fonctionnent également.  Par exemple, si et journalisation des messages, vous permet de vous concentrer sur les messages de `https://example.com/a.js` `https://example.com/b.js` ces deux `url:https://example.com` scripts.  
 
-:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="Filtre d’URL" lightbox="../media/console-filter-text.msft.png":::
-   Filtre d’URL  
+:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="Un filtre d’URL" lightbox="../media/console-filter-text.msft.png":::
+   Un filtre d’URL  
 :::image-end:::  
 
 Pour masquer les messages d’une URL, tapez `-url:` .  Il s’agit d’un filtre d’URL négatif.  
@@ -202,13 +202,13 @@ Pour afficher des messages à partir d’une URL unique, effectuer les actions s
    Afficher les messages d’où ils sont issus `wp-ad.min.js`  
 :::image-end:::  
 
-### <a name="filter-out-messages-from-different-contexts"></a>Filtrer les messages de différents contextes  
+### <a name="filter-out-messages-from-different-contexts"></a>Filtrer les messages à partir de différents contextes  
 
 Supposons que vous avez une annonce \(ad\) sur votre page web.  La publicitaire est incorporée dans un `<iframe>` et génère de nombreux messages dans votre **console.**  Étant donné que la publicitaire s’exécute dans un contexte [JavaScript](#choose-javascript-context)différent, une façon de masquer les messages consiste à ouvrir la [console Paramètres](#open-console-settings) et à cocher la case en regard du contexte **sélectionné uniquement.**  
 
 ### <a name="filter-out-messages-that-dont-match-a-regular-expression-pattern"></a>Filtrer les messages qui ne correspondent pas à un modèle d’expression régulière  
 
-Tapez une expression régulière telle que dans la boîte de texte Filtrer pour filtrer les messages qui ne correspondent `/[gm][ta][mi]/` pas à ce modèle. ****  DevTools vérifie si le modèle est trouvé dans le texte du message ou dans le script à l’origine de la consigner.  
+Tapez une expression régulière telle que dans la boîte de texte Filtre pour filtrer les messages qui ne correspondent `/[gm][ta][mi]/` pas à ce modèle. ****  DevTools vérifie si le modèle est trouvé dans le texte du message ou dans le script à l’origine de la consigner.  
 
 :::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="Filtrer les messages qui ne correspondent pas à l’expression regex" lightbox="../media/console-filter-regex.msft.png":::
    Filtrer les messages qui ne correspondent pas à `/[gm][ta][mi]/` l’expression regex  
@@ -235,7 +235,7 @@ Si vous vous trouvez en train de taper la même expression JavaScript dans la **
     
 ### <a name="turn-off-autocomplete-from-history"></a>Désactiver la mise encomplet automatique de l’historique  
 
-Lorsque vous tapez une expression, la fenêtre popup de la console decomplet automatique affiche les expressions que vous avez précédemment entrées. ****  Les expressions sont pré-pendées avec le `>` caractère.  Pour arrêter d’afficher les expressions de votre historique, ouvrez **** console [Paramètres](#open-console-settings) et supprimez la case à cocher en regard de la case à cocher De l’historique de la mise à jour automatique.  
+Lorsque vous tapez une expression, la fenêtre popup de la console de mise à jour automatique affiche les expressions que vous avez précédemment entrées. ****  Les expressions sont pré-pendées avec le `>` caractère.  Pour arrêter d’afficher les expressions de votre historique, ouvrez **** la [Paramètres](#open-console-settings) console et supprimez la case à cocher en regard de la case à cocher De l’historique de la mise à jour automatique.  
 
 > [!NOTE]
 > Dans la figure suivante, `document.querySelector('a')` sont des expressions qui ont été `document.querySelector('img')` évaluées précédemment.  
@@ -252,7 +252,7 @@ L’option par défaut pour la liste de listes des contextes **JavaScript** est 
    La **dropdown de contexte JavaScript**  
 :::image-end:::  
 
-Supposons que vous avez une vidéo sur votre page web incorporée dans un `<iframe>` .  Vous souhaitez exécuter JavaScript pour ajuster le DOM de l’ad.  Tout d’abord, choisissez le contexte de navigation de la nouvelle dans la description du contexte **JavaScript.**  
+Supposons que vous avez une vidéo sur votre page web incorporée dans un `<iframe>` .  Vous souhaitez exécuter JavaScript pour ajuster le DOM de l’ad.  Tout d’abord, choisissez le contexte de navigation de la nouvelle dans la description du **contexte JavaScript.**  
 
 :::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Choisir un autre contexte JavaScript" lightbox="../media/console-dom-level-multiple.msft.png":::
    Choisir un autre contexte JavaScript  
@@ -291,7 +291,7 @@ Pour effacer la **console,** terminez l’un des flux de travail suivants.
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

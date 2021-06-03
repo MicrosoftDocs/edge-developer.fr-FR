@@ -176,7 +176,7 @@ Pour s’exécuter en tant PWA, votre application web hébergée sur le serveur 
       [Manifeste de l’application web][MDNWebAppManifest]  
    :::column-end:::
    :::column span="2":::
-      Fournit un fichier de métadonnées basé sur JSON qui décrit les informations clés sur votre application web, afin que Windows 10 et d’autres plateformes hôtes fournissent à vos utilisateurs PWA une expérience installable et native de l’application.  Les informations clés incluent les icônes, la langue et le point d’entrée d’URL. 
+      Fournit un fichier de métadonnées JSON qui décrit les informations clés sur votre application web, afin que Windows 10 et d’autres plateformes hôtes offrent à vos utilisateurs PWA une expérience installable et native de l’application.  Les informations clés incluent les icônes, la langue et le point d’entrée d’URL. 
    :::column-end:::
 :::row-end:::  
 
@@ -234,7 +234,7 @@ Pour être une excellente PWA, votre application doit également répondre aux e
 > [!NOTE]
 > Pour transformer votre PWA en une application [Microsoft Store,][MicrosoftDeveloperStore] accédez à Applications web progressives [dans la Microsoft Store][PwaChromiumMicrosoftStore].  
   
-## <a name="see-also"></a>Voir également  
+## <a name="see-also"></a>Articles associés  
 
 *   [#A0][Davrous20191018MythBustingPwasNewEdgeEdition]  
 *   [Une feuille de route progressive pour votre application web progressive][CloudfourThinksProgressiveRoadmapYourWebApp]  
@@ -262,7 +262,7 @@ Pour être une excellente PWA, votre application doit également répondre aux e
 [WindowsUWPPublishIndex]: /windows/uwp/publish/index.md "Publier Windows applications et jeux | Documents Microsoft"  
 [WindowsUWPPublishDeveloperAccount]: /windows/uwp/publish/opening-a-developer-account.md "Ouverture d’un compte de développeur | Documents Microsoft"  
 
-[WindowsBlogsWelcomingPWAsEdgeWindows]: https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#56z7mJwKsykfbR4I.97 "Mise en place d’applications web progressives Microsoft Edge et Windows 10 - Windows blogs"  
+[WindowsBlogsWelcomingPWAsEdgeWindows]: https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#56z7mJwKsykfbR4I.97 "Mise en avant des applications web progressives Microsoft Edge et Windows 10 - Windows blogs"  
 [MicrosoftDeveloperEdgePlatformStatusBackgroundSync]: https://developer.microsoft.com/microsoft-edge/platform/status/backgroundsyncapi "API de synchronisation en arrière-plan - État Microsoft Edge plateforme"  
 [MicrosoftDeveloperEdgePlatformStatusWebAppManifest]: https://developer.microsoft.com/microsoft-edge/platform/status/webapplicationmanifest "Manifeste de l’application web : Microsoft Edge plateforme"  
 [MicrosoftDeveloperEdgeToolsRemote]: https://developer.microsoft.com/microsoft-edge/tools/remote "Test instantané"  

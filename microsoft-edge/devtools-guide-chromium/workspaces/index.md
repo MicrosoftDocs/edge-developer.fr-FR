@@ -62,7 +62,7 @@ Les espaces de travail ne fonctionnent pas avec l’infrastructure suivante.
     
 ## <a name="related-feature-local-overrides"></a>Fonctionnalité connexe : substitutions locales  
 
-**Local Overrides** est une autre fonctionnalité DevTools similaire à Workspaces.  Utilisez les substitutions locales lorsque vous souhaitez expérimenter les modifications apportées à une page web et que vous devez afficher les modifications sur les chargements de pages web, mais que vous ne vous souciez pas de ma mappage de vos modifications au code source de la page web.  
+**Local Overrides** est une autre fonctionnalité DevTools similaire à Workspaces.  Utilisez les substitutions locales lorsque vous souhaitez expérimenter les modifications apportées à une page web et que vous devez afficher les modifications entre les chargements de pages web, mais que vous ne vous souciez pas du mappage de vos modifications au code source de la page web.  
 
 <!--Todo: add section when content is ready  -->  
 
@@ -225,7 +225,7 @@ Pour ouvrir l’éditeur de code DevTools avec d’autres outils, vous pouvez :
 1.  `Quick Source`Tapez, puis choisissez Afficher la source **rapide.**  En bas de la fenêtre DevTools, l’outil **Source** rapide s’affiche, affichant le contenu de , qui est le dernier fichier que vous avez modifié dans l’outil `index.html` **Sources.**    
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Ouvrir l’outil Source rapide à l’aide du menu Commande" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
-       Ouvrir **l’outil Source rapide** à l’aide du **menu Commande**  
+       Ouvrir **l’outil Source rapide** à l’aide **du menu Commande**  
     :::image-end:::  
     
 1.  Sélectionnez `Control` + `P` \(Windows, Linux\) ou `Command` + `P` \(macOS\) **** pour ouvrir la boîte de dialogue Ouvrir un fichier.  Examinez la figure suivante.  
@@ -297,7 +297,7 @@ If you have more feedback on the topics or anything else, please use any of the 
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -40,7 +40,7 @@ Vous pouvez activer le thème foncé [dans Paramètres](#set-up-dark-theme-from-
 1.  Choose **Customize And Control DevTools** \( `...` \) > **Paramètres**.  Vous pouvez également ouvrir **Paramètres** en sélectionnant `F1` .  
     
     :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Ouvrez le menu Paramètres" lightbox="../media/customize-options-settings.msft.png":::
-       Ouvrez **Paramètres**  
+       Ouvrir **Paramètres**  
     :::image-end:::  
 
 1.  Dans le **volet Préférences,** sous **Apparence,** choisissez **Thème**  >  **foncé**.  
@@ -71,7 +71,7 @@ Vous pouvez activer le thème foncé [dans Paramètres](#set-up-dark-theme-from-
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

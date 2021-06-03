@@ -1,6 +1,6 @@
 ---
-description: Découvrez comment vous inscrire à un compte de développeur pour publier des extensions dans le magasin de modules extensions Microsoft Edge
-title: S’inscrire en tant que développeur d’extensions Microsoft Edge pour publier des extensions
+description: Découvrez comment s’inscrire auprès d’un compte de développeur pour publier des extensions Microsoft Edge magasin d’extensions
+title: S’inscrire en tant Microsoft Edge développeur d’extensions pour publier des extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/17/2021
@@ -16,14 +16,14 @@ ms.locfileid: "11343058"
 ---
 # S’inscrire en tant que développeur d’extensions Microsoft Edge  
 
-Pour soumettre votre extension au magasin de modules de développement Microsoft Edge, vous devez être inscrit en tant que développeur au programme Microsoft Edge.  Le programme Microsoft Edge se trouve dans [l’Partner Center][MicrosoftPartnerCenter].  
+Pour soumettre votre extension au magasin Microsoft Edge, vous devez être inscrit en tant que développeur au programme Microsoft Edge de développement.  Le Microsoft Edge est situé dans [l’Partner Center][MicrosoftPartnerCenter].  
 
 > [!IMPORTANT]
-> Aucun frais d’inscription n’est associé à l’envoi d’extensions au programme Microsoft Edge.  
+> Aucun frais d’inscription n’est impliqué lors de l’envoi des extensions au Microsoft Edge programme.  
 
 ## Avant de commencer  
 
-Si vous n’avez pas de compte ou si vous avez un compte commercial existant auprès de l’Espace partenaires, créez un compte [Microsoft (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] pour vous inscrire au programme Microsoft Edge.  Pour créer un compte Microsoft \(Outlook/live/Hotmail\), effectuer les actions suivantes.  
+Si vous n’avez pas de compte ou si vous avez un compte commercial existant auprès de l’Espace partenaires, créez un compte [Microsoft (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] pour vous inscrire au programme Microsoft Edge client.  Pour créer un compte Microsoft \(Outlook/live/Hotmail\), effectuer les actions suivantes.  
 
 1.  Accédez [à account.microsoft.com][MicrosoftAccount].  
 1.  Choisissez **Créer un compte Microsoft.**  
@@ -31,14 +31,14 @@ Si vous n’avez pas de compte ou si vous avez un compte commercial existant aup
 Si vous avez un compte de développeur enregistré dans l’Partner center, utilisez le compte Microsoft correspondant \(MSA\) pour vous inscrire à votre compte de développeur, puis inscrivez-vous au programme Microsoft Edge.  
 
 > [!NOTE]
-> Aujourd’hui, les extensions Microsoft Edge ne prend pas en charge l’inscription avec un compte scolaire ou scolaire.  À l’avenir, l’équipe des extensions Microsoft Edge prévoit de prendre en charge la liaison de clients Azure AD à des comptes MSA pour la gestion des extensions.  
+> Aujourd’hui, les extensions Microsoft Edge ne prend pas en charge l’inscription avec un compte scolaire ou scolaire.  À l’avenir, l’équipe Microsoft Edge extensions de gestion prévoit de prendre en charge la liaison de locataires Azure AD à des comptes MSA pour la gestion des extensions.  
 
 ## S’inscrire au programme Microsoft Edge sur l’Partner Center  
 
 1.  Accédez à la [page du développeur][MicrosoftPartnerCenter] et choisissez GO TO **DASHBOARD**.  
 1.  Si vous avez un compte Microsoft, connectez-vous maintenant.  Si ce n’est pas le cas, créez un compte Microsoft.  Utilisez le même compte Microsoft que celui que vous utilisez pour vous inscrire à votre compte de développeur.  Une fois que vous vous êtes inscrit, un formulaire d’inscription s’affiche. Le tableau suivant décrit les champs du formulaire d’inscription.  
     
-    Pour vous inscrire au programme Microsoft Edge, connectez-vous à votre compte et remplissez le formulaire.  
+    Pour vous inscrire au Microsoft Edge, connectez-vous à votre compte et remplissez le formulaire.  
     
     :::row:::
        :::column span="1":::
@@ -57,7 +57,7 @@ Si vous avez un compte de développeur enregistré dans l’Partner center, util
           **Type de compte**  
        :::column-end:::
        :::column span="2":::
-          Le programme Microsoft Edge de [l’Partner Center][MicrosoftPartnerCenter] offre des comptes individuels et d’entreprise.  Les comptes sont décrits en détail dans les puces suivantes.  Les deux types de compte vous permettent de publier des extensions dans le magasin de modules extensions Microsoft Edge.  
+          Le Microsoft Edge dans [l’Partner Center][MicrosoftPartnerCenter] offre des comptes individuels et d’entreprise.  Les comptes sont décrits en détail dans les puces suivantes.  Les deux types de compte vous permettent de publier des extensions dans Microsoft Edge magasin de modules extensions.  
           
           > [!IMPORTANT]
           > Après l’inscription, vous ne pouvez pas modifier la valeur de ce champ.  
@@ -72,10 +72,10 @@ Si vous avez un compte de développeur enregistré dans l’Partner center, util
     :::row-end:::  
     :::row:::
        :::column span="1":::
-          **Nom complet de l’éditeur**  
+          **Publisher d’affichage**  
        :::column-end:::
        :::column span="2":::
-          Ce champ contient le nom qui s’affiche dans le magasin de modules add-ons Microsoft Edge.  Vous ne pouvez utiliser un nom que s’il est disponible et vous disposez des droits pour l’utiliser.  Les comptes d’entreprise doivent utiliser le nom d’entreprise enregistré de votre organisation.  
+          Ce champ contient le nom qui s’affiche dans le Microsoft Edge de modules.  Vous ne pouvez utiliser un nom que s’il est disponible et vous disposez des droits pour l’utiliser.  Les comptes d’entreprise doivent utiliser le nom d’entreprise enregistré de votre organisation.  
           
           > [!NOTE]
           > La longueur maximale de ce champ est de 50 caractères.  
@@ -99,18 +99,18 @@ Si vous avez un compte de développeur enregistré dans l’Partner center, util
        :::column-end:::
     :::row-end:::  
     
-1.  Avant d’envoyer votre formulaire d’inscription, lisez et acceptez les conditions générales du contrat du développeur [Microsoft Edge.][MicrosoftAppDeveloperAgreement]  
+1.  Avant d’envoyer votre formulaire d’inscription, lisez et acceptez les conditions générales du [contrat Microsoft Edge développeur.][MicrosoftAppDeveloperAgreement]  
 1.  Pour terminer votre inscription, choisissez **Terminer.**  
     
 ## Étapes suivantes  
 
 Pour afficher votre statut de vérification, accédez à l'> **paramètres du compte.**  Pendant que vous attendez la fin du processus de vérification, continuez à créer, tester et préparer vos soumissions.  
 
-Pour plus d’informations, [accédez à Publier une extension.][ExtensionsChromiumPublishExtension]  Pour plus d’informations sur la mise en place des extensions, accédez à La mise en place des [extensions Microsoft Edge (Chromium).][ExtensionsChromiumGettingStartedIndex]  
+Pour plus d’informations, [accédez à Publier une extension.][ExtensionsChromiumPublishExtension]  Pour plus d’informations sur la mise en place des extensions, accédez à La mise en Microsoft Edge [(Chromium) extensions][ExtensionsChromiumGettingStartedIndex].  
 
 <!-- links -->  
 
-[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Mise en place des extensions Microsoft Edge (Chromium) | Documents Microsoft"  
+[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Getting started with Microsoft Edge (Chromium) extensions | Documents Microsoft"  
 [ExtensionsChromiumPublishExtension]:  ./publish-extension.md "Publier une extension | Documents Microsoft"  
 
 [MicrosoftAppDeveloperAgreement]:  /legal/windows/agreements/app-developer-agreement "Contrat du développeur d’applications | Documents Microsoft"  
@@ -119,4 +119,4 @@ Pour plus d’informations, [accédez à Publier une extension.][ExtensionsChrom
 
 [MicrosoftPartnerCenter]:  https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  
 
-[WindowsCommunityEverythingAboutMicrosoftAccounts]:  https://community.windows.com/stories/everything-you-need-to-know-about-microsoft-accounts "Tout ce que vous devez savoir sur les comptes Microsoft | Communauté Windows"  
+[WindowsCommunityEverythingAboutMicrosoftAccounts]:  https://community.windows.com/stories/everything-you-need-to-know-about-microsoft-accounts "Tout ce que vous devez savoir sur les comptes Microsoft | Windows Community"  

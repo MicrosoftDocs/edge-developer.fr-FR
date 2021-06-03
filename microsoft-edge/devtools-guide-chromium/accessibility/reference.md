@@ -36,7 +36,7 @@ Cette page est une référence complète des fonctionnalités d’accessibilité
     
 L’objectif de cette référence est de vous aider à découvrir tous les outils disponibles dans DevTools qui vous aident à examiner l’accessibilité d’une page.  
 
-Si vous recherchez de l’aide sur la navigation de DevTools avec une technologie d’assistance telle qu’un lecteur d’écran, accédez à [Navigation dans Microsoft Edge DevTools With Assistive Technology][DevtoolsAccessibilityNavigation].  
+Si vous recherchez de l’aide sur la navigation de DevTools avec une technologie d’assistance telle qu’un lecteur d’écran, accédez à [Navigation dans Microsoft Edge DevTools with Assistive Technology][DevtoolsAccessibilityNavigation].  
 
 ## <a name="overview-of-accessibility-features-in-microsoft-edge-devtools"></a>Vue d’ensemble des fonctionnalités d’accessibilité Microsoft Edge DevTools  
 
@@ -47,7 +47,7 @@ Lorsque vous déterminez si une page est accessible, vous devez avoir 2 question
 1.  Êtes-vous en mesure de naviguer dans la page à l’aide d’un clavier ou [d’un lecteur d’écran][MDNScreenReader]?  
 1.  Les éléments de la page sont-ils correctement marqués pour les lecteurs d’écran ?  
     
-En règle générale, DevTools doit vous aider à résoudre les erreurs liées aux #2, car ces erreurs sont faciles à détecter de manière automatisée.  La question #1 est tout aussi importante, mais malheureusement, DevTools ne vous y aide pas.  La seule façon de rechercher les erreurs liées aux #1 question consiste à essayer d’utiliser une page avec un clavier ou un lecteur d’écran vous-même.  <!--To learn more, navigate to [How To Do An Accessibility Review][AccessibilityReview].  -->  
+En règle générale, DevTools doit vous aider à résoudre les erreurs liées aux #2, car ces erreurs sont faciles à détecter de manière automatisée.  La question #1 est tout aussi importante, mais malheureusement, DevTools ne vous y aide pas.  La seule façon de rechercher les erreurs liées aux #1 consiste à essayer d’utiliser une page avec un clavier ou un lecteur d’écran vous-même.  <!--To learn more, navigate to [How To Do An Accessibility Review][AccessibilityReview].  -->  
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
@@ -123,7 +123,7 @@ Pour ouvrir le panneau **Accessibilité** :
 
 [L’arborescence d’accessibilité][MDNAccessibilityTree] est un sous-ensemble de l’arborescence DOM.  Il contient uniquement les éléments de l’arborescence DOM qui sont pertinents et utiles pour afficher le contenu d’une page dans un lecteur d’écran.  
 
-Inspectez la position d’un élément dans l’arborescence d’accessibilité à partir du [panneau Accessibilité.](#the-accessibility-panel)  
+Inspectez la position d’un élément dans l’arborescence d’accessibilité à partir [du panneau Accessibilité.](#the-accessibility-panel)  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="Section Arborescence de l’accessibilité" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
    Section Arborescence **de l’accessibilité**  
@@ -208,7 +208,7 @@ Le s picker de couleur vous permet de vérifier que votre texte répond aux nive
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

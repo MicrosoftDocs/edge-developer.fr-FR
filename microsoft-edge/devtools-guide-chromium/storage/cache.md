@@ -35,7 +35,7 @@ Si vous essayez d’inspecter les [données de cache HTTP,][MDNHTTPCaching] ce n
 
 ## <a name="view-cache-data"></a>Afficher les données de cache  
 
-1.  Choisissez **l’onglet Application** pour ouvrir le panneau **Application.**  Le **volet Manifeste** s’ouvre généralement par défaut.  
+1.  Choisissez **l’onglet Application** pour ouvrir le **panneau Application.**  Le **volet Manifeste** s’ouvre généralement par défaut.  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-manifest.msft.png":::
        Volet **** manifeste  
@@ -128,7 +128,7 @@ Si vous essayez d’inspecter les [données de cache HTTP,][MDNHTTPCaching] ce n
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/cache) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

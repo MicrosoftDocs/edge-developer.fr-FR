@@ -34,7 +34,7 @@ Créez un fichier zip qui représente votre package d’extension.  Votre packag
 Les champs suivants dans le manifeste sont automatiquement inclus dans les détails de votre description dans le Store.  Les champs sont en lecture seule sur la page web **des listings dans le** Store.  La page web des descriptions dans le Store est décrite plus loin dans cet article.  Assurez-vous que les valeurs de champ correspondent à votre affichage préféré sur la page web des détails du Store avant de télécharger votre package dans l’Partner Center.  Pour obtenir un exemple du code requis pour le fichier manifeste, examinez les principes de base du fichier manifeste.  
 
 *   `Name` dans le fichier manifeste, qui est le nom complet **sur** la page web des détails de la boutique.  
-*   `Description` dans le fichier manifeste, qui est la **description** courte sur la page web des détails de la boutique.  Fournissez une description courte et brève à afficher en haut de la liste pour votre extension.  Si vous incluez la description courte dans le fichier manifeste d’extension, il s’affiche dans votre description dans le Store.  Si vous n’incluez pas une brève description dans le fichier manifeste, les premières lignes d’affichage dans votre description `Description` dans le Store.  Fournissez une brève description pour éviter toute répétition de contenu sur la page web de description de votre magasin.  
+*   `Description` dans le fichier manifeste, qui est la **description** courte sur la page web des détails de la boutique.  Fournissez une description courte et brève à afficher en haut de la liste pour votre extension.  Si vous incluez la description courte dans le fichier manifeste d’extension, il s’affiche dans votre description dans le Store.  Si vous n’incluez pas de brève description dans le fichier manifeste, les premières lignes d’affichage dans votre description `Description` dans le Store.  Fournissez une brève description pour éviter toute répétition de contenu sur la page web de description de votre magasin.  
     
 ## <a name="submit-your-extension-to-microsoft-edge-add-ons-store"></a>Envoyer votre extension au Microsoft Edge de modules extensions  
 
@@ -50,7 +50,7 @@ Utilisez la page web **Packages** pour télécharger le fichier zip de votre pac
 
 Pour télécharger le package, choisissez et faites glisser le package vers le champ de chargement.  En outre, vous pouvez choisir **Parcourir vos fichiers.**  Une fois le package téléchargé, votre package est validé.  Une fois la validation validée, examinez les détails de l’extension, puis choisissez **Suivant** pour continuer.  S’il existe des erreurs de validation, résolvez les problèmes et essayez à nouveau de télécharger.  
 
-## <a name="step-3--provide-availability-details"></a>Étape 3 : fournir des détails sur la disponibilité  
+## <a name="step-3--provide-availability-details"></a>Étape 3 : Fournir des détails sur la disponibilité  
 
 Sur la **page** web Disponibilité, entrez les informations suivantes sur la disponibilité de votre extension.  
 
@@ -71,7 +71,7 @@ Choisissez l’une des options de visibilité suivantes pour définir si votre e
 Définissez les marchés spécifiques dans lesquels vous envisagez d’offrir votre extension.  Le paramètre par défaut pour les marchés est tous les marchés et inclut les marchés futurs qui seront ajoutés ultérieurement.  Pour choisir des marchés spécifiques, choisissez **Modifier les marchés.**  Basculez les marchés individuels pour exclure chacun d’eux, ou choisissez **Désélectionner** tout, puis ajoutez les marchés de votre choix.  
 
 > [!NOTE]
-> Vous pouvez modifier les marchés où votre extension est proposée.  Un utilisateur qui installe votre extension alors qu’elle est disponible sur le marché de l’utilisateur conserve l’accès à votre extension.  Toutefois, l’utilisateur n’a pas accès aux futures mises à jour envoyées au magasin Microsoft Edge des modules.  
+> Vous pouvez modifier les marchés où votre extension est proposée.  Un utilisateur qui installe votre extension alors qu’elle est disponible sur le marché de l’utilisateur conserve l’accès à votre extension.  Toutefois, l’utilisateur n’a pas accès aux futures mises à jour envoyées au magasin Microsoft Edge de modules.  
 
 Sélectionnez **Enregistrer** pour continuer à la section **Propriétés.**  
 
@@ -86,7 +86,7 @@ Dans la page web **Propriétés,** entrez les informations suivantes pour spéci
 | URL de la politique de confidentialité | URL valide de la politique de confidentialité pour communiquer comment votre extension suit les lois et réglementations en matière de confidentialité.  Vous devez vous assurer que votre extension suit les lois et réglementations en matière de confidentialité.  Vous êtes également responsable de la fourniture d’une URL de stratégie de confidentialité si des informations personnelles sont accessibles, transmises ou collectées par votre extension.  Pour déterminer si votre extension nécessite [][MicrosoftAppDeveloperAgreement] une politique de confidentialité, accédez à Microsoft Edge Contrat du développeur et Microsoft Edge les stratégies de développement [des modules extensions.][MicrosoftEdgeAddonsCatalogDeveloperPolicies]  |  
 | URL du site web | Page web qui fournit des informations supplémentaires sur votre extension.  Le point doit pointer vers une page web sur votre propre site web, et non la liste web de votre extension dans le magasin Microsoft Edge de `Website URL` modules.  Il `Website URL` permet aux utilisateurs d’en savoir plus sur votre extension, ses fonctionnalités et toute autre information pertinente.  |  
 | Coordonnées du support technique | URL de votre page web de support ou adresse de messagerie pour contacter votre équipe de support technique.  |  
-| Contenu mature | Cochez la case pour spécifier si votre extension inclut du contenu mature.  L’évaluation de l’extension permet de déterminer le groupe d’âge approprié de l’audience cible de votre extension.  Pour déterminer si votre extension possède du contenu mature, accédez à Microsoft Edge stratégies de développement du magasin [d’extensions.][MicrosoftEdgeAddonsCatalogDeveloperPolicies]  |  
+| Contenu mature | Cochez la case pour spécifier si votre extension inclut du contenu mature.  L’évaluation de l’extension permet de déterminer le groupe d’âge approprié de l’audience cible de votre extension.  Pour déterminer si votre extension possède un contenu mature, accédez à Microsoft Edge stratégies de développement du magasin [de modules extensions.][MicrosoftEdgeAddonsCatalogDeveloperPolicies]  |  
 
 Choose **Save** to continue to the **Store listings** section.  
 
@@ -115,12 +115,12 @@ Les informations fournies dans la section suivante s’affichent pour les utilis
 | Description courte \(obligatoire\) | Pour modifier le package d’extension, vous devez mettre à jour le champ de description dans votre fichier manifeste de votre package d’extension et `short description` le recharger.  |  
 | Termes de recherche \(facultatif\) | `Search terms` sont des mots ou des expressions qui permettent de découvrir votre extension lorsqu’un utilisateur recherche dans le magasin Microsoft Edge modules.  Les termes de recherche ne sont pas affichés pour les utilisateurs.  |  
 
-### <a name="youtube-video-url-requirements"></a>Exigences relatives à l’URL de la vidéo YouTube  
+### <a name="youtube-video-url-requirements"></a>Conditions requises pour l’URL de la vidéo YouTube  
 
 Assurez-vous que votre vidéo répond aux exigences suivantes.  
 
 *   Vérifiez que le contenu de la vidéo YouTube suit la Microsoft Edge des stratégies de [développement du magasin d’applications.][MicrosoftEdgeAddonsCatalogDeveloperPolicies]  
-*   Désactiver les publicités sur votre vidéo.  Pour plus d’informations, accédez à Définir vos [formats de][GoogleYoutubeAnswer2531367Topic7072227] publicité par défaut et les publicités [sur les vidéos incorporées.][GoogleYoutubeAnswer132596]  
+*   Désactiver les publicités sur votre vidéo.  Pour plus d’informations, [accédez à Définir][GoogleYoutubeAnswer2531367Topic7072227] vos formats de publicité par défaut et les publicités sur les vidéos [incorporées.][GoogleYoutubeAnswer132596]  
 *   Activer l’incorporation de vos vidéos.  Pour plus d’informations, [accédez à Incorporer des vidéos & playlists.][GoogleYoutubeAnswer171780]  
     
 Pour soumettre l’URL vidéo YouTube de votre vidéo, complétez les étapes suivantes.  
@@ -135,7 +135,7 @@ Pour soumettre l’URL vidéo YouTube de votre vidéo, complétez les étapes su
 Les termes de recherche doivent respecter les conditions suivantes.  
 
 *   Vous pouvez entrer des termes de recherche pour utiliser jusqu’à 21 mots au maximum.  Que vous utilisiez des mots simples, des expressions ou une combinaison des deux, vous n’êtes autorisé qu’à un maximum de 21 mots.  
-*   Jusqu’à sept termes de recherche maximum : un seul mot ou une seule expression.  Chaque terme de recherche a une limite de caractères de 30 caractères.  
+*   Jusqu’à sept termes de recherche maximum : un seul mot ou une seule expression.  Chaque terme de recherche est limité à 30 caractères.  
     
 ## <a name="step-6-complete-your-submission"></a>Étape 6 : Terminer votre soumission  
 
@@ -165,7 +165,7 @@ Une fois que votre soumission a été certification, votre extension est publié
 [ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge (Chromium) Extensions | Documents Microsoft"  
 [DeveloperRegistration]: ./create-dev-account.md "S’inscrire en tant Microsoft Edge développeur d’extensions | Documents Microsoft"  
 [PortChromiumExtension]: ../developer-guide/port-chrome-extension.md "Portez votre extension Chromium vers Microsoft Edge | Documents Microsoft"  
-[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Les modules de développement stockent les stratégies de | Documents Microsoft"  
+[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Les modules de développement du magasin de modules | Documents Microsoft"  
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "Contrat du développeur d’applications | Documents Microsoft"  
 

@@ -31,7 +31,7 @@ ms.locfileid: "11564237"
 ---
 # <a name="experimental-features"></a>Fonctionnalités expérimentales  
 
-Microsoft Edge DevTools permet d’accéder aux fonctionnalités expérimentales qui sont encore en développement.  Vous pouvez tester et [fournir des commentaires](#providing-feedback-on-experimental-features) avant la publication de chaque fonctionnalité.  
+Microsoft Edge DevTools permet d’accéder à des fonctionnalités expérimentales en cours de développement.  Vous pouvez tester et [fournir des commentaires](#providing-feedback-on-experimental-features) avant la publication de chaque fonctionnalité.  
 
 Bien que les fonctionnalités expérimentales soient disponibles dans tous les canaux de Microsoft Edge, vous pouvez obtenir les dernières fonctionnalités expérimentales à l’aide canal Microsoft Edge Canary.  
 
@@ -79,7 +79,7 @@ Les sections suivantes décrivent les nouvelles fonctionnalités expérimentales
 *   sécurité  
 *   performance  
 *   Applications web progressives (P.A.S.)  
-*   autres problèmes courants de développement web  
+*   autres problèmes de développement web courants  
     
 [L’expérience webhint][WebhintMain] affiche les commentaires sur le web dans le [panneau Problèmes.][DevtoolsIssuesIndex]  Choisissez un problème pour afficher la documentation de la solution et une liste des ressources affectées sur votre site web.  Choisissez un lien de ressource pour ouvrir **** le volet **Réseau,** **Sources**ou Éléments approprié dans DevTools.  
 
@@ -164,11 +164,11 @@ Pour plus d’informations sur le nouvel éditeur de polices **visuel,** accéde
 
 ### Enable new CSS Flexbox debugging features  
 
-Cette fonctionnalité expérimentale fournit de nombreuses nouvelles visualisations pour vous aider à déboguer les dispositions flexbox CSS.  Pour afficher un aperçu des dernières fonctionnalités expérimentales, [allumez cette expérience](#turn-on-experimental-features) et rechargez DevTools.  
+Cette fonctionnalité expérimentale fournit de nombreuses nouvelles visualisations pour vous aider à déboguer les dispositions flexbox CSS.  Pour afficher un aperçu des dernières fonctionnalités expérimentales, [activer cette expérience](#turn-on-experimental-features) et recharger DevTools.  
 
 #### <a name="display-persistent-overlays-on-flexbox-layouts-with-the-inspect-tool"></a>Afficher des superpositions persistantes sur les dispositions Flexbox à l’aide de l’outil Inspect  
 
-**L’outil Inspect** permet d’identifier et de visualiser rapidement les dispositions flexbox CSS dans un site web en pointant dessus avec la souris.  Choisissez **l’icône Inspect** \( Inspect \) dans le coin supérieur gauche ![ de ](../media/inspect-icon.msft.png) DevTools.  Ensuite, lors du débogage du site web, pointez sur un conteneur flexible pour afficher les contours autour du conteneur flexible.  
+**L’outil Inspect** permet d’identifier et de visualiser rapidement les dispositions flexbox CSS dans un site web en pointant dessus avec la souris.  Choisissez **l’icône Inspect** \( Inspect \) dans le ![ coin supérieur gauche de ](../media/inspect-icon.msft.png) DevTools.  Ensuite, lors du débogage du site web, pointez sur un conteneur flexible pour afficher les contours autour du conteneur flexible.  
 
 :::image type="complex" source="../media/flexbox-hover.msft.png" alt-text="Afficher les conteneurs Flexbox avec l’outil Inspect" lightbox="../media/flexbox-hover.msft.png":::
    Afficher les conteneurs Flexbox avec **l’outil Inspect**  
@@ -193,7 +193,7 @@ Pour faire bascule les superpositions persistantes sur la disposition Flexbox, u
 
 #### <a name="configure-persistent-overlays"></a>Configurer des superpositions persistantes  
 
-Pour configurer les options des superpositions persistantes pour les grilles CSS ou les dispositions Flexbox, utilisez **le** volet De disposition.  Le **volet** Disposition se trouve dans l’outil **Éléments** en côté des **volets Styles** **et** Calculés.  
+Pour configurer les options des superpositions persistantes pour les grilles CSS ou les dispositions Flexbox, utilisez **le** volet Disposition.  Le **volet** Disposition se trouve dans l’outil **Éléments** en plus des **volets Styles** **et** Calculés.  
 
 :::image type="complex" source="../media/flexbox-layout.msft.png" alt-text="Panneau de disposition" lightbox="../media/flexbox-layout.msft.png":::
    Panneau de disposition  
@@ -203,7 +203,7 @@ Pour configurer les options des superpositions persistantes pour les grilles CSS
 
 ### Enable + button tab menus to open more tools  
 
-Vous pouvez maintenant ouvrir d’autres outils à l’aide de la nouvelle icône **Plus d’outils** `+` \( \).  Une fois que vous avez turn on the experiment and reload DevTools, un signe plus \( \) s’affiche à droite du groupe d’onglets en haut de **Enable + button tab menus to open more tools** `+` DevTools.  Pour afficher la liste des autres outils que vous pouvez ajouter à la barre d’onglets, choisissez la nouvelle icône Outils plus **\(** `+` \).  
+Vous pouvez maintenant ouvrir d’autres outils à l’aide de la nouvelle icône **Plus d’outils** \( `+` \).  Une fois que vous avez turn on the experiment and reload DevTools, un signe plus \( \) s’affiche à droite du groupe d’onglets en haut de **Enable + button tab menus to open more tools** `+` DevTools.  Pour afficher la liste des autres outils que vous pouvez ajouter à la barre d’onglets, choisissez la nouvelle icône Outils plus **\(** `+` \).  
 
 :::image type="complex" source="../media/experiments-more-tools-button.msft.png" alt-text="Autres outils dans le volet supérieur" lightbox="../media/experiments-more-tools-button.msft.png":::
    **Autres outils** dans le volet supérieur
@@ -215,10 +215,10 @@ Vous pouvez maintenant ouvrir d’autres outils à l’aide de la nouvelle icôn
 
 Cette expérience remplace **l’outil Nouveautés** par le nouvel outil **Welcome.**  Il affiche une conception actualisée pour le contenu suivant.  
 
-*   Liens vers des documents de développement  
-*   fonctionnalités les plus récentes  
+*   Liens vers des documents de développeur  
+*   les dernières fonctionnalités  
 *   notes de publication  
-*   Option pour contacter l’Microsoft Edge devTools  
+*   Option de contact de l Microsoft Edge devTools  
     
 **L’outil** Welcome s’ouvre automatiquement après chaque mise à jour Microsoft Edge.  Pour empêcher l’affichage de l’outil **d’accueil** **** après chaque mise à jour, cochez la case en regard de l’onglet Ouvrir après chaque mise à jour sous le titre de **l’outil** d’accueil.  
 
@@ -258,10 +258,10 @@ Pour fournir des commentaires sur Microsoft Edge expériences DevTools ou sur to
 
 <!-- links -->  
 
-[Devtools3dViewIndex]: ../3d-view/index.md "3D View | Documents Microsoft"  
+[Devtools3dViewIndex]: ../3d-view/index.md ":::no-loc(vue 3D) ::: | Documents Microsoft"  
 [DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsCustomizeIndex]: ../customize/index.md "Personnalisez Microsoft Edge devTools | Documents Microsoft"  
-[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Paramètres-personnaliser Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsCustomizeIndex]: ../customize/index.md "Personnaliser Microsoft Edge devTools | Documents Microsoft"  
+[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Paramètres - Personnaliser Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Edit keyboard shortcuts for any action in the DevTools | Documents Microsoft"  
 [DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code "Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code | Documents Microsoft"  
 [DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Émuler les appareils à double écran et pliables dans Microsoft Edge devTools | Documents Microsoft"  

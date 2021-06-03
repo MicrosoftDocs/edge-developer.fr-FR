@@ -207,12 +207,12 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 Notez que tout ce que fait JavaScript ci-dessus consiste à inscrire un à `listener` l’aide de la méthode `chrome.runtime.onMessage.addListener` d’API d’extension.  Ce listener attend les messages comme celui que vous avez envoyé à partir de la décrit précédemment avec la méthode `popup.js` `chrome.tabs.sendMessage` API d’extension.  
 
-Le premier paramètre de la méthode est une fonction dont le premier paramètre, request, est les `addListener` détails du message transmis.  N’oubliez pas que lorsque vous avez utilisé la méthode, les attributs du `popup.js` premier paramètre sont et `sendMessage` `url` `imageDivId` .  
+Le premier paramètre de la méthode est une fonction dont le premier paramètre, request, est les `addListener` détails du message transmis.  N’oubliez pas que lorsque vous avez utilisé la méthode, les attributs du premier paramètre sont `popup.js` `sendMessage` et `url` `imageDivId` .  
 
 Lorsqu’un événement est géré par l’écoute, la fonction qui est le premier paramètre est exécuté.  Le premier paramètre de cette fonction est un objet qui possède des attributs attribués par `sendMessage` .  Cette fonction traite simplement les trois lignes de script jQuery.  
 
 *   La première ligne de script insère dynamiquement dans l’en-tête DOM une section que vous devez affecter en tant que **\<style\>** `slide-image` classe à votre `img` élément.  
-*   La deuxième ligne de script permet d’apposer un élément juste en dessous de l’onglet de votre navigateur avec la classe affectée, ainsi que l’ID de cet élément `img` `body` `slide-image` `imageDivId` image.  
+*   La deuxième ligne de script permet d’additioner un élément juste en dessous de l’onglet de votre navigateur avec la classe affectée, ainsi que l’ID de cet élément `img` `body` `slide-image` `imageDivId` image.  
 *   La troisième ligne de script ajoute un événement qui couvre l’intégralité de l’image, ce qui permet à l’utilisateur de sélectionner n’importe où sur l’image et cette image est supprimée de la page \(avec son écoute `click` d’événements\).  
 
 8. Ajouter des fonctionnalités pour supprimer l’image affichée lorsqu’elle est sélectionnée  

@@ -38,7 +38,7 @@ Pour en savoir plus sur les bases, [accédez à Prise en main avec l’affichage
 **L’outil** Elements de DevTools vous permet d’afficher ou de modifier la CSS d’un élément à la fois.  L’élément sélectionné est mis en surbrillant dans **l’arborescence DOM.**  Les styles de l’élément sont affichés dans le **volet Styles.**  Pour un didacticiel, [accédez à Afficher le CSS d’un élément.][DevToolsCSSGetStartedTutorial]  
 
 > [!NOTE]
-> Dans la figure suivante, l’élément qui est mis en surbrillez dans l’arborescence `h1` **DOM** est l’élément sélectionné.  À droite, les styles de l’élément sont affichés dans le **volet Styles.**  À gauche, l’élément est mis en surbrillrillation dans la vue, mais uniquement parce que la souris passe actuellement au-dessus de celui-ci dans l’arborescence **DOM**.  
+> Dans la figure suivante, l’élément mis en surbrillant dans l’arborescence `h1` **DOM** est l’élément sélectionné.  À droite, les styles de l’élément sont affichés dans le **volet Styles.**  À gauche, l’élément est mis en surbrillrillation dans la vue, mais uniquement parce que la souris passe actuellement au-dessus de celui-ci dans l’arborescence **DOM**.  
 
 :::image type="complex" source="../media/css-elements-styles-h1.msft.png" alt-text="Exemple d’élément sélectionné" lightbox="../media/css-elements-styles-h1.msft.png":::
    Exemple d’élément sélectionné  
@@ -93,7 +93,7 @@ Utilisez le **panneau calculé.**  Accédez [à Afficher uniquement le CSS réel
 
 ### <a name="view-inherited-css-properties"></a>Afficher les propriétés CSS héritées  
 
-Cochez **la case Afficher** tout dans le **panneau** calculé.  Accédez [à Afficher uniquement le CSS réellement appliqué à un élément.](#view-only-the-css-that-is-actually-applied-to-an-element)  
+Cochez **la case Afficher** tout dans le panneau **calculé.**  Accédez [à Afficher uniquement le CSS réellement appliqué à un élément.](#view-only-the-css-that-is-actually-applied-to-an-element)  
 
 ### <a name="view-the-box-model-for-an-element"></a>Afficher le modèle de zone d’un élément  
 
@@ -102,7 +102,7 @@ Pour afficher [le modèle de zone d’un][MDNBoxModel] élément, accédez au pa
 Choisissez et modifiez une valeur pour modifier une valeur.  
 
 > [!NOTE]
-> Dans la figure suivante, le diagramme **de modèle Box** dans le panneau **Styles** montre le modèle de case pour l’élément `h1` actuellement sélectionné.  
+> Dans la figure suivante, le diagramme **Modèle** de zone dans le panneau **Styles** montre le modèle de case pour l’élément `h1` actuellement sélectionné.  
 
 :::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="Diagramme du modèle Box" lightbox="../media/css-elements-styles-h1-2.msft.png":::
    Diagramme **du modèle Box**  
@@ -141,7 +141,7 @@ Effectuer les actions suivantes pour faire basculer une pseudo-classe telle `:ac
 > Dans la figure suivante, basculez la `:hover` pseudo-classe.  Dans laport d’affichage, vérifiez que la déclaration est appliquée à l’élément, même si l’élément n’est pas réellement `background-color: cornflowerblue` survolé.  
 
 :::image type="complex" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="Toggle the :hover pseudo-class" lightbox="../media/css-elements-styles-hov-hover.msft.png":::
-   Faire basculer la `:hover` pseudo-classe  
+   Faire bascule la `:hover` pseudo-classe  
 :::image-end:::  
 
 Pour un didacticiel interactif, [accédez à Ajouter un pseudo-état à une classe.][DevToolsCSSGetStartedAddPseudoState]  
@@ -177,7 +177,7 @@ Effectuer les actions suivantes pour afficher une page en mode d’impression.
 1.  Choose **Start instrumenting coverage and refresh the page** \( Start ![ instrumenting coverage and refresh the page ](../media/refresh-icon.msft.png) \).  La page est **** actualisée et l’outil Couverture fournit une vue d’ensemble de la quantité de CSS \(et JavaScript\) utilisée à partir de chaque fichier chargé par le navigateur.  Le vert représente le CSS utilisé.  Le rouge représente les CSS inutilisés.  
     
     :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="Vue d’ensemble de la quantité de CSS (et JavaScript) utilisée et inutilisée" lightbox="../media/css-console-qs-coverage-run.msft.png":::
-       Vue d’ensemble de la quantité de CSS \(et JavaScript\) utilisée et inutilisée  
+       Vue d’ensemble de la quantité de fichiers CSS \(et JavaScript\) utilisées et inutilisées  
     :::image-end:::  
 
 1.  Pour afficher une répartition ligne par ligne du fichier CSS utilisé, choisissez un fichier CSS.  
@@ -293,7 +293,7 @@ Pour ajouter une nouvelle règle de style, complétez les actions suivantes.
 
 #### <a name="choose-which-stylesheet-to-add-a-rule-to"></a>Choisir la feuille de style à laquelle ajouter une règle  
 
-Lorsque [vous ajoutez une nouvelle](#add-a-style-rule)règle de style, choisissez et maintenez la nouvelle règle de style \( Nouvelle règle de style \) pour choisir la feuille de style à laquelle ajouter la règle de **** ![ ](../media/new-style-rule-icon.msft.png) style.  
+Lorsque [vous ajoutez une nouvelle](#add-a-style-rule)règle de style, choisissez et maintenez la nouvelle règle de **style** \( Nouvelle règle de style \) pour choisir la feuille de style à laquelle ajouter la règle ![ de ](../media/new-style-rule-icon.msft.png) style.  
 
 :::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Choisir une feuille de style" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
    Choisir une feuille de style  
@@ -329,7 +329,7 @@ Effectuer les actions suivantes pour révéler la **barre d’outils Plus d’ac
        Révéler **d’autres actions** \( `...` \)  
     :::image-end:::  
     
-1.  Pointez sur **Plus d’actions** \( `...` \) pour révéler les actions mentionnées ci-dessus.  
+1.  Pointez sur **plus d’actions** \( `...` \) pour révéler les actions mentionnées ci-dessus.  
     
     > [!NOTE]
     > **L’action Insérer une règle de style ci-dessous** s’est révélée après avoir survolé **d’autres actions.**  
@@ -338,9 +338,9 @@ Effectuer les actions suivantes pour révéler la **barre d’outils Plus d’ac
        Barre **d’outils Autres actions**  
     :::image-end:::  
     
-### <a name="toggle-a-declaration"></a>Toggle a declaration  
+### <a name="toggle-a-declaration"></a>Faire basculer une déclaration  
 
-Complétez les actions en cours pour faire basculer une déclaration unique sur \(ou off\).  
+Complétez les actions qui s’annoncent pour faire basculer une déclaration unique sur \(ou off\).  
 
 1.  [Sélectionnez un élément.](#choose-an-element)  
 1.  Dans le **volet Styles,** pointez sur la règle qui définit la déclaration.  Une case à cocher s’affiche en regard de chaque déclaration.  
@@ -349,8 +349,8 @@ Complétez les actions en cours pour faire basculer une déclaration unique sur 
 > [!NOTE]
 > Dans la figure suivante, la `margin-top` propriété de l’élément actuellement sélectionné a été éteinte.  
 
-:::image type="complex" source="../media/css-elements-styles-rule-deactivated.msft.png" alt-text="Toggle a declaration" lightbox="../media/css-elements-styles-rule-deactivated.msft.png":::
-   Toggle a declaration  
+:::image type="complex" source="../media/css-elements-styles-rule-deactivated.msft.png" alt-text="Faire basculer une déclaration" lightbox="../media/css-elements-styles-rule-deactivated.msft.png":::
+   Faire basculer une déclaration  
 :::image-end:::  
 
 ### <a name="add-a-background-color-declaration"></a>Ajouter une déclaration de couleur d’arrière-plan  
@@ -408,7 +408,7 @@ Le **s sélectionneur de couleurs** fournit une interface graphique graphique po
 Effectuer les actions suivantes pour ouvrir le **s picker de couleur**.  
 
 1.  [Sélectionnez un élément.](#choose-an-element)  
-1.  Dans le **panneau Styles,** recherchez la déclaration , ou une déclaration similaire, que `color` vous `background-color` souhaitez modifier.  À gauche de la valeur , ou une valeur similaire, se trouve un petit carré qui `color` est un aperçu de la `background-color` couleur.  
+1.  Dans le **panneau Styles,** recherchez la déclaration , ou une déclaration similaire, que `color` vous `background-color` souhaitez modifier.  À gauche de la valeur , ou une valeur similaire, il existe un petit carré qui `color` est un aperçu de la `background-color` couleur.  
     
     > [!NOTE]
     > Dans la figure suivante, le petit carré à gauche est un `rgba(0, 0, 0, 0.7)` aperçu de cette couleur.  
@@ -426,7 +426,7 @@ Effectuer les actions suivantes pour ouvrir le **s picker de couleur**.
 La figure et la liste suivantes dcries de chacun des éléments d’interface utilisateur du s **picker de couleur**.  
 
 :::image type="complex" source="../media/css-elements-styles-rule-color-picker-annotated.msft.png" alt-text="S sélectionneur de couleurs, annoté" lightbox="../media/css-elements-styles-rule-color-picker-annotated.msft.png":::
-   **S’il s’agit d’un**s’il s’agit d’un s’il est annoté  
+   Le **s sélectionneur de couleurs,** annoté  
 :::image-end:::  
 
 :::row:::
@@ -459,7 +459,7 @@ La figure et la liste suivantes dcries de chacun des éléments d’interface ut
       **Copier dans le Presse-papiers**  
    :::column-end:::
    :::column span="2":::
-      Copiez **la valeur d’affichage** dans le Presse-papiers.  
+      Copiez **la valeur d’affichage** dans votre Presse-papiers.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -537,7 +537,7 @@ Lorsque vous ouvrez le s **picker**de couleur, le **eyedropper** \( ![ Eyedroppe
 1.  Choisissez de confirmer.  
     
     > [!NOTE]
-    > Dans la figure suivante, le s **sélectionneur** de couleurs affiche une valeur de couleur actuelle de , qui est proche `rgba(0,0,0,0.7)` du noir.  La couleur spécifique doit changer pour la version du noir qui est actuellement mise en surbrillation dans la vue une fois que vous l’avez choisie.  
+    > Dans la figure suivante, le s **sélectionneur** de couleurs affiche une valeur de couleur actuelle de , qui est proche `rgba(0,0,0,0.7)` du noir.  La couleur spécifique doit changer pour la version du noir qui est actuellement mise en surbrillant dans la vue une fois que vous l’avez choisie.  
     
     :::image type="complex" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="Utilisation du eyedropper" lightbox="../media/css-color-picker-eye-dropper.msft.png":::
        Utilisation du eyedropper  
@@ -567,7 +567,7 @@ Lorsque vous ouvrez le s **picker**de couleur, le **eyedropper** \( ![ Eyedroppe
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/css/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

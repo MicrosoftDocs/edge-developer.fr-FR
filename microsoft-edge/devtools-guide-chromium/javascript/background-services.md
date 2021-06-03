@@ -55,8 +55,8 @@ Le journal des événements du service en arrière-plan peut vous aider à vous 
 1.  Ouvrez **l’outil Application.**  
 1.  Ouvrez le **panneau Extraction en arrière-plan.**  
     
-    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="Panneau Extraction en arrière-plan" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
-       Panneau **Extraction en arrière-plan**  
+    :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="Panneau Extraction d’arrière-plan" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
+       Panneau **Extraction d’arrière-plan**  
     :::image-end:::  
     
 1.  Choose **Record** \( ![ Record ](../media/record-icon.msft.png) \).  
@@ -126,7 +126,7 @@ Une fois **qu’un employé** de service a reçu un [message push][MDNPush] d’
     
 ## <a name="push-messages"></a>Push Messages  
 
-Pour afficher une notification Push **** à un utilisateur, un service de travail doit d’abord utiliser l’API Push [Message][MDNPush] pour recevoir des données à partir d’un serveur.  Lorsque le service de travail est prêt à afficher la notification, il utilise [l’API Notifications][MDNNotifications].  Pour enregistrer les messages push pendant 3 jours, même lorsque DevTools n’est pas ouvert :  
+Pour afficher une notification Push **** à un utilisateur, un service de travail doit d’abord utiliser l’API Push [Message][MDNPush] pour recevoir des données à partir d’un serveur.  Lorsque le service de travail est prêt à afficher la notification, il utilise [l’API Notifications.][MDNNotifications]  Pour enregistrer les messages push pendant 3 jours, même lorsque DevTools n’est pas ouvert :  
 
 1.  [Ouvrez DevTools][OpenDevTools].  
 1.  Ouvrez **l’outil Application.**  
@@ -169,7 +169,7 @@ Pour afficher une notification Push **** à un utilisateur, un service de travai
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

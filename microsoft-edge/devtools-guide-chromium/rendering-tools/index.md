@@ -57,7 +57,7 @@ Le tableau suivant décrit certains problèmes JavaScript courants et les soluti
 
 | Problème | Exemple | Solution |  
 |:--- |:--- |:--- |  
-| Des handlers d’entrée coûteux affectent la réponse ou l’animation.  | Tactile, défilement parallaxe.  | Laissez le navigateur gérer les effets tactiles et les défilements, ou lier l’écoute aussi tard que possible.  Accédez à [Des handlers d’entrée coûteux dans la liste][WebPerformanceCalendarRuntimeChecklist]de contrôle des performances d’exécution de Paul Contrôle.  |  
+| Des handlers d’entrée coûteux affectent la réponse ou l’animation.  | Tactile, défilement parallaxe.  | Laissez le navigateur gérer les effets tactiles et les défilements, ou lier l’écoute aussi tard que possible.  Accédez à [Des handlers d’entrée coûteux dans la][WebPerformanceCalendarRuntimeChecklist]liste de contrôle des performances d’exécution de Paul Contrôle.  |  
 | JavaScript mal timed affectant la réponse, l’animation, le chargement.  | L’utilisateur défile immédiatement après le chargement de la page, setTimeout/setInterval.  | Optimiser le runtime JavaScript : utiliser `requestAnimationFrame` , répartir la manipulation DOM sur des images, utiliser les travailleurs [web][MDNUsingWebWorkers].  |  
 | JavaScript de longue durée affectant la réponse.  | [L’événement DOMContentLoaded][MDNUsingWebWorkers] se bloque au cours de son travail JS.  | Déplacez le travail de calcul pur vers les [travailleurs web.][MDNUsingWebWorkers]  Si vous avez besoin d’un accès DOM, utilisez `requestAnimationFrame` .  <!--Navigate to [Optimize JavaScript Execution][WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime].  -->  |  
 | Scripts garbage-y affectant la réponse ou l’animation.  | Le garbage collection peut se produire n’importe où.  | Écrivez moins de scripts garbage-y.  Accédez au garbage collection dans Animation dans la liste de contrôle des [performances runtime de Paul Contrôle.][WebPerformanceCalendarRuntimeChecklist]  |  
@@ -101,7 +101,7 @@ Le tableau suivant décrit certains problèmes de style courants et les solution
 | Problème | Exemple | Solution |  
 |:--- |:--- |:--- |  
 | Calculs de style coûteux affectant la réponse ou l’animation.  | Toute propriété CSS qui modifie la géométrie d’un élément, comme la largeur, la hauteur ou la position ; le navigateur vérifie tous les autres éléments et recalcule la disposition.  | Éviter les CSS qui déclenchent des dispositions |  
-| Sélecteurs complexes affectant la réponse ou l’animation.  | Les sélecteurs imbriques forcent le navigateur à tout savoir sur tous les autres éléments, y compris les parents et les enfants.  | Référencez un élément dans votre CSS avec une simple classe.  |  
+| Sélecteurs complexes affectant la réponse ou l’animation.  | Les sélecteurs imbrmbrés forcent le navigateur à tout savoir sur tous les autres éléments, y compris les parents et les enfants.  | Référencez un élément dans votre CSS avec une simple classe.  |  
 
 <!--todo: add Avoid CSS that triggers layouts section when available -->  
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations (Reference an element in your CSS with just a class) section when available -->  
@@ -116,7 +116,7 @@ Le tableau suivant décrit certains problèmes de style courants et les solution
 
 La disposition (ou le réaflow dans Firefox) est le processus par lequel le navigateur calcule les positions et les tailles de tous les éléments d’une page.  Le modèle de disposition du site web signifie qu’un élément peut affecter d’autres éléments ; Par exemple, la largeur de l’élément affecte généralement la largeur des éléments enfants, et ainsi de suite, tout en haut et en bas de `<body>` l’arborescence.  Le processus peut être assez complexe pour le navigateur.  
 
-En règle générale, si vous demandez une valeur géométrique à partir du DOM avant la fin d’une image, vous allez vous retrouver avec des « dispositions synchrones forcées », ce qui peut être un goulot d’étranglement important en cas de répétition fréquente ou d’exécution pour une arborescence DOM de grande taille.  
+En règle générale, si vous demandez une valeur géométrique à partir du DOM avant la fin d’une image, vous vous retrouverez avec des « dispositions synchrones forcées », ce qui peut être un goulot d’étranglement important en cas de répétition fréquente ou d’exécution pour une arborescence DOM de grande taille.  
 
 <!--Related Guides:  
 
@@ -138,7 +138,7 @@ La « disposition de disposition » est une répétition de conditions de dispos
 
 ### <a name="layout-problems"></a>Disposition : problèmes  
 
-Le tableau suivant décrit certains problèmes de disposition courants et les solutions potentielles.  
+Le tableau suivant décrit certains problèmes courants de disposition et les solutions potentielles.  
 
 | Problème | Exemple | Solution |  
 |:--- |:--- |:--- |  
@@ -218,7 +218,7 @@ Le tableau suivant décrit certains problèmes courants liés aux images et aux 
 > La page d’origine est trouvée ici et est co-auteure par [Les Basques DeCénais (Rédacteur][KayceBasques] technique, Chrome DevTools \& Writer\) et [Meggin Kearney][MegginKearney] \(Tech Writer\). [](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

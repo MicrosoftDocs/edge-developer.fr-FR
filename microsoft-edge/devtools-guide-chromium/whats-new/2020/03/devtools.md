@@ -29,13 +29,13 @@ ms.locfileid: "11564951"
    limitations under the License.  -->  
 # <a name="whats-new-in-devtools-microsoft-edge-83"></a>Nouveautés de DevTools (Microsoft Edge 83)  
 
-Suite à la mise à jour Chromium planification, nous ajustons notre planification pour les Microsoft Edge à venir et l’annulation de la Microsoft Edge version 82. Consultez notre [billet de blog pour][WindowsBlogStableRelease] plus d’informations.  
+En suivant la planification Chromium mise à jour, nous ajustons notre planification pour les Microsoft Edge à venir et l’annulation de la Microsoft Edge version 82. Consultez notre [billet de blog pour][WindowsBlogStableRelease] plus d’informations.  
 
 Voici les nouvelles fonctionnalités disponibles dans DevTools dans Microsoft Edge 83.  
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Annonces de l’équipe Microsoft Edge DevTools  
 
-Les sections suivantes sont une liste d’annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités dans DevTools, Microsoft Visual Studio extensions de code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez-nous [sur Twitter.][EdgeDevToolsTwitterAccount]  
+Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités dans DevTools, Microsoft Visual Studio extensions de code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez-nous [sur Twitter.][EdgeDevToolsTwitterAccount]  
 
 ### <a name="remotely-debug-microsoft-edge-on-windows-10-devices"></a>Débogage à distance Microsoft Edge sur Windows 10 périphériques  
 
@@ -45,7 +45,7 @@ Les sections suivantes sont une liste d’annonces que vous avez peut-être manq
    Application [Outils à distance pour Microsoft Edge (bêta)][RemoteTools] disponible dans le [Microsoft Store][MicrosoftStore]  
 :::image-end:::  
 
-[Lisez notre guide pour la configuration de votre Windows 10 et de votre ordinateur de développement pour le débogage à distance.][DevtoolsRemoteDebuggingWindows]  Faites-nous part de votre expérience de débogage à distance en [tweetant][PostTweetEdgeDevTools] ou en déconant l’icône [Envoyer des](#getting-in-touch-with-microsoft-edge-devtools-team) commentaires !  
+[Lisez notre guide pour la configuration de votre Windows 10 et de votre ordinateur de développement pour le débogage à distance.][DevtoolsRemoteDebuggingWindows]  Faites-nous part de votre expérience de débogage à distance en [tweetant][PostTweetEdgeDevTools] ou en cingnant l’icône [Envoyer des](#getting-in-touch-with-microsoft-edge-devtools-team) commentaires !  
 
 ### <a name="new-ways-to-access-settings"></a>Nouvelles façons d’accéder Paramètres  
 
@@ -95,7 +95,7 @@ Dans Microsoft Edge 81 et les **** précédentes, l’onglet Propriétés du pan
 
 Dans Microsoft Edge 83, vous pouvez désormais afficher les propriétés de l’élément actuellement sélectionné après une actualisation de page dans l’onglet **Propriétés.**  
 
-:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="Dans Microsoft Edge 83, l’onglet Propriétés affiche les propriétés de l’élément actuellement sélectionné après l’actualisation d’une page" lightbox="../../media/2020/03/properties-in-82.msft.png":::
+:::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="Dans Microsoft Edge 83, l’onglet Propriétés affiche les propriétés de l’élément actuellement sélectionné après une actualisation de page" lightbox="../../media/2020/03/properties-in-82.msft.png":::
    Dans Microsoft Edge 83, l’onglet Propriétés affiche les propriétés de l’élément actuellement sélectionné après une actualisation de page ****  
 :::image-end:::  
 
@@ -129,7 +129,7 @@ Ouvrez [l’onglet][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTool] Re
    Émulation d’une vision floue  
 :::image-end:::  
 
-DevTools est en mesure d’émuler la vision floue et les types suivants de [défauts de vision de couleur.][ColorBlindnessTypes]  
+DevTools est en mesure d’émuler la vision floue et les types suivants de défauts [de vision de couleur.][ColorBlindnessTypes]  
 
 | Problèmes de vision des couleurs | Détails |  
 |:--- |:--- |  
@@ -138,7 +138,7 @@ DevTools est en mesure d’émuler la vision floue et les types suivants de [dé
 | Tritanopia | L’incapacité à percevoir la lumière bleue. |  
 | Achromatopsia | L’incapacité à percevoir n’importe quelle couleur, à l’exception des nuances de gris \(extrêmement rares\). |  
 
-Il existe des versions moins extrêmes de ces insuffisances de vision des couleurs et, en fait, elles sont plus courantes.  
+Il existe des versions moins extrêmes de ces défaillances de la vision des couleurs et, en fait, elles sont plus courantes.  
 Par exemple, le protanomaly est une sensibilité réduite à la lumière rouge (par opposition à la protanopie, qui est l’incapacité totale à percevoir la lumière rouge). Toutefois, ces défaillances visuelles **-omaly** ne sont pas aussi clairement définies : chaque personne atteinte d’une telle défaillance visuelle est différente et peut voir les choses différemment \(être en mesure de percevoir plus/moins les couleurs pertinentes\).  
 
 En concevant des simulations plus extrêmes dans DevTools, vos applications web sont garanties d’être accessibles aux personnes avec protanomaly, deuteranomaly, tritanomaly et achromatomaly également.  
@@ -292,17 +292,17 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 [DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTool]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "Analyser les performances de rendu avec l’outil de rendu | Documents Microsoft"  
 [DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: ../../../evaluate-performance/reference.md#view-main-thread-activity "Afficher l’activité du thread principal | Documents Microsoft"  
 [DevtoolsJavascriptBreakpointsLineCode]: ../../../javascript/breakpoints.md#line-of-code-breakpoints "Points d’arrêt de ligne de code : comment suspendre votre code avec des points d’arrêt Microsoft Edge devTools | Documents Microsoft"  
-[DevtoolsNetworkReferenceFilterRequestsProperties]: ../../../network/reference.md#filter-requests-by-properties "Filtrer les demandes par propriétés – Référence de l’analyse réseau | Documents Microsoft"  
+[DevtoolsNetworkReferenceFilterRequestsProperties]: ../../../network/reference.md#filter-requests-by-properties "Filtrer les demandes par propriétés : référence de l’analyse réseau | Documents Microsoft"  
 [DevtoolsRemoteDebuggingWindows]: ../../../remote-debugging/windows.md "Prise en main le débogage à distance Windows 10 appareils | Documents Microsoft"  
 
-[ProgressiveWebAppsChromiumIndex]: ../../../../progressive-web-apps-chromium/index.md "Applications web progressives sur Windows | Documents Microsoft"  
+[ProgressiveWebAppsChromiumIndex]: ../../../../progressive-web-apps-chromium/index.md "Applications web progressives sur Windows | Microsoft Docs"  
 
 [WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows Vue d’ensemble de Device Portal"  
 
 [RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Outils à distance pour Microsoft Edge (bêta)"  
 [MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canaux d’aperçu Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canaux de préversion de Microsoft Edge"  
 
 [WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "Mise à jour sur les canaux stables pour Microsoft Edge"  
 
@@ -336,17 +336,17 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 [CR1050855]: https://crbug.com/1050855 "Problème 1050855 : Paramètres’affichage est difficile à découvrir"
 [CR1056348]: https://crbug.com/1056348 "Problème 1056348 : Actualisation des composants de la barre d’informations"
 
-[COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn "EXPLICATION ET COEP - Stratégie d’ouverture d’origine croisée"  
-[COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2 "EXPLICATION ET COEP - Stratégie d’incorporation d’origine croisée"  
+[COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn "EXPLICATION ET COEP – Stratégie d’ouverture d’origines croisées"  
+[COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2 "EXPLICATION ET COEP – Stratégie d’incorporation d’origines croisées"  
 
-[GithubGoogleChromeLighthouse]: https://github.com/GoogleChrome/lighthouse "| GitHub"  
+[GithubGoogleChromeLighthouse]: https://github.com/GoogleChrome/lighthouse "Les | GitHub"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
 > La page d’origine est disponible [ici](https://developer.chrome.com/blog/new-in-devtools-83) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

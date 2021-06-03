@@ -127,8 +127,8 @@ Le tableau suivant répertorie les raccourcis qui sont toujours désactivés dan
 | Barre de menus Focus | `F10` |  
 | Afficher le menu Identité `*` | `Ctrl`+`Shift`+`M` |  
 | Browser Task Manager `*` | `Shift`+`Escape` |  
-| Commentaires sur Edge `*` | `Shift`+`Alt`+`I` |  
-| Désactiver l’onglet `*` | `Ctrl`+`M` |  
+| Commentaires edge `*` | `Shift`+`Alt`+`I` |  
+| Désactiver le son de l’onglet `*` | `Ctrl`+`M` |  
 | Nouvelle fenêtre Incognito | `Ctrl`+`Shift`+`N` |  
 | Nouvel onglet | `Ctrl`+`T` |  
 | Nouvelle fenêtre | `Ctrl`+`N` |  

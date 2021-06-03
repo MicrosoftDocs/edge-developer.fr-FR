@@ -73,7 +73,7 @@ Complétez ces didacticiels interactifs pour découvrir les principes de base de
 Utilisez le **panneau Styles** lorsque vous souhaitez modifier ou ajouter des déclarations CSS à un élément.  
 
 > [!NOTE]
-> Complétez le didacticiel [Afficher les CSS d’un](#view-the-css-for-an-element) élément avant de le faire.  
+> Complétez le didacticiel [Afficher le CSS d’un](#view-the-css-for-an-element) élément avant de le faire.  
 
 1.  [Ouvrez des exemples CSS.](#open-css-examples)  
 1.  Pointez sur `Add A Background Color To Me!` le texte, ouvrez le menu contextuel \(clic droit\), puis choisissez **Inspecter**.  
@@ -90,7 +90,7 @@ Utilisez le **panneau Styles** lorsque vous souhaitez modifier ou ajouter des d�
 Pour afficher l’apparence d’un élément lorsqu’une classe CSS est appliquée à un élément ou supprimée d’un élément, accédez au **panneau Styles.**  
 
 > [!NOTE]
-> Complétez le didacticiel [Afficher les CSS d’un](#view-the-css-for-an-element) élément avant de le faire.  
+> Complétez le didacticiel [Afficher le CSS d’un](#view-the-css-for-an-element) élément avant de le faire.  
 
 1.  [Ouvrez des exemples CSS.](#open-css-examples)  
 1.  Pointez sur `Add A Class To Me!` le texte, ouvrez le menu contextuel \(clic droit\), puis choisissez **Inspecter**.  
@@ -106,7 +106,7 @@ Pour afficher l’apparence d’un élément lorsqu’une classe CSS est appliqu
 Utilisez le **panneau Styles** pour appliquer définitivement un pseudo-état CSS à un élément.  DevTools prend `:active` en charge , et `:focus` `:hover` `:visited` .  
 
 > [!NOTE]
-> Complétez le didacticiel [Afficher les CSS d’un](#view-the-css-for-an-element) élément avant de le faire.  
+> Complétez le didacticiel [Afficher le CSS d’un](#view-the-css-for-an-element) élément avant de le faire.  
 
 1.  [Ouvrez des exemples CSS.](#open-css-examples)  
 1.  Pointez sur le `Hover Over Me!` texte.  La couleur d’arrière-plan change.  
@@ -123,7 +123,7 @@ Utilisez le **panneau Styles** pour appliquer définitivement un pseudo-état CS
 Utilisez le diagramme interactif **De modèle** de zone dans le panneau **Styles** pour modifier la largeur, la hauteur, l’espacement, la marge ou la longueur de bordure d’un élément.  
 
 > [!NOTE]
-> Complétez le didacticiel [Afficher les CSS d’un](#view-the-css-for-an-element) élément avant de le faire.  
+> Complétez le didacticiel [Afficher le CSS d’un](#view-the-css-for-an-element) élément avant de le faire.  
 
 1.  [Ouvrez des exemples CSS.](#open-css-examples)  
 1.  Pointez sur `Change My Margin!` le texte, ouvrez le menu contextuel \(clic droit\), puis choisissez **Inspecter**.  
@@ -132,7 +132,7 @@ Utilisez le diagramme interactif **De modèle** de zone dans le panneau **Styles
     > [!NOTE]
     > Selon la taille de votre fenêtre DevTools, vous devrez peut-être faire défiler jusqu’au bas du panneau **Styles** pour afficher le **modèle box**.  
 
-1.  Double-cliquez sur la marge de gauche dans le modèle **Box,** qui a actuellement une valeur qui signifie que l’élément `-` n’a pas de marge de gauche.  
+1.  Double-cliquez sur la marge de gauche dans le modèle **box,** qui a actuellement une valeur qui signifie que l’élément `-` n’a pas de marge de gauche.  
 1.  Tapez `100px` et sélectionnez `Enter` .  Par **défaut, le** modèle Box est en pixels, mais il accepte également d’autres valeurs, telles `25%` que , ou `10vw` .  
     
     :::row:::
@@ -154,7 +154,7 @@ Utilisez le diagramme interactif **De modèle** de zone dans le panneau **Styles
 
 Si vous souhaitez déboguer ou tester les requêtes multimédias que vous avez définies dans votre CSS, utilisez les étapes suivantes.  
 
-1.  Ouvrez les outils **** de développement et sélectionnez l’icône de la barre d’outils de l’appareil bascule en deuxième position en haut à gauche, ou sélectionnez `Ctrl` + `Shift` + `M` \( `Cmd` + `Shift` + `M` sur macOS\).  
+1.  Ouvrez les outils **** de développement et sélectionnez l’icône de barre d’outils bascule de l’appareil en deuxième position en haut à gauche, ou sélectionnez `Ctrl` + `Shift` + `M` \( `Cmd` + `Shift` + `M` sur macOS\).  
     
     :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="Ouvrir la barre d’outils de l’appareil" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
        Ouvrir la barre d’outils de l’appareil  
@@ -195,7 +195,7 @@ Si vous souhaitez déboguer ou tester les requêtes multimédias que vous avez d
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/css/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

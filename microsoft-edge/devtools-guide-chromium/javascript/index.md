@@ -75,7 +75,7 @@ DevTools fournit de nombreux outils différents pour différentes tâches.  Les 
     
 ## <a name="step-3-pause-the-code-with-a-breakpoint"></a>Étape 3 : Suspendre le code avec un point d’arrêt  
 
-Une méthode courante pour le débogage de ce type de problème consiste à insérer plusieurs instructions dans le code, puis à inspecter les valeurs à mesure que `console.log()` le script s’exécute.  Exemple :  
+Une méthode courante pour le débogage de ce type de problème consiste à insérer plusieurs instructions dans le code, puis à inspecter les valeurs à mesure que `console.log()` le script s’exécute.  Par exemple :  
 
 ```javascript
 function updateLabel() {
@@ -92,7 +92,7 @@ function updateLabel() {
 La `console.log()` méthode peut faire le travail, mais les points **d’arrêt** le sont plus rapidement.  Un point d’arrêt vous permet de suspendre votre code au milieu de l’runtime et d’examiner toutes les valeurs à ce moment-là.  Les points d’arrêt ont les avantages suivants par rapport à la `console.log()` méthode.  
 
 *   Avec , vous devez ouvrir manuellement le code source, trouver le code approprié, insérer les instructions, puis actualiser la page web pour afficher les messages dans `console.log()` `console.log()` la **console**.  Avec les points d’arrêt, vous pouvez suspendre le code pertinent sans même savoir comment le code est structuré.  
-*   Dans vos `console.log()` instructions, vous devez spécifier explicitement chaque valeur que vous souhaitez inspecter.  Avec les points d’arrêt, DevTools vous montre les valeurs de toutes les variables à ce moment-là.  Parfois, les variables qui affectent votre code sont masquées et obscurcies.  
+*   Dans vos `console.log()` instructions, vous devez spécifier explicitement chaque valeur que vous souhaitez inspecter.  Avec les points d’arrêt, DevTools affiche les valeurs de toutes les variables à ce moment-là.  Parfois, les variables qui affectent votre code sont masquées et obscurcies.  
     
 En bref, les points d’arrêt peuvent vous aider à trouver et corriger les bogues plus rapidement que la `console.log()` méthode.  
 
@@ -119,9 +119,9 @@ Si vous revenir en arrière et réfléchissez au fonctionnement de l’applicati
 
 <!--todo: add inprivate section when available -->  
 
-**Les points d’arrêt d’écoute d’événements** ne sont qu’un des nombreux types de points d’arrêt disponibles dans DevTools.  Mémorisez tous les différents types pour vous aider à déboguer les différents scénarios aussi rapidement que possible.  <!--  To learn when and how to use each type, navigate to [Pause your code with breakpoints][JSBreakpoints].  -->  
+**Les points d’arrêt de l’écoute** d’événements ne sont qu’un des nombreux types de points d’arrêt disponibles dans DevTools.  Mémorisez tous les différents types pour vous aider à déboguer les différents scénarios aussi rapidement que possible.  <!--  To learn when and how to use each type, navigate to [Pause your code with breakpoints][JSBreakpoints].  -->  
 
-## <a name="step-4-step-through-the-code"></a>Étape 4 : Procédure pas à pas dans le code  
+## <a name="step-4-step-through-the-code"></a>Étape 4 : Pas à pas dans le code  
 
 Une cause courante de bogues est lorsqu’un script s’exécute dans un mauvais ordre.  La procédure pas à pas de votre code vous permet de parcourir l’runtime de votre code.  Vous pouvez parcourir une ligne à la fois pour déterminer exactement où votre code s’exécute dans un ordre différent de celui prévu.  Essayez maintenant :  
 
@@ -134,7 +134,7 @@ Une cause courante de bogues est lorsqu’un script s’exécute dans un mauvais
     > [!NOTE]
     > DevTools ignore quelques lignes de code.  En effet, étant donné que la qualité est false, le `inputsAreEmpty()` bloc de code de l’instruction ne `if` s’exécute pas.  
     
-1.  Dans l’outil **Sources** de DevTools, sélectionnez Pas à pas dans l’appel de fonction suivante **\(** Pas à pas dans l’appel de fonction suivant \) pour exécuter la fonction, une ligne à la ![ ](../media/step-into-icon.msft.png) `updateLabel()` fois.  
+1.  Dans l’outil **Sources** de DevTools, choisissez Pas à pas dans l’appel de fonction suivante **\(** Pas à pas dans l’appel de fonction suivant \) pour passer pas à pas dans l’runtime de la fonction, une ligne à la ![ ](../media/step-into-icon.msft.png) `updateLabel()` fois.  
     
 Passer en revue une ligne à la fois est l’idée de base qui consiste à passer en revue le code pas à pas.  Si vous examinez le code `get-started.js` dans , le bogue se trouve probablement quelque part dans la `updateLabel()` fonction.  Au lieu d’aller pas à pas dans chaque ligne de code, vous pouvez utiliser un autre type de point d’arrêt pour suspendre le code plus près de l’emplacement probable du bogue.  
 
@@ -171,7 +171,7 @@ Si vous faites une pause **** sur une ligne de code, le volet Étendue affiche l
 
 Le **volet** Observateur vous permet de surveiller les valeurs des variables (par exemple) ou `sum` des expressions (par `typeof sum` exemple).  Vous pouvez stocker n’importe quelle expression JavaScript valide dans une expression d’observation.  
 
-1.  Sélectionnez **le volet** d’observation.  
+1.  Choisissez le **volet** d’observation.  
 1.  Choose **Add watch expression** \( Add watch expression ![ ](../media/add-expression-icon.msft.png) \).  
 1.  Tapez `typeof sum`.  
 1.  Sélectionnez `Enter` .  DevTools `typeof sum: "string"` s’affiche.  La valeur à droite du deux-points est le résultat de votre Expression d’observation.  
@@ -212,7 +212,7 @@ Nous avons identifié un correctif possible pour le bogue.  Ensuite, modifiez le
 
 ## <a name="next-steps"></a>Étapes suivantes  
 
-Félicitations!  Vous savez maintenant comment utiliser au mieux les Microsoft Edge DevTools lors du débogage de JavaScript.  Les outils et méthodes que vous avez appris dans cet article peuvent vous faire gagner un nombre d’heures.  
+Félicitations !  Vous savez maintenant comment utiliser au mieux les Microsoft Edge DevTools lors du débogage de JavaScript.  Les outils et méthodes que vous avez appris dans cet article peuvent vous faire gagner un nombre d’heures.  
 
 Cet article a présenté deux façons de définir des points d’arrêt.  DevTools fournit également des moyens de définir des points d’arrêt pour suspendre votre code lorsque certaines conditions sont remplies, telles que :
 
@@ -222,9 +222,9 @@ Cet article a présenté deux façons de définir des points d’arrêt.  DevToo
     
 Pour plus d’informations sur le moment et la façon d’utiliser chaque type, accédez à [Suspendre votre code avec des points d’arrêt.][DevToolsJavscriptBreakpoints]  
 
-Quelques contrôles de code pas à pas ne sont pas expliqués dans cet article.  Pour plus d’informations, accédez à la ligne pas à pas dans l’article « Utiliser les fonctionnalités du débogger ». [][DevToolsJavascriptReferenceStepThroughCode]
+Quelques contrôles pas à pas de code ne sont pas expliqués dans cet article.  Pour plus d’informations, accédez à la ligne pas à pas dans l’article « Utiliser les fonctionnalités du débogger ». [][DevToolsJavascriptReferenceStepThroughCode]
 
-### <a name="see-also"></a>Voir également
+### <a name="see-also"></a>Articles associés
 
 *   [Utilisez les fonctionnalités du débogger][DevToolsJavascriptReference] : à l’aide de l’interface utilisateur du débogger dans l’outil Sources.
 *   [Vue d’ensemble][DevToolsSourcesIndex] de l’outil Sources : présente le débogger JavaScript et l’éditeur de code.
@@ -249,7 +249,7 @@ Quelques contrôles de code pas à pas ne sont pas expliqués dans cet article. 
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/javascript/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

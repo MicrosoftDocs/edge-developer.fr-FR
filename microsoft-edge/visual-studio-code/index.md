@@ -1,12 +1,12 @@
 ---
-description: Microsoft Edge (chrome) et code Visual Studio
-title: VisualStudioCode
+description: Microsoft Edge (Chromium) et Visual Studio Code
+title: Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: Microsoft Edge, développement Web, outils F12, devtools, code vs, code Visual Studio, débogueur, webhint
+keywords: microsoft edge, développement web, outils f12, devtools, vs code, visual studio code, débogueur, webhint
 ms.openlocfilehash: 1aa5b66043e87ebb0f1b848dcd60e2553b378f36
 ms.sourcegitcommit: a35a6b5bbc21b7df61d08cbc6b074b5325ad4fef
 ms.translationtype: MT
@@ -14,99 +14,99 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 12/17/2020
 ms.locfileid: "11230690"
 ---
-# Présentation du code Visual Studio  
+# Vue d’ensemble du Visual Studio Code  
 
-Le [code Visual Studio][VisualStudioCodeDocs] est un éditeur de code source léger, mais puissant.  Le [code Visual Studio][VisualStudioCodeDocs] est disponible pour Windows, Linux et MacOS.  Il inclut une prise en charge intégrée pour JavaScript, la machine à écrire et Node.js, donc c’est un excellent outil pour les développeurs Web avant de le personnaliser.  Si vous ne l’utilisez pas encore, téléchargez le [code Visual Studio][VisualstudioCode].  
+[Visual Studio Code][VisualStudioCodeDocs] est un éditeur de code source léger mais puissant.  [Visual Studio Code][VisualStudioCodeDocs] est disponible pour Windows, Linux et macOS.  Il inclut la prise en charge intégrée de JavaScript, TypeScript et Node.js, c’est donc un excellent outil pour les développeurs web avant de le personnaliser.  Si vous ne l’utilisez pas encore, [téléchargez Visual Studio Code][VisualstudioCode].  
 
 ## Extensions  
 
 <!--todo: We want to put something like the tiles for extensions Visual Studio Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 
-Pour acquérir les extensions mises en surbrillance ci-dessous, accédez à extensions \(sélectionnez `Ctrl` + `Shift` + `X` sur Windows/Linux ou `Command` + `Shift` + `X` Mac \) dans le code Visual Studio.  
+Pour acquérir l’une des extensions mises en évidence ci-dessous, accédez à Extensions \(sélectionnez sur Windows/Linux ou sur `Ctrl` + `Shift` + `X` `Command` + `Shift` + `X` macOS\) dans Visual Studio Code.  
 
-Recherchez l’extension dans Marketplace et sélectionnez **installer**.  
+Recherchez l’extension spécifique sur Marketplace et choisissez **Installer.**  
 
-:::image type="complex" source="./media/vscode-debugger-install.png" alt-text="Installer le débogueur pour l’extension de code Visual Studio Visual Studio" lightbox="./media/vscode-debugger-install.png":::
-   Installer le **débogueur pour** l’extension de code Visual Studio Visual Studio  
+:::image type="complex" source="./media/vscode-debugger-install.png" alt-text="Installer le débogger pour l Microsoft Edge Visual Studio Code extension" lightbox="./media/vscode-debugger-install.png":::
+   Installer le **débogger pour l Microsoft Edge** Visual Studio Code extension  
 :::image-end:::  
 
 :::row:::
    :::column span="1":::
-      :::image type="complex" source="./media/visual-studio-code-extension-debugger-for-microsoft-edge.msft.png" alt-text="Débogueur de l’extension de code Visual Studio Visual Studio" lightbox="./media/visual-studio-code-extension-debugger-for-microsoft-edge.msft.png":::
-         **Débogueur pour Microsoft Edge** Extension de code Visual Studio  
+      :::image type="complex" source="./media/visual-studio-code-extension-debugger-for-microsoft-edge.msft.png" alt-text="Débogger pour l Microsoft Edge Visual Studio Code extension" lightbox="./media/visual-studio-code-extension-debugger-for-microsoft-edge.msft.png":::
+         **Débogger pour l Microsoft Edge** Visual Studio Code extension  
       :::image-end:::  
-      [Débogueur pour Microsoft Edge](#debugger-for-microsoft-edge)  
+      [Débogger pour Microsoft Edge](#debugger-for-microsoft-edge)  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="./media/visual-studio-code-extension-microsoft-edge-tools-for-visual-studio-code.msft.png" alt-text="Extensions de code Visual Studio Microsoft Edge Tools pour Visual Studio" lightbox="./media/visual-studio-code-extension-microsoft-edge-tools-for-visual-studio-code.msft.png":::
-         **Microsoft Edge Tools pour le code Visual Studio** Extension de code Visual Studio  
+      :::image type="complex" source="./media/visual-studio-code-extension-microsoft-edge-tools-for-visual-studio-code.msft.png" alt-text="Microsoft Edge Outils pour l Visual Studio Code Visual Studio Code extension" lightbox="./media/visual-studio-code-extension-microsoft-edge-tools-for-visual-studio-code.msft.png":::
+         **Microsoft Edge outils pour l Visual Studio Code** Visual Studio Code extension  
       :::image-end:::  
-      [Microsoft Edge Tools pour le code Visual Studio](#microsoft-edge-tools-for-visual-studio-code)  
+      [Microsoft Edge Outils pour Visual Studio Code](#microsoft-edge-tools-for-visual-studio-code)  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="extension de code Visual Studio webhint" lightbox="./media/visual-studio-code-extension-webhint.msft.png":::
-         **Astuce** Extension de code Visual Studio  
+      :::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="extension de Visual Studio Code webhint" lightbox="./media/visual-studio-code-extension-webhint.msft.png":::
+         **extension de Visual Studio Code webhint**  
       :::image-end:::  
       [webhint](#webhint)  
    :::column-end:::
 :::row-end:::  
 
-## Débogueur pour Microsoft Edge  
+## Débogger pour Microsoft Edge  
 
-Avec le [débogueur de][VisualstudioMarketplaceDebuggerMicrosoftEdge] l’extension de code Visual Studio Microsoft Edge, déboguez votre code JavaScript frontal par ligne et consultez les `console.log()` instructions directement à partir du [code Visual Studio][VisualstudioCode].  
+Avec l’extension [Déboguer pour Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio Code, déboguer votre code JavaScript frontal ligne par ligne et voir les instructions directement à partir `console.log()` [Visual Studio Code][VisualstudioCode].  
       
-À l’aide de l’outil de débogage, vous pouvez lancer une connexion à Microsoft Edge \(EdgeHTML \) et à Microsoft Edge \(chrome \).  Pour obtenir une procédure pas à pas de débogage de Microsoft Edge à partir de l’exemple de code et de configurations Visual Studio `launch.json` , accédez à [débogueur pour l’extension de code Visual Studio Visual Studio][VisualStudioCodeDebuggerEdge].  Cliquez sur l’image suivante pour afficher l’extension en action.  
+À l’aide de l’outil Débogger, vous pouvez lancer ou attacher les deux Microsoft Edge \(EdgeHTML\) et Microsoft Edge \(Chromium\).  Pour une walkthrough de débogage de Microsoft Edge à partir de Visual Studio Code et d’exemples de configurations, accédez à `launch.json` [Déboguer][VisualStudioCodeDebuggerEdge]pour Microsoft Edge Visual Studio Code extension .  Choisissez l’image suivante pour voir l’extension en action.  
 
-:::image type="complex" source="./media/debugger-for-edge.png" alt-text="Débogueur pour l’extension de code Visual Studio de Microsoft Edge en action" lightbox="./media/debugger-for-edge.gif":::
-   **Débogueur pour Microsoft Edge** Extension de code Visual Studio en action  
+:::image type="complex" source="./media/debugger-for-edge.png" alt-text="Débogger pour l’extension Visual Studio Code Edge en action" lightbox="./media/debugger-for-edge.gif":::
+   **Débogger pour l Microsoft Edge** Visual Studio Code extension en action  
 :::image-end:::  
 
-## Microsoft Edge Tools pour le code Visual Studio
+## Microsoft Edge Outils pour Visual Studio Code
 
-Avec l’extension de code Visual Studio [Microsoft Edge Tools pour Visual Studio][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] , utilisez l’outil **éléments** du navigateur Microsoft Edge dans le code Visual Studio.  Utilisez-le pour les actions suivantes.  
+Avec [l’extension Microsoft Edge Outils][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] Visual Studio Code Visual Studio Code, utilisez l’outil **Éléments** du navigateur Microsoft Edge dans Visual Studio Code.  Utilisez-le pour les actions suivantes.  
 
-*   Joignez-vous à une instance ou lancez une instance de Microsoft Edge.  
-*   Affichez la structure HTML Runtime.  
-*   Mettez à jour la mise en page.  
-*   Résoudre les problèmes de stylisation.  
+*   Attacher à une instance ou lancer une instance de Microsoft Edge.  
+*   Afficher la structure HTML d’runtime.  
+*   Mettez à jour la disposition.  
+*   Résoudre les problèmes de style.  
     
-Pour plus d’informations, accédez à [outils Microsoft Edge pour l’extension de code Visual][VisualStudioCodeMicrosoftEdgeDevtoolsExtension]Studio.  <!--  Choose the following image to see the extension in action.  -->  
+Pour plus d’informations, [accédez à Microsoft Edge Outils pour Visual Studio Code Visual Studio Code extension .][VisualStudioCodeMicrosoftEdgeDevtoolsExtension]  <!--  Choose the following image to see the extension in action.  -->  
       
-:::image type="complex" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="Outils Microsoft Edge pour l’extension de code Visual Studio code Visual Studio en action" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::
-   **Microsoft Edge Tools pour le code Visual Studio** Extension de code Visual Studio en action  
+:::image type="complex" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="Microsoft Edge Outils pour Visual Studio Code Visual Studio Code extension en action" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::
+   **Microsoft Edge outils pour Visual Studio Code** Visual Studio Code extension en action  
 :::image-end:::  
 
 ## webhint  
       
-Utilisez [webhint][WebhintMain], un outil de désutilisation personnalisable pour améliorer les fonctionnalités suivantes de votre site.  
+Utilisez [webhint,][WebhintMain]un outil de linting personnalisable, pour améliorer les fonctionnalités suivantes de votre site.  
 
 *   Accessibilité
-*   Niveau de performance
-*   Compatibilité entre les navigateurs
-*   Compatibilité avec Project Web App
+*   Performances
+*   Compatibilité entre navigateurs
+*   PWA compatibilité
 *   Sécurité
 
-Il recherche dans votre code des pratiques de codage et des erreurs courantes. Le projet open-source de webhint, développé initialement par l’équipe Microsoft Edge, fait désormais partie de [OpenJS Foundation][OpenjsFoundation].  L’équipe Microsoft Edge cesse de contribuer à la communauté et aux développeurs Web de la communauté.  <!--  Choose the following image to see the extension in action.  -->  
+Il vérifie les pratiques de codage et les erreurs courantes dans votre code. Le projet open source webhint, initialement développé par l’équipe Microsoft Edge, fait désormais partie [d’OpenJS Foundation.][OpenjsFoundation]  L Microsoft Edge de recherche continue de contribuer à lahint web aux côtés des développeurs web de la communauté.  <!--  Choose the following image to see the extension in action.  -->  
       
-:::image type="complex" source="./media/webhint-extension.png" alt-text="Capture d’écran de l’extension de code Visual Studio webhint" lightbox="./media/webhint-extension.png":::
-   Capture d’écran de l’extension de code Visual Studio **webhint**  
+:::image type="complex" source="./media/webhint-extension.png" alt-text="Capture d’écran de l’extension Visual Studio Code webhint" lightbox="./media/webhint-extension.png":::
+   Capture d’écran de l’extension Visual Studio Code **webhint**  
 :::image-end:::  
       
-Identifiez et corrigez les problèmes de votre site Web en ajoutant l' [extension webhint pour le code Visual Studio][VisualstudioMarketplaceWebhint].  Conseils examinez HTML, CSS, JavaScript, écrire, etc.  Les indications apparaissent sous forme de soulignements inline et sont synthétisées dans le volet **problèmes** .  
+Identifiez et corrigez les problèmes dans votre site web en ajoutant [l’extension dehint web pour Visual Studio Code][VisualstudioMarketplaceWebhint].  Les conseils examinent le code HTML, CSS, JavaScript, TypeScript, etc.  Les conseils apparaissent comme des soulignements inline et sont résumés **dans** le volet Problèmes.  
       
-Pour plus d’informations, accédez à [l’utilisation de webhint dans le code Visual Studio][VisualStudioCodeWebhint].  
+Pour plus d’informations, accédez [à Comment utiliser lahint web dans Visual Studio Code][VisualStudioCodeWebhint].  
 
 <!--links -->  
 
-[VisualStudioCodeDebuggerEdge]: ./debugger-for-edge.md "Débogueur de l’extension de code Visual Studio Microsoft Edge | Documents Microsoft"  
-[VisualStudioCodeMicrosoftEdgeDevtoolsExtension]: ./microsoft-edge-devtools-extension.md "Extension de code Microsoft Edge DevTools pour Visual Studio | Documents Microsoft"  
-[VisualStudioCodeWebhint]: ./webhint.md "Extension de code Visual Studio webhint | Documents Microsoft"  
+[VisualStudioCodeDebuggerEdge]: ./debugger-for-edge.md "Débogger for Microsoft Edge Visual Studio Code Extension | Documents Microsoft"  
+[VisualStudioCodeMicrosoftEdgeDevtoolsExtension]: ./microsoft-edge-devtools-extension.md "Microsoft Edge DevTools pour les Visual Studio Code d’extension | Documents Microsoft"  
+[VisualStudioCodeWebhint]: ./webhint.md "Webhint Visual Studio Code extension | Documents Microsoft"  
 
-[VisualstudioCode]: https://code.visualstudio.com "Code Visual Studio"  
-[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentation | Code Visual Studio"   
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"  
+[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentation | Visual Studio Code"   
 
-[VisualstudioMarketplaceDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Débogueur pour Microsoft Edge | Visual Studio Marketplace"  
-[VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools pour le code Visual Studio | Visual Studio Marketplace"  
+[VisualstudioMarketplaceDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Débogger pour Microsoft Edge | Visual Studio Marketplace"  
+[VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Outils Microsoft Edge pour Visual Studio Code | Visual Studio Marketplace"  
 
 [VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Visual Studio Marketplace"  
 

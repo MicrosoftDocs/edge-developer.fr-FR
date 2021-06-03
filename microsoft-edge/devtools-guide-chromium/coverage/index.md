@@ -29,7 +29,7 @@ ms.locfileid: "11564461"
    limitations under the License.  -->
 # <a name="find-unused-javascript-and-css-code-with-the-coverage-panel-in-microsoft-edge-devtools"></a>Rechercher du code JavaScript et CSS inutilisé avec le panneau Couverture dans Microsoft Edge DevTools  
 
-Le **panneau** Couverture de Microsoft Edge DevTools vous permet de trouver du code JavaScript et CSS inutilisé.  La suppression du code inutilisé peut accélérer le chargement de votre page et enregistrer les données cellulaires de vos utilisateurs mobiles.  
+Le **panneau** Couverture dans Microsoft Edge DevTools vous permet de trouver du code JavaScript et CSS inutilisé.  La suppression du code inutilisé peut accélérer le chargement de votre page et enregistrer les données cellulaires de vos utilisateurs mobiles.  
 
 :::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analyse de la couverture du code" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
    Analyse de la couverture du code  
@@ -52,7 +52,7 @@ La livraison de fichiers JavaScript ou CSS inutilisés est un problème courant 
 ...
 ```  
 
-Cette feuille de style n’inclut pas uniquement le code du composant de bouton.  Il contient le CSS pour **tous les** composants Bootstrap.  Mais vous n’utilisez aucun des autres composants Bootstrap.  Votre page télécharge donc une série de fichiers CSS dont elle n’a pas besoin.  Ce CSS supplémentaire est un problème pour les raisons suivantes.  
+Cette feuille de style n’inclut pas uniquement le code du composant de bouton.  Il contient le CSS pour **tous les** composants Bootstrap.  Mais vous n’utilisez aucun des autres composants Bootstrap.  Votre page télécharge donc une série de fichiers CSS dont elle n’a pas besoin.  Cette CSS supplémentaire est un problème pour les raisons suivantes.  
 
 *   Le code supplémentaire ralentit le chargement de votre page.  <!--Navigate to [Render-Blocking CSS][render].  -->  
 *   Si un utilisateur accède à la page sur un appareil mobile, le code supplémentaire utilise ses données cellulaires.  
@@ -73,7 +73,7 @@ Cette feuille de style n’inclut pas uniquement le code du composant de bouton.
 1.  Choisissez l’un des boutons suivants dans le **panneau Couverture.**  
     *   Choose **Start Instrumenting Coverage and Reload Page** \( Start ![ Instrumenting Coverage and Reload Page ](../media/reload-icon.msft.png) \) if you want to review what code is needed to load the page.  
     *   Choisissez **Instrument Coverage** \( Instrument Coverage \) si vous souhaitez passer en revue le code utilisé après avoir ![ ](../media/record-icon.msft.png) interagi avec la page.  
-1.  Choisissez **Arrêter l’instrumentage de couverture et afficher les résultats** \( Arrêter l’instrumentage de la couverture et afficher les résultats \) lorsque vous souhaitez arrêter l’enregistrement de ![ la couverture de ](../media/stop-icon.msft.png) code.  
+1.  Choisissez **Arrêter l’instrumentage de la couverture et afficher les résultats** \( Arrêter l’instrumentage de la couverture et afficher les résultats \) lorsque vous souhaitez arrêter l’enregistrement de ![ la couverture de ](../media/stop-icon.msft.png) code.  
     
 ## <a name="analyze-code-coverage"></a>Analyser la couverture du code  
 
@@ -104,7 +104,7 @@ Le tableau du panneau **Couverture** affiche les ressources qui ont été analys
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/coverage/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

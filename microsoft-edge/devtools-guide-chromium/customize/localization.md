@@ -63,8 +63,8 @@ Vos outils de développement correspond à la langue de votre navigateur par dé
    DevTools en chinois  
 :::image-end:::  
 
-Si vous souhaitez revenir à DevTools en anglais, accédez à [Paramètres de DevTools][DevtoolsCustomizeIndexSettings] ou sélectionnez , choisissez Préférences et désélecteur de la case à cocher DevTools pour la langue du `F1` navigateur. **** ****  
+Si vous souhaitez revenir à DevTools en anglais, accédez à [DevTools Paramètres][DevtoolsCustomizeIndexSettings] ou sélectionnez , choisissez Préférences et désélecteur de la case à cocher DevTools pour la langue du `F1` navigateur. **** ****  
 
 <!-- links -->  
 
-[DevtoolsCustomizeIndexSettings]: ./index.md#settings "Paramètres – Personnalisation de Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: ./index.md#settings "Paramètres - Personnaliser Microsoft Edge DevTools | Microsoft Docs"  

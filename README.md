@@ -20,13 +20,13 @@ Microsoft et tout contributeur se réserve tous les autres droits, en vertu de l
 
 Il s’agit du référentiel de la documentation Microsoft Edge **hébergée** sur [https://docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge/index) .  
 
-Si vous souhaitez inclure une nouvelle couverture ou avoir des commentaires, envisagez [de contribuer.](./CONTRIBUTING.md)  Vous pouvez modifier le contenu existant, ajouter un nouveau contenu ou créer de [nouveaux problèmes.](https://github.com/MicrosoftDocs/edge-developer/issues)  L Microsoft Edge’équipe examine vos suggestions et travaille à incorporer ces suggestions dans les documents.  
+Si vous souhaitez inclure une nouvelle couverture ou avoir des commentaires, envisagez [de contribuer.](./CONTRIBUTING.md)  Vous pouvez modifier le contenu existant, ajouter du nouveau contenu ou créer de [nouveaux problèmes.](https://github.com/MicrosoftDocs/edge-developer/issues)  L Microsoft Edge’équipe examine vos suggestions et travaille à incorporer ces suggestions dans les documents.  
 
 Recherchez les données de la page web [État](https://developer.microsoft.com/microsoft-edge/status) à l’adresse :  [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status) .  La `Status` page web fournit l’état d’implémentation le plus récent et les plans futurs pour les fonctionnalités de plateforme web Microsoft Edge.
 
 ### <a name="conventions"></a>Conventions  
 
-*   Lorsque vous ajoutez une page web, vous devez ajouter une entrée pour elle dans [toc.md](./microsoft-edge/toc.yml) pour qu’elle apparaisse.
+*   Lors de l’ajout d’une page web, vous devez ajouter une entrée toc.md [pour](./microsoft-edge/toc.yml) qu’elle apparaisse.
 *   Un répertoire peut contenir d’autres répertoires ou `readme.md` s
 *   Les noms de dossier/répertoire sont séparés par des tirets \(par `f12-tools` exemple, \) et minuscules.  Les répertoires sont utilisés dans les URL du `docs.microsoft.com` site.  Évitez d’utiliser des traits de soulignement, des caractères de soulignement ou des caractères camelCase.  
 
@@ -41,7 +41,7 @@ Ces autres éléments de texte ont des styles disponibles :
 *   Disposition standard 
     
 1.  Listes ordonnées.  
-1.  Utilisez une numérot de style western normal.  
+1.  Utilisez une numérot d’ouest régulière.  
 1.  Ne doit être utilisé que lorsqu’une liste a réellement un ordre.  
     
 ---  

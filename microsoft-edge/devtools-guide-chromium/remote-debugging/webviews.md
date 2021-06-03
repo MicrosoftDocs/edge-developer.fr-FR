@@ -37,7 +37,7 @@ Sur Android 4.4 \(KitKat\) ou version ultérieure, utilisez DevTools pour débog
 
 *   Activer le débogage Android WebView dans votre application Android native ; déboguer android WebViews dans Microsoft Edge DevTools.  
 *   Pour afficher la liste des webViews Android avec débogage désactivé, accédez à `edge://inspect` .  
-*   Déboguer android WebViews de la même façon que vous déboguer une page web via le [débogage à distance.][RemoteDebuggingGettingStarted]  
+*   Déboguer android WebViews de la même façon que vous déboguer une page web via le [débogage à distance][RemoteDebuggingGettingStarted].  
 
 ## <a name="configure-android-webviews-to-debug"></a>Configurer android WebViews pour le débogage  
 
@@ -52,7 +52,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 Le paramètre s’applique à tous les webView Android de l’application.  
 
 > [!TIP]
-> Le débogage Android WebView n’est pas affecté par l’état de `debuggable` l’indicateur dans le manifeste de l’application.  Si vous souhaitez activer le débogage Android WebView uniquement lorsque l’indicateur est , testez l’indicateur lors de `debuggable` `true` l’runtime.  
+> Le débogage WebView Android n’est pas affecté par l’état de `debuggable` l’indicateur dans le manifeste de l’application.  Si vous souhaitez activer le débogage Android WebView uniquement lorsque l’indicateur est , testez l’indicateur lors de `debuggable` `true` l’runtime.  
 > 
 > ```java
 > if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -94,10 +94,10 @@ Vos WebView Android ne sont pas affichés sur la `edge://inspect` page ?
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine se trouve [ici](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) et est co-auteure par [Meggin Kearney][MegginKearney] \(Tech Writer\).  
+> La page d’origine est [trouvée ici](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) et est co-auteure par [Meggin Kearney][MegginKearney] \(Tech Writer\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: http://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

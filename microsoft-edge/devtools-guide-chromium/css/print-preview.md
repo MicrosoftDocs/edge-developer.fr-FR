@@ -37,8 +37,8 @@ La [requête de média d’impression][MDNUsingMediaQueries] contrôle l’appar
        Menu **Commande**  
     :::image-end:::  
     
-1.  Tapez `rendering` , choisissez Afficher le **rendu,** puis sélectionnez `Enter` .  
-1.  Sous **Émuler le support CSS,** choisissez **Imprimer.**  
+1.  `rendering`Tapez, choisissez Afficher le **rendu,** puis sélectionnez `Enter` .  
+1.  Under **Emulate CSS media**, choose **print**.  
     
     :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="Mode Aperçu avant impression" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
        Mode Aperçu avant impression  
@@ -62,7 +62,7 @@ La [requête de média d’impression][MDNUsingMediaQueries] contrôle l’appar
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/css/print-preview) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

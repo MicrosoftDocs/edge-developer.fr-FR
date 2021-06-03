@@ -1,5 +1,5 @@
 ---
-description: Utilisation des éléments pour Microsoft Edge (Chromium) à partir de Visual Studio Code
+description: Comment utiliser des éléments pour Microsoft Edge (Chromium) à partir de Visual Studio Code
 title: Éléments pour Microsoft Edge (Chromium) de Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -14,30 +14,30 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/06/2021
 ms.locfileid: "11398454"
 ---
-# <a name="microsoft-edge-devtools-for-visual-studio-code-extension"></a>Microsoft Edge DevTools pour l’extension Visual Studio code  
+# <a name="microsoft-edge-devtools-for-visual-studio-code-extension"></a>Microsoft Edge DevTools pour l’extension Visual Studio Code de recherche  
 
-Utiliser <!--the [Microsoft Edge DevTools for Visual Studio Code][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] -->cette extension permet d’accéder dans Microsoft Edge DevTools à l’intérieur [de Microsoft Visual Studio Code][VisualstudioCode].  Vous avez accès aux outils **d’éléments** **et** réseau dans Microsoft Edge DevTools.  Vous pouvez lancer ou attacher une instance de Microsoft Edge.  Une fois connecté, vous pouvez afficher la structure HTML d’runtime, modifier la disposition, résoudre les problèmes de style et inspecter le trafic réseau.  
+Utiliser <!--the [Microsoft Edge DevTools for Visual Studio Code][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] -->cette extension à accéder dans Microsoft Edge DevTools à [l’intérieur Microsoft Visual Studio Code][VisualstudioCode].  Vous avez accès aux outils **éléments** **et** réseau dans Microsoft Edge DevTools.  Vous pouvez lancer ou attacher une instance de Microsoft Edge.  Une fois connecté, vous pouvez afficher la structure HTML d’runtime, modifier la disposition, résoudre les problèmes de style et inspecter le trafic réseau.  
 
 ## <a name="elements-tool"></a>Outil Éléments  
 
-Par défaut, l’extension lance une instance de navigateur dans une fenêtre unique et vous offre la fonctionnalité **Éléments** de Microsoft Edge DevTools.  
+Par défaut, l’extension lance une instance de navigateur dans une fenêtre unique et vous offre la fonctionnalité **Elements** de Microsoft Edge DevTools.  
 
-:::image type="complex" source="./media/edge-devtools-for-vscode-windowed.png" alt-text="Microsoft Edge DevTools pour Visual Studio code s’exécutant avec une fenêtre de navigateur complète" lightbox="./media/edge-devtools-for-vscode-windowed.png":::
-   Microsoft Edge DevTools pour Visual Studio code s’exécutant avec une fenêtre de navigateur complète  
+:::image type="complex" source="./media/edge-devtools-for-vscode-windowed.png" alt-text="Microsoft Edge DevTools pour Visual Studio Code’exécution avec une fenêtre de navigateur complète" lightbox="./media/edge-devtools-for-vscode-windowed.png":::
+   Microsoft Edge DevTools pour Visual Studio Code’exécution avec une fenêtre de navigateur complète  
 :::image-end:::  
 
 Dans les paramètres d’extension, vous pouvez activer davantage de fonctionnalités telles que le **mode sans** tête et le **réseau.**  
 
-:::image type="complex" source="./media/edge-devtools-for-vscode-settings.png" alt-text="Activation (ou désactivation) du mode sans tête et de l’inspection du réseau dans les paramètres d’extension" lightbox="./media/edge-devtools-for-vscode-settings.png":::
+:::image type="complex" source="./media/edge-devtools-for-vscode-settings.png" alt-text="Activation (ou désactivation) du mode sans tête et inspection du réseau dans les paramètres d’extension" lightbox="./media/edge-devtools-for-vscode-settings.png":::
    Activation du mode sans tête \(ou désactivation\) et inspection du réseau dans les paramètres d’extension  
 :::image-end:::  
 
 ## <a name="headless-mode"></a>Mode sans tête  
 
-En mode sans en-tête, cette extension ne lance pas une instance de navigateur complète pour le débogage.  Il exécute une instance en arrière-plan.  Vous de devez peut-être rester à l’intérieur de l’éditeur et interagir avec le navigateur incorporé.  Une icône de navigateur supplémentaire ne s’affiche pas dans la barre des tâches.  
+En mode sans en-tête, cette extension ne lance pas une instance de navigateur complète pour le débogage.  Il exécute une instance en arrière-plan.  Vous de devez peut-être rester à l’intérieur de l’éditeur et interagir avec le navigateur incorporé.  Une icône de navigateur supplémentaire n’est pas affichée dans la barre des tâches.  
 
-:::image type="complex" source="./media/edge-devtools-for-vscode-headless.png" alt-text="Microsoft Edge DevTools pour Visual Studio code s’exécutant sans en-tête" lightbox="./media/edge-devtools-for-vscode-headless.png":::
-   Microsoft Edge DevTools pour Visual Studio code s’exécutant avec un navigateur sans en-tête  
+:::image type="complex" source="./media/edge-devtools-for-vscode-headless.png" alt-text="Microsoft Edge DevTools pour les Visual Studio Code’exécution sans en-tête" lightbox="./media/edge-devtools-for-vscode-headless.png":::
+   Microsoft Edge DevTools pour les Visual Studio Code’exécution avec un navigateur sans en-tête  
 :::image-end:::  
 
 > [!NOTE]
@@ -47,19 +47,19 @@ En mode sans en-tête, cette extension ne lance pas une instance de navigateur c
 
 Si vous souhaitez également inspecter le trafic réseau de votre application, ouvrez les paramètres et allumez **l’onglet** Réseau.  
 
-:::image type="complex" source="./media/edge-devtools-for-vscode-network.png" alt-text="Inspection du réseau dans Microsoft Edge DevTools pour le Visual Studio code" lightbox="./media/edge-devtools-for-vscode-network.png":::
-    Inspection du réseau dans Microsoft Edge DevTools pour le Visual Studio code  
+:::image type="complex" source="./media/edge-devtools-for-vscode-network.png" alt-text="Inspection du réseau dans Microsoft Edge DevTools pour les Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-network.png":::
+    Inspection du réseau dans Microsoft Edge DevTools pour les Visual Studio Code  
 :::image-end:::  
 
-## <a name="launching-microsoft-edge-from-the-extension"></a>Lancement de Microsoft Edge à partir de l’extension  
+## <a name="launching-microsoft-edge-from-the-extension"></a>Lancement Microsoft Edge à partir de l’extension  
 
-Accédez aux outils Microsoft Edge dans la **barre d’activité.**  En plus de l’endroit où il est indiqué **Outils Microsoft Edge** : Cibles, il existe un signe plus qui ouvre le navigateur de votre application.  Si vous choisissez l’option **about:blank,** vous devez accéder à votre **** application web dans le navigateur pour qu’elle apparaisse dans le panneau Éléments dans Visual Studio Code.  
+Accédez à Microsoft Edge outils dans la **barre d’activité.**  À côté de **l’Microsoft Edge Outils** : Cibles, il existe un signe plus qui ouvre le navigateur de votre application.  Si vous choisissez l’option **about:blank,** vous devez accéder à votre application web dans le navigateur pour qu’elle apparaisse dans le panneau **Éléments** dans Visual Studio Code.  
 
-## <a name="launching-microsoft-edge-from-the-debug-view"></a>Lancement de Microsoft Edge à partir de l’affichage Débogage  
+## <a name="launching-microsoft-edge-from-the-debug-view"></a>Lancement Microsoft Edge à partir de la vue Débogage  
 
-Si vous êtes habitué à utiliser l’affichage Débogage dans Visual Studio Code, accédez à Microsoft Edge DevTools à partir de celui-ci.  
+Si vous avez l’habitude d’utiliser la vue Débogage dans Visual Studio Code, accédez à Microsoft Edge devTools à partir de celui-ci.  
 
-1.  Dans Visual Studio code, accédez à l’affichage Débogage 
+1.  Dans Visual Studio Code, accédez à l’affichage Débogage 
     *   Sélectionnez `Ctrl` + `Shift` + `D` sur Windows/Linux \( `Command` + `Shift` + `D` sur macOS\).  
 
 <!--TODO:  Is this section intended to be optional  -->  
@@ -86,7 +86,7 @@ Si vous êtes habitué à utiliser l’affichage Débogage dans Visual Studio Co
 >     
 > Une fois que vous avez chargé la configuration correcte, terminez l’action suivante.  
 
-1.  Pour lancer **l’outil Éléments** à Visual Studio Code, effectuer l’une des actions suivantes. 
+1.  Pour lancer l’outil **Éléments** à Visual Studio Code, effectuer l’une des actions suivantes. 
     *   Sélectionnez `F5` .  
     *   Choisissez le **bouton Lire** \(vert\).  
          
@@ -95,7 +95,7 @@ Vous pouvez maintenant faire les actions suivantes.
 *   Accédez à une capture vidéo de votre navigateur.  
 *   Inspectez le DOM et le style des composants sur votre page.  
 
-## <a name="attaching-to-microsoft-edge"></a>Attachement à Microsoft Edge  
+## <a name="attaching-to-microsoft-edge"></a>Attachement à un Microsoft Edge  
 
 Pour ouvrir un navigateur et attacher l’instance à Visual Studio Code, complétez les étapes suivantes. 
 
@@ -118,8 +118,8 @@ Pour ouvrir un navigateur et attacher l’instance à Visual Studio Code, compl�
     }
     ```  
     
-1.  Dans Visual Studio Code, ouvrez **** le menu déroulant Débogger, choisissez Attacher à **Microsoft Edge et ouvrez les outils de développement.**  
-1.  Pour lancer **l’outil Éléments** à Visual Studio Code, effectuer l’une des actions suivantes. 
+1.  In Visual Studio Code, open the **Debugger** drop-down menu and choose **Attach to Microsoft Edge and open the developer tools**.  
+1.  Pour lancer l’outil **Éléments** à Visual Studio Code, effectuer l’une des actions suivantes. 
     *   Sélectionnez `F5` .  
     *   Choisissez le **bouton Lire** \(vert\).  
          
@@ -128,11 +128,11 @@ Vous pouvez maintenant faire les actions suivantes.
 *   Accédez à une capture vidéo de votre navigateur.  
 *   Inspectez le DOM et le style des composants sur votre page.  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-for-visual-studio-code-extension-team"></a>Mise en contact avec Microsoft Edge DevTools pour l Visual Studio d’extension de code  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-for-visual-studio-code-extension-team"></a>Contacter l’équipe Microsoft Edge devTools pour Visual Studio Code extension  
 
-Envoyez vos commentaires en [classant un problème][GithubMicrosoftVscodeEdgeDevtoolsNewIssue] par rapport au [référentiel GitHub][GithubMicrosoftVscodeEdgeDevtools] de l’extension.  
+Envoyez vos commentaires en [classant un problème][GithubMicrosoftVscodeEdgeDevtoolsNewIssue] par rapport [au GitHub de][GithubMicrosoftVscodeEdgeDevtools] l’extension.  
 
-Si vous souhaitez vous aider à effectuer <!--the Microsoft Edge DevTools for Visual Studio Code -->Cette extension est préférable, vos contributions sont les bienvenues.  Recherchez tout ce dont vous avez besoin pour commencer dans le référentiel [GitHub][GithubMicrosoftVscodeEdgeDevtools] de l’extension.  
+Si vous souhaitez vous aider à effectuer <!--the Microsoft Edge DevTools for Visual Studio Code -->Cette extension est préférable, vos contributions sont les bienvenues.  Recherchez tout ce dont vous avez besoin pour commencer [dans le GitHub de][GithubMicrosoftVscodeEdgeDevtools] l’extension.  
 
 <!--links -->  
 
@@ -142,4 +142,4 @@ Si vous souhaitez vous aider à effectuer <!--the Microsoft Edge DevTools for Vi
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 [GithubMicrosoftVscodeEdgeDevtoolsNewIssue]: https://github.com/Microsoft/vscode-edge-devtools/issues/new "Nouveau problème : microsoft/vscode-edge-devtools | GitHub"
 
-[VisualstudioMarketplaceElementsMicrosoftEdgeChromium]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Outils Microsoft Edge pour Visual Studio code"  
+[VisualstudioMarketplaceElementsMicrosoftEdgeChromium]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Outils pour Visual Studio Code"  

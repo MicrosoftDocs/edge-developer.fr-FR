@@ -56,7 +56,7 @@ Cette commande renvoie la valeur de la dernière expression évaluée.
 Dans la figure suivante, une expression simple \( `2 + 2` \) est évaluée.  La `$_` propriété est ensuite évaluée, qui contient la même valeur.  
 
 :::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$_ est la dernière expression évaluée" lightbox="../media/console-arithmatic.msft.png":::
-   `$_` est l’expression évaluée la plus récente  
+   `$_` est la dernière expression évaluée  
 :::image-end:::  
 
 Dans la figure suivante, l’expression évaluée contient initialement un tableau de noms.  L’évaluation de la longueur du tableau, la valeur stockée dans devient la `$_.length` `$_` dernière expression évaluée, `4` .  
@@ -118,7 +118,7 @@ Dans la figure suivante, un `img` élément est choisi dans l’outil **Elements
    La liste  `$0`  
 :::image-end:::  
 
-Dans la figure suivante, l’image affiche un autre élément choisi dans la même page web.  Le `$0` fait maintenant fait référence à l’élément nouvellement choisi, tandis qu’il renvoie `$1` l’élément précédemment choisi.  
+Dans la figure suivante, l’image affiche un autre élément choisi dans la même page web.  L’élément qui vient d’être choisi fait référence au nouvel élément, alors `$0` qu’il renvoie `$1` l’élément précédemment choisi.  
 
 :::image type="complex" source="../media/console-image-highlighted-$1.msft.png" alt-text="La valeur $1" lightbox="../media/console-image-highlighted-$1.msft.png":::
    La liste  `$1`  
@@ -246,7 +246,7 @@ $x("//p[a]")
    Utilisation d’un sélecteur XPath plus compliqué  
 :::image-end:::  
 
-Similaire aux autres commandes de sélecteur, a un deuxième paramètre facultatif, qui spécifie un élément ou un nœud à partir duquel rechercher `$x(path)` `startNode` des éléments.  
+Comme pour les autres commandes de sélecteur, possède un deuxième paramètre facultatif, qui spécifie un élément ou un nœud à partir duquel rechercher `$x(path)` `startNode` des éléments.  
 
 :::image type="complex" source="../media/console-array-xpath-startnode.msft.png" alt-text="Utilisation d’un sélecteur XPath avec startNode" lightbox="../media/console-array-xpath-startnode.msft.png":::
    Utilisation d’un sélecteur XPath avec `startNode`  
@@ -394,7 +394,7 @@ Lors de la transmission d’une méthode à inspecter, la méthode ouvre la page
 getEventListeners(object)
 ```  
 
-Cette commande renvoie les écouteurs d’événements enregistrés sur l’objet spécifié.  La valeur de retour est un objet qui contient un tableau pour chaque type d’événement enregistré \(par exemple `click` ou `keydown` \).  Les membres de chaque tableau sont des objets qui décrivent l’écoute enregistrée pour chaque type.  
+Cette commande renvoie les écouteurs d’événements enregistrés sur l’objet spécifié.  La valeur de retour est un objet qui contient un tableau pour chaque type d’événement inscrit \(par exemple `click` ou `keydown` \).  Les membres de chaque tableau sont des objets qui décrivent l’écoute enregistrée pour chaque type.  
 
 ### <a name="console-example"></a>Exemple de console  
 
@@ -477,7 +477,7 @@ monitor(sum);
    Méthode `monitor()`  
 :::image-end:::  
 
-À utiliser `unmonitor(method)` pour terminer l’analyse.  
+À utiliser `unmonitor(method)` pour mettre fin à l’analyse.  
 
 ---  
 
@@ -520,13 +520,13 @@ Vous pouvez également spécifier l’un des types d’événements disponibles,
 | `touch` | « touchcancel », « touchend », « touchmove », « touchstart » |  
 | `control` | «flou», «modifier», «focus», «réinitialiser», «resize», «scroll», «select», «submit», «zoom» |  
 
-Dans l’exemple de code suivant, le type d’événement correspondant aux événements sur un champ de texte d’entrée est actuellement `key` `key` choisi dans **l’outil Elements.**  
+Dans l’exemple de code suivant, le type d’événement correspondant aux événements sur un champ de texte d’entrée est actuellement `key` `key` choisi dans **l’outil Éléments.**  
 
 ```console
 monitorEvents($0, "key");
 ```  
 
-Dans la figure suivante, l’exemple de sortie après avoir tapé un caractère dans le champ de texte s’affiche.  
+Dans la figure suivante, l’exemple de sortie après la saisie d’un caractère dans le champ de texte s’affiche.  
 
 :::image type="complex" source="../media/console-monitor-events-type-t-y.msft.png" alt-text="Surveillance des événements clés" lightbox="../media/console-monitor-events-type-t-y.msft.png":::
    Surveillance des événements clés  
@@ -554,7 +554,7 @@ Cette commande démarre une session de profilage de l’UC JavaScript avec un no
     
 1.  Exécutez [la méthode profileEnd()](#profileend) pour arrêter le profilage et afficher les résultats dans l’outil Mémoire. ****  
 
-Les profils peuvent également être imbrmbrés.  Dans les exemples de code et la figure suivants, le résultat est le même quel que soit l’ordre.  
+Les profils peuvent également être imbrmbrés.  Dans la figure et les exemples de code suivants, le résultat est le même quel que soit l’ordre.  
 
 ```console
 profile('A');
@@ -785,7 +785,7 @@ values(object);
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/console/utilities) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

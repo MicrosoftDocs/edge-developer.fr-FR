@@ -1,5 +1,5 @@
 ---
-title: Utiliser le manifeste d’application web pour intégrer votre application Web progressive au système d’exploitation
+title: Utiliser le manifeste d’application web pour intégrer votre application web progressive au système d’exploitation
 description: Découvrez comment utiliser le manifeste d’application web pour intégrer votre application Web progressive à votre système d’exploitation.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ Un manifeste d’application web d’un site web régit l’apparence et le comp
 
 ## <a name="use-shortcuts-to-provide-quick-access-to-features"></a>Utiliser des raccourcis pour fournir un accès rapide aux fonctionnalités  
 
-La plupart des systèmes d’exploitation fournissent un accès rapide aux fonctionnalités clés de l’application à l’aide de raccourcis dans le menu contextique connecté à l’icône de l’application.  Pour utiliser des raccourcis dans votre PWA, incluez `shortcuts` la propriété dans votre manifeste d’application web.  L’extrait de code suivant montre comment définir un raccourci dans le manifeste de votre application web.  
+La plupart des systèmes d’exploitation permettent d’accéder rapidement aux fonctionnalités clés de l’application à l’aide de raccourcis dans le menu contextique connecté à l’icône de l’application.  Pour utiliser des raccourcis dans votre PWA, incluez `shortcuts` la propriété dans votre manifeste d’application web.  L’extrait de code suivant montre comment définir un raccourci dans le manifeste de votre application web.  
 
 ```json
 "shortcuts": [
@@ -64,7 +64,7 @@ De nombreux systèmes d’exploitation permettent aux utilisateurs de partager r
 
 Lorsqu’il est ajouté au manifeste de l’application Web, il s’agit de la `"/share.html"` page d’action d’un partage. En outre, il définit trois paramètres qui seraient transmis à cette page d’action : `"title"` `"text"` , et `"url"` .  Ces paramètres sont stockés dans les propriétés et les propriétés `"name"` `"description"` de `"link"` [l’objet ShareData.][GitHubWicgWebShareDomSharedata]  Par défaut, la page d’action reçoit les paramètres dans le cadre d’une requête GET, mais vous pouvez spécifier la demande et `method` l’encodage \(en tant que \), comme vous le feriez sur un `enctype` formulaire web.
 
-## <a name="see-also"></a>Voir également  
+## <a name="see-also"></a>Articles associés  
 
 Pour en savoir plus sur les manifestes d’application web, accédez à la liste suivante des rubriques connexes.  
 

@@ -33,7 +33,7 @@ Les navigateurs modernes fournissent différents niveaux de prise en charge pour
 
 ## <a name="the-service-worker-lifecycle"></a>Cycle de vie des travailleurs du service  
 
-Le cycle de vie d’un service de travail se compose de plusieurs étapes, chaque étape déclenchant un événement. Vous pouvez ajouter des écouteurs à ces événements pour exécuter du code pour effectuer une action. La liste suivante présente une vue d’un haut niveau du cycle de vie et des événements connexes des travailleurs du service. 
+Le cycle de vie d’un service de travail se compose de plusieurs étapes, chaque étape déclenchant un événement. Vous pouvez ajouter des écouteurs à ces événements pour exécuter du code afin d’effectuer une action. La liste suivante présente une vue d’un haut niveau du cycle de vie et des événements connexes des travailleurs du service. 
 
 1.  Inscrivez le service de travail.  
 1.  Le navigateur télécharge le fichier JavaScript, installe le service de travail et déclenche `install` l’événement. Vous pouvez utiliser l’événement pour pré-mettre en cache tous les fichiers importants et à durée de vie longue, tels que les fichiers CSS, les fichiers JavaScript, les images de logo, les pages hors connexion, etc. à partir de votre `install` site web.  
@@ -73,10 +73,10 @@ self.addEventListener( "fetch", event => {
 });
 ```  
 
-Au sein du handler, vous pouvez contrôler si une demande est traitée sur le réseau, s’il est tiré du `fetch` cache, etc.  L’approche que vous prenez varie probablement en fonction du type de ressource demandée, de la fréquence de sa mise à jour et d’une autre logique métier propre à votre application.  Voici quelques exemples de ce que vous pouvez faire :  
+Au sein du handler, vous pouvez contrôler si une demande est traitée sur le réseau, s’il est tiré du `fetch` cache, etc.  L’approche que vous prenez varie probablement en fonction du type de ressource demandé, de la fréquence de mise à jour et d’une autre logique métier propre à votre application.  Voici quelques exemples de ce que vous pouvez faire :  
 
 *   Si disponible, renvoyer une réponse à partir du cache, sinon de secours pour demander la ressource sur le réseau.  
-*   Récupérer une ressource à partir du réseau, mettre en cache une copie et renvoyer la réponse.
+*   Récupérer une ressource du réseau, mettre en cache une copie et renvoyer la réponse.
 *   Autoriser les utilisateurs à spécifier une préférence pour enregistrer des données. 
 *   Fournir une image d’espace réservé pour certaines demandes d’image.  
 *   Générer une réponse directement dans le service de travail.  
@@ -85,7 +85,7 @@ Au sein du handler, vous pouvez contrôler si une demande est traitée sur le r�
 
 Les employés de service peuvent envoyer des notifications aux utilisateurs. Les notifications Push sont utiles pour inciter les utilisateurs à interagir à l’aide de votre application après un certain temps. Pour plus d’informations, accédez à la démonstration et à la démonstration des [notifications Push.][AzurewebsitesWebpushdemo]  
 
-## <a name="see-also"></a>Voir également  
+## <a name="see-also"></a>Articles associés  
 
 Pour en savoir plus sur les travailleurs de service, accédez à la liste suivante des rubriques connexes.  
 
@@ -94,7 +94,7 @@ Pour en savoir plus sur les travailleurs de service, accédez à la liste suivan
     
 <!-- links -->  
 
-[AzurewebsitesWebpushdemo]: https://webpushdemo.azurewebsites.net "Web Push Notifications |  Démonstrations de Microsoft Edge"  
+[AzurewebsitesWebpushdemo]: https://webpushdemo.azurewebsites.net "Web Push Notifications |  Microsoft Edge Démonstrations"  
 
 [MDNPwasMakingOfflineServiceWorkers]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Offline_Service_workers "Mise en mode hors connexion des P PWAs avec les travailleurs du service : les P PWAs | MDN"  
 [MDNPwasMakeReengageablesingNotificationsPush]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push "Comment rendre les PAS ré-engageables à l’aide de Notifications et Push - P PWAs | MDN"  

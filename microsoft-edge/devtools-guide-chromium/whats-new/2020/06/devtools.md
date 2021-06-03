@@ -31,7 +31,7 @@ ms.locfileid: "11564927"
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Annonces de l’équipe Microsoft Edge DevTools  
 
-Les sections suivantes sont une liste d’annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités dans DevTools, Microsoft Visual Studio extensions de code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez l’équipe [Microsoft Edge DevTools][EdgeDevToolsTwitterAccount]sur Twitter.  
+Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités dans DevTools, Microsoft Visual Studio extensions de code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez l’équipe [Microsoft Edge DevTools][EdgeDevToolsTwitterAccount]sur Twitter.  
 
 ### <a name="css-grid-debugging-features"></a>Fonctionnalités de débogage de grille CSS  
 
@@ -66,10 +66,10 @@ Vous pouvez désormais **** utiliser la modification et la relecture sur les dem
 
 Dans un nouveau panneau, la **console** réseau s’ouvre dans le panneau [DevTools][DevtoolsCustomizeIndexDrawer] et remplit automatiquement les informations de la requête HTTP.  Pour afficher la réponse renvoyée par le serveur, modifiez la demande \(si nécessaire\) et sélectionnez **Envoyer**.  
 
-Vous pouvez également utiliser la **console réseau pour** créer et envoyer des requêtes HTTP directement à partir de DevTools.  
+Vous pouvez également utiliser la **console réseau pour** créer et envoyer des demandes HTTP directement à partir de DevTools.  
 
 :::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Panneau Console réseau" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
-   Panneau **Console réseau**  
+   Panneau **Console** réseau  
 :::image-end:::  
 
 > [!TIP]
@@ -84,7 +84,7 @@ Chromium problème [#1093687][CR1093687]
 
 ### <a name="service-worker-respondwith-events-in-the-timing-tab"></a>Événements respondWith du service de travail dans l’onglet Minutage  
 
-**L’onglet Calendrier** de **l’outil Réseau** inclut désormais les `respondWith` événements de travail de service.  L’événement de travail de service indique la durée entre l’heure immédiatement avant le début de l’exécution du handler d’événements de travail de service et l’heure à partir de la fin de l’exécution de la promesse du `respondWith` `fetch` `respondWith` `fetch` handler.  
+**L’onglet Calendrier** de **l’outil Réseau** inclut désormais les `respondWith` événements de travail de service.  L’événement de travail de service indique la durée entre l’heure immédiatement avant le début de l’exécution du handler d’événements de travail de service et le moment où la promesse du `respondWith` `fetch` `respondWith` `fetch` handler est réglée.  
 
 :::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="Événement de travail de service respondWith dans l’onglet Minutage du panneau Réseau" lightbox="../../media/2020/06/timing-tab.msft.png":::
    Événement `respondWith` de travail de service dans **l’onglet Minutage** de **l’outil** Réseau  
@@ -104,7 +104,7 @@ Chromium problème [#1066579][CR1066579]
    Fonctionnalité expérimentale  
 :::image-end:::  
 
-[webhint][WebhintMain] est un outil open source qui fournit des commentaires en temps réel sur l’accessibilité, la compatibilité entre les navigateurs, la sécurité, les performances, les applications de périmètre et d’autres problèmes de développement web courants des sites web.  Pour passer en revue les commentaires sur les sites web dans [le panneau Problèmes.][DevtoolsIssues]  
+[webhint][WebhintMain] est un outil open source qui fournit des commentaires en temps réel sur l’accessibilité, la compatibilité entre navigateurs, la sécurité, les performances, les applications de bureau à long terme et d’autres problèmes de développement web courants liés aux sites web.  Pour passer en revue les commentaires sur les sites web dans [le panneau Problèmes.][DevtoolsIssues]  
 
 :::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="commentaires webhint dans le panneau Problèmes" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    commentaires webhint dans le panneau Problèmes  
@@ -154,7 +154,7 @@ Chromium problème [#1069404][CR1069404]
 
 Les sections suivantes annoncent des fonctionnalités supplémentaires disponibles dans Microsoft Edge 85 qui ont été contribués au projet d’Chromium open source.  
 
-### <a name="style-editing-for-css-in-js-frameworks"></a>Modification du style pour les infrastructure CSS-in-JS  
+### <a name="style-editing-for-css-in-js-frameworks"></a>Modification du style pour les frameworks CSS-in-JS  
 
 Le **volet Styles** a désormais une meilleure prise en charge de l’édition des styles créés avec les API [CSS Object Model (CSSOM).][CsswgDraftsCssom]  De nombreuses bibliothèques et infrastructure CSS-in-JS utilisent les API CSSOM sous-programme pour construire des styles.  
 
@@ -182,7 +182,7 @@ Chromium problème [#772558][CR772558]
 
 #### <a name="first-meaningful-paint-deprecation"></a>Première désintécation Paint significative  
 
-First Meaningful Paint \(FMP\) is deprecated in 6.0.  FMP a également été supprimé du panneau **Performances.**  **La plus grande Paint** contentful est le remplacement recommandé pour le FMP.  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
+First Meaningful Paint \(FMP\) is deprecated in Cev 6.0.  FMP a également été supprimé du panneau **Performances.**  **La plus grande Paint** contentful est le remplacement recommandé pour le FMP.  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
 
 <!--todo: add Largest Contentful Paint when section available  -->  
 <!--todo: add First Meaningful Paint link and note when available  -->  
@@ -231,8 +231,8 @@ Le **volet Manifeste** affiche désormais des avertissements pour les conditions
 * Les icônes de raccourci de l’application sont plus petites que 96 x 96 pixels  
 * Les icônes de raccourci de l’application et les icônes de manifeste ne sont pas carrées \(étant donné que les icônes sont ignorées\)  
 
-:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Avertissements de raccourci d’application" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
-   Avertissements de raccourci d’application  
+:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Avertissements de raccourcis d’application" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
+   Avertissements de raccourcis d’application  
 :::image-end:::  
 
 Chromium problème [#955497][CR955497]  
@@ -270,7 +270,7 @@ Chromium problème [#800028][CR800028]
 
 Le **basculement de groupe** similaire dans console Paramètres s’applique désormais aux messages en double.  Auparavant, il vient d’être appliqué à des messages similaires.  
 
-Par exemple, auparavant, DevTools n’a pas désgroupé les messages même si le groupe `hello` **similaire** est décoché.  À présent, `hello` les messages sont désgroupés.  
+Par exemple, auparavant, DevTools n’a pas désgroupé les messages même si le groupe similaire `hello` est désactivé. ****  À présent, `hello` les messages sont désgroupés.  
 
 :::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Lorsque le groupe similaire est désactivé, les messages Hello sont désgroupés" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
    Lorsque **le groupe similaire** est désactivé, les messages sont `hello` désgroupés
@@ -284,8 +284,8 @@ Chromium problème [#1082963][CR1082963]
 
 Les **paramètres de contexte sélectionnés** uniquement dans console Paramètres sont désormais persistants.  Auparavant, les paramètres étaient réinitialisés chaque fois que vous avez fermé et rouvert DevTools.  La modification rend le comportement du paramètre cohérent avec les autres options Paramètres console.  
 
-:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Paramètre de contexte sélectionné uniquement" lightbox="../../media/2020/06/selected-context.msft.png":::
-   **Paramètre de contexte sélectionné uniquement**  
+:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Paramètre de contexte uniquement sélectionné" lightbox="../../media/2020/06/selected-context.msft.png":::
+   **Paramètre de contexte uniquement** sélectionné  
 :::image-end:::  
 
 Chromium problème [#1055875][CR1055875]  
@@ -334,7 +334,7 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 
 <!-- links -->  
 
-[DevtoolsIndex]: ../../../index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
+[DevtoolsIndex]: ../../../index.md "Microsoft Edge outils de développement (Chromium) | Documents Microsoft"  
 [DevtoolsCommandMenu]: ../../../command-menu.md "Exécuter des commandes avec le menu de Microsoft Edge DevTools | Documents Microsoft"
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Caisse : personnaliser Microsoft Edge devTools | Documents Microsoft"
 [DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turn-on-experimental-features "Activer les fonctions expérimentales – Fonctions expérimentales | Microsoft Docs"  
@@ -350,9 +350,9 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 
 [CR772558]: https://crbug.com/772558 "DevTools : mise à jour vers la dernière version de | Chromium bogues"  
 [CR800028]: https://crbug.com/800028 "Le raccourci de ligne en double dans l’éditeur outils de développement ne fonctionne pas après la mise à jour de Chrome | Chromium bogues"  
-[CR912581]: https://crbug.com/912581 "Exposer les scripts mis en cache par V8 dans DevTools/about:tracing | Chromium bogues"  
+[CR912581]: https://crbug.com/912581 "Exposer les scripts qui ont été mis en cache par code par V8 dans DevTools/about:tracing | Chromium bogues"  
 [CR946975]: https://crbug.com/946975 "La barre latérale Styles DevTools ne fonctionne pas avec les feuilles de style | Chromium bogues"  
-[CR955497]: https://crbug.com/955497 "Menu de raccourci d’icône d’application pour les applications de | Chromium bogues"  
+[CR955497]: https://crbug.com/955497 "Menu raccourci d’icône d’application pour les applications de | Chromium bogues"  
 [CR974550]: https://crbug.com/974550 "Non-matisation des mesures entre le panneau Perf et performanceObserver | Chromium bogues"  
 [CR1041830]: https://crbug.com/1041830 "Améliorer les couleurs des points d’arrêt | Chromium bogues"  
 [CR1055875]: https://crbug.com/1055875 "La valeur du paramètre de console Contexte uniquement sélectionné ne persiste pas après la fermeture et la réouverture des outils de développement | Chromium bogues"  
@@ -367,7 +367,7 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 [CR1047356]: https://crbug.com/1047356 "Outils Grille CSS/Flexbox/Tableau | Chromium bogues"  
 [CR1093687]: https://crbug.com/1093687 "Créer un outil pour créer et relire des demandes de réseau synthétique | Chromium bogues"  
 [CR1070378]: https://crbug.com/1070378 "Intégrer webhint dans devTools | Chromium bogues"  
-[CR1069404]: https://crbug.com/1069404 "Les fenêtres pop-up de widget [Outils de développement] sont trop étroites | Chromium bogues"  
+[CR1069404]: https://crbug.com/1069404 "Les fenêtres pop-up de widget [Outils de développement] sont trop | Chromium bogues"  
 [CR897944]: https://crbug.com/897944 "Panneaux de | Chromium bogues"
 
 [GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v6.0.0 - GoogleChrome/| GitHub"  
@@ -376,7 +376,7 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 
 [MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Utilisation du dom d’ombre | MDN"
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Canaux d’aperçu Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Canaux de préversion de Microsoft Edge"  
 
 [VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"
 [VisualStudioCode]: https://code.visualstudio.com/ "Code Visual Studio"  
@@ -415,7 +415,7 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 > La page d’origine est disponible [ici](https://developer.chrome.com/blog/new-in-devtools-85) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

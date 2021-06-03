@@ -1,5 +1,5 @@
 ---
-description: Guide sur la gestion du compte De l’Centre de partenaires Microsoft Edge
+description: Guide sur la gestion Microsoft Edge compte de l’Centre de partenaires
 title: Gérer les paramètres du compte
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -16,7 +16,7 @@ ms.locfileid: "11343114"
 ---
 # Gérer les paramètres du compte  
 
-Gérez les paramètres de votre compte et les détails de profil pour votre compte de développeur Microsoft Edge dans [l’Partner Center][MicrosoftPartnerCenter].  
+Gérez les paramètres de votre compte et les détails de profil de votre compte Microsoft Edge développeur dans [l’Partner Center][MicrosoftPartnerCenter].  
 
 ## Paramètres de compte  
 
@@ -30,7 +30,7 @@ Dans la section **Détails du compte,** examinez l’état et le type de votre c
 
 ## Coordonnées  
 
-La **section Coordonnées** affiche les détails que vous avez fournis lors de la création de votre compte.  L’équipe d’extension Microsoft Edge utilise les informations de contact pour vous contacter à propos de votre compte.  Le nom complet de l’éditeur affiché dans le magasin de modules complémentaires Microsoft Edge est également affiché dans la section **Coordonnées.**  
+La **section Coordonnées** affiche les détails que vous avez fournis lors de la création de votre compte.  L Microsoft Edge’extension de compte utilise les informations de contact pour vous contacter à propos de votre compte.  Le nom complet de l’éditeur affiché dans le Microsoft Edge des modules complémentaires est également affiché dans la section **Coordonnées.**  
   
 Si vos informations de contact changent, modifiez la section **Coordonnées.**  Choose **Update**, make your changes, and then choose **Save**.  Vous pouvez également choisir **les coordonnées dans** le menu de navigation de gauche pour ouvrir la section **Coordonnées.**  
 
@@ -40,7 +40,7 @@ Si vous devez modifier l’un de vos coordonnées, l’équipe d’extension Mic
 
 Examinez les paramètres suivants dans la section Paramètres du compte.  
 
-| Paramètres du compte | Description |  
+| Compte Paramètres | Description |  
 |:--- |:--- |  
 | État de vérification | Examinez votre état de vérification lorsque votre compte passe par le processus de vérification.  Par exemple, votre compte est vérifié lorsque vous créez un compte pour la première fois ou après avoir mis à jour vos informations de contact.  |  
 | Programmes | Passer en revue les informations sur les programmes inscrits ou d’autres programmes qui peuvent vous intéresser.  

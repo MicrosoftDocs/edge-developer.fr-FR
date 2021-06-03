@@ -17,7 +17,7 @@ ms.locfileid: "11398076"
 ---
 # <a name="offline-and-network-connectivity-support-in-progressive-web-apps"></a>Prise en charge de la connectivité réseau et hors connexion dans les applications web progressives
 
-Pendant de nombreuses années, les organisations n’ont pas pu investir beaucoup dans les logiciels web par rapport aux logiciels natifs, car les applications web dépendaient de connexions réseau stables. Aujourd’hui, la plateforme web offre désormais des options robustes qui permettent aux utilisateurs de continuer à travailler, même si la connexion réseau devient instable ou se met complètement hors connexion.
+Pendant de nombreuses années, les organisations ont dû investir massivement dans les logiciels web par rapport aux logiciels natifs, car les applications web dépendaient de connexions réseau stables. Aujourd’hui, la plateforme web offre désormais des options robustes qui permettent aux utilisateurs de continuer à travailler, même si la connexion réseau devient instable ou totalement déconnectée.
 
 ## <a name="use-the-caching-to-improve-performance-of-pwas"></a>Utiliser la mise en cache pour améliorer les performances des PPA
 
@@ -80,7 +80,7 @@ self.addEventListener( "fetch", event => {
 
 L’extrait de code s’exécute dans le service de travail chaque fois que le navigateur effectue `fetch` une demande pour ce site. Dans cet événement, il existe une instruction conditionnelle qui s’exécute si la demande est pour un fichier HTML. Le service de travail vérifie si le fichier existe déjà dans un cache \(à l’aide `match()` de la méthode\). Si la demande existe dans le cache, ce résultat mis en cache est renvoyé. Si ce n’est pas le cas, une nouvelle ressource est exécuté, une copie de la réponse est mise en cache pour plus tard et la `fetch` réponse est renvoyée. Si `fetch` l’échec est dû à l’indisponibilité du réseau, la page hors connexion est renvoyée à partir du cache.
 
-Cette introduction simple montre comment utiliser la mise en cache dans votre application web progressive (PWA). Chaque PWA est différent et peut utiliser différentes stratégies de mise en cache. Votre code peut avoir une apparence différente et vous pouvez utiliser différentes stratégies de mise en cache pour différents itinéraires au sein de la même application.
+Cette introduction simple montre comment utiliser la mise en cache dans votre application web progressive (PWA). Chaque PWA est différente et peut utiliser des stratégies de mise en cache différentes. Votre code peut avoir une apparence différente et vous pouvez utiliser différentes stratégies de mise en cache pour différents itinéraires au sein de la même application.
 
 ## <a name="use-indexeddb-in-your-pwa-to-store-structured-data"></a>Utiliser IndexedDB dans votre PWA pour stocker des données structurées
 
@@ -91,10 +91,10 @@ Cette introduction simple montre comment utiliser la mise en cache dans votre ap
 Parfois, vous devrez stocker de petites quantités de données afin de fournir une meilleure expérience hors connexion à vos utilisateurs. Si c’est le cas, vous trouverez peut-être que la simplicité du système de paire clé-valeur du stockage web répond à vos besoins.  
 
 > [!IMPORTANT]
-> Le stockage web est un processus synchrone et n’est pas disponible pour une utilisation dans les threads de travail tels que les travailleurs de service. Une utilisation importante peut créer des problèmes de performances pour votre application. 
+> La Stockage web est un processus synchrone et n’est pas disponible pour une utilisation dans les threads de travail tels que les travailleurs de service. Une utilisation importante peut créer des problèmes de performances pour votre application. 
 
 
-Il existe 2 types de stockage Web : `localStorage` et `sessionStorage` . Chacun d’eux est conservé en tant que magasin de données distinct isolé du domaine qui l’a créé. `sessionStorage` persiste uniquement pendant la durée de la session de navigation (par exemple, lorsque le navigateur est ouvert, ce qui inclut l’actualisation et les restaurations). `localStorage` persiste jusqu’à ce que les données soient supprimées par le code, l’utilisateur ou le navigateur (par exemple, en cas de stockage limité). L’extrait de code suivant montre comment utiliser , ce qui `localStorage` est similaire à la façon dont il est `sessionStorage` utilisé.
+Il existe 2 types de Stockage Web : `localStorage` et `sessionStorage` . Chacun d’eux est conservé en tant que magasin de données distinct isolé du domaine qui l’a créé. `sessionStorage` persiste uniquement pendant la durée de la session de navigation (par exemple, lorsque le navigateur est ouvert, ce qui inclut l’actualisation et les restaurations). `localStorage` persiste jusqu’à ce que les données soient supprimées par le code, l’utilisateur ou le navigateur (par exemple, en cas de stockage limité). L’extrait de code suivant montre comment utiliser , ce qui `localStorage` est similaire à la façon dont il est `sessionStorage` utilisé.
 
 ```javascript
 var data = {
@@ -106,7 +106,7 @@ localStorage.setItem( window.location, JSON.stringify(data) );
 
 Cet extrait de code extrait les métadonnées sur la page actuelle et les stocke dans un objet JavaScript. Ensuite, il stocke cette valeur en tant que JSON à l’aide de la méthode et affecte une clé `localStorage` `setItem()` égale à `window.location` l’URL actuelle. Vous pouvez récupérer les informations à partir `localStorage` de l’utilisation de `getItem()` la méthode. 
 
-L’extrait de code suivant montre comment utiliser la mise en cache pour énumérer les pages mises en cache et extraire des métadonnées pour effectuer une tâche, par exemple créer une liste de `localstorage` liens.
+L’extrait de code suivant montre comment utiliser la mise en cache pour énumérer les pages mises en cache et extraire des métadonnées pour effectuer une tâche, telle que la création d’une liste de `localstorage` liens.
 
 ```javascript
 caches.open( "pages" )
@@ -134,7 +134,7 @@ La `insertOfflineLink()` méthode transmet l’URL de la demande à la `localSto
 
 ## <a name="test-for-network-connections-in-your-pwa"></a>Tester les connexions réseau dans votre PWA
 
-En plus de stocker des informations pour une utilisation hors connexion, il est utile de savoir quand une connexion réseau est disponible pour synchroniser les données ou informer les utilisateurs que l’état du réseau a changé. Utilisez les options suivantes pour tester la connectivité réseau.
+Outre le stockage des informations pour une utilisation hors connexion, il est utile de savoir quand une connexion réseau est disponible pour synchroniser les données ou informer les utilisateurs que l’état du réseau a changé. Utilisez les options suivantes pour tester la connectivité réseau.
 
 ### <a name="navigatoronline"></a>navigator.onLine  
 
@@ -142,7 +142,7 @@ La propriété est un booléen qui vous permet de connaître `navigator.onLine` 
 
 ### <a name="online-and-offline-events"></a>Événements en ligne et hors connexion  
 
-Il est utile de savoir si le réseau est disponible, mais vous pouvez prendre des mesures lorsque votre connectivité réseau change. Dans ce cas, vous pouvez écouter et prendre des mesures en réponse à des événements réseau. Les événements sont disponibles sur le , et les éléments tels qu’ils sont affichés `window` `document` dans `document.body` l’extrait de code suivant.
+Il est utile de savoir si le réseau est disponible, mais vous pouvez prendre des mesures lorsque votre connectivité réseau change. Dans ce cas, vous pouvez écouter et prendre des mesures en réponse à des événements réseau. Les événements sont disponibles sur les éléments , et comme affiché dans l’extrait de `window` `document` code `document.body` suivant.
 
 ```javascript
 window.addEventListener("online",  function(){
@@ -153,14 +153,14 @@ window.addEventListener("offline", function(){
 });
 ```  
 
-## <a name="see-also"></a>Voir également  
+## <a name="see-also"></a>Articles associés  
 
 Pour en savoir plus sur la gestion des scénarios hors connexion, accédez aux pages suivantes.  
 
 *   [Cache][MDNCache]  
 *   [IndexedDB][MDNIndexeddbApi]  
 *   [Service Worker][MDNServiceWorker]  
-*   [Stockage web][MDNWebStorageApi]  
+*   [Web Stockage][MDNWebStorageApi]  
 *   [navigator.onLine][MDNNavigatoronline]  
 *   [Événements en ligne et hors connexion][MDNNavigatoronlineOfflineEvents]  
 *   [Demande avec intention : stratégies de mise en cache à l’âge des PPA][AlistapartRequestIntentCachingStrategiesAgePwas]
@@ -171,10 +171,10 @@ Pour en savoir plus sur la gestion des scénarios hors connexion, accédez aux p
 [MDNIndexeddbApi]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "IndexedDB API | MDN"  
 [MDNIndexeddbApiUsing]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Utilisation d’IndexDb - Api IndexDB | MDN"  
 [MDNServiceWorker]: https://developer.mozilla.org/docs/Web/API/ServiceWorker "ServiceWorker | MDN"  
-[MDNWebStorageApi]: https://developer.mozilla.org/docs/Web/API/Web_Storage_API "Api de stockage web | MDN"  
+[MDNWebStorageApi]: https://developer.mozilla.org/docs/Web/API/Web_Storage_API "Web Stockage API | MDN"  
 [MDNNavigatoronline]: https://developer.mozilla.org/docs/Web/API/NavigatorOnLine "NavigateurOnLine | MDN"  
 [MDNNavigatoronlineOfflineEvents]: https://developer.mozilla.org/docs/Web/API/NavigatorOnLine/Online_and_offline_events "Événements en ligne et hors connexion - NavigateurOnLine | MDN"  
 
-[AbookapartGoingOffline]: https://abookapart.com/products/going-offline "Mise en mode hors connexion par Lee-| A Book Apart"  
+[AbookapartGoingOffline]: https://abookapart.com/products/going-offline "Mise en mode hors connexion par LasSyrxy| A Book Apart"  
 
 [AlistapartRequestIntentCachingStrategiesAgePwas]: https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas "Demande avec intention : stratégies de mise en cache à l’âge des PPA par| Liste à part"  

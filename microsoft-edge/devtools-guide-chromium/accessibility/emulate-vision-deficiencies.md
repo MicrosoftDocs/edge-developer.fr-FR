@@ -21,8 +21,8 @@ Pour mieux répondre aux besoins de vos utilisateurs ayant des problèmes de [vi
 | Problèmes de vision des couleurs | Détails |  
 |:--- |:--- |  
 | Vision floue | L’utilisateur a des difficultés à se concentrer sur des détails précis. |  
-| Protanopia | L’utilisateur ne peut pas percevoir de lumière rouge. |  
-| Deuteranopia | L’utilisateur ne peut pas percevoir de lumière verte. |  
+| Protanopia | L’utilisateur ne parvient pas à percevoir la lumière rouge. |  
+| Deuteranopia | L’utilisateur ne parvient pas à percevoir la lumière verte. |  
 | Tritanopia | L’utilisateur ne parvient pas à percevoir la lumière bleue. |  
 | Achromatopsia | L’utilisateur ne peut percevoir aucune couleur, ce qui réduit toutes les couleurs à une nuance de gris. |  
 
@@ -43,13 +43,13 @@ Le menu **Rendu** s’affiche dans le bac.
 1.  Faites défiler vers le bas `Emulate vision deficiencies` jusqu’à l’élément de menu et choisissez le menu déroulant pour afficher les options.  
     
     :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="Menu Émuler les défaillances de la vision dans le caisse de rendu" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
-       Le **menu Émuler les défaillances de** la vision dans le bac **de** rendu  
+       Le **menu Émuler les défaillances de** la vision dans le caisse **de** rendu  
     :::image-end:::  
     
 1.  Choisissez une option.  
     
     :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="Options du menu Émuler les défaillances de la vision" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
-       La **vision Émuler les options de** menu  
+       La **vision Émuler les faiblesses des** options de menu  
     :::image-end:::  
     
 1.  La fenêtre principale affiche la simulation de l’option choisie appliquée à la page actuelle.  

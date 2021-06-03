@@ -1,5 +1,5 @@
 ---
-description: Utilisez des périphériques virtuels Microsoft Edge pour améliorer votre site web pour les appareils à double écran et pliables.
+description: Utilisez des périphériques virtuels dans Microsoft Edge pour améliorer votre site web pour les appareils à double écran et pliables.
 title: Émuler les appareils à double écran et pliables dans Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -26,7 +26,7 @@ Dans Microsoft Edge version 89 ou ultérieure, vous pouvez émuler les appareils
 *   Position à écran unique ou pliée  
 *   Double écran ou posture dépliée  
     
-Activer les API de plateforme [Web](#turn-on-experimental-apis) expérimentales et utiliser la fonctionnalité multimédia [CSS][DualScreenDocsCssMedia] couvrant l’écran et l’API [JavaScript getWindowSegments][DualScreenDocsJSAPI] pour améliorer votre site web \(ou application\) pour les appareils à double écran et pliables.  
+Activer les API de plateforme [Web](#turn-on-experimental-apis) expérimentales et utiliser la fonctionnalité multimédia [CSS][DualScreenDocsCssMedia] couvrant l’écran et [l’API JavaScript getWindowSegments][DualScreenDocsJSAPI] pour améliorer votre site web \(ou application\) pour les appareils à double écran et pliables.  
 
 :::image type="complex" source="../media/experiments-surface-duo-emulation.msft.png" alt-text="Émuler Surface Duo dans Microsoft Edge" lightbox="../media/experiments-surface-duo-emulation.msft.png":::  
    Émuler Surface Duo dans Microsoft Edge  
@@ -38,7 +38,7 @@ Pour utiliser la [fonctionnalité multimédia CSS][DualScreenDocsCssMedia] couvr
 
 1.  Naviguez vers`edge://flags` .  
 1.  Dans la **zone de texte Indicateurs de recherche,** entrez , choisissez l’indicateur des fonctionnalités de la plateforme Web expérimentale et modifiez Désactivé en `Experimental Web Platform features` **Activé.** **** ****  
-1.  Redémarrez MicrosoftEdge.  
+1.  Redémarrez Microsoft Edge.  
     
 :::image type="complex" source="../media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Activer l’indicateur des fonctionnalités de plateforme Web expérimentale" lightbox="../media/experiments-dual-screen-emulation.msft.png":::
    Activer **l’indicateur des fonctionnalités de plateforme Web** expérimentale  
@@ -47,7 +47,7 @@ Pour utiliser la [fonctionnalité multimédia CSS][DualScreenDocsCssMedia] couvr
 > [!NOTE]
 > Si vous utilisez des requêtes [multimédias CSS][DualScreenDocsCssMedia] ou l’API d’éumération de segment [JavaScript Windows][DualScreenDocsJSAPI] pour améliorer votre site web ou votre application [pour surface Duo,][SurfaceDevicesDuo]vous devez également activer l’indicateur des fonctionnalités de plateforme **Web** expérimentale dans l’application [Android Microsoft Edge][GooglePlayMicrosoftEdge] sur votre appareil [Surface Duo.][SurfaceDevicesDuo]  
 > 
-> Si l’indicateur des fonctionnalités de la plateforme **Web** expérimentale est allumé dans les Microsoft Edge de bureau et désactivé dans l’application [Microsoft Edge Android,][GooglePlayMicrosoftEdge]le comportement de votre site web ou de votre application dans l’émulateur Surface Duo dans l’Microsoft Edge de bureau ne correspond pas à l’application [Android Microsoft Edge][GooglePlayMicrosoftEdge] sur [Surface Duo][SurfaceDevicesDuo]. [][MicrosoftEdge]  Assurez-vous que les indicateurs correspondent à l’ensemble des appareils Android et Microsoft Edge pour utiliser correctement l’émulateur Surface Duo dans les Microsoft Edge [.][MicrosoftEdge]  
+> Si l’indicateur des fonctionnalités de la plateforme **Web** expérimentale est allumé dans les Microsoft Edge de bureau et désactivé dans l’application [Microsoft Edge Android,][GooglePlayMicrosoftEdge]le comportement de votre site web ou de votre application dans l’émulateur Surface Duo dans l’Microsoft Edge de bureau ne correspond pas à l’application [Android Microsoft Edge][GooglePlayMicrosoftEdge] sur [Surface Duo][SurfaceDevicesDuo]. [][MicrosoftEdge]  Assurez-vous que les indicateurs correspondent à tous les appareils Android et Microsoft Edge pour utiliser correctement l’émulateur Surface Duo dans les ordinateurs [de bureau Microsoft Edge][MicrosoftEdge].  
 
 ## <a name="test-on-foldable-and-dual-screen-devices"></a>Test sur les appareils pliables et à double écran  
 
@@ -72,7 +72,7 @@ L’icône Fonctionnalités **de plateforme Web** expérimentale \( ![ Experimen
 
 Voici des ressources supplémentaires qui peuvent vous aider à améliorer votre site web \(ou application\) pour les appareils à double écran.  
 
-*   Pour plus d’informations sur le développement web sur les appareils à double écran, accédez aux expériences [web à double écran.][DualScreenWebIndex]  
+*   Pour plus d’informations sur le développement web sur les appareils à double écran, accédez à [Expériences web à double écran.][DualScreenWebIndex]  
 *   Installez [l’émulateur Surface Duo.][DualScreenAndroidUseEmulator]  L’émulateur Surface Duo est différent de l’émulateur dans Microsoft Edge, exécute Android et s’intègre à [Android Studio.][AndroidDeveloperStudio]  Pour plus d’informations, [accédez à Obtenir le SDK Surface Duo.][DualScreenAndroidGetDuoSdk]  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  

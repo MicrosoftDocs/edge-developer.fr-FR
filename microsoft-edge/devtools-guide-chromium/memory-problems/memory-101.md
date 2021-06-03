@@ -46,7 +46,7 @@ Un objet peut contenir de la mémoire de deux manières :
 *   Directement par l’objet.  
 *   Implicitement en maintenant des références à d’autres objets, et par conséquent en empêchant leur élimination automatique par un garbage collector.  
 
-Lorsque vous [][DevtoolsMemoryProblemsHeapSnapshots] travaillez avec le panneau Mémoire dans DevTools \(un outil permettant d’examiner les problèmes de mémoire trouvés sous **Mémoire**\), vous pouvez vous retrouver en regardant différentes colonnes d’informations.  Deux éléments se démarquent par **la taille superficiele** et la **taille conservée,** mais que représentent-ils ?  
+Lorsque vous [][DevtoolsMemoryProblemsHeapSnapshots] travaillez avec le panneau Mémoire dans DevTools \(un outil permettant d’examiner les problèmes de mémoire trouvés sous **Mémoire**\), vous pouvez vous retrouver en regardant différentes colonnes d’informations.  Deux éléments se démarquent par la taille **superficiele** et la **taille conservée,** mais que représentent-ils ?  
 
 :::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="Tailles superficiels et conservées" lightbox="../media/memory-problems-shallow-retained.msft.png":::
    Tailles superficiels et conservées  
@@ -62,9 +62,9 @@ La mémoire du renderer est toute la mémoire du processus dans lequel une page 
 
 ### <a name="retained-size"></a>Taille conservée  
 
-Il s’agit de la taille de la mémoire qui est libérée une fois que l’objet est supprimé avec les objets dépendants qui ont été rendues inaccessibles à partir des racines garbage **collector**.  
+Il s’agit de la taille de la mémoire qui est libérée une fois que l’objet est supprimé avec les objets dépendants qui ont été rendues inaccessibles à partir des racines du Garbage **Collector**.  
 
-**Les racines** du Garbage Collector sont composés de **poignées créées** \(locales ou globales\) lors de la création d’une référence à partir de code natif à un objet JavaScript en dehors de V8.  Tous ces handles peuvent être trouvés dans un instantané de tas sous **des racines GC**Handle scope et GC  >  **** ****  >  **racines Global handles**.  Décrire les descripteurs de cette documentation sans plonger dans les détails de l’implémentation du navigateur peut prêter à confusion.  Les racines du garbage collector et les poignées ne sont pas des sujets dont vous avez besoin.  
+**Les racines** du Garbage Collector sont des **poignées créées** \(locales ou globales\) lors de la création d’une référence à partir de code natif à un objet JavaScript en dehors de V8.  Tous ces handles peuvent se trouver dans une capture instantanée de tas sous **des racines GC**  >  **Handle scope** et GC ****  >  **racines Global handles**.  Décrire les descripteurs de cette documentation sans plonger dans les détails de l’implémentation du navigateur peut prêter à confusion.  Les racines du garbage collector et les poignées ne sont pas des sujets dont vous avez besoin.  
 
 Il existe de nombreuses racines de garbage collector internes, dont la plupart ne sont pas intéressantes pour les utilisateurs.  Du point de vue des applications, il existe les types de racines suivants.  
 
@@ -73,7 +73,7 @@ Il existe de nombreuses racines de garbage collector internes, dont la plupart n
 *   Parfois, les objets sont conservés par le contexte de débogage dans l’outil **Sources** et la **console,** par exemple après l’évaluation de la console.  Créez des captures instantanées de tas avec un outil **console** effacé et aucun point d’arrêt actif dans le débogger de **l’outil Sources.**
 
 >[!TIP]
-> Avant de prendre une [][DevtoolsMemoryProblemsHeapSnapshots] capture instantanée du tas dans l’outil Mémoire, désactivez l’outil **Console** et désactivez les points d’arrêt dans l’outil **Sources.**  Pour effacer **l’outil Console,** exécutez la `clear()` méthode.  
+> Avant de prendre une [][DevtoolsMemoryProblemsHeapSnapshots] capture instantanée du tas dans l’outil Mémoire, désactivez l’outil **Console** et désactivez les points d’arrêt dans **l’outil Sources.**  Pour effacer **l’outil Console,** exécutez la `clear()` méthode.  
 
 Le graphique de mémoire commence par une racine, qui peut être l’objet du navigateur ou l’objet `window` `Global` d'Node.js module.  Vous ne contrôlez pas la façon dont l’objet racine est collecté.  
 
@@ -81,7 +81,7 @@ Le graphique de mémoire commence par une racine, qui peut être l’objet du na
    Vous ne pouvez pas contrôler la façon dont l’objet racine est collecté.  
 :::image-end:::  
 
-Tout ce qui n’est pas accessible à partir de la racine récupère la garbage collected.  
+Tout ce qui n’est pas accessible à partir de la racine obtient la garbage collected.  
 
 > [!NOTE]
 > Les [colonnes Taille superficiele et](#shallow-size) [Taille conservée](#retained-size) représentent toutes deux des données en octets.  
@@ -93,7 +93,7 @@ Le tas est un réseau d’objets interconnectés.  Dans le monde mathématique, 
 *   **Les nodes** \(ou objets \) sont **étiquetés**à l’aide du nom de la fonction constructeur qui a été utilisée pour les créer. ****  
 *   **Les bords** sont étiquetés à l’aide des noms des **propriétés.**  
 
-Découvrez [comment enregistrer un profil à l’aide du Profileur][DevtoolsMemoryProblemsHeapSnapshots]de tas.  Dans la figure suivante, certains des éléments notables [][DevtoolsMemoryProblemsHeapSnapshots] de l’enregistrement instantané de tas dans l’outil Mémoire incluent la distance : la distance par rapport à la racine du garbage collector.  Si presque tous les objets du même type sont à la même distance et que certains d’entre eux se trouve à une plus grande distance, cela vaut la peine d’examiner ce point.  
+Découvrez [comment enregistrer un profil à l’aide du profileur de tas.][DevtoolsMemoryProblemsHeapSnapshots]  Dans la figure suivante, certains des éléments notables [][DevtoolsMemoryProblemsHeapSnapshots] de l’enregistrement instantané de tas dans l’outil Mémoire incluent la distance : la distance par rapport à la racine du garbage collector.  Si presque tous les objets du même type sont à la même distance et que certains d’entre eux se trouve à une plus grande distance, cela vaut la peine d’examiner ce point.  
 
 :::image type="complex" source="../media/memory-problems-root.msft.png" alt-text="Distance par rapport à la racine" lightbox="../media/memory-problems-root.msft.png":::
    Distance par rapport à la racine  
@@ -101,7 +101,7 @@ Découvrez [comment enregistrer un profil à l’aide du Profileur][DevtoolsMemo
 
 ## <a name="dominators"></a>Dominants  
 
-Les objets dominants sont constitués d’une arborescence, car chaque objet possède exactement un seul dominant.  Un dominant d’un objet peut ne pas avoir de références directes à un objet qu’il dirige ; c’est-à-dire que l’arborescence du dominant n’est pas une arborescence couvrante du graphique.  
+Les objets dominants sont constitués d’une arborescence, car chaque objet possède exactement un seul dominant.  Un dominant d’un objet peut ne pas avoir de références directes à un objet qu’il dirige ; autrement dit, l’arborescence du sous-arbre n’est pas une arborescence couvrante du graphique.  
 
 Dans la figure suivante, l’instruction suivante est vraie.  
 
@@ -115,7 +115,7 @@ Dans la figure suivante, l’instruction suivante est vraie.
    Structure de l’arborescence de l’dominant  
 :::image-end:::  
 
-Dans la figure suivante, le nœud est l’en-usineur de , mais il existe également dans chaque chemin simple du Garbage `#3` `#10` Collector à `#7` `#10` .  Par conséquent, un objet B est le résorbateur d’un objet A si B existe dans chaque chemin d’accès simple de la racine à l’objet A.  
+Dans la figure suivante, le nœud est l’en-avant-première de , mais il existe également dans chaque chemin simple du garbage `#3` `#10` collector à `#7` `#10` .  Par conséquent, un objet B est le résorbateur d’un objet A si B existe dans chaque chemin d’accès simple de la racine à l’objet A.  
 
 :::image type="complex" source="../media/memory-problems-dominators.msft.gif" alt-text="Illustration de l’animation de l’animation de l’animation" lightbox="../media/memory-problems-dominators.msft.gif":::
    Illustration de l’animation de l’animation de l’animation  
@@ -138,7 +138,7 @@ Les primitives ne peuvent pas référencer d’autres valeurs et sont toujours d
 **Les** nombres peuvent être stockés sous l’une ou l’autre des façons :  
 
 *   valeurs d’un nombre integer 31 bits immédiatement appelées petits **nombres d’nombres integers** \(**SMI**s\) ou  
-*   objets tas, appelés nombres **de tas**. Les nombres de tas sont utilisés pour stocker les valeurs qui ne s’intègrent pas dans le formulaire SMI, telles que les **doubles,** ou lorsqu’une valeur doit être encadrée, **** par exemple la définition de propriétés sur celui-ci.  
+*   objets de tas, appelés nombres **de tas**. Les nombres de tas sont utilisés pour stocker les valeurs qui ne s’intègrent pas dans le formulaire SMI, telles que les **doubles,** ou lorsqu’une valeur doit être encadrée, **** par exemple la définition de propriétés sur celui-ci.  
 
 **Les** chaînes peuvent être stockées dans :  
 
@@ -147,7 +147,7 @@ Les primitives ne peuvent pas référencer d’autres valeurs et sont toujours d
 
 La mémoire pour les nouveaux objets JavaScript est allouée à partir d’un tas JavaScript dédié \(ou d’un tas **de vm**\).  Ces objets sont gérés par le garbage collector dans V8 et, par conséquent, restent en vie tant qu’il existe au moins une référence forte à ces objets.  
 
-Tout ce qui ne se trouve pas dans le tas JavaScript est appelé **un objet natif.**  Les objets natifs, contrairement aux objets tas, ne sont pas gérés par le garbage collector V8 tout au long de leur durée de vie et peuvent uniquement être accessibles à partir de JavaScript à l’aide de l’objet wrapper JavaScript.  
+Tout ce qui ne se trouve pas dans le tas JavaScript est appelé **objet natif.**  Les objets natifs, contrairement aux objets tas, ne sont pas gérés par le garbage collector V8 tout au long de leur durée de vie et peuvent uniquement être accessibles à partir de JavaScript à l’aide de l’objet wrapper JavaScript.  
 
 **La chaîne** Cons est un objet qui se compose de paires de chaînes stockées, puis jointes, et est le résultat de la concatenation.  La jointation du contenu de la **chaîne cons se** produit uniquement selon les besoins.  Par exemple, lorsqu’une sous-chaîne d’une chaîne jointe doit être construite.
 
@@ -188,7 +188,7 @@ Chaque objet wrapper contient une référence à l’objet natif correspondant, 
 > La page d’origine se trouve [ici](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) et est co-auteure par [Meggin Kearney][MegginKearney] \(Technical Writer\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

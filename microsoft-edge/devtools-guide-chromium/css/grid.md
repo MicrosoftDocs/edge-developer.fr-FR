@@ -56,7 +56,7 @@ La **** section Grille **du** volet Disposition contient les 2 sous-sections sui
 
 ## <a name="overlay-display-settings"></a>Paramètres d’affichage de superposition  
 
-Les **paramètres d’affichage de** superposition se composent de 2 parties suivantes.  
+Les **paramètres d’affichage Superposition** se composent de 2 parties suivantes.  
 
 *   Choisissez l’une des options suivantes dans le menu déroulant.  
     
@@ -98,7 +98,7 @@ Choisissez **Masquer les étiquettes de** ligne pour masquer les numéros de lig
 
 Pour plus d’informations sur les noms de lignes dans la superposition de grille, accédez à Disposition à l’aide de [lignes de grille nommées.][MdnLayoutUsingNamedGridLines]  
 
-Choisissez **Afficher les noms de ligne** pour afficher les noms de lignes au lieu des nombres.  Dans l’exemple, 4 lignes ont des noms `left` : , , et `middle1` `middle2` `right` .  
+Choisissez **Afficher les noms de ligne** pour afficher les noms de ligne au lieu des nombres.  Dans l’exemple, 4 lignes ont des noms `left` : , , et `middle1` `middle2` `right` .  
 
 <!--In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  -->  
 
@@ -117,16 +117,16 @@ DevTools s’affiche `[authored size]` et dans chaque étiquette de `[computed s
 | **taille d’auteur** | Taille définie dans la feuille de style \(omise si elle n’est pas définie\). |  
 | **taille calculée** | Taille réelle à l’écran. |  
 
-Dans la démonstration, les `snack-box` tailles de colonne sont définies dans `grid-template-columns:1fr 2fr;` le CSS.  Par conséquent, les étiquettes de ligne de colonne affichent les tailles calculées et les tailles de la colonne.  
+Dans la démonstration, les `snack-box` tailles de colonne sont définies dans `grid-template-columns:1fr 2fr;` le CSS.  Par conséquent, les étiquettes de ligne de colonne affichent les tailles calculées et les tailles.  
 
-| Suivre la taille | Taille de la forme de la forme | Taille calculée |  
+| Suivre la taille | Taille de la forme | Taille calculée |  
 |:--- |:--- |:--- |  
 | **1fr** &#x2022; **96,66 px** | 1fr | 96,66 px |  
 | **2fr** &#x2022; **193,32 px** | 2fr | 193,32 px |  
 
 Les étiquettes de ligne affichent uniquement les tailles calculées, car aucune taille de ligne n’est définie dans la feuille de style.  
 
-| Suivre la taille | Taille de la forme de la forme | Taille calculée |  
+| Suivre la taille | Taille de la forme | Taille calculée |  
 |:--- |:--- |:--- |  
 | **80px** | &nbsp;| 80px |  
 | **80px** | &nbsp;| 80px |  
@@ -157,7 +157,7 @@ La section **Superpositions** de grille contient une liste de grilles présentes
 
 ### <a name="enable-overlay-views-of-multiple-grids"></a>Activer les affichages de superposition de plusieurs grilles  
 
-Pour afficher la grille de superposition de plusieurs grilles, cochez la case en regard de chaque nom de la grille.  Dans l’exemple, il existe 2 superpositions de grilles activées qui sont chacune représentées avec des couleurs différentes.  
+Pour afficher la grille de superposition pour plusieurs grilles, cochez la case en regard de chaque nom de la grille.  Dans l’exemple, il existe 2 superpositions de grilles activées qui sont chacune représentées avec des couleurs différentes.  
 
 *   `main`  
 *   `div.snack-box`  
@@ -202,7 +202,7 @@ Pour mettre en surbrillez l’élément HTML dans l’outil **Elements** et fait
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/css/grid) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -7,7 +7,7 @@ ms.date: 05/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, webview2, WebView, webview, applications winui, winui, edge, CoreWebView2, contrôle de navigateur, edge html, get started, Prise en main, .NET
+keywords: WebView2, webview2, WebView, webview, applications winui, winui, edge, CoreWebView2, contrôle de navigateur, edge html, mise en Prise en main, .NET
 ms.openlocfilehash: e334e8e7aec5fff4c57700a99de5cde906242e4f
 ms.sourcegitcommit: bbbf722067f1d255f59ab384e66798f8b77ef609
 ms.translationtype: MT
@@ -242,7 +242,7 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 
 Pour créer et exécuter votre projet, sélectionnez `F5` .  Assurez-vous que la navigation est bloquée sur les sites HTTP et autorisée pour les sites HTTPS.  
 
-## <a name="step-5---scripting"></a>Étape 5 : écriture de scripts  
+## <a name="step-5---scripting"></a>Étape 5 : scripts  
 
 Vous pouvez utiliser des applications hôtes pour injecter du code JavaScript dans des contrôles WebView2 lors de l’utilisation.  Vous pouvez tâcher WebView pour exécuter du javaScript arbitraire ou ajouter des scripts d’initialisation.  Le javaScript injecté s’applique à tous les nouveaux documents de niveau supérieur et aux images enfants jusqu’à ce que le JavaScript soit supprimé.  Le javaScript injecté est exécuté avec un minutage spécifique.  
 
@@ -288,7 +288,7 @@ Pour en savoir plus sur WebView2, accédez aux ressources suivantes.
     
 *   Pour plus d’informations sur l’API WebView2, accédez aux spécifications [WebView2.][GithubMicrosoftMicrosoftUiXamlSpecsWebview2]  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe web Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 

@@ -27,7 +27,7 @@ Les ressources d’évaluation de l’accessibilité sont une ressource multi-pa
 
 #### [<a name="assistive-technology-compatibility-tests"></a>Tests de compatibilité des technologies d’assistance](http://www.powermapper.com/tests)  
 
-Résultats des tests montrant le comportement de différents types de contenu et normes dans les technologies d’assistance (AT) comme les lecteurs d’écran.
+Résultats des tests montrant le comportement des différents types de contenu et normes dans les technologies d’assistance (AT) comme les lecteurs d’écran.
 
 #### [<a name="easy-checks--a-first-review-of-web-accessibility"></a>Vérifications faciles : premier examen de l’accessibilité web](https://www.w3.org/WAI/eval/preliminary.html)  
 

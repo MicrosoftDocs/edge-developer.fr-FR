@@ -66,7 +66,7 @@ Pour accéder aux onglets masqués du volet Navigateur, sélectionnez ![ Autres 
 Les sous-sections suivantes couvrent le volet Navigateur :
 *   [Utilisation de l’onglet Page pour explorer les ressources qui construisent la page web actuelle](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
 *   [Utilisation de l’onglet Système de fichiers pour définir un espace de travail local](#using-the-filesystem-tab-to-define-a-local-workspace)
-*   [Utilisation de l’onglet Remplacements pour remplacer les fichiers serveur par des fichiers locaux](#using-the-overrides-tab-to-override-server-files-with-local-files)
+*   [Utilisation de l’onglet Remplacements pour remplacer les fichiers serveur avec des fichiers locaux](#using-the-overrides-tab-to-override-server-files-with-local-files)
 *   [Utilisation de l’onglet Scripts de contenu pour Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
 *   [Utilisation de l’onglet Extraits de code pour exécuter des extraits de code JavaScript sur n’importe quelle page](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
 *   [Utilisation du menu Commande pour ouvrir des fichiers](#using-the-command-menu-to-open-files)
@@ -120,7 +120,7 @@ Les espaces de travail fonctionnent bien lorsque le code JavaScript renvoyé par
 
 Pour plus d’informations, voir le [didacticiel Modifier les fichiers avec les espaces de travail.][DevtoolsGuideChromiumWorkspacesIndex]
 
-### <a name="using-the-overrides-tab-to-override-server-files-with-local-files"></a>Utilisation de l’onglet Remplacements pour remplacer les fichiers serveur par des fichiers locaux
+### <a name="using-the-overrides-tab-to-override-server-files-with-local-files"></a>Utilisation de l’onglet Remplacements pour remplacer les fichiers serveur avec des fichiers locaux
 
 Utilisez **l’onglet Remplacements** du volet **Navigateur** pour remplacer les ressources de page (telles que les images) avec les fichiers d’un dossier local.
 
@@ -453,7 +453,7 @@ Pour utiliser un débogger sur une page web, vous définissez généralement un 
 
 *   [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] - a tutorial using an existing, simple webpage that contains a few form controls.
 
-### <a name="advantages-of-the-debuggers-watch-and-scope-over-consolelog"></a>Avantages des contrôles Watch et Scope over console\.log du débogger
+### <a name="advantages-of-the-debuggers-watch-and-scope-over-consolelog"></a>Avantages des contrôles Watch et Scope over console\.log du déboyeur
 
 Ces trois approches sont équivalentes :
 

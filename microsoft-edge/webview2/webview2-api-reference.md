@@ -1,6 +1,6 @@
 ---
-description: Référence d’API pour le SDK Microsoft Edge WebView2
-title: Référence de l’API Microsoft Edge WebView2
+description: Référence d’API Microsoft Edge SDK WebView2
+title: Microsoft Edge Référence de l’API WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/06/2021
@@ -15,9 +15,9 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "11535691"
 ---
-# <a name="microsoft-edge-webview2-api-reference"></a>Référence de l’API Microsoft Edge WebView2  
+# <a name="microsoft-edge-webview2-api-reference"></a>Microsoft Edge Référence de l’API WebView2  
 
-Le contrôle Microsoft Edge WebView2 vous permet d’héberger du contenu web dans votre application à l’aide de [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com) comme moteur de rendu.  Pour plus d’informations, accédez à [Vue d’ensemble de Microsoft Edge WebView2](./index.md) et à la mise en [place de WebView2.](./get-started/win32.md)  
+Le Microsoft Edge WebView2 vous permet d’héberger du contenu web dans votre application en utilisant Microsoft Edge [(Chromium)](https://www.microsoftedgeinsider.com) comme moteur de rendu.  Pour plus d’informations, accédez à [Vue d’Microsoft Edge WebView2](./index.md) [et Prise en main avec WebView2.](./get-started/win32.md)  
 
 Sélectionnez les langues et l’infrastructure de WebView2 que vous souhaitez utiliser pour former la liste suivante.  
 
@@ -27,7 +27,7 @@ Sélectionnez les langues et l’infrastructure de WebView2 que vous souhaitez u
 *   .NET  
     *   [Core][DotnetMicrosoftWebWebView2CoreNamespace]  
     *   [WPF][DotnetMicrosoftWebWebView2WpfNamespace]  
-    *   [WindowsForms][DotnetMicrosoftWebWebView2WinformsNamespace]  
+    *   [Windows Forms][DotnetMicrosoftWebWebView2WinformsNamespace]  
         
 <!-- links -->  
 

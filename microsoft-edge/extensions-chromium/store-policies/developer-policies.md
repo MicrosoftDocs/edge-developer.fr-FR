@@ -1,6 +1,6 @@
 ---
-description: Microsoft Edge Add-ons store developer policies
-title: Microsoft Edge Add-ons store developer policies
+description: Stratégies de développement du magasin des extensions Microsoft Edge
+title: Stratégies de développement du magasin des extensions Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/17/2021
@@ -14,21 +14,21 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 02/17/2021
 ms.locfileid: "11343079"
 ---
-# Microsoft Edge Add-ons store developer policies  
+# Stratégies de développement du magasin des extensions Microsoft Edge  
 
 ## Introduction et objectif de ce document  
 
-Nous vous remercions de votre intérêt pour le développement d’extensions pour le magasin de modules extensions Microsoft Edge.  Les stratégies de développeur du magasin de modules microsoft Edge \(stratégies de développeur du magasin d’extensions\) s’appliquent à vos extensions, y compris votre soumission d’extensions via l’Partner [Center][MicrosoftPartnerCenter] et la mise en service de ces extensions via les extensions Microsoft Edge.  
+Nous vous remercions de votre intérêt pour le développement d’extensions pour Microsoft Edge magasin de modules.  Les stratégies de développeur du magasin d’extensions Microsoft Edge store \(Stratégies de développeur du magasin d’extensions\) s’appliquent à vos extensions, y compris votre soumission d’extensions par le biais de l’Partner [Center][MicrosoftPartnerCenter] et la mise en service de ces extensions via les extensions Microsoft Edge.  
 
 ## Principes  
 
 Quelques principes pour vous aider à démarrer :  
 
-*   Vous devez offrir une valeur unique et distincte dans vos extensions pour Microsoft Edge.  Fournissez une bonne raison de télécharger vos extensions à partir du magasin de modules de microsoft Edge \(Modules de extension Microsoft Edge\).  
+*   Vous devez offrir une valeur unique et distincte au sein de vos extensions pour Microsoft Edge.  Fournissez une bonne raison de télécharger vos extensions à partir du Microsoft Edge de modules Microsoft Edge\).  
 *   Vous ne devez pas induire en erreur nos utilisateurs communs concernant les actions de votre extension, les personnes qui l’offrent, etc.  
-*   Vous ne devez pas essayer de insérer les utilisateurs, le système ou l’écosystème.  Il n’y a pas de place dans nos modules de modules microsoft Edge pour tout type de fraude ; que ce soit la manipulation des évaluations et des révisions, la fraude par carte de crédit ou toute autre activité frauduleuse.  
+*   Vous ne devez pas essayer de insérer les utilisateurs, le système ou l’écosystème.  Il n’y a aucune place dans nos modules Microsoft Edge pour tout type de fraude ; que ce soit la manipulation des évaluations et des révisions, la fraude par carte de crédit ou toute autre activité frauduleuse.  
     
-L’application aux stratégies de développeur du magasin de modules de microsoft Edge doit vous aider à faire des choix qui améliorent l’appel et le public de votre extension.  
+Le respect des stratégies de développement Microsoft Edge du magasin de modules Microsoft Edge vous permet de faire des choix qui améliorent l’appel et le public de votre extension.  
 
 Vos extensions sont essentielles à l’expérience de centaines de millions d’utilisateurs.  Nous avons le plaisir de découvrir ce que vous créez et sommes ravis de vous aider à fournir vos extensions au monde entier.  
 
@@ -56,17 +56,17 @@ Les termes de recherche ne peuvent pas dépasser sept termes uniques et doivent 
 
 #### 1.1.5 Fournir les détails appropriés  
 
-Vous devez fournir des détails distincts et informatifs sur votre extension et la fonctionnalité de description \(metadata\) de votre extension.  Votre extension doit fournir une expérience utilisateur précieuse et de qualité.  Votre extension doit également avoir une présence active dans les extensions Microsoft Edge.  
+Vous devez fournir des détails distincts et informatifs sur votre extension et la fonctionnalité de description \(metadata\) de votre extension.  Votre extension doit fournir une expérience utilisateur précieuse et de qualité.  Votre extension doit également avoir une présence active dans Microsoft Edge modules.  
 
 #### 1.1.6 Stabilité et performances  
 
-Votre extension ne doit pas avoir d’impact négatif sur les performances ou la stabilité de Microsoft Edge.  
+Votre extension ne doit pas avoir d’impact négatif sur les performances ou la stabilité des Microsoft Edge.  
 
 #### 1.1.7 Obfuscation  
 
 Les extensions avec du code obscurci ne sont pas autorisées.  Cela inclut le code dans votre package d’extension, ainsi que tout code externe ou ressource récupéré à partir du web.  Vous pouvez être invité à refactoriser des parties de votre code s’il n’est pas reviewable.  
 
-#### 1.1.8 Modification des paramètres du navigateur  
+#### 1.1.8 Modification de la Paramètres  
 
 Votre extension ne doit pas, sans le consentement de l’utilisateur approprié, modifier ou sembler modifier les fonctionnalités ou paramètres du navigateur, y compris, mais sans s’y limiter : le fournisseur de recherche et les suggestions de la barre d’adresses, la page de démarrage ou d’accueil, la page nouvel onglet et l’ajout ou la suppression du favori.  
 
@@ -81,7 +81,7 @@ Votre extension ne doit pas mettre en danger ou compromettre la sécurité des u
 #### 1.2.1 Stratégies de sécurité du contenu  
 
 > [!NOTE]
-> Si vous a apporté des modifications à votre extension au-delà de la fonctionnalité décrite, toutes les modifications apportées au code doivent être conformes à la stratégie de sécurité de contenu [Microsoft Edge.][MicrosoftEdgeContentSecurityPolicyRemoteScript]  Par exemple, votre extension ne doit pas télécharger un script distant et exécuter ce script d’une manière qui n’est pas cohérente avec la fonctionnalité décrite.  
+> Si vous a apporté des modifications à votre extension au-delà de la fonctionnalité décrite, toutes les modifications apportées au code doivent être conformes à la stratégie de sécurité [Microsoft Edge contenu.][MicrosoftEdgeContentSecurityPolicyRemoteScript]  Par exemple, votre extension ne doit pas télécharger de script distant et exécuter ce script d’une manière qui n’est pas cohérente avec la fonctionnalité décrite.  
 
 #### 1.2.2 Logiciels indésirables et malveillants  
 
@@ -93,7 +93,7 @@ Votre extension peut dépendre de logiciels non intégrés \(par exemple, un aut
 
 #### 1.2.4 Extensions Update  
 
-Sauf autorisation contraire de Microsoft, vos extensions doivent être mises à jour uniquement par le biais des extensions Microsoft Edge.  
+Sauf autorisation contraire de Microsoft, vos extensions doivent être mises à jour uniquement Microsoft Edge modules.  
 
 ### 1.3 Le produit peut être testé  
 
@@ -109,7 +109,7 @@ Si votre extension nécessite un accès à un serveur, le serveur doit être fon
 
 ### 1.4 Utilisation  
 
-Votre extension doit respecter les normes du magasin de modules de microsoft Edge pour la convivialité, y compris, mais sans s’y limiter, celles répertoriées dans les sous-sections ci-dessous.  
+Votre extension doit respecter les Microsoft Edge du magasin d’extensions pour des raisons d’utilisation, y compris, mais sans s’y limiter, celles répertoriées dans les sous-sections ci-dessous.  
 
 #### 1.4.1 Compatibilité entre les plateformes  
 
@@ -160,7 +160,7 @@ Votre extension ne doit pas collecter, stocker ou transmettre des informations p
 
 ### 1.6 Autorisations  
 
-Votre extension doit uniquement demander les autorisations nécessaires au fonctionnement.  Vous devez fournir une description du fonctionnement de votre extension.  Votre extension doit uniquement être exécutée comme décrit.  Votre extension peut ne pas demander d’autorisation pour les fonctionnalités qui vont au-delà des fonctionnalités requises pour effectuer et fonctionner comme déclaré.  
+Votre extension doit uniquement demander les autorisations nécessaires au fonctionnement.  Vous devez fournir une description du fonctionnement de votre extension.  Votre extension doit uniquement être exécutée comme décrit.  Il se peut que votre extension ne demande pas d’autorisation pour les fonctionnalités qui vont au-delà des fonctionnalités requises pour fonctionner comme déclaré.  
 
 ### 1.7 Localisation  
 
@@ -189,11 +189,11 @@ Les conditions suivantes s’appliquent à votre utilisation d’une API d’ach
     
 #### 1.8.2 Divulgation des fonctionnalités payantes  
 
-Votre extension et les métadonnées associées doivent fournir des informations sur les types d’achats in-product proposés et la plage de prix.  Vous ne devez pas induire en erreur les utilisateurs et être clair sur la nature de vos offres et promotions in-product, y compris l’étendue et les conditions des expériences d’essai.  Si votre extension limite l’accès au contenu créé par l’utilisateur pendant ou après une version d’essai, vous devez en informer les utilisateurs à l’avance.  En outre, votre extension doit clairement faire savoir aux utilisateurs qu’ils lancent une option d’achat dans votre extension.  
+Votre extension et les métadonnées associées doivent fournir des informations sur les types d’achats in-product proposés et la plage de prix.  Vous ne devez pas induire en erreur les utilisateurs et être clair sur la nature de vos offres et promotions dans le produit, y compris l’étendue et les conditions des expériences d’essai.  Si votre extension limite l’accès au contenu créé par l’utilisateur pendant ou après une version d’essai, vous devez en informer les utilisateurs à l’avance.  En outre, votre extension doit clairement faire savoir aux utilisateurs qu’ils lancent une option d’achat dans votre extension.  
 
 ### 1.9 Notifications  
 
-Votre extension doit respecter les paramètres système pour les notifications.  Cela signifie que toute présentation de publicités et de notifications aux utilisateurs doit être cohérente avec les préférences de l’utilisateur, que les notifications soient fournies par le service de notification Push de Microsoft \(MPNS\), le service de notification Push Windows \(WNS\) ou tout autre service.  Si l’utilisateur désactive les notifications, que ce soit pour un produit spécifique ou à l’échelle du système, votre extension doit rester fonctionnelle.  
+Votre extension doit respecter les paramètres système pour les notifications.  Cela signifie que toute présentation de publicités et de notifications aux utilisateurs doit être cohérente avec les préférences des utilisateurs, que les notifications soient fournies par le service de notifications Push de Microsoft \(MPNS\), Windows Push Notification Service \(WNS\) ou tout autre service.  Si l’utilisateur désactive les notifications, que ce soit pour un produit spécifique ou à l’échelle du système, votre extension doit rester fonctionnelle.  
 
 Si votre produit utilise MPNS ou WNS pour transmettre des notifications, il doit respecter les exigences suivantes :  
 
@@ -211,7 +211,7 @@ Vous ne devez pas inclure dans une notification des informations que les utilisa
 
 #### 1.9.4 Objectif des notifications  
 
-Les notifications envoyées à partir de votre extension doivent être liées à cette extension ou à d’autres extensions que vous publiez dans le magasin des extensions Microsoft Edge et ne doivent pas inclure de messages promotionnels d’un type quelconque qui n’est pas lié à vos extensions.  
+Les notifications envoyées à partir de votre extension doivent être liées à cette extension ou à d’autres extensions que vous publiez dans le magasin d’extensions Microsoft Edge et ne doivent pas inclure de messages promotionnels de quelque type que ce soit qui n’est pas lié à vos extensions.  
 
 ### 1.10 Conduite et contenu publicitaire  
 
@@ -224,7 +224,7 @@ Le contenu principal de votre extension ne doit pas être une publicité, et la 
 #### 1.10.2 Stratégies et accords  
 
 Tout contenu publicitaire affiché par votre extension doit respecter la politique [d’acceptation créative de Microsoft.][MicrosoftAdvertisingCreativeAcceptancePolicies]  
-Si votre extension affiche des publicités, tout le contenu [][MicrosoftAppDeveloperAgreement] affiché doit être conforme aux exigences publicitaires du Contrat du développeur d’applications et de la présente stratégie.  
+Si votre extension affiche des publicités, tout le contenu affiché doit être conforme aux exigences publicitaires du Contrat du développeur d’applications [et][MicrosoftAppDeveloperAgreement] de cette stratégie.  
 
 #### 1.10.3 Qualité de la publicité  
 
@@ -233,7 +233,7 @@ Si votre extension affiche des publicités, tout le contenu [][MicrosoftAppDevel
 
 #### 1.10.4 Promotions  
 
-Si vous achetez ou créez des campagnes publicitaires pour promouvoir vos extensions par le biais de la fonctionnalité de campagne publicitaire dans l’Espace [partenaires,][MicrosoftPartnerCenter]tous les supports publicitaires que vous fournissez à Microsoft, y compris les pages d’accueil associées, doivent être conformes à la stratégie de [spécifications créatives][MicrosoftAdvertisingCreativeSpecifications] de Microsoft et à la stratégie d’acceptation créative [de Microsoft.][MicrosoftAdvertisingCreativeAcceptancePolicies]  
+Si vous achetez ou créez des campagnes publicitaires pour promouvoir vos extensions par le biais de la fonctionnalité de campagne publicitaire de l’Espace [partenaires,][MicrosoftPartnerCenter]tous les supports publicitaires que vous fournissez à Microsoft, y compris les pages d’accueil associées, doivent être conformes à la stratégie de [spécifications créatives][MicrosoftAdvertisingCreativeSpecifications] de Microsoft et à la stratégie d’acceptation créative [de Microsoft.][MicrosoftAdvertisingCreativeAcceptancePolicies]  
 
 #### 1.10.5 Avertir les utilisateurs de l'Opt-Out de Interest-Based publicité  
 
@@ -245,14 +245,14 @@ Si votre extension s’adresse aux enfants de moins de 13 ans, comme défini dan
 
 ## 2 Stratégies de contenu  
 
-Les stratégies suivantes s’appliquent au contenu et aux métadonnées \(y compris le nom de l’éditeur, le nom de l’extension, l’icône d’extension, la description de l’extension, les captures d’écran d’extension, les bandes-annonces d’extension et les miniatures de bande-annonce, et toutes les autres métadonnées d’extension\) proposées pour la distribution dans les extensions Microsoft Edge.  Le contenu signifie les images, les sons, les vidéos et le texte contenus dans votre extension, les vignettes, les notifications, les messages d’erreur ou les publicités exposés via votre extension, et tout ce qui est remis à partir d’un serveur ou auquel votre extension se connecte.  Étant donné que les extensions et les extensions Microsoft Edge sont utilisées dans le monde entier, ces exigences sont interprétées et appliquées dans le contexte de normes régionales et culturelles.  
+Les stratégies suivantes s’appliquent au contenu et aux métadonnées \(y compris le nom de l’éditeur, le nom de l’extension, l’icône d’extension, la description de l’extension, les captures d’écran d’extension, les bandes-annonces d’extension et les miniatures de bande-annonce, et toutes les autres métadonnées d’extension\) proposées pour la distribution dans les extensions Microsoft Edge.  Le contenu signifie les images, les sons, les vidéos et le texte contenus dans votre extension, les vignettes, les notifications, les messages d’erreur ou les publicités exposés via votre extension, et tout ce qui est remis à partir d’un serveur ou auquel votre extension se connecte.  Étant donné que les extensions et Microsoft Edge extensions sont utilisées dans le monde entier, ces exigences sont interprétées et appliquées dans le contexte de normes régionales et culturelles.  
 
-### 2.1 Exigences en matière de contenu pour la liste des catalogues d’ajouts Microsoft Edge  
+### 2.1 Exigences en matière de contenu pour Microsoft Edge catalogue de modules supplémentaires  
 
 Les métadonnées et autres contenus que vous envoyez pour accompagner votre extension peuvent ne pas contenir de contenu mature.  
-Les soumissions qui ne répondent pas aux conditions requises pour les listes des magasins de modules supplémentaires Microsoft Edge sont rejetées ou supprimées rapidement.  
+Les soumissions qui ne répondent pas Microsoft Edge conditions requises pour les listes de la boutique d’modules supplémentaires sont rejetées ou supprimées rapidement.  
 
-### 2.2 Contenu incluant les noms, les logos, l’original et les tiers  
+### 2.2 Contenu incluant les noms, les logos, l’original et le tiers  
 
 Tout le contenu de votre extension et les métadonnées associées doivent être créés à l’origine par le titulaire d’une licence tierce ou sous licence appropriée et ne doivent être utilisés que comme autorisé par le titulaire des droits ou comme autorisé par la loi.  
 
@@ -260,13 +260,13 @@ Tout le contenu de votre extension et les métadonnées associées doivent être
 
 #### 2.3.1 Conditions requises  
 
-Votre extension ne doit pas contenir de contenu facilitant ou facilitant les activités du monde réel suivantes : \(a\) violence extrême ou gratuite ; \(b\) violations des droits de l’homme ; \(c\) la création d’armes illégales ; ou \(d\) l’utilisation d’armes contre une personne, un animaux ou une propriété réelle ou personnelle.  
+Votre extension ne doit pas contenir de contenu qui facilite ou favorise les activités du monde réel suivantes : \(a\) violence extrême ou gratuite ; \(b\) violations des droits de l’homme ; \(c\) la création d’armes illégales ; ou \(d\) l’utilisation d’armes contre une personne, un animaux ou une propriété réelle ou personnelle.  
 
 #### 2.3.2 Responsabilité  
 
-Votre extension ne doit pas : \(a\) poser un risque de sécurité pour, ni entraîner une gêne, une gêne ou tout autre dommage pour les utilisateurs finaux ou toute autre personne ou enfant ; ou \(b\) posent un risque de dommages ou de dommages à des propriétés réelles ou personnelles.  Vous êtes le seul responsable des tests de sécurité des extensions, de l’acquisition de certificats et de l’implémentation de toutes les protections de fonctionnalités appropriées.  Vous ne devez pas désactiver les fonctionnalités de sécurité ou de confort des plateformes et inclure tous les avertissements, notifications et clauses d’exclusion de responsabilité juridiquement requis et standard applicables dans votre extension.  
+Votre extension ne doit pas : \(a\) poser un risque de sécurité pour, ni entraîner une gêne, une gêne ou tout autre dommage pour les utilisateurs finaux ou toute autre personne ou enfant ; ou \(b\) posent un risque ou entraînent des dommages à des propriétés réelles ou personnelles.  Vous êtes le seul responsable de tous les tests de sécurité des extensions, de l’acquisition de certificats et de l’implémentation de toutes les protections de fonctionnalités appropriées.  Vous ne devez pas désactiver les fonctionnalités de sécurité ou de confort des plateformes et inclure tous les avertissements, notifications et clauses d’exclusion de responsabilité juridiquement requis et standard applicables dans votre extension.  
 
-### 2.4 Diffamante, caâmeuse, caeuse et répante  
+### 2.4 Diffamante, caâmeuse, caculeuse et répante  
 
 Votre extension ne doit pas contenir de contenu diffamant, caculant, caculant ou dangereux.  
 
@@ -314,7 +314,7 @@ Le contenu choquant dans n’importe quel pays/région vers lequel votre extensi
 
 #### 2.12.1 Contenu mature  
 
-Lorsque vous soumettez votre extension à [l’Partner Center,][MicrosoftPartnerCenter]vous devez indiquer si votre extension affiche le contenu qui doit être marqué comme « Mature ».  Lorsque vous déterminez l’évaluation de votre extension, prenez en compte tout le contenu de votre application, y compris le contenu généré par l’utilisateur et les publicités, ainsi que le contenu lié à votre extension.  Si vous indiquez que votre extension ne contient aucun contenu « mature », vous êtes responsable du maintien de la précision de cette évaluation.  Quelle que soit l’évaluation donnée à votre extension, elle doit toujours respecter toutes les exigences de contenu des stratégies de développement des extensions Microsoft Edge  
+Lorsque vous soumettez votre extension à [l’Partner Center,][MicrosoftPartnerCenter]vous devez indiquer si votre extension affiche le contenu qui doit être marqué comme « Mature ».  Lorsque vous déterminez l’évaluation de votre extension, prenez en compte tout le contenu de votre application, y compris le contenu généré par l’utilisateur et les publicités, ainsi que le contenu lié à votre extension.  Si vous indiquez que votre extension ne contient aucun contenu « mature », vous êtes responsable du maintien de la précision de cette évaluation.  Quelle que soit l’évaluation donnée à votre extension, elle doit toujours respecter toutes les exigences de contenu des stratégies Microsoft Edge développeur de modules supplémentaires  
 
 #### 2.12.2 Modification des évaluations  
 
@@ -322,7 +322,7 @@ Si votre extension fournit du contenu \(tel que le contenu généré par l’uti
 
 ### 2.13 Vidéos  
 
-Si vous soumettez une vidéo promotionnelle dans la liste, elle doit suivre toutes les instructions de contenu mentionnées dans cette stratégie.  Si vous choisissez de fournir un lien YouTube, vous devez vous assurer que les publicités sont désactivées pour les vidéos spécifiques que vous souhaitez incorporer.  Pour plus d’informations sur la façon dont les publicités sont activées et désactivées sur YouTube, voir [support.google.com/youtube/answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227] et [support.google.com/youtube/answer/132596][GoogleYoutubeAnswer132596].  
+Si vous soumettez une vidéo promotionnelle dans la liste, elle doit respecter toutes les instructions de contenu mentionnées dans cette stratégie.  Si vous choisissez de fournir un lien YouTube, vous devez vous assurer que les publicités sont désactivées pour les vidéos spécifiques que vous souhaitez incorporer.  Pour plus d’informations sur la façon dont les publicités sont activées et désactivées sur YouTube, voir [support.google.com/youtube/answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227] et [support.google.com/youtube/answer/132596][GoogleYoutubeAnswer132596].  
 
 <!-- links -->  
 
@@ -335,7 +335,7 @@ Si vous soumettez une vidéo promotionnelle dans la liste, elle doit suivre tout
 [GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Publicités sur des vidéos incorporées - Aide de YouTube"  
 [FTCChildrensPrivacy]: https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy "Confidentialité des enfants - Commission commerciale fédérale"  
 
-[MicrosoftAdvertisingCreativeAcceptancePolicies]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies "Stratégies d’acceptation créative : Microsoft Advertising"  
+[MicrosoftAdvertisingCreativeAcceptancePolicies]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies "Stratégies d’acceptation créative - Microsoft Advertising"  
 [MicrosoftAdvertisingCreativeSpecifications]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-specs "Spécifications créatives - Microsoft Advertising"  
 
 [MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  

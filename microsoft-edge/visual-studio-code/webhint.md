@@ -1,6 +1,6 @@
 ---
-description: Comment utiliser lahint web dans Visual Studio Code
-title: extension de code Visual Studio webhint
+description: Comment utiliser webhint dans Visual Studio Code
+title: extension de Visual Studio Code webhint
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
@@ -16,10 +16,10 @@ ms.locfileid: "11399273"
 ---
 # <a name="webhint-vs-code-extension"></a>Webhint Vs Code Extension  
 
-Utilisez [webhint,][WebhintMain]un outil de linting personnalisable, pour améliorer l’accessibilité, les performances, la compatibilité entre navigateurs, la compatibilité PWA et la sécurité de votre site.  Il vérifie les meilleures pratiques et les erreurs courantes dans votre code. Ce projet open source, initialement développé par l’équipe Microsoft Edge, fait désormais partie [d’OpenJS Foundation.][OpenjsFoundation]  L’équipe Microsoft Edge continue de contribuer à lahint web avec les développeurs web de la communauté.  
+Utilisez [webhint,][WebhintMain]un outil de linting personnalisable, pour améliorer l’accessibilité, les performances, la compatibilité entre navigateurs, la compatibilité PWA et la sécurité de votre site.  Il vérifie les meilleures pratiques et les erreurs courantes dans votre code. Ce projet open source, initialement développé par l’équipe Microsoft Edge, fait désormais partie [d’OpenJS Foundation.][OpenjsFoundation]  L Microsoft Edge de recherche continue de contribuer à lahint web avec les développeurs web de la communauté.  
 
-:::image type="complex" source="./media/webhint-extension.png" alt-text="Capture d’écran de l’extension Visual Studio code web":::
-   Capture d’écran de l’extension Visual Studio code web  
+:::image type="complex" source="./media/webhint-extension.png" alt-text="Capture d’écran de l’extension Visual Studio Code webhint":::
+   Capture d’écran de l’extension Visual Studio Code webhint  
 :::image-end:::
 
 <!--![Screenshot of webhint Visual Studio Code extension][ImageWebhintExtension]  -->  
@@ -28,7 +28,7 @@ Identifiez et corrigez les problèmes dans votre code HTML, CSS, JavaScript, Typ
 
 ## <a name="configuration"></a>Configuration  
 
-Cette extension utilise un fichier json de [configuration][GithubWebhintioIndexjson] par défaut qui active des conseils et des parseurs pour html, CSS, systèmes de modèles \(JSX/TSX, Angular, etc.), JavaScript/TypeScript, etc.  
+Cette extension utilise un fichier json de [configuration][GithubWebhintioIndexjson] par défaut qui active des conseils et des parseurs pour html, CSS, systèmes de modèles \(JSX/TSX, Angular, etc.),JavaScript/TypeScript, etc.  
 
 ```json
 {
@@ -80,18 +80,18 @@ Cette extension utilise un fichier json de [configuration][GithubWebhintioIndexj
 }
 ```  
 
-Si vous souhaitez contrôler davantage les conseils et les outils d’examen activés, créez un fichier local pour configurer `.hintrc` lahint web.  Pour obtenir de l’aide sur la sortie de conseils spécifiques, accédez au [guide de l’utilisateur de lahint][WebhintDocsUserguideConfiguringSummary]web.  
+Si vous souhaitez contrôler davantage les conseils et les outils d’examen activés, créez un fichier local pour configurer `.hintrc` lahint web.  Pour obtenir de l’aide sur la sortie de conseils spécifiques, accédez au [guide de l’utilisateur webhint.][WebhintDocsUserguideConfiguringSummary]  
 
-## <a name="getting-in-touch-with-the-webhint-team"></a>Entrer en contact avec l’équipe webhint  
+## <a name="getting-in-touch-with-the-webhint-team"></a>Mise en contact avec l’équipe webhint  
 
-Envoyez vos commentaires en [classant un problème][GithubWebhintioIssuesNew] dans le référentiel [GitHub webhint.][GithubWebhintio]  
+Envoyez vos commentaires en [classant un problème dans][GithubWebhintioIssuesNew] la GitHub [de dépôt.][GithubWebhintio]  
 
-Pour contribuer à l’extension, accédez à la Visual Studio [guide de contribution à l’extension de code.][GithubWebhintioExtensionVscodeContributing]  
+Pour contribuer à l’extension, accédez à la Visual Studio Code [guide de contribution à l’extension.][GithubWebhintioExtensionVscodeContributing]  
 
-## <a name="see-also"></a>Voir également  
+## <a name="see-also"></a>Articles associés  
 
 *   [Accessibilité][AccessibilityIndex]  
-*   [VisualStudioCode][VisualstudiocodeIndex]  
+*   [Visual Studio Code][VisualstudiocodeIndex]  
 
 <!-- image links -->  
 
@@ -101,7 +101,7 @@ Pour contribuer à l’extension, accédez à la Visual Studio [guide de contrib
 
 [AccessibilityIndex]: /microsoft-edge/accessibility "Accessibilité | Documents Microsoft"  
 
-[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio code | Documents Microsoft"  
+[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio Code | Documents Microsoft"  
 
 [GithubWebhintio]: https://github.com/webhintio/hint "webhint | GitHub"  
 [GithubWebhintioExtensionVscodeContributing]: https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md "Contribution - webhint | GitHub"  

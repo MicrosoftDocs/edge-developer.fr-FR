@@ -29,7 +29,7 @@ ms.locfileid: "11564181"
    limitations under the License.  -->  
 # <a name="find-and-fix-problems-with-the-microsoft-edge-devtools-issues-tool"></a>Rechercher et résoudre les problèmes liés à Microsoft Edge’outil Problèmes de DevTools  
 
-**L’outil Problèmes** dans Microsoft Edge DevTools réduit la fatigue et l’encombrement de la console de **notification.**  Utilisez-le pour rechercher des solutions aux problèmes détectés par le navigateur, tels que les problèmes de cookie et le contenu mixte.  
+**L’outil Problèmes** dans Microsoft Edge DevTools réduit la fatigue et l’encombrement des notifications de la **console.**  Utilisez-le pour rechercher des solutions aux problèmes détectés par le navigateur, tels que les problèmes de cookie et le contenu mixte.  
 
 > [!NOTE]
 > Dans Microsoft Edge 84, l’outil **Problèmes** prend en charge trois types de problèmes :  
@@ -74,7 +74,7 @@ ms.locfileid: "11564181"
     
 ## <a name="view-items-in-the-issues-tool"></a>Afficher les éléments dans l’outil Problèmes  
 
-**L’outil Problèmes** du panneau DevTools présente des avertissements de manière structurée, agrégée et actionnable.  
+**L’outil Problèmes** dans le panneau DevTools présente les avertissements de manière structurée, agrégée et actionnable.  
 
 1.  Choisissez un élément dans l’outil Problèmes pour obtenir des **conseils** sur la façon de résoudre le problème et de rechercher les ressources affectées.  
     
@@ -128,7 +128,7 @@ ms.locfileid: "11564181"
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
 > La page d’origine est [trouvée ici](https://developers.google.com/web/tools/chrome-devtools/issues/index) et est cochée par [Sam Dutton][SamDutton] \(Developer Advocate\).  
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

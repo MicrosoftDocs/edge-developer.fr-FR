@@ -1,5 +1,5 @@
 ---
-description: Déboguer à distance du contenu en direct sur un appareil Android à partir d’un Windows ou macOS.
+description: Débogage à distance du contenu en direct sur un appareil Android à partir d’un Windows ou macOS.
 title: Prise en main du débogage à distance des appareils Android
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -33,7 +33,7 @@ Déboguer à distance du contenu en direct sur un appareil Android à partir de 
 
 *   Configurer votre appareil Android pour le débogage à distance et le découvrir à partir de votre ordinateur de développement.  
 *   Inspectez et déboguer le contenu en direct sur votre appareil Android à partir de votre ordinateur de développement.  
-*   Contenu de la capture vidéo de votre appareil Android sur une instance DevTools sur votre ordinateur de développement.  
+*   Capture vidéo du contenu de votre appareil Android sur une instance DevTools sur votre ordinateur de développement.  
 
 <!--  
 :::image type="complex" source="../media/remote-debugging--remote-debugging.msft.png" alt-text="Remote Debugging lets you inspect a page running on an Android device from your development machine" lightbox="../media/remote-debugging--remote-debugging.msft.png":::
@@ -55,13 +55,13 @@ Le flux de travail ci-dessous fonctionne pour la plupart des utilisateurs.  Pour
 1.  Accédez à `edge://inspect` la page dans Microsoft Edge.  
     
     :::image type="complex" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="Page edge://inspect’Microsoft Edge" lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
-       Figure1.  La `edge://inspect` page dans Microsoft Edge  
+       Figure 1.  La `edge://inspect` page dans Microsoft Edge  
     :::image-end:::  
     
 1.  Connecter votre appareil Android directement sur votre ordinateur de développement à l’aide d’un câble USB.  La première fois que vous essayez de vous connecter, une invite doit s’afficher sur DevTools détectant un appareil inconnu.  Acceptez **l’invite d’autorisation Autoriser le débogage USB** sur votre appareil Android.  
     
     :::image type="complex" source="../media/remote-debugging-android-permissions-prompt.msft.png" alt-text="Invite d’autorisation Autoriser le débogage USB sur un appareil Android" lightbox="../media/remote-debugging-android-permissions-prompt.msft.png":::
-       Figure2.  Invite **d’autorisation Autoriser le débogage USB** sur un appareil Android  
+       Figure 2.  Invite **d’autorisation Autoriser le débogage USB** sur un appareil Android  
     :::image-end:::  
     
 1.  Si le nom de modèle de votre appareil Android s’affiche, Microsoft Edge a correctement établi la connexion à votre appareil.  Continuez [jusqu’à la section Étape 2.](#step-2-debug-content-on-your-android-device-from-your-development-machine)  
@@ -80,7 +80,7 @@ Utilisez les conseils suivants pour vous aider à résoudre les problèmes de pa
 *   Essayez de débrancher le câble USB entre votre appareil Android et votre ordinateur de développement, puis de le brancher à nouveau.  Terminez la tâche pendant que vos écrans d’ordinateur android et de développement sont déverrouillés.  
 *   Assurez-vous que votre câble USB fonctionne.  Vous devriez être en mesure d’inspecter les fichiers sur votre appareil Android à partir de votre ordinateur de développement.  
 
-Utilisez les conseils suivants pour vérifier que votre logiciel est correctement installé.  
+Utilisez les conseils suivants pour vous aider à vérifier que votre logiciel est correctement installé.  
 
 *   Si votre ordinateur de développement est en cours d Windows, essayez d’installer manuellement les pilotes USB de votre appareil Android.  Pour plus d’informations, [accédez à Installer des pilotes USB OEM.][AndroidDeveloperToolsOemUsb]  
 *   Certaines combinaisons d’appareils Windows et Android \(notamment Samsung\) nécessitent des paramètres supplémentaires.  Pour plus d’informations, accédez [à DevTools Devices does not detect device when plugged in][Stackoverflow21925992].  
@@ -104,7 +104,7 @@ Si vous trouvez une solution qui n’est pas mentionnée sur cette page ou dans 
 1.  Accédez `edge://inspect` à , le nom de modèle de votre appareil Android s’affiche, suivi du numéro de série de l’appareil.  En dessous de cela, la version Microsoft Edge’exécution sur l’appareil doit être affichée, avec le numéro de version entre parenthèses.  Chaque onglet Microsoft Edge ouvert obtient une section unique.  Vous pouvez interagir avec cet onglet à partir d’une section.  <!--If there are any apps using WebView, a section for each of those apps should be displayed, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->  
     
     :::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets.msft.png" alt-text="Un appareil distant connecté" lightbox="../media/remote-debugging-edge-inspect-with-targets.msft.png":::
-       Figure3.  Un appareil distant connecté  
+       Figure 3.  Un appareil distant connecté  
     :::image-end:::  
     
 1.  Dans **l’onglet Ouvrir avec une zone** de texte d’URL, entrez une URL, puis choisissez **Ouvrir**.  La page s’ouvre dans un nouvel onglet sur votre appareil Android.  
@@ -118,12 +118,12 @@ Si vous trouvez une solution qui n’est pas mentionnée sur cette page ou dans 
 Choisissez **l’onglet Focus,** **rechargez**ou fermez-le à côté de l’onglet que vous souhaitez mettre au point, actualiser ou fermer. ****  
 
 :::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png" alt-text="Boutons de mise au point, d’actualisation ou de fermeture d’un onglet" lightbox="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png":::
-   Figure4.  Boutons de mise au point, d’actualisation ou de fermeture d’un onglet  
+   Figure 4.  Boutons de mise au point, d’actualisation ou de fermeture d’un onglet  
 :::image-end:::  
 
 ### <a name="inspect-elements"></a>Inspecter les éléments  
 
-Accédez à **l’outil Elements** de votre instance DevTools, puis pointez sur un élément pour le mettre en surbrillation dans laport d’affichage de votre appareil Android.  
+Accédez à **l’outil Elements** de votre instance DevTools et pointez sur un élément pour le mettre en surbrillation dans la vue de votre appareil Android.  
 
 Vous pouvez également sélectionner un élément sur l’écran de votre appareil Android pour le sélectionner dans **l’outil Éléments.**  Sélectionnez **l’icône** Select Element \( Select Element \) sur votre ![ instance DevTools, puis sélectionnez l’élément sur l’écran de ](../media/select-element-icon.msft.png) votre appareil Android.  
 
@@ -172,7 +172,7 @@ Vous pouvez interagir avec la capture vidéo des manières suivantes.
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

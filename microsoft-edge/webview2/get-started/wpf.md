@@ -164,7 +164,7 @@ Ajoutez la possibilité d’autoriser les utilisateurs à modifier l’URL affic
     using Microsoft.Web.WebView2.Core;
     ```
     
-1.  Dans le fichier, copiez l’extrait de code suivant pour créer la méthode, qui navigue dans le WebView jusqu’à l’URL entrée `MainWindow.xaml.cs` `ButtonGo_Click` dans la barre d’adresses.  
+1.  Dans le fichier, copiez l’extrait de code suivant pour créer la méthode, qui permet d’accéder à l’URL entrée dans la barre `MainWindow.xaml.cs` `ButtonGo_Click` d’adresses dans le WebView.  
     
     ```csharp
     private void ButtonGo_Click(object sender, RoutedEventArgs e)
@@ -340,7 +340,7 @@ Pour en savoir plus sur WebView2, accédez aux ressources suivantes.
 *   Pour plus d’informations sur l’API WebView2, accédez à la [référence d’API.](/dotnet/api/microsoft.web.webview2.wpf.webview2)  
 *   Pour plus d’informations sur WebView2, accédez à [Ressources WebView2.](../index.md#next-steps)  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe web Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 

@@ -21,7 +21,7 @@ Les nouvelles versions du SDK WebView2 sont livrées à la même cadence génér
 
 ## <a name="release-and-prerelease-package"></a>Release and prerelease package  
 
-Le package NuGet WebView2 contient à la fois une version et une version pré-version.  
+Le package WebView2 NuGet contient à la fois un package de publication et un package pré-version.  
 
 Le **package de publication** est compatible avec le forward et contient les composants suivants.  
 
@@ -47,7 +47,7 @@ L’équipe WebView recherche des commentaires sur les API expérimentales qui p
 > Il se peut que les API expérimentales ne soient pas disponibles dans votre version installée du runtime WebView2.  
 
 ## <a name="matching-webview2-runtime-versions"></a>Correspondance des versions d’runtime WebView2  
-Les applications WebView2 nécessitent que les utilisateurs installent [un runtime WebView2.][MicrosoftDeveloperEdgeWebview2]  WebView2 Runtime est automatiquement mis à jour vers la dernière version disponible.  Dans certains scénarios, les utilisateurs peuvent vouloir arrêter les mises à jour automatiques du runtime WebView2, ce qui peut entraîner des problèmes de compatibilité des applications.  
+Les applications WebView2 nécessitent que les utilisateurs installent [un runtime WebView2.][MicrosoftDeveloperEdgeWebview2]  WebView2 Runtime est automatiquement mis à jour vers la dernière version disponible.  Dans certains scénarios, les utilisateurs peuvent vouloir arrêter les mises à jour d’runtime WebView2 automatiques, ce qui peut entraîner des problèmes de compatibilité des applications.  
 
 Si les mises à jour WebView2 Runtime sont arrêtées, assurez-vous que vous comprenez la version minimale du [runtime WebView2][MicrosoftDeveloperEdgeWebview2] requise par votre application.  Prenez en compte les deux éléments suivants :  
 

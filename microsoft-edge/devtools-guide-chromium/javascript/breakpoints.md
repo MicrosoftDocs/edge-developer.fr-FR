@@ -124,7 +124,7 @@ Pour définir un point d’arrêt de modification DOM :
     
 ### <a name="types-of-dom-change-breakpoints"></a>Types de points d’arrêt de modification DOM  
 
-*   **Modifications de sous-arbre**.  Déclenché lorsqu’un enfant du nœud actuellement sélectionné est supprimé ou ajouté, ou lorsque le contenu d’un enfant est modifié.  Ne se déclenche pas lors des modifications de l’attribut de nœud enfant ou des modifications apportées au nœud actuellement sélectionné.  
+*   **Modifications de sous-arbre**.  Déclenché lorsqu’un enfant du nœud actuellement sélectionné est supprimé ou ajouté, ou lorsque le contenu d’un enfant est modifié.  Ne se déclenche pas lors des modifications apportées à l’attribut de nœud enfant ou aux modifications apportées au nœud actuellement sélectionné.  
 *   **Modifications des attributs**: déclenchées lorsqu’un attribut est ajouté ou supprimé sur le nœud actuellement sélectionné, ou lorsqu’une valeur d’attribut change.  
 *   **Suppression de nœud**: déclenchée lorsque le nœud actuellement sélectionné est supprimé.  
     
@@ -149,12 +149,12 @@ Pour définir un point d’arrêt XHR :
        Créer un point d’arrêt XHR  
     :::image-end:::  
     
-## <a name="event-listener-breakpoints"></a>Points d’arrêt du lanceur d’événements  
+## <a name="event-listener-breakpoints"></a>Points d’arrêt de l’écoute d’événements  
 
 Utilisez des points d’arrêt de l’écoute d’événements lorsque vous souhaitez suspendre le code de l’écoute d’événement qui s’exécute après le déclenché d’un événement.  Vous pouvez sélectionner des événements spécifiques, tels que, ou des catégories d’événements, tels que tous `click` les événements de souris.  
 
 1.  Choisissez **l’outil Sources.**  
-1.  Développez le **panneau Points d’arrêt de l’écoute d’événements.**  DevTools affiche une liste de catégories d’événements, **telles**que Animation .  
+1.  Développez le **panneau Points d’arrêt de l’écoute d’événements.**  DevTools affiche une liste des catégories d’événements, **telles**que Animation .  
 1.  Vérifiez l’une de ces catégories pour suspendre chaque fois qu’un événement de cette catégorie est déclenché, ou développez la catégorie et vérifiez un événement spécifique.  
     
     :::image type="complex" source="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png" alt-text="Créer un point d’arrêt d’écoute d’événements" lightbox="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png":::
@@ -180,7 +180,7 @@ Utilisez des points d’arrêt d’exception lorsque vous souhaitez suspendre la
     
 ## <a name="function-breakpoints"></a>Points d’arrêt des fonctions  
 
-Exécutez la méthode, où se trouve la commande, la fonction ou la méthode que vous souhaitez déboguer, lorsque vous souhaitez suspendre chaque fois qu’une `debug(method)` `method` fonction spécifique est exécuté.  Vous pouvez insérer dans votre code (comme une instruction) ou exécuter la méthode à partir `debug()` `console.log()` de la console DevTools.  `debug()` équivaut à définir un [point d’arrêt de](#line-of-code-breakpoints) ligne de code sur la première ligne de la fonction.  
+Exécutez la méthode, où se trouve la commande, la fonction ou la méthode que vous souhaitez déboguer, lorsque vous souhaitez suspendre chaque fois qu’une `debug(method)` `method` fonction spécifique est exécuté.  Vous pouvez insérer dans votre code (comme une instruction) ou exécuter la méthode à partir `debug()` `console.log()` de la console DevTools.  `debug()` équivaut à définir un [point d’arrêt de ligne de code](#line-of-code-breakpoints) sur la première ligne de la fonction.  
 
 ```javascript
 function sum(a, b) {
@@ -209,7 +209,7 @@ DevTools throws a `ReferenceError` if the function you want to debug is not in s
 debug(hey); // This does not work.  hey() is out of scope.
 ```  
 
-S’assurer que la fonction cible est dans l’étendue est difficile si vous exécutez la méthode à partir `debug()` de la console DevTools.  Voici une stratégie :  
+Il est difficile de s’assurer que la fonction cible est dans l’étendue si vous exécutez la méthode à partir `debug()` de la console DevTools.  Voici une stratégie :  
 
 1.  Définissez [un point d’arrêt de ligne](#line-of-code-breakpoints) de code quelque part où la fonction est dans l’étendue.
 1.  Déclenchez le point d’arrêt.  
@@ -240,7 +240,7 @@ S’assurer que la fonction cible est dans l’étendue est difficile si vous ex
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

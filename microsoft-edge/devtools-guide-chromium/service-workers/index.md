@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft Edge, développement web, outils f12, devtools, service worker, PWA
+keywords: microsoft Edge, développement web, outils f12, devtools, service de travail, PWA
 ms.openlocfilehash: 2f32155d1d28d1e65ad29abfe58a414f3e3c6ed7
 ms.sourcegitcommit: 661e8def3f27cea381c59ac38954789e736c18f4
 ms.translationtype: MT
@@ -16,21 +16,21 @@ ms.locfileid: "11387281"
 ---
 # <a name="service-worker-improvements"></a>Améliorations apportées aux services de travail  
 
-Cet article vous explique les améliorations apportées aux outils de développement pour travailler avec les travailleurs du [service][MdnServiceWorkerApi] et les demandes réseau qui passent par chacun d’eux.  Les améliorations **apportées aux services de travail se** font dans les outils **Réseau,** **Application**et **Sources.**  Les améliorations simplifient les tâches suivantes.  
+Cet article vous explique les améliorations apportées aux outils de développement pour travailler avec les travailleurs du [service][MdnServiceWorkerApi] et les demandes réseau qui passent par chacun d’eux.  Les **améliorations apportées aux services de travail** se font dans les outils **Réseau,** **Application**et **Sources.**  Les améliorations simplifient les tâches suivantes.  
 
 *   Déboguer en fonction des chronologies du service de travail.  
     *   Le début d’une demande et la durée du démarrage.  
     *   Mise à jour de l’inscription du service de travail.  
     *   Runtime d’une demande à l’aide du [handler d’événements fetch.][MdnFetchEvent]  
     *   Runtime de tous les événements de récupération pour le chargement d’un client.  
-*   Explorez les détails d’utilisation des handlers d’événements d’extraction, installez les handlers d’événements et activez les handlers d’événements.  
+*   Explorez les détails de l’runtime des handlers d’événements de récupération, installez les handlers d’événements et activez les handlers d’événements.  
 *   Entrez et sortez du handler d’événements de récupération avec les [informations de script de page.](#sources)  
     
 Les expériences s’étendent sur trois outils de développement différents.  
 
 1.  Outil [Réseau.](#network)  Choisissez une demande réseau qui s’exécute par le biais d’un service de travail et qui accède à la chronologie correspondante du travail de service dans **l’outil de minutage.**  
 1.  Outil [Application.](#application)  Pour déboguer les travailleurs du service, accédez à l’outil **Travailleurs de** service.  
-1.  Outil [Sources.](#sources)  Accéder aux informations de script de page lors de la pas à pas dans les handlers d’événements de récupération.  
+1.  Outil [Sources.](#sources)  Accéder aux informations de script de page lors de l’accès aux handlers d’événements de récupération.  
     
 ## <a name="network"></a>Network  
 
@@ -52,7 +52,7 @@ Pour faciliter la visualisation du routage des demandes, les chronologies affich
     
 ### <a name="fetch-events"></a>Récupérer des événements  
 
-Pour en savoir plus sur les événements de récupération, choisissez la flèche de la flèche de la flèche vers la `respondWith` gauche de `respondWith` la .  Pour plus d’informations **** sur la demande d’origine et la réponse **reçue,** utilisez les flèches de liste rouge correspondantes.  
+Pour en savoir plus sur les `respondWith` événements de récupération, sélectionnez la flèche de la flèche vers la gauche du `respondWith` .  Pour plus d’informations **** sur la demande d’origine et la réponse **reçue,** utilisez les flèches de liste rouge correspondantes.  
 
 ## <a name="application"></a>Application  
 
@@ -62,11 +62,11 @@ Pour en savoir plus sur les événements de récupération, choisissez la flèch
 
 ### <a name="service-worker-update-timeline"></a>Chronologie de mise à jour du service de travail  
 
-L’équipe Microsoft Edge DevTools a ajouté une chronologie dans l’outil **Application** pour refléter le cycle de vie de mise à jour du service de travail.  Il affiche les événements d’installation et d’activation.  Chacun des événements possède une flèche de liste verte correspondante pour vous donner plus de détails.  
+L Microsoft Edge’équipe DevTools a ajouté une chronologie dans l’outil **Application** pour refléter le cycle de vie de mise à jour du service de travail.  Il affiche les événements d’installation et d’activation.  Chacun des événements possède une flèche de liste verte correspondante pour vous donner plus de détails.  
 
 ### <a name="request-routing-and-fetch-events"></a>Demander des événements de routage et de récupération  
 
-Vous pouvez maintenant accéder aux chronologies de travail de service via **l’outil Réseau** dans le caisse de la console.  La fonctionnalité bénéficie de performances, réduit la duplication de l’interface utilisateur et crée une expérience de débogage plus complète.  
+Vous pouvez désormais accéder aux chronologies de travail de service via **l’outil Réseau** dans le caisse de la console.  La fonctionnalité bénéficie de performances, réduit la duplication de l’interface utilisateur et crée une expérience de débogage plus complète.  
 
 1.  Ouvrez le service de travail que vous déboguer.  
 1.  Choisissez le **bouton Réseau** pour ouvrir l’expérience [de routage des demandes.](#network)  
@@ -84,7 +84,7 @@ Pour trouver plus d’informations sur la pile, définissez un point d’coupure
 
 ### <a name="future-work"></a>Travail à venir  
 
-L’équipe Microsoft Edge DevTools prévoit de développer davantage les détails du cache et étudie d’autres façons d’améliorer l’expérience de débogage du service de travail pour les développeurs [d’applications Web][MdnProgressiveWebApps] progressives.  
+L Microsoft Edge’équipe DevTools prévoit de développer davantage les détails du cache et étudie d’autres façons d’améliorer l’expérience de débogage des travailleurs du service pour les développeurs [d’applications Web][MdnProgressiveWebApps] progressives.  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 

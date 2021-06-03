@@ -22,7 +22,7 @@ L’objectif de ce didacticiel est de créer une extension Microsoft Edge (Chrom
 
 *   Création `manifest.json` d’un fichier.  
 *   Ajout d’icônes.  
-*   Ouverture d’une boîte de dialogue de fenêtre pop-up par défaut.  
+*   Ouverture d’une boîte de dialogue par défaut.  
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

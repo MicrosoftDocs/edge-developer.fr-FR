@@ -106,7 +106,7 @@ Dans la figure suivante, la page web apparaît après l’exécution de l’extr
 
 1.  Concentrez votre curseur quelque part dans DevTools.  
 1.  Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le menu Commande.  
-1.  Tapez , choisissez Créer un extrait de `Snippet` **code,** puis `Enter` sélectionnez pour exécuter la commande.  
+1.  Tapez `Snippet` , choisissez Créer un extrait de **code,** puis `Enter` sélectionnez pour exécuter la commande.  
     
     :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="Commande de création d’un extrait de code" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
        Commande de création d’un extrait de code  
@@ -117,7 +117,7 @@ Pour renommer votre nouvel extrait de code avec un nom personnalisé, accédez �
 ## <a name="edit-snippets"></a>Modifier les extraits de code  
 
 1.  [Ouvrez l’onglet Extraits de code.](#open-the-snippets-tab)  
-1.  Dans **l’onglet Extraits** de code, choisissez le nom de l’extrait de code à modifier.  Il s’ouvre dans **l’Éditeur de code.**  
+1.  Dans **l’onglet Extraits** de code, choisissez le nom de l’extrait de code à modifier.  Il s’ouvre dans **l’éditeur de code.**  
     
     :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="Éditeur de code" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
        Éditeur **de code**  
@@ -142,7 +142,7 @@ Pour renommer votre nouvel extrait de code avec un nom personnalisé, accédez �
 
 1.  Concentrez votre curseur quelque part dans DevTools.  
 1.  Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le menu Commande.  
-1.  Supprimez le caractère et tapez le caractère suivi du nom de l’extrait de code `>` `!` à exécuter.  
+1.  Supprimez le caractère et tapez le caractère suivi du nom de l’extrait de code à `>` `!` exécuter.  
     
     :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Exécution d’un extrait de code à partir du menu Commande" lightbox="../media/javascript-search-run-command.msft.png":::
        Exécution d’un extrait de code à partir du **menu Commande**  
@@ -178,7 +178,7 @@ Pour renommer votre nouvel extrait de code avec un nom personnalisé, accédez �
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

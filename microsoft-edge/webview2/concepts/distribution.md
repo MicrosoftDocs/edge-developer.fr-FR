@@ -43,20 +43,20 @@ Dans les environnements de production, vous devez vous assurer que le runtime es
 Ne prenez pas de dépendance sur le navigateur car :  
 
 *   Microsoft Edge \(Chromium\) n’est pas garantie d’être présent sur tous les appareils utilisateur.  Par exemple, les appareils déconnectés de Windows Update ou non gérés directement par Microsoft \(une grande partie du marché Enterprise et EDU\) peuvent ne pas avoir le navigateur.  Vous permettre de distribuer WebView2 Runtime évite de prendre une dépendance sur le navigateur comme condition préalable pour les applications.  
-*   Les navigateurs et les applications ont des cas d’utilisation différents, de sorte que la prise d’une dépendance sur un navigateur peut avoir des effets secondaires inattendus sur vos applications.  Par exemple, les administrateurs informatiques peuvent contrôler la version du navigateur pour la compatibilité du site web interne.  Le runtime WebView2 permet aux applications de rester persistantes pendant que les mises à jour du navigateur sont activement gérées.  
+*   Les navigateurs et les applications ont des cas d’utilisation différents, de sorte que la prise d’une dépendance sur un navigateur peut avoir des effets secondaires inattendus sur vos applications.  Par exemple, les administrateurs informatiques peuvent contrôler la version du navigateur pour la compatibilité du site web interne.  WebView2 Runtime permet aux applications de rester persistantes pendant que les mises à jour du navigateur sont activement gérées.  
 *   Contrairement au navigateur, le runtime est développé et testé pour les scénarios d’application et, dans certains cas, il peut inclure des correctifs de bogues qui ne sont pas encore disponibles dans le navigateur.  
     
 À l’avenir, le runtime WebView2 persistant prévoit d’être publié avec les futures Windows.  Déployez le Runtime avec votre application de production jusqu’à ce qu’il soit plus universellement disponible.  
 
 ### <a name="deploying-the-evergreen-webview2-runtime"></a>Déploiement du runtime WebView2 persistant  
 
-Une seule installation de l’application WebView2 Runtime persistante est nécessaire pour toutes les applications Persistantes sur l’appareil.  Plusieurs outils sont disponibles sur la page de téléchargement [WebView2 Runtime.][Webview2Installer]  Les outils suivants vous aident à déployer le runtime persistant.  
+Une seule installation de l’application WebView2 Runtime persistante est nécessaire pour toutes les applications Persistantes sur l’appareil.  Un certain nombre d’outils sont disponibles sur la [page de téléchargement WebView2 Runtime.][Webview2Installer]  Les outils suivants vous aident à déployer le runtime persistant.  
 
 *   WebView2 Runtime Bootstrapper est un petit programme d’installation \(environ 2 Mo\).  WebView2 Runtime Bootstrapper télécharge et installe le runtime persistant à partir des serveurs Microsoft qui correspond à l’architecture de l’appareil de l’utilisateur.  
 *   Utilisez un lien pour télécharger par programme le programme d’a bootstrapper.  
 *   Le programme d’installation autonome WebView2 Runtime est un programme d’installation complet qui installe le runtime WebView2 persistant dans les environnements hors connexion.  
     
-Actuellement, le programme d’a bootstrapper et le programme d’installation autonome ne peuvent prendre en charge que les installation par ordinateur, ce qui nécessite une élévation.  Si un programme d’installation est exécuté sans élévation de niveau, l’utilisateur est invité à élever les autorisations.  
+Actuellement, le programme d’a bootstrapper et le programme d’installation autonome ne peuvent prendre en charge que les installation par ordinateur, ce qui nécessite une élévation.  Si un programme d’installation est exécuté sans élévation, l’utilisateur est invité à élever les autorisations.  
 
 Utilisez les flux de travail suivants pour vous assurer que le runtime est déjà installé avant le lancement de votre application.  Vous pouvez ajuster votre flux de travail en fonction de votre scénario.  L’exemple de code est disponible dans le [repo Exemples.][GitHubMicrosoftedgeWebView2samplesWebview2Deployment]  
 
@@ -130,7 +130,7 @@ Les canaux d’Microsoft Edge non stables \(Beta/Dev/Canary\) offrent un aperçu
 Pour les environnements contraintes avec des exigences de compatibilité strictes, envisagez d’utiliser le mode de distribution de version fixe.  Choisissez et packagez une version spécifique du runtime WebView2 à l’aide du mode de distribution de version fixe.  Vous pouvez spécifier le minutage des mises à jour d’runtime pour votre application.  Le mode de distribution de version fixe ne reçoit aucune mise à jour automatique. Prévoyez de mettre à jour votre application et le runtime.  
 
 > [!NOTE] 
-> Le mode de distribution de version fixe était précédemment appelé « apportez-vous-même ».  
+> Le mode de distribution de version fixe était précédemment appelé « apportez-vous-vous-même ».  
 
 Pour utiliser le mode version fixe, effectuer les actions suivantes
 
@@ -174,12 +174,12 @@ Par rapport au runtime persistant, la version fixe [][MicrosoftPlayReady] ne com
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "Comprendre les versions de navigateur et les | WebView2 Documents Microsoft"  
-[HowToWebdriver]: ../how-to/webdriver.md "Automatisation et test de WebView2 avec le pilote Microsoft Edge | Documents Microsoft"  
+[HowToWebdriver]: ../how-to/webdriver.md "Automatisation et test de WebView2 avec Microsoft Edge driver | Documents Microsoft"  
 
-[ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Documents Microsoft"  
+[ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions : globals | Documents Microsoft"  
 [ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring]: /microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString - Globals | Documents Microsoft"  
 
-[DeployEdgeMicrosoftEdgeChannels]: /deployedge/microsoft-edge-channels "Vue d’ensemble des canaux Microsoft Edge | Documents Microsoft"  
+[DeployEdgeMicrosoftEdgeChannels]: /deployedge/microsoft-edge-channels "Vue d’ensemble des Microsoft Edge de | Documents Microsoft"  
 
 [ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync "CreateAsync - Classe Microsoft.Web.WebView2.Core.CoreWebView2Environment | Documents Microsoft"  
 [ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async "Classe EnsureCoreWebView2Async -Microsoft.Web.WebView2.Wpf.WebView2 | Documents Microsoft"  
@@ -189,7 +189,7 @@ Par rapport au runtime persistant, la version fixe [][MicrosoftPlayReady] ne com
 [ReferenceWpfMicrosoftWebWebview2WpfWebview2Creationproperties]: /dotnet/api/microsoft.web.webview2.wpf.webview2.creationproperties "CreationProperties - Classe Microsoft.Web.WebView2.Wpf.WebView2 | Documents Microsoft"  
 [ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2]: /dotnet/api/microsoft.web.webview2.winforms.webview2 "Classe Microsoft.Web.WebView2.WinForms.WebView2 | Documents Microsoft"  
 
-[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "Programme d’installation WebView2 | Développeur Microsoft"  
+[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 Installer | Développeur Microsoft"  
 
 [DownloadNonstableEdge]: https://www.microsoftedgeinsider.com/download "Télécharger les canaux Microsoft Edge Insider"  
 

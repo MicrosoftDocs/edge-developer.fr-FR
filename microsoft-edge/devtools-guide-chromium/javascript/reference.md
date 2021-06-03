@@ -35,7 +35,7 @@ Pour découvrir les principes de base du débogage, accédez à Commencer à dé
 
 ## <a name="view-and-edit-javascript-code"></a>Afficher et modifier du code JavaScript
 
-Lorsque vous corrigez un bogue, vous souhaitez souvent essayer quelques modifications apportées à votre code JavaScript.  Vous n’avez pas besoin d’apporter les modifications dans un éditeur externe ou un IDE, de charger à nouveau le fichier sur le serveur, puis d’actualiser la page . Au lieu de cela, pour tester les modifications, vous pouvez modifier votre code JavaScript directement dans DevTools et voir le résultat immédiatement.  
+Lorsque vous corrigez un bogue, vous souhaitez souvent essayer quelques modifications apportées à votre code JavaScript.  Vous n’avez pas besoin d’apporter les modifications dans un éditeur externe ou IDE, de charger à nouveau le fichier sur le serveur, puis d’actualiser la page . Au lieu de cela, pour tester les modifications, vous pouvez modifier votre code JavaScript directement dans DevTools et voir le résultat immédiatement.  
 
 Pour afficher et modifier un fichier JavaScript :  
 
@@ -72,13 +72,13 @@ Pour définir un point d’arrêt de ligne de code :
        Un point d’arrêt de ligne de code  
     :::image-end:::  
 
-Les points d’arrêt de ligne de code peuvent être inefficaces à définir, en particulier si vous ne savez pas exactement où rechercher ou si votre base de code est grande.  Pour gagner du temps lors du débogage, découvrez comment et quand utiliser les autres types de points d’arrêt.  Pour plus d’informations, [accédez à Suspendre votre code avec des points d’arrêt.][DevToolsJavascriptBreakpoints]
+Les points d’arrêt de ligne de code peuvent être inefficaces à définir, en particulier si vous ne savez pas exactement où rechercher, ou si votre base de code est grande.  Pour gagner du temps lors du débogage, découvrez comment et quand utiliser les autres types de points d’arrêt.  Pour plus d’informations, [accédez à Suspendre votre code avec des points d’arrêt.][DevToolsJavascriptBreakpoints]
 
 ## <a name="step-through-code"></a>Code pas à pas  
 
 Une fois que votre code est suspendu à un point d’arrêt, pas à pas dans le code, une ligne à la fois, en enquêtant sur le flux de contrôle et les valeurs des propriétés en cours de route.  
 
-### <a name="step-over-line-of-code"></a>Ligne de code pas à pas  
+### <a name="step-over-line-of-code"></a>Pas à pas avant la ligne de code  
 
 Lorsqu’il est suspendu sur une ligne de code contenant une fonction qui n’est pas pertinente pour le problème que vous déboguer, choisissez le bouton Pas à pas principal **\(** Pas à pas principal \) pour exécuter la fonction sans y aller pas à ![ ](../media/step-over-icon.msft.png) pas.  
 
@@ -100,7 +100,7 @@ function getName() {
 }
 ```  
 
-Vous êtes `A` suspendu.  Une fois que vous avez choisi **Pas**à pas, DevTools exécute tout le code dans la fonction que vous exécutez pas à pas, c’est-à-dire. `B` `C`  DevTools s’interrompt ensuite sur `D` .  
+Vous êtes `A` suspendu.  Une fois que vous avez choisi **Pas**à pas, DevTools exécute tout le code dans la fonction que vous exécutez pas à pas, c’est-à-dire `B` et `C` .  DevTools s’interrompt ensuite sur `D` .  
 
 ### <a name="step-into-line-of-code"></a>Pas à pas dans la ligne de code  
 
@@ -164,7 +164,7 @@ Pointez sur la ligne de code qui vous intéresse, ouvrez le menu contextuel \(cl
 
 ### <a name="restart-the-top-function-of-the-call-stack"></a>Redémarrer la fonction supérieure de la pile d’appels  
 
-Pour suspendre la première ligne de la fonction supérieure de votre pile d’appels, sur une ligne de code, pointez n’importe où dans le volet Pile des appels, ouvrez le menu contextuel \(clic droit\), puis choisissez Image de **** redémarrage. ****  La fonction supérieure est la dernière fonction qui a été exécuté.  
+Pour suspendre la première ligne de la fonction supérieure de votre pile d’appels, tout en le suspendant sur une ligne de code, pointez n’importe où dans le volet Pile des appels, ouvrez le menu contextuel \(clic droit\), puis choisissez Image de **** redémarrage. ****  La fonction supérieure est la dernière fonction qui a été exécuté.  
 
 L’extrait de code suivant est un exemple de procédure pas à pas.  
 
@@ -316,7 +316,7 @@ Pour marquer un seul script ou modèle de scripts à partir de **Paramètres**:
 1.  Choose **Add**.  
     
     :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="Marquer un script en tant que code de bibliothèque à partir Paramètres" lightbox="../media/javascript-framework-library-code.msft.png":::
-       Marquer un script en **tant que code de bibliothèque** à partir **Paramètres**  
+       Marquer un script en tant **que code de bibliothèque** à partir **Paramètres**  
     :::image-end:::  
     
 ## <a name="run-snippets-of-debug-code-from-any-page"></a>Exécuter des extraits de code de débogage à partir de n’importe quelle page  
@@ -325,7 +325,7 @@ Si vous vous trouvez en cours d’exécution du même code de débogage dans la 
 
 Voir [Exécuter des extraits de code JavaScript sur n’importe quelle page web.][DevToolsJavascriptSnippets]  
 
-## <a name="see-also"></a>Voir également  
+## <a name="see-also"></a>Articles associés  
 
 *   [Prise en main avec débogage de JavaScript dans Microsoft Edge DevTools][DevToolsJavascriptGetStarted] : didacticiel simple et court utilisant du code existant, avec captures d’écran.
 *   [Vue d’ensemble][DevToolsSourcesIndex] de l’outil **Sources :** l’outil Sources inclut le débogger et l’éditeur JavaScript.
@@ -342,14 +342,14 @@ Voir [Exécuter des extraits de code JavaScript sur n’importe quelle page web.
 [DevToolsJavascriptGetStarted]: ./index.md "Commencer à déboguer JavaScript dans Microsoft Edge devTools | Documents Microsoft"  
 [DevToolsJavascriptSnippets]: ./snippets.md "Exécutez des extraits de code JavaScript sur n’importe quelle page avec Microsoft Edge DevTools | Documents Microsoft"  
 [DevToolsSourcesIndex]: ../sources/index.md "Vue d’ensemble de l’outil Sources | Documents Microsoft"  
-[DevToolsCustomize]: ../customize/index.md "Personnalisez Microsoft Edge devTools | Documents Microsoft"  
+[DevToolsCustomize]: ../customize/index.md "Personnaliser Microsoft Edge devTools | Documents Microsoft"  
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/javascript/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

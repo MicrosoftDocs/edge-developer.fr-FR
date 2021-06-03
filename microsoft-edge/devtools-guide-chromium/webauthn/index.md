@@ -70,7 +70,7 @@ La **section Authenticator** comprend une table **Credentials.**  La table est v
 Pour inscrire de nouvelles informations d’identification, effectuer les étapes suivantes.  Pour plus d’informations sur les fonctionnalités de [l’API][GithubW3cWebauthn] d’authentification web lors de l’inscription d’une nouvelle information d’identification, accédez à [Créer une nouvelle information d’identification.][GithubW3cWebauthnSctnCreatecredential]  
 
 1.  Sur le site web de démonstration, **sélectionnez Enregistrer les nouvelles informations d’identification.**  
-1.  De nouvelles informations d’identification sont désormais ajoutées à la table **Credentials** de l’outil WebAuthn.  
+1.  Une nouvelle informations d’identification est désormais ajoutée à la table **Credentials** de l’outil WebAuthn.  
     
     :::image type="complex" source="../media/webauthn-view-cred.msft.png" alt-text="Afficher les informations d’identification" lightbox="../media/webauthn-view-cred.msft.png":::
        Afficher les informations d’identification  
@@ -127,11 +127,11 @@ Pour supprimer un authentifié virtuel, à côté de l’authentifié, choisisse
 [AppspotWebauthndemo]: https://webauthndemo.appspot.com "Démonstration Webauthn | Appspot"  
 
 [FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml]: https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html "Client to Authenticator Protocol (CTAP) | fido alliance"  
-[FidoallianceSpecsU2fV12Ps20170411OverviewHtml]: https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html "Vue d’ensemble du facteur 2nd universel (U2F) | fido alliance"  
+[FidoallianceSpecsU2fV12Ps20170411OverviewHtml]: https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html "Vue d’ensemble du facteur U2F (Universal 2nd Factor) | fido alliance"  
 
 [GithubW3cWebauthn]: https://w3c.github.io/webauthn "Authentification web : API permettant d’accéder aux informations d’identification de clé publique de niveau 2 | GitHub"  
 [GithubW3cWebauthnAuthenticatorgetassertion]: https://w3c.github.io/webauthn#authenticatorgetassertion "Opération authenticatorGetAssertion - Authentification web : API permettant d’accéder aux informations d’identification de clé publique niveau 2 | GitHub"  
-[GithubW3cWebauthnEnumTransport]: https://w3c.github.io/webauthn#enum-transport "Authenticator Transport Enumeration (enum AuthenticatorTransport) : Authentification web : API permettant d’accéder aux informations d’identification de clé publique niveau 2 | W3C"  
+[GithubW3cWebauthnEnumTransport]: https://w3c.github.io/webauthn#enum-transport "Authenticator Transport Enumeration (enum AuthenticatorTransport) - Authentification web : UNE API pour accéder aux informations d’identification de clé publique niveau 2 | W3C"  
 [GithubW3cWebauthnEnumResidentkeyrequirement]: https://w3c.github.io/webauthn#enum-residentKeyRequirement "Resident Key Requirement Enumeration (enum ResidentKeyRequirement) - Web Authentication: An API for accessing Public Key Credentials Level 2 | W3C"  
 [GithubW3cWebauthnEnumUserverification]: https://w3c.github.io/webauthn#user-verification "Vérification de l’utilisateur - Authentification web : API permettant d’accéder aux informations d’identification de clé publique de niveau 2 | W3C"  
 [GithubW3cWebauthnSctnCreatecredential]: https://w3c.github.io/webauthn#sctn-createCredential "Create a New Credential - PublicKeyCredential’s [[Create]](origin, options, sameOriginWithAncestors) Method - Web Authentication: An API for accessing Public Key Credentials Level 2 | GitHub"  
@@ -142,7 +142,7 @@ Pour supprimer un authentifié virtuel, à côté de l’authentifié, choisisse
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/webauthn/index) et est créée par [Jecelyn Yeen][JecelynYeen] \(Appui au développeur, Chrome DevTools\)  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

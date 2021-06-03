@@ -35,7 +35,7 @@ Accédez [à Prise en main][DevtoolsEvaluatePerformanceGettingStarted] Avec anal
 
 ## <a name="record-performance"></a>Performances d’enregistrement  
 
-### <a name="record-runtime-performance"></a>Performances d’exécution d’enregistrement  
+### <a name="record-runtime-performance"></a>Enregistrer les performances d’exécution  
 
 Enregistrez les performances d’exécution lorsque vous souhaitez analyser les performances d’une page en cours d’exécution, par opposition au chargement.  
 
@@ -168,20 +168,20 @@ Après avoir enregistré l’enregistrement, sélectionnez **Effacer l’enregis
 
 ## <a name="analyze-a-performance-recording"></a>Analyser un enregistrement des performances  
 
-Une fois que vous avez enregistré **** [les](#record-runtime-performance) performances d’exécution ou les performances de chargement d’enregistrement, [](#record-load-performance)le panneau Performances fournit un grand nombre de données pour analyser les performances de ce qui vient de se produire.  
+Une fois [que](#record-runtime-performance) vous avez enregistré **** les performances d’exécution ou les performances de chargement d’enregistrement, le panneau Performances fournit un grand nombre de données pour analyser les performances de ce qui vient de se produire. [](#record-load-performance)  
 
 ### <a name="select-a-portion-of-a-recording"></a>Sélectionner une partie d’un enregistrement  
 
 Faites glisser votre souris vers la gauche ou la droite dans la **vue d’ensemble** pour sélectionner une partie d’un enregistrement.  La **vue d’ensemble** est la section qui contient **les graphiques FPS,** **CPU**et **NET.**  
 
-:::image type="complex" source="../media/evaluate-performance-performance-zoom-highlighted.msft.png" alt-text="Faire glisser la souris sur la vue d’ensemble pour effectuer un zoom" lightbox="../media/evaluate-performance-performance-zoom-highlighted.msft.png":::
-   Faire glisser la souris sur la **vue d’ensemble** pour effectuer un zoom  
+:::image type="complex" source="../media/evaluate-performance-performance-zoom-highlighted.msft.png" alt-text="Faire glisser la souris sur la vue d’ensemble pour zoomer" lightbox="../media/evaluate-performance-performance-zoom-highlighted.msft.png":::
+   Faire glisser la souris sur la **vue d’ensemble** pour zoomer  
 :::image-end:::  
 
 Pour sélectionner une partie à l’aide du clavier :  
 
 1.  Choisissez l’arrière-plan de la section **Main** ou l’une des sections en de côté, telles que **Interactions,** **Réseau**ou **GPU.**  Ce flux de travail de clavier ne fonctionne que lorsque l’une de ces sections est en focus.  
-1.  Utilisez les `W` touches `A` , , , `S` pour `D` zoomer, déplacer vers la gauche, zoom arrière et déplacer vers la droite, respectivement.  
+1.  Utilisez les `W` `A` touches , , , pour effectuer un zoom avant, déplacer vers la gauche, zoom arrière et déplacer vers `S` `D` la droite, respectivement.  
 
 Pour sélectionner une partie à l’aide d’un trackpad, effectuer les actions suivantes.  
 
@@ -208,14 +208,14 @@ Pour modifier les paramètres de requête :
 *   Choose **Case sensitive** \( Case sensitive ![ ](../media/search-case-icon.msft.png) \) to make the query case sensitive.  
 *   Choisissez **Regex** \( ![ Regex ](../media/search-regex-icon.msft.png) \) pour utiliser une expression régulière dans votre requête.  
 
-Pour masquer la zone de recherche, choisissez **Annuler.**  
+Pour masquer la zone de recherche, choisissez **Annuler**.  
 
 ### <a name="view-main-thread-activity"></a>Afficher l’activité du thread principal  
 
 Utilisez la section **Main** pour afficher l’activité qui s’est produite sur le thread principal de la page.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Section Principale" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
-   Section **Principale**  
+:::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Section Main" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
+   Section **Main**  
 :::image-end:::  
 
 Choisissez un événement pour afficher plus d’informations à son sujet dans le **panneau Résumé.**  DevTools décrit l’événement sélectionné.  
@@ -224,13 +224,13 @@ Choisissez un événement pour afficher plus d’informations à son sujet dans 
    Plus d’informations sur `anonymous` la fonction dans le panneau **Résumé**  
 :::image-end:::  
 
-DevTools représente l’activité de thread principale avec un graphique graphique.  L’axe X représente l’enregistrement au fil du temps.  L’axe Y représente la pile d’appels.  Les événements en haut provoquent les événements en dessous.  
+DevTools représente l’activité de thread principale avec un graphique graphique.  L’axe X représente l’enregistrement au fil du temps.  L’axe Y représente la pile d’appels.  Les événements en premier provoquent les événements en dessous.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-main-flame-chart.msft.png" alt-text="Graphique de graphique" lightbox="../media/evaluate-performance-performance-main-flame-chart.msft.png":::
    Graphique de graphique  
 :::image-end:::  
 
-Dans la figure précédente, un événement a `click` provoqué un événement sur la ligne `Function Call` `activitytabs.js` 53.  Vous trouverez `Function Call` ci-dessous un avis sur le fait qu’une fonction anonyme a été exécuté.  La fonction anonyme demandée `a` , qui a demandé , qui a demandé `wait` `Minor GC` .  
+Dans la figure précédente, un événement a `click` provoqué un événement sur la ligne `Function Call` `activitytabs.js` 53.  `Function Call`Ci-dessous, examinez qu’une fonction anonyme a été exécuté.  La fonction anonyme demandée `a` , qui a demandé , qui a demandé `wait` `Minor GC` .  
 
 DevTools affecte des couleurs aléatoires aux scripts.  Dans la figure précédente, les demandes de fonction d’un script sont colorées en vert clair.  Les demandes provenant d’un autre script sont colorées.  Le jaune foncé représente l’activité de script et l’événement violet représente l’activité de rendu.  Ces événements jaunes et violets plus foncés sont cohérents dans tous les enregistrements.  
 
@@ -249,17 +249,17 @@ Après avoir enregistré une page, vous n’avez pas besoin de vous appuyer uniq
 
 #### <a name="root-activities"></a>Activités racine  
 
-Voici une explication **du concept** d’activités racine **** mentionné dans le panneau Arborescence des **appels,** le panneau inférieur vers le haut et le panneau **Journal des** événements.  
+Voici une explication du concept **d’activités** racine **** mentionné dans le panneau Arborescence des **appels,** le panneau inférieur vers le haut et le panneau **Journal des** événements.  
 
 Les activités racines sont celles qui entraînent le travail du navigateur.  Par exemple, lorsque vous choisissez une page web, le navigateur exécute une `Event` activité en tant qu’activité racine.  Cela `Event` peut entraîner l’exécuter, et ainsi de suite.  
 
-Dans le graphique graphique de la section **Main,** les activités racine sont en haut du graphique.  Dans les **panneaux Arborescence des appels** **et Journal des** événements, les activités racines sont les éléments de niveau supérieur.  
+Dans le graphique de graphique de la section **Main,** les activités racines sont en haut du graphique.  Dans les **panneaux Arborescence des appels** **et Journal des** événements, les activités racines sont les éléments de niveau supérieur.  
 
 Accédez au panneau [Arborescence des](#the-call-tree-panel) appels pour obtenir un exemple d’activités racine.  
 
 #### <a name="the-call-tree-panel"></a>Panneau Arborescence des appels  
 
-Utilisez le **panneau Arborescence des** appels pour afficher les [activités racine qui](#root-activities) sont à l’origine du travail le plus important.  
+Utilisez le **panneau Arborescence des** appels pour afficher les [activités racine qui](#root-activities) sont à l’origine du plus grand travail.  
 
 Le **panneau Arborescence** des appels affiche uniquement les activités pendant la partie sélectionnée de l’enregistrement.  Accédez [à Sélectionner une partie d’un enregistrement](#select-a-portion-of-a-recording) pour découvrir comment sélectionner des parties.  
 
@@ -273,7 +273,7 @@ Dans la figure précédente, le niveau **** supérieur des éléments dans la co
 
 Choisissez **Temps libre,** **Temps total**ou **Activité** pour trier le tableau par colonne.  
 
-Utilisez la zone de texte **Filtrer** pour filtrer les événements par nom d’activité.  
+Utilisez la **zone de texte Filtrer** pour filtrer les événements par nom d’activité.  
 
 Par défaut, le menu **De** regroupement est définie sur **Aucun regroupement.**  Utilisez le menu **Regroupement pour** trier le tableau d’activité en fonction de différents critères.  
 
@@ -293,7 +293,7 @@ Dans le **graphique de** la section Main de la figure précédente, accédez à 
 
 La **colonne Temps** libre représente le temps agrégé passé directement dans cette activité, dans toutes les occurrences.  
 
-La **colonne Temps total** représente le temps agrégé passé dans cette activité ou n’importe quel enfant.  
+La **colonne Temps total** représente le temps agrégé passé dans cette activité ou l’un des enfants.  
 
 #### <a name="the-event-log-panel"></a>Panneau Journal des événements  
 
@@ -302,7 +302,7 @@ Utilisez le **panneau Journal des** événements pour afficher les activités da
 Le **panneau Journal des** événements affiche uniquement les activités pendant la partie sélectionnée de l’enregistrement.  Accédez [à Sélectionner une partie d’un enregistrement](#select-a-portion-of-a-recording) pour découvrir comment sélectionner des parties.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-event-log.msft.png" alt-text="Panneau Journal des événements" lightbox="../media/evaluate-performance-performance-event-log.msft.png":::
-   Panneau **Journal des événements**  
+   Panneau **Journal des** événements  
 :::image-end:::  
 
 La **colonne Heure** de début représente le point auquel cette activité a démarré, par rapport au début de l’enregistrement.  Par exemple, l’heure de début de l’élément sélectionné dans la figure précédente signifie que l’activité a démarré 175,7 ms après le démarrage de `175.7 ms` l’enregistrement.  
@@ -396,7 +396,7 @@ Les demandes sont codées en couleur comme suit :
 *   JS : Jaune  
 *   Images : vert  
     
-Choisissez une demande pour afficher plus d’informations à son sujet dans le **panneau De** synthèse.  Par exemple, dans la **** figure précédente, le panneau Résumé affiche plus d’informations sur la demande bleue sélectionnée dans la section **Réseau.**  
+Choisissez une demande pour afficher plus d’informations à ce sujet dans le **panneau Résumé.**  Par exemple, dans la **** figure précédente, le panneau Résumé affiche plus d’informations sur la demande bleue sélectionnée dans la section **Réseau.**  
 
 Un carré bleu foncé dans le haut à gauche d’une demande signifie qu’il s’agit d’une demande de priorité supérieure.  Un carré bleu clair signifie une priorité inférieure.  Par exemple, dans la figure précédente, la demande sélectionnée en bleu est de priorité supérieure et la demande verte en dessous est de priorité inférieure.  
 
@@ -414,7 +414,7 @@ Dans la première des figures suivantes, la demande est représentée par une li
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/evaluate-performance-bing-network-timing.msft.png" alt-text="L’outil Réseau" lightbox="../media/evaluate-performance-bing-network-timing.msft.png":::
+      :::image type="complex" source="../media/evaluate-performance-bing-network-timing.msft.png" alt-text="Outil Réseau" lightbox="../media/evaluate-performance-bing-network-timing.msft.png":::
          **L’outil** Réseau  
 : ::image-end:::  
    :::column-end:::
@@ -482,8 +482,8 @@ Pour afficher les informations sur les couches avancées sur un cadre :
     
 Pointez sur un calque pour le surligner dans le diagramme.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png" alt-text="Surligner un calque" lightbox="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png":::
-   Surligner un calque  
+:::image type="complex" source="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png" alt-text="Mettre en surbrill niveau un calque" lightbox="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png":::
+   Mettre en surbrill niveau un calque  
 :::image-end:::  
 
 Pour déplacer le diagramme :  
@@ -518,13 +518,13 @@ Pour ouvrir **l’outil de** rendu :
     
 ### <a name="view-frames-per-second-in-realtime-with-the-fps-meter"></a>Afficher les images par seconde en temps réel avec la jauge FPS  
 
-La **jauge FPS** est une superposition qui apparaît dans le coin supérieur droit de votre vue.  Il fournit une estimation en temps réel du service FPS à mesure que la page s’exécute.  Pour ouvrir la **jauge FPS**:  
+La **jauge FPS** est une superposition qui apparaît dans le coin supérieur droit de votreport d’affichage.  Il fournit une estimation en temps réel du service FPS à mesure que la page s’exécute.  Pour ouvrir la **jauge FPS**:  
 
 1.  Ouvrez **l’outil de** rendu.  [Analysez les performances de rendu à l’aide de l’outil de rendu.](#analyze-rendering-performance-with-the-rendering-tool)  
 1.  Activer la case **à cocher Indicateur FPS.**  
     
-    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png" alt-text="Indicateur FPS" lightbox="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png":::
-       Indicateur **FPS**  
+    :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png" alt-text="La jauge FPS" lightbox="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png":::
+       La **jauge FPS**  
     :::image-end:::  
     
 ### <a name="view-painting-events-in-realtime-with-paint-flashing"></a>Afficher les événements de dessin en temps réel avec Paint clignotement  
@@ -588,7 +588,7 @@ Pour afficher les problèmes de performances de défilement, effectuer les actio
 > La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].  
+Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
