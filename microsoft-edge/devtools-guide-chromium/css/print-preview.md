@@ -27,26 +27,26 @@ ms.locfileid: "11564426"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="force-microsoft-edge-devtools-into-print-preview-mode"></a><span data-ttu-id="c3917-104">Forcer Microsoft Edge DevTools en mode Aperçu avant impression</span><span class="sxs-lookup"><span data-stu-id="c3917-104">Force Microsoft Edge DevTools into Print Preview mode</span></span>  
+# <a name="force-microsoft-edge-devtools-into-print-preview-mode"></a><span data-ttu-id="7475f-104">Forcer Microsoft Edge DevTools en mode Aperçu avant impression</span><span class="sxs-lookup"><span data-stu-id="7475f-104">Force Microsoft Edge DevTools into Print Preview mode</span></span>  
 
-<span data-ttu-id="c3917-105">La [requête de média d’impression][MDNUsingMediaQueries] contrôle l’apparence de votre page lors de l’impression.</span><span class="sxs-lookup"><span data-stu-id="c3917-105">The [print media query][MDNUsingMediaQueries] controls how your page looks when printed.</span></span>  <span data-ttu-id="c3917-106">Pour forcer votre page en mode Aperçu avant impression :</span><span class="sxs-lookup"><span data-stu-id="c3917-106">To force your page into print preview mode:</span></span>  
+<span data-ttu-id="7475f-105">La [requête de média d’impression][MDNUsingMediaQueries] contrôle l’apparence de votre page lors de l’impression.</span><span class="sxs-lookup"><span data-stu-id="7475f-105">The [print media query][MDNUsingMediaQueries] controls how your page looks when printed.</span></span>  <span data-ttu-id="7475f-106">Pour forcer votre page en mode Aperçu avant impression :</span><span class="sxs-lookup"><span data-stu-id="7475f-106">To force your page into print preview mode:</span></span>  
 
-1.  <span data-ttu-id="c3917-107">Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le **menu Commande.**</span><span class="sxs-lookup"><span data-stu-id="c3917-107">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
+1.  <span data-ttu-id="7475f-107">Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) pour ouvrir le **menu Commande.**</span><span class="sxs-lookup"><span data-stu-id="7475f-107">Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.</span></span>  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Menu Commande" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-       <span data-ttu-id="c3917-109">Menu **Commande**</span><span class="sxs-lookup"><span data-stu-id="c3917-109">The **Command Menu**</span></span>  
+       <span data-ttu-id="7475f-109">Menu **Commande**</span><span class="sxs-lookup"><span data-stu-id="7475f-109">The **Command Menu**</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="c3917-110">Tapez `rendering` , choisissez Afficher le **rendu,** puis sélectionnez `Enter` .</span><span class="sxs-lookup"><span data-stu-id="c3917-110">Type `rendering`, choose **Show Rendering**, and then select `Enter`.</span></span>  
-1.  <span data-ttu-id="c3917-111">Sous **Émuler le support CSS,** choisissez **Imprimer.**</span><span class="sxs-lookup"><span data-stu-id="c3917-111">Under **Emulate CSS media**, choose **print**.</span></span>  
+1.  <span data-ttu-id="7475f-110">`rendering`Tapez, choisissez Afficher le **rendu,** puis sélectionnez `Enter` .</span><span class="sxs-lookup"><span data-stu-id="7475f-110">Type `rendering`, choose **Show Rendering**, and then select `Enter`.</span></span>  
+1.  <span data-ttu-id="7475f-111">Under **Emulate CSS media**, choose **print**.</span><span class="sxs-lookup"><span data-stu-id="7475f-111">Under **Emulate CSS media**, choose **print**.</span></span>  
     
     :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="Mode Aperçu avant impression" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
-       <span data-ttu-id="c3917-113">Mode Aperçu avant impression</span><span class="sxs-lookup"><span data-stu-id="c3917-113">Print preview mode</span></span>  
+       <span data-ttu-id="7475f-113">Mode Aperçu avant impression</span><span class="sxs-lookup"><span data-stu-id="7475f-113">Print preview mode</span></span>  
     :::image-end:::  
     
-<span data-ttu-id="c3917-114">À partir de là, vous pouvez afficher et modifier votre CSS, comme n’importe quelle autre page web.</span><span class="sxs-lookup"><span data-stu-id="c3917-114">From here, you may display and change your CSS, like any other web page.</span></span>  <span data-ttu-id="c3917-115">Accédez à [Prise en main avec l’affichage et la modification du CSS.][DevToolsCSSGetStarted]</span><span class="sxs-lookup"><span data-stu-id="c3917-115">Navigate to [Get Started With Viewing And Changing CSS][DevToolsCSSGetStarted].</span></span>  
+<span data-ttu-id="7475f-114">À partir de là, vous pouvez afficher et modifier votre CSS, comme n’importe quelle autre page web.</span><span class="sxs-lookup"><span data-stu-id="7475f-114">From here, you may display and change your CSS, like any other web page.</span></span>  <span data-ttu-id="7475f-115">Accédez à [Prise en main avec l’affichage et la modification du CSS.][DevToolsCSSGetStarted]</span><span class="sxs-lookup"><span data-stu-id="7475f-115">Navigate to [Get Started With Viewing And Changing CSS][DevToolsCSSGetStarted].</span></span>  
 
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="c3917-116">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="c3917-116">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="7475f-116">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="7475f-116">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -58,11 +58,11 @@ ms.locfileid: "11564426"
 [MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Utilisation de requêtes multimédias | MDN"  
 
 > [!NOTE]
-> <span data-ttu-id="c3917-120">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="c3917-120">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="c3917-121">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/css/print-preview) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="c3917-121">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/print-preview) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="7475f-120">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="7475f-120">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="7475f-121">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/css/print-preview) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="7475f-121">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/print-preview) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="c3917-123">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="c3917-123">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="7475f-123">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="7475f-123">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

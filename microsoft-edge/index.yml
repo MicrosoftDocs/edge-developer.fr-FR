@@ -202,7 +202,7 @@ additionalContent:
       items:
         - title: Référence
           links:
-            - text: Comment détecter les Microsoft Edge dans votre site web
+            - text: Comment détecter Microsoft Edge dans votre site web
               url: /microsoft-edge/web-platform/user-agent-guidance
             - text: Statut de la plateforme
               url: 'https://developer.microsoft.com/microsoft-edge/platform/status'

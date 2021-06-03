@@ -27,78 +27,78 @@ ms.locfileid: "11564699"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# <a name="view-web-sql-data-with-microsoft-edge-devtools"></a><span data-ttu-id="cde51-104">Afficher les données de SQL web avec Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="cde51-104">View Web SQL data with Microsoft Edge DevTools</span></span>  
+# <a name="view-web-sql-data-with-microsoft-edge-devtools"></a><span data-ttu-id="befd1-104">Afficher les données de SQL web avec Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="befd1-104">View Web SQL data with Microsoft Edge DevTools</span></span>  
 
 > [!WARNING]
-> <span data-ttu-id="cde51-105">La spécification de SQL web [n’est pas conservée.][W3CWebSQLStatus]</span><span class="sxs-lookup"><span data-stu-id="cde51-105">The Web SQL specification is [not being maintained][W3CWebSQLStatus].</span></span>  
+> <span data-ttu-id="befd1-105">La spécification de SQL web [n’est pas conservée.][W3CWebSQLStatus]</span><span class="sxs-lookup"><span data-stu-id="befd1-105">The Web SQL specification is [not being maintained][W3CWebSQLStatus].</span></span>  
 
-<span data-ttu-id="cde51-106">Ce guide vous montre comment utiliser Microsoft Edge [DevTools pour][MicrosoftEdgeDevTools] inspecter les données SQL Web.</span><span class="sxs-lookup"><span data-stu-id="cde51-106">This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect Web SQL data.</span></span>  
+<span data-ttu-id="befd1-106">Ce guide vous montre comment utiliser Microsoft Edge [DevTools pour][MicrosoftEdgeDevTools] inspecter les données SQL Web.</span><span class="sxs-lookup"><span data-stu-id="befd1-106">This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect Web SQL data.</span></span>  
 
-## <a name="view-web-sql-data"></a><span data-ttu-id="cde51-107">Afficher les données de SQL Web</span><span class="sxs-lookup"><span data-stu-id="cde51-107">View Web SQL Data</span></span>  
+## <a name="view-web-sql-data"></a><span data-ttu-id="befd1-107">Afficher les données de SQL Web</span><span class="sxs-lookup"><span data-stu-id="befd1-107">View Web SQL Data</span></span>  
 
-1.  <span data-ttu-id="cde51-108">Choisissez **l’outil Sources** pour ouvrir **l’outil Sources.**</span><span class="sxs-lookup"><span data-stu-id="cde51-108">Choose the **Sources** tool to open the **Sources** tool.</span></span>  <span data-ttu-id="cde51-109">Le **volet Manifeste** s’ouvre généralement par défaut.</span><span class="sxs-lookup"><span data-stu-id="cde51-109">The **Manifest** pane usually opens by default.</span></span>  
+1.  <span data-ttu-id="befd1-108">Choisissez **l’outil Sources** pour ouvrir **l’outil Sources.**</span><span class="sxs-lookup"><span data-stu-id="befd1-108">Choose the **Sources** tool to open the **Sources** tool.</span></span>  <span data-ttu-id="befd1-109">Le **volet Manifeste** s’ouvre généralement par défaut.</span><span class="sxs-lookup"><span data-stu-id="befd1-109">The **Manifest** pane usually opens by default.</span></span>  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="Volet manifeste" lightbox="../media/storage-application-manifest.msft.png":::
-       <span data-ttu-id="cde51-111">Volet \*\*\*\* manifeste</span><span class="sxs-lookup"><span data-stu-id="cde51-111">The **Manifest** pane</span></span>  
+       <span data-ttu-id="befd1-111">Volet \*\*\*\* manifeste</span><span class="sxs-lookup"><span data-stu-id="befd1-111">The **Manifest** pane</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="cde51-112">Développez la section **SQL** web pour afficher les bases de données et les tables.</span><span class="sxs-lookup"><span data-stu-id="cde51-112">Expand the **Web SQL** section to view databases and tables.</span></span>  <span data-ttu-id="cde51-113">Dans la figure suivante, sous **html5meetup se** trouve une base de données et **les salles** un tableau.</span><span class="sxs-lookup"><span data-stu-id="cde51-113">In the following figure, below **html5meetup** is a database and **rooms** is a table.</span></span>  
+1.  <span data-ttu-id="befd1-112">Développez la section **SQL** web pour afficher les bases de données et les tables.</span><span class="sxs-lookup"><span data-stu-id="befd1-112">Expand the **Web SQL** section to view databases and tables.</span></span>  <span data-ttu-id="befd1-113">Dans la figure suivante, sous **html5meetup se** trouve une base de données et **les salles** un tableau.</span><span class="sxs-lookup"><span data-stu-id="befd1-113">In the following figure, below **html5meetup** is a database and **rooms** is a table.</span></span>  
     
     :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="Volet SQL Web" lightbox="../media/storage-application-storage-web-sql.msft.png":::
-       <span data-ttu-id="cde51-115">Volet **SQL** Web</span><span class="sxs-lookup"><span data-stu-id="cde51-115">The **Web SQL** pane</span></span>  
+       <span data-ttu-id="befd1-115">Volet **SQL** Web</span><span class="sxs-lookup"><span data-stu-id="befd1-115">The **Web SQL** pane</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="cde51-116">Choisissez une table pour afficher les données de cette table.</span><span class="sxs-lookup"><span data-stu-id="cde51-116">Choose a table to view the data for that table.</span></span>  
+1.  <span data-ttu-id="befd1-116">Choisissez une table pour afficher les données de cette table.</span><span class="sxs-lookup"><span data-stu-id="befd1-116">Choose a table to view the data for that table.</span></span>  
     
     :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="Afficher les données d’une table de SQL Web" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
-       <span data-ttu-id="cde51-118">Afficher les données d’une table de SQL Web</span><span class="sxs-lookup"><span data-stu-id="cde51-118">View the data of a Web SQL table</span></span>  
+       <span data-ttu-id="befd1-118">Afficher les données d’une table de SQL Web</span><span class="sxs-lookup"><span data-stu-id="befd1-118">View the data of a Web SQL table</span></span>  
     :::image-end:::  
     
-## <a name="edit-web-sql-data"></a><span data-ttu-id="cde51-119">Modifier les données de SQL Web</span><span class="sxs-lookup"><span data-stu-id="cde51-119">Edit Web SQL data</span></span>  
+## <a name="edit-web-sql-data"></a><span data-ttu-id="befd1-119">Modifier les données de SQL Web</span><span class="sxs-lookup"><span data-stu-id="befd1-119">Edit Web SQL data</span></span>  
 
-<span data-ttu-id="cde51-120">Vous ne pouvez pas modifier les données de SQL web lors de l’affichage d’un tableau de SQL Web, comme dans la version précédente.</span><span class="sxs-lookup"><span data-stu-id="cde51-120">You are not able to edit Web SQL data when viewing a Web SQL table, such as in previous above.</span></span>  <span data-ttu-id="cde51-121">Toutefois, vous pouvez exécuter des instructions à partir de la console web SQL qui modifient ou suppriment des tables.</span><span class="sxs-lookup"><span data-stu-id="cde51-121">But you may run statements from the Web SQL Console that edit or delete tables.</span></span>  <span data-ttu-id="cde51-122">Accédez à [Exécuter des requêtes SQL web.](#run-web-sql-queries)</span><span class="sxs-lookup"><span data-stu-id="cde51-122">Navigate to [Run Web SQL queries](#run-web-sql-queries).</span></span>  
+<span data-ttu-id="befd1-120">Vous ne pouvez pas modifier les données de SQL web lors de l’affichage d’un tableau de SQL web, comme dans la version précédente.</span><span class="sxs-lookup"><span data-stu-id="befd1-120">You are not able to edit Web SQL data when viewing a Web SQL table, such as in previous above.</span></span>  <span data-ttu-id="befd1-121">Toutefois, vous pouvez exécuter des instructions à partir de la console web SQL qui modifient ou suppriment des tables.</span><span class="sxs-lookup"><span data-stu-id="befd1-121">But you may run statements from the Web SQL Console that edit or delete tables.</span></span>  <span data-ttu-id="befd1-122">Accédez à [Exécuter des requêtes SQL web.](#run-web-sql-queries)</span><span class="sxs-lookup"><span data-stu-id="befd1-122">Navigate to [Run Web SQL queries](#run-web-sql-queries).</span></span>  
 
-## <a name="run-web-sql-queries"></a><span data-ttu-id="cde51-123">Exécuter des requêtes de SQL web</span><span class="sxs-lookup"><span data-stu-id="cde51-123">Run Web SQL queries</span></span>  
+## <a name="run-web-sql-queries"></a><span data-ttu-id="befd1-123">Exécuter des requêtes de SQL web</span><span class="sxs-lookup"><span data-stu-id="befd1-123">Run Web SQL queries</span></span>  
 
-1.  <span data-ttu-id="cde51-124">Choisissez une base de données pour ouvrir une console pour cette base de données.</span><span class="sxs-lookup"><span data-stu-id="cde51-124">Choose a database to open a console for that database.</span></span>  
-1.  <span data-ttu-id="cde51-125">Tapez une instruction Web SQL, puis `Enter` sélectionnez-la pour l’exécuter.</span><span class="sxs-lookup"><span data-stu-id="cde51-125">Type a Web SQL statement, then select `Enter` to run it.</span></span>  
+1.  <span data-ttu-id="befd1-124">Choisissez une base de données pour ouvrir une console pour cette base de données.</span><span class="sxs-lookup"><span data-stu-id="befd1-124">Choose a database to open a console for that database.</span></span>  
+1.  <span data-ttu-id="befd1-125">Tapez une instruction Web SQL, puis `Enter` sélectionnez-la pour l’exécuter.</span><span class="sxs-lookup"><span data-stu-id="befd1-125">Type a Web SQL statement, then select `Enter` to run it.</span></span>  
     
     :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Utiliser la console web SQL pour supprimer une ligne d’un tableau" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
-       <span data-ttu-id="cde51-127">Utiliser la console web SQL pour supprimer une ligne d’un tableau</span><span class="sxs-lookup"><span data-stu-id="cde51-127">Use the Web SQL Console to delete a row from a table</span></span>  
+       <span data-ttu-id="befd1-127">Utiliser la console web SQL pour supprimer une ligne d’un tableau</span><span class="sxs-lookup"><span data-stu-id="befd1-127">Use the Web SQL Console to delete a row from a table</span></span>  
     :::image-end:::  
     
-## <a name="refresh-a-web-sql-table"></a><span data-ttu-id="cde51-128">Actualiser un tableau de SQL Web</span><span class="sxs-lookup"><span data-stu-id="cde51-128">Refresh a Web SQL table</span></span>  
+## <a name="refresh-a-web-sql-table"></a><span data-ttu-id="befd1-128">Actualiser un tableau de SQL Web</span><span class="sxs-lookup"><span data-stu-id="befd1-128">Refresh a Web SQL table</span></span>  
 
-<span data-ttu-id="cde51-129">DevTools ne met pas à jour les tables en temps réel.</span><span class="sxs-lookup"><span data-stu-id="cde51-129">DevTools does not update tables in real-time.</span></span>  <span data-ttu-id="cde51-130">Pour mettre à jour les données d’une table, effectuer les actions suivantes.</span><span class="sxs-lookup"><span data-stu-id="cde51-130">To update the data in a table, complete the following actions.</span></span>  
+<span data-ttu-id="befd1-129">DevTools ne met pas à jour les tables en temps réel.</span><span class="sxs-lookup"><span data-stu-id="befd1-129">DevTools does not update tables in real-time.</span></span>  <span data-ttu-id="befd1-130">Pour mettre à jour les données d’une table, effectuer les actions suivantes.</span><span class="sxs-lookup"><span data-stu-id="befd1-130">To update the data in a table, complete the following actions.</span></span>  
 
-1.  <span data-ttu-id="cde51-131">[Afficher les données dans une table de SQL Web.](#view-web-sql-data)</span><span class="sxs-lookup"><span data-stu-id="cde51-131">[View the data in a Web SQL table](#view-web-sql-data).</span></span>  
-1.  <span data-ttu-id="cde51-132">Choose **Refresh** \( ![ Refresh ](../media/refresh-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="cde51-132">Choose **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\).</span></span>  
+1.  <span data-ttu-id="befd1-131">[Afficher les données dans une table de SQL Web.](#view-web-sql-data)</span><span class="sxs-lookup"><span data-stu-id="befd1-131">[View the data in a Web SQL table](#view-web-sql-data).</span></span>  
+1.  <span data-ttu-id="befd1-132">Choose **Refresh** \( ![ Refresh ](../media/refresh-icon.msft.png) \).</span><span class="sxs-lookup"><span data-stu-id="befd1-132">Choose **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\).</span></span>  
     
-## <a name="filter-out-columns-in-a-web-sql-table"></a><span data-ttu-id="cde51-133">Filtrer les colonnes dans un tableau de SQL Web</span><span class="sxs-lookup"><span data-stu-id="cde51-133">Filter out columns in a Web SQL table</span></span>  
+## <a name="filter-out-columns-in-a-web-sql-table"></a><span data-ttu-id="befd1-133">Filtrer les colonnes dans un tableau de SQL Web</span><span class="sxs-lookup"><span data-stu-id="befd1-133">Filter out columns in a Web SQL table</span></span>  
 
-1.  <span data-ttu-id="cde51-134">[Afficher les données dans une table de SQL Web.](#view-web-sql-data)</span><span class="sxs-lookup"><span data-stu-id="cde51-134">[View the data in a Web SQL table](#view-web-sql-data).</span></span>  
-1.  <span data-ttu-id="cde51-135">Utilisez la **zone de texte Colonnes** visibles pour spécifier les colonnes que vous souhaitez afficher.</span><span class="sxs-lookup"><span data-stu-id="cde51-135">Use the **Visible columns** text box to specify what columns you want to show.</span></span>  <span data-ttu-id="cde51-136">Fournissez les noms des colonnes sous la mesure d’une liste CSV.</span><span class="sxs-lookup"><span data-stu-id="cde51-136">Provide the column names as a CSV list.</span></span>  
+1.  <span data-ttu-id="befd1-134">[Afficher les données dans une table de SQL Web.](#view-web-sql-data)</span><span class="sxs-lookup"><span data-stu-id="befd1-134">[View the data in a Web SQL table](#view-web-sql-data).</span></span>  
+1.  <span data-ttu-id="befd1-135">Utilisez la **zone de texte Colonnes** visibles pour spécifier les colonnes que vous souhaitez afficher.</span><span class="sxs-lookup"><span data-stu-id="befd1-135">Use the **Visible columns** text box to specify what columns you want to show.</span></span>  <span data-ttu-id="befd1-136">Fournissez les noms des colonnes sous la mesure d’une liste CSV.</span><span class="sxs-lookup"><span data-stu-id="befd1-136">Provide the column names as a CSV list.</span></span>  
     
     :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Utiliser la zone de texte Colonnes visibles pour réduire le nombre de colonnes affichées" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
-       <span data-ttu-id="cde51-138">Utiliser la **zone de texte Colonnes** visibles pour réduire le nombre de colonnes affichées</span><span class="sxs-lookup"><span data-stu-id="cde51-138">Use the **Visible Columns** text box to reduce the number of columns shown</span></span>  
+       <span data-ttu-id="befd1-138">Utiliser la **zone de texte Colonnes** visibles pour réduire le nombre de colonnes affichées</span><span class="sxs-lookup"><span data-stu-id="befd1-138">Use the **Visible Columns** text box to reduce the number of columns shown</span></span>  
     :::image-end:::  
     
-## <a name="delete-all-web-sql-data"></a><span data-ttu-id="cde51-139">Supprimer toutes les données de SQL Web</span><span class="sxs-lookup"><span data-stu-id="cde51-139">Delete all Web SQL data</span></span>  
+## <a name="delete-all-web-sql-data"></a><span data-ttu-id="befd1-139">Supprimer toutes les données de SQL Web</span><span class="sxs-lookup"><span data-stu-id="befd1-139">Delete all Web SQL data</span></span>  
 
-1.  <span data-ttu-id="cde51-140">Ouvrez **le volet Stockage** effacer.</span><span class="sxs-lookup"><span data-stu-id="cde51-140">Open the **Clear Storage** pane.</span></span>  
-1.  <span data-ttu-id="cde51-141">Assurez-vous que **la case à cocher SQL** web est allumée.</span><span class="sxs-lookup"><span data-stu-id="cde51-141">Make sure that the **Web SQL** checkbox is turned on.</span></span>  
+1.  <span data-ttu-id="befd1-140">Ouvrez **le volet Stockage** effacer.</span><span class="sxs-lookup"><span data-stu-id="befd1-140">Open the **Clear Storage** pane.</span></span>  
+1.  <span data-ttu-id="befd1-141">Assurez-vous que **la case à SQL** web est allumée.</span><span class="sxs-lookup"><span data-stu-id="befd1-141">Make sure that the **Web SQL** checkbox is turned on.</span></span>  
     
     :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="Case à cocher SQL web" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
-       <span data-ttu-id="cde51-143">Case **à cocher SQL** web</span><span class="sxs-lookup"><span data-stu-id="cde51-143">The **Web SQL** checkbox</span></span>  
+       <span data-ttu-id="befd1-143">Case **à cocher SQL** web</span><span class="sxs-lookup"><span data-stu-id="befd1-143">The **Web SQL** checkbox</span></span>  
     :::image-end:::  
     
-1.  <span data-ttu-id="cde51-144">Choisissez **Effacer les données de site.**</span><span class="sxs-lookup"><span data-stu-id="cde51-144">Choose **Clear site data**.</span></span>  
+1.  <span data-ttu-id="befd1-144">Choisissez **Effacer les données de site.**</span><span class="sxs-lookup"><span data-stu-id="befd1-144">Choose **Clear site data**.</span></span>  
     
     :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="Bouton Effacer les données du site" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
-       <span data-ttu-id="cde51-146">Bouton **Effacer les données du** site</span><span class="sxs-lookup"><span data-stu-id="cde51-146">The **Clear Site Data** button</span></span>  
+       <span data-ttu-id="befd1-146">Bouton **Effacer les données du** site</span><span class="sxs-lookup"><span data-stu-id="befd1-146">The **Clear Site Data** button</span></span>  
     :::image-end:::  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="cde51-147">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="cde51-147">Getting in touch with the Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a><span data-ttu-id="befd1-147">Contacter l’équipe DevTools MicrosoftEdge</span><span class="sxs-lookup"><span data-stu-id="befd1-147">Getting in touch with the Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
@@ -109,11 +109,11 @@ ms.locfileid: "11564699"
 [W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Base de données SQL web | W3C"  
 
 > [!NOTE]
-> <span data-ttu-id="cde51-150">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="cde51-150">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="cde51-151">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/websql) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="cde51-151">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/websql) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="befd1-150">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="befd1-150">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="befd1-151">La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/websql) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="befd1-151">The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/websql) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="cde51-153">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="cde51-153">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="befd1-153">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="befd1-153">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

@@ -27,68 +27,68 @@ ms.locfileid: "11564958"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-# <a name="whats-new-in-devtools-microsoft-edge-81"></a><span data-ttu-id="7d4c0-104">Nouveautés de DevTools (Microsoft Edge 81)</span><span class="sxs-lookup"><span data-stu-id="7d4c0-104">What's New In DevTools (Microsoft Edge 81)</span></span>  
+# <a name="whats-new-in-devtools-microsoft-edge-81"></a><span data-ttu-id="fbda6-104">Nouveautés de DevTools (Microsoft Edge 81)</span><span class="sxs-lookup"><span data-stu-id="fbda6-104">What's New In DevTools (Microsoft Edge 81)</span></span>  
 
-## <a name="announcements-from-the-microsoft-edge-devtools-team"></a><span data-ttu-id="7d4c0-105">Annonces de l’équipe Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="7d4c0-105">Announcements from the Microsoft Edge DevTools team</span></span>  
+## <a name="announcements-from-the-microsoft-edge-devtools-team"></a><span data-ttu-id="fbda6-105">Annonces de l’équipe Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="fbda6-105">Announcements from the Microsoft Edge DevTools team</span></span>  
 
-<span data-ttu-id="7d4c0-106">Les sections suivantes sont une liste d’annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-106">The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.</span></span>  <span data-ttu-id="7d4c0-107">Consultez les annonces pour essayer de nouvelles fonctionnalités dans DevTools, Microsoft Visual Studio extensions de code, etc.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-107">Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.</span></span>  <span data-ttu-id="7d4c0-108">Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez-nous [sur Twitter.][EdgeDevToolsTwitterAccount]</span><span class="sxs-lookup"><span data-stu-id="7d4c0-108">To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].</span></span>  
+<span data-ttu-id="fbda6-106">Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.</span><span class="sxs-lookup"><span data-stu-id="fbda6-106">The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.</span></span>  <span data-ttu-id="fbda6-107">Consultez les annonces pour essayer de nouvelles fonctionnalités dans DevTools, Microsoft Visual Studio extensions de code, etc.</span><span class="sxs-lookup"><span data-stu-id="fbda6-107">Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.</span></span>  <span data-ttu-id="fbda6-108">Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez-nous [sur Twitter.][EdgeDevToolsTwitterAccount]</span><span class="sxs-lookup"><span data-stu-id="fbda6-108">To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].</span></span>  
 
-### <a name="accessibility-improvements-to-the-devtools"></a><span data-ttu-id="7d4c0-109">Améliorations de l’accessibilité de DevTools</span><span class="sxs-lookup"><span data-stu-id="7d4c0-109">Accessibility improvements to the DevTools</span></span>  
+### <a name="accessibility-improvements-to-the-devtools"></a><span data-ttu-id="fbda6-109">Améliorations de l’accessibilité de DevTools</span><span class="sxs-lookup"><span data-stu-id="fbda6-109">Accessibility improvements to the DevTools</span></span>  
 
-<span data-ttu-id="7d4c0-110">L’équipe DevTools a apporté 170 modifications à Chromium pour résoudre les problèmes de contraste de couleur, de clavier et de lecteur d’écran à fort impact dans DevTools.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-110">The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools.</span></span>  <span data-ttu-id="7d4c0-111">Chaque développeur qui construit le web doit être en mesure d’utiliser DevTools.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-111">Every developer building the web should be able to use the DevTools.</span></span>  
+<span data-ttu-id="fbda6-110">L’équipe DevTools a apporté 170 modifications à Chromium pour résoudre les problèmes de contraste de couleur, de clavier et de lecteur d’écran à fort impact dans DevTools.</span><span class="sxs-lookup"><span data-stu-id="fbda6-110">The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools.</span></span>  <span data-ttu-id="fbda6-111">Chaque développeur qui construit le web doit être en mesure d’utiliser DevTools.</span><span class="sxs-lookup"><span data-stu-id="fbda6-111">Every developer building the web should be able to use the DevTools.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/a11y-performance-tool.msft.gif" alt-text="L’outil Performances dans DevTools avec les améliorations apportées à la navigation au clavier et au lecteur d’écran" lightbox="../../images/2020/01/a11y-performance-tool.msft.gif":::
-   <span data-ttu-id="7d4c0-113">**L’outil Performances** dans DevTools avec les améliorations apportées à la navigation au clavier et au lecteur d’écran</span><span class="sxs-lookup"><span data-stu-id="7d4c0-113">The **Performance** tool in the DevTools with the keyboard navigation and screen reader improvements</span></span>  
+   <span data-ttu-id="fbda6-113">**L’outil Performances** dans DevTools avec les améliorations apportées à la navigation au clavier et au lecteur d’écran</span><span class="sxs-lookup"><span data-stu-id="fbda6-113">The **Performance** tool in the DevTools with the keyboard navigation and screen reader improvements</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7d4c0-114">Vous souhaitez découvrir comment rendre votre page web accessible à tous vos utilisateurs ?</span><span class="sxs-lookup"><span data-stu-id="7d4c0-114">Want to learn how to make your web page accessible to all of your users?</span></span>  <span data-ttu-id="7d4c0-115">Téléchargez [les informations sur l’accessibilité][AccessibilityInsights] et les extensions web [pour][WebhintBrowserExtension] Microsoft Edge commencer.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-115">Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.</span></span>  
+<span data-ttu-id="fbda6-114">Vous souhaitez découvrir comment rendre votre page web accessible à tous vos utilisateurs ?</span><span class="sxs-lookup"><span data-stu-id="fbda6-114">Want to learn how to make your web page accessible to all of your users?</span></span>  <span data-ttu-id="fbda6-115">Téléchargez [les informations sur l’accessibilité][AccessibilityInsights] et les extensions web [pour][WebhintBrowserExtension] Microsoft Edge commencer.</span><span class="sxs-lookup"><span data-stu-id="fbda6-115">Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.</span></span>  
 
-<span data-ttu-id="7d4c0-116">Si vous utilisez des lecteurs d’écran ou le clavier pour naviguer dans DevTools, envoyez-nous vos commentaires en nous faisant part de vos [commentaires][PostTweetEdgeDevTools] ou en criant l’icône Envoyer [des](#getting-in-touch-with-microsoft-edge-devtools-team) commentaires !</span><span class="sxs-lookup"><span data-stu-id="7d4c0-116">If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
+<span data-ttu-id="fbda6-116">Si vous utilisez des lecteurs d’écran ou le clavier pour naviguer dans DevTools, envoyez-nous vos commentaires en nous faisant part de vos [commentaires][PostTweetEdgeDevTools] ou en criant l’icône Envoyer [des](#getting-in-touch-with-microsoft-edge-devtools-team) commentaires !</span><span class="sxs-lookup"><span data-stu-id="fbda6-116">If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!</span></span>  
 
-<span data-ttu-id="7d4c0-117">Chromium problème [#963183][CR963183]</span><span class="sxs-lookup"><span data-stu-id="7d4c0-117">Chromium issue [#963183][CR963183]</span></span>  
+<span data-ttu-id="fbda6-117">Chromium problème [#963183][CR963183]</span><span class="sxs-lookup"><span data-stu-id="fbda6-117">Chromium issue [#963183][CR963183]</span></span>  
 
-### <a name="using-the-devtools-in-other-languages"></a><span data-ttu-id="7d4c0-118">Utilisation de DevTools dans d’autres langues</span><span class="sxs-lookup"><span data-stu-id="7d4c0-118">Using the DevTools in other languages</span></span>  
+### <a name="using-the-devtools-in-other-languages"></a><span data-ttu-id="fbda6-118">Utilisation de DevTools dans d’autres langues</span><span class="sxs-lookup"><span data-stu-id="fbda6-118">Using the DevTools in other languages</span></span>  
 
-<span data-ttu-id="7d4c0-119">De nombreux développeurs utilisent d’autres outils de développement, tels que StackOverflow et Visual Studio Code, dans leur langue native, et pas seulement en anglais.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-119">Many developers use other developer tools, like StackOverflow and Visual Studio Code, in their native language, not just in English.</span></span>  <span data-ttu-id="7d4c0-120">Nous sommes ravis d’annoncer la localisation de DevTools, que vous pouvez désormais utiliser dans l’une des 10 langues en plus de l’anglais :</span><span class="sxs-lookup"><span data-stu-id="7d4c0-120">We’re excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:</span></span>  
+<span data-ttu-id="fbda6-119">De nombreux développeurs utilisent d’autres outils de développement, tels que StackOverflow et Visual Studio Code, dans leur langue native, et pas seulement en anglais.</span><span class="sxs-lookup"><span data-stu-id="fbda6-119">Many developers use other developer tools, like StackOverflow and Visual Studio Code, in their native language, not just in English.</span></span>  <span data-ttu-id="fbda6-120">Nous sommes ravis d’annoncer la localisation de DevTools, que vous pouvez désormais utiliser dans l’une des 10 langues en plus de l’anglais :</span><span class="sxs-lookup"><span data-stu-id="fbda6-120">We’re excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:</span></span>  
 
 :::row:::
    :::column span="":::
-      <span data-ttu-id="7d4c0-121">Chinois \(Simplifié\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span><span class="sxs-lookup"><span data-stu-id="7d4c0-121">Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span></span>
+      <span data-ttu-id="fbda6-121">Chinois \(Simplifié\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span><span class="sxs-lookup"><span data-stu-id="fbda6-121">Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;</span></span>
    :::column-end:::
    :::column span="":::
-      <span data-ttu-id="7d4c0-122">Chinois \(Traditionnel\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span><span class="sxs-lookup"><span data-stu-id="7d4c0-122">Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span></span>
+      <span data-ttu-id="fbda6-122">Chinois \(Traditionnel\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span><span class="sxs-lookup"><span data-stu-id="fbda6-122">Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;</span></span>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <span data-ttu-id="7d4c0-123">Français –&#231;ais</span><span class="sxs-lookup"><span data-stu-id="7d4c0-123">French – fran&#231;ais</span></span>
+      <span data-ttu-id="fbda6-123">Français –&#231;ais</span><span class="sxs-lookup"><span data-stu-id="fbda6-123">French – fran&#231;ais</span></span>
    :::column-end:::
    :::column span="":::
-      <span data-ttu-id="7d4c0-124">Allemand - deu deutsche</span><span class="sxs-lookup"><span data-stu-id="7d4c0-124">German - deutsch</span></span>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      <span data-ttu-id="7d4c0-125">Italien - italiano</span><span class="sxs-lookup"><span data-stu-id="7d4c0-125">Italian - italiano</span></span>
-   :::column-end:::
-   :::column span="":::
-      <span data-ttu-id="7d4c0-126">Japonais - &#26085;&#26412;&#35486;</span><span class="sxs-lookup"><span data-stu-id="7d4c0-126">Japanese - &#26085;&#26412;&#35486;</span></span>
+      <span data-ttu-id="fbda6-124">Allemand - deu deutsche</span><span class="sxs-lookup"><span data-stu-id="fbda6-124">German - deutsch</span></span>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <span data-ttu-id="7d4c0-127">Coréen - &#54620;&#44397;&#50612;</span><span class="sxs-lookup"><span data-stu-id="7d4c0-127">Korean - &#54620;&#44397;&#50612;</span></span>
+      <span data-ttu-id="fbda6-125">Italien - italiano</span><span class="sxs-lookup"><span data-stu-id="fbda6-125">Italian - italiano</span></span>
    :::column-end:::
    :::column span="":::
-      <span data-ttu-id="7d4c0-128">Portugais - portugu&#234;s</span><span class="sxs-lookup"><span data-stu-id="7d4c0-128">Portuguese - portugu&#234;s</span></span>
+      <span data-ttu-id="fbda6-126">Japonais - &#26085;&#26412;&#35486;</span><span class="sxs-lookup"><span data-stu-id="fbda6-126">Japanese - &#26085;&#26412;&#35486;</span></span>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      <span data-ttu-id="7d4c0-129">Russe – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span><span class="sxs-lookup"><span data-stu-id="7d4c0-129">Russian – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span></span>
+      <span data-ttu-id="fbda6-127">Coréen - &#54620;&#44397;&#50612;</span><span class="sxs-lookup"><span data-stu-id="fbda6-127">Korean - &#54620;&#44397;&#50612;</span></span>
    :::column-end:::
    :::column span="":::
-      <span data-ttu-id="7d4c0-130">Espagnol - espa&#241;ol</span><span class="sxs-lookup"><span data-stu-id="7d4c0-130">Spanish - espa&#241;ol</span></span>
+      <span data-ttu-id="fbda6-128">Portugais - portugu&#234;s</span><span class="sxs-lookup"><span data-stu-id="fbda6-128">Portuguese - portugu&#234;s</span></span>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      <span data-ttu-id="fbda6-129">Russe – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span><span class="sxs-lookup"><span data-stu-id="fbda6-129">Russian – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span></span>
+   :::column-end:::
+   :::column span="":::
+      <span data-ttu-id="fbda6-130">Espagnol - espa&#241;ol</span><span class="sxs-lookup"><span data-stu-id="fbda6-130">Spanish - espa&#241;ol</span></span>
    :::column-end:::
 :::row-end:::
 
@@ -102,213 +102,213 @@ ms.locfileid: "11564958"
 | Russian – русский | Spanish - español |  
 -->  
 
-<span data-ttu-id="7d4c0-131">Les DevTools correspondent automatiquement à la langue que vous utilisez pour Microsoft Edge `edge://settings/languages` dans .</span><span class="sxs-lookup"><span data-stu-id="7d4c0-131">The DevTools automatically match the language you use for Microsoft Edge in `edge://settings/languages`.</span></span>  
+<span data-ttu-id="fbda6-131">DevTools correspond automatiquement à la langue que vous utilisez pour Microsoft Edge `edge://settings/languages` dans .</span><span class="sxs-lookup"><span data-stu-id="fbda6-131">The DevTools automatically match the language you use for Microsoft Edge in `edge://settings/languages`.</span></span>  
 
-<span data-ttu-id="7d4c0-132">Si vous souhaitez que Microsoft Edge soit dans une langue et que vos DevTools restent en anglais, sélectionnez `F1` dans DevTools pour ouvrir [Paramètres][DevtoolsCustomizeIndexSettings] et désactiver la langue du navigateur **Match.**</span><span class="sxs-lookup"><span data-stu-id="7d4c0-132">If you want Microsoft Edge to be in one language and your DevTools to remain in English, select `F1` in the DevTools to open [Settings][DevtoolsCustomizeIndexSettings] and disable **Match browser language**.</span></span>  
+<span data-ttu-id="fbda6-132">Si vous souhaitez que Microsoft Edge soit dans une langue et que vos DevTools restent en anglais, sélectionnez `F1` dans DevTools pour ouvrir [Paramètres][DevtoolsCustomizeIndexSettings] et désactiver la langue du navigateur **Match.**</span><span class="sxs-lookup"><span data-stu-id="fbda6-132">If you want Microsoft Edge to be in one language and your DevTools to remain in English, select `F1` in the DevTools to open [Settings][DevtoolsCustomizeIndexSettings] and disable **Match browser language**.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/localized-devtools.msft.png" alt-text="DevTools en allemand" lightbox="../../images/2020/01/localized-devtools.msft.png":::
-   <span data-ttu-id="7d4c0-134">DevTools en allemand</span><span class="sxs-lookup"><span data-stu-id="7d4c0-134">The DevTools in German</span></span>  
+   <span data-ttu-id="fbda6-134">DevTools en allemand</span><span class="sxs-lookup"><span data-stu-id="fbda6-134">The DevTools in German</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7d4c0-135">**Les** messages de la console ne sont pas localisées.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-135">**Console** messages are not localized.</span></span>  <span data-ttu-id="7d4c0-136">Seules les chaînes utilisées dans l’interface utilisateur de DevTools sont affichées dans la langue que vous utilisez pour Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-136">Only the strings used in the DevTools UI are displayed in the language you use for Microsoft Edge.</span></span>  
+<span data-ttu-id="fbda6-135">**Les** messages de la console ne sont pas localisées.</span><span class="sxs-lookup"><span data-stu-id="fbda6-135">**Console** messages are not localized.</span></span>  <span data-ttu-id="fbda6-136">Seules les chaînes utilisées dans l’interface utilisateur de DevTools sont affichées dans la langue que vous utilisez pour Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="fbda6-136">Only the strings used in the DevTools UI are displayed in the language you use for Microsoft Edge.</span></span>  
 
-<span data-ttu-id="7d4c0-137">Si vous souhaitez utiliser les DevTools dans une autre langue que celles [disponibles,][PostTweetEdgeDevTools] tweetez-nous ou sélectionnez l’icône Envoyer [des](#getting-in-touch-with-microsoft-edge-devtools-team) commentaires.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-137">If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or choose the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon.</span></span>  
+<span data-ttu-id="fbda6-137">Si vous souhaitez utiliser les DevTools dans une autre langue que celles [disponibles,][PostTweetEdgeDevTools] tweetez-nous ou sélectionnez l’icône Envoyer [des](#getting-in-touch-with-microsoft-edge-devtools-team) commentaires.</span><span class="sxs-lookup"><span data-stu-id="fbda6-137">If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or choose the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon.</span></span>  
 
-<span data-ttu-id="7d4c0-138">Chromium problème [#941561][CR941561]</span><span class="sxs-lookup"><span data-stu-id="7d4c0-138">Chromium issue [#941561][CR941561]</span></span>  
+<span data-ttu-id="fbda6-138">Chromium problème [#941561][CR941561]</span><span class="sxs-lookup"><span data-stu-id="fbda6-138">Chromium issue [#941561][CR941561]</span></span>  
 
-### <a name="webhint-microsoft-edge-extension"></a><span data-ttu-id="7d4c0-139">extension de Microsoft Edge webhint</span><span class="sxs-lookup"><span data-stu-id="7d4c0-139">webhint Microsoft Edge extension</span></span>  
+### <a name="webhint-microsoft-edge-extension"></a><span data-ttu-id="fbda6-139">extension de Microsoft Edge webhint</span><span class="sxs-lookup"><span data-stu-id="fbda6-139">webhint Microsoft Edge extension</span></span>  
 
-<span data-ttu-id="7d4c0-140">L’extension de Microsoft Edge web vous permet d’analyser facilement votre page web et d’obtenir des commentaires sur l’accessibilité, la compatibilité du navigateur, la sécurité, les performances et bien plus encore dans DevTools.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-140">The webhint Microsoft Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.</span></span>  <span data-ttu-id="7d4c0-141">Pour plus d’informations, [https://webhint.io][Webhint] voir .</span><span class="sxs-lookup"><span data-stu-id="7d4c0-141">Read more at [https://webhint.io][Webhint].</span></span>  
+<span data-ttu-id="fbda6-140">L’extension de Microsoft Edge web vous permet d’analyser facilement votre page web et d’obtenir des commentaires sur l’accessibilité, la compatibilité du navigateur, la sécurité, les performances et bien plus encore dans DevTools.</span><span class="sxs-lookup"><span data-stu-id="fbda6-140">The webhint Microsoft Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.</span></span>  <span data-ttu-id="fbda6-141">Pour plus d’informations, [https://webhint.io][Webhint] voir .</span><span class="sxs-lookup"><span data-stu-id="fbda6-141">Read more at [https://webhint.io][Webhint].</span></span>  
 
 :::image type="complex" source="../../images/2020/01/webhint-browser-extension.msft.png" alt-text="Outil Hints dans DevTools lors de l’installation de l’extension de navigateur webhint" lightbox="../../images/2020/01/webhint-browser-extension.msft.png":::
-   <span data-ttu-id="7d4c0-143">Outil **Hints** dans DevTools lors de l’installation de l’extension de navigateur webhint</span><span class="sxs-lookup"><span data-stu-id="7d4c0-143">The **Hints** tool in the DevTools when the webhint browser extension is installed</span></span>  
+   <span data-ttu-id="fbda6-143">Outil **Hints** dans DevTools lors de l’installation de l’extension de navigateur webhint</span><span class="sxs-lookup"><span data-stu-id="fbda6-143">The **Hints** tool in the DevTools when the webhint browser extension is installed</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7d4c0-144">[Essayez l’extension de navigateur webhint dans Microsoft Edge][MicrosoftEdgeInsiderAddons].</span><span class="sxs-lookup"><span data-stu-id="7d4c0-144">[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons].</span></span>  <span data-ttu-id="7d4c0-145">Une fois l’extension installée, ouvrez DevTools et choisissez l’outil **Hints.**</span><span class="sxs-lookup"><span data-stu-id="7d4c0-145">Once you install the extension, open the DevTools and choose the **Hints** tool.</span></span>  <span data-ttu-id="7d4c0-146">À partir de là, exécutez une analyse de site personnalisable.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-146">From here, run a customizable site scan.</span></span>  <span data-ttu-id="7d4c0-147">Pour en savoir [plus, webhint.io][WebhintBrowserExtension] plus d’informations.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-147">Head over to [webhint.io][WebhintBrowserExtension] to learn more.</span></span>  
+<span data-ttu-id="fbda6-144">[Essayez l’extension de navigateur webhint dans Microsoft Edge][MicrosoftEdgeInsiderAddons].</span><span class="sxs-lookup"><span data-stu-id="fbda6-144">[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons].</span></span>  <span data-ttu-id="fbda6-145">Une fois l’extension installée, ouvrez DevTools et choisissez **l’outil Hints.**</span><span class="sxs-lookup"><span data-stu-id="fbda6-145">Once you install the extension, open the DevTools and choose the **Hints** tool.</span></span>  <span data-ttu-id="fbda6-146">À partir de là, exécutez une analyse de site personnalisable.</span><span class="sxs-lookup"><span data-stu-id="fbda6-146">From here, run a customizable site scan.</span></span>  <span data-ttu-id="fbda6-147">Pour en savoir [plus, webhint.io][WebhintBrowserExtension] plus d’informations.</span><span class="sxs-lookup"><span data-stu-id="fbda6-147">Head over to [webhint.io][WebhintBrowserExtension] to learn more.</span></span>  
 
-### <a name="3d-view"></a><span data-ttu-id="7d4c0-148">Vue 3D</span><span class="sxs-lookup"><span data-stu-id="7d4c0-148">3D View</span></span>  
+### <a name="3d-view"></a><span data-ttu-id="fbda6-148">Vue 3D</span><span class="sxs-lookup"><span data-stu-id="fbda6-148">3D View</span></span>  
 
-<span data-ttu-id="7d4c0-149">Utilisez la vue **3D** pour déboguer votre application web en naviguant dans le modèle objet de document [\(DOM\)][MDNDocumentObjectModel] ou le contexte d’empilement [d’index z.][MDNZIndex]</span><span class="sxs-lookup"><span data-stu-id="7d4c0-149">Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.</span></span>  
+<span data-ttu-id="fbda6-149">Utilisez la vue **3D** pour déboguer votre application web en naviguant dans le modèle objet de document [\(DOM\)][MDNDocumentObjectModel] ou le contexte d’empilement [d’index z.][MDNZIndex]</span><span class="sxs-lookup"><span data-stu-id="fbda6-149">Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/3dview.msft.png" alt-text="Affichage 3D dans devTools" lightbox="../../images/2020/01/3dview.msft.png":::
-   <span data-ttu-id="7d4c0-151">Affichage 3D dans devTools</span><span class="sxs-lookup"><span data-stu-id="7d4c0-151">The 3D View in the DevTools</span></span>  
+   <span data-ttu-id="fbda6-151">Affichage 3D dans devTools</span><span class="sxs-lookup"><span data-stu-id="fbda6-151">The 3D View in the DevTools</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7d4c0-152">Pour accéder à la vue 3D, sélectionnez , tapez en mode `Ctrl`  +  `Shift`  +  `P` **3D** et **sélectionnez Afficher la vue 3D.**</span><span class="sxs-lookup"><span data-stu-id="7d4c0-152">To access the 3D View, select `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.</span></span>  
+<span data-ttu-id="fbda6-152">Pour accéder à la vue 3D, sélectionnez , tapez en mode `Ctrl`  +  `Shift`  +  `P` **3D,** puis **sélectionnez Afficher la vue 3D.**</span><span class="sxs-lookup"><span data-stu-id="fbda6-152">To access the 3D View, select `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.</span></span>  
 
-<span data-ttu-id="7d4c0-153">L Microsoft Edge l’équipe Chromium sur l’interface utilisateur et ajoute des fonctionnalités à l’affichage 3D. Envoyez donc vos [commentaires.](#getting-in-touch-with-microsoft-edge-devtools-team)</span><span class="sxs-lookup"><span data-stu-id="7d4c0-153">The Microsoft Edge team is working with the Chromium team on the UI and adding more functionality to the 3D View, so please send your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team).</span></span>  
+<span data-ttu-id="fbda6-153">L Microsoft Edge l’équipe Chromium sur l’interface utilisateur et ajoute des fonctionnalités à l’affichage 3D. Envoyez donc vos [commentaires.](#getting-in-touch-with-microsoft-edge-devtools-team)</span><span class="sxs-lookup"><span data-stu-id="fbda6-153">The Microsoft Edge team is working with the Chromium team on the UI and adding more functionality to the 3D View, so please send your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team).</span></span>  
 
-<span data-ttu-id="7d4c0-154">Chromium problème [#987787][CR987787]</span><span class="sxs-lookup"><span data-stu-id="7d4c0-154">Chromium issue [#987787][CR987787]</span></span>  
+<span data-ttu-id="fbda6-154">Chromium problème [#987787][CR987787]</span><span class="sxs-lookup"><span data-stu-id="fbda6-154">Chromium issue [#987787][CR987787]</span></span>  
 
-### <a name="visual-studio-code-extensions"></a><span data-ttu-id="7d4c0-155">Visual Studio Code extensions</span><span class="sxs-lookup"><span data-stu-id="7d4c0-155">Visual Studio Code extensions</span></span>  
+### <a name="visual-studio-code-extensions"></a><span data-ttu-id="fbda6-155">Visual Studio Code extensions</span><span class="sxs-lookup"><span data-stu-id="fbda6-155">Visual Studio Code extensions</span></span>  
 
-<span data-ttu-id="7d4c0-156">L’équipe DevTools a également publié certaines extensions pour [Visual Studio Code][VisualStudioCode] qui vous permet d’utiliser la puissance de DevTools directement à partir de votre éditeur de texte !</span><span class="sxs-lookup"><span data-stu-id="7d4c0-156">The DevTools team has also released some extensions for [Visual Studio Code][VisualStudioCode] that let you use the power of the DevTools directly from your text editor!</span></span> <span data-ttu-id="7d4c0-157">Consultez les extensions ci-dessous :</span><span class="sxs-lookup"><span data-stu-id="7d4c0-157">Check out the extensions below:</span></span>  
+<span data-ttu-id="fbda6-156">L’équipe DevTools a également publié certaines extensions pour [Visual Studio Code][VisualStudioCode] qui vous permet d’utiliser la puissance de DevTools directement à partir de votre éditeur de texte !</span><span class="sxs-lookup"><span data-stu-id="fbda6-156">The DevTools team has also released some extensions for [Visual Studio Code][VisualStudioCode] that let you use the power of the DevTools directly from your text editor!</span></span> <span data-ttu-id="fbda6-157">Consultez les extensions ci-dessous :</span><span class="sxs-lookup"><span data-stu-id="fbda6-157">Check out the extensions below:</span></span>  
 
-#### <a name="elements-for-microsoft-edge"></a><span data-ttu-id="7d4c0-158">Éléments pour Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="7d4c0-158">Elements for Microsoft Edge</span></span>  
+#### <a name="elements-for-microsoft-edge"></a><span data-ttu-id="fbda6-158">Éléments pour Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="fbda6-158">Elements for Microsoft Edge</span></span>  
 
-<span data-ttu-id="7d4c0-159">Utilisez l’outil Elements à partir de Visual Studio Code en ajoutant l’extension Microsoft Edge [\(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-159">Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.</span></span>  
+<span data-ttu-id="fbda6-159">Utilisez l’outil Éléments à partir de Visual Studio Code en ajoutant l’extension Microsoft Edge [\(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.</span><span class="sxs-lookup"><span data-stu-id="fbda6-159">Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.</span></span>  
 
-:::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="L’outil Elements dans Visual Studio Code l’aide de l’extension Elements for Microsoft Edge" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
-   <span data-ttu-id="7d4c0-161">**L’outil Elements** dans Visual Studio Code l’aide de l’extension Elements for Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="7d4c0-161">The **Elements** tool in Visual Studio Code using the Elements for Microsoft Edge extension</span></span>  
+:::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="L’outil Elements dans Visual Studio Code à l’aide de l’extension Elements for Microsoft Edge" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
+   <span data-ttu-id="fbda6-161">**L’outil Elements** dans Visual Studio Code l’aide de l’extension Elements for Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="fbda6-161">The **Elements** tool in Visual Studio Code using the Elements for Microsoft Edge extension</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7d4c0-162">Pour plus d’informations, consultez [Éléments pour Microsoft Edge Visual Studio Code extension.][VisualStudioCodeElementEdgeExtension]</span><span class="sxs-lookup"><span data-stu-id="7d4c0-162">For more information, check out [Elements for Microsoft Edge Visual Studio Code extension][VisualStudioCodeElementEdgeExtension].</span></span>  
+<span data-ttu-id="fbda6-162">Pour plus d’informations, consultez [Éléments pour Microsoft Edge Visual Studio Code extension.][VisualStudioCodeElementEdgeExtension]</span><span class="sxs-lookup"><span data-stu-id="fbda6-162">For more information, check out [Elements for Microsoft Edge Visual Studio Code extension][VisualStudioCodeElementEdgeExtension].</span></span>  
 
-#### <a name="debugger-for-microsoft-edge"></a><span data-ttu-id="7d4c0-163">Débogger pour Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="7d4c0-163">Debugger for Microsoft Edge</span></span>  
+#### <a name="debugger-for-microsoft-edge"></a><span data-ttu-id="fbda6-163">Débogger pour Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="fbda6-163">Debugger for Microsoft Edge</span></span>  
 
-<span data-ttu-id="7d4c0-164">Avec [l’extension Déboguer pour Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] Visual Studio Code, déboguer JavaScript en cours d’exécution Microsoft Edge directement à partir Visual Studio Code.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-164">With the [Debugger for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] Visual Studio Code extension, debug JavaScript running in Microsoft Edge directly from Visual Studio Code.</span></span>  
+<span data-ttu-id="fbda6-164">Avec [l’extension Déboguer pour Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] Visual Studio Code, déboguer JavaScript en cours d’exécution Microsoft Edge directement à partir Visual Studio Code.</span><span class="sxs-lookup"><span data-stu-id="fbda6-164">With the [Debugger for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] Visual Studio Code extension, debug JavaScript running in Microsoft Edge directly from Visual Studio Code.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/vscode-debugger.msft.png" alt-text="Débogger pour l’extension Microsoft Edge dans Visual Studio Code" lightbox="../../images/2020/01/vscode-debugger.msft.png":::
-   <span data-ttu-id="7d4c0-166">Débogger pour l’extension Microsoft Edge dans Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="7d4c0-166">The Debugger for Microsoft Edge Extension in Visual Studio Code</span></span>  
+   <span data-ttu-id="fbda6-166">Débogger pour l’extension Microsoft Edge dans Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="fbda6-166">The Debugger for Microsoft Edge Extension in Visual Studio Code</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7d4c0-167">Pour plus d’informations, [découvrez comment déboguer][VisualStudioCodeDebuggerEdgeExtension]des Microsoft Edge à partir Visual Studio Code .</span><span class="sxs-lookup"><span data-stu-id="7d4c0-167">For more information, check out [how to debug Microsoft Edge from Visual Studio Code][VisualStudioCodeDebuggerEdgeExtension].</span></span>  
+<span data-ttu-id="fbda6-167">Pour plus d’informations, [découvrez comment déboguer][VisualStudioCodeDebuggerEdgeExtension]des Microsoft Edge à partir Visual Studio Code .</span><span class="sxs-lookup"><span data-stu-id="fbda6-167">For more information, check out [how to debug Microsoft Edge from Visual Studio Code][VisualStudioCodeDebuggerEdgeExtension].</span></span>  
 
-#### <a name="webhint"></a><span data-ttu-id="7d4c0-168">webhint</span><span class="sxs-lookup"><span data-stu-id="7d4c0-168">webhint</span></span>  
+#### <a name="webhint"></a><span data-ttu-id="fbda6-168">webhint</span><span class="sxs-lookup"><span data-stu-id="fbda6-168">webhint</span></span>  
 
-<span data-ttu-id="7d4c0-169">[L’extension de Visual Studio Code][VisualStudioMarketplaceWebhintExtension] web utilise pour améliorer votre page web pendant que vous `webhint` l’écrivez.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-169">The [webhint][VisualStudioMarketplaceWebhintExtension] Visual Studio Code extension uses `webhint` to improve your web page while you are writing it.</span></span>  <span data-ttu-id="7d4c0-170">Cette extension s’exécute et signale les diagnostics sur vos fichiers d’espace de travail en fonction de `webhint` l’analyse.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-170">This extension runs and reports diagnostics on your workspace files based on `webhint` analysis.</span></span>  
+<span data-ttu-id="fbda6-169">[L’extension de Visual Studio Code][VisualStudioMarketplaceWebhintExtension] web utilise pour améliorer votre page web pendant que vous `webhint` l’écrivez.</span><span class="sxs-lookup"><span data-stu-id="fbda6-169">The [webhint][VisualStudioMarketplaceWebhintExtension] Visual Studio Code extension uses `webhint` to improve your web page while you are writing it.</span></span>  <span data-ttu-id="fbda6-170">Cette extension s’exécute et signale les diagnostics sur vos fichiers d’espace de travail en fonction de `webhint` l’analyse.</span><span class="sxs-lookup"><span data-stu-id="fbda6-170">This extension runs and reports diagnostics on your workspace files based on `webhint` analysis.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/webhint-vscode-extension.msft.png" alt-text="Extension webhint Visual Studio Code’analyse d’un fichier .tsx dans Visual Studio Code" lightbox="../../images/2020/01/webhint-vscode-extension.msft.png":::
-   <span data-ttu-id="7d4c0-172">Extension webhint Visual Studio Code’analyse `.tsx` d’un fichier dans Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="7d4c0-172">The webhint Visual Studio Code extension analyzing a `.tsx` file in Visual Studio Code</span></span>  
+   <span data-ttu-id="fbda6-172">Extension webhint Visual Studio Code’analyse `.tsx` d’un fichier dans Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="fbda6-172">The webhint Visual Studio Code extension analyzing a `.tsx` file in Visual Studio Code</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7d4c0-173">[En savoir plus sur l’extension Visual Studio Code webhint.][WebhintVisualStudioCodeExtension]</span><span class="sxs-lookup"><span data-stu-id="7d4c0-173">[Learn more about the Visual Studio Code webhint extension][WebhintVisualStudioCodeExtension].</span></span>  
+<span data-ttu-id="fbda6-173">[En savoir plus sur l’extension Visual Studio Code webhint.][WebhintVisualStudioCodeExtension]</span><span class="sxs-lookup"><span data-stu-id="fbda6-173">[Learn more about the Visual Studio Code webhint extension][WebhintVisualStudioCodeExtension].</span></span>  
 
-### <a name="visual-studio-integration"></a><span data-ttu-id="7d4c0-174">Visual Studio’intégration</span><span class="sxs-lookup"><span data-stu-id="7d4c0-174">Visual Studio integration</span></span>  
+### <a name="visual-studio-integration"></a><span data-ttu-id="fbda6-174">Visual Studio’intégration</span><span class="sxs-lookup"><span data-stu-id="fbda6-174">Visual Studio integration</span></span>  
 
-<span data-ttu-id="7d4c0-175">Dans Visual Studio version 2019 16.2 ou ultérieure, utilisez le déboguer Visual Studio déboguer JavaScript en cours d’exécution Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-175">In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to debug JavaScript running in Microsoft Edge.</span></span>  <span data-ttu-id="7d4c0-176">[Téléchargez Visual Studio 2019][MicrosoftVisualStudioDownloads] pour tester cette fonctionnalité !</span><span class="sxs-lookup"><span data-stu-id="7d4c0-176">[Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!</span></span>  
+<span data-ttu-id="fbda6-175">Dans Visual Studio version 2019 16.2 ou ultérieure, utilisez le déboguer Visual Studio déboguer JavaScript en cours d’exécution Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="fbda6-175">In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to debug JavaScript running in Microsoft Edge.</span></span>  <span data-ttu-id="fbda6-176">[Téléchargez Visual Studio 2019][MicrosoftVisualStudioDownloads] pour tester cette fonctionnalité !</span><span class="sxs-lookup"><span data-stu-id="fbda6-176">[Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!</span></span>  
 
 :::image type="complex" source="../../images/2020/01/vs.msft.png" alt-text="Visual Studio avec la possibilité de lancer votre application web dans Microsoft Edge Canary, Dev ou Beta" lightbox="../../images/2020/01/vs.msft.png":::
-   <span data-ttu-id="7d4c0-178">Visual Studio avec la possibilité de lancer votre application web dans Microsoft Edge Canary, Dev ou Beta</span><span class="sxs-lookup"><span data-stu-id="7d4c0-178">Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta</span></span>  
+   <span data-ttu-id="fbda6-178">Visual Studio avec la possibilité de lancer votre application web dans Microsoft Edge Canary, Dev ou Beta</span><span class="sxs-lookup"><span data-stu-id="fbda6-178">Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7d4c0-179">[En savoir plus sur le débogage Microsoft Edge à partir Visual Studio][VisualStudioIndex].</span><span class="sxs-lookup"><span data-stu-id="7d4c0-179">[Learn more about debugging Microsoft Edge from Visual Studio][VisualStudioIndex].</span></span>  
+<span data-ttu-id="fbda6-179">[En savoir plus sur le débogage Microsoft Edge à partir Visual Studio][VisualStudioIndex].</span><span class="sxs-lookup"><span data-stu-id="fbda6-179">[Learn more about debugging Microsoft Edge from Visual Studio][VisualStudioIndex].</span></span>  
 
-### <a name="tracking-prevention-console-messages"></a><span data-ttu-id="7d4c0-180">Suivi des messages de la console de prévention</span><span class="sxs-lookup"><span data-stu-id="7d4c0-180">Tracking prevention Console messages</span></span>  
+### <a name="tracking-prevention-console-messages"></a><span data-ttu-id="fbda6-180">Suivi des messages de la console de prévention</span><span class="sxs-lookup"><span data-stu-id="fbda6-180">Tracking prevention Console messages</span></span>  
 
-<span data-ttu-id="7d4c0-181">La prévention du suivi est une fonctionnalité unique dans Microsoft Edge qui vous protège contre le suivi par les sites web que vous n’avez pas visités auparavant.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-181">Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you have not visited before.</span></span>  <span data-ttu-id="7d4c0-182">Le paramètre de prévention du suivi par défaut est le mode équilibré, qui bloque les suivis tiers et les suivis malveillants connus pour une expérience qui équilibre la confidentialité et la compatibilité web.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-182">The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.</span></span>  <span data-ttu-id="7d4c0-183">Pour vous donner plus d’informations sur la compatibilité de votre page web lorsque certains suivis sont bloqués, des messages d’avertissement ont été ajoutés dans la **console** lorsqu’un suivi est bloqué.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-183">To give you more insight into the compatibility of your web page when certain trackers are blocked, warning messages were added in the **Console** when a tracker is blocked.</span></span>  
+<span data-ttu-id="fbda6-181">La prévention du suivi est une fonctionnalité unique dans Microsoft Edge qui vous protège contre le suivi par les sites web que vous n’avez pas visités auparavant.</span><span class="sxs-lookup"><span data-stu-id="fbda6-181">Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you have not visited before.</span></span>  <span data-ttu-id="fbda6-182">Le paramètre de prévention du suivi par défaut est le mode équilibré, qui bloque les suivis tiers et les suivis malveillants connus pour une expérience qui équilibre la confidentialité et la compatibilité web.</span><span class="sxs-lookup"><span data-stu-id="fbda6-182">The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.</span></span>  <span data-ttu-id="fbda6-183">Pour vous donner plus d’informations sur la compatibilité de votre page web lorsque certains suivis sont bloqués, des messages d’avertissement ont été ajoutés dans la **console** lorsqu’un suivi est bloqué.</span><span class="sxs-lookup"><span data-stu-id="fbda6-183">To give you more insight into the compatibility of your web page when certain trackers are blocked, warning messages were added in the **Console** when a tracker is blocked.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/tracking-prevention.msft.png" alt-text="Messages dans la console lorsque la prévention du suivi bloque l’accès au stockage pour un suivi" lightbox="../../images/2020/01/tracking-prevention.msft.png":::
-   <span data-ttu-id="7d4c0-185">Messages dans la **console lorsque la prévention** du suivi bloque l’accès au stockage pour un suivi</span><span class="sxs-lookup"><span data-stu-id="7d4c0-185">Messages in the **Console** when tracking prevention blocks access to storage for a tracker</span></span>  
+   <span data-ttu-id="fbda6-185">Messages dans la **console lorsque la prévention** du suivi bloque l’accès au stockage pour un suivi</span><span class="sxs-lookup"><span data-stu-id="fbda6-185">Messages in the **Console** when tracking prevention blocks access to storage for a tracker</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7d4c0-186">[En savoir plus sur la prévention du suivi et l’équilibre entre la confidentialité et la compatibilité web.][TrackingPrevention]</span><span class="sxs-lookup"><span data-stu-id="7d4c0-186">[Read more about tracking prevention and the balance between privacy and web compatibility][TrackingPrevention].</span></span>  
+<span data-ttu-id="fbda6-186">[En savoir plus sur la prévention du suivi et l’équilibre entre la confidentialité et la compatibilité web.][TrackingPrevention]</span><span class="sxs-lookup"><span data-stu-id="fbda6-186">[Read more about tracking prevention and the balance between privacy and web compatibility][TrackingPrevention].</span></span>  
 
-## <a name="announcements-from-the-chromium-project"></a><span data-ttu-id="7d4c0-187">Annonces du projet de Chromium</span><span class="sxs-lookup"><span data-stu-id="7d4c0-187">Announcements from the Chromium project</span></span>  
+## <a name="announcements-from-the-chromium-project"></a><span data-ttu-id="fbda6-187">Annonces du projet de Chromium</span><span class="sxs-lookup"><span data-stu-id="fbda6-187">Announcements from the Chromium project</span></span>  
 
-<span data-ttu-id="7d4c0-188">Les sections suivantes annoncent des fonctionnalités supplémentaires disponibles dans Microsoft Edge 81 qui ont été contribués au projet d’Chromium open source.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-188">The following sections announce additional features available in Microsoft Edge 81 that were contributed to the open source Chromium project.</span></span>  
+<span data-ttu-id="fbda6-188">Les sections suivantes annoncent des fonctionnalités supplémentaires disponibles dans Microsoft Edge 81 qui ont été contribués au projet d’Chromium open source.</span><span class="sxs-lookup"><span data-stu-id="fbda6-188">The following sections announce additional features available in Microsoft Edge 81 that were contributed to the open source Chromium project.</span></span>  
 
-### <a name="moto-g4-support-in-device-mode"></a><span data-ttu-id="7d4c0-189">Prise en charge du G4 dans le mode appareil</span><span class="sxs-lookup"><span data-stu-id="7d4c0-189">Moto G4 support in Device Mode</span></span>  
+### <a name="moto-g4-support-in-device-mode"></a><span data-ttu-id="fbda6-189">Prise en charge du G4 dans le mode appareil</span><span class="sxs-lookup"><span data-stu-id="fbda6-189">Moto G4 support in Device Mode</span></span>  
 
-<span data-ttu-id="7d4c0-190">Après [avoir activé la barre d’outils][DevtoolsDeviceModeIndexSimulateMobileViewport]de l’appareil, simulez les dimensions d’uneport d’affichage g4 à partir de la liste **des** périphériques.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-190">After [enabling the Device Toolbar][DevtoolsDeviceModeIndexSimulateMobileViewport], simulate the dimensions of a Moto G4 viewport from the **Device** list.</span></span>  
+<span data-ttu-id="fbda6-190">Après [avoir activé la barre d’outils][DevtoolsDeviceModeIndexSimulateMobileViewport]de l’appareil, simulez les dimensions d’uneport d’affichage g4 à partir de la liste **des** périphériques.</span><span class="sxs-lookup"><span data-stu-id="fbda6-190">After [enabling the Device Toolbar][DevtoolsDeviceModeIndexSimulateMobileViewport], simulate the dimensions of a Moto G4 viewport from the **Device** list.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/motog4.msft.png" alt-text="Simulation d’uneport d’affichage G4" lightbox="../../images/2020/01/motog4.msft.png":::
-   <span data-ttu-id="7d4c0-192">Simulation d’uneport d’affichage G4</span><span class="sxs-lookup"><span data-stu-id="7d4c0-192">Simulating a Moto G4 viewport</span></span>  
+   <span data-ttu-id="fbda6-192">Simulation d’uneport d’affichage G4</span><span class="sxs-lookup"><span data-stu-id="fbda6-192">Simulating a Moto G4 viewport</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7d4c0-193">Choisissez [Afficher l’image de l’appareil][DevtoolsDeviceModeIndexShowDeviceFrame] pour afficher le matériel De LaG4 autour de la fenêtre d’affichage.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-193">Choose [Show Device Frame][DevtoolsDeviceModeIndexShowDeviceFrame] to show the Moto G4 hardware around the viewport.</span></span>  
+<span data-ttu-id="fbda6-193">Sélectionnez [Afficher le cadre de][DevtoolsDeviceModeIndexShowDeviceFrame] l’appareil pour afficher le matériel de LaG4 autour de la fenêtre d’affichage.</span><span class="sxs-lookup"><span data-stu-id="fbda6-193">Choose [Show Device Frame][DevtoolsDeviceModeIndexShowDeviceFrame] to show the Moto G4 hardware around the viewport.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/motog4frame.msft.png" alt-text="Affichage du matériel Du G4" lightbox="../../images/2020/01/motog4frame.msft.png":::
-   <span data-ttu-id="7d4c0-195">Affichage du matériel Du G4</span><span class="sxs-lookup"><span data-stu-id="7d4c0-195">Showing the Moto G4 hardware</span></span>  
+   <span data-ttu-id="fbda6-195">Affichage du matériel Du G4</span><span class="sxs-lookup"><span data-stu-id="fbda6-195">Showing the Moto G4 hardware</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7d4c0-196">Fonctionnalités connexes :</span><span class="sxs-lookup"><span data-stu-id="7d4c0-196">Related features:</span></span>  
+<span data-ttu-id="fbda6-196">Fonctionnalités connexes :</span><span class="sxs-lookup"><span data-stu-id="fbda6-196">Related features:</span></span>  
 
-*   <span data-ttu-id="7d4c0-197">Ouvrez [le menu Commande][DevtoolsCommandMenuIndex] et exécutez la commande pour prendre une capture d’écran de la fenêtre d’affichage qui inclut le matériel de Contrôle G4 (après l’activation de l’activation de l’affichage du cadre de `Capture screenshot` **périphérique).**</span><span class="sxs-lookup"><span data-stu-id="7d4c0-197">Open the [Command Menu][DevtoolsCommandMenuIndex] and run the `Capture screenshot` command to take a screenshot of the viewport that includes the Moto G4 hardware (after enabling **Show Device Frame**).</span></span>  
-*   <span data-ttu-id="7d4c0-198">[Limiter le réseau et le processeur][DevtoolsDeviceModeIndexThrottleNetworkCpu] pour simuler plus précisément les conditions de navigation web d’un utilisateur mobile.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-198">[Throttle the network and CPU][DevtoolsDeviceModeIndexThrottleNetworkCpu] to more accurately simulate a mobile user's web browsing conditions.</span></span>  
+*   <span data-ttu-id="fbda6-197">Ouvrez [le menu Commande][DevtoolsCommandMenuIndex] et exécutez la commande pour prendre une capture d’écran de la fenêtre d’affichage qui inclut le matériel de Contrôle G4 (après l’activation de l’activation de l’affichage du cadre de `Capture screenshot` **périphérique).**</span><span class="sxs-lookup"><span data-stu-id="fbda6-197">Open the [Command Menu][DevtoolsCommandMenuIndex] and run the `Capture screenshot` command to take a screenshot of the viewport that includes the Moto G4 hardware (after enabling **Show Device Frame**).</span></span>  
+*   <span data-ttu-id="fbda6-198">[Limiter le réseau et le processeur][DevtoolsDeviceModeIndexThrottleNetworkCpu] pour simuler plus précisément les conditions de navigation web d’un utilisateur mobile.</span><span class="sxs-lookup"><span data-stu-id="fbda6-198">[Throttle the network and CPU][DevtoolsDeviceModeIndexThrottleNetworkCpu] to more accurately simulate a mobile user's web browsing conditions.</span></span>  
 
-<span data-ttu-id="7d4c0-199">Chromium problème [#924693][CR924693]</span><span class="sxs-lookup"><span data-stu-id="7d4c0-199">Chromium issue [#924693][CR924693]</span></span>  
+<span data-ttu-id="fbda6-199">Chromium problème [#924693][CR924693]</span><span class="sxs-lookup"><span data-stu-id="fbda6-199">Chromium issue [#924693][CR924693]</span></span>  
 
-### <a name="cookie-related-updates"></a><span data-ttu-id="7d4c0-200">Mises à jour relatives aux cookies</span><span class="sxs-lookup"><span data-stu-id="7d4c0-200">Cookie-related updates</span></span>  
+### <a name="cookie-related-updates"></a><span data-ttu-id="fbda6-200">Mises à jour relatives aux cookies</span><span class="sxs-lookup"><span data-stu-id="fbda6-200">Cookie-related updates</span></span>  
 
-#### <a name="blocked-cookies-in-the-cookies-pane"></a><span data-ttu-id="7d4c0-201">Cookies bloqués dans le volet Cookies</span><span class="sxs-lookup"><span data-stu-id="7d4c0-201">Blocked cookies in the Cookies pane</span></span>  
+#### <a name="blocked-cookies-in-the-cookies-pane"></a><span data-ttu-id="fbda6-201">Cookies bloqués dans le volet Cookies</span><span class="sxs-lookup"><span data-stu-id="fbda6-201">Blocked cookies in the Cookies pane</span></span>  
 
-<span data-ttu-id="7d4c0-202">Le volet Cookies du panneau Application affiche désormais les cookies bloqués avec un arrière-plan jaune.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-202">The Cookies pane in the Application panel now displays blocked cookies with a yellow background.</span></span>  
+<span data-ttu-id="fbda6-202">Le volet Cookies du panneau Application affiche désormais les cookies bloqués avec un arrière-plan jaune.</span><span class="sxs-lookup"><span data-stu-id="fbda6-202">The Cookies pane in the Application panel now displays blocked cookies with a yellow background.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/blockedcookies.msft.png" alt-text="Cookies bloqués dans le volet Cookies du panneau Application" lightbox="../../images/2020/01/blockedcookies.msft.png":::
-   <span data-ttu-id="7d4c0-204">Cookies bloqués dans le volet Cookies du panneau Application</span><span class="sxs-lookup"><span data-stu-id="7d4c0-204">Blocked cookies in the Cookies pane of the Application panel</span></span>  
+   <span data-ttu-id="fbda6-204">Cookies bloqués dans le volet Cookies du panneau Application</span><span class="sxs-lookup"><span data-stu-id="fbda6-204">Blocked cookies in the Cookies pane of the Application panel</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7d4c0-205">Chromium problème [#1030258][CR1030258]</span><span class="sxs-lookup"><span data-stu-id="7d4c0-205">Chromium issue [#1030258][CR1030258]</span></span>  <!-- inaccessible  -->  
+<span data-ttu-id="fbda6-205">Chromium problème [#1030258][CR1030258]</span><span class="sxs-lookup"><span data-stu-id="fbda6-205">Chromium issue [#1030258][CR1030258]</span></span>  <!-- inaccessible  -->  
 
-#### <a name="cookie-priority-in-the-cookie-pane"></a><span data-ttu-id="7d4c0-206">Priorité des cookies dans le volet Cookie</span><span class="sxs-lookup"><span data-stu-id="7d4c0-206">Cookie priority in the Cookie pane</span></span>  
+#### <a name="cookie-priority-in-the-cookie-pane"></a><span data-ttu-id="fbda6-206">Priorité des cookies dans le volet Cookie</span><span class="sxs-lookup"><span data-stu-id="fbda6-206">Cookie priority in the Cookie pane</span></span>  
 
-<span data-ttu-id="7d4c0-207">Les tableaux Cookies des **outils** Réseau et **Application** incluent désormais une **colonne** Priorité.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-207">The Cookies tables in the **Network** and **Application** tools now include a **Priority** column.</span></span>  
+<span data-ttu-id="fbda6-207">Les tableaux Cookies des **outils** Réseau et **Application** incluent désormais une **colonne** Priorité.</span><span class="sxs-lookup"><span data-stu-id="fbda6-207">The Cookies tables in the **Network** and **Application** tools now include a **Priority** column.</span></span>  
 
 > [!CAUTION]
-> <span data-ttu-id="7d4c0-208">Chromium navigateurs, tels que Microsoft Edge, sont les seuls navigateurs qui utilisent la priorité des cookies.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-208">Chromium-based browsers, like Microsoft Edge, are the only browsers that support cookie priority.</span></span>  
+> <span data-ttu-id="fbda6-208">Chromium navigateurs, tels que Microsoft Edge, sont les seuls navigateurs qui utilisent la priorité des cookies.</span><span class="sxs-lookup"><span data-stu-id="fbda6-208">Chromium-based browsers, like Microsoft Edge, are the only browsers that support cookie priority.</span></span>  
 
-<span data-ttu-id="7d4c0-209">Chromium problème [#1026879][CR1026879]</span><span class="sxs-lookup"><span data-stu-id="7d4c0-209">Chromium issue [#1026879][CR1026879]</span></span>  
+<span data-ttu-id="fbda6-209">Chromium problème [#1026879][CR1026879]</span><span class="sxs-lookup"><span data-stu-id="fbda6-209">Chromium issue [#1026879][CR1026879]</span></span>  
 
-#### <a name="edit-all-cookie-values"></a><span data-ttu-id="7d4c0-210">Modifier toutes les valeurs de cookie</span><span class="sxs-lookup"><span data-stu-id="7d4c0-210">Edit all cookie values</span></span>  
+#### <a name="edit-all-cookie-values"></a><span data-ttu-id="fbda6-210">Modifier toutes les valeurs de cookie</span><span class="sxs-lookup"><span data-stu-id="fbda6-210">Edit all cookie values</span></span>  
 
-<span data-ttu-id="7d4c0-211">Toutes les cellules des tableaux cookies sont modifiables maintenant, à l’exception des cellules de la colonne **Size,** car cette colonne représente la taille réseau du cookie, en octets.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-211">All cells in the Cookie tables are editable now, except cells in the **Size** column because that column represents the network size of the cookie, in bytes.</span></span>  <span data-ttu-id="7d4c0-212">Pour obtenir une explication de chaque colonne, accédez à [Champs.][DevtoolsStorageCookiesFields]</span><span class="sxs-lookup"><span data-stu-id="7d4c0-212">For an explanation of each column, navigate to [Fields][DevtoolsStorageCookiesFields].</span></span>  
+<span data-ttu-id="fbda6-211">Toutes les cellules des tableaux cookies sont modifiables maintenant, à l’exception des cellules de la colonne **Size,** car cette colonne représente la taille réseau du cookie, en octets.</span><span class="sxs-lookup"><span data-stu-id="fbda6-211">All cells in the Cookie tables are editable now, except cells in the **Size** column because that column represents the network size of the cookie, in bytes.</span></span>  <span data-ttu-id="fbda6-212">Pour obtenir une explication de chaque colonne, accédez à [Champs.][DevtoolsStorageCookiesFields]</span><span class="sxs-lookup"><span data-stu-id="fbda6-212">For an explanation of each column, navigate to [Fields][DevtoolsStorageCookiesFields].</span></span>  
 
 :::image type="complex" source="../../images/2020/01/editcookie.msft.png" alt-text="Modification d’une valeur de cookie" lightbox="../../images/2020/01/editcookie.msft.png":::
-   <span data-ttu-id="7d4c0-214">Modification d’une valeur de cookie</span><span class="sxs-lookup"><span data-stu-id="7d4c0-214">Editing a cookie value</span></span>  
+   <span data-ttu-id="fbda6-214">Modification d’une valeur de cookie</span><span class="sxs-lookup"><span data-stu-id="fbda6-214">Editing a cookie value</span></span>  
 :::image-end:::  
 
-#### <a name="copy-as-nodejs-fetch-to-include-cookie-data"></a><span data-ttu-id="7d4c0-215">Copier en tant que Node.js pour inclure des données de cookie</span><span class="sxs-lookup"><span data-stu-id="7d4c0-215">Copy as Node.js fetch to include cookie data</span></span>  
+#### <a name="copy-as-nodejs-fetch-to-include-cookie-data"></a><span data-ttu-id="fbda6-215">Copier en tant que Node.js pour inclure des données de cookie</span><span class="sxs-lookup"><span data-stu-id="fbda6-215">Copy as Node.js fetch to include cookie data</span></span>  
 
-<span data-ttu-id="7d4c0-216">Pour obtenir une expression qui inclut des données de cookie, pointez sur une demande réseau, ouvrez le menu contextuel `fetch` \(clic droit\), puis choisissez Copier comme Node.js \*\*\*\*  >  **récupérer.**</span><span class="sxs-lookup"><span data-stu-id="7d4c0-216">To get a `fetch` expression that includes cookie data, hover on a network request, open the contextual menu \(right-click\), and choose **Copy** > **Copy as Node.js fetch**.</span></span>  
+<span data-ttu-id="fbda6-216">Pour obtenir une expression qui inclut des données de cookie, pointez sur une demande réseau, ouvrez le menu contextuel `fetch` \(clic droit\), puis choisissez Copier comme Node.js \*\*\*\*  >  **récupérer.**</span><span class="sxs-lookup"><span data-stu-id="fbda6-216">To get a `fetch` expression that includes cookie data, hover on a network request, open the contextual menu \(right-click\), and choose **Copy** > **Copy as Node.js fetch**.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/fetchcookies.msft.png" alt-text="Copier en tant Node.js récupérer" lightbox="../../images/2020/01/fetchcookies.msft.png":::
-   <span data-ttu-id="7d4c0-218">Copier en tant Node.js récupérer</span><span class="sxs-lookup"><span data-stu-id="7d4c0-218">Copy as Node.js fetch</span></span>  
+   <span data-ttu-id="fbda6-218">Copier en tant Node.js récupérer</span><span class="sxs-lookup"><span data-stu-id="fbda6-218">Copy as Node.js fetch</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7d4c0-219">Chromium problème [#1029826][CR1029826]</span><span class="sxs-lookup"><span data-stu-id="7d4c0-219">Chromium issue [#1029826][CR1029826]</span></span>  
+<span data-ttu-id="fbda6-219">Chromium problème [#1029826][CR1029826]</span><span class="sxs-lookup"><span data-stu-id="fbda6-219">Chromium issue [#1029826][CR1029826]</span></span>  
 
-### <a name="more-accurate-web-app-manifest-icons"></a><span data-ttu-id="7d4c0-220">Icônes de manifeste d’application web plus précises</span><span class="sxs-lookup"><span data-stu-id="7d4c0-220">More accurate web app manifest icons</span></span>  
+### <a name="more-accurate-web-app-manifest-icons"></a><span data-ttu-id="fbda6-220">Icônes de manifeste d’application web plus précises</span><span class="sxs-lookup"><span data-stu-id="fbda6-220">More accurate web app manifest icons</span></span>  
 
-<span data-ttu-id="7d4c0-221">Auparavant, le volet Manifeste du panneau Application envoyait ses propres demandes afin d’afficher les icônes de manifeste d’application web.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-221">Previously, the Manifest pane in the Application panel sent its own requests in order to display web app manifest icons.</span></span>  <span data-ttu-id="7d4c0-222">DevTools affiche maintenant la même icône de manifeste que celle Microsoft Edge utilise.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-222">DevTools now shows the exact same manifest icon that Microsoft Edge uses.</span></span>  
+<span data-ttu-id="fbda6-221">Auparavant, le volet Manifeste du panneau Application envoyait ses propres demandes afin d’afficher les icônes de manifeste d’application web.</span><span class="sxs-lookup"><span data-stu-id="fbda6-221">Previously, the Manifest pane in the Application panel sent its own requests in order to display web app manifest icons.</span></span>  <span data-ttu-id="fbda6-222">DevTools affiche maintenant la même icône de manifeste que celle Microsoft Edge utilise.</span><span class="sxs-lookup"><span data-stu-id="fbda6-222">DevTools now shows the exact same manifest icon that Microsoft Edge uses.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/manifesticons.msft.png" alt-text="Icônes dans le volet manifeste" lightbox="../../images/2020/01/manifesticons.msft.png":::
-   <span data-ttu-id="7d4c0-224">Icônes dans le volet manifeste</span><span class="sxs-lookup"><span data-stu-id="7d4c0-224">Icons in the Manifest pane</span></span>  
+   <span data-ttu-id="fbda6-224">Icônes dans le volet manifeste</span><span class="sxs-lookup"><span data-stu-id="fbda6-224">Icons in the Manifest pane</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7d4c0-225">Chromium problème [#985402][CR985402]</span><span class="sxs-lookup"><span data-stu-id="7d4c0-225">Chromium issue [#985402][CR985402]</span></span>  
+<span data-ttu-id="fbda6-225">Chromium problème [#985402][CR985402]</span><span class="sxs-lookup"><span data-stu-id="fbda6-225">Chromium issue [#985402][CR985402]</span></span>  
 
-### <a name="hover-on-css-content-properties-to-display-unescaped-values"></a><span data-ttu-id="7d4c0-226">Pointer sur les propriétés de contenu CSS pour afficher des valeurs non scaped</span><span class="sxs-lookup"><span data-stu-id="7d4c0-226">Hover on CSS content properties to display unescaped values</span></span>  
+### <a name="hover-on-css-content-properties-to-display-unescaped-values"></a><span data-ttu-id="fbda6-226">Pointer sur les propriétés de contenu CSS pour afficher des valeurs non scaped</span><span class="sxs-lookup"><span data-stu-id="fbda6-226">Hover on CSS content properties to display unescaped values</span></span>  
 
-<span data-ttu-id="7d4c0-227">Pointez sur la valeur d’une propriété pour afficher la `content` version non érosée de la valeur.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-227">Hover on the value of a `content` property to display the unescaped version of the value.</span></span>  
+<span data-ttu-id="fbda6-227">Pointez sur la valeur d’une propriété pour afficher la `content` version non érosée de la valeur.</span><span class="sxs-lookup"><span data-stu-id="fbda6-227">Hover on the value of a `content` property to display the unescaped version of the value.</span></span>  
 
-<span data-ttu-id="7d4c0-228">Par exemple, dans cette [démonstration,][CSSContentDemo] lorsque vous examinez le pseudo-élément, une chaîne d’échappée s’affiche `p::after` dans le volet **Styles** :</span><span class="sxs-lookup"><span data-stu-id="7d4c0-228">For example, in this [demo][CSSContentDemo] when you inspect the `p::after` pseudo-element an escaped string is displayed in the **Styles** pane:</span></span>  
+<span data-ttu-id="fbda6-228">Par exemple, dans cette [démonstration,][CSSContentDemo] lorsque vous examinez le pseudo-élément, une chaîne d’échappée s’affiche `p::after` dans le volet **Styles** :</span><span class="sxs-lookup"><span data-stu-id="fbda6-228">For example, in this [demo][CSSContentDemo] when you inspect the `p::after` pseudo-element an escaped string is displayed in the **Styles** pane:</span></span>  
 
 :::image type="complex" source="../../images/2020/01/escapedstring.msft.png" alt-text="Chaîne d’échadé" lightbox="../../images/2020/01/escapedstring.msft.png":::
-   <span data-ttu-id="7d4c0-230">Chaîne d’échadé</span><span class="sxs-lookup"><span data-stu-id="7d4c0-230">The escaped string</span></span>  
+   <span data-ttu-id="fbda6-230">Chaîne d’échadé</span><span class="sxs-lookup"><span data-stu-id="fbda6-230">The escaped string</span></span>  
 :::image-end:::  
 
-<span data-ttu-id="7d4c0-231">Lorsque vous pointez sur la `content` valeur, la valeur non érosée s’affiche.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-231">When you hover on the `content` value, the unescaped value is displayed.</span></span>  
+<span data-ttu-id="fbda6-231">Lorsque vous pointez sur la `content` valeur, la valeur non érosée s’affiche.</span><span class="sxs-lookup"><span data-stu-id="fbda6-231">When you hover on the `content` value, the unescaped value is displayed.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/unescapedstring.msft.png" alt-text="Valeur non scaped" lightbox="../../images/2020/01/unescapedstring.msft.png":::
-   <span data-ttu-id="7d4c0-233">Valeur non scaped</span><span class="sxs-lookup"><span data-stu-id="7d4c0-233">The unescaped value</span></span>  
+   <span data-ttu-id="fbda6-233">Valeur non scaped</span><span class="sxs-lookup"><span data-stu-id="fbda6-233">The unescaped value</span></span>  
 :::image-end:::  
 
-### <a name="more-detailed-source-map-errors-in-the-console"></a><span data-ttu-id="7d4c0-234">Erreurs de carte source plus détaillées dans la console</span><span class="sxs-lookup"><span data-stu-id="7d4c0-234">More detailed source map errors in the Console</span></span>  
+### <a name="more-detailed-source-map-errors-in-the-console"></a><span data-ttu-id="fbda6-234">Erreurs de carte source plus détaillées dans la console</span><span class="sxs-lookup"><span data-stu-id="fbda6-234">More detailed source map errors in the Console</span></span>  
 
-<span data-ttu-id="7d4c0-235">La console fournit désormais plus de détails sur les raisons pour lesquelles un MAP source n’a pas pu être chargé ou l’analyse.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-235">The Console now provides more detail on why a source map failed to load or parse.</span></span>  <span data-ttu-id="7d4c0-236">Auparavant, il a simplement fourni une erreur sans expliquer ce qui s’est passé.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-236">Previously it just provided an error without explaining what went wrong.</span></span>  
+<span data-ttu-id="fbda6-235">La console fournit désormais plus de détails sur les raisons pour lesquelles un MAP source n’a pas pu être chargé ou l’analyse.</span><span class="sxs-lookup"><span data-stu-id="fbda6-235">The Console now provides more detail on why a source map failed to load or parse.</span></span>  <span data-ttu-id="fbda6-236">Auparavant, il a simplement fourni une erreur sans expliquer ce qui s’est passé.</span><span class="sxs-lookup"><span data-stu-id="fbda6-236">Previously it just provided an error without explaining what went wrong.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/sourcemap.msft.png" alt-text="Erreur de chargement d’une carte source dans la console" lightbox="../../images/2020/01/sourcemap.msft.png":::
-   <span data-ttu-id="7d4c0-238">Erreur de chargement d’une carte source dans la console</span><span class="sxs-lookup"><span data-stu-id="7d4c0-238">A source map loading error in the Console</span></span>  
+   <span data-ttu-id="fbda6-238">Erreur de chargement d’une carte source dans la console</span><span class="sxs-lookup"><span data-stu-id="fbda6-238">A source map loading error in the Console</span></span>  
 :::image-end:::  
 
-### <a name="setting-for-disabling-scrolling-past-the-end-of-a-file"></a><span data-ttu-id="7d4c0-239">Paramètre de désactivation du défilement au-delà de la fin d’un fichier</span><span class="sxs-lookup"><span data-stu-id="7d4c0-239">Setting for disabling scrolling past the end of a file</span></span>  
+### <a name="setting-for-disabling-scrolling-past-the-end-of-a-file"></a><span data-ttu-id="fbda6-239">Paramètre de désactivation du défilement au-delà de la fin d’un fichier</span><span class="sxs-lookup"><span data-stu-id="fbda6-239">Setting for disabling scrolling past the end of a file</span></span>  
 
-<span data-ttu-id="7d4c0-240">Ouvrez [Paramètres][DevtoolsCustomizeIndexSettings] puis désactivez Préférences \*\*\*\* Sources Autoriser le défilement au-delà de la fin du fichier pour désactiver le comportement de l’interface utilisateur par défaut qui vous permet de faire défiler bien au-delà de la fin d’un fichier dans le panneau  >  \*\*\*\*  >  \*\*\*\* **Sources.**</span><span class="sxs-lookup"><span data-stu-id="7d4c0-240">Open [Settings][DevtoolsCustomizeIndexSettings] and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel.</span></span>  
+<span data-ttu-id="fbda6-240">Ouvrez [Paramètres][DevtoolsCustomizeIndexSettings] puis désactivez Préférences \*\*\*\* Sources Autoriser le défilement au-delà de la fin du fichier pour désactiver le comportement d’interface utilisateur par défaut qui vous permet de faire défiler bien au-delà de la fin d’un fichier dans le panneau  >  \*\*\*\*  >  \*\*\*\* **Sources.**</span><span class="sxs-lookup"><span data-stu-id="fbda6-240">Open [Settings][DevtoolsCustomizeIndexSettings] and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel.</span></span>  
 
 :::image type="complex" source="../../images/2020/01/settings.msft.png" alt-text="Désactivation de l’utilisation du défilement au-delà de la fin du fichier" lightbox="../../images/2020/01/settings.msft.png":::
-   <span data-ttu-id="7d4c0-242">Désactivation de **l’utilisation du défilement au-delà de la fin du** fichier dans Paramètres</span><span class="sxs-lookup"><span data-stu-id="7d4c0-242">Disabling **Allow scrolling past end of file** in Settings</span></span>  
+   <span data-ttu-id="fbda6-242">Désactivation de **l’utilisation du défilement au-delà de la fin du** fichier dans Paramètres</span><span class="sxs-lookup"><span data-stu-id="fbda6-242">Disabling **Allow scrolling past end of file** in Settings</span></span>  
 :::image-end:::  
 
 :::image type="complex" source="../../images/2020/01/scrollingsources.msft.png" alt-text="Le défilement au-delà de la fin d’un fichier est désormais désactivé dans le panneau Sources" lightbox="../../images/2020/01/scrollingsources.msft.png":::
-   <span data-ttu-id="7d4c0-244">Le défilement au-delà de la fin d’un fichier est désormais désactivé dans le panneau Sources</span><span class="sxs-lookup"><span data-stu-id="7d4c0-244">Scrolling past the end of a file is now disabled in the Sources panel</span></span>  
+   <span data-ttu-id="fbda6-244">Le défilement au-delà de la fin d’un fichier est désormais désactivé dans le panneau Sources</span><span class="sxs-lookup"><span data-stu-id="fbda6-244">Scrolling past the end of a file is now disabled in the Sources panel</span></span>  
 :::image-end:::  
 
-## <a name="download-the-microsoft-edge-preview-channels"></a><span data-ttu-id="7d4c0-245">Télécharger les canaux d’aperçu Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="7d4c0-245">Download the Microsoft Edge preview channels</span></span>  
+## <a name="download-the-microsoft-edge-preview-channels"></a><span data-ttu-id="fbda6-245">Télécharger les canaux d’aperçu Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="fbda6-245">Download the Microsoft Edge preview channels</span></span>  
 
-<span data-ttu-id="7d4c0-246">Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsoft Edge [d’aperçu][MicrosoftEdgePreviewChannels] comme navigateur de développement par défaut.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-246">If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.</span></span>  <span data-ttu-id="7d4c0-247">Les canaux de prévisualisation vous donnent accès aux dernières fonctionnalités de DevTools.</span><span class="sxs-lookup"><span data-stu-id="7d4c0-247">The preview channels give you access to the latest DevTools features.</span></span>  
+<span data-ttu-id="fbda6-246">Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsoft Edge [d’aperçu][MicrosoftEdgePreviewChannels] comme navigateur de développement par défaut.</span><span class="sxs-lookup"><span data-stu-id="fbda6-246">If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.</span></span>  <span data-ttu-id="fbda6-247">Les canaux de prévisualisation vous donnent accès aux dernières fonctionnalités de DevTools.</span><span class="sxs-lookup"><span data-stu-id="fbda6-247">The preview channels give you access to the latest DevTools features.</span></span>  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a><span data-ttu-id="7d4c0-248">Contacter l’équipe Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="7d4c0-248">Getting in touch with Microsoft Edge DevTools team</span></span>  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a><span data-ttu-id="fbda6-248">Contacter l’équipe Microsoft Edge DevTools</span><span class="sxs-lookup"><span data-stu-id="fbda6-248">Getting in touch with Microsoft Edge DevTools team</span></span>  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
@@ -318,15 +318,15 @@ ms.locfileid: "11564958"
 [DevtoolsDeviceModeIndexShowDeviceFrame]: ../../../device-mode/index.md#show-device-frame "Afficher l’image de l’appareil : simuler des appareils mobiles en mode Microsoft Edge devTools | Documents Microsoft"
 [DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Exécuter des commandes avec le menu de commande DevTools de Microsoft Edge | Microsoft Docs"  
 [DevtoolsDeviceModeIndexThrottleNetworkCpu]: ../../../device-mode/index.md#throttle-the-network-and-cpu "Limiter le réseau et le processeur : simuler des appareils mobiles en mode appareil Microsoft Edge devTools | Documents Microsoft"
-[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Paramètres-personnaliser Microsoft Edge DevTools | Documents Microsoft"
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Paramètres - Personnaliser Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsStorageCookiesFields]: ../../../storage/cookies.md#fields "Champs : afficher, modifier et supprimer des cookies avec Microsoft Edge devTools | Documents Microsoft"  
 
 [VisualStudioIndex]: ../../../../visual-studio/index.md "Visual Studio | Documents Microsoft"  
 
-[VisualStudioCodeDebuggerEdgeExtension]: ../../../../visual-studio-code/debugger-for-edge.md "Débogger pour les Microsoft Edge Visual Studio Code extension | Documents Microsoft"  
+[VisualStudioCodeDebuggerEdgeExtension]: ../../../../visual-studio-code/debugger-for-edge.md "Débogger pour les Microsoft Edge Visual Studio Code d’extension | Documents Microsoft"  
 [VisualStudioCodeElementEdgeExtension]: ../../../../visual-studio-code/elements-for-edge.md "Éléments pour les Microsoft Edge Visual Studio Code d’extension | Documents Microsoft"  
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canaux d’aperçu Microsoft Edge"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Canaux de préversion de Microsoft Edge"  
 
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 [VisualStudioMarketplaceDebuggerEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Débogger pour Microsoft Edge | Visual Studio Marketplace"  
@@ -343,10 +343,10 @@ ms.locfileid: "11564958"
 [CR924693]: https://crbug.com/924693 "Demande de fonctionnalité : ajouter Le G4 à la liste des modes d’appareil | Chromium Bogues"  
 [CR1030258]: https://crbug.com/1030258 "Cr 1030258 | Chromium Bogues"  
 [CR1026879]: https://crbug.com/1026879 "L’onglet Cookie de la console dev n’affiche plus la priorité | Chromium Bogues"  
-[CR1029826]: https://crbug.com/1029826 "onglet réseau -> choisir de demander -> copie -> copie car l’extraction ne copie pas les cookies | Chromium Bogues"  
+[CR1029826]: https://crbug.com/1029826 "onglet réseau -> choisir de demander -> copie -> copie, car l’extraction ne copie pas les cookies | Chromium Bogues"  
 [CR985402]: https://crbug.com/985402 "Les chaînes d’erreur d’icône de manifeste d’application web | Chromium Bogues"  
-[CR963183]: https://crbug.com/963183 "DevTools ne sont pas conformes WCAG | Chromium Bogues"  
-[CR941561]: https://crbug.com/941561 "Localisabilité de l'| Chromium Bogues"  
+[CR963183]: https://crbug.com/963183 "Les devTools ne sont pas conformes AUX WCAG | Chromium Bogues"  
+[CR941561]: https://crbug.com/941561 "Localisabilité du | DevTools Chromium Bogues"  
 [CR987787]: https://crbug.com/987787 "Vue Dom 3D | Chromium Bogues"  
 
 [CSSContentDemo]: https://mathiasbynens.github.io/css-dbg-stories/css-escapes.html "Démonstration du contenu CSS sans paysage"  
@@ -365,11 +365,11 @@ ms.locfileid: "11564958"
 [WebhintVisualStudioCodeExtension]: https://webhint.io/docs/user-guide/extensions/vscode-webhint "Webhint Visual Studio Code extension | documentation webhint"  
 
 > [!NOTE]
-> <span data-ttu-id="7d4c0-285">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="7d4c0-285">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
-> <span data-ttu-id="7d4c0-286">La page d’origine est disponible [ici](https://developer.chrome.com/blog/new-in-devtools-81) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="7d4c0-286">The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-81) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
+> <span data-ttu-id="fbda6-285">Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="fbda6-285">Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+> <span data-ttu-id="fbda6-286">La page d’origine est disponible [ici](https://developer.chrome.com/blog/new-in-devtools-81) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).</span><span class="sxs-lookup"><span data-stu-id="fbda6-286">The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-81) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).</span></span>  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
-<span data-ttu-id="7d4c0-288">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="7d4c0-288">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
+<span data-ttu-id="fbda6-288">Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].</span><span class="sxs-lookup"><span data-stu-id="fbda6-288">This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].</span></span>  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

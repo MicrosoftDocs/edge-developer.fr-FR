@@ -1,5 +1,5 @@
 ---
-description: Informations sur la vérification de la signature GPG pour les outils Selenium pour les version Microsoft Edge.
+description: Informations sur la vérification de la signature GPG pour les outils Selenium pour Microsoft Edge de publication.
 title: Vérification des téléchargements des outils Selenium pour Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -15,18 +15,18 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/30/2021
 ms.locfileid: "11306270"
 ---
-# <span data-ttu-id="9b968-104">Vérifier les téléchargements des outils Selenium pour Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="9b968-104">Verify downloads of Selenium Tools for Microsoft Edge</span></span>  
+# <span data-ttu-id="e7704-104">Vérifier les téléchargements des outils Selenium pour Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="e7704-104">Verify downloads of Selenium Tools for Microsoft Edge</span></span>  
 
-<span data-ttu-id="9b968-105">Cet article fournit la clé publique à utiliser lors de la vérification de la signature des releases des outils [Selenium pour Microsoft Edge.][GithubMicrosoftEdgeSeleniumToolsReleases]</span><span class="sxs-lookup"><span data-stu-id="9b968-105">This article provides the public key to use when verifying the signature of releases of the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases].</span></span>  
+<span data-ttu-id="e7704-105">Cet article fournit la clé publique à utiliser lors de la vérification de la signature des releases des outils [Selenium pour Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases].</span><span class="sxs-lookup"><span data-stu-id="e7704-105">This article provides the public key to use when verifying the signature of releases of the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases].</span></span>  
 
-<span data-ttu-id="9b968-106">Les [Java des outils][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] [Selenium][GithubMicrosoftEdgeSeleniumToolsReleases] pour Microsoft Edge sont signées à l’aide de [GPG.][Gnupg]</span><span class="sxs-lookup"><span data-stu-id="9b968-106">The [Java releases][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] of [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases] are signed using [GPG][Gnupg].</span></span>  
+<span data-ttu-id="e7704-106">Les [Java de][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases] sont signées à l’aide de [GPG][Gnupg].</span><span class="sxs-lookup"><span data-stu-id="e7704-106">The [Java releases][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] of [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases] are signed using [GPG][Gnupg].</span></span>  
 
-<span data-ttu-id="9b968-107">Utilisez les clés suivantes pour vérifier la signature des packages fournis par l’équipe outils de développement [Microsoft Edge.][TwitterEdgeDevTools]</span><span class="sxs-lookup"><span data-stu-id="9b968-107">Use the following keys to verify the signature of packages provided by the [Microsoft Edge Developer Tools team][TwitterEdgeDevTools].</span></span>  
+<span data-ttu-id="e7704-107">Utilisez les clés suivantes pour vérifier la signature des packages fournis par [l’équipe Microsoft Edge outils de développement.][TwitterEdgeDevTools]</span><span class="sxs-lookup"><span data-stu-id="e7704-107">Use the following keys to verify the signature of packages provided by the [Microsoft Edge Developer Tools team][TwitterEdgeDevTools].</span></span>  
 
-## <span data-ttu-id="9b968-108">Clé publique pour la vérification des outils Selenium pour Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="9b968-108">Public key for verifying Selenium Tools for Microsoft Edge</span></span>  
+## <span data-ttu-id="e7704-108">Clé publique pour la vérification des outils Selenium pour Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="e7704-108">Public key for verifying Selenium Tools for Microsoft Edge</span></span>  
 
-*   <span data-ttu-id="9b968-109">**ID de clé publique**: outils de développement Microsoft Edge [EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)</span><span class="sxs-lookup"><span data-stu-id="9b968-109">**Public Key ID**: Microsoft Edge Developer Tools Team [EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)</span></span>  
-*   <span data-ttu-id="9b968-110">**Empreinte numérique à clé publique**:</span><span class="sxs-lookup"><span data-stu-id="9b968-110">**Public Key Fingerprint**:</span></span> `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  
+*   <span data-ttu-id="e7704-109">**ID de clé publique**: Microsoft Edge d’équipe outils [de développement EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)</span><span class="sxs-lookup"><span data-stu-id="e7704-109">**Public Key ID**: Microsoft Edge Developer Tools Team [EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)</span></span>  
+*   <span data-ttu-id="e7704-110">**Empreinte numérique à clé publique**:</span><span class="sxs-lookup"><span data-stu-id="e7704-110">**Public Key Fingerprint**:</span></span> `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  
 
 ```output
 -----BEGIN PGP PUBLIC KEY BLOCK-----

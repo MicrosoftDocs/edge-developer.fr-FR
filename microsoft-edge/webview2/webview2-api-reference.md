@@ -1,6 +1,6 @@
 ---
-description: Référence d’API pour le SDK Microsoft Edge WebView2
-title: Référence de l’API Microsoft Edge WebView2
+description: Référence d’API Microsoft Edge SDK WebView2
+title: Microsoft Edge Référence de l’API WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/06/2021
@@ -15,19 +15,19 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "11535691"
 ---
-# <a name="microsoft-edge-webview2-api-reference"></a><span data-ttu-id="49ee8-104">Référence de l’API Microsoft Edge WebView2</span><span class="sxs-lookup"><span data-stu-id="49ee8-104">Microsoft Edge WebView2 API Reference</span></span>  
+# <a name="microsoft-edge-webview2-api-reference"></a><span data-ttu-id="034b2-104">Microsoft Edge Référence de l’API WebView2</span><span class="sxs-lookup"><span data-stu-id="034b2-104">Microsoft Edge WebView2 API Reference</span></span>  
 
-<span data-ttu-id="49ee8-105">Le contrôle Microsoft Edge WebView2 vous permet d’héberger du contenu web dans votre application à l’aide de [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com) comme moteur de rendu.</span><span class="sxs-lookup"><span data-stu-id="49ee8-105">The Microsoft Edge WebView2 control enables you to host web content in your application using [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com) as the rendering engine.</span></span>  <span data-ttu-id="49ee8-106">Pour plus d’informations, accédez à [Vue d’ensemble de Microsoft Edge WebView2](./index.md) et à la mise en [place de WebView2.](./get-started/win32.md)</span><span class="sxs-lookup"><span data-stu-id="49ee8-106">For more information, navigate to [Overview of Microsoft Edge WebView2](./index.md) and [Get Started with WebView2](./get-started/win32.md).</span></span>  
+<span data-ttu-id="034b2-105">Le Microsoft Edge WebView2 vous permet d’héberger du contenu web dans votre application en utilisant Microsoft Edge [(Chromium)](https://www.microsoftedgeinsider.com) comme moteur de rendu.</span><span class="sxs-lookup"><span data-stu-id="034b2-105">The Microsoft Edge WebView2 control enables you to host web content in your application using [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com) as the rendering engine.</span></span>  <span data-ttu-id="034b2-106">Pour plus d’informations, accédez à [Vue d’Microsoft Edge WebView2](./index.md) [et Prise en main avec WebView2.](./get-started/win32.md)</span><span class="sxs-lookup"><span data-stu-id="034b2-106">For more information, navigate to [Overview of Microsoft Edge WebView2](./index.md) and [Get Started with WebView2](./get-started/win32.md).</span></span>  
 
-<span data-ttu-id="49ee8-107">Sélectionnez les langues et l’infrastructure de WebView2 que vous souhaitez utiliser pour former la liste suivante.</span><span class="sxs-lookup"><span data-stu-id="49ee8-107">Select the Languages and Framework of WebView2 you would like to use form the following list.</span></span>  
+<span data-ttu-id="034b2-107">Sélectionnez les langues et l’infrastructure de WebView2 que vous souhaitez utiliser pour former la liste suivante.</span><span class="sxs-lookup"><span data-stu-id="034b2-107">Select the Languages and Framework of WebView2 you would like to use form the following list.</span></span>  
 
-## <a name="languages-and-frameworks"></a><span data-ttu-id="49ee8-108">Langues et infrastructure</span><span class="sxs-lookup"><span data-stu-id="49ee8-108">Languages and Frameworks</span></span>  
+## <a name="languages-and-frameworks"></a><span data-ttu-id="034b2-108">Langues et infrastructure</span><span class="sxs-lookup"><span data-stu-id="034b2-108">Languages and Frameworks</span></span>  
 
-*   [<span data-ttu-id="49ee8-109">Win32 C++</span><span class="sxs-lookup"><span data-stu-id="49ee8-109">Win32 C++</span></span>](/microsoft-edge/webview2/reference/win32/index)  
-*   <span data-ttu-id="49ee8-110">.NET</span><span class="sxs-lookup"><span data-stu-id="49ee8-110">.NET</span></span>  
-    *   [<span data-ttu-id="49ee8-111">Core</span><span class="sxs-lookup"><span data-stu-id="49ee8-111">Core</span></span>][DotnetMicrosoftWebWebView2CoreNamespace]  
-    *   [<span data-ttu-id="49ee8-112">WPF</span><span class="sxs-lookup"><span data-stu-id="49ee8-112">WPF</span></span>][DotnetMicrosoftWebWebView2WpfNamespace]  
-    *   [<span data-ttu-id="49ee8-113">WindowsForms</span><span class="sxs-lookup"><span data-stu-id="49ee8-113">Windows Forms</span></span>][DotnetMicrosoftWebWebView2WinformsNamespace]  
+*   [<span data-ttu-id="034b2-109">Win32 C++</span><span class="sxs-lookup"><span data-stu-id="034b2-109">Win32 C++</span></span>](/microsoft-edge/webview2/reference/win32/index)  
+*   <span data-ttu-id="034b2-110">.NET</span><span class="sxs-lookup"><span data-stu-id="034b2-110">.NET</span></span>  
+    *   [<span data-ttu-id="034b2-111">Core</span><span class="sxs-lookup"><span data-stu-id="034b2-111">Core</span></span>][DotnetMicrosoftWebWebView2CoreNamespace]  
+    *   [<span data-ttu-id="034b2-112">WPF</span><span class="sxs-lookup"><span data-stu-id="034b2-112">WPF</span></span>][DotnetMicrosoftWebWebView2WpfNamespace]  
+    *   [<span data-ttu-id="034b2-113">Windows Forms</span><span class="sxs-lookup"><span data-stu-id="034b2-113">Windows Forms</span></span>][DotnetMicrosoftWebWebView2WinformsNamespace]  
         
 <!-- links -->  
 
