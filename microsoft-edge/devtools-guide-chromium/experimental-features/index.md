@@ -118,7 +118,8 @@ Après avoir activer l’expérience, assurez-vous de redémarrer DevTools.  Pou
 1.  Sous la **Source Order Viewer** section, cochez **la case Afficher** la commande source.  
 1.  Mettez en surbrillez n’importe quel élément HTML pour afficher une superposition que l’ordre dans la source de la page web.  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane» lightbox=».. /media/experiments-source-order-viewer.msft.png»::: dans le volet **Source Order Viewer** Accessibilité ****  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
+   Dans le volet **Source Order Viewer** Accessibilité  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
