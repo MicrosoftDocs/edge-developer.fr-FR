@@ -42,7 +42,7 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 
 Pour les fonctionnalités standard qui acceptent, accédez à la documentation Selenium et à la `EdgeDriver` [norme][SharedCapabilitiesSeleniumDocumentation] [W3C WebDriver][CapabilitiesW3cWebdriver].  Cet article répertorie uniquement les fonctionnalités spécifiques Microsoft Edge.  
 
-##  <a name="edgeoptions-object--"></a>Objet EdgeOptions  
+##  <a name="edgeoptions-object"></a>Objet EdgeOptions  
 
 La Microsoft Edge fonctionnalités spécifiques sont exposées par le biais de `EdgeOptions` l’objet.  Dans certaines langues, les fonctionnalités sont implémentées par la `EdgeOptions` classe.  Dans d’autres langues, les fonctionnalités sont stockées sous le `ms:edgeOptions` dictionnaire dans `DesiredCapabilities` .  
 
@@ -65,7 +65,7 @@ La Microsoft Edge fonctionnalités spécifiques sont exposées par le biais de `
 | windowsApp | chaîne |  | ID de modèle utilisateur d’une application Microsoft Edge package d’application à lancer, par `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE` exemple.  À utiliser au lieu de vous connecter à un `windowsApp` Windows 10X ou émulateur à l’aide `binary` Windows Device Portal. |  
 | windowTypes | liste de chaînes |  | Liste des types de fenêtre qui sont affichés dans la liste des poignées de fenêtre.  Pour accéder aux éléments WebView Android, `webview` incluez-le dans la liste. |  
 
-##  <a name="perfloggingprefs-object--"></a>objet perfLoggingPrefs  
+##  <a name="perfloggingprefs-object"></a>objet perfLoggingPrefs  
 
 Le `perfLoggingPrefs` dictionnaire a le format suivant \(toutes les clés sont facultatives\).  
 

@@ -76,7 +76,7 @@ Pour plus d’informations, [accédez à Microsoft Edge Outils pour Visual Studi
    **Microsoft Edge outils pour Visual Studio Code** Visual Studio Code extension en action  
 :::image-end:::  
 
-##  <a name="webhint--"></a>webhint  
+##  <a name="webhint"></a>webhint  
       
 Utilisez [webhint,][WebhintMain]un outil de linting personnalisable, pour améliorer les fonctionnalités suivantes de votre site.  
 
