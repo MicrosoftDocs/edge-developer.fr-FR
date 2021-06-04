@@ -243,7 +243,7 @@ Pour charger un fichier dans le volet Éditeur, utilisez l’onglet **Page** dan
 
 #### <a name="save-and-undo"></a>Enregistrer et annuler
 
-Pour que les modifications JavaScript soient appliquées, sélectionnez `Ctrl`+`S` \ (Windows, Linux \) ou `Command`+`S` \ (MacOS \).  
+Pour que les modifications JavaScript soient appliquées, sélectionnez `Ctrl`+`S` \(Windows, Linux \) ou `Command`+`S` \(MacOS \).  
 
 Si vous modifiez un fichier, un astérisque s’affiche à côté du nom de fichier.
 *   Pour enregistrer les modifications, sélectionnez `Ctrl` + `S` sur Windows/Linux `Command` + `S` ou sur macOS.
@@ -524,7 +524,7 @@ Les articles suivants couvrent le volet **Débogger** et les points d’arrêt :
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/sources) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/sources) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  

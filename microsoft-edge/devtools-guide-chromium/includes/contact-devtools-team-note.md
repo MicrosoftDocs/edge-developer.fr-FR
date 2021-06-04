@@ -13,7 +13,7 @@ ms.locfileid: "11205641"
 ---
 Utilisez ces options pour discuter des nouvelles fonctionnalités et modifications de publication, ou tout autre sujet lié à DevTools.  
 
-*   Envoyez vos commentaires à l’aide de l’icône **Envoi de commentaires** ou sélectionnez `Alt` + `Shift` + `I` \ (Windows, Linux \) ou `Option` + `Shift` + `I` \ (MacOS \) dans devtools.  
+*   Envoyez vos commentaires à l’aide de l’icône **Envoi de commentaires** ou sélectionnez `Alt` + `Shift` + `I` \(Windows, Linux \) ou `Option` + `Shift` + `I` \(MacOS \) dans devtools.  
 *   Tweet sur [@EdgeDevTools][PostTweetEdgeDevTools].  
 *   Envoyez une suggestion au [Site web de votre choix][TheWebWeWant].  
 *   Pour classer les bogues sur cet article, utilisez cette section de **Commentaires**.  
