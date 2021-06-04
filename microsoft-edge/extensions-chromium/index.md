@@ -37,7 +37,7 @@ Pour travailler directement avec une partie du navigateur, telle qu’une fenêt
   Une extension Microsoft Edge \(Chromium\)  
 :::image-end:::  
 
-## Conseils de base  
+##  <a name="basic-guidance"></a>Conseils de base  
 
 Certains des navigateurs les plus populaires pour créer des extensions incluent Safari, Firefox, Chrome, Opera, Firefox et Microsoft Edge.  L’emplacement idéal pour commencer vos didacticiels de développement d’extension et la recherche de documentation sont les sites hébergés par les organisations de navigateur.  Le tableau suivant n’est pas définitif et peut servir de point de départ.  
 
@@ -53,7 +53,7 @@ Certains des navigateurs les plus populaires pour créer des extensions incluent
 > [!IMPORTANT]
 > La plupart des didacticiels des sites utilisent des API spécifiques au navigateur qui peuvent ne pas correspondre au navigateur pour lequel vous développez.  Dans la plupart des cas, une extension Chromium fonctionne tel quel dans différents navigateurs Chromium et les API fonctionnent comme prévu.  Seules certaines API moins courantes peuvent être strictement spécifiques au navigateur.  Pour obtenir des liens vers les didacticiels, [accédez à Voir aussi](#see-also).  
 
-## Pourquoi Chromium ?  
+##  <a name="why-chromium"></a>Pourquoi Chromium ?  
 
 Si votre objectif est de publier votre extension dans le magasin d’extensions pour chaque navigateur, elle doit être modifiée pour que chaque version cible et s’exécute dans chaque environnement de navigateur distinct.  Par exemple, les [extensions Safari peuvent][AppleDeveloperSafariservicesAppExtensions] utiliser du code web et natif pour communiquer avec des applications natives homologues.  Les quatre derniers navigateurs du tableau précédent utilisent le même package de code et réduisent la nécessité de conserver des versions parallèles.  Ces navigateurs sont basés sur le [Chromium open source.][|::ref1::|Home]  
 
@@ -61,7 +61,7 @@ Créez une extension Chromium pour écrire le moins de code.  Il cible égalemen
 
 Le contenu suivant se concentre principalement sur Chromium extensions.  
 
-## Test de compatibilité et d’extension du navigateur  
+##  <a name="browser-compatibility-and-extension-testing"></a>Test de compatibilité et d’extension du navigateur  
 
 Parfois, la parité d’API n’existe pas entre Chromium navigateurs.  Par exemple, il existe des différences dans les API d’identité et de paiement.  Pour vous assurer que votre extension répond aux attentes des clients, examinez l’état de l’API via les documents officiels suivants du navigateur.  
 
@@ -73,7 +73,7 @@ Les API dont vous avez besoin définissent les modifications que vous devez appo
 
 Pour tester votre extension dans différents environnements avant de l’envoyer à un magasin de navigateurs, chargez-la dans votre navigateur pendant que vous la développez.  
 
-## Publier votre extension dans les magasins de navigateurs  
+##  <a name="publish-your-extension-to-browser-stores"></a>Publier votre extension dans les magasins de navigateurs  
 
 Vous pouvez soumettre et rechercher des extensions de navigateur dans les magasins de navigateurs suivants.  
 
@@ -86,13 +86,13 @@ Certaines magasins vous permettent de télécharger des extensions répertoriée
 
 Les utilisateurs devront peut-être installer votre extension dans différents navigateurs. Dans ce scénario, vous pouvez migrer des extensions Chromium existantes d’un navigateur à un autre.  
 
-### Migrer une extension existante vers Microsoft Edge  
+###  <a name="migrate-an-existing-extension-to-microsoft-edge"></a>Migrer une extension existante vers Microsoft Edge  
 
 Si vous avez déjà développé une extension pour un autre navigateur Chromium, vous pouvez la soumettre au magasin Microsoft Edge de modules. Vous n’avez pas besoin de réécrire votre extension et devez vérifier qu’elle fonctionne dans Microsoft Edge.  Lorsque vous migrez une extension Chromium existante vers d’autres navigateurs Chromium, assurez-vous que les mêmes API ou alternatives sont disponibles pour votre navigateur cible.  
 
 Pour plus d’informations sur le portage de votre extension Chrome vers Microsoft Edge, accédez aux [extensions Port Chrome vers Microsoft Edge (Chromium).][ExtensionsChromiumDeveloperGuidePortChrome] Une fois que vous avez porté votre extension vers le navigateur cible, l’étape suivante consiste à la publier.  
 
-### Publier sur le site modules complémentaires Microsoft Edge web  
+###  <a name="publish-to-the-microsoft-edge-add-ons-website"></a>Publier sur le site modules complémentaires Microsoft Edge web  
 
 Pour commencer à publier votre extension sur [][MicrosoftDeveloperRegistration] Microsoft Edge, vous devez vous inscrire à un compte de développeur auprès d’un compte de messagerie MSA pour soumettre votre liste d’extensions au Store.  Un compte de messagerie MSA `@outlook.com` `@live.com` inclut, etc.  Lorsque vous choisissez une adresse de messagerie à inscrire, pensez à transférer ou partager la propriété de l’extension avec d’autres personnes de votre organisation.  Une fois l’inscription terminée, vous pouvez créer une soumission d’extension au Store.  
 
@@ -108,7 +108,7 @@ Pour envoyer votre extension au Store, veillez à fournir les éléments suivant
 
 Une fois que vous avez envoyé votre extension, elle est soumise à un processus de révision et réussit ou échoue au processus de certification.  Les propriétaires sont avertis du résultat et doivent suivre les étapes suivantes, le cas échéant.  Si vous soumettez une mise à jour d’extension au Store, un nouveau processus de révision est démarré.  
 
-## Articles associés  
+##  <a name="see-also"></a>Articles associés  
 
 *   [Portage d’une extension Google Chrome][ExtensionworkshopPorting]  
 *   [Créer une extension d’application Safari][AppleDeveloperSafariservicesAppExtensionsBuilding]  

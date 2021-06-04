@@ -26,7 +26,7 @@ Les extensions qui ne sont pas chargées à partir du magasin d’extensions Edg
 *   Utilisez le Windows registre (Windows uniquement).  
 *   Utilisez un fichier JSON de préférences (macOS et Linux).  
     
-## Avant de commencer  
+##  <a name="before-you-begin"></a>Avant de commencer  
 
 Veillez à publier votre extension dans le magasin d’extensions Microsoft Edge ou à mettre en package un fichier et assurez-vous qu’il s’installe `.crx` correctement sur votre ordinateur.  Si vous installez le `.crx` fichier à l’aide de la , assurez-vous que vous `update_URL` pouvez accéder à votre extension à cette URL.  
 
@@ -39,7 +39,7 @@ Assurez-vous également que vous avez les informations suivantes.
 > [!NOTE] 
 > Les exemples `1.0` suivants utilisent la version et `aaaaaaaaaabbbbbbbbbbcccccccccc` l’ID.  
 
-## Utiliser le Windows registre (Windows uniquement)  
+##  <a name="use-the-windows-registry-(windows-only)"></a>Utiliser le Windows registre (Windows uniquement)  
 
 Pour distribuer votre extension à l’aide Windows registre, effectuez les étapes suivantes.
 
@@ -60,7 +60,7 @@ Pour distribuer votre extension à l’aide Windows registre, effectuez les éta
   
 1.  Vérifiez que votre extension est répertoriée dans Microsoft Edge en naviguant vers `edge://extensions` .  
 
-## Utiliser un fichier JSON de préférences (macOS et Linux)  
+##  <a name="use-a-preferences-json-file-(macos-and-linux)"></a>Utiliser un fichier JSON de préférences (macOS et Linux)  
 
 Pour distribuer votre extension à l’aide d’un fichier JSON de préférences, effectuez les étapes suivantes.
 
@@ -120,7 +120,7 @@ Pour distribuer votre extension à l’aide d’un fichier JSON de préférences
 
 1.  Vérifiez que votre extension est installée dans Microsoft Edge en naviguant vers `edge://extensions` .  
 
-## Mettre à jour et désinstaller les extensions installées en externe
+##  <a name="update-and-uninstall-externally-installed-extensions"></a>Mettre à jour et désinstaller les extensions installées en externe
 
 Microsoft Edge analyse les entrées de métadonnées dans le Registre chaque fois que le navigateur démarre et modifie les extensions installées en externe.  
 

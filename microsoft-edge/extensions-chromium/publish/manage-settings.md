@@ -18,7 +18,7 @@ ms.locfileid: "11343114"
 
 Gérez les paramètres de votre compte et les détails de profil de votre compte Microsoft Edge développeur dans [l’Partner Center][MicrosoftPartnerCenter].  
 
-## Paramètres de compte  
+##  <a name="account-settings"></a>Paramètres de compte  
 
 Pour afficher les paramètres de votre compte, choisissez l’icône d’engrenage dans le coin supérieur droit des paramètres de [l’Partner Center][MicrosoftPartnerCenter]  >  **Developer**.  Dans les **paramètres développeur,** examinez et mettez à jour les informations suivantes.  
 
@@ -28,7 +28,7 @@ Pour afficher les paramètres de votre compte, choisissez l’icône d’engrena
     
 Dans la section **Détails du compte,** examinez l’état et le type de votre compte.  Vos informations d’ID de vendeur et d’autre ID d’éditeur sont également affichées dans la section **Détails du compte.**  Les valeurs sont affectées par Microsoft pour identifier de manière unique votre compte de développeur et sont en lecture seule.  
 
-## Coordonnées  
+##  <a name="contact-details--"></a>Coordonnées  
 
 La **section Coordonnées** affiche les détails que vous avez fournis lors de la création de votre compte.  L Microsoft Edge’extension de compte utilise les informations de contact pour vous contacter à propos de votre compte.  Le nom complet de l’éditeur affiché dans le Microsoft Edge des modules complémentaires est également affiché dans la section **Coordonnées.**  
   
@@ -36,7 +36,7 @@ Si vos informations de contact changent, modifiez la section **Coordonnées.**  
 
 Si vous devez modifier l’un de vos coordonnées, l’équipe d’extension Microsoft Edge peut vérifier à nouveau votre compte, en particulier si vous avez un compte d’entreprise.  L’état de vérification est de nouveau le même pendant `Pending` que l’examen est en cours.  Le processus de vérification peut aller de quelques jours à quelques semaines, et votre entreprise peut recevoir un appel téléphonique de notre partenaire de vérification.  
 
-## Autres paramètres  
+##  <a name="other-settings"></a>Autres paramètres  
 
 Examinez les paramètres suivants dans la section Paramètres du compte.  
 

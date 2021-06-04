@@ -21,7 +21,7 @@ Pour soumettre votre extension au magasin Microsoft Edge, vous devez être inscr
 > [!IMPORTANT]
 > Aucun frais d’inscription n’est impliqué lors de l’envoi des extensions au Microsoft Edge programme.  
 
-## Avant de commencer  
+##  <a name="before-you-begin"></a>Avant de commencer  
 
 Si vous n’avez pas de compte ou si vous avez un compte commercial existant auprès de l’Espace partenaires, créez un compte [Microsoft (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] pour vous inscrire au programme Microsoft Edge client.  Pour créer un compte Microsoft \(Outlook/live/Hotmail\), effectuer les actions suivantes.  
 
@@ -33,7 +33,7 @@ Si vous avez un compte de développeur enregistré dans l’Partner center, util
 > [!NOTE]
 > Aujourd’hui, les extensions Microsoft Edge ne prend pas en charge l’inscription avec un compte scolaire ou scolaire.  À l’avenir, l’équipe Microsoft Edge extensions de gestion prévoit de prendre en charge la liaison de locataires Azure AD à des comptes MSA pour la gestion des extensions.  
 
-## S’inscrire au programme Microsoft Edge sur l’Partner Center  
+##  <a name="enroll-in-the-microsoft-edge-program-on-partner-center"></a>S’inscrire au programme Microsoft Edge sur l’Partner Center  
 
 1.  Accédez à la [page du développeur][MicrosoftPartnerCenter] et choisissez GO TO **DASHBOARD**.  
 1.  Si vous avez un compte Microsoft, connectez-vous maintenant.  Si ce n’est pas le cas, créez un compte Microsoft.  Utilisez le même compte Microsoft que celui que vous utilisez pour vous inscrire à votre compte de développeur.  Une fois que vous vous êtes inscrit, un formulaire d’inscription s’affiche. Le tableau suivant décrit les champs du formulaire d’inscription.  
@@ -102,7 +102,7 @@ Si vous avez un compte de développeur enregistré dans l’Partner center, util
 1.  Avant d’envoyer votre formulaire d’inscription, lisez et acceptez les conditions générales du [contrat Microsoft Edge développeur.][MicrosoftAppDeveloperAgreement]  
 1.  Pour terminer votre inscription, choisissez **Terminer.**  
     
-## Étapes suivantes  
+##  <a name="next-steps"></a>Étapes suivantes  
 
 Pour afficher votre statut de vérification, accédez à l'> **paramètres du compte.**  Pendant que vous attendez la fin du processus de vérification, continuez à créer, tester et préparer vos soumissions.  
 

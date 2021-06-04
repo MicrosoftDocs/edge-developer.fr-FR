@@ -16,11 +16,11 @@ ms.locfileid: "11343079"
 ---
 # Stratégies de développement du magasin des extensions Microsoft Edge  
 
-## Introduction et objectif de ce document  
+##  <a name="introduction-and-objective-of-this-document"></a>Introduction et objectif de ce document  
 
 Nous vous remercions de votre intérêt pour le développement d’extensions pour Microsoft Edge magasin de modules.  Les stratégies de développeur du magasin d’extensions Microsoft Edge store \(Stratégies de développeur du magasin d’extensions\) s’appliquent à vos extensions, y compris votre soumission d’extensions par le biais de l’Partner [Center][MicrosoftPartnerCenter] et la mise en service de ces extensions via les extensions Microsoft Edge.  
 
-## Principes  
+##  <a name="principles--"></a>Principes  
 
 Quelques principes pour vous aider à démarrer :  
 
@@ -32,9 +32,9 @@ Le respect des stratégies de développement Microsoft Edge du magasin de module
 
 Vos extensions sont essentielles à l’expérience de centaines de millions d’utilisateurs.  Nous avons le plaisir de découvrir ce que vous créez et sommes ravis de vous aider à fournir vos extensions au monde entier.  
 
-## 1. Stratégies de produit  
+##  <a name="1.-product-policies"></a>1. Stratégies de produit  
 
-### 1.1 Fonction distincte & valeur ; Représentation précise  
+###  <a name="1.1-distinct-function-&-value;-accurate-representation"></a>1.1 Fonction distincte & valeur ; Représentation précise  
 
 Votre extension et les métadonnées associées doivent refléter précisément et clairement la source, les fonctionnalités et les fonctionnalités que vous décrivez.  
 
@@ -74,7 +74,7 @@ Toute modification apportée aux paramètres du navigateur doit être explicitem
 
 Votre extension peut uniquement réviser les paramètres clés pour remplacer une page web ou un service Microsoft par celui d’un tiers \(par exemple, exiger l’utilisation d’un moteur de recherche tiers ou définir la page d’accueil sur une propriété web tierce\) si vous êtes employé par ou autrement associé à un tel tiers.  
 
-### 1.2 Sécurité  
+###  <a name="1.2-security"></a>1.2 Sécurité  
 
 Votre extension ne doit pas mettre en danger ou compromettre la sécurité des utilisateurs, ni la sécurité ou les fonctionnalités de l’appareil, du système ou des systèmes associés.  
 
@@ -95,7 +95,7 @@ Votre extension peut dépendre de logiciels non intégrés \(par exemple, un aut
 
 Sauf autorisation contraire de Microsoft, vos extensions doivent être mises à jour uniquement Microsoft Edge modules.  
 
-### 1.3 Le produit peut être testé  
+###  <a name="1.3-product-is-testable"></a>1.3 Le produit peut être testé  
 
 Votre extension doit être testable.  S’il n’est pas possible de tester votre extension pour une raison quelconque, y compris, mais sans s’y limiter, les éléments ci-dessous, votre extension peut échouer à cette exigence.  
 
@@ -107,7 +107,7 @@ Si votre extension nécessite des informations d’identification de connexion, 
 
 Si votre extension nécessite un accès à un serveur, le serveur doit être fonctionnel pour vérifier qu’il fonctionne correctement.  
 
-### 1.4 Utilisation  
+###  <a name="1.4-usability"></a>1.4 Utilisation  
 
 Votre extension doit respecter les Microsoft Edge du magasin d’extensions pour des raisons d’utilisation, y compris, mais sans s’y limiter, celles répertoriées dans les sous-sections ci-dessous.  
 
@@ -119,7 +119,7 @@ Votre extension doit être compatible avec Microsoft Edge sur tous les appareils
 
 Votre extension doit démarrer rapidement et doit rester réactive aux entrées de l’utilisateur.  Votre extension doit continuer à s’exécuter et rester réactive aux entrées de l’utilisateur.  Votre extension doit s’arrêter normalement et ne pas se fermer de manière inattendue.  Votre extension doit gérer les exceptions et rester réactive aux entrées de l’utilisateur une fois l’exception gérée.  
 
-### 1.5 Informations personnelles  
+###  <a name="1.5-personal-information"></a>1.5 Informations personnelles  
 
 Les conditions suivantes s’appliquent aux extensions qui accèdent aux informations personnelles.  Les informations personnelles incluent toutes les informations ou données qui identifient ou peuvent être utilisées pour identifier une personne, ou qui sont associées à ces informations ou données.  
 
@@ -158,16 +158,16 @@ Si votre extension collecte, stocke ou transmet des informations personnelles ; 
 
 Votre extension ne doit pas collecter, stocker ou transmettre des informations personnelles hautement sensibles, telles que des données de santé ou financières, sauf si elles sont liées aux fonctionnalités de votre extension.  Votre extension doit également obtenir le consentement de l’utilisateur express avant de collecter, stocker ou transmettre ces informations.  
 
-### 1.6 Autorisations  
+###  <a name="1.6-permissions"></a>1.6 Autorisations  
 
 Votre extension doit uniquement demander les autorisations nécessaires au fonctionnement.  Vous devez fournir une description du fonctionnement de votre extension.  Votre extension doit uniquement être exécutée comme décrit.  Il se peut que votre extension ne demande pas d’autorisation pour les fonctionnalités qui vont au-delà des fonctionnalités requises pour fonctionner comme déclaré.  
 
-### 1.7 Localisation  
+###  <a name="1.7-localization"></a>1.7 Localisation  
 
 Vous devez trouver votre extension pour toutes les langues que votre extension prétend prendre en charge.  Le texte de la description de votre extension doit être localisée dans chaque langue que vous déclarez.  
 Si votre extension est localisée de sorte que certaines fonctionnalités ne soient pas disponibles dans une version localisée, vous devez clairement faire état ou afficher les limites de localisation dans la description de votre extension. L’expérience fournie par une extension doit être assez similaire dans toutes les langues qu’elle prend en charge.  
 
-### 1.8 Transactions financières  
+###  <a name="1.8-financial-transactions"></a>1.8 Transactions financières  
 
 Si votre produit inclut des achats in-product, des abonnements, une devise virtuelle, des fonctionnalités de facturation ou capture des informations financières ; les conditions requises dans les sections suivantes s’appliquent.  
 
@@ -191,7 +191,7 @@ Les conditions suivantes s’appliquent à votre utilisation d’une API d’ach
 
 Votre extension et les métadonnées associées doivent fournir des informations sur les types d’achats in-product proposés et la plage de prix.  Vous ne devez pas induire en erreur les utilisateurs et être clair sur la nature de vos offres et promotions dans le produit, y compris l’étendue et les conditions des expériences d’essai.  Si votre extension limite l’accès au contenu créé par l’utilisateur pendant ou après une version d’essai, vous devez en informer les utilisateurs à l’avance.  En outre, votre extension doit clairement faire savoir aux utilisateurs qu’ils lancent une option d’achat dans votre extension.  
 
-### 1.9 Notifications  
+###  <a name="1.9-notifications"></a>1.9 Notifications  
 
 Votre extension doit respecter les paramètres système pour les notifications.  Cela signifie que toute présentation de publicités et de notifications aux utilisateurs doit être cohérente avec les préférences des utilisateurs, que les notifications soient fournies par le service de notifications Push de Microsoft \(MPNS\), Windows Push Notification Service \(WNS\) ou tout autre service.  Si l’utilisateur désactive les notifications, que ce soit pour un produit spécifique ou à l’échelle du système, votre extension doit rester fonctionnelle.  
 
@@ -213,7 +213,7 @@ Vous ne devez pas inclure dans une notification des informations que les utilisa
 
 Les notifications envoyées à partir de votre extension doivent être liées à cette extension ou à d’autres extensions que vous publiez dans le magasin d’extensions Microsoft Edge et ne doivent pas inclure de messages promotionnels de quelque type que ce soit qui n’est pas lié à vos extensions.  
 
-### 1.10 Conduite et contenu publicitaire  
+###  <a name="1.10-advertising-conduct-and-content"></a>1.10 Conduite et contenu publicitaire  
 
 Pour toutes les activités publicitaires, les conditions suivantes s’appliquent :  
 
@@ -243,20 +243,20 @@ Votre déclaration de confidentialité ou vos conditions d’utilisation doivent
 
 Si votre extension s’adresse aux enfants de moins de 13 ans, comme défini dans la [children’s Online Privacy Protection Act][FTCChildrensPrivacy]; vous devez informer Microsoft de ce fait dans l’Partner [Center][MicrosoftPartnerCenter] et vous assurer que tout le contenu de la annonce affiché dans votre extension est approprié pour les enfants de moins de 13 ans.  
 
-## 2 Stratégies de contenu  
+##  <a name="2-content-policies"></a>2 Stratégies de contenu  
 
 Les stratégies suivantes s’appliquent au contenu et aux métadonnées \(y compris le nom de l’éditeur, le nom de l’extension, l’icône d’extension, la description de l’extension, les captures d’écran d’extension, les bandes-annonces d’extension et les miniatures de bande-annonce, et toutes les autres métadonnées d’extension\) proposées pour la distribution dans les extensions Microsoft Edge.  Le contenu signifie les images, les sons, les vidéos et le texte contenus dans votre extension, les vignettes, les notifications, les messages d’erreur ou les publicités exposés via votre extension, et tout ce qui est remis à partir d’un serveur ou auquel votre extension se connecte.  Étant donné que les extensions et Microsoft Edge extensions sont utilisées dans le monde entier, ces exigences sont interprétées et appliquées dans le contexte de normes régionales et culturelles.  
 
-### 2.1 Exigences en matière de contenu pour Microsoft Edge catalogue de modules supplémentaires  
+###  <a name="2.1-content-requirements-for-microsoft-edge-addon-catalog-listing"></a>2.1 Exigences en matière de contenu pour Microsoft Edge catalogue de modules supplémentaires  
 
 Les métadonnées et autres contenus que vous envoyez pour accompagner votre extension peuvent ne pas contenir de contenu mature.  
 Les soumissions qui ne répondent pas Microsoft Edge conditions requises pour les listes de la boutique d’modules supplémentaires sont rejetées ou supprimées rapidement.  
 
-### 2.2 Contenu incluant les noms, les logos, l’original et le tiers  
+###  <a name="2.2-content-including-names,-logos,-original,-and-third-party"></a>2.2 Contenu incluant les noms, les logos, l’original et le tiers  
 
 Tout le contenu de votre extension et les métadonnées associées doivent être créés à l’origine par le titulaire d’une licence tierce ou sous licence appropriée et ne doivent être utilisés que comme autorisé par le titulaire des droits ou comme autorisé par la loi.  
 
-### 2.3 Risque de dommages  
+###  <a name="2.3-risk-of-harm"></a>2.3 Risque de dommages  
 
 #### 2.3.1 Conditions requises  
 
@@ -266,23 +266,23 @@ Votre extension ne doit pas contenir de contenu qui facilite ou favorise les act
 
 Votre extension ne doit pas : \(a\) poser un risque de sécurité pour, ni entraîner une gêne, une gêne ou tout autre dommage pour les utilisateurs finaux ou toute autre personne ou enfant ; ou \(b\) posent un risque ou entraînent des dommages à des propriétés réelles ou personnelles.  Vous êtes le seul responsable de tous les tests de sécurité des extensions, de l’acquisition de certificats et de l’implémentation de toutes les protections de fonctionnalités appropriées.  Vous ne devez pas désactiver les fonctionnalités de sécurité ou de confort des plateformes et inclure tous les avertissements, notifications et clauses d’exclusion de responsabilité juridiquement requis et standard applicables dans votre extension.  
 
-### 2.4 Diffamante, caâmeuse, caculeuse et répante  
+###  <a name="2.4-defamatory,-libelous,-slanderous,-and-threatening"></a>2.4 Diffamante, caâmeuse, caculeuse et répante  
 
 Votre extension ne doit pas contenir de contenu diffamant, caculant, caculant ou dangereux.  
 
-### 2.5 Contenu choquant  
+###  <a name="2.5-offensive-content"></a>2.5 Contenu choquant  
 
 Votre extension et les métadonnées associées ne doivent pas contenir de contenu potentiellement sensible ou choquant.  Le contenu peut être considéré comme sensible ou choquant dans certains pays/régions en raison des lois locales ou des normes culturelles.  En outre, votre extension et les métadonnées associées ne doivent pas contenir de contenu qui fait la défense de la discrimination, de la violence ou de la violence en fonction des considérations de la course, de l’appartenance à un groupe social, de l’origine nationale, de la langue, du sexe, de l’âge, du handicap, de l’orientation sexuelle, de l’état en tant que travailleur ou de l’appartenance à un autre groupe social.  
 
-### 2.6 Consommation, consommation d’enfants et enfants  
+###  <a name="2.6-alcohol,-tobacco,-and-drugs"></a>2.6 Consommation, consommation d’enfants et enfants  
 
 Votre extension ne doit pas contenir de contenu qui facilite ou favorise l’utilisation excessive ou dangereuse de l’antériorisation, des produits ou de la santé.  
 
-### 2.7 Contenu pour adultes  
+###  <a name="2.7-adult-content"></a>2.7 Contenu pour adultes  
 
 Votre extension ne doit pas contenir ou afficher du contenu qu’une personne raisonnable considère comme explicite ou explicite.  
 
-### 2.8 Contenu, services et activité interdits  
+###  <a name="2.8-prohibited-content,-services,-and-activity"></a>2.8 Contenu, services et activité interdits  
 
 Votre extension doit respecter les conditions suivantes.  
 
@@ -291,16 +291,16 @@ Votre extension doit respecter les conditions suivantes.
 *   Votre extension ne doit pas fournir, encourager ou activer l’accès non autorisé, le téléchargement ou la diffusion en continu de contenu ou de contenu multimédia protégés par des droits d’auteur.  
 *   Votre extension ne doit pas être minée par cryptomonnaie.  
     
-### 2.9 Activités illégales  
+###  <a name="2.9-illegal-activity"></a>2.9 Activités illégales  
 
 Votre extension ne doit pas contenir de contenu ou de fonctionnalité qui encourage, facilite ou encourage les activités illégales dans le monde réel.  
 
-### 2.10 Blasphème excessif et contenu inapproprié  
+###  <a name="2.10-excessive-profanity-and-inappropriate-content"></a>2.10 Blasphème excessif et contenu inapproprié  
 
 *   Votre extension ne doit pas contenir de blasphémité excessive ou gratuite.  
 *   Votre extension ne doit pas contenir ou afficher du contenu qu’une personne raisonnable considère comme étant insérable.  
     
-### 2.11 Exigences spécifiques aux pays/régions  
+###  <a name="2.11-country/region-specific-requirements"></a>2.11 Exigences spécifiques aux pays/régions  
 
 Le contenu choquant dans n’importe quel pays/région vers lequel votre extension est ciblée n’est pas autorisé.  Le contenu peut être considéré comme choquant dans certains pays/régions en raison des lois locales ou des normes culturelles.  Voici quelques exemples de contenu potentiellement choquant dans certains pays/régions :  
 
@@ -310,7 +310,7 @@ Le contenu choquant dans n’importe quel pays/région vers lequel votre extensi
 *   Références de territoire ou de région en litige  
 *   Fourniture ou activation de l’accès au contenu ou aux services qui ne sont pas en vigueur dans le cadre de la loi locale applicable  
     
-### 2.12 Classification par âge  
+###  <a name="2.12-age-ratings"></a>2.12 Classification par âge  
 
 #### 2.12.1 Contenu mature  
 
@@ -320,7 +320,7 @@ Lorsque vous soumettez votre extension à [l’Partner Center,][MicrosoftPartner
 
 Si votre extension fournit du contenu \(tel que le contenu généré par l’utilisateur, la vente au détail ou tout autre contenu web\) qui peut être approprié pour une classification par âge supérieure à la classification attribuée, vous devez obliger les utilisateurs à choisir de recevoir ce contenu à l’aide d’un filtre de contenu ou en se signant avec un compte pré-existant.  
 
-### 2.13 Vidéos  
+###  <a name="2.13-videos"></a>2.13 Vidéos  
 
 Si vous soumettez une vidéo promotionnelle dans la liste, elle doit respecter toutes les instructions de contenu mentionnées dans cette stratégie.  Si vous choisissez de fournir un lien YouTube, vous devez vous assurer que les publicités sont désactivées pour les vidéos spécifiques que vous souhaitez incorporer.  Pour plus d’informations sur la façon dont les publicités sont activées et désactivées sur YouTube, voir [support.google.com/youtube/answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227] et [support.google.com/youtube/answer/132596][GoogleYoutubeAnswer132596].  
 

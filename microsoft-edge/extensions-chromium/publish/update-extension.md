@@ -18,12 +18,12 @@ ms.locfileid: "11343162"
 
 Vous pouvez mettre à jour une extension envoyée ou supprimer une liste d’extensions publiées du magasin Microsoft Edge des extensions à tout moment.  
 
-## Mettre à jour votre extension sur le Microsoft Edge de modules logiciels  
+##  <a name="update-your-extension-on-the-microsoft-edge-add-ons-store"></a>Mettre à jour votre extension sur le Microsoft Edge de modules logiciels  
 
 > [!NOTE]
 > La durée du processus de certification pour une mise à jour d’une extension peut prendre de quelques heures à quelques jours.  
 
-### Mettre à jour une extension existante dans le magasin Microsoft Edge de modules logiciels  
+###  <a name="update-an-existing-extension-in-the-microsoft-edge-add-ons-store"></a>Mettre à jour une extension existante dans le magasin Microsoft Edge de modules logiciels  
 
 Pour mettre à jour votre extension sur le store, complétez les étapes suivantes.  
 
@@ -32,7 +32,7 @@ Pour mettre à jour votre extension sur le store, complétez les étapes suivant
 1.  Après avoir apporté les modifications, **sélectionnez Enregistrer**publier pour mettre à jour votre liste d’extensions  >  **** et démarrer le processus de certification.  
 1.  Une fois que la colonne s’affiche, votre mise à jour d’extension est disponible dans Microsoft Edge `Status` `In the store` magasin de modules extensions.  
     
-### Mettre à jour votre extension au cours de l’étape de certification  
+###  <a name="update-your-extension-during-the-certification-step"></a>Mettre à jour votre extension au cours de l’étape de certification  
 
 Bien que votre extension soit encore en phase de certification et avant sa publication dans le magasin de modules Microsoft Edge, vous pouvez la mettre à jour. Si votre extension échoue au processus de certification, vous devrez peut-être également mettre à jour votre extension.    
 
@@ -48,7 +48,7 @@ Pour modifier votre soumission, complétez les étapes suivantes.
 > [!IMPORTANT]
 > Le processus arrête et supprime votre soumission actuelle du pipeline de certification des extensions Microsoft Edge et une nouvelle révision commence par la dernière soumission.  
 
-### Mettre à jour votre extension après l’échec de la certification  
+###  <a name="update-your-extension-after-it-failed-the-certification"></a>Mettre à jour votre extension après l’échec de la certification  
 
 Une fois que votre extension a échoué au processus de certification, vous devez mettre à jour votre extension et la resoumettre en intégrant les commentaires.  
 
@@ -58,7 +58,7 @@ Pour modifier votre extension, complétez les étapes suivantes.
 1.  Mettez à jour le package d’extension ou les métadonnées incorporant les commentaires reçus à partir du processus de certification.  Si vous mettez à jour le package d’extension, veillez à augmenter la version dans le fichier manifeste.  
 1.  Après avoir apporté des modifications, **sélectionnez Enregistrer**  >  **publier.**  
     
-## Supprimer des extensions du magasin Microsoft Edge de modules  
+##  <a name="remove-extensions-from-the-microsoft-edge-add-ons-store"></a>Supprimer des extensions du magasin Microsoft Edge de modules  
 
 Pour supprimer votre extension du magasin Microsoft Edge de modules supplémentaires, complétez les étapes suivantes.  
 

@@ -19,7 +19,7 @@ ms.locfileid: "11057860"
 
 [WebView2 est][WebView2Landing] un composant que les développeurs utilisent pour créer leurs applications, et les développeurs peuvent déployer une application [WebView2 Runtime en auto-mise][Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview] à jour sur l’appareil de l’utilisateur pour alimenter leurs applications.  Ce document explique comment les administrateurs informatiques peuvent gérer les applications WebView2 et Runtime.  Les commentaires des administrateurs informatiques et des développeurs sont les bienvenus sur le repo de commentaires [WebView2.][GithubMicrosoftedgeWebviewfeddback]  
 
-## Stratégies de groupe pour WebView2  
+##  <a name="group-policies-for-webview2"></a>Stratégies de groupe pour WebView2  
 
 Les administrateurs informatiques peuvent utiliser des objets de stratégie de groupe \(GPO\) pour configurer les paramètres de stratégie pour WebView2.  L’ensemble de stratégies suivant est/ne s’applique pas à WebView2,  
 

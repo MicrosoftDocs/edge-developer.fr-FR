@@ -34,7 +34,7 @@ Pour portez votre extension Chrome, complétez les étapes suivantes.
     > [!NOTE]
     > Si votre extension échange des messages avec une application native à l’aide, assurez-vous que vous définissez sur dans votre fichier manifeste hôte de messagerie `chrome.runtime.connectNative` `allowed_origins` `extension://[Microsoft-Catalog-extensionID]` native.  Le paramètre permet à l’application d’identifier votre extension.  
     
-## Étapes suivantes  
+##  <a name="next-steps"></a>Étapes suivantes  
 
 Une fois que votre package d’extension est prêt à être publié dans le magasin Microsoft Edge, créez un compte de développeur [et][ExtensionsPublishCreateDevAccount] [publiez votre extension.][ExtensionsPublishPublishExtension]  
 

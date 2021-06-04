@@ -29,7 +29,7 @@ La création d’une conception inclusive rend la technologie utilisable par tou
 
 De nombreux problèmes d’accessibilité courants sur le web peuvent être résolus par le biais d’une bonne pratique de codage.  La documentation [WCAG 2.0 (Web Content Accessibility Guidelines) 2.0](https://www.w3.org/TR/WCAG20) fournit des techniques et des meilleures pratiques pour vous aider à concevoir des applications web dynamiques plus accessibles.  Pour plus d’informations sur la création de sites web accessibles, [accédez à La création de sites web accessibles.](./build/index.md)
 
-## Ressources  
+##  <a name="resources"></a>Ressources  
 
 #### [Conception de l’inclusion](https://w3.org/WAI/users/Overview.html)  
 

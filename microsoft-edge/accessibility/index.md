@@ -25,7 +25,7 @@ La conception de sites web et d’autres technologies pour l’inclusion crée u
 
 Voici quelques meilleures pratiques, des exemples de code et d’autres ressources pour en savoir plus sur la [conception,][AccessibilityDesign]la création et le test de sites web [accessibles][AccessibilityTest] dans Microsoft Edge. [][AccessibilityBuild]  
 
-## Accessibilité dans les Microsoft Edge  
+##  <a name="accessibility-in-microsoft-edge"></a>Accessibilité dans les Microsoft Edge  
 
 Dans Microsoft Edge, nous avons introduit [l’API UI Automation][WindowsWin32AutoEntryui] moderne \(API UIA\).  La modification de l’UIA a été un investissement majeur dans l’accessibilité des navigateurs et elle a été la base d’une expérience web plus inclusive pour les utilisateurs qui dépendent de la technologie d’assistance dans Windows 10.  Les utilisateurs bénéficient également de la nature persistante du moteur Chromium de recherche.  
 
@@ -39,7 +39,7 @@ L Microsoft Edge de recherche collabore régulièrement avec le W3C et d’autre
 
 Pour plus d’informations sur les nouvelles fonctionnalités HTML5 qui sont accessibles Microsoft Edge, accédez à [HTML5Accessibility][HTML5Accessibility].  
 
-## Ressources  
+##  <a name="resources"></a>Ressources  
 
 #### Blog Microsoft Windows UI Automation  
 

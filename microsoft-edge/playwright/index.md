@@ -23,7 +23,7 @@ Par défaut, [l’explorateur][WikiHeadlessBrowser] lance les navigateurs sans t
 
 Par défaut, lorsque vous installez Le programme d’installation télécharge [Chromium,][ChromiumHome] [Firefox][FirefoxMain]et [WebKit.][|::ref3::|Main]  Si vous avez également installé Microsoft Edge \(Chromium\), Il vous suffit de modifier le code d’une ligne pour tester votre site web ou votre application dans Microsoft Edge.  Pour télécharger Microsoft Edge \(Chromium\), [accédez][MicrosoftEdgeDownload]à Télécharger Microsoft Edge .  
 
-## Installation de l’installation  
+##  <a name="installing-playwright--"></a>Installation de l’installation  
 
 Installez [l’Installation][|::ref4::|Main] pour tester votre site web ou votre application avec la commande suivante.  
 
@@ -31,7 +31,7 @@ Installez [l’Installation][|::ref4::|Main] pour tester votre site web ou votre
 npm i playwright
 ```  
 
-## Lancer les Microsoft Edge avec l’err.  
+##  <a name="launch-microsoft-edge-with-playwright--"></a>Lancer les Microsoft Edge avec l’err.  
 
 > [!NOTE]
 > [L'Node.js][|::ref5::|Main] la version 10.17 ou supérieure. Exécutez-la à partir de la ligne de commande pour vous assurer `node -v` que vous avez une version compatible de Node.js.  Les binaires du navigateur pour Chromium, Firefox et WebKit fonctionnent sur Windows, macOS et Linux. Pour plus d’informations, [accédez à la base de données requise.][PlaywrightSystemRequirements]  
@@ -94,7 +94,7 @@ Le lancement de Microsoft Edge, permet d’accéder à la page et d’enregistre
 
 Pour plus d’informations sur la sous-programme, accédez au [site Web De l’auteur de l’événement.][|::ref6::|Main]  Consultez le [repo De l’GitHub.][PlaywrightRepo]  Pour partager vos commentaires sur l’automatisation et le test de votre site web ou de votre application avec l’Équipe de partage, [déposez un problème.][PlaywrightRepoNewIssue]  
 
-## Contacter l’équipe DevTools MicrosoftEdge  
+##  <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
 

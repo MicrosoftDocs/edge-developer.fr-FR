@@ -21,7 +21,7 @@ Les fonctionnalités sont des options que vous pouvez utiliser pour personnalise
 
 Les fonctionnalités sont transmises à une session WebDriver en tant que carte JSON.  Les liaisons de langage WebDriver fournissent généralement des méthodes pratiques sécurisées pour le type, vous n’avez donc pas besoin de configurer vous-même la carte JSON.  Différentes liaisons de langage WebDriver utilisent différents mécanismes pour configurer des fonctionnalités.  Accédez à la documentation de votre [liaison de langue préférée][WebdriverIndexChooseWebdriverLanguageBinding] pour en savoir plus sur la configuration des fonctionnalités.  [Selenium][SeleniumMain] configure les fonctionnalités par le biais de la `EdgeOptions` classe.  
 
-## Utilisation de la classe EdgeOptions  
+##  <a name="using-the-edgeoptions-class"></a>Utilisation de la classe EdgeOptions  
 
 Créez une instance `EdgeOptions` de , qui fournit des méthodes pratiques pour Microsoft Edge fonctionnalités spécifiques.  Après avoir configuré `EdgeOptions` l’objet, passez `EdgeOptions` au `EdgeDriver` constructeur.  
 
@@ -38,11 +38,11 @@ Pour utiliser des fonctionnalités qui ne sont pas associées à une méthode pr
 options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 ```  
 
-## Fonctionnalités reconnues  
+##  <a name="recognized-capabilities"></a>Fonctionnalités reconnues  
 
 Pour les fonctionnalités standard qui acceptent, accédez à la documentation Selenium et à la `EdgeDriver` [norme][SharedCapabilitiesSeleniumDocumentation] [W3C WebDriver][CapabilitiesW3cWebdriver].  Cet article répertorie uniquement les fonctionnalités spécifiques Microsoft Edge.  
 
-## Objet EdgeOptions  
+##  <a name="edgeoptions-object--"></a>Objet EdgeOptions  
 
 La Microsoft Edge fonctionnalités spécifiques sont exposées par le biais de `EdgeOptions` l’objet.  Dans certaines langues, les fonctionnalités sont implémentées par la `EdgeOptions` classe.  Dans d’autres langues, les fonctionnalités sont stockées sous le `ms:edgeOptions` dictionnaire dans `DesiredCapabilities` .  
 
@@ -65,7 +65,7 @@ La Microsoft Edge fonctionnalités spécifiques sont exposées par le biais de `
 | windowsApp | chaîne |  | ID de modèle utilisateur d’une application Microsoft Edge package d’application à lancer, par `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE` exemple.  À utiliser au lieu de vous connecter à un `windowsApp` Windows 10X ou émulateur à l’aide `binary` Windows Device Portal. |  
 | windowTypes | liste de chaînes |  | Liste des types de fenêtre qui sont affichés dans la liste des poignées de fenêtre.  Pour accéder aux éléments WebView Android, `webview` incluez-le dans la liste. |  
 
-## objet perfLoggingPrefs  
+##  <a name="perfloggingprefs-object--"></a>objet perfLoggingPrefs  
 
 Le `perfLoggingPrefs` dictionnaire a le format suivant \(toutes les clés sont facultatives\).  
 
@@ -76,7 +76,7 @@ Le `perfLoggingPrefs` dictionnaire a le format suivant \(toutes les clés sont f
 | enablePage | booléen | true | Pour collecter des événements \(ou pas collecter\) à partir du domaine Page. |  
 | traceCategories | chaîne | \(empty\) | Chaîne séparée par des virgules Microsoft Edge catégories de suivi pour lesquelles les événements de suivi doivent être collectés.  Une chaîne non spécifiée ou vide désactive le suivi. |  
 
-## Fonctionnalités renvoyées  
+##  <a name="returned-capabilities"></a>Fonctionnalités renvoyées  
 
 La liste suivante contient toutes les fonctionnalités spécifiques Microsoft Edge qui renvoient lorsque `EdgeDriver` vous créez une nouvelle session.  
 

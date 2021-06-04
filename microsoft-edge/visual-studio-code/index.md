@@ -18,7 +18,7 @@ ms.locfileid: "11230690"
 
 [Visual Studio Code][VisualStudioCodeDocs] est un éditeur de code source léger mais puissant.  [Visual Studio Code][VisualStudioCodeDocs] est disponible pour Windows, Linux et macOS.  Il inclut la prise en charge intégrée de JavaScript, TypeScript et Node.js, c’est donc un excellent outil pour les développeurs web avant de le personnaliser.  Si vous ne l’utilisez pas encore, [téléchargez Visual Studio Code][VisualstudioCode].  
 
-## Extensions  
+##  <a name="extensions"></a>Extensions  
 
 <!--todo: We want to put something like the tiles for extensions Visual Studio Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 
@@ -51,7 +51,7 @@ Recherchez l’extension spécifique sur Marketplace et choisissez **Installer.*
    :::column-end:::
 :::row-end:::  
 
-## Débogger pour Microsoft Edge  
+##  <a name="debugger-for-microsoft-edge"></a>Débogger pour Microsoft Edge  
 
 Avec l’extension [Déboguer pour Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio Code, déboguer votre code JavaScript frontal ligne par ligne et voir les instructions directement à partir `console.log()` [Visual Studio Code][VisualstudioCode].  
       
@@ -61,7 +61,7 @@ Avec l’extension [Déboguer pour Microsoft Edge][VisualstudioMarketplaceDebugg
    **Débogger pour l Microsoft Edge** Visual Studio Code extension en action  
 :::image-end:::  
 
-## Microsoft Edge Outils pour Visual Studio Code
+##  <a name="microsoft-edge-tools-for-visual-studio-code"></a>Microsoft Edge Outils pour Visual Studio Code
 
 Avec [l’extension Microsoft Edge Outils][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] Visual Studio Code Visual Studio Code, utilisez l’outil **Éléments** du navigateur Microsoft Edge dans Visual Studio Code.  Utilisez-le pour les actions suivantes.  
 
@@ -76,7 +76,7 @@ Pour plus d’informations, [accédez à Microsoft Edge Outils pour Visual Studi
    **Microsoft Edge outils pour Visual Studio Code** Visual Studio Code extension en action  
 :::image-end:::  
 
-## webhint  
+##  <a name="webhint--"></a>webhint  
       
 Utilisez [webhint,][WebhintMain]un outil de linting personnalisable, pour améliorer les fonctionnalités suivantes de votre site.  
 

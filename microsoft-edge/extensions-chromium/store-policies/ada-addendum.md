@@ -16,7 +16,7 @@ ms.locfileid: "11343086"
 ---
 # Addendum du contrat du développeur d’applications Microsoft Edge utilisateurs du programme  
 
-## Exposé G : Conditions générales pour les extensions Microsoft Edge de travail  
+##  <a name="exhibit-g:-terms-and-conditions-for-microsoft-edge-extensions"></a>Exposé G : Conditions générales pour les extensions Microsoft Edge de travail  
 
 Ces conditions générales pour les extensions Microsoft Edge \(le « Extensions Addendum » \) sont un complément des conditions générales du contrat du développeur d’applications, dont la version actuelle est la plus récente. [https://go.microsoft.com/fwlink/p/?LinkID=221922][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]  Cet addendum s’applique si vous avez envoyé ou que vous rendez disponibles Microsoft Edge extensions \(chacune, une « extension » \) via Microsoft Edge modules.  Sauf modification expressément modifiée par le présent addendum d’extensions, toutes les conditions générales du contrat du développeur d’applications, qui sont incorporées par référence dans ce document, s’appliquent à l’offre et à la distribution de vos extensions Microsoft Edge.  Sauf modification expressément modifiée par ce Addendum, les conditions qui s’appliquent à une « Application » ou à une « Application » dans le cadre du contrat du développeur d’application s’appliquent à une extension telle que définie dans cet Addendum et toutes les références à « Store » ou « Microsoft Store » dans le cadre du Contrat du développeur d’applications s’appliquent aux modules de développement Microsoft Edge tels que définis dans cet Addendum.  
 
