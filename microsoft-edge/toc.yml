@@ -23,7 +23,9 @@
           items:
             - name: Fonctionnalités expérimentales
               href: devtools-guide-chromium/experimental-features/index.md
-            - name: Microsoft Edge 91
+            - name: Microsoft Edge92
+              href: devtools-guide-chromium/whats-new/2021/05/devtools.md
+            - name: Microsoft Edge91
               href: devtools-guide-chromium/whats-new/2021/04/devtools.md
             - name: Microsoft Edge 90
               href: devtools-guide-chromium/whats-new/2021/02/devtools.md
