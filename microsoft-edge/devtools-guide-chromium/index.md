@@ -1,6 +1,6 @@
 ---
 description: Découvrir les outils de développement Microsoft Edge (Chromium)
-title: Vue Microsoft Edge (Chromium) Outils de développement
+title: Présentation Microsoft Edge outils de développement (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/07/2021
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 3d91b0754f84579d770940503cf4a252e3926416
-ms.sourcegitcommit: fa8bedfc83fbd1c4ce7bda8c69586c4f24007beb
+ms.openlocfilehash: 7f9a4288980dd938a43b229e1d5396adc7937c67
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "11481409"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597009"
 ---
-# <a name="microsoft-edge-chromium-developer-tools-overview"></a>Vue Microsoft Edge (Chromium) Outils de développement  
+# <a name="microsoft-edge-chromium-developer-tools-overview"></a>Présentation Microsoft Edge outils de développement (Chromium)  
 
 Lorsque vous installez Microsoft Edge, vous obtenez un navigateur. En outre, vous obtenez un moyen puissant pour inspecter, déboguer et même créer des projets web.  Les outils de développement livrés avec le navigateur sont basés sur les outils du projet open source Chromium, de sorte que vous connaissez peut-être déjà les outils.  Pour que les descriptions soient plus courtes dans cet article, les descriptions sont désormais `Microsoft Edge Developer Tools` appelées `DevTools` .  
 
@@ -28,7 +28,7 @@ Utilisez DevTools pour passer en revue et en savoir plus sur les tâches de dév
 *   Recherchez les problèmes d’accessibilité, de [performances,][DevtoolsGuideIssuesIndex] de compatibilité et de sécurité dans vos produits et découvrez comment utiliser DevTools pour résoudre chacun d’eux.  
 *   [Inspectez le trafic réseau et][DevtoolsGuideNetworkIndex] examinez l’emplacement des problèmes.  
 *   [Inspectez l’endroit où le navigateur stockait le contenu][DevtoolsGuideStorageSessionstorage] dans différents formats.  
-*   [Évaluez les performances][DevtoolsGuideEvaluatePerformanceIndex] de votre produit pour rechercher les [problèmes de mémoire][DevtoolsGuideMemoryProblemsIndex] et de [rendu.][DevtoolsGuideRenderingToolsIndex]  
+*   [Évaluez les performances de][DevtoolsGuideEvaluatePerformanceIndex] votre produit pour rechercher des [problèmes de mémoire][DevtoolsGuideMemoryProblemsIndex] et [de rendu.][DevtoolsGuideRenderingToolsIndex]  
 *   [Utilisez un environnement de développement][DevtoolsGuideSourcesIndex] pour synchroniser les modifications dans [DevTools][DevtoolsGuideWorkspacesIndex] avec le système de fichiers et remplacer les fichiers [à][DevtoolsGuideJavascriptOverrides] partir du web.  
     
 <!-- Is the link meant to be local or session storage for "inspect where the browser stored content"? -->  
@@ -56,7 +56,7 @@ Pour ouvrir et explorer DevTools, utilisez l’une des actions suivantes.
    :::column-end:::  
 :::row-end:::  
 
-Il existe deux façons principales d’interagir avec les DevTools.
+Il existe deux méthodes principales pour interagir avec les DevTools.
 *   Utiliser la souris  
 *   [Raccourcis clavier.][DevtoolsGuideShortcutsIndex]  Les raccourcis clavier offrent un moyen rapide d’accéder aux fonctionnalités et sont nécessaires pour l’accessibilité.  L Microsoft Edge’équipe DevTools travaille dur pour rendre tous les outils disponibles à l’aide du clavier et des technologies d’assistance telles que les lecteurs d’écran.  Pour plus d’informations sur l’ouverture des différentes fonctionnalités dans DevTools, accédez à Microsoft Edge raccourcis clavier [DevTools.][DevtoolsGuideOpenIndex]  
 
@@ -110,14 +110,14 @@ DevTools vous offre une quantité incroyable d’énergie pour inspecter, débog
 
 DevTools a été développé sur une période de plusieurs années.  Vous pouvez supposer que DevTools est difficile à apprendre lorsque vous ouvrez pour la première fois l’un des outils.  Le texte suivant présente rapidement les différentes parties.  La barre d’outils principale vous propose quelques sections et les sections sont commandés de gauche à droite.  
 
-:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="Capture d’écran de la barre de menus de DevTools avec des étiquettes expliquant les différentes sections.  Dans l’ordre : Inspect Tool, Device Emulation tool, Tools tab group, JavaScript errors, Issues, Paramètres, Feedback, Customize, and Close." lightbox="./media/devtools-intro-menu-bar.msft.png":::  
-   Capture d’écran de la barre de menus de DevTools avec des étiquettes expliquant les différentes sections.  Dans l’ordre : Inspect Tool, Device Emulation tool, Tools tab group, JavaScript Errors, Issues, Paramètres, Feedback, Customize, and Close.  
+:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="Capture d’écran de la barre de menus de DevTools avec des étiquettes expliquant les différentes sections.  Dans l’ordre : inspecter l’outil, l’outil d’émulation de périphérique, le groupe d’onglets Outils, les erreurs JavaScript, les problèmes, Paramètres, commentaires, personnaliser et fermer." lightbox="./media/devtools-intro-menu-bar.msft.png":::  
+   Capture d’écran de la barre de menus de DevTools avec des étiquettes expliquant les différentes sections.  Dans l’ordre : inspecter l’outil, l’outil d’émulation de périphérique, le groupe d’onglets Outils, les erreurs JavaScript, les problèmes, les Paramètres, les commentaires, personnaliser et fermer.  
 :::image-end:::  
 
 *   L’outil Inspect vous permet de choisir un élément sur la page web actuelle.  Après l’avoir activé, vous pouvez déplacer votre souris sur différentes parties de la page web pour obtenir des informations détaillées sur l’élément et une superposition de couleurs pour afficher les dimensions, l’remplissage et la marge.  
     
-    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="Capture d’écran de l’outil d’inspection avec le premier titre de cet article sélectionné" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
-       Capture d’écran de l’outil d’inspection avec le premier titre de cet article sélectionné  
+    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="Outil Inspect avec le premier titre de cet article sélectionné" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
+       Outil Inspect avec le premier titre de cet article sélectionné  
     :::image-end:::  
     
 *   [L’outil Device Emulation][DevtoolsGuideDeviceModeIndex] affiche le produit web actuel en mode appareil émulé.  **L’outil Device Emulation** vous permet d’exécuter et de tester la façon dont votre produit réagit lorsque vous reizez le navigateur.  Il vous donne également une estimation de la disposition et du comportement sur un appareil mobile.  
@@ -126,11 +126,11 @@ DevTools a été développé sur une période de plusieurs années.  Vous pouvez
        Capture d’écran de l’affichage DevTools de cet article sur un téléphone mobile émulé  
     :::image-end:::  
     
-*   Le groupe d’onglets Outils est un groupe d’onglets qui représentent différents outils utilisés dans différents scénarios.  Vous pouvez personnaliser chacun des outils et chaque outil peut changer en fonction du contexte.  Pour ouvrir un menu déroulant de plus d’outils, choisissez le bouton **Plus d’onglets** \( `>>` \).  Chacun des outils est présenté plus loin dans la section suivante.  
+*   Le groupe d’onglets Outils est un groupe d’onglets qui représentent différents outils utilisés dans différents scénarios.  Vous pouvez personnaliser chacun des outils et chaque outil peut changer en fonction du contexte.  Pour ouvrir un menu déroulant de plusieurs outils, choisissez le bouton **Plus d’onglets** \( `>>` \).  Chacun des outils est présenté plus loin dans la section suivante.  
 *   En plus du groupe d’onglets Outils, des raccourcis d’erreur et de problèmes sont facultatifs.  Les raccourcis s’affichent lorsque des erreurs ou des problèmes JavaScript se produisent sur la page web actuelle.  Le bouton Ouvrir la console pour afficher **les erreurs #, # avertissements** \(**Erreurs JavaScript**\) affiche un cercle rouge suivi du nombre d’erreurs `X` JavaScript.  Pour ouvrir la [console et][DevtoolsGuideConsoleIndex] en savoir plus sur l’erreur, sélectionnez le **bouton Erreurs JavaScript.**  Le **bouton Ouvrir les problèmes pour afficher # problèmes** \(**Problèmes**\) est une icône de message bleue suivie du nombre de problèmes.  Pour ouvrir [l’outil Problèmes,][DevtoolsGuideIssuesIndex] sélectionnez **Le bouton** Problèmes.  
-*   Le **bouton Paramètres** affiche une icône d’engrenage.  Pour ouvrir devTools **Paramètres** page web, sélectionnez **Paramètres** bouton.  La **Paramètres** web affiche un menu pour modifier les **préférences,** activer les **expériences**et bien plus encore.  
+*   Le **bouton Paramètres** affiche une icône d’engrenage.  Pour ouvrir devTools **Paramètres** page web, sélectionnez **le bouton** Paramètres’accès.  La **Paramètres** web affiche un menu pour modifier les **préférences,** activer les **expériences**et bien plus encore.  
 *   Le **bouton Envoyer des commentaires** s’affiche avec une bulle de conversation à côté de celui-ci.  Pour ouvrir la boîte **de dialogue Envoyer des** commentaires, sélectionnez le bouton Envoyer **des** commentaires.  La **boîte de dialogue Envoyer** des commentaires vous permet d’entrer des informations pour décrire ce qui s’est passé et inclut automatiquement une capture d’écran.  Utilisez-le pour vous connecter avec l’équipe DevTools afin de signaler des problèmes, des problèmes ou des suggestions d’idées.  
-*   Le **bouton Personnaliser et contrôler Devtools** \( `...` \) ouvre un menu déroulant.  Il vous permet de définir où ancrer devTools, rechercher, ouvrir différents outils, et bien plus encore.  
+*   Le **bouton Personnaliser et contrôler Devtools** \( `...` \) ouvre un menu déroulant.  Il vous permet de définir où ancrer devTools, rechercher, ouvrir différents outils et bien plus encore.  
     
 Dans le groupe d’onglets Outils, vous pouvez ouvrir les différents outils disponibles dans DevTools.  La liste suivante décrit les outils les plus couramment utilisés dans DevTools.  
 
@@ -138,11 +138,11 @@ Dans le groupe d’onglets Outils, vous pouvez ouvrir les différents outils dis
 *   **Éléments**.  Vous permet de modifier ou d’inspecter le code HTML et CSS.  Vous pouvez modifier les deux dans l’outil et afficher les modifications en direct dans le navigateur.  
 *   [Console][DevtoolsGuideConsoleIndex].  Permet d’afficher et de filtrer les messages du journal.  Les messages journaux sont des journaux automatisés du navigateur, tels que les demandes réseau et les journaux générés par le développeur.  Vous pouvez également exécuter JavaScript directement dans la **console** dans le contexte de la fenêtre ou du cadre actuel.  
 *   [Sources][DevtoolsGuideSourcesIndex].  Un éditeur de code et un débogger JavaScript.  Vous pouvez modifier des projets, gérer des extraits de code et déboguer votre projet actuel.  
-*   [Réseau][DevtoolsGuideNetworkIndex].  Vous permet de surveiller et d’inspecter les demandes ou les réponses du réseau et du cache du navigateur.  Vous pouvez filtrer les demandes et les réponses en réponse à vos besoins et simuler différentes conditions réseau.  D’autres outils spécialisés sont également disponibles, tels que **Performances,** **Mémoire,** **Application,** **Sécurité**et **Audits.**  
+*   [Réseau][DevtoolsGuideNetworkIndex].  Vous permet de surveiller et d’inspecter les demandes ou les réponses du réseau et du cache du navigateur.  Vous pouvez filtrer les demandes et les réponses en réponse à vos besoins et simuler différentes conditions réseau.  D’autres outils spécialisés sont également disponibles, tels que **Performance,** **Mémoire,** **Application,** **Sécurité**et **Audits.**  
 
 ## <a name="power-tip-use-the-command-menu"></a>Conseil d’alimentation : utiliser le menu de commandes  
 
-DevTools fournit un grand nombre de fonctionnalités à utiliser avec votre produit web.  Accédez aux différentes parties de DevTools de plusieurs façons, mais le moyen le plus rapide d’accéder aux fonctionnalités dont vous avez besoin consiste à utiliser le menu de commandes.  Pour plus d’informations, accédez à Exécuter des commandes Microsoft Edge menu de commande [DevTools.][DevtoolsGuideCommandMenuIndex]  Pour ouvrir le menu de commandes, terminez l’une des actions suivantes.  
+DevTools fournit un grand nombre de fonctionnalités à utiliser avec votre produit web.  Accédez aux différentes parties de DevTools de plusieurs façons, mais le moyen le plus rapide d’accéder aux fonctionnalités dont vous avez besoin consiste à utiliser le menu de commandes.  Pour plus d’informations, accédez à Exécuter les commandes avec Microsoft Edge menu de commande [DevTools.][DevtoolsGuideCommandMenuIndex]  Pour ouvrir le menu de commandes, terminez l’une des actions suivantes.  
 
 *   Sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\).  
 *   Choose **Customize And Control DevTools** \( `...` \), and then choose Run **Command**.  
@@ -202,16 +202,16 @@ L’équipe DevTools fournit de nouvelles fonctionnalités en tant qu’expérie
 
 [!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
-Si vous souhaitez prévisualiser les dernières fonctionnalités à venir dans [DevTools][DevtoolsGuideWhatsNew202102Devtools], téléchargez Microsoft Edge [Canary][MicrosoftedgeinsiderDownload], qui est builds tous les soirs.  
+Si vous souhaitez prévisualiser les dernières fonctionnalités à venir dans [DevTools][DevtoolsGuideWhatsNew202102Devtools], téléchargez [Microsoft Edge Canary][MicrosoftedgeinsiderDownload], qui est builds tous les soirs.  
 
 ## <a name="see-also"></a>Articles associés  
 
-*   [DevtoolsGuide pour les débutants : Prise en main avec HTML et le DOM][DevtoolsGuideBeginnersHtml]  
+*   [DevtoolsGuide pour les débutants : Prise en main html et le DOM][DevtoolsGuideBeginnersHtml]  
 *   [Microsoft Edge (Chromium) DevTools Protocol][DevtoolsProtocolIndex]  
     
 <!-- links -->  
 
-[DevtoolsGuideBeginnersHtml]: ./beginners/html.md "DevTools pour les débutants : mise en place du code HTML et du dom | Documents Microsoft"  
+[DevtoolsGuideBeginnersHtml]: ./beginners/html.md "DevTools pour les débutants : mise en place du code HTML et de la | Documents Microsoft"  
 [DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "Exécuter des commandes avec le menu Microsoft Edge commande DevTools | Documents Microsoft"  
 [DevtoolsGuideConsoleIndex]: ./console/index.md "Vue d’ensemble de la console | Documents Microsoft"  
 [DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Modifier Microsoft Edge placement de DevTools (Undock, Dock To Bottom, Dock To Left) | Documents Microsoft"  

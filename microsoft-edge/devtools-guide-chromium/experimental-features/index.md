@@ -22,16 +22,16 @@ no-loc:
 - Edit keyboard shortcuts for any action in the DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: 8f85bab4b1229a13f3b0185c65da900573380811
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 82d547c8c1ed0606bda9ade27d0dbddbfa2ca800
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564237"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11596998"
 ---
 # <a name="experimental-features"></a>Fonctionnalités expérimentales  
 
-Microsoft Edge DevTools permet d’accéder à des fonctionnalités expérimentales en cours de développement.  Vous pouvez tester et [fournir des commentaires](#providing-feedback-on-experimental-features) avant la publication de chaque fonctionnalité.  
+Microsoft Edge DevTools permet d’accéder aux fonctionnalités expérimentales qui sont encore en développement.  Vous pouvez tester et [fournir des commentaires](#providing-feedback-on-experimental-features) avant la publication de chaque fonctionnalité.  
 
 Bien que les fonctionnalités expérimentales soient disponibles dans tous les canaux de Microsoft Edge, vous pouvez obtenir les dernières fonctionnalités expérimentales à l’aide canal Microsoft Edge Canary.  
 
@@ -49,7 +49,7 @@ Pour activer \(ou désactiver\) les fonctionnalités expérimentales dans Micros
        Page **Expériences** dans **Paramètres**  
     :::image-end:::  
     
-1.  Dans la page Expériences, parcourez la liste de toutes les **fonctionnalités expérimentales** disponibles et cochez la case en regard de chaque fonctionnalité que vous souhaitez tester.  
+1.  Dans la page **Expériences,** parcourez la liste de toutes les fonctionnalités expérimentales disponibles et cochez la case en regard de chaque fonctionnalité à tester.  
 1.  Fermez et rouvrez Microsoft Edge DevTools.  
     
 > [!NOTE]
@@ -79,7 +79,7 @@ Les sections suivantes décrivent les nouvelles fonctionnalités expérimentales
 *   sécurité  
 *   performance  
 *   Applications web progressives (P.A.S.)  
-*   autres problèmes de développement web courants  
+*   autres problèmes courants de développement web  
     
 [L’expérience webhint][WebhintMain] affiche les commentaires sur le web dans le [panneau Problèmes.][DevtoolsIssuesIndex]  Choisissez un problème pour afficher la documentation de la solution et une liste des ressources affectées sur votre site web.  Choisissez un lien de ressource pour ouvrir **** le volet **Réseau,** **Sources**ou Éléments approprié dans DevTools.  
 
@@ -93,7 +93,7 @@ Les sections suivantes décrivent les nouvelles fonctionnalités expérimentales
 
 **Network Console est** le titre de travail d’une expérience pour effectuer des demandes de réseau synthétiques sur HTTP.  Vous pouvez utiliser l’expérience **console** réseau pour envoyer des demandes d’API web.  
 
-Après avoir activer l’expérience, assurez-vous de redémarrer DevTools.  Pour utiliser la **console réseau,** complétez les étapes suivantes.  
+Après avoir activer l’expérience, assurez-vous de redémarrer de DevTools.  Pour utiliser la **console réseau,** complétez les étapes suivantes.  
 
 1.  Ouvrez **le volet** Réseau.  
 1.  Recherchez la demande réseau que vous souhaitez modifier et renvoyer.  
@@ -111,24 +111,23 @@ Après avoir activer l’expérience, assurez-vous de redémarrer DevTools.  Pou
 
 **Source Order Viewer** est une expérience qui affiche l’ordre des éléments dans la source de la page web.  L’ordre d’affichage à l’écran peut différer de l’ordre de la source, ce qui peut dérouter les utilisateurs du lecteur d’écran et du clavier.  Utilisez l’expérience pour rechercher les différences entre l’ordre d’affichage à l’écran **Source Order Viewer** et l’ordre de la source.  
 
-Après avoir activer l’expérience, assurez-vous de redémarrer DevTools.  Pour utiliser **Source Order Viewer** , complétez les étapes suivantes.  
+Après avoir activer l’expérience, assurez-vous de redémarrer de DevTools.  Pour utiliser **Source Order Viewer** , complétez les étapes suivantes.  
 
 1.  Ouvrez **l’outil Éléments.**  
-1.  Ouvrez **le volet Accessibilité** dans le panneau de caisse \(bas\).  
+1.  À droite de l’onglet **Styles,** sélectionnez **l’onglet** Accessibilité.  
 1.  Sous la **Source Order Viewer** section, cochez **la case Afficher** la commande source.  
 1.  Mettez en surbrillez n’importe quel élément HTML pour afficher une superposition que l’ordre dans la source de la page web.  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
-   Dans le volet **Source Order Viewer** Accessibilité  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer) ::: in the Accessibility pane» lightbox=».. /media/experiments-source-order-viewer.msft.png»::: dans le volet **:::no-loc(Source Order Viewer** Accessibilité ****  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
 
 ### Enable Composited Layers in 3D View  
 
-Vous pouvez maintenant visualiser calques avec les index z et le modèle objet de document \(DOM\).  Cette fonctionnalité vous permet de déboguer sans changer de contexte aussi souvent.  Vous avez identifié que la réduction du basculement de contexte était un problème majeur.  Il n’est pas toujours évident de savoir comment le code que vous écrivez affecte votre application web.  Pour une expérience de débogage visuel complète, les couches composites et les couches composites 3D View sont désormais combinées.  
+Vous pouvez maintenant visualiser calques avec les index z et le modèle objet de document \(DOM\).  Cette fonctionnalité vous permet de déboguer sans changer de contexte aussi souvent.  Vous avez identifié que la réduction du basculement de contexte était un problème majeur.  Il n’est pas toujours évident de savoir comment le code que vous écrivez affecte votre application web.  Pour une expérience de débogage visuel complète, les couches composites et les couches 3D View composites sont désormais combinées.  
 
-Après avoir activer l’expérience, assurez-vous de redémarrer DevTools.  Pour utiliser **les couches composites,** complétez les étapes suivantes.  
+Après avoir activer l’expérience, assurez-vous de redémarrer de DevTools.  Pour utiliser **les couches composites,** complétez les étapes suivantes.  
 
 1.  Dans le caisse, choisissez **3D View** l’outil.  
 1.  Ouvrez **le volet Calques composites.**  
@@ -149,7 +148,7 @@ Vous pouvez désormais utiliser le nouvel éditeur de [polices][DevtoolsInspectS
 *   Convertir des unités  
 *   Générer un code CSS précis  
     
-Après avoir activer l’expérience, assurez-vous de redémarrer DevTools.  Pour utiliser le nouvel éditeur de **polices**visuel, complétez les étapes suivantes.  
+Après avoir activer l’expérience, assurez-vous de redémarrer de DevTools.  Pour utiliser le nouvel éditeur de **polices**visuel, complétez les étapes suivantes.  
 
 1.  Ouvrez **l’outil Éléments.**  
 1.  Ouvrez **le volet Styles.**  
@@ -165,7 +164,7 @@ Pour plus d’informations sur le nouvel éditeur de polices **visuel,** accéde
 
 ### Enable new CSS Flexbox debugging features  
 
-Cette fonctionnalité expérimentale fournit de nombreuses nouvelles visualisations pour vous aider à déboguer les dispositions flexbox CSS.  Pour afficher un aperçu des dernières fonctionnalités expérimentales, [activer cette expérience](#turn-on-experimental-features) et recharger DevTools.  
+Cette fonctionnalité expérimentale fournit de nombreuses nouvelles visualisations pour vous aider à déboguer les dispositions flexbox CSS.  Pour afficher un aperçu des dernières fonctionnalités expérimentales, [allumez cette expérience](#turn-on-experimental-features) et rechargez DevTools.  
 
 #### <a name="display-persistent-overlays-on-flexbox-layouts-with-the-inspect-tool"></a>Afficher des superpositions persistantes sur les dispositions Flexbox à l’aide de l’outil Inspect  
 
@@ -204,7 +203,7 @@ Pour configurer les options des superpositions persistantes pour les grilles CSS
 
 ### Enable + button tab menus to open more tools  
 
-Vous pouvez maintenant ouvrir d’autres outils à l’aide de la nouvelle icône **Plus d’outils** \( `+` \).  Une fois que vous avez turn on the experiment and reload DevTools, un signe plus \( \) s’affiche à droite du groupe d’onglets en haut de **Enable + button tab menus to open more tools** `+` DevTools.  Pour afficher la liste des autres outils que vous pouvez ajouter à la barre d’onglets, choisissez la nouvelle icône Outils plus **\(** `+` \).  
+Vous pouvez maintenant ouvrir d’autres outils à l’aide de la nouvelle icône **Plus d’outils** `+` \( \).  Une fois que vous avez turn on the experiment and reload DevTools, un signe plus \( \) s’affiche à droite du groupe d’onglets en haut de **Enable + button tab menus to open more tools** `+` DevTools.  Pour afficher la liste des autres outils que vous pouvez ajouter à la barre d’onglets, choisissez la nouvelle icône Outils plus **\(** `+` \).  
 
 :::image type="complex" source="../media/experiments-more-tools-button.msft.png" alt-text="Autres outils dans le volet supérieur" lightbox="../media/experiments-more-tools-button.msft.png":::
    **Autres outils** dans le volet supérieur
@@ -216,10 +215,10 @@ Vous pouvez maintenant ouvrir d’autres outils à l’aide de la nouvelle icôn
 
 Cette expérience remplace **l’outil Nouveautés** par le nouvel outil **Welcome.**  Il affiche une conception actualisée pour le contenu suivant.  
 
-*   Liens vers des documents de développeur  
-*   les dernières fonctionnalités  
+*   Liens vers des documents de développement  
+*   fonctionnalités les plus récentes  
 *   notes de publication  
-*   Option de contact de l Microsoft Edge devTools  
+*   Option pour contacter l’Microsoft Edge devTools  
     
 **L’outil** Welcome s’ouvre automatiquement après chaque mise à jour Microsoft Edge.  Pour empêcher l’affichage de l’outil **d’accueil** **** après chaque mise à jour, cochez la case en regard de l’onglet Ouvrir après chaque mise à jour sous le titre de **l’outil** d’accueil.  
 
@@ -259,9 +258,9 @@ Pour fournir des commentaires sur Microsoft Edge expériences DevTools ou sur to
 
 <!-- links -->  
 
-[Devtools3dViewIndex]: ../3d-view/index.md ":::no-loc(vue 3D) ::: | Documents Microsoft"  
+[Devtools3dViewIndex]: ../3d-view/index.md "3D View | Documents Microsoft"  
 [DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Documents Microsoft"  
-[DevtoolsCustomizeIndex]: ../customize/index.md "Personnaliser Microsoft Edge devTools | Documents Microsoft"  
+[DevtoolsCustomizeIndex]: ../customize/index.md "Personnalisez Microsoft Edge devTools | Documents Microsoft"  
 [DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Paramètres - Personnaliser Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Edit keyboard shortcuts for any action in the DevTools | Documents Microsoft"  
 [DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code "Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code | Documents Microsoft"  

@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 80b0e4368b1c8feaf28a58ac2e3bd9c1ea2f1f92
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+ms.openlocfilehash: 56ce6b1d8f1ad98eeb9c141c2e9b002e7679d7de
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483416"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597015"
 ---
 # <a name="use-the-console-to-interact-with-the-dom"></a>Utiliser la console pour interagir avec le DOM
 
@@ -62,12 +62,12 @@ Pour obtenir une référence directe à l’élément à manipuler, effectuer le
 
 1.  Utilisez **l’outil Inspect** pour choisir l’élément.  
 
-    :::image type="complex" source="../media/console-dom-use-inspector-to-get-element.msft.png" alt-text="Pour choisir un élément, utilisez l’outil Inspecteur" lightbox="../media/console-dom-use-inspector-to-get-element.msft.png":::
-        Pour choisir un élément, utilisez **l’outil Inspecteur**  
+    :::image type="complex" source="../media/console-dom-use-inspector-to-get-element.msft.png" alt-text="Pour choisir un élément, utilisez l’outil Inspect" lightbox="../media/console-dom-use-inspector-to-get-element.msft.png":::
+        Pour choisir un élément, utilisez **l’outil Inspect**  
     :::image-end:::  
     
 1.  Choisissez-le et DevTools passe à **l’outil Elements.**  
-1.  Choisissez le `...` menu en regard de l’élément dans l’affichage DOM.  
+1.  Choisissez le `...` menu en face de l’élément dans l’arborescence DOM.  
     
     :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="L’élément choisi s’affiche dans l’arborescence DOM de l’outil Elements, choisissez le menu de dépassement pour obtenir d’autres fonctionnalités" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
         L’élément choisi s’affiche dans l’arborescence DOM de l’outil **Elements,** choisissez le menu de dépassement pour obtenir d’autres fonctionnalités  
@@ -75,8 +75,8 @@ Pour obtenir une référence directe à l’élément à manipuler, effectuer le
     
 1.  Ouvrez le menu contextuel et choisissez `Copy`  >  `Copy JS Path` .  
     
-    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="Copier le chemin d’accès JavaScript à partir d’un élément dans l’affichage DOM de l’outil Elements" lightbox="../media/console-dom-copy-JS-path.msft.png":::
-        Copier le chemin d’accès JavaScript à partir d’un élément dans l’affichage DOM de **l’outil Elements**  
+    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="Copier le chemin d’accès JavaScript à partir d’un élément dans l’arborescence DOM de l’outil Elements" lightbox="../media/console-dom-copy-JS-path.msft.png":::
+        Copier le chemin d’accès JavaScript à partir d’un élément dans l’arborescence DOM de **l’outil Elements**  
     :::image-end:::  
     
 1.  Revenir à la **console et** coller la commande.  
@@ -98,7 +98,7 @@ De nombreuses méthodes et raccourcis pratiques sont disponibles en tant [qu’u
 La console dispose de puissances spéciales et vous vous en souvenez `$` peut-être à partir de jQuery. ****
 
 *   `$_` stocke le résultat de la dernière commande.  Ainsi, si vous `2 + 2` tapez et sélectionnez, puis `Enter` `$_` tapez , la **console** vous `4` affiche.
-*   `$0` est une pile des derniers éléments `$4` inspectés est toujours la plus `$0` nouvelle.  Par exemple, dans l’exemple précédent, vous avez simplement choisi l’élément dans l’outil **Inspecteur** et le type `$0.textContent = "My Playground"` pour obtenir le même effet.
+*   `$0` est une pile des derniers éléments `$4` inspectés est toujours la plus `$0` nouvelle.  Ainsi, dans l’exemple précédent, vous avez simplement choisi l’élément dans l’outil **Inspect** et le type `$0.textContent = "My Playground"` pour obtenir le même effet.
 *   `$x()` vous permet de choisir des éléments DOM à l’aide de XPATH.
 *   `$()` et `$$()` sont des versions plus courtes de for et `document.querySelector()` `document.querySelectorAll()` .  
     
@@ -175,7 +175,7 @@ console.table($$('img:not([src^=data])'), ['src','alt'])
 
 Prêt pour un exemple encore plus complexe ?  Les pages web HTML générées à partir de markdown comme cet article ont des valeurs d’ID automatiques pour chaque titre afin de vous permettre d’établir un lien profond vers cette section.  Par exemple, une `# New features` modification apportée `<h1 id="new-features">New features</h1>` à .  
 
-Pour obtenir la liste de tous les en-tête automatiques à copier-coller, complétez les actions suivantes.  
+Pour lister tous les en-tête automatiques à copier et coller, complétez les actions suivantes.  
 
 1.  Ouvrez la **console.**  
 1.  Tapez ou copiez-collez l’extrait de code suivant.  
@@ -225,7 +225,7 @@ Pour lister tous les auditeurs d’événements affectés au premier formulaire 
     Obtenir tous les écouteurs d’événements pour le premier formulaire dans la page web  
 :::image-end:::  
 
-Lorsque vous surveillez, vous recevez une notification dans la **console** chaque fois qu’un élément change aux éléments spécifiés.  Vous définissez les événements que vous souhaitez écouter en tant que deuxième paramètre.  Il est important que vous définissiez les événements que vous souhaitez surveiller, sinon tout événement qui se produit sur l’élément est signalé.
+Lorsque vous surveillez, vous recevez une notification dans la **console** chaque fois que des modifications sont apportées aux éléments spécifiés.  Vous définissez les événements que vous souhaitez écouter en tant que deuxième paramètre.  Il est important que vous définissiez les événements que vous souhaitez surveiller, sinon tout événement qui se produit sur l’élément est signalé.
 
 Pour obtenir une notification dans la **console** chaque fois que vous faites défiler, resizez la fenêtre ou lorsque l’utilisateur tape du texte dans le formulaire de recherche, complétez les actions suivantes.  
 

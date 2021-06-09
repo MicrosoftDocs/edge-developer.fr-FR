@@ -3,20 +3,24 @@ description: Forcez Microsoft Edge DevTools en mode Aperçu du jeu de couleurs.
 title: Forcer Microsoft Edge DevTools en mode Aperçu du jeu de couleurs (CSS Prefers Color Scheme)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 1cdc9601e9e6fea1f6921c6cc40a1ed8232a0da8
-ms.sourcegitcommit: 16e2f7232196a57a70b979bbf8b663774b7ddc20
+ms.openlocfilehash: dc2911ce7a7fcbeef7763099541822b5cd6cf053
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "11519148"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597065"
 ---
 # <a name="dark-or-light-color-scheme-simulation"></a>Simulation de jeu de couleurs foncées ou claires  
 
-Les systèmes d’exploitation peuvent afficher n’importe quelle application dans des couleurs plus foncées ou plus claires.  Le fait de disposer d’un produit web avec un thème clair dans un système d’exploitation en mode sombre constitue un problème d’accessibilité pour certains utilisateurs.  Sur le web, vous pouvez utiliser la requête multimédia CSS [prefers-color-scheme][MDNPrefersColorScheme] pour détecter si les utilisateurs préfèrent afficher votre produit dans un schéma de couleurs plus sombre ou plus claire.  Utilisez [Microsoft Edge DevTools][DevtoolsIndex] pour simuler un changement du mode sombre au mode clair sans avoir à modifier l’intégralité du système d’exploitation.  
+De nombreux systèmes d’exploitation ont un moyen d’afficher n’importe quelle application dans des couleurs plus foncées ou plus claires.  Le fait de disposer d’un produit web avec un thème clair dans un système d’exploitation en mode sombre constitue un problème d’accessibilité pour certains utilisateurs.  
+
+Pour une page web, vous pouvez utiliser la requête multimédia CSS [prefers-color-scheme][MDNPrefersColorScheme] pour détecter si l’utilisateur préfère afficher votre produit dans un schéma de couleurs plus sombre ou plus clair.  Ensuite, pour tester le résultat, utilisez [Microsoft Edge DevTools][DevtoolsIndex] pour simuler un changement de mode sombre en mode clair, sans avoir à modifier le paramètre pour l’ensemble de votre système d’exploitation.  
+
+**Pour émuler un thème foncé ou clair :**
 
 1.  Ouvrez **le menu Commande.**  
     1.  Sélectionnez `Ctrl` + `Shift` + `P` \(Windows/Linux\) ou `Command` + `Shift` + `P` \(macOS\).  
@@ -40,12 +44,17 @@ Les systèmes d’exploitation peuvent afficher n’importe quelle application d
        Mode lumière simulé à l’intérieur Microsoft Edge DevTools  
     :::image-end:::  
     
-    Affichez et modifiez votre CSS comme n’importe quelle autre page web.  Pour plus d’informations, [accédez à Prise en main avec l’affichage et la modification de CSS][DevtoolsCssIndex].  
+    Affichez et modifiez votre CSS comme n’importe quelle autre page web.  Pour plus d’informations, [accédez à Commencer à afficher et modifier les CSS.][DevtoolsCssIndex]  
+
+
+## <a name="see-also"></a>Articles associés
+
+* [Vérifier les problèmes de contraste avec le thème foncé et le thème clair](test-dark-mode.md)
+
 
 <!-- links -->  
-
 [DevtoolsIndex]: ../index.md "Microsoft Edge outils de développement (Chromium) | Documents Microsoft"  
 [DevtoolsCustomizeDarkTheme]: ../customize/dark-theme.md "Activer le thème foncé dans Microsoft Edge devTools | Documents Microsoft"
-[DevtoolsCssIndex]: ../css/index.md "Prise en main Avec l’affichage et la modification des | Documents Microsoft"  
-
+[DevtoolsCssIndex]: ../css/index.md "Commencer à afficher et modifier les | Documents Microsoft"  
+<!-- external links -->
 [MDNPrefersColorScheme]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme "prefers-color-scheme | MDN"  

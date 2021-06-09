@@ -3,16 +3,16 @@ description: Guide sur la navigation dans Microsoft Edge DevTools à l’aide d�
 title: Naviguer Microsoft Edge DevTools avec la technologie d’assistance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: cf2742dfb08ee482b26fe43417b7454e5b6ff809
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 2cb57a8ea1ea34506b4698d80ae0981d8716f3d2
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564580"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597098"
 ---
 <!-- Copyright Rob Dodson 
 
@@ -29,67 +29,68 @@ ms.locfileid: "11564580"
    limitations under the License.  -->
 # <a name="navigate-microsoft-edge-devtools-with-assistive-technology"></a>Naviguer Microsoft Edge DevTools avec la technologie d’assistance  
 
-L’article suivant vise à aider les utilisateurs qui s’appuient principalement sur des technologies d’assistance telles que les lecteurs d’écran à accéder Microsoft Edge [devTools.][MicrosoftEdgeDevtoolsMain]  [Microsoft Edge DevTools est][MicrosoftEdgeDevtoolsMain] une suite d’outils de développement web intégrée au navigateur Microsoft Edge web.  Si vous recherchez des fonctionnalités DevTools liées à l’amélioration de l’accessibilité d’une page web, accédez à La Référence [d’accessibilité.][DevtoolsAccessibilityReference]  
+Cet article aide les utilisateurs qui s’appuient principalement sur des technologies d’assistance telles que les lecteurs [d’écran Microsoft Edge devTools][MicrosoftEdgeDevtoolsMain].  DevTools est une suite d’outils de développement web intégrés au navigateur Microsoft Edge web.  
 
-L’accessibilité de DevTools est un travail en cours.  Certains panneaux et onglets fonctionnent mieux avec la technologie d’assistance que d’autres.  Ce guide vous guide à travers les panneaux qui sont les plus accessibles et met en évidence des problèmes spécifiques que vous pouvez rencontrer en cours de route.  
+Pour les fonctionnalités DevTools relatives à l’amélioration de l’accessibilité d’une page web, voir fonctionnalités de test de l’accessibilité dans [DevTools][DevtoolsAccessibilityReference] et Vue d’ensemble des tests d’accessibilité à l’aide [de DevTools](accessibility-testing-in-devtools.md).
+
+L’accessibilité de DevTools est un travail en cours.  Certains outils et onglets fonctionnent mieux avec la technologie d’assistance que d’autres.  Ce guide vous guide à travers les outils et les onglets qui sont les plus accessibles, et met en évidence des problèmes spécifiques que vous pouvez rencontrer en cours de route.  
 
 ## <a name="overview"></a>Vue d'ensemble  
 
-Avant de commencer, il est utile d’avoir un modèle de structure de l’interface utilisateur DevTools.  DevTools est divisé en une série de panneaux organisés en une [liste de tabulations ARIA.][W3CWaiAriaTablist]  
+DevTools est divisé en une série d’outils.  (Dans le **menu Commande,** les outils sont appelés _panneaux.)_  Les outils sont organisés en une liste d’onglets [ARIA][W3CWaiAriaTablist] dans la barre d’outils principale et dans la barre d’outils de caisse.
 
-Par exemple :  
+Voici quelques exemples d’outils :
 
 *   **L’outil Elements** vous permet [d’afficher et de modifier les nodes DOM][DevtoolsDomIndexNavigateDomTreeKeyboard] ou [CSS][DevtoolsCssIndex].  
-*   Le [panneau console vous][DevtoolsConsoleIndex] permet de lire les journaux JavaScript et d’éditer des objets en direct.  
+*   **L’outil Console** vous permet de lire les journaux JavaScript et d’éditer des objets en direct.  Pour plus d’informations, [accédez à Utiliser la console.][DevtoolsConsoleIndex]
 
-Dans la zone de contenu de chaque panneau se trouve un certain nombre d’outils différents, souvent appelés onglets ou volets dans la documentation.  
-Par exemple, l’outil **Elements** contient des onglets supplémentaires pour inspecter les écouteurs d’événements, l’arborescence d’accessibilité, et bien plus encore.  La distinction entre les onglets et les volets est quelque peu arbitraire.  La seule raison pour laquelle vous pouvez passer en revue un terme ou l’autre est de maintenir la cohérence avec le reste de la documentation officielle de DevTools.  
+Chaque outil présente un ou plusieurs ensembles d’onglets.  Par exemple, **l’outil Elements** contient un ensemble d’onglets, notamment **Styles,** **Écouteurs**d’événements et **Accessibilité.**
 
 ## <a name="keyboard-shortcuts"></a>Raccourcis clavier  
 
-[DevTools Keyboard Shortcuts reference][DevtoolsShortcuts] est une feuille de calcul utile.  N’oubliez pas de le mettre en signet et de vous y référer lorsque vous explorez les différents panneaux.  
+[DevTools Keyboard Shortcuts reference][DevtoolsShortcuts] est une feuille de astuce utile.  N’oubliez pas de le mettre en signet et de vous y référer lorsque vous explorez les différents outils.
 
 ## <a name="open-devtools"></a>Ouvrir DevTools  
 
 Pour commencer, accédez à [Open Microsoft Edge DevTools][DevtoolsOpen].  Il existe plusieurs façons d’ouvrir DevTools, par le biais de raccourcis clavier ou d’éléments de menu.  
 
-## <a name="navigate-between-panels"></a>Naviguer entre les panneaux  
+## <a name="navigate-between-tools"></a>Naviguer entre les outils
 
 ### <a name="navigate-by-keyboard"></a>Naviguer à l’aide du clavier  
 
-*   Avec DevTools ouvert, sélectionnez `Control` + `]` \(Windows, Linux\) ou `Command` + `]` \(macOS\) pour centrer le panneau suivant.  
-*   Sélectionnez `Control` + `[` \(Windows, Linux\) ou `Command` + `[` \(macOS\) pour centrer le panneau précédent.  
-*   Il est également possible de déplacer le focus dans la liste d’onglets ARIA d’un panneau et d’utiliser les touches de direction pour modifier les panneaux, bien qu’il soit plus rapide d’utiliser les `Shift` + `Tab` raccourcis mentionnés précédemment. [][W3CWaiAriaTablist]  
+*   Avec DevTools ouvert, sélectionnez `Control` + `]` \(Windows, Linux\) ou `Command` + \(macOS\) pour déplacer le focus vers l’outil suivant dans la `]` barre d’outils principale.
+*   Sélectionnez `Control` + `[` \(Windows, Linux\) ou `Command` + \(macOS\) pour déplacer le focus vers l’outil précédent de la `[` barre d’outils principale.
+*   Sélectionnez ou répétez cette sélection jusqu’à ce que le focus se déplace vers les onglets de la barre d’outils principale ou de la barre d’outils de caisse, puis utilisez les touches de direction pour vous déplacer `Tab` `Shift` + `Tab` parmi les outils.
 
 **Problèmes connus**  
 
-*   Certains panneaux, tels **** que les outils **console** et performance, peuvent déplacer le focus dans la zone de contenu du panneau dès que chaque panneau est activé.  Cela peut rendre difficile la navigation par les touches de direction.  
-*   Le nom du panneau sélectionné est annoncé, mais uniquement après avoir lu le contenu sélectionné dans le panneau.  Cela peut être très facile à manquer.  
+*   Certains outils, tels **** que les outils **Console** et Performances, peuvent déplacer le focus dans la zone de contenu de l’outil dès que l’outil est sélectionné.  Cela peut rendre difficile la navigation par les touches de direction.  
+*   Le nom de l’outil sélectionné est annoncé, mais seulement après avoir annoncé le contenu sélectionné dans l’outil.  Cette séquence d’annonces peut faciliter l’accès au nom de l’outil.
 
 ### <a name="navigate-by-command-menu"></a>Naviguer par menu de commande  
 
-Pour mettre au point un panneau spécifique, utilisez [le menu Commande][DevtoolsCommandMenuIndex]:  
+Pour sélectionner un outil spécifique, utilisez le [menu Commande.][DevtoolsCommandMenuIndex]  Dans le menu Commande, un outil est appelé _panneau_.
 
 1.  Avec DevTools ouvert, sélectionnez `Control` + `Shift` + `P` \(Windows, Linux\) ou `Command` + `Shift` + `P` \(macOS\) **** pour ouvrir le menu commande.  
-    Le **menu Commande est** une zone de liste déroulante de la recherche de recherche automatique.  
-1.  Tapez le nom du panneau que vous souhaitez ouvrir, puis utilisez le clavier `Down Arrow` pour accéder à l’option correcte.  
+    Le **menu Commande** est une zone de liste déroulante de recherche automatique à recherche floue.  
+1.  Tapez le nom d’un panneau (outil), puis utilisez le clavier `Down Arrow` pour accéder à l’option correcte.  
 1.  Sélectionnez `Enter` pour exécuter une commande.  
 
-Effectuer les actions suivantes pour ouvrir **l’outil Éléments.**  
+Pour ouvrir **l’outil Éléments** :
 
 1.  Ouvrez **le menu Commande.**  
 1.  Tapez `E` ensuite `L` .  **L’option > afficher les éléments** est sélectionnée.  
-1.  Sélectionnez `Enter` pour exécuter la commande qui ouvre le panneau.  
+1.  Sélectionnez `Enter` .  
 
-Ouvrez un panneau de cette façon pour diriger le focus vers le contenu du panneau.  Dans le cas de l’outil **Elements,** le focus se déplace dans l’arborescence **DOM**.  
+L’ouverture d’un outil de cette façon place le focus dans la zone de contenu de l’outil.  Dans le cas de l’outil **Elements,** le focus se déplace dans l’arborescence **DOM**.
 
-## <a name="elements-panel"></a>Panneau Éléments  
+## <a name="elements-tool"></a>Outil Éléments
 
 ### <a name="inspect-an-element-on-the-page"></a>Inspecter un élément sur la page  
 
 1.  Accédez à l’élément que vous souhaitez inspecter à l’aide du curseur dans le lecteur d’écran.  
-1.  Simulez un clic droit à l’aide d’une souris sur l’élément pour ouvrir le menu contextif.  
-1.  Choisissez **l’option Inspecter.**  Cela [ouvre le panneau Éléments et concentre l’élément dans l’arborescence DOM][DevtoolsDomIndexViewDomNodes].  
+1.  Simulez un clic droit sur l’élément, pour ouvrir le menu contextif.  
+1.  Choisissez **l’option Inspecter.**  [ouvre l’outil Elements et concentre l’élément dans l’arborescence DOM][DevtoolsDomIndexViewDomNodes].  
 
 **L’arborescence DOM** est disposé en tant [qu’arborescence ARIA.][W3CWaiAriaTree]  Pour obtenir un exemple, accédez à [Naviguer dans l’arborescence **DOM** avec un clavier][DevtoolsDomIndexNavigateDomTreeKeyboard].  
 
@@ -111,7 +112,7 @@ Ouvrez un panneau de cette façon pour diriger le focus vers le contenu du panne
 
 **Problèmes connus**  
 
-*   Lorsque vous tapez dans l’entrée de texte, vous n’obtenez aucun commentaire.  Si vous faites une faute de frappe et que vous utilisez les touches de direction pour explorer votre entrée, vous n’obtenez aucun commentaire.  Le moyen le plus simple de vérifier votre travail consiste à accepter la modification, puis à écouter l’intégralité de l’élément à annoncer.  
+*   Lorsque vous tapez dans la saisie de texte, vous n’obtenez aucun commentaire.  Si vous faites une faute de frappe et que vous utilisez les touches de direction pour explorer votre entrée, vous n’obtenez aucun commentaire.  Le moyen le plus simple de vérifier votre travail consiste à accepter la modification, puis à écouter l’intégralité de l’élément à annoncer.  
 
 ### <a name="edit-the-html-of-an-element-in-the-dom-tree"></a>Modifier le code HTML d’un élément dans l’arborescence DOM  
 
@@ -121,12 +122,12 @@ Ouvrez un panneau de cette façon pour diriger le focus vers le contenu du panne
 
 Par exemple, lorsque vous tapez et sélectionnez `h3` `Control` + `Enter` \(Windows, Linux\) ou `Command` + `Enter` \(macOS\), les balises de début et de fin de `h3` l’élément changent.  
 
-## <a name="elements-tool-panels"></a>Panneaux d’outils Éléments  
+## <a name="tabs-in-the-elements-tool"></a>Onglets dans l’outil Éléments
 
 **L’outil Elements** contient des onglets supplémentaires permettant d’inspecter des éléments tels que le CSS appliqué à un élément ou l’endroit approprié dans l’arborescence d’accessibilité.  
 
-*   Avec le focus sur un nœud dans l’arborescence **DOM,** sélectionnez jusqu’à ce que vous entendiez que le volet `Tab` **Styles** est sélectionné.  
-*   Utilisez `Right Arrow` l’onglet pour explorer les autres onglets disponibles.  
+*   Avec le focus sur un nœud dans l’arborescence **DOM,** sélectionnez jusqu’à ce que vous entendiez que l’onglet `Tab` **Styles** est sélectionné.  
+*   Utilisez `Right Arrow` l’onglet pour explorer les autres onglets disponibles.
 
 **L’arborescence DOM** transforme les éléments avec des attributs en liens sélectionnables, de sorte que vous devrez peut-être sélectionner plusieurs fois pour accéder `href` `Tab` au volet **Styles.**  
 
@@ -136,9 +137,9 @@ Les **** **onglets Points d’arrêt et Propriétés DOM** ne sont pas accessibl
 
 ### <a name="styles-pane"></a>Volet Styles  
 
-Dans le volet **Styles,** recherchez des contrôles pour le filtrage des styles, le basculement des états d’élément \(tels que [:active][MDNActive] et [:focus][MDNFocus]\), le basculement des classes et l’ajout de nouvelles classes.  Il existe également un outil d’inspection de style puissant pour explorer et modifier les styles actuellement appliqués à l’élément qui est en focus dans l’arborescence **DOM**.  
+Dans le volet **Styles,** recherchez les contrôles de filtrage des styles, les états d’élément bascule \(tels que [:active][MDNActive] et [:focus][MDNFocus]\), le basculement de classes et l’ajout de nouvelles classes.  Il existe également un outil d’inspection de style puissant pour explorer et modifier les styles actuellement appliqués à l’élément qui est en focus dans l’arborescence **DOM**.  
 
-Le concept clé à comprendre sur le volet **Styles** est qu’il affiche uniquement les styles pour le nœud actuellement sélectionné dans l’arborescence **DOM**.  Par exemple, supposons que vous avez terminé d’inspecter les styles d’un nœud et que vous souhaitez maintenant examiner les `<header>` styles `<footer>` d’un nœud.  Pour ce faire, vous devez d’abord sélectionner le `<footer>` nœud dans l’arborescence **DOM.**  Vous trouverez peut-être [](#inspect-an-element-on-the-page) plus rapide d’utiliser le flux de travail Inspect pour inspecter un nœud qui se trouve à proximité générale du nœud \(par exemple, un lien dans le pied de groupe\), qui se concentre sur l’arborescence `footer` **DOM,** puis utilisez votre clavier pour accéder au nœud exact qui vous intéresse.  
+Le concept clé à comprendre sur le volet **Styles** est qu’il affiche uniquement les styles pour le nœud actuellement sélectionné dans l’arborescence **DOM**.  Par exemple, supposons que vous avez terminé d’inspecter les styles d’un nœud et que vous souhaitez maintenant examiner les `<header>` styles `<footer>` d’un nœud.  Pour ce faire, vous devez d’abord sélectionner le `<footer>` nœud dans l’arborescence **DOM**.  Vous trouverez peut-être [](#inspect-an-element-on-the-page) plus rapide d’utiliser le flux de travail Inspect pour inspecter un nœud qui se trouve à proximité générale du nœud \(par exemple, un lien dans le pied de groupe\), qui se concentre sur l’arborescence `footer` **DOM,** puis utilisez votre clavier pour accéder au nœud exact qui vous intéresse.  
 
 #### <a name="navigate-the-styles-pane"></a>Naviguer dans le volet Styles  
 
@@ -169,20 +170,20 @@ Pour faire bascule l’état d’un élément, tel que `:active` : `:focus`
 
 #### <a name="add-an-existing-class"></a>Ajouter une classe existante  
 
-Le bouton **Classes** d’élément est adjacent au **bouton d’état de** l’élément bascule.  Pour déplacer la sélection sur celui-ci, `Tab` sélectionnez et sélectionnez `Enter` .  Le focus se déplace dans un champ de texte d’édition étiqueté **Ajouter une nouvelle classe.**  
+Le bouton **Classes** d’élément est adjacent au **bouton d’état de** l’élément bascule.  Pour y déplacer la sélection, `Tab` sélectionnez, puis sélectionnez `Enter` .  Le focus se déplace dans un champ de texte d’édition étiqueté **Ajouter une nouvelle classe.**  
 
-Le **bouton Classes d’élément** est principalement utilisé pour ajouter des classes existantes à un élément.  Par exemple, si votre feuille de style contenait une classe d’aide nommée, vous pouvez sélectionner à l’intérieur du champ modifier le texte pour afficher une liste de suggestions de classes et utiliser la pour rechercher `.clearfix` `.` la `Down Arrow` `.clearfix` suggestion.  Ou tapez vous-même le nom de la classe et `Enter` sélectionnez-le pour l’appliquer.  
+Le **bouton Classes d’élément** est principalement utilisé pour ajouter des classes existantes à un élément.  Par exemple, si votre feuille de style contenait une classe d’aide nommée , vous pouvez sélectionner à l’intérieur du champ modifier le texte pour afficher une liste de suggestions de classes et utiliser la pour rechercher la `.clearfix` `.` `Down Arrow` `.clearfix` suggestion.  Ou tapez vous-même le nom de la classe et `Enter` sélectionnez-le pour l’appliquer.  
 
 #### <a name="add-a-new-style-rule"></a>Ajouter une nouvelle règle de style  
 
-Adjacent au bouton **Classes d’éléments** se trouve le **bouton Nouvelle règle de style.**  Pour déplacer la sélection sur celui-ci, `Tab` sélectionnez et sélectionnez `Enter` .  Le focus se déplace dans un champ de texte modifiable à l’intérieur de l’inspecteur de style.  Le contenu de texte initial du champ est le nom de balise de l’élément sélectionné dans l’arborescence **DOM**.  
-Vous pouvez taper le nom de classe de votre choix dans ce champ, puis lui attribuer des `Tab` propriétés CSS.  
+Adjacent au bouton **Classes d’éléments** se trouve le **bouton Nouvelle règle de style.**  Pour y déplacer la sélection, `Tab` sélectionnez, puis sélectionnez `Enter` .  Le focus se déplace dans un champ de texte modifiable à l’intérieur de l’inspecteur de style.  Le contenu de texte initial du champ est le nom de balise de l’élément sélectionné dans l’arborescence **DOM**.  
+Vous pouvez taper n’importe quel nom de classe de votre choix dans ce champ, puis lui attribuer des `Tab` propriétés CSS.  
 
 ### <a name="computed-tab"></a>Onglet calculé  
 
 Avec le focus sur **l’onglet Calculé,** sélectionnez pour déplacer le focus à `Tab` l’intérieur et explorez le contenu.  Dans **l’onglet Calculé,** il existe des contrôles pour l’exploration des propriétés CSS qui sont réellement appliquées à un élément par ordre de spécificité.  
 
-<!--todo: add computed tab section when available  -->  
+<!--todo: add Computed tab section when available  -->  
 
 #### <a name="explore-all-computed-styles"></a>Explorer tous les styles calculés  
 
@@ -194,15 +195,17 @@ Sélectionnez `Tab` jusqu’à atteindre la collection de styles calculés.  Cel
 
 ### <a name="event-listeners-tab"></a>Onglet Écouteurs d’événements  
 
-À partir de **l’outil Elements,** vous pouvez inspecter les écouteurs d’événements appliqués à un élément à l’aide de l’onglet **Écouteurs d’événements.**  Avec le focus sur le **panneau Styles,** sélectionnez le panneau Pour accéder au panneau Écouteurs `Right Arrow` **d’événements.**  
+Pour inspecter les écouteurs d’événements appliqués à un **** élément, sélectionnez l’outil **Éléments,** puis sélectionnez l’onglet Écouteurs d’événements (regroupés avec l’onglet **Styles).**
 
 #### <a name="explore-event-listeners"></a>Explorer les écouteurs d’événements  
 
-Les écouteurs d’événements sont présentés comme [une arborescence ARIA.][W3CWaiAriaTree]  Vous pouvez utiliser les touches de direction pour les parcourir.  Un lecteur d’écran annonce le nom de l’objet DOM à laquelle l’écoute d’événements est joint, ainsi que le nom de fichier dans lequel l’écoute d’événements est défini et le numéro de ligne.  
+Les écouteurs d’événements sont présentés comme [une arborescence ARIA.][W3CWaiAriaTree]  Vous pouvez utiliser les touches de direction pour les parcourir.  Un lecteur d’écran annonce le nom de l’objet DOM à laquelle l’écoute d’événements est joint, ainsi que le nom de fichier où l’écoute d’événements est défini et le numéro de ligne.  
 
-### <a name="accessibility-pane"></a>Volet Accessibilité  
+### <a name="accessibility-tab"></a>Onglet Accessibilité
 
-Avec le focus sur le volet **Accessibilité,** sélectionnez pour déplacer le focus à l’intérieur `Tab` et explorez le contenu.  Dans le [volet Accessibilité,][DevtoolsAccessibilityReference] il existe des contrôles pour explorer l’arborescence d’accessibilité, les attributs ARIA appliqués à un élément et les propriétés d’accessibilité calculées.  
+Sélectionnez `Tab` la clé à **** déplacer dans l’onglet Accessibilité de **l’outil Éléments.**
+
+**L’onglet Accessibilité** se trouve près de **l’onglet Styles.** Sous l’onglet Accessibilité, il existe des contrôles pour explorer l’arborescence d’accessibilité, les attributs ARIA appliqués à un élément et les propriétés d’accessibilité calculées.  Pour plus d’informations, accédez à [Tester l’accessibilité à l’aide de l’onglet Accessibilité.][DevtoolsAccessibilityTab]
 
 #### <a name="accessibility-tree"></a>Arborescence d’accessibilité  
 
@@ -210,39 +213,38 @@ Avec le focus sur le volet **Accessibilité,** sélectionnez pour déplacer le f
 
 **Problèmes connus**  
 
-*   Le type d’arborescence **** [ARIA][W3CWaiAriaTree] utilisé par le volet Accessibilité peut ne pas être correctement exposé dans Microsoft Edge pour les lecteurs d’écran macOS tels que VoiceOver.  [S’abonner Chromium problème #868480][ChromiumIssues868480] être informé de la progression de ce problème.  
-*   Chacune des **** **sections Attributs ARIA** et Propriétés calculées est marquée comme une arborescence [ARIA,][W3CWaiAriaTree]mais chacune n’a pas de gestion du focus actuellement et n’est pas opérable au clavier.  
+*   Le type d’arborescence **** [ARIA][W3CWaiAriaTree] utilisé par l’onglet Accessibilité peut ne pas être correctement exposé dans Microsoft Edge pour les lecteurs d’écran macOS tels que VoiceOver.  [S’abonner Chromium problème #868480][ChromiumIssues868480] être informé de la progression de ce problème.  
+*   Chacune des **** **sections Attributs ARIA** et propriétés calculées est marquée comme une arborescence [ARIA,][W3CWaiAriaTree]mais elle ne dispose pas actuellement de la gestion du focus et n’est pas particulièrement sensible au clavier.  
 
-## <a name="audits-panel"></a>Panneau Audits  
+## <a name="lighthouse-tool"></a>Outil De lumière
 
-**L’outil Audits** doit exécuter une série de tests sur un site pour vérifier les problèmes courants liés aux performances, à l’accessibilité, au seO et à un certain nombre d’autres catégories.  
+**Ce dernier** exécute une série de tests sur un site pour vérifier les problèmes courants liés aux performances, à l’accessibilité, au seO et à un certain nombre d’autres catégories.  
 
-### <a name="configure-and-run-an-audit"></a>Configurer et exécuter un audit  
+### <a name="configure-and-generate-a-report"></a>Configurer et générer un rapport
 
-1.  Lorsque **l’outil Audits** est ouvert pour la première fois, le focus est placé sur le bouton Exécuter **l’audit** à la fin du formulaire.  Par défaut, le formulaire est configuré pour exécuter des audits pour chaque catégorie à l’aide de l’émulation mobile sur une connexion 3G simulée.  
-1.  Utilisez `Shift` + `Tab` ou naviguez vers l’arrière en mode Parcourir pour modifier les paramètres d’audit.  
-1.  Lorsque vous êtes prêt à exécuter l’audit, revenir au bouton **Exécuter l’audit** et sélectionnez `Enter` .  
+1.  Lorsque **l’outil Îles** est ouvert pour la première fois dans DevTools, le focus est placé sur le **bouton Générer un** rapport.  Par défaut, le formulaire est configuré pour exécuter des rapports pour chaque catégorie à l’aide de l’émulation mobile sur une connexion 3G simulée.  
+1.  Pour modifier les paramètres du rapport, utilisez cette fonction pour mettre le focus sur les paramètres de l’état ou revenir `Shift` + `Tab` en mode Parcourir. ****  
+1.  Lorsque vous êtes prêt à exécuter le rapport, revenir au bouton **Générer** le rapport et sélectionnez `Enter` .  
 1.  Le focus se déplace dans une fenêtre modale avec un **bouton Annuler** qui vous permet de quitter l’audit.  Vous entendez peut-être une série d’écouteurs lorsque l’audit s’exécute et actualise la page plusieurs fois.  
 
 **Problèmes connus**  
 
 *   Les différentes sections du formulaire de configuration ne sont actuellement pas marquées avec un `fieldset` élément.  Il peut être plus facile de les parcourir en mode Parcourir pour déterminer quels contrôles sont associés à chaque section.  
-*   Il n’existe aucune annonce d’écouteur ou de région en direct lorsque l’audit est terminé.  En règle générale, la navigation vers les résultats prend environ 30 secondes.  L’utilisation du mode Parcourir peut être le moyen le plus simple d’atteindre les résultats.  
+*   Il n’existe aucune annonce d’écouteur ou de région en direct lorsque l’audit est terminé.  En règle générale, l’audit prend environ 30 secondes, après quoi vous devriez être en mesure d’accéder aux résultats.  L’utilisation du mode Parcourir peut être le moyen le plus simple d’atteindre les résultats.  
 
-### <a name="navigate-the-audit-report"></a>Parcourir le rapport d’audit  
+### <a name="navigate-the-lighthouse-report"></a>Naviguer dans le rapport Dente  
 
-Le rapport d’audit est organisé en sections qui correspondent à chacune des catégories d’audit.  Le rapport s’ouvre avec une liste de scores pour chaque catégorie.  Ces scores sont également des liens qui peuvent être utilisés pour passer aux sections pertinentes.  Chaque section contient des éléments ex expandables, qui contiennent des informations `details` relatives aux audits réussis ou ayant échoué.  Par défaut, seuls les audits défaillants sont affichés.  Chaque section se termine par un élément final `details` qui contient tous les audits passés.  
+Le rapport de Laser est organisé en sections qui correspondent à chacune des catégories d’audit.  Le rapport s’ouvre avec une liste de scores pour chaque catégorie.  Ces scores sont également des liens que vous pouvez utiliser pour passer aux sections pertinentes.  Chaque section contient des éléments ex expandables, qui contiennent des informations `details` relatives aux audits réussis ou ayant échoué.  Par défaut, seuls les audits défaillants sont affichés.  Chaque section se termine par un élément final `details` qui contient tous les audits passés.  
 
-Pour exécuter un nouvel audit, quittez le rapport et recherchez le bouton Effectuer `Shift` + `Tab` **un audit.**  
+Pour exécuter un nouvel audit, quittez le rapport `Shift` + `Tab` et sélectionnez le bouton Générer **le** rapport.  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
-
-[DevtoolsAccessibilityReference]: ./reference.md "Référence d’accessibilité | Documents Microsoft"  
-[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "Volet Accessibilité : référence sur l’accessibilité | Documents Microsoft"  
+[DevtoolsAccessibilityReference]: reference.md "Fonctionnalités de test de l’accessibilité dans DevTools | Documents Microsoft"  
+[DevtoolsAccessibilityTab]: accessibility-tab.md "Tester l’accessibilité à l’aide de l’onglet Accessibilité | Documents Microsoft"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge outils de développement (Chromium) | Documents Microsoft"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Exécuter des commandes avec le menu de Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsConsoleIndex]: ../console/index.md "Présentation de la console | Documents Microsoft"  
@@ -252,10 +254,10 @@ Pour exécuter un nouvel audit, quittez le rapport et recherchez le bouton Effec
 [DevtoolsDomIndexViewDomNodes]: .. /dom/index.md#view-dom-nodes «View DOM nodes - Get started with viewing and changing the DOM | Microsoft Docs »  
 [DevtoolsDomIndexNavigateDomTreeKeyboard]: .. /dom/index.md#navigate-the-dom-tree-with-a-keyboard " Navigate the DOM Tree with a keyboard - Get started with viewing and changing the DOM | Microsoft Docs »  
 [DevtoolsOpen]: .. /open/index.md «Open Microsoft Edge DevTools | Microsoft Docs »  
-[DevtoolsShortcuts] : .. /shortcuts/index.md " Microsoft Edge devTools Keyboard Shortcuts | Microsoft Docs »  
+[DevtoolsShortcuts] : .. /shortcuts/index.md «Microsoft Edge raccourcis clavier DevTools | Microsoft Docs »  
 [DevtoolsShortcutsStylesPaneKeyboard]: .. /shortcuts/index.md#styles-panel-keyboard-shortcuts «Styles panel keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs »  
 
-[ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Problème 868480 : exposer des arbre ARIA en tant que tables dans l’accessibilité de Mac"  
+[ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Problème 868480 : exposer des arbre ARIA en tant que tableaux dans l’accessibilité de Mac"  
 
 [GithubEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Docs%20Feedback%5D "Nouveau problème : MicrosoftDocs/edge-developer | GitHub"  
 
@@ -264,7 +266,7 @@ Pour exécuter un nouvel audit, quittez le rapport et recherchez le bouton Effec
 
 [MonorailChromiumIssues]: https://crbug.com "Problèmes - chromium - Monorail"  
 
-[W3CWaiAriaTablist]: https://www.w3.org/TR/wai-aria-1.1/#tablist "tablist (rôle) - Applications Internet enrichies accessibles (ARIA-ARIA) 1.1 | W3C"  
+[W3CWaiAriaTablist]: https://www.w3.org/TR/wai-aria-1.1/#tablist "tablist (role) - Accessible Rich Internet Applications (ARIA-ARIA) 1.1 | W3C"  
 [W3CWaiAriaTree]: https://www.w3.org/TR/wai-aria-1.1/#tree "tree (role) - Accessible Rich Internet Applications (ARIA-ARIA) 1.1 | W3C"  
 
 > [!NOTE]

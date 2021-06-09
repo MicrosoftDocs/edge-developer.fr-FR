@@ -1,25 +1,31 @@
 ---
 ms.assetid: 737ac54c-ad89-4b3f-bbe2-4e4169d3f364
 description: Consultez les outils et les procédures de test qui permettent d’évaluer l’accessibilité d’un site web.
-title: 'Accessibilité : test'
+title: Test de l’accessibilité
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibilité, accessibilité pour les développeurs, sites web accessibles, edge, développement web, ARIA, développeur, UIA, UI Automation
-ms.openlocfilehash: b3aeb5ede1519352c12ab190fa6fbef9eee2ae12
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: b03680d2112311b97912ed92ae446a74410c95bf
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11397880"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597117"
 ---
-# <a name="accessibility-testing"></a>Test d’accessibilité  
+# <a name="accessibility-testing"></a>Test de l’accessibilité  
 
-Le test d’accessibilité est une forme de test d’utilisation pour vérifier que votre site web est utilisable par toutes les personnes. Consultez la [page](https://www.w3.org/wiki/Accessibility_testing) Test d’accessibilité W3C pour plus d’informations sur le moment où les tests doivent être effectués, les exigences de test, les personnes qui doivent tester votre site, etc.
+Le test d’accessibilité est une forme de test d’utilisation pour vérifier que votre site web est utilisable par toutes les personnes. Consultez la page W3C Évaluation de la vue d’ensemble de l’accessibilité [web](https://www.w3.org/WAI/test-evaluate) pour plus d’informations sur le moment où les tests doivent être effectués, les exigences de test, les personnes qui doivent tester votre site, etc.
 
-Utilisez les outils et les producteurs de test suivants pour évaluer l’accessibilité de votre site web :
+Utilisez les outils et procédures de test suivants pour évaluer l’accessibilité de votre site web :
+
+#### <a name="accessibility-testing-in-devtools"></a>Tests d’accessibilité dans DevTools
+
+*   [Fonctionnalités de test de l’accessibilité dans DevTools][DevtoolsAccessibilityReference] : liste de vérification des tests d’accessibilité et fonctionnalités de DevTools à utiliser pour chaque test.
+
+*   Vue d’ensemble des tests d’accessibilité à l’aide de [DevTools][DevtoolsAccessibilityAccessibilitytestingindevtools] - Présentation de l’utilisation de diverses fonctionnalités DevTools pour tester les problèmes d’accessibilité.
 
 #### [<a name="accessibility-evaluation-resources"></a>Ressources d’évaluation de l’accessibilité](https://www.w3.org/WAI/eval/Overview.html)  
 
@@ -52,3 +58,8 @@ Extension Visual Studio qui effectue des vérifications d’accessibilité sur n
 #### [<a name="web-accessibility-evaluation-tools-list"></a>Liste des outils d’évaluation de l’accessibilité web](https://www.w3.org/WAI/ER/tools/index.html)  
 
 Liste des outils d’évaluation de l’accessibilité web pour vous aider à déterminer si les sites web respectent les recommandations en matière d’accessibilité.
+
+<!-- links: -->
+
+[DevtoolsAccessibilityAccessibilitytestingindevtools]: ../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md "Vue d’ensemble des tests d’accessibilité à l’aide de DevTools | Documents Microsoft"
+[DevtoolsAccessibilityReference]: ../devtools-guide-chromium/accessibility/reference.md "Fonctionnalités de test de l’accessibilité dans DevTools | Documents Microsoft"

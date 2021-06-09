@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 64954d632416f7d1353269d04c1550ca7a0652b7
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 17c1162bdec21ccc4abe1d3d34ce7c766aeb1009
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564181"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11596985"
 ---
 <!-- Copyright Sam Dutton 
 
@@ -108,6 +108,12 @@ ms.locfileid: "11564181"
     :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="Aucune valeur dans la colonne SameSite pour le cookie ck02 dans l’outil Réseau DevTools" lightbox="../media/issues-tab-view-issue.msft.png":::
        `None` dans la **colonne SameSite** pour le cookie dans l’outil `ck02` Réseau **** DevTools  
     :::image-end:::  
+
+
+## <a name="see-also"></a>Articles associés
+
+* [Tester automatiquement une page web pour les problèmes d’accessibilité](../accessibility/test-issues-tool.md)
+
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
