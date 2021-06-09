@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, développement web, outils f12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: a6682043166909bf75a875b72058cc9839c5b43b
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: a13c344bb31cdfb7d0402132e3be82e4c330c612
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564846"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597163"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -274,18 +274,18 @@ Auparavant, cette `fn.displayName`propriété vous permettait de contrôler les 
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-Cette expérience **permet d'obtenir une arborescence d'accessibilité complète **dans l'outil **Éléments**.  Le [volet Accessibilité][DevtoolsAccessibilityReferenceAccessibilityPanel] propose une arborescence d'accessibilité partielle, qui affiche la chaîne d'ancêtres directs du nœud racine au nœud inspecté.  
+Cette expérience **permet d'obtenir une arborescence d'accessibilité complète **dans l'outil **Éléments**.  Le [volet Accessibilité][DevtoolsAccessibilityTab] propose une arborescence d'accessibilité partielle, qui affiche la chaîne d'ancêtres directs du nœud racine au nœud inspecté.  
 Après avoir activé cette expérience et rechargé les DevTools, choisissez l'un des boutons suivants pour changer l'affichage dans l'outil Éléments pour tous les éléments de la page Web.  
 
 *   Pour afficher l'arborescence d'accessibilité complète, cliquez sur le bouton **Passer à l'arborescence d'accessibilité**.  
 *   Pour afficher l'arborescence DOM, choisissez l'option **Passer à l'arborescence DOM**.  
     
-Pour activer l'expérience, accédez à la [section Activer les fonctions][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] expérimentales et cochez la case située à côté de **Activer l'arborescence d'accessibilité complète dans le volet Éléments**.  Pour revoir l'historique de cette fonctionnalité dans le projet open-source Chromium, consultez le numéro [887173][CR887173].  
+Pour activer l'expérience, accédez à la [section Activer les fonctions][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] expérimentales et cochez la case située à côté de **Activer l'arborescence d'accessibilité complète dans le volet Éléments**.  Pour voir l'historique de cette fonctionnalité dans le projet open-source Chromium, consultez le numéro [887173][CR887173].  
 
 :::row:::
    :::column span="":::
       :::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Afficher l'arborescence DOM" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
-         Afficher la **vue DOM**   
+         Afficher l'**arborescence DOM**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
@@ -299,13 +299,13 @@ Pour activer l'expérience, accédez à la [section Activer les fonctions][Devto
 
 Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'aperçu de Microsoft][MicrosoftEdgePreviewChannels] Edge comme navigateur de développement par défaut.  Les canaux de prévisualisation vous donnent accès aux dernières fonctionnalités de DevTools.  
 
-## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Entrer en contact avec l'équipe Microsoft Edge DevTools  
+## <a name="getting-in-touch-with-microsoft-edge-devtools-team"></a>Entrer en contact avec l'équipe DevTools Microsoft Edge  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
 
 <!-- links -->  
 
-[DevtoolsAccessibilityReferenceAccessibilityPanel]: ../../../accessibility/reference.md#the-accessibility-panel "Le volet d'accessibilité – Référence en matière d'accessibilité | Microsoft Docs"  
+[DevtoolsAccessibilityTab]: ../../../accessibility/accessibility-tab.md "Tester l’accessibilité à l’aide de l’onglet Accessibilité | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Exécuter des commandes avec le menu de commande DevTools de Microsoft Edge | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterByLogLevel]: ../../../console/reference.md#filter-by-log-level "Filtrer par niveau de journal – Référence de la console | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterMessages]: ../../../console/reference.md#filter-messages "Filtrer les messages – Référence Console | Microsoft Docs"  

@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 6d1952832c84dc159222a8aa16aa0ffe11edff34
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 9eb9f35427829dbe262b4c71d8ff5474b28eae77
+ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564923"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "11597155"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -424,10 +424,10 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 
 <!-- links -->  
 
-[DevtoolsWhatsNew85]: ../../2020/06/devtools.md "Nouveautés de DevTools (Microsoft Edge 85) | Microsoft Docs"  
+[DevtoolsWhatsNew85]: ../../2020/06/devtools.md "Nouveautés de DevTools (Microsoft Edge85) | Microsoft Docs"  
 
-[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/reference.md#view-the-contrast-ratio-of-a-text-element-in-the-color-picker "Afficher le coefficient de contraste d’un élément de texte dans le sélecteur de couleurs - Référence d’accessibilité | Microsoft Docs"  
-[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Modifier des CSS - Référence CSS | Microsoft Docs"  .
+[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/color-picker.md "Tester le contraste de couleur du texte à l’aide du Sélecteur de couleurs | Microsoft Docs"  
+[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Modifier des CSS – Référence CSS | Microsoft Docs"  .
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Paramètres - Personnaliser Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Personnaliser les raccourcis clavier dans les DevTools de Microsoft Edge | Microsoft Docs"  
 [DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "Tester sur les appareils pliables et à double écran : émuler les appareils à double écran et pliables dans Microsoft Edge DevTools | Microsoft Docs"  
