@@ -1,13 +1,29 @@
 ---
-description: Différences de fonctionnalités entre le titre Microsoft Edge et WebView2
-title: Différences de fonctionnalités entre le titre Microsoft Edge et WebView2
-ms.author: msedgedevrel
-ms.date: 05/06/2021
-ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
-keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]  
+description: Différences de fonctionnalité entre le titre Microsoft Edge et WebView2 : différences de fonctionnalités entre Microsoft Edge et l’auteur WebView2 : MSEdgeTeam ms.author: msedgedevrel ms.date: 05/06/2021 ms.topic: conceptual ms.prod: microsoft-edge ms.technology: webview keywords: IWebView2, IWebView2WebView, WebView2, webview, applications wpf, wpf, edge, ICoreWebView2, ICoreWebView2Host, contrôle de navigateur, edge html no-loc :
+- "Autofill for Addresses"
+- "Autofill for Passwords"
+- "Autofill for Payments""
+- "Browser Extensions""
+- "Browser Task Manager"
+- "Collections"
+- "Continue-where-I-left-off prompt"
+- "Downloads"
+- "Edge Shopping"
+- "Family Safety"
+- "Favorites"
+- "Hotkeys"
+- "IE Mode"
+- "Immersive Reader"
+- "Intrusive Ads"
+- "Read Aloud"
+- "Smart Screen"
+- "Translate"
+- "Tracking Prevention"
+- "Profile and Identity"
+- "Web Payment API"
+- "Windows Defender Application Guard"
+- "edge:// URLs"
+
 ---
 # <a name="browser-feature-differences-between-microsoft-edge-and-webview2"></a>Différences de fonctionnalités de navigateur entre Microsoft Edge web et WebView2  
 
@@ -32,7 +48,7 @@ Le tableau suivant affiche les fonctionnalités WebView2 qui diffèrent du navig
 *   **Configurable** indique que vous pouvez activer ou désactiver la fonctionnalité à l’aide des API WebView2 ou des commutateurs de ligne de commande.  
     
 > [!NOTE]  
-> Cet article ne couvre pas la modification des fonctionnalités à l’aide de commutateurs de ligne de commande.  Pour plus d’informations sur l’Chromium des fonctionnalités avec les commutateurs de ligne de commande, accédez à La liste des commutateurs de ligne [de commande.][PeterExperimentsChromiumCommandLineSwitches]  
+> Cet article ne traite pas de la modification des fonctionnalités à l’aide de commutateurs de ligne de commande.  Pour plus d’informations sur l’Chromium des fonctionnalités avec les commutateurs de ligne de commande, accédez à La liste des commutateurs de ligne [de commande.][PeterExperimentsChromiumCommandLineSwitches]  
     
 | Fonctionnalité | État par défaut | Configurable | Détails |  
 |:--- |:--- |:--- | :--- |  
@@ -47,7 +63,7 @@ Le tableau suivant affiche les fonctionnalités WebView2 qui diffèrent du navig
 | Edge Shopping | Désactivé | Non | Cette fonctionnalité est désactivée.  |  
 | Family Safety | Désactivé | Non | Cette fonctionnalité est désactivée.  |  
 | Favorites | Désactivé | Non | Cette fonctionnalité est désactivée.  |  
-| IE Mode | Désactivé | Non | Cette fonctionnalité est désactivée.  |  
+| IE Mode | Désactivé | Non | Cette fonctionnalité est désactivée. WebView2 ne prend pas en charge le mode IE et présente des différences de comportement par rapport à IE (par exemple, la prise en charge MHT). |  
 | Immersive Reader | Désactivé | Non | Cette fonctionnalité dépend de l’interface utilisateur du navigateur pour l’interaction.  Cette fonctionnalité est désactivée.  |  
 | Intrusive Ads | Désactivé | Non | Cette fonctionnalité est désactivée.  |  
 | Raccourcis clavier | Examiner les détails | Examiner les détails | Les raccourcis clavier qui sont désactivés par défaut n’ont pas de sens ou provoquent des problèmes dans WebView2.  Vous ne pouvez pas activer ou désactiver ces raccourcis.  Au lieu de cela, vous pouvez écouter une combinaison de touches à l’aide de l’événement `AcceleratorKeyPressed` et créer une réponse personnalisée si nécessaire.  Pour plus d’informations, accédez à [d’autres informations sur les raccourcis clavier.](#additional-keyboard-shortcuts-information) |  
@@ -120,7 +136,7 @@ Le tableau suivant répertorie les raccourcis qui sont toujours désactivés dan
 | Mise au point Favorites | `Alt`+`Shift`+`B` |  
 | Focus Inactive Popup | `Alt`+`Shift`+`A` |  
 | Recherche de focus | `Ctrl`+`E`, `Ctrl`+`K`, `Search Key` |  
-| Onglet dupliqué | `Ctrl`+`Shift`+`K` |  
+| Onglet en double | `Ctrl`+`Shift`+`K` |  
 | Barre d’outils Focus `*` | `Alt`+`Shift`+`T` |  
 | Accueil | `Alt`+`Home`, `Browser Home Key` |  
 | Afficher le menu de l’application | `Alt`+`E, Alt`+`F` |  
