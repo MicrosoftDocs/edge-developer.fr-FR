@@ -1,18 +1,18 @@
 ---
 description: Toutes les façons d’ouvrir le Microsoft Edge DevTools.
-title: Ouvrir Microsoft Edge DevTools
+title: Ouvrez Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: f5e011edd9889f226d705e51838e5d73c2a3b98d
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 00bb5a2c11fcadd4a0eba22c29ac5a2652b9edb6
+ms.sourcegitcommit: 2b225426e90b017f9766ea8568713b95d267cd6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564734"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "11607314"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -27,7 +27,7 @@ ms.locfileid: "11564734"
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-# <a name="open-microsoft-edge-devtools"></a>Ouvrir Microsoft Edge DevTools  
+# <a name="open-microsoft-edge-devtools"></a>Ouvrez Microsoft Edge DevTools  
 
 Il existe plusieurs façons d’ouvrir Microsoft Edge DevTools, car différents utilisateurs souhaitent un accès rapide à différentes parties de l’interface utilisateur DevTools.  
 
@@ -46,14 +46,14 @@ Chacune des tâches suivantes vous permet d’inspecter les styles ou attributs 
 
 ## <a name="open-the-console-panel"></a>Ouvrir le panneau console  
 
-Chacune des tâches suivantes vous [][DevtoolsConsoleIndex] permet d’ouvrir le volet console pour afficher les messages enregistrés ou exécuter JavaScript.  
+Chacune des tâches suivantes vous permet d’ouvrir le volet [Console][DevtoolsConsoleIndex] pour afficher les messages enregistrés ou exécuter JavaScript.  
 
-*   Pour ouvrir le volet [console,][DevtoolsConsoleIndex] utilisez les étapes suivantes.  
+*   Utilisez les étapes suivantes pour ouvrir [le volet][DevtoolsConsoleIndex] console.  
     
     1.  [Ouvrez DevTools](#open-microsoft-edge-devtools).  
     1.  Choisissez le [volet][DevtoolsConsoleIndex] console.  
 
-*   Pour passer directement dans le volet [console,][DevtoolsConsoleIndex] sélectionnez `Control` + `Shift` + `J` \(Windows, Linux\) ou `Command` + `Option` + `J` \(macOS\).  Pour plus d’informations, [accédez Microsoft Edge raccourcis clavier DevTools.][DevtoolsShortcutsIndex]  
+*   Pour aller directement dans [le][DevtoolsConsoleIndex] volet console, sélectionnez `Control` + `Shift` + `J` \(Windows, Linux\) ou `Command` + `Option` + `J` \(macOS\).  Pour plus d’informations, [accédez Microsoft Edge raccourcis clavier DevTools.][DevtoolsShortcutsIndex]  
 
 <!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
 
@@ -61,13 +61,13 @@ Chacune des tâches suivantes vous [][DevtoolsConsoleIndex] permet d’ouvrir le
 
 Pour passer au panneau précédent que vous avez ouvert, sélectionnez `Control` + `Shift` + `I` \(Windows, Linux\) ou `Command` + `Option` + `I` \(macOS\).  Pour plus d’informations, [accédez Microsoft Edge raccourcis clavier DevTools.][DevtoolsShortcutsIndex]  
 
-## <a name="open-microsoft-edge-devtools"></a>Ouvrir Microsoft Edge DevTools  
+## <a name="open-microsoft-edge-devtools"></a>Ouvrez Microsoft Edge DevTools  
 
 Pour ouvrir DevTools, utilisez l’une des options suivantes.  
 
 *   Utilisez l’Microsoft Edge’interface utilisateur.  
     
-    1.  Sélectionnez **l Paramètres icône** plus \( \) > `...` **Outils**de développement  >   **Outils de développement .**  
+    1.  Sélectionnez **l Paramètres icône** \( \) et plus > Outils de développement `...` ****  >   **Outils de développement .**  
     
 *   Utilisez le clavier.  
     *   Sélectionnez `F12` `Control` + `Shift` + `I` ou \(Windows, Linux\) ou `Command` + `Option` + `I` \(macOS\).  
@@ -116,27 +116,16 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 * * *  
 
-## <a name="toggle-the-f12-keyboard-shortcut-on-or-off"></a>Mettre le raccourci clavier F12 sur ou hors de l’écran  
+## <a name="toggle-the-f12-keyboard-shortcut-on-or-off"></a>Toggle the F12 keyboard shortcut on or off  
 
 Pour modifier le `F12` paramètre de raccourci clavier qui ouvre DevTools, effectuer les actions suivantes.  
 
-1.  Choisissez l’icône Paramètres **et plus** \( `...` \) icône > **Paramètres**.  
-1.  Dans **les paramètres de recherche,** entrez `Developer Tools` .  
-    
-    :::image type="complex" source="../media/settings-developer-tools-f12-on.msft.png" alt-text="Paramètre Ouvrir de DevTools lorsque l’on appuie sur la touche F12" lightbox="../media/settings-developer-tools-f12-on.msft.png":::
-       Paramètre **Ouvrir de DevTools** lorsque l’on appuie sur la touche F12  
-    :::image-end:::  
-    
-1.  Sélectionnez **Ouvrir DevTools** lorsque l’on appuie sur la touche F12 pour que le paramètre soit éteint \(ou on\).  Basculez le paramètre pour empêcher le raccourci `F12` clavier d’ouvrir DevTools.  
-    
-    :::image type="complex" source="../media/settings-developer-tools-f12-off.msft.png" alt-text="Le paramètre Ouvrir de DevTools lorsque vous appuyez sur la touche F12 est désactivé" lightbox="../media/settings-developer-tools-f12-off.msft.png":::
-       Le **paramètre Ouvrir de DevTools** lorsque vous appuyez sur la touche F12 est désactivé  
-    :::image-end:::  
-    
-1.  Après avoir désélecté le basculement, sélectionnez pour confirmer que `F12` DevTools ne s’ouvre plus.  
+1.  Naviguez vers`edge://settings/system` .  
+1.  In `Developer Tools` , choose Open the **DevTools when the F12 key is pressed** to toggle the setting to off or on.  Désévérez le paramètre pour empêcher le raccourci `F12` clavier d’ouvrir DevTools.  
+1.  Après avoir éteint le basculement, vérifiez qu’il n’ouvre plus `F12` DevTools.  
     
     > [!NOTE]
-    > Après avoir éteint le paramètre Ouvrir les **DevTools** lorsque vous appuyez sur la touche F12, pour ouvrir DevTools, effectuer l’une des actions suivantes.  
+    > Après avoir éteint **Ouvrir DevTools**lorsque vous appuyez sur la touche F12, effectuez l’une des actions suivantes pour ouvrir devTools.  
     > 
     > *   Sélectionnez `Ctrl` + `Shift` + `I` .  
     > *   Ouvrez le menu contextuel \(clic droit\) > **Inspect**.  
@@ -155,7 +144,7 @@ Pour modifier le `F12` paramètre de raccourci clavier qui ouvre DevTools, effec
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/open) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/open) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
