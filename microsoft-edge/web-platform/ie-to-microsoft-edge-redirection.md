@@ -4,18 +4,19 @@ title: Déplacement d’utilisateurs vers Microsoft Edge à partir d’Internet 
 author: MSEdgeTeam
 ms.date: 11/13/2020
 ms.author: msedgedevrel
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft Edge, compatibilité, plateforme web, Internet Explorer
-ms.openlocfilehash: c2106955ed79bd28dc1f847dee220944bb014689
-ms.sourcegitcommit: bff24ab1f0a66aaf4c7f5ff81cea3eb28c6d8380
+ms.openlocfilehash: dd8db64311b60ff0c740776de94def88f22c2e96
+ms.sourcegitcommit: 0e67a56b9dc1f7a86924d142db0efd36fd99d38b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "11461135"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "11608666"
 ---
 # <a name="moving-users-to-microsoft-edge-from-internet-explorer"></a>Déplacement d’utilisateurs vers Microsoft Edge à partir d’Internet Explorer  
 
-De nombreux sites web modernes ont des conceptions incompatibles avec Internet Explorer \(IE\).  Lorsqu’un utilisateur d’Internet IE visite un site web public incompatible, il peut obtenir un message.  Le message indique que le site web est incompatible avec le navigateur.  Une fois le message affiché, l’utilisateur est censé basculer manuellement vers un navigateur moderne.  Pour minimiser les interruptions, à partir de la version 84, Microsoft Edge prend en charge une nouvelle fonctionnalité qui redirige automatiquement les utilisateurs.  Lorsqu’un utilisateur d’Internet Explorer navigue vers un site web incompatible avec Internet Explorer, Windows redirige automatiquement l’utilisateur vers Microsoft Edge.  Pour passer en revue les sites web de la liste, accédez à [Microsoft Edge liste.][MicrosoftEdgeNeededgeV1]
+De nombreux sites web modernes ont des conceptions incompatibles avec Internet Explorer \(IE\).  Lorsqu’un utilisateur d’Internet IE visite un site web public incompatible, il peut obtenir un message.  Le message indique que le site web est incompatible avec le navigateur.  Une fois le message affiché, l’utilisateur est censé basculer manuellement vers un navigateur moderne.  Pour minimiser les interruptions, à partir de la version 84, Microsoft Edge prend en charge une nouvelle fonctionnalité qui redirige automatiquement les utilisateurs.  Lorsqu’un utilisateur d’Internet Explorer navigue vers un site web incompatible avec Internet Explorer, Windows redirige automatiquement l’utilisateur vers Microsoft Edge.  Pour passer en revue les sites web de la liste, accédez à [Microsoft Edge liste][MicrosoftEdgeNeededgeV1].
 
 Cet article décrit les concepts suivants.  
 
@@ -25,7 +26,7 @@ Cet article décrit les concepts suivants.
     
 ## <a name="why-is-a-website-added-to-the-ie-compatibility-list"></a>Pourquoi un site web est-il ajouté à la liste de compatibilité d’Internet IE ?  
 
-La liste de compatibilité Internet Internet (IE) ajoute un site web uniquement lorsque les actions suivantes se produisent.  
+La liste de compatibilité d’Internet IE ajoute un site web uniquement lorsque les actions suivantes se produisent.  
 
 *   Affiche un message à un utilisateur d’Internet Explorer lui suggérant d’utiliser un autre navigateur pour des raisons de compatibilité.  
 *   Le propriétaire demande d’ajouter le site web à la liste de compatibilité d’Internet IE.  
@@ -61,8 +62,8 @@ Si l’utilisateur ne donne pas son consentement en choisissant la case à coche
 
 Enfin, une bannière d’incompatibilité de site web s’affiche sous la barre d’adresse pour chaque redirection.  Un exemple de bannière d’incompatibilité de site web est affiché dans la figure suivante.
 
-:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Notification sur les sites modernes et invite à définir Microsoft Edge navigateur par défaut ou explorer Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
-   Notification sur les sites modernes et invite à définir Microsoft Edge navigateur par défaut ou explorer Microsoft Edge  
+:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Notification sur les sites modernes et invite à définir Microsoft Edge comme navigateur par défaut ou explorer Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
+   Notification sur les sites modernes et invite à définir Microsoft Edge comme navigateur par défaut ou explorer Microsoft Edge  
 :::image-end:::
 
 La bannière d’incompatibilité du site web fournit les détails suivants à l’utilisateur.  
@@ -92,7 +93,7 @@ Envoyez les informations suivantes [ietoedge@microsoft.com][MailtoMicrosoftIetoe
 *   Adresse postale  
 *   Adresse du site web  
     
-La liste de compatibilité d’IE est mise à jour au cours d’une semaine.
+La liste de compatibilité d’IE est mise à jour dans une semaine.
 
 > [!NOTE]
 > La liste de compatibilité d’Internet IE est conçue pour fonctionner uniquement avec des sites publics.  
