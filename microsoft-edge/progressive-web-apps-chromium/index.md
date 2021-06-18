@@ -8,16 +8,16 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: applications web progressives, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.openlocfilehash: f1f5370af0710927f66c8231274fe307cb3ee2a4
-ms.sourcegitcommit: 7f7922dbb6af87ecac1378d18359125770c5b8e5
+ms.openlocfilehash: 47c6f98329a1da67e0f2c1a8e6243250992fb599
+ms.sourcegitcommit: f4488cf2dfef0aeec04712b2ed933d68b8e93a94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11536808"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "11608841"
 ---
-# <a name="progressive-web-apps-on-windows-overview"></a>Vue d’ensemble des applications web progressives Windows web  
+# <a name="progressive-web-apps-on-windows-overview"></a>Présentation progressive des applications web sur Windows  
 
-[Les][MDNApps] applications web progressives \(PWAs\) permettent d’accéder aux technologies web ouvertes pour l’interopérabilité entre plateformes et offrent à vos utilisateurs une expérience native, de l’application, personnalisée pour leurs appareils.  Les P PWA sont des sites web [qui][AListApartUnderstandingProgressiveEnhancement] sont progressivement améliorés pour fonctionner comme des applications natives sur les plateformes de prise en charge.  Les qualités d’une PWA combinent le meilleur des applications web et natives.  
+[Les][MDNApps] applications web progressives \(PWAs\) permettent d’accéder aux technologies web ouvertes pour l’interopérabilité entre plateformes et offrent à vos utilisateurs une expérience native de l’application personnalisée pour leurs appareils. Les P PWA sont des sites web [qui][AListApartUnderstandingProgressiveEnhancement] sont progressivement améliorés pour fonctionner comme des applications natives sur les plateformes de prise en charge. Les qualités d’une PWA combinent le meilleur des applications web et natives.  
 
 :::row:::
     :::column:::
@@ -76,7 +76,7 @@ ms.locfileid: "11536808"
 :::row-end:::  
 :::row:::
     :::column:::
-        Fonctionne en mode hors connexion et dans des conditions de faible réseau  
+        Fonctionne en mode hors connexion et dans des conditions de réseau faible  
     :::column-end:::
     :::column:::
         L’expérience est étendue (ou réduite) avec les fonctionnalités de l’appareil  
@@ -109,7 +109,7 @@ ms.locfileid: "11536808"
 :::row-end:::  
 :::row:::
     :::column:::
-        S’adapte à la taille de l’écran ou à l’orientation et à la méthode d’entrée de l’utilisateur  
+        S’adapte à la taille de l’écran, à l’orientation et à la méthode d’entrée de l’utilisateur  
     :::column-end:::
     :::column:::
         Partager et lancer à partir d’un lien hypertexte standard  
@@ -119,17 +119,17 @@ ms.locfileid: "11536808"
     :::column-end:::
 :::row-end:::  
 
-Créez \(ou convertissez\) votre site web existant en un PWA pour améliorer votre engagement auprès de vos utilisateurs.  Les améliorations incluent les notifications Push, l’intégration de l’application et la prise en charge hors connexion.  Continuez à développer votre audience sur le web ouvert pour que les utilisateurs découvrent vos PWA par le biais de la recherche et du partage de liens.  Mieux encore, votre application est mise à jour à l’aide du code de votre serveur web.  
+Créez \(ou convertissez\) votre site web existant en PWA pour améliorer l’engagement avec vos utilisateurs. Les améliorations incluent les notifications Push, l’intégration de l’application et la prise en charge hors connexion. Continuez à développer votre audience sur le web ouvert pour que les utilisateurs découvrent votre PWA par le biais de la recherche et du partage de liens. Mieux encore, votre application est mise à jour à l’aide du code de votre serveur web.  
 
 ## <a name="pwas-on-microsoft-edge-chromium"></a>P PWAs sur Microsoft Edge (Chromium)  
 
-Lorsque vous créez une application web progressive ciblant des API web standard, votre application peut être déployée sur des plateformes et des appareils et tirer parti des fonctionnalités spécifiques de l’appareil, selon les besoins.  Les P PWA dans Microsoft Edge \(Chromium\) ajoutent les avantages suivants à votre site web.  
+Lorsque vous créez une application web progressive ciblant des API web standard, votre application peut être déployée sur des plateformes et des appareils et tirer parti des fonctionnalités spécifiques de l’appareil, selon les besoins. Les P PWA dans Microsoft Edge \(Chromium\) ajoutent les avantages suivants à votre site web.  
 
 *   Votre application repose sur une plateforme web basée sur des normes.  
 *   Permet à vos utilisateurs d’installer votre application directement à partir du navigateur.  
 *   Permet à vos utilisateurs d’installer votre application sans inscription ou déploiement basé sur le Store.  
     
-Les applications de bureau sont pris en charge sur l’une des plateformes Microsoft Edge \(Chromium\) est disponible. Microsoft Edge \(Chromium\) est disponible sur Windows 7, Windows 10 et macOS.  Les avantages suivants sont inclus.  
+Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is [available](https://www.microsoft.com/edge). Les avantages suivants sont inclus.
 
 *   Les applications peuvent être installées directement à partir du navigateur à l’aide de l’icône **Installer** dans la barre de navigation.  
     
@@ -137,30 +137,30 @@ Les applications de bureau sont pris en charge sur l’une des plateformes Micro
        Installer le volant et l’icône de l’application  
     :::image-end:::  
     
-*   Les applications peuvent également être installées, exécutés et gérées à partir du menu **Paramètres**  >  **Applications**  
+*   Les applications peuvent également être installées, exécutés et gérées à partir du menu **Paramètres**  >  **des applications**  
     
     :::image type="complex" source="./media/app-menus.png" alt-text="Éléments de menu de l’application sous paramètres" lightbox="./media/app-menus.png":::
        Éléments de menu de l’application sous paramètres  
     :::image-end:::  
     
-*   Les notifications web sont intégrées dans le système de notification Windows’application  
+*   Les notifications web sont intégrées au système de notification Windows  
 *   Magasin de cookies partagé avec le profil de navigateur qui a installé l’application  
 *   Accès à d’autres fonctionnalités de navigateur à l’aide du menu Paramètre et plus **\(** \), y compris la validation de certificat, les autorisations de site, la protection de suivi et les `...` extensions de navigateur  
-*   Accès total à [Microsoft Edge DevTools pour][DevtoolsProgressiveWebApps] le débogage de votre application  
+*   Accès total à [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] pour le débogage de votre application  
     
 > [!NOTE]
-> Pour plus d’informations sur PWA avantages, les fonctionnalités à venir et les démonstrations courtes, accédez à build [2020 PWA session.][BuildVideo] 
+> Pour plus d’informations sur les avantages de PWA, les fonctionnalités à venir et les démonstrations courtes, accédez à la [session Build 2020 PWA.][BuildVideo] 
 
 ## <a name="requirements"></a>Conditions préalables  
 
-Pour s’exécuter en tant PWA, votre application web hébergée sur le serveur doit inclure les exigences minimales suivantes.  
+Pour s’exécuter en tant que PWA, votre application web hébergée sur le serveur doit inclure les conditions minimales suivantes.  
 
 :::row:::
    :::column span="1":::
       [HTTPS][WikiHttps]  
    :::column-end:::
    :::column span="2":::
-      Protège vos utilisateurs en fournissant une connexion sécurisée pour la communication entre le serveur ou l’application.  Les travailleurs de service et autres technologies PWA fonctionnent uniquement avec des ressources web servies sur une connexion sécurisée \(ou à partir de là à des fins `localhost` de débogage\).  
+      Protège vos utilisateurs en fournissant une connexion sécurisée pour la communication de serveur ou d’application.  Les travailleurs de service et les autres technologies PWA fonctionnent uniquement avec des ressources web servies sur une connexion sécurisée \(ou à partir d’une connexion à des fins `localhost` de débogage\).  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -168,7 +168,7 @@ Pour s’exécuter en tant PWA, votre application web hébergée sur le serveur 
       [Worker du service][MDNServiceWorkerApi]  
    :::column-end:::
    :::column span="2":::
-      Utilise les threads de travail de service pour agir en tant que proxys réseau entre votre serveur et votre application cliente.  Les threads de travail de service assurent la prise en charge hors connexion, la mise en cache des ressources, les notifications Push, la synchronisation des données en arrière-plan et les optimisations des performances de chargement des pages.    
+      Utilise des threads de travail de service pour agir en tant que proxys réseau entre votre serveur et votre application cliente.  Les threads de travail de service assurent la prise en charge hors connexion, la mise en cache des ressources, les notifications Push, la synchronisation des données en arrière-plan et les optimisations des performances de chargement de page.    
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -176,18 +176,18 @@ Pour s’exécuter en tant PWA, votre application web hébergée sur le serveur 
       [Manifeste de l’application web][MDNWebAppManifest]  
    :::column-end:::
    :::column span="2":::
-      Fournit un fichier de métadonnées JSON qui décrit les informations clés sur votre application web, afin que Windows 10 et d’autres plateformes hôtes offrent à vos utilisateurs PWA une expérience installable et native de l’application.  Les informations clés incluent les icônes, la langue et le point d’entrée d’URL. 
+      Fournit un fichier de métadonnées basé sur JSON qui décrit les informations clés sur votre application web, afin que Windows 10 et d’autres plateformes hôtes fournissent à vos utilisateurs PWA une expérience installable et native de l’application.  Les informations clés incluent les icônes, la langue et le point d’entrée d’URL. 
    :::column-end:::
 :::row-end:::  
 
-Pour être une excellente PWA, votre application doit également répondre aux exigences suivantes.  
+Pour être un excellent PWA, votre application doit également répondre aux exigences suivantes.  
 
 :::row:::
    :::column span="1":::
       [Compatibilité entre navigateurs][MDNCrossBrowserTesting]  
    :::column-end:::
    :::column span="2":::
-      Assurez-vous que PWA fonctionne [en testant][MicrosoftDeveloperEdgeToolsRemote] dans différents navigateurs et environnements.  
+      Assurez-vous que votre PWA fonctionne [en testant][MicrosoftDeveloperEdgeToolsRemote] dans différents navigateurs et environnements.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -203,7 +203,7 @@ Pour être une excellente PWA, votre application doit également répondre aux e
       *   [requêtes multimédias][MDNMediaQueries]  
       *   [images réactives][MDNResponsiveImages]  
           
-      Utilise les outils d’émulation d’appareil de votre navigateur pour tester localement ou créer une session de débogage à distance sur [Windows][DevtoolsRemoteDebuggingWindows] ou [Android][DevtoolsRemoteDebuggingIndex] pour tester directement sur un appareil cible. [][DevToolsGuideDeviceModeTestingOtherBrowsers]
+      Utilise [les outils d’émulation][DevToolsGuideDeviceModeTestingOtherBrowsers] d’appareil de votre navigateur pour tester localement ou créer une session de débogage à distance sur [Windows][DevtoolsRemoteDebuggingWindows] ou [Android][DevtoolsRemoteDebuggingIndex] pour tester directement sur un appareil cible.
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -224,15 +224,15 @@ Pour être une excellente PWA, votre application doit également répondre aux e
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [Chromium PWA liste de contrôle][WebDevGoodPwaChecklist]  
+      [Liste de contrôle PWA Chromium][WebDevGoodPwaChecklist]  
    :::column-end:::
    :::column span="2":::
-      Vérifie votre PWA par rapport à la liste de PWA de référence Google.  
+      Vérifie votre PWA par rapport à la liste de vérification PWA de référence google.  
    :::column-end:::
 :::row-end:::  
 
 > [!NOTE]
-> Pour transformer votre PWA en une application [Microsoft Store,][MicrosoftDeveloperStore] accédez à Applications web progressives [dans la Microsoft Store][PwaChromiumMicrosoftStore].  
+> Pour transformer votre application PWA en [application du Microsoft Store,][MicrosoftDeveloperStore] accédez à [Progressive Web Apps dans le Microsoft Store.][PwaChromiumMicrosoftStore]  
   
 ## <a name="see-also"></a>Articles associés  
 
@@ -249,27 +249,27 @@ Pour être une excellente PWA, votre application doit également répondre aux e
 <!-- links -->  
 
 [DevtoolsRemoteDebuggingIndex]: ../devtools-guide-chromium/remote-debugging/index.md "Commencer à déboguer à distance les appareils Android | Documents Microsoft"  
-[DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Prise en main le débogage à distance Windows 10 appareils | Documents Microsoft"  
+[DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Mise en place du débogage à distance des appareils Windows 10 | Documents Microsoft"  
 [DevToolsGuideDeviceModeTestingOtherBrowsers]: ../devtools-guide-chromium/device-mode/testing-other-browsers.md "Émuler et tester d’autres navigateurs | Documents Microsoft"  
 [DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps/index.md "Déboguer les applications web progressives | Documents Microsoft"  
 [PwaChromiumMicrosoftStore]: ./microsoft-store.md "Publier votre application web progressive sur le Microsoft Store | Documents Microsoft"
 
-[WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Windows Vue d’Notification Services (WNS) push | Documents Microsoft"  
+[WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Vue d’ensemble de Windows Push Notification Services (WNS) | Documents Microsoft"  
 [WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "Conception pour xbox et télévision | Documents Microsoft"  
 [WindowsUWPDesignDevicesIndex]: /windows/uwp/design/devices/index.md "Considérations sur l’interface utilisateur pour les appareils UWP | Documents Microsoft"  
 [WindowsUWPGetStartedGuide]: /windows/uwp/get-started/universal-application-platform-guide.md "Qu’est-ce qu’une application de plateforme Windows universelle (UWP) ? | Documents Microsoft"  
 [WindowsUWPLaunchResumeBackgroundTasks]: /windows/uwp/launch-resume/support-your-app-with-background-tasks.md "Prise en charge de votre application avec des tâches en arrière-plan | Documents Microsoft"  
-[WindowsUWPPublishIndex]: /windows/uwp/publish/index.md "Publier Windows applications et jeux | Documents Microsoft"  
+[WindowsUWPPublishIndex]: /windows/uwp/publish/index.md "Publier des applications et des jeux Windows | Documents Microsoft"  
 [WindowsUWPPublishDeveloperAccount]: /windows/uwp/publish/opening-a-developer-account.md "Ouverture d’un compte de développeur | Documents Microsoft"  
 
-[WindowsBlogsWelcomingPWAsEdgeWindows]: https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#56z7mJwKsykfbR4I.97 "Mise en avant des applications web progressives Microsoft Edge et Windows 10 - Windows blogs"  
-[MicrosoftDeveloperEdgePlatformStatusBackgroundSync]: https://developer.microsoft.com/microsoft-edge/platform/status/backgroundsyncapi "API de synchronisation en arrière-plan - État Microsoft Edge plateforme"  
-[MicrosoftDeveloperEdgePlatformStatusWebAppManifest]: https://developer.microsoft.com/microsoft-edge/platform/status/webapplicationmanifest "Manifeste de l’application web : Microsoft Edge plateforme"  
+[WindowsBlogsWelcomingPWAsEdgeWindows]: https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#56z7mJwKsykfbR4I.97 "Mise en avant des applications web progressives dans Microsoft Edge et Windows 10 - Blogs Windows"  
+[MicrosoftDeveloperEdgePlatformStatusBackgroundSync]: https://developer.microsoft.com/microsoft-edge/platform/status/backgroundsyncapi "API de synchronisation en arrière-plan - État de la plateforme Microsoft Edge"  
+[MicrosoftDeveloperEdgePlatformStatusWebAppManifest]: https://developer.microsoft.com/microsoft-edge/platform/status/webapplicationmanifest "Manifeste d’application web - État de la plateforme Microsoft Edge"  
 [MicrosoftDeveloperEdgeToolsRemote]: https://developer.microsoft.com/microsoft-edge/tools/remote "Test instantané"  
 [MicrosoftDeveloperWindowsMixedReality]: https://developer.microsoft.com/windows/mixed-reality "Réalité mixte pour les développeurs"  
 [MicrosoftDeveloperWindowsSurfaceHub]: https://developer.microsoft.com/windows/surfacehub "Microsoft Surface Hub"  
 [MicrosoftDeveloperStore]: https://developer.microsoft.com/store "Microsoft Developer Store"  
-[MicrosoftEdge]: https://www.microsoft.com/edge "Télécharger le nouveau Microsoft Edge navigateur"  
+[MicrosoftEdge]: https://www.microsoft.com/edge "Télécharger le nouveau navigateur Microsoft Edge"  
 [MicrosoftSupportWindowsFocusAssist]: https://support.microsoft.com/help/4026996/windows-10-turn-focus-assist-on-or-off "Activer ou désactiver l’assistance focus dans Windows 10"  
 [MicrosoftSupportWindowsNotificationSettings]: https://support.microsoft.com/help/4028678/windows-10-change-notification-settings "Modifier les paramètres de notification dans Windows 10"  
 
@@ -299,7 +299,7 @@ Pour être une excellente PWA, votre application doit également répondre aux e
 [MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager | MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Contenu du manifeste d’application | MDN"  
 
-[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "PWA vidéo"  
+[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "Vidéo PWA"  
 
 [CloudfourThinksProgressiveRoadmapYourWebApp]: https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app "Une feuille de route progressive pour votre application web progressive"  
 
