@@ -1,16 +1,31 @@
 ---
-description: Différences de fonctionnalités de navigateur entre Microsoft Edge web et WebView2
-title: Différences de fonctionnalités de navigateur entre Microsoft Edge web et WebView2
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 05/06/2021
-ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
-keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]  
+description: Différences de fonctionnalités entre le titre Microsoft Edge et WebView2 : différences de fonctionnalités entre Microsoft Edge et l’auteur WebView2 : MSEdgeTeam ms.author: msedgedevrel ms.date: 23/06/2021 ms.topic: conceptual ms.prod: microsoft-edge ms.technology: webview keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html no-loc:
+- "Autofill for Addresses"
+- "Autofill for Passwords"
+- "Autofill for Payments""
+- "Browser Extensions""
+- "Browser Task Manager"
+- "Collections"
+- "Continue-where-I-left-off prompt"
+- "Downloads"
+- "Edge Shopping"
+- "Family Safety"
+- "Favorites"
+- "Hotkeys"
+- "IE Mode"
+- "Immersive Reader"
+- "Intrusive Ads"
+- "Read Aloud"
+- "Smart Screen"
+- "Translate"
+- "Tracking Prevention"
+- "Profile and Identity"
+- "Web Payment API"
+- "Windows Defender Application Guard"
+- "edge:// URLs"
+
 ---
-# <a name="browser-feature-differences-between-microsoft-edge-and-webview2"></a>Différences de fonctionnalités de navigateur entre Microsoft Edge web et WebView2  
+# <a name="feature-differences-between-microsoft-edge-and-webview2"></a>Différences de fonctionnalités entre Microsoft Edge web et WebView2  
 
 WebView2 est basé sur le nouveau Microsoft Edge navigateur.  Vous avez la possibilité d’étendre les fonctionnalités du navigateur aux applications WebView2, ce qui est utile.  Toutefois, étant donné que WebView2 n’est pas limité aux applications de navigateur, certaines fonctionnalités de navigateur doivent être modifiées ou supprimées.  Cet article fournit les informations suivantes.  
 
@@ -25,7 +40,7 @@ Dans le contexte de WebView2, les fonctionnalités de navigateur respectent les 
 *   La plupart des fonctionnalités fonctionnent de la même manière dans WebView2 et Microsoft Edge.  Si une fonctionnalité n’est pas logique dans le contexte de WebView2 ou pour d’autres raisons, la fonctionnalité est modifiée ou désactivée. 
 *   Les fonctionnalités WebView2 n’incluent pas Microsoft Edge de marque.  
     
-## <a name="features"></a>Fonctionnalités  
+## <a name="browser-features"></a>Fonctionnalités de navigateur  
 
 Le tableau suivant affiche les fonctionnalités WebView2 qui diffèrent du navigateur Microsoft Edge web.   
 
@@ -51,16 +66,23 @@ Le tableau suivant affiche les fonctionnalités WebView2 qui diffèrent du navig
 | IE Mode | Désactivé | Non | Cette fonctionnalité est désactivée. WebView2 ne prend pas en charge le mode IE et présente des différences de comportement par rapport à Internet Internet (par exemple, la prise en charge de MHT ou BIN). |  
 | Immersive Reader | Désactivé | Non | Cette fonctionnalité dépend de l’interface utilisateur du navigateur pour l’interaction.  Cette fonctionnalité est désactivée.  |  
 | Intrusive Ads | Désactivé | Non | Cette fonctionnalité est désactivée.  |  
-| Raccourcis clavier | Examiner les détails | Examiner les détails | Les raccourcis clavier qui sont désactivés par défaut n’ont pas de sens ou provoquent des problèmes dans WebView2.  Vous ne pouvez pas activer ou désactiver ces raccourcis.  Au lieu de cela, vous pouvez écouter une combinaison de touches à l’aide de l’événement `AcceleratorKeyPressed` et créer une réponse personnalisée si nécessaire.  Pour plus d’informations, accédez à [d’autres informations sur les raccourcis clavier.](#additional-keyboard-shortcuts-information) |  
-| Notifications Push | Désactivé | Non | Cette fonctionnalité n’est pas implémentée dans WebView2.  Pour plus d’informations, [accédez à Ajouter la prise en charge de l’API de notification HTML5 (#308).][GithubMicrosoftedgeWebview2feedbackIssues308] |  
+| Raccourcis clavier | Examiner les détails | Examiner les détails | Les raccourcis clavier qui sont désactivés par défaut n’ont pas de sens ou provoquent des problèmes dans WebView2.  Vous ne pouvez pas activer ou désactiver ces raccourcis.  Au lieu de cela, vous pouvez écouter une combinaison de touches à l’aide de l’événement `AcceleratorKeyPressed` et créer une réponse personnalisée si nécessaire.  Pour plus d’informations, accédez à [d’autres informations sur les raccourcis clavier.](#additional-keyboard-shortcuts-information) | 
 | Read Aloud | Désactivé | Non | Cette fonctionnalité est désactivée.  |  
 | Smart Screen | Activé`*` | Non | `*` L’interface utilisateur de cette fonctionnalité a été supprimée, mais la fonctionnalité sous-jacente est toujours disponible.  En outre, vous pouvez désactiver Smart Screen l’utilisation d’un commutateur de ligne de commande.  |  
 | Translate | Désactivé | Non | Cette fonctionnalité est désactivée.  |  
 | Tracking Prevention | Activé`*` | Non | `*` L’interface utilisateur de cette fonctionnalité a été supprimée, mais la fonctionnalité sous-jacente est toujours disponible.  La prévention du suivi est toujours équilibrée.|  
-| Profile and Identity | Désactivé | Non | La fonctionnalité qui synchronise vos favoris, cookies, etc., est désactivée.  |  
-| Web Payment API | Désactivé | Non | Cette fonctionnalité est désactivée.  | 
+| Profile and Identity | Désactivé | Non | La fonctionnalité qui synchronise vos favoris, cookies, etc., est désactivée.  | 
 | Windows Defender Application Guard | Désactivé | Non | Cette fonctionnalité est désactivée.  |  
 | edge:// URLs | Examiner les détails | Non | Paramètres pour le navigateur Microsoft Edge sont sur `edge://` les URL.  Étant donné que la plupart de ces pages web ont une Microsoft Edge ou n’ont pas de sens dans le contexte de WebView2, certaines de ces URL sont désactivées.  Pour plus d’informations, [accédez à URL internes bloquées.](#blocked-internal-urls)  |  
+
+## <a name="web-platform-features"></a>Fonctionnalités de plateforme web
+
+Le tableau suivant affiche les fonctionnalités de la plateforme WebView2 actuellement indisponibles.
+
+| Fonctionnalité | Détails |  
+|:--- | :--- |  
+| Push Notifications | Cette fonctionnalité n’est pas implémentée dans WebView2. |  
+| Web Payment API | Cette fonctionnalité est désactivée. | 
 
 ## <a name="blocked-internal-urls"></a>URL internes bloquées  
 
@@ -84,7 +106,7 @@ Les pages web Microsoft Edge paramètres Google Chrome et suivantes ne sont pas 
     
 ## <a name="additional-keyboard-shortcuts-information"></a>Informations supplémentaires sur les raccourcis clavier  
 
-Les raccourcis clavier ou les liaisons de touches sont pris en charge dans Microsoft Edge et WebView2.  Lorsque Microsoft Edge mises à jour sont mises à jour, les liaisons de touches par défaut peuvent changer.  En outre, un raccourci clavier qui est désactivé par défaut peut s’activer si la fonctionnalité est désormais prise en charge dans WebView2.  Pour éviter les modifications apportées à vos raccourcis clavier, vous pouvez définir sur , ce qui permet d’éteindre toutes les touches qui accèdent aux fonctionnalités du navigateur, tout en maintenant tous les raccourcis de déplacement et de modification de texte de base `AreBrowserAcceleratorKeysEnabled` `FALSE` allumés.  
+Les raccourcis clavier ou les liaisons de touches sont pris en charge dans Microsoft Edge et WebView2. Lorsque Microsoft Edge mises à jour sont mises à jour, les liaisons de touches par défaut peuvent changer.  En outre, un raccourci clavier qui est désactivé par défaut peut s’activer si la fonctionnalité est désormais prise en charge dans WebView2. Pour éviter les modifications apportées à vos raccourcis clavier, vous pouvez définir sur , ce qui permet d’éteindre toutes les touches qui accèdent aux fonctionnalités du navigateur, tout en maintenant tous les raccourcis de déplacement et de modification de texte de base `AreBrowserAcceleratorKeysEnabled` `FALSE` allumés.  
 
 Le tableau suivant répertorie les raccourcis qui sont toujours désactivés dans WebView2.  Un astérisque \( \) indique que le raccourci n’est pas désactivé, mais que la fonctionnalité à partir de celle-ci est désactivée ou ne s’applique pas à `*` WebView2.  
 

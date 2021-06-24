@@ -7,12 +7,12 @@ ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft Edge, compatibilité, plateforme web, prévention du suivi, suivis, cookies, stockage, blocage des publicités, blocage de suivi, protection contre le suivi
-ms.openlocfilehash: 66356ab7ddaa56e46e74560d72b510ba63f7d70a
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 24c410beba34b992cf01b973e79c1247fdc26fee
+ms.sourcegitcommit: b5acfd4dd7f57991d659715e4621edd786d44052
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399287"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "11614634"
 ---
 # <a name="tracking-prevention-in-microsoft-edge-chromium"></a>Prévention du suivi dans Microsoft Edge (Chromium)  
 
@@ -23,7 +23,7 @@ Microsoft Edge offre actuellement aux utilisateurs trois niveaux de prévention 
 ![Trois paramètres de prévention du suivi][ImageThreeSettingsTrackingPrevention]  
 
 1.  **De base** : niveau de prévention de suivi le moins restrictif conçu pour les utilisateurs qui aiment des publicités personnalisées et qui ne veulent pas être suivis sur le web.  De base, seuls les utilisateurs sont protégés contre les suivis malveillants tels que les empreintes digitales et les cryptomonnaies.  
-1.  **Équilibré (par défaut)** : niveau par défaut de prévention du suivi conçu pour les utilisateurs qui souhaitent voir des publicités moins publicitaires qui les suivent sur le web pendant qu’ils naviguent.  Balanced vise à bloquer les suivis des sites avec qui les utilisateurs ne s’engagent jamais tout en réduisant le risque de problèmes de compatibilité sur le web.  
+1.  **Équilibré (par défaut)** : niveau par défaut de prévention du suivi conçu pour les utilisateurs qui souhaitent voir des publicités moins personnalisées tout en réduisant le risque de problèmes de compatibilité lorsqu’ils naviguent sur le web.  Balanced vise à bloquer les suivis des sites avec qui les utilisateurs ne s’engagent jamais.  
 1.  **Strict** : niveau le plus restrictif de prévention du suivi conçu pour les utilisateurs qui sont compatibles avec le site web de commerce pour une confidentialité maximale.  
 
 La fonctionnalité de prévention du suivi dans Microsoft Edge est composé de trois composants principaux qui fonctionnent ensemble pour déterminer si une ressource spécifique d’un site web doit être classée comme suivi et bloquée.  Les composants sont les suivants :  
@@ -59,7 +59,7 @@ Si l’un de ces noms d’hôte correspond à un nom d’hôte dans les listes D
 Pour assurer la protection contre le suivi des actions sur le web, Microsoft Edge deux actions d’application contre les suivis classifiés :
 
 *   **Restreindre l’accès** au stockage : si une ressource de suivi connue tente d’accéder à un stockage web dans lequel elle peut tenter de faire persister des données sur l’utilisateur, Microsoft Edge bloque cet accès.  Cela inclut la restriction de la possibilité pour ce suivi d’obtenir ou de définir des cookies, ainsi que d’accéder aux API de stockage telles que `IndexedDB` et `localStorage` .  
-*   **** Bloquer les chargements de ressources : si une ressource de suivi connue est chargée sur un site web, Microsoft Edge peut bloquer cette charge avant que la demande n’atteigne le réseau en fonction de l’impact de la charge et du paramètre de prévention du suivi qu’un utilisateur a définie.  Les chargements bloqués peuvent inclure des scripts de suivi, des pixels, des iframes, etc.  Cela empêche toute donnée potentiellement envoyée au domaine de suivi et peut même améliorer les temps de chargement et les performances de page en tant qu’effet secondaire.  
+*   **** Bloquer les chargements de ressources : si une ressource de suivi connue est chargée sur un site web, Microsoft Edge peut bloquer cette charge avant que la demande n’atteigne le réseau en fonction de l’impact de compatibilité de la charge et du paramètre de prévention du suivi qu’un utilisateur a définie.  Les chargements bloqués peuvent inclure des scripts de suivi, des pixels, des iframes, etc.  Cela empêche toute donnée potentiellement envoyée au domaine de suivi et peut même améliorer les temps de chargement et les performances de page en tant qu’effet secondaire.  
 
 Un utilisateur peut choisir l’icône du volant d’informations de la page sur le côté gauche de la barre d’adresses pour savoir quels suivis ont été bloqués sur une page spécifique : 
 
@@ -71,7 +71,7 @@ La façon dont les mesures d’application sont appliquées dépend du niveau de
 
 Pour vous assurer que la compatibilité web est conservée autant que possible, Microsoft Edge trois atténuations permettent d’équilibrer les mesures d’application dans des situations spécifiques.  Voici l’atténuation [de la relation d’organisation](#org-relationship-mitigation), l’atténuation [Org Engagement](#org-engagement-mitigation)et la liste [compatExceptions](#the-compatexceptions-list).  
 
-Avant de vous plonger dans les atténuations, il est intéressant de définir le concept d’une « organisation » ou d’une « organisation ».  [La][|::ref3::|Main] déconnexion conserve également une liste appelée [entities.jsqui][GitHubDisconnectMeTrackingProtectionEntitiesJson] définit des groupes d’URL qui sont propriétés de la même organisation/société parente.  La fonctionnalité de prévention du suivi dans Microsoft Edge [](#org-relationship-mitigation) utilise cette liste à la fois dans l’atténuation des relations organisationnelles et dans l’atténuation [Org Engagement](#org-engagement-mitigation) pour minimiser l’occurrence des problèmes de compatibilité causés par la prévention du suivi affectant les demandes entre les organisations.  
+Avant de vous plonger dans les atténuations, il est utile de définir le concept d’une « organisation » ou d’une « organisation » pour faire court.  [La][|::ref3::|Main] déconnexion conserve également une liste appelée [entities.jsqui][GitHubDisconnectMeTrackingProtectionEntitiesJson] définit des groupes d’URL qui sont propriétés de la même organisation/société parente.  La fonctionnalité de prévention du suivi dans Microsoft Edge [](#org-relationship-mitigation) utilise cette liste à la fois dans l’atténuation des relations organisationnelles et dans l’atténuation [Org Engagement](#org-engagement-mitigation) pour minimiser l’occurrence des problèmes de compatibilité causés par la prévention du suivi affectant les demandes entre les organisations.  
 
 ### <a name="org-relationship-mitigation"></a>Atténuation des relations d’organisation  
 
@@ -95,7 +95,7 @@ L’atténuation de l’engagement de l’organisation a été créée pour mini
 > 
 > Si un autre site, inclut du contenu tiers \(par exemple, une vidéo incorporée à partir de \) à partir d’un des domaines de l’organisation sociale qui seraient normalement restreints par le suivi des mesures de prévention, le site n’est pas tenu de suivre les mesures de prévention tant que le score d’engagement du site de l’utilisateur avec des domaines de l’organisation sociale est maintenu `https://content-embedder.example` au-dessus du `social-videos.example` seuil.
 > 
-> Si un site n’appartient pas à une organisation, un utilisateur doit établir un score d’engagement de site de 4,1 ou plus avec lui directement avant que les blocs d’accès au stockage/charge de ressources imposées par la prévention du suivi ne soient relâchés.
+> Si un site n’appartient pas à une organisation, un utilisateur doit établir un score d’engagement de site de 4,1 ou plus avec lui directement avant que les blocs d’accès au stockage/charge de ressources imposées par la prévention du suivi soient relâchés.
 
 L’atténuation de l’engagement de l’organisation est actuellement appliquée uniquement en mode équilibré afin que Microsoft Edge offre les protections les plus élevées possibles pour les utilisateurs qui ont choisi strict.
 
@@ -109,9 +109,9 @@ Une fois [l’API Stockage Access][GitHubMsExplainersStorageAccessApi] implémen
 
 ## <a name="current-tracking-prevention-behavior"></a>Comportement actuel de prévention du suivi  
 
-Le tableau suivant présente les actions d’application et les atténuations qui sont appliquées à chaque catégorie de suivi classifié dans Microsoft Edge.  
+Le tableau suivant indique les actions d’application et les atténuations qui sont appliquées à chaque catégorie de suivi classifié dans Microsoft Edge.  
 
-*   Les catégories de suivi définies par les catégories de listes de protection de suivi de déconnexion sont [répertoriées ci-dessus.][GitHubDisconnectTrackingProtectionCategories]  
+*   Les catégories de suivis définies par les catégories de liste de protection de suivi de déconnexion sont [répertoriées][GitHubDisconnectTrackingProtectionCategories]en haut.  
 *   Le long du côté gauche se sont ajoutés les trois niveaux de prévention du suivi dans Microsoft Edge \(Basic, Balanced et Strict\).  
 *   La lettre `S` indique que l’accès au stockage est bloqué.  
 *   La lettre indique que l’accès au stockage et les charges de ressources \(telles que les `B` demandes réseau\) sont bloqués.  
@@ -127,7 +127,7 @@ Le tableau suivant présente les actions d’application et les atténuations qu
 > L’atténuation de l’engagement de l’organisation ne s’applique pas aux catégories Cryptomining ou Fingerprinting.  
 
 > [!TIP]
-> Le mode strict bloque plus de charges de ressources qu’Avec équilibrage.  Le blocage d’un plus grand nombre de charges de ressources peut entraîner l’apparition d’un mode Strict qui semble bloquer moins de demandes de suivi qu’Balanced, car les suivis qui les font ne sont jamais chargés.  
+> Le mode strict bloque plus de charges de ressources qu’Avec équilibrage.  Le blocage d’un plus grand nombre de charges de ressources peut entraîner le blocage d’un nombre inférieur de demandes de suivi par le mode Strict, car les suivis qui les font ne sont jamais chargés.  
 
 > [!NOTE]
 > La colonne Empreintes digitales dans [le](#current-tracking-prevention-behavior) comportement de prévention du suivi actuel fait référence aux suivis répertoriés dans la liste Fingerprinting en plus d’une autre liste.  Les suivis qui apparaissent uniquement sur la liste fingerprinting sont considérés comme des empreintes digitales non malveillantes et ne sont pas bloqués.
@@ -142,7 +142,7 @@ Le moyen le plus simple de déterminer si une URL spécifique est classée en ta
 
 1.  Ouvrez DevTools et accédez à l’onglet Console.  
 1.  Actualisez la page web.  
-    1.  Vous pouvez effacer d’abord les **cookies** et les autres données de site pour réinitialiser les scores d’engagement du site et garantir une tablette entièrement nettoyée.  
+    1.  Vous pouvez d’abord effacer les **cookies** et les autres données de site pour réinitialiser les scores d’engagement du site et garantir une tablette entièrement nettoyée.  
 1.  Recherchez tous les messages `Tracking Prevention blocked access to storage for <URL>` lus.  
     1.  Vous pouvez développer les messages pour voir les URL individuelles qui ont été bloquées.  
 1.  Si vous devez déterminer la catégorie dans laquelle se trouve un site bloqué spécifique, le moyen le plus simple de le rechercher dans la liste Disconnect [services.js][GitHubDisconnectTrackingProtectionCategories].  Les entrées sont alphabétisées, donc le défilement vers le haut d’un bloc d’entrées de site vous permet de trouver la catégorie spécifique d’un site particulier.  
@@ -170,7 +170,7 @@ La section suivante contient les réponses aux questions fréquemment posées su
 
 Actuellement, Microsoft Edge seulement une option pour désactiver l’exécution des mesures de prévention du suivi sur un site spécifié.  Cette option est accessible via le flyout d’informations de la page ou via la `edge://settings/privacy/trackingPreventionExceptions` page.  
 
-Cela étant dit, les **options** Bloquer et Autoriser sur la page peuvent être utilisées pour autoriser ou refuser l’accès de domaines spécifiques au stockage, tels que les cookies et d’autres mécanismes de stockage de **** `edge://settings/content/cookies` navigateur.  Cela est utile pour le débogage des problèmes de site causés par le suivi des mesures de prévention qui bloquent l’accès au stockage pour un site spécifique.  
+Cela étant dit, les **options** Bloquer et Autoriser sur la page peuvent être utilisées pour autoriser ou refuser l’accès à des domaines spécifiques au stockage, tels que les cookies et d’autres mécanismes de stockage de **** `edge://settings/content/cookies` navigateur.  Cela est utile pour le débogage des problèmes de site causés par le suivi des mesures de prévention qui bloquent l’accès au stockage pour un site spécifique.  
 
 <!-- image links -->  
 
