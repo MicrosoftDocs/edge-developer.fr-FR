@@ -3,17 +3,17 @@ description: Découvrez comment tester votre site web ou votre application dans 
 title: Utiliser WebDriver (Chromium) pour tester l’automatisation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2021
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, développement web, html, css, javascript, développeur, webdriver, selenium, test, outils, automatisation, test
-ms.openlocfilehash: 3865162b8227db2f0cfa051801a5de28ecf4b9d1
-ms.sourcegitcommit: 3094c972532bc89dcb429d26880c873809fd1ab8
+ms.openlocfilehash: c68a16aebcfdc6ade8838145368d32ad84a82209
+ms.sourcegitcommit: d0a6959c5338cf1927093b4a9ed29a0bc0390b43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "11599456"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "11615427"
 ---
 # <a name="use-webdriver-chromium-for-test-automation"></a>Utiliser WebDriver (Chromium) pour tester l’automatisation  
 
@@ -26,26 +26,26 @@ WebDriver permet aux développeurs de créer des tests automatisés qui simulent
 
 ## <a name="relationship-between-webdriver-and-other-software"></a>Relation entre WebDriver et d’autres logiciels
 
-Pour automatiser Microsoft Edge webDriver afin de simuler l’interaction utilisateur, vous avez besoin de 3 composants :
+Pour automatiser Microsoft Edge webdriver pour simuler l’interaction utilisateur, vous avez besoin de trois composants :
 
 *  Microsoft Edge
 *  Microsoft Edge Driver
-*  Une infrastructure de test WebDriver, telle que Selenium
+*  Infrastructure de test WebDriver
 
 La relation fonctionnelle entre WebDriver, Microsoft Edge Driver, Selenium et Internet Explorer Driver est la suivante.
 
 | Technologie | Rôle |
 |---|---|
 | WebDriver | Norme W3C pour un protocole de câblage de plateforme et linguistiquement neutre.  Ce protocole permet aux programmes hors processus d’indiquer à distance le comportement des navigateurs web. |
-| Microsoft Edge Driver | Implémentation de Microsoft du protocole WebDriver spécifiquement pour Microsoft Edge. Test authors write tests that use WebDriver commands that Microsoft Edge Driver receives. Microsoft Edge Le pilote est alors chargé de communiquer cette commande au navigateur. |
-| Selenium | Infrastructure de test WebDriver populaire que les auteurs de test utilisent pour écrire des tests de bout en bout et automatiser les navigateurs. Le selenium peut être utilisé sur n’importe quelle plateforme et est disponible dans Java, Python, C#, Ruby et JavaScript. |
+| Microsoft Edge Driver | Implémentation de Microsoft du protocole WebDriver spécifiquement pour Microsoft Edge. Les auteurs de tests écrivent des tests qui utilisent les commandes WebDriver que Microsoft Edge Driver reçoit. Microsoft Edge Le pilote est alors chargé de communiquer cette commande au navigateur. |
+| Selenium | Infrastructure de test WebDriver populaire qui permet aux auteurs de test d’écrire des tests de bout en bout et d’automatiser les navigateurs. Le selenium peut être utilisé sur n’importe quelle plateforme et est disponible dans Java, Python, C#, Ruby et JavaScript. |
 | Pilote Internet Explorer | Implémentation du protocole WebDriver spécifiquement pour Internet Explorer. Ce produit est maintenu par le projet Selenium. Pour exécuter des tests de bout en bout hérités pour Internet Explorer, nous vous recommandons d’utiliser pilote Internet Explorer. |
 
 Les sections suivantes décrivent comment commencer avec WebDriver pour Microsoft Edge \(Chromium\).  
 
 ## <a name="install-microsoft-edge-chromium"></a>Installer Microsoft Edge (Chromium)  
 
-Veillez à installer [Microsoft Edge (Chromium)][MicrosoftEdge].  Pour confirmer que vous avez installé Microsoft Edge \(Chromium\), accédez à et vérifiez que le numéro de version est `edge://settings/help` la version 75 ou ultérieure.  
+Veillez à installer [Microsoft Edge (Chromium).][MicrosoftEdge]  Pour confirmer que vous avez installé Microsoft Edge \(Chromium\), accédez à et vérifiez que le numéro de version est `edge://settings/help` la version 75 ou ultérieure.  
 
 ## <a name="download-microsoft-edge-driver"></a>Télécharger Microsoft Edge Driver  
 
@@ -54,8 +54,8 @@ Pour commencer à automatiser les tests, utilisez les étapes suivantes pour vou
 1.  Recherchez votre version de Microsoft Edge.  
     1.  Naviguez vers`edge://settings/help` .  
         
-        :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="Numéro de build Microsoft Edge le 15 avril 2021" lightbox="./media/microsoft-edge-version.msft.png":::
-           Numéro de build Microsoft Edge le 15 avril 2021  
+        :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="Numéro de build de Microsoft Edge le 15 avril 2021" lightbox="./media/microsoft-edge-version.msft.png":::
+           Numéro de build de Microsoft Edge le 15 avril 2021  
         :::image-end:::  
         
 1.  Accédez à [Microsoft Edge pilote .][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]  
@@ -78,7 +78,7 @@ Le dernier composant que vous devez télécharger est un pilote client propre à
 [Téléchargez la liaison de langue WebDriver de votre choix.][SeleniumDownloads]  L’Microsoft Edge recommande [Selenium 4.0.0-beta2][NugetPackagesSeleniumWebdriver400beta02] ou version ultérieure, car il prend en charge Microsoft Edge \(Chromium\).  Toutefois, vous pouvez contrôler Microsoft Edge \(Chromium\) dans toutes les versions antérieures de Selenium, y compris la version stable actuelle de Selenium 3.  
 
 > [!IMPORTANT]
-> Si vous avez précédemment automatisé ou testé Microsoft Edge \(Chromium\) et des classes, votre code WebDriver ne s’exécute pas sur Microsoft Edge `ChromeDriver` `ChromeOptions` version 80 ou ultérieure.  Pour résoudre le problème, mettez à jour vos tests pour utiliser la classe et `EdgeOptions` téléchargez [Microsoft Edge pilote][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver].  
+> Si vous avez précédemment automatisé ou testé Microsoft Edge \(Chromium\) et des classes, votre code WebDriver ne s’exécute pas sur Microsoft Edge `ChromeDriver` `ChromeOptions` version 80 ou ultérieure.  Pour résoudre le problème, mettez à jour vos tests pour utiliser la classe `EdgeOptions` et téléchargez [Microsoft Edge pilote][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver].  
 
 ### <a name="using-selenium-4"></a>Utilisation de Selenium 4
 
@@ -90,7 +90,7 @@ Si vous utilisez Selenium 4 et obtenez cette erreur, supprimez votre projet et a
 
 ### <a name="using-selenium-3"></a>Utilisation de Selenium 3  
 
-Si vous utilisez déjà [Selenium 3,][|::ref1::|]vous avez peut-être des tests de navigateur existants et souhaitez ajouter une couverture pour Microsoft Edge \(Chromium\) sans modifier votre version de Selenium.  Pour utiliser [Selenium 3][|::ref2::|] afin d’écrire des tests automatisés pour Microsoft Edge \(EdgeHTML\) et Microsoft Edge \(Chromium\), installez le package [Outils Selenium][GithubMicrosoftEdgeSeleniumTools] pour Microsoft Edge pour utiliser le pilote mis à jour.  Les classes incluses dans les outils sont entièrement compatibles avec les `EdgeDriver` `EdgeDriverService` équivalents intégrés dans Selenium 4.  
+Si vous utilisez déjà [Selenium 3,][|::ref1::|]vous avez peut-être des tests de navigateur existants et souhaitez ajouter une couverture pour Microsoft Edge \(Chromium\) sans modifier votre version de Selenium.  Pour utiliser [Selenium 3][|::ref2::|] afin d’écrire des tests automatisés pour Microsoft Edge \(EdgeHTML\) et Microsoft Edge \(Chromium\), installez le package [Outils Selenium][GithubMicrosoftEdgeSeleniumTools] pour Microsoft Edge pour utiliser le pilote mis à jour.  Les `EdgeDriver` `EdgeDriverService` classes incluses dans les outils sont entièrement compatibles avec les équivalents intégrés dans Selenium 4.  
 
 Utilisez les étapes suivantes pour ajouter les outils [Selenium pour Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] [et Selenium 3][|::ref3::|] à votre projet.  
 
@@ -124,13 +124,13 @@ Si votre Java utilise Maven, copiez et collez la dépendance suivante dans votre
 </dependency>
 ```  
 
-Le package Java est également disponible en téléchargement direct sur la [page Outils Selenium Microsoft Edge releases.][GithubMicrosoftEdgeSeleniumToolsReleases]  
+Le package Java est également disponible en téléchargement directement sur la [page Outils Selenium Microsoft Edge releases.][GithubMicrosoftEdgeSeleniumToolsReleases]  
 
 #### [<a name="javascript"></a>JavaScript](#tab/javascript/)  
 
 <a id="selenium-tools-install"></a>  
 
-Utilisez [npm][JavaScript|::ref4::|] pour installer [les packages edge-selenium-tools][JavaScriptSeleniumTools] et [selenium-webdriver.][JavaScriptSelenium]  
+Utilisez [npm pour][JavaScript|::ref4::|] installer [les packages edge-selenium-tools][JavaScriptSeleniumTools] et [selenium-webdriver.][JavaScriptSelenium]  
 
 ```javascript
 npm install @microsoft/edge-selenium-tools selenium-webdriver
@@ -198,7 +198,7 @@ let driver = edge.Driver.createSession(options);
 
 ### <a name="choose-specific-browser-binaries-chromium-only"></a>Choisir des binaires de navigateur spécifiques (Chromium uniquement)  
 
-Vous pouvez démarrer une session WebDriver avec des Microsoft Edge \(Chromium\) spécifiques.  Par exemple, vous pouvez exécuter des tests à [l’aide des canaux Microsoft Edge prévisualisation][MicrosoftedgeinsiderDownload] tels que Microsoft Edge Beta.  
+Vous pouvez démarrer une session WebDriver avec des Microsoft Edge binaires \(Chromium\) spécifiques.  Par exemple, vous pouvez exécuter des tests à [l’aide des canaux Microsoft Edge prévisualisation][MicrosoftedgeinsiderDownload] tels que Microsoft Edge Beta.  
 
 #### [<a name="c"></a>C#](#tab/c-sharp/)  
 
@@ -249,7 +249,7 @@ let driver = edge.Driver.createSession(options);
 
 * * *  
 
-### <a name="customize-the-microsoft-edge-driver-service"></a>Personnaliser le service Microsoft Edge pilotes de service  
+### <a name="customize-the-microsoft-edge-driver-service"></a>Personnaliser le service Microsoft Edge pilotes  
 
 #### [<a name="c"></a>C#](#tab/c-sharp/)  
 
@@ -372,11 +372,24 @@ Si vous utilisez [Docker,][DockerHub]exécutez la commande suivante pour téléc
 docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 ```  
 
-Pour plus d’informations, accédez au conteneur [msedgedriver sur Docker Hub.][DockerHubMsedgedriver]  
+Pour plus d’informations, accédez au [conteneur msedgedriver sur Docker Hub.][DockerHubMsedgedriver]  
 
 ## <a name="testing-internet-explorer"></a>Test d’Internet Explorer
 
 Même si Microsoft Edge prend en charge le mode IE, vous ne pouvez pas utiliser le pilote Microsoft Edge avec Microsoft Edge pour tester des sites en mode IE.  Pour tester les sites qui nécessitent Internet Explorer, utilisez [Pilote Internet Explorer][GithubSeleniumHqWikiIEDriver] avec Internet Explorer.
+
+## <a name="application-guard"></a>ApplicationGuard
+
+Les sites de confiance qui utilisent Protection d’application Microsoft Defender (Application Guard) peuvent être automatisés à l’aide Microsoft Edge pilote.
+
+Les sites non confiance qui utilisent Application Guard ne peuvent pas être automatisés ou manipulés à l’aide Microsoft Edge pilote.  Application Guard lance les sites non confiance dans un conteneur et ce conteneur n’expose pas le port de débogage distant dont Microsoft Edge Driver a besoin pour communiquer avec le site.
+
+Votre administrateur d’entreprise définit les sites de confiance, y compris les ressources cloud et les réseaux internes.  Les sites qui ne sont pas dans la liste des sites de confiance sont considérés comme non fiables.  Microsoft Edge Le pilote peut automatiser les fenêtres InPrivate et les sites de la liste des sites de confiance.
+
+Pour plus d’informations sur Application Guard, accédez à : 
+
+*  [Prise en charge de Microsoft Edge pour Microsoft Defender Application Guard](/deployedge/microsoft-edge-security-windows-defender-application-guard)
+*  [Protection d’application Microsoft Defender vue d’ensemble][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]
 
 ## <a name="next-steps"></a>Étapes suivantes  
 
@@ -384,7 +397,7 @@ Pour plus d’informations sur WebDriver et comment écrire des tests WebDriver 
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
-L’Microsoft Edge est enthousiaste à l’écoute de vos commentaires sur l’utilisation de WebDriver, selenium et Microsoft Edge.  Pour envoyer à l’équipe vos **** questions et [commentaires,][TwitterTweetEdgeDevTools]sélectionnez l’icône Envoyer des commentaires dans le Microsoft Edge DevTools ou envoyez un tweet @EdgeDevTools .  
+L Microsoft Edge de l’équipe est enthousiaste à l’écoute de vos commentaires sur l’utilisation de WebDriver, selenium et Microsoft Edge.  Pour envoyer à l’équipe vos **** questions et [commentaires,][TwitterTweetEdgeDevTools]sélectionnez l’icône Envoyer des commentaires dans le Microsoft Edge DevTools ou envoyez un tweet @EdgeDevTools .  
 
 :::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="L’icône Envoyer des commentaires dans Microsoft Edge DevTools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    Icône **Envoyer des commentaires** dans le Microsoft Edge DevTools  
@@ -392,12 +405,14 @@ L’Microsoft Edge est enthousiaste à l’écoute de vos commentaires sur l’u
 
 <!-- links -->  
 
-[DevtoolsIndex]: ../devtools-guide-chromium/index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
+[DevtoolsIndex]: ../devtools-guide-chromium/index.md "Microsoft Edge outils de développement (Chromium) | Documents Microsoft"  
 [WebdriverCapabilitiesEdgeOptions]: ./capabilities-edge-options.md "Fonctionnalités et fonctionnalités EdgeOptions | Documents Microsoft"  
 
 <!--[Webdriver]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
 
 [DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge - Stratégies | Documents Microsoft"  
+[WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview "Protection d’application Microsoft Defender (Windows 10) : Windows sécurité | Documents Microsoft"  
+[DeployedgeMicrosoftEdgeSecurityWindowsDefenderApplicationGuard]: /deployedge/microsoft-edge-security-windows-defender-application-guard "Microsoft Edge prise en charge des Protection d’application Microsoft Defender | Documents Microsoft"
 
 [DockerHub]: https://hub.docker.com "Docker Hub"  
 [DockerHubMsedgedriver]: https://hub.docker.com/_/microsoft-msedge-msedgedriver?tab=description "msedgedriver | Hub Docker"  
@@ -413,7 +428,7 @@ L’Microsoft Edge est enthousiaste à l’écoute de vos commentaires sur l’u
 
 [MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "Microsoft Edge Pilote | Microsoft Edge Développeur"  
 
-[MicrosoftEdge]: https://www.microsoft.com/edge "Télécharger le nouveau navigateur Microsoft Edge navigateur"  
+[MicrosoftEdge]: https://www.microsoft.com/edge "Télécharger le nouveau Microsoft Edge navigateur"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Télécharger les canaux Microsoft Edge Insider"  
 
@@ -423,7 +438,7 @@ L’Microsoft Edge est enthousiaste à l’écoute de vos commentaires sur l’u
 [NugetPackagesSeleniumWebdriver400beta02]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-beta2 "Selenium.WebDriver 4.0.0-beta2 | NuGet Galerie"  
 
 [PythonPip]: https://pypi.org/project/pip/ "pip | PyPI"  
-[PythonSeleniumTools]: https://pypi.org/project/msedge-selenium-tools/ "msedge-selenium-tools | PyPI"  
+[PythonSeleniumTools]: https://pypi.org/project/msedge-selenium-tools/ "Msedge-selenium-tools | PyPI"  
 [PythonSelenium]: https://pypi.org/project/selenium/ "selenium | PyPI"
 
 [SeleniumHQ]: https://www.selenium.dev "SeleniumHQ"  

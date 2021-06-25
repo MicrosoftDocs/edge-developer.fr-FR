@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: ec0d1a003e621ecc2220c3eb0d03992bcd8fffa1
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 71e71555940d74f2071178be2e6daf0ec2f49dfd
+ms.sourcegitcommit: d0a6959c5338cf1927093b4a9ed29a0bc0390b43
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11565021"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "11615420"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -30,9 +30,7 @@ ms.locfileid: "11565021"
 # <a name="view-application-cache-data-with-microsoft-edge-devtools"></a>Afficher les données du cache d’application Microsoft Edge DevTools  
 
 > [!WARNING]
-> L’API de cache [d’application est supprimée de la plateforme web.][HTMLStandardOfflineWebApplications]  
-
-<!--todo: Replace [HTMLStandardOfflineWebApplications] with [WebDevAppcacheRemoval].  -->  
+> Le cache d’applications est supprimé et vous devez éviter de l’utiliser.  L’API de cache d’applications est supprimée de la plateforme web.  Pour plus d’informations, [accédez à Préparation de la suppression d’AppCache.][WebDevAppcacheRemoval]
 
 Ce guide vous montre comment utiliser Microsoft Edge [DevTools pour][MicrosoftEdgeDevTools] inspecter les ressources [du cache d’applications.][MDNWebAPIsWindowApplicationCache]  
 
@@ -59,7 +57,7 @@ La **colonne Type** représente la catégorie de la [ressource.][MDNHTMLResource
 | `Explicit` | Cette ressource a été explicitement répertoriée dans le manifeste. |  
 | `Fallback` | L’URL est un de base pour une autre ressource.  L’URL de l’autre ressource n’est pas répertoriée dans DevTools. |  
 | `Master` | `manifest`L’attribut de la ressource indique que le cache est le parent de la ressource. |  
-| `Network` | Le manifeste a spécifié que la ressource doit être provenant du réseau. |  
+| `Network` | Le manifeste spécifie que la ressource doit être provenant du réseau. |  
 
 <!--todo:  replace "Master" phrasing if possible.  -->  
 
@@ -74,11 +72,8 @@ En bas du tableau se cachent des icônes d’état indiquant votre connexion ré
 | `UPDATEREADY` |  Une nouvelle version du cache est disponible. |  
 
 <!-- links -->  
-
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge outils de développement (Chromium) | Documents Microsoft"  
-
-[HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "Applications Web hors connexion - Html Standard"  
-
+<!-- external links: -->
 [MDNHTMLResourcesInAnApplicationCache]: https://developer.mozilla.org/docs/Web/HTML/Using_the_application_cache#Resources_in_an_application_cache "Ressources dans un cache d’application | MDN"  
 [MDNWebAPIsWindowApplicationCache]: https://developer.mozilla.org/docs/Web/API/Window/applicationCache "Window.applicationCache - Api web | MDN"  
 
@@ -86,7 +81,7 @@ En bas du tableau se cachent des icônes d’état indiquant votre connexion ré
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/applicationcache) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/storage/applicationcache) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  
