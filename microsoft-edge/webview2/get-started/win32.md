@@ -8,25 +8,22 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
-ms.openlocfilehash: 073a92bf10a7ead85ac91bff54b5fc405c7d577c
-ms.sourcegitcommit: 777b16ef10363f2dfd755f115ee2d4c81a8de46f
+ms.openlocfilehash: 2714f9a6cffea3cb7d53f9a4128d64920fd02dce
+ms.sourcegitcommit: 7713eec634264b0c44b1bb426f5b466c44b4e005
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11535924"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "11618385"
 ---
 # <a name="get-started-with-webview2"></a>Mise en place de WebView2  
 
 Dans cet article, commencer à créer votre première application WebView2 et en savoir plus sur les principales fonctionnalités de [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Pour plus d’informations sur les API WebView2 individuelles, accédez à la [référence d’API.][Webview2ReferenceWin32]  
 
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Prérequis  
 
 Veillez à installer la liste des conditions préalables suivante avant de poursuivre.  
 
 *   [WebView2 Runtime][Webview2Installer] ou tout canal [Microsoft Edge (Chromium) non stable][MicrosoftedgeinsiderDownload] installé sur le système d’exploitation pris en charge \(actuellement Windows 10, Windows 8.1 et Windows 7\).  
-    
-    > [!NOTE]
-    > L’équipe WebView recommande d’utiliser le canal Canary et la version minimale requise est 82.0.488.0.  
     
 *   [Visual Studio][MicrosoftVisualstudioMain] 2015 ou ultérieure avec la prise en charge de C++ installée.  
     
@@ -113,7 +110,7 @@ Pour créer et exécuter l’exemple d’application, sélectionnez `F5` .  Votr
 
 Ajoutez un WebView à la fenêtre principale.  
 
-Utilisez la méthode pour configurer l’environnement et localiser Microsoft Edge navigateur `CreateCoreWebView2Environment` \(Chromium\) sur le contrôle.  Vous pouvez également utiliser la méthode si vous souhaitez spécifier l’emplacement du navigateur, le dossier utilisateur, les indicateurs de navigateur, etc., au lieu d’utiliser `CreateCoreWebView2EnvironmentWithOptions` le paramètre par défaut.  À la fin de la méthode, exécutez la méthode à l’intérieur du rappel et exécutez la méthode pour obtenir le `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` WebView associé.  
+Utilisez la méthode pour configurer l’environnement et `CreateCoreWebView2Environment` localiser le navigateur Microsoft Edge \(Chromium\) sur le contrôle.  Vous pouvez également utiliser la méthode si vous souhaitez spécifier l’emplacement du navigateur, le dossier utilisateur, les indicateurs de navigateur, etc., au lieu d’utiliser le `CreateCoreWebView2EnvironmentWithOptions` paramètre par défaut.  À la fin de la méthode, exécutez la méthode à l’intérieur du rappel et exécutez la méthode pour obtenir le `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` WebView associé.  
 
 Dans le rappel, définissez quelques paramètres de plus, resizez le WebView pour prendre 100 % de la fenêtre parente et accédez à Bing.  
 
@@ -215,12 +212,12 @@ webviewWindow->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEv
 
 À présent, l’application ne navigue pas vers les sites non https.  Vous pouvez utiliser un mécanisme similaire pour accomplir d’autres tâches, telles que la limitation de la navigation à l’intérieur de votre propre domaine.  
 
-## <a name="step-5---scripting"></a>Étape 5 : scripts  
+## <a name="step-5---scripting"></a>Étape 5 : écriture de scripts  
 
 Vous pouvez utiliser des applications hôtes pour injecter du code JavaScript dans des contrôles WebView2 lors de l’utilisation.  Vous pouvez tâcher WebView pour exécuter du javaScript arbitraire ou ajouter des scripts d’initialisation.  Le javaScript injecté s’applique à tous les nouveaux documents de niveau supérieur et aux images enfants jusqu’à ce que le JavaScript soit supprimé.  Le javaScript injecté est exécuté avec un minutage spécifique.  
 
 *   Exécutez-le après la création de l’objet global.  
-*   Exécutez-le avant tout autre script inclus dans le document HTML.  
+*   Exécutez-le avant d’exécuter tout autre script inclus dans le document HTML.  
     
 Copiez l’extrait de code suivant et collez-le dans `HelloWebView.cpp` .  
 
@@ -248,7 +245,7 @@ L’hôte et le contenu web peuvent également communiquer entre eux par le biai
 Par exemple, pour comprendre le mécanisme, les étapes suivantes se produisent lorsque vous essayez d’afficher l’URL du document dans WebView.  
 
 1.  L’hôte inscrit un handler pour renvoyer le message reçu au contenu web  
-1.  L’hôte injecte un script au contenu web qui inscrit un handler pour imprimer le message à partir de l’hôte  
+1.  L’hôte injecte un script au contenu web qui inscrit un handler pour imprimer un message à partir de l’hôte  
 1.  L’hôte injecte un script au contenu web qui publie l’URL sur l’hôte  
 1.  Le handler de l’hôte est déclenché et renvoie le message \(l’URL\) au contenu web  
 1.  Le handler du contenu web est déclenché et imprime le message à partir de l’hôte \(l’URL\)  
@@ -295,7 +292,7 @@ Pour obtenir des fonctionnalités WebView2 supplémentaires qui ne sont pas couv
 *   Pour un exemple d’application créé à l’aide de WebView2, accédez [à WebView2Browser][GithubMicrosoftedgeWebview2browser].  
 *   Pour plus d’informations sur l’API WebView2, accédez à la référence [d’API.][Webview2ReferenceWin32]  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe web Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
