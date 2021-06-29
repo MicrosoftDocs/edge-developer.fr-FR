@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 5f499a6c9f1109f80a9d459edf94ed2226734f19
-ms.sourcegitcommit: 87ba918b0910373bb645615377709bf140dc9b19
+ms.openlocfilehash: 69fcd29f9b4cae9ec290798b767fbe54793cb2fd
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "11583458"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624779"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -36,7 +36,7 @@ ms.locfileid: "11583458"
 <!--  Title: Get code hints in Elements tool  -->  
 <!--  Subtitle: Wavy underlines like the ones you see in Visual Studio Code now display in the Elements tool.  Underlines alert you to code issues related to accessibility, compatibility, security, performance, and  so on.  -->  
 
-Dans la plupart des IDE modernes, les soulignements ondulés sous le texte indiquent des erreurs de syntaxe.   Dans Microsoft Edge version 91 ou ultérieure, les soulignements ondulés s’affichent sous HTML dans la vue **DOM** de **l’outil Elements.**  Les soulignements ondulés indiquent des problèmes de code et des suggestions liés à l’accessibilité, la compatibilité, les performances, etc.  Pour plus d’informations sur la façon de passer en revue et de modifier les problèmes, accédez à Rechercher et résoudre les problèmes avec [l’outil Microsoft Edge DevTools Issues][DevtoolsIssuesIndex].  
+Dans la plupart des IDE modernes, les soulignements ondulés sous le texte indiquent des erreurs de syntaxe.   Dans Microsoft Edge version 91 ou ultérieure, les soulignements ondulés s’affichent sous HTML dans la vue **DOM** de **l’outil Elements.**  Les soulignements ondulés indiquent des problèmes de code et des suggestions liés à l’accessibilité, la compatibilité, les performances, etc.  Pour plus d’informations sur la révision et la modification des problèmes, accédez à Rechercher et résoudre les problèmes à l’aide de [l’outil Problèmes.][DevtoolsIssuesIndex]  
 
 Pour ouvrir **l’outil Problèmes** et en savoir plus sur le problème et comment le résoudre, effectuer l’une des actions suivantes.  
 
@@ -72,7 +72,7 @@ La fonctionnalité d’outils DevTools vous permet d’en savoir plus sur les di
 *   [Ouvrez le menu Commande,][DevtoolsCommandMenuIndexOpenCommandMenu] puis tapez `tooltips` .  
 *   Choose **Customize and control DevTools** \( `...` \) > **Help**  >  **Toggle the DevTools Tooltips**.  
 
-En outre, si vous activer le mode Focus et l’expérience d’bulles d’outils [DevTools,][DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode] vous pouvez également choisir le bouton Basculer le bouton d’outils **DevTools** \( \) en bas de la barre `?` d’activité. ****  
+En outre, si vous allumez l’expérience d’bulles d’outils Mode Focus et [DevTools,][DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode] vous pouvez également choisir le bouton Basculer le bouton d’outils **DevTools** \( \) en bas de la barre `?` d’activité. ****  
 
 Pour afficher plus d’informations sur l’utilisation de DevTools, allumez les info-bulles, puis pointez sur chaque région en plan des DevTools.  
 
@@ -97,7 +97,7 @@ Dans Microsoft Edge version 91 ou ultérieure, si vous êtes développeur Progre
    Passer en revue **la chronologie** du cycle de mise **à jour** pour votre service de travail  
 :::image-end:::  
 
-Pour plus d’informations sur le cycle de vie de vos employés de service, accédez au cycle de vie des travailleurs [de service.][ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]  Pour plus d’informations sur les outils de débogage pour les applications web progressives et les travailleurs de service dans DevTools, accédez aux améliorations apportées aux services [de travail.][DevtoolsServiceWorkerIndex]  Pour passer en revue les mises à jour en temps réel de cette fonctionnalité dans Chromium projet open source, accédez au problème [1066604][CR1066604].  
+Pour plus d’informations sur le cycle de vie de vos employés de service, accédez au cycle de vie des travailleurs [de service.][ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]  Pour plus d’informations sur les outils de débogage pour les applications web progressives et les travailleurs de service dans DevTools, accédez aux améliorations apportées aux services [de travail.][DevtoolsServiceWorkerIndex]  Pour passer en revue les mises à jour en temps réel de cette fonctionnalité dans Chromium projet open source, accédez à Problème [1066604][CR1066604].  
 
 ## <a name="progressive-web-apps-no-longer-display-warnings-for-non-square-icons"></a>Les applications web progressives n’affichent plus d’avertissements pour les icônes non carrées  
 
@@ -123,7 +123,7 @@ Most operating systems require square icons.  Please include at least one square
    :::column-end:::
 :::row-end:::  
 
-Pour passer en revue les erreurs et les avertissements dans votre manifeste d’application web, accédez à l’outil **Application** et choisissez la section **Manifeste.**  Les erreurs et avertissements sont répertoriés sous le titre **Erreurs et avertissements.**  Pour plus d’informations sur le manifeste d’application web, accédez à Utiliser le manifeste d’application web pour intégrer votre application Web progressive [dans le système d’exploitation.][ProgressiveWebAppsWebappmanifests]  Pour créer des icônes à inclure dans votre manifeste d’application web, accédez au générateur [d’images PWABuilder.][PwabuilderImagegenerator]  Pour passer en revue les mises à jour en temps réel de cette fonctionnalité dans le projet open source Chromium, accédez à Problème [1185945][CR1185945].  
+Pour passer en revue les erreurs et les avertissements dans votre manifeste d’application web, accédez à l’outil **Application** et choisissez la section **Manifeste.**  Les erreurs et avertissements sont répertoriés sous le titre **Erreurs et avertissements.**  Pour plus d’informations sur le manifeste de l’application Web, accédez à Utiliser le manifeste d’application web pour intégrer votre application Web progressive [dans le système d’exploitation.][ProgressiveWebAppsWebappmanifests]  Pour créer des icônes à inclure dans votre manifeste d’application web, accédez au générateur [d’images PWABuilder.][PwabuilderImagegenerator]  Pour passer en revue les mises à jour en temps réel de cette fonctionnalité dans le projet open source Chromium, accédez à Problème [1185945][CR1185945].  
 
 ## <a name="localized-devtools-now-supported-in-chromium-based-browsers"></a>DevTools localisées désormais prise en charge dans Chromium navigateurs basés sur les navigateurs  
 
@@ -152,7 +152,7 @@ Pour passer en revue les erreurs et les avertissements dans votre manifeste d’
 <!-- Title: Display Issues in severity order  -->  
 <!-- Subtitle: Entries in the Issues tool now display in severity order and allow you to focus your updates on the most important issues. -->  
 
-**L’outil Problèmes** affiche des recommandations pour améliorer votre site web, notamment l’accessibilité, les performances, la sécurité, etc. En fonction de vos commentaires, les problèmes sont désormais automatiquement triés par gravité.  Dans chaque catégorie de commentaires, **** chaque problème marqué comme erreur apparaît en premier, suivi de chaque problème marqué comme **avertissement,** puis de chaque problème marqué comme **conseil.**  Pour vous aider à affiner vos problèmes, des options de filtre supplémentaires sont prévues pour une prochaine mise à jour.  Pour plus d’informations sur la façon de passer en revue les problèmes, accédez à Rechercher et résoudre les problèmes avec [l’outil Microsoft Edge DevTools Issues][DevtoolsIssuesIndex].  
+**L’outil Problèmes** affiche des recommandations pour améliorer votre site web, notamment l’accessibilité, les performances, la sécurité, etc. En fonction de vos commentaires, les problèmes sont désormais automatiquement triés par gravité.  Dans chaque catégorie de commentaires, **** chaque problème marqué comme erreur apparaît en premier, suivi de chaque problème marqué comme **avertissement,** puis de chaque problème marqué comme **conseil.**  Pour vous aider à affiner vos problèmes, des options de filtre supplémentaires sont prévues pour une prochaine mise à jour.  Pour plus d’informations sur la façon de passer en revue les problèmes, accédez à Rechercher et résoudre les problèmes à l’aide de [l’outil Problèmes.][DevtoolsIssuesIndex]  
 
 :::image type="complex" source="../../media/2021/04/elements-issues-ordered-issues.msft.png" alt-text="L’outil Problèmes affiche les problèmes triés par gravité" lightbox="../../media/2021/04/elements-issues-ordered-issues.msft.png":::
    **L’outil Problèmes** affiche les problèmes triés par gravité  
@@ -163,7 +163,7 @@ Pour passer en revue les erreurs et les avertissements dans votre manifeste d’
 <!-- Title: Microsoft Edge DevTools for Visual Studio version 1.1.7  -->  
 <!-- Subtitle: Increased target closure reliability, automatically update the side panel, new contextual menu for settings and Changelog, and more. -->  
 
-Les [outils][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] Microsoft Edge pour Visual Studio Code version 1.1.7 fournissent les outils DevTools de [Microsoft Edge version 88.][DevtoolsWhatsNew202011Devtools]  Cette extension prend désormais en charge ARM et ne dépend plus du débogger [pour Microsoft Edge][VisualstudioMarketplaceMsjsdiagDebuggerForEdge] extension.  La version 1.1.7 inclut les correctifs et améliorations de bogue suivants.  
+Les [outils][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] Microsoft Edge pour Visual Studio Code version 1.1.7 fournissent devTools à partir [Microsoft Edge version 88.][DevtoolsWhatsNew202011Devtools]  Cette extension prend désormais en charge ARM et ne dépend plus du débogger [pour Microsoft Edge][VisualstudioMarketplaceMsjsdiagDebuggerForEdge] extension.  La version 1.1.7 inclut les correctifs et améliorations de bogue suivants.  
 
 *   Mise à jour de la fiabilité de la fermeture cible.  
 *   Mise à jour du panneau latéral pour qu’il soit actualisé automatiquement lorsque vous déboguer des cibles créées ou détruites.  
@@ -178,7 +178,7 @@ Pour mettre à jour manuellement la version 1.1.7, accédez à Mettre à jour [u
 
 ### <a name="visualize-css-scroll-snap"></a>Afficher l’achemin de défilement CSS  
 
-Vous pouvez maintenant faire bascule le badge dans l’outil Elements pour inspecter l’alignement de l’alignement en `scroll-snap` défilement CSS. ****  Lorsqu’un élément HTML de votre page web s’y est appliqué, un badge s’affiche à côté de `scroll-snap-type` `scroll-snap` celui-ci dans **l’outil Elements.**  Choisissez le badge pour activer \(ou désactiver\) l’affichage d’une superposition d’un défilement sur la page web.  Pour consulter un exemple de page web, [accédez à Scroll Ancrer Demo][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml].  Dans l’exemple, les points s’affichent sur les bords en snap.  Le port de défilement a un plan plein tandis que les éléments d’a snap ont des tirets.  Le remplissage de défilement est rempli en vert tandis que la marge de défilement est remplie en orange.  Pour passer en revue l’historique de cette fonctionnalité dans Chromium projet open source, accédez au problème [862450][CR862450].  
+Vous pouvez maintenant faire bascule le badge dans l’outil Elements pour inspecter l’alignement de l’alignement de `scroll-snap` défilement CSS. ****  Lorsqu’un élément HTML de votre page web s’y est appliqué, un badge s’affiche à côté de `scroll-snap-type` `scroll-snap` celui-ci dans **l’outil Elements.**  Choisissez le badge pour activer \(ou désactiver\) l’affichage d’une superposition d’un défilement sur la page web.  Pour consulter un exemple de page web, accédez [à Scroll Snap Demo][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml].  Dans l’exemple, les points s’affichent sur les bords de l’ancre.  Le port de défilement a un plan plein tandis que les éléments d’achemin ont un plan de tiret.  Le remplissage de défilement est rempli en vert tandis que la marge de défilement est remplie en orange.  Pour passer en revue l’historique de cette fonctionnalité dans Chromium projet open source, accédez au problème [862450][CR862450].  
 
 :::image type="complex" source="../../media/2021/04/elements-scroll-snap-highlight.msft.png" alt-text="CSS scroll-snap" lightbox="../../media/2021/04/elements-scroll-snap-highlight.msft.png":::
    CSS scroll-snap  
@@ -196,7 +196,7 @@ Pour en savoir plus sur le débogage dans l’outil **Sources,** accédez au vol
 
 ### <a name="new-badge-settings-pane-in-the-elements-tool"></a>Volet Nouveaux paramètres de badge dans l’outil Éléments  
 
-À présent, utilisez les **paramètres de badge dans** l’outil **Éléments** pour activer \(ou désactiver\) les badges individuels.  Utilisez cette fonctionnalité pour personnaliser et rester concentré sur les badges importants pendant que vous inspectez les pages web.  Pour afficher le volet des paramètres de badge en haut de l’outil **Éléments,** effectuer les actions suivantes.  
+À présent, utilisez les **paramètres de badge dans** l’outil **Éléments** pour activer \(ou désactiver\) les badges individuels.  Utilisez cette fonctionnalité pour personnaliser et rester concentré sur les badges importants pendant que vous inspectez les pages web.  Pour afficher le volet des paramètres de badge en haut de l’outil **Éléments,** complétez les actions suivantes.  
 
 1.  Pointez sur n’importe quel élément.  
 1.  Ouvrez le menu contextuel \(cliquez avec le bouton droit\).  
@@ -220,11 +220,11 @@ Les aperçus d’image dans devTools ont été améliorés pour afficher plus d�
 *   Proportions intrinsèques  
 *   Taille du fichier  
     
-Ces informations vous aident à mieux comprendre vos images et à appliquer l’optimisation.  Les informations sur les proportions d’image sont également disponibles dans l’outil **Réseau,** lorsque vous choisissez un aperçu d’image.  
+Les informations vous aident à mieux comprendre vos images et à appliquer l’optimisation.  Les informations sur les proportions d’image sont également disponibles dans l’outil **Réseau,** lorsque vous choisissez un aperçu d’image.  
 
 :::row:::
    :::column span="":::
-      Dans **l’outil Éléments,** l’aperçu d’image affiche désormais plus d’informations sur l’image.  
+      Dans **l’outil Elements,** l’aperçu d’image affiche désormais plus d’informations sur l’image.  
    :::column-end:::
    :::column span="":::
       En outre, les informations sur les proportions d’image sont disponibles dans l’outil **Réseau,** lorsque vous choisissez un aperçu d’image.  
@@ -245,7 +245,7 @@ Ces informations vous aident à mieux comprendre vos images et à appliquer l’
 
 Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez à Problèmes [1149832][CR1149832] et [1170656][CR1170656].  
 
-### <a name="new-options-to-configure-content-encodings-in-the-network-conditions-tool"></a>Nouvelles options de configuration des codages de contenu dans l’outil Conditions réseau 
+### <a name="new-options-to-configure-content-encodings-in-the-network-conditions-tool"></a>Nouvelles options de configuration des encodages de contenu dans l’outil Conditions réseau 
 
 Dans **l’outil** Réseau, sélectionnez le nouveau **** bouton Plus **de conditions réseau...** en haut du menu déroulant Limitation pour ouvrir l’outil **Conditions réseau.**  Pour tester si les réponses du serveur sont correctement codées pour les navigateurs qui ne peuvent pas prendre en charge [gzip,][GnuSoftwareGzipManual] [brotli][|::ref1::|Main]ou un autre futur, effectuer les `Content-Encoding` actions suivantes.  
 
@@ -277,7 +277,7 @@ Pour passer en revue l’historique de cette fonctionnalité dans le projet open
 
 #### <a name="support-for-the-accent-color-keyword"></a>Prise en charge du mot clé accent-color  
 
-L’interface utilisateur de la mise à jour automatique du volet **Styles** détecte désormais le mot clé CSS, qui vous permet de spécifier la couleur d’accentuence pour les contrôles d’interface utilisateur générés par `accent-color` l’élément.  Les contrôles d’interface utilisateur générés par un élément sont, par exemple, des case à cocher ou des boutons d’radio. Pour plus d’informations sur l’état de l Chromium l’implémentation, accédez à Fonctionnalité : propriété CSS de couleur [accentuée.][ChromestatusFeature4752739957473280]  Pour activer cette fonctionnalité, accédez à la case à cocher et définissez-la `edge://flags#enable-experimental-web-platform-features` **sur Activé.**  Pour passer en revue l’historique de cette fonctionnalité dans le Chromium open source, accédez à Problème [1092093][CR1092093].  
+L’interface utilisateur de la mise à jour automatique du volet **Styles** détecte désormais le mot clé CSS, qui vous permet de spécifier la couleur d’accentuence pour les contrôles d’interface utilisateur générés par `accent-color` l’élément.  Les contrôles d’interface utilisateur générés par un élément sont, par exemple, des case à cocher ou des boutons d’radio. Pour plus d’informations sur l’état de l’implémentation Chromium, accédez à Fonctionnalité : propriété CSS de couleur [d’accentuage.][ChromestatusFeature4752739957473280]  Pour activer cette fonctionnalité, accédez à la case à cocher et définissez-la `edge://flags#enable-experimental-web-platform-features` **sur Activé.**  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez à Problème [1092093][CR1092093].  
 
 :::image type="complex" source="../../media/2021/04/elements-styles-accent-color.msft.png" alt-text="mot clé CSS de couleur d’accent" lightbox="../../media/2021/04/elements-styles-accent-color.msft.png":::
    `accent-color` Mot clé CSS
@@ -285,7 +285,7 @@ L’interface utilisateur de la mise à jour automatique du volet **Styles** dé
 
 ### <a name="display-details-about-blocked-features-in-the-frame-details-view"></a>Afficher les détails sur les fonctionnalités bloquées dans l’affichage Détails de l’image  
 
-La stratégie d’autorisations est une API de plateforme web qui permet à un site web d’autoriser ou de bloquer l’utilisation des fonctionnalités de navigateur dans une image individuelle ou dans un site qu’il `iframe` incorpore. Pour plus d’informations, [accédez à l’Explication de la stratégie d’autorisations.][GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd]  Pour afficher les détails sur la raison pour laquelle une fonctionnalité est bloquée, effectuer les actions suivantes.  
+La stratégie d’autorisations est une API de plateforme web qui permet à un site web d’autoriser ou de bloquer l’utilisation des fonctionnalités de navigateur dans une image individuelle ou dans une image qu’il `iframe` incorpore. Pour plus d’informations, [accédez à l’Explication de la stratégie d’autorisations.][GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd]  Pour afficher les détails sur la raison pour laquelle une fonctionnalité est bloquée, effectuer les actions suivantes.  
 
 1.  Accédez à [stratégie d’autorisations OOPIF.][GlitchPermissionPolicyDemoMain]  
 1.  Accédez à **l’outil Application.**  
@@ -293,7 +293,7 @@ La stratégie d’autorisations est une API de plateforme web qui permet à un s
 1.  Accédez à la section **Stratégie des autorisations.**  
 1.  Accédez à la **propriété Fonctionnalités désactivées.**  
 1.  Choose **Show details**.  
-1.  Sélectionnez l’icône en fonction de chaque stratégie pour accéder à la demande réseau qui `iframe` a bloqué la fonctionnalité.  
+1.  Choisissez l’icône en fonction de chaque stratégie pour accéder à la demande réseau qui `iframe` a bloqué la fonctionnalité.  
     
 Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez à Problème [1158827][CR1158827].  
 
@@ -326,7 +326,7 @@ Utilisez la nouvelle colonne dans le volet Stockage cache pour afficher les vale
 
 #### <a name="support-for-new-javascript-features"></a>Prise en charge des nouvelles fonctionnalités JavaScript  
 
-DevTools désormais prise en charge de la nouvelle marque privée [contrôles a.k.a.][V8DevFeaturesPrivateBrandChecks] #foo en javaScript obj fonctionnalité de langage.  La fonctionnalité de vérification de marque privée étend [l’opérateur in][MdnDocsWebJavascriptReferenceOperatorsIn] pour prendre en charge [les champs de classe Privé][V8DevFeaturesClassFieldsPrivateClassFields] sur un objet spécifique.  Essayez-le dans les **outils Console** **et Sources.**  En outre, pour inspecter les champs privés, effectuer les actions suivantes.  
+DevTools désormais prise en charge de la nouvelle marque privée [contrôles a.k.a. #foo][V8DevFeaturesPrivateBrandChecks] en javaScript obj fonctionnalité de langage.  La fonctionnalité de vérification de marque privée étend [l’opérateur in][MdnDocsWebJavascriptReferenceOperatorsIn] pour prendre en charge [les champs de classe Privé][V8DevFeaturesClassFieldsPrivateClassFields] sur un objet spécifique.  Essayez-le dans les **outils Console** **et Sources.**  En outre, pour inspecter les champs privés, effectuer les actions suivantes.  
 
 1.  Accédez **au volet débogger.**  
 1.  Accédez à la section **Étendue.**  
@@ -339,7 +339,7 @@ Pour passer en revue l’historique de cette fonctionnalité dans Chromium proje
 
 #### <a name="enhanced-support-for-breakpoints-debugging"></a>Prise en charge améliorée du débogage des points d’arrêt  
 
-Les bundlers JavaScript modernes tels que [Webpack][WebpackJsMain]et [Rollup][RollupjsMain] prise en charge le fractionnement de code.  Pour en savoir plus sur le fractionnement de code, accédez [au fractionnement de code.][JsWebpackGuidesCodeSplittingTextThereAreThreeGeneralApproachesToCodeSplittingSplitCodeViaInlineFunctionCallsWithinModules]  Dans Microsoft Edge version 90 ou antérieure, DevTools ne définisse les points d’arrêt que dans un seul ensemble.  Dans Microsoft Edge version 91 ou ultérieure, DevTools définit correctement les points d’arrêt dans plusieurs groupes lorsque vous déboguer un composant partagé.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez à Problèmes [1142705][CR1142705], [979000][CR979000]et [1180794][CR1180794].  
+Les bundlers JavaScript modernes tels que [Webpack][WebpackJsMain]et [Rollup prisent][RollupjsMain] en charge le fractionnement de code.  Pour en savoir plus sur le fractionnement de code, accédez [au fractionnement de code.][JsWebpackGuidesCodeSplittingTextThereAreThreeGeneralApproachesToCodeSplittingSplitCodeViaInlineFunctionCallsWithinModules]  Dans Microsoft Edge version 90 ou antérieure, DevTools ne définisse les points d’arrêt que dans un seul ensemble.  Dans Microsoft Edge version 91 ou ultérieure, DevTools définit correctement les points d’arrêt dans plusieurs groupes lorsque vous déboguer un composant partagé.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open source Chromium, accédez à Problèmes [1142705][CR1142705], [979000][CR979000]et [1180794][CR1180794].  
 
 #### <a name="support-hover-preview-with-bracket-notation"></a>Prise en charge de l’aperçu de pointage avec une notation entre crochets  
 
@@ -359,7 +359,7 @@ DevTools dispose désormais d’une meilleure prise en charge de plan pour les `
 
 #### <a name="proper-error-stack-traces-for-wasm-debugging"></a>Traces de pile d’erreurs correctes pour le débogage Wasm  
 
-Dans Microsoft Edge version 90 ou antérieure, DevTools affichait uniquement des références Wasm génériques dans les traces de pile d’erreurs.  Dans Microsoft Edge version 91 ou ultérieure, DevTools résout les demandes de fonction en ligne et affiche l’emplacement source dans les traces de pile d’erreurs pour le débogage Wasm.  Pour en savoir plus sur les traces de pile d’erreurs dans la **console,** accédez à [erreur.][DevtoolsConsoleApiError]  
+Dans Microsoft Edge version 90 ou antérieure, DevTools affichait uniquement des références Wasm génériques dans les traces de pile d’erreurs.  Dans Microsoft Edge version 91 ou ultérieure, DevTools résout les demandes de fonction en ligne et affiche l’emplacement source dans les traces de pile d’erreurs pour le débogage Wasm.  Pour en savoir plus sur les traces de pile d’erreurs dans la **console,** accédez à [l’erreur.][DevtoolsConsoleApiError]  
 
 Dans Microsoft Edge version 91 ou ultérieure, DevTools résout les demandes de fonction en ligne et affiche les traces de pile d’erreurs correctes pour le débogage Wasm.  
 
@@ -368,7 +368,7 @@ Dans Microsoft Edge version 91 ou ultérieure, DevTools résout les demandes de 
       Dans Microsoft Edge version 90 et antérieures, l’emplacement source ne s’affiche pas dans les traces de pile d’erreurs.  Les emplacements sources incluent `dsquare` .  
    :::column-end:::
    :::column span="":::
-      Dans Microsoft Edge version 91 et ultérieures, l’emplacement source s’affiche dans les traces de pile d’erreurs.
+      Dans Microsoft Edge version 91 et ultérieures, l’emplacement source s’affiche dans les traces de pile Error.
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -405,12 +405,12 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 [DevtoolsCommandMenuIndexOpenCommandMenu]: ../../../command-menu/index.md#open-the-command-menu "Ouvrez le menu Commande - Exécutez les commandes avec le menu Microsoft Edge commande DevTools | Documents Microsoft"  
 [DevtoolsConsoleApiError]: ../../../console/api.md#error "error - Console API reference | Documents Microsoft"  
 [DevtoolsCustomizeLocalization]: ../../../customize/localization.md "Modifier les paramètres de langue de DevTools | Microsoft Docs"  
-[DevtoolsIssuesIndex]: ../../../issues/index.md "Recherchez et corrigez les problèmes liés à l’outil des problèmes de Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsIssuesIndex]: ../../../issues/index.md "Rechercher et résoudre des problèmes à l’aide de l’outil Problèmes | Documents Microsoft"  
 [DevtoolsServiceWorkerIndex]: ../../../service-workers/index.md "Améliorations apportées aux services | Documents Microsoft"  
 [DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode]: ../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code "Utilisation du volet Déboguer le code JavaScript - Sources : vue d’ensemble de l’outil | Documents Microsoft"  
 
 [ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]: ../../../../progressive-web-apps-chromium/serviceworker.md#the-service-worker-lifecycle "Cycle de vie des travailleurs du service : utiliser les travailleurs de service pour gérer les demandes réseau et les notifications Push | Documents Microsoft"  
-[ProgressiveWebAppsWebappmanifests]: ../../../../progressive-web-apps-chromium/webappmanifests.md "Utiliser le manifeste d’application web pour intégrer votre application Web progressive au système d’exploitation | Documents Microsoft"  
+[ProgressiveWebAppsWebappmanifests]: ../../../../progressive-web-apps-chromium/webappmanifests.md "Utiliser le manifeste de l’application Web pour intégrer votre application Web progressive au système d’exploitation | Documents Microsoft"  
 
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 <!--[GithubMicrosoftVscodeEdgeDevtoolsPullxxx]: https://github.com/microsoft/vscode-edge-devtools/pull/xxx "Pull xxx: Lorem al Ipsum | GitHub"  -->  
@@ -426,20 +426,20 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 
 [ChromestatusFeature4752739957473280]: https://chromestatus.com/feature/4752739957473280 "Fonctionnalité : propriété CSS de couleur d’accentu | État de la plateforme Chrome"  
 
-[CsswgDraftsCssUi4WidgetAccent]: https://drafts.csswg.org/css-ui-4/#widget-accent "Couleurs d’accentuage de widget : propriété couleur d’accentuage - Module d’interface utilisateur de base CSS niveau 4 | Brouillons de l’éditeur de groupe de travail CSS"  
+[CsswgDraftsCssUi4WidgetAccent]: https://drafts.csswg.org/css-ui-4/#widget-accent "Couleurs d’accentuer des widgets : propriété couleur d’accentuage - Module d’interface utilisateur de base CSS niveau 4 | Brouillons de l’éditeur de groupe de travail CSS"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Bogues Chromium"  
-[CR11374]: https://crbug.com/v8/11374 "Problème 11374 : implémenter la vérification de marque d’une marque d’une marque pour les champs privés"  
+[CR11374]: https://crbug.com/v8/11374 "Problème 11374 : implémenter la vérification de marque d’une marque d’errs pour les champs privés"  
 [CR761019]: https://crbug.com/761019 "Problème 761019 : « Passer au symbole » rate la première fonction et préfère une correspondance pire si elle contient tous les caractères tapés"  
 [CR862450]: https://crbug.com/862450 "Problème 862450 : [css-scroll-snap] Envisagez d’ajouter la fonctionnalité Devtools pour l’snap de défilement css"  
 [CR979000]: https://crbug.com/979000 "Problème 979000 : les cartes sources avec des chemins d’accès aux sources entrent en conflit ne fonctionnent pas."  
 [CR1066604]: https://crbug.com/1066604 "Problème 1066604 : DevTools : voir les détails sur l’installation et l’activation des événements par ServiceWorker | Chromium bogues"  
 <!--  [CR1066772]: https://crbug.com/1066772 "Issue 1066772: "  locked  -->  
-[CR1076198]: https://crbug.com/1076198 «Problème 1076198: [Feature Request] Jump to computed property from `styles` tab»  
-[CR1092093]: «Problème 1092093 : rendre les contrôles de formulaire plus color-stylables en appuyant sur la propriété CSS « accent-color » » https://crbug.com/1092093  
+[CR1076198]: https://crbug.com/1076198 «Issue 1076198: [Feature Request] Jump to computed property from `styles` tab»  
+[CR1092093]: «Problème 1092093 : rendre les contrôles de formulaire plus color-stylables en appuyant sur la propriété https://crbug.com/1092093 CSS « accent-color » »  
 [CR1136655] : « Problème https://crbug.com/1136655 1136655 : Devtools : localisation v2 | Chromium bogues »  
 [CR1142705]: «Problème 1142705 : les points d’arrêt cessent de fonctionner lorsque 2 sourcesmaps pointent vers le même fichier virtuel lors de l’utilisation de https://crbug.com/1142705 webpack»  
-[CR1149832]: «Problème 1149832 : Demande de fonctionnalité : l’aperçu d’image doit également afficher la taille https://crbug.com/1149832 du fichier»  
+[CR1149832]: «Problème 1149832 : Demande de fonctionnalité : l’aperçu de l’image doit également afficher la taille https://crbug.com/1149832 du fichier»  
 [CR1158827]: «Problème 1158827 : [Stratégie d’autorisations] Implémenter la prise en charge de devtool pour la stratégie https://crbug.com/1158827 d’autorisations»  
 [CR1162042]: «Problème 1162042 : DevTools : prise en charge de la désactivation du codage de contenu https://crbug.com/1162042 gzip/brotli/jxl»  
 [CR1166577]: https://crbug.com/1166577 «Problème 1166577 : ☂️ Linear Memory Inspector 1.0»  
@@ -457,7 +457,7 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 [GlitchMemoryInspectorDemoJsHtml]: https://memory-inspector.glitch.me/demo-js.html "Mémoire dans les | JS Glitch"  
 [GlitchMemoryInspectorDemoWasmHtml]: https://memory-inspector.glitch.me/demo-wasm.html "Mémoire dans wasm | Glitch"  
 
-[GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml]: https://microsoft-edge-chromium-devtools.glitch.me/css-dbg-stories/css-scroll-snap.html "Scroll Ancrer Demo | Glitch"  
+[GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml]: https://microsoft-edge-chromium-devtools.glitch.me/css-dbg-stories/css-scroll-snap.html "Scroll Snap Demo | Glitch"  
 
 [GlitchPermissionPolicyDemoMain]: http://permission-policy-demo.glitch.me "Stratégie d’autorisations OOPIF | Glitch"  
 
@@ -465,7 +465,7 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 
 [HttpwgSpecsRfc7231HtmlHeaderVary]: https://httpwg.org/specs/rfc7231.html#header.vary "Vary - Protocole HTTP (Hypertext Transfer Protocol) : sémantique et contenu | Groupe de travail HTTP IETF"  
 
-[JsWebpackGuidesCodeSplittingTextThereAreThreeGeneralApproachesToCodeSplittingSplitCodeViaInlineFunctionCallsWithinModules]: https://webpack.js.org/guides/code-splitting/#:~:text=There%20are%20three%20general%20approaches%20to%20code%20splitting,Split%20code%20via%20inline%20function%20calls%20within%20modules. "Il existe trois approches générales pour le fractionnement de code : points d’entrée : fractionner manuellement le code à l’aide de la configuration d’entrée.  Empêcher la duplication : utilisez des dépendances d’entrée ou SplitChunksPlugin pour dédupliquer et fractionner des blocs.  Importations dynamiques : fractionnement de code via des appels de fonction inline au sein de modules. - Partage de code | webpack"  
+[JsWebpackGuidesCodeSplittingTextThereAreThreeGeneralApproachesToCodeSplittingSplitCodeViaInlineFunctionCallsWithinModules]: https://webpack.js.org/guides/code-splitting/#:~:text=There%20are%20three%20general%20approaches%20to%20code%20splitting,Split%20code%20via%20inline%20function%20calls%20within%20modules. "Il existe trois approches générales pour le fractionnement de code : points d’entrée : fractionner manuellement le code à l’aide de la configuration d’entrée.  Empêcher la duplication : utilisez des dépendances d’entrée ou SplitChunksPlugin pour dédupliquer et fractionner des blocs.  Importations dynamiques : fractionnement de code via des appels de fonction inline dans des modules. - Partage de code | webpack"  
 
 [MdnDocsWebCssUsingCssCustomProperties]: https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties "Utilisation des propriétés personnalisées CSS (variables) | MDN"  
 

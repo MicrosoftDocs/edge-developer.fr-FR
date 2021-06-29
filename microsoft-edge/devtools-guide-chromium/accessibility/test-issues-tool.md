@@ -1,22 +1,22 @@
 ---
 description: Testez automatiquement une page web pour les problèmes d’accessibilité à l’aide de la section Accessibilité de l’outil Problèmes.
-title: Tester automatiquement une page web pour les problèmes d’accessibilité
+title: Tester automatiquement les problèmes d’accessibilité d’une page web
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 986a021d2fd390cd45bd53dcfc37a83d58ed2338
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+ms.openlocfilehash: 1cba9db1744235dfbfd2a007e33d1101452aab31
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597334"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624737"
 ---
-# <a name="automatically-test-a-webpage-for-accessibility-issues"></a>Tester automatiquement une page web pour les problèmes d’accessibilité
+# <a name="automatically-test-a-webpage-for-accessibility-issues"></a>Tester automatiquement les problèmes d’accessibilité d’une page web
 
-**L’outil** Problèmes inclut une **section** Accessibilité qui signale automatiquement des problèmes tels que l’absence de texte de remplacement sur les images, l’absence d’étiquettes dans les champs du formulaire et le contraste insuffisant des couleurs du texte.  **L’outil Problèmes** se trouve dans le **caisse** en bas de DevTools.  Cet article utilise la page web de démonstration des tests d’accessibilité pour passer pas à pas à l’aide de la section **Accessibilité** de **l’outil** Problèmes.
+**L’outil** Problèmes inclut une **section** Accessibilité qui signale automatiquement des problèmes tels que l’absence de texte de remplacement sur les images, l’absence d’étiquettes dans les champs du formulaire et le contraste insuffisant des couleurs du texte.  **L’outil Problèmes** se trouve dans le **caisse** en bas de DevTools.  Cet article utilise la page web de démonstration des tests d’accessibilité pour passer en revue la section **Accessibilité** de **l’outil** Problèmes.
 
 Il existe plusieurs façons d’ouvrir **l’outil Problèmes, telles** que :
 *  Sélectionnez **le compteur Problèmes** \( Compteur de problèmes \) dans le coin supérieur droit de ![ ](../media/issues-counter-icon.msft.png) DevTools.
@@ -74,7 +74,7 @@ Pour vérifier si des étiquettes sont **connectées** aux champs d’entrée, u
 
 1.  Comme exemple de connexion correcte, sélectionnez **l’étiquette Other** dans le formulaire de don.  Une zone d’indicateur de focus s’affiche correctement dans la zone de texte d’entrée à côté de l’étiquette **Autre,** car il existe des valeurs de correspondance et `for` `id` d’attribut.
 
-1.  Dans **l’outil Problèmes,** sélectionnez **Lecture supplémentaire** pour en savoir plus sur le problème.  Pour ouvrir le lien dans un nouvel onglet, **Ctrl**cliquez sur le lien sur Windows/Linux, ou commande cliquez sur le lien + **** **** + **** sur macOS.
+1.  Dans **l’outil Problèmes,** sélectionnez **Lecture supplémentaire** pour en savoir plus sur le problème.  Pour ouvrir le lien dans un nouvel onglet, **Ctrl**cliquez sur le lien sur Windows/Linux, ou sur commande sur le lien + **** **** + **** sur macOS.
 
     :::image type="complex" source="../media/a11y-testing-more-information-links.msft.png" alt-text="Lien sous l’onglet Problèmes pointant vers des informations plus détaillées sur le problème" lightbox="../media/a11y-testing-more-information-links.msft.png":::
         Lien sous **l’onglet Problèmes** pointant vers des informations plus détaillées sur le problème
@@ -93,8 +93,8 @@ Pour vérifier automatiquement si un texte de alt est fourni pour les images, ut
 
 1.  Sous **l’onglet Problèmes,** développez `Images must have alternate text: Element has no title attribute` l’avertissement.  Il existe quatre instances d’images qui n’ont pas de texte de alt.
 
-    :::image type="complex" source="../media/a11y-testing-images-without-alt.msft.png" alt-text="L’outil Problèmes signalant des images qui ne manquent pas de texte de remplacement" lightbox="../media/a11y-testing-images-without-alt.msft.png":::
-        L’outil Problèmes signalant des images qui ne manquent pas de texte de remplacement
+    :::image type="complex" source="../media/a11y-testing-images-without-alt.msft.png" alt-text="Image de rapport de l’outil Problèmes qui ne manque pas de texte de remplacement" lightbox="../media/a11y-testing-images-without-alt.msft.png":::
+        Image de rapport de l’outil Problèmes qui ne manque pas de texte de remplacement
     :::image-end:::
 
 Pour plus d’informations, [accédez à Images qui doivent avoir un texte de remplacement.](https://dequeuniversity.com/rules/axe/4.1/image-alt)
@@ -118,13 +118,13 @@ Pour vérifier automatiquement si les couleurs de texte ont un contraste suffisa
 1.  Sélectionnez `li.high` l’élément.  Dans la page web rendue, le lien **Chiens** de la section **Tronçon** est mis en surbrillence, affichant une petite superposition d’informations.  Il s’agit de la même superposition qui s’affiche lorsque vous pointez sur un élément dans l’arborescence DOM de **l’outil Elements.**
 
     :::image type="complex" source="../media/a11y-testing-element-with-contrast-issues.msft.png" alt-text="Élément de la page web mis en évidence après la sélection d’un lien dans la section Ressources affectées" lightbox="../media/a11y-testing-element-with-contrast-issues.msft.png":::
-        Élément de la page web mis en évidence après la sélection d’un lien dans la section **Ressources** affectées
+        Élément de la page web mis en évidence après la sélection d’un lien dans la section **Ressources affectées**
     :::image-end:::
 
 
 ### <a name="wavy-underlines-in-the-dom-tree-indicate-automatically-detected-issues"></a>Les soulignements ondulés dans l’arborescence DOM indiquent des problèmes détectés automatiquement 
 
-L’arborescence DOM de l’outil **Éléments** indicateur les problèmes directement dans le code HTML avec des soulignements ondulés.  Ces problèmes sont signalés par **l’outil Problèmes.**  Lorsque vous cliquez sur Un élément avec un soulignement **ondulé,** l’outil Problèmes **** s’affiche.
+L’arborescence DOM de l’outil **Elements** indicateur les problèmes directement dans le code HTML avec des soulignements ondulés.  Ces problèmes sont signalés par **l’outil Problèmes.**  Lorsque vous cliquez sur un élément avec un soulignement **ondulé,** l’outil Problèmes **** s’affiche.
 
 1.  Dans **l’outil Elements,** dans l’arborescence DOM, **Shift+cliquez** sur l’élément, qui a une ligne ondulée sous `<input type="search">` `input` .  **L’outil Problèmes s’affiche** et indique le problème pour cet élément.
 
@@ -133,9 +133,9 @@ L’arborescence DOM de l’outil **Éléments** indicateur les problèmes direc
     :::image-end:::
 
 
-## <a name="see-also"></a>Articles associés
+## <a name="see-also"></a>Voir également
 
-*  [Rechercher et résoudre les problèmes liés à Microsoft Edge’outil Problèmes de DevTools][DevToolsIssuesTool]
+*  [Rechercher et résoudre les problèmes à l’aide de l’outil Problèmes][DevToolsIssuesTool]
 *  [Vue d’ensemble des tests d’accessibilité à l’aide de DevTools](accessibility-testing-in-devtools.md)
 
 
@@ -145,5 +145,5 @@ L’arborescence DOM de l’outil **Éléments** indicateur les problèmes direc
 
 
 <!-- links -->
-[DevToolsIssuesTool]: ../issues/index.md "Recherchez et corrigez les problèmes liés à l’outil des problèmes de Microsoft Edge DevTools | Documents Microsoft"
+[DevToolsIssuesTool]: ../issues/index.md "Rechercher et résoudre des problèmes à l’aide de l’outil Problèmes | Documents Microsoft"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Page web de démonstration de test d’accessibilité | GitHub"

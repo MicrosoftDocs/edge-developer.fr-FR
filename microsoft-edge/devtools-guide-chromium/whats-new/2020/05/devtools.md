@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 2537495ad14462aac70bfb1b5873aaa0b6e21cdf
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: fabfa21abedb02bc83ec2bedbe3662f0d81c1bf9
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564671"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624807"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -31,9 +31,9 @@ ms.locfileid: "11564671"
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Annonces de l’équipe Microsoft Edge DevTools  
 
-Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités dans DevTools, Microsoft Visual Studio extensions de code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez-nous [sur Twitter.][EdgeDevToolsTwitterAccount]  
+Les sections suivantes sont une liste d’annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités dans DevTools, Microsoft Visual Studio extensions de code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez-nous [sur Twitter.][EdgeDevToolsTwitterAccount]  
 
-### <a name="use-the-devtools-in-windows-high-contrast-mode"></a>Utiliser DevTools en mode Windows contraste élevé
+### <a name="use-the-devtools-in-windows-high-contrast-mode"></a>Utiliser de DevTools en mode Windows contraste élevé
 
 Les Microsoft Edge DevTools sont désormais affichés en mode de contraste élevé lorsque Windows est en mode de contraste élevé.  
 
@@ -41,24 +41,24 @@ Les Microsoft Edge DevTools sont désormais affichés en mode de contraste élev
    Le Microsoft Edge DevTools en mode de contraste élevé  
 :::image-end:::  
 
-[Suivez les instructions pour activer le mode de contraste élevé dans Windows][MicrosoftSupportWindows10HighContrastMode].  Pour ouvrir devTools dans Microsoft Edge, sélectionnez `F12` ou `Ctrl` + `Shift` + `I` .  Les DevTools sont affichés en mode de contraste élevé.  
+[Suivez les instructions pour activer le mode de contraste élevé dans Windows][MicrosoftSupportWindows10HighContrastMode].  Pour ouvrir les DevTools dans Microsoft Edge, sélectionnez `F12` ou `Ctrl` + `Shift` + `I` .  Les DevTools sont affichés en mode de contraste élevé.  
 
 > [!NOTE]
-> Le Microsoft Edge DevTools actuellement prise en charge le mode de contraste élevé sur Windows mais pas sur macOS.  
+> Les Microsoft Edge DevTools actuellement en charge le mode de contraste élevé sur Windows mais pas sur macOS.  
 
 Chromium problème [#1048378][CR1048378]  
 
-### <a name="match-keyboard-shortcuts-in-the-devtools-to-visual-studio-code"></a>Faire correspondre les raccourcis clavier dans devTools à Visual Studio Code  
+### <a name="match-keyboard-shortcuts-in-the-devtools-to-visual-studio-code"></a>Faire correspondre les raccourcis clavier de DevTools à Visual Studio Code  
 
 À [](#getting-in-touch-with-microsoft-edge-devtools-team) partir de vos commentaires et de l’Chromium suivi des problèmes publics, l’équipe Microsoft Edge DevTools [a][CRIssuesList]appris que vous souhaitiez personnaliser les raccourcis clavier dans DevTools.  Dans Microsoft Edge 84, vous pouvez désormais faire correspondre les raccourcis clavier de DevTools à [Visual Studio Code,][VisualStudioCodeMain]qui n’est qu’une des fonctionnalités sur lesquelles l’équipe travaille pour la personnalisation des raccourcis.  
 
-:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Faire correspondre les raccourcis clavier dans devTools à Visual Studio Code" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
+:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Faire correspondre les raccourcis clavier de DevTools à Visual Studio Code" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
    Le Microsoft Edge DevTools en mode de contraste élevé  
 :::image-end:::  
 
 Pour essayer l’expérience, ouvrez DevTools Paramètres en sélectionnant ou en choisissant l’icône Devtools Paramètres dans le coin supérieur droit de `?` ![ ](../../../media/settings-icon.msft.png) DevTools.  Accédez à la section **Expériences** et cochez l’onglet Activer les paramètres des **raccourcis clavier personnalisés (nécessite un rechargement).**  À présent, rechargez DevTools, Paramètres à nouveau et accédez à la section **Raccourcis.**  
 
-Choose **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  Les raccourcis clavier dans devTools correspondent désormais aux raccourcis pour les actions équivalentes dans Visual Studio Code.  
+Choose **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  Les raccourcis clavier des DevTools correspondent désormais aux raccourcis pour les actions équivalentes dans Visual Studio Code.  
 
 Par exemple, le raccourci clavier pour mettre en pause ou poursuivre l’exécution d’un script [Visual Studio Code][VisualStudioCodeShortcuts] `F5` est .  Avec **devTools (par défaut)** prédéfiny, ce même raccourci dans DevTools n’est qu’avec le `F8` **Visual Studio Code** prédéfiny, ce raccourci est désormais également `F5` .  
 
@@ -76,7 +76,7 @@ Avec [l’émulateur Surface Duo,][DualScreensAndroidEmulator]vous pouvez tester
    Application Microsoft Edge sur l’émulateur Surface Duo  
 :::image-end:::  
 
-La page d’une instance de bureau de Microsoft Edge affiche l’appareil `edge://inspect` **SurfaceDuoEmulator** [][DesktopEdge] avec une liste des onglets ouverts ou des applications de bureau en cours d’exécution sur l’émulateur [Surface Duo.][DualScreensAndroidEmulator] [][PwaIndex]  
+La page d’une instance de bureau de Microsoft Edge affiche l’appareil `edge://inspect` **SurfaceDuoEmulator** [][DesktopEdge] avec une liste des onglets ouverts ou des PLAN en cours d’exécution sur l’émulateur [Surface Duo.][DualScreensAndroidEmulator] [][PwaIndex]  
 
 :::image type="complex" source="../../media/2020/05/edge-inspect.msft.png" alt-text="La page edge://inspect affiche la liste des onglets ouverts dans l’application Microsoft Edge’exécution sur l’émulateur" lightbox="../../media/2020/05/edge-inspect.msft.png":::
    La page affiche la liste des onglets ouverts dans `edge://inspect` l’application Microsoft Edge’exécution sur l’émulateur
@@ -86,7 +86,7 @@ Choisissez **inspectez** l’onglet ou PWA que vous souhaitez déboguer pour ouv
 
 ### <a name="resize-the-devtools-drawer-more-easily"></a>Resize the DevTools drawer more easily  
 
-Dans Microsoft Edge 83 ou une précédente, vous n’avez pu resizer le caisse de [dévtools][DevtoolsDrawer] qu’en pointant à l’intérieur de la barre d’outils de la caisse.  Le drawer se comporte différemment des autres contrôles de re resize pour les volets des DevTools où vous placez le pointeur sur la bordure du volet pour le resizer.  Choisissez l’image suivante pour afficher le resizing the Drawer worked in version 83 or earlier of Microsoft Edge.  
+Dans Microsoft Edge 83 ou une antérieure, vous n’avez pu resizer le caisse [Devtools][DevtoolsDrawer] qu’en pointant à l’intérieur de la barre d’outils de la caisse.  Le drawer se comporte différemment des autres contrôles de re resize pour les volets des DevTools où vous placez le pointeur sur la bordure du volet pour le resizer.  Choisissez l’image suivante pour afficher le resizing the Drawer worked in version 83 or earlier of Microsoft Edge.  
 
 :::image type="complex" source="../../media/2020/05/drawer-83.msft.png" alt-text="Resizing the DevTools Drawer in Microsoft Edge 83" lightbox="../../media/2020/05/drawer-83.msft.gif":::
    Resizing the DevTools Drawer in Microsoft Edge 83
@@ -112,7 +112,7 @@ Lors du débogage à distance d’un appareil [Android,][DevtoolsRemoteDebugAndr
    La `Shift` + `Tab` sélection dans la barre d’URL par capture vidéo affiche le focus sur le **bouton Actualiser**
 :::image-end:::  
 
-Chromium problème [#1081486][CR1081486]  
+Chromium [problème][CR1081486] #1081486  
 
 ### <a name="network-panel-details-pane-is-now-accessible"></a>Le volet Détails du panneau réseau est désormais accessible  
 
@@ -128,11 +128,11 @@ Chromium problème [#963183][CR963183]
 
 Les sections suivantes annoncent des fonctionnalités supplémentaires disponibles dans Microsoft Edge 84 qui ont été contribués au projet d’Chromium open source.  
 
-### <a name="fix-site-issues-with-the-new-issues-tool-in-the-devtools-drawer"></a>Résoudre les problèmes de site avec le nouvel outil Problèmes dans le caisse de DevTools
+### <a name="fix-site-issues-with-the-new-issues-tool-in-the-devtools-drawer"></a>Résoudre les problèmes de site avec le nouvel outil Problèmes dans le caisse DevTools
 
-Le nouvel outil Problèmes dans le caisse DevTools a été conçu pour vous aider à réduire la fatigue et l’encombrement des **notifications** de la **console.**  Actuellement, la **console** est l’endroit central pour les développeurs de sites web, les bibliothèques, les frameworks et les Microsoft Edge journaux des messages, des avertissements et des erreurs.  L’outil Problèmes regroupe les avertissements du navigateur de manière structurée, agrégée et actionnable, les liens vers les ressources affectées dans Microsoft Edge DevTools et fournit des conseils sur la façon de résoudre les problèmes. ****  Au fil du temps, de plus en plus **** d’avertissements sont publiés dans Microsoft Edge dans l’outil Problèmes plutôt que dans la **console,** ce qui devrait aider à réduire l’encombrement dans la **console.**  
+Le nouvel outil Problèmes dans le caisse DevTools a été conçu pour vous aider à réduire la fatigue et l’encombrement des **notifications** de la **console.**  Actuellement, la **console** est l’endroit central pour les développeurs de sites web, les bibliothèques, les frameworks et les Microsoft Edge journaux des messages, des avertissements et des erreurs.  L’outil Problèmes regroupe les avertissements du navigateur de manière structurée, agrégée et actionnable, des liens vers les ressources affectées dans Microsoft Edge DevTools et fournit des conseils sur la façon de résoudre les problèmes. ****  Au fil du temps, de plus en plus **** d’avertissements sont publiés dans Microsoft Edge dans l’outil Problèmes plutôt que dans la **console,** ce qui devrait aider à réduire l’encombrement dans la **console.**  
 
-To get started, navigate to [Find and Fix Problems With The Microsoft Edge devTools Issues tool][DevtoolsIssuesIndex].  
+Pour commencer, accédez à Rechercher et résoudre les problèmes à [l’aide de l’outil Problèmes.][DevtoolsIssuesIndex]  
 
 :::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="L’outil Problèmes dans le caisse de DevTools" lightbox="../../media/2020/05/issues.msft.png":::
    **L’outil Problèmes** dans le caisse de DevTools  
@@ -156,15 +156,15 @@ Chromium problème [#1040025][CR1040025]
 
 ### <a name="performance-panel-updates"></a>Mises à jour du panneau de performances  
 
-#### <a name="view-total-blocking-time-information-in-the-footer"></a>Afficher le nombre total d’informations sur le temps de blocage dans le pied de groupe  
+#### <a name="view-total-blocking-time-information-in-the-footer"></a>Afficher les informations sur le temps total de blocage dans le pied de groupe  
 
-Après avoir enregistré vos performances de chargement, le panneau **Performances** affiche désormais le temps de blocage total \(TBT\) informations dans le pied de groupe.  TBT est une mesure de performances de charge qui permet de quantifier le temps qu’une page prend pour devenir utilisable.  Elle mesure essentiellement la durée pendant combien de temps une page semble utilisable \(car le contenu est restituer à l’écran\) ; mais n’est pas réellement utilisable, car JavaScript bloque le thread principal et par conséquent, la page ne répond pas aux entrées de l’utilisateur.  TBT est la mesure principale pour l’approximation du premier délai d’entrée.  
+Après avoir enregistré vos performances de chargement, le panneau **Performances** affiche désormais les informations sur le temps de blocage total \(TBT\) dans le pied de groupe.  TBT est une mesure de performances de charge qui permet de quantifier le temps qu’une page prend pour devenir utilisable.  Elle mesure essentiellement la durée pendant combien de temps une page semble utilisable \(car le contenu est restituer à l’écran\) ; mais n’est pas réellement utilisable, car JavaScript bloque le thread principal et par conséquent, la page ne répond pas aux entrées de l’utilisateur.  TBT est la mesure principale pour l’approximation du premier délai d’entrée.  
 
 <!--todo:  add link Total Blocking Time (TBT) (WebdevTbt) when section is live  -->  
 <!--todo:  add link lab metric (WebdevMeasureSpeedLabField) when section is live  -->  
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->  
 
-Pour obtenir les informations sur le **** temps total de blocage, n’utilisez pas le flux de travail d’icône Actualiser la page Actualiser la page pour enregistrer les ![ performances de chargement de ](../../../media/refresh-page-icon.msft.png) page.  
+Pour obtenir les informations sur le **** temps total de blocage, n’utilisez pas le flux de travail icône Actualiser la page Actualisation de la page pour enregistrer les ![ performances de chargement de ](../../../media/refresh-page-icon.msft.png) page.  
 
 Sélectionnez plutôt **l’icône Enregistrement** , rechargez manuellement la page, attendez le chargement de la ![ ](../../../media/record-icon.msft.png) page, puis arrêtez l’enregistrement.  
 
@@ -183,7 +183,7 @@ La nouvelle section **Expérience** du panneau **Performances** vous permet de d
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->  
 <!--todo:  add link layout shifts (WebdevCls) when section is live  -->  
 
-Choisissez **l’événement Layout Shift** pour afficher les détails de l’équipe de disposition dans le **volet** Résumé.  Pointez sur les **champs Déplacé d’et** Déplacé **vers** pour visualiser l’endroit où le changement de disposition s’est produit.  
+Choisissez **l’événement Layout Shift** pour afficher les détails de l’équipe de disposition dans le **volet** Résumé.  Pointez sur **les champs Déplacé d’et** Déplacé **vers** pour visualiser l’endroit où le changement de disposition s’est produit.  
 
 :::image type="complex" source="../../media/2020/05/cls.msft.png" alt-text="Détails d’un changement de disposition" lightbox="../../media/2020/05/cls.msft.png":::
    Détails d’un changement de disposition  
@@ -239,7 +239,7 @@ Lorsque vous choisissez [][DevtoolsCssReferenceColorPicker] des couleurs avec le
 
 Vous devez également afficher la syntaxe dans le volet **Calculé** et **l’info-bulle du mode** Inspect.  
 
-Microsoft Edge DevTools utilise la nouvelle syntaxe, car les fonctionnalités CSS à venir, telles que [color()][CSSWGDraftsColor4Property] ne la prise en charge de la syntaxe d’arguments séparées par des virgules.  
+Microsoft Edge DevTools utilise la nouvelle syntaxe, car les fonctionnalités CSS à venir, telles que [color()][CSSWGDraftsColor4Property] ne la prise en charge de la syntaxe d’arguments séparés par des virgules.  
 
 La syntaxe de l’argument séparé par des espaces est prise en charge dans la plupart des navigateurs depuis un certain temps.  Pour plus d’informations, accédez à [Can I use: Space-separated functional color notations?][CaniuseMDNSpaceSeparatedFunctionalColorNotations]  
 
@@ -286,7 +286,7 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 [DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]: ../../../console/utilities.md#recently-chosen-element-or-javascript-object "Élément ou objet JavaScript récemment choisi : référence de l’API des utilitaires de console | Documents Microsoft"  
 [DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Modifier les couleurs à l'| Documents Microsoft"  
 [DevtoolsDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Overview | Documents Microsoft"  
-[DevtoolsIndex]: ../../../index.md "Microsoft Edge outils de développement (Chromium) | Documents Microsoft"  
+[DevtoolsIndex]: ../../../index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
 [DevtoolsIssuesIndex]: ../../../issues/index.md "Rechercher et résoudre les problèmes liés à l’Microsoft Edge’onglet Problèmes de DevTools | Documents Microsoft"  
 [DevtoolsNetworkDetails]: ../../../network/index.md#inspect-the-details-of-the-resource "Inspecter les détails de la ressource | Documents Microsoft"  
 [DevtoolsNetworkLog]: ../../../network/index.md#log-network-activity "Journal de l’activité réseau | Documents Microsoft"  
@@ -305,15 +305,15 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Bogues Chromium"
 
 [CR174309]: https://crbug.com/174309 "DevTools : autoriser la personnalisation des raccourcis clavier/des liaisons de touches | Chromium bogues"  
-[CR963183]: https://crbug.com/963183 "Les devTools ne sont pas conformes AUX WCAG | Chromium bogues"  
+[CR963183]: https://crbug.com/963183 "DevTools ne sont pas conformes WCAG | Chromium bogues"  
 [CR1040019]: https://crbug.com/1040019 "DevTools : afficher facilement un aperçu des images et des images d’arrière-plan dans le volet Styles | Chromium bogues"  
-[CR1040025]: https://crbug.com/1040025 "DevTools : afficher les informations a11y de base dans la fenêtre de | Chromium bogues"  
+[CR1040025]: https://crbug.com/1040025 "DevTools : afficher des informations a11y de base dans la fenêtre de | Chromium bogues"  
 [CR1048378]: https://crbug.com/1048378 "Prise en charge de l’interface utilisateur DevTools pour les | Chromium bogues"  
 [CR1054381]: https://crbug.com/1054381 "CR 1054381 | Chromium bogues"  
 [CR1068116]: https://crbug.com/1068116 "Ship issues panel | Chromium bogues"  
 [CR1072952]: https://crbug.com/1072952 "DevTools: color picker should produce modern CSS color syntax | Chromium bogues"  
 [CR1075437]: https://crbug.com/1075437 "DevTools : ajoutez la prise en charge du mot clé/valeur CSS « revert » | Chromium bogues"  
-[CR1076112]: https://crbug.com/1076112 "Personnalisation des dévtools : resiseur de caisse"  
+[CR1076112]: https://crbug.com/1076112 "Personnalisation des devtools : resiseur de caisse"  
 [CR1081486]: https://crbug.com/1081486 "Le focus du clavier n’est pas visible pour les boutons de navigation en mode de capture d’écran | Chromium bogues"  
 [CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus doit être « rempli » et non « résolu » | Bogues V8"  
 
@@ -351,7 +351,7 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developer.chrome.com/blog/new-in-devtools-84) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developer.chrome.com/blog/new-in-devtools-84) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  

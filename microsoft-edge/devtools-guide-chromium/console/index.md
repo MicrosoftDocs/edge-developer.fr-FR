@@ -7,12 +7,12 @@ ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 3f2f8c01a9bc9c4f40158f0959ba5b60e03bfb80
-ms.sourcegitcommit: 2e516a92272e38d8073603f860ae49f944718670
+ms.openlocfilehash: badcaae0ad637fe7a027f78d00daf9133789693e
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "11483195"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624744"
 ---
 # <a name="use-the-console"></a>Utiliser la console  
 
@@ -43,7 +43,7 @@ Le moyen le plus rapide d’ouvrir directement la **console** consiste à sélec
 
 ## <a name="error-reports-and-console"></a>Rapports d’erreur et console  
 
-**La console** est l’endroit par défaut où les erreurs de connectivité et JavaScript sont signalées.  Si des erreurs se produisent, un bouton s’affiche à côté de **l’icône Paramètres** dans DevTools qui fournit le nombre d’erreurs et d’avertissements.  Choisissez-la pour ouvrir **la console** et afficher le problème.  Pour plus d’informations, accédez [aux erreurs de débogage signalées dans la console.][DevtoolsConsoleConsoleDebugJavascript]  
+**La console** est l’endroit par défaut où les erreurs de connectivité et JavaScript sont signalées.  Si des **erreurs** se produisent, le compteur Problèmes s’affiche à côté de l’icône **Paramètres** dans DevTools qui fournit le nombre d’erreurs et d’avertissements.  Sélectionnez **le compteur Problèmes pour** ouvrir **l’outil Problèmes** et afficher le problème.  Pour plus d’informations, accédez [aux erreurs de débogage signalées dans la console.][DevtoolsConsoleConsoleDebugJavascript]
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools fournit des informations détaillées sur l’erreur dans la console" lightbox="../media/console-debug-displays-error.msft.png":::
    DevTools fournit des informations détaillées sur l’erreur dans la **console**  
@@ -51,7 +51,9 @@ Le moyen le plus rapide d’ouvrir directement la **console** consiste à sélec
 
 ## <a name="inspect-and-filter-information-on-the-current-webpage"></a>Inspecter et filtrer des informations sur la page web actuelle  
 
-Lorsque vous ouvrez de DevTools sur une page web, vous risquez d’afficher une suragée d’informations consignées dans la **console.**  La quantité d’informations devient un problème lorsque vous devez identifier des informations importantes.  Pour afficher les informations importantes qui doivent être prises en compte, utilisez l’outil [Problèmes][DevtoolsIssuesIndex] dans DevTools.  Une grande partie du bruit reste, c’est pourquoi il est bon de connaître les [options][DevtoolsConsoleConsoleFilters] de journal automatisé et de filtre dans la **console.**  
+Lorsque vous ouvrez DevTools sur une page web, il peut y avoir une grande quantité d’informations dans la **console.**  La quantité d’informations devient un problème lorsque vous devez identifier des informations importantes.  Pour afficher les informations importantes qui doivent être prises en compte, utilisez l’outil [Problèmes][DevtoolsIssuesIndex] dans DevTools.
+
+Les problèmes sont progressivement déplacés de la **console** vers **l’outil Problèmes.**  Toutefois, il existe encore beaucoup d’informations dans la **console,** c’est pourquoi il est bon de connaître les options de journal automatisé et de filtre dans la **console.**  Pour plus d’informations, accédez à [Filtrer les messages de la console.][DevtoolsConsoleConsoleFilters]
 
 :::image type="complex" source="../media/console-intro-noise.msft.png" alt-text="DevTools avec une console pleine de messages" lightbox="../media/console-intro-noise.msft.png":::
    DevTools avec une **console pleine** de messages  
@@ -62,7 +64,7 @@ Lorsque vous ouvrez de DevTools sur une page web, vous risquez d’afficher une 
 Le cas d’utilisation le plus populaire de la console est la **journalisation** des informations de vos scripts à l’aide de la méthode ou d’autres `console.log()` méthodes similaires.  Pour l’essayer, complétez les actions suivantes.  
 
 1.  Pour ouvrir **console,** `Control` + `Shift` + `J` sélectionnez \(Windows, Linux\) ou `Command` + `Option` + `J` \(macOS\).  
-1.  Accédez aux exemples de messages de la console : [journal, informations,][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]erreur et avertissement, ou copiez et exécutez l’extrait de code suivant dans la **console.**  
+1.  Accédez aux exemples de messages de [la console : journal, informations,][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]erreur et avertissement, ou copiez et exécutez l’extrait de code suivant dans la **console.**  
     
     ```javascript
     console.log('This is a log message');
@@ -83,11 +85,11 @@ Le cas d’utilisation le plus populaire de la console est la **journalisation**
        **Console pleine** de messages provoqués par du code de démonstration  
     :::image-end:::  
     
-De nombreuses méthodes utiles sont disponibles lorsque vous travaillez avec la **console.**  Pour plus d’informations, accédez [à Journal des messages dans l’outil Console.][DevtoolsConsoleConsoleLog]  
+De nombreuses méthodes utiles sont disponibles lorsque vous travaillez avec la **console.**  Pour plus d’informations, [accédez à Journal des messages dans l’outil Console.][DevtoolsConsoleConsoleLog]  
 
 ## <a name="try-your-javascript-live-in-the-console"></a>Essayez votre javaScript en direct dans la console  
 
-La **console n’est** pas seulement un endroit où enregistrer des informations.  La **console est** un environnement [REPL.][WikiReadEvalPrintLoop]  Lorsque vous écrivez du code JavaScript dans la **console,** le code s’exécute immédiatement.  Il peut s’avérer utile de tester certaines nouvelles fonctionnalités JavaScript ou d’y faire des calculs rapides.  En outre, vous obtenez toutes les fonctionnalités que vous attendez d’un environnement d’édition moderne, telles que lacompletion automatique, la mise en surbrillance de la syntaxe et l’historique.  Pour l’essayer, complétez les actions suivantes.  
+La **console n’est** pas seulement un endroit où enregistrer des informations.  La **console** est un [environnement REPL.][WikiReadEvalPrintLoop]  Lorsque vous écrivez du code JavaScript dans la **console,** le code s’exécute immédiatement.  Il peut s’avérer utile de tester certaines nouvelles fonctionnalités JavaScript ou d’y faire des calculs rapides.  En outre, vous obtenez toutes les fonctionnalités que vous attendez d’un environnement d’édition moderne, telles que lacompletion automatique, la mise en surbrillance de la syntaxe et l’historique.  Pour l’essayer, complétez les actions suivantes.  
 
 1.  Accédez à la **console.**  
 1.  Tapez `2 + 2`.  
@@ -95,7 +97,7 @@ La **console n’est** pas seulement un endroit où enregistrer des informations
 La **console** affiche le résultat `4` sur la ligne suivante.  Cette **fonctionnalité d’évaluation** est utile pour déboguer et vérifier que vous n’avez pas fait d’erreurs dans votre code.  
 
 :::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="La console affiche le résultat de 2 + 2 en direct lorsque vous le tapez" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
-   La **console** affiche le résultat de la commande `2 + 2` Live à mesure que vous la tapez  
+   La **console** affiche le résultat de la commande `2 + 2` live à mesure que vous la tapez.  
 :::image-end:::  
 
 Pour exécuter l’expression JavaScript dans la **console** et éventuellement afficher un résultat, sélectionnez `Enter` .  Ensuite, vous pouvez écrire le code JavaScript suivant à exécuter dans la **console.**  
@@ -104,7 +106,7 @@ Pour exécuter l’expression JavaScript dans la **console** et éventuellement 
    Exécuter plusieurs lignes de code JavaScript successivement  
 :::image-end:::  
 
-Par défaut, vous exécutez du code JavaScript sur une seule ligne.  Pour exécuter une ligne, tapez votre JavaScript, puis sélectionnez `Enter` .  Pour contourner la limitation d’une seule ligne, sélectionnez `Shift` + `Enter` plutôt `Enter` .  Comme pour d’autres expériences de ligne de commande, pour accéder à vos commandes JavaScript précédentes, sélectionnez `Arrow-Up` .  La fonctionnalité decompletion automatique de la **console** est un excellent moyen d’en savoir plus sur les méthodes inconnues.  Pour l’essayer, complétez les actions suivantes.  
+Par défaut, vous exécutez du code JavaScript sur une seule ligne.  Pour exécuter une ligne, tapez votre JavaScript, puis sélectionnez `Enter` .  Pour contourner la limitation d’une seule ligne, sélectionnez `Shift` + `Enter` plutôt . `Enter`  Comme pour d’autres expériences de ligne de commande, pour accéder à vos commandes JavaScript précédentes, sélectionnez `Arrow-Up` .  La fonctionnalité decompletion automatique de la **console** est un excellent moyen d’en savoir plus sur les méthodes peu familières.  Pour l’essayer, complétez les actions suivantes.  
 
 1.  Ouvrez la **console.**  
 1.  Tapez `doc`.  
@@ -135,7 +137,7 @@ La **console** a accès à [l’objet Window][MdnDocsWebApiWindow] du navigateur
    Copier le contenu de titre supérieur \( \) à partir du DOM et afficher `h1` dans la **console**  
 :::image-end:::  
 
-Au lieu de lire uniquement la page web, vous pouvez également la modifier.  Pour l’essayer, complétez les actions suivantes.  
+Au lieu de lire uniquement la page web, vous pouvez également la modifier.  Pour essayer de modifier la page web, effectuer les actions suivantes.  
 
 1.  Ouvrez la **console.**  
 1.  Copiez et collez l’extrait de code suivant.  
@@ -148,7 +150,7 @@ Au lieu de lire uniquement la page web, vous pouvez également la modifier.  Pou
    Écrire du texte dans le DOM de la **console**  
 :::image-end:::  
 
-Vous avez modifié l’en-tête principal de la page web en **« Basculement de la console**».  Les **méthodes de l’utilitaire** console vous rendent facile d’accéder à la page web actuelle et de la manipuler.  Pour plus d’informations, accédez à [la référence de l’API des utilitaires de console.][DevtoolsConsoleUtilities]  Par exemple, pour ajouter une bordure verte autour de tous les liens de la page web actuelle, complétez les actions suivantes.  
+Vous avez modifié le titre principal de la page web en **Basculement de la console.**  Les **méthodes de l’utilitaire** console vous rendent facile d’accéder à la page web actuelle et de la manipuler.  Pour plus d’informations, accédez à [la référence de l’API des utilitaires de console.][DevtoolsConsoleUtilities]  Par exemple, pour ajouter une bordure verte autour de tous les liens de la page web actuelle, complétez les actions suivantes.  
 
 1.  Ouvrez la **console.**  
 1.  Copiez et collez l’extrait de code suivant.  
@@ -157,7 +159,6 @@ Vous avez modifié l’en-tête principal de la page web en **« Basculement de 
     $$('a').forEach(a => a.style.border='1px solid lime');
     ```  
     
-
 :::image type="complex" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipuler une sélection d’éléments à l’aide de la console" lightbox="../media/console-intro-changing-styles.msft.png":::
     Manipuler une sélection d’éléments à l’aide de la **console**  
 :::image-end:::  
@@ -166,14 +167,13 @@ Pour plus d’informations sur l’utilisation du DOM, accédez à [Utiliser la 
 
 ## <a name="learn-more-about-console"></a>En savoir plus sur console  
 
-Pour plus d’informations sur la **console,** accédez à la référence de [console,][DevtoolsConsoleReference]à la référence d’API des utilitaires de [console][DevtoolsConsoleUtilities]et à la référence [de l’API de console.][DevtoolsConsoleApi]  
+Pour plus d’informations sur la **console,** accédez à la référence de [console,][DevtoolsConsoleReference]à la référence d’API des utilitaires de [console][DevtoolsConsoleUtilities]et à la référence de [l’API de console.][DevtoolsConsoleApi]  
 
 ## <a name="getting-in-touch-with-the-microsoft-edge-devtools-team"></a>Contacter l’équipe DevTools MicrosoftEdge  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
-
 [DevtoolsConsoleApi]: ./api.md "Référence de l’API de console | Documents Microsoft"  
 [DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "Erreurs de débogage signalées dans console | Documents Microsoft"  
 [DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "Utiliser la console pour interagir avec la console DOM | Documents Microsoft" 
@@ -182,11 +182,8 @@ Pour plus d’informations sur la **console,** accédez à la référence de [co
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Journal des messages dans l’outil console | Documents Microsoft"  
 [DevtoolsConsoleReference]: ./reference.md "Référence de la console | Documents Microsoft"  
 [DevtoolsConsoleUtilities]: ./utilities.md "Référence de l’API des utilitaires de console | Documents Microsoft"  
-
-[DevtoolsIssuesIndex]: ../issues/index.md "Recherchez et corrigez les problèmes liés à l’outil des problèmes de Microsoft Edge DevTools | Documents Microsoft"  
-
+[DevtoolsIssuesIndex]: ../issues/index.md "Rechercher et résoudre des problèmes à l’aide de l’outil Problèmes | Documents Microsoft"  
+<!-- external links -->
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "Exemples de messages de console : journal, informations, erreurs et avertissements | GitHub"  
-
 [MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "Fenêtre | MDN"  
-
 [WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Lecture-eval-print loop | Wikipedia"  

@@ -1,5 +1,5 @@
 ---
-description: Les dernières fonctionnalités expérimentales de Microsoft Edge DevTools
+description: Dernières fonctionnalités expérimentales de Microsoft Edge DevTools
 title: Fonctionnalités expérimentales
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -22,16 +22,16 @@ no-loc:
 - Edit keyboard shortcuts for any action in the DevTools
 - Turn on new CSS grid debugging features
 - 'Emulation: Support dual screen mode'
-ms.openlocfilehash: 82d547c8c1ed0606bda9ade27d0dbddbfa2ca800
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+ms.openlocfilehash: dec4b4d111c0eb8dc9cc3963bac7339df1d9b6f6
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11596998"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624751"
 ---
 # <a name="experimental-features"></a>Fonctionnalités expérimentales  
 
-Microsoft Edge DevTools permet d’accéder aux fonctionnalités expérimentales qui sont encore en développement.  Vous pouvez tester et [fournir des commentaires](#providing-feedback-on-experimental-features) avant la publication de chaque fonctionnalité.  
+Microsoft Edge DevTools permet d’accéder à des fonctionnalités expérimentales en cours de développement.  Vous pouvez tester et [fournir des commentaires](#providing-feedback-on-experimental-features) avant la publication de chaque fonctionnalité.  
 
 Bien que les fonctionnalités expérimentales soient disponibles dans tous les canaux de Microsoft Edge, vous pouvez obtenir les dernières fonctionnalités expérimentales à l’aide canal Microsoft Edge Canary.  
 
@@ -118,15 +118,14 @@ Après avoir activer l’expérience, assurez-vous de redémarrer de DevTools.  
 1.  Sous la **Source Order Viewer** section, cochez **la case Afficher** la commande source.  
 1.  Mettez en surbrillez n’importe quel élément HTML pour afficher une superposition que l’ordre dans la source de la page web.  
     
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
-   **Source Order Viewer** in the **Accessibility** pane  
+:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer) ::: in the Accessibility pane» lightbox=».. /media/experiments-source-order-viewer.msft.png»::: dans le volet **:::no-loc(Source Order Viewer** Accessibilité ****  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
 
 ### Enable Composited Layers in 3D View  
 
-Vous pouvez maintenant visualiser calques avec les index z et le modèle objet de document \(DOM\).  Cette fonctionnalité vous permet de déboguer sans changer de contexte aussi souvent.  Vous avez identifié que la réduction du basculement de contexte était un problème majeur.  Il n’est pas toujours évident de savoir comment le code que vous écrivez affecte votre application web.  Pour une expérience de débogage visuel complète, les couches composites et les couches 3D View composites sont désormais combinées.  
+Vous pouvez maintenant visualiser calques avec les index z et le modèle objet de document \(DOM\).  Cette fonctionnalité vous permet de déboguer sans changer de contexte aussi souvent.  Vous avez identifié que la réduction du basculement de contexte était un problème majeur.  Il n’est pas toujours clair comment le code que vous écrivez affecte votre application web.  Pour une expérience de débogage visuel complète, les couches composites et les couches 3D View composites sont désormais combinées.  
 
 Après avoir activer l’expérience, assurez-vous de redémarrer de DevTools.  Pour utiliser **les couches composites,** complétez les étapes suivantes.  
 
@@ -155,7 +154,7 @@ Après avoir activer l’expérience, assurez-vous de redémarrer de DevTools.  
 1.  Ouvrez **le volet Styles.**  
 1.  Sélectionnez **l’icône Éditeur de** polices.  
     
-Pour plus d’informations sur le nouvel éditeur de polices **visuel,** accédez à Modifier les styles de police CSS et les paramètres dans le volet Styles dans [DevTools][DevtoolsInspectStylesEditFonts].  
+Pour plus d’informations sur le nouvel éditeur de **polices**visuel, accédez à Modifier les styles de police CSS et les paramètres dans le volet Styles dans [DevTools][DevtoolsInspectStylesEditFonts].  
 
 :::image type="complex" source="../media/font-editor-open.msft.png" alt-text="Le volet Visual Font Editor est mis en surbrill" lightbox="../media/font-editor-open.msft.png":::
    Le volet **Visual Font Editor** est mis en surbrill  
@@ -169,7 +168,7 @@ Cette fonctionnalité expérimentale fournit de nombreuses nouvelles visualisati
 
 #### <a name="display-persistent-overlays-on-flexbox-layouts-with-the-inspect-tool"></a>Afficher des superpositions persistantes sur les dispositions Flexbox à l’aide de l’outil Inspect  
 
-**L’outil Inspect** permet d’identifier et de visualiser rapidement les dispositions flexbox CSS dans un site web en pointant dessus avec la souris.  Choisissez **l’icône Inspect** \( Inspect \) dans le ![ coin supérieur gauche de ](../media/inspect-icon.msft.png) DevTools.  Ensuite, lors du débogage du site web, pointez sur un conteneur flexible pour afficher les contours autour du conteneur flexible.  
+**L’outil Inspect** permet d’identifier et de visualiser rapidement les dispositions flexbox CSS dans un site web en pointant dessus avec la souris.  Choisissez **l’icône Inspect** \( Inspect \) dans le coin supérieur gauche ![ de ](../media/inspect-icon.msft.png) DevTools.  Ensuite, lors du débogage du site web, pointez sur un conteneur flexible pour afficher les contours autour du conteneur flexible.  
 
 :::image type="complex" source="../media/flexbox-hover.msft.png" alt-text="Afficher les conteneurs Flexbox avec l’outil Inspect" lightbox="../media/flexbox-hover.msft.png":::
    Afficher les conteneurs Flexbox avec **l’outil Inspect**  
@@ -194,7 +193,7 @@ Pour faire bascule les superpositions persistantes sur la disposition Flexbox, u
 
 #### <a name="configure-persistent-overlays"></a>Configurer des superpositions persistantes  
 
-Pour configurer les options des superpositions persistantes pour les grilles CSS ou les dispositions Flexbox, utilisez **le** volet Disposition.  Le **volet** Disposition se trouve dans l’outil **Éléments** en plus des **volets Styles** **et** Calculés.  
+Pour configurer les options des superpositions persistantes pour les grilles CSS ou les dispositions Flexbox, utilisez **le** volet De disposition.  Le **volet** Disposition se trouve dans l’outil **Éléments** en côté des **volets Styles** **et** Calculés.  
 
 :::image type="complex" source="../media/flexbox-layout.msft.png" alt-text="Panneau de disposition" lightbox="../media/flexbox-layout.msft.png":::
    Panneau de disposition  
@@ -214,14 +213,14 @@ Vous pouvez maintenant ouvrir d’autres outils à l’aide de la nouvelle icôn
 
 ### Enable Welcome tab
 
-Cette expérience remplace **l’outil Nouveautés** par le nouvel outil **Welcome.**  Il affiche une conception actualisée pour le contenu suivant.  
+Cette expérience remplace **l’outil Nouveautés** par le nouvel **outil Welcome.**  Il affiche une conception actualisée pour le contenu suivant.  
 
 *   Liens vers des documents de développement  
 *   fonctionnalités les plus récentes  
 *   notes de publication  
 *   Option pour contacter l’Microsoft Edge devTools  
     
-**L’outil** Welcome s’ouvre automatiquement après chaque mise à jour Microsoft Edge.  Pour empêcher l’affichage de l’outil **d’accueil** **** après chaque mise à jour, cochez la case en regard de l’onglet Ouvrir après chaque mise à jour sous le titre de **l’outil** d’accueil.  
+**L’outil** Welcome s’ouvre automatiquement après chaque mise à jour Microsoft Edge.  Pour empêcher l’affichage de l’outil **Welcome** après **** chaque mise à jour, cochez la case en regard de l’onglet Ouvrir après chaque mise à jour sous le titre de **l’outil** Welcome.  
 
 Si vous préférez **l’outil Nouveautés d’origine,** accédez [à Paramètres][DevtoolsCustomizeIndexSettings]Expériences et supprimez la case à cocher en  >  **** regard **Enable Welcome tab** de .  
 
@@ -258,7 +257,6 @@ Pour fournir des commentaires sur Microsoft Edge expériences DevTools ou sur to
 -->  
 
 <!-- links -->  
-
 [Devtools3dViewIndex]: ../3d-view/index.md "3D View | Documents Microsoft"  
 [DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Documents Microsoft"  
 [DevtoolsCustomizeIndex]: ../customize/index.md "Personnalisez Microsoft Edge devTools | Documents Microsoft"  
@@ -268,12 +266,10 @@ Pour fournir des commentaires sur Microsoft Edge expériences DevTools ou sur to
 [DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Émuler les appareils à double écran et pliables dans Microsoft Edge devTools | Documents Microsoft"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simuler des appareils mobiles avec le mode Microsoft Edge devTools | Microsoft Edge"  
 [DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Modifier les styles et paramètres de police CSS dans le volet Styles de DevTools | Microsoft Docs"  
-[DevtoolsIssuesIndex]: ../issues/index.md "Recherchez et corrigez les problèmes liés à l’outil des problèmes de Microsoft Edge DevTools | Documents Microsoft"  
+[DevtoolsIssuesIndex]: ../issues/index.md "Rechercher et résoudre des problèmes à l’aide de l’outil Problèmes | Documents Microsoft"  
 [DevtoolsOpenIndex]: ../open/index.md "Ouvrez Microsoft Edge devTools | Documents Microsoft"  
 [DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge Raccourcis clavier DevTools | Documents Microsoft"  
-
+<!-- external links: -->
 [MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"  
-
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
-
 [WebhintMain]: https://webhint.io "webhint"  

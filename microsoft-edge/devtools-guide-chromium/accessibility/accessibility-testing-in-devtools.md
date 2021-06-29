@@ -7,16 +7,16 @@ ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 50661f68c7b3269d003bdc25f6a8098ae0e3ec89
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+ms.openlocfilehash: f6ec0652bbbb7d7e60a69877a9d44a7a2fd636a5
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597400"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624793"
 ---
 # <a name="overview-of-accessibility-testing-using-devtools"></a>Vue d’ensemble des tests d’accessibilité à l’aide de DevTools
 
-Dans cet article, nous traitons de certaines des fonctionnalités que vous pouvez utiliser dans DevTools pour tester les problèmes d’accessibilité.  Nous utilisons différentes fonctionnalités de DevTools pour détecter les problèmes d’accessibilité dans une page de démonstration, et nous abordons comment les résoudre.  Ouvrez la [page de démonstration][DevToolsA11yErrorsDemopage] dans un nouvel onglet pour l’essayer vous-même et vous pouvez le tester.
+Dans cet article, nous traitons de certaines des fonctionnalités que vous pouvez utiliser dans DevTools pour tester les problèmes d’accessibilité.  Nous utilisons différentes fonctionnalités de DevTools pour détecter les problèmes d’accessibilité dans une page de démonstration, et nous abordons comment les résoudre.  Ouvrez la [page de démonstration][DevToolsA11yErrorsDemopage] dans un nouvel onglet pour l’essayer vous-même et vous pouvez tester.
 
 :::image type="complex" source="../media/a11y-testing-basics-demopage.msft.png" alt-text="Page de démonstration utilisée dans cet article avec quelques problèmes d’accessibilité" lightbox="../media/a11y-testing-basics-demopage.msft.png":::
     Page de démonstration utilisée dans cet article avec quelques problèmes d’accessibilité
@@ -58,9 +58,9 @@ Dans ce cas, le code HTML possède un `label` élément qui ne fonctionne pas.
 <input type="submit" value="go">
 ```
 
-L’utilisation de `label` l’élément ici est erronée, car il n’existe aucune connexion entre `label` l’élément et `input` l’élément.  Une étiquette HTML valide met le focus sur la zone de texte d’entrée de recherche lorsque vous sélectionnez **l’étiquette** De recherche. 
+L’utilisation de `label` l’élément ici est erronée, car il n’existe aucune connexion entre `label` l’élément et `input` l’élément.  Une étiquette HTML valide met le focus sur la zone de texte d’entrée de recherche lorsque vous sélectionnez **l’étiquette** de recherche. 
 
-Vous pouvez résoudre ce problème en imbriant l’élément dans un élément ou en ajoutant un attribut qui pointe vers un attribut `input` `label` de `for` `id` `input` l’élément.  Pour afficher une connexion correcte, sélectionnez **l’étiquette Other** dans le formulaire de don.
+Vous pouvez résoudre ce problème en imbripportant l’élément dans un élément ou en ajoutant un attribut qui pointe vers un attribut `input` `label` de `for` `id` `input` l’élément.  Pour afficher une connexion correcte, sélectionnez **l’étiquette Other** dans le formulaire de don.
 
 Vous pouvez également sélectionner les liens explicatifs dans l’outil **Problèmes** pour obtenir ces informations.
 
@@ -94,14 +94,14 @@ Pour obtenir la procédure pas à pas détaillée, accédez à Vérifier que les
     Élément de la page mis en surbrillon après la sélection du lien vers celui-ci
 :::image-end:::
 
-Pour obtenir la procédure pas à pas détaillée, accédez à Vérifier que [les couleurs du texte ont un contraste suffisant.][DevtoolsAccessibilityTestIssuesToolCheckContrast]
+Pour obtenir la procédure pas à pas détaillée, accédez à Vérifier que les [couleurs du texte ont un contraste suffisant.][DevtoolsAccessibilityTestIssuesToolCheckContrast]
 
 
 ### <a name="verify-that-the-webpage-layout-is-usable-when-narrow"></a>Vérifier que la mise en page web est utilisable lorsqu’elle est étroite
 
 <!-- by design, this section doesn't have a corresponding how-to article -->
 
-Une partie importante de l’accessibilité consiste à s’assurer que vos produits web fonctionnent bien sur une vue étroite. De nombreux utilisateurs doivent effectuer un zoom sur la page pour pouvoir l’utiliser, ce qui signifie qu’il ne reste plus beaucoup d’espace. Lorsqu’il n’y a pas suffisamment d’espace, votre disposition sur plusieurs colonnes doit se transformer en une disposition à une seule colonne, avec un contenu placé dans un ordre compréhensible. Cela signifie que vous placez le contenu le plus important en haut de la page et que vous placez du contenu supplémentaire plus bas.
+Une partie importante de l’accessibilité consiste à vous assurer que vos produits web fonctionnent bien sur une vue étroite. De nombreux utilisateurs doivent effectuer un zoom sur la page pour pouvoir l’utiliser, ce qui signifie qu’il ne reste plus beaucoup d’espace. Lorsqu’il n’y a pas suffisamment d’espace, votre disposition sur plusieurs colonnes doit se transformer en une disposition à une seule colonne, avec un contenu placé dans un ordre compréhensible. Cela signifie que vous placez le contenu le plus important en haut de la page et que vous placez du contenu supplémentaire plus bas.
 
 En rendant la fenêtre du navigateur étroite et en utilisant les touches de direction pour faire défiler la page, vous pouvez voir que la barre de navigation supérieure de la page de démonstration présente certains problèmes d’accessibilité.  La barre de navigation supérieure chevauche le **formulaire de** recherche, comme illustré dans l’image précédente, et ce problème doit être résolu.
 
@@ -123,14 +123,14 @@ L’arborescence DOM de l’outil **Elements** détecte automatiquement les prob
     Un élément affiché avec un soulignement ondulé dans l’arborescence DOM présente des problèmes.  `Shift`+`click` l’élément à obtenir directement au problème.
 :::image-end:::
 
-Ces problèmes qui ont été trouvés par l’outil **Problèmes** sont des problèmes d’accessibilité relativement évidents qui peuvent être évités.  **L’utilisation de l’outil** Problèmes et de ses explications guidées pour les résoudre vous permet d’atteindre un produit accessible.
+Ces problèmes qui ont été trouvés par l’outil **Problèmes** sont des problèmes d’accessibilité relativement évidents qui peuvent être évités.  **L’utilisation de l’outil Problèmes** et de ses explications guidées pour les résoudre vous permet d’atteindre un produit accessible.
 
 
 ## <a name="limits-of-automated-testing"></a>Limites des tests automatisés
 
-[L’outil Problèmes,][DevToolsIssuesTool] [Accessibility Insights][AccessibilityInsights]et Le [Projet][Lighthouse] sont des outils qui génèrent automatiquement un rapport d’accessibilité pour une page web.  L’obtention d’un rapport automatisé à partir de ces outils n’est que le début de votre parcours de test de l’accessibilité.
+[L’outil Problèmes,][DevToolsIssuesTool] [l’outil Informations][AccessibilityInsights]accessibilité et le [Portail][Lighthouse] sont des outils qui génèrent automatiquement un rapport d’accessibilité pour une page web.  L’obtention d’un rapport automatisé à partir de ces outils n’est que le début de votre parcours de test de l’accessibilité.
 
-L’accessibilité est une question d’interaction humaine : les personnes ayant des besoins différents utilisant vos produits dans différents environnements techniques.  Ce test ne peut pas être entièrement automatisé, mais doit être vérifié par un humain qui navigue sur le produit.  Dans le meilleur scénario, vous avez accès aux testeurs ayant des besoins d’accessibilité différents et aux testeurs utilisant différents environnements.  Toutefois, vous pouvez déjà faire beaucoup de choses vous-même en utilisant le clavier pour naviguer et en inspectant différentes parties de la page.
+L’accessibilité est une question d’interaction humaine : les personnes ayant des besoins différents utilisant vos produits dans différents environnements techniques.  Ce test ne peut pas être entièrement automatisé, mais doit être vérifié par un humain qui navigue sur le produit.  Dans le meilleur scénario, vous ariez accès aux testeurs ayant des besoins d’accessibilité différents et aux testeurs utilisant différents environnements.  Toutefois, vous pouvez déjà faire beaucoup de choses vous-même en utilisant le clavier pour naviguer et en inspectant différentes parties de la page.
 
 Dans la page de démonstration, il existe d’autres problèmes que les tests automatisés ne peuvent pas détecter, notamment : 
 
@@ -188,7 +188,7 @@ La section **Accessibilité** de la superposition **Inspect** contient les ligne
 
 *   **Le nom** et **le rôle** indiquent les technologies d’assistance aux informations, telles que les lecteurs d’écran, qui signalent l’élément.
     *   Le **nom est** le contenu de texte d’un `a` élément.  Pour l’élément, `<a href="/">About Us</a>` le nom **affiché** dans l’outil Inspect est « À propos de nous ».
-    *   Rôle **de** l’élément.  Le **rôle** est généralement le nom de l’élément, tel `article` que , , ou `img` `link` `heading` .  Les `div` éléments et les éléments sont `span` représentés en tant que `generic` .
+    *   Rôle **de** l’élément.  Le **rôle** est généralement le nom de l’élément, tel `article` que , , ou `img` `link` `heading` .  Les `div` éléments et les éléments sont `span` représentés par `generic` .
 
 *   **La mise au point du clavier** indique si les utilisateurs peuvent accéder à l’élément à l’aide de périphériques d’entrée autres qu’une souris.
     *   Une icône de coche verte indique que l’élément est focusable au clavier.
@@ -200,7 +200,7 @@ Pour obtenir la procédure pas à pas détaillée, accédez à Vérifier les él
 
 ### <a name="using-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css"></a>Utilisation de l’outil Inspect pour pointer sur la page web afin de mettre en évidence le DOM et le CSS
 
-Lorsque vous utilisez **l’outil Inspect,** la sélection d’un élément sur la page rendue ouvre **l’outil Elements.**  L’arborescence DOM affiche le code HTML de l’élément, et **Styles** les propriétés CSS qui sont appliquées à l’élément.
+Lorsque vous utilisez **l’outil Inspect,** la sélection d’un élément sur la page rendue ouvre **l’outil Elements.**  L’arborescence DOM affiche le code HTML de l’élément, et **Styles** affiche les propriétés CSS qui sont appliquées à l’élément.
 
 :::image type="complex" source="../media/a11y-testing-basics-inspector-selected-element.msft.png" alt-text="Détails sur l’élément sélectionné affiché dans l’outil Éléments" lightbox="../media/a11y-testing-basics-inspector-selected-element.msft.png":::
     Détails sur l’élément sélectionné affiché dans l’outil Éléments
@@ -214,7 +214,7 @@ Pour obtenir la procédure pas à pas détaillée, accédez à Utiliser l’outi
 
 ## <a name="verify-keyboard-support-by-using-the-tab-and-enter-keys"></a>Vérifier la prise en charge du clavier à l’aide des touches Tab et Entrée
 
-Toutes les personnes n’utilisent pas de pointeur ou d’appareils tactiles, et certaines personnes peuvent avoir une vision faible. Pour répondre à ces scénarios, assurez-vous que les UIS fonctionnent avec les claviers.
+Toutes les personnes n’utilisent pas de pointeur ou d’appareils tactiles, et certaines personnes peuvent avoir une vision faible. Pour répondre à ces scénarios, assurez-vous que les UIs fonctionnent avec les claviers.
 
 Vous pouvez tester l’utilisation d’un clavier pour naviguer dans la page, en utilisant ou en sautant `Tab` `Shift+Tab` d’un élément à l’autre.  Si vous appuyez sur la page de démonstration, la première chose qui reçoit le focus est le formulaire de `Tab` recherche dans l’en-tête de page. ****  Appuyer même sur vous permet d’envoyer le formulaire, ce qui fonctionne, malgré le problème d’étiquette que nous avons détecté précédemment lors de l’utilisation de `Enter` **l’outil** Problèmes.
 
@@ -236,14 +236,14 @@ Si vous regardez en bas à gauche de l’écran ou si **** vous utilisez un lect
 
 Une nouvelle `Tab` sélection vous place dans la boîte de texte d’entrée du formulaire de don.  Toutefois, vous ne pouvez pas atteindre **les boutons 50,** **100** ou **200** au-dessus de la boîte de texte d’entrée.  En outre, lorsque le focus est sur cette boîte de texte d’entrée, la sélection `Enter` n’envoie pas le formulaire.
 
-:::image type="complex" source="../media/a11y-testing-form-field-with-outline.msft.png" alt-text="Le seul élément accessible au clavier dans le formulaire de don est le champ de texte d’entrée." lightbox="../media/a11y-testing-form-field-with-outline.msft.png":::
+:::image type="complex" source="../media/a11y-testing-form-field-with-outline.msft.png" alt-text="Le seul élément accessible au clavier dans le formulaire de don est le champ de texte d’entrée" lightbox="../media/a11y-testing-form-field-with-outline.msft.png":::
     Le seul élément accessible au clavier dans le formulaire de don est le champ de texte
 :::image-end:::
 
-La sélection de nouveau met le focus sur la barre de navigation supérieure, où vous pouvez choisir d’aller à une autre section de la page ou à une `Tab` `Enter` autre page du site.  Vous connaissez l’élément sur lequel vous vous concentrez, car il existe un plan de mise au point.  Pour sélectionner un lien dans la barre de navigation supérieure, utilisez ou mettez le focus sur un `Tab` `Shift+Tab` lien, puis sélectionnez `Enter` .
+La sélection de nouveau met le focus sur la barre de navigation supérieure, où vous pouvez choisir d’aller à une autre section de la page ou à une `Tab` `Enter` autre page du site.  Vous savez sur quel élément vous vous concentrez, car il existe un plan de mise au point.  Pour sélectionner un lien dans la barre de navigation supérieure, utilisez ou mettez le focus sur un `Tab` `Shift+Tab` lien, puis sélectionnez `Enter` .
 
-:::image type="complex" source="../media/a11y-testing-menu-with-outline.msft.png" alt-text="La barre de navigation supérieure présente une surbrillation et un plan de mise au point, et est donc accessible au clavier" lightbox="../media/a11y-testing-menu-with-outline.msft.png":::
-    La barre de navigation supérieure présente une surbrillation et un plan de mise au point, et est donc accessible au clavier
+:::image type="complex" source="../media/a11y-testing-menu-with-outline.msft.png" alt-text="La barre de navigation supérieure présente une mise en surbrillation et un plan de mise au point, et est donc accessible au clavier" lightbox="../media/a11y-testing-menu-with-outline.msft.png":::
+    La barre de navigation supérieure présente une mise en surbrillation et un plan de mise au point, et est donc accessible au clavier
 :::image-end:::
 
 Nous avons trouvé certains problèmes ici pour résoudre :
@@ -272,7 +272,7 @@ Dans l’onglet **Styles,** vous pouvez voir le fichier CSS qui est appliqué au
     Styles appliqués au lien, affichés dans l’outil Sources
 :::image-end:::
 
-Dans l’exemple ci-dessus, les styles de la page incluent un état sur l’élément de menu lorsque vous utilisez une souris, mais il n’y a aucun état dans le CSS pour les utilisateurs `hover` `focus` du clavier.  
+Dans l’exemple ci-dessus, les styles de la page incluent un état sur l’élément de menu lorsque vous utilisez une souris, mais il n’y a aucun état dans le CSS pour les utilisateurs `hover` `focus` de clavier.  
 
 En outre, dans cet exemple, les liens utilisent `outline: none` . Ce style permet de supprimer le plan qui est automatiquement ajouté par les navigateurs aux éléments lorsqu’ils ont le focus et que les claviers sont utilisés.  Pour éviter ce problème, n’utilisez pas `outline: none` .
 
@@ -285,8 +285,8 @@ Les boutons du formulaire de don sont implémentés à l’aide de l’élément
 
 Pour ce faire, vous pouvez utiliser l’outil **Inspect** pour pointer sur les boutons du formulaire de don.  Par conséquent, aucun d’entre eux n’est accessible au **** clavier, comme indiqué par l’anneau gris sur la ligne de superposition d’informations qui peut être axée sur le clavier.  Comme indiqué **** dans **** les lignes Nom et rôle de la superposition d’informations, les boutons du formulaire de don n’ont pas non plus de nom et ont un rôle (représentant ou éléments), ce qui signifie qu’ils ne sont pas accessibles à la technologie `generic` `div` `span` d’assistance.
 
-:::image type="complex" source="../media/a11y-testing-donation-button-info.msft.png" alt-text="L’inspection des boutons du formulaire indique qu’ils ne sont pas accessibles au clavier" lightbox="../media/a11y-testing-donation-button-info.msft.png":::
-    L’inspection des boutons du formulaire indique qu’ils ne sont pas accessibles au clavier
+:::image type="complex" source="../media/a11y-testing-donation-button-info.msft.png" alt-text="L’inspection des boutons du formulaire montre qu’ils ne sont pas accessibles au clavier" lightbox="../media/a11y-testing-donation-button-info.msft.png":::
+    L’inspection des boutons du formulaire montre qu’ils ne sont pas accessibles au clavier
 :::image-end:::
 
 Pour obtenir la procédure pas à pas détaillée, accédez à Analyser l’absence de prise en charge du clavier [dans un formulaire.](test-analyze-no-keyboard-support.md)
@@ -308,7 +308,7 @@ Si vous sélectionnez le **bouton Contrôle,** l’outil **Inspect** vous permet
 </div>
 ```
 
-L’utilisation des éléments et des éléments est valide, ce qui permet à l’étiquette de fonctionner comme prévu et la boîte de texte `label` `input` est accessible au `input` clavier.  Le reste du formulaire utilise des éléments, faciles à styler mais sans `div` signification sémantique.
+L’utilisation des éléments et des éléments est valide, ce qui permet à l’étiquette de fonctionner comme prévu et la boîte de texte `label` `input` est accessible au `input` clavier.  Le reste du formulaire utilise des éléments, qui sont faciles à styler mais qui `div` n’ont aucune signification sémantique.
 
 Ensuite, nous allons analyser la fonctionnalité JavaScript du formulaire. Dans **Éléments,** sélectionnez **l’onglet Écouteurs** d’événements pour analyser le javaScript du formulaire.
 
@@ -367,7 +367,7 @@ Pour obtenir la procédure pas à pas détaillée, accédez à la prise en charg
 
 Outre les tests **automatiques** de contraste de couleur dans l’outil Problèmes, vous pouvez également utiliser l’outil **Inspect** pour vérifier si les éléments de page individuels ont un contraste suffisant.  Si des informations de contraste sont disponibles, la superposition **Inspect** affiche le coefficient de contraste et un élément de case à cocher.  Une icône de coche verte indique qu’il y a suffisamment de contraste et qu’une icône d’alerte jaune indique un contraste insuffisant.
 
-Par exemple, les liens dans le menu de navigation de la barre latérale ont un contraste suffisant, mais l’élément vert de la liste **Des chiens** dans la section **État** du don ne le fait pas.  Un élément qui n’a pas assez de contraste est marqué par un avertissement dans la superposition **Inspect.**
+Par exemple, les liens dans le menu de navigation de la barre latérale ont un contraste suffisant, mais l’élément vert de la liste **Des chiens** de la section **État** du don ne le fait pas.  Un élément qui n’a pas assez de contraste est marqué par un avertissement dans la superposition **Inspect.**
 
 :::row:::
     :::column:::
@@ -380,7 +380,7 @@ Par exemple, les liens dans le menu de navigation de la barre latérale ont un c
     :::column-end:::
 :::row-end:::
 
-**L’utilisation de l’outil** Inspect de cette façon ne teste pas complètement vos éléments. Les éléments de la page peuvent avoir des états différents, qui doivent tous être testés. Par exemple, si vous pointez la souris sur le menu de navigation de la barre latérale, notez l’animation qui modifie la couleur des liens.
+**L’utilisation de** l’outil Inspect de cette façon ne teste pas complètement vos éléments. Les éléments de la page peuvent avoir des états différents, qui doivent tous être testés. Par exemple, si vous pointez la souris sur le menu de navigation de la barre latérale, notez l’animation qui modifie la couleur des liens.
 
 :::image type="complex" source="../media/a11y-testing-hover.msft.png" alt-text="Élément de menu affichant différentes couleurs lorsque le pointeur de la souris est sur celui-ci" lightbox="../media/a11y-testing-hover.msft.png":::
     Élément de menu affichant différentes couleurs lorsque le pointeur de la souris est sur celui-ci
@@ -394,8 +394,8 @@ Pour obtenir la procédure pas à pas détaillée, accédez à [Vérifier l’ac
 
 Activer **l’outil Inspect,** puis dans la page rendue, sélectionnez le lien **chats** bleus dans le menu de navigation de la barre latérale.  **L’outil** Elements s’ouvre, avec `a` l’élément sélectionné dans l’arborescence DOM.  Si nécessaire, dans l’arborescence DOM, accédez à l’élément qui a un `hover` état dans le CSS.  Dans ce cas, `a` l’élément a un `hover` état.
 
-:::image type="complex" source="../media/a11y-testing-inspecting-link-to-hover.msft.png" alt-text="Inspection de l’élément dont l’état de pointage est dans l’outil Éléments" lightbox="../media/a11y-testing-inspecting-link-to-hover.msft.png":::
-    Inspection de l’élément dont l’état de pointage est dans l’outil Éléments
+:::image type="complex" source="../media/a11y-testing-inspecting-link-to-hover.msft.png" alt-text="Inspection de l’élément dont l’état de pointage est dans l’outil Elements" lightbox="../media/a11y-testing-inspecting-link-to-hover.msft.png":::
+    Inspection de l’élément dont l’état de pointage est dans l’outil Elements
 :::image-end:::
 
 Sous **l’onglet Styles,** sélectionnez le bouton **\:hov (Toggle Element State).**  Ensuite, utilisez les case **à cocher d’état** de l’élément Force pour choisir l’état à simuler.
@@ -421,7 +421,7 @@ La simulation d’état est également un bon moyen de vérifier si vous avez pr
 
 ## <a name="use-the-rendering-tool-to-test-accessibility-for-visual-impairment"></a>Utiliser l’outil de rendu pour tester l’accessibilité des troubles visuels
 
-### <a name="check-contrast-issues-with-dark-theme-and-light-themes"></a>Vérifier les problèmes de contraste avec le thème foncé et les thèmes clair
+### <a name="check-contrast-issues-with-dark-theme-and-light-themes"></a>Vérifier les problèmes de contraste avec un thème foncé et des thèmes clair
 
 En ce qui concerne l’accessibilité des couleurs, vous devez également tenir compte du fait qu’il peut y avoir différents thèmes que vous devez tester pour les problèmes de contraste.  La plupart des systèmes d’exploitation ont un mode sombre et un mode clair.  Votre page web peut réagir à ces différents paramètres à l’aide de requêtes multimédias CSS.
 
@@ -471,7 +471,7 @@ Pour obtenir la procédure pas à pas détaillée, accédez à Vérifier que la 
 
 Un autre paramètre que les systèmes d’exploitation viennent avec ces jours-ci est un moyen de désactiver les animations.  Les animations peuvent faciliter l’utilisation d’un produit, mais elles peuvent également provoquer de nombreux problèmes, allant de la confusion à la confusion. C’est pourquoi vos produits ne doivent pas afficher d’animations aux utilisateurs qui les ont désactivées dans le système d’exploitation.  À l’aide d’une requête multimédia CSS, vous pouvez vérifier si l’utilisateur souhaite voir les animations et les désactiver en conséquence.  Et, comme avec le mode sombre et clair, il existe un moyen de simuler un mouvement réduit à l’aide [de DevTools][DevToolsReducedMotion].
 
-Dans la page de démonstration, la arrêt des animations arrête le défilement fluide de la page lorsque vous sélectionnez différentes parties du menu de navigation de la barre latérale.  Pour ce faire, insérez le paramètre de défilement fluide dans CSS dans une requête multimédia :
+Dans la page de démonstration ici, la arrêt des animations arrête le défilement fluide de la page lorsque vous sélectionnez différentes parties du menu de navigation de la barre latérale.  Pour ce faire, insérez le paramètre de défilement fluide dans CSS dans une requête multimédia :
 
 :::image type="complex" source="../media/a11y-testing-simulating-reduced-motion.msft.png" alt-text="Simulation d’un mouvement réduit et du CSS qui permet de s’assurer que le défilement fluide se produit uniquement lorsque l’utilisateur le souhaite" lightbox="../media/a11y-testing-simulating-reduced-motion.msft.png":::
     Simulation d’un mouvement réduit et du CSS qui permet de s’assurer que le défilement fluide se produit uniquement lorsque l’utilisateur le souhaite
@@ -485,23 +485,23 @@ Dans la page de démonstration, la arrêt des animations arrête le défilement 
 }
 ```
 
-Cette requête multimédia CSS exécute l’animation de « défilement fluide ».  Toutefois, l’animation de la barre de **** navigation supérieure, du menu de navigation de la barre latérale et des liens Plus s’exécute toujours, même lorsque l’utilisateur ne souhaite pas voir d’animations. Ces autres animations doivent être exécutés de manière conditionnable, par exemple en ajoutant des requêtes multimédias supplémentaires.
+Cette requête multimédia CSS exécute l’animation de « défilement fluide ».  Toutefois, l’animation de la barre de **** navigation supérieure, du menu de navigation de la barre latérale et des liens Plus s’exécute toujours, même lorsque l’utilisateur ne souhaite pas voir les animations. Ces autres animations doivent être exécutés de manière conditionnable, par exemple en ajoutant des requêtes multimédias supplémentaires.
 
 Pour obtenir la procédure pas à pas détaillée, accédez à Vérifier que la page est utilisable avec l’animation de [l’interface utilisateur désactivée.](test-reduced-ui-motion.md)
 
 
 ## <a name="what-to-do-next"></a>Que faire ensuite ?
 
-Nous avons abordé un certain nombre d’outils que vous pouvez utiliser pour vous assurer que vous prenez en compte les problèmes d’accessibilité dans vos produits.  Ces outils vont des vérifications automatisées et manuelles aux vérifications des détails jusqu’à la simulation de différents états et environnements.  Ces outils sont résumés dans les fonctionnalités [de test d’accessibilité dans DevTools](reference.md).  Les outils automatisés ne peuvent pas trouver tous les problèmes dans un produit, car de nombreux obstacles à l’accessibilité s’affiche uniquement lors d’une utilisation interactive.
+Nous avons abordé un certain nombre d’outils que vous pouvez utiliser pour vous assurer que vous prenez en compte les problèmes d’accessibilité dans vos produits.  Ces outils vont des vérifications automatisées et manuelles aux vérifications détaillées de simulation des différents états et environnements.  Ces outils sont résumés dans les fonctionnalités [de test d’accessibilité de DevTools.](reference.md)  Les outils automatisés ne peuvent pas trouver tous les problèmes dans un produit, car de nombreux obstacles à l’accessibilité s’affiche uniquement lors d’une utilisation interactive.
 
-Aucun de ces outils ne peut remplacer une série appropriée de tests de vos produits par des personnes qui utilisent des technologies d’assistance et qui suivent un plan pour vérifier tous les tests requis. Vous pouvez également utiliser la fonctionnalité [Évaluations][AccessibilityInsightsAssessment] de [Insights sur l’accessibilité.][AccessibilityInsights]  Vous devrez peut-être effectuer des vérifications supplémentaires telles que :
+Aucun de ces outils ne peut remplacer une série appropriée de tests de vos produits par des personnes qui utilisent des technologies d’assistance et qui suivent un plan pour vérifier tous les tests requis. Vous pouvez également utiliser la fonctionnalité Évaluations de [l’accessibilité Informations][AccessibilityInsights]. [][AccessibilityInsightsAssessment]  Vous devrez peut-être effectuer des vérifications supplémentaires telles que :
 
 * Test lors d’un zoom avant.
 * Test avec les lecteurs d’écran.
 * Test avec reconnaissance vocale.
 * Test en mode de contraste élevé.
 
-Une autre façon de savoir comment améliorer votre produit web consiste à utiliser [l’extension dehint web pour Visual Studio Code][WebhintForCode].  Cette extension indicateurs les problèmes d’accessibilité facilement détectables dans votre code source et donne des informations sur la façon de les résoudre.
+Une autre façon de savoir ce qu’il faut faire pour améliorer votre produit web consiste à utiliser [l’extension dehint web pour Visual Studio Code][WebhintForCode].  Cette extension indicateurs les problèmes d’accessibilité facilement détectables dans votre code source et donne des informations sur la façon de les résoudre.
 
 :::image type="complex" source="../media/a11y-testing-webhint-in-vs-code.msft.png" alt-text="Webhint dans Visual Studio Code, montrant un problème d’accessibilité en soulignementant l’élément HTML et en affichant une explication du problème" lightbox="../media/a11y-testing-webhint-in-vs-code.msft.png":::
     Webhint dans Visual Studio Code, montrant un problème d’accessibilité en soulignementant l’élément HTML et en affichant une explication du problème
@@ -520,7 +520,7 @@ Nous travaillons en permanence sur les nouvelles fonctionnalités d’accessibil
 [DevToolsDeviceModeIndex]: ../device-mode/index.md "Émuler des appareils mobiles dans Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsAccessibilityReference]: reference.md "Fonctionnalités de test de l’accessibilité dans DevTools | Documents Microsoft"
 [DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Modèle de simulation de jeu de couleurs sombres ou claires | Documents Microsoft"
-[DevToolsIssuesTool]: ../issues/index.md "Recherchez et corrigez les problèmes liés à l’outil des problèmes de Microsoft Edge DevTools | Documents Microsoft"
+[DevToolsIssuesTool]: ../issues/index.md "Rechercher et résoudre des problèmes à l’aide de l’outil Problèmes | Documents Microsoft"
 [DevToolsReducedMotion]: ./reduced-motion-simulation.md "Simulation de mouvement réduit | Documents Microsoft"
 [DevToolsVisionDeficiencies]: ./emulate-vision-deficiencies.md "Émuler les défaillances visuelles | Documents Microsoft"
 <!-- links into test-issues-tool.md -->
@@ -536,7 +536,7 @@ Nous travaillons en permanence sur les nouvelles fonctionnalités d’accessibil
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Page web de démonstration de test d’accessibilité | GitHub"
 [W3CContrastRatio]: https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio "taux de contraste | W3C"
 [WCAG]: https://www.w3.org/TR/WCAG21/ "Recommandations en matière d’accessibilité du contenu web | W3C"
-[AccessibilityInsightsAssessment]: https://accessibilityinsights.io/docs/en/web/getstarted/assessment/ "Évaluation dans Accessibility Insights for Web | Informations sur l’accessibilité"
-[AccessibilityInsights]: https://accessibilityinsights.io "Informations sur l’accessibilité"
-[Lighthouse]: https://developers.google.com/web/tools/lighthouse/ "Les | Google"
+[AccessibilityInsightsAssessment]: https://accessibilityinsights.io/docs/en/web/getstarted/assessment/ "Évaluation dans le Informations’accessibilité pour les | Web Niveau d’accessibilité Informations"
+[AccessibilityInsights]: https://accessibilityinsights.io "Niveau d’accessibilité Informations"
+[Lighthouse]: https://developers.google.com/web/tools/lighthouse/ "| Google"
 [WebhintForCode]:https://aka.ms/webhint4code "webhint | Visual Studio Marketplace"

@@ -1,18 +1,18 @@
 ---
 description: Test de l’accessibilité à l’aide de l’outil DevTools.
-title: Tester l’accessibilité à l’aide de l’outil Contrôle d’accès
+title: Tester l’accessibilité à l’aide de Lighthouse
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: bb158085eb516c8d4ce37a22f6b612784db51461
-ms.sourcegitcommit: 34feec6ae6241c598911dac7b63c28d655691233
+ms.openlocfilehash: 822c25240ba30df31416ca783bf48d6d9ba52ed2
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "11597396"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624632"
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques 
@@ -29,9 +29,9 @@ ms.locfileid: "11597396"
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# <a name="test-accessibility-using-lighthouse"></a>Tester l’accessibilité à l’aide de l’outil Contrôle d’accès
+# <a name="test-accessibility-using-lighthouse"></a>Tester l’accessibilité à l’aide de Lighthouse
 
-Vous pouvez utiliser le Contrôle à partir de DevTools pour auditer l’accessibilité d’une page et générer un rapport. Vous pouvez utiliser l’outil Contrôle d’accès pour déterminer :
+Vous pouvez utiliser l’aide de DevTools à partir de DevTools pour auditer l’accessibilité d’une page et générer un rapport. Vous pouvez utiliser l’outil Contrôle d’accès pour déterminer :
 
 *   Si une page est correctement marquée pour les lecteurs d’écran.  
 *   Si les éléments de texte d’une page ont des coefficients de contraste suffisants à l’aide du s sélectionneur de couleurs. Pour plus d’informations, accédez à Tester le contraste de couleur du texte à [l’aide du s sélectionneur de couleurs.](color-picker.md)   
@@ -78,14 +78,14 @@ Pour auditer une page à l’aide de l’outil Contrôle d’accès, effectuez l
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est sous [licence internationale Creative Commons Attribution 4.0][CCA4IL].  
 
 
 <!-- links -->  
-[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe - Test d’accessibilité web - Chrome Web Store"  
+[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd "axe - Test d’accessibilité web - Chrome Web Store"  
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  

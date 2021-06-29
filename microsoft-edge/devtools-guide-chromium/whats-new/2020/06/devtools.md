@@ -7,12 +7,12 @@ ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 75642a7f0fa8d6fae2f4daead84e2fc77df21e29
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 65a3fb4da235d2330bf9205b7a4a79a999559ca4
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564927"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624800"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -31,7 +31,7 @@ ms.locfileid: "11564927"
 
 ## <a name="announcements-from-the-microsoft-edge-devtools-team"></a>Annonces de l’équipe Microsoft Edge DevTools  
 
-Les sections suivantes sont une liste des annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités dans DevTools, Microsoft Visual Studio extensions de code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez l’équipe [Microsoft Edge DevTools][EdgeDevToolsTwitterAccount]sur Twitter.  
+Les sections suivantes sont une liste d’annonces que vous avez peut-être manquées de l’équipe Microsoft Edge DevTools.  Consultez les annonces pour essayer de nouvelles fonctionnalités dans DevTools, Microsoft Visual Studio extensions de code, etc.  Pour rester à jour sur toutes les fonctionnalités les plus récentes et les plus importantes de vos outils de développement, téléchargez les canaux d’aperçu [Microsoft Edge][MicrosoftEdgePreviewChannels] et suivez l’équipe [Microsoft Edge DevTools][EdgeDevToolsTwitterAccount]sur Twitter.  
 
 ### <a name="css-grid-debugging-features"></a>Fonctionnalités de débogage de grille CSS  
 
@@ -58,18 +58,18 @@ Chromium problème [#1047356][CR1047356]
    Fonctionnalité expérimentale  
 :::image-end:::  
 
-Vous pouvez désormais **** utiliser la modification et la relecture sur les demandes dans le journal [réseau][DevtoolsNetworkIndexLogActivity] à l’aide de la **console réseau.**  
+Vous pouvez désormais **** utiliser la modification et la relecture sur les demandes dans le journal réseau à l’aide [][DevtoolsNetworkIndexLogActivity] de la console **réseau.**  
 
 :::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Modifier et relire une demande dans NetworkLog avec la console réseau" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
    Modifier et relire une demande dans [NetworkLog][DevtoolsNetworkIndexLogActivity] avec la **console réseau**  
 :::image-end:::  
 
-Dans un nouveau panneau, la **console** réseau s’ouvre dans le panneau [DevTools][DevtoolsCustomizeIndexDrawer] et remplit automatiquement les informations de la requête HTTP.  Pour afficher la réponse renvoyée par le serveur, modifiez la demande \(si nécessaire\) et sélectionnez **Envoyer**.  
+Dans un nouveau panneau, la **console** réseau s’ouvre dans le panneau [DevTools][DevtoolsCustomizeIndexDrawer] et remplit automatiquement les informations de la requête HTTP.  Pour afficher la réponse renvoyée par le serveur, modifiez la demande \(si nécessaire\) et sélectionnez **Envoyer.**  
 
-Vous pouvez également utiliser la **console réseau pour** créer et envoyer des demandes HTTP directement à partir de DevTools.  
+Vous pouvez également utiliser la **console réseau pour** créer et envoyer des requêtes HTTP directement à partir de DevTools.  
 
 :::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="Panneau Console réseau" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
-   Panneau **Console** réseau  
+   Panneau **Console réseau**  
 :::image-end:::  
 
 > [!TIP]
@@ -90,7 +90,7 @@ Chromium problème [#1093687][CR1093687]
    Événement `respondWith` de travail de service dans **l’onglet Minutage** de **l’outil** Réseau  
 :::image-end:::  
 
-Développez **la réponse reçue** pour afficher des informations supplémentaires à partir de la réponse telle que , et `fetch` `CacheStorageCacheName` `serviceWorkerResponseSource` `ResponseTime` .  
+Développez **la réponse reçue** pour afficher des informations supplémentaires à partir de la réponse comme , et `fetch` `CacheStorageCacheName` `serviceWorkerResponseSource` `ResponseTime` .  
 
 :::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Développer la réponse reçue pour afficher des informations supplémentaires à partir de la réponse d’extraction" lightbox="../../media/2020/06/timing-tab2.msft.png":::
    Développer **la réponse reçue** pour afficher des informations supplémentaires à partir de la `fetch` réponse  
@@ -104,14 +104,14 @@ Chromium problème [#1066579][CR1066579]
    Fonctionnalité expérimentale  
 :::image-end:::  
 
-[webhint][WebhintMain] est un outil open source qui fournit des commentaires en temps réel sur l’accessibilité, la compatibilité entre navigateurs, la sécurité, les performances, les applications de bureau à long terme et d’autres problèmes de développement web courants liés aux sites web.  Pour passer en revue les commentaires sur les sites web dans [le panneau Problèmes.][DevtoolsIssues]  
+[webhint][WebhintMain] est un outil open source qui fournit des commentaires en temps réel sur l’accessibilité, la compatibilité entre les navigateurs, la sécurité, les performances, les applications de périmètre et d’autres problèmes de développement web courants des sites web.  Pour passer en revue les commentaires sur les sites web dans [le panneau Problèmes.][DevtoolsIssues]  
 
 :::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="commentaires webhint dans le panneau Problèmes" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    commentaires webhint dans le panneau Problèmes  
 :::image-end:::  
 
 > [!NOTE]
-> Pour activer l’expérience, [accédez à Activer][DevtoolsExperimentalFeaturesTurnOn] les fonctionnalités expérimentales et cochez la case en regard de **Activer lahint web.**  
+> Pour activer l’expérience, [accédez à Activer][DevtoolsExperimentalFeaturesTurnOn] les fonctionnalités expérimentales et activez la case à cocher en regard de **Activer lahint web.**  
 > 
 > Ouvrez [le panneau Problèmes][DevtoolsIssues] pour afficher les commentaires provenant de lahint web.  
 
@@ -142,7 +142,7 @@ Dans Microsoft Edge 83 et 84, les bulles de la colonne Initiator, qui [][Devtool
    L’aide de l’initiateur Microsoft Edge 84  
 :::image-end:::  
 
-À partir Microsoft Edge 85, vous pouvez désormais afficher la pile d’appels de l’initiateur dans l’bulle sans faire défiler horizontalement.  
+À partir Microsoft Edge 85, vous pouvez désormais afficher la pile d’appels de l’initiateur dans l’aide à outils sans faire défiler horizontalement.  
 
 :::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="L’aide de l’initiateur Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
    L’aide de l’initiateur Microsoft Edge 85
@@ -152,7 +152,7 @@ Chromium problème [#1069404][CR1069404]
 
 ## <a name="announcements-from-the-chromium-project"></a>Annonces du projet de Chromium  
 
-Les sections suivantes annoncent des fonctionnalités supplémentaires disponibles dans Microsoft Edge 85 qui ont été contribués au projet d’Chromium open source.  
+Les sections suivantes annoncent les fonctionnalités supplémentaires disponibles dans Microsoft Edge 85 qui ont été contribués au projet de Chromium open source.  
 
 ### <a name="style-editing-for-css-in-js-frameworks"></a>Modification du style pour les frameworks CSS-in-JS  
 
@@ -182,7 +182,7 @@ Chromium problème [#772558][CR772558]
 
 #### <a name="first-meaningful-paint-deprecation"></a>Première désintécation Paint significative  
 
-First Meaningful Paint \(FMP\) is deprecated in Cev 6.0.  FMP a également été supprimé du panneau **Performances.**  **La plus grande Paint** contentful est le remplacement recommandé pour le FMP.  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
+First Meaningful Paint \(FMP\) is deprecated in 6.0.  FMP a également été supprimé du panneau **Performances.**  **Le plus grand contenu Paint** est le remplacement recommandé pour le FMP.  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
 
 <!--todo: add Largest Contentful Paint when section available  -->  
 <!--todo: add First Meaningful Paint link and note when available  -->  
@@ -206,12 +206,12 @@ DevTools offre désormais une meilleure prise en charge de certaines des derniè
       Mise en surbrillance de [syntaxe pour les champs privés][V8DevClassFieldsPrivate]  
    :::column-end:::
    :::column span="2":::
-      les champs de classe privés sont désormais correctement mis en surbrillantes et assez imprimés dans le **panneau Sources.**  
+      les champs de classe privés sont désormais correctement mis en surbrillants et assez imprimés dans le **panneau Sources.**  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Mise en surbrillance de la [syntaxe pour l’opérateur de hillage nullish][V8DevNullishCoalescing]
+      Mise en surbrillance de syntaxe pour [l’opérateur de hillage nullish][V8DevNullishCoalescing]
    :::column-end:::
    :::column span="2":::
       DevTools imprime maintenant correctement l’opérateur de houillement nullish dans le **panneau Sources.**  
@@ -220,7 +220,7 @@ DevTools offre désormais une meilleure prise en charge de certaines des derniè
 
 Chromium [problèmes][CR1073903]#1073903, [#1083214,][CR1083214] [#1083797][CR1083797]  
 
-### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a>Avertissements de raccourcis de nouvelle application dans le volet manifeste  
+### <a name="new-app-shortcut-warnings-in-the-manifest-pane"></a>Avertissements de raccourcis pour les nouvelles applications dans le volet manifeste  
 
 **Les raccourcis d’application** aident les utilisateurs à démarrer rapidement des tâches courantes ou recommandées dans une application web.  
 
@@ -231,8 +231,8 @@ Le **volet Manifeste** affiche désormais des avertissements pour les conditions
 * Les icônes de raccourci de l’application sont plus petites que 96 x 96 pixels  
 * Les icônes de raccourci de l’application et les icônes de manifeste ne sont pas carrées \(étant donné que les icônes sont ignorées\)  
 
-:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Avertissements de raccourcis d’application" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
-   Avertissements de raccourcis d’application  
+:::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="Avertissements de raccourci d’application" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
+   Avertissements de raccourci d’application  
 :::image-end:::  
 
 Chromium problème [#955497][CR955497]  
@@ -254,7 +254,7 @@ Les numéros de ligne vous indiquent plus clairement que vous regardez les donn�
 
 Chromium problème [#1071432][CR1071432]  
 
-### <a name="line-wise-copy-and-cut-in-sources-panel"></a>Copier et couper au sens de la ligne dans le panneau Sources  
+### <a name="line-wise-copy-and-cut-in-sources-panel"></a>Copier et couper au sens des lignes dans le panneau Sources  
 
 Lorsque vous effectuez une copie ou une coupure sans sélection dans l’éditeur du panneau [Sources,][DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]DevTools copie ou coupe la ligne de contenu actuelle.  
 
@@ -270,7 +270,7 @@ Chromium problème [#800028][CR800028]
 
 Le **basculement de groupe** similaire dans console Paramètres s’applique désormais aux messages en double.  Auparavant, il vient d’être appliqué à des messages similaires.  
 
-Par exemple, auparavant, DevTools n’a pas désgroupé les messages même si le groupe similaire `hello` est désactivé. ****  À présent, `hello` les messages sont désgroupés.  
+Par exemple, auparavant, DevTools n’a pas désgroupé les messages même si le groupe `hello` **similaire** est décoché.  À présent, `hello` les messages sont désgroupés.  
 
 :::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="Lorsque le groupe similaire est désactivé, les messages Hello sont désgroupés" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
    Lorsque **le groupe similaire** est désactivé, les messages sont `hello` désgroupés
@@ -284,8 +284,8 @@ Chromium problème [#1082963][CR1082963]
 
 Les **paramètres de contexte sélectionnés** uniquement dans console Paramètres sont désormais persistants.  Auparavant, les paramètres étaient réinitialisés chaque fois que vous avez fermé et rouvert DevTools.  La modification rend le comportement du paramètre cohérent avec les autres options Paramètres console.  
 
-:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Paramètre de contexte uniquement sélectionné" lightbox="../../media/2020/06/selected-context.msft.png":::
-   **Paramètre de contexte uniquement** sélectionné  
+:::image type="complex" source="../../media/2020/06/selected-context.msft.png" alt-text="Paramètre de contexte sélectionné uniquement" lightbox="../../media/2020/06/selected-context.msft.png":::
+   **Paramètre de contexte sélectionné uniquement**  
 :::image-end:::  
 
 Chromium problème [#1055875][CR1055875]  
@@ -294,7 +294,7 @@ Chromium problème [#1055875][CR1055875]
 
 #### <a name="javascript-compilation-cache-information-in-performance-tool"></a>Informations sur le cache de compilation JavaScript dans **l’outil Performance**  
 
-[Les informations du cache de compilation JavaScript][V8DevCodeCaching] sont désormais toujours affichées dans le panneau Résumé de l’outil **** **Performance.**  Auparavant, DevTools n’avait rien à voir avec la mise en cache du code si la mise en cache du code ne s’était pas produit.  
+[Les informations du cache de compilation JavaScript][V8DevCodeCaching] sont désormais toujours affichées dans le **panneau** Résumé de l’outil **Performance.**  Auparavant, DevTools n’avait rien à voir avec la mise en cache du code si la mise en cache du code ne s’était pas produit.  
 
 :::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="Informations sur le cache de compilation JavaScript" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
    Informations sur le cache de compilation JavaScript  
@@ -304,7 +304,7 @@ Chromium problème [#912581][CR912581]
 
 #### <a name="navigation-timing-alignment-in-the-performance-panel"></a>Alignement du minutage de navigation dans le panneau Performances  
 
-Panneau **Performances** utilisé pour afficher les heures dans les règles en fonction du moment où l’enregistrement a démarré.  Le minutage a changé pour les enregistrements où l’utilisateur navigue, où DevTools affiche désormais les heures de règle par rapport à la navigation.  
+Panneau **Performances** utilisé pour afficher les heures dans les règles en fonction du moment où l’enregistrement a démarré.  Le minutage a changé pour les enregistrements où l’utilisateur navigue, où DevTools affiche désormais les temps de règle par rapport à la navigation.  
 
 :::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Aligner le minutage de navigation dans l’outil Performances" lightbox="../../media/2020/06/nav-timing.msft.png":::
    Aligner le minutage de navigation dans **l’outil Performances**  
@@ -334,11 +334,11 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 
 <!-- links -->  
 
-[DevtoolsIndex]: ../../../index.md "Microsoft Edge outils de développement (Chromium) | Documents Microsoft"  
+[DevtoolsIndex]: ../../../index.md "Outils de développement Microsoft Edge (Chromium) | Documents Microsoft"  
 [DevtoolsCommandMenu]: ../../../command-menu.md "Exécuter des commandes avec le menu de Microsoft Edge DevTools | Documents Microsoft"
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Caisse : personnaliser Microsoft Edge devTools | Documents Microsoft"
 [DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turn-on-experimental-features "Activer les fonctions expérimentales – Fonctions expérimentales | Microsoft Docs"  
-[DevtoolsIssues]: ../../../issues/index.md "Recherchez et corrigez les problèmes liés à l’outil des problèmes de Microsoft Edge DevTools | Documents Microsoft"
+[DevtoolsIssues]: ../../../issues/index.md "Rechercher et résoudre des problèmes à l’aide de l’outil Problèmes | Documents Microsoft"
 [DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]: ../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files "Utilisation du volet Éditeur pour afficher ou modifier des fichiers - Vue d’ensemble du panneau Sources | Documents Microsoft"  
 [DevtoolsNetworkIndexLogActivity]: ../../../network/index.md#log-network-activity "Journal de l’activité réseau : inspecter l’activité réseau dans Microsoft Edge devTools | Documents Microsoft"
 
@@ -350,14 +350,14 @@ Si vous êtes sur Windows ou macOS, envisagez d’utiliser les canaux d Microsof
 
 [CR772558]: https://crbug.com/772558 "DevTools : mise à jour vers la dernière version de | Chromium bogues"  
 [CR800028]: https://crbug.com/800028 "Le raccourci de ligne en double dans l’éditeur outils de développement ne fonctionne pas après la mise à jour de Chrome | Chromium bogues"  
-[CR912581]: https://crbug.com/912581 "Exposer les scripts qui ont été mis en cache par code par V8 dans DevTools/about:tracing | Chromium bogues"  
+[CR912581]: https://crbug.com/912581 "Exposer les scripts mis en cache par V8 dans DevTools/about:tracing | Chromium bogues"  
 [CR946975]: https://crbug.com/946975 "La barre latérale Styles DevTools ne fonctionne pas avec les feuilles de style | Chromium bogues"  
-[CR955497]: https://crbug.com/955497 "Menu raccourci d’icône d’application pour les applications de | Chromium bogues"  
+[CR955497]: https://crbug.com/955497 "Menu de raccourci d’icône d’application pour les applications de | Chromium bogues"  
 [CR974550]: https://crbug.com/974550 "Non-matisation des mesures entre le panneau Perf et performanceObserver | Chromium bogues"  
 [CR1041830]: https://crbug.com/1041830 "Améliorer les couleurs des points d’arrêt | Chromium bogues"  
-[CR1055875]: https://crbug.com/1055875 "La valeur du paramètre de console Contexte uniquement sélectionné ne persiste pas après la fermeture et la réouverture des outils de développement | Chromium bogues"  
-[CR1066579]: https://crbug.com/1066579 "DevTools : afficher la chronologie d’extraction serviceWorkers par demande dans le panneau | Chromium bogues"  
-[CR1071432]: https://crbug.com/1071432 "Wasm Basic Developer Experience | Chromium bogues"  
+[CR1055875]: https://crbug.com/1055875 "La valeur du paramètre de console de contexte sélectionné uniquement n’est pas persistante après la fermeture et la réouverture des outils de développement | Chromium bogues"  
+[CR1066579]: https://crbug.com/1066579 "DevTools : afficher la chronologie d’extraction serviceWorkers par demande dans le panneau réseau | Chromium bogues"  
+[CR1071432]: https://crbug.com/1071432 "Expérience de développement de base wasm | Chromium bogues"  
 [CR1073899]: https://crbug.com/1073899 "L’onglet Style calculé disparaît en mode | Chromium bogues"  
 [CR1073903]: https://crbug.com/1073903 "DevTools : la mise en surbrillance de la syntaxe ne fonctionne pas avec les champs privés | Chromium bogues"  
 [CR1082963]: https://crbug.com/1082963 "Can’t disable console’s Group similar messages behavior | Chromium bogues"  
