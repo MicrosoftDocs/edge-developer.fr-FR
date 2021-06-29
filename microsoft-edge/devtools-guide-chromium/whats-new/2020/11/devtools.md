@@ -8,12 +8,12 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
 ms.localizationpriority: high
-ms.openlocfilehash: 6fd9f9ca2c19c8db74036fb54efadb7be8566fd7
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: e5706de4c7938a3cb2246aa34de07c73dafe5776
+ms.sourcegitcommit: e150d798161277fd3fc610838ef2611dc08f5cf6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564118"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "11624772"
 ---
 <!-- Copyright Jecelyn Yeen 
 
@@ -326,7 +326,7 @@ Pour passer en revue l’historique de cette fonctionnalité dans le projet open
 
 ### <a name="preview-wasm-variable-value-on-mouseover"></a>Afficher un aperçu de la valeur de la variable WASM sur mouseover  
 
-Utilisez cette fonction pour afficher un aperçu de la valeur d’une variable webassembly \(WASM \) lorsque votre code est en pause.  Pour afficher la valeur actuelle d’une variable, pointez sur une variable.  Pour consulter les mises à jour en temps réel de cette fonctionnalité dans le projet open-source de Chromium, accédez aux problèmes [1058836][CR1058836] et [1071432][CR1071432].  
+Utilisez cette fonction pour afficher un aperçu de la valeur d’une variable webassembly \ (WASM \) lorsque votre code est en pause.  Pour afficher la valeur actuelle d’une variable, pointez sur une variable.  Pour consulter les mises à jour en temps réel de cette fonctionnalité dans le projet open-source de Chromium, accédez aux problèmes [1058836][CR1058836] et [1071432][CR1071432].  
 
 :::image type="complex" source="../../media/2020/11/wasm-mouseover.msft.png" alt-text="Afficher un aperçu de la variable WASM sur mouseover" lightbox="../../media/2020/11/wasm-mouseover.msft.png":::
    Afficher un aperçu de la variable WASM sur mouseover  
@@ -336,8 +336,8 @@ Utilisez cette fonction pour afficher un aperçu de la valeur d’une variable w
 
 Désormais DevTools utilise `kB` pour l’affichage des tailles de fichiers et de mémoire.  Auparavant DevTools combinait `kB` et `KiB` .
 
-*   `kB` ou kilo-octets \(10^3 ou 1000 octets \)  
-*   `KiB` ou kibibyte \(2^10 ou 1024 octets \)  
+*   `kB` ou kilo-octets \ (10^3 ou 1000 octets \)  
+*   `KiB` ou kibibyte \ (2^10 ou 1024 octets \)  
     
 Par exemple, l’outil **réseau** utilisait `kB` dans les étiquettes, mais utilisait `KiB` dans les calculs.  Votre commentaire a démontré que cette incohérence a causé une confusion.  Pour passer en revue l’historique de cette fonctionnalité dans le projet open-source de Chromium, accédez au problème [1035309][CR1035309].  
 
@@ -362,7 +362,7 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Émuler des appareils mobiles dans Microsoft Edge DevTools | Microsoft Docs"  
 <!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  -->  
 <!--  [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features/index.md#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  -->  
-[DevtoolsIssuesIndex]: .. /.. /.. /issues/index.md « Rechercher et résoudre des problèmes liés à l’outil Problèmes de DevTools Microsoft Edge | Microsoft Docs »  
+[DevtoolsIssuesIndex] : .. /.. /.. /issues/index.md « Rechercher et résoudre les problèmes à l’aide de l’outil Problèmes | Microsoft Docs »  
 [DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: .. /.. /.. /network/reference.md#copy-formatted-response-json-to-the-clipboard « Copier la réponse mise en forme JSON dans le Presse-papiers - Référence de l’analyse réseau | Microsoft Docs »  
 [DevtoolsNetworkReferenceDisplayTimingBreakdownRequest]: .. /.. /.. /network/reference.md#display-the-timing-breakdown-of-a-request « Afficher la répartition temporelle d'une demande - Référence d'analyse de réseau | Microsoft Docs »  
 
