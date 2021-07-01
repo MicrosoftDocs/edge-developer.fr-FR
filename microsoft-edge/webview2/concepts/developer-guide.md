@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, edge, meilleures pratiques
-ms.openlocfilehash: 5a11f01ec07aea12599c8bdb8428d451ad7bd013
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 7e8c6746e864b474c2987817c521224499a95e1f
+ms.sourcegitcommit: 5ae09b1ad6cd576c9fec12538b23cd849861f2b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564748"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "11627977"
 ---
 # <a name="webview2-development-best-practices"></a>Meilleures pratiques de développement WebView2  
 
@@ -27,13 +27,15 @@ Assurez-vous que le runtime WebView2 persistant est installé avant d’utiliser
 
 ## <a name="run-compatibility-tests-regularly-when-using-the-evergreen-webview2-runtime"></a>Exécuter des tests de compatibilité régulièrement lors de l’utilisation du runtime WebView2 persistant
 
-Lorsque vous utilisez le runtime WebView2 persistant, veillez à exécuter des tests de compatibilité réguliers. Étant donné que le runtime se met à jour automatiquement, testez le contenu web dans le contrôle WebView2 par rapport aux versions non stables de Microsoft Edge pour vous assurer que votre application WebView2 s’exécute comme prévu. Ces conseils sont semblables aux instructions que nous donnez aux développeurs web. Pour plus d’informations, accédez [à Rester compatible en mode persistant.][Webview2ConceptsDistributionStayCompatibleEvergreenMode]
+Lorsque vous utilisez le runtime WebView2 persistant, celui-ci est mis à jour automatiquement, vous devez donc exécuter régulièrement des tests de compatibilité. Testez le contenu web dans le contrôle WebView2 par rapport aux versions non stables de Microsoft Edge, pour vous assurer que votre application WebView2 fonctionne comme prévu.
+
+Ces conseils sont semblables aux instructions que nous donnez aux développeurs web. Pour plus d’informations, accédez [à Rester compatible en mode persistant.][Webview2ConceptsDistributionStayCompatibleEvergreenMode]
 
 ## <a name="ensure-apis-are-supported-by-the-installed-webview2-runtime"></a>S’assurer que les API sont pris en charge par le runtime WebView2 installé
 
-Les applications WebView2 ont besoin d’un SDK Webview2 et d’un runtime WebView2 installé sur l’ordinateur pour s’exécuter. Le SDK et le runtime sont tous deux en version. Étant donné que les API sont continuellement ajoutées à WebView2, de nouvelles versions du runtime sont également publiées pour prendre en charge les nouvelles API. Vous devez vous assurer que les API utilisées par votre application WebView2 sont pris en charge par le runtime WebView2 installé sur l’ordinateur. 
+Les applications WebView2 ont besoin d’un SDK Webview2 et d’un runtime WebView2 installé sur l’ordinateur pour s’exécuter. Le SDK et le runtime sont tous deux en version. Étant donné que les API sont continuellement ajoutées à WebView2, de nouvelles versions du runtime sont également publiées pour prendre en charge les nouvelles API. Assurez-vous que les API utilisées par votre application WebView2 sont pris en charge par le runtime WebView2 installé sur l’ordinateur. 
 
-Si vous utilisez le runtime WebView2 persistant, il existe certains scénarios dans lequel le runtime peut ne pas être mis à jour pour utiliser la dernière version. Par exemple, lorsque les utilisateurs n’ont pas accès à Internet, le runtime n’est pas automatiquement mis à jour dans cet environnement. En outre, l’utilisation de certaines stratégies de groupe interrompt les mises à jour WebView2. Lorsque vous pushez une mise à jour vers votre application WebView2, l’application peut se rompre car elle utilise des API plus nouvelles qui ne sont pas disponibles dans le runtime installé.   
+Si vous utilisez le runtime WebView2 persistant, il se peut que le runtime ne soit pas mis à jour pour utiliser la dernière version. Par exemple, lorsque les utilisateurs n’ont pas accès à Internet, le runtime n’est pas automatiquement mis à jour dans cet environnement. En outre, l’utilisation de certaines stratégies de groupe interrompt les mises à jour WebView2. Lorsque vous pushez une mise à jour vers votre application WebView2, l’application peut se rompre car elle utilise des API plus nouvelles qui ne sont pas disponibles dans le runtime installé.   
  
 Pour résoudre cette situation, vous pouvez tester la disponibilité des API dans le runtime installé, avant que votre code appelle l’API. Ce test pour les nouvelles fonctionnalités est similaire à d’autres meilleures pratiques de développement web qui détectent les fonctionnalités prise en charge avant d’utiliser de nouvelles API web. Pour tester la disponibilité de l’API dans le runtime installé, utilisez :  
 
@@ -48,15 +50,20 @@ Si vous utilisez le runtime de version fixe, veillez à mettre à jour votre run
 
 ## <a name="manage-new-versions-of-the-runtime"></a>Gérer les nouvelles versions du runtime  
 
-Chaque fois qu’une nouvelle version du runtime WebView2 persistant est téléchargée sur l’appareil, l’exécution des applications WebView2 continue d’utiliser le runtime précédent jusqu’à ce que le processus du navigateur soit publié. Ce comportement permet aux applications de s’exécuter en continu et empêche la suppression du runtime précédent. Pour utiliser la nouvelle version du runtime, vous devez libérer toutes les références aux objets d’environnement WebView2 précédents ou redémarrer votre application. La prochaine fois que vous créerez un environnement WebView2, il utilisera la nouvelle version.
+Lorsqu’une nouvelle version du runtime WebView2 persistant est téléchargée sur l’appareil, toutes les applications WebView2 en cours d’exécution continuent d’utiliser le runtime précédent, jusqu’à ce que le processus du navigateur soit publié.  Ce comportement permet aux applications de s’exécuter en continu et empêche la suppression du runtime précédent.  Pour utiliser la nouvelle version du runtime, vous devez libérer toutes les références aux objets d’environnement WebView2 précédents ou redémarrer votre application.  La prochaine fois que vous créerez un environnement WebView2, il utilisera la nouvelle version.
 
-Pour prendre des mesures lorsqu’une nouvelle version est disponible, comme avertir l’utilisateur de redémarrer l’application, vous pouvez utiliser l’événement [add_NewBrowserVersionAvailable(Win32)][Webview2ReferenceaddNewBrowserVersionAvailable] ou [CoreWebView2Environment.NewBrowserVersionAvailable(.NET)][Webview2ReferenceNewBrowserVersionAvailable] dans votre code. Si votre code gère le redémarrage de l’application, envisagez d’enregistrer l’état de l’utilisateur avant la sortie de l’application WebView2.  
+Lorsqu’une nouvelle version est disponible, vous pouvez prendre automatiquement des mesures, comme avertir l’utilisateur de redémarrer l’application.  Pour détecter qu’une nouvelle version est disponible, vous pouvez utiliser l’événement [add_NewBrowserVersionAvailable(Win32)][Webview2ReferenceaddNewBrowserVersionAvailable] ou [CoreWebView2Environment.NewBrowserVersionAvailable(.NET)][Webview2ReferenceNewBrowserVersionAvailable] dans votre code. Si votre code gère le redémarrage de l’application, envisagez d’enregistrer l’état de l’utilisateur avant la sortie de l’application WebView2.  
 
 ## <a name="manage-the-lifetime-of-the-user-data-folder"></a>Gérer la durée de vie du dossier de données utilisateur 
-Les applications WebView2 créent un dossier de données utilisateur pour stocker des données telles que les cookies, les informations d’identification, les autorisations, etc. Après avoir créé le dossier, votre application est responsable de la gestion de la durée de vie du dossier de données utilisateur, y compris du nettoyage lorsque l’application est désinstallée.  Pour plus d’informations, [accédez à Gestion du dossier de données utilisateur.][Webview2ConceptsUserDataFolder]  
+Les applications WebView2 créent un dossier de données utilisateur pour stocker des données telles que les cookies, les informations d’identification et les autorisations.  Après avoir créé le dossier, votre application est responsable de la gestion de la durée de vie du dossier de données utilisateur.  Par exemple, votre application doit faire un nettoyage lorsque l’application est désinstallée.  Pour plus d’informations, [accédez à Gestion du dossier de données utilisateur.][Webview2ConceptsUserDataFolder]  
+
+## <a name="handle-runtime-process-failures"></a>Gérer les échecs de processus d’runtime
+Votre application WebView2 doit écouter et gérer l’événement, afin que l’application puisse récupérer des défaillances de processus d’runtime qui gèrent le processus `ProcessFailed` d’application WebView2.
+
+Les applications WebView2 sont pris en charge par une collection de processus d’utilisation qui s’exécutent avec le processus d’application. Ces processus d’exécution de prise en charge peuvent échouer pour diverses raisons, telles que le manque de mémoire ou l’arrêt par l’utilisateur. En cas d’échec d’un processus runtime de prise en charge, WebView2 avertit l’application en augmentant [l’événement ProcessFailed][WebView2ProcessFailedEvent].
 
 ## <a name="follow-recommended-webview2-security-best-practices"></a>Respecter les meilleures pratiques recommandées en matière de sécurité WebView2 
-Pour n’importe quelle application WebView2, veillez à respecter les meilleures pratiques recommandées en matière de sécurité WebView2.  Pour plus d’informations, [accédez aux meilleures pratiques pour le développement d’applications WebView2 sécurisées.][Webview2ConceptsSecurity]  
+Pour n’importe quelle application WebView2, veillez à suivre nos meilleures pratiques recommandées en matière de sécurité WebView2.  Pour plus d’informations, [accédez aux meilleures pratiques pour le développement d’applications WebView2 sécurisées.][Webview2ConceptsSecurity]  
 
 <!-- links -->  
 
@@ -74,3 +81,5 @@ Pour n’importe quelle application WebView2, veillez à respecter les meilleure
 [Webview2ReferenceaddNewBrowserVersionAvailable]: /microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable | Documents Microsoft"  
 
 [Webview2ReferenceNewBrowserVersionAvailable]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "Événement CoreWebView2Environment.NewBrowserVersionAvailable | Documents Microsoft"  
+[WebView2ProcessFailedEvent]: /microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs "ICoreWebView2ProcessFailedEventArgs | Documents Microsoft"  
+

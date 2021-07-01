@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, browser control, edge html, Windows Forms, WinForms, WPF, .NET, WinUI, Project Réunion
-ms.openlocfilehash: 9c1aa073294fc649223da19c44850dc4335f6c00
-ms.sourcegitcommit: 7f7922dbb6af87ecac1378d18359125770c5b8e5
+ms.openlocfilehash: 64c835d0122a1c72e610efed2c060f7921a8e2b5
+ms.sourcegitcommit: 5ae09b1ad6cd576c9fec12538b23cd849861f2b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11536833"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "11627984"
 ---
 # <a name="introduction-to-microsoft-edge-webview2"></a>Présentation de Microsoft Edge WebView2  
 
@@ -25,7 +25,7 @@ Le Microsoft Edge WebView2 vous permet d’incorporer des technologies web \(HTM
 
 ## <a name="hybrid-app-approach"></a>Approche de l’application hybride  
 
-Les développeurs doivent souvent décider entre la création d’une application web ou d’une application native.  La décision s’en va sur le compromis entre la portée et la puissance.  Les applications web permettent une large portée.  En tant que développeur Web, vous pouvez réutiliser la plupart de votre code sur différentes plateformes.  Pour accéder à toutes les fonctionnalités d’une plateforme native, utilisez une application native.  
+Les développeurs doivent souvent décider entre la création d’une application web ou d’une application native.  La décision porte sur le compromis entre la portée et la puissance.  Les applications web permettent une large portée.  En tant que développeur Web, vous pouvez réutiliser la plupart de votre code sur différentes plateformes.  Pour accéder à toutes les fonctionnalités d’une plateforme native, utilisez une application native.  
 
 :::image type="complex" source="./media/WebView2/web-native.png" alt-text="Web natif" lightbox="./media/WebView2/web-native.png":::
    Web natif  
@@ -98,7 +98,7 @@ Les applications hybrides permettent aux développeurs de profiter du meilleur d
       Accéder à l’ensemble complet des API natives.  
    :::column-end:::
    :::column span="1":::
-      L’ajout de code web à votre base de code permet une réutilisation accrue sur plusieurs plateformes.  
+      L’ajout de code web à votre codebase permet une réutilisation accrue sur plusieurs plateformes.  
    :::column-end:::
    :::column span="1":::
       Microsoft fournit une prise en charge et ajoute de nouvelles demandes de fonctionnalités lorsque WebView2 est publié à la disponibilité générale \(GA\).  
@@ -151,7 +151,7 @@ Le [référentiel WebView2 Samples][GithubMicrosoftedgeWebview2samples] contient
 
 ## <a name="supported-platforms"></a>Plateformes prises en charge  
 
-Une version de disponibilité générale \(GA\) ou d’aperçu est disponible dans les environnements de programmation suivants.  
+Une version De disponibilité générale \(GA\) ou Aperçu est disponible dans les environnements de programmation suivants.  
 
 *   Win32 C/C++ \(GA\)  
 *   .NET Framework 4.5 ou ultérieure  
@@ -163,19 +163,19 @@ Vous pouvez exécuter des applications WebView2 sur les versions suivantes de Wi
 
 *   Windows10  
 *   Windows 8.1  
-*   Windows 7   
+*   Windows 7 \*\*  
 *   Windows Server2019  
 *   Windows Server2016  
 *   Windows Server 2012  
 *   Windows Server 2012 R2  
-*   Windows Server 2008 R2   
+*   Windows Server 2008 R2 \*\*  
     
 > [!IMPORTANT]
-> La prise en charge de  WebView2 pour Windows 7 et Windows Server 2008 R2 possède le même cycle de prise en charge que Microsoft Edge.  Pour plus d’informations, [accédez Microsoft Edge systèmes d’exploitation pris en charge.][DeployedgeMicrosoftEdgeSupportedOS]  
+> La prise en charge de \*\* WebView2 pour Windows 7 et Windows Server 2008 R2 possède le même cycle de prise en charge que Microsoft Edge.  Pour plus d’informations, [accédez à Microsoft Edge systèmes d’exploitation pris en charge.][DeployedgeMicrosoftEdgeSupportedOS]  
 
 ## <a name="next-steps"></a>Étapes suivantes  
 
-Pour plus d’informations sur la façon de créer et de déployer des applications WebView2, examinez la documentation conceptuelle et les guides pratiques.  
+Pour plus d’informations sur la façon de créer et de déployer des applications WebView2, examinez la documentation conceptuelle et les guides de pratiques.  
 
 ### <a name="concepts"></a>Concepts  
 
