@@ -443,7 +443,7 @@
               href: webview2/concepts/browser-features.md
             - name: Distribuer mon application
               href: webview2/concepts/distribution.md
-            - name: Gestion des dossiers de données utilisateur
+            - name: Gérer le dossier de données utilisateur
               href: webview2/concepts/user-data-folder.md
             - name: Gestion des applications WebView2
               href: webview2/concepts/enterprise.md
