@@ -19,11 +19,11 @@ ms.locfileid: "11232950"
 
 > « L’impact du handicap sur le web est radicalement modifié sur le Web, car le Web supprime les obstacles à la communication et à l’interaction auxquels de nombreuses personnes font face dans le monde physique. » [(Accessibilité | W3C)][W3CAccessibility]  
 
-[L’Organisation mondiale de][WHODisabilities] la santé définit le handicap/invalidité comme une « insématisation de l’interaction entre les fonctionnalités du corps d’une personne et les fonctionnalités de l’environnement dans lequel elle habite ».  Les handicaps peuvent aller des handicaps situationnels, tels que la mobilité limitée tout en maintenant un air ou une lumière vive sur un téléphone, à d’autres handicaps physiques, auditeurs, visuels ou liés à l’âge.  
+[L’Organisation mondiale de][WHODisabilities] la santé définit le handicap/invalidité comme une « insématisation de l’interaction entre les fonctionnalités du corps d’une personne et les fonctionnalités de l’environnement dans lequel elle habite ».  Les handicaps peuvent aller des handicaps situationnels, tels que la mobilité limitée tout en maintenant un air ou une lumière vive sur un téléphone, à d’autres handicaps physiques, auditifs, visuels ou liés à l’âge.  
 
 La conception de sites web et d’autres technologies pour l’inclusion crée une expérience agréable pour chaque personne.  La conception inclusive et l’accessibilité web permettent à tout le monde d’utiliser le web.  
 
-Voici quelques meilleures pratiques, des exemples de code et d’autres ressources pour en savoir plus sur la [conception,][AccessibilityDesign]la création et le test de sites web [accessibles][AccessibilityTest] dans Microsoft Edge. [][AccessibilityBuild]  
+Voici quelques meilleures pratiques, des exemples de code et d’autres ressources pour en savoir plus sur la [conception][AccessibilityDesign], la création et le test de sites web [accessibles][AccessibilityTest] dans Microsoft Edge. [][AccessibilityBuild]  
 
 ##  <a name="accessibility-in-microsoft-edge"></a>Accessibilité dans les Microsoft Edge  
 
@@ -35,7 +35,7 @@ Le système d’accessibilité Microsoft Edge prend en charge les normes web mod
    Le contenu transformé en modèle de moteur est projeté dans des affichages visuels et d’accessibilité présentés en tant que présentation visuelle ou accessible  
 :::image-end:::  
 
-L Microsoft Edge de recherche collabore régulièrement avec le W3C et d’autres fournisseurs de navigateurs pour s’assurer que les nouvelles fonctionnalités de plateforme web ont une accessibilité intégrée suffisante.  
+L'équipe Microsoft Edge de recherche collabore régulièrement avec le W3C et d’autres fournisseurs de navigateurs pour s’assurer que les nouvelles fonctionnalités de plateforme web ont une accessibilité intégrée suffisante.  
 
 Pour plus d’informations sur les nouvelles fonctionnalités HTML5 qui sont accessibles Microsoft Edge, accédez à [HTML5Accessibility][HTML5Accessibility].  
 
