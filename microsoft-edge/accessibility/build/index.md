@@ -24,7 +24,7 @@ Visitez [HTML5Accessibility](https://html5accessibility.com) pour obtenir des in
 
 ## <a name="how-accessibility-works"></a>Fonctionnement de l’accessibilité  
 
-Les technologies d’assistance ajoutent des fonctionnalités qui ne sont généralement pas disponibles sur les ordinateurs.  Par exemple, un utilisateur malvoyant peut utiliser son clavier en combinaison avec une technologie d’assistance telle qu’un lecteur d’écran, plutôt que d’utiliser directement le navigateur avec la souris et l’écran.  Pour les applications sur les plateformes Microsoft et sur le web, la technologie d’assistance interagit avec Microsoft [UI Automation,](/windows/win32/winauto/uiauto-specandcommunitypromise)un modèle objet propre à l’application, tel que le modèle objet document \(DOM\) dans Microsoft Edge, ou une combinaison de ces derniers.  
+Les technologies d’assistance ajoutent des fonctionnalités qui ne sont généralement pas disponibles sur les ordinateurs.  Par exemple, un utilisateur malvoyant peut utiliser son clavier en combinaison avec une technologie d’assistance telle qu’un lecteur d’écran, plutôt que d’utiliser directement le navigateur avec la souris et l’écran.  Pour les applications sur les plateformes Microsoft et sur le web, la technologie d’assistance interagit avec Microsoft [UI Automation](/windows/win32/winauto/uiauto-specandcommunitypromise), un modèle objet propre à l’application, tel que le modèle objet document \(DOM\) dans Microsoft Edge, ou une combinaison de ces derniers.  
 
 Pour les développeurs web, certains éléments HTML sont mappés à des objets UI Automation. Ainsi, lors de la sélection de ces éléments HTML, le développeur peut utiliser les propriétés d’accessibilité et les événements intégrés à ces éléments.  Lors du développement de votre site web, il vous suffit généralement de vous assurer que l’API est correctement écrite dans \(ou que l’élément approprié est spécifié\), afin que l’application soit accessible.  Consultez [ARIA et UI Automation dans Microsoft Edge](./aria-and-ui-automation.md) pour plus d’informations.  Pour plus d’informations sur les applications de plateforme Windows universelle [](/windows/uwp/design/accessibility/accessibility) \(UWP\) accessibles, accédez à la rubrique Accessibilité dans la Windows Centre de développement.  
 
@@ -81,13 +81,13 @@ Pour plus d’informations sur l’apprentissage des technologies d’assistance
 
 ### <a name="testing-locally"></a>Test local  
 
-La plupart des appareils incluent une technologie d’assistance intégrée au système d’exploitation.  Microsoft Windows inclut le lecteur [d Windows Narrateur][MicrosoftSupport22798] écran et [la loupe Windows.][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]  Les technologies d’assistance tierces telles que [NVDA,][NvaccessAboutNvda] [FreedomscientificSoftwareJaws]et [ZoomText][FreedomscientificSoftwareZoomtext] sont disponibles en téléchargement.  Apple macOS inclut le [lecteur d’écran VoiceOver.][AppleAccessibilityMacVision]  Et iOS, Android et Linux sont tous en charge de nombreuses technologies d’assistance.  
+La plupart des appareils incluent une technologie d’assistance intégrée au système d’exploitation.  Microsoft Windows inclut le lecteur [d Windows Narrateur][MicrosoftSupport22798] écran et [la loupe Windows.][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]  Les technologies d’assistance tierces telles que [NVDA,][NvaccessAboutNvda] [FreedomscientificSoftwareJaws] et [ZoomText][FreedomscientificSoftwareZoomtext] sont disponibles en téléchargement.  Apple macOS inclut le [lecteur d’écran VoiceOver.][AppleAccessibilityMacVision]  Et iOS, Android et Linux sont tous en charge de nombreuses technologies d’assistance.  
 
 ### <a name="testing-in-virtual-machines-and-emulators"></a>Test dans les machines virtuelles et les émulateurs  
 
 Sous macOS, si vous souhaitez tester avec une technologie d’assistance disponible uniquement pour Windows, comme Windows Narrateur ou NVDA, créez une machine virtuelle Windows.  Les machines virtuelles Microsoft Edge \(EdgeHTML\) et IE sont disponibles pour VirtualBox et VMWare sur la page de téléchargement [des machines virtuelles.][MicrosoftDeveloperEdgeVms]  
 
-[Android Studio][AndroidDeveloperSdkInstallingStudioHtml] inclut un émulateur qui vous aide à tester les technologies d’assistance dans [la suite d’accessibilité Android.][GooglePlayStoreAndroidAccessibilitySuite]  Suivez les instructions pour configurer un périphérique [virtuel][AndroidDeveloperDevicesManagingAvdsHtml] et démarrer l’émulateur, [][AndroidDeveloperDevicesEmulatorHtml]puis installer la suite [d’accessibilité Android][GooglePlayStoreAndroidAccessibilitySuite] à partir de GooglePlay Store.  
+[Android Studio][AndroidDeveloperSdkInstallingStudioHtml] inclut un émulateur qui vous aide à tester les technologies d’assistance dans [la suite d’accessibilité Android.][GooglePlayStoreAndroidAccessibilitySuite]  Suivez les instructions pour configurer un périphérique [virtuel][AndroidDeveloperDevicesManagingAvdsHtml] et démarrer l’émulateur, [][AndroidDeveloperDevicesEmulatorHtml]puis installer la suite [d’accessibilité Android][GooglePlayStoreAndroidAccessibilitySuite] à partir de Google Play Store.  
 
 > [!NOTE]
 > Le simulateur iOS n’inclut actuellement pas VoiceOver.  
@@ -104,11 +104,11 @@ Si une technologie d’assistance n’est pas disponible sur votre système d’
 
 #### <a name="the-a11y-project"></a>Le Project A11Y  
 
-[Le Project A11Y](http://a11yproject.com) est un effort communautaire visant à faciliter l’accessibilité du web.  Consultez le site [Project A11Y](https://a11yproject.com) pour en savoir plus sur les principes d’accessibilité de base, leur modèle accessible et leur bibliothèque de [widgets,](https://a11yproject.com/patterns)ainsi que leurs ressources sur les logiciels d’accessibilité, les blogs, les livres et les outils. [](http://a11yproject.com/resources.html)  
+[Le Project A11Y](http://a11yproject.com) est un effort communautaire visant à faciliter l’accessibilité du web.  Consultez le site [Project A11Y](https://a11yproject.com) pour en savoir plus sur les principes d’accessibilité de base, leur modèle accessible et leur bibliothèque de [widgets](https://a11yproject.com/patterns), ainsi que leurs ressources sur les logiciels d’accessibilité, les blogs, les livres et les outils. [](http://a11yproject.com/resources.html)  
 
 #### <a name="web-accessibility-initiative-wai"></a>Initiative d’accessibilité web (CAS)  
 
-L’initiative [DNS (Web Accessibility Initiative) W3C](https://w3.org/WAI) est un effort pour améliorer l’accessibilité du site web.  Leur site fournit une variété de ressources pour la mise en place de l’accessibilité [web,](https://www.w3.org/WAI/gettingstarted/Overview.html)la conception pour [l’inclusion,](https://www.w3.org/WAI/users/Overview.html)les [didacticiels et les présentations,](https://www.w3.org/WAI/train.html)et bien plus encore.  
+L’initiative [DNS (Web Accessibility Initiative) W3C](https://w3.org/WAI) est un effort pour améliorer l’accessibilité du site web.  Leur site fournit une variété de ressources pour la mise en place de l’accessibilité [web](https://www.w3.org/WAI/gettingstarted/Overview.html), la conception pour [l’inclusion](https://www.w3.org/WAI/users/Overview.html), les [didacticiels et les présentations](https://www.w3.org/WAI/train.html), et bien plus encore.  
 
 ### <a name="accessibility-blogs"></a>Blogs sur l’accessibilité  
 
