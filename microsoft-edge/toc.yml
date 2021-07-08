@@ -23,9 +23,9 @@
           items:
             - name: Fonctionnalités expérimentales
               href: devtools-guide-chromium/experimental-features/index.md
-            - name: Microsoft Edge92
+            - name: Microsoft Edge 92
               href: devtools-guide-chromium/whats-new/2021/05/devtools.md
-            - name: Microsoft Edge91
+            - name: Microsoft Edge 91
               href: devtools-guide-chromium/whats-new/2021/04/devtools.md
             - name: Microsoft Edge 90
               href: devtools-guide-chromium/whats-new/2021/02/devtools.md
@@ -315,7 +315,7 @@
               href: extensions-chromium/getting-started/index.md
             - name: Didacticiel de création d’extension (partie 1)
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: Didacticiel de création d’extension (partie2)
+            - name: Didacticiel de création d’extension (partie 2)
               href: extensions-chromium/getting-started/part2-content-scripts.md
             - name: Format de fichier manifeste
               href: extensions-chromium/getting-started/manifest-format.md

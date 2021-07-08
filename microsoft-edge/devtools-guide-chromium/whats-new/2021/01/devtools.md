@@ -424,7 +424,7 @@ Si vous êtes sous Windows, Linux ou macOS, envisagez d'utiliser les [canaux d'a
 
 <!-- links -->  
 
-[DevtoolsWhatsNew85]: ../../2020/06/devtools.md "Nouveautés de DevTools (Microsoft Edge85) | Microsoft Docs"  
+[DevtoolsWhatsNew85]: ../../2020/06/devtools.md "Nouveautés de DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
 [DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/color-picker.md "Tester le contraste de couleur du texte à l’aide du Sélecteur de couleurs | Microsoft Docs"  
 [DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Modifier des CSS – Référence CSS | Microsoft Docs"  .
