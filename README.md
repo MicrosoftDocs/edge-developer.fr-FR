@@ -8,7 +8,7 @@ Pour plus d’informations sur le code de conduite Open Source de Microsoft, acc
 
 Microsoft et tous les collaborateurs vous accordent une licence pour accéder à la documentation Microsoft et à d’autres contenus de ce référentiel sous la licence publique internationale [Creative Commons Attribution 4.0,](https://creativecommons.org/licenses/by/4.0/legalcode)accéder au fichier [LICENSE](./LICENSE) et vous octroyer une licence pour tout code dans le référentiel sous la licence [MIT,](https://opensource.org/licenses/MIT)accédez au fichier [LICENSE-CODE.](./LICENSE-CODE)  
 
-Microsoft, Windows, MicrosoftAzure et/ou d’autres produits et services Microsoft référencés dans la présente documentation peuvent être des marques commerciales ou déposées de MicrosoftCorporation aux États-Unis et/ou dans d’autres pays.  
+Microsoft, Windows, Microsoft Azure et/ou d’autres produits et services Microsoft référencés dans la présente documentation peuvent être des marques commerciales ou déposées de Microsoft Corporation aux États-Unis et/ou dans d’autres pays.  
 Les licences de ce projet ne vous accordent aucun droit d'utilisation des noms, des logos ou des marques de Microsoft.  
 Microsoft general trademark guidelines may be found at [https://go.microsoft.com/fwlink/?LinkID=254653](https://go.microsoft.com/fwlink/?LinkID=254653) .  
 
@@ -20,9 +20,9 @@ Microsoft et tout contributeur se réserve tous les autres droits, en vertu de l
 
 Il s’agit du référentiel de la documentation Microsoft Edge **hébergée** sur [https://docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge/index) .  
 
-Si vous souhaitez inclure une nouvelle couverture ou avoir des commentaires, envisagez [de contribuer.](./CONTRIBUTING.md)  Vous pouvez modifier le contenu existant, ajouter du nouveau contenu ou créer de [nouveaux problèmes.](https://github.com/MicrosoftDocs/edge-developer/issues)  L Microsoft Edge’équipe examine vos suggestions et travaille à incorporer ces suggestions dans les documents.  
+Si vous souhaitez inclure une nouvelle couverture ou avoir des commentaires, envisagez [de contribuer.](./CONTRIBUTING.md)  Vous pouvez modifier le contenu existant, ajouter du nouveau contenu ou créer de [nouveaux problèmes.](https://github.com/MicrosoftDocs/edge-developer/issues)  L’équipe Microsoft Edge examine vos suggestions et travaille à incorporer ces suggestions dans les documents.  
 
-Recherchez les données de la page web [État](https://developer.microsoft.com/microsoft-edge/status) à l’adresse :  [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status) .  La `Status` page web fournit l’état d’implémentation le plus récent et les plans futurs pour les fonctionnalités de plateforme web Microsoft Edge.
+Recherchez les données de la page web [État](https://developer.microsoft.com/microsoft-edge/status) à l’adresse :  [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status) .  Le `Status` de la page web fournit l’état d’implémentation le plus récent et les plans futurs pour les fonctionnalités de plateforme web Microsoft Edge.
 
 ### <a name="conventions"></a>Conventions  
 
@@ -36,12 +36,12 @@ Ces autres éléments de texte ont des styles disponibles :
 
 *   Listes non répertoriées  
 *   Avoir des puces régulières  
-    *   Vous pouvez également imbribrier des puces.  
+    *   Vous pouvez également imbriquer des puces.  
     *   Les listes à puces doivent avoir plusieurs entrées.  
 *   Disposition standard 
     
 1.  Listes ordonnées.  
-1.  Utilisez une numérot d’ouest régulière.  
+1.  Utilisez une numérotation classique de style occidentale.  
 1.  Ne doit être utilisé que lorsqu’une liste a réellement un ordre.  
     
 ---  
