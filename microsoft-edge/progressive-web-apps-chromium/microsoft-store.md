@@ -7,23 +7,23 @@ ms.date: 04/28/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: applications web progressives, PWA, Edge, Windows, Microsoft Store
-ms.openlocfilehash: 5e78e909187408566219ffe80779bb9221b585fa
-ms.sourcegitcommit: e3cd336c9448277e0dde3b9da1521b5cbc7c44d2
+ms.openlocfilehash: 40a6b94412a0788c87f7231025809098c98f18e9
+ms.sourcegitcommit: 7cba715ef71cbac4ee0ebe8f07c0c0e4a2c64221
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "11527061"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "11643248"
 ---
 # <a name="publish-your-progressive-web-app-to-the-microsoft-store"></a>Publier votre application web progressive sur le Microsoft Store  
 
-La publication de votre application web progressive \(PWA\) sur le Microsoft Store [apporte][WindowsUwpPublishIndex] les avantages suivants.  
+La publication de votre application web progressive \(PWA\) sur le [Microsoft Store][WindowsUwpPublishIndex] apporte les avantages suivants.  
 
 :::row:::
    :::column span="1":::
       **Détectabilité**  
    :::column-end:::
    :::column span="2":::
-      Les utilisateurs recherchent naturellement des applications dans l’App Store.  Lorsque vous publiez sur le Microsoft Store, des millions Windows utilisateurs peuvent découvrir vos PWA avec d’autres Windows applications.  Le Windows Store présente les applications par le biais de catégories, de collections organisées et bien plus encore.  Les portails de découverte d’applications offrent une expérience de navigation et d’achat facile pour les utilisateurs potentiels de votre application.  Vous pouvez même améliorer [votre liste dans][WindowsUwpPublishAppScreenshotsImages] le Store avec des captures d’écran, une image Hero et des bandes-annonces vidéo.  
+      Les utilisateurs recherchent naturellement des applications dans l’App Store.  Lorsque vous publiez sur le Microsoft Store, des millions Windows utilisateurs peuvent découvrir vos PWA avec d’autres Windows applications.  Le Windows Store présente les applications par le biais de catégories, de collections organisées, etc.  Les portails de découverte d’applications offrent une expérience de navigation et d’achat facile pour les utilisateurs potentiels de votre application.  Vous pouvez même améliorer [votre liste dans][WindowsUwpPublishAppScreenshotsImages] le Store avec des captures d’écran, une image Hero et des bandes-annonces vidéo.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -60,7 +60,7 @@ Pour publier votre PWA sur le Microsoft Store, aucune modification de code n’e
 Pour créer une réservation d’application, effectuer les actions suivantes.  
 
 1.  Pour afficher vos programmes inscrits, effectuer les actions suivantes.  
-    1.  Connectez-Windows l’Partner Center à l’aide de votre compte Microsoft et accédez au [tableau de bord de l’Centre partenaires.][MicrosoftPartnerDashboardHome]  
+    1.  Connectez-Windows l’Partner Center avec votre compte Microsoft et accédez au tableau de bord de [l’Centre partenaires.][MicrosoftPartnerDashboardHome]  
     1.  Accéder à **Windows & Xbox**  
         *   Si **Windows & Xbox** est affichée, votre application est déjà inscrite.  
         *   Si **Windows & Xbox** n’est pas affichée, choisissez Ajouter un **programme.**  
@@ -83,7 +83,7 @@ Pour créer une réservation d’application, effectuer les actions suivantes.
        Créer une réservation d’application dans Windows’espace partenaires  
     :::image-end:::  
     
-1.  Pour afficher les détails de votre éditeur à utiliser dans la section [Package de votre PWA,](#package-your-pwa-for-the-store) choisissez Identité du produit **de gestion**  >  **des produits.**  
+1.  Pour afficher les détails de votre éditeur à utiliser dans la section Package de [votre PWA,](#package-your-pwa-for-the-store) choisissez **Product management**  >  **Product Identity**.  
     
     :::image type="complex" source="./media/windows-partner-center-publisher-info.msft.png" alt-text="Copier les informations de votre éditeur à partir Windows l’Partner Center" lightbox="./media/windows-partner-center-publisher-info.msft.png":::
        Copier les informations de votre éditeur à partir Windows l’Partner Center  
@@ -134,15 +134,27 @@ Pour soumettre votre application au Store, effectuer les actions suivantes.
     *   classification par âge  
     *   et plus  
         
-1.  Dans **l’invite Packages,** choisissez les fichiers que vous avez générés dans la `.msixbundle` section Package de `.classic.appxbundle` [PWA.](#package-your-pwa-for-the-store)  
+1.  À **l’invite packages,** choisissez les fichiers que vous avez générés dans la `.msixbundle` `.classic.appxbundle` section [Packages PWA.](#package-your-pwa-for-the-store)  
     
 Une fois votre soumission terminée, votre application est examinée, généralement dans un délai de 24 à 48 heures.  Une fois que vous avez reçu l’approbation, votre PWA est disponible dans le Microsoft Store.  
 
-## <a name="see-also"></a>Articles associés  
+### <a name="measure-usage-of-your-store-installed-pwa"></a>Mesurer l’utilisation de vos PWA
+
+Lors du lancement initial de votre PWA, si le PWA a été installé à partir de l’Microsoft Store, Microsoft Edge inclut l’en-tête suivant avec la demande de la première navigation de votre application `Referer` web.
+
+```
+Referer: app-info://platform/microsoft-store
+```
+
+Utilisez cette fonctionnalité pour mesurer le trafic distinct de votre PWA.  En fonction du trafic, vous pouvez ajuster le contenu de votre application pour améliorer l’expérience utilisateur.  Cette fonctionnalité est accessible au code client et au code serveur.
+
+Cette fonctionnalité a été introduite dans Microsoft Edge version 91.
+
+## <a name="see-also"></a>Voir également  
 
 PWABuilder fournit plus de documentation pour vous aider à obtenir votre PWA dans la Microsoft Store.  
 
-*   [Tester et soumettre votre package PWA’application][GithubPwaBuilderPwabuilderWindowsChromiumDocsNextStepsMd]  
+*   [Testez et soumettez votre package d PWA de messagerie un peu plus complet][GithubPwaBuilderPwabuilderWindowsChromiumDocsNextStepsMd]  
 *   [Publier une nouvelle PWA dans le Store][GithubPwaBuilderPwabuilderWindowsChromiumDocsPublishNewAppMd]  
 *   [Mettre à jour une application du Store existante vers une PWA][GithubPwaBuilderPwabuilderWindowsChromiumDocsUpdateExistingAppMd]  
 *   [Recommandations en matière d’images pour les P PWA dans le Store][GithubPwaBuilderPwabuilderWindowsChromiumDocsImageRecommendationsMd]  

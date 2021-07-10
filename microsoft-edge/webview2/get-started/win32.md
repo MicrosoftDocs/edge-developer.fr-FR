@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
-ms.openlocfilehash: 2714f9a6cffea3cb7d53f9a4128d64920fd02dce
-ms.sourcegitcommit: 7713eec634264b0c44b1bb426f5b466c44b4e005
+ms.openlocfilehash: 6eae00a0fddb75782be5a3e94efaa5a8965674a0
+ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "11618385"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "11643447"
 ---
 # <a name="get-started-with-webview2"></a>Mise en place de WebView2  
 
 Dans cet article, commencer à créer votre première application WebView2 et en savoir plus sur les principales fonctionnalités de [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Pour plus d’informations sur les API WebView2 individuelles, accédez à la [référence d’API.][Webview2ReferenceWin32]  
 
-## <a name="prerequisites"></a>Prérequis  
+## <a name="prerequisites"></a>Conditions préalables  
 
 Veillez à installer la liste des conditions préalables suivante avant de poursuivre.  
 
@@ -110,7 +110,7 @@ Pour créer et exécuter l’exemple d’application, sélectionnez `F5` .  Votr
 
 Ajoutez un WebView à la fenêtre principale.  
 
-Utilisez la méthode pour configurer l’environnement et `CreateCoreWebView2Environment` localiser le navigateur Microsoft Edge \(Chromium\) sur le contrôle.  Vous pouvez également utiliser la méthode si vous souhaitez spécifier l’emplacement du navigateur, le dossier utilisateur, les indicateurs de navigateur, etc., au lieu d’utiliser le `CreateCoreWebView2EnvironmentWithOptions` paramètre par défaut.  À la fin de la méthode, exécutez la méthode à l’intérieur du rappel et exécutez la méthode pour obtenir le `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` WebView associé.  
+Utilisez la méthode pour configurer l’environnement et `CreateCoreWebView2Environment` localiser le navigateur Microsoft Edge \(Chromium\) sur le contrôle.  Vous pouvez également utiliser la méthode si vous souhaitez spécifier l’emplacement du navigateur, le dossier utilisateur, les indicateurs de navigateur, etc., au lieu d’utiliser `CreateCoreWebView2EnvironmentWithOptions` le paramètre par défaut.  À la fin de la méthode, exécutez la méthode à l’intérieur du rappel et exécutez la méthode pour obtenir le `CreateCoreWebView2Environment` `ICoreWebView2Environment::CreateCoreWebView2Controller` `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` `ICoreWebView2Controller::get_CoreWebView2` WebView associé.  
 
 Dans le rappel, définissez quelques paramètres de plus, resizez le WebView pour prendre 100 % de la fenêtre parente et accédez à Bing.  
 
@@ -183,7 +183,7 @@ Pour plus d’informations, accédez aux [événements de navigation.][Webview2C
    Événements de navigation  
 :::image-end:::    
 
-Dans les cas d’erreur, un ou plusieurs des événements suivants peuvent se produire selon que la navigation se poursuit jusqu’à une page web d’erreur.  
+Dans les cas d’erreur, un ou plusieurs des événements suivants peuvent se produire selon que la navigation s’est poursuivie jusqu’à une page web d’erreur.  
 
 *   `SourceChanged`  
 *   `ContentLoading`  
@@ -212,7 +212,7 @@ webviewWindow->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEv
 
 À présent, l’application ne navigue pas vers les sites non https.  Vous pouvez utiliser un mécanisme similaire pour accomplir d’autres tâches, telles que la limitation de la navigation à l’intérieur de votre propre domaine.  
 
-## <a name="step-5---scripting"></a>Étape 5 : écriture de scripts  
+## <a name="step-5---scripting"></a>Étape 5 : scripts  
 
 Vous pouvez utiliser des applications hôtes pour injecter du code JavaScript dans des contrôles WebView2 lors de l’utilisation.  Vous pouvez tâcher WebView pour exécuter du javaScript arbitraire ou ajouter des scripts d’initialisation.  Le javaScript injecté s’applique à tous les nouveaux documents de niveau supérieur et aux images enfants jusqu’à ce que le JavaScript soit supprimé.  Le javaScript injecté est exécuté avec un minutage spécifique.  
 
@@ -292,7 +292,7 @@ Pour obtenir des fonctionnalités WebView2 supplémentaires qui ne sont pas couv
 *   Pour un exemple d’application créé à l’aide de WebView2, accédez [à WebView2Browser][GithubMicrosoftedgeWebview2browser].  
 *   Pour plus d’informations sur l’API WebView2, accédez à la référence [d’API.][Webview2ReferenceWin32]  
     
-## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’Microsoft Edge WebView  
+## <a name="getting-in-touch-with-the-microsoft-edge-webview-team"></a>Entrer en contact avec l’équipe web Microsoft Edge WebView  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 

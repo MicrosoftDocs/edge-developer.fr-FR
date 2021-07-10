@@ -7,12 +7,12 @@ ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft Edge, développement web, outils f12, devtools, ie11, internet explorer 11, mode ie
-ms.openlocfilehash: e65869cd88b449dcde0aec25c77df27f99b78f8d
-ms.sourcegitcommit: 6cf12643e9959873f8b5d785fd6158eeab74f424
+ms.openlocfilehash: 070bf970c784b4f2173ebc52e4494fc6807b4a8e
+ms.sourcegitcommit: 7cba715ef71cbac4ee0ebe8f07c0c0e4a2c64221
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11398601"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "11643234"
 ---
 # <a name="internet-explorer-mode-and-the-devtools"></a>Mode Internet Explorer et DevTools  
 
@@ -32,7 +32,7 @@ En mode IE, le processus de rendu est basé sur Internet Explorer 11.  Le Micros
    Badge du mode IE dans la barre d’adresses  
 :::image-end:::  
 
-Le mode IE est actuellement disponible sur Windows 10 version 1903 \(mise à jour de mai 2019\), mais sera bientôt disponible pour toutes les plateformes Windows pris en charge.  
+Le mode IE est actuellement disponible sur Windows 10 version 1903 \(mise à jour de mai 2019\), mais il sera bientôt disponible pour toutes les plateformes Windows pris en charge.  
 
 ## <a name="launching-the-devtools-on-a-tab-in-ie-mode"></a>Lancement de DevTools sur un onglet en mode IE  
 
@@ -53,7 +53,7 @@ Si un onglet utilise le mode IE, les DevTools ne fonctionnent pas et les conditi
 *   Si vous ouvrez un menu contextuel \(clic droit\) et choisissez **Afficher la source,** Bloc-notes est lancée.  
 *   Si vous ouvrez un menu contextuel \(clic droit\), **l’élément Inspect n’est** pas visible.  
 
-La raison pour laquelle un certain nombre d’outils **** au **** sein de DevTools \(comme les outils réseau et performance\) ne fonctionnent pas est que le moteur de rendu passe de Chromium à Internet Explorer 11 en mode IE.  Pour fournir des commentaires, accédez à La mise en [contact avec l Microsoft Edge’équipe DevTools](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
+La raison pour laquelle un certain nombre d’outils **** au **** sein de DevTools \(comme les outils réseau et performance\) ne fonctionnent pas est que le moteur de rendu passe de Chromium à Internet Explorer 11 en mode IE.  Pour fournir des commentaires, accédez à La mise en [contact avec l Microsoft Edge devTools.](#getting-in-touch-with-the-microsoft-edge-devtools-team)  
 
 :::image type="complex" source="../media/ie-mode-devtools.msft.png" alt-text="DevTools lancé en mode IE" lightbox="../media/ie-mode-devtools.msft.png":::
    DevTools lancé en mode IE  
@@ -71,15 +71,23 @@ Pour tester votre site web Internet Explorer 11 \(ou application\) en mode Inter
     *   Sélectionnez `F12` .  
     *   Pointez n’importe où, ouvrez un menu contextuel \(clic droit\), puis choisissez **l’élément Inspect**.  Pour plus d’informations sur l’utilisation de ces outils, accédez à Utiliser les outils de [développement F12.][PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326]  
 
+Si Internet Explorer 11 n’est pas disponible, comme sur Windows 11, vous pouvez utiliser IEChooser pour lancer Internet Explorer DevTools pour déboguer le contenu de vos onglets en mode IE. Pour utiliser IEChooser, effectuez les étapes suivantes.
+
+1.  Ouvrez IEChooser.
+    1. Ouvre la boîte de dialogue Exécuter. Par exemple, appuyez sur `Windows logo key`  +  `R` le .
+    2. Entrez, `%systemroot%\system32\f12\IEChooser.exe` puis sélectionnez **OK.**
+2.  Dans IEChooser, sélectionnez l’entrée de l’onglet mode IE.
+
+
 ## <a name="remote-debugging-and-ie-mode"></a>Débogage à distance et mode IE  
 
-Lancez Microsoft Edge \(Chromium\) avec débogage à distance allumé à partir de l’interface de ligne de commande.  Microsoft Visual Studio, Microsoft Visual Studio Code et d’autres outils de développement exécutent généralement une commande pour lancer Microsoft Edge.  La commande suivante lance Microsoft Edge avec le port de débogage à distance sur `9222` .  
+Lancez Microsoft Edge \(Chromium\) avec débogage à distance allumé à partir de l’interface de ligne de commande.  Microsoft Visual Studio, Microsoft Visual Studio Code et d’autres outils de développement exécutent généralement une commande pour lancer Microsoft Edge.  La commande suivante lance Microsoft Edge port de débogage `9222` distant.  
 
 ```shell
 start msedge --remote-debugging-port=9222
 ```  
 
-Après avoir lancé Microsoft Edge \(Chromium\) à l’aide d’un argument de ligne de commande, le mode IE n’est pas disponible.  Vous pouvez toujours accéder aux sites web \(ou applications\) qui sont affichés en mode IE.  Le contenu du site web \(ou de l’application\) s’Chromium, et non d’Internet Explorer 11.  Attendez-vous à ce que les parties des pages web qui reposent sur IE11, telles que ActiveX contrôles, ne s’restituer pas correctement.  Le badge du mode IE n’apparaît pas dans la barre d’adresses.  
+Après avoir lancé Microsoft Edge \(Chromium\) à l’aide d’un argument de ligne de commande, le mode IE n’est pas disponible.  Vous pouvez toujours accéder aux sites web \(ou applications\) qui sont affichés en mode IE.  Le contenu du site web \(ou application\) s’Chromium, et non d’Internet Explorer 11.  Attendez-vous à ce que les parties des pages web qui reposent sur IE11, telles que ActiveX contrôles, ne s’restituer pas correctement.  Le badge du mode IE n’apparaît pas dans la barre d’adresses.  
 
 Le mode IE reste indisponible tant que vous n’avez pas complètement fermé et redémarré Microsoft Edge \(Chromium\).  
 

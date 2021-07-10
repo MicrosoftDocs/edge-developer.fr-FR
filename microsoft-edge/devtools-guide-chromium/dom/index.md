@@ -3,16 +3,16 @@ description: Découvrez comment afficher les nœuds, rechercher des nœuds, modi
 title: Commencer à afficher et modifier le DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 06/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: Microsoft Edge, développement web, outils F12, devtools
-ms.openlocfilehash: 66078844730ebb22664c9ce89517511d7eb99ee7
-ms.sourcegitcommit: 7945939c29dfdd414020f8b05936f605fa2b640e
+ms.openlocfilehash: 8340c4d4d7eacdb6ad4155c1c9699db150522f16
+ms.sourcegitcommit: 8f37c931ecde4d58223113f7e3b42d37cc3df97f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "11564286"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "11643433"
 ---
 <!-- Copyright Kayce Basques 
 
@@ -29,9 +29,9 @@ ms.locfileid: "11564286"
    limitations under the License.  -->  
 # <a name="get-started-with-viewing-and-changing-the-dom"></a>Commencer à afficher et modifier le DOM  
 
-Complétez ces didacticiels interactifs pour découvrir les principes de base de l’affichage et de la modification du DOM d’une page à l’aide Microsoft Edge DevTools.  
+Complétez ces didacticiels interactifs [](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) pour découvrir les principes de base de l’affichage et de la modification du modèle objet de document \(DOM\) d’une page à l’aide Microsoft Edge DevTools.  
 
-Ce didacticiel part du principe que vous connaissez la différence entre le DOM et le code HTML.  Accédez à [l’Annexe : HTML par rapport au DOM](#appendix-html-versus-the-dom) pour obtenir une explication.  
+Ce didacticiel part du principe que vous connaissez la différence entre le DOM et le code HTML. Accédez à [l’annexe : HTML par rapport au DOM](#appendix-html-versus-the-dom) pour obtenir une explication.  
 
 ## <a name="open-dom-examples"></a>Exemples d’ouverture de DOM  
 
@@ -190,7 +190,7 @@ Faites glisser les nodes pour les réorder.
 Vous pouvez forcer les nodes à rester dans les états, y compris `:active` , , `:hover` et `:focus` `:visited` `:focus-within` .  
 
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
-1.  Dans **l’état Force,** **pointez sur le cadre de l’en-dessous.**  La couleur d’arrière-plan devient orange.  
+1.  Sous **l’état Force,** **pointez sur la souris de l’en-dessous.**  La couleur d’arrière-plan devient orange.  
     1.  Pointez **sur le Bouton de l’enfant,** ouvrez le menu contextuel \(clic droit\), puis choisissez **Inspecter**.  
     1.  Pointez `<li class="demo--hover">The Lord of the Flies</li>` dessus, ouvrez le menu contextuel \(clic droit\), puis choisissez **Force State**  >  **:hover**.  Accédez à [l’Annexe : Options manquantes](#appendix-missing-options) si l’option n’est pas affichée.  La couleur d’arrière-plan reste orange même si vous ne pointez pas réellement sur le nœud.  
 
@@ -199,7 +199,7 @@ Vous pouvez forcer les nodes à rester dans les états, y compris `:active` , , 
 Sélectionnez `H` pour masquer un nœud.  
 
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
-1.  Sous **Masquer un nœud,** sélectionnez avec le droit de la main **Les étoiles ma destination** et sélectionnez **Inspecter.**  
+1.  Sous **Masquer un nœud,** choisissez avec le droit de la main **Les étoiles ma destination** et sélectionnez **Inspecter.**  
     1.  Sélectionnez la `H` clé.  Le nœud est masqué.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-hide-a-node.msft.png" alt-text="Apparence du nœud dans l’arborescence DOM une fois masqué" lightbox="../media/dom-elements-highlighted-hide-a-node.msft.png":::
@@ -226,7 +226,7 @@ DevTools fournit quelques raccourcis pour accéder aux nodes DOM à partir de la
 Lorsque vous examinez un nœud, le texte à côté du nœud signifie que vous pouvez faire référence à ce nœud dans la `== $0` console avec la variable `$0` .  
 
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
-1.  Sous Référencer le nœud actuellement sélectionné avec **0 $,** choisissez la **main gauche** de la noirceur et choisissez **Inspecter**.  
+1.  Under **Reference the currently-selected node with $0**, right-choose **The Left Hand of Darkness** and choose **Inspect**.  
     1.  Sélectionnez `Escape` la clé pour ouvrir le caisse de la console.  
     1.  Tapez `$0` et sélectionnez la `Enter` clé.  Le résultat de l’expression indique `$0` que le résultat est `<li>The Left Hand of Darkness</li>` .  
         
@@ -290,7 +290,7 @@ Utilisez des points d’arrêt de modification d’attribut lorsque vous souhait
            Où reprendre l’exécution du script  
         :::image-end:::  
         
-    1.  Sélectionnez le **bouton Définir l’arrière-plan** ci-dessus.  Cela définit `style` l’attribut du nœud sur `background-color:thistle` .  DevTools suspend la page et met en sur évidence le code à l’origine de la modification de l’attribut.  
+    1.  Sélectionnez le **bouton Définir l’arrière-plan** ci-dessus.  Cela définit `style` l’attribut du nœud sur `background-color:thistle` .  DevTools suspend la page et met en évidence le code à l’origine de la modification de l’attribut.  
     1.  Choose **Resume Script** \( Resume Script ![ ](../media/resume-script-icon.msft.png) \), as mentioned earlier.  
     
 ### <a name="break-on-node-removal"></a>Rupture lors de la suppression du nœud  
@@ -300,7 +300,7 @@ Si vous souhaitez suspendre lorsqu’un nœud particulier est supprimé, utilise
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
 1.  Under **Break on Node Removal**, right-choose **Contrôlemancer** and choose **Inspect**.  
     1.  Dans l’arborescence DOM, pointez sur , ouvrez le menu contextuel `<li id="target">Neuromancer</li>` \(clic droit\), puis choisissez **Pause sur**la suppression  >  **du nœud.**  Accédez à [l’Annexe : Options manquantes](#appendix-missing-options) si l’option n’est pas affichée.  
-    1.  Sélectionnez le **bouton Supprimer** ci-dessus.  DevTools suspend la page et met en évidence le code à l’origine de la suppression du nœud.  
+    1.  Sélectionnez le **bouton Supprimer** ci-dessus.  DevTools suspend la page et met en évidence le code qui a provoqué la suppression du nœud.  
     1.  Choose **Resume Script** \( Resume Script ![ ](../media/resume-script-icon.msft.png) \).  
     
 ### <a name="break-on-subtree-modifications"></a>Pause sur les modifications de sous-arbre  
@@ -310,7 +310,7 @@ Après avoir placé un point d’arrêt de modification de sous-arbre sur un nœ
 1.  [Ouvrez des exemples DOM.](#open-dom-examples)  
 1.  Under **Break on Subtree Modifications**, right-choose A Fire Upon The **Deep** and choose **Inspect**.  
     1.  Dans l’arborescence DOM, pointez sur , qui est le nœud ci-dessus, ouvrez le menu contextuel `<ul id="target">` `<li>A Fire Upon the Deep</li>` \(clic droit\), puis choisissez **Break On**  >  **Subtree Modifications**.  Si l’option n’est pas affichée, accédez à Annexe [: Options manquantes.](#appendix-missing-options)  
-    1.  Choose **Add Child**.  Le code est suspendu car un nœud a `<li>` été ajouté à la liste.  
+    1.  Choose **Add Child**.  Le code s’interrompt car un nœud a `<li>` été ajouté à la liste.  
     1.  Choose **Resume Script** \( Resume Script ![ ](../media/resume-script-icon.msft.png) \).  
     
 ## <a name="next-steps"></a>Étapes suivantes  
@@ -428,7 +428,7 @@ De nombreuses instructions de ce didacticiel vous indiquent de pointer sur un n�
 
 > [!NOTE]
 > Certaines parties de cette page sont des modifications fondées sur le travail créé et [partagé par Google][GoogleSitePolicies] et utilisées conformément aux conditions décrites dans la [licence internationale 4,0 d’attribution créative][CCA4IL].  
-> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/dom/index) et est créée par [Kayce Basques][KayceBasques] \(Technical Writer, chrome DevTools \& Lighthouse\).  
+> La page d’origine est disponible [ici](https://developers.google.com/web/tools/chrome-devtools/dom/index) et est créée par [Kayce Basques][KayceBasques] \ (Technical Writer, chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 Ce travail est concédé sous une [Licence internationale Creative Commons Attribution 4.0][CCA4IL].  

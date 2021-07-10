@@ -7,12 +7,12 @@ ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, développement d’extensions, extensions de navigateur, addons, centre de partenaires, développeur
-ms.openlocfilehash: c7d44a8c02a030cc11c763c35efb7111fff76665
-ms.sourcegitcommit: 7f7922dbb6af87ecac1378d18359125770c5b8e5
+ms.openlocfilehash: aadb3470eb295934cde4ad26b089ac0c83898e5c
+ms.sourcegitcommit: 7cba715ef71cbac4ee0ebe8f07c0c0e4a2c64221
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "11536801"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "11643241"
 ---
 # <a name="publish-your-extension"></a>Publier votre extension  
 
@@ -24,7 +24,7 @@ Publiez votre extension dans le Microsoft Edge de modules Microsoft Edge pour en
 
 Vous devez avoir un prototype de travail de votre extension prêt.  Pour plus d’informations sur la création d’une extension, reportez-vous au [didacticiel de mise en place.][ExtensionsGettingStarted]  
 
-Pour publier votre extension dans le magasin Microsoft Edge, utilisez votre compte de développeur actif dans [l’Partner Center][MicrosoftPartnerCenter].  Si vous n’avez pas de compte de développeur, créez-en un.  Pour ouvrir un nouveau compte de développeur et vous inscrire au programme modules complémentaires Microsoft Edge, accédez à [l’inscription du développeur.][DeveloperRegistration]  
+Pour publier votre extension dans le magasin Microsoft Edge de modules, utilisez votre compte de développeur actif dans [l’Partner Center][MicrosoftPartnerCenter].  Si vous n’avez pas de compte de développeur, créez-en un.  Pour ouvrir un nouveau compte de développeur et vous inscrire au programme modules complémentaires Microsoft Edge, accédez à [l’inscription du développeur.][DeveloperRegistration]  
 
 Créez un fichier zip qui représente votre package d’extension.  Votre package d’extension doit inclure les fichiers suivants.  
 
@@ -50,7 +50,7 @@ Utilisez la page web **Packages** pour télécharger le fichier zip de votre pac
 
 Pour télécharger le package, choisissez et faites glisser le package vers le champ de chargement.  En outre, vous pouvez choisir **Parcourir vos fichiers.**  Une fois le package téléchargé, votre package est validé.  Une fois la validation validée, examinez les détails de l’extension, puis choisissez **Suivant** pour continuer.  S’il existe des erreurs de validation, résolvez les problèmes et essayez à nouveau de télécharger.  
 
-## <a name="step-3--provide-availability-details"></a>Étape 3 : Fournir des détails sur la disponibilité  
+## <a name="step-3--provide-availability-details"></a>Étape 3 : fournir des détails sur la disponibilité  
 
 Sur la **page** web Disponibilité, entrez les informations suivantes sur la disponibilité de votre extension.  
 
@@ -59,7 +59,7 @@ Sur la **page** web Disponibilité, entrez les informations suivantes sur la dis
 Choisissez l’une des options de visibilité suivantes pour définir si votre extension est découvrable dans le Microsoft Edge des modules supplémentaires.  
 
 *   `Public` \(default\)  
-    Public permet à tout le monde de découvrir votre extension par le biais de la recherche, de la navigation dans le magasin de modules Microsoft Edge ou à l’aide de l’URL de référencement de votre extension dans le magasin de modules Microsoft Edge.  L’URL de description est disponible dans le tableau de bord de l’Partner Center sur la page **web** Vue d’ensemble de l’extension.  
+    Public permet à tout le monde de découvrir votre extension par le biais de la recherche, de la navigation dans le magasin de modules Microsoft Edge ou à l’aide de l’URL de référencement de votre extension dans le magasin de modules Microsoft Edge.  L’URL de description est disponible dans le tableau de bord de l’Partner Center sur la **page** web Vue d’ensemble de l’extension.  
 *   `Hidden`  
     Hidden supprime les extensions des résultats de la recherche ou de la navigation dans Microsoft Edge magasin de modules extensions.  Pour distribuer des extensions masquées dans le magasin Microsoft Edge, vous devez partager l’URL de référencement vers l’extension avec vos clients.  
     
@@ -71,7 +71,7 @@ Choisissez l’une des options de visibilité suivantes pour définir si votre e
 Définissez les marchés spécifiques dans lesquels vous envisagez d’offrir votre extension.  Le paramètre par défaut pour les marchés est tous les marchés et inclut les marchés futurs qui seront ajoutés ultérieurement.  Pour choisir des marchés spécifiques, choisissez **Modifier les marchés.**  Basculez les marchés individuels pour exclure chacun d’eux, ou choisissez **Désélectionner** tout, puis ajoutez les marchés de votre choix.  
 
 > [!NOTE]
-> Vous pouvez modifier les marchés où votre extension est proposée.  Un utilisateur qui installe votre extension alors qu’elle est disponible sur le marché de l’utilisateur conserve l’accès à votre extension.  Toutefois, l’utilisateur n’a pas accès aux futures mises à jour envoyées au magasin Microsoft Edge de modules.  
+> Vous pouvez modifier les marchés où votre extension est proposée.  Un utilisateur qui installe votre extension alors qu’elle est disponible sur le marché de l’utilisateur conserve l’accès à votre extension.  Toutefois, l’utilisateur n’a pas accès aux futures mises à jour envoyées au magasin Microsoft Edge des modules.  
 
 Sélectionnez **Enregistrer** pour continuer à la section **Propriétés.**  
 
@@ -82,11 +82,11 @@ Dans la page web **Propriétés,** entrez les informations suivantes pour spéci
 | Nom de la propriété d’extension | Description |  
 |:--- |:--- |  
 | Catégorie \(obligatoire\) | Catégorie qui décrit le mieux votre extension.  Le fait de répertorier votre extension dans la catégorie de droite permet aux utilisateurs de trouver facilement votre extension et d’en comprendre davantage.  |  
-| Exigences en matière de politique de confidentialité \(requis\) | Indiquez si votre extension accède, collecte ou transmet des informations personnelles.  Votre extension peut échouer à l’étape de certification si vous choisissez **Oui** et que vous ne fournissez pas de `Privacy policy URL` .  |  
+| Exigences en matière de politique de confidentialité \(obligatoire\) | Indiquez si votre extension accède, collecte ou transmet des informations personnelles.  Votre extension peut échouer à l’étape de certification si vous choisissez **Oui** et que vous ne fournissez pas de `Privacy policy URL` .  |  
 | URL de la politique de confidentialité | URL valide de la politique de confidentialité pour communiquer comment votre extension suit les lois et réglementations en matière de confidentialité.  Vous devez vous assurer que votre extension suit les lois et réglementations en matière de confidentialité.  Vous êtes également responsable de la fourniture d’une URL de stratégie de confidentialité si des informations personnelles sont accessibles, transmises ou collectées par votre extension.  Pour déterminer si votre extension nécessite [][MicrosoftAppDeveloperAgreement] une politique de confidentialité, accédez à Microsoft Edge Contrat du développeur et Microsoft Edge les stratégies de développement [des modules extensions.][MicrosoftEdgeAddonsCatalogDeveloperPolicies]  |  
 | URL du site web | Page web qui fournit des informations supplémentaires sur votre extension.  Le point doit pointer vers une page web sur votre propre site web, et non la liste web de votre extension dans le magasin Microsoft Edge de `Website URL` modules.  Il `Website URL` permet aux utilisateurs d’en savoir plus sur votre extension, ses fonctionnalités et toute autre information pertinente.  |  
 | Coordonnées du support technique | URL de votre page web de support ou adresse de messagerie pour contacter votre équipe de support technique.  |  
-| Contenu mature | Cochez la case pour spécifier si votre extension inclut du contenu mature.  L’évaluation de l’extension permet de déterminer le groupe d’âge approprié de l’audience cible de votre extension.  Pour déterminer si votre extension possède un contenu mature, accédez à Microsoft Edge stratégies de développement du magasin [de modules extensions.][MicrosoftEdgeAddonsCatalogDeveloperPolicies]  |  
+| Contenu mature | Cochez la case pour spécifier si votre extension inclut du contenu mature.  L’évaluation de l’extension permet de déterminer le groupe d’âge approprié de l’audience cible de votre extension.  Pour déterminer si votre extension possède du contenu mature, accédez à Microsoft Edge stratégies de développement du magasin [d’extensions.][MicrosoftEdgeAddonsCatalogDeveloperPolicies]  |  
 
 Choose **Save** to continue to the **Store listings** section.  
 
@@ -95,23 +95,23 @@ Choose **Save** to continue to the **Store listings** section.
 
 ## <a name="step-5-add-store-listing-details-for-your-extension"></a>Étape 5 : Ajouter des détails de description dans le Store pour votre extension  
 
-Les informations fournies dans la section suivante s’affichent pour les utilisateurs qui examinent votre liste sur le Microsoft Edge des modules complémentaires.  Même si certains champs sont facultatifs, vous devez fournir autant d’informations que possible.  Pour lister votre extension dans le store, les informations suivantes sont requises.  
+Les informations fournies dans la section suivante s’affichent pour les utilisateurs qui examinent votre liste sur le Microsoft Edge des modules complémentaires.  Même si certains champs sont facultatifs, vous devez fournir autant d’informations que possible.  Pour obtenir la liste de votre extension dans le store, les informations suivantes sont requises.  
 
-*   **Description** de chaque langue de votre package d’extension.  
+*   **Description** de chaque langue de votre package d’extension. Pour prendre en charge plusieurs langues, vous pouvez utiliser l’API d’internationalisation ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)).  
 *   **Logo du magasin d’extensions** pour chaque langue de votre package d’extension.  
     
 > [!NOTE]
-> Les détails minimaux requis de la description dans le Store doivent être remplis pour au moins l’une des langues mentionnées dans votre package zip d’extension.  Pour ajouter ou supprimer des langues dans la liste de votre magasin **** dans le magasin des modules Microsoft Edge, utilisez la liste ajouter une langue sur la page web Des listes dans le **Store.**  En outre, vous pouvez choisir de dupliquer vos ressources d’une langue à une autre à l’aide du bouton de fonctionnalité en double sur la page web des détails de la langue.  
+> Les détails minimaux requis de la description dans le Store doivent être remplis pour au moins l’une des langues mentionnées dans votre package zip d’extension.  Pour ajouter ou supprimer des langues dans la liste de votre magasin **** dans le magasin des modules Microsoft Edge, utilisez la liste finale Ajouter une langue sur la page web Des listes dans le **Store.**  En outre, vous pouvez choisir de dupliquer vos ressources d’une langue à une autre à l’aide du bouton de fonctionnalité en double sur la page web des détails de la langue.  
 
-| Nom de la propriété Détails de la langue | Description |  
+| Nom de la propriété Language Details | Description |  
 |:--- |:--- |  
 | Nom complet \(obligatoire\) | `name`L’extension spécifiée dans le fichier manifeste de votre extension.  Pour modifier le nom complet de la boutique après l’envoi, vous pouvez mettre à jour le nom dans le fichier manifeste, créer un package d’extension, puis le recharger.  |  
 | Description \(obligatoire\) | Le champ se concentre sur l’explication de ce que fait votre extension, pourquoi les utilisateurs doivent l’installer ou d’autres informations pertinentes que les `description` utilisateurs doivent connaître.  Elle doit être inférieure à 10 000 caractères.  |  
 | Logo du magasin d’extensions \(requis\) | Image qui représente votre entreprise ou avec un rapport d’aspect de 1 et une taille recommandée de `extension logo` 300 x 300 pixels.  En outre, vous pouvez choisir de copier la bien d’une langue vers toutes les autres langues à l’aide du bouton dupliqué.  Le bouton se trouve à la suite du champ après avoir téléchargé votre logo pour la langue.  |  
 | Petite vignette promotionnelle \(facultatif\) | L’image est utilisée pour afficher votre extension avec `Small promotional tile` d’autres extensions dans le store.  La taille de l’image doit être de 440 x 280 pixels.  En outre, vous pouvez choisir de copier la bien d’une langue vers toutes les autres langues à l’aide du bouton dupliqué.  Le bouton se trouve à la suite du champ après le téléchargement d’une vignette promotionnelle pour la langue.  |  
 | Captures d’écran \(facultatif\) | Vous pouvez envoyer un maximum de 10 descriptions détaillées des `screenshots` fonctionnalités de votre extension.  La taille des captures d’écran doit être de 640 x 480 pixels ou de 1280 x 800 pixels.  En outre, vous pouvez choisir de copier la bien d’une langue vers toutes les autres langues à l’aide du bouton dupliqué.  Le bouton se trouve à la suite du champ après avoir téléchargé au moins une langue.|  
-| Grande vignette promotionnelle \(facultatif\) | `Large promotion tiles` sont utilisés dans le Store pour les extensions de fonctionnalités plus visibles dans le modules complémentaires Microsoft Edge web.  Les images, si elles sont envoyées, sont visibles pour les utilisateurs.  La taille des fichiers PNG doit être de 1 400 x 560 pixels.  En outre, vous pouvez choisir de copier la bien d’une langue vers toutes les autres langues à l’aide du bouton dupliqué.  Le bouton se trouve à la suite du champ après le téléchargement d’une vignette promotionnelle pour la langue.  |  
-| URL de vidéo YouTube \(facultatif\) | Vous pouvez inclure une vidéo YouTube promotionnelle de votre extension.  La `YouTube video URL` vidéo s’affiche sur la page web de référencement de votre extension dans le Store.  |  
+| Grande vignette promotionnelle \(facultatif\) | `Large promotion tiles` sont utilisés dans le Store pour les extensions de fonctionnalités plus visibles sur le modules complémentaires Microsoft Edge web.  Les images, si elles sont envoyées, sont visibles pour les utilisateurs.  La taille des fichiers PNG doit être de 1 400 x 560 pixels.  En outre, vous pouvez choisir de copier la bien d’une langue vers toutes les autres langues à l’aide du bouton dupliqué.  Le bouton se trouve à la suite du champ après le téléchargement d’une vignette promotionnelle pour la langue.  |  
+| URL de vidéo YouTube \(facultatif\) | Vous pouvez inclure une vidéo YouTube promotionnelle de votre extension.  La vidéo s’affiche sur la page web de la liste des magasins `YouTube video URL` de votre extension.  |  
 | Description courte \(obligatoire\) | Pour modifier le package d’extension, vous devez mettre à jour le champ de description dans votre fichier manifeste de votre package d’extension et `short description` le recharger.  |  
 | Termes de recherche \(facultatif\) | `Search terms` sont des mots ou des expressions qui permettent de découvrir votre extension lorsqu’un utilisateur recherche dans le magasin Microsoft Edge modules.  Les termes de recherche ne sont pas affichés pour les utilisateurs.  |  
 
@@ -123,7 +123,7 @@ Assurez-vous que votre vidéo répond aux exigences suivantes.
 *   Désactiver les publicités sur votre vidéo.  Pour plus d’informations, [accédez à Définir][GoogleYoutubeAnswer2531367Topic7072227] vos formats de publicité par défaut et les publicités sur les vidéos [incorporées.][GoogleYoutubeAnswer132596]  
 *   Activer l’incorporation de vos vidéos.  Pour plus d’informations, [accédez à Incorporer des vidéos & playlists.][GoogleYoutubeAnswer171780]  
     
-Pour soumettre l’URL vidéo YouTube de votre vidéo, complétez les étapes suivantes.  
+Pour soumettre l’URL de la vidéo YouTube de votre vidéo, complétez les étapes suivantes.  
 
 1.  Sur YouTube, recherchez la vidéo que vous souhaitez ajouter à votre page web de référencement dans le Store.  
 1.  Under the video, choose **Share**  >  **Embed**.  
@@ -150,22 +150,22 @@ Veillez à inclure les informations suivantes, si nécessaire.
 *   Noms d’utilisateur et mots de passe pour les comptes de test.  
 *   Étapes pour accéder aux fonctionnalités masquées ou verrouillées.  
 *   Différences attendues de fonctionnalités basées sur la région ou d’autres paramètres utilisateur.  
-*   Si votre envoi est une mise à jour d’une extension existante, incluez des informations sur les modifications apportées à l’extension.  
+*   Si votre soumission est une mise à jour d’une extension existante, incluez des informations sur les modifications apportées à l’extension.  
 *   Toute information supplémentaire que les testeurs doivent comprendre sur votre soumission.  
     
 Une fois que vous avez fourni les informations, choisissez **Publier** pour envoyer votre extension au magasin Microsoft Edge de modules complémentaires.  Votre envoi est soumis à l’étape de certification.  Le processus de certification peut prendre jusqu’à sept jours ou jours après votre envoi.  
 
-Une fois que votre soumission a été certification, votre extension est publiée dans le Microsoft Edge des modules extensions.  L’état de votre extension dans le tableau de bord de l’Centre de partenaires change en `In the Store` .  
+Une fois que votre soumission a été certification, votre extension est publiée dans le Microsoft Edge des extensions.  L’état de votre extension dans le tableau de bord de l’Centre de partenaires change en `In the Store` .  
 
 > [!NOTE]
 > Si vous rencontrez des problèmes dans le processus de soumission ou d’inscription, déposez un ticket de support sur la nouvelle demande de support [extensions][ExtensionsSupportForm] ou envoyez un e-mail [à ext_dev_support@microsoft.com][MailtoExtDevSupportMicrosoftCom].  
 
 <!-- links -->  
 
-[ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge (Chromium) Extensions | Documents Microsoft"  
+[ExtensionsGettingStarted]: ../getting-started/index.md "Mise en Microsoft Edge des extensions (Chromium) | Documents Microsoft"  
 [DeveloperRegistration]: ./create-dev-account.md "S’inscrire en tant Microsoft Edge développeur d’extensions | Documents Microsoft"  
 [PortChromiumExtension]: ../developer-guide/port-chrome-extension.md "Portez votre extension Chromium vers Microsoft Edge | Documents Microsoft"  
-[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Les modules de développement du magasin de modules | Documents Microsoft"  
+[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Les modules de développement stockent les stratégies de | Documents Microsoft"  
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "Contrat du développeur d’applications | Documents Microsoft"  
 
@@ -179,3 +179,4 @@ Une fois que votre soumission a été certification, votre extension est publié
 [GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "Incorporer des vidéos & playlists | Aide de YouTube"  
 
 [MailtoExtDevSupportMicrosoftCom]: mailto:ext_dev_support@microsoft.com "Envoyer un courrier électronique à ext_dev_support@microsoft.com" 
+
